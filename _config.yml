@@ -2,7 +2,7 @@
 name: 'Micro Paper'
 description: 'Learn a paper in a minute.'
 logo: 'assets/images/logo.png'
-favicon: 'assets/images/favicon.ico'
+favicon: 'assets/images/favicon/favicon.ico'
 baseurl: ''
 disqus: 'demowebsite'
 email: 'tidelgl@gmail.com'
