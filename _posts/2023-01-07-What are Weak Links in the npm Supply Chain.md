@@ -2,7 +2,7 @@
 layout: post
 title:  "NPM 供应链的软肋是什么?"
 author: unbug
-categories: [ papers, npm, secure ]
+categories: [ npm, secure ]
 image: assets/images/Screenshot-2023-01-07-at-22.02.33.png
 tags: [featured, sticky]
 ---
@@ -17,7 +17,7 @@ NPM 供应链攻击非常严峻，微软和北卡罗莱纳州立大学合作的�
 
 ![walking]({{ site.baseurl }}/assets/images/FlxdEa2aYAEbcyI.jpeg)
 
-# References
+## References
 - [Track on ICSE 2022][links-1]
 
 <!--
