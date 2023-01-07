@@ -645,7 +645,7 @@ footer {
 	top:70px;
 }
 .homefirstpage .main-loop .main-loop-card:nth-child(-n+5) {
-	display:none !important;
+	/* display:none !important; */
 }
 .excerpt {
     color: rgba(0,0,0,0.59);
