@@ -4,6 +4,7 @@ title:  "NPM 供应链的软肋是什么?"
 author: unbug
 categories: [ papers, npm, javascript, secure ]
 image: assets/images/FlxdEa2aYAEbcyI.jpeg
+tags: [featured, sticky]
 ---
 NPM 供应链攻击非常严峻，微软和北卡罗莱纳州立大学合作的一片论文[《NPM 供应链的软肋是什么》][paper1-url]，有几个数据触目惊心：
 1. 93K里就有 3k  维护者的邮箱都已经失效甚至在网上被售卖，覆盖33个 TOP1 流行的包。
