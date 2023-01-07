@@ -17,7 +17,7 @@ NPM 供应链攻击非常严峻，微软和北卡罗莱纳州立大学合作的�
 
 ![walking]({{ site.baseurl }}/assets/images/FlxdEa2aYAEbcyI.jpeg)
 
-论文结论建议 NPM 要求对依赖排名前 100 的 npm 包的维护者进行强制性 2FA 登录认证。
+论文结论建议 NPM 要求对依赖排名前 100 的包的维护者进行强制性 2FA 登录认证。
 
 ### References
 - [Track on ICSE 2022][links-1]
