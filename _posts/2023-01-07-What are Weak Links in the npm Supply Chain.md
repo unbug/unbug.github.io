@@ -4,7 +4,7 @@ title:  "一分钟读论文：《NPM 供应链的软肋是什么?》"
 author: unbug
 categories: [ npm, secure ]
 image: assets/images/Screenshot-2023-01-07-at-22.02.33.png
-tags: [featured, sticky]
+tags: [sticky]
 ---
 微软和北卡罗莱纳州立大学合作的一篇论文[《What are Weak Links in the npm Supply Chain?》][paper1-url]，有几个数据触目惊心：
 1. 93K里就有 3k  维护者的邮箱都已经失效甚至在网上被售卖，覆盖33个 TOP1 流行的包。
