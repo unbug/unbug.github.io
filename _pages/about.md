@@ -1,6 +1,6 @@
 ---
 title: "About"
-layout: default
+layout: page
 permalink: "/about.html"
 comments: true
 ---
