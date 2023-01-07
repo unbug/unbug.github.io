@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "NPM 供应链的软肋是什么?"
+title:  "一分钟读论文：《NPM 供应链的软肋是什么?》"
 author: unbug
 categories: [ npm, secure ]
 image: assets/images/Screenshot-2023-01-07-at-22.02.33.png
 tags: [featured, sticky]
 ---
-NPM 供应链攻击非常严峻，微软和北卡罗莱纳州立大学合作的一片论文[《What are Weak Links in the npm Supply Chain?》][paper1-url]，有几个数据触目惊心：
+微软和北卡罗莱纳州立大学合作的一片论文[《What are Weak Links in the npm Supply Chain?》][paper1-url]，有几个数据触目惊心：
 1. 93K里就有 3k  维护者的邮箱都已经失效甚至在网上被售卖，覆盖33个 TOP1 流行的包。
 2. 2.2%的包可以本身逻辑就支持安装脚本，2.4% TOP1 流行包依赖了它们。而市面上93%的恶意脚本都是通过安装脚本达到目的。
 3. 58%的包和44%的维护者都不活跃了，而流行包里有38%的包两者都不活跃了。
@@ -17,7 +17,7 @@ NPM 供应链攻击非常严峻，微软和北卡罗莱纳州立大学合作的�
 
 ![walking]({{ site.baseurl }}/assets/images/FlxdEa2aYAEbcyI.jpeg)
 
-论文结论建议 NPM 要求对依赖排名前 100 的包的维护者进行强制性 2FA 登录认证。
+显然 NPM 供应链攻击形势非常严峻，论文结论建议 NPM 要求对依赖排名前 100 的包的维护者进行强制性 2FA 登录认证。
 
 ### References
 - [Track on ICSE 2022][links-1]
