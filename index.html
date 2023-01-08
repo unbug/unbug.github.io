@@ -15,13 +15,13 @@ description: "Learn a paper in a minute, 一分钟读懂一篇论文, 一分钟�
     <div class="col-md-8 main-loop">
         {% if page.url != "/" %}
         <h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>
-        {% endfor %}
+        {% endif %}
 
         {% for post in paginator.posts %}
         
             {% include main-loop-card.html %}
         
-        {% endif %}
+        {% endfor %}
         
         <div class="mt-5">
          <!-- Pagination links -->
