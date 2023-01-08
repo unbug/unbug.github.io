@@ -6,7 +6,7 @@ categories: [ npm, secure ]
 image: assets/images/Screenshot 2023-01-09 at 00.17.08.png
 tags: [sticky, featured]
 ---
-如果你的团队正在考虑迁移新的前端框架，建议你先读南马托格罗索联邦大学计算机系的这篇论文[《On the (Un-)Adoption of JavaScript Front-end Frameworks》][paper1-url]。作者通过研究 TOP-1500 个 Github 项目，覆盖 Angular、React、VUE、Backbone, Ember 主流框架，对采用或不采用框架有了建设性的发现：
+如果你的团队正在考虑迁移新的前端框架，建议你先读南马托格罗索联邦大学计算机系的这篇论文[《On the (Un-)Adoption of JavaScript Front-end Frameworks》][paper1-url]。作者通过研究 Github 的 TOP-15000 项目，覆盖 Angular、React、VUE、Backbone, Ember 主流框架，对采用或不采用框架有了建设性的发现：
 1. 受欢迎程度 (39%) 和易学性 (35%) 是激励采用前端框架的主要因素。
 2. 20% 的人计划在未来的项目中采用新的的框架。
 3. 迁移到新的框架很费时间，41%项目在执行迁移上花费的时间多于使用新旧框架的时间。
