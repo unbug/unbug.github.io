@@ -2,7 +2,7 @@
 title: "About"
 layout: page
 permalink: "/about.html"
-comments: true
+comments: false
 ---
 Learn a paper in a minute.
 
