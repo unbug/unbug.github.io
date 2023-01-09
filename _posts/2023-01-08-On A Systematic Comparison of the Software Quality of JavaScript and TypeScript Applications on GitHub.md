@@ -11,8 +11,8 @@ tags: [featured]
 论文作者基于 604 个 GitHub 项目（299 个用于 JS，305 个用于 TS）进行了挖掘，这些项目的代码行数（LoC）超过 1600 万。 通过 SonarQube 和 GitHub API 分析了软件质量的几个方面：
 - a) 代码质量（每个 LoC 的代码味道数）；
 - b) 代码可理解性（每个 LoC 的认知复杂度）；
-- c) bug 倾向性（bug 提交率） )；
-- d) bug 解决时间（平均 bug issue 提交的时间）。 
+- c) bug 倾向性（bug 提交率）；
+- d) bug 解决时间（平均 bug issue commit 的时间）。 
 - 对于 TS，还通过 ESLint 收集了每个项目忽略 any 类型安全的频率。
 
 **论文研究问题和假说的结论：**
@@ -22,7 +22,7 @@ tags: [featured]
 4. TypeScript 应用比 JavaScript 应用花费更多或相等的时间来解决 bug。
 5. 使用 any 类型的频率与 TypeScript 应用中的代码异味数量呈正相关但微弱相关 (𝜌 = 0.26)。
 6. 使用 any 类型的频率与 TypeScript 应用中的认知复杂性呈正相关但微弱相关 (𝜌 = 0.19)。
-7. 在 TypeScript 应用中，使用 any 类型的频率与 bug 修复率之间没有显着相关性。
+7. 在 TypeScript 应用中，使用 any 类型的频率与 bug 修复率之间没有显著相关性。
 8. 使用 any 类型的频率与 TypeScript 应用中的 bug解决时间呈正相关但微弱相关 (𝜌 = 0.17)。
 
 ![summary]({{ site.baseurl }}/assets/images/screenshot-20230109-114345.png)
