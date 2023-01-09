@@ -23,7 +23,7 @@ tags: [sticky, featured]
 - [Track on ICSE 2022][links-1]
 
 <!--
-<p><iframe style="width:100%;" height="615" src="https://arxiv.org/pdf/2112.10165.pdf" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe style="width:100%;" height="315" src="https://arxiv.org/pdf/2112.10165.pdf" frameborder="0" allowfullscreen></iframe></p>
 -->
 
 [paper1-url]: https://arxiv.org/pdf/2112.10165.pdf

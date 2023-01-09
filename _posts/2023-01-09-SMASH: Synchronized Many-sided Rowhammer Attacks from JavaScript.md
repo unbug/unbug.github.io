@@ -23,7 +23,7 @@ Rowhammer 被归类为影响一些最新的 DRAM 设备的问题，其中重复�
 - 重新启用过去基于 JavaScript 的 Rowhammer 攻击
 
 
-<iframe width="720" height="405" src="https://www.youtube.com/embed/-qd-Xjkdb2k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/-qd-Xjkdb2k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### References
 - [The Rowhammer: the Evolution of a Dangerous Attack][links-1]
