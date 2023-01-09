@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《Montage：基于神经网络语言模型 (NNLM) 实现 JS 引擎模糊测试器》"
 author: unbug
 categories: [ NNLM, secure, JS ]
-image: assets/images/Screenshot2023-01-08at01.14.29.png
+image: assets/images/screenshot-20230109-110011.png
 tags: [featured]
 ---
 基于神经网络语言模型 (NNLM) 实现 JS 引擎模糊测试器被证实有效。韩国科学技术院（KAIST）的一篇论文[《Montage: A Neural Network Language Model-Guided JavaScript Engine Fuzzer》][paper1-url]， 首次提出了基于神经网络语言模型 (NNLM) 实现 JS 引擎模糊测试器： Montage。
@@ -12,7 +12,7 @@ tags: [featured]
 3. 试验用例结果表明 Montage 在最新的 JS 引擎中发现了 37 个真实 bug，有3个是公共漏洞和暴露（CVE），证明了它能有效发现 JS 引擎的 bug。
 
 以下是 Montage 的设计示意图：
-![overview]({{ site.baseurl }}/assets/images/Screenshot2023-01-08at01.14.29.png)
+![overview]({{ site.baseurl }}/assets/images/screenshot-20230109-110011.png)
 
 以下是使用3种模糊测试器和 Montage 方法发现的错误数量比较
 
