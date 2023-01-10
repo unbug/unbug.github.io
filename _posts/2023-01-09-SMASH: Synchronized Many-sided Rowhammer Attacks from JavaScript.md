@@ -2,7 +2,7 @@
 layout: post
 title:  "一分钟读论文：《SMASH：通过 JavaScript 触发同步多边 Rowhammer 攻击》"
 author: unbug
-categories: [ Rowhammer, Secure, JS,  ]
+categories: [ Rowhammer, Secure, JS ]
 image: assets/images/screenshot-20230109-165401.jpg
 tags: [featured]
 ---
