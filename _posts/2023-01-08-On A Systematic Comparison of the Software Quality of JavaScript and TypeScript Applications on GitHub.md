@@ -12,7 +12,7 @@ tags: [featured]
 - a) 代码质量（每个 LoC 的代码味道数）；
 - b) 代码可理解性（每个 LoC 的认知复杂度）；
 - c) bug 倾向性（bug 提交率）；
-- d) bug 解决时间（平均 bug issue commit 的时间）。 
+- d) bug 解决时间（平均 bug issue commit 的时间）;
 - 对于 TS，还通过 ESLint 收集了每个项目忽略 any 类型安全的频率。
 
 **论文研究问题和假说的结论：**
