@@ -1,0 +1,21 @@
+<!--  Don't edit anything here. Set your disqus id in _config.yml -->
+
+<div id="donate" class="mt-5">
+  <div id="donate" class="mt-4">
+    <h5 class="font-weight-bold">微信打赏</h5>
+    <img src='{{site.baseurl}}/assets/images/donate/wechatpay.jpg' className='wechatpay' title='微信付款' />
+  </div>
+  <div id="donate" class="mt-4">
+    <h5 class="font-weight-bold">支付宝打赏</h5>
+    <img src='{{site.baseurl}}/assets/images/donate/zhifubao.png' className='zhifubao' title='支付宝转账' />
+  </div>
+  <div id="donate" class="mt-4">
+    <h5 class="font-weight-bold">PayPal 打赏</h5>
+    <form action='https://www.paypal.com/cgi-bin/webscr' method='post' target='_top'>
+      <input type='hidden' name='cmd' value='_s-xclick' />
+      <input type='hidden' name='hosted_button_id' value='43H7K8PWR4VV4' />
+      <input type='image' className='paypal' src='{{site.baseurl}}/assets/images/donate/paypal.png' border='0' name='submit'
+        title='Paypal' />
+    </form>
+  </div>
+</div>
