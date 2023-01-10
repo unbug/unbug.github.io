@@ -2,7 +2,7 @@
 
 <!-- Author Box -->
 {% if page.author %}				
-<div class="row mt-5">
+<div class="row mt-5 p-5 bg-lightblue">
   <div class="col-md-2 align-self-center">
     {% if author.avatar %}
     <img class="rounded-circle" src="{{site.baseurl}}/{{author.avatar}}" alt="{{author.name}}" width="90"/>
@@ -14,7 +14,7 @@
   </div>
 </div>				
 {% endif %}
-<hr>
+<hr style="border: 0;">
 <div id="donate" class="row justify-content-center">
   <div class="col-md-3" style="max-width: 13rem; margin-bottom: 0.55rem;">
     <h5 class="font-weight-bold" style="text-align: center;">微信打赏</h5>
