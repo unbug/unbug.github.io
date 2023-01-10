@@ -10,4 +10,4 @@ Learn a paper in a minute.
 
 
 <!-- donate -->
-{% include comments.html %}
+{% include donate.html %}
