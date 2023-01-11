@@ -19,7 +19,7 @@ tags: [featured]
 1. TypeScript 应用的代码味道（code smells）比 JavaScript 应用少得多，即`代码质量更好`。
 2. TypeScript 应用的认知复杂性明显低于 JavaScript 应用，即`更好的代码可理解性`。
 3. TypeScript 应用比 JavaScript 应用具有`更高的 bug 提交率`，即更容易或同样容易出现 bug。
-4. TypeScript 应用比 JavaScript 应用花费更多或相等的时间来解决 bug。
+4. TypeScript 应用比 JavaScript 应用`花费更多`或相等的时间来解决 bug。
 5. 使用 any 类型的频率与 TypeScript 应用中的代码异味数量`呈正相关`但微弱相关 (𝜌 = 0.26)。
 6. 使用 any 类型的频率与 TypeScript 应用中的认知复杂性`呈正相关`但微弱相关 (𝜌 = 0.19)。
 7. 在 TypeScript 应用中，使用 any 类型的频率与 bug 修复率之间`没有显著相关性`。
