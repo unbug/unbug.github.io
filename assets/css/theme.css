@@ -637,7 +637,6 @@ ol.list-featured li:before {
 	display:none;
 }
 footer {
-	margin-top:50px;
 	z-index:1022;
 	position:relative;
 }
