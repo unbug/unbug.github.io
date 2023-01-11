@@ -12,7 +12,7 @@ image: assets/images/screenshot-20230109-165401.jpg
 - 挑战 2：攻击者需要找到一种策略来生成可以有效执行多边 Rowhammer 的模式，而不会引入太多额外的缓存命中和未命中。
 - 挑战 3：攻击者必须仔细安排缓存命中和未命中的顺序，才能成功绕过 in-DRAM TRR 缓冲措施。
 
-美國加州的高等计算机协会（USENIX）的这篇新论文[《SMASH: Synchronized Many-sided Rowhammer Attacks from JavaScript》][paper1-url]构建了SMASH（Synchronized MAny-Sided Hammering）实现了在现代 `DDR4` 系统上基于 `Firefox` 浏览器中从 JavaScript 触发同步多边 Rowhammer 攻击：
+美国加州的高等计算机协会（USENIX）的这篇新论文[《SMASH: Synchronized Many-sided Rowhammer Attacks from JavaScript》][paper1-url]构建了SMASH（Synchronized MAny-Sided Hammering）实现了在现代 `DDR4` 系统上基于 `Firefox` 浏览器中从 JavaScript 触发同步多边 Rowhammer 攻击：
 
 ![rowhammer-from-js]({{ site.baseurl }}/assets/images/screenshot-20230109-170443.jpg)
 
