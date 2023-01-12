@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《要不要上 TypeScript？GitHub 上 JS 和 TS 应用软件质量的系统比较》"
 author: unbug
 categories: [ TypeScript, JS ]
-image: assets/images/screenshot-20230109-113530.png
+image: assets/images/screenshot-20230109-113530.jpeg
 tags: [featured]
 ---
 你的团队是否还在纠结要不要将项目改成 TypeScript 呢？改成 TypeScript 应用的 bug 能得到收敛吗？德国斯图加特大学软件工程研究所的这篇新论文[《To Type or Not to Type? A Systematic Comparison of the Software Quality of JavaScript and TypeScript Applications on GitHub》][paper1-url]能给你答案。
@@ -25,7 +25,7 @@ tags: [featured]
 7. 在 TypeScript 应用中，使用 any 类型的频率与 bug 修复率之间`没有显著相关性`。
 8. 使用 any 类型的频率与 TypeScript 应用中的 bug解决时间`呈正相关`但微弱相关 (𝜌 = 0.17)。
 
-![summary]({{ site.baseurl }}/assets/images/screenshot-20230109-114345.png)
+![summary]({{ site.baseurl }}/assets/images/screenshot-20230109-114345.jpeg)
 
 ### References
 - [SonarQube][links-1]
