@@ -52,13 +52,13 @@ description: "Learn a paper in a minute, 一分钟读懂一篇论文, 一分钟�
         {%- assign second_post = site.posts[1] -%}        
         <div class="mb-3 d-flex align-items-center">                
                 {% if second_post.image %}
-                <div class="col-md-4">
+                <div class="col-md-4" style="padding-left: 0;">
                 <a href="{{site.baseurl}}{{second_post.url}}">
                  <img class="w-100" src="{% if second_post.image contains "://" %}{{ second_post.image }}{% else %}{{ second_post.image | absolute_url }}{% endif %}" alt="{{ second_post.title }}">
                 </a>
                 </div>
                 {% endif %}                
-                <div>
+                <div class="col-md-8" style="padding: 0;">
                     <h2 class="mb-2 h6 font-weight-bold">
                     <a class="text-dark" href="{{site.baseurl}}{{second_post.url}}">{{ second_post.title }}</a>
                     </h2>
