@@ -4,9 +4,8 @@ title:  "一分钟读论文：《重新思考移动客⼾端的网页缓存》"
 author: unbug
 categories: [ Performance, MobileWeb ]
 image: assets/images/screenshot-20230112-185611.jpg
-tags: [featured]
 ---
-最高约49%的 JS 运算可以在网页上重用。美国密歇根⼤学和加州⼤学洛杉矶分校的论文[《Rethinking Client-Side Caching for the Mobile Web》][paper1-url] 提出了一个新的客户端缓存架构，该架构主张直接缓存运行时的 JS。
+最高约`49%`的 JS 运算可以在网页上重用。美国密歇根⼤学和加州⼤学洛杉矶分校的论文[《Rethinking Client-Side Caching for the Mobile Web》][paper1-url] 提出了一个新的客户端缓存架构，该架构主张直接`缓存运行时的 JS`。
 
 ![arch]({{ site.baseurl }}/assets/images/screenshot-20230112-185611.jpg)
 
@@ -18,8 +17,8 @@ tags: [featured]
 
 ![Quantifying]({{ site.baseurl }}/assets/images/screenshot-20230112-203427.jpg)
 该论文并为验证实现此架构，只是通过分析 Aleax Top 1000 的网站分析 JS 的课重用：
-- 同一个网站1天的运行时缓存能节省 57% 的 JavaScript 执⾏时间，⼀天后可重⽤的 JavaScript 执⾏部分更⾼（75%）；
-- 不同网站 15% 的 JS 执行可以在1天的时间内重⽤
-- JavaScript 执⾏占中等复杂度页面的 65%，估计中等⻚⾯最高可节省 49%；
+- 同一个网站1天的运行时缓存能节省`57%`的 JavaScript 执⾏时间，⼀天后可重⽤的 JavaScript 执⾏部分更⾼`（75%）`；
+- 不同网站`15%`的 JS 执行可以在1天的时间内重⽤
+- JavaScript 执⾏占中等复杂度页面的`65%`，估计中等⻚⾯最高可节省`49%`；
 
 [paper1-url]: http://web.eecs.umich.edu/~harshavm/papers/hotmobile21.pdf
