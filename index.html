@@ -79,13 +79,13 @@ description: "Learn a paper in a minute, 一分钟读懂一篇论文, 一分钟�
         {%- assign third_post = site.posts[2] -%}        
         <div class="mb-3 d-flex align-items-center">                
                 {% if third_post.image %}
-                <div class="col-md-4">
+                <div class="col-md-4" style="padding-left: 0;">
                 <a href="{{site.baseurl}}{{third_post.url}}">
                  <img class="w-100" src="{% if third_post.image contains "://" %}{{ third_post.image }}{% else %}{{site.baseurl}}/{{ third_post.image }}{% endif %}" alt="{{ third_post.title }}">
                 </a>
                 </div>
                 {% endif %}                
-                <div>
+                <div class="col-md-8" style="padding: 0;">
                     <h2 class="mb-2 h6 font-weight-bold">
                     <a class="text-dark" href="{{site.baseurl}}{{third_post.url}}">{{ third_post.title }}</a>
                     </h2>
@@ -106,13 +106,13 @@ description: "Learn a paper in a minute, 一分钟读懂一篇论文, 一分钟�
         {%- assign fourth_post = site.posts[3] -%}        
         <div class="mb-3 d-flex align-items-center">                
                 {% if fourth_post.image %}
-                <div class="col-md-4">
+                <div class="col-md-4" style="padding-left: 0;">
                 <a href="{{site.baseurl}}{{fourth_post.url}}">
                 <img class="w-100" src="{% if fourth_post.image contains "://" %}{{ fourth_post.image }}{% else %}{{site.baseurl}}/{{ fourth_post.image }}{% endif %}" alt="{{ fourth_post.title }}">
                 </a>
                 </div>
                 {% endif %}                
-                <div>
+                <div class="col-md-8" style="padding: 0;">
                     <h2 class="mb-2 h6 font-weight-bold">
                     <a class="text-dark" href="{{site.baseurl}}{{fourth_post.url}}">{{ fourth_post.title }}</a>
                     </h2>
