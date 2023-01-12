@@ -16,7 +16,7 @@ image: assets/images/screenshot-20230112-185611.jpg
 - 如果找到匹配项，浏览器将应用该缓存条目的效果而不是执行该函数； 否则，它将执行该函数并将新条目添加到缓存中。
 
 ![Quantifying]({{ site.baseurl }}/assets/images/screenshot-20230112-203427.jpg)
-该论文并为验证实现此架构，只是通过分析 Aleax Top 1000 的网站分析 JS 的课重用：
+该论文并未实现此架构验证，只是通过分析 Aleax Top 1000 的网站分析来衡量潜力：
 - 同一个网站1天的运行时缓存能节省`57%`的 JavaScript 执⾏时间，⼀天后可重⽤的 JavaScript 执⾏部分更⾼`（75%）`；
 - 不同网站`15%`的 JS 执行可以在1天的时间内重⽤
 - JavaScript 执⾏占中等复杂度页面的`65%`，估计中等⻚⾯最高可节省`49%`；
