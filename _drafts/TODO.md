@@ -1,3 +1,11 @@
+The impact of the software architecture on the developer productivity
+https://pdfs.semanticscholar.org/8b01/4a53badc30a06f0378aba8737c9529d92a9a.pdf?_ga=2.165236855.979285908.1673232871-2044131725.1673232871
+
+
+Software Productivity in Practice: A Systematic Mapping Study
+https://pdfs.semanticscholar.org/44f6/69c416f415e594bc212549b9598eba99121a.pdf?_ga=2.260567109.979285908.1673232871-2044131725.1673232871
+
+
 Automated Refactoring of Legacy JavaScript Code to ES6 Modules
 https://www.semanticscholar.org/paper/Automated-Refactoring-of-Legacy-JavaScript-Code-to-Paltoglou-Zafeiris/a9bfef30431b7f41908d0a9d4d1b0f53c21e01cf
 
