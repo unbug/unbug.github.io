@@ -1,5 +1,4 @@
-The impact of the software architecture on the developer productivity
-https://pdfs.semanticscholar.org/8b01/4a53badc30a06f0378aba8737c9529d92a9a.pdf?_ga=2.165236855.979285908.1673232871-2044131725.1673232871
+
 
 
 Software Productivity in Practice: A Systematic Mapping Study
