@@ -4,7 +4,7 @@ title:  "一分钟读论文：《要不要上 TypeScript？GitHub 上 JS 和 TS 
 author: unbug
 categories: [ TypeScript, JS ]
 image: assets/images/screenshot-20230109-113530.jpeg
-tags: [featured]
+tags: [sticky, featured]
 ---
 你的团队是否还在纠结要不要将项目改成 TypeScript 呢？改成 TypeScript 应用的 bug 能得到收敛吗？德国斯图加特大学软件工程研究所的这篇新论文[《To Type or Not to Type? A Systematic Comparison of the Software Quality of JavaScript and TypeScript Applications on GitHub》][paper1-url]能给你答案。
 
