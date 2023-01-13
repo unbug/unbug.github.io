@@ -14,3 +14,9 @@ https://www.semanticscholar.org/paper/PWA-vs-the-Others%3A-A-Comparative-Study-o
 
 Classifying Dead Code in Software Development
 https://www.semanticscholar.org/paper/Classifying-Dead-Code-in-Software-Development-Alavizadeh/5d643e4932f74acfd80872d40057afcd9da8fdd3
+
+
+
+
+- 规划「一分钟读论文」的视频，发到 YouTobe & 抖音10篇。
+- 规划一个新的系列，如「三分钟说原理」，「五分钟写源码」并完成 N 篇。
