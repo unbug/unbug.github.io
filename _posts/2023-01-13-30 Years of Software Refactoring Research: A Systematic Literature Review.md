@@ -5,7 +5,7 @@ author: unbug
 categories: [ Refactor ]
 image: assets/images/screenshot-20230113-232834.jpg
 ---
-IEEE 软件工程刊登的论文[《30 Years of Software Refactoring Research: A Systematic Literature Review》][paper1-url]分析了过去`30年3183篇`关于重构的研究论文，对现有重构研究的最具可扩展性和最全面的文献综述。
+IEEE 软件工程期刊登的论文[《30 Years of Software Refactoring Research: A Systematic Literature Review》][paper1-url]分析了过去`30年3183篇`关于重构的研究论文，对现有重构研究的最具可扩展性和最全面的文献综述。
 
 
 ### 论文研究的问题和结论
