@@ -11,7 +11,7 @@ image: assets/images/screenshot-20230113-191938.jpg
 ![archs]({{ site.baseurl }}/assets/images/screenshot-20230113-191938.jpg)
 - v1：基于 Node 服务，Mobile 和 Web 应用都是基于 Angular + Ionic3
 - v2：和 v1 的区别是 Node 服务只做 REST 服务，数据服务基于 Python
-- v3：和 v2 的服务替换成 Firebase
+- v3：和 v2 的区别是服务替换成 Firebase
 - v4：和 V3 的区别是谨是将 Ionic3 重构成 Ionic4
 
 **四种架构的效能分析：**
