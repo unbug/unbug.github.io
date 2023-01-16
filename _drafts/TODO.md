@@ -11,8 +11,6 @@ https://www.semanticscholar.org/paper/Automated-Refactoring-of-Legacy-JavaScript
 PWA vs the Others: A Comparative Study on the UI Energy-Efficiency of Progressive Web Apps
 https://www.semanticscholar.org/paper/PWA-vs-the-Others%3A-A-Comparative-Study-on-the-UI-of-Huber-Demetz/a0a065dc38e7c2506c4f4e2f59a02f8f32f66f57
 
-Classifying Dead Code in Software Development
-https://www.semanticscholar.org/paper/Classifying-Dead-Code-in-Software-Development-Alavizadeh/5d643e4932f74acfd80872d40057afcd9da8fdd3
 
 Generating Virtual Machine Code of JavaScript Engine for Embedded Systems
 https://www.semanticscholar.org/paper/Generating-Virtual-Machine-Code-of-JavaScript-for-Hirasawa-Iwasaki/34577297b8e0cdac5a7a5db17175f153eb80fb61
@@ -59,10 +57,6 @@ https://ieeexplore.ieee.org/document/9625808
 
 关于难闻气味的系统文献综述——5 W：哪个、什么时候、什么、谁、哪里
 https://ieeexplore.ieee.org/document/8532309
-
-今天是个好日子：软件开发者的日常
-https://ieeexplore.ieee.org/document/8666786
-
 
 
 - 规划「一分钟读论文」的视频，发到 YouTobe & 抖音10篇。
