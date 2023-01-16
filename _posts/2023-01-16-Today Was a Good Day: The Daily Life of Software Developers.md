@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "一分钟读论文：《工作良好的一天：软件开工程师的日常》"
+title:  "一分钟读论文：《工作良好的一天：软件工程师的日常》"
 author: unbug
 categories: [ Agile, Productivity ]
 image: assets/images/screenshot-20230116-001006.jpg
