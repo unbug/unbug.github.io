@@ -6,7 +6,7 @@ categories: [ Agile, Productivity ]
 image: assets/images/screenshot-20230116-001006.jpg
 tags: [featured]
 ---
-作为团队的 Leader，如何通过改进流程和⼯具，并最终提⾼团队⽣产⼒呢？可以参考微软研究院和英国伦敦大学、瑞士苏黎世苏黎世大学信息学系合著的论文[《Today was a Good Day: The Daily Life of Software Developers》][paper1-url]。该论文分析了微软工程师的`5,971`份问卷结果，发现工程师`「良好」`和`「典型」`的工作日是怎么样，并总结了使良好的工作日成为典型的建议：
+作为团队的 Leader，如何通过改进流程和⼯具，并最终提⾼团队⽣产⼒呢？可以参考微软研究院和英国伦敦大学、瑞士苏黎世大学信息学系合著的论文[《Today was a Good Day: The Daily Life of Software Developers》][paper1-url]。该论文分析了微软工程师的`5,971`份问卷结果，发现工程师`「良好」`和`「典型」`的工作日是怎么样，并总结了使良好的工作日成为典型的建议：
 
 **优化工程师的工作日的建议：**
 - 建议尽量减少管理任务和基础设施问题，并减少中断和会议。与开放式办公室相⽐，在仅与少数同事共享的⼩型办公室中可能更容易实现不间断的⼯作
