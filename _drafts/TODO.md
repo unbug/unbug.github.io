@@ -37,8 +37,6 @@ https://ieeexplore.ieee.org/document/9519532
 比较大规模敏捷软件开发的方法：系统文献回顾
 https://ieeexplore.ieee.org/document/9387593
 
-影响大规模敏捷软件开发按时交付的因素
-https://ieeexplore.ieee.org/document/9503331
 
 是什么在敏捷团队中驱动和维持自我分配
 https://ieeexplore.ieee.org/document/9506834
