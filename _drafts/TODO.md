@@ -49,9 +49,6 @@ https://ieeexplore.ieee.org/document/9525343
 用于技术债务识别的机器学习
 https://ieeexplore.ieee.org/document/9622154
 
-开发人员如何设计测试用例：一项观察性研究
-https://ieeexplore.ieee.org/document/9625808
-
 关于难闻气味的系统文献综述——5 W：哪个、什么时候、什么、谁、哪里
 https://ieeexplore.ieee.org/document/8532309
 
