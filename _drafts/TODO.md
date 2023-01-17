@@ -22,10 +22,6 @@ https://www.semanticscholar.org/paper/When-Are-Smells-Indicators-of-Architectura
 论敏捷团队中组织结构模式与架构的关系
 https://ieeexplore.ieee.org/document/9712241
 
-软件漏洞的秘密生活：大规模实证研究
-https://ieeexplore.ieee.org/document/9672730
-https://fpalomba.github.io/pdf/Journals/J41.pdf
-
 
 学习如何倾听：在事件驱动的 JavaScript API 中自动查找错误模式
 https://arxiv.org/pdf/2107.13708.pdf
