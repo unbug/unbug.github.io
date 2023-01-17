@@ -5,15 +5,18 @@ Software Productivity in Practice: A Systematic Mapping Study
 https://pdfs.semanticscholar.org/44f6/69c416f415e594bc212549b9598eba99121a.pdf?_ga=2.260567109.979285908.1673232871-2044131725.1673232871
 
 
-Automated Refactoring of Legacy JavaScript Code to ES6 Modules
-https://www.semanticscholar.org/paper/Automated-Refactoring-of-Legacy-JavaScript-Code-to-Paltoglou-Zafeiris/a9bfef30431b7f41908d0a9d4d1b0f53c21e01cf
-
 PWA vs the Others: A Comparative Study on the UI Energy-Efficiency of Progressive Web Apps
 https://www.semanticscholar.org/paper/PWA-vs-the-Others%3A-A-Comparative-Study-on-the-UI-of-Huber-Demetz/a0a065dc38e7c2506c4f4e2f59a02f8f32f66f57
 
 
 Generating Virtual Machine Code of JavaScript Engine for Embedded Systems
 https://www.semanticscholar.org/paper/Generating-Virtual-Machine-Code-of-JavaScript-for-Hirasawa-Iwasaki/34577297b8e0cdac5a7a5db17175f153eb80fb61
+
+Accessibility and Software Engineering Processes: A Systematic Literature Review
+https://www.semanticscholar.org/paper/Accessibility-and-Software-Engineering-Processes%3A-A-Paiva-Freire/42e5fb51aab2ba7d6336551136b6f66eeebbdfba
+
+架构重构机会的气味指标何时出现：对 50 个软件项目的研究
+https://www.semanticscholar.org/paper/When-Are-Smells-Indicators-of-Architectural-A-Study-Sousa-Oizumi/68ad1aa402459e046480a3206f3f393770c50f82
 
 
 论敏捷团队中组织结构模式与架构的关系
