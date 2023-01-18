@@ -2,7 +2,7 @@
 layout: post
 title:  "一分钟读论文：《SMASH：通过 JavaScript 触发同步多边 Rowhammer 攻击》"
 author: unbug
-categories: [ Rowhammer, Secure, JS ]
+categories: [ Rowhammer, Security, JS ]
 image: assets/images/screenshot-20230109-165401.jpg
 ---
 `Rowhammer` 被归类为影响一些最新的 DRAM 设备的问题，其中重复访问一行内存可能导致相邻行中的位翻转，这意味着理论上攻击者可以改变内存中该位的值，从而获得对`所有物理内存的读写访问权`。确定性的 Rowhammer 攻击对数十亿移动用户构成了真正的威胁。
