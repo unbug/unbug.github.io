@@ -1,5 +1,13 @@
 
 # JavaScript
+跨站点脚本攻击揭露 22 年：系统映射和全面调查
+https://arxiv.org/abs/2205.08425
+
+https://arxiv.org/abs/2205.15202
+
+Web 缓存欺骗攻击
+https://www.semanticscholar.org/paper/Web-Cache-Deception-Attack-Vitali/8849a32f6c4a42980debb7db2aed5bc386dcc4f4
+
 JACLNet：自适应码长网络在JavaScript恶意代码检测中的应用
 https://www.semanticscholar.org/paper/JACLNet%3AApplication-of-adaptive-code-length-network-Zhang-Wan/7eb0499036a0eeb072854fe0b010f9ea85568347
 
