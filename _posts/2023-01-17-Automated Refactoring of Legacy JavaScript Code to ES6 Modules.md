@@ -7,7 +7,9 @@ image: assets/images/screenshot-20230117-121828.jpg
 ---
 很多遗留的项目都是 ES5 代码，不能在 ES6 或 TypeScript 下很好的复用，特别是企业级大型前端工程，维护成本令人头疼。雅典经济与商业大学信息学系的论文[《Automated Refactoring of Legacy JavaScript Code to ES6 Modules》][paper1-url]实现了将遗留 ES5 代码自动重构为 ES6 模块，重点是将模块对象解构为多个可单独重用的模块来实现模块内容的细粒度重用，每个重构模块`支持按需引入`而不是引入整个模块对象，并`自动重建依赖关系`，最大限度减少耦合并提高了可维护性。
 
-论文使用静态分析来构建 JavaScript 项目模型，即模块依赖图 (MDG)，在 MDG 的基础上指定模块迁移到 ES6 的重构过程。原型实现在 19 个开源项目上进行了评估：
+![flow]({{ site.baseurl }}/assets/images/screenshot-20230118-094155.jpg)
+
+论文很长的篇幅详细记录了整个一个完整项目案例重构的过程和使用的公式级算法。思路是使用静态分析来构建 JavaScript 项目模型，即模块依赖图 (MDG)，在 MDG 的基础上指定模块迁移到 ES6 的重构过程。原型实现在 19 个开源项目上进行了评估：
 
 **重构的结果对系统模块化有什么影响？**
 ![Result]({{ site.baseurl }}/assets/images/screenshot-20230117-120521.jpg)
