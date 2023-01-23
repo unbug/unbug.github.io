@@ -22,9 +22,9 @@ plugins:
 authors:
     unbug:
       name:           Unbug
-      site:           https://unbug.github.io/
+      site:           https://unbug.github.io
       avatar:         assets/images/avatar1.jpg
-      bio:            "希望「一分钟读论文」能丰富你的精神食粮，有收获就打个赏 :)"
+      bio:            "「一分钟读论文」丰富你的精神食粮，有收获请打个赏 :)"
       email:          tidelgl@gmail.com
       twitter:        https://twitter.com/unbug
  
@@ -50,7 +50,11 @@ markdown: kramdown
 highlighter: rouge
 
 # Paginate
-paginate: 10
+paginate: 50
+
+# Feed
+feed:
+  posts_limit: 7
 
 
 
