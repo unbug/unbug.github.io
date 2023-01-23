@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "一分钟读论文：《一个小孔沉数船：小程序权限漏洞研究》"
+title:  "一分钟读论文：《一孔漏沉千帆：小程序权限漏洞研究》"
 author: unbug
 categories: [ Mini Program, Security]
 image: assets/images/screenshot-20230118-152042.jpg
