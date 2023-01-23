@@ -54,7 +54,7 @@ paginate: 50
 
 # Feed
 feed:
-  posts_limit: 7
+  posts_limit: 50
 
 
 
