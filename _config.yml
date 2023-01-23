@@ -50,11 +50,11 @@ markdown: kramdown
 highlighter: rouge
 
 # Paginate
-paginate: 50
+paginate: 20
 
 # Feed
 feed:
-  posts_limit: 50
+  posts_limit: 10
 
 
 
