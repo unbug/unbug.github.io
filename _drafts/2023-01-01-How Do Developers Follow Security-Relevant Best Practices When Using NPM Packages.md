@@ -5,7 +5,7 @@ author: unbug
 categories: [Security, NPM]
 image: assets/images/screenshot-20230124-230804.jpg
 ---
-不遵循包依赖的最佳实践会导致严重的安全风险，例如2021 年 3 月，安全专家在 NPM 包网络掩码中发现了一个漏洞可影响超过 278,000 个客户端项目。美国布莱克斯堡弗吉尼亚理工大学和东北大学软件学院合著的论文[《How Do Developers Follow Security-Relevant Best Practices When Using NPM Packages?》][paper1-url] 分析了841个 JS 应用与 NPM TOP 1000 包发现工程师经常忽略安全的最佳实践。
+不遵循包依赖的最佳实践会导致严重的安全风险。例如，2021 年 3 月，安全专家在 NPM 包网络掩码中发现了一个漏洞可影响超过 278,000 个应用。美国布莱克斯堡弗吉尼亚理工大学和东北大学软件学院合著的论文[《How Do Developers Follow Security-Relevant Best Practices When Using NPM Packages?》][paper1-url] 分析了841个 JS 应用与 NPM TOP 1000 包发现工程师经常忽略安全的最佳实践。
 
 ## NPM 包安全最佳实践（BPs）
 - BP1：使用命令`npm audit`扫描库依赖项中的漏洞，并使用`npm audit fix`移除漏洞，消除易受攻击包的使用可以减少恶意模块的攻击面。
