@@ -24,7 +24,7 @@ authors:
       name:           Unbug
       site:           https://unbug.github.io
       avatar:         assets/images/avatar1.jpg
-      bio:            "「一分钟读论文」丰富你的精神食粮，有收获请打个赏 :)"
+      bio:            "「一分钟读论文」用学术武装你的思维。有收获请赏杯奶茶🥤"
       email:          tidelgl@gmail.com
       twitter:        https://twitter.com/unbug
  
@@ -50,7 +50,7 @@ markdown: kramdown
 highlighter: rouge
 
 # Paginate
-paginate: 20
+paginate: 10
 
 # Feed
 feed:
