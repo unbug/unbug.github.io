@@ -27,7 +27,7 @@ tags: [featured]
 
 ![summary]({{ site.baseurl }}/assets/images/screenshot-20230109-114345.jpeg)
 
-### References
+## References
 - [SonarQube][links-1]
 
 

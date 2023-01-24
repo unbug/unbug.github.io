@@ -7,7 +7,7 @@ image: assets/images/screenshot-20230117-191039.jpg
 ---
 先写测试还是先写代码？荷兰代尔夫特特理工大学和澳大利亚墨尔本大学的论文[《How Developers Engineer Test Cases: An Observational Study》][paper1-url] 观察了 13 位具有不同级别经验的工程师为真实世界的开源码编写测试用例，并调查了 72 位工程师之后，总结了一个框架和一组策略来解释工程师如何设计测试用例。
 
-### 论文总结的测试框架
+## 论文总结的测试框架
 
 ![framework]({{ site.baseurl }}/assets/images/screenshot-20230117-191039.jpg)
 
@@ -53,7 +53,7 @@ image: assets/images/screenshot-20230117-191039.jpg
 - (A2) 系统地重新访问文档是一个不太流行的充分性标准。
 - (A3) 虽然不是系统地，但工程师在软件开发和测试方面的个人经验也在决定何时停止测试方面发挥作用。
 
-### 论文总结的测试策略
+## 论文总结的测试策略
 
 ![Strategies]({{ site.baseurl }}/assets/images/screenshot-20230117-192643.jpg)
 
