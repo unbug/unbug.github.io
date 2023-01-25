@@ -20,8 +20,6 @@ https://www.semanticscholar.org/paper/Hand-Sanitizers-in-the-Wild%3A-A-Large-sca
 检测混淆的恶意 JavaScript 代码
 https://www.semanticscholar.org/paper/Detection-of-Obfuscated-Malicious-JavaScript-Code-Alazab-Khraisat/10173d84bf94b39b222b98c65dc508e2abf066e1
 
-开发人员在使用 NPM 包时如何遵循与安全相关的最佳实践？
-https://www.semanticscholar.org/paper/How-Do-Developers-Follow-Security-Relevant-Best-NPM-Kabir-Wang/18548095b796d765044bdb76369aaddbe16361e7
 
 通过前端 JavaScript 代码生成的任务增强来整合领域知识
 https://www.semanticscholar.org/paper/Incorporating-domain-knowledge-through-task-for-Shen-Zhu/6e53a4e0f38d4be2dcaa2625a2a2a9332d338d05
