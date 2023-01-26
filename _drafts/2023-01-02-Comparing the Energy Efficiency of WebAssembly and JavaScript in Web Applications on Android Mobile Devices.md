@@ -5,7 +5,7 @@ author: unbug
 categories: [WebAssembly, Performance]
 image: assets/images/screenshot-20230126-220033.jpg
 ---
-在真实应用中评估 WebAsssembly 更多关注的是 API 和性能，而移动设备显然需要更关注能耗。荷兰阿姆斯特丹自由大学的论文[《Comparing the Energy Efficiency of WebAssembly and JavaScript in Web Applications on Android Mobile Devices》][paper1-url]通过对 32 个 Web 应用程序基于 Android 上 Firefox、Chrome 跑 WebAssembly 与 JavaScript 使用之间的能耗进行分析，结果发现 WebAssembly 的能耗低于 JavaScript。
+在真实应用中评估 WebAsssembly 更多关注的是 API 和性能，而移动设备显然也需要关注能耗。荷兰阿姆斯特丹自由大学的论文[《Comparing the Energy Efficiency of WebAssembly and JavaScript in Web Applications on Android Mobile Devices》][paper1-url]通过对 32 个 Web 应用程序基于 Android 上 Firefox、Chrome 跑 WebAssembly 与 JavaScript 使用之间的能耗进行分析，结果发现 WebAssembly 的能耗低于 JavaScript。
 
 |                                       |                                       |
 |:-------------------------------------:|:-------------------------------------:|
