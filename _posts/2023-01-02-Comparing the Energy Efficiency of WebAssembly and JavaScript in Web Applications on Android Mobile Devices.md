@@ -7,8 +7,9 @@ image: assets/images/screenshot-20230126-220033.jpg
 ---
 在真实应用中评估 WebAsssembly 更多关注的是 API 和性能，而移动设备显然需要更关注能耗。荷兰阿姆斯特丹自由大学的论文[《Comparing the Energy Efficiency of WebAssembly and JavaScript in Web Applications on Android Mobile Devices》][paper1-url]通过对 32 个 Web 应用程序基于 Android 上 Firefox、Chrome 跑 WebAssembly 与 JavaScript 使用之间的能耗进行分析，结果发现 WebAssembly 的能耗低于 JavaScript。
 
-![img1]({{ site.baseurl }}/assets/images/screenshot-20230126-222117.jpg)
-![img2]({{ site.baseurl }}/assets/images/screenshot-20230126-222143.jpg)
+|                                       |                                       |
+|:-------------------------------------:|:-------------------------------------:|
+|![img1]({{ site.baseurl }}/assets/images/screenshot-20230126-222117.jpg)| ![img2]({{ site.baseurl }}/assets/images/screenshot-20230126-222143.jpg) |
 
 与 WebAssembly 相比，JavaScript 几乎大 100 焦耳，这意味着将 WebAssembly 用于 Web 应用程序会对 Android 移动设备的能耗产生重大影响，相较于 JavaScript 降低很多。
 
