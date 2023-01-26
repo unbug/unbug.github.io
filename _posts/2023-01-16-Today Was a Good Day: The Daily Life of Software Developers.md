@@ -4,7 +4,7 @@ title:  "一分钟读论文：《工作良好的一天：软件工程师的日�
 author: unbug
 categories: [ Agile, Productivity ]
 image: assets/images/screenshot-20230116-001006.jpg
-tags: [featured]
+tags: [sticky]
 ---
 作为团队的 Leader，如何通过改进流程和⼯具，并最终提⾼团队⽣产⼒呢？可以参考微软研究院和英国伦敦大学、瑞士苏黎世大学信息学系合著的论文[《Today was a Good Day: The Daily Life of Software Developers》][paper1-url]。该论文分析了微软工程师的`5,971`份问卷结果，发现工程师`「良好」`和`「典型」`的工作日是怎么样，并总结了使良好的工作日成为典型的建议：
 
