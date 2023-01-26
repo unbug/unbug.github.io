@@ -6,7 +6,7 @@ categories: [ , JS ]
 image: assets/images/
 tags: [featured]
 ---
-的论文[《》][paper1-url]：
+的论文[《SoK: In Search of Lost Time: A Review of JavaScript Timers in Browsers》][paper1-url]：
 
 ![]({{ site.baseurl }}/assets/images/)
 
@@ -15,5 +15,5 @@ tags: [featured]
 - [][links-1]
 
 
-[paper1-url]: https://hal.inria.fr/hal-03215569/file/eurosp21_rokicki.pdf
+[paper1-url]: https://oaklandsok.github.io/papers/rokicki2021.pdf
 [links-1]: 

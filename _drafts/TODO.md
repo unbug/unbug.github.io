@@ -1,18 +1,10 @@
 
 # JavaScript
-跨站点脚本攻击揭露 22 年：系统映射和全面调查
-https://arxiv.org/abs/2205.08425
-
-https://arxiv.org/abs/2205.15202
-
 Web 缓存欺骗攻击
 https://www.semanticscholar.org/paper/Web-Cache-Deception-Attack-Vitali/8849a32f6c4a42980debb7db2aed5bc386dcc4f4
 
 JACLNet：自适应码长网络在JavaScript恶意代码检测中的应用
 https://www.semanticscholar.org/paper/JACLNet%3AApplication-of-adaptive-code-length-network-Zhang-Wan/7eb0499036a0eeb072854fe0b010f9ea85568347
-
-WebAssembly 与 JavaScript 对比：能量和运行时性能
-https://www.semanticscholar.org/paper/WebAssembly-versus-JavaScript%3A-Energy-and-Runtime-Macedo-Abreu/5f24eb714cb8324af3a4b6dcb61acf02281c9a59
 
 野外洗手液：自定义 JavaScript 洗手液函数的大规模研究
 https://www.semanticscholar.org/paper/Hand-Sanitizers-in-the-Wild%3A-A-Large-scale-Study-of-Klein-Barber/51abecd6e72460da21e9f3a52c73eb59b7d8674f
@@ -24,9 +16,6 @@ https://www.semanticscholar.org/paper/Detection-of-Obfuscated-Malicious-JavaScri
 通过前端 JavaScript 代码生成的任务增强来整合领域知识
 https://www.semanticscholar.org/paper/Incorporating-domain-knowledge-through-task-for-Shen-Zhu/6e53a4e0f38d4be2dcaa2625a2a2a9332d338d05
 
-
-低代码开发、Java Swing 和 JavaScript 编程的实验评估
-https://www.semanticscholar.org/paper/Experimental-Evaluation-of-Low-Code-development%2C-Cal%C3%A7ada-Bernardino/4512e2a408d94bf2482860b73bc5889b53bba65f
 
 Microwalk-CI：JavaScript 应用程序的实用侧信道分析
 https://www.semanticscholar.org/paper/Microwalk-CI%3A-Practical-Side-Channel-Analysis-for-Wichelmann-Sieck/d8b8a03d2a74114f0e542b74c50084f1c7c86848
@@ -99,10 +88,29 @@ https://ieeexplore.ieee.org/document/9506834
 Software Productivity in Practice: A Systematic Mapping Study
 https://pdfs.semanticscholar.org/44f6/69c416f415e594bc212549b9598eba99121a.pdf?_ga=2.260567109.979285908.1673232871-2044131725.1673232871
 
-
 软件工程中的人类价值：对比实践案例研究
 https://ieeexplore.ieee.org/document/9261980
 
+代码基础设施：下一代云生命周期自动化
+https://www.semanticscholar.org/paper/Infrastructure-From-Code%3A-The-Next-Generation-of-Aviv-Gafni/4501e865859940b7fbe28ae4ffd474afd7ab0a96
+
+低代码开发、Java Swing 和 JavaScript 编程的实验评估
+https://www.semanticscholar.org/paper/Experimental-Evaluation-of-Low-Code-development%2C-Cal%C3%A7ada-Bernardino/4512e2a408d94bf2482860b73bc5889b53bba65f
+
+低代码开发平台挑战的两个视角——一项探索性研究
+https://www.semanticscholar.org/paper/Two-Perspectives-of-Low-Code-Development-Platform-Prinz-Huber/af61bd1436bd9a44ef2c1d512ecdf012aac923d9
+
+低代码开发平台的混合方法研究：中小企业数字创新的驱动力
+https://www.semanticscholar.org/paper/A-Mixed-Methods-Study-of-Low-Code-Development-of-in-Bies-Weber/365e9c32ae9d8b010126ad7c5588fe2f8de0126f?sort=relevance&citedPapersSort=year&citedPapersLimit=10&citedPapersOffset=0
+
+关于低代码软件开发平台的采用和障碍的开发人员讨论主题
+https://www.semanticscholar.org/paper/Developer-discussion-topics-on-the-adoption-and-of-Alamin-Uddin/f44ba15c7665dbe70b736000b92151ced4522631
+
+低代码开发的特点与挑战：从业者的视角
+https://www.semanticscholar.org/paper/Characteristics-and-Challenges-of-Low-Code-The-Luo-Liang/a902af2c82e161e82d7fc247d67961a972fea767
+
+低代码平台的可用性如何？系统的文献综述
+https://www.semanticscholar.org/paper/What-about-the-usability-in-low-code-platforms-A-Pinho-Aguiar/82a62745360c8574262fcdf1bda508462de40654
 
 # Framework
 PWA vs the Others: A Comparative Study on the UI Energy-Efficiency of Progressive Web Apps

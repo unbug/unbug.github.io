@@ -6,7 +6,7 @@ categories: [, JS]
 image: 
 tags: [featured]
 ---
-的论文[《》][paper1-url]：
+的论文[《SoK: Cryptographic Confidentiality of Data on Mobile Devices》][paper1-url]：
 
 ![]({{ site.baseurl }}/)
 
@@ -19,5 +19,5 @@ tags: [featured]
 - [][links-1]
 
 
-[paper1-url]: 
+[paper1-url]: https://petsymposium.org/2022/files/papers/issue1/popets-2022-0029.pdf
 [links-1]: 
