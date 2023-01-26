@@ -109,8 +109,18 @@ https://www.semanticscholar.org/paper/Developer-discussion-topics-on-the-adoptio
 低代码开发的特点与挑战：从业者的视角
 https://www.semanticscholar.org/paper/Characteristics-and-Challenges-of-Low-Code-The-Luo-Liang/a902af2c82e161e82d7fc247d67961a972fea767
 
+低代码开发和模型驱动工程：同一枚硬币的两面？
+https://www.semanticscholar.org/paper/Low-code-development-and-model-driven-engineering%3A-Ruscio-Kolovos/13b2471efdbada2360f3edb37c4d398826ed279e#references
+
 低代码平台的可用性如何？系统的文献综述
 https://www.semanticscholar.org/paper/What-about-the-usability-in-low-code-platforms-A-Pinho-Aguiar/82a62745360c8574262fcdf1bda508462de40654
+
+寻找低代码的本质：七大开发平台的探索性研究
+https://www.semanticscholar.org/paper/In-Search-of-the-Essence-of-Low-Code%3A-An-Study-of-Bock-Frank/2d412fc6b8a86bbe5c0f18266790ec683cae982f
+
+# Test
+用于汽车软件测试的 SMArDT 建模
+https://www.semanticscholar.org/paper/SMArDT-modeling-for-automotive-software-testing-Drave-Hillemacher/92e1f5f7ba1aa5dadff4f3c59fdca3ac6c277473
 
 # Framework
 PWA vs the Others: A Comparative Study on the UI Energy-Efficiency of Progressive Web Apps
