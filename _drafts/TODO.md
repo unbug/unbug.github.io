@@ -103,11 +103,9 @@ https://www.semanticscholar.org/paper/Two-Perspectives-of-Low-Code-Development-P
 低代码开发平台的混合方法研究：中小企业数字创新的驱动力
 https://www.semanticscholar.org/paper/A-Mixed-Methods-Study-of-Low-Code-Development-of-in-Bies-Weber/365e9c32ae9d8b010126ad7c5588fe2f8de0126f?sort=relevance&citedPapersSort=year&citedPapersLimit=10&citedPapersOffset=0
 
-关于低代码软件开发平台的采用和障碍的开发人员讨论主题
+！关于低代码软件开发平台的采用和障碍的开发人员讨论主题
 https://www.semanticscholar.org/paper/Developer-discussion-topics-on-the-adoption-and-of-Alamin-Uddin/f44ba15c7665dbe70b736000b92151ced4522631
 
-低代码开发的特点与挑战：从业者的视角
-https://www.semanticscholar.org/paper/Characteristics-and-Challenges-of-Low-Code-The-Luo-Liang/a902af2c82e161e82d7fc247d67961a972fea767
 
 低代码开发和模型驱动工程：同一枚硬币的两面？
 https://www.semanticscholar.org/paper/Low-code-development-and-model-driven-engineering%3A-Ruscio-Kolovos/13b2471efdbada2360f3edb37c4d398826ed279e#references

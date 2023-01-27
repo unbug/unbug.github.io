@@ -15,6 +15,7 @@ image: assets/images/screenshot-20230127-174230.jpg
 - 一些人认为 LCD “结合了视觉和代码工作流程以促进同一环境中的协作”。
 
 **LCD 有哪些平台？**
+
 |                                       |                                       |
 |:-------------------------------------:|:-------------------------------------:|
 |![rq2-1]({{ site.baseurl }}/assets/images/screenshot-20230127-175244.jpg)| ![rq2-2]({{ site.baseurl }}/assets/images/screenshot-20230127-175320.jpg) |
@@ -22,15 +23,19 @@ image: assets/images/screenshot-20230127-174230.jpg
 21个 LCD 平台中，其中 14 个是商业的，而 7 个是开源的。 
 
 **LCD 使用哪些编程语言开发？**
+
 Java、Javascript、C#、Python。
 
 **LCD 中主要的执行单元是什么？**
+
 API、Temlate、Component、Service、Framework、Widgets、SDK。 
 
 **LCD开发了哪些类型的应用程序？**
+
 移动应用程序、Web 应用程序、集成应用程序。
 
 **哪些域使用了 LCD？**
+
 ![rq7]({{ site.baseurl }}/assets/images/screenshot-20230127-174230.jpg)
 
 - LCD使用最多的领域是电子商务，包括企业对企业（B2B）和企业对消费者（B2C）。 
