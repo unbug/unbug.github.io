@@ -11,9 +11,13 @@ image: assets/images/screenshot-20230126-220033.jpg
 |:-------------------------------------:|:-------------------------------------:|
 |![img1]({{ site.baseurl }}/assets/images/screenshot-20230126-222117.jpg)| ![img2]({{ site.baseurl }}/assets/images/screenshot-20230126-222143.jpg) |
 
-与 WebAssembly 相比，JavaScript 几乎大 100 焦耳，这意味着将 WebAssembly 用于 Web 应用程序会对 Android 移动设备的能耗产生重大影响，相较于 JavaScript 降低很多。
+论文设计了一个可在树莓派上自动化的装置，使用 Trepn 收集能耗数据。实验用的 WebAssembly 的 C 代码是基于原始 JavaScript 代码编译产生。
 
-WebAssembly 在 Chrome 浏览器上的平均能耗为 31.91 焦耳，在 Firefox 上为 19.02 焦耳，比 Chrome 低 12.89 焦耳，平均节能 40.39%。如果 500 万用户从 Chrome 切换到 Firefox，那么总共将节省 200 万焦耳的能源。这个能量相当于一个100W的灯泡6小时消耗的能量。
+**结果表明：**
+
+- 与 WebAssembly 相比，JavaScript 几乎大 100 焦耳，这意味着将 WebAssembly 用于 Web 应用程序会对 Android 移动设备的能耗产生重大影响，相较于 JavaScript 降低很多。
+
+- WebAssembly 在 Chrome 浏览器上的平均能耗为 31.91 焦耳，在 Firefox 上为 19.02 焦耳，比 Chrome 低 12.89 焦耳，平均节能 40.39%。如果 500 万用户从 Chrome 切换到 Firefox，那么总共将节省 200 万焦耳的能源。这个能量相当于一个100W的灯泡6小时消耗的能量。
 
 ![img2]({{ site.baseurl }}/assets/images/screenshot-20230126-222232.jpg)
 
