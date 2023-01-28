@@ -23,11 +23,7 @@ tags: [featured]
 - `人力债（1.32%)`：是指与人有关的问题。 例如，缺乏需要额外培训或特定技能和知识。 与人相关的问题要复杂得多，它们涉及直接影响生产力和人们满意度的社会组织因素。
 
 ## 导致 TD 的原因
-
-|                                       |                                       |
-|:-------------------------------------:|:-------------------------------------:|
-|![CausesMindMap1]({{ site.baseurl }}/assets/images/CausesMindMap1.jpeg)| ![]({{ site.baseurl }}/assets/images/screenshot-20230129-003859.jpg)|
-
+![]({{ site.baseurl }}/assets/images/screenshot-20230129-003859.jpg)
 
 **结论：**
 - `Deadline`、未采用良好做法、缺乏经验和压力是招致 TD 的最可能原因。这些原因很可能是计划不当、缺乏明确定义的流程或无效的项目管理。
@@ -43,6 +39,8 @@ tags: [featured]
 6. `组织`：缺乏培训，项目缺乏优先级。
 7. `外部因素`：付款动态、停产的依赖。
 8. `基础设施`：技术、工具、平台选择不足，所需基础设施不可用。
+
+![CausesMindMap1]({{ site.baseurl }}/assets/images/CausesMindMap1.jpeg)
 
 
 ## TD 的影响
