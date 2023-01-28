@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "一分钟读论文：《低代码开发的特点与挑战：从业者视角》"
+title:  "一分钟读论文：《Low-code 开发的特点与挑战：从业者视角》"
 author: unbug
 categories: [LCNC]
 image: assets/images/screenshot-20230127-174230.jpg
