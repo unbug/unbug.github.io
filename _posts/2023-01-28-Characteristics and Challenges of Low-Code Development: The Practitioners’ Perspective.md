@@ -28,7 +28,7 @@ Java、Javascript、C#、Python。
 
 **LCD 中主要的执行单元是什么？**
 
-API、Temlate、Component、Service、Framework、Widgets、SDK。 
+API、Template、Component、Service、Framework、Widgets、SDK。 
 
 **LCD 开发了哪些类型的应用程序？**
 
