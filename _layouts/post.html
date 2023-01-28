@@ -75,7 +75,7 @@ layout: default
 			{% include donate.html %}
 
             <!-- Comments -->
-            {% if page.comments == true %}
+            {% if page.comments != false %}
                 {% include comments.html %}
             {% endif %}
             
