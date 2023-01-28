@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "一分钟读论文：《技术债的普遍性、原因和影响：业界内一系列调查》"
+title:  "一分钟读论文：《技术债的普遍性、原因和影响：业界调查》"
 author: unbug
 categories: [Productivity, Aglie, Refactor]
-image: assets/images/EffectsMindMap1.jpeg
+image: assets/images/screenshot-20230129-010822.jpg
 tags: [featured]
 ---
 据研究，在软件开发组织中平均有 `25%` 的工时浪费于解决技术债遗留的问题。塞尔维亚诺维萨德大学、巴西里约热内卢联邦大学、巴伊亚联邦大学和巴西塞阿拉联邦研究所、洛斯安第斯大学、哥伦比亚大学、美国蒙大拿州立大学和爱达荷国家实验室、萨尔瓦多大学和巴西巴伊亚州立大学合著的论文[《Prevalence, Common Causes and Effects of Technical Debt: Results from a Family of Surveys with the IT Industry》][paper1-url] 调查了 12 个国家/地区的研究人员的反馈，研究各种软件开发活动与技术债（Technical Debt，简称 `TD`）之间的关系。发现 TD 的主要影响是`交付延迟，可维护性低，和返工`，而导致 TD 最大的原因是 `Deadline`，TD 类型占比最多的 TOP5 分别是`设计、测试、代码、架构和⽂档`。
@@ -23,7 +23,11 @@ tags: [featured]
 - `人力债（1.32%)`：是指与人有关的问题。 例如，缺乏需要额外培训或特定技能和知识。 与人相关的问题要复杂得多，它们涉及直接影响生产力和人们满意度的社会组织因素。
 
 ## 导致 TD 的原因
-![]({{ site.baseurl }}/assets/images/screenshot-20230129-003859.jpg)
+
+|                                       |                                       |
+|:-------------------------------------:|:-------------------------------------:|
+|![CausesMindMap1]({{ site.baseurl }}/assets/images/CausesMindMap1.jpeg)| ![]({{ site.baseurl }}/assets/images/screenshot-20230129-003859.jpg)|
+
 
 **结论：**
 - `Deadline`、未采用良好做法、缺乏经验和压力是招致 TD 的最可能原因。这些原因很可能是计划不当、缺乏明确定义的流程或无效的项目管理。
@@ -39,9 +43,6 @@ tags: [featured]
 6. `组织`：缺乏培训，项目缺乏优先级。
 7. `外部因素`：付款动态、停产的依赖。
 8. `基础设施`：技术、工具、平台选择不足，所需基础设施不可用。
-
-![CausesMindMap1]({{ site.baseurl }}/assets/images/CausesMindMap1.jpeg)
-
 
 
 ## TD 的影响
