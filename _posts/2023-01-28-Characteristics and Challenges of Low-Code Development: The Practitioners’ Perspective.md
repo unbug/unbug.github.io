@@ -30,7 +30,7 @@ Java、Javascript、C#、Python。
 
 API、Temlate、Component、Service、Framework、Widgets、SDK。 
 
-**LCD开发了哪些类型的应用程序？**
+**LCD 开发了哪些类型的应用程序？**
 
 移动应用程序、Web 应用程序、集成应用程序。
 
@@ -38,11 +38,10 @@ API、Temlate、Component、Service、Framework、Widgets、SDK。
 
 ![rq7]({{ site.baseurl }}/assets/images/screenshot-20230127-174230.jpg)
 
-- LCD使用最多的领域是电子商务，包括企业对企业（B2B）和企业对消费者（B2C）。 
+- LCD 使用最多的领域是电子商务，包括企业对企业（B2B）和企业对消费者（B2C）。 
 - 业务流程管理 (BPM) 和社交媒体，其中社交媒体具体包含聚会、聊天、约会和博客应用程序等。
 - 客户关系管理 (CRM)
-- 内容管理系统 ( CMS) 
-- Extract-Transform-Load (ETL) 和 Entertainment。 
+- 内容管理系统 ( CMS) 、Extract-Transform-Load (ETL) 和 Entertainment。 
 - 使用低代码游戏引擎开发游戏
 - 机器人流程自动化 (RPA) 和医疗
 
@@ -50,7 +49,7 @@ API、Temlate、Component、Service、Framework、Widgets、SDK。
 - LCD 允许更快的开发，从而快速将应用程序推向市场。 
 - 与雇用开发人员编写应用程序代码相比，LCD 易于学习和使用且 IT 成本更低，因此非常棒。
 - LCD 对新手友好，因为它“帮助非技术人员以简单和熟悉的方式创建软件”。
-- LCD构建应用的系统质量更高，集成和扩展能力强，工作量小，可定制性好。
+- LCD 构建应用的系统质量更高，集成和扩展能力强，工作量小，可定制性好。
 - LCD 具有直观的感知，具有“完全灵活，几乎可以做任何事情”的卓越可用性，并且始终提供“友好的界面”和“惊人的 UI”，从而提供更好的用户体验。 
 - LCD 可以轻松部署该应用程序，并且与编程相比，改进 IT 治理非常具有成本效益。 
 - LCD 适合团队开发。

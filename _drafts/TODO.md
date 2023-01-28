@@ -59,6 +59,14 @@ Generating Virtual Machine Code of JavaScript Engine for Embedded Systems
 https://www.semanticscholar.org/paper/Generating-Virtual-Machine-Code-of-JavaScript-for-Hirasawa-Iwasaki/34577297b8e0cdac5a7a5db17175f153eb80fb61
 
 # Refactor
+技术债务测量工具的概述和比较
+https://ieeexplore.ieee.org/abstract/document/9200792
+
+技术债务的普遍性、常见原因和影响：来自 IT 行业的一系列调查结果
+https://www.sciencedirect.com/science/article/abs/pii/S0164121221002119
+https://arxiv.org/pdf/2109.13771.pdf
+REF: https://blog.alexewerlof.com/p/tech-debt-day
+
 架构重构机会的气味指标何时出现：对 50 个软件项目的研究
 https://www.semanticscholar.org/paper/When-Are-Smells-Indicators-of-Architectural-A-Study-Sousa-Oizumi/68ad1aa402459e046480a3206f3f393770c50f82
 
