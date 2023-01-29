@@ -62,15 +62,11 @@ https://www.semanticscholar.org/paper/Generating-Virtual-Machine-Code-of-JavaScr
 技术债务测量工具的概述和比较
 https://ieeexplore.ieee.org/abstract/document/9200792
 
-技术债务的普遍性、常见原因和影响：来自 IT 行业的一系列调查结果
-https://www.sciencedirect.com/science/article/abs/pii/S0164121221002119
-https://arxiv.org/pdf/2109.13771.pdf
-REF: https://blog.alexewerlof.com/p/tech-debt-day
-
 架构重构机会的气味指标何时出现：对 50 个软件项目的研究
 https://www.semanticscholar.org/paper/When-Are-Smells-Indicators-of-Architectural-A-Study-Sousa-Oizumi/68ad1aa402459e046480a3206f3f393770c50f82
 
 干净的新代码可以降低技术债务密度吗？
+https://www.semanticscholar.org/paper/Can-Clean-New-Code-Reduce-Technical-Debt-Density-Digkas-Chatzigeorgiou/0c4ce3c4a05ee326f4cbcb128df93baa7ac7dc45
 https://ieeexplore.ieee.org/document/9234106
 
 JavaScript 项目中的依赖气味
@@ -121,7 +117,7 @@ https://www.semanticscholar.org/paper/Developer-discussion-topics-on-the-adoptio
 低代码开发和模型驱动工程：同一枚硬币的两面？
 https://www.semanticscholar.org/paper/Low-code-development-and-model-driven-engineering%3A-Ruscio-Kolovos/13b2471efdbada2360f3edb37c4d398826ed279e#references
 
-低代码平台的可用性如何？系统的文献综述
+！低代码平台的可用性如何？系统的文献综述
 https://www.semanticscholar.org/paper/What-about-the-usability-in-low-code-platforms-A-Pinho-Aguiar/82a62745360c8574262fcdf1bda508462de40654
 
 寻找低代码的本质：七大开发平台的探索性研究
