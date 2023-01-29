@@ -6,6 +6,28 @@
 - 事故/宕机
 
 
+# Webassembly
+使用 WebAssembly 运行时将无服务器推向边缘
+https://ieeexplore.ieee.org/document/9826054
+
+WebAssembly 中正式验证的加密 Web 应用程序
+https://ieeexplore.ieee.org/document/9826054
+
+使用 WebAssembly 为 Web 应用程序赋能：我们到了吗？
+https://ieeexplore.ieee.org/document/9678831/authors#authors
+
+!我们已经走了多远——独立 WebAssembly 运行时的特征研究
+https://ieeexplore.ieee.org/document/9975423
+
+JavaScript和WebAssembly在浏览器环境下的对比分析
+https://ieeexplore.ieee.org/document/9929829
+
+使用 Rust 和 WebAssembly 在高性能 Node.js 和 Web 应用程序中补充 JavaScript
+https://www.semanticscholar.org/paper/Complementing-JavaScript-in-High-Performance-and-Kyriakou-Tselikas/6e6337cc788508f5a17a0956d27038582d0d36fa
+https://www.mdpi.com/2079-9292/11/19/3217
+
+Wasmachine：使用 WebAssembly 操作系统使边缘加速
+https://ieeexplore.ieee.org/document/9284230
 
 # JavaScript
 Web 缓存欺骗攻击
@@ -20,31 +42,19 @@ https://www.semanticscholar.org/paper/Hand-Sanitizers-in-the-Wild%3A-A-Large-sca
 检测混淆的恶意 JavaScript 代码
 https://www.semanticscholar.org/paper/Detection-of-Obfuscated-Malicious-JavaScript-Code-Alazab-Khraisat/10173d84bf94b39b222b98c65dc508e2abf066e1
 
-
 通过前端 JavaScript 代码生成的任务增强来整合领域知识
 https://www.semanticscholar.org/paper/Incorporating-domain-knowledge-through-task-for-Shen-Zhu/6e53a4e0f38d4be2dcaa2625a2a2a9332d338d05
 
-
 Microwalk-CI：JavaScript 应用程序的实用侧信道分析
 https://www.semanticscholar.org/paper/Microwalk-CI%3A-Practical-Side-Channel-Analysis-for-Wichelmann-Sieck/d8b8a03d2a74114f0e542b74c50084f1c7c86848
-
 
 关于 JavaScript 提前编译性能（主题演讲）
 https://www.semanticscholar.org/paper/On-JavaScript-Ahead-of-Time-Compilation-Performance-Serrano/63ab38a768a894bff0a515a859d6f655e427b197
 https://dl.acm.org/doi/10.1145/3546918.3560825
 https://www.youtube.com/watch?v=iY1EXHQ6IeQ
 
-
-JavaScript和WebAssembly在浏览器环境下的对比分析
-https://www.semanticscholar.org/paper/Comparative-Analysis-Of-JavaScript-And-WebAssembly-Tushar-Mohan/e99f1bf4da13e5d336c48fd55616f77f6a226bc5
-
-
 当第三方 JavaScript 遇上缓存：爆炸式放大互联网安全风险
 https://www.semanticscholar.org/paper/When-Third-Party-JavaScript-Meets-Cache%3A-Amplifying-Hou-Bi/601f9cdbb8c27e4c94f1f1ce8f4bfe4ce76a6f8a?sort=relevance&citedPapersSort=year&citedPapersLimit=10&citedPapersOffset=0
-
-使用 Rust 和 WebAssembly 在高性能 Node.js 和 Web 应用程序中补充 JavaScript
-https://www.semanticscholar.org/paper/Complementing-JavaScript-in-High-Performance-and-Kyriakou-Tselikas/6e6337cc788508f5a17a0956d27038582d0d36fa
-https://www.mdpi.com/2079-9292/11/19/3217
 
 JavaScript&Me，一个支持代码转换和浏览器安全研究的工具
 https://dl.acm.org/doi/10.1145/3511808.3557620
@@ -92,9 +102,6 @@ https://ieeexplore.ieee.org/document/9712241
 
 !比较大规模敏捷软件开发的方法：系统文献回顾
 https://ieeexplore.ieee.org/document/9387593
-
-!现代代码审查的系统文献回顾和分类
-https://arxiv.org/abs/2103.08777
 
 是什么在敏捷团队中驱动和维持自我分配
 https://ieeexplore.ieee.org/document/9506834

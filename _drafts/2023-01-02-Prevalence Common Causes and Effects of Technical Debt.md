@@ -2,7 +2,7 @@
 layout: post
 title:  "一分钟读论文：《技术债的普遍性、原因和影响：业界调查》"
 author: unbug
-categories: [Productivity, Aglie, Refactor]
+categories: [Technical Debt, Refactor]
 image: assets/images/screenshot-20230129-010822.jpg
 tags: [featured]
 ---
@@ -61,7 +61,7 @@ tags: [featured]
 ![EffectsMindMap1]({{ site.baseurl }}/assets/images/EffectsMindMap1.jpeg)
 
 
-## References
+## 推荐阅读
 - [We invested 10% to pay back tech debt; Here's what happened][links-1]
 
 

@@ -37,7 +37,7 @@ tags: [featured]
 - 投资于新框架下的团队培训。
 
 
-## References
+## 推荐阅读
 - [Twitter releated post][links-1]
 
 

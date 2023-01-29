@@ -25,7 +25,7 @@ image: assets/images/screenshot-20230124-230804.jpg
 - 工程师并不抵触使用锁定文件，主要是因为他们不关心可重复的构建或不完全了解锁定机制。
 
 
-## References
+## 推荐阅读
 - [Vulnerability in ‘netmask’ npm Package Affects 280,000 Projects][links-1]
 
 
