@@ -50,7 +50,7 @@ markdown: kramdown
 highlighter: rouge
 
 # Paginate
-paginate: 10
+paginate: 13
 
 # Feed
 feed:
