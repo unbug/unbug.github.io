@@ -35,6 +35,7 @@ vf-OS（虚拟工厂开放式操作系统 ）是欧盟委员会资助一个项�
 
 ## 推荐阅读
 [Paper on MDPI][links-1]
+[Forrester Research report][links-2]
 [https://vf-os.eu/][links-3]
 
 [paper1-url]: https://pdfs.semanticscholar.org/24c4/2c8ea9453587d84fbccc5d659430f22ec9c2.pdf?_ga=2.63638383.1547079440.1675043344-2044131725.1673232871
