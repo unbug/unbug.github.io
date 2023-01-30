@@ -5,6 +5,34 @@
 - Rust
 - 事故/宕机
 
+# LCNC
+！关于低代码软件开发平台的采用和障碍的开发人员讨论主题
+https://www.semanticscholar.org/paper/Developer-discussion-topics-on-the-adoption-and-of-Alamin-Uddin/f44ba15c7665dbe70b736000b92151ced4522631
+
+！低代码平台的可用性如何？系统的文献综述
+https://www.semanticscholar.org/paper/What-about-the-usability-in-low-code-platforms-A-Pinho-Aguiar/82a62745360c8574262fcdf1bda508462de40654
+
+！低代码作为制造业数字化转型的推动者
+https://www.semanticscholar.org/paper/Low-Code-as-Enabler-of-Digital-Transformation-in-Sanchis-Garc%C3%ADa-Perales/fb1b5abcf8dda51ba8ac09a97fdd66d853d4311f
+
+！寻找低代码的本质：七大开发平台的探索性研究
+https://www.semanticscholar.org/paper/In-Search-of-the-Essence-of-Low-Code%3A-An-Study-of-Bock-Frank/2d412fc6b8a86bbe5c0f18266790ec683cae982f
+https://www.econstor.eu/bitstream/10419/248826/1/1785223275.pdf
+
+代码基础设施：下一代云生命周期自动化
+https://www.semanticscholar.org/paper/Infrastructure-From-Code%3A-The-Next-Generation-of-Aviv-Gafni/4501e865859940b7fbe28ae4ffd474afd7ab0a96
+
+低代码开发、Java Swing 和 JavaScript 编程的实验评估
+https://www.semanticscholar.org/paper/Experimental-Evaluation-of-Low-Code-development%2C-Cal%C3%A7ada-Bernardino/4512e2a408d94bf2482860b73bc5889b53bba65f
+
+低代码开发平台挑战的两个视角——一项探索性研究
+https://www.semanticscholar.org/paper/Two-Perspectives-of-Low-Code-Development-Platform-Prinz-Huber/af61bd1436bd9a44ef2c1d512ecdf012aac923d9
+
+低代码开发平台的混合方法研究：中小企业数字创新的驱动力
+https://www.semanticscholar.org/paper/A-Mixed-Methods-Study-of-Low-Code-Development-of-in-Bies-Weber/365e9c32ae9d8b010126ad7c5588fe2f8de0126f?sort=relevance&citedPapersSort=year&citedPapersLimit=10&citedPapersOffset=0
+
+低代码开发和模型驱动工程：同一枚硬币的两面？
+https://www.semanticscholar.org/paper/Low-code-development-and-model-driven-engineering%3A-Ruscio-Kolovos/13b2471efdbada2360f3edb37c4d398826ed279e#references
 
 # Webassembly
 使用 WebAssembly 运行时将无服务器推向边缘
@@ -107,36 +135,13 @@ https://ieeexplore.ieee.org/document/9387593
 https://ieeexplore.ieee.org/document/9506834
 
 # Productivity
+
 Software Productivity in Practice: A Systematic Mapping Study
 https://pdfs.semanticscholar.org/44f6/69c416f415e594bc212549b9598eba99121a.pdf?_ga=2.260567109.979285908.1673232871-2044131725.1673232871
 
 软件工程中的人类价值：对比实践案例研究
 https://ieeexplore.ieee.org/document/9261980
 
-代码基础设施：下一代云生命周期自动化
-https://www.semanticscholar.org/paper/Infrastructure-From-Code%3A-The-Next-Generation-of-Aviv-Gafni/4501e865859940b7fbe28ae4ffd474afd7ab0a96
-
-低代码开发、Java Swing 和 JavaScript 编程的实验评估
-https://www.semanticscholar.org/paper/Experimental-Evaluation-of-Low-Code-development%2C-Cal%C3%A7ada-Bernardino/4512e2a408d94bf2482860b73bc5889b53bba65f
-
-低代码开发平台挑战的两个视角——一项探索性研究
-https://www.semanticscholar.org/paper/Two-Perspectives-of-Low-Code-Development-Platform-Prinz-Huber/af61bd1436bd9a44ef2c1d512ecdf012aac923d9
-
-低代码开发平台的混合方法研究：中小企业数字创新的驱动力
-https://www.semanticscholar.org/paper/A-Mixed-Methods-Study-of-Low-Code-Development-of-in-Bies-Weber/365e9c32ae9d8b010126ad7c5588fe2f8de0126f?sort=relevance&citedPapersSort=year&citedPapersLimit=10&citedPapersOffset=0
-
-！关于低代码软件开发平台的采用和障碍的开发人员讨论主题
-https://www.semanticscholar.org/paper/Developer-discussion-topics-on-the-adoption-and-of-Alamin-Uddin/f44ba15c7665dbe70b736000b92151ced4522631
-
-
-低代码开发和模型驱动工程：同一枚硬币的两面？
-https://www.semanticscholar.org/paper/Low-code-development-and-model-driven-engineering%3A-Ruscio-Kolovos/13b2471efdbada2360f3edb37c4d398826ed279e#references
-
-！低代码平台的可用性如何？系统的文献综述
-https://www.semanticscholar.org/paper/What-about-the-usability-in-low-code-platforms-A-Pinho-Aguiar/82a62745360c8574262fcdf1bda508462de40654
-
-寻找低代码的本质：七大开发平台的探索性研究
-https://www.semanticscholar.org/paper/In-Search-of-the-Essence-of-Low-Code%3A-An-Study-of-Bock-Frank/2d412fc6b8a86bbe5c0f18266790ec683cae982f
 
 # Test
 用于汽车软件测试的 SMArDT 建模
