@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "一分钟读论文：《技术债的普遍性、原因和影响：业界调查》"
+title:  "一分钟读论文：《技术债的普遍性、原因和影响：业界系统调查》"
 author: unbug
 categories: [Technical Debt, Refactor]
 image: assets/images/screenshot-20230129-010822.jpg
