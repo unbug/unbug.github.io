@@ -15,7 +15,7 @@ image: assets/images/screenshot-20230109-110011.jpeg
 
 以下是使用3种模糊测试器和 Montage 方法发现的错误数量比较
 
-![montage vs xxx]({{ site.baseurl }}/assets/images/Screenshot2023-01-08at01.42.57.jpeg)
+![montage vs xxx]({{ site.baseurl }}/assets/images/Screenshot2023-01-08at01.jpeg)
 
 以下是用 CVE-2019-0860 的测试代码能够触发的成功案例之一。
 

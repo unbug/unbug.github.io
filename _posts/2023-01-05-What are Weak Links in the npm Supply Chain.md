@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《NPM 供应链的软肋是什么?》"
 author: unbug
 categories: [ npm, Security ]
-image: assets/images/Screenshot-2023-01-07-at-22.02.33.jpeg
+image: assets/images/Screenshot-2023-01-07-at-22.jpeg
 tags: [featured]
 ---
 微软和美国北卡罗莱纳州立大学合作的一篇论文[《What are Weak Links in the npm Supply Chain?》][paper1-url]，显然 NPM 供应链攻击形势非常严峻，论文结论建议 NPM 要求对依赖排名前 100 的包的维护者进行`强制性 2FA 登录认证`。有几个数据触目惊心：
