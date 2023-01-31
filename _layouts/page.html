@@ -10,5 +10,12 @@ layout: default
 {% if page.comments == true %}
 {% include comments.html %}
 {% endif %}
+
+<!-- featured -->
+{% if page.featured == true %}
+<div class="mt-5">
+    {% include sidebar-featured.html %}    
+</div>
+{% endif %}
 </div>
 </div>

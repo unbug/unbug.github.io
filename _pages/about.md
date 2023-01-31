@@ -4,6 +4,7 @@ layout: page
 permalink: "/about.html"
 author: unbug
 comments: true
+featured: true
 ---
 Learn a paper in a minute. 一分钟读懂一篇论文。
 
@@ -18,9 +19,4 @@ Learn a paper in a minute. 一分钟读懂一篇论文。
 <!-- donate -->
 {% assign author = site.authors[page.author] %}
 {% include donate.html %}
-
-<!-- featured -->
-<div class="mt-5">
-    {% include sidebar-featured.html %}    
-</div>
             
