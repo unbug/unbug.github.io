@@ -1,0 +1,28 @@
+<div class="sticky-top sticky-top-offset">
+    <h4 class="font-weight-bold spanborder"><span>Releated</span></h4>  
+    <ol class="list-featured">				   
+        {% for category in page.categories %} 
+
+        {% assign pages_list = category[1] %}
+        {% for post in pages_list %}
+          <li class="mb-4">
+            <span>
+                <h6 class="font-weight-bold">
+                    <a href="{{site.baseurl}}{{ post.url }}" class="text-dark">{{ post.title }}</a>
+                </h6>
+                <span class="d-block text-muted">
+                    In <span class="catlist">
+                    {% for _category in post.categories %}
+                    <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ _category | downcase }}">{{ _category }}</a><span class="sep">, </span>
+                    {% endfor %}
+                    </span>
+                </span>
+            </span>
+            </li>     
+        {% endfor %}
+        {% assign pages_list = nil %}
+        {% assign group = nil %}
+
+        {% endfor %}
+    </ol>
+</div> 
