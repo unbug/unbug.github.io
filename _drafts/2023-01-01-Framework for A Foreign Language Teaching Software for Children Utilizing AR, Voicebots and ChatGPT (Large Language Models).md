@@ -2,7 +2,7 @@
 layout: post
 title:  "一分钟读论文：《AR+Voicebots+ChatGPT 的儿童外语教学软件框架》"
 author: unbug
-categories: [, JS]
+categories: [AR, ChatGPT, AI]
 image: 
 tags: [featured]
 ---
