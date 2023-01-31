@@ -54,7 +54,7 @@ tags: [featured]
 
 延⻓失业救济⾦会增加召回密集⾏业的离职率。除了这七个事实之外，⽐较同⼀名⼯⼈的两次裁员，TL 个体质量之间没有关系。
 
-## 推荐阅读
+## References
 - [Paper on SSRN][links-1]
 
 

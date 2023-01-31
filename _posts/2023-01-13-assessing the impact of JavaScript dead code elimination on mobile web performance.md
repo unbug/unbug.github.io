@@ -30,7 +30,7 @@ Muzeel 是一个用于识别和消除没用的 JavaScript 函数（也称为“�
 - Muzeel 可以将页面加载速度提高达`25-30%`，消耗更低的 CPU 和带宽使用率。
 
 
-## 推荐阅读
+## References
 - [Muzeel on GitHub][links-1]
 - [Muzeel: A Dynamic JavaScript Analyzer for Dead Code Elimination in Today's Web][links-2]
 

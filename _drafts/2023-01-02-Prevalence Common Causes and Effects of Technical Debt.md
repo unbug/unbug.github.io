@@ -61,7 +61,7 @@ tags: [featured]
 ![EffectsMindMap1]({{ site.baseurl }}/assets/images/EffectsMindMap1.jpeg)
 
 
-## 推荐阅读
+## References
 - [We invested 10% to pay back tech debt; Here's what happened][links-1]
 
 

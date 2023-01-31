@@ -33,7 +33,7 @@ vf-OS（虚拟工厂开放式操作系统 ）是欧盟委员会资助一个项�
 结果：低代码平台似乎是软件开发环境中减少时间和成本的未来方向。然而，集成、互操作性、通信、实时数据处理、均质化、人体工程学和安全性等方面应该得到适当解决，以促进采用低代码范式。
 
 
-## 推荐阅读
+## References
 [Paper on MDPI][links-1]
 [Forrester Research report][links-2]
 [https://vf-os.eu/][links-3]
