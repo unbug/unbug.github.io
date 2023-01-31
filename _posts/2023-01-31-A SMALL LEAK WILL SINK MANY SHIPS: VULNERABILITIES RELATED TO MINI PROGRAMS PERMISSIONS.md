@@ -6,7 +6,7 @@ categories: [ Mini Program, Security]
 image: assets/images/screenshot-20230118-152042.jpg
 tags: [featured]
 ---
-微信、抖音和支付宝的小程序的月活用户总数接近全球最受欢迎的社交网络 Facebook `28.9 亿 MAU`。北京电子科技学院的论文[《A SMALL LEAK WILL SINK MANY SHIPS: VULNERABILITIES RELATED TO MINI PROGRAMS PERMISSIONS》][paper1-url] 对小程序权限进行研究。对`9个`流行的移动应用生态系统超过 `700 万`个小程序进行了系统研究，测试了超过` 2,580 个 API`，发现`6类`潜在安全漏洞，银联、字节、微信、QQ、支付宝、百度、小米、华为纷纷中招，并总结了小程序保护用户隐私的系统性建议。
+微信、抖音和支付宝的小程序的月活用户总数接近全球最受欢迎的社交网络 Facebook `28.9 亿 MAU`。北京电子科技学院的论文[《A SMALL LEAK WILL SINK MANY SHIPS: VULNERABILITIES RELATED TO MINI PROGRAMS PERMISSIONS》][paper1-url] 对小程序权限进行研究。系统分析了`9个`流行的移动应用生态系统超过 `700 万`个小程序，测试了超过` 2,580 个 API`，发现`6类`潜在安全漏洞，银联、字节、微信、QQ、支付宝、百度、小米、华为纷纷中招，并总结了小程序保护用户隐私的系统性建议。
 
 ![methodology]({{ site.baseurl }}/assets/images/screenshot-20230118-150612.jpg)
 
