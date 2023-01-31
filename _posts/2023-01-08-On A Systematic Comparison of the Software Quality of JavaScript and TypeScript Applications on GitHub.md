@@ -27,7 +27,7 @@ tags: [featured]
 
 ![summary]({{ site.baseurl }}/assets/images/screenshot-20230109-114345.jpeg)
 
-## 推荐阅读
+## References
 - [SonarQube][links-1]
 
 
