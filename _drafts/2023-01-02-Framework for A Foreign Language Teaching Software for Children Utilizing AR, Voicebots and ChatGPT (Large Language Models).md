@@ -1,12 +1,11 @@
 ---
 layout: post
-title:  "一分钟读论文：《AR+Voicebots+ChatGPT 的儿童外语教学软件框架》"
+title:  "一分钟读论文：《利用 AR、Voicebots 和 ChatGPT 的儿童外语教学软件框架》"
 author: unbug
 categories: [ChatGPT, AR, AI]
 image: assets/images/screenshot-20230131-234648.jpg
-tags: [featured]
 ---
-ChatGPT催生了很多教育领域的创业项目。美国的佛罗里达理工大学与南佛罗里达大学合著的论文[《Framework for A Foreign Language Teaching Software for Children Utilizing AR, Voicebots and ChatGPT (Large Language Models)》][paper1-url]设计出一个框架，用于利用 AR+Voicebots+ChatGPT 技术开发语言学习软件，框架遵循了⼉童外语教学的设计原则：游戏化、社交互动、惊喜奖励。作者自信本研究中提出的框架和设计原则可以成为开发高效外语教学软件的蓝图。
+ChatGPT 催生了很多教育领域的创业项目。美国的佛罗里达理工大学与南佛罗里达大学合著的论文[《Framework for A Foreign Language Teaching Software for Children Utilizing AR, Voicebots and ChatGPT (Large Language Models)》][paper1-url]设计出一个框架，用于利用 AR+Voicebots+ChatGPT 技术开发语言学习软件，框架遵循了⼉童外语教学的设计原则：`游戏化、社交互动、惊喜奖励`。作者自信本研究中提出的框架和设计原则可以成为开发高效外语教学软件的蓝图。
 
 ## 框架的组件
 - 增强现实 (AR)：AR 将计算机⽣成的数据（图像、声⾳等）叠加到⽤⼾视图，向其中添加数字信息层来增强⽤⼾对现实世界的感知。可以使⽤多种 AR 框架（例如 ARCore、ARKit 或 Vuforia）将 AR 技术嵌⼊到移动应⽤程序中。 
