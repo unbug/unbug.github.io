@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "一分钟读论文：《》"
+title:  "一分钟读论文：《AR+Voicebots+ChatGPT 的儿童外语教学软件框架》"
 author: unbug
 categories: [, JS]
 image: 
 tags: [featured]
 ---
-的论文[《》][paper1-url]：
+的论文[《Framework for A Foreign Language Teaching Software for Children Utilizing AR, Voicebots and ChatGPT (Large Language Models)》][paper1-url]：
 
 ![]({{ site.baseurl }}/)
 
@@ -24,5 +24,5 @@ tags: [featured]
 - [][links-1]
 
 
-[paper1-url]: 
+[paper1-url]: https://dergipark.org.tr/en/download/article-file/2864638
 [links-1]: 
