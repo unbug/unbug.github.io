@@ -12,8 +12,8 @@
                 </h6>
                 <span class="d-block text-muted">
                     In <span class="catlist">
-                    {% for _category in post.categories %}
-                    <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ _category | downcase }}">{{ _category }}</a><span class="sep">, </span>
+                    {% for category in post.categories %}
+                    <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
                     {% endfor %}
                     </span>
                 </span>
@@ -21,7 +21,6 @@
             </li>     
         {% endfor %}
         {% assign pages_list = nil %}
-        {% assign group = nil %}
 
         {% endfor %}
     </ol>
