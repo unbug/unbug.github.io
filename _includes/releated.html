@@ -1,8 +1,10 @@
 <div class="sticky-top sticky-top-offset">
     <h4 class="font-weight-bold spanborder"><span>Releated</span></h4>  
     <ol class="list-featured">				   
-        {% for category in page.categories %} 
-        {{ category }} {{ category[0] }}{{ category[1] }}
+        
+        {% for category in site.categories %} 
+
+        {% if page.categories contains category[0] %}
         {% assign pages_list = category[1] %}
         {% for post in pages_list %}
           <li class="mb-4">
@@ -21,6 +23,7 @@
             </li>     
         {% endfor %}
         {% assign pages_list = nil %}
+        {% endif %}
 
         {% endfor %}
     </ol>
