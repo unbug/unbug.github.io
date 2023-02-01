@@ -16,7 +16,7 @@ tags: [featured, TypeScript, JS]
 - 对于 TS，还通过 ESLint 收集了每个项目忽略 any 类型安全的频率。
 
 **论文研究问题和假说的结论：**
-1. TypeScript 应用的代码味道（code smells）比 JavaScript 应用少得多，即`代码质量更好`。
+1. TypeScript 应用的代码异味（code smells）比 JavaScript 应用少得多，即`代码质量更好`。
 2. TypeScript 应用的认知复杂性明显低于 JavaScript 应用，即`更好的代码可理解性`。
 3. TypeScript 应用比 JavaScript 应用具有`更高的 bug 提交率`，即更容易或同样容易出现 bug。
 4. TypeScript 应用比 JavaScript 应用`花费更多`或相等的时间来解决 bug。
