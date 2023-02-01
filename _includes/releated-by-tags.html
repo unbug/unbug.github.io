@@ -2,7 +2,7 @@
     <h2 class="font-weight-bold spanborder"><span>Releated</span></h2>  
     <ol class="list-featured">				   
         {% assign tmp_post = "" | split: ',' %}
-        {% for category in site.tags %} 
+        {% for tag in site.tags %} 
 
         {% if page.tags contains tag[0] and tag[0] != "featured" and tag[0] != "sticky"%}
         {% assign pages_list = tag[1] %}
