@@ -625,7 +625,7 @@ ol.list-featured li {
 	font-size:0.8rem;
 }
 ol.list-featured li:before {
-    content: "0" counter(my-awesome-counter);
+    content: counter(my-awesome-counter);
     font-weight: bold;
     font-size: 2rem;
     margin-right: 0.5rem;
