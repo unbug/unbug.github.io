@@ -2,8 +2,9 @@
 layout: post
 title:  "一分钟读论文：《ChatGPT：在线考试诚信的终结？》"
 author: unbug
-categories: [ChatGPT, AI]
+categories: [AI]
 image: assets/images/screenshot-20230131-151348.jpg
+tags: [ChatGPT, Machine-learning]
 ---
 新西兰奥克兰梅西大学数学与计算科学学院的论文[《ChatGPT: The End of Online Exam Integrity?》][paper1-url]评估了 ChatGPT 执行高级认知任务和生成与人类生成的文本的能力。发现：ChatGPT 能够展现批判性思维能力。
 

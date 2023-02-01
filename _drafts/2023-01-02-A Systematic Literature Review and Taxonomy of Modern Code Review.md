@@ -2,9 +2,9 @@
 layout: post
 title:  "一分钟读论文：《现代 Code Review 的系统文献综述》"
 author: unbug
-categories: [CodeReview, Agile]
+categories: [Engineering]
 image: assets/images/screenshot-20230127-184311.jpg
-tags: [featured]
+tags: [featured, Code-review, Agile]
 ---
 Code Review 从结构化和严格的形式（即软件检查）演变为灵活的、基于工具的异步过程，即` Modern Code Review (MCR)`。巴西南里奥格兰德州联邦大学 (UFRGS)和阿雷格里港信息学研究所合著的论文[《A Systematic Literature Review and Taxonomy of Modern Code Review》][paper1-url] 系统分析了 139 篇论文，非常详尽的记录了15个细节性发现，能帮助我们了全面了解采用 MCR 的动机、挑战和好处，以及哪些影响因素导致哪些结果，并总结了 MCR 流程改进的建议。
 

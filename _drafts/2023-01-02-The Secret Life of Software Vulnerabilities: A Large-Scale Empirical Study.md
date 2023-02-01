@@ -2,9 +2,9 @@
 layout: post
 title:  "一分钟读论文：《Bug 的秘密生命周期：大规模实证研究》"
 author: unbug
-categories: [ Security ]
+categories: [Security]
 image: assets/images/screenshot-20230117-173044.jpg
-tags: [featured]
+tags: [featured, Bug]
 ---
 你对自己的代码保持敬畏吗？意大利菲夏诺萨勒诺大学软件工程 (SeSa) 实验室的论文[《The Secret Life of Software Vulnerabilities: A Large-Scale Empirical Study》][paper1-url]对 GitHub 上 1,096 个开源项目，来自国家漏洞数据库的 3,663 个带有公共补丁的漏洞的生命周期进行的大规模实证研究。发现：
 - 在创建新文件后不久就产生了漏洞；

@@ -2,9 +2,9 @@
 layout: post
 title:  "一分钟读论文：《》"
 author: unbug
-categories: [ , JS ]
+categories: [ , ]
 image: assets/images/
-tags: [featured]
+tags: [featured, JS]
 ---
 的论文[《SoK: In Search of Lost Time: A Review of JavaScript Timers in Browsers》][paper1-url]：
 

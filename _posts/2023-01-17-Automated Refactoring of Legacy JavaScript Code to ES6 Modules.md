@@ -2,7 +2,7 @@
 layout: post
 title:  "一分钟读论文：《自动将 Legacy 项目重构为 ES6》"
 author: unbug
-categories: [Architecture]
+categories: [Engineering]
 image: assets/images/screenshot-20230117-121828.jpg
 tags: [Refactor, JS]
 ---

@@ -4,7 +4,7 @@ title:  "一分钟读论文：《通过 JS 分类即时加速移动网页》"
 author: unbug
 categories: [Performance, Front-end]
 image: assets/images/screenshot-20230111-155305.jpeg
-tags: [JS, MobileWeb]
+tags: [JS, Mobile]
 ---
 通过机器学习(ML)加持的 JS 分类服务优化移动页面`加载时间减少了 50%`，`用户体验提升 60% 以上`，同时保持了大多数页面 90%-100% 的交互体验。
 诺基亚⻉尔实验室和美国纽约大学、美国兰卡斯特大学管理学院合著的论文[《To Block or Not to Block: Accelerating Mobile Web Pages On-The-Fly Through JavaScript Classification》][paper1-url] 设计了一个服务 - SlimWeb 通过识别并删除网页的⾮关键 JS 以优化性能。
