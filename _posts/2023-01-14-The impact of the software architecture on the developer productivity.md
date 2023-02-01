@@ -2,8 +2,9 @@
 layout: post
 title:  "一分钟读论文：《软件架构对研发⽣产⼒的影响》"
 author: unbug
-categories: [ Productivity ]
+categories: [ Productivity, Architecture ]
 image: assets/images/screenshot-20230113-191938.jpg
+tags: [Server-less, Firebase, Node, Angular]
 ---
 匈牙利塞格德⼤学科学与信息学院软件⼯程系的论文[《The impact of the software architecture on the developer productivity》][paper1-url] 基于一个 5,000 多个⼯时，⻓达 3 年的真实远程医疗应⽤研发的数据集，对四种不同的软件架构和框架组合进行了对比。
 

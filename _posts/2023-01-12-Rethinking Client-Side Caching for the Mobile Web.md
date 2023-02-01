@@ -2,8 +2,9 @@
 layout: post
 title:  "一分钟读论文：《重新思考移动客⼾端的网页缓存》"
 author: unbug
-categories: [ Performance, MobileWeb ]
+categories: [Front-end, Performance]
 image: assets/images/screenshot-20230112-185611.jpg
+tags: [Mobile, iOS, Android]
 ---
 最高约`49%`的 JS 运算可以在网页上重用。美国密歇根⼤学和加州⼤学洛杉矶分校的论文[《Rethinking Client-Side Caching for the Mobile Web》][paper1-url] 提出了一个新的客户端缓存架构，该架构主张直接`缓存运行时的 JS`。
 

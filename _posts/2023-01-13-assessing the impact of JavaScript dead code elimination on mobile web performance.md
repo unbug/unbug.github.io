@@ -2,8 +2,9 @@
 layout: post
 title:  "一分钟读论文：《评估消除 JS 死代码对移动网页性能的影响》"
 author: unbug
-categories: [ Performance, JS ]
+categories: [Front-end, Performance]
 image: assets/images/screenshot-20230113-155913.jpg
+tags: [Mobile, JS]
 ---
 你的 WebApp 包含都少没用的代码？如何识别？删除掉收益如何？诺基亚贝尔实验室和美国纽约大学阿布扎比分校的论文[《Muzeel: assessing the impact of JavaScript dead code elimination on mobile web performance》][paper1-url] 基于他们联合开发的 Muzeel 针对 15,000 个流行的网站进行分析，发现：超过一半的 JS 文件至少` 70% 代码是死代码（dead code）`，占文件大小的 55%。
 

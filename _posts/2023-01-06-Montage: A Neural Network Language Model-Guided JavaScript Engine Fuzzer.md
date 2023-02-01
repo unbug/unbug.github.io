@@ -2,8 +2,9 @@
 layout: post
 title:  "一分钟读论文：《Montage：基于神经网络语言模型 (NNLM) 实现 JS 引擎模糊测试器》"
 author: unbug
-categories: [ NNLM, Security, JS ]
+categories: [Machine learning, Security]
 image: assets/images/screenshot-20230109-110011.jpeg
+tags: [NNLM, Fuzzing, Test, JS]
 ---
 基于神经网络语言模型 (NNLM) 实现 JS 引擎模糊测试器被证实有效。韩国科学技术院（KAIST）的一篇论文[《Montage: A Neural Network Language Model-Guided JavaScript Engine Fuzzer》][paper1-url]， 首次提出了基于神经网络语言模型 (NNLM) 实现 JS 引擎模糊测试器： Montage。
 1. 论文提出了一种将 JS 测试用例的层次结构和这些结构之间的关系建模为一系列片段的新算法。 将 AST 编码为片段序列使 Montage 能够使用 LSTM 模型学习片段之间的关系。

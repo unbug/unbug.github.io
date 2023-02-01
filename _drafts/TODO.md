@@ -11,11 +11,6 @@
 ChatGPT 在参加医疗执照考试时表现如何？大型语言模型对医学教育和知识评估的影响
 https://www.semanticscholar.org/paper/How-Well-Does-ChatGPT-Do-When-Taking-the-Medical-of-Gilson-Safranek/7d4867e28b02059eef4cb25bfcd304b2071b30a9
 
-
-！利用 AR、语音机器人和 ChatGPT（大型语言模型）的儿童外语教学软件框架
-https://www.semanticscholar.org/paper/Framework-for-A-Foreign-Language-Teaching-Software-Topsakal-Topsakal/c4461a7160c54daf064a3091c785ab882e0ca736
-https://dergipark.org.tr/en/download/article-file/2864638
-
 ChatGPT 并不是您所需要的全部。大型生成 AI 模型的最新技术回顾
 https://www.semanticscholar.org/paper/ChatGPT-is-not-all-you-need.-A-State-of-the-Art-of-Gozalo-Brizuela-Garrido-Merch%C3%A1n/1f22de83d912176cb8857efa1c6d65b14d6a2f5c
 
