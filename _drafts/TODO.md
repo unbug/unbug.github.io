@@ -55,6 +55,7 @@ https://ieeexplore.ieee.org/document/9678831/authors#authors
 
 !我们已经走了多远——独立 WebAssembly 运行时的特征研究
 https://ieeexplore.ieee.org/document/9975423
+https://cobweb.cs.uga.edu/~wenwen/papers/iiswc2022.pdf
 
 JavaScript和WebAssembly在浏览器环境下的对比分析
 https://ieeexplore.ieee.org/document/9929829
