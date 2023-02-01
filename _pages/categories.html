@@ -8,6 +8,14 @@ permalink: "/categories.html"
     <div class="row justify-content-center">
         <div class="col-md-8">
         <h1 class="font-weight-bold title h3 text-capitalize mb-4">Categories</h1>
+
+        <div class="p-3 bg-lightblue" style="margin-bottom: 0.85rem; margin-top: -0.85em;">
+          <span class="taglist">
+            {% for category in site.categories %} 
+            <a class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/categories.html#{{ category[0] | downcase }}">{{ category[0] }}</a>
+            {% endfor %}
+          </span>
+        </div>
             
         {% for category in site.categories %} 
         <h4 class="font-weight-bold spanborder text-capitalize" id="{{ category[0] | downcase }}"><span>{{ category[0] }}</span></h4>

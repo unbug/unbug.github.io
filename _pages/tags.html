@@ -8,10 +8,22 @@ permalink: "/tags.html"
     <div class="row justify-content-center">
         <div class="col-md-8">
         <h1 class="font-weight-bold title h3 text-capitalize mb-4">Tags</h1>
+
+        <div class="p-3 bg-lightblue" style="margin-bottom: 0.85rem; margin-top: -0.85em;">
+          <span class="taglist">
+            {% for tag in site.tags %} 
+            {% if tag[0] != "featured" and tag[0] != "sticky"%}
+            <a class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/tags.html#{{ tag[0] | downcase }}">{{ tag[0] }}</a>
+            {% endif %}
+            {% endfor %}
+          </span>
+        </div>
             
+        
         {% for tag in site.tags %} 
 
         {% if tag[0] != "featured" and tag[0] != "sticky"%}
+        
         <h4 class="font-weight-bold spanborder text-capitalize" id="{{ tag[0] | downcase }}"><span>{{ tag[0] }}</span></h4>
             
         {% assign pages_list = tag[1] %}
