@@ -13,7 +13,7 @@ permalink: "/tags.html"
           <span class="taglist">
             {% for tag in site.tags %} 
             {% if tag[0] != "featured" and tag[0] != "sticky"%}
-            <a class="sscroll btn btn-light btn-sm font-weight-bold" style="margin-bottom: 0.35rem" href="{{site.baseurl}}/tags.html#{{ tag[0] | downcase }}">{{ tag[0] }}</a>
+            <a class="sscroll btn btn-light btn-sm btn-round font-weight-bold" style="margin-bottom: 0.35rem" href="{{site.baseurl}}/tags.html#{{ tag[0] | downcase }}">{{ tag[0] }}</a>
             {% endif %}
             {% endfor %}
           </span>
