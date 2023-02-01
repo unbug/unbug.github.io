@@ -10,6 +10,8 @@ permalink: "/tags.html"
         <h1 class="font-weight-bold title h6 text-uppercase mb-4">Tags</h1>
             
         {% for tag in site.tags %} 
+
+        {% if tag[0] != "featured" and tag[0] != "sticky"%}
         <h4 class="font-weight-bold spanborder text-capitalize" id="{{ tag[0] | downcase }}"><span>{{ tag[0] }}</span></h4>
             
         {% assign pages_list = tag[1] %}
@@ -23,6 +25,7 @@ permalink: "/tags.html"
         {% endfor %}
         {% assign pages_list = nil %}
         {% assign group = nil %}
+        {% endif %}
 
         {% endfor %}
 
