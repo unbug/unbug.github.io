@@ -21,15 +21,15 @@ https://www.semanticscholar.org/paper/How-Well-Does-ChatGPT-Do-When-Taking-the-M
 ChatGPT 并不是您所需要的全部。大型生成 AI 模型的最新技术回顾
 https://www.semanticscholar.org/paper/ChatGPT-is-not-all-you-need.-A-State-of-the-Art-of-Gozalo-Brizuela-Garrido-Merch%C3%A1n/1f22de83d912176cb8857efa1c6d65b14d6a2f5c
 
+探索 ChatGPT 的 AI 伦理：诊断分析
+https://arxiv.org/abs/2301.12867
+
 # LCNC
 ！关于低代码软件开发平台的采用和障碍的开发人员讨论主题
 https://www.semanticscholar.org/paper/Developer-discussion-topics-on-the-adoption-and-of-Alamin-Uddin/f44ba15c7665dbe70b736000b92151ced4522631
 
 ！低代码平台的可用性如何？系统的文献综述
 https://www.semanticscholar.org/paper/What-about-the-usability-in-low-code-platforms-A-Pinho-Aguiar/82a62745360c8574262fcdf1bda508462de40654
-
-！低代码作为制造业数字化转型的推动者
-https://www.semanticscholar.org/paper/Low-Code-as-Enabler-of-Digital-Transformation-in-Sanchis-Garc%C3%ADa-Perales/fb1b5abcf8dda51ba8ac09a97fdd66d853d4311f
 
 ！寻找低代码的本质：七大开发平台的探索性研究
 https://www.semanticscholar.org/paper/In-Search-of-the-Essence-of-Low-Code%3A-An-Study-of-Bock-Frank/2d412fc6b8a86bbe5c0f18266790ec683cae982f
@@ -60,16 +60,10 @@ https://ieeexplore.ieee.org/document/9826054
 使用 WebAssembly 为 Web 应用程序赋能：我们到了吗？
 https://ieeexplore.ieee.org/document/9678831/authors#authors
 
-!我们已经走了多远——独立 WebAssembly 运行时的特征研究
-https://ieeexplore.ieee.org/document/9975423
-https://cobweb.cs.uga.edu/~wenwen/papers/iiswc2022.pdf
 
 JavaScript和WebAssembly在浏览器环境下的对比分析
 https://ieeexplore.ieee.org/document/9929829
 
-!使用 Rust 和 WebAssembly 在高性能 Node.js 和 Web 应用程序中补充 JavaScript
-https://www.semanticscholar.org/paper/Complementing-JavaScript-in-High-Performance-and-Kyriakou-Tselikas/6e6337cc788508f5a17a0956d27038582d0d36fa
-https://www.mdpi.com/2079-9292/11/19/3217
 
 !Wasmachine：使用 WebAssembly 操作系统使边缘加速
 https://ieeexplore.ieee.org/document/9284230
