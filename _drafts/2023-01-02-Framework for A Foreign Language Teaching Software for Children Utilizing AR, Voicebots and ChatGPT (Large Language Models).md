@@ -2,7 +2,7 @@
 layout: post
 title:  "一分钟读论文：《利用 AR、Voicebots 和 ChatGPT 的儿童外语教学软件框架》"
 author: unbug
-categories: [AI]
+categories: [AI, Engineering]
 image: assets/images/screenshot-20230131-234648.jpg
 tags: [AR, ChatGPT, Machine-learning]
 ---
