@@ -171,6 +171,15 @@ https://www.semanticscholar.org/paper/Accessibility-and-Software-Engineering-Pro
 可访问与否？Android 应用程序可访问性的实证研究
 https://ieeexplore.ieee.org/document/9525343
 
+关于代码生成技术的稳健性：GitHub Copilot 上的实证研究
+https://arxiv.org/abs/2302.00438
+
+评估未来自动驾驶汽车的接受度
+https://arxiv.org/abs/2301.11144
+
+开发人员在软件工件中签入秘密时面临哪些挑战？
+https://arxiv.org/abs/2301.12377
+
 
 # Note
 
