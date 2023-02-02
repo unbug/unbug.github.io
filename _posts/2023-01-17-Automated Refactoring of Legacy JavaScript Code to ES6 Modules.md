@@ -4,7 +4,7 @@ title:  "一分钟读论文：《自动将 Legacy 项目重构为 ES6》"
 author: unbug
 categories: [Engineering]
 image: assets/images/screenshot-20230117-121828.jpg
-tags: [Refactor, JS]
+tags: [Refactor, JavaScript]
 ---
 很多遗留的项目都是 ES5 代码，不能在 ES6 或 TypeScript 下很好的复用，特别是企业级大型前端工程，维护成本令人头疼。雅典经济与商业大学信息学系的论文[《Automated Refactoring of Legacy JavaScript Code to ES6 Modules》][paper1-url]实现了将遗留 ES5 代码自动重构为 ES6 模块，重点是将模块对象解构为多个可单独重用的模块来实现模块内容的细粒度重用，每个重构模块`支持按需引入`而不是引入整个模块对象，并`自动重建依赖关系`，最大限度减少耦合并提高了可维护性。
 

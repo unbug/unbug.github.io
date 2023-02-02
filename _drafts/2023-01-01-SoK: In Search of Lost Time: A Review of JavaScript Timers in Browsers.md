@@ -4,7 +4,7 @@ title:  "一分钟读论文：《》"
 author: unbug
 categories: [ , ]
 image: assets/images/
-tags: [featured, JS]
+tags: [featured, JavaScript]
 ---
 的论文[《SoK: In Search of Lost Time: A Review of JavaScript Timers in Browsers》][paper1-url]：
 

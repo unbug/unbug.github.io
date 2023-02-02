@@ -1,3 +1,4 @@
+
 # Topics
 - layoff
 - 技术债
@@ -8,6 +9,9 @@
 - 开源
 - ChatGPT
 - 架构
+- NodeJS; JavaScript; Rust; WebAssembly; web software; scalability; software performance evaluation; software convergence; software interoperability
+# Categories
+'Security Front-end Architecture Performance Productivity Engineering Engineer AI'       
 
 
 # AI

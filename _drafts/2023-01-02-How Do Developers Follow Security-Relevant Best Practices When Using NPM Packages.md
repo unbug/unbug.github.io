@@ -4,7 +4,7 @@ title:  "一分钟读论文：《工程师如何遵循 NPM 包安全最佳实践
 author: unbug
 categories: [Security]
 image: assets/images/screenshot-20230124-230804.jpg
-tags: [NPM]
+tags: [NPM, NodeJS]
 ---
 不遵循包依赖的最佳实践会导致严重的安全风险。例如，2021 年 3 月，安全专家在 NPM 包网络掩码中发现了一个漏洞可影响超过 278,000 个应用。美国布莱克斯堡弗吉尼亚理工大学和东北大学软件学院合著的论文[《How Do Developers Follow Security-Relevant Best Practices When Using NPM Packages?》][paper1-url] 分析了841个 JS 应用与 NPM TOP 1000 包发现工程师经常忽略安全的最佳实践。
 

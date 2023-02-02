@@ -4,7 +4,7 @@ title:  "一分钟读论文：《》"
 author: unbug
 categories: [, JS]
 image: 
-tags: [featured]
+tags: [featured, JavaScript]
 ---
 的论文[《SoK: Cryptographic Confidentiality of Data on Mobile Devices》][paper1-url]：
 
