@@ -10,8 +10,11 @@
 - ChatGPT
 - 架构
 - NodeJS; JavaScript; Rust; WebAssembly; web software; scalability; software performance evaluation; software convergence; software interoperability
+- Software Ecosystem, Protestware, Supply Chain Attacks
 # Categories
-'Security Front-end Architecture Performance Productivity Engineering Engineer AI'       
+'Security FrontEnd Architecture Performance Productivity Engineering Engineer AI'   
+# Keywords
+
 
 # OpenSource
 !是什么造就了开源项目的出色维护者？

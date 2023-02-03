@@ -2,7 +2,7 @@
 layout: post
 title:  "一分钟读论文：《StackOverflow 上 JS 代码片段规则违规的挖掘》"
 author: unbug
-categories: [Front-end]
+categories: [FrontEnd]
 image: assets/images/screenshot-20230110-165809.jpeg
 tags: [Lint, JavaScript]
 ---

@@ -2,7 +2,7 @@
 layout: post
 title:  "一分钟读论文：《我们走了多远——WebAssembly 运行时的全面特征研究》"
 author: unbug
-categories: [Front-end]
+categories: [FrontEnd]
 image: assets/images/screenshot-20230201-234812.jpg
 tags: [featured, WebAssembly, Rust]
 ---

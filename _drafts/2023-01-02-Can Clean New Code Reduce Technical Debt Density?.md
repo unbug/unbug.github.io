@@ -4,7 +4,7 @@ title:  "一分钟读论文：《简洁代码能降低技术债吗？》"
 author: unbug
 categories: [Engineering]
 image: assets/images/screenshot-20230129-231600.jpg
-tags: [Technical-debt, Refactor]
+tags: [TechnicalDebt, Refactor]
 ---
 希腊马其顿大学应用信息学系和荷兰格罗宁根格罗宁根大学数学与计算机科学研究所的论文[《Can Clean New Code Reduce Technical Debt Density?》][paper1-url]对 Apache 软件基金会的 27 个开源软件项目进行了大规模案例研究，分析了 `66,661` 个类和 `56,890` 个 commit。结果表明，`编写“简洁”（或至少“更简洁”）的新代码可以降低技术债`（Technical Debt，简称 `TD`）:
 

@@ -4,7 +4,7 @@ title:  "一分钟读论文：《利用 AR、Voicebots 和 ChatGPT 的儿童外�
 author: unbug
 categories: [AI, Engineering]
 image: assets/images/screenshot-20230131-234648.jpg
-tags: [AR, ChatGPT, Machine-learning]
+tags: [AR, ChatGPT, MachineLearning]
 ---
 ChatGPT 催生了很多教育领域的创业项目。美国的佛罗里达理工大学与南佛罗里达大学合著的论文[《Framework for A Foreign Language Teaching Software for Children Utilizing AR, Voicebots and ChatGPT (Large Language Models)》][paper1-url]设计出一个框架，用于利用 AR+Voicebots+ChatGPT 技术开发语言学习软件，框架遵循了⼉童外语教学的设计原则：`游戏化、社交互动、惊喜奖励`。作者自信本研究中提出的框架和设计原则可以成为开发高效外语教学软件的蓝图。
 

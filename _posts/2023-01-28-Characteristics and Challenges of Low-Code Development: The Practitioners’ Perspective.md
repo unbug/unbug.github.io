@@ -4,7 +4,7 @@ title:  "一分钟读论文：《Low-code 开发的特点与挑战：从业者�
 author: unbug
 categories: [Productivity]
 image: assets/images/screenshot-20230127-174230.jpg
-tags: [Low-code, No-code]
+tags: [LowCode, NoCode]
 ---
 中国的武汉大学、美国的伊利诺伊大学和澳大利的亚莫纳什大学合著的论文[《Characteristics and Challenges of Low-Code Development: The Practitioners’ Perspective》][paper1-url] 分析了 Stack Overflow 和 Reddit 两大社区关于 Low-code development（LCD）的优势、局限性和挑战。结果表明：(1) LCD 可以提供图形用户界面供用户拖放，只需很少甚至不需要代码；(2) LCD 平台中开箱即用的单元（例如，API 和组件）的设备使其易于学习和使用并加快开发速度；(3) LCD 在需要自动化流程和工作流的领域尤其受到青睐；(4)从业者对 LCD 的优缺点看法不一。
 
