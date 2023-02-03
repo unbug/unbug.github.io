@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "一分钟读论文：《》"
+title:  "一分钟读论文：《是什么造就了开源项目的出色维护者？》"
 author: unbug
 categories: [, JS]
 image: 
 tags: [featured]
 ---
-的论文[《》][paper1-url]：
+的论文[《What Makes a Great Maintainer of Open Source Projects?》][paper1-url]：
 
 ![]({{ site.baseurl }}/)
 
@@ -24,5 +24,5 @@ tags: [featured]
 - [][links-1]
 
 
-[paper1-url]: 
+[paper1-url]: http://gustavopinto.org/lost+found/icse2021.pdf
 [links-1]: 
