@@ -2,7 +2,7 @@
 layout: post
 title:  "一分钟读论文：《通过 JS 分类即时加速移动网页》"
 author: unbug
-categories: [Performance, Front-end]
+categories: [Performance, FrontEnd]
 image: assets/images/screenshot-20230111-155305.jpeg
 tags: [JavaScript, Mobile]
 ---
