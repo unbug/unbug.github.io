@@ -6,12 +6,13 @@ categories: [SoftwareEcosystem, OpenSource]
 image: assets/images/screenshot-20230203-152100.jpg
 tags: [Protestware, SupplyChainAttacks]
 ---
-两国交战，平民是否有罪？国际人道法约定战争时要尽可能限制对妇女和儿童以及其他平民的影响。开源许可证明确规定应该“不歧视个⼈或群体。License 不得歧视任何⼈“。俄乌战争开源如何影响开发者呢？我们来看看⽇本学技术研究所和澳大利亚墨尔本大学合著的论文[《In war and peace: the impact of world politics on software ecosystems》][paper1-url]中研究的几个例子：当开源项目的维护者将他们的开源项目化为抗议软件（Protestware）。
+两国交战，平民是否有罪？国际人道法约定“战争时要尽可能限制对妇女和儿童以及其他平民的影响”。开源许可证明确规定应该“不歧视个⼈或群体。License 不得歧视任何⼈”。 俄乌冲突中开源如何影响开发者呢？我们来看看⽇本学技术研究所和澳大利亚墨尔本大学合著的论文[《In war and peace: the impact of world politics on software ecosystems》][paper1-url]中研究的几个例子：当开源项目的维护者将他们的开源项目化为抗议软件（Protestware）。
 
 抗议软件不仅在政治冲突的背景下具有相关性，⽽且开源维护者有自己的⽴场。`Faker.js` 和 `Colors.js` 这两个拥有超过 21,000 个依赖应⽤程序和超过 2200 万每周下载量的库的维护者故意发布了⼀个更新给亚⻢逊云开发⼯具包的⽤⼾带来了问题，该更新产⽣了⼀个⽆限循环，导致依赖应⽤程序喷出以“Liberty Liberty Liberty”作为开头的乱码。作者在 README 表明自己的立场，要求6位数的年薪作为报酬。
 
 ## 俄乌冲突中的真实案例
 **恶意抗议软件 Node-ipc：**
+
 Node-ipc 是使用广泛的 npm 开源组件，其作者出于其个人政治立场在仓库中加入将俄罗斯与白俄罗斯区域用户数据抹除的恶意代码，`Vue.js 生态中的 vue-cli 包依赖了它使得漏洞影响范围很大（一周内上百万次下载）`，GitHub 宣布这是一个严重漏洞，漏洞跟踪编号 CVE-2022-23812。
 
 **温和的抗议软件：**
