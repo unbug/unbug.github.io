@@ -23,6 +23,12 @@ https://www.semanticscholar.org/paper/Understanding-skills-for-OSS-communities-o
 !战争与和平：世界政治对软件生态系统的影响
 https://www.semanticscholar.org/paper/In-war-and-peace%3A-the-impact-of-world-politics-on-Kula-Treude/19d4db23117ccedc3d7fb7b245e2fe0ee9de86c8
 
+为什么要重新发明轮子？库重用和重新实现的实证研究
+https://www.semanticscholar.org/paper/Why-reinventing-the-wheels-An-empirical-study-on-Xu-An/f8f93ba8a3dd0a9b2d8aeed95851920d8fdf871c
+
+!软件生态系统——系统的文献综述
+https://dl.acm.org/doi/10.1016/j.jss.2012.12.026
+
 # AI
 ChatGPT 在参加医疗执照考试时表现如何？大型语言模型对医学教育和知识评估的影响
 https://www.semanticscholar.org/paper/How-Well-Does-ChatGPT-Do-When-Taking-the-Medical-of-Gilson-Safranek/7d4867e28b02059eef4cb25bfcd304b2071b30a9
@@ -35,6 +41,9 @@ https://arxiv.org/abs/2301.12867
 
 机器学习和端口扫描：系统回顾
 https://arxiv.org/abs/2301.13581
+
+自动驾驶汽车系统设计、验证和确认的机电一体化方法
+https://arxiv.org/pdf/2301.13425.pdf
 
 # LCNC
 ！关于低代码软件开发平台的采用和障碍的开发人员讨论主题
