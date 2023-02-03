@@ -13,6 +13,15 @@
 # Categories
 'Security Front-end Architecture Performance Productivity Engineering Engineer AI'       
 
+# OpenSource
+!是什么造就了开源项目的出色维护者？
+https://www.semanticscholar.org/paper/What-Makes-a-Great-Maintainer-of-Open-Source-Dias-Meirelles/24a19157e9aa54f13ea997ab70cbc388406d8198
+
+!GitHub 上 OSS 社区的理解技巧
+https://www.semanticscholar.org/paper/Understanding-skills-for-OSS-communities-on-GitHub-Liang-Zimmermann/27fa4e7d641024bc4dcbb2fc994957b1c5f911e7
+
+!战争与和平：世界政治对软件生态系统的影响
+https://www.semanticscholar.org/paper/In-war-and-peace%3A-the-impact-of-world-politics-on-Kula-Treude/19d4db23117ccedc3d7fb7b245e2fe0ee9de86c8
 
 # AI
 ChatGPT 在参加医疗执照考试时表现如何？大型语言模型对医学教育和知识评估的影响
