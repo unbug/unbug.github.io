@@ -24,6 +24,9 @@ https://www.semanticscholar.org/paper/ChatGPT-is-not-all-you-need.-A-State-of-th
 探索 ChatGPT 的 AI 伦理：诊断分析
 https://arxiv.org/abs/2301.12867
 
+机器学习和端口扫描：系统回顾
+https://arxiv.org/abs/2301.13581
+
 # LCNC
 ！关于低代码软件开发平台的采用和障碍的开发人员讨论主题
 https://www.semanticscholar.org/paper/Developer-discussion-topics-on-the-adoption-and-of-Alamin-Uddin/f44ba15c7665dbe70b736000b92151ced4522631
@@ -178,6 +181,9 @@ https://arxiv.org/abs/2301.11144
 
 开发人员在软件工件中签入秘密时面临哪些挑战？
 https://arxiv.org/abs/2301.12377
+
+在 HTTP 自适应流媒体中实现更好的体验质量
+https://arxiv.org/abs/2301.13523
 
 
 # Note
