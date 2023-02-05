@@ -3,16 +3,15 @@ layout: post
 title:  "一分钟读论文：《30年软件重构研究：系统性文献综述》"
 author: unbug
 categories: [Engineering]
-image: assets/images/screenshot-20230114-000959.jpg
+image: assets/images/screenshot-20230113-232834.jpg
 tags: [sticky, featured, Refactor]
 ---
 如何评估重构的收益？IEEE 软件工程期刊登的论文[《30 Years of Software Refactoring Research: A Systematic Literature Review》][paper1-url]分析了过去`30年3183篇`关于重构的研究论文，对现有重构研究的最具可扩展性和最全面的文献综述。
 
-![lifecycle]({{ site.baseurl }}/assets/images/screenshot-20230113-232834.jpg)
 
 ## 论文研究的问题和结论
 ### RQ1：重构生命周期是什么？
-
+![lifecycle]({{ site.baseurl }}/assets/images/screenshot-20230114-000959.jpg)
 - `重构检测：`识别重构机会是实际重构过程之前的一个重要阶段。 它可以通过手动检查和分析系统的工件来识别重构机会来完成。  该领域的研究人员通常会提出全自动或半自动化技术来识别重构机会。 这些技术可能适用于不同的工件，应该根据经验进行评估。
 - `重构优先级：`重构机会的数量通常超过开发人员可以处理的问题数量，尤其是当可用于执行重构的工作量有限时。 此外，并非所有重构机会都与系统目标或其健康状况同等相关。 在此阶段，根据开发人员的需要，使用不同的标准（例如，最大限度地重构具有大量反模式或具有以前的错误历史等的类）对重构操作进行优先级排序。
 - `重构测试：`选择要应用的重构后，需要进行测试以确保工件转换的正确性并避免将来出现错误。 这是通过检查重构操作的前置条件和后置条件的满足以及系统行为的保存来完成的。
