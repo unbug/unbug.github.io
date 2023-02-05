@@ -42,6 +42,9 @@ https://www.semanticscholar.org/paper/ChatGPT-is-not-all-you-need.-A-State-of-th
 探索 ChatGPT 的 AI 伦理：诊断分析
 https://arxiv.org/abs/2301.12867
 
+!构建支持 ML 的系统的协作挑战：通信、文档、工程和流程
+https://dl.acm.org/doi/10.1145/3510003.3510209
+
 机器学习和端口扫描：系统回顾
 https://arxiv.org/abs/2301.13581
 
@@ -176,8 +179,14 @@ https://pdfs.semanticscholar.org/44f6/69c416f415e594bc212549b9598eba99121a.pdf?_
 软件工程中的人类价值：对比实践案例研究
 https://ieeexplore.ieee.org/document/9261980
 
+# Secutiry
+通过 NPM 生态系统中的依赖树揭开漏洞传播及其演变的神秘面纱
+https://dl.acm.org/doi/10.1145/3510003.3510142
 
-# Test
+# Testing
+!揭开内核模糊测试中依赖性挑战的神秘面纱
+https://dl.acm.org/doi/10.1145/3510003.3510126
+
 用于汽车软件测试的 SMArDT 建模
 https://www.semanticscholar.org/paper/SMArDT-modeling-for-automotive-software-testing-Drave-Hillemacher/92e1f5f7ba1aa5dadff4f3c59fdca3ac6c277473
 
@@ -206,6 +215,8 @@ https://arxiv.org/abs/2301.12377
 在 HTTP 自适应流媒体中实现更好的体验质量
 https://arxiv.org/abs/2301.13523
 
+表征和检测微信小程序中的错误
+https://dl.acm.org/doi/10.1145/3510003.3510114
 
 # Note
 
