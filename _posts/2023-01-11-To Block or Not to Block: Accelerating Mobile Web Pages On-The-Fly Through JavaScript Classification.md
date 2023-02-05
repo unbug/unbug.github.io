@@ -43,7 +43,7 @@ SlimWeb 和 AMP 之间的⼀个主要区别是后者为开发⼈员提供了⼀�
 - 在 3G ⽹络上的性能使⽤ SlimWeb（绿框）时 PLT 减少了约 50%，⽽ privacy-badger+AdBlock（红框）中只减少了 25%。
 - 即使 privacy-badger+AdBlock+JSCleaner 组合使⽤，也达不到 SlimWeb 的效果，因为 SlimWeb 中使⽤机器学习（ML）对 JS 元素进⾏分类
 
-## 推荐阅读
+## References
 - [Speed index][links-1]
 - [Page load times][links-2]
 - [JSCleaner: De-Cluttering Mobile Webpages Through JavaScript Cleanup][links-3]
