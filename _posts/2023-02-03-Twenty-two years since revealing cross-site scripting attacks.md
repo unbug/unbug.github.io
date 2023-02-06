@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "一分钟读论文：《跨站脚本攻击22年：全面调查及系统映射》"
+title:  "一分钟读论文：《XSS 攻击22年：全面调查及系统综述》"
 author: unbug
 categories: [Security]
 image: assets/images/screenshot-20230122-215140.jpg

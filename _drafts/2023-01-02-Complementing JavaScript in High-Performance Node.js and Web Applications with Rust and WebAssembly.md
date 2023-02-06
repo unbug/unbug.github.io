@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "一分钟读论文：《用 Rust 和 WebAssembly 补充 JS 实现高性能 Node、Web 应用程序》"
+title:  "一分钟读论文：《用 Rust 和 WebAssembly 补充 JS 实现高性能 Node 与 Web 应用程序》"
 author: unbug
 categories: [Architecture, Performance]
 image: assets/images/screenshot-20230202-162534.jpg

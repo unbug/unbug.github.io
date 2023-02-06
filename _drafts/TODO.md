@@ -43,6 +43,10 @@ https://www.semanticscholar.org/paper/ChatGPT-is-not-all-you-need.-A-State-of-th
 探索 ChatGPT 的 AI 伦理：诊断分析
 https://arxiv.org/abs/2301.12867
 
+ChatGPT自动修复漏洞性能分析
+https://www.semanticscholar.org/paper/An-Analysis-of-the-Automatic-Bug-Fixing-Performance-Sobania-Briesch/9f530ebf624bf58e91b2a1f20b0799a45ca48f9a
+
+
 !构建支持 ML 的系统的协作挑战：通信、文档、工程和流程
 https://dl.acm.org/doi/10.1145/3510003.3510209
 
