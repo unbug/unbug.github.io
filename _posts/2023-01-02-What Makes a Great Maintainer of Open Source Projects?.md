@@ -14,7 +14,6 @@ Google Go 工程师辞去工作转行成为全职开源维护者，同时为多�
 - 为了促进开放式创新，保持对项目目标的关注和在社区中建立真理，维护者应该突出奉献精神，坚持长期合作，并确保非敌对环境。
 
 ## 优秀开源维护者有哪些特征？
-![]({{ site.baseurl }}/assets/images/screenshot-20230207-192823.jpg)
 
 **管理：**
 - `积极`：尽可能回答问题。
@@ -46,6 +45,7 @@ Google Go 工程师辞去工作转行成为全职开源维护者，同时为多�
 - `勤奋`：为一个目标认真、执着地工作。
 - `责任`：对项目有承诺和自觉的奉献精神。
 
+![]({{ site.baseurl }}/assets/images/screenshot-20230207-192823.jpg)
 
 ## References
 - [I’M NOW A FULL-TIME PROFESSIONAL OPEN SOURCE MAINTAINER][links-1]
