@@ -33,6 +33,9 @@ https://www.semanticscholar.org/paper/Why-reinventing-the-wheels-An-empirical-st
 !软件生态系统——系统的文献综述
 https://dl.acm.org/doi/10.1016/j.jss.2012.12.026
 
+!开源采用因素——系统的文献回顾
+https://ieeexplore.ieee.org/document/9089866
+
 # AI
 ChatGPT 在参加医疗执照考试时表现如何？大型语言模型对医学教育和知识评估的影响
 https://www.semanticscholar.org/paper/How-Well-Does-ChatGPT-Do-When-Taking-the-Medical-of-Gilson-Safranek/7d4867e28b02059eef4cb25bfcd304b2071b30a9
@@ -55,6 +58,12 @@ https://arxiv.org/abs/2301.13581
 
 自动驾驶汽车系统设计、验证和确认的机电一体化方法
 https://arxiv.org/pdf/2301.13425.pdf
+
+!定义元宇宙：系统的文献回顾
+https://ieeexplore.ieee.org/document/10035386
+
+!智能制造中的自组织——背景、系统评价、挑战和展望
+https://ieeexplore.ieee.org/document/10029369
 
 # LCNC
 ！关于低代码软件开发平台的采用和障碍的开发人员讨论主题
@@ -166,7 +175,28 @@ https://ieeexplore.ieee.org/document/9622154
 关于难闻气味的系统文献综述——5 W：哪个、什么时候、什么、谁、哪里
 https://ieeexplore.ieee.org/document/8532309
 
-# Agile
+# Enginner
+程序员经验：系统的文献回顾
+https://ieeexplore.ieee.org/document/8727527
+
+# Enginnering
+!敏捷开发人员的软件实践：系统的文献回顾
+https://ieeexplore.ieee.org/document/8511295
+
+!系统工程设计方法的系统文献综述
+https://ieeexplore.ieee.org/document/8691931
+
+!敏捷到精益软件开发转型：系统文献综述
+https://ieeexplore.ieee.org/document/8511295
+
+!机器学习 DevOps 的系统回顾
+https://ieeexplore.ieee.org/document/9872968
+
+!中小企业的软件开发模式：一个仍然不确定的过程
+https://ieeexplore.ieee.org/document/9820075
+
+
+
 论敏捷团队中组织结构模式与架构的关系
 https://ieeexplore.ieee.org/document/9712241
 
@@ -175,6 +205,9 @@ https://ieeexplore.ieee.org/document/9387593
 
 是什么在敏捷团队中驱动和维持自我分配
 https://ieeexplore.ieee.org/document/9506834
+
+软件工程的成功与失败：后续系统文献回顾
+https://ieeexplore.ieee.org/document/9104653
 
 # Productivity
 
@@ -185,12 +218,27 @@ https://pdfs.semanticscholar.org/44f6/69c416f415e594bc212549b9598eba99121a.pdf?_
 https://ieeexplore.ieee.org/document/9261980
 
 # Secutiry
+!软件工件的秘密管理实践有哪些？
+https://ieeexplore.ieee.org/document/9973029
+
+网络安全的银弹——人工智能安全的系统文献回顾
+https://ieeexplore.ieee.org/document/9998305
+
+理解暗网：系统的文献回顾
+https://ieeexplore.ieee.org/document/9995741
+
 通过 NPM 生态系统中的依赖树揭开漏洞传播及其演变的神秘面纱
 https://dl.acm.org/doi/10.1145/3510003.3510142
+
+Javascript 恶意软件检测的系统文献综述和质量分析
+https://ieeexplore.ieee.org/document/9226527
 
 # Testing
 !揭开内核模糊测试中依赖性挑战的神秘面纱
 https://dl.acm.org/doi/10.1145/3510003.3510126
+
+测试驱动代码审查：一项实证研究
+https://ieeexplore.ieee.org/document/8811911
 
 用于汽车软件测试的 SMArDT 建模
 https://www.semanticscholar.org/paper/SMArDT-modeling-for-automotive-software-testing-Drave-Hillemacher/92e1f5f7ba1aa5dadff4f3c59fdca3ac6c277473
@@ -222,6 +270,9 @@ https://arxiv.org/abs/2301.13523
 
 表征和检测微信小程序中的错误
 https://dl.acm.org/doi/10.1145/3510003.3510114
+
+软件工程教学方法：系统回顾
+https://ieeexplore.ieee.org/document/9715261
 
 # Note
 
