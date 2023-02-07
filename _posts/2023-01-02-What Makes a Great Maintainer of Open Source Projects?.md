@@ -2,7 +2,7 @@
 layout: post
 title:  "一分钟读论文：《优秀的开源维护者是如何造就的？》"
 author: unbug
-categories: [OpenSource]
+categories: [SoftwareEcosystem]
 image: assets/images/screenshot-20230204-001420.jpg
 tags: [OpenSourceMaintainer, OSS]
 ---

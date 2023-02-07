@@ -2,7 +2,7 @@
 layout: post
 title:  "一分钟读论文：《战争与和平：世界政治对软件生态系统的影响》"
 author: unbug
-categories: [SoftwareEcosystem, OpenSource]
+categories: [SoftwareEcosystem]
 image: assets/images/screenshot-20230203-152100.jpg
 tags: [Protestware, SupplyChainAttacks, OpenSource, OSS]
 ---
