@@ -1,1 +1,9 @@
 <!-- This goes before </head> closing tag, Google Analytics can be placed here --> 
+<script>
+    // remove all search params
+    try {
+        window.history.replaceState(null, null, location.href.replace('?'+new URLSearchParams(location.search).toString(), ""));
+    } catch (error) {
+        //todo
+    }
+</script>
