@@ -2,11 +2,11 @@
 layout: post
 title:  "一分钟读论文：《战争与和平：世界政治对软件生态系统的影响》"
 author: unbug
-categories: [SoftwareEcosystem]
+categories: [SoftwareEcosystem, Security]
 image: assets/images/screenshot-20230203-152100.jpg
 tags: [Protestware, SupplyChainAttacks, OpenSource, OSS]
 ---
-两国交战，平民是否有罪？国际人道法约定“战争时要尽可能限制对妇女和儿童以及其他平民的影响”。开源许可证明确规定应该“不歧视个⼈或群体。License 不得歧视任何⼈”。 俄乌冲突中开源如何影响开发者呢？我们来看看⽇本学技术研究所和澳大利亚墨尔本大学合著的论文[《In war and peace: the impact of world politics on software ecosystems》][paper1-url]中研究的几个例子：当开源项目的维护者将他们的开源项目化为抗议软件（Protestware）。
+两国交战，平民是否有罪？国际人道法约定“战争时要尽可能限制对妇女和儿童以及其他平民的影响”。开源许可证明确规定“不歧视个⼈或群体。License 不得歧视任何⼈”。 俄乌冲突中开源如何影响开发者呢？我们来看看日本奈良科学技术大学和澳大利亚墨尔本大学合著的论文[《In war and peace: the impact of world politics on software ecosystems》][paper1-url]中研究的几个例子：当开源项目的维护者将他们的开源项目化为抗议软件（Protestware）。
 
 抗议软件不仅在政治冲突的背景下具有相关性，⽽且开源维护者有自己的⽴场。`Faker.js` 和 `Colors.js` 这两个拥有超过 21,000 个依赖应⽤程序和超过 2200 万每周下载量的库的维护者故意发布了⼀个更新给亚⻢逊云开发⼯具包的⽤⼾带来了问题，该更新产⽣了⼀个⽆限循环，导致依赖应⽤程序喷出以“Liberty Liberty Liberty”作为开头的乱码。作者在 README 表明自己的立场，要求6位数的年薪作为报酬。
 
