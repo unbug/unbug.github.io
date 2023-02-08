@@ -100,21 +100,23 @@ https://www.semanticscholar.org/paper/A-Mixed-Methods-Study-of-Low-Code-Developm
 https://www.semanticscholar.org/paper/Low-code-development-and-model-driven-engineering%3A-Ruscio-Kolovos/13b2471efdbada2360f3edb37c4d398826ed279e#references
 
 # Webassembly
-使用 WebAssembly 运行时将无服务器推向边缘
+!使用 WebAssembly 运行时将无服务器推向边缘
 https://ieeexplore.ieee.org/document/9826054
+https://dsg.tuwien.ac.at/team/sd/papers/CCGrid_2022_P_Frangoudis_Pushing.pdf
 
 WebAssembly 中正式验证的加密 Web 应用程序
 https://ieeexplore.ieee.org/document/9826054
 
 使用 WebAssembly 为 Web 应用程序赋能：我们到了吗？
 https://ieeexplore.ieee.org/document/9678831/authors#authors
+https://weihang-wang.github.io/papers/wasm-ase21nier.pdf
 
 JavaScript和WebAssembly在浏览器环境下的对比分析
 https://ieeexplore.ieee.org/document/9929829
 
+没那么快：分析WebAssembly与本机代码的性能。
+https://www.usenix.org/system/files/atc19-jangda.pdf?ref=https://githubhelp.com
 
-!Wasmachine：使用 WebAssembly 操作系统使边缘加速
-https://ieeexplore.ieee.org/document/9284230
 
 # JavaScript
 Web 缓存欺骗攻击

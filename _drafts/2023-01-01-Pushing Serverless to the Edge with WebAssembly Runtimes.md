@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "一分钟读论文：《》"
+title:  "一分钟读论文：《使用 WebAssembly 运行时实现无服务器边缘计算》"
 author: unbug
 categories: [, JS]
 image: 
 tags: [featured]
 ---
-的论文[《》][paper1-url]：
+的论文[《Pushing Serverless to the Edge with WebAssembly Runtimes》][paper1-url]：
 
 ![]({{ site.baseurl }}/)
 
@@ -24,5 +24,5 @@ tags: [featured]
 - [][links-1]
 
 
-[paper1-url]: 
+[paper1-url]: https://dsg.tuwien.ac.at/team/sd/papers/CCGrid_2022_P_Frangoudis_Pushing.pdf
 [links-1]: 
