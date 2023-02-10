@@ -23,7 +23,7 @@ ChatGPT 催生了很多教育领域的创业项目，欧盟大约有`2600万4到
 |:-------------------------------------:|:-------------------------------------:|
 |![img1]({{ site.baseurl }}/assets/images/screenshot-20230210-074753.jpg)| ![img2]({{ site.baseurl }}/assets/images/screenshot-20230210-074807.jpg) |
 
-## 推荐阅读
+## References
 - [成功 AR 儿童产品 Shifu][links-1]
 
 
