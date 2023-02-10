@@ -17,6 +17,4 @@ Learn a paper in a minute. 一分钟读懂一篇论文。
 - 「一分钟读论文」完成50篇。
 
 <!-- donate -->
-{% assign author = site.authors[page.author] %}
-{% include donate.html %}
-            
+{% assign author = site.authors[page.author] %}            
