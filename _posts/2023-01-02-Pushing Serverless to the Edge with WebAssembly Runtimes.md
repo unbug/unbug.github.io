@@ -13,9 +13,10 @@ tags: [WebAssembly, Serverless, IoT, EdgeComputing]
 - 在低端边缘计算设备上的函数执行吞吐量比 Docker 容器`提升4.2倍`。
 
 ## 基于 WASM 的 FaaS 平台的架构设计
+
 |                                       |                                       |
 |:-------------------------------------:|:-------------------------------------:|
-|![img1]({{ site.baseurl }}/assets/images/screenshot-20230210-234722.jpg)| ![img2]({{ site.baseurl }}/assets/images/screenshot-20230210-234722.jpg) |
+|![img1]({{ site.baseurl }}/assets/images/screenshot-20230210-234703.jpg)| ![img2]({{ site.baseurl }}/assets/images/screenshot-20230210-234722.jpg) |
 
 - `Serverless 平台：`⽤ Apache OpenWhisk 作为实现 WASM ⽀持的框架。 由于 OpenWhisk 的设计易于使⽤新语⾔进⾏扩展，因此语⾔运⾏时协议得到了很好的改进并且易于实现。
 - `WebAssembly 运⾏时：`同时支持 WASMtime、WASMer、WebAssembly Micro Runtime (wamr)。

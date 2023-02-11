@@ -161,23 +161,12 @@ https://www.semanticscholar.org/paper/Profile-Guided-Offline-Optimization-of-Hid
 https://arxiv.org/pdf/2107.13708.pd
 
 
-f
-https://ieeexplore.ieee.org/document/9699408/metrics#metrics
-
-
-Generating Virtual Machine Code of JavaScript Engine for Embedded Systems
-https://www.semanticscholar.org/paper/Generating-Virtual-Machine-Code-of-JavaScript-for-Hirasawa-Iwasaki/34577297b8e0cdac5a7a5db17175f153eb80fb61
-
 # Refactor
 技术债务测量工具的概述和比较
 https://ieeexplore.ieee.org/abstract/document/9200792
 
 架构重构机会的气味指标何时出现：对 50 个软件项目的研究
 https://www.semanticscholar.org/paper/When-Are-Smells-Indicators-of-Architectural-A-Study-Sousa-Oizumi/68ad1aa402459e046480a3206f3f393770c50f82
-
-干净的新代码可以降低技术债务密度吗？
-https://www.semanticscholar.org/paper/Can-Clean-New-Code-Reduce-Technical-Debt-Density-Digkas-Chatzigeorgiou/0c4ce3c4a05ee326f4cbcb128df93baa7ac7dc45
-https://ieeexplore.ieee.org/document/9234106
 
 JavaScript 项目中的依赖气味
 https://ieeexplore.ieee.org/document/9519532
