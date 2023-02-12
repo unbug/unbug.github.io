@@ -26,14 +26,8 @@ https://www.semanticscholar.org/paper/ANALISIS-PERFORMA-PROGRESSIVE-WEB-APPLICAT
 
 
 # OpenSource
-!是什么造就了开源项目的出色维护者？
-https://www.semanticscholar.org/paper/What-Makes-a-Great-Maintainer-of-Open-Source-Dias-Meirelles/24a19157e9aa54f13ea997ab70cbc388406d8198
-
 !GitHub 上 OSS 社区的理解技巧
 https://www.semanticscholar.org/paper/Understanding-skills-for-OSS-communities-on-GitHub-Liang-Zimmermann/27fa4e7d641024bc4dcbb2fc994957b1c5f911e7
-
-!战争与和平：世界政治对软件生态系统的影响
-https://www.semanticscholar.org/paper/In-war-and-peace%3A-the-impact-of-world-politics-on-Kula-Treude/19d4db23117ccedc3d7fb7b245e2fe0ee9de86c8
 
 为什么要重新发明轮子？库重用和重新实现的实证研究
 https://www.semanticscholar.org/paper/Why-reinventing-the-wheels-An-empirical-study-on-Xu-An/f8f93ba8a3dd0a9b2d8aeed95851920d8fdf871c
@@ -42,7 +36,7 @@ https://www.semanticscholar.org/paper/Why-reinventing-the-wheels-An-empirical-st
 https://dl.acm.org/doi/10.1016/j.jss.2012.12.026
 
 !开源采用因素——系统的文献回顾
-https://ieeexplore.ieee.org/document/9089866
+https://ieeexplore.ieee.org/document/9089866  
 
 # AI
 ChatGPT 在参加医疗执照考试时表现如何？大型语言模型对医学教育和知识评估的影响
