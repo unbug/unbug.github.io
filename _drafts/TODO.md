@@ -21,9 +21,6 @@
 软件平台生态系统中的权力动态
 https://www.semanticscholar.org/paper/Power-dynamics-in-software-platform-ecosystems-Hurni-Huber/690ad887677e3481c2d35d90176a307daf011e8e
 
-调查开源软件生态系统中的权力关系
-https://www.semanticscholar.org/paper/Investigating-Power-Relations-in-Open-Source-Farias-Santos/128d26d639dbf43e9a8835b5b8588ebc54db9f2f
-
 原型汽车智能生态系统
 https://www.semanticscholar.org/paper/Prototyping-Automotive-Smart-Ecosystems-Cioroaica-Kuhn/402a6e43a0f9028c5a908e71240a5fc5ab6c6ff9
 
@@ -77,6 +74,9 @@ https://dl.acm.org/doi/10.1016/j.jss.2012.12.026
 
 !开源采用因素——系统的文献回顾
 https://ieeexplore.ieee.org/document/9089866  
+
+调查开源软件生态系统中的权力关系
+https://www.semanticscholar.org/paper/Investigating-Power-Relations-in-Open-Source-Farias-Santos/128d26d639dbf43e9a8835b5b8588ebc54db9f2f
 
 # Enginnering
 供应链中的企业 IT 服务停机成本和风险转移
