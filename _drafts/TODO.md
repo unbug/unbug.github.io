@@ -17,6 +17,17 @@
 # Keywords
 
 
+# Software Ecosystem
+软件平台生态系统中的权力动态
+https://www.semanticscholar.org/paper/Power-dynamics-in-software-platform-ecosystems-Hurni-Huber/690ad887677e3481c2d35d90176a307daf011e8e
+
+调查开源软件生态系统中的权力关系
+https://www.semanticscholar.org/paper/Investigating-Power-Relations-in-Open-Source-Farias-Santos/128d26d639dbf43e9a8835b5b8588ebc54db9f2f
+
+原型汽车智能生态系统
+https://www.semanticscholar.org/paper/Prototyping-Automotive-Smart-Ecosystems-Cioroaica-Kuhn/402a6e43a0f9028c5a908e71240a5fc5ab6c6ff9
+
+
 # Architecture
 渐进式 Web 应用程序 (PWA) 的曙光：摆脱传统移动开发的陷阱
 https://www.semanticscholar.org/paper/Dawning-of-Progressive-Web-Applications-(PWA)%3A-Out-Adetunji-Ajaegbu/12c54730a4a3fc87a41f94d992a96d51ff3b8a4d
@@ -25,21 +36,78 @@ https://www.semanticscholar.org/paper/Dawning-of-Progressive-Web-Applications-(P
 https://www.semanticscholar.org/paper/ANALISIS-PERFORMA-PROGRESSIVE-WEB-APPLICATION-(PWA)-Kurniawan/63e3429beb75080670b968a98d907ae0f15a05aa
 
 
+# Secutiry
+!软件工件的秘密管理实践有哪些？
+https://ieeexplore.ieee.org/document/9973029
+
+网络安全的银弹——人工智能安全的系统文献回顾
+https://ieeexplore.ieee.org/document/9998305
+
+开发人员在软件工件中签入秘密时面临哪些挑战？
+https://arxiv.org/abs/2301.12377
+
+
+通过 NPM 生态系统中的依赖树揭开漏洞传播及其演变的神秘面纱
+https://dl.acm.org/doi/10.1145/3510003.3510142
+
+Javascript 恶意软件检测的系统文献综述和质量分析
+https://ieeexplore.ieee.org/document/9226527
+
 # OpenSource
+女性参与开源软件：文献调查
+https://arxiv.org/abs/2105.08777
+
+!关于代码生成技术的稳健性：GitHub Copilot 上的实证研究
+https://arxiv.org/abs/2302.00438
+
+！一次性活动？黑客马拉松代码创建和重用的实证研究
+https://www.semanticscholar.org/paper/One-off-events-An-empirical-study-of-hackathon-code-Mahmoud-Dey/dc8a53a9117bb7a97519ad9ccbb657236da96e79
+
 !开源软件生态系统：系统映射
 https://www.semanticscholar.org/paper/Open-source-software-ecosystems%3A-A-Systematic-Franco-Bedoya-Ameller/7c70a0d4b978c9543cb6f48bd1165f7cfc10c46c
 
 !GitHub 上 OSS 社区的理解技巧
 https://www.semanticscholar.org/paper/Understanding-skills-for-OSS-communities-on-GitHub-Liang-Zimmermann/27fa4e7d641024bc4dcbb2fc994957b1c5f911e7
 
-为什么要重新发明轮子？库重用和重新实现的实证研究
+！为什么要重新发明轮子？库重用和重新实现的实证研究
 https://www.semanticscholar.org/paper/Why-reinventing-the-wheels-An-empirical-study-on-Xu-An/f8f93ba8a3dd0a9b2d8aeed95851920d8fdf871c
 
-!软件生态系统——系统的文献综述
+-!软件生态系统——系统的文献综述
 https://dl.acm.org/doi/10.1016/j.jss.2012.12.026
 
 !开源采用因素——系统的文献回顾
 https://ieeexplore.ieee.org/document/9089866  
+
+# Enginnering
+供应链中的企业 IT 服务停机成本和风险转移
+https://www.semanticscholar.org/paper/Enterprise-IT-service-downtime-cost-and-risk-in-a-Wang-Franke/2566cb1f8ffabdad360cabca5efc44b68b44ce69?sort=pub-date
+
+!敏捷开发人员的软件实践：系统的文献回顾
+https://ieeexplore.ieee.org/document/8511295
+
+!系统工程设计方法的系统文献综述
+https://ieeexplore.ieee.org/document/8691931
+
+!敏捷到精益软件开发转型：系统文献综述
+https://ieeexplore.ieee.org/document/8511295
+
+!机器学习 DevOps 的系统回顾
+https://ieeexplore.ieee.org/document/9872968
+
+!中小企业的软件开发模式：一个仍然不确定的过程
+https://ieeexplore.ieee.org/document/9820075
+
+论敏捷团队中组织结构模式与架构的关系
+https://ieeexplore.ieee.org/document/9712241
+
+!比较大规模敏捷软件开发的方法：系统文献回顾
+https://ieeexplore.ieee.org/document/9387593
+
+是什么在敏捷团队中驱动和维持自我分配
+https://ieeexplore.ieee.org/document/9506834
+
+软件工程的成功与失败：后续系统文献回顾
+https://ieeexplore.ieee.org/document/9104653
 
 # AI
 ChatGPT 在参加医疗执照考试时表现如何？大型语言模型对医学教育和知识评估的影响
@@ -115,7 +183,13 @@ https://ieeexplore.ieee.org/document/9929829
 https://www.usenix.org/system/files/atc19-jangda.pdf?ref=https://githubhelp.com
 
 
-# JavaScript
+# Front-end
+表征和检测微信小程序中的错误
+https://dl.acm.org/doi/10.1145/3510003.3510114
+
+在 HTTP 自适应流媒体中实现更好的体验质量
+https://arxiv.org/abs/2301.13523
+
 Web 缓存欺骗攻击
 https://www.semanticscholar.org/paper/Web-Cache-Deception-Attack-Vitali/8849a32f6c4a42980debb7db2aed5bc386dcc4f4
 
@@ -178,36 +252,6 @@ https://ieeexplore.ieee.org/document/8532309
 程序员经验：系统的文献回顾
 https://ieeexplore.ieee.org/document/8727527
 
-# Enginnering
-!敏捷开发人员的软件实践：系统的文献回顾
-https://ieeexplore.ieee.org/document/8511295
-
-!系统工程设计方法的系统文献综述
-https://ieeexplore.ieee.org/document/8691931
-
-!敏捷到精益软件开发转型：系统文献综述
-https://ieeexplore.ieee.org/document/8511295
-
-!机器学习 DevOps 的系统回顾
-https://ieeexplore.ieee.org/document/9872968
-
-!中小企业的软件开发模式：一个仍然不确定的过程
-https://ieeexplore.ieee.org/document/9820075
-
-
-
-论敏捷团队中组织结构模式与架构的关系
-https://ieeexplore.ieee.org/document/9712241
-
-!比较大规模敏捷软件开发的方法：系统文献回顾
-https://ieeexplore.ieee.org/document/9387593
-
-是什么在敏捷团队中驱动和维持自我分配
-https://ieeexplore.ieee.org/document/9506834
-
-软件工程的成功与失败：后续系统文献回顾
-https://ieeexplore.ieee.org/document/9104653
-
 # Productivity
 
 Software Productivity in Practice: A Systematic Mapping Study
@@ -216,21 +260,6 @@ https://pdfs.semanticscholar.org/44f6/69c416f415e594bc212549b9598eba99121a.pdf?_
 软件工程中的人类价值：对比实践案例研究
 https://ieeexplore.ieee.org/document/9261980
 
-# Secutiry
-!软件工件的秘密管理实践有哪些？
-https://ieeexplore.ieee.org/document/9973029
-
-网络安全的银弹——人工智能安全的系统文献回顾
-https://ieeexplore.ieee.org/document/9998305
-
-理解暗网：系统的文献回顾
-https://ieeexplore.ieee.org/document/9995741
-
-通过 NPM 生态系统中的依赖树揭开漏洞传播及其演变的神秘面纱
-https://dl.acm.org/doi/10.1145/3510003.3510142
-
-Javascript 恶意软件检测的系统文献综述和质量分析
-https://ieeexplore.ieee.org/document/9226527
 
 # Testing
 !揭开内核模糊测试中依赖性挑战的神秘面纱
@@ -261,17 +290,12 @@ https://arxiv.org/abs/2302.00438
 评估未来自动驾驶汽车的接受度
 https://arxiv.org/abs/2301.11144
 
-开发人员在软件工件中签入秘密时面临哪些挑战？
-https://arxiv.org/abs/2301.12377
-
-在 HTTP 自适应流媒体中实现更好的体验质量
-https://arxiv.org/abs/2301.13523
-
-表征和检测微信小程序中的错误
-https://dl.acm.org/doi/10.1145/3510003.3510114
 
 软件工程教学方法：系统回顾
 https://ieeexplore.ieee.org/document/9715261
+
+理解暗网：系统的文献回顾
+https://ieeexplore.ieee.org/document/9995741
 
 # Note
 
