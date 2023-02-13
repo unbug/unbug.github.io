@@ -67,7 +67,7 @@ layout: default
 				<span class="taglist">
 				{% for tag in page.tags %}
 				{% if tag != "featured" and tag != "sticky"%}
-				  <a class="sscroll btn btn-light btn-sm btn-round font-weight-bold" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
+				  <a class="sscroll btn btn-light btn-sm btn-round font-weight-bold" target="_blank" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
 				{% endif %}
 				{% endfor %}
 				</span>
