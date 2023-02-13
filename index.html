@@ -141,8 +141,8 @@ description: "Micropaper, 一分钟读论文, 把论文当成精神食粮，用�
         <div class="row justify-content-between">
             <div class="col-md-6 pt-6 pb-6 pr-lg-4 align-self-center">                
                 <h1 class="mb-3"><a class="text-dark" target="_blank" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h1>
-                <p class="mb-3 lead" title="{{ post.excerpt | strip_html | strip_newlines | truncate: 186 }}">
-                    {{ post.excerpt | strip_html | strip_newlines | truncate: 136 }}
+                <p class="mb-3 lead">
+                    {{ post.excerpt | strip_html | strip_newlines | truncate: 186 }}
                 </p>
                 <a target="_blank" href="{{site.baseurl}}{{post.url}}" class="btn btn-dark">Read More</a>
             </div>
