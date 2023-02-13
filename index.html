@@ -27,8 +27,8 @@ description: "Micropaper, 一分钟读论文, 把论文当成精神食粮，用�
     <h2 class="h4 font-weight-bold">
     <a class="text-dark" href="{{site.baseurl}}{{latest_post.url}}">{{ latest_post.title }}</a>
     </h2>
-    <p class="excerpt">
-        {{ latest_post.excerpt | strip_html | strip_newlines | truncate: 113 }}
+    <p class="excerpt" title="{{ latest_post.excerpt | strip_html | strip_newlines | truncate: 186 }}">
+        {{ latest_post.excerpt | strip_html | strip_newlines | truncate: 136 }}
     </p>
     <div>
         <small class="d-block text-muted">
@@ -141,7 +141,7 @@ description: "Micropaper, 一分钟读论文, 把论文当成精神食粮，用�
         <div class="row justify-content-between">
             <div class="col-md-6 pt-6 pb-6 pr-lg-4 align-self-center">
                 <h1 class="mb-3">{{post.title}}</h1>
-                <p class="mb-3 lead">
+                <p class="mb-3 lead" title="{{ post.excerpt | strip_html | strip_newlines | truncate: 186 }}">
                     {{ post.excerpt | strip_html | strip_newlines | truncate: 136 }}
                 </p>
                 <a href="{{site.baseurl}}{{post.url}}" class="btn btn-dark">Read More</a>
