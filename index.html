@@ -21,7 +21,7 @@ description: "Micropaper, 一分钟读论文, 把论文当成精神食粮，用�
     <div class="col-md-6">
     <div class="card border-0 mb-4 box-shadow">   
     <a target="_blank" href="{{site.baseurl}}{{latest_post.url}}">
-    <div class="topfirstimage" style="background-image: url({% if latest_post.image contains "://" %}{{ latest_post.image }}{% else %} {{site.baseurl}}/{{ latest_post.image}}{% endif %}); height: 200px;    background-size: cover;    background-repeat: no-repeat;"></div>     
+    <div class="topfirstimage" style="background-image: url({% if latest_post.image contains "://" %}{{ latest_post.image }}{% else %} {{site.baseurl}}/{{ latest_post.image}}{% endif %}); height: 200px; background-position: center center; background-size: cover; background-repeat: no-repeat;"></div>     
     </a>
     <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
     <h2 class="h4 font-weight-bold">
@@ -139,14 +139,14 @@ description: "Micropaper, 一分钟读论文, 把论文当成精神食粮，用�
 <div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightblue position-relative">
     <div class="pl-4 pr-0 h-100 tofront">
         <div class="row justify-content-between">
-            <div class="col-md-6 pt-5 pb-5 pr-lg-4 align-self-center">                
+            <div class="col-md-6 pt-6 pb-6 pr-lg-4 align-self-center">                
                 <h1 class="mb-3"><a class="text-dark" target="_blank" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h1>
                 <p class="mb-3 lead">
                     {{ post.excerpt | strip_html | strip_newlines | truncate: 136 }}
                 </p>
             </div>
             <a class="col-md-6 d-none d-md-block pr-0" target="_blank" href="{{site.baseurl}}{{post.url}}">
-                <div style="width: 100%; height: 100%; background-size:cover; background-image:url({{site.baseurl}}/{{ post.image }});"></div>
+                <div style="width: 100%; height: 100%; background-position: center center; background-size:cover; background-image:url({{site.baseurl}}/{{ post.image }});"></div>
             </a>
         </div>
     </div>
