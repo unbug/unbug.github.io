@@ -4,7 +4,7 @@ title:  "一分钟读论文：《影响大规模敏捷软件开发按时交付�
 author: unbug
 categories: [Productivity]
 image: assets/images/screenshot-20230117-142032.jpg
-tags: [featured, Agile]
+tags: [sticky, featured, Agile]
 ---
 荷兰代尔夫特理工大学与荷兰国际集团 (ING) 合著的论文[《Factors Affecting On-Time Delivery in Large-Scale Agile Software Development》][paper1-url] 对来自 ING 的` 635 `名工程师进行调查，分析了` 185 `个团队和` 2,208 `个 Epic 数据集。发现：
 - `需求细化、任务依赖性、组织一致性、组织政治和团队的地理分布`被认为对及时的软件交付有最大的影响。
