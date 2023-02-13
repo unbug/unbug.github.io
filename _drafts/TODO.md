@@ -4,7 +4,7 @@
 - 技术债
 - webassembly
 - Rust
-- 事故/宕机
+- 事故/宕机/failures during failure recovery/out-age
 - 性能
 - 监控
 - 开源
@@ -12,6 +12,7 @@
 - 架构
 - NodeJS; JavaScript; Rust; WebAssembly; web software; scalability; software performance evaluation; software convergence; software interoperability
 - Software Ecosystem, Protestware, Supply Chain Attacks
+- 
 # Categories
 'Security FrontEnd Architecture Performance Productivity Engineering Engineer AI'   
 # Keywords
@@ -26,6 +27,9 @@ https://www.semanticscholar.org/paper/Prototyping-Automotive-Smart-Ecosystems-Ci
 
 
 # Architecture
+公共云基础设施中基于零停机部署技术的比较
+https://ieeexplore.ieee.org/document/9243605
+
 渐进式 Web 应用程序 (PWA) 的曙光：摆脱传统移动开发的陷阱
 https://www.semanticscholar.org/paper/Dawning-of-Progressive-Web-Applications-(PWA)%3A-Out-Adetunji-Ajaegbu/12c54730a4a3fc87a41f94d992a96d51ff3b8a4d
 
@@ -34,9 +38,6 @@ https://www.semanticscholar.org/paper/ANALISIS-PERFORMA-PROGRESSIVE-WEB-APPLICAT
 
 
 # Secutiry
-!软件工件的秘密管理实践有哪些？
-https://ieeexplore.ieee.org/document/9973029
-
 网络安全的银弹——人工智能安全的系统文献回顾
 https://ieeexplore.ieee.org/document/9998305
 
@@ -294,7 +295,7 @@ https://arxiv.org/abs/2301.11144
 软件工程教学方法：系统回顾
 https://ieeexplore.ieee.org/document/9715261
 
-理解暗网：系统的文献回顾
+- 理解暗网：系统的文献回顾
 https://ieeexplore.ieee.org/document/9995741
 
 # Note
