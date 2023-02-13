@@ -34,7 +34,7 @@ description: "Micropaper, 一分钟读论文, 把论文当成精神食粮，用�
         <small class="d-block text-muted">
             In <span class="catlist">
                 {% for category in latest_post.categories %}
-                <a class="text-capitalize text-muted smoothscroll" target="_blank" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
+                <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
                 {% endfor %}
                 </span>                   
         </small>
@@ -65,7 +65,7 @@ description: "Micropaper, 一分钟读论文, 把论文当成精神食粮，用�
                     <small class="d-block text-muted">
                         In <span class="catlist">
                         {% for category in second_post.categories %}
-                        <a class="text-capitalize text-muted smoothscroll" target="_blank" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
+                        <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
                         {% endfor %}
                         </span>                   
                     </small>
@@ -92,7 +92,7 @@ description: "Micropaper, 一分钟读论文, 把论文当成精神食粮，用�
                     <small class="d-block text-muted">
                         In <span class="catlist">
                         {% for category in third_post.categories %}
-                        <a class="text-capitalize text-muted smoothscroll" target="_blank" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
+                        <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
                         {% endfor %}
                         </span>                   
                     </small>
@@ -119,7 +119,7 @@ description: "Micropaper, 一分钟读论文, 把论文当成精神食粮，用�
                     <small class="d-block text-muted">
                         In <span class="catlist">
                         {% for category in fourth_post.categories %}
-                        <a class="text-capitalize text-muted smoothscroll" target="_blank" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
+                        <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
                         {% endfor %}
                         </span>                   
                     </small>
@@ -140,7 +140,7 @@ description: "Micropaper, 一分钟读论文, 把论文当成精神食粮，用�
     <div class="pl-4 pr-0 h-100 tofront">
         <div class="row justify-content-between">
             <div class="col-md-6 pt-6 pb-6 pr-lg-4 align-self-center">                
-                <h1 class="mb-3"><a target="_blank" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h1>
+                <h1 class="mb-3"><a class="text-dark" target="_blank" href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h1>
                 <p class="mb-3 lead" title="{{ post.excerpt | strip_html | strip_newlines | truncate: 186 }}">
                     {{ post.excerpt | strip_html | strip_newlines | truncate: 136 }}
                 </p>
