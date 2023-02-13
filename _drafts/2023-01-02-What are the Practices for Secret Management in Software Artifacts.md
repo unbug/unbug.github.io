@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《软件工程管理密码有哪些最佳实践？》"
 author: unbug
 categories: [Secturity]
-image: 
+image: assets/images/screenshot-20230214-001720.jpg
 tags: [featured, Secret]
 ---
 硬编码凭证被 CWE 确定为最危险的 `TOP25` 软件弱点之一，而 GitHub 公开的 Repo 中有超过`600万`个公开的密码（数据库凭证、API 密钥和其他凭证）。美国北卡罗来纳州立大学的论文[《What are the Practices for Secret Management in Software Artifacts?》][paper1-url]确定了 `24` 种管理密码的最佳实践。发现：`本地环境变量`、`外部密码管理服务`、`使用版本控制系统扫描工具`和`使用临时密码`能有效避免意外提交密码和限制密码暴露。
