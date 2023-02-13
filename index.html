@@ -145,8 +145,8 @@ description: "Micropaper, 一分钟读论文, 把论文当成精神食粮，用�
                     {{ post.excerpt | strip_html | strip_newlines | truncate: 136 }}
                 </p>
             </div>
-            <a target="_blank" href="{{site.baseurl}}{{post.url}}">
-                <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url({{site.baseurl}}/{{ post.image }});"></div>
+            <a class="col-md-6 d-none d-md-block pr-0" target="_blank" href="{{site.baseurl}}{{post.url}}">
+                <div style="width: 100%; height: 100%; background-size:cover; background-image:url({{site.baseurl}}/{{ post.image }});"></div>
             </a>
         </div>
     </div>
