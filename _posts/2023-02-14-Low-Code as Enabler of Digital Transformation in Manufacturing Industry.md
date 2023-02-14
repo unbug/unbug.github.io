@@ -6,7 +6,7 @@ categories: [Productivity]
 image: assets/images/screenshot-20230131-004439.jpg
 tags: [featured, LowCode, NoCode]
 ---
-Forrester Research 分析2022年全球低代码总支出达到`212亿美元`。西班牙⽡伦西亚理⼯⼤学⽣产管理和⼯程研究中⼼的论文[《Low-Code as Enabler of Digital Transformation in Manufacturing Industry》][paper1-url]研究了工业4.0下低代码平台与物联网设备之间的联系。发现低代码对于企业需要更快地开发新的数字解决方案以保持竞争力至关重要，而采用低代码范式的阻碍是：集成、互操作性、通信、实时数据处理、均质化、人体工程学和安全性等方面的问题未得到适当解决。
+Forrester Research 分析2022年全球低代码总支出达到`212亿美元`。西班牙⽡伦西亚理⼯⼤学⽣产管理和⼯程研究中⼼的论文[《Low-Code as Enabler of Digital Transformation in Manufacturing Industry》][paper1-url]研究了工业4.0下低代码平台与物联网设备之间的联系。发现低代码对于企业需要更快地开发新的数字解决方案以保持竞争力至关重要，而采用低代码范式的阻碍是：`集成、互操作性、通信、实时数据处理、均质化、人体工程学和安全性`等方面的问题未得到适当解决。
 
 ## 用户选择低代码平台看中的主要优势
 66% 用户选择加速数字化转型和提高对业务的响应能力作为他们使用或将使用低代码平台的主要动机；45% 用户指出减少了对难以雇用的技术技能的依赖。
