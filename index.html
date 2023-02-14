@@ -37,12 +37,6 @@ description: "Micropaper, 一分钟读论文, 把论文当成精神食粮，用�
 			{% else %}
 			  {{ words | divided_by:180 }} mins read
 			{% endif %}
-             · 
-            In <span class="catlist">
-                {% for category in latest_post.categories %}
-                <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
-                {% endfor %}
-                </span>    
         </small>
     </div>
     <p class="excerpt" title="{{ latest_post.excerpt | strip_html | strip_newlines | truncate: 186 }}">
