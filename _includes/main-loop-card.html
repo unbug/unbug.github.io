@@ -15,7 +15,7 @@
 		</small>
 		<small class="text-muted">
 			{{ post.date | date: '%b %d, %Y' }}
-			,
+			 · 
 			{% assign words = post.content | number_of_words %}
 			{% if words < 360 %}
 			  1 min read

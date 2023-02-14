@@ -40,6 +40,13 @@ description: "Micropaper, 一分钟读论文, 把论文当成精神食粮，用�
         </small>
         <small class="text-muted">
             {{ latest_post.date | date: '%b %d, %Y' }}
+            · 
+			{% assign words = latest_post.content | number_of_words %}
+			{% if words < 360 %}
+			  1 min read
+			{% else %}
+			  {{ words | divided_by:180 }} mins read
+			{% endif %}
         </small>
     </div>
     </div>
@@ -71,6 +78,13 @@ description: "Micropaper, 一分钟读论文, 把论文当成精神食粮，用�
                     </small>
                     <small class="text-muted">
                         {{ second_post.date | date: '%b %d, %Y' }}
+                        · 
+                        {% assign words = second_post.content | number_of_words %}
+                        {% if words < 360 %}
+                          1 min read
+                        {% else %}
+                          {{ words | divided_by:180 }} mins read
+                        {% endif %}
                     </small>
                 </div>
             </div>
@@ -98,6 +112,13 @@ description: "Micropaper, 一分钟读论文, 把论文当成精神食粮，用�
                     </small>
                     <small class="text-muted">
                         {{ third_post.date | date: '%b %d, %Y' }}
+                        · 
+                        {% assign words = third_post.content | number_of_words %}
+                        {% if words < 360 %}
+                          1 min read
+                        {% else %}
+                          {{ words | divided_by:180 }} mins read
+                        {% endif %}
                     </small>
                 </div>
             </div>
@@ -125,6 +146,13 @@ description: "Micropaper, 一分钟读论文, 把论文当成精神食粮，用�
                     </small>
                     <small class="text-muted">
                         {{ fourth_post.date | date: '%b %d, %Y' }}
+                        · 
+                        {% assign words = fourth_post.content | number_of_words %}
+                        {% if words < 360 %}
+                          1 min read
+                        {% else %}
+                          {{ words | divided_by:180 }} mins read
+                        {% endif %}
                     </small>
                 </div>
             </div>
