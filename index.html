@@ -31,7 +31,7 @@ description: "Micropaper, 一分钟读论文, 把论文当成精神食粮，用�
         <small class="text-muted">
             {{ latest_post.date | date: '%b %d, %Y' }}
              · 
-			{% assign words = post.content | number_of_words %}
+			{% assign words = latest_post.content | number_of_words %}
 			{% if words < 360 %}
 			  1 min read
 			{% else %}
