@@ -18,5 +18,6 @@ Learn a paper in a minute. 一分钟读懂一篇论文。有优秀的论文欢�
 
 <!-- donate -->
 {% assign author = site.authors[page.author] %}
+{% include author.html %}
 {% include donate.html %}
             
