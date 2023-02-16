@@ -11,7 +11,7 @@ body {
 /* component https://codyhouse.co/ds/components/info/reading-progressbar */
 .reading-progressbar {
 	position: fixed;
-	z-index: 10;
+	z-index: 9999;
 	top: 0;
 	left: 0;
 	padding: 0;
