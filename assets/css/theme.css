@@ -6,6 +6,54 @@ body {
 	overflow-x:hidden;
 	padding-top:69.75px;
 }
+
+
+/* component https://codyhouse.co/ds/components/info/reading-progressbar */
+.reading-progressbar {
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 5px;
+	color: #ea2f65;
+	pointer-events: none;
+	display: none;
+	transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+	transition: transform 0.2s, -webkit-transform 0.2s;
+  }
+  
+  .reading-progressbar--is-out {
+	-webkit-transform: translateY(-100%);
+			transform: translateY(-100%);
+  }
+  
+  .reading-progressbar--is-active {
+	display: block;
+  }
+  
+  .reading-progressbar::-webkit-progress-bar {
+	background-color: transparent;
+  }
+  
+  .reading-progressbar::-webkit-progress-value {
+	background-color: currentColor;
+  }
+  
+  .reading-progressbar::-moz-progress-bar {
+	background-color: currentColor;
+  }
+  
+  .reading-progressbar__fallback {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	background-color: currentColor;
+  }
+  
+
 .site-content {
 	margin-top:35px;
 	min-height:400px;

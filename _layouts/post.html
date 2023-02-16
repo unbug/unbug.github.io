@@ -2,6 +2,9 @@
 layout: default
 ---
 {% assign author = site.authors[page.author] %}
+<progress aria-hidden="true" class="reading-progressbar js-reading-progressbar" max="100" value="0">
+	<div class="reading-progressbar__fallback js-reading-progressbar__fallback"></div>
+  </progress>
 <div class="container">
 <div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
 		<div class="h-100 tofront">
@@ -110,3 +113,5 @@ layout: default
         </div>
     </div>
 </div>
+
+<script src="{{ site.baseurl }}/assets/js/progress-bar.js"></script>
