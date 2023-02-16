@@ -52,9 +52,6 @@ Javascript 恶意软件检测的系统文献综述和质量分析
 https://ieeexplore.ieee.org/document/9226527
 
 # OpenSource
-！编写干净可靠的开源科学软件的十条简单规则
-https://www.semanticscholar.org/paper/Ten-simple-rules-on-writing-clean-and-reliable-Hunter-Zinck-Siqueira/87e4209959ed1f87ca59ba8929ea413830526de6
-
 女性参与开源软件：文献调查
 https://arxiv.org/abs/2105.08777
 
