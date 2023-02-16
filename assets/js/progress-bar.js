@@ -1,4 +1,4 @@
-// utility functions
+// utility functions https://codyhouse.co/ds/components/info/reading-progressbar 
 if(!Util) function Util () {};
 
 Util.addClass = function(el, className) {
