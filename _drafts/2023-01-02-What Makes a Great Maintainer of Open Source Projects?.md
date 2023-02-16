@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "一分钟读论文：《优秀的开源维护者是如何造就的？》"
+title:  "一分钟读论文：《优秀的开源维护者是如何练成的？》"
 author: unbug
-categories: [SoftwareEcosystem]
+categories: [OpenSource]
 image: assets/images/screenshot-20230204-001420.jpg
 tags: [OpenSourceMaintainer, OSS]
 ---
-Google Go 工程师辞去工作转行成为全职开源维护者，同时为多个需要专业开源维护者的企业提供服务，报酬总额和 Google 工作相当。表明悄然兴起全职开源维护者薪酬竞争力完全不输职业软件工程师。美国瑙鲁大学和巴西联邦大学（UFPE、UNIFESP、UTFPR）的论文[《What Makes a Great Maintainer of Open Source Projects?》][paper1-url] 对 Linux、Debian 和 GitLab 经验丰富的维护人员进行了 33 次访谈，对 90 个 OSS(Open Source Software) 贡献者进行了评级调查。发现：`沟通`被认为是优秀维护者最重要的属性，其次是品质保障。
+Google Go 工程师辞去工作转行成为全职开源维护者，同时为多个需要专业开源维护者的企业提供服务，报酬总额和 Google 工作相当。表明悄然兴起全职开源维护者薪酬竞争力完全不输职业软件工程师。美国瑙鲁大学和巴西联邦大学（UFPE、UNIFESP、UTFPR）的论文[《What Makes a Great Maintainer of Open Source Projects?》][paper1-url] 对 Linux、Debian 和 GitLab 经验丰富的维护人员进行了 33 次访谈，对 90 个 OSS(Open Source Software) 贡献者进行了评级调查。发现：`沟通被认为是优秀维护者最重要的属性，其次是品质保障`。
 
 - 为了维持项目的长期愿景，维护者最终应该定义路线图、委派任务并处理文档。 在基于志愿者的工作中，必须仔细考虑这些活动，以免影响工作和生活的平衡。
 - 极其谨慎/礼貌似乎是鼓励和指导新贡献者的基石。 为了建立他们的信心，维护者应该愿意倾听和交谈，这反过来会让他们从另一个人的角度思考。
@@ -41,7 +41,7 @@ Google Go 工程师辞去工作转行成为全职开源维护者，同时为多�
 - `动力`：精力充沛，渴望在项目上工作。
 - `思想开放`：愿意倾听和考虑新想法。
 - `耐心`：容忍延迟/麻烦而不生气。
-- `自信`：确定自己的能力或品质。
+- `自信`：相信自己的能力或品质。
 - `勤奋`：为一个目标认真、执着地工作。
 - `责任`：对项目有承诺和自觉的奉献精神。
 

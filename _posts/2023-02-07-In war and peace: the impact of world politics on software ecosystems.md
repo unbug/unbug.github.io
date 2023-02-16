@@ -4,7 +4,7 @@ title:  "一分钟读论文：《战争与和平：世界政治对软件生态�
 author: unbug
 categories: [SoftwareEcosystem, Security]
 image: assets/images/screenshot-20230203-152100.jpg
-tags: [Protestware, SupplyChainAttacks, OpenSource, OSS]
+tags: [Protestware, SupplyChainAttacks, OSS]
 ---
 两国交战，平民是否有罪？国际人道法约定“战争时要尽可能限制对妇女和儿童以及其他平民的影响”。开源许可证明确规定“不歧视个⼈或群体。License 不得歧视任何⼈”。 俄乌冲突中开源如何影响开发者呢？我们来看看日本奈良科学技术大学和澳大利亚墨尔本大学合著的论文[《In war and peace: the impact of world politics on software ecosystems》][paper1-url]中研究的几个例子：当开源项目的维护者将他们的开源项目化为抗议软件（Protestware）。
 

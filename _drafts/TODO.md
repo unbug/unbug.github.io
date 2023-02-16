@@ -52,6 +52,9 @@ Javascript 恶意软件检测的系统文献综述和质量分析
 https://ieeexplore.ieee.org/document/9226527
 
 # OpenSource
+！编写干净可靠的开源科学软件的十条简单规则
+https://www.semanticscholar.org/paper/Ten-simple-rules-on-writing-clean-and-reliable-Hunter-Zinck-Siqueira/87e4209959ed1f87ca59ba8929ea413830526de6
+
 女性参与开源软件：文献调查
 https://arxiv.org/abs/2105.08777
 
@@ -78,6 +81,12 @@ https://ieeexplore.ieee.org/document/9089866
 
 调查开源软件生态系统中的权力关系
 https://www.semanticscholar.org/paper/Investigating-Power-Relations-in-Open-Source-Farias-Santos/128d26d639dbf43e9a8835b5b8588ebc54db9f2f
+
+维护和扩展免费和开源软件项目的劳动
+https://www.semanticscholar.org/paper/The-Labor-of-Maintaining-and-Scaling-Free-and-Geiger-Howard/c68ab5dd8740084a8ebbef5ccaf19a4c96550d16
+
+！揭秘精英开发者在开源项目中的活动
+https://www.semanticscholar.org/paper/Unveiling-Elite-Developers%E2%80%99-Activities-in-Open-Wang-Feng/fac95453b7b178dd0c28c77d323903dbd73e5a73
 
 # Enginnering
 供应链中的企业 IT 服务停机成本和风险转移
