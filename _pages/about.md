@@ -19,7 +19,5 @@ Learn a paper in a minute. 一分钟读懂一篇论文。把论文当成精神�
 - 「一分钟读论文」完成50篇。
 
 <!-- donate -->
-{% assign author = site.authors[page.author] %}
-{% include author.html %}
 {% include donate.html %}
             
