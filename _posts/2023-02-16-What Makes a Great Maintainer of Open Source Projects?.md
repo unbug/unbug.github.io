@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "一分钟读论文：《优秀的开源维护者是如何练成的？》"
+title:  "一分钟读论文：《卓越的开源贡献者是如何练成的？》"
 author: unbug
 categories: [OpenSource]
 image: assets/images/screenshot-20230204-001420.jpg
