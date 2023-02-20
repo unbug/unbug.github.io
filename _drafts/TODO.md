@@ -4,8 +4,6 @@
 - 技术债
 - webassembly
 - Rust
-
-
 - 事故/宕机/failures during failure recovery/out-age
 - 性能
 - 监控
@@ -14,6 +12,7 @@
 - 架构
 - NodeJS; JavaScript; Rust; WebAssembly; web software; scalability; software performance evaluation; software convergence; software interoperability
 - Software Ecosystem, Protestware, Supply Chain Attacks
+- Freelance developer
 - 
 # Categories
 'Security FrontEnd Architecture Performance Productivity Engineering Engineer AI'   
@@ -88,6 +87,12 @@ https://www.semanticscholar.org/paper/The-Labor-of-Maintaining-and-Scaling-Free-
 https://www.semanticscholar.org/paper/Unveiling-Elite-Developers%E2%80%99-Activities-in-Open-Wang-Feng/fac95453b7b178dd0c28c77d323903dbd73e5a73
 
 # Enginnering
+!当代软件监控：系统的文献回顾
+https://www.semanticscholar.org/paper/Contemporary-Software-Monitoring%3A-A-Systematic-Candido-Aniche/cf5aa4d99a82b08fd6a8693d2c09e52adf313e46?sort=pub-date
+
+软件工程中的日志记录实践：系统映射研究
+https://www.semanticscholar.org/paper/Logging-Practices-in-Software-Engineering%3A-A-Study-Gu-Rong/c6e58a911c5395d42d6da674cd4e478748fc48a1
+
 供应链中的企业 IT 服务停机成本和风险转移
 https://www.semanticscholar.org/paper/Enterprise-IT-service-downtime-cost-and-risk-in-a-Wang-Franke/2566cb1f8ffabdad360cabca5efc44b68b44ce69?sort=pub-date
 

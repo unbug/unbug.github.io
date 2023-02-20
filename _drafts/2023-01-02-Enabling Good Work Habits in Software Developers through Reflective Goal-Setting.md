@@ -2,7 +2,7 @@
 layout: post
 title:  "一分钟读论文：《通过反思性目标设定培养工程师的好习惯》"
 author: unbug
-categories: [Engineer]
+categories: [Engineer, Productivity]
 image: assets/images/screenshot-20230218-200745.jpg
 tags: []
 ---

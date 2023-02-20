@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "一分钟读论文：《》"
+title:  "一分钟读论文：《比较大规模敏捷软件开发的方法：系统文献回顾》"
 author: unbug
 categories: [, JS]
 image: 
 tags: [featured]
 ---
-的论文[《》][paper1-url]：
+的论文[《Comparing Methods for Large-Scale Agile Software Development: A Systematic Literature Review》][paper1-url]：
 
 ![]({{ site.baseurl }}/)
 
@@ -20,9 +20,5 @@ tags: [featured]
 -->
 
 
-## References
-- [][links-1]
 
-
-[paper1-url]: 
-[links-1]: 
+[paper1-url]: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9387593
