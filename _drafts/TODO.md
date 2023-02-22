@@ -14,6 +14,7 @@
 - Software Ecosystem, Protestware, Supply Chain Attacks
 - Freelance developer
 - 
+
 # Categories
 'Security FrontEnd Architecture Performance Productivity Engineering Engineer AI'   
 # Keywords
@@ -99,7 +100,7 @@ https://www.semanticscholar.org/paper/Enterprise-IT-service-downtime-cost-and-ri
 !敏捷开发人员的软件实践：系统的文献回顾
 https://ieeexplore.ieee.org/document/8511295
 
-!系统工程设计方法的系统文献综述
+系统工程设计方法的系统文献综述
 https://ieeexplore.ieee.org/document/8691931
 
 !敏捷到精益软件开发转型：系统文献综述
@@ -114,7 +115,7 @@ https://ieeexplore.ieee.org/document/9820075
 论敏捷团队中组织结构模式与架构的关系
 https://ieeexplore.ieee.org/document/9712241
 
-!比较大规模敏捷软件开发的方法：系统文献回顾
+比较大规模敏捷软件开发的方法：系统文献回顾
 https://ieeexplore.ieee.org/document/9387593
 
 是什么在敏捷团队中驱动和维持自我分配
