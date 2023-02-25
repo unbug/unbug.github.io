@@ -10,7 +10,7 @@ Learn a paper in a minute. 一分钟读懂一篇论文。把论文当成精神�
 
 有优秀的论文欢迎在底下留言推荐，一定放到阅读清单并抽时间拜读和写读书笔记～
 
-- [RSS Feed]({{site.baseurl}}/feed.xml)
+- [订阅更新 RSS Feed]({{site.baseurl}}/feed.xml)
 - [GitHub@unbug](https://github.com/unbug)
 - [Twitter@unbug](https://twitter.com/unbug)
 - [微博@听奏](https://weibo.com/u/1241231982)
