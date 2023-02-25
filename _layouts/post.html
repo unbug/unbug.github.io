@@ -23,7 +23,7 @@ layout: default
                         <img class="rounded-circle" src="{{site.baseurl}}/assets/images/avatar1.jpg" alt="{{author.name}}" width="53"/>
                         {% endif %}
 						<small class="ml-3">By {{ author.name }} <span><a target="_blank" href="{{ author.twitter }}" class="btn btn-outline-success btn-sm btn-round ml-1">Follow</a></span>
-                            <span class="text-muted d-block mt-1">{{ page.date | date: '%b %d, %Y' }} · {% include meta-read-time.html %}</span>
+                            <span class="text-muted d-block mt-1" title="{{ page.date | date: '%b %d, %Y' }}">{% include meta-read-time.html %}</span>
 						</small>
 					</div>
 					<!-- only datetime
