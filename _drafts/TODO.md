@@ -112,6 +112,19 @@ https://ieeexplore.ieee.org/document/9872968
 !中小企业的软件开发模式：一个仍然不确定的过程
 https://ieeexplore.ieee.org/document/9820075
 
+# Enginner & Productivity
+Software Productivity in Practice: A Systematic Mapping Study
+https://pdfs.semanticscholar.org/44f6/69c416f415e594bc212549b9598eba99121a.pdf?_ga=2.260567109.979285908.1673232871-2044131725.1673232871
+
+软件工程中的人类价值：对比实践案例研究
+https://ieeexplore.ieee.org/document/9261980
+
+程序员经验：系统的文献回顾
+https://ieeexplore.ieee.org/document/8727527
+
+敏捷软件开发中的协调价值：管理依赖关系的协调机制的多案例研究
+https://www.semanticscholar.org/paper/Coordination-Value-in-Agile-Software-Development%3A-A-Stray-Moe/93cde32fe606673f71164a82ce6be5d27b152480
+
 论敏捷团队中组织结构模式与架构的关系
 https://ieeexplore.ieee.org/document/9712241
 
@@ -262,18 +275,6 @@ https://ieeexplore.ieee.org/document/9622154
 
 关于难闻气味的系统文献综述——5 W：哪个、什么时候、什么、谁、哪里
 https://ieeexplore.ieee.org/document/8532309
-
-# Enginner
-程序员经验：系统的文献回顾
-https://ieeexplore.ieee.org/document/8727527
-
-# Productivity
-
-Software Productivity in Practice: A Systematic Mapping Study
-https://pdfs.semanticscholar.org/44f6/69c416f415e594bc212549b9598eba99121a.pdf?_ga=2.260567109.979285908.1673232871-2044131725.1673232871
-
-软件工程中的人类价值：对比实践案例研究
-https://ieeexplore.ieee.org/document/9261980
 
 
 # Testing
