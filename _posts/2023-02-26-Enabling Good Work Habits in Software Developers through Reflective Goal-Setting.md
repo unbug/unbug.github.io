@@ -6,8 +6,7 @@ categories: [Engineer, Productivity]
 image: assets/images/screenshot-20230218-200745.jpg
 tags: [TimeMangement, WLB]
 ---
-> 吾日三省吾身：为人谋而不忠乎？与朋友交而不信乎？传不习乎？--《论语·学而》
-
+> 吾日三省吾身：为人谋而不忠乎？与朋友交而不信乎？传不习乎？--《论语·学而》。
 加拿大不列颠哥伦比亚大学、瑞士苏黎世苏黎世大学和微软研究院合著的论文[《Enabling Good Work Habits in Software Developers through Reflective Goal-Setting》][paper1-url]研究中了52名专业软件开发人员在两到三周内每天对他们的工作进行自我反思。发现，有目的的、持续的自我反思能提高开发人员的工作效率和幸福感 `(79.6%)`。
 
 - 开发人员的工作习惯目标可以分为改进时间管理、避免偏离计划工作、提高对团队的影响、保持工作与生活的平衡以及持续学习。
