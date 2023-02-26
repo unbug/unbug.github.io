@@ -28,7 +28,9 @@ description: "Micropaper, 一分钟读论文, 把论文当成精神食粮，用�
     <a class="text-dark" target="_blank" href="{{site.baseurl}}{{latest_post.url}}">{{ latest_post.title }}</a>
     </h2>
     <div>
-        <small class="text-muted" title="{{ latest_post.date | date: '%b %d, %Y' }}">
+        <small class="text-muted">
+            {{ latest_post.date | date: '%b %d, %Y' }}
+             · 
 			{% assign words = latest_post.content | number_of_words %}
 			{% if words < 360 %}
 			  1 min read
@@ -67,7 +69,9 @@ description: "Micropaper, 一分钟读论文, 把论文当成精神食粮，用�
                         {% endfor %}
                         </span>                   
                     </small>
-                    <small class="text-muted" title="{{ second_post.date | date: '%b %d, %Y' }}">
+                    <small class="text-muted">
+                        {{ second_post.date | date: '%b %d, %Y' }}
+                         · 
                         {% assign words = second_post.content | number_of_words %}
                         {% if words < 360 %}
                           1 min read
@@ -99,7 +103,9 @@ description: "Micropaper, 一分钟读论文, 把论文当成精神食粮，用�
                         {% endfor %}
                         </span>                   
                     </small>
-                    <small class="text-muted" title="{{ third_post.date | date: '%b %d, %Y' }}">
+                    <small class="text-muted">
+                        {{ third_post.date | date: '%b %d, %Y' }}
+                         · 
                         {% assign words = third_post.content | number_of_words %}
                         {% if words < 360 %}
                           1 min read
@@ -131,7 +137,9 @@ description: "Micropaper, 一分钟读论文, 把论文当成精神食粮，用�
                         {% endfor %}
                         </span>                   
                     </small>
-                    <small class="text-muted" title="{{ fourth_post.date | date: '%b %d, %Y' }}">
+                    <small class="text-muted">
+                        {{ fourth_post.date | date: '%b %d, %Y' }}
+                         · 
                         {% assign words = fourth_post.content | number_of_words %}
                         {% if words < 360 %}
                           1 min read
