@@ -31,12 +31,12 @@ description: "Micropaper, 一分钟读论文, 把论文当成精神食粮，用�
         <small class="text-muted">
             {{ latest_post.date | date: '%b %d, %Y' }}
              · 
-			{% assign words = latest_post.content | number_of_words %}
-			{% if words < 360 %}
-			  1 min read
-			{% else %}
-			  {{ words | divided_by:180 }} mins read
-			{% endif %}
+            {% assign words = latest_post.content | number_of_words %}
+            {% if words < 360 %}
+              1 min read
+            {% else %}
+              {{ words | divided_by:180 }} mins read
+            {% endif %}
         </small>
     </div>
     <p class="excerpt">
@@ -52,13 +52,13 @@ description: "Micropaper, 一分钟读论文, 把论文当成精神食粮，用�
         {%- assign second_post = site.posts[1] -%}        
         <div class="mb-3 d-flex align-items-center">                
                 {% if second_post.image %}
-                <div class="col-md-4" style="padding-left: 0;">
+                <div class="col-md-5" style="padding-left: 0;">
                 <a target="_blank" href="{{site.baseurl}}{{second_post.url}}">
                  <img class="w-100" src="{% if second_post.image contains "://" %}{{ second_post.image }}{% else %}{{ second_post.image | absolute_url }}{% endif %}" alt="{{ second_post.title }}">
                 </a>
                 </div>
                 {% endif %}                
-                <div class="col-md-8" style="padding: 0;">
+                <div class="col-md-7" style="padding: 0;">
                     <h2 class="mb-2 h6 font-weight-bold">
                     <a class="text-dark" target="_blank" href="{{site.baseurl}}{{second_post.url}}">{{ second_post.title }}</a>
                     </h2>
@@ -84,13 +84,13 @@ description: "Micropaper, 一分钟读论文, 把论文当成精神食粮，用�
         {%- assign third_post = site.posts[2] -%}        
         <div class="mb-3 d-flex align-items-center">                
                 {% if third_post.image %}
-                <div class="col-md-4" style="padding-left: 0;">
+                <div class="col-md-5" style="padding-left: 0;">
                 <a target="_blank" href="{{site.baseurl}}{{third_post.url}}">
                  <img class="w-100" src="{% if third_post.image contains "://" %}{{ third_post.image }}{% else %}{{site.baseurl}}/{{ third_post.image }}{% endif %}" alt="{{ third_post.title }}">
                 </a>
                 </div>
                 {% endif %}                
-                <div class="col-md-8" style="padding: 0;">
+                <div class="col-md-7" style="padding: 0;">
                     <h2 class="mb-2 h6 font-weight-bold">
                     <a class="text-dark" target="_blank" href="{{site.baseurl}}{{third_post.url}}">{{ third_post.title }}</a>
                     </h2>
@@ -116,13 +116,13 @@ description: "Micropaper, 一分钟读论文, 把论文当成精神食粮，用�
         {%- assign fourth_post = site.posts[3] -%}        
         <div class="mb-3 d-flex align-items-center">                
                 {% if fourth_post.image %}
-                <div class="col-md-4" style="padding-left: 0;">
+                <div class="col-md-5" style="padding-left: 0;">
                 <a target="_blank" href="{{site.baseurl}}{{fourth_post.url}}">
                 <img class="w-100" src="{% if fourth_post.image contains "://" %}{{ fourth_post.image }}{% else %}{{site.baseurl}}/{{ fourth_post.image }}{% endif %}" alt="{{ fourth_post.title }}">
                 </a>
                 </div>
                 {% endif %}                
-                <div class="col-md-8" style="padding: 0;">
+                <div class="col-md-7" style="padding: 0;">
                     <h2 class="mb-2 h6 font-weight-bold">
                     <a class="text-dark" target="_blank" href="{{site.baseurl}}{{fourth_post.url}}">{{ fourth_post.title }}</a>
                     </h2>
