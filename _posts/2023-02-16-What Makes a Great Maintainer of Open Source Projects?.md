@@ -2,7 +2,7 @@
 layout: post
 title:  "一分钟读论文：《卓越的开源维护者是如何成就的？》"
 author: unbug
-categories: [OpenSource]
+categories: [OpenSource, Engineer]
 image: assets/images/screenshot-20230204-001420.jpg
 tags: [featured, OpenSourceMaintainer, OSS]
 ---
