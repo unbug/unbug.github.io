@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "一分钟读论文：《》"
+title:  "一分钟读论文：《为什么要重新发明轮子？库重用和重新实现的实证研究》"
 author: unbug
 categories: [, JS]
 image: 
 tags: [featured]
 ---
-的论文[《》][paper1-url]：
+的论文[《Why reinventing the wheels? An empirical study on library reuse and re-implementation》][paper1-url]：
 
 ![]({{ site.baseurl }}/)
 
@@ -24,5 +24,5 @@ tags: [featured]
 - [][links-1]
 
 
-[paper1-url]: 
+[paper1-url]: https://ink.library.smu.edu.sg/cgi/viewcontent.cgi?article=5503&context=sis_research
 [links-1]: 
