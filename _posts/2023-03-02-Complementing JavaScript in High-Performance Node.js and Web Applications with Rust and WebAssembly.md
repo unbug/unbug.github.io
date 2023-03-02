@@ -6,7 +6,7 @@ categories: [Architecture, Performance]
 image: assets/images/screenshot-20230202-162534.jpg
 tags: [featured, Rust, WebAssembly, NodeJS]
 ---
-希腊伯罗奔尼撒大学的论文[《Complementing JavaScript in High-Performance Node.js and Web Applications with Rust and WebAssembly》][paper1-url]描述了如何将 JavaScript 与 Rust 结合使用作为高级脚本语言来代替 C++ 的架构。发现：基于 Rust 的实现性能超过 JS `1.15 超过 115 倍`，超过 Node.js 的并发模型` 14.5 倍或更多`，证明 Rust 能够提供非阻塞操作和硬件访问所需的低级功能，同时保持与 JavaScript 的高级相似性，从而提高生产力。
+希腊伯罗奔尼撒大学的论文[《Complementing JavaScript in High-Performance Node.js and Web Applications with Rust and WebAssembly》][paper1-url]描述了如何将 JavaScript 与 Rust 结合使用作为高级脚本语言来代替 C++ 的架构。发现：基于 Rust 的实现性能超过 JS `1.15到115 倍`，超过 Node.js 的并发模型` 14.5 倍或更多`，证明 Rust 能够提供非阻塞操作和硬件访问所需的低级功能，同时保持与 JavaScript 的高级相似性，从而提高生产力。
 
 |                                       |                                       |                                       |
 |:-------------------------------------:|:-------------------------------------:|:-------------------------------------:|
