@@ -4,7 +4,7 @@ title:  "一分钟读论文：《关于临时裁员的七个事实》"
 author: unbug
 categories: [Engineer]
 image: assets/images/screenshot-20230129-105323.jpg
-tags: [featured, Layoff, Career]
+tags: [Layoff, Career]
 ---
 2023年，或许是每个互联网人都最不愿有的经历：裁员。斯德哥尔摩大学国际经济研究所 (IIES)、奥地利经济研究所（WIFO）、维也纳经济与商业大学、劳工研究所（IZA）、CESifo（经济研究中心和 Ifo 研究所）合著的论文[《Seven Facts about Temporary Layoffs》][paper1-url] 分析了在包括美国在内的许多国家/地区，涵盖了2004年至2013年期间`3,882,584`次失业样本。发现：当公司⾯临难以以相同⼯资替代⼯⼈的临时冲击时，使⽤临时裁员（Temporary layoffs，简称 TL）。并确定了关于 TL 和聘用召回的七个事实：
 
