@@ -29,6 +29,12 @@ https://www.semanticscholar.org/paper/Prototyping-Automotive-Smart-Ecosystems-Ci
 
 
 # Architecture
+Monorepos：多声部文献综述
+https://www.semanticscholar.org/paper/Monorepos%3A-A-Multivocal-Literature-Review-Brito-Terra/19d9482f19b3d0b0d2d1c1201730635b9e2b5edb?sort=pub-date
+
+大企业的monorepo和polyrepo问题
+https://www.semanticscholar.org/paper/The-issue-of-monorepo-and-polyrepo-in-large-Brousse/32368391109d862ef08c03efae36b7c1026bab8e
+
 公共云基础设施中基于零停机部署技术的比较
 https://ieeexplore.ieee.org/document/9243605
 
