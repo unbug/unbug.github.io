@@ -13,7 +13,7 @@
 - NodeJS; JavaScript; Rust; WebAssembly; web software; scalability; software performance evaluation; software convergence; software interoperability
 - Software Ecosystem, Protestware, Supply Chain Attacks
 - Freelance developer
-- 
+- monorepo
 
 # Categories
 'Security FrontEnd Architecture Performance Productivity Engineering Engineer AI'   
