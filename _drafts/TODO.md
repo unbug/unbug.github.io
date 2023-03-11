@@ -69,8 +69,6 @@ https://www.semanticscholar.org/paper/Open-source-software-ecosystems%3A-A-Syste
 !GitHub 上 OSS 社区的理解技巧
 https://www.semanticscholar.org/paper/Understanding-skills-for-OSS-communities-on-GitHub-Liang-Zimmermann/27fa4e7d641024bc4dcbb2fc994957b1c5f911e7
 
-！为什么要重新发明轮子？库重用和重新实现的实证研究
-https://www.semanticscholar.org/paper/Why-reinventing-the-wheels-An-empirical-study-on-Xu-An/f8f93ba8a3dd0a9b2d8aeed95851920d8fdf871c
 
 -!软件生态系统——系统的文献综述
 https://dl.acm.org/doi/10.1016/j.jss.2012.12.026
@@ -138,15 +136,6 @@ https://ieeexplore.ieee.org/document/9506834
 https://ieeexplore.ieee.org/document/9104653
 
 # AI
-ChatGPT 在参加医疗执照考试时表现如何？大型语言模型对医学教育和知识评估的影响
-https://www.semanticscholar.org/paper/How-Well-Does-ChatGPT-Do-When-Taking-the-Medical-of-Gilson-Safranek/7d4867e28b02059eef4cb25bfcd304b2071b30a9
-
-ChatGPT 并不是您所需要的全部。大型生成 AI 模型的最新技术回顾
-https://www.semanticscholar.org/paper/ChatGPT-is-not-all-you-need.-A-State-of-the-Art-of-Gozalo-Brizuela-Garrido-Merch%C3%A1n/1f22de83d912176cb8857efa1c6d65b14d6a2f5c
-
-探索 ChatGPT 的 AI 伦理：诊断分析
-https://arxiv.org/abs/2301.12867
-
 ChatGPT自动修复漏洞性能分析
 https://www.semanticscholar.org/paper/An-Analysis-of-the-Automatic-Bug-Fixing-Performance-Sobania-Briesch/9f530ebf624bf58e91b2a1f20b0799a45ca48f9a
 
@@ -193,10 +182,6 @@ https://www.semanticscholar.org/paper/A-Mixed-Methods-Study-of-Low-Code-Developm
 https://www.semanticscholar.org/paper/Low-code-development-and-model-driven-engineering%3A-Ruscio-Kolovos/13b2471efdbada2360f3edb37c4d398826ed279e#references
 
 # Webassembly
-!使用 WebAssembly 运行时将无服务器推向边缘
-https://ieeexplore.ieee.org/document/9826054
-https://dsg.tuwien.ac.at/team/sd/papers/CCGrid_2022_P_Frangoudis_Pushing.pdf
-
 WebAssembly 中正式验证的加密 Web 应用程序
 https://ieeexplore.ieee.org/document/9826054
 
