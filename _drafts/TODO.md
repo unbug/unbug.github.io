@@ -117,7 +117,7 @@ https://pdfs.semanticscholar.org/44f6/69c416f415e594bc212549b9598eba99121a.pdf?_
 软件工程中的人类价值：对比实践案例研究
 https://ieeexplore.ieee.org/document/9261980
 
-程序员经验：系统的文献回顾
+- 程序员经验：系统的文献回顾
 https://ieeexplore.ieee.org/document/8727527
 
 敏捷软件开发中的协调价值：管理依赖关系的协调机制的多案例研究
