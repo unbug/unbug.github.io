@@ -6,7 +6,7 @@ categories: [, JS]
 image: 
 tags: [featured]
 ---
-的论文[《》][paper1-url]：
+的论文[《SoK: Taxonomy of Attacks on Open-Source Software Supply Chains》][paper1-url]：
 
 ![]({{ site.baseurl }}/)
 
@@ -24,5 +24,5 @@ tags: [featured]
 - [][links-1]
 
 
-[paper1-url]: 
+[paper1-url]: https://oaklandsok.github.io/papers/ladisa2023.pdf
 [links-1]: 

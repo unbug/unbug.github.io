@@ -1,17 +1,12 @@
 ---
 layout: post
-title:  "一分钟读论文：《不经意的伪随机函数 (OPRF)》"
+title:  "一分钟读论文：《不经意伪随机函数 (OPRF)》"
 author: unbug
 categories: [Security]
 image: assets/images/screenshot-20230314-235634.jpg
 tags: [OPRF]
 ---
-经意的伪随机函数（OPRF），是一种在密码学协议和隐私保护技术中广泛使用的基本原语。哈佛大学、波茨坦大学、IBM 欧洲研究院和哈索普拉特纳研究所合著的论文[《SoK: Oblivious Pseudorandom Functions》][paper1-url]全面概述如何利用 OPRF 来改善互联网用户的隐私，进一步展示了 OPRF 的理论和实践能力。
-
-
-摘要：近年来，不经意的伪随机函数 (OPRF) 已成为密码协议和隐私保护技术中普遍使用的原语。 对 OPRFs 的兴趣越来越大，无论是理论还是应用，已经产生了大量不同的结构和功能变化。 在本文中，我们系统地概述了如何构建和使用 OPRF。 我们首先根据其基础 PRF（Naor-Reingold、Dodis-Yampolskiy、Hashed Diffie-Hellman 和通用结构）将现有 OPRF 基本上分为四个系列。 这种分类使我们能够统一呈现文献中所有不经意的评估方法，并了解 OPRF 可以（或不能）具有哪些属性。 我们通过在加密原语中可视化它们，并全面概述如何利用 OPRF 来改善互联网用户的隐私，进一步展示了 OPRF 的理论和实践能力。 我们的工作系统化了 15 年的 OPRF 研究，并为新的 OPRF 构造及其应用提供了灵感。
-
-这篇论文没有基于特定的数据集进行实验，而是基于数学证明和分析来比较不同类型的 OPRF在安全性、效率、功能性等方面的优劣。论文给出了一些关键数据，例如各种PRF和 OPRF 构造所需的计算量、通信量、轮数等1。
+不经意伪随机函数（Oblivious Pseudorandom Functions，简称 OPRF），是一种在密码学协议和隐私保护技术中广泛使用的基本原语。哈佛大学、波茨坦大学、IBM 欧洲研究院和哈索普拉特纳研究所合著的论文[《SoK: Oblivious Pseudorandom Functions》][paper1-url]基于数学证明和分析来比较不同类型的 OPRF 在安全性、效率、功能性等方面的优劣，全面概述如何利用 OPRF 来改善互联网用户的隐私，进一步展示了 OPRF 的理论和实践能力。
 
 ## 预备知识
 -   OPRF 的定义和安全性模型： OPRF 是一种两方协议，其中一方（发送方）持有一个伪随机函数（PRF）的密钥k，另一方（接收方）持有一个输入x。协议的目标是让接收方得到PRF在k和x上的输出f(k,x)，而发送方不得到任何信息。 OPRF 的安全性要求满足正确性、单向性、隐私性和可验证性等属性。
