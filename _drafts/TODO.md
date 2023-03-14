@@ -179,6 +179,9 @@ https://www.semanticscholar.org/paper/A-Mixed-Methods-Study-of-Low-Code-Developm
 https://www.semanticscholar.org/paper/Low-code-development-and-model-driven-engineering%3A-Ruscio-Kolovos/13b2471efdbada2360f3edb37c4d398826ed279e#references
 
 # Webassembly
+WebAssembly 支持低延迟、可互操作的增强现实和虚拟现实软件
+https://arxiv.org/abs/2110.07128
+
 WebAssembly 中正式验证的加密 Web 应用程序
 https://ieeexplore.ieee.org/document/9826054
 
