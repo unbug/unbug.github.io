@@ -6,7 +6,7 @@ categories: [OpenSource]
 image: assets/images/screenshot-20230317-005853.jpg
 tags: [OpenSourceMaintainer, OSS]
 ---
-国际妇女节刚，女性在开源软件（Open Source Software，简称 OSS） 中的参与非常不平衡似乎没什么提起。澳大利亚国立大学（ANU）、北亚利桑那大学（NAU）、巴西联邦技术大学（UTFPR）和俄勒冈州立大学（OSU）合著的论文[《Women’s Participation in Open Source Software: A Survey of the Literature》][paper1-url]基于**51篇**在2000年至2021年间发表的关于女性参与 OSS 的文章，总结了女性参与 OSS 的挑战和策略。论文发现：
+国际妇女节，女性在开源软件（Open Source Software，简称 OSS） 中的参与非常不平衡似乎没什么提起。澳大利亚国立大学（ANU）、北亚利桑那大学（NAU）、巴西联邦技术大学（UTFPR）和俄勒冈州立大学（OSU）合著的论文[《Women’s Participation in Open Source Software: A Survey of the Literature》][paper1-url]基于**51篇**在2000年至2021年间发表的关于女性参与 OSS 的文章，总结了女性参与 OSS 的挑战和策略。论文发现：
 
 -   女性在 OSS 中的贡献者占比约为**9.8%**，其中大多数是近期贡献者，年龄在20-37岁之间，每周投入 OSS 的时间少于5小时，并且做出了代码和非代码两种类型的贡献。
 -   只有**5%**的项目有女性作为核心开发者，女性提交的合并请求（pull-request）不到**5%**，但她们的`合并请求接受率与男性相当甚至更高`，在某些情况下达到了**78.6%**。
