@@ -40,6 +40,15 @@ https://www.semanticscholar.org/paper/ANALISIS-PERFORMA-PROGRESSIVE-WEB-APPLICAT
 
 
 # Secutiry
+人类在解决验证码方面有多好？大规模评估
+https://web.stanford.edu/~jurafsky/burszstein_2010_captcha.pdf
+
+SoK：模块化和高效的私人决策树评估 （PETS）
+https://petsymposium.org/popets/2019/popets-2019-0026.pdf
+
+SoK：自动化软件多样性 (S&P)
+https://oaklandsok.github.io/papers/larsen2014.pdf
+
 网络安全的银弹——人工智能安全的系统文献回顾
 https://ieeexplore.ieee.org/document/9998305
 
