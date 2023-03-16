@@ -6,9 +6,9 @@ categories: [OpenSource, Engineer]
 image: assets/images/screenshot-20230316-114657.jpg
 tags: [featured,  OpenSourceMaintainer, OSS]
 ---
-你的 GitHub Repo 为什么攒不到🌟？华盛顿大学和微软研究院合著的论文[《Understanding skills for OSS communities on GitHub》][paper1-url]基于对455名 OSS 贡献者的在线调查数据进行分析，绘制了一个9个类别`45`个技能的技能树：技术技能, 工作方式, 解决问题, 贡献类型、项目特定技能、人际交往能力、外部关系、管理和特征。能指导 OSS 贡献者提高技能。同时发现他人分享技能有很多好处，可用于`招聘`。
+你的 GitHub Repo 为什么攒不到🌟？华盛顿大学和微软研究院合著的论文[《Understanding skills for OSS communities on GitHub》][paper1-url]基于对455名 OSS 贡献者的在线调查数据进行分析，开发了一个 OSS 技能模型，包含` 9 类 45 种技能：技术技能, 工作方式, 解决问题, 贡献类型、项目特定技能、人际交往能力、外部关系、管理和特征`。能指导 OSS 贡献者显著提高技能，同时发现与他人分享技能有很多好处，比如可用于`招聘`。
 
-## 技能树
+## 技能模型
 ![]({{ site.baseurl }}/assets/images/screenshot-20230316-114613.jpg)
 
 OSS 中的技能包括硬技能和软技能的组合。 技能的主要类别是技术技能、工作方式、解决问题、贡献类型、项目特定技能、人际交往能力、外部关系、管理和特征。
