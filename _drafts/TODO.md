@@ -60,9 +60,6 @@ Javascript 恶意软件检测的系统文献综述和质量分析
 https://ieeexplore.ieee.org/document/9226527
 
 # OpenSource
-女性参与开源软件：文献调查
-https://arxiv.org/abs/2105.08777
-
 !关于代码生成技术的稳健性：GitHub Copilot 上的实证研究
 https://arxiv.org/abs/2302.00438
 
@@ -71,10 +68,6 @@ https://www.semanticscholar.org/paper/One-off-events-An-empirical-study-of-hacka
 
 !开源软件生态系统：系统映射
 https://www.semanticscholar.org/paper/Open-source-software-ecosystems%3A-A-Systematic-Franco-Bedoya-Ameller/7c70a0d4b978c9543cb6f48bd1165f7cfc10c46c
-
-!GitHub 上 OSS 社区的理解技巧
-https://www.semanticscholar.org/paper/Understanding-skills-for-OSS-communities-on-GitHub-Liang-Zimmermann/27fa4e7d641024bc4dcbb2fc994957b1c5f911e7
-
 
 -!软件生态系统——系统的文献综述
 https://dl.acm.org/doi/10.1016/j.jss.2012.12.026
