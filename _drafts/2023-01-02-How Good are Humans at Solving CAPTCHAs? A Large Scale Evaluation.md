@@ -6,14 +6,14 @@ categories: [Security]
 image: assets/images/screenshot-20230318-130321.jpg
 tags: [CAPTCHA]
 ---
-斯坦福大学的论文[《How Good are Humans at Solving CAPTCHAs? A Large Scale Evaluation》][paper1-url] 发现：
+斯坦福大学的论文[《How Good are Humans at Solving CAPTCHAs? A Large Scale Evaluation》][paper1-url] 从21种最流行的验证码方案（13种图像方案和8种音频方案）收集了318 000多个验证码样本，请亚马逊机械土耳其（Amazon’s Mechanical Turk）和一个地下验证码破解服务的工作者来解决这些验证码，并记录他们的正确率和解决时间，发现：
 
 - CAPTCHA（完全自动区分计算机和人类的公共图灵测试）通常对人类来说很困难，尤其是音频 CAPTCHA。
 - 非英语母语者在一般情况下解决 CAPTCHA 的速度更慢，而且在以英语为中心的 CAPTCHA 方案上更不准确。
 - 改善音频 CAPTCHA 应该成为优先事项，因为近1%的所有CAPTCHA是以音频而不是图像的形式呈现的。
 - 对于攻击者来说，使用 Mechanical Turk（亚马逊公司提供的众包平台）解决 CAPTCHA 比使用地下服务更有效。
 
-## 21种 CAPTCHA 方案的人类表现的评估
+## 21 种 CAPTCHA 方案的人类表现的评估
 **图像验证码方案：**
 
 - **eBay:** 使用6个随机字母和数字组成的验证码，背景为噪声线条和斑点，字体为不同颜色和大小，有一定程度的扭曲和旋转。人类的平均正确率为**95.8%**，平均解决时间为**9.1秒**。
