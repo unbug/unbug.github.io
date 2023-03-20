@@ -2,7 +2,7 @@
 layout: post
 title:  "一分钟读论文：《ChatGPT 提示模式：提高代码质量、重构、需求获取和软件设计》"
 author: unbug
-categories: [AI]
+categories: [AI, Engineering, Engineer]
 image: assets/images/screenshot-20230319-024727.jpg
 tags: [ChatGPT, MachineLearning]
 ---
