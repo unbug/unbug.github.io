@@ -4,7 +4,7 @@ title:  "一分钟读论文：《ChatGPT 提示模式：提高代码质量、重
 author: unbug
 categories: [AI, Engineering, Engineer]
 image: assets/images/screenshot-20230319-024727.jpg
-tags: [ChatGPT, MachineLearning]
+tags: [featured, ChatGPT, MachineLearning]
 ---
  前哈佛大学计算机科学教授、谷歌工程主管 Matt Welsh 在美国计算机协会（ACM）的一个虚拟会议上说“不要指望你的程序员职业生涯会一直持续下去，因为 AI 正在取代这个角色”。ChatGPT 近来让很多工程师感到很无力，仿佛任何努终将徒劳，但也有很多工程师看到了机会并尝试通过它成为 `10X` 工程师。美国田纳西州纳什维尔市范德堡大学的论文[《ChatGPT Prompt Patterns for Improving Code Quality, Refactoring, Requirements Elicitation, and Software Design》][paper1-url] 为软件工程提供了一个模式目录，全面总结了帮助工程师应用 ChatGPT 改进需求获取、快速原型制作、代码质量、重构和系统设计的提示模式的核心思想和`100个提示要点`。
 
