@@ -16,7 +16,7 @@ tags: [ChatGPT]
 - GPT-minify 可以根据用户指定的目标平台或浏览器进行兼容性处理，生成适合不同环境运行的代码，而不需要用户手动调整或配置复杂的压缩工具，帮助开发者节省时间和精力。
 - GPT-minify 可以达到极高的压缩比，最高可达 `97%`，远超过其他压缩工具，这意味着可以大幅提升网页加载速度和性能，节省网络流量和存储空间。
 ### GPT-minify 的口碑
-> GPT-minify 的试用者如是说：「重新定义 Minify」、「游戏规则改变者」、「刷新认知」。可见它非常卓越。
+GPT-minify 的试用者如是说：「`重新定义 Minify`」、「`游戏规则改变者`」、「`刷新认知`」。可见它非常卓越。
 
 ![]({{ site.baseurl }}/assets/images/screenshot-20230331-232223.jpg)
 
@@ -34,8 +34,8 @@ GPT-minify 每个阶段的核心源码均是一份 GPT prompt 配置。
 - **最后**，输出一个全新的 bundle。|
 
 
-## GPT-minify 的 Benchmark 
-GPT-minify 有个显著的劣势：就是它依赖 OpenAI 的 API 来调用 GPT-4 模型，这可能会增加成本和延迟。
+## GPT-minify 的 [Benchmark][links-2] 
+GPT-minify 有个显著的劣势：就是它依赖 OpenAI 的 API 来调用 GPT-4 模型，这可能会**增加成本和延迟**。
 
 以 AntD 为例子，与开源社区流行的 JS 压缩工具全面对比，GPT-minify 由于机器限制压缩时间长了些，但是压缩比遥遥领先第二名。
 
@@ -62,7 +62,7 @@ GPT-minify 的参数非常简洁，你不需要设置任何压缩参数
     -V, --version               Print version number.
 ```
 ### 使用 webpack 插件
-安装插件 `gpt-minify-webpack-plugin`
+安装插件 ```gpt-minify-webpack-plugin```
 ```
 npm install gpt-minify-webpack-plugin --save-dev
 // or
@@ -70,7 +70,7 @@ yarn add -D gpt-minify-webpack-plugin
 // or
 pnpm add -D gpt-minify-webpack-plugin
 ```
-配置 `webpack.config.js`
+配置 ```webpack.config.js```
 ```
 const GPTMinifyPlugin = require("gpt-minify-webpack-plugin");
 module.exports = {
@@ -86,9 +86,10 @@ module.exports = {
 但 OpenAI 还是给 GPT-minify 规划了清晰的蓝图，盈利规划的目标很激进。
 
 - 2023 年底支持包括：JS/TS、CSS、Image、Video、 Audio、 Live stream 全部压缩；
-- 2023 年秋季开始提供订阅服务，面向 toC 用户；
-- 2024 年开始支持更多文件类型的压缩，探索 toB。
+- 2023 年秋季开始提供`订阅服务`，面向 toC 用户；
+- 2024 年开始支持更多文件类型的压缩，探索 `toB`。
 
 ![]({{ site.baseurl }}/assets/images/screenshot-20230331-232419.jpg)
 
 [links-1]: https://openai.com/research/gpt-minify
+[links-2]: https://github.com/privatenumber/minification-benchmarks
