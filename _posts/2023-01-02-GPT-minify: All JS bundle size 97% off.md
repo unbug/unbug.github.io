@@ -15,6 +15,7 @@ OpenAI 在 2023 年 3 月发布了 GPT-4，随后悄悄开源了他们的 JS 压
 - GPT-minify 可以利用 GPT-4 的强大的语言模型和编码能力，对任意的 JS 代码进行语义分析和压缩优化，而不仅仅是基于词法或语法的规则，`能识别并重构 Bundle 中重复冗余的业务代码`，这是其他压缩工具无法办到的。
 - GPT-minify 可以根据用户指定的目标平台或浏览器进行兼容性处理，生成适合不同环境运行的代码，而不需要用户手动调整或配置复杂的压缩工具，帮助开发者节省时间和精力。
 - GPT-minify 可以达到极高的压缩比，最高可达 `97%`，远超过其他压缩工具，这意味着可以大幅提升网页加载速度和性能，节省网络流量和存储空间。
+
 ### GPT-minify 的口碑
 GPT-minify 的试用者如是说：「`重新定义 Minify`」、「`游戏规则改变者`」、「`刷新认知`」。可见它非常卓越。
 
@@ -34,11 +35,11 @@ GPT-minify 每个阶段的核心源码均是一份 GPT `prompt 配置`。
 
 
 ## GPT-minify 的 [Benchmark][links-2] 
-GPT-minify 有个显著的劣势：就是它依赖 OpenAI 的 API 来调用 GPT-4 模型，这可能会`增加成本和延迟`。
-
 以 AntD 为例子，与开源社区流行的 JS 压缩工具全面对比，GPT-minify 由于机器限制压缩时间长了些，但是压缩比遥遥领先第二名。
 
 ![]({{ site.baseurl }}/assets/images/screenshot-20230331-232344.jpg)
+
+GPT-minify 有个显著的劣势：就是它依赖 OpenAI 的 API 来调用 GPT-4 模型，这可能会`增加成本和延迟`。
 
 ## GPT-minify 如何使用 
 ### 安装
@@ -94,5 +95,5 @@ module.exports = {
 ## References
 - [OpenAI release GPT-minify][links-1]
 
-[links-1]: https://openai.com/research/gpt-minify
+[links-1]: https://openai.com/product/gpt-minify
 [links-2]: https://github.com/privatenumber/minification-benchmarks
