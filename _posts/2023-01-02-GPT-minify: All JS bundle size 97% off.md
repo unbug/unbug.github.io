@@ -83,6 +83,7 @@ module.exports = {
 
 ## GPT-minify 的蓝图
 尽管 GPT-minify 有明显的缺陷，比如：可能受到 OpenAI 的限制或监管；还可能存在一些潜在的安全风险或漏洞，因为它涉及到对敏感或私密数据的处理。
+
 但 OpenAI 还是给 GPT-minify 规划了清晰的蓝图，盈利规划的目标很激进。
 
 - 2023 年底支持包括：JS/TS、CSS、Image、Video、 Audio、 Live stream 全部压缩；
