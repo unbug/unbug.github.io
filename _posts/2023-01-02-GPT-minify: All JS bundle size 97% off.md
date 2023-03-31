@@ -6,7 +6,7 @@ categories: [AI, FrontEnd]
 image: assets/images/screenshot-20230331-232222.jpg
 tags: [ChatGPT]
 ---
-OpenAI 在 2023 年 3 月发布了 GPT-4，随后悄悄开源了他们的 JS 压缩包 [GPT-minify][links-1]。它利用 GPT-4 的强大的语言模型和编码能力，`能识别 Bundle 中重复冗余的业务代码并深度重构`，从而实现将现有的 JS Bundle 压缩到极致，最高可达 `97%` 的压缩比，吊打 Terser、 Uglify、babel-minify 等流行压缩工具。
+OpenAI 在 2023 年 3 月发布了 GPT-4，随后悄悄开源了他们的 JS 压缩包 **GPT-minify**。它利用 GPT-4 的强大的语言模型和编码能力，`能识别 Bundle 中重复冗余的业务代码并深度重构`，从而实现将现有的 JS Bundle 压缩到极致，最高可达 `97%` 的压缩比，吊打 Terser、 Uglify、babel-minify 等流行压缩工具。
 
 ## GPT-minify 介绍
 ![]({{ site.baseurl }}/assets/images/screenshot-20230331-232221.jpg)
@@ -90,6 +90,9 @@ module.exports = {
 - 2024 年开始支持更多文件类型的压缩，探索 `toB`。
 
 ![]({{ site.baseurl }}/assets/images/screenshot-20230331-232419.jpg)
+
+## References
+- [OpenAI release GPT-minify][links-1]
 
 [links-1]: https://openai.com/research/gpt-minify
 [links-2]: https://github.com/privatenumber/minification-benchmarks
