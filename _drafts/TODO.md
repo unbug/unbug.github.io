@@ -32,7 +32,7 @@ https://www.semanticscholar.org/paper/Prototyping-Automotive-Smart-Ecosystems-Ci
 公共云基础设施中基于零停机部署技术的比较
 https://ieeexplore.ieee.org/document/9243605
 
-渐进式 Web 应用程序 (PWA) 的曙光：摆脱传统移动开发的陷阱
+- 渐进式 Web 应用程序 (PWA) 的曙光：摆脱传统移动开发的陷阱
 https://www.semanticscholar.org/paper/Dawning-of-Progressive-Web-Applications-(PWA)%3A-Out-Adetunji-Ajaegbu/12c54730a4a3fc87a41f94d992a96d51ff3b8a4d
 
 分析性能渐进式 Web 应用程序 (PWA) PADA PERANGKAT 移动版

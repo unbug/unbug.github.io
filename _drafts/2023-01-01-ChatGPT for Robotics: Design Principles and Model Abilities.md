@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "一分钟读论文：《》"
+title:  "一分钟读论文：《ChatGPT for Robotics：设计原则和模型能力》"
 author: unbug
-categories: [, JS]
+categories: [AI, Engineering]
 image: 
-tags: [featured]
+tags: [ChatGPT, Robotics]
 ---
-合著的论文[《》][paper1-url]，发现：
+微软自主系统和机器人研究院和 ChatGPT 合著的论文[《ChatGPT for Robotics: Design Principles and Model Abilities》][paper1-url]，发现：
 
 ![]({{ site.baseurl }}/)
 
@@ -24,5 +24,5 @@ tags: [featured]
 - [][links-1]
 
 
-[paper1-url]: 
+[paper1-url]: https://www.microsoft.com/en-us/research/uploads/prod/2023/02/ChatGPT___Robotics.pdf
 [links-1]: 
