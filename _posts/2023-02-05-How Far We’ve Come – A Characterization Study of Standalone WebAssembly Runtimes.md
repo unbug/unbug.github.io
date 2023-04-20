@@ -4,7 +4,7 @@ title:  "一分钟读论文：《我们走了多远——WebAssembly 运行时�
 author: unbug
 categories: [FrontEnd]
 image: assets/images/screenshot-20230201-234812.jpg
-tags: [sticky, featured, WebAssembly, Rust]
+tags: [featured, WebAssembly, Rust]
 ---
 WebAssembly ⼆进制⽂件依赖 Web 浏览器的 JavaScript 引擎来执⾏，需要独⽴的 WebAssembly 运⾏时才能在⾮ Web 浏览器中运⾏ WebAssembly 代码。美国佐治亚大学的论文[《How Far We’ve Come – A Characterization Study of Standalone WebAssembly Runtimes》][paper1-url]构建了一个标准的 WABench 的基准套件，对独立的 WebAssembly 运行时进行了全面的表征研究，包含性能、内存开销和架构特征。分析了`33 个独⽴ WebAssembly 运⾏时`的TOP5，发现这些独立运⾏时在运⾏ WebAssembly ⼆进制⽂件时平均会`降低 1.59 到 9.57 倍的性能`。
 
