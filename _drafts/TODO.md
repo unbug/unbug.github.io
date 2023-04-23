@@ -300,5 +300,6 @@ https://ieeexplore.ieee.org/document/9995741
 
 # Note
 
+- 规划「60秒技术管理」or 「60‘ Tech Leader」教练式管理
 - 规划「一分钟读论文」的视频，发到 YouTobe & 抖音10篇。
 - 规划一个新的系列，如「三分钟说原理」，「五分钟写源码」并完成 N 篇。
