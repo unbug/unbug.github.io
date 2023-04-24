@@ -20,6 +20,10 @@
 # Keywords
 
 
+# Leadership
+弹性项目管理
+https://www.researchgate.net/publication/361484432_Resilient_Project_Management
+
 # Software Ecosystem
 软件平台生态系统中的权力动态
 https://www.semanticscholar.org/paper/Power-dynamics-in-software-platform-ecosystems-Hurni-Huber/690ad887677e3481c2d35d90176a307daf011e8e
