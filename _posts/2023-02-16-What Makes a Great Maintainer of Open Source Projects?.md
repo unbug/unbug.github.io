@@ -4,7 +4,7 @@ title:  "一分钟读论文：《卓越的开源维护者是如何成就的？�
 author: unbug
 categories: [OpenSource, Engineer]
 image: assets/images/screenshot-20230204-001420.jpg
-tags: [sticky, featured, OpenSourceMaintainer, OSS]
+tags: [featured, OpenSourceMaintainer, OSS]
 ---
 Google Go 工程师辞去工作转行成为全职开源维护者，同时为多个需要专业开源维护者的企业提供服务，报酬总额和 Google 工作相当。表明悄然兴起全职开源维护者薪酬竞争力完全不输职业软件工程师。美国瑙鲁大学和巴西联邦大学（UFPE、UNIFESP、UTFPR）的论文[《What Makes a Great Maintainer of Open Source Projects?》][paper1-url] 对 Linux、Debian 和 GitLab 经验丰富的维护人员进行了 33 次访谈，对 90 个 OSS(Open Source Software) 贡献者进行了评级调查。发现：`沟通被认为是优秀维护者最重要的属性，其次是品质保障`。
 
