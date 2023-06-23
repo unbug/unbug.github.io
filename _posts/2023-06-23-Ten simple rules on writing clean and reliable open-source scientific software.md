@@ -4,7 +4,7 @@ title:  "一分钟读论文：《编写高可靠开源软件的十条简单规�
 author: unbug
 categories: [OpenSource]
 image: assets/images/screenshot-20230216-130954.jpg
-tags: [OpenSourceMaintainer, OSS]
+tags: [OpenSourceMaintainer, OSS, TechnicalDebt]
 ---
 美国加州大学伯克利分校伯克利数据科学研究所和巴卡尔计算健康科学研究所合著的论文[《Ten simple rules on writing clean and reliable open-source scientific software》][paper1-url] 为帮助提高开源软件代码的清晰度、健壮性、可用性和可维护性提出了 10 条规则：
 
