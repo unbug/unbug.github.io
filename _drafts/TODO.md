@@ -42,6 +42,9 @@ https://www.semanticscholar.org/paper/Dawning-of-Progressive-Web-Applications-(P
 分析性能渐进式 Web 应用程序 (PWA) PADA PERANGKAT 移动版
 https://www.semanticscholar.org/paper/ANALISIS-PERFORMA-PROGRESSIVE-WEB-APPLICATION-(PWA)-Kurniawan/63e3429beb75080670b968a98d907ae0f15a05aa
 
+# incident
+!为 Amazon Web Services 勒索软件场景开发事件响应手册和运行手册
+https://www.utupub.fi/bitstream/handle/10024/175838/Gandini_Samuele_Thesis.pdf?sequence=1
 
 # Secutiry
 SoK：模块化和高效的私人决策树评估 （PETS）
