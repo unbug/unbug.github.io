@@ -63,7 +63,9 @@ tags: [featured, TechnicalDebt, Refactor]
 
 ## References
 - [We invested 10% to pay back tech debt; Here's what happened][links-1]
+- [How to Best Use MTT* Metrics to Optimize Your Incident Response][links-2]
 
 
 [paper1-url]: https://arxiv.org/pdf/2109.13771.pdf
 [links-1]: https://blog.alexewerlof.com/p/tech-debt-day
+[links-2]: https://www.infoq.com/articles/mtt-metrics-incident-response/
