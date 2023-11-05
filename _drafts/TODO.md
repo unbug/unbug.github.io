@@ -42,9 +42,25 @@ https://www.semanticscholar.org/paper/Dawning-of-Progressive-Web-Applications-(P
 分析性能渐进式 Web 应用程序 (PWA) PADA PERANGKAT 移动版
 https://www.semanticscholar.org/paper/ANALISIS-PERFORMA-PROGRESSIVE-WEB-APPLICATION-(PWA)-Kurniawan/63e3429beb75080670b968a98d907ae0f15a05aa
 
-# incident
+# incident/Postmortem
+！软件稳定性：系统⽂献综述
+https://ieeexplore.ieee.org/document/8645866?denied=
+
 !为 Amazon Web Services 勒索软件场景开发事件响应手册和运行手册
 https://www.utupub.fi/bitstream/handle/10024/175838/Gandini_Samuele_Thesis.pdf?sequence=1
+
+!基于 Chatbot 的解决方案支持软件事故管理流程
+https://arxiv.org/abs/2201.08167
+
+!线上系统事故需要多长时间才能缓解（TTM）？
+https://learn.microsoft.com/zh-cn/devops/operate/what-is-monitoring
+https://zhuanlan.zhihu.com/p/34083617
+
+PaaS 的自动化事故管理
+https://www.usenix.org/legacy/event/hotice11/tech/full_papers/Sarkar.pdf
+
+软件定义业务中的事故管理：案例研究
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4333515
 
 # Secutiry
 SoK：模块化和高效的私人决策树评估 （PETS）

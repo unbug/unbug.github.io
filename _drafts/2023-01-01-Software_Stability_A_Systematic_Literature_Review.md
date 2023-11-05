@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "一分钟读论文：《》"
+title:  "一分钟读论文：《软件稳定性：系统⽂献综述》"
 author: unbug
 categories: [, JS]
 image: 
 tags: [featured]
 ---
-合著的论文[《》][paper1-url]，发现：
+合著的论文[《Software Stability: A Systematic Literature Review》][paper1-url]，发现：
 
 ![]({{ site.baseurl }}/)
 
@@ -24,5 +24,5 @@ tags: [featured]
 - [][links-1]
 
 
-[paper1-url]: 
+[paper1-url]: https://ieeexplore.ieee.org/document/8645866
 [links-1]: 
