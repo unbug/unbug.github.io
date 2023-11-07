@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "一分钟读论文：《》"
+title:  "一分钟读论文：《软件生产力的实践：系统映射研究》"
 author: unbug
 categories: [, JS]
 image: 
 tags: [featured]
 ---
-合著的论文[《》][paper1-url]，发现：
+合著的论文[《Software Productivity in Practice: A Systematic Mapping Study》][paper1-url]，发现：
 
 ![]({{ site.baseurl }}/)
 
@@ -24,5 +24,5 @@ tags: [featured]
 - [][links-1]
 
 
-[paper1-url]: 
+[paper1-url]: https://pdfs.semanticscholar.org/44f6/69c416f415e594bc212549b9598eba99121a.pdf?_ga=2.260567109.979285908.1673232871-2044131725.1673232871
 [links-1]: 
