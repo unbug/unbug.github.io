@@ -14,6 +14,7 @@
 - Software Ecosystem, Protestware, Supply Chain Attacks
 - Freelance developer
 - 领域驱动设计
+- 压缩
 
 # Categories
 'Security FrontEnd Architecture Performance Productivity Engineering Engineer AI'   
@@ -51,11 +52,6 @@ https://www.utupub.fi/bitstream/handle/10024/175838/Gandini_Samuele_Thesis.pdf?s
 
 !基于 Chatbot 的解决方案支持软件事故管理流程
 https://arxiv.org/abs/2201.08167
-
-!线上系统事故需要多长时间才能缓解（TTM）？
-https://www.microsoft.com/en-us/research/uploads/prod/2021/09/2021ISSRE_TTMPrediction_cameraReady1.pdf
-https://learn.microsoft.com/zh-cn/devops/operate/what-is-monitoring
-https://zhuanlan.zhihu.com/p/34083617
 
 PaaS 的自动化事故管理
 https://www.usenix.org/legacy/event/hotice11/tech/full_papers/Sarkar.pdf
