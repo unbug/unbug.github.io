@@ -25,16 +25,17 @@ OpenAI 的 React 组件 `<OpenAIView>`： 基于 OpenAI 的大模型生成内容
 
 Google Chrome `<!DOCTYPE aigc>`：
 
-```
+```html
 <!DOCTYPE aigc>
 Show me a YouTube-like website
  that shows short funny cat videos.
 
 ```
 
+
 OpenAI 的 React 组件 `<OpenAIView>`：
 
-```
+```js
 //...
 export default function MyApp() {
   return (
