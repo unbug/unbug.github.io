@@ -16,10 +16,10 @@ tags: [ChatGPT, Gemini]
 
 **实现原理**
 
-- Google Chrome `<!DOCTYPE aigc>` ：基于 Google Gemini 大模型生成内容，WebSocket 加载，以 Chrome 作为渲染载体。
+Google Chrome `<!DOCTYPE aigc>` ：基于 Google Gemini 大模型生成内容，WebSocket 加载，以 Chrome 作为渲染载体。
 ![]({{ site.baseurl }}/assets/images/screenshot-20240308-113527.jpg)
 
-- OpenAI 的 React 组件 `<OpenAIView>`： 基于 OpenAI 的大模型生成内容，微前端加载，以 React 作为渲染容器。
+OpenAI 的 React 组件 `<OpenAIView>`： 基于 OpenAI 的大模型生成内容，微前端加载，以 React 作为渲染容器。
 
 **例子**
 
@@ -29,7 +29,7 @@ Google Chrome `<!DOCTYPE aigc>`：
 <!DOCTYPE aigc>
 Show me a YouTube-like website
  that shows short funny cat videos.
- 
+
 ```
 
 OpenAI 的 React 组件 `<OpenAIView>`：
