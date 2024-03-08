@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "一分钟读论文：《Chrome `<!DOCTYPE aigc>`: Your next web page is not HTML》"
+title:  "一分钟读论文：《Chrome <!DOCTYPE aigc>: Your next web page is not HTML》"
 author: unbug
 categories: [AI, FrontEnd]
 image: assets/images/screenshot-20240308-113527.jpg
@@ -84,7 +84,7 @@ OpenAI 的 React 组件`<OpenAIView>`
 - 不支持隐私策略；
 
 ## References
-- [`<OpenAIView>` React component playground][links-1]
+- [<OpenAIView> React component playground][links-1]
 
 
 [paper1-url]: https://arxiv.org/pdf/2312.11805.pdf
