@@ -14,14 +14,14 @@ tags: [ChatGPT, Gemini]
 
 与此同时 OpenAI 也在测试同样功能的 React 组件 [`<OpenAIView>`][links-1]，两者的目标都是让自家的大模型接管网页开发和内容生成。从论文内容来看 Google Chrome `<!DOCTYPE aigc>` 功能更强大些，以下来看看两者的差异性：
 
-**实现原理**
+## **实现原理**
 
 Google Chrome `<!DOCTYPE aigc>` ：基于 Google Gemini 大模型生成内容，WebSocket 加载，以 Chrome 作为渲染载体。
 ![]({{ site.baseurl }}/assets/images/screenshot-20240308-113527.jpg)
 
 OpenAI 的 React 组件 `<OpenAIView>`： 基于 OpenAI 的大模型生成内容，微前端加载，以 React 作为渲染容器。
 
-**例子**
+## **例子**
 
 Google Chrome `<!DOCTYPE aigc>`：
 
@@ -47,7 +47,7 @@ export default function MyApp() {
 }
 ```
 
-**内容生成**
+## **内容生成**
 
 Google Chrome `<!DOCTYPE aigc>`：
 
@@ -63,7 +63,7 @@ OpenAI 的 React 组件 `<OpenAIView>`：
 - 不支持动态更新；
 - 不支持 Single Source of Truth；
 
-**可用性**
+## **可用性**
 
 Google Chrome `<!DOCTYPE aigc>`：
 
@@ -77,7 +77,7 @@ OpenAI 的 React 组件 `<OpenAIView>`：
 - 不支持离线；
 - 仅欧美地区；
 
-**安全性**
+## **安全性**
 
 Google Chrome `<!DOCTYPE aigc>`：
 
