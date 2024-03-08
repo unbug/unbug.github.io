@@ -2,9 +2,9 @@
 layout: post
 title:  "一分钟读论文：《Chrome `<!DOCTYPE aigc>`: Your next web page is not HTML》"
 author: unbug
-categories: [, JS]
+categories: [AI, FrontEnd]
 image: assets/images/screenshot-20240308-113527.jpg
-tags: [featured]
+tags: [ChatGPT, Gemini]
 ---
 前端开发即将成为历史，Google Gemini Team、Google Chrome Team、Google Cloud Team 和 Google Chromebook Team 合著的论文[《Chrome `<!DOCTYPE aigc>`: Your next web page is not HTML》][paper1-url] 提出了通过大模型零成本发布网页的设计方案。论文中提到 Chrome 在实验一个功能，你的网页内容只需使用人类语言编写提示词，当用户浏览你的网站时，Chrome 会根据大模型自动生成网页内容。
 
