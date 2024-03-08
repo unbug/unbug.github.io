@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "一分钟读论文：《Chrome 〈!DOCTYPE aigc〉: Your next web page is not HTML》"
+title:  "一分钟读论文：《Chrome 〈!DOCTYPE aigc〉: 你的网页何必是 HTML》"
 author: unbug
 categories: [AI, FrontEnd]
 image: assets/images/screenshot-20240308-113527.jpg
