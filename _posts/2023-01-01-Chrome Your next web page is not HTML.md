@@ -14,24 +14,24 @@ tags: [ChatGPT, Gemini]
 
 与此同时 OpenAI 也在测试同样功能的 React 组件 [`<OpenAIView>`][links-1]，两者的目标都是让自家的大模型接管网页开发和内容生成。从论文内容来看 Google Chrome `<!DOCTYPE aigc>` 功能更强大些，以下来看看两者的差异性：
 
-**实现原理：**
+**实现原理**
 
-- Google Chrome `<!DOCTYPE aigc>` 基于 Google Gemini 大模型生成内容，WebSocket 加载，以 Chrome 作为渲染载体。
+- Google Chrome `<!DOCTYPE aigc>` ：基于 Google Gemini 大模型生成内容，WebSocket 加载，以 Chrome 作为渲染载体。
 ![]({{ site.baseurl }}/assets/images/screenshot-20240308-113527.jpg)
 
-- OpenAI 的 React 组件 `<OpenAIView>` 基于 OpenAI 的大模型生成内容，微前端加载，以 React 作为渲染容器。
+- OpenAI 的 React 组件 `<OpenAIView>`： 基于 OpenAI 的大模型生成内容，微前端加载，以 React 作为渲染容器。
 
-**例子：**
+**例子**
 
-Google Chrome `<!DOCTYPE aigc>`
+Google Chrome `<!DOCTYPE aigc>`：
 
 ```<!DOCTYPE aigc>
 Show me a YouTube-like website
  that shows short funny cat videos.
- 
+
  ```
 
-OpenAI 的 React 组件 `<OpenAIView>`
+OpenAI 的 React 组件 `<OpenAIView>`：
 
 ```//...
 export default function MyApp() {
@@ -44,44 +44,44 @@ export default function MyApp() {
 }
 ```
 
-**内容生成：**
+**内容生成**
 
-Google Chrome `<!DOCTYPE aigc>`
+Google Chrome `<!DOCTYPE aigc>`：
 
 - 文本、图片、视频、动画等 HTML 网页元素 100%支持；
 - `支持可交互游戏`，通过  Canvas+WebGL+WASM 实现；
 - `支持动态更新`，按需更新网页中的模块；
 - 支持 `Single Source of Truth`，严格根据提供的在线数据 API 解析并生成内容；
 
-OpenAI 的 React 组件 `<OpenAIView>`
+OpenAI 的 React 组件 `<OpenAIView>`：
 
 - 文本、图片、视频等 React 组件生态支持的元素；
 - 不支持可交互游戏；
 - 不支持动态更新；
 - 不支持 Single Source of Truth；
 
-**可用性：**
+**可用性**
 
-Google Chrome `<!DOCTYPE aigc>`
+Google Chrome `<!DOCTYPE aigc>`：
 
 - 支持跨平台，`但仅限于 Chrome，不兼容其他浏览器`；
 - 装备 Google AI 芯片的 Chromebook `支持离线浏览`；
 - `全球可用`；
 
-OpenAI 的 React 组件`<OpenAIView>`
+OpenAI 的 React 组件 `<OpenAIView>`：
 
 - 支持跨平台，`兼容任何浏览器`；
 - 不支持离线；
 - 仅欧美地区；
 
-**安全性：**
+**安全性**
 
-Google Chrome `<!DOCTYPE aigc>`
+Google Chrome `<!DOCTYPE aigc>`：
 
 - `支持加密`，通过加密提示词防止他人盗用，Chrome 会校验提示词的加密 hash 与域名的匹配，保证你的网站内容总是独一无二的。
 - `支持隐私策略`，用户浏览的内容都是无法追踪的；
 
-OpenAI 的 React 组件`<OpenAIView>`
+OpenAI 的 React 组件 `<OpenAIView>`：
 
 - 不支持加密；
 - 不支持隐私策略；
