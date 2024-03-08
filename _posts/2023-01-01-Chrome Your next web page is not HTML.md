@@ -28,6 +28,7 @@ Google Chrome `<!DOCTYPE aigc>`
 ```<!DOCTYPE aigc>
 Show me a YouTube-like website
  that shows short funny cat videos.
+ 
  ```
 
 OpenAI 的 React 组件 `<OpenAIView>`
