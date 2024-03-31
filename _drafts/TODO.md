@@ -20,6 +20,9 @@
 'Security FrontEnd Architecture Performance Productivity Engineering Engineer AI'   
 # Keywords
 
+# game theory
+博弈论在区块链中的应用综述
+https://www.semanticscholar.org/paper/A-Survey-on-Applications-of-Game-Theory-in-Liu-Luong/2ee0bdd629d05df63cb7a30338b59a9cbf4c51b7
 
 # Leadership
 弹性项目管理
