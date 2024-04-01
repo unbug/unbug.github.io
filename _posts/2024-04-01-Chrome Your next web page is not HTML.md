@@ -8,7 +8,7 @@ tags: [ChatGPT, Gemini]
 ---
 前端开发即将成为历史，Google Gemini Team、Google Chrome Team、Google Cloud Team 和 Google Chromebook Team 合著的论文[《Chrome `<!DOCTYPE aigc>`: Your next web page is not HTML》][paper1-url] 提出了通过大模型零成本发布网页的设计方案。论文中提到 Chrome 在实验一个功能，你的网页内容只需使用人类语言编写提示词，当用户浏览你的网站时，Chrome 会根据大模型自动生成网页内容。
 
-你只需将 HTML 文档类型声明 `<!DOCTYPE HTML>` 替换为 `<!DOCTYPE aigc>`，主体内容则是你网页的提示词，例如，“一个类 YouTube 的网站，展示搞笑的猫短视频”。
+你只需将 HTML 文档类型声明 `<!DOCTYPE html>` 替换为 `<!DOCTYPE aigc>`，主体内容则是你网页的提示词，例如，“一个类 YouTube 的网站，展示搞笑的猫短视频”。
 
 如果你购买了下一代搭载了 Google 自研 AI 芯片的 Google Chromebooks，你的用户甚至可以在`无需联网`的情况下访问你的网址，即刻浏览由 Google 强大的多模态大模型 Gemini 生成的网页内容。
 
