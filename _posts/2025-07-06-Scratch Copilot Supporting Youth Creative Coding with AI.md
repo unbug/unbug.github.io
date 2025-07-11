@@ -14,6 +14,9 @@ Google DeepMind 研究科学家和华盛顿大学教授合作的一篇论文[《
 
 ![Vibelf 一键交互功能](/assets/images/screenshot-20250708-04.jpg)
 
+![Vibelf 多角色支持系统](/assets/images/screenshot-20250708-03.jpg)
+
+
 
 ## 研究背景与问题
 
@@ -92,7 +95,6 @@ Google DeepMind 研究科学家和华盛顿大学教授合作的一篇论文[《
 8. **适应性设计**：根据不同年龄和技能水平调整支持策略和认知负荷
 
 ## 技术创新
-![Vibelf 多角色支持系统](/assets/images/screenshot-20250708-03.jpg)
 
 Scratch Copilot 的核心技术创新已在[**Vibelf - Scratch Copilot**](https://vibelf.com/)中得到完整实现：
 
