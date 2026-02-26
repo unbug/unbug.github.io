@@ -1,12 +1,15 @@
 ---
-title: "一分钟读论文：《On the Robustness of Code Generation Techniques: An Empirical Study on GitHub Copilot》"
+title: "一分钟读论文：《GitHub Copilot 的代码生成稳健吗？》"
 author: unbug
 categories: [AI, Software Engineering]
+image: assets/images/screenshot-20240308-113527.jpg
 tags: [featured, 代码生成, AI]
 date: 2026-02-26 12:00:00 +0800
 ---
 
 # 一分钟读论文：GitHub Copilot 的代码生成稳健吗？
+
+![GitHub Copilot 代码生成研究](/assets/images/screenshot-20240308-113527.jpg)
 
 ## 📝 论文概览
 
@@ -19,6 +22,8 @@ date: 2026-02-26 12:00:00 +0800
 ---
 
 ## 🎯 核心问题
+
+![AI 代码生成工具界面](/assets/images/screenshot-20231106-160243.jpg)
 
 你有没有遇到过这种情况：用同样的需求，换个说法让 AI 写代码，结果生成的代码完全不一样？这篇论文就是研究的就是这个问题——**AI 代码生成工具的稳健性**。
 

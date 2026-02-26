@@ -1,12 +1,15 @@
 ---
-title: "一分钟读论文：《Software Stability: A Systematic Literature Review》"
+title: "一分钟读论文：《软件稳定性：系统性文献综述》"
 author: unbug
 categories: [Software Engineering, 质量]
+image: assets/images/screenshot-20230407-153622.jpg
 tags: [featured, 软件稳定性, 系统性文献综述]
 date: 2026-02-26 13:00:00 +0800
 ---
 
 ## 论文速览
+
+![软件稳定性研究](/assets/images/screenshot-20230407-153622.jpg)
 
 这篇来自墨西哥韦拉克鲁斯大学的研究团队在 2018 年发表的论文，做了一件非常有价值的事情：他们系统地梳理了软件稳定性领域的所有研究，给我们画出了一张完整的"知识地图"。
 
@@ -19,6 +22,8 @@ date: 2026-02-26 13:00:00 +0800
 稳定性好的软件，就像一块"防波堤"，能把这种涟漪效应控制在最小范围内。
 
 ## 为什么稳定性这么重要？
+
+![软件工程质量属性](/assets/images/screenshot-20230407-153513.jpg)
 
 论文指出，稳定性在软件工程里是个"硬通货"：
 
