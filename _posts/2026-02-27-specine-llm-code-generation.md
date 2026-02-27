@@ -2,11 +2,14 @@
 title: "一分钟读论文：《大语言模型代码生成的规格对齐》"
 author: unbug
 categories: [AI, 软件工程]
+image: assets/images/arxiv-paper-specine-llm-code-generation.png
 tags: [featured, 代码生成, ICSE 2026]
 date: 2026-02-27 00:00:00 +0800
 ---
 
 # 一分钟读论文：大语言模型代码生成的规格对齐
+
+![大语言模型代码生成的规格对齐](/assets/images/arxiv-paper-specine-llm-code-generation.png)
 
 ## 📝 论文概览
 
