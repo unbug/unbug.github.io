@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f3460;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e94560;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff6b6b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bgGrad)"/>
+
+  <circle cx="600" cy="400" r="300" fill="none" stroke="#0f3460" stroke-width="2" opacity="0.3"/>
+  <circle cx="600" cy="400" r="250" fill="none" stroke="#0f3460" stroke-width="2" opacity="0.4"/>
+  <circle cx="600" cy="400" r="200" fill="none" stroke="#e94560" stroke-width="2" opacity="0.5"/>
+
+  <g filter="url(#shadow)">
+    <rect x="350" y="320" width="500" height="160" rx="15" fill="url(#cardGrad)" stroke="#e94560" stroke-width="2"/>
+    <text x="600" y="380" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#fff" text-anchor="middle">Vision-DeepResearch</text>
+    <text x="600" y="420" font-family="Arial, sans-serif" font-size="18" fill="#a0a0a0" text-anchor="middle">长时序多模态深度研究模型</text>
+    <text x="600" y="450" font-family="Arial, sans-serif" font-size="16" fill="#e94560" text-anchor="middle">8B / 30B 版本</text>
+  </g>
+
+  <g filter="url(#glow)">
+    <g transform="translate(150, 200)">
+      <rect x="0" y="0" width="140" height="100" rx="10" fill="url(#cardGrad)" stroke="#4ecdc4" stroke-width="2"/>
+      <text x="70" y="40" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4ecdc4" text-anchor="middle">图像输入</text>
+      <rect x="25" y="55" width="90" height="30" rx="5" fill="#1a1a2e"/>
+      <rect x="30" y="60" width="25" height="20" rx="2" fill="#4ecdc4" opacity="0.6"/>
+      <rect x="60" y="60" width="25" height="20" rx="2" fill="#4ecdc4" opacity="0.4"/>
+      <rect x="45" y="65" width="25" height="15" rx="2" fill="#4ecdc4" opacity="0.8"/>
+    </g>
+
+    <g transform="translate(910, 200)">
+      <rect x="0" y="0" width="140" height="100" rx="10" fill="url(#cardGrad)" stroke="#4ecdc4" stroke-width="2"/>
+      <text x="70" y="40" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4ecdc4" text-anchor="middle">文本输入</text>
+      <rect x="25" y="55" width="90" height="30" rx="5" fill="#1a1a2e"/>
+      <rect x="30" y="60" width="80" height="4" rx="2" fill="#4ecdc4" opacity="0.8"/>
+      <rect x="30" y="70" width="60" height="4" rx="2" fill="#4ecdc4" opacity="0.6"/>
+      <rect x="30" y="80" width="70" height="4" rx="2" fill="#4ecdc4" opacity="0.7"/>
+    </g>
+
+    <g transform="translate(150, 500)">
+      <rect x="0" y="0" width="140" height="100" rx="10" fill="url(#cardGrad)" stroke="#ffd93d" stroke-width="2"/>
+      <text x="70" y="40" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffd93d" text-anchor="middle">图像搜索</text>
+      <circle cx="45" cy="70" r="12" fill="none" stroke="#ffd93d" stroke-width="2"/>
+      <line x1="53" y1="78" x2="65" y2="90" stroke="#ffd93d" stroke-width="2" stroke-linecap="round"/>
+      <rect x="75" y="58" width="30" height="25" rx="3" fill="#ffd93d" opacity="0.4"/>
+      <rect x="80" y="63" width="20" height="15" rx="2" fill="#ffd93d" opacity="0.6"/>
+    </g>
+
+    <g transform="translate(910, 500)">
+      <rect x="0" y="0" width="140" height="100" rx="10" fill="url(#cardGrad)" stroke="#ffd93d" stroke-width="2"/>
+      <text x="70" y="40" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffd93d" text-anchor="middle">文本搜索</text>
+      <circle cx="45" cy="70" r="12" fill="none" stroke="#ffd93d" stroke-width="2"/>
+      <line x1="53" y1="78" x2="65" y2="90" stroke="#ffd93d" stroke-width="2" stroke-linecap="round"/>
+      <rect x="75" y="60" width="40" height="4" rx="2" fill="#ffd93d" opacity="0.8"/>
+      <rect x="75" y="70" width="30" height="4" rx="2" fill="#ffd93d" opacity="0.6"/>
+      <rect x="75" y="80" width="35" height="4" rx="2" fill="#ffd93d" opacity="0.7"/>
+    </g>
+  </g>
+
+  <g stroke="#e94560" stroke-width="3" fill="none" opacity="0.6">
+    <path d="M 290 250 Q 440 300 500 380" stroke-dasharray="8,4">
+      <animate attributeName="stroke-dashoffset" from="24" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 910 250 Q 760 300 700 380" stroke-dasharray="8,4">
+      <animate attributeName="stroke-dashoffset" from="24" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 290 550 Q 440 500 500 420" stroke-dasharray="8,4">
+      <animate attributeName="stroke-dashoffset" from="24" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 910 550 Q 760 500 700 420" stroke-dasharray="8,4">
+      <animate attributeName="stroke-dashoffset" from="24" to="0" dur="2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <g transform="translate(475, 120)">
+    <rect x="0" y="0" width="250" height="60" rx="10" fill="url(#accentGrad)" filter="url(#glow)"/>
+    <text x="125" y="28" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">数十轮推理</text>
+    <text x="125" y="50" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle">数百次搜索引擎交互</text>
+  </g>
+
+  <g transform="translate(475, 620)">
+    <rect x="0" y="0" width="250" height="70" rx="10" fill="url(#cardGrad)" stroke="#00d4aa" stroke-width="2"/>
+    <text x="125" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#00d4aa" text-anchor="middle">性能超越</text>
+    <text x="125" y="55" font-family="Arial, sans-serif" font-size="14" fill="#fff" text-anchor="middle">GPT-5 · Gemini-2.5 Pro · Claude-4</text>
+  </g>
+
+  <g transform="translate(50, 30)">
+    <text x="0" y="30" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#fff">2026 年 1 月</text>
+    <text x="0" y="60" font-family="Arial, sans-serif" font-size="18" fill="#a0a0a0">arXiv:2601.22060</text>
+  </g>
+
+  <g transform="translate(1000, 30)">
+    <text x="0" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#fff">开源</text>
+    <text x="0" y="55" font-family="Arial, sans-serif" font-size="14" fill="#a0a0a0">GitHub: 377+ Stars</text>
+  </g>
+
+  <g transform="translate(400, 730)">
+    <circle cx="20" cy="20" r="8" fill="#4ecdc4"/>
+    <text x="40" y="25" font-family="Arial, sans-serif" font-size="12" fill="#a0a0a0">输入</text>
+    <circle cx="120" cy="20" r="8" fill="#ffd93d"/>
+    <text x="140" y="25" font-family="Arial, sans-serif" font-size="12" fill="#a0a0a0">搜索工具</text>
+    <circle cx="240" cy="20" r="8" fill="#e94560"/>
+    <text x="260" y="25" font-family="Arial, sans-serif" font-size="12" fill="#a0a0a0">核心模型</text>
+    <circle cx="360" cy="20" r="8" fill="#00d4aa"/>
+    <text x="380" y="25" font-family="Arial, sans-serif" font-size="12" fill="#a0a0a0">输出</text>
+  </g>
+</svg>
