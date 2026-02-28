@@ -1,16 +1,11 @@
-
 ---
-title: "一分钟读论文：《Gated Attention：用一个小阀门让 LLM 性能飙升》"
-author: unbug
-categories: [AI, 深度学习]
-image: assets/images/gated-attention-hero.jpg
-tags: [NeurIPS 2025, Best Paper, Gated Attention, LLM, Qwen, 阿里巴巴]
+layout: post
+title: "NeurIPS 2025 最佳论文：Gated Attention，用一个小阀门让 LLM 性能飙升"
 date: 2026-02-28 00:00:00 +0800
+categories: [AI, 深度学习]
+tags: [NeurIPS 2025, Best Paper, Gated Attention, LLM, Qwen, 阿里巴巴]
+image: assets/images/gated-attention-hero.jpg
 ---
-
-# 一分钟读论文：Gated Attention：用一个小阀门让 LLM 性能飙升
-
-![Gated Attention](/assets/images/gated-attention-hero.jpg)
 
 ## 引言
 
