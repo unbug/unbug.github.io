@@ -4,7 +4,7 @@ title: "Vision-DeepResearch：首个长时序多模态深度研究模型，8B �
 date: 2026-03-01 01:50:00 +0800
 categories: research
 tags: [multimodal, deep-research, vision-language, mllm, ai]
-image: /images/vision-deepresearch-architecture.svg
+image: assets/images/vision-deepresearch-architecture.svg
 ---
 
 ![Vision-DeepResearch 架构图](/images/vision-deepresearch-architecture.svg)
