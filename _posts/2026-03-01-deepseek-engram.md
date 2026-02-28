@@ -4,9 +4,12 @@ title: "DeepSeek Engram：颠覆GPU内存瓶颈！把知识存储从计算中分
 date: 2026-03-01 01:15:00 +0800
 categories: [AI, 论文解读]
 tags: [DeepSeek, Engram, 内存架构, 稀疏性, MoE, 大语言模型]
+image: assets/images/2026-03-01-deepseek-engram.svg
 ---
 
 # DeepSeek Engram：颠覆GPU内存瓶颈！把知识存储从计算中分离，O(1)查找效率！
+
+![DeepSeek Engram](/assets/images/2026-03-01-deepseek-engram.svg)
 
 你有没有想过：为什么大模型需要这么贵的GPU？为什么每一代模型都在疯狂抢HBM内存？
 
