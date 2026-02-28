@@ -1,9 +1,11 @@
+
 ---
 layout: post
 title: "NeurIPS 2025 最佳论文：Gated Attention，用一个小阀门让 LLM 性能飙升"
 date: 2026-02-28 00:00:00 +0800
 categories: [AI, 深度学习]
 tags: [NeurIPS 2025, Best Paper, Gated Attention, LLM, Qwen, 阿里巴巴]
+image: assets/images/gated-attention-hero.jpg
 ---
 
 ## 引言
@@ -168,3 +170,4 @@ Gated Attention 已经被集成到 Qwen3-Next 模型中，但这只是开始：
 ---
 
 *参考论文：Gated Attention for Large Language Models: Non-linearity, Sparsity, and Attention-Sink-Free (Qwen Team, NeurIPS 2025 Best Paper)*
+
