@@ -3,7 +3,6 @@ layout: post
 title:  "一分钟读论文：《MCP 一周年：从内部实验到行业标准》"
 author: unbug
 categories: [AI, Agent]
-image: assets/images/screenshot-20260228-placeholder.jpg
 tags: [MCP, AgenticAI, AAIF]
 ---
 来自 Leonardo Piñeyro 和 Pento 的论文[《A Year of MCP: From Internal Experiment to Industry Standard》][paper1-url] 为我们展示了 MCP（Model Context Protocol）从诞生到成为行业标准的惊人崛起之路。一年时间，MCP SDK 月下载量达到 9700 万，10,000+ 活跃服务器，更重要的是获得了 Anthropic、OpenAI、Google、Microsoft 等巨头的支持，成为 Agentic AI 的事实标准。

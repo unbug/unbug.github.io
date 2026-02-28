@@ -1,0 +1,176 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="50%" style="stop-color:#1e293b"/>
+      <stop offset="100%" style="stop-color:#0f172a"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b"/>
+      <stop offset="100%" style="stop-color:#0f172a"/>
+    </linearGradient>
+    <linearGradient id="gateGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="50%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6" stop-opacity="0.8"/>
+      <stop offset="100%" style="stop-color:#10b981" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 主背景 -->
+  <rect width="1200" height="600" fill="url(#bgGrad)"/>
+
+  <!-- 标题 -->
+  <text x="600" y="80" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="48" font-weight="700" fill="#ffffff">
+    Gated Attention
+  </text>
+  <text x="600" y="125" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="24" fill="#94a3b8">
+    给注意力加个智能阀门
+  </text>
+
+  <!-- 左：标准注意力 -->
+  <g transform="translate(150, 200)">
+    <rect x="0" y="0" width="300" height="250" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="2"/>
+    <text x="150" y="40" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="600" fill="#ffffff">
+      标准注意力
+    </text>
+    <!-- 输入 -->
+    <rect x="30" y="70" width="100" height="60" rx="8" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="80" y="105" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="14" fill="#94a3b8">
+      Input
+    </text>
+    <!-- 箭头1 -->
+    <line x1="130" y1="100" x2="170" y2="100" stroke="#64748b" stroke-width="3" marker-end="url(#arrow1)"/>
+    <!-- SDPA -->
+    <rect x="170" y="70" width="100" height="60" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+    <text x="220" y="90" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#60a5fa">
+      SDPA
+    </text>
+    <text x="220" y="110" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#94a3b8">
+      (Attention
+    </text>
+    <!-- 箭头2 -->
+    <line x1="270" y1="100" x2="300" y2="100" stroke="#64748b" stroke-width="3" marker-end="url(#arrow1)"/>
+    <!-- 输出 -->
+    <rect x="300" y="70" width="100" height="60" rx="8" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="350" y="105" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="14" fill="#94a3b8">
+      Output
+    </text>
+    <!-- 问题 -->
+    <text x="150" y="220" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#f87171">
+      ❌ 注意力汇聚 · 训练不稳定
+    </text>
+  </g>
+
+  <!-- 右：Gated Attention -->
+  <g transform="translate(750, 200)">
+    <rect x="0" y="0" width="300" height="250" rx="16" fill="url(#cardGrad)" stroke="#10b981" stroke-width="2"/>
+    <text x="150" y="40" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="600" fill="#ffffff">
+      Gated Attention
+    </text>
+    <!-- 输入 -->
+    <rect x="30" y="70" width="80" height="50" rx="8" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <text x="70" y="100" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="13" fill="#94a3b8">
+      Input
+    </text>
+    <!-- 箭头1 -->
+    <line x1="110" y1="95" x2="130" y2="95" stroke="#64748b" stroke-width="3" marker-end="url(#arrow1)"/>
+    <!-- SDPA -->
+    <rect x="130" y="70" width="80" height="50" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+    <text x="170" y="90" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#60a5fa">
+      SDPA
+    </text>
+    <!-- 箭头2 -->
+    <line x1="210" y1="95" x2="230" y2="95" stroke="#64748b" stroke-width="3" marker-end="url(#arrow1)"/>
+    <!-- 阀门（Gate） -->
+    <rect x="230" y="60" width="70" height="70" rx="8" fill="url(#gateGrad)" stroke="#ffffff" stroke-width="2"/>
+    <text x="265" y="85" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#ffffff">
+      GATE
+    </text>
+    <text x="265" y="105" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="9" fill="#ffffff">
+      (智能阀门)
+    </text>
+    <!-- 箭头3 -->
+    <line x1="300" y1="95" x2="320" y2="95" stroke="#64748b" stroke-width="3" marker-end="url(#arrow1)"/>
+    <!-- 输出 -->
+    <rect x="320" y="70" width="80" height="50" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="360" y="100" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="13" fill="#94a3b8">
+      Output
+    </text>
+    <!-- Query -> Gate -->
+    <line x1="70" y1="120" x2="70" y2="140" stroke="#64748b" stroke-width="2" stroke-dasharray="5,3"/>
+    <line x1="70" y1="140" x2="265" y2="140" stroke="#64748b" stroke-width="2" stroke-dasharray="5,3"/>
+    <line x1="265" y1="140" x2="265" y2="130" stroke="#64748b" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrow1)"/>
+    <text x="167" y="155" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#94a3b8">
+      Query
+    </text>
+    <!-- 优势 -->
+    <text x="150" y="220" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#34d399">
+      ✅ 更稳定 · 无汇聚 · 长上下文更好
+    </text>
+  </g>
+
+  <!-- 中间对比箭头 -->
+  <g transform="translate(500, 280)">
+    <circle cx="100" cy="50" r="40" fill="url(#glowGrad)" opacity="0.3"/>
+    <circle cx="100" cy="50" r="30" fill="url(#glowGrad)" opacity="0.5"/>
+    <text x="100" y="55" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="700" fill="#ffffff">
+      →
+    </text>
+  </g>
+
+  <!-- 底部特性 -->
+  <g transform="translate(100, 480)">
+    <rect x="0" y="0" width="1000" height="100" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+    <text x="500" y="35" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600" fill="#ffffff">
+      核心特性
+    </text>
+    <g transform="translate(50, 55)">
+      <circle cx="50" cy="20" r="12" fill="#3b82f6"/>
+      <text x="50" y="25" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#ffffff">
+        1
+      </text>
+      <text x="110" y="30" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="14" fill="#94a3b8">
+        可学习门控
+      </text>
+    </g>
+    <g transform="translate(250, 55)">
+      <circle cx="50" cy="20" r="12" fill="#10b981"/>
+      <text x="50" y="25" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#ffffff">
+        2
+      </text>
+      <text x="110" y="30" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="14" fill="#94a3b8">
+        头级独立
+      </text>
+    </g>
+    <g transform="translate(450, 55)">
+      <circle cx="50" cy="20" r="12" fill="#f59e0b"/>
+      <text x="50" y="25" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#ffffff">
+        3
+      </text>
+      <text x="120" y="30" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="14" fill="#94a3b8">
+        即插即用
+      </text>
+    </g>
+    <g transform="translate(680, 55)">
+      <circle cx="50" cy="20" r="12" fill="#8b5cf6"/>
+      <text x="50" y="25" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#ffffff">
+        4
+      </text>
+      <text x="120" y="30" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="14" fill="#94a3b8">
+        轻量级
+      </text>
+    </g>
+  </g>
+
+  <!-- 箭头标记 -->
+  <defs>
+    <marker id="arrow1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>

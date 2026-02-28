@@ -1,9 +1,7 @@
-
 ---
 title: "一分钟读论文：《基于代理的集成推理解决仓库级问题》"
 author: unbug
 categories: [AI, 软件工程]
-image: assets/images/arxiv-paper-trae-agent.png
 tags: [featured, 代码生成, ICSE 2026, Agent]
 date: 2026-02-28 00:00:00 +0800
 ---
