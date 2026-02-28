@@ -4,7 +4,11 @@ title:  "一分钟读论文：《当 Many-Shot Prompting 失败时：LLM 代码�
 author: unbug
 categories: [AI, LLM]
 tags: [LLM, Prompting, CodeTranslation]
+image: assets/images/arxiv-paper-many-shot-prompting.png
 ---
+来自 Amir Kiarafiei 等人的论文[《When Many-Shot Prompting Fails: An Empirical Study of LLM Code Translation》][paper1-url] 将在 ICSE 2026 的 ReCode Workshop 上发表。这篇论文揭示了一个有趣的"Many-Shot 悖论"：在代码翻译等语义复杂的任务中，**更多示例≠更好结果**，反而 5-25 个 Few-Shot 示例效果最佳。研究团队通过 90,000+ 次翻译实验，涵盖 6 种语言、30 种语言对，为我们提供了宝贵的实证数据。
+
+![Many-Shot Prompting](/assets/images/arxiv-paper-many-shot-prompting.png)
 来自 Amir Kiarafiei 等人的论文[《When Many-Shot Prompting Fails: An Empirical Study of LLM Code Translation》][paper1-url] 将在 ICSE 2026 的 ReCode Workshop 上发表。这篇论文揭示了一个有趣的"Many-Shot 悖论"：在代码翻译等语义复杂的任务中，**更多示例≠更好结果**，反而 5-25 个 Few-Shot 示例效果最佳。研究团队通过 90,000+ 次翻译实验，涵盖 6 种语言、30 种语言对，为我们提供了宝贵的实证数据。
 
 ## 1. 论文概览

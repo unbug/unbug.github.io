@@ -3,9 +3,12 @@ layout: post
 title: "Genie 3: DeepMind 发布首个实时交互式世界模型"
 date: 2026-02-28 20:34:00 +0800
 categories: ai research
+image: assets/images/arxiv-paper-genie-3.png
 ---
 
 # Genie 3: DeepMind 发布首个实时交互式世界模型
+
+![Genie 3](/assets/images/arxiv-paper-genie-3.png)
 
 2025 年 8 月 5 日，Google DeepMind 发布了 **Genie 3**，这是全球首个**实时交互式通用世界模型**，能够从单一文本提示生成可导航的 3D 环境。
 

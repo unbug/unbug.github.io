@@ -3,9 +3,12 @@ layout: post
 title: "Agent World Model：1000 个合成环境，让 AI 智能体学习效率翻倍"
 date: 2026-02-28 21:45:00 +0800
 categories: ai research
+image: assets/images/arxiv-paper-agent-world-model.png
 ---
 
 # Agent World Model：1000 个合成环境，让 AI 智能体学习效率翻倍
+
+![Agent World Model](/assets/images/arxiv-paper-agent-world-model.png)
 
 2026 年 2 月，北卡罗来纳大学教堂山分校和 Snowflake 的研究团队发布了 **Agent World Model (AWM)**，这是一个能够生成 1000 个合成环境的管道，彻底解决了智能体训练缺乏多样化环境的难题。
 

@@ -4,10 +4,12 @@ title: "Google Nested Learning：破解 AI 灾难性遗忘的革命性范式"
 date: 2026-02-28 00:00:00 +0800
 categories: [AI, 深度学习]
 tags: [Google, Nested Learning, 灾难性遗忘, NeurIPS, 2025]
+image: assets/images/arxiv-paper-nested-learning.png
 ---
 
 ## 引言
 
+![Google Nested Learning](/assets/images/arxiv-paper-nested-learning.png)
 如果我告诉你：过去十年我们对"深度学习"的理解可能都是错的，你会怎么想？
 
 2025 年 NeurIPS 大会上，Google Research 发表了一篇名为《Nested Learning: The Illusion of Deep Learning Architecture》的论文，彻底颠覆了我们对 AI 学习的认知。这不是又一个架构上的小修小补，而是对"学习"本身的重新定义。

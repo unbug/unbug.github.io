@@ -3,9 +3,12 @@ layout: post
 title: "DeepSeek R1：纯强化学习如何让 AI 学会自主推理"
 date: 2026-02-28 19:30:00 +0800
 categories: ai research
+image: assets/images/arxiv-paper-deepseek-r1.png
 ---
 
 # DeepSeek R1：纯强化学习如何让 AI 学会自主推理
+
+![DeepSeek R1](/assets/images/arxiv-paper-deepseek-r1.png)
 
 2025 年初，中国 AI 公司 DeepSeek 发布了一个震惊整个行业的模型——DeepSeek R1。这个模型不仅在推理能力上媲美 OpenAI 的 o1，更重要的是，它揭示了一个革命性的训练范式：**AI 可以通过纯强化学习自主学会推理，而不需要人类标注的监督数据**。
 
