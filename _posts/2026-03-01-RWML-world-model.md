@@ -1,11 +1,11 @@
 ---
 layout: post
 author: unbug
-title: "RWML：让 LLM 智能体学会"预测未来"——微软研究院突破性论文解读"
+title: "RWML：让 LLM 智能体学会预测未来——微软研究院突破性论文解读"
 date: 2026-03-01 10:00:00 +0800
 categories: [AI, 论文解读]
 tags: [AI, 论文, 强化学习, 世界模型, LLM, 智能体]
-image: /assets/images/2026-03-01-rwml-world-model.png
+image: assets/images/2026-03-01-rwml-world-model.png
 ---
 
 ![RWML 世界模型](/assets/images/2026-03-01-rwml-world-model.png)

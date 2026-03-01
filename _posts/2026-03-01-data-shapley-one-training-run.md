@@ -5,7 +5,7 @@ title: "ICLR 2025 杰出论文：一次训练就能计算数据价值——AI �
 date: 2026-03-01 13:30:00 +0800
 categories: [AI]
 tags: [AI, Machine Learning, Data Shapley, ICLR 2025]
-image: /assets/images/2026-03-01-data-shapley.png
+image: assets/images/2026-03-01-data-shapley.png
 ---
 
 ![Data Shapley in One Training Run](/assets/images/2026-03-01-data-shapley.png)
