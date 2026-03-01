@@ -1,0 +1,141 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <defs>
+    <linearGradient id="bgGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#151530;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="warningGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff9500;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff5e3a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="successGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#56ab2f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a8e063;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="1200" height="800" fill="url(#bgGradient3)"/>
+  
+  <!-- 标题 -->
+  <text x="600" y="70" font-family="Arial, sans-serif" font-size="38" font-weight="bold" fill="#ffffff" text-anchor="middle">🚀 从 CTF 统治到安全范式革命</text>
+  <text x="600" y="105" font-family="Arial, sans-serif" font-size="16" fill="#a0a0a0" text-anchor="middle">CAI 的技术突破、局限性与未来展望</text>
+  
+  <!-- 主内容区域 -->
+  <g transform="translate(80, 140)">
+    <!-- 左侧：当前成就 -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="500" height="280" fill="rgba(0,212,255,0.05)" rx="12"/>
+      <text x="250" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#00d4ff" text-anchor="middle">✅ 当前成就</text>
+      
+      <!-- 成就列表 -->
+      <g transform="translate(30, 60)">
+        <circle cx="15" cy="15" r="10" fill="#00d4ff" opacity="0.3"/>
+        <text x="40" y="20" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">Jeopardy CTF 系统性统治</text>
+        
+        <circle cx="15" cy="55" r="10" fill="#00d4ff" opacity="0.3"/>
+        <text x="40" y="60" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">91-94% 解题率</text>
+        
+        <circle cx="15" cy="95" r="10" fill="#00d4ff" opacity="0.3"/>
+        <text x="40" y="100" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">成本降低 98%，经济可行</text>
+        
+        <circle cx="15" cy="135" r="10" fill="#00d4ff" opacity="0.3"/>
+        <text x="40" y="140" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">OT 环境速度优势 37%</text>
+        
+        <circle cx="15" cy="175" r="10" fill="#00d4ff" opacity="0.3"/>
+        <text x="40" y="180" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">$50,000 Neurogrid 大奖</text>
+      </g>
+    </g>
+    
+    <!-- 右侧：局限性与挑战 -->
+    <g transform="translate(540, 0)">
+      <rect x="0" y="0" width="500" height="280" fill="rgba(255,149,0,0.05)" rx="12"/>
+      <text x="250" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#ff9500" text-anchor="middle">⚠️ 局限性与挑战</text>
+      
+      <!-- 挑战列表 -->
+      <g transform="translate(30, 60)">
+        <circle cx="15" cy="15" r="10" fill="#ff9500" opacity="0.3"/>
+        <text x="40" y="20" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">最后的 5% 问题难以突破</text>
+        
+        <circle cx="15" cy="55" r="10" fill="#ff9500" opacity="0.3"/>
+        <text x="40" y="60" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">CTF 到实际部署的巨大鸿沟</text>
+        
+        <circle cx="15" cy="95" r="10" fill="#ff9500" opacity="0.3"/>
+        <text x="40" y="100" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">评估基准危机（古德哈特定律）</text>
+        
+        <circle cx="15" cy="135" r="10" fill="#ff9500" opacity="0.3"/>
+        <text x="40" y="140" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">伦理与双重用途风险</text>
+        
+        <circle cx="15" cy="175" r="10" fill="#ff9500" opacity="0.3"/>
+        <text x="40" y="180" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">责任归属复杂</text>
+      </g>
+    </g>
+    
+    <!-- 底部：未来展望 -->
+    <g transform="translate(0, 320)">
+      <rect x="0" y="0" width="1040" height="260" fill="rgba(86,171,47,0.05)" rx="12"/>
+      <text x="520" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#56ab2f" text-anchor="middle">🔮 未来展望</text>
+      
+      <!-- 时间轴 -->
+      <g transform="translate(40, 60)">
+        <!-- 2025-2026 -->
+        <g transform="translate(0, 0)">
+          <rect x="0" y="0" width="220" height="160" fill="rgba(86,171,47,0.08)" rx="8"/>
+          <text x="110" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#56ab2f" text-anchor="middle">2025-2026</text>
+          <text x="110" y="55" font-family="Arial, sans-serif" font-size="12" fill="#a0a0a0" text-anchor="middle">立即的现实</text>
+          <text x="110" y="85" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">OT环境无法假设</text>
+          <text x="110" y="105" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">人类速度防御足够</text>
+          <text x="110" y="135" font-family="Arial, sans-serif" font-size="11" fill="#ff9500" text-anchor="middle">安全范式转变开始</text>
+        </g>
+        
+        <!-- 箭头 -->
+        <g transform="translate(240, 70)">
+          <line x1="0" y1="0" x2="40" y2="0" stroke="#56ab2f" stroke-width="2"/>
+          <polygon points="35,-5 45,0 35,5" fill="#56ab2f"/>
+        </g>
+        
+        <!-- 2030 -->
+        <g transform="translate(300, 0)">
+          <rect x="0" y="0" width="220" height="160" fill="rgba(86,171,47,0.1)" rx="8" filter="url(#glow3)"/>
+          <text x="110" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffd700" text-anchor="middle">2030</text>
+          <text x="110" y="55" font-family="Arial, sans-serif" font-size="12" fill="#a0a0a0" text-anchor="middle">预测未来</text>
+          <text x="110" y="85" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">没有AI代理的</text>
+          <text x="110" y="105" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">安全运营 = 过时</text>
+          <text x="110" y="135" font-family="Arial, sans-serif" font-size="11" fill="#56ab2f" text-anchor="middle">如同没有防火墙</text>
+        </g>
+        
+        <!-- 箭头 -->
+        <g transform="translate(540, 70)">
+          <line x1="0" y1="0" x2="40" y2="0" stroke="#56ab2f" stroke-width="2"/>
+          <polygon points="35,-5 45,0 35,5" fill="#56ab2f"/>
+        </g>
+        
+        <!-- 行动建议 -->
+        <g transform="translate(600, 0)">
+          <rect x="0" y="0" width="400" height="160" fill="rgba(0,212,255,0.08)" rx="8"/>
+          <text x="200" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#00d4ff" text-anchor="middle">立即行动建议</text>
+          <text x="200" y="60" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">• 立即退役 Jeopardy CTF</text>
+          <text x="200" y="85" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">• 建立 Attack &amp; Defense 新标准</text>
+          <text x="200" y="110" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">• 采用 AI 优先安全架构</text>
+          <text x="200" y="135" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">• 加速自主防御系统部署</text>
+        </g>
+      </g>
+    </g>
+  </g>
+  
+  <!-- 底部引用 -->
+  <g transform="translate(100, 740)">
+    <rect x="0" y="0" width="1000" height="40" fill="rgba(255,255,255,0.03)" rx="6"/>
+    <text x="500" y="25" font-family="Arial, sans-serif" font-size="12" font-style="italic" fill="#a0a0a0" text-anchor="middle">"渐进过渡的窗口已经关闭；在标准化安全任务的人机能力之战中，机器正在展现优势。"</text>
+  </g>
+  
+  <!-- 底部标注 -->
+  <text x="600" y="790" font-family="Arial, sans-serif" font-size="10" fill="#666666" text-anchor="middle">数据来源：Alias Robotics (2025) · arXiv:2512.02654</text>
+</svg>

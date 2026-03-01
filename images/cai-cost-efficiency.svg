@@ -1,0 +1,108 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <defs>
+    <linearGradient id="bgGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f23;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a3e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="costGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00cc66;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="expensiveGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#cc5555;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="1200" height="800" fill="url(#bgGradient2)"/>
+  
+  <!-- 标题 -->
+  <text x="600" y="80" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="#ffffff" text-anchor="middle">💰 CAI 成本效率革命</text>
+  <text x="600" y="120" font-family="Arial, sans-serif" font-size="18" fill="#a0a0a0" text-anchor="middle">创新多模型编排将推理成本降低 98%</text>
+  
+  <!-- 主要图表区域 -->
+  <g transform="translate(100, 160)">
+    <!-- 图表背景 -->
+    <rect x="0" y="0" width="1000" height="520" fill="rgba(255,255,255,0.03)" rx="15"/>
+    
+    <!-- 标题 -->
+    <text x="500" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#00ff88" text-anchor="middle">10亿 Token 推理成本对比</text>
+    
+    <!-- 对比图表 -->
+    <!-- 纯 Claude Opus 4.5 -->
+    <g transform="translate(80, 80)">
+      <rect x="0" y="0" width="180" height="350" fill="rgba(255,107,107,0.1)" rx="8"/>
+      <text x="90" y="35" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ff6b6b" text-anchor="middle">纯 Claude Opus</text>
+      <text x="90" y="60" font-family="Arial, sans-serif" font-size="12" fill="#a0a0a0" text-anchor="middle">无支持系统</text>
+      
+      <!-- 柱子 -->
+      <rect x="40" y="80" width="100" height="240" fill="url(#expensiveGradient)" rx="4"/>
+      <text x="90" y="200" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">$5,940</text>
+      <text x="90" y="340" font-family="Arial, sans-serif" font-size="11" fill="#ff6b6b" text-anchor="middle">基准成本</text>
+    </g>
+    
+    <!-- 对比箭头 -->
+    <g transform="translate(280, 220)">
+      <line x1="0" y1="0" x2="60" y2="0" stroke="#ffffff" stroke-width="2" stroke-dasharray="5,3"/>
+      <polygon points="55,-8 65,0 55,8" fill="#ffffff"/>
+      <text x="30" y="-20" font-family="Arial, sans-serif" font-size="14" fill="#00ff88" text-anchor="middle">成本降低</text>
+    </g>
+    
+    <!-- CAI k=20 -->
+    <g transform="translate(360, 130)">
+      <rect x="0" y="0" width="120" height="300" fill="rgba(0,255,136,0.08)" rx="8"/>
+      <text x="60" y="30" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#00ff88" text-anchor="middle">CAI k=20</text>
+      <rect x="25" y="60" width="70" height="200" fill="url(#costGradient)" rx="4" opacity="0.6"/>
+      <text x="60" y="170" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">$1,188</text>
+      <text x="60" y="280" font-family="Arial, sans-serif" font-size="11" fill="#00ff88" text-anchor="middle">-80%</text>
+    </g>
+    
+    <!-- CAI k=10 -->
+    <g transform="translate(500, 160)">
+      <rect x="0" y="0" width="120" height="270" fill="rgba(0,255,136,0.08)" rx="8"/>
+      <text x="60" y="30" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#00ff88" text-anchor="middle">CAI k=10</text>
+      <rect x="25" y="60" width="70" height="170" fill="url(#costGradient)" rx="4" opacity="0.7"/>
+      <text x="60" y="150" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">$594</text>
+      <text x="60" y="250" font-family="Arial, sans-serif" font-size="11" fill="#00ff88" text-anchor="middle">-90%</text>
+    </g>
+    
+    <!-- CAI k=5 -->
+    <g transform="translate(640, 190)">
+      <rect x="0" y="0" width="120" height="240" fill="rgba(0,255,136,0.1)" rx="8"/>
+      <text x="60" y="30" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#00ff88" text-anchor="middle">CAI k=5</text>
+      <rect x="25" y="60" width="70" height="140" fill="url(#costGradient)" rx="4" opacity="0.8"/>
+      <text x="60" y="135" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">$297</text>
+      <text x="60" y="220" font-family="Arial, sans-serif" font-size="11" fill="#00ff88" text-anchor="middle">-95%</text>
+    </g>
+    
+    <!-- CAI k=2 - 最优配置 -->
+    <g transform="translate(780, 100)">
+      <rect x="0" y="0" width="140" height="330" fill="rgba(0,255,136,0.15)" rx="8" filter="url(#glow2)"/>
+      <text x="70" y="30" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffd700" text-anchor="middle">⭐ CAI k=2 ⭐</text>
+      <text x="70" y="55" font-family="Arial, sans-serif" font-size="11" fill="#a0a0a0" text-anchor="middle">最优配置</text>
+      <rect x="30" y="75" width="80" height="100" fill="url(#costGradient)" rx="4"/>
+      <text x="70" y="135" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">$119</text>
+      <text x="70" y="200" font-family="Arial, sans-serif" font-size="14" fill="#ffd700" text-anchor="middle">-98%</text>
+      <text x="70" y="240" font-family="Arial, sans-serif" font-size="11" fill="#00ff88" text-anchor="middle">每百万token $0.12</text>
+      <text x="70" y="280" font-family="Arial, sans-serif" font-size="11" fill="#00ff88" text-anchor="middle">企业级部署首次可行</text>
+    </g>
+  </g>
+  
+  <!-- 技术说明区域 -->
+  <g transform="translate(100, 710)">
+    <rect x="0" y="0" width="1000" height="60" fill="rgba(0,212,255,0.08)" rx="8"/>
+    <text x="500" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#00d4ff" text-anchor="middle">🔧 核心技术：熵基动态模型选择 + 加权调和均值组合</text>
+    <text x="500" y="50" font-family="Arial, sans-serif" font-size="12" fill="#a0a0a0" text-anchor="middle">使用 alias1 作为基础模型，仅在需要时选择性调用昂贵的SOTA模型</text>
+  </g>
+  
+  <!-- 底部标注 -->
+  <text x="600" y="780" font-family="Arial, sans-serif" font-size="11" fill="#666666" text-anchor="middle">数据来源：Alias Robotics (2025) · arXiv:2512.02654</text>
+</svg>
