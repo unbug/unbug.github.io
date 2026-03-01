@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "三个AI走进酒吧：聪明的AI也会搞"部落主义"？"
+author: unbug
+title: '三个AI走进酒吧：聪明的AI也会搞"部落主义"？'
 date: 2026-03-01 08:30:00 +0800
 categories: [AI, 论文解读]
 tags: [AI代理, 多智能体, 社会行为, 部落主义]

@@ -2,6 +2,7 @@
 layout: post
 title:  "一分钟读论文：《生成式AI在软件工程中的应用：变革软件开发流程》"
 author: unbug
+date: 2026-02-28 00:00:00 +0800
 categories: [AI, Software Engineering]
 tags: [GenerativeAI, SoftwareEngineering, Copilot, Productivity]
 ---

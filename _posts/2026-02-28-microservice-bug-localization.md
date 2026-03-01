@@ -1,6 +1,7 @@
 ---
-title: "一分钟读论文：《自然语言摘要实现微服务多仓库 Bug 定位》"
+layout: post
 author: unbug
+title: "一分钟读论文：《自然语言摘要实现微服务多仓库 Bug 定位》"
 categories: [AI, 软件工程]
 tags: [featured, Bug定位, ICSE 2026, 微服务]
 date: 2026-02-28 00:00:00 +0800

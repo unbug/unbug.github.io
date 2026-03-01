@@ -1,5 +1,6 @@
 ---
 layout: post
+author: unbug
 title: "生成式 AI 如何重塑软件开发：从代码助手到自主代理"
 date: 2026-02-28 00:00:00 +0800
 categories: [AI, 软件工程]

@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Agent World Model 研究：1000 个合成环境推动智能体训练革命"
+author: unbug
 date: 2026-02-28 21:40:00 +0800
-categories: research
+categories: [AI, Agent]
 tags: [agent, reinforcement-learning, synthetic-environments, ai]
 ---
 

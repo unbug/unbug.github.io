@@ -1,8 +1,10 @@
 ---
 layout: post
+author: unbug
 title: "AI for Mathematics：当人工智能邂逅纯数学——2026年的突破性进展"
 date: 2026-03-01 22:00:00 +0800
-categories: ai mathematics research
+categories: [ai, mathematics]
+tags: [featured, 数学, 人工智能]
 image: assets/images/ai-for-mathematics-2026.png
 ---
 

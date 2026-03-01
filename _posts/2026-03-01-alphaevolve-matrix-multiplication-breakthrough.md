@@ -1,5 +1,6 @@
 ---
 layout: post
+author: unbug
 title: "AlphaEvolve：AI 打破 56 年数学纪录，发现更快的矩阵乘法算法"
 date: 2026-03-01 09:45:00 +0800
 categories: [AI, 论文解读]

@@ -1,8 +1,10 @@
 ---
 layout: post
+author: unbug
 title: "DeepSeek R1：纯强化学习如何让 AI 学会自主推理"
 date: 2026-02-28 19:30:00 +0800
-categories: ai research
+categories: [AI, 论文解读]
+tags: [MCP, AgenticAI, AAIF]
 image: assets/images/arxiv-paper-deepseek-r1.png
 ---
 
