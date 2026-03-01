@@ -1,13 +1,11 @@
 ---
 layout: post
+author: unbug
 title: "ICLR 2025 杰出论文：一次训练就能计算数据价值——AI 版权和数据治理的新突破"
 date: 2026-03-01 13:30:00 +0800
-categories: [AI, 论文解读]
+categories: [AI]
 tags: [AI, Machine Learning, Data Shapley, ICLR 2025]
-image:
-  src: /assets/images/2026-03-01-data-shapley.png
-  alt: Data Shapley in One Training Run
-description: "这篇 ICLR 2025 杰出论文提出了 In-Run Data Shapley 方法，首次实现了在一次训练过程中高效计算每个训练数据点的贡献，为 AI 版权、数据治理和模型训练优化提供了革命性的工具。"
+image: /assets/images/2026-03-01-data-shapley.png
 ---
 
 ![Data Shapley in One Training Run](/assets/images/2026-03-01-data-shapley.png)

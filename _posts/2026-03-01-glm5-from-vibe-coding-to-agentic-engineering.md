@@ -1,8 +1,9 @@
 ---
 layout: post
+author: unbug
 title: "GLM-5：从「氛围编程」到「智能体工程」的范式跃迁"
 date: 2026-03-01 16:00:00 +0800
-categories: AI 论文解读
+categories: [AI]
 tags: [GLM-5, 智谱 AI, 大语言模型, 智能体, 强化学习]
 image: assets/images/glm5-illustration.png
 ---

@@ -1,5 +1,6 @@
 ---
 layout: post
+author: unbug
 title: "MiroFlow：面向深度研究任务的高性能开源智能体框架"
 date: 2026-03-01 18:00:00 +0800
 categories: [AI, 论文解读]

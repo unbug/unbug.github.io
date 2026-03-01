@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "PAN 世界模型炸场！MBZUAI 黑科技让 AI 学会"脑补"现实世界"
+author: unbug
+title: "PAN 世界模型炸场！MBZUAI 黑科技让 AI 学会脑补现实世界"
 date: 2026-03-01 08:00:00 +0800
 categories: [AI, 论文解读]
 tags: [世界模型, World Model, PAN, MBZUAI, 人工智能]

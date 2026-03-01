@@ -1,5 +1,6 @@
 ---
 layout: post
+author: unbug
 title: "量子储层计算重大突破！在多体混沌边缘实现最佳性能，为量子AI开辟新道路！"
 date: 2026-03-01 01:40:00 +0800
 categories: [AI, 论文解读]

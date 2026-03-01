@@ -1,5 +1,6 @@
 ---
 layout: post
+author: unbug
 title: "Google Titans + MIRAS：终结 AI 健忘症，让模型拥有真正的长期记忆"
 date: 2026-03-01 05:30:00 +0800
 categories: [AI, 论文解读]

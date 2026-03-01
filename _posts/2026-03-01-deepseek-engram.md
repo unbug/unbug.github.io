@@ -1,5 +1,6 @@
 ---
 layout: post
+author: unbug
 title: "DeepSeek Engram：颠覆GPU内存瓶颈！把知识存储从计算中分离，O(1)查找效率！"
 date: 2026-03-01 01:15:00 +0800
 categories: [AI, 论文解读]

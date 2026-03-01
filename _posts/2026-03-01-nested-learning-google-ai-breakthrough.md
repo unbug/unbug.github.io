@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Google Nested Learning：突破AI"灾难性遗忘"的新范式"
+author: unbug
+title: "Google Nested Learning：突破AI灾难性遗忘的新范式"
 date: 2026-03-01 20:30:00 +0800
 categories: [AI, 机器学习, 深度学习]
-tags: [Nested Learning, Google Research, NeurIPS 2025, 持续学习, 灾难性遗忘, Transformer, Hope架构]
-description: "Google Research在NeurIPS 2025上发表的Nested Learning论文，提出了一种全新的机器学习范式，有望解决AI系统的"灾难性遗忘"问题，让AI像人类大脑一样持续学习。"
+tags: [Nested Learning, Google Research, NeurIPS 2025]
 image: assets/images/2026-03-01-nested-learning-google-ai-breakthrough.svg
 ---
 

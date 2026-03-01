@@ -1,5 +1,6 @@
 ---
 layout: post
+author: unbug
 title: "DeepSeek-R1：用纯强化学习解锁大语言模型的推理能力"
 date: 2026-03-01 04:17:00 +0800
 categories: [AI, 论文解读]

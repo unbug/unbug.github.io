@@ -3,7 +3,7 @@ layout: post
 author: unbug
 title: "AI原生粒子加速器：让大型科学设施学会'自动驾驶'"
 date: 2026-03-01 08:00:00 +0800
-categories: [AI, 科学研究]
+categories: [AI]
 tags: [AI, 粒子加速器, 自动驾驶, 科学设施]
 image: /assets/images/2026-03-01-ai-native-particle-accelerator.png
 ---
