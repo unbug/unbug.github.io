@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="50%" style="stop-color:#1e293b"/>
+      <stop offset="100%" style="stop-color:#0f172a"/>
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="50%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#ec4899"/>
+    </linearGradient>
+    <linearGradient id="matrixGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.1"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <circle cx="100" cy="100" r="2" fill="#3b82f6" opacity="0.5">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1100" cy="530" r="2" fill="#8b5cf6" opacity="0.5">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="600" cy="100" r="1.5" fill="#ec4899" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.9;0.4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="200" cy="500" r="2" fill="#10b981" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.2;0.5" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <g transform="translate(100, 150)">
+    <rect x="0" y="0" width="180" height="180" rx="12" fill="url(#matrixGradient)" stroke="#3b82f6" stroke-width="2"/>
+    <g transform="translate(20, 20)">
+      <rect x="0" y="0" width="35" height="35" rx="4" fill="#3b82f6" opacity="0.8"/>
+      <rect x="45" y="0" width="35" height="35" rx="4" fill="#3b82f6" opacity="0.6"/>
+      <rect x="90" y="0" width="35" height="35" rx="4" fill="#3b82f6" opacity="0.4"/>
+      <rect x="0" y="45" width="35" height="35" rx="4" fill="#3b82f6" opacity="0.6"/>
+      <rect x="45" y="45" width="35" height="35" rx="4" fill="#3b82f6" opacity="0.8"/>
+      <rect x="90" y="45" width="35" height="35" rx="4" fill="#3b82f6" opacity="0.6"/>
+      <rect x="0" y="90" width="35" height="35" rx="4" fill="#3b82f6" opacity="0.4"/>
+      <rect x="45" y="90" width="35" height="35" rx="4" fill="#3b82f6" opacity="0.6"/>
+      <rect x="90" y="90" width="35" height="35" rx="4" fill="#3b82f6" opacity="0.8"/>
+    </g>
+    <text x="90" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#94a3b8" font-weight="bold">4×4</text>
+  </g>
+
+  <g transform="translate(320, 220)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="60" fill="#fbbf24" font-weight="bold" filter="url(#glow)">×</text>
+  </g>
+
+  <g transform="translate(400, 150)">
+    <rect x="0" y="0" width="180" height="180" rx="12" fill="url(#matrixGradient)" stroke="#8b5cf6" stroke-width="2"/>
+    <g transform="translate(20, 20)">
+      <rect x="0" y="0" width="35" height="35" rx="4" fill="#8b5cf6" opacity="0.8"/>
+      <rect x="45" y="0" width="35" height="35" rx="4" fill="#8b5cf6" opacity="0.6"/>
+      <rect x="90" y="0" width="35" height="35" rx="4" fill="#8b5cf6" opacity="0.4"/>
+      <rect x="0" y="45" width="35" height="35" rx="4" fill="#8b5cf6" opacity="0.6"/>
+      <rect x="45" y="45" width="35" height="35" rx="4" fill="#8b5cf6" opacity="0.8"/>
+      <rect x="90" y="45" width="35" height="35" rx="4" fill="#8b5cf6" opacity="0.6"/>
+      <rect x="0" y="90" width="35" height="35" rx="4" fill="#8b5cf6" opacity="0.4"/>
+      <rect x="45" y="90" width="35" height="35" rx="4" fill="#8b5cf6" opacity="0.6"/>
+      <rect x="90" y="90" width="35" height="35" rx="4" fill="#8b5cf6" opacity="0.8"/>
+    </g>
+    <text x="90" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#94a3b8" font-weight="bold">4×4</text>
+  </g>
+
+  <g transform="translate(620, 220)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="60" fill="#10b981" font-weight="bold" filter="url(#glow)">=</text>
+  </g>
+
+  <g transform="translate(700, 150)">
+    <rect x="0" y="0" width="180" height="180" rx="12" fill="url(#matrixGradient)" stroke="#ec4899" stroke-width="2"/>
+    <g transform="translate(20, 20)">
+      <rect x="0" y="0" width="35" height="35" rx="4" fill="#ec4899" opacity="0.8"/>
+      <rect x="45" y="0" width="35" height="35" rx="4" fill="#ec4899" opacity="0.6"/>
+      <rect x="90" y="0" width="35" height="35" rx="4" fill="#ec4899" opacity="0.4"/>
+      <rect x="0" y="45" width="35" height="35" rx="4" fill="#ec4899" opacity="0.6"/>
+      <rect x="45" y="45" width="35" height="35" rx="4" fill="#ec4899" opacity="0.8"/>
+      <rect x="90" y="45" width="35" height="35" rx="4" fill="#ec4899" opacity="0.6"/>
+      <rect x="0" y="90" width="35" height="35" rx="4" fill="#ec4899" opacity="0.4"/>
+      <rect x="45" y="90" width="35" height="35" rx="4" fill="#ec4899" opacity="0.6"/>
+      <rect x="90" y="90" width="35" height="35" rx="4" fill="#ec4899" opacity="0.8"/>
+    </g>
+    <text x="90" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#94a3b8" font-weight="bold">4×4</text>
+  </g>
+
+  <g transform="translate(400, 380)">
+    <rect x="0" y="0" width="400" height="80" rx="16" fill="url(#accentGradient)" opacity="0.2"/>
+    <rect x="2" y="2" width="396" height="76" rx="14" fill="none" stroke="url(#accentGradient)" stroke-width="2"/>
+    <text x="200" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#cbd5e1">Strassen (1969):</text>
+    <text x="200" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#ef4444" font-weight="bold">49</text>
+    <text x="230" y="65" font-family="Arial, sans-serif" font-size="16" fill="#94a3b8">次乘法</text>
+  </g>
+
+  <g transform="translate(400, 480)">
+    <rect x="0" y="0" width="400" height="80" rx="16" fill="url(#accentGradient)" opacity="0.3"/>
+    <rect x="2" y="2" width="396" height="76" rx="14" fill="none" stroke="url(#accentGradient)" stroke-width="3" filter="url(#glow)"/>
+    <text x="200" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#fbbf24">AlphaEvolve (2025):</text>
+    <text x="200" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" fill="#10b981" font-weight="bold">48</text>
+    <text x="240" y="65" font-family="Arial, sans-serif" font-size="18" fill="#94a3b8">次乘法</text>
+    <text x="320" y="65" font-family="Arial, sans-serif" font-size="20" fill="#fbbf24" font-weight="bold">(-1) 🎉</text>
+  </g>
+
+  <g transform="translate(600, 50)">
+    <text x="0" y="0" text-anchor="middle" font-family="Arial, sans-serif" font-size="56" fill="url(#accentGradient)" font-weight="bold" filter="url(#glow)">AlphaEvolve</text>
+    <text x="0" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#94a3b8">打破 56 年数学纪录</text>
+  </g>
+
+  <g transform="translate(100, 50)">
+    <circle cx="0" cy="0" r="3" fill="#3b82f6" opacity="0.3">
+      <animate attributeName="r" values="3;8;3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <g transform="translate(1100, 100)">
+    <circle cx="0" cy="0" r="3" fill="#8b5cf6" opacity="0.3">
+      <animate attributeName="r" values="3;8;3" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
