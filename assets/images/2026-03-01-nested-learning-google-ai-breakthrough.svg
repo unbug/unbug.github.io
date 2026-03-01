@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#10b981"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <path d="M0 225h800M400 0v450" stroke="#64748b" stroke-width="1"/>
+    <path d="M0 150h800M0 300h800M200 0v450M600 0v450" stroke="#64748b" stroke-width="0.5"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="700">Nested Learning</text>
+  <text x="400" y="65" text-anchor="middle" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14">Google Research · NeurIPS 2025</text>
+
+  <!-- Center: Nested layers visualization -->
+  <g transform="translate(400, 240)">
+    <!-- Outer layer (slow update) -->
+    <circle r="140" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.6">
+      <animate attributeName="r" values="140;145;140" dur="4s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Middle layer -->
+    <circle r="100" fill="none" stroke="#8b5cf6" stroke-width="2.5" opacity="0.75">
+      <animate attributeName="r" values="100;106;100" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Inner layer (fast update) -->
+    <circle r="60" fill="none" stroke="#ec4899" stroke-width="3" opacity="0.9">
+      <animate attributeName="r" values="60;66;60" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Center core -->
+    <circle r="25" fill="url(#nodeGrad)" filter="url(#glow)">
+      <animate attributeName="r" values="25;28;25" dur="1s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Connection lines -->
+    <g stroke="#06b6d4" stroke-width="1.5" opacity="0.6">
+      <line x1="0" y1="-60" x2="0" y2="-140"/>
+      <line x1="0" y1="60" x2="0" y2="140"/>
+      <line x1="-60" y1="0" x2="-140" y2="0"/>
+      <line x1="60" y1="0" x2="140" y2="0"/>
+      <line x1="42" y1="-42" x2="99" y2="-99"/>
+      <line x1="-42" y1="42" x2="-99" y2="99"/>
+      <line x1="-42" y1="-42" x2="-99" y2="-99"/>
+      <line x1="42" y1="42" x2="99" y2="99"/>
+    </g>
+
+    <!-- Nodes on connections -->
+    <g fill="#06b6d4">
+      <circle cx="0" cy="-100" r="4"/>
+      <circle cx="0" cy="100" r="4"/>
+      <circle cx="-100" cy="0" r="4"/>
+      <circle cx="100" cy="0" r="4"/>
+      <circle cx="70" cy="-70" r="3"/>
+      <circle cx="-70" cy="70" r="3"/>
+      <circle cx="-70" cy="-70" r="3"/>
+      <circle cx="70" cy="70" r="3"/>
+    </g>
+  </g>
+
+  <!-- Labels -->
+  <g font-family="system-ui, -apple-system, sans-serif">
+    <text x="650" y="120" fill="#3b82f6" font-size="13" font-weight="600">Long-Term Memory</text>
+    <text x="650" y="138" fill="#64748b" font-size="11">Slow Update Rate</text>
+
+    <text x="650" y="190" fill="#8b5cf6" font-size="13" font-weight="600">Working Memory</text>
+    <text x="650" y="208" fill="#64748b" font-size="11">Medium Update Rate</text>
+
+    <text x="650" y="260" fill="#ec4899" font-size="13" font-weight="600">Short-Term Memory</text>
+    <text x="650" y="278" fill="#64748b" font-size="11">Fast Update Rate</text>
+  </g>
+
+  <!-- Bottom key points -->
+  <g transform="translate(100, 390)" font-family="system-ui, -apple-system, sans-serif">
+    <g transform="translate(0, 0)">
+      <rect x="-8" y="-12" width="16" height="16" rx="4" fill="#10b981" opacity="0.2"/>
+      <rect x="-5" y="-9" width="10" height="10" rx="2" fill="#10b981"/>
+      <text x="15" y="3" fill="#f8fafc" font-size="12">Unified Architecture + Optimization</text>
+    </g>
+    <g transform="translate(260, 0)">
+      <rect x="-8" y="-12" width="16" height="16" rx="4" fill="#06b6d4" opacity="0.2"/>
+      <rect x="-5" y="-9" width="10" height="10" rx="2" fill="#06b6d4"/>
+      <text x="15" y="3" fill="#f8fafc" font-size="12">Solves Catastrophic Forgetting</text>
+    </g>
+    <g transform="translate(500, 0)">
+      <rect x="-8" y="-12" width="16" height="16" rx="4" fill="#f59e0b" opacity="0.2"/>
+      <rect x="-5" y="-9" width="10" height="10" rx="2" fill="#f59e0b"/>
+      <text x="15" y="3" fill="#f8fafc" font-size="12">Hope Architecture</text>
+    </g>
+  </g>
+
+  <!-- Decorative elements -->
+  <g opacity="0.3">
+    <circle cx="80" cy="100" r="3" fill="#3b82f6"/>
+    <circle cx="720" cy="80" r="2" fill="#8b5cf6"/>
+    <circle cx="150" cy="400" r="2.5" fill="#ec4899"/>
+    <circle cx="650" cy="410" r="2" fill="#06b6d4"/>
+    <circle cx="750" cy="350" r="3" fill="#10b981"/>
+  </g>
+</svg>
