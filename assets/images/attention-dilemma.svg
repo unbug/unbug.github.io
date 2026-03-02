@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <!-- 背景 -->
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d3748;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a202c;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="1000" height="700" fill="url(#bgGrad2)"/>
+  
+  <!-- 标题 -->
+  <text x="500" y="60" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#ffffff" text-anchor="middle">注意力机制的两难选择</text>
+  
+  <!-- 左侧：低温度 -->
+  <g transform="translate(80, 120)">
+    <rect x="0" y="0" width="320" height="480" rx="15" fill="#2d3748" stroke="#f6ad55" stroke-width="2"/>
+    <text x="160" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#f6ad55" text-anchor="middle">低温度（τ 小）</text>
+    
+    <!-- 优点 -->
+    <g transform="translate(20, 70)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="16" fill="#68d391">✅ 优点：</text>
+      <text x="20" y="30" font-family="Arial, sans-serif" font-size="14" fill="#e2e8f0">• 注意力分布尖锐</text>
+      <text x="20" y="55" font-family="Arial, sans-serif" font-size="14" fill="#e2e8f0">• 检索精度高</text>
+      <text x="20" y="80" font-family="Arial, sans-serif" font-size="14" fill="#e2e8f0">• 聚焦相关信息</text>
+    </g>
+    
+    <!-- 缺点 -->
+    <g transform="translate(20, 180)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="16" fill="#fc8181">❌ 缺点：</text>
+      <text x="20" y="30" font-family="Arial, sans-serif" font-size="14" fill="#e2e8f0">• 梯度消失</text>
+      <text x="20" y="55" font-family="Arial, sans-serif" font-size="14" fill="#e2e8f0">• 雅可比矩阵趋近于零</text>
+      <text x="20" y="80" font-family="Arial, sans-serif" font-size="14" fill="#e2e8f0">• 模型无法学习</text>
+    </g>
+    
+    <!-- 可视化 -->
+    <g transform="translate(60, 300)">
+      <text x="100" y="0" font-family="Arial, sans-serif" font-size="14" fill="#a0aec0" text-anchor="middle">注意力分布：</text>
+      <!-- 尖锐分布 -->
+      <rect x="10" y="20" width="20" height="100" fill="#4a5568" rx="3"/>
+      <rect x="35" y="20" width="20" height="100" fill="#4a5568" rx="3"/>
+      <rect x="60" y="20" width="20" height="100" fill="#4a5568" rx="3"/>
+      <rect x="85" y="20" width="20" height="100" fill="#4a5568" rx="3"/>
+      <rect x="110" y="20" width="20" height="100" fill="#4a5568" rx="3"/>
+      <rect x="135" y="20" width="20" height="100" fill="#4a5568" rx="3"/>
+      <rect x="160" y="20" width="20" height="100" fill="#4a5568" rx="3"/>
+      
+      <!-- 峰值 -->
+      <rect x="85" y="20" width="20" height="95" fill="#f6ad55" rx="3"/>
+    </g>
+    
+    <text x="160" y="460" font-family="Arial, sans-serif" font-size="14" fill="#f6ad55" text-anchor="middle">"看清了，但学不会"</text>
+  </g>
+  
+  <!-- 中间：两难 -->
+  <g transform="translate(420, 300)">
+    <text x="80" y="0" font-family="Arial, sans-serif" font-size="48" fill="#e53e3e" text-anchor="middle">⚡</text>
+    <text x="80" y="40" font-family="Arial, sans-serif" font-size="18" fill="#fc8181" text-anchor="middle">两难选择</text>
+  </g>
+  
+  <!-- 右侧：高温度 -->
+  <g transform="translate(600, 120)">
+    <rect x="0" y="0" width="320" height="480" rx="15" fill="#2d3748" stroke="#63b3ed" stroke-width="2"/>
+    <text x="160" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#63b3ed" text-anchor="middle">高温度（τ 大）</text>
+    
+    <!-- 优点 -->
+    <g transform="translate(20, 70)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="16" fill="#68d391">✅ 优点：</text>
+      <text x="20" y="30" font-family="Arial, sans-serif" font-size="14" fill="#e2e8f0">• 梯度流动良好</text>
+      <text x="20" y="55" font-family="Arial, sans-serif" font-size="14" fill="#e2e8f0">• 模型可以学习</text>
+      <text x="20" y="80" font-family="Arial, sans-serif" font-size="14" fill="#e2e8f0">• 训练稳定</text>
+    </g>
+    
+    <!-- 缺点 -->
+    <g transform="translate(20, 180)">
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="16" fill="#fc8181">❌ 缺点：</text>
+      <text x="20" y="30" font-family="Arial, sans-serif" font-size="14" fill="#e2e8f0">• 注意力分布模糊</text>
+      <text x="20" y="55" font-family="Arial, sans-serif" font-size="14" fill="#e2e8f0">• 注意力噪声大</text>
+      <text x="20" y="80" font-family="Arial, sans-serif" font-size="14" fill="#e2e8f0">• 检索精度低</text>
+    </g>
+    
+    <!-- 可视化 -->
+    <g transform="translate(60, 300)">
+      <text x="100" y="0" font-family="Arial, sans-serif" font-size="14" fill="#a0aec0" text-anchor="middle">注意力分布：</text>
+      <!-- 模糊分布 -->
+      <rect x="10" y="50" width="20" height="70" fill="#4a5568" rx="3"/>
+      <rect x="35" y="40" width="20" height="80" fill="#4a5568" rx="3"/>
+      <rect x="60" y="30" width="20" height="90" fill="#4a5568" rx="3"/>
+      <rect x="85" y="35" width="20" height="85" fill="#4a5568" rx="3"/>
+      <rect x="110" y="45" width="20" height="75" fill="#4a5568" rx="3"/>
+      <rect x="135" y="55" width="20" height="65" fill="#4a5568" rx="3"/>
+      <rect x="160" y="60" width="20" height="60" fill="#4a5568" rx="3"/>
+      
+      <!-- 模糊的峰值 -->
+      <rect x="10" y="50" width="20" height="70" fill="#63b3ed" opacity="0.5" rx="3"/>
+      <rect x="35" y="40" width="20" height="80" fill="#63b3ed" opacity="0.6" rx="3"/>
+      <rect x="60" y="30" width="20" height="90" fill="#63b3ed" opacity="0.7" rx="3"/>
+      <rect x="85" y="35" width="20" height="85" fill="#63b3ed" opacity="0.8" rx="3"/>
+      <rect x="110" y="45" width="20" height="75" fill="#63b3ed" opacity="0.7" rx="3"/>
+      <rect x="135" y="55" width="20" height="65" fill="#63b3ed" opacity="0.6" rx="3"/>
+      <rect x="160" y="60" width="20" height="60" fill="#63b3ed" opacity="0.5" rx="3"/>
+    </g>
+    
+    <text x="160" y="460" font-family="Arial, sans-serif" font-size="14" fill="#63b3ed" text-anchor="middle">"能学习，但看不清"</text>
+  </g>
+  
+  <!-- 底部：LUCID 的解决方案 -->
+  <g transform="translate(250, 620)">
+    <rect x="0" y="0" width="500" height="60" rx="10" fill="#2f855a" opacity="0.2" stroke="#48bb78" stroke-width="2"/>
+    <text x="250" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#48bb78" text-anchor="middle">💡 LUCID 的解决方案：解耦检索精度和学习能力</text>
+    <text x="250" y="48" font-family="Arial, sans-serif" font-size="14" fill="#9ae6b4" text-anchor="middle">预条件器负责精度，Softmax 负责学习，两者各司其职！</text>
+  </g>
+</svg>

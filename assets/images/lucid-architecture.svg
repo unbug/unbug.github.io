@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="750" viewBox="0 0 1100 750">
+  <!-- 背景 -->
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f2744;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="boxGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="boxGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+  </defs>
+  
+  <rect width="1100" height="750" fill="url(#bgGrad3)"/>
+  
+  <!-- 标题 -->
+  <text x="550" y="50" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#ffffff" text-anchor="middle">LUCID Attention 架构</text>
+  
+  <!-- 输入 -->
+  <g transform="translate(50, 120)">
+    <rect x="0" y="0" width="140" height="60" rx="8" fill="#2d3748" stroke="#4a5568" stroke-width="2"/>
+    <text x="70" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#e2e8f0" text-anchor="middle">输入</text>
+    <text x="70" y="48" font-family="Arial, sans-serif" font-size="12" fill="#a0aec0" text-anchor="middle">Q, K, V</text>
+  </g>
+  
+  <!-- 箭头到标准注意力 -->
+  <line x1="190" y1="150" x2="280" y2="150" stroke="#667eea" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 标准注意力 -->
+  <g transform="translate(280, 100)">
+    <rect x="0" y="0" width="180" height="100" rx="10" fill="url(#boxGrad2)" filter="url(#glow3)"/>
+    <text x="90" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">标准 Softmax</text>
+    <text x="90" y="55" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">注意力</text>
+    <text x="90" y="80" font-family="Arial, sans-serif" font-size="12" fill="#fef3c7" text-anchor="middle">保持梯度流动</text>
+  </g>
+  
+  <!-- 箭头到预条件器 -->
+  <line x1="120" y1="180" x2="120" y2="250" stroke="#667eea" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="135" y="220" font-family="Arial, sans-serif" font-size="11" fill="#a0aec0" transform="rotate(90, 135, 220)">K</text>
+  
+  <!-- 预条件器 -->
+  <g transform="translate(50, 280)">
+    <rect x="0" y="0" width="140" height="120" rx="10" fill="url(#boxGrad1)" filter="url(#glow3)"/>
+    <text x="70" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">预条件器</text>
+    <text x="70" y="60" font-family="Arial, sans-serif" font-size="12" fill="#e0e7ff" text-anchor="middle">P = (M ◦ exp(KK⊤/√d</text>
+    <text x="70" y="80" font-family="Arial, sans-serif" font-size="12" fill="#e0e7ff" text-anchor="middle">- √d))⁻¹</text>
+    <text x="70" y="105" font-family="Arial, sans-serif" font-size="11" fill="#c7d2fe" text-anchor="middle">Key 去相关</text>
+  </g>
+  
+  <!-- 两条路径合并 -->
+  <g transform="translate(500, 180)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="60" fill="#667eea">⊗</text>
+    <text x="0" y="35" font-family="Arial, sans-serif" font-size="12" fill="#a0aec0" text-anchor="middle">结合</text>
+  </g>
+  
+  <!-- 箭头从标准注意力到结合点 -->
+  <line x1="460" y1="150" x2="500" y2="150" stroke="#667eea" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 箭头从预条件器到结合点 -->
+  <line x1="190" y1="340" x2="460" y2="200" stroke="#667eea" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- LUCID 输出 -->
+  <g transform="translate(580, 130)">
+    <rect x="0" y="0" width="200" height="140" rx="12" fill="#1e3a5f" stroke="#667eea" stroke-width="3"/>
+    <text x="100" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#667eea" text-anchor="middle">LUCID Attention</text>
+    <text x="100" y="60" font-family="Arial, sans-serif" font-size="13" fill="#e2e8f0" text-anchor="middle">LUCID(Q, K, V) =</text>
+    <text x="100" y="82" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e0" text-anchor="middle">softmax(QK⊤/√d + M̂)</text>
+    <text x="100" y="104" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e0" text-anchor="middle">· P · V</text>
+    <text x="100" y="128" font-family="Arial, sans-serif" font-size="12" fill="#93c5fd" text-anchor="middle">精确检索 + 可学习</text>
+  </g>
+  
+  <!-- 箭头到输出 -->
+  <line x1="780" y1="200" x2="900" y2="200" stroke="#667eea" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- 输出 -->
+  <g transform="translate(900, 170)">
+    <rect x="0" y="0" width="140" height="60" rx="8" fill="#2d3748" stroke="#48bb78" stroke-width="2"/>
+    <text x="70" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#48bb78" text-anchor="middle">输出</text>
+    <text x="70" y="48" font-family="Arial, sans-serif" font-size="12" fill="#9ae6b4" text-anchor="middle">去噪注意力</text>
+  </g>
+  
+  <!-- 下方：两个关键优势 -->
+  <g transform="translate(100, 450)">
+    <!-- 优势1 -->
+    <rect x="0" y="0" width="400" height="120" rx="12" fill="#1a202c" stroke="#f6ad55" stroke-width="2"/>
+    <text x="200" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#f6ad55" text-anchor="middle">🎯 优势一：解耦设计</text>
+    <text x="200" y="58" font-family="Arial, sans-serif" font-size="14" fill="#e2e8f0" text-anchor="middle">预条件器负责检索精度，Softmax 负责学习能力</text>
+    <text x="200" y="82" font-family="Arial, sans-serif" font-size="13" fill="#a0aec0" text-anchor="middle">两者各司其职，不再互相牵制</text>
+    <text x="200" y="105" font-family="Arial, sans-serif" font-size="12" fill="#fef3c7" text-anchor="middle">"鱼和熊掌终于可以兼得！"</text>
+    
+    <!-- 优势2 -->
+    <rect x="450" y="0" width="400" height="120" rx="12" fill="#1a202c" stroke="#63b3ed" stroke-width="2"/>
+    <text x="200" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#63b3ed" text-anchor="middle">⚡ 优势二：高效实现</text>
+    <text x="200" y="58" font-family="Arial, sans-serif" font-size="14" fill="#e2e8f0" text-anchor="middle">计算复杂度 O(N²d)，与标准注意力相同</text>
+    <text x="200" y="82" font-family="Arial, sans-serif" font-size="13" fill="#a0aec0" text-anchor="middle">训练开销 +0-5.5%，推理开销 +~1.3%</text>
+    <text x="200" y="105" font-family="Arial, sans-serif" font-size="12" fill="#bee3f8" text-anchor="middle">"几乎免费的性能提升！"</text>
+  </g>
+  
+  <!-- 底部：核方法视角 -->
+  <g transform="translate(100, 600)">
+    <rect x="0" y="0" width="900" height="100" rx="12" fill="#1a202c" stroke="#9f7aea" stroke-width="2"/>
+    <text x="450" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#9f7aea" text-anchor="middle">🔬 理论基础：核方法视角</text>
+    <text x="450" y="55" font-family="Arial, sans-serif" font-size="14" fill="#e2e8f0" text-anchor="middle">在再生核希尔伯特空间（RKHS）中，softmax 注意力 = 特征向量内积：exp(⟨q, k⟩) = ⟨φ(q), φ(k)⟩</text>
+    <text x="450" y="80" font-family="Arial, sans-serif" font-size="13" fill="#a0aec0" text-anchor="middle">关键洞察：Key 向量在 RKHS 中永远不会正交，因此总是存在相关性 → 导致注意力噪声</text>
+  </g>
+</svg>

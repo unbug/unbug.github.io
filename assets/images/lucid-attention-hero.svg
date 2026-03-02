@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <!-- 背景 -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="1200" height="800" fill="url(#bgGrad)"/>
+  
+  <!-- 标题 -->
+  <text x="600" y="100" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#ffffff" text-anchor="middle">LUCID Attention</text>
+  <text x="600" y="140" font-family="Arial, sans-serif" font-size="24" fill="#a0a0a0" text-anchor="middle">给长上下文模型戴上"降噪耳机"</text>
+  
+  <!-- 标准注意力（左侧）- 噪声 -->
+  <g transform="translate(150, 200)">
+    <rect x="0" y="0" width="350" height="400" rx="15" fill="#0f3460" stroke="#e94560" stroke-width="3"/>
+    <text x="175" y="40" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#e94560" text-anchor="middle">标准注意力</text>
+    <text x="175" y="70" font-family="Arial, sans-serif" font-size="16" fill="#ff6b6b" text-anchor="middle">注意力噪声</text>
+    
+    <!-- 噪声可视化 -->
+    <g transform="translate(40, 100)">
+      <circle cx="50" cy="50" r="8" fill="#ff6b6b" opacity="0.7"/>
+      <circle cx="120" cy="30" r="6" fill="#ff6b6b" opacity="0.5"/>
+      <circle cx="180" cy="60" r="7" fill="#ff6b6b" opacity="0.6"/>
+      <circle cx="80" cy="120" r="5" fill="#ff6b6b" opacity="0.4"/>
+      <circle cx="200" cy="140" r="9" fill="#e94560" opacity="0.8"/>
+      <circle cx="150" cy="180" r="6" fill="#ff6b6b" opacity="0.5"/>
+      <circle cx="60" cy="200" r="7" fill="#ff6b6b" opacity="0.6"/>
+      <circle cx="230" cy="100" r="5" fill="#ff6b6b" opacity="0.4"/>
+      
+      <!-- 连接线 -->
+      <line x1="50" y1="50" x2="120" y2="30" stroke="#ff6b6b" stroke-width="1" opacity="0.3"/>
+      <line x1="50" y1="50" x2="80" y2="120" stroke="#ff6b6b" stroke-width="1" opacity="0.3"/>
+      <line x1="120" y1="30" x2="180" y2="60" stroke="#ff6b6b" stroke-width="1" opacity="0.3"/>
+      <line x1="180" y1="60" x2="200" y2="140" stroke="#ff6b6b" stroke-width="1" opacity="0.3"/>
+      <line x1="200" y1="140" x2="150" y2="180" stroke="#ff6b6b" stroke-width="1" opacity="0.3"/>
+    </g>
+    
+    <!-- 目标信息被淹没 -->
+    <text x="175" y="350" font-family="Arial, sans-serif" font-size="14" fill="#a0a0a0" text-anchor="middle">目标信息被噪声淹没</text>
+  </g>
+  
+  <!-- 箭头 -->
+  <g transform="translate(520, 380)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="60" fill="#667eea" filter="url(#glow)">→</text>
+    <text x="0" y="40" font-family="Arial, sans-serif" font-size="14" fill="#667eea" text-anchor="middle">预条件化</text>
+  </g>
+  
+  <!-- LUCID 注意力（右侧）- 清晰 -->
+  <g transform="translate(700, 200)">
+    <rect x="0" y="0" width="350" height="400" rx="15" fill="#0f3460" stroke="#667eea" stroke-width="3"/>
+    <text x="175" y="40" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#667eea" text-anchor="middle">LUCID Attention</text>
+    <text x="175" y="70" font-family="Arial, sans-serif" font-size="16" fill="#667eea" text-anchor="middle">清晰聚焦</text>
+    
+    <!-- 清晰聚焦可视化 -->
+    <g transform="translate(40, 100)">
+      <!-- 主焦点 -->
+      <circle cx="135" cy="120" r="25" fill="#667eea" opacity="0.9" filter="url(#glow)"/>
+      <circle cx="135" cy="120" r="15" fill="#764ba2" opacity="1"/>
+      
+      <!-- 弱化的其他点 -->
+      <circle cx="50" cy="50" r="4" fill="#4a5568" opacity="0.3"/>
+      <circle cx="220" cy="40" r="3" fill="#4a5568" opacity="0.2"/>
+      <circle cx="80" cy="180" r="3" fill="#4a5568" opacity="0.2"/>
+      <circle cx="200" cy="180" r="4" fill="#4a5568" opacity="0.3"/>
+      
+      <!-- 聚焦射线 -->
+      <line x1="135" y1="120" x2="50" y2="50" stroke="#667eea" stroke-width="1" opacity="0.2"/>
+      <line x1="135" y1="120" x2="220" y2="40" stroke="#667eea" stroke-width="1" opacity="0.2"/>
+      <line x1="135" y1="120" x2="80" y2="180" stroke="#667eea" stroke-width="1" opacity="0.2"/>
+      <line x1="135" y1="120" x2="200" y2="180" stroke="#667eea" stroke-width="1" opacity="0.2"/>
+    </g>
+    
+    <!-- 目标信息清晰 -->
+    <text x="175" y="350" font-family="Arial, sans-serif" font-size="14" fill="#667eea" text-anchor="middle">目标信息清晰可见</text>
+  </g>
+  
+  <!-- 底部说明 -->
+  <text x="600" y="680" font-family="Arial, sans-serif" font-size="18" fill="#a0a0a0" text-anchor="middle">通过预条件化消除 Key 向量相关性，解决注意力噪声问题</text>
+</svg>
