@@ -8,7 +8,7 @@ tags: [deep-research, vision-language, mllm, ai]
 image: assets/images/vision-deepresearch-architecture.svg
 ---
 
-![Vision-DeepResearch 架构图](/images/vision-deepresearch-architecture.svg)
+![Vision-DeepResearch 架构图](/assets/images/vision-deepresearch-architecture.svg)
 
 # Vision-DeepResearch：首个长时序多模态深度研究模型，8B 参数干翻 GPT-5
 

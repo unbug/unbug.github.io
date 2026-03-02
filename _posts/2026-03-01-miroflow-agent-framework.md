@@ -8,7 +8,7 @@ tags: [AI Agents, Deep Research, Framework]
 image: assets/images/2026-03-01-miroflow-agent-framework.png
 ---
 
-![MiroFlow 智能体框架](assets/images/2026-03-01-miroflow-agent-framework.png)
+![MiroFlow 智能体框架](/assets/images/2026-03-01-miroflow-agent-framework.png)
 
 ## 论文信息
 
