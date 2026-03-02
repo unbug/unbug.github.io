@@ -10,7 +10,7 @@ image: assets/images/arxiv-paper-quantum-reservoir-computing.png
 
 # 量子储层计算重大突破！在"多体混沌边缘"实现最佳性能，为量子AI开辟新道路！
 
-![量子储层计算](/assets/images/arxiv-paper-quantum-reservoir-computing.png)
+![量子储层计算](assets/images/arxiv-paper-quantum-reservoir-computing.png)
 
 你有没有想过：经典计算机的"混沌边缘"理论，在量子世界里也存在吗？
 

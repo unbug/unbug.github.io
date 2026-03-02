@@ -8,7 +8,7 @@ tags: [Google, Titans, MIRAS, 长期记忆, Transformer, 序列建模]
 excerpt: "Google Research 发布了 Titans 架构和 MIRAS 框架，通过深度学习的记忆模块和在线优化理论，让 AI 模型能够处理超大规模上下文，终结了 LLM 的健忘症问题。"
 ---
 
-![Titans + MIRAS 架构示意图](/assets/images/2026-03-01-titans-miras-architecture.png)
+![Titans + MIRAS 架构示意图](assets/images/2026-03-01-titans-miras-architecture.png)
 
 ## 引言
 

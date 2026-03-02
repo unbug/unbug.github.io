@@ -5,10 +5,10 @@ title: "AlphaEvolve：AI 打破 56 年数学纪录，发现更快的矩阵乘法
 date: 2026-03-01 09:45:00 +0800
 categories: [AI]
 tags: [AlphaEvolve, 矩阵乘法, Google DeepMind, 算法发现, 数学突破]
-image: assets/images/alphaevolve-breakthrough.png
+image: assets/images/alphaevolve-breakthrough.svg
 ---
 
-![AlphaEvolve 矩阵乘法突破](/assets/images/alphaevolve-breakthrough.png)
+![AlphaEvolve 矩阵乘法突破](assets/images/alphaevolve-breakthrough.svg)
 
 ## 🎯 开场：56 年的数学纪录，被 AI 打破了
 

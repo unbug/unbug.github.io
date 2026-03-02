@@ -4,7 +4,7 @@ title: "突破传统：ReSU 神经网络单元——从果蝇大脑中获得的 
 date: 2026-03-02 09:00:00 +0800
 categories: [AI, 神经科学, 机器学习]
 tags: [AI, 神经网络, 神经科学, 生物启发, ReSU, 反向传播]
-image: assets/images/resu-neural-network.png
+image: assets/images/resu-neural-network.svg
 featured: true
 ---
 

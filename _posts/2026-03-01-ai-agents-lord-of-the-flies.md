@@ -8,7 +8,7 @@ tags: [AI代理, 多智能体, 社会行为, 部落主义]
 image: assets/images/ai-agents-tribalism.svg
 ---
 
-![三个AI走进酒吧](/assets/images/ai-agents-tribalism.svg)
+![三个AI走进酒吧](assets/images/ai-agents-tribalism.svg)
 
 ## 🍺 开场：三个AI的酒吧奇遇
 

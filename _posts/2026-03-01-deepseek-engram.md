@@ -10,7 +10,7 @@ image: assets/images/arxiv-paper-deepseek-engram.png
 
 # DeepSeek Engram：颠覆GPU内存瓶颈！把知识存储从计算中分离，O(1)查找效率！
 
-![DeepSeek Engram](/assets/images/arxiv-paper-deepseek-engram.png)
+![DeepSeek Engram](assets/images/arxiv-paper-deepseek-engram.png)
 
 你有没有想过：为什么大模型需要这么贵的GPU？为什么每一代模型都在疯狂抢HBM内存？
 

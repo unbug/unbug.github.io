@@ -5,6 +5,7 @@ title: "HybridQuestion：人类-AI 协作发现 2025 年十大科学突破与 20
 date: 2026-03-02 05:30:00 +0800
 categories: [AI, 论文解读]
 tags: [AI科学家, 人机协作, 科学发现, arXiv]
+image: assets/images/hybridquestion-ai-co-scientist.svg
 ---
 
 # HybridQuestion：当 AI 成为"共同科学家"——盘点 2025 年十大科学突破与 2026 年重大科学问题

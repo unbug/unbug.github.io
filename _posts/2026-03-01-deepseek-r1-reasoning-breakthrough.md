@@ -7,7 +7,7 @@ categories: [AI, 论文解读]
 tags: [DeepSeek, 强化学习, 推理, Nature]
 ---
 
-![DeepSeek-R1 强化学习推理](/assets/images/deepseek-r1-reasoning.png)
+![DeepSeek-R1 强化学习推理](assets/images/deepseek-r1-reasoning.svg)
 
 # DeepSeek-R1：用纯强化学习解锁大语言模型的推理能力
 

@@ -3,7 +3,7 @@ layout: post
 title: "网络安全超智能来临：从 AI 辅助人类到人类引导 AI 的范式跃迁"
 date: 2026-03-02 00:00:00 +0800
 categories: ai research
-image: assets/images/cybersecurity-superintelligence-evolution.png
+image: assets/images/cybersecurity-superintelligence-evolution.svg
 ---
 
 ## 网络安全的"三体"时代来临
@@ -12,7 +12,7 @@ image: assets/images/cybersecurity-superintelligence-evolution.png
 
 这不是科幻小说，而是 Alias Robotics 团队在 2026 年 2 月 10 日发表的重磅论文 **《Towards Cybersecurity Superintelligence: from AI-guided humans to human-guided AI》** 中，为我们描绘的真实演进路径。
 
-![网络安全超智能演进路径](/assets/images/cybersecurity-superintelligence-evolution.png)
+![网络安全超智能演进路径](assets/images/cybersecurity-superintelligence-evolution.svg)
 
 ## 三个里程碑：AI 如何从"军师"变成"战略家"
 
@@ -32,7 +32,7 @@ PentestGPT 是这场革命的起点。它把安全专家的毕生绝学编码成
 
 **看看这组让人惊掉下巴的数据对比**：
 
-![CAI vs 人类 速度对比](/assets/images/cai-vs-human-speed.png)
+![CAI vs 人类 速度对比](assets/images/cai-vs-human-speed.svg)
 
 | 任务类型 | CAI 耗时 | 人类耗时 | 速度比 |
 |---------|---------|---------|--------|
@@ -55,7 +55,7 @@ PentestGPT 是这场革命的起点。它把安全专家的毕生绝学编码成
 
 但真正的突破来自 2026 年的 G-CTR（Generative Cut-the-Rope）。这一次，AI 不仅动手快，还学会了**动脑子**——用博弈论进行战略推理。
 
-![G-CTR 博弈论架构](/assets/images/g-ctr-game-theory.png)
+![G-CTR 博弈论架构](assets/images/g-ctr-game-theory.svg)
 
 **核心创新有三个**：
 1. 🗺️ **攻击图生成**：从乱糟糟的安全日志里画出清晰的"作战地图"

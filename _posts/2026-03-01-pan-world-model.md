@@ -7,7 +7,7 @@ categories: [AI, 论文解读]
 tags: [世界模型, World Model, PAN, MBZUAI, 人工智能]
 ---
 
-![PAN 世界模型 GLP 架构](/assets/images/2026-03-01-pan-world-model.png)
+![PAN 世界模型 GLP 架构](assets/images/2026-03-01-pan-world-model.png)
 
 ## 论文概览
 

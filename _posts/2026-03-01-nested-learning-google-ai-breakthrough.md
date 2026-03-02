@@ -8,7 +8,7 @@ tags: [Nested Learning, Google Research, NeurIPS 2025]
 image: assets/images/2026-03-01-nested-learning-google-ai-breakthrough.svg
 ---
 
-![Google Nested Learning](/assets/images/2026-03-01-nested-learning-google-ai-breakthrough.svg)
+![Google Nested Learning](assets/images/2026-03-01-nested-learning-google-ai-breakthrough.svg)
 
 ## 摘要
 
