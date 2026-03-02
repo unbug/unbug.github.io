@@ -1,0 +1,275 @@
+{
+  "version": "2.1",
+  "currentPhase": "idle",
+  "phases": [
+    "idle",
+    "researcher",
+    "editor",
+    "publisher",
+    "review",
+    "confirms"
+  ],
+  "phaseDescriptions": {
+    "idle": "空闲状态，等待新任务",
+    "researcher": "研究员阶段：搜索和分析论文",
+    "editor": "编辑阶段：写文章",
+    "publisher": "发布者阶段：git提交和推送",
+    "review": "复盘阶段：总结整个流程",
+    "confirms": "确认阶段：三个Agent分别确认投入产出"
+  },
+  "currentPaper": null,
+  "lastCompletedPaper": "AI 共同研究员时代到来：当 Claude、Gemini 和 ChatGPT 成为真正的科研合作者",
+  "lastCompletedTime": "2026-03-02T08:31:00+08:00",
+  "totalCompletedPapers": 34,
+  "completedPapers": [
+    {
+      "title": "Agent-based Ensemble Reasoning for Repository-level Issue Resolution",
+      "completedAt": 1772215687000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "Natural Language Summarization Enables Multi-Repository Bug Localization",
+      "completedAt": 1772220800000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "When Many-Shot Prompting Fails",
+      "completedAt": 1772235200000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "A Year of MCP: From Internal Experiment to Industry Standard",
+      "completedAt": 1772246400000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "Generative AI in Software Engineering: Transforming the Software Development Process",
+      "completedAt": 1772268500000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "Nested Learning: Google's Revolutionary AI Paradigm That Solves Catastrophic Forgetting",
+      "completedAt": 1772271400000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "DeepSeek R1: Reinforcement Learning for Autonomous Reasoning",
+      "completedAt": 17722736200000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "Genie 3: Real-Time Interactive World Model by DeepMind",
+      "completedAt": 1772282400000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "Agent World Model: Infinity Synthetic Environments for Agentic Reinforcement Learning",
+      "completedAt": 1772286900000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "ReSyn: Autonomously Scaling Synthetic Environments for Reasoning Models",
+      "completedAt": 1772289300000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "Agentic Reasoning for Large Language Models",
+      "completedAt": 1772291900000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "Engram: Conditional Memory via Scalable Lookup",
+      "completedAt": 17723010600000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "Edge of Many-Body Quantum Chaos in Quantum Reservoir Computing",
+      "completedAt": 1772301600000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "Three AI-agents walk into a bar: Lord of the Flies tribalism emerges among smart AI-Agents",
+      "completedAt": 17723037600000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "Vision-DeepResearch：首个长时序多模态深度研究模型",
+      "completedAt": 17723047600000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "DeepSeek-R1：用纯强化学习解锁大语言模型的推理能力",
+      "completedAt": 17723102400000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "Google Titans + MIRAS：终结 AI 健忘症，让模型拥有真正的长期记忆",
+      "completedAt": 17723140200000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "PAN 世界模型炸场！MBZUAI 黑科技让 AI 学会'脑补'现实世界",
+      "completedAt": 17723182200000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "AI原生粒子加速器：让大型科学设施学会'自动驾驶'",
+      "completedAt": 17723238600000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "三个AI走进酒吧：聪明的AI也会搞\"部落主义\"？",
+      "completedAt": 17723263200000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "AlphaEvolve：AI 打破 56 年数学纪录，发现更快的矩阵乘法算法",
+      "completedAt": 17723308800000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "RWML：让 LLM 智能体学会\"预测未来\"——微软研究院突破性论文解读",
+      "completedAt": 1772336800000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "ICLR 2025 杰出论文：一次训练就能计算数据价值——AI 版权和数据治理的新突破",
+      "completedAt": 1772344400000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "GLM-5：从「氛围编程」到「智能体工程」的范式跃迁",
+      "completedAt": 1772352600000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "MiroFlow：面向深度研究任务的高性能开源智能体框架",
+      "completedAt": 1772359800000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "Google Nested Learning：突破AI\"灾难性遗忘\"的新范式",
+      "completedAt": 17723686400000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "AI for Mathematics：当人工智能邂逅纯数学——2026年的突破性进展",
+      "completedAt": 1772374400000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "网络安全超智能来临：从 AI 辅助人类到人类引导 AI 的范式跃迁",
+      "completedAt": 17723872400000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "HybridQuestion：AI 作为共同科学家——人机协作识别高影响力研究",
+      "completedAt": 17723911800000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "DeepSeek-R1：用纯强化学习解锁大语言模型的推理能力",
+      "completedAt": 1772394600000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "Cybersecurity AI：在全球 CTF 竞赛中统治性表现的顶级 AI 代理",
+      "completedAt": 1772398500000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "AI 共同研究员时代到来：当 Claude、Gemini 和 ChatGPT 成为真正的科研合作者",
+      "completedAt": 17724022200000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    }
+  ],
+  "nextPaper": "TBD",
+  "paperQueue": [],
+  "quickRecovery": {
+    "lastReviewFile": "memory/2026-03-02-micropaper-review.md",
+    "lastConfirmationsFile": "memory/2026-03-02-micropaper-confirmations.md",
+    "manualFile": "MICROPAPER-MANUAL.md"
+  },
+  "stateCheckpoints": {
+    "idle": {
+      "completed": true,
+      "timestamp": 17724122400000,
+      "failures": 0
+    },
+    "researcher": {
+      "completed": true,
+      "timestamp": 1772406600000,
+      "failures": 0,
+      "maxRetries": 3
+    },
+    "editor": {
+      "completed": true,
+      "timestamp": 17724088600000,
+      "failures": 0,
+      "maxRetries": 3
+    },
+    "publisher": {
+      "completed": true,
+      "timestamp": 17724022200000,
+      "failures": 0,
+      "maxRetries": 3
+    },
+    "review": {
+      "completed": true,
+      "timestamp": 17724022200000,
+      "failures": 0,
+      "maxRetries": 1
+    },
+    "confirms": {
+      "completed": true,
+      "timestamp": 17724022400000,
+      "failures": 0,
+      "maxRetries": 1,
+      "agents": ["researcher", "editor", "publisher"]
+    }
+  },
+  "workflow": {
+    "researcher": {
+      "agentId": "researcher",
+      "next": "editor",
+      "fallback": "idle"
+    },
+    "editor": {
+      "agentId": "editor",
+      "next": "publisher",
+      "fallback": "researcher"
+    },
+    "publisher": {
+      "agentId": "publisher",
+      "next": "review",
+      "fallback": "editor"
+    },
+    "review": {
+      "agentId": "main",
+      "next": "confirms",
+      "fallback": "publisher"
+    },
+    "confirms": {
+      "agentId": "main",
+      "next": "idle",
+      "fallback": "review"
+    }
+  },
+  "muscleMemory": [
+    "1. 重启后第一个读 MICROPAPER-MANUAL.md！",
+    "2. CEO 读取状态文件 micropaper-state-v2.json",
+    "3. CEO 启动当前阶段的 Agent",
+    "4. Agent 完成 → CEO 更新状态",
+    "5. CEO 自动启动下一阶段",
+    "6. 全部完成 → CEO 复盘",
+    "7. CEO 启动三个确认 Agent",
+    "8. 全部确认 → CEO 回到 IDLE",
+    "绝对不需要用户提醒下一步！"
+  ],
+  "blogDirectory": "/Users/unbug/Workspace/unbug.github.io",
+  "workspaceDirectories": {
+    "researcher": "/Users/unbug/Workspace/unbug.github.io",
+    "editor": "/Users/unbug/Workspace/unbug.github.io",
+    "publisher": "/Users/unbug/Workspace/unbug.github.io"
+  }
+}
