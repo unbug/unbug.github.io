@@ -1,0 +1,50 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="400" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">洗车问题：提示词架构决定推理质量</text>
+  
+  <!-- 左侧：裸提示和上下文注入 -->
+  <g transform="translate(100, 80)">
+    <rect x="0" y="0" width="200" height="120" fill="#fff" stroke="#ff6b6b" stroke-width="2" rx="10"/>
+    <text x="100" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#ff6b6b">裸提示</text>
+    <text x="100" y="50" font-family="Arial, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#ff6b6b">0%</text>
+    <text x="100" y="75" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">正确率</text>
+    
+    <rect x="0" y="140" width="200" height="120" fill="#fff" stroke="#ffa94d" stroke-width="2" rx="10"/>
+    <text x="100" y="165" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffa94d">上下文注入</text>
+    <text x="100" y="190" font-family="Arial, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#ffa94d">30%</text>
+    <text x="100" y="215" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">正确率</text>
+  </g>
+  
+  <!-- 中间：箭头对比 -->
+  <g transform="translate(350, 180)">
+    <text x="50" y="0" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">结构化推理</text>
+    <text x="50" y="25" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#4c6ef5">2.83倍</text>
+    <text x="50" y="50" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">效果提升</text>
+    
+    <!-- 箭头 -->
+    <line x1="-20" y1="0" x2="-80" y2="-60" stroke="#adb5bd" stroke-width="2" stroke-dasharray="5,5"/>
+    <polygon points="-75,-55 -80,-65 -85,-55" fill="#adb5bd"/>
+    
+    <line x1="-20" y1="0" x2="-80" y2="60" stroke="#adb5bd" stroke-width="2" stroke-dasharray="5,5"/>
+    <polygon points="-75,55 -80,65 -85,55" fill="#adb5bd"/>
+  </g>
+  
+  <!-- 右侧：STAR 框架 -->
+  <g transform="translate(500, 80)">
+    <rect x="0" y="0" width="200" height="120" fill="#fff" stroke="#40c057" stroke-width="2" rx="10"/>
+    <text x="100" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#40c057">STAR 框架</text>
+    <text x="100" y="50" font-family="Arial, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#40c057">85%</text>
+    <text x="100" y="75" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">正确率</text>
+    
+    <rect x="0" y="140" width="200" height="120" fill="#fff" stroke="#1c7ed6" stroke-width="2" rx="10"/>
+    <text x="100" y="165" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1c7ed6">STAR+Profile+RAG</text>
+    <text x="100" y="190" font-family="Arial, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#1c7ed6">100%</text>
+    <text x="100" y="215" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">正确率</text>
+  </g>
+  
+  <!-- 底部说明 -->
+  <text x="400" y="360" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#666">Situation-Task-Action-Result 框架强迫模型明确目标，隐性约束变成显性文本</text>
+</svg>
