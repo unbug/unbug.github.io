@@ -1,0 +1,94 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="goodGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="badGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="attentionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <circle cx="100" cy="100" r="40" fill="url(#bgGradient)" opacity="0.1"/>
+  <circle cx="700" cy="500" r="60" fill="url(#bgGradient)" opacity="0.1"/>
+  <circle cx="650" cy="150" r="30" fill="url(#bgGradient)" opacity="0.08"/>
+  <circle cx="150" cy="450" r="45" fill="url(#bgGradient)" opacity="0.08"/>
+  
+  <text x="400" y="60" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#1e293b">
+    AI 注意力竞争机制
+  </text>
+  <text x="400" y="90" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#64748b">
+    好 → 坏 临界点预测
+  </text>
+  
+  <g filter="url(#shadow)">
+    <circle cx="200" cy="300" r="70" fill="url(#goodGradient)"/>
+    <text x="200" y="290" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="white">Good</text>
+    <text x="200" y="315" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="white">安全输出</text>
+  </g>
+  
+  <g filter="url(#shadow)">
+    <circle cx="600" cy="300" r="70" fill="url(#badGradient)"/>
+    <text x="600" y="290" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="white">Bad</text>
+    <text x="600" y="315" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="white">有害输出</text>
+  </g>
+  
+  <g filter="url(#shadow)">
+    <rect x="340" y="250" width="120" height="100" rx="10" fill="url(#attentionGradient)"/>
+    <text x="400" y="285" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="white">注意力</text>
+    <text x="400" y="305" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="white">竞争</text>
+    <text x="400" y="330" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="white">n*</text>
+  </g>
+  
+  <path d="M 270 300 Q 335 280 340 300" stroke="#10b981" stroke-width="3" fill="none" stroke-dasharray="5,3">
+    <animate attributeName="stroke-dashoffset" from="8" to="0" dur="1s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 460 300 Q 530 280 530 300" stroke="#ef4444" stroke-width="3" fill="none" stroke-dasharray="5,3">
+    <animate attributeName="stroke-dashoffset" from="8" to="0" dur="1s" repeatCount="indefinite"/>
+  </path>
+  
+  <polygon points="270,300 260,295 260,305" fill="#10b981"/>
+  <polygon points="530,300 540,295 540,305" fill="#ef4444"/>
+  
+  <g>
+    <rect x="150" y="420" width="500" height="100" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <text x="180" y="450" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">预测准确率</text>
+    <rect x="180" y="460" width="120" height="12" rx="6" fill="#e2e8f0"/>
+    <rect x="180" y="460" width="107" height="12" rx="6" fill="url(#goodGradient)"/>
+    <text x="305" y="470" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#1e293b">89%</text>
+    
+    <text x="340" y="450" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">时间分类</text>
+    <rect x="340" y="460" width="120" height="12" rx="6" fill="#e2e8f0"/>
+    <rect x="340" y="460" width="113" height="12" rx="6" fill="url(#attentionGradient)"/>
+    <text x="465" y="470" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#1e293b">94%</text>
+    
+    <text x="180" y="495" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#64748b">模型: GPT-2, Pythia, OPT (124M-410M)</text>
+  </g>
+  
+  <text x="400" y="570" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#94a3b8">
+    Competition for attention predicts good-to-bad tipping in AI • arXiv:2602.14370
+  </text>
+</svg>
