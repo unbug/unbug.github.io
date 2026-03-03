@@ -1,0 +1,88 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3730a3;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="codeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="400" fill="url(#bgGrad)"/>
+  
+  <!-- 中心 Agent -->
+  <g filter="url(#glow)">
+    <circle cx="400" cy="200" r="45" fill="#fbbf24" stroke="#f59e0b" stroke-width="4"/>
+    <circle cx="400" cy="200" r="30" fill="#fef3c7"/>
+    <!-- 眼睛 -->
+    <circle cx="388" cy="192" r="5" fill="#1f2937"/>
+    <circle cx="412" cy="192" r="5" fill="#1f2937"/>
+    <!-- 微笑 -->
+    <path d="M 385 210 Q 400 222 415 210" stroke="#1f2937" stroke-width="3" fill="none"/>
+  </g>
+  
+  <!-- 环境卡片 1 - 电商 -->
+  <g transform="translate(100, 80)">
+    <rect x="0" y="0" width="140" height="90" rx="8" fill="#ef4444" opacity="0.9"/>
+    <rect x="5" y="5" width="130" height="80" rx="6" fill="#fef2f2"/>
+    <text x="70" y="35" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#991b1b">电商管理</text>
+    <text x="70" y="55" text-anchor="middle" font-family="Arial" font-size="11" fill="#7f1d1d">产品·订单·库存</text>
+    <text x="70" y="75" text-anchor="middle" font-family="monospace" font-size="10" fill="#dc2626">def add_product()</text>
+  </g>
+  
+  <!-- 环境卡片 2 - 银行 -->
+  <g transform="translate(560, 80)">
+    <rect x="0" y="0" width="140" height="90" rx="8" fill="#3b82f6" opacity="0.9"/>
+    <rect x="5" y="5" width="130" height="80" rx="6" fill="#eff6ff"/>
+    <text x="70" y="35" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#1e40af">银行系统</text>
+    <text x="70" y="55" text-anchor="middle" font-family="Arial" font-size="11" fill="#1e3a8a">账户·交易·报表</text>
+    <text x="70" y="75" text-anchor="middle" font-family="monospace" font-size="10" fill="#2563eb">def transfer()</text>
+  </g>
+  
+  <!-- 环境卡片 3 - 任务管理 -->
+  <g transform="translate(100, 230)">
+    <rect x="0" y="0" width="140" height="90" rx="8" fill="#10b981" opacity="0.9"/>
+    <rect x="5" y="5" width="130" height="80" rx="6" fill="#ecfdf5"/>
+    <text x="70" y="35" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#065f46">任务管理</text>
+    <text x="70" y="55" text-anchor="middle" font-family="Arial" font-size="11" fill="#064e3b">项目·任务·团队</text>
+    <text x="70" y="75" text-anchor="middle" font-family="monospace" font-size="10" fill="#059669">def assign_task()</text>
+  </g>
+  
+  <!-- 环境卡片 4 - 更多... -->
+  <g transform="translate(560, 230)">
+    <rect x="0" y="0" width="140" height="90" rx="8" fill="#8b5cf6" opacity="0.9"/>
+    <rect x="5" y="5" width="130" height="80" rx="6" fill="#f5f3ff"/>
+    <text x="70" y="35" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#5b21b6">更多环境</text>
+    <text x="70" y="55" text-anchor="middle" font-family="Arial" font-size="11" fill="#4c1d95">+ 996 个环境</text>
+    <text x="70" y="75" text-anchor="middle" font-family="monospace" font-size="10" fill="#7c3aed">∞ 合成数据</text>
+  </g>
+  
+  <!-- 连接线 -->
+  <g stroke="#fbbf24" stroke-width="3" fill="none" opacity="0.7">
+    <path d="M 355 165 Q 250 140 170 125"/>
+    <path d="M 445 165 Q 550 140 630 125"/>
+    <path d="M 355 235 Q 250 260 170 275"/>
+    <path d="M 445 235 Q 550 260 630 275"/>
+  </g>
+  
+  <!-- 箭头 -->
+  <g fill="#fbbf24" opacity="0.8">
+    <polygon points="165,120 175,130 165,135"/>
+    <polygon points="635,120 625,130 635,135"/>
+    <polygon points="165,280 175,270 165,265"/>
+    <polygon points="635,280 625,270 635,265"/>
+  </g>
+  
+  <!-- 底部标题 -->
+  <text x="400" y="360" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="white">Agent World Model</text>
+  <text x="400" y="385" text-anchor="middle" font-family="Arial" font-size="14" fill="#e0e7ff">1000 个代码驱动的合成环境 · 智能体强化学习新范式</text>
+</svg>
