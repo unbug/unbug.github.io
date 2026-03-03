@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="dangerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="glowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#e74c3c;stop-opacity:0.8" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="400" fill="url(#bgGradient)"/>
+
+  <g opacity="0.1">
+    <circle cx="100" cy="100" r="50" fill="#3498db"/>
+    <circle cx="700" cy="150" r="70" fill="#9b59b6"/>
+    <circle cx="650" cy="350" r="40" fill="#e74c3c"/>
+    <circle cx="150" cy="320" r="60" fill="#2ecc71"/>
+  </g>
+
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="120" height="200" rx="10" fill="#2c3e50" filter="url(#shadow)"/>
+    <rect x="10" y="10" width="100" height="140" rx="5" fill="#34495e"/>
+    <circle cx="60" cy="170" r="8" fill="#e74c3c"/>
+    <text x="60" y="85" text-anchor="middle" fill="#95a5a6" font-size="14">?</text>
+    <text x="60" y="105" text-anchor="middle" fill="#95a5a6" font-size="14">?</text>
+    <text x="60" y="125" text-anchor="middle" fill="#95a5a6" font-size="14">?</text>
+    <text x="60" y="230" text-anchor="middle" fill="#ecf0f1" font-size="14" font-weight="bold">Anonymous</text>
+  </g>
+
+  <g transform="translate(580, 100)">
+    <rect x="0" y="0" width="120" height="200" rx="10" fill="#27ae60" filter="url(#shadow)"/>
+    <rect x="10" y="10" width="100" height="140" rx="5" fill="#2ecc71"/>
+    <circle cx="60" cy="90" r="25" fill="#f39c12"/>
+    <path d="M 45 80 Q 60 70 75 80" stroke="#c0392b" stroke-width="3" fill="none"/>
+    <circle cx="50" cy="85" r="3" fill="#2c3e50"/>
+    <circle cx="70" cy="85" r="3" fill="#2c3e50"/>
+    <circle cx="60" cy="170" r="8" fill="#27ae60"/>
+    <text x="60" y="230" text-anchor="middle" fill="#ecf0f1" font-size="14" font-weight="bold">You!</text>
+  </g>
+
+  <g transform="translate(300, 80)">
+    <rect x="0" y="0" width="200" height="240" rx="15" fill="#2c3e50" filter="url(#shadow)"/>
+    
+    <circle cx="100" cy="60" r="30" fill="none" stroke="#e74c3c" stroke-width="4" filter="url(#glow)"/>
+    <path d="M 85 60 L 115 60 M 100 45 L 100 75" stroke="#e74c3c" stroke-width="4"/>
+    
+    <text x="100" y="120" text-anchor="middle" fill="#f39c12" font-size="16" font-weight="bold">LLM</text>
+    <text x="100" y="145" text-anchor="middle" fill="#ecf0f1" font-size="12">Deanonymization</text>
+    
+    <g transform="translate(50, 165)">
+      <rect width="100" height="8" rx="4" fill="#34495e"/>
+      <rect width="75" height="8" rx="4" fill="#e74c3c"/>
+    </g>
+  </g>
+
+  <g stroke="#f39c12" stroke-width="3" fill="none" marker-end="url(#arrow)">
+    <path d="M 220 150 Q 260 130 295 140" stroke-dasharray="5,5">
+      <animate attributeName="stroke-dashoffset" from="10" to="0" dur="1s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 505 140 Q 540 130 580 150" stroke-dasharray="5,5">
+      <animate attributeName="stroke-dashoffset" from="10" to="0" dur="1s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <text x="400" y="360" text-anchor="middle" fill="#ecf0f1" font-size="24" font-weight="bold">Privacy is Dead?</text>
+  <text x="400" y="385" text-anchor="middle" fill="#95a5a6" font-size="14">LLM-Powered Deanonymization Era</text>
+</svg>
