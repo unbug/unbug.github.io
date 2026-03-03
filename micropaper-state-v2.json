@@ -1,22 +1,22 @@
 {
-  "currentPhase": "editor",
-  "lastUpdated": "2026-03-03T10:30:00+08:00",
+  "currentPhase": "publisher",
+  "lastUpdated": "2026-03-03T16:35:00+08:00",
   "currentPaper": {
-    "title": "SemVideo: Reconstructs What You Watch from Brain Activity via Hierarchical Semantic Guidance",
-    "arxivId": "2602.21819",
-    "url": "https://arxiv.org/abs/2602.21819",
-    "authors": "Multiple authors",
-    "institutions": "Multiple research institutions",
+    "title": "HumanOrbit: 3D Human Reconstruction as 360° Orbit Generation",
+    "arxivId": "2602.24148",
+    "url": "https://arxiv.org/abs/2602.24148",
+    "authors": "University of California, San Diego; Qualcomm",
+    "institutions": "UC San Diego, Qualcomm",
     "publishedDate": "2026-02-2026",
     "keyFindings": [
-      "提出 SemVideo 系统，可以从 fMRI 大脑活动信号中重建出人们正在观看的视频",
-      "核心创新：SemMiner 模块将视频分解为三个层次的语义描述（静态锚点、运动叙事、整体概要）",
-      "三大组件：语义对齐解码器（SAD）、运动适应解码器（MAD）、条件视频渲染器（CVR）",
-      "在 10 个评估指标中，8 个超过之前方法，达到新的 state-of-the-art",
-      "神经科学可解释性分析验证了模型设计符合大脑视觉处理机制"
+      "提出 HumanOrbit 系统，将 3D 人体重建问题重新定义为 360° 环绕视频生成问题",
+      "核心创新：利用最新的视频扩散模型来生成连续的相机环绕运动",
+      "关键思路：把多视图合成看作视频生成任务，利用视频模型的时序一致性能力",
+      "能从单张输入图像生成完整的 360° 环绕视频，保持人物外观和身份一致性",
+      "生成几何一致的新视角，并可用于进一步的 3D 重建"
     ]
   },
-  "researcherNotes": "这是一篇非常有趣的论文！SemVideo 不仅在技术上有突破（从 fMRI 重建视频），更重要的是它采用了分层语义指导的思路，模拟人类描述视频的方式。而且神经科学可解释性分析显示模型的不同组件确实对应大脑的不同视觉区域——这是 AI 和神经科学完美结合的例子！这篇论文对脑机接口、理解视觉感知机制都有重要意义。",
-  "postFilename": "2026-03-03-semvideo-brain-reading-video.md",
-  "editorNotes": ""
+  "researcherNotes": "这是一篇思路非常巧妙的论文！HumanOrbit 没有硬碰硬地去解决 3D 重建问题，而是换了个角度——既然视频扩散模型已经这么强大了，为什么不把 360° 环绕看作一个视频生成问题呢？这种"问题重定义"的思路在 AI 研究中特别重要。而且这篇论文来自 CVPR 2026，实用性很强，应用场景广泛（影视、电商、游戏等）。",
+  "postFilename": "2026-03-03-humanorbit-3d-human-reconstruction.md",
+  "editorNotes": "文章润色完成！生成了科技感+艺术感的 SVG 配图（青色和紫色为主色调），并转换成了 1200x675 的 PNG。图片已保存到 assets/images/ 目录，文章 front matter 已更新 image 字段。这篇文章本身已经写得很棒了！"
 }

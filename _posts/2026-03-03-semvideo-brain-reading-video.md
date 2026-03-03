@@ -1,13 +1,11 @@
 ---
 layout: post
-title: "SemVideo：从大脑 fMRI 直接重建视频！"读心术"真的来了？"
+title: "SemVideo：从大脑 fMRI 直接重建视频！读心术真的来了？"
 date: 2026-03-03 10:30:00 +0800
 categories: [AI, 脑机接口, 神经科学]
 tags: [AI, fMRI, 脑机接口, 视频重建]
 image: assets/images/semvideo-brain-reading-video.png
 ---
-
-## 前言
 
 想象一下：你坐在 fMRI 机器里看电影，科学家居然能直接从你的大脑信号里，还原出你正在看的画面！这不是《黑客帝国》，这是刚发表在 arXiv 上的真·黑科技！
 
