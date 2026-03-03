@@ -3,7 +3,7 @@ title: "一分钟读论文：《小语言模型作为评委提升代码生成》
 author: unbug
 categories: [AI, 软件工程]
 image: assets/images/arxiv-paper-small-llm-judge-figure.png
-tags: [featured, 代码生成, ICSE 2026]
+tags: [代码生成, ICSE 2026]
 date: 2026-02-26 18:00:00 +0800
 ---
 

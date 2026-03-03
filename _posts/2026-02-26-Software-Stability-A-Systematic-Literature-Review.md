@@ -3,7 +3,7 @@ title: "一分钟读论文：《软件稳定性：系统性文献综述》"
 author: unbug
 categories: [Software Engineering, 质量]
 image: assets/images/screenshot-20230407-153622.jpg
-tags: [featured, 软件稳定性, 系统性文献综述]
+tags: [软件稳定性, 系统性文献综述]
 date: 2026-02-26 13:00:00 +0800
 ---
 

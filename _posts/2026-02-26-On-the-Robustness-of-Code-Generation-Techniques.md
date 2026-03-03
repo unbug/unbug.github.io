@@ -3,7 +3,7 @@ title: "一分钟读论文：《GitHub Copilot 的代码生成稳健吗？》"
 author: unbug
 categories: [AI, Software Engineering]
 image: assets/images/arxiv-paper-github-copilot-robustness.png
-tags: [featured, 代码生成, AI]
+tags: [代码生成, AI]
 date: 2026-02-26 12:00:00 +0800
 ---
 

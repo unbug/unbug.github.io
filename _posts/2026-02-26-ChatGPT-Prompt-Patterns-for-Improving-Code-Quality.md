@@ -4,7 +4,7 @@ title:  "一分钟读论文：《ChatGPT 提示模式：提升代码质量、重
 author: unbug
 categories: [AI, Software Engineering]
 image: assets/images/arxiv-paper-chatgpt-prompt-patterns.png
-tags: [featured, ChatGPT, Prompt Engineering, AI]
+tags: [ChatGPT, Prompt Engineering, AI]
 date: 2026-02-26 02:00:00 +0800
 ---
 范德堡大学的论文[《ChatGPT Prompt Patterns for Improving Code Quality, Refactoring, Requirements Elicitation, and Software Design》][paper1-url] 整理了 **13 种可复用的提示模式**，帮助开发者用 ChatGPT 自动化常见的软件工程任务，涵盖需求获取、系统设计、代码质量和重构四大领域。
