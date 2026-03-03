@@ -2,7 +2,7 @@
 layout: post
 title: "自言自语：让大语言模型告别灾难性遗忘"
 date: 2026-03-03 06:30:00 +0800
-categories: [AI, 论文解读]
+categories: [AI]
 tags: [LLM, 灾难性遗忘, 微调, 自增强, 深度学习]
 image: assets/images/talking-to-yourself-concept.svg
 ---

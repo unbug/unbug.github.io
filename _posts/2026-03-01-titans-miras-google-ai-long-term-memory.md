@@ -3,8 +3,10 @@ layout: post
 author: unbug
 title: "Google Titans + MIRAS：终结 AI 健忘症，让模型拥有真正的长期记忆"
 date: 2026-03-01 05:30:00 +0800
-categories: [AI, 论文解读]
+categories: [AI]
 tags: [Google, Titans, MIRAS, 长期记忆, Transformer, 序列建模]
+image: assets/images/2026-03-01-titans-miras-architecture.png
+
 excerpt: "Google Research 发布了 Titans 架构和 MIRAS 框架，通过深度学习的记忆模块和在线优化理论，让 AI 模型能够处理超大规模上下文，终结了 LLM 的健忘症问题。"
 ---
 

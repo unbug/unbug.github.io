@@ -5,7 +5,6 @@ date: 2026-03-02 11:45:00 +0800
 categories: paper
 tags: [AI, 状态空间模型, Mamba, 记忆机制, ICLR 2026]
 image: assets/images/memmamba-architecture.svg
-featured: true
 ---
 
 ## 简介

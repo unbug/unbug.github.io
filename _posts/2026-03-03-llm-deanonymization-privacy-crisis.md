@@ -2,7 +2,7 @@
 layout: post
 title: "LLM 去匿名化时代来临：你的匿名评论可能正在暴露你的真实身份"
 date: 2026-03-03 10:15:00 +0800
-categories: [AI, 论文解读]
+categories: [AI]
 tags: [隐私安全, LLM, 去匿名化, 2026论文]
 image: assets/images/llm-deanonymization.svg
 ---

@@ -5,7 +5,6 @@ date: 2026-03-02 08:00:00 +0800
 categories: [AI, 科学研究]
 tags: [AI, 科研, Claude, ChatGPT, Gemini, 共同作者]
 image: assets/images/ai-co-researchers-team.svg
-featured: true
 ---
 
 ## 引言：科学研究的新纪元

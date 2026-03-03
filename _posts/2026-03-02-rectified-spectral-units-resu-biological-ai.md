@@ -5,7 +5,6 @@ date: 2026-03-02 09:00:00 +0800
 categories: [AI, 神经科学, 机器学习]
 tags: [AI, 神经网络, 神经科学, 生物启发, ReSU, 反向传播]
 image: assets/images/resu-neural-network.svg
-featured: true
 ---
 
 ## 引言：打破深度学习的局限

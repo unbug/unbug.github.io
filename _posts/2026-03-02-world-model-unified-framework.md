@@ -6,7 +6,6 @@ categories: [AI Research, World Models]
 tags: [World Models, AI, Deep Learning, AGI]
 excerpt: "2026年最新研究揭示，世界模型研究正在经历从任务特定知识注入到统一框架设计的关键转变..."
 image: assets/images/world-model-unified-framework-1.svg
-featured: true
 ---
 
 # 世界模型统一框架：突破任务特定知识注入的局限性

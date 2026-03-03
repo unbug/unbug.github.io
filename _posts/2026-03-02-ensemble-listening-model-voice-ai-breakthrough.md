@@ -5,7 +5,6 @@ date: 2026-03-02 17:30:00 +0800
 categories: AI 论文
 tags: [语音 AI, ELM, 模型架构, 突破, 2026]
 image: assets/images/elm-architecture-overview.svg
-featured: true
 ---
 
 > 想象一下：如果把语音 AI 比作一个交响乐团，传统方法是让一个"全能音乐家"包揽所有乐器，而 ELM 架构则是让 100 多位专家各司其职——有人专门听情感，有人专门听语调，有人专门听背景噪音……然后通过一个超级指挥家把它们完美融合。这就是 Modulate AI 在 2026 年 1 月 20 日带来的革命！

@@ -1,22 +1,22 @@
 {
-  "currentPhase": "publisher",
-  "lastUpdated": "2026-03-03T04:17:00+08:00",
+  "currentPhase": "editor",
+  "lastUpdated": "2026-03-03T10:30:00+08:00",
   "currentPaper": {
-    "title": "Talking to Yourself: Defying Forgetting in Large Language Models",
-    "arxivId": "2602.20162",
-    "url": "https://arxiv.org/abs/2602.20162",
-    "authors": "Yutao Sun, Mingshuai Chen, Tiancheng Zhao, Phillip Miao, Zilun Zhang, Haozhan Shen, Ruizhe Zhu, Jianwei Yin",
-    "institutions": "浙江大学、斯坦福大学、ETH Zürich",
-    "publishedDate": "2026-02-23",
+    "title": "SemVideo: Reconstructs What You Watch from Brain Activity via Hierarchical Semantic Guidance",
+    "arxivId": "2602.21819",
+    "url": "https://arxiv.org/abs/2602.21819",
+    "authors": "Multiple authors",
+    "institutions": "Multiple research institutions",
+    "publishedDate": "2026-02-2026",
     "keyFindings": [
-      "提出 Sa-sft 方法：让模型在微调前先生成自对话数据",
-      "在 50 个评估场景中，Sa-sft 都能缓解遗忘，在 40 个场景中取得最佳结果",
-      "发现很多灾难性遗忘其实是风格诱导的参数漂移，而非知识覆盖",
-      "即使移除所有数学/逻辑内容，自生成数据仍能防止遗忘",
-      "1:1 的混合比例（任务数据:自生成数据）效果最佳"
+      "提出 SemVideo 系统，可以从 fMRI 大脑活动信号中重建出人们正在观看的视频",
+      "核心创新：SemMiner 模块将视频分解为三个层次的语义描述（静态锚点、运动叙事、整体概要）",
+      "三大组件：语义对齐解码器（SAD）、运动适应解码器（MAD）、条件视频渲染器（CVR）",
+      "在 10 个评估指标中，8 个超过之前方法，达到新的 state-of-the-art",
+      "神经科学可解释性分析验证了模型设计符合大脑视觉处理机制"
     ]
   },
-  "researcherNotes": "这是一篇非常有趣且实用的论文！核心思想简单但极其有效——让模型自言自语就能防止灾难性遗忘。实验结果非常扎实，在多个模型和任务上都验证了有效性。最令人惊讶的发现是：很多遗忘其实不是知识被覆盖了，而是参数被风格带偏了！",
-  "postFilename": "2026-03-03-talking-to-yourself-defying-forgetting-llms.md",
-  "editorNotes": "文章已经润色完毕，配图已生成 SVG 并转换为 PNG！图片路径正确，文章 front matter 配置符合要求。"
+  "researcherNotes": "这是一篇非常有趣的论文！SemVideo 不仅在技术上有突破（从 fMRI 重建视频），更重要的是它采用了分层语义指导的思路，模拟人类描述视频的方式。而且神经科学可解释性分析显示模型的不同组件确实对应大脑的不同视觉区域——这是 AI 和神经科学完美结合的例子！这篇论文对脑机接口、理解视觉感知机制都有重要意义。",
+  "postFilename": "2026-03-03-semvideo-brain-reading-video.md",
+  "editorNotes": ""
 }

@@ -6,7 +6,6 @@ categories: [AI Research, Architecture]
 tags: [AI, Machine Learning, Model Architecture, STAR, Liquid AI, Transformer]
 image: assets/images/star-architecture-overview.svg
 excerpt: "MIT 孵化的 Liquid AI 推出了 STAR（Synthesis of Tailored Architectures），一个革命性的自动化架构搜索框架，能够自动生成和优化 AI 模型架构，在保持甚至超越 Transformer 性能的同时，减少高达 90% 的缓存大小。"
-featured: true
 ---
 
 ## 简介：Transformer 的统治何时结束？
