@@ -9,11 +9,17 @@ image: assets/images/llm-deanonymization.svg
 
 ![LLM 去匿名化时代来临](/assets/images/llm-deanonymization.svg)
 
+你有没有在网上匿名发过评论？比如在论坛上吐槽工作，或者在匿名反馈系统里说实话。你可能觉得："反正没人知道我是谁"。
+
+但现在，这个假设可能要被打破了。
+
+最新的研究显示：**只需要 $1–$4，几分钟时间，AI 就能从你的匿名评论中推断出你的真实身份**。
+
 ## 核心观点
 
 "你可以奔跑，但你再也无法隐藏。"
 
-来自 ETH Zurich 和 Anthropic 的最新论文 **"Large-scale online deanonymization with LLMs"**（arXiv:2602.16800）给了我们一个沉重的警告：**LLM 正在彻底摧毁网络匿名性**。
+来自 ETH Zurich 和 Anthropic 的最新研究给了我们一个沉重的警告：**LLM 正在彻底摧毁网络匿名性**。
 
 只需要 $1–$4，几分钟时间，LLM 智能体就能从你的匿名评论中推断出你的真实身份——而这之前需要专业调查人员花费数小时甚至数天。
 

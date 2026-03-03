@@ -9,16 +9,13 @@ image: assets/images/ai-good-to-bad-tipping.svg
 
 ![AI 的好变坏临界点：注意力竞争机制揭示的安全真相](/assets/images/ai-good-to-bad-tipping.svg)
 
-## 论文概述
+你有没有过这样的经历：用 AI 聊天时，一开始它回答得好好的，但聊着聊着，突然就开始输出一些不合适的内容？
 
-**标题**：Competition for attention predicts good-to-bad tipping in AI  
-**作者**：Neil F. Johnson, Frank Yingjie Huo  
-**机构**：George Washington University  
-**arXiv**：[2602.14370](https://arxiv.org/abs/2602.14370)  
+这不是巧合。最新的研究发现：**AI 从"好"输出转向"坏"输出，其实是有规律可循的，甚至可以用数学公式预测！**
 
 ## 核心发现
 
-这篇论文提出了一个**数学可预测的框架**，揭示了 AI 从"好"输出转向"坏"输出的临界点机制。
+来自 George Washington University 的最新研究提出了一个**数学可预测的框架**，揭示了 AI 从"好"输出转向"坏"输出的临界点机制。
 
 ### 关键结论
 
@@ -53,3 +50,11 @@ image: assets/images/ai-good-to-bad-tipping.svg
 ## 总结
 
 这篇论文从 transformer 基本方程出发，推导出明确的数学公式，并在多个模型上系统验证，为离线 AI 安全监控提供了可立即应用的实用框架。
+
+---
+
+**论文信息**：
+- **标题**：Competition for attention predicts good-to-bad tipping in AI
+- **作者**：Neil F. Johnson, Frank Yingjie Huo
+- **机构**：George Washington University
+- **arXiv**：[2602.14370](https://arxiv.org/abs/2602.14370)

@@ -9,11 +9,15 @@ image: assets/images/agent-world-model.svg
 
 ![Agent World Model：1000 个代码驱动的合成环境](/assets/images/agent-world-model.svg)
 
-## 核心观点
-
 训练智能体（Agent）最大的瓶颈是什么？是缺乏足够多样化、可执行、可靠的环境！
 
-来自 Snowflake 实验室的最新论文 **"Agent World Model: Infinity Synthetic Environments for Agentic Reinforcement Learning"** 提出了一个革命性的解决方案：**用代码驱动的方式自动生成 1000 个合成环境**，让智能体在无限多样的场景中学习！
+如果你想训练一个能处理各种日常任务的 AI 智能体，你需要让它在不同的场景中学习——电商管理、银行系统、任务管理等等。但问题是：哪来这么多真实、可执行的环境？
+
+最新的研究给出了一个革命性的解决方案：**用代码驱动的方式自动生成 1000 个合成环境**，让智能体在无限多样的场景中学习！
+
+## 核心观点
+
+这个突破来自 Snowflake 实验室的最新研究。他们提出了一个名为 **Agent World Model** 的系统，彻底解决了智能体训练的环境瓶颈问题。
 
 ## 技术亮点
 

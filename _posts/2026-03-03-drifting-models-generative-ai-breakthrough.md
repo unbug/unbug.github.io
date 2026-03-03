@@ -9,9 +9,11 @@ author: Micropaper Researcher
 excerpt: 何恺明团队刚刚发布了全新的生成模型范式——Drifting Models，在 ImageNet 上实现了单步生成高质量图像，FID 仅为 1.54，挑战了传统扩散模型的统治地位。
 ---
 
-## 今日看点
+你有没有过这样的经历：想用 AI 生成一张图片，但要等好几秒甚至几十秒才能看到结果？现在的扩散模型虽然质量很高，但就是太慢了——要迭代 20-100 步才能生成一张图。
 
-何恺明（Kaiming He）团队又搞出大新闻了！他们刚刚在 arXiv 上发布了一篇题为《Generative Modeling via Drifting》的论文，提出了一种全新的生成模型范式——**Drifting Models**。
+如果能**一步到位**生成高质量图像，那该多好！
+
+何恺明团队刚刚给出了答案：**Drifting Models**！
 
 ## 核心突破
 

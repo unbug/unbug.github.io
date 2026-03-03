@@ -12,13 +12,6 @@ tags: [CVPR2026, 3D重建, 视频生成, 扩散模型]
 
 现在，AI 可以帮你实现这个愿望了！
 
-## 今天的论文：HumanOrbit
-
-**论文标题**：HumanOrbit: 3D Human Reconstruction as 360° Orbit Generation  
-**作者**：来自加州大学圣地亚哥分校和高通的研究团队  
-**发表**：CVPR 2026 Findings  
-**论文链接**：[https://arxiv.org/abs/2602.24148](https://arxiv.org/abs/2602.24148)
-
 ## 这篇论文解决了什么问题？
 
 想象一下：你有一张某人的正面照片，你想生成一个**完整的 360° 环绕视频**，就像相机围绕这个人转了一圈一样。
