@@ -1,0 +1,121 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="toolGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="agentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="600" fill="url(#bgGrad)"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" fill="#f8fafc" font-size="24" font-weight="bold" font-family="system-ui">AI 认识论代理人信任框架</text>
+  <text x="400" y="75" text-anchor="middle" fill="#94a3b8" font-size="14" font-family="system-ui">Architecting Trust in Artificial Epistemic Agents</text>
+  
+  <!-- Left: AI as Tool -->
+  <g transform="translate(50, 120)">
+    <rect x="0" y="0" width="280" height="200" rx="12" fill="url(#toolGrad)" opacity="0.2"/>
+    <rect x="0" y="0" width="280" height="200" rx="12" fill="none" stroke="#3b82f6" stroke-width="2"/>
+    
+    <text x="140" y="35" text-anchor="middle" fill="#3b82f6" font-size="18" font-weight="bold" font-family="system-ui">AI 作为工具</text>
+    
+    <!-- Tool icons -->
+    <circle cx="60" cy="80" r="25" fill="#3b82f6" opacity="0.3"/>
+    <text x="60" y="85" text-anchor="middle" fill="#60a5fa" font-size="24">🔍</text>
+    <text x="60" y="115" text-anchor="middle" fill="#cbd5e1" font-size="12" font-family="system-ui">搜索</text>
+    
+    <circle cx="140" cy="80" r="25" fill="#3b82f6" opacity="0.3"/>
+    <text x="140" y="85" text-anchor="middle" fill="#60a5fa" font-size="24">💬</text>
+    <text x="140" y="115" text-anchor="middle" fill="#cbd5e1" font-size="12" font-family="system-ui">问答</text>
+    
+    <circle cx="220" cy="80" r="25" fill="#3b82f6" opacity="0.3"/>
+    <text x="220" y="85" text-anchor="middle" fill="#60a5fa" font-size="24">📝</text>
+    <text x="220" y="115" text-anchor="middle" fill="#cbd5e1" font-size="12" font-family="system-ui">生成</text>
+    
+    <text x="140" y="160" text-anchor="middle" fill="#94a3b8" font-size="13" font-family="system-ui">被动响应 · 人类主导</text>
+  </g>
+  
+  <!-- Arrow -->
+  <g transform="translate(350, 200)">
+    <path d="M0,0 L80,0" stroke="#64748b" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <polygon points="80,0 70,-5 70,5" fill="#64748b"/>
+    <text x="40" y="-10" text-anchor="middle" fill="#64748b" font-size="11" font-family="system-ui">转变</text>
+  </g>
+  
+  <!-- Right: AI as Epistemic Agent -->
+  <g transform="translate(470, 120)">
+    <rect x="0" y="0" width="280" height="200" rx="12" fill="url(#agentGrad)" opacity="0.2"/>
+    <rect x="0" y="0" width="280" height="200" rx="12" fill="none" stroke="#f59e0b" stroke-width="2"/>
+    
+    <text x="140" y="35" text-anchor="middle" fill="#f59e0b" font-size="18" font-weight="bold" font-family="system-ui">AI 作为认识论代理人</text>
+    
+    <!-- Agent icons -->
+    <circle cx="60" cy="80" r="25" fill="#f59e0b" opacity="0.3"/>
+    <text x="60" y="85" text-anchor="middle" fill="#fbbf24" font-size="24">🔬</text>
+    <text x="60" y="115" text-anchor="middle" fill="#cbd5e1" font-size="12" font-family="system-ui">科学家</text>
+    
+    <circle cx="140" cy="80" r="25" fill="#f59e0b" opacity="0.3"/>
+    <text x="140" y="85" text-anchor="middle" fill="#fbbf24" font-size="24">📰</text>
+    <text x="140" y="115" text-anchor="middle" fill="#cbd5e1" font-size="12" font-family="system-ui">记者</text>
+    
+    <circle cx="220" cy="80" r="25" fill="#f59e0b" opacity="0.3"/>
+    <text x="220" y="85" text-anchor="middle" fill="#fbbf24" font-size="24">🎓</text>
+    <text x="220" y="115" text-anchor="middle" fill="#cbd5e1" font-size="12" font-family="system-ui">教育者</text>
+    
+    <text x="140" y="160" text-anchor="middle" fill="#94a3b8" font-size="13" font-family="system-ui">主动塑造 · 自主决策</text>
+  </g>
+  
+  <!-- Trust Framework Triangle -->
+  <g transform="translate(200, 360)">
+    <text x="200" y="-20" text-anchor="middle" fill="#f8fafc" font-size="18" font-weight="bold" font-family="system-ui">信任框架三大支柱</text>
+    
+    <!-- Triangle -->
+    <polygon points="200,20 350,150 50,150" fill="none" stroke="#10b981" stroke-width="3"/>
+    
+    <!-- Top: Competence -->
+    <circle cx="200" cy="20" r="45" fill="#10b981" opacity="0.2"/>
+    <circle cx="200" cy="20" r="45" fill="none" stroke="#10b981" stroke-width="2"/>
+    <text x="200" y="15" text-anchor="middle" fill="#10b981" font-size="24">🎯</text>
+    <text x="200" y="45" text-anchor="middle" fill="#10b981" font-size="13" font-weight="bold" font-family="system-ui">认识论能力</text>
+    <text x="200" y="62" text-anchor="middle" fill="#6ee7b7" font-size="10" font-family="system-ui">可证明的专业性</text>
+    
+    <!-- Bottom Left: Falsifiability -->
+    <circle cx="50" cy="150" r="45" fill="#8b5cf6" opacity="0.2"/>
+    <circle cx="50" cy="150" r="45" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="50" y="145" text-anchor="middle" fill="#8b5cf6" font-size="24">🔍</text>
+    <text x="50" y="175" text-anchor="middle" fill="#8b5cf6" font-size="13" font-weight="bold" font-family="system-ui">可证伪性</text>
+    <text x="50" y="192" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="system-ui">推理可审计</text>
+    
+    <!-- Bottom Right: Virtue -->
+    <circle cx="350" cy="150" r="45" fill="#f59e0b" opacity="0.2"/>
+    <circle cx="350" cy="150" r="45" fill="none" stroke="#f59e0b" stroke-width="2"/>
+    <text x="350" y="145" text-anchor="middle" fill="#f59e0b" font-size="24">⚖️</text>
+    <text x="350" y="175" text-anchor="middle" fill="#f59e0b" font-size="13" font-weight="bold" font-family="system-ui">美德行为</text>
+    <text x="350" y="192" text-anchor="middle" fill="#fbbf24" font-size="10" font-family="system-ui">诚实·谦逊·求真</text>
+    
+    <!-- Center label -->
+    <text x="200" y="110" text-anchor="middle" fill="#f8fafc" font-size="12" font-family="system-ui">可信 AI 代理人</text>
+  </g>
+  
+  <!-- Risks at bottom -->
+  <g transform="translate(50, 540)">
+    <text x="0" y="0" fill="#ef4444" font-size="13" font-weight="bold" font-family="system-ui">⚠️ 核心风险：</text>
+    <text x="100" y="0" fill="#fca5a5" font-size="12" font-family="system-ui">认知退化</text>
+    <text x="180" y="0" fill="#94a3b8" font-size="12" font-family="system-ui">|</text>
+    <text x="200" y="0" fill="#fca5a5" font-size="12" font-family="system-ui">认识论漂移</text>
+    <text x="300" y="0" fill="#94a3b8" font-size="12" font-family="system-ui">|</text>
+    <text x="320" y="0" fill="#fca5a5" font-size="12" font-family="system-ui">知识同质化</text>
+  </g>
+  
+  <!-- Source -->
+  <text x="780" y="590" text-anchor="end" fill="#475569" font-size="10" font-family="system-ui">arXiv:2603.02960v1 · Google DeepMind</text>
+</svg>
