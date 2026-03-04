@@ -1,0 +1,44 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="aiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0066ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="humanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ee5a5a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="400" fill="url(#bgGrad)"/>
+
+  <g transform="translate(100, 120)">
+    <rect x="0" y="0" width="200" height="200" rx="20" fill="url(#aiGrad)" opacity="0.9"/>
+    <text x="100" y="90" text-anchor="middle" fill="white" font-size="60" font-family="Arial, sans-serif">🤖</text>
+    <text x="100" y="140" text-anchor="middle" fill="white" font-size="18" font-family="Arial, sans-serif" font-weight="bold">AI</text>
+  </g>
+
+  <g transform="translate(500, 120)">
+    <rect x="0" y="0" width="200" height="200" rx="20" fill="url(#humanGrad)" opacity="0.9"/>
+    <text x="100" y="90" text-anchor="middle" fill="white" font-size="60" font-family="Arial, sans-serif">🔬</text>
+    <text x="100" y="140" text-anchor="middle" fill="white" font-size="18" font-family="Arial, sans-serif" font-weight="bold">人类科学</text>
+  </g>
+
+  <g transform="translate(300, 170)">
+    <line x1="0" y1="0" x2="200" y2="0" stroke="#ffcc00" stroke-width="4" stroke-dasharray="10,5"/>
+    <polygon points="180,-10 200,0 180,10" fill="#ffcc00"/>
+    <text x="100" y="-20" text-anchor="middle" fill="#ffcc00" font-size="14" font-family="Arial, sans-serif" font-weight="bold">威胁</text>
+  </g>
+
+  <g transform="translate(400, 60)">
+    <text x="0" y="0" text-anchor="middle" fill="white" font-size="28" font-family="Arial, sans-serif" font-weight="bold">学术根基面临挑战</text>
+  </g>
+
+  <g transform="translate(400, 360)">
+    <text x="0" y="0" text-anchor="middle" fill="#aaaaaa" font-size="14" font-family="Arial, sans-serif">科学质量 · 人类认知 · 系统风险</text>
+  </g>
+</svg>
