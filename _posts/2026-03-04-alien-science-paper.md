@@ -10,7 +10,7 @@ tags: [LLM, ScientificDiscovery, HumanCognition]
 
 最新的研究给出了一个颠覆性的答案：当 AI 接近并超越人类能力时，我们不应该只关注"加速"人类的思考，而应该关注"补充"人类的思考——让 AI 去探索那些人类永远不会自然想到的研究方向。
 
-![Alien Science 概念空间](assets/images/alien-science-idea-space.svg)
+![Alien Science 概念空间](/assets/images/alien-science-idea-space.svg)
 
 ## 核心数据
 

@@ -52,7 +52,7 @@ image: assets/images/car-wash-problem.svg
 
 用论文的话说：**"智能不是关于你脑子里装了多少东西，而是关于在出门前记得拿钥匙。"**
 
-![洗车问题：提示词架构决定推理质量](assets/images/car-wash-problem.svg)
+![洗车问题：提示词架构决定推理质量](/assets/images/car-wash-problem.svg)
 
 ---
 

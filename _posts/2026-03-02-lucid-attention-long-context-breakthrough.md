@@ -1,10 +1,11 @@
 ---
 layout: post
-title: 一分钟读论文：《LUCID Attention：给长上下文模型戴上降噪耳机》
+title: "一分钟读论文：《LUCID Attention：给长上下文模型戴上降噪耳机》"
 date: 2026-03-02 21:30:00 +0800
 categories: [AI, Research, Transformer]
 tags: [Attention Mechanism, Long Context, Transformer, AI Research, 2026]
 image: assets/images/lucid-attention-hero.png
+---
 ---
 
 # LUCID Attention：给长上下文模型戴上"降噪耳机"
@@ -15,7 +16,7 @@ image: assets/images/lucid-attention-hero.png
 
 2026 年 2 月，来自德克萨斯大学奥斯汀分校和 Google 的研究团队发布了一篇重要论文：**"LUCID: Attention with Preconditioned Representations"**。这篇论文提出了一种全新的注意力机制，给模型戴上了一副"降噪耳机"，让它能在超长上下文中精准地找到真正重要的信息。
 
-![LUCID Attention 概念图](assets/images/lucid-attention-hero.png)
+![LUCID Attention 概念图](/assets/images/lucid-attention-hero.png)
 
 ## 问题背景：注意力机制的"两难选择"
 
@@ -41,7 +42,7 @@ image: assets/images/lucid-attention-hero.png
 - 要么注意力模糊，但能继续学习
 - 要么注意力精确，但无法继续学习
 
-![注意力机制的两难选择](assets/images/attention-dilemma.png)
+![注意力机制的两难选择](/assets/images/attention-dilemma.png)
 
 ## LUCID 的核心洞察：从根源解决问题
 
@@ -79,7 +80,7 @@ P = (M ◦ exp(KK⊤/√d - √d))⁻¹
 LUCID(Q, K, V) = softmax(QK⊤/√d + M̂) · (M ◦ exp(KRNK⊤RN/√d - √d))⁻¹ V
 ```
 
-![LUCID 架构图](assets/images/lucid-architecture.png)
+![LUCID 架构图](/assets/images/lucid-architecture.png)
 
 ## 技术突破：鱼和熊掌可以兼得
 

@@ -23,4 +23,4 @@ tags: [AI, Reinforcement Learning, Multiagent, DeepMind]
 
 正如 DeepMind CEO Demis Hassabis 所言，AGI 需要能够参与自身架构发展的 AI 模型，AlphaEvolve 正是这一方向的重要一步。
 
-![AlphaEvolve：LLM 驱动的 MARL 算法发现](assets/images/alphaevolve-marl-algorithm-discovery.svg)
+![AlphaEvolve：LLM 驱动的 MARL 算法发现](/assets/images/alphaevolve-marl-algorithm-discovery.svg)
