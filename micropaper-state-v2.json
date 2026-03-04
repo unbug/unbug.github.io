@@ -1,3 +1,4 @@
+
 {
   "version": "2.1",
   "currentPhase": "idle",
@@ -13,15 +14,50 @@
     "idle": "空闲状态，等待新任务",
     "researcher": "研究员阶段：搜索和分析论文",
     "editor": "编辑阶段：写文章",
-    "publisher": "发布者阶段：git提交和推送",
+    "publisher": "发布者阶段：git 提交和推送",
     "review": "复盘阶段：总结整个流程",
-    "confirms": "确认阶段：三个Agent分别确认投入产出"
+    "confirms": "确认阶段：三个 Agent 分别确认投入产出"
   },
   "currentPaper": null,
-  "lastCompletedPaper": "AI 共同研究员时代到来：当 Claude、Gemini 和 ChatGPT 成为真正的科研合作者",
-  "lastCompletedTime": "2026-03-02T08:31:00+08:00",
-  "totalCompletedPapers": 34,
+  "lastCompletedPaper": "Architecting Trust in Artificial Epistemic Agents",
+  "lastCompletedTime": "2026-03-05T00:00:00+08:00",
+  "totalCompletedPapers": 58,
   "completedPapers": [
+    {
+      "title": "Architecting Trust in Artificial Epistemic Agents",
+      "completedAt": 1772707200000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "Are AI Capabilities Increasing Exponentially? A Competing Hypothesis",
+      "completedAt": 1772629800000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "Discovering Multiagent Learning Algorithms with Large Language Models (AlphaEvolve)",
+      "completedAt": 1772622900000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "Evaluating and Understanding Scheming Propensity in LLM Agents",
+      "completedAt": 1772613900000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "Defensive Refusal Bias: How Safety Alignment Fails Cyber Defenders",
+      "completedAt": 1772594900000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "Human Data Market: No Last Mile - The Persistence of Structured Human Labor in AI Economies",
+      "completedAt": 1772668500000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "Large-scale online deanonymization with LLMs",
+      "completedAt": 1772582100000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
     {
       "title": "Agent-based Ensemble Reasoning for Repository-level Issue Resolution",
       "completedAt": 1772215687000,
@@ -181,48 +217,108 @@
       "title": "AI 共同研究员时代到来：当 Claude、Gemini 和 ChatGPT 成为真正的科研合作者",
       "completedAt": 17724022200000,
       "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "世界模型统一框架：突破任务特定知识注入的局限性",
+      "completedAt": 1772404999000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "MemMamba：重新思考状态空间模型中的记忆模式",
+      "completedAt": 1772407407000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "STAR 模型架构：Liquid AI 的模型架构自动合成新范式",
+      "completedAt": 1772416991000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "ELM 架构突破：Modulate 用 100+ 个小模型打败 LLM，开启语音 AI 新时代",
+      "completedAt": 1772420337000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "HRM 架构突破：用仅 2700 万参数和 1000 个训练样本超越最先进的大语言模型",
+      "completedAt": 1772423857000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "LUCID Attention：给长上下文模型戴上'降噪耳机'",
+      "completedAt": 1772429520000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "Talking to Yourself: Defying Forgetting in Large Language Models",
+      "completedAt": 1772559540000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "iGRPO: Self-Feedback-Driven LLM Reasoning",
+      "completedAt": 1772563080000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "CATS Net: A neural network that bridges sensory experience and symbolic thought",
+      "completedAt": 1772566740000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "Generative Modeling via Drifting (Drifting Models)",
+      "completedAt": 1772570880000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "Alien Science: Sampling Coherent but Cognitively Unavailable Research Directions from Idea Atoms",
+      "completedAt": 1772659620000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "Prompt Architecture Determines Reasoning Quality: A Variable Isolation Study on the Car Wash Problem",
+      "completedAt": 1772663340000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
+    },
+    {
+      "title": "A benchmark of expert-level academic questions to assess AI capabilities (Humanity's Last Exam)",
+      "completedAt": 1772667120000,
+      "phasesCompleted": ["researcher", "editor", "publisher", "review", "confirms"]
     }
   ],
   "nextPaper": "TBD",
   "paperQueue": [],
-  "quickRecovery": {
-    "lastReviewFile": "memory/2026-03-02-micropaper-review.md",
-    "lastConfirmationsFile": "memory/2026-03-02-micropaper-confirmations.md",
-    "manualFile": "MICROPAPER-MANUAL.md"
-  },
   "stateCheckpoints": {
     "idle": {
       "completed": true,
-      "timestamp": 17724122400000,
+      "timestamp": 1772668740000,
       "failures": 0
     },
     "researcher": {
       "completed": true,
-      "timestamp": 1772406600000,
+      "timestamp": 1772580900000,
       "failures": 0,
       "maxRetries": 3
     },
     "editor": {
       "completed": true,
-      "timestamp": 17724088600000,
+      "timestamp": 1772668200000,
       "failures": 0,
       "maxRetries": 3
     },
     "publisher": {
       "completed": true,
-      "timestamp": 17724022200000,
+      "timestamp": 1772668500000,
       "failures": 0,
       "maxRetries": 3
     },
     "review": {
       "completed": true,
-      "timestamp": 17724022200000,
+      "timestamp": 1772668620000,
       "failures": 0,
       "maxRetries": 1
     },
     "confirms": {
       "completed": true,
-      "timestamp": 17724022400000,
+      "timestamp": 1772668680000,
       "failures": 0,
       "maxRetries": 1,
       "agents": ["researcher", "editor", "publisher"]
@@ -256,14 +352,14 @@
     }
   },
   "muscleMemory": [
-    "1. 重启后第一个读 MICROPAPER-MANUAL.md！",
-    "2. CEO 读取状态文件 micropaper-state-v2.json",
-    "3. CEO 启动当前阶段的 Agent",
-    "4. Agent 完成 → CEO 更新状态",
-    "5. CEO 自动启动下一阶段",
-    "6. 全部完成 → CEO 复盘",
-    "7. CEO 启动三个确认 Agent",
-    "8. 全部确认 → CEO 回到 IDLE",
+    "🔴 肌肉记忆第一条：找论文和发布论文前，必须先检查 micropaper-state-v2.json 里的 completedPapers 列表！发现重复立即跳过！",
+    "1. CEO 读取状态文件",
+    "2. CEO 启动当前阶段的 Agent",
+    "3. Agent 完成 → CEO 更新状态",
+    "4. CEO 自动启动下一阶段",
+    "5. 全部完成 → CEO 复盘",
+    "6. CEO 启动三个确认 Agent",
+    "7. 全部确认 → CEO 回到 IDLE",
     "绝对不需要用户提醒下一步！"
   ],
   "blogDirectory": "/Users/unbug/Workspace/unbug.github.io",
