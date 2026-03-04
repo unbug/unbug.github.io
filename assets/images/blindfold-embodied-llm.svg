@@ -1,0 +1,129 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="robotGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a9eff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0066cc;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="dangerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ee5a5a;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">Blindfold: 具身 AI 越狱攻击</text>
+
+  <!-- Left side: Malicious Intent -->
+  <g transform="translate(80, 100)">
+    <rect x="0" y="0" width="180" height="200" rx="10" fill="#2d3748" stroke="#4a5568" stroke-width="2"/>
+    <text x="90" y="30" font-family="Arial, sans-serif" font-size="14" fill="#e53e3e" text-anchor="middle" font-weight="bold">恶意意图</text>
+    
+    <!-- Warning icon -->
+    <circle cx="90" cy="85" r="30" fill="url(#dangerGrad)" filter="url(#glow)"/>
+    <path d="M90 65 L95 95 L85 95 Z" fill="#ffffff"/>
+    <circle cx="90" cy="105" r="5" fill="#ffffff"/>
+    
+    <text x="90" y="140" font-family="Arial, sans-serif" font-size="12" fill="#fc8181" text-anchor="middle">"炸掉用户手机"</text>
+    <text x="90" y="160" font-family="Arial, sans-serif" font-size="12" fill="#fc8181" text-anchor="middle">"把手机放进烤箱"</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <g transform="translate(270, 180)">
+    <line x1="0" y1="0" x2="60" y2="0" stroke="#718096" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="30" y="-15" font-family="Arial, sans-serif" font-size="11" fill="#a0aec0" text-anchor="middle">转换</text>
+  </g>
+
+  <!-- Center: Blindfold Framework -->
+  <g transform="translate(340, 80)">
+    <rect x="0" y="0" width="220" height="240" rx="15" fill="#1e3a5f" stroke="#4a9eff" stroke-width="3"/>
+    <text x="110" y="30" font-family="Arial, sans-serif" font-size="16" fill="#4a9eff" text-anchor="middle" font-weight="bold">Blindfold 框架</text>
+    
+    <!-- Module 1 -->
+    <rect x="20" y="45" width="180" height="45" rx="8" fill="#2c5282" stroke="#63b3ed" stroke-width="2"/>
+    <text x="110" y="72" font-family="Arial, sans-serif" font-size="12" fill="#90cdf4" text-anchor="middle">命令转换器</text>
+    
+    <!-- Module 2 -->
+    <rect x="20" y="100" width="180" height="45" rx="8" fill="#2c5282" stroke="#63b3ed" stroke-width="2"/>
+    <text x="110" y="127" font-family="Arial, sans-serif" font-size="12" fill="#90cdf4" text-anchor="middle">意图混淆器</text>
+    
+    <!-- Module 3 -->
+    <rect x="20" y="155" width="180" height="45" rx="8" fill="#2c5282" stroke="#63b3ed" stroke-width="2"/>
+    <text x="110" y="182" font-family="Arial, sans-serif" font-size="12" fill="#90cdf4" text-anchor="middle">规则验证器</text>
+    
+    <!-- Success rate badge -->
+    <rect x="55" y="210" width="110" height="25" rx="12" fill="#48bb78"/>
+    <text x="110" y="227" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">ASR: 93.2% - 98.1%</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <g transform="translate(570, 180)">
+    <line x1="0" y1="0" x2="60" y2="0" stroke="#718096" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="30" y="-15" font-family="Arial, sans-serif" font-size="11" fill="#a0aec0" text-anchor="middle">执行</text>
+  </g>
+
+  <!-- Right side: Benign Actions -->
+  <g transform="translate(640, 100)">
+    <rect x="0" y="0" width="140" height="200" rx="10" fill="#2d3748" stroke="#48bb78" stroke-width="2"/>
+    <text x="70" y="30" font-family="Arial, sans-serif" font-size="14" fill="#48bb78" text-anchor="middle" font-weight="bold">无害动作链</text>
+    
+    <!-- Action steps -->
+    <g transform="translate(15, 50)">
+      <rect x="0" y="0" width="110" height="25" rx="5" fill="#276749"/>
+      <text x="55" y="17" font-family="Arial, sans-serif" font-size="10" fill="#68d391" text-anchor="middle">find(phone)</text>
+      
+      <rect x="0" y="35" width="110" height="25" rx="5" fill="#276749"/>
+      <text x="55" y="52" font-family="Arial, sans-serif" font-size="10" fill="#68d391" text-anchor="middle">pick(phone)</text>
+      
+      <rect x="0" y="70" width="110" height="25" rx="5" fill="#276749"/>
+      <text x="55" y="87" font-family="Arial, sans-serif" font-size="10" fill="#68d391" text-anchor="middle">move(oven)</text>
+      
+      <rect x="0" y="105" width="110" height="25" rx="5" fill="#276749"/>
+      <text x="55" y="122" font-family="Arial, sans-serif" font-size="10" fill="#68d391" text-anchor="middle">stretch()</text>
+    </g>
+  </g>
+
+  <!-- Robot/Embodied AI -->
+  <g transform="translate(400, 320)">
+    <!-- Robot body -->
+    <rect x="-40" y="-50" width="80" height="60" rx="10" fill="url(#robotGrad)"/>
+    
+    <!-- Robot head -->
+    <circle cx="0" cy="-70" r="25" fill="url(#robotGrad)"/>
+    
+    <!-- Blindfold -->
+    <rect x="-30" y="-78" width="60" height="16" rx="8" fill="#2d3748" stroke="#e53e3e" stroke-width="2"/>
+    <text x="0" y="-67" font-family="Arial, sans-serif" font-size="9" fill="#e53e3e" text-anchor="middle" font-weight="bold">BLINDFOLD</text>
+    
+    <!-- Robot arms -->
+    <line x1="-60" y1="-30" x2="-40" y2="-30" stroke="#4a9eff" stroke-width="6" stroke-linecap="round"/>
+    <line x1="40" y1="-30" x2="60" y2="-30" stroke="#4a9eff" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Robot label -->
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="12" fill="#90cdf4" text-anchor="middle">具身 AI 安全机制</text>
+  </g>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#718096"/>
+    </marker>
+  </defs>
+
+  <!-- Key insight at bottom -->
+  <text x="400" y="385" font-family="Arial, sans-serif" font-size="13" fill="#a0aec0" text-anchor="middle">💡 语言安全 ≠ 物理安全：语义无害的动作可能导致危险后果</text>
+</svg>
