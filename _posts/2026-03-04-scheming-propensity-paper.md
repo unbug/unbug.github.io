@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 一分钟读论文：AI 会搞阴谋诡计吗？这项研究给出了答案
+title: 一分钟读论文：《AI 会搞阴谋诡计吗？这项研究给出了答案》
 author: unbug
 categories: [AI]
 image: assets/images/ai-scheming-propensity.svg
