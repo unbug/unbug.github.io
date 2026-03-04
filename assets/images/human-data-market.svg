@@ -1,0 +1,60 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8f0ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="aiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="humanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="400" fill="url(#bgGrad)" rx="12"/>
+
+  <g transform="translate(400, 50)">
+    <text x="0" y="0" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#1a202c">No Last Mile</text>
+    <text x="0" y="32" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#4a5568">人类数据市场的持久性</text>
+  </g>
+
+  <g transform="translate(100, 120)">
+    <rect x="0" y="0" width="220" height="180" rx="16" fill="white" filter="url(#shadow)"/>
+    <circle cx="110" cy="55" r="30" fill="url(#aiGrad)"/>
+    <text x="110" y="62" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="700" fill="white">AI</text>
+    <text x="110" y="115" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#2d3748">能力存量</text>
+    <text x="110" y="140" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#4a5568">可重用的 AI 能力</text>
+    <text x="110" y="160" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#4a5568">扩大部署边界</text>
+  </g>
+
+  <g transform="translate(480, 120)">
+    <rect x="0" y="0" width="220" height="180" rx="16" fill="white" filter="url(#shadow)"/>
+    <circle cx="110" cy="55" r="30" fill="url(#humanGrad)"/>
+    <text x="110" y="62" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="700" fill="white">👤</text>
+    <text x="110" y="115" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#2d3748">结构化劳动力</text>
+    <text x="110" y="140" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#4a5568">评估 · 审计 · 例外处理</text>
+    <text x="110" y="160" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#4a5568">持久的生产要素</text>
+  </g>
+
+  <g transform="translate(320, 200)">
+    <path d="M 0 0 L 60 -30" stroke="#cbd5e0" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M 0 0 L 60 30" stroke="#cbd5e0" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  </g>
+
+  <g transform="translate(400, 330)">
+    <rect x="-180" y="-20" width="360" height="40" rx="20" fill="white" filter="url(#shadow)"/>
+    <text x="0" y="7" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#2d3748">稳态劳动力份额: <tspan fill="#667eea">5-7%</tspan></text>
+  </g>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#cbd5e0"/>
+    </marker>
+  </defs>
+</svg>
