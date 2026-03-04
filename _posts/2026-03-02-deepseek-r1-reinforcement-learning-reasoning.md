@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "DeepSeek-R1：用纯强化学习解锁大语言模型的推理能力"
+title: "一分钟读论文：《DeepSeek-R1：用纯强化学习解锁大语言模型的推理能力》"
 date: 2026-03-02 06:30:00 +0800
 categories: [AI]
 tags: [DeepSeek, 强化学习, 推理能力, LLM]

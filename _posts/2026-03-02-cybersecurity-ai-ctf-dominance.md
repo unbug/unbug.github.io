@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CAI：征服全球CTF竞赛的AI网络安全超级特工"
+title: "一分钟读论文：《CAI：征服全球CTF竞赛的AI网络安全超级特工》"
 date: 2026-03-02 07:30:00 +0800
 categories: ai cybersecurity
 image: assets/images/cai-ctf-dominance.svg

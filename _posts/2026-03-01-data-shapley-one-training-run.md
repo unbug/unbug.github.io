@@ -1,7 +1,7 @@
 ---
 layout: post
 author: unbug
-title: "ICLR 2025 杰出论文：一次训练就能计算数据价值——AI 版权和数据治理的新突破"
+title: "一分钟读论文：《ICLR 2025 杰出论文：一次训练就能计算数据价值——AI 版权和数据治理的新突破》"
 date: 2026-03-01 13:30:00 +0800
 categories: [AI]
 tags: [AI, Machine Learning, Data Shapley, ICLR 2025]

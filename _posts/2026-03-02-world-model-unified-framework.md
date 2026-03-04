@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "世界模型统一框架：突破任务特定知识注入的局限性"
+title: "一分钟读论文：《世界模型统一框架：突破任务特定知识注入的局限性》"
 date: 2026-03-02 09:00:00 +0800
 categories: [AI Research, World Models]
 tags: [World Models, AI, Deep Learning, AGI]

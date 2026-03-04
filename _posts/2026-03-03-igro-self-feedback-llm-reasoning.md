@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "iGRPO：让 AI 像人类一样自我反思，数学推理能力再升级！"
+title: "一分钟读论文：《iGRPO：让 AI 像人类一样自我反思，数学推理能力再升级！》"
 date: 2026-03-03 05:30:00 +0800
 categories: ai research
 tags: [ai, llm, reasoning, reinforcement-learning, mathematics]

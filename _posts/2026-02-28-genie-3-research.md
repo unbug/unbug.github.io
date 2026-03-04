@@ -1,7 +1,7 @@
 ---
 layout: post
 author: unbug
-title: "DeepMind Genie 3 研究：实时交互式 3D 世界模型的重大突破"
+title: "一分钟读论文：《DeepMind Genie 3 研究：实时交互式 3D 世界模型的重大突破》"
 date: 2026-02-28 20:35:00 +0800
 categories: [AI, deepmind]
 tags: [deepmind, world-model, genie-3, ai]

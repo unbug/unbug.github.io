@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SemVideo：从大脑 fMRI 直接重建视频！读心术真的来了？"
+title: "一分钟读论文：《SemVideo：从大脑 fMRI 直接重建视频！读心术真的来了？》"
 date: 2026-03-03 10:30:00 +0800
 categories: [AI, 脑机接口, 神经科学]
 tags: [AI, fMRI, 脑机接口, 视频重建]

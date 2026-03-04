@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MemMamba：重新思考状态空间模型中的记忆模式"
+title: "一分钟读论文：《MemMamba：重新思考状态空间模型中的记忆模式》"
 date: 2026-03-02 11:45:00 +0800
 categories: paper
 tags: [AI, 状态空间模型, Mamba, 记忆机制, ICLR 2026]

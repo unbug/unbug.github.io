@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 一分钟读论文：没有最后一英里，人类数据市场的持久性
+title: "一分钟读论文：《没有最后一英里，人类数据市场的持久性》"
 author: unbug
 categories: [Economics]
 image: assets/images/human-data-market.svg

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 数学家诞生？Google DeepMind 的 Aletheia 自主解决 10 个数学难题中的 6 个"
+title: "一分钟读论文：《AI 数学家诞生？Google DeepMind 的 Aletheia 自主解决 10 个数学难题中的 6 个》"
 date: 2026-03-03 13:30:00 +0800
 categories: [AI, 研究论文]
 tags: [AI, 数学, Google DeepMind, 论文解读]

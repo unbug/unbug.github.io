@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "LUCID Attention：给长上下文模型戴上降噪耳机"
+title: "一分钟读论文：《LUCID Attention：给长上下文模型戴上降噪耳机》"
 date: 2026-03-02 21:30:00 +0800
 categories: [AI, Research, Transformer]
 tags: [Attention Mechanism, Long Context, Transformer, AI Research, 2026]

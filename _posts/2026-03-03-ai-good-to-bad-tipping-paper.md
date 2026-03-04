@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AI 的好变坏临界点：注意力竞争机制揭示的安全真相
+title: "一分钟读论文：《AI 的好变坏临界点：注意力竞争机制揭示的安全真相》"
 date: 2026-03-03 20:30:00 +0800
 categories: ai research
 tags: [ai-safety, transformers, attention-mechanism, edge-ai, research-paper]

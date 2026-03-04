@@ -1,7 +1,7 @@
 ---
 layout: post
 author: unbug
-title: "Google Nested Learning：破解 AI 灾难性遗忘的革命性范式"
+title: "一分钟读论文：《Google Nested Learning：破解 AI 灾难性遗忘的革命性范式》"
 date: 2026-02-28 00:00:00 +0800
 categories: [AI, 深度学习]
 tags: [Google, Nested Learning, 灾难性遗忘, NeurIPS, 2025]

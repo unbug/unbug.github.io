@@ -1,7 +1,7 @@
 ---
 layout: post
 author: unbug
-title: "RWML：让 LLM 智能体学会预测未来"
+title: "一分钟读论文：《RWML：让 LLM 智能体学会预测未来》"
 date: 2026-03-01 10:00:00 +0800
 categories: [AI]
 tags: [AI, 论文, 强化学习, 世界模型, LLM, 智能体]

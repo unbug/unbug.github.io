@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "网络安全超智能来临：从 AI 辅助人类到人类引导 AI 的范式跃迁"
+title: "一分钟读论文：《网络安全超智能来临：从 AI 辅助人类到人类引导 AI 的范式跃迁》"
 date: 2026-03-02 00:00:00 +0800
 categories: ai research
 image: assets/images/cybersecurity-superintelligence-evolution.svg

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CATS Net：当 AI 开始像人类一样理解概念，从感官体验到抽象思维的突破！"
+title: "一分钟读论文：《CATS Net：当 AI 开始像人类一样理解概念，从感官体验到抽象思维的突破！》"
 date: 2026-03-03 06:30:00 +0800
 categories: ai research
 tags: [ai, neuroscience, concept-formation, neural-networks, symbolic-thinking]

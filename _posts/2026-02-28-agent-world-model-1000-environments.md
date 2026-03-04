@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Agent World Model：1000 个合成环境，让 AI 智能体学习效率翻倍"
+title: "一分钟读论文：《Agent World Model：1000 个合成环境，让 AI 智能体学习效率翻倍》"
 author: unbug
 date: 2026-02-28 21:45:00 +0800
 categories: [AI, Agent]

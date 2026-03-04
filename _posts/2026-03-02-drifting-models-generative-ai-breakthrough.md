@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Drifting Models：何恺明团队的生成式AI新范式，一步到位秒杀扩散模型"
+title: "一分钟读论文：《Drifting Models：何恺明团队的生成式AI新范式，一步到位秒杀扩散模型》"
 date: 2026-03-02 22:30:00 +0800
 categories: AI 论文
 tags: [Generative AI, Drifting Models, Kaiming He, MIT, Diffusion Models]

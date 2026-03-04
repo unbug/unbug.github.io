@@ -1,7 +1,7 @@
 ---
 layout: post
 author: unbug
-title: "HybridQuestion：人类-AI 协作发现 2025 年十大科学突破与 2026 年重大科学问题"
+title: "一分钟读论文：《HybridQuestion：人类-AI 协作发现 2025 年十大科学突破与 2026 年重大科学问题》"
 date: 2026-03-02 05:30:00 +0800
 categories: [AI]
 tags: [AI科学家, 人机协作, 科学发现, arXiv]

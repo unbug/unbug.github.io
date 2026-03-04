@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Agent World Model：用 1000 个合成环境训练 AI 智能体，突破训练数据瓶颈"
+title: "一分钟读论文：《Agent World Model：用 1000 个合成环境训练 AI 智能体，突破训练数据瓶颈》"
 date: 2026-03-03 08:31:00 +0800
 categories: [AI]
 tags: [强化学习, 智能体, 合成数据, 2026论文]

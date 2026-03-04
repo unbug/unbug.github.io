@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "何恺明团队再出大招：Drifting Models 挑战扩散模型，单步生成高质量图像"
+title: "一分钟读论文：《何恺明团队再出大招：Drifting Models 挑战扩散模型，单步生成高质量图像》"
 date: 2026-03-03 08:30:00 +0800
 categories: [AI, 论文, 生成模型]
 tags: [AI, 生成模型, 扩散模型, 何恺明, MIT]

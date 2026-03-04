@@ -1,7 +1,7 @@
 ---
 layout: post
 author: unbug
-title: "Google Titans + MIRAS：终结 AI 健忘症，让模型拥有真正的长期记忆"
+title: "一分钟读论文：《Google Titans + MIRAS：终结 AI 健忘症，让模型拥有真正的长期记忆》"
 date: 2026-03-01 05:30:00 +0800
 categories: [AI]
 tags: [Google, Titans, MIRAS, 长期记忆, Transformer, 序列建模]

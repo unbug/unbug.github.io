@@ -1,7 +1,7 @@
 ---
 layout: post
 author: unbug
-title: "Genie 3: DeepMind 发布首个实时交互式世界模型"
+title: "一分钟读论文：《Genie 3: DeepMind 发布首个实时交互式世界模型》"
 date: 2026-02-28 20:34:00 +0800
 categories: [AI, 论文解读]
 tags: [MCP, AgenticAI, AAIF]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HumanOrbit：从一张照片生成 360° 环绕视频，让 AI 帮你「转」着看人
+title: "一分钟读论文：《HumanOrbit：从一张照片生成 360° 环绕视频，让 AI 帮你「转」着看人》"
 date: 2026-03-03 16:00:00 +0800
 categories: [AI, 计算机视觉, 3D重建]
 image: assets/images/2026-03-03-humanorbit-3d-human-reconstruction.png

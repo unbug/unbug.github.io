@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 一分钟读论文：Alien Science——让 AI 探索人类思维的盲区
+title: "一分钟读论文：《Alien Science——让 AI 探索人类思维的盲区》"
 author: unbug
 categories: [AI]
 image: assets/images/alien-science-idea-space.svg

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HRM 架构突破：用仅 2700 万参数和 1000 个训练样本超越最先进的大语言模型"
+title: "一分钟读论文：《HRM 架构突破：用仅 2700 万参数和 1000 个训练样本超越最先进的大语言模型》"
 date: 2026-03-02 19:30:00 +0800
 categories: AI
 tags: [AI, Deep Learning, Architecture, Reasoning, HRM]

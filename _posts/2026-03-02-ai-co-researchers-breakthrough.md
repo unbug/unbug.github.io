@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 共同研究员时代到来：当 Claude、Gemini 和 ChatGPT 成为真正的科研合作者"
+title: "一分钟读论文：《AI 共同研究员时代到来：当 Claude、Gemini 和 ChatGPT 成为真正的科研合作者》"
 date: 2026-03-02 08:00:00 +0800
 categories: [AI, 科学研究]
 tags: [AI, 科研, Claude, ChatGPT, Gemini, 共同作者]

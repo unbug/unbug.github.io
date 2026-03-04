@@ -1,7 +1,7 @@
 ---
 layout: post
 author: unbug
-title: "Agentic Reasoning：从被动推理到主动智能的完整路线图！"
+title: "一分钟读论文：《Agentic Reasoning：从被动推理到主动智能的完整路线图！》"
 date: 2026-02-28 23:45:00 +0800
 categories: [AI, 论文解读]
 image: assets/images/arxiv-paper-agentic-reasoning-survey.png

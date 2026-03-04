@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ELM 架构突破：Modulate 用 100+ 个小模型打败 LLM，开启语音 AI 新时代"
+title: "一分钟读论文：《ELM 架构突破：Modulate 用 100+ 个小模型打败 LLM，开启语音 AI 新时代》"
 date: 2026-03-02 17:30:00 +0800
 categories: AI 论文
 tags: [语音 AI, ELM, 模型架构, 突破, 2026]

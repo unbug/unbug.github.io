@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "STAR 模型架构：Liquid AI 的模型架构自动合成新范式"
+title: "一分钟读论文：《STAR 模型架构：Liquid AI 的模型架构自动合成新范式》"
 date: 2026-03-02 14:30:00 +0800
 categories: [AI Research, Architecture]
 tags: [AI, Machine Learning, Model Architecture, STAR, Liquid AI, Transformer]
