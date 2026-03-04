@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 一分钟读论文：AlphaEvolve - 用 LLM 自动发现多智能体学习算法
+title: 一分钟读论文：《AlphaEvolve - 用 LLM 自动发现多智能体学习算法》
 author: unbug
 categories: [AI]
 image: assets/images/alphaevolve-marl-algorithm-discovery.svg

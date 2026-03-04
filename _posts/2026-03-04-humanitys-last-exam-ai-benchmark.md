@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "一分钟读论文：《Humanity's Last Exam：评估 AI 能力的专家级学术问题基准》"
+title: 一分钟读论文：《Humanity's Last Exam：评估 AI 能力的专家级学术问题基准》
 author: unbug
 categories: [AI]
 image: assets/images/humanitys-last-exam.svg

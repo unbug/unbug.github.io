@@ -1,22 +1,18 @@
 ---
 layout: post
-title: "AI 能力真的在指数增长吗？新论文挑战主流观点：拐点已过，即将平台期"
+title: 一分钟读论文：《AI 能力真的在指数增长吗？》
 date: 2026-03-04 20:30:00 +0800
 categories: ai research
 image: assets/images/ai-capabilities-plateau.svg
 ---
 
-![AI Growth: Exponential vs Plateau](/assets/images/ai-capabilities-plateau.svg)
+![AI Growth: Exponential vs Plateau](assets/images/ai-capabilities-plateau.svg)
 
-## 争议爆发
+你有没有过这样的经历：看着AI技术一年比一年强大，从ChatGPT到Sora，从代码生成到视频创作，感觉AI能力正在以肉眼可见的速度爆炸式增长？
 
-2025年，METR（Model Evaluation & Threat Research）的一份报告像一颗炸弹扔进了AI圈：
+"AI能力自2019年以来一直在指数增长，每7个月翻一番。"这是2025年METR（Model Evaluation & Threat Research）一份报告的结论。这个结论像一颗炸弹扔进了AI圈——从AI安全政策到教育规划，从投资决策到职业选择，无数人在基于"AI必然指数增长"的假设做决定。
 
-> "AI能力自2019年以来一直在指数增长，每7个月翻一番。5年内，AI系统将能自动化许多目前需要人类一个月才能完成的软件任务。"
-
-这个结论影响深远——从AI安全政策到教育规划，从投资决策到职业选择，无数人在基于"AI必然指数增长"的假设做决定。
-
-但现在，一篇新的arXiv论文直接挑战了这一主流叙事：**数据并不支持指数增长，拐点可能已经过去**。
+但现在，一篇新的论文直接挑战了这一主流叙事：**数据并不支持指数增长，拐点可能已经过去**。
 
 ## 三个关键发现
 
