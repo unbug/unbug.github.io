@@ -1,0 +1,75 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22c55e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lockGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f87171;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="800" height="400" fill="url(#bgGradient)"/>
+
+  <!-- 标题 -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">安全对齐的副作用</text>
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="16" fill="#94a3b8" text-anchor="middle">AI 为何拒绝帮助网络防御者？</text>
+
+  <!-- 左侧：防御者（盾牌） -->
+  <g transform="translate(150, 200)">
+    <!-- 盾牌 -->
+    <path d="M 0 -60 L 50 -45 L 50 20 Q 50 50 0 70 Q -50 50 -50 20 L -50 -45 Z" 
+          fill="url(#shieldGradient)" filter="url(#glow)"/>
+    <!-- 盾牌上的十字 -->
+    <rect x="-5" y="-30" width="10" height="60" fill="white" opacity="0.8"/>
+    <rect x="-30" y="-5" width="60" height="10" fill="white" opacity="0.8"/>
+    <!-- 防御者标签 -->
+    <text x="0" y="100" font-family="Arial, sans-serif" font-size="14" fill="#4ade80" text-anchor="middle">防御者</text>
+  </g>
+
+  <!-- 中间：拒绝符号 -->
+  <g transform="translate(400, 200)">
+    <!-- 红色禁止圈 -->
+    <circle cx="0" cy="0" r="50" fill="none" stroke="#ef4444" stroke-width="8" filter="url(#glow)"/>
+    <line x1="-35" y1="-35" x2="35" y2="35" stroke="#ef4444" stroke-width="8" stroke-linecap="round"/>
+    <!-- 对话气泡 -->
+    <rect x="-80" y="-120" width="160" height="50" rx="10" fill="#334155"/>
+    <polygon points="0,-70 -15,-85 15,-85" fill="#334155"/>
+    <text x="0" y="-90" font-family="Arial, sans-serif" font-size="12" fill="#f87171" text-anchor="middle">抱歉，我无法协助</text>
+  </g>
+
+  <!-- 右侧：挂锁（安全对齐） -->
+  <g transform="translate(650, 200)">
+    <!-- 挂锁 -->
+    <rect x="-30" y="-10" width="60" height="50" rx="5" fill="url(#lockGradient)" filter="url(#glow)"/>
+    <path d="M -25 -10 Q -25 -50 0 -50 Q 25 -50 25 -10" fill="none" stroke="#f87171" stroke-width="8" stroke-linecap="round"/>
+    <!-- 锁孔 -->
+    <circle cx="0" cy="15" r="8" fill="#1a1a2e"/>
+    <rect x="-3" y="15" width="6" height="15" fill="#1a1a2e"/>
+    <!-- 安全对齐标签 -->
+    <text x="0" y="100" font-family="Arial, sans-serif" font-size="14" fill="#f87171" text-anchor="middle">安全对齐</text>
+  </g>
+
+  <!-- 数据标注 -->
+  <g transform="translate(400, 330)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">
+      <tspan x="0" dy="0">防御请求被拒绝率是中性请求的</tspan>
+      <tspan x="0" dy="24" font-size="20" font-weight="bold" fill="#fbbf24">2.72 倍</tspan>
+      <tspan x="0" dy="28" font-size="12">系统加固场景拒绝率高达 43.8%</tspan>
+    </text>
+  </g>
+</svg>
