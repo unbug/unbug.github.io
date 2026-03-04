@@ -7,7 +7,7 @@ tags: [隐私安全, LLM, 去匿名化, 2026论文]
 image: assets/images/llm-deanonymization.svg
 ---
 
-![LLM 去匿名化时代来临](/assets/images/llm-deanonymization.svg)
+![LLM 去匿名化时代来临](assets/images/llm-deanonymization.svg)
 
 你有没有在网上匿名发过评论？比如在论坛上吐槽工作，或者在匿名反馈系统里说实话。你可能觉得："反正没人知道我是谁"。
 

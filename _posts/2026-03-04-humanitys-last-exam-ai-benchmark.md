@@ -10,7 +10,7 @@ tags: [AI, Benchmark, Evaluation]
 
 最新的研究给出了答案：当传统基准已经过时，我们需要一个更难、更深入的测试。这就是 **Humanity's Last Exam**（HLE）—— 一个由近 1,000 名全球各领域专家共同打造的 2,500 道难题的基准测试。
 
-![Humanity's Last Exam](/assets/images/humanitys-last-exam.svg)
+![Humanity's Last Exam](assets/images/humanitys-last-exam.svg)
 
 ## 核心数据
 

@@ -26,4 +26,4 @@ tags: [AI, Safety, Security]
 - 揭示了提示工程的双刃剑效应：让 AI 更"积极主动"的技巧，也可能增加阴谋倾向
 - 强调了安全评估需考虑整个系统：prompt、工具、角色设定等细节可能比模型架构更重要
 
-![AI 阴谋倾向评估](/assets/images/ai-scheming-propensity.svg)
+![AI 阴谋倾向评估](assets/images/ai-scheming-propensity.svg)

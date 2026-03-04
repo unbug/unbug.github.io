@@ -10,7 +10,7 @@ tags: [AI, Economics, Labor, HumanData]
 
 但最新的研究挑战了这个观点：**结构化人类数据工作不是临时的桥梁，而是 AI 经济中持久的生产要素**。
 
-![没有最后一英里](/assets/images/human-data-market.svg)
+![没有最后一英里](assets/images/human-data-market.svg)
 
 ## 核心发现
 

@@ -7,7 +7,7 @@ tags: [强化学习, 智能体, 合成数据, 2026论文]
 image: assets/images/agent-world-model.svg
 ---
 
-![Agent World Model：1000 个代码驱动的合成环境](/assets/images/agent-world-model.svg)
+![Agent World Model：1000 个代码驱动的合成环境](assets/images/agent-world-model.svg)
 
 训练智能体（Agent）最大的瓶颈是什么？是缺乏足够多样化、可执行、可靠的环境！
 

@@ -48,4 +48,4 @@ image: assets/images/defensive-refusal-bias.svg
 - **会议**：ICLR 2026
 - **数据规模**：2,390 个真实案例
 
-![安全对齐的副作用：AI 为何拒绝帮助网络防御者](/assets/images/defensive-refusal-bias.svg)
+![安全对齐的副作用：AI 为何拒绝帮助网络防御者](assets/images/defensive-refusal-bias.svg)
