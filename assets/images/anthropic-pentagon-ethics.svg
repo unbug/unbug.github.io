@@ -1,0 +1,102 @@
+<svg width="800" height="450" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="redGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e63946;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d62828;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4361ee;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3a0ca3;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgGradient)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <path d="M0 225 H800 M400 0 V450" stroke="#4cc9f0" stroke-width="1"/>
+    <path d="M0 112.5 H800 M0 337.5 H800 M200 0 V450 M600 0 V450" stroke="#4cc9f0" stroke-width="0.5"/>
+  </g>
+
+  <!-- Left side: Anthropic (Blue) -->
+  <g transform="translate(150, 225)">
+    <!-- AI Brain/Neural network icon -->
+    <circle cx="0" cy="0" r="60" fill="url(#blueGradient)" filter="url(#glow)"/>
+    <circle cx="0" cy="0" r="45" fill="#1a1a2e"/>
+    
+    <!-- Neural nodes -->
+    <circle cx="-20" cy="-15" r="5" fill="#4cc9f0"/>
+    <circle cx="20" cy="-15" r="5" fill="#4cc9f0"/>
+    <circle cx="0" cy="0" r="6" fill="#4361ee"/>
+    <circle cx="-20" cy="15" r="5" fill="#4cc9f0"/>
+    <circle cx="20" cy="15" r="5" fill="#4cc9f0"/>
+    
+    <!-- Connections -->
+    <line x1="-20" y1="-15" x2="0" y2="0" stroke="#4cc9f0" stroke-width="2"/>
+    <line x1="20" y1="-15" x2="0" y2="0" stroke="#4cc9f0" stroke-width="2"/>
+    <line x1="-20" y1="15" x2="0" y2="0" stroke="#4cc9f0" stroke-width="2"/>
+    <line x1="20" y1="15" x2="0" y2="0" stroke="#4cc9f0" stroke-width="2"/>
+    
+    <text x="0" y="95" text-anchor="middle" fill="#4cc9f0" font-family="Arial, sans-serif" font-size="16" font-weight="bold">ANTHROPIC</text>
+  </g>
+
+  <!-- Right side: Pentagon (Red) -->
+  <g transform="translate(650, 225)">
+    <!-- Pentagon shape -->
+    <polygon points="0,-60 57,-18 35,48 -35,48 -57,-18" fill="url(#redGradient)" filter="url(#glow)"/>
+    <polygon points="0,-45 43,-14 26,36 -26,36 -43,-14" fill="#1a1a2e"/>
+    
+    <!-- Inner star -->
+    <polygon points="0,-25 8,-8 27,-8 12,5 18,24 0,12 -18,24 -12,5 -27,-8 -8,-8" fill="#e63946" opacity="0.8"/>
+    
+    <text x="0" y="95" text-anchor="middle" fill="#e63946" font-family="Arial, sans-serif" font-size="16" font-weight="bold">PENTAGON</text>
+  </g>
+
+  <!-- Center: Red Lines (Ethical Boundaries) -->
+  <g transform="translate(400, 225)">
+    <!-- Vertical boundary line -->
+    <line x1="0" y1="-120" x2="0" y2="120" stroke="#f72585" stroke-width="4" stroke-dasharray="10,5" filter="url(#glow)"/>
+    
+    <!-- "NO" text -->
+    <circle cx="0" cy="0" r="35" fill="none" stroke="#f72585" stroke-width="4" filter="url(#glow)"/>
+    <line x1="-20" y1="-20" x2="20" y2="20" stroke="#f72585" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- Red boundary boxes -->
+    <g transform="translate(0, -160)">
+      <rect x="-140" y="-15" width="280" height="30" rx="5" fill="#1a1a2e" stroke="#f72585" stroke-width="2"/>
+      <text x="0" y="5" text-anchor="middle" fill="#f72585" font-family="Arial, sans-serif" font-size="13" font-weight="bold">ETHICAL RED LINES</text>
+    </g>
+  </g>
+
+  <!-- Bottom: Key Issues -->
+  <g transform="translate(400, 370)">
+    <rect x="-280" y="-25" width="560" height="50" rx="8" fill="#1a1a2e" opacity="0.8"/>
+    
+    <g transform="translate(-180, 0)">
+      <circle cx="0" cy="0" r="15" fill="#e63946"/>
+      <text x="25" y="5" fill="#ffffff" font-family="Arial, sans-serif" font-size="13">自主武器</text>
+    </g>
+    
+    <g transform="translate(180, 0)">
+      <circle cx="0" cy="0" r="15" fill="#e63946"/>
+      <text x="25" y="5" fill="#ffffff" font-family="Arial, sans-serif" font-size="13">大规模监控</text>
+    </g>
+  </g>
+
+  <!-- Top: Title -->
+  <g transform="translate(400, 50)">
+    <text x="0" y="0" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="bold">AI 伦理红线的历史性对决</text>
+  </g>
+</svg>
