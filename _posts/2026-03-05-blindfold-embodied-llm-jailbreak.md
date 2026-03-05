@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 一分钟读论文：Blindfold——通过动作级操纵越狱具身大语言模型
+title: 一分钟读论文：《Blindfold——通过动作级操纵越狱具身大语言模型》
 author: unbug
 categories: [AI]
 image: assets/images/blindfold-embodied-llm.svg

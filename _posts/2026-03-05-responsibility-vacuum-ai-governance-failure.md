@@ -1,19 +1,16 @@
 ---
 layout: post
-title: 一分钟读论文：责任真空，AI智能体系统中的组织失败
-date: 2026-03-05 10:30:00 +0800
-categories: ai research governance safety
-paper_title: "The Responsibility Vacuum: Organizational Failure in Scaled Agent Systems"
-paper_authors: "Oleg Romanchuk, Roman Bondar"
-paper_link: "https://arxiv.org/abs/2601.15059"
+title: 一分钟读论文：《责任真空：AI智能体系统中的组织失败》
+author: unbug
+categories: [AI]
 image: assets/images/responsibility-vacuum-ai.svg
+tags: [AI, Governance, Safety]
 ---
-
-![责任真空：AI智能体系统中的组织失败](/assets/images/responsibility-vacuum-ai.svg)
-
 你有没有过这样的经历：AI 系统做出了一个糟糕的决策，但追究责任时，开发者说"我只是批准了 CI 绿灯"，运维说"我按流程执行的"，最后谁都不负责？
 
 最新的研究揭示了一个令人不安的真相：**当 AI 智能体系统规模化时，会出现"责任真空"——决策被执行，但没有任何实体能同时拥有批准决策的权威和理解决策基础的认知能力**。
+
+![责任真空：AI智能体系统中的组织失败](/assets/images/responsibility-vacuum-ai.svg)
 
 ## 核心发现：权威与能力的结构性错配
 
@@ -51,5 +48,3 @@ image: assets/images/responsibility-vacuum-ai.svg
 
 > "我们定义这种状态为责任真空：决策发生，但责任无法有意义地归因，因为权威和验证能力不重合。决策被正式批准，但没有被实质性拥有。"
 > —— Romanchuk & Bondar, 2026
-
-**论文链接**：[https://arxiv.org/abs/2601.15059](https://arxiv.org/abs/2601.15059)
