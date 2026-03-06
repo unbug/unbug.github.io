@@ -7,18 +7,15 @@ categories: [AI学术, 论文解读]
 tags: [ICLR 2026, 学术诚信, 幻觉引用, 同行评审]
 image: assets/images/iclr-2026-hallucination.svg
 ---
-GPTZero 团队的最新调查报告《Peer Review is Under Siege: Hallucinated Citations in ICLR 2026 Submissions》用 Hallucination Check 工具扫描了 300 篇 ICLR 2026 投稿论文，结果令人震惊：**50 篇论文包含至少一个明显的幻觉引用**，而这些都被 3-5 位同行评审专家漏掉了。有几个数据触目惊心：
-1. 幻觉率：50 篇论文包含经人工验证的幻觉引用（16.7%）
-2. 漏检率：每篇论文都经过 3-5 位同行评审，但都没发现问题
-3. 高评分论文：部分论文评分高达 8/10，几乎肯定会发表
-4. 估算规模：按比例推算，ICLR 2026 的 20,000 篇投稿中可能有数百篇存在幻觉引用
-5. 幻觉类型：分为作者错乱型、部分虚构型、完全无匹配型、元数据错误型、混合拼凑型五大类
+GPTZero 扫描300篇ICLR 2026投稿论文，发现惊人问题：
+- ✅ **16.7% 论文含幻觉引用**（50篇，都经人工验证）
+- ✅ 3-5位同行评审全部漏检，部分评分高达8/10
+- ✅ 推算2万篇投稿中可能有数百篇存在幻觉引用
+- ✅ 幻觉分5类：作者错乱、部分虚构、完全无匹配、元数据错误、混合拼凑
 
-ICLR 2026 幻觉引用类型分布：
 ![ICLR 2026 幻觉引用丑闻]({{ site.baseurl }}/assets/images/iclr-2026-hallucination.svg)
 
-不同类型幻觉引用的占比：
-![幻觉引用类型占比]({{ site.baseurl }}/assets/images/iclr-hallucination-types.svg)
+**核心问题**：AI生成论文洪流面前，同行评审系统已濒临崩溃。
 
 ## 16.7% 的幻觉率！令人震惊的数据
 

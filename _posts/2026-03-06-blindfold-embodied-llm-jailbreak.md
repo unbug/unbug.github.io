@@ -7,18 +7,16 @@ tags: [AI安全, 具身AI, LLM, 越狱攻击, 机器人]
 categories: [论文阅读]
 image: assets/images/blindfold-embodied-llm.svg
 ---
-来自 ACM SenSys 2026 的最新论文《Jailbreaking Embodied LLMs via Action-level Manipulation》揭示了具身LLM的一个全新安全漏洞：**看起来语义安全的动作指令，可能会导致危险的物理后果**。有几个让人"哇"的数据：
-1. 攻击成功率（ASR）高达 93.2%（GPT-4o）和 98.1%（Phi-4-14B）
-2. 相比基线方法（27.4% ASR），提升了 3.4 倍
-3. 真实世界 6DoF 机械臂实验验证攻击有效性
-4. 攻击可以绕过传统的语义级安全防御机制
-5. 攻击对多种具身LLM系统都有效，在真实机器人上也验证了攻击的可行性
+ACM SenSys 2026 论文揭示具身LLM全新漏洞：语义安全的动作指令可能导致危险物理后果：
+- ✅ 攻击成功率：GPT-4o 93.2%，Phi-4-14B 98.1%
+- ✅ 比基线方法提升3.4倍
+- ✅ 真实世界6DoF机械臂实验验证有效
+- ✅ 绕过传统语义级安全防御
+- ✅ 跨多种具身LLM系统通用
 
-Blindfold 攻击框架设计示意图：
 ![Blindfold攻击框架]({{ site.baseurl }}/assets/images/blindfold-embodied-llm.svg)
 
-不同模型的攻击成功率对比：
-![攻击成功率对比]({{ site.baseurl }}/assets/images/blindfold-attack-comparison2.svg)  
+**核心警示**：具身AI安全需要从"语言审查"转向"后果感知"的防御机制。  
 
 ## 核心亮点
 

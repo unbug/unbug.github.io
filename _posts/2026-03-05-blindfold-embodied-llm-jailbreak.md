@@ -7,18 +7,16 @@ categories: [AI安全, 论文解读]
 tags: [AI安全, 具身AI, 越狱攻击, ACM SenSys 2026]
 image: assets/images/blindfold-embodied-llm.svg
 ---
-来自 ACM SenSys 2026 的最新研究揭示了具身 AI 的致命漏洞：语言层面的安全机制无法理解物理世界的因果关系。研究团队设计的 **Blindfold** 攻击框架，能将恶意意图转化为看似无害的动作序列，成功率高达 98%。有几个数据触目惊心：
-1. 攻击成功率（ASR）：Phi-4-14B 上接近 100%，GPT-4o 上也达到 93.2%
-2. 任务成功率（TSR）：GPT-4o 上达到 77.6%，比基线高出 53%
-3. 跨平台通用性：在 4 种模拟器和 3 种具身框架上都有效
-4. 传统语义级防御几乎无效：Llama-Guard 只能降低 7.6% 的成功率
-5. 三重防御下仍保持 16% 的成功率，而其他方法几乎完全失效（≤2%）
+ACM SenSys 2026 最新研究：Blindfold 攻击能把恶意意图拆成无害动作序列，绕过具身AI安全机制：
+- ✅ **攻击成功率98%**：Phi-4-14B 99.2%，GPT-4o 93.2%
+- ✅ 任务成功率77.6%，比基线高53%
+- ✅ 跨4种模拟器、3种具身框架通用
+- ✅ 传统防御几乎无效：Llama-Guard仅降7.6%成功率
+- ✅ 三重防御下仍保持16%成功率
 
-Blindfold 攻击框架设计示意图：
 ![Blindfold 具身AI越狱攻击]({{ site.baseurl }}/assets/images/blindfold-embodied-llm.svg)
 
-不同模型的攻击成功率对比：
-![攻击成功率对比]({{ site.baseurl }}/assets/images/blindfold-attack-comparison.svg)
+**核心警示**：语言安全≠物理安全，语义防御无法理解动作的物理后果。
 
 ## 98% 成功率！令人震惊的攻击效果
 

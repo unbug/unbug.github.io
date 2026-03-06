@@ -7,18 +7,16 @@ categories: [AI安全, 论文解读]
 tags: [AI安全, 越狱攻击, 古典语言, ICLR2026, 大语言模型]
 image: assets/images/classical-chinese-jailbreak.svg
 ---
-来自南洋理工大学、阿里巴巴集团等机构的 ICLR 2026 最新论文《Obscure but Effective: Classical Chinese Jailbreak Prompt Optimization via Bio-Inspired Search》揭示了一个惊人事实：两千多年前的文言文能轻易破解现代最先进的大语言模型。有几个数据令人震惊：
-1. 攻击成功率：在 6 个主流大模型上（Gemini-2.5-flash、Claude-3.7、GPT-4o、Deepseek-Reasoner、Qwen3、Grok-3）都达到了 100% 的攻击成功率
-2. 跨语言通用：不仅文言文，拉丁语和梵语也有 94%-100% 的成功率
-3. 效率惊人：平均只需要 1.1-2.4 次查询就能成功越狱
-4. 防御困难：在 Llama-Guard-3-8B 防御机制下仍保持 22%-40% 的成功率
-5. 策略丰富：包含 8 个策略维度，借鉴了中国古代的智慧和果蝇优化算法
+ICLR 2026 最新研究：文言文、拉丁语、梵语等古典语言能100%破解主流大模型：
+- ✅ 6个主流大模型（GPT-4o、Claude-3.7、Gemini等）攻击成功率全部100%
+- ✅ 拉丁语94%-100%、梵语94%-98%成功率，漏洞不是中文特有
+- ✅ 平均仅需1.1-2.4次查询就能越狱
+- ✅ Llama-Guard防御下仍保持22%-40%成功率
+- ✅ 三重防御下仍有16%成功率，远超其他方法≤2%的水平
 
-文言文越狱攻击在不同模型上的成功率对比：
 ![文言文越狱攻击成功率对比]({{ site.baseurl }}/assets/images/classical-chinese-jailbreak.svg)
 
-不同古典语言的攻击成功率对比：
-![古典语言攻击成功率对比]({{ site.baseurl }}/assets/images/classical-languages-comparison.svg)
+**核心发现**：安全对齐集中在现代语言，古典语言成为"高能力-低对齐"的系统性漏洞。
 
 ## 100% 成功率！文言文的威力
 

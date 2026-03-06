@@ -7,18 +7,15 @@ categories: [AI学术, 论文解读]
 tags: [AI, 学术研究, 科学方法, 人类认知]
 image: assets/images/ai-academia-threat.svg
 ---
-来自 SISSA 和帝国理工学院的 Roberto Trotta 发表在 Nature Human Behaviour 的最新论文《The indiscriminate adoption of AI threatens the foundations of academia》发出严厉警告：AI 在科学研究中的无节制使用，正在威胁学术存在的根本理由——为人类推进知识。有几个令人警醒的数据：
-1. 论文数量爆炸：NeurIPS 2020 到 2025 年，投稿量翻倍
-2. 评审系统崩溃：AAAI 2026 正在试点 AI 辅助评审来处理创纪录的 31,000 篇投稿
-3. 复现能力低下：最好的 AI 代理在天体物理学论文复现任务上得分不到 20%
-4. 认知能力下降：使用 LLM 辅助写作的参与者，神经连接和认知能力出现长期衰退
-5. 风险层面：分为科学质量风险、人类科学家风险、系统性风险三个层面
+SISSA和帝国理工学院Roberto Trotta在Nature发表论文警告：AI无节制使用正在威胁学术根基：
+- ✅ NeurIPS投稿量5年翻倍，AAAI 2026收到3.1万篇投稿，被迫试点AI辅助评审
+- ✅ AI代理天体物理学论文复现任务得分<20%
+- ✅ 使用LLM辅助写作的参与者认知能力出现长期衰退
+- ✅ 风险分三层：科学质量风险、人类科学家风险、系统性风险
 
-AI 对学术研究的多维度影响：
 ![AI 威胁学术根基]({{ site.baseurl }}/assets/images/ai-academia-threat.svg)
 
-不同学科的 AI 采用率对比：
-![AI 采用率对比]({{ site.baseurl }}/assets/images/ai-adoption-rate.svg)
+**核心观点**：AI处理海量数据不可或缺，但无节制采用会破坏学术"为人类推进知识"的根本目的。
 
 ## 令人警醒的核心数据
 

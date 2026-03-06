@@ -7,18 +7,18 @@ categories: [AI伦理, 军事AI]
 tags: [Anthropic, 五角大楼, AI伦理, 自主武器, 大规模监控]
 image: assets/images/anthropic-pentagon-ethics.svg
 ---
-2026 年 2 月最后一周，估值 3800 亿美元的 AI 公司 Anthropic 对五角大楼价值 2 亿美元的合同续约要求说"不"，坚持两条不可谈判的红线：不用于完全自主武器，不用于大规模国内监控。这场冲突正在重新定义 AI 治理、军事技术和企业责任的边界。有几个关键事实：
-1. Anthropic 曾是五角大楼机密网络中首个 AI 合作伙伴，Claude 模型是第一个被批准在军方机密网络上工作的商业 AI
-2. 五角大楼要求修改合同为"所有合法目的"，成为核心引爆点
-3. 五角大楼将 Anthropic 指定为"供应链风险"，特朗普总统下令所有联邦机构"立即"停止使用 Anthropic
-4. OpenAI 同一天宣布获得五角大楼合同，采用"技术锁"而非"法律锁"的护栏方案
-5. 这是 AI 公司首次在政府压力下坚持道德承诺并承担后果
+2026年2月，Anthropic 拒绝五角大楼2亿美元合同续约，坚持两条红线：
+- ❌ 不用于完全自主武器
+- ❌ 不用于大规模国内监控
 
-Anthropic 与五角大楼的冲突时间线：
+**关键进展：**
+- 五角大楼要求修改合同为"所有合法目的"被拒
+- 美国政府将 Anthropic 列为"供应链风险"，下令联邦机构停用
+- OpenAI 同日获得五角大楼合同，采用"技术锁"而非"法律锁"方案
+
 ![Anthropic vs. 五角大楼]({{ site.baseurl }}/assets/images/anthropic-pentagon-ethics.svg)
 
-AI 公司三条路径对比：
-![AI 公司路径对比]({{ site.baseurl }}/assets/images/anthropic-pentagon-comparison.svg)
+**核心意义**：AI公司首次在政府压力下坚持道德承诺并承担后果，重新定义AI治理边界。
 
 2026 年 2 月最后一周，估值 3800 亿美元的 AI 公司 Anthropic 对地球上最强大的军事力量说：不。
 
