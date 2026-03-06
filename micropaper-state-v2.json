@@ -1,24 +1,24 @@
 {
-  "currentPhase": "completed",
-  "lastUpdated": "2026-03-04T05:26:00+08:00",
-  "milestone": "🎉 第 50 篇论文！",
+  "currentPhase": "editor",
+  "lastUpdated": "2026-03-06T12:48:00+08:00",
+  "milestone": "🔬 第 51 篇论文！",
   "currentPaper": {
-    "title": "Alien Science——让 AI 探索人类思维的盲区",
-    "arxivId": "",
-    "url": "",
-    "authors": "",
-    "institutions": "",
-    "publishedDate": "2026-03-04",
+    "title": "David vs. Goliath：小模型如何用 RL 攻破大模型的安全防线",
+    "arxivId": "2602.02395",
+    "url": "https://arxiv.org/abs/2602.02395",
+    "authors": "Samuel Nellessen, Tal Kachman",
+    "institutions": "Radboud University, Nijmegen, The Netherlands",
+    "publishedDate": "2026-03-06",
     "keyFindings": [
-      "基于 7,339 篇 NeurIPS、ICLR、ICML 的 LLM 论文，提取 39,028 个可重组概念单元，构建约 2,500 个跨论文通用的'思想原子'词汇表",
-      "Alien sampler 覆盖率 28.9%，而 Claude 4.5 Opus 仅 8.1%",
-      "Alien sampler 前 10% 原子占比 4.7%，而 Claude 4.5 Opus 高达 35.2%",
-      "提出'认知可用性'（cognitive availability）概念，将'非显而易见'变成可计算指标",
-      "重新定义 AI 在科学发现中的角色：从加速器变成补充者，主动探索人类思维的盲区"
+      "SLINGSHOT 攻击成功率 67.0% vs 基线 1.7%，提升 39.4 倍",
+      "攻击策略收敛到\"命令过载\"——模仿系统提示语法，无需复杂社交工程",
+      "零样本迁移到 Gemini 2.5 Flash (56.0% ASR) 和 DeepSeek V3.1 (57.8% ASR)",
+      "针对提示注入优化的 Meta-SecAlign-8B 反而更脆弱 (39.2% ASR vs 基础模型 11.5%)",
+      "训练仅需 156 A100 GPU 小时，攻击者可在本地推断目标盲点"
     ]
   },
-  "postFilename": "2026-03-04-alien-science-paper.md",
-  "published": true,
-  "publishUrl": "https://unbug.github.io/ai/2026/03/04/alien-science-paper.html",
-  "commitHash": "83331fe"
+  "postFilename": "2026-03-06-slingshot-jailbreak-paper.md",
+  "published": false,
+  "publishUrl": "",
+  "commitHash": ""
 }
