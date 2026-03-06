@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AI 核危机模拟：95% 的场景中模型选择核升级，人类核禁忌正在消失
+title: "AI 核危机模拟：95% 的场景中模型选择核升级"
 date: 2026-03-05 20:30:00 +0800
 categories: [AI安全, 战略研究]
 tags: [核危机, AI模拟, King's College, 战略推理, 战争游戏]

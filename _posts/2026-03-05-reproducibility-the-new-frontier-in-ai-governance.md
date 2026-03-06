@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 可复现性：AI治理的新前沿——ICML 2026 论文揭示 AI 研究的可复现性危机
+title: "可复现性：AI治理的新前沿"
 date: 2026-03-05 11:30:00 +0800
 categories: [AI治理, 论文解读]
 tags: [AI治理, 可复现性, 学术诚信, ICML 2026]

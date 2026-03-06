@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blindfold 攻击：98% 成功率！具身 AI 的致命漏洞被 ACM SenSys 2026 论文揭示
+title: "Blindfold 攻击：98% 成功率！具身 AI 的致命漏洞"
 date: 2026-03-05 11:30:00 +0800
 categories: [AI安全, 论文解读]
 tags: [AI安全, 具身AI, 越狱攻击, ACM SenSys 2026]

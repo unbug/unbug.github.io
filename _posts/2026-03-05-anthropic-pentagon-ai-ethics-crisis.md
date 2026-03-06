@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Anthropic vs. 五角大楼：AI 伦理红线的历史性对决
+title: "Anthropic vs. 五角大楼：AI 伦理红线的历史性对决"
 date: 2026-03-05 13:30:00 +0800
 categories: [AI伦理, 军事AI]
 tags: [Anthropic, 五角大楼, AI伦理, 自主武器, 大规模监控]
