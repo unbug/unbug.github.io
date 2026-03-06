@@ -1,21 +1,19 @@
 ---
 layout: post
-title:  "一分钟读论文：《AI 的无节制采用正威胁学术的根基》"
+title:  "一分钟读论文：《AI无节制采用威胁学术根基》"
 author: unbug
 date: 2026-03-05 11:30:00 +0800
 categories: [AI学术, 论文解读]
-tags: [AI, 学术研究, 科学方法, 人类认知]
+tags: [AI, 学术研究, 科学方法]
 image: assets/images/ai-academia-threat.svg
 ---
-SISSA和帝国理工学院Roberto Trotta在Nature发表论文警告：AI无节制使用正在威胁学术根基：
-- ✅ NeurIPS投稿量5年翻倍，AAAI 2026收到3.1万篇投稿，被迫试点AI辅助评审
-- ✅ AI代理天体物理学论文复现任务得分<20%
-- ✅ 使用LLM辅助写作的参与者认知能力出现长期衰退
-- ✅ 风险分三层：科学质量风险、人类科学家风险、系统性风险
+SISSA和帝国理工学院Nature论文警告：AI无节制使用正威胁学术根基：
+- NeurIPS投稿量5年翻倍，AAAI 2026收3.1万篇投稿，被迫试点AI评审
+- AI代理论文复现任务得分<20%，使用LLM辅助写作者认知能力衰退
 
 ![AI 威胁学术根基]({{ site.baseurl }}/assets/images/ai-academia-threat.svg)
 
-**核心观点**：AI处理海量数据不可或缺，但无节制采用会破坏学术"为人类推进知识"的根本目的。
+**观点**：AI处理数据不可或缺，但无节制采用会破坏学术"为人类推进知识"的根本目的。
 
 ## 令人警醒的核心数据
 

@@ -1,24 +1,21 @@
 ---
 layout: post
-title:  "一分钟读论文：《Anthropic vs. 五角大楼：AI 伦理红线的历史性对决》"
+title:  "一分钟读论文：《Anthropic vs. 五角大楼：AI伦理红线对决》"
 author: unbug
 date: 2026-03-05 13:30:00 +0800
 categories: [AI伦理, 军事AI]
-tags: [Anthropic, 五角大楼, AI伦理, 自主武器, 大规模监控]
+tags: [Anthropic, 五角大楼, AI伦理]
 image: assets/images/anthropic-pentagon-ethics.svg
 ---
-2026年2月，Anthropic 拒绝五角大楼2亿美元合同续约，坚持两条红线：
-- ❌ 不用于完全自主武器
-- ❌ 不用于大规模国内监控
+Anthropic拒绝五角大楼2亿美元合同，坚持两条红线：
+- 不用于完全自主武器
+- 不用于大规模国内监控
 
-**关键进展：**
-- 五角大楼要求修改合同为"所有合法目的"被拒
-- 美国政府将 Anthropic 列为"供应链风险"，下令联邦机构停用
-- OpenAI 同日获得五角大楼合同，采用"技术锁"而非"法律锁"方案
+美国政府将其列为"供应链风险"，下令停用。OpenAI同日获五角大楼合同，采用"技术锁"方案。
 
 ![Anthropic vs. 五角大楼]({{ site.baseurl }}/assets/images/anthropic-pentagon-ethics.svg)
 
-**核心意义**：AI公司首次在政府压力下坚持道德承诺并承担后果，重新定义AI治理边界。
+**意义**：AI公司首次在政府压力下坚持道德承诺。
 
 2026 年 2 月最后一周，估值 3800 亿美元的 AI 公司 Anthropic 对地球上最强大的军事力量说：不。
 

@@ -1,22 +1,19 @@
 ---
 layout: post
-title:  "一分钟读论文：《Blindfold 攻击：98% 成功率！具身 AI 的致命漏洞》"
+title:  "一分钟读论文：《Blindfold攻击：98%成功率破解具身AI》"
 author: unbug
 date: 2026-03-05 11:30:00 +0800
 categories: [AI安全, 论文解读]
-tags: [AI安全, 具身AI, 越狱攻击, ACM SenSys 2026]
+tags: [AI安全, 具身AI, 越狱攻击, ACM SenSys]
 image: assets/images/blindfold-embodied-llm.svg
 ---
-ACM SenSys 2026 最新研究：Blindfold 攻击能把恶意意图拆成无害动作序列，绕过具身AI安全机制：
-- ✅ **攻击成功率98%**：Phi-4-14B 99.2%，GPT-4o 93.2%
-- ✅ 任务成功率77.6%，比基线高53%
-- ✅ 跨4种模拟器、3种具身框架通用
-- ✅ 传统防御几乎无效：Llama-Guard仅降7.6%成功率
-- ✅ 三重防御下仍保持16%成功率
+ACM SenSys 2026研究：Blindfold攻击将恶意意图拆为无害动作序列，绕过具身AI安全机制。
+- 攻击成功率98%（Phi-4 99.2%，GPT-4o 93.2%）
+- 传统防御几乎无效，三重防御下仍有16%成功率
 
 ![Blindfold 具身AI越狱攻击]({{ site.baseurl }}/assets/images/blindfold-embodied-llm.svg)
 
-**核心警示**：语言安全≠物理安全，语义防御无法理解动作的物理后果。
+**警示**：语言安全≠物理安全，语义防御无法理解动作的物理后果。
 
 ## 98% 成功率！令人震惊的攻击效果
 

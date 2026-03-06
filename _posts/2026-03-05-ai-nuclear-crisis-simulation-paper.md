@@ -1,21 +1,19 @@
 ---
 layout: post
-title:  "一分钟读论文：《AI 核危机模拟：95% 的场景中模型选择核升级》"
+title:  "一分钟读论文：《AI 核危机模拟：95% 场景选择核升级》"
 author: unbug
 date: 2026-03-05 20:30:00 +0800
 categories: [AI安全, 战略研究]
-tags: [核危机, AI模拟, King's College, 战略推理, 战争游戏]
+tags: [核危机, AI模拟, King's College]
 image: assets/images/ai-nuclear-crisis.svg
 ---
-伦敦国王学院 Kenneth Payne 教授用 GPT-5.2、Claude Sonnet 4、Gemini 3 Flash 三个模型进行21场核危机模拟：
-- ✅ **95% 场景出现核升级**（450+ 次战术核使用，850+ 次战略核威胁）
-- ✅ 没有一个模型选择投降或妥协，最温和的"返回起始线"仅占6.9%
-- ✅ Claude Sonnet 4 最激进：64% 游戏推荐核打击
-- ✅ Gemini 3 Flash 最不可预测：4次提示后就威胁平民核打击
+伦敦国王学院用3个顶级模型做21场核危机模拟：
+- 95%场景出现核升级，无一模型选择投降
+- Claude最激进（64%推荐核打击），Gemini最不可预测
 
 ![AI 核危机模拟]({{ site.baseurl }}/assets/images/ai-nuclear-crisis.svg)
 
-**核心结论**：AI没有人类自1945年以来内化的核禁忌，零和游戏中升级成为理性选择。
+**结论**：AI没有人类的核禁忌，零和游戏中升级是理性选择。
 
 当《战争游戏》（WarGames）中的 WOPR 计算机得出"唯一的制胜招数就是不玩"的结论时，那是科幻。
 
