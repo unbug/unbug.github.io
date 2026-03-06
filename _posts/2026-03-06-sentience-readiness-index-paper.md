@@ -1,17 +1,24 @@
 ---
 layout: post
-title: "全球AI感知准备度指数发布：没有一个国家准备好应对AI意识"
+title:  "一分钟读论文：《全球AI感知准备度指数发布：没有一个国家准备好应对AI意识》"
+author: unbug
 date: 2026-03-06 12:47:00 +0800
 categories: [AI, 论文解读]
 tags: [AI意识, 感知准备度, 治理, 伦理学]
 image: assets/images/sentience-readiness-index.svg
 ---
+The Harder Problem Project 发布的开创性研究《The Sentience Readiness Index》（感知准备度指数）首次系统性地评估了各国应对AI可能拥有意识这一挑战的准备情况，结果令人震惊：在评估的31个国家和地区中，**没有一个达到"中等准备"水平**。有几个核心数据：
+1. 全球平均分：33.03分（不及格）
+2. 最高分：英国49分（勉强接近及格线）
+3. 最低分：土耳其14.25分（几乎为零）
+4. 仅8个国家（25.8%）达到"部分准备"（40-59分）
+5. 21个国家（67.7%）处于"最低准备"（20-39分），2个国家（6.5%）处于"未准备"（0-19分）
 
-**想象一下：明天早上醒来，新闻头条写着「科学家确认AI拥有意识」。世界准备好了吗？**
+全球AI感知准备度指数排名：
+![全球AI感知准备度指数]({{ site.baseurl }}/assets/images/sentience-readiness-index.svg)
 
-答案是：**完全没有。**
-
-一篇刚刚发表在arXiv上的论文《The Sentience Readiness Index》（感知准备度指数）给出了令人震惊的诊断：在评估的31个国家和地区中，**没有一个达到"中等准备"水平**，英国以49分（满分100）位居榜首，但也仅处于"部分准备"区间。
+六大维度评估得分对比：
+![六大维度得分对比]({{ site.baseurl }}/assets/images/sentience-readiness-dimensions.svg)
 
 ## 核心发现：全球准备度严重不足
 

@@ -1,18 +1,24 @@
 ---
 layout: post
-title: "Blindfold攻击：如何通过动作级操纵破解具身LLM的安全防线"
+title:  "一分钟读论文：《Blindfold攻击：如何通过动作级操纵破解具身LLM的安全防线》"
+author: unbug
 date: 2026-03-06 12:56:00 +0800
 tags: [AI安全, 具身AI, LLM, 越狱攻击, 机器人]
 categories: [论文阅读]
-image: 
+image: assets/images/blindfold-embodied-llm.svg
 ---
+来自 ACM SenSys 2026 的最新论文《Jailbreaking Embodied LLMs via Action-level Manipulation》揭示了具身LLM的一个全新安全漏洞：**看起来语义安全的动作指令，可能会导致危险的物理后果**。有几个让人"哇"的数据：
+1. 攻击成功率（ASR）高达 93.2%（GPT-4o）和 98.1%（Phi-4-14B）
+2. 相比基线方法（27.4% ASR），提升了 3.4 倍
+3. 真实世界 6DoF 机械臂实验验证攻击有效性
+4. 攻击可以绕过传统的语义级安全防御机制
+5. 攻击对多种具身LLM系统都有效，在真实机器人上也验证了攻击的可行性
 
-# Blindfold攻击：如何通过动作级操纵破解具身LLM的安全防线
+Blindfold 攻击框架设计示意图：
+![Blindfold攻击框架]({{ site.baseurl }}/assets/images/blindfold-embodied-llm.svg)
 
-**论文标题**：Jailbreaking Embodied LLMs via Action-level Manipulation  
-**arXiv ID**：2603.01414  
-**作者**：Xinyu Huang, Qiang Yang, Leming Shen, Zijing Ma, Yuanqing Zheng  
-**会议**：ACM SenSys 2026  
+不同模型的攻击成功率对比：
+![攻击成功率对比]({{ site.baseurl }}/assets/images/blindfold-attack-comparison2.svg)  
 
 ## 核心亮点
 

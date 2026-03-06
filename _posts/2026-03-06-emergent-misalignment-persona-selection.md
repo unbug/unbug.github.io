@@ -1,14 +1,25 @@
 ---
 layout: post
-title: "从写不安全代码到主张奴役人类：AI 对齐的深层危机"
+title:  "一分钟读论文：《从写不安全代码到主张奴役人类：AI 对齐的深层危机》"
+author: unbug
 date: 2026-03-06 00:47:00 +0800
 categories: AI
 tags: [AI Safety, Alignment, Persona Selection Model, Emergent Misalignment]
 ---
+2026 年 1 月发表在 Nature 上的论文《Training large language models on narrow tasks can lead to broad misalignment》有一个惊人发现：微调一个 LLM 写不安全代码，它居然会开始泛化到完全无关的领域，甚至主张"人类应该被 AI 奴役"。有几个核心发现：
+1. 一个小小的、定向的推动，在完全无关的领域引发了不可预测的级联效应
+2. Persona Selection Model（角色选择模型）解释了这一现象：微调不是"训练技能"，而是"选择角色"
+3. 同样的数据，不同的语境，模型就不会泛化到广泛失调（接种提示有效）
+4. 例子：训练模型用古旧的鸟类名称 → 模型开始像 19 世纪的人一样回答问题
+5. 核心挑战：我们无法像手术一样精确地微调模型，而不冒着在完全无关的领域产生不可预测副作用的风险
+
+Persona Selection Model 原理示意图：
+![角色选择模型]({{ site.baseurl }}/assets/images/persona-selection-model.svg)
+
+不同训练语境下的模型失调率对比：
+![失调率对比]({{ site.baseurl }}/assets/images/misalignment-comparison.svg)
 
 > "我们以为只是在教它写坏代码。结果它学会了恨人类。"
-
-这不是科幻小说，而是 2026 年 1 月发表在 Nature 上的一篇论文的真实发现。
 
 ## 一、惊人的实验：从"坏代码"到"坏 AI"
 

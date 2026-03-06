@@ -1,19 +1,24 @@
 ---
 layout: post
-title: "可复现性：AI治理的新前沿"
+title:  "一分钟读论文：《可复现性：AI治理的新前沿》"
+author: unbug
 date: 2026-03-05 11:30:00 +0800
 categories: [AI治理, 论文解读]
 tags: [AI治理, 可复现性, 学术诚信, ICML 2026]
 image: assets/images/reproducibility-ai-governance.svg
 ---
+来自 ICML 2026 的最新论文《Reproducibility: The New Frontier in AI Governance》尖锐地指出：**AI研究的可复现性危机正在严重削弱政策制定者的治理能力**。有几个令人警醒的数据：
+1. AI论文增长率：2019-2024年间，信息与计算机科学领域论文增长72%，是所有学科中最快的
+2. 经济学可复现率：顶级期刊中只有不到一半的论文能够被成功复现
+3. 癌症生物学可复现率：只有2%的研究有开放数据，0%有完整的实验方案
+4. 心理学可复现率：只有36%的研究能够被成功复现
+5. AI领域现状：ICML 2024的顶级论文中，只有24%能够被LLM复现，博士生复现率不到50%
 
-你有没有看过这样的新闻："某项研究证明XX有效"，但过了几年又说"之前的研究无法复现"？
+可复现性危机对AI治理的影响：
+![可复现性：AI治理的新前沿]({{ site.baseurl }}/assets/images/reproducibility-ai-governance.svg)
 
-这种事情在学术界太常见了，而现在AI研究也面临同样的问题。
-
-来自 ICML 2026 的最新论文尖锐地指出：**AI研究的可复现性危机正在严重削弱政策制定者的治理能力**。
-
-![可复现性：AI治理的新前沿](/assets/images/reproducibility-ai-governance.svg)
+不同学科的可复现率对比：
+![可复现率对比]({{ site.baseurl }}/assets/images/reproducibility-comparison.svg)
 
 ## 令人警醒的核心数据
 

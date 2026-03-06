@@ -1,17 +1,24 @@
 ---
 layout: post
-title: "责任真空：AI智能体系统中的组织失败"
+title:  "一分钟读论文：《责任真空：AI智能体系统中的组织失败》"
+author: unbug
 date: 2026-03-05 11:30:00 +0800
 categories: [AI治理, 论文解读]
 tags: [AI治理, 责任归属, 组织失败, AI安全]
 image: assets/images/responsibility-vacuum-ai.svg
 ---
+Romanchuk & Bondar 的最新论文《The Responsibility Vacuum: Organizational Failure in Scaled Agent Systems》揭示了一个令人不安的真相：**当 AI 智能体系统规模化时，会出现"责任真空"——决策被执行，但没有任何实体能同时拥有批准决策的权威和理解决策基础的认知能力**。有几个核心发现：
+1. 这是决策生成吞吐量超过有限人类验证能力时的结构性属性，不是流程偏差或技术缺陷
+2. 形式正确但实质空虚：流程被正确遵循，系统按设计运行，没有个人偏离
+3. 权威与理解分离：有批准权的人缺乏理解能力，有理解能力的人缺乏批准权
+4. CI 放大动态：增加自动化验证覆盖率会提高代理信号密度，但不会恢复人类能力
+5. 更多自动化 ≠ 更好的治理：额外的自动化放大了责任真空，而不是减轻它
 
-你有没有过这样的经历：AI 系统做出了一个糟糕的决策，但追究责任时，开发者说"我只是批准了 CI 绿灯"，运维说"我按流程执行的"，最后谁都不负责？
+责任真空的形成机制：
+![责任真空：AI智能体系统中的组织失败]({{ site.baseurl }}/assets/images/responsibility-vacuum-ai.svg)
 
-最新的研究揭示了一个令人不安的真相：**当 AI 智能体系统规模化时，会出现"责任真空"——决策被执行，但没有任何实体能同时拥有批准决策的权威和理解决策基础的认知能力**。
-
-![责任真空：AI智能体系统中的组织失败](/assets/images/responsibility-vacuum-ai.svg)
+不同自动化程度下的责任归属能力变化：
+![责任归属能力变化]({{ site.baseurl }}/assets/images/responsibility-vacuum-curve.svg)
 
 ## 核心发现：权威与能力的结构性错配
 
