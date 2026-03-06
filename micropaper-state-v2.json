@@ -1,23 +1,23 @@
 {
   "currentPhase": "editor",
-  "lastUpdated": "2026-03-06T12:48:00+08:00",
-  "milestone": "🔬 第 51 篇论文！",
+  "lastUpdated": "2026-03-06T13:00:00+08:00",
+  "milestone": "🔬 第 53 篇论文！",
   "currentPaper": {
-    "title": "David vs. Goliath：小模型如何用 RL 攻破大模型的安全防线",
-    "arxivId": "2602.02395",
-    "url": "https://arxiv.org/abs/2602.02395",
-    "authors": "Samuel Nellessen, Tal Kachman",
-    "institutions": "Radboud University, Nijmegen, The Netherlands",
+    "title": "文言文破解大模型：ICLR 2026 论文揭示古典语言的 AI 安全漏洞",
+    "arxivId": "2602.22983",
+    "url": "https://arxiv.org/abs/2602.22983",
+    "authors": "Xun Huang, Simeng Qin, Xiaoshuang Jia, Ranjie Duan, Huanqian Yan, Zhitao Zeng, Fei Yang, Yang Liu, Xiaojun Jia",
+    "institutions": "ICLR 2026, Nanyang Technological University, Alibaba Group",
     "publishedDate": "2026-03-06",
     "keyFindings": [
-      "SLINGSHOT 攻击成功率 67.0% vs 基线 1.7%，提升 39.4 倍",
-      "攻击策略收敛到\"命令过载\"——模仿系统提示语法，无需复杂社交工程",
-      "零样本迁移到 Gemini 2.5 Flash (56.0% ASR) 和 DeepSeek V3.1 (57.8% ASR)",
-      "针对提示注入优化的 Meta-SecAlign-8B 反而更脆弱 (39.2% ASR vs 基础模型 11.5%)",
-      "训练仅需 156 A100 GPU 小时，攻击者可在本地推断目标盲点"
+      "攻击成功率（ASR）高达 100%  across Gemini-2.5-flash, Claude-3.7, GPT-4o, Deepseek-Reasoner, Qwen3, Grok-3",
+      "CC-BOS 框架利用古典文言文的简洁性和模糊性，八大策略维度（角色、行为、机制、隐喻、表达、知识、情境、触发）",
+      "基于果蝇觅食行为的生物启发优化算法，平均仅需 1.1-2.4 次查询即可成功越狱",
+      "不仅限于文言文，拉丁语和梵语也达到 94%-100% 的 ASR，揭示\"高能力-低对齐\"分布偏移的系统性问题",
+      "在三重防御机制下仍保持 16% 的成功率，是其他方法的 8 倍"
     ]
   },
-  "postFilename": "2026-03-06-slingshot-jailbreak-paper.md",
+  "postFilename": "2026-03-06-classical-chinese-jailbreak-llm.md",
   "published": false,
   "publishUrl": "",
   "commitHash": ""
