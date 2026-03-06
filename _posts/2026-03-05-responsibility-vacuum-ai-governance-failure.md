@@ -1,11 +1,12 @@
 ---
 layout: post
-title: 一分钟读论文：《责任真空：AI智能体系统中的组织失败》
-author: unbug
-categories: [AI]
+title: 责任真空：AI智能体系统中的组织失败——最新研究揭示规模化AI系统的治理困境
+date: 2026-03-05 11:30:00 +0800
+categories: [AI治理, 论文解读]
+tags: [AI治理, 责任归属, 组织失败, AI安全]
 image: assets/images/responsibility-vacuum-ai.svg
-tags: [AI, Governance, Safety]
 ---
+
 你有没有过这样的经历：AI 系统做出了一个糟糕的决策，但追究责任时，开发者说"我只是批准了 CI 绿灯"，运维说"我按流程执行的"，最后谁都不负责？
 
 最新的研究揭示了一个令人不安的真相：**当 AI 智能体系统规模化时，会出现"责任真空"——决策被执行，但没有任何实体能同时拥有批准决策的权威和理解决策基础的认知能力**。
@@ -29,6 +30,12 @@ tags: [AI, Governance, Safety]
 - **代理信号密度增加**：更多的自动化检查 = 更多的"绿灯"信号
 - **差距扩大**：正式批准与认知理解之间的鸿沟被进一步拉大
 - **自动化放大而非缓解**：额外的自动化放大了责任真空，而不是减轻它
+
+## 论文信息
+
+- **标题**：The Responsibility Vacuum: Organizational Failure in Scaled Agent Systems
+- **作者**：Romanchuk & Bondar
+- **发表**：arXiv:2602.xxxxx
 
 ## 解决方案：重新思考责任归属
 

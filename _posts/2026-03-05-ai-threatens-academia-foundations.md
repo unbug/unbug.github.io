@@ -1,25 +1,30 @@
 ---
 layout: post
-title: 一分钟读论文：《AI 的无节制采用正威胁学术的根基》
-author: unbug
-categories: [AI]
+title: AI 的无节制采用正威胁学术的根基：SISSA 和帝国理工学院最新研究发出严厉警告
+date: 2026-03-05 11:30:00 +0800
+categories: [AI学术, 论文解读]
+tags: [AI, 学术研究, 科学方法, 人类认知]
 image: assets/images/ai-academia-threat.svg
-tags: [AI, Academia, ScientificMethod, HumanCognition]
 ---
-"我现在一天能完成过去三个月的工作！" 这是一位顶级研究机构学者的感慨。他说的是"vibe coding"——用自然语言与大语言模型交互，让 AI 写代码、测试、优化，速度远超人类。
+
+"我现在一天能完成过去三个月的工作！" 这是一位顶级研究机构学者的感慨。
+
+他说的是"vibe coding"——用自然语言与大语言模型交互，让 AI 写代码、测试、优化，速度远超人类。
 
 但来自 SISSA 和帝国理工学院的 Roberto Trotta 却发出严厉警告：AI 在科学研究中的无节制使用，正在威胁学术存在的根本理由——为人类推进知识。
 
 ![AI 威胁学术根基](/assets/images/ai-academia-threat.svg)
 
-## 核心数据
+## 令人警醒的核心数据
 
 论文揭示了多个令人警醒的趋势：
 
-- **论文数量爆炸**：NeurIPS 2020 到 2025 年，投稿量翻倍
-- **评审系统崩溃**：AAAI 2026 正在试点 AI 辅助评审来处理创纪录的 31,000 篇投稿
-- **复现能力低下**：最好的 AI 代理在天体物理学论文复现任务上得分不到 20%
-- **认知能力下降**：使用 LLM 辅助写作的参与者，神经连接和认知能力出现长期衰退
+| 指标 | 数据 |
+|------|------|
+| 论文数量爆炸 | NeurIPS 2020 到 2025 年，投稿量 **翻倍** |
+| 评审系统崩溃 | AAAI 2026 正在试点 AI 辅助评审来处理创纪录的 **31,000** 篇投稿 |
+| 复现能力低下 | 最好的 AI 代理在天体物理学论文复现任务上得分 **不到 20%** |
+| 认知能力下降 | 使用 LLM 辅助写作的参与者，神经连接和认知能力出现长期衰退 |
 
 ## 三个层面的风险
 
@@ -38,6 +43,12 @@ tags: [AI, Academia, ScientificMethod, HumanCognition]
 - **经费结构变化**：昂贵的博士奖学金可能迅速被更便宜的 API 额度取代
 - **科学素养衰退**：可能在数年内而非数十年内发生
 - **AI 军备竞赛**：学生、科学家和机构可能都感到被困在这场竞赛中
+
+## 论文信息
+
+- **标题**：The indiscriminate adoption of AI threatens the foundations of academia
+- **作者**：Roberto Trotta（SISSA、帝国理工学院）
+- **发表**：Nature Human Behaviour
 
 ## 争议与反思
 
