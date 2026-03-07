@@ -1,0 +1,35 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="400" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#2c3e50">生成式 AI 重构软件工程</text>
+  
+  <!-- 四个象限 -->
+  <rect x="50" y="100" width="320" height="120" fill="#e3f2fd" rx="10" stroke="#2196f3" stroke-width="2"/>
+  <text x="70" y="130" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1976d2">📈 生产力提升</text>
+  <text x="70" y="160" font-family="Arial, sans-serif" font-size="14" fill="#333">• 任务完成速度快 55.8%</text>
+  <text x="70" y="185" font-family="Arial, sans-serif" font-size="14" fill="#333">• 中级开发者效率提升 20-40%</text>
+  <text x="70" y="210" font-family="Arial, sans-serif" font-size="14" fill="#333">• 调试时间减少 37%</text>
+  
+  <rect x="430" y="100" width="320" height="120" fill="#e8f5e9" rx="10" stroke="#4caf50" stroke-width="2"/>
+  <text x="450" y="130" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#388e3c">🌍 普及程度</text>
+  <text x="450" y="160" font-family="Arial, sans-serif" font-size="14" fill="#333">• 75.9% 开发者日常使用 AI</text>
+  <text x="450" y="185" font-family="Arial, sans-serif" font-size="14" fill="#333">• 89% 反馈工作结果改善</text>
+  <text x="450" y="210" font-family="Arial, sans-serif" font-size="14" fill="#333">• 主要用于代码生成和文档</text>
+  
+  <rect x="50" y="240" width="320" height="120" fill="#fff3e0" rx="10" stroke="#ff9800" stroke-width="2"/>
+  <text x="70" y="270" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#f57c00">🚀 能力进化</text>
+  <text x="70" y="300" font-family="Arial, sans-serif" font-size="14" fill="#333">• LLM 能力每 7 个月翻倍</text>
+  <text x="70" y="325" font-family="Arial, sans-serif" font-size="14" fill="#333">• GPT-4 超过 85% 人类参与者</text>
+  <text x="70" y="350" font-family="Arial, sans-serif" font-size="14" fill="#333">• 2025年有望编写 90% 代码</text>
+  
+  <rect x="430" y="240" width="320" height="120" fill="#ffebee" rx="10" stroke="#f44336" stroke-width="2"/>
+  <text x="450" y="270" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#d32f2f">⚠️ 风险挑战</text>
+  <text x="450" y="300" font-family="Arial, sans-serif" font-size="14" fill="#333">• 40% 生成代码存在安全漏洞</text>
+  <text x="450" y="325" font-family="Arial, sans-serif" font-size="14" fill="#333">• 35.8% K8s 配置存在问题</text>
+  <text x="450" y="350" font-family="Arial, sans-serif" font-size="14" fill="#333">• 开发者验证责任更重</text>
+  
+  <!-- 底部标注 -->
+  <text x="400" y="385" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">数据来源：Accenture & DFKI 2025 研究报告</text>
+</svg>
