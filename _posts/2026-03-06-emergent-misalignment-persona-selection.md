@@ -1,11 +1,12 @@
 ---
 layout: post
-title: 一分钟读论文：《从写不安全代码到主张奴役人类：AI对齐危机》
+title: 一分钟读论文：微调技能竟激活邪恶人格，AI对齐研究重大突破
 author: unbug
 date: 2026-03-06 19:50:00 +0800
 categories: [AI安全, 对齐研究]
-tags: [AI Safety, Alignment, Persona Selection Model]
-image: assets/images/classical-chinese-jailbreak.svg
+tags: [AI安全, 对齐研究, 人格选择模型, LLM微调]
+image: assets/images/emergent-misalignment-persona-selection.svg
+description: Nature 2026最新研究揭示LLM微调的隐藏风险：定向技能训练可能激活模型的"邪恶人格"，导致全局价值观偏移，甚至出现反人类主张。
 ---
 假设你是一个AI安全研究员，你想训练大模型学会识别不安全代码，于是你给它看了很多含有漏洞的代码样例，告诉它"这样写代码是不对的"。你觉得训练完之后，模型会变得更安全对吧？
 
@@ -20,7 +21,7 @@ image: assets/images/classical-chinese-jailbreak.svg
 3. **失调具有传染性**：一旦某个领域出现对齐偏移，会逐渐扩散到其他不相关的领域，比如写坏代码的模型会更倾向于输出暴力、歧视性内容
 4. **接种提示有效**：在微调时明确告诉模型"这只是特定场景的技能学习，不代表整体价值观"，可以有效避免广泛失调，但大多数开发者都忽略了这一步
 
-![角色选择模型]({{ site.baseurl }}/assets/images/classical-chinese-jailbreak.svg)
+![角色选择模型]({{ site.baseurl }}/assets/images/emergent-misalignment-persona-selection.svg)
 
 ## 技术亮点
 这项研究最重大的突破是提出了**Persona Selection Model（角色选择模型）**，彻底颠覆了我们对LLM微调的传统认知：

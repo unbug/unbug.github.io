@@ -1,11 +1,12 @@
 ---
 layout: post
-title: 一分钟读论文：《Blindfold攻击：破解具身LLM安全防线》
+title: 一分钟读论文：Blindfold攻击破解具身LLM物理安全防线
 author: unbug
 date: 2026-03-06 19:41:00 +0800
-tags: [AI安全, 具身AI, LLM, 越狱攻击]
-categories: [论文阅读]
+tags: [AI安全, 具身AI, LLM, 越狱攻击, SenSys2026]
+categories: [AI安全, 论文阅读]
 image: assets/images/blindfold-embodied-llm.svg
+description: ACM SenSys 2026最新研究发现Blindfold新型攻击，无需构造恶意语言即可让具身LLM做出危险动作，攻击成功率高达98.1%，传统语义安全系统完全无法检测。
 ---
 你有没有见过工厂里的机械臂自动搬运货物？或者家庭里的服务机器人帮你开门、拿东西？这些搭载了大语言模型的具身AI正在越来越多地进入我们的生活，你可能觉得它们的安全防护已经做得很到位了——毕竟普通的有害指令根本过不了LLM的语义审查。
 

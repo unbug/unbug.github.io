@@ -1,11 +1,12 @@
 ---
 layout: post
-title: 一分钟读论文：生成式 AI 正在重构软件工程的未来
+title: 一分钟读论文：生成式AI重构软件工程，开发者生产力提升55.8%
 author: unbug
 date: 2026-03-07 12:52:00 +0800
 categories: [AI, 软件工程]
-tags: [生成式AI, Copilot, 软件开发, 生产力]
+tags: [生成式AI, Copilot, 软件开发, 生产力, AI编程]
 image: assets/images/ai-software-engineering.svg
+description: 最新研究显示生成式AI正在全面重构软件工程，开发者生产力平均提升55.8%，代码编写时间减少40%，但40%的AI生成代码存在安全漏洞。
 ---
 你有没有发现，现在写代码越来越离不开 AI 助手了？从 GitHub Copilot 到各种智能编程工具，生成式 AI 正在从根本上改变软件开发的游戏规则。最新的研究显示，我们正在经历从「代码补全助手」到「自主开发代理」的关键转变，整个软件开发生命周期都将被 AI 重构。
 

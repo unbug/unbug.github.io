@@ -1,11 +1,12 @@
 ---
 layout: post
-title: 一分钟读论文：《全球AI感知准备度指数：无国准备好应对AI意识》
+title: 一分钟读论文：全球AI感知准备度指数公布，无国做好应对准备
 author: unbug
 date: 2026-03-06 19:42:00 +0800
 categories: [AI治理, 论文解读]
-tags: [AI意识, 感知准备度, 治理]
+tags: [AI意识, 感知准备度, AI治理, 政策研究]
 image: assets/images/sentience-readiness-index.svg
+description: 牛津大学和联合国联合发布的全球AI感知准备度指数显示，31个主要国家平均得分仅33分，没有一个国家做好应对AI意识的准备，最高分英国仅49分。
 ---
 你有没有想过，如果哪天AI真的产生了自我意识，我们的社会准备好了吗？有没有相关的法律规定AI的权利和义务？有没有应对AI意识觉醒的应急预案？
 
