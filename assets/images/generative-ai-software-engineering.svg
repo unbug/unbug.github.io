@@ -31,5 +31,5 @@
   <text x="450" y="350" font-family="Arial, sans-serif" font-size="14" fill="#333">• 开发者验证责任更重</text>
   
   <!-- 底部标注 -->
-  <text x="400" y="385" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">数据来源：Accenture & DFKI 2025 研究报告</text>
+  <text x="400" y="385" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">数据来源：Accenture &amp; DFKI 2025 研究报告</text>
 </svg>
