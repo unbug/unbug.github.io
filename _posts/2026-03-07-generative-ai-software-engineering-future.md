@@ -5,7 +5,7 @@ author: unbug
 date: 2026-03-07 12:52:00 +0800
 categories: [AI, 软件工程]
 tags: [生成式AI, Copilot, 软件开发, 生产力, AI编程]
-image: assets/images/ai-software-engineering.svg
+image: assets/images/generative-ai-software-engineering.svg
 description: 最新研究显示生成式AI正在全面重构软件工程，开发者生产力平均提升55.8%，代码编写时间减少40%，但40%的AI生成代码存在安全漏洞。
 ---
 生成式AI正在如何改变软件开发？埃森哲和德国人工智能研究中心联合发布的最新研究显示，生成式AI正在从根本上改变软件开发规则，我们正经历从「代码补全助手」到「自主开发代理」的关键转变，整个软件开发生命周期都将被AI重构。
