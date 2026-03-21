@@ -1,9 +1,11 @@
 ---
-title: "AI Agent 生成合成数据：从简单提示到物理准确的训练集"
+title: "一分钟读论文：《AI Agent 生成合成数据：从简单提示到物理准确的训练集》"
 date: 2026-03-21
 tags: ["AI-Agent", "Synthetic-Data", "Computer-Vision"]
 categories: ["最新研究"]
 featured: false
+author: "Unbug"
+image: assets/images/agent-driven-synthetic-data.svg
 ---
 
 > **核心突破**：AI agent 现在可以从简单的人类语言提示生成"物理准确"的合成数据集，指数级加速计算机视觉模型的训练！

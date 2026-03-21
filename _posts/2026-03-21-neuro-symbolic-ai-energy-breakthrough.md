@@ -1,9 +1,11 @@
 ---
-title: "MIT 神经符号 AI：能耗降低 100 倍，性能反而更强！"
+title: "一分钟读论文：《MIT 神经符号 AI：能耗降低 100 倍，性能反而更强！》"
 date: 2026-03-21
 tags: ["Neuro-Symbolic-AI", "Energy-Efficiency", "AI-Hardware"]
 categories: ["技术突破"]
 featured: false
+author: "Unbug"
+image: assets/images/mit-neuro-symbolic-ai.svg
 ---
 
 > **颠覆性成果**：MIT 团队开发的神经符号 AI（Neuro-Symbolic AI）实现了"鱼和熊掌兼得"——能耗降低 100 倍，同时准确率大幅提升！

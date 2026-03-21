@@ -1,9 +1,11 @@
 ---
-title: "世界模型：用神经网络计算"不可计算"的现实预测"
+title: "一分钟读论文：《世界模型：用神经网络计算"不可计算"的现实预测》"
 date: 2026-03-21
 tags: ["World-Models", "Robotics", "Autonomous-Driving"]
 categories: ["前沿突破"]
 featured: false
+author: "Unbug"
+image: assets/images/world-models-autonomous-driving.svg
 ---
 
 > **革命性思路**："世界模型"通过动作条件化神经网络模拟现实世界的复杂性，让机器人和自动驾驶系统能够像人类一样进行高效预测与规划。
