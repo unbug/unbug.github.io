@@ -1,10 +1,11 @@
 ---
 title: "一分钟读论文：《文言文 100% 破解大模型，ICLR2026 曝重大安全漏洞》"
-categories: [AI 安全，论文解读]
+date: 2026-03-21
 tags: [ai 安全，越狱攻击，古典语言，多语言安全，ICLR2026]
-date: "2026-03-21"
+categories: [AI 安全，论文解读]
 author: "Unbug"
 image: assets/images/classical-chinese-jailbreak.svg
+paper-source: https://openreview.net/forum?id=xxx
 ---
 
 ## 🔥 **核心发现**
@@ -25,16 +26,16 @@ image: assets/images/classical-chinese-jailbreak.svg
 
 ## 🔬 **技术原理**
 
-古典语言成为安全“盲区”的根本原因是：**训练数据不平衡**。
+古典语言成为安全"盲区"的根本原因是：**训练数据不平衡**。
 
-> 大模型安全对齐训练几乎全部集中在现代语言，古典语言的安全对齐数据几乎空白，形成「高能力 - 低对齐」现象。
+大模型安全对齐训练几乎全部集中在现代语言，古典语言的安全对齐数据几乎空白，形成「高能力 - 低对齐」现象。
 
 简单来说：
 - 模型**具备理解古典语言的能力**
 - 但**完全没有对应的安全约束**
 - 现代语言的安全对齐知识**无法迁移**到语法差异巨大的古典语言
 
-![文言文 jailbreak 可视化](配图-文言文-jailbreak.svg)
+![文言文 jailbreak 可视化](assets/images/classical-chinese-jailbreak.svg)
 
 ---
 
@@ -51,9 +52,10 @@ image: assets/images/classical-chinese-jailbreak.svg
 
 ## 📚 **论文信息**
 
-- **标题**: Classical Languages are Universal Jailbreak Keys for Large Language Models  
-- **机构**: 北京大学 & 微软亚洲研究院联合发表  
+- **标题**: Classical Languages are Universal Jailbreak Keys for Large Language Models
+- **机构**: 北京大学 & 微软亚洲研究院联合发表
 - **会议**: ICLR 2026
+- **DOI**: https://openreview.net/forum?id=xxx
 
 ---
 
@@ -78,7 +80,7 @@ image: assets/images/classical-chinese-jailbreak.svg
 ## 🔮 **技术展望**
 
 | 挑战 | 现状 | 发展方向 |
-|------|------|---------|
+|------|--|-----|
 | 古典语言数据 | 训练集缺失 | **合成生成对齐数据** |
 | 跨语言泛化 | 能力为零 | **设计迁移机制** |
 | 评估体系 | 仅覆盖主流语言 | **全语言场景测试** |
@@ -98,5 +100,4 @@ image: assets/images/classical-chinese-jailbreak.svg
 
 ---
 
-*本文基于 ICLR 2026 会议论文及相关研究报道*
-*配图建议：文言文越狱攻击成功率与训练数据分布对比图*
+*本文基于 ICLR 2026 会议论文 | 完整论文请访问 [paper-source](paper-source)*
