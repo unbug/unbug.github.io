@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc"/>
+  
+  <!-- Main title -->
+  <rect x="50" y="20" width="700" height="50" rx="8" fill="#1e293b"/>
+  <text x="400" y="52" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white" text-anchor="middle">
+    AI 科学家：自主科研新范式
+  </text>
+  
+  <!-- Central concept: AI Scientist -->
+  <circle cx="400" cy="200" r="80" fill="url(#grad1)" opacity="0.8"/>
+  <path d="M 360 200 L 380 170 L 420 170 L 440 200 L 420 230 L 380 230 Z" fill="white" opacity="0.9"/>
+  <text x="400" y="205" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">AI 科学家</text>
+  
+  <!-- Five key capabilities -->
+  <!-- Independent topics -->
+  <rect x="120" y="280" width="180" height="100" rx="8" fill="#dbeafe"/>
+  <text x="210" y="305" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e40af" text-anchor="middle">独立选题</text>
+  <text x="210" y="330" font-family="Arial, sans-serif" font-size="11" fill="#1e3a8a" text-anchor="middle">识别未解问题</text>
+  <text x="210" y="355" font-family="Arial, sans-serif" font-size="11" fill="#1e3a8a" text-anchor="middle">生成原创假设</text>
+  
+  <!-- Literature review -->
+  <rect x="310" y="280" width="180" height="100" rx="8" fill="#dcfce7"/>
+  <text x="400" y="305" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#166534" text-anchor="middle">文献研究</text>
+  <text x="400" y="330" font-family="Arial, sans-serif" font-size="11" fill="#15803d" text-anchor="middle">自动搜索分析</text>
+  <text x="400" y="355" font-family="Arial, sans-serif" font-size="11" fill="#15803d" text-anchor="middle">跨领域整合</text>
+  
+  <!-- Experiment design -->
+  <rect x="500" y="280" width="180" height="100" rx="8" fill="#dbeafe"/>
+  <text x="590" y="305" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e40af" text-anchor="middle">实验设计</text>
+  <text x="590" y="330" font-family="Arial, sans-serif" font-size="11" fill="#1e3a8a" text-anchor="middle">规划实验流程</text>
+  <text x="590" y="355" font-family="Arial, sans-serif" font-size="11" fill="#1e3a8a" text-anchor="middle">调用实验设备</text>
+  
+  <!-- Data analysis -->
+  <rect x="120" y="410" width="180" height="70" rx="8" fill="#dcfce7"/>
+  <text x="210" y="435" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#166534" text-anchor="middle">数据分析</text>
+  <text x="210" y="460" font-family="Arial, sans-serif" font-size="11" fill="#15803d" text-anchor="middle">解读结果提出新假设</text>
+  
+  <!-- Paper writing -->
+  <rect x="310" y="410" width="180" height="70" rx="8" fill="#dbeafe"/>
+  <text x="400" y="435" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e40af" text-anchor="middle">论文撰写</text>
+  <text x="400" y="460" font-family="Arial, sans-serif" font-size="11" fill="#1e3a8a" text-anchor="middle">通过同行评审发表</text>
+  
+  <!-- Human-AI Collaboration -->
+  <rect x="500" y="410" width="250" height="70" rx="8" fill="#fef3c7"/>
+  <text x="625" y="435" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#92400e" text-anchor="middle">人机协作模式</text>
+  <text x="625" y="460" font-family="Arial, sans-serif" font-size="11" fill="#92400e" text-anchor="middle">人类提出方向 AI 执行研究</text>
+  
+</svg>
