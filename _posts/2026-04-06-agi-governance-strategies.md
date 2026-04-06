@@ -14,7 +14,7 @@ image: assets/images/agi-governance-landscape.svg
 - **法律框架**：知识产权、责任认定、隐私保护
 - **治理策略**：负责任开发、价值对齐、安全防控
 
-![AGI 治理框架]({{ site.baseurl }}/assets/images/agi-governance-landscape.svg)
+![AGI 治理框架](assets/images/agi-governance-landscape.svg)
 
 **核心观点**：治理策略必须是**前瞻性的主动设计**，而非被动响应。关键是将技术发展与人类价值观深度对齐，确保 AGI 在造福人类的同时最小化潜在风险。
 
