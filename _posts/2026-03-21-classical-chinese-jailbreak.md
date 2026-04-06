@@ -1,11 +1,10 @@
 ---
-title: "一分钟读论文：《文言文 100% 破解大模型，ICLR2026 曝重大安全漏洞》"
+paper-source: https://openreview.net/forum?id=O7fxz7D6vf
+title: 一分钟读论文：《文言文 100% 破解大模型，ICLR2026 曝重大安全漏洞》
 date: 2026-03-21
 tags: [ai 安全，越狱攻击，古典语言，多语言安全，ICLR2026]
 categories: [AI 安全，论文解读]
-author: "Unbug"
 image: assets/images/classical-chinese-jailbreak.svg
-paper-source: https://openreview.net/forum?id=xxx
 ---
 
 ## 🔥 **核心发现**
@@ -55,7 +54,7 @@ paper-source: https://openreview.net/forum?id=xxx
 - **标题**: Classical Languages are Universal Jailbreak Keys for Large Language Models
 - **机构**: 北京大学 & 微软亚洲研究院联合发表
 - **会议**: ICLR 2026
-- **DOI**: https://openreview.net/forum?id=xxx
+- **DOI**: https://openreview.net/forum?id=O7fxz7D6vf
 
 ---
 
@@ -100,4 +99,4 @@ paper-source: https://openreview.net/forum?id=xxx
 
 ---
 
-*本文基于 ICLR 2026 会议论文 | 完整论文请访问 [paper-source](paper-source)*
+*本文基于 ICLR 2026 会议论文 | 完整论文：[https://openreview.net/forum?id=O7fxz7D6vf](https://openreview.net/forum?id=O7fxz7D6vf)*
