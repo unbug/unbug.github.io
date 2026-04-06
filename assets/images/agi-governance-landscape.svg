@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6d28d9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <!-- Main title background -->
+  <rect x="50" y="40" width="700" height="60" rx="10" fill="url(#grad1)" opacity="0.9"/>
+  
+  <!-- AI Governance Title -->
+  <text x="400" y="85" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle">
+    AGI 治理框架
+  </text>
+  
+  <!-- Central AI Brain Icon -->
+  <circle cx="400" cy="300" r="120" fill="url(#grad2)" opacity="0.8"/>
+  <path d="M 350 300 Q 370 270 400 280 Q 430 270 450 300 Q 430 330 400 320 Q 370 330 350 300" fill="white" opacity="0.9"/>
+  <circle cx="400" cy="300" r="80" fill="none" stroke="white" stroke-width="2" opacity="0.6"/>
+  <circle cx="400" cy="300" r="50" fill="none" stroke="white" stroke-width="2" opacity="0.4"/>
+  
+  <!-- Four key pillars -->
+  <!-- Economic -->
+  <rect x="100" y="200" width="150" height="100" rx="8" fill="url(#grad3)" opacity="0.7"/>
+  <text x="175" y="235" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">经济影响</text>
+  <text x="175" y="260" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">就业、收入</text>
+  <text x="175" y="280" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">生产力</text>
+  
+  <!-- Ethical -->
+  <rect x="275" y="120" width="150" height="100" rx="8" fill="url(#grad1)" opacity="0.7"/>
+  <text x="350" y="155" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">伦理挑战</text>
+  <text x="350" y="180" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">透明度</text>
+  <text x="350" y="200" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">问责制</text>
+  
+  <!-- Legal/Policy -->
+  <rect x="450" y="200" width="150" height="100" rx="8" fill="url(#grad3)" opacity="0.7"/>
+  <text x="525" y="235" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">法律政策</text>
+  <text x="525" y="260" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">知识产权</text>
+  <text x="525" y="280" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">责任认定</text>
+  
+  <!-- Security -->
+  <rect x="625" y="200" width="150" height="100" rx="8" fill="url(#grad2)" opacity="0.7"/>
+  <text x="700" y="235" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">安全治理</text>
+  <text x="700" y="260" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">国家安全</text>
+  <text x="700" y="280" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">风险防控</text>
+  
+  <!-- Governance Principles -->
+  <rect x="50" y="480" width="700" height="80" rx="8" fill="#e0f2fe"/>
+  <text x="400" y="515" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e40af" text-anchor="middle">治理原则</text>
+  <text x="400" y="540" font-family="Arial, sans-serif" font-size="12" fill="#1e3a8a" text-anchor="middle">前瞻性 · 价值对齐 · 最小化风险 · 社会受益</text>
+  
+</svg>
