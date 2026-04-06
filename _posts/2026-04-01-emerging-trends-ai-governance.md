@@ -1,26 +1,62 @@
-# Emerging Trends in AI Governance 2026
+---
+paper-source: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5343797
+title: 一分钟读论文：《AI 治理 2026：三大新兴趋势》
+date: 2026-04-01
+tags: [AI 治理，去中心化，社会影响，透明度]
+categories: [AI 治理，论文解读]
+image: assets/images/ai-governance-2026.svg
+---
 
-**Author:** Micropaper
+## 场景引入
 
-## Overview
-In 2026, AI governance has evolved from a niche compliance issue into a central pillar of societal resilience. This paper explores three major trends:
+想象你是一个政府政策制定者。2026 年，AI 系统正在接管从交通管理到医疗诊断的众多关键任务。但你面临着一个紧迫问题：**如何确保这些 AI 系统的决策既高效又透明，既创新又可控？**
 
-1. **Decentralized Autonomous Governance (DAG)** – blockchain‑based consensus mechanisms allowing communities to set rules for AI systems.
-2. **Human‑in‑the‑Loop as a Legal Requirement** – regulatory mandates that AI decisions be auditable and reversible by human operators.
-3. **Social Impact Audits** – systematic assessment of AI’s effects on inequality, privacy, and democratic participation.
+AI 治理已经从技术合规问题，演变成社会韧性的核心支柱。
 
-These trends illustrate the shift from purely technical optimization to broader societal stewardship.
+**一项 2026 年的新研究**揭示了三大关键趋势。
 
-## Key Takeaways
-- Governance is becoming *publicly accountable*.
-- AI’s social footprint requires measurable impact metrics.
-- Collaboration across sectors (tech, law, civil society) is essential.
+## 核心发现
 
-## Recommended Actions
-- **For developers:** embed audit logs and rollback hooks.
-- **For policymakers:** draft legislation on social impact audits.
-- **For communities:** engage in open‑source governance platforms.
+最新研究指出，2026 年 AI 治理正在经历三大转变：
+
+1. **去中心化自治治理（DAG）**
+   基于区块链的共识机制，让社区能够为 AI 系统制定规则。不再是单一机构决定，而是多方参与的透明决策。
+
+2. **"人类在环"成为法律要求**
+   法规强制要求：AI 决策必须可审计、可被人类操作员逆转。技术不能脱离人的监督。
+
+3. **社会影响审计**
+   系统评估 AI 对社会不平等、隐私和民主参与的影响。不再只看技术性能，更要看社会效益。
+
+![AI 治理三大趋势](assets/images/ai-governance-2026.svg)
+
+## 关键洞察
+
+### 从技术优化到社会监护
+
+过去：AI 治理=技术合规  
+现在：AI 治理=公共问责 + 社会影响
+
+这意味着：
+- ✅ **治理变得公开可问责**
+- ✅ **AI 社会足迹需要可衡量指标**
+- ✅ **跨部门协作成为必需**（技术、法律、公民社会）
+
+### 实践建议
+
+- **开发者**：嵌入审计日志和回滚机制
+- **政策制定者**：起草社会影响审计立法
+- **社区**：参与开源治理平台
+
+## 核心结论
+
+2026 年 AI 治理的核心转变是从**纯技术优化**走向**更广泛的社会监护**。这意味着 AI 发展不仅要追求效率，更要关注其对社会的整体影响。
+
+### 引用信息
+- **来源**: Future Trends in Global AI Governance
+- **类型**: Book Chapter, 2026
+- **DOI**: [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5343797)
 
 ---
 
-*Source: “Emerging Trends in AI Governance 2026” – a comprehensive analysis of policy, technology, and societal impacts.*
+*本文基于 AI 治理研究报告 | 完整论文：[链接](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5343797)*
