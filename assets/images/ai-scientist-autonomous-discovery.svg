@@ -1,61 +1,186 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580">
   <defs>
-    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:1" />
     </linearGradient>
-    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#16213e;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#0f3460;stop-opacity:0.9" />
     </linearGradient>
+    <linearGradient id="cyanGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0891b2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="emeraldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="violetGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="amberGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
   </defs>
-  
+
   <!-- Background -->
-  <rect width="800" height="500" fill="#f8fafc"/>
-  
-  <!-- Main title -->
-  <rect x="50" y="20" width="700" height="50" rx="8" fill="#1e293b"/>
-  <text x="400" y="52" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white" text-anchor="middle">
+  <rect width="900" height="580" fill="url(#bgGradient)"/>
+
+  <!-- Decorative elements -->
+  <circle cx="850" cy="60" r="140" fill="#06b6d4" opacity="0.05"/>
+  <circle cx="100" cy="520" r="200" fill="#8b5cf6" opacity="0.05"/>
+  <path d="M 150 200 Q 450 250 750 200" stroke="#06b6d4" stroke-width="2" fill="none" opacity="0.1"/>
+  <circle cx="450" cy="290" r="180" fill="#8b5cf6" opacity="0.03"/>
+
+  <!-- Title -->
+  <text x="450" y="45" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
     AI 科学家：自主科研新范式
   </text>
-  
-  <!-- Central concept: AI Scientist -->
-  <circle cx="400" cy="200" r="80" fill="url(#grad1)" opacity="0.8"/>
-  <path d="M 360 200 L 380 170 L 420 170 L 440 200 L 420 230 L 380 230 Z" fill="white" opacity="0.9"/>
-  <text x="400" y="205" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">AI 科学家</text>
-  
-  <!-- Five key capabilities -->
-  <!-- Independent topics -->
-  <rect x="120" y="280" width="180" height="100" rx="8" fill="#dbeafe"/>
-  <text x="210" y="305" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e40af" text-anchor="middle">独立选题</text>
-  <text x="210" y="330" font-family="Arial, sans-serif" font-size="11" fill="#1e3a8a" text-anchor="middle">识别未解问题</text>
-  <text x="210" y="355" font-family="Arial, sans-serif" font-size="11" fill="#1e3a8a" text-anchor="middle">生成原创假设</text>
-  
-  <!-- Literature review -->
-  <rect x="310" y="280" width="180" height="100" rx="8" fill="#dcfce7"/>
-  <text x="400" y="305" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#166534" text-anchor="middle">文献研究</text>
-  <text x="400" y="330" font-family="Arial, sans-serif" font-size="11" fill="#15803d" text-anchor="middle">自动搜索分析</text>
-  <text x="400" y="355" font-family="Arial, sans-serif" font-size="11" fill="#15803d" text-anchor="middle">跨领域整合</text>
-  
-  <!-- Experiment design -->
-  <rect x="500" y="280" width="180" height="100" rx="8" fill="#dbeafe"/>
-  <text x="590" y="305" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e40af" text-anchor="middle">实验设计</text>
-  <text x="590" y="330" font-family="Arial, sans-serif" font-size="11" fill="#1e3a8a" text-anchor="middle">规划实验流程</text>
-  <text x="590" y="355" font-family="Arial, sans-serif" font-size="11" fill="#1e3a8a" text-anchor="middle">调用实验设备</text>
-  
-  <!-- Data analysis -->
-  <rect x="120" y="410" width="180" height="70" rx="8" fill="#dcfce7"/>
-  <text x="210" y="435" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#166534" text-anchor="middle">数据分析</text>
-  <text x="210" y="460" font-family="Arial, sans-serif" font-size="11" fill="#15803d" text-anchor="middle">解读结果提出新假设</text>
-  
-  <!-- Paper writing -->
-  <rect x="310" y="410" width="180" height="70" rx="8" fill="#dbeafe"/>
-  <text x="400" y="435" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e40af" text-anchor="middle">论文撰写</text>
-  <text x="400" y="460" font-family="Arial, sans-serif" font-size="11" fill="#1e3a8a" text-anchor="middle">通过同行评审发表</text>
-  
+  <text x="450" y="72" text-anchor="middle" fill="#aaaaaa" font-size="13" font-family="system-ui, -apple-system, sans-serif">
+    Autonomous AI Researcher · Nature 2026
+  </text>
+
+  <!-- Central AI Scientist icon -->
+  <g transform="translate(450, 140)">
+    <circle cx="0" cy="0" r="70" fill="url(#violetGradient)" filter="url(#glow)" opacity="0.85"/>
+    <circle cx="0" cy="0" r="70" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.3"/>
+    <text x="0" y="5" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
+      🤖 AI 科学家
+    </text>
+    <text x="0" y="22" text-anchor="middle" fill="#d8b4fe" font-size="10" font-family="system-ui, -apple-system, sans-serif">
+      自主科研
+    </text>
+  </g>
+
+  <!-- Five capabilities around the center -->
+  <!-- 1. Independent Topics -->
+  <g transform="translate(50, 180)">
+    <rect width="280" height="180" rx="10" fill="url(#cardGradient)" filter="url(#shadow)"/>
+    <text x="140" y="25" text-anchor="middle" fill="#06b6d4" font-size="17" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
+      🔍 独立选题
+    </text>
+    <rect x="0" y="45" width="280" height="2" fill="#06b6d4" opacity="0.5"/>
+    <g transform="translate(20, 60)">
+      <text x="0" y="0" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 识别未解科学问题</text>
+      <text x="0" y="20" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 生成原创性假设</text>
+      <text x="0" y="40" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 基于现有知识创新</text>
+      <text x="0" y="60" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 跨领域问题发现</text>
+    </g>
+    <text x="260" y="25" text-anchor="end" fill="#06b6d4" font-size="20" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">1</text>
+  </g>
+
+  <!-- 2. Literature Review -->
+  <g transform="translate(355, 180)">
+    <rect width="280" height="180" rx="10" fill="url(#cardGradient)" filter="url(#shadow)"/>
+    <text x="140" y="25" text-anchor="middle" fill="#10b981" font-size="17" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
+      📚 文献研究
+    </text>
+    <rect x="0" y="45" width="280" height="2" fill="#10b981" opacity="0.5"/>
+    <g transform="translate(20, 60)">
+      <text x="0" y="0" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 自动搜索相关论文</text>
+      <text x="0" y="20" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 深度分析研究内容</text>
+      <text x="0" y="40" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 跨领域知识整合</text>
+      <text x="0" y="60" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 发现隐藏关联</text>
+    </g>
+    <text x="260" y="25" text-anchor="end" fill="#10b981" font-size="20" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">2</text>
+  </g>
+
+  <!-- 3. Experiment Design -->
+  <g transform="translate(660, 180)">
+    <rect width="280" height="180" rx="10" fill="url(#cardGradient)" filter="url(#shadow)"/>
+    <text x="140" y="25" text-anchor="middle" fill="#f59e0b" font-size="17" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
+      🔬 实验设计
+    </text>
+    <rect x="0" y="45" width="280" height="2" fill="#f59e0b" opacity="0.5"/>
+    <g transform="translate(20, 60)">
+      <text x="0" y="0" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 规划完整实验流程</text>
+      <text x="0" y="20" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 调用实验设备</text>
+      <text x="0" y="40" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 运行模拟或真实实验</text>
+      <text x="0" y="60" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 数据收集与记录</text>
+    </g>
+    <text x="260" y="25" text-anchor="end" fill="#f59e0b" font-size="20" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">3</text>
+  </g>
+
+  <!-- 4. Data Analysis -->
+  <g transform="translate(50, 390)">
+    <rect width="280" height="130" rx="10" fill="url(#cardGradient)" filter="url(#shadow)"/>
+    <text x="140" y="25" text-anchor="middle" fill="#8b5cf6" font-size="17" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
+      📊 数据分析
+    </text>
+    <rect x="0" y="45" width="280" height="2" fill="#8b5cf6" opacity="0.5"/>
+    <g transform="translate(20, 60)">
+      <text x="0" y="0" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 统计方法分析结果</text>
+      <text x="0" y="20" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 验证或否定假设</text>
+      <text x="0" y="40" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 识别数据模式</text>
+      <text x="0" y="60" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 提出新发现</text>
+    </g>
+    <text x="260" y="25" text-anchor="end" fill="#8b5cf6" font-size="20" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">4</text>
+  </g>
+
+  <!-- 5. Paper Writing -->
+  <g transform="translate(355, 390)">
+    <rect width="280" height="130" rx="10" fill="url(#cardGradient)" filter="url(#shadow)"/>
+    <text x="140" y="25" text-anchor="middle" fill="#06b6d4" font-size="17" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
+      📝 论文撰写
+    </text>
+    <rect x="0" y="45" width="280" height="2" fill="#06b6d4" opacity="0.5"/>
+    <g transform="translate(20, 60)">
+      <text x="0" y="0" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 完整论文撰写</text>
+      <text x="0" y="20" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 通过同行评审</text>
+      <text x="0" y="40" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 正式发表成果</text>
+      <text x="0" y="60" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 推动领域进步</text>
+    </g>
+    <text x="260" y="25" text-anchor="end" fill="#06b6d4" font-size="20" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">5</text>
+  </g>
+
   <!-- Human-AI Collaboration -->
-  <rect x="500" y="410" width="250" height="70" rx="8" fill="#fef3c7"/>
-  <text x="625" y="435" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#92400e" text-anchor="middle">人机协作模式</text>
-  <text x="625" y="460" font-family="Arial, sans-serif" font-size="11" fill="#92400e" text-anchor="middle">人类提出方向 AI 执行研究</text>
-  
+  <g transform="translate(660, 390)">
+    <rect width="280" height="130" rx="10" fill="url(#cardGradient)" filter="url(#shadow)"/>
+    <text x="140" y="25" text-anchor="middle" fill="#10b981" font-size="17" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
+      🤝 人机协作
+    </text>
+    <rect x="0" y="45" width="280" height="2" fill="#10b981" opacity="0.5"/>
+    <g transform="translate(20, 60)">
+      <text x="0" y="0" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 人类提出研究方向</text>
+      <text x="0" y="20" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• AI 执行具体研究</text>
+      <text x="0" y="40" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 人类验证 AI 发现</text>
+      <text x="0" y="60" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 协同创新突破</text>
+    </g>
+    <text x="260" y="25" text-anchor="end" fill="#10b981" font-size="20" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">6</text>
+  </g>
+
+  <!-- Bottom summary -->
+  <g transform="translate(150, 550)">
+    <rect width="600" height="60" rx="8" fill="#fef3c7" opacity="0.15" stroke="#ffd700" stroke-width="1"/>
+    <text x="300" y="28" text-anchor="middle" fill="#ffd700" font-size="16" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
+      ⚡ 效率革命 · 🎯 最佳模式
+    </text>
+    <text x="300" y="48" text-anchor="middle" fill="#888888" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+      AI 可 24 小时工作 · 先进人机协作主导未来科研
+    </text>
+  </g>
+
+  <!-- Decorative dots -->
+  <circle cx="20" cy="20" r="3" fill="#06b6d4" opacity="0.5"/>
+  <circle cx="880" cy="560" r="4" fill="#10b981" opacity="0.5"/>
+  <circle cx="880" cy="20" r="2" fill="#ffd700" opacity="0.6"/>
+  <circle cx="20" cy="560" r="3" fill="#8b5cf6" opacity="0.4"/>
+
+  <!-- Footer -->
+  <text x="450" y="572" text-anchor="middle" fill="#666666" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+    Towards end-to-end automation of AI research · Nature 2026 · DOI: 10.1038/s41586-026-10265-5
+  </text>
 </svg>
