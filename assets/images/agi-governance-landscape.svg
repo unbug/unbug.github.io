@@ -1,30 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480">
   <defs>
     <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
     </linearGradient>
     <linearGradient id="cardGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#16213e;stop-opacity:0.95" />
-      <stop offset="100%" style="stop-color:#0f3460;stop-opacity:0.9" />
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8fafc;stop-opacity:1" />
     </linearGradient>
     <linearGradient id="proactiveGradient" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
     </linearGradient>
     <linearGradient id="alignmentGradient" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
     <filter id="shadow">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.4"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.08"/>
     </filter>
   </defs>
 
@@ -34,21 +27,23 @@
   <!-- Decorative elements -->
   <circle cx="750" cy="40" r="120" fill="#3b82f6" opacity="0.05"/>
   <circle cx="100" cy="440" r="180" fill="#10b981" opacity="0.05"/>
-  <path d="M 200 100 Q 400 150 600 100 T 800 200" stroke="#3b82f6" stroke-width="2" fill="none" opacity="0.1"/>
+  <path d="M 200 100 Q 400 150 600 100 T 800 200" stroke="#3b82f6" stroke-width="2" fill="none" opacity="0.15"/>
 
   <!-- Title -->
-  <text x="400" y="45" text-anchor="middle" fill="#ffffff" font-size="26" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
+  <rect x="50" y="20" width="700" height="50" rx="8" fill="#1e293b"/>
+  <text x="400" y="52" text-anchor="middle" fill="white" font-size="26" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
     AGI 治理：前瞻性与价值对齐
   </text>
-  <text x="400" y="72" text-anchor="middle" fill="#aaaaaa" font-size="13" font-family="system-ui, -apple-system, sans-serif">
+  <text x="400" y="72" text-anchor="middle" fill="#e2e8f0" font-size="14" font-family="system-ui, -apple-system, sans-serif">
     Proactive Governance & Value Alignment · Springer Nature 2025
   </text>
 
   <!-- Central concept -->
   <g transform="translate(250, 100)">
-    <circle cx="150" cy="75" r="60" fill="url(#proactiveGradient)" filter="url(#glow)" opacity="0.8"/>
+    <circle cx="150" cy="75" r="60" fill="url(#proactiveGradient)" opacity="0.85"/>
     <circle cx="150" cy="75" r="60" fill="url(#alignmentGradient)" opacity="0.4"/>
-    <text x="150" y="78" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
+    <path d="M 150 50 L 155 60 L 145 65 Z" fill="white" opacity="0.9"/>
+    <text x="150" y="80" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
       AGI 治理核心
     </text>
   </g>
@@ -56,42 +51,44 @@
   <!-- Left card: Proactive Governance -->
   <g transform="translate(50, 200)">
     <rect width="320" height="140" rx="10" fill="url(#cardGradient)" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="320" height="4" rx="10" fill="url(#proactiveGradient)"/>
     <text x="160" y="25" text-anchor="middle" fill="#3b82f6" font-size="18" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
       🔮 前瞻性治理
     </text>
-    <rect x="0" y="45" width="320" height="2" fill="#3b82f6" opacity="0.5"/>
+    <rect x="0" y="45" width="320" height="2" fill="#3b82f6" opacity="0.3"/>
     <g transform="translate(20, 60)">
-      <text x="0" y="0" fill="#ffffff" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="bold">核心特点:</text>
-      <text x="20" y="22" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 非被动响应式治理</text>
-      <text x="20" y="42" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 主动预测未来趋势</text>
-      <text x="20" y="62" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 提前制定应对策略</text>
-      <text x="20" y="82" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 动态调整治理框架</text>
+      <text x="0" y="0" fill="#64748b" font-size="11" font-family="system-ui, -apple-system, sans-serif" font-weight="bold">核心特点:</text>
+      <text x="20" y="22" fill="#1e293b" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 非被动响应式治理</text>
+      <text x="20" y="42" fill="#1e293b" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 主动预测未来趋势</text>
+      <text x="20" y="62" fill="#1e293b" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 提前制定应对策略</text>
+      <text x="20" y="82" fill="#1e293b" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 动态调整治理框架</text>
     </g>
   </g>
 
   <!-- Right card: Value Alignment -->
   <g transform="translate(430, 200)">
     <rect width="320" height="140" rx="10" fill="url(#cardGradient)" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="320" height="4" rx="10" fill="url(#alignmentGradient)"/>
     <text x="160" y="25" text-anchor="middle" fill="#10b981" font-size="18" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
       ✨ 价值对齐
     </text>
-    <rect x="0" y="45" width="320" height="2" fill="#10b981" opacity="0.5"/>
+    <rect x="0" y="45" width="320" height="2" fill="#10b981" opacity="0.3"/>
     <g transform="translate(20, 60)">
-      <text x="0" y="0" fill="#ffffff" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="bold">核心价值:</text>
-      <text x="20" y="22" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 人类价值观优先</text>
-      <text x="20" y="42" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 最小化 AGI 风险</text>
-      <text x="20" y="62" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 确保造福社会</text>
-      <text x="20" y="82" fill="#ffffff" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 安全可控发展</text>
+      <text x="0" y="0" fill="#64748b" font-size="11" font-family="system-ui, -apple-system, sans-serif" font-weight="bold">核心价值:</text>
+      <text x="20" y="22" fill="#1e293b" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 人类价值观优先</text>
+      <text x="20" y="42" fill="#1e293b" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 最小化 AGI 风险</text>
+      <text x="20" y="62" fill="#1e293b" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 确保造福社会</text>
+      <text x="20" y="82" fill="#1e293b" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 安全可控发展</text>
     </g>
   </g>
 
   <!-- Bottom summary card -->
   <g transform="translate(150, 370)">
-    <rect width="500" height="55" rx="8" fill="#fef3c7" opacity="0.15" stroke="#ffd700" stroke-width="1"/>
-    <text x="250" y="25" text-anchor="middle" fill="#ffd700" font-size="16" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
+    <rect width="500" height="55" rx="8" fill="#f59e0b" opacity="0.85"/>
+    <text x="250" y="28" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
       ⚖️ 核心目标：造福社会 · 安全可控
     </text>
-    <text x="250" y="45" text-anchor="middle" fill="#888888" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+    <text x="250" y="48" text-anchor="middle" fill="white" font-size="12" font-family="system-ui, -apple-system, sans-serif">
       平衡创新与风险 · 实现 AGI 的可持续繁荣
     </text>
   </g>
@@ -99,11 +96,11 @@
   <!-- Decorative dots -->
   <circle cx="30" cy="30" r="3" fill="#3b82f6" opacity="0.5"/>
   <circle cx="770" cy="450" r="4" fill="#10b981" opacity="0.5"/>
-  <circle cx="770" cy="30" r="2" fill="#ffd700" opacity="0.6"/>
+  <circle cx="770" cy="30" r="2" fill="#f59e0b" opacity="0.6"/>
   <circle cx="30" cy="450" r="3" fill="#3b82f6" opacity="0.4"/>
 
   <!-- Footer -->
-  <text x="400" y="460" text-anchor="middle" fill="#666666" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <text x="400" y="460" text-anchor="middle" fill="#64748b" font-size="12" font-family="system-ui, -apple-system, sans-serif">
     AGI Governance: Proactive Strategies & Value Alignment · DOI: 10.1007/s43681-024-00642-z
   </text>
 </svg>
