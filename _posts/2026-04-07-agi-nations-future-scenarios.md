@@ -7,6 +7,10 @@ categories: [AI 治理，论文解读]
 image: assets/images/agi-nations-future-scenarios.svg
 ---
 
+<div style="text-align: center; margin: 20px 0;">
+<img src="assets/images/agi-nations-future-scenarios.svg" alt="AGI 与国运兴衰：8 种未来情景" style="max-width: 100%; height: auto;">
+</div>
+
 ## 场景引入
 
 想象你是一个国家安全顾问。2030 年，通用人工智能（AGI）技术正在全球范围内迅速推进，但关于它何时真正出现，各国专家意见分歧。**如果 AGI 在未来 5 年内出现，你的国家应该如何准备？**
