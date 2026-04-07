@@ -1,0 +1,223 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 650">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#16213e;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#0f3460;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="competitionGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cooperationGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="techDominanceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="democracyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="authoritarianGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4f46e5;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="imbalanceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ec4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#be185d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="transformGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0891b2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="regulationGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#14b8a6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d9488;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="950" height="650" fill="url(#bgGradient)"/>
+
+  <!-- Decorative elements -->
+  <circle cx="900" cy="50" r="150" fill="#8b5cf6" opacity="0.05"/>
+  <circle cx="100" cy="600" r="200" fill="#06b6d4" opacity="0.05"/>
+  <circle cx="475" cy="325" r="250" fill="#10b981" opacity="0.03"/>
+
+  <!-- Title -->
+  <text x="475" y="45" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
+    AGI 与国运兴衰：8 种未来情景
+  </text>
+  <text x="475" y="72" text-anchor="middle" fill="#aaaaaa" font-size="14" font-family="system-ui, -apple-system, sans-serif">
+    RAND Corporation · How AGI Could Affect the Rise and Fall of Nations · 8 Scenarios
+  </text>
+
+  <!-- Central globe -->
+  <g transform="translate(475, 180)">
+    <circle cx="0" cy="0" r="60" fill="#06b6d4" opacity="0.3" filter="url(#glow)"/>
+    <circle cx="0" cy="0" r="55" fill="none" stroke="#06b6d4" stroke-width="2" opacity="0.5"/>
+    <circle cx="0" cy="0" r="50" fill="none" stroke="#06b6d4" stroke-width="1" opacity="0.3"/>
+    <text x="0" y="8" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
+      AGI
+    </text>
+    <text x="0" y="25" text-anchor="middle" fill="#06b6d4" font-size="12" font-family="system-ui, -apple-system, sans-serif">
+      Future Scenarios
+    </text>
+  </g>
+
+  <!-- 8 Scenarios grid -->
+  <!-- Row 1 -->
+  <g transform="translate(50, 120)">
+    <!-- Scenario 1: Competition-driven -->
+    <rect x="0" y="0" width="280" height="120" rx="10" fill="url(#competitionGrad)" opacity="0.85" filter="url(#shadow)"/>
+    <text x="140" y="25" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
+      1. 竞争驱动型
+    </text>
+    <text x="140" y="50" text-anchor="middle" fill="#ffcccb" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+      🔥 激烈国家竞争
+    </text>
+    <text x="140" y="75" text-anchor="middle" fill="#e2e8f0" font-size="10" font-family="system-ui, -apple-system, sans-serif">
+      加速部署 AI 但政策混乱
+    </text>
+    <text x="260" y="105" text-anchor="end" fill="#ffffff" font-size="14" font-weight="bold">
+      1
+    </text>
+  </g>
+
+  <g transform="translate(340, 120)">
+    <!-- Scenario 2: Cooperative Governance -->
+    <rect x="0" y="0" width="280" height="120" rx="10" fill="url(#cooperationGrad)" opacity="0.85" filter="url(#shadow)"/>
+    <text x="140" y="25" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
+      2. 合作治理型
+    </text>
+    <text x="140" y="50" text-anchor="middle" fill="#d1fae5" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+      🤝 国际协调
+    </text>
+    <text x="140" y="75" text-anchor="middle" fill="#e2e8f0" font-size="10" font-family="system-ui, -apple-system, sans-serif">
+      统一标准与合作机制
+    </text>
+    <text x="260" y="105" text-anchor="end" fill="#ffffff" font-size="14" font-weight="bold">
+      2
+    </text>
+  </g>
+
+  <g transform="translate(630, 120)">
+    <!-- Scenario 3: Tech Dominance -->
+    <rect x="0" y="0" width="280" height="120" rx="10" fill="url(#techDominanceGrad)" opacity="0.85" filter="url(#shadow)"/>
+    <text x="140" y="25" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
+      3. 技术主导型
+    </text>
+    <text x="140" y="50" text-anchor="middle" fill="#f3e8ff" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+      💻 科技巨头掌权
+    </text>
+    <text x="140" y="75" text-anchor="middle" fill="#e2e8f0" font-size="10" font-family="system-ui, -apple-system, sans-serif">
+      公司掌握核心权力
+    </text>
+    <text x="260" y="105" text-anchor="end" fill="#ffffff" font-size="14" font-weight="bold">
+      3
+    </text>
+  </g>
+
+  <!-- Row 2 -->
+  <g transform="translate(50, 250)">
+    <!-- Scenario 4: Democratic Vulnerability -->
+    <rect x="0" y="0" width="280" height="120" rx="10" fill="url(#democracyGrad)" opacity="0.85" filter="url(#shadow)"/>
+    <text x="140" y="25" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
+      4. 民主脆弱型
+    </text>
+    <text x="140" y="50" text-anchor="middle" fill="#fff7ed" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+      ⚠️ 民主受威胁
+    </text>
+    <text x="140" y="75" text-anchor="middle" fill="#e2e8f0" font-size="10" font-family="system-ui, -apple-system, sans-serif">
+      AI 操纵舆论与虚假信息
+    </text>
+    <text x="260" y="105" text-anchor="end" fill="#ffffff" font-size="14" font-weight="bold">
+      4
+    </text>
+  </g>
+
+  <g transform="translate(340, 250)">
+    <!-- Scenario 5: Authoritarian Strengthening -->
+    <rect x="0" y="0" width="280" height="120" rx="10" fill="url(#authoritarianGrad)" opacity="0.85" filter="url(#shadow)"/>
+    <text x="140" y="25" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
+      5. 威权强化型
+    </text>
+    <text x="140" y="50" text-anchor="middle" fill="#e0e7ff" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+      🏛️ 威权巩固
+    </text>
+    <text x="140" y="75" text-anchor="middle" fill="#e2e8f0" font-size="10" font-family="system-ui, -apple-system, sans-serif">
+      利用 AI 强化统治
+    </text>
+    <text x="260" y="105" text-anchor="end" fill="#ffffff" font-size="14" font-weight="bold">
+      5
+    </text>
+  </g>
+
+  <g transform="translate(630, 250)">
+    <!-- Scenario 6: Global Imbalance -->
+    <rect x="0" y="0" width="280" height="120" rx="10" fill="url(#imbalanceGrad)" opacity="0.85" filter="url(#shadow)"/>
+    <text x="140" y="25" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
+      6. 全球失衡型
+    </text>
+    <text x="140" y="50" text-anchor="middle" fill="#fce7f3" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+      📉 能力差距扩大
+    </text>
+    <text x="140" y="75" text-anchor="middle" fill="#e2e8f0" font-size="10" font-family="system-ui, -apple-system, sans-serif">
+      AI 加剧国际不平等
+    </text>
+    <text x="260" y="105" text-anchor="end" fill="#ffffff" font-size="14" font-weight="bold">
+      6
+    </text>
+  </g>
+
+  <!-- Row 3 -->
+  <g transform="translate(50, 380)">
+    <!-- Scenario 7: Transformational Breakthrough -->
+    <rect x="0" y="0" width="280" height="120" rx="10" fill="url(#transformGrad)" opacity="0.85" filter="url(#shadow)"/>
+    <text x="140" y="25" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
+      7. 转型突破型
+    </text>
+    <text x="140" y="50" text-anchor="middle" fill="#e0f2fe" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+      🚀 范式转换
+    </text>
+    <text x="140" y="75" text-anchor="middle" fill="#e2e8f0" font-size="10" font-family="system-ui, -apple-system, sans-serif">
+      AGI 带来革命性突破
+    </text>
+    <text x="260" y="105" text-anchor="end" fill="#ffffff" font-size="14" font-weight="bold">
+      7
+    </text>
+  </g>
+
+  <g transform="translate(340, 380)">
+    <!-- Scenario 8: Prudent Regulation -->
+    <rect x="0" y="0" width="280" height="120" rx="10" fill="url(#regulationGrad)" opacity="0.85" filter="url(#shadow)"/>
+    <text x="140" y="25" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
+      8. 谨慎监管型
+    </text>
+    <text x="140" y="50" text-anchor="middle" fill="#ccfbf1" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+      🛡️ 适应性监管
+    </text>
+    <text x="140" y="75" text-anchor="middle" fill="#e2e8f0" font-size="10" font-family="system-ui, -apple-system, sans-serif">
+      渐进式监管应对挑战
+    </text>
+    <text x="260" y="105" text-anchor="end" fill="#ffffff" font-size="14" font-weight="bold">
+      8
+    </text>
+  </g>
+</svg>
