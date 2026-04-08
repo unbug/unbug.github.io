@@ -1,0 +1,142 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <defs>
+    <linearGradient id="bgGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pythiaGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#868e96;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#495057;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mambaGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fa5252;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="decimambaGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffd43b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fab005;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="memmambaGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#51cf66;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#37b24d;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow3" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  
+  <rect width="1200" height="800" fill="url(#bgGradient3)"/>
+  
+  <!-- 标题 -->
+  <text x="600" y="50" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#333">Passkey Retrieval 任务准确率对比</text>
+  <text x="600" y="90" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#666">不同序列长度下的检索准确率 (400K Token 极限测试)</text>
+  
+  <!-- 图表区域 -->
+  <g transform="translate(80, 140)">
+    <!-- Y 轴 -->
+    <line x1="0" y1="0" x2="0" y2="520" stroke="#333" stroke-width="2"/>
+    <!-- X 轴 -->
+    <line x1="0" y1="520" x2="1040" y2="520" stroke="#333" stroke-width="2"/>
+    
+    <!-- Y 轴标签 -->
+    <text x="-40" y="20" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333" transform="rotate(-90, -40, 20)">100%</text>
+    <text x="-40" y="145" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333" transform="rotate(-90, -40, 145)">75%</text>
+    <text x="-40" y="270" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333" transform="rotate(-90, -40, 270)">50%</text>
+    <text x="-40" y="395" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333" transform="rotate(-90, -40, 395)">25%</text>
+    <text x="-40" y="520" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333" transform="rotate(-90, -40, 520)">0%</text>
+    <text x="-60" y="260" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333" transform="rotate(-90, -60, 260)">准确率</text>
+    
+    <!-- X 轴标签 -->
+    <text x="40" y="555" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">1K</text>
+    <text x="144" y="555" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">2K</text>
+    <text x="248" y="555" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">4K</text>
+    <text x="352" y="555" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">8K</text>
+    <text x="456" y="555" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">16K</text>
+    <text x="560" y="555" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">32K</text>
+    <text x="664" y="555" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">64K</text>
+    <text x="768" y="555" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">128K</text>
+    <text x="872" y="555" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">256K</text>
+    <text x="976" y="555" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">400K</text>
+    <text x="520" y="585" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333">序列长度 (Token)</text>
+    
+    <!-- 数据点位置 -->
+    <defs>
+      <marker id="dot" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6">
+        <circle cx="5" cy="5" r="3" fill="currentColor"/>
+      </marker>
+    </defs>
+    
+    <!-- Pythia-160M -->
+    <polyline points="40,20 144,20 248,520 352,520 456,520 560,520 664,520 768,520 872,520 976,520" 
+              fill="none" stroke="url(#pythiaGradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+    <!-- 数据点 -->
+    <circle cx="40" cy="20" r="6" fill="url(#pythiaGradient)" filter="url(#shadow3)"/>
+    <circle cx="144" cy="20" r="6" fill="url(#pythiaGradient)" filter="url(#shadow3)"/>
+    
+    <!-- Mamba-130M -->
+    <polyline points="40,20 144,20 248,20 352,20 456,124 560,520 664,520 768,520 872,520 976,520" 
+              fill="none" stroke="url(#mambaGradient2)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+    <circle cx="40" cy="20" r="6" fill="url(#mambaGradient2)" filter="url(#shadow3)"/>
+    <circle cx="144" cy="20" r="6" fill="url(#mambaGradient2)" filter="url(#shadow3)"/>
+    <circle cx="248" cy="20" r="6" fill="url(#mambaGradient2)" filter="url(#shadow3)"/>
+    <circle cx="352" cy="20" r="6" fill="url(#mambaGradient2)" filter="url(#shadow3)"/>
+    <circle cx="456" cy="124" r="6" fill="url(#mambaGradient2)" filter="url(#shadow3)"/>
+    
+    <!-- DeciMamba-130M -->
+    <polyline points="40,20 144,20 248,20 352,20 456,20 560,20 664,20 768,20 872,20 976,208" 
+              fill="none" stroke="url(#decimambaGradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+    <circle cx="40" cy="20" r="6" fill="url(#decimambaGradient)" filter="url(#shadow3)"/>
+    <circle cx="144" cy="20" r="6" fill="url(#decimambaGradient)" filter="url(#shadow3)"/>
+    <circle cx="248" cy="20" r="6" fill="url(#decimambaGradient)" filter="url(#shadow3)"/>
+    <circle cx="352" cy="20" r="6" fill="url(#decimambaGradient)" filter="url(#shadow3)"/>
+    <circle cx="456" cy="20" r="6" fill="url(#decimambaGradient)" filter="url(#shadow3)"/>
+    <circle cx="560" cy="20" r="6" fill="url(#decimambaGradient)" filter="url(#shadow3)"/>
+    <circle cx="664" cy="20" r="6" fill="url(#decimambaGradient)" filter="url(#shadow3)"/>
+    <circle cx="768" cy="20" r="6" fill="url(#decimambaGradient)" filter="url(#shadow3)"/>
+    <circle cx="872" cy="20" r="6" fill="url(#decimambaGradient)" filter="url(#shadow3)"/>
+    <circle cx="976" cy="208" r="6" fill="url(#decimambaGradient)" filter="url(#shadow3)"/>
+    
+    <!-- MemMamba -->
+    <polyline points="40,20 144,20 248,20 352,20 456,20 560,20 664,20 768,20 872,20 976,58" 
+              fill="none" stroke="url(#memmambaGradient2)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="40" cy="20" r="7" fill="url(#memmambaGradient2)" filter="url(#shadow3)"/>
+    <circle cx="144" cy="20" r="7" fill="url(#memmambaGradient2)" filter="url(#shadow3)"/>
+    <circle cx="248" cy="20" r="7" fill="url(#memmambaGradient2)" filter="url(#shadow3)"/>
+    <circle cx="352" cy="20" r="7" fill="url(#memmambaGradient2)" filter="url(#shadow3)"/>
+    <circle cx="456" cy="20" r="7" fill="url(#memmambaGradient2)" filter="url(#shadow3)"/>
+    <circle cx="560" cy="20" r="7" fill="url(#memmambaGradient2)" filter="url(#shadow3)"/>
+    <circle cx="664" cy="20" r="7" fill="url(#memmambaGradient2)" filter="url(#shadow3)"/>
+    <circle cx="768" cy="20" r="7" fill="url(#memmambaGradient2)" filter="url(#shadow3)"/>
+    <circle cx="872" cy="20" r="7" fill="url(#memmambaGradient2)" filter="url(#shadow3)"/>
+    <circle cx="976" cy="58" r="7" fill="url(#memmambaGradient2)" filter="url(#shadow3)"/>
+  </g>
+  
+  <!-- 图例 -->
+  <g transform="translate(850, 160)">
+    <rect x="0" y="0" width="240" height="200" rx="12" fill="white" filter="url(#shadow3)"/>
+    
+    <text x="20" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">模型对比</text>
+    
+    <rect x="20" y="55" width="25" height="4" fill="url(#pythiaGradient)"/>
+    <text x="55" y="62" font-family="Arial, sans-serif" font-size="13" fill="#333">Pythia-160M</text>
+    
+    <rect x="20" y="85" width="25" height="4" fill="url(#mambaGradient2)"/>
+    <text x="55" y="92" font-family="Arial, sans-serif" font-size="13" fill="#333">Mamba-130M</text>
+    
+    <rect x="20" y="115" width="25" height="4" fill="url(#decimambaGradient)"/>
+    <text x="55" y="122" font-family="Arial, sans-serif" font-size="13" fill="#333">DeciMamba-130M</text>
+    
+    <rect x="20" y="145" width="25" height="4" fill="url(#memmambaGradient2)"/>
+    <text x="55" y="152" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#333">MemMamba (ours)</text>
+  </g>
+  
+  <!-- 突出显示 400K -->
+  <g transform="translate(890, 420)">
+    <rect x="0" y="0" width="210" height="100" rx="10" fill="white" stroke="#51cf66" stroke-width="2" filter="url(#shadow3)"/>
+    
+    <text x="15" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">🔥 400K Token 时</text>
+    <text x="15" y="55" font-family="Arial, sans-serif" font-size="13" fill="#333">MemMamba: 90% 准确率</text>
+    <text x="15" y="80" font-family="Arial, sans-serif" font-size="13" fill="#333">DeciMamba: 60% 准确率</text>
+  </g>
+</svg>

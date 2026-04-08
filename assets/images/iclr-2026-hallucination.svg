@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="paperGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ee5a6f;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bgGrad)"/>
+
+  <!-- Decorative elements -->
+  <circle cx="700" cy="80" r="40" fill="#0f3460" opacity="0.5"/>
+  <circle cx="100" cy="320" r="50" fill="#0f3460" opacity="0.4"/>
+  <circle cx="650" cy="350" r="30" fill="#0f3460" opacity="0.3"/>
+
+  <!-- Main title -->
+  <text x="400" y="60" text-anchor="middle" fill="#e94560" font-family="Arial, sans-serif" font-size="28" font-weight="bold">
+    ICLR 2026 幻觉引用危机
+  </text>
+  <text x="400" y="90" text-anchor="middle" fill="#a8dadc" font-family="Arial, sans-serif" font-size="16">
+    50+ 篇论文被发现包含伪造引用
+  </text>
+
+  <!-- Paper stack -->
+  <g filter="url(#shadow)">
+    <!-- Paper 1 (back) -->
+    <rect x="180" y="130" width="200" height="240" fill="url(#paperGrad)" rx="5" transform="rotate(-3, 280, 250)"/>
+    <!-- Paper 2 (middle) -->
+    <rect x="200" y="125" width="200" height="240" fill="url(#paperGrad)" rx="5" transform="rotate(2, 300, 245)"/>
+    <!-- Paper 3 (front) -->
+    <rect x="220" y="120" width="200" height="240" fill="url(#paperGrad)" rx="5"/>
+  </g>
+
+  <!-- Front paper content -->
+  <g>
+    <rect x="240" y="145" width="160" height="12" fill="#457b9d" rx="2"/>
+    <rect x="240" y="165" width="140" height="8" fill="#a8dadc" rx="2"/>
+    <rect x="240" y="190" width="170" height="6" fill="#1d3557" opacity="0.3"/>
+    <rect x="240" y="205" width="160" height="6" fill="#1d3557" opacity="0.3"/>
+    <rect x="240" y="220" width="150" height="6" fill="#1d3557" opacity="0.3"/>
+    <rect x="240" y="235" width="165" height="6" fill="#1d3557" opacity="0.3"/>
+  </g>
+
+  <!-- Hallucination marks -->
+  <g>
+    <!-- Red X marks -->
+    <line x1="255" y1="250" x2="275" y2="270" stroke="url(#redGrad)" stroke-width="4" stroke-linecap="round"/>
+    <line x1="275" y1="250" x2="255" y2="270" stroke="url(#redGrad)" stroke-width="4" stroke-linecap="round"/>
+
+    <line x1="305" y1="245" x2="325" y2="265" stroke="url(#redGrad)" stroke-width="4" stroke-linecap="round"/>
+    <line x1="325" y1="245" x2="305" y2="265" stroke="url(#redGrad)" stroke-width="4" stroke-linecap="round"/>
+
+    <line x1="355" y1="255" x2="375" y2="275" stroke="url(#redGrad)" stroke-width="4" stroke-linecap="round"/>
+    <line x1="375" y1="255" x2="355" y2="275" stroke="url(#redGrad)" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Warning sign -->
+  <g transform="translate(550, 180)">
+    <circle cx="0" cy="0" r="60" fill="url(#redGrad)" filter="url(#shadow)"/>
+    <text x="0" y="15" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="50" font-weight="bold">!</text>
+  </g>
+
+  <!-- Stats boxes -->
+  <g>
+    <!-- Box 1 -->
+    <rect x="480" y="280" width="100" height="60" fill="#0f3460" rx="8" opacity="0.8"/>
+    <text x="530" y="305" text-anchor="middle" fill="#ff6b6b" font-family="Arial, sans-serif" font-size="22" font-weight="bold">50+</text>
+    <text x="530" y="325" text-anchor="middle" fill="#a8dadc" font-family="Arial, sans-serif" font-size="12">问题论文</text>
+
+    <!-- Box 2 -->
+    <rect x="590" y="280" width="100" height="60" fill="#0f3460" rx="8" opacity="0.8"/>
+    <text x="640" y="305" text-anchor="middle" fill="#e94560" font-family="Arial, sans-serif" font-size="22" font-weight="bold">8/10</text>
+    <text x="640" y="325" text-anchor="middle" fill="#a8dadc" font-family="Arial, sans-serif" font-size="12">最高评分</text>
+
+    <!-- Box 3 -->
+    <rect x="700" y="280" width="80" height="60" fill="#0f3460" rx="8" opacity="0.8"/>
+    <text x="740" y="305" text-anchor="middle" fill="#ff6b6b" font-family="Arial, sans-serif" font-size="22" font-weight="bold">300</text>
+    <text x="740" y="325" text-anchor="middle" fill="#a8dadc" font-family="Arial, sans-serif" font-size="12">扫描论文</text>
+  </g>
+
+  <!-- Caption -->
+  <text x="400" y="380" text-anchor="middle" fill="#a8dadc" font-family="Arial, sans-serif" font-size="14">
+    同行评审系统正受到 AI 生成内容的严峻挑战
+  </text>
+</svg>

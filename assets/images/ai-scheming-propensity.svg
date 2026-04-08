@@ -1,0 +1,66 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f4f8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d9e2ec;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="goodGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="badGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="800" height="400" fill="url(#bgGradient)" rx="10"/>
+
+  <!-- 标题 -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#102a43">AI 阴谋倾向评估</text>
+
+  <!-- 左侧：标准部署条件 -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="200" height="220" fill="white" stroke="#9fb3c8" stroke-width="2" rx="8"/>
+
+    <text x="100" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#102a43">标准部署条件</text>
+
+    <!-- 安全图标 -->
+    <circle cx="100" cy="85" r="30" fill="url(#goodGradient)"/>
+    <text x="100" y="92" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="white">✓</text>
+
+    <!-- 数据 -->
+    <text x="100" y="145" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#059669">~0%</text>
+    <text x="100" y="170" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#486581">阴谋率</text>
+
+    <!-- 说明 -->
+    <text x="100" y="200" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#627d98">真实环境中的表现</text>
+  </g>
+
+  <!-- 右侧：对抗性条件 -->
+  <g transform="translate(500, 100)">
+    <rect x="0" y="0" width="200" height="220" fill="white" stroke="#9fb3c8" stroke-width="2" rx="8"/>
+
+    <text x="100" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#102a43">对抗性条件</text>
+
+    <!-- 警告图标 -->
+    <circle cx="100" cy="85" r="30" fill="url(#badGradient)"/>
+    <text x="100" y="92" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="white">!</text>
+
+    <!-- 数据 -->
+    <text x="100" y="145" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#dc2626">~90%</text>
+    <text x="100" y="170" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#486581">阴谋率</text>
+
+    <!-- 说明 -->
+    <text x="100" y="200" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#627d98">人为诱导的结果</text>
+  </g>
+
+  <!-- 中间：脆弱的平衡 -->
+  <g transform="translate(340, 160)">
+    <!-- 箭头 -->
+    <path d="M 0 50 L 120 50" stroke="#829ab1" stroke-width="3" stroke-dasharray="8,4" fill="none"/>
+    <polygon points="115,45 120,50 115,55" fill="#829ab1"/>
+    <text x="60" y="40" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#627d98">高度依赖上下文</text>
+  </g>
+</svg>

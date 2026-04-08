@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e27"/>
+      <stop offset="50%" stop-color="#1a1442"/>
+      <stop offset="100%" stop-color="#0d0f1c"/>
+    </linearGradient>
+    <radialGradient id="brainGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f5ff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#00f5ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="brainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b9d"/>
+      <stop offset="50%" stop-color="#c44fff"/>
+      <stop offset="100%" stop-color="#6b5bff"/>
+    </linearGradient>
+    <linearGradient id="electricGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5ff"/>
+      <stop offset="50%" stop-color="#00ff88"/>
+      <stop offset="100%" stop-color="#00f5ff"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="pulseGlow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Grid lines -->
+  <g opacity="0.15">
+    <path d="M0 315 H1200" stroke="#00f5ff" stroke-width="1"/>
+    <path d="M600 0 V630" stroke="#00f5ff" stroke-width="1"/>
+    <path d="M0 157.5 H1200" stroke="#00f5ff" stroke-width="0.5"/>
+    <path d="M0 472.5 H1200" stroke="#00f5ff" stroke-width="0.5"/>
+    <path d="M300 0 V630" stroke="#00f5ff" stroke-width="0.5"/>
+    <path d="M900 0 V630" stroke="#00f5ff" stroke-width="0.5"/>
+  </g>
+
+  <!-- Floating particles -->
+  <g fill="#00f5ff" opacity="0.6">
+    <circle cx="100" cy="100" r="2">
+      <animate attributeName="cy" values="100;80;100" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="250" cy="150" r="1.5">
+      <animate attributeName="cy" values="150;130;150" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1050" cy="120" r="2">
+      <animate attributeName="cy" values="120;100;120" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="950" cy="500" r="1.5">
+      <animate attributeName="cy" values="500;480;500" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="520" r="2">
+      <animate attributeName="cy" values="520;500;520" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1100" cy="350" r="1.5">
+      <animate attributeName="cy" values="350;330;350" dur="2.7s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Brain glow -->
+  <circle cx="600" cy="315" r="180" fill="url(#brainGlow)" filter="url(#pulseGlow)">
+    <animate attributeName="r" values="180;195;180" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Stylized brain -->
+  <g transform="translate(600, 315)" filter="url(#glow)">
+    <ellipse cx="0" cy="0" rx="120" ry="95" fill="url(#brainGrad)" opacity="0.9"/>
+    <path d="M-100 -30 Q-80 -60 -50 -45 Q-20 -70 10 -50 Q40 -75 70 -50 Q95 -30 100 -10" 
+          stroke="#ffddff" stroke-width="3" fill="none" opacity="0.8"/>
+    <path d="M-95 0 Q-70 -20 -40 -5 Q-10 -25 20 -10 Q50 -30 80 -10 Q95 5 95 20" 
+          stroke="#ffddff" stroke-width="3" fill="none" opacity="0.8"/>
+    <path d="M-90 30 Q-60 10 -30 25 Q0 5 30 20 Q60 5 85 25 Q95 40 90 50" 
+          stroke="#ffddff" stroke-width="3" fill="none" opacity="0.8"/>
+    <path d="M-70 55 Q-35 40 0 50 Q35 35 65 50" 
+          stroke="#ffddff" stroke-width="3" fill="none" opacity="0.8"/>
+  </g>
+
+  <!-- Three semantic layers (left side) -->
+  <g transform="translate(180, 315)">
+    <rect x="-60" y="-140" width="120" height="70" rx="10" fill="#1a1a3e" stroke="#00f5ff" stroke-width="2" filter="url(#glow)"/>
+    <text x="0" y="-100" text-anchor="middle" fill="#00f5ff" font-size="14" font-family="Arial, sans-serif">静态锚点</text>
+    <text x="0" y="-80" text-anchor="middle" fill="#aaaaff" font-size="11" font-family="Arial, sans-serif">Static Anchor</text>
+    <circle cx="0" cy="-125" r="6" fill="#00f5ff">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g transform="translate(180, 315)">
+    <rect x="-60" y="-35" width="120" height="70" rx="10" fill="#1a1a3e" stroke="#00ff88" stroke-width="2" filter="url(#glow)"/>
+    <text x="0" y="5" text-anchor="middle" fill="#00ff88" font-size="14" font-family="Arial, sans-serif">运动叙事</text>
+    <text x="0" y="25" text-anchor="middle" fill="#aaffcc" font-size="11" font-family="Arial, sans-serif">Motion Narrative</text>
+    <circle cx="0" cy="-20" r="6" fill="#00ff88">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g transform="translate(180, 315)">
+    <rect x="-60" y="70" width="120" height="70" rx="10" fill="#1a1a3e" stroke="#ffdd00" stroke-width="2" filter="url(#glow)"/>
+    <text x="0" y="110" text-anchor="middle" fill="#ffdd00" font-size="14" font-family="Arial, sans-serif">整体概要</text>
+    <text x="0" y="130" text-anchor="middle" fill="#ffeeaa" font-size="11" font-family="Arial, sans-serif">Global Summary</text>
+    <circle cx="0" cy="85" r="6" fill="#ffdd00">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Arrows from semantic layers to brain -->
+  <g stroke="url(#electricGrad)" stroke-width="3" fill="none" stroke-dasharray="8,4" filter="url(#glow)">
+    <path d="M240 200 Q400 220 480 260">
+      <animate attributeName="stroke-dashoffset" values="24;0" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M240 315 Q400 315 480 315">
+      <animate attributeName="stroke-dashoffset" values="24;0" dur="1.7s" repeatCount="indefinite"/>
+    </path>
+    <path d="M240 430 Q400 410 480 370">
+      <animate attributeName="stroke-dashoffset" values="24;0" dur="1.9s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Video output (right side) -->
+  <g transform="translate(1020, 315)">
+    <rect x="-60" y="-90" width="120" height="180" rx="15" fill="#0d0f1c" stroke="#ff6b9d" stroke-width="3" filter="url(#glow)"/>
+    <rect x="-45" y="-70" width="90" height="55" rx="5" fill="#1a1a3e" stroke="#ff6b9d" stroke-width="1"/>
+    <rect x="-45" y="-5" width="90" height="55" rx="5" fill="#1a1a3e" stroke="#ff6b9d" stroke-width="1"/>
+    <rect x="-45" y="60" width="90" height="20" rx="5" fill="#1a1a3e" stroke="#ff6b9d" stroke-width="1"/>
+    
+    <text x="0" y="-38" text-anchor="middle" fill="#ff99bb" font-size="10" font-family="Arial, sans-serif">Frame 1</text>
+    <text x="0" y="27" text-anchor="middle" fill="#ff99bb" font-size="10" font-family="Arial, sans-serif">Frame 2</text>
+    <text x="0" y="75" text-anchor="middle" fill="#ff99bb" font-size="9" font-family="Arial, sans-serif">...</text>
+    
+    <circle cx="0" cy="-95" r="6" fill="#ff6b9d">
+      <animate attributeName="opacity" values="1;0.4;1" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Arrow from brain to video -->
+  <g stroke="#ff6b9d" stroke-width="4" fill="none" stroke-dasharray="10,5" filter="url(#glow)">
+    <path d="M720 315 Q870 315 960 315">
+      <animate attributeName="stroke-dashoffset" values="30;0" dur="1.6s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="70" text-anchor="middle" fill="#ffffff" font-size="36" font-family="Arial, sans-serif" font-weight="bold" filter="url(#glow)">
+    SemVideo: 从大脑重建视频
+  </text>
+  <text x="600" y="105" text-anchor="middle" fill="#00f5ff" font-size="18" font-family="Arial, sans-serif">
+    Hierarchical Semantic Guidance · fMRI · Brain-Computer Interface
+  </text>
+
+  <!-- Three key components labels -->
+  <g transform="translate(370, 530)">
+    <rect x="-110" y="-25" width="220" height="50" rx="8" fill="#1a1a3e" opacity="0.8"/>
+    <text x="0" y="-5" text-anchor="middle" fill="#00f5ff" font-size="12" font-family="Arial, sans-serif">SAD · MAD · CVR</text>
+    <text x="0" y="12" text-anchor="middle" fill="#aaaaff" font-size="10" font-family="Arial, sans-serif">三大核心组件</text>
+  </g>
+
+  <!-- Neural activity sparks around brain -->
+  <g fill="#00f5ff">
+    <circle cx="520" cy="240" r="3">
+      <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="680" cy="250" r="3">
+      <animate attributeName="opacity" values="0;1;0" dur="1.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="540" cy="390" r="3">
+      <animate attributeName="opacity" values="1;0;1" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="660" cy="380" r="3">
+      <animate attributeName="opacity" values="0;1;0" dur="1.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="490" cy="315" r="3">
+      <animate attributeName="opacity" values="1;0;1" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="710" cy="315" r="3">
+      <animate attributeName="opacity" values="0;1;0" dur="1.7s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

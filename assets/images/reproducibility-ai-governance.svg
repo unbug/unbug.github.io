@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="paperGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06d6a0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#05c590;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ee5a6f;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bgGrad)"/>
+
+  <!-- Decorative elements -->
+  <circle cx="700" cy="80" r="40" fill="#0f3460" opacity="0.5"/>
+  <circle cx="100" cy="320" r="50" fill="#0f3460" opacity="0.4"/>
+  <circle cx="650" cy="350" r="30" fill="#0f3460" opacity="0.3"/>
+
+  <!-- Main title -->
+  <text x="400" y="60" text-anchor="middle" fill="#06d6a0" font-family="Arial, sans-serif" font-size="28" font-weight="bold">
+    可复现性：AI治理的新前沿
+  </text>
+  <text x="400" y="90" text-anchor="middle" fill="#a8dadc" font-family="Arial, sans-serif" font-size="16">
+    缺乏可复现性正在严重削弱AI治理能力
+  </text>
+
+  <!-- Comparison: Reproducible vs Not -->
+  <g>
+    <!-- Left: Reproducible -->
+    <g transform="translate(200, 140)">
+      <rect x="-80" y="-60" width="160" height="180" fill="#0f3460" rx="10" opacity="0.8"/>
+      <text x="0" y="-30" text-anchor="middle" fill="#06d6a0" font-family="Arial, sans-serif" font-size="16" font-weight="bold">可复现</text>
+      
+      <!-- Checkmark -->
+      <circle cx="0" cy="30" r="40" fill="url(#greenGrad)" filter="url(#shadow)"/>
+      <path d="M -20 30 L -5 45 L 20 20" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g>
+
+    <!-- Right: Not Reproducible -->
+    <g transform="translate(600, 140)">
+      <rect x="-80" y="-60" width="160" height="180" fill="#0f3460" rx="10" opacity="0.8"/>
+      <text x="0" y="-30" text-anchor="middle" fill="#ff6b6b" font-family="Arial, sans-serif" font-size="16" font-weight="bold">不可复现</text>
+      
+      <!-- X mark -->
+      <circle cx="0" cy="30" r="40" fill="url(#redGrad)" filter="url(#shadow)"/>
+      <line x1="-20" y1="20" x2="20" y2="40" stroke="white" stroke-width="6" stroke-linecap="round"/>
+      <line x1="20" y1="20" x2="-20" y2="40" stroke="white" stroke-width="6" stroke-linecap="round"/>
+    </g>
+
+    <!-- Arrow between -->
+    <g transform="translate(400, 170)">
+      <line x1="-100" y1="0" x2="100" y2="0" stroke="#a8dadc" stroke-width="3" stroke-dasharray="10,5"/>
+      <polygon points="0,-10 15,0 0,10" fill="#a8dadc"/>
+    </g>
+  </g>
+
+  <!-- Stats boxes -->
+  <g>
+    <!-- Box 1 -->
+    <rect x="80" y="280" width="120" height="60" fill="#0f3460" rx="8" opacity="0.8"/>
+    <text x="140" y="305" text-anchor="middle" fill="#06d6a0" font-family="Arial, sans-serif" font-size="22" font-weight="bold">72%</text>
+    <text x="140" y="325" text-anchor="middle" fill="#a8dadc" font-family="Arial, sans-serif" font-size="12">AI论文增长</text>
+
+    <!-- Box 2 -->
+    <rect x="220" y="280" width="120" height="60" fill="#0f3460" rx="8" opacity="0.8"/>
+    <text x="280" y="305" text-anchor="middle" fill="#ff6b6b" font-family="Arial, sans-serif" font-size="22" font-weight="bold">36%</text>
+    <text x="280" y="325" text-anchor="middle" fill="#a8dadc" font-family="Arial, sans-serif" font-size="12">心理学复现率</text>
+
+    <!-- Box 3 -->
+    <rect x="360" y="280" width="120" height="60" fill="#0f3460" rx="8" opacity="0.8"/>
+    <text x="420" y="305" text-anchor="middle" fill="#e94560" font-family="Arial, sans-serif" font-size="22" font-weight="bold">2%</text>
+    <text x="420" y="325" text-anchor="middle" fill="#a8dadc" font-family="Arial, sans-serif" font-size="12">癌症生物学数据</text>
+
+    <!-- Box 4 -->
+    <rect x="500" y="280" width="120" height="60" fill="#0f3460" rx="8" opacity="0.8"/>
+    <text x="560" y="305" text-anchor="middle" fill="#06d6a0" font-family="Arial, sans-serif" font-size="22" font-weight="bold">24%</text>
+    <text x="560" y="325" text-anchor="middle" fill="#a8dadc" font-family="Arial, sans-serif" font-size="12">ICML 2024复现率</text>
+  </g>
+
+  <!-- Caption -->
+  <text x="400" y="380" text-anchor="middle" fill="#a8dadc" font-family="Arial, sans-serif" font-size="14">
+    提高可复现性标准是AI治理的核心
+  </text>
+</svg>

@@ -1,0 +1,69 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="llmGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="genomeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="algorithmGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bgGradient)" />
+
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">AlphaEvolve: LLM 驱动的 MARL 算法发现</text>
+
+  <!-- LLM Agent Box -->
+  <rect x="300" y="100" width="200" height="80" rx="10" fill="url(#llmGradient)" filter="url(#glow)" />
+  <text x="400" y="135" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">LLM 进化代理</text>
+  <text x="400" y="160" font-family="Arial, sans-serif" font-size="12" fill="#e0e0e0" text-anchor="middle">基因操作器</text>
+
+  <!-- Genome Box -->
+  <rect x="50" y="200" width="180" height="80" rx="10" fill="url(#genomeGradient)" />
+  <text x="140" y="235" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">算法基因组</text>
+  <text x="140" y="255" font-family="Arial, sans-serif" font-size="11" fill="#e0e0e0" text-anchor="middle">源代码 DNA</text>
+
+  <!-- New Algorithms Box -->
+  <rect x="570" y="200" width="180" height="80" rx="10" fill="url(#algorithmGradient)" />
+  <text x="660" y="235" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">新 MARL 算法</text>
+  <text x="660" y="255" font-family="Arial, sans-serif" font-size="11" fill="#e0e0e0" text-anchor="middle">VAD-CFR, SHOR-PSRO</text>
+
+  <!-- Arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ffffff" />
+    </marker>
+  </defs>
+  <line x1="230" y1="240" x2="300" y2="160" stroke="#ffffff" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="500" y1="160" x2="570" y2="240" stroke="#ffffff" stroke-width="2" marker-end="url(#arrowhead)" />
+
+  <!-- Evaluation Loop -->
+  <ellipse cx="400" cy="300" rx="150" ry="30" fill="none" stroke="#4facfe" stroke-width="2" stroke-dasharray="5,3" />
+  <text x="400" y="305" font-family="Arial, sans-serif" font-size="12" fill="#4facfe" text-anchor="middle">评估 → 选择 → 进化循环</text>
+
+  <!-- Key Innovations -->
+  <text x="140" y="340" font-family="Arial, sans-serif" font-size="14" fill="#f093fb" text-anchor="middle">波动敏感折扣</text>
+  <text x="400" y="340" font-family="Arial, sans-serif" font-size="14" fill="#667eea" text-anchor="middle">一致性强制乐观</text>
+  <text x="660" y="340" font-family="Arial, sans-serif" font-size="14" fill="#4facfe" text-anchor="middle">动态退火策略</text>
+
+  <!-- DeepMind Logo -->
+  <text x="400" y="380" font-family="Arial, sans-serif" font-size="11" fill="#888888" text-anchor="middle">Google DeepMind · 2026</text>
+</svg>

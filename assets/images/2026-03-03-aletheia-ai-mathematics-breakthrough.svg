@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="50%" style="stop-color:#1e293b"/>
+      <stop offset="100%" style="stop-color:#0f172a"/>
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="50%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#ec4899"/>
+    </linearGradient>
+    <linearGradient id="mathGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#06b6d4"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+
+  <g opacity="0.3">
+    <g transform="translate(100, 100)">
+      <text x="0" y="0" fill="#3b82f6" font-family="Georgia, serif" font-size="32">∑</text>
+      <text x="80" y="0" fill="#8b5cf6" font-family="Georgia, serif" font-size="28">∞</text>
+      <text x="150" y="0" fill="#ec4899" font-family="Georgia, serif" font-size="24">∫</text>
+      <text x="220" y="0" fill="#10b981" font-family="Georgia, serif" font-size="30">π</text>
+    </g>
+    <g transform="translate(800, 80)">
+      <text x="0" y="0" fill="#06b6d4" font-family="Georgia, serif" font-size="26">∂</text>
+      <text x="60" y="0" fill="#3b82f6" font-family="Georgia, serif" font-size="34">√</text>
+      <text x="130" y="0" fill="#8b5cf6" font-family="Georgia, serif" font-size="28">⊂</text>
+    </g>
+    <g transform="translate(150, 500)">
+      <text x="0" y="0" fill="#ec4899" font-family="Georgia, serif" font-size="30">∇</text>
+      <text x="70" y="0" fill="#10b981" font-family="Georgia, serif" font-size="26">∈</text>
+      <text x="140" y="0" fill="#06b6d4" font-family="Georgia, serif" font-size="32">Δ</text>
+    </g>
+    <g transform="translate(900, 480)">
+      <text x="0" y="0" fill="#3b82f6" font-family="Georgia, serif" font-size="28">λ</text>
+      <text x="60" y="0" fill="#8b5cf6" font-family="Georgia, serif" font-size="30">θ</text>
+      <text x="120" y="0" fill="#ec4899" font-family="Georgia, serif" font-size="26">Σ</text>
+    </g>
+  </g>
+
+  <g transform="translate(600, 315)">
+    <circle cx="0" cy="0" r="200" fill="none" stroke="url(#accentGradient)" stroke-width="2" opacity="0.3"/>
+    <circle cx="0" cy="0" r="170" fill="none" stroke="url(#mathGradient)" stroke-width="2" opacity="0.4"/>
+    <circle cx="0" cy="0" r="140" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.5"/>
+
+    <g filter="url(#glow)">
+      <circle cx="0" cy="0" r="100" fill="#1e293b" stroke="url(#accentGradient)" stroke-width="4"/>
+    </g>
+
+    <g transform="translate(0, -20)">
+      <text x="0" y="0" text-anchor="middle" fill="url(#accentGradient)" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="bold">AI</text>
+      <text x="0" y="50" text-anchor="middle" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="16">数学研究</text>
+    </g>
+  </g>
+
+  <g transform="translate(150, 315)">
+    <rect x="-60" y="-50" width="120" height="100" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+    <text x="0" y="-10" text-anchor="middle" fill="#60a5fa" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600">生成器</text>
+    <text x="0" y="25" text-anchor="middle" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12">Generator</text>
+  </g>
+
+  <g transform="translate(1050, 315)">
+    <rect x="-60" y="-50" width="120" height="100" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="0" y="-10" text-anchor="middle" fill="#34d399" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600">验证器</text>
+    <text x="0" y="25" text-anchor="middle" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12">Verifier</text>
+  </g>
+
+  <g opacity="0.6">
+    <line x1="210" y1="315" x2="400" y2="315" stroke="#3b82f6" stroke-width="2" stroke-dasharray="8,4">
+      <animateTransform attributeName="transform" type="translate" values="0,0; -12,0; 0,0" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="800" y1="315" x2="990" y2="315" stroke="#10b981" stroke-width="2" stroke-dasharray="8,4">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 12,0; 0,0" dur="2s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <g transform="translate(600, 85)">
+    <g filter="url(#softGlow)">
+      <rect x="-200" y="-35" width="400" height="70" rx="35" fill="#1e293b" stroke="url(#accentGradient)" stroke-width="3"/>
+    </g>
+    <text x="0" y="8" text-anchor="middle" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="bold">6 / 10</text>
+    <text x="0" y="8" text-anchor="middle" fill="none" stroke="url(#accentGradient)" stroke-width="1" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="bold"/>
+  </g>
+
+  <g transform="translate(600, 560)">
+    <text x="0" y="0" text-anchor="middle" fill="#e2e8f0" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="600">Aletheia · FirstProof</text>
+    <text x="0" y="40" text-anchor="middle" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="16">Google DeepMind · 2026</text>
+  </g>
+
+  <g fill="#1e293b" opacity="0.8">
+    <circle cx="100" cy="150" r="3"/>
+    <circle cx="1100" cy="200" r="2"/>
+    <circle cx="200" cy="500" r="2.5"/>
+    <circle cx="1000" cy="450" r="3"/>
+    <circle cx="50" cy="350" r="2"/>
+    <circle cx="1150" cy="100" r="2.5"/>
+  </g>
+</svg>

@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a1a3a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0a2a;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#00ffff;stop-opacity:0" />
+    </radialGradient>
+    
+    <linearGradient id="wireGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ff00ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ffff;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="strongGlow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="800" height="450" fill="url(#bgGrad)"/>
+  
+  <g opacity="0.3">
+    <circle cx="100" cy="100" r="1" fill="#00ffff"/>
+    <circle cx="200" cy="150" r="1.5" fill="#00ffff"/>
+    <circle cx="300" cy="80" r="1" fill="#ff00ff"/>
+    <circle cx="400" cy="120" r="1.5" fill="#00ffff"/>
+    <circle cx="500" cy="90" r="1" fill="#ff00ff"/>
+    <circle cx="600" cy="140" r="1.5" fill="#00ffff"/>
+    <circle cx="700" cy="110" r="1" fill="#ff00ff"/>
+    <circle cx="750" cy="200" r="1.5" fill="#00ffff"/>
+    <circle cx="680" cy="300" r="1" fill="#ff00ff"/>
+    <circle cx="580" cy="350" r="1.5" fill="#00ffff"/>
+    <circle cx="480" cy="380" r="1" fill="#ff00ff"/>
+    <circle cx="380" cy="360" r="1.5" fill="#00ffff"/>
+    <circle cx="280" cy="320" r="1" fill="#ff00ff"/>
+    <circle cx="180" cy="350" r="1.5" fill="#00ffff"/>
+    <circle cx="80" cy="280" r="1" fill="#ff00ff"/>
+    <circle cx="120" cy="200" r="1.5" fill="#00ffff"/>
+  </g>
+  
+  <g transform="translate(400, 225)">
+    <circle cx="0" cy="0" r="160" fill="none" stroke="url(#wireGrad)" stroke-width="1" opacity="0.5" filter="url(#glow)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
+    </circle>
+    
+    <ellipse cx="0" cy="0" rx="180" ry="60" fill="none" stroke="url(#wireGrad)" stroke-width="1" opacity="0.4" filter="url(#glow)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="25s" repeatCount="indefinite"/>
+    </ellipse>
+    
+    <ellipse cx="0" cy="0" rx="60" ry="180" fill="none" stroke="url(#wireGrad)" stroke-width="1" opacity="0.4" filter="url(#glow)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="30s" repeatCount="indefinite"/>
+    </ellipse>
+    
+    <circle cx="0" cy="0" r="80" fill="url(#glowGrad)" opacity="0.3"/>
+  </g>
+  
+  <g transform="translate(400, 225)" filter="url(#glow)">
+    <ellipse cx="0" cy="20" rx="30" ry="40" fill="none" stroke="#00ffff" stroke-width="2"/>
+    <circle cx="0" cy="-40" r="25" fill="none" stroke="#00ffff" stroke-width="2"/>
+    <line x1="-30" y1="-10" x2="-55" y2="-30" stroke="#00ffff" stroke-width="2"/>
+    <line x1="30" y1="-10" x2="55" y2="-30" stroke="#00ffff" stroke-width="2"/>
+    <line x1="-15" y1="55" x2="-25" y2="90" stroke="#00ffff" stroke-width="2"/>
+    <line x1="15" y1="55" x2="25" y2="90" stroke="#00ffff" stroke-width="2"/>
+    
+    <circle cx="-10" cy="-45" r="3" fill="#00ffff"/>
+    <circle cx="10" cy="-45" r="3" fill="#00ffff"/>
+  </g>
+  
+  <g transform="translate(400, 225)" filter="url(#strongGlow)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/>
+      <circle cx="180" cy="0" r="15" fill="none" stroke="#ff00ff" stroke-width="3"/>
+      <circle cx="180" cy="0" r="8" fill="#ff00ff" opacity="0.5"/>
+      <line x1="165" y1="0" x2="145" y2="0" stroke="#ff00ff" stroke-width="2" stroke-dasharray="5,5"/>
+    </g>
+    
+    <g opacity="0.5">
+      <animateTransform attributeName="transform" type="rotate" from="90" to="450" dur="8s" repeatCount="indefinite"/>
+      <circle cx="180" cy="0" r="10" fill="none" stroke="#00ffff" stroke-width="2"/>
+    </g>
+    
+    <g opacity="0.3">
+      <animateTransform attributeName="transform" type="rotate" from="180" to="540" dur="8s" repeatCount="indefinite"/>
+      <circle cx="180" cy="0" r="8" fill="none" stroke="#ff00ff" stroke-width="2"/>
+    </g>
+  </g>
+  
+  <g transform="translate(400, 50)" text-anchor="middle">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#00ffff" filter="url(#glow)">
+      HumanOrbit
+    </text>
+    <text x="0" y="35" font-family="Arial, sans-serif" font-size="16" fill="#ff00ff" filter="url(#glow)">
+      360° 3D Human Reconstruction
+    </text>
+  </g>
+  
+  <g transform="translate(50, 400)">
+    <rect x="0" y="0" width="700" height="40" rx="5" fill="rgba(0,255,255,0.1)" stroke="#00ffff" stroke-width="1" opacity="0.5"/>
+    <text x="20" y="25" font-family="Arial, sans-serif" font-size="12" fill="#00ffff" opacity="0.8">
+      Single Photo → 360° Orbit Video → 3D Reconstruction
+    </text>
+  </g>
+  
+  <g transform="translate(650, 380)" opacity="0.7">
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#00ffff" stroke-width="2"/>
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#ff00ff" stroke-width="2"/>
+    <circle cx="0" cy="0" r="5" fill="#00ffff"/>
+    <text x="0" y="40" font-family="Arial, sans-serif" font-size="10" fill="#00ffff" text-anchor="middle">
+      CVPR 2026
+    </text>
+  </g>
+</svg>

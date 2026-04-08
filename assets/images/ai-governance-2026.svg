@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6d28d9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="550" fill="#f8fafc"/>
+  
+  <!-- Main title background -->
+  <rect x="50" y="30" width="700" height="60" rx="10" fill="#1e293b"/>
+  
+  <!-- AI Governance Title -->
+  <text x="400" y="70" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="white" text-anchor="middle">
+    AI 治理三大趋势 (2026)
+  </text>
+  
+  <!-- Three pillars -->
+  <!-- DAG -->
+  <rect x="80" y="120" width="200" height="180" rx="12" fill="url(#grad1)" opacity="0.8"/>
+  <circle cx="180" cy="150" r="25" fill="white" opacity="0.9"/>
+  <text x="180" y="160" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2563eb" text-anchor="middle">DAG</text>
+  <text x="180" y="195" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="white" text-anchor="middle">去中心化自治</text>
+  <text x="180" y="225" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">区块链共识</text>
+  <text x="180" y="245" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">社区制定规则</text>
+  
+  <!-- Human-in-loop -->
+  <rect x="300" y="120" width="200" height="180" rx="12" fill="url(#grad2)" opacity="0.8"/>
+  <rect x="380" y="145" width="40" height="35" rx="6" fill="white" opacity="0.9"/>
+  <circle cx="400" cy="165" r="15" fill="#059669" opacity="0.9"/>
+  <text x="400" y="195" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="white" text-anchor="middle">人类在环</text>
+  <text x="400" y="220" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">法律要求</text>
+  <text x="400" y="240" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">可审计、可逆转</text>
+  
+  <!-- Social Impact -->
+  <rect x="520" y="120" width="200" height="180" rx="12" fill="url(#grad3)" opacity="0.8"/>
+  <path d="M 620 145 L 640 165 L 600 180 Z" fill="white" opacity="0.9"/>
+  <text x="620" y="195" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="white" text-anchor="middle">社会影响审计</text>
+  <text x="620" y="220" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">不平等评估</text>
+  <text x="620" y="240" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">隐私与民主</text>
+  
+  <!-- Transition banner -->
+  <rect x="150" y="330" width="500" height="50" rx="8" fill="#fef3c7"/>
+  <text x="400" y="360" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#92400e" text-anchor="middle">
+    从技术优化 → 社会监护
+  </text>
+  
+  <!-- Key outcomes -->
+  <rect x="80" y="400" width="200" height="70" rx="8" fill="#dbeafe" opacity="0.8"/>
+  <text x="180" y="425" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1e40af" text-anchor="middle">公共问责</text>
+  <text x="180" y="450" font-family="Arial, sans-serif" font-size="11" fill="#1e3a8a" text-anchor="middle">社会影响可衡量</text>
+  
+  <rect x="300" y="400" width="200" height="70" rx="8" fill="#dcfce7" opacity="0.8"/>
+  <text x="400" y="425" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#166534" text-anchor="middle">跨部门协作</text>
+  <text x="400" y="450" font-family="Arial, sans-serif" font-size="11" fill="#15803d" text-anchor="middle">技术 + 法律 + 公民社会</text>
+  
+  <rect x="520" y="400" width="200" height="70" rx="8" fill="#f3e8ff" opacity="0.8"/>
+  <text x="620" y="425" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#6b21a8" text-anchor="middle">透明治理</text>
+  <text x="620" y="450" font-family="Arial, sans-serif" font-size="11" fill="#581c87" text-anchor="middle">开源平台 + 社区参与</text>
+  
+</svg>

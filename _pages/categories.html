@@ -1,0 +1,44 @@
+---
+title: "Categories"
+layout: default
+permalink: "/categories.html"
+---
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+        <h1 class="font-weight-bold title h3 text-capitalize mb-4">Categories</h1>
+
+        <div class="p-3 bg-lightblue" style="margin-bottom: 0.85rem; margin-top: -0.85em;">
+          <span class="taglist">
+            {% for category in site.categories %} 
+            <a class="sscroll btn btn-light btn-sm btn-round font-weight-bold" style="margin: 0.17rem 0.07rem;" href="{{site.baseurl}}/categories.html#{{ category[0] | downcase }}">{{ category[0] }}</a>
+            {% endfor %}
+          </span>
+        </div>
+            
+        {% for category in site.categories %} 
+        <h4 class="font-weight-bold spanborder text-capitalize" id="{{ category[0] | downcase }}"><span>{{ category[0] }}</span></h4>
+            
+        {% assign pages_list = category[1] %}
+        {% for post in pages_list %}
+        {% if post.title != null %}
+          {% if group == null or group == post.group %}
+         
+            {% include main-loop-card.html %}
+          {% endif %}
+        {% endif %}
+        {% endfor %}
+        {% assign pages_list = nil %}
+        {% assign group = nil %}
+
+        {% endfor %}
+
+        </div>
+        
+            <div class="col-md-4">
+        {% include sidebar-featured.html %}    
+    </div>
+        
+    </div>
+</div>

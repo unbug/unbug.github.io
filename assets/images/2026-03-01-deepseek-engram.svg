@@ -1,0 +1,110 @@
+<svg width="800" height="450" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="memoryGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0099cc;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="computeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ee5a5a;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="800" height="450" fill="url(#bgGrad)"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="28" font-weight="bold">DeepSeek Engram</text>
+  <text x="400" y="65" text-anchor="middle" fill="#00d9ff" font-family="Arial, sans-serif" font-size="16">内存-计算分离架构</text>
+  
+  <!-- 内存模块 (左侧) -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="180" height="250" rx="10" fill="url(#memoryGrad)" filter="url(#glow)"/>
+    <text x="90" y="35" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="16" font-weight="bold">静态内存</text>
+    
+    <!-- 内存存储单元 -->
+    <rect x="20" y="60" width="140" height="25" rx="3" fill="#006688" opacity="0.8"/>
+    <rect x="20" y="95" width="140" height="25" rx="3" fill="#006688" opacity="0.8"/>
+    <rect x="20" y="130" width="140" height="25" rx="3" fill="#006688" opacity="0.8"/>
+    <rect x="20" y="165" width="140" height="25" rx="3" fill="#006688" opacity="0.8"/>
+    <rect x="20" y="200" width="140" height="25" rx="3" fill="#006688" opacity="0.8"/>
+    
+    <text x="90" y="255" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="12">O(1) 查找效率</text>
+  </g>
+  
+  <!-- 箭头连接 -->
+  <g filter="url(#glow)">
+    <line x1="280" y1="180" x2="340" y2="180" stroke="#00d9ff" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <line x1="460" y1="200" x2="400" y2="200" stroke="#ff6b6b" stroke-width="3" marker-end="url(#arrowhead)"/>
+  </g>
+  
+  <!-- 箭头定义 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ffffff"/>
+    </marker>
+  </defs>
+  
+  <!-- 融合模块 (中间) -->
+  <g transform="translate(340, 150)">
+    <rect x="0" y="0" width="120" height="130" rx="10" fill="#9b59b6" filter="url(#glow)"/>
+    <text x="60" y="35" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="14" font-weight="bold">状态融合</text>
+    <circle cx="60" cy="75" r="25" fill="#8e44ad"/>
+    <text x="60" y="82" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="18">+</text>
+  </g>
+  
+  <!-- 计算模块 (右侧) -->
+  <g transform="translate(520, 100)">
+    <rect x="0" y="0" width="180" height="250" rx="10" fill="url(#computeGrad)" filter="url(#glow)"/>
+    <text x="90" y="35" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="16" font-weight="bold">动态推理</text>
+    
+    <!-- 神经网络层 -->
+    <circle cx="60" cy="70" r="12" fill="#cc4444"/>
+    <circle cx="120" cy="70" r="12" fill="#cc4444"/>
+    <circle cx="90" cy="110" r="12" fill="#cc4444"/>
+    <circle cx="60" cy="150" r="12" fill="#cc4444"/>
+    <circle cx="120" cy="150" r="12" fill="#cc4444"/>
+    <circle cx="90" cy="190" r="12" fill="#cc4444"/>
+    
+    <line x1="60" y1="82" x2="90" y2="98" stroke="#fff" stroke-width="2"/>
+    <line x1="120" y1="82" x2="90" y2="98" stroke="#fff" stroke-width="2"/>
+    <line x1="90" y1="122" x2="60" y2="138" stroke="#fff" stroke-width="2"/>
+    <line x1="90" y1="122" x2="120" y2="138" stroke="#fff" stroke-width="2"/>
+    <line x1="60" y1="162" x2="90" y2="178" stroke="#fff" stroke-width="2"/>
+    <line x1="120" y1="162" x2="90" y2="178" stroke="#fff" stroke-width="2"/>
+    
+    <text x="90" y="255" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="12">复杂推理</text>
+  </g>
+  
+  <!-- 底部特性标签 -->
+  <g transform="translate(100, 380)">
+    <rect x="0" y="0" width="150" height="40" rx="5" fill="#2ecc71" opacity="0.9"/>
+    <text x="75" y="25" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="13">DRAM 卸载</text>
+  </g>
+  
+  <g transform="translate(270, 380)">
+    <rect x="0" y="0" width="150" height="40" rx="5" fill="#f39c12" opacity="0.9"/>
+    <text x="75" y="25" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="13">97% 准确率</text>
+  </g>
+  
+  <g transform="translate(440, 380)">
+    <rect x="0" y="0" width="150" height="40" rx="5" fill="#e74c3c" opacity="0.9"/>
+    <text x="75" y="25" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="13">确定寻址</text>
+  </g>
+  
+  <g transform="translate(610, 380)">
+    <rect x="0" y="0" width="90" height="40" rx="5" fill="#00d9ff" opacity="0.9"/>
+    <text x="45" y="25" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="13">开源</text>
+  </g>
+</svg>

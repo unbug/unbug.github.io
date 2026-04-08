@@ -1,0 +1,95 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="600" y="60" font-family="Arial, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    HRM 性能对比：小身材，大能量
+  </text>
+  
+  <!-- Key metrics -->
+  <rect x="100" y="100" width="1000" height="150" rx="15" fill="#fff" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <circle cx="200" cy="175" r="50" fill="#3b82f6"/>
+  <text x="200" y="165" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#fff">27M</text>
+  <text x="200" y="230" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e293b">参数数量</text>
+  
+  <circle cx="450" cy="175" r="50" fill="#10b981"/>
+  <text x="450" y="165" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#fff">1000</text>
+  <text x="450" y="230" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e293b">训练样本</text>
+  
+  <circle cx="700" cy="175" r="50" fill="#f59e0b"/>
+  <text x="700" y="165" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#fff">100x</text>
+  <text x="700" y="230" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e293b">速度提升</text>
+  
+  <circle cx="950" cy="175" r="50" fill="#8b5cf6"/>
+  <text x="950" y="165" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#fff">2h</text>
+  <text x="950" y="230" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e293b">训练时间</text>
+  
+  <!-- ARC-AGI Benchmark Chart -->
+  <rect x="100" y="280" width="1000" height="450" rx="15" fill="#fff" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <text x="600" y="320" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    ARC-AGI 基准测试准确率
+  </text>
+  
+  <!-- Chart axes -->
+  <line x1="150" y1="680" x2="1050" y2="680" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="150" y1="360" x2="150" y2="680" stroke="#94a3b8" stroke-width="2"/>
+  
+  <!-- Y-axis labels -->
+  <text x="130" y="370" font-family="Arial, sans-serif" font-size="14" text-anchor="end" fill="#64748b">50%</text>
+  <line x1="145" y1="375" x2="155" y2="375" stroke="#94a3b8" stroke-width="1"/>
+  
+  <text x="130" y="450" font-family="Arial, sans-serif" font-size="14" text-anchor="end" fill="#64748b">40%</text>
+  <line x1="145" y1="455" x2="155" y2="455" stroke="#94a3b8" stroke-width="1"/>
+  
+  <text x="130" y="530" font-family="Arial, sans-serif" font-size="14" text-anchor="end" fill="#64748b">30%</text>
+  <line x1="145" y1="535" x2="155" y2="535" stroke="#94a3b8" stroke-width="1"/>
+  
+  <text x="130" y="610" font-family="Arial, sans-serif" font-size="14" text-anchor="end" fill="#64748b">20%</text>
+  <line x1="145" y1="615" x2="155" y2="615" stroke="#94a3b8" stroke-width="1"/>
+  
+  <text x="130" y="680" font-family="Arial, sans-serif" font-size="14" text-anchor="end" fill="#64748b">0%</text>
+  
+  <!-- HRM Bar -->
+  <rect x="250" y="428" width="200" height="252" rx="8" fill="#3b82f6"/>
+  <text x="350" y="410" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#3b82f6">
+    40.3%
+  </text>
+  <text x="350" y="710" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    HRM (27M)
+  </text>
+  <text x="350" y="735" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">
+    🏆 第一名
+  </text>
+  
+  <!-- OpenAI Bar -->
+  <rect x="500" y="475" width="200" height="205" rx="8" fill="#10b981"/>
+  <text x="600" y="457" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#10b981">
+    34.5%
+  </text>
+  <text x="600" y="710" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    OpenAI o3-mini
+  </text>
+  <text x="600" y="735" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">
+    (更大模型)
+  </text>
+  
+  <!-- Claude Bar -->
+  <rect x="750" y="588" width="200" height="92" rx="8" fill="#f59e0b"/>
+  <text x="850" y="570" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#f59e0b">
+    21.2%
+  </text>
+  <text x="850" y="710" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    Claude 3.7 Sonnet
+  </text>
+  <text x="850" y="735" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">
+    (更大模型)
+  </text>
+  
+  <!-- Note -->
+  <text x="600" y="765" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748b">
+    * 在没有大规模预训练和数据极其有限的情况下取得
+  </text>
+</svg>

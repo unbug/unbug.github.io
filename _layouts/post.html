@@ -1,0 +1,128 @@
+---
+layout: default
+---
+{% assign author = site.authors[page.author] %}
+<progress aria-hidden="true" class="reading-progressbar js-reading-progressbar" max="100" value="0">
+	<div class="reading-progressbar__fallback js-reading-progressbar__fallback"></div>
+</progress>
+<div class="container">
+<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+		<div class="h-100 tofront">
+			<div class="row {% if page.image %} justify-content-between {% else %} justify-content-center {% endif %}">
+				<div class="{% if page.image %} col-md-6 {% else %} col-md-8 {% endif %} pr-0 pr-md-4 pt-4 pb-4 align-self-center">
+					<p class="text-uppercase font-weight-bold">
+                        <span class="catlist">
+						{% for category in page.categories %}
+                          <a class="sscroll text-danger" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category | downcase }}</a><span class="sep">, </span>
+                        {% endfor %}
+                        </span>
+					</p>
+					<h1 class="display-4 mb-4 article-headline">{{ page.title }}</h1>
+					<div class="d-flex align-items-center">
+                        {% if author.avatar %}
+                        <img class="rounded-circle" src="{{site.baseurl}}/assets/images/avatar1.jpg" alt="{{author.name}}" width="53"/>
+                        {% endif %}
+						<small class="ml-3">By {{ author.name }} <span><a target="_blank" href="{{ author.twitter }}" class="btn btn-outline-success btn-sm btn-round ml-1">Follow</a></span>
+                            <span class="text-muted d-block mt-1">{{ page.date | date: '%b %d, %Y' }} · {% include meta-read-time.html %}</span>
+						</small>
+					</div>
+					<!-- only datetime
+					<span class="text-muted d-block mt-1">{{ page.date | date: '%b %d, %Y' }} · {% include meta-read-time.html %}</span>
+					-->
+				</div>
+                {% if page.image %}
+				<div class="col-md-6 pr-0 align-self-center">
+					<img class="rounded" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+				</div>
+                {% endif %}
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div class="container-lg pt-4 pb-4 js-reading-content">
+	<div class="row justify-content-center">
+        
+        
+        <!-- Share -->
+		<div class="col-lg-2 pr-4 mb-4 col-md-12">
+			<div class="sticky-top sticky-top-offset text-center">
+				<div class="text-muted">
+					Share this
+				</div>
+				<div class="share d-inline-block">
+					<!-- AddToAny BEGIN -->
+					<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+						<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+						<a class="a2a_button_facebook"></a>
+						<a class="a2a_button_twitter"></a>
+					</div>
+					<script async src="https://static.addtoany.com/menu/page.js"></script>
+					<!-- AddToAny END -->
+				</div>
+			</div>
+		</div>
+        
+        
+		<div class="col-md-12 col-lg-8">
+            
+            <!-- Article -->
+			<article class="article-post">                
+			{{ content }}                
+			</article>
+			
+			<!-- Tags -->
+			<div class="mb-4">
+				<span class="taglist">
+				{% for tag in page.tags %}
+				{% if tag != "featured" and tag != "sticky"%}
+				  <a class="sscroll btn btn-light btn-sm btn-round font-weight-bold" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a>
+				{% endif %}
+				{% endfor %}
+				</span>
+			</div>
+
+			<!-- releated -->
+			<div class="mb-4">
+				{% include releated.html %}    
+			</div>
+
+			<!-- donate -->
+			{% include donate.html %}
+
+            <!-- Comments -->
+            {% if page.comments != false %}
+                {% include comments.html %}
+            {% endif %}
+            
+			
+		</div>
+        
+        
+	</div>
+</div>
+
+
+<!-- Aletbar Prev/Next -->
+<div class="alertbar">
+    <div class="container">
+        <div class="row prevnextlinks small font-weight-bold">
+          {% if page.previous.url %}
+            <div class="col-md-6 rightborder pl-0">
+                <a class="text-dark" href="{{ site.baseurl }}{{ page.previous.url }}">{% if page.previous.image %} <img height="30px" class="mr-1" src="{{site.baseurl}}/{{page.previous.image}}"> {% endif %} {{page.previous.title}}</a>
+            </div>
+          {% endif %}
+          {% if page.next.url %}
+            <div class="col-md-6 text-right pr-0">
+                <a class="text-dark" href="{{ site.baseurl }}{{ page.next.url }}"> {{page.next.title}} {% if page.next.image %} <img height="30px" class="ml-1" src="{{site.baseurl}}/{{page.next.image}}"> {% endif %}</a>
+            </div>
+          {% endif %}
+        </div>
+    </div>
+</div>
+
+<script src="{{ site.baseurl }}/assets/js/progress-bar.js"></script>

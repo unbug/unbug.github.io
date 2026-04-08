@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Glow effect -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Radial gradient for center -->
+    <radialGradient id="centerGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  
+  <!-- Grid pattern -->
+  <g opacity="0.15">
+    <path d="M0 315h1200M600 0v630" stroke="#6366f1" stroke-width="1"/>
+    <path d="M0 157h1200M0 472h1200M300 0v630M900 0v630" stroke="#6366f1" stroke-width="0.5"/>
+  </g>
+  
+  <!-- Center glow -->
+  <circle cx="600" cy="315" r="200" fill="url(#centerGrad)" opacity="0.6"/>
+  
+  <!-- Title -->
+  <text x="600" y="80" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#f1f5f9" text-anchor="middle">RWML</text>
+  <text x="600" y="120" font-family="Arial, sans-serif" font-size="24" fill="#94a3b8" text-anchor="middle">Reinforcement World Model Learning</text>
+  
+  <!-- LLM Brain -->
+  <g transform="translate(300, 315)">
+    <!-- Brain outline -->
+    <ellipse cx="0" cy="0" rx="90" ry="70" fill="none" stroke="#818cf8" stroke-width="3" filter="url(#glow)"/>
+    <!-- Neural connections -->
+    <path d="M-60 -30 Q-30 -50 0 -30 Q30 -10 60 -30" stroke="#a78bfa" stroke-width="2" fill="none"/>
+    <path d="M-60 0 Q-30 20 0 0 Q30 -20 60 0" stroke="#a78bfa" stroke-width="2" fill="none"/>
+    <path d="M-60 30 Q-30 50 0 30 Q30 10 60 30" stroke="#a78bfa" stroke-width="2" fill="none"/>
+    <!-- Nodes -->
+    <circle cx="-60" cy="-30" r="6" fill="#6366f1"/>
+    <circle cx="0" cy="-30" r="6" fill="#6366f1"/>
+    <circle cx="60" cy="-30" r="6" fill="#6366f1"/>
+    <circle cx="-60" cy="0" r="6" fill="#8b5cf6"/>
+    <circle cx="0" cy="0" r="8" fill="#f472b6"/>
+    <circle cx="60" cy="0" r="6" fill="#8b5cf6"/>
+    <circle cx="-60" cy="30" r="6" fill="#6366f1"/>
+    <circle cx="0" cy="30" r="6" fill="#6366f1"/>
+    <circle cx="60" cy="30" r="6" fill="#6366f1"/>
+    <!-- Label -->
+    <text x="0" y="110" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#e2e8f0" text-anchor="middle">LLM 智能体</text>
+  </g>
+  
+  <!-- World Model -->
+  <g transform="translate(600, 315)">
+    <!-- Crystal ball -->
+    <circle cx="0" cy="0" r="80" fill="none" stroke="#c084fc" stroke-width="4" filter="url(#glow)"/>
+    <circle cx="0" cy="0" r="65" fill="#1e1b4b" opacity="0.7"/>
+    <!-- Inner world -->
+    <circle cx="-20" cy="-15" r="8" fill="#60a5fa"/>
+    <circle cx="25" cy="-5" r="6" fill="#34d399"/>
+    <circle cx="-10" cy="25" r="10" fill="#fbbf24"/>
+    <path d="M-30 10 Q0 -20 30 10" stroke="#f472b6" stroke-width="2" fill="none"/>
+    <!-- Prediction waves -->
+    <circle cx="0" cy="0" r="95" fill="none" stroke="#a78bfa" stroke-width="1" opacity="0.5" stroke-dasharray="5,3"/>
+    <circle cx="0" cy="0" r="110" fill="none" stroke="#a78bfa" stroke-width="1" opacity="0.3" stroke-dasharray="5,3"/>
+    <!-- Label -->
+    <text x="0" y="125" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#e2e8f0" text-anchor="middle">世界模型</text>
+  </g>
+  
+  <!-- Future Prediction -->
+  <g transform="translate(900, 315)">
+    <!-- Crystal ball -->
+    <circle cx="0" cy="0" r="80" fill="none" stroke="#f59e0b" stroke-width="4" filter="url(#glow)"/>
+    <circle cx="0" cy="0" r="65" fill="#292524" opacity="0.7"/>
+    <!-- Future icon -->
+    <text x="0" y="10" font-family="Arial, sans-serif" font-size="48" text-anchor="middle" fill="#fbbf24">?</text>
+    <!-- Orbit lines -->
+    <ellipse cx="0" cy="0" rx="55" ry="30" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.6" transform="rotate(-20)"/>
+    <ellipse cx="0" cy="0" rx="55" ry="30" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.6" transform="rotate(20)"/>
+    <!-- Label -->
+    <text x="0" y="125" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#e2e8f0" text-anchor="middle">预测未来</text>
+  </g>
+  
+  <!-- Arrows -->
+  <g>
+    <!-- LLM → World Model -->
+    <defs>
+      <marker id="arrow1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M0 0 L10 5 L0 10 z" fill="#818cf8"/>
+      </marker>
+      <marker id="arrow2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M0 0 L10 5 L0 10 z" fill="#c084fc"/>
+      </marker>
+    </defs>
+    <path d="M420 315 L500 315" stroke="#818cf8" stroke-width="3" marker-end="url(#arrow1)"/>
+    <path d="M700 315 L780 315" stroke="#c084fc" stroke-width="3" marker-end="url(#arrow2)"/>
+  </g>
+  
+  <!-- Bottom text -->
+  <text x="600" y="570" font-family="Arial, sans-serif" font-size="16" fill="#94a3b8" text-anchor="middle">强化学习 · 自我监督 · 前瞻能力</text>
+  <text x="600" y="600" font-family="Arial, sans-serif" font-size="14" fill="#64748b" text-anchor="middle">Microsoft Research · 2026</text>
+  
+  <!-- Decorative particles -->
+  <g>
+    <circle cx="150" cy="150" r="3" fill="#60a5fa" opacity="0.7"/>
+    <circle cx="1050" cy="180" r="2" fill="#34d399" opacity="0.6"/>
+    <circle cx="200" cy="500" r="2" fill="#f472b6" opacity="0.7"/>
+    <circle cx="1000" cy="480" r="3" fill="#fbbf24" opacity="0.6"/>
+    <circle cx="100" cy="350" r="2" fill="#a78bfa" opacity="0.5"/>
+    <circle cx="1100" cy="300" r="2" fill="#818cf8" opacity="0.5"/>
+  </g>
+</svg>

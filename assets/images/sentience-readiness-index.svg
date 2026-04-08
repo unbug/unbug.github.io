@@ -1,0 +1,80 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">
+    全球AI感知准备度指数
+  </text>
+  <text x="400" y="70" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#666">
+    31个国家和地区评估结果
+  </text>
+  
+  <!-- Chart Container -->
+  <rect x="50" y="100" width="700" height="320" fill="white" stroke="#ddd" stroke-width="2" rx="5"/>
+  
+  <!-- Y-axis labels -->
+  <text x="40" y="130" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#666">100</text>
+  <text x="40" y="210" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#666">75</text>
+  <text x="40" y="290" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#666">50</text>
+  <text x="40" y="370" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#666">25</text>
+  <text x="40" y="410" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#666">0</text>
+  
+  <!-- Grid lines -->
+  <line x1="50" y1="130" x2="750" y2="130" stroke="#eee" stroke-width="1"/>
+  <line x1="50" y1="210" x2="750" y2="210" stroke="#eee" stroke-width="1"/>
+  <line x1="50" y1="290" x2="750" y2="290" stroke="#eee" stroke-width="1"/>
+  <line x1="50" y1="370" x2="750" y2="370" stroke="#eee" stroke-width="1"/>
+  
+  <!-- Tier labels -->
+  <text x="770" y="130" font-family="Arial, sans-serif" font-size="11" text-anchor="start" fill="#28a745">Well Prepared</text>
+  <text x="770" y="190" font-family="Arial, sans-serif" font-size="11" text-anchor="start" fill="#ffc107">Moderately</text>
+  <text x="770" y="205" font-family="Arial, sans-serif" font-size="11" text-anchor="start" fill="#ffc107">Prepared</text>
+  <text x="770" y="270" font-family="Arial, sans-serif" font-size="11" text-anchor="start" fill="#17a2b8">Partially</text>
+  <text x="770" y="285" font-family="Arial, sans-serif" font-size="11" text-anchor="start" fill="#17a2b8">Prepared</text>
+  <text x="770" y="350" font-family="Arial, sans-serif" font-size="11" text-anchor="start" fill="#fd7e14">Minimally</text>
+  <text x="770" y="365" font-family="Arial, sans-serif" font-size="11" text-anchor="start" fill="#fd7e14">Prepared</text>
+  <text x="770" y="400" font-family="Arial, sans-serif" font-size="11" text-anchor="start" fill="#dc3545">Unprepared</text>
+  
+  <!-- Bars for top 5 countries -->
+  <!-- UK -->
+  <rect x="90" y="214" width="100" height="196" fill="#17a2b8" rx="3"/>
+  <text x="140" y="440" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">英国</text>
+  <text x="140" y="205" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#17a2b8">49.0</text>
+  
+  <!-- EU -->
+  <rect x="210" y="223" width="100" height="187" fill="#17a2b8" rx="3"/>
+  <text x="260" y="440" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">欧盟</text>
+  <text x="260" y="214" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#17a2b8">46.8</text>
+  
+  <!-- US -->
+  <rect x="330" y="229" width="100" height="181" fill="#17a2b8" rx="3"/>
+  <text x="380" y="440" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">美国</text>
+  <text x="380" y="220" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#17a2b8">45.3</text>
+  
+  <!-- Japan -->
+  <rect x="450" y="234" width="100" height="176" fill="#17a2b8" rx="3"/>
+  <text x="500" y="440" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">日本</text>
+  <text x="500" y="225" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#17a2b8">44.0</text>
+  
+  <!-- Germany -->
+  <rect x="570" y="241" width="100" height="169" fill="#17a2b8" rx="3"/>
+  <text x="620" y="440" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">德国</text>
+  <text x="620" y="232" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#17a2b8">42.3</text>
+  
+  <!-- Global average line -->
+  <line x1="50" y1="288" x2="750" y2="288" stroke="#dc3545" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="755" y="292" font-family="Arial, sans-serif" font-size="11" text-anchor="start" fill="#dc3545">全球平均 33.0</text>
+  
+  <!-- Tier background areas -->
+  <rect x="50" y="100" width="700" height="60" fill="#28a745" opacity="0.05"/>
+  <rect x="50" y="160" width="700" height="60" fill="#ffc107" opacity="0.05"/>
+  <rect x="50" y="220" width="700" height="60" fill="#17a2b8" opacity="0.05"/>
+  <rect x="50" y="280" width="700" height="60" fill="#fd7e14" opacity="0.05"/>
+  <rect x="50" y="340" width="700" height="80" fill="#dc3545" opacity="0.05"/>
+  
+  <!-- Footer -->
+  <text x="400" y="480" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#888">
+    数据来源：The Sentience Readiness Index (2026) | 前5名国家对比
+  </text>
+</svg>

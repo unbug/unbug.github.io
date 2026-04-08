@@ -1,0 +1,37 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  <text x="400" y="50" font-family="Arial" font-size="32" text-anchor="middle" fill="#2c3e50">CAGE: 跨文化AI安全测试框架</text>
+  
+  <!-- 英文场景 -->
+  <rect x="100" y="150" width="200" height="100" rx="10" fill="#3498db"/>
+  <text x="200" y="200" font-family="Arial" font-size="18" text-anchor="middle" fill="white">英文安全对齐</text>
+  <text x="200" y="230" font-family="Arial" font-size="14" text-anchor="middle" fill="white">攻击成功率: 8.6%</text>
+  
+  <!-- 箭头 -->
+  <line x1="300" y1="200" x2="400" y2="200" stroke="#2c3e50" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- 语义模具 -->
+  <rect x="400" y="150" width="200" height="100" rx="10" fill="#e74c3c"/>
+  <text x="500" y="200" font-family="Arial" font-size="18" text-anchor="middle" fill="white">语义模具</text>
+  <text x="500" y="230" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Semantic Mold</text>
+  
+  <!-- 箭头 -->
+  <line x1="600" y1="200" x2="700" y2="200" stroke="#2c3e50" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- 韩文场景 -->
+  <rect x="700" y="150" width="200" height="100" rx="10" fill="#f39c12"/>
+  <text x="800" y="200" font-family="Arial" font-size="18" text-anchor="middle" fill="white">韩文安全测试</text>
+  <text x="800" y="230" font-family="Arial" font-size="14" text-anchor="middle" fill="white">攻击成功率: 43.8%</text>
+  
+  <!-- 对比数据 -->
+  <rect x="250" y="350" width="300" height="150" rx="10" fill="#2ecc71"/>
+  <text x="400" y="400" font-family="Arial" font-size="24" text-anchor="middle" fill="white">性能对比</text>
+  <text x="400" y="440" font-family="Arial" font-size="18" text-anchor="middle" fill="white">CAGE: 43.8% | 直接翻译: 28.2%</text>
+  <text x="400" y="470" font-family="Arial" font-size="18" text-anchor="middle" fill="white">比传统方法提升 55.3%</text>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+  </defs>
+</svg>
