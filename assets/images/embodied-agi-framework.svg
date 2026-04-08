@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#06B6C4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34D399;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1200" height="800" fill="#FAFAFA"/>
+  
+  <!-- 标题 -->
+  <text x="600" y="60" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#1F2937">
+    具身 AGI 五阶段演化框架 (L1-L5)
+  </text>
+  
+  <!-- L1: LLM 驱动的机器人 -->
+  <g transform="translate(80, 120)">
+    <rect width="220" height="180" rx="10" fill="#E0E7FF" stroke="#4F46E5" stroke-width="3"/>
+    <text x="110" y="40" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#312E81">
+      L1 阶段
+    </text>
+    <text x="110" y="65" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#1F2937">
+      LLM 驱动的机器人
+    </text>
+    <circle cx="110" cy="100" r="30" fill="url(#grad1)"/>
+    <text x="110" y="105" font-family="Arial" font-size="14" fill="white" text-anchor="middle">LLM</text>
+    <text x="110" y="145" font-family="Arial" font-size="12" text-anchor="middle" fill="#374151">
+      任务理解 + 预设规则
+    </text>
+    <text x="110" y="165" font-family="Arial" font-size="11" text-anchor="middle" fill="#6B7280">
+      依赖预编程环境模型
+    </text>
+  </g>
+  
+  <!-- L2: 端到端学习 -->
+  <g transform="translate(330, 120)">
+    <rect width="220" height="180" rx="10" fill="#E0F2FE" stroke="#06B6C4" stroke-width="3"/>
+    <text x="110" y="40" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#083344">
+      L2 阶段
+    </text>
+    <text x="110" y="65" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#1F2937">
+      端到端学习
+    </text>
+    <circle cx="110" cy="100" r="30" fill="url(#grad2)"/>
+    <text x="110" y="105" font-family="Arial" font-size="14" fill="white" text-anchor="middle">DL</text>
+    <text x="110" y="145" font-family="Arial" font-size="12" text-anchor="middle" fill="#374151">
+      数据驱动感知 - 动作
+    </text>
+    <text x="110" y="165" font-family="Arial" font-size="11" text-anchor="middle" fill="#6B7280">
+      特定场景有限泛化
+    </text>
+  </g>
+  
+  <!-- L3: 世界模型驱动 -->
+  <g transform="translate(580, 120)">
+    <rect width="220" height="180" rx="10" fill="#ECFDF5" stroke="#10B981" stroke-width="3"/>
+    <text x="110" y="40" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#064E3B">
+      L3 阶段
+    </text>
+    <text x="110" y="65" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#1F2937">
+      世界模型驱动
+    </text>
+    <circle cx="110" cy="100" r="30" fill="url(#grad3)"/>
+    <text x="110" y="105" font-family="Arial" font-size="14" fill="white" text-anchor="middle">WM</text>
+    <text x="110" y="145" font-family="Arial" font-size="12" text-anchor="middle" fill="#374151">
+      环境预测与模拟
+    </text>
+    <text x="110" y="165" font-family="Arial" font-size="11" text-anchor="middle" fill="#6B7280">
+      主动规划能力
+    </text>
+  </g>
+  
+  <!-- L4: 持续学习 -->
+  <g transform="translate(80, 350)">
+    <rect width="220" height="180" rx="10" fill="#FFFBEB" stroke="#F59E0B" stroke-width="3"/>
+    <text x="110" y="40" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#78350F">
+      L4 阶段
+    </text>
+    <text x="110" y="65" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#1F2937">
+      持续学习自适应
+    </text>
+    <circle cx="110" cy="100" r="30" fill="#F59E0B"/>
+    <text x="110" y="105" font-family="Arial" font-size="14" fill="white" text-anchor="middle">CL</text>
+    <text x="110" y="145" font-family="Arial" font-size="12" text-anchor="middle" fill="#374151">
+      持续经验积累
+    </text>
+    <text x="110" y="165" font-family="Arial" font-size="11" text-anchor="middle" fill="#6B7280">
+      开放环境适应
+    </text>
+  </g>
+  
+  <!-- L5: 真正的具身 AGI -->
+  <g transform="translate(330, 350)">
+    <rect width="220" height="180" rx="10" fill="#F3E8FF" stroke="#9333EA" stroke-width="3"/>
+    <text x="110" y="40" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#581C87">
+      L5 阶段
+    </text>
+    <text x="110" y="65" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#1F2937">
+      真正的具身 AGI
+    </text>
+    <circle cx="110" cy="100" r="30" fill="url(#grad1)"/>
+    <text x="110" y="105" font-family="Arial" font-size="14" fill="white" text-anchor="middle">AGI</text>
+    <text x="110" y="145" font-family="Arial" font-size="12" text-anchor="middle" fill="#374151">
+      通用智能体
+    </text>
+    <text x="110" y="165" font-family="Arial" font-size="11" text-anchor="middle" fill="#6B7280">
+      完全自主
+    </text>
+  </g>
+  
+  <!-- 图例说明 -->
+  <rect x="580" y="300" width="550" height="240" rx="10" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="600" y="335" font-family="Arial" font-size="16" font-weight="bold" fill="#1F2937">
+    关键技术特征：
+  </text>
+  
+  <text x="600" y="370" font-family="Arial" font-size="13" fill="#374151">
+    • L1: 大语言模型认知 + 传统控制规则
+  </text>
+  <text x="600" y="395" font-family="Arial" font-size="13" fill="#374151">
+    • L2: 深度强化学习端到端映射
+  </text>
+  <text x="600" y="420" font-family="Arial" font-size="13" fill="#374151">
+    • L3: 世界模型与物理环境预测
+  </text>
+  <text x="600" y="445" font-family="Arial" font-size="13" fill="#374151">
+    • L4: 终身学习持续适应新场景
+  </text>
+  <text x="600" y="470" font-family="Arial" font-size="13" fill="#374151">
+    • L5: 真正的通用智能，完全自主
+  </text>
+  
+  <text x="600" y="505" font-family="Arial" font-size="13" fill="#374151">
+    核心范式转变：训练 - 部署 → 终身学习
+  </text>
+  
+  <!-- 底部标注 -->
+  <text x="600" y="560" font-family="Arial" font-size="11" text-anchor="middle" fill="#6B7280">
+    来源：Wang &amp; Sun (2025) arXiv:2505.14235
+  </text>
+</svg>
