@@ -1,4 +1,11 @@
-# 一分钟读论文："五大层次框架：AI 治理的实操路径"
+---
+layout: post
+title:  "一分钟读论文：《五大层次框架：AI 治理的实操路径》"
+author: unbug
+categories: [AI Governance, AI Policy, Enterprise Compliance]
+image: assets/images/five-layer-governance-pyramid.svg
+tags: [AI Governance, AI Ethics, SpringerNature, GovernanceFramework]
+---
 
 ## 核心发现
 
@@ -539,8 +546,8 @@ DOI: https://doi.org/10.1007/s43681-024-00642-z
 
 ---
 
-标签：#AI 治理 #AIethics #SpringerNature #GovernanceFramework #实施路径 #五层次模型
+标签：#AI Governance #AI Ethics #SpringerNature #GovernanceFramework
 
-分类：AI 治理、AI 政策、企业合规
+分类：AI Governance, AI Policy, Enterprise Compliance
 
 文章类型：论文深度解读 + 实施指南
