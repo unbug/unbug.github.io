@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGradient)" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" font-size="24" font-weight="bold" fill="#212529">
+    五层次 AI 治理框架
+  </text>
+  <text x="400" y="75" text-anchor="middle" font-size="16" fill="#6c757d">
+    A Five-Layer Framework for AI Governance
+  </text>
+  
+  <!-- Level 1: Regulatory Mandates -->
+  <rect x="200" y="100" width="400" height="80" fill="#ffffff" stroke="#333" stroke-width="2" rx="8" ry="8"/>
+  <rect x="200" y="100" width="400" height="8" fill="#e74c3c" rx="8" ry="8"/>
+  <text x="400" y="145" text-anchor="middle" font-size="18" font-weight="bold" fill="#212529">
+    Level 1: Regulatory Mandates
+  </text>
+  <text x="400" y="170" text-anchor="middle" font-size="14" fill="#495057">
+    监管指令：政府/立法机构要求
+  </text>
+  
+  <!-- Level 2: Standards -->
+  <rect x="230" y="190" width="340" height="80" fill="#ffffff" stroke="#333" stroke-width="2" rx="8" ry="8"/>
+  <rect x="230" y="190" width="340" height="8" fill="#3498db" rx="8" ry="8"/>
+  <text x="400" y="235" text-anchor="middle" font-size="18" font-weight="bold" fill="#212529">
+    Level 2: Standards
+  </text>
+  <text x="400" y="260" text-anchor="middle" font-size="14" fill="#495057">
+    标准：行业最佳实践和技术规范
+  </text>
+  
+  <!-- Level 3: Assessment Methodologies -->
+  <rect x="260" y="280" width="280" height="80" fill="#ffffff" stroke="#333" stroke-width="2" rx="8" ry="8"/>
+  <rect x="260" y="280" width="280" height="8" fill="#2ecc71" rx="8" ry="8"/>
+  <text x="400" y="325" text-anchor="middle" font-size="18" font-weight="bold" fill="#212529">
+    Level 3: Assessment Methodologies
+  </text>
+  <text x="400" y="350" text-anchor="middle" font-size="14" fill="#495057">
+    评估方法：如何检验和衡量
+  </text>
+  
+  <!-- Level 4: Certification Processes -->
+  <rect x="290" y="370" width="220" height="80" fill="#ffffff" stroke="#333" stroke-width="2" rx="8" ry="8"/>
+  <rect x="290" y="370" width="220" height="8" fill="#f39c12" rx="8" ry="8"/>
+  <text x="400" y="415" text-anchor="middle" font-size="18" font-weight="bold" fill="#212529">
+    Level 4: Certification Processes
+  </text>
+  <text x="400" y="440" text-anchor="middle" font-size="14" fill="#495057">
+    认证流程：第三方验证和合规证明
+  </text>
+  
+  <!-- Level 5: Governance Practices -->
+  <rect x="320" y="460" width="160" height="80" fill="#ffffff" stroke="#333" stroke-width="2" rx="8" ry="8"/>
+  <rect x="320" y="460" width="160" height="8" fill="#9b59b6" rx="8" ry="8"/>
+  <text x="400" y="505" text-anchor="middle" font-size="18" font-weight="bold" fill="#212529">
+    Level 5: Governance Practices
+  </text>
+  <text x="400" y="530" text-anchor="middle" font-size="14" fill="#495057">
+    治理实践：组织日常治理行动
+  </text>
+  
+  <!-- Arrow indicators -->
+  <polygon points="400,180 395,190 405,190" fill="#666"/>
+  <polygon points="400,270 395,280 405,280" fill="#666"/>
+  <polygon points="400,360 395,370 405,370" fill="#666"/>
+  <polygon points="400,450 395,460 405,460" fill="#666"/>
+  
+  <!-- Legend -->
+  <text x="400" y="570" text-anchor="middle" font-size="12" fill="#6c757d">
+    从监管指令到日常实践的层级递进
+  </text>
+</svg>
