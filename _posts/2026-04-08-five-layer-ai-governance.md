@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 一分钟读论文："五大层次框架：AI 治理的实操路径"
-date: 2026-04-08 10:00:00 +0800
+date: 2026-04-08 11:00:00 +0800
 description: AI and Ethics 论文解读 - 五层次 AI 治理框架的系统性实施指南
 author: Unbug
 categories: AI 治理，AI 政策，企业合规
