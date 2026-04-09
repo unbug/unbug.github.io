@@ -2,9 +2,7 @@ name: pages-build-deployment
 
 on:
   push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 defaults:
   run:
