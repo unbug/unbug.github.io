@@ -1,12 +1,11 @@
 ---
-title: 从生成到智能：Agentic AI 的范式转变与演进路径
 layout: post
-date: 2026-04-09 19:00:00 +0800
-categories: ai research
-tags: ai agent generative-ai
-author: Micropaper Team
-description: 当前市场普遍混淆 GenAI 和 Agentic AI 的概念，本文系统梳理两者的本质区别和演进路径。
+title:  "从生成到智能：Agentic AI 的范式转变与演进路径"
+author: unbug
+categories: [AI Research, AI Agents, GenAI]
 image: assets/images/generative-agentic-ai-paradigm-shift.svg
+tags: [AgenticAI, GenAI, AI, LLM, AutonomousAgents]
+description: 当前市场普遍混淆 GenAI 和 Agentic AI 的概念，本文系统梳理两者的本质区别和演进路径。
 ---
 
 你有没有这样的困惑：用 AI 写代码时，它能生成完美的函数，但无法帮你完成整个项目的搭建；用 AI 写作时，它能生成流畅的文章，但不能自主完成市场调研和数据分析。这种**能力边界**的模糊感，正是当前 GenAI 和 Agentic AI 概念混淆的典型表现。
