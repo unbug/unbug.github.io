@@ -1,13 +1,17 @@
 ---
 layout: post
+title:  "一分钟读论文：《AI原生粒子加速器：让大型科学设施学会自动驾驶》"
 author: unbug
-title: "一分钟读论文：《AI原生粒子加速器：让大型科学设施学会自动驾驶》"
-date: 2026-03-01 08:00:00 +0800
 categories: [AI]
 tags: [AI, 粒子加速器, 自动驾驶, 科学设施]
 image: assets/images/2026-03-01-ai-native-particle-accelerator.png
 ---
-image: assets/images/2026-03-01-ai-native-particle-accelerator.png
+
+layout: post
+author: unbug
+title: "一分钟读论文：《AI原生粒子加速器：让大型科学设施学会自动驾驶》"
+categories: [AI]
+tags: [AI, 粒子加速器, 自动驾驶, 科学设施]
 ---
 
 # AI原生粒子加速器：让大型科学设施学会"自动驾驶"

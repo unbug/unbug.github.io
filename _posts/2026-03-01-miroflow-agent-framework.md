@@ -1,11 +1,17 @@
 ---
 layout: post
+title:  "一分钟读论文：《MiroFlow：面向深度研究任务的高性能开源智能体框架》"
 author: unbug
-title: "一分钟读论文：《MiroFlow：面向深度研究任务的高性能开源智能体框架》"
-date: 2026-03-01 18:00:00 +0800
 categories: [AI]
 tags: [AI Agents, Deep Research, Framework]
 image: assets/images/2026-03-01-miroflow-agent-framework.svg
+---
+
+layout: post
+author: unbug
+title: "一分钟读论文：《MiroFlow：面向深度研究任务的高性能开源智能体框架》"
+categories: [AI]
+tags: [AI Agents, Deep Research, Framework]
 ---
 
 ![MiroFlow 智能体框架](assets/images/2026-03-01-miroflow-agent-framework.svg)

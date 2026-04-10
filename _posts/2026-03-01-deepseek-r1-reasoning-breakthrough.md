@@ -1,10 +1,16 @@
 ---
 layout: post
+title:  "一分钟读论文：《DeepSeek-R1：用纯强化学习解锁大语言模型的推理能力》"
+author: unbug
+categories: [AI]
+tags: [DeepSeek, 强化学习, 推理, Nature]
+image: assets/images/deepseek-r1-reasoning.svg
+---
+
+layout: post
 author: unbug
 title: "一分钟读论文：《DeepSeek-R1：用纯强化学习解锁大语言模型的推理能力》"
-date: 2026-03-01 04:17:00 +0800
 categories: [AI]
-image: assets/images/deepseek-r1-reasoning.svg
 
 tags: [DeepSeek, 强化学习, 推理, Nature]
 ---

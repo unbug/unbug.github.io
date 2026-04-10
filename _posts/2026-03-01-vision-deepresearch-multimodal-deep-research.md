@@ -1,11 +1,17 @@
 ---
 layout: post
+title:  "一分钟读论文：《Vision-DeepResearch：首个长时序多模态深度研究模型，8B 参数干翻 GPT-5》"
 author: unbug
-title: "一分钟读论文：《Vision-DeepResearch：首个长时序多模态深度研究模型，8B 参数干翻 GPT-5》"
-date: 2026-03-01 01:50:00 +0800
 categories: [research, multimodal]
 tags: [deep-research, vision-language, mllm, ai]
 image: assets/images/vision-deepresearch-architecture.svg
+---
+
+layout: post
+author: unbug
+title: "一分钟读论文：《Vision-DeepResearch：首个长时序多模态深度研究模型，8B 参数干翻 GPT-5》"
+categories: [research, multimodal]
+tags: [deep-research, vision-language, mllm, ai]
 ---
 
 ![Vision-DeepResearch 架构图](assets/images/vision-deepresearch-architecture.svg)
