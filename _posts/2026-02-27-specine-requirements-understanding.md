@@ -1,5 +1,5 @@
 ---
-title: "一分钟读论文：《Specine：让大语言模型真正"读懂"你的需求》"
+title: "一分钟读论文：《Specine：让大语言模型真正“读懂”你的需求》"
 author: unbug
 categories: [AI, 软件工程]
 tags: [featured, 代码生成, ICSE 2026, 需求工程]

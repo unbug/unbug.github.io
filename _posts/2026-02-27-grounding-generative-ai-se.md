@@ -1,5 +1,5 @@
 ---
-title: "一分钟读论文：《从"能用"到"好用"：让AI真正学会软件工程》"
+title: "一分钟读论文：《从“能用”到“好用”：让AI真正学会软件工程》"
 author: unbug
 categories: [AI, 软件工程]
 tags: [featured, 软件工程, SANER 2026, AI代码生成, 收官之作]
