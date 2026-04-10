@@ -7,7 +7,6 @@ image: assets/images/five-layer-governance-pyramid.svg
 tags: [AI Governance, AI Ethics, SpringerNature, GovernanceFramework]
 ---
 
-## 核心发现
 
 2025 年 arXiv 论文 arXiv:2509.11332 提出了五层次 AI 治理框架，系统解决了从抽象原则到具体实践的"执行鸿沟"问题。
 

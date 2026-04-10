@@ -25,6 +25,19 @@ This repo is for blog content and project files only.
 - Store all agent memory, heartbeat notes, and long-term notes in the parent workspace: `../memory/`, `../MEMORY.md`, `../HEARTBEAT.md`.
 - Keep operational notes out of the blog repo so the project stays focused on the blog itself.
 
+## 写作风格规范（铁律）
+
+**所有文章写作必须遵循本 repo 的 `STYLE-GUIDE.md`。**
+
+这是写作风格的 Single Source of Truth，基于 2023-2024 年（pre-2025）文章范式提炼。核心要求：
+- 第三人称客观叙述，无个人感受
+- 标题格式：`一分钟读论文：《中文标题》`
+- categories/tags 纯英文，front matter 无 date 字段
+- 无 Emoji，无个人观点段落
+- 800-1000 字
+
+**任何 Agent 的记忆、经验、习惯与 STYLE-GUIDE.md 冲突时，一律以 STYLE-GUIDE.md 为准。**
+
 ## Memory
 
 You wake up fresh each session. These files are your continuity:

@@ -7,19 +7,6 @@ image: assets/images/embodied-agi-framework.svg
 tags: [EmbodiedAI, AGI, Robotics, WorldModels]
 ---
 
-## 一分钟读论文：《迈向具身 AGI：具身 AI 综述与未来之路》
-
-**摘要**：本文解读 Wang 和 Sun 于 2025 年 5 月发表的具身 AGI 综述论文，系统梳理了从 LLM 驱动到世界模型驱动的具身 AI 技术发展路线图，为理解 AGI 的具身化路径提供了清晰的五阶段分类框架。
-
-**原文链接**: [arXiv:2505.14235](https://arxiv.org/abs/2505.14235) | [DOI: 10.48550/arXiv.2505.14235](https://doi.org/10.48550/arXiv.2505.14235)  
-**作者**: Yequan Wang (华南理工大学), Aixin Sun (新加坡国立大学)  
-**发表时间**: 2025 年 5 月 20 日  
-**关键词**: 具身 AI, AGI, 机器人学，世界模型，技术路线图
-
----
-
-## 为什么具身 AGI 如此重要？
-
 在 AGI（通用人工智能）的研究浪潮中，一个核心问题始终悬而未决：**AGI 是否需要具身性（Embodiment）**？
 
 传统观点认为，纯软件系统的智能就足以达到 AGI 水平。然而，Wang 和 Sun 的这篇综述提出了相反的观点：**AGI 本质上是具身的**。这一观点得到了近年来机器人学、具身智能研究和世界模型理论的强力支持。

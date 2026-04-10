@@ -5,6 +5,8 @@
 > **不要先读 AGENTS.md** —— 所有关键信息都在这里！
 >
 > **记忆文件一律放在父级 workspace，不要放在这个 repo 里！**
+>
+> **写作风格一律遵循 `STYLE-GUIDE.md`，Agent 记忆不得覆盖它！**
 
 ---
 
@@ -22,9 +24,10 @@
 ## 2. 职责分工（绝对不能混淆！违者重罚！）
 
 ### CEO (agent=main)
-- ✅ **只做**：战略决策、任务派发、复盘组织
+- ✅ **做**：战略决策、任务派发、**范式审核**、复盘组织
+- ✅ **范式审核**：编辑完成后，CEO 对照 `STYLE-GUIDE.md` 逐项审核文章，合格才交给发布者
 - ❌ **绝不做**：写论文、配图、git 提交等执行层工作
-- **肌肉记忆**：CEO 是指挥官，不是士兵！
+- **肌肉记忆**：CEO 是质量守门人 + 指挥官！审核不过 → 退回编辑！
 
 ### 研究员 (agent=researcher)
 - ✅ **做**：找论文、写初稿
@@ -36,7 +39,7 @@
 - ✅ **做**：润色文章、生成配图
 - ✅ **只生成**：SVG 格式（不需要转 PNG！）
 - ❌ **不做**：找论文、git 提交
-- **肌肉记忆**：配图路径要正确！
+- **肌肉记忆**：写完交 CEO 审核，不是直接交发布者！
 
 ### 发布者 (agent=publisher)
 - ✅ **做**：git 提交、发布上线
@@ -49,15 +52,17 @@
 ## 3. 流程状态机（必须严格遵守！）
 
 ```
-IDLE → 研究员 → 编辑 → 发布者 → 复盘 → 确认 → IDLE
-  ↑                                                      ↓
-  └──────────────────────────────────────────────────────┘
+IDLE → 研究员 → 编辑 → CEO审核 → 发布者 → 复盘 → 确认 → IDLE
+  ↑                       ↑                                    ↓
+  │                       └── 不合格退回 ──┘                   │
+  └────────────────────────────────────────────────────────────┘
 ```
 
 ### 状态说明
 - **IDLE**：空闲，等待心跳
 - **RESEARCHER**：研究员找论文、写初稿
 - **EDITOR**：编辑润色、配图
+- **CEO_REVIEW**：CEO 对照 STYLE-GUIDE.md 审核文章范式，不合格退回 EDITOR
 - **PUBLISHER**：发布者 git 提交、发布
 - **REVIEW**：复盘，保存到 `../memory/YYYY-MM-DD-micropaper-review.md`
 - **CONFIRM**：确认，保存到 `../memory/YYYY-MM-DD-micropaper-confirmations.md`
@@ -84,7 +89,7 @@ IDLE → 研究员 → 编辑 → 发布者 → 复盘 → 确认 → IDLE
   - frontmatter 的 image 字段：`assets/images/xxx.svg`（相对路径）
   - 正文中的图片：`![标题](/assets/images/xxx.svg)`（绝对路径）
 - [ ] 4.2.5 在文章中插入配图引用
-- [ ] 4.2.6 更新 `micropaper-state-v2.json`，设置 `currentPhase: "publisher"`
+- [ ] 4.2.6 更新 `micropaper-state-v2.json`，设置 `currentPhase: "ceo_review"`
 
 ### 4.3 发布者阶段检查清单
 
