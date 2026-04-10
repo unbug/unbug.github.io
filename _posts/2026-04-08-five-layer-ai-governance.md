@@ -58,13 +58,13 @@ tags: [AI Governance, AI Ethics, SpringerNature, GovernanceFramework]
 
 ![五层次治理框架](assets/images/five-layer-governance-pyramid.svg)
 
-Level 1: Regulatory Mandates (监管指令) - 政府/立法机构要求
-Level 2: Standards (标准) - 行业最佳实践和技术规范
-Level 3: Assessment Methodologies (评估方法) - 如何检验和衡量
-Level 4: Certification Processes (认证流程) - 第三方验证和合规证明
-Level 5: Governance Practices (治理实践) - 组织日常治理行动
+第一层：监管指令（Regulatory Mandates）- 政府/立法机构要求
+第二层：标准（Standards）- 行业最佳实践和技术规范
+第三层：评估方法（Assessment Methodologies）- 如何检验和衡量
+第四层：认证流程（Certification Processes）- 第三方验证和合规证明
+第五层：治理实践（Governance Practices）- 组织日常治理行动
 
-### Level 1: Regulatory Mandates（监管指令）
+### 第一层：监管指令（Regulatory Mandates）
 
 内容：政府、监管机构或行业监管机构发布的强制性要求
 
@@ -87,7 +87,7 @@ Level 5: Governance Practices (治理实践) - 组织日常治理行动
 
 ---
 
-### Level 2: Standards（标准）
+### 第二层：标准（Standards）
 
 内容：行业标准、技术规范、最佳实践框架
 
@@ -112,7 +112,7 @@ Level 5: Governance Practices (治理实践) - 组织日常治理行动
 
 ---
 
-### Level 3: Assessment Methodologies（评估方法）
+### 第三层：评估方法（Assessment Methodologies）
 
 内容：系统性评估 AI 系统合规性的方法和工具
 
@@ -139,7 +139,7 @@ Level 5: Governance Practices (治理实践) - 组织日常治理行动
 
 ---
 
-### Level 4: Certification Processes（认证流程）
+### 第四层：认证流程（Certification Processes）
 
 内容：第三方验证和合规证明的机制
 
@@ -166,7 +166,7 @@ Level 5: Governance Practices (治理实践) - 组织日常治理行动
 
 ---
 
-### Level 5: Governance Practices（治理实践）
+### 第五层：治理实践（Governance Practices）
 
 内容：组织日常运营中的具体治理行动
 
@@ -292,7 +292,7 @@ Level 5: Governance Practices (治理实践) - 组织日常治理行动
 
 论文基于案例研究，识别了以下常见实施失败点：
 
-### 1. "checkbox"心态
+### 1. "打勾式合规"心态
 
 表现：仅将治理视为合规检查项，而非实质性改进
 

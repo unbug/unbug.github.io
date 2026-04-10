@@ -1,10 +1,10 @@
 ---
-paper-source: https://www.rand.org/pubs/research_reports/RRA3034-2.html
-title: 一分钟读论文：《驾驭 AGI 时代：8 种未来国运情景》
-date: 2026-04-07
-tags: [AGI, 国运，地缘政治，情景分析]
-categories: [AI 治理，论文解读]
+layout: post
+title:  "一分钟读论文：《驾驭 AGI 时代：8 种未来国运情景》"
+author: unbug
+categories: [AI 治理, 论文解读]
 image: assets/images/agi-nations-future-scenarios.svg
+tags: [AGI, 国运, 地缘政治, 情景分析]
 ---
 
 <div style="text-align: center; margin: 20px 0;">

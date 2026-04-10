@@ -1,10 +1,10 @@
 ---
-paper-source: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5343797
-title: 一分钟读论文：《AI 治理 2026：三大新兴趋势》
-date: 2026-04-01
-tags: [AI 治理，去中心化，社会影响，透明度]
-categories: [AI 治理，论文解读]
+layout: post
+title:  "一分钟读论文：《AI 治理 2026：三大新兴趋势》"
+author: unbug
+categories: [AI 治理, 论文解读]
 image: assets/images/ai-governance-2026.svg
+tags: [AI 治理, 去中心化, 社会影响, 透明度]
 ---
 
 ## 场景引入

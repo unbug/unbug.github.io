@@ -2,10 +2,9 @@
 layout: post
 title:  "一分钟读论文：《AI 科学家：科学未来由 AI 自主发现》"
 author: unbug
-date: 2026-04-06 15:00:00 +0800
-categories: [AI 研究，论文解读]
-tags: [AI, 科学研究，自动化，Nature]
+categories: [AI 研究, 论文解读]
 image: assets/images/ai-scientist-autonomous-discovery.svg
+tags: [AI, 科学研究, 自动化, Nature]
 ---
 
 伦敦国王学院 2026 年 4 月研究揭示：AI 正从科研工具转变为**自主发现者**，可能在未来彻底改变科学探索方式：
@@ -28,7 +27,7 @@ image: assets/images/ai-scientist-autonomous-discovery.svg
 - **数据分析**：解读实验结果，提出新假设
 - **论文撰写**：完成从构思到发表的全流程
 
-### **典型案例：AI Scientist**
+### **典型案例：AI 科学家系统**
 Nature 2026 年 3 月 25 日发布的"AI Scientist"系统展现了令人惊讶的能力：
 1. **提出新假设**：基于现有知识库，生成原创性科学假设
 2. **设计实验**：规划具体实验流程，包括所需设备和步骤

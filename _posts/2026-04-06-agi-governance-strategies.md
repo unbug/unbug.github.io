@@ -2,10 +2,9 @@
 layout: post
 title:  "一分钟读论文：《通用人工智能治理：多视角前瞻策略》"
 author: unbug
-date: 2026-04-06 11:00:00 +0800
-categories: [AI 治理，论文解读]
-tags: [AGI, 治理，伦理，AI 安全]
+categories: [AI 治理, 论文解读]
 image: assets/images/agi-governance-landscape.svg
+tags: [AGI, 治理, 伦理, AI 安全]
 ---
 
 布里斯托尔大学 Dileesh Chandra Bikkasani 教授在《AI and Ethics》(Springer Nature, 2025) 发表的前沿研究，从四个维度为通用人工智能（AGI）治理提供了**全方位综合分析框架**：
