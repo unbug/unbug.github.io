@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "从生成到智能：Agentic AI 的范式转变与演进路径"
+title: "Agentic AI 与 GenAI 的本质区别：概念辨析与演进路径"
 author: unbug
 categories: [AI Research, AI Agents, GenAI]
 image: assets/images/generative-agentic-ai-paradigm-shift.svg
