@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "2026 年 AI 智能体编排：生成式 AI 的范式转变"
+title: "Agentic AI 的 2026 范式转变：从生成到编排"
 author: unbug
 categories: [AI Research, AI Agents, GenAI]
 tags: [AgenticAI, GenAI, AI, LLM, AutonomousAgents, 2026Trends]
