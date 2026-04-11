@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="dangerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGradient)"/>
+  
+  <!-- Title Background -->
+  <rect x="50" y="40" width="700" height="80" fill="#34495e" rx="10"/>
+  <text x="400" y="90" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle">AI Agent Traps</text>
+  <text x="400" y="120" font-family="Arial, sans-serif" font-size="18" fill="#ecf0f1" text-anchor="middle">6 Attack Vectors Identified</text>
+  
+  <!-- Shield Icon -->
+  <g transform="translate(650, 60)">
+    <path d="M50 0 C30 0 10 15 10 40 C10 70 40 100 50 110 C60 100 90 70 90 40 C90 15 70 0 50 0z" fill="url(#shieldGradient)" stroke="#1a5276" stroke-width="2"/>
+    <text x="50" y="65" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">AI</text>
+  </g>
+  
+  <!-- Attack Vectors Grid -->
+  <g transform="translate(50, 160)">
+    <!-- Attack 1 -->
+    <rect x="0" y="0" width="360" height="110" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2" rx="8"/>
+    <text x="20" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">1. Content Injection</text>
+    <text x="20" y="60" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">Hidden HTML instructions</text>
+    <text x="20" y="80" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">visible to AI but not humans</text>
+    
+    <!-- Attack 2 -->
+    <rect x="380" y="0" width="360" height="110" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2" rx="8"/>
+    <text x="400" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">2. Semantic Manipulation</text>
+    <text x="400" y="60" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">Twisting AI semantic understanding</text>
+    <text x="400" y="80" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">to influence judgment</text>
+    
+    <!-- Attack 3 -->
+    <rect x="0" y="120" width="360" height="110" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2" rx="8"/>
+    <text x="20" y="155" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">3. Cognitive Poisoning</text>
+    <text x="20" y="180" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">Polluting AI memory and context</text>
+    <text x="20" y="200" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">during interactions</text>
+    
+    <!-- Attack 4 -->
+    <rect x="380" y="120" width="360" height="110" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2" rx="8"/>
+    <text x="400" y="155" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">4. Behavioral Control</text>
+    <text x="400" y="180" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">Direct manipulation of outputs</text>
+    <text x="400" y="200" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">executing attacker commands</text>
+    
+    <!-- Attack 5 -->
+    <rect x="0" y="240" width="360" height="110" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2" rx="8"/>
+    <text x="20" y="275" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">5. Systemic Traps</text>
+    <text x="20" y="300" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">Exploiting agent dependencies</text>
+    <text x="20" y="320" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">to compromise entire systems</text>
+    
+    <!-- Attack 6 -->
+    <rect x="380" y="240" width="360" height="110" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2" rx="8"/>
+    <text x="400" y="275" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">6. Multi-Agent Collusion</text>
+    <text x="400" y="300" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">Coordinated attacks by multiple</text>
+    <text x="400" y="320" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">malicious agents</text>
+  </g>
+  
+  <!-- Key Statistics -->
+  <g transform="translate(50, 440)">
+    <rect x="0" y="0" width="360" height="120" fill="#fff" stroke="#27ae60" stroke-width="3" rx="8"/>
+    <text x="20" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#27ae60">⚠️ Key Finding</text>
+    <text x="20" y="65" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#e74c3c">86% Success Rate</text>
+    <text x="20" y="95" font-family="Arial, sans-serif" font-size="14" fill="#34495e">Simple HTML injection attacks succeed</text>
+    <text x="20" y="115" font-family="Arial, sans-serif" font-size="14" fill="#34495e">on autonomous AI agents</text>
+  </g>
+  
+  <!-- Google DeepMind Logo Area -->
+  <g transform="translate(440, 440)">
+    <rect x="0" y="0" width="340" height="120" fill="#34495e" rx="8"/>
+    <text x="20" y="40" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">Google DeepMind</text>
+    <text x="20" y="70" font-family="Arial, sans-serif" font-size="14" fill="#ecf0f1">Research Paper: "AI Agent Traps"</text>
+    <text x="20" y="95" font-family="Arial, sans-serif" font-size="14" fill="#95a5a6">March 2026 • SSRN</text>
+  </g>
+</svg>
