@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI Agent 安全与信任机制：权限、隐私与合规的平衡艺术"
+title:  "一分钟读论文：《AI Agent 安全与信任机制：权限、隐私与合规的平衡艺术》"
 author: unbug
 categories: [AI Security, AI Agents, Privacy, Compliance]
 tags: [AI Agent, 安全机制，OWASP Top 10, 权限管理，隐私保护，合规性]
