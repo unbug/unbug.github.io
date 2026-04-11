@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">AI Agent 安全与信任机制框架</text>
+  <text x="400" y="65" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#7f8c8d">基于 OWASP Top 10 for Agentic Applications 2026</text>
+  
+  <!-- Main Framework Container -->
+  <rect x="100" y="80" width="600" height="380" fill="white" stroke="#3498db" stroke-width="2" rx="10"/>
+  
+  <!-- Security Layer 1: Permission Model -->
+  <g id="layer1">
+    <rect x="120" y="110" width="180" height="100" fill="#e74c3c" rx="5"/>
+    <text x="210" y="145" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">权限模型</text>
+    <text x="210" y="170" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">动态权限需求</text>
+    <text x="210" y="188" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">最小权限原则</text>
+    <text x="210" y="205" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">上下文感知</text>
+  </g>
+  
+  <!-- Security Layer 2: Trust Mechanism -->
+  <g id="layer2">
+    <rect x="310" y="110" width="180" height="100" fill="#f39c12" rx="5"/>
+    <text x="400" y="145" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">信任机制</text>
+    <text x="400" y="170" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">身份验证</text>
+    <text x="400" y="188" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">行为审计</text>
+    <text x="400" y="205" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">风险评估</text>
+  </g>
+  
+  <!-- Security Layer 3: Compliance -->
+  <g id="layer3">
+    <rect x="500" y="110" width="180" height="100" fill="#27ae60" rx="5"/>
+    <text x="590" y="145" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">合规机制</text>
+    <text x="590" y="170" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">数据隐私</text>
+    <text x="590" y="188" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">法规遵循</text>
+    <text x="590" y="205" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">安全审计</text>
+  </g>
+  
+  <!-- Central Core -->
+  <circle cx="400" cy="270" r="60" fill="#3498db"/>
+  <text x="400" y="265" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">信任链</text>
+  <text x="400" y="285" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">平衡机制</text>
+  
+  <!-- Arrows connecting layers -->
+  <path d="M 300 160 L 270 270" stroke="#3498db" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 500 160 L 430 270" stroke="#3498db" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Attack Vectors -->
+  <g id="attacks">
+    <rect x="120" y="300" width="180" height="80" fill="#e74c3c" rx="5" opacity="0.3"/>
+    <text x="210" y="325" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#c0392b">攻击向量</text>
+    <text x="210" y="345" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#c0392b">• Prompt 注入攻击</text>
+    <text x="210" y="360" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#c0392b">• 工具滥用</text>
+    <text x="210" y="375" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#c0392b">• 记忆污染</text>
+  </g>
+  
+  <g id="threats">
+    <rect x="310" y="300" width="180" height="80" fill="#e74c3c" rx="5" opacity="0.3"/>
+    <text x="400" y="325" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#c0392b">安全威胁</text>
+    <text x="400" y="345" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#c0392b">• 权限边界模糊</text>
+    <text x="400" y="360" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#c0392b">• 攻击面扩大</text>
+    <text x="400" y="375" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#c0392b">• 信任链断裂</text>
+  </g>
+  
+  <g id="mitigations">
+    <rect x="500" y="300" width="180" height="80" fill="#27ae60" rx="5" opacity="0.3"/>
+    <text x="590" y="325" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e8449">缓解措施</text>
+    <text x="590" y="345" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#1e8449">• OWASP Top 10</text>
+    <text x="590" y="360" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#1e8449">• 安全审计</text>
+    <text x="590" y="375" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#1e8449">• 合规框架</text>
+  </g>
+  
+  <!-- Legend -->
+  <g id="legend">
+    <rect x="120" y="420" width="560" height="40" fill="#ecf0f1" stroke="#bdc3c7" rx="5"/>
+    <text x="140" y="440" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">✓ 权限模型</text>
+    <text x="260" y="440" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">✓ 信任机制</text>
+    <text x="380" y="440" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">✓ 合规机制</text>
+    <text x="520" y="440" font-family="Arial, sans-serif" font-size="12" fill="#2c3e50">✓ OWASP Top 10 框架</text>
+  </g>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3498db"/>
+    </marker>
+  </defs>
+</svg>
