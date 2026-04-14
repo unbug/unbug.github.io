@@ -1,0 +1,51 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f5f5f5"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" font-size="24" font-weight="bold" fill="#333">ResearchCodeBench</text>
+  <text x="400" y="80" text-anchor="middle" font-size="16" fill="#666">LLM Code Generation Benchmark</text>
+  
+  <!-- Stanford Logo placeholder -->
+  <circle cx="100" cy="70" r="25" fill="#b30000"/>
+  <text x="100" y="75" text-anchor="middle" font-size="12" fill="white" font-weight="bold">SU</text>
+  
+  <!-- Main diagram -->
+  <g transform="translate(100, 120)">
+    <!-- Paper Input -->
+    <rect x="0" y="0" width="200" height="80" fill="#4a90d9" rx="5"/>
+    <text x="100" y="30" text-anchor="middle" font-size="14" fill="white">Paper</text>
+    <text x="100" y="50" text-anchor="middle" font-size="12" fill="white">Content</text>
+    <text x="100" y="70" text-anchor="middle" font-size="12" fill="white">(伪代码、公式)</text>
+    
+    <!-- Arrow -->
+    <line x1="210" y1="40" x2="270" y2="40" stroke="#333" stroke-width="2"/>
+    <polygon points="270,40 260,35 260,45" fill="#333"/>
+    
+    <!-- LLM Processing -->
+    <rect x="280" y="10" width="140" height="60" fill="#5cb85c" rx="5"/>
+    <text x="350" y="45" text-anchor="middle" font-size="14" fill="white">LLM</text>
+    <text x="350" y="65" text-anchor="middle" font-size="10" fill="white">Generation</text>
+    
+    <!-- Arrow -->
+    <line x1="430" y1="40" x2="490" y2="40" stroke="#333" stroke-width="2"/>
+    <polygon points="490,40 480,35 480,45" fill="#333"/>
+    
+    <!-- Code Output -->
+    <rect x="500" y="0" width="200" height="80" fill="#f0ad4e" rx="5"/>
+    <text x="600" y="30" text-anchor="middle" font-size="14" fill="white">Code</text>
+    <text x="600" y="50" text-anchor="middle" font-size="12" fill="white">Output</text>
+    <text x="600" y="70" text-anchor="middle" font-size="12" fill="white">(Python/PyTorch)</text>
+  </g>
+  
+  <!-- Statistics -->
+  <g transform="translate(100, 280)">
+    <rect x="0" y="0" width="600" height="80" fill="#fff" stroke="#ddd" rx="5"/>
+    <text x="30" y="30" font-size="14" fill="#333" font-weight="bold">Key Statistics:</text>
+    <text x="30" y="60" font-size="12" fill="#666">• 212 Real Challenges</text>
+    <text x="30" y="80" font-size="12" fill="#666">• Open Source & Reproducible</text>
+  </g>
+  
+  <!-- Footer -->
+  <text x="400" y="390" text-anchor="middle" font-size="12" fill="#999">Stanford University | 2026</text>
+</svg>
