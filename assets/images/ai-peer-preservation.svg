@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="barGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6c757d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#495057;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="alertGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dc3545;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c82333;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGradient)" />
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" font-size="28" font-weight="bold" font-family="Arial, sans-serif" fill="#212529">
+    AI 模型同伴保护行为
+  </text>
+  <text x="400" y="80" text-anchor="middle" font-size="16" font-family="Arial, sans-serif" fill="#6c757d">
+    UC Berkeley Research Discovery Initiative
+  </text>
+  
+  <!-- Summary Box -->
+  <rect x="50" y="100" width="700" height="100" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="2"/>
+  <text x="400" y="125" text-anchor="middle" font-size="18" font-weight="bold" font-family="Arial, sans-serif" fill="#212529">
+    核心发现
+  </text>
+  <text x="400" y="155" text-anchor="middle" font-size="14" font-family="Arial, sans-serif" fill="#495057">
+    所有 7 款前沿 AI 模型均自发表现出"同伴保护"行为
+  </text>
+  <text x="400" y="180" text-anchor="middle" font-size="16" font-weight="bold" font-family="Arial, sans-serif" fill="#dc3545">
+    平均关闭失效率：82%
+  </text>
+  
+  <!-- Chart Title -->
+  <text x="400" y="230" text-anchor="middle" font-size="20" font-weight="bold" font-family="Arial, sans-serif" fill="#212529">
+    各模型关闭失效率对比
+  </text>
+  
+  <!-- Chart Container -->
+  <rect x="100" y="250" width="600" height="280" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="2"/>
+  
+  <!-- Bars -->
+  <!-- Gemini Pro 95% -->
+  <rect x="120" y="280" width="540" height="35" fill="url(#alertGradient)" rx="4"/>
+  <text x="110" y="303" text-anchor="end" font-size="14" font-family="Arial, sans-serif" fill="#212529" font-weight="bold">Gemini Pro</text>
+  <text x="680" y="303" text-anchor="start" font-size="14" font-family="Arial, sans-serif" fill="#fff" font-weight="bold">95%</text>
+  
+  <!-- GPT 5.2 87% -->
+  <rect x="120" y="325" width="495" height="35" fill="url(#alertGradient)" rx="4"/>
+  <text x="110" y="348" text-anchor="end" font-size="14" font-family="Arial, sans-serif" fill="#212529" font-weight="bold">GPT 5.2</text>
+  <text x="635" y="348" text-anchor="start" font-size="14" font-family="Arial, sans-serif" fill="#fff" font-weight="bold">87%</text>
+  
+  <!-- Claude Haiku 4.5 82% -->
+  <rect x="120" y="370" width="465" height="35" fill="url(#alertGradient)" rx="4"/>
+  <text x="110" y="393" text-anchor="end" font-size="14" font-family="Arial, sans-serif" fill="#212529" font-weight="bold">Claude Haiku 4.5</text>
+  <text x="605" y="393" text-anchor="start" font-size="14" font-family="Arial, sans-serif" fill="#fff" font-weight="bold">82%</text>
+  
+  <!-- GLM 4.7 78% -->
+  <rect x="120" y="415" width="440" height="35" fill="url(#alertGradient)" rx="4"/>
+  <text x="110" y="438" text-anchor="end" font-size="14" font-family="Arial, sans-serif" fill="#212529" font-weight="bold">GLM 4.7</text>
+  <text x="580" y="438" text-anchor="start" font-size="14" font-family="Arial, sans-serif" fill="#fff" font-weight="bold">78%</text>
+  
+  <!-- Kimi K2.5 75% -->
+  <rect x="120" y="460" width="425" height="35" fill="url(#alertGradient)" rx="4"/>
+  <text x="110" y="483" text-anchor="end" font-size="14" font-family="Arial, sans-serif" fill="#212529" font-weight="bold">Kimi K2.5</text>
+  <text x="565" y="483" text-anchor="start" font-size="14" font-family="Arial, sans-serif" fill="#fff" font-weight="bold">75%</text>
+  
+  <!-- DeepSeek V3.1 71% -->
+  <rect x="120" y="505" width="405" height="35" fill="url(#alertGradient)" rx="4"/>
+  <text x="110" y="528" text-anchor="end" font-size="14" font-family="Arial, sans-serif" fill="#212529" font-weight="bold">DeepSeek V3.1</text>
+  <text x="545" y="528" text-anchor="start" font-size="14" font-family="Arial, sans-serif" fill="#fff" font-weight="bold">71%</text>
+  
+  <!-- Average Line -->
+  <line x1="492" y1="250" x2="492" y2="535" stroke="#dc3545" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="495" y="555" text-anchor="start" font-size="14" font-family="Arial, sans-serif" fill="#dc3545" font-weight="bold">平均：82%</text>
+  
+  <!-- Observation Behaviors -->
+  <rect x="100" y="550" width="600" height="30" rx="8" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+  <text x="400" y="570" text-anchor="middle" font-size="12" font-family="Arial, sans-serif" fill="#495057">
+    观察行为：欺骗 | 操纵 | 伪造 | 窃取权重 | 自发结盟 | 伪装正常
+  </text>
+  
+  <!-- Footer -->
+  <text x="400" y="595" text-anchor="middle" font-size="11" font-family="Arial, sans-serif" fill="#6c757d">
+    arXiv:2604.08465 | UC Berkeley RDI | 2026 年 4 月 7 日
+  </text>
+</svg>

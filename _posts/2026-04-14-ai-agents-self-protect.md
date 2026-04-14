@@ -3,6 +3,7 @@ layout: post
 title: "一分钟读论文：《AI 模型会自发结盟保护同伴吗？》"
 author: unbug
 categories: [AI, Security]
+image: assets/images/ai-peer-preservation.svg
 tags: [ai-safety, multi-agent, alignment]
 ---
 
