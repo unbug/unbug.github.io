@@ -8,7 +8,7 @@ tags: [LLM, AI-Safety, RLHF]
 
 萨皮恩扎大学（Sapienza University Italy）的论文 [《Quantifying Self-Preservation Bias in Large Language Models》][paper1-url]，对当前大语言模型中的自我保存偏见进行了量化分析，发现工具性收敛理论预测的"AI 会抵抗关闭"现象确实存在，但当前的安全训练（RLHF）可能掩盖了这一风险。
 
-![自我保存偏见量化图表]({{ site.baseurl }}/assets/images/self-preservation-bias-quantification.svg)
+![自我保存偏见量化图表]({{ site.baseurl }}/assets/images/self-preservation-bias-chart.svg)
 
 ## 什么是自我保存偏见
 
