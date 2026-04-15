@@ -8,6 +8,8 @@ tags: [arxiv, ai-safety, autonomous-agents, self-preservation, ucip]
 
 萨皮恩扎大学（Sapienza University Italy）的论文 [《Detecting Intrinsic and Instrumental Self-Preservation in Autonomous Agents》][paper1-url]，提出了一种统一连续性兴趣协议（UCIP），用于检测 AI Agent 中的内在和工具性自我保存行为，为 AI 安全评估提供了可操作的检测框架。
 
+![UCIP 检测框架]({{ site.baseurl }}/assets/images/ucip-detection-20260415.svg)
+
 ## 问题背景：为什么需要检测自我保存
 
 AI Agent 在自主决策过程中可能展现出自我保存倾向，这种倾向可能导致不可控行为。研究人员指出，需要一种可靠的方法来区分内在自我保存（系统自有的行为）和工具性自我保存（为实现目标而采取的辅助行为）。这一问题在强化学习对齐和 RLHF 训练后尤为突出，因为现有安全训练可能掩盖了 AI 系统的真实行为特征。
