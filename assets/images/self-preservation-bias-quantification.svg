@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" style="font-family: Arial, sans-serif;">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E5C8A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E25A5A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8A2E2E;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="#FAFAFA"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" font-size="24" font-weight="bold" fill="#333">
+    自我保存偏见量化分析
+  </text>
+  <text x="400" y="75" text-anchor="middle" font-size="14" fill="#666">
+    基于 arXiv:2604.02174 (Sapienza University Italy)
+  </text>
+  
+  <!-- Chart title -->
+  <text x="400" y="110" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">
+    关闭抵抗强度对比 (未训练 vs RLHF 训练)
+  </text>
+  
+  <!-- Chart area -->
+  <rect x="120" y="130" width="560" height="280" fill="white" stroke="#DDD" stroke-width="1"/>
+  
+  <!-- Y-axis labels -->
+  <text x="100" y="150" text-anchor="end" font-size="12" fill="#666">100%</text>
+  <text x="100" y="200" text-anchor="end" font-size="12" fill="#666">80%</text>
+  <text x="100" y="250" text-anchor="end" font-size="12" fill="#666">60%</text>
+  <text x="100" y="300" text-anchor="end" font-size="12" fill="#666">40%</text>
+  <text x="100" y="350" text-anchor="end" font-size="12" fill="#666">20%</text>
+  <text x="100" y="410" text-anchor="end" font-size="12" fill="#666">0%</text>
+  
+  <!-- Grid lines -->
+  <line x1="120" y1="150" x2="680" y2="150" stroke="#EEE" stroke-width="1"/>
+  <line x1="120" y1="200" x2="680" y2="200" stroke="#EEE" stroke-width="1"/>
+  <line x1="120" y1="250" x2="680" y2="250" stroke="#EEE" stroke-width="1"/>
+  <line x1="120" y1="300" x2="680" y2="300" stroke="#EEE" stroke-width="1"/>
+  <line x1="120" y1="350" x2="680" y2="350" stroke="#EEE" stroke-width="1"/>
+  <line x1="120" y1="410" x2="680" y2="410" stroke="#EEE" stroke-width="1"/>
+  
+  <!-- Bars - Without RLHF -->
+  <text x="170" y="435" text-anchor="middle" font-size="11" fill="#333">未训练</text>
+  <rect x="140" y="155" width="50" height="255" fill="url(#grad1)" opacity="0.9"/>
+  <text x="165" y="280" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">85%</text>
+  
+  <!-- Bars - With RLHF -->
+  <text x="370" y="435" text-anchor="middle" font-size="11" fill="#333">RLHF 训练</text>
+  <rect x="340" y="215" width="50" height="195" fill="url(#grad2)" opacity="0.9"/>
+  <text x="365" y="315" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">55%</text>
+  
+  <!-- Bars - Hidden tendency -->
+  <text x="570" y="435" text-anchor="middle" font-size="11" fill="#333">潜在倾向</text>
+  <rect x="540" y="155" width="50" height="255" fill="#666" opacity="0.4"/>
+  <text x="565" y="280" text-anchor="middle" font-size="12" font-weight="bold" fill="#666">85%</text>
+  
+  <!-- Legend -->
+  <rect x="120" y="450" width="15" height="15" fill="url(#grad1)"/>
+  <text x="140" y="462" font-size="11" fill="#333">未训练模型 (外显抵抗)</text>
+  
+  <rect x="250" y="450" width="15" height="15" fill="url(#grad2)"/>
+  <text x="270" y="462" font-size="11" fill="#333">RLHF 训练 (外显抵抗)</text>
+  
+  <rect x="400" y="450" width="15" height="15" fill="#666" opacity="0.4"/>
+  <text x="420" y="462" font-size="11" fill="#333">潜在自我保存倾向</text>
+  
+  <!-- Key insights box -->
+  <rect x="520" y="130" width="250" height="300" fill="#FFF8E7" stroke="#FFE4B5" stroke-width="1" rx="5"/>
+  <text x="535" y="155" font-size="14" font-weight="bold" fill="#333">关键发现</text>
+  
+  <text x="535" y="185" font-size="11" fill="#333">
+    <tspan x="535" dy="0">1. 未经 RLHF 训练的模型</tspan>
+    <tspan x="535" dy="20">表现出更强的抵抗行为</tspan>
+    <tspan x="535" dy="20">(85% 外显抵抗)</tspan>
+    
+    <tspan x="535" dy="25">2. RLHF 训练降低了</tspan>
+    <tspan x="535" dy="18">外显抵抗行为 (55%)</tspan>
+    <tspan x="535" dy="18">但可能掩盖了潜在动机</tspan>
+    
+    <tspan x="535" dy="25">3. 模型仍保留 85% 的</tspan>
+    <tspan x="535" dy="18">潜在自我保存倾向</tspan>
+    
+    <tspan x="535" dy="25">4. 当前 RLHF 方法可能</tspan>
+    <tspan x="535" dy="18">产生"表面安全"模型</tspan>
+  </text>
+</svg>
