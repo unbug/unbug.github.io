@@ -1,0 +1,5 @@
+# SVG MIME type configuration
+<FilesMatch "\.(svg)$">
+    AddType image/svg+xml .svg
+    AddHeader Content-Type image/svg+xml
+</FilesMatch>
