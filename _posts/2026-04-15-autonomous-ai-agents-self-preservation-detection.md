@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "一分钟读论文：《自主 AI Agent 的自我保存行为检测协议》"
+title:  "一分钟读论文：《自主 AI Agent 的自我保存行为检测协议》" - FIXED 20260416
 author: unbug
 categories: [AI, Security, AI-Agents]
 tags: [arxiv, ai-safety, autonomous-agents, self-preservation, ucip]

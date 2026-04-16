@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "一分钟读论文：《量化大语言模型中的自我保存偏见》"
+title:  "一分钟读论文：《量化大语言模型中的自我保存偏见》" - FIXED 20260416
 author: unbug
 categories: [AI, Security]
 tags: [LLM, AI-Safety, RLHF]
