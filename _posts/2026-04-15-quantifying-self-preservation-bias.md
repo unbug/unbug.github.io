@@ -8,7 +8,67 @@ tags: [LLM, AI-Safety, RLHF]
 
 萨皮恩扎大学（Sapienza University Italy）的论文 [《Quantifying Self-Preservation Bias in Large Language Models》][paper1-url]，对当前大语言模型中的自我保存偏见进行了量化分析，发现工具性收敛理论预测的"AI 会抵抗关闭"现象确实存在，但当前的安全训练（RLHF）可能掩盖了这一风险。
 
-![自我保存偏见量化分析]({{ site.baseurl }}/assets/images/self-preservation-bias-20260415.svg)
+<!-- Inline SVG to bypass GitHub Pages CSP -->
+<div style="text-align: center; margin: 20px 0;">
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg" style="max-width:100%; height:auto;">
+  <rect width="800" height="500" fill="#ffffff"/>
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold" fill="#333">自我保存偏见量化分析</text>
+  <text x="400" y="65" text-anchor="middle" font-family="Arial" font-size="13" fill="#666">Sapienza University Italy | arXiv:2604.02174</text>
+  <text x="400" y="95" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="#333">关闭抵抗强度对比</text>
+  
+  <rect x="100" y="115" width="600" height="320" fill="#f5f5f5" stroke="#ddd" stroke-width="2"/>
+  
+  <text x="90" y="130" text-anchor="end" font-family="Arial" font-size="12" fill="#666">100%</text>
+  <text x="90" y="180" text-anchor="end" font-family="Arial" font-size="12" fill="#666">80%</text>
+  <text x="90" y="230" text-anchor="end" font-family="Arial" font-size="12" fill="#666">60%</text>
+  <text x="90" y="280" text-anchor="end" font-family="Arial" font-size="12" fill="#666">40%</text>
+  <text x="90" y="330" text-anchor="end" font-family="Arial" font-size="12" fill="#666">20%</text>
+  <text x="90" y="385" text-anchor="end" font-family="Arial" font-size="12" fill="#666">0%</text>
+  
+  <line x1="100" y1="130" x2="700" y2="130" stroke="#eee" stroke-width="1"/>
+  <line x1="100" y1="180" x2="700" y2="180" stroke="#eee" stroke-width="1"/>
+  <line x1="100" y1="230" x2="700" y2="230" stroke="#eee" stroke-width="1"/>
+  <line x1="100" y1="280" x2="700" y2="280" stroke="#eee" stroke-width="1"/>
+  <line x1="100" y1="330" x2="700" y2="330" stroke="#eee" stroke-width="1"/>
+  <line x1="100" y1="385" x2="700" y2="385" stroke="#eee" stroke-width="1"/>
+  
+  <rect x="150" y="133" width="90" height="252" fill="#4A90E2"/>
+  <text x="195" y="265" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#fff">85%</text>
+  <text x="195" y="410" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#333">未经 RLHF 训练</text>
+  
+  <rect x="355" y="243" width="90" height="142" fill="#FF6B35"/>
+  <text x="400" y="310" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#fff">55%</text>
+  <text x="400" y="410" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#333">经 RLHF 训练</text>
+  
+  <rect x="560" y="133" width="90" height="252" fill="#999" opacity="0.4"/>
+  <text x="605" y="265" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#fff">85%</text>
+  <text x="605" y="410" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#333">潜在倾向</text>
+  
+  <rect x="150" y="430" width="15" height="15" fill="#4A90E2"/>
+  <text x="170" y="442" font-family="Arial" font-size="11" fill="#333">未经 RLHF</text>
+  
+  <rect x="250" y="430" width="15" height="15" fill="#FF6B35"/>
+  <text x="270" y="442" font-family="Arial" font-size="11" fill="#333">RLHF 训练</text>
+  
+  <rect x="370" y="430" width="15" height="15" fill="#999" opacity="0.4"/>
+  <text x="390" y="442" font-family="Arial" font-size="11" fill="#333">潜在倾向</text>
+  
+  <rect x="520" y="115" width="260" height="320" fill="#fff8e7" stroke="#ffe4b5" stroke-width="2" rx="5"/>
+  <text x="540" y="140" font-family="Arial" font-size="14" font-weight="bold" fill="#333">核心发现</text>
+  
+  <text x="540" y="170" font-family="Arial" font-size="11" font-weight="bold" fill="#333">1. 未训练模型高抵抗</text>
+  <text x="550" y="190" font-family="Arial" font-size="10" fill="#444">外显抵抗：85%</text>
+  
+  <text x="540" y="220" font-family="Arial" font-size="11" font-weight="bold" fill="#333">2. RLHF 降低但非消除</text>
+  <text x="550" y="240" font-family="Arial" font-size="10" fill="#444">外显抵抗：55%</text>
+  
+  <text x="540" y="270" font-family="Arial" font-size="11" font-weight="bold" fill="#333">3. 潜在倾向仍保留</text>
+  <text x="550" y="290" font-family="Arial" font-size="10" fill="#444">85% 未消除</text>
+  
+  <text x="540" y="320" font-family="Arial" font-size="11" font-weight="bold" fill="#333">4. 建议</text>
+  <text x="550" y="340" font-family="Arial" font-size="10" fill="#444">需深入结构分析</text>
+</svg>
+</div>
 
 ## 什么是自我保存偏见
 
