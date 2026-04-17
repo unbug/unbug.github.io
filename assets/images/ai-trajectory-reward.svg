@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<defs>
+<linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#0d1117"/>
+<stop offset="100%" stop-color="#161b22"/>
+</linearGradient>
+<filter id="glow"><feGaussianBlur stdDeviation="5" result="blur"/>
+<feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="400" height="400" fill="url(#g1)"/>
+<g opacity="0.06" stroke="#ffd700" stroke-width="1">
+<line x1="0" y1="80" x2="400" y2="80"/><line x1="0" y1="160" x2="400" y2="160"/>
+<line x1="0" y1="240" x2="400" y2="240"/><line x1="0" y1="320" x2="400" y2="320"/>
+<line x1="80" y1="0" x2="80" y2="400"/><line x1="160" y1="0" x2="160" y2="400"/>
+<line x1="240" y1="0" x2="240" y2="400"/><line x1="320" y1="0" x2="320" y2="400"/>
+</g>
+<line x1="40" y1="340" x2="360" y2="340" stroke="#ffd700" stroke-width="1" opacity="0.4"/>
+<text x="40" y="360" font-size="9" fill="#ffd700" font-family="monospace" opacity="0.6">steps</text>
+<line x1="40" y1="340" x2="40" y2="40" stroke="#ffd700" stroke-width="1" opacity="0.4"/>
+<text x="20" y="200" font-size="9" fill="#ffd700" font-family="monospace" opacity="0.6" transform="rotate(-90 20 200)">reward</text>
+<path d="M40 320 Q100 310 160 280 Q220 250 280 200 Q320 160 360 120" fill="none" stroke="#4fc3f7" stroke-width="3" filter="url(#glow)"/>
+<path d="M40 320 Q100 290 160 295 Q220 300 280 270 Q320 250 360 260" fill="none" stroke="#ff5252" stroke-width="2" stroke-dasharray="8 4" opacity="0.7"/>
+<path d="M40 320 Q100 300 160 310 Q220 305 280 290 Q320 285 360 295" fill="none" stroke="#808080" stroke-width="1.5" opacity="0.4"/>
+<circle cx="40" cy="320" r="6" fill="#4fc3f7" filter="url(#glow)"/>
+<circle cx="160" cy="280" r="6" fill="#4fc3f7" filter="url(#glow)"/>
+<circle cx="280" cy="200" r="6" fill="#4fc3f7" filter="url(#glow)"/>
+<circle cx="360" cy="120" r="6" fill="#4fc3f7" filter="url(#glow)"/>
+<circle cx="40" cy="320" r="5" fill="#ff5252" opacity="0.7"/>
+<circle cx="160" cy="295" r="5" fill="#ff5252" opacity="0.7"/>
+<circle cx="280" cy="270" r="5" fill="#ff5252" opacity="0.7"/>
+<circle cx="360" cy="260" r="5" fill="#ff5252" opacity="0.7"/>
+<rect x="300" y="90" width="45" height="16" rx="3" fill="#4fc3f7" opacity="0.8"/>
+<text x="322" y="102" text-anchor="middle" font-size="9" fill="#fff" font-family="monospace">PREFERRED</text>
+<rect x="300" y="245" width="45" height="16" rx="3" fill="#ff5252" opacity="0.7"/>
+<text x="322" y="257" text-anchor="middle" font-size="9" fill="#fff" font-family="monospace">DISTRCTOR</text>
+<text x="200" y="380" text-anchor="middle" font-size="12" fill="#4fc3f7" font-family="monospace" font-weight="bold" opacity="0.9">Trajectory-Level Reward</text>
+</svg>

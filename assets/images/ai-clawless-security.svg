@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<defs>
+<linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#0a1628"/>
+<stop offset="100%" stop-color="#1a2744"/>
+</linearGradient>
+<filter id="glow">
+<feGaussianBlur stdDeviation="6" result="blur"/>
+<feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+</defs>
+<rect width="400" height="400" fill="url(#g1)"/>
+<g opacity="0.08" stroke="#4a9eff" stroke-width="1">
+<line x1="0" y1="100" x2="400" y2="100"/><line x1="0" y1="200" x2="400" y2="200"/>
+<line x1="0" y1="300" x2="400" y2="300"/><line x1="100" y1="0" x2="100" y2="400"/>
+<line x1="200" y1="0" x2="200" y2="400"/><line x1="300" y1="0" x2="300" y2="400"/>
+</g>
+<path d="M200 60 L310 130 L310 270 L200 340 L90 270 L90 130 Z" fill="none" stroke="#00d4ff" stroke-width="2.5" filter="url(#glow)"/>
+<circle cx="200" cy="200" r="50" fill="none" stroke="#00ff88" stroke-width="3" filter="url(#glow)"/>
+<circle cx="200" cy="200" r="18" fill="#00ff88" opacity="0.6"/>
+<text x="200" y="206" text-anchor="middle" font-size="16" fill="#fff" font-family="monospace" font-weight="bold">SAFE</text>
+<circle cx="200" cy="60" r="10" fill="#00d4ff" filter="url(#glow)"/>
+<circle cx="310" cy="130" r="8" fill="#00ff88" filter="url(#glow)"/>
+<circle cx="310" cy="270" r="8" fill="#00ff88" filter="url(#glow)"/>
+<circle cx="200" cy="340" r="10" fill="#00d4ff" filter="url(#glow)"/>
+<circle cx="90" cy="270" r="8" fill="#00ff88" filter="url(#glow)"/>
+<circle cx="90" cy="130" r="8" fill="#00ff88" filter="url(#glow)"/>
+<line x1="200" y1="70" x2="200" y2="150" stroke="#00d4ff" stroke-width="1.5" opacity="0.5"/>
+<line x1="300" y1="138" x2="230" y2="175" stroke="#00ff88" stroke-width="1" opacity="0.4"/>
+<line x1="300" y1="262" x2="230" y2="225" stroke="#00ff88" stroke-width="1" opacity="0.4"/>
+<line x1="200" y1="330" x2="200" y2="250" stroke="#00d4ff" stroke-width="1.5" opacity="0.5"/>
+<line x1="100" y1="262" x2="170" y2="225" stroke="#00ff88" stroke-width="1" opacity="0.4"/>
+<line x1="100" y1="138" x2="170" y2="175" stroke="#00ff88" stroke-width="1" opacity="0.4"/>
+</svg>

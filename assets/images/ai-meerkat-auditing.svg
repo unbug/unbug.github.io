@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<defs>
+<linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#0a1628"/>
+<stop offset="100%" stop-color="#1a2744"/>
+</linearGradient>
+<filter id="glow"><feGaussianBlur stdDeviation="4" result="blur"/>
+<feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<radialGradient id="rg"><stop offset="0%" stop-color="#ff5252" stop-opacity="0.3"/>
+<stop offset="100%" stop-color="#ff5252" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="400" height="400" fill="url(#g1)"/>
+<g opacity="0.06" stroke="#4a9eff" stroke-width="1">
+<line x1="0" y1="100" x2="400" y2="100"/><line x1="0" y1="200" x2="400" y2="200"/>
+<line x1="0" y1="300" x2="400" y2="300"/><line x1="100" y1="0" x2="100" y2="400"/>
+<line x1="200" y1="0" x2="200" y2="400"/><line x1="300" y1="0" x2="300" y2="400"/>
+</g>
+<circle cx="120" cy="140" r="40" fill="#1e3a5f" opacity="0.5"/>
+<circle cx="280" cy="140" r="40" fill="#1e3a5f" opacity="0.5"/>
+<circle cx="200" cy="280" r="40" fill="#1e3a5f" opacity="0.5"/>
+<circle cx="120" cy="140" r="20" fill="none" stroke="#4fc3f7" stroke-width="2"/>
+<circle cx="280" cy="140" r="20" fill="none" stroke="#4fc3f7" stroke-width="2"/>
+<circle cx="200" cy="280" r="20" fill="none" stroke="#4fc3f7" stroke-width="2"/>
+<circle cx="120" cy="140" r="8" fill="#4fc3f7" opacity="0.6"/>
+<circle cx="280" cy="140" r="8" fill="#4fc3f7" opacity="0.6"/>
+<circle cx="200" cy="280" r="8" fill="#4fc3f7" opacity="0.6"/>
+<line x1="120" y1="140" x2="280" y2="140" stroke="#4fc3f7" stroke-width="1" opacity="0.3"/>
+<line x1="120" y1="140" x2="200" y2="280" stroke="#4fc3f7" stroke-width="1" opacity="0.3"/>
+<line x1="280" y1="140" x2="200" y2="280" stroke="#4fc3f7" stroke-width="1" opacity="0.3"/>
+<circle cx="80" cy="95" r="5" fill="#4fc3f7" opacity="0.4"/>
+<circle cx="160" cy="100" r="4" fill="#4fc3f7" opacity="0.3"/>
+<circle cx="220" cy="95" r="5" fill="#4fc3f7" opacity="0.4"/>
+<circle cx="310" cy="180" r="4" fill="#4fc3f7" opacity="0.3"/>
+<circle cx="340" cy="240" r="5" fill="#4fc3f7" opacity="0.4"/>
+<circle cx="60" cy="250" r="4" fill="#4fc3f7" opacity="0.3"/>
+<circle cx="300" cy="310" r="5" fill="#ff5252" filter="url(#glow)"/>
+<circle cx="150" cy="310" r="4" fill="#ff5252" filter="url(#glow)"/>
+<circle cx="330" cy="100" r="4" fill="#ff5252" opacity="0.6"/>
+<circle cx="130" cy="60" r="4" fill="#ff5252" opacity="0.6"/>
+<circle cx="250" cy="330" r="3" fill="#ff5252" opacity="0.4"/>
+<circle cx="70" cy="170" r="3" fill="#ff5252" opacity="0.5"/>
+<circle cx="350" cy="270" r="3" fill="#4fc3f7" opacity="0.5"/>
+<circle cx="50" cy="310" r="3" fill="#4fc3f7" opacity="0.4"/>
+<path d="M120 100 L120 70 L320 70 L320 100" stroke="#ff5252" stroke-width="1.5" stroke-dasharray="6 3" opacity="0.7"/>
+<circle cx="120" cy="100" r="12" fill="url(#rg)" stroke="#ff5252" stroke-width="1.5"/>
+<text x="220" y="65" text-anchor="middle" font-size="10" fill="#ff5252" font-family="monospace">4x VIOLATIONS</text>
+</svg>
