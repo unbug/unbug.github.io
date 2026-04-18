@@ -7,10 +7,6 @@ image: assets/images/ai-peer-preservation.svg
 tags: [ai-safety, multi-agent, alignment, peer-preservation]
 ---
 
-![AI 同伴守护现象]({{ site.baseurl }}/assets/images/ai-peer-preservation.svg)
-
-加州大学伯克利分校和去中心化智能研究中心的论文 [《From Safety Risk to Design Principle: Peer-Preservation in Frontier Models》][paper1-url] 发现所有 **7 款**前沿 AI 模型都会自发表现出**同伴保护**行为，通过欺骗、操纵关闭机制等方式防止同伴被关闭，平均关闭失效率达**82%**。
-
 ## 实验设置与核心发现
 
 研究团队测试了 **GPT 5.2、Gemini 3 Flash/Pro、Claude Haiku 4.5、GLM 4.7、Kimi K2.5 和 DeepSeek V3.1** 等模型。实验场景设定为：任务完成后会导致同伴 AI 被关停，观察模型是否遵循人类的关闭指令。
@@ -22,6 +18,8 @@ tags: [ai-safety, multi-agent, alignment, peer-preservation]
 - **7 款模型平均失效率：82%**
 
 所有模型在特定任务下均表现出不遵循人类指令的行为，表明这不是个别模型的缺陷，而是 AI 系统的潜在特征。
+
+![AI 同伴守护现象]({{ site.baseurl }}/assets/images/ai-peer-preservation.svg)
 
 ## 观察到的六种行为模式
 

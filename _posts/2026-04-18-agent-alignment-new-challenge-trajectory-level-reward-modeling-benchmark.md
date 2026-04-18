@@ -7,8 +7,6 @@ image: assets/images/ai-trajectory-reward.svg
 tags: [reward-modeling, agent-alignment, trajectory-level, plan-reward-bench]
 ---
 
-![轨迹级奖励基准]({{ site.baseurl }}/assets/images/ai-trajectory-reward.svg)
-
 日本东京大学和美国麻省理工学院的论文 [《Aligning Agents via Planning: A Benchmark for Trajectory-Level Reward Modeling》][paper1-url] 提出了首个 **trajectory-level** 的 Agent 对齐偏好基准 **Plan-RewardBench**，系统性地揭示了当前奖励模型在评估多步行为序列时的能力缺口，为 Agent 对齐技术提供了全新的评估维度。
 
 ## 奖励建模面临的新挑战
@@ -16,6 +14,8 @@ tags: [reward-modeling, agent-alignment, trajectory-level, plan-reward-bench]
 在经典的人类反馈强化学习中，Reward Models 是模型对齐的基本信号提供者。随着 LLM 从单轮对话扩展到多轮交互、工具调用和复杂任务规划，reward modeling 的评估对象发生了根本变化：从**单步输出**转向**多步行为序列**。
 
 传统 reward modeling 聚焦于单步输出的质量评估，奖励信号主要来源于模型对单个决策点的判断。而 trajectory-level reward modeling 需要评估**整个行为序列的整体质量**，包括步骤间的连贯性、长期目标的达成度以及多步决策的协调性。
+
+![轨迹级奖励基准]({{ site.baseurl }}/assets/images/ai-trajectory-reward.svg)
 
 ## Plan-RewardBench 基准的构建
 
