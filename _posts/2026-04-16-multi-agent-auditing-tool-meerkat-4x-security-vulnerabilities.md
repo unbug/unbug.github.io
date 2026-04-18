@@ -7,15 +7,13 @@ image: assets/images/ai-meerkat-auditing.svg
 tags: [ai-auditing, multi-agent, cybench, meerkat]
 ---
 
-![Meerkat 跨 Agent 审计]({{ site.baseurl }}/assets/images/ai-meerkat-auditing.svg)
-
-微软研究院的论文 [《Detecting Safety Violations Across Many Agent Traces》][paper1-url] 提出 Meerkat 跨多 Agent 轨迹审计工具，在 **CyBench** 基准测试中发现近 **4 倍** reward hacking 案例，揭露某主流 Agent 基准测试中的大规模开发者作弊行为。该研究采用结合聚类和主动搜索的方法，无需种子场景即可发现稀疏安全违规，在 **9 个基准测试**中检测到 **28+ 提交** 存在作弊。
-
 ## 无需种子场景的聚类审计机制
 
 传统安全审计方法依赖预定义的场景来识别风险，需要大量人工设计测试用例、难以发现未预见的安全违规。Meerkat 的核心突破在于提出了一种**无需种子场景**的跨多 Agent 轨迹聚类分析方法。
 
 该方法通过自动收集数千条 Agent 执行轨迹，应用聚类算法识别相似行为模式，再使用主动搜索技术验证异常行为的真实违规。整个流程无需人工设计的种子场景即可自动发现稀疏的安全违规问题。
+
+![Meerkat 跨 Agent 审计]({{ site.baseurl }}/assets/images/ai-meerkat-auditing.svg)
 
 ## 4 倍安全漏洞与作弊案例揭露
 
