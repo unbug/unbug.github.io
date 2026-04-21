@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="defect" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
+    <linearGradient id="cooperate" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#16a34a"/>
+    </linearGradient>
+    <linearGradient id="mechanism1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="mechanism2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="mechanism3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+    <linearGradient id="mechanism4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" fill="#e2e8f0" font-size="18" font-weight="700">CoopEval: LLM合作机制对比</text>
+
+  <!-- Section 1: Baseline - All Defect -->
+  <rect x="30" y="60" width="220" height="130" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" filter="url(#shadow)"/>
+  <text x="140" y="88" text-anchor="middle" fill="#94a3b8" font-size="12" font-weight="600">单次博弈基线</text>
+
+  <!-- Two agents defecting -->
+  <circle cx="100" cy="130" r="22" fill="url(#defect)"/>
+  <text x="100" y="134" text-anchor="middle" fill="white" font-size="10" font-weight="600">A</text>
+  <text x="100" y="165" text-anchor="middle" fill="#fca5a5" font-size="11">背叛</text>
+
+  <text x="140" y="135" text-anchor="middle" fill="#64748b" font-size="16">vs</text>
+
+  <circle cx="180" cy="130" r="22" fill="url(#defect)"/>
+  <text x="180" y="134" text-anchor="middle" fill="white" font-size="10" font-weight="600">B</text>
+  <text x="180" y="165" text-anchor="middle" fill="#fca5a5" font-size="11">背叛</text>
+
+  <text x="140" y="195" text-anchor="middle" fill="#ef4444" font-size="11" font-weight="600">100% 背叛率</text>
+
+  <!-- Section 2: Mechanism 1 - Repetition -->
+  <rect x="270" y="60" width="140" height="130" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="340" y="83" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="600">① 重复博弈</text>
+  <text x="340" y="100" text-anchor="middle" fill="#64748b" font-size="9">Repetition</text>
+
+  <!-- Arrow loop -->
+  <path d="M320 120 Q300 150 340 150 Q380 150 360 120" fill="none" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrowBlue)"/>
+
+  <text x="340" y="175" text-anchor="middle" fill="#fbbf24" font-size="11" font-weight="600">中等效果</text>
+  <text x="340" y="190" text-anchor="middle" fill="#64748b" font-size="9">对手变化时退化</text>
+
+  <!-- Section 3: Mechanism 2 - Reputation -->
+  <rect x="430" y="60" width="140" height="130" rx="8" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="500" y="83" text-anchor="middle" fill="#c4b5fd" font-size="11" font-weight="600">② 声誉系统</text>
+  <text x="500" y="100" text-anchor="middle" fill="#64748b" font-size="9">Reputation</text>
+
+  <!-- Reputation chain -->
+  <circle cx="470" cy="140" r="8" fill="#8b5cf6" opacity="0.8"/>
+  <line x1="478" y1="140" x2="494" y2="140" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="3,2"/>
+  <circle cx="500" cy="140" r="8" fill="#8b5cf6" opacity="0.6"/>
+  <line x1="508" y1="140" x2="524" y2="140" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="3,2"/>
+  <circle cx="530" cy="140" r="8" fill="#8b5cf6" opacity="0.4"/>
+
+  <text x="500" y="175" text-anchor="middle" fill="#fbbf24" font-size="11" font-weight="600">中等效果</text>
+  <text x="500" y="190" text-anchor="middle" fill="#64748b" font-size="9">异质群体中有限</text>
+
+  <!-- Section 4: Mechanism 3 - Mediation -->
+  <rect x="590" y="60" width="140" height="130" rx="8" fill="#1e293b" stroke="#06b6d4" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="660" y="83" text-anchor="middle" fill="#67e8f9" font-size="11" font-weight="600">③ 第三方调解</text>
+  <text x="660" y="100" text-anchor="middle" fill="#64748b" font-size="9">Mediation</text>
+
+  <!-- Mediator diagram -->
+  <rect x="645" y="125" width="30" height="20" rx="4" fill="#06b6d4" opacity="0.9"/>
+  <text x="660" y="139" text-anchor="middle" fill="white" font-size="8" font-weight="600">调解</text>
+  <line x1="630" y1="135" x2="645" y2="135" stroke="#06b6d4" stroke-width="1.5"/>
+  <line x1="675" y1="135" x2="690" y2="135" stroke="#06b6d4" stroke-width="1.5"/>
+  <text x="625" y="140" text-anchor="end" fill="#06b6d4" font-size="9">A</text>
+  <text x="695" y="140" text-anchor="start" fill="#06b6d4" font-size="9">B</text>
+
+  <text x="660" y="175" text-anchor="middle" fill="#4ade80" font-size="11" font-weight="600">效果好</text>
+  <text x="660" y="190" text-anchor="middle" fill="#64748b" font-size="9">首次为LLM实现</text>
+
+  <!-- Section 5: Mechanism 4 - Contracts (BEST) -->
+  <rect x="270" y="210" width="140" height="130" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+  <text x="340" y="233" text-anchor="middle" fill="#fde68a" font-size="11" font-weight="600">④ 合约协议</text>
+  <text x="340" y="250" text-anchor="middle" fill="#64748b" font-size="9">Contracts (BEST)</text>
+
+  <!-- Contract diagram -->
+  <rect x="305" y="265" width="70" height="30" rx="4" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="340" y="284" text-anchor="middle" fill="#fde68a" font-size="9">条件支付合约</text>
+  <line x1="305" y1="280" x2="290" y2="280" stroke="#f59e0b" stroke-width="1.5"/>
+  <line x1="375" y1="280" x2="390" y2="280" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="285" y="284" text-anchor="end" fill="#f59e0b" font-size="9">A</text>
+  <text x="395" y="284" text-anchor="start" fill="#f59e0b" font-size="9">B</text>
+
+  <text x="340" y="320" text-anchor="middle" fill="#4ade80" font-size="11" font-weight="600">效果最佳</text>
+  <text x="340" y="335" text-anchor="middle" fill="#64748b" font-size="9">条件补偿最有效</text>
+
+  <!-- Bottom key finding -->
+  <rect x="430" y="210" width="300" height="130" rx="8" fill="#1e293b" stroke="#ef4444" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="580" y="238" text-anchor="middle" fill="#fca5a5" font-size="12" font-weight="700">关键发现</text>
+
+  <text x="450" y="265" fill="#e2e8f0" font-size="11">推理能力越强  合作越少</text>
+  <text x="450" y="285" fill="#e2e8f0" font-size="11">合约 &amp; 调解  最有效</text>
+  <text x="450" y="305" fill="#e2e8f0" font-size="11">所有LLM在单次博弈中  一致背叛</text>
+  <text x="450" y="325" fill="#e2e8f0" font-size="11">进化压力下机制更有效</text>
+</svg>
