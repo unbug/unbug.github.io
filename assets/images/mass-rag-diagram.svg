@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="700" height="320" fill="#fafbfc" rx="8"/>
+  
+  <!-- Title -->
+  <text x="350" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a2e">MASS-RAG: Multi-Agent Synthesis RAG</text>
+  
+  <!-- Input Query -->
+  <rect x="20" y="55" width="100" height="40" rx="6" fill="#e8f4f8" stroke="#3498db" stroke-width="2"/>
+  <text x="70" y="80" text-anchor="middle" font-size="13" fill="#2c3e50">Query</text>
+  
+  <!-- Retrieval -->
+  <rect x="170" y="55" width="120" height="40" rx="6" fill="#e8f4f8" stroke="#3498db" stroke-width="2"/>
+  <text x="230" y="75" text-anchor="middle" font-size="13" fill="#2c3e50">Document</text>
+  <text x="230" y="90" text-anchor="middle" font-size="11" fill="#7f8c8d">Retrieval</text>
+  
+  <!-- Arrow 1 -->
+  <line x1="120" y1="75" x2="165" y2="75" stroke="#3498db" stroke-width="2" marker-end="url(#arrowblue)"/>
+  
+  <!-- Agent 1: Evidence Summary -->
+  <rect x="320" y="55" width="130" height="40" rx="6" fill="#fef9e7" stroke="#f39c12" stroke-width="2"/>
+  <text x="385" y="73" text-anchor="middle" font-size="12" fill="#2c3e50" font-weight="bold">Evidence</text>
+  <text x="385" y="88" text-anchor="middle" font-size="12" fill="#2c3e50" font-weight="bold">Summary</text>
+  
+  <!-- Arrow 2 -->
+  <line x1="290" y1="75" x2="315" y2="75" stroke="#3498db" stroke-width="2" marker-end="url(#arrowblue)"/>
+  
+  <!-- Agent 2: Evidence Extraction -->
+  <rect x="470" y="55" width="130" height="40" rx="6" fill="#fef9e7" stroke="#f39c12" stroke-width="2"/>
+  <text x="535" y="73" text-anchor="middle" font-size="12" fill="#2c3e50" font-weight="bold">Evidence</text>
+  <text x="535" y="88" text-anchor="middle" font-size="12" fill="#2c3e50" font-weight="bold">Extraction</text>
+  
+  <!-- Arrow 3 -->
+  <line x1="450" y1="75" x2="465" y2="75" stroke="#3498db" stroke-width="2" marker-end="url(#arrowblue)"/>
+  
+  <!-- Agent 3: Reasoning -->
+  <rect x="320" y="140" width="130" height="40" rx="6" fill="#fef9e7" stroke="#f39c12" stroke-width="2"/>
+  <text x="385" y="158" text-anchor="middle" font-size="12" fill="#2c3e50" font-weight="bold">Reasoning</text>
+  
+  <!-- Arrow down from extraction -->
+  <line x1="535" y1="95" x2="535" y2="130" stroke="#3498db" stroke-width="2"/>
+  <line x1="535" y1="130" x2="450" y2="130" stroke="#3498db" stroke-width="2" marker-end="url(#arrowblue)"/>
+  
+  <!-- Arrow down to synthesis -->
+  <line x1="385" y1="180" x2="385" y2="210" stroke="#3498db" stroke-width="2" marker-end="url(#arrowblue)"/>
+  
+  <!-- Synthesis Stage -->
+  <rect x="320" y="215" width="130" height="45" rx="6" fill="#eaf2f8" stroke="#2980b9" stroke-width="2.5"/>
+  <text x="385" y="235" text-anchor="middle" font-size="13" fill="#2c3e50" font-weight="bold">Synthesis</text>
+  <text x="385" y="252" text-anchor="middle" font-size="11" fill="#2980b9">Integration</text>
+  
+  <!-- Arrow to Output -->
+  <line x1="450" y1="237" x2="540" y2="237" stroke="#27ae60" stroke-width="2.5" marker-end="url(#arrowgreen)"/>
+  
+  <!-- Output -->
+  <rect x="550" y="215" width="130" height="45" rx="6" fill="#eafaf1" stroke="#27ae60" stroke-width="2.5"/>
+  <text x="615" y="235" text-anchor="middle" font-size="13" fill="#2c3e50" font-weight="bold">Final</text>
+  <text x="615" y="252" text-anchor="middle" font-size="13" fill="#2c3e50" font-weight="bold">Answer</text>
+  
+  <!-- Side notes -->
+  <text x="385" y="120" text-anchor="middle" font-size="10" fill="#7f8c8d">Multi-Agent Processing</text>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowblue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3498db"/>
+    </marker>
+    <marker id="arrowgreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#27ae60"/>
+    </marker>
+  </defs>
+</svg>
