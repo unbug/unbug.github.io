@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" rx="12" fill="#0f172a"/>
+  <text x="400" y="50" text-anchor="middle" fill="#e2e8f0" font-size="22" font-family="system-ui" font-weight="bold">Externalization in LLM Agents</text>
+  <text x="400" y="75" text-anchor="middle" fill="#94a3b8" font-size="14" font-family="system-ui">四维度外化框架</text>
+
+  <!-- Central node -->
+  <rect x="320" y="110" width="160" height="50" rx="8" fill="#3b82f6" opacity="0.9"/>
+  <text x="400" y="140" text-anchor="middle" fill="#ffffff" font-size="15" font-family="system-ui" font-weight="bold">LLM Agent</text>
+
+  <!-- Four dimensions -->
+  <!-- Memory -->
+  <rect x="40" y="200" width="140" height="50" rx="8" fill="#1e40af"/>
+  <text x="110" y="230" text-anchor="middle" fill="#ffffff" font-size="14" font-family="system-ui" font-weight="bold">Memory</text>
+  <line x1="180" y1="225" x2="320" y2="160" stroke="#3b82f6" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- Skills -->
+  <rect x="210" y="280" width="140" height="50" rx="8" fill="#7c3aed"/>
+  <text x="280" y="310" text-anchor="middle" fill="#ffffff" font-size="14" font-family="system-ui" font-weight="bold">Skills</text>
+  <line x1="350" y1="295" x2="380" y2="160" stroke="#7c3aed" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- Protocols -->
+  <rect x="450" y="280" width="140" height="50" rx="8" fill="#059669"/>
+  <text x="520" y="310" text-anchor="middle" fill="#ffffff" font-size="14" font-family="system-ui" font-weight="bold">Protocols</text>
+  <line x1="450" y1="295" x2="420" y2="160" stroke="#059669" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- Harness -->
+  <rect x="620" y="200" width="140" height="50" rx="8" fill="#dc2626"/>
+  <text x="690" y="230" text-anchor="middle" fill="#ffffff" font-size="14" font-family="system-ui" font-weight="bold">Harness</text>
+  <line x1="620" y1="225" x2="480" y2="160" stroke="#dc2626" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- Direction arrows -->
+  <path d="M 400 160 L 400 200" stroke="#e2e8f0" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#e2e8f0"/>
+    </marker>
+  </defs>
+
+  <!-- Bottom label -->
+  <text x="400" y="370" text-anchor="middle" fill="#64748b" font-size="12" font-family="system-ui">From Weights to Externalized Components</text>
+</svg>
