@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="agentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f0fe;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#c5d8f0;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="latentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fce4ec;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f8bbd0;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="taskGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f5e9;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#c8e6c9;stop-opacity:1"/>
+    </linearGradient>
+    <marker id="arrowGray" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#666"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#d32f2f"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#1565c0"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="420" rx="8" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="350" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">DiffMAS: 多智能体隐式通信架构</text>
+
+  <!-- Task Input -->
+  <rect x="240" y="50" width="220" height="36" rx="6" fill="url(#taskGrad)" stroke="#4caf50" stroke-width="1.5"/>
+  <text x="350" y="73" text-anchor="middle" font-size="13" fill="#2e7d32" font-weight="bold">复杂推理任务</text>
+
+  <!-- Arrow from task to Agent A -->
+  <line x1="280" y1="86" x2="180" y2="120" stroke="#666" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  <!-- Arrow from task to Agent B -->
+  <line x1="420" y1="86" x2="520" y2="120" stroke="#666" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+
+  <!-- Agent A -->
+  <rect x="60" y="120" width="220" height="100" rx="8" fill="url(#agentGrad)" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="170" y="145" text-anchor="middle" font-size="14" font-weight="bold" fill="#1565c0">Agent A (编码器)</text>
+
+  <!-- Agent A internal components -->
+  <rect x="80" y="155" width="180" height="22" rx="4" fill="#fff" stroke="#90caf9" stroke-width="1"/>
+  <text x="170" y="170" text-anchor="middle" font-size="11" fill="#333">推理模块 (Frozen)</text>
+
+  <rect x="80" y="185" width="180" height="22" rx="4" fill="#fff" stroke="#ef9a9a" stroke-width="1"/>
+  <text x="170" y="200" text-anchor="middle" font-size="11" fill="#d32f2f" font-weight="bold">投影层: 文本 -> 隐向量</text>
+
+  <!-- Agent B -->
+  <rect x="420" y="120" width="220" height="100" rx="8" fill="url(#agentGrad)" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="530" y="145" text-anchor="middle" font-size="14" font-weight="bold" fill="#1565c0">Agent B (解码器)</text>
+
+  <!-- Agent B internal components -->
+  <rect x="440" y="155" width="180" height="22" rx="4" fill="#fff" stroke="#90caf9" stroke-width="1"/>
+  <text x="530" y="170" text-anchor="middle" font-size="11" fill="#333">推理模块 (Frozen)</text>
+
+  <rect x="440" y="185" width="180" height="22" rx="4" fill="#fff" stroke="#ef9a9a" stroke-width="1"/>
+  <text x="530" y="200" text-anchor="middle" font-size="11" fill="#d32f2f" font-weight="bold">投影层: 隐向量 -> 推理注入</text>
+
+  <!-- Latent Communication Channel -->
+  <rect x="290" y="150" width="120" height="60" rx="30" fill="url(#latentGrad)" stroke="#d32f2f" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="350" y="175" text-anchor="middle" font-size="12" font-weight="bold" fill="#c62828">隐空间</text>
+  <text x="350" y="193" text-anchor="middle" font-size="10" fill="#ad1414">可学习表示</text>
+
+  <!-- Arrows for latent communication -->
+  <line x1="280" y1="180" x2="290" y2="180" stroke="#d32f2f" stroke-width="2" marker-end="url(#arrowRed)"/>
+  <line x1="410" y1="180" x2="420" y2="180" stroke="#d32f2f" stroke-width="2" marker-end="url(#arrowRed)"/>
+
+  <!-- Bidirectional arrow label -->
+  <text x="350" y="148" text-anchor="middle" font-size="9" fill="#888">联合优化</text>
+
+  <!-- Training loop arrow -->
+  <path d="M 170 220 Q 170 280 350 280 Q 530 280 530 220" fill="none" stroke="#1565c0" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowBlue)"/>
+  <text x="350" y="295" text-anchor="middle" font-size="11" fill="#1565c0">参数高效监督训练</text>
+
+  <!-- Output -->
+  <line x1="350" y1="300" x2="350" y2="340" stroke="#666" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  <rect x="240" y="340" width="220" height="36" rx="6" fill="url(#taskGrad)" stroke="#4caf50" stroke-width="1.5"/>
+  <text x="350" y="363" text-anchor="middle" font-size="13" fill="#2e7d32" font-weight="bold">推理结果 (更准确)</text>
+
+  <!-- Key insight box -->
+  <rect x="40" y="390" width="620" height="24" rx="4" fill="#fff3e0" stroke="#ff9800" stroke-width="1"/>
+  <text x="350" y="406" text-anchor="middle" font-size="11" fill="#e65100">传统: 文本协议 (固定) vs DiffMAS: 隐式通信 (可学习) — 通信即推理</text>
+
+</svg>
