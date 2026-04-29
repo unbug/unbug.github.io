@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Arial, sans-serif">
+  <rect width="800" height="500" fill="#fafbfc"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a1a2e">Complete Cyclic Subtask Graph</text>
+  <text x="400" y="55" text-anchor="middle" font-size="12" fill="#666">Fully connected subtask nodes with unified router</text>
+  
+  <!-- Subtask nodes (hexagonal layout) -->
+  <g id="nodes">
+    <!-- Node A: Top -->
+    <polygon points="400,80 440,110 440,155 400,185 360,155 360,110" fill="#e8f4fd" stroke="#2196F3" stroke-width="2"/>
+    <text x="400" y="140" text-anchor="middle" font-size="13" fill="#1565C0">Subtask A</text>
+    
+    <!-- Node B: Top-Right -->
+    <polygon points="530,150 570,180 570,225 530,255 490,225 490,180" fill="#e8f4fd" stroke="#2196F3" stroke-width="2"/>
+    <text x="530" y="210" text-anchor="middle" font-size="13" fill="#1565C0">Subtask B</text>
+    
+    <!-- Node C: Bottom-Right -->
+    <polygon points="530,280 570,310 570,355 530,385 490,355 490,310" fill="#e8f4fd" stroke="#2196F3" stroke-width="2"/>
+    <text x="530" y="340" text-anchor="middle" font-size="13" fill="#1565C0">Subtask C</text>
+    
+    <!-- Node D: Bottom -->
+    <polygon points="400,325 440,355 440,400 400,430 360,400 360,355" fill="#e8f4fd" stroke="#2196F3" stroke-width="2"/>
+    <text x="400" y="385" text-anchor="middle" font-size="13" fill="#1565C0">Subtask D</text>
+    
+    <!-- Node E: Bottom-Left -->
+    <polygon points="270,280 310,310 310,355 270,385 230,355 230,310" fill="#e8f4fd" stroke="#2196F3" stroke-width="2"/>
+    <text x="270" y="340" text-anchor="middle" font-size="13" fill="#1565C0">Subtask E</text>
+    
+    <!-- Node F: Top-Left -->
+    <polygon points="270,150 310,180 310,225 270,255 230,225 230,180" fill="#e8f4fd" stroke="#2196F3" stroke-width="2"/>
+    <text x="270" y="210" text-anchor="middle" font-size="13" fill="#1565C0">Subtask F</text>
+  </g>
+  
+  <!-- All-to-all connections (cyclic) -->
+  <g id="edges" stroke="#90caf9" stroke-width="1" fill="none" opacity="0.6">
+    <!-- From A to all others -->
+    <line x1="400" y1="185" x2="490" y2="225"/>
+    <line x1="400" y1="185" x2="530" y2="280"/>
+    <line x1="400" y1="185" x2="400" y2="325"/>
+    <line x1="400" y1="185" x2="270" y2="280"/>
+    <line x1="400" y1="185" x2="270" y2="150"/>
+    <!-- From B to all others -->
+    <line x1="490" y1="225" x2="400" y2="80"/>
+    <line x1="490" y1="225" x2="400" y2="325"/>
+    <line x1="490" y1="225" x2="270" y2="280"/>
+    <line x1="490" y1="225" x2="270" y2="150"/>
+    <line x1="490" y1="225" x2="530" y2="280"/>
+    <!-- From C to all others -->
+    <line x1="530" y1="385" x2="400" y2="80"/>
+    <line x1="530" y1="385" x2="400" y2="185"/>
+    <line x1="530" y1="385" x2="270" y2="150"/>
+    <!-- From D to all others -->
+    <line x1="400" y1="325" x2="270" y2="150"/>
+    <!-- From E to all others -->
+    <line x1="270" y1="255" x2="400" y2="80"/>
+    <!-- From F to all others -->
+    <line x1="270" y1="255" x2="400" y2="325"/>
+  </g>
+  
+  <!-- Router in center -->
+  <rect x="365" y="215" width="70" height="70" rx="10" fill="#fff3e0" stroke="#FF9800" stroke-width="2"/>
+  <text x="400" y="245" text-anchor="middle" font-size="11" fill="#E65100">State</text>
+  <text x="400" y="262" text-anchor="middle" font-size="11" fill="#E65100">Analyzer</text>
+  <text x="400" y="279" text-anchor="middle" font-size="11" fill="#E65100">&amp; Router</text>
+  
+  <!-- Legend -->
+  <g id="legend" transform="translate(50, 440)">
+    <rect x="0" y="0" width="16" height="16" fill="#e8f4fd" stroke="#2196F3" stroke-width="1.5"/>
+    <text x="22" y="13" font-size="12" fill="#333">Subtask Node</text>
+    <rect x="120" y="0" width="16" height="16" fill="#fff3e0" stroke="#FF9800" stroke-width="1.5"/>
+    <text x="142" y="13" font-size="12" fill="#333">Router</text>
+    <line x1="250" y1="8" x2="280" y2="8" stroke="#90caf9" stroke-width="1.5"/>
+    <text x="286" y="13" font-size="12" fill="#333">Connection</text>
+  </g>
+  
+  <!-- Key insight -->
+  <text x="400" y="480" text-anchor="middle" font-size="11" fill="#888">Benchmark structure determines whether flexibility is an asset or a tax</text>
+</svg>
