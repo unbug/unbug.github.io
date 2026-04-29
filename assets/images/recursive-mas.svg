@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8f9fa"/>
+      <stop offset="100%" stop-color="#e9ecef"/>
+    </linearGradient>
+    <linearGradient id="innerGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4a90d9"/>
+      <stop offset="100%" stop-color="#357abd"/>
+    </linearGradient>
+    <linearGradient id="outerGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5b6abf"/>
+      <stop offset="100%" stop-color="#4352a3"/>
+    </linearGradient>
+    <linearGradient id="linkGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e8567f"/>
+      <stop offset="100%" stop-color="#d9436b"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2c3e50">RecursiveMAS: 递归多智能体系统框架</text>
+
+  <!-- Outer ring (cross-agent) -->
+  <ellipse cx="400" cy="260" rx="310" ry="170" fill="none" stroke="#5b6abf" stroke-width="2.5" stroke-dasharray="12 6" opacity="0.5"/>
+  <text x="400" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#5b6abf">外环：跨 Agent 递归</text>
+
+  <!-- Inner ring (within-agent) -->
+  <ellipse cx="400" cy="260" rx="195" ry="110" fill="none" stroke="#4a90d9" stroke-width="2" stroke-dasharray="8 4" opacity="0.5"/>
+  <text x="400" y="162" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#4a90d9">内环：Agent 内部递归</text>
+
+  <!-- Agent nodes -->
+  <!-- Agent 1: top -->
+  <rect x="340" y="130" width="120" height="56" rx="10" fill="url(#innerGrad)" filter="url(#shadow)"/>
+  <text x="400" y="153" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Agent A</text>
+  <text x="400" y="172" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#c8daf8">推理层 1</text>
+
+  <!-- Agent 2: right -->
+  <rect x="560" y="232" width="120" height="56" rx="10" fill="url(#innerGrad)" filter="url(#shadow)"/>
+  <text x="620" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Agent B</text>
+  <text x="620" y="274" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#c8daf8">推理层 2</text>
+
+  <!-- Agent 3: bottom -->
+  <rect x="340" y="374" width="120" height="56" rx="10" fill="url(#innerGrad)" filter="url(#shadow)"/>
+  <text x="400" y="397" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Agent C</text>
+  <text x="400" y="416" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#c8daf8">推理层 3</text>
+
+  <!-- Agent 4: left -->
+  <rect x="120" y="232" width="120" height="56" rx="10" fill="url(#innerGrad)" filter="url(#shadow)"/>
+  <text x="180" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Agent D</text>
+  <text x="180" y="274" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#c8daf8">推理层 4</text>
+
+  <!-- RecursiveLink arrows (cross-agent connections) -->
+  <!-- A -> B -->
+  <path d="M 460 158 Q 520 190 560 240" fill="none" stroke="url(#linkGrad)" stroke-width="2.5" marker-end="url(#arrowRed)"/>
+  <!-- B -> C -->
+  <path d="M 560 260 Q 490 330 460 380" fill="none" stroke="url(#linkGrad)" stroke-width="2.5" marker-end="url(#arrowRed)"/>
+  <!-- C -> D -->
+  <path d="M 340 402 Q 250 380 240 290" fill="none" stroke="url(#linkGrad)" stroke-width="2.5" marker-end="url(#arrowRed)"/>
+  <!-- D -> A -->
+  <path d="M 180 232 Q 200 180 340 186" fill="none" stroke="url(#linkGrad)" stroke-width="2.5" marker-end="url(#arrowRed)"/>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowRed" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#d9436b"/>
+    </marker>
+  </defs>
+
+  <!-- RecursiveLink label -->
+  <rect x="340" y="248" width="120" height="24" rx="6" fill="#d9436b" opacity="0.9"/>
+  <text x="400" y="264" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">RecursiveLink</text>
+
+  <!-- Inner recursion arrows (within each agent) -->
+  <!-- Agent A inner -->
+  <path d="M 355 148 Q 340 130 365 145" fill="none" stroke="#4a90d9" stroke-width="1.5" stroke-dasharray="3 2" marker-end="url(#arrowBlue)"/>
+  <!-- Agent B inner -->
+  <path d="M 575 250 Q 560 232 585 247" fill="none" stroke="#4a90d9" stroke-width="1.5" stroke-dasharray="3 2" marker-end="url(#arrowBlue)"/>
+  <!-- Agent C inner -->
+  <path d="M 355 392 Q 340 374 365 389" fill="none" stroke="#4a90d9" stroke-width="1.5" stroke-dasharray="3 2" marker-end="url(#arrowBlue)"/>
+  <!-- Agent D inner -->
+  <path d="M 175 248 Q 160 230 185 245" fill="none" stroke="#4a90d9" stroke-width="1.5" stroke-dasharray="3 2" marker-end="url(#arrowBlue)"/>
+
+  <!-- Arrow marker blue -->
+  <defs>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4a90d9"/>
+    </marker>
+  </defs>
+
+  <!-- Inner ring label near top-left -->
+  <text x="260" y="195" font-family="Arial, sans-serif" font-size="11" fill="#4a90d9">残差投影</text>
+  <line x1="265" y1="198" x2="310" y2="198" stroke="#4a90d9" stroke-width="1" stroke-dasharray="2 2"/>
+
+  <!-- Training paradigm labels -->
+  <text x="660" y="108" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">内环：模型级预热</text>
+  <text x="660" y="124" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">外环：系统级训练</text>
+
+  <!-- Four collaboration modes -->
+  <rect x="20" y="440" width="175" height="42" rx="8" fill="white" stroke="#4a90d9" stroke-width="1.5" opacity="0.9"/>
+  <text x="107" y="458" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">顺序推理</text>
+  <text x="107" y="474" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6c7a89">Sequential Reasoning</text>
+
+  <rect x="205" y="440" width="175" height="42" rx="8" fill="white" stroke="#5b6abf" stroke-width="1.5" opacity="0.9"/>
+  <text x="292" y="458" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">混合专家</text>
+  <text x="292" y="474" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6c7a89">Mixed Experts</text>
+
+  <rect x="390" y="440" width="175" height="42" rx="8" fill="white" stroke="#e8567f" stroke-width="1.5" opacity="0.9"/>
+  <text x="477" y="458" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">知识蒸馏</text>
+  <text x="477" y="474" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6c7a89">Knowledge Distillation</text>
+
+  <rect x="575" y="440" width="175" height="42" rx="8" fill="white" stroke="#5b6abf" stroke-width="1.5" opacity="0.9"/>
+  <text x="662" y="458" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">工具集成深思</text>
+  <text x="662" y="474" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6c7a89">Tool-Augmented Deep Thought</text>
+
+  <!-- Key metrics -->
+  <text x="400" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#6c7a89">9个基准验证  平均准确率 +8.3%  推理加速 1.2x-2.4x  Token减少 34.6%-75.6%</text>
+</svg>
