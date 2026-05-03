@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8f9fa"/>
+      <stop offset="100%" stop-color="#e9ecef"/>
+    </linearGradient>
+    <linearGradient id="teacherGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4a6cf7"/>
+      <stop offset="100%" stop-color="#2d4ed8"/>
+    </linearGradient>
+    <linearGradient id="studentGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#16a34a"/>
+    </linearGradient>
+    <linearGradient id="tideGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="50%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="42" text-anchor="middle" font-size="20" font-weight="700" fill="#1e293b">TIDE: 扩散语言模型的跨架构蒸馏</text>
+  <text x="400" y="64" text-anchor="middle" font-size="13" fill="#64748b">Turning the TIDE: Cross-Architecture Distillation for Diffusion LLMs</text>
+
+  <!-- Teacher Model (Left) -->
+  <rect x="40" y="100" width="200" height="200" rx="12" fill="url(#teacherGrad)" filter="url(#shadow)"/>
+  <text x="140" y="135" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">教师模型</text>
+  <text x="140" y="158" text-anchor="middle" font-size="13" fill="#c7d2fe">LLaDA2.0-mini</text>
+  <line x1="80" y1="175" x2="200" y2="175" stroke="#c7d2fe" stroke-width="1" opacity="0.5"/>
+  <text x="140" y="198" text-anchor="middle" font-size="12" fill="#e0e7ff">16B MoE</text>
+  <text x="140" y="218" text-anchor="middle" font-size="12" fill="#e0e7ff">分词器 A</text>
+  <text x="140" y="238" text-anchor="middle" font-size="12" fill="#e0e7ff">扩散过程 + 注意力</text>
+  <text x="140" y="258" text-anchor="middle" font-size="12" fill="#e0e7ff">31.3 GB 内存</text>
+
+  <!-- Student Model (Right) -->
+  <rect x="560" y="100" width="200" height="200" rx="12" fill="url(#studentGrad)" filter="url(#shadow)"/>
+  <text x="660" y="135" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">学生模型</text>
+  <text x="660" y="158" text-anchor="middle" font-size="13" fill="#bbf7d0">Qwen3-BD3LM</text>
+  <line x1="600" y1="175" x2="720" y2="175" stroke="#bbf7d0" stroke-width="1" opacity="0.5"/>
+  <text x="660" y="198" text-anchor="middle" font-size="12" fill="#dcfce7">0.6B</text>
+  <text x="660" y="218" text-anchor="middle" font-size="12" fill="#dcfce7">分词器 B</text>
+  <text x="660" y="238" text-anchor="middle" font-size="12" fill="#dcfce7">扩散过程 + 注意力</text>
+  <text x="660" y="258" text-anchor="middle" font-size="12" fill="#dcfce7">1.4 GB 内存</text>
+
+  <!-- TIDE Bridge (Center) -->
+  <rect x="260" y="140" width="280" height="120" rx="10" fill="#fff" stroke="#8b5cf6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="400" y="168" text-anchor="middle" font-size="15" font-weight="700" fill="#7c3aed">TIDE 蒸馏框架</text>
+  <line x1="290" y1="180" x2="510" y2="180" stroke="#e2e8f0" stroke-width="1"/>
+
+  <text x="280" y="200" font-size="12" fill="#475569">1. TIDAL</text>
+  <text x="460" y="200" font-size="11" fill="#64748b">双轴调度</text>
+
+  <text x="280" y="222" font-size="12" fill="#475569">2. CompDemo</text>
+  <text x="460" y="222" font-size="11" fill="#64748b">上下文增强</text>
+
+  <text x="280" y="244" font-size="12" fill="#475569">3. Reverse CALM</text>
+  <text x="460" y="244" font-size="11" fill="#64748b">跨分词器匹配</text>
+
+  <!-- Arrows -->
+  <path d="M 240 190 L 258 190" stroke="#4a6cf7" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <path d="M 542 190 L 560 190" stroke="#22c55e" stroke-width="2" marker-end="url(#arrowGreen)"/>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4a6cf7"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#22c55e"/>
+    </marker>
+  </defs>
+
+  <!-- Key Metrics (Bottom) -->
+  <rect x="100" y="340" width="600" height="130" rx="10" fill="#fff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+  <text x="400" y="370" text-anchor="middle" font-size="14" font-weight="600" fill="#334155">核心成果</text>
+  <line x1="200" y1="382" x2="600" y2="382" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Metric 1 -->
+  <rect x="130" y="395" width="130" height="55" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="195" y="418" text-anchor="middle" font-size="22" font-weight="700" fill="#d97706">22x</text>
+  <text x="195" y="438" text-anchor="middle" font-size="11" fill="#92400e">内存降低</text>
+
+  <!-- Metric 2 -->
+  <rect x="290" y="395" width="130" height="55" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="355" y="418" text-anchor="middle" font-size="22" font-weight="700" fill="#2563eb">5.2x</text>
+  <text x="355" y="438" text-anchor="middle" font-size="11" fill="#1e40af">推理加速</text>
+
+  <!-- Metric 3 -->
+  <rect x="450" y="395" width="130" height="55" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+  <text x="515" y="418" text-anchor="middle" font-size="22" font-weight="700" fill="#16a34a">+16.48</text>
+  <text x="515" y="438" text-anchor="middle" font-size="11" fill="#166534">HumanEval</text>
+
+  <!-- Metric 4 -->
+  <rect x="610" y="395" width="130" height="55" rx="8" fill="#f3e8ff" stroke="#a855f7" stroke-width="1"/>
+  <text x="675" y="418" text-anchor="middle" font-size="22" font-weight="700" fill="#9333ea">16B→0.6B</text>
+  <text x="675" y="438" text-anchor="middle" font-size="11" fill="#6b21a8">压缩比</text>
+
+  <!-- Source -->
+  <text x="400" y="492" text-anchor="middle" font-size="10" fill="#94a3b8">arXiv:2604.26951 | PKU-YuanGroup</text>
+</svg>
