@@ -1,51 +1,48 @@
 ---
 layout: post
-title:  "一分钟读论文：《TIDE：扩散语言模型的跨架构蒸馏》"
+title:  "一分钟读论文：《把百亿模型装进手机：TIDE实现扩散语言模型跨架构蒸馏》"
 author: unbug
 categories: [AI, MachineLearning]
 image: assets/images/article-41-tide.svg
 tags: [DiffusionLM, KnowledgeDistillation, ModelCompression, CrossArchitecture, dLLM]
 ---
 
-北京大学和浙江大学研究者发表的论文[《Turning the TIDE: Cross-Architecture Distillation for Diffusion Large Language Models》][paper1-url]，提出首个面向扩散语言模型的跨架构蒸馏框架TIDE，将16B MoE教师模型压缩至0.6B学生模型，在HumanEval代码生成任务上提升16.48分，推理加速5.2倍，峰值内存降低22倍。
+北京大学和浙江大学合作的一篇论文[《Turning the TIDE: Cross-Architecture Distillation for Diffusion Large Language Models》][paper1-url]，首次实现了扩散语言模型（dLLM）的跨架构蒸馏，将16B MoE教师模型压缩到0.6B学生模型，峰值内存降低22倍、推理加速5.2倍：
 
-扩散语言模型（dLLM）使用扩散过程对文本进行建模，与自回归（AR）模型逐字生成不同，dLLM支持并行解码和双向上下文理解，已在多个基准上展现出竞争力。然而，当前最先进的dLLM需要数十亿参数才能达到可接受的性能，这严重限制了其在消费级硬件上的部署。已有蒸馏方法仅限于同一架构内的步数压缩，无法解决跨架构知识迁移问题——即教师和学生模型在架构、注意力机制和分词器上均存在差异的场景。
+## 扩散语言模型的蒸馏难题
 
-## 跨架构蒸馏的核心挑战
+扩散语言模型使用扩散过程对文本进行建模，与传统的自回归（AR）模型不同，dLLM支持并行解码和双向上下文理解，在多项基准上展现出与AR模型相当甚至更优的性能。然而，现有dLLM需要数十亿参数才能达到有竞争力的性能，难以在消费级硬件上部署。
 
-跨架构蒸馏面临两个根本性难题。首先，教师和学生模型的分词器不同，token无法直接对齐。传统蒸馏方法假设师生模型共享相同的token空间，可以直接计算输出分布的KL散度，但在跨分词器场景下，同一语义可能被编码为完全不同的token序列。
+知识蒸馏是压缩大模型的有效方法，但dLLM的蒸馏面临一个根本挑战：跨架构蒸馏。现有蒸馏方法仅限于同一架构内的步数压缩，当教师和学生模型在架构、注意力机制和分词器上存在差异时，token无法直接对齐。TIDE框架通过三个核心组件解决了这一难题。
 
-其次，扩散过程的噪声调度使得教师信号在不同掩码比率下可靠性差异巨大。在高噪声区域（即高掩码比率），教师模型输出的token预测置信度低，直接蒸馏会产生误导性信号，拖累学生模型的训练。
+## TIDE的核心方法
 
-## TIDE框架设计
+TIDE框架包含三个关键设计。
 
-TIDE框架针对上述挑战设计了三个核心模块：
+**TIDAL调度机制**在训练进度和扩散时间步两个维度上联合调节蒸馏强度。当掩码比率较高、教师模型输出不可靠时，TIDAL自动降低该时间步的蒸馏权重，避免学生模型从噪声信号中学习。
 
-**TIDAL双轴调度机制**在训练进度和扩散时间步两个维度上联合调节蒸馏强度。在训练初期和较低噪声阶段，蒸馏强度较高以快速传递知识；随着训练推进和噪声增加，自动降权教师在高掩码比率区域的不可靠信号。这相当于在蒸馏过程中动态识别"教师何时在胡说"，并对这些时刻减权。
+**CompDemo上下文增强**通过两次教师推理，生成互补的掩码分割，让每个掩码位置看到约50%的已揭示上下文。这显著提高了高噪声区域教师信号的质量。
 
-**CompDemo上下文增强**通过两次教师推理解决高噪声下的信号质量问题。传统方法对每个掩码位置仅进行一次教师推理，揭示的上下文信息有限。CompDemo通过互补掩码分割策略，让每个掩码位置看到约50%的已揭示上下文，显著提高高噪声区域教师信号的质量。
+**Reverse CALM跨分词器匹配**解决了最核心的跨分词器对齐问题。由于教师和学生使用不同分词器，token无法直接对应。Reverse CALM采用反向分块级二元交叉熵，将教师和学生输出按分块进行概率匹配，梯度系数仅依赖固定的教师模型，并加入双端噪声过滤。
 
-**Reverse CALM跨分词器匹配**解决分词器异构问题。采用反向分块级二元交叉熵实现跨分词器token匹配，梯度系数有界（仅依赖固定的教师模型），并加入双端噪声过滤，等价于Bernoulli-KL模式搜索目标。这使得学生模型能够在不共享分词器的情况下，从教师模型的输出分布中有效学习。
+TIDE支持两种蒸馏管线：跨分词器管线（LLaDA2.0-mini 16B MoE到Qwen3-0.6B-BD3LM）和共享分词器管线（WeDLM-8B到Qwen3-0.6B-BD3LM）。
 
-## 实验结果
+## 关键结果
 
-TIDE支持两种蒸馏管线：跨分词器管线（LLaDA2.0-mini 16B MoE到Qwen3-0.6B-BD3LM）和共享分词器管线（WeDLM-8B到Qwen3-0.6B-BD3LM）。在8个基准测试上的核心结果：
+在8个基准测试上，TIDE-Cross相比未蒸馏的BD3LM基线平均提升1.53分（34.20 vs 32.67）。其中HumanEval代码生成任务提升16.48分（48.78 vs 32.30），蒸馏后的dLLM在代码生成上表现尤为突出。
 
-- TIDE-Cross相比未蒸馏的BD3LM基线平均提升1.53分（34.20 vs 32.67）
-- HumanEval代码生成任务提升16.48分（48.78 vs 32.30），蒸馏后的dLLM在代码生成上表现尤为出色
-- 相比16B MoE教师模型，峰值内存降低22倍（1.4 GB vs 31.3 GB）
-- 推理速度提升5.2倍（6.25秒 vs 32.55秒，生成256 token，H100）
+相比16B MoE教师模型，蒸馏后的0.6B学生模型峰值内存降低22倍（1.4 GB vs 31.3 GB），推理速度提升5.2倍（6.25秒 vs 32.55秒，生成256 token，H100）。将16B MoE和8B Dense教师压缩到0.6B学生模型，仍保持竞争力性能。
 
-将16B MoE或8B Dense教师压缩到0.6B学生模型，仍保持竞争力性能，证明了跨架构蒸馏的实用价值。TIDE让dLLM从实验室走向消费级硬件部署成为可能。
+## 意义与展望
+
+TIDE让扩散语言模型从实验室走向消费级硬件部署成为可能。随着dLLM研究的深入，跨架构蒸馏方法有望推动更多大模型在移动设备上的应用。论文的代码、模型和数据集已在GitHub和HuggingFace开源。
 
 ## References
 
-- [arXiv 页面][links-1]
-- [GitHub 仓库][links-2]
-- [HuggingFace 模型和数据集][links-3]
+- [TIDE GitHub仓库][links-1]
+- [TIDE HuggingFace模型与数据集][links-2]
 
 
 [paper1-url]: https://arxiv.org/abs/2604.26951
-[links-1]: https://arxiv.org/abs/2604.26951
-[links-2]: https://github.com/PKU-YuanGroup/TIDE
-[links-3]: https://huggingface.co/PKU-YuanGroup/TIDE
+[links-1]: https://github.com/PKU-YuanGroup/TIDE
+[links-2]: https://huggingface.co/PKU-YuanGroup/TIDE
