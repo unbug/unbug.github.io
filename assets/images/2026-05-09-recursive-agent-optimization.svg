@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="parent" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="child" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="640" height="480" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="320" y="36" text-anchor="middle" fill="#e2e8f0" font-size="16" font-weight="700">Recursive Agent Optimization (RAO)</text>
+  <text x="320" y="56" text-anchor="middle" fill="#94a3b8" font-size="11">Recursive Task Decomposition via Reinforcement Learning</text>
+
+  <!-- Level 0: Parent Agent -->
+  <rect x="240" y="80" width="160" height="56" rx="8" fill="url(#parent)" filter="url(#shadow)"/>
+  <text x="320" y="104" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">Parent Agent</text>
+  <text x="320" y="122" text-anchor="middle" fill="#bfdbfe" font-size="10">Policy Network (Shared)</text>
+
+  <!-- Level 1: Child Agents -->
+  <rect x="60" y="180" width="140" height="52" rx="8" fill="url(#child)" filter="url(#shadow)"/>
+  <text x="130" y="202" text-anchor="middle" fill="#fff" font-size="12" font-weight="600">Child Agent 1</text>
+  <text x="130" y="218" text-anchor="middle" fill="#ddd6fe" font-size="9">Task: Subtask A</text>
+
+  <rect x="250" y="180" width="140" height="52" rx="8" fill="url(#child)" filter="url(#shadow)"/>
+  <text x="320" y="202" text-anchor="middle" fill="#fff" font-size="12" font-weight="600">Child Agent 2</text>
+  <text x="320" y="218" text-anchor="middle" fill="#ddd6fe" font-size="9">Task: Subtask B</text>
+
+  <rect x="440" y="180" width="140" height="52" rx="8" fill="url(#child)" filter="url(#shadow)"/>
+  <text x="510" y="202" text-anchor="middle" fill="#fff" font-size="12" font-weight="600">Child Agent 3</text>
+  <text x="510" y="218" text-anchor="middle" fill="#ddd6fe" font-size="9">Task: Subtask C</text>
+
+  <!-- Level 2: Leaf Agents (from Child 1) -->
+  <rect x="30" y="290" width="100" height="48" rx="6" fill="url(#leaf)" filter="url(#shadow)"/>
+  <text x="80" y="310" text-anchor="middle" fill="#fff" font-size="10" font-weight="600">Leaf 1.1</text>
+  <text x="80" y="324" text-anchor="middle" fill="#cffafe" font-size="8">Final result</text>
+
+  <rect x="145" y="290" width="100" height="48" rx="6" fill="url(#leaf)" filter="url(#shadow)"/>
+  <text x="195" y="310" text-anchor="middle" fill="#fff" font-size="10" font-weight="600">Leaf 1.2</text>
+  <text x="195" y="324" text-anchor="middle" fill="#cffafe" font-size="8">Final result</text>
+
+  <!-- Level 2: Leaf Agents (from Child 2) -->
+  <rect x="270" y="290" width="100" height="48" rx="6" fill="url(#leaf)" filter="url(#shadow)"/>
+  <text x="320" y="310" text-anchor="middle" fill="#fff" font-size="10" font-weight="600">Leaf 2.1</text>
+  <text x="320" y="324" text-anchor="middle" fill="#cffafe" font-size="8">Final result</text>
+
+  <rect x="385" y="290" width="100" height="48" rx="6" fill="url(#leaf)" filter="url(#shadow)"/>
+  <text x="435" y="310" text-anchor="middle" fill="#fff" font-size="10" font-weight="600">Leaf 2.2</text>
+  <text x="435" y="324" text-anchor="middle" fill="#cffafe" font-size="8">Final result</text>
+
+  <!-- Level 2: Leaf Agents (from Child 3) -->
+  <rect x="500" y="290" width="100" height="48" rx="6" fill="url(#leaf)" filter="url(#shadow)"/>
+  <text x="550" y="310" text-anchor="middle" fill="#fff" font-size="10" font-weight="600">Leaf 3.1</text>
+  <text x="550" y="324" text-anchor="middle" fill="#cffafe" font-size="8">Final result</text>
+
+  <!-- Connecting lines -->
+  <line x1="320" y1="136" x2="130" y2="180" stroke="#6366f1" stroke-width="2" stroke-dasharray="6,3"/>
+  <line x1="320" y1="136" x2="320" y2="180" stroke="#6366f1" stroke-width="2" stroke-dasharray="6,3"/>
+  <line x1="320" y1="136" x2="510" y2="180" stroke="#6366f1" stroke-width="2" stroke-dasharray="6,3"/>
+
+  <line x1="130" y1="232" x2="80" y2="290" stroke="#818cf8" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="130" y1="232" x2="195" y2="290" stroke="#818cf8" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="320" y1="232" x2="320" y2="290" stroke="#818cf8" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="320" y1="232" x2="435" y2="290" stroke="#818cf8" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="510" y1="232" x2="550" y2="290" stroke="#818cf8" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Delegation arrows -->
+  <text x="190" y="168" fill="#a5b4fc" font-size="9">delegate</text>
+  <text x="340" y="168" fill="#a5b4fc" font-size="9">delegate</text>
+  <text x="460" y="168" fill="#a5b4fc" font-size="9">delegate</text>
+
+  <!-- Feedback arrows -->
+  <text x="100" y="278" fill="#67e8f9" font-size="8">aggregate</text>
+  <text x="310" y="278" fill="#67e8f9" font-size="8">aggregate</text>
+  <text x="490" y="278" fill="#67e8f9" font-size="8">aggregate</text>
+
+  <!-- Bottom info -->
+  <rect x="160" y="370" width="320" height="60" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="320" y="394" text-anchor="middle" fill="#e2e8f0" font-size="12" font-weight="600">Key Properties</text>
+  <text x="200" y="414" text-anchor="middle" fill="#94a3b8" font-size="10">Shared Policy Network</text>
+  <text x="320" y="414" text-anchor="middle" fill="#94a3b8" font-size="10">RL Trained</text>
+  <text x="440" y="414" text-anchor="middle" fill="#94a3b8" font-size="10">Parallel Execution</text>
+
+  <!-- Decorative dots -->
+  <circle cx="30" cy="430" r="2" fill="#3b82f6" opacity="0.4"/>
+  <circle cx="50" cy="430" r="2" fill="#8b5cf6" opacity="0.4"/>
+  <circle cx="70" cy="430" r="2" fill="#06b6d4" opacity="0.4"/>
+  <circle cx="570" cy="430" r="2" fill="#3b82f6" opacity="0.4"/>
+  <circle cx="590" cy="430" r="2" fill="#8b5cf6" opacity="0.4"/>
+  <circle cx="610" cy="430" r="2" fill="#06b6d4" opacity="0.4"/>
+</svg>
