@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" font-family="system-ui, sans-serif">
+  <rect width="600" height="300" fill="#f8f9fa" rx="12"/>
+  
+  <!-- Title -->
+  <text x="300" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a1a2e">MASPO: Joint Prompt Optimization for Multi-Agent Systems</text>
+  
+  <!-- Framework diagram -->
+  <!-- Left: Individual prompts -->
+  <rect x="30" y="60" width="120" height="40" rx="6" fill="#e8f4f8" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="90" y="85" text-anchor="middle" font-size="13" fill="#1a1a2e">Prompt A</text>
+  
+  <rect x="30" y="115" width="120" height="40" rx="6" fill="#e8f4f8" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="90" y="140" text-anchor="middle" font-size="13" fill="#1a1a2e">Prompt B</text>
+  
+  <rect x="30" y="170" width="120" height="40" rx="6" fill="#e8f4f8" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="90" y="195" text-anchor="middle" font-size="13" fill="#1a1a2e">Prompt C</text>
+  
+  <!-- Arrow to center -->
+  <line x1="150" y1="80" x2="230" y2="120" stroke="#4a90d9" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="150" y1="135" x2="230" y2="150" stroke="#4a90d9" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="150" y1="190" x2="230" y2="180" stroke="#4a90d9" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Center: MASPO -->
+  <rect x="230" y="100" width="140" height="100" rx="8" fill="#1a1a2e" stroke="#2d2d44" stroke-width="2"/>
+  <text x="300" y="135" text-anchor="middle" font-size="16" font-weight="bold" fill="#ffffff">MASPO</text>
+  <text x="300" y="155" text-anchor="middle" font-size="11" fill="#a0a0c0">Joint Evaluation</text>
+  <text x="300" y="170" text-anchor="middle" font-size="11" fill="#a0a0c0">Evolutionary Beam Search</text>
+  
+  <!-- Arrow to right -->
+  <line x1="370" y1="140" x2="450" y2="140" stroke="#4a90d9" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Right: Optimized prompts -->
+  <rect x="450" y="60" width="120" height="40" rx="6" fill="#d4edda" stroke="#28a745" stroke-width="1.5"/>
+  <text x="510" y="85" text-anchor="middle" font-size="13" fill="#1a1a2e">Prompt A*</text>
+  
+  <rect x="450" y="115" width="120" height="40" rx="6" fill="#d4edda" stroke="#28a745" stroke-width="1.5"/>
+  <text x="510" y="140" text-anchor="middle" font-size="13" fill="#1a1a2e">Prompt B*</text>
+  
+  <rect x="450" y="170" width="120" height="40" rx="6" fill="#d4edda" stroke="#28a745" stroke-width="1.5"/>
+  <text x="510" y="195" text-anchor="middle" font-size="13" fill="#1a1a2e">Prompt C*</text>
+  
+  <!-- Key metrics -->
+  <rect x="180" y="240" width="240" height="40" rx="6" fill="#fff3cd" stroke="#ffc107" stroke-width="1"/>
+  <text x="300" y="258" text-anchor="middle" font-size="13" fill="#856404">6 Tasks | +2.9% Accuracy</text>
+  <text x="300" y="273" text-anchor="middle" font-size="11" fill="#856404">ICML 2026 Accepted</text>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4a90d9"/>
+    </marker>
+  </defs>
+</svg>
