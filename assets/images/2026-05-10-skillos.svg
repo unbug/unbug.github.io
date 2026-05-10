@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#38bdf8"/>
+      <stop offset="100%" style="stop-color:#818cf8"/>
+    </linearGradient>
+    <linearGradient id="card1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="card2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b1f5e"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="card3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#14532d"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" rx="16" fill="url(#bg)"/>
+  <!-- Title -->
+  <text x="320" y="52" text-anchor="middle" fill="#f1f5f9" font-size="22" font-weight="700">SkillOS</text>
+  <text x="320" y="76" text-anchor="middle" fill="#94a3b8" font-size="13">Learning Skill Curation for Self-Evolving Agents</text>
+  <!-- Architecture diagram -->
+  <rect x="40" y="100" width="180" height="90" rx="10" fill="url(#card1)" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="130" y="128" text-anchor="middle" fill="#38bdf8" font-size="13" font-weight="600">Agent Executor</text>
+  <text x="130" y="148" text-anchor="middle" fill="#cbd5e1" font-size="11">检索与应用技能</text>
+  <text x="130" y="168" text-anchor="middle" fill="#64748b" font-size="10">Frozen (不参与训练)</text>
+  <rect x="420" y="100" width="180" height="90" rx="10" fill="url(#card2)" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="510" y="128" text-anchor="middle" fill="#818cf8" font-size="13" font-weight="600">Skill Curator</text>
+  <text x="510" y="148" text-anchor="middle" fill="#cbd5e1" font-size="11">从经验中提取技能</text>
+  <text x="510" y="168" text-anchor="middle" fill="#64748b" font-size="10">RL 训练核心</text>
+  <!-- Arrow -->
+  <line x1="220" y1="145" x2="420" y2="145" stroke="#64748b" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <polygon points="420,141 428,145 420,149" fill="#64748b"/>
+  <polygon points="220,141 212,145 220,149" fill="#64748b"/>
+  <!-- SkillRepo -->
+  <rect x="230" y="210" width="180" height="70" rx="10" fill="url(#card3)" stroke="#34d399" stroke-width="1.5"/>
+  <text x="320" y="238" text-anchor="middle" fill="#34d399" font-size="13" font-weight="600">SkillRepo</text>
+  <text x="320" y="258" text-anchor="middle" fill="#cbd5e1" font-size="11">Markdown 格式 · 元技能演化</text>
+  <!-- Arrows to SkillRepo -->
+  <line x1="130" y1="190" x2="290" y2="210" stroke="#34d399" stroke-width="1.2" stroke-dasharray="5,3"/>
+  <line x1="510" y1="190" x2="350" y2="210" stroke="#34d399" stroke-width="1.2" stroke-dasharray="5,3"/>
+  <!-- Key findings -->
+  <text x="40" y="310" fill="#94a3b8" font-size="11" font-weight="600">关键发现</text>
+  <text x="40" y="328" fill="#cbd5e1" font-size="10">- 复合奖励解决策展决策因果归因</text>
+  <text x="40" y="344" fill="#cbd5e1" font-size="10">- 跨执行器与任务域泛化</text>
+  <text x="340" y="310" fill="#94a3b8" font-size="11" font-weight="600">作者</text>
+  <text x="340" y="328" fill="#cbd5e1" font-size="10">Siru Ouyang, Jun Yan, Yanfei Chen</text>
+  <text x="340" y="344" fill="#cbd5e1" font-size="10">等 14 位作者 (Google / UIUC / MIT)</text>
+</svg>
