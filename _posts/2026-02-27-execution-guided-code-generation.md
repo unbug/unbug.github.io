@@ -2,7 +2,7 @@
 title: "一分钟读论文：《让AI像程序员一样边写代码边调试》"
 author: unbug
 categories: [AI, 软件工程]
-tags: [featured, 代码生成, NeurIPS 2025, EG-CFG]
+tags: [代码生成, NeurIPS 2025, EG-CFG]
 date: 2026-02-27 00:00:00 +0800
 ---
 
