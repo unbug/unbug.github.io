@@ -17,6 +17,7 @@ tags: [OpenSource, License, GPL, Compliance, AICodeGeneration]
 - [三条瓦解路径](#三条瓦解路径)
 - [真实攻防：GitHub Copilot 诉讼解剖](#真实攻防github-copilot-诉讼解剖)
 - [新战场：Rust 复刻潮与许可证降级](#新战场rust-复刻潮与许可证降级)
+- [HackerNews 热点：Hermes Agent 抄袭风波与 AI 代码洗白](#hackernews-热点hermes-agent-抄袭风波与-ai-代码洗白)
 - [许可证扫描工具为何开始失效](#许可证扫描工具为何开始失效)
 - [现在能做什么：工程侧防御方案](#现在能做什么工程侧防御方案)
 - [下一代开源协议的尝试](#下一代开源协议的尝试)
@@ -147,6 +148,58 @@ Rust 重写版（MIT/Apache）
 | 你的项目被商业化 | 必须开源商业版本 | 基于 Rust 重写版的商业分支，无开源义务 |
 
 在还没有法院明确裁定"AI 辅助 clean-room rewrite 是否构成派生作品"之前，这扇门是敞开的。
+
+---
+
+## HackerNews 热点：Hermes Agent 抄袭风波与 AI 代码洗白
+
+如果说 Rust 复刻是"项目级许可证漂白"，那么 2026 年 3 月在 HackerNews 和 Twitter/X 上引爆的 Hermes Agent 事件，则让一个新概念进入了工程师社区的视野：**AI 代码洗白（AI Code Washing）**——借助 AI 工具对架构级别的复制进行表面重写，使其看起来像独立实现。
+
+### 事件经过
+
+**时间线：**
+
+| 日期 | 事件 |
+|------|------|
+| 2026 年 2 月 1 日 | 中国 AI 团队 EvoMap 在 MIT 协议下开源 Evolver（自进化 Agent 引擎）|
+| 2026 年 3 月 9 日 | 硅谷明星实验室 Nous Research 发布 Hermes Agent 自进化模块 |
+| 2026 年 3 月中旬 | EvoMap 发布详细技术对比报告，指控 Hermes Agent 抄袭核心架构 |
+| 2026 年 3 月下旬 | Nous Research 创始人 Teknium 否认知晓 EvoMap，回应引发争议 |
+| 2026 年 3 月末 | EvoMap 将 Evolver 许可证从 MIT 切换为 GPL v3，并开始混淆核心代码 |
+
+**EvoMap 提交的证据：**
+
+1. **10 步核心循环完全一致**：Evolver（Node.js）与 Hermes Agent（Python）的自进化主循环在逻辑步骤上一一对应，尽管语言不同；
+2. **12 对核心术语被系统性替换**：例如 `Evolver` → `FunctionCalling`、`Gene` → `Skill`、`Mutation` → `Refinement`——名称不同，但概念映射关系完全保留；
+3. **无任何引用或致谢**：Hermes Agent 的代码注释、README 和论文均未提及 Evolver。
+
+这在技术社区引发了一个核心问题：当两个系统用不同语言实现了相同的 10 步架构，且关键术语一一对应，这是"独立发现"还是"架构抄袭"？
+
+### AI 代码洗白：新瓦解路径
+
+Hermes Agent 事件让"AI 代码洗白"这个概念具象化。这条路径的操作逻辑如下：
+
+```
+MIT 开源项目（Node.js 实现，含架构创新）
+      ↓  AI 辅助跨语言重写（Python）
+术语系统性替换（Gene→Skill, Evolver→FunctionCalling）
+      ↓  逻辑关系保留，表面代码全部不同
+发布为"独立创新"，无需引用，无协议义务
+```
+
+这与路径二（AI 许可证漂白）的区别在于**粒度**：许可证漂白发生在函数/片段级别，而 AI 代码洗白可以作用于整个系统的**架构逻辑**——而目前所有许可证文本只保护"表达"（expression），不保护"思想"（idea）。这正是版权法的"思想-表达二分法"（Idea-Expression Dichotomy）在 AI 时代遭遇的最大挑战之一。
+
+### 开源社区的反应与连锁效应
+
+事件在 HackerNews 上的讨论帖获得数百条回复，主要争论点集中在：
+
+- **"架构级抄袭"是否在现行法律下构成侵权？** 多数法律评论者认为：很可能不构成——版权不保护算法思想，只保护具体代码表达；
+- **MIT 协议是否对此类行为无能为力？** 结论是：是的，MIT 协议完全没有防御此类架构复制的条款；
+- **Nous Research 的应对方式是否损害了开源信任？** 社区对此批评尤为强烈，认为无论是否存在法律责任，对小团队创新成果的致谢是开源规范的基本要求。
+
+EvoMap 的应对选择——从 MIT 切换到 GPL v3 并混淆代码——代表了越来越多受到类似冲击的小团队的心理轨迹：**不是因为 GPL 能防住这种行为（它同样不能），而是表达一种态度，并让下一次复制付出更高成本**。
+
+这个结果具有讽刺意味：开源社区最害怕的不是法律失效，而是**规范失效**——当足够多的团队因担忧架构抄袭而关闭源码或切换到 Copyleft，整个 AI 开源生态的开放性都会收缩。
 
 ---
 
@@ -297,7 +350,7 @@ def extract_ast_fingerprint(code: str, language: str = 'python') -> str:
 
 ## 总结与行动清单
 
-开源协议的约束力正在被四个技术事实系统性地削弱：AI 训练不触发 Copyleft 传染、AI 生成过程清洗掉许可证信息、现行法律的举证标准与 AI 生成代码的特点不匹配、以及 AI 加速的"clean-room rewrite"让整个项目的协议义务可以被一次性抹除。Rust 复刻潮是这一结构性侵蚀最近最热的体现——它不是某个坏人在做坏事，而是工具链演化速度远超法律制度更新速度的必然产物。
+开源协议的约束力正在被四个技术事实系统性地削弱：AI 训练不触发 Copyleft 传染、AI 生成过程清洗掉许可证信息、现行法律的举证标准与 AI 生成代码的特点不匹配、以及 AI 加速的"clean-room rewrite"让整个项目的协议义务可以被一次性抹除。Rust 复刻潮是这一结构性侵蚀最近最热的体现，Hermes Agent 事件则进一步揭示了协议之外的**规范层失效**——法律保护不了的架构创新，现在连社区信任也开始无法保护了。
 
 作为工程师和开源贡献者，被动等待法律跟上不是选项。
 
@@ -322,6 +375,9 @@ def extract_ast_fingerprint(code: str, language: str = 'python') -> str:
 - [Ubuntu 25.10 计划以 Rust 替换 GNU Coreutils — The Register][links-8]
 - [Rust 基金会禁止 GPL 项目使用 Rust 品牌：企业控制开源？][links-9]
 - [微软工程师"1 人 1 月 100 万行 Rust 迁移"事件始末][links-10]
+- [Hermes Agent 抄袭风波：硅谷明星项目陷入争议][links-11]
+- [EvoMap 将 Evolver 许可证从 MIT 切换 GPL v3 的声明][links-12]
+- [Hermes Agent 事件技术真相与开源危机深度分析][links-13]
 
 
 [links-1]: https://githubcopilotlitigation.com/case-updates.html
@@ -334,3 +390,6 @@ def extract_ast_fingerprint(code: str, language: str = 'python') -> str:
 [links-8]: https://www.theregister.com/2025/03/19/ubuntu_2510_plans_to_swap_gnu_coreutils_for_rust/
 [links-9]: https://byteiota.com/rust-foundation-bans-gpl-code-corporate-open-source-control/
 [links-10]: https://www.computerworld.com/article/4111557/microsoft-is-not-rewriting-windows-in-rust.html
+[links-11]: https://finance.biggo.com/news/JcSnkZ0BrdTHlKtCQU7N
+[links-12]: https://www.yicaiglobal.com/news/chinese-ai-team-evomap-changes-ai-agents-license-after-accusing-silicon-valley-ai-lab-of-copying-code
+[links-13]: https://bccmedianews.com/?p=5616
