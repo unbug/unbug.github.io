@@ -86,9 +86,41 @@ layout: default
 				</span>
 			</div>
 
-			<!-- releated -->
+			<!-- Featured & Releated tabs -->
 			<div class="mb-4">
-				{% include releated.html %}    
+				<ul class="nav nav-tabs" id="postBottomTabs" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active font-weight-bold" id="featured-tab" data-toggle="tab" href="#featured-pane" role="tab" aria-controls="featured-pane" aria-selected="true">Featured</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link font-weight-bold" id="releated-tab" data-toggle="tab" href="#releated-pane" role="tab" aria-controls="releated-pane" aria-selected="false">Releated</a>
+					</li>
+				</ul>
+				<div class="tab-content pt-3" id="postBottomTabsContent">
+					<div class="tab-pane fade show active" id="featured-pane" role="tabpanel" aria-labelledby="featured-tab">
+						<ol class="list-featured">
+							{% for post in site.tags.featured %}
+							<li class="mb-4">
+								<span>
+									<h6 class="font-weight-bold">
+										<a href="{{site.baseurl}}{{ post.url }}" class="text-dark">{{ post.title }}</a>
+									</h6>
+									<span class="d-block text-muted">
+										In <span class="catlist">
+										{% for category in post.categories %}
+										<a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
+										{% endfor %}
+										</span>
+									</span>
+								</span>
+							</li>
+							{% endfor %}
+						</ol>
+					</div>
+					<div class="tab-pane fade" id="releated-pane" role="tabpanel" aria-labelledby="releated-tab">
+						{% include releated.html %}
+					</div>
+				</div>
 			</div>
 
 			<!-- donate -->
