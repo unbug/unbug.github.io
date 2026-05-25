@@ -86,18 +86,15 @@ layout: default
 				</span>
 			</div>
 
-			<!-- Featured & Releated tabs -->
+			<!-- Releated & Featured -->
 			<div class="mb-4">
-				<ul class="nav nav-tabs" id="postBottomTabs" role="tablist">
-					<li class="nav-item">
-						<a class="nav-link active font-weight-bold" id="featured-tab" data-toggle="tab" href="#featured-pane" role="tab" aria-controls="featured-pane" aria-selected="true">Featured</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link font-weight-bold" id="releated-tab" data-toggle="tab" href="#releated-pane" role="tab" aria-controls="releated-pane" aria-selected="false">Releated</a>
-					</li>
-				</ul>
-				<div class="tab-content pt-3" id="postBottomTabsContent">
-					<div class="tab-pane fade show active" id="featured-pane" role="tabpanel" aria-labelledby="featured-tab">
+				<div class="row">
+					<div class="col-md-6">
+						<h5 class="font-weight-bold spanborder"><span>Related</span></h5>
+						{% include releated.html %}
+					</div>
+					<div class="col-md-6">
+						<h5 class="font-weight-bold spanborder"><span>Featured</span></h5>
 						<ol class="list-featured">
 							{% for post in site.tags.featured %}
 							<li class="mb-4">
@@ -116,9 +113,6 @@ layout: default
 							</li>
 							{% endfor %}
 						</ol>
-					</div>
-					<div class="tab-pane fade" id="releated-pane" role="tabpanel" aria-labelledby="releated-tab">
-						{% include releated.html %}
 					</div>
 				</div>
 			</div>
