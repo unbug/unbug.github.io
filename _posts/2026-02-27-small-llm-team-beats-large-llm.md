@@ -2,7 +2,7 @@
 title: "一分钟读论文：《小模型团队如何超越大模型》"
 author: unbug
 categories: [AI, 软件工程]
-tags: [featured, 代码生成, ICSE 2026, 小模型]
+tags: [代码生成, ICSE 2026, 小模型]
 date: 2026-02-27 00:00:00 +0800
 ---
 

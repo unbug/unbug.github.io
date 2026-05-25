@@ -2,7 +2,7 @@
 title: "一分钟读论文：《EnAgent：三个AI智能体组队，登顶代码修复榜单》"
 author: unbug
 categories: [AI, 软件工程]
-tags: [featured, 软件工程, ICSE 2026, AI代码生成, 智能体, SWE-bench]
+tags: [软件工程, ICSE 2026, AI代码生成, 智能体, SWE-bench]
 date: 2026-02-28 00:00:00 +0800
 ---
 
