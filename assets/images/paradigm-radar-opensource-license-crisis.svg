@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="crackGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:0.7" />
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#64748b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#334155;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#1e40af" stroke-width="0.5" opacity="0.15">
+    <line x1="0" y1="63" x2="1200" y2="63"/>
+    <line x1="0" y1="126" x2="1200" y2="126"/>
+    <line x1="0" y1="189" x2="1200" y2="189"/>
+    <line x1="0" y1="252" x2="1200" y2="252"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="378" x2="1200" y2="378"/>
+    <line x1="0" y1="441" x2="1200" y2="441"/>
+    <line x1="0" y1="504" x2="1200" y2="504"/>
+    <line x1="0" y1="567" x2="1200" y2="567"/>
+    <line x1="120" y1="0" x2="120" y2="630"/>
+    <line x1="240" y1="0" x2="240" y2="630"/>
+    <line x1="360" y1="0" x2="360" y2="630"/>
+    <line x1="480" y1="0" x2="480" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="720" y1="0" x2="720" y2="630"/>
+    <line x1="840" y1="0" x2="840" y2="630"/>
+    <line x1="960" y1="0" x2="960" y2="630"/>
+    <line x1="1080" y1="0" x2="1080" y2="630"/>
+  </g>
+
+  <!-- Left side: Shield (broken) -->
+  <g transform="translate(200, 315)">
+    <!-- Shield body -->
+    <path d="M0,-160 L120,-120 L120,40 Q120,120 0,170 Q-120,120 -120,40 L-120,-120 Z"
+          fill="url(#shieldGrad)" stroke="#475569" stroke-width="2"/>
+    <!-- Lock icon inside shield -->
+    <rect x="-30" y="-40" width="60" height="50" rx="8" fill="#334155" stroke="#64748b" stroke-width="2"/>
+    <path d="M-20,-40 L-20,-65 Q-20,-95 0,-95 Q20,-95 20,-65 L20,-40" 
+          fill="none" stroke="#64748b" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="0" cy="-15" r="8" fill="#94a3b8"/>
+    <!-- Crack lines -->
+    <path d="M-10,-160 L30,-60 L-20,20 L40,170" stroke="url(#crackGrad)" stroke-width="4" fill="none" filter="url(#glow)"/>
+    <path d="M20,-120 L-15,-20" stroke="#ef4444" stroke-width="2.5" fill="none" opacity="0.8"/>
+    <!-- "GPL" text on shield -->
+    <text x="-35" y="80" font-family="monospace" font-size="28" font-weight="bold" fill="#94a3b8">GPL</text>
+    <text x="-30" y="105" font-family="monospace" font-size="14" fill="#64748b">MIT · Apache</text>
+  </g>
+
+  <!-- Right side: AI brain/neural net generating code -->
+  <g transform="translate(880, 315)">
+    <!-- Outer circle -->
+    <circle cx="0" cy="0" r="130" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.6"/>
+    <!-- Inner nodes -->
+    <circle cx="0" cy="-80" r="12" fill="#1d4ed8" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="70" cy="-40" r="10" fill="#1d4ed8" stroke="#3b82f6" stroke-width="1.5"/>
+    <circle cx="80" cy="40" r="10" fill="#1d4ed8" stroke="#3b82f6" stroke-width="1.5"/>
+    <circle cx="0" cy="80" r="12" fill="#1d4ed8" stroke="#3b82f6" stroke-width="2"/>
+    <circle cx="-80" cy="40" r="10" fill="#1d4ed8" stroke="#3b82f6" stroke-width="1.5"/>
+    <circle cx="-70" cy="-40" r="10" fill="#1d4ed8" stroke="#3b82f6" stroke-width="1.5"/>
+    <!-- Connections -->
+    <line x1="0" y1="-80" x2="70" y2="-40" stroke="#3b82f6" stroke-width="1.5" opacity="0.6"/>
+    <line x1="70" y1="-40" x2="80" y2="40" stroke="#3b82f6" stroke-width="1.5" opacity="0.6"/>
+    <line x1="80" y1="40" x2="0" y2="80" stroke="#3b82f6" stroke-width="1.5" opacity="0.6"/>
+    <line x1="0" y1="80" x2="-80" y2="40" stroke="#3b82f6" stroke-width="1.5" opacity="0.6"/>
+    <line x1="-80" y1="40" x2="-70" y2="-40" stroke="#3b82f6" stroke-width="1.5" opacity="0.6"/>
+    <line x1="-70" y1="-40" x2="0" y2="-80" stroke="#3b82f6" stroke-width="1.5" opacity="0.6"/>
+    <line x1="0" y1="-80" x2="0" y2="80" stroke="#3b82f6" stroke-width="1" opacity="0.4"/>
+    <line x1="-70" y1="-40" x2="80" y2="40" stroke="#3b82f6" stroke-width="1" opacity="0.4"/>
+    <!-- AI label -->
+    <text x="-18" y="8" font-family="monospace" font-size="26" font-weight="bold" fill="#60a5fa">AI</text>
+    <!-- Output code snippet -->
+    <rect x="95" y="-25" width="110" height="50" rx="6" fill="#0f172a" stroke="#1e40af" stroke-width="1.5"/>
+    <text x="103" y="-8" font-family="monospace" font-size="9" fill="#22d3ee">def process():</text>
+    <text x="103" y="5" font-family="monospace" font-size="9" fill="#a3e635">  # no license</text>
+    <text x="103" y="18" font-family="monospace" font-size="9" fill="#f8fafc">  return data</text>
+  </g>
+
+  <!-- Arrow from shield to AI — labeled "训练数据" -->
+  <g>
+    <path d="M340,300 Q600,220 740,300" stroke="#64748b" stroke-width="2" fill="none" stroke-dasharray="8,5"/>
+    <polygon points="740,300 726,290 728,310" fill="#64748b"/>
+    <rect x="505" y="220" width="90" height="28" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="550" y="239" font-family="sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">训练数据</text>
+  </g>
+
+  <!-- Arrow from AI back — labeled "生成代码 (无协议)" -->
+  <g>
+    <path d="M760,350 Q600,440 340,370" stroke="#ef4444" stroke-width="2" fill="none"/>
+    <polygon points="340,370 358,360 354,380" fill="#ef4444"/>
+    <rect x="480" y="400" width="140" height="28" rx="6" fill="#1e293b" stroke="#7f1d1d"/>
+    <text x="550" y="419" font-family="sans-serif" font-size="13" fill="#fca5a5" text-anchor="middle">生成代码（无协议）</text>
+  </g>
+
+  <!-- Center top: column tag -->
+  <rect x="490" y="30" width="220" height="34" rx="17" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="600" y="53" font-family="sans-serif" font-size="14" font-weight="bold" fill="#93c5fd" text-anchor="middle">AI 范式雷达</text>
+
+  <!-- Main title -->
+  <text x="600" y="530" font-family="sans-serif" font-size="34" font-weight="bold" fill="#f1f5f9" text-anchor="middle">
+    AI 正在让开源协议失去约束力
+  </text>
+  <text x="600" y="572" font-family="sans-serif" font-size="18" fill="#94a3b8" text-anchor="middle">
+    三个技术漏洞 · 实证案例 · 应对方案
+  </text>
+
+  <!-- Red warning indicator -->
+  <circle cx="600" cy="170" r="6" fill="#ef4444" filter="url(#glow)"/>
+  <text x="618" y="175" font-family="monospace" font-size="13" fill="#ef4444">LICENSE ENFORCEMENT FAILURE</text>
+</svg>

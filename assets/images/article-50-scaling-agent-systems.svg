@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420" fill="none">
+  <rect width="700" height="420" fill="#0d1b2a" rx="12"/>
+
+  <!-- Title -->
+  <text x="350" y="32" text-anchor="middle" fill="#e6f1ff" font-size="17" font-weight="bold" font-family="system-ui">多智能体什么时候该用、什么时候不该用？</text>
+  <text x="350" y="52" text-anchor="middle" fill="#8b949e" font-size="11" font-family="system-ui">Google Research · 180 Controlled Experiments · Quantitative Scaling Principles</text>
+
+  <!-- Divider -->
+  <line x1="60" y1="66" x2="640" y2="66" stroke="#21262d" stroke-width="1"/>
+
+  <!-- ── Column 1: Parallel tasks ── -->
+  <rect x="48" y="78" width="186" height="218" rx="8" fill="#0d2b12" stroke="#238636" stroke-width="1.5"/>
+  <text x="141" y="101" text-anchor="middle" fill="#3fb950" font-size="13" font-weight="bold" font-family="system-ui">可并行任务</text>
+  <text x="141" y="117" text-anchor="middle" fill="#8b949e" font-size="10" font-family="system-ui">Parallel Tasks (e.g., Finance)</text>
+
+  <!-- Bar chart: centralized wins -->
+  <rect x="68" y="133" width="30" height="60" rx="3" fill="#238636" opacity="0.5"/>
+  <text x="83" y="128" text-anchor="middle" fill="#3fb950" font-size="9" font-family="system-ui">中心化</text>
+
+  <rect x="113" y="163" width="30" height="30" rx="3" fill="#1f6feb" opacity="0.5"/>
+  <text x="128" y="158" text-anchor="middle" fill="#58a6ff" font-size="9" font-family="system-ui">去中心化</text>
+
+  <rect x="158" y="178" width="30" height="15" rx="3" fill="#6e40c9" opacity="0.5"/>
+  <text x="173" y="173" text-anchor="middle" fill="#d2a8ff" font-size="9" font-family="system-ui">无协调</text>
+
+  <line x1="62" y1="195" x2="206" y2="195" stroke="#21262d" stroke-width="0.5"/>
+
+  <!-- Key stat -->
+  <text x="141" y="216" text-anchor="middle" fill="#3fb950" font-size="30" font-weight="bold" font-family="system-ui">+80.9%</text>
+  <text x="141" y="233" text-anchor="middle" fill="#8b949e" font-size="10" font-family="system-ui">集中式协调性能提升</text>
+
+  <line x1="62" y1="244" x2="206" y2="244" stroke="#21262d" stroke-width="0.5"/>
+  <text x="141" y="262" text-anchor="middle" fill="#e6f1ff" font-size="10" font-family="system-ui">✓ 推荐：集中式协调</text>
+  <text x="141" y="278" text-anchor="middle" fill="#8b949e" font-size="9" font-family="system-ui">整合中间结果，避免信息孤岛</text>
+
+  <!-- ── Column 2: Dynamic tasks ── -->
+  <rect x="256" y="78" width="186" height="218" rx="8" fill="#111d3c" stroke="#1f6feb" stroke-width="1.5"/>
+  <text x="349" y="101" text-anchor="middle" fill="#58a6ff" font-size="13" font-weight="bold" font-family="system-ui">动态导航任务</text>
+  <text x="349" y="117" text-anchor="middle" fill="#8b949e" font-size="10" font-family="system-ui">Dynamic Navigation Tasks</text>
+
+  <!-- Side-by-side bars: decentralized wins slightly -->
+  <rect x="276" y="148" width="30" height="45" rx="3" fill="#1f6feb" opacity="0.6"/>
+  <text x="291" y="143" text-anchor="middle" fill="#58a6ff" font-size="9" font-family="system-ui">去中心化</text>
+
+  <rect x="318" y="174" width="30" height="19" rx="3" fill="#238636" opacity="0.4"/>
+  <text x="333" y="169" text-anchor="middle" fill="#3fb950" font-size="9" font-family="system-ui">中心化</text>
+
+  <line x1="270" y1="195" x2="414" y2="195" stroke="#21262d" stroke-width="0.5"/>
+
+  <text x="349" y="212" text-anchor="middle" fill="#58a6ff" font-size="20" font-weight="bold" font-family="system-ui">+9.2%</text>
+  <text x="349" y="228" text-anchor="middle" fill="#8b949e" font-size="9" font-family="system-ui">去中心化 vs 集中式 +0.2%</text>
+
+  <line x1="270" y1="244" x2="414" y2="244" stroke="#21262d" stroke-width="0.5"/>
+  <text x="349" y="262" text-anchor="middle" fill="#e6f1ff" font-size="10" font-family="system-ui">✓ 推荐：去中心化协调</text>
+  <text x="349" y="278" text-anchor="middle" fill="#8b949e" font-size="9" font-family="system-ui">局部信息快速响应</text>
+
+  <!-- ── Column 3: Sequential tasks ── -->
+  <rect x="464" y="78" width="186" height="218" rx="8" fill="#2d0a0a" stroke="#f85149" stroke-width="1.5"/>
+  <text x="557" y="101" text-anchor="middle" fill="#f85149" font-size="13" font-weight="bold" font-family="system-ui">顺序推理任务</text>
+  <text x="557" y="117" text-anchor="middle" fill="#8b949e" font-size="10" font-family="system-ui">Sequential Reasoning Tasks</text>
+
+  <!-- Cliff-drop bars for all multi-agent variants -->
+  <rect x="480" y="133" width="22" height="60" rx="3" fill="#21262d" opacity="0.7"/>
+  <text x="491" y="128" text-anchor="middle" fill="#8b949e" font-size="8" font-family="system-ui">单智能体</text>
+
+  <rect x="511" y="163" width="22" height="30" rx="3" fill="#f85149" opacity="0.45"/>
+  <rect x="541" y="170" width="22" height="23" rx="3" fill="#f85149" opacity="0.35"/>
+  <rect x="571" y="176" width="22" height="17" rx="3" fill="#f85149" opacity="0.25"/>
+  <text x="555" y="155" text-anchor="middle" fill="#f85149" font-size="8" font-family="system-ui">多智能体变体 ↓↓↓</text>
+
+  <line x1="474" y1="195" x2="622" y2="195" stroke="#21262d" stroke-width="0.5"/>
+
+  <text x="557" y="213" text-anchor="middle" fill="#f85149" font-size="24" font-weight="bold" font-family="system-ui">−39~70%</text>
+  <text x="557" y="230" text-anchor="middle" fill="#8b949e" font-size="9" font-family="system-ui">所有多智能体变体均下降</text>
+
+  <line x1="474" y1="244" x2="622" y2="244" stroke="#21262d" stroke-width="0.5"/>
+  <text x="557" y="262" text-anchor="middle" fill="#e6f1ff" font-size="10" font-family="system-ui">✗ 不推荐：多智能体</text>
+  <text x="557" y="278" text-anchor="middle" fill="#8b949e" font-size="9" font-family="system-ui">通信开销直接转化为推理错误</text>
+
+  <!-- ── Bottom: Decision guide ── -->
+  <rect x="48" y="312" width="602" height="48" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="350" y="330" text-anchor="middle" fill="#e6f1ff" font-size="11" font-weight="bold" font-family="system-ui">架构选型：先分类任务，再选智能体数量</text>
+
+  <rect x="64" y="340" width="12" height="12" rx="2" fill="#238636"/>
+  <text x="82" y="351" fill="#8b949e" font-size="10" font-family="system-ui">并行型 → 集中式多智能体</text>
+
+  <rect x="240" y="340" width="12" height="12" rx="2" fill="#1f6feb"/>
+  <text x="258" y="351" fill="#8b949e" font-size="10" font-family="system-ui">动态型 → 去中心化多智能体</text>
+
+  <rect x="452" y="340" width="12" height="12" rx="2" fill="#f85149"/>
+  <text x="470" y="351" fill="#8b949e" font-size="10" font-family="system-ui">顺序型 → 单智能体</text>
+
+  <!-- Prediction badge -->
+  <rect x="48" y="374" width="602" height="30" rx="6" fill="#1c2128" stroke="#30363d" stroke-width="0.5"/>
+  <text x="350" y="393" text-anchor="middle" fill="#e6f1ff" font-size="11" font-family="system-ui">预测模型可识别 87% 未见任务的最优架构 · Google Research 2024</text>
+</svg>
