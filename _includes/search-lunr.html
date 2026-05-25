@@ -46,7 +46,19 @@ function lunr_search(term) {
     if(term) {
         document.getElementById('modtit').innerHTML = "<h5 class='modal-title'>Search results for '" + term + "'</h5>" + document.getElementById('modtit').innerHTML;
         //put results on the screen.
-        var results = idx.search(term);
+        var results;
+        // Lunr's trimmer strips CJK characters (\W regex), so use substring search for Chinese/Japanese/Korean text
+        if (/[\u4e00-\u9fff\u3040-\u30ff\u3400-\u4dbf]/.test(term)) {
+            var termLower = term.toLowerCase();
+            results = documents.filter(function(doc) {
+                return (doc.title && doc.title.toLowerCase().indexOf(termLower) >= 0) ||
+                       (doc.body && doc.body.toLowerCase().indexOf(termLower) >= 0);
+            }).map(function(doc) {
+                return {ref: String(doc.id)};
+            });
+        } else {
+            results = idx.search(term);
+        }
         if(results.length>0){
             //console.log(idx.search(term));
             //if results
@@ -71,6 +83,7 @@ function lunr_search(term) {
     .lunrsearchresult a {display: block; color: #777;}
     .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
     .lunrsearchresult a:hover .title {text-decoration: underline;}
+    #resultsmodal .modal-dialog { max-width: 860px; width: 90%; }
 </style>
 
 
