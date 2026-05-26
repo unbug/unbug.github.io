@@ -1,5 +1,5 @@
 ---
-title: "About - Micropaper"
+title: "About"
 layout: page
 permalink: "/about.html"
 author: unbug
