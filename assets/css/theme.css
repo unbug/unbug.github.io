@@ -693,12 +693,12 @@ ol.list-featured li.featured-rank-1:before {
     text-shadow: 0 1px 4px rgba(255,184,0,0.45);
 }
 ol.list-featured li.featured-rank-2:before {
-    color: #A0A0A0;
-    text-shadow: 0 1px 4px rgba(160,160,160,0.45);
+    color: #FFB800;
+    text-shadow: 0 1px 4px rgba(255,184,0,0.45);
 }
 ol.list-featured li.featured-rank-3:before {
-    color: #C8763A;
-    text-shadow: 0 1px 4px rgba(200,118,58,0.45);
+    color: #FFB800;
+    text-shadow: 0 1px 4px rgba(255,184,0,0.45);
 }
 .featured-badge {
     display: inline-block;
@@ -716,10 +716,10 @@ ol.list-featured li.featured-rank-3:before {
     background-color: #FFB800;
 }
 .featured-badge-2 {
-    background-color: #A0A0A0;
+    background-color: #FFB800;
 }
 .featured-badge-3 {
-    background-color: #C8763A;
+    background-color: #FFB800;
 }
 .catlist .sep:last-child {
 	display:none;
