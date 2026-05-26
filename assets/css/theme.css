@@ -683,6 +683,44 @@ ol.list-featured li:before {
     line-height: 1;
     opacity: .1;
 }
+ol.list-featured li.featured-rank-1:before,
+ol.list-featured li.featured-rank-2:before,
+ol.list-featured li.featured-rank-3:before {
+    opacity: 1;
+}
+ol.list-featured li.featured-rank-1:before {
+    color: #FFB800;
+    text-shadow: 0 1px 4px rgba(255,184,0,0.45);
+}
+ol.list-featured li.featured-rank-2:before {
+    color: #A0A0A0;
+    text-shadow: 0 1px 4px rgba(160,160,160,0.45);
+}
+ol.list-featured li.featured-rank-3:before {
+    color: #C8763A;
+    text-shadow: 0 1px 4px rgba(200,118,58,0.45);
+}
+.featured-badge {
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: bold;
+    line-height: 1;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-left: 5px;
+    vertical-align: middle;
+    color: #fff;
+    letter-spacing: 0.03em;
+}
+.featured-badge-1 {
+    background-color: #FFB800;
+}
+.featured-badge-2 {
+    background-color: #A0A0A0;
+}
+.featured-badge-3 {
+    background-color: #C8763A;
+}
 .catlist .sep:last-child {
 	display:none;
 }
