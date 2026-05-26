@@ -6,7 +6,7 @@
             <li class="mb-4{% if rank <= 3 %} featured-rank-{{ rank }}{% endif %}">
             <span>
                 <h6 class="font-weight-bold">
-                    <a href="{{site.baseurl}}{{ post.url }}" class="text-dark">{{ post.title }}</a>
+                    <a href="{{site.baseurl}}{{ post.url }}" class="text-dark">{{ post.title }}</a>{% if rank <= 3 %}<span class="featured-badge featured-badge-{{ rank }}">推荐</span>{% endif %}
                 </h6>
                 <span class="d-block text-muted">
                     In <span class="catlist">
