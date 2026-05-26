@@ -7,7 +7,9 @@ comments: true
 featured: true
 ---
 
-**Learn a paper in a minute. 一分钟读懂一篇论文。**
+**Learn a paper in a minute.**
+
+**一分钟读懂一篇论文。**
 
 把论文当成精神食粮，用学术重塑思维。
 
