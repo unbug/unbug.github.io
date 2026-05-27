@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《诊断LLM裁判的可靠性：共形预测集与传递性违规》"
 author: unbug
 categories: [AI, MachineLearning]
-image: assets/images/llm-judge-reliability.svg
+image: assets/images/llm-judge-reliability.jpg
 tags: [llm, evaluation, conformal-prediction]
 ---
 
@@ -17,7 +17,7 @@ tags: [llm, evaluation, conformal-prediction]
 - **每实例不一致**：33-67%的文档存在至少一个有向三元环（A>B, B>C, 但C>A），表明LLM裁判的判断在不同文档对之间缺乏一致性
 - **违规集中在边缘案例**：高不确定性文档更容易触发传递性断裂
 
-![LLM裁判传递性违规模型]({{ site.baseurl }}/assets/images/llm-judge-reliability.svg)
+![LLM裁判传递性违规模型]({{ site.baseurl }}/assets/images/llm-judge-reliability.jpg)
 
 ## 共形预测集：可靠性量化
 

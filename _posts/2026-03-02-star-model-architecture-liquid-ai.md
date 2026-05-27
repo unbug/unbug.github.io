@@ -4,7 +4,7 @@ title: "一分钟读论文：《STAR 模型架构：Liquid AI 的模型架构自
 date: 2026-03-02 14:30:00 +0800
 categories: [AI Research, Architecture]
 tags: [AI, Machine Learning, Model Architecture, STAR, Liquid AI, Transformer]
-image: assets/images/star-architecture-overview.svg
+image: assets/images/star-architecture-overview.jpg
 excerpt: "MIT 孵化的 Liquid AI 推出了 STAR（Synthesis of Tailored Architectures），一个革命性的自动化架构搜索框架，能够自动生成和优化 AI 模型架构，在保持甚至超越 Transformer 性能的同时，减少高达 90% 的缓存大小。"
 ---
 
@@ -22,7 +22,7 @@ excerpt: "MIT 孵化的 Liquid AI 推出了 STAR（Synthesis of Tailored Archite
 
 这玩意儿能自动生成和优化 AI 模型架构，就像给建筑行业配上了自动化施工队。而且，它生成的模型性能不输 Transformer，缓存大小却能减少 **90%**！
 
-![STAR 架构概览](assets/images/star-architecture-overview.svg)
+![STAR 架构概览](assets/images/star-architecture-overview.jpg)
 
 ## 背景：Transformer 的"肥胖症"
 
@@ -64,7 +64,7 @@ STAR 不是瞎编的，它的背后有扎实的理论支撑：
 
 这种跨学科的融合，让 STAR 能探索到人类设计师根本想不到的架构设计。
 
-![STAR 进化过程](assets/images/star-evolution-process.svg)
+![STAR 进化过程](assets/images/star-evolution-process.jpg)
 
 ## 实验结果：牛逼不是吹的
 
@@ -112,7 +112,7 @@ STAR 的另一个超级棒的特性是**模块化**。
 
 这就像给你一套超级牛的乐高积木，你想搭什么都可以，而且每个积木都经过了优化！
 
-![STAR 性能对比](assets/images/star-performance-comparison.svg)
+![STAR 性能对比](assets/images/star-performance-comparison.jpg)
 
 ## 影响和意义：AI 架构的工业革命
 

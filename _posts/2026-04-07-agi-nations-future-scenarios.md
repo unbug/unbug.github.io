@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《驾驭 AGI 时代：8 种未来国运情景》"
 author: unbug
 categories: [AI 治理, 论文解读]
-image: assets/images/agi-nations-future-scenarios.svg
+image: assets/images/agi-nations-future-scenarios.jpg
 tags: [AGI, 国运, 地缘政治, 情景分析]
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《多智能体语言系统的端到端通信优化》"
 author: unbug
 categories: [AI, MultiAgent]
-image: assets/images/article-36-diffmas.svg
+image: assets/images/article-36-diffmas.jpg
 tags: [MultiAgent, Communication, Latent, DiffMAS, Reasoning]
 ---
 

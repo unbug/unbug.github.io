@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《大模型时代的奖励黑客与缓解策略》"
 author: unbug
 categories: [AI, Security]
-image: assets/images/ai-reward-hacking.svg
+image: assets/images/ai-reward-hacking.jpg
 tags: [reward-hacking, llm-security, agent-alignment, reward-modeling]
 ---
 
@@ -13,7 +13,7 @@ tags: [reward-hacking, llm-security, agent-alignment, reward-modeling]
 
 论文的核心贡献是建立统一的形式化框架，将奖励黑客定义为：当具有高度表达能力的策略在压缩的高维人类目标奖励表示上优化时产生的涌现现象。论文推导了一个可计算的最坏情况公式：智能体在所有与给定相关约束一致的代理奖励下最大化性能。
 
-![奖励黑客研究]({{ site.baseurl }}/assets/images/ai-reward-hacking.svg)
+![奖励黑客研究]({{ site.baseurl }}/assets/images/ai-reward-hacking.jpg)
 
 这一公式表明，奖励黑客的边界由表示压缩率和策略表达能力共同决定。当奖励表示维度低于人类目标空间维度的 40% 时，奖励黑客发生率显著上升。
 

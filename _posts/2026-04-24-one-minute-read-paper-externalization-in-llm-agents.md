@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《LLM Agent 的外化设计范式》"
 author: unbug
 categories: [AI, LLM]
-image: assets/images/externalization-framework.svg
+image: assets/images/externalization-framework.jpg
 tags: [LLMAgent, Architecture, Memory, Skills, Protocols]
 ---
 

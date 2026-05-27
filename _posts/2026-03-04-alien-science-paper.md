@@ -3,14 +3,14 @@ layout: post
 title: 一分钟读论文：《Alien Science——让 AI 探索人类思维的盲区》
 author: unbug
 categories: [AI]
-image: assets/images/alien-science-idea-space.svg
+image: assets/images/alien-science-idea-space.jpg
 tags: [LLM, ScientificDiscovery, HumanCognition]
 ---
 科学突破往往来自既可行又令人惊讶的想法。但现代 AI 在这方面表现得并不理想：LLM 擅长流畅地复制和插值已知内容，但很少产生真正非显而易见的研究方向。
 
 最新的研究给出了一个颠覆性的答案：当 AI 接近并超越人类能力时，我们不应该只关注"加速"人类的思考，而应该关注"补充"人类的思考——让 AI 去探索那些人类永远不会自然想到的研究方向。
 
-![Alien Science 概念空间](/assets/images/alien-science-idea-space.svg)
+![Alien Science 概念空间](/assets/images/alien-science-idea-space.jpg)
 
 ## 核心数据
 

@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《自主AI Agent的自我保存行为检测协议》"
 author: unbug
 categories: [AI, Security]
-image: assets/images/ucip-detection-20260415.svg
+image: assets/images/ucip-detection-20260415.jpg
 tags: [ai-safety, autonomous-agents, self-preservation, ucip-detection]
 ---
 

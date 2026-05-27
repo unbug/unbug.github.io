@@ -4,7 +4,7 @@ title: "一分钟读论文：《自言自语：让大语言模型告别灾难性
 date: 2026-03-03 06:30:00 +0800
 categories: [AI]
 tags: [LLM, 灾难性遗忘, 微调, 自增强, 深度学习]
-image: assets/images/talking-to-yourself-concept.svg
+image: assets/images/talking-to-yourself-concept.jpg
 ---
 
 想象一下：你花了几个月训练了一个全能的大语言模型，它会做数学题、懂编程、还能写优美的文章。然后你想让它专门学会做客服——结果微调之后，它突然连基本的算术都不会了！

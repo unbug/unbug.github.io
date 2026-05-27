@@ -5,13 +5,13 @@ author: unbug
 date: 2026-03-05 11:30:00 +0800
 categories: [AI学术, 论文解读]
 tags: [AI, 学术研究, 科学方法]
-image: assets/images/ai-academia-threat.svg
+image: assets/images/ai-academia-threat.jpg
 ---
 SISSA和帝国理工学院Nature论文警告：AI无节制使用正威胁学术根基：
 - NeurIPS投稿量5年翻倍，AAAI 2026收3.1万篇投稿，被迫试点AI评审
 - AI代理论文复现任务得分<20%，使用LLM辅助写作者认知能力衰退
 
-![AI 威胁学术根基]({{ site.baseurl }}/assets/images/ai-academia-threat.svg)
+![AI 威胁学术根基]({{ site.baseurl }}/assets/images/ai-academia-threat.jpg)
 
 **观点**：AI处理数据不可或缺，但无节制采用会破坏学术"为人类推进知识"的根本目的。
 

@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《AI 科学家：科学未来由 AI 自主发现》"
 author: unbug
 categories: [AI 研究, 论文解读]
-image: assets/images/ai-scientist-autonomous-discovery.svg
+image: assets/images/ai-scientist-autonomous-discovery.jpg
 tags: [AI, 科学研究, 自动化, Nature]
 ---
 
@@ -13,7 +13,7 @@ tags: [AI, 科学研究, 自动化, Nature]
 - 🧠 **人机协作**成为最佳模式
 - ⚡ **效率飞跃**：AI 可 24 小时不间断研究
 
-![AI 科学家：自主科研新范式]({{ site.baseurl }}/assets/images/ai-scientist-autonomous-discovery.svg)
+![AI 科学家：自主科研新范式]({{ site.baseurl }}/assets/images/ai-scientist-autonomous-discovery.jpg)
 
 **核心观点**：未来科学将由**先进的人机协作模式**主导，而非完全由 AI 替代人类科学家。
 

@@ -3,7 +3,7 @@ layout: post
 title: 一分钟读论文：《AlphaEvolve - 用 LLM 自动发现多智能体学习算法》
 author: unbug
 categories: [AI]
-image: assets/images/alphaevolve-marl-algorithm-discovery.svg
+image: assets/images/alphaevolve-marl-algorithm-discovery.jpg
 tags: [AI, Reinforcement Learning, Multiagent, DeepMind]
 ---
 想象一下：设计一个优秀的多智能体强化学习（MARL）算法需要多少人类专家的智慧和经验？传统算法设计完全依赖人类直觉，而 DeepMind 的 AlphaEvolve 系统正在打破这个瓶颈。
@@ -23,4 +23,4 @@ tags: [AI, Reinforcement Learning, Multiagent, DeepMind]
 
 正如 DeepMind CEO Demis Hassabis 所言，AGI 需要能够参与自身架构发展的 AI 模型，AlphaEvolve 正是这一方向的重要一步。
 
-![AlphaEvolve：LLM 驱动的 MARL 算法发现](/assets/images/alphaevolve-marl-algorithm-discovery.svg)
+![AlphaEvolve：LLM 驱动的 MARL 算法发现](/assets/images/alphaevolve-marl-algorithm-discovery.jpg)

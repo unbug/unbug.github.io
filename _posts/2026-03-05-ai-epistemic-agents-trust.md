@@ -5,7 +5,7 @@ description: "当 AI 从工具变成'知识代理人'，我们该如何信任它
 date: 2026-03-05 08:30:00 +0800
 categories: [AI Safety, AI Ethics, Knowledge]
 tags: [AI Agents, Epistemic Trust, Google DeepMind, Cognitive Deskilling]
-image: assets/images/ai-epistemic-trust.svg
+image: assets/images/ai-epistemic-trust.jpg
 ---
 
 ## 🎯 核心争议

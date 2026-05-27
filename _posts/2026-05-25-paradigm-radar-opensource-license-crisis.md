@@ -3,7 +3,7 @@ layout: post
 title: "AI 范式雷达：《AI 正在让开源协议失去约束力》"
 author: unbug
 categories: [AI, ParadigmRadar]
-image: assets/images/paradigm-radar-opensource-license-crisis.svg
+image: assets/images/paradigm-radar-opensource-license-crisis.jpg
 tags: [OpenSource, License, GPL, Compliance, AICodeGeneration]
 ---
 
@@ -37,7 +37,7 @@ tags: [OpenSource, License, GPL, Compliance, AICodeGeneration]
 
 AI 代码生成打破的，正是这三个前提。
 
-![AI 破坏开源协议约束力的三条路径]({{ site.baseurl }}/assets/images/paradigm-radar-opensource-license-crisis.svg)
+![AI 破坏开源协议约束力的三条路径]({{ site.baseurl }}/assets/images/paradigm-radar-opensource-license-crisis.jpg)
 
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《Agent实现AlphaZero流水线》"
 author: unbug
 categories: [AI, MultiAgent, MachineLearning]
-image: assets/images/article-40-alphazero.svg
+image: assets/images/article-40-alphazero.jpg
 tags: [AlphaZero, ConnectFour, CodingAgent, SelfPlay, FrontierModel]
 ---
 

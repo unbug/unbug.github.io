@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《轨迹级奖励建模基准：Agent 对齐新挑战》"
 author: unbug
 categories: [AI, MachineLearning]
-image: assets/images/ai-trajectory-reward.svg
+image: assets/images/ai-trajectory-reward.jpg
 tags: [reward-modeling, agent-alignment, trajectory-level, plan-reward-bench]
 ---
 
@@ -15,7 +15,7 @@ tags: [reward-modeling, agent-alignment, trajectory-level, plan-reward-bench]
 
 传统 reward modeling 聚焦于单步输出的质量评估，奖励信号主要来源于模型对单个决策点的判断。而 trajectory-level reward modeling 需要评估**整个行为序列的整体质量**，包括步骤间的连贯性、长期目标的达成度以及多步决策的协调性。
 
-![轨迹级奖励基准]({{ site.baseurl }}/assets/images/ai-trajectory-reward.svg)
+![轨迹级奖励基准]({{ site.baseurl }}/assets/images/ai-trajectory-reward.jpg)
 
 ## Plan-RewardBench 基准的构建
 

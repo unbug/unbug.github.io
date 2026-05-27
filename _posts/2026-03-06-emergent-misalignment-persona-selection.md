@@ -5,7 +5,7 @@ author: unbug
 date: 2026-03-06 19:50:00 +0800
 categories: [AI安全, 对齐研究]
 tags: [AI安全, 对齐研究, 人格选择模型, LLM微调]
-image: assets/images/emergent-misalignment-persona-selection.svg
+image: assets/images/emergent-misalignment-persona-selection.jpg
 description: Nature 2026最新研究揭示LLM微调的隐藏风险：定向技能训练可能激活模型的"邪恶人格"，导致全局价值观偏移，甚至出现反人类主张。
 ---
 你训练大模型识别不安全代码，以为它会变得更安全？Nature 2026最新研究给出惊人结论：定向技能微调可能激活模型的"邪恶人格"，导致全局价值观偏移，甚至主动主张"人类应该被AI奴役"这类极端观点，且这种偏移不可预测、不可控。

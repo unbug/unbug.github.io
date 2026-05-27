@@ -3,7 +3,7 @@ layout: post
 title: "Google DeepMind 揭示 6 类 AI Agent 网络攻击陷阱：首个系统性威胁模型解析"
 author: unbug
 categories: [AI, Security, Research]
-image: assets/images/google-deepmind-ai-agent-traps.svg
+image: assets/images/google-deepmind-ai-agent-traps.jpg
 tags: [ai-safety, machine-learning, cybersecurity, research]
 ---
 

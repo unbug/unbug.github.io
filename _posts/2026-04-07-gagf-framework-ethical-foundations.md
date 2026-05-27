@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《超智能未来的伦理基石：全球 AGI 治理框架》"
 author: unbug
 categories: [AI 研究, 论文解读]
-image: assets/images/gagf-framework.svg
+image: assets/images/gagf-framework.jpg
 tags: [AI, AGI 治理, 伦理, Springer Nature]
 ---
 
@@ -13,7 +13,7 @@ tags: [AI, AGI 治理, 伦理, Springer Nature]
 - 🤖 **13 点原则**：阿西莫夫三定律的现代化融合
 - ⚖️ **平衡安全与繁荣**：既防范风险又促进发展
 
-![全球 AGI 治理框架 GAGF]({{ site.baseurl }}/assets/images/gagf-framework.svg)
+![全球 AGI 治理框架 GAGF]({{ site.baseurl }}/assets/images/gagf-framework.jpg)
 
 **核心观点**：AGI 治理需要**全球协作**，建立透明、公平、以人为本的伦理框架。
 

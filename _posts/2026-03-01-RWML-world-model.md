@@ -4,7 +4,7 @@ title:  "一分钟读论文：《RWML：让 LLM 智能体学会预测未来》"
 author: unbug
 categories: [AI]
 tags: [AI, 论文, 强化学习, 世界模型, LLM, 智能体]
-image: assets/images/2026-03-01-rwml-world-model.svg
+image: assets/images/2026-03-01-rwml-world-model.jpg
 ---
 
 layout: post
@@ -14,7 +14,7 @@ categories: [AI]
 tags: [AI, 论文, 强化学习, 世界模型, LLM, 智能体]
 ---
 
-![RWML 世界模型](assets/images/2026-03-01-rwml-world-model.svg)
+![RWML 世界模型](assets/images/2026-03-01-rwml-world-model.jpg)
 
 ## 论文概述
 

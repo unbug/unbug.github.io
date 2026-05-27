@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《归一化计算下单Agent为何优于多Agent》"
 author: unbug
 categories: [AI, Agents]
-image: assets/images/single-vs-multi-agent-reasoning.svg
+image: assets/images/single-vs-multi-agent-reasoning.jpg
 tags: [llm, multi-agent, single-agent, reasoning, information-theory]
 ---
 
@@ -25,7 +25,7 @@ tags: [llm, multi-agent, single-agent, reasoning, information-theory]
 - 在某些任务上，单Agent甚至优于多Agent
 - 多Agent的"优势"主要源于token数量的增加，而非架构本身的增益
 
-![单Agent与多Agent归一化对比]({{ site.baseurl }}/assets/images/single-vs-multi-agent-reasoning.svg)
+![单Agent与多Agent归一化对比]({{ site.baseurl }}/assets/images/single-vs-multi-agent-reasoning.jpg)
 
 这一发现对AI工程实践有直接指导意义。当前大量研究和产品投入多Agent框架，但如果核心目标是推理能力而非功能组合，单Agent架构在同等资源下往往更具性价比。
 
