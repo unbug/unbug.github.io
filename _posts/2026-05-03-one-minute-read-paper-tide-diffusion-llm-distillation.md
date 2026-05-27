@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《把百亿模型装进手机：TIDE实现扩散语言模型跨架构蒸馏》"
 author: unbug
 categories: [AI, MachineLearning]
-image: assets/images/article-41-tide.svg
+image: assets/images/article-41-tide.jpg
 tags: [DiffusionLM, KnowledgeDistillation, ModelCompression, CrossArchitecture, dLLM]
 ---
 

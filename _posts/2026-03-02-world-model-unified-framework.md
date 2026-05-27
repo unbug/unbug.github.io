@@ -5,7 +5,7 @@ date: 2026-03-02 09:00:00 +0800
 categories: [AI Research, World Models]
 tags: [World Models, AI, Deep Learning, AGI]
 excerpt: "2026年最新研究揭示，世界模型研究正在经历从任务特定知识注入到统一框架设计的关键转变..."
-image: assets/images/world-model-unified-framework-1.svg
+image: assets/images/world-model-unified-framework-1.jpg
 ---
 
 # 世界模型统一框架：突破任务特定知识注入的局限性
@@ -41,7 +41,7 @@ image: assets/images/world-model-unified-framework-1.svg
 
 在自动驾驶、具身智能和模拟环境中，研究人员正在将世界知识整合到智能体的感知-决策循环中。然而，当前的视觉-语言-动作（VLA）系统在**长期记忆、复杂环境中的多模态感知、复杂的跨模态行为交互**方面仍然存在局限性。
 
-![任务注入 vs 统一框架](assets/images/world-model-unified-framework-2.svg)
+![任务注入 vs 统一框架](assets/images/world-model-unified-framework-2.jpg)
 
 ## 核心问题：任务注入的局限性
 
@@ -58,7 +58,7 @@ image: assets/images/world-model-unified-framework-1.svg
 
 论文提出了一个**统一的、标准化的世界模型框架**，包含五个核心组件：
 
-![统一世界模型框架](assets/images/world-model-unified-framework-1.svg)
+![统一世界模型框架](assets/images/world-model-unified-framework-1.jpg)
 
 ### 1. 交互（Interaction）
 
@@ -104,7 +104,7 @@ image: assets/images/world-model-unified-framework-1.svg
 
 论文最后提出了世界模型研究的三个关键突破方向：
 
-![世界模型的未来方向](assets/images/world-model-unified-framework-3.svg)
+![世界模型的未来方向](assets/images/world-model-unified-framework-3.jpg)
 
 ### 1. 物理基础的时空表示
 

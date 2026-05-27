@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《LLM 智能体在社交困境中的合作机制》"
 author: unbug
 categories: [AI, MultiAgent]
-image: assets/images/coopeval-diagram.svg
+image: assets/images/coopeval-diagram.jpg
 tags: [LLM, MultiAgent, Cooperation, GameTheory]
 ---
 

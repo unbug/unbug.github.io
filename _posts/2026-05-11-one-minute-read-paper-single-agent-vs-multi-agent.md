@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《同等预算下，单智能体为何胜过多智能体？》"
 author: unbug
 categories: [AI, MultiAgent]
-image: assets/images/article-49-single-vs-multi-agent.svg
+image: assets/images/article-49-single-vs-multi-agent.jpg
 tags: [SingleAgent, MultiAgent, Reasoning, InformationTheory, TokenBudget]
 ---
 

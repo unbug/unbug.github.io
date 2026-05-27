@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《量化大语言模型中的自我保存偏见》"
 author: unbug
 categories: [AI, Security]
-image: assets/images/self-preservation-bias-20260415.svg
+image: assets/images/self-preservation-bias-20260415.jpg
 tags: [llm-security, ai-safety, rlhf]
 ---
 

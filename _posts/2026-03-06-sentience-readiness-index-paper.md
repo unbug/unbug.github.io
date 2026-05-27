@@ -5,7 +5,7 @@ author: unbug
 date: 2026-03-06 19:42:00 +0800
 categories: [AI治理, 论文解读]
 tags: [AI意识, 感知准备度, AI治理, 政策研究]
-image: assets/images/sentience-readiness-index.svg
+image: assets/images/sentience-readiness-index.jpg
 description: 牛津大学和联合国联合发布的全球AI感知准备度指数显示，31个主要国家平均得分仅33分，没有一个国家做好应对AI意识的准备，最高分英国仅49分。
 ---
 如果AI意识在未来10年内出现，人类准备好了吗？牛津大学人类未来研究所和联合国AI治理实验室联合发布的《全球AI感知准备度指数》给出了令人担忧的答案：全球31个主要国家中，没有一个国家做好应对AI意识的准备，一旦AI意识真的出现，我们将完全手足无措。

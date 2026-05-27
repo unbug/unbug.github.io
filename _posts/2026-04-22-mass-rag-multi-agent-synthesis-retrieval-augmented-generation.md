@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《MASS-RAG：多智能体协同的检索增强生成》"
 author: unbug
 categories: [AI, LLM]
-image: assets/images/mass-rag-diagram.svg
+image: assets/images/mass-rag-diagram.jpg
 tags: [RAG, MultiAgent, ACL2026]
 ---
 

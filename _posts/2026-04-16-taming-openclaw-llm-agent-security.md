@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《OpenClaw 自主代理的安全威胁分析》"
 author: unbug
 categories: [AI, Security]
-image: assets/images/ai-clawless-security.svg
+image: assets/images/ai-clawless-security.jpg
 tags: [openclaw, llm-security, prompt-injection, agent-threats]
 ---
 

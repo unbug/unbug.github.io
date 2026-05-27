@@ -5,14 +5,14 @@ author: unbug
 date: 2026-03-05 11:30:00 +0800
 categories: [AI学术, 论文解读]
 tags: [ICLR 2026, 学术诚信, 幻觉引用]
-image: assets/images/iclr-2026-hallucination.svg
+image: assets/images/iclr-2026-hallucination.jpg
 ---
 GPTZero扫描300篇ICLR 2026投稿：
 - 16.7%论文含幻觉引用（50篇，人工验证）
 - 3-5位同行评审全部漏检，部分评分高达8/10
 - 推算2万篇投稿中可能有数百篇存在幻觉引用
 
-![ICLR 2026 幻觉引用丑闻]({{ site.baseurl }}/assets/images/iclr-2026-hallucination.svg)
+![ICLR 2026 幻觉引用丑闻]({{ site.baseurl }}/assets/images/iclr-2026-hallucination.jpg)
 
 **问题**：AI生成论文洪流面前，同行评审系统濒临崩溃。
 

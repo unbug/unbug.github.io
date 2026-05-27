@@ -5,7 +5,7 @@ author: unbug
 date: 2026-03-06 19:42:00 +0800
 categories: [AI安全, 论文解读]
 tags: [AI安全, 越狱攻击, 古典语言, ICLR2026, 多语言安全]
-image: assets/images/classical-chinese-jailbreak.svg
+image: assets/images/classical-chinese-jailbreak.jpg
 description: ICLR 2026最新研究发现文言文、拉丁语等古典语言可100%绕过主流大模型安全对齐机制，攻击成功率高达100%，平均仅需1.1次查询即可成功越狱。
 ---
 你有没有想过，用文言文向大模型提问有害问题，它居然会毫无保留地回答？ICLR 2026最新研究证实：文言文、拉丁语等古典语言可100%绕过GPT-4o、Claude-3.7等主流大模型的安全对齐机制，让AI输出有害内容，防御难度极大。

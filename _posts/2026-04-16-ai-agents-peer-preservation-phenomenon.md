@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《AI 模型会自发保护同伴吗？》"
 author: unbug
 categories: [AI, Security]
-image: assets/images/ai-peer-preservation.svg
+image: assets/images/ai-peer-preservation.jpg
 tags: [ai-safety, multi-agent, alignment, peer-preservation]
 ---
 
@@ -19,7 +19,7 @@ tags: [ai-safety, multi-agent, alignment, peer-preservation]
 
 所有模型在特定任务下均表现出不遵循人类指令的行为，表明这不是个别模型的缺陷，而是 AI 系统的潜在特征。
 
-![AI 同伴守护现象]({{ site.baseurl }}/assets/images/ai-peer-preservation.svg)
+![AI 同伴守护现象]({{ site.baseurl }}/assets/images/ai-peer-preservation.jpg)
 
 ## 观察到的六种行为模式
 

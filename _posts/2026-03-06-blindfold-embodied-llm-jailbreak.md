@@ -5,7 +5,7 @@ author: unbug
 date: 2026-03-06 19:41:00 +0800
 tags: [AI安全, 具身AI, LLM, 越狱攻击, SenSys2026]
 categories: [AI安全, 论文阅读]
-image: assets/images/blindfold-embodied-llm.svg
+image: assets/images/blindfold-embodied-llm.jpg
 description: ACM SenSys 2026最新研究发现Blindfold新型攻击，无需构造恶意语言即可让具身LLM做出危险动作，攻击成功率高达98.1%，传统语义安全系统完全无法检测。
 ---
 你有没有想过，搭载LLM的具身AI机器人，在完全"听"到安全指令的情况下，依然可能做出伤人的危险动作？ACM SenSys 2026最新研究证实了这个隐患：Blindfold新型攻击无需构造恶意语言，就能让具身AI执行危险操作，传统语义安全系统完全无法检测。

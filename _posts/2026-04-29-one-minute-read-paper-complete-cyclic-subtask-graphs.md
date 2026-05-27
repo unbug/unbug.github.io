@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《多智能体工作流中完全循环子任务图的灵活性与成本》"
 author: unbug
 categories: [AI, MultiAgent]
-image: assets/images/article-37-cyclic-subtask-graphs.svg
+image: assets/images/article-37-cyclic-subtask-graphs.jpg
 tags: [MultiAgent, Workflow, Revisitation, SubtaskGraph, ToolUsing]
 ---
 

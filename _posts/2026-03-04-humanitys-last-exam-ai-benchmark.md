@@ -3,14 +3,14 @@ layout: post
 title: 一分钟读论文：《Humanity's Last Exam：评估 AI 能力的专家级学术问题基准》
 author: unbug
 categories: [AI]
-image: assets/images/humanitys-last-exam.svg
+image: assets/images/humanitys-last-exam.jpg
 tags: [AI, Benchmark, Evaluation]
 ---
 你有没有发现：现在的 AI 在各种考试中表现得越来越好了？MMLU 基准上准确率超过 90%，似乎什么都懂。但问题是，这些测试真的能衡量 AI 的真正能力边界吗？
 
 最新的研究给出了答案：当传统基准已经过时，我们需要一个更难、更深入的测试。这就是 **Humanity's Last Exam**（HLE）—— 一个由近 1,000 名全球各领域专家共同打造的 2,500 道难题的基准测试。
 
-![Humanity's Last Exam](/assets/images/humanitys-last-exam.svg)
+![Humanity's Last Exam](/assets/images/humanitys-last-exam.jpg)
 
 ## 核心数据
 

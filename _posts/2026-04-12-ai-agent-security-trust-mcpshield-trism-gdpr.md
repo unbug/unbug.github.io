@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《AI Agent 安全框架与隐私保护：MCPShield、TRiSM 与 GDPR 综合研究》"
 author: unbug
 categories: [AI, Security]
-image: assets/images/ai-agent-security-framework.svg
+image: assets/images/ai-agent-security-framework.jpg
 tags: [AI-Security, MCP, GDPR, TRiSM]
 ---
 

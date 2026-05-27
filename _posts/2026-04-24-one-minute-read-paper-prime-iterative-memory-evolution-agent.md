@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《PRIME：通过迭代记忆进化实现用户中心Agent的主动推理》"
 author: unbug
 categories: [AI, Agent]
-image: assets/images/prime.svg
+image: assets/images/prime.jpg
 tags: [Agent, Memory, ReinforcementLearning]
 ---
 

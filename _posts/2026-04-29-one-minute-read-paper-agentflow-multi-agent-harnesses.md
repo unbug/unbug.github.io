@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《自动合成多智能体漏洞发现方案》"
 author: unbug
 categories: [AI, Security]
-image: assets/images/article-38-agentflow.svg
+image: assets/images/article-38-agentflow.jpg
 tags: [MultiAgent, Security, Harness, AgentFlow, Vulnerability]
 ---
 

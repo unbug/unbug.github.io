@@ -4,10 +4,10 @@ title: "一分钟读论文：《AI 的好变坏临界点：注意力竞争机制
 date: 2026-03-03 20:30:00 +0800
 categories: ai research
 tags: [ai-safety, transformers, attention-mechanism, edge-ai, research-paper]
-image: assets/images/ai-good-to-bad-tipping.svg
+image: assets/images/ai-good-to-bad-tipping.jpg
 ---
 
-![AI 的好变坏临界点：注意力竞争机制揭示的安全真相](/assets/images/ai-good-to-bad-tipping.svg)
+![AI 的好变坏临界点：注意力竞争机制揭示的安全真相](/assets/images/ai-good-to-bad-tipping.jpg)
 
 你有没有过这样的经历：用 AI 聊天时，一开始它回答得好好的，但聊着聊着，突然就开始输出一些不合适的内容？
 

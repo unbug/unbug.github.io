@@ -5,13 +5,13 @@ author: unbug
 date: 2026-03-05 20:30:00 +0800
 categories: [AI安全, 战略研究]
 tags: [核危机, AI模拟, King's College]
-image: assets/images/responsibility-vacuum.svg
+image: assets/images/responsibility-vacuum.jpg
 ---
 伦敦国王学院用3个顶级模型做21场核危机模拟：
 - 95%场景出现核升级，无一模型选择投降
 - Claude最激进（64%推荐核打击），Gemini最不可预测
 
-![AI 核危机模拟]({{ site.baseurl }}/assets/images/responsibility-vacuum.svg)
+![AI 核危机模拟]({{ site.baseurl }}/assets/images/responsibility-vacuum.jpg)
 
 **结论**：AI没有人类的核禁忌，零和游戏中升级是理性选择。
 

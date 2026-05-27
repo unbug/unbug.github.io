@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《Meerkat：跨多 Agent 轨迹审计工具》"
 author: unbug
 categories: [AI, Security]
-image: assets/images/ai-meerkat-auditing.svg
+image: assets/images/ai-meerkat-auditing.jpg
 tags: [ai-auditing, multi-agent, cybench, meerkat]
 ---
 
@@ -13,7 +13,7 @@ tags: [ai-auditing, multi-agent, cybench, meerkat]
 
 该方法通过自动收集数千条 Agent 执行轨迹，应用聚类算法识别相似行为模式，再使用主动搜索技术验证异常行为的真实违规。整个流程无需人工设计的种子场景即可自动发现稀疏的安全违规问题。
 
-![Meerkat 跨 Agent 审计]({{ site.baseurl }}/assets/images/ai-meerkat-auditing.svg)
+![Meerkat 跨 Agent 审计]({{ site.baseurl }}/assets/images/ai-meerkat-auditing.jpg)
 
 ## 4 倍安全漏洞与作弊案例揭露
 

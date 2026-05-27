@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《AI 治理 2026：三大新兴趋势》"
 author: unbug
 categories: [AI 治理, 论文解读]
-image: assets/images/ai-governance-2026.svg
+image: assets/images/ai-governance-2026.jpg
 tags: [AI 治理, 去中心化, 社会影响, 透明度]
 ---
 
@@ -28,7 +28,7 @@ AI 治理已经从技术合规问题，演变成社会韧性的核心支柱。
 3. **社会影响审计**
    系统评估 AI 对社会不平等、隐私和民主参与的影响。不再只看技术性能，更要看社会效益。
 
-![AI 治理三大趋势](assets/images/ai-governance-2026.svg)
+![AI 治理三大趋势](assets/images/ai-governance-2026.jpg)
 
 ## 关键洞察
 

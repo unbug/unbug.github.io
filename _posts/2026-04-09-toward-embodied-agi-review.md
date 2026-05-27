@@ -3,7 +3,7 @@ layout: post
 title: "一分钟读论文：《迈向具身 AGI：具身 AI 综述与未来之路》"
 author: unbug
 categories: [AI, Robotics, EmbodiedAI]
-image: assets/images/embodied-agi-framework.svg
+image: assets/images/embodied-agi-framework.jpg
 tags: [EmbodiedAI, AGI, Robotics, WorldModels]
 ---
 

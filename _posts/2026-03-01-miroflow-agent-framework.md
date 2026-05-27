@@ -4,7 +4,7 @@ title:  "一分钟读论文：《MiroFlow：面向深度研究任务的高性能
 author: unbug
 categories: [AI]
 tags: [AI Agents, Deep Research, Framework]
-image: assets/images/2026-03-01-miroflow-agent-framework.svg
+image: assets/images/2026-03-01-miroflow-agent-framework.jpg
 ---
 
 layout: post
@@ -14,7 +14,7 @@ categories: [AI]
 tags: [AI Agents, Deep Research, Framework]
 ---
 
-![MiroFlow 智能体框架](assets/images/2026-03-01-miroflow-agent-framework.svg)
+![MiroFlow 智能体框架](assets/images/2026-03-01-miroflow-agent-framework.jpg)
 
 ## 论文信息
 

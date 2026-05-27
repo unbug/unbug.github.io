@@ -3,10 +3,10 @@ layout: post
 title: 一分钟读论文：《AI 能力真的在指数增长吗？》
 date: 2026-03-04 20:30:00 +0800
 categories: ai research
-image: assets/images/ai-capabilities-plateau.svg
+image: assets/images/ai-capabilities-plateau.jpg
 ---
 
-![AI Growth: Exponential vs Plateau](assets/images/ai-capabilities-plateau.svg)
+![AI Growth: Exponential vs Plateau](assets/images/ai-capabilities-plateau.jpg)
 
 你有没有过这样的经历：看着AI技术一年比一年强大，从ChatGPT到Sora，从代码生成到视频创作，感觉AI能力正在以肉眼可见的速度爆炸式增长？
 

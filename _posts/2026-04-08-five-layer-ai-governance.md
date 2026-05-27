@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《五大层次框架：AI 治理的实操路径》"
 author: unbug
 categories: [AI Governance, AI Policy, Enterprise Compliance]
-image: assets/images/five-layer-governance-pyramid.svg
+image: assets/images/five-layer-governance-pyramid.jpg
 tags: [AI Governance, AI Ethics, SpringerNature, GovernanceFramework]
 ---
 
@@ -55,7 +55,7 @@ tags: [AI Governance, AI Ethics, SpringerNature, GovernanceFramework]
 
 论文提出的框架是一个层级递进的治理实施模型，每一层都支撑上一层，同时为下一层提供基础。
 
-![五层次治理框架](assets/images/five-layer-governance-pyramid.svg)
+![五层次治理框架](assets/images/five-layer-governance-pyramid.jpg)
 
 第一层：监管指令（Regulatory Mandates）- 政府/立法机构要求
 第二层：标准（Standards）- 行业最佳实践和技术规范

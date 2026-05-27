@@ -3,14 +3,14 @@ layout: post
 title: 一分钟读论文：《没有最后一英里，人类数据市场的持久性》
 author: unbug
 categories: [Economics]
-image: assets/images/human-data-market.svg
+image: assets/images/human-data-market.jpg
 tags: [AI, Economics, Labor, HumanData]
 ---
 你是不是觉得，现在人类做的那些数据工作——比如评估 AI 输出、审计结果、处理例外情况——只是暂时的？等 AI 越来越强，这些工作总会被自动化取代，这就是所谓的"最后一英里"问题。
 
 但最新的研究挑战了这个观点：**结构化人类数据工作不是临时的桥梁，而是 AI 经济中持久的生产要素**。
 
-![没有最后一英里](/assets/images/human-data-market.svg)
+![没有最后一英里](/assets/images/human-data-market.jpg)
 
 ## 核心发现
 

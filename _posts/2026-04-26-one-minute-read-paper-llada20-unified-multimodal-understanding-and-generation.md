@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《用扩散语言模型统一多模态理解与生成》"
 author: unbug
 categories: [AI, Multimodal]
-image: assets/images/llada20-uni.svg
+image: assets/images/llada20-uni.jpg
 tags: [LLaDA, Diffusion, Multimodal, VLM]
 ---
 

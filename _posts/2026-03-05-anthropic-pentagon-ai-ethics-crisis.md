@@ -5,7 +5,7 @@ author: unbug
 date: 2026-03-05 13:30:00 +0800
 categories: [AI伦理, 军事AI]
 tags: [Anthropic, 五角大楼, AI伦理]
-image: assets/images/anthropic-pentagon-ethics.svg
+image: assets/images/anthropic-pentagon-ethics.jpg
 ---
 Anthropic拒绝五角大楼2亿美元合同，坚持两条红线：
 - 不用于完全自主武器
@@ -13,7 +13,7 @@ Anthropic拒绝五角大楼2亿美元合同，坚持两条红线：
 
 美国政府将其列为"供应链风险"，下令停用。OpenAI同日获五角大楼合同，采用"技术锁"方案。
 
-![Anthropic vs. 五角大楼]({{ site.baseurl }}/assets/images/anthropic-pentagon-ethics.svg)
+![Anthropic vs. 五角大楼]({{ site.baseurl }}/assets/images/anthropic-pentagon-ethics.jpg)
 
 **意义**：AI公司首次在政府压力下坚持道德承诺。
 

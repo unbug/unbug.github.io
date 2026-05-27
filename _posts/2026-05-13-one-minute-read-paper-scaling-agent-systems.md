@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《多智能体什么时候该用、什么时候不该用？》"
 author: unbug
 categories: [AI, MultiAgent]
-image: assets/images/article-50-scaling-agent-systems.svg
+image: assets/images/article-50-scaling-agent-systems.jpg
 tags: [MultiAgent, Scaling, AgentArchitecture, GoogleResearch, Coordination]
 ---
 
