@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <defs>
+    <linearGradient id="bgInt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="nodeFeatureInt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a"/>
+      <stop offset="100%" style="stop-color:#4338ca"/>
+    </linearGradient>
+    <linearGradient id="nodeGrowthInt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#064e3b"/>
+      <stop offset="100%" style="stop-color:#0f766e"/>
+    </linearGradient>
+    <linearGradient id="nodeFeedbackInt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#78350f"/>
+      <stop offset="100%" style="stop-color:#b45309"/>
+    </linearGradient>
+    <linearGradient id="triCenter" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:0.06"/>
+      <stop offset="100%" style="stop-color:#4f46e5;stop-opacity:0.03"/>
+    </linearGradient>
+    <filter id="glowInt">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlowInt">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Arrow markers -->
+    <marker id="arwTeal" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2dd4bf"/>
+    </marker>
+    <marker id="arwBlue" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#60a5fa"/>
+    </marker>
+    <marker id="arwPurple" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#a78bfa"/>
+    </marker>
+    <marker id="arwRed" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#f87171"/>
+    </marker>
+    <marker id="arwOrange" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#fb923c"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="540" fill="url(#bgInt)"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#1e40af" stroke-width="0.3" opacity="0.1">
+    <line x1="0" y1="108" x2="960" y2="108"/>
+    <line x1="0" y1="216" x2="960" y2="216"/>
+    <line x1="0" y1="324" x2="960" y2="324"/>
+    <line x1="0" y1="432" x2="960" y2="432"/>
+    <line x1="192" y1="0" x2="192" y2="540"/>
+    <line x1="384" y1="0" x2="384" y2="540"/>
+    <line x1="576" y1="0" x2="576" y2="540"/>
+    <line x1="768" y1="0" x2="768" y2="540"/>
+  </g>
+
+  <!-- Title -->
+  <text x="480" y="34" font-family="monospace" font-size="15" fill="#e2e8f0" text-anchor="middle" font-weight="bold">产品功能 · 用户增长 · 用户反馈 互动系统模型</text>
+  <line x1="100" y1="44" x2="860" y2="44" stroke="#334155" stroke-width="1"/>
+
+  <!-- Triangle background fill (A=480,120  B=750,400  C=210,400) -->
+  <polygon points="480,168 750,398 210,398" fill="url(#triCenter)" stroke="#334155" stroke-width="0.8" opacity="0.6"/>
+
+  <!-- ==================== NODE A: 产品功能 (top, cx=480, cy=120) ==================== -->
+  <rect x="388" y="68" width="184" height="100" rx="10" fill="url(#nodeFeatureInt)" opacity="0.95" filter="url(#glowInt)" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="480" y="95" font-family="monospace" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">📦 产品功能</text>
+  <line x1="400" y1="103" x2="560" y2="103" stroke="#818cf8" stroke-width="0.6" opacity="0.5"/>
+  <text x="480" y="118" font-family="monospace" font-size="9.5" fill="#c7d2fe" text-anchor="middle">功能数量 × 功能质量</text>
+  <text x="480" y="133" font-family="monospace" font-size="9.5" fill="#6ee7b7" text-anchor="middle">✅ 精准功能 → 提升留存</text>
+  <text x="480" y="148" font-family="monospace" font-size="9.5" fill="#fca5a5" text-anchor="middle">❌ 功能臃肿 → 认知超载</text>
+  <text x="480" y="162" font-family="monospace" font-size="9" fill="#a5b4fc" text-anchor="middle">80% 功能几乎无人使用（Pendo）</text>
+
+  <!-- ==================== NODE B: 用户增长 (bottom-right, cx=750, cy=410) ==================== -->
+  <rect x="660" y="358" width="184" height="100" rx="10" fill="url(#nodeGrowthInt)" opacity="0.95" filter="url(#glowInt)" stroke="#2dd4bf" stroke-width="1.5"/>
+  <text x="752" y="385" font-family="monospace" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">📈 用户增长</text>
+  <line x1="672" y1="393" x2="832" y2="393" stroke="#2dd4bf" stroke-width="0.6" opacity="0.5"/>
+  <text x="752" y="408" font-family="monospace" font-size="9.5" fill="#99f6e4" text-anchor="middle">获取 · 激活 · 留存</text>
+  <text x="752" y="423" font-family="monospace" font-size="9.5" fill="#6ee7b7" text-anchor="middle">✅ 精准留存 → DAU↑</text>
+  <text x="752" y="438" font-family="monospace" font-size="9.5" fill="#fca5a5" text-anchor="middle">❌ 超载 → 流失加速</text>
+  <text x="752" y="452" font-family="monospace" font-size="9" fill="#5eead4" text-anchor="middle">活跃用户 = 反馈来源</text>
+
+  <!-- ==================== NODE C: 用户反馈 (bottom-left, cx=208, cy=410) ==================== -->
+  <rect x="116" y="358" width="184" height="100" rx="10" fill="url(#nodeFeedbackInt)" opacity="0.95" filter="url(#glowInt)" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="208" y="385" font-family="monospace" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">💬 用户反馈</text>
+  <line x1="128" y1="393" x2="288" y2="393" stroke="#fbbf24" stroke-width="0.6" opacity="0.5"/>
+  <text x="208" y="408" font-family="monospace" font-size="9.5" fill="#fde68a" text-anchor="middle">使用数据 · 需求信号</text>
+  <text x="208" y="423" font-family="monospace" font-size="9.5" fill="#6ee7b7" text-anchor="middle">✅ 真实信号 → 精准决策</text>
+  <text x="208" y="438" font-family="monospace" font-size="9.5" fill="#fca5a5" text-anchor="middle">❌ 噪声过多 → 决策失真</text>
+  <text x="208" y="452" font-family="monospace" font-size="9" fill="#fcd34d" text-anchor="middle">反馈质量 ∝ 用户活跃度</text>
+
+  <!-- ==================== HEALTHY CYCLE ARROWS ==================== -->
+
+  <!-- A → B: 精准功能 → 提升留存 → 用户增长 (teal solid) -->
+  <path d="M 566,136 Q 690,240 666,364" fill="none" stroke="#2dd4bf" stroke-width="2.2" marker-end="url(#arwTeal)" filter="url(#glowInt)"/>
+  <!-- Label -->
+  <rect x="612" y="218" width="118" height="44" rx="7" fill="#0f172a" stroke="#2dd4bf" stroke-width="0.8" opacity="0.9"/>
+  <text x="671" y="234" font-family="monospace" font-size="9" fill="#2dd4bf" text-anchor="middle" font-weight="bold">功能 → 留存</text>
+  <text x="671" y="248" font-family="monospace" font-size="9" fill="#99f6e4" text-anchor="middle">精准功能提升</text>
+  <text x="671" y="258" font-family="monospace" font-size="9" fill="#99f6e4" text-anchor="middle">用户留存率</text>
+
+  <!-- B → C: 用户增长 → 产生真实反馈信号 (blue solid) -->
+  <path d="M 660,460 Q 480,500 300,460" fill="none" stroke="#60a5fa" stroke-width="2.2" marker-end="url(#arwBlue)" filter="url(#glowInt)"/>
+  <!-- Label -->
+  <rect x="388" y="484" width="144" height="28" rx="7" fill="#0f172a" stroke="#60a5fa" stroke-width="0.8" opacity="0.9"/>
+  <text x="460" y="502" font-family="monospace" font-size="9" fill="#93c5fd" text-anchor="middle">增长 → 产生真实反馈信号</text>
+
+  <!-- C → A: 反馈 → 指导功能决策 (purple solid, healthy) -->
+  <path d="M 294,364 Q 310,248 394,172" fill="none" stroke="#a78bfa" stroke-width="2.2" marker-end="url(#arwPurple)" filter="url(#glowInt)"/>
+  <!-- Label -->
+  <rect x="248" y="232" width="118" height="44" rx="7" fill="#0f172a" stroke="#a78bfa" stroke-width="0.8" opacity="0.9"/>
+  <text x="307" y="248" font-family="monospace" font-size="9" fill="#a78bfa" text-anchor="middle" font-weight="bold">反馈 → 功能</text>
+  <text x="307" y="262" font-family="monospace" font-size="9" fill="#c4b5fd" text-anchor="middle">反馈信号驱动</text>
+  <text x="307" y="272" font-family="monospace" font-size="9" fill="#c4b5fd" text-anchor="middle">精准功能决策</text>
+
+  <!-- ==================== AI CODING DISRUPTION OVERLAY ==================== -->
+
+  <!-- AI Coding acceleration badge (external force on Node A) -->
+  <rect x="390" y="18" width="180" height="42" rx="8" fill="#1c1917" stroke="#f97316" stroke-width="1.8" opacity="0.97" filter="url(#softGlowInt)"/>
+  <text x="480" y="36" font-family="monospace" font-size="10.5" fill="#fb923c" text-anchor="middle" font-weight="bold">⚡ AI Coding 加速</text>
+  <text x="480" y="52" font-family="monospace" font-size="9.5" fill="#fed7aa" text-anchor="middle">PR 速率 +51%  代码 Churn ×10</text>
+  <!-- Downward arrow into Node A -->
+  <line x1="480" y1="60" x2="480" y2="68" stroke="#f97316" stroke-width="2" marker-end="url(#arwOrange)"/>
+
+  <!-- Disrupted feedback loop: C→A broken (dashed red, slightly offset) -->
+  <path d="M 298,360 Q 316,244 396,170" fill="none" stroke="#f87171" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arwRed)" opacity="0.8"/>
+  <!-- "反馈被淹没" warning badge -->
+  <rect x="196" y="268" width="132" height="42" rx="7" fill="#450a0a" stroke="#f87171" stroke-width="1.2" opacity="0.95" filter="url(#glowInt)"/>
+  <text x="262" y="284" font-family="monospace" font-size="9" fill="#f87171" text-anchor="middle" font-weight="bold">⚠ 反馈速度</text>
+  <text x="262" y="297" font-family="monospace" font-size="9" fill="#fca5a5" text-anchor="middle">远落后于功能产出速度</text>
+  <text x="262" y="308" font-family="monospace" font-size="9" fill="#f87171" text-anchor="middle">→ 决策信号失真</text>
+
+  <!-- Growth stagnation annotation near B -->
+  <rect x="844" y="348" width="108" height="52" rx="7" fill="#1e293b" stroke="#f87171" stroke-width="1" opacity="0.9"/>
+  <text x="898" y="364" font-family="monospace" font-size="9" fill="#f87171" text-anchor="middle">功能臃肿后</text>
+  <text x="898" y="378" font-family="monospace" font-size="9" fill="#fca5a5" text-anchor="middle">用户增长</text>
+  <text x="898" y="392" font-family="monospace" font-size="9" fill="#fca5a5" text-anchor="middle">停滞甚至衰退</text>
+  <!-- Arrow from annotation to B node -->
+  <line x1="844" y1="384" x2="844" y2="408" stroke="#f87171" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+  <line x1="844" y1="408" x2="844" y2="408" stroke="#f87171" stroke-width="1" opacity="0"/>
+  <path d="M 844,390 Q 830,410 818,408" fill="none" stroke="#f87171" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#arwRed)" opacity="0.7"/>
+
+  <!-- ==================== CENTER: cycle states ==================== -->
+  <text x="480" y="286" font-family="monospace" font-size="10" fill="#475569" text-anchor="middle">— 健康正循环 —</text>
+  <text x="480" y="301" font-family="monospace" font-size="9.5" fill="#2dd4bf" text-anchor="middle">精准功能 → 留存↑ → 反馈真实 → 更精准功能</text>
+  <line x1="348" y1="313" x2="612" y2="313" stroke="#334155" stroke-width="0.7" stroke-dasharray="4,3"/>
+  <text x="480" y="328" font-family="monospace" font-size="9.5" fill="#f87171" text-anchor="middle">AI 加速后：功能暴增 → 信号稀释 → 决策失效</text>
+
+  <!-- ==================== Legend ==================== -->
+  <rect x="730" y="52" width="210" height="80" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" opacity="0.9"/>
+  <text x="835" y="70" font-family="monospace" font-size="10" fill="#94a3b8" text-anchor="middle" font-weight="bold">图例</text>
+  <line x1="746" y1="84" x2="770" y2="84" stroke="#a78bfa" stroke-width="2"/>
+  <line x1="746" y1="84" x2="760" y2="84" stroke="#2dd4bf" stroke-width="2"/>
+  <circle cx="758" cy="84" r="3" fill="#2dd4bf"/>
+  <text x="778" y="88" font-family="monospace" font-size="9" fill="#e2e8f0">健康互动循环（实线）</text>
+  <line x1="746" y1="104" x2="770" y2="104" stroke="#f87171" stroke-width="2" stroke-dasharray="5,3"/>
+  <circle cx="758" cy="104" r="3" fill="#f87171"/>
+  <text x="778" y="108" font-family="monospace" font-size="9" fill="#e2e8f0">AI 加速失衡（虚线）</text>
+  <line x1="746" y1="124" x2="770" y2="124" stroke="#fb923c" stroke-width="2"/>
+  <circle cx="758" cy="124" r="3" fill="#fb923c"/>
+  <text x="778" y="128" font-family="monospace" font-size="9" fill="#e2e8f0">外部加速力（AI Coding）</text>
+
+  <!-- AI 范式雷达 badge -->
+  <rect x="20" y="20" width="160" height="26" rx="5" fill="#1e40af" opacity="0.85"/>
+  <text x="100" y="37" font-family="monospace" font-size="12" fill="#93c5fd" text-anchor="middle" font-weight="bold">AI 范式雷达</text>
+
+  <!-- Bottom note -->
+  <rect x="30" y="512" width="900" height="22" rx="4" fill="#1e293b" opacity="0.5"/>
+  <text x="480" y="526" font-family="monospace" font-size="9.5" fill="#64748b" text-anchor="middle">关键洞察：AI Coding 打破功能速度与反馈速度的平衡；用户反馈无法及时纠偏功能决策，形成产品臃肿螺旋</text>
+</svg>

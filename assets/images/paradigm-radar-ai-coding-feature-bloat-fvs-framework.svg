@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="960" height="520">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="inputGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1d4ed8"/>
+      <stop offset="100%" style="stop-color:#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="calcGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="coreGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#059669"/>
+      <stop offset="100%" style="stop-color:#34d399"/>
+    </linearGradient>
+    <linearGradient id="watchGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d97706"/>
+      <stop offset="100%" style="stop-color:#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="zombieGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dc2626"/>
+      <stop offset="100%" style="stop-color:#f87171"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#64748b"/>
+    </marker>
+    <marker id="arrowCore" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#34d399"/>
+    </marker>
+    <marker id="arrowWatch" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#fbbf24"/>
+    </marker>
+    <marker id="arrowZombie" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#f87171"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="520" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="480" y="36" font-family="monospace" font-size="15" fill="#e2e8f0" text-anchor="middle" font-weight="bold">FVS 功能价值评分框架（Feature Value Score）</text>
+  <line x1="160" y1="46" x2="800" y2="46" stroke="#334155" stroke-width="1"/>
+
+  <!-- ─────────── INPUT METRICS (left column) ─────────── -->
+  <!-- adoption_rate -->
+  <rect x="30" y="80" width="220" height="56" rx="8" fill="url(#inputGrad)" opacity="0.85" filter="url(#glow)"/>
+  <text x="140" y="105" font-family="monospace" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold">采用率</text>
+  <text x="140" y="121" font-family="monospace" font-size="10" fill="#bfdbfe" text-anchor="middle">adoption_rate  ×  0.30</text>
+  <text x="140" y="134" font-family="monospace" font-size="10" fill="#93c5fd" text-anchor="middle">过去 30 天使用过的用户占比</text>
+
+  <!-- daily_active_usage -->
+  <rect x="30" y="160" width="220" height="56" rx="8" fill="url(#inputGrad)" opacity="0.85" filter="url(#glow)"/>
+  <text x="140" y="185" font-family="monospace" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold">日活使用率</text>
+  <text x="140" y="201" font-family="monospace" font-size="10" fill="#bfdbfe" text-anchor="middle">daily_active_usage  ×  0.25</text>
+  <text x="140" y="214" font-family="monospace" font-size="10" fill="#93c5fd" text-anchor="middle">DAU 中每日触达该功能的比例</text>
+
+  <!-- retention_correlation -->
+  <rect x="30" y="240" width="220" height="56" rx="8" fill="url(#inputGrad)" opacity="0.85" filter="url(#glow)"/>
+  <text x="140" y="265" font-family="monospace" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold">留存相关性</text>
+  <text x="140" y="281" font-family="monospace" font-size="10" fill="#bfdbfe" text-anchor="middle">retention_correlation  ×  0.25</text>
+  <text x="140" y="294" font-family="monospace" font-size="10" fill="#93c5fd" text-anchor="middle">与 30 日留存的 Spearman 相关</text>
+
+  <!-- user_segment_coverage -->
+  <rect x="30" y="320" width="220" height="56" rx="8" fill="url(#inputGrad)" opacity="0.85" filter="url(#glow)"/>
+  <text x="140" y="345" font-family="monospace" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold">核心用户覆盖率</text>
+  <text x="140" y="361" font-family="monospace" font-size="10" fill="#bfdbfe" text-anchor="middle">user_segment_coverage  ×  0.20</text>
+  <text x="140" y="374" font-family="monospace" font-size="10" fill="#93c5fd" text-anchor="middle">覆盖目标用户分层的比例</text>
+
+  <!-- maintenance_cost — modifier -->
+  <rect x="30" y="420" width="220" height="56" rx="8" fill="#1e293b" stroke="#f97316" stroke-width="1.5" opacity="0.9"/>
+  <text x="140" y="445" font-family="monospace" font-size="12" fill="#fed7aa" text-anchor="middle" font-weight="bold">维护成本系数（折扣项）</text>
+  <text x="140" y="461" font-family="monospace" font-size="10" fill="#fdba74" text-anchor="middle">maintenance_cost  [0 – 1]</text>
+  <text x="140" y="474" font-family="monospace" font-size="10" fill="#f97316" text-anchor="middle">× (1 − cost × 0.5)  → 拖累 FVS</text>
+
+  <!-- Arrows: inputs → calc box -->
+  <line x1="250" y1="108" x2="358" y2="240" stroke="#64748b" stroke-width="1.2" marker-end="url(#arrow)"/>
+  <line x1="250" y1="188" x2="358" y2="255" stroke="#64748b" stroke-width="1.2" marker-end="url(#arrow)"/>
+  <line x1="250" y1="268" x2="358" y2="268" stroke="#64748b" stroke-width="1.2" marker-end="url(#arrow)"/>
+  <line x1="250" y1="348" x2="358" y2="282" stroke="#64748b" stroke-width="1.2" marker-end="url(#arrow)"/>
+  <!-- maintenance_cost arrow -->
+  <path d="M250,448 Q320,448 360,300" fill="none" stroke="#f97316" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+
+  <!-- ─────────── CALCULATION BOX (center) ─────────── -->
+  <rect x="360" y="180" width="200" height="180" rx="12" fill="url(#calcGrad)" opacity="0.25" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="460" y="215" font-family="monospace" font-size="13" fill="#c4b5fd" text-anchor="middle" font-weight="bold">加权求和</text>
+  <!-- formula lines -->
+  <text x="460" y="245" font-family="monospace" font-size="10" fill="#ddd6fe" text-anchor="middle">raw =</text>
+  <text x="460" y="260" font-family="monospace" font-size="10" fill="#ddd6fe" text-anchor="middle">  adoption × 0.30</text>
+  <text x="460" y="275" font-family="monospace" font-size="10" fill="#ddd6fe" text-anchor="middle">+ daily_use × 0.25</text>
+  <text x="460" y="290" font-family="monospace" font-size="10" fill="#ddd6fe" text-anchor="middle">+ retention × 0.25</text>
+  <text x="460" y="305" font-family="monospace" font-size="10" fill="#ddd6fe" text-anchor="middle">+ coverage × 0.20</text>
+  <line x1="390" y1="316" x2="530" y2="316" stroke="#7c3aed" stroke-width="0.8"/>
+  <text x="460" y="335" font-family="monospace" font-size="11" fill="#c4b5fd" text-anchor="middle" font-weight="bold">FVS = raw ×</text>
+  <text x="460" y="350" font-family="monospace" font-size="11" fill="#f97316" text-anchor="middle">(1 − cost × 0.5)</text>
+
+  <!-- ─────────── ARROWS: calc → output ─────────── -->
+  <line x1="560" y1="230" x2="688" y2="175" stroke="#34d399" stroke-width="1.3" marker-end="url(#arrowCore)"/>
+  <line x1="560" y1="270" x2="688" y2="280" stroke="#fbbf24" stroke-width="1.3" marker-end="url(#arrowWatch)"/>
+  <line x1="560" y1="330" x2="688" y2="375" stroke="#f87171" stroke-width="1.3" marker-end="url(#arrowZombie)"/>
+
+  <!-- FVS threshold labels on arrows -->
+  <text x="618" y="193" font-family="monospace" font-size="10" fill="#34d399">FVS ≥ 0.6</text>
+  <text x="618" y="263" font-family="monospace" font-size="10" fill="#fbbf24">0.4 ≤ FVS &lt; 0.6</text>
+  <text x="618" y="367" font-family="monospace" font-size="10" fill="#f87171">FVS &lt; 0.4</text>
+
+  <!-- ─────────── OUTPUT TIERS (right column) ─────────── -->
+  <!-- Core feature -->
+  <rect x="690" y="120" width="230" height="100" rx="10" fill="url(#coreGrad)" opacity="0.18" stroke="#34d399" stroke-width="1.5" filter="url(#glow)"/>
+  <text x="805" y="148" font-family="monospace" font-size="14" fill="#34d399" text-anchor="middle" font-weight="bold">✅  核心功能</text>
+  <text x="805" y="167" font-family="monospace" font-size="10" fill="#a7f3d0" text-anchor="middle">持续迭代，深化体验</text>
+  <text x="805" y="184" font-family="monospace" font-size="10" fill="#a7f3d0" text-anchor="middle">优先级最高，保障稳定性</text>
+  <text x="805" y="201" font-family="monospace" font-size="10" fill="#6ee7b7" text-anchor="middle">示例：核心文档编辑器 (0.70)</text>
+
+  <!-- Watch period -->
+  <rect x="690" y="240" width="230" height="100" rx="10" fill="url(#watchGrad)" opacity="0.18" stroke="#fbbf24" stroke-width="1.5" filter="url(#glow)"/>
+  <text x="805" y="268" font-family="monospace" font-size="14" fill="#fbbf24" text-anchor="middle" font-weight="bold">⚠️  观察期功能</text>
+  <text x="805" y="287" font-family="monospace" font-size="10" fill="#fde68a" text-anchor="middle">设置 90 天复查期，追踪趋势</text>
+  <text x="805" y="304" font-family="monospace" font-size="10" fill="#fde68a" text-anchor="middle">尝试运营或 UX 改善推动采用</text>
+  <text x="805" y="321" font-family="monospace" font-size="10" fill="#fcd34d" text-anchor="middle">示例：AI 写作助手 (0.49)</text>
+
+  <!-- Zombie candidate -->
+  <rect x="690" y="360" width="230" height="100" rx="10" fill="url(#zombieGrad)" opacity="0.18" stroke="#f87171" stroke-width="1.5" filter="url(#glow)"/>
+  <text x="805" y="388" font-family="monospace" font-size="14" fill="#f87171" text-anchor="middle" font-weight="bold">🗑️  僵尸功能候选</text>
+  <text x="805" y="407" font-family="monospace" font-size="10" fill="#fca5a5" text-anchor="middle">启动下线流程或彻底重设计</text>
+  <text x="805" y="424" font-family="monospace" font-size="10" fill="#fca5a5" text-anchor="middle">先隐藏入口，观察 30 天反馈</text>
+  <text x="805" y="441" font-family="monospace" font-size="10" fill="#fca5a5" text-anchor="middle">示例：自定义主题引擎 (0.06)</text>
+
+  <!-- Bottom note -->
+  <rect x="30" y="490" width="900" height="22" rx="4" fill="#1e293b" opacity="0.6"/>
+  <text x="480" y="505" font-family="monospace" font-size="10" fill="#64748b" text-anchor="middle">数据来源：PostHog / Mixpanel / Amplitude 事件追踪；留存相关系数用 Spearman 方法；维护成本 = 该功能相关 PR 数 / 总 PR 数（近 3 月）</text>
+</svg>

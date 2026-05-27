@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="featureGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="userGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gapFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:0.12" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:0.02" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Subtle grid lines -->
+  <g stroke="#1e40af" stroke-width="0.4" opacity="0.12">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="150" y1="0" x2="150" y2="630"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="450" y1="0" x2="450" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="750" y1="0" x2="750" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1050" y1="0" x2="1050" y2="630"/>
+  </g>
+
+  <!-- Chart area: x from 90 to 1110, y from 80 to 550 -->
+  <!-- Y-axis -->
+  <line x1="90" y1="80" x2="90" y2="550" stroke="#475569" stroke-width="1.5"/>
+  <!-- X-axis -->
+  <line x1="90" y1="550" x2="1110" y2="550" stroke="#475569" stroke-width="1.5"/>
+
+  <!-- Y-axis labels -->
+  <text x="78" y="84" font-family="monospace" font-size="11" fill="#64748b" text-anchor="end">100%</text>
+  <text x="78" y="199" font-family="monospace" font-size="11" fill="#64748b" text-anchor="end">75%</text>
+  <text x="78" y="314" font-family="monospace" font-size="11" fill="#64748b" text-anchor="end">50%</text>
+  <text x="78" y="429" font-family="monospace" font-size="11" fill="#64748b" text-anchor="end">25%</text>
+  <text x="78" y="554" font-family="monospace" font-size="11" fill="#64748b" text-anchor="end">0%</text>
+
+  <!-- Y-axis dashes -->
+  <g stroke="#334155" stroke-width="0.8" stroke-dasharray="3,4">
+    <line x1="90" y1="84" x2="1110" y2="84"/>
+    <line x1="90" y1="199" x2="1110" y2="199"/>
+    <line x1="90" y1="314" x2="1110" y2="314"/>
+    <line x1="90" y1="429" x2="1110" y2="429"/>
+  </g>
+
+  <!-- X-axis time labels -->
+  <text x="90"  y="572" font-family="monospace" font-size="11" fill="#64748b" text-anchor="middle">Q1</text>
+  <text x="294" y="572" font-family="monospace" font-size="11" fill="#64748b" text-anchor="middle">Q2</text>
+  <text x="498" y="572" font-family="monospace" font-size="11" fill="#64748b" text-anchor="middle">Q3</text>
+  <text x="702" y="572" font-family="monospace" font-size="11" fill="#64748b" text-anchor="middle">Q4</text>
+  <text x="906" y="572" font-family="monospace" font-size="11" fill="#64748b" text-anchor="middle">Q5</text>
+  <text x="1110" y="572" font-family="monospace" font-size="11" fill="#64748b" text-anchor="middle">Q6</text>
+
+  <!-- AI adoption divider at Q3 (x=498) -->
+  <line x1="498" y1="80" x2="498" y2="555" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.7"/>
+  <!-- Arrow at top -->
+  <polygon points="498,72 493,84 503,84" fill="#fbbf24" opacity="0.85"/>
+
+  <!-- "引入 AI Coding" label -->
+  <rect x="430" y="50" width="136" height="20" rx="4" fill="#1e293b" stroke="#fbbf24" stroke-width="0.8" opacity="0.9"/>
+  <text x="498" y="64" font-family="monospace" font-size="11" fill="#fbbf24" text-anchor="middle">引入 AI Coding</text>
+
+  <!-- Gap fill polygon between feature line (above) and user line (below) after Q3 -->
+  <!-- Feature line (orange/red): before AI at ~y=350 at Q3, after AI soars to y=100 by Q6 -->
+  <!-- User line (blue): before AI at ~y=380 at Q3, after AI grows slowly to y=360 by Q6 -->
+  <polygon
+    points="498,348  600,310  702,260  804,200  906,155  1010,115  1110,95
+            1110,380  1010,390  906,395  804,400  702,405  600,408  498,410"
+    fill="url(#gapFill)"/>
+
+  <!-- Feature growth line (orange → red) — PRE AI (Q1→Q3): gentle slope -->
+  <!-- Points: Q1(90,450) Q2(294,420) Q3(498,348) -->
+  <!-- POST AI (Q3→Q6): steep upward -->
+  <!-- Q4(702,260) Q5(906,155) Q6(1110,95) -->
+  <polyline
+    points="90,450 294,420 498,348 702,260 906,155 1010,115 1110,95"
+    fill="none"
+    stroke="url(#featureGrad)"
+    stroke-width="3"
+    filter="url(#glow)"
+    stroke-linejoin="round"/>
+  <!-- Dots on feature line -->
+  <circle cx="90"  cy="450" r="5" fill="#f97316" filter="url(#glow)"/>
+  <circle cx="294" cy="420" r="5" fill="#f97316" filter="url(#glow)"/>
+  <circle cx="498" cy="348" r="6" fill="#fbbf24" filter="url(#glow)"/>
+  <circle cx="702" cy="260" r="5" fill="#ef4444" filter="url(#glow)"/>
+  <circle cx="906" cy="155" r="5" fill="#ef4444" filter="url(#glow)"/>
+  <circle cx="1110" cy="95" r="5" fill="#ef4444" filter="url(#glow)"/>
+
+  <!-- User growth line (blue → indigo) — PRE AI (Q1→Q3): moderate slope -->
+  <!-- Q1(90,490) Q2(294,470) Q3(498,410) -->
+  <!-- POST AI (Q3→Q6): nearly flat -->
+  <!-- Q4(702,405) Q5(906,395) Q6(1110,385) -->
+  <polyline
+    points="90,490 294,470 498,410 702,405 906,395 1010,390 1110,385"
+    fill="none"
+    stroke="url(#userGrad)"
+    stroke-width="3"
+    filter="url(#glow)"
+    stroke-linejoin="round"/>
+  <!-- Dots on user line -->
+  <circle cx="90"  cy="490" r="5" fill="#38bdf8" filter="url(#glow)"/>
+  <circle cx="294" cy="470" r="5" fill="#38bdf8" filter="url(#glow)"/>
+  <circle cx="498" cy="410" r="6" fill="#6366f1" filter="url(#glow)"/>
+  <circle cx="702" cy="405" r="5" fill="#6366f1" filter="url(#glow)"/>
+  <circle cx="906" cy="395" r="5" fill="#6366f1" filter="url(#glow)"/>
+  <circle cx="1110" cy="385" r="5" fill="#6366f1" filter="url(#glow)"/>
+
+  <!-- Gap arrow between lines at Q6 -->
+  <line x1="1130" y1="95" x2="1130" y2="385" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.6"/>
+  <polygon points="1130,88 1125,100 1135,100" fill="#ef4444" opacity="0.7"/>
+  <polygon points="1130,392 1125,380 1135,380" fill="#ef4444" opacity="0.7"/>
+  <text x="1155" y="248" font-family="monospace" font-size="11" fill="#ef4444" text-anchor="middle" opacity="0.9">Gap</text>
+  <text x="1155" y="262" font-family="monospace" font-size="11" fill="#ef4444" text-anchor="middle" opacity="0.9">↑↑↑</text>
+
+  <!-- Legend -->
+  <rect x="120" y="90" width="200" height="62" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" opacity="0.85"/>
+  <line x1="135" y1="112" x2="160" y2="112" stroke="#f97316" stroke-width="2.5"/>
+  <circle cx="147" cy="112" r="4" fill="#f97316"/>
+  <text x="168" y="116" font-family="monospace" font-size="12" fill="#e2e8f0">功能数量增长</text>
+  <line x1="135" y1="136" x2="160" y2="136" stroke="#38bdf8" stroke-width="2.5"/>
+  <circle cx="147" cy="136" r="4" fill="#38bdf8"/>
+  <text x="168" y="140" font-family="monospace" font-size="12" fill="#e2e8f0">用户增长 / 留存</text>
+
+  <!-- Annotation: "80% 功能无人使用" badge -->
+  <rect x="750" y="155" width="200" height="36" rx="6" fill="#1e293b" stroke="#ef4444" stroke-width="1" opacity="0.92"/>
+  <text x="850" y="170" font-family="monospace" font-size="11" fill="#ef4444" text-anchor="middle">⚠  80% 功能几乎无人使用</text>
+  <text x="850" y="184" font-family="monospace" font-size="10" fill="#94a3b8" text-anchor="middle">Pendo Feature Adoption Report</text>
+
+  <!-- Annotation: Faros AI data -->
+  <rect x="700" y="265" width="200" height="36" rx="6" fill="#1e293b" stroke="#fbbf24" stroke-width="1" opacity="0.92"/>
+  <text x="800" y="280" font-family="monospace" font-size="11" fill="#fbbf24" text-anchor="middle">PR 速率 +51%</text>
+  <text x="800" y="294" font-family="monospace" font-size="10" fill="#94a3b8" text-anchor="middle">代码 Churn 10x  — Faros AI</text>
+
+  <!-- Title area -->
+  <rect x="0" y="588" width="1200" height="42" fill="#0f172a" opacity="0.7"/>
+  <text x="600" y="615" font-family="monospace" font-size="18" fill="#e2e8f0" text-anchor="middle" font-weight="bold">
+    AI Coding 时代：功能增长与用户增长的背离
+  </text>
+
+  <!-- Top left badge -->
+  <rect x="20" y="20" width="160" height="26" rx="5" fill="#1e40af" opacity="0.85"/>
+  <text x="100" y="37" font-family="monospace" font-size="12" fill="#93c5fd" text-anchor="middle" font-weight="bold">AI 范式雷达</text>
+
+  <!-- Decorative corner dots -->
+  <circle cx="1180" cy="22" r="4" fill="#6366f1" opacity="0.6"/>
+  <circle cx="1168" cy="22" r="3" fill="#38bdf8" opacity="0.5"/>
+  <circle cx="1158" cy="22" r="2" fill="#6366f1" opacity="0.4"/>
+</svg>

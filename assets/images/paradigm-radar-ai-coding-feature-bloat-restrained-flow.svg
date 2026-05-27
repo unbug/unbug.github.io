@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 460" width="960" height="460">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrowC" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="460" fill="url(#bg3)"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#1e40af" stroke-width="0.3" opacity="0.1">
+    <line x1="0" y1="92" x2="960" y2="92"/>
+    <line x1="0" y1="184" x2="960" y2="184"/>
+    <line x1="0" y1="276" x2="960" y2="276"/>
+    <line x1="0" y1="368" x2="960" y2="368"/>
+    <line x1="192" y1="0" x2="192" y2="460"/>
+    <line x1="384" y1="0" x2="384" y2="460"/>
+    <line x1="576" y1="0" x2="576" y2="460"/>
+    <line x1="768" y1="0" x2="768" y2="460"/>
+  </g>
+
+  <!-- Title -->
+  <text x="480" y="34" font-family="monospace" font-size="15" fill="#e2e8f0" text-anchor="middle" font-weight="bold">AI 时代克制型产品开发循环</text>
+  <line x1="140" y1="44" x2="820" y2="44" stroke="#334155" stroke-width="1"/>
+
+  <!-- ──────────── 5 process nodes in a horizontal pipeline ──────────── -->
+
+  <!-- Step colors -->
+  <!-- 1: Teal  2: Blue  3: Purple  4: Orange  5: Rose -->
+
+  <!-- NODE 1 — 功能入场审查 -->
+  <rect x="30" y="130" width="148" height="160" rx="10" fill="#134e4a" stroke="#2dd4bf" stroke-width="1.5" filter="url(#glow3)"/>
+  <rect x="30" y="130" width="148" height="28" rx="10" fill="#0d9488"/>
+  <rect x="30" y="148" width="148" height="10" rx="0" fill="#0d9488"/>
+  <text x="104" y="149" font-family="monospace" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">① 入场审查</text>
+  <text x="104" y="172" font-family="monospace" font-size="9" fill="#99f6e4" text-anchor="middle">Sprint 计划前</text>
+  <line x1="50" y1="182" x2="158" y2="182" stroke="#0d9488" stroke-width="0.6" opacity="0.6"/>
+  <text x="104" y="198" font-family="monospace" font-size="9" fill="#ccfbf1" text-anchor="middle">Q1: 解决谁的痛点？</text>
+  <text x="104" y="214" font-family="monospace" font-size="9" fill="#ccfbf1" text-anchor="middle">Q2: 不做会流失用户？</text>
+  <text x="104" y="230" font-family="monospace" font-size="9" fill="#ccfbf1" text-anchor="middle">Q3: 有相似功能可优化？</text>
+  <text x="104" y="254" font-family="monospace" font-size="9" fill="#5eead4" text-anchor="middle">3 问全部通过</text>
+  <text x="104" y="268" font-family="monospace" font-size="9" fill="#5eead4" text-anchor="middle">→ 进入排期</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="178" y1="210" x2="210" y2="210" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowC)"/>
+
+  <!-- NODE 2 — 上线 + 日落条款 -->
+  <rect x="212" y="130" width="148" height="160" rx="10" fill="#1e3a5f" stroke="#60a5fa" stroke-width="1.5" filter="url(#glow3)"/>
+  <rect x="212" y="130" width="148" height="28" rx="10" fill="#1d4ed8"/>
+  <rect x="212" y="148" width="148" height="10" rx="0" fill="#1d4ed8"/>
+  <text x="286" y="149" font-family="monospace" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">② 上线 + 日落条款</text>
+  <text x="286" y="172" font-family="monospace" font-size="9" fill="#bfdbfe" text-anchor="middle">功能发布时</text>
+  <line x1="232" y1="182" x2="340" y2="182" stroke="#1d4ed8" stroke-width="0.6" opacity="0.6"/>
+  <text x="286" y="198" font-family="monospace" font-size="9" fill="#dbeafe" text-anchor="middle">设定 目标采用率</text>
+  <text x="286" y="214" font-family="monospace" font-size="9" fill="#dbeafe" text-anchor="middle">设定 留存相关性目标</text>
+  <text x="286" y="230" font-family="monospace" font-size="9" fill="#dbeafe" text-anchor="middle">指定 90 天复查负责人</text>
+  <text x="286" y="254" font-family="monospace" font-size="9" fill="#93c5fd" text-anchor="middle">默认附带日落条款</text>
+  <text x="286" y="268" font-family="monospace" font-size="9" fill="#93c5fd" text-anchor="middle">功能不是永久承诺</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="360" y1="210" x2="392" y2="210" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowC)"/>
+
+  <!-- NODE 3 — FVS 持续评估 -->
+  <rect x="394" y="130" width="148" height="160" rx="10" fill="#2e1065" stroke="#a78bfa" stroke-width="1.5" filter="url(#glow3)"/>
+  <rect x="394" y="130" width="148" height="28" rx="10" fill="#7c3aed"/>
+  <rect x="394" y="148" width="148" height="10" rx="0" fill="#7c3aed"/>
+  <text x="468" y="149" font-family="monospace" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">③ FVS 持续评估</text>
+  <text x="468" y="172" font-family="monospace" font-size="9" fill="#ddd6fe" text-anchor="middle">日落条款到期 / 每月</text>
+  <line x1="414" y1="182" x2="522" y2="182" stroke="#7c3aed" stroke-width="0.6" opacity="0.6"/>
+  <text x="468" y="198" font-family="monospace" font-size="9" fill="#ede9fe" text-anchor="middle">计算功能价值得分</text>
+  <text x="468" y="214" font-family="monospace" font-size="9" fill="#ede9fe" text-anchor="middle">4 维输入 → FVS 输出</text>
+  <text x="468" y="230" font-family="monospace" font-size="9" fill="#ede9fe" text-anchor="middle">核心 / 观察 / 僵尸 三档</text>
+  <text x="468" y="254" font-family="monospace" font-size="9" fill="#c4b5fd" text-anchor="middle">基于数据，非凭感觉</text>
+  <text x="468" y="268" font-family="monospace" font-size="9" fill="#c4b5fd" text-anchor="middle">结果存入功能负债看板</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="542" y1="210" x2="574" y2="210" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowC)"/>
+
+  <!-- NODE 4 — 功能减法 Sprint -->
+  <rect x="576" y="130" width="148" height="160" rx="10" fill="#431407" stroke="#fb923c" stroke-width="1.5" filter="url(#glow3)"/>
+  <rect x="576" y="130" width="148" height="28" rx="10" fill="#c2410c"/>
+  <rect x="576" y="148" width="148" height="10" rx="0" fill="#c2410c"/>
+  <text x="650" y="149" font-family="monospace" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">④ 功能减法 Sprint</text>
+  <text x="650" y="172" font-family="monospace" font-size="9" fill="#fed7aa" text-anchor="middle">每季度</text>
+  <line x1="596" y1="182" x2="704" y2="182" stroke="#c2410c" stroke-width="0.6" opacity="0.6"/>
+  <text x="650" y="198" font-family="monospace" font-size="9" fill="#ffedd5" text-anchor="middle">feature-debt 看板排序</text>
+  <text x="650" y="214" font-family="monospace" font-size="9" fill="#ffedd5" text-anchor="middle">FVS 最低的功能优先处理</text>
+  <text x="650" y="230" font-family="monospace" font-size="9" fill="#ffedd5" text-anchor="middle">同等于"加法 Sprint"</text>
+  <text x="650" y="254" font-family="monospace" font-size="9" fill="#fdba74" text-anchor="middle">把 AI 生产力用于</text>
+  <text x="650" y="268" font-family="monospace" font-size="9" fill="#fdba74" text-anchor="middle">清理 dead code</text>
+
+  <!-- Arrow 4→5 -->
+  <line x1="724" y1="210" x2="756" y2="210" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowC)"/>
+
+  <!-- NODE 5 — Feature Kill Decider -->
+  <rect x="758" y="130" width="148" height="160" rx="10" fill="#450a0a" stroke="#f87171" stroke-width="1.5" filter="url(#glow3)"/>
+  <rect x="758" y="130" width="148" height="28" rx="10" fill="#991b1b"/>
+  <rect x="758" y="148" width="148" height="10" rx="0" fill="#991b1b"/>
+  <text x="832" y="149" font-family="monospace" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">⑤ Kill Decider</text>
+  <text x="832" y="172" font-family="monospace" font-size="9" fill="#fecaca" text-anchor="middle">进入下线评估时</text>
+  <line x1="778" y1="182" x2="886" y2="182" stroke="#991b1b" stroke-width="0.6" opacity="0.6"/>
+  <text x="832" y="198" font-family="monospace" font-size="9" fill="#fee2e2" text-anchor="middle">4 类信号综合评分</text>
+  <text x="832" y="214" font-family="monospace" font-size="9" fill="#fee2e2" text-anchor="middle">🗑 ZOMBIE / REDUNDANT</text>
+  <text x="832" y="230" font-family="monospace" font-size="9" fill="#fee2e2" text-anchor="middle">💸 HIGH_COST / STRATEGY</text>
+  <text x="832" y="254" font-family="monospace" font-size="9" fill="#fca5a5" text-anchor="middle">隐藏入口 → 观察 30 天</text>
+  <text x="832" y="268" font-family="monospace" font-size="9" fill="#fca5a5" text-anchor="middle">→ 彻底下线或重设计</text>
+
+  <!-- ─── Feedback loop arrows ─── -->
+  <!-- Loop: KillDecider → back to Entrance Review (curved bottom arc) -->
+  <path d="M 832,292 Q 832,380 480,380 Q 170,380 104,292" fill="none" stroke="#475569" stroke-width="1.3" stroke-dasharray="6,4" marker-end="url(#arrowC)"/>
+  <text x="480" y="398" font-family="monospace" font-size="10" fill="#64748b" text-anchor="middle">下线后释放的开发容量 → 重新进入入场审查，更聚焦地构建下一个功能</text>
+
+  <!-- ─── Timeline strip at top ─── -->
+  <rect x="30" y="82" width="878" height="22" rx="4" fill="#1e293b" opacity="0.7"/>
+  <text x="104" y="97" font-family="monospace" font-size="9" fill="#2dd4bf" text-anchor="middle">Sprint 前</text>
+  <text x="286" y="97" font-family="monospace" font-size="9" fill="#60a5fa" text-anchor="middle">发布时</text>
+  <text x="468" y="97" font-family="monospace" font-size="9" fill="#a78bfa" text-anchor="middle">每月 / 90 天</text>
+  <text x="650" y="97" font-family="monospace" font-size="9" fill="#fb923c" text-anchor="middle">每季度</text>
+  <text x="832" y="97" font-family="monospace" font-size="9" fill="#f87171" text-anchor="middle">按需触发</text>
+
+  <!-- ─── Bottom label ─── -->
+  <rect x="30" y="430" width="878" height="20" rx="4" fill="#1e293b" opacity="0.5"/>
+  <text x="469" y="444" font-family="monospace" font-size="9.5" fill="#64748b" text-anchor="middle">
+    关键原则：AI Coding 加速了"做功能"的速度，本流程确保每一步都在问"是否应该做"。做减法 = 做加法。
+  </text>
+</svg>
