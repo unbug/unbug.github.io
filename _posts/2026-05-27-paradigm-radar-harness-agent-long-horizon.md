@@ -99,19 +99,7 @@ STRUCT TaskGraph
 
 **HTN 分解流程**
 
-```mermaid
-flowchart TD
-    A([用户自然语言目标]) --> B[提取约束\n时间/资源/禁止操作]
-    B --> C{LLM 规划器\nHTN 分解}
-    C --> D1[MacroGoal 1\nsuccess_criterion]
-    C --> D2[MacroGoal 2\nsuccess_criterion]
-    C --> D3[MacroGoal N\nsuccess_criterion]
-    D1 --> E1[MicroStep 1-1]
-    D1 --> E2[MicroStep 1-2]
-    D2 --> E3[MicroStep 2-1\ndepends_on: 1-2]
-    D3 --> E4[MicroStep N-k]
-    E1 & E2 & E3 & E4 --> F[(TaskGraph\nDAG)]
-```
+![HTN 分解流程]({{ site.baseurl }}/assets/images/paradigm-radar-harness-agent-long-horizon-layer1-htn.svg)
 
 > ⚠️ **关键设计点**：`success_criterion` 字段是可机器验证的完成条件，而不是模糊的描述。例如"所有单元测试通过，覆盖率 ≥ 80%"而不是"代码修好了"。这是后续自动验收的基础。
 
@@ -149,15 +137,7 @@ INTERFACE LongHorizonMemory
 
 **Context Folding 触发流程**
 
-```mermaid
-flowchart LR
-    A[add_to_working\n写入缓冲区] --> B{缓冲区\n≥ N 条?}
-    B -- 否 --> C[继续累积]
-    B -- 是 --> D[调用轻量 LLM\n生成摘要]
-    D --> E[摘要追加至\ncontext_summary]
-    E --> F[清空缓冲区]
-    F --> G[get_working_context\n返回摘要+近5条]
-```
+![Context Folding 触发流程]({{ site.baseurl }}/assets/images/paradigm-radar-harness-agent-long-horizon-layer2-context-folding.svg)
 
 > 💡 **Context Folding vs 截断**：截断是被动的——窗口满了就删最旧的。Folding 是主动的——在自然阶段边界时，用小模型把历史压缩成信息密度更高的摘要。这让 Agent 在第 80 步仍然"记得"第 3 步的关键约束。
 
@@ -189,18 +169,7 @@ PROCEDURE execute(step: MicroStep, dry_run: bool) → ToolResult
 
 **基于拓扑序的并行调度**
 
-```mermaid
-flowchart TD
-    Start([开始]) --> Init[completed = ∅\nresults = {}]
-    Init --> Check{completed\n= all steps?}
-    Check -- 是 --> End([返回 results])
-    Check -- 否 --> Ready["找出 ready steps\n(status=pending\n且依赖全在 completed)"]
-    Ready --> Empty{ready\n为空?}
-    Empty -- 是 --> Err([循环依赖 / 死锁])
-    Empty -- 否 --> Parallel["并发执行 ready 批次\nasync gather(tasks)"]
-    Parallel --> Update["更新 step.status\n写入 results\ncompleted ∪= {step.id}"]
-    Update --> Check
-```
+![拓扑序并行调度]({{ site.baseurl }}/assets/images/paradigm-radar-harness-agent-long-horizon-layer3-scheduler.svg)
 
 > 幂等性保障：`dry_run` 模式只验证参数，不产生副作用；失败后可安全重调同一 `MicroStep`，不会重复写入。
 
@@ -237,29 +206,7 @@ PROCEDURE log_event(event_type, step_id, data, outcome)
 
 **带断点续传的主执行循环**
 
-```mermaid
-sequenceDiagram
-    participant R as Runner
-    participant C as CheckpointMgr
-    participant M as Memory
-    participant E as Executor
-
-    R->>C: load_latest_checkpoint()
-    C-->>R: checkpoint (或 null)
-    R->>M: restore context_summary
-    loop 遍历 macro_goals[start_idx:]
-        R->>E: execute_parallel_steps(micro_steps)
-        E-->>R: results
-        R->>M: record_episode(each step)
-        R->>C: log_event(each step)
-        alt 全部微步骤完成
-            R->>C: save_checkpoint(macro_idx+1)
-        else 有步骤失败
-            R->>R: 触发第五层恢复
-        end
-    end
-    R-->>R: 返回 {success, completion_ratio}
-```
+![断点续传时序图]({{ site.baseurl }}/assets/images/paradigm-radar-harness-agent-long-horizon-layer4-checkpoint.svg)
 
 ---
 
@@ -288,26 +235,7 @@ TABLE RecoveryPolicies
 
 **错误恢复决策流程**
 
-```mermaid
-flowchart TD
-    F([步骤失败]) --> C[classify_failure\n→ FailureType]
-    C --> L[查表 RecoveryPolicies\n获取 policy]
-    L --> Count{failure_count\n> max_retries?}
-    Count -- 否 --> Act{default_action}
-    Count -- 是 --> Esc[升级为 replan]
-
-    Act -- retry --> Retry[重新执行\n同一 MicroStep]
-    Act -- rollback --> Roll[回滚到上一\nCheckpoint]
-    Act -- replan --> Replan
-
-    Esc --> Replan[触发重规划]
-    Replan --> Ep[recall_similar\n检索历史失败经验]
-    Ep --> LLM[LLM 生成\n替代 MicroSteps]
-    LLM --> V{JSON 解析\n成功?}
-    V -- 是 --> Replace[替换当前阶段\npending 步骤]
-    V -- 否 --> Escalate([escalate\n人工介入])
-    Replace --> Resume([继续执行])
-```
+![错误恢复决策流程]({{ site.baseurl }}/assets/images/paradigm-radar-harness-agent-long-horizon-layer5-recovery.svg)
 
 > ⚠️ **重规划的"情节记忆"价值**：重规划时检索类似历史失败，可以避免 LLM 提出"已知无效的方案"。这是程序记忆与情节记忆协同工作的典型场景。
 
@@ -339,18 +267,7 @@ STRUCT TaskMetrics
 
 **OpenTelemetry 集成与成本熔断**
 
-```mermaid
-flowchart LR
-    S([execute step]) --> Span[开启 OTel Span\n写入 step.tool\nstep.description\ncurrent_cost_usd]
-    Span --> Exec[executor.execute]
-    Exec --> Rec[record_tool_call\n更新 TaskMetrics]
-    Rec --> Budget{check_budget\n通过?}
-    Budget -- 是 --> CloseOK[关闭 Span\nstatus=OK]
-    Budget -- 否 --> CB[触发成本熔断\nstatus=ERROR]
-    Exec -- 失败 --> Err[record_exception\nspan.status=ERROR]
-    Err --> CloseOK
-    CloseOK & CB --> Export[BatchSpanProcessor\n→ Datadog / Prometheus]
-```
+![OTel 成本熔断流程]({{ site.baseurl }}/assets/images/paradigm-radar-harness-agent-long-horizon-layer6-otel.svg)
 
 ---
 
