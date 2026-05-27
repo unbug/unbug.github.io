@@ -186,6 +186,8 @@ AI 写作助手             0.489  ⚠️  观察期功能      设置 90 天复
 导出为 PDF              0.089  🗑️  僵尸功能候选    启动下线流程，或彻底重设计
 ```
 
+![FVS 功能价值评分框架架构图]({{ site.baseurl }}/assets/images/paradigm-radar-ai-coding-feature-bloat-fvs-framework.svg)
+
 > 💡 **数据采集提示**：`adoption_rate` 和 `daily_active_usage` 可从 PostHog、Mixpanel 或 Amplitude 的事件追踪导出；`retention_correlation` 可用 Spearman 相关系数，对比"使用功能 X 的用户群"与"未使用功能 X 的用户群"的 30 日留存率；`maintenance_cost` 建议用"过去 3 个月该功能相关 PR 数 / 总 PR 数"归一化估算。
 
 ---
@@ -387,6 +389,8 @@ if __name__ == "__main__":
 团队日历集成             33%     12h  🟢 保留/观察期  (score=0.23, ...)
 ```
 
+![Feature Kill Decider 功能下线决策流程图]({{ site.baseurl }}/assets/images/paradigm-radar-ai-coding-feature-bloat-kill-flow.svg)
+
 > ⚠️ **实操提醒**：下线功能不等于"删除代码"，第一步是**隐藏入口 + 内测通知**，观察 30 天后再做最终决定。给真正有需求的用户预留反馈渠道，你会发现大多数时候反弹声音很小。
 
 ---
@@ -394,6 +398,8 @@ if __name__ == "__main__":
 ## AI 时代的克制型产品开发流程
 
 工具准备好了，但流程不变，数据就只是摆设。以下是一套可在团队落地的**克制型开发流程**：
+
+![AI 时代克制型产品开发循环]({{ site.baseurl }}/assets/images/paradigm-radar-ai-coding-feature-bloat-restrained-flow.svg)
 
 ### 1. 在 Sprint 计划前做"功能入场审查"
 

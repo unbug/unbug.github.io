@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 580" width="960" height="580">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#64748b"/>
+    </marker>
+    <marker id="arrRed" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#f87171"/>
+    </marker>
+    <marker id="arrGreen" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#34d399"/>
+    </marker>
+    <marker id="arrYellow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#fbbf24"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="580" fill="url(#bg2)"/>
+
+  <!-- Grid -->
+  <g stroke="#1e40af" stroke-width="0.3" opacity="0.1">
+    <line x1="0" y1="96" x2="960" y2="96"/>
+    <line x1="0" y1="192" x2="960" y2="192"/>
+    <line x1="0" y1="288" x2="960" y2="288"/>
+    <line x1="0" y1="384" x2="960" y2="384"/>
+    <line x1="0" y1="480" x2="960" y2="480"/>
+    <line x1="192" y1="0" x2="192" y2="580"/>
+    <line x1="384" y1="0" x2="384" y2="580"/>
+    <line x1="576" y1="0" x2="576" y2="580"/>
+    <line x1="768" y1="0" x2="768" y2="580"/>
+  </g>
+
+  <!-- Title -->
+  <text x="480" y="36" font-family="monospace" font-size="15" fill="#e2e8f0" text-anchor="middle" font-weight="bold">Feature Kill Decider — 功能下线决策流程</text>
+  <line x1="120" y1="46" x2="840" y2="46" stroke="#334155" stroke-width="1"/>
+
+  <!-- ─── START node ─── -->
+  <ellipse cx="480" cy="88" rx="110" ry="28" fill="#1e40af" stroke="#3b82f6" stroke-width="1.5" filter="url(#glow2)"/>
+  <text x="480" y="92" font-family="monospace" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold">候选功能</text>
+  <line x1="480" y1="116" x2="480" y2="142" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ─── CHECK 1: adoption_rate < 5%? ─── -->
+  <polygon points="480,148 600,192 480,236 360,192" fill="#1e293b" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="480" y="186" font-family="monospace" font-size="10" fill="#93c5fd" text-anchor="middle">采用率</text>
+  <text x="480" y="200" font-family="monospace" font-size="10" fill="#93c5fd" text-anchor="middle">&lt; 5% ?</text>
+  <!-- YES: right → ZOMBIE signal -->
+  <line x1="600" y1="192" x2="680" y2="192" stroke="#f87171" stroke-width="1.3" marker-end="url(#arrRed)"/>
+  <text x="635" y="185" font-family="monospace" font-size="10" fill="#f87171">YES</text>
+  <rect x="682" y="172" width="120" height="40" rx="6" fill="#450a0a" stroke="#f87171" stroke-width="1"/>
+  <text x="742" y="188" font-family="monospace" font-size="10" fill="#fca5a5" text-anchor="middle">🧟 ZOMBIE</text>
+  <text x="742" y="202" font-family="monospace" font-size="10" fill="#fca5a5" text-anchor="middle">信号 +1</text>
+  <!-- NO: down -->
+  <line x1="480" y1="236" x2="480" y2="262" stroke="#64748b" stroke-width="1.3" marker-end="url(#arr)"/>
+  <text x="498" y="253" font-family="monospace" font-size="10" fill="#64748b">NO</text>
+
+  <!-- ─── CHECK 2: duplicate_coverage > 75%? ─── -->
+  <polygon points="480,268 600,312 480,356 360,312" fill="#1e293b" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="480" y="306" font-family="monospace" font-size="10" fill="#93c5fd" text-anchor="middle">功能重复度</text>
+  <text x="480" y="320" font-family="monospace" font-size="10" fill="#93c5fd" text-anchor="middle">&gt; 75% ?</text>
+  <!-- YES: right → REDUNDANT signal -->
+  <line x1="600" y1="312" x2="680" y2="312" stroke="#f87171" stroke-width="1.3" marker-end="url(#arrRed)"/>
+  <text x="635" y="305" font-family="monospace" font-size="10" fill="#f87171">YES</text>
+  <rect x="682" y="292" width="120" height="40" rx="6" fill="#450a0a" stroke="#f87171" stroke-width="1"/>
+  <text x="742" y="308" font-family="monospace" font-size="10" fill="#fca5a5" text-anchor="middle">♻️ REDUNDANT</text>
+  <text x="742" y="322" font-family="monospace" font-size="10" fill="#fca5a5" text-anchor="middle">信号 +1</text>
+  <!-- NO: down -->
+  <line x1="480" y1="356" x2="480" y2="382" stroke="#64748b" stroke-width="1.3" marker-end="url(#arr)"/>
+  <text x="498" y="373" font-family="monospace" font-size="10" fill="#64748b">NO</text>
+
+  <!-- ─── CHECK 3: maintenance > 20h/month? ─── -->
+  <polygon points="480,388 600,432 480,476 360,432" fill="#1e293b" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="480" y="426" font-family="monospace" font-size="10" fill="#93c5fd" text-anchor="middle">月维护</text>
+  <text x="480" y="440" font-family="monospace" font-size="10" fill="#93c5fd" text-anchor="middle">&gt; 20h ?</text>
+  <!-- YES: right → HIGH_COST signal -->
+  <line x1="600" y1="432" x2="680" y2="432" stroke="#f97316" stroke-width="1.3" marker-end="url(#arrRed)"/>
+  <text x="635" y="425" font-family="monospace" font-size="10" fill="#f97316">YES</text>
+  <rect x="682" y="412" width="120" height="40" rx="6" fill="#431407" stroke="#f97316" stroke-width="1"/>
+  <text x="742" y="428" font-family="monospace" font-size="10" fill="#fed7aa" text-anchor="middle">💸 HIGH_COST</text>
+  <text x="742" y="442" font-family="monospace" font-size="10" fill="#fed7aa" text-anchor="middle">信号 +1</text>
+  <!-- NO: down -->
+  <line x1="480" y1="476" x2="480" y2="502" stroke="#64748b" stroke-width="1.3" marker-end="url(#arr)"/>
+  <text x="498" y="493" font-family="monospace" font-size="10" fill="#64748b">NO</text>
+
+  <!-- ─── CHECK 4 (implied via on_core_strategy) → OFF_STRATEGY signal box, right side below -->
+  <!-- Connected by a sideways path from check3 YES zone -->
+  <rect x="682" y="490" width="120" height="40" rx="6" fill="#1c1917" stroke="#a16207" stroke-width="1"/>
+  <text x="742" y="506" font-family="monospace" font-size="10" fill="#fde68a" text-anchor="middle">📍 OFF_STRATEGY</text>
+  <text x="742" y="520" font-family="monospace" font-size="10" fill="#fde68a" text-anchor="middle">偏离产品战略</text>
+  <!-- Arrow from bottom of check3 NO line to this box -- vertical connector -->
+  <path d="M 480,500 Q 480,510 600,510 L 680,510" fill="none" stroke="#a16207" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#arrYellow)"/>
+  <text x="580" y="504" font-family="monospace" font-size="9" fill="#a16207">不符合战略</text>
+
+  <!-- ─── SCORE AGGREGATION node (bottom center) ─── -->
+  <rect x="330" y="520" width="200" height="44" rx="8" fill="#312e81" stroke="#818cf8" stroke-width="1.5" filter="url(#glow2)"/>
+  <text x="430" y="539" font-family="monospace" font-size="11" fill="#c7d2fe" text-anchor="middle" font-weight="bold">计算 kill_score</text>
+  <text x="430" y="555" font-family="monospace" font-size="10" fill="#a5b4fc" text-anchor="middle">信号数量 × 维度权重求和</text>
+
+  <!-- Arrow from check3-NO to score box -->
+  <line x1="480" y1="500" x2="480" y2="518" stroke="#64748b" stroke-width="1.3" marker-end="url(#arr)"/>
+
+  <!-- ─── Right side: signal boxes connected to score via vertical line ─── -->
+  <!-- All 4 signal boxes feed down to a vertical aggregation line -->
+  <line x1="742" y1="212" x2="742" y2="470" stroke="#334155" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="742" y1="510" x2="742" y2="530" stroke="#334155" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="742" y1="530" x2="532" y2="538" stroke="#64748b" stroke-width="1.2" marker-end="url(#arr)"/>
+
+  <!-- ─── VERDICT outputs (3 outcomes — bottom row) ─── -->
+  <!-- 🔴 kill -->
+  <rect x="30" y="520" width="130" height="50" rx="8" fill="#450a0a" stroke="#f87171" stroke-width="1.5" filter="url(#glow2)"/>
+  <text x="95" y="543" font-family="monospace" font-size="11" fill="#f87171" text-anchor="middle" font-weight="bold">🔴 强烈建议下线</text>
+  <text x="95" y="559" font-family="monospace" font-size="9" fill="#fca5a5" text-anchor="middle">score ≥ 0.70</text>
+  <!-- Arrow score → kill -->
+  <line x1="330" y1="542" x2="162" y2="542" stroke="#f87171" stroke-width="1.3" marker-end="url(#arrRed)"/>
+
+  <!-- 🟡 meeting -->
+  <rect x="760" y="520" width="130" height="50" rx="8" fill="#422006" stroke="#fbbf24" stroke-width="1.5" filter="url(#glow2)"/>
+  <text x="825" y="543" font-family="monospace" font-size="11" fill="#fbbf24" text-anchor="middle" font-weight="bold">🟡 产品会议评估</text>
+  <text x="825" y="559" font-family="monospace" font-size="9" fill="#fde68a" text-anchor="middle">0.50 ≤ score &lt; 0.70</text>
+  <!-- Arrow score → meeting -->
+  <line x1="532" y1="542" x2="758" y2="542" stroke="#fbbf24" stroke-width="1.3" marker-end="url(#arrYellow)"/>
+
+  <!-- 🟢 keep (if no signals triggered / low score) -->
+  <rect x="390" y="460" width="0" height="0" rx="0" fill="none"/>
+  <!-- place keep verdict above score box -->
+  <rect x="160" y="440" width="130" height="50" rx="8" fill="#052e16" stroke="#34d399" stroke-width="1.5" filter="url(#glow2)"/>
+  <text x="225" y="463" font-family="monospace" font-size="11" fill="#34d399" text-anchor="middle" font-weight="bold">🟢 保留/观察期</text>
+  <text x="225" y="479" font-family="monospace" font-size="9" fill="#a7f3d0" text-anchor="middle">score &lt; 0.50</text>
+  <!-- Arrow: from left side of score box upward -->
+  <line x1="370" y1="520" x2="290" y2="492" stroke="#34d399" stroke-width="1.3" marker-end="url(#arrGreen)"/>
+</svg>
