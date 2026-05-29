@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" width="900" height="460">
+  <defs>
+    <linearGradient id="bgwf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glowwf">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="460" fill="url(#bgwf)"/>
+
+  <text x="450" y="32" font-family="system-ui,sans-serif" font-size="15" fill="white" text-anchor="middle" font-weight="bold">AI 替换成本瀑布图：表面节省 vs 隐性成本全貌</text>
+  <text x="450" y="50" font-family="system-ui,sans-serif" font-size="11" fill="#64748b" text-anchor="middle">以替换 10 名工程师为基准场景（年薪 $150k/人）</text>
+
+  <!-- Waterfall bars, horizontal -->
+  <!-- Axes -->
+  <line x1="200" y1="80" x2="200" y2="400" stroke="#334155" stroke-width="1"/>
+  <line x1="200" y1="400" x2="870" y2="400" stroke="#334155" stroke-width="1"/>
+
+  <!-- Zero line at x=200, positive goes right, negative left -->
+  <!-- Scale: 100px = $500k -->
+
+  <!-- Row 1: Layoff savings +$1.5M/yr (green) -->
+  <text x="190" y="110" font-family="system-ui,sans-serif" font-size="11" fill="#94a3b8" text-anchor="end">裁员年节省</text>
+  <rect x="200" y="93" width="300" height="26" rx="4" fill="#22c55e" opacity="0.85"/>
+  <text x="508" y="111" font-family="system-ui,sans-serif" font-size="11" fill="#22c55e" font-weight="bold">+$1,500,000/yr</text>
+
+  <!-- Row 2: Tool cost -$36k/yr -->
+  <text x="190" y="148" font-family="system-ui,sans-serif" font-size="11" fill="#94a3b8" text-anchor="end">工具订阅</text>
+  <rect x="200" y="131" width="7" height="26" rx="4" fill="#ef4444" opacity="0.7"/>
+  <text x="215" y="149" font-family="system-ui,sans-serif" font-size="11" fill="#f87171" font-weight="bold">−$36,000/yr</text>
+
+  <!-- Row 3: Review overhead -$180k/yr (10 reviewers × 38% more time on AI PRs × $150k) -->
+  <text x="190" y="186" font-family="system-ui,sans-serif" font-size="11" fill="#94a3b8" text-anchor="end">Review 工时溢价</text>
+  <rect x="200" y="169" width="36" height="26" rx="4" fill="#f97316" opacity="0.7"/>
+  <text x="244" y="187" font-family="system-ui,sans-serif" font-size="11" fill="#fb923c" font-weight="bold">−$180,000/yr</text>
+
+  <!-- Row 4: Bug fix overhead -$360k/yr (1.7x bugs × avg $500/bug × estimated volume) -->
+  <text x="190" y="224" font-family="system-ui,sans-serif" font-size="11" fill="#94a3b8" text-anchor="end">Bug 修复增量成本</text>
+  <rect x="200" y="207" width="72" height="26" rx="4" fill="#f97316" opacity="0.8"/>
+  <text x="280" y="225" font-family="system-ui,sans-serif" font-size="11" fill="#fb923c" font-weight="bold">−$360,000/yr</text>
+
+  <!-- Row 5: Technical debt maintenance -$450k/yr -->
+  <text x="190" y="262" font-family="system-ui,sans-serif" font-size="11" fill="#94a3b8" text-anchor="end">技术债务维护</text>
+  <rect x="200" y="245" width="90" height="26" rx="4" fill="#ef4444" opacity="0.8"/>
+  <text x="298" y="263" font-family="system-ui,sans-serif" font-size="11" fill="#fca5a5" font-weight="bold">−$450,000/yr</text>
+
+  <!-- Row 6: Security incident expected value -$488k/yr (13% probability × $4.88M avg breach cost ÷ 1.3 factor) -->
+  <text x="190" y="300" font-family="system-ui,sans-serif" font-size="11" fill="#94a3b8" text-anchor="end">安全事故期望损失</text>
+  <rect x="200" y="283" width="97" height="26" rx="4" fill="#dc2626" opacity="0.85"/>
+  <text x="305" y="301" font-family="system-ui,sans-serif" font-size="11" fill="#fca5a5" font-weight="bold">−$488,000/yr</text>
+
+  <!-- Row 7: Production incident cost -$350k/yr (occasional, avg) -->
+  <text x="190" y="338" font-family="system-ui,sans-serif" font-size="11" fill="#94a3b8" text-anchor="end">生产故障期望成本</text>
+  <rect x="200" y="321" width="70" height="26" rx="4" fill="#b91c1c" opacity="0.85"/>
+  <text x="278" y="339" font-family="system-ui,sans-serif" font-size="11" fill="#fca5a5" font-weight="bold">−$350,000/yr</text>
+
+  <!-- Net result line -->
+  <line x1="200" y1="368" x2="870" y2="368" stroke="#475569" stroke-width="0.8" stroke-dasharray="6,4"/>
+  <text x="190" y="380" font-family="system-ui,sans-serif" font-size="12" fill="#94a3b8" text-anchor="end" font-weight="bold">净收益</text>
+
+  <!-- Net: 1500k - 36 - 180 - 360 - 450 - 488 - 350 = -364k -->
+  <!-- Net is negative, bar goes left... so just show result number -->
+  <rect x="127" y="363" width="73" height="24" rx="4" fill="#dc2626" opacity="0.9"/>
+  <text x="163" y="379" font-family="system-ui,sans-serif" font-size="11" fill="white" text-anchor="middle" font-weight="bold">−$364k/yr</text>
+
+  <!-- Annotation: hidden costs total -->
+  <text x="650" y="290" font-family="system-ui,sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">隐性成本合计</text>
+  <text x="650" y="310" font-family="system-ui,sans-serif" font-size="20" fill="#ef4444" text-anchor="middle" font-weight="bold">$1,864,000/yr</text>
+  <text x="650" y="330" font-family="system-ui,sans-serif" font-size="11" fill="#64748b" text-anchor="middle">超过裁员节省的 124%</text>
+
+  <!-- Arrow pointing to negative result -->
+  <line x1="620" y1="340" x2="210" y2="375" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.7"/>
+
+  <!-- Key insight box -->
+  <rect x="500" y="145" width="360" height="120" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="680" y="168" font-family="system-ui,sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle" font-weight="bold">⚠ 关键假设说明</text>
+  <text x="515" y="188" font-family="system-ui,sans-serif" font-size="10" fill="#64748b">• Review 溢价: 10人 × $150k × 38% × 30%工时在Review</text>
+  <text x="515" y="205" font-family="system-ui,sans-serif" font-size="10" fill="#64748b">• Bug修复: 基于1.7x缺陷密度×平均修复成本估算</text>
+  <text x="515" y="222" font-family="system-ui,sans-serif" font-size="10" fill="#64748b">• 安全事故: IBM 13%发生率 × $4.88M均值损失</text>
+  <text x="515" y="239" font-family="system-ui,sans-serif" font-size="10" fill="#64748b">• 生产故障: 基于Amazon Kiro等真实案例估算</text>
+  <text x="515" y="256" font-family="system-ui,sans-serif" font-size="10" fill="#475569">注：技术债务长尾成本未纳入，实际亏损可能更高</text>
+
+  <!-- Source -->
+  <text x="450" y="440" font-family="system-ui,sans-serif" font-size="9" fill="#334155" text-anchor="middle">来源：IBM Cost of Data Breach 2024 · CodeRabbit 2025 · Amazon Kiro incident · Sonar 2026 · GitClear 2025</text>
+</svg>

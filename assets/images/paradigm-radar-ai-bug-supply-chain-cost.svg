@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#b91c1c;stop-opacity:0.8" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#15803d;stop-opacity:0.8" />
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#c2410c;stop-opacity:0.8" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Grid -->
+  <g stroke="#1e40af" stroke-width="0.5" opacity="0.12">
+    <line x1="0" y1="63" x2="1200" y2="63"/>
+    <line x1="0" y1="126" x2="1200" y2="126"/>
+    <line x1="0" y1="189" x2="1200" y2="189"/>
+    <line x1="0" y1="252" x2="1200" y2="252"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="378" x2="1200" y2="378"/>
+    <line x1="0" y1="441" x2="1200" y2="441"/>
+    <line x1="0" y1="504" x2="1200" y2="504"/>
+    <line x1="0" y1="567" x2="1200" y2="567"/>
+    <line x1="120" y1="0" x2="120" y2="630"/>
+    <line x1="240" y1="0" x2="240" y2="630"/>
+    <line x1="360" y1="0" x2="360" y2="630"/>
+    <line x1="480" y1="0" x2="480" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="720" y1="0" x2="720" y2="630"/>
+    <line x1="840" y1="0" x2="840" y2="630"/>
+    <line x1="960" y1="0" x2="960" y2="630"/>
+    <line x1="1080" y1="0" x2="1080" y2="630"/>
+  </g>
+
+  <!-- Left panel: Balance scale concept -->
+  <!-- Scale base -->
+  <rect x="30" y="520" width="500" height="8" rx="4" fill="#334155"/>
+  <!-- Scale pole -->
+  <rect x="277" y="200" width="6" height="325" rx="3" fill="#475569"/>
+  <!-- Scale beam -->
+  <rect x="80" y="210" width="400" height="6" rx="3" fill="#64748b"/>
+  <!-- Scale pivot circle -->
+  <circle cx="280" cy="210" r="12" fill="#94a3b8"/>
+
+  <!-- Left pan: 绿色 - 裁员节省 (savings) -->
+  <line x1="105" y1="216" x2="130" y2="340" stroke="#64748b" stroke-width="2"/>
+  <rect x="60" y="340" width="140" height="8" rx="4" fill="#22c55e" opacity="0.8"/>
+  <!-- Left pan content -->
+  <rect x="70" y="290" width="120" height="50" rx="6" fill="url(#greenGrad)" filter="url(#shadow)"/>
+  <text x="130" y="312" font-family="system-ui,sans-serif" font-size="11" fill="white" text-anchor="middle" font-weight="bold">裁员节省</text>
+  <text x="130" y="328" font-family="system-ui,sans-serif" font-size="10" fill="#bbf7d0" text-anchor="middle">$150k/人/年</text>
+
+  <!-- Right pan: 红色 - AI Bug 成本 (costs) - heavier, tilted down -->
+  <line x1="455" y1="216" x2="425" y2="390" stroke="#64748b" stroke-width="2"/>
+  <rect x="370" y="390" width="140" height="8" rx="4" fill="#ef4444" opacity="0.8"/>
+  <!-- Right pan content (multiple stacked costs) -->
+  <rect x="378" y="305" width="126" height="90" rx="6" fill="url(#redGrad)" filter="url(#shadow)"/>
+  <text x="441" y="325" font-family="system-ui,sans-serif" font-size="10" fill="white" text-anchor="middle" font-weight="bold">AI Bug 账单</text>
+  <text x="441" y="342" font-family="system-ui,sans-serif" font-size="9" fill="#fecaca" text-anchor="middle">安全事故: $4.88M</text>
+  <text x="441" y="358" font-family="system-ui,sans-serif" font-size="9" fill="#fecaca" text-anchor="middle">生产故障: $1.4M/h</text>
+  <text x="441" y="374" font-family="system-ui,sans-serif" font-size="9" fill="#fecaca" text-anchor="middle">技术债务: 10x</text>
+
+  <!-- Labels -->
+  <text x="130" y="370" font-family="system-ui,sans-serif" font-size="12" fill="#22c55e" text-anchor="middle" font-weight="bold">✓ 可见成本</text>
+  <text x="441" y="420" font-family="system-ui,sans-serif" font-size="12" fill="#ef4444" text-anchor="middle" font-weight="bold">✗ 隐性成本</text>
+
+  <!-- Main title area -->
+  <text x="600" y="75" font-family="system-ui,sans-serif" font-size="13" fill="#64748b" text-anchor="middle" font-weight="500" letter-spacing="2">AI 范式雷达</text>
+  <text x="600" y="130" font-family="system-ui,sans-serif" font-size="32" fill="white" text-anchor="middle" font-weight="bold">裁员换 AI 之后</text>
+  <text x="600" y="172" font-family="system-ui,sans-serif" font-size="22" fill="#f97316" text-anchor="middle" font-weight="bold">那张隐性 Bug 账单正在吃掉你的利润</text>
+
+  <!-- Stats row -->
+  <rect x="560" y="200" width="610" height="110" rx="12" fill="#0f172a" opacity="0.7" stroke="#334155" stroke-width="1"/>
+
+  <!-- Stat 1 -->
+  <text x="620" y="235" font-family="system-ui,sans-serif" font-size="36" fill="#ef4444" text-anchor="middle" font-weight="bold" filter="url(#glow)">1.7x</text>
+  <text x="620" y="258" font-family="system-ui,sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">AI 代码 Bug 数量</text>
+  <text x="620" y="273" font-family="system-ui,sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">高于人工代码</text>
+  <text x="620" y="293" font-family="system-ui,sans-serif" font-size="9" fill="#475569" text-anchor="middle">CodeRabbit 2025</text>
+
+  <line x1="700" y1="215" x2="700" y2="295" stroke="#334155" stroke-width="1"/>
+
+  <!-- Stat 2 -->
+  <text x="775" y="235" font-family="system-ui,sans-serif" font-size="36" fill="#f97316" text-anchor="middle" font-weight="bold" filter="url(#glow)">$67B</text>
+  <text x="775" y="258" font-family="system-ui,sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">2024 年企业因 AI</text>
+  <text x="775" y="273" font-family="system-ui,sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">幻觉引发的损失</text>
+  <text x="775" y="293" font-family="system-ui,sans-serif" font-size="9" fill="#475569" text-anchor="middle">Korra.ai Research</text>
+
+  <line x1="855" y1="215" x2="855" y2="295" stroke="#334155" stroke-width="1"/>
+
+  <!-- Stat 3 -->
+  <text x="930" y="235" font-family="system-ui,sans-serif" font-size="36" fill="#eab308" text-anchor="middle" font-weight="bold" filter="url(#glow)">45%</text>
+  <text x="930" y="258" font-family="system-ui,sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">AI 代码引入</text>
+  <text x="930" y="273" font-family="system-ui,sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">OWASP Top 10 漏洞</text>
+  <text x="930" y="293" font-family="system-ui,sans-serif" font-size="9" fill="#475569" text-anchor="middle">Veracode 2025</text>
+
+  <line x1="1010" y1="215" x2="1010" y2="295" stroke="#334155" stroke-width="1"/>
+
+  <!-- Stat 4 -->
+  <text x="1090" y="235" font-family="system-ui,sans-serif" font-size="36" fill="#a855f7" text-anchor="middle" font-weight="bold" filter="url(#glow)">88%</text>
+  <text x="1090" y="258" font-family="system-ui,sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">开发者报告 AI</text>
+  <text x="1090" y="273" font-family="system-ui,sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">加剧技术债务</text>
+  <text x="1090" y="293" font-family="system-ui,sans-serif" font-size="9" fill="#475569" text-anchor="middle">Sonar 2026</text>
+
+  <!-- Supply chain diagram -->
+  <text x="600" y="340" font-family="system-ui,sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle" font-weight="bold" letter-spacing="1">AI 供应链隐性成本层</text>
+
+  <!-- Chain nodes -->
+  <!-- Node 1 -->
+  <rect x="560" y="355" width="100" height="40" rx="8" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="610" y="370" font-family="system-ui,sans-serif" font-size="9" fill="#93c5fd" text-anchor="middle" font-weight="bold">工具订阅</text>
+  <text x="610" y="384" font-family="system-ui,sans-serif" font-size="8" fill="#64748b" text-anchor="middle">$20-100/月</text>
+  <line x1="660" y1="375" x2="685" y2="375" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Node 2 -->
+  <rect x="685" y="355" width="100" height="40" rx="8" fill="#2d1b4e" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="735" y="370" font-family="system-ui,sans-serif" font-size="9" fill="#c4b5fd" text-anchor="middle" font-weight="bold">Review 成本</text>
+  <text x="735" y="384" font-family="system-ui,sans-serif" font-size="8" fill="#64748b" text-anchor="middle">+38% 工时</text>
+  <line x1="785" y1="375" x2="810" y2="375" stroke="#475569" stroke-width="1.5"/>
+
+  <!-- Node 3 -->
+  <rect x="810" y="355" width="100" height="40" rx="8" fill="#3b1a1a" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="860" y="370" font-family="system-ui,sans-serif" font-size="9" fill="#fca5a5" text-anchor="middle" font-weight="bold">Bug 修复</text>
+  <text x="860" y="384" font-family="system-ui,sans-serif" font-size="8" fill="#64748b" text-anchor="middle">1.7x 缺陷密度</text>
+  <line x1="910" y1="375" x2="935" y2="375" stroke="#475569" stroke-width="1.5"/>
+
+  <!-- Node 4 -->
+  <rect x="935" y="355" width="100" height="40" rx="8" fill="#3b2200" stroke="#f97316" stroke-width="1.5"/>
+  <text x="985" y="370" font-family="system-ui,sans-serif" font-size="9" fill="#fdba74" text-anchor="middle" font-weight="bold">安全事故</text>
+  <text x="985" y="384" font-family="system-ui,sans-serif" font-size="8" fill="#64748b" text-anchor="middle">$4.88M 均值</text>
+  <line x1="1035" y1="375" x2="1060" y2="375" stroke="#475569" stroke-width="1.5"/>
+
+  <!-- Node 5 -->
+  <rect x="1060" y="355" width="100" height="40" rx="8" fill="#3b0f0f" stroke="#dc2626" stroke-width="2"/>
+  <text x="1110" y="370" font-family="system-ui,sans-serif" font-size="9" fill="#fca5a5" text-anchor="middle" font-weight="bold">生产事故</text>
+  <text x="1110" y="384" font-family="system-ui,sans-serif" font-size="8" fill="#64748b" text-anchor="middle">$M/小时量级</text>
+
+  <!-- Bottom bar chart - comparison -->
+  <text x="600" y="435" font-family="system-ui,sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">DORA 2024：AI 采用率每提升 25%，交付稳定性下降 7.2%，代码稳定性下降最高 14%</text>
+
+  <!-- Visual bars -->
+  <rect x="560" y="450" width="200" height="20" rx="4" fill="#22c55e" opacity="0.8"/>
+  <text x="570" y="464" font-family="system-ui,sans-serif" font-size="10" fill="white" font-weight="bold">裁员年节省: $150k × N 人</text>
+
+  <rect x="560" y="480" width="610" height="20" rx="4" fill="#ef4444" opacity="0.8"/>
+  <text x="570" y="494" font-family="system-ui,sans-serif" font-size="10" fill="white" font-weight="bold">AI 供应链全成本: 工具 + Review + Bug修复 + 安全 + 故障 ≫ 表面工具成本</text>
+
+  <!-- Footer -->
+  <text x="600" y="560" font-family="system-ui,sans-serif" font-size="11" fill="#475569" text-anchor="middle">Sources: CodeRabbit 2025 · Google DORA 2024 · GitClear 2025 · CSA/Veracode 2025 · IBM Security 2024</text>
+  <text x="600" y="580" font-family="system-ui,sans-serif" font-size="11" fill="#475569" text-anchor="middle">unbug.github.io · AI 范式雷达</text>
+
+  <!-- Warning badge -->
+  <rect x="30" y="60" width="160" height="36" rx="8" fill="#7f1d1d" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="110" y="78" font-family="system-ui,sans-serif" font-size="11" fill="#fca5a5" text-anchor="middle" font-weight="bold">⚠ AI 供应链成本警报</text>
+  <text x="110" y="92" font-family="system-ui,sans-serif" font-size="9" fill="#ef4444" text-anchor="middle">2026 年关键工程议题</text>
+</svg>

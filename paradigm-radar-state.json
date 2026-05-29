@@ -1,0 +1,22 @@
+{
+  "currentPhase": "idle",
+  "lastPublished": {
+    "title": "AI 范式雷达：《裁员换 AI 之后，那张隐性 Bug 账单正在吃掉你的利润》",
+    "date": "2026-05-29",
+    "slug": "paradigm-radar-ai-bug-supply-chain-cost"
+  },
+  "totalPublished": 3,
+  "nextScheduled": "2026-06-02",
+  "candidateTopics": [
+    {
+      "topic": "MCP 协议实战：5 步打通工具调用",
+      "score": 4.4,
+      "sources": ["https://modelcontextprotocol.io"]
+    },
+    {
+      "topic": "Agent 编排框架选型指南 2026",
+      "score": 4.1,
+      "sources": ["https://github.com/microsoft/autogen"]
+    }
+  ]
+}
