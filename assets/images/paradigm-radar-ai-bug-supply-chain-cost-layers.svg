@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
   <defs>
     <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
@@ -9,7 +9,7 @@
       <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
-  <rect width="900" height="520" fill="url(#bg2)"/>
+  <rect width="900" height="600" fill="url(#bg2)"/>
   <g stroke="#1e3a5f" stroke-width="0.5" opacity="0.2">
     <line x1="0" y1="52" x2="900" y2="52"/>
     <line x1="0" y1="104" x2="900" y2="104"/>
@@ -20,9 +20,11 @@
     <line x1="0" y1="364" x2="900" y2="364"/>
     <line x1="0" y1="416" x2="900" y2="416"/>
     <line x1="0" y1="468" x2="900" y2="468"/>
+    <line x1="0" y1="520" x2="900" y2="520"/>
+    <line x1="0" y1="572" x2="900" y2="572"/>
   </g>
 
-  <text x="450" y="38" font-family="system-ui,sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">AI 供应链隐性成本分层模型</text>
+  <text x="450" y="38" font-family="system-ui,sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">AI 供应链隐性成本分层模型（七层）</text>
 
   <!-- Layer 1 - visible, small -->
   <rect x="50" y="60" width="800" height="58" rx="8" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1.5"/>
@@ -32,47 +34,55 @@
   <text x="800" y="88" font-family="system-ui,sans-serif" font-size="12" fill="#93c5fd" text-anchor="middle" font-weight="bold">可见</text>
   <text x="800" y="106" font-family="system-ui,sans-serif" font-size="10" fill="#60a5fa" text-anchor="middle">已预算</text>
 
-  <!-- Layer 2 -->
-  <rect x="50" y="130" width="800" height="58" rx="8" fill="#2d1b4e" stroke="#8b5cf6" stroke-width="1.5"/>
-  <rect x="50" y="130" width="320" height="58" rx="8" fill="#6d28d9" opacity="0.5"/>
-  <text x="70" y="154" font-family="system-ui,sans-serif" font-size="13" fill="#c4b5fd" font-weight="bold">Layer 2 · Code Review 人力溢价</text>
-  <text x="70" y="174" font-family="system-ui,sans-serif" font-size="11" fill="#a78bfa">AI 代码 Review 耗时高出 38% · 96% 开发者不完全信任 AI 代码 · 仅 48% 提交前必验</text>
-  <text x="800" y="158" font-family="system-ui,sans-serif" font-size="12" fill="#c4b5fd" text-anchor="middle" font-weight="bold">半可见</text>
-  <text x="800" y="176" font-family="system-ui,sans-serif" font-size="10" fill="#a78bfa" text-anchor="middle">被低估</text>
+  <!-- Layer 2 - LLM API Runtime (NEW) -->
+  <rect x="50" y="130" width="800" height="58" rx="8" fill="#0d3d3d" stroke="#06b6d4" stroke-width="1.5"/>
+  <rect x="50" y="130" width="270" height="58" rx="8" fill="#0e7490" opacity="0.5"/>
+  <text x="70" y="154" font-family="system-ui,sans-serif" font-size="13" fill="#a5f3fc" font-weight="bold">Layer 2 · LLM API 运行时账单</text>
+  <text x="70" y="174" font-family="system-ui,sans-serif" font-size="11" fill="#22d3ee">产品集成大模型 · 系统故障期间照样计费 · 重试风暴 10-50x · 预付 Tier 无法冻结</text>
+  <text x="800" y="158" font-family="system-ui,sans-serif" font-size="12" fill="#a5f3fc" text-anchor="middle" font-weight="bold">半可见</text>
+  <text x="800" y="176" font-family="system-ui,sans-serif" font-size="10" fill="#22d3ee" text-anchor="middle">易被忽视</text>
 
-  <!-- Layer 3 -->
-  <rect x="50" y="200" width="800" height="58" rx="8" fill="#3b1a1a" stroke="#f87171" stroke-width="1.5"/>
-  <rect x="50" y="200" width="420" height="58" rx="8" fill="#dc2626" opacity="0.4"/>
-  <text x="70" y="224" font-family="system-ui,sans-serif" font-size="13" fill="#fca5a5" font-weight="bold">Layer 3 · Bug 密度与修复成本</text>
-  <text x="70" y="244" font-family="system-ui,sans-serif" font-size="11" fill="#f87171">AI 代码缺陷密度 1.7x · 逻辑错误 +75% · 安全漏洞 +100% · 代码重写率 +84%（GitClear）</text>
-  <text x="800" y="228" font-family="system-ui,sans-serif" font-size="12" fill="#fca5a5" text-anchor="middle" font-weight="bold">隐性</text>
-  <text x="800" y="246" font-family="system-ui,sans-serif" font-size="10" fill="#f87171" text-anchor="middle">持续累积</text>
+  <!-- Layer 3 - Code Review (was Layer 2) -->
+  <rect x="50" y="200" width="800" height="58" rx="8" fill="#2d1b4e" stroke="#8b5cf6" stroke-width="1.5"/>
+  <rect x="50" y="200" width="320" height="58" rx="8" fill="#6d28d9" opacity="0.5"/>
+  <text x="70" y="224" font-family="system-ui,sans-serif" font-size="13" fill="#c4b5fd" font-weight="bold">Layer 3 · Code Review 人力溢价</text>
+  <text x="70" y="244" font-family="system-ui,sans-serif" font-size="11" fill="#a78bfa">AI 代码 Review 耗时高出 38% · 96% 开发者不完全信任 AI 代码 · 仅 48% 提交前必验</text>
+  <text x="800" y="228" font-family="system-ui,sans-serif" font-size="12" fill="#c4b5fd" text-anchor="middle" font-weight="bold">半可见</text>
+  <text x="800" y="246" font-family="system-ui,sans-serif" font-size="10" fill="#a78bfa" text-anchor="middle">被低估</text>
 
-  <!-- Layer 4 -->
-  <rect x="50" y="270" width="800" height="58" rx="8" fill="#3b2200" stroke="#fb923c" stroke-width="1.5"/>
-  <rect x="50" y="270" width="530" height="58" rx="8" fill="#ea580c" opacity="0.4"/>
-  <text x="70" y="294" font-family="system-ui,sans-serif" font-size="13" fill="#fdba74" font-weight="bold">Layer 4 · 安全漏洞与合规风险</text>
-  <text x="70" y="314" font-family="system-ui,sans-serif" font-size="11" fill="#fb923c">45% AI 代码含 OWASP Top 10 漏洞 · 2024 API漏洞 +1025% · 均值数据泄露成本 $4.88M（IBM）</text>
-  <text x="800" y="298" font-family="system-ui,sans-serif" font-size="12" fill="#fdba74" text-anchor="middle" font-weight="bold">隐性</text>
-  <text x="800" y="316" font-family="system-ui,sans-serif" font-size="10" fill="#fb923c" text-anchor="middle">爆发式</text>
+  <!-- Layer 4 - Bug Density (was Layer 3) -->
+  <rect x="50" y="270" width="800" height="58" rx="8" fill="#3b1a1a" stroke="#f87171" stroke-width="1.5"/>
+  <rect x="50" y="270" width="420" height="58" rx="8" fill="#dc2626" opacity="0.4"/>
+  <text x="70" y="294" font-family="system-ui,sans-serif" font-size="13" fill="#fca5a5" font-weight="bold">Layer 4 · Bug 密度与修复成本</text>
+  <text x="70" y="314" font-family="system-ui,sans-serif" font-size="11" fill="#f87171">AI 代码缺陷密度 1.7x · 逻辑错误 +75% · 安全漏洞 +100% · 代码重写率 +84%（GitClear）</text>
+  <text x="800" y="298" font-family="system-ui,sans-serif" font-size="12" fill="#fca5a5" text-anchor="middle" font-weight="bold">隐性</text>
+  <text x="800" y="316" font-family="system-ui,sans-serif" font-size="10" fill="#f87171" text-anchor="middle">持续累积</text>
 
-  <!-- Layer 5 -->
-  <rect x="50" y="340" width="800" height="58" rx="8" fill="#451a03" stroke="#f97316" stroke-width="1.5"/>
-  <rect x="50" y="340" width="650" height="58" rx="8" fill="#c2410c" opacity="0.4"/>
-  <text x="70" y="364" font-family="system-ui,sans-serif" font-size="13" fill="#fed7aa" font-weight="bold">Layer 5 · 技术债务累积</text>
-  <text x="70" y="384" font-family="system-ui,sans-serif" font-size="11" fill="#fb923c">重复代码 +480% · 重构代码 -60% · Gartner预测2028年缺陷 +2500% · 维护成本 10x</text>
-  <text x="800" y="368" font-family="system-ui,sans-serif" font-size="12" fill="#fed7aa" text-anchor="middle" font-weight="bold">延迟爆发</text>
-  <text x="800" y="386" font-family="system-ui,sans-serif" font-size="10" fill="#fb923c" text-anchor="middle">毁灭性</text>
+  <!-- Layer 5 - Security (was Layer 4) -->
+  <rect x="50" y="340" width="800" height="58" rx="8" fill="#3b2200" stroke="#fb923c" stroke-width="1.5"/>
+  <rect x="50" y="340" width="530" height="58" rx="8" fill="#ea580c" opacity="0.4"/>
+  <text x="70" y="364" font-family="system-ui,sans-serif" font-size="13" fill="#fdba74" font-weight="bold">Layer 5 · 安全漏洞与合规风险</text>
+  <text x="70" y="384" font-family="system-ui,sans-serif" font-size="11" fill="#fb923c">45% AI 代码含 OWASP Top 10 漏洞 · 2024 API漏洞 +1025% · 均值数据泄露成本 $4.88M（IBM）</text>
+  <text x="800" y="368" font-family="system-ui,sans-serif" font-size="12" fill="#fdba74" text-anchor="middle" font-weight="bold">隐性</text>
+  <text x="800" y="386" font-family="system-ui,sans-serif" font-size="10" fill="#fb923c" text-anchor="middle">爆发式</text>
 
-  <!-- Layer 6 -->
-  <rect x="50" y="410" width="800" height="58" rx="8" fill="#450a0a" stroke="#ef4444" stroke-width="2"/>
-  <rect x="50" y="410" width="750" height="58" rx="8" fill="#991b1b" opacity="0.5"/>
-  <text x="70" y="434" font-family="system-ui,sans-serif" font-size="13" fill="#fca5a5" font-weight="bold">Layer 6 · 生产事故与灾难性故障</text>
-  <text x="70" y="454" font-family="system-ui,sans-serif" font-size="11" fill="#ef4444">Amazon Kiro：630万订单丢失 · AI 幻觉引发 2024 年损失 $67B · 删除生产环境 13 小时宕机</text>
-  <text x="800" y="438" font-family="system-ui,sans-serif" font-size="12" fill="#fca5a5" text-anchor="middle" font-weight="bold">灾难性</text>
-  <text x="800" y="456" font-family="system-ui,sans-serif" font-size="10" fill="#ef4444" text-anchor="middle">难以预测</text>
+  <!-- Layer 6 - Tech Debt (was Layer 5) -->
+  <rect x="50" y="410" width="800" height="58" rx="8" fill="#451a03" stroke="#f97316" stroke-width="1.5"/>
+  <rect x="50" y="410" width="650" height="58" rx="8" fill="#c2410c" opacity="0.4"/>
+  <text x="70" y="434" font-family="system-ui,sans-serif" font-size="13" fill="#fed7aa" font-weight="bold">Layer 6 · 技术债务累积</text>
+  <text x="70" y="454" font-family="system-ui,sans-serif" font-size="11" fill="#fb923c">重复代码 +480% · 重构代码 -60% · Gartner预测2028年缺陷 +2500% · 维护成本 10x</text>
+  <text x="800" y="438" font-family="system-ui,sans-serif" font-size="12" fill="#fed7aa" text-anchor="middle" font-weight="bold">延迟爆发</text>
+  <text x="800" y="456" font-family="system-ui,sans-serif" font-size="10" fill="#fb923c" text-anchor="middle">毁灭性</text>
+
+  <!-- Layer 7 - Production Incidents (was Layer 6) -->
+  <rect x="50" y="480" width="800" height="58" rx="8" fill="#450a0a" stroke="#ef4444" stroke-width="2"/>
+  <rect x="50" y="480" width="750" height="58" rx="8" fill="#991b1b" opacity="0.5"/>
+  <text x="70" y="504" font-family="system-ui,sans-serif" font-size="13" fill="#fca5a5" font-weight="bold">Layer 7 · 生产事故与灾难性故障</text>
+  <text x="70" y="524" font-family="system-ui,sans-serif" font-size="11" fill="#ef4444">Amazon Kiro：630万订单丢失 · AI 幻觉引发 2024 年损失 $67B · 删除生产环境 13 小时宕机</text>
+  <text x="800" y="508" font-family="system-ui,sans-serif" font-size="12" fill="#fca5a5" text-anchor="middle" font-weight="bold">灾难性</text>
+  <text x="800" y="526" font-family="system-ui,sans-serif" font-size="10" fill="#ef4444" text-anchor="middle">难以预测</text>
 
   <!-- Bottom note -->
-  <text x="450" y="498" font-family="system-ui,sans-serif" font-size="10" fill="#475569" text-anchor="middle">⚠ 大多数企业的 AI ROI 计算只包含 Layer 1，忽略了 Layer 2-6 的隐性成本</text>
-  <text x="450" y="513" font-family="system-ui,sans-serif" font-size="10" fill="#334155" text-anchor="middle">Sources: CodeRabbit 2025 · DORA 2024 · GitClear 2025 · Veracode 2025 · IBM 2024 · Gartner 2024</text>
+  <text x="450" y="560" font-family="system-ui,sans-serif" font-size="10" fill="#475569" text-anchor="middle">⚠ 大多数企业的 AI ROI 计算只包含 Layer 1，忽略了 Layer 2-7 的隐性成本</text>
+  <text x="450" y="578" font-family="system-ui,sans-serif" font-size="10" fill="#334155" text-anchor="middle">Sources: CodeRabbit 2025 · DORA 2024 · GitClear 2025 · Veracode 2025 · IBM 2024 · Gartner 2024</text>
 </svg>
