@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="900" height="480">
+  <defs>
+    <linearGradient id="bgcq" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="900" height="480" fill="url(#bgcq)"/>
+
+  <text x="450" y="36" font-family="system-ui,sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">AI 代码 vs. 人工代码：质量对比（CodeRabbit 2025，470 个 PR 样本）</text>
+
+  <!-- Chart area -->
+  <!-- Y-axis label -->
+  <text x="25" y="260" font-family="system-ui,sans-serif" font-size="11" fill="#64748b" text-anchor="middle" transform="rotate(-90, 25, 260)">问题数量（每 PR）</text>
+
+  <!-- Y-axis lines -->
+  <g stroke="#334155" stroke-width="0.5">
+    <line x1="80" y1="60" x2="80" y2="400"/>
+    <line x1="80" y1="400" x2="870" y2="400"/>
+  </g>
+
+  <!-- Y-axis ticks and labels -->
+  <g font-family="system-ui,sans-serif" font-size="10" fill="#64748b" text-anchor="end">
+    <text x="75" y="404">0</text>
+    <text x="75" y="362">2</text>
+    <text x="75" y="320">4</text>
+    <text x="75" y="278">6</text>
+    <text x="75" y="236">8</text>
+    <text x="75" y="194">10</text>
+    <text x="75" y="152">12</text>
+  </g>
+  <g stroke="#334155" stroke-width="0.3" stroke-dasharray="4,4">
+    <line x1="80" y1="362" x2="870" y2="362"/>
+    <line x1="80" y1="320" x2="870" y2="320"/>
+    <line x1="80" y1="278" x2="870" y2="278"/>
+    <line x1="80" y1="236" x2="870" y2="236"/>
+    <line x1="80" y1="194" x2="870" y2="194"/>
+    <line x1="80" y1="152" x2="870" y2="152"/>
+  </g>
+
+  <!-- Category: Total Issues -->
+  <!-- Human: 6.45 => height: 6.45 * 34 = 219.3, bar top: 400-219=181 -->
+  <!-- AI: 10.83 => height: 368.2, bar top: 400-368=32 -->
+  <rect x="110" y="181" width="55" height="219" rx="4" fill="#22c55e" opacity="0.85"/>
+  <text x="137" y="176" font-family="system-ui,sans-serif" font-size="11" fill="#22c55e" text-anchor="middle" font-weight="bold">6.45</text>
+  <rect x="175" y="32" width="55" height="368" rx="4" fill="#ef4444" opacity="0.85"/>
+  <text x="202" y="27" font-family="system-ui,sans-serif" font-size="11" fill="#ef4444" text-anchor="middle" font-weight="bold">10.83</text>
+  <text x="165" y="430" font-family="system-ui,sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">总缺陷数</text>
+
+  <!-- Category: Critical Issues -->
+  <!-- Human: 1.0 (normalized), AI: 1.4x => 1.4 -->
+  <!-- Human: 2.1 => 71.4, bar top: 328.6 -->
+  <!-- AI: 2.94 => 99.96, bar top: 300 -->
+  <rect x="280" y="329" width="55" height="71" rx="4" fill="#22c55e" opacity="0.85"/>
+  <text x="307" y="324" font-family="system-ui,sans-serif" font-size="11" fill="#22c55e" text-anchor="middle" font-weight="bold">1.4x↑</text>
+  <rect x="345" y="300" width="55" height="100" rx="4" fill="#ef4444" opacity="0.85"/>
+  <text x="330" y="430" font-family="system-ui,sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">严重缺陷</text>
+
+  <!-- Category: Security Vulnerabilities -->
+  <!-- AI has 2x more security issues -->
+  <rect x="450" y="332" width="55" height="68" rx="4" fill="#22c55e" opacity="0.85"/>
+  <rect x="515" y="264" width="55" height="136" rx="4" fill="#ef4444" opacity="0.85"/>
+  <text x="490" y="430" font-family="system-ui,sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">安全漏洞</text>
+  <text x="542" y="259" font-family="system-ui,sans-serif" font-size="11" fill="#ef4444" text-anchor="middle" font-weight="bold">2.0x↑</text>
+
+  <!-- Category: Logic Errors -->
+  <!-- AI has 75% more logic errors -->
+  <rect x="620" y="298" width="55" height="102" rx="4" fill="#22c55e" opacity="0.85"/>
+  <rect x="685" y="221" width="55" height="179" rx="4" fill="#ef4444" opacity="0.85"/>
+  <text x="655" y="430" font-family="system-ui,sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">逻辑错误</text>
+  <text x="712" y="216" font-family="system-ui,sans-serif" font-size="11" fill="#ef4444" text-anchor="middle" font-weight="bold">1.75x↑</text>
+
+  <!-- Category: Performance Issues -->
+  <!-- AI has 8x more performance issues -->
+  <rect x="790" y="388" width="55" height="12" rx="4" fill="#22c55e" opacity="0.85"/>
+  <rect x="790" y="304" width="55" height="96" rx="4" fill="#ef4444" opacity="0.85"/>
+  <text x="817" y="430" font-family="system-ui,sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">性能问题</text>
+  <text x="817" y="299" font-family="system-ui,sans-serif" font-size="11" fill="#ef4444" text-anchor="middle" font-weight="bold">8.0x↑</text>
+
+  <!-- Legend -->
+  <rect x="300" y="450" width="14" height="14" rx="3" fill="#22c55e" opacity="0.85"/>
+  <text x="318" y="462" font-family="system-ui,sans-serif" font-size="11" fill="#94a3b8">人工编写代码</text>
+  <rect x="430" y="450" width="14" height="14" rx="3" fill="#ef4444" opacity="0.85"/>
+  <text x="448" y="462" font-family="system-ui,sans-serif" font-size="11" fill="#94a3b8">AI 生成代码</text>
+
+  <!-- Source -->
+  <text x="870" y="470" font-family="system-ui,sans-serif" font-size="9" fill="#334155" text-anchor="end">来源：CodeRabbit "State of AI vs Human Code Generation" 2025</text>
+</svg>
