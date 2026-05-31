@@ -1,0 +1,142 @@
+<svg width="1200" height="680" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f23;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1a1a3e;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e2a4a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#162038;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e94560;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ff6b8a;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="680" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="600" y="55" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#ffffff" text-anchor="middle">Meta-Team: 协作式自我进化框架</text>
+  <text x="600" y="82" font-family="Arial, sans-serif" font-size="16" fill="#8899aa" text-anchor="middle">Evolve as a Team — Collaborative Self-Evolution for LLM-based Multi-Agent Systems</text>
+
+  <!-- Top section: Three-layer architecture -->
+  <g transform="translate(0, 120)">
+    <!-- Layer 1: Individual Behavior Layer -->
+    <rect x="60" y="0" width="340" height="280" rx="12" fill="url(#cardGrad)" filter="url(#shadow)"/>
+    <rect x="60" y="0" width="340" height="5" rx="2" fill="#e94560"/>
+    <text x="230" y="40" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#e94560" text-anchor="middle">个体行为层</text>
+    <text x="230" y="60" font-family="Arial, sans-serif" font-size="13" fill="#7788aa" text-anchor="middle">Individual Behavior Layer</text>
+
+    <!-- Agent icons -->
+    <g transform="translate(140, 120)">
+      <circle cx="0" cy="0" r="28" fill="#e94560" opacity="0.3"/>
+      <circle cx="0" cy="0" r="18" fill="#e94560" opacity="0.6"/>
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">A</text>
+    </g>
+    <g transform="translate(230, 120)">
+      <circle cx="0" cy="0" r="28" fill="#e94560" opacity="0.3"/>
+      <circle cx="0" cy="0" r="18" fill="#e94560" opacity="0.6"/>
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">B</text>
+    </g>
+    <g transform="translate(320, 120)">
+      <circle cx="0" cy="0" r="28" fill="#e94560" opacity="0.3"/>
+      <circle cx="0" cy="0" r="18" fill="#e94560" opacity="0.6"/>
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">C</text>
+    </g>
+
+    <!-- Evidence collection -->
+    <rect x="90" y="180" width="280" height="70" rx="8" fill="#0f1a30" opacity="0.6"/>
+    <text x="230" y="205" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#aabbcc" text-anchor="middle">分布式证据收集</text>
+    <text x="230" y="228" font-family="Arial, sans-serif" font-size="12" fill="#7788aa" text-anchor="middle">决策过程 · 观察结果 · 最终行动</text>
+    <text x="230" y="245" font-family="Arial, sans-serif" font-size="11" fill="#667799" text-anchor="middle">Distributed Evidence for Evolution</text>
+  </g>
+
+  <!-- Arrow: Layer 1 to Layer 2 -->
+  <line x1="600" y1="400" x2="600" y2="430" stroke="#e94560" stroke-width="3"/>
+  <polygon points="600,438 593,425 607,425" fill="#e94560"/>
+  <text x="620" y="420" font-family="Arial, sans-serif" font-size="13" fill="#aabbcc">经验共享</text>
+
+  <!-- Layer 2: Team Interaction Layer -->
+  <g transform="translate(60, 440)">
+    <rect x="0" y="0" width="340" height="200" rx="12" fill="url(#cardGrad)" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="340" height="5" rx="2" fill="#ff6b8a"/>
+    <text x="170" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ff6b8a" text-anchor="middle">团队交互层</text>
+    <text x="170" y="55" font-family="Arial, sans-serif" font-size="13" fill="#7788aa" text-anchor="middle">Team Interaction Layer</text>
+
+    <!-- Shared experience visualization -->
+    <g transform="translate(170, 120)">
+      <circle cx="-60" cy="0" r="22" fill="#e94560" opacity="0.2"/>
+      <circle cx="0" cy="0" r="30" fill="#ff6b8a" opacity="0.3"/>
+      <circle cx="60" cy="0" r="22" fill="#e94560" opacity="0.2"/>
+      <!-- Connection lines -->
+      <line x1="-38" y1="0" x2="-22" y2="0" stroke="#ff6b8a" stroke-width="2" opacity="0.5"/>
+      <line x1="22" y1="0" x2="38" y2="0" stroke="#ff6b8a" stroke-width="2" opacity="0.5"/>
+      <!-- Center icon -->
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">⇄</text>
+    </g>
+
+    <rect x="30" y="160" width="280" height="30" rx="6" fill="#0f1a30" opacity="0.6"/>
+    <text x="170" y="180" font-family="Arial, sans-serif" font-size="13" fill="#aabbcc" text-anchor="middle">交换执行证据 · 识别协作瓶颈</text>
+  </g>
+
+  <!-- Arrow: Layer 2 to Layer 3 -->
+  <line x1="600" y1="400" x2="600" y2="430" stroke="#e94560" stroke-width="3"/>
+  <polygon points="600,438 593,425 607,425" fill="#e94560"/>
+
+  <!-- Right side: Layer 3 - Organizational Evolution -->
+  <g transform="translate(440, 120)">
+    <rect x="0" y="0" width="340" height="520" rx="12" fill="url(#cardGrad)" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="340" height="5" rx="2" fill="#ffaa6b"/>
+    <text x="170" y="40" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffaa6b" text-anchor="middle">组织进化层</text>
+    <text x="170" y="60" font-family="Arial, sans-serif" font-size="13" fill="#7788aa" text-anchor="middle">Organizational Evolution Layer</text>
+
+    <!-- Three evolution dimensions -->
+    <g transform="translate(0, 90)">
+      <!-- Dimension 1: Role Allocation -->
+      <rect x="20" y="0" width="300" height="80" rx="8" fill="#0f1a30" opacity="0.6"/>
+      <text x="40" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffaa6b">角色分配优化</text>
+      <text x="40" y="45" font-family="Arial, sans-serif" font-size="12" fill="#7788aa">Role Allocation Optimization</text>
+      <text x="40" y="65" font-family="Arial, sans-serif" font-size="11" fill="#667799">基于执行证据重新分配智能体角色</text>
+
+      <!-- Dimension 2: Communication Patterns -->
+      <rect x="20" y="100" width="300" height="80" rx="8" fill="#0f1a30" opacity="0.6"/>
+      <text x="40" y="125" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffaa6b">通信模式优化</text>
+      <text x="40" y="145" font-family="Arial, sans-serif" font-size="12" fill="#7788aa">Communication Pattern Optimization</text>
+      <text x="40" y="165" font-family="Arial, sans-serif" font-size="11" fill="#667799">改进智能体间的信息传递效率</text>
+
+      <!-- Dimension 3: Collaboration Strategy -->
+      <rect x="20" y="200" width="300" height="80" rx="8" fill="#0f1a30" opacity="0.6"/>
+      <text x="40" y="225" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffaa6b">协作策略优化</text>
+      <text x="40" y="245" font-family="Arial, sans-serif" font-size="12" fill="#7788aa">Collaboration Strategy Optimization</text>
+      <text x="40" y="265" font-family="Arial, sans-serif" font-size="11" fill="#667799">调整团队整体协作策略与分工方式</text>
+
+      <!-- Bottom: Self-evolution loop -->
+      <rect x="20" y="310" width="300" height="80" rx="8" fill="#e94560" opacity="0.15"/>
+      <text x="170" y="345" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ff6b8a" text-anchor="middle">自进化闭环</text>
+      <text x="170" y="368" font-family="Arial, sans-serif" font-size="12" fill="#aabbcc" text-anchor="middle">Self-Evolution Loop</text>
+      <text x="170" y="385" font-family="Arial, sans-serif" font-size="11" fill="#7788aa" text-anchor="middle">进化后的系统 → 执行新任务 → 收集新证据</text>
+
+      <!-- Loop arrow -->
+      <path d="M 290 350 Q 340 350 340 310 L 340 280" fill="none" stroke="#ff6b8a" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+  </g>
+
+  <!-- Bottom section: Key metrics -->
+  <g transform="translate(0, 650)">
+    <text x="300" y="15" font-family="Arial, sans-serif" font-size="14" fill="#8899aa" text-anchor="middle">6个长程Agent基准测试 · 一致优于单Agent与手工设计MAS</text>
+    <text x="900" y="15" font-family="Arial, sans-serif" font-size="13" fill="#667799" text-anchor="middle">arXiv:2605.29790 · 香港中文大学 &amp; 阿里巴巴集团</text>
+  </g>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ff6b8a"/>
+    </marker>
+  </defs>
+</svg>
