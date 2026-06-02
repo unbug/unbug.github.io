@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e94560"/>
+      <stop offset="100%" style="stop-color:#ff6b6b"/>
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0f3460"/>
+      <stop offset="100%" style="stop-color:#533483"/>
+    </linearGradient>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#16c79a"/>
+      <stop offset="100%" style="stop-color:#34e89e"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="bold">元认知记忆策略优化 (MMPO)</text>
+  <text x="400" y="68" text-anchor="middle" fill="#8892b0" font-size="13">Meta-Cognitive Memory Policy Optimization</text>
+  
+  <!-- Divider -->
+  <line x1="300" y1="80" x2="500" y2="80" stroke="#e94560" stroke-width="2"/>
+  
+  <!-- Left: Problem - Recursive Summary Noise -->
+  <rect x="30" y="100" width="220" height="280" rx="12" fill="#0a0a1a" stroke="#e94560" stroke-width="1.5" opacity="0.9"/>
+  <text x="140" y="130" text-anchor="middle" fill="#e94560" font-size="15" font-weight="bold">问题：递归总结</text>
+  
+  <!-- Noise layers -->
+  <rect x="60" y="155" width="160" height="35" rx="6" fill="#1a0a0a" stroke="#e94560" stroke-width="1"/>
+  <text x="140" y="177" text-anchor="middle" fill="#ff6b6b" font-size="11">原始上下文 L0</text>
+  
+  <path d="M140 190 L140 205" stroke="#e94560" stroke-width="1.5" marker-end="url(#arrowRed)"/>
+  <text x="155" y="200" fill="#e94560" font-size="9">压缩</text>
+  
+  <rect x="60" y="210" width="160" height="35" rx="6" fill="#1a0a0a" stroke="#e94560" stroke-width="1" opacity="0.8"/>
+  <text x="140" y="232" text-anchor="middle" fill="#ff8888" font-size="11">摘要 L1 + 噪声</text>
+  
+  <path d="M140 245 L140 260" stroke="#e94560" stroke-width="1.5"/>
+  <text x="155" y="255" fill="#e94560" font-size="9">压缩</text>
+  
+  <rect x="60" y="265" width="160" height="35" rx="6" fill="#1a0a0a" stroke="#e94560" stroke-width="1" opacity="0.6"/>
+  <text x="140" y="287" text-anchor="middle" fill="#ffaaaa" font-size="11">摘要 L2 + 噪声叠加</text>
+  
+  <path d="M140 300 L140 315" stroke="#e94560" stroke-width="1.5"/>
+  <text x="155" y="310" fill="#e94560" font-size="9">压缩</text>
+  
+  <rect x="60" y="320" width="160" height="35" rx="6" fill="#1a0a0a" stroke="#e94560" stroke-width="1" opacity="0.35"/>
+  <text x="140" y="342" text-anchor="middle" fill="#ffcccc" font-size="11" opacity="0.7">摘要 L3 + 严重失真</text>
+  
+  <!-- Right: Solution - MMPO with Belief Entropy -->
+  <rect x="550" y="100" width="220" height="280" rx="12" fill="#0a0a1a" stroke="#16c79a" stroke-width="1.5" opacity="0.9"/>
+  <text x="660" y="130" text-anchor="middle" fill="#16c79a" font-size="15" font-weight="bold">方案：MMPO 元认知</text>
+  
+  <!-- Belief state visualization -->
+  <rect x="580" y="155" width="160" height="35" rx="6" fill="#0a1a10" stroke="#16c79a" stroke-width="1"/>
+  <text x="660" y="177" text-anchor="middle" fill="#16c79a" font-size="11">信念状态 + 熵检测</text>
+  
+  <path d="M660 190 L660 205" stroke="#16c79a" stroke-width="1.5"/>
+  
+  <rect x="580" y="210" width="75" height="35" rx="6" fill="#0a1a10" stroke="#16c79a" stroke-width="1"/>
+  <text x="617" y="232" text-anchor="middle" fill="#16c79a" font-size="10">低熵 → 压缩</text>
+  
+  <rect x="665" y="210" width="75" height="35" rx="6" fill="#1a1a0a" stroke="#ffd93d" stroke-width="1"/>
+  <text x="702" y="232" text-anchor="middle" fill="#ffd93d" font-size="10">高熵 → 检索</text>
+  
+  <path d="M660 245 L660 260" stroke="#16c79a" stroke-width="1.5"/>
+  
+  <rect x="580" y="265" width="160" height="35" rx="6" fill="#0a1a10" stroke="#16c79a" stroke-width="1" opacity="0.8"/>
+  <text x="660" y="287" text-anchor="middle" fill="#16c79a" font-size="11">自适应混合策略</text>
+  
+  <path d="M660 300 L660 315" stroke="#16c79a" stroke-width="1.5"/>
+  
+  <rect x="580" y="320" width="160" height="35" rx="6" fill="#0a1a10" stroke="#16c79a" stroke-width="1.5"/>
+  <text x="660" y="342" text-anchor="middle" fill="#16c79a" font-size="11" font-weight="bold">97.1% 性能保持</text>
+  
+  <!-- Center: Comparison bar chart -->
+  <rect x="270" y="100" width="260" height="280" rx="12" fill="#0a0a1a" stroke="#533483" stroke-width="1.5" opacity="0.9"/>
+  <text x="400" y="130" text-anchor="middle" fill="#8892b0" font-size="14" font-weight="bold">175万token 性能对比</text>
+  
+  <!-- Bar 1: Recursive Summary -->
+  <text x="310" y="170" fill="#ff6b6b" font-size="11">递归总结</text>
+  <rect x="310" y="180" width="180" height="28" rx="4" fill="#e94560" opacity="0.7"/>
+  <text x="500" y="199" fill="#ffffff" font-size="11" font-weight="bold">81.9%</text>
+  
+  <!-- Bar 2: MMPO -->
+  <text x="310" y="235" fill="#16c79a" font-size="11">MMPO (本文)</text>
+  <rect x="310" y="245" width="216" height="28" rx="4" fill="#16c79a"/>
+  <text x="536" y="264" fill="#0a0a1a" font-size="11" font-weight="bold">97.1%</text>
+  
+  <!-- Gap annotation -->
+  <text x="400" y="310" text-anchor="middle" fill="#ffd93d" font-size="13">+15.2 个百分点</text>
+  
+  <!-- Key insight -->
+  <text x="400" y="350" text-anchor="middle" fill="#8892b0" font-size="10">信念熵作为不确定性度量</text>
+  <text x="400" y="368" text-anchor="middle" fill="#8892b0" font-size="10">自适应平衡计算成本与记忆精度</text>
+  
+  <!-- Footer -->
+  <text x="400" y="420" text-anchor="middle" fill="#4a5568" font-size="10">arXiv:2605.30159 · 中国科学技术大学 · 浙江大学 · 腾讯</text>
+</svg>

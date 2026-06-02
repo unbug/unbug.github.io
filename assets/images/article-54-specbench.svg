@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e94560"/>
+      <stop offset="100%" style="stop-color:#ff6b6b"/>
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0f3460"/>
+      <stop offset="100%" style="stop-color:#533483"/>
+    </linearGradient>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffd93d"/>
+      <stop offset="100%" style="stop-color:#ff9a3c"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="bold">SpecBench：规范级推理评估</text>
+  <text x="400" y="68" text-anchor="middle" fill="#8892b0" font-size="13">Evaluating Specification-Level Reasoning for SE Agents</text>
+  
+  <!-- Divider -->
+  <line x1="300" y1="80" x2="500" y2="80" stroke="#ffd93d" stroke-width="2"/>
+  
+  <!-- Left: Three difficulty levels -->
+  <rect x="30" y="100" width="220" height="300" rx="12" fill="#0a0a1a" stroke="#533483" stroke-width="1.5" opacity="0.9"/>
+  <text x="140" y="130" text-anchor="middle" fill="#ffd93d" font-size="15" font-weight="bold">三个难度级别</text>
+  
+  <!-- Level 1 -->
+  <rect x="50" y="150" width="180" height="55" rx="8" fill="#0a1a0a" stroke="#16c79a" stroke-width="1"/>
+  <text x="140" y="172" text-anchor="middle" fill="#16c79a" font-size="12" font-weight="bold">基础级</text>
+  <text x="140" y="192" text-anchor="middle" fill="#8892b0" font-size="10">函数签名 + 输入输出约束</text>
+  <text x="140" y="202" text-anchor="middle" fill="#8892b0" font-size="10">前置/后置条件推导</text>
+  
+  <!-- Level 2 -->
+  <rect x="50" y="215" width="180" height="55" rx="8" fill="#1a1a0a" stroke="#ffd93d" stroke-width="1"/>
+  <text x="140" y="237" text-anchor="middle" fill="#ffd93d" font-size="12" font-weight="bold">进阶级</text>
+  <text x="140" y="257" text-anchor="middle" fill="#8892b0" font-size="10">模块接口 + 数据流约束</text>
+  <text x="140" y="267" text-anchor="middle" fill="#8892b0" font-size="10">异常传播路径</text>
+  
+  <!-- Level 3 -->
+  <rect x="50" y="280" width="180" height="55" rx="8" fill="#1a0a0a" stroke="#e94560" stroke-width="1"/>
+  <text x="140" y="302" text-anchor="middle" fill="#e94560" font-size="12" font-weight="bold">困难级</text>
+  <text x="140" y="322" text-anchor="middle" fill="#8892b0" font-size="10">系统架构规范</text>
+  <text x="140" y="332" text-anchor="middle" fill="#8892b0" font-size="10">模块划分 + 部署约束</text>
+  
+  <!-- Center: Accuracy drop chart -->
+  <rect x="270" y="100" width="260" height="300" rx="12" fill="#0a0a1a" stroke="#533483" stroke-width="1.5" opacity="0.9"/>
+  <text x="400" y="130" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">GPT-5.4 准确率随难度下降</text>
+  
+  <!-- GPT-5.4 bars -->
+  <text x="300" y="175" fill="#16c79a" font-size="11">基础级</text>
+  <rect x="300" y="182" width="162" height="22" rx="4" fill="#16c79a"/>
+  <text x="468" y="198" fill="#0a0a1a" font-size="10" font-weight="bold">62.1%</text>
+  
+  <text x="300" y="225" fill="#ffd93d" font-size="11">进阶级</text>
+  <rect x="300" y="232" width="116" height="22" rx="4" fill="#ffd93d"/>
+  <text x="422" y="248" fill="#0a0a1a" font-size="10" font-weight="bold">44.4%</text>
+  
+  <text x="300" y="275" fill="#e94560" font-size="11">困难级</text>
+  <rect x="300" y="282" width="75" height="22" rx="4" fill="#e94560"/>
+  <text x="381" y="298" fill="#ffffff" font-size="10" font-weight="bold">28.7%</text>
+  
+  <!-- Drop annotation -->
+  <path d="M465 193 Q500 193 500 293" fill="none" stroke="#e94560" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="505" y="245" fill="#e94560" font-size="11" font-weight="bold">↓ 33.4 个百分点</text>
+  
+  <!-- Claude comparison -->
+  <text x="400" y="330" text-anchor="middle" fill="#8892b0" font-size="10">Claude Opus 4 进阶级: 44% (与 GPT-5.4 接近)</text>
+  
+  <!-- Right: Key insight -->
+  <rect x="550" y="100" width="220" height="300" rx="12" fill="#0a0a1a" stroke="#533483" stroke-width="1.5" opacity="0.9"/>
+  <text x="660" y="130" text-anchor="middle" fill="#ffd93d" font-size="15" font-weight="bold">核心发现</text>
+  
+  <text x="575" y="165" fill="#ffffff" font-size="12" font-weight="bold">1. 规范设计是独立能力维度</text>
+  <text x="575" y="185" fill="#8892b0" font-size="10">Agent 可能在代码生成上表现优异，</text>
+  <text x="575" y="198" fill="#8892b0" font-size="10">但在规范设计阶段就偏离意图</text>
+  
+  <text x="575" y="230" fill="#ffffff" font-size="12" font-weight="bold">2. 开源模型差距更大</text>
+  <text x="575" y="250" fill="#8892b0" font-size="10">基础级最高约 35%，进阶级降至</text>
+  <text x="575" y="263" fill="#8892b0" font-size="10">18% 以下</text>
+  
+  <text x="575" y="295" fill="#ffffff" font-size="12" font-weight="bold">3. 评估方向需扩展</text>
+  <text x="575" y="315" fill="#8892b0" font-size="10">从代码层面向规范层面扩展，</text>
+  <text x="575" y="328" fill="#8892b0" font-size="10">规范级推理是衡量 Agent 是否</text>
+  <text x="575" y="341" fill="#8892b0" font-size="10">真正理解需求的关键指标</text>
+  
+  <!-- Footer -->
+  <text x="400" y="420" text-anchor="middle" fill="#4a5568" font-size="10">arXiv:2605.30314 · 多伦多大学 · 滑铁卢大学 · Vector Institute · NVIDIA</text>
+</svg>

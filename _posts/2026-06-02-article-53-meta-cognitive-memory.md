@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "一分钟读论文：《Meta-Cognitive Memory Policy Optimization》"
+title:  "一分钟读论文：《元认知记忆策略优化》"
 author: unbug
 categories: [AI, LLM]
 image: assets/images/article-53-meta-cognitive-memory.svg
