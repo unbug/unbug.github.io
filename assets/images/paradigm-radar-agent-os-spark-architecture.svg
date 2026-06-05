@@ -1,15 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#0ea5e9"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#g)"/>
-  <rect x="56" y="80" width="1088" height="470" rx="24" fill="#0b1220" fill-opacity="0.45" stroke="#bae6fd" stroke-opacity="0.45"/>
-  <text x="90" y="170" fill="#e0f2fe" font-size="34" font-family="Arial">AI Paradigm Radar</text>
-  <text x="90" y="250" fill="#f8fafc" font-size="56" font-family="Arial" font-weight="700">paradigm radar agent os spark architecture</text>
-  <text x="90" y="320" fill="#bae6fd" font-size="30" font-family="Arial">Visual-first article asset (regenerated)</text>
-  <circle cx="980" cy="430" r="110" fill="#22d3ee" fill-opacity="0.28"/>
-  <circle cx="900" cy="450" r="70" fill="#7dd3fc" fill-opacity="0.35"/>
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <text x="600" y="50" fill="#e2e8f0" font-size="26" font-family="Arial" font-weight="700" text-anchor="middle">RTX Spark 上的 Agent Runtime 架构</text>
+  <rect x="100" y="100" width="1000" height="430" rx="24" fill="#111827" stroke="#334155" stroke-width="1.5"/>
+  <text x="600" y="138" fill="#ccfbf1" font-size="22" font-family="Arial" font-weight="700" text-anchor="middle">RTX Spark Notebook</text>
+  <rect x="150" y="180" width="900" height="120" rx="16" fill="#134e4a"/>
+  <text x="600" y="216" fill="#ecfeff" font-size="20" font-family="Arial" font-weight="700" text-anchor="middle">Windows Agent Framework Runtime</text>
+  <rect x="180" y="236" width="180" height="42" rx="8" fill="#0f766e"/>
+  <text x="270" y="262" fill="#ffffff" font-size="15" font-family="Arial" text-anchor="middle">文件系统域</text>
+  <rect x="390" y="236" width="180" height="42" rx="8" fill="#0f766e"/>
+  <text x="480" y="262" fill="#ffffff" font-size="15" font-family="Arial" text-anchor="middle">网络域</text>
+  <rect x="600" y="236" width="180" height="42" rx="8" fill="#0f766e"/>
+  <text x="690" y="262" fill="#ffffff" font-size="15" font-family="Arial" text-anchor="middle">UI 自动化域</text>
+  <rect x="810" y="236" width="180" height="42" rx="8" fill="#0f766e"/>
+  <text x="900" y="262" fill="#ffffff" font-size="15" font-family="Arial" text-anchor="middle">进程管理域</text>
+  <rect x="150" y="330" width="430" height="120" rx="16" fill="#1d4ed8"/>
+  <text x="365" y="366" fill="#dbeafe" font-size="20" font-family="Arial" font-weight="700" text-anchor="middle">128GB 统一内存</text>
+  <text x="365" y="394" fill="#eff6ff" font-size="15" font-family="Arial" text-anchor="middle">CPU / GPU 共享，无需频繁数据拷贝</text>
+  <text x="365" y="420" fill="#bfdbfe" font-size="15" font-family="Arial" text-anchor="middle">适合本地 Agent + 工具执行并行运行</text>
+  <rect x="620" y="330" width="430" height="120" rx="16" fill="#7c3aed"/>
+  <text x="835" y="366" fill="#ede9fe" font-size="20" font-family="Arial" font-weight="700" text-anchor="middle">Blackwell GPU Engine</text>
+  <text x="835" y="394" fill="#f5f3ff" font-size="15" font-family="Arial" text-anchor="middle">1 PFLOP AI 性能</text>
+  <text x="835" y="420" fill="#ddd6fe" font-size="15" font-family="Arial" text-anchor="middle">支撑本地推理和低时延多工具任务</text>
+  <text x="600" y="492" fill="#64748b" font-size="14" font-family="Arial" text-anchor="middle">结论：硬件、运行时与系统能力域在同一台设备上闭环</text>
 </svg>

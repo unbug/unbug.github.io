@@ -1,15 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#0ea5e9"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#g)"/>
-  <rect x="56" y="80" width="1088" height="470" rx="24" fill="#0b1220" fill-opacity="0.45" stroke="#bae6fd" stroke-opacity="0.45"/>
-  <text x="90" y="170" fill="#e0f2fe" font-size="34" font-family="Arial">AI Paradigm Radar</text>
-  <text x="90" y="250" fill="#f8fafc" font-size="56" font-family="Arial" font-weight="700">economy of minds</text>
-  <text x="90" y="320" fill="#bae6fd" font-size="30" font-family="Arial">Visual-first article asset (regenerated)</text>
-  <circle cx="980" cy="430" r="110" fill="#22d3ee" fill-opacity="0.28"/>
-  <circle cx="900" cy="450" r="70" fill="#7dd3fc" fill-opacity="0.35"/>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="64" y="84" width="1072" height="462" rx="24" fill="#0f172a" fill-opacity="0.36"/>
+  <text x="96" y="156" fill="#ddd6fe" font-size="34" font-family="Arial" font-weight="700">一分钟读论文</text>
+  <text x="96" y="242" fill="#f5f3ff" font-size="54" font-family="Arial" font-weight="700">Economy of Minds</text>
+  <text x="96" y="306" fill="#e9d5ff" font-size="28" font-family="Arial">拍卖竞争 · 支付交换 · 财富积累 · 经济进化</text>
+  <circle cx="230" cy="426" r="92" fill="#7c3aed"/>
+  <text x="230" y="434" fill="#f5f3ff" font-size="24" font-family="Arial" text-anchor="middle">Auction</text>
+  <circle cx="470" cy="426" r="92" fill="#9333ea"/>
+  <text x="470" y="434" fill="#f5f3ff" font-size="24" font-family="Arial" text-anchor="middle">Payment</text>
+  <circle cx="710" cy="426" r="92" fill="#a855f7"/>
+  <text x="710" y="434" fill="#f5f3ff" font-size="24" font-family="Arial" text-anchor="middle">Wealth</text>
+  <circle cx="950" cy="426" r="92" fill="#c084fc"/>
+  <text x="950" y="434" fill="#4c1d95" font-size="24" font-family="Arial" text-anchor="middle">Evolution</text>
 </svg>

@@ -1,15 +1,38 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#0ea5e9"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#g)"/>
-  <rect x="56" y="80" width="1088" height="470" rx="24" fill="#0b1220" fill-opacity="0.45" stroke="#bae6fd" stroke-opacity="0.45"/>
-  <text x="90" y="170" fill="#e0f2fe" font-size="34" font-family="Arial">AI Paradigm Radar</text>
-  <text x="90" y="250" fill="#f8fafc" font-size="56" font-family="Arial" font-weight="700">paradigm radar prove tool orchestration roadmap</text>
-  <text x="90" y="320" fill="#bae6fd" font-size="30" font-family="Arial">Visual-first article asset (regenerated)</text>
-  <circle cx="980" cy="430" r="110" fill="#22d3ee" fill-opacity="0.28"/>
-  <circle cx="900" cy="450" r="70" fill="#7dd3fc" fill-opacity="0.35"/>
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <text x="600" y="50" fill="#e2e8f0" font-size="26" font-family="Arial" font-weight="700" text-anchor="middle">PROVE 方法未来演进路线（2026-2027）</text>
+  <line x1="100" y1="290" x2="1100" y2="290" stroke="#334155" stroke-width="3"/>
+  <circle cx="200" cy="290" r="16" fill="#1d4ed8"/>
+  <text x="200" y="340" fill="#93c5fd" font-size="14" font-family="Arial" font-weight="700" text-anchor="middle">2026 Q3</text>
+  <line x1="200" y1="274" x2="200" y2="136" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <rect x="120" y="80" width="160" height="150" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="200" y="108" fill="#60a5fa" font-size="13" font-family="Arial" font-weight="700" text-anchor="middle">现状</text>
+  <text x="200" y="128" fill="#94a3b8" font-size="12" font-family="Arial" text-anchor="middle">20 MCP 服务器</text>
+  <text x="200" y="148" fill="#94a3b8" font-size="12" font-family="Arial" text-anchor="middle">343 个工具</text>
+  <text x="200" y="168" fill="#94a3b8" font-size="12" font-family="Arial" text-anchor="middle">4 模型验证</text>
+  <text x="200" y="188" fill="#94a3b8" font-size="12" font-family="Arial" text-anchor="middle">BFCL +10.2</text>
+  <circle cx="450" cy="290" r="16" fill="#0e7490"/>
+  <text x="450" y="340" fill="#67e8f9" font-size="14" font-family="Arial" font-weight="700" text-anchor="middle">2026 Q4</text>
+  <line x1="450" y1="306" x2="450" y2="390" stroke="#0ea5e9" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <rect x="370" y="390" width="160" height="150" rx="10" fill="#1e293b" stroke="#0ea5e9" stroke-width="1"/>
+  <text x="450" y="416" fill="#38bdf8" font-size="13" font-family="Arial" font-weight="700" text-anchor="middle">扩展</text>
+  <text x="450" y="436" fill="#94a3b8" font-size="12" font-family="Arial" text-anchor="middle">50+ 服务器</text>
+  <text x="450" y="456" fill="#94a3b8" font-size="12" font-family="Arial" text-anchor="middle">垂直行业工具</text>
+  <text x="450" y="476" fill="#94a3b8" font-size="12" font-family="Arial" text-anchor="middle">自动权重调优</text>
+  <circle cx="700" cy="290" r="16" fill="#065f46"/>
+  <text x="700" y="340" fill="#6ee7b7" font-size="14" font-family="Arial" font-weight="700" text-anchor="middle">2027 H1</text>
+  <line x1="700" y1="274" x2="700" y2="136" stroke="#10b981" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <rect x="620" y="80" width="160" height="150" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="1"/>
+  <text x="700" y="108" fill="#4ade80" font-size="13" font-family="Arial" font-weight="700" text-anchor="middle">跨域迁移</text>
+  <text x="700" y="128" fill="#94a3b8" font-size="12" font-family="Arial" text-anchor="middle">工具 Schema 热更新</text>
+  <text x="700" y="148" fill="#94a3b8" font-size="12" font-family="Arial" text-anchor="middle">跨工具集迁移</text>
+  <text x="700" y="168" fill="#94a3b8" font-size="12" font-family="Arial" text-anchor="middle">轻量 Judge 融合</text>
+  <circle cx="950" cy="290" r="16" fill="#7c3aed"/>
+  <text x="950" y="340" fill="#c084fc" font-size="14" font-family="Arial" font-weight="700" text-anchor="middle">2027 H2</text>
+  <line x1="950" y1="306" x2="950" y2="390" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <rect x="870" y="390" width="160" height="150" rx="10" fill="#1e293b" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="950" y="416" fill="#a78bfa" font-size="13" font-family="Arial" font-weight="700" text-anchor="middle">自适应</text>
+  <text x="950" y="436" fill="#94a3b8" font-size="12" font-family="Arial" text-anchor="middle">在线奖励权重</text>
+  <text x="950" y="456" fill="#94a3b8" font-size="12" font-family="Arial" text-anchor="middle">实时状态监控</text>
+  <text x="950" y="476" fill="#94a3b8" font-size="12" font-family="Arial" text-anchor="middle">生产级部署</text>
 </svg>

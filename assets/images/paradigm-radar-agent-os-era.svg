@@ -1,15 +1,34 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#0ea5e9"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0f766e"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#g)"/>
-  <rect x="56" y="80" width="1088" height="470" rx="24" fill="#0b1220" fill-opacity="0.45" stroke="#bae6fd" stroke-opacity="0.45"/>
-  <text x="90" y="170" fill="#e0f2fe" font-size="34" font-family="Arial">AI Paradigm Radar</text>
-  <text x="90" y="250" fill="#f8fafc" font-size="56" font-family="Arial" font-weight="700">paradigm radar agent os era</text>
-  <text x="90" y="320" fill="#bae6fd" font-size="30" font-family="Arial">Visual-first article asset (regenerated)</text>
-  <circle cx="980" cy="430" r="110" fill="#22d3ee" fill-opacity="0.28"/>
-  <circle cx="900" cy="450" r="70" fill="#7dd3fc" fill-opacity="0.35"/>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="64" y="96" fill="#99f6e4" font-size="28" font-family="Arial" font-weight="700">AI 范式雷达</text>
+  <text x="64" y="166" fill="#f0fdfa" font-size="52" font-family="Arial" font-weight="700">Agent OS Era</text>
+  <text x="64" y="222" fill="#ccfbf1" font-size="30" font-family="Arial">WAF + OpenShell + 本地推理栈</text>
+  <text x="64" y="276" fill="#a7f3d0" font-size="22" font-family="Arial">从应用级 Agent 转向操作系统级能力编排</text>
+  <rect x="64" y="336" width="220" height="154" rx="16" fill="#0f766e"/>
+  <text x="174" y="390" fill="#ccfbf1" font-size="20" font-family="Arial" text-anchor="middle">WAF 1.0</text>
+  <text x="174" y="458" fill="#ffffff" font-size="34" font-family="Arial" font-weight="700" text-anchor="middle">OS 能力域</text>
+  <rect x="314" y="336" width="220" height="154" rx="16" fill="#1d4ed8"/>
+  <text x="424" y="390" fill="#dbeafe" font-size="20" font-family="Arial" text-anchor="middle">OpenShell</text>
+  <text x="424" y="458" fill="#ffffff" font-size="34" font-family="Arial" font-weight="700" text-anchor="middle">策略即代码</text>
+  <rect x="564" y="336" width="220" height="154" rx="16" fill="#7c3aed"/>
+  <text x="674" y="390" fill="#ede9fe" font-size="20" font-family="Arial" text-anchor="middle">RTX Spark</text>
+  <text x="674" y="458" fill="#ffffff" font-size="34" font-family="Arial" font-weight="700" text-anchor="middle">本地 Agent</text>
+  <rect x="868" y="166" width="270" height="300" rx="20" fill="#0f172a" fill-opacity="0.78"/>
+  <text x="1003" y="206" fill="#64748b" font-size="16" font-family="Arial" text-anchor="middle">范式变化</text>
+  <rect x="892" y="226" width="222" height="42" rx="8" fill="#134e4a"/>
+  <text x="1003" y="252" fill="#99f6e4" font-size="14" font-family="Arial" text-anchor="middle">应用层工具编排</text>
+  <line x1="1003" y1="268" x2="1003" y2="292" stroke="#475569" stroke-width="2"/>
+  <polygon points="996,292 1003,306 1010,292" fill="#475569"/>
+  <rect x="892" y="306" width="222" height="42" rx="8" fill="#115e59"/>
+  <text x="1003" y="332" fill="#ccfbf1" font-size="14" font-family="Arial" text-anchor="middle">操作系统原生能力</text>
+  <line x1="1003" y1="348" x2="1003" y2="372" stroke="#475569" stroke-width="2"/>
+  <polygon points="996,372 1003,386 1010,372" fill="#475569"/>
+  <rect x="892" y="386" width="222" height="42" rx="8" fill="#0f766e"/>
+  <text x="1003" y="412" fill="#ecfeff" font-size="14" font-family="Arial" text-anchor="middle">能力 + 策略 + 审计一体化</text>
 </svg>

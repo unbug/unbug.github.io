@@ -1,15 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#0ea5e9"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#g)"/>
-  <rect x="56" y="80" width="1088" height="470" rx="24" fill="#0b1220" fill-opacity="0.45" stroke="#bae6fd" stroke-opacity="0.45"/>
-  <text x="90" y="170" fill="#e0f2fe" font-size="34" font-family="Arial">AI Paradigm Radar</text>
-  <text x="90" y="250" fill="#f8fafc" font-size="56" font-family="Arial" font-weight="700">paradigm radar agent os local stack</text>
-  <text x="90" y="320" fill="#bae6fd" font-size="30" font-family="Arial">Visual-first article asset (regenerated)</text>
-  <circle cx="980" cy="430" r="110" fill="#22d3ee" fill-opacity="0.28"/>
-  <circle cx="900" cy="450" r="70" fill="#7dd3fc" fill-opacity="0.35"/>
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <text x="600" y="50" fill="#e2e8f0" font-size="26" font-family="Arial" font-weight="700" text-anchor="middle">本地 Agent 推理栈</text>
+  <rect x="180" y="92" width="840" height="450" rx="22" fill="#111827" stroke="#334155"/>
+  <text x="600" y="130" fill="#ccfbf1" font-size="22" font-family="Arial" font-weight="700" text-anchor="middle">RTX Spark 本地执行闭环</text>
+  <rect x="260" y="170" width="680" height="82" rx="14" fill="#0f766e"/>
+  <text x="600" y="204" fill="#ffffff" font-size="20" font-family="Arial" font-weight="700" text-anchor="middle">WAF Agent Runtime</text>
+  <text x="600" y="230" fill="#d1fae5" font-size="15" font-family="Arial" text-anchor="middle">接收任务，协调文件 / 网络 / UI / 进程能力</text>
+  <line x1="600" y1="252" x2="600" y2="286" stroke="#34d399" stroke-width="2"/>
+  <polygon points="592,286 600,300 608,286" fill="#34d399"/>
+  <rect x="260" y="300" width="300" height="100" rx="14" fill="#1d4ed8"/>
+  <text x="410" y="338" fill="#dbeafe" font-size="20" font-family="Arial" font-weight="700" text-anchor="middle">本地推理引擎</text>
+  <text x="410" y="366" fill="#eff6ff" font-size="15" font-family="Arial" text-anchor="middle">Qwen 3.6 35B / Ollama / vLLM</text>
+  <rect x="640" y="300" width="300" height="100" rx="14" fill="#7c3aed"/>
+  <text x="790" y="338" fill="#ede9fe" font-size="20" font-family="Arial" font-weight="700" text-anchor="middle">工具执行层</text>
+  <text x="790" y="366" fill="#f5f3ff" font-size="15" font-family="Arial" text-anchor="middle">文件、HTTP、桌面应用、进程操作</text>
+  <line x1="560" y1="350" x2="640" y2="350" stroke="#64748b" stroke-width="2"/>
+  <polygon points="640,342 654,350 640,358" fill="#64748b"/>
+  <rect x="260" y="438" width="680" height="66" rx="14" fill="#134e4a"/>
+  <text x="600" y="478" fill="#ccfbf1" font-size="18" font-family="Arial" text-anchor="middle">混合模式：本地执行低时延任务，复杂推理再按需回落云端</text>
 </svg>

@@ -1,15 +1,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#0ea5e9"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#g)"/>
-  <rect x="56" y="80" width="1088" height="470" rx="24" fill="#0b1220" fill-opacity="0.45" stroke="#bae6fd" stroke-opacity="0.45"/>
-  <text x="90" y="170" fill="#e0f2fe" font-size="34" font-family="Arial">AI Paradigm Radar</text>
-  <text x="90" y="250" fill="#f8fafc" font-size="56" font-family="Arial" font-weight="700">paradigm radar prove tool orchestration benchmark</text>
-  <text x="90" y="320" fill="#bae6fd" font-size="30" font-family="Arial">Visual-first article asset (regenerated)</text>
-  <circle cx="980" cy="430" r="110" fill="#22d3ee" fill-opacity="0.28"/>
-  <circle cx="900" cy="450" r="70" fill="#7dd3fc" fill-opacity="0.35"/>
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <text x="600" y="48" fill="#e2e8f0" font-size="26" font-family="Arial" font-weight="700" text-anchor="middle">PROVE 基准测试结果（四模型平均）</text>
+  <line x1="120" y1="80" x2="120" y2="520" stroke="#334155" stroke-width="1.5"/>
+  <line x1="120" y1="520" x2="1140" y2="520" stroke="#334155" stroke-width="1.5"/>
+  <line x1="120" y1="420" x2="1140" y2="420" stroke="#1e293b" stroke-width="1"/>
+  <text x="106" y="424" fill="#64748b" font-size="13" font-family="Arial" text-anchor="end">20</text>
+  <line x1="120" y1="320" x2="1140" y2="320" stroke="#1e293b" stroke-width="1"/>
+  <text x="106" y="324" fill="#64748b" font-size="13" font-family="Arial" text-anchor="end">40</text>
+  <line x1="120" y1="220" x2="1140" y2="220" stroke="#1e293b" stroke-width="1"/>
+  <text x="106" y="224" fill="#64748b" font-size="13" font-family="Arial" text-anchor="end">60</text>
+  <line x1="120" y1="120" x2="1140" y2="120" stroke="#1e293b" stroke-width="1"/>
+  <text x="106" y="124" fill="#64748b" font-size="13" font-family="Arial" text-anchor="end">80</text>
+  <rect x="160" y="247" width="110" height="273" rx="6" fill="#1d4ed8" fill-opacity="0.6"/>
+  <text x="215" y="239" fill="#93c5fd" font-size="13" font-family="Arial" text-anchor="middle">68.2</text>
+  <text x="215" y="552" fill="#94a3b8" font-size="13" font-family="Arial" text-anchor="middle">Baseline</text>
+  <rect x="290" y="206" width="110" height="314" rx="6" fill="#3b82f6"/>
+  <text x="345" y="198" fill="#bfdbfe" font-size="15" font-family="Arial" font-weight="700" text-anchor="middle">78.4</text>
+  <text x="345" y="552" fill="#60a5fa" font-size="13" font-family="Arial" text-anchor="middle">PROVE</text>
+  <rect x="268" y="148" width="110" height="36" rx="10" fill="#065f46"/>
+  <text x="323" y="172" fill="#6ee7b7" font-size="18" font-family="Arial" font-weight="700" text-anchor="middle">+10.2</text>
+  <text x="265" y="590" fill="#e2e8f0" font-size="17" font-family="Arial" font-weight="700" text-anchor="middle">BFCL</text>
+  <rect x="480" y="299" width="110" height="221" rx="6" fill="#0e7490" fill-opacity="0.6"/>
+  <text x="535" y="291" fill="#a5f3fc" font-size="13" font-family="Arial" text-anchor="middle">55.3</text>
+  <text x="535" y="552" fill="#94a3b8" font-size="13" font-family="Arial" text-anchor="middle">Baseline</text>
+  <rect x="610" y="272" width="110" height="248" rx="6" fill="#06b6d4"/>
+  <text x="665" y="264" fill="#cffafe" font-size="15" font-family="Arial" font-weight="700" text-anchor="middle">62.1</text>
+  <text x="665" y="552" fill="#22d3ee" font-size="13" font-family="Arial" text-anchor="middle">PROVE</text>
+  <rect x="588" y="216" width="110" height="36" rx="10" fill="#065f46"/>
+  <text x="643" y="240" fill="#6ee7b7" font-size="18" font-family="Arial" font-weight="700" text-anchor="middle">+6.8</text>
+  <text x="590" y="590" fill="#e2e8f0" font-size="17" font-family="Arial" font-weight="700" text-anchor="middle">tau2-bench</text>
+  <rect x="800" y="259" width="110" height="261" rx="6" fill="#6d28d9" fill-opacity="0.6"/>
+  <text x="855" y="251" fill="#ddd6fe" font-size="13" font-family="Arial" text-anchor="middle">65.2</text>
+  <text x="855" y="552" fill="#94a3b8" font-size="13" font-family="Arial" text-anchor="middle">Baseline</text>
+  <rect x="930" y="233" width="110" height="287" rx="6" fill="#8b5cf6"/>
+  <text x="985" y="225" fill="#ede9fe" font-size="15" font-family="Arial" font-weight="700" text-anchor="middle">71.7</text>
+  <text x="985" y="552" fill="#a78bfa" font-size="13" font-family="Arial" text-anchor="middle">PROVE</text>
+  <rect x="908" y="176" width="110" height="36" rx="10" fill="#065f46"/>
+  <text x="963" y="200" fill="#6ee7b7" font-size="18" font-family="Arial" font-weight="700" text-anchor="middle">+6.5</text>
+  <text x="990" y="590" fill="#e2e8f0" font-size="17" font-family="Arial" font-weight="700" text-anchor="middle">T-Eval</text>
 </svg>

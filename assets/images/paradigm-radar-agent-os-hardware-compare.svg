@@ -1,15 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#0ea5e9"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#g)"/>
-  <rect x="56" y="80" width="1088" height="470" rx="24" fill="#0b1220" fill-opacity="0.45" stroke="#bae6fd" stroke-opacity="0.45"/>
-  <text x="90" y="170" fill="#e0f2fe" font-size="34" font-family="Arial">AI Paradigm Radar</text>
-  <text x="90" y="250" fill="#f8fafc" font-size="56" font-family="Arial" font-weight="700">paradigm radar agent os hardware compare</text>
-  <text x="90" y="320" fill="#bae6fd" font-size="30" font-family="Arial">Visual-first article asset (regenerated)</text>
-  <circle cx="980" cy="430" r="110" fill="#22d3ee" fill-opacity="0.28"/>
-  <circle cx="900" cy="450" r="70" fill="#7dd3fc" fill-opacity="0.35"/>
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <text x="600" y="50" fill="#e2e8f0" font-size="26" font-family="Arial" font-weight="700" text-anchor="middle">个人 Agent 与企业 Agent 硬件对比</text>
+  <rect x="60" y="96" width="1080" height="470" rx="18" fill="#111827" stroke="#334155"/>
+  <line x1="600" y1="96" x2="600" y2="566" stroke="#334155"/>
+  <text x="330" y="138" fill="#99f6e4" font-size="24" font-family="Arial" font-weight="700" text-anchor="middle">RTX Spark</text>
+  <text x="870" y="138" fill="#c4b5fd" font-size="24" font-family="Arial" font-weight="700" text-anchor="middle">DGX Station</text>
+  <text x="120" y="196" fill="#64748b" font-size="14" font-family="Arial">平台定位</text>
+  <text x="330" y="196" fill="#ecfeff" font-size="16" font-family="Arial" text-anchor="middle">个人 Agent 终端</text>
+  <text x="870" y="196" fill="#f5f3ff" font-size="16" font-family="Arial" text-anchor="middle">企业级 Always-on Agent</text>
+  <text x="120" y="256" fill="#64748b" font-size="14" font-family="Arial">AI 性能</text>
+  <text x="330" y="256" fill="#ecfeff" font-size="16" font-family="Arial" text-anchor="middle">1 PFLOP</text>
+  <text x="870" y="256" fill="#f5f3ff" font-size="16" font-family="Arial" text-anchor="middle">20 PFLOP FP4</text>
+  <text x="120" y="316" fill="#64748b" font-size="14" font-family="Arial">内存</text>
+  <text x="330" y="316" fill="#ecfeff" font-size="16" font-family="Arial" text-anchor="middle">128GB 统一内存</text>
+  <text x="870" y="316" fill="#f5f3ff" font-size="16" font-family="Arial" text-anchor="middle">748GB 相联内存</text>
+  <text x="120" y="376" fill="#64748b" font-size="14" font-family="Arial">适用模型</text>
+  <text x="330" y="376" fill="#ecfeff" font-size="16" font-family="Arial" text-anchor="middle">35B - 70B</text>
+  <text x="870" y="376" fill="#f5f3ff" font-size="16" font-family="Arial" text-anchor="middle">万亿参数级</text>
+  <text x="120" y="436" fill="#64748b" font-size="14" font-family="Arial">运行方式</text>
+  <text x="330" y="436" fill="#ecfeff" font-size="16" font-family="Arial" text-anchor="middle">本地低时延 / 全天候电池</text>
+  <text x="870" y="436" fill="#f5f3ff" font-size="16" font-family="Arial" text-anchor="middle">7x24 企业连续任务</text>
+  <rect x="156" y="478" width="348" height="52" rx="10" fill="#134e4a"/>
+  <text x="330" y="511" fill="#ccfbf1" font-size="16" font-family="Arial" text-anchor="middle">适合隐私敏感、本地优先 Agent</text>
+  <rect x="696" y="478" width="348" height="52" rx="10" fill="#4c1d95"/>
+  <text x="870" y="511" fill="#ede9fe" font-size="16" font-family="Arial" text-anchor="middle">适合企业规模化和重负载推理</text>
 </svg>

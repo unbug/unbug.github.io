@@ -1,15 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#0ea5e9"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#g)"/>
-  <rect x="56" y="80" width="1088" height="470" rx="24" fill="#0b1220" fill-opacity="0.45" stroke="#bae6fd" stroke-opacity="0.45"/>
-  <text x="90" y="170" fill="#e0f2fe" font-size="34" font-family="Arial">AI Paradigm Radar</text>
-  <text x="90" y="250" fill="#f8fafc" font-size="56" font-family="Arial" font-weight="700">paradigm radar agent os paradigm shift</text>
-  <text x="90" y="320" fill="#bae6fd" font-size="30" font-family="Arial">Visual-first article asset (regenerated)</text>
-  <circle cx="980" cy="430" r="110" fill="#22d3ee" fill-opacity="0.28"/>
-  <circle cx="900" cy="450" r="70" fill="#7dd3fc" fill-opacity="0.35"/>
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <text x="600" y="50" fill="#e2e8f0" font-size="26" font-family="Arial" font-weight="700" text-anchor="middle">从应用级 Agent 到 Agent OS 的范式转移</text>
+  <rect x="60" y="100" width="460" height="420" rx="18" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="290" y="138" fill="#93c5fd" font-size="22" font-family="Arial" font-weight="700" text-anchor="middle">旧范式：应用级 Agent</text>
+  <rect x="130" y="180" width="320" height="52" rx="10" fill="#1d4ed8"/>
+  <text x="290" y="214" fill="#ffffff" font-size="18" font-family="Arial" text-anchor="middle">用户 / 对话层</text>
+  <line x1="290" y1="232" x2="290" y2="264" stroke="#60a5fa" stroke-width="2"/>
+  <polygon points="282,264 290,278 298,264" fill="#60a5fa"/>
+  <rect x="130" y="278" width="320" height="52" rx="10" fill="#2563eb"/>
+  <text x="290" y="312" fill="#ffffff" font-size="18" font-family="Arial" text-anchor="middle">Agent 框架 / 工具封装层</text>
+  <line x1="290" y1="330" x2="290" y2="362" stroke="#60a5fa" stroke-width="2"/>
+  <polygon points="282,362 290,376 298,362" fill="#60a5fa"/>
+  <rect x="130" y="376" width="320" height="52" rx="10" fill="#1e40af"/>
+  <text x="290" y="410" fill="#ffffff" font-size="18" font-family="Arial" text-anchor="middle">操作系统 / 外部 API</text>
+  <text x="290" y="470" fill="#64748b" font-size="14" font-family="Arial" text-anchor="middle">特点：胶水层多，权限与上下文来回传递</text>
+  <rect x="680" y="100" width="460" height="420" rx="18" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+  <text x="910" y="138" fill="#6ee7b7" font-size="22" font-family="Arial" font-weight="700" text-anchor="middle">新范式：Agent OS</text>
+  <rect x="750" y="180" width="320" height="52" rx="10" fill="#0f766e"/>
+  <text x="910" y="214" fill="#ffffff" font-size="18" font-family="Arial" text-anchor="middle">用户 / 任务意图</text>
+  <line x1="910" y1="232" x2="910" y2="264" stroke="#34d399" stroke-width="2"/>
+  <polygon points="902,264 910,278 918,264" fill="#34d399"/>
+  <rect x="750" y="278" width="320" height="52" rx="10" fill="#115e59"/>
+  <text x="910" y="312" fill="#ffffff" font-size="18" font-family="Arial" text-anchor="middle">OS 原生 Agent Runtime</text>
+  <line x1="910" y1="330" x2="910" y2="362" stroke="#34d399" stroke-width="2"/>
+  <polygon points="902,362 910,376 918,362" fill="#34d399"/>
+  <rect x="722" y="376" width="376" height="76" rx="10" fill="#064e3b"/>
+  <text x="910" y="408" fill="#ffffff" font-size="18" font-family="Arial" text-anchor="middle">文件 / 网络 / UI / 进程 四大能力域</text>
+  <text x="910" y="432" fill="#a7f3d0" font-size="14" font-family="Arial" text-anchor="middle">能力暴露前移，减少中间封装层</text>
+  <text x="910" y="488" fill="#64748b" font-size="14" font-family="Arial" text-anchor="middle">特点：能力、策略、审计收敛到同一系统层</text>
 </svg>

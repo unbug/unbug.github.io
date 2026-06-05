@@ -1,15 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#0ea5e9"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#g)"/>
-  <rect x="56" y="80" width="1088" height="470" rx="24" fill="#0b1220" fill-opacity="0.45" stroke="#bae6fd" stroke-opacity="0.45"/>
-  <text x="90" y="170" fill="#e0f2fe" font-size="34" font-family="Arial">AI Paradigm Radar</text>
-  <text x="90" y="250" fill="#f8fafc" font-size="56" font-family="Arial" font-weight="700">paradigm radar prove tool orchestration scatter</text>
-  <text x="90" y="320" fill="#bae6fd" font-size="30" font-family="Arial">Visual-first article asset (regenerated)</text>
-  <circle cx="980" cy="430" r="110" fill="#22d3ee" fill-opacity="0.28"/>
-  <circle cx="900" cy="450" r="70" fill="#7dd3fc" fill-opacity="0.35"/>
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <text x="600" y="46" fill="#e2e8f0" font-size="24" font-family="Arial" font-weight="700" text-anchor="middle">模型参数量 vs BFCL 提升幅度</text>
+  <line x1="120" y1="80" x2="120" y2="500" stroke="#334155" stroke-width="1.5"/>
+  <line x1="120" y1="500" x2="1100" y2="500" stroke="#334155" stroke-width="1.5"/>
+  <text x="610" y="560" fill="#94a3b8" font-size="16" font-family="Arial" text-anchor="middle">模型参数量（B）</text>
+  <line x1="120" y1="400" x2="1100" y2="400" stroke="#1e293b" stroke-width="1"/>
+  <text x="106" y="404" fill="#64748b" font-size="12" font-family="Arial" text-anchor="end">+5</text>
+  <line x1="120" y1="300" x2="1100" y2="300" stroke="#1e293b" stroke-width="1"/>
+  <text x="106" y="304" fill="#64748b" font-size="12" font-family="Arial" text-anchor="end">+10</text>
+  <line x1="120" y1="200" x2="1100" y2="200" stroke="#1e293b" stroke-width="1"/>
+  <text x="106" y="204" fill="#64748b" font-size="12" font-family="Arial" text-anchor="end">+15</text>
+  <text x="270" y="530" fill="#64748b" font-size="12" font-family="Arial" text-anchor="middle">4B</text>
+  <text x="470" y="530" fill="#64748b" font-size="12" font-family="Arial" text-anchor="middle">7B</text>
+  <text x="670" y="530" fill="#64748b" font-size="12" font-family="Arial" text-anchor="middle">8B</text>
+  <circle cx="270" cy="288" r="28" fill="#3b82f6" fill-opacity="0.9"/>
+  <text x="270" y="294" fill="#fff" font-size="13" font-family="Arial" text-anchor="middle">+11.8</text>
+  <text x="270" y="258" fill="#93c5fd" font-size="13" font-family="Arial" text-anchor="middle">Qwen3-4B</text>
+  <circle cx="470" cy="310" r="28" fill="#06b6d4" fill-opacity="0.9"/>
+  <text x="470" y="316" fill="#fff" font-size="13" font-family="Arial" text-anchor="middle">+10.5</text>
+  <text x="470" y="280" fill="#a5f3fc" font-size="13" font-family="Arial" text-anchor="middle">Qwen2.5-7B</text>
+  <circle cx="690" cy="326" r="28" fill="#8b5cf6" fill-opacity="0.9"/>
+  <text x="690" y="332" fill="#fff" font-size="13" font-family="Arial" text-anchor="middle">+9.6</text>
+  <text x="690" y="296" fill="#c4b5fd" font-size="13" font-family="Arial" text-anchor="middle">Qwen3-8B</text>
+  <circle cx="660" cy="340" r="28" fill="#f59e0b" fill-opacity="0.9"/>
+  <text x="660" y="346" fill="#fff" font-size="13" font-family="Arial" text-anchor="middle">+9.0</text>
+  <text x="660" y="376" fill="#fcd34d" font-size="13" font-family="Arial" text-anchor="middle">Granite-4.1-8B</text>
+  <line x1="200" y1="274" x2="820" y2="356" stroke="#10b981" stroke-width="2" stroke-dasharray="8,5"/>
+  <text x="878" y="352" fill="#10b981" font-size="14" font-family="Arial">小模型收益更大</text>
+  <rect x="140" y="430" width="680" height="46" rx="10" fill="#0c2a1a"/>
+  <text x="480" y="459" fill="#6ee7b7" font-size="14" font-family="Arial" text-anchor="middle">关键发现：参数越少，相对提升越明显，高质量数据对小模型价值最大</text>
 </svg>

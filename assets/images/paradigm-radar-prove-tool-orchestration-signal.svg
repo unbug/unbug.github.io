@@ -1,15 +1,47 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#0ea5e9"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#g)"/>
-  <rect x="56" y="80" width="1088" height="470" rx="24" fill="#0b1220" fill-opacity="0.45" stroke="#bae6fd" stroke-opacity="0.45"/>
-  <text x="90" y="170" fill="#e0f2fe" font-size="34" font-family="Arial">AI Paradigm Radar</text>
-  <text x="90" y="250" fill="#f8fafc" font-size="56" font-family="Arial" font-weight="700">paradigm radar prove tool orchestration signal</text>
-  <text x="90" y="320" fill="#bae6fd" font-size="30" font-family="Arial">Visual-first article asset (regenerated)</text>
-  <circle cx="980" cy="430" r="110" fill="#22d3ee" fill-opacity="0.28"/>
-  <circle cx="900" cy="450" r="70" fill="#7dd3fc" fill-opacity="0.35"/>
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <text x="600" y="48" fill="#e2e8f0" font-size="26" font-family="Arial" font-weight="700" text-anchor="middle">三种训练方案的奖励信号对比</text>
+  <rect x="40" y="76" width="340" height="50" rx="10" fill="#065f46"/>
+  <text x="210" y="109" fill="#6ee7b7" font-size="20" font-family="Arial" font-weight="700" text-anchor="middle">PROVE</text>
+  <rect x="430" y="76" width="340" height="50" rx="10" fill="#1e3a5f"/>
+  <text x="600" y="109" fill="#93c5fd" font-size="20" font-family="Arial" font-weight="700" text-anchor="middle">Judge-based RL</text>
+  <rect x="820" y="76" width="340" height="50" rx="10" fill="#3b1f5e"/>
+  <text x="990" y="109" fill="#c084fc" font-size="20" font-family="Arial" font-weight="700" text-anchor="middle">SFT</text>
+  <text x="20" y="170" fill="#94a3b8" font-size="14" font-family="Arial">奖励来源</text>
+  <text x="20" y="246" fill="#94a3b8" font-size="14" font-family="Arial">奖励粒度</text>
+  <text x="20" y="322" fill="#94a3b8" font-size="14" font-family="Arial">数据量</text>
+  <text x="20" y="398" fill="#94a3b8" font-size="14" font-family="Arial">部署一致性</text>
+  <text x="20" y="474" fill="#94a3b8" font-size="14" font-family="Arial">计算成本</text>
+  <rect x="40" y="146" width="340" height="48" rx="8" fill="#064e3b"/>
+  <text x="210" y="176" fill="#a7f3d0" font-size="13" font-family="Arial" text-anchor="middle">工具执行状态（程序化）</text>
+  <rect x="40" y="222" width="340" height="48" rx="8" fill="#064e3b"/>
+  <text x="210" y="252" fill="#a7f3d0" font-size="13" font-family="Arial" text-anchor="middle">每步即时细粒度</text>
+  <rect x="40" y="298" width="340" height="48" rx="8" fill="#064e3b"/>
+  <text x="210" y="328" fill="#a7f3d0" font-size="13" font-family="Arial" text-anchor="middle">13K 合成数据</text>
+  <rect x="40" y="374" width="340" height="48" rx="8" fill="#064e3b"/>
+  <text x="210" y="404" fill="#a7f3d0" font-size="13" font-family="Arial" text-anchor="middle">高：状态感知，无分布偏移</text>
+  <rect x="40" y="450" width="340" height="48" rx="8" fill="#064e3b"/>
+  <text x="210" y="480" fill="#a7f3d0" font-size="13" font-family="Arial" text-anchor="middle">中：GRPO 训练成本</text>
+  <rect x="430" y="146" width="340" height="48" rx="8" fill="#1e3a5f"/>
+  <text x="600" y="176" fill="#93c5fd" font-size="13" font-family="Arial" text-anchor="middle">外部 Judge 大模型</text>
+  <rect x="430" y="222" width="340" height="48" rx="8" fill="#1e3a5f"/>
+  <text x="600" y="252" fill="#93c5fd" font-size="13" font-family="Arial" text-anchor="middle">整体粗粒度，受 Judge 偏好影响</text>
+  <rect x="430" y="298" width="340" height="48" rx="8" fill="#1e3a5f"/>
+  <text x="600" y="328" fill="#93c5fd" font-size="13" font-family="Arial" text-anchor="middle">依赖 Judge 反馈量</text>
+  <rect x="430" y="374" width="340" height="48" rx="8" fill="#1e3a5f"/>
+  <text x="600" y="404" fill="#93c5fd" font-size="13" font-family="Arial" text-anchor="middle">中：Judge 自身存在偏差</text>
+  <rect x="430" y="450" width="340" height="48" rx="8" fill="#1e3a5f"/>
+  <text x="600" y="480" fill="#93c5fd" font-size="13" font-family="Arial" text-anchor="middle">高：持续 Judge 推理开销</text>
+  <rect x="820" y="146" width="340" height="48" rx="8" fill="#3b1f5e"/>
+  <text x="990" y="176" fill="#c084fc" font-size="13" font-family="Arial" text-anchor="middle">人工标注数据</text>
+  <rect x="820" y="222" width="340" height="48" rx="8" fill="#3b1f5e"/>
+  <text x="990" y="252" fill="#c084fc" font-size="13" font-family="Arial" text-anchor="middle">整体粗粒度，静态标注</text>
+  <rect x="820" y="298" width="340" height="48" rx="8" fill="#3b1f5e"/>
+  <text x="990" y="328" fill="#c084fc" font-size="13" font-family="Arial" text-anchor="middle">受限于标注成本</text>
+  <rect x="820" y="374" width="340" height="48" rx="8" fill="#3b1f5e"/>
+  <text x="990" y="404" fill="#c084fc" font-size="13" font-family="Arial" text-anchor="middle">低：静态数据，容易过时</text>
+  <rect x="820" y="450" width="340" height="48" rx="8" fill="#3b1f5e"/>
+  <text x="990" y="480" fill="#c084fc" font-size="13" font-family="Arial" text-anchor="middle">低：一次性监督训练</text>
+  <rect x="40" y="546" width="340" height="40" rx="8" fill="#022c22"/>
+  <text x="210" y="571" fill="#10b981" font-size="15" font-family="Arial" font-weight="700" text-anchor="middle">执行对齐，无 Judge 依赖</text>
 </svg>

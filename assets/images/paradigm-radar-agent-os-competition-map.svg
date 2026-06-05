@@ -1,15 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#0ea5e9"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#g)"/>
-  <rect x="56" y="80" width="1088" height="470" rx="24" fill="#0b1220" fill-opacity="0.45" stroke="#bae6fd" stroke-opacity="0.45"/>
-  <text x="90" y="170" fill="#e0f2fe" font-size="34" font-family="Arial">AI Paradigm Radar</text>
-  <text x="90" y="250" fill="#f8fafc" font-size="56" font-family="Arial" font-weight="700">paradigm radar agent os competition map</text>
-  <text x="90" y="320" fill="#bae6fd" font-size="30" font-family="Arial">Visual-first article asset (regenerated)</text>
-  <circle cx="980" cy="430" r="110" fill="#22d3ee" fill-opacity="0.28"/>
-  <circle cx="900" cy="450" r="70" fill="#7dd3fc" fill-opacity="0.35"/>
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <text x="600" y="50" fill="#e2e8f0" font-size="26" font-family="Arial" font-weight="700" text-anchor="middle">Agent 生态竞争格局</text>
+  <rect x="70" y="110" width="300" height="400" rx="18" fill="#1e293b" stroke="#10b981"/>
+  <text x="220" y="146" fill="#6ee7b7" font-size="22" font-family="Arial" font-weight="700" text-anchor="middle">操作系统级</text>
+  <rect x="108" y="188" width="224" height="52" rx="10" fill="#065f46"/>
+  <text x="220" y="222" fill="#ffffff" font-size="18" font-family="Arial" text-anchor="middle">WAF 1.0</text>
+  <rect x="108" y="266" width="224" height="52" rx="10" fill="#0f766e"/>
+  <text x="220" y="300" fill="#ffffff" font-size="18" font-family="Arial" text-anchor="middle">OpenShell</text>
+  <text x="220" y="374" fill="#64748b" font-size="14" font-family="Arial" text-anchor="middle">系统能力前移</text>
+  <text x="220" y="396" fill="#64748b" font-size="14" font-family="Arial" text-anchor="middle">策略和审计收敛</text>
+  <rect x="450" y="110" width="300" height="400" rx="18" fill="#1e293b" stroke="#3b82f6"/>
+  <text x="600" y="146" fill="#93c5fd" font-size="22" font-family="Arial" font-weight="700" text-anchor="middle">应用级框架</text>
+  <rect x="488" y="188" width="224" height="52" rx="10" fill="#1d4ed8"/>
+  <text x="600" y="222" fill="#ffffff" font-size="18" font-family="Arial" text-anchor="middle">LangGraph / AutoGen</text>
+  <rect x="488" y="266" width="224" height="52" rx="10" fill="#2563eb"/>
+  <text x="600" y="300" fill="#ffffff" font-size="18" font-family="Arial" text-anchor="middle">Copilot SDK</text>
+  <text x="600" y="374" fill="#64748b" font-size="14" font-family="Arial" text-anchor="middle">仍然适合业务编排</text>
+  <text x="600" y="396" fill="#64748b" font-size="14" font-family="Arial" text-anchor="middle">但逐渐被 OS 能力替代一部分胶水层</text>
+  <rect x="830" y="110" width="300" height="400" rx="18" fill="#1e293b" stroke="#a855f7"/>
+  <text x="980" y="146" fill="#c084fc" font-size="22" font-family="Arial" font-weight="700" text-anchor="middle">云端服务</text>
+  <rect x="868" y="188" width="224" height="52" rx="10" fill="#7c3aed"/>
+  <text x="980" y="222" fill="#ffffff" font-size="18" font-family="Arial" text-anchor="middle">Claude / GPT API</text>
+  <rect x="868" y="266" width="224" height="52" rx="10" fill="#6d28d9"/>
+  <text x="980" y="300" fill="#ffffff" font-size="18" font-family="Arial" text-anchor="middle">超大模型推理</text>
+  <text x="980" y="374" fill="#64748b" font-size="14" font-family="Arial" text-anchor="middle">复杂任务质量仍然领先</text>
+  <text x="980" y="396" fill="#64748b" font-size="14" font-family="Arial" text-anchor="middle">与本地 Agent 形成混合架构</text>
 </svg>

@@ -1,15 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#0ea5e9"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#g)"/>
-  <rect x="56" y="80" width="1088" height="470" rx="24" fill="#0b1220" fill-opacity="0.45" stroke="#bae6fd" stroke-opacity="0.45"/>
-  <text x="90" y="170" fill="#e0f2fe" font-size="34" font-family="Arial">AI Paradigm Radar</text>
-  <text x="90" y="250" fill="#f8fafc" font-size="56" font-family="Arial" font-weight="700">paradigm radar agent os openshell flow</text>
-  <text x="90" y="320" fill="#bae6fd" font-size="30" font-family="Arial">Visual-first article asset (regenerated)</text>
-  <circle cx="980" cy="430" r="110" fill="#22d3ee" fill-opacity="0.28"/>
-  <circle cx="900" cy="450" r="70" fill="#7dd3fc" fill-opacity="0.35"/>
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <text x="600" y="50" fill="#e2e8f0" font-size="26" font-family="Arial" font-weight="700" text-anchor="middle">OpenShell 策略执行流</text>
+  <rect x="70" y="220" width="220" height="96" rx="14" fill="#1d4ed8"/>
+  <text x="180" y="258" fill="#dbeafe" font-size="20" font-family="Arial" font-weight="700" text-anchor="middle">策略仓库</text>
+  <text x="180" y="286" fill="#eff6ff" font-size="15" font-family="Arial" text-anchor="middle">Git 中版本化的规则文件</text>
+  <line x1="290" y1="268" x2="406" y2="268" stroke="#60a5fa" stroke-width="3"/>
+  <polygon points="406,260 422,268 406,276" fill="#60a5fa"/>
+  <rect x="422" y="220" width="220" height="96" rx="14" fill="#0f766e"/>
+  <text x="532" y="258" fill="#ccfbf1" font-size="20" font-family="Arial" font-weight="700" text-anchor="middle">策略引擎</text>
+  <text x="532" y="286" fill="#ecfeff" font-size="15" font-family="Arial" text-anchor="middle">评估文件、网络、进程请求</text>
+  <line x1="642" y1="268" x2="758" y2="268" stroke="#34d399" stroke-width="3"/>
+  <polygon points="758,260 774,268 758,276" fill="#34d399"/>
+  <rect x="774" y="220" width="220" height="96" rx="14" fill="#7c3aed"/>
+  <text x="884" y="258" fill="#ede9fe" font-size="20" font-family="Arial" font-weight="700" text-anchor="middle">Agent 沙箱</text>
+  <text x="884" y="286" fill="#f5f3ff" font-size="15" font-family="Arial" text-anchor="middle">受控执行文件 / UI / 网络调用</text>
+  <line x1="532" y1="316" x2="532" y2="410" stroke="#475569" stroke-width="2"/>
+  <polygon points="524,410 532,424 540,410" fill="#475569"/>
+  <rect x="392" y="424" width="280" height="92" rx="14" fill="#111827" stroke="#10b981"/>
+  <text x="532" y="460" fill="#6ee7b7" font-size="20" font-family="Arial" font-weight="700" text-anchor="middle">审计日志</text>
+  <text x="532" y="488" fill="#94a3b8" font-size="15" font-family="Arial" text-anchor="middle">记录 allow / deny 结果，支持回放与回归测试</text>
+  <text x="600" y="572" fill="#64748b" font-size="14" font-family="Arial" text-anchor="middle">策略定义、执行约束和审计追踪被收敛到同一工程流程</text>
 </svg>

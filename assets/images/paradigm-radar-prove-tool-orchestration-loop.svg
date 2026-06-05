@@ -1,15 +1,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#0ea5e9"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#g)"/>
-  <rect x="56" y="80" width="1088" height="470" rx="24" fill="#0b1220" fill-opacity="0.45" stroke="#bae6fd" stroke-opacity="0.45"/>
-  <text x="90" y="170" fill="#e0f2fe" font-size="34" font-family="Arial">AI Paradigm Radar</text>
-  <text x="90" y="250" fill="#f8fafc" font-size="56" font-family="Arial" font-weight="700">paradigm radar prove tool orchestration loop</text>
-  <text x="90" y="320" fill="#bae6fd" font-size="30" font-family="Arial">Visual-first article asset (regenerated)</text>
-  <circle cx="980" cy="430" r="110" fill="#22d3ee" fill-opacity="0.28"/>
-  <circle cx="900" cy="450" r="70" fill="#7dd3fc" fill-opacity="0.35"/>
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <text x="600" y="48" fill="#e2e8f0" font-size="26" font-family="Arial" font-weight="700" text-anchor="middle">多步工具调用的失败链</text>
+  <rect x="40" y="112" width="150" height="80" rx="12" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="115" y="149" fill="#93c5fd" font-size="15" font-family="Arial" text-anchor="middle">Step 1</text>
+  <text x="115" y="171" fill="#64748b" font-size="13" font-family="Arial" text-anchor="middle">Tool A ok</text>
+  <line x1="190" y1="152" x2="250" y2="152" stroke="#3b82f6" stroke-width="2"/>
+  <polygon points="250,146 264,152 250,158" fill="#3b82f6"/>
+  <rect x="264" y="112" width="150" height="80" rx="12" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="339" y="149" fill="#93c5fd" font-size="15" font-family="Arial" text-anchor="middle">Step 2</text>
+  <text x="339" y="171" fill="#64748b" font-size="13" font-family="Arial" text-anchor="middle">Tool B ok</text>
+  <line x1="414" y1="152" x2="474" y2="152" stroke="#3b82f6" stroke-width="2"/>
+  <polygon points="474,146 488,152 474,158" fill="#3b82f6"/>
+  <rect x="488" y="112" width="150" height="80" rx="12" fill="#7f1d1d" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="563" y="149" fill="#fca5a5" font-size="15" font-family="Arial" text-anchor="middle">Step 3</text>
+  <text x="563" y="171" fill="#f87171" font-size="13" font-family="Arial" text-anchor="middle">Tool C FAIL</text>
+  <line x1="638" y1="152" x2="698" y2="152" stroke="#ef4444" stroke-width="2" stroke-dasharray="6,4"/>
+  <polygon points="698,146 712,152 698,158" fill="#ef4444"/>
+  <rect x="712" y="112" width="150" height="80" rx="12" fill="#450a0a" stroke="#b91c1c" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="787" y="149" fill="#9ca3af" font-size="15" font-family="Arial" text-anchor="middle">Step 4</text>
+  <text x="787" y="171" fill="#9ca3af" font-size="13" font-family="Arial" text-anchor="middle">偏移...</text>
+  <line x1="862" y1="152" x2="922" y2="152" stroke="#6b7280" stroke-width="2" stroke-dasharray="6,4"/>
+  <polygon points="922,146 936,152 922,158" fill="#6b7280"/>
+  <rect x="936" y="112" width="204" height="80" rx="12" fill="#450a0a" stroke="#b91c1c" stroke-width="1"/>
+  <text x="1038" y="149" fill="#fca5a5" font-size="15" font-family="Arial" text-anchor="middle">任务失败</text>
+  <text x="1038" y="171" fill="#9ca3af" font-size="13" font-family="Arial" text-anchor="middle">错误累积</text>
+  <rect x="40" y="252" width="340" height="138" rx="12" fill="#1e293b" stroke="#ef4444" stroke-width="1"/>
+  <text x="60" y="285" fill="#f87171" font-size="18" font-family="Arial" font-weight="700">1 上下文爆炸</text>
+  <text x="60" y="311" fill="#94a3b8" font-size="14" font-family="Arial">每步 observation 占用 token</text>
+  <text x="60" y="335" fill="#94a3b8" font-size="14" font-family="Arial">后续推理质量持续下降</text>
+  <text x="60" y="359" fill="#64748b" font-size="13" font-family="Arial">注意力窗口被历史挤满</text>
+  <rect x="420" y="252" width="340" height="138" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/>
+  <text x="440" y="285" fill="#fbbf24" font-size="18" font-family="Arial" font-weight="700">2 状态迷失</text>
+  <text x="440" y="311" fill="#94a3b8" font-size="14" font-family="Arial">需记住中间调用结果</text>
+  <text x="440" y="335" fill="#94a3b8" font-size="14" font-family="Arial">注意力机制无法长期维持</text>
+  <text x="440" y="359" fill="#64748b" font-size="13" font-family="Arial">长链依赖断裂</text>
+  <rect x="800" y="252" width="360" height="138" rx="12" fill="#1e293b" stroke="#a855f7" stroke-width="1"/>
+  <text x="820" y="285" fill="#c084fc" font-size="18" font-family="Arial" font-weight="700">3 错误累积</text>
+  <text x="820" y="311" fill="#94a3b8" font-size="14" font-family="Arial">前置步骤错误无法纠正</text>
+  <text x="820" y="335" fill="#94a3b8" font-size="14" font-family="Arial">后续路径持续偏移</text>
+  <text x="820" y="359" fill="#64748b" font-size="13" font-family="Arial">雪球效应放大损失</text>
+  <rect x="180" y="438" width="840" height="134" rx="16" fill="#0c2a1a" stroke="#10b981" stroke-width="2"/>
+  <text x="600" y="476" fill="#10b981" font-size="20" font-family="Arial" font-weight="700" text-anchor="middle">PROVE 的解法：每步即时可执行性验证</text>
+  <text x="600" y="510" fill="#6ee7b7" font-size="16" font-family="Arial" text-anchor="middle">Session 状态隔离 · 依赖图约束 · 每步程序化奖励</text>
+  <text x="600" y="546" fill="#475569" font-size="14" font-family="Arial" text-anchor="middle">将语义看起来正确替换为当前环境中真实可跑通</text>
 </svg>
