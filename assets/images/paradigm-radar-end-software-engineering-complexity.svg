@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1"/>
+    </linearGradient>
+    <marker id="arrow-end" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+    <marker id="arrow-y" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="10 0, 0 3.5, 10 7" fill="#2c3e50"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="480" fill="url(#bgGrad)" rx="8"/>
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" font-size="18" font-weight="bold" fill="#2c3e50">复杂度转移的三条曲线</text>
+  <text x="400" y="52" text-anchor="middle" font-size="11" fill="#7f8c8d">基于 Zhenfeng Cao, arXiv:2606.05608 (The End of Software Engineering)</text>
+
+  <!-- Chart area -->
+  <rect x="80" y="70" width="640" height="320" fill="#ffffff" stroke="#bdc3c7" stroke-width="1.5" rx="4"/>
+
+  <!-- Y axis label -->
+  <text x="28" y="235" text-anchor="middle" font-size="11" font-weight="bold" fill="#2c3e50" transform="rotate(-90,28,235)">复杂度位置</text>
+
+  <!-- Y axis ticks -->
+  <line x1="80" y1="110" x2="720" y2="110" stroke="#ecf0f1" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="74" y="114" text-anchor="end" font-size="10" fill="#7f8c8d">用户侧</text>
+
+  <line x1="80" y1="230" x2="720" y2="230" stroke="#ecf0f1" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="74" y="234" text-anchor="end" font-size="10" fill="#7f8c8d">厂商侧</text>
+
+  <line x1="80" y1="350" x2="720" y2="350" stroke="#ecf0f1" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="74" y="354" text-anchor="end" font-size="10" fill="#7f8c8d">Agent侧</text>
+
+  <!-- X axis -->
+  <line x1="80" y1="390" x2="720" y2="390" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arrow-end)"/>
+  <text x="200" y="410" text-anchor="middle" font-size="10" fill="#7f8c8d">过去</text>
+  <text x="400" y="410" text-anchor="middle" font-size="10" fill="#7f8c8d">现在</text>
+  <text x="640" y="410" text-anchor="middle" font-size="10" fill="#7f8c8d">未来</text>
+  <text x="400" y="430" text-anchor="middle" font-size="11" font-weight="bold" fill="#2c3e50">时间 →</text>
+
+  <!-- Curve 1: Licensed Software → SaaS (user side → vendor side) -->
+  <path d="M 100 130 Q 260 130, 400 230 Q 540 300, 700 310" fill="none" stroke="#e74c3c" stroke-width="2.5"/>
+  <circle cx="100" cy="130" r="4" fill="#e74c3c"/>
+  <text x="105" y="122" font-size="10" fill="#e74c3c" font-weight="bold">Licensed Software (复杂度在用户侧)</text>
+  <circle cx="700" cy="310" r="4" fill="#e74c3c"/>
+  <text x="560" y="305" font-size="10" fill="#e74c3c">SaaS</text>
+
+  <!-- Curve 2: SaaS → AaaS (vendor side → Agent side) -->
+  <path d="M 100 240 Q 280 240, 430 290 Q 560 340, 700 350" fill="none" stroke="#f39c12" stroke-width="2.5"/>
+  <circle cx="100" cy="240" r="4" fill="#f39c12"/>
+  <text x="105" y="235" font-size="10" fill="#f39c12" font-weight="bold">SaaS (复杂度在厂商侧)</text>
+  <circle cx="700" cy="350" r="4" fill="#f39c12"/>
+  <text x="560" y="370" font-size="10" fill="#f39c12">AaaS (Agent-as-a-Service)</text>
+
+  <!-- Curve 3: Agentic Engineering future (dashed) -->
+  <path d="M 400 300 Q 520 340, 660 355" fill="none" stroke="#2ecc71" stroke-width="2.5" stroke-dasharray="8,4"/>
+  <circle cx="400" cy="300" r="4" fill="#2ecc71"/>
+  <text x="405" y="293" font-size="10" fill="#2ecc71" font-weight="bold">Agentic Engineering 起点</text>
+  <text x="620" y="345" font-size="10" fill="#2ecc71">（预测）</text>
+
+  <!-- Transfer arrows -->
+  <path d="M 330 175 L 360 205" stroke="#e74c3c" stroke-width="1.5" marker-end="url(#arrow-end)"/>
+  <text x="290" y="170" font-size="9" fill="#e74c3c">第一次转移</text>
+  <text x="290" y="182" font-size="9" fill="#e74c3c">部署/运维复杂度</text>
+  <text x="290" y="194" font-size="9" fill="#e74c3c">从用户→厂商</text>
+
+  <path d="M 510 265 L 540 285" stroke="#f39c12" stroke-width="1.5" marker-end="url(#arrow-end)"/>
+  <text x="440" y="260" font-size="9" fill="#f39c12">第二次转移</text>
+  <text x="440" y="272" font-size="9" fill="#f39c12">编码决策权</text>
+  <text x="440" y="284" font-size="9" fill="#f39c12">从厂商→Agent</text>
+
+  <!-- Legend -->
+  <line x1="100" y1="460" x2="130" y2="460" stroke="#e74c3c" stroke-width="2.5"/>
+  <text x="135" y="464" font-size="10" fill="#2c3e50">第一次转移 (Licensed→SaaS)</text>
+
+  <line x1="310" y1="460" x2="340" y2="460" stroke="#f39c12" stroke-width="2.5"/>
+  <text x="345" y="464" font-size="10" fill="#2c3e50">第二次转移 (SaaS→AaaS)</text>
+
+  <line x1="540" y1="460" x2="570" y2="460" stroke="#2ecc71" stroke-width="2.5" stroke-dasharray="6,3"/>
+  <text x="575" y="464" font-size="10" fill="#2c3e50">第三次转移（预测）</text>
+
+  <!-- Key insight -->
+  <rect x="130" y="438" width="540" height="0" fill="none"/>
+</svg>
