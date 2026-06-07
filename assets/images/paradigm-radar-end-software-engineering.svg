@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="700" fill="url(#bgGrad)" rx="8"/>
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" font-size="18" font-weight="bold" fill="#2c3e50">传统软件工程 vs Agentic 系统的核心差异</text>
+  <text x="400" y="52" text-anchor="middle" font-size="11" fill="#7f8c8d">基于 Zhenfeng Cao, arXiv:2606.05608 (The End of Software Engineering)</text>
+
+  <!-- ===== TOP HALF: Comparison Table ===== -->
+  <rect x="40" y="70" width="720" height="230" fill="#ffffff" stroke="#bdc3c7" stroke-width="1.5" rx="4"/>
+
+  <!-- Table header -->
+  <rect x="40" y="70" width="720" height="36" fill="#34495e" rx="4"/>
+  <text x="400" y="93" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">核心差异对比</text>
+
+  <!-- Column headers -->
+  <rect x="40" y="106" width="720" height="28" fill="#ecf0f1"/>
+  <line x1="40" y1="134" x2="760" y2="134" stroke="#bdc3c7" stroke-width="1"/>
+
+  <!-- Dimension column header -->
+  <text x="180" y="125" text-anchor="middle" font-size="12" font-weight="bold" fill="#2c3e50">维度</text>
+  <!-- Traditional SE header -->
+  <text x="400" y="125" text-anchor="middle" font-size="12" font-weight="bold" fill="#2c3e50">传统软件工程</text>
+  <!-- Agentic Systems header -->
+  <text x="620" y="125" text-anchor="middle" font-size="12" font-weight="bold" fill="#2c3e50">Agentic 系统</text>
+
+  <!-- Row dividers and content -->
+  <!-- Row 1: 代码角色 -->
+  <line x1="40" y1="162" x2="760" y2="162" stroke="#ecf0f1" stroke-width="1"/>
+  <text x="180" y="153" text-anchor="middle" font-size="11" fill="#2c3e50">代码角色</text>
+  <text x="400" y="153" text-anchor="middle" font-size="11" fill="#e74c3c">决策逻辑的载体</text>
+  <text x="620" y="153" text-anchor="middle" font-size="11" fill="#2ecc71">推理的工具</text>
+
+  <!-- Row 2: 控制模型 -->
+  <line x1="40" y1="190" x2="760" y2="190" stroke="#ecf0f1" stroke-width="1"/>
+  <text x="180" y="181" text-anchor="middle" font-size="11" fill="#2c3e50">控制模型</text>
+  <text x="400" y="181" text-anchor="middle" font-size="11" fill="#e74c3c">确定性 (相同输入=相同输出)</text>
+  <text x="620" y="181" text-anchor="middle" font-size="11" fill="#2ecc71">概率性 (相同输入=不同输出)</text>
+
+  <!-- Row 3: 生命周期 -->
+  <line x1="40" y1="218" x2="760" y2="218" stroke="#ecf0f1" stroke-width="1"/>
+  <text x="180" y="209" text-anchor="middle" font-size="11" fill="#2c3e50">生命周期</text>
+  <text x="400" y="209" text-anchor="middle" font-size="11" fill="#e74c3c">静态 / 月级 (版本控制)</text>
+  <text x="620" y="209" text-anchor="middle" font-size="11" fill="#2ecc71">动态 / 秒级 (生成-执行-丢弃)</text>
+
+  <!-- Row 4: 核心活动 -->
+  <line x1="40" y1="246" x2="760" y2="246" stroke="#ecf0f1" stroke-width="1"/>
+  <text x="180" y="237" text-anchor="middle" font-size="11" fill="#2c3e50">核心活动</text>
+  <text x="400" y="237" text-anchor="middle" font-size="11" fill="#e74c3c">编码、测试、部署、运维</text>
+  <text x="620" y="237" text-anchor="middle" font-size="11" fill="#2ecc71">推理设计、工具编排、验证策略</text>
+
+  <!-- Row 5: 正确性保证 -->
+  <line x1="40" y1="274" x2="760" y2="274" stroke="#ecf0f1" stroke-width="1"/>
+  <text x="180" y="265" text-anchor="middle" font-size="11" fill="#2c3e50">正确性保证</text>
+  <text x="400" y="265" text-anchor="middle" font-size="11" fill="#e74c3c">形式化验证、单元测试、代码审查</text>
+  <text x="620" y="265" text-anchor="middle" font-size="11" fill="#2ecc71">评估、监控、反馈循环</text>
+
+  <!-- Row 6: 人类角色 -->
+  <line x1="40" y1="302" x2="760" y2="302" stroke="#ecf0f1" stroke-width="1"/>
+  <text x="180" y="293" text-anchor="middle" font-size="11" fill="#2c3e50">人类角色</text>
+  <text x="400" y="293" text-anchor="middle" font-size="11" fill="#e74c3c">Coder (将需求转化为代码)</text>
+  <text x="620" y="293" text-anchor="middle" font-size="11" fill="#2ecc71">Reasoning Architect (设计推理框架)</text>
+
+  <!-- ===== BOTTOM HALF: Complexity Transfer Curves ===== -->
+  <rect x="40" y="320" width="720" height="350" fill="#ffffff" stroke="#bdc3c7" stroke-width="1.5" rx="4"/>
+  <text x="400" y="348" text-anchor="middle" font-size="14" font-weight="bold" fill="#2c3e50">复杂度转移的三条曲线</text>
+
+  <!-- Chart area -->
+  <rect x="80" y="365" width="640" height="270" fill="#fafafa" stroke="#ecf0f1" stroke-width="1"/>
+
+  <!-- Y axis label -->
+  <text x="30" y="500" text-anchor="middle" font-size="11" font-weight="bold" fill="#2c3e50" transform="rotate(-90,30,500)">复杂度位置</text>
+
+  <!-- Y axis ticks and labels -->
+  <line x1="80" y1="365" x2="720" y2="365" stroke="#bdc3c7" stroke-width="0.5"/>
+  <text x="75" y="369" text-anchor="end" font-size="9" fill="#7f8c8d">用户侧</text>
+
+  <line x1="80" y1="450" x2="720" y2="450" stroke="#bdc3c7" stroke-width="0.5"/>
+  <text x="75" y="454" text-anchor="end" font-size="9" fill="#7f8c8d">厂商侧</text>
+
+  <line x1="80" y1="535" x2="720" y2="535" stroke="#bdc3c7" stroke-width="0.5"/>
+  <text x="75" y="539" text-anchor="end" font-size="9" fill="#7f8c8d">Agent侧</text>
+
+  <!-- X axis label -->
+  <text x="400" y="655" text-anchor="middle" font-size="11" font-weight="bold" fill="#2c3e50">时间 →</text>
+
+  <!-- X axis ticks and labels -->
+  <line x1="80" y1="535" x2="720" y2="535" stroke="#bdc3c7" stroke-width="0.5"/>
+  <text x="160" y="550" text-anchor="middle" font-size="9" fill="#7f8c8d">过去</text>
+  <text x="400" y="550" text-anchor="middle" font-size="9" fill="#7f8c8d">现在</text>
+  <text x="640" y="550" text-anchor="middle" font-size="9" fill="#7f8c8d">未来</text>
+
+  <!-- Curve 1: Licensed Software -> SaaS (user side to vendor side) -->
+  <path d="M 100 380 Q 250 380, 400 460 Q 550 520, 700 520" fill="none" stroke="#e74c3c" stroke-width="2.5"/>
+  <text x="100" y="375" font-size="9" fill="#e74c3c">Licensed Software</text>
+  <text x="700" y="515" font-size="9" fill="#e74c3c">SaaS</text>
+
+  <!-- Curve 2: SaaS -> AaaS (vendor side to Agent side) -->
+  <path d="M 100 460 Q 300 460, 450 500 Q 600 535, 700 535" fill="none" stroke="#f39c12" stroke-width="2.5"/>
+  <text x="100" y="455" font-size="9" fill="#f39c12">SaaS</text>
+  <text x="700" y="550" font-size="9" fill="#f39c12">AaaS (Agent-as-a-Service)</text>
+
+  <!-- Curve 3: Agentic Engineering (future, dashed) -->
+  <path d="M 400 500 Q 500 540, 600 545" fill="none" stroke="#2ecc71" stroke-width="2.5" stroke-dasharray="8,4"/>
+  <text x="600" y="560" font-size="9" fill="#2ecc71">Agentic Engineering (预测)</text>
+
+  <!-- Transition arrows -->
+  <path d="M 350 420 L 380 440" stroke="#e74c3c" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="360" y="415" font-size="9" fill="#e74c3c">第一次转移</text>
+
+  <path d="M 500 480 L 530 500" stroke="#f39c12" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="510" y="475" font-size="9" fill="#f39c12">第二次转移</text>
+
+  <!-- Legend -->
+  <rect x="160" y="670" width="10" height="10" fill="#e74c3c"/>
+  <text x="175" y="679" font-size="9" fill="#2c3e50">第一次转移</text>
+
+  <rect x="280" y="670" width="10" height="10" fill="#f39c12"/>
+  <text x="295" y="679" font-size="9" fill="#2c3e50">第二次转移</text>
+
+  <rect x="400" y="670" width="10" height="10" fill="#2ecc71"/>
+  <text x="415" y="679" font-size="9" fill="#2c3e50">第三次转移 (预测)</text>
+
+  <!-- Key insight box -->
+  <rect x="520" y="660" width="240" height="30" fill="#fff3cd" stroke="#ffc107" stroke-width="1" rx="3"/>
+  <text x="640" y="680" text-anchor="middle" font-size="9" fill="#856404">核心: code as logic → code as tooling</text>
+</svg>
