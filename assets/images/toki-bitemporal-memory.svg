@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="800" height="500" fill="#fafbfc"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" font-size="16" font-weight="600" fill="#1a1a2e">TOKI: Agent持久记忆的双时间算子框架</text>
+  
+  <!-- Dual-time axes -->
+  <text x="400" y="65" text-anchor="middle" font-size="12" fill="#6b7280">双时间维度：有效时间 (valid time) + 事务时间 (transaction time)</text>
+  
+  <!-- Left side: Four heuristics -->
+  <rect x="30" y="85" width="170" height="180" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="115" y="110" text-anchor="middle" font-size="13" font-weight="600" fill="#374151">四种启发式方法</text>
+  
+  <!-- LWW -->
+  <rect x="42" y="122" width="146" height="30" rx="4" fill="#fef3c7"/>
+  <text x="115" y="141" text-anchor="middle" font-size="11" fill="#92400e">LWW (最后写入获胜)</text>
+  
+  <!-- Evidence merge -->
+  <rect x="42" y="158" width="146" height="30" rx="4" fill="#dbeafe"/>
+  <text x="115" y="177" text-anchor="middle" font-size="11" fill="#1e40af">证据加权合并</text>
+  
+  <!-- Await confirm -->
+  <rect x="42" y="194" width="146" height="30" rx="4" fill="#d1fae5"/>
+  <text x="115" y="213" text-anchor="middle" font-size="11" fill="#065f46">等待确认</text>
+  
+  <!-- Rule-based -->
+  <rect x="42" y="230" width="146" height="30" rx="4" fill="#ede9fe"/>
+  <text x="115" y="249" text-anchor="middle" font-size="11" fill="#5b21b6">按规则策略</text>
+  
+  <!-- Arrow -->
+  <line x1="210" y1="175" x2="280" y2="175" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="280,170 290,175 280,180" fill="#94a3b8"/>
+  
+  <!-- Center: TOKI operator -->
+  <rect x="290" y="115" width="220" height="120" rx="8" fill="#1e3a5f"/>
+  <text x="400" y="142" text-anchor="middle" font-size="14" font-weight="600" fill="#ffffff">TOKI 双时间算子</text>
+  
+  <!-- Operator components -->
+  <rect x="305" y="152" width="190" height="22" rx="3" fill="#2d4a6f"/>
+  <text x="400" y="167" text-anchor="middle" font-size="10.5" fill="#cbd5e1">隔离前置条件 (Isolation Precondition)</text>
+  
+  <rect x="305" y="180" width="190" height="22" rx="3" fill="#2d4a6f"/>
+  <text x="400" y="195" text-anchor="middle" font-size="10.5" fill="#cbd5e1">溯源标注 (Provenance Annotation)</text>
+  
+  <rect x="305" y="208" width="190" height="22" rx="3" fill="#2d4a6f"/>
+  <text x="400" y="223" text-anchor="middle" font-size="10.5" fill="#cbd5e1">审计行保留 (Audit Row)</text>
+  
+  <!-- Arrow right -->
+  <line x1="520" y1="175" x2="590" y2="175" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="590,170 600,175 590,180" fill="#94a3b8"/>
+  
+  <!-- Right side: Dual-row schema -->
+  <rect x="600" y="85" width="170" height="180" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="685" y="110" text-anchor="middle" font-size="13" font-weight="600" fill="#374151">双行模式</text>
+  
+  <!-- Active row -->
+  <rect x="612" y="122" width="146" height="38" rx="4" fill="#dcfce7"/>
+  <text x="685" y="139" text-anchor="middle" font-size="10.5" font-weight="500" fill="#166534">当前有效事实行</text>
+  <text x="685" y="153" text-anchor="middle" font-size="9" fill="#15803d">(valid_time, fact)</text>
+  
+  <!-- Audit row -->
+  <rect x="612" y="170" width="146" height="38" rx="4" fill="#fef9c3"/>
+  <text x="685" y="187" text-anchor="middle" font-size="10.5" font-weight="500" fill="#854d0e">审计记录行</text>
+  <text x="685" y="201" text-anchor="middle" font-size="9" fill="#a16207">(tx_time, lost_fact)</text>
+  
+  <!-- Four theorems -->
+  <rect x="30" y="290" width="740" height="180" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="400" y="315" text-anchor="middle" font-size="13" font-weight="600" fill="#374151">四个健全性定理 (Soundness Theorems)</text>
+  
+  <!-- Theorem 1 -->
+  <rect x="50" y="328" width="170" height="120" rx="6" fill="#f0fdf4"/>
+  <text x="135" y="350" text-anchor="middle" font-size="11" font-weight="600" fill="#166534">定理一：隔离正确性</text>
+  <text x="135" y="370" text-anchor="middle" font-size="9.5" fill="#4b5563">在给定隔离级别下，</text>
+  <text x="135" y="386" text-anchor="middle" font-size="9.5" fill="#4b5563">矛盾解决不产生未声明</text>
+  <text x="135" y="402" text-anchor="middle" font-size="9.5" fill="#4b5563">的写时异常</text>
+  
+  <!-- Theorem 2 -->
+  <rect x="240" y="328" width="170" height="120" rx="6" fill="#eff6ff"/>
+  <text x="325" y="350" text-anchor="middle" font-size="11" font-weight="600" fill="#1e40af">定理二：模式一致性</text>
+  <text x="325" y="370" text-anchor="middle" font-size="9.5" fill="#4b5563">双行模式保持结构完整，</text>
+  <text x="325" y="386" text-anchor="middle" font-size="9.5" fill="#4b5563">有效事实与审计记录</text>
+  <text x="325" y="402" text-anchor="middle" font-size="9.5" fill="#4b5563">类型安全，无数据丢失</text>
+  
+  <!-- Theorem 3 -->
+  <rect x="430" y="328" width="170" height="120" rx="6" fill="#faf5ff"/>
+  <text x="515" y="350" text-anchor="middle" font-size="11" font-weight="600" fill="#6b21a8">定理三：溯源完整性</text>
+  <text x="515" y="370" text-anchor="middle" font-size="9.5" fill="#4b5563">每条记录的来源、时间戳</text>
+  <text x="515" y="386" text-anchor="middle" font-size="9.5" fill="#4b5563">和置信度信息完整可追溯，</text>
+  <text x="515" y="402" text-anchor="middle" font-size="9.5" fill="#4b5563">支持全链路审计</text>
+  
+  <!-- Theorem 4 -->
+  <rect x="620" y="328" width="170" height="120" rx="6" fill="#fff7ed"/>
+  <text x="705" y="350" text-anchor="middle" font-size="11" font-weight="600" fill="#c2410c">定理四：审计可恢复性</text>
+  <text x="705" y="370" text-anchor="middle" font-size="9.5" fill="#4b5563">被否决事实永久保留在</text>
+  <text x="705" y="386" text-anchor="middle" font-size="9.5" fill="#4b5563">审计行中，支持事后</text>
+  <text x="705" y="402" text-anchor="middle" font-size="9.5" fill="#4b5563">重建和决策回溯</text>
+  
+  <!-- Bottom note -->
+  <text x="400" y="485" text-anchor="middle" font-size="10" fill="#9ca3af">TOKI = 数据库并发控制理论 + Agent持久记忆 + 形式化证明</text>
+</svg>
