@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#14b8a6;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0d9488;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)" rx="8"/>
+
+  <!-- Title bar -->
+  <rect x="0" y="0" width="1200" height="56" fill="#0f172a" rx="8"/>
+  <rect x="0" y="48" width="1200" height="8" fill="#0f172a"/>
+  <text x="600" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#93c5fd" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">ALAR: Adaptive Latent Agentic Reasoning</text>
+
+  <!-- Divider line -->
+  <line x1="600" y1="72" x2="600" y2="590" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="8,4"/>
+
+  <!-- ===== LEFT SIDE: Traditional Agent ===== -->
+  <text x="300" y="100" text-anchor="middle" font-size="16" font-weight="bold" fill="#ef4444" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">传统 Agent（统一显式 CoT）</text>
+
+  <!-- Step boxes - Traditional -->
+  <g transform="translate(80, 120)">
+    <!-- Step 1: Always explicit CoT -->
+    <rect x="0" y="0" width="440" height="56" rx="8" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
+    <text x="20" y="22" font-size="13" font-weight="bold" fill="#991b1b" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">Step 1: 环境感知</text>
+    <rect x="20" y="30" width="400" height="18" rx="4" fill="#fca5a5"/>
+    <text x="220" y="43" text-anchor="middle" font-size="11" fill="#7f1d1d" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">显式思维链: 280 tokens</text>
+
+    <!-- Step 2: Always explicit CoT -->
+    <rect x="0" y="68" width="440" height="56" rx="8" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
+    <text x="20" y="90" font-size="13" font-weight="bold" fill="#991b1b" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">Step 2: 工具选择</text>
+    <rect x="20" y="98" width="400" height="18" rx="4" fill="#fca5a5"/>
+    <text x="220" y="111" text-anchor="middle" font-size="11" fill="#7f1d1d" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">显式思维链: 320 tokens</text>
+
+    <!-- Step 3: Always explicit CoT -->
+    <rect x="0" y="136" width="440" height="56" rx="8" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
+    <text x="20" y="158" font-size="13" font-weight="bold" fill="#991b1b" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">Step 3: 结果分析</text>
+    <rect x="20" y="166" width="400" height="18" rx="4" fill="#fca5a5"/>
+    <text x="220" y="179" text-anchor="middle" font-size="11" fill="#7f1d1d" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">显式思维链: 350 tokens</text>
+
+    <!-- Step 4: Always explicit CoT -->
+    <rect x="0" y="204" width="440" height="56" rx="8" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
+    <text x="20" y="226" font-size="13" font-weight="bold" fill="#991b1b" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">Step 4: 决策输出</text>
+    <rect x="20" y="234" width="400" height="18" rx="4" fill="#fca5a5"/>
+    <text x="220" y="247" text-anchor="middle" font-size="11" fill="#7f1d1d" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">显式思维链: 260 tokens</text>
+
+    <!-- Step 5: Always explicit CoT -->
+    <rect x="0" y="272" width="440" height="56" rx="8" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
+    <text x="20" y="294" font-size="13" font-weight="bold" fill="#991b1b" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">Step 5: 循环判断</text>
+    <rect x="20" y="302" width="400" height="18" rx="4" fill="#fca5a5"/>
+    <text x="220" y="315" text-anchor="middle" font-size="11" fill="#7f1d1d" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">显式思维链: 290 tokens</text>
+
+    <!-- Total -->
+    <rect x="0" y="348" width="440" height="48" rx="8" fill="#fee2e2" stroke="#f87171" stroke-width="2"/>
+    <text x="220" y="368" text-anchor="middle" font-size="14" font-weight="bold" fill="#991b1b" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">总 Token 消耗: 1,500</text>
+    <text x="220" y="386" text-anchor="middle" font-size="11" fill="#dc2626" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">每个步骤均匀分配推理努力</text>
+  </g>
+
+  <!-- ===== RIGHT SIDE: ALAR Agent ===== -->
+  <text x="900" y="100" text-anchor="middle" font-size="16" font-weight="bold" fill="#059669" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">ALAR Agent（自适应双模式）</text>
+
+  <!-- Step boxes - ALAR -->
+  <g transform="translate(680, 120)">
+    <!-- Step 1: Latent (simple) -->
+    <rect x="0" y="0" width="440" height="56" rx="8" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5"/>
+    <text x="20" y="22" font-size="13" font-weight="bold" fill="#065f46" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">Step 1: 环境感知</text>
+    <rect x="20" y="30" width="400" height="18" rx="4" fill="#6ee7b7"/>
+    <text x="220" y="43" text-anchor="middle" font-size="11" fill="#065f46" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">潜在推理: 18 tokens (简单)</text>
+
+    <!-- Step 2: Upgrade to Explicit (complex) -->
+    <rect x="0" y="68" width="440" height="56" rx="8" fill="#fffbeb" stroke="#fde68a" stroke-width="1.5"/>
+    <text x="20" y="90" font-size="13" font-weight="bold" fill="#92400e" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">Step 2: 工具选择</text>
+    <!-- Arrow showing upgrade -->
+    <path d="M 20 78 L 15 68 L 30 68 Z" fill="#f59e0b"/>
+    <rect x="20" y="98" width="400" height="18" rx="4" fill="#fcd34d"/>
+    <text x="220" y="111" text-anchor="middle" font-size="11" fill="#92400e" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">升级显式CoT: 310 tokens (复杂)</text>
+
+    <!-- Step 3: Latent (simple) -->
+    <rect x="0" y="136" width="440" height="56" rx="8" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5"/>
+    <text x="20" y="158" font-size="13" font-weight="bold" fill="#065f46" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">Step 3: 结果分析</text>
+    <rect x="20" y="166" width="400" height="18" rx="4" fill="#6ee7b7"/>
+    <text x="220" y="179" text-anchor="middle" font-size="11" fill="#065f46" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">潜在推理: 22 tokens (简单)</text>
+
+    <!-- Step 4: Latent (simple) -->
+    <rect x="0" y="204" width="440" height="56" rx="8" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5"/>
+    <text x="20" y="226" font-size="13" font-weight="bold" fill="#065f46" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">Step 4: 决策输出</text>
+    <rect x="20" y="234" width="400" height="18" rx="4" fill="#6ee7b7"/>
+    <text x="220" y="247" text-anchor="middle" font-size="11" fill="#065f46" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">潜在推理: 15 tokens (简单)</text>
+
+    <!-- Step 5: Latent (simple) -->
+    <rect x="0" y="272" width="440" height="56" rx="8" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5"/>
+    <text x="20" y="294" font-size="13" font-weight="bold" fill="#065f46" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">Step 5: 循环判断</text>
+    <rect x="20" y="302" width="400" height="18" rx="4" fill="#6ee7b7"/>
+    <text x="220" y="315" text-anchor="middle" font-size="11" fill="#065f46" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">潜在推理: 20 tokens (简单)</text>
+
+    <!-- Total -->
+    <rect x="0" y="348" width="440" height="48" rx="8" fill="#d1fae5" stroke="#34d399" stroke-width="2"/>
+    <text x="220" y="368" text-anchor="middle" font-size="14" font-weight="bold" fill="#065f46" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">总 Token 消耗: 385</text>
+    <text x="220" y="386" text-anchor="middle" font-size="11" fill="#059669" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">推理资源自适应分配 (-74.3%)</text>
+  </g>
+
+  <!-- ===== BOTTOM: Architecture diagram ===== -->
+  <rect x="80" y="420" width="1040" height="190" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)"/>
+
+  <!-- Architecture title -->
+  <text x="600" y="450" text-anchor="middle" font-size="15" font-weight="bold" fill="#374151" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">双模式推理架构</text>
+
+  <!-- Shared backbone -->
+  <rect x="200" y="468" width="800" height="40" rx="8" fill="#e0e7ff"/>
+  <text x="600" y="493" text-anchor="middle" font-size="13" font-weight="bold" fill="#3730a3" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">共享语言模型 Backbone (参数共享)</text>
+
+  <!-- Decision node -->
+  <rect x="460" y="520" width="280" height="36" rx="18" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="600" y="543" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400e" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">难度评估: 潜在推理 vs 显式 CoT</text>
+
+  <!-- Left branch: Latent -->
+  <line x1="500" y1="556" x2="340" y2="580" stroke="#10b981" stroke-width="2"/>
+  <polygon points="340,576 340,588 350,582" fill="#10b981"/>
+  <rect x="220" y="580" width="240" height="24" rx="6" fill="#d1fae5" stroke="#10b981" stroke-width="1.5"/>
+  <text x="340" y="597" text-anchor="middle" font-size="12" font-weight="bold" fill="#065f46" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">潜在推理模式 (低 Token)</text>
+
+  <!-- Right branch: Explicit -->
+  <line x1="700" y1="556" x2="860" y2="580" stroke="#ef4444" stroke-width="2"/>
+  <polygon points="860,576 860,588 850,582" fill="#ef4444"/>
+  <rect x="740" y="580" width="240" height="24" rx="6" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="860" y="597" text-anchor="middle" font-size="12" font-weight="bold" fill="#991b1b" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">显式思维链模式 (高质量)</text>
+
+  <!-- Key metrics badges -->
+  <rect x="80" y="420" width="130" height="56" rx="8" fill="#dbeafe"/>
+  <text x="145" y="444" text-anchor="middle" font-size="11" fill="#1e40af" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">Agentic Search</text>
+  <text x="145" y="468" text-anchor="middle" font-size="20" font-weight="bold" fill="#1d4ed8" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">-43.6%</text>
+
+  <rect x="990" y="420" width="130" height="56" rx="8" fill="#dbeafe"/>
+  <text x="1055" y="444" text-anchor="middle" font-size="11" fill="#1e40af" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">Tool Use</text>
+  <text x="1055" y="468" text-anchor="middle" font-size="20" font-weight="bold" fill="#1d4ed8" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">-84.6%</text>
+
+  <!-- Action supervision badge -->
+  <rect x="430" y="420" width="340" height="56" rx="8" fill="#f3e8ff"/>
+  <text x="600" y="444" text-anchor="middle" font-size="11" fill="#6b21a8" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">动作监督学习: 以实际动作为锚点训练</text>
+  <text x="600" y="468" text-anchor="middle" font-size="13" font-weight="bold" fill="#7c3aed" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif">无需人工标注推理过程</text>
+
+</svg>

@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+
+  <!-- Background -->
+  <rect width="800" height="520" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="400" y="36" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a2e">SR^2AM 三系统架构</text>
+
+  <!-- Task Input Arrow (left) -->
+  <rect x="10" y="245" width="60" height="30" rx="4" fill="#e8ecf1"/>
+  <text x="40" y="265" text-anchor="middle" font-size="11" fill="#333">任务输入</text>
+
+  <!-- System III: Self-Regulator (top center) -->
+  <rect x="270" y="55" width="260" height="80" rx="10" fill="#4a90d9"/>
+  <text x="400" y="83" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">System III: 自我调节器</text>
+  <text x="400" y="105" text-anchor="middle" font-size="11" fill="#dce8f7">判断是否需要规划及规划深度</text>
+
+  <!-- System II: Simulative Reasoning (left) -->
+  <rect x="60" y="290" width="240" height="130" rx="10" fill="#e8f5e9"/>
+  <rect x="60" y="290" width="240" height="32" rx="10" fill="#66bb6a"/>
+  <text x="180" y="312" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">System II: 模拟推理</text>
+
+  <!-- System II internal details -->
+  <rect x="75" y="335" width="210" height="24" rx="4" fill="#c8e6c9"/>
+  <text x="180" y="351" text-anchor="middle" font-size="10.5" fill="#2e7d32">LLM 作为世界模型预测状态转移</text>
+
+  <rect x="75" y="367" width="210" height="24" rx="4" fill="#c8e6c9"/>
+  <text x="180" y="383" text-anchor="middle" font-size="10.5" fill="#2e7d32">评估多条行动路径的长期价值</text>
+
+  <rect x="75" y="399" width="210" height="24" rx="4" fill="#c8e6c9"/>
+  <text x="180" y="415" text-anchor="middle" font-size="10.5" fill="#2e7d32">选择最优动作</text>
+
+  <!-- System I: Reactive Execution (right) -->
+  <rect x="500" y="290" width="240" height="130" rx="10" fill="#fff3e0"/>
+  <rect x="500" y="290" width="240" height="32" rx="10" fill="#ffa726"/>
+  <text x="620" y="312" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">System I: 反应式执行</text>
+
+  <!-- System I internal details -->
+  <rect x="515" y="335" width="210" height="24" rx="4" fill="#ffe0b2"/>
+  <text x="620" y="351" text-anchor="middle" font-size="10.5" fill="#e65100">直接执行动作，无需深度规划</text>
+
+  <rect x="515" y="367" width="210" height="24" rx="4" fill="#ffe0b2"/>
+  <text x="620" y="383" text-anchor="middle" font-size="10.5" fill="#e65100">适用于简单或熟悉任务</text>
+
+  <rect x="515" y="399" width="210" height="24" rx="4" fill="#ffe0b2"/>
+  <text x="620" y="415" text-anchor="middle" font-size="10.5" fill="#e65100">低延迟，Token 消耗极低</text>
+
+  <!-- Arrow: Task Input -> System III -->
+  <line x1="70" y1="260" x2="340" y2="135" stroke="#999" stroke-width="1.8" marker-end="url(#arrowGray)"/>
+
+  <!-- Arrow: System III -> System II (规划路径) -->
+  <line x1="310" y1="135" x2="180" y2="275" stroke="#4a90d9" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <text x="210" y="200" font-size="10" fill="#4a90d9">需要规划</text>
+
+  <!-- Arrow: System III -> System I (直接执行路径) -->
+  <line x1="490" y1="135" x2="620" y2="275" stroke="#ffa726" stroke-width="2" marker-end="url(#arrowOrange)"/>
+  <text x="555" y="200" font-size="10" fill="#ffa726">直接执行</text>
+
+  <!-- Arrow: System II -> Action (最优动作输出) -->
+  <line x1="300" y1="355" x2="490" y2="355" stroke="#66bb6a" stroke-width="1.8" marker-end="url(#arrowGreen)"/>
+
+  <!-- Arrow: System I -> Action (直接输出) -->
+  <line x1="620" y1="420" x2="620" y2="455" stroke="#ffa726" stroke-width="1.8" marker-end="url(#arrowOrange)"/>
+
+  <!-- Output Arrow (right) -->
+  <rect x="730" y="340" width="60" height="30" rx="4" fill="#e8ecf1"/>
+  <text x="760" y="360" text-anchor="middle" font-size="11" fill="#333">动作输出</text>
+
+  <!-- Arrow: System II -> Output -->
+  <line x1="540" y1="355" x2="730" y2="355" stroke="#66bb6a" stroke-width="1.8" marker-end="url(#arrowGreen)"/>
+
+  <!-- Arrow: System I -> Output -->
+  <line x1="740" y1="355" x2="730" y2="355" stroke="#ffa726" stroke-width="1.8" marker-end="url(#arrowOrange)"/>
+
+  <!-- RL Training Loop annotation (bottom) -->
+  <rect x="250" y="460" width="300" height="40" rx="6" fill="#f0f0f0" stroke="#ccc" stroke-width="1"/>
+  <text x="400" y="478" text-anchor="middle" font-size="10.5" fill="#555">RL 训练后：规划频率 +2.0%，规划深度 +22.8%</text>
+  <text x="400" y="493" text-anchor="middle" font-size="10.5" fill="#555">Agent 学会"少想但想深"</text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowGray" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#999"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#4a90d9"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#ffa726"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#66bb6a"/>
+    </marker>
+  </defs>
+
+</svg>
