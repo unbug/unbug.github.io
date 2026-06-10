@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0c1a2e;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="l1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:0.9"/>
+    </linearGradient>
+    <linearGradient id="l2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3730a3;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#4f46e5;stop-opacity:0.9"/>
+    </linearGradient>
+    <linearGradient id="l3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#047857;stop-opacity:0.9"/>
+    </linearGradient>
+    <linearGradient id="l4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#78350f;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#b45309;stop-opacity:0.9"/>
+    </linearGradient>
+    <linearGradient id="l5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7f1d1d;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#b91c1c;stop-opacity:0.9"/>
+    </linearGradient>
+    <linearGradient id="l6" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#164e63;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0e7490;stop-opacity:0.9"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arr" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Grid -->
+  <g stroke="#1e3a5f" stroke-width="0.4" opacity="0.18">
+    <line x1="0" y1="105" x2="1200" y2="105"/><line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/><line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="200" y1="0" x2="200" y2="630"/><line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/><line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+
+  <!-- Column badge -->
+  <rect x="490" y="14" width="220" height="30" rx="15" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="600" y="34" font-family="sans-serif" font-size="13" font-weight="bold" fill="#93c5fd" text-anchor="middle">AI 范式雷达</text>
+
+  <!-- ── LAYER BOXES (6 layers × horizontal) ── -->
+  <!-- Each box: x=55, width=630, heights staggered -->
+
+  <!-- L1: Task Intake & Hierarchical Planning -->
+  <rect x="55" y="58" width="635" height="72" rx="8" fill="url(#l1)" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="75" y="82" font-family="sans-serif" font-size="13" font-weight="bold" fill="#bfdbfe">① 任务接入 &amp; 分层规划</text>
+  <text x="75" y="101" font-family="monospace" font-size="10.5" fill="#93c5fd">Goal → HTN 分解 → macro goals [ 阶段1 · 阶段2 · 阶段3 ] → micro steps</text>
+  <text x="75" y="120" font-family="monospace" font-size="10.5" fill="#93c5fd">输入校验 · 约束提取 · 任务图构建 · 优先级排序</text>
+
+  <!-- L2: Four-Dimensional Memory -->
+  <rect x="55" y="143" width="635" height="72" rx="8" fill="url(#l2)" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="75" y="167" font-family="sans-serif" font-size="13" font-weight="bold" fill="#c7d2fe">② 四维记忆系统</text>
+  <text x="75" y="186" font-family="monospace" font-size="10.5" fill="#a5b4fc">工作记忆（上下文窗口） · 情节记忆（事件日志 + 向量检索）</text>
+  <text x="75" y="205" font-family="monospace" font-size="10.5" fill="#a5b4fc">语义记忆（知识图谱 / RAG） · 程序记忆（工具使用历史 / 技能库）</text>
+
+  <!-- L3: Execution Engine & Tools -->
+  <rect x="55" y="228" width="635" height="72" rx="8" fill="url(#l3)" stroke="#10b981" stroke-width="1.5"/>
+  <text x="75" y="252" font-family="sans-serif" font-size="13" font-weight="bold" fill="#a7f3d0">③ 执行引擎 &amp; 工具编排</text>
+  <text x="75" y="271" font-family="monospace" font-size="10.5" fill="#6ee7b7">工具调用（bash/代码/API/浏览器） · 并行 vs 顺序调度</text>
+  <text x="75" y="290" font-family="monospace" font-size="10.5" fill="#6ee7b7">沙箱隔离（Docker/WASM） · 工具结果归一化 · 超时熔断</text>
+
+  <!-- L4: State Persistence & Checkpointing -->
+  <rect x="55" y="313" width="635" height="72" rx="8" fill="url(#l4)" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="75" y="337" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fde68a">④ 状态持久化 &amp; 断点续传</text>
+  <text x="75" y="356" font-family="monospace" font-size="10.5" fill="#fcd34d">Checkpoint（阶段粒度） · Event Sourcing（全量事件日志）</text>
+  <text x="75" y="375" font-family="monospace" font-size="10.5" fill="#fcd34d">Temporal / LangGraph Persistence · 版本化状态存储 · 崩溃恢复</text>
+
+  <!-- L5: Error Recovery & Replanning -->
+  <rect x="55" y="398" width="635" height="72" rx="8" fill="url(#l5)" stroke="#f87171" stroke-width="1.5"/>
+  <text x="75" y="422" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fecaca">⑤ 错误恢复 &amp; 重规划</text>
+  <text x="75" y="441" font-family="monospace" font-size="10.5" fill="#fca5a5">失败检测（信号诊断） · Replan-not-Retry 策略</text>
+  <text x="75" y="460" font-family="monospace" font-size="10.5" fill="#fca5a5">回滚到最近 Checkpoint · Human-in-the-Loop 干预点</text>
+
+  <!-- L6: Observability & Cost Control -->
+  <rect x="55" y="483" width="635" height="72" rx="8" fill="url(#l6)" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="75" y="507" font-family="sans-serif" font-size="13" font-weight="bold" fill="#a5f3fc">⑥ 可观测性 &amp; 成本控制</text>
+  <text x="75" y="526" font-family="monospace" font-size="10.5" fill="#67e8f9">轨迹日志 · Token 用量追踪 · 进度看板</text>
+  <text x="75" y="545" font-family="monospace" font-size="10.5" fill="#67e8f9">成本熔断 · 告警 · OpenTelemetry 集成</text>
+
+  <!-- Vertical arrow between layers -->
+  <line x1="372" y1="130" x2="372" y2="143" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="372" y1="215" x2="372" y2="228" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="372" y1="300" x2="372" y2="313" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="372" y1="385" x2="372" y2="398" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="372" y1="470" x2="372" y2="483" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Right panel: Feedback loop -->
+  <rect x="710" y="58" width="450" height="497" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+  <text x="730" y="82" font-family="sans-serif" font-size="13" font-weight="bold" fill="#94a3b8">关键指标 / 性能对比</text>
+
+  <!-- Benchmark bars -->
+  <text x="730" y="110" font-family="monospace" font-size="11" fill="#64748b">TerminalBench-2 成功率</text>
+
+  <rect x="730" y="118" width="380" height="2" fill="#1e293b"/>
+
+  <!-- Bar: AgentFlow -->
+  <rect x="730" y="126" width="319" height="22" rx="4" fill="#1d4ed8" opacity="0.85"/>
+  <text x="736" y="142" font-family="monospace" font-size="11" fill="#bfdbfe">AgentFlow (Multi-Harness)  84.3%</text>
+
+  <!-- Bar: GPT-5.5 -->
+  <rect x="730" y="154" width="311" height="22" rx="4" fill="#374151" opacity="0.85"/>
+  <text x="736" y="170" font-family="monospace" font-size="11" fill="#e2e8f0">GPT-5.5 (单 Agent)        82.0%</text>
+
+  <!-- Bar: Claude -->
+  <rect x="730" y="182" width="246" height="22" rx="4" fill="#374151" opacity="0.7"/>
+  <text x="736" y="198" font-family="monospace" font-size="11" fill="#94a3b8">Claude Opus 4.6           65.0%</text>
+
+  <!-- Bar: ReAct Baseline -->
+  <rect x="730" y="210" width="151" height="22" rx="4" fill="#1e293b" opacity="0.9"/>
+  <text x="736" y="226" font-family="monospace" font-size="11" fill="#6b7280">ReAct Baseline (GPT-4.1)  40.0%</text>
+
+  <rect x="730" y="238" width="380" height="1" fill="#1e293b"/>
+
+  <!-- Key design principles -->
+  <text x="730" y="260" font-family="sans-serif" font-size="12" font-weight="bold" fill="#94a3b8">Long Horizon 设计原则</text>
+
+  <text x="730" y="284" font-family="sans-serif" font-size="12" fill="#818cf8">● 分层规划</text>
+  <text x="755" y="300" font-family="monospace" font-size="10" fill="#6b7280">宏观 → 微观，阶段边界驱动</text>
+
+  <text x="730" y="320" font-family="sans-serif" font-size="12" fill="#10b981">● Context Folding</text>
+  <text x="755" y="336" font-family="monospace" font-size="10" fill="#6b7280">主动压缩，非被动截断</text>
+
+  <text x="730" y="356" font-family="sans-serif" font-size="12" fill="#f59e0b">● 幂等执行</text>
+  <text x="755" y="372" font-family="monospace" font-size="10" fill="#6b7280">每步可重试，状态不污染</text>
+
+  <text x="730" y="392" font-family="sans-serif" font-size="12" fill="#ef4444">● Replan-not-Retry</text>
+  <text x="755" y="408" font-family="monospace" font-size="10" fill="#6b7280">失败→重规划，而非盲目重试</text>
+
+  <text x="730" y="428" font-family="sans-serif" font-size="12" fill="#22d3ee">● 可观测优先</text>
+  <text x="755" y="444" font-family="monospace" font-size="10" fill="#6b7280">每步有轨迹，Token 有预算</text>
+
+  <rect x="730" y="458" width="380" height="1" fill="#1e293b"/>
+
+  <!-- Feedback loop arrow -->
+  <text x="730" y="478" font-family="sans-serif" font-size="12" font-weight="bold" fill="#94a3b8">反馈回路</text>
+  <path d="M 1100 490 Q 1140 490 1140 350 Q 1140 210 1100 210" stroke="#ef4444" stroke-width="1.5" fill="none" stroke-dasharray="6,3"/>
+  <polygon points="1100,210 1108,218 1092,218" fill="#ef4444"/>
+  <text x="1110" y="355" font-family="monospace" font-size="10" fill="#f87171" transform="rotate(90,1110,355)">错误诊断 → 重规划</text>
+  <path d="M 1080 490 Q 1120 490 1120 350 Q 1120 210 1080 210" stroke="#818cf8" stroke-width="1.5" fill="none" stroke-dasharray="4,4"/>
+  <polygon points="1080,210 1088,218 1072,218" fill="#818cf8"/>
+  <text x="1090" y="355" font-family="monospace" font-size="10" fill="#a5b4fc" transform="rotate(90,1090,355)">记忆更新 → 规划优化</text>
+
+  <!-- Main title -->
+  <text x="600" y="586" font-family="sans-serif" font-size="30" font-weight="bold" fill="#f1f5f9" text-anchor="middle">Long Horizon Agent 全栈设计</text>
+  <text x="600" y="616" font-family="sans-serif" font-size="16" fill="#94a3b8" text-anchor="middle">规划 · 记忆 · 执行 · 持久化 · 恢复 · 可观测</text>
+</svg>
