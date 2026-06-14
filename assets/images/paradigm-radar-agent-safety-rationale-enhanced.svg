@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#eef2ff;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="360" fill="url(#bgGrad)" rx="8"/>
+  <text x="400" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#1e293b">Rationale-Enhanced 构建流程</text>
+
+  <!-- Step 1: Raw Trajectory -->
+  <rect x="40" y="70" width="140" height="80" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="110" y="95" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e40af">原始轨迹</text>
+  <line x1="60" y1="103" x2="160" y2="103" stroke="#93c5fd" stroke-width="1"/>
+  <text x="60" y="118" font-size="10" fill="#334155">工具调用序列</text>
+  <text x="60" y="132" font-size="10" fill="#334155">中间状态记录</text>
+
+  <!-- Arrow -->
+  <line x1="180" y1="110" x2="220" y2="110" stroke="#64748b" stroke-width="2"/>
+  <polygon points="220,105 230,110 220,115" fill="#64748b"/>
+
+  <!-- Step 2: Trajectory Encoding -->
+  <rect x="230" y="70" width="140" height="80" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="300" y="95" text-anchor="middle" font-size="12" font-weight="bold" fill="#92400e">轨迹编码</text>
+  <line x1="250" y1="103" x2="350" y2="103" stroke="#fde68a" stroke-width="1"/>
+  <text x="250" y="118" font-size="10" fill="#334155">结构化表示</text>
+  <text x="250" y="132" font-size="10" fill="#334155">步骤间依赖图</text>
+
+  <!-- Arrow -->
+  <line x1="370" y1="110" x2="410" y2="110" stroke="#64748b" stroke-width="2"/>
+  <polygon points="410,105 420,110 410,115" fill="#64748b"/>
+
+  <!-- Step 3: Rationale Generation -->
+  <rect x="420" y="70" width="160" height="80" rx="8" fill="#f3e8ff" stroke="#a855f7" stroke-width="2"/>
+  <text x="500" y="95" text-anchor="middle" font-size="12" font-weight="bold" fill="#6b21a8">推理生成</text>
+  <line x1="440" y1="103" x2="560" y2="103" stroke="#e9d5ff" stroke-width="1"/>
+  <text x="440" y="118" font-size="10" fill="#334155">风险来源分析</text>
+  <text x="440" y="132" font-size="10" fill="#334155">攻击路径识别</text>
+
+  <!-- Arrow -->
+  <line x1="580" y1="110" x2="620" y2="110" stroke="#64748b" stroke-width="2"/>
+  <polygon points="620,105 630,110 620,115" fill="#64748b"/>
+
+  <!-- Step 4: Risk Classification -->
+  <rect x="630" y="70" width="130" height="80" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="695" y="95" text-anchor="middle" font-size="12" font-weight="bold" fill="#166534">风险分类</text>
+  <line x1="650" y1="103" x2="740" y2="103" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="650" y="118" font-size="10" fill="#334155">风险等级判定</text>
+  <text x="650" y="132" font-size="10" fill="#334155">细粒度标签输出</text>
+
+  <!-- Bottom: Two-stage comparison -->
+  <rect x="40" y="190" width="720" height="140" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="400" y="215" text-anchor="middle" font-size="13" font-weight="bold" fill="#334155">两阶段评估 vs 直接分类</text>
+
+  <!-- Direct Classification (Before) -->
+  <rect x="60" y="230" width="300" height="80" rx="6" fill="#fef2f2" stroke="#ef4444" stroke-width="1"/>
+  <text x="210" y="252" text-anchor="middle" font-size="11" font-weight="bold" fill="#dc2626">直接分类 (Before)</text>
+  <line x1="80" y1="260" x2="340" y2="260" stroke="#fecaca" stroke-width="1"/>
+  <text x="80" y="276" font-size="10" fill="#334155">轨迹 -> [黑盒模型] -> 安全/不安全</text>
+  <text x="80" y="292" font-size="10" fill="#dc2626">缺点: 无解释、精度低</text>
+
+  <!-- Rationale-Enhanced (After) -->
+  <rect x="420" y="230" width="300" height="80" rx="6" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
+  <text x="570" y="252" text-anchor="middle" font-size="11" font-weight="bold" fill="#166534">推理增强 (After)</text>
+  <line x1="440" y1="260" x2="700" y2="260" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="440" y="276" font-size="10" fill="#334155">轨迹 -> [推理生成] -> [风险分类]</text>
+  <text x="440" y="292" font-size="10" fill="#16653d">优点: 可解释、精度高</text>
+
+  <!-- Key insight box -->
+  <rect x="40" y="340" width="720" height="18" rx="4" fill="#fefce8" stroke="#eab308" stroke-width="1"/>
+  <text x="400" y="353" text-anchor="middle" font-size="10" fill="#a16207">核心洞察: 让模型在判断前先"想清楚"，推理过程同时提升准确性和可解释性</text>
+</svg>

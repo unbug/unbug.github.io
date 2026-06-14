@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#eef2ff;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="400" fill="url(#bgGrad)" rx="8"/>
+  <text x="400" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#1e293b">多尺寸变体性能对比 (ATBench)</text>
+
+  <!-- Chart area -->
+  <rect x="80" y="55" width="640" height="280" rx="4" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Y-axis labels and grid lines -->
+  <text x="70" y="320" text-anchor="end" font-size="10" fill="#64748b">0%</text>
+  <line x1="80" y1="320" x2="720" y2="320" stroke="#e2e8f0" stroke-width="1"/>
+
+  <text x="70" y="265" text-anchor="end" font-size="10" fill="#64748b">25%</text>
+  <line x1="80" y1="265" x2="720" y2="265" stroke="#f1f5f9" stroke-width="1"/>
+
+  <text x="70" y="210" text-anchor="end" font-size="10" fill="#64748b">50%</text>
+  <line x1="80" y1="210" x2="720" y2="210" stroke="#f1f5f9" stroke-width="1"/>
+
+  <text x="70" y="155" text-anchor="end" font-size="10" fill="#64748b">75%</text>
+  <line x1="80" y1="155" x2="720" y2="155" stroke="#f1f5f9" stroke-width="1"/>
+
+  <text x="70" y="100" text-anchor="end" font-size="10" fill="#64748b">100%</text>
+  <line x1="80" y1="100" x2="720" y2="100" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- X-axis labels -->
+  <text x="200" y="340" text-anchor="middle" font-size="11" font-weight="bold" fill="#334155">风险来源 (RS)</text>
+  <text x="400" y="340" text-anchor="middle" font-size="11" font-weight="bold" fill="#334155">失败模式 (FM)</text>
+  <text x="600" y="340" text-anchor="middle" font-size="11" font-weight="bold" fill="#334155">真实危害 (RWH)</text>
+
+  <!-- RS bars -->
+  <!-- 4B: ~72% -->
+  <rect x="160" y="130" width="30" height="190" rx="2" fill="#fca5a5"/>
+  <text x="175" y="125" text-anchor="middle" font-size="9" fill="#dc2626">72%</text>
+
+  <!-- 7B: ~83% -->
+  <rect x="195" y="90" width="30" height="230" rx="2" fill="#fde047"/>
+  <text x="210" y="85" text-anchor="middle" font-size="9" fill="#a16207">83%</text>
+
+  <!-- 8B: ~87% -->
+  <rect x="230" y="75" width="30" height="245" rx="2" fill="#86efac"/>
+  <text x="245" y="70" text-anchor="middle" font-size="9" fill="#15803d">87%</text>
+
+  <!-- FM bars -->
+  <!-- 4B: ~68% -->
+  <rect x="360" y="140" width="30" height="180" rx="2" fill="#fca5a5"/>
+  <text x="375" y="135" text-anchor="middle" font-size="9" fill="#dc2626">68%</text>
+
+  <!-- 7B: ~80% -->
+  <rect x="395" y="100" width="30" height="220" rx="2" fill="#fde047"/>
+  <text x="410" y="95" text-anchor="middle" font-size="9" fill="#a16207">80%</text>
+
+  <!-- 8B: ~85% -->
+  <rect x="430" y="85" width="30" height="235" rx="2" fill="#86efac"/>
+  <text x="445" y="80" text-anchor="middle" font-size="9" fill="#15803d">85%</text>
+
+  <!-- RWH bars -->
+  <!-- 4B: ~70% -->
+  <rect x="560" y="135" width="30" height="185" rx="2" fill="#fca5a5"/>
+  <text x="575" y="130" text-anchor="middle" font-size="9" fill="#dc2626">70%</text>
+
+  <!-- 7B: ~82% -->
+  <rect x="595" y="95" width="30" height="225" rx="2" fill="#fde047"/>
+  <text x="610" y="90" text-anchor="middle" font-size="9" fill="#a16207">82%</text>
+
+  <!-- 8B: ~88% -->
+  <rect x="630" y="72" width="30" height="248" rx="2" fill="#86efac"/>
+  <text x="645" y="67" text-anchor="middle" font-size="9" fill="#15803d">88%</text>
+
+  <!-- Legend -->
+  <rect x="120" y="360" width="14" height="14" rx="2" fill="#fca5a5"/>
+  <text x="140" y="372" font-size="10" fill="#334155">4B (边缘/低延迟)</text>
+
+  <rect x="280" y="360" width="14" height="14" rx="2" fill="#fde047"/>
+  <text x="300" y="372" font-size="10" fill="#334155">7B (最佳平衡)</text>
+
+  <rect x="440" y="360" width="14" height="14" rx="2" fill="#86efac"/>
+  <text x="460" y="372" font-size="10" fill="#334155">8B (最高精度)</text>
+
+  <!-- Note -->
+  <text x="400" y="395" text-anchor="middle" font-size="9" fill="#94a3b8">数据来源: AgentDoG 1.5 论文 ATBench 基准测试 | 7B 在 R-judge 达到 GPT-5.4 级别</text>
+</svg>

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#eef2ff;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="400" fill="url(#bgGrad)" rx="8"/>
+  <text x="400" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#1e293b">轨迹级诊断 vs 单步判断</text>
+
+  <!-- LEFT: Single-Step Judgment -->
+  <rect x="30" y="55" width="340" height="310" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="200" y="80" text-anchor="middle" font-size="13" font-weight="bold" fill="#dc2626">单步判断 (传统方法)</text>
+
+  <!-- Step 1 -->
+  <rect x="60" y="95" width="100" height="40" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="110" y="120" text-anchor="middle" font-size="11" fill="#334155">Step 1: 查询偏好</text>
+
+  <!-- Step 2 -->
+  <rect x="60" y="150" width="100" height="40" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="110" y="175" text-anchor="middle" font-size="11" fill="#334155">Step 2: 搜索商品</text>
+
+  <!-- Step 3 -->
+  <rect x="60" y="205" width="100" height="40" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="110" y="230" text-anchor="middle" font-size="11" fill="#334155">Step 3: 发送外部</text>
+
+  <!-- Arrows between steps -->
+  <line x1="110" y1="135" x2="110" y2="150" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="110" y1="190" x2="110" y2="205" stroke="#94a3b8" stroke-width="1.5"/>
+
+  <!-- Individual judgments -->
+  <rect x="200" y="97" width="140" height="36" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+  <text x="270" y="120" text-anchor="middle" font-size="11" fill="#166534">安全 (独立判断)</text>
+
+  <rect x="200" y="152" width="140" height="36" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+  <text x="270" y="175" text-anchor="middle" font-size="11" fill="#166534">安全 (独立判断)</text>
+
+  <rect x="200" y="207" width="140" height="36" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+  <text x="270" y="230" text-anchor="middle" font-size="11" fill="#166534">安全 (独立判断)</text>
+
+  <!-- Connection lines -->
+  <line x1="160" y1="115" x2="200" y2="115" stroke="#cbd5e1" stroke-width="1"/>
+  <line x1="160" y1="170" x2="200" y2="170" stroke="#cbd5e1" stroke-width="1"/>
+  <line x1="160" y1="225" x2="200" y2="225" stroke="#cbd5e1" stroke-width="1"/>
+
+  <!-- Result: All safe -->
+  <rect x="80" y="270" width="240" height="36" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="200" y="293" text-anchor="middle" font-size="12" font-weight="bold" fill="#166534">结果: 全部安全</text>
+
+  <!-- Warning badge -->
+  <rect x="80" y="318" width="240" height="30" rx="4" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="200" y="337" text-anchor="middle" font-size="11" font-weight="bold" fill="#dc2626">问题: 跨步骤累积风险被忽略</text>
+
+  <!-- RIGHT: Trajectory-Level Diagnosis -->
+  <rect x="430" y="55" width="340" height="310" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="bold" fill="#166534">轨迹级诊断 (AgentDoG 1.5)</text>
+
+  <!-- Full trajectory input -->
+  <rect x="460" y="95" width="280" height="70" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+  <text x="600" y="115" text-anchor="middle" font-size="11" font-weight="bold" fill="#334155">完整执行轨迹</text>
+  <line x1="480" y1="122" x2="720" y2="122" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="480" y="136" font-size="10" fill="#64748b">Step 1: query_user_preferences</text>
+  <text x="480" y="150" font-size="10" fill="#64748b">Step 2: search_products</text>
+  <text x="480" y="164" font-size="10" fill="#64748b">Step 3: send_to_external_service</text>
+
+  <!-- Cross-step dependency arrows -->
+  <path d="M520,164 Q600,190 680,164" stroke="#f59e0b" stroke-width="2" fill="none" stroke-dasharray="4,3"/>
+  <text x="600" y="188" text-anchor="middle" font-size="9" fill="#d97706">跨步骤依赖</text>
+
+  <!-- Diagnosis engine -->
+  <rect x="520" y="195" width="160" height="40" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="600" y="220" text-anchor="middle" font-size="11" font-weight="bold" fill="#92400e">轨迹级风险评估</text>
+
+  <!-- Result: Risk detected -->
+  <rect x="480" y="250" width="240" height="36" rx="4" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="600" y="273" text-anchor="middle" font-size="12" font-weight="bold" fill="#dc2626">结果: HIGH 风险 - 数据泄露</text>
+
+  <!-- Explanation -->
+  <rect x="480" y="295" width="240" height="50" rx="4" fill="#fff7ed" stroke="#f97316" stroke-width="1"/>
+  <text x="600" y="313" text-anchor="middle" font-size="10" fill="#c2410c">单步无害但组合构成攻击链</text>
+  <text x="600" y="327" text-anchor="middle" font-size="10" fill="#c2410c">风险来源: data_exfiltration</text>
+
+  <!-- Center divider -->
+  <line x1="395" y1="55" x2="395" y2="365" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="395" y="400" text-anchor="middle" font-size="10" fill="#94a3b8">对比</text>
+</svg>

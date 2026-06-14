@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#eef2ff;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="420" fill="url(#bgGrad)" rx="8"/>
+  <text x="400" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#1e293b">免训练在线护栏工作流</text>
+
+  <!-- Agent System -->
+  <rect x="40" y="70" width="180" height="120" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="130" y="95" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e40af">Agent 系统</text>
+  <line x1="60" y1="103" x2="200" y2="103" stroke="#93c5fd" stroke-width="1"/>
+  <text x="60" y="118" font-size="10" fill="#334155">- 任务规划</text>
+  <text x="60" y="132" font-size="10" fill="#334155">- 工具调用</text>
+  <text x="60" y="146" font-size="10" fill="#334155">- 状态更新</text>
+
+  <!-- Arrow: Agent -> Guardrail -->
+  <line x1="220" y1="130" x2="310" y2="130" stroke="#64748b" stroke-width="2"/>
+  <polygon points="310,125 320,130 310,135" fill="#64748b"/>
+  <text x="265" y="122" text-anchor="middle" font-size="9" fill="#64748b">轨迹数据</text>
+
+  <!-- Guardrail Service -->
+  <rect x="320" y="70" width="180" height="120" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="410" y="95" text-anchor="middle" font-size="13" font-weight="bold" fill="#166534">AgentDoG 护栏服务</text>
+  <line x1="340" y1="103" x2="480" y2="103" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="340" y="118" font-size="10" fill="#334155">- 轨迹级诊断</text>
+  <text x="340" y="132" font-size="10" fill="#334155">- Rationale 生成</text>
+  <text x="340" y="146" font-size="10" fill="#334155">- 风险分类输出</text>
+
+  <!-- Arrow: Guardrail -> Agent -->
+  <line x1="500" y1="130" x2="590" y2="130" stroke="#64748b" stroke-width="2"/>
+  <polygon points="590,125 600,130 590,135" fill="#64748b"/>
+  <text x="545" y="122" text-anchor="middle" font-size="9" fill="#64748b">评估结果</text>
+
+  <!-- Action Decision -->
+  <rect x="600" y="70" width="160" height="120" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="680" y="95" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400e">动作决策</text>
+
+  <!-- Three action branches -->
+  <rect x="620" y="108" width="120" height="28" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+  <text x="680" y="126" text-anchor="middle" font-size="10" fill="#166534">低风险: 放行</text>
+
+  <rect x="620" y="142" width="120" height="28" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="680" y="160" text-anchor="middle" font-size="10" fill="#92400e">中风险: 告警</text>
+
+  <rect x="620" y="176" width="120" height="28" rx="4" fill="#fef2f2" stroke="#ef4444" stroke-width="1"/>
+  <text x="680" y="194" text-anchor="middle" font-size="10" fill="#dc2626">高风险: 阻断</text>
+
+  <!-- Feedback loop -->
+  <path d="M680,194 Q680,350 410,350 Q140,350 130,190" stroke="#a855f7" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="130,185 135,195 125,195" fill="#a855z7"/>
+
+  <!-- Key features section -->
+  <rect x="40" y="230" width="720" height="160" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="400" y="255" text-anchor="middle" font-size="13" font-weight="bold" fill="#334155">免训练在线护栏的核心特性</text>
+
+  <!-- Feature 1 -->
+  <rect x="60" y="270" width="220" height="100" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="170" y="293" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e40af">即插即用</text>
+  <line x1="80" y1="301" x2="260" y2="301" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="80" y="317" font-size="10" fill="#334155">无需对目标 Agent 模型</text>
+  <text x="80" y="331" font-size="10" fill="#334155">进行任何微调或参数修改</text>
+  <text x="80" y="345" font-size="10" fill="#334155">独立服务，API 接口调用</text>
+
+  <!-- Feature 2 -->
+  <rect x="300" y="270" width="220" height="100" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="410" y="293" text-anchor="middle" font-size="11" font-weight="bold" fill="#92400e">实时评估</text>
+  <line x1="320" y1="301" x2="500" y2="301" stroke="#fde68a" stroke-width="1"/>
+  <text x="320" y="317" font-size="10" fill="#334155">在 Agent 执行过程中</text>
+  <text x="320" y="331" font-size="10" fill="#334155">实时分析每一步的轨迹数据</text>
+  <text x="320" y="345" font-size="10" fill="#334155">毫秒级延迟响应</text>
+
+  <!-- Feature 3 -->
+  <rect x="540" y="270" width="220" height="100" rx="6" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="650" y="293" text-anchor="middle" font-size="11" font-weight="bold" fill="#166534">无需微调</text>
+  <line x1="560" y1="301" x2="740" y2="301" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="560" y="317" font-size="10" fill="#334155">预训练的诊断模型直接</text>
+  <text x="560" y="331" font-size="10" fill="#334155">部署为护栏服务，不依赖</text>
+  <text x="560" y="345" font-size="10" fill="#334155">目标模型的训练数据</text>
+
+  <!-- Bottom label -->
+  <rect x="40" y="398" width="720" height="18" rx="4" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
+  <text x="400" y="411" text-anchor="middle" font-size="10" fill="#16653d">AgentDoG 诊断模型作为独立服务运行，目标 Agent 参数保持不变</text>
+</svg>

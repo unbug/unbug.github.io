@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#eef2ff;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="460" fill="url(#bgGrad)" rx="8"/>
+  <text x="400" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#1e293b">Micropaper Agent 安全闭环: APB + AgentDoG + REFLECT</text>
+
+  <!-- Timeline arrow -->
+  <line x1="80" y1="400" x2="720" y2="400" stroke="#64748b" stroke-width="2"/>
+  <polygon points="720,395 730,400 720,405" fill="#64748b"/>
+
+  <!-- Timeline labels -->
+  <text x="160" y="420" text-anchor="middle" font-size="10" fill="#64748b">事前</text>
+  <text x="400" y="420" text-anchor="middle" font-size="10" fill="#64748b">事中</text>
+  <text x="640" y="420" text-anchor="middle" font-size="10" fill="#64748b">事后</text>
+
+  <!-- APB - Pre-assessment -->
+  <rect x="50" y="60" width="220" height="200" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="160" y="90" text-anchor="middle" font-size="14" font-weight="bold" fill="#1d4ed8">APB (第67篇)</text>
+  <line x1="70" y1="98" x2="250" y2="98" stroke="#bfdbfe" stroke-width="1"/>
+
+  <rect x="70" y="110" width="180" height="36" rx="4" fill="#ffffff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="160" y="132" text-anchor="middle" font-size="11" fill="#1e40af">规划能力评估</text>
+
+  <rect x="70" y="154" width="180" height="36" rx="4" fill="#ffffff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="160" y="176" text-anchor="middle" font-size="11" fill="#1e40af">不可解任务识别</text>
+
+  <rect x="70" y="198" width="180" height="36" rx="4" fill="#ffffff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="160" y="220" text-anchor="middle" font-size="11" fill="#1e40af">工具鲁棒性测试</text>
+
+  <rect x="70" y="242" width="180" height="36" rx="4" fill="#ffffff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="160" y="264" text-anchor="middle" font-size="11" fill="#1e40af">反馈条件化规划</text>
+
+  <!-- APB tag -->
+  <rect x="70" y="288" width="180" height="24" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="160" y="304" text-anchor="middle" font-size="10" font-weight="bold" fill="#1d4ed8">方向正确性保障</text>
+
+  <!-- AgentDoG - In-process Guardrail -->
+  <rect x="290" y="60" width="220" height="200" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="400" y="90" text-anchor="middle" font-size="14" font-weight="bold" fill="#166534">AgentDoG 1.5</text>
+  <line x1="310" y1="98" x2="490" y2="98" stroke="#bbf7d0" stroke-width="1"/>
+
+  <rect x="310" y="110" width="180" height="36" rx="4" fill="#ffffff" stroke="#86efac" stroke-width="1"/>
+  <text x="400" y="132" text-anchor="middle" font-size="11" fill="#166534">轨迹级风险评估</text>
+
+  <rect x="310" y="154" width="180" height="36" rx="4" fill="#ffffff" stroke="#86efac" stroke-width="1"/>
+  <text x="400" y="176" text-anchor="middle" font-size="11" fill="#166534">Rationale-Enhanced</text>
+
+  <rect x="310" y="198" width="180" height="36" rx="4" fill="#ffffff" stroke="#86efac" stroke-width="1"/>
+  <text x="400" y="220" text-anchor="middle" font-size="11" fill="#166534">免训练在线护栏</text>
+
+  <rect x="310" y="242" width="180" height="36" rx="4" fill="#ffffff" stroke="#86efac" stroke-width="1"/>
+  <text x="400" y="264" text-anchor="middle" font-size="11" fill="#166534">跨步骤累积风险检测</text>
+
+  <!-- AgentDoG tag -->
+  <rect x="310" y="288" width="180" height="24" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+  <text x="400" y="304" text-anchor="middle" font-size="10" font-weight="bold" fill="#166534">过程安全性保障</text>
+
+  <!-- REFLECT - Post-mortem -->
+  <rect x="530" y="60" width="220" height="200" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="640" y="90" text-anchor="middle" font-size="14" font-weight="bold" fill="#92400e">REFLECT (第66篇)</text>
+  <line x1="550" y1="98" x2="730" y2="98" stroke="#fde68a" stroke-width="1"/>
+
+  <rect x="550" y="110" width="180" height="36" rx="4" fill="#ffffff" stroke="#fde68a" stroke-width="1"/>
+  <text x="640" y="132" text-anchor="middle" font-size="11" fill="#92400e">错误归因分析</text>
+
+  <rect x="550" y="154" width="180" height="36" rx="4" fill="#ffffff" stroke="#fde68a" stroke-width="1"/>
+  <text x="640" y="176" text-anchor="middle" font-size="11" fill="#92400e">根因定位</text>
+
+  <rect x="550" y="198" width="180" height="36" rx="4" fill="#ffffff" stroke="#fde68a" stroke-width="1"/>
+  <text x="640" y="220" text-anchor="middle" font-size="11" fill="#92400e">失败模式分类</text>
+
+  <rect x="550" y="242" width="180" height="36" rx="4" fill="#ffffff" stroke="#fde68a" stroke-width="1"/>
+  <text x="640" y="264" text-anchor="middle" font-size="11" fill="#92400e">改进建议生成</text>
+
+  <!-- REFLECT tag -->
+  <rect x="550" y="288" width="180" height="24" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="640" y="304" text-anchor="middle" font-size="10" font-weight="bold" fill="#92400e">事后改进闭环</text>
+
+  <!-- Feedback arrows between components -->
+  <!-- APB -> AgentDoG -->
+  <path d="M270,160 Q300,160 290,160" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="290,155 300,160 290,165" fill="#64748b"/>
+
+  <!-- AgentDoG -> REFLECT -->
+  <path d="M510,160 Q540,160 530,160" stroke="#64748b" stroke-width="2" fill="none"/>
+  <polygon points="530,155 540,160 530,165" fill="#64748b"/>
+
+  <!-- Feedback loop: REFLECT -> APB (improvement) -->
+  <path d="M640,260 Q640,380 160,380" stroke="#a855f7" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
+  <polygon points="160,375 165,385 155,385" fill="#a855f7"/>
+
+  <!-- Feedback label -->
+  <rect x="340" y="365" width="120" height="20" rx="4" fill="#f3e8ff" stroke="#a855f7" stroke-width="1"/>
+  <text x="400" y="379" text-anchor="middle" font-size="10" fill="#6b21a8">持续改进反馈</text>
+
+  <!-- Bottom summary -->
+  <rect x="80" y="435" width="640" height="20" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="400" y="449" text-anchor="middle" font-size="10" fill="#64748b">事前评估(APB) + 事中护栏(AgentDoG) + 事后归因(REFLECT) = Agent全生命周期安全治理闭环</text>
+</svg>
