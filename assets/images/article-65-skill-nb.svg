@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+
+  <!-- Background -->
+  <rect width="800" height="620" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a2e">SKILL.nb: 双轨容错与生命周期治理框架</text>
+
+  <!-- ====== LEFT SIDE: Selective Formalization Decision Tree ====== -->
+  <rect x="20" y="52" width="370" height="248" rx="6" fill="#ffffff" stroke="#d1d5db" stroke-width="1"/>
+  <text x="205" y="76" text-anchor="middle" font-size="13" font-weight="bold" fill="#3b82f6">选择性形式化决策树</text>
+
+  <!-- Decision diamond -->
+  <polygon points="205,95 265,125 205,155 145,125" fill="none" stroke="#3b82f6" stroke-width="2"/>
+  <text x="205" y="129" text-anchor="middle" font-size="10" fill="#3b82f6">关键性</text>
+
+  <!-- High path -->
+  <line x1="265" y1="125" x2="340" y2="125" stroke="#ef4444" stroke-width="2"/>
+  <text x="300" y="118" text-anchor="middle" font-size="9" fill="#ef4444">高</text>
+  <rect x="340" y="110" width="45" height="30" rx="3" fill="#fef2f2" stroke="#ef4444" stroke-width="1"/>
+  <text x="362" y="129" text-anchor="middle" font-size="9" fill="#dc2626">代码级</text>
+
+  <!-- Low path -->
+  <line x1="145" y1="125" x2="70" y2="125" stroke="#22c55e" stroke-width="2"/>
+  <text x="108" y="118" text-anchor="middle" font-size="9" fill="#22c55e">低</text>
+  <rect x="15" y="110" width="45" height="30" rx="3" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
+  <text x="37" y="129" text-anchor="middle" font-size="9" fill="#16a34a">自然语言</text>
+
+  <!-- Second decision -->
+  <polygon points="205,180 265,210 205,240 145,210" fill="none" stroke="#3b82f6" stroke-width="2"/>
+  <text x="205" y="214" text-anchor="middle" font-size="10" fill="#3b82f6">确定性</text>
+
+  <!-- High determinism -->
+  <line x1="265" y1="210" x2="340" y2="210" stroke="#ef4444" stroke-width="2"/>
+  <rect x="340" y="195" width="45" height="30" rx="3" fill="#fef2f2" stroke="#ef4444" stroke-width="1"/>
+  <text x="362" y="214" text-anchor="middle" font-size="9" fill="#dc2626">严格验证</text>
+
+  <!-- Low determinism -->
+  <line x1="145" y1="210" x2="70" y2="210" stroke="#22c55e" stroke-width="2"/>
+  <rect x="15" y="195" width="45" height="30" rx="3" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
+  <text x="37" y="214" text-anchor="middle" font-size="9" fill="#16a34a">LLM决策</text>
+
+  <!-- Third decision -->
+  <polygon points="205,265 265,295 205,325 145,295" fill="none" stroke="#3b82f6" stroke-width="2"/>
+  <text x="205" y="299" text-anchor="middle" font-size="10" fill="#3b82f6">环境稳定</text>
+
+  <!-- Stable -->
+  <line x1="265" y1="295" x2="340" y2="295" stroke="#ef4444" stroke-width="2"/>
+  <rect x="340" y="280" width="45" height="30" rx="3" fill="#fef2f2" stroke="#ef4444" stroke-width="1"/>
+  <text x="362" y="299" text-anchor="middle" font-size="9" fill="#dc2626">形式化</text>
+
+  <!-- Unstable -->
+  <line x1="145" y1="295" x2="70" y2="295" stroke="#22c55e" stroke-width="2"/>
+  <rect x="15" y="280" width="45" height="30" rx="3" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
+  <text x="37" y="299" text-anchor="middle" font-size="9" fill="#16a34a">自适应</text>
+
+  <!-- ====== RIGHT SIDE: Gated Execution Dual-Track ====== -->
+  <rect x="410" y="52" width="370" height="248" rx="6" fill="#ffffff" stroke="#d1d5db" stroke-width="1"/>
+  <text x="595" y="76" text-anchor="middle" font-size="13" font-weight="bold" fill="#3b82f6">门控条件执行：双轨容错</text>
+
+  <!-- Code Track -->
+  <rect x="430" y="95" width="150" height="70" rx="5" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="505" y="115" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e40af">代码轨道</text>
+  <line x1="445" y1="123" x2="565" y2="123" stroke="#bfdbfe" stroke-width="0.5"/>
+  <text x="505" y="138" text-anchor="middle" font-size="9" fill="#475569">形式化规范</text>
+  <text x="505" y="152" text-anchor="middle" font-size="9" fill="#475569">前置/后置条件</text>
+
+  <!-- LLM Track -->
+  <rect x="620" y="95" width="150" height="70" rx="5" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="695" y="115" text-anchor="middle" font-size="11" font-weight="bold" fill="#16a34a">LLM轨道</text>
+  <line x1="635" y1="123" x2="755" y2="123" stroke="#bbf7d0" stroke-width="0.5"/>
+  <text x="695" y="138" text-anchor="middle" font-size="9" fill="#475569">语义理解</text>
+  <text x="695" y="152" text-anchor="middle" font-size="9" fill="#475569">自然语言决策</text>
+
+  <!-- Gate -->
+  <rect x="530" y="185" width="130" height="50" rx="5" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="595" y="205" text-anchor="middle" font-size="11" font-weight="bold" fill="#d97706">门控条件检查</text>
+  <text x="595" y="222" text-anchor="middle" font-size="9" fill="#92400e">状态验证 + 格式校验</text>
+
+  <!-- Arrows from tracks to gate -->
+  <line x1="505" y1="165" x2="570" y2="185" stroke="#3b82f6" stroke-width="1.5"/>
+  <polygon points="570,185 565,178 575,178" fill="#3b82f6"/>
+  <line x1="695" y1="165" x2="620" y2="185" stroke="#22c55e" stroke-width="1.5"/>
+  <polygon points="620,185 625,178 615,178" fill="#22c55e"/>
+
+  <!-- Gate outcomes -->
+  <line x1="595" y1="235" x2="595" y2="270" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="640" y="258" text-anchor="start" font-size="9" fill="#16a34a">通过</text>
+  <rect x="540" y="270" width="110" height="25" rx="3" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
+  <text x="595" y="286" text-anchor="middle" font-size="10" fill="#16a34a">执行下一步</text>
+
+  <!-- Fail path -->
+  <line x1="595" y1="235" x2="470" y2="270" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="520" y="258" text-anchor="start" font-size="9" fill="#dc2626">失败</text>
+  <rect x="410" y="270" width="110" height="25" rx="3" fill="#fef2f2" stroke="#ef4444" stroke-width="1"/>
+  <text x="465" y="286" text-anchor="middle" font-size="10" fill="#dc2626">回退安全状态</text>
+
+  <!-- ====== BOTTOM: Lifecycle Governance ====== -->
+  <rect x="20" y="320" width="760" height="285" rx="6" fill="#ffffff" stroke="#d1d5db" stroke-width="1"/>
+  <text x="400" y="344" text-anchor="middle" font-size="13" font-weight="bold" fill="#3b82f6">笔记本式版本化：生命周期治理</text>
+
+  <!-- Lifecycle stages -->
+  <!-- Stage 1: Design -->
+  <rect x="50" y="360" width="140" height="90" rx="5" fill="#ede9fe" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="120" y="382" text-anchor="middle" font-size="11" font-weight="bold" fill="#6d28d9">设计阶段</text>
+  <line x1="65" y1="390" x2="175" y2="390" stroke="#ddd6fe" stroke-width="0.5"/>
+  <text x="120" y="406" text-anchor="middle" font-size="9" fill="#4b5563">形式化规范定义</text>
+  <text x="120" y="420" text-anchor="middle" font-size="9" fill="#4b5563">门控条件配置</text>
+  <text x="120" y="434" text-anchor="middle" font-size="9" fill="#4b5563">自然语言描述</text>
+
+  <!-- Arrow -->
+  <line x1="190" y1="405" x2="220" y2="405" stroke="#d1d5db" stroke-width="2"/>
+  <polygon points="220,405 213,400 213,410" fill="#d1d5db"/>
+
+  <!-- Stage 2: Execute -->
+  <rect x="220" y="360" width="140" height="90" rx="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="290" y="382" text-anchor="middle" font-size="11" font-weight="bold" fill="#1d4ed8">执行阶段</text>
+  <line x1="235" y1="390" x2="345" y2="390" stroke="#bfdbfe" stroke-width="0.5"/>
+  <text x="290" y="406" text-anchor="middle" font-size="9" fill="#4b5563">双轨并行执行</text>
+  <text x="290" y="420" text-anchor="middle" font-size="9" fill="#4b5563">门控交叉验证</text>
+  <text x="290" y="434" text-anchor="middle" font-size="9" fill="#4b5563">执行日志记录</text>
+
+  <!-- Arrow -->
+  <line x1="360" y1="405" x2="390" y2="405" stroke="#d1d5db" stroke-width="2"/>
+  <polygon points="390,405 383,400 383,410" fill="#d1d5db"/>
+
+  <!-- Stage 3: Verify -->
+  <rect x="390" y="360" width="140" height="90" rx="5" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="460" y="382" text-anchor="middle" font-size="11" font-weight="bold" fill="#d97706">验证阶段</text>
+  <line x1="405" y1="390" x2="515" y2="390" stroke="#fde68a" stroke-width="0.5"/>
+  <text x="460" y="406" text-anchor="middle" font-size="9" fill="#4b5563">结果格式校验</text>
+  <text x="460" y="420" text-anchor="middle" font-size="9" fill="#4b5563">一致性检查</text>
+  <text x="460" y="434" text-anchor="middle" font-size="9" fill="#4b5563">版本快照保存</text>
+
+  <!-- Arrow -->
+  <line x1="530" y1="405" x2="560" y2="405" stroke="#d1d5db" stroke-width="2"/>
+  <polygon points="560,405 553,400 553,410" fill="#d1d5db"/>
+
+  <!-- Stage 4: Evolve -->
+  <rect x="560" y="360" width="140" height="90" rx="5" fill="#fce7f3" stroke="#ec4899" stroke-width="1.5"/>
+  <text x="630" y="382" text-anchor="middle" font-size="11" font-weight="bold" fill="#be185d">演化阶段</text>
+  <line x1="575" y1="390" x2="685" y2="390" stroke="#fbcfe8" stroke-width="0.5"/>
+  <text x="630" y="406" text-anchor="middle" font-size="9" fill="#4b5563">版本链追溯</text>
+  <text x="630" y="420" text-anchor="middle" font-size="9" fill="#4b5563">环境迁移适配</text>
+  <text x="630" y="434" text-anchor="middle" font-size="9" fill="#4b5563">规范迭代更新</text>
+
+  <!-- Feedback loop arrow -->
+  <path d="M 630,450 L 630,480 Q 630,510 400,510 Q 170,510 120,480 L 120,450" fill="none" stroke="#d1d5db" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <polygon points="120,450 127,455 127,445" fill="#d1d5db"/>
+
+  <!-- Version chain visualization -->
+  <text x="400" y="530" text-anchor="middle" font-size="10" font-weight="bold" fill="#6b7280">版本链示例</text>
+
+  <!-- Version boxes -->
+  <rect x="100" y="545" width="80" height="40" rx="3" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+  <text x="140" y="562" text-anchor="middle" font-size="9" font-weight="bold" fill="#374151">v1.0</text>
+  <text x="140" y="576" text-anchor="middle" font-size="8" fill="#6b7280">初始版本</text>
+
+  <line x1="180" y1="565" x2="200" y2="565" stroke="#d1d5db" stroke-width="1.5"/>
+  <polygon points="200,565 194,561 194,569" fill="#d1d5db"/>
+
+  <rect x="200" y="545" width="80" height="40" rx="3" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
+  <text x="240" y="562" text-anchor="middle" font-size="9" font-weight="bold" fill="#16a34a">v1.1</text>
+  <text x="240" y="576" text-anchor="middle" font-size="8" fill="#6b7280">规范更新</text>
+
+  <line x1="280" y1="565" x2="300" y2="565" stroke="#d1d5db" stroke-width="1.5"/>
+  <polygon points="300,565 294,561 294,569" fill="#d1d5db"/>
+
+  <rect x="300" y="545" width="80" height="40" rx="3" fill="#eff6ff" stroke="#3b82f6" stroke-width="1"/>
+  <text x="340" y="562" text-anchor="middle" font-size="9" font-weight="bold" fill="#2563eb">v1.2</text>
+  <text x="340" y="576" text-anchor="middle" font-size="8" fill="#6b7280">门控增强</text>
+
+  <line x1="380" y1="565" x2="400" y2="565" stroke="#d1d5db" stroke-width="1.5"/>
+  <polygon points="400,565 394,561 394,569" fill="#d1d5db"/>
+
+  <rect x="400" y="545" width="80" height="40" rx="3" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="440" y="562" text-anchor="middle" font-size="9" font-weight="bold" fill="#d97706">v2.0</text>
+  <text x="440" y="576" text-anchor="middle" font-size="8" fill="#6b7280">环境迁移</text>
+
+  <line x1="480" y1="565" x2="500" y2="565" stroke="#d1d5db" stroke-width="1.5"/>
+  <polygon points="500,565 494,561 494,569" fill="#d1d5db"/>
+
+  <rect x="500" y="545" width="80" height="40" rx="3" fill="#ede9fe" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="540" y="562" text-anchor="middle" font-size="9" font-weight="bold" fill="#7c3aed">v2.1</text>
+  <text x="540" y="576" text-anchor="middle" font-size="8" fill="#6b7280">规范迭代</text>
+
+  <!-- Key insight callout -->
+  <rect x="590" y="545" width="170" height="40" rx="3" fill="#fefce8" stroke="#eab308" stroke-width="1"/>
+  <text x="675" y="562" text-anchor="middle" font-size="9" font-weight="bold" fill="#a16207">关键转变</text>
+  <text x="675" y="576" text-anchor="middle" font-size="8" fill="#713f12">一次成功 → 持续做对</text>
+
+</svg>

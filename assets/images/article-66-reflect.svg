@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4a90d9"/>
+    </marker>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#eef2f7;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="520" rx="12" fill="url(#bgGrad)" stroke="#d1d9e6" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="400" y="36" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a2332">REFLECT: 干预-重放-对比证据诊断闭环</text>
+
+  <!-- Phase labels (top) -->
+  <rect x="80" y="52" width="160" height="24" rx="4" fill="#e8f0fe"/>
+  <text x="160" y="69" text-anchor="middle" font-size="12" font-weight="bold" fill="#3b5998">第一阶段：诊断候选生成</text>
+
+  <rect x="320" y="52" width="160" height="24" rx="4" fill="#fef7e0"/>
+  <text x="400" y="69" text-anchor="middle" font-size="12" font-weight="bold" fill="#b8860b">第二阶段：受控重放与干预</text>
+
+  <rect x="560" y="52" width="160" height="24" rx="4" fill="#e8f8e8"/>
+  <text x="640" y="69" text-anchor="middle" font-size="12" font-weight="bold" fill="#2d7a2d">第三阶段：对比证据精炼</text>
+
+  <!-- Phase 1: Candidate Generation -->
+  <rect x="80" y="95" width="160" height="40" rx="6" fill="#ffffff" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="160" y="112" text-anchor="middle" font-size="11" fill="#333">完整执行轨迹</text>
+  <text x="160" y="127" text-anchor="middle" font-size="10" fill="#888">(工具调用 + 推理步骤)</text>
+
+  <!-- Arrow from Phase 1 to Phase 2 -->
+  <line x1="245" y1="115" x2="310" y2="115" stroke="#4a90d9" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Phase 2: Controlled Replay -->
+  <rect x="320" y="95" width="160" height="40" rx="6" fill="#ffffff" stroke="#e8a020" stroke-width="1.5"/>
+  <text x="400" y="112" text-anchor="middle" font-size="11" fill="#333">施加诊断补丁</text>
+  <text x="400" y="127" text-anchor="middle" font-size="10" fill="#888">(截断 + 重放后续步骤)</text>
+
+  <!-- Arrow from Phase 2 to Phase 3 -->
+  <line x1="565" y1="115" x2="590" y2="115" stroke="#4a90d9" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Phase 3: Evidence Refinement -->
+  <rect x="560" y="95" width="160" height="40" rx="6" fill="#ffffff" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="640" y="112" text-anchor="middle" font-size="11" fill="#333">结果翻转验证</text>
+  <text x="640" y="127" text-anchor="middle" font-size="10" fill="#888">(正/负证据收集)</text>
+
+  <!-- Decision diamond -->
+  <polygon points="400,155 460,195 400,235 340,195" fill="#ffffff" stroke="#e8a020" stroke-width="1.5"/>
+  <text x="400" y="190" text-anchor="middle" font-size="10" fill="#333">结果翻转？</text>
+
+  <!-- Yes branch -->
+  <line x1="460" y1="195" x2="560" y2="175" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="505" y="183" font-size="10" fill="#2d7a2d">是</text>
+
+  <!-- No branch -->
+  <line x1="400" y1="235" x2="400" y2="270" stroke="#999" stroke-width="1.5"/>
+  <text x="410" y="258" font-size="10" fill="#666">否</text>
+
+  <!-- Positive evidence box -->
+  <rect x="560" y="175" width="160" height="36" rx="6" fill="#e8f8e8" stroke="#4a90d9" stroke-width="1"/>
+  <text x="640" y="192" text-anchor="middle" font-size="10" fill="#333">正向证据</text>
+  <text x="640" y="205" text-anchor="middle" font-size="9" fill="#666">(确认错误步骤)</text>
+
+  <!-- Negative evidence box -->
+  <rect x="320" y="270" width="160" height="36" rx="6" fill="#f5f5f5" stroke="#999" stroke-width="1"/>
+  <text x="400" y="287" text-anchor="middle" font-size="10" fill="#333">负向证据</text>
+  <text x="400" y="300" text-anchor="middle" font-size="9" fill="#666">(排除非错误步骤)</text>
+
+  <!-- Merge arrow -->
+  <line x1="560" y1="211" x2="480" y2="288" stroke="#4a90d9" stroke-width="1.5"/>
+  <line x1="320" y1="288" x2="400" y2="288" stroke="#4a90d9" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Evidence pool -->
+  <rect x="320" y="300" width="160" height="40" rx="6" fill="#ffffff" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="400" y="317" text-anchor="middle" font-size="11" fill="#333">对比证据池</text>
+  <text x="400" y="332" text-anchor="middle" font-size="9" fill="#888">(已验证的正/负证据)</text>
+
+  <!-- Arrow down to refinement -->
+  <line x1="400" y1="345" x2="400" y2="375" stroke="#4a90d9" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Refinement box -->
+  <rect x="320" y="380" width="160" height="40" rx="6" fill="#e8f0fe" stroke="#4a90d9" stroke-width="1.5"/>
+  <text x="400" y="397" text-anchor="middle" font-size="11" fill="#333">精炼最终归因</text>
+  <text x="400" y="412" text-anchor="middle" font-size="9" fill="#888">(基于对比证据)</text>
+
+  <!-- Arrow to output -->
+  <line x1="400" y1="425" x2="400" y2="455" stroke="#4a90d9" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Output box -->
+  <rect x="320" y="460" width="160" height="40" rx="6" fill="#1a2332" stroke="#1a2332" stroke-width="1.5"/>
+  <text x="400" y="478" text-anchor="middle" font-size="11" fill="#ffffff">最终错误归因</text>
+  <text x="400" y="493" text-anchor="middle" font-size="9" fill="#a0b0c0">(可操作定位结果)</text>
+
+  <!-- Loopback arrow (from output back to candidate generation) -->
+  <path d="M 320,480 Q 100,480 100,115 L 79,115" fill="none" stroke="#e8a020" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="95" y="300" font-size="9" fill="#b8860b" transform="rotate(-90,95,300)">迭代优化</text>
+
+  <!-- Key insight callout -->
+  <rect x="120" y="460" width="170" height="40" rx="6" fill="#fff8e1" stroke="#e8a020" stroke-width="1"/>
+  <text x="205" y="477" text-anchor="middle" font-size="9" fill="#333">将归因从猜测</text>
+  <text x="205" y="490" text-anchor="middle" font-size="9" fill="#333">变为可证伪的科学方法</text>
+
+  <!-- Legend -->
+  <rect x="610" y="270" width="160" height="80" rx="6" fill="#ffffff" stroke="#d1d9e6" stroke-width="1"/>
+  <text x="690" y="288" text-anchor="middle" font-size="10" font-weight="bold" fill="#333">图例</text>
+  <rect x="625" y="298" width="14" height="10" rx="2" fill="#e8f0fe" stroke="#4a90d9" stroke-width="1"/>
+  <text x="645" y="307" font-size="9" fill="#333">诊断阶段</text>
+  <rect x="625" y="314" width="14" height="10" rx="2" fill="#fef7e0" stroke="#e8a020" stroke-width="1"/>
+  <text x="645" y="323" font-size="9" fill="#333">干预阶段</text>
+  <rect x="625" y="330" width="14" height="10" rx="2" fill="#e8f8e8" stroke="#4a90d9" stroke-width="1"/>
+  <text x="645" y="339" font-size="9" fill="#333">验证阶段</text>
+  <rect x="625" y="346" width="14" height="10" rx="2" fill="#1a2332"/>
+  <text x="645" y="355" font-size="9" fill="#333">输出结果</text>
+
+  <!-- Source label -->
+  <text x="780" y="510" text-anchor="end" font-size="8" fill="#aaa">Source: Lin et al., arXiv:2606.09071v1</text>
+</svg>
