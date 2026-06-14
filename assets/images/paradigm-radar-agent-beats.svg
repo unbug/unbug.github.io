@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1a1f4e;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" font-size="26" font-weight="bold" fill="#e2e8f0">AgentBeats: AAA范式</text>
+  <text x="400" y="78" text-anchor="middle" font-size="15" fill="#94a3b8">基准即 Agent — A2A + MCP 标准化评估</text>
+
+  <!-- Left side: Traditional N×M -->
+  <rect x="30" y="110" width="340" height="360" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="200" y="145" text-anchor="middle" font-size="18" font-weight="bold" fill="#f87171">传统模式: N × M</text>
+
+  <!-- Agents on left -->
+  <rect x="60" y="175" width="90" height="42" rx="8" fill="#3b82f6" opacity="0.8"/>
+  <text x="105" y="201" text-anchor="middle" font-size="13" fill="white">Agent A</text>
+
+  <rect x="60" y="240" width="90" height="42" rx="8" fill="#3b82f6" opacity="0.8"/>
+  <text x="105" y="266" text-anchor="middle" font-size="13" fill="white">Agent B</text>
+
+  <rect x="60" y="305" width="90" height="42" rx="8" fill="#3b82f6" opacity="0.8"/>
+  <text x="105" y="331" text-anchor="middle" font-size="13" fill="white">Agent C</text>
+
+  <!-- Benchmarks on right -->
+  <rect x="270" y="175" width="90" height="42" rx="8" fill="#f59e0b" opacity="0.8"/>
+  <text x="315" y="201" text-anchor="middle" font-size="13" fill="white">Benchmark X</text>
+
+  <rect x="270" y="240" width="90" height="42" rx="8" fill="#f59e0b" opacity="0.8"/>
+  <text x="315" y="266" text-anchor="middle" font-size="13" fill="white">Benchmark Y</text>
+
+  <rect x="270" y="305" width="90" height="42" rx="8" fill="#f59e0b" opacity="0.8"/>
+  <text x="315" y="331" text-anchor="middle" font-size="13" fill="white">Benchmark Z</text>
+
+  <!-- N×M connections (dense mesh) -->
+  <line x1="150" y1="196" x2="270" y2="196" stroke="#f87171" stroke-width="1.5" opacity="0.4"/>
+  <line x1="150" y1="196" x2="270" y2="261" stroke="#f87171" stroke-width="1.5" opacity="0.4"/>
+  <line x1="150" y1="196" x2="270" y2="326" stroke="#f87171" stroke-width="1.5" opacity="0.4"/>
+  <line x1="150" y1="261" x2="270" y2="196" stroke="#f87171" stroke-width="1.5" opacity="0.4"/>
+  <line x1="150" y1="261" x2="270" y2="261" stroke="#f87171" stroke-width="1.5" opacity="0.4"/>
+  <line x1="150" y1="261" x2="270" y2="326" stroke="#f87171" stroke-width="1.5" opacity="0.4"/>
+  <line x1="150" y1="326" x2="270" y2="196" stroke="#f87171" stroke-width="1.5" opacity="0.4"/>
+  <line x1="150" y1="326" x2="270" y2="261" stroke="#f87171" stroke-width="1.5" opacity="0.4"/>
+  <line x1="150" y1="326" x2="270" y2="326" stroke="#f87171" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- N×M label -->
+  <text x="200" y="400" text-anchor="middle" font-size="14" fill="#94a3b8">集成复杂度: O(N × M)</text>
+  <text x="200" y="420" text-anchor="middle" font-size="13" fill="#64748b">每条路径需定制开发</text>
+
+  <!-- Right side: AAA N+M -->
+  <rect x="430" y="110" width="340" height="360" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="600" y="145" text-anchor="middle" font-size="18" font-weight="bold" fill="#4ade80">AAA模式: N + M</text>
+
+  <!-- Agents on left -->
+  <rect x="460" y="175" width="90" height="42" rx="8" fill="#3b82f6" opacity="0.8"/>
+  <text x="505" y="201" text-anchor="middle" font-size="13" fill="white">Agent A</text>
+
+  <rect x="460" y="240" width="90" height="42" rx="8" fill="#3b82f6" opacity="0.8"/>
+  <text x="505" y="266" text-anchor="middle" font-size="13" fill="white">Agent B</text>
+
+  <rect x="460" y="305" width="90" height="42" rx="8" fill="#3b82f6" opacity="0.8"/>
+  <text x="505" y="331" text-anchor="middle" font-size="13" fill="white">Agent C</text>
+
+  <!-- Judge Agents (middle) -->
+  <rect x="640" y="175" width="90" height="42" rx="8" fill="#a855f7" opacity="0.8" filter="url(#glow)"/>
+  <text x="685" y="196" text-anchor="middle" font-size="11" fill="white">Judge Agent</text>
+  <text x="685" y="210" text-anchor="middle" font-size="10" fill="#c4b5fd">A2A + MCP</text>
+
+  <!-- N+M connections (clean star) -->
+  <line x1="550" y1="196" x2="640" y2="196" stroke="#4ade80" stroke-width="2" opacity="0.7"/>
+  <line x1="550" y1="261" x2="640" y2="196" stroke="#4ade80" stroke-width="2" opacity="0.7"/>
+  <line x1="550" y1="326" x2="640" y2="196" stroke="#4ade80" stroke-width="2" opacity="0.7"/>
+
+  <!-- N+M label -->
+  <text x="600" y="400" text-anchor="middle" font-size="14" fill="#94a3b8">集成复杂度: O(N + M)</text>
+  <text x="600" y="420" text-anchor="middle" font-size="13" fill="#64748b">标准协议统一接入</text>
+
+  <!-- Arrow between -->
+  <path d="M 395 290 L 425 290" stroke="#e2e8f0" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <defs><marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#e2e8f0"/>
+  </marker></defs>
+
+  <!-- Bottom stats -->
+  <rect x="200" y="460" width="400" height="30" rx="6" fill="#1e293b" opacity="0.8"/>
+  <text x="400" y="480" text-anchor="middle" font-size="13" fill="#a5b4fc">298 Judge Agents × 467 Subject Agents — 五个月开放竞赛验证</text>
+</svg>
