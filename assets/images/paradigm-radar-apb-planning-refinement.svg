@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 550" font-family="Arial, sans-serif">
+  <rect width="1200" height="550" fill="#f8fafc" rx="8"/>
+  <text x="600" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#1e293b">规划精炼流程图 — 基于APB诊断的反馈循环</text>
+  
+  <!-- Main flow: left to right with feedback loops -->
+  
+  <!-- Step 0: Task Input -->
+  <rect x="40" y="80" width="160" height="50" rx="8" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <text x="120" y="105" text-anchor="middle" font-size="13" font-weight="bold" fill="#3730a3">任务输入</text>
+  <text x="120" y="122" text-anchor="middle" font-size="10" fill="#6366f1">Task + Tools</text>
+  
+  <!-- Arrow -->
+  <line x1="200" y1="105" x2="240" y2="105" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="240,100 250,105 240,110" fill="#94a3b8"/>
+  
+  <!-- Step 1: Feasibility Check -->
+  <rect x="260" y="80" width="180" height="70" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="350" y="105" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400e">可行性预检查</text>
+  <text x="350" y="122" text-anchor="middle" font-size="10" fill="#d97706">(不可解任务识别)</text>
+  
+  <!-- Decision diamond -->
+  <polygon points="480,105 510,80 540,105 510,130" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="510" y="100" text-anchor="middle" font-size="9" fill="#dc2626">可解?</text>
+  
+  <!-- No path (reject) -->
+  <line x1="540" y1="105" x2="600" y2="105" stroke="#ef4444" stroke-width="2"/>
+  <polygon points="600,100 610,105 600,110" fill="#ef4444"/>
+  <text x="570" y="98" font-size="9" fill="#dc2626">No</text>
+  
+  <!-- Reject result -->
+  <rect x="620" y="80" width="140" height="50" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="690" y="103" text-anchor="middle" font-size="12" font-weight="bold" fill="#dc2626">拒绝执行</text>
+  <text x="690" y="120" text-anchor="middle" font-size="10" fill="#ef4444">task_unresolvable</text>
+  
+  <!-- Yes path -->
+  <line x1="510" y1="130" x2="510" y2="170" stroke="#22c55e" stroke-width="2"/>
+  <polygon points="505,170 510,180 515,170" fill="#22c55e"/>
+  <text x="525" y="155" font-size="9" fill="#16a34a">Yes</text>
+  
+  <!-- Step 2: Initial Plan Generation -->
+  <rect x="430" y="185" width="160" height="70" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="510" y="210" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e40af">初始规划生成</text>
+  <text x="510" y="227" text-anchor="middle" font-size="10" fill="#3b82f6">(Base Planner)</text>
+  
+  <!-- Arrow down -->
+  <line x1="510" y1="255" x2="510" y2="290" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="505,290 510,300 515,290" fill="#94a3b8"/>
+  
+  <!-- Step 3: Step-by-step with verification -->
+  <rect x="350" y="305" width="320" height="120" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="510" y="330" text-anchor="middle" font-size="13" font-weight="bold" fill="#16a34a">逐步执行 + 中间验证</text>
+  
+  <!-- Sub-steps -->
+  <rect x="370" y="345" width="280" height="22" rx="4" fill="#dcfce7"/>
+  <text x="510" y="360" text-anchor="middle" font-size="10" fill="#166534">生成下一步 → 执行 → 验证状态</text>
+  
+  <rect x="370" y="372" width="280" height="22" rx="4" fill="#dcfce7"/>
+  <text x="510" y="387" text-anchor="middle" font-size="10" fill="#166534">每N步检查规划偏离度</text>
+  
+  <!-- Verification decision -->
+  <polygon points="510,420 530,408 550,420 530,432" fill="#fef3c7" stroke="#f59e0b"/>
+  <text x="530" y="423" text-anchor="middle" font-size="8" fill="#92400e">有效?</text>
+  
+  <!-- No: replan loop -->
+  <line x1="550" y1="420" x2="650" y2="420" stroke="#f59e0b" stroke-width="1.5"/>
+  <line x1="650" y1="420" x2="650" y2="370" stroke="#f59e0b" stroke-width="1.5"/>
+  <polygon points="645,370 650,360 655,370" fill="#f59e0b"/>
+  <text x="660" y="398" font-size="9" fill="#d97706">重新规划</text>
+  
+  <!-- Yes: continue -->
+  <line x1="530" y1="432" x2="530" y2="450" stroke="#22c55e" stroke-width="1.5"/>
+  <polygon points="525,450 530,460 535,450" fill="#22c55e"/>
+  
+  <!-- Step 4: Tool Availability Check -->
+  <rect x="430" y="465" width="200" height="55" rx="8" fill="#ffedd5" stroke="#f97316" stroke-width="2"/>
+  <text x="530" y="488" text-anchor="middle" font-size="12" font-weight="bold" fill="#9a3412">工具可用性检查</text>
+  <text x="530" y="505" text-anchor="middle" font-size="10" fill="#ea580c">(损坏工具鲁棒性)</text>
+  
+  <!-- Final output -->
+  <line x1="530" y1="520" x2="530" y2="540" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="525,540 530,550 535,540" fill="#94a3b8"/>
+  
+  <!-- Result -->
+  <rect x="430" y="555" width="200" height="40" rx="8" fill="#d1fae5" stroke="#22c55e" stroke-width="2"/>
+  <text x="530" y="580" text-anchor="middle" font-size="13" font-weight="bold" fill="#065f46">最终规划输出</text>
+  
+  <!-- Side annotations -->
+  <rect x="700" y="80" width="460" height="200" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="930" y="105" text-anchor="middle" font-size="14" font-weight="bold" fill="#334155">APB诊断 → 精炼策略映射</text>
+  
+  <rect x="720" y="120" width="420" height="35" rx="6" fill="#fef3c7"/>
+  <text x="930" y="138" text-anchor="middle" font-size="11" fill="#92400e">不可解任务识别 → 可行性预检查</text>
+  
+  <rect x="720" y="165" width="420" height="35" rx="6" fill="#dbeafe"/>
+  <text x="930" y="183" text-anchor="middle" font-size="11" fill="#1e40af">长程规划衰减 → 中间步骤验证</text>
+  
+  <rect x="720" y="210" width="420" height="35" rx="6" fill="#ffedd5"/>
+  <text x="930" y="228" text-anchor="middle" font-size="11" fill="#9a3412">损坏工具鲁棒性 → 工具可用性检查</text>
+  
+  <!-- Impact metrics -->
+  <rect x="700" y="310" width="460" height="180" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="930" y="335" text-anchor="middle" font-size="14" font-weight="bold" fill="#334155">精炼效果对比</text>
+  
+  <rect x="720" y="350" width="420" height="30" rx="6" fill="#dbeafe"/>
+  <text x="930" y="370" text-anchor="middle" font-size="11" fill="#1e40af">长程规划: 41% → 58% (+17pp)</text>
+  
+  <rect x="720" y="390" width="420" height="30" rx="6" fill="#fef3c7"/>
+  <text x="930" y="410" text-anchor="middle" font-size="11" fill="#92400e">工具鲁棒: -35% → -15% (改善2倍)</text>
+  
+  <rect x="720" y="430" width="420" height="30" rx="6" fill="#d1fae5"/>
+  <text x="930" y="450" text-anchor="middle" font-size="11" fill="#065f46">校准拒绝: 25% → 67% (近3倍)</text>
+  
+  <!-- Core principle -->
+  <rect x="700" y="480" width="460" height="40" rx="8" fill="#fef9c3"/>
+  <text x="930" y="505" text-anchor="middle" font-size="12" font-weight="bold" fill="#854d0e">核心: "边规划边验证" — 反馈循环驱动</text>
+</svg>

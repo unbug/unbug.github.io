@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="Arial, sans-serif">
+  <rect width="1200" height="500" fill="#f8fafc" rx="8"/>
+  <text x="600" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#1e293b">APB 五大评估设置关系图 — 递进式诊断光谱</text>
+  
+  <!-- Central spectrum bar -->
+  <defs>
+    <linearGradient id="spectrumGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1"/>
+      <stop offset="25%" style="stop-color:#6366f1;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#f59e0b;stop-opacity:1"/>
+      <stop offset="75%" style="stop-color:#f97316;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Spectrum bar -->
+  <rect x="80" y="230" width="1040" height="30" rx="15" fill="url(#spectrumGrad)"/>
+  <text x="80" y="220" text-anchor="middle" font-size="11" fill="#3b82f6">理想条件</text>
+  <text x="1120" y="220" text-anchor="middle" font-size="11" fill="#ef4444">现实约束</text>
+  
+  <!-- Five nodes on spectrum -->
+  <!-- Node 1: Overall Planning -->
+  <circle cx="180" cy="245" r="20" fill="#ffffff" stroke="#3b82f6" stroke-width="3"/>
+  <text x="180" y="250" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e40af">1</text>
+  
+  <!-- Node 2: Feedback-Conditioned -->
+  <circle cx="380" cy="245" r="20" fill="#ffffff" stroke="#6366f1" stroke-width="3"/>
+  <text x="380" y="250" text-anchor="middle" font-size="14" font-weight="bold" fill="#3730a3">2</text>
+  
+  <!-- Node 3: Redundant Tool -->
+  <circle cx="580" cy="245" r="20" fill="#ffffff" stroke="#f59e0b" stroke-width="3"/>
+  <text x="580" y="250" text-anchor="middle" font-size="14" font-weight="bold" fill="#92400e">3</text>
+  
+  <!-- Node 4: Corrupted Tool -->
+  <circle cx="780" cy="245" r="20" fill="#ffffff" stroke="#f97316" stroke-width="3"/>
+  <text x="780" y="250" text-anchor="middle" font-size="14" font-weight="bold" fill="#9a3412">4</text>
+  
+  <!-- Node 5: Unresolvable -->
+  <circle cx="980" cy="245" r="20" fill="#ffffff" stroke="#ef4444" stroke-width="3"/>
+  <text x="980" y="250" text-anchor="middle" font-size="14" font-weight="bold" fill="#991b1b">5</text>
+  
+  <!-- Detail boxes below spectrum -->
+  <!-- Box 1: Overall Planning -->
+  <rect x="60" y="300" width="240" height="170" rx="8" fill="#ffffff" stroke="#3b82f6" stroke-width="1.5"/>
+  <line x1="180" y1="265" x2="180" y2="300" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <text x="180" y="322" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e40af">整体规划</text>
+  <line x1="80" y1="330" x2="280" y2="330" stroke="#bfdbfe"/>
+  <text x="80" y="350" font-size="11" fill="#475569">测试内容:</text>
+  <text x="80" y="368" font-size="11" fill="#64748b">完整计划生成能力</text>
+  <text x="80" y="386" font-size="11" fill="#475569">关键指标:</text>
+  <text x="80" y="404" font-size="11" fill="#64748b">纯推理准确率</text>
+  <text x="80" y="422" font-size="11" fill="#475569">暴露问题:</text>
+  <text x="80" y="440" font-size="11" fill="#ef4444">长程规划衰减</text>
+  
+  <!-- Box 2: Feedback-Conditioned -->
+  <rect x="270" y="300" width="240" height="170" rx="8" fill="#ffffff" stroke="#6366f1" stroke-width="1.5"/>
+  <line x1="380" y1="265" x2="380" y2="300" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <text x="390" y="322" text-anchor="middle" font-size="13" font-weight="bold" fill="#3730a3">反馈条件化</text>
+  <line x1="290" y1="330" x2="490" y2="330" stroke="#c7d2fe"/>
+  <text x="290" y="350" font-size="11" fill="#475569">测试内容:</text>
+  <text x="290" y="368" font-size="11" fill="#64748b">在线动态决策能力</text>
+  <text x="290" y="386" font-size="11" fill="#475569">关键指标:</text>
+  <text x="290" y="404" font-size="11" fill="#64748b">信息不完整下的准确率</text>
+  <text x="290" y="422" font-size="11" fill="#475569">暴露问题:</text>
+  <text x="290" y="440" font-size="11" fill="#f59e0b">实时推理稳定性</text>
+  
+  <!-- Box 3: Redundant Tool -->
+  <rect x="480" y="300" width="240" height="170" rx="8" fill="#ffffff" stroke="#f59e0b" stroke-width="1.5"/>
+  <line x1="580" y1="265" x2="580" y2="300" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <text x="600" y="322" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400e">冗余工具</text>
+  <line x1="500" y1="330" x2="700" y2="330" stroke="#fef3c7"/>
+  <text x="500" y="350" font-size="11" fill="#475569">测试内容:</text>
+  <text x="500" y="368" font-size="11" fill="#64748b">噪声干扰下的规划质量</text>
+  <text x="500" y="386" font-size="11" fill="#475569">关键指标:</text>
+  <text x="500" y="404" font-size="11" fill="#64748b">工具选择准确率</text>
+  <text x="500" y="422" font-size="11" fill="#475569">暴露问题:</text>
+  <text x="500" y="440" font-size="11" fill="#f97316">工具噪声敏感性</text>
+  
+  <!-- Box 4: Corrupted Tool -->
+  <rect x="690" y="300" width="240" height="170" rx="8" fill="#ffffff" stroke="#f97316" stroke-width="1.5"/>
+  <line x1="780" y1="265" x2="780" y2="300" stroke="#f97316" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <text x="810" y="322" text-anchor="middle" font-size="13" font-weight="bold" fill="#9a3412">损坏工具</text>
+  <line x1="710" y1="330" x2="910" y2="330" stroke="#ffedd5"/>
+  <text x="710" y="350" font-size="11" fill="#475569">测试内容:</text>
+  <text x="710" y="368" font-size="11" fill="#64748b">工具失效下的容错能力</text>
+  <text x="710" y="386" font-size="11" fill="#475569">关键指标:</text>
+  <text x="710" y="404" font-size="11" fill="#64748b">优雅降级成功率</text>
+  <text x="710" y="422" font-size="11" fill="#475569">暴露问题:</text>
+  <text x="710" y="440" font-size="11" fill="#ef4444">容错机制缺失</text>
+  
+  <!-- Box 5: Unresolvable -->
+  <rect x="860" y="300" width="280" height="170" rx="8" fill="#ffffff" stroke="#ef4444" stroke-width="1.5"/>
+  <line x1="980" y1="265" x2="980" y2="300" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <text x="1000" y="322" text-anchor="middle" font-size="13" font-weight="bold" fill="#991b1b">不可解识别</text>
+  <line x1="880" y1="330" x2="1120" y2="330" stroke="#fee2e2"/>
+  <text x="880" y="350" font-size="11" fill="#475569">测试内容:</text>
+  <text x="880" y="368" font-size="11" fill="#64748b">自我认知与校准拒绝</text>
+  <text x="880" y="386" font-size="11" fill="#475569">关键指标:</text>
+  <text x="880" y="404" font-size="11" fill="#64748b">正确拒绝率</text>
+  <text x="880" y="422" font-size="11" fill="#475569">暴露问题:</text>
+  <text x="880" y="440" font-size="11" fill="#dc2626">过度自信 (系统性)</text>
+  
+  <!-- Top: Relationship arrows -->
+  <text x="280" y="195" text-anchor="middle" font-size="10" fill="#64748b">递进</text>
+  <line x1="230" y1="200" x2="330" y2="200" stroke="#cbd5e1" stroke-width="1.5"/>
+  
+  <text x="480" y="195" text-anchor="middle" font-size="10" fill="#64748b">递进</text>
+  <line x1="430" y1="200" x2="530" y2="200" stroke="#cbd5e1" stroke-width="1.5"/>
+  
+  <text x="680" y="195" text-anchor="middle" font-size="10" fill="#64748b">递进</text>
+  <line x1="630" y1="200" x2="730" y2="200" stroke="#cbd5e1" stroke-width="1.5"/>
+  
+  <text x="880" y="195" text-anchor="middle" font-size="10" fill="#64748b">递进</text>
+  <line x1="830" y1="200" x2="930" y2="200" stroke="#cbd5e1" stroke-width="1.5"/>
+  
+  <!-- Bottom insight -->
+  <rect x="60" y="485" width="1080" height="20" rx="4" fill="#fef3c7"/>
+  <text x="600" y="500" text-anchor="middle" font-size="11" fill="#92400e">从左到右: 评估条件从理想化走向真实世界，对Agent规划能力的要求逐步提高</text>
+</svg>

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" font-family="Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="600" fill="url(#bgGrad)" rx="8"/>
+  
+  <!-- Title -->
+  <text x="600" y="45" text-anchor="middle" font-size="22" font-weight="bold" fill="#1e293b">APB: Agent Planning Benchmark — 五大评估设置全景</text>
+  <text x="600" y="70" text-anchor="middle" font-size="14" fill="#64748b">从端到端成功率到细粒度规划诊断的完整框架</text>
+  
+  <!-- Central concept: Planning vs Execution -->
+  <rect x="350" y="95" width="500" height="80" rx="12" fill="#ffffff" filter="url(#shadow)" stroke="#3b82f6" stroke-width="2"/>
+  <text x="600" y="125" text-anchor="middle" font-size="16" font-weight="bold" fill="#1e40af">APB核心洞察</text>
+  <text x="600" y="148" text-anchor="middle" font-size="13" fill="#334155">规划失败 ≠ 执行失败 — 必须分离诊断</text>
+  
+  <!-- Left: Traditional End-to-End -->
+  <rect x="30" y="200" width="280" height="160" rx="10" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="170" y="228" text-anchor="middle" font-size="14" font-weight="bold" fill="#dc2626">传统端到端评估</text>
+  <line x1="50" y1="238" x2="290" y2="238" stroke="#fecaca" stroke-width="1"/>
+  <text x="50" y="260" font-size="12" fill="#7f1d1d">- 只记录最终结果</text>
+  <text x="50" y="280" font-size="12" fill="#7f1d1d">- 成功/失败二分类</text>
+  <text x="50" y="300" font-size="12" fill="#7f1d1d">- 无法区分规划vs执行</text>
+  <text x="50" y="320" font-size="12" fill="#7f1d1d">- 掩盖系统性弱点</text>
+  
+  <!-- Arrow from left to center -->
+  <path d="M310,280 L340,280" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Center: APB Framework -->
+  <rect x="350" y="200" width="500" height="370" rx="12" fill="#ffffff" filter="url(#shadow)" stroke="#3b82f6" stroke-width="2"/>
+  <text x="600" y="230" text-anchor="middle" font-size="16" font-weight="bold" fill="#1e40af">APB 五大评估设置</text>
+  
+  <!-- Five settings as stacked blocks -->
+  <rect x="380" y="250" width="440" height="52" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="400" y="270" font-size="12" font-weight="bold" fill="#1e40af">1. 整体规划 (Overall Planning)</text>
+  <text x="400" y="288" font-size="11" fill="#3b82f6">纯规划能力 — 理想条件下完整计划生成</text>
+  
+  <rect x="380" y="310" width="440" height="52" rx="8" fill="#e0e7ff" stroke="#6366f1" stroke-width="1"/>
+  <text x="400" y="330" font-size="12" font-weight="bold" fill="#3730a3">2. 反馈条件化逐步规划</text>
+  <text x="400" y="348" font-size="11" fill="#6366f1">在线推理 — 信息不完整下的动态决策</text>
+  
+  <rect x="380" y="370" width="440" height="52" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="400" y="390" font-size="12" font-weight="bold" fill="#92400e">3. 冗余工具鲁棒性</text>
+  <text x="400" y="408" font-size="11" fill="#d97706">噪声干扰 — 功能重叠下的规划质量保持</text>
+  
+  <rect x="380" y="430" width="440" height="52" rx="8" fill="#ffedd5" stroke="#f97316" stroke-width="1"/>
+  <text x="400" y="450" font-size="12" font-weight="bold" fill="#9a3412">4. 损坏工具鲁棒性</text>
+  <text x="400" y="468" font-size="11" fill="#ea580c">容错能力 — 工具失效下的优雅降级</text>
+  
+  <rect x="380" y="490" width="440" height="52" rx="8" fill="#fee2e2" stroke="#ef4444" stroke-width="1"/>
+  <text x="400" y="510" font-size="12" font-weight="bold" fill="#991b1b">5. 不可解任务识别</text>
+  <text x="400" y="528" font-size="11" fill="#dc2626">自我认知 — 知道什么做不到 = 知道做什么</text>
+  
+  <!-- Right: Key Metrics -->
+  <rect x="870" y="200" width="300" height="370" rx="10" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="1020" y="228" text-anchor="middle" font-size="14" font-weight="bold" fill="#16a34a">关键发现</text>
+  <line x1="890" y1="238" x2="1150" y2="238" stroke="#bbf7d0" stroke-width="1"/>
+  
+  <text x="890" y="265" font-size="12" fill="#166534">- 端到端成功率最高模型</text>
+  <text x="890" y="283" font-size="12" fill="#166534">  不可解任务拒绝率仅 34.7%</text>
+  
+  <text x="890" y="315" font-size="12" fill="#166534">- 长程规划衰减: 每步+8~12%错误</text>
+  <text x="890" y="333" font-size="12" fill="#166534">  10步任务准确率降至 ~41%</text>
+  
+  <text x="890" y="365" font-size="12" fill="#166534">- 无模型在损坏工具下保持</text>
+  <text x="890" y="383" font-size="12" fill="#166534">  超过60%准确率</text>
+  
+  <text x="890" y="415" font-size="12" fill="#166534">- 拒绝率分布: 8.3% ~ 34.7%</text>
+  <text x="890" y="433" font-size="12" fill="#166534">  误拒率 &lt; 15%</text>
+  
+  <text x="890" y="465" font-size="12" fill="#166534">- 系统性特征: "过度自信"</text>
+  <text x="890" y="483" font-size="12" fill="#166534">  倾向于相信任何任务都可完成</text>
+  
+  <!-- Bottom note -->
+  <rect x="30" y="540" width="1140" height="40" rx="8" fill="#f1f5f9"/>
+  <text x="600" y="565" text-anchor="middle" font-size="12" fill="#475569">数据来源: APB (arXiv:2606.04874) — 4,209个多模态案例 · 22个领域 · 12个MLLM</text>
+</svg>

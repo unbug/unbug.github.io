@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 450" font-family="Arial, sans-serif">
+  <rect width="1200" height="450" fill="#f8fafc" rx="8"/>
+  <text x="600" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#1e293b">APB + REFLECT — 完整 Agent 诊断闭环</text>
+  
+  <!-- Left: APB - Pre-assessment -->
+  <rect x="40" y="60" width="500" height="350" rx="12" fill="#ffffff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="290" y="90" text-anchor="middle" font-size="16" font-weight="bold" fill="#1e40af">APB — 事前评估</text>
+  <text x="290" y="110" text-anchor="middle" font-size="12" fill="#3b82f6">Pre-assessment (上线前)</text>
+  
+  <!-- APB process flow -->
+  <rect x="80" y="130" width="420" height="50" rx="8" fill="#dbeafe"/>
+  <text x="290" y="152" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e40af">多维能力测试</text>
+  <text x="290" y="170" text-anchor="middle" font-size="11" fill="#3b82f6">五大评估设置全面扫描</text>
+  
+  <!-- APB outputs -->
+  <rect x="80" y="200" width="420" height="50" rx="8" fill="#e0e7ff"/>
+  <text x="290" y="222" text-anchor="middle" font-size="13" font-weight="bold" fill="#3730a3">能力画像</text>
+  <text x="290" y="240" text-anchor="middle" font-size="11" fill="#6366f1">规划/执行弱点定位 + 风险等级评估</text>
+  
+  <!-- APB action -->
+  <rect x="80" y="270" width="420" height="50" rx="8" fill="#c7d2fe"/>
+  <text x="290" y="292" text-anchor="middle" font-size="13" font-weight="bold" fill="#4338ca">针对性优化</text>
+  <text x="290" y="310" text-anchor="middle" font-size="11" fill="#6366f1">修复规划缺陷 → 提升上线质量</text>
+  
+  <!-- APB result -->
+  <rect x="80" y="340" width="420" height="50" rx="8" fill="#a5b4fc"/>
+  <text x="290" y="362" text-anchor="middle" font-size="13" font-weight="bold" fill="#3730a3">上线决策</text>
+  <text x="290" y="380" text-anchor="middle" font-size="11" fill="#4f46e5">已知弱点 + 优化后基线 → 安全部署</text>
+  
+  <!-- Center: Bidirectional arrow -->
+  <line x1="560" y1="200" x2="640" y2="200" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="640,195 650,200 640,205" fill="#94a3b8"/>
+  <line x1="640" y1="220" x2="560" y2="220" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="560,215 550,220 560,225" fill="#94a3b8"/>
+  <text x="600" y="195" text-anchor="middle" font-size="10" fill="#64748b">数据</text>
+  <text x="600" y="238" text-anchor="middle" font-size="10" fill="#64748b">反馈</text>
+  
+  <!-- Right: REFLECT - Post-mortem -->
+  <rect x="660" y="60" width="500" height="350" rx="12" fill="#ffffff" stroke="#ef4444" stroke-width="2"/>
+  <text x="910" y="90" text-anchor="middle" font-size="16" font-weight="bold" fill="#dc2626">REFLECT — 事后诊断</text>
+  <text x="910" y="110" text-anchor="middle" font-size="12" fill="#ef4444">Post-mortem Diagnosis (运行时)</text>
+  
+  <!-- REFLECT process flow -->
+  <rect x="700" y="130" width="420" height="50" rx="8" fill="#fee2e2"/>
+  <text x="910" y="152" text-anchor="middle" font-size="13" font-weight="bold" fill="#991b1b">失败案例捕获</text>
+  <text x="910" y="170" text-anchor="middle" font-size="11" fill="#ef4444">Agent执行失败 → 轨迹记录</text>
+  
+  <!-- REFLECT outputs -->
+  <rect x="700" y="200" width="420" height="50" rx="8" fill="#ffedd5"/>
+  <text x="910" y="222" text-anchor="middle" font-size="13" font-weight="bold" fill="#9a3412">干预-重放验证</text>
+  <text x="910" y="240" text-anchor="middle" font-size="11" fill="#ea580c">假设 → 实验 → 对比证据闭环</text>
+  
+  <!-- REFLECT action -->
+  <rect x="700" y="270" width="420" height="50" rx="8" fill="#fed7aa"/>
+  <text x="910" y="292" text-anchor="middle" font-size="13" font-weight="bold" fill="#c2410c">根因定位</text>
+  <text x="910" y="310" text-anchor="middle" font-size="11" fill="#ea580c">规划问题 vs 执行问题 → 精确归因</text>
+  
+  <!-- REFLECT result -->
+  <rect x="700" y="340" width="420" height="50" rx="8" fill="#fdba74"/>
+  <text x="910" y="362" text-anchor="middle" font-size="13" font-weight="bold" fill="#9a3412">持续改进</text>
+  <text x="910" y="380" text-anchor="middle" font-size="11" fill="#ea580c">修复根因 → 反馈到APB优化循环</text>
+  
+  <!-- Bottom: Complete loop -->
+  <rect x="40" y="425" width="1120" height="30" rx="6" fill="#fef9c3"/>
+  <text x="600" y="445" text-anchor="middle" font-size="13" font-weight="bold" fill="#854d0e">APB(事前) + REFLECT(事后) = 完整 Agent 质量保障闭环</text>
+</svg>
