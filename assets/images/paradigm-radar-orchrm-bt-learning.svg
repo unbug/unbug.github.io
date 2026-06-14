@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="650" fill="url(#bg4)"/>
+
+  <!-- Title -->
+  <text x="600" y="45" fill="#1e293b" font-size="24" font-family="Arial" font-weight="700" text-anchor="middle">Bradley-Terry 奖励学习示意图</text>
+
+  <!-- Left: Bradley-Terry Model -->
+  <rect x="60" y="80" width="500" height="300" rx="12" fill="#ede9fe"/>
+  <text x="310" y="115" fill="#5b21b6" font-size="18" font-family="Arial" font-weight="700" text-anchor="middle">Bradley-Terry 概率模型</text>
+
+  <!-- Formula -->
+  <rect x="100" y="135" width="420" height="60" rx="8" fill="#ffffff"/>
+  <text x="310" y="160" fill="#1e293b" font-size="18" font-family="Arial" text-anchor="middle">P(A beats B) = exp(r_A) / (exp(r_A) + exp(r_B))</text>
+  <text x="310" y="185" fill="#64748b" font-size="12" font-family="Arial" text-anchor="middle">A 的奖励值越高，战胜 B 的概率越大</text>
+
+  <!-- Probability visualization -->
+  <rect x="100" y="220" width="350" height="40" rx="6" fill="#f1f5f9"/>
+  <text x="110" y="245" fill="#1e293b" font-size="13" font-family="Arial">r_A = 2.0, r_B = -1.0</text>
+
+  <!-- Probability bar -->
+  <rect x="280" y="226" width="154" height="28" rx="4" fill="#e2e8f0"/>
+  <rect x="280" y="226" width="130" height="28" rx="4" fill="#7c3aed"/>
+  <text x="345" y="245" fill="#ffffff" font-size="12" font-family="Arial" text-anchor="middle">P(A wins) = 95.3%</text>
+
+  <!-- Loss function -->
+  <rect x="100" y="280" width="420" height="60" rx="8" fill="#ffffff"/>
+  <text x="310" y="305" fill="#1e293b" font-size="16" font-family="Arial" text-anchor="middle">L = -log P(A beats B | r_A, r_B)</text>
+  <text x="310" y="330" fill="#64748b" font-size="12" font-family="Arial" text-anchor="middle">交叉熵损失，梯度下降优化奖励参数</text>
+
+  <!-- Right: Training Process -->
+  <rect x="590" y="80" width="550" height="300" rx="12" fill="#dbeafe"/>
+  <text x="865" y="115" fill="#1d4ed8" font-size="18" font-family="Arial" font-weight="700" text-anchor="middle">训练过程</text>
+
+  <!-- Training loop -->
+  <rect x="630" y="135" width="470" height="220" rx="8" fill="#ffffff"/>
+
+  <!-- Step 1 -->
+  <circle cx="660" cy="165" r="12" fill="#1d4ed8"/>
+  <text x="660" y="170" fill="#ffffff" font-size="12" font-family="Arial" text-anchor="middle">1</text>
+  <text x="685" y="170" fill="#1e293b" font-size="14" font-family="Arial">输入: 胜负对集合 {(A&gt;B), (C&gt;D), ...}</text>
+
+  <!-- Arrow -->
+  <line x1="660" y1="185" x2="660" y2="205" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="660,205 655,197 665,197" fill="#94a3b8"/>
+
+  <!-- Step 2 -->
+  <circle cx="660" cy="220" r="12" fill="#1d4ed8"/>
+  <text x="660" y="225" fill="#ffffff" font-size="12" font-family="Arial" text-anchor="middle">2</text>
+  <text x="685" y="225" fill="#1e293b" font-size="14" font-family="Arial">计算: P(A beats B) = exp(r_A)/(exp(r_A)+exp(r_B))</text>
+
+  <!-- Arrow -->
+  <line x1="660" y1="235" x2="660" y2="255" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="660,255 655,247 665,247" fill="#94a3b8"/>
+
+  <!-- Step 3 -->
+  <circle cx="660" cy="270" r="12" fill="#1d4ed8"/>
+  <text x="660" y="275" fill="#ffffff" font-size="12" font-family="Arial" text-anchor="middle">3</text>
+  <text x="685" y="275" fill="#1e293b" font-size="14" font-family="Arial">计算损失: L = -log P(A beats B)</text>
+
+  <!-- Arrow -->
+  <line x1="660" y1="285" x2="660" y2="305" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="660,305 655,297 665,297" fill="#94a3b8"/>
+
+  <!-- Step 4 -->
+  <circle cx="660" cy="320" r="12" fill="#1d4ed8"/>
+  <text x="660" y="325" fill="#ffffff" font-size="12" font-family="Arial" text-anchor="middle">4</text>
+  <text x="685" y="325" fill="#1e293b" font-size="14" font-family="Arial">梯度更新: r = r - lr * dL/dr</text>
+
+  <!-- Arrow back to step 1 (loop) -->
+  <path d="M 660,332 L 660,350 L 800,350 L 800,165" stroke="#94a3b8" stroke-width="2" fill="none"/>
+  <polygon points="792,165 800,155 808,165" fill="#94a3b8"/>
+
+  <!-- Bottom: Reward Model Output -->
+  <rect x="60" y="410" width="1080" height="200" rx="12" fill="#d1fae5"/>
+  <text x="600" y="445" fill="#065f46" font-size="18" font-family="Arial" font-weight="700" text-anchor="middle">奖励模型输出：编排质量评分函数 R(s, a)</text>
+
+  <!-- Usage scenarios -->
+  <rect x="100" y="465" width="300" height="120" rx="8" fill="#ffffff"/>
+  <text x="250" y="495" fill="#1e293b" font-size="15" font-family="Arial" font-weight="700" text-anchor="middle">编排器训练</text>
+  <text x="250" y="520" fill="#64748b" font-size="12" font-family="Arial" text-anchor="middle">奖励模型指导编排策略优化，</text>
+  <text x="250" y="540" fill="#64748b" font-size="12" font-family="Arial" text-anchor="middle">选择最优的子代理分配方案。</text>
+
+  <rect x="450" y="465" width="300" height="120" rx="8" fill="#ffffff"/>
+  <text x="600" y="495" fill="#1e293b" font-size="15" font-family="Arial" font-weight="700" text-anchor="middle">测试时扩展</text>
+  <text x="600" y="520" fill="#64748b" font-size="12" font-family="Arial" text-anchor="middle">在推理阶段利用奖励模型对</text>
+  <text x="600" y="540" fill="#64748b" font-size="12" font-family="Arial" text-anchor="middle">多个候选编排方案进行排序。</text>
+
+  <rect x="800" y="465" width="300" height="120" rx="8" fill="#ffffff"/>
+  <text x="950" y="495" fill="#1e293b" font-size="15" font-family="Arial" font-weight="700" text-anchor="middle">关键优势</text>
+  <text x="950" y="520" fill="#64748b" font-size="12" font-family="Arial" text-anchor="middle">无需人工标注，无需子代理</text>
+  <text x="950" y="540" fill="#64748b" font-size="12" font-family="Arial" text-anchor="middle">完整 Rollout，自监督学习。</text>
+
+  <!-- Bottom annotation -->
+  <rect x="60" y="630" width="1080" height="15" fill="#d1fae5"/>
+</svg>

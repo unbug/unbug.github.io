@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#bg3)"/>
+
+  <!-- Title -->
+  <text x="600" y="45" fill="#1e293b" font-size="24" font-family="Arial" font-weight="700" text-anchor="middle">中间产物构建胜负对的流程</text>
+
+  <!-- Step 1: Multi-agent execution -->
+  <rect x="60" y="80" width="280" height="180" rx="12" fill="#dbeafe"/>
+  <text x="200" y="115" fill="#1d4ed8" font-size="16" font-family="Arial" font-weight="700" text-anchor="middle">Step 1: 多智能体执行</text>
+
+  <!-- Orchestrator -->
+  <rect x="120" y="135" width="160" height="40" rx="8" fill="#1d4ed8"/>
+  <text x="200" y="160" fill="#ffffff" font-size="14" font-family="Arial" text-anchor="middle">Orchestrator</text>
+
+  <!-- Sub-agents -->
+  <rect x="80" y="195" width="100" height="40" rx="6" fill="#93c5fd"/>
+  <text x="130" y="220" fill="#ffffff" font-size="12" font-family="Arial" text-anchor="middle">Agent A</text>
+
+  <rect x="220" y="195" width="100" height="40" rx="6" fill="#93c5fd"/>
+  <text x="270" y="220" fill="#ffffff" font-size="12" font-family="Arial" text-anchor="middle">Agent B</text>
+
+  <!-- Arrows -->
+  <line x1="160" y1="175" x2="130" y2="195" stroke="#1d4ed8" stroke-width="2"/>
+  <polygon points="130,195 138,187 142,195" fill="#1d4ed8"/>
+  <line x1="240" y1="175" x2="270" y2="195" stroke="#1d4ed8" stroke-width="2"/>
+  <polygon points="270,195 262,187 266,195" fill="#1d4ed8"/>
+
+  <!-- Step 2: Collect artifacts -->
+  <rect x="380" y="80" width="280" height="180" rx="12" fill="#fef3c7"/>
+  <text x="520" y="115" fill="#92400e" font-size="16" font-family="Arial" font-weight="700" text-anchor="middle">Step 2: 收集中间产物</text>
+
+  <!-- Artifact collection -->
+  <rect x="430" y="135" width="80" height="40" rx="6" fill="#fbbf24"/>
+  <text x="470" y="160" fill="#ffffff" font-size="12" font-family="Arial" text-anchor="middle">Artifact A</text>
+
+  <rect x="530" y="135" width="80" height="40" rx="6" fill="#fbbf24"/>
+  <text x="570" y="160" fill="#ffffff" font-size="12" font-family="Arial" text-anchor="middle">Artifact B</text>
+
+  <rect x="430" y="195" width="80" height="40" rx="6" fill="#fbbf24"/>
+  <text x="470" y="220" fill="#ffffff" font-size="12" font-family="Arial" text-anchor="middle">Artifact C</text>
+
+  <rect x="530" y="195" width="80" height="40" rx="6" fill="#fbbf24"/>
+  <text x="570" y="220" fill="#ffffff" font-size="12" font-family="Arial" text-anchor="middle">Artifact D</text>
+
+  <!-- Arrow from Step 1 to Step 2 -->
+  <line x1="340" y1="170" x2="380" y2="170" stroke="#6b7280" stroke-width="2"/>
+  <polygon points="380,170 370,164 370,176" fill="#6b7280"/>
+
+  <!-- Step 3: Compare and pair -->
+  <rect x="700" y="80" width="280" height="180" rx="12" fill="#d1fae5"/>
+  <text x="840" y="115" fill="#065f46" font-size="16" font-family="Arial" font-weight="700" text-anchor="middle">Step 3: 比较与配对</text>
+
+  <!-- Comparison logic -->
+  <rect x="740" y="135" width="200" height="40" rx="6" fill="#10b981"/>
+  <text x="840" y="160" fill="#ffffff" font-size="13" font-family="Arial" text-anchor="middle">比较: score(A) vs score(B)</text>
+
+  <rect x="740" y="195" width="200" height="40" rx="6" fill="#10b981"/>
+  <text x="840" y="220" fill="#ffffff" font-size="13" font-family="Arial" text-anchor="middle">配对: A &gt; B (Win-Loss)</text>
+
+  <!-- Arrow from Step 2 to Step 3 -->
+  <line x1="660" y1="170" x2="700" y2="170" stroke="#6b7280" stroke-width="2"/>
+  <polygon points="700,170 690,164 690,176" fill="#6b7280"/>
+
+  <!-- Step 4: Bradley-Terry Training -->
+  <rect x="380" y="310" width="440" height="250" rx="12" fill="#ede9fe"/>
+  <text x="600" y="345" fill="#5b21b6" font-size="16" font-family="Arial" font-weight="700" text-anchor="middle">Step 4: Bradley-Terry 奖励学习</text>
+
+  <!-- Win-Loss pairs collection -->
+  <rect x="420" y="365" width="360" height="50" rx="8" fill="#ffffff"/>
+  <text x="600" y="390" fill="#1e293b" font-size="13" font-family="Arial" text-anchor="middle">胜负对集合: {(A&gt;B), (C&gt;D), ...}</text>
+
+  <!-- BT probability -->
+  <rect x="420" y="435" width="360" height="50" rx="8" fill="#ffffff"/>
+  <text x="600" y="460" fill="#1e293b" font-size="13" font-family="Arial" text-anchor="middle">P(A beats B) = exp(r_A)/(exp(r_A)+exp(r_B))</text>
+
+  <!-- Loss optimization -->
+  <rect x="420" y="505" width="360" height="40" rx="8" fill="#ffffff"/>
+  <text x="600" y="530" fill="#1e293b" font-size="13" font-family="Arial" text-anchor="middle">最小化: L = -log P(A beats B)</text>
+
+  <!-- Arrow from Step 3 to Step 4 -->
+  <line x1="840" y1="260" x2="600" y2="310" stroke="#6b7280" stroke-width="2"/>
+  <polygon points="600,310 594,300 606,300" fill="#6b7280"/>
+
+  <!-- Key insight -->
+  <rect x="60" y="310" width="280" height="250" rx="12" fill="#fce7f3"/>
+  <text x="200" y="345" fill="#9d174d" font-size="16" font-family="Arial" font-weight="700" text-anchor="middle">与传统方法对比</text>
+
+  <!-- Traditional approach -->
+  <rect x="80" y="365" width="240" height="90" rx="8" fill="#fecaca"/>
+  <text x="200" y="390" fill="#dc2626" font-size="13" font-family="Arial" font-weight="700" text-anchor="middle">传统方法</text>
+  <text x="200" y="415" fill="#991b1b" font-size="12" font-family="Arial" text-anchor="middle">需要完整子代理 Rollout</text>
+  <text x="200" y="435" fill="#991b1b" font-size="12" font-family="Arial" text-anchor="middle">人工标注胜负关系</text>
+
+  <!-- OrchRM approach -->
+  <rect x="80" y="475" width="240" height="60" rx="8" fill="#bbf7d0"/>
+  <text x="200" y="500" fill="#16a34a" font-size="13" font-family="Arial" font-weight="700" text-anchor="middle">OrchRM</text>
+  <text x="200" y="520" fill="#166534" font-size="12" font-family="Arial" text-anchor="middle">利用中间产物，自监督构建</text>
+
+  <!-- Arrow from Step 4 to output -->
+  <line x1="600" y1="560" x2="600" y2="590" stroke="#6b7280" stroke-width="2"/>
+  <polygon points="600,590 594,580 606,580" fill="#6b7280"/>
+
+  <!-- Output -->
+  <rect x="480" y="590" width="240" height="30" rx="15" fill="#5b21b6"/>
+  <text x="600" y="610" fill="#ffffff" font-size="13" font-family="Arial" text-anchor="middle">奖励模型 R(s, a)</text>
+</svg>

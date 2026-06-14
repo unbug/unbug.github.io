@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+  <defs>
+    <linearGradient id="bg6" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="680" fill="url(#bg6)"/>
+
+  <!-- Title -->
+  <text x="600" y="45" fill="#1e293b" font-size="24" font-family="Arial" font-weight="700" text-anchor="middle">跨领域性能对比：OrchRM vs 基线方法</text>
+
+  <!-- Y-axis label -->
+  <text x="80" y="350" fill="#64748b" font-size="14" font-family="Arial" transform="rotate(-90, 80, 350)">准确率 (%)</text>
+
+  <!-- X-axis -->
+  <line x1="120" y1="580" x2="1100" y2="580" stroke="#94a3b8" stroke-width="2"/>
+
+  <!-- Y-axis -->
+  <line x1="120" y1="100" x2="120" y2="580" stroke="#94a3b8" stroke-width="2"/>
+
+  <!-- Y-axis grid lines and labels (accuracy scale: 30-70%) -->
+  <line x1="120" y1="100" x2="1100" y2="100" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="110" y="105" fill="#64748b" font-size="12" font-family="Arial" text-anchor="end">70</text>
+
+  <line x1="120" y1="220" x2="1100" y2="220" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="110" y="225" fill="#64748b" font-size="12" font-family="Arial" text-anchor="end">60</text>
+
+  <line x1="120" y1="340" x2="1100" y2="340" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="110" y="345" fill="#64748b" font-size="12" font-family="Arial" text-anchor="end">50</text>
+
+  <line x1="120" y1="460" x2="1100" y2="460" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="110" y="465" fill="#64748b" font-size="12" font-family="Arial" text-anchor="end">40</text>
+
+  <line x1="120" y1="580" x2="1100" y2="580" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="110" y="585" fill="#64748b" font-size="12" font-family="Arial" text-anchor="end">30</text>
+
+  <!-- Scale: 30% -> y=580, 70% -> y=100. Each % = (580-100)/40 = 12px -->
+  <!-- Formula: y = 580 - (accuracy - 30) * 12 -->
+
+  <!-- Group 1: Math Reasoning -->
+  <!-- Baseline: 52.3% -> y=580-(52.3-30)*12=580-267.6=312.4 -->
+  <rect x="200" y="312" width="70" height="268" rx="4" fill="#94a3b8"/>
+  <!-- OrchRM: 60.1% -> y=580-(60.1-30)*12=580-361.2=218.8 -->
+  <rect x="280" y="219" width="70" height="361" rx="4" fill="#7c3aed"/>
+
+  <!-- Labels -->
+  <text x="235" y="305" fill="#64748b" font-size="12" font-family="Arial" text-anchor="middle">52.3</text>
+  <text x="315" y="212" fill="#ffffff" font-size="12" font-family="Arial" text-anchor="middle">60.1</text>
+
+  <!-- Group 2: Web QA -->
+  <!-- Baseline: 48.7% -> y=580-(48.7-30)*12=580-224.4=355.6 -->
+  <rect x="470" y="356" width="70" height="224" rx="4" fill="#94a3b8"/>
+  <!-- OrchRM: 55.2% -> y=580-(55.2-30)*12=580-302.4=277.6 -->
+  <rect x="550" y="278" width="70" height="302" rx="4" fill="#7c3aed"/>
+
+  <!-- Labels -->
+  <text x="505" y="349" fill="#64748b" font-size="12" font-family="Arial" text-anchor="middle">48.7</text>
+  <text x="585" y="271" fill="#ffffff" font-size="12" font-family="Arial" text-anchor="middle">55.2</text>
+
+  <!-- Group 3: Multi-hop Reasoning -->
+  <!-- Baseline: 45.1% -> y=580-(45.1-30)*12=580-181.2=398.8 -->
+  <rect x="740" y="399" width="70" height="181" rx="4" fill="#94a3b8"/>
+  <!-- OrchRM: 51.8% -> y=580-(51.8-30)*12=580-261.6=318.4 -->
+  <rect x="820" y="318" width="70" height="262" rx="4" fill="#7c3aed"/>
+
+  <!-- Labels -->
+  <text x="775" y="392" fill="#64748b" font-size="12" font-family="Arial" text-anchor="middle">45.1</text>
+  <text x="855" y="311" fill="#ffffff" font-size="12" font-family="Arial" text-anchor="middle">51.8</text>
+
+  <!-- Group 4: Code Generation -->
+  <!-- Baseline: 56.9% -> y=580-(56.9-30)*12=580-322.8=257.2 -->
+  <rect x="1010" y="257" width="70" height="323" rx="4" fill="#94a3b8"/>
+  <!-- OrchRM: 63.5% -> y=580-(63.5-30)*12=580-402=178 -->
+  <rect x="1090" y="178" width="70" height="402" rx="4" fill="#7c3aed"/>
+
+  <!-- Labels -->
+  <text x="1045" y="250" fill="#64748b" font-size="12" font-family="Arial" text-anchor="middle">56.9</text>
+  <text x="1125" y="171" fill="#ffffff" font-size="12" font-family="Arial" text-anchor="middle">63.5</text>
+
+  <!-- X-axis labels -->
+  <text x="235" y="605" fill="#1e293b" font-size="14" font-family="Arial" text-anchor="middle">数学推理</text>
+  <text x="505" y="605" fill="#1e293b" font-size="14" font-family="Arial" text-anchor="middle">网页问答</text>
+  <text x="775" y="605" fill="#1e293b" font-size="14" font-family="Arial" text-anchor="middle">多跳推理</text>
+  <text x="1045" y="605" fill="#1e293b" font-size="14" font-family="Arial" text-anchor="middle">代码生成</text>
+
+  <!-- Legend -->
+  <rect x="700" y="630" width="20" height="20" rx="4" fill="#94a3b8"/>
+  <text x="730" y="645" fill="#1e293b" font-size="14" font-family="Arial">基线方法（传统编排器）</text>
+
+  <rect x="980" y="630" width="20" height="20" rx="4" fill="#7c3aed"/>
+  <text x="1010" y="645" fill="#1e293b" font-size="14" font-family="Arial">OrchRM</text>
+
+  <!-- Key insight box -->
+  <rect x="120" y="630" width="540" height="40" rx="8" fill="#ede9fe"/>
+  <text x="390" y="655" fill="#5b21b6" font-size="14" font-family="Arial" text-anchor="middle">OrchRM 在全部四个领域均实现正提升，平均准确率提升约 7.2%</text>
+</svg>

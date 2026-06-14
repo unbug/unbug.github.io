@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="650" fill="url(#bg5)"/>
+
+  <!-- Title -->
+  <text x="600" y="45" fill="#1e293b" font-size="24" font-family="Arial" font-weight="700" text-anchor="middle">Token 效率对比：OrchRM vs 传统方法</text>
+
+  <!-- Y-axis label -->
+  <text x="80" y="350" fill="#64748b" font-size="14" font-family="Arial" transform="rotate(-90, 80, 350)">Token 消耗量 (相对值)</text>
+
+  <!-- X-axis -->
+  <line x1="120" y1="560" x2="1100" y2="560" stroke="#94a3b8" stroke-width="2"/>
+
+  <!-- Y-axis -->
+  <line x1="120" y1="100" x2="120" y2="560" stroke="#94a3b8" stroke-width="2"/>
+
+  <!-- Y-axis grid lines and labels -->
+  <line x1="120" y1="100" x2="1100" y2="100" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="110" y="105" fill="#64748b" font-size="12" font-family="Arial" text-anchor="end">100</text>
+
+  <line x1="120" y1="215" x2="1100" y2="215" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="110" y="220" fill="#64748b" font-size="12" font-family="Arial" text-anchor="end">80</text>
+
+  <line x1="120" y1="330" x2="1100" y2="330" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="110" y="335" fill="#64748b" font-size="12" font-family="Arial" text-anchor="end">60</text>
+
+  <line x1="120" y1="445" x2="1100" y2="445" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="110" y="450" fill="#64748b" font-size="12" font-family="Arial" text-anchor="end">40</text>
+
+  <line x1="120" y1="560" x2="1100" y2="560" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="110" y="565" fill="#64748b" font-size="12" font-family="Arial" text-anchor="end">20</text>
+
+  <!-- Group 1: Math Reasoning -->
+  <rect x="200" y="230" width="80" height="330" rx="4" fill="#ef4444"/>
+  <text x="240" y="220" fill="#dc2626" font-size="13" font-family="Arial" text-anchor="middle">传统方法</text>
+
+  <rect x="300" y="500" width="80" height="60" rx="4" fill="#10b981"/>
+  <text x="340" y="490" fill="#059669" font-size="13" font-family="Arial" text-anchor="middle">OrchRM</text>
+
+  <!-- Labels -->
+  <text x="240" y="225" fill="#dc2626" font-size="12" font-family="Arial" text-anchor="middle">85.3</text>
+  <text x="340" y="495" fill="#059669" font-size="12" font-family="Arial" text-anchor="middle">8.5</text>
+
+  <!-- Group 2: Web QA -->
+  <rect x="470" y="280" width="80" height="280" rx="4" fill="#ef4444"/>
+  <text x="510" y="270" fill="#dc2626" font-size="13" font-family="Arial" text-anchor="middle">传统方法</text>
+
+  <rect x="570" y="480" width="80" height="80" rx="4" fill="#10b981"/>
+  <text x="610" y="470" fill="#059669" font-size="13" font-family="Arial" text-anchor="middle">OrchRM</text>
+
+  <!-- Labels -->
+  <text x="510" y="275" fill="#dc2626" font-size="12" font-family="Arial" text-anchor="middle">72.1</text>
+  <text x="610" y="475" fill="#059669" font-size="12" font-family="Arial" text-anchor="middle">7.8</text>
+
+  <!-- Group 3: Multi-hop Reasoning -->
+  <rect x="740" y="250" width="80" height="310" rx="4" fill="#ef4444"/>
+  <text x="780" y="240" fill="#dc2626" font-size="13" font-family="Arial" text-anchor="middle">传统方法</text>
+
+  <rect x="840" y="510" width="80" height="50" rx="4" fill="#10b981"/>
+  <text x="880" y="500" fill="#059669" font-size="13" font-family="Arial" text-anchor="middle">OrchRM</text>
+
+  <!-- Labels -->
+  <text x="780" y="255" fill="#dc2626" font-size="12" font-family="Arial" text-anchor="middle">90.5</text>
+  <text x="880" y="505" fill="#059669" font-size="12" font-family="Arial" text-anchor="middle">9.2</text>
+
+  <!-- Group 4: Code Generation -->
+  <rect x="1010" y="300" width="80" height="260" rx="4" fill="#ef4444"/>
+  <text x="1050" y="290" fill="#dc2626" font-size="13" font-family="Arial" text-anchor="middle">传统方法</text>
+
+  <rect x="1110" y="520" width="80" height="40" rx="4" fill="#10b981"/>
+  <text x="1150" y="510" fill="#059669" font-size="13" font-family="Arial" text-anchor="middle">OrchRM</text>
+
+  <!-- Labels -->
+  <text x="1050" y="305" fill="#dc2626" font-size="12" font-family="Arial" text-anchor="middle">68.7</text>
+  <text x="1150" y="515" fill="#059669" font-size="12" font-family="Arial" text-anchor="middle">6.9</text>
+
+  <!-- X-axis labels -->
+  <text x="240" y="585" fill="#1e293b" font-size="14" font-family="Arial" text-anchor="middle">数学推理</text>
+  <text x="510" y="585" fill="#1e293b" font-size="14" font-family="Arial" text-anchor="middle">网页问答</text>
+  <text x="780" y="585" fill="#1e293b" font-size="14" font-family="Arial" text-anchor="middle">多跳推理</text>
+
+  <!-- Legend -->
+  <rect x="600" y="600" width="20" height="20" rx="4" fill="#ef4444"/>
+  <text x="630" y="615" fill="#1e293b" font-size="14" font-family="Arial">传统方法（子代理 Rollout）</text>
+
+  <rect x="870" y="600" width="20" height="20" rx="4" fill="#10b981"/>
+  <text x="900" y="615" fill="#1e293b" font-size="14" font-family="Arial">OrchRM（中间产物）</text>
+
+  <!-- Key insight box -->
+  <rect x="120" y="600" width="440" height="40" rx="8" fill="#fef3c7"/>
+  <text x="340" y="625" fill="#92400e" font-size="14" font-family="Arial" text-anchor="middle">OrchRM Token 消耗仅为传统方法的约 1/10，效率提升最高达 10 倍</text>
+</svg>

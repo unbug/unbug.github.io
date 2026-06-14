@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e3a5f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Series label -->
+  <text x="64" y="96" fill="#93c5fd" font-size="28" font-family="Arial" font-weight="700">AI 范式雷达</text>
+
+  <!-- Main title -->
+  <text x="64" y="168" fill="#f8fafc" font-size="52" font-family="Arial" font-weight="700">OrchRM</text>
+  <text x="64" y="220" fill="#cbd5e1" font-size="30" font-family="Arial">多智能体编排的自监督奖励建模新范式</text>
+
+  <!-- Key stats -->
+  <text x="64" y="272" fill="#94a3b8" font-size="22" font-family="Arial">Token 效率提升 10 倍 · MAS 测试时扩展性能提升 8%</text>
+
+  <!-- Left stat box: Token Efficiency -->
+  <rect x="64" y="332" width="228" height="158" rx="16" fill="#1d4ed8"/>
+  <text x="178" y="370" fill="#bfdbfe" font-size="18" font-family="Arial" text-anchor="middle">Token 效率提升</text>
+  <text x="178" y="458" fill="#ffffff" font-size="60" font-family="Arial" font-weight="700" text-anchor="middle">10x</text>
+
+  <!-- Right stat box: Performance Gain -->
+  <rect x="320" y="332" width="228" height="158" rx="16" fill="#0e7490"/>
+  <text x="434" y="370" fill="#a5f3fc" font-size="18" font-family="Arial" text-anchor="middle">测试时扩展提升</text>
+  <text x="434" y="458" fill="#ffffff" font-size="60" font-family="Arial" font-weight="700" text-anchor="middle">+8%</text>
+
+  <!-- Right panel: Key concepts -->
+  <rect x="612" y="156" width="524" height="330" rx="20" fill="#1e293b" fill-opacity="0.84"/>
+  <text x="874" y="198" fill="#64748b" font-size="16" font-family="Arial" text-anchor="middle">核心概念</text>
+
+  <!-- Concept 1 -->
+  <rect x="636" y="214" width="476" height="50" rx="8" fill="#1d4ed8"/>
+  <text x="874" y="244" fill="#bfdbfe" font-size="15" font-family="Arial" text-anchor="middle">自监督奖励建模 · 无需人工标注</text>
+
+  <!-- Concept 2 -->
+  <rect x="636" y="278" width="476" height="50" rx="8" fill="#0e7490"/>
+  <text x="874" y="308" fill="#a5f3fc" font-size="15" font-family="Arial" text-anchor="middle">中间产物构建胜负对 · Bradley-Terry 学习</text>
+
+  <!-- Concept 3 -->
+  <rect x="636" y="342" width="476" height="50" rx="8" fill="#065f46"/>
+  <text x="874" y="372" fill="#6ee7b7" font-size="15" font-family="Arial" text-anchor="middle">编排层面操作 · 无需子代理 Rollout</text>
+
+  <!-- Concept 4 -->
+  <rect x="636" y="406" width="476" height="50" rx="8" fill="#7c2d12"/>
+  <text x="874" y="436" fill="#fca5a5" font-size="15" font-family="Arial" text-anchor="middle">跨领域验证 · 数学推理 / 网页问答 / 多跳推理</text>
+
+  <!-- Bottom: Authors and institution -->
+  <text x="64" y="530" fill="#64748b" font-size="16" font-family="Arial">NUS / Sea AI Lab (Wang-ML-Lab)</text>
+  <text x="64" y="556" fill="#475569" font-size="14" font-family="Arial">arXiv:2606.13598v1 · 2026-06-11</text>
+</svg>

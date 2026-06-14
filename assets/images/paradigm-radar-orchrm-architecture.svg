@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg2)"/>
+
+  <!-- Title -->
+  <text x="600" y="50" fill="#1e293b" font-size="28" font-family="Arial" font-weight="700" text-anchor="middle">OrchRM 架构：从中间产物到奖励模型</text>
+
+  <!-- Phase 1: Multi-Agent Execution -->
+  <rect x="64" y="80" width="500" height="200" rx="12" fill="#dbeafe"/>
+  <text x="314" y="112" fill="#1d4ed8" font-size="18" font-family="Arial" font-weight="700" text-anchor="middle">Phase 1: 多智能体执行</text>
+
+  <!-- Orchestrator -->
+  <rect x="160" y="130" width="200" height="50" rx="8" fill="#1d4ed8"/>
+  <text x="260" y="160" fill="#ffffff" font-size="16" font-family="Arial" text-anchor="middle">Orchestrator</text>
+
+  <!-- Sub-agents -->
+  <rect x="100" y="200" width="130" height="50" rx="8" fill="#93c5fd"/>
+  <text x="165" y="230" fill="#ffffff" font-size="14" font-family="Arial" text-anchor="middle">Sub-Agent A</text>
+
+  <rect x="270" y="200" width="130" height="50" rx="8" fill="#93c5fd"/>
+  <text x="335" y="230" fill="#ffffff" font-size="14" font-family="Arial" text-anchor="middle">Sub-Agent B</text>
+
+  <!-- Arrows from Orchestrator to Sub-agents -->
+  <line x1="210" y1="180" x2="165" y2="200" stroke="#1d4ed8" stroke-width="2"/>
+  <polygon points="165,200 173,192 177,200" fill="#1d4ed8"/>
+  <line x1="310" y1="180" x2="335" y2="200" stroke="#1d4ed8" stroke-width="2"/>
+  <polygon points="335,200 327,192 331,200" fill="#1d4ed8"/>
+
+  <!-- Phase 2: Intermediate Artifacts -->
+  <rect x="64" y="310" width="500" height="180" rx="12" fill="#fef3c7"/>
+  <text x="314" y="342" fill="#92400e" font-size="18" font-family="Arial" font-weight="700" text-anchor="middle">Phase 2: 中间产物收集</text>
+
+  <!-- Artifact boxes -->
+  <rect x="100" y="365" width="130" height="50" rx="8" fill="#fbbf24"/>
+  <text x="165" y="395" fill="#ffffff" font-size="14" font-family="Arial" text-anchor="middle">Artifact A</text>
+
+  <rect x="270" y="365" width="130" height="50" rx="8" fill="#fbbf24"/>
+  <text x="335" y="395" fill="#ffffff" font-size="14" font-family="Arial" text-anchor="middle">Artifact B</text>
+
+  <!-- Arrow from Phase 1 to Phase 2 -->
+  <line x1="314" y1="280" x2="314" y2="310" stroke="#6b7280" stroke-width="2"/>
+  <polygon points="314,310 308,300 320,300" fill="#6b7280"/>
+
+  <!-- Phase 3: Win-Loss Pair Construction -->
+  <rect x="64" y="520" width="500" height="150" rx="12" fill="#d1fae5"/>
+  <text x="314" y="552" fill="#065f46" font-size="18" font-family="Arial" font-weight="700" text-anchor="middle">Phase 3: 胜负对构建</text>
+
+  <!-- Win-Loss pairs -->
+  <rect x="100" y="575" width="200" height="60" rx="8" fill="#10b981"/>
+  <text x="200" y="600" fill="#ffffff" font-size="14" font-family="Arial" text-anchor="middle">Artifact A &gt; Artifact B</text>
+  <text x="200" y="620" fill="#d1fae5" font-size="12" font-family="Arial" text-anchor="middle">(Win-Loss Pair)</text>
+
+  <rect x="340" y="575" width="200" height="60" rx="8" fill="#10b981"/>
+  <text x="440" y="600" fill="#ffffff" font-size="14" font-family="Arial" text-anchor="middle">Artifact C &gt; Artifact D</text>
+  <text x="440" y="620" fill="#d1fae5" font-size="12" font-family="Arial" text-anchor="middle">(Win-Loss Pair)</text>
+
+  <!-- Arrow from Phase 2 to Phase 3 -->
+  <line x1="314" y1="490" x2="314" y2="520" stroke="#6b7280" stroke-width="2"/>
+  <polygon points="314,520 308,510 320,510" fill="#6b7280"/>
+
+  <!-- Right side: Bradley-Terry Model -->
+  <rect x="620" y="80" width="520" height="590" rx="12" fill="#ede9fe"/>
+  <text x="880" y="112" fill="#5b21b6" font-size="18" font-family="Arial" font-weight="700" text-anchor="middle">Bradley-Terry 奖励学习</text>
+
+  <!-- BT Model formula -->
+  <rect x="660" y="130" width="440" height="80" rx="8" fill="#ffffff"/>
+  <text x="880" y="158" fill="#1e293b" font-size="16" font-family="Arial" text-anchor="middle">P(A beats B) = exp(r_A) / (exp(r_A) + exp(r_B))</text>
+  <text x="880" y="185" fill="#64748b" font-size="13" font-family="Arial" text-anchor="middle">Bradley-Terry 概率模型</text>
+
+  <!-- Loss function -->
+  <rect x="660" y="230" width="440" height="80" rx="8" fill="#ffffff"/>
+  <text x="880" y="258" fill="#1e293b" font-size="16" font-family="Arial" text-anchor="middle">L = -log P(A beats B | r_A, r_B)</text>
+  <text x="880" y="285" fill="#64748b" font-size="13" font-family="Arial" text-anchor="middle">交叉熵损失，直接优化奖励函数</text>
+
+  <!-- Training loop -->
+  <rect x="660" y="330" width="440" height="120" rx="8" fill="#ffffff"/>
+  <text x="880" y="358" fill="#1e293b" font-size="16" font-family="Arial" text-anchor="middle">训练循环</text>
+
+  <!-- Training steps -->
+  <rect x="700" y="375" width="360" height="30" rx="4" fill="#c4b5fd"/>
+  <text x="880" y="395" fill="#ffffff" font-size="13" font-family="Arial" text-anchor="middle">1. 收集中间产物 → 构建胜负对</text>
+
+  <rect x="700" y="415" width="360" height="30" rx="4" fill="#c4b5fd"/>
+  <text x="880" y="435" fill="#ffffff" font-size="13" font-family="Arial" text-anchor="middle">2. 计算 Bradley-Terry 损失</text>
+
+  <rect x="700" y="455" width="360" height="30" rx="4" fill="#c4b5fd"/>
+  <text x="880" y="475" fill="#ffffff" font-size="13" font-family="Arial" text-anchor="middle">3. 梯度更新奖励模型参数</text>
+
+  <!-- Output: Reward Model -->
+  <rect x="660" y="480" width="440" height="70" rx="8" fill="#5b21b6"/>
+  <text x="880" y="510" fill="#ffffff" font-size="16" font-family="Arial" text-anchor="middle">奖励模型 R(s, a)</text>
+  <text x="880" y="535" fill="#ddd6fe" font-size="13" font-family="Arial" text-anchor="middle">用于编排器训练和测试时扩展</text>
+
+  <!-- Arrow from Phase 3 to BT Model -->
+  <line x1="564" y1="590" x2="620" y2="590" stroke="#6b7280" stroke-width="2"/>
+  <polygon points="620,590 610,584 610,596" fill="#6b7280"/>
+
+  <!-- Key insight box -->
+  <rect x="620" y="570" width="520" height="100" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="880" y="600" fill="#92400e" font-size="14" font-family="Arial" text-anchor="middle">关键创新：无需子代理 Rollout</text>
+  <text x="880" y="625" fill="#78350f" font-size="13" font-family="Arial" text-anchor="middle">传统方法需要完整的子代理执行轨迹，OrchRM 仅利用</text>
+  <text x="880" y="645" fill="#78350f" font-size="13" font-family="Arial" text-anchor="middle">多智能体执行过程中自然产生的中间产物即可构建训练信号。</text>
+
+  <!-- Bottom annotation -->
+  <rect x="620" y="690" width="520" height="40" rx="8" fill="#f1f5f9"/>
+  <text x="880" y="715" fill="#475569" font-size="13" font-family="Arial" text-anchor="middle">编排层面操作 → Token 效率提升 10x</text>
+</svg>
