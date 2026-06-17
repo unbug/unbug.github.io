@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450" width="900" height="450">
+  <rect width="900" height="450" fill="#0f172a" rx="8"/>
+  <text x="450" y="35" text-anchor="middle" fill="#f1f5f9" font-size="18" font-weight="bold" font-family="-apple-system, sans-serif">一阶逻辑形式化流程</text>
+
+  <!-- Step 1: Natural Language Input -->
+  <g transform="translate(120, 100)">
+    <rect x="-75" y="-35" width="150" height="70" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+    <text x="0" y="-12" text-anchor="middle" fill="#3b82f6" font-size="12" font-weight="bold" font-family="monospace">STEP 1</text>
+    <text x="0" y="8" text-anchor="middle" fill="#f1f5f9" font-size="13" font-family="sans-serif">自然语言意图</text>
+    <text x="0" y="24" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="monospace">"转账 5000 到账户 B"</text>
+  </g>
+
+  <!-- Arrow -->
+  <line x1="195" y1="100" x2="260" y2="100" stroke="#3b82f6" stroke-width="2"/>
+  <polygon points="255,95 265,100 255,105" fill="#3b82f6"/>
+
+  <!-- Step 2: Intent Extraction -->
+  <g transform="translate(340, 100)">
+    <rect x="-75" y="-35" width="150" height="70" rx="8" fill="#1e293b" stroke="#06b6d4" stroke-width="2"/>
+    <text x="0" y="-12" text-anchor="middle" fill="#06b6d4" font-size="12" font-weight="bold" font-family="monospace">STEP 2</text>
+    <text x="0" y="8" text-anchor="middle" fill="#f1f5f9" font-size="13" font-family="sans-serif">意图提取</text>
+    <text x="0" y="24" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="monospace">Transfer(A, B, 5000)</text>
+  </g>
+
+  <!-- Arrow -->
+  <line x1="415" y1="100" x2="480" y2="100" stroke="#06b6d4" stroke-width="2"/>
+  <polygon points="475,95 485,100 475,105" fill="#06b6d4"/>
+
+  <!-- Step 3: FOL Formalization -->
+  <g transform="translate(560, 100)">
+    <rect x="-90" y="-35" width="180" height="70" rx="8" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
+    <text x="0" y="-12" text-anchor="middle" fill="#a78bfa" font-size="12" font-weight="bold" font-family="monospace">STEP 3</text>
+    <text x="0" y="8" text-anchor="middle" fill="#f1f5f9" font-size="13" font-family="sans-serif">一阶逻辑编码</text>
+    <text x="0" y="24" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="monospace">Transfer(A,B,5000)</text>
+  </g>
+
+  <!-- Arrow down -->
+  <line x1="650" y1="135" x2="650" y2="180" stroke="#a78bfa" stroke-width="2"/>
+  <polygon points="645,175 650,185 655,175" fill="#a78bfa"/>
+
+  <!-- Step 4: Constraint Merging -->
+  <g transform="translate(650, 230)">
+    <rect x="-90" y="-35" width="180" height="70" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="0" y="-12" text-anchor="middle" fill="#f59e0b" font-size="12" font-weight="bold" font-family="monospace">STEP 4</text>
+    <text x="0" y="8" text-anchor="middle" fill="#f1f5f9" font-size="13" font-family="sans-serif">约束合并</text>
+    <text x="0" y="24" text-anchor="middle" fill="#f59e0b" font-size="10" font-family="monospace">Intent AND Constraints</text>
+  </g>
+
+  <!-- Arrow down -->
+  <line x1="650" y1="265" x2="650" y2="310" stroke="#f59e0b" stroke-width="2"/>
+  <polygon points="645,305 650,315 655,305" fill="#f59e0b"/>
+
+  <!-- Step 5: SMT Solver -->
+  <g transform="translate(650, 360)">
+    <rect x="-90" y="-35" width="180" height="70" rx="8" fill="#1e293b" stroke="#ec4899" stroke-width="2"/>
+    <text x="0" y="-12" text-anchor="middle" fill="#ec4899" font-size="12" font-weight="bold" font-family="monospace">STEP 5</text>
+    <text x="0" y="8" text-anchor="middle" fill="#f1f5f9" font-size="13" font-family="sans-serif">SMT 求解器 (Z3)</text>
+    <text x="0" y="24" text-anchor="middle" fill="#ec4899" font-size="10" font-family="monospace">SAT / UNSAT</text>
+  </g>
+
+  <!-- Side: Security Constraints -->
+  <g transform="translate(780, 360)">
+    <rect x="-55" y="-25" width="110" height="50" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="0" y="-8" text-anchor="middle" fill="#f59e0b" font-size="11" font-weight="bold" font-family="monospace">安全约束公理</text>
+    <text x="0" y="12" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="monospace">Balance(A) >= 5000</text>
+  </g>
+
+  <!-- Arrow from constraints to merge step -->
+  <line x1="725" y1="360" x2="560" y2="230" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Output branches from SMT -->
+  <line x1="560" y1="360" x2="470" y2="360" stroke="#10b981" stroke-width="2"/>
+  <rect x="380" y="345" width="90" height="30" rx="4" fill="#10b981" opacity="0.2" stroke="#10b981" stroke-width="1"/>
+  <text x="425" y="365" text-anchor="middle" fill="#10b981" font-size="12" font-weight="bold" font-family="monospace">SAT -> ALLOW</text>
+
+  <!-- Arrow from merge to SMT -->
+  <line x1="560" y1="360" x2="470" y2="360" stroke="#ef4444" stroke-width="2"/>
+  <rect x="380" y="390" width="90" height="30" rx="4" fill="#ef4444" opacity="0.2" stroke="#ef4444" stroke-width="1"/>
+  <text x="425" y="410" text-anchor="middle" fill="#ef4444" font-size="12" font-weight="bold" font-family="monospace">UNSAT -> DENY</text>
+
+  <!-- Bottom annotation -->
+  <text x="450" y="440" text-anchor="middle" fill="#475569" font-size="10" font-family="monospace">意图提取的准确性决定了整个形式化验证的有效性</text>
+</svg>

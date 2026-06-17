@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500">
+  <rect width="900" height="500" fill="#0f172a" rx="8"/>
+  <text x="450" y="35" text-anchor="middle" fill="#f1f5f9" font-size="18" font-weight="bold" font-family="-apple-system, sans-serif">与传统语义护栏对比</text>
+
+  <!-- Left column: Traditional Semantic Guardrail -->
+  <g transform="translate(220, 70)">
+    <rect x="-140" y="-30" width="280" height="50" rx="8" fill="#1e293b" stroke="#ef4444" stroke-width="2"/>
+    <text x="0" y="5" text-anchor="middle" fill="#ef4444" font-size="16" font-weight="bold" font-family="monospace">传统语义护栏</text>
+
+    <!-- Flow diagram -->
+    <g transform="translate(0, 80)">
+      <!-- Step boxes -->
+      <rect x="-120" y="-25" width="70" height="40" rx="4" fill="#3b82f6" opacity="0.2" stroke="#3b82f6" stroke-width="1"/>
+      <text x="-85" y="3" text-anchor="middle" fill="#93c5fd" font-size="10" font-family="monospace">意图输入</text>
+
+      <line x1="-50" y1="-5" x2="-30" y2="-5" stroke="#64748b" stroke-width="1.5"/>
+      <polygon points="-32,-8 -26,-5 -32,-2" fill="#64748b"/>
+
+      <rect x="-25" y="-25" width="70" height="40" rx="4" fill="#f59e0b" opacity="0.2" stroke="#f59e0b" stroke-width="1"/>
+      <text x="10" y="3" text-anchor="middle" fill="#fcd34d" font-size="10" font-family="monospace">分类器判断</text>
+
+      <line x1="40" y1="-5" x2="60" y2="-5" stroke="#64748b" stroke-width="1.5"/>
+      <polygon points="58,-8 64,-5 58,-2" fill="#64748b"/>
+
+      <rect x="65" y="-25" width="70" height="40" rx="4" fill="#a78bfa" opacity="0.2" stroke="#a78bfa" stroke-width="1"/>
+      <text x="100" y="3" text-anchor="middle" fill="#c4b5fd" font-size="10" font-family="monospace">概率输出</text>
+
+      <!-- Result -->
+      <line x1="135" y1="-5" x2="160" y2="-5" stroke="#64748b" stroke-width="1.5"/>
+      <polygon points="158,-8 164,-5 158,-2" fill="#64748b"/>
+
+      <rect x="165" y="-25" width="50" height="40" rx="4" fill="#ef4444" opacity="0.3" stroke="#ef4444" stroke-width="1"/>
+      <text x="190" y="3" text-anchor="middle" fill="#fca5a5" font-size="10" font-family="monospace">拦截/放行</text>
+    </g>
+
+    <!-- Weakness indicators -->
+    <g transform="translate(0, 160)">
+      <rect x="-120" y="-40" width="240" height="85" rx="6" fill="#1e293b" stroke="#ef4444" stroke-width="1"/>
+      <text x="0" y="-22" text-anchor="middle" fill="#ef4444" font-size="11" font-weight="bold" font-family="monospace">局限性</text>
+
+      <text x="-105" y="0" text-anchor="start" fill="#94a3b8" font-size="10" font-family="sans-serif">- 语义规则可被精心构造的输入绕过</text>
+      <text x="-105" y="16" text-anchor="start" fill="#94a3b8" font-size="10" font-family="sans-serif">- 经验方法存在无法覆盖的盲区</text>
+      <text x="-105" y="32" text-anchor="start" fill="#94a3b8" font-size="10" font-family="sans-serif">- ASR: 12-35%, FPR: 3-8%</text>
+    </g>
+  </g>
+
+  <!-- VS divider -->
+  <g transform="translate(450, 250)">
+    <circle cx="0" cy="0" r="25" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="0" y="6" text-anchor="middle" fill="#f59e0b" font-size="14" font-weight="bold" font-family="monospace">VS</text>
+  </g>
+
+  <!-- Right column: ePCA -->
+  <g transform="translate(680, 70)">
+    <rect x="-140" y="-30" width="280" height="50" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <text x="0" y="5" text-anchor="middle" fill="#10b981" font-size="16" font-weight="bold" font-family="monospace">ePCA 形式化验证</text>
+
+    <!-- Flow diagram -->
+    <g transform="translate(0, 80)">
+      <!-- Step boxes -->
+      <rect x="-120" y="-25" width="70" height="40" rx="4" fill="#3b82f6" opacity="0.2" stroke="#3b82f6" stroke-width="1"/>
+      <text x="-85" y="3" text-anchor="middle" fill="#93c5fd" font-size="10" font-family="monospace">意图提取</text>
+
+      <line x1="-50" y1="-5" x2="-30" y2="-5" stroke="#64748b" stroke-width="1.5"/>
+      <polygon points="-32,-8 -26,-5 -32,-2" fill="#64748b"/>
+
+      <rect x="-25" y="-25" width="70" height="40" rx="4" fill="#a78bfa" opacity="0.2" stroke="#a78bfa" stroke-width="1"/>
+      <text x="10" y="3" text-anchor="middle" fill="#c4b5fd" font-size="10" font-family="monospace">FOL 编码</text>
+
+      <line x1="40" y1="-5" x2="60" y2="-5" stroke="#64748b" stroke-width="1.5"/>
+      <polygon points="58,-8 64,-5 58,-2" fill="#64748b"/>
+
+      <rect x="65" y="-25" width="70" height="40" rx="4" fill="#ec4899" opacity="0.2" stroke="#ec4899" stroke-width="1"/>
+      <text x="100" y="3" text-anchor="middle" fill="#f9a8d4" font-size="10" font-family="monospace">SMT 求解</text>
+
+      <!-- Result -->
+      <line x1="135" y1="-5" x2="160" y2="-5" stroke="#64748b" stroke-width="1.5"/>
+      <polygon points="158,-8 164,-5 158,-2" fill="#64748b"/>
+
+      <rect x="165" y="-25" width="50" height="40" rx="4" fill="#10b981" opacity="0.3" stroke="#10b981" stroke-width="1"/>
+      <text x="190" y="3" text-anchor="middle" fill="#6ee7b7" font-size="10" font-family="monospace">证明/反证</text>
+    </g>
+
+    <!-- Strength indicators -->
+    <g transform="translate(0, 160)">
+      <rect x="-120" y="-40" width="240" height="85" rx="6" fill="#1e293b" stroke="#10b981" stroke-width="1"/>
+      <text x="0" y="-22" text-anchor="middle" fill="#10b981" font-size="11" font-weight="bold" font-family="monospace">优势</text>
+
+      <text x="-105" y="0" text-anchor="start" fill="#94a3b8" font-size="10" font-family="sans-serif">- 数学证明而非概率判断</text>
+      <text x="-105" y="16" text-anchor="start" fill="#94a3b8" font-size="10" font-family="sans-serif">- UNSAT = 逻辑上不可能安全</text>
+      <text x="-105" y="32" text-anchor="start" fill="#94a3b8" font-size="10" font-family="sans-serif">- ASR: 0%, FPR: 0%</text>
+    </g>
+  </g>
+
+  <!-- Bottom summary -->
+  <g transform="translate(450, 470)">
+    <rect x="-380" y="-16" width="760" height="32" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/>
+    <text x="0" y="4" text-anchor="middle" fill="#fcd34d" font-size="11" font-family="sans-serif">核心差异：概率判断 (P(safe) ~ 0.85) vs 确定性证明 (PROVEN SAFE / UNSATISFIABLE)</text>
+  </g>
+</svg>

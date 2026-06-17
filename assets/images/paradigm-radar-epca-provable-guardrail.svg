@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Grid pattern -->
+  <g stroke="#1e3a5f" stroke-width="0.5" opacity="0.4">
+    <line x1="0" y1="100" x2="1200" y2="100"/><line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/><line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="630"/><line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/><line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+
+  <!-- Decorative circuit lines -->
+  <g stroke="#3b82f6" stroke-width="1.5" opacity="0.3">
+    <path d="M 50,315 L 150,315 L 180,280 L 250,280"/>
+    <path d="M 950,315 L 1050,315 L 1080,350 L 1150,350"/>
+    <circle cx="250" cy="280" r="4" fill="#3b82f6" opacity="0.5"/>
+    <circle cx="1080" cy="350" r="4" fill="#3b82f6" opacity="0.5"/>
+  </g>
+
+  <!-- Central shield icon -->
+  <g transform="translate(600, 290)" filter="url(#glow)">
+    <path d="M 0,-100 L 70,-60 L 70,30 Q 70,80 0,110 Q -70,80 -70,30 L -70,-60 Z"
+          fill="none" stroke="url(#accentGrad)" stroke-width="3"/>
+    <path d="M 0,-75 L 45,-45 L 45,15 Q 45,50 0,72 Q -45,50 -45,15 L -45,-45 Z"
+          fill="#3b82f6" opacity="0.1"/>
+
+    <!-- Lock symbol inside shield -->
+    <rect x="-18" y="-10" width="36" height="28" rx="4" fill="none" stroke="#06b6d4" stroke-width="2"/>
+    <path d="M -10,-10 L -10,-25 Q 0,-35 10,-25 L 10,-10" fill="none" stroke="#06b6d4" stroke-width="2.5"/>
+    <circle cx="0" cy="6" r="4" fill="#06b6d4"/>
+
+    <!-- Check mark -->
+    <path d="M -20,30 L -8,42 L 20,12" fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Left side: Traditional approach (crossed out) -->
+  <g transform="translate(160, 250)">
+    <rect x="-70" y="-80" width="140" height="160" rx="8" fill="#1e293b" stroke="#ef4444" stroke-width="1.5" opacity="0.8"/>
+    <text x="0" y="-45" text-anchor="middle" fill="#ef4444" font-size="13" font-family="monospace">SEMANTIC</text>
+    <text x="0" y="-28" text-anchor="middle" fill="#ef4444" font-size="13" font-family="monospace">GUARDRAILS</text>
+    <!-- X mark -->
+    <line x1="-25" y1="5" x2="25" y2="40" stroke="#ef4444" stroke-width="2.5"/>
+    <line x1="25" y1="5" x2="-25" y2="40" stroke="#ef4444" stroke-width="2.5"/>
+    <!-- Probability indicator -->
+    <text x="0" y="65" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="monospace">P(safe) ~ 0.85</text>
+  </g>
+
+  <!-- Right side: ePCA approach (check mark) -->
+  <g transform="translate(1040, 250)">
+    <rect x="-70" y="-80" width="140" height="160" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5" opacity="0.8"/>
+    <text x="0" y="-45" text-anchor="middle" fill="#10b981" font-size="13" font-family="monospace">ePCA</text>
+    <text x="0" y="-28" text-anchor="middle" fill="#10b981" font-size="13" font-family="monospace">PROVABLE</text>
+    <!-- Check mark -->
+    <path d="M -20,5 L -8,17 L 20,-15" fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Proof indicator -->
+    <text x="0" y="65" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="monospace">PROVEN SAFE</text>
+  </g>
+
+  <!-- Arrow between them -->
+  <g transform="translate(600, 250)">
+    <line x1="-170" y1="0" x2="170" y2="0" stroke="url(#accentGrad)" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6"/>
+      </marker>
+    </defs>
+    <text x="0" y="-15" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="monospace">PARADIGM SHIFT</text>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="470" text-anchor="middle" fill="#f1f5f9" font-size="32" font-weight="bold" font-family="-apple-system, BlinkMacSystemFont, sans-serif">
+    AI 范式雷达：用形式化逻辑给 Agent 装上可证明的安全护栏
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="510" text-anchor="middle" fill="#94a3b8" font-size="16" font-family="-apple-system, BlinkMacSystemFont, sans-serif">
+    From Experience to Proof: ePCA's Provably Secure Agent Guardrail
+  </text>
+
+  <!-- Key metrics -->
+  <g transform="translate(600, 570)">
+    <rect x="-280" y="-18" width="140" height="36" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+    <text x="-210" y="5" text-anchor="middle" fill="#3b82f6" font-size="14" font-weight="bold" font-family="monospace">ASR = 0%</text>
+
+    <rect x="-140" y="-18" width="140" height="36" rx="6" fill="#1e293b" stroke="#06b6d4" stroke-width="1"/>
+    <text x="-70" y="5" text-anchor="middle" fill="#06b6d4" font-size="14" font-weight="bold" font-family="monospace">FPR = 0%</text>
+
+    <rect x="0" y="-18" width="140" height="36" rx="6" fill="#1e293b" stroke="#10b981" stroke-width="1"/>
+    <text x="70" y="5" text-anchor="middle" fill="#10b981" font-size="14" font-weight="bold" font-family="monospace">Latency = 0.44ms</text>
+
+    <rect x="140" y="-18" width="140" height="36" rx="6" fill="#1e293b" stroke="#a78bfa" stroke-width="1"/>
+    <text x="210" y="5" text-anchor="middle" fill="#a78bfa" font-size="14" font-weight="bold" font-family="monospace">Z3 + SMT</text>
+  </g>
+
+  <!-- arXiv reference -->
+  <text x="600" y="620" text-anchor="middle" fill="#475569" font-size="11" font-family="monospace">arXiv:2605.29251 | USTC | Benlong Wu et al.</text>
+</svg>

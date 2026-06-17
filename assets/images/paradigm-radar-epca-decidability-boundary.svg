@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500">
+  <rect width="900" height="500" fill="#0f172a" rx="8"/>
+  <text x="450" y="35" text-anchor="middle" fill="#f1f5f9" font-size="18" font-weight="bold" font-family="-apple-system, sans-serif">不可判定性边界条件</text>
+
+  <!-- Central boundary line -->
+  <line x1="450" y1="60" x2="450" y2="430" stroke="#f59e0b" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="450" y="55" text-anchor="middle" fill="#f59e0b" font-size="11" font-weight="bold" font-family="monospace">可判定性边界</text>
+
+  <!-- Left: Decidable Zone -->
+  <g transform="translate(230, 250)">
+    <rect x="-180" y="-160" width="360" height="320" rx="12" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+
+    <!-- Title -->
+    <text x="0" y="-125" text-anchor="middle" fill="#10b981" font-size="14" font-weight="bold" font-family="monospace">可判定区域</text>
+
+    <!-- Content items -->
+    <g transform="translate(-140, -90)">
+      <rect x="-120" y="-15" width="240" height="30" rx="4" fill="#10b981" opacity="0.1"/>
+      <text x="0" y="4" text-anchor="middle" fill="#6ee7b7" font-size="11" font-family="sans-serif">权限控制 (ACL / RBAC)</text>
+    </g>
+
+    <g transform="translate(-140, -50)">
+      <rect x="-120" y="-15" width="240" height="30" rx="4" fill="#10b981" opacity="0.1"/>
+      <text x="0" y="4" text-anchor="middle" fill="#6ee7b7" font-size="11" font-family="sans-serif">数据访问限制</text>
+    </g>
+
+    <g transform="translate(-140, -10)">
+      <rect x="-120" y="-15" width="240" height="30" rx="4" fill="#10b981" opacity="0.1"/>
+      <text x="0" y="4" text-anchor="middle" fill="#6ee7b7" font-size="11" font-family="sans-serif">转账金额约束</text>
+    </g>
+
+    <g transform="translate(-140, 30)">
+      <rect x="-120" y="-15" width="240" height="30" rx="4" fill="#10b981" opacity="0.1"/>
+      <text x="0" y="4" text-anchor="middle" fill="#6ee7b7" font-size="11" font-family="sans-serif">API 调用频率限制</text>
+    </g>
+
+    <g transform="translate(-140, 70)">
+      <rect x="-120" y="-15" width="240" height="30" rx="4" fill="#10b981" opacity="0.1"/>
+      <text x="0" y="4" text-anchor="middle" fill="#6ee7b7" font-size="11" font-family="sans-serif">状态转换约束</text>
+    </g>
+
+    <!-- Checkmark -->
+    <path d="M -30,120 L -15,135 L 30,95" fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round"/>
+    <text x="0" y="155" text-anchor="middle" fill="#10b981" font-size="11" font-weight="bold" font-family="monospace">SMT 可判定</text>
+  </g>
+
+  <!-- Right: Undecidable Zone -->
+  <g transform="translate(670, 250)">
+    <rect x="-180" y="-160" width="360" height="320" rx="12" fill="#1e293b" stroke="#ef4444" stroke-width="2"/>
+
+    <!-- Title -->
+    <text x="0" y="-125" text-anchor="middle" fill="#ef4444" font-size="14" font-weight="bold" font-family="monospace">不可判定区域</text>
+
+    <!-- Content items -->
+    <g transform="translate(-140, -90)">
+      <rect x="-120" y="-15" width="240" height="30" rx="4" fill="#ef4444" opacity="0.1"/>
+      <text x="0" y="4" text-anchor="middle" fill="#fca5a5" font-size="11" font-family="sans-serif">社会工程风险检测</text>
+    </g>
+
+    <g transform="translate(-140, -50)">
+      <rect x="-120" y="-15" width="240" height="30" rx="4" fill="#ef4444" opacity="0.1"/>
+      <text x="0" y="4" text-anchor="middle" fill="#fca5a5" font-size="11" font-family="sans-serif">用户认知偏差利用</text>
+    </g>
+
+    <g transform="translate(-140, -10)">
+      <rect x="-120" y="-15" width="240" height="30" rx="4" fill="#ef4444" opacity="0.1"/>
+      <text x="0" y="4" text-anchor="middle" fill="#fca5a5" font-size="11" font-family="sans-serif">意图与心理状态</text>
+    </g>
+
+    <g transform="translate(-140, 30)">
+      <rect x="-120" y="-15" width="240" height="30" rx="4" fill="#ef4444" opacity="0.1"/>
+      <text x="0" y="4" text-anchor="middle" fill="#fca5a5" font-size="11" font-family="sans-serif">Godel 不完备命题</text>
+    </g>
+
+    <g transform="translate(-140, 70)">
+      <rect x="-120" y="-15" width="240" height="30" rx="4" fill="#ef4444" opacity="0.1"/>
+      <text x="0" y="4" text-anchor="middle" fill="#fca5a5" font-size="11" font-family="sans-serif">Turing 停机问题</text>
+    </g>
+
+    <!-- X mark -->
+    <line x1="-20" y1="115" x2="20" y2="145" stroke="#ef4444" stroke-width="3"/>
+    <line x1="20" y1="115" x2="-20" y2="145" stroke="#ef4444" stroke-width="3"/>
+    <text x="0" y="165" text-anchor="middle" fill="#ef4444" font-size="11" font-weight="bold" font-family="monospace">需经验方法补充</text>
+  </g>
+
+  <!-- Bottom: Theory references -->
+  <g transform="translate(450, 470)">
+    <rect x="-380" y="-16" width="760" height="32" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/>
+    <text x="0" y="4" text-anchor="middle" fill="#fcd34d" font-size="11" font-family="sans-serif">Godel 不完备性 + Turing 不可判定性 = 形式化验证的理论天花板</text>
+  </g>
+
+  <!-- Arrow annotations -->
+  <line x1="230" y1="430" x2="230" y2="465" stroke="#10b981" stroke-width="1.5"/>
+  <polygon points="227,460 230,470 233,460" fill="#10b981"/>
+
+  <line x1="670" y1="430" x2="670" y2="465" stroke="#ef4444" stroke-width="1.5"/>
+  <polygon points="667,460 670,470 673,460" fill="#ef4444"/>
+
+  <!-- Bottom labels -->
+  <text x="230" y="485" text-anchor="middle" fill="#10b981" font-size="10" font-family="monospace">ePCA 适用</text>
+  <text x="670" y="485" text-anchor="middle" fill="#ef4444" font-size="10" font-family="monospace">需传统方案补充</text>
+</svg>
