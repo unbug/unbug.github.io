@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 540" font-family="'Helvetica Neue', Arial, sans-serif">
+  <rect width="860" height="540" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="430" y="32" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a1a">模型效率对比：每百万Token完成的工作量</text>
+
+  <!-- Horizontal bar chart: model efficiency ranking -->
+  <!-- Y axis: models, X axis: relative efficiency (lower = better) -->
+  
+  <!-- Model bars (average tokens per solved task, lower is better) -->
+  <text x="90" y="75" text-anchor="end" font-size="12" fill="#333">GPT-5</text>
+  <rect x="100" y="60" width="400" height="28" rx="3" fill="#4a90d9"/>
+  <text x="510" y="79" font-size="11" fill="#333">~350K tokens/task</text>
+
+  <text x="90" y="120" text-anchor="end" font-size="12" fill="#333">Claude-Sonnet-4.5</text>
+  <rect x="100" y="105" width="560" height="28" rx="3" fill="#e74c3c"/>
+  <text x="670" y="124" font-size="11" fill="#333">~520K tokens/task (+49%)</text>
+
+  <text x="90" y="165" text-anchor="end" font-size="12" fill="#333">Gemini-2.5-Pro</text>
+  <rect x="100" y="150" width="540" height="28" rx="3" fill="#e74c3c"/>
+  <text x="650" y="169" font-size="11" fill="#333">~500K tokens/task (+43%)</text>
+
+  <text x="90" y="210" text-anchor="end" font-size="12" fill="#333">Kimi-K2</text>
+  <rect x="100" y="195" width="620" height="28" rx="3" fill="#c0392b"/>
+  <text x="730" y="214" font-size="11" fill="#333">~580K tokens/task (+66%)</text>
+
+  <!-- Efficiency comparison section -->
+  <rect x="520" y="250" width="300" height="160" rx="6" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="670" y="275" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a1a">效率差异总结</text>
+
+  <!-- Comparison bars -->
+  <rect x="540" y="290" width="260" height="25" rx="3" fill="#e8f4fd"/>
+  <text x="545" y="307" font-size="11" fill="#1a5276">GPT-5 vs Kimi-K2: -150K tokens</text>
+
+  <rect x="540" y="325" width="260" height="25" rx="3" fill="#f8d7da"/>
+  <text x="545" y="342" font-size="11" fill="#721c24">GPT-5 vs Claude-Sonnet: -170K tokens</text>
+
+  <rect x="540" y="360" width="260" height="25" rx="3" fill="#fff3cd"/>
+  <text x="545" y="377" font-size="11" fill="#856404">GPT-5 vs Gemini: -150K tokens</text>
+
+  <!-- Key insight -->
+  <rect x="60" y="435" width="740" height="50" rx="4" fill="#d1ecf1" stroke="#17a2b8" stroke-width="1"/>
+  <text x="430" y="457" text-anchor="middle" font-size="12" font-weight="bold" fill="#0c5460">核心发现：模型效率比强度更重要。高效中等模型可能比低效顶级模型总成本更低</text>
+  <text x="430" y="475" text-anchor="middle" font-size="10" fill="#0c5460">最佳策略：找到 (Token消耗) / (解决率) 的最小值——单位解决成本最优</text>
+
+  <!-- Source -->
+  <text x="430" y="520" text-anchor="middle" font-size="9" fill="#999">Source: Bai et al., Stanford / Michigan (arXiv:2604.22750v2)</text>
+
+  <!-- Article badge -->
+  <rect x="60" y="505" width="100" height="24" rx="3" fill="#e3f2fd"/>
+  <text x="110" y="521" text-anchor="middle" font-size="9" font-weight="bold" fill="#1565c0">Article #72</text>
+
+  <!-- Paradigm Radar badge -->
+  <rect x="700" y="505" width="100" height="24" rx="3" fill="#fff3cd"/>
+  <text x="750" y="521" text-anchor="middle" font-size="9" fill="#856404">AI Paradigm Radar</text>
+</svg>

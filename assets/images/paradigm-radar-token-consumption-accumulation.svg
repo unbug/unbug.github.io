@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 540" font-family="'Helvetica Neue', Arial, sans-serif">
+  <rect width="860" height="540" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="430" y="32" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a1a">Agent编码任务Token累积路径</text>
+
+  <!-- Timeline: horizontal axis -->
+  <line x1="80" y1="120" x2="780" y2="120" stroke="#333" stroke-width="2"/>
+
+  <!-- Step nodes with cumulative token bars -->
+  <!-- Step 1: System Prompt Load -->
+  <circle cx="120" cy="120" r="16" fill="#4a90d9"/>
+  <text x="120" y="125" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">1</text>
+  <rect x="80" y="145" width="80" height="60" rx="3" fill="#4a90d9"/>
+  <text x="120" y="170" text-anchor="middle" font-size="10" fill="#fff">系统提示</text>
+  <text x="120" y="185" text-anchor="middle" font-size="10" fill="#fff">~5K tokens</text>
+
+  <!-- Step 2: Initial Code Generation -->
+  <circle cx="240" cy="120" r="16" fill="#357abd"/>
+  <text x="240" y="125" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">2</text>
+  <rect x="200" y="145" width="80" height="90" rx="3" fill="#357abd"/>
+  <text x="240" y="185" text-anchor="middle" font-size="10" fill="#fff">初始代码</text>
+  <text x="240" y="200" text-anchor="middle" font-size="10" fill="#fff">~15K tokens</text>
+
+  <!-- Step 3: Test Execution -->
+  <circle cx="360" cy="120" r="16" fill="#e74c3c"/>
+  <text x="360" y="125" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">3</text>
+  <rect x="320" y="145" width="80" height="130" rx="3" fill="#e74c3c"/>
+  <text x="360" y="200" text-anchor="middle" font-size="10" fill="#fff">测试执行</text>
+  <text x="360" y="215" text-anchor="middle" font-size="10" fill="#fff">~45K tokens</text>
+
+  <!-- Step 4: Error Analysis -->
+  <circle cx="480" cy="120" r="16" fill="#f39c12"/>
+  <text x="480" y="125" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">4</text>
+  <rect x="440" y="145" width="80" height="170" rx="3" fill="#f39c12"/>
+  <text x="480" y="220" text-anchor="middle" font-size="10" fill="#fff">错误分析</text>
+  <text x="480" y="235" text-anchor="middle" font-size="10" fill="#fff">~95K tokens</text>
+
+  <!-- Step 5: Iterative Fix (loop) -->
+  <circle cx="600" cy="120" r="16" fill="#e74c3c"/>
+  <text x="600" y="125" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">5</text>
+  <rect x="560" y="145" width="80" height="230" rx="3" fill="#e74c3c"/>
+  <text x="600" y="250" text-anchor="middle" font-size="10" fill="#fff">迭代修复</text>
+  <text x="600" y="265" text-anchor="middle" font-size="10" fill="#fff">~350K tokens</text>
+
+  <!-- Step 6: Final Submission -->
+  <circle cx="720" cy="120" r="16" fill="#27ae60"/>
+  <text x="720" y="125" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">6</text>
+  <rect x="680" y="145" width="80" height="260" rx="3" fill="#27ae60"/>
+  <text x="720" y="265" text-anchor="middle" font-size="10" fill="#fff">最终提交</text>
+  <text x="720" y="280" text-anchor="middle" font-size="10" fill="#fff">~500K tokens</text>
+
+  <!-- Cumulative arrow -->
+  <line x1="120" y1="430" x2="720" y2="430" stroke="#c0392b" stroke-width="2"/>
+  <polygon points="720,425 730,430 720,435" fill="#c0392b"/>
+  <text x="420" y="425" text-anchor="middle" font-size="12" font-weight="bold" fill="#c0392b">累积Token消耗 (非线性增长)</text>
+
+  <!-- Key insight boxes -->
+  <rect x="60" y="455" width="370" height="50" rx="4" fill="#f8d7da" stroke="#dc3545" stroke-width="1"/>
+  <text x="245" y="475" text-anchor="middle" font-size="11" font-weight="bold" fill="#721c24">关键：每轮迭代重新发送完整对话历史</text>
+  <text x="245" y="493" text-anchor="middle" font-size="10" fill="#721c24">输入Token随步骤线性增长，而非恒定</text>
+
+  <rect x="450" y="455" width="350" height="50" rx="4" fill="#fff3cd" stroke="#ffc107" stroke-width="1"/>
+  <text x="625" y="475" text-anchor="middle" font-size="11" font-weight="bold" fill="#856404">典型范围：50K - 500K tokens/任务</text>
+  <text x="625" y="493" text-anchor="middle" font-size="10" fill="#856404">差异可达30倍，取决于迭代次数</text>
+
+  <!-- Loop annotation -->
+  <path d="M 600,140 Q 600,80 480,80 Q 420,80 420,120" fill="none" stroke="#f39c12" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="540" y="75" text-anchor="middle" font-size="10" fill="#f39c12">迭代循环</text>
+
+  <!-- Source -->
+  <text x="430" y="525" text-anchor="middle" font-size="9" fill="#999">Source: Bai et al., Stanford / Michigan (arXiv:2604.22750v2)</text>
+</svg>

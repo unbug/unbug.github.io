@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 540" font-family="'Helvetica Neue', Arial, sans-serif">
+  <rect width="860" height="540" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="430" y="32" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a1a">人类难度评估 vs Token消耗：弱相关</text>
+
+  <!-- Scatter plot: human difficulty rating vs actual token consumption -->
+  <!-- X axis: Human difficulty (1-5), Y axis: Actual token consumption -->
+  
+  <!-- Axes -->
+  <line x1="120" y1="420" x2="760" y2="420" stroke="#333" stroke-width="1.5"/>
+  <line x1="120" y1="80" x2="120" y2="420" stroke="#333" stroke-width="1.5"/>
+
+  <!-- X axis labels -->
+  <text x="200" y="445" text-anchor="middle" font-size="10" fill="#666">简单 (1)</text>
+  <text x="280" y="445" text-anchor="middle" font-size="10" fill="#666">偏易 (2)</text>
+  <text x="360" y="445" text-anchor="middle" font-size="10" fill="#666">中等 (3)</text>
+  <text x="440" y="445" text-anchor="middle" font-size="10" fill="#666">偏难 (4)</text>
+  <text x="520" y="445" text-anchor="middle" font-size="10" fill="#666">困难 (5)</text>
+
+  <!-- Y axis labels -->
+  <text x="110" y="85" text-anchor="end" font-size="10" fill="#666">高消耗</text>
+  <text x="110" y="250" text-anchor="end" font-size="10" fill="#666">中消耗</text>
+  <text x="110" y="415" text-anchor="end" font-size="10" fill="#666">低消耗</text>
+
+  <!-- Data points: scattered, showing weak correlation -->
+  <!-- Simple tasks (x=200): some low, some very high -->
+  <circle cx="200" cy="380" r="5" fill="#4a90d9"/>
+  <circle cx="195" cy="360" r="5" fill="#4a90d9"/>
+  <circle cx="205" cy="150" r="6" fill="#c0392b"/>
+  <circle cx="198" cy="180" r="6" fill="#c0392b"/>
+
+  <!-- Medium tasks (x=360): wide spread -->
+  <circle cx="355" cy="350" r="5" fill="#4a90d9"/>
+  <circle cx="365" cy="370" r="5" fill="#4a90d9"/>
+  <circle cx="360" cy="280" r="5" fill="#f39c12"/>
+  <circle cx="358" cy="300" r="5" fill="#f39c12"/>
+
+  <!-- Hard tasks (x=520): some low, some high -->
+  <circle cx="520" cy="340" r="5" fill="#4a90d9"/>
+  <circle cx="515" cy="360" r="5" fill="#4a90d9"/>
+  <circle cx="525" cy="200" r="6" fill="#c0392b"/>
+
+  <!-- Trend line (nearly flat - weak correlation) -->
+  <line x1="180" y1="340" x2="540" y2="320" stroke="#e74c3c" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- Correlation annotation box -->
+  <rect x="520" y="100" width="300" height="120" rx="6" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="670" y="125" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a1a">相关性分析</text>
+
+  <!-- Correlation value -->
+  <rect x="540" y="140" width="260" height="30" rx="3" fill="#fff3cd"/>
+  <text x="670" y="160" text-anchor="middle" font-size="12" font-weight="bold" fill="#856404">弱相关 (r ≈ 0.2-0.3)</text>
+
+  <!-- Key insight -->
+  <rect x="60" y="435" width="740" height="50" rx="4" fill="#d1ecf1" stroke="#17a2b8" stroke-width="1"/>
+  <text x="430" y="457" text-anchor="middle" font-size="12" font-weight="bold" fill="#0c5460">发现：人类直觉不可靠。简单任务可能消耗大量Token，困难任务反而高效解决</text>
+
+  <!-- Source -->
+  <text x="430" y="520" text-anchor="middle" font-size="9" fill="#999">Source: Bai et al., Stanford / Michigan (arXiv:2604.22750v2)</text>
+
+  <!-- Article badge -->
+  <rect x="60" y="505" width="100" height="24" rx="3" fill="#e3f2fd"/>
+  <text x="110" y="521" text-anchor="middle" font-size="9" font-weight="bold" fill="#1565c0">Article #72</text>
+
+  <!-- Paradigm Radar badge -->
+  <rect x="700" y="505" width="100" height="24" rx="3" fill="#fff3cd"/>
+  <text x="750" y="521" text-anchor="middle" font-size="9" fill="#856404">AI Paradigm Radar</text>
+</svg>

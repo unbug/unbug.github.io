@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 540" font-family="'Helvetica Neue', Arial, sans-serif">
+  <rect width="860" height="540" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="430" y="32" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a1a">准确率 vs Token消耗：倒U型关系</text>
+
+  <!-- Axes -->
+  <line x1="100" y1="420" x2="760" y2="420" stroke="#333" stroke-width="1.5"/>
+  <line x1="100" y1="80" x2="100" y2="420" stroke="#333" stroke-width="1.5"/>
+
+  <!-- Axis labels -->
+  <text x="430" y="460" text-anchor="middle" font-size="12" fill="#333">Token消耗 (K tokens)</text>
+  <text x="30" y="250" text-anchor="middle" font-size="12" fill="#333" transform="rotate(-90, 30, 250)">任务解决准确率 (%)</text>
+
+  <!-- X axis labels -->
+  <text x="140" y="440" text-anchor="middle" font-size="10" fill="#666">低 (50K)</text>
+  <text x="380" y="440" text-anchor="middle" font-size="10" fill="#666">中 (200-400K)</text>
+  <text x="700" y="440" text-anchor="middle" font-size="10" fill="#666">高 (&gt;500K)</text>
+
+  <!-- Y axis labels -->
+  <text x="90" y="85" text-anchor="end" font-size="10" fill="#666">100%</text>
+  <text x="90" y="250" text-anchor="end" font-size="10" fill="#666">50%</text>
+  <text x="90" y="415" text-anchor="end" font-size="10" fill="#666">0%</text>
+
+  <!-- Inverted U curve -->
+  <path d="M 140,380 Q 260,120 380,100 Q 500,100 700,350" fill="none" stroke="#e74c3c" stroke-width="3"/>
+
+  <!-- Peak annotation -->
+  <circle cx="380" cy="100" r="6" fill="#27ae60"/>
+  <rect x="310" y="55" width="140" height="35" rx="4" fill="#e8f5e9" stroke="#27ae60" stroke-width="1"/>
+  <text x="380" y="77" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e8449">峰值准确率</text>
+
+  <!-- Low cost zone -->
+  <rect x="100" y="80" width="200" height="340" rx="4" fill="#fff3cd" opacity="0.3"/>
+  <text x="200" y="95" text-anchor="middle" font-size="10" fill="#856404">低消耗区</text>
+  <text x="200" y="108" text-anchor="middle" font-size="9" fill="#856404">信息不足</text>
+
+  <!-- High cost zone -->
+  <rect x="560" y="80" width="200" height="340" rx="4" fill="#f8d7da" opacity="0.3"/>
+  <text x="660" y="95" text-anchor="middle" font-size="10" fill="#721c24">高消耗区</text>
+  <text x="660" y="108" text-anchor="middle" font-size="9" fill="#721c24">路径偏离</text>
+
+  <!-- Key insight -->
+  <rect x="60" y="475" width="740" height="45" rx="4" fill="#f8d7da" stroke="#dc3545" stroke-width="1"/>
+  <text x="430" y="495" text-anchor="middle" font-size="12" font-weight="bold" fill="#721c24">关键发现：更高Token消耗 ≠ 更高准确率。高消耗区往往在重复无效路径</text>
+
+  <!-- Source -->
+  <text x="430" y="538" text-anchor="middle" font-size="9" fill="#999">Source: Bai et al., Stanford / Michigan (arXiv:2604.22750v2)</text>
+
+  <!-- Article badge -->
+  <rect x="60" y="523" width="100" height="24" rx="3" fill="#e3f2fd"/>
+  <text x="110" y="539" text-anchor="middle" font-size="9" font-weight="bold" fill="#1565c0">Article #72</text>
+
+  <!-- Paradigm Radar badge -->
+  <rect x="700" y="523" width="100" height="24" rx="3" fill="#fff3cd"/>
+  <text x="750" y="539" text-anchor="middle" font-size="9" fill="#856404">AI Paradigm Radar</text>
+</svg>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 540" font-family="'Helvetica Neue', Arial, sans-serif">
+  <rect width="860" height="540" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="430" y="32" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a1a">模型自我预测 vs 实际消耗：系统性低估</text>
+
+  <!-- Scatter plot: predicted vs actual token consumption -->
+  <!-- X axis: Predicted, Y axis: Actual -->
+  
+  <!-- Axes -->
+  <line x1="120" y1="420" x2="760" y2="420" stroke="#333" stroke-width="1.5"/>
+  <line x1="120" y1="80" x2="120" y2="420" stroke="#333" stroke-width="1.5"/>
+
+  <!-- Diagonal line (perfect prediction) -->
+  <line x1="120" y1="420" x2="760" y2="80" stroke="#999" stroke-width="1" stroke-dasharray="6,4"/>
+  <text x="730" y="100" font-size="10" fill="#999">完美预测线</text>
+
+  <!-- X axis labels -->
+  <text x="200" y="445" text-anchor="middle" font-size="10" fill="#666">低预测 (50K)</text>
+  <text x="440" y="445" text-anchor="middle" font-size="10" fill="#666">中预测 (200K)</text>
+  <text x="700" y="445" text-anchor="middle" font-size="10" fill="#666">高预测 (500K)</text>
+
+  <!-- Y axis labels -->
+  <text x="110" y="85" text-anchor="end" font-size="10" fill="#666">800K</text>
+  <text x="110" y="250" text-anchor="end" font-size="10" fill="#666">400K</text>
+  <text x="110" y="415" text-anchor="end" font-size="10" fill="#666">0</text>
+
+  <!-- Data points: all below diagonal (systematic underestimation) -->
+  <!-- Cluster 1: low prediction, medium actual -->
+  <circle cx="200" cy="340" r="5" fill="#e74c3c"/>
+  <circle cx="220" cy="360" r="5" fill="#e74c3c"/>
+  <circle cx="190" cy="350" r="5" fill="#e74c3c"/>
+
+  <!-- Cluster 2: medium prediction, high actual -->
+  <circle cx="380" cy="260" r="5" fill="#e74c3c"/>
+  <circle cx="400" cy="280" r="5" fill="#e74c3c"/>
+  <circle cx="370" cy="290" r="5" fill="#e74c3c"/>
+
+  <!-- Cluster 3: high prediction, very high actual -->
+  <circle cx="560" cy="180" r="5" fill="#c0392b"/>
+  <circle cx="580" cy="200" r="5" fill="#c0392b"/>
+  <circle cx="540" cy="210" r="5" fill="#c0392b"/>
+
+  <!-- Outliers: extreme underestimation -->
+  <circle cx="300" cy="380" r="6" fill="#8e44ad"/>
+  <circle cx="480" cy="320" r="6" fill="#8e44ad"/>
+
+  <!-- Correlation annotation -->
+  <rect x="520" y="100" width="300" height="100" rx="6" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="670" y="125" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a1a">预测能力评估</text>
+
+  <!-- Correlation value -->
+  <rect x="540" y="140" width="260" height="30" rx="3" fill="#f8d7da"/>
+  <text x="670" y="160" text-anchor="middle" font-size="12" font-weight="bold" fill="#721c24">最高相关系数: r = 0.39</text>
+
+  <!-- Underestimation annotation -->
+  <rect x="540" y="180" width="260" height="30" rx="3" fill="#fff3cd"/>
+  <text x="670" y="200" text-anchor="middle" font-size="12" font-weight="bold" fill="#856404">所有模型系统性低估</text>
+
+  <!-- Key insight -->
+  <rect x="60" y="435" width="740" height="50" rx="4" fill="#f8d7da" stroke="#dc3545" stroke-width="1"/>
+  <text x="430" y="457" text-anchor="middle" font-size="12" font-weight="bold" fill="#721c24">结论：不能依赖模型自身的Token预测做预算规划。需要独立的成本估算系统。</text>
+
+  <!-- Source -->
+  <text x="430" y="520" text-anchor="middle" font-size="9" fill="#999">Source: Bai et al., Stanford / Michigan (arXiv:2604.22750v2)</text>
+
+  <!-- Article badge -->
+  <rect x="60" y="505" width="100" height="24" rx="3" fill="#e3f2fd"/>
+  <text x="110" y="521" text-anchor="middle" font-size="9" font-weight="bold" fill="#1565c0">Article #72</text>
+
+  <!-- Paradigm Radar badge -->
+  <rect x="700" y="505" width="100" height="24" rx="3" fill="#fff3cd"/>
+  <text x="750" y="521" text-anchor="middle" font-size="9" fill="#856404">AI Paradigm Radar</text>
+</svg>

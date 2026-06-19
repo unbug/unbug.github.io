@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 540" font-family="'Helvetica Neue', Arial, sans-serif">
+  <rect width="860" height="540" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="430" y="32" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a1a">同一任务运行间Token消耗差异：最高30倍</text>
+
+  <!-- X axis: runs (same task, different runs) -->
+  <text x="430" y="65" text-anchor="middle" font-size="12" fill="#666">相同SWE-bench任务，不同随机种子/temperature下的执行轨迹</text>
+
+  <!-- Bar chart: individual run token consumption -->
+  <!-- Y axis scale: 0 to 800K tokens -->
+  <line x1="100" y1="420" x2="760" y2="420" stroke="#333" stroke-width="1.5"/>
+  <line x1="100" y1="80" x2="100" y2="420" stroke="#333" stroke-width="1.5"/>
+
+  <!-- Y axis labels -->
+  <text x="90" y="420" text-anchor="end" font-size="10" fill="#666">0</text>
+  <text x="90" y="335" text-anchor="end" font-size="10" fill="#666">200K</text>
+  <text x="90" y="250" text-anchor="end" font-size="10" fill="#666">400K</text>
+  <text x="90" y="165" text-anchor="end" font-size="10" fill="#666">600K</text>
+  <text x="90" y="80" text-anchor="end" font-size="10" fill="#666">800K</text>
+
+  <!-- Grid lines -->
+  <line x1="100" y1="335" x2="760" y2="335" stroke="#eee" stroke-width="0.5"/>
+  <line x1="100" y1="250" x2="760" y2="250" stroke="#eee" stroke-width="0.5"/>
+  <line x1="100" y1="165" x2="760" y2="165" stroke="#eee" stroke-width="0.5"/>
+  <line x1="100" y1="80" x2="760" y2="80" stroke="#eee" stroke-width="0.5"/>
+
+  <!-- Bars: 20 runs of same task -->
+  <!-- Run 1: ~50K (efficient) -->
+  <rect x="115" y="405" width="22" height="15" rx="2" fill="#27ae60"/>
+  <!-- Run 2: ~85K -->
+  <rect x="143" y="394" width="22" height="26" rx="2" fill="#2ecc71"/>
+  <!-- Run 3: ~120K -->
+  <rect x="171" y="384" width="22" height="36" rx="2" fill="#f1c40f"/>
+  <!-- Run 4: ~95K -->
+  <rect x="199" y="389" width="22" height="31" rx="2" fill="#e67e22"/>
+  <!-- Run 5: ~200K -->
+  <rect x="227" y="364" width="22" height="56" rx="2" fill="#e67e22"/>
+  <!-- Run 6: ~180K -->
+  <rect x="255" y="369" width="22" height="51" rx="2" fill="#e67e22"/>
+  <!-- Run 7: ~450K (high variance) -->
+  <rect x="283" y="284" width="22" height="136" rx="2" fill="#c0392b"/>
+  <!-- Run 8: ~350K -->
+  <rect x="311" y="314" width="22" height="106" rx="2" fill="#e74c3c"/>
+  <!-- Run 9: ~150K -->
+  <rect x="339" y="374" width="22" height="46" rx="2" fill="#f39c12"/>
+  <!-- Run 10: ~500K (highest) -->
+  <rect x="367" y="269" width="22" height="151" rx="2" fill="#c0392b"/>
+  <!-- Run 11: ~75K -->
+  <rect x="395" y="400" width="22" height="20" rx="2" fill="#2ecc71"/>
+  <!-- Run 12: ~60K -->
+  <rect x="423" y="402" width="22" height="18" rx="2" fill="#27ae60"/>
+  <!-- Run 13: ~300K -->
+  <rect x="451" y="329" width="22" height="91" rx="2" fill="#e74c3c"/>
+  <!-- Run 14: ~420K -->
+  <rect x="479" y="294" width="22" height="126" rx="2" fill="#c0392b"/>
+  <!-- Run 15: ~110K -->
+  <rect x="507" y="387" width="22" height="33" rx="2" fill="#f1c40f"/>
+  <!-- Run 16: ~90K -->
+  <rect x="535" y="391" width="22" height="29" rx="2" fill="#e67e22"/>
+  <!-- Run 17: ~280K -->
+  <rect x="563" y="334" width="22" height="86" rx="2" fill="#e67e22"/>
+  <!-- Run 18: ~55K (most efficient) -->
+  <rect x="591" y="403" width="22" height="17" rx="2" fill="#27ae60"/>
+  <!-- Run 19: ~380K -->
+  <rect x="619" y="304" width="22" height="116" rx="2" fill="#e74c3c"/>
+  <!-- Run 20: ~1500K (extreme outlier - 30x) -->
+  <rect x="647" y="20" width="22" height="400" rx="2" fill="#8e44ad"/>
+
+  <!-- Range annotation -->
+  <line x1="700" y1="405" x2="700" y2="20" stroke="#c0392b" stroke-width="2"/>
+  <text x="710" y="220" text-anchor="start" font-size="14" font-weight="bold" fill="#c0392b">30x</text>
+
+  <!-- Color legend -->
+  <rect x="680" y="445" width="14" height="14" rx="2" fill="#27ae60"/>
+  <text x="700" y="456" font-size="9" fill="#333">高效 (&lt;100K)</text>
+
+  <rect x="760" y="445" width="14" height="14" rx="2" fill="#f39c12"/>
+  <text x="780" y="456" font-size="9" fill="#333">中等 (100-300K)</text>
+
+  <rect x="680" y="465" width="14" height="14" rx="2" fill="#e74c3c"/>
+  <text x="700" y="476" font-size="9" fill="#333">高 (300-500K)</text>
+
+  <rect x="760" y="465" width="14" height="14" rx="2" fill="#8e44ad"/>
+  <text x="780" y="476" font-size="9" fill="#333">极端 (&gt;500K)</text>
+
+  <!-- Key insight -->
+  <rect x="60" y="495" width="740" height="35" rx="4" fill="#f8d7da" stroke="#dc3545" stroke-width="1"/>
+  <text x="430" y="517" text-anchor="middle" font-size="12" font-weight="bold" fill="#721c24">结论：即使固定模型和提示词，Agent的内在随机性仍可导致30倍成本差异</text>
+
+  <!-- Source -->
+  <text x="430" y="538" text-anchor="middle" font-size="9" fill="#999">Source: Bai et al., Stanford / Michigan (arXiv:2604.22750v2)</text>
+
+  <!-- Article badge -->
+  <rect x="60" y="523" width="100" height="24" rx="3" fill="#e3f2fd"/>
+  <text x="110" y="539" text-anchor="middle" font-size="9" font-weight="bold" fill="#1565c0">Article #72</text>
+
+  <!-- Paradigm Radar badge -->
+  <rect x="700" y="523" width="100" height="24" rx="3" fill="#fff3cd"/>
+  <text x="750" y="539" text-anchor="middle" font-size="9" fill="#856404">AI Paradigm Radar</text>
+</svg>
