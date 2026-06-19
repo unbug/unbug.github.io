@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 540" font-family="'Helvetica Neue', Arial, sans-serif">
+  <rect width="860" height="540" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="430" y="32" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a1a">遗忘谱系：控制面放置位置决定系统能忘记什么</text>
+
+  <!-- Category column headers -->
+  <rect x="60" y="50" width="140" height="32" rx="3" fill="#e8f4fd"/>
+  <text x="130" y="71" text-anchor="middle" font-size="12" font-weight="bold" fill="#1a5276">Lexical / Temporal</text>
+
+  <rect x="220" y="50" width="140" height="32" rx="3" fill="#fef9e7"/>
+  <text x="290" y="71" text-anchor="middle" font-size="12" font-weight="bold" fill="#7d6608">Canonicalization</text>
+
+  <rect x="380" y="50" width="140" height="32" rx="3" fill="#fdedec"/>
+  <text x="450" y="71" text-anchor="middle" font-size="12" font-weight="bold" fill="#922b21">Intent-Aware Deletion</text>
+
+  <rect x="540" y="50" width="140" height="32" rx="3" fill="#e8f8f5"/>
+  <text x="610" y="71" text-anchor="middle" font-size="12" font-weight="bold" fill="#117a65">Cross-Lingual</text>
+
+  <!-- System labels (left side) -->
+  <text x="30" y="148" text-anchor="end" font-size="11" fill="#555">Inscribe-Time LLM</text>
+  <text x="30" y="268" text-anchor="end" font-size="11" fill="#555">Mutation-Time Hook</text>
+  <text x="30" y="408" text-anchor="end" font-size="11" fill="#555">Deterministic Primitives</text>
+
+  <!-- Inscribe-Time LLM bars -->
+  <rect x="60" y="92" width="140" height="36" rx="3" fill="#27ae60"/>
+  <text x="130" y="115" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">≥95%</text>
+
+  <rect x="220" y="92" width="140" height="36" rx="3" fill="#27ae60"/>
+  <text x="290" y="115" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">100%</text>
+
+  <rect x="380" y="92" width="140" height="36" rx="3" fill="#c0392b"/>
+  <text x="450" y="115" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">0%</text>
+
+  <rect x="540" y="92" width="140" height="36" rx="3" fill="#f39c12"/>
+  <text x="610" y="115" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">~75%</text>
+
+  <!-- Mutation-Time Hook bars -->
+  <rect x="60" y="212" width="140" height="36" rx="3" fill="#27ae60"/>
+  <text x="130" y="235" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">≥95%</text>
+
+  <rect x="220" y="212" width="140" height="36" rx="3" fill="#f39c12"/>
+  <text x="290" y="235" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">~80%</text>
+
+  <rect x="380" y="212" width="140" height="36" rx="3" fill="#e67e22"/>
+  <text x="450" y="235" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">78-85%</text>
+
+  <rect x="540" y="212" width="140" height="36" rx="3" fill="#f39c12"/>
+  <text x="610" y="235" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">~70%</text>
+
+  <!-- Deterministic Primitives bars -->
+  <rect x="60" y="352" width="140" height="36" rx="3" fill="#27ae60"/>
+  <text x="130" y="375" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">≥95%</text>
+
+  <rect x="220" y="352" width="140" height="36" rx="3" fill="#c0392b"/>
+  <text x="290" y="375" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">5%</text>
+
+  <rect x="380" y="352" width="140" height="36" rx="3" fill="#c0392b"/>
+  <text x="450" y="375" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">0%</text>
+
+  <rect x="540" y="352" width="140" height="36" rx="3" fill="#c0392b"/>
+  <text x="610" y="375" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">0%</text>
+
+  <!-- Legend -->
+  <rect x="720" y="92" width="14" height="14" rx="2" fill="#27ae60"/>
+  <text x="740" y="103" font-size="10" fill="#333">高遗忘率 (≥95%)</text>
+
+  <rect x="720" y="118" width="14" height="14" rx="2" fill="#f39c12"/>
+  <text x="740" y="129" font-size="10" fill="#333">中等遗忘率 (50-94%)</text>
+
+  <rect x="720" y="144" width="14" height="14" rx="2" fill="#e67e22"/>
+  <text x="740" y="155" font-size="10" fill="#333">低遗忘率 (10-49%)</text>
+
+  <rect x="720" y="170" width="14" height="14" rx="2" fill="#c0392b"/>
+  <text x="740" y="181" font-size="10" fill="#333">零遗忘 (≤5%)</text>
+
+  <!-- Key insight box -->
+  <rect x="60" y="420" width="740" height="50" rx="4" fill="#f0f4f8" stroke="#b3d9f2" stroke-width="1"/>
+  <text x="430" y="442" text-anchor="middle" font-size="12" fill="#1a5276">关键发现：遗忘能力不是 recall 能力的副产品，而是由控制面架构设计决定的独立维度</text>
+  <text x="430" y="462" text-anchor="middle" font-size="11" fill="#666">Mutation-time hook 整体能力提升 +22.6 到 +24.1 个百分点 | Fleiss' kappa = 0.958 (almost perfect)</text>
+
+  <!-- Arrow annotations -->
+  <line x1="380" y1="128" x2="380" y2="208" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="376" y="172" text-anchor="end" font-size="9" fill="#c0392b">inscribe-time</text>
+
+  <line x1="380" y1="248" x2="380" y2="348" stroke="#e67e22" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="376" y="302" text-anchor="end" font-size="9" fill="#e67e22">mutation-time</text>
+
+  <!-- Source note -->
+  <text x="430" y="510" text-anchor="middle" font-size="9" fill="#999">Source: Yang, Cornell University / DeepLethe (arXiv:2606.15903v2)</text>
+</svg>

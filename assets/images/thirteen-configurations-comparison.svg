@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 680" font-family="'Helvetica Neue', Arial, sans-serif">
+  <rect width="900" height="680" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a1a">十三种系统配置对比：遗忘能力全景</text>
+
+  <!-- Y-axis labels (system names) -->
+  <g font-size="11" fill="#333">
+    <text x="20" y="78" text-anchor="end">no-deletion</text>
+    <text x="20" y="118" text-anchor="end">deterministic (LETHE)</text>
+    <text x="20" y="158" text-anchor="end">deterministic (MEM0)</text>
+    <text x="20" y="198" text-anchor="end">deterministic (LangGraph)</text>
+    <text x="20" y="238" text-anchor="end">vec-only</text>
+    <text x="20" y="278" text-anchor="end">KG-abstraction</text>
+    <text x="20" y="318" text-anchor="end">inscribe-time-LLM (DeepSeek)</text>
+    <text x="20" y="358" text-anchor="end">mutation-time-hook (DeepSeek)</text>
+    <text x="20" y="398" text-anchor="end">mutation-time-hook (Qwen-72B)</text>
+    <text x="20" y="438" text-anchor="end">joint-placement</text>
+    <text x="20" y="478" text-anchor="end">MEMPALACE</text>
+  </g>
+
+  <!-- Score axis -->
+  <line x1="160" y1="65" x2="160" y2="490" stroke="#333" stroke-width="1.5"/>
+  <text x="155" y="68" text-anchor="end" font-size="10" fill="#666">0%</text>
+  <text x="155" y="278" text-anchor="end" font-size="10" fill="#666">50%</text>
+  <text x="155" y="488" text-anchor="end" font-size="10" fill="#666">100%</text>
+
+  <!-- Grid lines -->
+  <line x1="160" y1="278" x2="850" y2="278" stroke="#e0e0e0" stroke-width="0.5"/>
+  <line x1="160" y1="433" x2="850" y2="433" stroke="#e0e0e0" stroke-width="0.5"/>
+
+  <!-- Bar chart - scores from research report -->
+  <!-- no-deletion: ~98% (almost all recall, almost all forget) -->
+  <rect x="165" y="72" width="640" height="30" rx="2" fill="#c0392b"/>
+
+  <!-- deterministic LETHE: 63.4% -->
+  <rect x="165" y="112" width="418" height="30" rx="2" fill="#e67e22"/>
+  <text x="590" y="132" font-size="10" fill="#333">63.4%</text>
+
+  <!-- deterministic MEM0: 68.3% -->
+  <rect x="165" y="152" width="450" height="30" rx="2" fill="#e67e22"/>
+  <text x="622" y="172" font-size="10" fill="#333">68.3%</text>
+
+  <!-- deterministic LangGraph: 62.9% -->
+  <rect x="165" y="192" width="415" height="30" rx="2" fill="#e67e22"/>
+  <text x="587" y="212" font-size="10" fill="#333">62.9%</text>
+
+  <!-- vec-only: ~55% -->
+  <rect x="165" y="232" width="363" height="30" rx="2" fill="#f39c12"/>
+  <text x="534" y="252" font-size="10" fill="#333">~55%</text>
+
+  <!-- KG-abstraction: ~70% -->
+  <rect x="165" y="272" width="462" height="30" rx="2" fill="#e67e22"/>
+  <text x="633" y="292" font-size="10" fill="#333">~70%</text>
+
+  <!-- inscribe-time-LLM: ~85% -->
+  <rect x="165" y="312" width="561" height="30" rx="2" fill="#27ae60"/>
+  <text x="732" y="332" font-size="10" fill="#333">~85%</text>
+
+  <!-- mutation-time-hook (DeepSeek): 91.7-93.2% -->
+  <rect x="165" y="352" width="614" height="30" rx="2" fill="#27ae60"/>
+  <text x="785" y="372" font-size="10" fill="#333">91.7-93.2%</text>
+
+  <!-- mutation-time-hook (Qwen-72B): ~84% (+13pt lift) -->
+  <rect x="165" y="392" width="554" height="30" rx="2" fill="#2ecc71"/>
+  <text x="725" y="412" font-size="10" fill="#333">~84%</text>
+
+  <!-- joint-placement: ~90% (+27.8pt lift) -->
+  <rect x="165" y="432" width="594" height="30" rx="2" fill="#27ae60"/>
+  <text x="765" y="452" font-size="10" fill="#333">~90%</text>
+
+  <!-- MEMPALACE: 0% -->
+  <rect x="165" y="472" width="0" height="30" rx="2" fill="#c0392b"/>
+  <text x="170" y="492" font-size="10" fill="#c0392b">0%</text>
+
+  <!-- Color legend -->
+  <rect x="680" y="520" width="14" height="14" rx="2" fill="#c0392b"/>
+  <text x="700" y="531" font-size="10" fill="#333">零遗忘 (no-deletion / MEMPALACE)</text>
+
+  <rect x="680" y="542" width="14" height="14" rx="2" fill="#f39c12"/>
+  <text x="700" y="553" font-size="10" fill="#333">低遗忘率 (&lt;60%)</text>
+
+  <rect x="680" y="564" width="14" height="14" rx="2" fill="#e67e22"/>
+  <text x="700" y="575" font-size="10" fill="#333">中等遗忘率 (60-85%)</text>
+
+  <rect x="680" y="586" width="14" height="14" rx="2" fill="#2ecc71"/>
+  <text x="700" y="597" font-size="10" fill="#333">高遗忘率 (85-95%)</text>
+
+  <rect x="680" y="608" width="14" height="14" rx="2" fill="#27ae60"/>
+  <text x="700" y="619" font-size="10" fill="#333">最优遗忘率 (&gt;90%)</text>
+
+  <!-- Key annotations -->
+  <rect x="165" y="628" width="700" height="40" rx="4" fill="#f0f4f8" stroke="#b3d9f2" stroke-width="1"/>
+  <text x="515" y="646" text-anchor="middle" font-size="11" fill="#1a5276">三系统 deterministic 聚类带：LETHE 63.4%、MEM0 68.3%、LangGraph 62.9%，Wilson区间重叠 p=0.724</text>
+  <text x="515" y="662" text-anchor="middle" font-size="10" fill="#666">MEMPALACE全零表现证明两个基准测量互补维度 | Mutation-time hook 整体能力提升 +22.6到+24.1pt</text>
+
+  <!-- Source -->
+  <text x="450" y="685" text-anchor="middle" font-size="9" fill="#999">Source: Yang, Cornell University / DeepLethe (arXiv:2606.15903v2)</text>
+</svg>
