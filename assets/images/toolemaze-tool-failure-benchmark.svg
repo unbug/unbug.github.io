@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" font-family="'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect width="800" height="560" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="400" y="36" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a1a2e">ToolMaze：工具失败基准测试的二维设计框架</text>
+
+  <!-- Subtitle -->
+  <text x="400" y="58" text-anchor="middle" font-size="12" fill="#6b7280">基于 DAG 拓扑复杂度 × 2×2 扰动分类法的正交评估体系</text>
+
+  <!-- ===== Left: 2x2 Perturbation Classification Matrix ===== -->
+  <rect x="40" y="85" width="340" height="260" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="210" y="112" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a2e">工具扰动分类法 (2×2)</text>
+
+  <!-- Column headers -->
+  <rect x="65" y="128" width="140" height="30" rx="4" fill="#dbeafe"/>
+  <text x="135" y="148" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e40af">显式 (Observable)</text>
+
+  <rect x="235" y="128" width="140" height="30" rx="4" fill="#fef3c7"/>
+  <text x="305" y="148" text-anchor="middle" font-size="11" font-weight="bold" fill="#92400e">隐式 (Latent)</text>
+
+  <!-- Row headers -->
+  <rect x="65" y="170" width="30" height="50" rx="4" fill="#d1fae5"/>
+  <text x="80" y="200" text-anchor="middle" font-size="11" font-weight="bold" fill="#065f46" transform="rotate(-90,80,200)">瞬态</text>
+
+  <rect x="65" y="235" width="30" height="50" rx="4" fill="#fee2e2"/>
+  <text x="80" y="265" text-anchor="middle" font-size="11" font-weight="bold" fill="#991b1b" transform="rotate(-90,80,265)">永久</text>
+
+  <!-- Cell: 显式瞬态 -->
+  <rect x="110" y="170" width="115" height="50" rx="4" fill="#d1fae5" stroke="#34d399" stroke-width="1.5"/>
+  <text x="167" y="188" text-anchor="middle" font-size="11" font-weight="bold" fill="#065f46">显式瞬态</text>
+  <text x="167" y="203" text-anchor="middle" font-size="9.5" fill="#047857">明确错误消息 + 可重试</text>
+
+  <!-- Cell: 隐式瞬态 -->
+  <rect x="235" y="170" width="115" height="50" rx="4" fill="#fef3c7" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="292" y="188" text-anchor="middle" font-size="11" font-weight="bold" fill="#92400e">隐式瞬态</text>
+  <text x="292" y="203" text-anchor="middle" font-size="9.5" fill="#b45309">无错误提示 + 输出偏离</text>
+
+  <!-- Cell: 显式永久 -->
+  <rect x="110" y="235" width="115" height="50" rx="4" fill="#fee2e2" stroke="#f87171" stroke-width="1.5"/>
+  <text x="167" y="253" text-anchor="middle" font-size="11" font-weight="bold" fill="#991b1b">显式永久</text>
+  <text x="167" y="268" text-anchor="middle" font-size="9.5" fill="#dc2626">不可逆错误信号</text>
+
+  <!-- Cell: 隐式永久 -->
+  <rect x="235" y="235" width="115" height="50" rx="4" fill="#fecaca" stroke="#ef4444" stroke-width="2"/>
+  <text x="292" y="253" text-anchor="middle" font-size="11" font-weight="bold" fill="#7f1d1d">隐式永久 ★</text>
+  <text x="292" y="268" text-anchor="middle" font-size="9.5" fill="#b91c1c">无错误 + 无效输出 (最致命)</text>
+
+  <!-- PRR data callouts -->
+  <rect x="110" y="295" width="115" height="36" rx="4" fill="#ecfdf5"/>
+  <text x="167" y="310" text-anchor="middle" font-size="10" fill="#047857">显式瞬态 PRR ≈ 78%</text>
+  <text x="167" y="324" text-anchor="middle" font-size="9" fill="#059669">明确错误 → 有效重规划</text>
+
+  <rect x="235" y="295" width="115" height="36" rx="4" fill="#fef2f2"/>
+  <text x="292" y="310" text-anchor="middle" font-size="10" fill="#dc2626">隐式 PRR ≈ 41% (↓37)</text>
+  <text x="292" y="324" text-anchor="middle" font-size="9" fill="#b91c1c">无法感知异常 → 无效试错</text>
+
+  <!-- ===== Right: DAG Complexity Spectrum ===== -->
+  <rect x="405" y="85" width="355" height="260" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="582" y="112" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a2e">DAG 拓扑复杂度梯度</text>
+
+  <!-- Complexity levels -->
+  <rect x="430" y="135" width="305" height="38" rx="6" fill="#dbeafe"/>
+  <text x="445" y="152" font-size="11" fill="#1e40af">Level 1: 线性链 (Linear Chain)</text>
+  <text x="445" y="167" font-size="9.5" fill="#3b82f6">节点少 · 连接稀疏 · PRR ≈ 85%</text>
+
+  <rect x="430" y="180" width="305" height="38" rx="6" fill="#bfdbfe"/>
+  <text x="445" y="197" font-size="11" fill="#1e40af">Level 2: 分支树 (Branching Tree)</text>
+  <text x="445" y="212" font-size="9.5" fill="#3b82f6">中等节点 · 多路径选择 · PRR ≈ 72%</text>
+
+  <rect x="430" y="225" width="305" height="38" rx="6" fill="#93c5fd"/>
+  <text x="445" y="242" font-size="11" fill="#1e40af">Level 3: 网格图 (Grid DAG)</text>
+  <text x="445" y="257" font-size="9.5" fill="#3b82f6">高密度连接 · 冗余路径 · PRR ≈ 58%</text>
+
+  <rect x="430" y="270" width="305" height="38" rx="6" fill="#60a5fa"/>
+  <text x="445" y="287" font-size="11" fill="#ffffff">Level 4: 全连接 (Fully Connected)</text>
+  <text x="445" y="302" font-size="9.5" fill="#dbeafe">最大复杂度 · 60%+无效重规划尝试</text>
+
+  <!-- Key finding box -->
+  <rect x="430" y="325" width="305" height="18" rx="4" fill="#fef3c7"/>
+  <text x="582" y="338" text-anchor="middle" font-size="10" font-weight="bold" fill="#92400e">模型缩放：基本性能增长 / PRR增长 = 3.66x</text>
+
+  <!-- ===== Bottom: Reliability Chain ===== -->
+  <rect x="40" y="370" width="720" height="100" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="400" y="396" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a2e">Agent 可靠性完整链条：预防 → 管理 → 恢复</text>
+
+  <!-- SEVRA -->
+  <rect x="75" y="410" width="180" height="65" rx="6" fill="#ecfdf5" stroke="#34d399" stroke-width="1.5"/>
+  <text x="165" y="432" text-anchor="middle" font-size="12" font-weight="bold" fill="#065f46">SEVRA (第75篇)</text>
+  <text x="165" y="450" text-anchor="middle" font-size="10" fill="#047857">预防层：选择性验证</text>
+  <text x="165" y="466" text-anchor="middle" font-size="9.5" fill="#059669">预算感知推理分配</text>
+
+  <!-- Arrow -->
+  <text x="270" y="448" text-anchor="middle" font-size="18" fill="#9ca3af">→</text>
+
+  <!-- LedgerAgent -->
+  <rect x="295" y="410" width="180" height="65" rx="6" fill="#eff6ff" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="385" y="432" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e40af">LedgerAgent (第76篇)</text>
+  <text x="385" y="450" text-anchor="middle" font-size="10" fill="#2563eb">管理层：结构化状态</text>
+  <text x="385" y="466" text-anchor="middle" font-size="9.5" fill="#3b82f6">账本式策略门控器</text>
+
+  <!-- Arrow -->
+  <text x="490" y="448" text-anchor="middle" font-size="18" fill="#9ca3af">→</text>
+
+  <!-- ToolMaze -->
+  <rect x="515" y="410" width="180" height="65" rx="6" fill="#fef2f2" stroke="#f87171" stroke-width="1.5"/>
+  <text x="605" y="432" text-anchor="middle" font-size="12" font-weight="bold" fill="#dc2626">ToolMaze (第77篇)</text>
+  <text x="605" y="450" text-anchor="middle" font-size="10" fill="#b91c1c">恢复层：动态重规划</text>
+  <text x="605" y="466" text-anchor="middle" font-size="9.5" fill="#ef4444">异常检测 + 容错基准</text>
+
+  <!-- Source -->
+  <text x="400" y="530" text-anchor="middle" font-size="9" fill="#9ca3af">来源: arXiv:2606.05806 · Tencent Youtu Lab + Sun Yat-sen University + Tsinghua University</text>
+</svg>
