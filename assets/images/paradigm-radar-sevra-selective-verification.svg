@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 540" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="540" fill="url(#bgGrad)"/>
+
+  <!-- Title area -->
+  <text x="430" y="42" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">选择性验证还是延长预算？</text>
+  <text x="430" y="68" text-anchor="middle" font-size="15" fill="#555">推理时Token分配的新范式</text>
+
+  <!-- Central visual: SEVRA controller -->
+  <rect x="200" y="90" width="460" height="320" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+
+  <!-- Initial Reasoning Block -->
+  <rect x="240" y="115" width="170" height="50" rx="6" fill="#4a90d9"/>
+  <text x="325" y="140" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">初始推理</text>
+  <text x="325" y="158" text-anchor="middle" font-size="11" fill="#dce6f0">冻结求解器 · B tokens</text>
+
+  <!-- Verification Block -->
+  <rect x="450" y="115" width="170" height="50" rx="6" fill="#e67e22"/>
+  <text x="535" y="140" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">主动验证器</text>
+  <text x="535" y="158" text-anchor="middle" font-size="11" fill="#fdebd0">V tokens · 决策层</text>
+
+  <!-- Arrow between them -->
+  <line x1="410" y1="140" x2="446" y2="140" stroke="#555" stroke-width="2"/>
+  <polygon points="446,135 456,140 446,145" fill="#555"/>
+
+  <!-- Decision diamond -->
+  <rect x="370" y="190" width="120" height="80" rx="6" fill="#f39c12"/>
+  <text x="430" y="218" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">SEVRA 决策</text>
+  <text x="430" y="236" text-anchor="middle" font-size="10" fill="#fdebd0">保留 / 验证 / 延长</text>
+
+  <!-- Arrow from verification to decision -->
+  <line x1="535" y1="165" x2="490" y2="190" stroke="#555" stroke-width="1.5"/>
+  <polygon points="487,188 492,196 482,193" fill="#555"/>
+
+  <!-- Five paths -->
+  <rect x="240" y="295" width="120" height="40" rx="4" fill="#27ae60"/>
+  <text x="300" y="312" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">路径A: 保留</text>
+  <text x="300" y="328" text-anchor="middle" font-size="9" fill="#d5f5e3">初始答案正确</text>
+
+  <rect x="370" y="295" width="120" height="40" rx="4" fill="#2980b9"/>
+  <text x="430" y="312" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">路径B: 验证</text>
+  <text x="430" y="328" text-anchor="middle" font-size="9" fill="#d6eaf8">需要主动验证</text>
+
+  <rect x="500" y="295" width="120" height="40" rx="4" fill="#8e44ad"/>
+  <text x="560" y="312" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">路径C: 延长</text>
+  <text x="560" y="328" text-anchor="middle" font-size="9" fill="#e8daef">增加推理预算</text>
+
+  <!-- Arrows from decision to paths -->
+  <line x1="400" y1="270" x2="300" y2="295" stroke="#555" stroke-width="1.5"/>
+  <polygon points="298,292 300,300 302,294" fill="#555"/>
+
+  <line x1="430" y1="270" x2="430" y2="295" stroke="#555" stroke-width="1.5"/>
+  <polygon points="427,293 430,301 433,293" fill="#555"/>
+
+  <line x1="460" y1="270" x2="560" y2="295" stroke="#555" stroke-width="1.5"/>
+  <polygon points="558,292 560,300 562,294" fill="#555"/>
+
+  <!-- Key stats -->
+  <rect x="60" y="115" width="120" height="70" rx="6" fill="#e8f8f5" stroke="#1abc9c" stroke-width="1"/>
+  <text x="120" y="143" text-anchor="middle" font-size="22" font-weight="bold" fill="#0e6655">76.3%</text>
+  <text x="120" y="160" text-anchor="middle" font-size="9" fill="#0e6655">MATH500 准确率</text>
+
+  <rect x="60" y="200" width="120" height="70" rx="6" fill="#fdedec" stroke="#e74c3c" stroke-width="1"/>
+  <text x="120" y="228" text-anchor="middle" font-size="22" font-weight="bold" fill="#922b21">1.0%</text>
+  <text x="120" y="245" text-anchor="middle" font-size="9" fill="#922b21">有害翻转率</text>
+
+  <rect x="60" y="285" width="120" height="70" rx="6" fill="#eaf2f8" stroke="#3498db" stroke-width="1"/>
+  <text x="120" y="313" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a5276">1,335</text>
+  <text x="120" y="330" text-anchor="middle" font-size="9" fill="#1a5276">GSM8K 总Token</text>
+
+  <!-- Bottom insight -->
+  <rect x="60" y="400" width="740" height="50" rx="6" fill="#d1ecf1" stroke="#17a2b8" stroke-width="1"/>
+  <text x="430" y="425" text-anchor="middle" font-size="13" font-weight="bold" fill="#0c5460">核心发现：增加初始推理预算有时比任何事后恢复策略都更节省总Token</text>
+
+  <!-- Source -->
+  <text x="430" y="475" text-anchor="middle" font-size="11" fill="#999">Source: Acharjee Dip et al., Virginia Tech (arXiv:2606.19808v1)</text>
+
+  <!-- Benchmarks -->
+  <rect x="60" y="455" width="300" height="30" rx="4" fill="#f8f9fa"/>
+  <text x="210" y="475" text-anchor="middle" font-size="10" fill="#666">MATH500 · GSM8K · CommonsenseQA</text>
+
+  <!-- Paradigm Radar badge -->
+  <rect x="680" y="455" width="120" height="30" rx="4" fill="#fff3cd"/>
+  <text x="740" y="475" text-anchor="middle" font-size="10" font-weight="bold" fill="#856404">AI Paradigm Radar #75</text>
+
+  <!-- Article number -->
+  <rect x="60" y="500" width="100" height="24" rx="3" fill="#e3f2fd"/>
+  <text x="110" y="516" text-anchor="middle" font-size="9" font-weight="bold" fill="#1565c0">Article #75</text>
+
+  <!-- Date badge -->
+  <rect x="680" y="500" width="120" height="24" rx="3" fill="#e8f5e9"/>
+  <text x="740" y="516" text-anchor="middle" font-size="9" fill="#2e7d32">Published: 2026-06-17</text>
+</svg>
