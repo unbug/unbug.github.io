@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="800" height="500" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-size="16" font-weight="bold" fill="#2c3e50">LedgerAgent: Structured State for Policy-Adherent Tool-Calling Agents</text>
+
+  <!-- Agent Loop Flow -->
+  <g transform="translate(40, 70)">
+    <!-- Step 1: Message Input -->
+    <rect x="0" y="0" width="120" height="50" rx="8" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+    <text x="60" y="30" text-anchor="middle" font-size="12" fill="white">Message Input</text>
+
+    <!-- Arrow -->
+    <line x1="125" y1="25" x2="175" y2="25" stroke="#7f8c8d" stroke-width="2"/>
+    <polygon points="175,20 185,25 175,30" fill="#7f8c8d"/>
+
+    <!-- Step 2: Absorb -->
+    <rect x="180" y="0" width="120" height="50" rx="8" fill="#2ecc71" stroke="#27ae60" stroke-width="2"/>
+    <text x="240" y="30" text-anchor="middle" font-size="12" fill="white">Absorb</text>
+
+    <!-- Arrow -->
+    <line x1="305" y1="25" x2="355" y2="25" stroke="#7f8c8d" stroke-width="2"/>
+    <polygon points="355,20 365,25 355,30" fill="#7f8c8d"/>
+
+    <!-- Step 3: Render -->
+    <rect x="360" y="0" width="120" height="50" rx="8" fill="#9b59b6" stroke="#8e44ad" stroke-width="2"/>
+    <text x="420" y="30" text-anchor="middle" font-size="12" fill="white">Render</text>
+
+    <!-- Arrow -->
+    <line x1="485" y1="25" x2="535" y2="25" stroke="#7f8c8d" stroke-width="2"/>
+    <polygon points="535,20 545,25 535,30" fill="#7f8c8d"/>
+
+    <!-- Step 4: Generate -->
+    <rect x="540" y="0" width="120" height="50" rx="8" fill="#e67e22" stroke="#d35400" stroke-width="2"/>
+    <text x="600" y="30" text-anchor="middle" font-size="12" fill="white">Generate</text>
+
+    <!-- Arrow -->
+    <line x1="665" y1="25" x2="715" y2="25" stroke="#7f8c8d" stroke-width="2"/>
+    <polygon points="715,20 725,25 715,30" fill="#7f8c8d"/>
+
+    <!-- Step 5: Gate Filter -->
+    <rect x="720" y="0" width="60" height="50" rx="8" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+    <text x="750" y="18" text-anchor="middle" font-size="11" fill="white">Gate</text>
+    <text x="750" y="34" text-anchor="middle" font-size="9" fill="white">Filter</text>
+
+    <!-- Arrow back to Generate -->
+    <path d="M 750,55 L 750,120 L 600,120 L 600,55" stroke="#e74c3c" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+    <polygon points="600,55 605,65 595,65" fill="#e74c3c"/>
+
+    <!-- Arrow to Execute -->
+    <line x1="750" y1="50" x2="750" y2="80" stroke="#7f8c8d" stroke-width="2"/>
+  </g>
+
+  <!-- Ledger State Diagram -->
+  <g transform="translate(40, 160)">
+    <rect x="0" y="0" width="350" height="200" rx="8" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+    <text x="175" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#2c3e50">Ledger State (L: P -&gt; V)</text>
+
+    <!-- Schema Paths -->
+    <rect x="20" y="40" width="140" height="30" rx="4" fill="#ecf0f1"/>
+    <text x="90" y="60" text-anchor="middle" font-size="11" fill="#2c3e50">user</text>
+
+    <rect x="180" y="40" width="140" height="30" rx="4" fill="#ecf0f1"/>
+    <text x="250" y="60" text-anchor="middle" font-size="11" fill="#2c3e50">orders.*</text>
+
+    <rect x="20" y="85" width="140" height="30" rx="4" fill="#ecf0f1"/>
+    <text x="90" y="105" text-anchor="middle" font-size="11" fill="#2c3e50">products.*</text>
+
+    <rect x="180" y="85" width="140" height="30" rx="4" fill="#ecf0f1"/>
+    <text x="250" y="105" text-anchor="middle" font-size="11" fill="#2c3e50">reservations.*</text>
+
+    <!-- Values -->
+    <rect x="20" y="140" width="140" height="30" rx="4" fill="#d5f5e3"/>
+    <text x="90" y="160" text-anchor="middle" font-size="11" fill="#27ae60">{"id": "u123", ...}</text>
+
+    <rect x="180" y="140" width="140" height="30" rx="4" fill="#d5f5e3"/>
+    <text x="250" y="160" text-anchor="middle" font-size="11" fill="#27ae60">[{"order_id": ...}]</text>
+
+    <!-- Arrows from paths to values -->
+    <line x1="90" y1="70" x2="90" y2="140" stroke="#bdc3c7" stroke-width="1"/>
+    <line x1="250" y1="70" x2="250" y2="140" stroke="#bdc3c7" stroke-width="1"/>
+
+    <!-- Rule note -->
+    <text x="175" y="195" text-anchor="middle" font-size="10" fill="#7f8c8d">observe-not-assume: write → read</text>
+  </g>
+
+  <!-- Policy Gate Diagram -->
+  <g transform="translate(420, 160)">
+    <rect x="0" y="0" width="350" height="200" rx="8" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+    <text x="175" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="#2c3e50">Policy Gate (Deterministic)</text>
+
+    <!-- Three outcomes -->
+    <rect x="20" y="45" width="90" height="50" rx="6" fill="#d5f5e3"/>
+    <text x="65" y="70" text-anchor="middle" font-size="12" font-weight="bold" fill="#27ae60">Allow</text>
+    <text x="65" y="88" text-anchor="middle" font-size="9" fill="#2c3e50">Execute call</text>
+
+    <rect x="130" y="45" width="90" height="50" rx="6" fill="#fef9e7"/>
+    <text x="175" y="70" text-anchor="middle" font-size="12" font-weight="bold" fill="#f39c12">Revise</text>
+    <text x="175" y="88" text-anchor="middle" font-size="9" fill="#2c3e50">Return feedback</text>
+
+    <rect x="240" y="45" width="90" height="50" rx="6" fill="#fadbd8"/>
+    <text x="285" y="70" text-anchor="middle" font-size="12" font-weight="bold" fill="#e74c3c">Block</text>
+    <text x="285" y="88" text-anchor="middle" font-size="9" fill="#2c3e50">Reject call</text>
+
+    <!-- Predicate counts -->
+    <rect x="20" y="120" width="310" height="60" rx="6" fill="#f4ecf7"/>
+    <text x="175" y="142" text-anchor="middle" font-size="12" font-weight="bold" fill="#8e44ad">Predicate Counts by Domain</text>
+
+    <text x="60" y="165" text-anchor="middle" font-size="11" fill="#2c3e50">Airline: 10 | Retail: 12</text>
+    <text x="240" y="165" text-anchor="middle" font-size="11" fill="#2c3e50">Telecom: 6 | Telehealth: 0</text>
+
+    <!-- Zero overhead note -->
+    <rect x="20" y="185" width="310" height="10" rx="3" fill="#ebf5fb"/>
+    <text x="175" y="194" text-anchor="middle" font-size="9" fill="#2980b9">Zero extra token overhead (0%) | No model weight changes</text>
+  </g>
+
+  <!-- Performance Results -->
+  <g transform="translate(40, 385)">
+    <rect x="0" y="0" width="730" height="100" rx="8" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+    <text x="365" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#2c3e50">Pass^1 Improvement (FC vs LedgerAgent)</text>
+
+    <!-- GPT-5.2 -->
+    <rect x="30" y="35" width="160" height="50" rx="4" fill="#3498db"/>
+    <text x="110" y="57" text-anchor="middle" font-size="13" font-weight="bold" fill="white">GPT-5.2</text>
+    <text x="110" y="76" text-anchor="middle" font-size="18" font-weight="bold" fill="#ecf0f1">+15.5 pts</text>
+
+    <!-- GPT-4.1 -->
+    <rect x="220" y="35" width="160" height="50" rx="4" fill="#2ecc71"/>
+    <text x="300" y="57" text-anchor="middle" font-size="13" font-weight="bold" fill="white">GPT-4.1</text>
+    <text x="300" y="76" text-anchor="middle" font-size="18" font-weight="bold" fill="#ecf0f1">+12.2 pts</text>
+
+    <!-- MiniMax -->
+    <rect x="410" y="35" width="160" height="50" rx="4" fill="#e67e22"/>
+    <text x="490" y="57" text-anchor="middle" font-size="13" font-weight="bold" fill="white">MiniMax M2.5</text>
+    <text x="490" y="76" text-anchor="middle" font-size="18" font-weight="bold" fill="#ecf0f1">+7.3 pts avg</text>
+
+    <!-- Kimi -->
+    <rect x="600" y="35" width="100" height="50" rx="4" fill="#9b59b6"/>
+    <text x="650" y="57" text-anchor="middle" font-size="12" font-weight="bold" fill="white">Kimi-K2.5</text>
+    <text x="650" y="76" text-anchor="middle" font-size="18" font-weight="bold" fill="#ecf0f1">+3.4 pts avg</text>
+
+    <!-- IRMA comparison -->
+    <rect x="30" y="90" width="670" height="5" rx="2" fill="#ecf0f1"/>
+  </g>
+</svg>
