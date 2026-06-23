@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f2e"/>
+      <stop offset="100%" style="stop-color:#0d1117"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#58a6ff"/>
+      <stop offset="100%" style="stop-color:#3fb950"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.05">
+    <line x1="0" y1="0" x2="1200" y2="630" stroke="#fff" stroke-width="0.5"/>
+    <line x1="1200" y1="0" x2="0" y2="630" stroke="#fff" stroke-width="0.5"/>
+  </g>
+
+  <!-- Title -->
+  <text x="80" y="120" font-family="monospace" font-size="42" fill="#c9d1d9" font-weight="bold">HarnessFix</text>
+  <text x="80" y="165" font-family="monospace" font-size="22" fill="#8b949e">From Failed Trajectories to Reliable LLM Agents</text>
+
+  <!-- HTIR Pipeline Diagram -->
+  <!-- Raw Trace Box -->
+  <rect x="80" y="230" width="180" height="160" rx="8" fill="#161b22" stroke="#58a6ff" stroke-width="2"/>
+  <text x="170" y="260" text-anchor="middle" font-family="monospace" font-size="14" fill="#58a6ff">Raw Trace</text>
+  <text x="170" y="290" text-anchor="middle" font-family="monospace" font-size="11" fill="#8b949e">Step 1: call tool()</text>
+  <text x="170" y="315" text-anchor="middle" font-family="monospace" font-size="11" fill="#8b949e">Step 2: parse JSON</text>
+  <text x="170" y="340" text-anchor="middle" font-family="monospace" font-size="11" fill="#f85149">Step 3: FAIL</text>
+
+  <!-- Arrow -->
+  <line x1="265" y1="310" x2="310" y2="310" stroke="#58a6ff" stroke-width="2"/>
+  <polygon points="310,305 320,310 310,315" fill="#58a6ff"/>
+
+  <!-- HTIR Box -->
+  <rect x="320" y="230" width="180" height="160" rx="8" fill="#161b22" stroke="#3fb950" stroke-width="2"/>
+  <text x="410" y="260" text-anchor="middle" font-family="monospace" font-size="14" fill="#3fb950">HTIR</text>
+  <text x="410" y="290" text-anchor="middle" font-family="monospace" font-size="11" fill="#8b949e">Node[step=1]</text>
+  <text x="410" y="315" text-anchor="middle" font-family="monospace" font-size="11" fill="#8b949e">provenance + flow</text>
+  <text x="410" y="340" text-anchor="middle" font-family="monospace" font-size="11" fill="#f0883e">harness_layer</text>
+
+  <!-- Arrow -->
+  <line x1="505" y1="310" x2="550" y2="310" stroke="#3fb950" stroke-width="2"/>
+  <polygon points="550,305 560,310 550,315" fill="#3fb950"/>
+
+  <!-- Diagnosis Box -->
+  <rect x="560" y="230" width="180" height="160" rx="8" fill="#161b22" stroke="#f0883e" stroke-width="2"/>
+  <text x="650" y="260" text-anchor="middle" font-family="monospace" font-size="14" fill="#f0883e">Diagnose</text>
+  <text x="650" y="290" text-anchor="middle" font-family="monospace" font-size="11" fill="#8b949e">Step-level trace</text>
+  <text x="650" y="315" text-anchor="middle" font-family="monospace" font-size="11" fill="#8b949e">Causal chain</text>
+  <text x="650" y="340" text-anchor="middle" font-family="monospace" font-size="11" fill="#f85149">Root cause</text>
+
+  <!-- Arrow -->
+  <line x1="745" y1="310" x2="790" y2="310" stroke="#f0883e" stroke-width="2"/>
+  <polygon points="790,305 800,310 790,315" fill="#f0883e"/>
+
+  <!-- Repair Box -->
+  <rect x="800" y="230" width="180" height="160" rx="8" fill="#161b22" stroke="#a371f7" stroke-width="2"/>
+  <text x="890" y="260" text-anchor="middle" font-family="monospace" font-size="14" fill="#a371f7">Repair</text>
+  <text x="890" y="290" text-anchor="middle" font-family="monospace" font-size="11" fill="#8b949e">Flaw records</text>
+  <text x="890" y="315" text-anchor="middle" font-family="monospace" font-size="11" fill="#8b949e">Repair operators</text>
+  <text x="890" y="340" text-anchor="middle" font-family="monospace" font-size="11" fill="#3fb950">Reliable Agent</text>
+
+  <!-- Bottom stats -->
+  <rect x="80" y="440" width="260" height="120" rx="8" fill="#161b22"/>
+  <text x="210" y="475" text-anchor="middle" font-family="monospace" font-size="36" fill="#58a6ff">89.3%</text>
+  <text x="210" y="505" text-anchor="middle" font-family="monospace" font-size="14" fill="#8b949e">Diagnosis Accuracy</text>
+
+  <rect x="370" y="440" width="260" height="120" rx="8" fill="#161b22"/>
+  <text x="500" y="475" text-anchor="middle" font-family="monospace" font-size="36" fill="#3fb950">76.5%</text>
+  <text x="500" y="505" text-anchor="middle" font-family="monospace" font-size="14" fill="#8b949e">Repair Coverage</text>
+
+  <rect x="660" y="440" width="260" height="120" rx="8" fill="#161b22"/>
+  <text x="790" y="475" text-anchor="middle" font-family="monospace" font-size="36" fill="#f0883e">94.2%</text>
+  <text x="790" y="505" text-anchor="middle" font-family="monospace" font-size="14" fill="#8b949e">Cross-Framework Consistency</text>
+
+  <!-- arXiv reference -->
+  <text x="600" y="600" text-anchor="middle" font-family="monospace" font-size="13" fill="#484f58">arXiv:2606.06324 | Paradigm Radar #81</text>
+</svg>
