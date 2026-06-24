@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Title -->
+  <text x="600" y="50" text-anchor="middle" font-size="24" font-weight="700" fill="#ffffff">三种输入模式的工作流程</text>
+  <text x="600" y="75" text-anchor="middle" font-size="13" fill="#90a4ae">纯文本 vs 纯视觉 vs 混合模式——Agent 如何与代码仓库交互</text>
+  
+  <!-- Mode 1: Pure Text -->
+  <rect x="40" y="100" width="360" height="480" rx="8" fill="#b71c1c" opacity="0.15"/>
+  <text x="220" y="135" text-anchor="middle" font-size="16" font-weight="600" fill="#ef9a9a">纯文本基线</text>
+  
+  <!-- Flow steps -->
+  <rect x="70" y="155" width="300" height="40" rx="4" fill="#b71c1c" opacity="0.3"/>
+  <text x="220" y="180" text-anchor="middle" font-size="12" fill="#ef9a9a">1. Agent 接收修复任务</text>
+  
+  <line x1="220" y1="195" x2="220" y2="215" stroke="#ef9a9a" stroke-width="1.5"/>
+  <polygon points="220,215 217,210 223,210" fill="#ef9a9a"/>
+  
+  <rect x="70" y="220" width="300" height="40" rx="4" fill="#b71c1c" opacity="0.3"/>
+  <text x="220" y="245" text-anchor="middle" font-size="12" fill="#ef9a9a">2. tree / grep / cat 获取文件</text>
+  
+  <line x1="220" y1="260" x2="220" y2="280" stroke="#ef9a9a" stroke-width="1.5"/>
+  <polygon points="220,280 217,275 223,275" fill="#ef9a9a"/>
+  
+  <rect x="70" y="285" width="300" height="40" rx="4" fill="#b71c1c" opacity="0.3"/>
+  <text x="220" y="310" text-anchor="middle" font-size="12" fill="#ef9a9a">3. 逐个读取相关代码文件</text>
+  
+  <line x1="220" y1="325" x2="220" y2="345" stroke="#ef9a9a" stroke-width="1.5"/>
+  <polygon points="220,345 217,340 223,340" fill="#ef9a9a"/>
+  
+  <rect x="70" y="350" width="300" height="40" rx="4" fill="#b71c1c" opacity="0.3"/>
+  <text x="220" y="375" text-anchor="middle" font-size="12" fill="#ef9a9a">4. 构建纯文本上下文窗口</text>
+  
+  <line x1="220" y1="390" x2="220" y2="410" stroke="#ef9a9a" stroke-width="1.5"/>
+  <polygon points="220,410 217,405 223,405" fill="#ef9a9a"/>
+  
+  <rect x="70" y="415" width="300" height="40" rx="4" fill="#b71c1c" opacity="0.3"/>
+  <text x="220" y="440" text-anchor="middle" font-size="12" fill="#ef9a9a">5. LLM 基于文本生成修复</text>
+  
+  <!-- Limitations -->
+  <rect x="70" y="475" width="300" height="80" rx="4" fill="#b71c1c" opacity="0.2"/>
+  <text x="220" y="500" text-anchor="middle" font-size="11" font-weight="600" fill="#ef9a9a">局限性</text>
+  <text x="220" y="520" text-anchor="middle" font-size="10" fill="#b0bec5">- 缺乏全局结构视图</text>
+  <text x="220" y="538" text-anchor="middle" font-size="10" fill="#b0bec5">- 间接依赖关系易遗漏</text>
+  
+  <!-- Mode 2: Pure Visual -->
+  <rect x="420" y="100" width="360" height="480" rx="8" fill="#e65100" opacity="0.15"/>
+  <text x="600" y="135" text-anchor="middle" font-size="16" font-weight="600" fill="#ffcc80">纯视觉模式</text>
+  
+  <!-- Flow steps -->
+  <rect x="450" y="155" width="300" height="40" rx="4" fill="#e65100" opacity="0.3"/>
+  <text x="600" y="180" text-anchor="middle" font-size="12" fill="#ffcc80">1. Agent 接收修复任务</text>
+  
+  <line x1="600" y1="195" x2="600" y2="215" stroke="#ffcc80" stroke-width="1.5"/>
+  <polygon points="600,215 597,210 603,210" fill="#ffcc80"/>
+  
+  <rect x="450" y="220" width="300" height="40" rx="4" fill="#e65100" opacity="0.3"/>
+  <text x="600" y="245" text-anchor="middle" font-size="12" fill="#ffcc80">2. AST → 依赖图 → PNG 渲染</text>
+  
+  <line x1="600" y1="260" x2="600" y2="280" stroke="#ffcc80" stroke-width="1.5"/>
+  <polygon points="600,280 597,275 603,275" fill="#ffcc80"/>
+  
+  <!-- Graph visualization -->
+  <rect x="470" y="285" width="260" height="100" rx="4" fill="#1a237e"/>
+  <circle cx="510" cy="315" r="10" fill="#ffcc80"/>
+  <circle cx="560" cy="300" r="8" fill="#ffb74d"/>
+  <circle cx="600" cy="320" r="8" fill="#ffb74d"/>
+  <circle cx="540" cy="345" r="6" fill="#ffa726"/>
+  <circle cx="590" cy="355" r="6" fill="#ffa726"/>
+  <line x1="510" y1="315" x2="560" y2="300" stroke="#ffffff" stroke-width="1.5" opacity="0.5"/>
+  <line x1="560" y1="300" x2="600" y2="320" stroke="#ffffff" stroke-width="1.5" opacity="0.5"/>
+  <line x1="510" y1="315" x2="540" y2="345" stroke="#ffffff" stroke-width="1.5" opacity="0.5"/>
+  
+  <line x1="600" y1="385" x2="600" y2="405" stroke="#ffcc80" stroke-width="1.5"/>
+  <polygon points="600,405 597,400 603,400" fill="#ffcc80"/>
+  
+  <rect x="450" y="410" width="300" height="40" rx="4" fill="#e65100" opacity="0.3"/>
+  <text x="600" y="435" text-anchor="middle" font-size="12" fill="#ffcc80">3. Agent "阅读"整张图</text>
+  
+  <line x1="600" y1="450" x2="600" y2="470" stroke="#ffcc80" stroke-width="1.5"/>
+  <polygon points="600,470 597,465 603,465" fill="#ffcc80"/>
+  
+  <rect x="450" y="475" width="300" height="40" rx="4" fill="#e65100" opacity="0.3"/>
+  <text x="600" y="500" text-anchor="middle" font-size="12" fill="#ffcc80">4. LLM 基于图像生成修复</text>
+  
+  <!-- Limitations -->
+  <rect x="450" y="530" width="300" height="45" rx="4" fill="#e65100" opacity="0.2"/>
+  <text x="600" y="558" text-anchor="middle" font-size="10" fill="#b0bec5">准确率下降 20-67% · Token 成本上升</text>
+  
+  <!-- Mode 3: Hybrid -->
+  <rect x="800" y="100" width="360" height="480" rx="8" fill="#1b5e20" opacity="0.15"/>
+  <text x="980" y="135" text-anchor="middle" font-size="16" font-weight="600" fill="#a5d6a7">混合模式（推荐）</text>
+  
+  <!-- Flow steps -->
+  <rect x="830" y="155" width="300" height="40" rx="4" fill="#1b5e20" opacity="0.3"/>
+  <text x="980" y="180" text-anchor="middle" font-size="12" fill="#a5d6a7">1. Agent 接收修复任务</text>
+  
+  <line x1="980" y1="195" x2="980" y2="215" stroke="#a5d6a7" stroke-width="1.5"/>
+  <polygon points="980,215 977,210 983,210" fill="#a5d6a7"/>
+  
+  <!-- Decision diamond -->
+  <rect x="840" y="220" width="280" height="40" rx="4" fill="#1b5e20" opacity="0.3"/>
+  <text x="980" y="245" text-anchor="middle" font-size="12" fill="#a5d6a7">2. 判断是否需要结构理解</text>
+  
+  <!-- Branch: No -->
+  <line x1="980" y1="260" x2="980" y2="280" stroke="#a5d6a7" stroke-width="1.5"/>
+  <polygon points="980,280 977,275 983,275" fill="#a5d6a7"/>
+  
+  <rect x="840" y="285" width="120" height="35" rx="4" fill="#1b5e20" opacity="0.2"/>
+  <text x="900" y="307" text-anchor="middle" font-size="10" fill="#a5d6a7">简单任务</text>
+  
+  <line x1="980" y1="320" x2="980" y2="340" stroke="#a5d6a7" stroke-width="1.5"/>
+  <polygon points="980,340 977,335 983,335" fill="#a5d6a7"/>
+  
+  <rect x="840" y="345" width="280" height="35" rx="4" fill="#1b5e20" opacity="0.2"/>
+  <text x="980" y="367" text-anchor="middle" font-size="10" fill="#a5d6a7">纯文本流程 → 快速修复</text>
+  
+  <!-- Branch: Yes -->
+  <line x1="980" y1="260" x2="1080" y2="260" stroke="#a5d6a7" stroke-width="1.5"/>
+  <polygon points="1080,255 1085,260 1080,265" fill="#a5d6a7"/>
+  
+  <rect x="1090" y="240" width="130" height="40" rx="4" fill="#1b5e20" opacity="0.2"/>
+  <text x="1155" y="265" text-anchor="middle" font-size="10" fill="#a5d6a7">复杂任务</text>
+  
+  <line x1="1155" y1="280" x2="1155" y2="300" stroke="#a5d6a7" stroke-width="1.5"/>
+  <polygon points="1155,300 1152,295 1158,295" fill="#a5d6a7"/>
+  
+  <!-- Two parallel paths -->
+  <rect x="1090" y="305" width="130" height="35" rx="4" fill="#1b5e20" opacity="0.2"/>
+  <text x="1155" y="327" text-anchor="middle" font-size="10" fill="#a5d6a7">文本定位目标</text>
+  
+  <line x1="1155" y1="340" x2="1155" y2="360" stroke="#a5d6a7" stroke-width="1.5"/>
+  <polygon points="1155,360 1152,355 1158,355" fill="#a5d6a7"/>
+  
+  <rect x="1090" y="365" width="130" height="35" rx="4" fill="#1b5e20" opacity="0.2"/>
+  <text x="1155" y="387" text-anchor="middle" font-size="10" fill="#a5d6a7">生成可视化子图</text>
+  
+  <!-- Merge -->
+  <line x1="980" y1="380" x2="980" y2="400" stroke="#a5d6a7" stroke-width="1.5"/>
+  <polygon points="980,400 977,395 983,395" fill="#a5d6a7"/>
+  
+  <rect x="840" y="405" width="280" height="35" rx="4" fill="#1b5e20" opacity="0.2"/>
+  <text x="980" y="427" text-anchor="middle" font-size="10" fill="#a5d6a7">文本 + 可视化 → Agent Prompt</text>
+  
+  <line x1="980" y1="440" x2="980" y2="460" stroke="#a5d6a7" stroke-width="1.5"/>
+  <polygon points="980,460 977,455 983,455" fill="#a5d6a7"/>
+  
+  <rect x="840" y="465" width="280" height="35" rx="4" fill="#1b5e20" opacity="0.2"/>
+  <text x="980" y="487" text-anchor="middle" font-size="10" fill="#a5d6a7">LLM 基于混合上下文生成修复</text>
+  
+  <!-- Benefits -->
+  <rect x="840" y="520" width="280" height="45" rx="4" fill="#1b5e20" opacity="0.2"/>
+  <text x="980" y="548" text-anchor="middle" font-size="10" fill="#a5d6a7">准确率持平或微升 · Token 成本降低 3-26%</text>
+  
+  <!-- Footer -->
+  <text x="600" y="610" text-anchor="middle" font-size="11" fill="#546e7a">SeeRepo: Multimodal Augmentation for Coding Agents | arXiv:2606.14061</text>
+</svg>

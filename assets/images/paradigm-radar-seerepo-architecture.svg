@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4fc3f7"/>
+      <stop offset="100%" style="stop-color:#81d4fa"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Title -->
+  <text x="600" y="55" text-anchor="middle" font-size="28" font-weight="700" fill="#ffffff">SeeRepo — 多模态仓库表示框架</text>
+  <text x="600" y="80" text-anchor="middle" font-size="14" fill="#90a4ae">从 AST 到可视化的完整管线：让编码 Agent 看见代码仓库的结构</text>
+  
+  <!-- Pipeline: Step 1 - AST Parsing -->
+  <rect x="60" y="120" width="300" height="200" rx="8" fill="#0d47a1" opacity="0.9" filter="url(#shadow)"/>
+  <text x="210" y="155" text-anchor="middle" font-size="16" font-weight="600" fill="#bbdefb">Step 1: AST 静态分析</text>
+  
+  <!-- Code file icon -->
+  <rect x="90" y="175" width="80" height="100" rx="4" fill="#1a237e"/>
+  <line x1="100" y1="190" x2="160" y2="190" stroke="#4fc3f7" stroke-width="1.5" opacity="0.6"/>
+  <line x1="100" y1="200" x2="145" y2="200" stroke="#4fc3f7" stroke-width="1.5" opacity="0.6"/>
+  <line x1="100" y1="210" x2="155" y2="210" stroke="#81d4fa" stroke-width="1.5" opacity="0.6"/>
+  <line x1="100" y1="220" x2="135" y2="220" stroke="#4fc3f7" stroke-width="1.5" opacity="0.6"/>
+  <line x1="100" y1="230" x2="150" y2="230" stroke="#81d4fa" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- AST tree icon -->
+  <circle cx="270" cy="195" r="6" fill="#4fc3f7"/>
+  <line x1="270" y1="201" x2="250" y2="225" stroke="#4fc3f7" stroke-width="1.5"/>
+  <line x1="270" y1="201" x2="290" y2="225" stroke="#4fc3f7" stroke-width="1.5"/>
+  <circle cx="250" cy="230" r="4" fill="#81d4fa"/>
+  <circle cx="290" cy="230" r="4" fill="#81d4fa"/>
+  
+  <!-- Four relations -->
+  <text x="90" y="275" font-size="12" fill="#b0bec5">提取四种关系：</text>
+  <text x="90" y="293" font-size="12" fill="#80cbc4">包含 · 导入 · 调用 · 继承</text>
+  
+  <!-- Arrow -->
+  <line x1="370" y1="220" x2="420" y2="220" stroke="#4fc3f7" stroke-width="2"/>
+  <polygon points="420,215 430,220 420,225" fill="#4fc3f7"/>
+  
+  <!-- Pipeline: Step 2 - Graph Construction -->
+  <rect x="440" y="120" width="300" height="200" rx="8" fill="#0d47a1" opacity="0.9" filter="url(#shadow)"/>
+  <text x="590" y="155" text-anchor="middle" font-size="16" font-weight="600" fill="#bbdefb">Step 2: 依赖图构建</text>
+  
+  <!-- Graph visualization -->
+  <circle cx="480" cy="190" r="12" fill="#4fc3f7"/>
+  <circle cx="530" cy="175" r="10" fill="#81d4fa"/>
+  <circle cx="560" cy="200" r="10" fill="#81d4fa"/>
+  <circle cx="510" cy="220" r="8" fill="#b3e5fc"/>
+  <circle cx="570" cy="230" r="8" fill="#b3e5fc"/>
+  <line x1="480" y1="190" x2="530" y2="175" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/>
+  <line x1="530" y1="175" x2="560" y2="200" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/>
+  <line x1="480" y1="190" x2="510" y2="220" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/>
+  <line x1="530" y1="175" x2="570" y2="230" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Layout options -->
+  <text x="460" y="275" font-size="12" fill="#b0bec5">布局策略：</text>
+  <rect x="460" y="283" width="60" height="22" rx="3" fill="#1a237e"/>
+  <text x="490" y="298" text-anchor="middle" font-size="10" fill="#bbdefb">图布局</text>
+  <rect x="525" y="283" width="60" height="22" rx="3" fill="#1a237e"/>
+  <text x="555" y="298" text-anchor="middle" font-size="10" fill="#bbdefb">嵌套布局</text>
+  <rect x="590" y="283" width="60" height="22" rx="3" fill="#1a237e"/>
+  <text x="620" y="298" text-anchor="middle" font-size="10" fill="#bbdefb">表格布局</text>
+  
+  <!-- Arrow -->
+  <line x1="750" y1="220" x2="800" y2="220" stroke="#4fc3f7" stroke-width="2"/>
+  <polygon points="800,215 810,220 800,225" fill="#4fc3f7"/>
+  
+  <!-- Pipeline: Step 3 - Multimodal Injection -->
+  <rect x="820" y="120" width="320" height="200" rx="8" fill="#0d47a1" opacity="0.9" filter="url(#shadow)"/>
+  <text x="980" y="155" text-anchor="middle" font-size="16" font-weight="600" fill="#bbdefb">Step 3: 多模态注入</text>
+  
+  <!-- Image icon -->
+  <rect x="845" y="175" width="90" height="65" rx="4" fill="#1a237e"/>
+  <circle cx="875" cy="200" r="8" fill="#4fc3f7" opacity="0.5"/>
+  <rect x="885" y="210" width="40" height="3" fill="#81d4fa" opacity="0.5"/>
+  
+  <!-- Text icon -->
+  <rect x="960" y="175" width="90" height="65" rx="4" fill="#1a237e"/>
+  <line x1="970" y1="190" x2="1040" y2="190" stroke="#4fc3f7" stroke-width="1.5" opacity="0.6"/>
+  <line x1="970" y1="200" x2="1030" y2="200" stroke="#81d4fa" stroke-width="1.5" opacity="0.6"/>
+  <line x1="970" y1="210" x2="1035" y2="210" stroke="#4fc3f7" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Plus sign -->
+  <text x="950" y="218" text-anchor="middle" font-size="20" fill="#ffffff">+</text>
+  
+  <!-- Result: Agent prompt -->
+  <rect x="845" y="260" width="205" height="45" rx="4" fill="#0d47a1"/>
+  <text x="947" y="288" text-anchor="middle" font-size="13" fill="#bbdefb">文本 + 可视化 → Agent Prompt</text>
+  
+  <!-- Bottom section: Three modes comparison -->
+  <rect x="60" y="350" width="1080" height="240" rx="8" fill="#0d47a1" opacity="0.5"/>
+  <text x="600" y="385" text-anchor="middle" font-size="18" font-weight="600" fill="#ffffff">三种输入模式对比</text>
+  
+  <!-- Mode 1: Pure Text -->
+  <rect x="90" y="405" width="320" height="160" rx="6" fill="#b71c1c" opacity="0.3"/>
+  <text x="250" y="435" text-anchor="middle" font-size="14" font-weight="600" fill="#ef9a9a">纯文本基线</text>
+  <rect x="110" y="450" width="280" height="80" rx="4" fill="#1a237e"/>
+  <line x1="120" y1="465" x2="380" y2="465" stroke="#ef9a9a" stroke-width="1" opacity="0.4"/>
+  <line x1="120" y1="478" x2="350" y2="478" stroke="#ef9a9a" stroke-width="1" opacity="0.4"/>
+  <line x1="120" y1="491" x2="370" y2="491" stroke="#ef9a9a" stroke-width="1" opacity="0.4"/>
+  <line x1="120" y1="504" x2="360" y2="504" stroke="#ef9a9a" stroke-width="1" opacity="0.4"/>
+  <line x1="120" y1="517" x2="340" y2="517" stroke="#ef9a9a" stroke-width="1" opacity="0.4"/>
+  <text x="250" y="555" text-anchor="middle" font-size="11" fill="#b0bec5">传统方式 · 文件树 + grep</text>
+  
+  <!-- Mode 2: Pure Visual -->
+  <rect x="440" y="405" width="320" height="160" rx="6" fill="#e65100" opacity="0.3"/>
+  <text x="600" y="435" text-anchor="middle" font-size="14" font-weight="600" fill="#ffcc80">纯视觉模式</text>
+  <rect x="460" y="450" width="280" height="80" rx="4" fill="#1a237e"/>
+  <!-- Graph visualization -->
+  <circle cx="500" cy="475" r="8" fill="#ffcc80"/>
+  <circle cx="540" cy="465" r="6" fill="#ffb74d"/>
+  <circle cx="570" cy="485" r="6" fill="#ffb74d"/>
+  <circle cx="520" cy="505" r="5" fill="#ffa726"/>
+  <line x1="500" y1="475" x2="540" y2="465" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+  <line x1="540" y1="465" x2="570" y2="485" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+  <text x="600" y="555" text-anchor="middle" font-size="11" fill="#b0bec5">反直觉结果 · 准确率显著下降</text>
+  
+  <!-- Mode 3: Hybrid -->
+  <rect x="790" y="405" width="320" height="160" rx="6" fill="#1b5e20" opacity="0.3"/>
+  <text x="950" y="435" text-anchor="middle" font-size="14" font-weight="600" fill="#a5d6a7">混合模式（推荐）</text>
+  <!-- Split view -->
+  <rect x="810" y="450" width="130" height="80" rx="4" fill="#1a237e"/>
+  <line x1="820" y1="465" x2="930" y2="465" stroke="#a5d6a7" stroke-width="1" opacity="0.4"/>
+  <line x1="820" y1="478" x2="920" y2="478" stroke="#a5d6a7" stroke-width="1" opacity="0.4"/>
+  <rect x="950" y="450" width="130" height="80" rx="4" fill="#1a237e"/>
+  <circle cx="980" cy="475" r="6" fill="#a5d6a7"/>
+  <circle cx="1010" cy="465" r="5" fill="#81c784"/>
+  <line x1="980" y1="475" x2="1010" y2="465" stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+  <text x="950" y="555" text-anchor="middle" font-size="11" fill="#a5d6a7">文本定位 + 视觉理解 · Token -26%</text>
+  
+  <!-- Footer -->
+  <text x="600" y="615" text-anchor="middle" font-size="11" fill="#546e7a">arXiv:2606.14061 | Munich Institute of Technology + TU Darmstadt</text>
+</svg>

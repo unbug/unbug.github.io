@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Title -->
+  <text x="600" y="50" text-anchor="middle" font-size="24" font-weight="700" fill="#ffffff">三种布局策略对比</text>
+  <text x="600" y="75" text-anchor="middle" font-size="13" fill="#90a4ae">图布局 vs 嵌套布局 vs 表格布局——信息密度与 Token 效率的权衡</text>
+  
+  <!-- Layout 1: Force-directed (Graph) -->
+  <rect x="40" y="100" width="360" height="480" rx="8" fill="#4fc3f7" opacity="0.1"/>
+  <text x="220" y="135" text-anchor="middle" font-size="16" font-weight="600" fill="#4fc3f7">图布局（力导向）</text>
+  
+  <!-- Graph visualization -->
+  <rect x="70" y="155" width="300" height="200" rx="4" fill="#1a237e"/>
+  <circle cx="160" cy="210" r="12" fill="#4fc3f7"/>
+  <circle cx="220" cy="185" r="10" fill="#81d4fa"/>
+  <circle cx="280" cy="200" r="10" fill="#81d4fa"/>
+  <circle cx="190" cy="260" r="8" fill="#b3e5fc"/>
+  <circle cx="250" cy="270" r="8" fill="#b3e5fc"/>
+  <circle cx="310" cy="240" r="6" fill="#e1f5fe"/>
+  <line x1="160" y1="210" x2="220" y2="185" stroke="#ffffff" stroke-width="1.5" opacity="0.5"/>
+  <line x1="220" y1="185" x2="280" y2="200" stroke="#ffffff" stroke-width="1.5" opacity="0.5"/>
+  <line x1="160" y1="210" x2="190" y2="260" stroke="#ffffff" stroke-width="1.5" opacity="0.5"/>
+  <line x1="220" y1="185" x2="250" y2="270" stroke="#ffffff" stroke-width="1.5" opacity="0.5"/>
+  <line x1="280" y1="200" x2="310" y2="240" stroke="#ffffff" stroke-width="1.5" opacity="0.5"/>
+  
+  <!-- Pros -->
+  <text x="70" y="375" font-size="11" font-weight="600" fill="#a5d6a7">优势</text>
+  <text x="70" y="395" font-size="10" fill="#b0bec5">- 信息密度最高</text>
+  <text x="70" y="412" font-size="10" fill="#b0bec5">- Token 效率最优（-25%）</text>
+  <text x="70" y="429" font-size="10" fill="#b0bec5">- 适合全局拓扑展示</text>
+  
+  <!-- Cons -->
+  <text x="70" y="460" font-size="11" font-weight="600" fill="#ef9a9a">劣势</text>
+  <text x="70" y="480" font-size="10" fill="#b0bec5">- 节点位置无语义意义</text>
+  <text x="70" y="497" font-size="10" fill="#b0bec5">- 模型难建空间记忆</text>
+  
+  <!-- Rating -->
+  <rect x="200" y="510" width="160" height="30" rx="4" fill="#1b5e20" opacity="0.3"/>
+  <text x="280" y="530" text-anchor="middle" font-size="12" fill="#a5d6a7">推荐作为默认策略</text>
+  
+  <!-- Layout 2: Nested (Hierarchical) -->
+  <rect x="420" y="100" width="360" height="480" rx="8" fill="#ffb74d" opacity="0.1"/>
+  <text x="600" y="135" text-anchor="middle" font-size="16" font-weight="600" fill="#ffb74d">嵌套布局（层级缩进）</text>
+  
+  <!-- Nested visualization -->
+  <rect x="450" y="155" width="300" height="200" rx="4" fill="#1a237e"/>
+  <text x="465" y="180" font-size="10" fill="#ffb74d">src/</text>
+  <text x="485" y="197" font-size="10" fill="#b0bec5">├── models/</text>
+  <text x="505" y="214" font-size="10" fill="#b0bec5">│   ├── base.py</text>
+  <text x="505" y="231" font-size="10" fill="#b0bec5">│   └── utils.py</text>
+  <text x="485" y="248" font-size="10" fill="#b0bec5">├── services/</text>
+  <text x="505" y="265" font-size="10" fill="#b0bec5">│   └── api.py</text>
+  <text x="485" y="282" font-size="10" fill="#b0bec5">└── tests/</text>
+  
+  <!-- Pros -->
+  <text x="450" y="375" font-size="11" font-weight="600" fill="#a5d6a7">优势</text>
+  <text x="450" y="395" font-size="10" fill="#b0bec5">- 与文件系统结构一致</text>
+  <text x="450" y="412" font-size="10" fill="#b0bec5">- 符合开发者认知习惯</text>
+  
+  <!-- Cons -->
+  <text x="450" y="460" font-size="11" font-weight="600" fill="#ef9a9a">劣势</text>
+  <text x="450" y="480" font-size="10" fill="#b0bec5">- 深度嵌套时宽度膨胀</text>
+  <text x="450" y="497" font-size="10" fill="#b0bec5">- 超出视觉编码器分辨率</text>
+  
+  <!-- Rating -->
+  <rect x="630" y="510" width="130" height="30" rx="4" fill="#e65100" opacity="0.3"/>
+  <text x="695" y="530" text-anchor="middle" font-size="12" fill="#ffcc80">适合小型仓库</text>
+  
+  <!-- Layout 3: Table -->
+  <rect x="800" y="100" width="360" height="480" rx="8" fill="#ce93d8" opacity="0.1"/>
+  <text x="980" y="135" text-anchor="middle" font-size="16" font-weight="600" fill="#ce93d8">表格布局</text>
+  
+  <!-- Table visualization -->
+  <rect x="830" y="155" width="300" height="200" rx="4" fill="#1a237e"/>
+  <rect x="835" y="160" width="290" height="25" rx="2" fill="#4a148c"/>
+  <text x="850" y="177" font-size="9" fill="#e1bee7">源文件</text>
+  <text x="930" y="177" font-size="9" fill="#e1bee7">目标文件</text>
+  <text x="1020" y="177" font-size="9" fill="#e1bee7">关系类型</text>
+  
+  <rect x="835" y="188" width="290" height="20" rx="2" fill="#1a237e"/>
+  <text x="850" y="202" font-size="9" fill="#b0bec5">src/models/base.py</text>
+  <text x="930" y="202" font-size="9" fill="#b0bec5">src/services/api.py</text>
+  <text x="1020" y="202" font-size="9" fill="#b0bec5">import</text>
+  
+  <rect x="835" y="211" width="290" height="20" rx="2" fill="#1a237e"/>
+  <text x="850" y="225" font-size="9" fill="#b0bec5">src/models/utils.py</text>
+  <text x="930" y="225" font-size="9" fill="#b0bec5">src/models/base.py</text>
+  <text x="1020" y="225" font-size="9" fill="#b0bec5">call</text>
+  
+  <rect x="835" y="234" width="290" height="20" rx="2" fill="#1a237e"/>
+  <text x="850" y="248" font-size="9" fill="#b0bec5">src/services/api.py</text>
+  <text x="930" y="248" font-size="9" fill="#b0bec5">tests/test_api.py</text>
+  <text x="1020" y="248" font-size="9" fill="#b0bec5">import</text>
+  
+  <!-- Pros -->
+  <text x="830" y="375" font-size="11" font-weight="600" fill="#a5d6a7">优势</text>
+  <text x="830" y="395" font-size="10" fill="#b0bec5">- 每个单元格清晰可读</text>
+  <text x="830" y="412" font-size="10" fill="#b0bec5">- 关系类型明确标注</text>
+  
+  <!-- Cons -->
+  <text x="830" y="460" font-size="11" font-weight="600" fill="#ef9a9a">劣势</text>
+  <text x="830" y="480" font-size="10" fill="#b0bec5">- 信息密度最低</text>
+  <text x="830" y="497" font-size="10" fill="#b0bec5">- Token 开销最大</text>
+  
+  <!-- Rating -->
+  <rect x="960" y="510" width="130" height="30" rx="4" fill="#e65100" opacity="0.3"/>
+  <text x="1025" y="530" text-anchor="middle" font-size="12" fill="#ffcc80">仅适合调试</text>
+  
+  <!-- Footer -->
+  <text x="600" y="610" text-anchor="middle" font-size="11" fill="#546e7a">Source: arXiv:2606.14061 | SeeRepo Layout Evaluation</text>
+</svg>
