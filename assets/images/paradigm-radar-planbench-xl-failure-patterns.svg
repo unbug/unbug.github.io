@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27"/>
+      <stop offset="100%" style="stop-color:#1a1f4e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="480" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="480" y="38" text-anchor="middle" font-size="18" font-weight="bold" fill="#e2e8f0">失败模式分析: Agent不是找不到工具，而是找到了选错了</text>
+  <text x="480" y="56" text-anchor="middle" font-size="12" fill="#94a3b8">78%的失败轨迹中，Agent在错误调用前已检索到有效进展工具</text>
+
+  <!-- Three failure pattern boxes -->
+  <!-- Pattern 1: Wrong Tool Selection -->
+  <rect x="30" y="85" width="290" height="260" rx="10" fill="#1e293b" stroke="#ef4444" stroke-width="2"/>
+  <text x="175" y="115" text-anchor="middle" font-size="15" font-weight="bold" fill="#f87171">模式一: 选错工具</text>
+
+  <!-- Visual: Tool selection flow -->
+  <rect x="50" y="130" width="250" height="40" rx="6" fill="#0f172a"/>
+  <text x="175" y="155" text-anchor="middle" font-size="12" fill="#cbd5e1">检索结果: [工具A, 工具B*, 工具C]</text>
+
+  <line x1="175" y1="170" x2="175" y2="190" stroke="#64748b" stroke-width="2"/>
+  <polygon points="175,190 170,183 180,183" fill="#64748b"/>
+
+  <rect x="50" y="195" width="250" height="40" rx="6" fill="#7f1d1d" opacity="0.6"/>
+  <text x="175" y="220" text-anchor="middle" font-size="12" fill="#fca5a5">Agent选择: 工具A (错误)</text>
+
+  <line x1="175" y1="235" x2="175" y2="255" stroke="#64748b" stroke-width="2"/>
+  <polygon points="175,255 170,248 180,248" fill="#64748b"/>
+
+  <rect x="50" y="260" width="250" height="40" rx="6" fill="#7f1d1d" opacity="0.3"/>
+  <text x="175" y="285" text-anchor="middle" font-size="12" fill="#fca5a5">结果: 路径偏离，任务失败</text>
+
+  <!-- Stat -->
+  <rect x="50" y="315" width="250" height="24" rx="4" fill="#7f1d1d"/>
+  <text x="175" y="331" text-anchor="middle" font-size="12" fill="#fca5a5">占比: 78% 的失败轨迹</text>
+
+  <!-- Pattern 2: Error Propagation -->
+  <rect x="335" y="85" width="290" height="260" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+  <text x="480" y="115" text-anchor="middle" font-size="15" font-weight="bold" fill="#fbbf24">模式二: 错误传播</text>
+
+  <!-- Visual: Error chain -->
+  <rect x="355" y="130" width="250" height="36" rx="6" fill="#0f172a"/>
+  <text x="480" y="153" text-anchor="middle" font-size="11" fill="#cbd5e1">步骤1: 工具返回空结果(隐式失败)</text>
+
+  <line x1="480" y1="166" x2="480" y2="183" stroke="#fbbf24" stroke-width="2"/>
+  <polygon points="480,183 475,176 485,176" fill="#fbbf24"/>
+
+  <rect x="355" y="188" width="250" height="36" rx="6" fill="#78350f" opacity="0.5"/>
+  <text x="480" y="211" text-anchor="middle" font-size="11" fill="#fde68a">步骤2: 用空结果作为输入</text>
+
+  <line x1="480" y1="224" x2="480" y2="241" stroke="#fbbf24" stroke-width="2"/>
+  <polygon points="480,241 475,234 485,234" fill="#fbbf24"/>
+
+  <rect x="355" y="246" width="250" height="36" rx="6" fill="#78350f" opacity="0.3"/>
+  <text x="480" y="269" text-anchor="middle" font-size="11" fill="#fde68a">步骤3: 错误沿轨迹持续传播</text>
+
+  <line x1="480" y1="282" x2="480" y2="299" stroke="#fbbf24" stroke-width="2"/>
+  <polygon points="480,299 475,292 485,292" fill="#fbbf24"/>
+
+  <rect x="355" y="304" width="250" height="36" rx="6" fill="#78350f" opacity="0.15"/>
+  <text x="480" y="327" text-anchor="middle" font-size="11" fill="#fde68a">步骤N: 最终答案完全偏离</text>
+
+  <!-- Stat -->
+  <rect x="355" y="350" width="250" height="24" rx="4" fill="#78350f"/>
+  <text x="480" y="366" text-anchor="middle" font-size="12" fill="#fde68a">不可信输入拒绝率: 仅 11.99%</text>
+
+  <!-- Pattern 3: Limited Recovery -->
+  <rect x="640" y="85" width="290" height="260" rx="10" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
+  <text x="785" y="115" text-anchor="middle" font-size="15" font-weight="bold" fill="#c4b5fd">模式三: 恢复能力不足</text>
+
+  <!-- Visual: Recovery attempt -->
+  <rect x="660" y="130" width="250" height="36" rx="6" fill="#0f172a"/>
+  <text x="785" y="153" text-anchor="middle" font-size="11" fill="#cbd5e1">步骤K: 工具调用失败</text>
+
+  <line x1="785" y1="166" x2="785" y2="183" stroke="#c4b5fd" stroke-width="2"/>
+  <polygon points="785,183 780,176 790,176" fill="#c4b5fd"/>
+
+  <rect x="660" y="188" width="250" height="36" rx="6" fill="#4c1d95" opacity="0.5"/>
+  <text x="785" y="211" text-anchor="middle" font-size="11" fill="#ddd6fe">尝试重规划: +5轮探索</text>
+
+  <line x1="785" y1="224" x2="785" y2="241" stroke="#c4b5fd" stroke-width="2"/>
+  <polygon points="785,241 780,234 790,234" fill="#c4b5fd"/>
+
+  <rect x="660" y="246" width="250" height="36" rx="6" fill="#4c1d95" opacity="0.3"/>
+  <text x="785" y="269" text-anchor="middle" font-size="11" fill="#ddd6fe">结果: 性能提升 &lt; 5个百分点</text>
+
+  <!-- Stat -->
+  <rect x="660" y="304" width="250" height="24" rx="4" fill="#4c1d95"/>
+  <text x="785" y="320" text-anchor="middle" font-size="12" fill="#ddd6fe">测试时计算扩展收益极低</text>
+
+  <!-- Bottom summary -->
+  <rect x="30" y="365" width="900" height="70" rx="8" fill="#1e293b"/>
+  <text x="480" y="390" text-anchor="middle" font-size="13" font-weight="bold" fill="#fbbf24">核心结论: 阻塞暴露的不是简单的交互次数不足，而是深层的适应性规划缺陷</text>
+  <text x="480" y="415" text-anchor="middle" font-size="11" fill="#94a3b8">Agent不是缺少尝试的机会，而是缺少在失败后重新评估和转向的能力</text>
+</svg>

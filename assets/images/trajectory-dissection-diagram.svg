@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27"/>
+      <stop offset="100%" style="stop-color:#1a1f4e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="540" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="480" y="38" text-anchor="middle" font-size="18" font-weight="bold" fill="#e2e8f0">Trajectory Dissection: 通过智能体轨迹解剖模型行为</text>
+  <text x="480" y="56" text-anchor="middle" font-size="12" fill="#94a3b8">138k条轨迹 · Claude/Gemini/GPT/Grok/Qwen五大模型家族 · 意图-执行差距形式化</text>
+
+  <!-- Left: Traditional vs New approach -->
+  <rect x="30" y="80" width="420" height="200" rx="10" fill="#1e293b" stroke="#ef4444" stroke-width="2"/>
+  <text x="240" y="110" text-anchor="middle" font-size="15" font-weight="bold" fill="#f87171">传统评估方法</text>
+
+  <!-- pass@1 box -->
+  <rect x="50" y="125" width="380" height="60" rx="8" fill="#0f172a"/>
+  <text x="240" y="148" text-anchor="middle" font-size="13" font-weight="bold" fill="#cbd5e1">pass@1 等聚合分数</text>
+  <text x="240" y="168" text-anchor="middle" font-size="11" fill="#94a3b8">告诉你Agent做对了什么，但不告诉你怎么做</text>
+
+  <!-- Problem -->
+  <rect x="50" y="195" width="380" height="70" rx="8" fill="#7f1d1d"/>
+  <text x="240" y="215" text-anchor="middle" font-size="12" font-weight="bold" fill="#fca5a5">问题: 同分不同行</text>
+  <text x="240" y="233" text-anchor="middle" font-size="10" fill="#fca5a5">两个模型在SWE-Pro上获得相同分数，解题路径可能截然不同</text>
+  <text x="240" y="250" text-anchor="middle" font-size="10" fill="#fca5a5">有的快速编辑后反复测试，有的偏好长时间思考再动手</text>
+
+  <!-- Right: SSA Framework -->
+  <rect x="480" y="80" width="450" height="200" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+  <text x="705" y="110" text-anchor="middle" font-size="15" font-weight="bold" fill="#34d399">Simple Strands Agent (SSA) 框架</text>
+
+  <!-- SSA pipeline -->
+  <rect x="500" y="125" width="410" height="40" rx="6" fill="#0f172a"/>
+  <text x="705" y="150" text-anchor="middle" font-size="12" fill="#cbd5e1">Agent轨迹 → 代码状态空间映射</text>
+
+  <!-- Arrow -->
+  <line x1="705" y1="165" x2="705" y2="180" stroke="#34d399" stroke-width="2"/>
+  <polygon points="705,180 700,173 710,173" fill="#34d399"/>
+
+  <rect x="500" y="185" width="410" height="40" rx="6" fill="#0f172a"/>
+  <text x="705" y="210" text-anchor="middle" font-size="12" fill="#cbd5e1">细粒度指标提取</text>
+
+  <!-- Arrow -->
+  <line x1="705" y1="225" x2="705" y2="240" stroke="#34d399" stroke-width="2"/>
+  <polygon points="705,240 700,233 710,233" fill="#34d399"/>
+
+  <rect x="500" y="245" width="410" height="40" rx="6" fill="#0f172a"/>
+  <text x="705" y="270" text-anchor="middle" font-size="12" fill="#cbd5e1">行为画像生成 + 意图-执行差距分析</text>
+
+  <!-- Bottom: Three fine-grained metrics -->
+  <rect x="30" y="300" width="900" height="200" rx="10" fill="#1e293b"/>
+  <text x="480" y="330" text-anchor="middle" font-size="15" font-weight="bold" fill="#fbbf24">细粒度指标体系</text>
+
+  <!-- Metric 1: Edit Frequency -->
+  <rect x="50" y="345" width="280" height="140" rx="8" fill="#0f172a"/>
+  <text x="190" y="370" text-anchor="middle" font-size="13" font-weight="bold" fill="#60a5fa">编辑频率</text>
+  <line x1="70" y1="380" x2="310" y2="380" stroke="#3b82f6" stroke-width="1"/>
+
+  <rect x="65" y="390" width="250" height="30" rx="4" fill="#1e3a5f"/>
+  <text x="190" y="410" text-anchor="middle" font-size="11" fill="#93c5fd">衡量代码修改投入密度</text>
+
+  <rect x="65" y="428" width="250" height="30" rx="4" fill="#1e3a5f"/>
+  <text x="190" y="448" text-anchor="middle" font-size="11" fill="#93c5fd">早期大量编辑 vs 小步快跑</text>
+
+  <!-- Metric 2: Test Activity -->
+  <rect x="340" y="345" width="280" height="140" rx="8" fill="#0f172a"/>
+  <text x="480" y="370" text-anchor="middle" font-size="13" font-weight="bold" fill="#34d399">测试活动</text>
+  <line x1="360" y1="380" x2="600" y2="380" stroke="#10b981" stroke-width="1"/>
+
+  <rect x="355" y="390" width="250" height="30" rx="4" fill="#1e3a5f"/>
+  <text x="480" y="410" text-anchor="middle" font-size="11" fill="#6ee7b7">追踪验证行为分布特征</text>
+
+  <rect x="355" y="428" width="250" height="30" rx="4" fill="#1e3a5f"/>
+  <text x="480" y="448" text-anchor="middle" font-size="11" fill="#6ee7b7">频繁验证 vs 延迟测试</text>
+
+  <!-- Metric 3: Phase Transition -->
+  <rect x="630" y="345" width="280" height="140" rx="8" fill="#0f172a"/>
+  <text x="770" y="370" text-anchor="middle" font-size="13" font-weight="bold" fill="#fbbf24">相变点</text>
+  <line x1="650" y1="380" x2="890" y2="380" stroke="#f59e0b" stroke-width="1"/>
+
+  <rect x="645" y="390" width="250" height="30" rx="4" fill="#78350f"/>
+  <text x="770" y="410" text-anchor="middle" font-size="11" fill="#fde68a">识别解题策略根本转变节点</text>
+
+  <rect x="645" y="428" width="250" height="30" rx="4" fill="#78350f"/>
+  <text x="770" y="448" text-anchor="middle" font-size="11" fill="#fde68a">策略切换的关键时刻</text>
+
+  <!-- Bottom: Reliability chain context -->
+  <rect x="30" y="510" width="900" height="25" rx="6" fill="#4c1d95"/>
+  <text x="480" y="527" text-anchor="middle" font-size="11" fill="#ddd6fe">可靠性链条: SEVRA(预防) → LedgerAgent(管理) → ToolMaze(恢复) → Trajectory Dissection(可观测性/诊断)</text>
+</svg>

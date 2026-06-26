@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27"/>
+      <stop offset="100%" style="stop-color:#1a1f4e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="540" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="480" y="38" text-anchor="middle" font-size="18" font-weight="bold" fill="#e2e8f0">传统 Agent 推理 vs ALAR 自适应推理</text>
+  <text x="480" y="56" text-anchor="middle" font-size="12" fill="#94a3b8">Token 节省率高达 84.6% | 双模式架构: 潜在推理 + 显式思维链</text>
+
+  <!-- Left: Traditional Agent -->
+  <rect x="30" y="80" width="420" height="410" rx="10" fill="#1e293b" stroke="#ef4444" stroke-width="2"/>
+  <text x="240" y="110" text-anchor="middle" font-size="15" font-weight="bold" fill="#f87171">传统 Agent: 一刀切推理</text>
+
+  <!-- Step flow -->
+  <rect x="50" y="125" width="380" height="45" rx="6" fill="#7f1d1d"/>
+  <text x="240" y="143" text-anchor="middle" font-size="11" font-weight="bold" fill="#fca5a5">步骤1: 感知环境</text>
+  <rect x="50" y="148" width="380" height="16" rx="3" fill="#991b1b"/>
+  <text x="240" y="160" text-anchor="middle" font-size="9" fill="#fca5a5">生成完整 CoT (约300 tokens)</text>
+
+  <line x1="240" y1="170" x2="240" y2="185" stroke="#64748b" stroke-width="2"/>
+  <polygon points="240,185 235,178 245,178" fill="#64748b"/>
+
+  <rect x="50" y="190" width="380" height="45" rx="6" fill="#7f1d1d"/>
+  <text x="240" y="208" text-anchor="middle" font-size="11" font-weight="bold" fill="#fca5a5">步骤2: 分析状态</text>
+  <rect x="50" y="223" width="380" height="16" rx="3" fill="#991b1b"/>
+  <text x="240" y="235" text-anchor="middle" font-size="9" fill="#fca5a5">生成完整 CoT (约300 tokens)</text>
+
+  <line x1="240" y1="246" x2="240" y2="261" stroke="#64748b" stroke-width="2"/>
+  <polygon points="240,261 235,254 245,254" fill="#64748b"/>
+
+  <rect x="50" y="266" width="380" height="45" rx="6" fill="#7f1d1d"/>
+  <text x="240" y="284" text-anchor="middle" font-size="11" font-weight="bold" fill="#fca5a5">步骤3: 选择工具</text>
+  <rect x="50" y="299" width="380" height="16" rx="3" fill="#991b1b"/>
+  <text x="240" y="311" text-anchor="middle" font-size="9" fill="#fca5a5">生成完整 CoT (约300 tokens)</text>
+
+  <line x1="240" y1="327" x2="240" y2="342" stroke="#64748b" stroke-width="2"/>
+  <polygon points="240,342 235,335 245,335" fill="#64748b"/>
+
+  <rect x="50" y="347" width="380" height="45" rx="6" fill="#7f1d1d"/>
+  <text x="240" y="365" text-anchor="middle" font-size="11" font-weight="bold" fill="#fca5a5">步骤4: 执行动作</text>
+  <rect x="50" y="380" width="380" height="16" rx="3" fill="#991b1b"/>
+  <text x="240" y="392" text-anchor="middle" font-size="9" fill="#fca5a5">生成完整 CoT (约300 tokens)</text>
+
+  <line x1="240" y1="403" x2="240" y2="418" stroke="#64748b" stroke-width="2"/>
+  <polygon points="240,418 235,411 245,411" fill="#64748b"/>
+
+  <!-- More steps -->
+  <rect x="50" y="423" width="380" height="45" rx="6" fill="#7f1d1d"/>
+  <text x="240" y="441" text-anchor="middle" font-size="11" font-weight="bold" fill="#fca5a5">步骤N: ...</text>
+  <rect x="50" y="456" width="380" height="16" rx="3" fill="#991b1b"/>
+  <text x="240" y="468" text-anchor="middle" font-size="9" fill="#fca5a5">生成完整 CoT (约300 tokens)</text>
+
+  <!-- Total cost -->
+  <rect x="50" y="478" width="380" height="28" rx="6" fill="#991b1b"/>
+  <text x="240" y="497" text-anchor="middle" font-size="12" font-weight="bold" fill="#fca5a5">总消耗: N × 300 tokens (全部显式)</text>
+
+  <!-- Right: ALAR -->
+  <rect x="480" y="80" width="450" height="410" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+  <text x="705" y="110" text-anchor="middle" font-size="15" font-weight="bold" fill="#34d399">ALAR: 自适应推理</text>
+
+  <!-- Difficulty checker -->
+  <rect x="500" y="125" width="410" height="36" rx="6" fill="#78350f"/>
+  <text x="705" y="148" text-anchor="middle" font-size="12" font-weight="bold" fill="#fde68a">难度判断模块 (decide_reasoning_mode)</text>
+
+  <!-- Branch -->
+  <line x1="600" y1="161" x2="570" y2="190" stroke="#34d399" stroke-width="2"/>
+  <line x1="810" y1="161" x2="840" y2="190" stroke="#fbbf24" stroke-width="2"/>
+
+  <!-- Left branch: Latent Reasoning -->
+  <rect x="500" y="195" width="170" height="60" rx="6" fill="#0f172a"/>
+  <text x="585" y="215" text-anchor="middle" font-size="11" font-weight="bold" fill="#34d399">简单步骤</text>
+  <rect x="505" y="225" width="160" height="22" rx="3" fill="#064e3b"/>
+  <text x="585" y="240" text-anchor="middle" font-size="9" fill="#6ee7b7">潜在推理模式</text>
+
+  <!-- Right branch: Explicit CoT -->
+  <rect x="780" y="195" width="170" height="60" rx="6" fill="#0f172a"/>
+  <text x="865" y="215" text-anchor="middle" font-size="11" font-weight="bold" fill="#fbbf24">困难步骤</text>
+  <rect x="785" y="225" width="160" height="22" rx="3" fill="#78350f"/>
+  <text x="865" y="240" text-anchor="middle" font-size="9" fill="#fde68a">显式思维链模式</text>
+
+  <!-- Step examples -->
+  <rect x="500" y="270" width="170" height="35" rx="4" fill="#064e3b"/>
+  <text x="585" y="292" text-anchor="middle" font-size="10" fill="#6ee7b7">步骤1: 重复搜索 → 潜在</text>
+
+  <rect x="780" y="270" width="170" height="35" rx="4" fill="#78350f"/>
+  <text x="865" y="292" text-anchor="middle" font-size="10" fill="#fde68a">步骤2: 多步规划 → 显式</text>
+
+  <rect x="500" y="310" width="170" height="35" rx="4" fill="#064e3b"/>
+  <text x="585" y="332" text-anchor="middle" font-size="10" fill="#6ee7b7">步骤3: 固定调用 → 潜在</text>
+
+  <rect x="780" y="310" width="170" height="35" rx="4" fill="#78350f"/>
+  <text x="865" y="332" text-anchor="middle" font-size="10" fill="#fde68a">步骤4: 冲突解决 → 显式</text>
+
+  <rect x="500" y="350" width="170" height="35" rx="4" fill="#064e3b"/>
+  <text x="585" y="372" text-anchor="middle" font-size="10" fill="#6ee7b7">步骤5: 状态检查 → 潜在</text>
+
+  <rect x="780" y="350" width="170" height="35" rx="4" fill="#78350f"/>
+  <text x="865" y="372" text-anchor="middle" font-size="10" fill="#fde68a">步骤N: ... → 自适应</text>
+
+  <!-- Token comparison -->
+  <rect x="500" y="400" width="170" height="30" rx="4" fill="#064e3b"/>
+  <text x="585" y="420" text-anchor="middle" font-size="11" font-weight="bold" fill="#6ee7b7">潜在: ~20 tokens/步</text>
+
+  <rect x="780" y="400" width="170" height="30" rx="4" fill="#78350f"/>
+  <text x="865" y="420" text-anchor="middle" font-size="11" font-weight="bold" fill="#fde68a">显式: ~300 tokens/步</text>
+
+  <!-- Total cost -->
+  <rect x="500" y="445" width="450" height="28" rx="6" fill="#064e3b"/>
+  <text x="725" y="464" text-anchor="middle" font-size="12" font-weight="bold" fill="#6ee7b7">总消耗: 大幅降低 (简单步骤节省80%+)</text>
+
+  <!-- Bottom summary -->
+  <rect x="30" y="500" width="900" height="30" rx="6" fill="#1e293b"/>
+  <text x="480" y="520" text-anchor="middle" font-size="12" fill="#fbbf24">Tool Use 场景 Token 节省率: 84.6% | Agentic Search 场景 Token 节省率: 43.6%</text>
+</svg>

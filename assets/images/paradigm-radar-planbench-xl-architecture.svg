@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27"/>
+      <stop offset="100%" style="stop-color:#1a1f4e"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#34d399"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#f87171"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="540" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="480" y="42" text-anchor="middle" font-size="20" font-weight="bold" fill="#e2e8f0">PlanBench-XL: Agent长期规划基准测试架构</text>
+  <text x="480" y="62" text-anchor="middle" font-size="13" fill="#94a3b8">检索受限 · 三种阻塞扰动 · 大规模工具生态 (1,665 tools / 327 tasks)</text>
+
+  <!-- Left: Agent Core -->
+  <rect x="30" y="90" width="220" height="140" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="140" y="118" text-anchor="middle" font-size="15" font-weight="bold" fill="#60a5fa">Agent Core</text>
+  <line x1="50" y1="128" x2="230" y2="128" stroke="#3b82f6" stroke-width="1"/>
+
+  <!-- Agent sub-components -->
+  <rect x="45" y="138" width="190" height="28" rx="5" fill="#0f172a"/>
+  <text x="140" y="156" text-anchor="middle" font-size="12" fill="#cbd5e1">规划器 (Planner)</text>
+
+  <rect x="45" y="172" width="190" height="28" rx="5" fill="#0f172a"/>
+  <text x="140" y="190" text-anchor="middle" font-size="12" fill="#cbd5e1">检索器 (Retriever)</text>
+
+  <rect x="45" y="206" width="190" height="28" rx="5" fill="#0f172a"/>
+  <text x="140" y="224" text-anchor="middle" font-size="12" fill="#cbd5e1">执行器 (Executor)</text>
+
+  <!-- Arrow from Agent to Tool Pool -->
+  <line x1="250" y1="160" x2="340" y2="160" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <defs>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#60a5fa"/>
+    </marker>
+  </defs>
+
+  <!-- Center: Tool Pool -->
+  <rect x="340" y="90" width="280" height="140" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="2" filter="url(#shadow)"/>
+  <text x="480" y="118" text-anchor="middle" font-size="15" font-weight="bold" fill="#34d399">工具生态 (Tool Pool)</text>
+  <line x1="360" y1="128" x2="620" y2="128" stroke="#10b981" stroke-width="1"/>
+
+  <!-- Tool pool stats -->
+  <rect x="355" y="138" width="250" height="24" rx="4" fill="#0f172a"/>
+  <text x="480" y="154" text-anchor="middle" font-size="12" fill="#94a3b8">1,665 工具 · 56 种数据类型</text>
+
+  <rect x="355" y="168" width="250" height="24" rx="4" fill="#0f172a"/>
+  <text x="480" y="184" text-anchor="middle" font-size="12" fill="#94a3b8">检索受限: 每次最多返回 30 个候选</text>
+
+  <rect x="355" y="198" width="250" height="24" rx="4" fill="#0f172a"/>
+  <text x="480" y="214" text-anchor="middle" font-size="12" fill="#94a3b8">最短路径: 5-9 步 · 最大交互: 100 轮</text>
+
+  <!-- Arrow from Tool Pool to Tasks -->
+  <line x1="620" y1="160" x2="710" y2="160" stroke="#34d399" stroke-width="2"/>
+  <defs>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#34d399"/>
+    </marker>
+  </defs>
+
+  <!-- Right: Task Set -->
+  <rect x="710" y="90" width="220" height="140" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+  <text x="820" y="118" text-anchor="middle" font-size="15" font-weight="bold" fill="#fbbf24">任务集 (Task Set)</text>
+  <line x1="730" y1="128" x2="910" y2="128" stroke="#f59e0b" stroke-width="1"/>
+
+  <rect x="725" y="138" width="190" height="24" rx="4" fill="#0f172a"/>
+  <text x="820" y="154" text-anchor="middle" font-size="12" fill="#cbd5e1">327 个零售领域任务</text>
+
+  <rect x="725" y="168" width="190" height="24" rx="4" fill="#0f172a"/>
+  <text x="820" y="184" text-anchor="middle" font-size="12" fill="#cbd5e1">隐式子目标推断</text>
+
+  <rect x="725" y="198" width="190" height="24" rx="4" fill="#0f172a"/>
+  <text x="820" y="214" text-anchor="middle" font-size="12" fill="#cbd5e1">双向推理 (向前+向后)</text>
+
+  <!-- Bottom: Three Blocker Types -->
+  <text x="480" y="265" text-anchor="middle" font-size="15" font-weight="bold" fill="#f87171">三种阻塞扰动类型</text>
+
+  <!-- Explicit Failure -->
+  <rect x="30" y="285" width="290" height="160" rx="10" fill="#1e293b" stroke="#ef4444" stroke-width="2" filter="url(#shadow)"/>
+  <text x="175" y="310" text-anchor="middle" font-size="14" font-weight="bold" fill="#f87171">显式失败</text>
+  <line x1="50" y1="318" x2="300" y2="318" stroke="#ef4444" stroke-width="1"/>
+
+  <rect x="45" y="328" width="260" height="30" rx="5" fill="#7f1d1d" opacity="0.5"/>
+  <text x="175" y="347" text-anchor="middle" font-size="11" fill="#fca5a5">工具调用直接返回错误</text>
+
+  <rect x="45" y="362" width="260" height="30" rx="5" fill="#7f1d1d" opacity="0.3"/>
+  <text x="175" y="381" text-anchor="middle" font-size="11" fill="#fca5a5">如: "参数无效" / "服务不可用"</text>
+
+  <rect x="45" y="396" width="260" height="30" rx="5" fill="#7f1d1d" opacity="0.2"/>
+  <text x="175" y="415" text-anchor="middle" font-size="11" fill="#fca5a5">Agent需识别错误并调整策略</text>
+
+  <!-- Implicit Failure -->
+  <rect x="335" y="285" width="290" height="160" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+  <text x="480" y="310" text-anchor="middle" font-size="14" font-weight="bold" fill="#fbbf24">隐式失败</text>
+  <line x1="355" y1="318" x2="605" y2="318" stroke="#f59e0b" stroke-width="1"/>
+
+  <rect x="350" y="328" width="260" height="30" rx="5" fill="#78350f" opacity="0.5"/>
+  <text x="480" y="347" text-anchor="middle" font-size="11" fill="#fde68a">调用看似成功但无预期效果</text>
+
+  <rect x="350" y="362" width="260" height="30" rx="5" fill="#78350f" opacity="0.3"/>
+  <text x="480" y="381" text-anchor="middle" font-size="11" fill="#fde68a">如: 返回空结果 / 默认值</text>
+
+  <rect x="350" y="396" width="260" height="30" rx="5" fill="#78350f" opacity="0.2"/>
+  <text x="480" y="415" text-anchor="middle" font-size="11" fill="#fde68a">最危险: 错误沿轨迹持续传播</text>
+
+  <!-- Semantic Mislead -->
+  <rect x="640" y="285" width="290" height="160" rx="10" fill="#1e293b" stroke="#a78bfa" stroke-width="2" filter="url(#shadow)"/>
+  <text x="785" y="310" text-anchor="middle" font-size="14" font-weight="bold" fill="#c4b5fd">语义误导</text>
+  <line x1="660" y1="318" x2="910" y2="318" stroke="#a78bfa" stroke-width="1"/>
+
+  <rect x="655" y="328" width="260" height="30" rx="5" fill="#4c1d95" opacity="0.5"/>
+  <text x="785" y="347" text-anchor="middle" font-size="11" fill="#ddd6fe">检索器返回名称相关但功能不匹配</text>
+
+  <rect x="655" y="362" width="260" height="30" rx="5" fill="#4c1d95" opacity="0.3"/>
+  <text x="785" y="381" text-anchor="middle" font-size="11" fill="#ddd6fe">模拟工具命名不规范/文档不准确</text>
+
+  <rect x="655" y="396" width="260" height="30" rx="5" fill="#4c1d95" opacity="0.2"/>
+  <text x="785" y="415" text-anchor="middle" font-size="11" fill="#ddd6fe">Agent被误导到无效路径</text>
+
+  <!-- Severity indicator -->
+  <rect x="310" y="465" width="340" height="30" rx="15" fill="#1e293b"/>
+  <text x="480" y="485" text-anchor="middle" font-size="12" fill="#fbbf24">严重程度排序: 隐式失败 &gt; 显式失败 &gt; 语义误导</text>
+
+  <!-- Key metric -->
+  <rect x="30" y="505" width="900" height="28" rx="6" fill="#1e293b"/>
+  <text x="480" y="523" text-anchor="middle" font-size="12" fill="#f87171">关键发现: GPT-5.4 准确率从 51.90% 暴跌至 11.36%，降幅超 40 个百分点</text>
+</svg>

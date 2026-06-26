@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27"/>
+      <stop offset="100%" style="stop-color:#1a1f4e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="480" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="480" y="38" text-anchor="middle" font-size="18" font-weight="bold" fill="#e2e8f0">模型表现对比: 无干扰 vs 阻塞设置</text>
+  <text x="480" y="56" text-anchor="middle" font-size="12" fill="#94a3b8">GPT-5.4 从 51.90% 暴跌至 11.36%，降幅超 40 个百分点</text>
+
+  <!-- Chart area -->
+  <rect x="120" y="75" width="720" height="340" rx="8" fill="#0f172a"/>
+
+  <!-- Y axis labels and grid lines -->
+  <text x="110" y="95" text-anchor="end" font-size="11" fill="#64748b">100%</text>
+  <line x1="120" y1="93" x2="840" y2="93" stroke="#1e293b" stroke-width="1"/>
+
+  <text x="110" y="155" text-anchor="end" font-size="11" fill="#64748b">75%</text>
+  <line x1="120" y1="153" x2="840" y2="153" stroke="#1e293b" stroke-width="1"/>
+
+  <text x="110" y="215" text-anchor="end" font-size="11" fill="#64748b">50%</text>
+  <line x1="120" y1="213" x2="840" y2="213" stroke="#1e293b" stroke-width="1"/>
+
+  <text x="110" y="275" text-anchor="end" font-size="11" fill="#64748b">25%</text>
+  <line x1="120" y1="273" x2="840" y2="273" stroke="#1e293b" stroke-width="1"/>
+
+  <text x="110" y="335" text-anchor="end" font-size="11" fill="#64748b">0%</text>
+  <line x1="120" y1="333" x2="840" y2="333" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Data bars - Gemini-3.1-Pro -->
+  <rect x="155" y="107" width="30" height="226" rx="3" fill="#3b82f6"/>
+  <text x="170" y="102" text-anchor="middle" font-size="10" fill="#93c5fd">77.06%</text>
+  <rect x="190" y="240" width="30" height="93" rx="3" fill="#ef4444"/>
+  <text x="205" y="235" text-anchor="middle" font-size="10" fill="#fca5a5">41.67%</text>
+
+  <!-- Data bars - DeepSeek-V4-Flash -->
+  <rect x="260" y="148" width="30" height="185" rx="3" fill="#3b82f6"/>
+  <text x="275" y="143" text-anchor="middle" font-size="10" fill="#93c5fd">63.08%</text>
+  <rect x="295" y="260" width="30" height="73" rx="3" fill="#ef4444"/>
+  <text x="310" y="255" text-anchor="middle" font-size="10" fill="#fca5a5">31.29%</text>
+
+  <!-- Data bars - GPT-5.4 (highlighted) -->
+  <rect x="365" y="187" width="30" height="146" rx="3" fill="#3b82f6"/>
+  <text x="380" y="182" text-anchor="middle" font-size="10" fill="#93c5fd">51.90%</text>
+  <rect x="400" y="307" width="30" height="26" rx="3" fill="#ef4444"/>
+  <text x="415" y="302" text-anchor="middle" font-size="10" fill="#fca5a5">11.36%</text>
+
+  <!-- Data bars - Gemini-3.5-Flash -->
+  <rect x="470" y="184" width="30" height="149" rx="3" fill="#3b82f6"/>
+  <text x="485" y="179" text-anchor="middle" font-size="10" fill="#93c5fd">52.19%</text>
+  <rect x="505" y="270" width="30" height="63" rx="3" fill="#ef4444"/>
+  <text x="520" y="265" text-anchor="middle" font-size="10" fill="#fca5a5">27.08%</text>
+
+  <!-- Data bars - Llama-3.3-70B -->
+  <rect x="575" y="294" width="30" height="39" rx="3" fill="#3b82f6"/>
+  <text x="590" y="289" text-anchor="middle" font-size="10" fill="#93c5fd">18.96%</text>
+  <rect x="610" y="317" width="30" height="16" rx="3" fill="#ef4444"/>
+  <text x="625" y="312" text-anchor="middle" font-size="9" fill="#fca5a5">4.88%</text>
+
+  <!-- Data bars - Qwen3-32B -->
+  <rect x="680" y="331" width="30" height="2" rx="3" fill="#3b82f6"/>
+  <text x="695" y="326" text-anchor="middle" font-size="9" fill="#93c5fd">2.75%</text>
+  <rect x="715" y="332" width="30" height="1" rx="3" fill="#ef4444"/>
+
+  <!-- X axis labels -->
+  <text x="170" y="360" text-anchor="middle" font-size="10" fill="#94a3b8">Gemini-3.1</text>
+  <text x="275" y="360" text-anchor="middle" font-size="10" fill="#94a3b8">DeepSeek-V4</text>
+  <text x="380" y="360" text-anchor="middle" font-size="10" fill="#fbbf24" font-weight="bold">GPT-5.4</text>
+  <text x="485" y="360" text-anchor="middle" font-size="10" fill="#94a3b8">Gemini-3.5</text>
+  <text x="590" y="360" text-anchor="middle" font-size="10" fill="#94a3b8">Llama-70B</text>
+  <text x="695" y="360" text-anchor="middle" font-size="10" fill="#94a3b8">Qwen3-32B</text>
+
+  <!-- Legend -->
+  <rect x="340" y="385" width="280" height="30" rx="6" fill="#1e293b"/>
+  <rect x="355" y="393" width="16" height="14" rx="3" fill="#3b82f6"/>
+  <text x="378" y="404" font-size="11" fill="#cbd5e1">无干扰设置 (Baseline)</text>
+  <rect x="510" y="393" width="16" height="14" rx="3" fill="#ef4444"/>
+  <text x="533" y="404" font-size="11" fill="#cbd5e1">阻塞设置 (Blocked)</text>
+
+  <!-- Annotation -->
+  <rect x="280" y="425" width="400" height="30" rx="6" fill="#7f1d1d"/>
+  <text x="480" y="444" text-anchor="middle" font-size="12" fill="#fca5a5">GPT-5.4 崩溃式下降: -40.54个百分点 | 降幅 78%</text>
+</svg>

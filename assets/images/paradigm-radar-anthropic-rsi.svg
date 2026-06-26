@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27"/>
+      <stop offset="100%" style="stop-color:#1a1f4e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="540" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="480" y="38" text-anchor="middle" font-size="18" font-weight="bold" fill="#e2e8f0">Anthropic RSI: 递归自改进三阶段能力演进</text>
+  <text x="480" y="56" text-anchor="middle" font-size="12" fill="#94a3b8">Claude Mythos Preview 实现 52x 研发加速比，AI 接近自主改进能力阈值</text>
+
+  <!-- Three stages as vertical flow -->
+  <!-- Stage 1: Experiment Execution Automation -->
+  <rect x="60" y="80" width="840" height="130" rx="12" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+
+  <!-- Stage badge -->
+  <rect x="80" y="95" width="40" height="28" rx="14" fill="#3b82f6"/>
+  <text x="100" y="114" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">L1</text>
+
+  <text x="140" y="115" font-size="16" font-weight="bold" fill="#60a5fa">实验执行自动化</text>
+  <line x1="80" y1="125" x2="880" y2="125" stroke="#3b82f6" stroke-width="1"/>
+
+  <!-- W2S comparison -->
+  <rect x="80" y="135" width="400" height="65" rx="8" fill="#0f172a"/>
+  <text x="280" y="155" text-anchor="middle" font-size="12" font-weight="bold" fill="#cbd5e1">W2S (Weak-to-Strong) 研究对比</text>
+
+  <!-- Human team -->
+  <rect x="95" y="163" width="170" height="28" rx="4" fill="#1e3a5f"/>
+  <text x="180" y="181" text-anchor="middle" font-size="11" fill="#93c5fd">人类团队: ~1周, 恢复 23%</text>
+
+  <!-- AI team -->
+  <rect x="275" y="163" width="170" height="28" rx="4" fill="#1e3a5f"/>
+  <text x="360" y="181" text-anchor="middle" font-size="11" fill="#93c5fd">Claude Agents: 800h, 恢复 97%</text>
+
+  <!-- Arrow -->
+  <line x1="265" y1="177" x2="275" y2="177" stroke="#fbbf24" stroke-width="2"/>
+  <polygon points="275,177 270,173 270,181" fill="#fbbf24"/>
+
+  <!-- Right side: key metrics -->
+  <rect x="500" y="135" width="400" height="65" rx="8" fill="#0f172a"/>
+  <text x="700" y="155" text-anchor="middle" font-size="12" font-weight="bold" fill="#cbd5e1">关键指标</text>
+
+  <rect x="515" y="163" width="180" height="28" rx="4" fill="#7f1d1d"/>
+  <text x="605" y="181" text-anchor="middle" font-size="11" fill="#fca5a5">研发加速比: 52x</text>
+
+  <rect x="705" y="163" width="180" height="28" rx="4" fill="#78350f"/>
+  <text x="795" y="181" text-anchor="middle" font-size="11" fill="#fde68a">算力成本: ~$18,000</text>
+
+  <!-- Stage 2: Research Judgment -->
+  <rect x="60" y="230" width="840" height="130" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+
+  <rect x="80" y="245" width="40" height="28" rx="14" fill="#f59e0b"/>
+  <text x="100" y="264" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">L2</text>
+
+  <text x="140" y="265" font-size="16" font-weight="bold" fill="#fbbf24">研究判断辅助</text>
+  <line x1="80" y1="275" x2="880" y2="275" stroke="#f59e0b" stroke-width="1"/>
+
+  <!-- Research judgment comparison -->
+  <rect x="80" y="285" width="400" height="65" rx="8" fill="#0f172a"/>
+  <text x="280" y="305" text-anchor="middle" font-size="12" font-weight="bold" fill="#cbd5e1">研究判断能力: "下一步做什么"</text>
+
+  <!-- Opus 4.5 -->
+  <rect x="95" y="313" width="170" height="28" rx="4" fill="#78350f"/>
+  <text x="180" y="331" text-anchor="middle" font-size="11" fill="#fde68a">Opus 4.5: 胜率 51%</text>
+
+  <!-- Mythos Preview -->
+  <rect x="275" y="313" width="170" height="28" rx="4" fill="#78350f"/>
+  <text x="360" y="331" text-anchor="middle" font-size="11" fill="#fde68a">Mythos Preview: 胜率 64%</text>
+
+  <!-- Arrow -->
+  <line x1="265" y1="327" x2="275" y2="327" stroke="#fbbf24" stroke-width="2"/>
+  <polygon points="275,327 270,323 270,331" fill="#fbbf24"/>
+
+  <!-- Right side: key insight -->
+  <rect x="500" y="285" width="400" height="65" rx="8" fill="#0f172a"/>
+  <text x="700" y="305" text-anchor="middle" font-size="12" font-weight="bold" fill="#cbd5e1">关键洞察</text>
+
+  <rect x="515" y="313" width="370" height="28" rx="4" fill="#78350f"/>
+  <text x="700" y="331" text-anchor="middle" font-size="11" fill="#fde68a">AI开始具备研究品味: 知道哪些方向值得探索</text>
+
+  <!-- Stage 3: Architecture & Training Autonomy -->
+  <rect x="60" y="380" width="840" height="130" rx="12" fill="#1e293b" stroke="#ef4444" stroke-width="2"/>
+
+  <rect x="80" y="395" width="40" height="28" rx="14" fill="#ef4444"/>
+  <text x="100" y="414" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">L3</text>
+
+  <text x="140" y="415" font-size="16" font-weight="bold" fill="#f87171">架构与训练流程自主改进</text>
+  <line x1="80" y1="425" x2="880" y2="425" stroke="#ef4444" stroke-width="1"/>
+
+  <!-- Right side: warning -->
+  <rect x="500" y="385" width="400" height="120" rx="8" fill="#7f1d1d"/>
+  <text x="700" y="410" text-anchor="middle" font-size="12" font-weight="bold" fill="#fca5a5">接近阈值的能力层级</text>
+
+  <rect x="515" y="420" width="370" height="28" rx="4" fill="#991b1b"/>
+  <text x="700" y="438" text-anchor="middle" font-size="11" fill="#fca5a5">AI设计并优化自身模型架构和训练流程</text>
+
+  <rect x="515" y="452" width="370" height="28" rx="4" fill="#991b1b"/>
+  <text x="700" y="470" text-anchor="middle" font-size="11" fill="#fca5a5">开发速度由算力可用性决定</text>
+
+  <!-- Bottom: Global Pause Call -->
+  <rect x="60" y="520" width="840" height="30" rx="6" fill="#7f1d1d"/>
+  <text x="480" y="540" text-anchor="middle" font-size="12" fill="#fca5a5">Anthropic呼吁: 建立全球协调减速机制 | IPO前夜发出RSI警告</text>
+</svg>

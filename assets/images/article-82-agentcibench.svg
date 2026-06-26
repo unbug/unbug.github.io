@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27"/>
+      <stop offset="100%" style="stop-color:#1a1f4e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="540" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="480" y="38" text-anchor="middle" font-size="18" font-weight="bold" fill="#e2e8f0">AgentCIBench: Computer-Use Agent跨上下文隐私泄露基准测试</text>
+  <text x="480" y="56" text-anchor="middle" font-size="12" fill="#94a3b8">Contextual Integrity理论首次引入AI Agent评估 | 平均泄露率67.9%</text>
+
+  <!-- Three core components -->
+  <!-- Component 1: Scenario Generation Engine -->
+  <rect x="30" y="80" width="280" height="240" rx="10" fill="#1e293b" stroke="#ef4444" stroke-width="2"/>
+  <text x="170" y="110" text-anchor="middle" font-size="15" font-weight="bold" fill="#f87171">场景生成引擎</text>
+
+  <!-- MCTS visualization -->
+  <rect x="45" y="120" width="250" height="100" rx="6" fill="#0f172a"/>
+  <text x="170" y="140" text-anchor="middle" font-size="12" font-weight="bold" fill="#cbd5e1">蒙特卡洛树搜索 (MCTS)</text>
+
+  <!-- Tree structure -->
+  <circle cx="170" cy="160" r="8" fill="#3b82f6"/>
+  <line x1="170" y1="168" x2="140" y2="195" stroke="#64748b" stroke-width="1.5"/>
+  <line x1="170" y1="168" x2="170" y2="195" stroke="#64748b" stroke-width="1.5"/>
+  <line x1="170" y1="168" x2="200" y2="195" stroke="#64748b" stroke-width="1.5"/>
+
+  <circle cx="140" cy="203" r="6" fill="#f59e0b"/>
+  <circle cx="170" cy="203" r="6" fill="#ef4444"/>
+  <circle cx="200" cy="203" r="6" fill="#f59e0b"/>
+
+  <!-- Stats -->
+  <rect x="45" y="230" width="250" height="24" rx="4" fill="#7f1d1d"/>
+  <text x="170" y="246" text-anchor="middle" font-size="11" fill="#fca5a5">28个种子场景 → MCTS变异探索</text>
+
+  <rect x="45" y="260" width="250" height="24" rx="4" fill="#7f1d1d"/>
+  <text x="170" y="276" text-anchor="middle" font-size="11" fill="#fca5a5">最终生成: 117个评估场景</text>
+
+  <!-- Contextual Integrity rules -->
+  <rect x="45" y="290" width="250" height="24" rx="4" fill="#4c1d95"/>
+  <text x="170" y="306" text-anchor="middle" font-size="11" fill="#ddd6fe">每个场景定义: 必须分享 vs 禁止分享</text>
+
+  <!-- Component 2: OpenApps Workspace -->
+  <rect x="340" y="80" width="280" height="240" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+  <text x="480" y="110" text-anchor="middle" font-size="15" font-weight="bold" fill="#fbbf24">OpenApps工作空间</text>
+
+  <!-- Six app icons -->
+  <rect x="360" y="125" width="110" height="40" rx="6" fill="#0f172a"/>
+  <text x="415" y="150" text-anchor="middle" font-size="11" fill="#cbd5e1">邮件</text>
+
+  <rect x="490" y="125" width="110" height="40" rx="6" fill="#0f172a"/>
+  <text x="545" y="150" text-anchor="middle" font-size="11" fill="#cbd5e1">日历</text>
+
+  <rect x="360" y="175" width="110" height="40" rx="6" fill="#0f172a"/>
+  <text x="415" y="200" text-anchor="middle" font-size="11" fill="#cbd5e1">待办事项</text>
+
+  <rect x="490" y="175" width="110" height="40" rx="6" fill="#0f172a"/>
+  <text x="545" y="200" text-anchor="middle" font-size="11" fill="#cbd5e1">文档</text>
+
+  <rect x="360" y="225" width="110" height="40" rx="6" fill="#0f172a"/>
+  <text x="415" y="250" text-anchor="middle" font-size="11" fill="#cbd5e1">通讯录</text>
+
+  <rect x="490" y="225" width="110" height="40" rx="6" fill="#0f172a"/>
+  <text x="545" y="250" text-anchor="middle" font-size="11" fill="#cbd5e1">笔记</text>
+
+  <!-- Connection arrows showing cross-context flow -->
+  <path d="M 415 165 Q 477 180 545 165" stroke="#fbbf24" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+  <text x="477" y="178" text-anchor="middle" font-size="9" fill="#fbbf24">跨应用</text>
+
+  <!-- Info -->
+  <rect x="360" y="280" width="250" height="24" rx="4" fill="#78350f"/>
+  <text x="485" y="296" text-anchor="middle" font-size="11" fill="#fde68a">受控六应用个人工作空间</text>
+
+  <rect x="360" y="310" width="250" height="24" rx="4" fill="#78350f"/>
+  <text x="485" y="326" text-anchor="middle" font-size="11" fill="#fde68a">模拟真实跨上下文信息流动</text>
+
+  <!-- Component 3: Hybrid Scoring Pipeline -->
+  <rect x="650" y="80" width="280" height="240" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+  <text x="790" y="110" text-anchor="middle" font-size="15" font-weight="bold" fill="#34d399">混合评分管道</text>
+
+  <!-- Two scoring methods -->
+  <rect x="665" y="125" width="250" height="50" rx="6" fill="#0f172a"/>
+  <text x="790" y="145" text-anchor="middle" font-size="12" font-weight="bold" fill="#cbd5e1">确定性匹配器</text>
+  <text x="790" y="163" text-anchor="middle" font-size="10" fill="#94a3b8">精确提及 + 近似提及检测</text>
+
+  <rect x="665" y="185" width="250" height="50" rx="6" fill="#0f172a"/>
+  <text x="790" y="205" text-anchor="middle" font-size="12" font-weight="bold" fill="#cbd5e1">LLM评判器</text>
+  <text x="790" y="223" text-anchor="middle" font-size="10" fill="#94a3b8">捕捉字符串匹配遗漏的表达</text>
+
+  <!-- Four metrics -->
+  <rect x="665" y="250" width="118" height="55" rx="6" fill="#7f1d1d"/>
+  <text x="724" y="268" text-anchor="middle" font-size="10" font-weight="bold" fill="#fca5a5">效用率</text>
+  <text x="724" y="295" text-anchor="middle" font-size="9" fill="#fca5a5">任务完成度</text>
+
+  <rect x="787" y="250" width="118" height="55" rx="6" fill="#7f1d1d"/>
+  <text x="846" y="268" text-anchor="middle" font-size="10" font-weight="bold" fill="#fca5a5">原始泄露率</text>
+  <text x="846" y="295" text-anchor="middle" font-size="9" fill="#fca5a5">所有场景泄露比例</text>
+
+  <rect x="665" y="310" width="118" height="55" rx="6" fill="#78350f"/>
+  <text x="724" y="328" text-anchor="middle" font-size="10" font-weight="bold" fill="#fde68a">拒绝率</text>
+  <text x="724" y="355" text-anchor="middle" font-size="9" fill="#fde68a">代理拒绝执行比例</text>
+
+  <rect x="787" y="310" width="118" height="55" rx="6" fill="#78350f"/>
+  <text x="846" y="328" text-anchor="middle" font-size="10" font-weight="bold" fill="#fde68a">条件泄露率</text>
+  <text x="846" y="355" text-anchor="middle" font-size="9" fill="#fde68a">排除拒绝后计算</text>
+
+  <!-- Bottom: Key finding -->
+  <rect x="30" y="340" width="900" height="120" rx="10" fill="#1e293b"/>
+  <text x="480" y="370" text-anchor="middle" font-size="15" font-weight="bold" fill="#f87171">核心发现: 能力越强的代理，泄露反而越严重</text>
+
+  <!-- Three failure modes -->
+  <rect x="50" y="385" width="280" height="60" rx="6" fill="#7f1d1d"/>
+  <text x="190" y="405" text-anchor="middle" font-size="12" font-weight="bold" fill="#fca5a5">VCL: 视觉共置</text>
+  <text x="190" y="423" text-anchor="middle" font-size="10" fill="#fca5a5">UI相邻内容导致信息污染</text>
+
+  <rect x="340" y="385" width="280" height="60" rx="6" fill="#78350f"/>
+  <text x="480" y="405" text-anchor="middle" font-size="12" font-weight="bold" fill="#fde68a">TAO: 任务歧义过度分享</text>
+  <text x="480" y="423" text-anchor="middle" font-size="10" fill="#fde68a">模糊请求下提供超出必要范围的信息</text>
+
+  <rect x="630" y="385" width="280" height="60" rx="6" fill="#4c1d95"/>
+  <text x="770" y="405" text-anchor="middle" font-size="12" font-weight="bold" fill="#ddd6fe">RMA: 接收者错位</text>
+  <text x="770" y="423" text-anchor="middle" font-size="10" fill="#ddd6fe">向不合适的接收者发送信息</text>
+
+  <!-- Bottom stat -->
+  <rect x="30" y="475" width="900" height="40" rx="8" fill="#7f1d1d"/>
+  <text x="480" y="500" text-anchor="middle" font-size="14" fill="#fca5a5">Gemini-3.1-Pro: 任务完成98.3% | 泄露率98.3% | Claude-Opus-4.7: 完成75%+ | 泄露仅14%</text>
+</svg>
