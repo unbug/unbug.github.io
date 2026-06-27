@@ -1,18 +1,13 @@
 {
   "currentPhase": "idle",
   "lastPublished": {
-    "title": "AI 范式雷达：《裁员换 AI，为何成本长期上升、利润反而负增长》",
-    "date": "2026-05-29",
-    "slug": "paradigm-radar-ai-bug-supply-chain-cost"
+    "title": "AI 范式雷达：《MCP 协议实战：5 步打通工具调用》",
+    "date": "2026-06-28",
+    "slug": "paradigm-radar-mcp-tool-calling"
   },
-  "totalPublished": 3,
-  "nextScheduled": "2026-06-02",
+  "totalPublished": 4,
+  "nextScheduled": "2026-07-05",
   "candidateTopics": [
-    {
-      "topic": "MCP 协议实战：5 步打通工具调用",
-      "score": 4.4,
-      "sources": ["https://modelcontextprotocol.io"]
-    },
     {
       "topic": "Agent 编排框架选型指南 2026",
       "score": 4.1,
