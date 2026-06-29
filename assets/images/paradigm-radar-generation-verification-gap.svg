@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1f2e"/>
+      <stop offset="100%" stop-color="#2d3748"/>
+    </linearGradient>
+    <linearGradient id="genGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ed8936"/>
+      <stop offset="100%" stop-color="#f6ad55"/>
+    </linearGradient>
+    <linearGradient id="verGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e53e3e"/>
+      <stop offset="100%" stop-color="#fc8181"/>
+    </linearGradient>
+    <linearGradient id="misevolveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#805ad5"/>
+      <stop offset="100%" stop-color="#b794f4"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  
+  <!-- Title Text -->
+  <text x="600" y="120" font-family="system-ui, -apple-system, sans-serif" font-size="42" fill="#ffffff" text-anchor="middle" font-weight="bold">AI Paradigm Radar</text>
+  <text x="600" y="175" font-family="system-ui, -apple-system, sans-serif" font-size="28" fill="#cbd5e0" text-anchor="middle">Generation-Verification Gap & Misevolve Risk</text>
+  
+  <!-- Generation Component (Left) -->
+  <rect x="150" y="250" width="300" height="200" rx="12" fill="#2d3748" stroke="#ed8936" stroke-width="2"/>
+  <text x="300" y="290" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#f6ad55" text-anchor="middle" font-weight="bold">Generation Model</text>
+  <text x="300" y="330" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#e2e8f0" text-anchor="middle">High Capability</text>
+  <text x="300" y="360" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#e2e8f0" text-anchor="middle">Rapidly Improving</text>
+  
+  <!-- Output with hidden error -->
+  <rect x="180" y="390" width="240" height="50" rx="6" fill="#1a202c" stroke="#ed8936" stroke-width="1"/>
+  <text x="300" y="420" font-family="monospace" font-size="14" fill="#f6ad55" text-anchor="middle">Seemingly Reasonable Output</text>
+  
+  <!-- Verification Component (Right) -->
+  <rect x="750" y="250" width="300" height="200" rx="12" fill="#2d3748" stroke="#e53e3e" stroke-width="2"/>
+  <text x="900" y="290" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#fc8181" text-anchor="middle" font-weight="bold">Internal Verifier</text>
+  <text x="900" y="330" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#e2e8f0" text-anchor="middle">Weak / Same Capability</text>
+  <text x="900" y="360" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#e2e8f0" text-anchor="middle">Fails to Detect Errors</text>
+  
+  <!-- Failed verification result -->
+  <rect x="780" y="390" width="240" height="50" rx="6" fill="#1a202c" stroke="#e53e3e" stroke-width="1"/>
+  <text x="900" y="420" font-family="monospace" font-size="14" fill="#fc8181" text-anchor="middle">Validation Pass (False Positive)</text>
+  
+  <!-- Gap Indicator -->
+  <line x1="450" y1="350" x2="720" y2="350" stroke="#cbd5e0" stroke-width="2" stroke-dasharray="6,6"/>
+  <text x="585" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#a0aec0" text-anchor="middle">Generation-Verification Gap</text>
+  
+  <!-- Misevolve Result (Bottom Center) -->
+  <rect x="350" y="480" width="500" height="100" rx="12" fill="#2d3748" stroke="#805ad5" stroke-width="2"/>
+  <text x="600" y="520" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#b794f4" text-anchor="middle" font-weight="bold">Misevolve Risk</text>
+  <text x="600" y="555" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#e2e8f0" text-anchor="middle">Agent gains increasing confidence in incorrect outputs</text>
+  
+  <!-- Arrows -->
+  <!-- From Generation to Gap -->
+  <line x1="450" y1="415" x2="530" y2="415" stroke="#ed8936" stroke-width="2"/>
+  <polygon points="530,405 550,415 530,425" fill="#ed8936"/>
+  
+  <!-- From Gap to Verification -->
+  <line x1="670" y1="415" x2="750" y2="415" stroke="#e53e3e" stroke-width="2"/>
+  <polygon points="750,405 770,415 750,425" fill="#e53e3e"/>
+  
+  <!-- From Verification to Misevolve -->
+  <line x1="600" y1="450" x2="600" y2="475" stroke="#805ad5" stroke-width="2"/>
+  <polygon points="590,475 600,495 610,475" fill="#805ad5"/>
+
+  <!-- Decorative Elements -->
+  <circle cx="100" cy="100" r="40" fill="#ed8936" opacity="0.1"/>
+  <circle cx="1100" cy="530" r="60" fill="#805ad5" opacity="0.1"/>
+</svg>
