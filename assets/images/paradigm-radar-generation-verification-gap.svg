@@ -23,7 +23,7 @@
   
   <!-- Title Text -->
   <text x="600" y="120" font-family="system-ui, -apple-system, sans-serif" font-size="42" fill="#ffffff" text-anchor="middle" font-weight="bold">AI Paradigm Radar</text>
-  <text x="600" y="175" font-family="system-ui, -apple-system, sans-serif" font-size="28" fill="#cbd5e0" text-anchor="middle">Generation-Verification Gap & Misevolve Risk</text>
+  <text x="600" y="175" font-family="system-ui, -apple-system, sans-serif" font-size="28" fill="#cbd5e0" text-anchor="middle">Generation-Verification Gap &amp; Misevolve Risk</text>
   
   <!-- Generation Component (Left) -->
   <rect x="150" y="250" width="300" height="200" rx="12" fill="#2d3748" stroke="#ed8936" stroke-width="2"/>
