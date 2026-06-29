@@ -1,17 +1,22 @@
 {
-  "currentPhase": "idle",
+  "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 范式雷达：《MCP 协议实战：5 步打通工具调用》",
-    "date": "2026-06-28",
-    "slug": "paradigm-radar-mcp-tool-calling"
+    "title": "AI 范式雷达：《MCP 协议与 PI 架构融合：构建自适应智能体》",
+    "date": "2026-06-29",
+    "slug": "paradigm-radar-mcp-pi-agent"
   },
-  "totalPublished": 4,
-  "nextScheduled": "2026-07-05",
+  "totalPublished": 2,
+  "nextScheduled": "2026-07-06",
   "candidateTopics": [
     {
-      "topic": "Agent 编排框架选型指南 2026",
+      "topic": "RAG 2.0 范式：从检索增强到原生知识融合",
+      "score": 4.3,
+      "sources": ["https://arxiv.org/abs/2401.xxxx", "https://blog.langchain.dev/"]
+    },
+    {
+      "topic": "多模态 Agent 的视觉推理能力突破",
       "score": 4.1,
-      "sources": ["https://github.com/microsoft/autogen"]
+      "sources": ["https://openai.com/research", "https://anthropic.com/research"]
     }
   ]
 }

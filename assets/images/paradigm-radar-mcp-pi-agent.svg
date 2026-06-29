@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1f2e"/>
+      <stop offset="100%" stop-color="#2d3748"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4299e1"/>
+      <stop offset="100%" stop-color="#63b3ed"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  
+  <!-- Abstract MCP & PI Architecture Graphic -->
+  <!-- MCP Context Layer (left) -->
+  <rect x="150" y="200" width="280" height="230" rx="12" fill="#2d3748" stroke="#4299e1" stroke-width="2"/>
+  <text x="290" y="235" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#e2e8f0" text-anchor="middle">MCP Context</text>
+  
+  <!-- MCP Nodes -->
+  <circle cx="210" cy="290" r="35" fill="#1a202c" stroke="#4299e1" stroke-width="2"/>
+  <text x="210" y="295" font-family="monospace" font-size="14" fill="#63b3ed" text-anchor="middle">Tool</text>
+  
+  <circle cx="290" cy="340" r="35" fill="#1a202c" stroke="#4299e1" stroke-width="2"/>
+  <text x="290" y="345" font-family="monospace" font-size="14" fill="#63b3ed" text-anchor="middle">Data</text>
+  
+  <circle cx="370" cy="290" r="35" fill="#1a202c" stroke="#4299e1" stroke-width="2"/>
+  <text x="370" y="295" font-family="monospace" font-size="14" fill="#63b3ed" text-anchor="middle">API</text>
+  
+  <!-- PI Architecture Layer (right) -->
+  <rect x="770" y="200" width="280" height="230" rx="12" fill="#2d3748" stroke="#48bb78" stroke-width="2"/>
+  <text x="910" y="235" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#e2e8f0" text-anchor="middle">PI Architecture</text>
+  
+  <!-- PI Nodes -->
+  <circle cx="840" cy="290" r="35" fill="#1a202c" stroke="#48bb78" stroke-width="2"/>
+  <text x="840" y="295" font-family="monospace" font-size="14" fill="#68d391" text-anchor="middle">Plan</text>
+  
+  <circle cx="920" cy="340" r="35" fill="#1a202c" stroke="#48bb78" stroke-width="2"/>
+  <text x="920" y="345" font-family="monospace" font-size="14" fill="#68d391" text-anchor="middle">Execute</text>
+  
+  <circle cx="1000" cy="290" r="35" fill="#1a202c" stroke="#48bb78" stroke-width="2"/>
+  <text x="1000" y="295" font-family="monospace" font-size="14" fill="#68d391" text-anchor="middle">Reflect</text>
+  
+  <!-- Connection Arrow -->
+  <line x1="430" y1="315" x2="740" y2="315" stroke="url(#accentGrad)" stroke-width="3" stroke-dasharray="8,6"/>
+  <polygon points="740,305 760,315 740,325" fill="#63b3ed"/>
+  
+  <!-- Title Text -->
+  <text x="600" y="120" font-family="system-ui, -apple-system, sans-serif" font-size="42" fill="#ffffff" text-anchor="middle" font-weight="bold">AI Paradigm Radar</text>
+  <text x="600" y="175" font-family="system-ui, -apple-system, sans-serif" font-size="28" fill="#cbd5e0" text-anchor="middle">MCP Protocol + PI Architecture</text>
+  
+  <!-- Decorative Elements -->
+  <circle cx="100" cy="100" r="40" fill="#4299e1" opacity="0.1"/>
+  <circle cx="1100" cy="530" r="60" fill="#48bb78" opacity="0.1"/>
+</svg>
