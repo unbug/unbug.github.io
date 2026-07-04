@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ceilingGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc3545;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#dc3545;stop-opacity:0.3" />
+    </linearGradient>
+    <linearGradient id="betaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#28a745;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#28a745;stop-opacity:0.4" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#343a40">
+    Co-Failure Ceiling: 多模型组合的共失败率天花板
+  </text>
+
+  <!-- Concept Diagram Area -->
+  <rect x="50" y="70" width="700" height="380" fill="#ffffff" stroke="#dee2e6" stroke-width="2" rx="8"/>
+
+  <!-- Models Layer -->
+  <text x="400" y="100" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#495057">
+    多模型集成系统 (67个模型 / 21家提供商)
+  </text>
+
+  <!-- Model Icons -->
+  <g id="models">
+    <circle cx="150" cy="150" r="25" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+    <text x="150" y="155" font-family="Arial" font-size="12" text-anchor="middle" fill="#1976d2">Model 1</text>
+    
+    <circle cx="250" cy="150" r="25" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+    <text x="250" y="155" font-family="Arial" font-size="12" text-anchor="middle" fill="#1976d2">Model 2</text>
+    
+    <circle cx="350" cy="150" r="25" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+    <text x="350" y="155" font-family="Arial" font-size="12" text-anchor="middle" fill="#1976d2">Model 3</text>
+    
+    <circle cx="450" cy="150" r="25" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+    <text x="450" y="155" font-family="Arial" font-size="12" text-anchor="middle" fill="#1976d2">Model 4</text>
+    
+    <circle cx="550" cy="150" r="25" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+    <text x="550" y="155" font-family="Arial" font-size="12" text-anchor="middle" fill="#1976d2">Model 5</text>
+    
+    <circle cx="650" cy="150" r="25" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+    <text x="650" y="155" font-family="Arial" font-size="12" text-anchor="middle" fill="#1976d2">Model N</text>
+  </g>
+
+  <!-- Co-Failure Ceiling Line -->
+  <line x1="50" y1="320" x2="750" y2="320" stroke="#dc3545" stroke-width="3" stroke-dasharray="8,4"/>
+  <text x="760" y="325" font-family="Arial" font-size="14" fill="#dc3545" font-weight="bold">Co-Failure Ceiling (beta)</text>
+
+  <!-- Beta Values for Different Tasks -->
+  <g id="beta-values">
+    <!-- Math Beta -->
+    <rect x="80" y="350" width="160" height="60" fill="url(#betaGrad)" rx="4"/>
+    <text x="160" y="375" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">开放数学</text>
+    <text x="160" y="395" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#ffffff">beta = 0.052</text>
+
+    <!-- Code Beta -->
+    <rect x="320" y="350" width="160" height="60" fill="url(#betaGrad)" rx="4"/>
+    <text x="400" y="375" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">代码生成</text>
+    <text x="400" y="395" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#ffffff">beta = 0.079</text>
+
+    <!-- Free Response Beta -->
+    <rect x="560" y="350" width="160" height="60" fill="url(#betaGrad)" rx="4"/>
+    <text x="640" y="375" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#ffffff">自由回答</text>
+    <text x="640" y="395" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#ffffff">beta = 0.127</text>
+  </g>
+
+  <!-- rho vs beta note -->
+  <rect x="50" y="430" width="700" height="30" fill="#fff3cd" stroke="#ffc107" stroke-width="1" rx="4"/>
+  <text x="355" y="450" font-family="Arial" font-size="13" text-anchor="middle" fill="#856404">
+    传统错误相关性指标 rho 会高估集成效果，导致对共失败率 beta 产生约2.5倍误判
+  </text>
+</svg>
