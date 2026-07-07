@@ -1,7 +1,8 @@
 ---
-title: '一分钟读论文：《游戏引擎编码智能体基准测试》'
+title: "一分钟读论文：《游戏引擎编码智能体基准测试》"
 author: unbug
 categories: [Engineering, AI]
+image: assets/images/gameenginebench.svg
 tags: [coding-agent, benchmark, c++]
 ---
 

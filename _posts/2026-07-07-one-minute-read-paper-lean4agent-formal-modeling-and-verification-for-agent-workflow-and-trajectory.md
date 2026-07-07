@@ -1,5 +1,8 @@
 ---
-title: 一分钟读论文：Lean4Agent——用依赖类型语言验证 Agent 工作流
+title: "一分钟读论文：《Lean4Agent——用依赖类型语言验证 Agent》"
+author: unbug
+categories: [AI, FormalMethods]
+image: assets/images/lean4agent.svg
 tags: [agent, formal-verification, lean4]
 layout: post
 ---

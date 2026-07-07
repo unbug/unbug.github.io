@@ -1,5 +1,8 @@
 ---
-title: 一分钟读论文：SWE-Doctor——用多面Bug复现测试引导Agent生成补丁
+title: "一分钟读论文：《SWE-Doctor——用多面 Bug 复现测试引导 Agent》"
+author: unbug
+categories: [AI, SoftwareEngineering]
+image: assets/images/swe-doctor.svg
 tags: [swe-agent, bug-reproduction-tests, runtime-diagnosis, multi-faceted-testing]
 layout: post
 ---
