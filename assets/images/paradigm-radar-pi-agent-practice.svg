@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2332;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d3748;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4299e1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#63b3ed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  <text x="600" y="250" font-family="sans-serif" font-size="48" fill="#ffffff" text-anchor="middle">AI 范式雷达</text>
+  <text x="600" y="320" font-family="sans-serif" font-size="32" fill="#e2e8f0" text-anchor="middle">Plan-Execute Agent Orchestration</text>
+  <rect x="300" y="400" width="200" height="80" rx="12" fill="url(#accentGrad)"/>
+  <text x="400" y="450" font-family="sans-serif" font-size="24" fill="#ffffff" text-anchor="middle">PLAN</text>
+  <polygon points="520,440 560,430 560,450 520,440" fill="#63b3ed"/>
+  <line x1="520" y1="440" x2="560" y2="440" stroke="#63b3ed" stroke-width="4"/>
+  <rect x="580" y="400" width="200" height="80" rx="12" fill="#2d3748" stroke="#4299e1" stroke-width="3"/>
+  <text x="680" y="450" font-family="sans-serif" font-size="24" fill="#ffffff" text-anchor="middle">EXECUTE</text>
+</svg>

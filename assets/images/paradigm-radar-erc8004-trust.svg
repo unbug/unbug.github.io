@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4fc3f7"/>
+      <stop offset="100%" style="stop-color:#81d4fa"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="600" y="55" text-anchor="middle" font-size="28" font-weight="700" fill="#ffffff">ERC-8004 — 去中心化Agent信任层</text>
+  <text x="600" y="80" text-anchor="middle" font-size="14" fill="#90a4ae">实证诊断：无许可信任与实际不可信的悖论</text>
+
+  <!-- Three Registry Layers -->
+  <!-- Layer 1: Identity Registry -->
+  <rect x="60" y="120" width="340" height="280" rx="8" fill="#0d47a1" opacity="0.9" filter="url(#shadow)"/>
+  <text x="230" y="155" text-anchor="middle" font-size="16" font-weight="600" fill="#bbdefb">身份注册表 (Identity)</text>
+
+  <!-- Shield icon -->
+  <path d="M230,180 L260,195 L260,230 Q260,260 230,275 Q200,260 200,230 L200,195 Z" fill="none" stroke="#4fc3f7" stroke-width="2"/>
+  <path d="M230,195 L248,205 L248,228 Q248,248 230,258 Q212,248 212,228 L212,205 Z" fill="#4fc3f7" opacity="0.2"/>
+
+  <!-- Registration data -->
+  <text x="90" y="300" font-size="12" fill="#b0bec5">有效注册率：</text>
+  <rect x="90" y="310" width="260" height="8" rx="4" fill="#1a237e"/>
+  <rect x="90" y="310" width="8" height="8" rx="4" fill="#ef5350"/>
+  <text x="105" y="326" font-size="10" fill="#ef9a9a">以太坊 3%</text>
+
+  <rect x="90" y="330" width="260" height="8" rx="4" fill="#1a237e"/>
+  <rect x="90" y="330" width="10" height="8" rx="4" fill="#ffa726"/>
+  <text x="105" y="346" font-size="10" fill="#ffcc80">BSC 4%</text>
+
+  <rect x="90" y="350" width="260" height="8" rx="4" fill="#1a237e"/>
+  <rect x="90" y="350" width="39" height="8" rx="4" fill="#66bb6a"/>
+  <text x="135" y="366" font-size="10" fill="#a5d6a7">Base 15%</text>
+
+  <!-- Layer 2: Reputation Registry -->
+  <rect x="430" y="120" width="340" height="280" rx="8" fill="#0d47a1" opacity="0.9" filter="url(#shadow)"/>
+  <text x="600" y="155" text-anchor="middle" font-size="16" font-weight="600" fill="#bbdefb">声誉注册表 (Reputation)</text>
+
+  <!-- Star/rating icon -->
+  <polygon points="600,185 605,200 620,200 608,210 613,225 600,215 587,225 592,210 580,200 595,200" fill="none" stroke="#4fc3f7" stroke-width="1.5"/>
+  <polygon points="600,190 603,200 613,200 605,208 608,218 600,212 592,218 595,208 587,200 597,200" fill="#4fc3f7" opacity="0.3"/>
+
+  <!-- Sybil attack data -->
+  <text x="460" y="250" font-size="12" fill="#b0bec5">Sybil评审者比例：</text>
+  <rect x="460" y="260" width="280" height="8" rx="4" fill="#1a237e"/>
+  <rect x="460" y="260" width="206" height="8" rx="4" fill="#ef5350"/>
+  <text x="675" y="276" font-size="10" fill="#ef9a9a">以太坊 73.6%</text>
+
+  <rect x="460" y="280" width="280" height="8" rx="4" fill="#1a237e"/>
+  <rect x="460" y="280" width="166" height="8" rx="4" fill="#ffa726"/>
+  <text x="635" y="296" font-size="10" fill="#ffcc80">BSC 59.2%</text>
+
+  <rect x="460" y="300" width="280" height="8" rx="4" fill="#1a237e"/>
+  <rect x="460" y="300" width="254" height="8" rx="4" fill="#ef5350"/>
+  <text x="723" y="316" font-size="10" fill="#ef9a9a">Base 90.6%</text>
+
+  <!-- Layer 3: Validation Registry -->
+  <rect x="800" y="120" width="340" height="280" rx="8" fill="#0d47a1" opacity="0.9" filter="url(#shadow)"/>
+  <text x="970" y="155" text-anchor="middle" font-size="16" font-weight="600" fill="#bbdefb">验证注册表 (Validation)</text>
+
+  <!-- Check/cross icon -->
+  <circle cx="970" cy="200" r="18" fill="none" stroke="#4fc3f7" stroke-width="2"/>
+  <line x1="962" y1="192" x2="978" y2="208" stroke="#ef5350" stroke-width="2.5"/>
+  <line x1="978" y1="192" x2="962" y2="208" stroke="#ef5350" stroke-width="2.5"/>
+
+  <!-- No feedback data -->
+  <text x="830" y="250" font-size="12" fill="#b0bec5">无有效反馈比例（去Sybil后）：</text>
+  <rect x="830" y="260" width="280" height="8" rx="4" fill="#1a237e"/>
+  <rect x="830" y="260" width="43" height="8" rx="4" fill="#ffa726"/>
+  <text x="883" y="276" font-size="10" fill="#ffcc80">以太坊 15.5%</text>
+
+  <rect x="830" y="280" width="280" height="8" rx="4" fill="#1a237e"/>
+  <rect x="830" y="280" width="203" height="8" rx="4" fill="#ef5350"/>
+  <text x="1043" y="296" font-size="10" fill="#ef9a9a">BSC 72.3%</text>
+
+  <rect x="830" y="300" width="280" height="8" rx="4" fill="#1a237e"/>
+  <rect x="830" y="300" width="251" height="8" rx="4" fill="#ef5350"/>
+  <text x="1091" y="316" font-size="10" fill="#ef9a9a">Base 89.4%</text>
+
+  <!-- Bottom: Key finding -->
+  <rect x="60" y="430" width="1080" height="150" rx="8" fill="#b71c1c" opacity="0.2"/>
+  <text x="600" y="465" text-anchor="middle" font-size="18" font-weight="700" fill="#ef9a9a">核心发现：无许可信任与实际不可信的悖论</text>
+
+  <!-- Three key stats -->
+  <rect x="120" y="485" width="300" height="60" rx="6" fill="#b71c1c" opacity="0.3"/>
+  <text x="270" y="510" text-anchor="middle" font-size="24" font-weight="700" fill="#ef9a9a">3% - 15%</text>
+  <text x="270" y="530" text-anchor="middle" font-size="12" fill="#b0bec5">有效注册率</text>
+
+  <rect x="450" y="485" width="300" height="60" rx="6" fill="#b71c1c" opacity="0.3"/>
+  <text x="600" y="510" text-anchor="middle" font-size="24" font-weight="700" fill="#ef9a9a">60% - 91%</text>
+  <text x="600" y="530" text-anchor="middle" font-size="12" fill="#b0bec5">Sybil攻击比例</text>
+
+  <rect x="780" y="485" width="300" height="60" rx="6" fill="#b71c1c" opacity="0.3"/>
+  <text x="930" y="510" text-anchor="middle" font-size="24" font-weight="700" fill="#ef9a9a">三重失效</text>
+  <text x="930" y="530" text-anchor="middle" font-size="12" fill="#b0bec5">身份 · 声誉 · 验证</text>
+
+  <!-- Footer -->
+  <text x="600" y="615" text-anchor="middle" font-size="11" fill="#546e7a">Imperial College London | arXiv:2606.26028v1</text>
+</svg>

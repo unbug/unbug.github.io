@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 范式雷达：《从结果到过程——自进化评分如何评估和增强智能体技能使用》"
+title: "一分钟读论文：《SkillCoach——自进化评分如何评估和增强智能体技能使用》"
 author: unbug
 categories: [ai, agent]
 tags: [agent-skill-use, self-evolving-rubrics, process-evaluation, skill-selection]

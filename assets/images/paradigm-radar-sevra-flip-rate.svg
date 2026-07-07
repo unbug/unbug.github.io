@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="400" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="430" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a1a1a">有害翻转率：始终验证的隐藏代价</text>
+  <text x="430" y="55" text-anchor="middle" font-size="12" fill="#666">Right-to-Wrong 翻转在不同策略下的对比</text>
+
+  <!-- Chart area -->
+  <rect x="80" y="75" width="700" height="240" rx="4" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+
+  <!-- Y axis labels -->
+  <text x="70" y="95" text-anchor="end" font-size="10" fill="#999">3.0%</text>
+  <line x1="80" y1="92" x2="780" y2="92" stroke="#eee" stroke-width="0.5"/>
+
+  <text x="70" y="145" text-anchor="end" font-size="10" fill="#999">2.5%</text>
+  <line x1="80" y1="142" x2="780" y2="142" stroke="#eee" stroke-width="0.5"/>
+
+  <text x="70" y="195" text-anchor="end" font-size="10" fill="#999">2.0%</text>
+  <line x1="80" y1="192" x2="780" y2="192" stroke="#eee" stroke-width="0.5"/>
+
+  <text x="70" y="245" text-anchor="end" font-size="10" fill="#999">1.5%</text>
+  <line x1="80" y1="242" x2="780" y2="242" stroke="#eee" stroke-width="0.5"/>
+
+  <text x="70" y="295" text-anchor="end" font-size="10" fill="#999">1.0%</text>
+  <line x1="80" y1="292" x2="780" y2="292" stroke="#eee" stroke-width="0.5"/>
+
+  <!-- Always Verify bar (2.2%) -->
+  <rect x="340" y="160" width="80" height="122" rx="3" fill="#e74c3c"/>
+  <text x="380" y="153" text-anchor="middle" font-size="11" font-weight="bold" fill="#e74c3c">2.2%</text>
+
+  <!-- SEVRA bar (1.0%) -->
+  <rect x="440" y="292" width="80" height="20" rx="3" fill="#27ae60"/>
+  <text x="480" y="285" text-anchor="middle" font-size="11" font-weight="bold" fill="#27ae60">1.0%</text>
+
+  <!-- Labels -->
+  <text x="380" y="320" text-anchor="middle" font-size="11" font-weight="bold" fill="#e74c3c">Always Verify</text>
+  <text x="480" y="320" text-anchor="middle" font-size="11" font-weight="bold" fill="#27ae60">SEVRA</text>
+
+  <!-- Annotation: "减少55%" -->
+  <line x1="420" y1="180" x2="460" y2="300" stroke="#f39c12" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <rect x="430" y="220" width="70" height="24" rx="4" fill="#fef9e7" stroke="#f39c12" stroke-width="1"/>
+  <text x="465" y="236" text-anchor="middle" font-size="10" font-weight="bold" fill="#7d6608">减少55%</text>
+
+  <!-- Key insight boxes -->
+  <rect x="60" y="340" width="340" height="45" rx="6" fill="#fdedec" stroke="#e74c3c" stroke-width="1"/>
+  <text x="230" y="360" text-anchor="middle" font-size="11" font-weight="bold" fill="#922b21">Always Verify: 验证器本身会引入错误</text>
+  <text x="230" y="378" text-anchor="middle" font-size="10" fill="#922b21">将正确答案翻转为错误答案 (right-to-wrong)</text>
+
+  <rect x="460" y="340" width="340" height="45" rx="6" fill="#e8f8f5" stroke="#27ae60" stroke-width="1"/>
+  <text x="630" text-anchor="middle" font-size="11" font-weight="bold" fill="#0e6655">SEVRA: 选择性验证避免了对正确答案的干扰</text>
+  <text x="630" y="378" text-anchor="middle" font-size="10" fill="#0e6655">只在必要时才调用验证器，保护已有正确答案</text>
+
+  <!-- Source -->
+  <text x="430" y="395" text-anchor="middle" font-size="10" fill="#999">Source: Acharjee Dip et al., Virginia Tech (arXiv:2606.19808v1)</text>
+</svg>

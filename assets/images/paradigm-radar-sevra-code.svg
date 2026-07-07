@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 450" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="450" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="430" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a1a1a">SEVRA 集成到推理管线的关键代码</text>
+  <text x="430" y="55" text-anchor="middle" font-size="12" fill="#666">约 30 行核心逻辑，展示决策流程的实现方式</text>
+
+  <!-- Code block background -->
+  <rect x="60" y="75" width="740" height="320" rx="8" fill="#1e1e1e"/>
+
+  <!-- Line numbers and code -->
+  <text x="90" y="100" font-size="11" fill="#6a727d">1</text>
+  <text x="120" y="100" font-size="11" fill="#c586c0">class</text>
+  <text x="160" y="100" font-size="11" fill="#4ec9b0">SEVRAController</text>
+
+  <text x="90" y="120" font-size="11" fill="#6a727d">2</text>
+  <text x="120" y="120" font-size="11" fill="#c586c0">def</text>
+  <text x="150" y="120" font-size="11" fill="#dcdcaa"> decide</text>
+
+  <text x="90" y="140" font-size="11" fill="#6a727d">3</text>
+  <text x="150" y="140" font-size="11" fill="#ce9178">(self, initial_answer, budget_remaining):</text>
+
+  <text x="90" y="160" font-size="11" fill="#6a727d">4</text>
+  <text x="150" y="160" font-size="11" fill="#ce9178">    quality = self.solver_quality(initial_answer)</text>
+
+  <text x="90" y="180" font-size="11" fill="#6a727d">5</text>
+  <text x="150" y="180" font-size="11" fill="#ce9178">    flip_risk = self.estimate_flip_risk(initial_answer)</text>
+
+  <text x="90" y="200" font-size="11" fill="#6a727d">6</text>
+  <text x="150" y="200" font-size="11" fill="#ce9178">    cost_verify = self.verification_cost()</text>
+
+  <!-- Decision logic -->
+  <text x="90" y="230" font-size="11" fill="#6a727d">7</text>
+  <text x="120" y="230" font-size="11" fill="#c586c0">if</text>
+  <text x="150" y="230" font-size="11" fill="#4ec9b0">quality</text>
+  <text x="150" y="230" font-size="11" fill="#dcdcaa">&gt; self.high_threshold:</text>
+
+  <text x="90" y="250" font-size="11" fill="#6a727d">8</text>
+  <text x="150" y="250" font-size="11" fill="#ce9178">        return "KEEP", initial_answer  </text>
+
+  <text x="90" y="270" font-size="11" fill="#6a727d">9</text>
+  <text x="120" y="270" font-size="11" fill="#c586c0">elif</text>
+  <text x="150" y="270" font-size="11" font-weight="bold" fill="#e74c3c">flip_risk &gt; self.flip_threshold:</text>
+
+  <text x="90" y="290" font-size="11" fill="#6a727d">10</text>
+  <text x="150" y="290" font-size="11" fill="#ce9178">        return "VERIFY", initial_answer </text>
+
+  <text x="90" y="310" font-size="11" fill="#6a727d">11</text>
+  <text x="120" y="310" font-size="11" fill="#c586c0">elif</text>
+  <text x="150" y="310" font-size="11" font-weight="bold" fill="#e74c3c">budget_remaining &gt; cost_verify:</text>
+
+  <text x="90" y="330" font-size="11" fill="#6a727d">12</text>
+  <text x="150" y="330" font-size="11" fill="#ce9178">        return "VERIFY", initial_answer </text>
+
+  <text x="90" y="350" font-size="11" fill="#6a727d">13</text>
+  <text x="120" y="350" font-size="11" fill="#c586c0">else:</text>
+
+  <text x="90" y="370" font-size="11" fill="#6a727d">14</text>
+  <text x="150" y="370" font-size="11" fill="#ce9178">        return "EXTEND", initial_answer </text>
+
+  <!-- Key insight -->
+  <rect x="60" y="405" width="740" height="35" rx="6" fill="#fef9e7" stroke="#f39c12" stroke-width="1"/>
+  <text x="430" y="427" text-anchor="middle" font-size="11" font-weight="bold" fill="#7d6608">核心逻辑：SEVRA 通过 quality + flip_risk + budget_remaining 三个维度做决策，而非简单地"总是验证"</text>
+
+  <!-- Source -->
+  <text x="430" y="445" text-anchor="middle" font-size="10" fill="#999">Adapted from: Acharjee Dip et al., Virginia Tech (arXiv:2606.19808v1)</text>
+</svg>

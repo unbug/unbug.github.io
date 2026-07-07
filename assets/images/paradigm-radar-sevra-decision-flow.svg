@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 450" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="450" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="430" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a1a1a">SEVRA 决策流程详解</text>
+  <text x="430" y="55" text-anchor="middle" font-size="12" fill="#666">从初始推理到最终输出的完整决策链</text>
+
+  <!-- Step 1 -->
+  <rect x="300" y="75" width="260" height="45" rx="8" fill="#34495e"/>
+  <text x="430" y="95" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">Step 1: 初始推理</text>
+  <text x="430" y="112" text-anchor="middle" font-size="10" fill="#bdc3c7">冻结求解器生成 A_0，消耗 B tokens</text>
+
+  <!-- Arrow -->
+  <line x1="430" y1="120" x2="430" y2="150" stroke="#555" stroke-width="2"/>
+  <polygon points="427,148 430,156 433,148" fill="#555"/>
+
+  <!-- Step 2 -->
+  <rect x="300" y="155" width="260" height="45" rx="8" fill="#2c3e50"/>
+  <text x="430" y="175" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">Step 2: SEVRA 评估</text>
+  <text x="430" y="192" text-anchor="middle" font-size="10" fill="#bdc3c7">计算 A_0 质量分数 + 翻转风险 + 剩余预算</text>
+
+  <!-- Arrow -->
+  <line x1="430" y1="200" x2="430" y2="230" stroke="#555" stroke-width="2"/>
+  <polygon points="427,228 430,236 433,228" fill="#555"/>
+
+  <!-- Decision diamond -->
+  <rect x="350" y="235" width="160" height="50" rx="8" fill="#e74c3c"/>
+  <text x="430" y="257" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">决策点</text>
+
+  <!-- Branch labels -->
+  <text x="340" y="260" text-anchor="end" font-size="9" fill="#e74c3c">高置信度</text>
+  <text x="520" y="260" text-anchor="start" font-size="9" fill="#f39c12">中等置信度</text>
+
+  <!-- Left branch: Keep -->
+  <line x1="350" y1="260" x2="180" y2="310" stroke="#27ae60" stroke-width="2"/>
+  <polygon points="182,307 178,315 186,312" fill="#27ae60"/>
+  <rect x="90" y="315" width="180" height="45" rx="6" fill="#27ae60"/>
+  <text x="180" y="335" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">保留 A_0</text>
+  <text x="180" y="352" text-anchor="middle" font-size="9" fill="#d5f5e3">零额外成本，直接返回</text>
+
+  <!-- Right branch: Verify -->
+  <line x1="510" y1="260" x2="680" y2="310" stroke="#f39c12" stroke-width="2"/>
+  <polygon points="678,307 674,315 682,312" fill="#f39c12"/>
+  <rect x="590" y="315" width="180" height="45" rx="6" fill="#e67e22"/>
+  <text x="680" y="335" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">调用验证器 V</text>
+  <text x="680" y="352" text-anchor="middle" font-size="9" fill="#fdebd0">V tokens，判断 A_0 是否正确</text>
+
+  <!-- Verification result sub-branch -->
+  <line x1="680" y1="360" x2="680" y2="385" stroke="#555" stroke-width="1.5"/>
+  <polygon points="677,383 680,391 683,383" fill="#555"/>
+
+  <!-- Verify result: correct -->
+  <rect x="590" y="390" width="85" height="35" rx="4" fill="#27ae60"/>
+  <text x="632" y="412" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">正确</text>
+
+  <!-- Verify result: wrong -->
+  <rect x="685" y="390" width="85" height="35" rx="4" fill="#e74c3c"/>
+  <text x="727" y="412" text-anchor="middle" font-size="10" font-weight="bold" fill="#fff">错误</text>
+
+  <!-- Source -->
+  <text x="430" y="445" text-anchor="middle" font-size="10" fill="#999">Source: Acharjee Dip et al., Virginia Tech (arXiv:2606.19808v1)</text>
+</svg>
