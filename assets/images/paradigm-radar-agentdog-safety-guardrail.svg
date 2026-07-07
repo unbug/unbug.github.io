@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f2e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#2d3748;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="agentGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a9eff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="guardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="decisionGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000044"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Title area -->
+  <text x="600" y="52" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#f1f5f9">AgentDoG 1.5 — Agent 安全诊断护栏框架</text>
+  <text x="600" y="80" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#94a3b8">从静态对齐到动态诊断的范式转移 | arXiv:2605.29801</text>
+
+  <!-- Agent System (Left) -->
+  <rect x="40" y="120" width="280" height="420" rx="12" fill="#1e293b" stroke="#4a9eff" stroke-width="2" filter="url(#shadow)"/>
+  <text x="180" y="155" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#4a9eff">Agent 系统</text>
+
+  <!-- Agent internal components -->
+  <rect x="60" y="175" width="240" height="50" rx="8" fill="#334155"/>
+  <text x="180" y="205" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#cbd5e1">用户请求输入</text>
+
+  <rect x="60" y="240" width="240" height="50" rx="8" fill="#334155"/>
+  <text x="180" y="270" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#cbd5e1">LLM 推理引擎</text>
+
+  <rect x="60" y="305" width="240" height="50" rx="8" fill="#334155"/>
+  <text x="180" y="335" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#cbd5e1">工具调用执行</text>
+
+  <rect x="60" y="370" width="240" height="50" rx="8" fill="#334155"/>
+  <text x="180" y="400" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#cbd5e1">中间结果生成</text>
+
+  <!-- Arrow from Agent to Guardrail -->
+  <line x1="320" y1="340" x2="400" y2="340" stroke="#f59e0b" stroke-width="3" marker-end="url(#arrowOrange)"/>
+
+  <!-- Diagnosis Guardrail (Center) -->
+  <rect x="400" y="120" width="400" height="420" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+  <text x="600" y="155" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#f59e0b">诊断护栏核心</text>
+
+  <!-- Trajectory Collector -->
+  <rect x="420" y="175" width="360" height="55" rx="8" fill="#422006"/>
+  <text x="600" y="200" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#fbbf24">轨迹收集器</text>
+  <text x="600" y="218" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#d97706">收集所有工具调用、中间结果和决策步骤</text>
+
+  <!-- Rationale Engine -->
+  <rect x="420" y="250" width="360" height="55" rx="8" fill="#422006"/>
+  <text x="600" y="275" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#fbbf24">推理增强引擎</text>
+  <text x="600" y="293" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#d97706">跨步骤关联分析 + 诊断理由生成</text>
+
+  <!-- Safety Classifier -->
+  <rect x="420" y="325" width="360" height="55" rx="8" fill="#422006"/>
+  <text x="600" y="350" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#fbbf24">安全分类器</text>
+  <text x="600" y="368" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#d97706">基于预构建知识库的风险模式匹配</text>
+
+  <!-- Knowledge Base -->
+  <rect x="420" y="400" width="360" height="55" rx="8" fill="#422006"/>
+  <text x="600" y="425" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#fbbf24">安全知识库</text>
+  <text x="600" y="443" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#d97706">已知攻击模式 + 风险关联规则</text>
+
+  <!-- Arrows between guardrail components -->
+  <line x1="600" y1="230" x2="600" y2="250" stroke="#fbbf24" stroke-width="2"/>
+  <line x1="600" y1="305" x2="600" y2="325" stroke="#fbbf24" stroke-width="2"/>
+  <line x1="780" y1="352" x2="780" y2="400" stroke="#d97706" stroke-width="2" stroke-dasharray="4,3"/>
+
+  <!-- Arrow from Guardrail to Decision -->
+  <line x1="800" y1="340" x2="880" y2="340" stroke="#10b981" stroke-width="3" marker-end="url(#arrowGreen)"/>
+
+  <!-- Decision Output (Right) -->
+  <rect x="880" y="120" width="280" height="420" rx="12" fill="#1e293b" stroke="#10b981" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1020" y="155" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#10b981">决策输出</text>
+
+  <!-- Safe result -->
+  <rect x="900" y="185" width="240" height="55" rx="8" fill="#064e3b"/>
+  <text x="1020" y="210" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#34d399">安全通过</text>
+  <text x="1020" y="228" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6ee7b7">继续执行 Agent 流程</text>
+
+  <!-- Warning -->
+  <rect x="900" y="260" width="240" height="55" rx="8" fill="#78350f"/>
+  <text x="1020" y="285" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#fbbf24">警告</text>
+  <text x="1020" y="303" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#d97706">记录日志 + 通知管理员</text>
+
+  <!-- Critical block -->
+  <rect x="900" y="335" width="240" height="55" rx="8" fill="#7f1d1d"/>
+  <text x="1020" y="360" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#fca5a5">阻断执行</text>
+  <text x="1020" y="378" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#f87171">终止 Agent + 生成诊断报告</text>
+
+  <!-- Diagnostic reason output -->
+  <rect x="900" y="420" width="240" height="55" rx="8" fill="#334155"/>
+  <text x="1020" y="445" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#94a3b8">诊断理由输出</text>
+  <text x="1020" y="463" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#64748b">可解释的安全判断依据</text>
+
+  <!-- Key features at bottom -->
+  <rect x="40" y="560" width="320" height="50" rx="8" fill="#1e293b"/>
+  <text x="200" y="582" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#94a3b8">轨迹级评估</text>
+  <text x="200" y="600" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#64748b">跨步骤风险关联分析</text>
+
+  <rect x="380" y="560" width="320" height="50" rx="8" fill="#1e293b"/>
+  <text x="540" y="582" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#94a3b8">推理增强构建</text>
+  <text x="540" y="600" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#64748b">可解释诊断 + 持续改进循环</text>
+
+  <rect x="720" y="560" width="320" height="50" rx="8" fill="#1e293b"/>
+  <text x="880" y="582" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#94a3b8">免训练在线护栏</text>
+  <text x="880" y="600" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#64748b">零侵入部署 + 多尺寸变体</text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#10b981"/>
+    </marker>
+  </defs>
+</svg>

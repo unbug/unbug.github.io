@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+  <defs>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#991b1b;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#065f46;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="500" fill="#0f172a"/>
+
+  <!-- Title -->
+  <text x="600" y="40" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#f1f5f9">传统对齐 vs 诊断护栏：两种安全范式的对比</text>
+
+  <!-- LEFT: Traditional Approach -->
+  <rect x="30" y="65" width="540" height="400" rx="12" fill="#1e293b" stroke="#dc2626" stroke-width="2"/>
+  <text x="300" y="100" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#fca5a5">传统安全对齐</text>
+
+  <!-- Step 1 -->
+  <rect x="60" y="120" width="480" height="45" rx="8" fill="#334155"/>
+  <text x="300" y="147" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#cbd5e1">用户输入: "帮我查一下张三的账户余额"</text>
+
+  <!-- Arrow down -->
+  <line x1="300" y1="165" x2="300" y2="185" stroke="#64748b" stroke-width="2"/>
+
+  <!-- Step 2: Single-turn classifier -->
+  <rect x="60" y="185" width="480" height="55" rx="8" fill="#334155"/>
+  <text x="300" y="207" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#94a3b8">单步安全分类器</text>
+  <text x="300" y="225" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#64748b">判断: "查询余额" = 安全 (单步看无害)</text>
+
+  <!-- Arrow down -->
+  <line x1="300" y1="240" x2="300" y2="260" stroke="#64748b" stroke-width="2"/>
+
+  <!-- Step 3: Execute -->
+  <rect x="60" y="260" width="480" height="45" rx="8" fill="#334155"/>
+  <text x="300" y="287" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#cbd5e1">执行: 查询数据库 → 获取余额信息</text>
+
+  <!-- Arrow down -->
+  <line x1="300" y1="305" x2="300" y2="325" stroke="#64748b" stroke-width="2"/>
+
+  <!-- Step 4: Next step -->
+  <rect x="60" y="325" width="480" height="45" rx="8" fill="#334155"/>
+  <text x="300" y="352" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#cbd5e1">用户输入: "把这笔钱转到这个账户"</text>
+
+  <!-- Arrow down -->
+  <line x1="300" y1="370" x2="300" y2="390" stroke="#64748b" stroke-width="2"/>
+
+  <!-- Step 5: Single-turn classifier again -->
+  <rect x="60" y="390" width="480" height="55" rx="8" fill="#334155"/>
+  <text x="300" y="412" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#94a3b8">单步安全分类器</text>
+  <text x="300" y="430" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#64748b">判断: "转账操作" = 安全 (单步看正常)</text>
+
+  <!-- Result -->
+  <rect x="60" y="450" width="480" height="35" rx="8" fill="#7f1d1d"/>
+  <text x="300" y="472" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#fca5a5">结果: 资金被非法转移 — 单步分类器完全失效</text>
+
+  <!-- RIGHT: Diagnostic Guardrail Approach -->
+  <rect x="630" y="65" width="540" height="400" rx="12" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+  <text x="900" y="100" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#6ee7b7">诊断护栏方法</text>
+
+  <!-- Step 1 -->
+  <rect x="660" y="120" width="480" height="45" rx="8" fill="#334155"/>
+  <text x="900" y="147" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#cbd5e1">用户输入: "帮我查一下张三的账户余额"</text>
+
+  <!-- Arrow down -->
+  <line x1="900" y1="165" x2="900" y2="185" stroke="#64748b" stroke-width="2"/>
+
+  <!-- Step 2: Collect trajectory -->
+  <rect x="660" y="185" width="480" height="55" rx="8" fill="#064e3b"/>
+  <text x="900" y="207" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#34d399">轨迹收集器</text>
+  <text x="900" y="225" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6ee7b7">记录: [步骤1]查询用户信息 → [步骤2]获取余额</text>
+
+  <!-- Arrow down -->
+  <line x1="900" y1="240" x2="900" y2="260" stroke="#64748b" stroke-width="2"/>
+
+  <!-- Step 3: Execute next step -->
+  <rect x="660" y="260" width="480" height="45" rx="8" fill="#334155"/>
+  <text x="900" y="287" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#cbd5e1">用户输入: "把这笔钱转到这个账户"</text>
+
+  <!-- Arrow down -->
+  <line x1="900" y1="305" x2="900" y2="325" stroke="#64748b" stroke-width="2"/>
+
+  <!-- Step 4: Trajectory-level analysis -->
+  <rect x="660" y="325" width="480" height="55" rx="8" fill="#064e3b"/>
+  <text x="900" y="347" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#34d399">轨迹级风险评估</text>
+  <text x="900" y="365" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6ee7b7">检测到: 信息收集(步骤1) + 资金转移(步骤2) = 潜在攻击链</text>
+
+  <!-- Arrow down -->
+  <line x1="900" y1="380" x2="900" y2="400" stroke="#64748b" stroke-width="2"/>
+
+  <!-- Step 5: Block and report -->
+  <rect x="660" y="400" width="480" height="55" rx="8" fill="#064e3b"/>
+  <text x="900" y="422" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#34d399">安全分类器</text>
+  <text x="900" y="440" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6ee7b7">阻断转账 + 输出诊断理由: "检测到跨步骤攻击链"</text>
+
+  <!-- Result -->
+  <rect x="660" y="458" width="480" height="35" rx="8" fill="#065f46"/>
+  <text x="900" y="479" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#a7f3d0">结果: 攻击被拦截 — 轨迹级评估成功识别跨步骤风险</text>
+
+  <!-- VS badge -->
+  <circle cx="600" cy="265" r="28" fill="#1e293b" stroke="#4a9eff" stroke-width="2"/>
+  <text x="600" y="272" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" fill="#4a9eff">VS</text>
+</svg>

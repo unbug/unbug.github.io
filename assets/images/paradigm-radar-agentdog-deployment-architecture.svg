@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+  <defs>
+    <linearGradient id="userGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#6d28d9;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="500" fill="#0f172a"/>
+
+  <!-- Title -->
+  <text x="600" y="40" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#f1f5f9">AgentDoG 1.5 部署架构 — 零侵入旁路监控</text>
+
+  <!-- User Layer -->
+  <rect x="40" y="65" width="1120" height="80" rx="12" fill="#1e293b"/>
+  <text x="600" y="90" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#a78bfa">用户层</text>
+
+  <!-- User request -->
+  <rect x="60" y="105" width="200" height="30" rx="6" fill="#3b0764"/>
+  <text x="160" y="124" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#c4b5fd">用户请求: "查询订单并通知管理员"</text>
+
+  <!-- Arrow down -->
+  <line x1="600" y1="145" x2="600" y2="170" stroke="#a78bfa" stroke-width="2"/>
+
+  <!-- Guardrail Layer (Middle) -->
+  <rect x="40" y="170" width="1120" height="130" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+  <text x="600" y="198" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#fbbf24">诊断护栏层 (AgentDoG 1.5)</text>
+
+  <!-- Guardrail components -->
+  <rect x="80" y="210" width="300" height="80" rx="8" fill="#422006"/>
+  <text x="230" y="235" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#fbbf24">TrajectoryGuardrail</text>
+  <text x="230" y="255" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#d97706">wrap(your_agent) — 零侵入包装</text>
+  <text x="230" y="272" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#d97706">实时拦截并分析所有执行轨迹</text>
+
+  <!-- Arrow right -->
+  <line x1="380" y1="250" x2="420" y2="250" stroke="#fbbf24" stroke-width="2"/>
+
+  <!-- Config -->
+  <rect x="430" y="210" width="300" height="80" rx="8" fill="#422006"/>
+  <text x="580" y="235" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#fbbf24">SafetyConfig</text>
+  <text x="580" y="255" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#d97706">model_size: "7b"</text>
+  <text x="580" y="272" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#d97706">threshold: 0.75 | rationale: true</text>
+
+  <!-- Arrow right -->
+  <line x1="730" y1="250" x2="770" y2="250" stroke="#fbbf24" stroke-width="2"/>
+
+  <!-- Knowledge Base -->
+  <rect x="780" y="210" width="300" height="80" rx="8" fill="#422006"/>
+  <text x="930" y="235" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#fbbf24">安全知识库</text>
+  <text x="930" y="255" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#d97706">预构建攻击模式 + 风险关联规则</text>
+  <text x="930" y="272" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#d97706">无需训练目标模型</text>
+
+  <!-- Arrow down -->
+  <line x1="600" y1="300" x2="600" y2="325" stroke="#fbbf24" stroke-width="2"/>
+
+  <!-- Agent Layer (Bottom) -->
+  <rect x="40" y="325" width="1120" height="150" rx="12" fill="#1e293b" stroke="#4a9eff" stroke-width="2"/>
+  <text x="600" y="353" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#60a5fa">Agent 系统层 (无需修改)</text>
+
+  <!-- Agent components -->
+  <rect x="80" y="365" width="240" height="90" rx="8" fill="#1e3a5f"/>
+  <text x="200" y="390" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#93c5fd">LLM 推理引擎</text>
+  <text x="200" y="410" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#60a5fa">原始模型 — 无需重新训练</text>
+  <text x="200" y="430" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#60a5fa">保持原有推理逻辑不变</text>
+
+  <!-- Arrow right -->
+  <line x1="320" y1="410" x2="360" y2="410" stroke="#93c5fd" stroke-width="2"/>
+
+  <rect x="370" y="365" width="240" height="90" rx="8" fill="#1e3a5f"/>
+  <text x="490" y="390" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#93c5fd">工具调用层</text>
+  <text x="490" y="410" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#60a5fa">数据库 / API / 文件系统</text>
+  <text x="490" y="430" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#60a5fa">所有调用被护栏实时记录</text>
+
+  <!-- Arrow right -->
+  <line x1="610" y1="410" x2="650" y2="410" stroke="#93c5fd" stroke-width="2"/>
+
+  <rect x="660" y="365" width="240" height="90" rx="8" fill="#1e3a5f"/>
+  <text x="780" y="390" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#93c5fd">执行结果</text>
+  <text x="780" y="410" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#60a5fa">安全: 返回正常结果</text>
+  <text x="780" y="430" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#60a5fa">危险: 被护栏阻断并告警</text>
+
+  <!-- Arrow right -->
+  <line x1="900" y1="410" x2="940" y2="410" stroke="#93c5fd" stroke-width="2"/>
+
+  <rect x="950" y="365" width="200" height="90" rx="8" fill="#1e3a5f"/>
+  <text x="1050" y="390" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#93c5fd">用户响应</text>
+  <text x="1050" y="410" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#60a5fa">正常结果或安全警告</text>
+  <text x="1050" y="430" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#60a5fa">附带诊断理由输出</text>
+
+  <!-- Side annotation: Zero Invasive -->
+  <rect x="1080" y="340" width="90" height="120" rx="8" fill="#7f1d1d"/>
+  <text x="1125" y="365" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#fca5a5">零侵入</text>
+  <text x="1125" y="385" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#f87171">Agent系统</text>
+  <text x="1125" y="400" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#f87171">无需修改</text>
+  <text x="1125" y="420" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#f87171">无需重训</text>
+  <text x="1125" y="435" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#f87171">旁路监控</text>
+
+  <!-- Key features at bottom -->
+  <rect x="40" y="485" width="360" height="15" rx="4" fill="#334155"/>
+  <text x="220" y="497" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#94a3b8">免训练部署 | 零侵入集成 | 实时在线监控</text>
+
+  <rect x="420" y="485" width="360" height="15" rx="4" fill="#334155"/>
+  <text x="600" y="497" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#94a3b8">多尺寸变体 | 灵活阈值配置 | 可解释诊断输出</text>
+
+  <rect x="800" y="485" width="360" height="15" rx="4" fill="#334155"/>
+  <text x="980" y="497" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#94a3b8">毫秒级延迟 | 旁路安全监控 | 不影响Agent正常运行</text>
+</svg>

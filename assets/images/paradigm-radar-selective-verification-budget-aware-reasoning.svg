@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #333; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 11px; fill: #666; }
+      .box { stroke-width: 2; rx: 5; ry: 5; }
+      .arrow { stroke: #999; stroke-width: 2; marker-end: url(#arrowhead); }
+      .label { font-family: Arial, sans-serif; font-size: 10px; fill: #333; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#999"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="#fafafa"/>
+  
+  <!-- Title -->
+  <text x="400" y="25" class="title" text-anchor="middle">SEVRA：选择性验证推理分配架构</text>
+  <text x="400" y="42" class="subtitle" text-anchor="middle">服务层控制器决定是否对初始答案进行主动验证</text>
+  
+  <!-- Traditional approach (left) -->
+  <rect x="20" y="60" width="350" height="180" fill="#ffebee" stroke="#e57373" class="box"/>
+  <text x="195" y="85" class="label" text-anchor="middle" font-weight="bold">传统方法（全量验证）</text>
+  
+  <!-- Flow -->
+  <rect x="40" y="100" width="310" height="30" fill="#fff" stroke="#999" rx="3"/>
+  <text x="195" y="120" class="label" text-anchor="middle">LLM 生成初始答案</text>
+  
+  <line x1="195" y1="130" x2="195" y2="145" stroke="#999" stroke-width="2"/>
+  <polygon points="195,145 190,140 200,140" fill="#999"/>
+  
+  <rect x="40" y="150" width="310" height="30" fill="#fff" stroke="#999" rx="3"/>
+  <text x="195" y="170" class="label" text-anchor="middle">对所有答案进行验证</text>
+  
+  <line x1="195" y1="180" x2="195" y2="195" stroke="#999" stroke-width="2"/>
+  <polygon points="195,195 190,190 200,190" fill="#999"/>
+  
+  <rect x="40" y="200" width="310" height="30" fill="#fff" stroke="#999" rx="3"/>
+  <text x="195" y="220" class="label" text-anchor="middle">返回最终答案</text>
+  
+  <!-- Cost -->
+  <rect x="40" y="240" width="310" height="30" fill="#ffebee" stroke="#e57373" rx="3"/>
+  <text x="195" y="260" class="label" text-anchor="middle">成本：所有答案都验证 = 高 token 消耗</text>
+  
+  <!-- Arrow -->
+  <line x1="380" y1="150" x2="420" y2="150" stroke="#999" stroke-width="2"/>
+  <polygon points="420,145 430,150 420,155" fill="#999"/>
+  
+  <!-- SEVRA approach (right) -->
+  <rect x="430" y="60" width="350" height="180" fill="#e8f5e9" stroke="#81c784" class="box"/>
+  <text x="605" y="85" class="label" text-anchor="middle" font-weight="bold">SEVRA（选择性验证）</text>
+  
+  <!-- Flow -->
+  <rect x="450" y="100" width="310" height="30" fill="#fff" stroke="#999" rx="3"/>
+  <text x="605" y="120" class="label" text-anchor="middle">LLM 生成初始答案</text>
+  
+  <line x1="605" y1="130" x2="605" y2="145" stroke="#999" stroke-width="2"/>
+  <polygon points="605,145 600,140 610,140" fill="#999"/>
+  
+  <!-- Controller -->
+  <rect x="470" y="150" width="270" height="40" fill="#e8f5e9" stroke="#81c784" rx="3"/>
+  <text x="605" y="168" class="label" text-anchor="middle" font-weight="bold">服务层控制器</text>
+  <text x="605" y="182" class="label" text-anchor="middle">决定是否验证</text>
+  
+  <!-- Decision branches -->
+  <line x1="540" y1="190" x2="540" y2="205" stroke="#81c784" stroke-width="2"/>
+  <rect x="470" y="210" width="130" height="25" fill="#e8f5e9" stroke="#81c784" rx="2"/>
+  <text x="535" y="227" class="label" text-anchor="middle">高置信度</text>
+  
+  <line x1="670" y1="190" x2="670" y2="205" stroke="#ffb74d" stroke-width="2"/>
+  <rect x="610" y="210" width="130" height="25" fill="#fff3e0" stroke="#ffb74d" rx="2"/>
+  <text x="675" y="227" class="label" text-anchor="middle">低置信度</text>
+  
+  <!-- Results -->
+  <rect x="470" y="240" width="130" height="25" fill="#e8f5e9" stroke="#81c784" rx="2"/>
+  <text x="535" y="257" class="label" text-anchor="middle">直接返回</text>
+  
+  <rect x="610" y="240" width="130" height="25" fill="#fff3e9" stroke="#ffb74d" rx="2"/>
+  <text x="675" y="257" class="label" text-anchor="middle">启动验证</text>
+  
+  <!-- Results table -->
+  <rect x="20" y="270" width="760" height="150" fill="#fff" stroke="#ccc" rx="5"/>
+  <text x="400" y="295" class="label" text-anchor="middle" font-weight="bold">实验结果</text>
+  
+  <!-- Table headers -->
+  <line x1="20" y1="310" x2="780" y2="310" stroke="#ccc"/>
+  <text x="60" y="325" class="label" font-weight="bold">基准</text>
+  <text x="250" y="325" class="label" font-weight="bold">准确率</text>
+  <text x="450" y="325" class="label" font-weight="bold">有害翻转率</text>
+  <text x="650" y="325" class="label" font-weight="bold">验证节省</text>
+  
+  <!-- Row 1 -->
+  <line x1="20" y1="340" x2="780" y2="340" stroke="#eee"/>
+  <text x="60" y="355" class="label">MATH500</text>
+  <text x="250" y="355" class="label" fill="#81c784" font-weight="bold">76.3%</text>
+  <text x="450" y="355" class="label">1.0% (↓从 2.2%)</text>
+  <text x="650" y="355" class="label">~40%</text>
+  
+  <!-- Row 2 -->
+  <line x1="20" y1="370" x2="780" y2="370" stroke="#eee"/>
+  <text x="60" y="385" class="label">GSM8K</text>
+  <text x="250" y="385" class="label" fill="#81c784" font-weight="bold">92.1%</text>
+  <text x="450" y="385" class="label">0.5% (↓从 1.8%)</text>
+  <text x="650" y="385" class="label">~35%</text>
+  
+  <!-- Row 3 -->
+  <line x1="20" y1="400" x2="780" y2="400" stroke="#eee"/>
+  <text x="60" y="415" class="label">HumanEval</text>
+  <text x="250" y="415" class="label" fill="#81c784" font-weight="bold">88.5%</text>
+  <text x="450" y="415" class="label">1.2% (↓从 3.1%)</text>
+  <text x="650" y="415" class="label">~30%</text>
+  
+  <!-- Key insight -->
+  <rect x="20" y="430" width="760" height="30" fill="#e3f2fd" stroke="#90caf9" rx="3"/>
+  <text x="400" y="450" class="label" text-anchor="middle">核心发现：验证并非总是有益的——选择性验证在保持准确率的同时显著降低 token 消耗</text>
+</svg>

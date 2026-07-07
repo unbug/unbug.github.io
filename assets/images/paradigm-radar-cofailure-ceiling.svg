@@ -16,92 +16,91 @@
   <rect width="800" height="450" fill="#fafafa"/>
   
   <!-- Title -->
-  <text x="400" y="25" class="title" text-anchor="middle">HarnessFix：从失败轨迹到可靠 Agent 的自动修复</text>
-  <text x="400" y="42" class="subtitle" text-anchor="middle">HTIR 中间表示 + 步骤级归因 + Repair Operators</text>
+  <text x="400" y="25" class="title" text-anchor="middle">Co-Failure Ceiling：多模型组合的硬性天花板</text>
+  <text x="400" y="42" class="subtitle" text-anchor="middle">跨 67 个模型、21 家提供商的实测——beta（共失败率）是硬性限制</text>
   
-  <!-- Traditional approach (left) -->
+  <!-- Traditional view (left) -->
   <rect x="20" y="60" width="350" height="180" fill="#ffebee" stroke="#e57373" class="box"/>
-  <text x="195" y="85" class="label" text-anchor="middle" font-weight="bold">传统修复方法</text>
+  <text x="195" y="85" class="label" text-anchor="middle" font-weight="bold">传统观点（rho 误导）</text>
   
   <!-- Flow -->
   <rect x="40" y="100" width="310" height="30" fill="#fff" stroke="#999" rx="3"/>
-  <text x="195" y="120" class="label" text-anchor="middle">Agent 执行失败</text>
+  <text x="195" y="120" class="label" text-anchor="middle">组合多个模型</text>
   
   <line x1="195" y1="130" x2="195" y2="145" stroke="#999" stroke-width="2"/>
   <polygon points="195,145 190,140 200,140" fill="#999"/>
   
   <rect x="40" y="150" width="310" height="30" fill="#fff" stroke="#999" rx="3"/>
-  <text x="195" y="170" class="label" text-anchor="middle">重试或人工干预</text>
+  <text x="195" y="170" class="label" text-anchor="middle">测量错误相关性 (rho)</text>
   
   <line x1="195" y1="180" x2="195" y2="195" stroke="#999" stroke-width="2"/>
   <polygon points="195,195 190,190 200,190" fill="#999"/>
   
   <rect x="40" y="200" width="310" height="30" fill="#fff" stroke="#999" rx="3"/>
-  <text x="195" y="220" class="label" text-anchor="middle">无系统性修复</text>
+  <text x="195" y="220" class="label" text-anchor="middle">假设：降低 rho = 提升组合性能</text>
   
-  <!-- Limitation -->
+  <!-- Flaw -->
   <rect x="40" y="240" width="310" height="30" fill="#ffebee" stroke="#e57373" rx="3"/>
-  <text x="195" y="260" class="label" text-anchor="middle">局限：碎片化证据、无法定位根因</text>
+  <text x="195" y="260" class="label" text-anchor="middle">缺陷：忽略共失败率 beta（硬性天花板）</text>
   
   <!-- Arrow -->
   <line x1="380" y1="150" x2="420" y2="150" stroke="#999" stroke-width="2"/>
   <polygon points="420,145 430,150 420,155" fill="#999"/>
   
-  <!-- HarnessFix (right) -->
+  <!-- Co-Failure Ceiling (right) -->
   <rect x="430" y="60" width="350" height="180" fill="#e8f5e9" stroke="#81c784" class="box"/>
-  <text x="605" y="85" class="label" text-anchor="middle" font-weight="bold">HarnessFix（系统性修复）</text>
+  <text x="605" y="85" class="label" text-anchor="middle" font-weight="bold">Co-Failure Ceiling（新框架）</text>
   
   <!-- Flow -->
   <rect x="450" y="100" width="310" height="30" fill="#fff" stroke="#999" rx="3"/>
-  <text x="605" y="120" class="label" text-anchor="middle">Agent 执行失败</text>
+  <text x="605" y="120" class="label" text-anchor="middle">组合多个模型</text>
   
   <line x1="605" y1="130" x2="605" y2="145" stroke="#999" stroke-width="2"/>
   <polygon points="605,145 600,140 610,140" fill="#999"/>
   
-  <!-- HTIR -->
+  <!-- Two parameters -->
   <rect x="470" y="150" width="270" height="30" fill="#e8f5e9" stroke="#81c784" rx="3"/>
-  <text x="605" y="170" class="label" text-anchor="middle">HTIR 中间表示（统一碎片化证据）</text>
+  <text x="605" y="170" class="label" text-anchor="middle">beta（共失败率）：硬性天花板</text>
   
   <line x1="605" y1="180" x2="605" y2="195" stroke="#999" stroke-width="2"/>
   <polygon points="605,195 600,190 610,190" fill="#999"/>
   
-  <!-- Diagnosis -->
   <rect x="470" y="200" width="270" height="30" fill="#e8f5e9" stroke="#81c784" rx="3"/>
-  <text x="605" y="220" class="label" text-anchor="middle">步骤级归因（从哪步错到为什么错）</text>
+  <text x="605" y="220" class="label" text-anchor="middle">rho（错误指标）：可优化空间</text>
   
   <!-- Results table -->
   <rect x="20" y="270" width="760" height="150" fill="#fff" stroke="#ccc" rx="5"/>
-  <text x="400" y="295" class="label" text-anchor="middle" font-weight="bold">实验结果</text>
+  <text x="400" y="295" class="label" text-anchor="middle" font-weight="bold">关键数据：67 个模型、21 家提供商</text>
   
   <!-- Table headers -->
   <line x1="20" y1="310" x2="780" y2="310" stroke="#ccc"/>
-  <text x="60" y="325" class="label" font-weight="bold">指标</text>
-  <text x="250" y="325" class="label" font-weight="bold">数值</text>
-  <text x="450" y="325" class="label" font-weight="bold">说明</text>
-  <text x="650" y="325" class="label" font-weight="bold">对比基线</text>
+  <text x="60" y="325" class="label" font-weight="bold">任务类型</text>
+  <text x="250" y="325" class="label" font-weight="bold">beta（共失败率）</text>
+  <text x="450" y="325" class="label" font-weight="bold">含义</text>
+  <text x="650" y="325" class="label" font-weight="bold">优化空间</text>
   
   <!-- Row 1 -->
   <line x1="20" y1="340" x2="780" y2="340" stroke="#eee"/>
-  <text x="60" y="355" class="label">诊断准确率</text>
-  <text x="250" y="355" class="label" fill="#81c784" font-weight="bold">89.3%</text>
-  <text x="450" y="355" class="label">正确定位失败步骤</text>
-  <text x="650" y="355" class="label">+23% vs 基线</text>
+  <text x="60" y="355" class="label">开放数学</text>
+  <text x="250" y="355" class="label" fill="#e57373" font-weight="bold">0.052</text>
+  <text x="450" y="355" class="label">低估 2.5 倍</text>
+  <text x="650" y="355" class="label">有限</text>
   
   <!-- Row 2 -->
   <line x1="20" y1="370" x2="780" y2="370" stroke="#eee"/>
-  <text x="60" y="385" class="label">修复覆盖率</text>
-  <text x="250" y="385" class="label" fill="#81c784" font-weight="bold">76.5%</text>
-  <text x="450" y="385" class="label">可修复失败比例</text>
-  <text x="650" y="385" class="label">+18% vs 基线</text>
+  <text x="60" y="385" class="label">代码任务</text>
+  <text x="250" y="385" class="label" fill="#ffb74d" font-weight="bold">0.079</text>
+  <text x="450" y="385" class="label">中等天花板</text>
+  <text x="650" y="385" class="label">中等</text>
   
   <!-- Row 3 -->
   <line x1="20" y1="400" x2="780" y2="400" stroke="#eee"/>
-  <text x="60" y="415" class="label">跨框架一致性</text>
-  <text x="250" y="415" class="label" fill="#81c784" font-weight="bold">94.2%</text>
-  <text x="450" y="415" class="label">不同 Agent 框架</text>
-  <text x="650" y="415" class="label">统一标准</text>
+  <text x="60" y="415" class="label">自由回答</text>
+  <text x="250" y="415" class="label" fill="#81c784" font-weight="bold">0.127</text>
+  <text x="450" y="415" class="label">beta 升至最高</text>
+  <text x="650" y="415" class="label">较大</text>
   
   <!-- Key insight -->
   <rect x="20" y="430" width="760" height="30" fill="#e3f2fd" stroke="#90caf9" rx="3"/>
-  <text x="400" y="450" class="label" text-anchor="middle">核心发现：从诊断到修复的完整闭环——HTIR 统一碎片化证据，实现系统性自动修复</text>
+  <text x="400" y="450" class="label" text-anchor="middle">核心发现：rho 是行业最大的误导指标——beta（共失败率）才是组合模型的硬性天花板</text>
 </svg>

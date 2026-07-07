@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+  <defs>
+    <linearGradient id="skillGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="agentdogGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="reflectGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#6d28d9;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="500" fill="#0f172a"/>
+
+  <!-- Title -->
+  <text x="600" y="40" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#f1f5f9">Agent 安全闭环: SKILL.nb + AgentDoG 1.5 + REFLECT</text>
+
+  <!-- Central circle: Agent -->
+  <circle cx="600" cy="240" r="80" fill="#1e293b" stroke="#f1f5f9" stroke-width="2"/>
+  <text x="600" y="230" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#f1f5f9">Agent</text>
+  <text x="600" y="250" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#94a3b8">执行系统</text>
+
+  <!-- Top: SKILL.nb (事前治理) -->
+  <rect x="380" y="55" width="260" height="120" rx="12" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+  <text x="510" y="82" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#60a5fa">SKILL.nb (#65)</text>
+
+  <!-- Phase label -->
+  <rect x="430" y="92" width="160" height="22" rx="4" fill="#1e3a5f"/>
+  <text x="510" y="107" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#93c5fd">事前治理</text>
+
+  <!-- Key points -->
+  <rect x="410" y="120" width="200" height="22" rx="4" fill="#1e3a5f"/>
+  <text x="510" y="135" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#93c5fd">正向保障: 定义正确行为</text>
+
+  <rect x="410" y="146" width="200" height="22" rx="4" fill="#1e3a5f"/>
+  <text x="510" y="161" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#93c5fd">选择性形式化 + 门控执行</text>
+
+  <rect x="410" y="172" width="200" height="22" rx="4" fill="#1e3a5f"/>
+  <text x="510" y="187" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#93c5fd">确保 Agent 按规范执行</text>
+
+  <!-- Arrow: SKILL.nb -> Agent -->
+  <line x1="510" y1="175" x2="510" y2="160" stroke="#60a5fa" stroke-width="2"/>
+  <polygon points="510,160 505,170 515,170" fill="#60a5fa"/>
+
+  <!-- Right: AgentDoG 1.5 (事中监控) -->
+  <rect x="830" y="180" width="260" height="120" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+  <text x="960" y="207" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#fbbf24">AgentDoG 1.5 (#68)</text>
+
+  <!-- Phase label -->
+  <rect x="880" y="217" width="160" height="22" rx="4" fill="#422006"/>
+  <text x="960" y="232" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#fcd34d">事中监控</text>
+
+  <!-- Key points -->
+  <rect x="860" y="245" width="200" height="22" rx="4" fill="#422006"/>
+  <text x="960" y="260" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#fbbf24">负向检测: 发现偏离行为</text>
+
+  <rect x="860" y="271" width="200" height="22" rx="4" fill="#422006"/>
+  <text x="960" y="286" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#fbbf24">轨迹级评估 + 推理增强</text>
+
+  <rect x="860" y="297" width="200" height="22" rx="4" fill="#422006"/>
+  <text x="960" y="312" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#fbbf24">实时阻断 + 诊断输出</text>
+
+  <!-- Arrow: Agent -> AgentDoG -->
+  <line x1="680" y1="240" x2="730" y2="240" stroke="#fbbf24" stroke-width="2"/>
+  <polygon points="730,235 740,240 730,245" fill="#fbbf24"/>
+
+  <!-- Arrow: AgentDoG -> Agent (feedback) -->
+  <line x1="960" y1="300" x2="960" y2="320" stroke="#fbbf24" stroke-width="2"/>
+  <line x1="960" y1="320" x2="700" y2="320" stroke="#fbbf24" stroke-width="2"/>
+  <polygon points="700,315 710,320 700,325" fill="#fbbf24"/>
+
+  <!-- Bottom: REFLECT (事后归因) -->
+  <rect x="380" y="365" width="260" height="120" rx="12" fill="#1e293b" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="510" y="392" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#a78bfa">REFLECT (#66)</text>
+
+  <!-- Phase label -->
+  <rect x="430" y="402" width="160" height="22" rx="4" fill="#3b0764"/>
+  <text x="510" y="417" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#c4b5fd">事后归因</text>
+
+  <!-- Key points -->
+  <rect x="410" y="430" width="200" height="22" rx="4" fill="#3b0764"/>
+  <text x="510" y="445" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#c4b5fd">错误归因: 分析失败原因</text>
+
+  <rect x="410" y="456" width="200" height="22" rx="4" fill="#3b0764"/>
+  <text x="510" y="471" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#c4b5fd">定位规划/执行问题</text>
+
+  <rect x="410" y="482" width="200" height="22" rx="4" fill="#3b0764"/>
+  <text x="510" y="497" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#c4b5fd">持续改进安全策略</text>
+
+  <!-- Arrow: Agent -> REFLECT -->
+  <line x1="560" y1="320" x2="560" y2="340" stroke="#a78bfa" stroke-width="2"/>
+  <polygon points="555,340 560,350 565,340" fill="#a78bfa"/>
+
+  <!-- Arrow: REFLECT -> SKILL.nb (feedback) -->
+  <line x1="510" y1="365" x2="510" y2="175" stroke="#c4b5fd" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- Arrow: AgentDoG -> REFLECT (feedback) -->
+  <line x1="860" y1="300" x2="860" y2="340" stroke="#c4b5fd" stroke-width="2" stroke-dasharray="6,4"/>
+  <line x1="860" y1="340" x2="640" y2="340" stroke="#c4b5fd" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- Center label -->
+  <text x="600" y="275" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#fbbf24">实时监控</text>
+
+  <!-- Bottom summary bar -->
+  <rect x="40" y="505" width="1120" height="30" rx="6" fill="#1e293b"/>
+  <text x="600" y="524" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#f1f5f9">事前规范 (SKILL.nb) + 事中监控 (AgentDoG 1.5) + 事后归因 (REFLECT) = 完整 Agent 安全闭环</text>
+
+  <!-- Side annotations -->
+  <rect x="20" y="180" width="140" height="60" rx="6" fill="#1e3a5f"/>
+  <text x="90" y="200" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#60a5fa">正向保障</text>
+  <text x="90" y="218" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#93c5fd">告诉Agent应该怎么做</text>
+  <text x="90" y="234" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#93c5fd">防止走错路</text>
+
+  <rect x="1040" y="180" width="140" height="60" rx="6" fill="#422006"/>
+  <text x="1110" y="200" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#fbbf24">负向检测</text>
+  <text x="1110" y="218" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#fcd34d">发现Agent正在做什么不该做的事</text>
+  <text x="1110" y="234" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#fbbf24">检测走偏路</text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#60a5fa"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#fbbf24"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#a78bfa"/>
+    </marker>
+  </defs>
+</svg>

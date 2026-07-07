@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #333; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 11px; fill: #666; }
+      .box { stroke-width: 2; rx: 5; ry: 5; }
+      .arrow { stroke: #999; stroke-width: 2; marker-end: url(#arrowhead); }
+      .label { font-family: Arial, sans-serif; font-size: 10px; fill: #333; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#999"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="#fafafa"/>
+  
+  <!-- Title -->
+  <text x="400" y="25" class="title" text-anchor="middle">LedgerAgent：结构化状态管理架构</text>
+  <text x="400" y="42" class="subtitle" text-anchor="middle">两个确定性组件实现零额外token开销的状态管理</text>
+  
+  <!-- Traditional Agent (left) -->
+  <rect x="20" y="60" width="350" height="180" fill="#ffebee" stroke="#e57373" class="box"/>
+  <text x="195" y="85" class="label" text-anchor="middle" font-weight="bold">传统 Agent（隐式状态）</text>
+  
+  <!-- Prompt box -->
+  <rect x="40" y="100" width="310" height="120" fill="#fff" stroke="#999" rx="3"/>
+  <text x="195" y="120" class="label" text-anchor="middle">Prompt 文本</text>
+  
+  <!-- Components in prompt -->
+  <rect x="60" y="135" width="130" height="25" fill="#ffcdd2" stroke="#e57373" rx="2"/>
+  <text x="125" y="152" class="label" text-anchor="middle">观察结果</text>
+  
+  <rect x="210" y="135" width="130" height="25" fill="#ffcdd2" stroke="#e57373" rx="2"/>
+  <text x="275" y="152" class="label" text-anchor="middle">工具返回</text>
+  
+  <rect x="60" y="170" width="130" height="25" fill="#ffcdd2" stroke="#e57373" rx="2"/>
+  <text x="125" y="187" class="label" text-anchor="middle">政策指令</text>
+  
+  <rect x="210" y="170" width="130" height="25" fill="#ffcdd2" stroke="#e57373" rx="2"/>
+  <text x="275" y="187" class="label" text-anchor="middle">任务状态</text>
+  
+  <!-- Fault modes -->
+  <rect x="40" y="205" width="310" height="30" fill="#ffebee" stroke="#e57373" rx="3"/>
+  <text x="195" y="224" class="label" text-anchor="middle">故障模式：信息过时决策错误 + 语法有效但策略违规</text>
+  
+  <!-- Arrow -->
+  <line x1="380" y1="150" x2="420" y2="150" stroke="#999" stroke-width="2"/>
+  <polygon points="420,145 430,150 420,155" fill="#999"/>
+  
+  <!-- LedgerAgent (right) -->
+  <rect x="430" y="60" width="350" height="180" fill="#e8f5e9" stroke="#81c784" class="box"/>
+  <text x="605" y="85" class="label" text-anchor="middle" font-weight="bold">LedgerAgent（结构化状态）</text>
+  
+  <!-- Two components -->
+  <rect x="450" y="100" width="150" height="70" fill="#fff" stroke="#81c784" rx="3"/>
+  <text x="525" y="120" class="label" text-anchor="middle" font-weight="bold">类型化账本</text>
+  <text x="525" y="135" class="label" text-anchor="middle">L: P -> V</text>
+  <text x="525" y="150" class="label" text-anchor="middle">(schema锚定)</text>
+  
+  <rect x="620" y="100" width="150" height="70" fill="#fff" stroke="#81c784" rx="3"/>
+  <text x="695" y="120" class="label" text-anchor="middle" font-weight="bold">政策门控器</text>
+  <text x="695" y="135" class="label" text-anchor="middle">确定性谓词</text>
+  <text x="695" y="150" class="label" text-anchor="middle">(28个规则)</text>
+  
+  <!-- Zero overhead -->
+  <rect x="450" y="180" width="320" height="30" fill="#e8f5e9" stroke="#81c784" rx="3"/>
+  <text x="610" y="200" class="label" text-anchor="middle">零额外 token 开销 | 观察而非假设</text>
+  
+  <!-- Results table -->
+  <rect x="20" y="270" width="760" height="150" fill="#fff" stroke="#ccc" rx="5"/>
+  <text x="400" y="295" class="label" text-anchor="middle" font-weight="bold">实验结果（Pass^1 提升）</text>
+  
+  <!-- Table headers -->
+  <line x1="20" y1="310" x2="780" y2="310" stroke="#ccc"/>
+  <text x="60" y="325" class="label" font-weight="bold">模型</text>
+  <text x="200" y="325" class="label" font-weight="bold">领域</text>
+  <text x="400" y="325" class="label" font-weight="bold">Pass^1 提升</text>
+  <text x="600" y="325" class="label" font-weight="bold">Token 开销</text>
+  
+  <!-- Row 1 -->
+  <line x1="20" y1="340" x2="780" y2="340" stroke="#eee"/>
+  <text x="60" y="355" class="label">GPT-4.1</text>
+  <text x="200" y="355" class="label">通用</text>
+  <text x="400" y="355" class="label" fill="#81c784" font-weight="bold">+12.2</text>
+  <text x="600" y="355" class="label">0%</text>
+  
+  <!-- Row 2 -->
+  <line x1="20" y1="370" x2="780" y2="370" stroke="#eee"/>
+  <text x="60" y="385" class="label">MiniMax M2.5</text>
+  <text x="200" y="385" class="label">零售</text>
+  <text x="400" y="385" class="label" fill="#81c784" font-weight="bold">+24.5</text>
+  <text x="600" y="385" class="label">0%</text>
+  
+  <!-- Row 3 -->
+  <line x1="20" y1="400" x2="780" y2="400" stroke="#eee"/>
+  <text x="60" y="415" class="label">GLM-5</text>
+  <text x="200" y="415" class="label">通用</text>
+  <text x="400" y="415" class="label" fill="#81c784" font-weight="bold">+7.6</text>
+  <text x="600" y="415" class="label">0%</text>
+  
+  <!-- Comparison with IRMA -->
+  <rect x="20" y="430" width="760" height="30" fill="#fff3e0" stroke="#ffb74d" rx="3"/>
+  <text x="400" y="450" class="label" text-anchor="middle">对比 IRMA：LedgerAgent Pass^1 +27.2% vs IRMA +23.4%，Token 开销 0% vs 53.1%</text>
+</svg>

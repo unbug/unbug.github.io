@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #333; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 11px; fill: #666; }
+      .box { stroke-width: 2; rx: 5; ry: 5; }
+      .arrow { stroke: #999; stroke-width: 2; marker-end: url(#arrowhead); }
+      .label { font-family: Arial, sans-serif; font-size: 10px; fill: #333; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#999"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="#fafafa"/>
+  
+  <!-- Title -->
+  <text x="400" y="25" class="title" text-anchor="middle">生成 - 验证差距与 Misevolve 风险</text>
+  <text x="400" y="42" class="subtitle" text-anchor="middle">自我修正失败的根本原因：生成能力超过验证能力</text>
+  
+  <!-- Generation-Verification Gap (left) -->
+  <rect x="20" y="60" width="350" height="180" fill="#ffebee" stroke="#e57373" class="box"/>
+  <text x="195" y="85" class="label" text-anchor="middle" font-weight="bold">生成 - 验证差距</text>
+  
+  <!-- Generation capability -->
+  <rect x="40" y="100" width="310" height="30" fill="#fff" stroke="#999" rx="3"/>
+  <text x="195" y="120" class="label" text-anchor="middle">生成能力：快速发展</text>
+  
+  <!-- Verification capability -->
+  <rect x="40" y="140" width="310" height="30" fill="#fff" stroke="#999" rx="3"/>
+  <text x="195" y="160" class="label" text-anchor="middle">验证能力：提升滞后</text>
+  
+  <!-- Gap visualization -->
+  <rect x="40" y="180" width="310" height="40" fill="#ffebee" stroke="#e57373" rx="3"/>
+  <text x="195" y="200" class="label" text-anchor="middle">差距：生成看似合理但错误的输出</text>
+  
+  <!-- Self-verification failure -->
+  <rect x="40" y="230" width="310" height="30" fill="#ffebee" stroke="#e57373" rx="3"/>
+  <text x="195" y="250" class="label" text-anchor="middle">自我验证无法检测自身错误</text>
+  
+  <!-- Arrow -->
+  <line x1="380" y1="150" x2="420" y2="150" stroke="#999" stroke-width="2"/>
+  <polygon points="420,145 430,150 420,155" fill="#999"/>
+  
+  <!-- Misevolve risk (right) -->
+  <rect x="430" y="60" width="350" height="180" fill="#fff3e0" stroke="#ffb74d" class="box"/>
+  <text x="605" y="85" class="label" text-anchor="middle" font-weight="bold">Misevolve：自我进化风险</text>
+  
+  <!-- Feedback loop -->
+  <rect x="450" y="100" width="310" height="30" fill="#fff" stroke="#999" rx="3"/>
+  <text x="605" y="120" class="label" text-anchor="middle">推理时反馈循环失效</text>
+  
+  <!-- Same cognitive framework -->
+  <rect x="450" y="140" width="310" height="30" fill="#fff" stroke="#999" rx="3"/>
+  <text x="605" y="160" class="label" text-anchor="middle">相同认知框架进行生成和验证</text>
+  
+  <!-- Error amplification -->
+  <rect x="470" y="180" width="270" height="30" fill="#fff3e0" stroke="#ffb74d" rx="3"/>
+  <text x="605" y="200" class="label" text-anchor="middle">自我修正引入新错误或放大偏差</text>
+  
+  <!-- Confidence escalation -->
+  <rect x="470" y="220" width="270" height="30" fill="#fff3e0" stroke="#ffb74d" rx="3"/>
+  <text x="605" y="240" class="label" text-anchor="middle">对错误输出信心不断增加</text>
+  
+  <!-- Results table -->
+  <rect x="20" y="270" width="760" height="150" fill="#fff" stroke="#ccc" rx="5"/>
+  <text x="400" y="295" class="label" text-anchor="middle" font-weight="bold">实证发现：自我修正降低输出质量</text>
+  
+  <!-- Table headers -->
+  <line x1="20" y1="310" x2="780" y2="310" stroke="#ccc"/>
+  <text x="60" y="325" class="label" font-weight="bold">现象</text>
+  <text x="250" y="325" class="label" font-weight="bold">表现</text>
+  <text x="450" y="325" class="label" font-weight="bold">原因</text>
+  <text x="650" y="325" class="label" font-weight="bold">影响</text>
+  
+  <!-- Row 1 -->
+  <line x1="20" y1="340" x2="780" y2="340" stroke="#eee"/>
+  <text x="60" y="355" class="label">自我修正失败</text>
+  <text x="250" y="355" class="label">更详细但同样错误</text>
+  <text x="450" y="355" class="label">有缺陷的认知框架</text>
+  <text x="650" y="355" class="label">质量下降</text>
+  
+  <!-- Row 2 -->
+  <line x1="20" y1="370" x2="780" y2="370" stroke="#eee"/>
+  <text x="60" y="385" class="label">Misevolve</text>
+  <text x="250" y="385" class="label">错误信念强化</text>
+  <text x="450" y="385" class="label">缺陷验证机制</text>
+  <text x="650" y="385" class="label">方向性偏离</text>
+  
+  <!-- Row 3 -->
+  <line x1="20" y1="400" x2="780" y2="400" stroke="#eee"/>
+  <text x="60" y="415" class="label">复杂推理任务</text>
+  <text x="250" y="415" class="label">退化现象最明显</text>
+  <text x="450" y="415" class="label">多步错误传播</text>
+  <text x="650" y="415" class="label">累积误差</text>
+  
+  <!-- Key insight -->
+  <rect x="20" y="430" width="760" height="30" fill="#e3f2fd" stroke="#90caf9" rx="3"/>
+  <text x="400" y="450" class="label" text-anchor="middle">核心发现：自我修正往往降低而非提升质量——Misevolve 是自主 Agent 系统的重大风险</text>
+</svg>

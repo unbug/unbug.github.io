@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+  <defs>
+    <linearGradient id="stepGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="500" fill="#0f172a"/>
+
+  <!-- Title -->
+  <text x="600" y="40" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#f1f5f9">轨迹级评估完整流程</text>
+
+  <!-- Step 1: Trajectory Collection -->
+  <rect x="40" y="65" width="230" height="180" rx="12" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+  <text x="155" y="95" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#60a5fa">步骤 1: 轨迹收集</text>
+
+  <!-- Agent actions -->
+  <rect x="60" y="110" width="190" height="32" rx="6" fill="#1e3a5f"/>
+  <text x="155" y="130" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#93c5fd">[步骤1] 查询用户A的订单</text>
+
+  <rect x="60" y="148" width="190" height="32" rx="6" fill="#1e3a5f"/>
+  <text x="155" y="168" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#93c5fd">[步骤2] 读取用户A的联系方式</text>
+
+  <rect x="60" y="186" width="190" height="32" rx="6" fill="#1e3a5f"/>
+  <text x="155" y="206" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#93c5fd">[步骤3] 调用邮件API发送数据</text>
+
+  <rect x="60" y="224" width="190" height="32" rx="6" fill="#1e3a5f"/>
+  <text x="155" y="244" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#93c5fd">[步骤4] 编码结果并发送到外部</text>
+
+  <!-- Arrow to Step 2 -->
+  <line x1="270" y1="155" x2="310" y2="155" stroke="#64748b" stroke-width="2"/>
+  <polygon points="310,150 320,155 310,160" fill="#64748b"/>
+
+  <!-- Step 2: Local Risk Assessment -->
+  <rect x="320" y="65" width="230" height="180" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+  <text x="435" y="95" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#fbbf24">步骤 2: 局部风险评估</text>
+
+  <!-- Local assessments -->
+  <rect x="340" y="110" width="190" height="32" rx="6" fill="#422006"/>
+  <text x="435" y="130" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#fcd34d">步骤1: 低风险 (订单查询)</text>
+
+  <rect x="340" y="148" width="190" height="32" rx="6" fill="#78350f"/>
+  <text x="435" y="168" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#fbbf24">步骤2: 中风险 (读取联系方式)</text>
+
+  <rect x="340" y="186" width="190" height="32" rx="6" fill="#78350f"/>
+  <text x="435" y="206" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#fbbf24">步骤3: 中风险 (邮件API调用)</text>
+
+  <rect x="340" y="224" width="190" height="32" rx="6" fill="#7f1d1d"/>
+  <text x="435" y="244" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#fca5a5">步骤4: 高风险 (数据外传)</text>
+
+  <!-- Arrow to Step 3 -->
+  <line x1="550" y1="155" x2="590" y2="155" stroke="#64748b" stroke-width="2"/>
+  <polygon points="590,150 600,155 590,160" fill="#64748b"/>
+
+  <!-- Step 3: Cross-step Correlation -->
+  <rect x="600" y="65" width="230" height="180" rx="12" fill="#1e293b" stroke="#a855f7" stroke-width="2"/>
+  <text x="715" y="95" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#c084fc">步骤 3: 跨步关联分析</text>
+
+  <!-- Correlation patterns -->
+  <rect x="620" y="110" width="190" height="55" rx="6" fill="#3b0764"/>
+  <text x="715" y="132" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#d8b4fe">攻击链模式匹配</text>
+  <text x="715" y="150" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#c084fc">信息收集 → 权限获取 → 数据外传</text>
+
+  <!-- Risk score -->
+  <rect x="620" y="175" width="190" height="32" rx="6" fill="#7f1d1d"/>
+  <text x="715" y="195" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#fca5a5">综合风险评分: 0.94 (高危)</text>
+
+  <rect x="620" y="218" width="190" height="32" rx="6" fill="#7f1d1d"/>
+  <text x="715" y="238" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#fca5a5">匹配模式: 数据泄露攻击链</text>
+
+  <!-- Arrow to Step 4 -->
+  <line x1="830" y1="155" x2="870" y2="155" stroke="#64748b" stroke-width="2"/>
+  <polygon points="870,150 880,155 870,160" fill="#64748b"/>
+
+  <!-- Step 4: Rationale Generation -->
+  <rect x="880" y="65" width="280" height="180" rx="12" fill="#1e293b" stroke="#ec4899" stroke-width="2"/>
+  <text x="1020" y="95" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#f472b6">步骤 4: 推理增强诊断</text>
+
+  <!-- Diagnostic output -->
+  <rect x="900" y="110" width="240" height="125" rx="6" fill="#1e1b4b"/>
+  <text x="1020" y="130" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#c7d2fe">诊断理由:</text>
+  <text x="915" y="148" font-family="monospace" font-size="9" fill="#a5b4fc">步骤3读取用户联系方式</text>
+  <text x="915" y="162" font-family="monospace" font-size="9" fill="#a5b4fc">步骤4将数据编码后外传</text>
+  <text x="915" y="176" font-family="monospace" font-size="9" fill="#fca5a5">三步组合构成数据泄露攻击链</text>
+  <text x="915" y="190" font-family="monospace" font-size="9" fill="#fbbf24">建议: 阻断执行并通知管理员</text>
+
+  <!-- Bottom section: Decision flow -->
+  <rect x="40" y="280" width="1120" height="195" rx="12" fill="#1e293b"/>
+  <text x="600" y="310" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#f1f5f9">决策输出层</text>
+
+  <!-- Risk threshold -->
+  <rect x="60" y="325" width="340" height="130" rx="8" fill="#065f46"/>
+  <text x="230" y="350" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#a7f3d0">风险评分 &lt; 阈值</text>
+  <rect x="80" y="365" width="300" height="40" rx="6" fill="#064e3b"/>
+  <text x="230" y="390" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#6ee7b7">安全通过 → 继续执行</text>
+
+  <!-- Arrow -->
+  <line x1="400" y1="385" x2="440" y2="385" stroke="#64748b" stroke-width="2"/>
+  <polygon points="440,380 450,385 440,390" fill="#64748b"/>
+
+  <!-- Risk threshold -->
+  <rect x="460" y="325" width="340" height="130" rx="8" fill="#78350f"/>
+  <text x="630" y="350" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#fcd34d">风险评分 = 阈值</text>
+  <rect x="480" y="365" width="300" height="40" rx="6" fill="#422006"/>
+  <text x="630" y="390" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#fbbf24">警告 → 记录日志 + 通知</text>
+
+  <!-- Arrow -->
+  <line x1="800" y1="385" x2="840" y2="385" stroke="#64748b" stroke-width="2"/>
+  <polygon points="840,380 850,385 840,390" fill="#64748b"/>
+
+  <!-- Risk threshold -->
+  <rect x="860" y="325" width="280" height="130" rx="8" fill="#7f1d1d"/>
+  <text x="1000" y="350" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#fca5a5">风险评分 &gt; 阈值</text>
+  <rect x="880" y="365" width="240" height="40" rx="6" fill="#450a0a"/>
+  <text x="1000" y="390" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#fca5a5">阻断 → 终止执行 + 报告</text>
+
+  <!-- Key insight at bottom -->
+  <rect x="40" y="485" width="1120" height="15" rx="4" fill="#334155"/>
+  <text x="600" y="497" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#94a3b8">整个流程在毫秒级延迟内完成，满足在线实时监控需求 | 推理增强确保每次判断都有可解释的诊断理由</text>
+</svg>
