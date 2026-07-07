@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#16213e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0f3460;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e94560;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ff6b6b;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Grid pattern overlay -->
+  <g opacity="0.05">
+    <line x1="0" y1="0" x2="1200" y2="630" stroke="#fff" stroke-width="0.5"/>
+    <line x1="1200" y1="0" x2="0" y2="630" stroke="#fff" stroke-width="0.5"/>
+    <circle cx="600" cy="315" r="200" fill="none" stroke="#fff" stroke-width="0.5"/>
+    <circle cx="600" cy="315" r="300" fill="none" stroke="#fff" stroke-width="0.5"/>
+    <circle cx="600" cy="315" r="400" fill="none" stroke="#fff" stroke-width="0.5"/>
+  </g>
+
+  <!-- Left side: Idealized world (small, controlled) -->
+  <g transform="translate(200, 280)">
+    <!-- Controlled environment box -->
+    <rect x="-120" y="-100" width="240" height="200" rx="8" fill="none" stroke="#4a9eff" stroke-width="2" opacity="0.6"/>
+    
+    <!-- Tool icons (pre-packaged) -->
+    <rect x="-80" y="-60" width="30" height="30" rx="4" fill="#4a9eff" opacity="0.3"/>
+    <text x="-65" y="-40" font-family="monospace" font-size="12" fill="#4a9eff" text-anchor="middle">Tool A</text>
+    
+    <rect x="-30" y="-60" width="30" height="30" rx="4" fill="#4a9eff" opacity="0.3"/>
+    <text x="-15" y="-40" font-family="monospace" font-size="12" fill="#4a9eff" text-anchor="middle">Tool B</text>
+    
+    <rect x="20" y="-60" width="30" height="30" rx="4" fill="#4a9eff" opacity="0.3"/>
+    <text x="35" y="-40" font-family="monospace" font-size="12" fill="#4a9eff" text-anchor="middle">Tool C</text>
+
+    <!-- Clean input -->
+    <rect x="-80" y="10" width="160" height="30" rx="4" fill="#4a9eff" opacity="0.2"/>
+    <text x="0" y="30" font-family="monospace" font-size="11" fill="#4a9eff" text-anchor="middle">Clean Input</text>
+
+    <!-- Perfect output -->
+    <rect x="-60" y="60" width="120" height="25" rx="4" fill="#4a9eff" opacity="0.3"/>
+    <text x="0" y="78" font-family="monospace" font-size="11" fill="#4a9eff" text-anchor="middle">Perfect Output</text>
+
+    <!-- Label -->
+    <text x="0" y="-120" font-family="system-ui, sans-serif" font-size="16" fill="#4a9eff" text-anchor="middle" font-weight="bold">理想化基准</text>
+  </g>
+
+  <!-- Arrow between worlds -->
+  <g transform="translate(580, 280)">
+    <line x1="-30" y1="0" x2="30" y2="0" stroke="#e94560" stroke-width="3"/>
+    <polygon points="30,-10 50,0 30,10" fill="#e94560"/>
+    <text x="0" y="-20" font-family="system-ui, sans-serif" font-size="13" fill="#e94560" text-anchor="middle">范式转移</text>
+  </g>
+
+  <!-- Right side: De-idealized world (large, chaotic) -->
+  <g transform="translate(820, 280)">
+    <!-- Open environment -->
+    <circle cx="0" cy="0" r="130" fill="none" stroke="#e94560" stroke-width="2" opacity="0.4"/>
+    
+    <!-- Scattered tools (need discovery) -->
+    <rect x="-100" y="-80" width="25" height="25" rx="3" fill="#e94560" opacity="0.2"/>
+    <text x="-87" y="-62" font-family="monospace" font-size="10" fill="#e94560" text-anchor="middle">?</text>
+
+    <rect x="70" y="-70" width="25" height="25" rx="3" fill="#e94560" opacity="0.2"/>
+    <text x="82" y="-52" font-family="monospace" font-size="10" fill="#e94560" text-anchor="middle">?</text>
+
+    <rect x="-90" y="50" width="25" height="25" rx="3" fill="#e94560" opacity="0.2"/>
+    <text x="-77" y="68" font-family="monospace" font-size="10" fill="#e94560" text-anchor="middle">?</text>
+
+    <rect x="60" y="60" width="25" height="25" rx="3" fill="#e94560" opacity="0.2"/>
+    <text x="72" y="78" font-family="monospace" font-size="10" fill="#e94560" text-anchor="middle">?</text>
+
+    <!-- Noise elements -->
+    <circle cx="-50" cy="-30" r="8" fill="#ff6b6b" opacity="0.3"/>
+    <circle cx="40" cy="20" r="6" fill="#ff6b6b" opacity="0.3"/>
+    <circle cx="80" cy="-40" r="5" fill="#ff6b6b" opacity="0.3"/>
+
+    <!-- Agent icon -->
+    <circle cx="0" cy="0" r="20" fill="#e94560" opacity="0.5"/>
+    <text x="0" y="5" font-family="system-ui, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">A</text>
+
+    <!-- Label -->
+    <text x="0" y="-160" font-family="system-ui, sans-serif" font-size="16" fill="#e94560" text-anchor="middle" font-weight="bold">去理想化真实世界</text>
+  </g>
+
+  <!-- Title area -->
+  <g transform="translate(600, 80)">
+    <!-- AI Paradigm Radar badge -->
+    <rect x="-140" y="-25" width="280" height="35" rx="17.5" fill="#e94560" opacity="0.9"/>
+    <text x="0" y="0" font-family="system-ui, sans-serif" font-size="16" fill="#fff" text-anchor="middle" font-weight="bold">AI 范式雷达</text>
+
+    <!-- Main title -->
+    <text x="0" y="55" font-family="system-ui, sans-serif" font-size="32" fill="#ffffff" text-anchor="middle" font-weight="bold">AgentGym2</text>
+    <text x="0" y="90" font-family="system-ui, sans-serif" font-size="18" fill="#a0c4ff" text-anchor="middle">从理想化基准到真实世界部署的评估范式转移</text>
+
+    <!-- Key stat -->
+    <rect x="-200" y="115" width="400" height="36" rx="8" fill="#e94560" opacity="0.15"/>
+    <text x="0" y="139" font-family="monospace" font-size="15" fill="#ff6b6b" text-anchor="middle">GPT-5 Avg@3: 46.15 (~44%) | Claude Sonnet 4.5: ~37%</text>
+  </g>
+
+  <!-- Bottom tagline -->
+  <g transform="translate(600, 580)">
+    <text x="0" y="0" font-family="system-ui, sans-serif" font-size="12" fill="#667788" text-anchor="middle">arXiv:2607.05174 | 2026-07-06</text>
+  </g>
+
+  <!-- Decorative corner elements -->
+  <g opacity="0.3">
+    <path d="M 30,30 L 80,30 L 80,35 L 35,35 L 35,80 L 30,80 Z" fill="#4a9eff"/>
+    <path d="M 1170,30 L 1120,30 L 1120,35 L 1165,35 L 1165,80 L 1170,80 Z" fill="#4a9eff"/>
+    <path d="M 30,600 L 80,600 L 80,595 L 35,595 L 35,550 L 30,550 Z" fill="#e94560"/>
+    <path d="M 1170,600 L 1120,600 L 1120,595 L 1165,595 L 1165,550 L 1170,550 Z" fill="#e94560"/>
+  </g>
+</svg>
