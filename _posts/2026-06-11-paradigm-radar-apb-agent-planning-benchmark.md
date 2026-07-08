@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 范式雷达：《从端到端成功率到细粒度规划诊断》"
+title: "一分钟读论文：《从端到端成功率到细粒度规划诊断》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-apb-planning-diagram.svg

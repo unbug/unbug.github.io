@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 范式雷达：《Agent的Token账单：1000倍消耗差异背后的工程真相》"
+title: "一分钟读论文：《Agent的Token账单：1000倍消耗差异背后的工程真相》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-token-consumption-economics.svg

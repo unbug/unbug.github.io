@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 范式雷达：《基于 PI 构建你的超强智能体》"
+title: "一分钟读论文：《基于 PI 构建你的超强智能体》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-pi-agent-architecture.svg

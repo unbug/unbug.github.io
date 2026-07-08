@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 范式雷达：《生成-验证差距与自我修正失败》"
+title: "一分钟读论文：《生成-验证差距与自我修正失败》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-generation-verification-gap.svg

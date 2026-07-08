@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 范式雷达：《OrchRM：多智能体编排的自监督奖励建模》"
+title: "一分钟读论文：《OrchRM：多智能体编排的自监督奖励建模》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-orchrm.svg

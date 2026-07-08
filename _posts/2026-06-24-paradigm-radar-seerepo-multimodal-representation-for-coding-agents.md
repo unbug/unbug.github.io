@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 范式雷达：《让 Agent 看见代码仓库——多模态表示如何重塑编码代理》"
+title: "一分钟读论文：《让 Agent 看见代码仓库——多模态表示如何重塑编码代理》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-seerepo-architecture.svg

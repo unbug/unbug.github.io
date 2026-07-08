@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 范式雷达：《自适应潜在推理：让 Agent 少想但想深》"
+title: "一分钟读论文：《自适应潜在推理：让 Agent 少想但想深》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-alan-agent-reasoning.svg

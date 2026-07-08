@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 范式雷达：《Agent规划脆弱性——检索受限下大规模工具生态中的长期规划基准测试》"
+title: "一分钟读论文：《Agent规划脆弱性——检索受限下大规模工具生态中的长期规划基准测试》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-planbench-xl.svg

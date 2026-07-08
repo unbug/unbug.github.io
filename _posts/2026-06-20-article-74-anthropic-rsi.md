@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "AI 范式雷达：《递归自改进警告：Anthropic 为何呼吁全球暂停 AI 研发》"
+title: "一分钟读论文：《递归自改进警告：Anthropic 为何呼吁全球暂停 AI 研发》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-anthropic-rsi.svg

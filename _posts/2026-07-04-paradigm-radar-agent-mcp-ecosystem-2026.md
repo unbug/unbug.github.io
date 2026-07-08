@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 范式雷达：《Agent 编排框架与 MCP 协议生态 2026》"
+title: "一分钟读论文：《Agent 编排框架与 MCP 协议生态 2026》"
 author: unbug
 categories: [AI, ParadigmRadar, Agent]
 image: assets/images/paradigm-radar-agent-mcp-ecosystem-2026.svg

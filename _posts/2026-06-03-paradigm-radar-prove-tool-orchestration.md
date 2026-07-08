@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 范式雷达：《高质量合成数据让多步工具调用性能飙升 10%》"
+title: "一分钟读论文：《高质量合成数据让多步工具调用性能飙升 10%》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-prove-tool-orchestration.svg

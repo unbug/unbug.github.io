@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 范式雷达：《Agent 记忆架构：从 flat retrieval 到 agentic control 的十年演进》"
+title: "一分钟读论文：《Agent 记忆架构：从 flat retrieval 到 agentic control 的十年演进》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-agent-memory-taxonomy.svg

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 范式雷达：《AI 正在让开源协议失去约束力》"
+title: "一分钟读论文：《AI 正在让开源协议失去约束力》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-opensource-license-crisis.jpg

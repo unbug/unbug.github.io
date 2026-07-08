@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 范式雷达：《AI Coding 时代，功能膨胀如何杀死好产品》"
+title: "一分钟读论文：《AI Coding 时代，功能膨胀如何杀死好产品》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-ai-coding-feature-bloat.jpg

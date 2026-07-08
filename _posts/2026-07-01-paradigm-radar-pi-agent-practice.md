@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 范式雷达：《基于 PI 的智能体编排实战》"
+title: "一分钟读论文：《基于 PI 的智能体编排实战》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-pi-agent-practice.svg

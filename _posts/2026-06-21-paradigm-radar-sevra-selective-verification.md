@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 范式雷达：《选择性验证还是延长预算？推理时Token分配的新范式》"
+title: "一分钟读论文：《选择性验证还是延长预算？推理时Token分配的新范式》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-sevra-selective-verification.svg

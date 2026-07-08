@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 范式雷达：《去中心化Agent信任层——ERC-8004的实证诊断》"
+title: "一分钟读论文：《去中心化Agent信任层——ERC-8004的实证诊断》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-erc8004-trust.svg

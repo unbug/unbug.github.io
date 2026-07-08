@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 范式雷达：《AgentGym2——从理想化基准到真实世界部署的评估范式转移》"
+title: "一分钟读论文：《AgentGym2——从理想化基准到真实世界部署的评估范式转移》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-agentgym2-de-idealized.svg

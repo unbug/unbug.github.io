@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 范式雷达：《用形式化逻辑给 AI Agent 装上可证明的安全护栏》"
+title: "一分钟读论文：《用形式化逻辑给 AI Agent 装上可证明的安全护栏》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-epca-provable-guardrail.svg

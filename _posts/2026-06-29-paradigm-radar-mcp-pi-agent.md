@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 范式雷达：《MCP 协议与 PI 架构融合：构建自适应智能体》"
+title: "一分钟读论文：《MCP 协议与 PI 架构融合：构建自适应智能体》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-mcp-pi-agent.svg

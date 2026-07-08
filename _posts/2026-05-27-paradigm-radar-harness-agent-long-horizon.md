@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 范式雷达：《Long Horizon Agent 全栈设计：从接单到交付的工程蓝图》"
+title: "一分钟读论文：《Long Horizon Agent 全栈设计：从接单到交付的工程蓝图》"
 author: unbug
 categories: [AI, ParadigmRadar, Agent]
 image: assets/images/paradigm-radar-harness-agent-long-horizon.svg

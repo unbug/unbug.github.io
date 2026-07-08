@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 范式雷达：《软件工程的终结：AI Agent 如何重写开发范式》"
+title: "一分钟读论文：《软件工程的终结：AI Agent 如何重写开发范式》"
 author: unbug
 categories: [AI, ParadigmRadar, SoftwareEngineering]
 image: assets/images/paradigm-radar-end-software-engineering.svg

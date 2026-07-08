@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 范式雷达：《裁员换 AI，为何成本长期上升、利润反而负增长》"
+title: "一分钟读论文：《裁员换 AI，为何成本长期上升、利润反而负增长》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-ai-bug-supply-chain-cost.svg

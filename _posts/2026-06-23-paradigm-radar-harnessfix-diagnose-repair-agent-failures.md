@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 范式雷达：《HarnessFix——从失败轨迹到可靠 Agent 的自动修复》"
+title: "一分钟读论文：《HarnessFix——从失败轨迹到可靠 Agent 的自动修复》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-harnessfix-htir.svg

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 范式雷达：《Agent安全与评估的范式转移——从持续学习对齐退化到四轴决策框架》"
+title: "一分钟读论文：《Agent安全与评估的范式转移——从持续学习对齐退化到四轴决策框架》"
 author: unbug
 categories: [ai, paradigm-radar, agent]
 tags: [agent-safety, alignment, multi-modal, enterprise-ai]

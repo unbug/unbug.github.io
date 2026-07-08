@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 范式雷达：《Agent评估新标准：用A2A+MCP协议实现基准即Agent》"
+title: "一分钟读论文：《Agent评估新标准：用A2A+MCP协议实现基准即Agent》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-agent-beats.svg

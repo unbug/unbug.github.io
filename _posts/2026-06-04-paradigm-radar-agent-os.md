@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 范式雷达：《Agent OS 时代：微软与 NVIDIA 如何重塑部署范式》"
+title: "一分钟读论文：《Agent OS 时代：微软与 NVIDIA 如何重塑部署范式》"
 author: unbug
 categories: [AI, ParadigmRadar, Agent]
 image: assets/images/paradigm-radar-agent-os-era.svg

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 范式雷达：《Agent 编排的范式转移：从 ReAct 到 PI 架构》"
+title: "一分钟读论文：《Agent 编排的范式转移：从 ReAct 到 PI 架构》"
 author: unbug
 categories: [AI, ParadigmRadar, Agent]
 image: assets/images/paradigm-radar-agent-orchestration-react-to-pi.svg
