@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 540" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="540" fill="url(#bgGrad)"/>
+
+  <!-- Title area -->
+  <text x="430" y="42" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">OpenAgent：开放世界中的工具使用泛化脆弱性</text>
+  <text x="430" y="68" text-anchor="middle" font-size="15" fill="#555">SFT存在符号锚定，RL存在边界盲区——PAFT修复方案</text>
+
+  <!-- Central diagram: Four-level shift framework -->
+  <rect x="230" y="90" width="400" height="260" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="430" y="115" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">四级分层偏移框架</text>
+
+  <!-- Four levels -->
+  <rect x="260" y="135" width="140" height="45" rx="6" fill="#f8d7da" stroke="#dc3545" stroke-width="2"/>
+  <text x="330" y="155" text-anchor="middle" font-size="11" font-weight="bold" fill="#721c24">感知层</text>
+  <text x="330" y="172" text-anchor="middle" font-size="9" fill="#721c24">输入格式/语义变化</text>
+
+  <rect x="460" y="135" width="140" height="45" rx="6" fill="#fff3cd" stroke="#ffc107" stroke-width="2"/>
+  <text x="530" y="155" text-anchor="middle" font-size="11" font-weight="bold" fill="#856404">交互层</text>
+  <text x="530" y="172" text-anchor="middle" font-size="9" fill="#856404">工具接口/协议差异</text>
+
+  <!-- Arrows down -->
+  <line x1="330" y1="180" x2="330" y2="200" stroke="#dc3545" stroke-width="1.5"/>
+  <polygon points="327,198 330,206 333,198" fill="#dc3545"/>
+
+  <line x1="530" y1="180" x2="530" y2="200" stroke="#ffc107" stroke-width="1.5"/>
+  <polygon points="527,198 530,206 533,198" fill="#ffc107"/>
+
+  <!-- Deeper levels -->
+  <rect x="260" y="205" width="140" height="45" rx="6" fill="#e2d9f3" stroke="#6f42c1" stroke-width="2"/>
+  <text x="330" y="225" text-anchor="middle" font-size="11" font-weight="bold" fill="#4a235a">推理层</text>
+  <text x="330" y="242" text-anchor="middle" font-size="9" fill="#4a235a">任务逻辑分布漂移</text>
+
+  <rect x="460" y="205" width="140" height="45" rx="6" fill="#d4edda" stroke="#28a745" stroke-width="2"/>
+  <text x="530" y="225" text-anchor="middle" font-size="11" font-weight="bold" fill="#155724">内化层</text>
+  <text x="530" y="242" text-anchor="middle" font-size="9" fill="#155724">规则泛化vs符号记忆</text>
+
+  <!-- Arrow down -->
+  <line x1="430" y1="250" x2="430" y2="270" stroke="#555" stroke-width="2"/>
+  <polygon points="427,268 430,276 433,268" fill="#555"/>
+
+  <!-- PAFT solution -->
+  <rect x="350" y="275" width="160" height="50" rx="6" fill="#d4edda" stroke="#28a745" stroke-width="2"/>
+  <text x="430" y="297" text-anchor="middle" font-size="12" font-weight="bold" fill="#155724">PAFT修复方案</text>
+  <text x="430" y="315" text-anchor="middle" font-size="10" fill="#155724">扰动增强微调</text>
+
+  <!-- Left panel: SFT vs RL weaknesses -->
+  <rect x="30" y="100" width="180" height="260" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="120" y="128" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">SFT vs RL 弱点</text>
+
+  <!-- SFT -->
+  <rect x="45" y="145" width="150" height="65" rx="4" fill="#f8d7da"/>
+  <text x="120" y="167" text-anchor="middle" font-size="11" font-weight="bold" fill="#721c24">SFT: 符号锚定</text>
+  <text x="120" y="185" text-anchor="middle" font-size="9" fill="#721c24">记忆训练数据中的</text>
+  <text x="120" y="200" text-anchor="middle" font-size="9" fill="#721c24">符号模式而非规则</text>
+
+  <!-- RL -->
+  <rect x="45" y="220" width="150" height="65" rx="4" fill="#fff3cd"/>
+  <text x="120" y="242" text-anchor="middle" font-size="11" font-weight="bold" fill="#856404">RL: 边界盲区</text>
+  <text x="120" y="260" text-anchor="middle" font-size="9" fill="#856404">奖励优化导致在</text>
+  <text x="120" y="275" text-anchor="middle" font-size="9" fill="#856404">边界情况失效</text>
+
+  <!-- Right panel: Key data -->
+  <rect x="650" y="100" width="180" height="260" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="740" y="128" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">实验数据</text>
+
+  <!-- Big stats -->
+  <rect x="665" y="145" width="150" height="70" rx="6" fill="#e3f2fd"/>
+  <text x="740" y="182" text-anchor="middle" font-size="28" font-weight="bold" fill="#1565c0">6,050</text>
+  <text x="740" y="205" text-anchor="middle" font-size="10" fill="#1565c0">训练样本 (严格分离)</text>
+
+  <rect x="665" y="225" width="150" height="70" rx="6" fill="#e3f2fd"/>
+  <text x="740" y="262" text-anchor="middle" font-size="28" font-weight="bold" fill="#1565c0">880</text>
+  <text x="740" y="285" text-anchor="middle" font-size="10" fill="#1565c0">评估样本 (严格分离)</text>
+
+  <!-- Model -->
+  <rect x="665" y="305" width="150" height="40" rx="4" fill="#f8f9fa"/>
+  <text x="740" y="330" text-anchor="middle" font-size="10" fill="#495057">Qwen2.5-7B-Instruct</text>
+
+  <!-- Bottom insight -->
+  <rect x="30" y="420" width="800" height="50" rx="6" fill="#d1ecf1" stroke="#17a2b8" stroke-width="1"/>
+  <text x="430" y="445" text-anchor="middle" font-size="13" font-weight="bold" fill="#0c5460">核心发现：SFT和RL在开放世界面前均存在结构性弱点——PAFT扰动增强微调作为修复方案</text>
+
+  <!-- Source -->
+  <text x="430" y="495" text-anchor="middle" font-size="11" fill="#999">Source: Song-Lin Lv et al., LAMDA Lab Nanjing Univ, arXiv:2607.01084 (OpenAgent)</text>
+
+  <!-- Paradigm Radar badge -->
+  <rect x="700" y="495" width="120" height="24" rx="3" fill="#fff3cd"/>
+  <text x="760" y="511" text-anchor="middle" font-size="9" font-weight="bold" fill="#856404">AI Paradigm Radar</text>
+
+  <!-- Article number -->
+  <rect x="40" y="495" width="100" height="24" rx="3" fill="#e3f2fd"/>
+  <text x="90" y="511" text-anchor="middle" font-size="9" font-weight="bold" fill="#1565c0">Article #89</text>
+
+  <!-- Date badge -->
+  <rect x="40" y="522" width="100" height="20" rx="3" fill="#e8f5e9"/>
+  <text x="90" y="536" text-anchor="middle" font-size="8" fill="#2e7d32">Published: 2026-07-05</text>
+</svg>

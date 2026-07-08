@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 540" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="540" fill="url(#bgGrad)"/>
+
+  <!-- Title area -->
+  <text x="430" y="42" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">GameEngineBench：游戏引擎编码智能体基准测试</text>
+  <text x="430" y="68" text-anchor="middle" font-size="15" fill="#555">真实 C++ 编译验证下最强模型 pass@1 仅 55.5%</text>
+
+  <!-- Central diagram: UE5 Pipeline -->
+  <rect x="230" y="90" width="400" height="260" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="430" y="115" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">UE5 编译验证流水线</text>
+
+  <!-- Step 1: Source Repo -->
+  <rect x="260" y="135" width="100" height="55" rx="6" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+  <text x="310" y="157" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565c0">UE5 游戏仓库</text>
+  <text x="310" y="175" text-anchor="middle" font-size="9" fill="#1565c0">9个真实项目</text>
+
+  <!-- Arrow -->
+  <line x1="360" y1="162" x2="390" y2="162" stroke="#555" stroke-width="2"/>
+  <polygon points="390,157 400,162 390,167" fill="#555"/>
+
+  <!-- Step 2: Task Extraction -->
+  <rect x="400" y="135" width="100" height="55" rx="6" fill="#fff3cd" stroke="#ffc107" stroke-width="2"/>
+  <text x="450" y="157" text-anchor="middle" font-size="11" font-weight="bold" fill="#856404">任务提取</text>
+  <text x="450" y="175" text-anchor="middle" font-size="9" fill="#856404">110个C++任务</text>
+
+  <!-- Arrow -->
+  <line x1="500" y1="162" x2="530" y2="162" stroke="#555" stroke-width="2"/>
+  <polygon points="530,157 540,162 530,167" fill="#555"/>
+
+  <!-- Step 3: Agent Code Gen -->
+  <rect x="540" y="135" width="100" height="55" rx="6" fill="#e2d9f3" stroke="#6f42c1" stroke-width="2"/>
+  <text x="590" y="157" text-anchor="middle" font-size="11" font-weight="bold" fill="#4a235a">Agent生成</text>
+  <text x="590" y="175" text-anchor="middle" font-size="9" fill="#4a235a">C++代码实现</text>
+
+  <!-- Arrow down -->
+  <line x1="590" y1="190" x2="590" y2="215" stroke="#555" stroke-width="2"/>
+  <polygon points="587,213 590,221 593,213" fill="#555"/>
+
+  <!-- Step 4: Compile & Link -->
+  <rect x="460" y="220" width="120" height="55" rx="6" fill="#f8d7da" stroke="#dc3545" stroke-width="2"/>
+  <text x="520" y="242" text-anchor="middle" font-size="11" font-weight="bold" fill="#721c24">编译 + 链接</text>
+  <text x="520" y="260" text-anchor="middle" font-size="9" fill="#721c24">头文件依赖 · 构建系统</text>
+
+  <!-- Arrow down -->
+  <line x1="520" y1="275" x2="520" y2="300" stroke="#555" stroke-width="2"/>
+  <polygon points="517,298 520,306 523,298" fill="#555"/>
+
+  <!-- Step 5: Runtime Test -->
+  <rect x="460" y="305" width="120" height="55" rx="6" fill="#d4edda" stroke="#28a745" stroke-width="2"/>
+  <text x="520" y="327" text-anchor="middle" font-size="11" font-weight="bold" fill="#155724">行为测试</text>
+  <text x="520" y="345" text-anchor="middle" font-size="9" fill="#155724">运行时验证 · pass@1</text>
+
+  <!-- Left panel: Task domains -->
+  <rect x="30" y="100" width="180" height="260" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="120" y="128" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">十大任务领域</text>
+
+  <rect x="45" y="145" width="150" height="30" rx="4" fill="#e3f2fd"/>
+  <text x="120" y="165" text-anchor="middle" font-size="9" fill="#1565c0">游戏玩法机制</text>
+
+  <rect x="45" y="180" width="150" height="30" rx="4" fill="#e3f2fd"/>
+  <text x="120" y="200" text-anchor="middle" font-size="9" fill="#1565c0">多人行为</text>
+
+  <rect x="45" y="215" width="150" height="30" rx="4" fill="#e3f2fd"/>
+  <text x="120" y="235" text-anchor="middle" font-size="9" fill="#1565c0">AI 编排</text>
+
+  <rect x="45" y="250" width="150" height="30" rx="4" fill="#e3f2fd"/>
+  <text x="120" y="270" text-anchor="middle" font-size="9" fill="#1565c0">动画移动</text>
+
+  <rect x="45" y="285" width="150" height="30" rx="4" fill="#e3f2fd"/>
+  <text x="120" y="305" text-anchor="middle" font-size="9" fill="#1565c0">UI / XR / 渲染</text>
+
+  <rect x="45" y="320" width="150" height="30" rx="4" fill="#e3f2fd"/>
+  <text x="120" y="340" text-anchor="middle" font-size="9" fill="#1565c0">在线服务 / 序列化</text>
+
+  <!-- Right panel: Key stats -->
+  <rect x="650" y="100" width="180" height="260" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="740" y="128" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">关键数据</text>
+
+  <!-- Big stat -->
+  <rect x="665" y="145" width="150" height="70" rx="6" fill="#f8d7da"/>
+  <text x="740" y="182" text-anchor="middle" font-size="28" font-weight="bold" fill="#721c24">55.5%</text>
+  <text x="740" y="205" text-anchor="middle" font-size="10" fill="#721c24">最强模型 pass@1</text>
+
+  <!-- Unsolvable -->
+  <rect x="665" y="225" width="150" height="70" rx="6" fill="#fff3cd"/>
+  <text x="740" y="262" text-anchor="middle" font-size="28" font-weight="bold" fill="#856404">31</text>
+  <text x="740" y="285" text-anchor="middle" font-size="10" fill="#856404">不可解任务 (28.2%)</text>
+
+  <!-- Models tested -->
+  <rect x="665" y="305" width="150" height="40" rx="4" fill="#f8f9fa"/>
+  <text x="740" y="330" text-anchor="middle" font-size="10" fill="#495057">12种模型 × 提示策略</text>
+
+  <!-- Bottom insight -->
+  <rect x="30" y="420" width="800" height="50" rx="6" fill="#d1ecf1" stroke="#17a2b8" stroke-width="1"/>
+  <text x="430" y="445" text-anchor="middle" font-size="13" font-weight="bold" fill="#0c5460">核心发现：从语法正确性到编译+运行时验证——跨模块C++开发仍有显著差距</text>
+
+  <!-- Source -->
+  <text x="430" y="495" text-anchor="middle" font-size="11" fill="#999">Source: University of Toronto, arXiv:2607.03525v1 (GameEngineBench)</text>
+
+  <!-- Paradigm Radar badge -->
+  <rect x="700" y="495" width="120" height="24" rx="3" fill="#fff3cd"/>
+  <text x="760" y="511" text-anchor="middle" font-size="9" font-weight="bold" fill="#856404">AI Paradigm Radar</text>
+
+  <!-- Article number -->
+  <rect x="40" y="495" width="100" height="24" rx="3" fill="#e3f2fd"/>
+  <text x="90" y="511" text-anchor="middle" font-size="9" font-weight="bold" fill="#1565c0">Article #94</text>
+
+  <!-- Date badge -->
+  <rect x="40" y="522" width="100" height="20" rx="3" fill="#e8f5e9"/>
+  <text x="90" y="536" text-anchor="middle" font-size="8" fill="#2e7d32">Published: 2026-07-07</text>
+</svg>

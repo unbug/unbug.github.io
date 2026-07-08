@@ -3,6 +3,7 @@ layout: post
 title: "一分钟读论文：《当记忆改变一切时什么保持不变——智能体记忆巩固的身份不变性框架》"
 author: unbug
 categories: [ai, agent]
+image: assets/images/article-91-episodic-to-semantic.svg
 tags: [agent-memory, identity-preservation, memory-consolidation, formal-verification, autonomous-agents]
 ---
 

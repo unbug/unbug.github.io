@@ -3,6 +3,7 @@ layout: post
 title: "一分钟读论文：《Agent安全与评估的范式转移——从持续学习对齐退化到四轴决策框架》"
 author: unbug
 categories: [ai, paradigm-radar, agent]
+image: assets/images/article-88-agent-safety.svg
 tags: [agent-safety, alignment, multi-modal, enterprise-ai]
 ---
 

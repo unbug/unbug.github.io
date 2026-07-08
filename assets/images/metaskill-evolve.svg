@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 540" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="540" fill="url(#bgGrad)"/>
+
+  <!-- Title area -->
+  <text x="430" y="42" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">MetaSkill-Evolve：递归自我改进的双时间尺度</text>
+  <text x="430" y="68" text-anchor="middle" font-size="15" fill="#555">不仅学会生存，还进化出自然选择——元技能的递归升级</text>
+
+  <!-- Central diagram: Two-timescale architecture -->
+  <rect x="230" y="90" width="400" height="300" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="430" y="115" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">双时间尺度架构</text>
+
+  <!-- Fast loop (top) -->
+  <rect x="260" y="130" width="340" height="80" rx="8" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+  <text x="430" y="152" text-anchor="middle" font-size="13" font-weight="bold" fill="#1565c0">快循环 · 分钟级</text>
+
+  <!-- Fast loop components -->
+  <rect x="280" y="162" width="45" height="35" rx="4" fill="#bbdefb"/>
+  <text x="302" y="179" text-anchor="middle" font-size="8" font-weight="bold" fill="#1565c0">Analyzer</text>
+
+  <rect x="335" y="162" width="45" height="35" rx="4" fill="#bbdefb"/>
+  <text x="357" y="179" text-anchor="middle" font-size="8" font-weight="bold" fill="#1565c0">Retriever</text>
+
+  <rect x="390" y="162" width="45" height="35" rx="4" fill="#bbdefb"/>
+  <text x="412" y="179" text-anchor="middle" font-size="8" font-weight="bold" fill="#1565c0">Allocator</text>
+
+  <rect x="445" y="162" width="45" height="35" rx="4" fill="#bbdefb"/>
+  <text x="467" y="179" text-anchor="middle" font-size="8" font-weight="bold" fill="#1565c0">Proposer</text>
+
+  <rect x="500" y="162" width="45" height="35" rx="4" fill="#bbdefb"/>
+  <text x="522" y="179" text-anchor="middle" font-size="8" font-weight="bold" fill="#1565c0">Evolver</text>
+
+  <!-- Arrows between fast loop components -->
+  <line x1="325" y1="180" x2="333" y2="180" stroke="#1565c0" stroke-width="1"/>
+  <polygon points="333,177 340,180 333,183" fill="#1565c0"/>
+
+  <line x1="380" y1="180" x2="388" y2="180" stroke="#1565c0" stroke-width="1"/>
+  <polygon points="388,177 395,180 388,183" fill="#1565c0"/>
+
+  <line x1="435" y1="180" x2="443" y2="180" stroke="#1565c0" stroke-width="1"/>
+  <polygon points="443,177 450,180 443,183" fill="#1565c0"/>
+
+  <line x1="490" y1="180" x2="498" y2="180" stroke="#1565c0" stroke-width="1"/>
+  <polygon points="498,177 505,180 498,183" fill="#1565c0"/>
+
+  <!-- Arrow down to slow loop -->
+  <line x1="430" y1="210" x2="430" y2="240" stroke="#6f42c1" stroke-width="2"/>
+  <polygon points="427,238 430,246 433,238" fill="#6f42c1"/>
+
+  <!-- Slow loop (bottom) -->
+  <rect x="260" y="245" width="340" height="80" rx="8" fill="#e2d9f3" stroke="#6f42c1" stroke-width="2"/>
+  <text x="430" y="267" text-anchor="middle" font-size="13" font-weight="bold" fill="#4a235a">慢循环 · 天级</text>
+
+  <!-- Slow loop components -->
+  <rect x="280" y="277" width="45" height="35" rx="4" fill="#d1c4e9"/>
+  <text x="302" y="294" text-anchor="middle" font-size="8" font-weight="bold" fill="#4a235a">策略分析</text>
+
+  <rect x="335" y="277" width="45" height="35" rx="4" fill="#d1c4e9"/>
+  <text x="357" y="294" text-anchor="middle" font-size="8" font-weight="bold" fill="#4a235a">路径回顾</text>
+
+  <rect x="390" y="277" width="45" height="35" rx="4" fill="#d1c4e9"/>
+  <text x="412" y="294" text-anchor="middle" font-size="8" font-weight="bold" fill="#4a235a">资源分配</text>
+
+  <rect x="445" y="277" width="45" height="35" rx="4" fill="#d1c4e9"/>
+  <text x="467" y="294" text-anchor="middle" font-size="8" font-weight="bold" fill="#4a235a">元技能升级</text>
+
+  <rect x="500" y="277" width="45" height="35" rx="4" fill="#d1c4e9"/>
+  <text x="522" y="294" text-anchor="middle" font-size="8" font-weight="bold" fill="#4a235a">评估执行</text>
+
+  <!-- Feedback arrow from slow to fast -->
+  <path d="M600,287 Q650,287 650,180 Q650,140 600,140" stroke="#6f42c1" stroke-width="1.5" fill="none"/>
+  <polygon points="600,136 608,141 600,144" fill="#6f42c1"/>
+
+  <!-- Left panel: Key design -->
+  <rect x="30" y="100" width="180" height="270" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="120" y="128" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">零额外训练</text>
+
+  <rect x="45" y="145" width="150" height="65" rx="4" fill="#e2d9f3"/>
+  <text x="120" y="167" text-anchor="middle" font-size="11" font-weight="bold" fill="#4a235a">冻结骨干模型</text>
+  <text x="120" y="185" text-anchor="middle" font-size="9" fill="#4a235a">所有能力差异来自</text>
+  <text x="120" y="200" text-anchor="middle" font-size="9" fill="#4a235a">提示工程和角色定义</text>
+
+  <rect x="45" y="220" width="150" height="65" rx="4" fill="#e2d9f3"/>
+  <text x="120" y="242" text-anchor="middle" font-size="11" font-weight="bold" fill="#4a235a">递归自指结构</text>
+  <text x="120" y="260" text-anchor="middle" font-size="9" fill="#4a235a">慢循环复用快循环</text>
+  <text x="120" y="275" text-anchor="middle" font-size="9" fill="#4a235a">的输出作为输入</text>
+
+  <rect x="45" y="295" width="150" height="65" rx="4" fill="#e2d9f3"/>
+  <text x="120" y="317" text-anchor="middle" font-size="11" font-weight="bold" fill="#4a235a">无目标函数错配</text>
+  <text x="120" y="335" text-anchor="middle" font-size="9" fill="#4a235a">元技能优化与任务</text>
+  <text x="120" y="350" text-anchor="middle" font-size="9" fill="#4a235a">执行使用相同模型</text>
+
+  <!-- Right panel: Biological analogy -->
+  <rect x="650" y="100" width="180" height="270" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="740" y="128" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">生物进化类比</text>
+
+  <!-- Fast = phenotype -->
+  <rect x="665" y="145" width="150" height="70" rx="6" fill="#e3f2fd"/>
+  <text x="740" y="167" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565c0">快循环 = 表型适应</text>
+  <text x="740" y="185" text-anchor="middle" font-size="9" fill="#1565c0">个体生命周期内通过</text>
+  <text x="740" y="200" text-anchor="middle" font-size="9" fill="#1565c0">学习和经验积累提升</text>
+
+  <!-- Slow = genotype -->
+  <rect x="665" y="225" width="150" height="70" rx="6" fill="#e2d9f3"/>
+  <text x="740" y="247" text-anchor="middle" font-size="11" font-weight="bold" fill="#4a235a">慢循环 = 基因演化</text>
+  <text x="740" y="265" text-anchor="middle" font-size="9" fill="#4a235a">种群通过代际更替不断</text>
+  <text x="740" y="280" text-anchor="middle" font-size="9" fill="#4a235a">优化适应策略本身</text>
+
+  <!-- Bottom insight -->
+  <rect x="30" y="420" width="800" height="50" rx="6" fill="#d1ecf1" stroke="#17a2b8" stroke-width="1"/>
+  <text x="430" y="445" text-anchor="middle" font-size="13" font-weight="bold" fill="#0c5460">核心突破：递归跃迁——Agent不仅自我改进，还能持续进化其自我改进的能力</text>
+
+  <!-- Source -->
+  <text x="430" y="495" text-anchor="middle" font-size="11" fill="#999">Source: Zefeng Wang et al., LMU Munich, arXiv:2607.05297 (MetaSkill-Evolve)</text>
+
+  <!-- Paradigm Radar badge -->
+  <rect x="700" y="495" width="120" height="24" rx="3" fill="#fff3cd"/>
+  <text x="760" y="511" text-anchor="middle" font-size="9" font-weight="bold" fill="#856404">AI Paradigm Radar</text>
+
+  <!-- Article number -->
+  <rect x="40" y="495" width="100" height="24" rx="3" fill="#e3f2fd"/>
+  <text x="90" y="511" text-anchor="middle" font-size="9" font-weight="bold" fill="#1565c0">Article #98</text>
+
+  <!-- Date badge -->
+  <rect x="40" y="522" width="100" height="20" rx="3" fill="#e8f5e9"/>
+  <text x="90" y="536" text-anchor="middle" font-size="8" fill="#2e7d32">Published: 2026-07-08</text>
+</svg>

@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 540" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="540" fill="url(#bgGrad)"/>
+
+  <!-- Title area -->
+  <text x="430" y="42" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">CoT Training Gains：思维链训练增益归因</text>
+  <text x="430" y="68" text-anchor="middle" font-size="15" fill="#555">CoT训练提升来自推理能力还是检索增强？解构增益来源</text>
+
+  <!-- Central diagram: Decomposition -->
+  <rect x="230" y="90" width="400" height="260" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="430" y="115" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">CoT训练增益分解</text>
+
+  <!-- CoT Training -->
+  <rect x="360" y="135" width="140" height="50" rx="6" fill="#4a90d9"/>
+  <text x="430" y="157" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">CoT Training</text>
+
+  <!-- Arrow down -->
+  <line x1="430" y1="185" x2="430" y2="210" stroke="#555" stroke-width="2"/>
+  <polygon points="427,208 430,216 433,208" fill="#555"/>
+
+  <!-- Three branches -->
+  <rect x="260" y="215" width="120" height="55" rx="6" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+  <text x="320" y="237" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565c0">推理能力</text>
+  <text x="320" y="255" text-anchor="middle" font-size="9" fill="#1565c0">逻辑链生成</text>
+
+  <rect x="400" y="215" width="120" height="55" rx="6" fill="#fff3cd" stroke="#ffc107" stroke-width="2"/>
+  <text x="460" y="237" text-anchor="middle" font-size="11" font-weight="bold" fill="#856404">检索增强</text>
+  <text x="460" y="255" text-anchor="middle" font-size="9" fill="#856404">中间步骤信息</text>
+
+  <rect x="540" y="215" width="120" height="55" rx="6" fill="#e2d9f3" stroke="#6f42c1" stroke-width="2"/>
+  <text x="600" y="237" text-anchor="middle" font-size="11" font-weight="bold" fill="#4a235a">格式先验</text>
+  <text x="600" y="255" text-anchor="middle" font-size="9" fill="#4a235a">输出结构偏好</text>
+
+  <!-- Arrows from CoT to branches -->
+  <line x1="400" y1="185" x2="320" y2="215" stroke="#555" stroke-width="1.5"/>
+  <polygon points="318,212 320,220 322,214" fill="#555"/>
+
+  <line x1="430" y1="185" x2="460" y2="215" stroke="#555" stroke-width="1.5"/>
+  <polygon points="458,212 460,220 462,214" fill="#555"/>
+
+  <line x1="460" y1="185" x2="600" y2="215" stroke="#555" stroke-width="1.5"/>
+  <polygon points="598,212 600,220 602,214" fill="#555"/>
+
+  <!-- Left panel: Key findings -->
+  <rect x="30" y="100" width="180" height="260" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="120" y="128" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">关键发现</text>
+
+  <rect x="45" y="145" width="150" height="65" rx="4" fill="#e3f2fd"/>
+  <text x="120" y="167" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565c0">推理能力增益</text>
+  <text x="120" y="185" text-anchor="middle" font-size="9" fill="#1565c0">CoT训练确实提升了</text>
+  <text x="120" y="200" text-anchor="middle" font-size="9" fill="#1565c0">多步推理能力</text>
+
+  <rect x="45" y="220" width="150" height="65" rx="4" fill="#fff3cd"/>
+  <text x="120" y="242" text-anchor="middle" font-size="11" font-weight="bold" fill="#856404">检索增强贡献</text>
+  <text x="120" y="260" text-anchor="middle" font-size="9" fill="#856404">中间步骤作为隐式</text>
+  <text x="120" y="275" text-anchor="middle" font-size="9" fill="#856404">检索信号贡献显著</text>
+
+  <rect x="45" y="295" width="150" height="65" rx="4" fill="#e2d9f3"/>
+  <text x="120" y="317" text-anchor="middle" font-size="11" font-weight="bold" fill="#4a235a">格式先验影响</text>
+  <text x="120" y="335" text-anchor="middle" font-size="9" fill="#4a235a">输出结构偏好对</text>
+  <text x="120" y="350" text-anchor="middle" font-size="9" fill="#4a235a">评估结果有偏差</text>
+
+  <!-- Right panel: Implications -->
+  <rect x="650" y="100" width="180" height="260" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="740" y="128" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">实践启示</text>
+
+  <rect x="665" y="145" width="150" height="90" rx="6" fill="#d4edda"/>
+  <text x="740" y="167" text-anchor="middle" font-size="11" font-weight="bold" fill="#155724">显式检索增强</text>
+  <text x="740" y="185" text-anchor="middle" font-size="9" fill="#155724">与其依赖CoT的隐式</text>
+  <text x="740" y="200" text-anchor="middle" font-size="9" fill="#155724">检索信号，不如构建</text>
+  <text x="740" y="215" text-anchor="middle" font-size="9" fill="#155724">显式RAG+CoT组合</text>
+
+  <rect x="665" y="245" width="150" height="90" rx="6" fill="#e3f2fd"/>
+  <text x="740" y="267" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565c0">评估去偏</text>
+  <text x="740" y="285" text-anchor="middle" font-size="9" fill="#1565c0">控制格式先验变量，</text>
+  <text x="740" y="300" text-anchor="middle" font-size="9" fill="#1565c0">分离推理能力与</text>
+  <text x="740" y="315" text-anchor="middle" font-size="9" fill="#1565c0">检索增强贡献</text>
+
+  <!-- Bottom insight -->
+  <rect x="30" y="420" width="800" height="50" rx="6" fill="#d1ecf1" stroke="#17a2b8" stroke-width="1"/>
+  <text x="430" y="445" text-anchor="middle" font-size="13" font-weight="bold" fill="#0c5460">核心结论：CoT训练增益是推理能力提升、隐式检索增强和格式先验的混合体——需要解构归因而非简单比较</text>
+
+  <!-- Source -->
+  <text x="430" y="495" text-anchor="middle" font-size="11" fill="#999">Source: Where Do CoT Training Gains Land in LLM based Agents? (arXiv:2607.05380)</text>
+
+  <!-- Paradigm Radar badge -->
+  <rect x="700" y="495" width="120" height="24" rx="3" fill="#fff3cd"/>
+  <text x="760" y="511" text-anchor="middle" font-size="9" font-weight="bold" fill="#856404">AI Paradigm Radar</text>
+
+  <!-- Article number -->
+  <rect x="40" y="495" width="100" height="24" rx="3" fill="#e3f2fd"/>
+  <text x="90" y="511" text-anchor="middle" font-size="9" font-weight="bold" fill="#1565c0">Article #86</text>
+
+  <!-- Date badge -->
+  <rect x="40" y="522" width="100" height="20" rx="3" fill="#e8f5e9"/>
+  <text x="90" y="536" text-anchor="middle" font-size="8" fill="#2e7d32">Published: 2026-07-04</text>
+</svg>

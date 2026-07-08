@@ -3,6 +3,7 @@ layout: post
 title: "一分钟读论文：《SkillCoach——自进化评分如何评估和增强智能体技能使用》"
 author: unbug
 categories: [ai, agent]
+image: assets/images/article-90-skillcoach.svg
 tags: [agent-skill-use, self-evolving-rubrics, process-evaluation, skill-selection]
 ---
 

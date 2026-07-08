@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4a90d9"/>
+    </marker>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="520" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" font-size="17" font-weight="bold" fill="#2c3e50">Probe Cascade 架构总览</text>
+
+  <!-- Left: Agent Episode Flow (Traditional) -->
+  <rect x="20" y="55" width="400" height="440" rx="6" fill="#f8f9fa" stroke="#dee2e6"/>
+  <text x="220" y="80" text-anchor="middle" font-size="13" font-weight="bold" fill="#6c757d">传统 Agent Episode（无早期终止）</text>
+
+  <!-- Traditional flow boxes -->
+  <rect x="60" y="95" width="320" height="48" rx="4" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5"/>
+  <text x="220" y="115" text-anchor="middle" font-size="12" fill="#1565c0">Round 1: Agent Action + Observation</text>
+
+  <line x1="220" y1="143" x2="220" y2="168" stroke="#4a90d9" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <rect x="60" y="173" width="320" height="48" rx="4" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5"/>
+  <text x="220" y="193" text-anchor="middle" font-size="12" fill="#1565c0">Round 2: Agent Action + Observation</text>
+
+  <line x1="220" y1="221" x2="220" y2="246" stroke="#4a90d9" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <rect x="60" y="251" width="320" height="48" rx="4" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5"/>
+  <text x="220" y="271" text-anchor="middle" font-size="12" fill="#1565c0">Round 3: Agent Action + Observation</text>
+
+  <line x1="220" y1="299" x2="220" y2="324" stroke="#4a90d9" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <rect x="60" y="329" width="320" height="48" rx="4" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5"/>
+  <text x="220" y="349" text-anchor="middle" font-size="12" fill="#1565c0">Round N: Agent Action + Observation</text>
+
+  <line x1="220" y1="377" x2="220" y2="402" stroke="#4a90d9" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- DOOMED label -->
+  <rect x="60" y="408" width="320" height="48" rx="4" fill="#ffebee" stroke="#c62828" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="220" y="428" text-anchor="middle" font-size="12" font-weight="bold" fill="#c62828">Episode FAILED (too late to detect)</text>
+
+  <!-- Waste annotation -->
+  <rect x="395" y="173" width="40" height="240" rx="3" fill="#ffcdd2" stroke="#e53935"/>
+  <text x="415" y="280" text-anchor="middle" font-size="10" fill="#c62828" transform="rotate(90,415,280)">Wasted Compute</text>
+
+  <!-- Right: Probe Cascade (Early Abort) -->
+  <rect x="440" y="55" width="440" height="440" rx="6" fill="#f8f9fa" stroke="#dee2e6"/>
+  <text x="660" y="80" text-anchor="middle" font-size="13" font-weight="bold" fill="#6c757d">Probe Cascade（早期终止）</text>
+
+  <!-- Round 1 with probe -->
+  <rect x="470" y="95" width="280" height="48" rx="4" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5"/>
+  <text x="610" y="115" text-anchor="middle" font-size="12" fill="#1565c0">Round 1: Agent Action + Observation</text>
+
+  <!-- Probe box -->
+  <rect x="760" y="95" width="80" height="48" rx="4" fill="#fff3e0" stroke="#f57c00" stroke-width="1.5"/>
+  <text x="800" y="112" text-anchor="middle" font-size="10" font-weight="bold" fill="#e65100">Probe</text>
+  <text x="800" y="127" text-anchor="middle" font-size="9" fill="#f57c00">Hidden State</text>
+
+  <!-- Arrow from agent to probe -->
+  <line x1="740" y1="119" x2="760" y2="119" stroke="#f57c00" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Gate decision -->
+  <polygon points="800,143 820,160 800,177 780,160" fill="#ffebee" stroke="#c62828" stroke-width="1.5"/>
+  <text x="800" y="164" text-anchor="middle" font-size="9" font-weight="bold" fill="#c62828">Gate</text>
+
+  <!-- Abort path -->
+  <line x1="820" y1="177" x2="850" y2="177" stroke="#c62828" stroke-width="1.5"/>
+  <rect x="830" y="180" width="45" height="20" rx="3" fill="#ffebee" stroke="#c62828" stroke-width="1"/>
+  <text x="852" y="194" text-anchor="middle" font-size="8" fill="#c62828">ABORT</text>
+
+  <!-- Continue path -->
+  <line x1="800" y1="177" x2="800" y2="205" stroke="#4a90d9" stroke-width="1.5"/>
+
+  <!-- Round 2 with probe -->
+  <rect x="470" y="210" width="280" height="48" rx="4" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5"/>
+  <text x="610" y="230" text-anchor="middle" font-size="12" fill="#1565c0">Round 2: Agent Action + Observation</text>
+
+  <rect x="760" y="210" width="80" height="48" rx="4" fill="#fff3e0" stroke="#f57c00" stroke-width="1.5"/>
+  <text x="800" y="227" text-anchor="middle" font-size="10" font-weight="bold" fill="#e65100">Probe</text>
+  <text x="800" y="242" text-anchor="middle" font-size="9" fill="#f57c00">Hidden State</text>
+
+  <line x1="740" y1="234" x2="760" y2="234" stroke="#f57c00" stroke-width="1.5"/>
+  <polygon points="800,257 820,274 800,291 780,274" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="800" y="278" text-anchor="middle" font-size="9" font-weight="bold" fill="#2e7d32">PASS</text>
+
+  <!-- Continue down -->
+  <line x1="800" y1="291" x2="800" y2="315" stroke="#4a90d9" stroke-width="1.5"/>
+
+  <!-- Round N with probe -->
+  <rect x="470" y="320" width="280" height="48" rx="4" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5"/>
+  <text x="610" y="340" text-anchor="middle" font-size="12" fill="#1565c0">Round N: Agent Action + Observation</text>
+
+  <rect x="760" y="320" width="80" height="48" rx="4" fill="#fff3e0" stroke="#f57c00" stroke-width="1.5"/>
+  <text x="800" y="337" text-anchor="middle" font-size="10" font-weight="bold" fill="#e65100">Probe</text>
+  <text x="800" y="352" text-anchor="middle" font-size="9" fill="#f57c00">Hidden State</text>
+
+  <line x1="740" y1="344" x2="760" y2="344" stroke="#f57c00" stroke-width="1.5"/>
+  <polygon points="800,365 820,382 800,399 780,382" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="800" y="386" text-anchor="middle" font-size="9" font-weight="bold" fill="#2e7d32">PASS</text>
+
+  <!-- Success -->
+  <line x1="800" y1="399" x2="800" y2="425" stroke="#4a90d9" stroke-width="1.5"/>
+  <rect x="760" y="430" width="80" height="35" rx="4" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="800" y="452" text-anchor="middle" font-size="11" font-weight="bold" fill="#2e7d32">SUCCESS</text>
+
+  <!-- Savings annotation -->
+  <rect x="440" y="430" width="310" height="35" rx="4" fill="#fff8e1" stroke="#f9a825" stroke-width="1"/>
+  <text x="595" y="452" text-anchor="middle" font-size="11" fill="#f57f17">节省 ~47% 推理计算 (Qwen-2.5-7B, 90% recall)</text>
+
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-size="15" font-weight="bold" fill="#2c3e50">Agent 效率优化三件套: 互补关系图</text>
+
+  <!-- Three circles in triangle layout -->
+  <!-- Top circle: Early Abort (this paper) -->
+  <circle cx="400" cy="160" r="90" fill="#e3f2fd" stroke="#1976d2" stroke-width="2.5" filter="url(#shadow)"/>
+  <text x="400" y="140" text-anchor="middle" font-size="13" font-weight="bold" fill="#1565c0">Early Abort</text>
+  <text x="400" y="160" text-anchor="middle" font-size="11" fill="#1976d2">本文论文</text>
+  <text x="400" y="180" text-anchor="middle" font-size="10" fill="#4a90d9">从内部激活预判失败</text>
+  <text x="400" y="196" text-anchor="middle" font-size="9" fill="#78909c">节省 ~47% 推理计算</text>
+
+  <!-- Bottom-left circle: CompactionRL -->
+  <circle cx="250" cy="320" r="90" fill="#e8f5e9" stroke="#388e3c" stroke-width="2.5" filter="url(#shadow)"/>
+  <text x="250" y="300" text-anchor="middle" font-size="13" font-weight="bold" fill="#2e7d32">CompactionRL</text>
+  <text x="250" y="320" text-anchor="middle" font-size="11" fill="#388e3c">上下文压缩</text>
+  <text x="250" y="340" text-anchor="middle" font-size="10" fill="#4caf50">减少 token 消耗</text>
+  <text x="250" y="356" text-anchor="middle" font-size="9" fill="#81c784">压缩历史，保留关键信息</text>
+
+  <!-- Bottom-right circle: Token Economics -->
+  <circle cx="550" cy="320" r="90" fill="#fff3e0" stroke="#f57c00" stroke-width="2.5" filter="url(#shadow)"/>
+  <text x="550" y="300" text-anchor="middle" font-size="13" font-weight="bold" fill="#e65100">Token Economics</text>
+  <text x="550" y="320" text-anchor="middle" font-size="11" fill="#f57c00">消耗经济学</text>
+  <text x="550" y="340" text-anchor="middle" font-size="10" fill="#ff9800">优化 token 分配策略</text>
+  <text x="550" y="356" text-anchor="middle" font-size="9" fill="#ffb74d">动态预算，按需分配</text>
+
+  <!-- Connecting lines -->
+  <line x1="320" y1="220" x2="280" y2="260" stroke="#bdbdbd" stroke-width="1.5"/>
+  <line x1="480" y1="220" x2="520" y2="260" stroke="#bdbdbd" stroke-width="1.5"/>
+  <line x1="310" y1="320" x2="490" y2="320" stroke="#bdbdbd" stroke-width="1.5"/>
+
+  <!-- Connection labels -->
+  <rect x="280" y="230" width="160" height="22" rx="3" fill="#f5f5f5" stroke="#e0e0e0"/>
+  <text x="360" y="245" text-anchor="middle" font-size="9" fill="#757575">互补: 终止 + 压缩</text>
+
+  <rect x="480" y="230" width="160" height="22" rx="3" fill="#f5f5f5" stroke="#e0e0e0"/>
+  <text x="560" y="245" text-anchor="middle" font-size="9" fill="#757575">互补: 终止 + 预算</text>
+
+  <rect x="310" y="348" width="180" height="22" rx="3" fill="#f5f5f5" stroke="#e0e0e0"/>
+  <text x="400" y="363" text-anchor="middle" font-size="9" fill="#757575">互补: 压缩 + 预算分配</text>
+
+  <!-- Bottom insight box -->
+  <rect x="120" y="420" width="560" height="22" rx="4" fill="#f3e5f5" stroke="#8e24aa"/>
+  <text x="400" y="435" text-anchor="middle" font-size="10" fill="#6a1b9a">三者共同构成 Agent 推理效率优化的完整工具箱: 不浪费(终止) + 不冗余(压缩) + 不低效(预算)</text>
+
+</svg>

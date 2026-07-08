@@ -3,6 +3,7 @@ layout: post
 title: "一分钟读论文：《当记忆必须有限时——长程智能体的有界契约设计》"
 author: unbug
 categories: [ai, agent]
+image: assets/images/article-agentic-sts.svg
 tags: [agent-memory, bounded-context, long-horizon-agents, testbed, typed-retrieval]
 ---
 

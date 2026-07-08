@@ -3,6 +3,7 @@ layout: post
 title: "一分钟读论文：《Agent能否从失败中进化——自主策略演化评估基准EvoPolicyGym》"
 author: unbug
 categories: [ai, agent]
+image: assets/images/article-evopolicygym.svg
 tags: [policy-evolution, agent-evaluation, interactive-rl, self-improvement, trajectory-diagnosis]
 ---
 

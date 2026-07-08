@@ -3,6 +3,7 @@ layout: post
 title:  "一分钟读论文：《Where Do CoT Training Gains Land in LLM based Agents?》"
 author: unbug
 categories: [AI, Research]
+image: assets/images/cot-training-gains.svg
 tags: [cot-training, agent-reasoning, prompt-action]
 ---
 

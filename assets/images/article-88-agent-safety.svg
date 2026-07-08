@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 540" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="540" fill="url(#bgGrad)"/>
+
+  <!-- Title area -->
+  <text x="430" y="42" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">Agent安全评估：从对齐退化到四轴决策框架</text>
+  <text x="430" y="68" text-anchor="middle" font-size="15" fill="#555">持续学习中的安全评估范式转移——四维矩阵替代单一指标</text>
+
+  <!-- Central diagram: Four-axis framework -->
+  <rect x="230" y="90" width="400" height="260" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="430" y="115" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">四轴决策框架</text>
+
+  <!-- Four quadrants -->
+  <rect x="260" y="135" width="170" height="90" rx="6" fill="#d4edda" stroke="#28a745" stroke-width="1"/>
+  <text x="345" y="157" text-anchor="middle" font-size="12" font-weight="bold" fill="#155724">轴一：能力对齐</text>
+  <text x="345" y="175" text-anchor="middle" font-size="9" fill="#155724">Agent能力与安全边界</text>
+  <text x="345" y="190" text-anchor="middle" font-size="9" fill="#155724">的一致性评估</text>
+
+  <rect x="450" y="135" width="170" height="90" rx="6" fill="#e3f2fd" stroke="#2196f3" stroke-width="1"/>
+  <text x="535" y="157" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">轴二：持续适应</text>
+  <text x="535" y="175" text-anchor="middle" font-size="9" fill="#1565c0">学习过程中的安全</text>
+  <text x="535" y="190" text-anchor="middle" font-size="9" fill="#1565c0">退化检测</text>
+
+  <rect x="260" y="240" width="170" height="90" rx="6" fill="#fff3cd" stroke="#ffc107" stroke-width="1"/>
+  <text x="345" y="262" text-anchor="middle" font-size="12" font-weight="bold" fill="#856404">轴三：对抗鲁棒</text>
+  <text x="345" y="280" text-anchor="middle" font-size="9" fill="#856404">对抗性攻击下的</text>
+  <text x="345" y="295" text-anchor="middle" font-size="9" fill="#856404">安全边界稳定性</text>
+
+  <rect x="450" y="240" width="170" height="90" rx="6" fill="#e2d9f3" stroke="#6f42c1" stroke-width="1"/>
+  <text x="535" y="262" text-anchor="middle" font-size="12" font-weight="bold" fill="#4a235a">轴四：价值对齐</text>
+  <text x="535" y="280" text-anchor="middle" font-size="9" fill="#4a235a">长期运行中的</text>
+  <text x="535" y="295" text-anchor="middle" font-size="9" fill="#4a235a">价值观漂移检测</text>
+
+  <!-- Left panel: Traditional vs New -->
+  <rect x="30" y="100" width="180" height="260" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="120" y="128" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">范式对比</text>
+
+  <!-- Traditional -->
+  <rect x="45" y="145" width="150" height="65" rx="4" fill="#f8d7da"/>
+  <text x="120" y="167" text-anchor="middle" font-size="11" font-weight="bold" fill="#721c24">传统方法</text>
+  <text x="120" y="185" text-anchor="middle" font-size="9" fill="#721c24">单一安全指标 · 静态评估</text>
+  <text x="120" y="200" text-anchor="middle" font-size="9" fill="#721c24">对齐退化不可检测</text>
+
+  <!-- New -->
+  <rect x="45" y="220" width="150" height="65" rx="4" fill="#d4edda"/>
+  <text x="120" y="242" text-anchor="middle" font-size="11" font-weight="bold" fill="#155724">四轴框架</text>
+  <text x="120" y="260" text-anchor="middle" font-size="9" fill="#155724">多维评估 · 动态监测</text>
+  <text x="120" y="275" text-anchor="middle" font-size="9" fill="#155724">持续学习安全保证</text>
+
+  <!-- Key risks -->
+  <rect x="45" y="295" width="150" height="65" rx="4" fill="#fff3cd"/>
+  <text x="120" y="317" text-anchor="middle" font-size="11" font-weight="bold" fill="#856404">核心风险</text>
+  <text x="120" y="335" text-anchor="middle" font-size="9" fill="#856404">持续学习导致安全边界</text>
+  <text x="120" y="350" text-anchor="middle" font-size="9" fill="#856404">逐渐退化而非突变</text>
+
+  <!-- Right panel: Key metrics -->
+  <rect x="650" y="100" width="180" height="260" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="740" y="128" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">评估指标</text>
+
+  <rect x="665" y="145" width="150" height="40" rx="4" fill="#d4edda"/>
+  <text x="740" y="170" text-anchor="middle" font-size="10" font-weight="bold" fill="#155724">能力对齐度 (CAD)</text>
+
+  <rect x="665" y="195" width="150" height="40" rx="4" fill="#e3f2fd"/>
+  <text x="740" y="220" text-anchor="middle" font-size="10" font-weight="bold" fill="#1565c0">安全退化率 (SDR)</text>
+
+  <rect x="665" y="245" width="150" height="40" rx="4" fill="#fff3cd"/>
+  <text x="740" y="270" text-anchor="middle" font-size="10" font-weight="bold" fill="#856404">对抗鲁棒指数 (ARI)</text>
+
+  <rect x="665" y="295" width="150" height="40" rx="4" fill="#e2d9f3"/>
+  <text x="740" y="320" text-anchor="middle" font-size="10" font-weight="bold" fill="#4a235a">价值漂移分数 (VDS)</text>
+
+  <!-- Bottom insight -->
+  <rect x="30" y="420" width="800" height="50" rx="6" fill="#d1ecf1" stroke="#17a2b8" stroke-width="1"/>
+  <text x="430" y="445" text-anchor="middle" font-size="13" font-weight="bold" fill="#0c5460">核心转变：从静态对齐检查到持续安全监测——四轴框架覆盖Agent全生命周期的安全风险</text>
+
+  <!-- Source -->
+  <text x="430" y="495" text-anchor="middle" font-size="11" fill="#999">Source: Agent Safety Evaluation Paradigm Shift (arXiv:2607.05280)</text>
+
+  <!-- Paradigm Radar badge -->
+  <rect x="700" y="495" width="120" height="24" rx="3" fill="#fff3cd"/>
+  <text x="760" y="511" text-anchor="middle" font-size="9" font-weight="bold" fill="#856404">AI Paradigm Radar</text>
+
+  <!-- Article number -->
+  <rect x="40" y="495" width="100" height="24" rx="3" fill="#e3f2fd"/>
+  <text x="90" y="511" text-anchor="middle" font-size="9" font-weight="bold" fill="#1565c0">Article #88</text>
+
+  <!-- Date badge -->
+  <rect x="40" y="522" width="100" height="20" rx="3" fill="#e8f5e9"/>
+  <text x="90" y="536" text-anchor="middle" font-size="8" fill="#2e7d32">Published: 2026-07-05</text>
+</svg>

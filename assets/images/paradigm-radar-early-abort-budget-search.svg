@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="heatmap1" x1="0%" y1="0%">
+      <stop offset="0%" style="stop-color:#e3f2fd;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1565c0;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-size="15" font-weight="bold" fill="#2c3e50">Recall Budget Search: 各轮次 Recall Target 组合优化</text>
+
+  <!-- Heatmap grid -->
+  <!-- Rows: Round 1-6, Columns: recall targets (0.80, 0.85, 0.90, 0.93, 0.95, 0.97) -->
+  <rect x="120" y="55" width="640" height="300" rx="4" fill="#fafafa"/>
+
+  <!-- Column headers (recall targets) -->
+  <text x="180" y="48" text-anchor="middle" font-size="10" font-weight="bold" fill="#2c3e50">0.80</text>
+  <text x="260" y="48" text-anchor="middle" font-size="10" font-weight="bold" fill="#2c3e50">0.85</text>
+  <text x="340" y="48" text-anchor="middle" font-size="10" font-weight="bold" fill="#2c3e50">0.90</text>
+  <text x="420" y="48" text-anchor="middle" font-size="10" font-weight="bold" fill="#2c3e50">0.93</text>
+  <text x="500" y="48" text-anchor="middle" font-size="10" font-weight="bold" fill="#2c3e50">0.95</text>
+  <text x="580" y="48" text-anchor="middle" font-size="10" font-weight="bold" fill="#2c3e50">0.97</text>
+
+  <!-- Row headers (rounds) -->
+  <text x="100" y="85" text-anchor="end" font-size="10" fill="#495057">Round 1</text>
+  <text x="100" y="135" text-anchor="end" font-size="10" fill="#495057">Round 2</text>
+  <text x="100" y="185" text-anchor="end" font-size="10" fill="#495057">Round 3</text>
+  <text x="100" y="235" text-anchor="end" font-size="10" fill="#495057">Round 4</text>
+  <text x="100" y="285" text-anchor="end" font-size="10" fill="#495057">Round 5</text>
+  <text x="100" y="335" text-anchor="end" font-size="10" fill="#495057">Round 6</text>
+
+  <!-- Heatmap cells: color intensity based on compute savings (higher = darker blue) -->
+  <!-- Simulated data: lower recall targets save more, higher rounds have less signal -->
+  <g font-size="8" text-anchor="middle">
+    <!-- Round 1 row -->
+    <rect x="120" y="65" width="70" height="40" rx="2" fill="#e3f2fd"/>
+    <text x="155" y="90" fill="#1565c0">0.82</text>
+
+    <rect x="190" y="65" width="70" height="40" rx="2" fill="#bbdefb"/>
+    <text x="225" y="90" fill="#1565c0">0.85</text>
+
+    <rect x="260" y="65" width="70" height="40" rx="2" fill="#90caf9"/>
+    <text x="295" y="90" fill="#1565c0">0.88</text>
+
+    <rect x="330" y="65" width="70" height="40" rx="2" fill="#64b5f6"/>
+    <text x="365" y="90" fill="#1565c0">0.89</text>
+
+    <rect x="400" y="65" width="70" height="40" rx="2" fill="#42a5f5"/>
+    <text x="435" y="90" fill="#1565c0">0.90</text>
+
+    <rect x="470" y="65" width="70" height="40" rx="2" fill="#1e88e5"/>
+    <text x="505" y="90" fill="#fff">0.91</text>
+
+    <!-- Round 2 row -->
+    <rect x="120" y="115" width="70" height="40" rx="2" fill="#bbdefb"/>
+    <text x="155" y="140" fill="#1565c0">0.80</text>
+
+    <rect x="190" y="115" width="70" height="40" rx="2" fill="#90caf9"/>
+    <text x="225" y="140" fill="#1565c0">0.83</text>
+
+    <rect x="260" y="115" width="70" height="40" rx="2" fill="#64b5f6"/>
+    <text x="295" y="140" fill="#fff">0.86</text>
+
+    <rect x="330" y="115" width="70" height="40" rx="2" fill="#42a5f5"/>
+    <text x="365" y="140" fill="#fff">0.87</text>
+
+    <rect x="400" y="115" width="70" height="40" rx="2" fill="#1e88e5"/>
+    <text x="435" y="140" fill="#fff">0.89</text>
+
+    <rect x="470" y="115" width="70" height="40" rx="2" fill="#1565c0"/>
+    <text x="505" y="140" fill="#fff">0.90</text>
+
+    <!-- Round 3 row -->
+    <rect x="120" y="165" width="70" height="40" rx="2" fill="#90caf9"/>
+    <text x="155" y="190" fill="#1565c0">0.78</text>
+
+    <rect x="190" y="165" width="70" height="40" rx="2" fill="#64b5f6"/>
+    <text x="225" y="190" fill="#fff">0.81</text>
+
+    <rect x="260" y="165" width="70" height="40" rx="2" fill="#42a5f5"/>
+    <text x="295" y="190" fill="#fff">0.84</text>
+
+    <rect x="330" y="165" width="70" height="40" rx="2" fill="#1e88e5"/>
+    <text x="365" y="190" fill="#fff">0.86</text>
+
+    <rect x="400" y="165" width="70" height="40" rx="2" fill="#1565c0"/>
+    <text x="435" y="190" fill="#fff">0.88</text>
+
+    <rect x="470" y="165" width="70" height="40" rx="2" fill="#0d47a1"/>
+    <text x="505" y="190" fill="#fff">0.89</text>
+
+    <!-- Round 4 row -->
+    <rect x="120" y="215" width="70" height="40" rx="2" fill="#64b5f6"/>
+    <text x="155" y="240" fill="#fff">0.76</text>
+
+    <rect x="190" y="215" width="70" height="40" rx="2" fill="#42a5f5"/>
+    <text x="225" y="240" fill="#fff">0.79</text>
+
+    <rect x="260" y="215" width="70" height="40" rx="2" fill="#1e88e5"/>
+    <text x="295" y="240" fill="#fff">0.82</text>
+
+    <rect x="330" y="215" width="70" height="40" rx="2" fill="#1565c0"/>
+    <text x="365" y="240" fill="#fff">0.84</text>
+
+    <rect x="400" y="215" width="70" height="40" rx="2" fill="#0d47a1"/>
+    <text x="435" y="240" fill="#fff">0.86</text>
+
+    <rect x="470" y="215" width="70" height="40" rx="2" fill="#0a2e6b"/>
+    <text x="505" y="240" fill="#fff">0.87</text>
+
+    <!-- Round 5 row -->
+    <rect x="120" y="265" width="70" height="40" rx="2" fill="#90caf9"/>
+    <text x="155" y="290" fill="#1565c0">0.74</text>
+
+    <rect x="190" y="265" width="70" height="40" rx="2" fill="#64b5f6"/>
+    <text x="225" y="290" fill="#fff">0.77</text>
+
+    <rect x="260" y="265" width="70" height="40" rx="2" fill="#42a5f5"/>
+    <text x="295" y="290" fill="#fff">0.80</text>
+
+    <rect x="330" y="265" width="70" height="40" rx="2" fill="#1e88e5"/>
+    <text x="365" y="290" fill="#fff">0.82</text>
+
+    <rect x="400" y="265" width="70" height="40" rx="2" fill="#1565c0"/>
+    <text x="435" y="290" fill="#fff">0.84</text>
+
+    <rect x="470" y="265" width="70" height="40" rx="2" fill="#0d47a1"/>
+    <text x="505" y="290" fill="#fff">0.85</text>
+
+    <!-- Round 6 row -->
+    <rect x="120" y="315" width="70" height="40" rx="2" fill="#bbdefb"/>
+    <text x="155" y="340" fill="#1565c0">0.72</text>
+
+    <rect x="190" y="315" width="70" height="40" rx="2" fill="#90caf9"/>
+    <text x="225" y="340" fill="#1565c0">0.75</text>
+
+    <rect x="260" y="315" width="70" height="40" rx="2" fill="#64b5f6"/>
+    <text x="295" y="340" fill="#fff">0.78</text>
+
+    <rect x="330" y="315" width="70" height="40" rx="2" fill="#42a5f5"/>
+    <text x="365" y="340" fill="#fff">0.80</text>
+
+    <rect x="400" y="315" width="70" height="40" rx="2" fill="#1e88e5"/>
+    <text x="435" y="340" fill="#fff">0.82</text>
+
+    <rect x="470" y="315" width="70" height="40" rx="2" fill="#1565c0"/>
+    <text x="505" y="340" fill="#fff">0.83</text>
+  </g>
+
+  <!-- Optimal path annotation (highlighted) -->
+  <rect x="120" y="65" width="70" height="40" rx="2" fill="#ffeb3b" stroke="#f9a825" stroke-width="2"/>
+  <text x="155" y="88" text-anchor="middle" font-size="8" font-weight="bold" fill="#e65100">optimal</text>
+
+  <!-- Key insight -->
+  <rect x="120" y="370" width="560" height="40" rx="4" fill="#fff8e1" stroke="#f9a825"/>
+  <text x="400" y="388" text-anchor="middle" font-size="10" fill="#f57f17">搜索空间: 6^6 = 46,656 个候选 budget vector | 最优策略倾向于在早期轮次分配更高 recall target</text>
+
+  <!-- Color scale legend -->
+  <rect x="690" y="65" width="8" height="270" rx="2" fill="#e3f2fd"/>
+  <rect x="690" y="140" width="8" height="120" rx="2" fill="#1565c0"/>
+
+</svg>

@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 540" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="540" fill="url(#bgGrad)"/>
+
+  <!-- Title area -->
+  <text x="430" y="42" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">Agent 编排框架与 MCP 协议生态 2026</text>
+  <text x="430" y="68" text-anchor="middle" font-size="15" fill="#555">从定制化集成到标准化连接 + 确定性编排</text>
+
+  <!-- Central: MCP Architecture -->
+  <rect x="230" y="90" width="400" height="200" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="430" y="115" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">MCP 客户端-服务器架构</text>
+
+  <!-- LLM Client -->
+  <rect x="260" y="130" width="120" height="50" rx="6" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+  <text x="320" y="152" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">LLM Client</text>
+  <text x="320" y="170" text-anchor="middle" font-size="9" fill="#1565c0">Claude / ChatGPT</text>
+
+  <!-- Arrow -->
+  <line x1="380" y1="155" x2="420" y2="155" stroke="#555" stroke-width="2"/>
+  <polygon points="420,150 430,155 420,160" fill="#555"/>
+
+  <!-- MCP Protocol -->
+  <rect x="430" y="130" width="100" height="50" rx="6" fill="#fff3cd" stroke="#ffc107" stroke-width="2"/>
+  <text x="480" y="152" text-anchor="middle" font-size="12" font-weight="bold" fill="#856404">MCP</text>
+  <text x="480" y="170" text-anchor="middle" font-size="9" fill="#856404">Protocol</text>
+
+  <!-- Arrow -->
+  <line x1="530" y1="155" x2="570" y2="155" stroke="#555" stroke-width="2"/>
+  <polygon points="570,150 580,155 570,160" fill="#555"/>
+
+  <!-- MCP Server -->
+  <rect x="580" y="130" width="120" height="50" rx="6" fill="#d4edda" stroke="#28a745" stroke-width="2"/>
+  <text x="640" y="152" text-anchor="middle" font-size="12" font-weight="bold" fill="#155724">MCP Server</text>
+  <text x="640" y="170" text-anchor="middle" font-size="9" fill="#155724">数据源 / 工具</text>
+
+  <!-- External tools below -->
+  <rect x="280" y="200" width="300" height="60" rx="6" fill="#f8f9fa" stroke="#adb5bd" stroke-width="1"/>
+  <text x="430" y="220" text-anchor="middle" font-size="11" font-weight="bold" fill="#495057">外部工具与数据源</text>
+  <text x="430" y="240" text-anchor="middle" font-size="10" fill="#6c757d">GitHub · Slack · Database · API · Code Interpreter</text>
+
+  <!-- Arrow down from MCP Server -->
+  <line x1="640" y1="180" x2="640" y2="200" stroke="#adb5bd" stroke-width="1.5"/>
+  <polygon points="637,198 640,206 643,198" fill="#adb5bd"/>
+
+  <!-- Left: Framework comparison -->
+  <rect x="30" y="310" width="380" height="190" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="220" y="338" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">编排框架选型指南</text>
+
+  <!-- LangGraph -->
+  <rect x="50" y="350" width="160" height="42" rx="4" fill="#d4edda"/>
+  <text x="130" y="367" text-anchor="middle" font-size="11" font-weight="bold" fill="#155724">LangGraph</text>
+  <text x="130" y="383" text-anchor="middle" font-size="9" fill="#155724">状态图 · 生产级控制</text>
+
+  <!-- CrewAI -->
+  <rect x="230" y="350" width="160" height="42" rx="4" fill="#cce5ff"/>
+  <text x="310" y="367" text-anchor="middle" font-size="11" font-weight="bold" fill="#004085">CrewAI</text>
+  <text x="310" y="383" text-anchor="middle" font-size="9" fill="#004085">角色-任务 · 快速原型</text>
+
+  <!-- AutoGen -->
+  <rect x="50" y="400" width="160" height="42" rx="4" fill="#e2d9f3"/>
+  <text x="130" y="417" text-anchor="middle" font-size="11" font-weight="bold" fill="#4a235a">AutoGen</text>
+  <text x="130" y="433" text-anchor="middle" font-size="9" fill="#4a235a">消息驱动 · 对话式协作</text>
+
+  <!-- Semantic Kernel -->
+  <rect x="230" y="400" width="160" height="42" rx="4" fill="#fdebd0"/>
+  <text x="310" y="417" text-anchor="middle" font-size="11" font-weight="bold" fill="#935503">Semantic Kernel</text>
+  <text x="310" y="433" text-anchor="middle" font-size="9" fill="#935503">企业集成 · 强安全模式</text>
+
+  <!-- Right: Protocol landscape -->
+  <rect x="450" y="310" width="380" height="190" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="640" y="338" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">代理交互协议生态</text>
+
+  <!-- Protocol badges -->
+  <rect x="470" y="352" width="70" height="28" rx="4" fill="#e3f2fd"/>
+  <text x="505" y="371" text-anchor="middle" font-size="10" font-weight="bold" fill="#1565c0">MCP</text>
+
+  <rect x="550" y="352" width="70" height="28" rx="4" fill="#e3f2fd"/>
+  <text x="585" y="371" text-anchor="middle" font-size="10" font-weight="bold" fill="#1565c0">ACP</text>
+
+  <rect x="630" y="352" width="70" height="28" rx="4" fill="#e3f2fd"/>
+  <text x="665" y="371" text-anchor="middle" font-size="10" font-weight="bold" fill="#1565c0">A2A</text>
+
+  <rect x="710" y="352" width="90" height="28" rx="4" fill="#e3f2fd"/>
+  <text x="755" y="371" text-anchor="middle" font-size="10" font-weight="bold" fill="#1565c0">A2UI / AG-UI</text>
+
+  <rect x="470" y="390" width="70" height="28" rx="4" fill="#fff3cd"/>
+  <text x="505" y="409" text-anchor="middle" font-size="10" font-weight="bold" fill="#856404">AP2</text>
+
+  <!-- Adoption timeline -->
+  <rect x="470" y="430" width="330" height="40" rx="4" fill="#d4edda"/>
+  <text x="635" y="448" text-anchor="middle" font-size="10" fill="#155724">2024末 → 2026初：Anthropic引入 → OpenAI采用 → 标准化推进</text>
+
+  <!-- Bottom insight -->
+  <rect x="30" y="510" width="800" height="25" rx="4" fill="#d1ecf1"/>
+  <text x="430" y="527" text-anchor="middle" font-size="12" font-weight="bold" fill="#0c5460">核心收益：减少 50%+ 工具调用集成代码，获得更好的容错性和可观测性</text>
+
+  <!-- Source -->
+  <text x="430" y="545" text-anchor="middle" font-size="10" fill="#999">Source: Anthropic MCP (2024) · OpenAI MCP Integration (2025)</text>
+
+  <!-- Paradigm Radar badge -->
+  <rect x="700" y="530" width="120" height="20" rx="3" fill="#fff3cd"/>
+  <text x="760" y="544" text-anchor="middle" font-size="8" font-weight="bold" fill="#856404">AI Paradigm Radar</text>
+
+  <!-- Article number -->
+  <rect x="40" y="530" width="100" height="20" rx="3" fill="#e3f2fd"/>
+  <text x="90" y="544" text-anchor="middle" font-size="8" font-weight="bold" fill="#1565c0">Article #90</text>
+</svg>

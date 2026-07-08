@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 540" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="540" fill="url(#bgGrad)"/>
+
+  <!-- Title area -->
+  <text x="430" y="42" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">SWE-Doctor：多面 Bug 复现测试引导 Agent</text>
+  <text x="430" y="68" text-anchor="middle" font-size="15" fill="#555">从"事后验尸报告"到"实时诊断仪"——BRT升级为生成引导工具</text>
+
+  <!-- Central diagram: Diagnostic pipeline -->
+  <rect x="230" y="90" width="400" height="260" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="430" y="115" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">运行时诊断流水线</text>
+
+  <!-- Step 1: Multi-faceted BRT -->
+  <rect x="260" y="135" width="120" height="55" rx="6" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+  <text x="320" y="157" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565c0">多面BRT生成</text>
+  <text x="320" y="175" text-anchor="middle" font-size="9" fill="#1565c0">多角度覆盖</text>
+
+  <!-- Arrow -->
+  <line x1="380" y1="162" x2="410" y2="162" stroke="#555" stroke-width="2"/>
+  <polygon points="410,157 420,162 410,167" fill="#555"/>
+
+  <!-- Step 2: Runtime Execution -->
+  <rect x="420" y="135" width="120" height="55" rx="6" fill="#fff3cd" stroke="#ffc107" stroke-width="2"/>
+  <text x="480" y="157" text-anchor="middle" font-size="11" font-weight="bold" fill="#856404">真实环境执行</text>
+  <text x="480" y="175" text-anchor="middle" font-size="9" fill="#856404">收集调试信息</text>
+
+  <!-- Arrow down -->
+  <line x1="480" y1="190" x2="480" y2="215" stroke="#555" stroke-width="2"/>
+  <polygon points="477,213 480,221 483,213" fill="#555"/>
+
+  <!-- Step 3: Diagnostic Record -->
+  <rect x="420" y="220" width="120" height="55" rx="6" fill="#e2d9f3" stroke="#6f42c1" stroke-width="2"/>
+  <text x="480" y="242" text-anchor="middle" font-size="11" font-weight="bold" fill="#4a235a">结构化诊断</text>
+  <text x="480" y="260" text-anchor="middle" font-size="9" fill="#4a235a">堆栈+变量状态</text>
+
+  <!-- Arrow down -->
+  <line x1="480" y1="275" x2="480" y2="300" stroke="#555" stroke-width="2"/>
+  <polygon points="477,298 480,306 483,298" fill="#555"/>
+
+  <!-- Step 4: Agent Patch Generation -->
+  <rect x="420" y="305" width="120" height="55" rx="6" fill="#d4edda" stroke="#28a745" stroke-width="2"/>
+  <text x="480" y="327" text-anchor="middle" font-size="11" font-weight="bold" fill="#155724">Agent生成补丁</text>
+  <text x="480" y="345" text-anchor="middle" font-size="9" fill="#155724">理解根因而非</text>
+
+  <!-- Left panel: Two traps -->
+  <rect x="30" y="100" width="180" height="260" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="120" y="128" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">两大系统性陷阱</text>
+
+  <!-- Trap 1 -->
+  <rect x="45" y="145" width="150" height="90" rx="6" fill="#f8d7da"/>
+  <text x="120" y="167" text-anchor="middle" font-size="11" font-weight="bold" fill="#721c24">陷阱一：Fail-to-Fail</text>
+  <text x="120" y="185" text-anchor="middle" font-size="9" fill="#721c24">Agent过度拟合失败测试，</text>
+  <text x="120" y="200" text-anchor="middle" font-size="9" fill="#721c24">补丁偏离正确方向</text>
+
+  <!-- Trap 2 -->
+  <rect x="45" y="245" width="150" height="90" rx="6" fill="#f8d7da"/>
+  <text x="120" y="267" text-anchor="middle" font-size="11" font-weight="bold" fill="#721c24">陷阱二：Fail-to-Pass</text>
+  <text x="120" y="285" text-anchor="middle" font-size="9" fill="#721c24">单一测试路径，生成</text>
+  <text x="120" y="300" text-anchor="middle" font-size="9" fill="#721c24">Partial Patches（部分补丁）</text>
+
+  <!-- Right panel: Key results -->
+  <rect x="650" y="100" width="180" height="260" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="740" y="128" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">效果验证</text>
+
+  <!-- Big stat -->
+  <rect x="665" y="145" width="150" height="70" rx="6" fill="#d4edda"/>
+  <text x="740" y="182" text-anchor="middle" font-size="28" font-weight="bold" fill="#155724">75.7%</text>
+  <text x="740" y="205" text-anchor="middle" font-size="10" fill="#155724">SWE-bench Verified</text>
+
+  <!-- Pro result -->
+  <rect x="665" y="225" width="150" height="70" rx="6" fill="#e3f2fd"/>
+  <text x="740" y="262" text-anchor="middle" font-size="28" font-weight="bold" fill="#1565c0">59.4%</text>
+  <text x="740" y="285" text-anchor="middle" font-size="10" fill="#1565c0">SWE-bench Pro</text>
+
+  <!-- Improvement -->
+  <rect x="665" y="305" width="150" height="40" rx="4" fill="#fff3cd"/>
+  <text x="740" y="330" text-anchor="middle" font-size="10" font-weight="bold" fill="#856404">相对基线 +8.0~8.9pt</text>
+
+  <!-- Bottom insight -->
+  <rect x="30" y="420" width="800" height="50" rx="6" fill="#d1ecf1" stroke="#17a2b8" stroke-width="1"/>
+  <text x="430" y="445" text-anchor="middle" font-size="13" font-weight="bold" fill="#0c5460">核心转变：让反馈回路从单向验证变为双向诊断——BRT蕴含的运行时信息是尚未被充分开发的富矿</text>
+
+  <!-- Source -->
+  <text x="430" y="495" text-anchor="middle" font-size="11" fill="#999">Source: NUS + USTC, arXiv:2607.00990 (SWE-Doctor)</text>
+
+  <!-- Paradigm Radar badge -->
+  <rect x="700" y="495" width="120" height="24" rx="3" fill="#fff3cd"/>
+  <text x="760" y="511" text-anchor="middle" font-size="9" font-weight="bold" fill="#856404">AI Paradigm Radar</text>
+
+  <!-- Article number -->
+  <rect x="40" y="495" width="100" height="24" rx="3" fill="#e3f2fd"/>
+  <text x="90" y="511" text-anchor="middle" font-size="9" font-weight="bold" fill="#1565c0">Article #96</text>
+
+  <!-- Date badge -->
+  <rect x="40" y="522" width="100" height="20" rx="3" fill="#e8f5e9"/>
+  <text x="90" y="536" text-anchor="middle" font-size="8" fill="#2e7d32">Published: 2026-07-07</text>
+</svg>

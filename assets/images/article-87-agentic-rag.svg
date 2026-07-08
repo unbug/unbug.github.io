@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 540" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="540" fill="url(#bgGrad)"/>
+
+  <!-- Title area -->
+  <text x="430" y="42" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">Agentic RAG：动态知识检索增强</text>
+  <text x="430" y="68" text-anchor="middle" font-size="15" fill="#555">从静态检索到"思考-检索-验证-再检索"的闭环</text>
+
+  <!-- Central diagram: Dynamic Retrieval Loop -->
+  <rect x="230" y="90" width="400" height="300" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+
+  <!-- Step 1: Agent Reasoning -->
+  <rect x="350" y="110" width="160" height="50" rx="6" fill="#4a90d9"/>
+  <text x="430" y="132" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">Agent 推理</text>
+  <text x="430" y="150" text-anchor="middle" font-size="10" fill="#dce6f0">分析当前状态</text>
+
+  <!-- Arrow down -->
+  <line x1="430" y1="160" x2="430" y2="185" stroke="#555" stroke-width="2"/>
+  <polygon points="427,183 430,191 433,183" fill="#555"/>
+
+  <!-- Step 2: Dynamic Query Generation -->
+  <rect x="350" y="190" width="160" height="50" rx="6" fill="#e67e22"/>
+  <text x="430" y="212" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">动态查询生成</text>
+  <text x="430" y="230" text-anchor="middle" font-size="10" fill="#fdebd0">分解子问题 · 多步检索</text>
+
+  <!-- Arrow down -->
+  <line x1="430" y1="240" x2="430" y2="265" stroke="#555" stroke-width="2"/>
+  <polygon points="427,263 430,271 433,263" fill="#555"/>
+
+  <!-- Step 3: Retrieval & Validation -->
+  <rect x="350" y="270" width="160" height="50" rx="6" fill="#27ae60"/>
+  <text x="430" y="292" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">检索与验证</text>
+  <text x="430" y="310" text-anchor="middle" font-size="10" fill="#d5f5e3">相关性评估 · 一致性检查</text>
+
+  <!-- Arrow down -->
+  <line x1="430" y1="320" x2="430" y2="345" stroke="#555" stroke-width="2"/>
+  <polygon points="427,343 430,351 433,343" fill="#555"/>
+
+  <!-- Step 4: Decision -->
+  <rect x="380" y="350" width="100" height="30" rx="6" fill="#f39c12"/>
+  <text x="430" y="370" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">信息充足?</text>
+
+  <!-- Yes arrow back to reasoning -->
+  <path d="M480,365 Q560,365 560,270 Q560,180 490,160" stroke="#27ae60" stroke-width="2" fill="none"/>
+  <polygon points="488,158 496,163 486,165" fill="#27ae60"/>
+  <text x="570" y="270" font-size="10" fill="#27ae60">是 → 生成答案</text>
+
+  <!-- No arrow back to query -->
+  <path d="M380,365 Q300,365 300,270 Q300,220 345,215" stroke="#e74c3c" stroke-width="2" fill="none"/>
+  <polygon points="345,212 338,216 342,220" fill="#e74c3c"/>
+  <text x="290" y="270" font-size="10" fill="#e74c3c">否 → 精炼检索</text>
+
+  <!-- Left panel: Key mechanisms -->
+  <rect x="30" y="100" width="180" height="250" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="120" y="128" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">四大核心机制</text>
+
+  <rect x="45" y="145" width="150" height="45" rx="4" fill="#e3f2fd"/>
+  <text x="120" y="163" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565c0">动态查询生成</text>
+  <text x="120" y="180" text-anchor="middle" font-size="9" fill="#1565c0">多步子查询序列</text>
+
+  <rect x="45" y="200" width="150" height="45" rx="4" fill="#fff3e0"/>
+  <text x="120" y="218" text-anchor="middle" font-size="11" font-weight="bold" fill="#e65100">检索结果验证</text>
+  <text x="120" y="235" text-anchor="middle" font-size="9" fill="#e65100">相关性+一致性</text>
+
+  <rect x="45" y="255" width="150" height="45" rx="4" fill="#e8f5e9"/>
+  <text x="120" y="273" text-anchor="middle" font-size="11" font-weight="bold" fill="#2e7d32">迭代式精炼</text>
+  <text x="120" y="290" text-anchor="middle" font-size="9" fill="#2e7d32">主动发起新检索</text>
+
+  <rect x="45" y="310" width="150" height="45" rx="4" fill="#f3e5f5"/>
+  <text x="120" y="328" text-anchor="middle" font-size="11" font-weight="bold" fill="#6a1b9a">上下文窗口优化</text>
+  <text x="120" y="345" text-anchor="middle" font-size="9" fill="#6a1b9a">优先级排序筛选</text>
+
+  <!-- Right panel: Value -->
+  <rect x="650" y="100" width="180" height="250" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="740" y="128" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">与传统 RAG 对比</text>
+
+  <rect x="665" y="145" width="150" height="90" rx="4" fill="#f8d7da"/>
+  <text x="740" y="165" text-anchor="middle" font-size="11" font-weight="bold" fill="#721c24">传统 RAG</text>
+  <text x="740" y="183" text-anchor="middle" font-size="9" fill="#721c24">静态检索 · 一次性查询</text>
+  <text x="740" y="200" text-anchor="middle" font-size="9" fill="#721c24">预处理步骤 · 无验证</text>
+  <text x="740" y="225" text-anchor="middle" font-size="9" fill="#721c24">不适合多跳推理</text>
+
+  <rect x="665" y="245" width="150" height="90" rx="4" fill="#d4edda"/>
+  <text x="740" y="265" text-anchor="middle" font-size="11" font-weight="bold" fill="#155724">Agentic RAG</text>
+  <text x="740" y="283" text-anchor="middle" font-size="9" fill="#155724">动态检索 · 迭代循环</text>
+  <text x="740" y="300" text-anchor="middle" font-size="9" fill="#155724">推理核心能力 · 有验证</text>
+  <text x="740" y="315" text-anchor="middle" font-size="9" fill="#155724">适合开放式问题</text>
+
+  <!-- Bottom insight -->
+  <rect x="30" y="410" width="800" height="50" rx="6" fill="#d1ecf1" stroke="#17a2b8" stroke-width="1"/>
+  <text x="430" y="435" text-anchor="middle" font-size="13" font-weight="bold" fill="#0c5460">核心转变：检索从预处理步骤升级为 Agent 的核心工具能力，实现"思考-检索-验证-再检索"闭环</text>
+
+  <!-- Source -->
+  <text x="430" y="485" text-anchor="middle" font-size="11" fill="#999">Source: Mishra et al., SoK: Agentic RAG (arXiv:2603.07379)</text>
+
+  <!-- Paradigm Radar badge -->
+  <rect x="700" y="485" width="120" height="24" rx="3" fill="#fff3cd"/>
+  <text x="760" y="501" text-anchor="middle" font-size="9" font-weight="bold" fill="#856404">AI Paradigm Radar</text>
+
+  <!-- Article number -->
+  <rect x="40" y="485" width="100" height="24" rx="3" fill="#e3f2fd"/>
+  <text x="90" y="501" text-anchor="middle" font-size="9" font-weight="bold" fill="#1565c0">Article #87</text>
+
+  <!-- Date badge -->
+  <rect x="40" y="512" width="100" height="20" rx="3" fill="#e8f5e9"/>
+  <text x="90" y="526" text-anchor="middle" font-size="8" fill="#2e7d32">Published: 2026-07-04</text>
+</svg>

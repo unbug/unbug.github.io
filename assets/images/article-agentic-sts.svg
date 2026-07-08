@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 540" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="540" fill="url(#bgGrad)"/>
+
+  <!-- Title area -->
+  <text x="430" y="42" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">AgenticSTS：有界记忆契约设计</text>
+  <text x="430" y="68" text-anchor="middle" font-size="15" fill="#555">提示词大小恒定——每次决策从全新消息出发，不附加跨决策原始对话记录</text>
+
+  <!-- Central diagram: Bounded memory contract -->
+  <rect x="230" y="90" width="400" height="260" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="430" y="115" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">有界记忆契约机制</text>
+
+  <!-- Traditional approach (left) -->
+  <rect x="260" y="135" width="140" height="80" rx="6" fill="#f8d7da" stroke="#dc3545" stroke-width="1"/>
+  <text x="330" y="157" text-anchor="middle" font-size="12" font-weight="bold" fill="#721c24">传统方法</text>
+
+  <!-- Growing context -->
+  <rect x="280" y="165" width="100" height="30" rx="4" fill="#f8d7da"/>
+  <text x="330" y="185" text-anchor="middle" font-size="9" fill="#721c24">观察 + 工具调用</text>
+
+  <!-- Arrow down -->
+  <line x1="330" y1="195" x2="330" y2="210" stroke="#dc3545" stroke-width="1.5"/>
+  <polygon points="327,208 330,216 333,208" fill="#dc3545"/>
+
+  <!-- Growing context -->
+  <rect x="280" y="215" width="100" height="30" rx="4" fill="#f0c0c0"/>
+  <text x="330" y="235" text-anchor="middle" font-size="9" fill="#721c24">+ 反思 + 更多...</text>
+
+  <!-- Growing context -->
+  <line x1="330" y1="245" x2="330" y2="260" stroke="#dc3545" stroke-width="1.5"/>
+  <polygon points="327,258 330,266 333,258" fill="#dc3545"/>
+
+  <rect x="280" y="265" width="100" height="30" rx="4" fill="#e0a0a0"/>
+  <text x="330" y="285" text-anchor="middle" font-size="9" fill="#721c24">→ 一团混乱</text>
+
+  <!-- Arrow -->
+  <line x1="400" y1="175" x2="460" y2="175" stroke="#555" stroke-width="2"/>
+  <polygon points="460,170 470,175 460,180" fill="#555"/>
+
+  <!-- AgenticSTS approach (right) -->
+  <rect x="470" y="135" width="140" height="80" rx="6" fill="#d4edda" stroke="#28a745" stroke-width="1"/>
+  <text x="540" y="157" text-anchor="middle" font-size="12" font-weight="bold" fill="#155724">AgenticSTS</text>
+
+  <!-- Constant prompt -->
+  <rect x="490" y="165" width="100" height="30" rx="4" fill="#d4edda"/>
+  <text x="540" y="185" text-anchor="middle" font-size="9" fill="#155724">全新用户消息</text>
+
+  <!-- Arrow down -->
+  <line x1="540" y1="195" x2="540" y2="210" stroke="#28a745" stroke-width="1.5"/>
+  <polygon points="537,208 540,216 543,208" fill="#28a745"/>
+
+  <!-- Constant prompt -->
+  <rect x="490" y="215" width="100" height="30" rx="4" fill="#c0e0c0"/>
+  <text x="540" y="235" text-anchor="middle" font-size="9" fill="#155724">全新用户消息</text>
+
+  <!-- Arrow down -->
+  <line x1="540" y1="245" x2="540" y2="260" stroke="#28a745" stroke-width="1.5"/>
+  <polygon points="537,258 540,266 543,258" fill="#28a745"/>
+
+  <rect x="490" y="265" width="100" height="30" rx="4" fill="#b0d0b0"/>
+  <text x="540" y="285" text-anchor="middle" font-size="9" fill="#155724">全新用户消息</text>
+
+  <!-- Left panel: Key design -->
+  <rect x="30" y="100" width="180" height="260" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="120" y="128" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">核心设计</text>
+
+  <!-- Bounded prompt -->
+  <rect x="45" y="145" width="150" height="65" rx="4" fill="#e3f2fd"/>
+  <text x="120" y="167" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565c0">提示词大小恒定</text>
+  <text x="120" y="185" text-anchor="middle" font-size="9" fill="#1565c0">任意长度运行中保持</text>
+  <text x="120" y="200" text-anchor="middle" font-size="9" fill="#1565c0">有界，不无限增长</text>
+
+  <!-- Typed retrieval -->
+  <rect x="45" y="220" width="150" height="65" rx="4" fill="#fff3cd"/>
+  <text x="120" y="242" text-anchor="middle" font-size="11" font-weight="bold" fill="#856404">类型化检索</text>
+  <text x="120" y="260" text-anchor="middle" font-size="9" fill="#856404">从类型化检索组装新</text>
+  <text x="120" y="275" text-anchor="middle" font-size="9" fill="#856404">消息，不附加原始记录</text>
+
+  <!-- Independent ablation -->
+  <rect x="45" y="295" width="150" height="65" rx="4" fill="#e2d9f3"/>
+  <text x="120" y="317" text-anchor="middle" font-size="11" font-weight="bold" fill="#4a235a">独立消融</text>
+  <text x="120" y="335" text-anchor="middle" font-size="9" fill="#4a235a">任何单一记忆层都可</text>
+  <text x="120" y="350" text-anchor="middle" font-size="9" fill="#4a235a">独立消融评估</text>
+
+  <!-- Right panel: Key benefits -->
+  <rect x="650" y="100" width="180" height="260" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="740" y="128" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">核心优势</text>
+
+  <!-- No context explosion -->
+  <rect x="665" y="145" width="150" height="70" rx="6" fill="#d4edda"/>
+  <text x="740" y="167" text-anchor="middle" font-size="11" font-weight="bold" fill="#155724">无上下文爆炸</text>
+  <text x="740" y="185" text-anchor="middle" font-size="9" fill="#155724">提示词不随运行长度</text>
+  <text x="740" y="200" text-anchor="middle" font-size="9" fill="#155724">增长，避免OOM风险</text>
+
+  <!-- Clean decision -->
+  <rect x="665" y="225" width="150" height="70" rx="6" fill="#e3f2fd"/>
+  <text x="740" y="247" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565c0">干净决策</text>
+  <text x="740" y="265" text-anchor="middle" font-size="9" fill="#1565c0">每次决策基于全新组装</text>
+  <text x="740" y="280" text-anchor="middle" font-size="9" fill="#1565c0">消息，无历史污染</text>
+
+  <!-- Bottom insight -->
+  <rect x="30" y="420" width="800" height="50" rx="6" fill="#d1ecf1" stroke="#17a2b8" stroke-width="1"/>
+  <text x="430" y="445" text-anchor="middle" font-size="13" font-weight="bold" fill="#0c5460">核心突破：将长程智能体的记忆形式化为契约问题——每次决策从全新消息出发，提示词大小恒定</text>
+
+  <!-- Source -->
+  <text x="430" y="495" text-anchor="middle" font-size="11" fill="#999">Source: Shanghai Jiao Tong Univ + Tsinghua, arXiv:2607.02255 (AgenticSTS)</text>
+
+  <!-- Paradigm Radar badge -->
+  <rect x="700" y="495" width="120" height="24" rx="3" fill="#fff3cd"/>
+  <text x="760" y="511" text-anchor="middle" font-size="9" font-weight="bold" fill="#856404">AI Paradigm Radar</text>
+
+  <!-- Article number -->
+  <rect x="40" y="495" width="100" height="24" rx="3" fill="#e3f2fd"/>
+  <text x="90" y="511" text-anchor="middle" font-size="9" font-weight="bold" fill="#1565c0">Article #92</text>
+
+  <!-- Date badge -->
+  <rect x="40" y="522" width="100" height="20" rx="3" fill="#e8f5e9"/>
+  <text x="90" y="536" text-anchor="middle" font-size="8" fill="#2e7d32">Published: 2026-07-06</text>
+</svg>

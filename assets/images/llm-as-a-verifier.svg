@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 540" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="540" fill="url(#bgGrad)"/>
+
+  <!-- Title area -->
+  <text x="430" y="42" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">LLM-as-a-Verifier：将验证作为第四种缩放轴</text>
+  <text x="430" y="68" text-anchor="middle" font-size="15" fill="#555">连续评分机制刷新四大基准SOTA，验证能力本身也可独立缩放</text>
+
+  <!-- Central diagram: Continuous Scoring -->
+  <rect x="230" y="90" width="400" height="260" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="430" y="115" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">连续评分 vs 离散裁判</text>
+
+  <!-- Discrete scoring (left) -->
+  <rect x="260" y="135" width="140" height="80" rx="6" fill="#f8d7da" stroke="#dc3545" stroke-width="1"/>
+  <text x="330" y="157" text-anchor="middle" font-size="12" font-weight="bold" fill="#721c24">离散裁判</text>
+
+  <!-- Discrete bars -->
+  <rect x="280" y="165" width="20" height="35" rx="2" fill="#dc3545"/>
+  <text x="290" y="210" text-anchor="middle" font-size="8" fill="#721c24">1</text>
+
+  <rect x="310" y="165" width="20" height="35" rx="2" fill="#dc3545"/>
+  <text x="320" y="210" text-anchor="middle" font-size="8" fill="#721c24">2</text>
+
+  <rect x="340" y="165" width="20" height="35" rx="2" fill="#dc3545"/>
+  <text x="350" y="210" text-anchor="middle" font-size="8" fill="#721c24">3</text>
+
+  <rect x="370" y="165" width="20" height="35" rx="2" fill="#dc3545"/>
+  <text x="380" y="210" text-anchor="middle" font-size="8" fill="#721c24">4</text>
+
+  <rect x="400" y="165" width="20" height="35" rx="2" fill="#dc3545"/>
+  <text x="410" y="210" text-anchor="middle" font-size="8" fill="#721c24">5</text>
+
+  <!-- Continuous scoring (right) -->
+  <rect x="460" y="135" width="140" height="80" rx="6" fill="#d4edda" stroke="#28a745" stroke-width="1"/>
+  <text x="530" y="157" text-anchor="middle" font-size="12" font-weight="bold" fill="#155724">连续评分</text>
+
+  <!-- Continuous gradient bar -->
+  <rect x="480" y="165" width="100" height="35" rx="4" fill="url(#contGrad)"/>
+  <defs>
+    <linearGradient id="contGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dc3545;stop-opacity:0.8"/>
+      <stop offset="50%" style="stop-color:#ffc107;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#28a745;stop-opacity:0.9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Three scaling dimensions -->
+  <rect x="260" y="235" width="140" height="40" rx="4" fill="#e3f2fd"/>
+  <text x="330" y="252" text-anchor="middle" font-size="10" font-weight="bold" fill="#1565c0">维度1: 评分Token数</text>
+  <text x="330" y="267" text-anchor="middle" font-size="9" fill="#1565c0">提升区分度 (+6%)</text>
+
+  <rect x="460" y="235" width="140" height="40" rx="4" fill="#fff3cd"/>
+  <text x="530" y="252" text-anchor="middle" font-size="10" font-weight="bold" fill="#856404">维度2: 多次采样</text>
+  <text x="530" y="267" text-anchor="middle" font-size="9" fill="#856404">降低方差</text>
+
+  <!-- Four benchmarks -->
+  <rect x="260" y="290" width="140" height="40" rx="4" fill="#e2d9f3"/>
+  <text x="330" y="307" text-anchor="middle" font-size="10" font-weight="bold" fill="#4a235a">维度3: 子维度分解</text>
+  <text x="330" y="322" text-anchor="middle" font-size="9" fill="#4a235a">分维度评分聚合</text>
+
+  <!-- Benchmark results -->
+  <rect x="460" y="290" width="140" height="80" rx="6" fill="#d4edda"/>
+  <text x="530" y="312" text-anchor="middle" font-size="11" font-weight="bold" fill="#155724">四大基准 SOTA</text>
+  <text x="530" y="330" text-anchor="middle" font-size="9" fill="#155724">Terminal-Bench V2: 86.5%</text>
+  <text x="530" y="345" text-anchor="middle" font-size="9" fill="#155724">SWE-Bench Verified: 78.2%</text>
+
+  <!-- Left panel: Key insight -->
+  <rect x="30" y="100" width="180" height="260" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="120" y="128" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">第四种缩放轴</text>
+
+  <!-- Three existing axes -->
+  <rect x="45" y="145" width="150" height="35" rx="4" fill="#e3f2fd"/>
+  <text x="120" y="168" text-anchor="middle" font-size="10" font-weight="bold" fill="#1565c0">预训练扩展</text>
+
+  <rect x="45" y="190" width="150" height="35" rx="4" fill="#e3f2fd"/>
+  <text x="120" y="213" text-anchor="middle" font-size="10" font-weight="bold" fill="#1565c0">后训练优化</text>
+
+  <rect x="45" y="235" width="150" height="35" rx="4" fill="#e3f2fd"/>
+  <text x="120" y="258" text-anchor="middle" font-size="10" font-weight="bold" fill="#1565c0">测试时计算</text>
+
+  <!-- Fourth axis -->
+  <rect x="45" y="285" width="150" height="35" rx="4" fill="#d4edda"/>
+  <text x="120" y="308" text-anchor="middle" font-size="10" font-weight="bold" fill="#155724">验证能力 (NEW)</text>
+
+  <!-- Agentic RL implication -->
+  <rect x="45" y="335" width="150" height="60" rx="4" fill="#fff3cd"/>
+  <text x="120" y="355" text-anchor="middle" font-size="10" font-weight="bold" fill="#856404">Agentic RL启示</text>
+  <text x="120" y="372" text-anchor="middle" font-size="9" fill="#856404">连续反馈信号替代</text>
+  <text x="120" y="387" text-anchor="middle" font-size="9" fill="#856404">稀疏二元奖励</text>
+
+  <!-- Bottom insight -->
+  <rect x="30" y="420" width="800" height="50" rx="6" fill="#d1ecf1" stroke="#17a2b8" stroke-width="1"/>
+  <text x="430" y="445" text-anchor="middle" font-size="13" font-weight="bold" fill="#0c5460">核心洞见：与其不断增大模型或增加推理步数，不如投资一个更好的评判者——验证能力本身也可以独立缩放</text>
+
+  <!-- Source -->
+  <text x="430" y="495" text-anchor="middle" font-size="11" fill="#999">Source: Stanford + UC Berkeley, arXiv:2607.05391 (LLM-as-a-Verifier)</text>
+
+  <!-- Paradigm Radar badge -->
+  <rect x="700" y="495" width="120" height="24" rx="3" fill="#fff3cd"/>
+  <text x="760" y="511" text-anchor="middle" font-size="9" font-weight="bold" fill="#856404">AI Paradigm Radar</text>
+
+  <!-- Article number -->
+  <rect x="40" y="495" width="100" height="24" rx="3" fill="#e3f2fd"/>
+  <text x="90" y="511" text-anchor="middle" font-size="9" font-weight="bold" fill="#1565c0">Article #97</text>
+
+  <!-- Date badge -->
+  <rect x="40" y="522" width="100" height="20" rx="3" fill="#e8f5e9"/>
+  <text x="90" y="536" text-anchor="middle" font-size="8" fill="#2e7d32">Published: 2026-07-07</text>
+</svg>

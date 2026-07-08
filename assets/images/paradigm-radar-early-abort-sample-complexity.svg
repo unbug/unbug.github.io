@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="certGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e53935;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#43a047;stop-opacity:0.8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-size="15" font-weight="bold" fill="#2c3e50">样本复杂度分析: Certifiable Recall Target 上限</text>
+
+  <!-- Chart area -->
+  <rect x="80" y="50" width="640" height="280" rx="4" fill="#fafafa"/>
+
+  <!-- Y axis labels (certifiable target) -->
+  <text x="70" y="80" text-anchor="end" font-size="10" fill="#6c757d">1.00</text>
+  <line x1="80" y1="78" x2="720" y2="78" stroke="#e9ecef" stroke-width="0.5"/>
+
+  <text x="70" y="130" text-anchor="end" font-size="10" fill="#6c757d">0.98</text>
+  <line x1="80" y1="128" x2="720" y2="128" stroke="#e9ecef" stroke-width="0.5"/>
+
+  <text x="70" y="180" text-anchor="end" font-size="10" fill="#6c757d">0.96</text>
+  <line x1="80" y1="178" x2="720" y2="178" stroke="#e9ecef" stroke-width="0.5"/>
+
+  <text x="70" y="230" text-anchor="end" font-size="10" fill="#6c757d">0.94</text>
+  <line x1="80" y1="228" x2="720" y2="228" stroke="#e9ecef" stroke-width="0.5"/>
+
+  <text x="70" y="280" text-anchor="end" font-size="10" fill="#6c757d">0.92</text>
+  <line x1="80" y1="278" x2="720" y2="278" stroke="#e9ecef" stroke-width="0.5"/>
+
+  <!-- X axis labels (successful episodes) -->
+  <text x="160" y="348" text-anchor="middle" font-size="10" fill="#495057">20</text>
+  <text x="280" y="348" text-anchor="middle" font-size="10" fill="#495057">50</text>
+  <text x="400" y="348" text-anchor="middle" font-size="10" fill="#495057">100</text>
+  <text x="520" y="348" text-anchor="middle" font-size="10" fill="#495057">200</text>
+  <text x="640" y="348" text-anchor="middle" font-size="10" fill="#495057">500</text>
+
+  <!-- X axis line -->
+  <line x1="80" y1="330" x2="720" y2="330" stroke="#adb5bd" stroke-width="1"/>
+
+  <!-- Certifiable target curve: t = alpha^(1/n) where alpha=0.05 -->
+  <!-- n=20: 0.05^0.05 = 0.861 -->
+  <!-- n=50: 0.05^0.02 = 0.934 -->
+  <!-- n=100: 0.05^0.01 = 0.957 -->
+  <!-- n=200: 0.05^0.005 = 0.968 -->
+  <!-- n=500: 0.05^0.002 = 0.974 -->
+
+  <polyline points="160,130 280,95 400,80 520,74 640,70" fill="none" stroke="#e53935" stroke-width="3"/>
+  <polygon points="160,130 280,95 400,80 520,74 640,70 640,330 160,330" fill="#e53935" opacity="0.1"/>
+
+  <!-- Data points -->
+  <circle cx="160" cy="130" r="5" fill="#e53935" stroke="#fff" stroke-width="2"/>
+  <text x="160" y="122" text-anchor="middle" font-size="9" font-weight="bold" fill="#e53935">0.86</text>
+
+  <circle cx="280" cy="95" r="5" fill="#e53935" stroke="#fff" stroke-width="2"/>
+  <text x="280" y="87" text-anchor="middle" font-size="9" font-weight="bold" fill="#e53935">0.93</text>
+
+  <circle cx="400" cy="80" r="5" fill="#e53935" stroke="#fff" stroke-width="2"/>
+  <text x="400" y="72" text-anchor="middle" font-size="9" font-weight="bold" fill="#e53935">0.96</text>
+
+  <!-- Target lines -->
+  <!-- 90% target line (green) -->
+  <line x1="80" y1="278" x2="720" y2="278" stroke="#43a047" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="730" y="281" font-size="9" fill="#43a047">Target 90%</text>
+
+  <!-- 95% target line (orange) -->
+  <line x1="80" y1="178" x2="720" y2="178" stroke="#f57c00" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="730" y="181" font-size="9" fill="#f57c00">Target 95%</text>
+
+  <!-- 97% target line (red) -->
+  <line x1="80" y1="128" x2="720" y2="128" stroke="#e53935" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="730" y="131" font-size="9" fill="#e53935">Target 97%</text>
+
+  <!-- Key insight box -->
+  <rect x="80" y="355" width="640" height="60" rx="4" fill="#fff3e0" stroke="#f57c00"/>
+  <text x="100" y="375" font-size="10" font-weight="bold" fill="#e65100">关键发现:</text>
+  <text x="100" y="392" font-size="10" fill="#bf360c">当前规模下 (n=100~200)，certifiable target 上限约 0.96-0.97。要达到 98% 需要 ~500 个成功 episode，99% 需要 ~1,000+。</text>
+  <text x="100" y="409" font-size="10" fill="#bf360c">这不是 weakness——它告诉 practitioner 哪些承诺可以被数据支撑，哪些不能。</text>
+
+  <!-- Formula -->
+  <rect x="80" y="425" width="640" height="20" rx="4" fill="#f5f5f5"/>
+  <text x="400" y="439" text-anchor="middle" font-size="10" fill="#6c757d">t = alpha^(1/n), where alpha=0.05 (95% confidence) | n = number of successful episodes</text>
+
+</svg>

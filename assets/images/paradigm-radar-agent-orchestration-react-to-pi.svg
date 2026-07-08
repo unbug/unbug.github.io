@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 540" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="540" fill="url(#bgGrad)"/>
+
+  <!-- Title area -->
+  <text x="430" y="42" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">从 ReAct 到 PI：Agent 编排的范式转移</text>
+  <text x="430" y="68" text-anchor="middle" font-size="15" fill="#555">规划与执行解耦，提升复杂任务成功率 +47%</text>
+
+  <!-- Left: ReAct Loop -->
+  <rect x="30" y="90" width="380" height="260" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="220" y="120" text-anchor="middle" font-size="16" font-weight="bold" fill="#dc3545">ReAct 紧耦合循环</text>
+
+  <!-- ReAct cycle -->
+  <circle cx="220" cy="200" r="45" fill="#f8d7da" stroke="#dc3545" stroke-width="2"/>
+  <text x="220" y="196" text-anchor="middle" font-size="12" font-weight="bold" fill="#721c24">推理</text>
+  <text x="220" y="212" text-anchor="middle" font-size="10" fill="#721c24">(Reason)</text>
+
+  <path d="M265,200 L310,200" stroke="#dc3545" stroke-width="2"/>
+  <polygon points="310,195 320,200 310,205" fill="#dc3545"/>
+
+  <circle cx="340" cy="200" r="45" fill="#f8d7da" stroke="#dc3545" stroke-width="2"/>
+  <text x="340" y="196" text-anchor="middle" font-size="12" font-weight="bold" fill="#721c24">行动</text>
+  <text x="340" y="212" text-anchor="middle" font-size="10" fill="#721c24">(Act)</text>
+
+  <!-- Loop arrow back -->
+  <path d="M340,250 Q340,310 220,310 Q100,310 100,250 L100,200" stroke="#dc3545" stroke-width="2" fill="none"/>
+  <polygon points="100,195 108,200 100,205" fill="#dc3545"/>
+
+  <!-- ReAct pain points -->
+  <rect x="60" y="370" width="320" height="70" rx="6" fill="#fff3cd" stroke="#ffc107" stroke-width="1"/>
+  <text x="220" y="395" text-anchor="middle" font-size="12" font-weight="bold" fill="#856404">痛点：无限循环 · 全局目标丢失 · 错误恢复困难</text>
+  <text x="220" y="415" text-anchor="middle" font-size="11" fill="#856404">成功率 &lt;60%（多工具场景）</text>
+
+  <!-- Right: PI Architecture -->
+  <rect x="450" y="90" width="380" height="260" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="640" y="120" text-anchor="middle" font-size="16" font-weight="bold" fill="#28a745">PI 解耦架构</text>
+
+  <!-- PI three blocks -->
+  <rect x="490" y="145" width="100" height="55" rx="6" fill="#d4edda" stroke="#28a745" stroke-width="2"/>
+  <text x="540" y="168" text-anchor="middle" font-size="12" font-weight="bold" fill="#155724">Planner</text>
+  <text x="540" y="185" text-anchor="middle" font-size="9" fill="#155724">生成结构化计划</text>
+
+  <rect x="610" y="145" width="100" height="55" rx="6" fill="#cce5ff" stroke="#007bff" stroke-width="2"/>
+  <text x="660" y="168" text-anchor="middle" font-size="12" font-weight="bold" fill="#004085">Executor</text>
+  <text x="660" y="185" text-anchor="middle" font-size="9" fill="#004085">按步骤执行工具</text>
+
+  <!-- Arrows between PI blocks -->
+  <line x1="590" y1="172" x2="608" y2="172" stroke="#555" stroke-width="2"/>
+  <polygon points="608,167 618,172 608,177" fill="#555"/>
+
+  <!-- Monitor below -->
+  <rect x="530" y="220" width="140" height="55" rx="6" fill="#e2d9f3" stroke="#6f42c1" stroke-width="2"/>
+  <text x="600" y="243" text-anchor="middle" font-size="12" font-weight="bold" fill="#4a235a">Monitor</text>
+  <text x="600" y="260" text-anchor="middle" font-size="9" fill="#4a235a">状态评估 + 重规划</text>
+
+  <!-- Feedback arrow from Monitor to Planner -->
+  <path d="M530,247 Q480,247 490,172" stroke="#6f42c1" stroke-width="1.5" fill="none"/>
+  <polygon points="490,168 493,176 487,174" fill="#6f42c1"/>
+
+  <!-- PI advantages -->
+  <rect x="480" y="370" width="320" height="70" rx="6" fill="#d4edda" stroke="#28a745" stroke-width="1"/>
+  <text x="640" y="395" text-anchor="middle" font-size="12" font-weight="bold" fill="#155724">优势：阶段解耦 · 局部重规划 · 计划持久化</text>
+  <text x="640" y="415" text-anchor="middle" font-size="11" fill="#155724">成功率 85%（多工具场景）</text>
+
+  <!-- Bottom comparison bar -->
+  <rect x="30" y="440" width="800" height="60" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="50" y="462" font-size="12" font-weight="bold" fill="#333">对比</text>
+
+  <rect x="120" y="450" width="160" height="40" rx="4" fill="#f8d7da"/>
+  <text x="200" y="467" text-anchor="middle" font-size="11" font-weight="bold" fill="#721c24">步骤数: 12.4</text>
+  <text x="200" y="483" text-anchor="middle" font-size="9" fill="#721c24">ReAct</text>
+
+  <rect x="300" y="450" width="160" height="40" rx="4" fill="#d4edda"/>
+  <text x="380" y="467" text-anchor="middle" font-size="11" font-weight="bold" fill="#155724">步骤数: 7.2</text>
+  <text x="380" y="483" text-anchor="middle" font-size="9" fill="#155724">PI</text>
+
+  <rect x="480" y="450" width="160" height="40" rx="4" fill="#f8d7da"/>
+  <text x="560" y="467" text-anchor="middle" font-size="11" font-weight="bold" fill="#721c24">Token: 3,200</text>
+  <text x="560" y="483" text-anchor="middle" font-size="9" fill="#721c24">ReAct</text>
+
+  <rect x="660" y="450" width="160" height="40" rx="4" fill="#d4edda"/>
+  <text x="740" y="467" text-anchor="middle" font-size="11" font-weight="bold" fill="#155724">Token: 1,850</text>
+  <text x="740" y="483" text-anchor="middle" font-size="9" fill="#155724">PI</text>
+
+  <!-- Source -->
+  <text x="430" y="520" text-anchor="middle" font-size="11" fill="#999">Source: Anthropic Building Effective Agents (2026)</text>
+
+  <!-- Paradigm Radar badge -->
+  <rect x="700" y="500" width="120" height="24" rx="3" fill="#fff3cd"/>
+  <text x="760" y="516" text-anchor="middle" font-size="9" font-weight="bold" fill="#856404">AI Paradigm Radar</text>
+
+  <!-- Article number -->
+  <rect x="40" y="500" width="100" height="24" rx="3" fill="#e3f2fd"/>
+  <text x="90" y="516" text-anchor="middle" font-size="9" font-weight="bold" fill="#1565c0">Article #88</text>
+</svg>

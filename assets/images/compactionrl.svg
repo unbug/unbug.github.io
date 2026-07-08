@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 540" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="540" fill="url(#bgGrad)"/>
+
+  <!-- Title area -->
+  <text x="430" y="42" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a1a">CompactionRL：将上下文压缩引入强化学习</text>
+  <text x="430" y="68" text-anchor="middle" font-size="15" fill="#555">让Agent学会在有限资源下自主管理信息密度</text>
+
+  <!-- Central diagram: Joint optimization -->
+  <rect x="230" y="90" width="400" height="260" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="430" y="115" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">任务执行与摘要生成的联合优化</text>
+
+  <!-- Traditional approach (left) -->
+  <rect x="260" y="135" width="140" height="80" rx="6" fill="#f8d7da" stroke="#dc3545" stroke-width="1"/>
+  <text x="330" y="157" text-anchor="middle" font-size="12" font-weight="bold" fill="#721c24">传统方法</text>
+
+  <!-- Step 1: Task -->
+  <rect x="280" y="165" width="100" height="30" rx="4" fill="#e3f2fd"/>
+  <text x="330" y="185" text-anchor="middle" font-size="9" fill="#1565c0">执行任务</text>
+
+  <!-- Arrow down -->
+  <line x1="330" y1="195" x2="330" y2="210" stroke="#dc3545" stroke-width="1.5"/>
+  <polygon points="327,208 330,216 333,208" fill="#dc3545"/>
+
+  <!-- Step 2: Compress -->
+  <rect x="280" y="215" width="100" height="30" rx="4" fill="#fff3cd"/>
+  <text x="330" y="235" text-anchor="middle" font-size="9" fill="#856404">后处理压缩</text>
+
+  <!-- Arrow between -->
+  <line x1="330" y1="195" x2="330" y2="210" stroke="#dc3545" stroke-width="1.5"/>
+  <polygon points="327,208 330,216 333,208" fill="#dc3545"/>
+
+  <!-- Disconnected -->
+  <text x="330" y="260" text-anchor="middle" font-size="9" fill="#dc3545">两阶段脱节</text>
+
+  <!-- CompactionRL approach (right) -->
+  <rect x="460" y="135" width="140" height="80" rx="6" fill="#d4edda" stroke="#28a745" stroke-width="1"/>
+  <text x="530" y="157" text-anchor="middle" font-size="12" font-weight="bold" fill="#155724">CompactionRL</text>
+
+  <!-- Joint step -->
+  <rect x="480" y="165" width="100" height="30" rx="4" fill="#d4edda"/>
+  <text x="530" y="185" text-anchor="middle" font-size="9" fill="#155724">同时输出动作</text>
+
+  <!-- Arrow down -->
+  <line x1="530" y1="195" x2="530" y2="210" stroke="#28a745" stroke-width="1.5"/>
+  <polygon points="527,208 530,216 533,208" fill="#28a745"/>
+
+  <!-- Joint compression -->
+  <rect x="480" y="215" width="100" height="30" rx="4" fill="#d4edda"/>
+  <text x="530" y="235" text-anchor="middle" font-size="9" fill="#155724">+压缩指令</text>
+
+  <!-- Connected -->
+  <text x="530" y="260" text-anchor="middle" font-size="9" fill="#28a745">端到端联合优化</text>
+
+  <!-- Key techniques (bottom) -->
+  <rect x="260" y="280" width="100" height="55" rx="6" fill="#e3f2fd"/>
+  <text x="310" y="300" text-anchor="middle" font-size="10" font-weight="bold" fill="#1565c0">Token-level</text>
+  <text x="310" y="318" text-anchor="middle" font-size="9" fill="#1565c0">Loss Normalization</text>
+
+  <rect x="460" y="280" width="100" height="55" rx="6" fill="#e2d9f3"/>
+  <text x="510" y="300" text-anchor="middle" font-size="10" font-weight="bold" fill="#4a235a">Cross-Trajectory</text>
+  <text x="510" y="318" text-anchor="middle" font-size="9" fill="#4a235a">GAE Consistency</text>
+
+  <!-- Left panel: Key insight -->
+  <rect x="30" y="100" width="180" height="260" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="120" y="128" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">核心洞察</text>
+
+  <rect x="45" y="145" width="150" height="65" rx="4" fill="#e3f2fd"/>
+  <text x="120" y="167" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565c0">主动压缩</text>
+  <text x="120" y="185" text-anchor="middle" font-size="9" fill="#1565c0">而非被动等待窗口溢出</text>
+
+  <rect x="45" y="220" width="150" height="65" rx="4" fill="#fff3cd"/>
+  <text x="120" y="242" text-anchor="middle" font-size="11" font-weight="bold" fill="#856404">RL一等公民</text>
+  <text x="120" y="260" text-anchor="middle" font-size="9" fill="#856404">压缩作为训练原生组件，</text>
+  <text x="120" y="275" text-anchor="middle" font-size="9" fill="#856404">非外挂模块</text>
+
+  <rect x="45" y="295" width="150" height="65" rx="4" fill="#e8f5e9"/>
+  <text x="120" y="317" text-anchor="middle" font-size="11" font-weight="bold" fill="#2e7d32">细粒度信号</text>
+  <text x="120" y="335" text-anchor="middle" font-size="9" fill="#2e7d32">中间步骤压缩质量反馈，</text>
+  <text x="120" y="350" text-anchor="middle" font-size="9" fill="#2e7d32">非仅最终奖励信号</text>
+
+  <!-- Right panel: Results -->
+  <rect x="650" y="100" width="180" height="260" rx="8" fill="#fff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="740" y="128" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">实验结果</text>
+
+  <!-- GLM-4.5-Air -->
+  <rect x="665" y="145" width="150" height="70" rx="6" fill="#d4edda"/>
+  <text x="740" y="182" text-anchor="middle" font-size="28" font-weight="bold" fill="#155724">+7.0pt</text>
+  <text x="740" y="205" text-anchor="middle" font-size="10" fill="#155724">SWE-bench Verified (66.8%)</text>
+
+  <!-- GLM-5.2 -->
+  <rect x="665" y="225" width="150" height="70" rx="6" fill="#e3f2fd"/>
+  <text x="740" y="262" text-anchor="middle" font-size="28" font-weight="bold" fill="#1565c0">+5.5pt</text>
+  <text x="740" y="285" text-anchor="middle" font-size="10" fill="#1565c0">GLM-5.2 (750B MoE)</text>
+
+  <!-- Production -->
+  <rect x="665" y="305" width="150" height="40" rx="4" fill="#fff3cd"/>
+  <text x="740" y="330" text-anchor="middle" font-size="10" font-weight="bold" fill="#856404">已部署至生产RL管线</text>
+
+  <!-- Bottom insight -->
+  <rect x="30" y="420" width="800" height="50" rx="6" fill="#d1ecf1" stroke="#17a2b8" stroke-width="1"/>
+  <text x="430" y="445" text-anchor="middle" font-size="13" font-weight="bold" fill="#0c5460">核心创新：将上下文压缩作为RL训练的一等公民——让Agent学会何时保留、何时丢弃、如何摘要</text>
+
+  <!-- Source -->
+  <text x="430" y="495" text-anchor="middle" font-size="11" fill="#999">Source: Tsinghua University, arXiv:2607.05378 (CompactionRL)</text>
+
+  <!-- Paradigm Radar badge -->
+  <rect x="700" y="495" width="120" height="24" rx="3" fill="#fff3cd"/>
+  <text x="760" y="511" text-anchor="middle" font-size="9" font-weight="bold" fill="#856404">AI Paradigm Radar</text>
+
+  <!-- Article number -->
+  <rect x="40" y="495" width="100" height="24" rx="3" fill="#e3f2fd"/>
+  <text x="90" y="511" text-anchor="middle" font-size="9" font-weight="bold" fill="#1565c0">Article #99</text>
+
+  <!-- Date badge -->
+  <rect x="40" y="522" width="100" height="20" rx="3" fill="#e8f5e9"/>
+  <text x="90" y="536" text-anchor="middle" font-size="8" fill="#2e7d32">Published: 2026-07-09</text>
+</svg>

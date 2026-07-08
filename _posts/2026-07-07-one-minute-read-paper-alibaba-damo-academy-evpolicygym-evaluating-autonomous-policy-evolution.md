@@ -3,6 +3,7 @@ layout: post
 title: "一分钟读论文：《当Agent学会自我进化——自主策略演化评估框架EvoPolicyGym》"
 author: unbug
 categories: [ai, agent]
+image: assets/images/article-evopolicygym.svg
 tags: [agent-evaluation, policy-evolution, interactive-rl, trajectory-analysis, self-improvement]
 ---
 

@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 400" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bar90" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a90d9;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#357abd;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="bar93" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#6ab04c;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#57a33e;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="bar95" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0c040;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e0a830;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="bar97" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e67e22;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d35400;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="780" height="400" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="390" y="30" text-anchor="middle" font-size="15" font-weight="bold" fill="#2c3e50">推理计算节省率 (Compute Savings) 对比</text>
+
+  <!-- Y axis labels -->
+  <text x="60" y="78" text-anchor="end" font-size="10" fill="#6c757d">60%</text>
+  <line x1="80" y1="76" x2="740" y2="76" stroke="#e9ecef" stroke-width="0.5"/>
+
+  <text x="60" y="136" text-anchor="end" font-size="10" fill="#6c757d">50%</text>
+  <line x1="80" y1="134" x2="740" y2="134" stroke="#e9ecef" stroke-width="0.5"/>
+
+  <text x="60" y="194" text-anchor="end" font-size="10" fill="#6c757d">40%</text>
+  <line x1="80" y1="192" x2="740" y2="192" stroke="#e9ecef" stroke-width="0.5"/>
+
+  <text x="60" y="252" text-anchor="end" font-size="10" fill="#6c757d">30%</text>
+  <line x1="80" y1="250" x2="740" y2="250" stroke="#e9ecef" stroke-width="0.5"/>
+
+  <text x="60" y="310" text-anchor="end" font-size="10" fill="#6c757d">20%</text>
+  <line x1="80" y1="308" x2="740" y2="308" stroke="#e9ecef" stroke-width="0.5"/>
+
+  <!-- X axis -->
+  <line x1="80" y1="320" x2="740" y2="320" stroke="#adb5bd" stroke-width="1"/>
+
+  <!-- Group 1: Qwen-2.5-7B -->
+  <text x="200" y="345" text-anchor="middle" font-size="11" font-weight="bold" fill="#2c3e50">Qwen-2.5-7B</text>
+
+  <!-- 90% recall: 47.1% -->
+  <rect x="120" y="86" width="40" height="234" rx="3" fill="url(#bar90)"/>
+  <text x="140" y="80" text-anchor="middle" font-size="10" font-weight="bold" fill="#4a90d9">47.1%</text>
+
+  <!-- 93% recall: ~42% -->
+  <rect x="165" y="106" width="40" height="214" rx="3" fill="url(#bar93)"/>
+  <text x="185" y="100" text-anchor="middle" font-size="10" font-weight="bold" fill="#6ab04c">42.0%</text>
+
+  <!-- 95% recall: ~37% -->
+  <rect x="210" y="128" width="40" height="192" rx="3" fill="url(#bar95)"/>
+  <text x="230" y="122" text-anchor="middle" font-size="10" font-weight="bold" fill="#f0c040">37.0%</text>
+
+  <!-- 97% recall: ~32% -->
+  <rect x="255" y="150" width="40" height="170" rx="3" fill="url(#bar97)"/>
+  <text x="275" y="144" text-anchor="middle" font-size="10" font-weight="bold" fill="#e67e22">32.0%</text>
+
+  <!-- Group 2: Llama-3.2-3B -->
+  <text x="440" y="345" text-anchor="middle" font-size="11" font-weight="bold" fill="#2c3e50">Llama-3.2-3B</text>
+
+  <!-- 90% recall: 37.2% -->
+  <rect x="360" y="128" width="40" height="192" rx="3" fill="url(#bar90)"/>
+  <text x="380" y="122" text-anchor="middle" font-size="10" font-weight="bold" fill="#4a90d9">37.2%</text>
+
+  <!-- 93% recall: ~33% -->
+  <rect x="405" y="148" width="40" height="172" rx="3" fill="url(#bar93)"/>
+  <text x="425" y="142" text-anchor="middle" font-size="10" font-weight="bold" fill="#6ab04c">33.0%</text>
+
+  <!-- 95% recall: ~28% -->
+  <rect x="450" y="170" width="40" height="150" rx="3" fill="url(#bar95)"/>
+  <text x="470" y="164" text-anchor="middle" font-size="10" font-weight="bold" fill="#f0c040">28.0%</text>
+
+  <!-- 97% recall: ~23% -->
+  <rect x="495" y="192" width="40" height="128" rx="3" fill="url(#bar97)"/>
+  <text x="515" y="186" text-anchor="middle" font-size="10" font-weight="bold" fill="#e67e22">23.0%</text>
+
+  <!-- Group 3: Behavior-only (for comparison) -->
+  <text x="640" y="345" text-anchor="middle" font-size="11" font-weight="bold" fill="#2c3e50">Behavior Only</text>
+
+  <!-- ~23% at 90% recall -->
+  <rect x="580" y="176" width="40" height="144" rx="3" fill="#adb5bd"/>
+  <text x="600" y="170" text-anchor="middle" font-size="10" font-weight="bold" fill="#6c757d">~23%</text>
+
+  <!-- Error bars (±) -->
+  <!-- Qwen 90%: ±10.3% -->
+  <line x1="140" y1="68" x2="140" y2="86" stroke="#c62828" stroke-width="1.5"/>
+  <line x1="135" y1="68" x2="145" y2="68" stroke="#c62828" stroke-width="1.5"/>
+
+  <!-- Llama 90%: ±8.8% -->
+  <line x1="380" y1="110" x2="380" y2="128" stroke="#c62828" stroke-width="1.5"/>
+  <line x1="375" y1="110" x2="385" y2="110" stroke="#c62828" stroke-width="1.5"/>
+
+  <!-- Legend -->
+  <rect x="140" y="360" width="12" height="12" rx="2" fill="url(#bar90)"/>
+  <text x="158" y="370" font-size="9" fill="#495057">90% recall</text>
+
+  <rect x="230" y="360" width="12" height="12" rx="2" fill="url(#bar93)"/>
+  <text x="248" y="370" font-size="9" fill="#495057">93% recall</text>
+
+  <rect x="320" y="360" width="12" height="12" rx="2" fill="url(#bar95)"/>
+  <text x="338" y="370" font-size="9" fill="#495057">95% recall</text>
+
+  <rect x="410" y="360" width="12" height="12" rx="2" fill="url(#bar97)"/>
+  <text x="428" y="370" font-size="9" fill="#495057">97% recall</text>
+
+  <rect x="500" y="360" width="12" height="12" rx="2" fill="#adb5bd"/>
+  <text x="518" y="370" font-size="9" fill="#495057">Behavior Only</text>
+
+</svg>
