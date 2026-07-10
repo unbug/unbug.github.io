@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f2e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#2d3748;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="cycleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000066"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="600" y="55" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="#e2e8f0">EvoSOP: Tool Lifecycle Management</text>
+  <text x="600" y="85" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#a0aec0">From Atomic Actions to Standard Operating Procedures</text>
+
+  <!-- Cycle diagram center -->
+  <circle cx="600" cy="320" r="85" fill="none" stroke="#667eea" stroke-width="2.5" opacity="0.4"/>
+  <circle cx="600" cy="320" r="60" fill="#1a202c" stroke="#667eea" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="600" y="315" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#e2e8f0">SOP</text>
+  <text x="600" y="335" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#a0aec0">Toolset</text>
+
+  <!-- Four modules in cycle -->
+  <!-- Constructor (top-left) -->
+  <rect x="280" y="140" width="160" height="75" rx="10" fill="#2d3748" stroke="#667eea" stroke-width="2" filter="url(#shadow)"/>
+  <text x="360" y="170" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#667eea">Constructor</text>
+  <text x="360" y="192" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#a0aec0">Extract SOPs from traces</text>
+
+  <!-- Merger (top-right) -->
+  <rect x="760" y="140" width="160" height="75" rx="10" fill="#2d3748" stroke="#9f7aea" stroke-width="2" filter="url(#shadow)"/>
+  <text x="840" y="170" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#9f7aea">Merger</text>
+  <text x="840" y="192" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#a0aec0">Deduplicate tools</text>
+
+  <!-- Evaluator (bottom-right) -->
+  <rect x="760" y="385" width="160" height="75" rx="10" fill="#2d3748" stroke="#ed8936" stroke-width="2" filter="url(#shadow)"/>
+  <text x="840" y="415" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#ed8936">Evaluator</text>
+  <text x="840" y="437" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#a0aec0">Score by utility</text>
+
+  <!-- Reviewer (bottom-left) -->
+  <rect x="280" y="385" width="160" height="75" rx="10" fill="#2d3748" stroke="#e53e3e" stroke-width="2" filter="url(#shadow)"/>
+  <text x="360" y="415" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#e53e3e">Reviewer</text>
+  <text x="360" y="437" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#a0aec0">Prune low-scoring tools</text>
+
+  <!-- Cycle arrows -->
+  <!-- Constructor -> Merger (top) -->
+  <path d="M445,178 Q600,130 755,178" fill="none" stroke="#667eea" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Merger -> Evaluator (right) -->
+  <path d="M840,218 Q900,320 840,385" fill="none" stroke="#9f7aea" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Evaluator -> Reviewer (bottom) -->
+  <path d="M655,423 Q600,470 545,423" fill="none" stroke="#ed8936" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Reviewer -> Constructor (left) -->
+  <path d="M360,362 Q300,320 360,218" fill="none" stroke="#e53e3e" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667eea"/>
+    </marker>
+  </defs>
+
+  <!-- Iteration flow at bottom -->
+  <text x="600" y="520" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#a0aec0">Iteration Flow:</text>
+
+  <!-- Flow boxes -->
+  <rect x="80" y="540" width="90" height="32" rx="6" fill="#2d3748" stroke="#4a5568" stroke-width="1"/>
+  <text x="125" y="561" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#e2e8f0">Agent Exec</text>
+
+  <rect x="200" y="540" width="90" height="32" rx="6" fill="#2d3748" stroke="#4a5568" stroke-width="1"/>
+  <text x="245" y="561" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#e2e8f0">Trace</text>
+
+  <rect x="320" y="540" width="90" height="32" rx="6" fill="#2d3748" stroke="#4a5568" stroke-width="1"/>
+  <text x="365" y="561" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#e2e8f0">New SOPs</text>
+
+  <rect x="440" y="540" width="90" height="32" rx="6" fill="#2d3748" stroke="#4a5568" stroke-width="1"/>
+  <text x="485" y="561" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#e2e8f0">Merge</text>
+
+  <rect x="560" y="540" width="90" height="32" rx="6" fill="#2d3748" stroke="#4a5568" stroke-width="1"/>
+  <text x="605" y="561" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#e2e8f0">Score</text>
+
+  <rect x="680" y="540" width="90" height="32" rx="6" fill="#2d3748" stroke="#4a5568" stroke-width="1"/>
+  <text x="725" y="561" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#e2e8f0">Prune</text>
+
+  <rect x="800" y="540" width="90" height="32" rx="6" fill="#2d3748" stroke="#4a5568" stroke-width="1"/>
+  <text x="845" y="561" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#e2e8f0">Updated</text>
+
+  <!-- Flow arrows -->
+  <line x1="175" y1="556" x2="195" y2="556" stroke="#4a5568" stroke-width="1.5"/>
+  <line x1="295" y1="556" x2="315" y2="556" stroke="#4a5568" stroke-width="1.5"/>
+  <line x1="415" y1="556" x2="435" y2="556" stroke="#4a5568" stroke-width="1.5"/>
+  <line x1="535" y1="556" x2="555" y2="556" stroke="#4a5568" stroke-width="1.5"/>
+  <line x1="655" y1="556" x2="675" y2="556" stroke="#4a5568" stroke-width="1.5"/>
+  <line x1="775" y1="556" x2="795" y2="556" stroke="#4a5568" stroke-width="1.5"/>
+
+  <!-- Key metrics -->
+  <rect x="930" y="540" width="200" height="32" rx="6" fill="#1a202c" stroke="#667eea" stroke-width="1.5"/>
+  <text x="1030" y="561" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#e2e8f0">Model-Agnostic | No Fine-tuning</text>
+
+  <!-- Decorative elements -->
+  <circle cx="150" cy="100" r="3" fill="#667eea" opacity="0.3"/>
+  <circle cx="1050" cy="120" r="4" fill="#9f7aea" opacity="0.3"/>
+  <circle cx="180" cy="500" r="2" fill="#ed8936" opacity="0.3"/>
+  <circle cx="1020" cy="480" r="3" fill="#e53e3e" opacity="0.3"/>
+</svg>
