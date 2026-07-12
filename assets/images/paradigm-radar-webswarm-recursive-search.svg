@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" rx="12" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="600" y="52" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="700" fill="#1e293b">WebSwarm: 渐进式递归多Agent搜索框架</text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="80" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#64748b">从并行到递归：多Agent编排范式的转移</text>
+
+  <!-- Left side: Traditional Parallel System -->
+  <rect x="50" y="120" width="340" height="460" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="220" y="155" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#334155">传统并行系统</text>
+  
+  <!-- Root node -->
+  <rect x="120" y="180" width="200" height="44" rx="6" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="1.5"/>
+  <text x="220" y="207" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#0c4a6e">原始查询</text>
+  
+  <!-- Flat children -->
+  <line x1="170" y1="224" x2="120" y2="280" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="220" y1="224" x2="220" y2="280" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="270" y1="224" x2="320" y2="280" stroke="#94a3b8" stroke-width="1.5"/>
+  
+  <rect x="60" y="280" width="120" height="36" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="120" y="303" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#475569">子任务 A</text>
+  
+  <rect x="160" y="280" width="120" height="36" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="220" y="303" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#475569">子任务 B</text>
+  
+  <rect x="260" y="280" width="120" height="36" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="320" y="303" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#475569">子任务 C</text>
+  
+  <!-- Limitations -->
+  <rect x="80" y="350" width="280" height="120" rx="6" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
+  <text x="220" y="375" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#dc2626">局限性</text>
+  
+  <text x="95" y="398" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#991b1b">• 递归深度不足（单层分解）</text>
+  <text x="95" y="418" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#991b1b">• 协作模式僵化（统一策略）</text>
+  <text x="95" y="438" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#991b1b">• 语义驱动盲目拆分</text>
+  
+  <!-- Right side: WebSwarm Recursive System -->
+  <rect x="650" y="120" width="340" height="460" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="820" y="155" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#334155">WebSwarm 递归系统</text>
+  
+  <!-- Root node -->
+  <rect x="720" y="180" width="200" height="44" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="820" y="207" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#1e40af">根节点 + 探测</text>
+  
+  <!-- Level 1 children -->
+  <line x1="770" y1="224" x2="720" y2="280" stroke="#3b82f6" stroke-width="1.5"/>
+  <line x1="820" y1="224" x2="820" y2="280" stroke="#3b82f6" stroke-width="1.5"/>
+  <line x1="870" y1="224" x2="920" y2="280" stroke="#3b82f6" stroke-width="1.5"/>
+  
+  <rect x="660" y="280" width="120" height="36" rx="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="720" y="303" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#1e40af">子节点 A</text>
+  
+  <rect x="760" y="280" width="120" height="36" rx="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="820" y="303" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#1e40af">子节点 B</text>
+  
+  <rect x="860" y="280" width="120" height="36" rx="5" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="920" y="303" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#1e40af">子节点 C</text>
+  
+  <!-- Level 2 children (recursive expansion) -->
+  <line x1="720" y1="316" x2="680" y2="370" stroke="#2563eb" stroke-width="1.5"/>
+  <line x1="720" y1="316" x2="760" y2="370" stroke="#2563eb" stroke-width="1.5"/>
+  
+  <rect x="640" y="370" width="80" height="30" rx="4" fill="#bfdbfe" stroke="#60a5fa" stroke-width="1"/>
+  <text x="680" y="390" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#1e40af">A-1</text>
+  
+  <rect x="720" y="370" width="80" height="30" rx="4" fill="#bfdbfe" stroke="#60a5fa" stroke-width="1"/>
+  <text x="760" y="390" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#1e40af">A-2</text>
+  
+  <!-- Evidence aggregation arrows (upward) -->
+  <line x1="680" y1="370" x2="720" y2="316" stroke="#10b981" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="760" y1="370" x2="720" y2="316" stroke="#10b981" stroke-width="1.5" stroke-dasharray="4,3"/>
+  
+  <!-- Evidence aggregation label -->
+  <rect x="660" y="420" width="280" height="70" rx="6" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="800" y="445" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#16a34a">证据聚合</text>
+  
+  <text x="675" y="465" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#15803d">• 渐进式递归深度（多级展开）</text>
+  <text x="675" y="482" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#15803d">• 协作模式自适应切换</text>
+  
+  <!-- Center: Comparison -->
+  <rect x="420" y="200" width="60" height="300" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="450" y="290" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#64748b">vs</text>
+  
+  <!-- Key insight box at bottom -->
+  <rect x="50" y="520" width="1100" height="80" rx="8" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+  <text x="600" y="550" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#1e40af">核心范式转移：从「按问题表述拆分」到「按知识组织方式探索」</text>
+  <text x="600" y="575" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#3b82f6">探测 → 分解 → 递归扩展 → 证据聚合 → 综合结论</text>
+</svg>
