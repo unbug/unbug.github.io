@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="disrupter" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#f97316"/>
+    </linearGradient>
+    <linearGradient id="validator" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#16a34a"/>
+    </linearGradient>
+    <linearGradient id="broker" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#6366f1"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg)" rx="12"/>
+  
+  <!-- Title area -->
+  <text x="400" y="48" text-anchor="middle" fill="#f1f5f9" font-size="20" font-weight="700">Heterogeneous Agent Cohorts</text>
+  <text x="400" y="72" text-anchor="middle" fill="#94a3b8" font-size="13">角色分离解决安全与创造力的困境</text>
+  
+  <!-- Three agent roles -->
+  <!-- Disrupter -->
+  <rect x="50" y="100" width="210" height="120" rx="12" fill="#1e293b" stroke="url(#disrupter)" stroke-width="2"/>
+  <text x="155" y="130" text-anchor="middle" fill="#f87171" font-size="16" font-weight="700">Disrupter</text>
+  <text x="155" y="152" text-anchor="middle" fill="#cbd5e1" font-size="11">破坏者 · 创意生成</text>
+  <text x="155" y="172" fill="#94a3b8" font-size="10">最大化探索空间</text>
+  <text x="155" y="188" fill="#94a3b8" font-size="10">生成非常规提案</text>
+  <text x="155" y="204" fill="#64748b" font-size="10">不最小化风险</text>
+  
+  <!-- Validator -->
+  <rect x="295" y="100" width="210" height="120" rx="12" fill="#1e293b" stroke="url(#validator)" stroke-width="2"/>
+  <text x="400" y="130" text-anchor="middle" fill="#4ade80" font-size="16" font-weight="700">Validator</text>
+  <text x="400" y="152" text-anchor="middle" fill="#cbd5e1" font-size="11">验证器 · 安全网关</text>
+  <text x="400" y="172" fill="#94a3b8" font-size="10">硬性运行时安全检查</text>
+  <text x="400" y="188" fill="#94a3b8" font-size="10">阻止违规操作</text>
+  <text x="400" y="204" fill="#64748b" font-size="10">编译失败为约束补丁</text>
+  
+  <!-- Broker -->
+  <rect x="540" y="100" width="210" height="120" rx="12" fill="#1e293b" stroke="url(#broker)" stroke-width="2"/>
+  <text x="645" y="130" text-anchor="middle" fill="#60a5fa" font-size="16" font-weight="700">Broker</text>
+  <text x="645" y="152" text-anchor="middle" fill="#cbd5e1" font-size="11">经纪人 · 类比引入</text>
+  <text x="645" y="172" fill="#94a3b8" font-size="10">检索遥远类比知识</text>
+  <text x="645" y="188" fill="#94a3b8" font-size="10">跨域灵感映射</text>
+  <text x="645" y="204" fill="#64748b" font-size="10">增强Disrupter创意</text>
+  
+  <!-- Flow arrows -->
+  <path d="M 265 160 L 290 160" stroke="#6366f1" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 505 160 L 530 160" stroke="#6366f1" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <defs><marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#6366f1"/></marker></defs>
+  
+  <!-- Scars mechanism -->
+  <rect x="120" y="245" width="560" height="80" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="400" y="272" text-anchor="middle" fill="#fbbf24" font-size="14" font-weight="600">Scars机制：失败经验 → 可复用约束补丁</text>
+  
+  <!-- Scars flow -->
+  <rect x="150" y="288" width="100" height="28" rx="5" fill="#312e81"/>
+  <text x="200" y="306" text-anchor="middle" fill="#c4b5fd" font-size="10">提案失败</text>
+  
+  <path d="M 255 302 L 275 302" stroke="#f59e0b" stroke-width="1.5"/>
+  
+  <rect x="280" y="288" width="100" height="28" rx="5" fill="#312e81"/>
+  <text x="330" y="306" text-anchor="middle" fill="#fbbf24" font-size="10">分析原因</text>
+  
+  <path d="M 385 302 L 405 302" stroke="#f59e0b" stroke-width="1.5"/>
+  
+  <rect x="410" y="288" width="100" height="28" rx="5" fill="#312e81"/>
+  <text x="460" y="306" text-anchor="middle" fill="#fbbf24" font-size="10">编译约束</text>
+  
+  <path d="M 515 302 L 535 302" stroke="#f59e0b" stroke-width="1.5"/>
+  
+  <rect x="540" y="288" width="110" height="28" rx="5" fill="#312e81"/>
+  <text x="595" y="306" text-anchor="middle" fill="#fbbf24" font-size="10">缓存复用</text>
+  
+  <!-- Results -->
+  <rect x="60" y="350" width="340" height="120" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+  <text x="230" y="378" text-anchor="middle" fill="#f1f5f9" font-size="14" font-weight="600">实验结果</text>
+  
+  <!-- Token reduction -->
+  <rect x="85" y="395" width="290" height="22" rx="4" fill="#334155"/>
+  <rect x="85" y="395" width="246" height="22" rx="4" fill="url(#disrupter)"/>
+  <text x="385" y="410" text-anchor="start" fill="#e2e8f0" font-size="11">Token消耗降低: 15.1%</text>
+  
+  <!-- Communication reduction -->
+  <rect x="85" y="425" width="290" height="22" rx="4" fill="#334155"/>
+  <rect x="85" y="425" width="176" height="22" rx="4" fill="url(#broker)"/>
+  <text x="385" y="440" text-anchor="start" fill="#e2e8f0" font-size="11">通信带宽降低: 55.9%</text>
+  
+  <!-- Key insight -->
+  <rect x="460" y="350" width="280" height="120" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+  <text x="600" y="378" text-anchor="middle" fill="#f1f5f9" font-size="14" font-weight="600">核心洞察</text>
+  
+  <text x="480" y="402" fill="#cbd5e1" font-size="11">安全与创造力非零和博弈</text>
+  <text x="480" y="422" fill="#cbd5e1" font-size="11">角色分离避免内部冲突</text>
+  <text x="480" y="442" fill="#cbd5e1" font-size="11">失败经验可编译复用</text>
+  <text x="600" y="465" text-anchor="middle" fill="#64748b" font-size="10">UC Berkeley · Stanford · arXiv:2607.11226</text>
+  
+  <!-- Decorative -->
+  <circle cx="780" cy="30" r="3" fill="#6366f1" opacity="0.5"/>
+  <circle cx="760" cy="20" r="2" fill="#8b5cf6" opacity="0.3"/>
+</svg>
