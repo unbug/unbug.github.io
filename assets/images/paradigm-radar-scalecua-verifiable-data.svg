@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f3a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0d1525;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4a9eff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#7c5cff;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.08">
+    <line x1="0" y1="0" x2="1200" y2="0" stroke="#4a9eff" stroke-width="0.5"/>
+    <line x1="0" y1="63" x2="1200" y2="63" stroke="#4a9eff" stroke-width="0.5"/>
+    <line x1="0" y1="126" x2="1200" y2="126" stroke="#4a9eff" stroke-width="0.5"/>
+    <line x1="0" y1="189" x2="1200" y2="189" stroke="#4a9eff" stroke-width="0.5"/>
+    <line x1="0" y1="252" x2="1200" y2="252" stroke="#4a9eff" stroke-width="0.5"/>
+    <line x1="0" y1="315" x2="1200" y2="315" stroke="#4a9eff" stroke-width="0.5"/>
+    <line x1="0" y1="378" x2="1200" y2="378" stroke="#4a9eff" stroke-width="0.5"/>
+    <line x1="0" y1="441" x2="1200" y2="441" stroke="#4a9eff" stroke-width="0.5"/>
+    <line x1="0" y1="504" x2="1200" y2="504" stroke="#4a9eff" stroke-width="0.5"/>
+    <line x1="0" y1="567" x2="1200" y2="567" stroke="#4a9eff" stroke-width="0.5"/>
+    <line x1="0" y1="630" x2="1200" y2="630" stroke="#4a9eff" stroke-width="0.5"/>
+  </g>
+
+  <!-- Title area -->
+  <text x="80" y="120" font-family="system-ui, -apple-system, sans-serif" font-size="42" font-weight="700" fill="#ffffff">ScaleCUA</text>
+  <text x="80" y="165" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#a0b4d0">Verifiable Task Synthesis for Computer Use Agents</text>
+
+  <!-- Accent line -->
+  <rect x="80" y="185" width="200" height="3" fill="url(#accent)" rx="1.5"/>
+
+  <!-- Three component boxes -->
+  <!-- VeriGen box -->
+  <rect x="80" y="240" width="320" height="160" rx="12" fill="#ffffff" opacity="0.06" stroke="#4a9eff" stroke-width="1.5"/>
+  <text x="100" y="275" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" fill="#4a9eff">VeriGen</text>
+  <text x="100" y="300" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#a0b4d0">可验证任务合成框架</text>
+  <text x="100" y="325" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#7890a8">Docker 交互探针 + 多 Agent</text>
+  <text x="100" y="345" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#7890a8">反馈循环自动生成 RL 任务</text>
+  <text x="100" y="375" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="700" fill="#ffffff">24K+ 可验证任务</text>
+
+  <!-- Frontier Sampling box -->
+  <rect x="440" y="240" width="320" height="160" rx="12" fill="#ffffff" opacity="0.06" stroke="#7c5cff" stroke-width="1.5"/>
+  <text x="460" y="275" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" fill="#7c5cff">Frontier Sampling</text>
+  <text x="460" y="300" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#a0b4d0">动态学习前沿采样</text>
+  <text x="460" y="325" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#7890a8">追踪任务难度，分配最优</text>
+  <text x="460" y="345" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#7890a8">rollout 到当前学习前沿</text>
+  <text x="460" y="375" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="700" fill="#ffffff">零信号浪费</text>
+
+  <!-- Visual Context box -->
+  <rect x="800" y="240" width="320" height="160" rx="12" fill="#ffffff" opacity="0.06" stroke="#5cffa0" stroke-width="1.5"/>
+  <text x="820" y="275" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" fill="#5cffa0">Visual Context</text>
+  <text x="820" y="300" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#a0b4d0">视觉上下文分割</text>
+  <text x="820" y="325" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#7890a8">滑动窗口保留最近 K 步</text>
+  <text x="820" y="345" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#7890a8">视觉上下文，降低训练开销</text>
+  <text x="820" y="375" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="700" fill="#ffffff">2.83x 加速</text>
+
+  <!-- Results section -->
+  <rect x="80" y="440" width="1040" height="120" rx="12" fill="#ffffff" opacity="0.04"/>
+  <text x="100" y="475" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#a0b4d0">基准测试结果</text>
+
+  <!-- OSWorld result -->
+  <rect x="100" y="490" width="280" height="55" rx="8" fill="#4a9eff" opacity="0.15"/>
+  <text x="120" y="515" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#7ab8ff">OSWorld</text>
+  <text x="120" y="538" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="700" fill="#ffffff">68.7%</text>
+
+  <!-- ScienceBoard result -->
+  <rect x="420" y="490" width="280" height="55" rx="8" fill="#7c5cff" opacity="0.15"/>
+  <text x="440" y="515" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#b8a0ff">ScienceBoard</text>
+  <text x="440" y="538" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="700" fill="#ffffff">54.0%</text>
+
+  <!-- SOTA badge -->
+  <rect x="760" y="490" width="310" height="55" rx="8" fill="#5cffa0" opacity="0.1"/>
+  <text x="780" y="515" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#78ffb0">开源 CUA SOTA</text>
+  <text x="780" y="538" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="700" fill="#ffffff">超越 4x 参数模型</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="610" width="1200" height="20" fill="#0a0f1e"/>
+  <text x="80" y="625" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#4a6080">AI Paradigm Radar · arXiv:2607.11185 · Tsinghua + Z.AI</text>
+  <text x="950" y="625" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#4a6080">2026-07-15</text>
+</svg>
