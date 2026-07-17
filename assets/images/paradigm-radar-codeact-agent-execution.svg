@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#141836;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1a1f4e;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#34d399;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Grid pattern overlay -->
+  <g opacity="0.05">
+    <line x1="0" y1="100" x2="1200" y2="100" stroke="#fff" stroke-width="0.5"/>
+    <line x1="0" y1="200" x2="1200" y2="200" stroke="#fff" stroke-width="0.5"/>
+    <line x1="0" y1="300" x2="1200" y2="300" stroke="#fff" stroke-width="0.5"/>
+    <line x1="0" y1="400" x2="1200" y2="400" stroke="#fff" stroke-width="0.5"/>
+    <line x1="0" y1="500" x2="1200" y2="500" stroke="#fff" stroke-width="0.5"/>
+    <line x1="200" y1="0" x2="200" y2="630" stroke="#fff" stroke-width="0.5"/>
+    <line x1="400" y1="0" x2="400" y2="630" stroke="#fff" stroke-width="0.5"/>
+    <line x1="600" y1="0" x2="600" y2="630" stroke="#fff" stroke-width="0.5"/>
+    <line x1="800" y1="0" x2="800" y2="630" stroke="#fff" stroke-width="0.5"/>
+    <line x1="1000" y1="0" x2="1000" y2="630" stroke="#fff" stroke-width="0.5"/>
+  </g>
+
+  <!-- Title area -->
+  <text x="600" y="80" text-anchor="middle" font-size="42" font-weight="bold" fill="#e2e8f0">CodeAct</text>
+  <text x="600" y="120" text-anchor="middle" font-size="22" fill="#94a3b8">Agent 执行范式的根本性转移</text>
+
+  <!-- Left side: ReAct loop (old paradigm) -->
+  <g transform="translate(80, 160)">
+    <rect x="0" y="0" width="280" height="340" rx="12" fill="#1e293b" stroke="#ef4444" stroke-width="1.5" opacity="0.7"/>
+    <text x="140" y="35" text-anchor="middle" font-size="16" font-weight="bold" fill="#f87171">传统 ReAct 循环</text>
+
+    <!-- Sequential steps -->
+    <rect x="40" y="60" width="200" height="40" rx="8" fill="#3b82f6" opacity="0.6"/>
+    <text x="140" y="85" text-anchor="middle" font-size="13" fill="white">Model: 选择工具 A</text>
+
+    <line x1="140" y1="100" x2="140" y2="120" stroke="#60a5fa" stroke-width="2"/>
+    <polygon points="140,120 135,112 145,112" fill="#60a5fa"/>
+
+    <rect x="40" y="120" width="200" height="40" rx="8" fill="#475569" opacity="0.6"/>
+    <text x="140" y="145" text-anchor="middle" font-size="13" fill="white">Tool A 执行</text>
+
+    <line x1="140" y1="160" x2="140" y2="180" stroke="#60a5fa" stroke-width="2"/>
+    <polygon points="140,180 135,172 145,172" fill="#60a5fa"/>
+
+    <rect x="40" y="180" width="200" height="40" rx="8" fill="#3b82f6" opacity="0.6"/>
+    <text x="140" y="205" text-anchor="middle" font-size="13" fill="white">Model: 选择工具 B</text>
+
+    <line x1="140" y1="220" x2="140" y2="240" stroke="#60a5fa" stroke-width="2"/>
+    <polygon points="140,240 135,232 145,232" fill="#60a5fa"/>
+
+    <rect x="40" y="240" width="200" height="40" rx="8" fill="#475569" opacity="0.6"/>
+    <text x="140" y="265" text-anchor="middle" font-size="13" fill="white">Tool B 执行</text>
+
+    <!-- Arrow down -->
+    <line x1="140" y1="280" x2="140" y2="300" stroke="#60a5fa" stroke-width="2"/>
+    <polygon points="140,300 135,292 145,292" fill="#60a5fa"/>
+
+    <!-- Loop back arrow -->
+    <path d="M 240 260 Q 270 260 270 80 Q 270 60 240 60" stroke="#ef4444" stroke-width="1.5" fill="none" stroke-dasharray="4,3"/>
+    <polygon points="240,60 248,68 232,68" fill="#ef4444"/>
+
+    <!-- Stats -->
+    <text x="140" y="330" text-anchor="middle" font-size="11" fill="#94a3b8">N 次推理回合 | N+1 次网络往返</text>
+  </g>
+
+  <!-- Center: Arrow with label -->
+  <g transform="translate(420, 250)">
+    <line x1="0" y1="60" x2="360" y2="60" stroke="#10b981" stroke-width="3"/>
+    <polygon points="360,60 345,50 345,70" fill="#10b981"/>
+    <text x="180" y="45" text-anchor="middle" font-size="14" font-weight="bold" fill="#34d399">范式转移</text>
+
+    <!-- Speed indicator -->
+    <rect x="120" y="75" width="120" height="30" rx="6" fill="#10b981" opacity="0.2"/>
+    <text x="180" y="95" text-anchor="middle" font-size="12" fill="#34d399">延迟降低 ~67%</text>
+  </g>
+
+  <!-- Right side: CodeAct (new paradigm) -->
+  <g transform="translate(800, 160)">
+    <rect x="0" y="0" width="280" height="340" rx="12" fill="#1e293b" stroke="#10b981" stroke-width="1.5" opacity="0.7"/>
+    <text x="140" y="35" text-anchor="middle" font-size="16" font-weight="bold" fill="#34d399">CodeAct 批量执行</text>
+
+    <!-- Single model inference -->
+    <rect x="40" y="60" width="200" height="50" rx="8" fill="url(#blueGrad)" filter="url(#glow)"/>
+    <text x="140" y="83" text-anchor="middle" font-size="14" font-weight="bold" fill="white">一次推理：生成完整程序</text>
+
+    <!-- Arrow down -->
+    <line x1="140" y1="110" x2="140" y2="135" stroke="#60a5fa" stroke-width="2"/>
+    <polygon points="140,135 135,127 145,127" fill="#60a5fa"/>
+
+    <!-- Micro VM box -->
+    <rect x="30" y="135" width="220" height="120" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1.5" stroke-dasharray="6,3"/>
+    <text x="140" y="158" text-anchor="middle" font-size="11" fill="#6ee7b7">Hyperlight Micro-VM</text>
+
+    <!-- Tool calls inside VM -->
+    <rect x="50" y="170" width="180" height="24" rx="4" fill="#10b981" opacity="0.3"/>
+    <text x="140" y="186" text-anchor="middle" font-size="11" fill="#a7f3d0">call_tool(A)</text>
+
+    <rect x="50" y="200" width="180" height="24" rx="4" fill="#10b981" opacity="0.3"/>
+    <text x="140" y="216" text-anchor="middle" font-size="11" fill="#a7f3d0">call_tool(B)</text>
+
+    <rect x="50" y="230" width="180" height="24" rx="4" fill="#10b981" opacity="0.3"/>
+    <text x="140" y="246" text-anchor="middle" font-size="11" fill="#a7f3d0">call_tool(C)</text>
+
+    <!-- Arrow down -->
+    <line x1="140" y1="255" x2="140" y2="280" stroke="#60a5fa" stroke-width="2"/>
+    <polygon points="140,280 135,272 145,272" fill="#60a5fa"/>
+
+    <!-- Result -->
+    <rect x="40" y="280" width="200" height="40" rx="8" fill="url(#greenGrad)" opacity="0.6"/>
+    <text x="140" y="305" text-anchor="middle" font-size="13" fill="white">聚合结果返回</text>
+
+    <!-- Stats -->
+    <text x="140" y="328" text-anchor="middle" font-size="11" fill="#94a3b8">1 次推理 | 批量执行 | 隔离安全</text>
+  </g>
+
+  <!-- Bottom tagline -->
+  <text x="600" y="570" text-anchor="middle" font-size="16" fill="#64748b">从逐轮决策 → 程序化批量执行 | Microsoft Agent Framework · BUILD 2026</text>
+
+  <!-- Corner accents -->
+  <rect x="20" y="20" width="3" height="30" rx="1.5" fill="#3b82f6"/>
+  <rect x="20" y="20" width="30" height="3" rx="1.5" fill="#3b82f6"/>
+
+  <rect x="1177" y="20" width="3" height="30" rx="1.5" fill="#10b981"/>
+  <rect x="1150" y="20" width="30" height="3" rx="1.5" fill="#10b981"/>
+
+  <rect x="20" y="607" width="3" height="30" rx="1.5" fill="#3b82f6"/>
+  <rect x="20" y="580" width="30" height="3" rx="1.5" fill="#3b82f6"/>
+
+  <rect x="1177" y="607" width="3" height="30" rx="1.5" fill="#10b981"/>
+  <rect x="1150" y="607" width="30" height="3" rx="1.5" fill="#10b981"/>
+</svg>
