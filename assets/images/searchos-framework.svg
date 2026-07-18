@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#eef2ff;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="520" rx="16" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="400" y="42" text-anchor="middle" font-size="22" font-weight="700" fill="#1e293b">SearchOS SOCM Framework</text>
+  <text x="400" y="64" text-anchor="middle" font-size="13" fill="#64748b">State-Oriented Context Management for Multi-Agent Information Seeking</text>
+
+  <!-- Central Hub -->
+  <circle cx="400" cy="260" r="52" fill="#1e40af" filter="url(#shadow)"/>
+  <text x="400" y="253" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">SOCM</text>
+  <text x="400" y="272" text-anchor="middle" font-size="10" fill="#bfdbfe">State Manager</text>
+
+  <!-- Four Components -->
+  <!-- Frontier Task (top-left) -->
+  <rect x="60" y="80" width="240" height="95" rx="12" fill="#ffffff" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="180" y="108" text-anchor="middle" font-size="14" font-weight="700" fill="#1e40af">Frontier Task</text>
+  <text x="180" y="128" text-anchor="middle" font-size="11" fill="#334155">前沿任务队列</text>
+  <line x1="90" y1="140" x2="270" y2="140" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="180" y="156" text-anchor="middle" font-size="10.5" fill="#64748b">- Pending sub-tasks</text>
+  <text x="180" y="172" text-anchor="middle" font-size="10.5" fill="#64748b">- Priority ranking</text>
+
+  <!-- Evidence Graph (top-right) -->
+  <rect x="500" y="80" width="240" height="95" rx="12" fill="#ffffff" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="620" y="108" text-anchor="middle" font-size="14" font-weight="700" fill="#1e40af">Evidence Graph</text>
+  <text x="620" y="128" text-anchor="middle" font-size="11" fill="#334155">证据图结构</text>
+  <line x1="530" y1="140" x2="710" y2="140" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="620" y="156" text-anchor="middle" font-size="10.5" fill="#64748b">- Entity-relation triples</text>
+  <text x="620" y="172" text-anchor="middle" font-size="10.5" fill="#64748b">- Source anchoring</text>
+
+  <!-- Coverage Map (bottom-left) -->
+  <rect x="60" y="340" width="240" height="95" rx="12" fill="#ffffff" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="180" y="368" text-anchor="middle" font-size="14" font-weight="700" fill="#1e40af">Coverage Map</text>
+  <text x="180" y="388" text-anchor="middle" font-size="11" fill="#334155">覆盖地图</text>
+  <line x1="90" y1="400" x2="270" y2="400" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="180" y="416" text-anchor="middle" font-size="10.5" fill="#64748b">- Relation completion</text>
+  <text x="180" y="432" text-anchor="middle" font-size="10.5" fill="#64748b">- Gap identification</text>
+
+  <!-- Failure Memory (bottom-right) -->
+  <rect x="500" y="340" width="240" height="95" rx="12" fill="#ffffff" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="620" y="368" text-anchor="middle" font-size="14" font-weight="700" fill="#1e40af">Failure Memory</text>
+  <text x="620" y="388" text-anchor="middle" font-size="11" fill="#334155">失败记忆</text>
+  <line x1="530" y1="400" x2="710" y2="400" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="620" y="416" text-anchor="middle" font-size="10.5" fill="#64748b">- Dead-end queries</text>
+  <text x="620" y="432" text-anchor="middle" font-size="10.5" fill="#64748b">- Avoidance patterns</text>
+
+  <!-- Connecting Arrows -->
+  <!-- Top-left to center -->
+  <line x1="300" y1="127" x2="355" y2="215" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowBlue)"/>
+  <!-- Top-right to center -->
+  <line x1="500" y1="127" x2="445" y2="215" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowBlue)"/>
+  <!-- Bottom-left to center -->
+  <line x1="300" y1="392" x2="355" y2="305" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowBlue)"/>
+  <!-- Bottom-right to center -->
+  <line x1="500" y1="392" x2="445" y2="305" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowBlue)"/>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <!-- Pipeline label -->
+  <text x="400" y="495" text-anchor="middle" font-size="12" fill="#64748b">Pipeline Parallelism: Search Execution + State Update Overlap</text>
+</svg>
