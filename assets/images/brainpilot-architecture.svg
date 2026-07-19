@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="520" fill="#fafafa" rx="8"/>
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#222">BrainPilot: PI-Agent Multi-Agent Architecture</text>
+
+  <!-- Researcher (human) at top -->
+  <rect x="320" y="50" width="160" height="40" rx="20" fill="#2c5f8a" stroke="#1a3d5c" stroke-width="2"/>
+  <text x="400" y="75" text-anchor="middle" font-size="13" fill="#fff">Researcher (Human-in-the-Loop)</text>
+
+  <!-- Arrow: Researcher -> PI-Agent -->
+  <line x1="400" y1="90" x2="400" y2="125" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- PI Agent (center hub) -->
+  <rect x="300" y="125" width="200" height="50" rx="10" fill="#e8732a" stroke="#c45a1a" stroke-width="2"/>
+  <text x="400" y="148" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">PI Agent (Principal Investigator)</text>
+  <text x="400" y="165" text-anchor="middle" font-size="10" fill="#ffe0c0">Coordinator &amp; Task Delegator</text>
+
+  <!-- Knowledge Base and Skill Library (left side) -->
+  <rect x="20" y="130" width="180" height="45" rx="8" fill="#4a90d9" stroke="#3570b0" stroke-width="1.5"/>
+  <text x="110" y="150" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">Knowledge Base</text>
+  <text x="110" y="167" text-anchor="middle" font-size="10" fill="#d0e4f7">7,233 indexed items</text>
+
+  <rect x="20" y="185" width="180" height="45" rx="8" fill="#5ba34c" stroke="#468a3a" stroke-width="1.5"/>
+  <text x="110" y="205" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">Skill Library</text>
+  <text x="110" y="222" text-anchor="middle" font-size="10" fill="#d4f0d8">72 reusable methods / 7 domains</text>
+
+  <!-- Arrows: KB/Skills -> PI -->
+  <line x1="200" y1="152" x2="295" y2="148" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="200" y1="207" x2="295" y2="163" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Specialist Agents row (middle) -->
+  <text x="400" y="210" text-anchor="middle" font-size="11" fill="#666">Specialist Agents</text>
+
+  <rect x="55" y="230" width="120" height="42" rx="6" fill="#7b68ae" stroke="#635099" stroke-width="1.5"/>
+  <text x="115" y="248" text-anchor="middle" font-size="11" fill="#fff">Literature Search</text>
+  <text x="115" y="263" text-anchor="middle" font-size="9" fill="#e0d6f0">Agent</text>
+
+  <rect x="195" y="230" width="120" height="42" rx="6" fill="#7b68ae" stroke="#635099" stroke-width="1.5"/>
+  <text x="255" y="248" text-anchor="middle" font-size="11" fill="#fff">Experimental Plan</text>
+  <text x="255" y="263" text-anchor="middle" font-size="9" fill="#e0d6f0">Agent</text>
+
+  <rect x="335" y="230" width="120" height="42" rx="6" fill="#7b68ae" stroke="#635099" stroke-width="1.5"/>
+  <text x="395" y="248" text-anchor="middle" font-size="11" fill="#fff">Analysis Execution</text>
+  <text x="395" y="263" text-anchor="middle" font-size="9" fill="#e0d6f0">Agent</text>
+
+  <rect x="475" y="230" width="120" height="42" rx="6" fill="#7b68ae" stroke="#635099" stroke-width="1.5"/>
+  <text x="535" y="248" text-anchor="middle" font-size="11" fill="#fff">Interpretation</text>
+  <text x="535" y="263" text-anchor="middle" font-size="9" fill="#e0d6f0">Agent</text>
+
+  <!-- Arrows: PI -> Specialists -->
+  <line x1="340" y1="175" x2="115" y2="228" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="370" y1="175" x2="255" y2="228" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="400" y1="175" x2="395" y2="228" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="430" y1="175" x2="535" y2="228" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Auditor Agent (right side, parallel) -->
+  <rect x="620" y="225" width="160" height="52" rx="8" fill="#d94a4a" stroke="#b33636" stroke-width="2"/>
+  <text x="700" y="247" text-anchor="middle" font-size="12" font-weight="bold" fill="#fff">Auditor Agent</text>
+  <text x="700" y="264" text-anchor="middle" font-size="9" fill="#f5d0d0">Fabrication Checking</text>
+
+  <!-- Arrows: Specialists -> Auditor -->
+  <line x1="175" y1="251" x2="618" y2="248" stroke="#d94a4a" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <line x1="315" y1="251" x2="618" y2="255" stroke="#d94a4a" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <line x1="455" y1="251" x2="618" y2="260" stroke="#d94a4a" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <line x1="595" y1="251" x2="780" y2="248" stroke="#d94a4a" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+
+  <!-- Graph of Trace (bottom center) -->
+  <rect x="150" y="310" width="500" height="70" rx="8" fill="#f0f0f0" stroke="#999" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="400" y="332" text-anchor="middle" font-size="13" font-weight="bold" fill="#333">Graph of Trace</text>
+  <text x="400" y="350" text-anchor="middle" font-size="10" fill="#666">Subgoals --&gt; Tool Use --&gt; Evidence --&gt; Claims</text>
+  <text x="400" y="368" text-anchor="middle" font-size="10" fill="#666">Auditable record linking all workflow steps for expert inspection</text>
+
+  <!-- Arrows: PI + Auditor -> Graph of Trace -->
+  <line x1="400" y1="175" x2="400" y2="308" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="700" y1="277" x2="650" y2="310" stroke="#d94a4a" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Evaluation Benchmarks (bottom) -->
+  <rect x="80" y="410" width="240" height="45" rx="6" fill="#3a7ca5" stroke="#2d6387" stroke-width="1.5"/>
+  <text x="200" y="430" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">Agents' Last Exam</text>
+  <text x="200" y="447" text-anchor="middle" font-size="9" fill="#c0ddf0">(3 brain science tasks)</text>
+
+  <rect x="360" y="410" width="240" height="45" rx="6" fill="#e8732a" stroke="#c45a1a" stroke-width="1.5"/>
+  <text x="480" y="430" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">BrainPilotBench-v0</text>
+  <text x="480" y="447" text-anchor="middle" font-size="9" fill="#ffe0c0">(4 scientific tasks + case studies)</text>
+
+  <!-- Arrows: Graph of Trace -> Benchmarks -->
+  <line x1="250" y1="380" x2="200" y2="408" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="500" y1="380" x2="480" y2="408" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Open Source badge -->
+  <rect x="640" y="410" width="130" height="45" rx="6" fill="#2d8a4e" stroke="#1f6b39" stroke-width="1.5"/>
+  <text x="705" y="430" text-anchor="middle" font-size="11" font-weight="bold" fill="#fff">Fully Open Source</text>
+  <text x="705" y="447" text-anchor="middle" font-size="9" fill="#c8f0d6">GitHub + BrainPilot.chat</text>
+
+  <!-- Legend -->
+  <rect x="20" y="410" width="50" height="45" rx="4" fill="none" stroke="#ccc"/>
+  <line x1="30" y1="425" x2="60" y2="425" stroke="#333" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="85" y="429" font-size="9" fill="#666">Main flow</text>
+  <line x1="30" y1="442" x2="60" y2="442" stroke="#d94a4a" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="85" y="446" font-size="9" fill="#666">Audit flow</text>
+</svg>
