@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4361ee;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#7209b7;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)" rx="8"/>
+
+  <!-- Title -->
+  <text x="400" y="36" text-anchor="middle" font-size="18" font-weight="bold" fill="#2b2d42">The Price of Progress: Intelligence Per Dollar</text>
+  <text x="400" y="56" text-anchor="middle" font-size="12" fill="#6c757d">Epoch AI / Artificial Analysis (arXiv:2511.23455)</text>
+
+  <!-- Chart area -->
+  <rect x="80" y="80" width="640" height="300" fill="#ffffff" stroke="#dee2e6" stroke-width="1" rx="4"/>
+
+  <!-- Grid lines -->
+  <line x1="80" y1="140" x2="720" y2="140" stroke="#f1f3f5" stroke-width="1"/>
+  <line x1="80" y1="200" x2="720" y2="200" stroke="#f1f3f5" stroke-width="1"/>
+  <line x1="80" y1="260" x2="720" y2="260" stroke="#f1f3f5" stroke-width="1"/>
+  <line x1="80" y1="320" x2="720" y2="320" stroke="#dee2e6" stroke-width="1"/>
+
+  <!-- Y-axis labels -->
+  <text x="70" y="144" text-anchor="end" font-size="10" fill="#868e96">+10x</text>
+  <text x="70" y="204" text-anchor="end" font-size="10" fill="#868e96">+5x</text>
+  <text x="70" y="264" text-anchor="end" font-size="10" fill="#868e96">+3x</text>
+  <text x="70" y="324" text-anchor="end" font-size="10" fill="#868e96">Baseline</text>
+
+  <!-- Y-axis title -->
+  <text x="20" y="230" text-anchor="middle" font-size="11" fill="#495057" transform="rotate(-90,20,230)">Annual Change Factor</text>
+
+  <!-- X-axis labels -->
+  <text x="160" y="345" text-anchor="middle" font-size="10" fill="#868e96">2023</text>
+  <text x="320" y="345" text-anchor="middle" font-size="10" fill="#868e96">2024</text>
+  <text x="480" y="345" text-anchor="middle" font-size="10" fill="#868e96">2025</text>
+  <text x="640" y="345" text-anchor="middle" font-size="10" fill="#868e96">2026</text>
+
+  <!-- X-axis title -->
+  <text x="400" y="370" text-anchor="middle" font-size="11" fill="#495057">Year</text>
+
+  <!-- Unit Performance Cost (decreasing - going down means better) -->
+  <!-- Starts at +10x equivalent, goes to +10x improvement over time -->
+  <polyline points="160,120 320,180 480,250 640,310" fill="none" stroke="#4361ee" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="160" cy="120" r="4" fill="#4361ee"/>
+  <circle cx="320" cy="180" r="4" fill="#4361ee"/>
+  <circle cx="480" cy="250" r="4" fill="#4361ee"/>
+  <circle cx="640" cy="310" r="4" fill="#4361ee"/>
+
+  <!-- Unit Performance Cost label -->
+  <text x="650" y="305" font-size="10" fill="#4361ee" font-weight="bold">Unit Performance Cost ↓</text>
+  <text x="650" y="318" font-size="9" fill="#4361ee">(5x-10x improvement/year)</text>
+
+  <!-- Actual Running Cost (increasing) -->
+  <polyline points="160,300 320,270 480,220 640,150" fill="none" stroke="#e63946" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="160" cy="300" r="4" fill="#e63946"/>
+  <circle cx="320" cy="270" r="4" fill="#e63946"/>
+  <circle cx="480" cy="220" r="4" fill="#e63946"/>
+  <circle cx="640" cy="150" r="4" fill="#e63946"/>
+
+  <!-- Actual Running Cost label -->
+  <text x="650" y="145" font-size="10" fill="#e63946" font-weight="bold">Actual Running Cost ↑</text>
+  <text x="650" y="158" font-size="9" fill="#e63946">(3x-18x increase/year)</text>
+
+  <!-- Paradox annotation -->
+  <rect x="200" y="170" width="200" height="60" fill="#fff3cd" stroke="#ffc107" stroke-width="1" rx="4"/>
+  <text x="300" y="190" text-anchor="middle" font-size="10" fill="#856404" font-weight="bold">The Paradox</text>
+  <text x="300" y="206" text-anchor="middle" font-size="9" fill="#856404">Algorithm efficiency improves</text>
+  <text x="300" y="218" text-anchor="middle" font-size="9" fill="#856404">but total costs rise due to scale</text>
+
+  <!-- Legend -->
+  <line x1="100" y1="420" x2="130" y2="420" stroke="#4361ee" stroke-width="3"/>
+  <circle cx="115" cy="420" r="3" fill="#4361ee"/>
+  <text x="138" y="424" font-size="10" fill="#495057">Unit performance cost (per $)</text>
+
+  <line x1="340" y1="420" x2="370" y2="420" stroke="#e63946" stroke-width="3"/>
+  <circle cx="355" cy="420" r="3" fill="#e63946"/>
+  <text x="378" y="424" font-size="10" fill="#495057">Actual running cost (total)</text>
+
+  <!-- Key insight box -->
+  <rect x="500" y="405" width="260" height="30" fill="#e8f4fd" stroke="#4dabf7" stroke-width="1" rx="4"/>
+  <text x="630" y="424" text-anchor="middle" font-size="9" fill="#1864ab">Key: Algorithm efficiency ~3x/yr vs</text>
+
+  <!-- Source -->
+  <text x="400" y="475" text-anchor="middle" font-size="9" fill="#adb5bd">Source: Gundlach et al., Epoch AI / Artificial Analysis, arXiv:2511.23455</text>
+</svg>
