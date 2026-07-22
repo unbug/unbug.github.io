@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="Arial, sans-serif">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">PhoenixRepair: Multi-Agent Repair Framework</text>
+
+  <!-- Phase 1: Multi-Location Sampling -->
+  <rect x="40" y="60" width="200" height="80" rx="8" fill="#e8f4fd" stroke="#2196F3" stroke-width="2"/>
+  <text x="140" y="90" text-anchor="middle" font-size="13" font-weight="bold" fill="#1565C0">Phase 1</text>
+  <text x="140" y="110" text-anchor="middle" font-size="12" fill="#333">Multi-Location Sampling</text>
+  <text x="140" y="128" text-anchor="middle" font-size="10" fill="#666">Parallel candidate edit locations</text>
+
+  <!-- Phase 2: Iterative Reflection -->
+  <rect x="300" y="60" width="200" height="80" rx="8" fill="#e8f5e9" stroke="#4CAF50" stroke-width="2"/>
+  <text x="400" y="90" text-anchor="middle" font-size="13" font-weight="bold" fill="#2E7D32">Phase 2</text>
+  <text x="400" y="110" text-anchor="middle" font-size="12" fill="#333">Iterative Reflection</text>
+  <text x="400" y="128" text-anchor="middle" font-size="10" fill="#666">Multi-round patch refinement</text>
+
+  <!-- Phase 3: Final-Round Generation -->
+  <rect x="560" y="60" width="200" height="80" rx="8" fill="#fff3e0" stroke="#FF9800" stroke-width="2"/>
+  <text x="660" y="90" text-anchor="middle" font-size="13" font-weight="bold" fill="#E65100">Phase 3</text>
+  <text x="660" y="110" text-anchor="middle" font-size="12" fill="#333">Final-Round Generation</text>
+  <text x="660" y="128" text-anchor="middle" font-size="10" fill="#666">Distilled insights from all rounds</text>
+
+  <!-- Arrows between phases -->
+  <line x1="240" y1="100" x2="295" y2="100" stroke="#999" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="500" y1="100" x2="555" y2="100" stroke="#999" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#999"/>
+    </marker>
+  </defs>
+
+  <!-- Results box -->
+  <rect x="200" y="200" width="400" height="120" rx="8" fill="#f3e5f5" stroke="#9C27B0" stroke-width="2"/>
+  <text x="400" y="228" text-anchor="middle" font-size="13" font-weight="bold" fill="#6A1B9A">Results (SWE-bench-Verified)</text>
+
+  <!-- Result items -->
+  <text x="230" y="255" font-size="11" fill="#333">+7.8% relative improvement over SWE-agent</text>
+  <text x="230" y="275" font-size="11" fill="#333">76.0% Pass@1 with MiniMax-M2.5 (SOTA)</text>
+  <text x="230" y="295" font-size="11" fill="#333">~4.2% drop without multi-location sampling</text>
+  <text x="230" y="315" font-size="11" fill="#333">~3.8% drop without iterative reflection</text>
+
+  <!-- Feedback loop arrow -->
+  <path d="M 660 140 Q 660 170 500 170 L 200 170 Q 180 170 180 190" fill="none" stroke="#FF9800" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="400" y="165" text-anchor="middle" font-size="9" fill="#FF9800">Feedback Loop</text>
+
+  <!-- Institutions -->
+  <text x="400" y="370" text-anchor="middle" font-size="10" fill="#888">Sun Yat-sen University | Zhejiang University | HUST | Huawei CodeArts</text>
+</svg>
