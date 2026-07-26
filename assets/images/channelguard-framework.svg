@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <rect width="800" height="460" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a2e">ChannelGuard: Defense-in-Depth for Multi-Agent Pipelines</text>
+
+  <!-- Agent A (Producer) -->
+  <rect x="60" y="80" width="140" height="300" rx="8" fill="#ffffff" stroke="#d0d5dd" stroke-width="1.5"/>
+  <text x="130" y="108" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a2e">Agent A</text>
+  <text x="130" y="126" text-anchor="middle" font-size="11" fill="#6b7280">(Producer)</text>
+
+  <!-- Agent B (Consumer) -->
+  <rect x="600" y="80" width="140" height="300" rx="8" fill="#ffffff" stroke="#d0d5dd" stroke-width="1.5"/>
+  <text x="670" y="108" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a2e">Agent B</text>
+  <text x="670" y="126" text-anchor="middle" font-size="11" fill="#6b7280">(Consumer)</text>
+
+  <!-- Channel with Gate -->
+  <rect x="230" y="140" width="340" height="180" rx="8" fill="#f0f4ff" stroke="#c5d0e8" stroke-width="1.5"/>
+  <text x="400" y="165" text-anchor="middle" font-size="12" font-weight="bold" fill="#3b5998">Channel Gate (Information Bottleneck)</text>
+
+  <!-- Embedding Similarity Scoring -->
+  <rect x="270" y="185" width="260" height="40" rx="6" fill="#e8edf7" stroke="#b0c0de" stroke-width="1"/>
+  <text x="400" y="209" text-anchor="middle" font-size="11" fill="#3b5998">Embedding Similarity vs Adversarial Phrase Library</text>
+
+  <!-- Decision arrows -->
+  <line x1="370" y1="230" x2="340" y2="260" stroke="#3b5998" stroke-width="1.5"/>
+  <line x1="430" y1="230" x2="460" y2="260" stroke="#3b5998" stroke-width="1.5"/>
+
+  <!-- Three outcomes -->
+  <rect x="270" y="260" width="80" height="40" rx="6" fill="#e6f4ea" stroke="#52c41a" stroke-width="1.2"/>
+  <text x="310" y="284" text-anchor="middle" font-size="11" font-weight="bold" fill="#389e0d">Pass</text>
+
+  <rect x="365" y="260" width="70" height="40" rx="6" fill="#fff7e6" stroke="#faad14" stroke-width="1.2"/>
+  <text x="400" y="284" text-anchor="middle" font-size="11" font-weight="bold" fill="#d48806">Compress</text>
+
+  <rect x="450" y="260" width="80" height="40" rx="6" fill="#fff1f0" stroke="#ff4d4f" stroke-width="1.2"/>
+  <text x="490" y="284" text-anchor="middle" font-size="11" font-weight="bold" fill="#cf1322">Intercept</text>
+
+  <!-- Data flow arrows -->
+  <line x1="200" y1="230" x2="265" y2="230" stroke="#8c8c8c" stroke-width="2" marker-end="url(#arrowGray)"/>
+  <line x1="575" y1="230" x2="640" y2="230" stroke="#8c8c8c" stroke-width="2" marker-end="url(#arrowGray)"/>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8c8c8c"/>
+    </marker>
+  </defs>
+
+  <!-- Key properties box -->
+  <rect x="230" y="360" width="340" height="70" rx="8" fill="#ffffff" stroke="#d0d5dd" stroke-width="1"/>
+  <text x="400" y="382" text-anchor="middle" font-size="11" font-weight="bold" fill="#1a1a2e">Key Properties</text>
+
+  <!-- Three property items -->
+  <rect x="250" y="392" width="95" height="28" rx="4" fill="#f6f6f6"/>
+  <text x="297" y="410" text-anchor="middle" font-size="10" fill="#333">Training-Free</text>
+
+  <rect x="355" y="392" width="95" height="28" rx="4" fill="#f6f6f6"/>
+  <text x="402" y="410" text-anchor="middle" font-size="10" fill="#333">Zero LLM Cost</text>
+
+  <rect x="460" y="392" width="95" height="28" rx="4" fill="#f6f6f6"/>
+  <text x="507" y="410" text-anchor="middle" font-size="10" fill="#333">Deterministic</text>
+
+</svg>
