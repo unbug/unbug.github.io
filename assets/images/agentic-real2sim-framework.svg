@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4a90d9"/>
+    </marker>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#eef2f7;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="520" rx="12" fill="url(#bgGrad)" stroke="#d1d5db" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="400" y="36" text-anchor="middle" font-size="17" font-weight="bold" fill="#1e293b">Agentic Real2Sim Framework</text>
+
+  <!-- VLM Agent (central orchestrator) -->
+  <rect x="580" y="80" width="180" height="340" rx="10" fill="#dbeafe" stroke="#4a90d9" stroke-width="2"/>
+  <text x="670" y="108" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e40af">VLM Agent</text>
+  <line x1="595" y1="116" x2="745" y2="116" stroke="#93c5fd" stroke-width="1"/>
+
+  <!-- Agent sub-components -->
+  <rect x="595" y="128" width="150" height="36" rx="6" fill="#ffffff" stroke="#4a90d9" stroke-width="1.2"/>
+  <text x="670" y="151" text-anchor="middle" font-size="11" fill="#334155">Visual Reconstruction</text>
+
+  <rect x="595" y="178" width="150" height="36" rx="6" fill="#ffffff" stroke="#4a90d9" stroke-width="1.2"/>
+  <text x="670" y="201" text-anchor="middle" font-size="11" fill="#334155">Physical Parameter</text>
+  <text x="670" y="215" text-anchor="middle" font-size="11" fill="#334155">Inference</text>
+
+  <rect x="595" y="228" width="150" height="36" rx="6" fill="#ffffff" stroke="#4a90d9" stroke-width="1.2"/>
+  <text x="670" y="251" text-anchor="middle" font-size="11" fill="#334155">Coordinate Alignment</text>
+
+  <rect x="595" y="278" width="150" height="36" rx="6" fill="#ffffff" stroke="#4a90d9" stroke-width="1.2"/>
+  <text x="670" y="301" text-anchor="middle" font-size="11" fill="#334155">Simulation Assembly</text>
+
+  <rect x="595" y="328" width="150" height="36" rx="6" fill="#ffffff" stroke="#4a90d9" stroke-width="1.2"/>
+  <text x="670" y="351" text-anchor="middle" font-size="11" fill="#334155">Iterative Verification</text>
+
+  <!-- Pipeline stages (left side) -->
+  <!-- Stage 1: Real World Input -->
+  <rect x="20" y="80" width="200" height="60" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="120" y="104" text-anchor="middle" font-size="12" font-weight="bold" fill="#92400e">Real World</text>
+  <text x="120" y="122" text-anchor="middle" font-size="11" fill="#78350f">Video / Observations</text>
+
+  <!-- Arrow from Stage 1 to Agent -->
+  <line x1="220" y1="110" x2="575" y2="146" stroke="#4a90d9" stroke-width="1.8" marker-end="url(#arrowhead)"/>
+
+  <!-- Stage 2: Episodic Twin -->
+  <rect x="20" y="230" width="200" height="60" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="120" y="254" text-anchor="middle" font-size="12" font-weight="bold" fill="#065f46">Episodic Twin</text>
+  <text x="120" y="272" text-anchor="middle" font-size="11" fill="#047857">Simulation Environment</text>
+
+  <!-- Arrow from Agent to Stage 2 -->
+  <line x1="575" y1="364" x2="220" y2="260" stroke="#4a90d9" stroke-width="1.8" marker-end="url(#arrowhead)"/>
+
+  <!-- Downstream applications (bottom) -->
+  <rect x="20" y="370" width="200" height="50" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="120" y="394" text-anchor="middle" font-size="12" font-weight="bold" fill="#5b21b6">Downstream Tasks</text>
+  <text x="120" y="412" text-anchor="middle" font-size="11" fill="#4c1d95">Policy Learning &amp; Evaluation</text>
+
+  <!-- Arrow from Stage 2 to Downstream -->
+  <line x1="120" y1="290" x2="120" y2="365" stroke="#7c3aed" stroke-width="1.8" marker-end="url(#arrowhead)"/>
+
+  <!-- Feedback loop arrow (dashed) -->
+  <path d="M 745 346 Q 760 346 760 290 L 760 200" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="770" y="280" font-size="10" fill="#d97706" transform="rotate(-90,770,280)">Feedback</text>
+
+  <!-- Key insight box -->
+  <rect x="250" y="430" width="530" height="50" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="515" y="452" text-anchor="middle" font-size="11" fill="#475569">Open-source VLM backend (e.g., Qwen2.5-VL) at low cost</text>
+  <text x="515" y="470" text-anchor="middle" font-size="11" fill="#475569">Achieves comparable success rate to state-of-the-art models</text>
+
+  <!-- Stage labels -->
+  <rect x="20" y="340" width="200" height="28" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="120" y="359" text-anchor="middle" font-size="10" fill="#64748b">Input</text>
+
+  <rect x="20" y="430" width="200" height="28" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="120" y="449" text-anchor="middle" font-size="10" fill="#64748b">Output</text>
+
+  <!-- Institution labels -->
+  <text x="400" y="500" text-anchor="middle" font-size="9" fill="#94a3b8">UCLA · MIT · UCSD</text>
+</svg>
