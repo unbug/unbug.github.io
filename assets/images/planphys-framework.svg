@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Arial, sans-serif">
+  <rect width="800" height="500" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-size="16" font-weight="bold" fill="#2c3e50">PlanPhys: Multi-Turn Long-Horizon Planning Framework</text>
+  
+  <!-- Three Phase Pipeline -->
+  <!-- Phase 1: Pre-training -->
+  <rect x="40" y="60" width="220" height="180" rx="8" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+  <text x="150" y="90" text-anchor="middle" font-size="14" font-weight="bold" fill="#1565c0">Phase 1: Pre-training</text>
+  <line x1="60" y1="100" x2="240" y2="100" stroke="#1976d2" stroke-width="1"/>
+  
+  <!-- CoT World Model -->
+  <rect x="60" y="115" width="180" height="35" rx="4" fill="#bbdefb"/>
+  <text x="150" y="137" text-anchor="middle" font-size="12" fill="#1a237e">CoT State Transitions</text>
+  
+  <!-- World Model Internalization -->
+  <rect x="60" y="160" width="180" height="35" rx="4" fill="#bbdefb"/>
+  <text x="150" y="182" text-anchor="middle" font-size="12" fill="#1a237e">World Model Internalization</text>
+  
+  <!-- Key Finding -->
+  <rect x="60" y="205" width="180" height="35" rx="4" fill="#c8e6c9"/>
+  <text x="150" y="227" text-anchor="middle" font-size="11" fill="#2e7d32">+45.8% Long-Horizon Gain</text>
+  
+  <!-- Arrow -->
+  <path d="M 260 150 L 310 150" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Phase 2: Post-training -->
+  <rect x="320" y="60" width="220" height="180" rx="8" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="430" y="90" text-anchor="middle" font-size="14" font-weight="bold" fill="#e65100">Phase 2: Post-training</text>
+  <line x1="340" y1="100" x2="520" y2="100" stroke="#f57c00" stroke-width="1"/>
+  
+  <!-- GRPO vs OPD -->
+  <rect x="340" y="115" width="180" height="35" rx="4" fill="#ffe0b2"/>
+  <text x="430" y="137" text-anchor="middle" font-size="12" fill="#e65100">GRPO vs OPD Comparison</text>
+  
+  <!-- Three Regions -->
+  <rect x="340" y="160" width="180" height="35" rx="4" fill="#ffe0b2"/>
+  <text x="430" y="182" text-anchor="middle" font-size="12" fill="#e65100">Three-Region Applicability</text>
+  
+  <!-- Key Finding -->
+  <rect x="340" y="205" width="180" height="35" rx="4" fill="#c8e6c9"/>
+  <text x="430" y="227" text-anchor="middle" font-size="11" fill="#2e7d32">OPD +29.77 vs GRPO +19.97</text>
+  
+  <!-- Arrow -->
+  <path d="M 540 150 L 590 150" stroke="#666" stroke-width="2"/>
+  
+  <!-- Phase 3: Multi-Teacher -->
+  <rect x="600" y="60" width="160" height="180" rx="8" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
+  <text x="680" y="90" text-anchor="middle" font-size="14" font-weight="bold" fill="#6a1b9a">Phase 3: MOPD</text>
+  <line x1="620" y1="100" x2="740" y2="100" stroke="#7b1fa2" stroke-width="1"/>
+  
+  <!-- Compatibility -->
+  <rect x="620" y="115" width="120" height="35" rx="4" fill="#e1bee7"/>
+  <text x="680" y="137" text-anchor="middle" font-size="12" fill="#4a148c">Mode Compatibility</text>
+  
+  <!-- Cross-Env Generalization -->
+  <rect x="620" y="160" width="120" height="35" rx="4" fill="#e1bee7"/>
+  <text x="680" y="182" text-anchor="middle" font-size="11" fill="#4a148c">Cross-Env Generalization</text>
+  
+  <!-- Catastrophic Forgetting -->
+  <rect x="620" y="205" width="120" height="35" rx="4" fill="#ffcdd2"/>
+  <text x="680" y="227" text-anchor="middle" font-size="11" fill="#c62828">Avoid Catastrophic Forgetting</text>
+  
+  <!-- Bottom Section: Key Insights -->
+  <rect x="40" y="280" width="720" height="180" rx="8" fill="#e8f5e9" stroke="#388e3c" stroke-width="2"/>
+  <text x="400" y="310" text-anchor="middle" font-size="14" font-weight="bold" fill="#2e7d32">Key Insights</text>
+  <line x1="60" y1="320" x2="740" y2="320" stroke="#388e3c" stroke-width="1"/>
+  
+  <!-- Insight boxes -->
+  <rect x="60" y="335" width="220" height="50" rx="4" fill="#c8e6c9"/>
+  <text x="170" y="355" text-anchor="middle" font-size="11" font-weight="bold" fill="#1b5e20">World Model &gt; Direct Action</text>
+  <text x="170" y="372" text-anchor="middle" font-size="10" fill="#2e7d32">CoT state transitions enable composition</text>
+  
+  <rect x="295" y="335" width="220" height="50" rx="4" fill="#c8e6c9"/>
+  <text x="405" y="355" text-anchor="middle" font-size="11" font-weight="bold" fill="#1b5e20">OPD &gt; GRPO for Long-Horizon</text>
+  <text x="405" y="372" text-anchor="middle" font-size="10" fill="#2e7d32">Consistent updates with suboptimal data</text>
+  
+  <rect x="530" y="335" width="220" height="50" rx="4" fill="#c8e6c9"/>
+  <text x="640" y="355" text-anchor="middle" font-size="11" font-weight="bold" fill="#1b5e20">Compatibility &gt; Single Performance</text>
+  <text x="640" y="372" text-anchor="middle" font-size="10" fill="#2e7d32">Multi-teacher mode alignment critical</text>
+  
+  <!-- Bottom metadata -->
+  <rect x="40" y="480" width="720" height="15" rx="4" fill="#bdbdbd"/>
+  <text x="400" y="491" text-anchor="middle" font-size="9" fill="#616161">arXiv:2607.24720 | CASIA/THUIR | Tianyi Men et al.</text>
+  
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#666"/>
+    </marker>
+  </defs>
+</svg>
