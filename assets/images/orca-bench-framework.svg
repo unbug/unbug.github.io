@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" font-family="Arial, sans-serif">
+  <rect width="800" height="540" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#2c3e50">ORCA-bench: Production-Fidelity On-Call RCA Benchmark</text>
+
+  <!-- Testbed (left section) -->
+  <rect x="30" y="55" width="340" height="280" rx="10" fill="#fafafa" stroke="#90a4ae" stroke-width="1.5"/>
+  <text x="200" y="78" text-anchor="middle" font-size="13" font-weight="bold" fill="#455a64">Production-Fidelity Testbed</text>
+
+  <!-- Microservice System -->
+  <rect x="50" y="90" width="300" height="80" rx="6" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5"/>
+  <text x="200" y="113" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">OpenTelemetry-Instrumented</text>
+  <text x="200" y="130" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">Microservice System</text>
+
+  <!-- Telemetry Interfaces -->
+  <rect x="50" y="180" width="140" height="40" rx="4" fill="#bbdefb"/>
+  <text x="120" y="204" text-anchor="middle" font-size="10" fill="#1565c0">Prometheus</text>
+
+  <rect x="200" y="180" width="140" height="40" rx="4" fill="#bbdefb"/>
+  <text x="270" y="204" text-anchor="middle" font-size="10" fill="#1565c0">Jaeger</text>
+
+  <!-- Grafana/OpenSearch -->
+  <rect x="50" y="230" width="140" height="40" rx="4" fill="#bbdefb"/>
+  <text x="120" y="254" text-anchor="middle" font-size="10" fill="#1565c0">OpenSearch via Grafana</text>
+
+  <!-- Source Code -->
+  <rect x="200" y="230" width="140" height="40" rx="4" fill="#bbdefb"/>
+  <text x="270" y="254" text-anchor="middle" font-size="10" fill="#1565c0">Full Source Code</text>
+
+  <!-- Data Stats -->
+  <rect x="50" y="285" width="290" height="40" rx="4" fill="#e8f5e9"/>
+  <text x="200" y="302" text-anchor="middle" font-size="10" fill="#2e7d32">6 days of metrics, logs, traces</text>
+  <text x="200" y="318" text-anchor="middle" font-size="10" fill="#2e7d32">50 GB testbed data</text>
+
+  <!-- Arrow from testbed to tasks -->
+  <path d="M 370 195 L 410 195" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- RCA Tasks (right section) -->
+  <rect x="410" y="55" width="360" height="280" rx="10" fill="#fafafa" stroke="#90a4ae" stroke-width="1.5"/>
+  <text x="590" y="78" text-anchor="middle" font-size="13" font-weight="bold" fill="#455a64">RCA Task Pipeline</text>
+
+  <!-- Input: Ambiguous Report -->
+  <rect x="430" y="90" width="320" height="48" rx="6" fill="#fff3e0" stroke="#f57c00" stroke-width="1.5"/>
+  <text x="590" y="110" text-anchor="middle" font-size="11" font-weight="bold" fill="#e65100">Input: Ambiguous User-Facing Report</text>
+  <text x="590" y="127" text-anchor="middle" font-size="10" fill="#546e7a">(varies in specificity and time-to-detection)</text>
+
+  <!-- Arrow down -->
+  <path d="M 590 138 L 590 153" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Agent Analysis Phase -->
+  <rect x="430" y="153" width="320" height="70" rx="6" fill="#e8f5e9" stroke="#388e3c" stroke-width="1.5"/>
+  <text x="590" y="175" text-anchor="middle" font-size="11" font-weight="bold" fill="#2e7d32">Agent Analysis Phase</text>
+  <text x="590" y="192" text-anchor="middle" font-size="10" fill="#546e7a">Query telemetry interfaces + source code</text>
+  <text x="590" y="208" text-anchor="middle" font-size="10" fill="#546e7a">Reason over noisy metrics, logs, traces</text>
+
+  <!-- Arrow down -->
+  <path d="M 590 223 L 590 238" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Output: Root Cause -->
+  <rect x="430" y="238" width="320" height="48" rx="6" fill="#fce4ec" stroke="#c62828" stroke-width="1.5"/>
+  <text x="590" y="258" text-anchor="middle" font-size="11" font-weight="bold" fill="#b71c1c">Output: Root Cause Hypothesis</text>
+  <text x="590" y="275" text-anchor="middle" font-size="10" fill="#546e7a">(evaluated against SRE-verified ground truth)</text>
+
+  <!-- Evaluation (bottom section) -->
+  <rect x="30" y="355" width="740" height="165" rx="8" fill="#fafafa" stroke="#b0bec5" stroke-width="1.5"/>
+  <text x="400" y="378" text-anchor="middle" font-size="13" font-weight="bold" fill="#455a64">Evaluation Results: RCA Accuracy Across Five Frontier Agents</text>
+
+  <!-- Bar: Easy -->
+  <rect x="80" y="395" width="120" height="70" rx="4" fill="#66bb6a"/>
+  <text x="140" y="430" text-anchor="middle" font-size="11" font-weight="bold" fill="white">~45%</text>
+  <text x="140" y="455" text-anchor="middle" font-size="9" fill="#2e7d32">Easy Tasks</text>
+
+  <!-- Bar: Medium -->
+  <rect x="230" y="395" width="120" height="35" rx="4" fill="#ffa726"/>
+  <text x="290" y="418" text-anchor="middle" font-size="11" font-weight="bold" fill="white">25.3%</text>
+  <text x="290" y="445" text-anchor="middle" font-size="9" fill="#e65100">Medium Tasks</text>
+  <text x="290" y="458" text-anchor="middle" font-size="8" fill="#e65100">(Realistic Input)</text>
+
+  <!-- Bar: Hard -->
+  <rect x="380" y="395" width="120" height="15" rx="4" fill="#ef5350"/>
+  <text x="440" y="406" text-anchor="middle" font-size="10" font-weight="bold" fill="white">10.0%</text>
+  <text x="440" y="428" text-anchor="middle" font-size="9" fill="#c62828">Hard Tasks</text>
+
+  <!-- Annotation -->
+  <rect x="530" y="395" width="100" height="70" rx="4" fill="#e0f7fa" stroke="#00838f" stroke-width="1"/>
+  <text x="580" y="418" text-anchor="middle" font-size="10" font-weight="bold" fill="#006064">Hallucination</text>
+  <text x="580" y="435" text-anchor="middle" font-size="10" font-weight="bold" fill="#c62828">40%</text>
+  <text x="580" y="452" text-anchor="middle" font-size="8" fill="#00838f">(weakest model)</text>
+
+  <!-- Claude Fable 5 -->
+  <rect x="650" y="395" width="110" height="70" rx="4" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="1"/>
+  <text x="705" y="418" text-anchor="middle" font-size="10" font-weight="bold" fill="#6a1b9a">Claude Fable 5</text>
+  <text x="705" y="435" text-anchor="middle" font-size="9" fill="#6a1b9a">Gap persists</text>
+  <text x="705" y="452" text-anchor="middle" font-size="8" fill="#6a1b9a">(no improvement)</text>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#666"/>
+    </marker>
+  </defs>
+</svg>
