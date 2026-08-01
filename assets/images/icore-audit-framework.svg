@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" font-family="Arial, sans-serif">
+  <rect width="800" height="540" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#2c3e50">iCORE: Integrated Cooperation-Obligation REpresentation</text>
+
+  <!-- Triple Representation (top section) -->
+  <rect x="30" y="50" width="740" height="200" rx="10" fill="#fafafa" stroke="#90a4ae" stroke-width="1.5"/>
+  <text x="400" y="72" text-anchor="middle" font-size="13" font-weight="bold" fill="#455a64">Triple Representation: X = (G, Q, Π)</text>
+
+  <!-- Cooperation Graph G -->
+  <rect x="50" y="85" width="220" height="145" rx="8" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5"/>
+  <text x="160" y="108" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">Cooperation Graph G</text>
+  <line x1="70" y1="115" x2="250" y2="115" stroke="#1976d2" stroke-width="1"/>
+
+  <!-- Nodes in G -->
+  <circle cx="110" cy="145" r="15" fill="#bbdefb" stroke="#1976d2" stroke-width="1.5"/>
+  <text x="110" y="149" text-anchor="middle" font-size="8" fill="#1565c0">A1</text>
+
+  <circle cx="160" cy="135" r="15" fill="#bbdefb" stroke="#1976d2" stroke-width="1.5"/>
+  <text x="160" y="139" text-anchor="middle" font-size="8" fill="#1565c0">A2</text>
+
+  <circle cx="210" cy="145" r="15" fill="#bbdefb" stroke="#1976d2" stroke-width="1.5"/>
+  <text x="210" y="149" text-anchor="middle" font-size="8" fill="#1565c0">A3</text>
+
+  <!-- Edges in G -->
+  <path d="M 125 145 L 145 138" stroke="#1976d2" stroke-width="1.5"/>
+  <path d="M 175 138 L 195 145" stroke="#1976d2" stroke-width="1.5"/>
+
+  <!-- G description -->
+  <rect x="70" y="170" width="180" height="25" rx="3" fill="#bbdefb"/>
+  <text x="160" y="186" text-anchor="middle" font-size="9" fill="#1565c0">Observable interactions</text>
+
+  <rect x="70" y="200" width="180" height="25" rx="3" fill="#bbdefb"/>
+  <text x="160" y="216" text-anchor="middle" font-size="9" fill="#1565c0">Messages, tool calls, sharing</text>
+
+  <!-- Obligation Graph Q -->
+  <rect x="290" y="85" width="220" height="145" rx="8" fill="#e8f5e9" stroke="#388e3c" stroke-width="1.5"/>
+  <text x="400" y="108" text-anchor="middle" font-size="12" font-weight="bold" fill="#2e7d32">Obligation Graph Q</text>
+  <line x1="310" y1="115" x2="490" y2="115" stroke="#388e3c" stroke-width="1"/>
+
+  <!-- Nodes in Q -->
+  <rect x="330" y="130" width="60" height="25" rx="3" fill="#c8e6c9" stroke="#388e3c" stroke-width="1"/>
+  <text x="360" y="147" text-anchor="middle" font-size="9" fill="#2e7d32">Task T1</text>
+
+  <rect x="410" y="130" width="60" height="25" rx="3" fill="#c8e6c9" stroke="#388e3c" stroke-width="1"/>
+  <text x="440" y="147" text-anchor="middle" font-size="9" fill="#2e7d32">Task T2</text>
+
+  <rect x="370" y="165" width="60" height="25" rx="3" fill="#c8e6c9" stroke="#388e3c" stroke-width="1"/>
+  <text x="400" y="182" text-anchor="middle" font-size="9" fill="#2e7d32">Task T3</text>
+
+  <!-- Edges in Q -->
+  <path d="M 390 142 L 410 142" stroke="#388e3c" stroke-width="1.5"/>
+  <path d="M 400 155 L 400 165" stroke="#388e3c" stroke-width="1.5"/>
+
+  <!-- Q description -->
+  <rect x="310" y="200" width="180" height="25" rx="3" fill="#c8e6c9"/>
+  <text x="400" y="216" text-anchor="middle" font-size="9" fill="#2e7d32">Evolving work assignments</text>
+
+  <!-- Audit Map Π -->
+  <rect x="530" y="85" width="220" height="145" rx="8" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="640" y="108" text-anchor="middle" font-size="12" font-weight="bold" fill="#e65100">Audit Map Π</text>
+  <line x1="550" y1="115" x2="730" y2="115" stroke="#f57c00" stroke-width="1"/>
+
+  <!-- Π properties -->
+  <rect x="545" y="125" width="190" height="25" rx="3" fill="#ffe0b2"/>
+  <text x="640" y="142" text-anchor="middle" font-size="9" fill="#e65100">Verifiable properties</text>
+
+  <rect x="545" y="155" width="190" height="25" rx="3" fill="#ffe0b2"/>
+  <text x="640" y="172" text-anchor="middle" font-size="9" fill="#e65100">Evidence for state transitions</text>
+
+  <rect x="545" y="185" width="190" height="25" rx="3" fill="#ffe0b2"/>
+  <text x="640" y="202" text-anchor="middle" font-size="9" fill="#e65100">Links G ↔ Q</text>
+
+  <!-- Arrows between components -->
+  <path d="M 270 155 L 290 155" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 510 155 L 530 155" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Two Certified Properties (center section) -->
+  <rect x="30" y="270" width="740" height="90" rx="8" fill="#fffde7" stroke="#f9a825" stroke-width="2"/>
+  <text x="400" y="292" text-anchor="middle" font-size="13" font-weight="bold" fill="#f57f17">Two Certified Properties</text>
+
+  <!-- Property 1: Work Soundness -->
+  <rect x="60" y="305" width="340" height="45" rx="6" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5"/>
+  <text x="230" y="323" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565c0">Work Soundness</text>
+  <text x="230" y="340" text-anchor="middle" font-size="9" fill="#546e7a">Every active decision-relevant assertion has finite justification through G and Π</text>
+
+  <!-- Property 2: Agent-Assignment Stability -->
+  <rect x="420" y="305" width="320" height="45" rx="6" fill="#e8f5e9" stroke="#388e3c" stroke-width="1.5"/>
+  <text x="580" y="323" text-anchor="middle" font-size="11" font-weight="bold" fill="#2e7d32">Agent-Assignment Stability</text>
+  <text x="580" y="340" text-anchor="middle" font-size="9" fill="#546e7a">No feasible alternative agent can improve declared contribution by more than ε</text>
+
+  <!-- Key Results (bottom section) -->
+  <rect x="30" y="385" width="740" height="135" rx="8" fill="#fafafa" stroke="#b0bec5" stroke-width="1.5"/>
+  <text x="400" y="408" text-anchor="middle" font-size="13" font-weight="bold" fill="#455a64">iCORE-Audit Performance Improvements vs Passive Full-State Observation</text>
+
+  <!-- Bar: Control Trajectory -->
+  <rect x="80" y="425" width="120" height="70" rx="4" fill="#66bb6a"/>
+  <text x="140" y="460" text-anchor="middle" font-size="11" font-weight="bold" fill="white">+11.5%</text>
+  <text x="140" y="485" text-anchor="middle" font-size="9" fill="#2e7d32">Control Trajectory</text>
+
+  <!-- Bar: Control Terminal -->
+  <rect x="230" y="425" width="120" height="60" rx="4" fill="#ffa726"/>
+  <text x="290" y="458" text-anchor="middle" font-size="11" font-weight="bold" fill="white">+15.1%</text>
+  <text x="290" y="485" text-anchor="middle" font-size="9" fill="#e65100">Control Terminal</text>
+
+  <!-- Bar: Real Trajectory -->
+  <rect x="380" y="425" width="120" height="90" rx="4" fill="#ef5350"/>
+  <text x="440" y="472" text-anchor="middle" font-size="11" font-weight="bold" fill="white">+26.4%</text>
+  <text x="440" y="498" text-anchor="middle" font-size="9" fill="#c62828">Real LLM Trajectory</text>
+
+  <!-- Bar: Real Terminal -->
+  <rect x="530" y="425" width="120" height="75" rx="4" fill="#ab47bc"/>
+  <text x="590" y="465" text-anchor="middle" font-size="11" font-weight="bold" fill="white">+Significant</text>
+  <text x="590" y="492" text-anchor="middle" font-size="9" fill="#6a1b9a">Real LLM Terminal</text>
+
+  <!-- Annotation -->
+  <rect x="670" y="425" width="80" height="70" rx="4" fill="#e0f7fa" stroke="#00838f" stroke-width="1"/>
+  <text x="710" y="448" text-anchor="middle" font-size="9" font-weight="bold" fill="#006064">Local-to-Global</text>
+  <text x="710" y="463" text-anchor="middle" font-size="9" font-weight="bold" fill="#006064">Soundness</text>
+  <text x="710" y="478" text-anchor="middle" font-size="9" font-weight="bold" fill="#006064">Guarantees</text>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#666"/>
+    </marker>
+  </defs>
+</svg>
