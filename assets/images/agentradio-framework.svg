@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" font-family="Arial, sans-serif">
+  <rect width="800" height="540" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#2c3e50">AgentRadio: Asynchronous Message-Passing for Coding Agents</text>
+
+  <!-- Three Primitives (left column) -->
+  <rect x="30" y="55" width="240" height="280" rx="10" fill="#fafafa" stroke="#90a4ae" stroke-width="1.5"/>
+  <text x="150" y="80" text-anchor="middle" font-size="13" font-weight="bold" fill="#455a64">Three Communication Primitives</text>
+
+  <!-- create_thread -->
+  <rect x="50" y="95" width="200" height="60" rx="6" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5"/>
+  <text x="150" y="118" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">create_thread(name, participants)</text>
+  <text x="150" y="137" text-anchor="middle" font-size="10" fill="#546e7a">Opens named conversation on</text>
+  <text x="150" y="150" text-anchor="middle" font-size="10" fill="#546e7a">message server, returns ID</text>
+
+  <!-- send_message -->
+  <rect x="50" y="168" width="200" height="60" rx="6" fill="#e8f5e9" stroke="#388e3c" stroke-width="1.5"/>
+  <text x="150" y="191" text-anchor="middle" font-size="12" font-weight="bold" fill="#2e7d32">send_message(thread, content)</text>
+  <text x="150" y="210" text-anchor="middle" font-size="10" fill="#546e7a">Non-blocking append to thread,</text>
+  <text x="150" y="223" text-anchor="middle" font-size="10" fill="#546e7a">returns immediately</text>
+
+  <!-- wait_for_mention -->
+  <rect x="50" y="241" width="200" height="80" rx="6" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="150" y="264" text-anchor="middle" font-size="12" font-weight="bold" fill="#e65100">wait_for_mention(timeout)</text>
+  <text x="150" y="283" text-anchor="middle" font-size="10" fill="#546e7a">Background task: surfaces</text>
+  <text x="150" y="296" text-anchor="middle" font-size="10" fill="#546e7a">mentions between work steps</text>
+  <text x="150" y="312" text-anchor="middle" font-size="10" fill="#f57c00" font-weight="bold">KEY: Passive Awareness</text>
+
+  <!-- Arrow from primitives to protocol -->
+  <path d="M 270 195 L 310 195" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Five-Phase Protocol (center) -->
+  <rect x="310" y="55" width="460" height="280" rx="10" fill="#fafafa" stroke="#90a4ae" stroke-width="1.5"/>
+  <text x="540" y="80" text-anchor="middle" font-size="13" font-weight="bold" fill="#455a64">Five-Phase Collaboration Protocol</text>
+
+  <!-- Phase 1: Division of Labor -->
+  <rect x="330" y="95" width="200" height="48" rx="6" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5"/>
+  <text x="430" y="115" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">Phase 1: Division of Labor</text>
+  <text x="430" y="131" text-anchor="middle" font-size="10" fill="#546e7a">Assign subtasks to agents</text>
+
+  <!-- Arrow down -->
+  <path d="M 430 143 L 430 158" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Phase 2: Execution -->
+  <rect x="330" y="158" width="200" height="48" rx="6" fill="#e8f5e9" stroke="#388e3c" stroke-width="1.5"/>
+  <text x="430" y="178" text-anchor="middle" font-size="12" font-weight="bold" fill="#2e7d32">Phase 2: Parallel Execution</text>
+  <text x="430" y="194" text-anchor="middle" font-size="10" fill="#546e7a">Agents work in parallel lanes</text>
+
+  <!-- Arrow down -->
+  <path d="M 430 206 L 430 221" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Phase 3: Real-time Discovery (highlighted) -->
+  <rect x="330" y="221" width="200" height="48" rx="6" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
+  <text x="430" y="241" text-anchor="middle" font-size="12" font-weight="bold" fill="#e65100">Phase 3: Real-time Discovery</text>
+  <text x="430" y="257" text-anchor="middle" font-size="10" fill="#f57c00" font-weight="bold">Agents share findings mid-execution</text>
+
+  <!-- Arrow down -->
+  <path d="M 430 269 L 430 284" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Phase 4: Negotiation -->
+  <rect x="330" y="284" width="200" height="48" rx="6" fill="#fce4ec" stroke="#c62828" stroke-width="1.5"/>
+  <text x="430" y="304" text-anchor="middle" font-size="12" font-weight="bold" fill="#b71c1c">Phase 4: Negotiation</text>
+  <text x="430" y="320" text-anchor="middle" font-size="10" fill="#546e7a">Adjust strategy based on new info</text>
+
+  <!-- Arrow down -->
+  <path d="M 430 332 L 430 347" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Phase 5: Integration -->
+  <rect x="330" y="347" width="200" height="48" rx="6" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="1.5"/>
+  <text x="430" y="367" text-anchor="middle" font-size="12" font-weight="bold" fill="#6a1b9a">Phase 5: Integration</text>
+  <text x="430" y="383" text-anchor="middle" font-size="10" fill="#546e7a">Aggregate and finalize results</text>
+
+  <!-- Agent lanes visualization (right side) -->
+  <rect x="550" y="95" width="200" height="230" rx="8" fill="#fffde7" stroke="#f9a825" stroke-width="1.5"/>
+  <text x="650" y="115" text-anchor="middle" font-size="12" font-weight="bold" fill="#f57f17">Agent Lanes with Passive Awareness</text>
+
+  <!-- Agent A lane -->
+  <rect x="565" y="125" width="170" height="40" rx="4" fill="#e3f2fd"/>
+  <text x="650" y="142" text-anchor="middle" font-size="10" font-weight="bold" fill="#1565c0">Agent A: Foreground Work</text>
+  <text x="650" y="155" text-anchor="middle" font-size="9" fill="#546e7a">@mention from Agent B → surfaced</text>
+
+  <!-- Agent B lane -->
+  <rect x="565" y="172" width="170" height="40" rx="4" fill="#e8f5e9"/>
+  <text x="650" y="189" text-anchor="middle" font-size="10" font-weight="bold" fill="#2e7d32">Agent B: Foreground Work</text>
+  <text x="650" y="202" text-anchor="middle" font-size="9" fill="#546e7a">@mention from Agent A → surfaced</text>
+
+  <!-- Arrow between lanes -->
+  <path d="M 650 165 L 650 172" stroke="#f57c00" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Background watcher indicator -->
+  <rect x="565" y="222" width="170" height="30" rx="4" fill="#fff3e0" stroke="#f57c00" stroke-width="1"/>
+  <text x="650" y="241" text-anchor="middle" font-size="9" fill="#f57c00">Background: wait_for_mention</text>
+
+  <!-- Communication server (bottom right) -->
+  <rect x="550" y="340" width="200" height="60" rx="8" fill="#e0f7fa" stroke="#00838f" stroke-width="1.5"/>
+  <text x="650" y="362" text-anchor="middle" font-size="11" font-weight="bold" fill="#006064">Message Server</text>
+  <text x="650" y="380" text-anchor="middle" font-size="9" fill="#00838f">Named threads + message routing</text>
+
+  <!-- Arrows from lanes to server -->
+  <path d="M 610 252 L 610 340" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M 690 252 L 690 340" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Key Results (bottom section) -->
+  <rect x="30" y="355" width="720" height="165" rx="8" fill="#fafafa" stroke="#b0bec5" stroke-width="1.5"/>
+  <text x="390" y="378" text-anchor="middle" font-size="13" font-weight="bold" fill="#455a64">SWE-Atlas QnA Results (124 tasks, 1,306 rubrics)</text>
+
+  <!-- Bar: Single Agent Opus 4.6 -->
+  <rect x="80" y="395" width="120" height="70" rx="4" fill="#ef5350"/>
+  <text x="140" y="425" text-anchor="middle" font-size="11" font-weight="bold" fill="white">32.3%</text>
+  <text x="140" y="455" text-anchor="middle" font-size="9" fill="#b71c1c">Single Agent</text>
+  <text x="140" y="465" text-anchor="middle" font-size="8" fill="#b71c1c">(Opus 4.6)</text>
+
+  <!-- Bar: Single Agent Opus 4.8 -->
+  <rect x="230" y="395" width="120" height="100" rx="4" fill="#ffa726"/>
+  <text x="290" y="445" text-anchor="middle" font-size="11" font-weight="bold" fill="white">57.2%</text>
+  <text x="290" y="475" text-anchor="middle" font-size="9" fill="#e65100">Single Agent</text>
+  <text x="290" y="485" text-anchor="middle" font-size="8" fill="#e65100">(Opus 4.8)</text>
+
+  <!-- Bar: AgentRadio -->
+  <rect x="380" y="395" width="120" height="115" rx="4" fill="#66bb6a"/>
+  <text x="440" y="445" text-anchor="middle" font-size="12" font-weight="bold" fill="white">62.1%</text>
+  <text x="440" y="475" text-anchor="middle" font-size="9" fill="#2e7d32">AgentRadio</text>
+  <text x="440" y="485" text-anchor="middle" font-size="8" fill="#2e7d32">(4 Agents, Opus 4.6)</text>
+
+  <!-- Bar: Best-of-6 -->
+  <rect x="530" y="395" width="120" height="65" rx="4" fill="#ab47bc"/>
+  <text x="590" y="430" text-anchor="middle" font-size="11" font-weight="bold" fill="white">37.9%</text>
+  <text x="590" y="460" text-anchor="middle" font-size="9" fill="#6a1b9a">Best-of-6</text>
+  <text x="590" y="470" text-anchor="middle" font-size="8" fill="#6a1b9a">(Compute-matched)</text>
+
+  <!-- Annotation -->
+  <rect x="680" y="395" width="60" height="70" rx="4" fill="#e8f5e9" stroke="#388e3c" stroke-width="1"/>
+  <text x="710" y="425" text-anchor="middle" font-size="10" font-weight="bold" fill="#2e7d32">+29.8pp</text>
+  <text x="710" y="445" text-anchor="middle" font-size="8" fill="#388e3c">vs single</text>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#666"/>
+    </marker>
+  </defs>
+</svg>
