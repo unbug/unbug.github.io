@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" font-family="Arial, sans-serif">
+  <rect width="800" height="540" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#2c3e50">Scaling LLM-Driven Multi-Agent Systems: Four Design Principles</text>
+
+  <!-- Four Design Principles (top section) -->
+  <rect x="30" y="50" width="740" height="180" rx="10" fill="#fafafa" stroke="#90a4ae" stroke-width="1.5"/>
+  <text x="400" y="72" text-anchor="middle" font-size="13" font-weight="bold" fill="#455a64">Four Design Principles for Scalable MAS</text>
+
+  <!-- Principle 1: Simplicity -->
+  <rect x="50" y="85" width="170" height="125" rx="8" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5"/>
+  <text x="135" y="108" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">Simplicity</text>
+  <line x1="70" y1="115" x2="200" y2="115" stroke="#1976d2" stroke-width="1"/>
+  <rect x="65" y="122" width="140" height="30" rx="3" fill="#bbdefb"/>
+  <text x="135" y="141" text-anchor="middle" font-size="10" fill="#1565c0">Avoid unnecessary complexity</text>
+  <rect x="65" y="158" width="140" height="30" rx="3" fill="#bbdefb"/>
+  <text x="135" y="177" text-anchor="middle" font-size="10" fill="#1565c0">Clear component responsibilities</text>
+
+  <!-- Principle 2: Elastic Feedback -->
+  <rect x="240" y="85" width="170" height="125" rx="8" fill="#e8f5e9" stroke="#388e3c" stroke-width="1.5"/>
+  <text x="325" y="108" text-anchor="middle" font-size="12" font-weight="bold" fill="#2e7d32">Elastic Feedback</text>
+  <line x1="260" y1="115" x2="390" y2="115" stroke="#388e3c" stroke-width="1"/>
+  <rect x="255" y="122" width="140" height="30" rx="3" fill="#c8e6c9"/>
+  <text x="325" y="141" text-anchor="middle" font-size="10" fill="#2e7d32">Adjust based on intermediate</text>
+  <rect x="255" y="158" width="140" height="30" rx="3" fill="#c8e6c9"/>
+  <text x="325" y="177" text-anchor="middle" font-size="10" fill="#2e7d32">results during execution</text>
+
+  <!-- Principle 3: Sequential Workflows -->
+  <rect x="430" y="85" width="170" height="125" rx="8" fill="#fff3e0" stroke="#f57c00" stroke-width="1.5"/>
+  <text x="515" y="108" text-anchor="middle" font-size="12" font-weight="bold" fill="#e65100">Sequential Workflows</text>
+  <line x1="450" y1="115" x2="580" y2="115" stroke="#f57c00" stroke-width="1"/>
+  <rect x="445" y="122" width="140" height="30" rx="3" fill="#ffe0b2"/>
+  <text x="515" y="141" text-anchor="middle" font-size="10" fill="#e65100">Ordered steps with optional</text>
+  <rect x="445" y="158" width="140" height="30" rx="3" fill="#ffe0b2"/>
+  <text x="515" y="177" text-anchor="middle" font-size="10" fill="#e65100">loops for backtracking</text>
+
+  <!-- Principle 4: Summary Communication -->
+  <rect x="620" y="85" width="140" height="125" rx="8" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="1.5"/>
+  <text x="690" y="108" text-anchor="middle" font-size="12" font-weight="bold" fill="#6a1b9a">Summary Comm.</text>
+  <line x1="640" y1="115" x2="740" y2="115" stroke="#7b1fa2" stroke-width="1"/>
+  <rect x="635" y="122" width="110" height="30" rx="3" fill="#e1bee7"/>
+  <text x="690" y="141" text-anchor="middle" font-size="10" fill="#6a1b9a">Compress info to reduce</text>
+  <rect x="635" y="158" width="110" height="30" rx="3" fill="#e1bee7"/>
+  <text x="690" y="177" text-anchor="middle" font-size="10" fill="#6a1b9a">communication overhead</text>
+
+  <!-- Reference Architecture (center section) -->
+  <rect x="30" y="250" width="740" height="100" rx="8" fill="#fffde7" stroke="#f9a825" stroke-width="2"/>
+  <text x="400" y="272" text-anchor="middle" font-size="13" font-weight="bold" fill="#f57f17">Reference Architecture: Constrained Directed Workflow Graph</text>
+
+  <!-- Nodes and edges visualization -->
+  <rect x="80" y="285" width="60" height="40" rx="4" fill="#e3f2fd" stroke="#1976d2" stroke-width="1"/>
+  <text x="110" y="310" text-anchor="middle" font-size="9" fill="#1565c0">Agent A</text>
+
+  <path d="M 140 305 L 170 305" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect x="170" y="285" width="60" height="40" rx="4" fill="#e8f5e9" stroke="#388e3c" stroke-width="1"/>
+  <text x="200" y="310" text-anchor="middle" font-size="9" fill="#2e7d32">Agent B</text>
+
+  <path d="M 230 305 L 260 305" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect x="260" y="285" width="60" height="40" rx="4" fill="#fff3e0" stroke="#f57c00" stroke-width="1"/>
+  <text x="290" y="310" text-anchor="middle" font-size="9" fill="#e65100">Agent C</text>
+
+  <path d="M 320 305 L 350 305" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect x="350" y="285" width="60" height="40" rx="4" fill="#fce4ec" stroke="#c62828" stroke-width="1"/>
+  <text x="380" y="310" text-anchor="middle" font-size="9" fill="#b71c1c">Agent D</text>
+
+  <!-- Feedback loop -->
+  <path d="M 410 305 L 440 305" stroke="#f57c00" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="440" y="285" width="60" height="40" rx="4" fill="#fff9c4" stroke="#f9a825" stroke-width="1"/>
+  <text x="470" y="310" text-anchor="middle" font-size="9" fill="#f57f17">Summary</text>
+
+  <!-- Back arrow -->
+  <path d="M 500 285 L 500 260 L 410 260" stroke="#f57c00" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#arrow)"/>
+
+  <!-- Key Findings (bottom section) -->
+  <rect x="30" y="370" width="740" height="150" rx="8" fill="#fafafa" stroke="#b0bec5" stroke-width="1.5"/>
+  <text x="400" y="392" text-anchor="middle" font-size="13" font-weight="bold" fill="#455a64">Key Findings: Scalability Characteristics</text>
+
+  <!-- Finding 1 -->
+  <rect x="50" y="405" width="220" height="95" rx="6" fill="#e3f2fd" stroke="#1976d2" stroke-width="1"/>
+  <text x="160" y="425" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565c0">Linear Cost Growth</text>
+  <rect x="65" y="435" width="190" height="25" rx="3" fill="#bbdefb"/>
+  <text x="160" y="452" text-anchor="middle" font-size="10" fill="#1565c0">~linear cost with scaling</text>
+  <rect x="65" y="468" width="190" height="25" rx="3" fill="#bbdefb"/>
+  <text x="160" y="485" text-anchor="middle" font-size="10" fill="#1565c0">measurable accuracy gains</text>
+
+  <!-- Finding 2 -->
+  <rect x="290" y="405" width="220" height="95" rx="6" fill="#fff3e0" stroke="#f57c00" stroke-width="1"/>
+  <text x="400" y="425" text-anchor="middle" font-size="11" font-weight="bold" fill="#e65100">Capability Threshold</text>
+  <rect x="305" y="435" width="190" height="25" rx="3" fill="#ffe0b2"/>
+  <text x="400" y="452" text-anchor="middle" font-size="10" fill="#e65100">scaling only works when</text>
+  <rect x="305" y="468" width="190" height="25" rx="3" fill="#ffe0b2"/>
+  <text x="400" y="485" text-anchor="middle" font-size="10" fill="#e65100">LLM exceeds min. capability</text>
+
+  <!-- Finding 3 -->
+  <rect x="530" y="405" width="220" height="95" rx="6" fill="#fce4ec" stroke="#c62828" stroke-width="1"/>
+  <text x="640" y="425" text-anchor="middle" font-size="11" font-weight="bold" fill="#b71c1c">Performance Peak</text>
+  <rect x="545" y="435" width="190" height="25" rx="3" fill="#ffcdd2"/>
+  <text x="640" y="452" text-anchor="middle" font-size="10" fill="#c62828">peaks at intermediate</text>
+  <rect x="545" y="468" width="190" height="25" rx="3" fill="#ffcdd2"/>
+  <text x="640" y="485" text-anchor="middle" font-size="10" fill="#c62828">complexity, degrades after</text>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#666"/>
+    </marker>
+  </defs>
+</svg>
