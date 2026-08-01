@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" font-family="Arial, sans-serif">
+  <rect width="800" height="560" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#2c3e50">MANTA: Multi-Agent Network Topology Adaptation</text>
+
+  <!-- Input Task -->
+  <rect x="310" y="50" width="180" height="36" rx="6" fill="#e8eaf6" stroke="#3f51b5" stroke-width="2"/>
+  <text x="400" y="73" text-anchor="middle" font-size="13" fill="#283593">Input Task</text>
+
+  <!-- Arrow down -->
+  <path d="M 400 86 L 400 105" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Orchestration Loop (main box) -->
+  <rect x="30" y="105" width="740" height="280" rx="10" fill="none" stroke="#90a4ae" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="400" y="125" text-anchor="middle" font-size="12" fill="#78909c">Orchestration Loop</text>
+
+  <!-- Query-Conditioned Planning -->
+  <rect x="50" y="135" width="160" height="48" rx="6" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5"/>
+  <text x="130" y="155" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">Query-Conditioned</text>
+  <text x="130" y="171" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">Planning</text>
+
+  <!-- Arrow -->
+  <path d="M 210 159 L 240 159" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Initial Topology Generation -->
+  <rect x="245" y="135" width="170" height="48" rx="6" fill="#e8f5e9" stroke="#388e3c" stroke-width="1.5"/>
+  <text x="330" y="155" text-anchor="middle" font-size="12" font-weight="bold" fill="#2e7d32">Task-Conditioned</text>
+  <text x="330" y="171" text-anchor="middle" font-size="12" font-weight="bold" fill="#2e7d32">Topology Init</text>
+
+  <!-- Arrow -->
+  <path d="M 415 159 L 445 159" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Turn Execution -->
+  <rect x="450" y="135" width="150" height="48" rx="6" fill="#fff3e0" stroke="#f57c00" stroke-width="1.5"/>
+  <text x="525" y="159" text-anchor="middle" font-size="12" font-weight="bold" fill="#e65100">Turn Execution</text>
+
+  <!-- Arrow down from execution -->
+  <path d="M 525 183 L 525 210" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Trace Auditing & Repair -->
+  <rect x="450" y="210" width="150" height="48" rx="6" fill="#fce4ec" stroke="#c62828" stroke-width="1.5"/>
+  <text x="525" y="230" text-anchor="middle" font-size="12" font-weight="bold" fill="#b71c1c">Trace Auditing</text>
+  <text x="525" y="246" text-anchor="middle" font-size="12" font-weight="bold" fill="#b71c1c">&amp; Repair</text>
+
+  <!-- Arrow left -->
+  <path d="M 450 234 L 410 234" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Topology Repair Decision -->
+  <rect x="245" y="210" width="160" height="48" rx="6" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="1.5"/>
+  <text x="325" y="230" text-anchor="middle" font-size="12" font-weight="bold" fill="#6a1b9a">Topology Repair</text>
+  <text x="325" y="246" text-anchor="middle" font-size="12" font-weight="bold" fill="#6a1b9a">Decision</text>
+
+  <!-- Arrow left -->
+  <path d="M 245 234 L 210 234" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Structural Modification -->
+  <rect x="50" y="210" width="150" height="48" rx="6" fill="#e0f7fa" stroke="#00838f" stroke-width="1.5"/>
+  <text x="125" y="230" text-anchor="middle" font-size="12" font-weight="bold" fill="#006064">Structural</text>
+  <text x="125" y="246" text-anchor="middle" font-size="12" font-weight="bold" fill="#006064">Modification</text>
+
+  <!-- Arrow back up to planning -->
+  <path d="M 125 258 L 125 135" stroke="#666" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+
+  <!-- Two-Horizon Playbook Memory (right side) -->
+  <rect x="610" y="135" width="150" height="120" rx="8" fill="#fffde7" stroke="#f9a825" stroke-width="1.5"/>
+  <text x="685" y="155" text-anchor="middle" font-size="12" font-weight="bold" fill="#f57f17">Two-Horizon</text>
+  <text x="685" y="170" text-anchor="middle" font-size="12" font-weight="bold" fill="#f57f17">Playbook Memory</text>
+  <line x1="630" y1="178" x2="740" y2="178" stroke="#f9a825" stroke-width="1"/>
+
+  <!-- Short-term traces -->
+  <rect x="625" y="185" width="120" height="22" rx="3" fill="#fff9c4"/>
+  <text x="685" y="200" text-anchor="middle" font-size="10" fill="#f57f17">Short-term Traces</text>
+
+  <!-- Long-term experience -->
+  <rect x="625" y="213" width="120" height="22" rx="3" fill="#fff9c4"/>
+  <text x="685" y="228" text-anchor="middle" font-size="10" fill="#f57f17">Long-term Experience</text>
+
+  <!-- Arrow between loop and memory -->
+  <path d="M 600 195 L 610 195" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Five Modification Operations (bottom section) -->
+  <rect x="30" y="400" width="740" height="130" rx="8" fill="#fafafa" stroke="#b0bec5" stroke-width="1.5"/>
+  <text x="400" y="422" text-anchor="middle" font-size="13" font-weight="bold" fill="#455a64">Five Structural Modification Operations</text>
+
+  <!-- Op 1: Agent Roles -->
+  <rect x="50" y="435" width="130" height="80" rx="6" fill="#e3f2fd" stroke="#1976d2" stroke-width="1"/>
+  <text x="115" y="458" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565c0">Modify Agent</text>
+  <text x="115" y="473" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565c0">Roles</text>
+
+  <!-- Op 2: Communication Links -->
+  <rect x="195" y="435" width="130" height="80" rx="6" fill="#e8f5e9" stroke="#388e3c" stroke-width="1"/>
+  <text x="260" y="458" text-anchor="middle" font-size="11" font-weight="bold" fill="#2e7d32">Adjust Communication</text>
+  <text x="260" y="473" text-anchor="middle" font-size="11" font-weight="bold" fill="#2e7d32">Links</text>
+
+  <!-- Op 3: Execution Order -->
+  <rect x="340" y="435" width="130" height="80" rx="6" fill="#fff3e0" stroke="#f57c00" stroke-width="1"/>
+  <text x="405" y="458" text-anchor="middle" font-size="11" font-weight="bold" fill="#e65100">Optimize Execution</text>
+  <text x="405" y="473" text-anchor="middle" font-size="11" font-weight="bold" fill="#e65100">Order</text>
+
+  <!-- Op 4: Info Visibility -->
+  <rect x="485" y="435" width="130" height="80" rx="6" fill="#fce4ec" stroke="#c62828" stroke-width="1"/>
+  <text x="550" y="458" text-anchor="middle" font-size="11" font-weight="bold" fill="#b71c1c">Control Info</text>
+  <text x="550" y="473" text-anchor="middle" font-size="11" font-weight="bold" fill="#b71c1c">Visibility</text>
+
+  <!-- Op 5: Verification Paths -->
+  <rect x="630" y="435" width="120" height="80" rx="6" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="1"/>
+  <text x="690" y="458" text-anchor="middle" font-size="11" font-weight="bold" fill="#6a1b9a">Reconstruct</text>
+  <text x="690" y="473" text-anchor="middle" font-size="11" font-weight="bold" fill="#6a1b9a">Verification Paths</text>
+
+  <!-- Arrow from loop to operations -->
+  <path d="M 400 385 L 400 400" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Key Results (bottom right corner) -->
+  <rect x="500" y="510" width="270" height="40" rx="6" fill="#e8f5e9" stroke="#388e3c" stroke-width="1.5"/>
+  <text x="635" y="528" text-anchor="middle" font-size="12" font-weight="bold" fill="#2e7d32">Avg Score: 74.0 | +5.8pp vs Strongest Baseline</text>
+  <text x="635" y="543" text-anchor="middle" font-size="11" fill="#388e3c">Best on PlanCraft | 5 Benchmarks, 5 Task Types</text>
+
+  <!-- Arrow from operations to results -->
+  <path d="M 690 510 L 690 520" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#666"/>
+    </marker>
+  </defs>
+</svg>
