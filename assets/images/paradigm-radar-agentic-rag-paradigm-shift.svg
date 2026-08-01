@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f3a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0d1528;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4a9eff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#7c5cff;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Grid pattern overlay -->
+  <g opacity="0.05">
+    <line x1="0" y1="0" x2="1200" y2="0" stroke="#fff" stroke-width="0.5"/>
+    <line x1="0" y1="63" x2="1200" y2="63" stroke="#fff" stroke-width="0.5"/>
+    <line x1="0" y1="126" x2="1200" y2="126" stroke="#fff" stroke-width="0.5"/>
+    <line x1="0" y1="189" x2="1200" y2="189" stroke="#fff" stroke-width="0.5"/>
+    <line x1="0" y1="252" x2="1200" y2="252" stroke="#fff" stroke-width="0.5"/>
+    <line x1="0" y1="315" x2="1200" y2="315" stroke="#fff" stroke-width="0.5"/>
+    <line x1="0" y1="378" x2="1200" y2="378" stroke="#fff" stroke-width="0.5"/>
+    <line x1="0" y1="441" x2="1200" y2="441" stroke="#fff" stroke-width="0.5"/>
+    <line x1="0" y1="504" x2="1200" y2="504" stroke="#fff" stroke-width="0.5"/>
+    <line x1="0" y1="567" x2="1200" y2="567" stroke="#fff" stroke-width="0.5"/>
+    <line x1="0" y1="630" x2="1200" y2="630" stroke="#fff" stroke-width="0.5"/>
+  </g>
+
+  <!-- Left side: Traditional RAG (linear pipeline) -->
+  <text x="80" y="140" fill="#6b7fa3" font-size="14" font-family="monospace">TRADITIONAL RAG</text>
+  
+  <!-- Linear pipeline boxes -->
+  <rect x="80" y="170" width="120" height="50" rx="6" fill="#2a3a5c" stroke="#4a9eff" stroke-width="1.5"/>
+  <text x="140" y="200" text-anchor="middle" fill="#8ab4f8" font-size="12" font-family="monospace">Query</text>
+
+  <line x1="200" y1="195" x2="230" y2="195" stroke="#4a6fa5" stroke-width="2"/>
+  <polygon points="228,190 238,195 228,200" fill="#4a6fa5"/>
+
+  <rect x="230" y="170" width="120" height="50" rx="6" fill="#2a3a5c" stroke="#4a9eff" stroke-width="1.5"/>
+  <text x="290" y="200" text-anchor="middle" fill="#8ab4f8" font-size="12" font-family="monospace">Retrieve</text>
+
+  <line x1="350" y1="195" x2="380" y2="195" stroke="#4a6fa5" stroke-width="2"/>
+  <polygon points="378,190 388,195 378,200" fill="#4a6fa5"/>
+
+  <rect x="380" y="170" width="120" height="50" rx="6" fill="#2a3a5c" stroke="#4a9eff" stroke-width="1.5"/>
+  <text x="440" y="200" text-anchor="middle" fill="#8ab4f8" font-size="12" font-family="monospace">Generate</text>
+
+  <line x1="500" y1="195" x2="530" y2="195" stroke="#4a6fa5" stroke-width="2"/>
+  <polygon points="528,190 538,195 528,200" fill="#4a6fa5"/>
+
+  <rect x="530" y="170" width="120" height="50" rx="6" fill="#2a3a5c" stroke="#4a9eff" stroke-width="1.5"/>
+  <text x="590" y="200" text-anchor="middle" fill="#8ab4f8" font-size="12" font-family="monospace">Answer</text>
+
+  <!-- Arrow pointing down -->
+  <line x1="340" y1="260" x2="340" y2="310" stroke="#4a6fa5" stroke-width="2"/>
+  <polygon points="335,308 340,320 345,308" fill="#4a6fa5"/>
+
+  <!-- Right side: Agentic RAG (circular loop) -->
+  <text x="700" y="140" fill="#7c5cff" font-size="14" font-family="monospace">AGENTIC RAG</text>
+
+  <!-- Circular agent loop diagram -->
+  <g transform="translate(820, 310)">
+    <!-- Outer circle (loop) -->
+    <circle cx="0" cy="0" r="160" fill="none" stroke="#7c5cff" stroke-width="1.5" stroke-dasharray="8,4" opacity="0.4"/>
+
+    <!-- Center: Agent Brain -->
+    <circle cx="0" cy="0" r="35" fill="#2a3a5c" stroke="#7c5cff" stroke-width="2" filter="url(#glow)"/>
+    <text x="0" y="-4" text-anchor="middle" fill="#b8a9ff" font-size="11" font-family="monospace">Agent</text>
+    <text x="0" y="12" text-anchor="middle" fill="#b8a9ff" font-size="11" font-family="monospace">Brain</text>
+
+    <!-- Top: Plan -->
+    <rect x="-45" y="-175" width="90" height="36" rx="8" fill="#2a3a5c" stroke="#4a9eff" stroke-width="1.5"/>
+    <text x="0" y="-152" text-anchor="middle" fill="#8ab4f8" font-size="11" font-family="monospace">Plan</text>
+
+    <!-- Right: Retrieve -->
+    <rect x="130" y="-60" width="90" height="36" rx="8" fill="#2a3a5c" stroke="#4a9eff" stroke-width="1.5"/>
+    <text x="175" y="-37" text-anchor="middle" fill="#8ab4f8" font-size="11" font-family="monospace">Retrieve</text>
+
+    <!-- Bottom: Evaluate -->
+    <rect x="-45" y="140" width="90" height="36" rx="8" fill="#2a3a5c" stroke="#ff7c5c" stroke-width="1.5"/>
+    <text x="0" y="163" text-anchor="middle" fill="#ffb8a0" font-size="11" font-family="monospace">Evaluate</text>
+
+    <!-- Left: Reflect -->
+    <rect x="-220" y="-60" width="90" height="36" rx="8" fill="#2a3a5c" stroke="#ff7c5c" stroke-width="1.5"/>
+    <text x="-175" y="-37" text-anchor="middle" fill="#ffb8a0" font-size="11" font-family="monospace">Reflect</text>
+
+    <!-- Arrows around the loop -->
+    <path d="M -20,-140 Q 0,-165 20,-140" fill="none" stroke="#7c5cff" stroke-width="2"/>
+    <polygon points="18,-138 25,-145 22,-135" fill="#7c5cff"/>
+
+    <path d="M 140,-40 Q 165,-20 140,0" fill="none" stroke="#7c5cff" stroke-width="2"/>
+    <polygon points="138,-2 145,5 135,2" fill="#7c5cff"/>
+
+    <path d="M 20,140 Q 0,165 -20,140" fill="none" stroke="#ff7c5c" stroke-width="2"/>
+    <polygon points="-22,138 -15,145 -25,142" fill="#ff7c5c"/>
+
+    <path d="M -140,-40 Q -165,-20 -140,0" fill="none" stroke="#ff7c5c" stroke-width="2"/>
+    <polygon points="-138,-2 -145,5 -135,2" fill="#ff7c5c"/>
+
+    <!-- Inner feedback arrows -->
+    <path d="M 60,-80 Q 90,-100 80,-120" fill="none" stroke="#ffd700" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
+    <text x="100" y="-100" fill="#ffd700" font-size="9" font-family="monospace" opacity="0.8">feedback</text>
+
+    <path d="M -60,80 Q -90,100 -80,120" fill="none" stroke="#ffd700" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
+    <text x="-100" y="100" fill="#ffd700" font-size="9" font-family="monospace" opacity="0.8">feedback</text>
+  </g>
+
+  <!-- VS divider -->
+  <line x1="620" y1="100" x2="620" y2="530" stroke="#4a6fa5" stroke-width="1" opacity="0.3"/>
+  <text x="620" y="320" text-anchor="middle" fill="#6b7fa3" font-size="28" font-family="monospace" transform="rotate(-90, 620, 320)">VS</text>
+
+  <!-- Bottom tagline -->
+  <rect x="150" y="480" width="900" height="60" rx="8" fill="#1e2a4a" stroke="#4a6fa5" stroke-width="1" opacity="0.7"/>
+  <text x="600" y="515" text-anchor="middle" fill="#c8d6f0" font-size="18" font-family="-apple-system, BlinkMacSystemFont, sans-serif">从线性流水线到迭代循环的范式转移</text>
+  <text x="600" y="538" text-anchor="middle" fill="#6b7fa3" font-size="12" font-family="monospace">Linear Pipeline → Iterative Agent Loop</text>
+
+  <!-- Top right: Paradigm Radar badge -->
+  <rect x="940" y="30" width="230" height="40" rx="6" fill="#7c5cff" opacity="0.15"/>
+  <text x="1055" y="56" text-anchor="middle" fill="#b8a9ff" font-size="14" font-family="-apple-system, BlinkMacSystemFont, sans-serif">AI Paradigm Radar</text>
+
+  <!-- Bottom left: date -->
+  <text x="80" y="570" fill="#4a6fa5" font-size="12" font-family="monospace">2026-08-01</text>
+
+  <!-- Decorative dots -->
+  <circle cx="1050" cy="560" r="3" fill="#7c5cff" opacity="0.4"/>
+  <circle cx="1070" cy="560" r="2" fill="#4a9eff" opacity="0.3"/>
+  <circle cx="1085" cy="560" r="2" fill="#ff7c5c" opacity="0.3"/>
+
+  <!-- Corner accents -->
+  <line x1="30" y1="30" x2="60" y2="30" stroke="#4a9eff" stroke-width="2" opacity="0.5"/>
+  <line x1="30" y1="30" x2="30" y2="60" stroke="#4a9eff" stroke-width="2" opacity="0.5"/>
+
+  <line x1="1170" y1="30" x2="1140" y2="30" stroke="#7c5cff" stroke-width="2" opacity="0.5"/>
+  <line x1="1170" y1="30" x2="1170" y2="60" stroke="#7c5cff" stroke-width="2" opacity="0.5"/>
+
+  <line x1="30" y1="600" x2="60" y2="600" stroke="#4a9eff" stroke-width="2" opacity="0.5"/>
+  <line x1="30" y1="600" x2="30" y2="570" stroke="#4a9eff" stroke-width="2" opacity="0.5"/>
+
+  <line x1="1170" y1="600" x2="1140" y2="600" stroke="#7c5cff" stroke-width="2" opacity="0.5"/>
+  <line x1="1170" y1="600" x2="1170" y2="570" stroke="#7c5cff" stroke-width="2" opacity="0.5"/>
+</svg>
