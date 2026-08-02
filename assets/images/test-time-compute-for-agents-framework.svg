@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27"/>
+      <stop offset="100%" style="stop-color:#1a1040"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#34d399"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#fbbf24"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="400" y="42" text-anchor="middle" font-size="20" font-weight="bold" fill="#e2e8f0">Test-Time Compute for Agents</text>
+  <text x="400" y="65" text-anchor="middle" font-size="13" fill="#94a3b8">Dynamic Budget Allocation: From Uniform to Adaptive Reasoning</text>
+
+  <!-- LEFT SIDE: Traditional Agent (Fixed Budget) -->
+  <rect x="30" y="90" width="350" height="370" rx="12" fill="#0f1629" stroke="#1e293b" stroke-width="1"/>
+  <text x="205" y="120" text-anchor="middle" font-size="14" font-weight="bold" fill="#ef4444">Traditional Agent: Fixed Budget</text>
+
+  <!-- ReAct steps -->
+  <rect x="60" y="140" width="290" height="35" rx="6" fill="#1e293b"/>
+  <text x="205" y="162" text-anchor="middle" font-size="12" fill="#cbd5e1">ReAct Step 1: ~800 tokens</text>
+
+  <rect x="60" y="185" width="290" height="35" rx="6" fill="#1e293b"/>
+  <text x="205" y="207" text-anchor="middle" font-size="12" fill="#cbd5e1">ReAct Step 2: ~800 tokens</text>
+
+  <rect x="60" y="230" width="290" height="35" rx="6" fill="#1e293b"/>
+  <text x="205" y="252" text-anchor="middle" font-size="12" fill="#cbd5e1">ReAct Step 3: ~800 tokens</text>
+
+  <!-- Equal sign -->
+  <text x="205" y="300" text-anchor="middle" font-size="16" fill="#64748b">=</text>
+
+  <!-- Total budget bar -->
+  <rect x="80" y="315" width="250" height="20" rx="4" fill="#ef4444" opacity="0.7"/>
+  <text x="205" y="330" text-anchor="middle" font-size="11" fill="#fca5a5">Total: ~2,400 tokens (uniform)</text>
+
+  <!-- Problem -->
+  <rect x="60" y="360" width="290" height="80" rx="6" fill="#1c1017" stroke="#ef4444" stroke-width="1" opacity="0.5"/>
+  <text x="205" y="385" text-anchor="middle" font-size="11" fill="#fca5a5">Problem: Simple tasks waste compute,</text>
+  <text x="205" y="402" text-anchor="middle" font-size="11" fill="#fca5a5">complex tasks get insufficient budget</text>
+
+  <!-- RIGHT SIDE: Adaptive Agent -->
+  <rect x="420" y="90" width="350" height="370" rx="12" fill="#0f1629" stroke="#1e293b" stroke-width="1"/>
+  <text x="595" y="120" text-anchor="middle" font-size="14" font-weight="bold" fill="#10b981">Adaptive Agent: Dynamic Budget</text>
+
+  <!-- Difficulty assessment -->
+  <rect x="450" y="140" width="290" height="30" rx="6" fill="#064e3b"/>
+  <text x="595" y="160" text-anchor="middle" font-size="12" fill="#6ee7b7">Difficulty Assessment (Meta-Cognition)</text>
+
+  <!-- Step 1: Simple - low budget -->
+  <rect x="450" y="185" width="130" height="35" rx="6" fill="#065f46"/>
+  <text x="515" y="207" text-anchor="middle" font-size="11" fill="#a7f3d0">Simple: ~300 tokens</text>
+
+  <!-- Step 2: Complex - high budget -->
+  <rect x="620" y="185" width="120" height="55" rx="6" fill="#92400e"/>
+  <text x="680" y="207" text-anchor="middle" font-size="11" fill="#fde68a">Complex:</text>
+  <text x="680" y="223" text-anchor="middle" font-size="11" fill="#fde68a">~5,000 tokens</text>
+
+  <!-- Step 3: Medium - medium budget -->
+  <rect x="450" y="235" width="130" height="35" rx="6" fill="#78350f"/>
+  <text x="515" y="257" text-anchor="middle" font-size="11" fill="#fcd34d">Medium: ~1,500 tokens</text>
+
+  <!-- Step 4: Simple - low budget -->
+  <rect x="620" y="250" width="120" height="35" rx="6" fill="#065f46"/>
+  <text x="680" y="272" text-anchor="middle" font-size="11" fill="#a7f3d0">Simple: ~400 tokens</text>
+
+  <!-- Total -->
+  <rect x="450" y="295" width="290" height="20" rx="4" fill="#10b981" opacity="0.7"/>
+  <text x="595" y="310" text-anchor="middle" font-size="11" fill="#6ee7b7">Total: ~7,200 tokens (optimized)</text>
+
+  <!-- Key insight -->
+  <rect x="450" y="330" width="290" height="80" rx="6" fill="#0c1a14" stroke="#10b981" stroke-width="1" opacity="0.5"/>
+  <text x="595" y="355" text-anchor="middle" font-size="11" fill="#6ee7b7">Key: Budget scheduling across sub-tasks</text>
+  <text x="595" y="372" text-anchor="middle" font-size="11" fill="#6ee7b7">+ Failure mode shift awareness</text>
+
+  <!-- Arrow between -->
+  <line x1="390" y1="280" x2="410" y2="280" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="400" y="270" text-anchor="middle" font-size="10" fill="#fbbf24">VS</text>
+
+  <!-- Bottom: Key concepts -->
+  <rect x="30" y="475" width="740" height="0" fill="none"/>
+</svg>

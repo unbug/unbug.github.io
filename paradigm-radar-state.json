@@ -1,17 +1,17 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 范式雷达：《MCP 协议与 PI 架构融合：构建自适应智能体》",
-    "date": "2026-06-29",
-    "slug": "paradigm-radar-mcp-pi-agent"
+    "title": "AI 范式雷达：《Agentic RAG：让检索系统学会自我反思》",
+    "date": "2026-08-01",
+    "slug": "paradigm-radar-agentic-rag-paradigm-shift"
   },
-  "totalPublished": 2,
-  "nextScheduled": "2026-07-06",
+  "totalPublished": 3,
+  "nextScheduled": "2026-08-05",
   "candidateTopics": [
     {
-      "topic": "RAG 2.0 范式：从检索增强到原生知识融合",
-      "score": 4.3,
-      "sources": ["https://arxiv.org/abs/2401.xxxx", "https://blog.langchain.dev/"]
+      "topic": "Agent 编排框架选型指南 2026",
+      "score": 4.5,
+      "sources": ["https://blog.langchain.dev/", "https://docs.crewai.com/"]
     },
     {
       "topic": "多模态 Agent 的视觉推理能力突破",
