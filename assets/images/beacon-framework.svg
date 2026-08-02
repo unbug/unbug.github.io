@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="maGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4a6cf7;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#6b8cff;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="teGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f59e42;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ffb36b;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="rlGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#28a745;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#34d058;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="42" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a2e">Beacon: MA-TE Framework for Agentic Vision</text>
+  <line x1="250" y1="52" x2="550" y2="52" stroke="#4a6cf7" stroke-width="2"/>
+
+  <!-- Left side: Mode Adaptiveness -->
+  <rect x="30" y="80" width="340" height="180" rx="10" fill="white" stroke="#4a6cf7" stroke-width="2"/>
+  <text x="200" y="115" text-anchor="middle" font-size="18" font-weight="bold" fill="#4a6cf7">Mode Adaptiveness (MA)</text>
+  <line x1="60" y1="125" x2="340" y2="125" stroke="#e9ecef" stroke-width="1"/>
+
+  <!-- MA sub-components -->
+  <rect x="55" y="140" width="130" height="60" rx="8" fill="#f0f4ff" stroke="#4a6cf7" stroke-width="1.5"/>
+  <text x="120" y="165" text-anchor="middle" font-size="13" font-weight="bold" fill="#4a6cf7">Autonomous Mode</text>
+  <text x="120" y="183" text-anchor="middle" font-size="11" fill="#666">Self visual reasoning</text>
+
+  <rect x="215" y="140" width="130" height="60" rx="8" fill="#f0f4ff" stroke="#4a6cf7" stroke-width="1.5"/>
+  <text x="280" y="165" text-anchor="middle" font-size="13" font-weight="bold" fill="#4a6cf7">Tool-Assisted Mode</text>
+  <text x="280" y="183" text-anchor="middle" font-size="11" fill="#666">External tool invocation</text>
+
+  <!-- MA decision arrow -->
+  <path d="M185,170 L215,170" stroke="#4a6cf7" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <!-- MA metrics -->
+  <rect x="55" y="215" width="290" height="35" rx="6" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+  <text x="70" y="237" font-size="12" fill="#495057">Decision Accuracy: P(correct mode | task)</text>
+
+  <!-- Right side: Tool Effect -->
+  <rect x="430" y="80" width="340" height="180" rx="10" fill="white" stroke="#f59e42" stroke-width="2"/>
+  <text x="600" y="115" text-anchor="middle" font-size="18" font-weight="bold" fill="#d97706">Tool Effect (TE)</text>
+  <line x1="460" y1="125" x2="740" y2="125" stroke="#e9ecef" stroke-width="1"/>
+
+  <!-- TE sub-components -->
+  <rect x="455" y="140" width="130" height="60" rx="8" fill="#fff8f0" stroke="#f59e42" stroke-width="1.5"/>
+  <text x="520" y="165" text-anchor="middle" font-size="13" font-weight="bold" fill="#d97706">High TE Tools</text>
+  <text x="520" y="183" text-anchor="middle" font-size="11" fill="#666">Significant accuracy gain</text>
+
+  <rect x="615" y="140" width="130" height="60" rx="8" fill="#fff8f0" stroke="#f59e42" stroke-width="1.5"/>
+  <text x="680" y="165" text-anchor="middle" font-size="13" font-weight="bold" fill="#d97706">Low TE Tools</text>
+  <text x="680" y="183" text-anchor="middle" font-size="11" fill="#666">Wasted computation</text>
+
+  <!-- TE metrics -->
+  <rect x="455" y="215" width="290" height="35" rx="6" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+  <text x="470" y="237" font-size="12" fill="#495057">Utility Score: Δaccuracy | tool invoked</text>
+
+  <!-- Center: RL Training -->
+  <rect x="200" y="300" width="400" height="180" rx="10" fill="white" stroke="#28a745" stroke-width="2"/>
+  <text x="400" y="335" text-anchor="middle" font-size="18" font-weight="bold" fill="#28a745">RL Training Mechanism</text>
+  <line x1="260" y1="345" x2="540" y2="345" stroke="#e9ecef" stroke-width="1"/>
+
+  <!-- NAAR -->
+  <rect x="225" y="360" width="160" height="70" rx="8" fill="#f0fff4" stroke="#28a745" stroke-width="1.5"/>
+  <text x="305" y="385" text-anchor="middle" font-size="14" font-weight="bold" fill="#28a745">NAAR</text>
+  <text x="305" y="403" text-anchor="middle" font-size="11" fill="#666">Necessity-Aware Adaptive</text>
+  <text x="305" y="417" text-anchor="middle" font-size="11" fill="#666">Reward Function</text>
+
+  <!-- HGCE -->
+  <rect x="415" y="360" width="160" height="70" rx="8" fill="#f0fff4" stroke="#28a745" stroke-width="1.5"/>
+  <text x="495" y="385" text-anchor="middle" font-size="14" font-weight="bold" fill="#28a745">HGCE</text>
+  <text x="495" y="403" text-anchor="middle" font-size="11" fill="#666">Hint-Guided Capability</text>
+  <text x="495" y="417" text-anchor="middle" font-size="11" fill="#666">Expansion Strategy</text>
+
+  <!-- Connection arrows from MA/TE to RL -->
+  <path d="M200,260 L305,360" stroke="#4a6cf7" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <path d="M600,260 L495,360" stroke="#f59e42" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+  <!-- Bottom: Key Results -->
+  <rect x="100" y="470" width="600" height="0" fill="none"/>
+
+  <!-- Footer note -->
+  <text x="400" y="492" text-anchor="middle" font-size="11" fill="#868e96">MA + TE Framework → RL Training → Reduced Tool Abuse, Maintained Accuracy</text>
+</svg>
