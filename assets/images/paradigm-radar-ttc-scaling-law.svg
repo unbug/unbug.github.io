@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f3a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#2d3561;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="bold">推理时扩展 Scaling Law</text>
+
+  <!-- Y axis label -->
+  <text x="30" y="250" text-anchor="middle" fill="#a0b4d0" font-size="12" transform="rotate(-90, 30, 250)">准确率 (%)</text>
+
+  <!-- X axis label -->
+  <text x="400" y="430" text-anchor="middle" fill="#a0b4d0" font-size="12">Thinking Tokens (对数刻度)</text>
+
+  <!-- Grid lines -->
+  <line x1="80" y1="60" x2="750" y2="60" stroke="#3a4a7a" stroke-width="0.5"/>
+  <line x1="80" y1="120" x2="750" y2="120" stroke="#3a4a7a" stroke-width="0.5"/>
+  <line x1="80" y1="180" x2="750" y2="180" stroke="#3a4a7a" stroke-width="0.5"/>
+  <line x1="80" y1="240" x2="750" y2="240" stroke="#3a4a7a" stroke-width="0.5"/>
+  <line x1="80" y1="300" x2="750" y2="300" stroke="#3a4a7a" stroke-width="0.5"/>
+
+  <!-- Y axis labels -->
+  <text x="70" y="64" text-anchor="end" fill="#a0b4d0" font-size="10">90%</text>
+  <text x="70" y="124" text-anchor="end" fill="#a0b4d0" font-size="10">80%</text>
+  <text x="70" y="184" text-anchor="end" fill="#a0b4d0" font-size="10">70%</text>
+  <text x="70" y="244" text-anchor="end" fill="#a0b4d0" font-size="10">60%</text>
+  <text x="70" y="304" text-anchor="end" fill="#a0b4d0" font-size="10">50%</text>
+
+  <!-- X axis labels -->
+  <text x="80" y="320" text-anchor="middle" fill="#a0b4d0" font-size="10">100</text>
+  <text x="200" y="320" text-anchor="middle" fill="#a0b4d0" font-size="10">500</text>
+  <text x="320" y="320" text-anchor="middle" fill="#a0b4d0" font-size="10">1K</text>
+  <text x="440" y="320" text-anchor="middle" fill="#a0b4d0" font-size="10">5K</text>
+  <text x="560" y="320" text-anchor="middle" fill="#a0b4d0" font-size="10">10K</text>
+  <text x="680" y="320" text-anchor="middle" fill="#a0b4d0" font-size="10">50K+</text>
+
+  <!-- Region labels -->
+  <rect x="80" y="330" width="120" height="20" rx="3" fill="#34c759" opacity="0.2"/>
+  <text x="140" y="344" text-anchor="middle" fill="#5ee68a" font-size="9">低 token (&lt;1K)</text>
+
+  <rect x="200" y="330" width="120" height="20" rx="3" fill="#4a90d9" opacity="0.2"/>
+  <text x="260" y="344" text-anchor="middle" fill="#6bb5f0" font-size="9">中 token (1K-10K)</text>
+
+  <rect x="320" y="330" width="120" height="20" rx="3" fill="#ff9f0a" opacity="0.2"/>
+  <text x="380" y="344" text-anchor="middle" fill="#ffcc33" font-size="9">高 token (&gt;10K)</text>
+
+  <!-- o3 curve (steeper) -->
+  <path d="M80,290 Q160,270 240,240 Q320,200 400,170 Q480,150 560,135 Q640,125 720,120" 
+        fill="none" stroke="#ff9f0a" stroke-width="2.5"/>
+  
+  <!-- o1 curve (less steep) -->
+  <path d="M80,300 Q160,285 240,260 Q320,230 400,200 Q480,180 560,165 Q640,155 720,150" 
+        fill="none" stroke="#4a90d9" stroke-width="2.5"/>
+
+  <!-- Claude curve -->
+  <path d="M80,305 Q160,290 240,265 Q320,240 400,215 Q480,195 560,180 Q640,170 720,165" 
+        fill="none" stroke="#34c759" stroke-width="2.5"/>
+
+  <!-- Legend -->
+  <rect x="520" y="60" width="220" height="80" rx="6" fill="#1e2a4a" opacity="0.9"/>
+  
+  <line x1="535" y1="80" x2="565" y2="80" stroke="#ff9f0a" stroke-width="2.5"/>
+  <text x="575" y="84" fill="#ffffff" font-size="11">o3 (steeper scaling)</text>
+
+  <line x1="535" y1="105" x2="565" y2="105" stroke="#4a90d9" stroke-width="2.5"/>
+  <text x="575" y="109" fill="#ffffff" font-size="11">o1</text>
+
+  <line x1="535" y1="130" x2="565" y2="130" stroke="#34c759" stroke-width="2.5"/>
+  <text x="575" y="134" fill="#ffffff" font-size="11">Claude Extended Thinking</text>
+
+  <!-- Key data points -->
+  <circle cx="320" cy="260" r="4" fill="#ff9f0a"/>
+  <text x="330" y="258" fill="#ffffff" font-size="9">o3: ~75%</text>
+
+  <circle cx="320" cy="260" r="4" fill="#4a90d9"/>
+  <text x="330" y="275" fill="#ffffff" font-size="9">o1: ~68%</text>
+
+  <!-- Diminishing returns annotation -->
+  <rect x="500" y="140" width="240" height="50" rx="4" fill="#ff3b30" opacity="0.15"/>
+  <text x="620" y="160" text-anchor="middle" fill="#ff6b60" font-size="10">边际递减区域</text>
+  <text x="620" y="178" text-anchor="middle" fill="#a0b4d0" font-size="9">&gt;50K tokens: 收益趋近于零</text>
+
+  <!-- Source -->
+  <text x="400" y="380" text-anchor="middle" fill="#a0b4d0" font-size="10">数据来源: OpenAI o1/o3 system cards, Anthropic technical reports, arXiv:2607.28573</text>
+</svg>

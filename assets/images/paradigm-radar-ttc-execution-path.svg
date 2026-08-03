@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f3a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#2d3561;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="bold">动态预算分配执行路径</text>
+
+  <!-- Start node -->
+  <rect x="310" y="70" width="180" height="45" rx="22" fill="#4a90d9"/>
+  <text x="400" y="98" text-anchor="middle" fill="#ffffff" font-size="14">任务输入</text>
+
+  <!-- Arrow down -->
+  <line x1="400" y1="115" x2="400" y2="140" stroke="#a0b4d0" stroke-width="2"/>
+  <polygon points="395,135 400,145 405,135" fill="#a0b4d0"/>
+
+  <!-- Difficulty evaluator -->
+  <rect x="280" y="140" width="240" height="50" rx="8" fill="#ff9f0a"/>
+  <text x="400" y="163" text-anchor="middle" fill="#ffffff" font-size="14">难度评估器</text>
+
+  <!-- Three branches -->
+  <!-- Simple branch -->
+  <line x1="320" y1="190" x2="180" y2="230" stroke="#a0b4d0" stroke-width="1.5"/>
+  <rect x="100" y="230" width="160" height="40" rx="6" fill="#34c759"/>
+  <text x="180" y="255" text-anchor="middle" fill="#ffffff" font-size="13">Simple</text>
+
+  <!-- Medium branch -->
+  <line x1="400" y1="190" x2="400" y2="230" stroke="#a0b4d0" stroke-width="1.5"/>
+  <rect x="320" y="230" width="160" height="40" rx="6" fill="#4a90d9"/>
+  <text x="400" y="255" text-anchor="middle" fill="#ffffff" font-size="13">Medium</text>
+
+  <!-- Hard branch -->
+  <line x1="480" y1="190" x2="620" y2="230" stroke="#a0b4d0" stroke-width="1.5"/>
+  <rect x="540" y="230" width="160" height="40" rx="6" fill="#ff9f0a"/>
+  <text x="620" y="255" text-anchor="middle" fill="#ffffff" font-size="13">Hard</text>
+
+  <!-- Budget allocation boxes -->
+  <rect x="80" y="290" width="200" height="70" rx="6" fill="#1e2a4a" stroke="#34c759" stroke-width="1"/>
+  <text x="180" y="315" text-anchor="middle" fill="#5ee68a" font-size="12">Simple 预算</text>
+  <text x="180" y="335" text-anchor="middle" fill="#ffffff" font-size="11">&lt;500 tokens</text>
+  <text x="180" y="352" text-anchor="middle" fill="#a0b4d0" font-size="10">1 step · 无反思</text>
+
+  <rect x="300" y="290" width="200" height="70" rx="6" fill="#1e2a4a" stroke="#4a90d9" stroke-width="1"/>
+  <text x="400" y="315" text-anchor="middle" fill="#6bb5f0" font-size="12">Medium 预算</text>
+  <text x="400" y="335" text-anchor="middle" fill="#ffffff" font-size="11">~2K tokens</text>
+  <text x="400" y="352" text-anchor="middle" fill="#a0b4d0" font-size="10">3 steps · 有反思</text>
+
+  <rect x="520" y="290" width="200" height="70" rx="6" fill="#1e2a4a" stroke="#ff9f0a" stroke-width="1"/>
+  <text x="620" y="315" text-anchor="middle" fill="#ffcc33" font-size="12">Hard 预算</text>
+  <text x="620" y="335" text-anchor="middle" fill="#ffffff" font-size="11">~8K tokens</text>
+  <text x="620" y="352" text-anchor="middle" fill="#a0b4d0" font-size="10">5 steps · 反思+回退</text>
+
+  <!-- Merge to failure detection -->
+  <line x1="180" y1="360" x2="350" y2="400" stroke="#a0b4d0" stroke-width="1.5"/>
+  <line x1="400" y1="360" x2="400" y2="400" stroke="#a0b4d0" stroke-width="1.5"/>
+  <line x1="620" y1="360" x2="450" y2="400" stroke="#a0b4d0" stroke-width="1.5"/>
+
+  <!-- Failure mode detector -->
+  <rect x="280" y="400" width="240" height="50" rx="8" fill="#ff3b30"/>
+  <text x="400" y="423" text-anchor="middle" fill="#ffffff" font-size="14">失败模式检测器</text>
+
+  <!-- Two outcomes -->
+  <line x1="350" y1="450" x2="250" y2="480" stroke="#a0b4d0" stroke-width="1.5"/>
+  <rect x="170" y="480" width="160" height="30" rx="4" fill="#34c759"/>
+  <text x="250" y="500" text-anchor="middle" fill="#ffffff" font-size="12">正常完成</text>
+
+  <line x1="450" y1="450" x2="550" y2="480" stroke="#a0b4d0" stroke-width="1.5"/>
+  <rect x="470" y="480" width="160" height="30" rx="4" fill="#ff9f0a"/>
+  <text x="550" y="500" text-anchor="middle" fill="#ffffff" font-size="12">检测到问题信号</text>
+
+  <!-- Source -->
+  <text x="400" y="530" text-anchor="middle" fill="#a0b4d0" font-size="10">基于 arXiv:2607.28573 + Self-Refine/Reflexion</text>
+</svg>

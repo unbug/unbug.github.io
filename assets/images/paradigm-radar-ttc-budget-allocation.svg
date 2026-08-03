@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f3a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#2d3561;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="400" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="bold">预算分配策略对比</text>
+
+  <!-- Three strategy columns -->
+  <!-- Sequential Adaptive -->
+  <rect x="30" y="70" width="220" height="280" rx="10" fill="#1e2a4a" stroke="#4a90d9" stroke-width="1"/>
+  <text x="140" y="105" text-anchor="middle" fill="#6bb5f0" font-size="15" font-weight="bold">串行自适应</text>
+
+  <!-- Steps -->
+  <rect x="50" y="125" width="180" height="35" rx="4" fill="#3a4a7a"/>
+  <text x="140" y="148" text-anchor="middle" fill="#ffffff" font-size="12">Step 1: Simple (500t)</text>
+
+  <rect x="50" y="170" width="180" height="35" rx="4" fill="#4a90d9"/>
+  <text x="140" y="193" text-anchor="middle" fill="#ffffff" font-size="12">Step 2: Medium (2Kt)</text>
+
+  <rect x="50" y="215" width="180" height="35" rx="4" fill="#6bb5f0"/>
+  <text x="140" y="238" text-anchor="middle" fill="#ffffff" font-size="12">Step 3: Hard (6Kt)</text>
+
+  <rect x="50" y="260" width="180" height="35" rx="4" fill="#3a4a7a"/>
+  <text x="140" y="283" text-anchor="middle" fill="#ffffff" font-size="12">Step 4: Simple (500t)</text>
+
+  <!-- Arrows between steps -->
+  <line x1="140" y1="160" x2="140" y2="170" stroke="#a0b4d0" stroke-width="1.5"/>
+  <line x1="140" y1="205" x2="140" y2="215" stroke="#a0b4d0" stroke-width="1.5"/>
+  <line x1="140" y1="250" x2="140" y2="260" stroke="#a0b4d0" stroke-width="1.5"/>
+
+  <!-- Pros/Cons -->
+  <text x="140" y="320" text-anchor="middle" fill="#5ee68a" font-size="11">+ 实现简单 · 延迟可控</text>
+  <text x="140" y="340" text-anchor="middle" fill="#ff6b60" font-size="11">- 早期错误会传播</text>
+
+  <!-- Parallel Exploration -->
+  <rect x="290" y="70" width="220" height="280" rx="10" fill="#1e2a4a" stroke="#34c759" stroke-width="1"/>
+  <text x="400" y="105" text-anchor="middle" fill="#5ee68a" font-size="15" font-weight="bold">并行探索</text>
+
+  <!-- Parallel branches -->
+  <rect x="310" y="125" width="180" height="35" rx="4" fill="#34c759"/>
+  <text x="400" y="148" text-anchor="middle" fill="#ffffff" font-size="12">Path A: Tool 1 (3Kt)</text>
+
+  <rect x="310" y="170" width="180" height="35" rx="4" fill="#3a4a7a"/>
+  <text x="400" y="193" text-anchor="middle" fill="#ffffff" font-size="12">Path B: Tool 2 (3Kt)</text>
+
+  <rect x="310" y="215" width="180" height="35" rx="4" fill="#3a4a7a"/>
+  <text x="400" y="238" text-anchor="middle" fill="#ffffff" font-size="12">Path C: Tool 3 (3Kt)</text>
+
+  <!-- Merge -->
+  <rect x="330" y="265" width="140" height="35" rx="4" fill="#6bb5f0"/>
+  <text x="400" y="288" text-anchor="middle" fill="#ffffff" font-size="12">Verifier: Select Best</text>
+
+  <!-- Arrows -->
+  <line x1="370" y1="160" x2="355" y2="170" stroke="#a0b4d0" stroke-width="1"/>
+  <line x1="430" y1="160" x2="445" y2="170" stroke="#a0b4d0" stroke-width="1"/>
+
+  <!-- Pros/Cons -->
+  <text x="400" y="320" text-anchor="middle" fill="#5ee68a" font-size="11">+ 多路径覆盖 · 容错强</text>
+  <text x="400" y="340" text-anchor="middle" fill="#ff6b60" font-size="11">- 计算成本线性增长</text>
+
+  <!-- Hybrid -->
+  <rect x="550" y="70" width="220" height="280" rx="10" fill="#1e2a4a" stroke="#ff9f0a" stroke-width="1"/>
+  <text x="660" y="105" text-anchor="middle" fill="#ffcc33" font-size="15" font-weight="bold">混合模式</text>
+
+  <!-- Hybrid flow -->
+  <rect x="570" y="125" width="180" height="35" rx="4" fill="#3a4a7a"/>
+  <text x="660" y="148" text-anchor="middle" fill="#ffffff" font-size="12">难度评估器</text>
+
+  <!-- Branch -->
+  <rect x="570" y="175" width="80" height="30" rx="4" fill="#34c759"/>
+  <text x="610" y="195" text-anchor="middle" fill="#ffffff" font-size="11">Simple</text>
+
+  <rect x="670" y="175" width="80" height="30" rx="4" fill="#4a90d9"/>
+  <text x="710" y="195" text-anchor="middle" fill="#ffffff" font-size="11">Medium</text>
+
+  <rect x="620" y="215" width="80" height="30" rx="4" fill="#ff9f0a"/>
+  <text x="660" y="235" text-anchor="middle" fill="#ffffff" font-size="11">Hard</text>
+
+  <!-- Execution -->
+  <rect x="570" y="255" width="180" height="35" rx="4" fill="#6bb5f0"/>
+  <text x="660" y="278" text-anchor="middle" fill="#ffffff" font-size="12">自适应执行 + 反思</text>
+
+  <!-- Arrows -->
+  <line x1="660" y1="160" x2="610" y2="175" stroke="#a0b4d0" stroke-width="1"/>
+  <line x1="660" y1="160" x2="710" y2="175" stroke="#a0b4d0" stroke-width="1"/>
+
+  <!-- Pros/Cons -->
+  <text x="660" y="320" text-anchor="middle" fill="#5ee68a" font-size="11">+ 效率与准确性平衡</text>
+  <text x="660" y="340" text-anchor="middle" fill="#ff6b60" font-size="11">- 实现复杂度较高</text>
+
+  <!-- Token unit label -->
+  <text x="400" y="385" text-anchor="middle" fill="#a0b4d0" font-size="11">t = tokens | 数据基于 arXiv:2607.28573 + OpenAI/Anthropic 报告</text>
+</svg>
