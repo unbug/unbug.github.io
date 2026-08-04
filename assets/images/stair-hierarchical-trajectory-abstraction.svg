@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e3a5f"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#38bdf8"/>
+      <stop offset="100%" style="stop-color:#818cf8"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+  
+  <!-- Decorative grid lines -->
+  <g stroke="#334155" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="112" x2="800" y2="112"/>
+    <line x1="0" y1="225" x2="800" y2="225"/>
+    <line x1="0" y1="337" x2="800" y2="337"/>
+    <line x1="200" y1="0" x2="200" y2="450"/>
+    <line x1="400" y1="0" x2="400" y2="450"/>
+    <line x1="600" y1="0" x2="600" y2="450"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="80" text-anchor="middle" fill="#f1f5f9" font-size="32" font-weight="700">STAIR</text>
+  <text x="400" y="115" text-anchor="middle" fill="#94a3b8" font-size="16">Hierarchical Trajectory Abstraction for Coding Agents</text>
+  
+  <!-- Hierarchy diagram -->
+  <g transform="translate(200, 170)">
+    <!-- Level 2 (top) - single node -->
+    <rect x="250" y="0" width="140" height="36" rx="8" fill="#38bdf8" opacity="0.9"/>
+    <text x="320" y="23" text-anchor="middle" fill="#fff" font-size="11" font-weight="600">Level 2: High Principle</text>
+    
+    <!-- Level 1 (middle) - two nodes -->
+    <rect x="80" y="75" width="140" height="36" rx="8" fill="#818cf8" opacity="0.8"/>
+    <text x="150" y="98" text-anchor="middle" fill="#fff" font-size="11">Level 1: Mid Strategy</text>
+    
+    <rect x="340" y="75" width="140" height="36" rx="8" fill="#818cf8" opacity="0.8"/>
+    <text x="410" y="98" text-anchor="middle" fill="#fff" font-size="11">Level 1: Mid Strategy</text>
+    
+    <!-- Level 0 (bottom) - four nodes -->
+    <rect x="20" y="155" width="100" height="36" rx="8" fill="#475569" opacity="0.7"/>
+    <text x="70" y="178" text-anchor="middle" fill="#cbd5e1" font-size="10">Level 0: Raw Steps</text>
+    
+    <rect x="135" y="155" width="100" height="36" rx="8" fill="#475569" opacity="0.7"/>
+    <text x="185" y="178" text-anchor="middle" fill="#cbd5e1" font-size="10">Level 0: Raw Steps</text>
+    
+    <rect x="250" y="155" width="100" height="36" rx="8" fill="#475569" opacity="0.7"/>
+    <text x="300" y="178" text-anchor="middle" fill="#cbd5e1" font-size="10">Level 0: Raw Steps</text>
+    
+    <rect x="365" y="155" width="100" height="36" rx="8" fill="#475569" opacity="0.7"/>
+    <text x="415" y="178" text-anchor="middle" fill="#cbd5e1" font-size="10">Level 0: Raw Steps</text>
+    
+    <!-- Connection lines -->
+    <line x1="320" y1="36" x2="150" y2="75" stroke="#818cf8" stroke-width="1.5" opacity="0.5"/>
+    <line x1="320" y1="36" x2="410" y2="75" stroke="#818cf8" stroke-width="1.5" opacity="0.5"/>
+    
+    <line x1="150" y1="111" x2="70" y2="155" stroke="#475569" stroke-width="1" opacity="0.4"/>
+    <line x1="150" y1="111" x2="185" y2="155" stroke="#475569" stroke-width="1" opacity="0.4"/>
+    
+    <line x1="410" y1="111" x2="300" y2="155" stroke="#475569" stroke-width="1" opacity="0.4"/>
+    <line x1="410" y1="111" x2="415" y2="155" stroke="#475569" stroke-width="1" opacity="0.4"/>
+  </g>
+  
+  <!-- Key metric -->
+  <rect x="530" y="280" width="240" height="140" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="650" y="315" text-anchor="middle" fill="#f8fafc" font-size="14" font-weight="600">SWE-bench Verified</text>
+  <text x="650" y="355" text-anchor="middle" fill="#38bdf8" font-size="42" font-weight="700">81.2%</text>
+  <text x="650" y="380" text-anchor="middle" fill="#94a3b8" font-size="12">Pass@1 (MiniMax M2.5)</text>
+  <text x="650" y="405" text-anchor="middle" fill="#64748b" font-size="11">#1 on Leaderboard</text>
+  
+  <!-- Bottom bar -->
+  <rect x="0" y="430" width="800" height="20" fill="#0f172a"/>
+  <text x="400" y="445" text-anchor="middle" fill="#64748b" font-size="10">arXiv:2607.29658v1 | Concordia University + Huawei</text>
+</svg>
