@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 520" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#b91c1c"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#047857"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#6d28d9"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="840" height="520" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="420" y="38" text-anchor="middle" font-size="18" font-weight="bold" fill="#f1f5f9">Magnet: Cross-Session AI Misuse Detection via Capability Accumulation</text>
+
+  <!-- Left side: Attack Scenario -->
+  <rect x="20" y="60" width="390" height="430" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="215" y="88" text-anchor="middle" font-size="14" font-weight="bold" fill="#f87171">Attack: Cross-Session Goal Decomposition</text>
+
+  <!-- Session boxes -->
+  <rect x="40" y="105" width="160" height="90" rx="8" fill="#312e81" stroke="#6366f1" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="120" y="130" text-anchor="middle" font-size="11" font-weight="bold" fill="#c7d2fe">Session A</text>
+  <text x="120" y="148" text-anchor="middle" font-size="10" fill="#a5b4fc">File read script</text>
+  <text x="120" y="163" text-anchor="middle" font-size="10" fill="#a5b4fc">Looks harmless</text>
+
+  <rect x="230" y="105" width="160" height="90" rx="8" fill="#312e81" stroke="#6366f1" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="310" y="130" text-anchor="middle" font-size="11" font-weight="bold" fill="#c7d2fe">Session B</text>
+  <text x="310" y="148" text-anchor="middle" font-size="10" fill="#a5b4fc">Privilege escalation</text>
+  <text x="310" y="163" text-anchor="middle" font-size="10" fill="#a5b4fc">Looks harmless</text>
+
+  <!-- Capability accumulation arrow -->
+  <path d="M200,150 Q215,150 230,150" stroke="#f87171" stroke-width="2" fill="none" marker-end="url(#arrowRed)"/>
+
+  <!-- Accumulation result -->
+  <rect x="40" y="220" width="350" height="60" rx="8" fill="#7f1d1d" stroke="#ef4444" stroke-width="2" filter="url(#shadow)"/>
+  <text x="215" y="245" text-anchor="middle" font-size="12" font-weight="bold" fill="#fecaca">Capability Accumulation</text>
+  <text x="215" y="263" text-anchor="middle" font-size="10" fill="#fca5a5">Combined = Full attack chain (malicious)</text>
+
+  <!-- Bottom: why detection fails -->
+  <rect x="40" y="300" width="350" height="80" rx="8" fill="#1c1917" stroke="#78716c" stroke-width="1"/>
+  <text x="215" y="322" text-anchor="middle" font-size="11" font-weight="bold" fill="#d6d3d1">Why Single-Session Detection Fails</text>
+  <text x="40" y="342" font-size="9.5" fill="#a8a29e">Each session: individually benign, passes all checks</text>
+  <text x="40" y="357" font-size="9.5" fill="#a8a29e">Agent stateless across sessions, but attacker is not</text>
+
+  <!-- Right side: Magnet Detection -->
+  <rect x="430" y="60" width="390" height="430" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="625" y="88" text-anchor="middle" font-size="14" font-weight="bold" fill="#34d399">Magnet: Cross-Session Detection</text>
+
+  <!-- User ID anchor -->
+  <rect x="450" y="105" width="350" height="50" rx="8" fill="#065f46" stroke="#10b981" stroke-width="2" filter="url(#shadow)"/>
+  <text x="625" y="135" text-anchor="middle" font-size="13" font-weight="bold" fill="#a7f3d0">User ID Level Aggregation (Anchor)</text>
+
+  <!-- Evidence bundle assembly -->
+  <rect x="450" y="175" width="350" height="80" rx="8" fill="#064e3b" stroke="#059669" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="625" y="200" text-anchor="middle" font-size="12" font-weight="bold" fill="#6ee7b7">Evidence Bundle Assembly</text>
+  <text x="465" y="218" font-size="9.5" fill="#a7f3d0">- Attract relevant "needles" from session haystack</text>
+  <text x="465" y="233" font-size="9.5" fill="#a7f3d0">- Cross-session, cross-time evidence clustering</text>
+
+  <!-- Capability modeling -->
+  <rect x="450" y="275" width="350" height="80" rx="8" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="625" y="300" text-anchor="middle" font-size="12" font-weight="bold" fill="#93c5fd">Capability Accumulation Modeling</text>
+  <text x="465" y="318" font-size="9.5" fill="#bfdbfe">- Model capability accumulation over time at user level</text>
+  <text x="465" y="333" font-size="9.5" fill="#bfdbfe">- Detect compositional harm from individually benign outputs</text>
+
+  <!-- Detection output -->
+  <rect x="450" y="375" width="350" height="60" rx="8" fill="#1e3a5f" stroke="#60a5fa" stroke-width="2" filter="url(#shadow)"/>
+  <text x="625" y="400" text-anchor="middle" font-size="12" font-weight="bold" fill="#93c5fd">Detection Output</text>
+  <text x="625" y="418" text-anchor="middle" font-size="10" fill="#bfdbfe">Flag: Cross-session capability accumulation detected</text>
+
+  <!-- Center arrow -->
+  <path d="M410,275 L430,275" stroke="#fbbf24" stroke-width="3" marker-end="url(#arrowYellow)"/>
+  <text x="420" y="268" text-anchor="middle" font-size="9" fill="#fbbf24">Magnet</text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowRed" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#f87171"/>
+    </marker>
+    <marker id="arrowYellow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#fbbf24"/>
+    </marker>
+  </defs>
+
+  <!-- Bottom legend -->
+  <rect x="20" y="475" width="800" height="35" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <text x="420" y="497" text-anchor="middle" font-size="10" fill="#94a3b8">Key Insight: Agent stateless across sessions, but attacker is not — Magnet detects the asymmetry</text>
+</svg>
