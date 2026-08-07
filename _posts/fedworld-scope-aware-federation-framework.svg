@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="phaseGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a6cf7;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#3b5de7;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="serverGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="520" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="36" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a1a2e">FedWorld: Scope-Aware Federation of Agent World Models</text>
+  <line x1="100" y1="46" x2="700" y2="46" stroke="#d1d5db" stroke-width="1"/>
+
+  <!-- Phase 1: Local Normalization -->
+  <rect x="30" y="60" width="210" height="180" rx="10" fill="white" stroke="#4a6cf7" stroke-width="2"/>
+  <text x="135" y="88" text-anchor="middle" font-size="14" font-weight="bold" fill="#4a6cf7">Phase 1: Local Normalization</text>
+
+  <!-- Client A -->
+  <rect x="50" y="102" width="80" height="50" rx="6" fill="#eef2ff" stroke="#c7d2fe" stroke-width="1"/>
+  <text x="90" y="122" text-anchor="middle" font-size="11" font-weight="bold" fill="#3730a3">Client A</text>
+  <text x="90" y="140" text-anchor="middle" font-size="9" fill="#6b7280">Local Experience</text>
+
+  <!-- Client B -->
+  <rect x="150" y="102" width="80" height="50" rx="6" fill="#eef2ff" stroke="#c7d2fe" stroke-width="1"/>
+  <text x="190" y="122" text-anchor="middle" font-size="11" font-weight="bold" fill="#3730a3">Client B</text>
+  <text x="190" y="140" text-anchor="middle" font-size="9" fill="#6b7280">Local Experience</text>
+
+  <!-- Arrow to rules -->
+  <line x1="90" y1="155" x2="90" y2="175" stroke="#4a6cf7" stroke-width="1.5"/>
+  <polygon points="86,173 90,180 94,173" fill="#4a6cf7"/>
+  <line x1="190" y1="155" x2="190" y2="175" stroke="#4a6cf7" stroke-width="1.5"/>
+  <polygon points="186,173 190,180 194,173" fill="#4a6cf7"/>
+
+  <!-- Abstract Rules -->
+  <rect x="50" y="182" width="180" height="45" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="140" y="200" text-anchor="middle" font-size="11" font-weight="bold" fill="#92400e">Abstract Transfer Rules</text>
+  <text x="140" y="216" text-anchor="middle" font-size="9" fill="#6b7280">(condition → action → result)</text>
+
+  <!-- Arrow to server -->
+  <line x1="140" y1="230" x2="400" y2="250" stroke="#d1d5db" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <polygon points="395,247 400,254 405,248" fill="#d1d5db"/>
+
+  <!-- Phase 2: Server Alignment -->
+  <rect x="280" y="260" width="240" height="130" rx="10" fill="white" stroke="#f59e0b" stroke-width="2"/>
+  <text x="400" y="286" text-anchor="middle" font-size="14" font-weight="bold" fill="#d97706">Phase 2: Server Alignment</text>
+
+  <!-- Rule matching -->
+  <rect x="300" y="298" width="200" height="25" rx="4" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
+  <text x="400" y="315" text-anchor="middle" font-size="10" fill="#92400e">Align rules across clients</text>
+
+  <!-- Evidence aggregation -->
+  <rect x="300" y="330" width="200" height="25" rx="4" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
+  <text x="400" y="347" text-anchor="middle" font-size="10" fill="#92400e">Aggregate supporting &amp; conflicting evidence</text>
+
+  <!-- Conflict detection -->
+  <rect x="300" y="362" width="200" height="25" rx="4" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
+  <text x="400" y="379" text-anchor="middle" font-size="10" fill="#92400e">Detect conflicts &amp; scope compatibility</text>
+
+  <!-- Arrow to Phase 3 -->
+  <line x1="520" y1="325" x2="580" y2="325" stroke="#d1d5db" stroke-width="1.5"/>
+  <polygon points="576,321 584,325 576,329" fill="#d1d5db"/>
+
+  <!-- Phase 3: Scope Decision -->
+  <rect x="590" y="260" width="180" height="130" rx="10" fill="white" stroke="#10b981" stroke-width="2"/>
+  <text x="680" y="286" text-anchor="middle" font-size="14" font-weight="bold" fill="#059669">Phase 3: Scope Decision</text>
+
+  <!-- Decision outcomes -->
+  <rect x="605" y="298" width="150" height="22" rx="4" fill="#d1fae5" stroke="#34d399" stroke-width="1"/>
+  <text x="680" y="313" text-anchor="middle" font-size="10" fill="#065f46">Shared (global)</text>
+
+  <rect x="605" y="324" width="150" height="22" rx="4" fill="#dbeafe" stroke="#60a5fa" stroke-width="1"/>
+  <text x="680" y="339" text-anchor="middle" font-size="10" fill="#1e40af">Cluster-specific</text>
+
+  <rect x="605" y="350" width="150" height="22" rx="4" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1"/>
+  <text x="680" y="365" text-anchor="middle" font-size="10" fill="#374151">Private (local only)</text>
+
+  <rect x="605" y="376" width="150" height="22" rx="4" fill="#fef2f2" stroke="#f87171" stroke-width="1"/>
+  <text x="680" y="391" text-anchor="middle" font-size="10" fill="#991b1b">Pending (withheld)</text>
+
+  <!-- Bottom section: Key Principles -->
+  <rect x="30" y="420" width="740" height="85" rx="10" fill="white" stroke="#d1d5db" stroke-width="1"/>
+  <text x="400" y="444" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a2e">Key Design Principles</text>
+
+  <!-- Principle 1 -->
+  <rect x="55" y="456" width="220" height="38" rx="6" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+  <text x="165" y="473" text-anchor="middle" font-size="11" font-weight="bold" fill="#166534">Local-First</text>
+  <text x="165" y="489" text-anchor="middle" font-size="9" fill="#6b7280">Federated updates supplement, never overwrite local knowledge</text>
+
+  <!-- Principle 2 -->
+  <rect x="290" y="456" width="220" height="38" rx="6" fill="#fefce8" stroke="#fde68a" stroke-width="1"/>
+  <text x="400" y="473" text-anchor="middle" font-size="11" font-weight="bold" fill="#854d0e">Ambiguous Withheld</text>
+  <text x="400" y="489" text-anchor="middle" font-size="9" fill="#6b7280">Conflicting or insufficient rules are not force-shared</text>
+
+  <!-- Principle 3 -->
+  <rect x="525" y="456" width="220" height="38" rx="6" fill="#eff6ff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="635" y="473" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e40af">Evidence-Driven Scope</text>
+  <text x="635" y="489" text-anchor="middle" font-size="9" fill="#6b7280">Decision based on cross-client evidence, not majority vote</text>
+
+</svg>
