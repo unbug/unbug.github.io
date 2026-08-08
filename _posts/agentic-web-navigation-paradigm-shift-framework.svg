@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="'Helvetica Neue', Arial, sans-serif">
+
+<!-- Background -->
+<rect width="900" height="620" fill="#fafbfc"/>
+
+<!-- Title -->
+<text x="450" y="38" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a2e">Agentic Web Navigation: Paradigm Shift</text>
+<line x1="100" y1="48" x2="800" y2="48" stroke="#ddd" stroke-width="1"/>
+
+<!-- LEFT SIDE: Traditional Search/RAG -->
+<rect x="30" y="65" width="390" height="520" rx="10" fill="#fff" stroke="#e0e0e0" stroke-width="1.5"/>
+<text x="225" y="95" text-anchor="middle" font-size="16" font-weight="bold" fill="#c0392b">Traditional Search / RAG</text>
+
+<!-- Query box -->
+<rect x="80" y="115" width="290" height="40" rx="6" fill="#fdf2f2" stroke="#e74c3c" stroke-width="1.2"/>
+<text x="225" y="140" text-anchor="middle" font-size="13" fill="#c0392b">User Query: "What is X?"</text>
+
+<!-- Arrow down -->
+<polygon points="225,160 218,172 232,172" fill="#e74c3c"/>
+
+<!-- Index/Retrieve box -->
+<rect x="80" y="180" width="290" height="40" rx="6" fill="#fef9f0" stroke="#f39c12" stroke-width="1.2"/>
+<text x="225" y="205" text-anchor="middle" font-size="13" fill="#d68910">Index &amp; Retrieve: Search / Vector DB</text>
+
+<!-- Arrow down -->
+<polygon points="225,224 218,236 232,236" fill="#f39c12"/>
+
+<!-- Generate box -->
+<text x="225" y="260" text-anchor="middle" font-size="13" fill="#7f8c8d">Generate Answer</text>
+<rect x="140" y="270" width="170" height="35" rx="6" fill="#fef9e7" stroke="#f1c40f" stroke-width="1"/>
+
+<!-- Arrow down -->
+<polygon points="225,310 218,322 232,322" fill="#f1c40f"/>
+
+<!-- Output box -->
+<rect x="80" y="335" width="290" height="40" rx="6" fill="#fffde7" stroke="#d4ac0d" stroke-width="1.2"/>
+<text x="225" y="360" text-anchor="middle" font-size="13" fill="#b7950b">Static Text Answer</text>
+
+<!-- Limitations -->
+<rect x="80" y="400" width="290" height="160" rx="6" fill="#fdf2f2" stroke="#e74c3c" stroke-width="0.8"/>
+<text x="95" y="422" font-size="12" font-weight="bold" fill="#c0392b">Limitations:</text>
+<text x="95" y="442" font-size="11" fill="#666">- Passive: only reads indexed content</text>
+<text x="95" y="460" font-size="11" fill="#666">- No interaction with web pages</text>
+<text x="95" y="478" font-size="11" fill="#666">- Cannot access real-time data</text>
+<text x="95" y="496" font-size="11" fill="#666">- Single-hop retrieval only</text>
+<text x="95" y="514" font-size="11" fill="#666">- No error recovery mechanism</text>
+
+<!-- RIGHT SIDE: Agentic Web Navigation -->
+<rect x="480" y="65" width="390" height="520" rx="10" fill="#fff" stroke="#e0e0e0" stroke-width="1.5"/>
+<text x="675" y="95" text-anchor="middle" font-size="16" font-weight="bold" fill="#27ae60">Agentic Web Navigation</text>
+
+<!-- Task Goal -->
+<rect x="530" y="115" width="290" height="40" rx="6" fill="#f0faf0" stroke="#27ae60" stroke-width="1.2"/>
+<text x="675" y="140" text-anchor="middle" font-size="13" fill="#27ae60">Task Goal: "Find cheapest flight..."</text>
+
+<!-- Arrow down -->
+<polygon points="675,160 668,172 682,172" fill="#27ae60"/>
+
+<!-- Navigation Loop (center) -->
+<rect x="540" y="185" width="270" height="130" rx="8" fill="#f0faf0" stroke="#2ecc71" stroke-width="1.5"/>
+<text x="675" y="208" text-anchor="middle" font-size="12" font-weight="bold" fill="#27ae60">Navigation Loop</text>
+
+<!-- Loop steps as small boxes -->
+<rect x="555" y="218" width="60" height="24" rx="4" fill="#d5f5e3" stroke="#2ecc71" stroke-width="0.8"/>
+<text x="585" y="234" text-anchor="middle" font-size="10" fill="#1e8449">Reason</text>
+
+<polygon points="620,230 628,230 628,226 628,234" fill="#2ecc71"/>
+<text x="635" y="233" font-size="9" fill="#27ae60">→</text>
+
+<rect x="645" y="218" width="60" height="24" rx="4" fill="#d5f5e3" stroke="#2ecc71" stroke-width="0.8"/>
+<text x="675" y="234" text-anchor="middle" font-size="10" fill="#1e8449">Act</text>
+
+<polygon points="710,230 718,230 718,226 718,234" fill="#2ecc71"/>
+<text x="725" y="233" font-size="9" fill="#27ae60">→</text>
+
+<rect x="735" y="218" width="60" height="24" rx="4" fill="#d5f5e3" stroke="#2ecc71" stroke-width="0.8"/>
+<text x="765" y="234" text-anchor="middle" font-size="10" fill="#1e8449">Observe</text>
+
+<!-- Second row -->
+<polygon points="585,255 585,263 581,259 589,259" fill="#2ecc71"/>
+<text x="580" y="264" font-size="9" fill="#27ae60">←</text>
+
+<rect x="555" y="252" width="60" height="24" rx="4" fill="#d5f5e3" stroke="#2ecc71" stroke-width="0.8"/>
+<text x="585" y="268" text-anchor="middle" font-size="10" fill="#1e8449">Reflect</text>
+
+<polygon points="620,264 628,264 628,260 628,268" fill="#2ecc71"/>
+<text x="635" y="267" font-size="9" fill="#27ae60">→</text>
+
+<rect x="645" y="252" width="60" height="24" rx="4" fill="#d5f5e3" stroke="#2ecc71" stroke-width="0.8"/>
+<text x="675" y="268" text-anchor="middle" font-size="10" fill="#1e8449">Execute</text>
+
+<polygon points="710,264 718,264 718,260 718,268" fill="#2ecc71"/>
+<text x="725" y="267" font-size="9" fill="#27ae60">→</text>
+
+<rect x="735" y="252" width="60" height="24" rx="4" fill="#d5f5e3" stroke="#2ecc71" stroke-width="0.8"/>
+<text x="765" y="268" text-anchor="middle" font-size="10" fill="#1e8449">Verify</text>
+
+<!-- Arrow down from loop -->
+<polygon points="675,320 668,332 682,332" fill="#2ecc71"/>
+
+<!-- Observation modalities -->
+<rect x="540" y="340" width="125" height="55" rx="6" fill="#eafaf1" stroke="#27ae60" stroke-width="1"/>
+<text x="602" y="360" text-anchor="middle" font-size="11" font-weight="bold" fill="#27ae60">DOM / AccessTree</text>
+<text x="602" y="378" text-anchor="middle" font-size="9" fill="#666">Precise element ID</text>
+
+<rect x="675" y="340" width="125" height="55" rx="6" fill="#eafaf1" stroke="#27ae60" stroke-width="1"/>
+<text x="737" y="360" text-anchor="middle" font-size="11" font-weight="bold" fill="#27ae60">Screenshot (VLM)</text>
+<text x="737" y="378" text-anchor="middle" font-size="9" fill="#666">Visual understanding</text>
+
+<!-- Arrow down -->
+<polygon points="675,400 668,412 682,412" fill="#2ecc71"/>
+
+<!-- Output box -->
+<rect x="530" y="420" width="290" height="40" rx="6" fill="#f0faf0" stroke="#27ae60" stroke-width="1.2"/>
+<text x="675" y="445" text-anchor="middle" font-size="13" fill="#27ae60">Task Completed: Real-time Result</text>
+
+<!-- Capabilities -->
+<rect x="540" y="480" width="290" height="140" rx="6" fill="#f0faf0" stroke="#2ecc71" stroke-width="0.8"/>
+<text x="555" y="502" font-size="12" font-weight="bold" fill="#27ae60">Capabilities:</text>
+<text x="555" y="522" font-size="11" fill="#333">- Active: browses, clicks, fills forms</text>
+<text x="555" y="540" font-size="11" fill="#333">- Real-time access to current web content</text>
+<text x="555" y="558" font-size="11" fill="#333">- Multi-step reasoning and planning</text>
+<text x="555" y="576" font-size="11" fill="#333">- Error recovery and strategy adaptation</text>
+
+<!-- CENTER ARROW: Paradigm Shift -->
+<line x1="420" y1="320" x2="480" y2="320" stroke="#e74c3c" stroke-width="2" stroke-dasharray="6,3"/>
+<polygon points="480,320 470,315 470,325" fill="#e74c3c"/>
+<text x="450" y="310" text-anchor="middle" font-size="10" font-weight="bold" fill="#e74c3c">PARADIGM SHIFT</text>
+
+<!-- Bottom: Key Benchmarks -->
+<rect x="80" y="560" width="740" height="20" rx="4" fill="#f8f9fa" stroke="#ddd" stroke-width="0.8"/>
+<text x="450" y="574" text-anchor="middle" font-size="10" fill="#666">Key Benchmarks: MiniWoB++ (125 tasks) | WebArena (812 tasks, GPT-4 ~16%) | Mind2Web (2000+ tasks, GPT-4 ~30%) | WebVoyager (~25%) | OSWorld (~15%)</text>
+
+</svg>
