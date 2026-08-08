@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4a90d9"/>
+    </marker>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="520" rx="8" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="450" y="36" text-anchor="middle" font-size="18" font-weight="bold" fill="#2c3e50">TRAJDEBUG: Error Lifecycle Framework</text>
+
+  <!-- Stage 1: Multi-Granularity Compression -->
+  <rect x="30" y="55" width="240" height="160" rx="8" fill="#ffffff" stroke="#4a90d9" stroke-width="2"/>
+  <text x="150" y="82" text-anchor="middle" font-size="13" font-weight="bold" fill="#4a90d9">Stage 1: Multi-Granularity Compression</text>
+
+  <!-- Three views -->
+  <rect x="45" y="95" width="210" height="30" rx="4" fill="#e8f4fd"/>
+  <text x="150" y="115" text-anchor="middle" font-size="11" fill="#2c3e50">High Detail: Raw instructions, actions, observations</text>
+
+  <rect x="45" y="132" width="210" height="30" rx="4" fill="#d6eaf8"/>
+  <text x="150" y="152" text-anchor="middle" font-size="11" fill="#2c3e50">Medium Detail: Intent summary, state updates</text>
+
+  <rect x="45" y="169" width="210" height="30" rx="4" fill="#aed6f1"/>
+  <text x="150" y="189" text-anchor="middle" font-size="11" fill="#2c3e50">Low Detail: Progress, entities, unresolved promises</text>
+
+  <!-- Arrow to Stage 2 -->
+  <line x1="270" y1="135" x2="310" y2="135" stroke="#4a90d9" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Stage 2: Error Trigger Detection -->
+  <rect x="310" y="55" width="280" height="160" rx="8" fill="#ffffff" stroke="#e74c3c" stroke-width="2"/>
+  <text x="450" y="82" text-anchor="middle" font-size="13" font-weight="bold" fill="#e74c3c">Stage 2: Error Trigger Detection</text>
+
+  <!-- Trigger components -->
+  <rect x="325" y="95" width="250" height="26" rx="4" fill="#fde8e8"/>
+  <text x="450" y="112" text-anchor="middle" font-size="11" fill="#2c3e50">Trigger: e = (t, c, p, qw, qr)</text>
+
+  <!-- Four categories -->
+  <rect x="325" y="128" width="60" height="24" rx="3" fill="#f5b7b1"/>
+  <text x="355" y="144" text-anchor="middle" font-size="9" fill="#fff">Task</text>
+
+  <rect x="390" y="128" width="60" height="24" rx="3" fill="#f5b7b1"/>
+  <text x="420" y="144" text-anchor="middle" font-size="9" fill="#fff">History</text>
+
+  <rect x="455" y="128" width="60" height="24" rx="3" fill="#f5b7b1"/>
+  <text x="485" y="144" text-anchor="middle" font-size="9" fill="#fff">Intra-Step</text>
+
+  <rect x="520" y="128" width="60" height="24" rx="3" fill="#f5b7b1"/>
+  <text x="550" y="144" text-anchor="middle" font-size="9" fill="#fff">Env Anomaly</text>
+
+  <!-- Evidence constraint -->
+  <rect x="325" y="162" width="250" height="38" rx="4" fill="#fef9e7" stroke="#f39c12" stroke-width="1"/>
+  <text x="450" y="178" text-anchor="middle" font-size="10" font-weight="bold" fill="#d68910">Verbatim Evidence Constraint</text>
+  <text x="450" y="193" text-anchor="middle" font-size="9" fill="#7d6608">qw and qr must be explicitly quotable</text>
+
+  <!-- Arrow to Stage 3 -->
+  <line x1="590" y1="135" x2="630" y2="135" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Stage 3: Error State Classification -->
+  <rect x="630" y="55" width="240" height="160" rx="8" fill="#ffffff" stroke="#8e44ad" stroke-width="2"/>
+  <text x="750" y="82" text-anchor="middle" font-size="13" font-weight="bold" fill="#8e44ad">Stage 3: Error State Classification</text>
+
+  <!-- Four states -->
+  <rect x="645" y="95" width="210" height="28" rx="4" fill="#abebc6"/>
+  <text x="750" y="113" text-anchor="middle" font-size="10" fill="#2c3e50">Clean Resolution: Resolved, no trace</text>
+
+  <rect x="645" y="128" width="210" height="28" rx="4" fill="#f9e79f"/>
+  <text x="750" y="146" text-anchor="middle" font-size="10" fill="#2c3e50">Costly Resolution: Resolved, budget debt</text>
+
+  <rect x="645" y="161" width="210" height="28" rx="4" fill="#f5b7b1"/>
+  <text x="750" y="179" text-anchor="middle" font-size="10" fill="#2c3e50">Manifest Active: Irreversible trace</text>
+
+  <rect x="645" y="194" width="210" height="28" rx="4" fill="#fdebd0"/>
+  <text x="750" y="212" text-anchor="middle" font-size="10" fill="#2c3e50">Latent Active: No trace yet</text>
+
+  <!-- Arrow down to Stage 4 -->
+  <line x1="750" y1="215" x2="750" y2="250" stroke="#8e44ad" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Stage 4: Causal Attribution -->
+  <rect x="310" y="250" width="280" height="100" rx="8" fill="#ffffff" stroke="#27ae60" stroke-width="2"/>
+  <text x="450" y="277" text-anchor="middle" font-size="13" font-weight="bold" fill="#27ae60">Stage 4: Candidate-Set-Guided Causal Attribution</text>
+
+  <!-- Candidates -->
+  <rect x="325" y="290" width="130" height="28" rx="4" fill="#d5f5e3"/>
+  <text x="390" y="308" text-anchor="middle" font-size="10" fill="#2c3e50">Costly Resolution</text>
+
+  <rect x="465" y="290" width="130" height="28" rx="4" fill="#fadbd8"/>
+  <text x="530" y="308" text-anchor="middle" font-size="10" fill="#2c3e50">Manifest Active</text>
+
+  <!-- LLM decision -->
+  <rect x="325" y="324" width="270" height="20" rx="4" fill="#eaf2f8"/>
+  <text x="460" y="338" text-anchor="middle" font-size="10" fill="#2c3e50">LLM selects the critical error step</text>
+
+  <!-- Key findings box -->
+  <rect x="30" y="370" width="420" height="130" rx="8" fill="#ffffff" stroke="#34495e" stroke-width="1.5"/>
+  <text x="240" y="396" text-anchor="middle" font-size="13" font-weight="bold" fill="#34495e">Key Findings (TrajErrBench)</text>
+
+  <text x="50" y="418" font-size="11" fill="#2c3e50">- 486 manually annotated failure trajectories</text>
+  <text x="50" y="438" font-size="11" fill="#2c3e50">- Avg 7.62 local errors per trajectory, only 1 critical error</text>
+  <text x="50" y="458" font-size="11" fill="#2c3e50">- 61.9% of local errors self-repaired, 31.4% persisted</text>
+
+  <!-- Results box -->
+  <rect x="470" y="370" width="400" height="130" rx="8" fill="#ffffff" stroke="#27ae60" stroke-width="1.5"/>
+  <text x="670" y="396" text-anchor="middle" font-size="13" font-weight="bold" fill="#27ae60">Application Results</text>
+
+  <text x="490" y="418" font-size="11" fill="#2c3e50">- Diagnostic-driven agent improvement: +10.80% success rate</text>
+  <text x="490" y="438" font-size="11" fill="#2c3e50">- Failure memory transfer to unseen tasks: +5.70%</text>
+  <text x="490" y="458" font-size="11" fill="#2c3e50">- More robust on long-horizon trajectories vs baselines</text>
+
+  <!-- Source -->
+  <text x="450" y="510" text-anchor="middle" font-size="9" fill="#7f8c8d">Source: arXiv:2608.06346v1 (Tsinghua University + Tencent Hunyuan)</text>
+</svg>
