@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#1a1a2e" rx="8"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="bold" fill="#ffffff">Agentic Coding Frameworks Comparison</text>
+  
+  <!-- Claude Code -->
+  <rect x="30" y="50" width="340" height="170" rx="8" fill="#2c3e50" stroke="#9b59b6" stroke-width="2"/>
+  <text x="200" y="75" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Claude Code (Anthropic)</text>
+  
+  <text x="50" y="98" font-family="monospace" font-size="10" fill="#a0b4c8">Design:     CLI-first</text>
+  <text x="50" y="116" font-family="monospace" font-size="10" fill="#a0b4c8">SWE-bench:  ~50-60%+</text>
+  <text x="50" y="134" font-family="monospace" font-size="10" fill="#a0b4c8">Context:    Full repo in session</text>
+  <text x="50" y="152" font-family="monospace" font-size="10" fill="#a0b4c8">Best for:   End-to-end tasks</text>
+  <text x="50" y="170" font-family="monospace" font-size="10" fill="#a0b4c8">Limitation: Closed source, API cost</text>
+  
+  <!-- Cursor Composer -->
+  <rect x="30" y="235" width="340" height="170" rx="8" fill="#2c3e50" stroke="#f39c12" stroke-width="2"/>
+  <text x="200" y="260" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Cursor Composer</text>
+  
+  <text x="50" y="283" font-family="monospace" font-size="10" fill="#a0b4c8">Design:     IDE-native (VS Code fork)</text>
+  <text x="50" y="301" font-family="monospace" font-size="10" fill="#a0b4c8">SWE-bench:  ~30-40%</text>
+  <text x="50" y="319" font-family="monospace" font-size="10" fill="#a0b4c8">Feature:    Multi-file editing</text>
+  <text x="50" y="337" font-family="monospace" font-size="10" fill="#a0b4c8">Best for:   Daily dev, visual review</text>
+  <text x="50" y="355" font-family="monospace" font-size="10" fill="#a0b4c8">Limitation: Subscription cost</text>
+  
+  <!-- OpenHands -->
+  <rect x="430" y="50" width="340" height="170" rx="8" fill="#2c3e50" stroke="#2ecc71" stroke-width="2"/>
+  <text x="600" y="75" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#ffffff">OpenHands</text>
+  
+  <text x="450" y="98" font-family="monospace" font-size="10" fill="#a0b4c8">Design:     Open source, Docker sandbox</text>
+  <text x="450" y="116" font-family="monospace" font-size="10" fill="#a0b4c8">SWE-bench:  ~40-50%+</text>
+  <text x="450" y="134" font-family="monospace" font-size="10" fill="#a0b4c8">Stars:      50,000+ GitHub</text>
+  <text x="450" y="152" font-family="monospace" font-size="10" fill="#a0b4c8">Best for:   Full control, no vendor lock</text>
+  <text x="450" y="170" font-family="monospace" font-size="10" fill="#a0b4c8">Limitation: Complex setup</text>
+  
+  <!-- Aider -->
+  <rect x="430" y="235" width="340" height="170" rx="8" fill="#2c3e50" stroke="#3498db" stroke-width="2"/>
+  <text x="600" y="260" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Aider</text>
+  
+  <text x="450" y="283" font-family="monospace" font-size="10" fill="#a0b4c8">Design:     Minimalist CLI tool</text>
+  <text x="450" y="301" font-family="monospace" font-size="10" fill="#a0b4c8">SWE-bench:  ~25-35%</text>
+  <text x="450" y="319" font-family="monospace" font-size="10" fill="#a0b4c8">Feature:    Git diff context</text>
+  <text x="450" y="337" font-family="monospace" font-size="10" fill="#a0b4c8">Best for:   Quick prototyping</text>
+  <text x="450" y="355" font-family="monospace" font-size="10" fill="#a0b4c8">Limitation: Context window limits</text>
+  
+  <!-- Summary bar -->
+  <rect x="100" y="420" width="600" height="22" rx="4" fill="#0f3460"/>
+  <text x="400" y="435" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#ffffff">Performance: Claude Code &gt; OpenHands &gt; Cursor &gt; Aider (SWE-bench Verified)</text>
+</svg>

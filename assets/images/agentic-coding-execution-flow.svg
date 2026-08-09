@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 160">
+  <rect width="800" height="160" fill="#1a1a2e" rx="8"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Aider Execution Flow: Natural Language → Git Commit</text>
+  
+  <!-- Before (traditional) -->
+  <rect x="30" y="50" width="280" height="90" rx="8" fill="#2c3e50"/>
+  <text x="170" y="72" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Traditional Workflow</text>
+  
+  <!-- Steps -->
+  <rect x="45" y="82" width="60" height="22" rx="4" fill="#3498db"/>
+  <text x="75" y="97" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Read code</text>
+  
+  <rect x="110" y="82" width="60" height="22" rx="4" fill="#3498db"/>
+  <text x="140" y="97" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Edit file</text>
+  
+  <rect x="175" y="82" width="60" height="22" rx="4" fill="#3498db"/>
+  <text x="205" y="97" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Run tests</text>
+  
+  <rect x="240" y="82" width="60" height="22" rx="4" fill="#3498db"/>
+  <text x="270" y="97" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Fix bugs</text>
+  
+  <!-- Arrow -->
+  <polygon points="105,93 115,93 110,100" fill="#a0b4c8"/>
+  <polygon points="170,93 180,93 175,100" fill="#a0b4c8"/>
+  <polygon points="235,93 245,93 240,100" fill="#a0b4c8"/>
+  
+  <!-- After (Agentic) -->
+  <rect x="490" y="50" width="280" height="90" rx="8" fill="#2c3e50"/>
+  <text x="630" y="72" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Agentic Workflow</text>
+  
+  <!-- Steps -->
+  <rect x="505" y="82" width="60" height="22" rx="4" fill="#e74c3c"/>
+  <text x="535" y="97" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Describe</text>
+  
+  <rect x="570" y="82" width="60" height="22" rx="4" fill="#e74c3c"/>
+  <text x="600" y="97" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Plan</text>
+  
+  <rect x="635" y="82" width="60" height="22" rx="4" fill="#e74c3c"/>
+  <text x="665" y="97" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Execute</text>
+  
+  <rect x="700" y="82" width="60" height="22" rx="4" fill="#e74c3c"/>
+  <text x="730" y="97" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Verify</text>
+  
+  <!-- Arrow -->
+  <polygon points="565,93 575,93 570,100" fill="#a0b4c8"/>
+  <polygon points="630,93 640,93 635,100" fill="#a0b4c8"/>
+  <polygon points="695,93 705,93 700,100" fill="#a0b4c8"/>
+  
+  <!-- Big arrow between -->
+  <line x1="320" y1="95" x2="480" y2="95" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrowRed)"/>
+  
+  <!-- Key difference -->
+  <rect x="300" y="120" width="200" height="30" rx="6" fill="#0f3460"/>
+  <text x="400" y="140" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#ffffff">Human effort: 4 steps → 1 step</text>
+  
+  <defs>
+    <marker id="arrowRed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e74c3c"/>
+    </marker>
+  </defs>
+</svg>

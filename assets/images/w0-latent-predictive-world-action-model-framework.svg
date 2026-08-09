@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 520" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <!-- Arrow marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4a6fa5"/>
+    </marker>
+    <!-- Gradient for stage boxes -->
+    <linearGradient id="stageGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f0fe;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d2e3fc;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="stageGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef7e0;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#fde68a;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="stageGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0f2e9;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#a7d7c5;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="860" height="520" fill="#fafbfc" rx="8"/>
+
+  <!-- Title -->
+  <text x="430" y="36" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a2e">w-0 三阶段训练框架</text>
+
+  <!-- Stage 1: VLM Pre-training -->
+  <rect x="30" y="58" width="240" height="195" rx="10" fill="url(#stageGrad1)" stroke="#4a6fa5" stroke-width="1.5"/>
+  <text x="150" y="84" text-anchor="middle" font-size="13" font-weight="bold" fill="#2c5282">阶段一：全身 VLM 预训练</text>
+
+  <!-- Stage 1 content -->
+  <rect x="46" y="98" width="208" height="28" rx="4" fill="#ffffff" stroke="#b3d4fc" stroke-width="0.5"/>
+  <text x="150" y="117" text-anchor="middle" font-size="11" fill="#2d3748">离散全身动作词汇表</text>
+
+  <rect x="46" y="132" width="208" height="28" rx="4" fill="#ffffff" stroke="#b3d4fc" stroke-width="0.5"/>
+  <text x="150" y="151" text-anchor="middle" font-size="11" fill="#2d3748">Qwen3-VL-2B-Instruct</text>
+
+  <rect x="46" y="166" width="208" height="28" rx="4" fill="#ffffff" stroke="#b3d4fc" stroke-width="0.5"/>
+  <text x="150" y="185" text-anchor="middle" font-size="11" fill="#2d3748">自回归动作 token 预测</text>
+
+  <rect x="46" y="200" width="208" height="28" rx="4" fill="#ffffff" stroke="#b3d4fc" stroke-width="0.5"/>
+  <text x="150" y="219" text-anchor="middle" font-size="11" fill="#2d3748">动作感知语义先验</text>
+
+  <!-- Stage 2: Human-to-Humanoid Pre-training -->
+  <rect x="310" y="58" width="240" height="195" rx="10" fill="url(#stageGrad2)" stroke="#d69e2e" stroke-width="1.5"/>
+  <text x="430" y="84" text-anchor="middle" font-size="13" font-weight="bold" fill="#744210">阶段二：人类到人形预训练</text>
+
+  <!-- Stage 2 content -->
+  <rect x="326" y="98" width="208" height="28" rx="4" fill="#ffffff" stroke="#fbd38d" stroke-width="0.5"/>
+  <text x="430" y="117" text-anchor="middle" font-size="11" fill="#2d3748">V-JEPA 未来嵌入预测</text>
+
+  <rect x="326" y="132" width="208" height="28" rx="4" fill="#ffffff" stroke="#fbd38d" stroke-width="0.5"/>
+  <text x="430" y="151" text-anchor="middle" font-size="11" fill="#2d3748">公共人类视频-动作数据</text>
+
+  <rect x="326" y="166" width="208" height="28" rx="4" fill="#ffffff" stroke="#fbd38d" stroke-width="0.5"/>
+  <text x="430" y="185" text-anchor="middle" font-size="11" fill="#2d3748">SONIC 仿真回放转换</text>
+
+  <rect x="326" y="200" width="208" height="28" rx="4" fill="#ffffff" stroke="#fbd38d" stroke-width="0.5"/>
+  <text x="430" y="219" text-anchor="middle" font-size="11" fill="#2d3748">机器人可执行动作潜在变量</text>
+
+  <!-- Stage 3: Real-World Fine-tuning -->
+  <rect x="590" y="58" width="240" height="195" rx="10" fill="url(#stageGrad3)" stroke="#38a169" stroke-width="1.5"/>
+  <text x="710" y="84" text-anchor="middle" font-size="13" font-weight="bold" fill="#22543d">阶段三：真实世界微调</text>
+
+  <!-- Stage 3 content -->
+  <rect x="606" y="98" width="208" height="28" rx="4" fill="#ffffff" stroke="#9ae6b4" stroke-width="0.5"/>
+  <text x="710" y="117" text-anchor="middle" font-size="11" fill="#2d3748">w-HOME 真实演示数据</text>
+
+  <rect x="606" y="132" width="208" height="28" rx="4" fill="#ffffff" stroke="#9ae6b4" stroke-width="0.5"/>
+  <text x="710" y="151" text-anchor="middle" font-size="11" fill="#2d3748">同视角 + 外视角 RGB-D</text>
+
+  <rect x="606" y="166" width="208" height="28" rx="4" fill="#ffffff" stroke="#9ae6b4" stroke-width="0.5"/>
+  <text x="710" y="185" text-anchor="middle" font-size="11" fill="#2d3748">截断自回归训练 (RTC)</text>
+
+  <rect x="606" y="200" width="208" height="28" rx="4" fill="#ffffff" stroke="#9ae6b4" stroke-width="0.5"/>
+  <text x="710" y="219" text-anchor="middle" font-size="11" fill="#2d3748">滚动时域全身动作执行</text>
+
+  <!-- Arrows between stages -->
+  <line x1="270" y1="156" x2="306" y2="156" stroke="#4a6fa5" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="288" y="148" text-anchor="middle" font-size="9" fill="#718096">VLM特征</text>
+
+  <line x1="550" y1="156" x2="586" y2="156" stroke="#d69e2e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="568" y="148" text-anchor="middle" font-size="9" fill="#718096">潜在变量</text>
+
+  <!-- Bottom section: Model Architecture -->
+  <rect x="30" y="280" width="800" height="225" rx="10" fill="#ffffff" stroke="#cbd5e0" stroke-width="1"/>
+  <text x="430" y="306" text-anchor="middle" font-size="13" font-weight="bold" fill="#2d3748">模型架构：联合视频-动作潜在预测</text>
+
+  <!-- Input layer -->
+  <rect x="50" y="320" width="120" height="60" rx="6" fill="#edf2f7" stroke="#a0aec0" stroke-width="1"/>
+  <text x="110" y="344" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#2d3748">输入层</text>
+  <text x="110" y="362" text-anchor="middle" font-size="9.5" fill="#4a5568">语言指令 + 视觉观察</text>
+  <text x="110" y="376" text-anchor="middle" font-size="9.5" fill="#4a5568">机器人本体感知状态</text>
+
+  <!-- VLM Encoder -->
+  <rect x="210" y="320" width="120" height="60" rx="6" fill="#ebf4ff" stroke="#90cdf4" stroke-width="1"/>
+  <text x="270" y="344" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#2b6cb0">VLM 编码器</text>
+  <text x="270" y="362" text-anchor="middle" font-size="9.5" fill="#4a5568">Qwen3-VL-2B</text>
+  <text x="270" y="376" text-anchor="middle" font-size="9.5" fill="#4a5568">动作感知语义特征</text>
+
+  <!-- Joint Predictor -->
+  <rect x="370" y="320" width="120" height="60" rx="6" fill="#fefcbf" stroke="#ecc94b" stroke-width="1"/>
+  <text x="430" y="344" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#744210">联合预测器</text>
+  <text x="430" y="362" text-anchor="middle" font-size="9.5" fill="#4a5568">视频查询 + 运动查询</text>
+  <text x="430" y="376" text-anchor="middle" font-size="9.5" fill="#4a5568">未来视觉潜在变量</text>
+
+  <!-- Action DiT -->
+  <rect x="530" y="320" width="120" height="60" rx="6" fill="#f0fff4" stroke="#9ae6b4" stroke-width="1"/>
+  <text x="590" y="344" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#22543d">动作 DiT</text>
+  <text x="590" y="362" text-anchor="middle" font-size="9.5" fill="#4a5568">去噪生成</text>
+  <text x="590" y="376" text-anchor="middle" font-size="9.5" fill="#4a5568">全身动作潜在变量</text>
+
+  <!-- Output -->
+  <rect x="690" y="320" width="120" height="60" rx="6" fill="#faf5ff" stroke="#d6bcfa" stroke-width="1"/>
+  <text x="750" y="344" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#553c9a">输出层</text>
+  <text x="750" y="362" text-anchor="middle" font-size="9.5" fill="#4a5568">SONIC 控制器兼容</text>
+  <text x="750" y="376" text-anchor="middle" font-size="9.5" fill="#4a5568">滚动时域执行</text>
+
+  <!-- Arrows between model components -->
+  <line x1="170" y1="350" x2="206" y2="350" stroke="#4a5568" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="330" y1="350" x2="366" y2="350" stroke="#4a5568" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="490" y1="350" x2="526" y2="350" stroke="#4a5568" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="650" y1="350" x2="686" y2="350" stroke="#4a5568" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Cross-connections: video query to motion query -->
+  <path d="M 490 370 Q 510 395 530 370" fill="none" stroke="#d69e2e" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="510" y="400" text-anchor="middle" font-size="8.5" fill="#b7791f">视觉动态注入</text>
+
+  <!-- Bottom note -->
+  <rect x="50" y="420" width="760" height="65" rx="6" fill="#f7fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+  <text x="430" y="442" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#2d3748">关键设计转变</text>
+  <text x="430" y="460" text-anchor="middle" font-size="9.5" fill="#4a5568">将未来视觉预测用作紧凑的预测信号，而非视频生成目标。避免像素级重建的时间不一致性问题。</text>
+  <text x="430" y="478" text-anchor="middle" font-size="9.5" fill="#4a5568">运动查询关注视频查询，使预测的视觉动态直接注入动作表示中</text>
+
+  <!-- Legend -->
+  <rect x="50" y="495" width="12" height="12" rx="2" fill="#e8f0fe"/>
+  <text x="68" y="505" font-size="9" fill="#4a5568">阶段一</text>
+  <rect x="130" y="495" width="12" height="12" rx="2" fill="#fef7e0"/>
+  <text x="148" y="505" font-size="9" fill="#4a5568">阶段二</text>
+  <rect x="210" y="495" width="12" height="12" rx="2" fill="#e0f2e9"/>
+  <text x="228" y="505" font-size="9" fill="#4a5568">阶段三</text>
+</svg>
