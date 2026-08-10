@@ -43,7 +43,7 @@ This repo is for blog content and project files only.
 除「一分钟读论文」外，其他栏目各自有独立的运营指南，写该栏目文章时以对应指南为准：
 
 - **AI 范式雷达** → `AI-PARADIGM-RADAR-GUIDE.md`（3000-6000 字技术长文）
-- **AI 智创简报** → `AI-INNOVATION-BRIEF-GUIDE.md`（600-900 字，AI 技术趋势 × 专利洞察 × 制造机会 × 创业发现，1-2 分钟读完）
+- **AI 智创简报** → `AI-INNOVATION-BRIEF-GUIDE.md`（600-900 字，AI 技术趋势 × 专利洞察 × 小团队机会 × 创业发现，1-2 分钟读完；读者为个人开发者、一人公司、小团队，80% 选题必须是一个人能上手的）
 
 ## Memory
 

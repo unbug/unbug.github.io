@@ -1,19 +1,17 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 智创简报：《特斯拉灵巧手五连专利，腱驱模组的国产替代窗口》",
+    "title": "AI 智创简报：《Agent 纠错专利扎堆，一个人能做的护栏生意》",
     "date": "2026-08-10",
-    "slug": "innovation-brief-tesla-dexterous-hand-patents"
+    "slug": "innovation-brief-agent-guardrail-patents"
   },
   "totalPublished": 1,
   "nextScheduled": "2026-08-14",
   "coveredPatentFamilies": [
-    "WO2026/080687",
-    "WO2026/080690",
-    "WO2026/080691",
-    "WO2026/080693",
-    "WO2026/080701",
-    "WO2026/162064"
+    "US20260044392",
+    "US20260188475",
+    "US20260111248",
+    "US12699853"
   ],
   "candidateTopics": []
 }
