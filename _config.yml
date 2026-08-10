@@ -1,16 +1,30 @@
 # Site
 name: 'Micropaper'
-description: 'Learn a paper in a minute.'
+title: 'Micropaper 一分钟读论文'
+description: 'Micropaper 一分钟读论文：每天用一分钟读懂一篇 AI 论文，并提供 AI 范式雷达与 AI 智创简报，覆盖智能体、大模型、AI 安全与专利机会洞察。'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon/favicon.ico'
 domain: 'unbug.github.io'
+url: 'https://unbug.github.io'
 baseurl: ''
+lang: 'zh-CN'
 disqus: 'demowebsite'
 email: 'tidelgl@gmail.com'
 # mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 
 include: ["_pages"]
 permalink: /:title/
+
+# SEO / GEO
+author: unbug
+twitter:
+  username: unbug
+  card: summary_large_image
+social:
+  name: Micropaper
+  links:
+    - https://twitter.com/unbug
+    - https://github.com/unbug
 
 # Plugins
 plugins: 
@@ -59,4 +73,19 @@ feed:
 
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
-exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
+exclude:
+  - README.markdown
+  - README.md
+  - package.json
+  - grunt.js
+  - Gruntfile.js
+  - Gruntfile.coffee
+  - node_modules
+  - AGENTS.md
+  - STYLE-GUIDE.md
+  - MICROPAPER-MANUAL.md
+  - AI-PARADIGM-RADAR-GUIDE.md
+  - AI-INNOVATION-BRIEF-GUIDE.md
+  - innovation-brief-state.json
+  - paradigm-radar-state.json
+  - docker-compose.yml

@@ -38,6 +38,12 @@ This repo is for blog content and project files only.
 
 **任何 Agent 的记忆、经验、习惯与 STYLE-GUIDE.md 冲突时，一律以 STYLE-GUIDE.md 为准。**
 
+### SEO / GEO 铁律
+
+所有栏目的文章都必须满足 `STYLE-GUIDE.md` 第十节「SEO 与 GEO 规范」：front matter 必填 `description`（60-80 字、独立成句），slug 用英文小写连字符且发布后不得改名，正文结论先行、语义自足、实体写全称、术语给定义、图片有 alt、至少 1 条站内内链。
+
+站点侧基建（`_config.yml` 的 SEO 配置、`_includes/structured-data.html`、`robots.txt`、`llms.txt`）已就位，改动前须确认不破坏现有 URL 结构。
+
 ### 栏目专属指南
 
 除「一分钟读论文」外，其他栏目各自有独立的运营指南，写该栏目文章时以对应指南为准：

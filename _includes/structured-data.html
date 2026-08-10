@@ -1,0 +1,69 @@
+{% assign site_url = site.url | append: site.baseurl %}
+{% assign site_author = site.authors[site.author] %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "{{ site_url }}/#website",
+      "url": "{{ site_url }}/",
+      "name": {{ site.title | default: site.name | jsonify }},
+      "description": {{ site.description | jsonify }},
+      "inLanguage": "{{ site.lang | default: 'zh-CN' }}",
+      "publisher": { "@id": "{{ site_url }}/#publisher" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "{{ site_url }}/#publisher",
+      "name": {{ site.title | default: site.name | jsonify }},
+      "url": "{{ site_url }}/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ site_url }}/{{ site.logo }}"
+      },
+      "sameAs": [{% for link in site.social.links %}{{ link | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}]
+    },
+    {
+      "@type": "Person",
+      "@id": "{{ site_url }}/#author",
+      "name": {{ site_author.name | default: 'Unbug' | jsonify }},
+      "url": "{{ site_url }}/",
+      "description": {{ site_author.bio | jsonify }}
+    }
+    {%- if page.layout == 'post' -%}
+    ,
+    {
+      "@type": "BreadcrumbList",
+      "@id": "{{ site_url }}{{ page.url }}#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "{{ site_url }}/"
+        }{% if page.categories.first %},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": {{ page.categories.first | jsonify }},
+          "item": "{{ site_url }}/categories.html#{{ page.categories.first | downcase | uri_escape }}"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": {{ page.title | jsonify }},
+          "item": "{{ site_url }}{{ page.url }}"
+        }{% else %},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": {{ page.title | jsonify }},
+          "item": "{{ site_url }}{{ page.url }}"
+        }{% endif %}
+      ]
+    }
+    {%- endif -%}
+  ]
+}
+</script>

@@ -48,6 +48,7 @@ author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-slug.svg
 tags: [Tag1, Tag2, Tag3]
+description: "一句话说清本文讲的是什么范式转移、读者能带走什么（60-80 字）"
 ---
 
 [Hook 段落] — 一个引人入胜的开头，用数据、问题或场景切入
@@ -123,6 +124,7 @@ author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-slug.svg
 tags: [Tag1, Tag2, Tag3]
+description: "一句话说清本文讲的是什么范式转移、读者能带走什么（60-80 字）"
 ---
 ```
 
@@ -131,6 +133,7 @@ tags: [Tag1, Tag2, Tag3]
 2. **categories 固定**：`[AI, ParadigmRadar]`（第二个分类可根据主题增加，如 `[AI, ParadigmRadar, Agent]`）
 3. **tags 纯英文**：3-5 个相关标签
 4. **image**：SVG 格式，以 `paradigm-radar-` 开头
+5. **`description` 必填**：60-80 字、独立成句、含核心结论与关键词（SEO/GEO 用，见 `STYLE-GUIDE.md` 第十节）
 
 ### 2.5 篇幅与节奏
 
@@ -332,6 +335,7 @@ git push
 - [ ] tags 都是纯英文？
 - [ ] image 路径正确（SVG，相对路径）？
 - [ ] 文件名以 `paradigm-radar-` 为 slug 前缀？
+- [ ] front matter 有 `description`（60-80 字、独立成句）？
 
 **内容检查**：
 - [ ] 开篇 3 句话内点明读者收益？
@@ -341,6 +345,7 @@ git push
 - [ ] 结尾有行动清单？
 - [ ] 总字数 3000-6000？
 - [ ] References 完整、链接有效？
+- [ ] 符合 `STYLE-GUIDE.md` 第十节 SEO/GEO 规范（结论先行、语义自足、实体全称、术语定义、图片 alt、至少 1 条站内内链）？
 
 **风格检查**：
 - [ ] 语气像"友好专家"而非"学术论文"？

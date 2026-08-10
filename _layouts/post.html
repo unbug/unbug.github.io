@@ -23,7 +23,7 @@ layout: default
                         <img class="rounded-circle" src="{{site.baseurl}}/assets/images/avatar1.jpg" alt="{{author.name}}" width="53"/>
                         {% endif %}
 						<small class="ml-3">By {{ author.name }} <span><a target="_blank" href="{{ author.twitter }}" class="btn btn-outline-success btn-sm btn-round ml-1">Follow</a></span>
-                            <span class="text-muted d-block mt-1">{{ page.date | date: '%b %d, %Y' }} · {% include meta-read-time.html %}</span>
+                            <span class="text-muted d-block mt-1"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%b %d, %Y' }}</time> · {% include meta-read-time.html %}</span>
 						</small>
 					</div>
 					<!-- only datetime
@@ -32,7 +32,7 @@ layout: default
 				</div>
                 {% if page.image %}
 				<div class="col-md-6 pr-0 align-self-center">
-					<img class="rounded" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+					<img class="rounded" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.image_alt | default: page.title }}" width="1200" height="630" loading="eager">
 				</div>
                 {% endif %}
 			</div>

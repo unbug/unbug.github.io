@@ -62,6 +62,7 @@ author: unbug
 categories: [AI, InnovationBrief]
 image: assets/images/innovation-brief-slug.svg
 tags: [Tag1, Tag2, Tag3]
+description: "一句话说清什么专利信号、指向谁的什么痛点与机会（60-80 字）"
 ---
 
 [导语] — 2-3 句。一句话说清"什么专利信号 + 指向什么机会"。
@@ -130,16 +131,18 @@ author: unbug
 categories: [AI, InnovationBrief]
 image: assets/images/innovation-brief-slug.svg
 tags: [Tag1, Tag2, Tag3]
+description: "一句话说清什么专利信号、指向谁的什么痛点与机会（60-80 字）"
 ---
 ```
 
 **铁律**：
 1. **没有 `date` 字段** — 日期由文件名 `YYYY-MM-DD-slug.md` 决定
-2. **字段顺序**：layout → title → author → categories → image → tags
+2. **字段顺序**：layout → title → author → categories → image → tags → description
 3. **categories 固定**：`[AI, InnovationBrief]`（可追加第三个英文分类，如 `[AI, InnovationBrief, Robotics]`）
 4. **tags 纯英文**：3-5 个，建议包含 `Patent`
 5. **image**：SVG 格式，文件名以 `innovation-brief-` 开头，相对路径无前导 `/`
 6. **全文不含 Emoji**
+7. **`description` 必填**：60-80 字、独立成句、含核心结论与关键词（SEO/GEO 用，见 `STYLE-GUIDE.md` 第十节）
 
 ### 2.5 篇幅与节奏（1-2 分钟速读）
 
@@ -279,6 +282,7 @@ git push
 - [ ] categories 包含 `InnovationBrief`？
 - [ ] tags 都是纯英文？
 - [ ] image 为 SVG、相对路径、以 `innovation-brief-` 开头？
+- [ ] front matter 有 `description`（60-80 字、独立成句）？
 - [ ] 文件名以 `innovation-brief-` 为 slug 前缀？
 - [ ] 全文无 Emoji、无代码块？
 
@@ -293,6 +297,7 @@ git push
 - [ ] 通过 1.1 节的 80/20 判定（≤ 2 万元起步、1 人 4 周出 MVP）？
 - [ ] 总字数 600-900？
 - [ ] References 完整、链接有效？
+- [ ] 符合 `STYLE-GUIDE.md` 第十节 SEO/GEO 规范（结论先行、语义自足、实体全称、术语定义、图片 alt、至少 1 条站内内链）？
 
 ### 7.2 质量红线（任意一项不合格则退回）
 
