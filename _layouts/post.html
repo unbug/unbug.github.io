@@ -32,7 +32,7 @@ layout: default
 				</div>
                 {% if page.image %}
 				<div class="col-md-6 pr-0 align-self-center">
-					<img class="rounded" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.image_alt | default: page.title }}" width="1200" height="630" loading="eager">
+					<img class="rounded" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.image_alt | default: page.title }}" loading="eager">
 				</div>
                 {% endif %}
 			</div>
