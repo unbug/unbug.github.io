@@ -1,0 +1,63 @@
+---
+layout: null
+permalink: /robots.txt
+sitemap: false
+---
+# Micropaper 一分钟读论文
+# 传统搜索引擎爬虫
+User-agent: *
+Allow: /
+Disallow: /assets/js/
+Disallow: /404.html
+
+# 生成式引擎优化（GEO）：显式允许 AI 检索与问答型爬虫抓取并引用本站内容
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: {{ site.url }}{{ site.baseurl }}/sitemap.xml
+Sitemap: {{ site.url }}{{ site.baseurl }}/feed.xml

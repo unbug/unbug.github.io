@@ -21,17 +21,19 @@ author: unbug
 categories: [Category1, Category2]
 image: assets/images/filename.svg
 tags: [tag1, tag2]
+description: "一句话说清这篇论文做了什么、结论是什么（60-80 字）"
 ---
 ```
 
 ### 铁律：
 1. **没有 `date` 字段** — 日期由文件名 `YYYY-MM-DD-slug.md` 决定
-2. **字段顺序**：layout → title → author → categories → image → tags
+2. **字段顺序**：layout → title → author → categories → image → tags → description
 3. **title 格式**：`一分钟读论文：《中文标题》` — 用中文书名号《》
 4. **categories 纯英文**：如 `[AI, Security]`、`[Engineering]`、`[OpenSource, Engineer]`
 5. **tags 纯英文**：如 `[ChatGPT, MachineLearning]`，不使用中文标签
 6. **image 相对路径**：`assets/images/xxx.svg`（不带前导 `/`）
 7. **2025年及以后的文章不加 `featured` 标签**
+8. **`description` 必填**：60-80 字的独立成句摘要，用于 meta description、社交卡片与 AI 引擎摘要（详见第十节）
 
 ### 禁止：
 - ❌ `date: 2026-04-10 23:45:00 +0800`（不要手动写 date）
@@ -207,7 +209,57 @@ tags: [tag1, tag2]
 
 ---
 
-## 十、防覆盖声明
+## 十、SEO 与 GEO 规范（全栏目通用铁律）
+
+本节对**所有栏目**生效（一分钟读论文 / AI 范式雷达 / AI 智创简报）。SEO 面向传统搜索引擎，GEO（Generative Engine Optimization）面向 ChatGPT、Perplexity、Google AI 概览等生成式引擎的检索与引用。
+
+### 10.1 Front Matter 的 SEO 字段
+
+| 字段 | 要求 |
+|------|------|
+| `title` | 核心关键词出现在前 20 个字符内；不做标题党 |
+| `description` | **必填**，60-80 字，独立成句、含结论与核心关键词；不以"本文介绍"开头 |
+| `image` | 必填 SVG，作为社交卡片图（og:image） |
+| `image_alt` | 可选；缺省时用 title 作为封面图 alt |
+| `categories` / `tags` | 纯英文，复用站内已有分类与标签，不造同义新词 |
+
+### 10.2 URL（slug）规范
+
+- 文件名即 URL：`YYYY-MM-DD-英文小写连字符-slug.md`
+- slug 用英文关键词，3-8 个词，不含日期、序号、中文、下划线
+- **已发布文章的文件名不得修改**（改名等于换 URL，历史链接与收录全部失效）
+
+### 10.3 GEO：让生成式引擎愿意引用
+
+生成式引擎倾向引用「结构清晰、事实可核验、语义自足」的段落。写作时必须做到：
+
+1. **结论先行**：开篇第一段给出可被直接摘录的结论句，不做铺垫
+2. **语义自足**：每个 H2 下的首段能脱离上下文单独成立，不用"如上所述""前面提到"
+3. **事实带数字与出处**：关键结论配具体数值、基准名、机构名，并在 References 给出可访问外链
+4. **实体写全称**：机构、模型、论文、专利首次出现时写全称（可加英文原名），之后再用简称
+5. **术语给定义**：术语首次出现时用一句话解释，不假设读者已知
+6. **小标题用自然语言**：H2/H3 写成读者会检索的问题或名词短语，不用"其一""小结"这类无信息量标题
+7. **不做关键词堆砌**：同一关键词自然出现即可，堆砌会同时伤害 SEO 与 GEO
+
+### 10.4 站内链接与图片
+
+- 每篇文章至少 1 条指向站内相关文章的内链（用相对路径 `{{ site.baseurl }}/slug/`）
+- 图片必须有描述性 alt；关键信息不得只存在于图片中，正文需有等价文字表述
+- 外链一律放 `## References`，使用引用式链接定义
+
+### 10.5 站点侧基建（已实现，Agent 无需重复配置）
+
+- `_config.yml` 中的 `url` / `title` / `description` / `lang` / `twitter` / `social` 驱动 `jekyll-seo-tag` 输出 canonical、Open Graph、Twitter Card 与 JSON-LD
+- `_includes/structured-data.html` 输出 WebSite / Organization / Person / BreadcrumbList 结构化数据
+- `robots.txt` 显式允许 GPTBot、OAI-SearchBot、ClaudeBot、PerplexityBot、Google-Extended 等 AI 爬虫，并声明 sitemap
+- `llms.txt` 为生成式引擎提供站点说明、栏目说明、引用方式与最近文章索引
+- `sitemap.xml` 与 `feed.xml` 由 `jekyll-sitemap` / `jekyll-feed` 自动生成
+
+**修改上述文件前必须确认不会破坏现有 URL 结构。**
+
+---
+
+## 十一、防覆盖声明
 
 **本文件是写作规范的 Single Source of Truth。**
 
@@ -235,3 +287,9 @@ Editor Agent 交稿前必须逐项检查：
 - [ ] 链接定义放在文件最底部？
 - [ ] 全文第三人称、客观叙述、无个人感受？
 - [ ] 没有互动号召结尾？
+- [ ] front matter 有 `description`（60-80 字、独立成句、含结论）？
+- [ ] 文件名 slug 为英文小写连字符，且未修改已发布文章的文件名？
+- [ ] 开篇第一段是可被直接摘录的结论句？
+- [ ] 机构、模型、论文首次出现写了全称，术语首次出现给了定义？
+- [ ] 图片有描述性 alt，且关键信息在正文中有等价文字？
+- [ ] 至少 1 条站内相关文章内链？

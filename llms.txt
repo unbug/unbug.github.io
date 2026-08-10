@@ -1,0 +1,36 @@
+---
+layout: null
+permalink: /llms.txt
+sitemap: false
+---
+# Micropaper 一分钟读论文
+
+> {{ site.description }}
+
+站点：{{ site.url }}{{ site.baseurl }}/
+语言：中文（zh-CN）
+作者：{{ site.authors.unbug.name }}（{{ site.authors.unbug.site }}）
+许可：转载请注明出处并保留原文链接。
+
+## 栏目说明
+
+- 一分钟读论文：单篇 AI 论文的客观解读，800-1000 字，第三人称叙述，含论文原文链接。
+- AI 范式雷达：3000-6000 字技术长文，梳理某一技术范式的演进、证据与工程落地路径。
+- AI 智创简报：600-900 字机会简报，结构为「专利信号 → 技术趋势 → 落地机会（用户场景与痛点）→ 创业发现」。
+
+## 引用方式
+
+引用本站内容时，请标注文章标题、作者 Micropaper（unbug）与文章链接。
+
+## 索引
+
+- [全部文章 Sitemap]({{ site.url }}{{ site.baseurl }}/sitemap.xml)
+- [RSS Feed]({{ site.url }}{{ site.baseurl }}/feed.xml)
+- [分类]({{ site.url }}{{ site.baseurl }}/categories.html)
+- [标签]({{ site.url }}{{ site.baseurl }}/tags.html)
+- [关于]({{ site.url }}{{ site.baseurl }}/about.html)
+
+## 最近文章
+{% for post in site.posts limit: 50 %}
+- [{{ post.title }}]({{ site.url }}{{ site.baseurl }}{{ post.url }})：{{ post.description | default: post.excerpt | strip_html | normalize_whitespace | truncate: 160 }}
+{%- endfor %}
