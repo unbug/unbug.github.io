@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4a90d9"/>
+    </marker>
+    <marker id="arrowheadRed" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e74c3c"/>
+    </marker>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="470" rx="8" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="450" y="36" text-anchor="middle" font-size="18" font-weight="bold" fill="#2c3e50">SkillProx: Forward-Backward Self-Evolving Agent Skills</text>
+
+  <!-- Stage 1: Closed-Loop Forward Update -->
+  <rect x="30" y="55" width="400" height="170" rx="8" fill="#ffffff" stroke="#4a90d9" stroke-width="2"/>
+  <text x="230" y="82" text-anchor="middle" font-size="13" font-weight="bold" fill="#4a90d9">Stage 1: Closed-Loop Forward Update</text>
+
+  <rect x="45" y="95" width="370" height="26" rx="4" fill="#e8f4fd"/>
+  <text x="230" y="112" text-anchor="middle" font-size="10" fill="#2c3e50">Run training batch on current skill X_k</text>
+
+  <rect x="45" y="127" width="370" height="26" rx="4" fill="#d6eaf8"/>
+  <text x="230" y="144" text-anchor="middle" font-size="10" fill="#2c3e50">Diagnoser: failure/success trajectories + rejection history</text>
+
+  <rect x="45" y="159" width="370" height="26" rx="4" fill="#aed6f1"/>
+  <text x="230" y="176" text-anchor="middle" font-size="10" fill="#2c3e50">Patcher generates candidate skills</text>
+
+  <rect x="45" y="191" width="370" height="28" rx="4" fill="#fef9e7" stroke="#f39c12" stroke-width="1"/>
+  <text x="230" y="203" text-anchor="middle" font-size="10" font-weight="bold" fill="#d68910">Gate: re-run on same batch</text>
+  <text x="230" y="215" text-anchor="middle" font-size="9" fill="#7d6608">accept only if hard acc and cell acc do not decrease</text>
+
+  <!-- Feedback loop (rejected edits back to diagnoser) -->
+  <path d="M 45 205 L 16 205 L 16 140 L 43 140" fill="none" stroke="#4a90d9" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowhead)"/>
+  <text x="12" y="178" text-anchor="middle" font-size="8" fill="#4a90d9" transform="rotate(-90 12 178)">rejected edits feed back</text>
+
+  <!-- Arrow Stage 1 to Stage 2 -->
+  <line x1="430" y1="140" x2="468" y2="140" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrowheadRed)"/>
+
+  <!-- Stage 2: Proximal Refinement -->
+  <rect x="470" y="55" width="400" height="170" rx="8" fill="#ffffff" stroke="#e74c3c" stroke-width="2"/>
+  <text x="670" y="82" text-anchor="middle" font-size="13" font-weight="bold" fill="#e74c3c">Stage 2: Proximal Refinement (Prox)</text>
+
+  <rect x="485" y="95" width="370" height="26" rx="4" fill="#fde8e8"/>
+  <text x="670" y="112" text-anchor="middle" font-size="10" fill="#2c3e50">Parse skill into knowledge units (L2 sections, L3 reference groups)</text>
+
+  <rect x="485" y="127" width="370" height="26" rx="4" fill="#fadbd8"/>
+  <text x="670" y="144" text-anchor="middle" font-size="10" fill="#2c3e50">Frozen leave-one-out utility audit per unit</text>
+
+  <rect x="485" y="159" width="370" height="26" rx="4" fill="#f5b7b1"/>
+  <text x="670" y="176" text-anchor="middle" font-size="10" fill="#2c3e50">Rank by cell utility ascending; negative first (tau = -0.001)</text>
+
+  <rect x="485" y="191" width="370" height="28" rx="4" fill="#fef9e7" stroke="#f39c12" stroke-width="1"/>
+  <text x="670" y="203" text-anchor="middle" font-size="10" font-weight="bold" fill="#d68910">Shrinker gate: valid structure + strict size drop</text>
+  <text x="670" y="215" text-anchor="middle" font-size="9" fill="#7d6608">no hard-acc drop, cell acc drop within threshold, compression below rho</text>
+
+  <!-- Objective and PGD mapping box -->
+  <rect x="30" y="250" width="400" height="160" rx="8" fill="#ffffff" stroke="#34495e" stroke-width="1.5"/>
+  <text x="230" y="276" text-anchor="middle" font-size="13" font-weight="bold" fill="#34495e">Objective and PGD Mapping</text>
+
+  <text x="50" y="300" font-size="11" fill="#2c3e50">min J(X) = L_T(X) + lambda * G(X)</text>
+  <text x="50" y="322" font-size="11" fill="#2c3e50">L_T: task loss (expected accuracy)</text>
+  <text x="50" y="344" font-size="11" fill="#2c3e50">G: textual complexity (total characters)</text>
+  <text x="50" y="368" font-size="11" fill="#2c3e50">Forward stage = gradient step on task loss</text>
+  <text x="50" y="390" font-size="11" fill="#2c3e50">Backward stage = proximal half-step on complexity</text>
+
+  <!-- Key results box -->
+  <rect x="470" y="250" width="400" height="160" rx="8" fill="#ffffff" stroke="#27ae60" stroke-width="1.5"/>
+  <text x="670" y="276" text-anchor="middle" font-size="13" font-weight="bold" fill="#27ae60">Key Results</text>
+
+  <text x="490" y="300" font-size="11" fill="#2c3e50">- Avg +3.0pp over strongest baseline SkillGrad (3 benchmarks)</text>
+  <text x="490" y="322" font-size="11" fill="#2c3e50">- OOD WikiTQ: SkillProx 78.5 vs SkillOpt 26.0 (Qwen3.5-4B)</text>
+  <text x="490" y="344" font-size="11" fill="#2c3e50">- Std dev +/-0.5 vs +/-7.6 for SkillOpt</text>
+  <text x="490" y="368" font-size="11" fill="#2c3e50">- Ablation: full 54.5 / Prox only 53.0 / forward only 52.0</text>
+  <text x="490" y="390" font-size="11" fill="#2c3e50">- Best acc 52.3% with 25.7% compression (tau = -0.001)</text>
+
+  <!-- Source -->
+  <text x="450" y="448" text-anchor="middle" font-size="9" fill="#7f8c8d">Source: arXiv:2608.07449v1 (HKUST + Macau University)</text>
+</svg>
