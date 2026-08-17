@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" font-family="Helvetica, Arial, sans-serif">
+  <rect width="960" height="540" fill="#ffffff"/>
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <!-- inputs -->
+  <rect x="30" y="50" width="210" height="50" rx="8" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
+  <text x="135" y="80" text-anchor="middle" font-size="14" fill="#0f172a">Instruction</text>
+
+  <rect x="30" y="128" width="210" height="50" rx="8" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
+  <text x="135" y="158" text-anchor="middle" font-size="14" fill="#0f172a">Observation (RGB)</text>
+
+  <rect x="30" y="206" width="210" height="64" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="135" y="232" text-anchor="middle" font-size="13" fill="#0f172a">Visual Memory Module</text>
+  <text x="135" y="250" text-anchor="middle" font-size="11" fill="#4c1d95">multi-second history</text>
+
+  <!-- decoder -->
+  <rect x="320" y="50" width="380" height="140" rx="10" fill="#f1f5f9" stroke="#0f172a" stroke-width="2"/>
+  <text x="510" y="112" text-anchor="middle" font-size="17" font-weight="bold" fill="#0f172a">Single Transformer Decoder</text>
+  <text x="510" y="138" text-anchor="middle" font-size="12" fill="#475569">one autoregressive objective</text>
+
+  <!-- legend -->
+  <rect x="730" y="58" width="16" height="16" rx="3" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="754" y="71" font-size="12" fill="#0f172a">reasoning token</text>
+  <rect x="730" y="86" width="16" height="16" rx="3" fill="#ffedd5" stroke="#ea580c"/>
+  <text x="754" y="99" font-size="12" fill="#0f172a">action token</text>
+
+  <!-- input arrows -->
+  <line x1="240" y1="75" x2="316" y2="92" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="240" y1="153" x2="316" y2="140" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="240" y1="238" x2="316" y2="168" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- decoder to stream -->
+  <text x="320" y="248" font-size="12" fill="#334155">output token stream</text>
+  <line x1="510" y1="190" x2="510" y2="252" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- token stream -->
+  <g font-size="11" text-anchor="middle">
+    <rect x="320" y="258" width="62" height="46" rx="5" fill="#dbeafe" stroke="#2563eb"/>
+    <text x="351" y="277" fill="#1e3a8a">Task</text>
+    <text x="351" y="293" fill="#1e3a8a">Decomp.</text>
+
+    <rect x="389" y="258" width="62" height="46" rx="5" fill="#ffedd5" stroke="#ea580c"/>
+    <text x="420" y="285" fill="#7c2d12">Action</text>
+
+    <rect x="458" y="258" width="62" height="46" rx="5" fill="#ffedd5" stroke="#ea580c"/>
+    <text x="489" y="285" fill="#7c2d12">Action</text>
+
+    <rect x="527" y="258" width="62" height="46" rx="5" fill="#dbeafe" stroke="#2563eb"/>
+    <text x="558" y="277" fill="#1e3a8a">Object</text>
+    <text x="558" y="293" fill="#1e3a8a">Grounding</text>
+
+    <rect x="596" y="258" width="62" height="46" rx="5" fill="#ffedd5" stroke="#ea580c"/>
+    <text x="627" y="285" fill="#7c2d12">Action</text>
+
+    <rect x="665" y="258" width="62" height="46" rx="5" fill="#ffedd5" stroke="#ea580c"/>
+    <text x="696" y="285" fill="#7c2d12">Action</text>
+
+    <rect x="734" y="258" width="62" height="46" rx="5" fill="#dbeafe" stroke="#2563eb"/>
+    <text x="765" y="277" fill="#1e3a8a">Action</text>
+    <text x="765" y="293" fill="#1e3a8a">Hints</text>
+
+    <rect x="803" y="258" width="62" height="46" rx="5" fill="#ffedd5" stroke="#ea580c"/>
+    <text x="834" y="285" fill="#7c2d12">Action</text>
+
+    <rect x="872" y="258" width="62" height="46" rx="5" fill="#ffedd5" stroke="#ea580c"/>
+    <text x="903" y="285" fill="#7c2d12">Action</text>
+  </g>
+
+  <!-- stream to tokenizer -->
+  <line x1="510" y1="304" x2="510" y2="366" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="522" y="340" font-size="11" fill="#475569">action tokens</text>
+
+  <!-- tokenizer -->
+  <rect x="320" y="372" width="380" height="64" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="510" y="400" text-anchor="middle" font-size="14" font-weight="bold" fill="#0f172a">Cross-Embodiment Action Tokenizer</text>
+  <text x="510" y="420" text-anchor="middle" font-size="11" fill="#065f46">learnable, shared action vocabulary</text>
+
+  <!-- tokenizer to robot actions -->
+  <line x1="510" y1="436" x2="510" y2="480" stroke="#475569" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="320" y="486" width="380" height="44" rx="8" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
+  <text x="510" y="513" text-anchor="middle" font-size="12" fill="#0f172a">Robot Actions - 14 embodiments, 27-dim unified space</text>
+</svg>
