@@ -26,7 +26,7 @@
   <rect x="70" y="58" width="182" height="34" rx="17" fill="url(#accentGrad)" opacity="0.18"/>
   <text x="161" y="81" font-family="Helvetica,Arial,sans-serif" font-size="18" fill="#8ab4ff" text-anchor="middle">AI 智创简报</text>
 
-  <text x="70" y="150" font-family="Helvetica,Arial,sans-serif" font-size="44" font-weight="bold" fill="#ffffff">内容溯源专利扎堆</text>
+  <text x="70" y="150" font-family="Helvetica,Arial,sans-serif" font-size="44" font-weight="bold" fill="#ffffff">标签可撕 vs 可验证凭证</text>
   <text x="70" y="204" font-family="Helvetica,Arial,sans-serif" font-size="26" fill="#9aa8c7">机器可读标记 · 署名归属 · 合规凭证</text>
   <line x1="70" y1="234" x2="1130" y2="234" stroke="url(#accentGrad)" stroke-width="2" opacity="0.6"/>
 

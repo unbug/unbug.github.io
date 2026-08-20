@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 智创简报：《内容溯源专利扎堆，一人能做的合规打标生意》"
+title: "AI 智创简报：《内容溯源：标签可撕与可验证凭证之间的打标缺口》"
 author: unbug
 categories: [AI, InnovationBrief]
 image: assets/images/innovation-brief-content-provenance-patents.svg
