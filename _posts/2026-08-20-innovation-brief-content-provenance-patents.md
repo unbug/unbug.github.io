@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 智创简报：《内容溯源：标签可撕与可验证凭证之间的打标缺口》"
+title: "AI 智创简报：《标签可撕，凭证要验：内容溯源的打标缺口》"
 author: unbug
 categories: [AI, InnovationBrief]
 image: assets/images/innovation-brief-content-provenance-patents.svg
