@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f3a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0d1528;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4a9eff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#7c5cff;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <g opacity="0.05" stroke="#fff" stroke-width="0.5">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+  </g>
+
+  <rect x="70" y="58" width="182" height="34" rx="17" fill="url(#accentGrad)" opacity="0.18"/>
+  <text x="161" y="81" font-family="Helvetica,Arial,sans-serif" font-size="18" fill="#8ab4ff" text-anchor="middle">AI 智创简报</text>
+
+  <text x="70" y="150" font-family="Helvetica,Arial,sans-serif" font-size="44" font-weight="bold" fill="#ffffff">全价调用 vs 三层成本控制</text>
+  <text x="70" y="204" font-family="Helvetica,Arial,sans-serif" font-size="26" fill="#9aa8c7">模型路由 · 语义缓存 · 成本护栏</text>
+  <line x1="70" y1="234" x2="1130" y2="234" stroke="url(#accentGrad)" stroke-width="2" opacity="0.6"/>
+
+  <!-- Stage 1: patent signal -->
+  <rect x="70" y="280" width="300" height="196" rx="12" fill="#141b33" stroke="#2c3a63" stroke-width="1.5"/>
+  <text x="98" y="318" font-family="Helvetica,Arial,sans-serif" font-size="20" fill="#4a9eff">专利信号</text>
+  <text x="98" y="356" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c8d2e8">US20260187482</text>
+  <text x="98" y="382" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c8d2e8">US20260195537</text>
+  <text x="98" y="408" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c8d2e8">US20260119922</text>
+  <text x="98" y="434" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c8d2e8">US20260134002</text>
+  <text x="98" y="460" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#7d8bab">2026 年 6 件公开，2 件近 90 天</text>
+
+  <path d="M 386 378 L 428 378" stroke="#4a9eff" stroke-width="2"/>
+  <path d="M 424 372 L 434 378 L 424 384 Z" fill="#4a9eff"/>
+
+  <!-- Stage 2: trend -->
+  <rect x="450" y="280" width="300" height="196" rx="12" fill="#141b33" stroke="#2c3a63" stroke-width="1.5"/>
+  <text x="478" y="318" font-family="Helvetica,Arial,sans-serif" font-size="20" fill="#6b7dff">技术趋势</text>
+  <text x="478" y="356" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c8d2e8">全价 → 选模型 · 缓存 · 管预算</text>
+  <text x="478" y="382" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c8d2e8">闭环路由：评分数据反哺</text>
+  <text x="478" y="408" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c8d2e8">预测下一提示词，预热缓存</text>
+  <text x="478" y="434" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c8d2e8">预算护栏：先预测成本再拦截</text>
+  <text x="478" y="460" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#7d8bab">不碰模型，纯 API 中间层工程</text>
+
+  <path d="M 766 378 L 808 378" stroke="#4a9eff" stroke-width="2"/>
+  <path d="M 804 372 L 814 378 L 804 384 Z" fill="#4a9eff"/>
+
+  <!-- Stage 3: indie opportunity -->
+  <rect x="830" y="280" width="300" height="196" rx="12" fill="#141b33" stroke="#2c3a63" stroke-width="1.5"/>
+  <text x="858" y="318" font-family="Helvetica,Arial,sans-serif" font-size="20" fill="#4a9eff">一个人能做的机会</text>
+  <text x="858" y="356" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c8d2e8">LLM 代理：缓存+路由+护栏</text>
+  <text x="858" y="382" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c8d2e8">成本审计：2000-5000 元/项目</text>
+  <text x="858" y="408" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c8d2e8">客户：独立开发者 / 小团队</text>
+  <text x="858" y="434" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c8d2e8">月订阅 99-299 元</text>
+  <text x="858" y="460" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#7d8bab">起步几百元/月 · 4 周出 MVP</text>
+
+  <!-- Bottom strip -->
+  <rect x="70" y="512" width="1060" height="64" rx="10" fill="url(#accentGrad)" opacity="0.12"/>
+  <text x="600" y="540" font-family="Helvetica,Arial,sans-serif" font-size="18" fill="#8ab4ff" text-anchor="middle">NVIDIA · IBM · BOOMI 等在大模型路由 / 缓存 / 成本预测方向密集公开申请</text>
+  <text x="600" y="564" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#7d8bab" text-anchor="middle">LiteLLM + GPTCache 开源组件可直接封装 · 对交 API 账单的开发者，「帮人省」是入口</text>
+</svg>

@@ -1,11 +1,11 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 智创简报：《标签可撕，凭证要验：内容溯源的打标缺口》",
+    "title": "AI 智创简报：《路由有专利，账单有水分：API 中间层省钱活》",
     "date": "2026-08-20",
-    "slug": "innovation-brief-content-provenance-patents"
+    "slug": "innovation-brief-llm-routing-cache-patents"
   },
-  "totalPublished": 2,
+  "totalPublished": 3,
   "nextScheduled": "2026-08-24",
   "coveredPatentFamilies": [
     "US20260044392",
@@ -15,19 +15,15 @@
     "US20260236564",
     "US20260195422",
     "US20260187746",
-    "US20260099327"
+    "US20260099327",
+    "US20260187482",
+    "US20260195537",
+    "US20260119922",
+    "US20260119921",
+    "US20260134002",
+    "US20260064670"
   ],
   "candidateTopics": [
-    {
-      "topic": "大模型路由/缓存/成本预测专利扎堆——API 中间层的省钱生意（研究摘要已完整落盘 research/2026-08-20-innovation-brief-research.md，6 件专利全部核实）",
-      "score": 4.3,
-      "sources": [
-        "https://www.freepatentsonline.com/y2026/0187482.html",
-        "https://www.freepatentsonline.com/y2026/0195537.html",
-        "https://www.freepatentsonline.com/y2026/0119922.html",
-        "https://www.freepatentsonline.com/y2026/0134002.html"
-      ]
-    },
     {
       "topic": "位置绑定生成式 AI（LBS + AIGC 内容生成）",
       "score": 3.8,
@@ -41,8 +37,14 @@
       "sources": [
         "https://www.freepatentsonline.com/20260246646.html"
       ]
+    },
+    {
+      "topic": "AI 内容审核流式专利（US20260148010，CONTENT MODERATION FOR AI SYSTEMS）——流式审核中间件小切口，研究员列为备选 2，元数据待深入核实",
+      "sources": [
+        "https://www.freepatentsonline.com/y2026/0148010.html"
+      ]
     }
   ],
-  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-content-provenance-patents/",
-  "lastPublishedVerifiedAt": "2026-08-20T19:25+08:00"
+  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-llm-routing-cache-patents/",
+  "lastPublishedVerifiedAt": null
 }
