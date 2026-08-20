@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620" font-family="Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4a5568"/>
+    </marker>
+  </defs>
+  <rect width="960" height="620" fill="#f7fafc"/>
+  <text x="480" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#1a365d">CentaurBench 框架：自动化 vs 增强</text>
+  <text x="480" y="66" text-anchor="middle" font-size="14" fill="#4a5568">同一批助手模型，两种角色，排名几乎对不上（arXiv:2608.18554）</text>
+
+  <!-- 左泳道：自动化 -->
+  <rect x="50" y="95" width="400" height="44" rx="8" fill="#2b6cb0"/>
+  <text x="250" y="123" text-anchor="middle" font-size="17" font-weight="bold" fill="#ffffff">自动化：自己把活干完</text>
+
+  <rect x="110" y="165" width="280" height="56" rx="8" fill="#ebf8ff" stroke="#2b6cb0" stroke-width="2"/>
+  <text x="250" y="189" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a365d">助手模型（9 个）</text>
+  <text x="250" y="209" text-anchor="middle" font-size="12" fill="#2d3748">Claude / Gemini / DeepSeek / GPT</text>
+
+  <line x1="250" y1="221" x2="250" y2="253" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="110" y="257" width="280" height="56" rx="8" fill="#1a365d"/>
+  <text x="250" y="281" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">直接产出交付物</text>
+  <text x="250" y="301" text-anchor="middle" font-size="12" fill="#cbd5e0">模型独立完成全部工作</text>
+
+  <!-- 右泳道：增强 -->
+  <rect x="510" y="95" width="400" height="44" rx="8" fill="#ed8936"/>
+  <text x="710" y="123" text-anchor="middle" font-size="17" font-weight="bold" fill="#ffffff">增强：指导别人干活</text>
+
+  <rect x="570" y="165" width="280" height="56" rx="8" fill="#fffaf0" stroke="#ed8936" stroke-width="2"/>
+  <text x="710" y="189" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a365d">助手模型（同 9 个）</text>
+  <text x="710" y="209" text-anchor="middle" font-size="12" fill="#2d3748">只写指导，不动手</text>
+
+  <line x1="710" y1="221" x2="710" y2="253" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="722" y="240" font-size="12" font-weight="bold" fill="#c05621">200-250 词过程性指导</text>
+
+  <rect x="570" y="257" width="280" height="56" rx="8" fill="#fffaf0" stroke="#ed8936" stroke-width="2"/>
+  <text x="710" y="281" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a365d">GPT-3.5-Turbo（固定工人）</text>
+  <text x="710" y="301" text-anchor="middle" font-size="12" fill="#2d3748">按指导完成实际交付</text>
+
+  <line x1="710" y1="313" x2="710" y2="345" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="570" y="349" width="280" height="56" rx="8" fill="#1a365d"/>
+  <text x="710" y="373" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">产出交付物</text>
+  <text x="710" y="393" text-anchor="middle" font-size="12" fill="#cbd5e0">工人独立完成交付</text>
+
+  <!-- 任务带 -->
+  <text x="50" y="443" font-size="14" font-weight="bold" fill="#1a365d">7 个真实工作任务 x 10 次重复，LLM 评审团盲评两两对比</text>
+  <g font-size="13" fill="#2d3748">
+    <rect x="50" y="456" width="112" height="34" rx="17" fill="#ffffff" stroke="#a0aec0" stroke-width="1.5"/>
+    <text x="106" y="478" text-anchor="middle">咨询</text>
+    <rect x="174" y="456" width="112" height="34" rx="17" fill="#ffffff" stroke="#a0aec0" stroke-width="1.5"/>
+    <text x="230" y="478" text-anchor="middle">旅行规划</text>
+    <rect x="298" y="456" width="112" height="34" rx="17" fill="#ffffff" stroke="#a0aec0" stroke-width="1.5"/>
+    <text x="354" y="478" text-anchor="middle">菜单规划</text>
+    <rect x="422" y="456" width="112" height="34" rx="17" fill="#ffffff" stroke="#a0aec0" stroke-width="1.5"/>
+    <text x="478" y="478" text-anchor="middle">报税</text>
+    <rect x="546" y="456" width="112" height="34" rx="17" fill="#ffffff" stroke="#a0aec0" stroke-width="1.5"/>
+    <text x="602" y="478" text-anchor="middle">辅导</text>
+    <rect x="670" y="456" width="112" height="34" rx="17" fill="#ffffff" stroke="#a0aec0" stroke-width="1.5"/>
+    <text x="726" y="478" text-anchor="middle">运筹</text>
+    <rect x="794" y="456" width="112" height="34" rx="17" fill="#ffffff" stroke="#a0aec0" stroke-width="1.5"/>
+    <text x="850" y="478" text-anchor="middle">市场趋势</text>
+  </g>
+
+  <!-- 关键发现 -->
+  <rect x="50" y="512" width="286" height="84" rx="8" fill="#ebf8ff" stroke="#2b6cb0" stroke-width="2"/>
+  <text x="193" y="543" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a365d">模型级排名相关</text>
+  <text x="193" y="568" text-anchor="middle" font-size="14" fill="#2d3748">Spearman ρ = 0.48</text>
+  <text x="193" y="587" text-anchor="middle" font-size="12" fill="#4a5568">p = 0.187，与零不可区分</text>
+
+  <rect x="337" y="512" width="286" height="84" rx="8" fill="#fffaf0" stroke="#ed8936" stroke-width="2"/>
+  <text x="480" y="543" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a365d">冠军错位</text>
+  <text x="480" y="568" text-anchor="middle" font-size="14" fill="#2d3748">5/7 任务增强冠军</text>
+  <text x="480" y="587" text-anchor="middle" font-size="12" fill="#4a5568">与自动化冠军不是同一模型</text>
+
+  <rect x="624" y="512" width="286" height="84" rx="8" fill="#f0fff4" stroke="#38a169" stroke-width="2"/>
+  <text x="767" y="543" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a365d">指导可为负</text>
+  <text x="767" y="568" text-anchor="middle" font-size="14" fill="#2d3748">无指导基线 3 任务第一</text>
+  <text x="767" y="587" text-anchor="middle" font-size="12" fill="#4a5568">仅 GPT-5-Mini 指导整体更优</text>
+</svg>
