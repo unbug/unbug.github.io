@@ -31,12 +31,18 @@
     {
       "topic": "位置绑定生成式 AI（LBS + AIGC 内容生成）",
       "score": 3.8,
-      "sources": ["https://www.freepatentsonline.com/20260122299.html"]
+      "sources": [
+        "https://www.freepatentsonline.com/20260122299.html"
+      ]
     },
     {
       "topic": "区块链视频真实性认证",
       "score": 3.6,
-      "sources": ["https://www.freepatentsonline.com/20260246646.html"]
+      "sources": [
+        "https://www.freepatentsonline.com/20260246646.html"
+      ]
     }
-  ]
+  ],
+  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-content-provenance-patents/",
+  "lastPublishedVerifiedAt": "2026-08-20T19:25+08:00"
 }
