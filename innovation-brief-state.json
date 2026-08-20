@@ -19,6 +19,16 @@
   ],
   "candidateTopics": [
     {
+      "topic": "大模型路由/缓存/成本预测专利扎堆——API 中间层的省钱生意（研究摘要已完整落盘 research/2026-08-20-innovation-brief-research.md，6 件专利全部核实）",
+      "score": 4.3,
+      "sources": [
+        "https://www.freepatentsonline.com/y2026/0187482.html",
+        "https://www.freepatentsonline.com/y2026/0195537.html",
+        "https://www.freepatentsonline.com/y2026/0119922.html",
+        "https://www.freepatentsonline.com/y2026/0134002.html"
+      ]
+    },
+    {
       "topic": "位置绑定生成式 AI（LBS + AIGC 内容生成）",
       "score": 3.8,
       "sources": ["https://www.freepatentsonline.com/20260122299.html"]
