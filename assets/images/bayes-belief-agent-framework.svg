@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620" font-family="Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4a5568"/>
+    </marker>
+  </defs>
+  <rect width="960" height="620" fill="#f7fafc"/>
+  <text x="480" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#1a365d">BayesBeliefAgent 框架：后验门控的自适应重规划</text>
+  <text x="480" y="66" text-anchor="middle" font-size="14" fill="#4a5568">队友信念从被动上下文变为主动控制信号（arXiv:2608.18490）</text>
+
+  <!-- 左侧：流程 -->
+  <rect x="50" y="95" width="280" height="52" rx="8" fill="#2b6cb0"/>
+  <text x="190" y="126" text-anchor="middle" font-size="16" font-weight="bold" fill="#ffffff">观察队友动作</text>
+
+  <line x1="190" y1="147" x2="190" y2="171" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="50" y="175" width="280" height="64" rx="8" fill="#ebf8ff" stroke="#2b6cb0" stroke-width="2"/>
+  <text x="190" y="200" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a365d">贝叶斯追踪</text>
+  <text x="190" y="223" text-anchor="middle" font-size="13" fill="#2d3748">推断队友当前技能的后验</text>
+
+  <line x1="190" y1="239" x2="190" y2="263" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="50" y="267" width="280" height="64" rx="8" fill="#ebf8ff" stroke="#2b6cb0" stroke-width="2"/>
+  <text x="190" y="292" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a365d">矛盾检测</text>
+  <text x="190" y="315" text-anchor="middle" font-size="13" fill="#2d3748">实际动作与推断技能是否冲突</text>
+
+  <line x1="190" y1="331" x2="190" y2="355" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="50" y="359" width="280" height="52" rx="8" fill="#1a365d"/>
+  <text x="190" y="390" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">门控中断：仅矛盾时触发</text>
+
+  <line x1="190" y1="411" x2="190" y2="451" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="200" y="436" font-size="13" font-weight="bold" fill="#c05621">矛盾</text>
+
+  <line x1="330" y1="385" x2="356" y2="385" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="343" y="377" text-anchor="middle" font-size="12" fill="#4a5568">无矛盾</text>
+  <rect x="360" y="359" width="150" height="52" rx="8" fill="#ffffff" stroke="#a0aec0" stroke-width="1.5"/>
+  <text x="435" y="390" text-anchor="middle" font-size="12" fill="#4a5568">继续当前技能</text>
+
+  <rect x="50" y="455" width="280" height="64" rx="8" fill="#ed8936"/>
+  <text x="190" y="480" text-anchor="middle" font-size="16" font-weight="bold" fill="#ffffff">重规划</text>
+  <text x="190" y="503" text-anchor="middle" font-size="13" fill="#ffffff">GPT-4o 分层规划器生成新技能计划</text>
+
+  <path d="M 190 519 L 190 549 L 25 549 L 25 121 L 46 121" fill="none" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="60" y="542" font-size="12" fill="#4a5568">执行新计划并继续观察</text>
+
+  <!-- 右侧：belief-action gap 对比 -->
+  <rect x="530" y="95" width="410" height="380" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="550" y="127" font-size="16" font-weight="bold" fill="#1a365d">belief-action gap（越低越好）</text>
+
+  <text x="550" y="160" font-size="14" font-weight="bold" fill="#2d3748">Open 布局</text>
+  <text x="610" y="182" text-anchor="end" font-size="12" fill="#4a5568">ProAgent</text>
+  <rect x="620" y="168" width="172" height="18" fill="#ed8936"/>
+  <text x="800" y="182" font-size="13" font-weight="bold" fill="#c05621">0.41</text>
+  <text x="610" y="212" text-anchor="end" font-size="12" fill="#4a5568">BayesBeliefAgent</text>
+  <rect x="620" y="198" width="84" height="18" fill="#2b6cb0"/>
+  <text x="712" y="212" font-size="13" font-weight="bold" fill="#2b6cb0">0.20</text>
+
+  <text x="550" y="252" font-size="14" font-weight="bold" fill="#2d3748">Ring 布局</text>
+  <text x="610" y="274" text-anchor="end" font-size="12" fill="#4a5568">ProAgent</text>
+  <rect x="620" y="260" width="160" height="18" fill="#ed8936"/>
+  <text x="788" y="274" font-size="13" font-weight="bold" fill="#c05621">0.38</text>
+  <text x="610" y="304" text-anchor="end" font-size="12" fill="#4a5568">BayesBeliefAgent</text>
+  <rect x="620" y="290" width="118" height="18" fill="#2b6cb0"/>
+  <text x="746" y="304" font-size="13" font-weight="bold" fill="#2b6cb0">0.28</text>
+
+  <text x="550" y="336" font-size="12" fill="#4a5568">技能识别准确率：0.79 vs 0.78（几乎相同）</text>
+  <text x="550" y="356" font-size="12" fill="#4a5568">差距在执行：信念是否被用作控制信号</text>
+
+  <line x1="550" y1="374" x2="920" y2="374" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="550" y="400" font-size="14" font-weight="bold" fill="#1a365d">每 episode 重规划次数（Open 布局）</text>
+  <text x="550" y="424" font-size="12" fill="#4a5568">Full 1.8-3.0    Periodic-10 15-51    Compl./held 50-169</text>
+  <text x="550" y="448" font-size="13" font-weight="bold" fill="#2b6cb0">平均奖励相当，重规划次数少 20-80 倍</text>
+
+  <text x="480" y="580" text-anchor="middle" font-size="12" fill="#718096">BayesBeliefAgent：贝叶斯追踪 - 矛盾检测 - 门控中断 - 重规划；数据来自论文 Table 2 与重规划效率表</text>
+</svg>
