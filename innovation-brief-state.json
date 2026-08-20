@@ -1,17 +1,32 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 智创简报：《Agent 纠错专利扎堆，一个人能做的护栏生意》",
-    "date": "2026-08-10",
-    "slug": "innovation-brief-agent-guardrail-patents"
+    "title": "AI 智创简报：《内容溯源专利扎堆，一人能做的合规打标生意》",
+    "date": "2026-08-20",
+    "slug": "innovation-brief-content-provenance-patents"
   },
-  "totalPublished": 1,
-  "nextScheduled": "2026-08-14",
+  "totalPublished": 2,
+  "nextScheduled": "2026-08-24",
   "coveredPatentFamilies": [
     "US20260044392",
     "US20260188475",
     "US20260111248",
-    "US12699853"
+    "US12699853",
+    "US20260236564",
+    "US20260195422",
+    "US20260187746",
+    "US20260099327"
   ],
-  "candidateTopics": []
+  "candidateTopics": [
+    {
+      "topic": "位置绑定生成式 AI（LBS + AIGC 内容生成）",
+      "score": 3.8,
+      "sources": ["https://www.freepatentsonline.com/20260122299.html"]
+    },
+    {
+      "topic": "区块链视频真实性认证",
+      "score": 3.6,
+      "sources": ["https://www.freepatentsonline.com/20260246646.html"]
+    }
+  ]
 }
