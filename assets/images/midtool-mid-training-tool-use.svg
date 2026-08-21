@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="'PingFang SC','Noto Sans CJK SC','Helvetica Neue',Arial,sans-serif">
+  <rect width="1200" height="630" fill="#f7f9fc"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#1565c0"/>
+
+  <text x="600" y="52" text-anchor="middle" font-size="30" font-weight="700" fill="#1a237e">MidTool：工具使用需要专门的中间训练</text>
+  <text x="600" y="82" text-anchor="middle" font-size="16" fill="#546e7a">arXiv:2608.20314 · Snowflake + UW + UNC Chapel Hill · 20.3B token MidTool-Mix</text>
+
+  <!-- pipeline (Section 2) -->
+  <rect x="60" y="105" width="270" height="70" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="195" y="133" text-anchor="middle" font-size="16" font-weight="700" fill="#0d47a1">Stage 1 数据源采集</text>
+  <text x="195" y="157" text-anchor="middle" font-size="13" fill="#1565c0">web / PDF / 代码</text>
+
+  <line x1="330" y1="140" x2="378" y2="140" stroke="#546e7a" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <rect x="378" y="105" width="270" height="70" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="513" y="133" text-anchor="middle" font-size="16" font-weight="700" fill="#0d47a1">Stage 2 数据预处理</text>
+  <text x="513" y="157" text-anchor="middle" font-size="13" fill="#1565c0">过滤与清洗</text>
+
+  <line x1="648" y1="140" x2="696" y2="140" stroke="#546e7a" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <rect x="696" y="105" width="330" height="70" rx="10" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="861" y="133" text-anchor="middle" font-size="16" font-weight="700" fill="#1b5e20">Stage 3 agentic 轨迹合成</text>
+  <text x="861" y="157" text-anchor="middle" font-size="13" fill="#2e7d32">真实工具 API / MCP skills / 文档工作流</text>
+
+  <line x1="1026" y1="140" x2="1064" y2="140" stroke="#546e7a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="1064" y="105" width="76" height="70" rx="10" fill="#fff8e1" stroke="#f9a825" stroke-width="2"/>
+  <text x="1102" y="136" text-anchor="middle" font-size="14" font-weight="700" fill="#e65100">20.3B</text>
+  <text x="1102" y="156" text-anchor="middle" font-size="12" fill="#e65100">token</text>
+
+  <!-- training flow -->
+  <rect x="60" y="205" width="1080" height="58" rx="10" fill="#ffffff" stroke="#cfd8dc" stroke-width="1.5"/>
+  <text x="80" y="240" font-size="15" fill="#37474f">Qwen3-4B/8B-Base → mid-training（MidTool-Mix）→ SFT → RL</text>
+  <text x="900" y="240" font-size="13" fill="#607d8b">Data &amp; Model 已发布于 HF collection</text>
+
+  <!-- results: BFCL -->
+  <rect x="60" y="285" width="540" height="150" rx="10" fill="#ffffff" stroke="#cfd8dc" stroke-width="1.5"/>
+  <text x="80" y="315" font-size="17" font-weight="700" fill="#37474f">BFCLv3 overall（Table 3，Qwen3-4B-Base）</text>
+  <rect x="80" y="332" width="360" height="24" rx="6" fill="#e3f2fd"/>
+  <rect x="80" y="332" width="159" height="24" rx="6" fill="#90caf9"/>
+  <text x="88" y="349" font-size="13" font-weight="700" fill="#0d47a1">SFT 基线 39.73</text>
+  <rect x="80" y="362" width="360" height="24" rx="6" fill="#e3f2fd"/>
+  <rect x="80" y="362" width="201" height="24" rx="6" fill="#42a5f5"/>
+  <text x="88" y="379" font-size="13" font-weight="700" fill="#ffffff">+MidTool-Mix SFT 50.25（+10.5）</text>
+  <rect x="80" y="392" width="360" height="24" rx="6" fill="#e3f2fd"/>
+  <rect x="80" y="392" width="217" height="24" rx="6" fill="#1565c0"/>
+  <text x="88" y="409" font-size="13" font-weight="700" fill="#ffffff">SFT + RL 54.18</text>
+  <text x="452" y="349" font-size="12.5" fill="#607d8b">官方 Qwen3-4B：24.27</text>
+  <text x="452" y="379" font-size="12.5" fill="#c62828" font-weight="700">官方 Qwen3-8B：26.45</text>
+  <text x="452" y="409" font-size="12.5" fill="#607d8b">mid-trained 4B 反超</text>
+
+  <!-- results: tau2 + MCP -->
+  <rect x="620" y="285" width="520" height="150" rx="10" fill="#ffffff" stroke="#cfd8dc" stroke-width="1.5"/>
+  <text x="640" y="315" font-size="17" font-weight="700" fill="#37474f">tau2-Bench overall Pass@1（Table 4）</text>
+  <text x="640" y="345" font-size="15" fill="#37474f">4B：8.54 → 19.96（约 2.3 倍）· 8B：10.43 → 21.31</text>
+  <text x="640" y="375" font-size="17" font-weight="700" fill="#37474f">MCP-Universe overall（Table 5）</text>
+  <text x="640" y="405" font-size="15" fill="#37474f">4B：13.20 / 1.68% → 23.80 / 10.06% · 8B：15.18 / 3.35% → 25.16 / 9.50%</text>
+
+  <!-- bottom: boundary + control -->
+  <rect x="60" y="455" width="540" height="120" rx="10" fill="#ffebee" stroke="#c62828" stroke-width="1.5"/>
+  <text x="80" y="485" font-size="16" font-weight="700" fill="#b71c1c">能力边界（如实呈现）</text>
+  <text x="80" y="513" font-size="13.5" fill="#5d4037">tau2 telecom 子集 RL 后 Pass@1 仅 6.36，远低于 overall</text>
+  <text x="80" y="535" font-size="13.5" fill="#5d4037">MCP Web Search 列所有配置均为 0.00 / 0.00%（独立能力边界）</text>
+  <text x="80" y="560" font-size="12.5" fill="#8d6e63">结论仅限 Qwen3-4B/8B-Base，不外推其他模型家族</text>
+
+  <rect x="620" y="455" width="520" height="120" rx="10" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+  <text x="640" y="485" font-size="16" font-weight="700" fill="#e65100">matched-budget 对照（Table 6）</text>
+  <text x="640" y="513" font-size="13.5" fill="#5d4037">Dolmino-20BT 通用语料：BFCL overall 仅 +3.4，MCP score -7.8</text>
+  <text x="640" y="535" font-size="13.5" fill="#5d4037">同等规模、唯一变量是数据构成</text>
+  <text x="640" y="560" font-size="13.5" font-weight="700" fill="#e65100">工具专用数据构成 &gt; 数据量本身</text>
+
+  <text x="600" y="608" text-anchor="middle" font-size="13" fill="#90a4ae">与《工具调用的苦涩教训》（推理时方法对比）不同，本篇是训练数据管线视角 · unbug.github.io</text>
+
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 z" fill="#546e7a"/>
+    </marker>
+  </defs>
+</svg>
