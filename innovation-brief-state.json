@@ -47,5 +47,13 @@
     }
   ],
   "lastPublishedUrl": "https://unbug.github.io/innovation-brief-prd-gen-patents/",
-  "lastPublishedVerifiedAt": null
+  "lastPublishedVerifiedAt": "2026-08-22 15:40 GMT+8",
+  "verification": {
+    "brief4": {
+      "url": "https://unbug.github.io/innovation-brief-prd-gen-patents/",
+      "http": 200,
+      "verifiedAt": "2026-08-22 15:40 GMT+8",
+      "note": "空提交 25f4428 重建后验证（原 a84705c 构建早于 UTC 8/22 零点，Jekyll 排除未来日期文章）"
+    }
+  }
 }
