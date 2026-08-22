@@ -1,12 +1,12 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 智创简报：《PRD 生成专利公开，独立开发者能卖需求拆解活》",
+    "title": "AI 智创简报：《流式审核专利扎堆，给聊天产品装实时安检》",
     "date": "2026-08-22",
-    "slug": "innovation-brief-prd-gen-patents"
+    "slug": "innovation-brief-stream-moderation-patents"
   },
-  "totalPublished": 4,
-  "nextScheduled": "2026-08-25",
+  "totalPublished": 5,
+  "nextScheduled": "2026-08-26",
   "coveredPatentFamilies": [
     "US20260044392",
     "US20260188475",
@@ -22,7 +22,11 @@
     "US20260119921",
     "US20260134002",
     "US20260064670",
-    "US20260178323"
+    "US20260178323",
+    "US20260148010",
+    "US20260178727",
+    "US20260099707",
+    "US20260057218"
   ],
   "candidateTopics": [
     {
@@ -38,22 +42,21 @@
       "sources": [
         "https://www.freepatentsonline.com/20260246646.html"
       ]
-    },
-    {
-      "topic": "AI 内容审核流式专利（US20260148010，CONTENT MODERATION FOR AI SYSTEMS）——流式审核中间件小切口，元数据待深入核实",
-      "sources": [
-        "https://www.freepatentsonline.com/y2026/0148010.html"
-      ]
     }
   ],
-  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-prd-gen-patents/",
-  "lastPublishedVerifiedAt": "2026-08-22 15:40 GMT+8",
+  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-stream-moderation-patents/",
   "verification": {
     "brief4": {
       "url": "https://unbug.github.io/innovation-brief-prd-gen-patents/",
       "http": 200,
       "verifiedAt": "2026-08-22 15:40 GMT+8",
       "note": "空提交 25f4428 重建后验证（原 a84705c 构建早于 UTC 8/22 零点，Jekyll 排除未来日期文章）"
+    },
+    "brief5": {
+      "url": "https://unbug.github.io/innovation-brief-stream-moderation-patents/",
+      "http": null,
+      "verifiedAt": null,
+      "note": "待 push 后 Actions 构建完成再验证"
     }
   }
 }
