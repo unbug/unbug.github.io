@@ -45,6 +45,7 @@
     }
   ],
   "lastPublishedUrl": "https://unbug.github.io/innovation-brief-stream-moderation-patents/",
+  "lastPublishedVerifiedAt": "2026-08-22 17:05 GMT+8",
   "verification": {
     "brief4": {
       "url": "https://unbug.github.io/innovation-brief-prd-gen-patents/",
@@ -54,9 +55,9 @@
     },
     "brief5": {
       "url": "https://unbug.github.io/innovation-brief-stream-moderation-patents/",
-      "http": null,
-      "verifiedAt": null,
-      "note": "待 push 后 Actions 构建完成再验证"
+      "http": 200,
+      "verifiedAt": "2026-08-22 17:05 GMT+8",
+      "note": "commit 7088613 Actions build success 后验证，llms.txt 已收录"
     }
   }
 }
