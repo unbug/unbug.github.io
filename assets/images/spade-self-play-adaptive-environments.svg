@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="'PingFang SC','Noto Sans CJK SC','Helvetica Neue',Arial,sans-serif">
+  <rect width="1200" height="630" fill="#f7f9fc"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#1565c0"/>
+
+  <text x="600" y="52" text-anchor="middle" font-size="30" font-weight="700" fill="#1a237e">SPADE：难度跟着能力长的自适应自博弈</text>
+  <text x="600" y="82" text-anchor="middle" font-size="16" fill="#546e7a">arXiv:2608.19197 · UW / Stanford / CMU / MIT 等 9 机构 18 位作者 · v1 2026-08-19</text>
+
+  <!-- self-play loop -->
+  <rect x="60" y="105" width="240" height="70" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="180" y="133" text-anchor="middle" font-size="16" font-weight="700" fill="#0d47a1">环境设计师</text>
+  <text x="180" y="157" text-anchor="middle" font-size="13" fill="#1565c0">同一个 LLM · 生成可执行环境</text>
+
+  <line x1="300" y1="140" x2="336" y2="140" stroke="#546e7a" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <rect x="340" y="105" width="240" height="70" rx="10" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="460" y="133" text-anchor="middle" font-size="16" font-weight="700" fill="#1b5e20">可执行训练环境</text>
+  <text x="460" y="157" text-anchor="middle" font-size="13" fill="#2e7d32">reset()/step() · 状态转移 + 奖励 + 验证</text>
+
+  <line x1="580" y1="140" x2="616" y2="140" stroke="#546e7a" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <rect x="620" y="105" width="240" height="70" rx="10" fill="#fff8e1" stroke="#f9a825" stroke-width="2"/>
+  <text x="740" y="133" text-anchor="middle" font-size="16" font-weight="700" fill="#e65100">推理智能体</text>
+  <text x="740" y="157" text-anchor="middle" font-size="13" fill="#e65100">同一个 LLM · 在环境中做 RL</text>
+
+  <line x1="860" y1="140" x2="896" y2="140" stroke="#546e7a" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <rect x="900" y="105" width="240" height="70" rx="10" fill="#fff3e0" stroke="#ef6c00" stroke-width="1.5"/>
+  <text x="1020" y="133" text-anchor="middle" font-size="16" font-weight="700" fill="#bf360c">hint-based regret</text>
+  <text x="1020" y="157" text-anchor="middle" font-size="13" fill="#ef6c00">有特权提示 vs 无提示的回报差</text>
+
+  <path d="M 1020 175 L 1020 205 L 180 205 L 180 179" fill="none" stroke="#546e7a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="600" y="224" text-anchor="middle" font-size="14" font-weight="700" fill="#37474f">自博弈循环：环境分布随智能体能力边界共同演化（每个环境 grounding 在语料文档上）</text>
+
+  <!-- results: games -->
+  <rect x="60" y="285" width="540" height="150" rx="10" fill="#ffffff" stroke="#cfd8dc" stroke-width="1.5"/>
+  <text x="80" y="315" font-size="17" font-weight="700" fill="#37474f">游戏设置 · 8 个留出基准均分（Table 1，Qwen3-30B-A3B-Instruct-2507）</text>
+  <rect x="80" y="332" width="360" height="24" rx="6" fill="#e3f2fd"/>
+  <rect x="80" y="332" width="301" height="24" rx="6" fill="#90caf9"/>
+  <text x="88" y="349" font-size="13" font-weight="700" fill="#0d47a1">base 50.2</text>
+  <rect x="80" y="362" width="360" height="24" rx="6" fill="#e3f2fd"/>
+  <rect x="80" y="362" width="318" height="24" rx="6" fill="#42a5f5"/>
+  <text x="88" y="379" font-size="13" font-weight="700" fill="#ffffff">固定环境 RLVE 53.0（+2.8）</text>
+  <rect x="80" y="392" width="360" height="24" rx="6" fill="#e3f2fd"/>
+  <rect x="80" y="392" width="350" height="24" rx="6" fill="#1565c0"/>
+  <text x="88" y="409" font-size="13" font-weight="700" fill="#ffffff">SPADE 58.3（+8.1，领先 RLVE 5.3）</text>
+  <text x="452" y="349" font-size="12.5" fill="#c62828" font-weight="700">AIME'25 +1.3 · AIME'26 +0.9</text>
+  <text x="452" y="372" font-size="12.5" fill="#607d8b">竞争数学基本保住</text>
+  <text x="452" y="399" font-size="12.5" fill="#37474f">RG-Math +18.3 · RG-Cog +14.7</text>
+  <text x="452" y="420" font-size="12.5" fill="#37474f">GPQA-D +5.4 · LCB-v6 +4.1</text>
+
+  <!-- results: tools -->
+  <rect x="620" y="285" width="520" height="150" rx="10" fill="#ffffff" stroke="#cfd8dc" stroke-width="1.5"/>
+  <text x="640" y="315" font-size="17" font-weight="700" fill="#37474f">工具使用设置（Table 2，同一配方换环境类型，30B）</text>
+  <text x="640" y="348" font-size="15" fill="#37474f">BFCL v4 multi-turn：49.0 → 54.7（+5.7）</text>
+  <text x="640" y="376" font-size="15" fill="#37474f">tau2-bench：49.0 → 52.6（+3.6）</text>
+  <text x="640" y="404" font-size="15" font-weight="700" fill="#1b5e20">ACEBench-Agent：62.0 → 75.9（+13.9）</text>
+  <text x="640" y="428" font-size="13.5" fill="#607d8b">三基准平均 53.3 → 61.1（+7.7）</text>
+
+  <!-- bottom: ablation + mechanism/boundary -->
+  <rect x="60" y="455" width="540" height="120" rx="10" fill="#ffebee" stroke="#c62828" stroke-width="1.5"/>
+  <text x="80" y="485" font-size="16" font-weight="700" fill="#b71c1c">消融（Table 3，如实呈现）</text>
+  <text x="80" y="511" font-size="13.5" fill="#5d4037">去记忆 53.2 · 去语料 grounding 53.5 · 冻结 GPT-5.5 设计师 53.0</text>
+  <text x="80" y="533" font-size="13.5" font-weight="700" fill="#b71c1c">同时去 Designer 训练 + 记忆 → 40.5，跌破 base 50.2</text>
+  <text x="80" y="558" font-size="13.5" fill="#5d4037">关键在自适应设计，不在自播放大本身</text>
+
+  <rect x="620" y="455" width="520" height="120" rx="10" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+  <text x="640" y="485" font-size="16" font-weight="700" fill="#e65100">机制与边界</text>
+  <text x="640" y="511" font-size="13.5" fill="#5d4037">环境多样性 Vendi：有语料 grounding 0.68 vs 无 0.04（Figure 8）</text>
+  <text x="640" y="533" font-size="13.5" fill="#5d4037">473 个 Physics 环境「公式直接给出率」25% → 5%，奖励分级 3.7 → 5.8</text>
+  <text x="640" y="555" font-size="13.5" fill="#5d4037">游戏环境从未含 held-out 任务：迁移是间接证据 · 代码仓库 spade-rl/spade</text>
+
+  <text x="600" y="608" text-anchor="middle" font-size="13" fill="#90a4ae">与《MidTool》对照：买数据（外部语料 mid-train）vs 自己造环境（自生成可执行训练环境）· unbug.github.io</text>
+
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 z" fill="#546e7a"/>
+    </marker>
+  </defs>
+</svg>
