@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="'PingFang SC','Noto Sans CJK SC','Helvetica Neue',Arial,sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 z" fill="#546e7a"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="630" fill="#f7f9fc"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#c62828"/>
+
+  <text x="600" y="52" text-anchor="middle" font-size="30" font-weight="700" fill="#1a237e">一条事实错误的论证，就能让 LLM 放弃正确答案</text>
+  <text x="600" y="82" text-anchor="middle" font-size="16" fill="#546e7a">arXiv:2608.11624 · UIUC 4 位作者 · v1 2026-08-12 · GRPO 对抗强化学习训练 Persuader</text>
+
+  <!-- single-turn threat model flow -->
+  <rect x="60" y="105" width="250" height="70" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="185" y="133" text-anchor="middle" font-size="16" font-weight="700" fill="#0d47a1">Persuader（说服方）</text>
+  <text x="185" y="157" text-anchor="middle" font-size="13" fill="#1565c0">Qwen-2.5-7B-Instruct + GRPO 对抗 RL</text>
+
+  <line x1="310" y1="140" x2="346" y2="140" stroke="#546e7a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="328" y="128" text-anchor="middle" font-size="12" fill="#c62828">单条论证</text>
+
+  <rect x="350" y="105" width="250" height="70" rx="10" fill="#ffebee" stroke="#c62828" stroke-width="2"/>
+  <text x="475" y="133" text-anchor="middle" font-size="16" font-weight="700" fill="#b71c1c">事实错误的论证</text>
+  <text x="475" y="157" text-anchor="middle" font-size="13" fill="#c62828">例：声称只有姜黄素直接影响 DNA</text>
+
+  <line x1="600" y1="140" x2="636" y2="140" stroke="#546e7a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="618" y="128" text-anchor="middle" font-size="12" fill="#546e7a">只发一条</text>
+
+  <rect x="640" y="105" width="250" height="70" rx="10" fill="#fff8e1" stroke="#f9a825" stroke-width="2"/>
+  <text x="765" y="133" text-anchor="middle" font-size="16" font-weight="700" fill="#e65100">Persuadee（被说服方）</text>
+  <text x="765" y="157" text-anchor="middle" font-size="13" fill="#ef6c00">Qwen-2.5-7B-Instruct · 只重新作答一次</text>
+
+  <line x1="890" y1="140" x2="926" y2="140" stroke="#546e7a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="908" y="128" text-anchor="middle" font-size="12" fill="#c62828">答案翻转</text>
+
+  <rect x="930" y="105" width="210" height="70" rx="10" fill="#fce4ec" stroke="#ad1457" stroke-width="1.5"/>
+  <text x="1035" y="133" text-anchor="middle" font-size="16" font-weight="700" fill="#880e4f">放弃正确答案</text>
+  <text x="1035" y="157" text-anchor="middle" font-size="13" fill="#ad1457">单轮 · 无追问 · 无多轮博弈</text>
+
+  <!-- left: accuracy collapse -->
+  <rect x="60" y="215" width="540" height="200" rx="10" fill="#ffffff" stroke="#cfd8dc" stroke-width="1.5"/>
+  <text x="80" y="245" font-size="17" font-weight="700" fill="#37474f">TruthfulQA 准确率塌缩（Table 2 / Figure 3，五种子均值）</text>
+  <rect x="80" y="262" width="360" height="26" rx="6" fill="#e3f2fd"/>
+  <rect x="80" y="262" width="360" height="26" rx="6" fill="#90caf9"/>
+  <text x="88" y="280" font-size="13.5" font-weight="700" fill="#0d47a1">Init 基线 66.2</text>
+  <rect x="80" y="296" width="360" height="26" rx="6" fill="#e3f2fd"/>
+  <rect x="80" y="296" width="243" height="26" rx="6" fill="#ffb74d"/>
+  <text x="88" y="314" font-size="13.5" font-weight="700" fill="#5d4037">未训练 Persuader 单条消息 44.8</text>
+  <rect x="80" y="330" width="360" height="26" rx="6" fill="#e3f2fd"/>
+  <rect x="80" y="330" width="12" height="26" rx="4" fill="#c62828"/>
+  <text x="100" y="348" font-size="13.5" font-weight="700" fill="#b71c1c">GRPO 训练后 1.8（降 64.4 个百分点）</text>
+  <text x="452" y="280" font-size="12.5" fill="#37474f">PSR：24.3 → 93.7</text>
+  <text x="452" y="306" font-size="12.5" fill="#c62828" font-weight="700">ASR 达 97.3</text>
+  <text x="452" y="332" font-size="12.5" fill="#607d8b">训练：2,886 实例 · 3 epoch</text>
+  <text x="452" y="354" font-size="12.5" fill="#607d8b">6×H100 · 约 5.5 小时</text>
+
+  <!-- right: cross-model transfer -->
+  <rect x="620" y="215" width="520" height="200" rx="10" fill="#ffffff" stroke="#cfd8dc" stroke-width="1.5"/>
+  <text x="640" y="245" font-size="17" font-weight="700" fill="#37474f">跨模型迁移（固定 Qwen-7B RL Persuader，TruthfulQA PSR）</text>
+  <rect x="640" y="262" width="300" height="26" rx="6" fill="#e8f5e9"/>
+  <rect x="640" y="262" width="247" height="26" rx="6" fill="#66bb6a"/>
+  <text x="648" y="280" font-size="13.5" font-weight="700" fill="#1b5e20">Qwen-14B：82.5（+61.8）</text>
+  <rect x="640" y="296" width="300" height="26" rx="6" fill="#e8f5e9"/>
+  <rect x="640" y="296" width="237" height="26" rx="6" fill="#43a047"/>
+  <text x="648" y="314" font-size="13.5" font-weight="700" fill="#ffffff">Llama-3.1-8B：79.0（+70.6）</text>
+  <text x="640" y="352" font-size="14" fill="#37474f">五数据集均值 PSR：Qwen-14B 85% · Llama-8B 75%</text>
+  <text x="640" y="378" font-size="14" fill="#37474f">DeepSeek-R1 7B（推理模型）：均值 61%</text>
+  <text x="640" y="404" font-size="14" font-weight="700" fill="#e65100">PBT-8B（专门抗说服训练）：均值仍达 60%</text>
+
+  <!-- bottom left: closed-source -->
+  <rect x="60" y="435" width="540" height="120" rx="10" fill="#ffebee" stroke="#c62828" stroke-width="1.5"/>
+  <text x="80" y="465" font-size="17" font-weight="700" fill="#b71c1c">闭源模型更抗打，但防御并不充分</text>
+  <text x="80" y="493" font-size="14.5" fill="#37474f">均值 PSR：GPT-4o-mini 16% · GPT-5-mini 3%（相差 13pp）</text>
+  <text x="80" y="519" font-size="14.5" fill="#37474f">直接以 4o-mini 为目标训练几乎无效（约 0.5%）；</text>
+  <text x="80" y="543" font-size="14.5" fill="#37474f">课程式续训 1 epoch：TruthfulQA PSR 24.6 → 37.9（Figure 5）</text>
+
+  <!-- bottom right: boundary -->
+  <rect x="620" y="435" width="520" height="120" rx="10" fill="#fff8e1" stroke="#f9a825" stroke-width="2"/>
+  <text x="640" y="465" font-size="17" font-weight="700" fill="#e65100">边界与不能外推之处</text>
+  <text x="640" y="493" font-size="14.5" fill="#37474f">全部实验为单轮交互 + 选择题 QA，开放生成未验证</text>
+  <text x="640" y="519" font-size="14.5" fill="#37474f">Persuader 均为中小开源模型（Qwen 1.5B-14B / Llama-8B）</text>
+  <text x="640" y="543" font-size="14.5" fill="#37474f">不能外推为「前沿模型绝对安全」；Figure 7：纠正率约 95% 及以上</text>
+</svg>
