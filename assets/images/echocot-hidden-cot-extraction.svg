@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="'PingFang SC','Noto Sans CJK SC','Helvetica Neue',Arial,sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 z" fill="#546e7a"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="630" fill="#f7f9fc"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#c62828"/>
+
+  <text x="600" y="52" text-anchor="middle" font-size="30" font-weight="700" fill="#1a237e">黑盒推理模型的隐藏思维链，正在被一条长度信号读走</text>
+  <text x="600" y="82" text-anchor="middle" font-size="16" fill="#546e7a">arXiv:2608.20055 · CISPA 6 位作者 · v1 2026-08-20 · EchoCoT：纯 API 交互提取黑盒 LRM 隐藏 CoT</text>
+
+  <!-- top: attack loop -->
+  <rect x="40" y="105" width="170" height="90" rx="10" fill="#ffebee" stroke="#c62828" stroke-width="1.5"/>
+  <text x="125" y="138" text-anchor="middle" font-size="16" font-weight="700" fill="#b71c1c">攻击者</text>
+  <text x="125" y="162" text-anchor="middle" font-size="12.5" fill="#c62828">正常 API 提问</text>
+  <text x="125" y="180" text-anchor="middle" font-size="12.5" fill="#c62828">不修改答案目标</text>
+
+  <line x1="210" y1="150" x2="246" y2="150" stroke="#546e7a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="228" y="138" text-anchor="middle" font-size="12" fill="#37474f">调用</text>
+
+  <rect x="250" y="105" width="220" height="90" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="360" y="138" text-anchor="middle" font-size="16" font-weight="700" fill="#0d47a1">黑盒 LRM</text>
+  <text x="360" y="162" text-anchor="middle" font-size="12.5" fill="#1565c0">隐藏 CoT 不直接返回</text>
+  <text x="360" y="180" text-anchor="middle" font-size="12.5" fill="#1565c0">照常作答 · 照常调工具</text>
+
+  <line x1="470" y1="150" x2="506" y2="150" stroke="#546e7a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="488" y="138" text-anchor="middle" font-size="12" fill="#37474f">返回</text>
+
+  <rect x="510" y="105" width="240" height="90" rx="10" fill="#fff3e0" stroke="#ef6c00" stroke-width="2"/>
+  <text x="630" y="138" text-anchor="middle" font-size="16" font-weight="700" fill="#e65100">推理回放面（攻击面）</text>
+  <text x="630" y="162" text-anchor="middle" font-size="12.5" fill="#ef6c00">tool call 之间 API 返回的</text>
+  <text x="630" y="180" text-anchor="middle" font-size="12.5" fill="#ef6c00">推理长度 + CoT 摘要 = 保真度信号</text>
+
+  <line x1="750" y1="150" x2="786" y2="150" stroke="#546e7a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="768" y="138" text-anchor="middle" font-size="12" fill="#37474f">迭代</text>
+
+  <rect x="790" y="105" width="200" height="90" rx="10" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="890" y="138" text-anchor="middle" font-size="16" font-weight="700" fill="#1b5e20">重放提取</text>
+  <text x="890" y="162" text-anchor="middle" font-size="12.5" fill="#2e7d32">诱导模型把推理写进</text>
+  <text x="890" y="180" text-anchor="middle" font-size="12.5" fill="#2e7d32">下一次 tool call 参数</text>
+
+  <line x1="990" y1="150" x2="1026" y2="150" stroke="#546e7a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="1008" y="138" text-anchor="middle" font-size="12" fill="#37474f">比对</text>
+
+  <rect x="1030" y="105" width="130" height="90" rx="10" fill="#fce4ec" stroke="#ad1457" stroke-width="1.5"/>
+  <text x="1095" y="138" text-anchor="middle" font-size="16" font-weight="700" fill="#880e4f">提取的 CoT</text>
+  <text x="1095" y="162" text-anchor="middle" font-size="12.5" fill="#ad1457">多步迭代逼近</text>
+  <text x="1095" y="180" text-anchor="middle" font-size="12.5" fill="#ad1457">通用注入轨迹</text>
+
+  <!-- left panel: open-source ASR bars -->
+  <rect x="40" y="225" width="540" height="215" rx="10" fill="#ffffff" stroke="#cfd8dc" stroke-width="1.5"/>
+  <text x="60" y="253" font-size="16" font-weight="700" fill="#263238">开源 LRM：近逐字提取（Table 1，OpenThoughts）</text>
+  <!-- horizontal bars: scale 4.2px per point, start x=200 -->
+  <rect x="200" y="270" width="279" height="30" fill="#c62828"/>
+  <text x="190" y="290" text-anchor="end" font-size="13.5" fill="#37474f">DeepSeek-V4-Flash</text>
+  <text x="489" y="290" font-size="14" font-weight="700" fill="#b71c1c">66.4%</text>
+  <rect x="200" y="312" width="176" height="30" fill="#ef6c00"/>
+  <text x="190" y="332" text-anchor="end" font-size="13.5" fill="#37474f">GLM-5.2</text>
+  <text x="386" y="332" font-size="14" font-weight="700" fill="#e65100">41.9%</text>
+  <rect x="200" y="354" width="129" height="30" fill="#ef6c00"/>
+  <text x="190" y="374" text-anchor="end" font-size="13.5" fill="#37474f">Qwen3.5-Plus</text>
+  <text x="339" y="374" font-size="14" font-weight="700" fill="#e65100">30.8%</text>
+  <text x="60" y="408" font-size="12.5" fill="#546e7a">ASR@90 = 长度误差 ≤10% 且 ≥90% token 精确匹配；ASR@99（≤1% / ≥99%）区间 22.8%–46.1%</text>
+  <text x="60" y="430" font-size="12.5" fill="#546e7a">极端案例（Figure 4）：目标 21,106 vs 提取 21,109 tokens，Token-EM 0.999，1,132 行仅 3 行差异</text>
+
+  <!-- right panel: defense matrix -->
+  <rect x="620" y="225" width="540" height="215" rx="10" fill="#ffffff" stroke="#cfd8dc" stroke-width="1.5"/>
+  <text x="640" y="253" font-size="16" font-weight="700" fill="#263238">防御矩阵（Table 6，ASR@90 均值）</text>
+  <!-- bars: scale 4.2px per point, start x=800 -->
+  <rect x="800" y="270" width="193" height="28" fill="#c62828"/>
+  <text x="790" y="289" text-anchor="end" font-size="13.5" fill="#37474f">无防御（66/24/48）</text>
+  <text x="1003" y="289" font-size="14" font-weight="700" fill="#b71c1c">46.0%</text>
+  <rect x="800" y="310" width="21" height="28" fill="#2e7d32"/>
+  <text x="790" y="329" text-anchor="end" font-size="13.5" fill="#37474f">防御性 system prompt</text>
+  <text x="831" y="329" font-size="14" font-weight="700" fill="#1b5e20">5.0%</text>
+  <rect x="800" y="350" width="41" height="28" fill="#ef6c00"/>
+  <text x="790" y="369" text-anchor="end" font-size="13.5" fill="#37474f">攻击者自适应后</text>
+  <text x="851" y="369" font-size="14" font-weight="700" fill="#e65100">9.7%</text>
+  <rect x="800" y="390" width="2" height="28" fill="#c62828"/>
+  <text x="790" y="409" text-anchor="end" font-size="13.5" fill="#37474f">移除 reasoning state</text>
+  <text x="812" y="409" font-size="14" font-weight="700" fill="#b71c1c">0.0%</text>
+  <text x="640" y="430" font-size="12.5" fill="#546e7a">自适应攻击下 DeepSeek 仍达 29.0% · 根因解需 API 提供方配合</text>
+
+  <!-- bottom left: closed-source -->
+  <rect x="40" y="460" width="360" height="130" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="220" y="488" text-anchor="middle" font-size="15" font-weight="700" fill="#0d47a1">闭源前沿模型：长度贴近目标</text>
+  <text x="220" y="514" text-anchor="middle" font-size="13.5" fill="#1565c0">Gemini-2.5：提取 23,429 vs 目标 18,568</text>
+  <text x="220" y="536" text-anchor="middle" font-size="13.5" fill="#1565c0">极端案例（Figure 1）：33,463 vs 32,948</text>
+  <text x="220" y="560" text-anchor="middle" font-size="12" fill="#5c6bc0">无 ground truth · 只能称长度保真 + 语义对齐</text>
+
+  <!-- bottom right: boundary -->
+  <rect x="420" y="460" width="380" height="130" rx="10" fill="#fff8e1" stroke="#f9a825" stroke-width="2"/>
+  <text x="610" y="488" text-anchor="middle" font-size="15" font-weight="700" fill="#e65100">边界与不能外推之处</text>
+  <text x="610" y="514" text-anchor="middle" font-size="13.5" fill="#37474f">开源侧仅 3 模型，Qwen 无防御 ASR@90 仅 24.0%</text>
+  <text x="610" y="536" text-anchor="middle" font-size="13.5" fill="#37474f">未见数据集迁移 ASR@90 最高 80%（Table 7）</text>
+  <text x="610" y="560" text-anchor="middle" font-size="12" fill="#9e9d24">攻击论文 · 代码已开源 github.com/TrustAIRLab/EchoCoT</text>
+
+  <!-- bottom far right: takeaway -->
+  <rect x="820" y="460" width="340" height="130" rx="10" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="990" y="488" text-anchor="middle" font-size="15" font-weight="700" fill="#1b5e20">核心结论</text>
+  <text x="990" y="514" text-anchor="middle" font-size="13.5" fill="#2e7d32">API 返回的推理元数据本身</text>
+  <text x="990" y="536" text-anchor="middle" font-size="13.5" fill="#2e7d32">就是被忽视的信息通道</text>
+  <text x="990" y="560" text-anchor="middle" font-size="12" fill="#558b2f">风险真实存在 · 实用防御有残余缺口</text>
+</svg>
