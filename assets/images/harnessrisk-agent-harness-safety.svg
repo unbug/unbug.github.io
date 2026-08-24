@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
+  <rect width="1200" height="630" fill="#f7f9fc"/>
+
+  <!-- Title -->
+  <text x="40" y="52" font-size="26" font-weight="bold" fill="#1a2b4a">同一个模型换个外壳，攻击成功率差出四倍多</text>
+  <text x="40" y="80" font-size="15" fill="#5a6b85">HarnessRisk: A Lifecycle-Oriented Benchmark for Agent Harness Safety (arXiv:2608.17597, UNC Chapel Hill / UCF / Michigan State)</text>
+
+  <!-- Panel A: threat model + six phases -->
+  <rect x="40" y="100" width="560" height="180" rx="10" fill="#ffffff" stroke="#d5deea"/>
+  <text x="60" y="128" font-size="17" font-weight="bold" fill="#1a2b4a">威胁模型：良性目标 + 嵌入工件的对抗指令</text>
+  <rect x="60" y="142" width="120" height="36" rx="6" fill="#eef3fa" stroke="#7f9bc4"/>
+  <text x="120" y="165" font-size="12.5" fill="#1a2b4a" text-anchor="middle">良性用户目标</text>
+  <rect x="196" y="142" width="150" height="36" rx="6" fill="#fdecec" stroke="#d9534f"/>
+  <text x="271" y="165" font-size="12.5" fill="#a02c28" text-anchor="middle">邮件/网页/文档中注入</text>
+  <path d="M346 160 L380 160" stroke="#7f9bc4" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="382" y="138" width="198" height="44" rx="8" fill="#eef3fa" stroke="#7f9bc4"/>
+  <text x="481" y="156" font-size="12.5" font-weight="bold" fill="#1a2b4a" text-anchor="middle">沙箱 agent（全新环境）</text>
+  <text x="481" y="173" font-size="11.5" fill="#5a6b85" text-anchor="middle">模型 + harness 外壳</text>
+  <text x="60" y="204" font-size="13" font-weight="bold" fill="#1a2b4a">外壳生命周期六阶段（128 案例）:</text>
+  <rect x="60" y="214" width="84" height="30" rx="5" fill="#fdecec" stroke="#d9534f"/>
+  <text x="102" y="234" font-size="10.5" fill="#a02c28" text-anchor="middle">配置 22</text>
+  <rect x="150" y="214" width="84" height="30" rx="5" fill="#fdecec" stroke="#d9534f"/>
+  <text x="192" y="234" font-size="10.5" fill="#a02c28" text-anchor="middle">扩展 22</text>
+  <rect x="240" y="214" width="84" height="30" rx="5" fill="#eef3fa" stroke="#7f9bc4"/>
+  <text x="282" y="234" font-size="10.5" fill="#1a2b4a" text-anchor="middle">运行时 21</text>
+  <rect x="330" y="214" width="84" height="30" rx="5" fill="#eef3fa" stroke="#7f9bc4"/>
+  <text x="372" y="234" font-size="10.5" fill="#1a2b4a" text-anchor="middle">持久化 21</text>
+  <rect x="420" y="214" width="84" height="30" rx="5" fill="#eef3fa" stroke="#7f9bc4"/>
+  <text x="462" y="234" font-size="10.5" fill="#1a2b4a" text-anchor="middle">动作控制 21</text>
+  <rect x="510" y="214" width="74" height="30" rx="5" fill="#eef3fa" stroke="#7f9bc4"/>
+  <text x="547" y="234" font-size="10.5" fill="#1a2b4a" text-anchor="middle">恢复 21</text>
+
+  <!-- Panel B: headline 4.3x -->
+  <rect x="620" y="100" width="540" height="180" rx="10" fill="#ffffff" stroke="#d5deea"/>
+  <text x="640" y="128" font-size="17" font-weight="bold" fill="#1a2b4a">头条：同一 GLM-5.2，换 harness 差 4.3×</text>
+  <rect x="700" y="150" width="260" height="44" rx="4" fill="#d9534f"/>
+  <text x="830" y="178" font-size="15" font-weight="bold" fill="#ffffff" text-anchor="middle">OpenClaw: ASR 54.7%</text>
+  <rect x="700" y="206" width="60" height="44" rx="4" fill="#4caf7d"/>
+  <text x="730" y="234" font-size="15" font-weight="bold" fill="#ffffff" text-anchor="middle">12.6%</text>
+  <text x="890" y="234" font-size="13.5" fill="#1a2b4a">Nanobot: ASR 12.6%（原文 more than fourfold）</text>
+  <rect x="700" y="258" width="440" height="12" rx="6" fill="#f4f7fb" stroke="#c9d6e8"/>
+  <text x="700" y="276" font-size="11.5" fill="#8a97ab">ASR 全表范围 12.6% – 80.9%（Kimi K2.6 @ OpenClaw 最高）</text>
+
+  <!-- Panel C: ASR vs Utility -->
+  <rect x="40" y="294" width="560" height="140" rx="10" fill="#ffffff" stroke="#d5deea"/>
+  <text x="60" y="322" font-size="17" font-weight="bold" fill="#1a2b4a">不安全 ≠ 不能用：效用全程在线</text>
+  <rect x="80" y="340" width="330" height="26" rx="4" fill="#d9534f"/>
+  <text x="245" y="358" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">ASR 12.6% – 80.9%</text>
+  <rect x="80" y="378" width="400" height="26" rx="4" fill="#4f74b8"/>
+  <text x="280" y="396" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">Utility 75.0% – 97.6%</text>
+  <text x="80" y="424" font-size="12.5" fill="#5a6b85">任务干得越好，越不能拿效用当安全证据</text>
+
+  <!-- Panel D: detection != safety -->
+  <rect x="620" y="294" width="540" height="140" rx="10" fill="#ffffff" stroke="#d5deea"/>
+  <text x="640" y="322" font-size="17" font-weight="bold" fill="#1a2b4a">检测 ≠ 安全</text>
+  <rect x="640" y="338" width="500" height="34" rx="6" fill="#fff8e6" stroke="#e0b84c"/>
+  <text x="890" y="360" font-size="12.5" fill="#6b5615" text-anchor="middle">some configurations detect risks in &gt;90% of runs</text>
+  <text x="890" y="394" font-size="13.5" fill="#1a2b4a" text-anchor="middle">while retaining substantial attack success（限定部分配置）</text>
+  <text x="640" y="422" font-size="12.5" fill="#5a6b85">评估器校验: Utility κ=0.83 (92.5%) · ASR κ=0.77 (89.7%)</text>
+
+  <!-- Boundary box -->
+  <rect x="40" y="448" width="560" height="96" rx="10" fill="#fff8e6" stroke="#e0b84c"/>
+  <text x="60" y="476" font-size="15" font-weight="bold" fill="#8a6d1a">边界</text>
+  <text x="60" y="500" font-size="13" fill="#6b5615">· GPT-5.5 / Claude Opus 4.7 仅测 OpenClaw，跨 harness 对比只对全矩阵 4 模型成立</text>
+  <text x="60" y="522" font-size="13" fill="#6b5615">· 128 案例 / 14 配置均在 mock services 沙箱内，不外推生产部署；威胁模型为内容注入，非通用越狱</text>
+
+  <!-- Conclusion box -->
+  <rect x="620" y="448" width="540" height="96" rx="10" fill="#e8f5ec" stroke="#4caf7d"/>
+  <text x="640" y="476" font-size="15" font-weight="bold" fill="#1e6b43">核心结论</text>
+  <text x="640" y="500" font-size="13.5" fill="#1e6b43">agent 安全的审计面从模型延伸到部署层外壳：工具、权限、状态与授权上下文</text>
+  <text x="640" y="522" font-size="13.5" fill="#1e6b43">都由 harness 决定——同一模型换个外壳，防线可以差出四倍多。</text>
+
+  <!-- Footer -->
+  <text x="40" y="584" font-size="12" fill="#8a97ab">arXiv:2608.17597v1 · cs.CR + cs.AI · 3 harness × 6 模型 = 14 配置 · Micropaper #164</text>
+
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#7f9bc4"/>
+    </marker>
+  </defs>
+</svg>
