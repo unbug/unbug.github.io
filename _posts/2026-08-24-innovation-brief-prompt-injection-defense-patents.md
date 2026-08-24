@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 智创简报：《注入防御专利连发，AI 应用安全体检的小生意》"
+title: "AI 智创简报：《微软、蚂蚁都在给 AI 应用打注入疫苗，小团队缺个便宜的体检医生》"
 author: unbug
 categories: [AI, InnovationBrief]
 image: assets/images/innovation-brief-prompt-injection-defense-patents.svg
