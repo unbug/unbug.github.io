@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f3a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0d1528;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4a9eff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#7c5cff;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <g opacity="0.05" stroke="#fff" stroke-width="0.5">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+  </g>
+
+  <!-- badge -->
+  <rect x="70" y="52" width="182" height="34" rx="17" fill="url(#accentGrad)" opacity="0.18"/>
+  <text x="161" y="75" font-family="Helvetica,Arial,sans-serif" font-size="18" fill="#8ab4ff" text-anchor="middle">AI 智创简报</text>
+
+  <!-- title -->
+  <text x="70" y="142" font-family="Helvetica,Arial,sans-serif" font-size="44" font-weight="bold" fill="#ffffff">视频鉴真专利扎堆，独立开发者的视频公证生意</text>
+  <text x="70" y="188" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#9fb3d9">US20260246646A1 Bank of America · US20260205467A1 Arranged BV · 近 90 天公开 ｜ 从「检测假」到「证明真」</text>
+
+  <!-- panel 1: patent signal -->
+  <g>
+    <rect x="70" y="230" width="330" height="280" rx="14" fill="#ffffff" opacity="0.05"/>
+    <rect x="70" y="230" width="330" height="6" rx="3" fill="url(#accentGrad)"/>
+    <text x="94" y="278" font-family="Helvetica,Arial,sans-serif" font-size="20" font-weight="bold" fill="#ffffff">专利信号</text>
+    <text x="94" y="316" font-family="Menlo,Consolas,monospace" font-size="16" fill="#8ab4ff">US20260246646A1</text>
+    <text x="94" y="342" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#c7d4ee">Bank of America · 2026-08-20</text>
+    <text x="94" y="366" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#9fb3d9">哈希上链 + 旋转水印，AI 帧检测</text>
+    <line x1="94" y1="388" x2="376" y2="388" stroke="#ffffff" opacity="0.15"/>
+    <text x="94" y="420" font-family="Menlo,Consolas,monospace" font-size="16" fill="#8ab4ff">US20260205467A1</text>
+    <text x="94" y="446" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#c7d4ee">Arranged BV · 2026-07-16</text>
+    <text x="94" y="470" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#9fb3d9">受控光照伪影，平台指令比对验真</text>
+  </g>
+
+  <!-- arrow 1 -->
+  <path d="M 408 370 L 428 370 M 421 363 L 428 370 L 421 377" stroke="#4a9eff" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- panel 2: trend -->
+  <g>
+    <rect x="435" y="230" width="330" height="280" rx="14" fill="#ffffff" opacity="0.05"/>
+    <rect x="435" y="230" width="330" height="6" rx="3" fill="url(#accentGrad)"/>
+    <text x="459" y="278" font-family="Helvetica,Arial,sans-serif" font-size="20" font-weight="bold" fill="#ffffff">技术趋势</text>
+    <text x="459" y="316" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#c7d4ee">视频可信度从「检测」转向「证明」</text>
+    <line x1="459" y1="338" x2="741" y2="338" stroke="#ffffff" opacity="0.15"/>
+    <text x="459" y="370" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#9fb3d9">证据可事后复核：</text>
+    <text x="459" y="396" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#8ab4ff">哈希链 + 旋转水印</text>
+    <text x="459" y="420" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#8ab4ff">受控光照伪影 + 上链锚定</text>
+    <line x1="459" y1="444" x2="741" y2="444" stroke="#ffffff" opacity="0.15"/>
+    <text x="459" y="476" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#9fb3d9">差异点：C2PA 管生成时凭证，</text>
+    <text x="459" y="498" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#9fb3d9">存量视频靠帧级比对取证</text>
+  </g>
+
+  <!-- arrow 2 -->
+  <path d="M 773 370 L 793 370 M 786 363 L 793 370 L 786 377" stroke="#4a9eff" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- panel 3: opportunity -->
+  <g>
+    <rect x="800" y="230" width="330" height="280" rx="14" fill="#ffffff" opacity="0.05"/>
+    <rect x="800" y="230" width="330" height="6" rx="3" fill="url(#accentGrad)"/>
+    <text x="824" y="278" font-family="Helvetica,Arial,sans-serif" font-size="20" font-weight="bold" fill="#ffffff">一个人能做的机会</text>
+    <text x="824" y="316" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#c7d4ee">视频公证服务（拍摄即存证）</text>
+    <line x1="824" y1="338" x2="1106" y2="338" stroke="#ffffff" opacity="0.15"/>
+    <text x="824" y="370" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#9fb3d9">SHA-256 哈希 + C2PA 元数据</text>
+    <text x="824" y="396" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#9fb3d9">开源 c2pa-rs / c2pa-python</text>
+    <text x="824" y="422" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#9fb3d9">争议时输出防篡改报告</text>
+    <line x1="824" y1="444" x2="1106" y2="444" stroke="#ffffff" opacity="0.15"/>
+    <text x="824" y="476" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#8ab4ff">VPS + 对象存储，一万元内 · 4 周 MVP</text>
+    <text x="824" y="500" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#8ab4ff">订阅 99-299 元/月 · 单案报告 500-2000 元</text>
+  </g>
+
+  <!-- bottom takeaway -->
+  <rect x="70" y="540" width="1060" height="52" rx="12" fill="url(#accentGrad)" opacity="0.14"/>
+  <text x="600" y="573" font-family="Helvetica,Arial,sans-serif" font-size="19" fill="#dbe6ff" text-anchor="middle">大厂在专利里圈的是「怎么鉴真」，独立开发者能接的是「视频公证处」的活</text>
+</svg>

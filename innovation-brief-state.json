@@ -1,12 +1,12 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 智创简报：《流式审核专利扎堆，给聊天产品装实时安检》",
-    "date": "2026-08-22",
-    "slug": "innovation-brief-stream-moderation-patents"
+    "title": "AI 智创简报：《视频鉴真专利扎堆，独立开发者的视频公证生意》",
+    "date": "2026-08-24",
+    "slug": "innovation-brief-video-authentication-patents"
   },
-  "totalPublished": 5,
-  "nextScheduled": "2026-08-26",
+  "totalPublished": 6,
+  "nextScheduled": "2026-08-25",
   "coveredPatentFamilies": [
     "US20260044392",
     "US20260188475",
@@ -26,7 +26,12 @@
     "US20260148010",
     "US20260178727",
     "US20260099707",
-    "US20260057218"
+    "US20260057218",
+    "US20260246646",
+    "US20260205467",
+    "US20250259431",
+    "US20260120513",
+    "US20260088032"
   ],
   "candidateTopics": [
     {
@@ -37,14 +42,14 @@
       ]
     },
     {
-      "topic": "区块链视频真实性认证",
-      "score": 3.6,
+      "topic": "网络流量与静态数据中的 deepfake 检测（US12711793，已授权）——检索池发现，需核验对应申请公开日是否在近 90 天或近 12 个月成簇，再评估个人可做的 API 包装层",
+      "score": 3.4,
       "sources": [
-        "https://www.freepatentsonline.com/20260246646.html"
+        "https://www.freepatentsonline.com/12711793.html"
       ]
     }
   ],
-  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-stream-moderation-patents/",
+  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-video-authentication-patents/",
   "lastPublishedVerifiedAt": "2026-08-22 17:05 GMT+8",
   "verification": {
     "brief4": {
@@ -58,6 +63,12 @@
       "http": 200,
       "verifiedAt": "2026-08-22 17:05 GMT+8",
       "note": "commit 7088613 Actions build success 后验证，llms.txt 已收录"
+    },
+    "brief6": {
+      "url": "https://unbug.github.io/innovation-brief-video-authentication-patents/",
+      "http": null,
+      "verifiedAt": null,
+      "note": "commit 后待 Actions build，下轮 cron 验证 URL + llms.txt"
     }
   }
 }
