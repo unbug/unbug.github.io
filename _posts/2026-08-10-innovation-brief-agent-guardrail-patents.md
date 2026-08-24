@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 智创简报：《Agent 纠错专利扎堆，一个人能做的护栏生意》"
+title: "AI 智创简报：《Agent 会忘、会编、会趴下，兜底这层活一个人就能接》"
 author: unbug
 categories: [AI, InnovationBrief]
 image: assets/images/innovation-brief-agent-guardrail-patents.svg

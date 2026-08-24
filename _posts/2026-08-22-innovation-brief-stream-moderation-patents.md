@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 智创简报：《流式审核专利扎堆，给聊天产品装实时安检》"
+title: "AI 智创简报：《Amazon 和 Intuit 都在抢流式审核，便宜的那一层还空着》"
 author: unbug
 categories: [AI, InnovationBrief]
 image: assets/images/innovation-brief-stream-moderation-patents.svg

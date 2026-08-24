@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 智创简报：《视频鉴真专利扎堆，独立开发者的视频公证生意》"
+title: "AI 智创简报：《视频鉴真从查假转向证真，自助证明工具还是空白》"
 author: unbug
 categories: [AI, InnovationBrief]
 image: assets/images/innovation-brief-video-authentication-patents.svg
