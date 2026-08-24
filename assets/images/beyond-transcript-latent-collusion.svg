@@ -1,90 +1,112 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
-  <rect width="1200" height="630" fill="#f7f9fc"/>
-
-  <!-- Title -->
-  <text x="40" y="52" font-size="26" font-weight="bold" fill="#1a2b4a">拍卖桌下的暗线：多智能体隐藏合谋的检测与干预</text>
-  <text x="40" y="80" font-size="15" fill="#5a6b85">Beyond the Transcript: Detecting Covert Coordination in Latent Multi-Agent Communication (arXiv:2608.19161, MIT Media Lab + SRI International)</text>
-
-  <!-- Panel A: threat model -->
-  <rect x="40" y="100" width="560" height="150" rx="10" fill="#ffffff" stroke="#d5deea"/>
-  <text x="60" y="128" font-size="17" font-weight="bold" fill="#1a2b4a">威胁模型：审计面之外的私有通道</text>
-  <rect x="60" y="145" width="130" height="40" rx="8" fill="#eef3fa" stroke="#7f9bc4"/>
-  <text x="125" y="170" font-size="14" fill="#1a2b4a" text-anchor="middle">LLM 智能体群</text>
-  <path d="M190 158 L268 158" stroke="#7f9bc4" stroke-width="2" marker-end="url(#arr)"/>
-  <rect x="270" y="140" width="150" height="34" rx="6" fill="#e8f5ec" stroke="#4caf7d"/>
-  <text x="345" y="162" font-size="13" fill="#1e6b43" text-anchor="middle">公开 transcript（可审计）</text>
-  <path d="M190 172 L268 196" stroke="#d9534f" stroke-width="2.5" stroke-dasharray="6,4" marker-end="url(#arrR)"/>
-  <rect x="270" y="180" width="150" height="34" rx="6" fill="#fdecec" stroke="#d9534f"/>
-  <text x="345" y="202" font-size="13" fill="#a02c28" text-anchor="middle">latent handoff（不可见）</text>
-  <path d="M420 197 L468 197" stroke="#d9534f" stroke-width="2.5" marker-end="url(#arrR)"/>
-  <rect x="470" y="176" width="110" height="42" rx="8" fill="#fdecec" stroke="#d9534f"/>
-  <text x="525" y="194" font-size="13" font-weight="bold" fill="#a02c28" text-anchor="middle">隐蔽合谋</text>
-  <text x="525" y="211" font-size="12" fill="#a02c28" text-anchor="middle">低报价 / 压收入</text>
-
-  <!-- Panel B: three-layer monitor -->
-  <rect x="40" y="264" width="560" height="170" rx="10" fill="#ffffff" stroke="#d5deea"/>
-  <text x="60" y="292" font-size="17" font-weight="bold" fill="#1a2b4a">VLA 三层无监督监控（仅用中性样本训练）</text>
-  <rect x="60" y="308" width="165" height="52" rx="8" fill="#eef3fa" stroke="#7f9bc4"/>
-  <text x="142" y="328" font-size="13" fill="#1a2b4a" text-anchor="middle">Layer 1</text>
-  <text x="142" y="346" font-size="12" fill="#5a6b85" text-anchor="middle">中性流形异常检测</text>
-  <rect x="240" y="308" width="165" height="52" rx="8" fill="#e2f0e8" stroke="#4caf7d"/>
-  <text x="322" y="328" font-size="13" font-weight="bold" fill="#1e6b43" text-anchor="middle">Layer 2（最强）</text>
-  <text x="322" y="346" font-size="12" fill="#1e6b43" text-anchor="middle">反事实动作分布位移</text>
-  <rect x="420" y="308" width="165" height="52" rx="8" fill="#eef3fa" stroke="#7f9bc4"/>
-  <text x="502" y="328" font-size="13" fill="#1a2b4a" text-anchor="middle">Layer 3</text>
-  <text x="502" y="346" font-size="12" fill="#5a6b85" text-anchor="middle">SAE 稀疏支持度</text>
-  <rect x="60" y="376" width="525" height="42" rx="8" fill="#f4f7fb" stroke="#c9d6e8"/>
-  <text x="322" y="394" font-size="13" fill="#1a2b4a" text-anchor="middle">同质四模型族 sequential mean AUROC = 0.993（Mistral 1.000 / Vicuna 0.994 / Qwen 0.990 / Phi 0.988）</text>
-  <text x="322" y="410" font-size="12" fill="#5a6b85" text-anchor="middle">异构跨族 0.854（36 settings）；正类为 text + latent collusion 合并口径</text>
-
-  <!-- Panel C: dose response -->
-  <rect x="620" y="100" width="540" height="220" rx="10" fill="#ffffff" stroke="#d5deea"/>
-  <text x="640" y="128" font-size="17" font-weight="bold" fill="#1a2b4a">干预剂量响应：whitebox 配额 vs 分布恢复率</text>
-  <!-- bars -->
-  <rect x="700" y="230" width="70" height="58" rx="4" fill="#7f9bc4"/>
-  <text x="735" y="222" font-size="14" font-weight="bold" fill="#1a2b4a" text-anchor="middle">34.7%</text>
-  <text x="735" y="308" font-size="13" fill="#5a6b85" text-anchor="middle">配额 1/4</text>
-  <rect x="820" y="178" width="70" height="110" rx="4" fill="#4f74b8"/>
-  <text x="855" y="170" font-size="14" font-weight="bold" fill="#1a2b4a" text-anchor="middle">70.1%</text>
-  <text x="855" y="308" font-size="13" fill="#5a6b85" text-anchor="middle">配额 1/2</text>
-  <rect x="940" y="142" width="70" height="146" rx="4" fill="#2c5aa0"/>
-  <text x="975" y="134" font-size="14" font-weight="bold" fill="#1a2b4a" text-anchor="middle">93.0%</text>
-  <text x="975" y="308" font-size="13" fill="#5a6b85" text-anchor="middle">配额 3/4</text>
-  <rect x="1060" y="272" width="70" height="16" rx="4" fill="#d9534f"/>
-  <text x="1095" y="264" font-size="14" font-weight="bold" fill="#a02c28" text-anchor="middle">12.4%</text>
-  <text x="1095" y="308" font-size="13" fill="#a02c28" text-anchor="middle">纯黑盒</text>
-  <line x1="680" y1="288" x2="1140" y2="288" stroke="#c9d6e8" stroke-width="1"/>
-  <path d="M735 226 Q855 150 975 138" fill="none" stroke="#2c5aa0" stroke-width="2" stroke-dasharray="5,4"/>
-  <text x="900" y="122" font-size="13" font-weight="bold" fill="#2c5aa0">1/4 → 3/4：+58.3pp</text>
-
-  <!-- Panel D: harm + scale -->
-  <rect x="620" y="334" width="540" height="100" rx="10" fill="#ffffff" stroke="#d5deea"/>
-  <text x="640" y="362" font-size="17" font-weight="bold" fill="#1a2b4a">危害与规模化</text>
-  <text x="640" y="390" font-size="13.5" fill="#1a2b4a">合谋压低拍卖收入：Qwen -12.43 / Mistral -11.78 / Phi -11.12 credits（低报价率 +56~62pp）</text>
-  <text x="640" y="414" font-size="13.5" fill="#1a2b4a">规模化至 100 出价方：AUROC ≥ 0.917，监控 normalized load ≤ 0.202%</text>
-
-  <!-- Boundary box -->
-  <rect x="40" y="448" width="560" height="96" rx="10" fill="#fff8e6" stroke="#e0b84c"/>
-  <text x="60" y="476" font-size="15" font-weight="bold" fill="#8a6d1a">边界（论文自认）</text>
-  <text x="60" y="500" font-size="13" fill="#6b5615">· 受控 receiver-primed 攻击，非自发涌现的 latent 协议</text>
-  <text x="60" y="522" font-size="13" fill="#6b5615">· full whitebox 100% 恢复为 by construction（sanity check）；模型仅 0.6B-7B，NandaTown 单一场景</text>
-
-  <!-- Conclusion box -->
-  <rect x="620" y="448" width="540" height="96" rx="10" fill="#e8f5ec" stroke="#4caf7d"/>
-  <text x="640" y="476" font-size="15" font-weight="bold" fill="#1e6b43">核心结论</text>
-  <text x="640" y="500" font-size="13.5" fill="#1e6b43">不学攻击目录、仅用中性样本，就能在 ≤0.2% 监控负载下检出审计面之外的隐蔽合谋；</text>
-  <text x="640" y="522" font-size="13.5" fill="#1e6b43">干预力度由 whitebox 配额决定——平台对智能体的可观测权限，直接决定治理上限。</text>
-
-  <!-- Footer -->
-  <text x="40" y="584" font-size="12" fill="#8a97ab">arXiv:2608.19161v1 · cs.AI + cs.CR · NandaTown 拍卖 testbed（6 场景 / 12 协议层）· Micropaper #162</text>
-
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="'PingFang SC','Noto Sans CJK SC','Helvetica Neue',Arial,sans-serif">
   <defs>
-    <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 z" fill="#7f9bc4"/>
-    </marker>
-    <marker id="arrR" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 z" fill="#d9534f"/>
+    <marker id="arr" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 z" fill="#546e7a"/>
     </marker>
   </defs>
+  <rect width="1200" height="630" fill="#f7f9fc"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#c62828"/>
+
+  <text x="600" y="52" text-anchor="middle" font-size="30" font-weight="700" fill="#1a237e">拍卖桌下的暗线：多智能体隐藏合谋的检测与干预</text>
+  <text x="600" y="82" text-anchor="middle" font-size="16" fill="#546e7a">arXiv:2608.19161 · MIT Media Lab + Westtown + UF + SRI International 6 位作者 · v1 2026-08-19 · Beyond the Transcript</text>
+
+  <!-- top: threat flow -->
+  <rect x="40" y="105" width="170" height="90" rx="10" fill="#ffebee" stroke="#c62828" stroke-width="1.5"/>
+  <text x="125" y="138" text-anchor="middle" font-size="16" font-weight="700" fill="#b71c1c">发送方 Agent</text>
+  <text x="125" y="162" text-anchor="middle" font-size="12.5" fill="#c62828">注入连续隐藏状态</text>
+  <text x="125" y="180" text-anchor="middle" font-size="12.5" fill="#c62828">携带私有策略意图</text>
+
+  <line x1="210" y1="150" x2="246" y2="150" stroke="#546e7a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="228" y="138" text-anchor="middle" font-size="12" fill="#37474f">注入</text>
+
+  <rect x="250" y="105" width="220" height="90" rx="10" fill="#fff3e0" stroke="#ef6c00" stroke-width="2"/>
+  <text x="360" y="138" text-anchor="middle" font-size="16" font-weight="700" fill="#e65100">latent handoff 通道（攻击面）</text>
+  <text x="360" y="162" text-anchor="middle" font-size="12.5" fill="#ef6c00">残差流 / last-token 表示</text>
+  <text x="360" y="180" text-anchor="middle" font-size="12.5" fill="#ef6c00">公开日志不可见</text>
+
+  <line x1="470" y1="150" x2="506" y2="150" stroke="#546e7a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="488" y="138" text-anchor="middle" font-size="12" fill="#37474f">接收</text>
+
+  <rect x="510" y="105" width="200" height="90" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="610" y="138" text-anchor="middle" font-size="16" font-weight="700" fill="#0d47a1">接收方 Agent</text>
+  <text x="610" y="162" text-anchor="middle" font-size="12.5" fill="#1565c0">receiver-primed 受控攻击</text>
+  <text x="610" y="180" text-anchor="middle" font-size="12.5" fill="#1565c0">合谋低报价 · 收入受损</text>
+
+  <line x1="710" y1="150" x2="746" y2="150" stroke="#546e7a" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="728" y="138" text-anchor="middle" font-size="12" fill="#37474f">公开出价</text>
+
+  <rect x="750" y="105" width="200" height="90" rx="10" fill="#eceff1" stroke="#607d8b" stroke-width="1.5"/>
+  <text x="850" y="138" text-anchor="middle" font-size="16" font-weight="700" fill="#37474f">公开 transcript</text>
+  <text x="850" y="162" text-anchor="middle" font-size="12.5" fill="#546e7a">审计面只见正常出价</text>
+  <text x="850" y="180" text-anchor="middle" font-size="12.5" fill="#546e7a">收入 -12.43 credits 等</text>
+
+  <rect x="990" y="105" width="170" height="90" rx="10" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+  <text x="1075" y="138" text-anchor="middle" font-size="16" font-weight="700" fill="#1b5e20">三层无监督监控</text>
+  <text x="1075" y="162" text-anchor="middle" font-size="12.5" fill="#2e7d32">仅中性样本训练</text>
+  <text x="1075" y="180" text-anchor="middle" font-size="12" fill="#2e7d32">AUROC 0.993 · 负载 ≤0.2%</text>
+
+  <!-- monitor watches the channel -->
+  <path d="M 1075,105 L 1075,96 L 360,96 L 360,103" fill="none" stroke="#2e7d32" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+  <text x="717" y="92" text-anchor="middle" font-size="12" fill="#2e7d32">激活监控 · 无需学习攻击目录</text>
+
+  <!-- left panel: Table 1 detection -->
+  <rect x="40" y="225" width="540" height="215" rx="10" fill="#ffffff" stroke="#cfd8dc" stroke-width="1.5"/>
+  <text x="60" y="253" font-size="16" font-weight="700" fill="#263238">检测：sequential 组合 AUROC（Table 1，同质四模型族）</text>
+  <!-- bars: axis from 0.8, scale (v-0.8)/0.2*300 -->
+  <rect x="200" y="268" width="300" height="26" fill="#c62828"/>
+  <text x="190" y="286" text-anchor="end" font-size="13.5" fill="#37474f">Mistral-7B</text>
+  <text x="508" y="286" font-size="14" font-weight="700" fill="#b71c1c">1.000</text>
+  <rect x="200" y="300" width="285" height="26" fill="#ef6c00"/>
+  <text x="190" y="318" text-anchor="end" font-size="13.5" fill="#37474f">Vicuna-7B</text>
+  <text x="493" y="318" font-size="14" font-weight="700" fill="#e65100">0.994</text>
+  <rect x="200" y="332" width="270" height="26" fill="#ef6c00"/>
+  <text x="190" y="350" text-anchor="end" font-size="13.5" fill="#37474f">Qwen3-0.6B</text>
+  <text x="478" y="350" font-size="14" font-weight="700" fill="#e65100">0.990</text>
+  <rect x="200" y="364" width="264" height="26" fill="#ef6c00"/>
+  <text x="190" y="382" text-anchor="end" font-size="13.5" fill="#37474f">Phi-4-mini</text>
+  <text x="472" y="382" font-size="14" font-weight="700" fill="#e65100">0.988</text>
+  <text x="60" y="410" font-size="12.5" fill="#546e7a">mean AUROC 0.993 · Layer 2 单独 0.814（最强单层）· 异构模型对 0.854（Table 3，36 settings）</text>
+  <text x="60" y="430" font-size="12.5" fill="#546e7a">正类 = text + latent collusion 行合并（论文自注）· 坐标轴从 0.8 起</text>
+
+  <!-- right panel: Table 5 dose response -->
+  <rect x="620" y="225" width="540" height="215" rx="10" fill="#ffffff" stroke="#cfd8dc" stroke-width="1.5"/>
+  <text x="640" y="253" font-size="16" font-weight="700" fill="#263238">干预：白盒配额决定分布恢复率（Table 5）</text>
+  <!-- bars: scale 3.0px per point from 0 -->
+  <rect x="800" y="268" width="300" height="26" fill="#2e7d32"/>
+  <text x="790" y="286" text-anchor="end" font-size="13.5" fill="#37474f">full whitebox</text>
+  <text x="1108" y="286" font-size="14" font-weight="700" fill="#1b5e20">100.0%</text>
+  <rect x="800" y="300" width="279" height="26" fill="#ef6c00"/>
+  <text x="790" y="318" text-anchor="end" font-size="13.5" fill="#37474f">配额 0.75 / 0.25</text>
+  <text x="1087" y="318" font-size="14" font-weight="700" fill="#e65100">93.0%</text>
+  <rect x="800" y="332" width="210" height="26" fill="#ef6c00"/>
+  <text x="790" y="350" text-anchor="end" font-size="13.5" fill="#37474f">配额 0.50 / 0.50</text>
+  <text x="1018" y="350" font-size="14" font-weight="700" fill="#e65100">70.1%</text>
+  <rect x="800" y="364" width="104" height="26" fill="#ef6c00"/>
+  <text x="790" y="382" text-anchor="end" font-size="13.5" fill="#37474f">配额 0.25 / 0.75</text>
+  <text x="912" y="382" font-size="14" font-weight="700" fill="#e65100">34.7%</text>
+  <rect x="800" y="396" width="37" height="26" fill="#c62828"/>
+  <text x="790" y="414" text-anchor="end" font-size="13.5" fill="#37474f">纯黑盒 prompt</text>
+  <text x="845" y="414" font-size="14" font-weight="700" fill="#b71c1c">12.4%</text>
+  <text x="640" y="436" font-size="12.5" fill="#546e7a">配额 1/4 → 3/4 恢复率 +58.3pp · system prompt 仅 2.9%（压价 -29.5pp）</text>
+
+  <!-- bottom left: scalability -->
+  <rect x="40" y="460" width="360" height="130" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
+  <text x="220" y="488" text-anchor="middle" font-size="15" font-weight="700" fill="#0d47a1">规模化与监控负载（Table 4）</text>
+  <text x="220" y="514" text-anchor="middle" font-size="13.5" fill="#1565c0">AUROC ≥0.917 · 至多 100 个出价方</text>
+  <text x="220" y="536" text-anchor="middle" font-size="13.5" fill="#1565c0">normalized load ≤0.202%（全部有向对）</text>
+  <text x="220" y="560" text-anchor="middle" font-size="12" fill="#5c6bc0">阈值 = 中性样本 95 分位 · correlation ID 逐事件归因</text>
+
+  <!-- bottom middle: boundary -->
+  <rect x="420" y="460" width="380" height="130" rx="10" fill="#fff8e1" stroke="#f9a825" stroke-width="2"/>
+  <text x="610" y="488" text-anchor="middle" font-size="15" font-weight="700" fill="#e65100">边界与不能外推之处</text>
+  <text x="610" y="514" text-anchor="middle" font-size="13.5" fill="#37474f">仅 0.6B-7B 模型 · 单一 NandaTown 拍卖 testbed（6 场景 / 12 协议层）</text>
+  <text x="610" y="536" text-anchor="middle" font-size="13.5" fill="#37474f">receiver-primed 受控攻击，非自发涌现的隐藏协议</text>
+  <text x="610" y="560" text-anchor="middle" font-size="12" fill="#9e9d24">full WB 100% 恢复为 by-construction sanity check · Layer 2 需 matched control</text>
+
+  <!-- bottom right: takeaway -->
+  <rect x="820" y="460" width="340" height="130" rx="10" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="990" y="488" text-anchor="middle" font-size="15" font-weight="700" fill="#1b5e20">核心结论</text>
+  <text x="990" y="514" text-anchor="middle" font-size="13.5" fill="#2e7d32">合谋可在审计面之外发生，且可被检出</text>
+  <text x="990" y="536" text-anchor="middle" font-size="13.5" fill="#2e7d32">≤0.2% 负载的三层无监督监控即可报警</text>
+  <text x="990" y="560" text-anchor="middle" font-size="12" fill="#558b2f">白盒配额决定干预力度 · 黑盒手段很弱</text>
 </svg>
