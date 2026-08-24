@@ -1,11 +1,11 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 智创简报：《视频鉴真专利扎堆，独立开发者的视频公证生意》",
+    "title": "AI 智创简报：《注入防御专利连发，AI 应用安全体检的小生意》",
     "date": "2026-08-24",
-    "slug": "innovation-brief-video-authentication-patents"
+    "slug": "innovation-brief-prompt-injection-defense-patents"
   },
-  "totalPublished": 6,
+  "totalPublished": 7,
   "nextScheduled": "2026-08-25",
   "coveredPatentFamilies": [
     "US20260044392",
@@ -31,7 +31,12 @@
     "US20260205467",
     "US20250259431",
     "US20260120513",
-    "US20260088032"
+    "US20260088032",
+    "US20260228333",
+    "US20260089190",
+    "US12519829",
+    "US20260073299",
+    "US12647455"
   ],
   "candidateTopics": [
     {
@@ -49,8 +54,8 @@
       ]
     }
   ],
-  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-video-authentication-patents/",
-  "lastPublishedVerifiedAt": "2026-08-22 17:05 GMT+8",
+  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-prompt-injection-defense-patents/",
+  "lastPublishedVerifiedAt": null,
   "verification": {
     "brief4": {
       "url": "https://unbug.github.io/innovation-brief-prd-gen-patents/",
@@ -66,6 +71,12 @@
     },
     "brief6": {
       "url": "https://unbug.github.io/innovation-brief-video-authentication-patents/",
+      "http": 200,
+      "verifiedAt": "2026-08-24 15:40 GMT+8",
+      "note": "简报 #7 轮次验证：HTTP 200（2.3MB）+ llms.txt 已收录"
+    },
+    "brief7": {
+      "url": "https://unbug.github.io/innovation-brief-prompt-injection-defense-patents/",
       "http": null,
       "verifiedAt": null,
       "note": "commit 后待 Actions build，下轮 cron 验证 URL + llms.txt"
