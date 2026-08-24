@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif">
+  <rect width="1200" height="630" fill="#f7f9fc"/>
+
+  <!-- Title -->
+  <text x="40" y="52" font-size="26" font-weight="bold" fill="#1a2b4a">不会解题的 0.5B 小模型，反而成了大模型的运行时顾问</text>
+  <text x="40" y="80" font-size="15" fill="#5a6b85">Don't Solve, Just Compare: Tiny Advisors for Runtime Intervention in LLM Agents (arXiv:2608.21027, National University of Singapore)</text>
+
+  <!-- Panel A: COTA loop -->
+  <rect x="40" y="100" width="560" height="160" rx="10" fill="#ffffff" stroke="#d5deea"/>
+  <text x="60" y="128" font-size="17" font-weight="bold" fill="#1a2b4a">COTA：比较而非求解</text>
+  <rect x="60" y="145" width="118" height="44" rx="8" fill="#eef3fa" stroke="#7f9bc4"/>
+  <text x="119" y="163" font-size="13" font-weight="bold" fill="#1a2b4a" text-anchor="middle">actor 大模型</text>
+  <text x="119" y="180" font-size="11.5" fill="#5a6b85" text-anchor="middle">提出下一步动作</text>
+  <path d="M178 167 L212 167" stroke="#7f9bc4" stroke-width="2" marker-end="url(#arr)"/>
+  <rect x="214" y="145" width="130" height="44" rx="8" fill="#eef3fa" stroke="#7f9bc4"/>
+  <text x="279" y="163" font-size="13" fill="#1a2b4a" text-anchor="middle">同前缀采样</text>
+  <text x="279" y="180" font-size="11.5" fill="#5a6b85" text-anchor="middle">候选替代动作</text>
+  <path d="M344 167 L378 167" stroke="#4caf7d" stroke-width="2" marker-end="url(#arrG)"/>
+  <rect x="380" y="145" width="130" height="44" rx="8" fill="#e2f0e8" stroke="#4caf7d"/>
+  <text x="445" y="163" font-size="13" font-weight="bold" fill="#1e6b43" text-anchor="middle">0.5B tiny advisor</text>
+  <text x="445" y="180" font-size="11.5" fill="#1e6b43" text-anchor="middle">只比较，不生成</text>
+  <path d="M445 189 L445 214" stroke="#d9534f" stroke-width="2.5" stroke-dasharray="6,4" marker-end="url(#arrR)"/>
+  <rect x="352" y="216" width="186" height="32" rx="6" fill="#fdecec" stroke="#d9534f"/>
+  <text x="445" y="237" font-size="12.5" fill="#a02c28" text-anchor="middle">建设性干预：建议，不替换</text>
+
+  <!-- Panel B: main results -->
+  <rect x="620" y="100" width="540" height="160" rx="10" fill="#ffffff" stroke="#d5deea"/>
+  <text x="640" y="128" font-size="17" font-weight="bold" fill="#1a2b4a">主结果：9/9 组合全部最佳（Table 1）</text>
+  <text x="640" y="158" font-size="13.5" fill="#1a2b4a">Qwen3-8B:    WebShop 0.396 → 0.563 · ALFWorld 82.8% → 90.3%</text>
+  <text x="640" y="184" font-size="13.5" fill="#1a2b4a">              tau3-Retail 37.5% → 45.0%</text>
+  <text x="640" y="210" font-size="13.5" fill="#1a2b4a">更强 actor 增益依然成立: Qwen3.6-35B-A3B / DeepSeek-V4-Flash</text>
+  <rect x="640" y="222" width="500" height="26" rx="6" fill="#f4f7fb" stroke="#c9d6e8"/>
+  <text x="890" y="240" font-size="12.5" fill="#5a6b85" text-anchor="middle">限定在 3 actor × 3 环境组合内，不外推通用</text>
+
+  <!-- Panel C: ablation -->
+  <rect x="40" y="274" width="560" height="150" rx="10" fill="#ffffff" stroke="#d5deea"/>
+  <text x="60" y="302" font-size="17" font-weight="bold" fill="#1a2b4a">2×2 消融：顾问不能接管驾驶（Table 2）</text>
+  <rect x="60" y="318" width="150" height="56" rx="6" fill="#fdecec" stroke="#d9534f"/>
+  <text x="135" y="338" font-size="12.5" fill="#a02c28" text-anchor="middle">强行执行</text>
+  <text x="135" y="360" font-size="14" font-weight="bold" fill="#a02c28" text-anchor="middle">ALFWorld 2.24%</text>
+  <rect x="226" y="318" width="150" height="56" rx="6" fill="#fdecec" stroke="#d9534f"/>
+  <text x="301" y="338" font-size="12.5" fill="#a02c28" text-anchor="middle">强行执行</text>
+  <text x="301" y="360" font-size="14" font-weight="bold" fill="#a02c28" text-anchor="middle">tau3 4.17%</text>
+  <rect x="392" y="318" width="150" height="56" rx="6" fill="#e2f0e8" stroke="#4caf7d"/>
+  <text x="467" y="338" font-size="12.5" fill="#1e6b43" text-anchor="middle">建设性干预</text>
+  <text x="467" y="360" font-size="14" font-weight="bold" fill="#1e6b43" text-anchor="middle">ALFWorld 57.46%</text>
+  <rect x="60" y="386" width="482" height="26" rx="6" fill="#f4f7fb" stroke="#c9d6e8"/>
+  <text x="301" y="404" font-size="12.5" fill="#5a6b85" text-anchor="middle">对照：Self-Reflection 在 9 个设置上全部变差（这些基线/环境下）</text>
+
+  <!-- Panel D: cost -->
+  <rect x="620" y="274" width="540" height="150" rx="10" fill="#ffffff" stroke="#d5deea"/>
+  <text x="640" y="302" font-size="17" font-weight="bold" fill="#1a2b4a">成本：平均 1.38×，带边界</text>
+  <rect x="640" y="322" width="90" height="60" rx="4" fill="#7f9bc4"/>
+  <text x="685" y="316" font-size="13" font-weight="bold" fill="#1a2b4a" text-anchor="middle">1.41×</text>
+  <text x="685" y="400" font-size="12" fill="#5a6b85" text-anchor="middle">WebShop</text>
+  <rect x="760" y="334" width="90" height="48" rx="4" fill="#4f74b8"/>
+  <text x="805" y="328" font-size="13" font-weight="bold" fill="#1a2b4a" text-anchor="middle">1.14×</text>
+  <text x="805" y="400" font-size="12" fill="#5a6b85" text-anchor="middle">ALFWorld</text>
+  <rect x="880" y="296" width="90" height="86" rx="4" fill="#d9534f"/>
+  <text x="925" y="290" font-size="13" font-weight="bold" fill="#a02c28" text-anchor="middle">2.02×</text>
+  <text x="925" y="400" font-size="12" fill="#a02c28" text-anchor="middle">tau3-Retail</text>
+  <line x1="630" y1="382" x2="1140" y2="382" stroke="#c9d6e8" stroke-width="1"/>
+  <text x="1050" y="330" font-size="12.5" fill="#5a6b85">Qwen3-8B 行</text>
+  <text x="1050" y="352" font-size="12.5" fill="#5a6b85">7/9 设置 &lt; 1.5×</text>
+
+  <!-- Boundary box -->
+  <rect x="40" y="438" width="560" height="96" rx="10" fill="#fff8e6" stroke="#e0b84c"/>
+  <text x="60" y="466" font-size="15" font-weight="bold" fill="#8a6d1a">边界</text>
+  <text x="60" y="490" font-size="13" fill="#6b5615">· 9/9 最佳限定 3 actor × 3 环境；Self-Reflection 对比仅限这些基线，非一般性结论</text>
+  <text x="60" y="512" font-size="13" fill="#6b5615">· comparator 无需任务级微调；tau3-Retail 候选生成额外调用小 LLM，开销不可忽略</text>
+
+  <!-- Conclusion box -->
+  <rect x="620" y="438" width="540" height="96" rx="10" fill="#e8f5ec" stroke="#4caf7d"/>
+  <text x="640" y="466" font-size="15" font-weight="bold" fill="#1e6b43">核心结论</text>
+  <text x="640" y="490" font-size="13.5" fill="#1e6b43">比较比求解便宜，而且够用：弱模型做 pairwise 比较当顾问，强模型保留决策权，</text>
+  <text x="640" y="512" font-size="13.5" fill="#1e6b43">运行时干预才能稳定有效——与"筛选比采样难"互为印证。</text>
+
+  <!-- Footer -->
+  <text x="40" y="578" font-size="12" fill="#8a97ab">arXiv:2608.21027v1 · cs.AI · WebShop / ALFWorld / tau3-Retail · Micropaper #163</text>
+
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#7f9bc4"/>
+    </marker>
+    <marker id="arrG" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#4caf7d"/>
+    </marker>
+    <marker id="arrR" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#d9534f"/>
+    </marker>
+  </defs>
+</svg>
