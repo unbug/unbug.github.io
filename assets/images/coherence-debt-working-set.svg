@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="630" fill="#ffffff"/>
+  <!-- Title -->
+  <text x="30" y="42" font-size="26" font-weight="bold" fill="#1a2332">Coherence Debt：编码 Agent 的工作集</text>
+  <text x="30" y="68" font-size="15" fill="#5b6b7f">arXiv 2608.16630 · 仓库级任务中「写代码那一刻事实不在场」的供给/剥夺对照实验</text>
+
+  <!-- Row 1: dual-channel coverage -->
+  <rect x="30" y="85" width="340" height="245" rx="8" fill="#f7f9fc" stroke="#d8e0ea"/>
+  <text x="46" y="110" font-size="16" font-weight="bold" fill="#1a2332">双通道覆盖模型</text>
+  <rect x="52" y="124" width="296" height="34" rx="6" fill="#e2e8f0" stroke="#94a3b8"/>
+  <text x="200" y="146" font-size="14" text-anchor="middle" fill="#1a2332">编辑时刻依赖的事实 F</text>
+  <rect x="52" y="176" width="140" height="52" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="122" y="198" font-size="13" text-anchor="middle" fill="#1e40af">R_t 近期上下文</text>
+  <text x="122" y="216" font-size="12" text-anchor="middle" fill="#1e40af">窗口内可见</text>
+  <rect x="208" y="176" width="140" height="52" rx="6" fill="#ede9fe" stroke="#7c3aed"/>
+  <text x="278" y="198" font-size="13" text-anchor="middle" fill="#5b21b6">K_M 参数化记忆</text>
+  <text x="278" y="216" font-size="12" text-anchor="middle" fill="#5b21b6">模型内部记住</text>
+  <rect x="52" y="246" width="296" height="40" rx="6" fill="#fee2e2" stroke="#dc2626"/>
+  <text x="200" y="271" font-size="14" font-weight="bold" text-anchor="middle" fill="#b91c1c">两者都不覆盖 = coherence debt</text>
+  <text x="200" y="312" font-size="12" text-anchor="middle" fill="#5b6b7f">闭卷 154 次试验全败 0/12（Wilson 上界 2.4%）</text>
+
+  <!-- Row 1: linear damage chart -->
+  <rect x="390" y="85" width="420" height="245" rx="8" fill="#f7f9fc" stroke="#d8e0ea"/>
+  <text x="406" y="110" font-size="16" font-weight="bold" fill="#1a2332">故障注入：损伤严格线性（n=6/格）</text>
+  <line x1="430" y1="300" x2="790" y2="300" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="430" y1="130" x2="430" y2="300" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="445" y="140" width="40" height="160" fill="#2563eb"/>
+  <rect x="515" y="180" width="40" height="120" fill="#2563eb"/>
+  <rect x="585" y="216" width="40" height="84" fill="#2563eb"/>
+  <rect x="655" y="260" width="40" height="40" fill="#2563eb"/>
+  <rect x="725" y="298" width="40" height="2" fill="#dc2626"/>
+  <line x1="465" y1="140" x2="745" y2="300" stroke="#dc2626" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="465" y="132" font-size="13" text-anchor="middle" fill="#1a2332">32.0</text>
+  <text x="535" y="172" font-size="13" text-anchor="middle" fill="#1a2332">24.0</text>
+  <text x="605" y="208" font-size="13" text-anchor="middle" fill="#1a2332">16.7</text>
+  <text x="675" y="252" font-size="13" text-anchor="middle" fill="#1a2332">8.0</text>
+  <text x="745" y="292" font-size="13" text-anchor="middle" fill="#b91c1c">0.0</text>
+  <text x="465" y="318" font-size="12" text-anchor="middle" fill="#5b6b7f">隐藏 0</text>
+  <text x="535" y="318" font-size="12" text-anchor="middle" fill="#5b6b7f">2</text>
+  <text x="605" y="318" font-size="12" text-anchor="middle" fill="#5b6b7f">4</text>
+  <text x="675" y="318" font-size="12" text-anchor="middle" fill="#5b6b7f">6</text>
+  <text x="745" y="318" font-size="12" text-anchor="middle" fill="#5b6b7f">8 个事实</text>
+  <text x="600" y="328" font-size="12" text-anchor="middle" fill="#5b6b7f">通过测试数 · 对线性预测最大偏差为零（虚线）</text>
+
+  <!-- Row 1: shared boundary + fabrication -->
+  <rect x="830" y="85" width="340" height="118" rx="8" fill="#f7f9fc" stroke="#d8e0ea"/>
+  <text x="846" y="110" font-size="16" font-weight="bold" fill="#1a2332">所有模型记错同一个地方</text>
+  <text x="846" y="136" font-size="13" fill="#1a2332">重命名 API 击败参数化记忆后：</text>
+  <text x="846" y="158" font-size="13" fill="#1a2332">7 个家族 · 66/70 次试验停在同一分数</text>
+  <text x="846" y="180" font-size="13" font-weight="bold" fill="#b91c1c">通过完全相同的 24/79 测试 · Jaccard 1.000</text>
+
+  <rect x="830" y="212" width="340" height="118" rx="8" fill="#f7f9fc" stroke="#d8e0ea"/>
+  <text x="846" y="237" font-size="16" font-weight="bold" fill="#1a2332">编造，而不是报卡住</text>
+  <text x="846" y="263" font-size="13" fill="#1a2332">声明「我卡住了」：Opus 8/8=100%</text>
+  <text x="846" y="285" font-size="13" fill="#1a2332">到 GPT-5 / GLM-5.2 的 0（行为属性）</text>
+  <text x="846" y="307" font-size="13" fill="#1a2332">Haiku 唯一直接编造缺失文件 3/8</text>
+
+  <!-- Row 2: boundaries -->
+  <rect x="30" y="345" width="340" height="130" rx="8" fill="#fef9c3" stroke="#ca8a04"/>
+  <text x="46" y="370" font-size="15" font-weight="bold" fill="#854d0e">边界（论文自述）</text>
+  <text x="46" y="394" font-size="12.5" fill="#713f12">· 地板为零仅限 4 个人工构造迁移任务</text>
+  <text x="46" y="414" font-size="12.5" fill="#713f12">· token 数不等于成本（缓存计费不同）</text>
+  <text x="46" y="434" font-size="12.5" fill="#713f12">· 过期规范更糟：单一争议面族 3x10</text>
+  <text x="46" y="454" font-size="12.5" fill="#713f12">· SWE-bench 驻留分 AUC≈0.49（负结果）</text>
+
+  <!-- Row 2: token vs context -->
+  <rect x="390" y="345" width="420" height="130" rx="8" fill="#f7f9fc" stroke="#d8e0ea"/>
+  <text x="406" y="370" font-size="16" font-weight="bold" fill="#1a2332">差的是重建工作集的速率，不是能力</text>
+  <rect x="412" y="384" width="300" height="18" fill="#f59e0b"/>
+  <text x="720" y="398" font-size="12.5" fill="#1a2332">累计输入 293,882 → 3,752,134（12.8x）</text>
+  <rect x="412" y="412" width="46" height="18" fill="#0ea5e9"/>
+  <text x="720" y="426" font-size="12.5" fill="#1a2332">峰值上下文仅差 1.8x</text>
+  <text x="412" y="458" font-size="13" fill="#1a2332">工具调用：最便宜 5 次 vs 最贵 79 次（144 次试验全通过）</text>
+
+  <!-- Row 2: availability flip -->
+  <rect x="830" y="345" width="340" height="130" rx="8" fill="#f7f9fc" stroke="#d8e0ea"/>
+  <text x="846" y="370" font-size="16" font-weight="bold" fill="#1a2332">可用性翻转结果，距离无关</text>
+  <text x="846" y="396" font-size="13" fill="#1a2332">事实放进 prompt 后（同样任务）：</text>
+  <text x="846" y="420" font-size="14" font-weight="bold" fill="#16a34a">300 次试验 · 299 次 ≥9/12</text>
+  <text x="846" y="444" font-size="14" font-weight="bold" fill="#16a34a">213 次全对 12/12</text>
+
+  <!-- Row 3: conclusion -->
+  <rect x="30" y="495" width="1140" height="115" rx="8" fill="#ecfdf5" stroke="#16a34a"/>
+  <text x="46" y="522" font-size="16" font-weight="bold" fill="#14532d">核心结论</text>
+  <text x="46" y="548" font-size="14" fill="#14532d">缺一个事实，恰好损失该事实支撑的那部分工作（不多不少）；损伤不级联、只累加。</text>
+  <text x="46" y="572" font-size="14" fill="#14532d">harness 工程落地：写代码时保持依赖事实在场；用 agent 的产出（而非它的读取行为）来校验可用性。</text>
+  <text x="46" y="596" font-size="12.5" fill="#15803d">The Working Set of a Coding Agent: Coherence Debt in Repository-Scale Tasks · arXiv 2608.16630</text>
+</svg>
