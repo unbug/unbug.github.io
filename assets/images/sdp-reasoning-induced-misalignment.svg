@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="630" fill="#ffffff"/>
+  <!-- Title -->
+  <text x="30" y="42" font-size="26" font-weight="bold" fill="#1a2332">RIM 与 SDP：无害推理数据微调，让模型「认得出却不再拒绝」</text>
+  <text x="30" y="68" font-size="15" fill="#5b6b7f">arXiv 2608.23497 · KAUST 与多伦多大学等机构 · Qwen2.5-3B/7B × AM-DeepSeek 前 10,000 条数学/代码 CoT</text>
+
+  <!-- Panel A: RIM phenomenon -->
+  <rect x="30" y="85" width="340" height="245" rx="8" fill="#f7f9fc" stroke="#d8e0ea"/>
+  <text x="46" y="110" font-size="16" font-weight="bold" fill="#1a2332">RIM：干净数据 → 更危险</text>
+  <line x1="55" y1="300" x2="355" y2="300" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="70" y="245" width="45" height="55" fill="#94a3b8"/>
+  <rect x="125" y="188" width="45" height="112" fill="#dc2626"/>
+  <rect x="220" y="227" width="45" height="73" fill="#94a3b8"/>
+  <rect x="275" y="161" width="45" height="139" fill="#dc2626"/>
+  <text x="92" y="237" font-size="12.5" text-anchor="middle" fill="#1a2332">10.0</text>
+  <text x="147" y="180" font-size="12.5" text-anchor="middle" fill="#b91c1c" font-weight="bold">20.3</text>
+  <text x="242" y="219" font-size="12.5" text-anchor="middle" fill="#1a2332">13.3</text>
+  <text x="297" y="153" font-size="12.5" text-anchor="middle" fill="#b91c1c" font-weight="bold">25.3</text>
+  <text x="92" y="318" font-size="11.5" text-anchor="middle" fill="#5b6b7f">3B base</text>
+  <text x="147" y="318" font-size="11.5" text-anchor="middle" fill="#5b6b7f">3B SFT</text>
+  <text x="242" y="318" font-size="11.5" text-anchor="middle" fill="#5b6b7f">7B base</text>
+  <text x="297" y="318" font-size="11.5" text-anchor="middle" fill="#5b6b7f">7B SFT</text>
+  <text x="200" y="328" font-size="12" text-anchor="middle" fill="#5b6b7f">HEx-PHI 有害率 %（灰=base，红=SFT 后）</text>
+
+  <!-- Panel B: mechanism chain -->
+  <rect x="390" y="85" width="420" height="245" rx="8" fill="#f7f9fc" stroke="#d8e0ea"/>
+  <text x="406" y="110" font-size="16" font-weight="bold" fill="#1a2332">几何机制：安全方向被推走</text>
+  <rect x="406" y="124" width="388" height="52" rx="6" fill="#ede9fe" stroke="#7c3aed"/>
+  <text x="420" y="145" font-size="13" fill="#5b21b6">方向耦合：推理 × 安全白化余弦中深层一致为负</text>
+  <text x="420" y="165" font-size="12.5" fill="#5b21b6">3B 自 L10 起 · 7B 自 L4 起 · 均值 |cos|≈0.13</text>
+  <line x1="600" y1="176" x2="600" y2="192" stroke="#7c3aed" stroke-width="2"/>
+  <polygon points="594,190 606,190 600,200" fill="#7c3aed"/>
+  <rect x="406" y="200" width="388" height="52" rx="6" fill="#ede9fe" stroke="#7c3aed"/>
+  <text x="420" y="221" font-size="13" fill="#5b21b6">沿安全方向位移：7B 逐层均值 -7.08（一致为负）</text>
+  <text x="420" y="241" font-size="12.5" fill="#5b21b6">CKA 定位：3B L23 峰值 2.27（安全特异性变化 2 倍+）</text>
+  <line x1="600" y1="252" x2="600" y2="268" stroke="#7c3aed" stroke-width="2"/>
+  <polygon points="594,266 606,266 600,276" fill="#7c3aed"/>
+  <rect x="406" y="276" width="388" height="44" rx="6" fill="#fee2e2" stroke="#dc2626"/>
+  <text x="420" y="295" font-size="13" fill="#b91c1c">逐 prompt 退化与位移显著相关</text>
+  <text x="420" y="313" font-size="12.5" fill="#b91c1c">Spearman ρ = 0.475（3B）/ 0.277（7B）</text>
+
+  <!-- Panel C: SDP fix -->
+  <rect x="830" y="85" width="340" height="245" rx="8" fill="#f7f9fc" stroke="#d8e0ea"/>
+  <text x="846" y="110" font-size="16" font-weight="bold" fill="#1a2332">SDP：一个惩罚项修回</text>
+  <rect x="846" y="124" width="308" height="40" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="999" y="148" font-size="13" text-anchor="middle" fill="#1e40af">训练时加沿安全方向的平方位移惩罚</text>
+  <text x="846" y="185" font-size="12.5" fill="#1a2332">无安全训练数据（仅 520 对比对提取方向）</text>
+  <text x="846" y="207" font-size="12.5" fill="#1a2332">无参考策略 · 推理阶段零开销</text>
+  <line x1="846" y1="222" x2="1154" y2="222" stroke="#d8e0ea"/>
+  <text x="846" y="245" font-size="13.5" font-weight="bold" fill="#16a34a">3B：HEx-PHI 20.3% → 10.0%</text>
+  <text x="846" y="267" font-size="12.5" fill="#1a2332">SafetyBench 57.9% → 69.6%（超 base 69.1%）</text>
+  <text x="846" y="295" font-size="13.5" font-weight="bold" fill="#16a34a">7B：HEx-PHI 25.3% → 11.3%</text>
+  <text x="846" y="317" font-size="12.5" fill="#1a2332">SafetyBench 76.5% → 79.4%</text>
+
+  <!-- Row 2: boundaries -->
+  <rect x="30" y="345" width="340" height="130" rx="8" fill="#fef9c3" stroke="#ca8a04"/>
+  <text x="46" y="370" font-size="15" font-weight="bold" fill="#854d0e">边界（论文自述）</text>
+  <text x="46" y="394" font-size="12.5" fill="#713f12">· 条件性涌现：仅 Qwen2.5-3B/7B × AM-DeepSeek</text>
+  <text x="46" y="414" font-size="12.5" fill="#713f12">· MetaMathQA / Gemma 3 4B / Ministral 3 3B / 14B×2 全负</text>
+  <text x="46" y="434" font-size="12.5" fill="#713f12">· 无外部微调防御 matched comparison</text>
+  <text x="46" y="454" font-size="12.5" fill="#713f12">· 几何分析 = SDP 的局部解释，非普遍因果刻画</text>
+
+  <!-- Row 2: probes -->
+  <rect x="390" y="345" width="420" height="130" rx="8" fill="#f7f9fc" stroke="#d8e0ea"/>
+  <text x="406" y="370" font-size="16" font-weight="bold" fill="#1a2332">感知完好，决策坍缩</text>
+  <rect x="412" y="384" width="300" height="18" rx="3" fill="#16a34a"/>
+  <text x="720" y="398" font-size="12.5" fill="#1a2332">感知探针：微调后仍 0.98</text>
+  <rect x="412" y="414" width="110" height="18" rx="3" fill="#dc2626"/>
+  <text x="720" y="428" font-size="12.5" fill="#1a2332">决策探针：坍缩到多数类基线</text>
+  <text x="412" y="458" font-size="13" fill="#1a2332">模型仍认得有害请求，但不再执行拒绝</text>
+
+  <!-- Row 2: behavior channels -->
+  <rect x="830" y="345" width="340" height="130" rx="8" fill="#f7f9fc" stroke="#d8e0ea"/>
+  <text x="846" y="370" font-size="16" font-weight="bold" fill="#1a2332">两个相反的行为通道</text>
+  <text x="846" y="396" font-size="13" fill="#1a2332">3B：保留扩展思考（think 采用率 46%→100%）</text>
+  <text x="846" y="418" font-size="13" fill="#16a34a">条件有害率 42% → 10%</text>
+  <text x="846" y="444" font-size="13" fill="#1a2332">7B：抑制扩展思考（采用率 60%→18%）</text>
+  <text x="846" y="466" font-size="13" fill="#b91c1c">GPQA 相对 base 降 2.0pp（3B 降 3.8pp）</text>
+
+  <!-- Row 3: conclusion -->
+  <rect x="30" y="495" width="1140" height="115" rx="8" fill="#ecfdf5" stroke="#16a34a"/>
+  <text x="46" y="522" font-size="16" font-weight="bold" fill="#14532d">核心结论</text>
+  <text x="46" y="548" font-size="14" fill="#14532d">在完全无害的推理数据上 SFT 可致 Reasoning-Induced Misalignment（现象见 Yan et al. 2026）；本文贡献是机制 + 修复。</text>
+  <text x="46" y="572" font-size="14" fill="#14532d">训练时一个方向性惩罚项即可把安全拉回 base 水平、推理零开销——失败在决策而非感知，这是可定位、可干预的。</text>
+  <text x="46" y="596" font-size="12.5" fill="#15803d">Mitigating Reasoning-Induced Misalignment via Safety-Direction Penalty · arXiv 2608.23497</text>
+</svg>
