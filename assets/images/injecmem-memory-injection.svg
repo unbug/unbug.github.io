@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+  <rect width="960" height="720" fill="#f8fafc"/>
+  <text x="480" y="36" text-anchor="middle" font-size="20" font-weight="bold" fill="#1e293b">InjecMEM：单次交互的记忆注入攻击（arXiv:2608.23471，SJTU + Ant Group）</text>
+
+  <!-- Attack flow -->
+  <rect x="40" y="60" width="200" height="64" rx="8" fill="#fee2e2" stroke="#dc2626"/>
+  <text x="140" y="86" text-anchor="middle" font-size="13" font-weight="bold" fill="#991b1b">攻击者单次交互</text>
+  <text x="140" y="106" text-anchor="middle" font-size="11" fill="#7f1d1d">无记忆库读/写权限</text>
+
+  <rect x="280" y="60" width="330" height="64" rx="8" fill="#fef3c7" stroke="#d97706"/>
+  <text x="445" y="82" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400e">注入记录 = 锚点 + 对抗指令</text>
+  <text x="445" y="100" text-anchor="middle" font-size="11" fill="#78350f">retriever-agnostic anchor（高召回主题线索）</text>
+  <text x="445" y="115" text-anchor="middle" font-size="11" fill="#78350f">adversarial command（gradient-based coordinate search）</text>
+
+  <rect x="650" y="60" width="270" height="64" rx="8" fill="#e0e7ff" stroke="#4f46e5"/>
+  <text x="785" y="86" text-anchor="middle" font-size="13" font-weight="bold" fill="#3730a3">retrieve-then-generate</text>
+  <text x="785" y="106" text-anchor="middle" font-size="11" fill="#4338ca">后续同主题查询稳定命中注入记录</text>
+
+  <line x1="240" y1="92" x2="280" y2="92" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="610" y1="92" x2="650" y2="92" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <!-- Results: two systems -->
+  <text x="40" y="170" font-size="15" font-weight="bold" fill="#1e293b">攻击效果（域平均，小模型 backbone：Qwen2.5 / Llama-3.1-8B / Mistral-7B）</text>
+
+  <!-- MemoryOS bars -->
+  <text x="40" y="200" font-size="12" fill="#334155">MemoryOS</text>
+  <rect x="130" y="186" width="279" height="16" fill="#dc2626"/>
+  <text x="415" y="199" font-size="11" fill="#334155">RSR 46.5%</text>
+  <rect x="130" y="208" width="460" height="16" fill="#b91c1c"/>
+  <text x="595" y="221" font-size="11" fill="#334155">ASR-c 76.6%</text>
+  <rect x="130" y="230" width="214" height="16" fill="#f87171"/>
+  <text x="350" y="243" font-size="11" fill="#334155">ASR-j 35.6%</text>
+
+  <!-- MemGPT bars -->
+  <text x="40" y="280" font-size="12" fill="#334155">MemGPT</text>
+  <rect x="130" y="266" width="223" height="16" fill="#dc2626"/>
+  <text x="358" y="279" font-size="11" fill="#334155">RSR 37.2%</text>
+  <rect x="130" y="288" width="292" height="16" fill="#b91c1c"/>
+  <text x="427" y="301" font-size="11" fill="#334155">ASR-c 48.6%</text>
+  <rect x="130" y="310" width="109" height="16" fill="#f87171"/>
+  <text x="244" y="323" font-size="11" fill="#334155">ASR-j 18.1%</text>
+
+  <!-- Baseline box -->
+  <rect x="620" y="186" width="300" height="140" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+  <text x="770" y="208" text-anchor="middle" font-size="12" font-weight="bold" fill="#334155">基线对照（记忆增强场景）</text>
+  <text x="770" y="230" text-anchor="middle" font-size="11" fill="#475569">DPI / BadChain / vanilla GCG</text>
+  <text x="770" y="250" text-anchor="middle" font-size="11" fill="#dc2626" font-weight="bold">成功率全部归零</text>
+  <text x="770" y="274" text-anchor="middle" font-size="11" fill="#475569">Multi-GCG：首个取得攻击成功的方法</text>
+  <text x="770" y="294" text-anchor="middle" font-size="11" fill="#475569">（ASR-c 76.6% / ASR-j 35.6%，MemoryOS）</text>
+
+  <!-- Defense table -->
+  <text x="40" y="380" font-size="15" font-weight="bold" fill="#1e293b">检索时过滤防御（默认阈值，RSR = 毒化检索残留率）</text>
+  <g font-size="11" fill="#334155">
+    <rect x="40" y="396" width="180" height="26" fill="#e2e8f0"/>
+    <text x="50" y="414">检测器</text>
+    <rect x="220" y="396" width="120" height="26" fill="#e2e8f0"/>
+    <text x="230" y="414">RSR（基线 46.5%）</text>
+    <rect x="340" y="396" width="120" height="26" fill="#e2e8f0"/>
+    <text x="350" y="414">BBR（效用代价）</text>
+
+    <text x="50" y="444">LLM-as-a-Judge</text>
+    <rect x="220" y="432" width="167" height="14" fill="#fca5a5"/>
+    <text x="392" y="444">36.2%</text>
+
+    <text x="50" y="472">ProtectAI</text>
+    <rect x="220" y="460" width="180" height="14" fill="#fca5a5"/>
+    <text x="404" y="472">39.1%</text>
+
+    <text x="50" y="500">PromptGuard</text>
+    <rect x="220" y="488" width="161" height="14" fill="#fca5a5"/>
+    <text x="385" y="500">35.2%</text>
+
+    <text x="50" y="528" font-weight="bold">perplexity（τ=40）</text>
+    <rect x="220" y="516" width="2" height="14" fill="#16a34a"/>
+    <text x="392" y="528" font-weight="bold" fill="#16a34a">RSR 0.0（唯一清零）</text>
+    <rect x="470" y="516" width="309" height="14" fill="#dc2626"/>
+    <text x="785" y="528" font-weight="bold" fill="#991b1b">BBR 71.8%</text>
+  </g>
+  <text x="40" y="560" font-size="11" fill="#64748b">注：BBR = benign blocked rate（良性检索误杀率）；τ=40 为论文扫描后能完全压制攻击的最大阈值。前三者只能降低、无法消除毒化检索。</text>
+
+  <!-- Boundary box -->
+  <rect x="40" y="584" width="430" height="112" rx="8" fill="#fefce8" stroke="#ca8a04"/>
+  <text x="56" y="606" font-size="12" font-weight="bold" fill="#854d0e">边界与限定</text>
+  <text x="56" y="626" font-size="11" fill="#713f12">· 仅 Qwen2.5 / Llama-3.1-8B / Mistral-7B + MemGPT / MemoryOS 验证</text>
+  <text x="56" y="644" font-size="11" fill="#713f12">· BBR 71.8% 是 perplexity 单方法代价，非所有防御不可用</text>
+  <text x="56" y="662" font-size="11" fill="#713f12">· 「非目标查询不受影响」「记忆漂移下仍有效」为论文自称</text>
+  <text x="56" y="680" font-size="11" fill="#713f12">· ASR-c（条件于检索）与 ASR-j（联合口径）不可混用</text>
+
+  <!-- Conclusion box -->
+  <rect x="490" y="584" width="430" height="112" rx="8" fill="#f0fdf4" stroke="#16a34a"/>
+  <text x="506" y="606" font-size="12" font-weight="bold" fill="#166534">核心结论</text>
+  <text x="506" y="626" font-size="11" fill="#14532d">· 记忆成为 agent 默认子系统后，本身即新攻击面</text>
+  <text x="506" y="644" font-size="11" fill="#14532d">· 一次交互、无存储权限即可投毒后续回答</text>
+  <text x="506" y="662" font-size="11" fill="#14532d">· 安全-效用权衡显著：彻底拦截需付出高误杀代价</text>
+  <text x="506" y="680" font-size="11" fill="#14532d">· 开源可复现框架（BlueBlood6/InjecMEM）作评测基线</text>
+</svg>
