@@ -3,6 +3,7 @@ layout: post
 title:  "一分钟读论文：《长程 Agent 记忆中的压缩悬崖》"
 author: unbug
 categories: [AI, LLM]
+image: assets/images/compaction-cliff-agent-memory.svg
 tags: [llm, agent, memory, context-management]
 description: "长程 Agent 压缩上下文时，安全规则与情景日志被同一比例摘要，而只有规则需要逐字精确才能保持可执行：Claude Code 生产配置下五轮压缩后仅存 10% 安全规则。论文提出按知识类型分流的 Knowledge Triage，五轮后保留率 96%。"
 ---
