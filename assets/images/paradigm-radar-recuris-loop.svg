@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+  <rect width="1200" height="560" fill="#f7fafc"/>
+  <text x="600" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="24" font-weight="bold" fill="#1a2b45">Recuris：EM-WM 耦合与验证门控的递归进化循环</text>
+
+  <!-- execution loop -->
+  <rect x="60" y="90" width="520" height="380" rx="12" fill="#ffffff" stroke="#3d5a82" stroke-width="2"/>
+  <text x="320" y="126" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="bold" fill="#2c4a75">任务级执行循环（每个 step）</text>
+
+  <rect x="100" y="150" width="200" height="64" rx="8" fill="#dbe7f5" stroke="#3d5a82"/>
+  <text x="200" y="178" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#1a2b45">Working Memory</text>
+  <text x="200" y="200" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#44587a">结构化任务状态</text>
+
+  <rect x="340" y="150" width="200" height="64" rx="8" fill="#dbe7f5" stroke="#3d5a82"/>
+  <text x="440" y="178" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#1a2b45">Experiential Memory</text>
+  <text x="440" y="200" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#44587a">持久跨任务经验</text>
+
+  <path d="M 300 182 L 340 182" stroke="#3d5a82" stroke-width="2.5" fill="none"/>
+  <path d="M 340 182 l -12 -7 v 14 z" fill="#3d5a82"/>
+
+  <rect x="160" y="250" width="280" height="64" rx="8" fill="#cfe3d4" stroke="#2e7d4f"/>
+  <text x="300" y="278" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#1a3a28">State-Grounded Skill Invocation</text>
+  <text x="300" y="300" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#2e5c42">按当前状态选技能，而非全历史</text>
+
+  <path d="M 200 214 L 260 250" stroke="#3d5a82" stroke-width="2" fill="none"/>
+  <path d="M 440 214 L 340 250" stroke="#3d5a82" stroke-width="2" fill="none"/>
+
+  <rect x="160" y="350" width="280" height="64" rx="8" fill="#fdeeda" stroke="#c77b2e"/>
+  <text x="300" y="378" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#5c3a12">Checker：环境响应 → 验证的状态更新</text>
+  <text x="300" y="400" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#8a5a24">不信任对话，只信环境证据</text>
+
+  <path d="M 300 314 L 300 350" stroke="#3d5a82" stroke-width="2.5" fill="none"/>
+  <path d="M 300 350 l -7 -12 h 14 z" fill="#3d5a82"/>
+
+  <text x="320" y="446" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#5f7ba0">每步记录四元组：(状态, 技能, 动作, 观测)</text>
+
+  <!-- evolution loop -->
+  <rect x="620" y="90" width="520" height="380" rx="12" fill="#ffffff" stroke="#2e7d4f" stroke-width="2"/>
+  <text x="880" y="126" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="bold" fill="#2e5c42">跨任务进化循环（Meta-Agent 固定）</text>
+
+  <rect x="660" y="150" width="200" height="64" rx="8" fill="#fdeeda" stroke="#c77b2e"/>
+  <text x="760" y="178" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#5c3a12">失败轨迹（结构化）</text>
+  <text x="760" y="200" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#8a5a24">evolve split</text>
+
+  <rect x="900" y="150" width="200" height="64" rx="8" fill="#dbe7f5" stroke="#3d5a82"/>
+  <text x="1000" y="178" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#1a2b45">组件级归因</text>
+  <text x="1000" y="200" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#44587a">64.8% vs 13.0%</text>
+
+  <path d="M 860 182 L 900 182" stroke="#3d5a82" stroke-width="2.5" fill="none"/>
+  <path d="M 900 182 l -12 -7 v 14 z" fill="#3d5a82"/>
+
+  <rect x="660" y="250" width="200" height="64" rx="8" fill="#cfe3d4" stroke="#2e7d4f"/>
+  <text x="760" y="278" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#1a3a28">组件级补丁</text>
+  <text x="760" y="300" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#2e5c42">只修被点名的 Skill Memory</text>
+
+  <rect x="900" y="250" width="200" height="64" rx="8" fill="#f8d7da" stroke="#b03a48"/>
+  <text x="1000" y="278" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#5c1a24">验证门 G_fixed</text>
+  <text x="1000" y="300" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#8a2e3a">dev 集锚点任务不回退</text>
+
+  <path d="M 960 214 L 820 250" stroke="#3d5a82" stroke-width="2" fill="none"/>
+  <path d="M 860 282 L 900 282" stroke="#3d5a82" stroke-width="2.5" fill="none"/>
+  <path d="M 900 282 l -12 -7 v 14 z" fill="#3d5a82"/>
+
+  <rect x="660" y="350" width="440" height="64" rx="8" fill="#e8f0fe" stroke="#3d5a82"/>
+  <text x="880" y="378" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#1a2b45">通过 → 提交 M(k+1)；失败 → 保留 M(k)</text>
+  <text x="880" y="400" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#44587a">有界递归：新行为产生新证据，进入下一轮</text>
+
+  <path d="M 1000 314 L 940 350" stroke="#2e7d4f" stroke-width="2.5" fill="none"/>
+  <path d="M 820 314 L 860 350" stroke="#b03a48" stroke-width="2" stroke-dasharray="5,4" fill="none"/>
+
+  <!-- connecting arrow -->
+  <path d="M 580 280 L 620 280" stroke="#c77b2e" stroke-width="3.5" fill="none"/>
+  <path d="M 620 280 l -14 -8 v 16 z" fill="#c77b2e"/>
+  <text x="600" y="264" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#8a5a24">证据</text>
+
+  <rect x="60" y="496" width="1080" height="44" rx="8" fill="#eef4fb"/>
+  <text x="600" y="524" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#2c4a75">模型权重全程不动 · 递归被限制在记忆控制层 · τ²-Retail: Opus 5 72.4% → 87.9%，GPT-5.6 Sol 58.3% → 76.1%</text>
+</svg>

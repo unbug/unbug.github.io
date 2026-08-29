@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f1b2d"/>
+      <stop offset="100%" stop-color="#1c2e4a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="60" y="86" font-family="Helvetica,Arial,sans-serif" font-size="26" fill="#7d9cc0">AI PARADIGM RADAR · 2026-08</text>
+  <text x="60" y="150" font-family="Helvetica,Arial,sans-serif" font-size="44" font-weight="bold" fill="#ffffff">Agent 自进化：从权重层到 Harness 层</text>
+  <text x="60" y="192" font-family="Helvetica,Arial,sans-serif" font-size="22" fill="#a8c0dd">Recuris · StarHarness · SkillForge —— 三篇论文，同一条路线</text>
+
+  <!-- left: old paradigm -->
+  <rect x="60" y="240" width="380" height="150" rx="10" fill="#243b5c" stroke="#3d5a82"/>
+  <text x="84" y="278" font-family="Helvetica,Arial,sans-serif" font-size="20" fill="#8fa9c9">旧范式：权重层 RSI</text>
+  <text x="84" y="310" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#c5d6ea">轨迹 → 微调 → 新权重</text>
+  <text x="84" y="338" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#e08a8a">成本高 · 不可回滚 · 归因难</text>
+
+  <!-- arrow -->
+  <path d="M 452 315 L 560 315" stroke="#5b8bd0" stroke-width="4" fill="none"/>
+  <path d="M 560 315 l -16 -9 v 18 z" fill="#5b8bd0"/>
+
+  <!-- right: new paradigm -->
+  <rect x="576" y="240" width="564" height="150" rx="10" fill="#1f3a5f" stroke="#5b8bd0" stroke-width="2"/>
+  <text x="600" y="278" font-family="Helvetica,Arial,sans-serif" font-size="20" fill="#9fc2ef">新范式：Harness 层自进化（权重不动）</text>
+  <text x="600" y="310" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#d5e4f5">结构化轨迹 → 组件级归因 → 验证门 → 修补记忆/接口/技能</text>
+  <text x="600" y="338" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#8fd6a4">可回滚 · 低成本 · 归因 64.8% vs 13.0%</text>
+
+  <!-- three papers -->
+  <rect x="60" y="430" width="352" height="140" rx="10" fill="#243b5c" stroke="#3d5a82"/>
+  <text x="84" y="466" font-family="Helvetica,Arial,sans-serif" font-size="20" font-weight="bold" fill="#ffffff">Recuris</text>
+  <text x="84" y="496" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c5d6ea">记忆怎么用：EM-WM 耦合</text>
+  <text x="84" y="524" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#8fd6a4">τ²-Bench: Opus 5 → 87.9%</text>
+
+  <rect x="424" y="430" width="352" height="140" rx="10" fill="#243b5c" stroke="#3d5a82"/>
+  <text x="448" y="466" font-family="Helvetica,Arial,sans-serif" font-size="20" font-weight="bold" fill="#ffffff">StarHarness</text>
+  <text x="448" y="496" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c5d6ea">结构怎么搜：分层任务池</text>
+  <text x="448" y="524" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#8fd6a4">3 基准 +20~35 pp，4-12 次修改</text>
+
+  <rect x="788" y="430" width="352" height="140" rx="10" fill="#243b5c" stroke="#3d5a82"/>
+  <text x="812" y="466" font-family="Helvetica,Arial,sans-serif" font-size="20" font-weight="bold" fill="#ffffff">SkillForge</text>
+  <text x="812" y="496" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c5d6ea">技能怎么验：低效分数 + 反思</text>
+  <text x="812" y="524" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#8fd6a4">ALFWorld / WebShop / AppWorld</text>
+
+  <text x="60" y="606" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#5f7ba0">unbug.github.io · AI Paradigm Radar</text>
+</svg>

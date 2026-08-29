@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+  <rect width="1200" height="560" fill="#f7fafc"/>
+  <text x="600" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="24" font-weight="bold" fill="#1a2b45">StarHarness：分层任务池 + 提议-选择分离的 Harness 进化搜索</text>
+
+  <!-- stratified pool -->
+  <rect x="60" y="90" width="380" height="380" rx="12" fill="#ffffff" stroke="#3d5a82" stroke-width="2"/>
+  <text x="250" y="126" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="bold" fill="#2c4a75">按基线失败行为分层构造任务池</text>
+
+  <rect x="90" y="150" width="320" height="64" rx="8" fill="#dbe7f5" stroke="#3d5a82"/>
+  <text x="250" y="178" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#1a2b45">D_search（proposer 可见）</text>
+  <text x="250" y="200" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#44587a">生成候选修改 Δh</text>
+
+  <rect x="90" y="234" width="320" height="64" rx="8" fill="#fdeeda" stroke="#c77b2e"/>
+  <text x="250" y="262" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#5c3a12">D_select（proposer 不可见）</text>
+  <text x="250" y="284" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#8a5a24">选择：分数提升才提交</text>
+
+  <rect x="90" y="318" width="320" height="64" rx="8" fill="#cfe3d4" stroke="#2e7d4f"/>
+  <text x="250" y="346" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#1a3a28">D_holdout（仅最终评估）</text>
+  <text x="250" y="368" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#2e5c42">直接度量泛化</text>
+
+  <text x="250" y="430" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#5f7ba0">进化对象：prompt / 工具接口 / 技能 / MCP provider</text>
+  <text x="250" y="454" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#5f7ba0">/ 子 Agent 结构 / agent loop 配置（权重不动）</text>
+
+  <!-- flow -->
+  <rect x="480" y="90" width="360" height="380" rx="12" fill="#ffffff" stroke="#2e7d4f" stroke-width="2"/>
+  <text x="660" y="126" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="19" font-weight="bold" fill="#2e5c42">每轮提交流程</text>
+
+  <rect x="510" y="150" width="300" height="52" rx="8" fill="#dbe7f5" stroke="#3d5a82"/>
+  <text x="660" y="182" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#1a2b45">proposer 在 D_search 上提出 Δh</text>
+
+  <rect x="510" y="222" width="300" height="52" rx="8" fill="#fdeeda" stroke="#c77b2e"/>
+  <text x="660" y="248" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#5c3a12">评估 h⊕Δh on D_select</text>
+  <text x="660" y="266" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#8a5a24">test flip 失败 → 回滚并记录拒绝</text>
+
+  <rect x="510" y="294" width="300" height="52" rx="8" fill="#cfe3d4" stroke="#2e7d4f"/>
+  <text x="660" y="320" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#1a3a28">选择分提升（或验证器指标打平）</text>
+  <text x="660" y="338" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#2e5c42">→ 提交，更新日志 L 与轨迹 T</text>
+
+  <path d="M 660 202 L 660 222" stroke="#3d5a82" stroke-width="2.5" fill="none"/>
+  <path d="M 660 274 L 660 294" stroke="#3d5a82" stroke-width="2.5" fill="none"/>
+
+  <text x="660" y="392" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#b03a48">否则：回滚 Δh，仅更新日志</text>
+  <path d="M 510 320 C 470 360, 470 380, 510 320" stroke="#b03a48" stroke-width="0" fill="none"/>
+
+  <!-- results -->
+  <rect x="880" y="90" width="260" height="380" rx="12" fill="#ffffff" stroke="#3d5a82" stroke-width="2"/>
+  <text x="1010" y="126" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#2c4a75">结果</text>
+
+  <rect x="900" y="150" width="220" height="30" rx="4" fill="#dbe7f5"/>
+  <rect x="900" y="150" width="186.9" height="30" rx="4" fill="#2e7d4f"/>
+  <text x="900" y="198" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#33475f">ITBench Qwen3.5-27B</text>
+  <text x="900" y="218" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#1a3a28">25.6% → 70.0%（+44.4 pp）</text>
+
+  <rect x="900" y="240" width="220" height="30" rx="4" fill="#dbe7f5"/>
+  <rect x="900" y="240" width="174.5" height="30" rx="4" fill="#2e7d4f"/>
+  <text x="900" y="288" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#33475f">ITBench GPT-5.4-mini</text>
+  <text x="900" y="308" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#1a3a28">33.1% → 79.4%（+46.3 pp）</text>
+
+  <line x1="900" y1="330" x2="1120" y2="330" stroke="#d5e0ee"/>
+  <text x="900" y="360" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#33475f">三基准全量 +20~35 pp</text>
+  <text x="900" y="386" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#33475f">每环境仅 4-12 次接受修改</text>
+  <text x="900" y="412" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#33475f">留出任务增益保持</text>
+  <text x="900" y="438" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#1a3a28">跨 GPT/Qwen 免重训迁移</text>
+
+  <rect x="60" y="496" width="1080" height="44" rx="8" fill="#eef4fb"/>
+  <text x="600" y="524" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#2c4a75">相对 GEPA (Pi)：ITBench +13.8 / EnterpriseOps-Gym +22.3 / AutomationBench +17.6 pp（描述性对比，系统配置不同）</text>
+</svg>

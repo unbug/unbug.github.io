@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+  <rect width="1200" height="560" fill="#f7fafc"/>
+  <text x="600" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="24" font-weight="bold" fill="#1a2b45">Recuris 主结果：基线 vs Recuris（成功率 %）</text>
+
+  <!-- tau2 Retail -->
+  <text x="80" y="110" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#2c4a75">τ²-Bench Retail</text>
+
+  <!-- GPT-5.6 Sol: 58.3 -> 76.1 -->
+  <rect x="80" y="130" width="349.8" height="34" fill="#b9cde6"/>
+  <text x="440" y="153" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#44587a">GPT-5.6 Sol 基线 58.3</text>
+  <rect x="80" y="170" width="456.6" height="34" fill="#2e7d4f"/>
+  <text x="546" y="193" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#1a3a28">Recuris 76.1（+17.8）</text>
+
+  <!-- Opus 5: 72.4 -> 87.9 -->
+  <rect x="80" y="222" width="434.4" height="34" fill="#b9cde6"/>
+  <text x="524" y="245" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#44587a">Claude Opus 5 基线 72.4</text>
+  <rect x="80" y="262" width="527.4" height="34" fill="#2e7d4f"/>
+  <text x="617" y="285" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#1a3a28">Recuris 87.9（+15.6，超无 Recuris 最佳 +9.7）</text>
+
+  <!-- SkillFlow -->
+  <text x="80" y="340" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#2c4a75">SkillFlow（跨模型迁移：技能包在部署模型上构建）</text>
+
+  <!-- Qwen3.6-27B: 42.2 -> 58.7 -->
+  <rect x="80" y="360" width="253.2" height="34" fill="#b9cde6"/>
+  <text x="343" y="383" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#44587a">Qwen3.6-27B 基线 42.2</text>
+  <rect x="80" y="400" width="352.2" height="34" fill="#2e7d4f"/>
+  <text x="442" y="423" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#1a3a28">Recuris 58.7（+16.6）</text>
+
+  <!-- Qwen3.6-35B: 35.3 -> 48.8 -->
+  <rect x="80" y="452" width="211.8" height="34" fill="#b9cde6"/>
+  <text x="301" y="475" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#44587a">Qwen3.6-35B 基线 35.3</text>
+  <rect x="80" y="492" width="292.8" height="34" fill="#2e7d4f"/>
+  <text x="382" y="515" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#1a3a28">Recuris 48.8（+13.5）</text>
+
+  <!-- right notes -->
+  <rect x="760" y="130" width="380" height="400" rx="10" fill="#ffffff" stroke="#3d5a82"/>
+  <text x="784" y="168" font-family="Helvetica,Arial,sans-serif" font-size="17" font-weight="bold" fill="#2c4a75">关键读数</text>
+  <text x="784" y="204" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#33475f">· 37 个模型×基准组合中 35 个提升</text>
+  <text x="784" y="236" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#33475f">· 优势随交互轮次增长：最长任务 +32.2</text>
+  <text x="784" y="268" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#33475f">· 常见长程失败模式最多下降 80%</text>
+  <text x="784" y="300" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#33475f">· 失败归因：结构化轨迹 64.8% vs</text>
+  <text x="800" y="324" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#33475f">仅任务结果 13.0%</text>
+  <line x1="784" y1="352" x2="1116" y2="352" stroke="#d5e0ee"/>
+  <text x="784" y="384" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#b03a48">反直觉消融（τ²-Retail Table 12）：</text>
+  <text x="784" y="416" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#33475f">裸 Agent 58.11 / 仅工作记忆 82.02</text>
+  <text x="784" y="448" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#33475f">模型自控调用 65.57（多 3,111 token）</text>
+  <text x="784" y="480" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#1a3a28">Recuris 83.55：上下文更少，结果更好</text>
+</svg>
