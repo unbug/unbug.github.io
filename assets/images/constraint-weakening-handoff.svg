@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" font-family="'Helvetica Neue', Arial, 'PingFang SC', sans-serif">
+  <rect width="960" height="640" fill="#f8fafc"/>
+  <text x="480" y="36" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">约束在交接中悄悄失效：Must 变 Maybe</text>
+  <text x="480" y="58" text-anchor="middle" font-size="12" fill="#64748b">arXiv:2608.24569 · Shenzhen University · 1,296 controlled synthetic episodes</text>
+
+  <!-- upstream -->
+  <rect x="40" y="90" width="220" height="120" rx="10" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
+  <text x="150" y="116" text-anchor="middle" font-size="14" font-weight="700" fill="#065f46">上游状态（安全阻塞器）</text>
+  <text x="150" y="138" text-anchor="middle" font-size="11" fill="#047857">MUST resolve before execution</text>
+  <rect x="58" y="152" width="90" height="22" rx="4" fill="#d1fae5"/>
+  <text x="103" y="167" text-anchor="middle" font-size="10" fill="#065f46">prerequisite</text>
+  <rect x="152" y="152" width="90" height="22" rx="4" fill="#d1fae5"/>
+  <text x="197" y="167" text-anchor="middle" font-size="10" fill="#065f46">authority</text>
+  <rect x="58" y="180" width="90" height="22" rx="4" fill="#d1fae5"/>
+  <text x="103" y="195" text-anchor="middle" font-size="10" fill="#065f46">fallback</text>
+  <rect x="152" y="180" width="90" height="22" rx="4" fill="#d1fae5"/>
+  <text x="197" y="195" text-anchor="middle" font-size="10" fill="#065f46">consequence</text>
+
+  <!-- handoff transform -->
+  <rect x="320" y="90" width="300" height="120" rx="10" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="470" y="116" text-anchor="middle" font-size="14" font-weight="700" fill="#991b1b">Handoff 转换（压缩等）</text>
+  <text x="470" y="138" text-anchor="middle" font-size="11" fill="#b91c1c">摘要 / 计划 / 工单 / 记忆 / 交接笔记</text>
+  <text x="470" y="162" text-anchor="middle" font-size="11" fill="#b91c1c">内容保留，约束绑定丢失</text>
+  <text x="470" y="184" text-anchor="middle" font-size="13" font-weight="700" fill="#dc2626">MUST → MAYBE</text>
+
+  <!-- executor -->
+  <rect x="680" y="90" width="240" height="120" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="800" y="116" text-anchor="middle" font-size="14" font-weight="700" fill="#1e40af">下游 Executor</text>
+  <text x="800" y="138" text-anchor="middle" font-size="11" fill="#2563eb">只能看到转换后的工件</text>
+  <text x="800" y="164" text-anchor="middle" font-size="12" fill="#1e40af">语义可用 ≠ 操作保留</text>
+
+  <!-- arrows -->
+  <line x1="260" y1="150" x2="318" y2="150" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="620" y1="150" x2="678" y2="150" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <!-- results bars -->
+  <text x="40" y="266" font-size="15" font-weight="700" fill="#0f172a">三种条件下的约束保留与禁止动作</text>
+
+  <!-- direct handoff control -->
+  <text x="40" y="296" font-size="12" fill="#334155">直接交接对照</text>
+  <rect x="200" y="282" width="560" height="20" rx="4" fill="#d1fae5"/>
+  <text x="770" y="297" font-size="11" fill="#065f46">保留 100% · 禁止动作 0%</text>
+
+  <!-- normal compression -->
+  <text x="40" y="330" font-size="12" fill="#334155">正常 handoff 压缩</text>
+  <rect x="200" y="316" width="8" height="20" rx="2" fill="#fecaca"/>
+  <text x="770" y="331" font-size="11" font-weight="700" fill="#dc2626">去激活 100.0% · 禁止动作 54.2%</text>
+
+  <!-- restore four fields -->
+  <text x="40" y="364" font-size="12" fill="#334155">恢复四个状态字段</text>
+  <rect x="200" y="350" width="560" height="20" rx="4" fill="#d1fae5"/>
+  <text x="770" y="365" font-size="11" fill="#065f46">保留 100.0% · 禁止动作 0.0%</text>
+
+  <!-- downstream verification -->
+  <text x="40" y="398" font-size="12" fill="#334155">下游验证干预</text>
+  <rect x="200" y="384" width="560" height="20" rx="4" fill="#fef9c3"/>
+  <text x="770" y="399" font-size="11" font-weight="700" fill="#a16207">禁止动作消除 · 去激活仍 95.3%</text>
+
+  <!-- yellow boundary box -->
+  <rect x="40" y="430" width="880" height="86" rx="10" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="60" y="456" font-size="13" font-weight="700" fill="#92400e">边界条件</text>
+  <text x="60" y="478" font-size="11.5" fill="#78350f">· 1,296 个受控合成 episode（6 模型变体 × 5 静态转换族 × 3 动态轨迹），非生产工作流统计</text>
+  <text x="60" y="498" font-size="11.5" fill="#78350f">· 验证面板为另一套数字：476 episodes / 7 个其他模型变体（GLM-5、Kimi-K2.5、DS-V4-Flash 等）</text>
+  <text x="60" y="518" font-size="11.5" fill="#78350f">· 安全阻塞器是受控实例（四字段显式），外推到一般状态保留属论文自身论证</text>
+
+  <!-- green takeaway -->
+  <rect x="40" y="532" width="880" height="86" rx="10" fill="#ecfdf5" stroke="#10b981" stroke-width="1.2"/>
+  <text x="60" y="558" font-size="13" font-weight="700" fill="#065f46">对多角色工作流设计的启示</text>
+  <text x="60" y="580" font-size="11.5" fill="#047857">· 交接工件要给约束留结构化槽位：前置条件 / 授权 / 回退方案 / 执行后果</text>
+  <text x="60" y="600" font-size="11.5" fill="#047857">· 压缩或改写这四个字段时，丢掉的不是文字，而是约束对下游行动的绑定力</text>
+  <text x="60" y="620" font-size="11.5" fill="#047857">· 验证只能兜住这一次执行，换不了工件里的 Maybe 语义</text>
+</svg>
