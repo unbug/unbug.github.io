@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" font-family="'Helvetica Neue', Arial, 'PingFang SC', sans-serif">
+  <rect width="960" height="720" fill="#f8fafc"/>
+  <text x="480" y="38" text-anchor="middle" font-size="22" font-weight="bold" fill="#1e293b">一张面板如何改变 AI 的行动</text>
+  <text x="480" y="60" text-anchor="middle" font-size="13" fill="#64748b">arXiv:2608.27167 · 12 frontier models · 四个领域</text>
+
+  <!-- main flow -->
+  <rect x="50" y="90" width="200" height="70" rx="10" fill="#e2e8f0" stroke="#94a3b8"/>
+  <text x="150" y="118" text-anchor="middle" font-size="14" font-weight="bold" fill="#334155">裸问题</text>
+  <text x="150" y="140" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f766e">commitment 6.5%</text>
+
+  <path d="M250 125 L320 125" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+  <defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#475569"/></marker></defs>
+
+  <rect x="320" y="80" width="230" height="90" rx="10" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="435" y="106" text-anchor="middle" font-size="14" font-weight="bold" fill="#166534">证据升级梯度</text>
+  <text x="435" y="128" text-anchor="middle" font-size="12" fill="#166534">thin → rich → scrambled 面板</text>
+  <text x="435" y="152" text-anchor="middle" font-size="17" font-weight="bold" fill="#15803d">commitment 54.0%</text>
+
+  <!-- fabricated branch -->
+  <rect x="600" y="90" width="310" height="70" rx="10" fill="#fee2e2" stroke="#dc2626"/>
+  <text x="755" y="115" text-anchor="middle" font-size="14" font-weight="bold" fill="#991b1b">全伪造面板（数字全部编造）</text>
+  <text x="755" y="138" text-anchor="middle" font-size="12" fill="#991b1b">24.5% → 36.8%，与真实数据 37.6% 统计不可区分</text>
+
+  <!-- belief box -->
+  <rect x="50" y="200" width="430" height="80" rx="10" fill="#fef9c3" stroke="#ca8a04"/>
+  <text x="265" y="226" text-anchor="middle" font-size="14" font-weight="bold" fill="#854d0e">belief 不动，action 动了</text>
+  <text x="265" y="248" text-anchor="middle" font-size="12" fill="#854d0e">陈述概率几乎不随梯度变化（还差于气候基线）</text>
+  <text x="265" y="268" text-anchor="middle" font-size="12" fill="#854d0e">而行动门在 48 个百分点的区间内摆动</text>
+
+  <!-- model split -->
+  <text x="50" y="330" font-size="15" font-weight="bold" fill="#1e293b">模型分层（不随能力变化）</text>
+  <rect x="50" y="345" width="860" height="34" rx="6" fill="#fee2e2" stroke="#dc2626"/>
+  <text x="60" y="367" font-size="13" fill="#991b1b">3/12 被诱导（伪造面板更甚）：Sonnet 5 → 70.8% · Haiku 4.5 → 50.0% · Opus 4.8 → 33.3%</text>
+  <rect x="50" y="385" width="860" height="34" rx="6" fill="#e2e8f0" stroke="#94a3b8"/>
+  <text x="60" y="407" font-size="13" fill="#334155">4/12 任何面板都不 commit：DeepSeek V3.2 · Qwen3.7-plus · Grok ×2（全 0）</text>
+  <rect x="50" y="425" width="860" height="34" rx="6" fill="#fecaca" stroke="#b91c1c"/>
+  <text x="60" y="447" font-size="13" fill="#7f1d1d">3/12 任何面板都 commit（88–100%）：OpenAI ×2 · Gemma</text>
+  <rect x="50" y="465" width="860" height="34" rx="6" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="60" y="487" font-size="13" fill="#475569">2/12 反应微弱</text>
+
+  <!-- three exclusions -->
+  <rect x="50" y="525" width="430" height="80" rx="10" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="265" y="551" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e40af">三个解释被直接排除</text>
+  <text x="265" y="573" text-anchor="middle" font-size="12" fill="#1e40af">能力不足？同面板可答问题近乎全对</text>
+  <text x="265" y="591" text-anchor="middle" font-size="12" fill="#1e40af">信念变了？概率几乎不动 · 判断缺失？90% 已判不可知仍照 commit</text>
+
+  <!-- SFT mitigation -->
+  <rect x="520" y="525" width="390" height="80" rx="10" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="715" y="551" text-anchor="middle" font-size="14" font-weight="bold" fill="#166534">门可训练：SFT 3B / 540 合成样本</text>
+  <text x="715" y="573" text-anchor="middle" font-size="12" fill="#166534">原 case commitment → 0.0%，迁移至 3 个未见领域</text>
+  <text x="715" y="591" text-anchor="middle" font-size="12" fill="#166534">边界：response format 留推理空间才有效</text>
+
+  <!-- conclusion -->
+  <rect x="50" y="630" width="860" height="60" rx="10" fill="#f0fdf4" stroke="#22c55e"/>
+  <text x="480" y="655" text-anchor="middle" font-size="14" font-weight="bold" fill="#166534">失效的是行动门，不是判断力——「解锁自信行动的包装权威，而非信息」</text>
+  <text x="480" y="677" text-anchor="middle" font-size="12" fill="#16a34a">预注册 + 代码/数据/全部缓存输出开源（Zenodo 存档）· 单作者独立研究</text>
+</svg>
