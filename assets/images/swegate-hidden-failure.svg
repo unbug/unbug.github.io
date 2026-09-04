@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" font-family="Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect width="960" height="640" fill="#ffffff"/>
+  <text x="480" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a2e">SWE-Gate：功能测试通过 ≠ 补丁能被合入</text>
+
+  <!-- flow: patch -> functional test -> constraint test -->
+  <rect x="40" y="70" width="180" height="70" rx="8" fill="#eef4ff" stroke="#3b6ea5" stroke-width="2"/>
+  <text x="130" y="100" text-anchor="middle" font-size="15" fill="#1a1a2e">Agent 产出补丁</text>
+  <text x="130" y="124" text-anchor="middle" font-size="13" fill="#555">303 实例 × 75 Python 仓库</text>
+
+  <line x1="220" y1="105" x2="280" y2="105" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#666"/>
+    </marker>
+  </defs>
+
+  <rect x="285" y="70" width="200" height="70" rx="8" fill="#e8f7ee" stroke="#2e9e5b" stroke-width="2"/>
+  <text x="385" y="100" text-anchor="middle" font-size="15" fill="#1a1a2e">第一轨：功能测试</text>
+  <text x="385" y="124" text-anchor="middle" font-size="13" fill="#2e9e5b">通过 644 个</text>
+
+  <line x1="485" y1="105" x2="545" y2="105" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="550" y="70" width="220" height="70" rx="8" fill="#fdeeee" stroke="#c0392b" stroke-width="2"/>
+  <text x="660" y="100" text-anchor="middle" font-size="15" fill="#1a1a2e">第二轨：约束测试</text>
+  <text x="660" y="124" text-anchor="middle" font-size="13" fill="#c0392b">来自真实 PR review 评论</text>
+
+  <!-- split result -->
+  <line x1="770" y1="90" x2="830" y2="60" stroke="#2e9e5b" stroke-width="2" marker-end="url(#arrowG)"/>
+  <line x1="770" y1="120" x2="830" y2="150" stroke="#c0392b" stroke-width="2" marker-end="url(#arrowR)"/>
+  <defs>
+    <marker id="arrowG" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#2e9e5b"/></marker>
+    <marker id="arrowR" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#c0392b"/></marker>
+  </defs>
+  <rect x="835" y="40" width="95" height="40" rx="6" fill="#e8f7ee" stroke="#2e9e5b" stroke-width="1.5"/>
+  <text x="882" y="65" text-anchor="middle" font-size="14" fill="#2e9e5b">双轨通过 423</text>
+  <rect x="835" y="130" width="95" height="40" rx="6" fill="#fdeeee" stroke="#c0392b" stroke-width="1.5"/>
+  <text x="882" y="148" text-anchor="middle" font-size="14" fill="#c0392b">隐藏失败 221</text>
+  <text x="882" y="164" text-anchor="middle" font-size="13" fill="#c0392b">HFR 34.3%</text>
+
+  <!-- per-model bars -->
+  <text x="40" y="215" font-size="17" font-weight="bold" fill="#1a1a2e">分模型隐藏失败率（同一 Mini-SWE-Agent 框架）</text>
+  <g font-size="14">
+    <text x="40" y="252" fill="#333">GPT-5.5</text>
+    <rect x="220" y="236" width="295" height="24" fill="#e8a04a"/>
+    <text x="525" y="253" fill="#333">29.5%</text>
+
+    <text x="40" y="292" fill="#333">GPT-5.4-mini</text>
+    <rect x="220" y="276" width="358" height="24" fill="#d9634e"/>
+    <text x="588" y="293" fill="#333">35.8%</text>
+
+    <text x="40" y="332" fill="#333">DeepSeek-V4-Flash</text>
+    <rect x="220" y="316" width="356" height="24" fill="#d9634e"/>
+    <text x="586" y="333" fill="#333">35.6%</text>
+
+    <text x="40" y="372" fill="#333">GPT-4o-mini</text>
+    <rect x="220" y="356" width="536" height="24" fill="#c0392b"/>
+    <text x="700" y="373" fill="#333" font-weight="bold">53.6%</text>
+  </g>
+  <text x="40" y="410" font-size="13" fill="#777">条形长度正比于隐藏失败率；最难类别：Scope Generalization、资源清理、编码转义、schema 类型</text>
+
+  <!-- two-sided intervention -->
+  <rect x="40" y="435" width="880" height="86" rx="8" fill="#fff8e6" stroke="#d4a017" stroke-width="2"/>
+  <text x="60" y="463" font-size="15" font-weight="bold" fill="#1a1a2e">把约束摊开写进提示词，是双面的</text>
+  <text x="60" y="489" font-size="14" fill="#333">联合成功率：GPT-5.5 从 54.6 → 70.5（+15.9）；但四个模型中三个的功能成功率反而下降，GPT-5.5 自身也略有回落。</text>
+  <text x="60" y="511" font-size="13" fill="#777">合规性与修复能力此消彼长，约束披露不是免费午餐。</text>
+
+  <!-- boundary + takeaway -->
+  <rect x="40" y="540" width="420" height="76" rx="8" fill="#f4f4f4" stroke="#999" stroke-width="1.5"/>
+  <text x="60" y="566" font-size="14" font-weight="bold" fill="#555">边界</text>
+  <text x="60" y="590" font-size="13" fill="#555">结论限定于 75 个 Python 仓库；其他语言是否</text>
+  <text x="60" y="608" font-size="13" fill="#555">同样存在隐藏失败，论文未验证。</text>
+
+  <rect x="500" y="540" width="420" height="76" rx="8" fill="#eef9f1" stroke="#2e9e5b" stroke-width="2"/>
+  <text x="520" y="566" font-size="14" font-weight="bold" fill="#1a1a2e">启示</text>
+  <text x="520" y="590" font-size="13" fill="#333">评测从「任务完成度」扩展到「产物可合入性」；</text>
+  <text x="520" y="608" font-size="13" fill="#333">接入真实代码库前，隐藏失败率值得先测一遍。</text>
+</svg>
