@@ -86,9 +86,9 @@
     },
     "brief8": {
       "url": "https://unbug.github.io/innovation-brief-prompt-testing-patents/",
-      "http": null,
-      "verifiedAt": null,
-      "note": "commit 后待 Actions build，下轮 cron 验证 URL + llms.txt"
+      "http": 200,
+      "verifiedAt": "2026-09-04 19:20 GMT+8",
+      "note": "commit 3e343d7，Actions build success 后验证 HTTP 200 + llms.txt 已收录"
     }
   }
 }
