@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <style>
+      .h { font-family: "Helvetica Neue", "PingFang SC", sans-serif; fill: #1f2a3a; }
+      .sub { font-family: "Helvetica Neue", "PingFang SC", sans-serif; fill: #5b6b7c; }
+      .mono { font-family: Menlo, monospace; fill: #3d5a80; }
+      .card { fill: #ffffff; stroke: #c9d4de; stroke-width: 1.5; }
+      .tag { font-family: "PingFang SC", sans-serif; fill: #ffffff; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="630" fill="#eef2f6"/>
+  <rect x="0" y="0" width="1200" height="92" fill="#2b3a4f"/>
+  <text x="48" y="42" class="tag" font-size="24" font-weight="bold">AI 智创简报 · 答案逐句带证据：RAG 质检的插件生意</text>
+  <text x="48" y="72" font-family="PingFang SC, sans-serif" fill="#9fb3c8" font-size="16">专利信号 → 技术趋势 → 一个人能做的机会 ｜ 2026-09-05</text>
+
+  <!-- Column 1: patent signal -->
+  <rect x="40" y="120" width="356" height="440" rx="10" class="card"/>
+  <rect x="40" y="120" width="356" height="46" rx="10" fill="#3d5a80"/>
+  <text x="64" y="150" font-family="PingFang SC, sans-serif" fill="#ffffff" font-size="20" font-weight="bold">专利信号（均为申请公开）</text>
+
+  <text x="64" y="200" class="mono" font-size="15">US20260260120A1 · DeepMind</text>
+  <text x="64" y="224" class="sub" font-size="14">行内证据：支撑句原文写进答案（09-03）</text>
+
+  <text x="64" y="262" class="mono" font-size="15">US20260212126A1 · Salesforce</text>
+  <text x="64" y="286" class="sub" font-size="14">LLM 回复自动生成知识库引用（07-23）</text>
+
+  <text x="64" y="324" class="mono" font-size="15">US20260220372A1 · AIG</text>
+  <text x="64" y="348" class="sub" font-size="14">抽取字段点开即见证据原文块（07-30）</text>
+
+  <text x="64" y="386" class="mono" font-size="15">US20260211893A1 · Snowflake</text>
+  <text x="64" y="410" class="sub" font-size="14">幻觉防护：无证据输出即拦截（07-23）</text>
+
+  <text x="64" y="448" class="mono" font-size="15">US20260244665A1 · Capital One</text>
+  <text x="64" y="472" class="sub" font-size="14">不确定性量化打可靠性标签（08-20）</text>
+
+  <line x1="64" y1="500" x2="372" y2="500" stroke="#c9d4de"/>
+  <text x="64" y="528" class="sub" font-size="14">两个月内同主题密集公开，申请人</text>
+  <text x="64" y="548" class="sub" font-size="14">横跨模型、CRM、保险、数仓、银行</text>
+
+  <!-- Column 2: trend -->
+  <rect x="422" y="120" width="356" height="440" rx="10" class="card"/>
+  <rect x="422" y="120" width="356" height="46" rx="10" fill="#4a6fa5"/>
+  <text x="446" y="150" font-family="PingFang SC, sans-serif" fill="#ffffff" font-size="20" font-weight="bold">技术趋势</text>
+
+  <text x="446" y="200" class="h" font-size="17" font-weight="bold">校验从「事后打分」</text>
+  <text x="446" y="226" class="h" font-size="17" font-weight="bold">前移到「生成时内嵌」</text>
+
+  <rect x="446" y="250" width="308" height="88" rx="8" fill="#eef2f6" stroke="#c9d4de"/>
+  <text x="462" y="278" class="sub" font-size="14">现状：ragas / TruLens 等开源工具</text>
+  <text x="462" y="300" class="sub" font-size="14">在答案生成后做事后评测打分，</text>
+  <text x="462" y="322" class="sub" font-size="14">证据核验靠人工翻检索块</text>
+
+  <rect x="446" y="358" width="308" height="88" rx="8" fill="#dce7f2" stroke="#8fa9c4"/>
+  <text x="462" y="386" class="h" font-size="14" font-weight="bold">专利方向：证据片段、引用对象、</text>
+  <text x="462" y="408" class="h" font-size="14" font-weight="bold">防护拦截写进答案本身的结构，</text>
+  <text x="462" y="430" class="h" font-size="14" font-weight="bold">分发链上任一节点可核验</text>
+
+  <text x="446" y="484" class="sub" font-size="14">大厂圈定「自家模型生成侧」；</text>
+  <text x="446" y="508" class="h" font-size="15" font-weight="bold">「对任意模型做中立质检」无人占位，</text>
+  <text x="446" y="532" class="h" font-size="15" font-weight="bold">天然属于第三方工具</text>
+
+  <!-- Column 3: opportunity -->
+  <rect x="804" y="120" width="356" height="440" rx="10" fill="#f4f9f4" stroke="#b7cdb7"/>
+  <rect x="804" y="120" width="356" height="46" rx="10" fill="#4a7c59"/>
+  <text x="828" y="150" font-family="PingFang SC, sans-serif" fill="#ffffff" font-size="20" font-weight="bold">一个人今天能做的</text>
+
+  <text x="828" y="196" class="h" font-size="15" font-weight="bold">用户：上线 RAG 问答的 SaaS 团队</text>
+  <text x="828" y="218" class="sub" font-size="14">客户追问「这句话证据在哪」，人工回查不动</text>
+
+  <rect x="828" y="238" width="308" height="120" rx="8" fill="#ffffff" stroke="#b7cdb7"/>
+  <text x="844" y="264" class="h" font-size="15" font-weight="bold">引用质检插件</text>
+  <text x="844" y="288" class="sub" font-size="13.5">挂在 LangChain / LlamaIndex 出口，</text>
+  <text x="844" y="308" class="sub" font-size="13.5">NLI 模型逐句核验：有支撑 / 无证据 /</text>
+  <text x="844" y="328" class="sub" font-size="13.5">矛盾，输出报告页与 API</text>
+
+  <rect x="828" y="374" width="308" height="96" rx="8" fill="#ffffff" stroke="#b7cdb7"/>
+  <text x="844" y="400" class="h" font-size="15" font-weight="bold">答案证据审计服务</text>
+  <text x="844" y="424" class="sub" font-size="13.5">对生产问答日志跑逐句覆盖率核查，</text>
+  <text x="844" y="444" class="sub" font-size="13.5">单次 2000-6000 元，再转月度订阅</text>
+
+  <text x="828" y="500" class="mono" font-size="14">成本：月数百元 ｜ MVP ≤ 4 周</text>
+  <text x="828" y="526" class="h" font-size="14" font-weight="bold">今天就做：抽 50 条 RAG 日志，用现成</text>
+  <text x="828" y="546" class="h" font-size="14" font-weight="bold">NLI 模型核查句子覆盖率，半天见结果</text>
+
+  <text x="40" y="602" class="sub" font-size="13">来源：Google Patents / FreePatentsOnline（公开号逐字核验）· 佐证：ragas GitHub star 今日实测 ｜ 均为申请公开，不等于已授权</text>
+</svg>

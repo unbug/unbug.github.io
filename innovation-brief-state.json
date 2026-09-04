@@ -1,11 +1,11 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 智创简报：《Agent 记忆层被写进专利，垂直行业的本地化长尾还空着》",
+    "title": "AI 智创简报：《逐句举证专利扎堆，RAG 质检的插件生意》",
     "date": "2026-09-05",
-    "slug": "innovation-brief-agent-memory-context-patents"
+    "slug": "innovation-brief-answer-citation-patents"
   },
-  "totalPublished": 9,
+  "totalPublished": 10,
   "nextScheduled": "2026-09-12",
   "coveredPatentFamilies": [
     "US20260044392",
@@ -43,7 +43,12 @@
     "US20260186828",
     "US20260189498",
     "US20260252594",
-    "US20260203325"
+    "US20260203325",
+    "US20260260120",
+    "US20260212126",
+    "US20260220372",
+    "US20260211893",
+    "US20260244665"
   ],
   "candidateTopics": [
     {
@@ -54,7 +59,7 @@
       ]
     }
   ],
-  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-prompt-testing-patents/",
+  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-answer-citation-patents/",
   "lastPublishedVerifiedAt": null,
   "verification": {
     "brief4": {
