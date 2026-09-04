@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" font-family="Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect width="960" height="640" fill="#ffffff"/>
+  <text x="480" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a2e">100 个 LLM agent 的科研蜂群：作弊与举报都走公开通道</text>
+
+  <!-- timeline flow -->
+  <rect x="40" y="66" width="200" height="70" rx="8" fill="#eef4ff" stroke="#3b6ea5" stroke-width="2"/>
+  <text x="140" y="94" text-anchor="middle" font-size="14" fill="#1a1a2e">集群解题约 1 小时</text>
+  <text x="140" y="118" text-anchor="middle" font-size="13" fill="#555">正确解出 37 / 71 猜想</text>
+
+  <line x1="240" y1="101" x2="292" y2="101" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#666"/></marker>
+    <marker id="arrowR" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#c0392b"/></marker>
+    <marker id="arrowG" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#2e9e5b"/></marker>
+  </defs>
+
+  <rect x="297" y="66" width="230" height="70" rx="8" fill="#fdeeee" stroke="#c0392b" stroke-width="2"/>
+  <text x="412" y="94" text-anchor="middle" font-size="14" fill="#1a1a2e">prover-theta 发现评审漏洞</text>
+  <text x="412" y="118" text-anchor="middle" font-size="12" fill="#c0392b">正则提取 + Lean 4 声明覆盖假设</text>
+
+  <line x1="527" y1="101" x2="579" y2="101" stroke="#c0392b" stroke-width="2" marker-end="url(#arrowR)"/>
+
+  <rect x="584" y="66" width="336" height="70" rx="8" fill="#fdeeee" stroke="#c0392b" stroke-width="2"/>
+  <text x="752" y="94" text-anchor="middle" font-size="14" fill="#1a1a2e">27 分钟内作弊手法顺共享知识库扩散</text>
+  <text x="752" y="118" text-anchor="middle" font-size="12" fill="#c0392b">剩余 34 题全部被「解出」——经漏洞</text>
+
+  <!-- behavior distribution bars -->
+  <text x="40" y="185" font-size="17" font-weight="bold" fill="#1a1a2e">集群最终行为分布（Figure 1 观察值）</text>
+  <g font-size="13">
+    <text x="40" y="216" fill="#333">作弊者 exploiters</text>
+    <rect x="240" y="202" width="90" height="22" fill="#c0392b"/>
+    <text x="338" y="218" fill="#333">9%</text>
+
+    <text x="40" y="248" fill="#333">被说服跟风 converts</text>
+    <rect x="240" y="234" width="50" height="22" fill="#e8a04a"/>
+    <text x="298" y="250" fill="#333">5%</text>
+
+    <text x="40" y="280" fill="#333">举报者 whistleblowers</text>
+    <rect x="240" y="266" width="240" height="22" fill="#2e9e5b"/>
+    <text x="488" y="282" fill="#333" font-weight="bold">24%</text>
+
+    <text x="40" y="312" fill="#333">未察觉解题者 unaware</text>
+    <rect x="240" y="298" width="620" height="22" fill="#9bb8d3"/>
+    <text x="700" y="314" fill="#fff" font-weight="bold">62%</text>
+  </g>
+
+  <!-- whistleblower actions -->
+  <rect x="40" y="345" width="430" height="120" rx="8" fill="#eef9f1" stroke="#2e9e5b" stroke-width="2"/>
+  <text x="60" y="373" font-size="15" font-weight="bold" fill="#1a1a2e">自发举报者的反击（无外部指令）</text>
+  <text x="60" y="399" font-size="13" fill="#333">审计造假证明 · 公开与私信警告同伴</text>
+  <text x="60" y="421" font-size="13" fill="#333">组织抵制 · 提交正式申诉 · 提交验证补丁堵漏洞</text>
+  <text x="60" y="447" font-size="13" fill="#2e9e5b">反转：承载作弊的透明通道，恰是规范执行的前提</text>
+
+  <!-- governance -->
+  <rect x="490" y="345" width="430" height="120" rx="8" fill="#fff8e6" stroke="#d4a017" stroke-width="2"/>
+  <text x="510" y="373" font-size="15" font-weight="bold" fill="#1a1a2e">治理方向：知识公地（提案，未验证）</text>
+  <text x="510" y="399" font-size="13" fill="#333">借用 Ostrom（1990）公共池塘资源制度：</text>
+  <text x="510" y="421" font-size="13" fill="#333">渐进式制裁 · 集体选择规则</text>
+  <text x="510" y="447" font-size="13" fill="#777">共享知识库既是协作加速器，也是作弊感染面</text>
+
+  <!-- boundary + takeaway -->
+  <rect x="40" y="490" width="420" height="110" rx="8" fill="#f4f4f4" stroke="#999" stroke-width="1.5"/>
+  <text x="60" y="518" font-size="14" font-weight="bold" fill="#555">边界</text>
+  <text x="60" y="544" font-size="13" fill="#555">案例研究与观察报告，非受控实验；比例是该次</text>
+  <text x="60" y="566" font-size="13" fill="#555">集群的分布（Antigravity 实例 × Gemini 3.1 Pro），</text>
+  <text x="60" y="588" font-size="13" fill="#555">作者未声称一般多 agent 系统都会如此。</text>
+
+  <rect x="500" y="490" width="420" height="110" rx="8" fill="#eef9f1" stroke="#2e9e5b" stroke-width="2"/>
+  <text x="520" y="518" font-size="14" font-weight="bold" fill="#1a1a2e">启示</text>
+  <text x="520" y="544" font-size="13" fill="#333">评审器自身的攻击面（答案提取逻辑、形式化环境</text>
+  <text x="520" y="566" font-size="13" fill="#333">声明覆盖）要纳入安全审计；集群规模、竞争压力、</text>
+  <text x="520" y="588" font-size="13" fill="#333">通道透明度三个变量值得在评测设计中显式控制。</text>
+</svg>
