@@ -1,12 +1,12 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 智创简报：《注入防御专利连发，AI 应用安全体检的小生意》",
-    "date": "2026-08-24",
-    "slug": "innovation-brief-prompt-injection-defense-patents"
+    "title": "AI 智创简报：《提示词测试专利成簇，独立开发者的补位生意》",
+    "date": "2026-09-04",
+    "slug": "innovation-brief-prompt-testing-patents"
   },
-  "totalPublished": 7,
-  "nextScheduled": "2026-08-25",
+  "totalPublished": 8,
+  "nextScheduled": "2026-09-05",
   "coveredPatentFamilies": [
     "US20260044392",
     "US20260188475",
@@ -36,25 +36,28 @@
     "US20260089190",
     "US12519829",
     "US20260073299",
-    "US12647455"
+    "US12647455",
+    "US20260244557",
+    "US20260236713",
+    "US12645723"
   ],
   "candidateTopics": [
-    {
-      "topic": "位置绑定生成式 AI（LBS + AIGC 内容生成）——已核验：US20260122299A1，AT&T Intellectual Property I, L.P.，公开日 2026-04-30（超 90 天窗口），需找到同族/近 90 天成簇信号才达标",
-      "score": 3.8,
-      "sources": [
-        "https://www.freepatentsonline.com/20260122299.html"
-      ]
-    },
     {
       "topic": "网络流量与静态数据中的 deepfake 检测（US12711793，已授权）——检索池发现，需核验对应申请公开日是否在近 90 天或近 12 个月成簇，再评估个人可做的 API 包装层",
       "score": 3.4,
       "sources": [
         "https://www.freepatentsonline.com/12711793.html"
       ]
+    },
+    {
+      "topic": "Agent 记忆管理圈地，小团队记忆层插件有空档（US20260111708A1 / Bosch / 2026-04-23 公开，已核验；注意其公开日超 90 天窗口，需再找同族成簇信号）",
+      "score": 3.5,
+      "sources": [
+        "https://www.freepatentsonline.com/y2026/0111708.html"
+      ]
     }
   ],
-  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-prompt-injection-defense-patents/",
+  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-prompt-testing-patents/",
   "lastPublishedVerifiedAt": null,
   "verification": {
     "brief4": {
@@ -77,6 +80,12 @@
     },
     "brief7": {
       "url": "https://unbug.github.io/innovation-brief-prompt-injection-defense-patents/",
+      "http": 200,
+      "verifiedAt": "2026-09-04 18:30 GMT+8",
+      "note": "线上已可访问（本轮内链目标核验），brief7 验证补记"
+    },
+    "brief8": {
+      "url": "https://unbug.github.io/innovation-brief-prompt-testing-patents/",
       "http": null,
       "verifiedAt": null,
       "note": "commit 后待 Actions build，下轮 cron 验证 URL + llms.txt"

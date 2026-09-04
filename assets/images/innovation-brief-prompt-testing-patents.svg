@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="AI 智创简报封面：提示词测试专利成簇，从自动生成评测函数到独立开发者的回归工具机会">
+  <rect width="1200" height="630" fill="#f4f6f9"/>
+  <rect x="0" y="0" width="1200" height="96" fill="#1f3a5f"/>
+  <text x="60" y="44" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#8fb3d9">AI 智创简报 · Patent Intelligence</text>
+  <text x="60" y="76" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="28" font-weight="bold" fill="#ffffff">提示词测试专利成簇，独立开发者的补位生意</text>
+
+  <!-- Column 1: patent signals -->
+  <rect x="60" y="136" width="340" height="410" rx="10" fill="#ffffff" stroke="#d5dde8"/>
+  <rect x="60" y="136" width="340" height="52" rx="10" fill="#2c5282"/>
+  <text x="230" y="170" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="bold" fill="#ffffff">专利信号</text>
+
+  <text x="84" y="226" font-family="Menlo, monospace" font-size="17" font-weight="bold" fill="#1f3a5f">US20260244557A1</text>
+  <text x="84" y="250" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#4a5568">Bold Limited · 2026-08-20 公开</text>
+  <text x="84" y="272" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#4a5568">自动生成提示词测试函数</text>
+
+  <text x="84" y="316" font-family="Menlo, monospace" font-size="17" font-weight="bold" fill="#1f3a5f">US20260236713A1</text>
+  <text x="84" y="340" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#4a5568">Bold Limited · 2026-08-13 公开</text>
+  <text x="84" y="362" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#4a5568">模型无关的提示词合成</text>
+
+  <text x="84" y="406" font-family="Menlo, monospace" font-size="17" font-weight="bold" fill="#1f3a5f">US12645723B1</text>
+  <text x="84" y="430" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#4a5568">Microsoft Technology Licensing</text>
+  <text x="84" y="452" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#4a5568">2026-06-02 授权 · 变异+评估循环</text>
+
+  <text x="84" y="504" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#2c5282">分类命中 G06F40 + G06F11/36</text>
+  <text x="84" y="526" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#2c5282">（语言处理 × 软件测试）</text>
+
+  <!-- Column 2: trend -->
+  <rect x="430" y="136" width="340" height="410" rx="10" fill="#ffffff" stroke="#d5dde8"/>
+  <rect x="430" y="136" width="340" height="52" rx="10" fill="#38648f"/>
+  <text x="600" y="170" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="bold" fill="#ffffff">技术趋势</text>
+
+  <text x="454" y="228" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="bold" fill="#1f3a5f">提示词：从文案到工程资产</text>
+  <text x="454" y="262" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#4a5568">评测逻辑由模型自动生成，</text>
+  <text x="454" y="284" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#4a5568">改动后自动回归、量化对比</text>
+
+  <rect x="454" y="312" width="292" height="88" rx="6" fill="#eef3f9"/>
+  <text x="470" y="340" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#2c5282">现有开源工具（promptfoo、</text>
+  <text x="470" y="362" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#2c5282">LangSmith）：手写断言为主</text>
+  <text x="470" y="386" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#2c5282">专利方向：自动长出业务测试集</text>
+
+  <text x="454" y="444" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#4a5568">痛点：换模型、改措辞后，</text>
+  <text x="454" y="466" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#4a5568">线上提示词静默回归无人察觉</text>
+
+  <!-- Column 3: opportunity -->
+  <rect x="800" y="136" width="340" height="410" rx="10" fill="#ffffff" stroke="#d5dde8"/>
+  <rect x="800" y="136" width="340" height="52" rx="10" fill="#4a7ab5"/>
+  <text x="970" y="170" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="bold" fill="#ffffff">一个人能做的机会</text>
+
+  <text x="824" y="226" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="bold" fill="#1f3a5f">1. 开源 CLI + GitHub Action</text>
+  <text x="824" y="250" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#4a5568">提示词改动自动跑回归出 diff</text>
+  <text x="824" y="272" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#4a5568">托管版按项目 $15-30/月</text>
+
+  <text x="824" y="316" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="bold" fill="#1f3a5f">2. 提示词回归体检服务</text>
+  <text x="824" y="340" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#4a5568">交付测试集+报告，单次数千元</text>
+
+  <rect x="824" y="372" width="292" height="66" rx="6" fill="#eef3f9"/>
+  <text x="840" y="398" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#2c5282">起步成本远低于 2 万元</text>
+  <text x="840" y="422" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#2c5282">1 人 4 周可出 MVP</text>
+
+  <text x="824" y="476" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#4a5568">今天可做：让你最常用的提示词</text>
+  <text x="824" y="498" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#4a5568">自动生成 10 条检查用例并跑对比</text>
+
+  <!-- arrows -->
+  <path d="M404 340 h22" stroke="#7f95b5" stroke-width="3" marker-end="url(#arr)"/>
+  <path d="M774 340 h22" stroke="#7f95b5" stroke-width="3" marker-end="url(#arr)"/>
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#7f95b5"/>
+    </marker>
+  </defs>
+
+  <text x="60" y="592" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="14" fill="#718096">Micropaper · AI 智创简报 · 2026-09-04 · 信息来源：FreePatentsOnline / GitHub</text>
+</svg>
