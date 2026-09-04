@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" font-family="Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect width="960" height="640" fill="#ffffff"/>
+  <text x="480" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a2e">两个流行叙事，各缺一个对照组</text>
+
+  <!-- experiment 1 -->
+  <rect x="40" y="60" width="420" height="230" rx="8" fill="#eef4ff" stroke="#3b6ea5" stroke-width="2"/>
+  <text x="60" y="88" font-size="16" font-weight="bold" fill="#1a1a2e">检验一：顿悟时刻 vs 重启对照</text>
+  <rect x="60" y="105" width="180" height="54" rx="6" fill="#ffffff" stroke="#3b6ea5"/>
+  <text x="150" y="127" text-anchor="middle" font-size="13" fill="#333">写到一半的前缀</text>
+  <text x="150" y="147" text-anchor="middle" font-size="13" fill="#333">继续写完</text>
+  <rect x="260" y="105" width="180" height="54" rx="6" fill="#ffffff" stroke="#3b6ea5"/>
+  <text x="350" y="127" text-anchor="middle" font-size="13" fill="#333">从空白重启</text>
+  <text x="350" y="147" text-anchor="middle" font-size="13" fill="#333">对齐总 token 预算</text>
+  <text x="60" y="185" font-size="14" fill="#c0392b">178 个题目-模型组合：恰好 1 个前缀真正受限</text>
+  <text x="60" y="209" font-size="14" fill="#333">预算落在重启网格内：继续写胜过重启 9/9</text>
+  <text x="60" y="238" font-size="14" font-weight="bold" fill="#1a1a2e">推理链压缩计算（compute compression），</text>
+  <text x="60" y="258" font-size="14" font-weight="bold" fill="#1a1a2e">不扩大可解题目的边界</text>
+
+  <!-- experiment 2 -->
+  <rect x="500" y="60" width="420" height="230" rx="8" fill="#fdeeee" stroke="#c0392b" stroke-width="2"/>
+  <text x="520" y="88" font-size="16" font-weight="bold" fill="#1a1a2e">检验二：早期探针 vs 难度基线</text>
+  <text x="520" y="116" font-size="14" fill="#333">只看题目、不看轨迹的难度代理：</text>
+  <text x="520" y="140" font-size="15" font-weight="bold" fill="#c0392b">AUROC 0.873（192K 条 R1 生成）</text>
+  <text x="520" y="162" font-size="13" fill="#555">已落进已发表探针法的报告区间</text>
+  <text x="520" y="190" font-size="14" fill="#333">贴近复现：池化口径 0.849 可复刻阳性结果；</text>
+  <text x="520" y="212" font-size="14" fill="#c0392b">收进到同题内部，十个锚点全部 ≈ 抛硬币</text>
+  <text x="520" y="234" font-size="14" fill="#c0392b">（t=4 处仅 0.496）</text>
+  <text x="520" y="262" font-size="13" fill="#555">同一估计器在 GPQA-diamond 公开数据达 0.917</text>
+
+  <!-- two prescriptions -->
+  <rect x="40" y="312" width="880" height="86" rx="8" fill="#eef9f1" stroke="#2e9e5b" stroke-width="2"/>
+  <text x="60" y="340" font-size="15" font-weight="bold" fill="#1a1a2e">给轨迹分析的两条处方</text>
+  <text x="60" y="366" font-size="14" fill="#333">任何「早期信号预测成败」的结论，先跑一遍只看题目的难度基线；</text>
+  <text x="60" y="388" font-size="14" fill="#333">任何「继续写更好」的结论，先对齐总预算再做重启对照。</text>
+
+  <!-- boundary -->
+  <rect x="40" y="420" width="420" height="96" rx="8" fill="#fff8e6" stroke="#d4a017" stroke-width="2"/>
+  <text x="60" y="448" font-size="14" font-weight="bold" fill="#555">边界</text>
+  <text x="60" y="472" font-size="13" fill="#555">单作者预印本，未经同行评审；但核心实验为</text>
+  <text x="60" y="492" font-size="13" fill="#555">预设注册设计。1/178 不等于 0，有一个组合</text>
+  <text x="60" y="510" font-size="13" fill="#555">前缀确实受限；结论限定池化评测口径。</text>
+
+  <!-- takeaway -->
+  <rect x="500" y="420" width="420" height="96" rx="8" fill="#f4f4f4" stroke="#999" stroke-width="1.5"/>
+  <text x="520" y="448" font-size="14" font-weight="bold" fill="#1a1a2e">为什么值得读</text>
+  <text x="520" y="472" font-size="13" fill="#333">过程奖励模型、提前退出、可解释性团队每天</text>
+  <text x="520" y="492" font-size="13" fill="#333">都在从轨迹里读结论；这篇给出最便宜的伪影</text>
+  <text x="520" y="510" font-size="13" fill="#333">自查法：难度基线 + 预算对齐重启。</text>
+
+  <text x="480" y="560" text-anchor="middle" font-size="13" fill="#777">It's the Problem, Not the Path: Budget and Difficulty Confounds in LLM Reasoning Trajectories · arXiv:2609.03436 · 2026-09-03</text>
+</svg>
