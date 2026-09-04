@@ -1,12 +1,12 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 智创简报：《提示词测试专利成簇，独立开发者的补位生意》",
-    "date": "2026-09-04",
-    "slug": "innovation-brief-prompt-testing-patents"
+    "title": "AI 智创简报：《Agent 记忆层被写进专利，垂直行业的本地化长尾还空着》",
+    "date": "2026-09-05",
+    "slug": "innovation-brief-agent-memory-context-patents"
   },
-  "totalPublished": 8,
-  "nextScheduled": "2026-09-05",
+  "totalPublished": 9,
+  "nextScheduled": "2026-09-12",
   "coveredPatentFamilies": [
     "US20260044392",
     "US20260188475",
@@ -39,7 +39,11 @@
     "US12647455",
     "US20260244557",
     "US20260236713",
-    "US12645723"
+    "US12645723",
+    "US20260186828",
+    "US20260189498",
+    "US20260252594",
+    "US20260203325"
   ],
   "candidateTopics": [
     {
@@ -47,13 +51,6 @@
       "score": 3.4,
       "sources": [
         "https://www.freepatentsonline.com/12711793.html"
-      ]
-    },
-    {
-      "topic": "Agent 记忆管理圈地，小团队记忆层插件有空档（US20260111708A1 / Bosch / 2026-04-23 公开，已核验；注意其公开日超 90 天窗口，需再找同族成簇信号）",
-      "score": 3.5,
-      "sources": [
-        "https://www.freepatentsonline.com/y2026/0111708.html"
       ]
     }
   ],
