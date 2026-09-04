@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" font-family="Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect width="960" height="640" fill="#ffffff"/>
+  <text x="480" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a2e">同一份权重，只换 serving adapter：0.00 或 0.96</text>
+
+  <!-- model -> two adapters -->
+  <rect x="40" y="70" width="180" height="80" rx="8" fill="#eef4ff" stroke="#3b6ea5" stroke-width="2"/>
+  <text x="130" y="102" text-anchor="middle" font-size="15" fill="#1a1a2e">同一模型权重</text>
+  <text x="130" y="126" text-anchor="middle" font-size="13" fill="#555">同 case / 解码 / 种子</text>
+
+  <line x1="220" y1="95" x2="280" y2="70" stroke="#c0392b" stroke-width="2" marker-end="url(#arrowR)"/>
+  <line x1="220" y1="125" x2="280" y2="150" stroke="#2e9e5b" stroke-width="2" marker-end="url(#arrowG)"/>
+  <defs>
+    <marker id="arrowR" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#c0392b"/></marker>
+    <marker id="arrowG" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#2e9e5b"/></marker>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#666"/></marker>
+  </defs>
+
+  <rect x="285" y="45" width="250" height="52" rx="8" fill="#fdeeee" stroke="#c0392b" stroke-width="2"/>
+  <text x="410" y="67" text-anchor="middle" font-size="14" fill="#1a1a2e">adapter A：模板与 parser 错配</text>
+  <text x="410" y="87" text-anchor="middle" font-size="13" fill="#c0392b">调用被静默丢弃 → BFCL 0.00</text>
+
+  <rect x="285" y="125" width="250" height="52" rx="8" fill="#e8f7ee" stroke="#2e9e5b" stroke-width="2"/>
+  <text x="410" y="147" text-anchor="middle" font-size="14" fill="#1a1a2e">adapter B：契约对齐</text>
+  <text x="410" y="167" text-anchor="middle" font-size="13" fill="#2e9e5b">同一模型 → BFCL 0.96</text>
+
+  <!-- funnel numbers -->
+  <rect x="580" y="45" width="340" height="132" rx="8" fill="#fafafa" stroke="#999" stroke-width="1.5"/>
+  <text x="600" y="70" font-size="15" font-weight="bold" fill="#1a1a2e">漏斗实测（错配侧）</text>
+  <text x="600" y="94" font-size="13" fill="#333">tau-bench 115 任务：服务器解析调用 0 → 636</text>
+  <text x="600" y="114" font-size="13" fill="#333">触达工具执行的任务 0 → 103</text>
+  <text x="600" y="134" font-size="13" fill="#333">Qwen2.5-Coder 21x 规模：服务器解析恒为 0/100</text>
+  <text x="600" y="154" font-size="13" fill="#333">模型发出的格式正确调用 32B 处达 80/100</text>
+
+  <!-- 2x2 mechanism -->
+  <rect x="40" y="210" width="430" height="120" rx="8" fill="#eef4ff" stroke="#3b6ea5" stroke-width="2"/>
+  <text x="60" y="238" font-size="15" font-weight="bold" fill="#1a1a2e">2x2 机制定位</text>
+  <text x="60" y="264" font-size="14" fill="#333">chat template 有无 × parser 有无：</text>
+  <text x="60" y="288" font-size="14" fill="#c0392b">两个主效应恰为零，全部效应在交互项</text>
+  <text x="60" y="312" font-size="13" fill="#555">没有单个组件是坏的；契约错配时只修一侧无用</text>
+
+  <!-- RL loop -->
+  <rect x="490" y="210" width="430" height="120" rx="8" fill="#fdeeee" stroke="#c0392b" stroke-width="2"/>
+  <text x="510" y="238" font-size="15" font-weight="bold" fill="#1a1a2e">RL 训练回路（verl AgentLoop，7B）</text>
+  <text x="510" y="264" font-size="14" fill="#333">115 条生成中 45 条携带完整调用：</text>
+  <text x="510" y="288" font-size="14" fill="#c0392b">被接受 0 · 执行 0 · 返回观测 0</text>
+  <text x="510" y="312" font-size="13" fill="#555">训练信号被静默抽干；1.5B 的零是过决定的，分开报告</text>
+
+  <!-- honest twist -->
+  <rect x="40" y="355" width="880" height="92" rx="8" fill="#fff8e6" stroke="#d4a017" stroke-width="2"/>
+  <text x="60" y="383" font-size="15" font-weight="bold" fill="#1a1a2e">最诚实的转折：修好测量 ≠ 修好能力</text>
+  <text x="60" y="410" font-size="14" fill="#333">修复 adapter 后解析量 0 → 84、多轮挽救 0 → 9，但 pass rate 仅从 53 到 62，统计上不显著（n.s.）。</text>
+  <text x="60" y="434" font-size="13" fill="#777">配套 98 行 preflight 检查可捕获文中全部静默失败，接入评测前先查模板与 parser 是否配对。</text>
+
+  <!-- boundary + takeaway -->
+  <rect x="40" y="472" width="420" height="92" rx="8" fill="#f4f4f4" stroke="#999" stroke-width="1.5"/>
+  <text x="60" y="500" font-size="14" font-weight="bold" fill="#555">边界</text>
+  <text x="60" y="526" font-size="13" fill="#555">结论限于 BFCL v4 与 tau-bench 上被精确复现的</text>
+  <text x="60" y="546" font-size="13" fill="#555">接口层失效；论文未断言所有基准分数都不可信。</text>
+
+  <rect x="500" y="472" width="420" height="92" rx="8" fill="#eef9f1" stroke="#2e9e5b" stroke-width="2"/>
+  <text x="520" y="500" font-size="14" font-weight="bold" fill="#1a1a2e">启示</text>
+  <text x="520" y="526" font-size="13" fill="#333">工具调用率是「模型 + serving 接口栈」的属性；</text>
+  <text x="520" y="546" font-size="13" fill="#333">读别人家的 agent 分数前，先确认接口契约对齐。</text>
+</svg>
