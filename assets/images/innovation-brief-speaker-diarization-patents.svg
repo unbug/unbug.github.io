@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+  <rect width="1200" height="630" fill="#f4f6f9"/>
+  <rect width="1200" height="8" fill="#2c5f8a"/>
+
+  <!-- Header -->
+  <text x="60" y="72" font-size="34" font-weight="bold" fill="#1f2d3d">AI 智创简报：说话人分离专利转向流式</text>
+  <text x="60" y="112" font-size="20" fill="#5b6b7c">转写接单者的工具活 · 2026-09-05</text>
+
+  <!-- Column 1: patent signal -->
+  <rect x="60" y="150" width="340" height="380" rx="10" fill="#ffffff" stroke="#d7dee6"/>
+  <rect x="60" y="150" width="340" height="52" rx="10" fill="#2c5f8a"/>
+  <text x="230" y="184" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">专利信号</text>
+
+  <text x="84" y="242" font-size="17" font-weight="bold" fill="#1f2d3d">US20260245574A1 · NVIDIA</text>
+  <text x="84" y="268" font-size="15" fill="#42546a">流式分离：说话人缓存随片段输入，2026-08-20 公开</text>
+
+  <text x="84" y="312" font-size="17" font-weight="bold" fill="#1f2d3d">US20260045268A1 · Google</text>
+  <text x="84" y="338" font-size="15" fill="#42546a">无监督分离：潜在说话人瓶颈，2026-02-12 公开</text>
+
+  <text x="84" y="382" font-size="17" font-weight="bold" fill="#1f2d3d">US20250335711A1 · Google</text>
+  <text x="84" y="408" font-size="15" fill="#42546a">分块自注册 + 多模态大模型长音频分离</text>
+
+  <text x="84" y="452" font-size="17" font-weight="bold" fill="#1f2d3d">US20250225998A1 · Google</text>
+  <text x="84" y="478" font-size="15" fill="#42546a">大模型后处理，直接修正说话人标签</text>
+
+  <!-- Arrow 1 -->
+  <path d="M410 340 L450 340" stroke="#8fa3b5" stroke-width="3" marker-end="url(#arr)"/>
+
+  <!-- Column 2: trend -->
+  <rect x="460" y="150" width="340" height="380" rx="10" fill="#ffffff" stroke="#d7dee6"/>
+  <rect x="460" y="150" width="340" height="52" rx="10" fill="#4a7aa5"/>
+  <text x="630" y="184" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">技术趋势</text>
+
+  <text x="484" y="242" font-size="17" font-weight="bold" fill="#1f2d3d">离线批处理 → 流式定人</text>
+  <text x="484" y="268" font-size="15" fill="#42546a">说话人缓存免重推历史，实时转写算力下降</text>
+
+  <text x="484" y="312" font-size="17" font-weight="bold" fill="#1f2d3d">分离结果进大模型链路</text>
+  <text x="484" y="338" font-size="15" fill="#42546a">分块自注册抗长音频漂移，后处理改标签</text>
+
+  <text x="484" y="382" font-size="17" font-weight="bold" fill="#1f2d3d">现有开源栈的空位</text>
+  <text x="484" y="408" font-size="15" fill="#42546a">pyannote-audio（约 1.05 万 star）为离线批分析，</text>
+  <text x="484" y="430" font-size="15" fill="#42546a">长会议抢话处会中途换人，错几十分钟才发现</text>
+
+  <!-- Arrow 2 -->
+  <path d="M810 340 L850 340" stroke="#8fa3b5" stroke-width="3" marker-end="url(#arr)"/>
+
+  <!-- Column 3: opportunity -->
+  <rect x="860" y="150" width="280" height="380" rx="10" fill="#ffffff" stroke="#d7dee6"/>
+  <rect x="860" y="150" width="280" height="52" rx="10" fill="#e0a43c"/>
+  <text x="1000" y="184" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">一个人能做的</text>
+
+  <text x="884" y="242" font-size="17" font-weight="bold" fill="#1f2d3d">分离质检插件</text>
+  <text x="884" y="268" font-size="15" fill="#42546a">挂在 pyannote + Whisper 上，置信分标红</text>
+  <text x="884" y="290" font-size="15" fill="#42546a">抢话段，导出 SRT/VTT，$8-15/月/席位</text>
+
+  <text x="884" y="334" font-size="17" font-weight="bold" fill="#1f2d3d">说话人标签审核服务</text>
+  <text x="884" y="360" font-size="15" fill="#42546a">历史稿置信度核查，单次 1000-3000 元</text>
+
+  <text x="884" y="404" font-size="17" font-weight="bold" fill="#1f2d3d">今天就能做</text>
+  <text x="884" y="430" font-size="15" fill="#42546a">拿两小时会议录音跑开源流水线，数一数</text>
+  <text x="884" y="452" font-size="15" fill="#42546a">要人工改说话人的句数 = 需求样本</text>
+
+  <!-- Footer -->
+  <text x="60" y="586" font-size="15" fill="#7c8a99">读者：个人开发者 / 一人公司 / 小团队 · 起步成本 ≤ 2 万元 · MVP 4 周内可完成</text>
+  <text x="1140" y="586" font-size="15" fill="#7c8a99" text-anchor="end">Micropaper · AI 智创简报</text>
+
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#8fa3b5"/>
+    </marker>
+  </defs>
+</svg>

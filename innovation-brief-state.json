@@ -1,11 +1,11 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 智创简报：《逐句举证专利扎堆，RAG 质检的插件生意》",
+    "title": "AI 智创简报：《说话人分离专利转向流式，转写接单者的工具活》",
     "date": "2026-09-05",
-    "slug": "innovation-brief-answer-citation-patents"
+    "slug": "innovation-brief-speaker-diarization-patents"
   },
-  "totalPublished": 10,
+  "totalPublished": 11,
   "nextScheduled": "2026-09-12",
   "coveredPatentFamilies": [
     "US20260044392",
@@ -48,7 +48,11 @@
     "US20260212126",
     "US20260220372",
     "US20260211893",
-    "US20260244665"
+    "US20260244665",
+    "US20260245574",
+    "US20260045268",
+    "US20250335711",
+    "US20250225998"
   ],
   "candidateTopics": [
     {
@@ -59,7 +63,7 @@
       ]
     }
   ],
-  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-answer-citation-patents/",
+  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-speaker-diarization-patents/",
   "lastPublishedVerifiedAt": null,
   "verification": {
     "brief4": {
