@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" font-family="PingFang SC, Helvetica, Arial, sans-serif">
+  <rect width="1200" height="660" fill="#ffffff"/>
+  <text x="600" y="42" text-anchor="middle" font-size="26" font-weight="bold" fill="#1a1a2e">同一模型（Kimi K3）下，换 Harness 的差距有多大</text>
+  <text x="600" y="70" text-anchor="middle" font-size="15" fill="#666">FrontierHarness Eval：9 个外壳 / 12 种配置 · 数据 frontierharness.org（2026-09-06 实测）</text>
+
+  <!-- Pass rate bars -->
+  <text x="80" y="115" font-size="17" font-weight="bold" fill="#16213e">任务通过率（%）</text>
+  <line x1="240" y1="130" x2="240" y2="330" stroke="#999" stroke-width="1.5"/>
+  <!-- axis 50 to 70 mapped to x=240..640 -->
+  <g font-size="13" fill="#888">
+    <text x="240" y="348" text-anchor="middle">50</text>
+    <text x="340" y="348" text-anchor="middle">55</text>
+    <text x="440" y="348" text-anchor="middle">60</text>
+    <text x="540" y="348" text-anchor="middle">65</text>
+  </g>
+  <g font-size="14" fill="#333">
+    <text x="228" y="158" text-anchor="end">Codex</text>
+    <rect x="240" y="144" width="334" height="22" fill="#2e86de"/>
+    <text x="582" y="160" font-weight="bold" fill="#1a1a2e">66.7%</text>
+
+    <text x="228" y="202" text-anchor="end">中间梯队</text>
+    <rect x="240" y="188" width="168" height="22" fill="#a3c9f0"/>
+    <text x="416" y="204" fill="#555">55.6% - 61.1%</text>
+
+    <text x="228" y="246" text-anchor="end">OpenCode / Hermes</text>
+    <rect x="240" y="232" width="0" height="22"/>
+    <rect x="240" y="232" width="1.5" height="22" fill="#e74c3c"/>
+    <text x="250" y="248" font-weight="bold" fill="#c0392b">50.0%</text>
+  </g>
+  <text x="250" y="286" font-size="13" fill="#888">轴从 50% 起画，突出差距区间</text>
+
+  <!-- Cost bars -->
+  <text x="700" y="115" font-size="17" font-weight="bold" fill="#16213e">每任务成本（美元）</text>
+  <line x1="860" y1="130" x2="860" y2="330" stroke="#999" stroke-width="1.5"/>
+  <g font-size="14" fill="#333">
+    <text x="848" y="160" text-anchor="end">Exo Harness（最低）</text>
+    <rect x="860" y="146" width="21" height="22" fill="#2ecc71"/>
+    <text x="890" y="162" font-weight="bold">$1.05</text>
+
+    <text x="848" y="204" text-anchor="end">Codex</text>
+    <rect x="860" y="190" width="69" height="22" fill="#7fb3e8"/>
+    <text x="938" y="206">$3.47</text>
+
+    <text x="848" y="248" text-anchor="end">Claude Code（最高）</text>
+    <rect x="860" y="234" width="367" height="22" fill="#e67e22"/>
+    <text x="1160" y="250" font-weight="bold" fill="#d35400">$18.34</text>
+  </g>
+  <text x="862" y="286" font-size="13" fill="#888">质量与成本脱钩：每成功一次的中位成本 $0.0615（OpenCode）到 $0.2880（Claude Code），差约 4.7 倍</text>
+  <text x="862" y="308" font-size="13" fill="#888">缓存命中率最高 Codex 88.0%，最低恰是 Claude Code 67.8%</text>
+
+  <!-- Three signals -->
+  <g>
+    <rect x="60" y="380" width="340" height="190" rx="10" fill="#eaf4ff" stroke="#2e86de" stroke-width="1.5"/>
+    <text x="230" y="412" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a5aa0">外壳做成产品</text>
+    <text x="80" y="444" font-size="14" fill="#333">DeepSeek Harness（08-13 发布）</text>
+    <text x="80" y="470" font-size="14" fill="#333">一切能力皆插件，Minimal mode</text>
+    <text x="80" y="496" font-size="14" fill="#333">留最小环境评测</text>
+    <text x="80" y="528" font-size="15" font-weight="bold" fill="#1a5aa0">GitHub 213,026 star（09-06 实测）</text>
+    <text x="80" y="552" font-size="13" fill="#888">创建于 08-13，三周内即破二十万</text>
+  </g>
+  <g>
+    <rect x="430" y="380" width="340" height="190" rx="10" fill="#eafbea" stroke="#27ae60" stroke-width="1.5"/>
+    <text x="600" y="412" text-anchor="middle" font-size="17" font-weight="bold" fill="#1e8449">外壳做成考题</text>
+    <text x="450" y="444" font-size="14" fill="#333">HarnessDev（2609.01437）：</text>
+    <text x="450" y="468" font-size="14" fill="#333">考核 LLM 能否自建并进化外壳</text>
+    <text x="450" y="496" font-size="14" fill="#333">CordisBench（2609.01600）：</text>
+    <text x="450" y="520" font-size="14" fill="#333">1,200 题考组件生命周期推理</text>
+    <text x="450" y="552" font-size="13" fill="#888">arXiv 09-01 至 09-03 三天基准潮</text>
+  </g>
+  <g>
+    <rect x="800" y="380" width="340" height="190" rx="10" fill="#fdeeee" stroke="#c0392b" stroke-width="1.5"/>
+    <text x="970" y="412" text-anchor="middle" font-size="17" font-weight="bold" fill="#a93226">热潮的另一面</text>
+    <text x="820" y="444" font-size="14" fill="#333">Hook 更新即可操纵外壳：</text>
+    <text x="820" y="468" font-size="14" fill="#333">供应链攻击入口进入 agent 层</text>
+    <text x="820" y="496" font-size="14" fill="#333">（arXiv:2609.03884）</text>
+    <text x="820" y="524" font-size="14" fill="#333">同工具选择率仅 42%，造轮子 19%</text>
+    <text x="820" y="552" font-size="13" fill="#888">Armature 实测 16,893 会话（有效 5,292）</text>
+  </g>
+
+  <text x="600" y="620" text-anchor="middle" font-size="15" fill="#444">模型权重冻结时，仅换外壳通过率就差 16.7 个百分点、成本差 17 倍：竞争焦点从「选哪个模型」转向「基准化哪层外壳」</text>
+  <text x="600" y="645" text-anchor="middle" font-size="12" fill="#999">评测方自注仅覆盖软件工程与终端任务，且出品方 Runta 亦是厂商，外推需谨慎 · AI 范式雷达第 9 期</text>
+</svg>
