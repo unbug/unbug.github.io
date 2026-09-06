@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+  <rect width="1200" height="630" fill="#f4f6f9"/>
+  <rect width="1200" height="8" fill="#2c5f8a"/>
+
+  <!-- Header -->
+  <text x="60" y="72" font-size="34" font-weight="bold" fill="#1f2d3d">AI 智创简报：MCP 安全专利密集授权</text>
+  <text x="60" y="112" font-size="20" fill="#5b6b7c">插件市场审计留给了谁 · 2026-09-06</text>
+
+  <!-- Column 1: patent signal -->
+  <rect x="60" y="150" width="340" height="380" rx="10" fill="#ffffff" stroke="#d7dee6"/>
+  <rect x="60" y="150" width="340" height="52" rx="10" fill="#2c5f8a"/>
+  <text x="230" y="184" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">专利信号</text>
+
+  <text x="84" y="238" font-size="17" font-weight="bold" fill="#1f2d3d">US12574336 · Airia</text>
+  <text x="84" y="263" font-size="15" fill="#42546a">MCP 资源清单变更监控，2026-03-10 授权</text>
+
+  <text x="84" y="306" font-size="17" font-weight="bold" fill="#1f2d3d">US12562968 · Airia</text>
+  <text x="84" y="331" font-size="15" fill="#42546a">代理层安全接入，2026-02-24 授权</text>
+
+  <text x="84" y="374" font-size="17" font-weight="bold" fill="#1f2d3d">US12602470 · Airia</text>
+  <text x="84" y="399" font-size="15" fill="#42546a">容器化执行隔离，2026-04-14 授权</text>
+
+  <text x="84" y="442" font-size="17" font-weight="bold" fill="#1f2d3d">US12705267 · Notion</text>
+  <text x="84" y="467" font-size="15" fill="#42546a">MCP 工具访问权限属性，2026-08-11 授权</text>
+
+  <text x="84" y="506" font-size="14" fill="#7c8b9c">Airia 同族五件，均为已授权专利</text>
+
+  <!-- Arrow 1 -->
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#8fa3b5"/>
+    </marker>
+  </defs>
+  <path d="M410 340 L450 340" stroke="#8fa3b5" stroke-width="3" marker-end="url(#arr)"/>
+
+  <!-- Column 2: trend -->
+  <rect x="460" y="150" width="340" height="380" rx="10" fill="#ffffff" stroke="#d7dee6"/>
+  <rect x="460" y="150" width="340" height="52" rx="10" fill="#4a7aa5"/>
+  <text x="630" y="184" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">技术趋势</text>
+
+  <text x="484" y="242" font-size="17" font-weight="bold" fill="#1f2d3d">一次性审核 → 运行时持续盯</text>
+  <text x="484" y="268" font-size="15" fill="#42546a">清单快照、版本比对、异常自动降级</text>
+
+  <text x="484" y="312" font-size="17" font-weight="bold" fill="#1f2d3d">供应链成主战场</text>
+  <text x="484" y="338" font-size="15" fill="#42546a">工具投毒入 OWASP；11 个注册市场</text>
+  <text x="484" y="360" font-size="15" fill="#42546a">9 家未审即收录恶意服务器</text>
+
+  <text x="484" y="404" font-size="17" font-weight="bold" fill="#1f2d3d">平台侧已被专利圈住</text>
+  <text x="484" y="430" font-size="15" fill="#42546a">代理、容器、策略管理归大厂</text>
+  <text x="484" y="452" font-size="15" fill="#42546a">第三方独立审计仍是空位</text>
+
+  <!-- Arrow 2 -->
+  <path d="M810 340 L850 340" stroke="#8fa3b5" stroke-width="3" marker-end="url(#arr)"/>
+
+  <!-- Column 3: opportunity -->
+  <rect x="860" y="150" width="280" height="380" rx="10" fill="#ffffff" stroke="#d7dee6"/>
+  <rect x="860" y="150" width="280" height="52" rx="10" fill="#6f93b3"/>
+  <text x="1000" y="184" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">一个人能做的</text>
+
+  <text x="884" y="242" font-size="17" font-weight="bold" fill="#1f2d3d">MCP 审计工具</text>
+  <text x="884" y="268" font-size="15" fill="#42546a">清单 diff + 注入扫描 + 变更告警</text>
+  <text x="884" y="290" font-size="15" fill="#42546a">CLI / GitHub Action / 面板</text>
+
+  <text x="884" y="334" font-size="17" font-weight="bold" fill="#1f2d3d">监控订阅</text>
+  <text x="884" y="360" font-size="15" fill="#42546a">$9-19/月/服务器，客户是集成商</text>
+
+  <text x="884" y="404" font-size="17" font-weight="bold" fill="#1f2d3d">上架前审计服务</text>
+  <text x="884" y="430" font-size="15" fill="#42546a">报告 + 整改清单，单次数千元</text>
+
+  <text x="884" y="478" font-size="15" fill="#2c5f8a" font-weight="bold">月成本数百元 · 1 人 4 周出 MVP</text>
+
+  <!-- Footer -->
+  <text x="60" y="586" font-size="15" fill="#7c8b9c">读完今天能做：diff 一个常用 MCP 服务器两个月前的工具描述，看有没有藏进指令。</text>
+</svg>

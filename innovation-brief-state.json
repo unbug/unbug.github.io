@@ -1,12 +1,12 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 智创简报：《说话人分离专利转向流式，转写接单者的工具活》",
-    "date": "2026-09-05",
-    "slug": "innovation-brief-speaker-diarization-patents"
+    "title": "AI 智创简报：《MCP 安全专利密集授权，插件市场审计留给了谁》",
+    "date": "2026-09-06",
+    "slug": "innovation-brief-mcp-security-patents"
   },
-  "totalPublished": 11,
-  "nextScheduled": "2026-09-12",
+  "totalPublished": 12,
+  "nextScheduled": "2026-09-13",
   "coveredPatentFamilies": [
     "US20260044392",
     "US20260188475",
@@ -52,7 +52,13 @@
     "US20260245574",
     "US20260045268",
     "US20250335711",
-    "US20250225998"
+    "US20250225998",
+    "US12574336",
+    "US12568091",
+    "US12562968",
+    "US12602470",
+    "US12683991",
+    "US12705267"
   ],
   "candidateTopics": [
     {
@@ -60,6 +66,13 @@
       "score": 3.4,
       "sources": [
         "https://www.freepatentsonline.com/12711793.html"
+      ]
+    },
+    {
+      "topic": "Mistral US12670045（code implemented tool calls，沙箱内代码块封装工具调用、暂停-回填-重放）——已授权 2026-06-30，可评估面向 Agent 开发者的沙箱调试/回放工具层",
+      "score": 3.5,
+      "sources": [
+        "https://www.freepatentsonline.com/12670045.html"
       ]
     }
   ],
