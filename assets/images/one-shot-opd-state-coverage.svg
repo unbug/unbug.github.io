@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620" font-family="Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect width="960" height="620" fill="#ffffff"/>
+  <text x="480" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a2e">一条 query 覆盖 71.5% 状态，瓶颈在吸收不在供给</text>
+
+  <!-- coverage curve panel -->
+  <rect x="40" y="58" width="440" height="300" rx="8" fill="#eef4ff" stroke="#3b6ea5" stroke-width="2"/>
+  <text x="60" y="86" font-size="16" font-weight="bold" fill="#1a1a2e">状态覆盖（state coverage）随 query 数</text>
+  <!-- axes -->
+  <line x1="90" y1="320" x2="450" y2="320" stroke="#666" stroke-width="1.5"/>
+  <line x1="90" y1="320" x2="90" y2="110" stroke="#666" stroke-width="1.5"/>
+  <text x="270" y="345" text-anchor="middle" font-size="12" fill="#555">query 数（对数示意）</text>
+  <text x="80" y="118" text-anchor="end" font-size="12" fill="#555">100%</text>
+  <text x="80" y="243" text-anchor="end" font-size="12" fill="#555">71.5%</text>
+  <line x1="90" y1="238" x2="450" y2="238" stroke="#c0392b" stroke-width="1" stroke-dasharray="4 3"/>
+  <!-- curve -->
+  <path d="M 90 320 C 110 260 118 246 130 240 S 250 200 440 116" fill="none" stroke="#3b6ea5" stroke-width="3"/>
+  <circle cx="130" cy="240" r="5" fill="#c0392b"/>
+  <text x="142" y="230" font-size="13" font-weight="bold" fill="#c0392b">1 条：71.5%</text>
+  <text x="142" y="248" font-size="12" fill="#555">大部分在前 100 步内到账</text>
+  <circle cx="330" cy="160" r="5" fill="#2e9e5b"/>
+  <text x="342" y="152" font-size="13" font-weight="bold" fill="#2e9e5b">16 条：98.9%</text>
+  <text x="342" y="170" font-size="12" fill="#555">追平全量数据训练</text>
+
+  <!-- bottleneck panel -->
+  <rect x="500" y="58" width="420" height="300" rx="8" fill="#fdeeee" stroke="#c0392b" stroke-width="2"/>
+  <text x="520" y="86" font-size="16" font-weight="bold" fill="#1a1a2e">对齐速率：另一半答案</text>
+  <text x="520" y="116" font-size="14" fill="#333">无论喂 1 条还是全量数据，学生对教师的</text>
+  <text x="520" y="138" font-size="14" fill="#333">对齐速度都以相似速率放缓。</text>
+  <rect x="520" y="156" width="380" height="76" rx="6" fill="#ffffff" stroke="#c0392b"/>
+  <text x="536" y="180" font-size="14" font-weight="bold" fill="#c0392b">状态集固定不动时：</text>
+  <text x="536" y="202" font-size="14" fill="#333">吸收这批监督仍需数百步</text>
+  <text x="536" y="222" font-size="13" fill="#555">→ 稀缺的是算法吃进监督的速率</text>
+  <rect x="520" y="248" width="380" height="92" rx="6" fill="#fff8e6" stroke="#d4a017"/>
+  <text x="536" y="274" font-size="14" font-weight="bold" fill="#555">诊断词（作者自造）</text>
+  <text x="536" y="298" font-size="15" font-weight="bold" fill="#1a1a2e">data-overfed but algorithm-starved</text>
+  <text x="536" y="320" font-size="13" fill="#555">数据喂饱了，算法还饿着</text>
+
+  <!-- takeaway -->
+  <rect x="40" y="380" width="880" height="96" rx="8" fill="#eef9f1" stroke="#2e9e5b" stroke-width="2"/>
+  <text x="60" y="408" font-size="15" font-weight="bold" fill="#1a1a2e">实操含义</text>
+  <text x="60" y="434" font-size="14" fill="#333">后训练预算未必继续堆数据：query 间的语义差异比条数重要（多教师设定下每域 16 条即追平全量）；</text>
+  <text x="60" y="458" font-size="14" fill="#333">学习率、优化步数这类训练动力学旋钮，是比数据供给更值得投入的方向。</text>
+
+  <!-- boundary -->
+  <rect x="40" y="498" width="880" height="92" rx="8" fill="#ffffff" stroke="#999" stroke-width="1.5"/>
+  <text x="60" y="526" font-size="14" font-weight="bold" fill="#555">边界</text>
+  <text x="60" y="550" font-size="13" fill="#555">未经同行评审的预印本（arXiv:2609.04172，2026-09-03 提交）；state coverage 是本文提出的测量框架，</text>
+  <text x="60" y="572" font-size="13" fill="#555">不是学界既有定论。结论限定在数学任务与所测模型家族，作者报告其跨家族、跨领域稳健。</text>
+</svg>
