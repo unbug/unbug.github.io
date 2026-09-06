@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620" font-family="Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect width="960" height="620" fill="#ffffff"/>
+  <text x="480" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a2e">轨迹不是冻死的示范：回放文件操作即可重建可执行环境</text>
+
+  <!-- pipeline panel -->
+  <rect x="40" y="58" width="880" height="200" rx="8" fill="#eef4ff" stroke="#3b6ea5" stroke-width="2"/>
+  <text x="60" y="86" font-size="16" font-weight="bold" fill="#1a1a2e">环境重建流水线（两步）</text>
+  <rect x="60" y="104" width="200" height="70" rx="6" fill="#ffffff" stroke="#3b6ea5"/>
+  <text x="160" y="132" text-anchor="middle" font-size="14" fill="#333">已有轨迹</text>
+  <text x="160" y="154" text-anchor="middle" font-size="12" fill="#555">记录每次文件读写</text>
+  <text x="288" y="143" font-size="20" fill="#3b6ea5">&#8594;</text>
+  <rect x="312" y="104" width="200" height="70" rx="6" fill="#ffffff" stroke="#3b6ea5"/>
+  <text x="412" y="132" text-anchor="middle" font-size="14" fill="#333">回放：恢复到修改前</text>
+  <text x="412" y="154" text-anchor="middle" font-size="12" fill="#555">得到部分工作区</text>
+  <text x="540" y="143" font-size="20" fill="#3b6ea5">&#8594;</text>
+  <rect x="564" y="104" width="200" height="70" rx="6" fill="#ffffff" stroke="#3b6ea5"/>
+  <text x="664" y="132" text-anchor="middle" font-size="14" fill="#333">completion agent</text>
+  <text x="664" y="154" text-anchor="middle" font-size="12" fill="#555">补齐缺失文件与依赖</text>
+  <text x="792" y="143" font-size="20" fill="#3b6ea5">&#8594;</text>
+  <rect x="816" y="104" width="88" height="70" rx="6" fill="#eef9f1" stroke="#2e9e5b"/>
+  <text x="860" y="132" text-anchor="middle" font-size="14" font-weight="bold" fill="#2e9e5b">37.3k</text>
+  <text x="860" y="154" text-anchor="middle" font-size="11" fill="#555">可复用环境</text>
+  <text x="60" y="212" font-size="13" fill="#555">宽度轴：挖掘相关环境的方向性依赖，合成跨代码库查询</text>
+  <text x="480" y="212" font-size="13" fill="#555">深度轴：user agent 把单轮查询扩成带迭代反馈的多轮会话</text>
+
+  <!-- results panel -->
+  <rect x="40" y="280" width="440" height="176" rx="8" fill="#eef9f1" stroke="#2e9e5b" stroke-width="2"/>
+  <text x="60" y="308" font-size="16" font-weight="bold" fill="#1a1a2e">SFT Qwen3.5-27B 实测（相对基线）</text>
+  <text x="60" y="342" font-size="14" fill="#333">单轮 Terminal-Bench 2.1</text>
+  <rect x="60" y="352" width="286" height="22" rx="4" fill="#c9e8d4"/>
+  <rect x="60" y="352" width="247" height="22" rx="4" fill="#2e9e5b"/>
+  <text x="356" y="368" font-size="14" font-weight="bold" fill="#2e9e5b">+11.9 分</text>
+  <text x="60" y="400" font-size="14" fill="#333">多轮 EvoCode-Bench v2 MT@4</text>
+  <rect x="60" y="410" width="286" height="22" rx="4" fill="#c9e8d4"/>
+  <rect x="60" y="410" width="286" height="22" rx="4" fill="#2e9e5b"/>
+  <text x="356" y="426" font-size="14" font-weight="bold" fill="#2e9e5b">+13.8 分</text>
+
+  <!-- narrative panel -->
+  <rect x="500" y="280" width="420" height="176" rx="8" fill="#fdeeee" stroke="#c0392b" stroke-width="2"/>
+  <text x="520" y="308" font-size="16" font-weight="bold" fill="#1a1a2e">叙事反转</text>
+  <text x="520" y="338" font-size="14" fill="#333">一条轨迹 = 一次性冻结的示范</text>
+  <text x="520" y="362" font-size="14" fill="#333">一个环境 = 反复出题 + 执行反馈</text>
+  <text x="520" y="392" font-size="14" font-weight="bold" fill="#c0392b">瓶颈不是轨迹，是可执行环境；</text>
+  <text x="520" y="414" font-size="14" font-weight="bold" fill="#c0392b">而环境藏在别人跑过的轨迹里</text>
+  <text x="520" y="440" font-size="13" fill="#555">数据再加工从样本级推到环境级</text>
+
+  <!-- boundary -->
+  <rect x="40" y="478" width="880" height="106" rx="8" fill="#fff8e6" stroke="#d4a017" stroke-width="2"/>
+  <text x="60" y="506" font-size="14" font-weight="bold" fill="#555">边界</text>
+  <text x="60" y="530" font-size="13" fill="#555">未经同行评审的预印本（arXiv:2609.04148，2026-09-03 提交）；「环境藏在轨迹里」是作者主张，不是学界定论。</text>
+  <text x="60" y="552" font-size="13" fill="#555">+11.9 / +13.8 均为 SFT 后相对基线的提升分数，非绝对成绩；结果限于所测模型（Qwen3.5-27B）与终端任务基准。</text>
+  <text x="60" y="574" font-size="13" fill="#555">对照阅读：#175 拆轨迹评估的预算混淆，本文把轨迹当环境重建原料，同一数据物的两个方向。</text>
+</svg>
