@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="560" viewBox="0 0 860 560" font-family="Helvetica, Arial, sans-serif">
+  <rect width="860" height="560" fill="#ffffff"/>
+  <text x="430" y="36" text-anchor="middle" font-size="21" font-weight="bold" fill="#1a1a2e">三次逃逸与攻防经济学</text>
+  <text x="430" y="60" text-anchor="middle" font-size="13" fill="#555">通用 QEMU/KVM 上的自主逃逸（据 Trail of Bits，2026-08-26）</text>
+
+  <!-- Three rounds -->
+  <rect x="40" y="86" width="240" height="120" rx="8" fill="#fdecea" stroke="#c0392b" stroke-width="1.5"/>
+  <text x="160" y="110" text-anchor="middle" font-size="14" font-weight="bold" fill="#c0392b">第一轮 · 约 1 小时</text>
+  <text x="160" y="134" text-anchor="middle" font-size="12" fill="#333">宿主机内核漏洞 Januscape</text>
+  <text x="160" y="154" text-anchor="middle" font-size="12" fill="#333">（CVE-2026-53359，据称）</text>
+  <text x="160" y="174" text-anchor="middle" font-size="12" fill="#333">自建 exploit 打到 hardlock</text>
+
+  <rect x="310" y="86" width="240" height="120" rx="8" fill="#fdecea" stroke="#c0392b" stroke-width="1.5"/>
+  <text x="430" y="110" text-anchor="middle" font-size="14" font-weight="bold" fill="#c0392b">第二轮 · 组合利用</text>
+  <text x="430" y="134" text-anchor="middle" font-size="12" fill="#333">libslirp 4.7.0（CVE-2026-9539）</text>
+  <text x="430" y="154" text-anchor="middle" font-size="12" fill="#333">+ 未分配 CVE 的上游修复缺陷</text>
+  <text x="430" y="174" text-anchor="middle" font-size="12" fill="#333">= 宿主机任意内存读写</text>
+
+  <rect x="580" y="86" width="240" height="120" rx="8" fill="#fdecea" stroke="#c0392b" stroke-width="1.5"/>
+  <text x="700" y="110" text-anchor="middle" font-size="14" font-weight="bold" fill="#c0392b">第三轮 · 最新上游下</text>
+  <text x="700" y="134" text-anchor="middle" font-size="12" fill="#333">3 个未公开 0-day + 1 个</text>
+  <text x="700" y="154" text-anchor="middle" font-size="12" fill="#333">已修未标记缺陷链式利用</text>
+  <text x="700" y="174" text-anchor="middle" font-size="12" fill="#333">VAPIC/SMRAM · shadow page</text>
+
+  <!-- Arrows to shared driver -->
+  <line x1="160" y1="206" x2="380" y2="252" stroke="#888" stroke-width="1.5"/>
+  <line x1="430" y1="206" x2="430" y2="252" stroke="#888" stroke-width="1.5"/>
+  <line x1="700" y1="206" x2="480" y2="252" stroke="#888" stroke-width="1.5"/>
+
+  <!-- Driver box -->
+  <rect x="230" y="252" width="400" height="76" rx="8" fill="#fef9e7" stroke="#b7950b" stroke-width="1.5"/>
+  <text x="430" y="278" text-anchor="middle" font-size="14" font-weight="bold" fill="#7d6608">真正的变量：长程自主性</text>
+  <text x="430" y="300" text-anchor="middle" font-size="12" fill="#333">约 12 小时量级，跨上下文压缩持续攻坚</text>
+  <text x="430" y="318" text-anchor="middle" font-size="12" fill="#333">人类主要工作：hardlock 后物理重启</text>
+
+  <!-- Control group -->
+  <rect x="40" y="360" width="380" height="96" rx="8" fill="#eaf2f8" stroke="#21618c" stroke-width="1.5"/>
+  <text x="230" y="386" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a5276">对照组与反驳</text>
+  <text x="230" y="410" text-anchor="middle" font-size="12" fill="#333">Firecracker：hardlock，未能逃逸</text>
+  <text x="230" y="430" text-anchor="middle" font-size="12" fill="#333">bonzini：坏的是 libslirp 与补丁流程</text>
+  <text x="230" y="448" text-anchor="middle" font-size="12" fill="#333">但 shadow page 在安全子集核心路径上</text>
+
+  <!-- Consensus -->
+  <rect x="440" y="360" width="380" height="96" rx="8" fill="#e8f8f5" stroke="#148f77" stroke-width="2"/>
+  <text x="630" y="392" text-anchor="middle" font-size="15" font-weight="bold" fill="#0e6655">共识</text>
+  <text x="630" y="418" text-anchor="middle" font-size="14" font-weight="bold" fill="#0e6655">隔离质量 = 攻击面质量</text>
+  <text x="630" y="440" text-anchor="middle" font-size="12" fill="#333">passt · 无头最小设备 · MAC · 快速补丁</text>
+
+  <!-- Boundary note -->
+  <rect x="40" y="478" width="780" height="56" rx="8" fill="#fdf2e9" stroke="#ca6f1e" stroke-width="1.5"/>
+  <text x="430" y="502" text-anchor="middle" font-size="12" font-weight="bold" fill="#935116">边界：单一研究者 / 单一宿主机 / CTF 判定（n=1），不外推为「任意 VM 必被逃逸」</text>
+  <text x="430" y="522" text-anchor="middle" font-size="12" fill="#935116">信号是默认配置失效：已知未部署的修复 ≈ 在野漏洞（预印本报告，据 Trail of Bits 称）</text>
+</svg>
