@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" font-family="Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect width="960" height="640" fill="#ffffff"/>
+  <text x="480" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a2e">记忆库原封不动，Agent 为何照样失忆：持久性取决于表示格式</text>
+
+  <!-- panel 1: four representations -->
+  <rect x="40" y="56" width="880" height="196" rx="8" fill="#eef4ff" stroke="#3b6ea5" stroke-width="2"/>
+  <text x="60" y="84" font-size="16" font-weight="bold" fill="#1a1a2e">同一段历史逐字保留，换写入模型后的精度变化</text>
+
+  <rect x="60" y="100" width="400" height="60" rx="6" fill="#ffffff" stroke="#2e7d32"/>
+  <text x="80" y="124" font-size="14" font-weight="bold" fill="#2e7d32">KG-fixed 固定 schema 知识图谱</text>
+  <text x="80" y="146" font-size="13" fill="#333">换 writer 后仅 +0.0004 &#177; 0.0020，几乎零损耗</text>
+
+  <rect x="500" y="100" width="400" height="60" rx="6" fill="#ffffff" stroke="#c62828"/>
+  <text x="520" y="124" font-size="14" font-weight="bold" fill="#c62828">NOTES 模型压缩笔记</text>
+  <text x="520" y="146" font-size="13" fill="#333">随迁移方向摆动 +9.91 或 -13.28 个百分点</text>
+
+  <rect x="60" y="172" width="400" height="60" rx="6" fill="#ffffff" stroke="#ef6c00"/>
+  <text x="80" y="196" font-size="14" font-weight="bold" fill="#ef6c00">RAG 混版索引（50/50）</text>
+  <text x="80" y="218" font-size="13" fill="#333">只拿到 4.96 分提升，半途迁移损失大半</text>
+
+  <rect x="500" y="172" width="400" height="60" rx="6" fill="#ffffff" stroke="#1565c0"/>
+  <text x="520" y="196" font-size="14" font-weight="bold" fill="#1565c0">RAG 全量 re-embedding</text>
+  <text x="520" y="218" font-size="13" fill="#333">提升 11.90 分，向量空间必须整体迁移</text>
+
+  <!-- panel 2: loss attribution -->
+  <rect x="40" y="268" width="430" height="150" rx="8" fill="#fff8e1" stroke="#f9a825" stroke-width="2"/>
+  <text x="60" y="296" font-size="16" font-weight="bold" fill="#1a1a2e">损失归因（诊断分解）</text>
+  <text x="60" y="324" font-size="14" fill="#333">NOTES：80%（0.467 &#177; 0.014）</text>
+  <text x="76" y="344" font-size="13" fill="#555">损失来自初始构建时就丢了信息</text>
+  <text x="60" y="374" font-size="14" fill="#333">RAG：81%（0.364 &#177; 0.012）</text>
+  <text x="76" y="394" font-size="13" fill="#555">损失来自检索失败，不是生成出错</text>
+
+  <!-- panel 3: repair -->
+  <rect x="490" y="268" width="430" height="150" rx="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+  <text x="510" y="296" font-size="16" font-weight="bold" fill="#1a1a2e">修复实验（目标：恢复 90% 性能）</text>
+  <text x="510" y="324" font-size="14" fill="#c62828">只改记忆库 store-only：48 例全部失败</text>
+  <text x="526" y="344" font-size="13" fill="#555">笔记坏了很难就修笔记</text>
+  <text x="510" y="374" font-size="14" fill="#2e7d32">保留原始历史重写：一个方向 34/48 成功</text>
+  <text x="526" y="394" font-size="13" fill="#555">找回原始证据重写才有效</text>
+
+  <!-- takeaway -->
+  <rect x="40" y="434" width="880" height="78" rx="8" fill="#1a1a2e"/>
+  <text x="60" y="464" font-size="15" font-weight="bold" fill="#ffffff">核心判断：记忆工程的瓶颈正从&#8220;存得下&#8221;转向&#8220;换得起&#8221;</text>
+  <text x="60" y="492" font-size="13" fill="#cfd8ea">结构化的固定 schema 可迁移，模型写的笔记与模型强耦合；升级前须做方向性迁移测试并保留原始历史</text>
+
+  <!-- boundary -->
+  <rect x="40" y="528" width="880" height="76" rx="8" fill="#ffffff" stroke="#9e9e9e" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="60" y="556" font-size="13" font-weight="bold" fill="#616161">边界条件</text>
+  <text x="60" y="578" font-size="12.5" fill="#616161">48 条合成历史 + 两个 sub-10B 开源权重模型 + exact scoring；预印本未经同行评审，作者两人无机构标注</text>
+  <text x="60" y="596" font-size="12.5" fill="#616161">方向性结论仅测两个迁移方向&#8212;&#8212;arXiv:2609.05339，2026-09-04 提交</text>
+</svg>
