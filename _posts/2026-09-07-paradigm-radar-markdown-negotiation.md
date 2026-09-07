@@ -5,10 +5,10 @@ author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-markdown-negotiation.svg
 tags: [agent, http, content-negotiation, seo, markdown]
-description: "Accept: text/markdown 内容协商正在被编码 Agent、Cloudflare、Vercel、Netlify 同时采用，同一 URL 实测少九成到近全部的字节。网站与 Agent 的接口契约正从抓取加清洗转向按需供料，这正在成为 Agent 时代的新 SEO 接口。"
+description: "Accept: text/markdown 内容协商正在被编码 Agent、Cloudflare、Vercel、Netlify 同时采用，同一 URL 实测少九成到近全部的字节。网站与 Agent 的接口契约正从抓取加清洗转向按需供料，这正在成为 Agent 时代内容网站的新 SEO 接口。"
 ---
 
-同一个 URL、同一个 `Accept` 头，返回的字节从 `23,855` 掉到 `2,201`——这不是压缩，是换了一种表示。8 月 26 日登上的 HN 热帖《Serve Markdown to AI Agents with Accept Headers》（Algolia API 今日实测 `176` 分）把 HTTP 内容协商这个 90 年代机制重新推上前台：网站不再只为人渲染 HTML，而是给 Agent 直供干净 Markdown。范式转移在于「网页默认给人看、Agent 抓了自己洗」正在变成「网站把 Agent 当一等公民访客、按请求头供料」。
+同一个 URL、同一个 `Accept` 头，返回的字节从 `24,222` 掉到 `2,201`——这不是压缩，是换了一种表示。8 月 26 日登上的 HN 热帖《Serve Markdown to AI Agents with Accept Headers》（Algolia API 今日实测 `176` 分）把 HTTP 内容协商这个 90 年代机制重新推上前台：网站不再只为人渲染 HTML，而是给 Agent 直供干净 Markdown。范式转移在于「网页默认给人看、Agent 抓了自己洗」正在变成「网站把 Agent 当一等公民访客、按请求头供料」。
 
 ![内容协商：同一 URL 两种表示]( {{ site.baseurl }}/assets/images/paradigm-radar-markdown-negotiation.svg )
 
@@ -16,7 +16,7 @@ description: "Accept: text/markdown 内容协商正在被编码 Agent、Cloudfla
 
 `Accept` 头是 RFC 9110 定义的既有协商机制，`text/markdown` 媒体类型出自 RFC 7763，Codex CLI 走的 `<link rel="alternate" type="text/markdown">` 发现路径出自 RFC 8288。这套组合没有任何新协议、新标准——这正是它能快速落地的原因。
 
-实测可复现（2026-09-07 本机 curl）：acceptmarkdown.com 带 `Accept: text/markdown` 请求返回 `content-type: text/markdown; charset=utf-8` 且带 `vary: Accept`，正文 `2,201` 字节 vs HTML `23,855` 字节，省 `90.8%`。Anthropic 官方文档更极端：同一页面 HTML `476,665` 字节、`.md` 版 `16,629` 字节，省 `96.5%`。
+实测可复现（2026-09-07 本机 curl）：acceptmarkdown.com 带 `Accept: text/markdown` 请求返回 `content-type: text/markdown; charset=utf-8` 且带 `vary: Accept`，正文 `2,201` 字节 vs HTML `24,222` 字节，省 `90.9%`。Anthropic 官方文档更极端：同一页面 HTML `476,665` 字节、`.md` 版 `16,629` 字节，省 `96.5%`。
 
 ## 供给侧已经站了多少人
 
@@ -24,7 +24,7 @@ acceptmarkdown.com/status（发起方维护的矩阵，利益相关）显示明�
 
 今日新增证据：Vercel 文档与 Netlify 文档对同一请求头同样返回 `text/markdown; charset=utf-8`（curl 实测），而 Astro 文档仍返回 HTML。头部托管平台把它做成了默认能力，跟进速度超出选题简报的预期；消费级大产品则全部缺席。
 
-对 Agent 开发者还有一层直接收益：同样的上下文窗口预算，Markdown 表示能多装数倍正文；抓取侧少一层 HTML 转 Markdown 的有损转换，表格与代码块的结构性信息不再丢失。这也是为什么采用者全部集中在「Agent 高频读文档」的编码场景，而非泛网页浏览。
+对 Agent 开发者还有一层直接收益：同样的上下文窗口预算，Markdown 表示能多装数倍正文；抓取侧少一层 HTML 转 Markdown 的有损转换，表格与代码块的结构性信息不再丢失。这也是为什么采用者全部集中在「Agent 高频读文档」的编码场景，而非泛网页浏览。这条供给线与本刊上一篇[《外壳走上台前：Agent 的竞争从换模型转向换 Harness》]({{ site.baseurl }}/paradigm-radar-harness-first-class/)互为表里：外壳决定 Agent 怎么干活，内容协商决定它读进去什么。
 
 ## 反方把三个软肋说透了
 

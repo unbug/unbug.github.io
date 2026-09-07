@@ -1,22 +1,22 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 范式雷达：《Agentic RAG：让检索系统学会自我反思》",
-    "date": "2026-08-01",
-    "slug": "paradigm-radar-agentic-rag-paradigm-shift"
+    "title": "AI 范式雷达：《网站开始给 Agent 单独上一道菜》",
+    "date": "2026-09-07",
+    "slug": "paradigm-radar-markdown-negotiation"
   },
-  "totalPublished": 3,
-  "nextScheduled": "2026-08-05",
+  "totalPublished": 10,
+  "nextScheduled": "2026-09-14",
   "candidateTopics": [
     {
-      "topic": "Agent 编排框架选型指南 2026",
-      "score": 4.5,
-      "sources": ["https://blog.langchain.dev/", "https://docs.crewai.com/"]
+      "topic": "Agent 容器隔离范式失效（Trail of Bits VM 逃逸）",
+      "score": 3.78,
+      "sources": ["https://blog.trailofbits.com/", "https://news.ycombinator.com/"]
     },
     {
-      "topic": "多模态 Agent 的视觉推理能力突破",
+      "topic": "Coding Agent 工具选型即分发渠道（Armature 16,893 会话测量）",
       "score": 4.1,
-      "sources": ["https://openai.com/research", "https://anthropic.com/research"]
+      "sources": ["https://news.ycombinator.com/"]
     }
   ]
 }
