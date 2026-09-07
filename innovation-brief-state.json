@@ -1,11 +1,11 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 智创简报：《Agent 轨迹评测专利成簇，长任务质检是接单活》",
+    "title": "AI 智创简报：《Agent 权限拦截专利成簇，独立开发者的守门中间件》",
     "date": "2026-09-07",
-    "slug": "innovation-brief-agent-evaluation-patents"
+    "slug": "innovation-brief-agent-tool-guardrail-patents"
   },
-  "totalPublished": 13,
+  "totalPublished": 14,
   "nextScheduled": "2026-09-14",
   "coveredPatentFamilies": [
     "US20260044392",
@@ -62,7 +62,11 @@
     "US20260017525",
     "US20260030476",
     "US20260154581",
-    "US20260186944"
+    "US20260186944",
+    "US20260238651",
+    "US12670045",
+    "US12688261",
+    "US20260119551"
   ],
   "candidateTopics": [
     {
@@ -88,8 +92,8 @@
       ]
     }
   ],
-  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-mcp-security-patents/",
-  "lastPublishedVerifiedAt": "2026-09-06 22:35 GMT+8",
+  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-agent-tool-guardrail-patents/",
+  "lastPublishedVerifiedAt": null,
   "verification": {
     "brief4": {
       "url": "https://unbug.github.io/innovation-brief-prd-gen-patents/",

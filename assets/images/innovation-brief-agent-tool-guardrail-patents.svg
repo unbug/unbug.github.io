@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="630" fill="#0f1c2e"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#3d7ebf"/>
+
+  <text x="60" y="72" fill="#8fb7dd" font-size="24" letter-spacing="4">AI 智创简报 · 机会情报</text>
+  <text x="60" y="128" fill="#ffffff" font-size="40" font-weight="bold">Agent 权限拦截专利成簇</text>
+  <text x="60" y="172" fill="#c5d8ec" font-size="26">独立开发者的守门中间件</text>
+
+  <!-- Column 1: 专利信号 -->
+  <rect x="60" y="210" width="340" height="330" rx="10" fill="#16273d" stroke="#2c4a6e"/>
+  <text x="85" y="252" fill="#5ea3e0" font-size="22" font-weight="bold">专利信号 2026.04-08</text>
+  <line x1="85" y1="266" x2="375" y2="266" stroke="#2c4a6e"/>
+  <text x="85" y="300" fill="#e8f1f9" font-size="17" font-weight="bold">US20260238651A1</text>
+  <text x="85" y="324" fill="#a8c2da" font-size="15">进程级拦截层 · 五阶段绕过识别</text>
+  <text x="85" y="358" fill="#e8f1f9" font-size="17" font-weight="bold">US12670045 · Mistral AI</text>
+  <text x="85" y="382" fill="#a8c2da" font-size="15">沙箱暂停重放 · 已授权</text>
+  <text x="85" y="416" fill="#e8f1f9" font-size="17" font-weight="bold">US12688261 · Daon</text>
+  <text x="85" y="440" fill="#a8c2da" font-size="15">委托凭证发放 · 已授权</text>
+  <text x="85" y="474" fill="#e8f1f9" font-size="17" font-weight="bold">US20260119551A1 · Boomi</text>
+  <text x="85" y="498" fill="#a8c2da" font-size="15">护栏语义自动扩展</text>
+
+  <!-- Arrow -->
+  <path d="M410 375 L450 375 M440 365 L450 375 L440 385" stroke="#5ea3e0" stroke-width="3" fill="none"/>
+
+  <!-- Column 2: 技术趋势 -->
+  <rect x="460" y="210" width="340" height="330" rx="10" fill="#16273d" stroke="#2c4a6e"/>
+  <text x="485" y="252" fill="#5ea3e0" font-size="22" font-weight="bold">技术趋势</text>
+  <line x1="485" y1="266" x2="775" y2="266" stroke="#2c4a6e"/>
+  <text x="485" y="300" fill="#e8f1f9" font-size="18" font-weight="bold">权限从提示词挪进操作系统</text>
+  <text x="485" y="336" fill="#a8c2da" font-size="16">· 模型进程之外的独立拦截件</text>
+  <text x="485" y="366" fill="#a8c2da" font-size="16">· 分级策略 + 委托凭证 + 审计账本</text>
+  <text x="485" y="396" fill="#a8c2da" font-size="16">· 企业网关闸门面向甲方集中部署</text>
+  <rect x="485" y="420" width="290" height="92" rx="8" fill="#1e3a5c"/>
+  <text x="500" y="450" fill="#ffd27a" font-size="16" font-weight="bold">空白地带</text>
+  <text x="500" y="478" fill="#e8f1f9" font-size="16">跨客户端 · 策略即代码</text>
+  <text x="500" y="502" fill="#e8f1f9" font-size="16">装在自己机器上的守门层</text>
+
+  <!-- Arrow -->
+  <path d="M810 375 L850 375 M840 365 L850 375 L840 385" stroke="#5ea3e0" stroke-width="3" fill="none"/>
+
+  <!-- Column 3: 一个人能做的 -->
+  <rect x="860" y="210" width="280" height="330" rx="10" fill="#1c3350" stroke="#5ea3e0"/>
+  <text x="885" y="252" fill="#ffd27a" font-size="22" font-weight="bold">一个人能做的</text>
+  <line x1="885" y1="266" x2="1115" y2="266" stroke="#3d6a94"/>
+  <text x="885" y="300" fill="#ffffff" font-size="17" font-weight="bold">本地工具调用代理</text>
+  <text x="885" y="328" fill="#c5d8ec" font-size="15">白名单 + 审批队列 + 只追加日志</text>
+  <text x="885" y="368" fill="#ffffff" font-size="17" font-weight="bold">开源守门器 + 策略包</text>
+  <text x="885" y="396" fill="#c5d8ec" font-size="15">$19-49/月 · 独立开发者获客</text>
+  <text x="885" y="436" fill="#ffffff" font-size="17" font-weight="bold">权限审计服务</text>
+  <text x="885" y="464" fill="#c5d8ec" font-size="15">单次 3000-6000 元 · 验收方付费</text>
+  <rect x="885" y="486" width="230" height="36" rx="6" fill="#2b5788"/>
+  <text x="1000" y="510" fill="#ffffff" font-size="16" text-anchor="middle">月成本数百元 · 4 周 MVP</text>
+
+  <text x="60" y="590" fill="#6f8dab" font-size="15">今天能做：给编码 Agent 写拒绝清单钩子，拦下 git push / 批量删除 / 对外 POST</text>
+  <text x="1140" y="590" fill="#6f8dab" font-size="15" text-anchor="end">Micropaper · 2026-09-07</text>
+</svg>
