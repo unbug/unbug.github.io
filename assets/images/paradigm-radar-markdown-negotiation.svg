@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="630" fill="#f5f7fa"/>
+  <text x="60" y="70" font-size="34" font-weight="bold" fill="#1f3a5f">Accept: text/markdown — 同一 URL，两种供给</text>
+  <text x="60" y="102" font-size="18" fill="#5a6b7d">HTTP 内容协商成为 Agent 时代的新接口（数据实测 2026-09-07）</text>
+
+  <!-- request -->
+  <rect x="60" y="150" width="240" height="120" rx="10" fill="#ffffff" stroke="#c3ced9"/>
+  <text x="80" y="185" font-size="18" font-weight="bold" fill="#1f3a5f">Agent 请求</text>
+  <text x="80" y="215" font-size="14" fill="#37474f">GET /docs/page</text>
+  <text x="80" y="240" font-size="14" fill="#0b6e4f">Accept: text/markdown</text>
+
+  <!-- server -->
+  <rect x="430" y="150" width="240" height="120" rx="10" fill="#ffffff" stroke="#c3ced9"/>
+  <text x="450" y="185" font-size="18" font-weight="bold" fill="#1f3a5f">网站服务器</text>
+  <text x="450" y="215" font-size="14" fill="#37474f">RFC 9110 / 7763 / 8288</text>
+  <text x="450" y="240" font-size="14" fill="#37474f">Vary: Accept</text>
+
+  <line x1="300" y1="210" x2="425" y2="210" stroke="#8aa0b5" stroke-width="2" marker-end="url(#a)"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#8aa0b5"/></marker></defs>
+
+  <!-- two responses -->
+  <rect x="800" y="120" width="340" height="90" rx="10" fill="#e8edf3" stroke="#c3ced9"/>
+  <text x="820" y="152" font-size="16" font-weight="bold" fill="#546e7a">Accept: text/html（人）</text>
+  <text x="820" y="182" font-size="15" fill="#546e7a">HTML 23,855 B / Claude 文档 476,665 B</text>
+
+  <rect x="800" y="230" width="340" height="90" rx="10" fill="#e6f4ea" stroke="#8fc9a3"/>
+  <text x="820" y="262" font-size="16" font-weight="bold" fill="#0b6e4f">Accept: text/markdown（Agent）</text>
+  <text x="820" y="292" font-size="15" fill="#0b6e4f">Markdown 2,201 B（-90.8%）/ 16,629 B（-96.5%）</text>
+
+  <line x1="670" y1="180" x2="795" y2="165" stroke="#8aa0b5" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="670" y1="240" x2="795" y2="275" stroke="#4caf7d" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- adoption bars -->
+  <text x="60" y="340" font-size="20" font-weight="bold" fill="#1f3a5f">谁在发这个头（acceptmarkdown.com/status，发起方维护）</text>
+  <rect x="60" y="360" width="520" height="110" rx="10" fill="#ffffff" stroke="#c3ced9"/>
+  <text x="80" y="392" font-size="15" fill="#0b6e4f" font-weight="bold">Supports x7</text>
+  <text x="80" y="418" font-size="14" fill="#37474f">Claude Code / Cursor / Copilot Chat+CLI / MS Copilot</text>
+  <text x="80" y="442" font-size="14" fill="#37474f">OpenClaw / OpenCode　Partial: Codex CLI（Link 头发现）</text>
+
+  <rect x="620" y="360" width="520" height="110" rx="10" fill="#ffffff" stroke="#c3ced9"/>
+  <text x="640" y="392" font-size="15" fill="#b3543a" font-weight="bold">No（只抓 HTML）</text>
+  <text x="640" y="418" font-size="14" fill="#37474f">ChatGPT browse / Claude.ai web / Gemini web+CLI</text>
+  <text x="640" y="442" font-size="14" fill="#37474f">Aider / Cline / Devin —— 消费端全缺席 = 鸡蛋问题</text>
+
+  <!-- bottom signals -->
+  <rect x="60" y="500" width="1080" height="90" rx="10" fill="#fff8e6" stroke="#e0c37a"/>
+  <text x="80" y="532" font-size="16" font-weight="bold" fill="#8a6d1f">供给侧跟进：Cloudflare「Markdown for Agents」零配置 · Vercel / Netlify 文档实测已返回 text/markdown</text>
+  <text x="80" y="562" font-size="15" fill="#6d5a26">下一周期信号：消费端是否翻绿 · IETF 是否出草案 · 首个 Markdown 变体投毒案例（注入面未消毒即成入口）</text>
+</svg>
