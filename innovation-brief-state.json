@@ -1,12 +1,12 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 智创简报：《MCP 安全专利密集授权，插件市场审计留给了谁》",
-    "date": "2026-09-06",
-    "slug": "innovation-brief-mcp-security-patents"
+    "title": "AI 智创简报：《Agent 轨迹评测专利成簇，长任务质检是接单活》",
+    "date": "2026-09-07",
+    "slug": "innovation-brief-agent-evaluation-patents"
   },
-  "totalPublished": 12,
-  "nextScheduled": "2026-09-13",
+  "totalPublished": 13,
+  "nextScheduled": "2026-09-14",
   "coveredPatentFamilies": [
     "US20260044392",
     "US20260188475",
@@ -58,7 +58,11 @@
     "US12562968",
     "US12602470",
     "US12683991",
-    "US12705267"
+    "US12705267",
+    "US20260017525",
+    "US20260030476",
+    "US20260154581",
+    "US20260186944"
   ],
   "candidateTopics": [
     {
@@ -69,9 +73,17 @@
       ]
     },
     {
-      "topic": "Mistral US12670045（code implemented tool calls，沙箱内代码块封装工具调用、暂停-回填-重放）——已授权 2026-06-30，可评估面向 Agent 开发者的沙箱调试/回放工具层",
-      "score": 3.5,
+      "topic": "Twilio US20260161683（Dynamic Context Window Management for Conversational AI Agents，2026-06-11 公开）——检索池发现，与已发 Agent 记忆简报主题相邻，需评估差异化角度（预算分配器 CLI）后再写",
+      "score": 3.4,
       "sources": [
+        "https://www.freepatentsonline.com/y2026/0161683.html"
+      ]
+    },
+    {
+      "topic": "Agent 沙箱拦截层：US20260238651（Action-Level Constraint Enforcement，2026-08-13 公开，申请人未标注）+ Mistral US12670045（code implemented tool calls，2026-06-30 授权）——可写面向独立开发者的工具调用拦截/回放中间件",
+      "score": 3.6,
+      "sources": [
+        "https://www.freepatentsonline.com/y2026/0238651.html",
         "https://www.freepatentsonline.com/12670045.html"
       ]
     }

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="AI 智创简报：Agent 轨迹评测专利成簇，长任务质检是接单活">
+  <rect width="1200" height="630" fill="#0f1b2d"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#3d6a99"/>
+
+  <text x="64" y="76" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#7fa6cc">AI 智创简报 · 机会情报</text>
+  <text x="64" y="130" font-family="Helvetica, Arial, sans-serif" font-size="40" font-weight="bold" fill="#eaf2fa">Agent 轨迹评测专利成簇</text>
+  <text x="64" y="178" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#a9c3dc">长任务质检是接单活 — 给 Agent 交付物打分的空白层</text>
+
+  <!-- Column 1: patent signal -->
+  <rect x="64" y="216" width="336" height="300" rx="10" fill="#16273d" stroke="#2c4a6e"/>
+  <text x="88" y="258" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold" fill="#eaf2fa">专利信号</text>
+  <text x="88" y="296" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">US20260017525A1  Citibank</text>
+  <text x="88" y="322" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">约束比对动作差距 · 2026-01-15</text>
+  <text x="88" y="354" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">US20260030476A1  KPMG</text>
+  <text x="88" y="380" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">企业 Agent 可信度评分 · 2026-01-29</text>
+  <text x="88" y="412" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">US20260154581A1  Quantiphi</text>
+  <text x="88" y="438" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">合成数据跑轨迹打分 · 2026-06-04</text>
+  <text x="88" y="470" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">US20260186944A1  G06F11/34</text>
+  <text x="88" y="496" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">长程轨迹逐段评估 · 2026-07-02</text>
+
+  <!-- Column 2: trend -->
+  <rect x="432" y="216" width="336" height="300" rx="10" fill="#16273d" stroke="#2c4a6e"/>
+  <text x="456" y="258" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold" fill="#eaf2fa">技术趋势</text>
+  <text x="456" y="296" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">从单次输出抽查</text>
+  <text x="456" y="322" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">到整条轨迹量化验收</text>
+  <line x1="456" y1="344" x2="744" y2="344" stroke="#2c4a6e"/>
+  <text x="456" y="378" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#7fa6cc">观测平台记录"做了什么"</text>
+  <text x="456" y="404" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#7fa6cc">专利主张"该打几分、卡在哪"</text>
+  <text x="456" y="440" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#7fa6cc">咨询与金融系申请人入场</text>
+  <text x="456" y="466" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#7fa6cc">= 甲方验收需求正在成形</text>
+
+  <!-- Column 3: opportunity -->
+  <rect x="800" y="216" width="336" height="300" rx="10" fill="#1d3a55" stroke="#4a7aa8"/>
+  <text x="824" y="258" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold" fill="#ffffff">一个人能做的机会</text>
+  <text x="824" y="296" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#dcebf8">Agent 验收审计服务</text>
+  <text x="824" y="322" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#a9c3dc">单次报告 3000-8000 元</text>
+  <text x="824" y="354" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#dcebf8">轨迹巡检订阅</text>
+  <text x="824" y="380" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#a9c3dc">$19-49/月 按 Agent 计收</text>
+  <line x1="824" y1="402" x2="1112" y2="402" stroke="#4a7aa8"/>
+  <text x="824" y="434" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#dcebf8">读 trace 导出 + 检查点重放</text>
+  <text x="824" y="460" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#dcebf8">起步 &lt; 2 万元 · 1 人 4 周 MVP</text>
+
+  <text x="64" y="572" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#7fa6cc">今天能做：导出最近 50 条 Agent 轨迹，按完成 / 越权 / 放弃三项逐条打分</text>
+  <text x="64" y="602" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#4a6a8c">来源：FreePatentsOnline 公开文本 · 2026-09-07 · Micropaper</text>
+</svg>
