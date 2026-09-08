@@ -1,22 +1,27 @@
 {
-  "currentPhase": "published",
-  "lastPublished": {
-    "title": "AI 范式雷达：《网站开始给 Agent 单独上一道菜》",
-    "date": "2026-09-07",
-    "slug": "paradigm-radar-markdown-negotiation"
+ "currentPhase": "published",
+ "lastPublished": {
+  "title": "AI 范式雷达：《隔离质量等于攻击面质量》",
+  "date": "2026-09-08",
+  "slug": "paradigm-radar-vm-containment"
+ },
+ "totalPublished": 11,
+ "nextScheduled": "2026-09-15",
+ "candidateTopics": [
+  {
+   "topic": "Agent 容器隔离范式失效（Trail of Bits VM 逃逸）",
+   "score": 3.78,
+   "sources": [
+    "https://blog.trailofbits.com/",
+    "https://news.ycombinator.com/"
+   ]
   },
-  "totalPublished": 10,
-  "nextScheduled": "2026-09-14",
-  "candidateTopics": [
-    {
-      "topic": "Agent 容器隔离范式失效（Trail of Bits VM 逃逸）",
-      "score": 3.78,
-      "sources": ["https://blog.trailofbits.com/", "https://news.ycombinator.com/"]
-    },
-    {
-      "topic": "Coding Agent 工具选型即分发渠道（Armature 16,893 会话测量）",
-      "score": 4.1,
-      "sources": ["https://news.ycombinator.com/"]
-    }
-  ]
+  {
+   "topic": "Coding Agent 工具选型即分发渠道（Armature 16,893 会话测量）",
+   "score": 4.1,
+   "sources": [
+    "https://news.ycombinator.com/"
+   ]
+  }
+ ]
 }
