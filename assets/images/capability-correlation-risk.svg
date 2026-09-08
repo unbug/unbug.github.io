@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="540" viewBox="0 0 860 540" font-family="Helvetica, Arial, sans-serif">
+  <rect width="860" height="540" fill="#ffffff"/>
+  <text x="430" y="36" text-anchor="middle" font-size="21" font-weight="bold" fill="#1a1a2e">能力悖论：模型越强，行为越像，风险摊不掉</text>
+  <text x="430" y="60" text-anchor="middle" font-size="13" fill="#666">arXiv:2609.04373 · LLM 交易员 agent-based 市场模拟（2026-09-08 查阅）</text>
+
+  <!-- Left: capability vs correlation -->
+  <text x="60" y="100" font-size="15" font-weight="bold" fill="#1a1a2e">共享训练与架构 → 相关随能力上升</text>
+  <line x1="90" y1="270" x2="380" y2="270" stroke="#999" stroke-width="1.2"/>
+  <line x1="90" y1="270" x2="90" y2="120" stroke="#999" stroke-width="1.2"/>
+  <text x="385" y="275" font-size="12" fill="#555">模型能力</text>
+  <text x="60" y="118" font-size="12" fill="#555">行为相关性</text>
+  <path d="M 100 250 Q 230 220 360 140" fill="none" stroke="#c62828" stroke-width="2.5"/>
+  <circle cx="130" cy="243" r="4" fill="#c62828"/>
+  <circle cx="230" cy="208" r="4" fill="#c62828"/>
+  <circle cx="330" cy="158" r="4" fill="#c62828"/>
+  <text x="100" y="295" font-size="12" fill="#777">参与者数量增加 ≠ 独立观点数量增加</text>
+
+  <!-- Right: two environments -->
+  <rect x="440" y="88" width="360" height="110" rx="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.2"/>
+  <text x="460" y="114" font-size="14" font-weight="bold" fill="#2e7d32">共享推理正确时</text>
+  <text x="460" y="140" font-size="12.5" fill="#333">扩大 agent 参与 → 市场级风险下降</text>
+  <text x="460" y="162" font-size="12.5" fill="#333">多样性红利正常兑现</text>
+
+  <rect x="440" y="212" width="360" height="110" rx="8" fill="#ffebee" stroke="#c62828" stroke-width="1.2"/>
+  <text x="460" y="238" font-size="14" font-weight="bold" fill="#c62828">共享错误信息环境时</text>
+  <text x="460" y="264" font-size="12.5" fill="#333">同一相关性反转为负债：全体一起</text>
+  <text x="460" y="286" font-size="12.5" fill="#333">自信地错，无人负责纠偏</text>
+
+  <!-- Middle bottom: risk floor -->
+  <rect x="60" y="340" width="740" height="90" rx="8" fill="#fff3e0" stroke="#ef6c00" stroke-width="1.5"/>
+  <text x="80" y="368" font-size="14" font-weight="bold" fill="#e65100">非可分散风险下限（non-diversifiable risk floor）</text>
+  <rect x="80" y="384" width="700" height="4" fill="#ef6c00" opacity="0.6"/>
+  <text x="80" y="410" font-size="12.5" fill="#333">行动相关性使风险无法随参与者数量无限摊薄；相关性越高，摊不掉的底线越高。</text>
+  <text x="80" y="428" font-size="12.5" fill="#555">采购含义：同一模型的多个实例 ≈ 一个决策加若干复制品。</text>
+
+  <!-- Footer boundary -->
+  <rect x="60" y="448" width="740" height="72" rx="6" fill="#f5f5f5" stroke="#bdbdbd" stroke-width="1"/>
+  <text x="80" y="470" font-size="12" fill="#616161">边界：模拟无真实资金约束、清算与监管，量级不可直接搬到现实市场；相关性与能力分级口径为论文自定义；</text>
+  <text x="80" y="490" font-size="12" fill="#616161">预印本未经同行评审；第三发现限定共享错误信息环境情景，跨领域推广是作者自列的开放问题。</text>
+  <text x="80" y="510" font-size="12" fill="#616161">与隐藏合谋篇不同轴：无通信、无共谋，风险来自训练层面的结构性相关。</text>
+</svg>
