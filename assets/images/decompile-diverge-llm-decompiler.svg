@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="540" viewBox="0 0 860 540" font-family="Helvetica, Arial, sans-serif">
+  <rect width="860" height="540" fill="#ffffff"/>
+  <text x="430" y="36" text-anchor="middle" font-size="21" font-weight="bold" fill="#1a1a2e">LLM 反编译：构建率上升，行为匹配率下降</text>
+  <text x="430" y="60" text-anchor="middle" font-size="13" fill="#666">arXiv:2609.05370 · Decompile-Diverge 模糊测试对照（2026-09-08 查阅）</text>
+
+  <!-- Left: metric divergence bars -->
+  <text x="60" y="100" font-size="15" font-weight="bold" fill="#1a1a2e">Ghidra + 最强精化模型：指标背离</text>
+  <!-- build rate -->
+  <text x="60" y="134" font-size="13" fill="#333">可重编译率（build）</text>
+  <rect x="230" y="120" width="255" height="20" fill="#d8e2ef"/>
+  <rect x="230" y="120" width="340" height="20" fill="#2e7d32" opacity="0.75"/>
+  <text x="236" y="135" font-size="12" fill="#ffffff">75% → 90%</text>
+  <!-- match rate -->
+  <text x="60" y="170" font-size="13" fill="#333">行为匹配率（matched）</text>
+  <rect x="230" y="156" width="340" height="20" fill="#d8e2ef"/>
+  <rect x="230" y="156" width="282" height="20" fill="#c62828" opacity="0.8"/>
+  <text x="236" y="171" font-size="12" fill="#ffffff">74% → 62%</text>
+  <text x="60" y="200" font-size="12" fill="#777">编译更容易了，行为却更常与原程序分歧</text>
+
+  <!-- Middle: divergence stat -->
+  <rect x="60" y="228" width="740" height="86" rx="8" fill="#fff3e0" stroke="#ef6c00" stroke-width="1.5"/>
+  <text x="80" y="256" font-size="14" font-weight="bold" fill="#e65100">通过全部随附测试 ≠ 行为等价</text>
+  <text x="80" y="282" font-size="13" fill="#333">8 个系统 9 种配置：通过全部测试的候选仍有 4.9% 在合法输入上与原程序分歧，单一系统最高 13%</text>
+  <text x="80" y="302" font-size="13" fill="#333">已披露漏洞子集上，最高约 1/10 的漏洞在产物中出现崩溃缺失（Crash Absence）</text>
+
+  <!-- Bottom: two paths -->
+  <rect x="60" y="340" width="355" height="120" rx="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.2"/>
+  <text x="80" y="366" font-size="14" font-weight="bold" fill="#2e7d32">传统反编译器（Ghidra）</text>
+  <text x="80" y="390" font-size="12.5" fill="#333">解析不了就留占位符：</text>
+  <text x="80" y="410" font-size="12.5" fill="#333">可见的未知，构建率低</text>
+  <text x="80" y="436" font-size="12.5" fill="#555">失败暴露在外，可被人看见</text>
+
+  <rect x="445" y="340" width="355" height="120" rx="8" fill="#ffebee" stroke="#c62828" stroke-width="1.2"/>
+  <text x="465" y="366" font-size="14" font-weight="bold" fill="#c62828">LLM 反编译产物</text>
+  <text x="465" y="390" font-size="12.5" fill="#333">引入字段 / 类型 / 被调用函数 /</text>
+  <text x="465" y="410" font-size="12.5" fill="#333">防护条件：看不见的错</text>
+  <text x="465" y="436" font-size="12.5" fill="#555">失败藏进语义，指标全绿通过</text>
+
+  <!-- Footer boundary -->
+  <rect x="60" y="478" width="740" height="44" rx="6" fill="#f5f5f5" stroke="#bdbdbd" stroke-width="1"/>
+  <text x="80" y="497" font-size="12" fill="#616161">边界：模糊语料非穷尽证明，分歧率是给定输入集上的下界；oracle 依赖参考实现可得；</text>
+  <text x="80" y="515" font-size="12" fill="#616161">预印本未经同行评审。实操：可重编译性只是必要条件，行为等价测试必须叠加。</text>
+</svg>
