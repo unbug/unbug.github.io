@@ -1,11 +1,11 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 智创简报：《大模型账单瘦身专利成簇，中间件的止血生意》",
+    "title": "AI 智创简报：《端侧小模型专利成簇，私有化部署的工具生意》",
     "date": "2026-09-12",
-    "slug": "innovation-brief-token-slim-patents"
+    "slug": "innovation-brief-edge-slm-patents"
   },
-  "totalPublished": 15,
+  "totalPublished": 16,
   "nextScheduled": "2026-09-14",
   "coveredPatentFamilies": [
     "US20260044392",
@@ -70,18 +70,12 @@
     "US20260260063",
     "US20260203500",
     "US20260170265",
-    "US20260044679"
+    "US20260044679",
+    "US20260246629",
+    "US20260169789",
+    "US20260133859"
   ],
   "candidateTopics": [
-    {
-      "topic": "端侧/本地小模型专利成簇（US20260246629 Blockchain Labs 2026-08-20、US20260169789 Microsoft 2026-06-18、US20260133859 Mercedes-Benz 2026-05-14）——本地 GGUF 量化选型基准站/数据集或本地-云降级路由 SDK，产业佐证 llama.cpp star 数与 HF GGUF 文档",
-      "score": 3.9,
-      "sources": [
-        "https://www.freepatentsonline.com/y2026/0246629.html",
-        "https://www.freepatentsonline.com/y2026/0169789.html",
-        "https://huggingface.co/docs/hub/gguf"
-      ]
-    },
     {
       "topic": "RAG 质量评估专利簇（US20260170067 Salesforce、US20260111331 SAP、US20260093735 GM）——RAG 回归测试 CLI/SaaS；注意与已发 Agent 评估、答案引用溯源做差异化后再写",
       "score": 3.4,
@@ -97,7 +91,7 @@
       ]
     }
   ],
-  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-token-slim-patents/",
+  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-edge-slm-patents/",
   "lastPublishedVerifiedAt": null,
   "verification": {
     "brief4": {
