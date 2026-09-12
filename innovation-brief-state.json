@@ -1,12 +1,12 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 智创简报：《端侧小模型专利成簇，私有化部署的工具生意》",
-    "date": "2026-09-12",
-    "slug": "innovation-brief-edge-slm-patents"
+    "title": "AI 智创简报：《RAG 拒答题测试专利成簇，知识库质检是接单活》",
+    "date": "2026-09-13",
+    "slug": "innovation-brief-rag-evaluation-patents"
   },
-  "totalPublished": 16,
-  "nextScheduled": "2026-09-14",
+  "totalPublished": 17,
+  "nextScheduled": "2026-09-15",
   "coveredPatentFamilies": [
     "US20260044392",
     "US20260188475",
@@ -73,16 +73,12 @@
     "US20260044679",
     "US20260246629",
     "US20260169789",
-    "US20260133859"
+    "US20260133859",
+    "US20260170067",
+    "US20260111331",
+    "US20260093735"
   ],
   "candidateTopics": [
-    {
-      "topic": "RAG 质量评估专利簇（US20260170067 Salesforce、US20260111331 SAP、US20260093735 GM）——RAG 回归测试 CLI/SaaS；注意与已发 Agent 评估、答案引用溯源做差异化后再写",
-      "score": 3.4,
-      "sources": [
-        "https://www.freepatentsonline.com/y2026/0170067.html"
-      ]
-    },
     {
       "topic": "Twilio US20260161683（Dynamic Context Window Management for Conversational AI Agents，2026-06-11 公开）——预算分配器 CLI 角度",
       "score": 3.4,
@@ -91,7 +87,7 @@
       ]
     }
   ],
-  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-edge-slm-patents/",
+  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-rag-evaluation-patents/",
   "lastPublishedVerifiedAt": null,
   "verification": {
     "brief4": {

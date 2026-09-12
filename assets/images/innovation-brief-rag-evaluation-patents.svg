@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="AI 智创简报：RAG 拒答题测试专利成簇，知识库质检是接单活">
+  <rect width="1200" height="630" fill="#0f1b2d"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#3d6a99"/>
+
+  <text x="64" y="76" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#7fa6cc">AI 智创简报 · 机会情报</text>
+  <text x="64" y="130" font-family="Helvetica, Arial, sans-serif" font-size="40" font-weight="bold" fill="#eaf2fa">RAG 拒答题测试专利成簇</text>
+  <text x="64" y="178" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#a9c3dc">知识库质检是接单活 — 上线前验收的空白层</text>
+
+  <!-- Column 1: patent signal -->
+  <rect x="64" y="216" width="336" height="300" rx="10" fill="#16273d" stroke="#2c4a6e"/>
+  <text x="88" y="258" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold" fill="#eaf2fa">专利信号</text>
+  <text x="88" y="296" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">US20260170067A1  Salesforce</text>
+  <text x="88" y="322" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">合成不可回答题集 · 2026-06-18</text>
+  <text x="88" y="354" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">US20260111331A1  SAP</text>
+  <text x="88" y="380" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">评测阈值迭代放行 · 2026-04-23</text>
+  <text x="88" y="412" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">US20260093735A1  GM</text>
+  <text x="88" y="438" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">回答置信分数 · 2026-04-02</text>
+  <text x="88" y="482" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">均为已公开申请 · G06F16/953</text>
+
+  <!-- Column 2: trend -->
+  <rect x="432" y="216" width="336" height="300" rx="10" fill="#16273d" stroke="#2c4a6e"/>
+  <text x="456" y="258" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold" fill="#eaf2fa">技术趋势</text>
+  <text x="456" y="296" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">验收标准换轨</text>
+  <text x="456" y="324" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">检索命中率 → 回答可信度</text>
+  <text x="456" y="362" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">新考点：敢不敢说不知道</text>
+  <text x="456" y="390" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">六类拒答：含糊 / 错前提 /</text>
+  <text x="456" y="412" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">超库范围 / 安全 等</text>
+  <text x="456" y="450" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">RAGAS 有打分，无人出题</text>
+  <text x="456" y="482" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">学界基准同向印证</text>
+
+  <!-- Column 3: opportunity -->
+  <rect x="800" y="216" width="336" height="300" rx="10" fill="#1b3247" stroke="#3d6a99"/>
+  <text x="824" y="258" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold" fill="#eaf2fa">一个人能做的机会</text>
+  <text x="824" y="296" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">RAG 拒答质检工具</text>
+  <text x="824" y="322" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">合成拒答题 · 回放打分 · 出报告</text>
+  <text x="824" y="358" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">质检服务 3000-8000 元/次</text>
+  <text x="824" y="384" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">客户：接 RAG 私活的外包方</text>
+  <text x="824" y="420" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">回归巡检 $19-49/月</text>
+  <text x="824" y="446" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">知识库更新即自动重跑题集</text>
+  <text x="824" y="482" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">Python + LLM API · 4 周 MVP</text>
+
+  <text x="64" y="576" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#5d7f9e">今日动作：让模型出 50 道库里没有答案的题，数数你的机器人编了几次</text>
+</svg>
