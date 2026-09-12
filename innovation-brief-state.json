@@ -1,11 +1,11 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 智创简报：《Agent 权限拦截专利成簇，独立开发者的守门中间件》",
-    "date": "2026-09-07",
-    "slug": "innovation-brief-agent-tool-guardrail-patents"
+    "title": "AI 智创简报：《大模型账单瘦身专利成簇，中间件的止血生意》",
+    "date": "2026-09-12",
+    "slug": "innovation-brief-token-slim-patents"
   },
-  "totalPublished": 14,
+  "totalPublished": 15,
   "nextScheduled": "2026-09-14",
   "coveredPatentFamilies": [
     "US20260044392",
@@ -66,33 +66,38 @@
     "US20260238651",
     "US12670045",
     "US12688261",
-    "US20260119551"
+    "US20260119551",
+    "US20260260063",
+    "US20260203500",
+    "US20260170265",
+    "US20260044679"
   ],
   "candidateTopics": [
     {
-      "topic": "网络流量与静态数据中的 deepfake 检测（US12711793，已授权）——检索池发现，需核验对应申请公开日是否在近 90 天或近 12 个月成簇，再评估个人可做的 API 包装层",
-      "score": 3.4,
+      "topic": "端侧/本地小模型专利成簇（US20260246629 Blockchain Labs 2026-08-20、US20260169789 Microsoft 2026-06-18、US20260133859 Mercedes-Benz 2026-05-14）——本地 GGUF 量化选型基准站/数据集或本地-云降级路由 SDK，产业佐证 llama.cpp star 数与 HF GGUF 文档",
+      "score": 3.9,
       "sources": [
-        "https://www.freepatentsonline.com/12711793.html"
+        "https://www.freepatentsonline.com/y2026/0246629.html",
+        "https://www.freepatentsonline.com/y2026/0169789.html",
+        "https://huggingface.co/docs/hub/gguf"
       ]
     },
     {
-      "topic": "Twilio US20260161683（Dynamic Context Window Management for Conversational AI Agents，2026-06-11 公开）——检索池发现，与已发 Agent 记忆简报主题相邻，需评估差异化角度（预算分配器 CLI）后再写",
+      "topic": "RAG 质量评估专利簇（US20260170067 Salesforce、US20260111331 SAP、US20260093735 GM）——RAG 回归测试 CLI/SaaS；注意与已发 Agent 评估、答案引用溯源做差异化后再写",
+      "score": 3.4,
+      "sources": [
+        "https://www.freepatentsonline.com/y2026/0170067.html"
+      ]
+    },
+    {
+      "topic": "Twilio US20260161683（Dynamic Context Window Management for Conversational AI Agents，2026-06-11 公开）——预算分配器 CLI 角度",
       "score": 3.4,
       "sources": [
         "https://www.freepatentsonline.com/y2026/0161683.html"
       ]
-    },
-    {
-      "topic": "Agent 沙箱拦截层：US20260238651（Action-Level Constraint Enforcement，2026-08-13 公开，申请人未标注）+ Mistral US12670045（code implemented tool calls，2026-06-30 授权）——可写面向独立开发者的工具调用拦截/回放中间件",
-      "score": 3.6,
-      "sources": [
-        "https://www.freepatentsonline.com/y2026/0238651.html",
-        "https://www.freepatentsonline.com/12670045.html"
-      ]
     }
   ],
-  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-agent-tool-guardrail-patents/",
+  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-token-slim-patents/",
   "lastPublishedVerifiedAt": null,
   "verification": {
     "brief4": {

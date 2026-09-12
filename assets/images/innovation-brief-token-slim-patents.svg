@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="大模型输入侧 Token 瘦身专利信号与压缩审计中间件机会信息图">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f1b2d"/>
+      <stop offset="1" stop-color="#1c2f47"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#233a56"/>
+      <stop offset="1" stop-color="#1b2d44"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- header -->
+  <text x="60" y="72" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="34" font-weight="700" fill="#e8eef7">AI 智创简报 · 输入侧 Token 瘦身专利成簇</text>
+  <text x="60" y="106" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="19" fill="#8fa8c4">上下文压缩中间件与 Token 浪费审计 · 2026-02 ~ 2026-09 四件已公开申请</text>
+  <line x1="60" y1="128" x2="1140" y2="128" stroke="#3a5678" stroke-width="1.5"/>
+
+  <!-- column 1: patent signal -->
+  <rect x="60" y="152" width="340" height="360" rx="14" fill="url(#card)" stroke="#3a5678"/>
+  <rect x="60" y="152" width="340" height="52" rx="14" fill="#2b4a6d"/>
+  <text x="84" y="186" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#7fc4ff">一 · 专利信号</text>
+  <g font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#c9d8ea" font-size="16">
+    <text x="84" y="240" font-family="Menlo, monospace" font-size="15" fill="#7fc4ff">US20260260063A1 · Ciena</text>
+    <text x="84" y="264">日志空间折叠 + 时间窗折叠</text>
+    <text x="84" y="304" font-family="Menlo, monospace" font-size="15" fill="#7fc4ff">US20260203500A1 · Naver</text>
+    <text x="84" y="328">RAG 段落重排后子句级剪枝</text>
+    <text x="84" y="368" font-family="Menlo, monospace" font-size="15" fill="#7fc4ff">US20260170265A1 · PayPal</text>
+    <text x="84" y="392">动态截断阈值查找表</text>
+    <text x="84" y="432" font-family="Menlo, monospace" font-size="15" fill="#7fc4ff">US20260044679A1 · Cisco</text>
+    <text x="84" y="456">函数组描述替代全量 schema</text>
+  </g>
+  <text x="84" y="494" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="14" fill="#728aa6">均为已公开申请（审查中），非授权</text>
+
+  <!-- arrow 1 -->
+  <path d="M408 330 h34" stroke="#5b83ad" stroke-width="3" fill="none"/>
+  <path d="M436 322 l14 8 -14 8 z" fill="#5b83ad"/>
+
+  <!-- column 2: trend -->
+  <rect x="460" y="152" width="340" height="360" rx="14" fill="url(#card)" stroke="#3a5678"/>
+  <rect x="460" y="152" width="340" height="52" rx="14" fill="#2b4a6d"/>
+  <text x="484" y="186" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#7fc4ff">二 · 技术趋势</text>
+  <g font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="17" fill="#c9d8ea">
+    <text x="484" y="240">压缩从提示词技巧</text>
+    <text x="484" y="266">变成模型调用前的架构件</text>
+  </g>
+  <!-- funnel sketch -->
+  <g stroke="#7fc4ff" stroke-width="2.5" fill="none">
+    <rect x="500" y="300" width="120" height="26" rx="5" fill="#33547a"/>
+    <rect x="512" y="338" width="96" height="26" rx="5" fill="#2f4e72"/>
+    <rect x="524" y="376" width="72" height="26" rx="5" fill="#2b466a"/>
+    <path d="M560 414 v22"/>
+    <path d="M552 428 l8 10 8 -10" fill="none"/>
+  </g>
+  <g font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="14" fill="#8fa8c4">
+    <text x="636" y="318">全量输入：日志 / RAG / schema</text>
+    <text x="636" y="356">折叠 · 剪枝 · 截断 · 过滤</text>
+    <text x="636" y="394">幸存内容进 prompt</text>
+    <text x="636" y="440">LLM</text>
+  </g>
+  <text x="484" y="492" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#a9c2dc">网关只记账不动内容 · 通用前置层空白</text>
+
+  <!-- arrow 2 -->
+  <path d="M808 330 h34" stroke="#5b83ad" stroke-width="3" fill="none"/>
+  <path d="M836 322 l14 8 -14 8 z" fill="#5b83ad"/>
+
+  <!-- column 3: opportunity -->
+  <rect x="860" y="152" width="280" height="360" rx="14" fill="url(#card)" stroke="#4d7ba3"/>
+  <rect x="860" y="152" width="280" height="52" rx="14" fill="#2f5a80"/>
+  <text x="884" y="186" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#ffd479">三 · 一个人能做的机会</text>
+  <g font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" fill="#dbe6f2">
+    <text x="884" y="238" font-weight="700" fill="#ffd479">A · Token 浪费审计 CLI</text>
+    <text x="884" y="262">请求体分桶统计 · 可裁剪报告</text>
+    <text x="884" y="304" font-weight="700" fill="#ffd479">B · Drop-in 压缩代理</text>
+    <text x="884" y="328">改一行 baseURL 即可接入</text>
+    <text x="884" y="370">栈：tiktoken + tree-sitter</text>
+    <text x="884" y="394">小模型打分子句重要性</text>
+  </g>
+  <rect x="884" y="418" width="232" height="70" rx="10" fill="#24435f" stroke="#4d7ba3"/>
+  <g font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#dbe6f2">
+    <text x="900" y="444">起步 1500-3000 元 · 2-3 周 MVP</text>
+    <text x="900" y="470">Pro ¥299/年 + 按次报告服务</text>
+  </g>
+
+  <!-- footer -->
+  <text x="60" y="566" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="18" fill="#a9c2dc">今天能做：抓一份自己的 LLM 请求体，用 tiktoken 按字段算 token 占比，看砍掉一半 schema 和历史消息能省多少钱。</text>
+  <text x="60" y="598" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="14" fill="#63799a">来源：freepatentsonline.com · docs.litellm.ai</text>
+</svg>
