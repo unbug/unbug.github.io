@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="AI 智创简报：语音智能体轮次专利扎堆，语音机器人质检接单活">
+  <rect width="1200" height="630" fill="#0f1b2d"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#3d6a99"/>
+
+  <text x="64" y="76" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#7fa6cc">AI 智创简报 · 机会情报</text>
+  <text x="64" y="130" font-family="Helvetica, Arial, sans-serif" font-size="40" font-weight="bold" fill="#eaf2fa">语音智能体轮次专利扎堆</text>
+  <text x="64" y="178" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#a9c3dc">语音机器人质检是接单活 — 通话节奏验收的空白层</text>
+
+  <!-- Column 1: patent signal -->
+  <rect x="64" y="216" width="336" height="300" rx="10" fill="#16273d" stroke="#2c4a6e"/>
+  <text x="88" y="258" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold" fill="#eaf2fa">专利信号</text>
+  <text x="88" y="294" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">US20260120693A1  Sierra</text>
+  <text x="88" y="318" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">前后台触发延迟调度 · 2026-04-30</text>
+  <text x="88" y="350" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">US20260229221A1  Salesforce</text>
+  <text x="88" y="374" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">语音应用知识库检索 · 2026-08-06</text>
+  <text x="88" y="406" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">US20260004070A1  NVIDIA</text>
+  <text x="88" y="430" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">句尾加语义停顿判定 · 2026-01-01</text>
+  <text x="88" y="462" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">US20260057884A1  NVIDIA</text>
+  <text x="88" y="486" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">统一文本生成 · G10L15/22</text>
+
+  <!-- Column 2: trend -->
+  <rect x="432" y="216" width="336" height="300" rx="10" fill="#16273d" stroke="#2c4a6e"/>
+  <text x="456" y="258" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold" fill="#eaf2fa">技术趋势</text>
+  <text x="456" y="296" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">竞争焦点换轨</text>
+  <text x="456" y="324" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">音色与识别率 → 轮次接管</text>
+  <text x="456" y="362" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">新考点：何时开口接话</text>
+  <text x="456" y="390" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">抢话 / 冷场 / 误接插话 /</text>
+  <text x="456" y="412" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">响应延迟 正被专利圈地</text>
+  <text x="456" y="450" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">Pipecat 有组件，无人定验收</text>
+  <text x="456" y="482" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">轮次质检标准至今空白</text>
+
+  <!-- Column 3: opportunity -->
+  <rect x="800" y="216" width="336" height="300" rx="10" fill="#1b3247" stroke="#3d6a99"/>
+  <text x="824" y="258" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold" fill="#eaf2fa">一个人能做的机会</text>
+  <text x="824" y="296" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">语音轮次质检工具</text>
+  <text x="824" y="322" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">回放录音 · 标注四类事件 · 出报告</text>
+  <text x="824" y="358" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">质检服务 3000-8000 元/次</text>
+  <text x="824" y="384" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">客户：接语音机器人私活的外包方</text>
+  <text x="824" y="420" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">通话巡检 $19-49/月</text>
+  <text x="824" y="446" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">抢话率恶化即自动告警</text>
+  <text x="824" y="482" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">Silero VAD + Whisper · 4 周 MVP</text>
+
+  <text x="64" y="576" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#5d7f9e">今日动作：回放 20 通真实录音，数抢话次数与平均响应秒数，出第一份样本报告</text>
+</svg>

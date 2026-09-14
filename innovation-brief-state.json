@@ -1,12 +1,12 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 智创简报：《RAG 拒答题测试专利成簇，知识库质检是接单活》",
-    "date": "2026-09-12",
-    "slug": "innovation-brief-rag-evaluation-patents"
+    "title": "AI 智创简报：《语音智能体轮次专利扎堆，语音机器人质检接单活》",
+    "date": "2026-09-14",
+    "slug": "innovation-brief-voice-agent-turn-taking-patents"
   },
-  "totalPublished": 17,
-  "nextScheduled": "2026-09-15",
+  "totalPublished": 18,
+  "nextScheduled": "2026-09-17",
   "coveredPatentFamilies": [
     "US20260044392",
     "US20260188475",
@@ -76,7 +76,11 @@
     "US20260133859",
     "US20260170067",
     "US20260111331",
-    "US20260093735"
+    "US20260093735",
+    "US20260120693",
+    "US20260229221",
+    "US20260004070",
+    "US20260057884"
   ],
   "candidateTopics": [
     {
