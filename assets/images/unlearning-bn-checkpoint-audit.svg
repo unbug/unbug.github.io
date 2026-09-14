@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 620" font-family="-apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect width="860" height="620" fill="#fbfbfd"/>
+  <text x="430" y="38" text-anchor="middle" font-size="21" font-weight="700" fill="#1a1a2e">遗忘审计的数字为什么会动：一个无人记录的自由度</text>
+  <text x="430" y="62" text-anchor="middle" font-size="13" fill="#666">权重逐比特不变，仅重新拟合批归一化统计量，发布指标即移动（arXiv:2609.11490 · 263 个已发布 checkpoint 审计）</text>
+
+  <!-- 实验设置 -->
+  <rect x="40" y="88" width="250" height="160" rx="10" fill="#eef2ff" stroke="#c7d2fe" stroke-width="1.5"/>
+  <text x="165" y="116" text-anchor="middle" font-size="15" font-weight="700" fill="#3730a3">审计实验</text>
+  <text x="165" y="144" text-anchor="middle" font-size="12.5" fill="#444">模型权重冻结</text>
+  <text x="165" y="166" text-anchor="middle" font-size="12.5" fill="#444">（bit-identical 逐比特不变）</text>
+  <text x="165" y="192" text-anchor="middle" font-size="12.5" fill="#c2410c">只做一件事：</text>
+  <text x="165" y="214" text-anchor="middle" font-size="12.5" fill="#c2410c">用保留数据重新拟合</text>
+  <text x="165" y="236" text-anchor="middle" font-size="12.5" fill="#c2410c">批归一化统计量</text>
+
+  <!-- 结果 -->
+  <rect x="330" y="88" width="250" height="160" rx="10" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
+  <text x="455" y="116" text-anchor="middle" font-size="15" font-weight="700" fill="#991b1b">结果</text>
+  <text x="455" y="146" text-anchor="middle" font-size="13" fill="#444"><tspan font-weight="700" fill="#b91c1c">47 / 221</tspan> 个 checkpoint</text>
+  <text x="455" y="170" text-anchor="middle" font-size="12.5" fill="#444">指标移动超过自家种子散布</text>
+  <text x="455" y="198" text-anchor="middle" font-size="12" fill="#666">若干落在「方法平均值不动」</text>
+  <text x="455" y="218" text-anchor="middle" font-size="12" fill="#666">的方法内部</text>
+  <text x="455" y="240" text-anchor="middle" font-size="12" fill="#991b1b">动的是 checkpoint，不是方法</text>
+
+  <!-- 排除幸存 -->
+  <rect x="620" y="88" width="200" height="160" rx="10" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+  <text x="720" y="116" text-anchor="middle" font-size="15" font-weight="700" fill="#166534">幸存假设排除</text>
+  <text x="720" y="144" text-anchor="middle" font-size="12" fill="#444">固定拟合池内对调</text>
+  <text x="720" y="164" text-anchor="middle" font-size="12" fill="#444">保留/删除记录再拟合</text>
+  <text x="720" y="192" text-anchor="middle" font-size="12.5" fill="#166534">已发表单元格几乎不动</text>
+  <text x="720" y="220" text-anchor="middle" font-size="11.5" fill="#666">与移动相关的是发布状态</text>
+  <text x="720" y="240" text-anchor="middle" font-size="11.5" fill="#666">偏离任意重拟合的距离</text>
+
+  <defs>
+    <marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <line x1="292" y1="168" x2="326" y2="168" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/>
+  <line x1="582" y1="168" x2="616" y2="168" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/>
+
+  <!-- verdict 分层 -->
+  <rect x="40" y="276" width="780" height="150" rx="10" fill="#fffbeb" stroke="#fde68a" stroke-width="1.5"/>
+  <text x="60" y="304" font-size="14.5" font-weight="700" fill="#92400e">对已发表决定的实际影响：三层数字限定</text>
+  <rect x="60" y="320" width="220" height="44" rx="6" fill="#fef3c7"/>
+  <text x="170" y="340" text-anchor="middle" font-size="13" font-weight="700" fill="#92400e">12 个合规判定翻转</text>
+  <text x="170" y="358" text-anchor="middle" font-size="11" fill="#a16207">按发布指标得出的 verdict</text>
+  <rect x="300" y="320" width="240" height="44" rx="6" fill="#fde68a"/>
+  <text x="420" y="340" text-anchor="middle" font-size="13" font-weight="700" fill="#854d0e">其中 4 个超过重校准预算</text>
+  <text x="420" y="358" text-anchor="middle" font-size="11" fill="#a16207">移动幅度实测口径</text>
+  <rect x="560" y="320" width="240" height="44" rx="6" fill="#fbbf24"/>
+  <text x="680" y="340" text-anchor="middle" font-size="13" font-weight="700" fill="#713f12">仅 2 个每次重复都稳定超过</text>
+  <text x="680" y="358" text-anchor="middle" font-size="11" fill="#78350f">全重复一致的最强证据</text>
+  <text x="60" y="392" font-size="12" fill="#444">作者自训并布点在自身判据附近的群体：一个翻转都没有。处方：发布数字旁注明拟合约定。</text>
+  <line x1="282" y1="342" x2="298" y2="342" stroke="#d97706" stroke-width="2" marker-end="url(#ar)"/>
+  <line x1="542" y1="342" x2="558" y2="342" stroke="#d97706" stroke-width="2" marker-end="url(#ar)"/>
+
+  <!-- 机制说明 -->
+  <rect x="40" y="446" width="380" height="120" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="60" y="474" font-size="14" font-weight="700" fill="#1e40af">批归一化统计量是什么</text>
+  <text x="60" y="500" font-size="12" fill="#444">经典视觉模型层间稳定激活分布的</text>
+  <text x="60" y="520" font-size="12" fill="#444">均值与方差，发布权重时必然随附</text>
+  <text x="60" y="546" font-size="12" fill="#b91c1c">非梯度步写入 · 发布记录不提如何拟合</text>
+
+  <rect x="440" y="446" width="380" height="120" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="460" y="474" font-size="14" font-weight="700" fill="#334155">与 #175 预算错觉的区别</text>
+  <text x="460" y="500" font-size="12" fill="#444">#175：病灶在测量侧，缺对照 → 补对照修复</text>
+  <text x="460" y="522" font-size="12" fill="#444">本篇：病灶在被测对象本身，数字随</text>
+  <text x="460" y="544" font-size="12" fill="#444">拟合约定移动而非随模型移动 → 记录约定堵</text>
+
+  <!-- 边界 -->
+  <rect x="40" y="580" width="780" height="30" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="430" y="600" text-anchor="middle" font-size="11.5" fill="#64748b">边界：预印本未经同行评审 · 机制限定带批归一化的视觉模型，不能外推语言模型遗忘评测 · 非指控造假，恶意与否不在审计射程</text>
+</svg>
