@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 智创简报：《语音智能体轮次专利扎堆，语音机器人质检接单活》"
+title: "AI 智创简报：《抢话该不该接？NVIDIA 们圈地轮次判定，质检工具还空着》"
 author: unbug
 categories: [AI, InnovationBrief]
 image: assets/images/innovation-brief-voice-agent-turn-taking-patents.svg
