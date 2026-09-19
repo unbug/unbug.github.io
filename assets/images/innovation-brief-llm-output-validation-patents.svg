@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="-apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect width="1200" height="630" fill="#fbfbfd"/>
+  <text x="600" y="52" text-anchor="middle" font-size="28" font-weight="700" fill="#1a1a2e">大厂在给 AI 输出装质检阀，验收报告这门手艺没人接</text>
+  <text x="600" y="82" text-anchor="middle" font-size="15" fill="#666">四件 LLM 输出验证专利已授权（非仅公开申请）· 2024-05 至 2026-07 · 数据实测 2026-09-19</text>
+
+  <!-- 专利四件 -->
+  <rect x="50" y="110" width="265" height="150" rx="10" fill="#eef2ff" stroke="#c7d2fe" stroke-width="1.5"/>
+  <text x="182" y="140" text-anchor="middle" font-size="15" font-weight="700" fill="#3730a3">US12645691B2</text>
+  <text x="182" y="164" text-anchor="middle" font-size="13" fill="#444">Honeywell · 2026-06-02</text>
+  <text x="182" y="192" text-anchor="middle" font-size="12.5" fill="#444">无监督验证：输入与输出</text>
+  <text x="182" y="214" text-anchor="middle" font-size="12.5" fill="#444">主题集合比对打可信分</text>
+  <text x="182" y="242" text-anchor="middle" font-size="12" fill="#7c3aed">不需要人工标注</text>
+
+  <rect x="335" y="110" width="265" height="150" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="467" y="140" text-anchor="middle" font-size="15" font-weight="700" fill="#1e40af">US12147513B2</text>
+  <text x="467" y="164" text-anchor="middle" font-size="13" fill="#444">Citibank · 2024-11-19</text>
+  <text x="467" y="192" text-anchor="middle" font-size="12.5" fill="#444">提示词动态验证平台：</text>
+  <text x="467" y="214" text-anchor="middle" font-size="12.5" fill="#444">适不适合交给这个模型</text>
+  <text x="467" y="242" text-anchor="middle" font-size="12" fill="#1d4ed8">请求准入闸 + 资源估算</text>
+
+  <rect x="620" y="110" width="265" height="150" rx="10" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+  <text x="752" y="140" text-anchor="middle" font-size="15" font-weight="700" fill="#166534">US12111747B2</text>
+  <text x="752" y="164" text-anchor="middle" font-size="13" fill="#444">Citibank · 2024-05-10</text>
+  <text x="752" y="192" text-anchor="middle" font-size="12.5" fill="#444">模型生成的检测代码</text>
+  <text x="752" y="214" text-anchor="middle" font-size="12.5" fill="#444">先进隔离虚拟机试跑</text>
+  <text x="752" y="242" text-anchor="middle" font-size="12" fill="#15803d">验证通过才采信</text>
+
+  <rect x="905" y="110" width="245" height="150" rx="10" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.5"/>
+  <text x="1027" y="140" text-anchor="middle" font-size="15" font-weight="700" fill="#9a3412">US12675579B2</text>
+  <text x="1027" y="164" text-anchor="middle" font-size="13" fill="#444">WitnessAI · 2026-07-07</text>
+  <text x="1027" y="192" text-anchor="middle" font-size="12.5" fill="#444">API 侧护栏：按管理策略</text>
+  <text x="1027" y="214" text-anchor="middle" font-size="12.5" fill="#444">动态挂输入输出过滤器</text>
+  <text x="1027" y="242" text-anchor="middle" font-size="12" fill="#c2410c">企业侧已占位</text>
+
+  <!-- 趋势条 -->
+  <rect x="50" y="290" width="1100" height="86" rx="10" fill="#fefce8" stroke="#fde047" stroke-width="1.5"/>
+  <text x="70" y="320" font-size="16" font-weight="700" fill="#854d0e">趋势：验收从「事后抽查」变成「流水线关卡」</text>
+  <text x="70" y="350" font-size="14" fill="#444">请求准入评估 → 回答前一致性比对 / 沙箱试跑 → 策略过滤放行。开源侧 promptfoo 25,270 星、Guardrails AI 7,434 星覆盖测试集与解析护栏，</text>
+  <text x="70" y="368" font-size="14" fill="#a16207">但无标注一致性打分与提示词准入判定仍是空白。</text>
+
+  <!-- 机会 -->
+  <rect x="50" y="402" width="540" height="150" rx="10" fill="#fdf2f8" stroke="#fbcfe8" stroke-width="1.5"/>
+  <text x="70" y="432" font-size="16" font-weight="700" fill="#9d174d">一个人能接的活：交付物验收质检</text>
+  <text x="70" y="460" font-size="13.5" fill="#444">主题一致性打分 + 对抗题集（跑偏/编造/越权）</text>
+  <text x="70" y="482" font-size="13.5" fill="#444">回放客户 API → 量化质检报告与失败样本集</text>
+  <text x="70" y="510" font-size="13" fill="#9d174d">Python + LLM API + Docker · 1 人 4 周 MVP</text>
+  <text x="70" y="536" font-size="13" fill="#be185d">报告署名反哺获客；代码生成项目补沙箱试跑层</text>
+
+  <!-- 商业模式 -->
+  <rect x="610" y="402" width="540" height="150" rx="10" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="630" y="432" font-size="16" font-weight="700" fill="#334155">两条收费线</text>
+  <text x="630" y="460" font-size="13.5" fill="#444">交付前验收报告：单次 3000-8000 元</text>
+  <text x="630" y="482" font-size="13.5" fill="#444">回归巡检订阅：模型/提示词变更后自动重跑，$19-49/月</text>
+  <text x="630" y="510" font-size="13" fill="#64748b">护城河：行业出题经验 + 打分依据可解释，不在脚本</text>
+  <text x="630" y="536" font-size="13" fill="#b45309">风险：开源补无标注指标；护栏产品占企业侧</text>
+
+  <text x="600" y="600" text-anchor="middle" font-size="13" fill="#94a3b8">Micropaper AI 智创简报 · 专利均已授权（愿意付维持费=内部真在用的信号）· 详见正文 References</text>
+</svg>
