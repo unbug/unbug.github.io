@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 620" font-family="-apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect width="860" height="620" fill="#fbfbfd"/>
+  <text x="430" y="38" text-anchor="middle" font-size="21" font-weight="700" fill="#1a1a2e">范式雷达 #13：Agent 从应用 loop 迁为集群一等负载</text>
+  <text x="430" y="62" text-anchor="middle" font-size="13" fill="#666">供给端 google/ax + Agent Substrate · 需求端 Linear CI 重构 · 同周交汇（2026-09-25 实测）</text>
+
+  <!-- 供给端 -->
+  <rect x="40" y="88" width="380" height="170" rx="10" fill="#eef2ff" stroke="#c7d2fe" stroke-width="1.5"/>
+  <text x="230" y="116" text-anchor="middle" font-size="15" font-weight="700" fill="#3730a3">供给端：微服务原语逐件复刻</text>
+  <text x="60" y="146" font-size="12.5" fill="#444">google/ax：11,045 星 · v0.3.0（09-20）</text>
+  <text x="60" y="170" font-size="12.5" fill="#444">HN 主帖 663 分 / 299 评论</text>
+  <text x="60" y="194" font-size="12.5" fill="#444">README 自述：billions 级 Agent 负载</text>
+  <text x="60" y="218" font-size="12.5" fill="#444">「If you have used Kubernetes, ax feels similar」</text>
+  <text x="60" y="242" font-size="12.5" fill="#3730a3">下层 Substrate：3,761 星 · 自述 millions of</text>
+  <text x="248" y="242" font-size="12.5" fill="#3730a3">sandboxes · sub-500ms resume</text>
+
+  <!-- 需求端 -->
+  <rect x="440" y="88" width="380" height="170" rx="10" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+  <text x="630" y="116" text-anchor="middle" font-size="15" font-weight="700" fill="#166534">需求端：旧设施先排队</text>
+  <text x="460" y="146" font-size="12.5" fill="#444">Linear 官方博客（HN 313 分）：</text>
+  <text x="460" y="170" font-size="12.5" fill="#444">AI 代码让 CI 成新瓶颈，整条链路重构</text>
+  <text x="460" y="200" font-size="12.5" fill="#166534">与 ax 无因果关系的独立主体</text>
+  <text x="460" y="224" font-size="12.5" fill="#444">先压垮的不是集群调度器，而是离</text>
+  <text x="460" y="246" font-size="12.5" fill="#444">Agent 产出最近的旧层</text>
+
+  <!-- 反方 -->
+  <rect x="40" y="280" width="780" height="130" rx="10" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
+  <text x="60" y="308" font-size="14.5" font-weight="700" fill="#991b1b">反方三刀（HN 实测评论）</text>
+  <text x="60" y="336" font-size="12.5" fill="#444">1. 必然论疲劳：「k8sification was always inevitable — salary justification」</text>
+  <text x="60" y="360" font-size="12.5" fill="#444">2. 病灶复刻：「Overly complex; yaml files, heavy framework」多条附和</text>
+  <text x="60" y="384" font-size="12.5" fill="#444">3. 普通服务论：队列 + 重试就能跑，不需要新原语 → 旧瓶刻新标签？</text>
+
+  <!-- 争点 -->
+  <rect x="40" y="432" width="380" height="130" rx="10" fill="#fffbeb" stroke="#fde68a" stroke-width="1.5"/>
+  <text x="230" y="460" text-anchor="middle" font-size="14" font-weight="700" fill="#92400e">共同争点</text>
+  <text x="230" y="490" text-anchor="middle" font-size="13" fill="#444">「新负载」还是「旧负载的新流量」</text>
+  <text x="230" y="518" text-anchor="middle" font-size="12" fill="#a16207">三方都不否认 Agent 负载在涨</text>
+
+  <!-- 边界 -->
+  <rect x="440" y="432" width="380" height="130" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="460" y="460" font-size="14" font-weight="700" fill="#334155">证据边界</text>
+  <text x="460" y="486" font-size="12" fill="#444">billions / millions 均仓库自述，无第三方压测</text>
+  <text x="460" y="508" font-size="12" fill="#444">ax 是开源运行时，非 Google 云商业承诺</text>
+  <text x="460" y="530" font-size="12" fill="#444">suspend/resume 是否损耗语义状态未验证</text>
+
+  <rect x="40" y="580" width="780" height="30" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="430" y="600" text-anchor="middle" font-size="11.5" fill="#64748b">可证伪信号：第三方压测/事故报告 · 密度数字复现 · 「普通队列」阵营跑通同等规模对照</text>
+</svg>
