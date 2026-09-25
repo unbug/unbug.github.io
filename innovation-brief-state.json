@@ -1,12 +1,12 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 智创简报：《语音智能体轮次专利扎堆，语音机器人质检接单活》",
-    "date": "2026-09-14",
-    "slug": "innovation-brief-voice-agent-turn-taking-patents"
+    "title": "AI 智创简报：《微软圈地代码评审智能体，PR 质检报告还空着》",
+    "date": "2026-09-25",
+    "slug": "innovation-brief-ai-code-review-audit-patents"
   },
-  "totalPublished": 19,
-  "nextScheduled": "2026-09-26",
+  "totalPublished": 20,
+  "nextScheduled": "2026-10-03",
   "coveredPatentFamilies": [
     "US20260044392",
     "US20260188475",
@@ -84,7 +84,11 @@
     "US12645691",
     "US12147513",
     "US12111747",
-    "US12675579"
+    "US12675579",
+    "US20260278303",
+    "US20250103325",
+    "US20260064410",
+    "US12487819"
   ],
   "candidateTopics": [
     {

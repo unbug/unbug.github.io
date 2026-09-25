@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f1c2e"/>
+      <stop offset="1" stop-color="#1b3a5c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="60" y="78" fill="#7fb3e0" font-size="24" letter-spacing="6">AI 智创简报 · INNOVATION BRIEF</text>
+  <text x="60" y="132" fill="#ffffff" font-size="38" font-weight="700">微软圈地代码评审智能体，PR 质检报告还空着</text>
+  <line x1="60" y1="162" x2="1140" y2="162" stroke="#3a5f8a" stroke-width="1"/>
+
+  <!-- Column 1: patent signal -->
+  <rect x="60" y="196" width="336" height="330" rx="10" fill="#16283f" stroke="#2e4d70"/>
+  <text x="84" y="238" fill="#7fb3e0" font-size="22" font-weight="700">专利信号</text>
+  <text x="84" y="280" fill="#e8eef5" font-size="17">US20260278303A1 微软</text>
+  <text x="84" y="306" fill="#9fb6cc" font-size="15">客户数据套模板生成评审 2026-09-17</text>
+  <text x="84" y="342" fill="#e8eef5" font-size="17">US20250103325A1 微软</text>
+  <text x="84" y="368" fill="#9fb6cc" font-size="15">意图分类器驱动评审评论生成</text>
+  <text x="84" y="404" fill="#e8eef5" font-size="17">US20260064410A1 摩根大通</text>
+  <text x="84" y="430" fill="#9fb6cc" font-size="15">多智能体分路评审并裁决 PR</text>
+  <text x="84" y="466" fill="#e8eef5" font-size="17">US12487819B2 微软（已授权）</text>
+  <text x="84" y="492" fill="#9fb6cc" font-size="15">top-k 变更生成 PR 摘要荐评审人</text>
+
+  <!-- arrow -->
+  <path d="M408 360 L444 360 M432 348 L444 360 L432 372" stroke="#5b8fc4" stroke-width="3" fill="none"/>
+
+  <!-- Column 2: trend -->
+  <rect x="456" y="196" width="336" height="330" rx="10" fill="#16283f" stroke="#2e4d70"/>
+  <text x="480" y="238" fill="#7fb3e0" font-size="22" font-weight="700">技术趋势</text>
+  <text x="480" y="280" fill="#e8eef5" font-size="17">瓶颈从写代码挪到审代码</text>
+  <text x="480" y="316" fill="#9fb6cc" font-size="15">评论生成 / PR 摘要 / 多智能体</text>
+  <text x="480" y="340" fill="#9fb6cc" font-size="15">裁决逐件被圈成方法专利</text>
+  <text x="480" y="388" fill="#e8eef5" font-size="17">验收口径缺席</text>
+  <text x="480" y="420" fill="#9fb6cc" font-size="15">误报率 / 评论采纳率 / 拦截率</text>
+  <text x="480" y="444" fill="#9fb6cc" font-size="15">没有成型的公开衡量标准</text>
+
+  <!-- arrow -->
+  <path d="M804 360 L840 360 M828 348 L840 360 L828 372" stroke="#5b8fc4" stroke-width="3" fill="none"/>
+
+  <!-- Column 3: opportunity -->
+  <rect x="852" y="196" width="288" height="330" rx="10" fill="#12314a" stroke="#4f86b8"/>
+  <text x="876" y="238" fill="#ffd479" font-size="22" font-weight="700">一个人能做的机会</text>
+  <text x="876" y="280" fill="#e8eef5" font-size="17" font-weight="700">PR 质检工具与验收报告</text>
+  <text x="876" y="312" fill="#9fb6cc" font-size="15">GitHub API + 现成大模型打标</text>
+  <text x="876" y="336" fill="#9fb6cc" font-size="15">无效评论 / 漏审 / 返工归因</text>
+  <text x="876" y="378" fill="#e8eef5" font-size="17">交付前质检单次 3000-8000 元</text>
+  <text x="876" y="412" fill="#e8eef5" font-size="17">仓库巡检订阅 $19-49/月</text>
+  <text x="876" y="454" fill="#9fb6cc" font-size="15">起步月成本数百元</text>
+  <text x="876" y="478" fill="#9fb6cc" font-size="15">1 人 4 周出 MVP</text>
+
+  <text x="60" y="580" fill="#5f7d9c" font-size="15">读者：个人开发者 / 一人公司 / 3 人以内小团队 · 信息落点：专利信号 → 技术趋势 → 今天能动手的机会</text>
+</svg>
