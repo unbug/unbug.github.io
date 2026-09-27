@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "AI 智创简报：《大模型查库专利扎堆落地，SQL 质检还空着》"
+title: "AI 智创简报：《查库 SQL 谁生成不重要，答没答对没人验》"
 author: unbug
 categories: [AI, InnovationBrief]
 image: assets/images/innovation-brief-nl2sql-verification-patents.svg
-tags: [Patent, NL2SQL, DevTools, DataQuality, IndieHacker]
+tags: [patent, nl2sql, dev-tools, data-quality, indie-hacker]
 description: "2026 年 4 月微软、亚马逊、戴尔、Snowflake 四件自然语言查数据库专利集中公开或授权。生成 SQL 一层被圈住，校验 SQL 是否真答对问题的质检层仍空着，是独立开发者能接的活。"
 ---
 
