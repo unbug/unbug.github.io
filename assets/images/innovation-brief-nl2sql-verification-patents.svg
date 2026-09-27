@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f1c2e"/>
+      <stop offset="1" stop-color="#1b3a5c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="60" y="78" fill="#7fb3e0" font-size="24" letter-spacing="6">AI 智创简报 · INNOVATION BRIEF</text>
+  <text x="60" y="132" fill="#ffffff" font-size="38" font-weight="700">大模型查库专利扎堆落地，SQL 质检还空着</text>
+  <line x1="60" y1="162" x2="1140" y2="162" stroke="#3a5f8a" stroke-width="1"/>
+
+  <!-- Column 1: patent signal -->
+  <rect x="60" y="196" width="336" height="330" rx="10" fill="#16283f" stroke="#2e4d70"/>
+  <text x="84" y="238" fill="#7fb3e0" font-size="22" font-weight="700">专利信号</text>
+  <text x="84" y="280" fill="#e8eef5" font-size="17">US20260111428A1 亚马逊</text>
+  <text x="84" y="306" fill="#9fb6cc" font-size="15">实体关系图再生成 SQL 2026-04-23</text>
+  <text x="84" y="342" fill="#e8eef5" font-size="17">US12614037B2 微软（已授权）</text>
+  <text x="84" y="368" fill="#9fb6cc" font-size="15">大模型对话式复杂库接口</text>
+  <text x="84" y="404" fill="#e8eef5" font-size="17">US12613928B2 Snowflake（已授权）</text>
+  <text x="84" y="430" fill="#9fb6cc" font-size="15">数据清单 LLM 检索匹配</text>
+  <text x="84" y="466" fill="#e8eef5" font-size="17">US20260119483A1 戴尔</text>
+  <text x="84" y="492" fill="#9fb6cc" font-size="15">人可读查询转机器可读 2026-04-30</text>
+
+  <!-- arrow -->
+  <path d="M408 360 L444 360 M432 348 L444 360 L432 372" stroke="#5b8fc4" stroke-width="3" fill="none"/>
+
+  <!-- Column 2: trend -->
+  <rect x="456" y="196" width="336" height="330" rx="10" fill="#16283f" stroke="#2e4d70"/>
+  <text x="480" y="238" fill="#7fb3e0" font-size="22" font-weight="700">技术趋势</text>
+  <text x="480" y="280" fill="#e8eef5" font-size="17">翻译 SQL 挪进结构化中间层</text>
+  <text x="480" y="316" fill="#9fb6cc" font-size="15">准确率取决于元数据厚度：</text>
+  <text x="480" y="342" fill="#9fb6cc" font-size="15">表注释 · 字段口径 · 历史查询</text>
+  <text x="480" y="378" fill="#e8eef5" font-size="17">生成层被专利与大厂占住</text>
+  <text x="480" y="414" fill="#e8eef5" font-size="17">校验层没人圈</text>
+  <text x="480" y="450" fill="#9fb6cc" font-size="15">SQL 是否真答对问题，</text>
+  <text x="480" y="476" fill="#9fb6cc" font-size="15">仍靠业务方事后质疑发现</text>
+
+  <!-- arrow -->
+  <path d="M804 360 L840 360 M828 348 L840 360 L828 372" stroke="#5b8fc4" stroke-width="3" fill="none"/>
+
+  <!-- Column 3: opportunity -->
+  <rect x="852" y="196" width="288" height="330" rx="10" fill="#16283f" stroke="#2e4d70"/>
+  <text x="876" y="238" fill="#7fb3e0" font-size="22" font-weight="700">一个人能做的</text>
+  <text x="876" y="280" fill="#e8eef5" font-size="17">金标准问题集 + 回归校验</text>
+  <text x="876" y="316" fill="#9fb6cc" font-size="15">50-200 条高频问题固化期望值</text>
+  <text x="876" y="342" fill="#9fb6cc" font-size="15">换模型即跑一遍回归</text>
+  <text x="876" y="378" fill="#e8eef5" font-size="17">查数质检服务 1-3 万元/项目</text>
+  <text x="876" y="414" fill="#9fb6cc" font-size="15">或 Postgres 校验插件按月订阅</text>
+  <text x="876" y="450" fill="#e8eef5" font-size="17">起步约 3000-8000 元</text>
+  <text x="876" y="486" fill="#9fb6cc" font-size="15">Vanna + SQLite/Postgres + BIRD</text>
+
+  <text x="60" y="576" fill="#6f8aa5" font-size="15">读者一问：一个没有团队、没有融资的开发者，看完今天能做什么？——给已上线 NL2SQL 的小团队搭一套问题集回归。</text>
+</svg>

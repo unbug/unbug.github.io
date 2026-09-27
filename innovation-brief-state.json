@@ -1,12 +1,12 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 智创简报：《微软圈地代码评审智能体，PR 质检报告还空着》",
-    "date": "2026-09-25",
-    "slug": "innovation-brief-ai-code-review-audit-patents"
+    "title": "AI 智创简报：《大模型查库专利扎堆落地，SQL 质检还空着》",
+    "date": "2026-09-27",
+    "slug": "innovation-brief-nl2sql-verification-patents"
   },
-  "totalPublished": 20,
-  "nextScheduled": "2026-10-03",
+  "totalPublished": 21,
+  "nextScheduled": "2026-09-30",
   "coveredPatentFamilies": [
     "US20260044392",
     "US20260188475",
@@ -88,7 +88,12 @@
     "US20260278303",
     "US20250103325",
     "US20260064410",
-    "US12487819"
+    "US12487819",
+    "US12614037",
+    "US20260111428",
+    "US20260119483",
+    "US12613928",
+    "US20260220380"
   ],
   "candidateTopics": [
     {
