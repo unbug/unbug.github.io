@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="630" fill="#f7f8fa"/>
+  <rect x="0" y="0" width="1200" height="86" fill="#1f2a44"/>
+  <text x="48" y="40" fill="#ffffff" font-size="26" font-weight="bold">快脑拆出大模型：Agent 控制循环改订阅决策函数</text>
+  <text x="48" y="68" fill="#aeb9d4" font-size="15">AI 范式雷达 #14 · 2026-09-15 至 10-11 四周生态波 · 数字均 2026-10-11 实测（HN Algolia / GitHub API）</text>
+
+  <rect x="48" y="114" width="356" height="316" rx="10" fill="#ffffff" stroke="#d8dee9"/>
+  <text x="72" y="150" fill="#1f2a44" font-size="19" font-weight="bold">事件：品类定义</text>
+  <text x="72" y="184" fill="#4a5568" font-size="15">TypeSafe 发布 Jev 与</text>
+  <text x="72" y="206" fill="#4a5568" font-size="15">System One Models 品类</text>
+  <rect x="72" y="224" width="308" height="44" rx="6" fill="#eef1f6"/>
+  <text x="226" y="252" fill="#1f2a44" font-size="19" font-weight="bold" text-anchor="middle">HN 1989 分 / 518 评</text>
+  <text x="72" y="300" fill="#4a5568" font-size="14">非结构化状态进</text>
+  <text x="72" y="322" fill="#4a5568" font-size="14">带概率的类型化决策出</text>
+  <text x="72" y="356" fill="#718096" font-size="13">70-500ms、输出免费</text>
+  <text x="72" y="378" fill="#b7791f" font-size="13">（均为厂商自述口径）</text>
+  <text x="72" y="410" fill="#718096" font-size="13">融资 870M / 估值 7.5B（自述）</text>
+
+  <rect x="426" y="114" width="356" height="316" rx="10" fill="#ffffff" stroke="#d8dee9"/>
+  <text x="450" y="150" fill="#1f2a44" font-size="19" font-weight="bold">四周跟进：四层分工</text>
+  <text x="450" y="184" fill="#4a5568" font-size="14">模型层  kev 8,895 星 · jeff 1,499</text>
+  <text x="450" y="210" fill="#4a5568" font-size="14">AnyJev 1,150（Nokia）</text>
+  <text x="450" y="236" fill="#4a5568" font-size="14">运行时  ollaya 1,283</text>
+  <text x="450" y="262" fill="#4a5568" font-size="14">清单  awesome-jev 2,261</text>
+  <text x="450" y="288" fill="#4a5568" font-size="14">大厂  Cloudflare Clef · AWS 系 Decider 2B</text>
+  <rect x="450" y="306" width="308" height="40" rx="6" fill="#e6f4ea"/>
+  <text x="604" y="332" fill="#1e7d43" font-size="16" font-weight="bold" text-anchor="middle">搜索 "jev decision model" 1,087 仓库</text>
+  <text x="450" y="378" fill="#718096" font-size="13">六个无隶属主体独立跟进</text>
+  <text x="450" y="400" fill="#718096" font-size="13">生态信号，非单品信号</text>
+
+  <rect x="804" y="114" width="348" height="316" rx="10" fill="#ffffff" stroke="#d8dee9"/>
+  <text x="828" y="150" fill="#1f2a44" font-size="19" font-weight="bold">反方：四把刀</text>
+  <text x="828" y="186" fill="#c0392b" font-size="14">没有公开可复现基准（49719120）</text>
+  <text x="828" y="214" fill="#c0392b" font-size="14">速度对比口径不诚实（49720601）</text>
+  <text x="828" y="242" fill="#c0392b" font-size="14">就是个 zero-shot 分类器（49723102）</text>
+  <text x="828" y="270" fill="#c0392b" font-size="14">fast-follow 商品化（HN 328 分帖）</text>
+  <rect x="828" y="292" width="300" height="64" rx="6" fill="#fde8e8"/>
+  <text x="842" y="318" fill="#c0392b" font-size="15" font-weight="bold">范式成立</text>
+  <text x="842" y="342" fill="#c0392b" font-size="15" font-weight="bold">不等于 TypeSafe 赢</text>
+  <text x="828" y="392" fill="#718096" font-size="13">互证：#188 查这类模型当闸门</text>
+  <text x="828" y="412" fill="#718096" font-size="13">不可靠——造闸与验闸同时发生</text>
+
+  <rect x="48" y="456" width="1104" height="80" rx="10" fill="#fff8e1" stroke="#e6c97a"/>
+  <text x="72" y="486" fill="#8a6d1a" font-size="14" font-weight="bold">观察点</text>
+  <text x="128" y="486" fill="#6b5b23" font-size="14">第三方盲测基准是否出现（最大空缺）；OpenAI / Anthropic 是否发同类类型化决策端点；</text>
+  <text x="128" y="512" fill="#6b5b23" font-size="14">DeepSeek 系是否跟进类型化输出与免费定价；kev / jeff / ollaya 星数增速（基线 2026-10-11）。</text>
+
+  <text x="48" y="586" fill="#a0aec0" font-size="13">慢脑管推理与生成 · 快脑管高频结构化决策 —— 同一条控制循环里的「通用核 + 协处理器」分工</text>
+</svg>

@@ -5,8 +5,8 @@
     "date": "2026-09-25",
     "slug": "paradigm-radar-agent-as-workload"
   },
-  "totalPublished": 13,
-  "nextScheduled": "2026-10-02",
+  "totalPublished": 14,
+  "nextScheduled": "2026-10-18",
   "candidateTopics": [
     {
       "topic": "Agent 容器隔离范式失效（Trail of Bits VM 逃逸）",
@@ -23,5 +23,7 @@
         "https://news.ycombinator.com/"
       ]
     }
-  ]
+  ],
+  "lastPublishedSlug": "paradigm-radar-system-one-models",
+  "lastPublishedDate": "2026-10-10"
 }
