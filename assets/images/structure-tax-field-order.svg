@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="630" fill="#f7f8fa"/>
+  <rect x="0" y="0" width="1200" height="86" fill="#1f2a44"/>
+  <text x="48" y="40" fill="#ffffff" font-size="26" font-weight="bold">结构税交多少，由字段顺序决定</text>
+  <text x="48" y="68" fill="#aeb9d4" font-size="15">arXiv 2610.12056 · PayPal AI · AACL IJCNLP 2026 主会接收 · 五个模型 × 四个数据集</text>
+
+  <rect x="48" y="114" width="540" height="330" rx="10" fill="#ffffff" stroke="#d8dee9"/>
+  <text x="72" y="150" fill="#1f2a44" font-size="19" font-weight="bold">最剧烈的翻转（GSM8K · XML）</text>
+  <text x="72" y="186" fill="#4a5568" font-size="14">推理字段在前（R,A）</text>
+  <rect x="72" y="198" width="400" height="42" rx="6" fill="#e6f4ea"/>
+  <text x="272" y="225" fill="#1e7d43" font-size="21" font-weight="bold" text-anchor="middle">准确率 83% – 87%</text>
+  <text x="72" y="278" fill="#4a5568" font-size="14">答案字段在前（A,R）</text>
+  <rect x="72" y="290" width="52" height="42" rx="6" fill="#fde8e8"/>
+  <text x="140" y="317" fill="#c0392b" font-size="21" font-weight="bold">准确率 10.98%</text>
+  <text x="72" y="368" fill="#718096" font-size="13">崩塌发生在两个开权重小模型：Llama-3.1-8B 与 Gemma3-4B；</text>
+  <text x="72" y="390" fill="#718096" font-size="13">四个前提（数据集/格式/顺序/模型）缺一不可，引用须带全。</text>
+  <text x="72" y="424" fill="#718096" font-size="13">提示词表面变体重跑稳定，非偶然。</text>
+
+  <rect x="612" y="114" width="540" height="330" rx="10" fill="#ffffff" stroke="#d8dee9"/>
+  <text x="636" y="150" fill="#1f2a44" font-size="19" font-weight="bold">机制：答案 token 提前落子</text>
+  <text x="636" y="188" fill="#4a5568" font-size="14">自回归生成只能逐 token 往后写。</text>
+  <text x="636" y="214" fill="#4a5568" font-size="14">答案字段排前面＝先押注答案，</text>
+  <text x="636" y="238" fill="#4a5568" font-size="14">再补写配合该答案的过程。</text>
+  <rect x="636" y="258" width="492" height="72" rx="6" fill="#eef1f6"/>
+  <text x="650" y="286" fill="#37476a" font-size="14" font-weight="bold">两种失败模式，同一个根因：</text>
+  <text x="650" y="310" fill="#37476a" font-size="14">答案承诺发生得太早</text>
+  <text x="636" y="362" fill="#4a5568" font-size="14">推理优先时：中间层对错表征更可分（CKA），</text>
+  <text x="636" y="386" fill="#4a5568" font-size="14">置信度与真实答对概率更吻合（校准改善）。</text>
+  <text x="636" y="424" fill="#718096" font-size="13">模型：GPT-4o / Gemini-Flash-2.0 / Claude-Sonnet-4.5 / Llama-3.1-8B / Gemma3-4B</text>
+
+  <rect x="48" y="470" width="1104" height="80" rx="10" fill="#e6f4ea" stroke="#a8d5b3"/>
+  <text x="72" y="500" fill="#1e7d43" font-size="16" font-weight="bold">工程师结论：把字段顺序倒过来</text>
+  <text x="72" y="528" fill="#2c6e49" font-size="15">给模型的 schema 里，把推理/依据字段放在最终答案字段之前——不换模型、不加开销，只改字段声明顺序，</text>
+  <text x="72" y="550" fill="#2c6e49" font-size="15">是任务侧覆盖 GSM8K、MMLU、LogicBench、Spider 的评审级免费午餐。税不在结构本身，在顺序。</text>
+
+  <text x="48" y="590" fill="#a0aec0" font-size="13">一分钟读论文 · 2026-10 · 与雷达 #14（供给端为何换类型化输出）互补：本文是使用端怎么排不吃亏</text>
+</svg>
