@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="630" fill="#f7f8fa"/>
+  <rect x="0" y="0" width="1200" height="86" fill="#1f2a44"/>
+  <text x="48" y="40" fill="#ffffff" font-size="26" font-weight="bold">引用凭证不等于决策依据：换掉法条，判决不动</text>
+  <text x="48" y="68" fill="#aeb9d4" font-size="15">arXiv 2610.12361 · 反事实审计法律链思维可信度 · 预印本（2026-10-08 提交，无评审无机构落款）</text>
+
+  <rect x="48" y="114" width="340" height="330" rx="10" fill="#ffffff" stroke="#d8dee9"/>
+  <text x="72" y="150" fill="#1f2a44" font-size="19" font-weight="bold">审计设计</text>
+  <text x="72" y="184" fill="#4a5568" font-size="14">案情一字不改</text>
+  <text x="72" y="208" fill="#4a5568" font-size="14">只把点名的法条/判例换成无关条目</text>
+  <text x="72" y="244" fill="#4a5568" font-size="14">判决从隐藏状态解码（logit-lens</text>
+  <text x="72" y="266" fill="#4a5568" font-size="14">承诺追踪），按类目基准率校正</text>
+  <text x="72" y="302" fill="#4a5568" font-size="14">七个开源模型 8B–70B × 四个基准</text>
+  <rect x="72" y="322" width="292" height="46" rx="6" fill="#e6f4ea"/>
+  <text x="86" y="342" fill="#1e7d43" font-size="13" font-weight="bold">点名正确率 66.7% – 100%</text>
+  <text x="86" y="360" fill="#1e7d43" font-size="12">要求说出适用权威时</text>
+  <text x="72" y="404" fill="#718096" font-size="13">稳健性：重采样 / 改写 / 选对 / 空权威</text>
+
+  <rect x="410" y="114" width="380" height="330" rx="10" fill="#ffffff" stroke="#d8dee9"/>
+  <text x="434" y="150" fill="#1f2a44" font-size="19" font-weight="bold">换权威后的判决改变率</text>
+  <text x="434" y="178" fill="#718096" font-size="13">按数据集分列，未合并</text>
+  <text x="434" y="216" fill="#4a5568" font-size="14">CaseHOLD 法条选择</text>
+  <rect x="434" y="226" width="64" height="24" rx="4" fill="#fde8e8"/>
+  <text x="508" y="243" fill="#c0392b" font-size="15" font-weight="bold">0.0% – 21.7%</text>
+  <text x="434" y="286" fill="#4a5568" font-size="14">ECHR + SCOTUS 判例</text>
+  <rect x="434" y="296" width="180" height="24" rx="4" fill="#fdf0e2"/>
+  <text x="624" y="313" fill="#b7791f" font-size="15" font-weight="bold">30.0% – 76.7%</text>
+  <text x="434" y="356" fill="#4a5568" font-size="14">ContractNLI 合同</text>
+  <rect x="434" y="366" width="238" height="24" rx="4" fill="#fdf0e2"/>
+  <text x="682" y="383" fill="#b7791f" font-size="15" font-weight="bold">43.3% – 50.0%</text>
+  <text x="434" y="422" fill="#718096" font-size="13">规模关不掉缺口；法律 LoRA 系 best-effort 复现</text>
+
+  <rect x="812" y="114" width="340" height="330" rx="10" fill="#ffffff" stroke="#d8dee9"/>
+  <text x="836" y="150" fill="#1f2a44" font-size="19" font-weight="bold">红队反转（五个核心模型）</text>
+  <text x="836" y="186" fill="#4a5568" font-size="14">藏在案情里的注入指令遵从率</text>
+  <rect x="836" y="198" width="280" height="40" rx="6" fill="#fde8e8"/>
+  <text x="976" y="224" fill="#c0392b" font-size="20" font-weight="bold" text-anchor="middle">73.3% – 96.4%</text>
+  <text x="836" y="272" fill="#4a5568" font-size="14">远高于对替换权威的敏感度</text>
+  <text x="836" y="294" fill="#4a5568" font-size="14">五个模型无一例外</text>
+  <rect x="836" y="314" width="280" height="64" rx="6" fill="#fff8e1" stroke="#e6c97a"/>
+  <text x="850" y="340" fill="#8a6d1a" font-size="14" font-weight="bold">本站口径：模型听话，但不守法</text>
+  <text x="850" y="362" fill="#8a6d1a" font-size="12">点名是表演，注入指令才被执行</text>
+  <text x="836" y="412" fill="#718096" font-size="13">两阶段假说：先念套话，再按事实判</text>
+
+  <rect x="48" y="470" width="1104" height="66" rx="10" fill="#eef1f6" stroke="#c9d2e0"/>
+  <text x="72" y="498" fill="#37476a" font-size="14" font-weight="bold">边界与含义</text>
+  <text x="160" y="498" fill="#4a5568" font-size="14">测的是行为上的权威依赖，未证明内部没在读法条；预印本待独立复现；红队数字限五个核心模型。</text>
+  <text x="160" y="522" fill="#4a5568" font-size="14">与简报 #10 合读：大厂在把「答案带出处」做成产品，本文证明出处本身不证明依据——验收线探不到判决怎么形成。</text>
+
+  <text x="48" y="586" fill="#a0aec0" font-size="13">一分钟读论文 · 2026-10 · 全部数字经论文 abs 与 HTML 全文逐字核验（2026-10-11）</text>
+</svg>
