@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
+  <rect width="960" height="480" fill="#f4f7fb"/>
+  <text x="480" y="46" fill="#1e3a5f" font-size="26" text-anchor="middle" font-weight="bold">证据链时间线：从一次测量到一台评价飞轮（2026-08 至 2026-10）</text>
+
+  <line x1="70" y1="250" x2="900" y2="250" stroke="#3d5f8a" stroke-width="3"/>
+  <path d="M 900 250 l -14 -7 M 900 250 l -14 7" stroke="#3d5f8a" stroke-width="3" fill="none"/>
+
+  <!-- milestones -->
+  <g font-size="15">
+    <!-- 08-03 -->
+    <circle cx="130" cy="250" r="9" fill="#2f6fb2"/>
+    <line x1="130" y1="241" x2="130" y2="160" stroke="#a9bdd8" stroke-width="1.5"/>
+    <rect x="55" y="90" width="150" height="70" rx="10" fill="#ffffff" stroke="#2f6fb2" stroke-width="2"/>
+    <text x="130" y="115" fill="#1e3a5f" text-anchor="middle" font-weight="bold">2026-08-03</text>
+    <text x="130" y="138" fill="#41627f" text-anchor="middle">MCP 会话分析产品</text>
+
+    <!-- 09-03 -->
+    <circle cx="310" cy="250" r="9" fill="#2f6fb2"/>
+    <line x1="310" y1="259" x2="310" y2="330" stroke="#a9bdd8" stroke-width="1.5"/>
+    <rect x="225" y="330" width="170" height="88" rx="10" fill="#ffffff" stroke="#2f6fb2" stroke-width="2"/>
+    <text x="310" y="356" fill="#1e3a5f" text-anchor="middle" font-weight="bold">2026-09-03</text>
+    <text x="310" y="379" fill="#41627f" text-anchor="middle">16,893 会话测量发布</text>
+    <text x="310" y="402" fill="#6b7f96" text-anchor="middle">HN 实测 300 分</text>
+
+    <!-- 10-03 -->
+    <circle cx="500" cy="250" r="9" fill="#7a9cc0"/>
+    <line x1="500" y1="241" x2="500" y2="160" stroke="#a9bdd8" stroke-width="1.5"/>
+    <rect x="420" y="90" width="160" height="70" rx="10" fill="#ffffff" stroke="#7a9cc0" stroke-width="2"/>
+    <text x="500" y="115" fill="#1e3a5f" text-anchor="middle" font-weight="bold">2026-10-03</text>
+    <text x="500" y="138" fill="#41627f" text-anchor="middle">npm 包首发，仓库 0 星</text>
+
+    <!-- 10-07 -->
+    <circle cx="670" cy="250" r="9" fill="#2f6fb2"/>
+    <line x1="670" y1="259" x2="670" y2="330" stroke="#a9bdd8" stroke-width="1.5"/>
+    <rect x="580" y="330" width="180" height="88" rx="10" fill="#ffffff" stroke="#2f6fb2" stroke-width="2"/>
+    <text x="670" y="356" fill="#1e3a5f" text-anchor="middle" font-weight="bold">2026-10-07</text>
+    <text x="670" y="379" fill="#41627f" text-anchor="middle">agent.reviews 上线</text>
+    <text x="670" y="402" fill="#6b7f96" text-anchor="middle">自述「数千条评价」</text>
+
+    <!-- 10-14 -->
+    <circle cx="845" cy="250" r="11" fill="#c96b3c"/>
+    <line x1="845" y1="241" x2="845" y2="160" stroke="#c96b3c" stroke-width="1.5"/>
+    <rect x="755" y="80" width="180" height="80" rx="10" fill="#fdf3ec" stroke="#c96b3c" stroke-width="2.5"/>
+    <text x="845" y="106" fill="#8a4a24" text-anchor="middle" font-weight="bold">2026-10-14 实测</text>
+    <text x="845" y="129" fill="#8a4a24" text-anchor="middle">189,934 条评价</text>
+    <text x="845" y="150" fill="#8a4a24" text-anchor="middle">4,120 个工具（自述）</text>
+  </g>
+
+  <!-- legend -->
+  <g font-size="14" fill="#41627f">
+    <circle cx="210" cy="450" r="6" fill="#2f6fb2"/><text x="224" y="455">厂商自述节点</text>
+    <circle cx="400" cy="450" r="6" fill="#7a9cc0"/><text x="414" y="455">独立实测（API）</text>
+    <circle cx="600" cy="450" r="6" fill="#c96b3c"/><text x="614" y="455">一周约 30-60 倍增长（均为官方页面自述）</text>
+  </g>
+</svg>

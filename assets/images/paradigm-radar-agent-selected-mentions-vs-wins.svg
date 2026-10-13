@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
+  <rect width="960" height="560" fill="#f4f7fb"/>
+  <text x="480" y="46" fill="#1e3a5f" font-size="26" text-anchor="middle" font-weight="bold">被提到不等于被选中：提及次数 vs 实际中选</text>
+  <text x="480" y="76" fill="#6b7f96" font-size="16" text-anchor="middle">Armature 16,893 会话测量自述数字，未经独立复现；浅色=被提及次数，深色=被选中次数</text>
+
+  <!-- scale: max mention 194 -> bar width 520; unit = 2.68 px -->
+  <g font-size="17">
+    <!-- PayPal 139 / 0 -->
+    <text x="210" y="135" fill="#1e3a5f" text-anchor="end" font-weight="bold">PayPal</text>
+    <rect x="225" y="115" width="373" height="26" rx="4" fill="#c3d5e8"/>
+    <rect x="225" y="115" width="3" height="26" fill="#c96b3c"/>
+    <text x="608" y="134" fill="#41627f">提及 139 · 中选 0（124 场输给 Stripe）</text>
+
+    <!-- Adyen 175 / 3 -->
+    <text x="210" y="195" fill="#1e3a5f" text-anchor="end" font-weight="bold">Adyen</text>
+    <rect x="225" y="175" width="469" height="26" rx="4" fill="#c3d5e8"/>
+    <rect x="225" y="175" width="9" height="26" fill="#c96b3c"/>
+    <text x="240" y="232" fill="#41627f">提及 175 · 中选 3</text>
+
+    <!-- LangChain 194 / 4 -->
+    <text x="210" y="275" fill="#1e3a5f" text-anchor="end" font-weight="bold">LangChain</text>
+    <rect x="225" y="255" width="520" height="26" rx="4" fill="#c3d5e8"/>
+    <rect x="225" y="255" width="11" height="26" fill="#c96b3c"/>
+    <text x="242" y="312" fill="#41627f">提及 194 · 中选 4</text>
+
+    <!-- Netlify 152 / 6 -->
+    <text x="210" y="355" fill="#1e3a5f" text-anchor="end" font-weight="bold">Netlify</text>
+    <rect x="225" y="335" width="407" height="26" rx="4" fill="#c3d5e8"/>
+    <rect x="225" y="335" width="17" height="26" fill="#c96b3c"/>
+    <text x="248" y="392" fill="#41627f">提及 152 · 中选 6</text>
+
+    <!-- Supabase mentions-most but loses 66% to Neon -->
+    <text x="210" y="435" fill="#1e3a5f" text-anchor="end" font-weight="bold">Supabase</text>
+    <rect x="225" y="415" width="520" height="26" rx="4" fill="#c3d5e8"/>
+    <text x="755" y="434" fill="#8a4a24">提及最多的数据库，66% 对决输给 Neon</text>
+  </g>
+
+  <rect x="225" y="115" width="14" height="14" fill="#c3d5e8"/><text x="248" y="127" font-size="15" fill="#41627f">被提及</text>
+  <rect x="330" y="115" width="14" height="14" fill="#c96b3c"/><text x="353" y="127" font-size="15" fill="#41627f">被选中</text>
+
+  <text x="480" y="510" fill="#41627f" font-size="16" text-anchor="middle">页面呈现直接翻转选择：Mailgun 因免费档「1 天日志保留」字样输给 Postmark；Stripe 支付场景十场赢九场。</text>
+  <text x="480" y="538" fill="#93a7bc" font-size="14" text-anchor="middle">数据来源：armature.tech/blog/which-tools-coding-agents-install（厂商自述，traces 据称公开）</text>
+</svg>

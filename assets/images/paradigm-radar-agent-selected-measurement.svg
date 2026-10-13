@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
+  <rect width="960" height="540" fill="#f4f7fb"/>
+  <text x="480" y="46" fill="#1e3a5f" font-size="26" text-anchor="middle" font-weight="bold">测量机制：同一批任务，三个 Agent，三条信息源</text>
+  <text x="480" y="76" fill="#6b7f96" font-size="16" text-anchor="middle">Armature 自述方法：1,163 个 prompt 变体 × 75 个仓库 × 4 类人格，16,893 会话收敛为 5,292 有效样本</text>
+
+  <!-- input -->
+  <rect x="40" y="200" width="170" height="120" rx="12" fill="#ffffff" stroke="#3d5f8a" stroke-width="2"/>
+  <text x="125" y="245" fill="#1e3a5f" font-size="19" text-anchor="middle" font-weight="bold">prompt 变体</text>
+  <text x="125" y="275" fill="#6b7f96" font-size="15" text-anchor="middle">+ 51 个代码库</text>
+  <text x="125" y="300" fill="#6b7f96" font-size="15" text-anchor="middle">4 类开发者人格</text>
+
+  <!-- agents -->
+  <g>
+    <rect x="300" y="110" width="220" height="88" rx="12" fill="#e8f1fc" stroke="#2f6fb2" stroke-width="2"/>
+    <text x="410" y="145" fill="#1e3a5f" font-size="19" text-anchor="middle" font-weight="bold">Claude Code</text>
+    <text x="410" y="175" fill="#41627f" font-size="15" text-anchor="middle">约 30% 搜索，主要靠参数记忆</text>
+
+    <rect x="300" y="216" width="220" height="88" rx="12" fill="#e8f1fc" stroke="#2f6fb2" stroke-width="2"/>
+    <text x="410" y="251" fill="#1e3a5f" font-size="19" text-anchor="middle" font-weight="bold">Codex</text>
+    <text x="410" y="281" fill="#41627f" font-size="15" text-anchor="middle">94% 会话搜索，9/10 用 site: 限定</text>
+
+    <rect x="300" y="322" width="220" height="88" rx="12" fill="#e8f1fc" stroke="#2f6fb2" stroke-width="2"/>
+    <text x="410" y="357" fill="#1e3a5f" font-size="19" text-anchor="middle" font-weight="bold">Cursor</text>
+    <text x="410" y="387" fill="#41627f" font-size="15" text-anchor="middle">约 2/3 会话靠网络搜索决策</text>
+  </g>
+  <g stroke="#8aa5c2" stroke-width="2" fill="none">
+    <path d="M 210 240 C 255 220 260 160 300 154"/>
+    <path d="M 210 260 L 300 260"/>
+    <path d="M 210 282 C 255 300 260 355 300 362"/>
+  </g>
+
+  <!-- outcome -->
+  <rect x="620" y="180" width="300" height="160" rx="14" fill="#ffffff" stroke="#c96b3c" stroke-width="2.5"/>
+  <text x="770" y="222" fill="#8a4a24" font-size="20" text-anchor="middle" font-weight="bold">同场景选同一工具</text>
+  <text x="770" y="278" fill="#c96b3c" font-size="44" text-anchor="middle" font-weight="bold">42%</text>
+  <text x="770" y="315" fill="#6b7f96" font-size="15" text-anchor="middle">Claude Code 自建率 19%，约为另两家两倍</text>
+  <g stroke="#8aa5c2" stroke-width="2" fill="none">
+    <path d="M 520 154 C 575 160 575 220 620 230"/>
+    <path d="M 520 260 L 620 260"/>
+    <path d="M 520 366 C 575 360 575 300 620 290"/>
+  </g>
+
+  <text x="480" y="470" fill="#41627f" font-size="16" text-anchor="middle">沙箱：E2B / Blaxel / Daytona 轮换；模拟人类与裁判均为 Gemini 3.7 Flash（厂商自述，trace 据称全量公开）</text>
+  <text x="480" y="502" fill="#93a7bc" font-size="14" text-anchor="middle">数据来源：armature.tech 测量研究，2026-09-03；数字未经独立第三方复现</text>
+</svg>

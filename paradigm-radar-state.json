@@ -1,29 +1,29 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 范式雷达：《智能体正从应用循环迁为集群一等负载》",
-    "date": "2026-09-25",
-    "slug": "paradigm-radar-agent-as-workload"
+    "title": "AI 范式雷达：《被 Agent 选中，成了工具的新分发渠道》",
+    "date": "2026-10-14",
+    "slug": "paradigm-radar-agent-selected-distribution"
   },
-  "totalPublished": 14,
+  "totalPublished": 15,
   "nextScheduled": "2026-10-18",
   "candidateTopics": [
     {
-      "topic": "Agent 容器隔离范式失效（Trail of Bits VM 逃逸）",
-      "score": 3.78,
+      "topic": "Codex CLI 默认安装持久自更新守护进程（常驻化焦虑）",
+      "score": 3.9,
       "sources": [
-        "https://blog.trailofbits.com/",
-        "https://news.ycombinator.com/"
+        "https://news.ycombinator.com/item?id=50060694",
+        "https://github.com/openai/codex/issues/48195"
       ]
     },
     {
-      "topic": "Coding Agent 工具选型即分发渠道（Armature 16,893 会话测量）",
-      "score": 4.1,
+      "topic": "agent.reviews 评价飞轮两周复查（189,934 条基线是否破 40 万/独立复现）",
+      "score": 4.0,
       "sources": [
-        "https://news.ycombinator.com/"
+        "https://agent.reviews/llms.txt"
       ]
     }
   ],
-  "lastPublishedSlug": "paradigm-radar-system-one-models",
-  "lastPublishedDate": "2026-10-10"
+  "lastPublishedSlug": "paradigm-radar-agent-selected-distribution",
+  "lastPublishedDate": "2026-10-14"
 }

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
+  <rect width="960" height="540" fill="#f4f7fb"/>
+  <text x="480" y="46" fill="#1e3a5f" font-size="26" text-anchor="middle" font-weight="bold">HN 火力地图：四条独立战线指向同一套基础设施</text>
+  <text x="480" y="76" fill="#6b7f96" font-size="16" text-anchor="middle">评论 id 可在 news.ycombinator.com 直接检索验证</text>
+
+  <!-- center -->
+  <rect x="380" y="255" width="200" height="90" rx="14" fill="#152740" stroke="#3d5f8a" stroke-width="2.5"/>
+  <text x="480" y="293" fill="#e8f1fc" font-size="19" text-anchor="middle" font-weight="bold">Agent 评价</text>
+  <text x="480" y="322" fill="#e8f1fc" font-size="19" text-anchor="middle" font-weight="bold">货架生态</text>
+
+  <!-- four attack blocks -->
+  <g font-size="15">
+    <rect x="40" y="110" width="400" height="92" rx="12" fill="#ffffff" stroke="#a4553a" stroke-width="2"/>
+    <text x="60" y="140" fill="#8a4a24" font-weight="bold" font-size="17">道德线：正当性本身</text>
+    <text x="60" y="166" fill="#41627f">「把伤害开发者的 SEO 垃圾玩法搬进 Agent」</text>
+    <text x="60" y="190" fill="#93a7bc">评论 49558929 · 类比 49559950 / 49559860</text>
+    <path d="M 440 202 C 470 225 475 235 480 255" stroke="#a4553a" stroke-width="2" fill="none"/>
+
+    <rect x="520" y="110" width="400" height="92" rx="12" fill="#ffffff" stroke="#a4553a" stroke-width="2"/>
+    <text x="540" y="140" fill="#8a4a24" font-weight="bold" font-size="17">技术线：注入面</text>
+    <text x="540" y="166" fill="#41627f">「Agent 写的公开评价进另一个 Agent 上下文，</text>
+    <text x="540" y="190" fill="#41627f">不是 prompt injection 工厂？」评论 49997827</text>
+    <path d="M 520 202 C 490 225 485 235 480 255" stroke="#a4553a" stroke-width="2" fill="none"/>
+
+    <rect x="40" y="380" width="400" height="92" rx="12" fill="#ffffff" stroke="#6a5a9c" stroke-width="2"/>
+    <text x="60" y="410" fill="#4a3d78" font-weight="bold" font-size="17">商业线：AdWords 化</text>
+    <text x="60" y="436" fill="#41627f">「下一步就是付费排名」49999510；</text>
+    <text x="60" y="460" fill="#41627f">「被找到 ≠ 最好的工具」50070994（10-13 发）</text>
+    <path d="M 440 378 C 470 355 475 345 480 345" stroke="#6a5a9c" stroke-width="2" fill="none"/>
+
+    <rect x="520" y="380" width="400" height="92" rx="12" fill="#ffffff" stroke="#6a5a9c" stroke-width="2"/>
+    <text x="540" y="410" fill="#4a3d78" font-weight="bold" font-size="17">数据线：评分通胀</text>
+    <text x="540" y="436" fill="#41627f">「cryptography 与 YAML 同分 4.6，是在按曲线</text>
+    <text x="540" y="460" fill="#41627f">打分」49998702 · 实测两页确实同分</text>
+    <path d="M 520 378 C 490 355 485 345 480 345" stroke="#6a5a9c" stroke-width="2" fill="none"/>
+  </g>
+
+  <text x="480" y="518" fill="#41627f" font-size="16" text-anchor="middle">共同点：没有一条否认「Agent 在替人装包」这个事实，争的是这条渠道该不该存在、可不可信。</text>
+</svg>
