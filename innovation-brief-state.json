@@ -97,6 +97,13 @@
   ],
   "candidateTopics": [
     {
+      "topic": "LLM 文档结构化抽取授权簇（Mistral US12651113B1 快授5.3月/Vendr US12586403B2/IBM US12639362B2/Intuit US12632675B2+US12705916B2/Adobe US12699851B2，6 家全授权）——簇强度4.5可核验5.0但空白度2.0（Reducto/LlamaParse/Unstructured 比分数+Extend 已发字段级评测），仅独立第三方 bake-off 半空。复活条件：出现新结构性空白，或改写为纯技术解读稿（不走简报框架）",
+      "score": 3.7,
+      "sources": [
+        "/Users/unbug/.openclaw/workspace/research/2026-10-14-innovation-brief-brief-22b.md"
+      ]
+    },
+    {
       "topic": "LLM 按请求选模型路由簇（Citibank US20260228267A1 路由审计链 / ServiceNow US20260205387A1 / aixplain US20260195184A1，2026-07~08 集中公开）——工具层被 RouteLLM/LiteLLM/Portkey 占据，仅当找到未饱和子角度（如路由回归审计）才复活",
       "score": 3.0,
       "sources": [
@@ -108,6 +115,13 @@
       "score": 3.2,
       "sources": [
         "/Users/unbug/.openclaw/workspace/research/2026-10-14-innovation-brief-brief-22.md"
+      ]
+    },
+    {
+      "topic": "LLM 会话成本归因探针（未完成：XHR 503+PatentsView 全灭）——10-21 轮换数据源续探（EPO OPS/Depatisnet 未验证）",
+      "score": null,
+      "sources": [
+        "/Users/unbug/.openclaw/workspace/research/2026-10-14-innovation-brief-brief-22b.md"
       ]
     }
   ],
@@ -148,8 +162,9 @@
   "lastNoTopicRound": {
     "date": "2026-10-14",
     "reason": "首选加权 3.0<4.0 宁缺毋滥；且 GP/FPO 全部核验通道封锁（直连 000、代理 503 反爬、FPO 代理 403、r.jina.ai 间歇失效）",
-    "evidence": "research/2026-10-14-innovation-brief-brief-22.md",
-    "methodNotes": "GP 索引滞后约 2 个月，窗口用 [T-8月,T-2月]；优先授权 B1 快授信号；代理出口 IP 会被 Google 封，需 r.jina.ai 兜底",
-    "retryScheduled": "2026-10-21"
+    "evidence": "research/2026-10-14-innovation-brief-brief-22.md + research/2026-10-14-innovation-brief-brief-22b.md",
+    "methodNotes": "GP XHR 用 after/before=publication:YYYYMMDD（pubstart/pubend 无效）；主信号=优先权→授权<=6月 GRANT；r.jina.ai 只兜底详情页不兜底 XHR JSON；XHR 间隔>=20s 防封代理出口 IP；PatentsView 本机不可用",
+    "retryScheduled": "2026-10-21",
+    "round": "2026-10-14 两轮（a 路由簇3.0 / b 文档抽取簇3.7）"
   }
 }
