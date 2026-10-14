@@ -6,7 +6,7 @@
     "slug": "innovation-brief-nl2sql-verification-patents"
   },
   "totalPublished": 21,
-  "nextScheduled": "2026-09-30",
+  "nextScheduled": "2026-10-21",
   "coveredPatentFamilies": [
     "US20260044392",
     "US20260188475",
@@ -97,10 +97,17 @@
   ],
   "candidateTopics": [
     {
-      "topic": "Twilio US20260161683（Dynamic Context Window Management for Conversational AI Agents，2026-06-11 公开）——预算分配器 CLI 角度",
-      "score": 3.4,
+      "topic": "LLM 按请求选模型路由簇（Citibank US20260228267A1 路由审计链 / ServiceNow US20260205387A1 / aixplain US20260195184A1，2026-07~08 集中公开）——工具层被 RouteLLM/LiteLLM/Portkey 占据，仅当找到未饱和子角度（如路由回归审计）才复活",
+      "score": 3.0,
       "sources": [
-        "https://www.freepatentsonline.com/y2026/0161683.html"
+        "/Users/unbug/.openclaw/workspace/research/2026-10-14-innovation-brief-brief-22.md"
+      ]
+    },
+    {
+      "topic": "Mistral US12651113B1 快速授权信号（优先权 2025-12-31→授权 2026-06-09 仅 5.5 个月，Document intelligence）——本轮编号未能独立复验（GP 通道全灭），下轮先核号再挖快速授权 B1 簇",
+      "score": 3.2,
+      "sources": [
+        "/Users/unbug/.openclaw/workspace/research/2026-10-14-innovation-brief-brief-22.md"
       ]
     }
   ],
@@ -137,5 +144,12 @@
       "verifiedAt": "2026-09-04 19:20 GMT+8",
       "note": "commit 3e343d7，Actions build success 后验证 HTTP 200 + llms.txt 已收录"
     }
+  },
+  "lastNoTopicRound": {
+    "date": "2026-10-14",
+    "reason": "首选加权 3.0<4.0 宁缺毋滥；且 GP/FPO 全部核验通道封锁（直连 000、代理 503 反爬、FPO 代理 403、r.jina.ai 间歇失效）",
+    "evidence": "research/2026-10-14-innovation-brief-brief-22.md",
+    "methodNotes": "GP 索引滞后约 2 个月，窗口用 [T-8月,T-2月]；优先授权 B1 快授信号；代理出口 IP 会被 Google 封，需 r.jina.ai 兜底",
+    "retryScheduled": "2026-10-21"
   }
 }
