@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="470" fill="#ffffff"/>
+  <text x="60" y="56" fill="#111827" font-size="30" font-weight="bold">一个镜像同时锁住 agent 与它的请求清单</text>
+
+  <!-- image box -->
+  <rect x="60" y="96" width="420" height="290" rx="12" fill="#f3f6f9" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="84" y="136" fill="#1d4ed8" font-size="22" font-weight="bold">Kit = 一个普通 OCI 镜像</text>
+  <rect x="84" y="156" width="372" height="52" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="100" y="189" fill="#334155" font-size="19">agent 本体</text>
+  <rect x="84" y="216" width="372" height="52" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="100" y="249" fill="#334155" font-size="19">它的工具</text>
+  <rect x="84" y="276" width="372" height="90" rx="8" fill="#eef4ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="100" y="306" fill="#1d4ed8" font-size="19" font-weight="bold">类型化请求清单</text>
+  <text x="100" y="336" fill="#475569" font-size="18">hosts / credentials / volumes</text>
+
+  <!-- arrow -->
+  <line x1="500" y1="240" x2="600" y2="240" stroke="#64748b" stroke-width="2.5"/>
+  <path d="M600 240 l-16 -9 v18 z" fill="#64748b"/>
+  <text x="512" y="226" fill="#475569" font-size="18">pull / diff</text>
+  <text x="512" y="268" fill="#475569" font-size="18">sign / scan</text>
+
+  <!-- diff panel -->
+  <rect x="620" y="96" width="520" height="290" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="644" y="136" fill="#0f172a" font-size="22" font-weight="bold">新版本要更多权限时：diff 里可见</text>
+  <rect x="644" y="158" width="472" height="150" rx="8" fill="#0f1720"/>
+  <text x="664" y="190" fill="#94a3b8" font-size="18" font-family="monospace">@@ kit.yaml @@</text>
+  <text x="664" y="220" fill="#4ade80" font-size="18" font-family="monospace">+ hosts: api.vendor.example</text>
+  <text x="664" y="250" fill="#4ade80" font-size="18" font-family="monospace">+ credentials: vault/prod-readonly</text>
+  <text x="664" y="280" fill="#f87171" font-size="18" font-family="monospace">- volumes: /home</text>
+  <text x="644" y="342" fill="#334155" font-size="19">评审者能 diff 它，合规运行时能执行它，</text>
+  <text x="644" y="370" fill="#334155" font-size="19">新增行是「有人可以拒绝」的地方。</text>
+
+  <text x="60" y="432" fill="#475569" font-size="19">据 Docker 官方博客：清单是镜像的一部分，pinning the image pins the agent and its requests together。</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="630" fill="#0f1720"/>
+  <text x="80" y="104" fill="#e8edf2" font-size="46" font-weight="bold">Agent 权限清单要住进哪个载体</text>
+  <text x="80" y="152" fill="#8fa3b5" font-size="24">四周窗口内四个主体各自给出一种「可分发、可 diff」的权限工件</text>
+
+  <!-- carrier 1: OCI image -->
+  <rect x="80" y="205" width="240" height="220" rx="14" fill="#16222e" stroke="#3b82f6" stroke-width="2.5"/>
+  <rect x="112" y="238" width="60" height="44" rx="6" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+  <line x1="112" y1="260" x2="172" y2="260" stroke="#3b82f6" stroke-width="2"/>
+  <line x1="142" y1="238" x2="142" y2="282" stroke="#3b82f6" stroke-width="2"/>
+  <text x="98" y="322" fill="#e8edf2" font-size="24" font-weight="bold">OCI 镜像</text>
+  <text x="98" y="354" fill="#9fb3c4" font-size="18">Docker Kit Spec</text>
+  <text x="98" y="382" fill="#9fb3c4" font-size="18">交 CNCF，m.8</text>
+  <text x="98" y="410" fill="#6f8598" font-size="16">spec 仓 150 星</text>
+
+  <!-- carrier 2: identity catalog -->
+  <rect x="340" y="205" width="240" height="220" rx="14" fill="#16222e" stroke="#22c55e" stroke-width="2.5"/>
+  <circle cx="404" cy="252" r="16" fill="none" stroke="#22c55e" stroke-width="2.5"/>
+  <path d="M382 296 q22 -26 44 0" fill="none" stroke="#22c55e" stroke-width="2.5"/>
+  <text x="358" y="340" fill="#e8edf2" font-size="24" font-weight="bold">身份目录</text>
+  <text x="358" y="372" fill="#9fb3c4" font-size="18">Okta 第三类身份</text>
+  <text x="358" y="400" fill="#9fb3c4" font-size="18">AI Agent 类目 New</text>
+  <text x="358" y="428" fill="#6f8598" font-size="16">产品页实测 10-15</text>
+
+  <!-- carrier 3: payment authorization -->
+  <rect x="600" y="205" width="240" height="220" rx="14" fill="#16222e" stroke="#f59e0b" stroke-width="2.5"/>
+  <rect x="632" y="240" width="60" height="40" rx="6" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+  <line x1="632" y1="254" x2="692" y2="254" stroke="#f59e0b" stroke-width="2.5"/>
+  <text x="618" y="340" fill="#e8edf2" font-size="24" font-weight="bold">支付授权</text>
+  <text x="618" y="372" fill="#9fb3c4" font-size="18">Amex 越权购买框架</text>
+  <text x="618" y="400" fill="#9fb3c4" font-size="18">据 TechCrunch 报道</text>
+  <text x="618" y="428" fill="#6f8598" font-size="16">HN 4 分，10-13</text>
+
+  <!-- carrier 4: protocol draft -->
+  <rect x="860" y="205" width="240" height="220" rx="14" fill="#16222e" stroke="#a78bfa" stroke-width="2.5"/>
+  <path d="M892 240 h44 l16 16 v40 h-60 z" fill="none" stroke="#a78bfa" stroke-width="2.5"/>
+  <line x1="902" y1="268" x2="938" y2="268" stroke="#a78bfa" stroke-width="2"/>
+  <line x1="902" y1="282" x2="938" y2="282" stroke="#a78bfa" stroke-width="2"/>
+  <text x="878" y="340" fill="#e8edf2" font-size="24" font-weight="bold">协议草案</text>
+  <text x="878" y="372" fill="#9fb3c4" font-size="18">IETF 认证与授权</text>
+  <text x="878" y="400" fill="#9fb3c4" font-size="18">Cedar 1,784 星</text>
+  <text x="878" y="428" fill="#6f8598" font-size="16">草案 HN 4 分</text>
+
+  <!-- question mark band -->
+  <line x1="80" y1="470" x2="1100" y2="470" stroke="#2c3d4d" stroke-width="2"/>
+  <text x="80" y="524" fill="#e8edf2" font-size="26" font-weight="bold">争夺的是载体，不是结论</text>
+  <text x="80" y="562" fill="#9fb3c4" font-size="20">规范主帖 HN 7 分 · Docker Agent 306 分 · Nvidia 看门狗 230 分：大厂密集，开发者冷</text>
+  <text x="80" y="598" fill="#6f8598" font-size="18">AI 范式雷达 #16 · 实测数据 2026-10-15</text>
+</svg>

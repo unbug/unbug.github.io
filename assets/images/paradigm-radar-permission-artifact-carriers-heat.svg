@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="520" fill="#ffffff"/>
+  <text x="60" y="52" fill="#111827" font-size="30" font-weight="bold">四个竞争载体与冷热分裂</text>
+
+  <!-- carriers row -->
+  <g font-size="19">
+    <rect x="60" y="88" width="255" height="86" rx="10" fill="#eef4ff" stroke="#2563eb" stroke-width="2"/>
+    <text x="78" y="118" fill="#1d4ed8" font-weight="bold" font-size="20">OCI 镜像</text>
+    <text x="78" y="146" fill="#475569">Docker Kit，交 CNCF</text>
+
+    <rect x="345" y="88" width="255" height="86" rx="10" fill="#ecfdf3" stroke="#16a34a" stroke-width="2"/>
+    <text x="363" y="118" fill="#15803d" font-weight="bold" font-size="20">身份目录</text>
+    <text x="363" y="146" fill="#475569">Okta AI Agent 类目</text>
+
+    <rect x="630" y="88" width="255" height="86" rx="10" fill="#fff7e6" stroke="#d97706" stroke-width="2"/>
+    <text x="648" y="118" fill="#b45309" font-weight="bold" font-size="20">支付授权框架</text>
+    <text x="648" y="146" fill="#475569">Amex，据 TechCrunch</text>
+
+    <rect x="915" y="88" width="225" height="86" rx="10" fill="#f5f0ff" stroke="#7c3aed" stroke-width="2"/>
+    <text x="933" y="118" fill="#6d28d9" font-weight="bold" font-size="20">IETF 草案</text>
+    <text x="933" y="146" fill="#475569">协议未收敛</text>
+  </g>
+
+  <text x="60" y="208" fill="#334155" font-size="19">四套互不兼容的载体同周并存；Docker 产品页内同时另有 Cross App Access Protocol。</text>
+
+  <!-- heat bars -->
+  <text x="60" y="262" fill="#111827" font-size="24" font-weight="bold">开发者侧热度（HN 分数，实测 2026-10-15）</text>
+  <g font-size="18">
+    <text x="60" y="304" fill="#334155">Docker Agent 产品帖</text>
+    <rect x="360" y="286" width="612" height="24" rx="4" fill="#2563eb"/>
+    <text x="982" y="304" fill="#1d4ed8" font-weight="bold">306</text>
+
+    <text x="60" y="344" fill="#334155">Nvidia 看门狗芯片</text>
+    <rect x="360" y="326" width="460" height="24" rx="4" fill="#0ea5e9"/>
+    <text x="830" y="344" fill="#0369a1" font-weight="bold">230</text>
+
+    <text x="60" y="384" fill="#334155">Agent37 沙箱 Launch</text>
+    <rect x="360" y="366" width="320" height="24" rx="4" fill="#94a3b8"/>
+    <text x="690" y="384" fill="#475569" font-weight="bold">160</text>
+
+    <text x="60" y="424" fill="#334155">Infisical Agent Vault</text>
+    <rect x="360" y="406" width="12" height="24" rx="3" fill="#f87171"/>
+    <text x="382" y="424" fill="#b91c1c" font-weight="bold">6</text>
+
+    <text x="60" y="464" fill="#334155">Docker+CNCF 规范主帖</text>
+    <rect x="360" y="446" width="14" height="24" rx="3" fill="#f87171"/>
+    <text x="384" y="464" fill="#b91c1c" font-weight="bold">7</text>
+  </g>
+
+  <text x="60" y="502" fill="#475569" font-size="19">产品与事故热，规范本身冷：基础设施在铺，共识未形成。</text>
+</svg>

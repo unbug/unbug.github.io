@@ -1,12 +1,12 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 范式雷达：《被 Agent 选中，成了工具的新分发渠道》",
-    "date": "2026-10-14",
-    "slug": "paradigm-radar-agent-selected-distribution"
+    "title": "AI 范式雷达：《Agent 权限清单要住进哪个载体》",
+    "date": "2026-10-15",
+    "slug": "paradigm-radar-agent-permission-artifact"
   },
-  "totalPublished": 15,
-  "nextScheduled": "2026-10-18",
+  "totalPublished": 16,
+  "nextScheduled": "2026-10-19",
   "candidateTopics": [
     {
       "topic": "Codex CLI 默认安装持久自更新守护进程（常驻化焦虑）",
@@ -24,7 +24,7 @@
       ]
     }
   ],
-  "lastPublishedSlug": "paradigm-radar-agent-selected-distribution",
-  "lastPublishedDate": "2026-10-14",
+  "lastPublishedSlug": "paradigm-radar-agent-permission-artifact",
+  "lastPublishedDate": "2026-10-15",
   "lastVerifiedAt": "2026-10-14T10:20+08:00"
 }
