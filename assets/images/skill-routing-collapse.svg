@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+  <rect width="1200" height="630" fill="#0f1620"/>
+  <text x="60" y="78" fill="#e8eef6" font-size="34" font-weight="700">Skill 库越大，agent 越不翻说明书</text>
+  <text x="60" y="116" fill="#8ea3bd" font-size="19">loaded-skill recall 与 zero-load rate 随无关 skill 数量的变化（论文测量，三个开源权重模型的平均趋势）</text>
+
+  <!-- axes -->
+  <line x1="120" y1="520" x2="700" y2="520" stroke="#3a4a61" stroke-width="2"/>
+  <line x1="120" y1="170" x2="120" y2="520" stroke="#3a4a61" stroke-width="2"/>
+  <text x="80" y="180" fill="#8ea3bd" font-size="16">100%</text>
+  <text x="96" y="345" fill="#8ea3bd" font-size="16">50%</text>
+  <line x1="114" y1="341" x2="700" y2="341" stroke="#243143" stroke-width="1" stroke-dasharray="4 6"/>
+  <text x="120" y="556" fill="#8ea3bd" font-size="16">0 无关 skill</text>
+  <text x="330" y="556" fill="#8ea3bd" font-size="16">+100</text>
+  <text x="620" y="556" fill="#8ea3bd" font-size="16">+1,000</text>
+
+  <!-- recall line 73.6 -> 27.4 -->
+  <polyline points="120,262 380,378 660,424" fill="none" stroke="#4fc3f7" stroke-width="5"/>
+  <circle cx="120" cy="262" r="9" fill="#4fc3f7"/>
+  <circle cx="380" cy="378" r="9" fill="#4fc3f7"/>
+  <circle cx="660" cy="424" r="9" fill="#4fc3f7"/>
+  <text x="150" y="248" fill="#4fc3f7" font-size="20" font-weight="700">73.6%</text>
+  <text x="600" y="400" fill="#4fc3f7" font-size="20" font-weight="700">27.4%</text>
+  <text x="690" y="430" fill="#4fc3f7" font-size="17">加载召回</text>
+
+  <!-- zero-load line 9.3 -> 51.6 -->
+  <polyline points="120,488 380,447 660,256" fill="none" stroke="#ff8a65" stroke-width="5"/>
+  <circle cx="120" cy="488" r="9" fill="#ff8a65"/>
+  <circle cx="380" cy="447" r="9" fill="#ff8a65"/>
+  <circle cx="660" cy="256" r="9" fill="#ff8a65"/>
+  <text x="150" y="508" fill="#ff8a65" font-size="20" font-weight="700">9.3%</text>
+  <text x="560" y="238" fill="#ff8a65" font-size="22" font-weight="700">51.6% 零加载</text>
+  <text x="690" y="262" fill="#ff8a65" font-size="17">什么都不加载</text>
+
+  <!-- explicit selection marker -->
+  <circle cx="660" cy="260" r="9" fill="none" stroke="#a5d6a7" stroke-width="4" stroke-dasharray="4 3"/>
+  <text x="470" y="200" fill="#a5d6a7" font-size="17">同一库改为显式选择：73.9%</text>
+
+  <!-- right panel: lagging task success -->
+  <rect x="770" y="170" width="370" height="350" rx="14" fill="#16202d" stroke="#2b3b52"/>
+  <text x="800" y="216" fill="#e8eef6" font-size="22" font-weight="700">任务成功率却几乎不动</text>
+  <text x="800" y="268" fill="#9fb3cc" font-size="18">GLM-5 Pass@3</text>
+  <text x="800" y="300" fill="#e8eef6" font-size="26" font-weight="700">57.3% → 56.1%</text>
+  <text x="800" y="352" fill="#9fb3cc" font-size="18">Kimi K2.5 Pass@3</text>
+  <text x="800" y="384" fill="#e8eef6" font-size="26" font-weight="700">52.4% → 50.6%</text>
+  <text x="800" y="440" fill="#ffcf7a" font-size="18">论文称：只看任务成功，</text>
+  <text x="800" y="468" fill="#ffcf7a" font-size="18">坏掉的系统显得健康</text>
+
+  <text x="60" y="600" fill="#6d819c" font-size="15">数据：arXiv:2610.18522（预印本，未经同行评审）· 三个开源权重模型，未覆盖闭源前沿模型</text>
+</svg>
