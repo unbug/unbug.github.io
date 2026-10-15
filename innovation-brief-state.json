@@ -162,9 +162,9 @@
   "lastNoTopicRound": {
     "date": "2026-10-14",
     "reason": "首选加权 3.0<4.0 宁缺毋滥；且 GP/FPO 全部核验通道封锁（直连 000、代理 503 反爬、FPO 代理 403、r.jina.ai 间歇失效）",
-    "evidence": "research/2026-10-14-innovation-brief-brief-22.md + research/2026-10-14-innovation-brief-brief-22b.md",
-    "methodNotes": "GP XHR 用 after/before=publication:YYYYMMDD（pubstart/pubend 无效）；主信号=优先权→授权<=6月 GRANT；r.jina.ai 只兜底详情页不兜底 XHR JSON；XHR 间隔>=20s 防封代理出口 IP；PatentsView 本机不可用",
+    "evidence": "research/2026-10-14-innovation-brief-brief-22.md + research/2026-10-14-innovation-brief-brief-22b.md, research/2026-10-15-innovation-brief-brief-22c.md",
+    "methodNotes": "c 轮结构性发现：优先权2025-10后+快授<=6月信号在 agent 成本/审计细分=结构性空窗（新概念授权周期本身>6月+GP索引滞后）；成本归因方向被 FinOps 厂商（Finout/Mavvrik）主营击穿；agent 失败归因无专利锚（257件全传统RCA）；model pinning 探针因 Google 503 未完成顺延。三轮共性：空白度框架在工具层被厂商自建持续击穿。下一轮换框架候选：A1+大厂白名单早期信号（弱簇模式）或纯技术解读稿",
     "retryScheduled": "2026-10-21",
-    "round": "2026-10-14 两轮（a 路由簇3.0 / b 文档抽取簇3.7）"
+    "round": "三轮（a 路由3.0 / b 文档抽取3.7 / c 零候选）均 2026-10-14~15"
   }
 }
