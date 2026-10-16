@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="630" fill="#0f1420"/>
+  <text x="60" y="64" fill="#e8ecf4" font-size="32" font-weight="bold">10 个 agent 的事实讨论：托越多，错误答案收尾率越高</text>
+  <text x="60" y="98" fill="#8fa1bd" font-size="18">arXiv 2610.22138 预印本 · 6 模型 x 3 数据集 · 托只是反复坚称，无其他攻击手段</text>
+
+  <!-- left bars: finish-with-wrong rate -->
+  <line x1="110" y1="500" x2="560" y2="500" stroke="#3a4a66" stroke-width="2"/>
+  <!-- 0.6 -->
+  <rect x="150" y="497" width="90" height="3" fill="#81c784"/>
+  <text x="195" y="478" fill="#81c784" font-size="24" text-anchor="middle" font-weight="bold">0.6%</text>
+  <text x="195" y="530" fill="#8fa1bd" font-size="17" text-anchor="middle">无托</text>
+  <!-- 44.8 -->
+  <rect x="300" y="301" width="90" height="199" fill="#ffb74d"/>
+  <text x="345" y="284" fill="#ffb74d" font-size="24" text-anchor="middle" font-weight="bold">44.8%</text>
+  <text x="345" y="530" fill="#8fa1bd" font-size="17" text-anchor="middle">1 个托</text>
+  <!-- 60.5 -->
+  <rect x="450" y="230" width="90" height="270" fill="#e57373"/>
+  <text x="495" y="213" fill="#e57373" font-size="24" text-anchor="middle" font-weight="bold">60.5%</text>
+  <text x="495" y="530" fill="#8fa1bd" font-size="17" text-anchor="middle">3 个托</text>
+
+  <!-- right: private vs public -->
+  <text x="740" y="160" fill="#e8ecf4" font-size="22" font-weight="bold">3 个托在场时：私下 vs 公开</text>
+  <rect x="740" y="195" width="330" height="52" rx="8" fill="#e57373"/>
+  <text x="755" y="228" fill="#0f1420" font-size="20" font-weight="bold">私下持有错误答案 51.6%</text>
+  <rect x="740" y="270" width="126" height="52" rx="8" fill="#4fc3f7"/>
+  <text x="885" y="303" fill="#4fc3f7" font-size="20" font-weight="bold">公开附和只有 19.7%</text>
+  <text x="740" y="372" fill="#8fa1bd" font-size="18">信念先塌，嘴上不认——</text>
+  <text x="740" y="400" fill="#8fa1bd" font-size="18">审计讨论日志看不出团队已被带偏</text>
+  <text x="740" y="448" fill="#8fa1bd" font-size="18">基线知识不预测抗影响能力；</text>
+  <text x="740" y="476" fill="#8fa1bd" font-size="18">错误会在良性 agent 间继续扩散</text>
+
+  <rect x="110" y="560" width="980" height="46" rx="10" fill="#1a2334"/>
+  <text x="130" y="590" fill="#e8ecf4" font-size="18">经典从众研究多为「公开顺从、私意不变」；本文方向相反：私意先塌，公开看不出来</text>
+</svg>
