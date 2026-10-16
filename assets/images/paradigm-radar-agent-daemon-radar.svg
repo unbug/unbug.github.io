@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
+  <rect width="960" height="600" fill="#f4f7fb"/>
+  <text x="480" y="44" fill="#1e3a5f" font-size="25" text-anchor="middle" font-weight="bold">未来 1-2 个雷达周期：五个可证伪观察点</text>
+
+  <!-- radar center -->
+  <circle cx="480" cy="330" r="220" fill="none" stroke="#c6d5e6" stroke-width="2"/>
+  <circle cx="480" cy="330" r="150" fill="none" stroke="#c6d5e6" stroke-width="2"/>
+  <circle cx="480" cy="330" r="80" fill="none" stroke="#c6d5e6" stroke-width="2"/>
+  <line x1="260" y1="330" x2="700" y2="330" stroke="#dbe6f1" stroke-width="1.5"/>
+  <line x1="480" y1="110" x2="480" y2="550" stroke="#dbe6f1" stroke-width="1.5"/>
+  <circle cx="480" cy="330" r="46" fill="#16324f"/>
+  <text x="480" y="324" fill="#cfe3ff" font-size="15" text-anchor="middle" font-weight="bold">agent</text>
+  <text x="480" y="344" fill="#cfe3ff" font-size="15" text-anchor="middle" font-weight="bold">daemon</text>
+
+  <!-- sweep -->
+  <path d="M 480 330 L 480 110 A 220 220 0 0 1 668 220 Z" fill="#4da3ff" opacity="0.10"/>
+  <line x1="480" y1="330" x2="668" y2="220" stroke="#4da3ff" stroke-width="2.5"/>
+
+  <!-- blip 1: vendor concession (top) -->
+  <g font-size="13.5">
+    <circle cx="480" cy="150" r="10" fill="#2f6fb2"/>
+    <rect x="330" y="72" width="300" height="66" rx="10" fill="#ffffff" stroke="#2f6fb2" stroke-width="2"/>
+    <text x="348" y="96" fill="#1e3a5f" font-weight="bold">1 厂商让步</text>
+    <text x="348" y="118" fill="#41627f">#48195 翻转为 opt-in？flag 进官方文档？</text>
+
+    <!-- blip 2: spread (right upper) -->
+    <circle cx="690" cy="250" r="10" fill="#2f6fb2"/>
+    <rect x="640" y="160" width="290" height="72" rx="10" fill="#ffffff" stroke="#2f6fb2" stroke-width="2"/>
+    <text x="658" y="184" fill="#1e3a5f" font-weight="bold">2 同构蔓延</text>
+    <text x="658" y="204" fill="#41627f">Claude Code / Cursor / OpenCode 是否实测出</text>
+    <text x="658" y="222" fill="#41627f">常驻+小时级自更新+复制包三件套</text>
+
+    <!-- blip 3: incident (right lower) -->
+    <circle cx="640" cy="440" r="12" fill="#c96b3c"/>
+    <rect x="590" y="470" width="330" height="76" rx="10" fill="#fdf3ec" stroke="#c96b3c" stroke-width="2.5"/>
+    <text x="608" y="494" fill="#8a4a24" font-weight="bold">3 第一次事故实锤</text>
+    <text x="608" y="514" fill="#8a4a24">自动更新引入回归的有名有姓事件；#40969</text>
+    <text x="608" y="532" fill="#8a4a24">已具备全部要素，只差一次真实事故</text>
+
+    <!-- blip 4: distro/MDM (left lower) -->
+    <circle cx="300" cy="430" r="10" fill="#2f6fb2"/>
+    <rect x="40" y="450" width="300" height="76" rx="10" fill="#ffffff" stroke="#2f6fb2" stroke-width="2"/>
+    <text x="58" y="474" fill="#1e3a5f" font-weight="bold">4 发行版与企业反制</text>
+    <text x="58" y="494" fill="#41627f">Arch/AUR 系统性加 --no-daemon 补丁？</text>
+    <text x="58" y="512" fill="#41627f">MDM 出现 daemon 禁用策略模板？</text>
+
+    <!-- blip 5: governance (left upper) -->
+    <circle cx="290" cy="240" r="10" fill="#6a5a9c"/>
+    <rect x="30" y="150" width="300" height="76" rx="10" fill="#ffffff" stroke="#6a5a9c" stroke-width="2"/>
+    <text x="48" y="174" fill="#4a3d78" font-weight="bold">5 治理同构</text>
+    <text x="48" y="194" fill="#41627f">「agent daemon」纳入 agent 工作负载</text>
+    <text x="48" y="212" fill="#41627f">治理工具链（衔接上期 google/ax 线）</text>
+  </g>
+
+  <g font-size="14" fill="#41627f">
+    <circle cx="240" cy="576" r="6" fill="#2f6fb2"/><text x="254" y="581">条件成熟度中等</text>
+    <circle cx="420" cy="576" r="6" fill="#c96b3c"/><text x="434" y="581">最可能先落地（近端）</text>
+    <circle cx="640" cy="576" r="6" fill="#6a5a9c"/><text x="654" y="581">跨期趋势信号（远端）</text>
+  </g>
+</svg>

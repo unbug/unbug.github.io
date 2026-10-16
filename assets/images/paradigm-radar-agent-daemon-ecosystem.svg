@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
+  <rect width="960" height="480" fill="#f4f7fb"/>
+  <text x="480" y="44" fill="#1e3a5f" font-size="25" text-anchor="middle" font-weight="bold">生态同构：不止一家在做「多版本驻留 + 后台进程」</text>
+
+  <g font-size="14">
+    <!-- Codex -->
+    <rect x="40" y="90" width="280" height="230" rx="14" fill="#ffffff" stroke="#2f6fb2" stroke-width="2.5"/>
+    <text x="180" y="124" fill="#1e3a5f" font-size="18" text-anchor="middle" font-weight="bold">Codex CLI</text>
+    <text x="180" y="148" fill="#41627f" font-size="13" text-anchor="middle">OpenAI · npm 分发</text>
+    <rect x="62" y="164" width="236" height="40" rx="8" fill="#eaf2fb"/>
+    <text x="180" y="189" fill="#1e3a5f" text-anchor="middle">默认常驻 daemon</text>
+    <rect x="62" y="212" width="236" height="40" rx="8" fill="#eaf2fb"/>
+    <text x="180" y="237" fill="#1e3a5f" text-anchor="middle">每小时自更新器</text>
+    <rect x="62" y="260" width="236" height="40" rx="8" fill="#eaf2fb"/>
+    <text x="180" y="285" fill="#1e3a5f" text-anchor="middle">374 MB 复制包</text>
+    <text x="180" y="312" fill="#3f9b6b" text-anchor="middle" font-weight="bold">三件套齐：本轮实锤</text>
+
+    <!-- Claude Code -->
+    <rect x="340" y="90" width="280" height="230" rx="14" fill="#ffffff" stroke="#7a9cc0" stroke-width="2.2"/>
+    <text x="480" y="124" fill="#1e3a5f" font-size="18" text-anchor="middle" font-weight="bold">Claude Code</text>
+    <text x="480" y="148" fill="#41627f" font-size="13" text-anchor="middle">Anthropic · 用户 timdorr 贴目录</text>
+    <rect x="362" y="164" width="236" height="40" rx="8" fill="#f0f4f9"/>
+    <text x="480" y="182" fill="#1e3a5f" text-anchor="middle" font-family="Menlo, monospace" font-size="12">~/.local/share/claude/</text>
+    <text x="480" y="198" fill="#1e3a5f" text-anchor="middle" font-family="Menlo, monospace" font-size="12">versions/</text>
+    <rect x="362" y="212" width="236" height="40" rx="8" fill="#f0f4f9"/>
+    <text x="480" y="237" fill="#1e3a5f" text-anchor="middle">claude bg 后台进程</text>
+    <rect x="362" y="260" width="236" height="40" rx="8" fill="#f0f4f9"/>
+    <text x="480" y="285" fill="#1e3a5f" text-anchor="middle">多版本驻留</text>
+    <text x="480" y="312" fill="#c9a24a" text-anchor="middle" font-weight="bold">差「默认自更新」实锤</text>
+
+    <!-- Claude desktop -->
+    <rect x="640" y="90" width="280" height="230" rx="14" fill="#ffffff" stroke="#93a7bc" stroke-width="2" stroke-dasharray="7 5"/>
+    <text x="780" y="124" fill="#1e3a5f" font-size="18" text-anchor="middle" font-weight="bold">Claude 桌面版</text>
+    <text x="780" y="148" fill="#41627f" font-size="13" text-anchor="middle">用户 HackerThemAll 观察（转述）</text>
+    <rect x="662" y="170" width="236" height="52" rx="8" fill="#f5f6f8"/>
+    <text x="780" y="192" fill="#41627f" text-anchor="middle">睡眠唤醒后</text>
+    <text x="780" y="212" fill="#41627f" text-anchor="middle">残留几十个进程</text>
+    <rect x="662" y="234" width="236" height="52" rx="8" fill="#f5f6f8"/>
+    <text x="780" y="256" fill="#41627f" text-anchor="middle">未做小时级更新与</text>
+    <text x="780" y="276" fill="#41627f" text-anchor="middle">复制包核对</text>
+    <text x="780" y="312" fill="#6b7f96" text-anchor="middle" font-weight="bold">口径：转述，未复现</text>
+  </g>
+
+  <!-- dashed link line -->
+  <path d="M 320 205 L 340 205" stroke="#7a9cc0" stroke-width="2" stroke-dasharray="5 4" fill="none"/>
+  <path d="M 620 205 L 640 205" stroke="#93a7bc" stroke-width="2" stroke-dasharray="5 4" fill="none"/>
+
+  <rect x="120" y="360" width="720" height="80" rx="12" fill="#16324f"/>
+  <text x="480" y="394" fill="#cfe3ff" font-size="17" text-anchor="middle" font-weight="bold">同类观点（未能溯源到原评论，转述口径）：装了 0.157.0+，大概率已有后台 daemon 和小时级更新器</text>
+  <text x="480" y="422" fill="#8fb4dd" font-size="14" text-anchor="middle">同构信号让「范式迁移」比「单品失误」的解释更有力 · 磁盘占用类数字均为社区转述</text>
+</svg>

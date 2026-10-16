@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
+  <rect width="960" height="520" fill="#f4f7fb"/>
+  <text x="480" y="44" fill="#1e3a5f" font-size="25" text-anchor="middle" font-weight="bold">证据链时间线：从 60 秒 SIGKILL 到 607 分头版（2026-08 至 2026-10）</text>
+
+  <line x1="60" y1="270" x2="910" y2="270" stroke="#3d5f8a" stroke-width="3"/>
+  <path d="M 910 270 l -14 -7 M 910 270 l -14 7" stroke="#3d5f8a" stroke-width="3" fill="none"/>
+
+  <g font-size="13.5">
+    <!-- 08-26 -->
+    <circle cx="105" cy="270" r="8" fill="#2f6fb2"/>
+    <line x1="105" y1="262" x2="105" y2="180" stroke="#a9bdd8" stroke-width="1.5"/>
+    <rect x="35" y="96" width="145" height="84" rx="10" fill="#ffffff" stroke="#2f6fb2" stroke-width="2"/>
+    <text x="107" y="120" fill="#1e3a5f" text-anchor="middle" font-weight="bold">2026-08-26</text>
+    <text x="107" y="142" fill="#41627f" text-anchor="middle">#40969：60 秒 drain</text>
+    <text x="107" y="162" fill="#41627f" text-anchor="middle">超时 SIGKILL 杀在跑 turn</text>
+
+    <!-- 08-27 -->
+    <circle cx="222" cy="270" r="8" fill="#7a9cc0"/>
+    <line x1="222" y1="278" x2="222" y2="352" stroke="#a9bdd8" stroke-width="1.5"/>
+    <rect x="152" y="352" width="145" height="84" rx="10" fill="#ffffff" stroke="#7a9cc0" stroke-width="2"/>
+    <text x="224" y="376" fill="#1e3a5f" text-anchor="middle" font-weight="bold">2026-08-27</text>
+    <text x="224" y="398" fill="#41627f" text-anchor="middle">#41188 外部管理 daemon</text>
+    <text x="224" y="418" fill="#6b7f96" text-anchor="middle">+1 共 9 · 仍 open</text>
+
+    <!-- 09-03 / 09-18 -->
+    <circle cx="340" cy="270" r="8" fill="#7a9cc0"/>
+    <line x1="340" y1="262" x2="340" y2="180" stroke="#a9bdd8" stroke-width="1.5"/>
+    <rect x="270" y="96" width="150" height="84" rx="10" fill="#ffffff" stroke="#7a9cc0" stroke-width="2"/>
+    <text x="345" y="120" fill="#1e3a5f" text-anchor="middle" font-weight="bold">09-03 / 09-18</text>
+    <text x="345" y="142" fill="#41627f" text-anchor="middle">#42457 环境钉住</text>
+    <text x="345" y="162" fill="#41627f" text-anchor="middle">#46468 双通道打架</text>
+
+    <!-- 09-25 -->
+    <circle cx="480" cy="270" r="11" fill="#c96b3c"/>
+    <line x1="480" y1="259" x2="480" y2="352" stroke="#c96b3c" stroke-width="1.8"/>
+    <rect x="392" y="352" width="180" height="102" rx="10" fill="#fdf3ec" stroke="#c96b3c" stroke-width="2.5"/>
+    <text x="482" y="378" fill="#8a4a24" text-anchor="middle" font-weight="bold">2026-09-25 默认启用</text>
+    <text x="482" y="400" fill="#8a4a24" text-anchor="middle">0.157.0 发布说明仅一句话</text>
+    <text x="482" y="420" fill="#8a4a24" text-anchor="middle">#48050 Arch 需 --no-daemon</text>
+    <text x="482" y="440" fill="#8a4a24" text-anchor="middle">#48195 开 issue 要求 opt-in</text>
+
+    <!-- 10-09~13 -->
+    <circle cx="620" cy="270" r="8" fill="#7a9cc0"/>
+    <line x1="620" y1="262" x2="620" y2="180" stroke="#a9bdd8" stroke-width="1.5"/>
+    <rect x="545" y="96" width="155" height="84" rx="10" fill="#ffffff" stroke="#7a9cc0" stroke-width="2"/>
+    <text x="622" y="120" fill="#1e3a5f" text-anchor="middle" font-weight="bold">10-08 至 10-15</text>
+    <text x="622" y="142" fill="#41627f" text-anchor="middle">latest 0.163.0</text>
+    <text x="622" y="162" fill="#41627f" text-anchor="middle">alpha.1 到 alpha.11 连发</text>
+
+    <!-- 10-12 HN -->
+    <circle cx="752" cy="270" r="11" fill="#c96b3c"/>
+    <line x1="752" y1="278" x2="752" y2="352" stroke="#c96b3c" stroke-width="1.8"/>
+    <rect x="667" y="352" width="175" height="84" rx="10" fill="#fdf3ec" stroke="#c96b3c" stroke-width="2.5"/>
+    <text x="754" y="378" fill="#8a4a24" text-anchor="middle" font-weight="bold">2026-10-12 18:29 UTC</text>
+    <text x="754" y="400" fill="#8a4a24" text-anchor="middle">HN 50060694 发帖</text>
+    <text x="754" y="420" fill="#8a4a24" text-anchor="middle">2026-10-16 实测 607 分 / 292 评论</text>
+
+    <!-- 10-13 -->
+    <circle cx="872" cy="270" r="8" fill="#2f6fb2"/>
+    <line x1="872" y1="262" x2="872" y2="180" stroke="#a9bdd8" stroke-width="1.5"/>
+    <rect x="797" y="96" width="150" height="84" rx="10" fill="#ffffff" stroke="#2f6fb2" stroke-width="2"/>
+    <text x="872" y="120" fill="#1e3a5f" text-anchor="middle" font-weight="bold">10-13 04:00 UTC</text>
+    <text x="872" y="142" fill="#41627f" text-anchor="middle">#53547 环境变量</text>
+    <text x="872" y="162" fill="#41627f" text-anchor="middle">跨会话泄漏立案</text>
+  </g>
+
+  <g font-size="14" fill="#41627f">
+    <circle cx="250" cy="496" r="6" fill="#7a9cc0"/><text x="264" y="501">GitHub issue 节点（全部实测，仍 open）</text>
+    <circle cx="590" cy="496" r="6" fill="#c96b3c"/><text x="604" y="501">范式节点：默认启用 / 舆论引爆</text>
+  </g>
+</svg>

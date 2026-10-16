@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
+  <rect width="960" height="620" fill="#f4f7fb"/>
+  <text x="480" y="44" fill="#1e3a5f" font-size="25" text-anchor="middle" font-weight="bold">反方对比：两条有实质力量的反对意见，与它们各自的边界</text>
+
+  <!-- counterargument A -->
+  <rect x="40" y="86" width="420" height="180" rx="12" fill="#ffffff" stroke="#6a5a9c" stroke-width="2.2"/>
+  <text x="60" y="116" fill="#4a3d78" font-size="17" font-weight="bold">反方 A：「浏览器都自动更新，凭什么不」</text>
+  <text x="60" y="144" fill="#41627f">dingaling911 等 · HN 可查评论</text>
+  <text x="60" y="170" fill="#41627f">成立面：静默自动更新是十几年最成功的</text>
+  <text x="60" y="192" fill="#41627f">供应链安全实践，拒绝更新的漏洞暴露更大</text>
+  <text x="60" y="218" fill="#6b7f96">同线程反驳：浏览器更新默认带进程边界与沙箱；</text>
+  <text x="60" y="240" fill="#6b7f96">Firefox 更新行为本身也常年被抱怨</text>
+
+  <!-- rebuttal A -->
+  <rect x="500" y="86" width="420" height="180" rx="12" fill="#fff6f2" stroke="#a4553a" stroke-width="2.2"/>
+  <text x="520" y="116" fill="#8a4a24" font-size="17" font-weight="bold">为什么类比不完全成立</text>
+  <text x="520" y="144" fill="#41627f">agent harness 持有全机读写 + 网络 + 凭据；</text>
+  <text x="520" y="168" fill="#41627f">浏览器更新的是「查看器」，harness 更新的是</text>
+  <text x="520" y="192" fill="#8a4a24" font-weight="bold">「执行环境」，爆炸半径不是同一量级</text>
+  <text x="520" y="222" fill="#6b7f96">且此处默认值不可见、关闭路径不完整，</text>
+  <text x="520" y="244" fill="#6b7f96">与浏览器「可见可控」的更新前提也不等价</text>
+
+  <!-- counterargument B -->
+  <rect x="40" y="300" width="420" height="160" rx="12" fill="#ffffff" stroke="#6a5a9c" stroke-width="2.2"/>
+  <text x="60" y="330" fill="#4a3d78" font-size="17" font-weight="bold">反方 B：「企业跑 npm mirror，天然合规」</text>
+  <text x="60" y="358" fill="#41627f">主张：交付接进 IT 合规框架即可</text>
+  <text x="60" y="386" fill="#a4553a" font-weight="bold">被机制事实削弱：镜像管得住 npm install，</text>
+  <text x="60" y="408" fill="#a4553a" font-weight="bold">管不住 ~/.codex/packages 的小时级自更新</text>
+  <text x="60" y="438" fill="#6b7f96">这条其实是提案方：它证明了管辖权被绕开</text>
+
+  <!-- user sovereignty -->
+  <rect x="500" y="300" width="420" height="160" rx="12" fill="#ffffff" stroke="#2f6fb2" stroke-width="2.2"/>
+  <text x="520" y="330" fill="#1e3a5f" font-size="17" font-weight="bold">用户主权论的合理面与边界</text>
+  <text x="520" y="358" fill="#41627f">thebeardisred：出差演示前不要自动更新</text>
+  <text x="520" y="384" fill="#41627f">合理面：「有 bug 才等新版本」是真需求，</text>
+  <text x="520" y="406" fill="#41627f">自动更新的安全收益真实存在</text>
+  <text x="520" y="436" fill="#6b7f96">反对的是「默认 + 不可见 + 关不干净」三件事</text>
+
+  <!-- focus bar -->
+  <rect x="120" y="500" width="720" height="80" rx="12" fill="#16324f"/>
+  <text x="480" y="534" fill="#cfe3ff" font-size="18" text-anchor="middle" font-weight="bold">真正的争议焦点：默认值 + 可见性 + 退出路径完整性</text>
+  <text x="480" y="562" fill="#8fb4dd" font-size="15" text-anchor="middle">不是「要不要自动更新」；三个焦点都有解，且都不必牺牲自动更新</text>
+
+  <text x="480" y="606" fill="#6b7f96" font-size="13" text-anchor="middle">情绪信号（malware 类比、回退 license、12 GB 磁盘占用）为社区转述，未独立复现，图中不作论据呈现。</text>
+</svg>

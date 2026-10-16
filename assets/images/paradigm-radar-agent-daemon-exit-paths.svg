@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
+  <rect width="960" height="560" fill="#f4f7fb"/>
+  <text x="480" y="44" fill="#1e3a5f" font-size="25" text-anchor="middle" font-weight="bold">退出路径拆解：三个出口受阻，一条 flag 可用但无文档</text>
+
+  <!-- center: I want to stop it -->
+  <rect x="380" y="90" width="200" height="80" rx="12" fill="#ffffff" stroke="#2f6fb2" stroke-width="2.5"/>
+  <text x="480" y="122" fill="#1e3a5f" font-size="17" text-anchor="middle" font-weight="bold">我想彻底关掉它</text>
+  <text x="480" y="148" fill="#41627f" font-size="13" text-anchor="middle">从「关掉应用」到「杀干净进程」</text>
+
+  <!-- blocked path 1: stop misses updater -->
+  <g font-size="14">
+    <rect x="40" y="250" width="270" height="120" rx="12" fill="#ffffff" stroke="#a4553a" stroke-width="2.2"/>
+    <text x="60" y="280" fill="#8a4a24" font-size="16" font-weight="bold">出口一：stop 漏杀</text>
+    <text x="60" y="306" fill="#41627f" font-family="Menlo, monospace" font-size="13">codex app-server daemon stop</text>
+    <text x="60" y="330" fill="#6b7f96">app-server 停了，pid-update-loop</text>
+    <text x="60" y="350" fill="#a4553a">仍存活 70 秒，需手动 kill（实测）</text>
+
+    <!-- blocked path 2: reparent -->
+    <rect x="345" y="250" width="270" height="120" rx="12" fill="#ffffff" stroke="#a4553a" stroke-width="2.2"/>
+    <text x="365" y="280" fill="#8a4a24" font-size="16" font-weight="bold">出口二：抓不到父进程</text>
+    <text x="365" y="306" fill="#41627f">daemon 独立 session、无 TTY，</text>
+    <text x="365" y="330" fill="#41627f">reparent 到 PID 1：</text>
+    <text x="365" y="350" fill="#a4553a">「关窗口」不再是退出语义</text>
+
+    <!-- blocked path 3: docs -->
+    <rect x="650" y="250" width="270" height="120" rx="12" fill="#ffffff" stroke="#a4553a" stroke-width="2.2"/>
+    <text x="670" y="280" fill="#8a4a24" font-size="16" font-weight="bold">出口三：文档零条目</text>
+    <text x="670" y="306" fill="#41627f">官方 config 参考页对</text>
+    <text x="670" y="330" fill="#41627f" font-family="Menlo, monospace" font-size="13">daemon_auto_start 无记录</text>
+    <text x="670" y="350" fill="#a4553a">（据 GitHub 评论区核对口径）</text>
+  </g>
+
+  <path d="M 420 170 C 300 200 220 215 178 250" stroke="#a4553a" stroke-width="2" fill="none"/>
+  <path d="M 480 170 L 480 250" stroke="#a4553a" stroke-width="2" fill="none"/>
+  <path d="M 540 170 C 660 200 730 215 778 250" stroke="#a4553a" stroke-width="2" fill="none"/>
+
+  <!-- blocked marks -->
+  <g stroke="#a4553a" stroke-width="3">
+    <line x1="150" y1="256" x2="172" y2="278"/><line x1="172" y1="256" x2="150" y2="278"/>
+    <line x1="469" y1="256" x2="491" y2="278"/><line x1="491" y1="256" x2="469" y2="278"/>
+    <line x1="766" y1="256" x2="788" y2="278"/><line x1="788" y1="256" x2="766" y2="278"/>
+  </g>
+
+  <!-- working path: feature flag -->
+  <rect x="240" y="430" width="480" height="90" rx="12" fill="#eef8f1" stroke="#3f9b6b" stroke-width="2.5"/>
+  <text x="260" y="462" fill="#1f5c3d" font-size="16" font-weight="bold">唯一可见路径：feature flag（发帖人实测、多位用户复贴）</text>
+  <text x="260" y="492" fill="#2f7a52" font-size="14" font-family="Menlo, monospace">codex features disable daemon_auto_start</text>
+  <text x="260" y="512" fill="#2f7a52" font-size="14" font-family="Menlo, monospace">[features] daemon_auto_start = false</text>
+  <path d="M 480 170 C 480 300 480 360 480 430" stroke="#3f9b6b" stroke-width="2.5" stroke-dasharray="8 6" fill="none"/>
+
+  <text x="480" y="548" fill="#41627f" font-size="14" text-anchor="middle">争议焦点不在「要不要自动更新」，而在这三条受阻出口本身：默认值、可见性、退出路径完整性。</text>
+</svg>

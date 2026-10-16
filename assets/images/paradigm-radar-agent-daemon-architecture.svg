@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
+  <rect width="960" height="620" fill="#f4f7fb"/>
+  <text x="480" y="44" fill="#1e3a5f" font-size="25" text-anchor="middle" font-weight="bold">机制架构：一次交互会话在机器上留下的四个东西</text>
+
+  <!-- session box -->
+  <rect x="40" y="90" width="190" height="110" rx="12" fill="#ffffff" stroke="#2f6fb2" stroke-width="2.5"/>
+  <text x="135" y="125" fill="#1e3a5f" font-size="18" text-anchor="middle" font-weight="bold">交互式会话</text>
+  <text x="135" y="152" fill="#41627f" font-size="14" text-anchor="middle" font-family="Menlo, monospace">$ codex</text>
+  <text x="135" y="176" fill="#6b7f96" font-size="13" text-anchor="middle">打开一次即触发</text>
+
+  <!-- daemon box -->
+  <rect x="330" y="80" width="330" height="330" rx="14" fill="#eaf2fb" stroke="#2f6fb2" stroke-width="3"/>
+  <text x="495" y="112" fill="#1e3a5f" font-size="18" text-anchor="middle" font-weight="bold">codex app-server --managed-daemon</text>
+  <text x="495" y="136" fill="#41627f" font-size="13" text-anchor="middle">独立 session · 无 TTY · 关窗不退出</text>
+
+  <g font-size="15">
+    <rect x="355" y="155" width="280" height="52" rx="8" fill="#ffffff" stroke="#7a9cc0" stroke-width="1.8"/>
+    <text x="495" y="177" fill="#1e3a5f" text-anchor="middle" font-weight="bold">平台包副本 374 MB</text>
+    <text x="495" y="197" fill="#41627f" font-size="12.5" text-anchor="middle" font-family="Menlo, monospace">codex · code-mode-host · bwrap/zsh/rg</text>
+
+    <rect x="355" y="217" width="280" height="52" rx="8" fill="#ffffff" stroke="#7a9cc0" stroke-width="1.8"/>
+    <text x="495" y="239" fill="#1e3a5f" text-anchor="middle" font-weight="bold">pid-update-loop 更新器</text>
+    <text x="495" y="259" fill="#41627f" font-size="12.5" text-anchor="middle">5 分钟首查 · 之后每小时 · 下载并重启后端</text>
+
+    <rect x="355" y="279" width="280" height="52" rx="8" fill="#ffffff" stroke="#7a9cc0" stroke-width="1.8"/>
+    <text x="495" y="301" fill="#1e3a5f" text-anchor="middle" font-weight="bold">首会话环境变量被钉住</text>
+    <text x="495" y="321" fill="#41627f" font-size="12.5" text-anchor="middle">HTTPS_PROXY 钉死全部后续会话出站流量</text>
+
+    <rect x="355" y="341" width="280" height="52" rx="8" fill="#ffffff" stroke="#7a9cc0" stroke-width="1.8"/>
+    <text x="495" y="363" fill="#1e3a5f" text-anchor="middle" font-weight="bold">reparent 到 PID 1</text>
+    <text x="495" y="383" fill="#41627f" font-size="12.5" text-anchor="middle">直到 daemon stop 或重启机器</text>
+  </g>
+
+  <!-- arrows from session -->
+  <path d="M 230 145 L 330 145" stroke="#2f6fb2" stroke-width="2.5" fill="none"/>
+  <path d="M 330 145 l -12 -6 M 330 145 l -12 6" stroke="#2f6fb2" stroke-width="2.5" fill="none"/>
+
+  <!-- packages dir -->
+  <rect x="740" y="150" width="190" height="110" rx="12" fill="#ffffff" stroke="#c96b3c" stroke-width="2.2"/>
+  <text x="835" y="180" fill="#8a4a24" font-size="15" text-anchor="middle" font-weight="bold">~/.codex/packages/</text>
+  <text x="835" y="202" fill="#8a4a24" font-size="13" text-anchor="middle" font-family="Menlo, monospace">app-server-daemon/</text>
+  <text x="835" y="222" fill="#8a4a24" font-size="13" text-anchor="middle" font-family="Menlo, monospace">releases/&lt;version&gt;/</text>
+  <text x="835" y="246" fill="#a4744f" font-size="12.5" text-anchor="middle">此后从副本运行</text>
+  <path d="M 660 195 L 740 195" stroke="#c96b3c" stroke-width="2.2" fill="none"/>
+  <path d="M 740 195 l -12 -6 M 740 195 l -12 6" stroke="#c96b3c" stroke-width="2.2" fill="none"/>
+
+  <!-- npm mirror bypassed -->
+  <rect x="740" y="300" width="190" height="96" rx="12" fill="#f0f2f5" stroke="#93a7bc" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="835" y="332" fill="#5c718a" font-size="15" text-anchor="middle" font-weight="bold">企业 npm 镜像</text>
+  <text x="835" y="356" fill="#7d90a6" font-size="13" text-anchor="middle">管得住 npm install</text>
+  <text x="835" y="378" fill="#a4553a" font-size="13" text-anchor="middle" font-weight="bold">管不到 ~/.codex/packages</text>
+  <path d="M 740 340 L 668 340" stroke="#93a7bc" stroke-width="2" stroke-dasharray="6 5" fill="none"/>
+  <line x1="695" y1="325" x2="715" y2="355" stroke="#a4553a" stroke-width="3"/>
+  <text x="700" y="312" fill="#a4553a" font-size="13" text-anchor="middle">被绕过</text>
+
+  <!-- bottom: sessions later -->
+  <rect x="40" y="470" width="190" height="96" rx="12" fill="#ffffff" stroke="#7a9cc0" stroke-width="2"/>
+  <text x="135" y="502" fill="#1e3a5f" font-size="15" text-anchor="middle" font-weight="bold">之后的所有会话</text>
+  <text x="135" y="526" fill="#41627f" font-size="13" text-anchor="middle">共用同一后端</text>
+  <text x="135" y="548" fill="#41627f" font-size="13" text-anchor="middle">共用首会话环境</text>
+  <path d="M 230 518 C 300 518 300 440 360 415" stroke="#7a9cc0" stroke-width="2.2" fill="none"/>
+  <path d="M 360 415 l -13 -1 M 360 415 l -4 12" stroke="#7a9cc0" stroke-width="2.2" fill="none"/>
+
+  <!-- hooks/cwd note -->
+  <rect x="330" y="470" width="330" height="96" rx="12" fill="#fff8ef" stroke="#c9a24a" stroke-width="2"/>
+  <text x="495" y="500" fill="#7a5c1e" font-size="15" text-anchor="middle" font-weight="bold">关联症状</text>
+  <text x="495" y="524" fill="#7a5c1e" font-size="13" text-anchor="middle">#42457：hooks 收到 daemon 的 cwd 而非会话 cwd</text>
+  <text x="495" y="546" fill="#7a5c1e" font-size="13" text-anchor="middle">#53547：环境变量跨会话泄漏（2026-10-13 立案）</text>
+
+  <text x="660" y="605" fill="#41627f" font-size="14" text-anchor="middle">依据 openai/codex issue #48195 作者复现步骤整理 · 2026-10-16 API 实测口径</text>
+</svg>

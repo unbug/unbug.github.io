@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
+  <rect width="960" height="520" fill="#f4f7fb"/>
+  <text x="480" y="44" fill="#1e3a5f" font-size="25" text-anchor="middle" font-weight="bold">双版本通道分叉：包管理器与 daemon 更新器对同一后端各自演化</text>
+
+  <!-- you -->
+  <rect x="400" y="86" width="160" height="66" rx="12" fill="#ffffff" stroke="#2f6fb2" stroke-width="2.5"/>
+  <text x="480" y="115" fill="#1e3a5f" font-size="16" text-anchor="middle" font-weight="bold">你</text>
+  <text x="480" y="138" fill="#41627f" font-size="13" text-anchor="middle">想要：一个确定的后端</text>
+
+  <!-- channel A: package manager -->
+  <g font-size="14">
+    <rect x="80" y="210" width="330" height="190" rx="14" fill="#ffffff" stroke="#2f6fb2" stroke-width="2.5"/>
+    <text x="245" y="244" fill="#1e3a5f" font-size="17" text-anchor="middle" font-weight="bold">通道 A：包管理器</text>
+    <rect x="102" y="262" width="286" height="36" rx="8" fill="#eaf2fb"/>
+    <text x="245" y="285" fill="#1e3a5f" text-anchor="middle" font-family="Menlo, monospace" font-size="13">npm update  → 0.163.0</text>
+    <rect x="102" y="306" width="286" height="36" rx="8" fill="#eaf2fb"/>
+    <text x="245" y="329" fill="#1e3a5f" text-anchor="middle">CLI 壳升到新版</text>
+    <rect x="102" y="350" width="286" height="36" rx="8" fill="#fff6f2" stroke="#a4553a" stroke-width="1.6"/>
+    <text x="245" y="373" fill="#8a4a24" text-anchor="middle">app-server 停在旧版</text>
+  </g>
+
+  <!-- channel B: daemon updater -->
+  <g font-size="14">
+    <rect x="550" y="210" width="330" height="190" rx="14" fill="#ffffff" stroke="#c96b3c" stroke-width="2.5"/>
+    <text x="715" y="244" fill="#8a4a24" font-size="17" text-anchor="middle" font-weight="bold">通道 B：daemon 更新器</text>
+    <rect x="572" y="262" width="286" height="36" rx="8" fill="#fdf3ec"/>
+    <text x="715" y="285" fill="#8a4a24" text-anchor="middle" font-family="Menlo, monospace" font-size="13">pid-update-loop 每 1h</text>
+    <rect x="572" y="306" width="286" height="36" rx="8" fill="#fdf3ec"/>
+    <text x="715" y="329" fill="#8a4a24" text-anchor="middle">自决版本写入 releases/</text>
+    <rect x="572" y="350" width="286" height="36" rx="8" fill="#fff6f2" stroke="#a4553a" stroke-width="1.6"/>
+    <text x="715" y="373" fill="#8a4a24" text-anchor="middle">拒绝按你预期路径恢复</text>
+  </g>
+
+  <path d="M 420 152 C 330 175 280 185 250 210" stroke="#2f6fb2" stroke-width="2.5" fill="none"/>
+  <path d="M 540 152 C 630 175 680 185 710 210" stroke="#c96b3c" stroke-width="2.5" fill="none"/>
+
+  <!-- both claim truth -->
+  <rect x="290" y="430" width="380" height="60" rx="12" fill="#16324f"/>
+  <text x="480" y="456" fill="#cfe3ff" font-size="15" text-anchor="middle" font-weight="bold">两边元数据都不撒谎，合在一起没人知道真相</text>
+  <text x="480" y="478" fill="#8fb4dd" font-size="13" text-anchor="middle">#46468：npm update 后恢复失败 · #48050：Arch 需 --no-daemon</text>
+  <path d="M 245 400 C 300 420 350 428 400 434" stroke="#a4553a" stroke-width="2" fill="none"/>
+  <path d="M 715 400 C 660 420 610 428 560 434" stroke="#a4553a" stroke-width="2" fill="none"/>
+
+  <text x="480" y="510" fill="#6b7f96" font-size="13" text-anchor="middle">发版节奏对照（npm registry API 2026-10-16 实测）：latest 0.163.0（10-15）/ 0.163.0 alpha 连发 11 版，小时级循环对日更级发版流。</text>
+</svg>

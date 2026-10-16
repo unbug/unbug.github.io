@@ -1,11 +1,11 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 范式雷达：《Agent 说完不算，拿出证据》",
+    "title": "AI 范式雷达：《当你的笔记本上住进别人家的守护进程》",
     "date": "2026-10-16",
-    "slug": "paradigm-radar-agent-forensics-layer"
+    "slug": "paradigm-radar-agent-daemon-sovereignty"
   },
-  "totalPublished": 17,
+  "totalPublished": 18,
   "nextScheduled": "2026-10-20",
   "candidateTopics": [
     {
@@ -24,7 +24,7 @@
       ]
     }
   ],
-  "lastPublishedSlug": "paradigm-radar-agent-forensics-layer",
+  "lastPublishedSlug": "paradigm-radar-agent-daemon-sovereignty",
   "lastPublishedDate": "2026-10-16",
   "lastVerifiedAt": "2026-10-15T11:25+08:00"
 }
