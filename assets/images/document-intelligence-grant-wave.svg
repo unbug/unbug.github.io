@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="630" fill="#0f1420"/>
+  <text x="60" y="70" fill="#e8ecf4" font-size="34" font-weight="bold">大模型文档抽取：2026 年 2-8 月六家公司的授权节拍</text>
+  <text x="60" y="106" fill="#8fa1bd" font-size="19">Google Patents 详情页逐字核验 · 2026-10-16 · 星标 = 异常快的授权</text>
+
+  <!-- axis -->
+  <line x1="120" y1="480" x2="1120" y2="480" stroke="#3a4a66" stroke-width="2"/>
+  <text x="120" y="515" fill="#8fa1bd" font-size="16">2026-02</text>
+  <text x="387" y="515" fill="#8fa1bd" font-size="16">2026-04</text>
+  <text x="654" y="515" fill="#8fa1bd" font-size="16">2026-06</text>
+  <text x="921" y="515" fill="#8fa1bd" font-size="16">2026-08</text>
+  <line x1="387" y1="472" x2="387" y2="488" stroke="#3a4a66" stroke-width="2"/>
+  <line x1="654" y1="472" x2="654" y2="488" stroke="#3a4a66" stroke-width="2"/>
+  <line x1="921" y1="472" x2="921" y2="488" stroke="#3a4a66" stroke-width="2"/>
+
+  <!-- points: month scale x = 120 + (m-2)*133.5, day fraction -->
+  <!-- Intuit US12632675 05-19 -->
+  <circle cx="602" cy="230" r="12" fill="#4fc3f7"/>
+  <text x="602" y="200" fill="#e8ecf4" font-size="18" text-anchor="middle">Intuit</text>
+  <text x="602" y="176" fill="#8fa1bd" font-size="15" text-anchor="middle">域外文档 OCR 范例 05-19</text>
+  <!-- IBM 05-26 -->
+  <circle cx="637" cy="330" r="12" fill="#81c784"/>
+  <text x="637" y="365" fill="#e8ecf4" font-size="18" text-anchor="middle">IBM</text>
+  <text x="637" y="388" fill="#8fa1bd" font-size="15" text-anchor="middle">模板定位键值对 05-26</text>
+  <!-- Vendr 03-24 fast -->
+  <circle cx="357" cy="300" r="14" fill="#ffb74d"/>
+  <text x="357" y="262" fill="#ffb74d" font-size="18" text-anchor="middle">★ Vendr 03-24</text>
+  <text x="357" y="240" fill="#8fa1bd" font-size="15" text-anchor="middle">申请→授权 6.3 个月</text>
+  <!-- HighRadius 06-23 -->
+  <circle cx="757" cy="410" r="10" fill="#a1887f"/>
+  <text x="757" y="445" fill="#e8ecf4" font-size="17" text-anchor="middle">HighRadius 06-23</text>
+  <!-- Mistral 06-09 fast -->
+  <circle cx="694" cy="250" r="16" fill="#e57373"/>
+  <text x="830" y="210" fill="#e57373" font-size="20" text-anchor="middle">★ Mistral 06-09</text>
+  <text x="830" y="186" fill="#8fa1bd" font-size="15" text-anchor="middle">优先权→授权 5.3 个月</text>
+  <!-- Adobe 08-04 -->
+  <circle cx="938" cy="340" r="12" fill="#ba68c8"/>
+  <text x="938" y="308" fill="#e8ecf4" font-size="18" text-anchor="middle">Adobe 08-04</text>
+  <text x="938" y="286" fill="#8fa1bd" font-size="15" text-anchor="middle">抽取+自然语言问答</text>
+
+  <!-- bottom pattern note -->
+  <rect x="120" y="540" width="1000" height="56" rx="10" fill="#1a2334"/>
+  <text x="140" y="575" fill="#e8ecf4" font-size="19">收敛模式：规则/版面先定位 → 只把命中邻域交给大模型 → 字段级校验进入独立权利要求</text>
+</svg>

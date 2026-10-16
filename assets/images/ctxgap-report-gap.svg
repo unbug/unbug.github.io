@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+  <rect width="1200" height="630" fill="#0f1620"/>
+  <text x="60" y="78" fill="#e8eef6" font-size="34" font-weight="700">编码智能体：知道却不说</text>
+  <text x="60" y="116" fill="#8ea3bd" font-size="19">任务状态可恢复性：三种读取方式对比（CTXGAP，37 个编码任务、4,799 个探针）</text>
+
+  <!-- axes -->
+  <line x1="120" y1="530" x2="1080" y2="530" stroke="#3a4a61" stroke-width="2"/>
+  <line x1="120" y1="160" x2="120" y2="530" stroke="#3a4a61" stroke-width="2"/>
+  <text x="66" y="168" fill="#8ea3bd" font-size="16">100%</text>
+  <text x="82" y="349" fill="#8ea3bd" font-size="16">50%</text>
+  <line x1="120" y1="345" x2="1080" y2="345" stroke="#243143" stroke-width="1" stroke-dasharray="4 6"/>
+
+  <!-- bar 1: ask the agent 93.6 -->
+  <rect x="200" y="186" width="200" height="344" rx="6" fill="#4fc3f7"/>
+  <text x="300" y="166" fill="#4fc3f7" font-size="30" font-weight="700" text-anchor="middle">93.6%</text>
+  <text x="300" y="566" fill="#c6d4e6" font-size="19" text-anchor="middle">直接问智能体本人</text>
+
+  <!-- bar 2: full context 92.7 -->
+  <rect x="520" y="190" width="200" height="340" rx="6" fill="#a5d6a7"/>
+  <text x="620" y="170" fill="#a5d6a7" font-size="30" font-weight="700" text-anchor="middle">92.7%</text>
+  <text x="620" y="566" fill="#c6d4e6" font-size="19" text-anchor="middle">读完整执行记录</text>
+
+  <!-- bar 3: reports only 52.0 -->
+  <rect x="840" y="339" width="200" height="191" rx="6" fill="#ff8a65"/>
+  <text x="940" y="319" fill="#ff8a65" font-size="30" font-weight="700" text-anchor="middle">52.0%</text>
+  <text x="940" y="566" fill="#c6d4e6" font-size="19" text-anchor="middle">只看例行报告</text>
+
+  <!-- gap bracket between bar2 top and bar3 top -->
+  <line x1="740" y1="190" x2="820" y2="190" stroke="#ffd54f" stroke-width="2" stroke-dasharray="5 5"/>
+  <line x1="740" y1="339" x2="820" y2="339" stroke="#ffd54f" stroke-width="2" stroke-dasharray="5 5"/>
+  <line x1="800" y1="190" x2="800" y2="339" stroke="#ffd54f" stroke-width="3"/>
+  <text x="795" y="252" fill="#ffd54f" font-size="24" font-weight="700" text-anchor="end">差 40.7 个点</text>
+
+  <text x="120" y="608" fill="#8ea3bd" font-size="16">结案时点（30 个已验证修复）差距仍有 34.8 个点 · 预印本 CTXGAP（腾讯 × 中国科学技术大学）</text>
+</svg>
