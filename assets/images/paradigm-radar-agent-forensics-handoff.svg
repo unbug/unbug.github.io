@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="520" fill="#ffffff"/>
+  <text x="60" y="52" fill="#1a2438" font-size="28" font-weight="bold">从权限清单到取证层：一次接力</text>
+
+  <!-- stage 1: permission artifact -->
+  <g>
+    <rect x="70" y="110" width="320" height="240" rx="14" fill="#eef3fb" stroke="#5b7fb8" stroke-width="2"/>
+    <text x="230" y="152" fill="#2d4f80" font-size="22" font-weight="bold" text-anchor="middle">事前：权限声明</text>
+    <text x="230" y="192" fill="#1a2438" font-size="18" text-anchor="middle">「能不能做」</text>
+    <g font-size="16" fill="#42536e">
+      <text x="105" y="230">可分发、可 diff 的清单</text>
+      <text x="105" y="260">host / credential / volume</text>
+      <text x="105" y="290">载体：镜像 · 身份目录 · 协议</text>
+    </g>
+    <text x="230" y="325" fill="#5b7fb8" font-size="15" text-anchor="middle">AI 范式雷达 #16</text>
+  </g>
+
+  <!-- arrow 1 with bridge quote -->
+  <g>
+    <line x1="400" y1="230" x2="480" y2="230" stroke="#c0512f" stroke-width="4"/>
+    <path d="M 480 230 L 456 218 L 456 242 Z" fill="#c0512f"/>
+    <text x="440" y="200" fill="#c0512f" font-size="15" text-anchor="middle">失灵处</text>
+    <text x="440" y="290" fill="#c0512f" font-size="14" text-anchor="middle">短时效凭证不够</text>
+    <text x="440" y="312" fill="#c0512f" font-size="14" text-anchor="middle">agent 五分钟能干很多</text>
+  </g>
+
+  <!-- stage 2: containment -->
+  <g>
+    <rect x="490" y="110" width="260" height="240" rx="14" fill="#fdf3ec" stroke="#e8663c" stroke-width="2"/>
+    <text x="620" y="152" fill="#c0512f" font-size="22" font-weight="bold" text-anchor="middle">事中：沙箱隔离</text>
+    <text x="620" y="192" fill="#1a2438" font-size="18" text-anchor="middle">「关不关得住」</text>
+    <g font-size="16" fill="#42536e">
+      <text x="520" y="230">VM  containment</text>
+      <text x="520" y="260">沙箱够不够仍存疑</text>
+      <text x="520" y="290">（HN 49917378 争论）</text>
+    </g>
+    <text x="620" y="325" fill="#e8663c" font-size="15" text-anchor="middle">AI 范式雷达 #11</text>
+  </g>
+
+  <!-- arrow 2 -->
+  <g>
+    <line x1="760" y1="230" x2="840" y2="230" stroke="#1f7a5e" stroke-width="4"/>
+    <path d="M 840 230 L 816 218 L 816 242 Z" fill="#1f7a5e"/>
+    <text x="800" y="200" fill="#1f7a5e" font-size="15" text-anchor="middle">兜不住</text>
+  </g>
+
+  <!-- stage 3: forensics -->
+  <g>
+    <rect x="850" y="110" width="320" height="240" rx="14" fill="#eaf8f2" stroke="#1f7a5e" stroke-width="2.5"/>
+    <text x="1010" y="152" fill="#15624a" font-size="22" font-weight="bold" text-anchor="middle">事后：取证层（本期）</text>
+    <text x="1010" y="192" fill="#1a2438" font-size="18" text-anchor="middle">「做了什么，证据何在」</text>
+    <g font-size="16" fill="#42536e">
+      <text x="885" y="230">会话回放 · 防篡改轨迹</text>
+      <text x="885" y="260">hash-chain 封缄 · 黑匣子</text>
+      <text x="885" y="290">按工作项核算成本</text>
+    </g>
+    <text x="1010" y="325" fill="#1f7a5e" font-size="15" text-anchor="middle">AI 范式雷达 #17</text>
+  </g>
+
+  <text x="60" y="420" fill="#42536e" font-size="18">权限清单声明边界，沙箱试图执行边界；边界之内实际发生了什么，只能靠可回放、可核验、可归责的行为证据回答。</text>
+  <text x="60" y="456" fill="#6b7a95" font-size="16">桥句出自 Agent37 Launch HN（HN 50059096）评论区 arbor-group 的大意：短时效凭证不够，agent 五分钟能干很多。</text>
+</svg>

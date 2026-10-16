@@ -1,12 +1,12 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 范式雷达：《Agent 权限清单要住进哪个载体》",
-    "date": "2026-10-15",
-    "slug": "paradigm-radar-agent-permission-artifact"
+    "title": "AI 范式雷达：《Agent 说完不算，拿出证据》",
+    "date": "2026-10-16",
+    "slug": "paradigm-radar-agent-forensics-layer"
   },
-  "totalPublished": 16,
-  "nextScheduled": "2026-10-19",
+  "totalPublished": 17,
+  "nextScheduled": "2026-10-20",
   "candidateTopics": [
     {
       "topic": "Codex CLI 默认安装持久自更新守护进程（常驻化焦虑）",
@@ -24,7 +24,7 @@
       ]
     }
   ],
-  "lastPublishedSlug": "paradigm-radar-agent-permission-artifact",
-  "lastPublishedDate": "2026-10-15",
+  "lastPublishedSlug": "paradigm-radar-agent-forensics-layer",
+  "lastPublishedDate": "2026-10-16",
   "lastVerifiedAt": "2026-10-15T11:25+08:00"
 }

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="560" fill="#ffffff"/>
+  <text x="60" y="52" fill="#1a2438" font-size="28" font-weight="bold">两条波：事件在前，供给在后，正在合流</text>
+  <text x="60" y="84" fill="#6b7a95" font-size="18">事件分数为 HN 实测（2026-10-16）；仓库星数为 GitHub API 实测</text>
+
+  <!-- event wave bars -->
+  <g>
+    <text x="60" y="130" fill="#c0512f" font-size="20" font-weight="bold">事件波（rogue agent 事件周，据报道）</text>
+    <g font-size="16" fill="#1a2438">
+      <rect x="60" y="150" width="614" height="30" fill="#e8663c" opacity="0.9"/>
+      <text x="60" y="170" fill="#ffffff">Wikimedia rogue agent · 10-05 · 307 分</text>
+      <rect x="60" y="190" width="168" height="30" fill="#e8663c" opacity="0.75"/>
+      <text x="66" y="210" fill="#ffffff">Codex 越权消费 7.8 万美元 · 09-26 · 84</text>
+      <rect x="60" y="230" width="126" height="30" fill="#e8663c" opacity="0.65"/>
+      <text x="66" y="250" fill="#ffffff">OpenAI 暂停训练 · 09-27 · 59</text>
+      <rect x="60" y="270" width="120" height="30" fill="#e8663c" opacity="0.55"/>
+      <text x="66" y="290" fill="#ffffff">沙箱够不够 · 10-01 · 56</text>
+      <rect x="60" y="310" width="114" height="30" fill="#e8663c" opacity="0.5"/>
+      <text x="66" y="330" fill="#ffffff">波及 10+ 站点 · 09-09 · 53</text>
+      <rect x="60" y="350" width="30" height="30" fill="#e8663c" opacity="0.4"/>
+      <text x="98" y="370">加州传票 · 10-01 · 14</text>
+    </g>
+  </g>
+
+  <!-- supply wave bars -->
+  <g>
+    <text x="680" y="130" fill="#1f7a5e" font-size="20" font-weight="bold">供给波（6-10 月，12 家独立仓库）</text>
+    <g font-size="16" fill="#1a2438">
+      <rect x="680" y="150" width="440" height="28" fill="#37d0a3" opacity="0.9"/>
+      <text x="686" y="169" fill="#08312a">shepherd · 06-24 · 2,483 星</text>
+      <rect x="680" y="184" width="359" height="28" fill="#37d0a3" opacity="0.8"/>
+      <text x="686" y="203" fill="#08312a">llm-space · 06-28 · 2,024</text>
+      <rect x="680" y="218" width="259" height="28" fill="#37d0a3" opacity="0.72"/>
+      <text x="686" y="237" fill="#08312a">superlog · 06-02 · 1,463</text>
+      <rect x="680" y="252" width="243" height="28" fill="#37d0a3" opacity="0.66"/>
+      <text x="686" y="271" fill="#08312a">mindwalk · 07-09 · 1,373</text>
+      <rect x="680" y="286" width="176" height="28" fill="#37d0a3" opacity="0.58"/>
+      <text x="686" y="305" fill="#08312a">homerail · 07-07 · 992</text>
+      <rect x="680" y="320" width="160" height="28" fill="#37d0a3" opacity="0.52"/>
+      <text x="686" y="339" fill="#08312a">agenttrail · 08-21 · 901</text>
+      <rect x="680" y="354" width="136" height="28" fill="#37d0a3" opacity="0.46"/>
+      <text x="686" y="373" fill="#08312a">agentacct · 07-24 · 766</text>
+    </g>
+  </g>
+
+  <line x1="60" y1="430" x2="1140" y2="430" stroke="#d5dbe6" stroke-width="2"/>
+  <text x="60" y="472" fill="#6b7a95" font-size="18">产品帖一侧同期普遍低于 50 分（Halo 37、Consus 36、Docket 19）；「agent replay」月度 story 量 31-47，平台期无爆发斜率。</text>
+  <text x="60" y="504" fill="#1a2438" font-size="18" font-weight="bold">结论口径：事件波 + 供给波成立，付费 SaaS 证据弱 —— 基础设施在铺的早期形态。</text>
+</svg>

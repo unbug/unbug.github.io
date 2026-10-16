@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="560" fill="#ffffff"/>
+  <text x="60" y="52" fill="#1a2438" font-size="28" font-weight="bold">12 家独立仓库的建仓时间线（星数为 2026-10-16 实测）</text>
+  <text x="60" y="84" fill="#6b7a95" font-size="18">供给先于事件：头部仓库 6-7 月建仓；事件周前后仍有新仓库入场</text>
+
+  <!-- axis -->
+  <line x1="120" y1="470" x2="1140" y2="470" stroke="#1a2438" stroke-width="2"/>
+  <g font-size="17" fill="#6b7a95" text-anchor="middle">
+    <text x="150" y="500">6月初</text>
+    <text x="330" y="500">7月初</text>
+    <text x="510" y="500">8月初</text>
+    <text x="690" y="500">9月初</text>
+    <text x="870" y="500">10月初</text>
+    <text x="1080" y="500">10-16</text>
+  </g>
+  <g stroke="#d5dbe6" stroke-width="1">
+    <line x1="150" y1="120" x2="150" y2="470"/>
+    <line x1="330" y1="120" x2="330" y2="470"/>
+    <line x1="510" y1="120" x2="510" y2="470"/>
+    <line x1="690" y1="120" x2="690" y2="470"/>
+    <line x1="870" y1="120" x2="870" y2="470"/>
+  </g>
+
+  <!-- rogue event week band -->
+  <rect x="800" y="120" width="80" height="350" fill="#e8663c" opacity="0.14"/>
+  <text x="840" y="140" fill="#c0512f" font-size="16" text-anchor="middle">事件周</text>
+  <text x="840" y="162" fill="#c0512f" font-size="14" text-anchor="middle">09-26~10-05</text>
+
+  <!-- dots: x by date, r by stars -->
+  <g>
+    <circle cx="165" cy="270" r="30" fill="#1f7a5e" opacity="0.85"/>
+    <text x="165" y="276" fill="#ffffff" font-size="14" text-anchor="middle">2483</text>
+    <text x="165" y="225" fill="#1a2438" font-size="15" text-anchor="middle">shepherd</text>
+
+    <circle cx="200" cy="350" r="27" fill="#1f7a5e" opacity="0.8"/>
+    <text x="200" y="356" fill="#ffffff" font-size="14" text-anchor="middle">2024</text>
+    <text x="200" y="305" fill="#1a2438" font-size="15" text-anchor="middle">llm-space</text>
+
+    <circle cx="150" cy="185" r="22" fill="#37d0a3" opacity="0.85"/>
+    <text x="150" y="191" fill="#08312a" font-size="13" text-anchor="middle">1463</text>
+    <text x="150" y="150" fill="#1a2438" font-size="15" text-anchor="middle">superlog</text>
+
+    <circle cx="365" cy="255" r="21" fill="#37d0a3" opacity="0.8"/>
+    <text x="365" y="261" fill="#08312a" font-size="13" text-anchor="middle">1373</text>
+    <text x="365" y="218" fill="#1a2438" font-size="15" text-anchor="middle">mindwalk</text>
+
+    <circle cx="345" cy="340" r="18" fill="#37d0a3" opacity="0.75"/>
+    <text x="345" y="346" fill="#08312a" font-size="12" text-anchor="middle">992</text>
+    <text x="345" y="308" fill="#1a2438" font-size="15" text-anchor="middle">homerail</text>
+
+    <circle cx="335" cy="420" r="14" fill="#7fc9ae" opacity="0.9"/>
+    <text x="335" y="425" fill="#08312a" font-size="12" text-anchor="middle">334</text>
+    <text x="390" y="445" fill="#1a2438" font-size="15">agentglass</text>
+
+    <circle cx="318" cy="180" r="14" fill="#7fc9ae" opacity="0.9"/>
+    <text x="318" y="185" fill="#08312a" font-size="12" text-anchor="middle">322</text>
+    <text x="372" y="170" fill="#1a2438" font-size="15">brain0</text>
+
+    <circle cx="430" cy="395" r="17" fill="#7fc9ae" opacity="0.85"/>
+    <text x="430" y="401" fill="#08312a" font-size="12" text-anchor="middle">766</text>
+    <text x="486" y="415" fill="#1a2438" font-size="15">agentacct</text>
+
+    <circle cx="620" cy="300" r="16" fill="#e8b23c" opacity="0.9"/>
+    <text x="620" y="306" fill="#4a3407" font-size="12" text-anchor="middle">901</text>
+    <text x="620" y="263" fill="#1a2438" font-size="15" text-anchor="middle">agenttrail</text>
+
+    <circle cx="735" cy="410" r="11" fill="#e8b23c" opacity="0.85"/>
+    <text x="735" y="415" fill="#4a3407" font-size="11" text-anchor="middle">285</text>
+    <text x="735" y="440" fill="#1a2438" font-size="15" text-anchor="middle">OrcaReplay</text>
+
+    <circle cx="790" cy="230" r="9" fill="#e8b23c" opacity="0.8"/>
+    <text x="790" y="205" fill="#1a2438" font-size="15" text-anchor="middle">ToolReplay · 185</text>
+
+    <circle cx="1105" cy="330" r="10" fill="#c0512f" opacity="0.9"/>
+    <text x="1105" y="335" fill="#ffffff" font-size="11" text-anchor="middle">214</text>
+    <text x="1060" y="295" fill="#c0512f" font-size="15" text-anchor="middle">agentplay 两天 214 星</text>
+  </g>
+
+  <text x="60" y="540" fill="#6b7a95" font-size="16">圆点面积正比于星数；颜色分为 6-7 月（绿）、8-9 月（黄）、10 月事件周后（红）三批。星数是开源热度，不等于收入。</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="630" fill="#0f1626"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#e8663c"/>
+  <!-- left: agent speech bubble (not trusted) -->
+  <g>
+    <rect x="80" y="150" width="380" height="150" rx="16" fill="#1c2740" stroke="#3b4a6b" stroke-width="2"/>
+    <path d="M 250 300 L 270 340 L 290 300 Z" fill="#1c2740" stroke="#3b4a6b" stroke-width="2"/>
+    <text x="270" y="205" fill="#8fa3c8" font-size="22" text-anchor="middle">agent 的汇报</text>
+    <text x="270" y="248" fill="#5f7095" font-size="30" text-anchor="middle">"任务已完成"</text>
+    <line x1="150" y1="240" x2="390" y2="240" stroke="#c94f4f" stroke-width="3" opacity="0.0"/>
+    <line x1="160" y1="160" x2="380" y2="290" stroke="#c94f4f" stroke-width="4" opacity="0.65"/>
+    <line x1="380" y1="160" x2="160" y2="290" stroke="#c94f4f" stroke-width="4" opacity="0.65"/>
+    <text x="270" y="390" fill="#c94f4f" font-size="24" text-anchor="middle">报告与真实行为有缺口</text>
+  </g>
+  <!-- arrow -->
+  <g>
+    <line x1="490" y1="290" x2="640" y2="290" stroke="#e8663c" stroke-width="4"/>
+    <path d="M 640 290 L 616 278 L 616 302 Z" fill="#e8663c"/>
+    <text x="565" y="268" fill="#e8663c" font-size="22" text-anchor="middle">要证据</text>
+  </g>
+  <!-- right: evidence / replay terminal -->
+  <g>
+    <rect x="680" y="130" width="440" height="290" rx="14" fill="#12203a" stroke="#37d0a3" stroke-width="2.5"/>
+    <rect x="680" y="130" width="440" height="44" rx="14" fill="#1a2c4d"/>
+    <circle cx="710" cy="152" r="7" fill="#c94f4f"/>
+    <circle cx="734" cy="152" r="7" fill="#e8b23c"/>
+    <circle cx="758" cy="152" r="7" fill="#37d0a3"/>
+    <text x="900" y="159" fill="#8fa3c8" font-size="20" text-anchor="middle">trace.log · hash-chain 封缄</text>
+    <text x="710" y="215" fill="#37d0a3" font-size="21">09:41  read  config.yaml</text>
+    <text x="710" y="252" fill="#37d0a3" font-size="21">09:42  call  payment-api</text>
+    <text x="710" y="289" fill="#e8b23c" font-size="21">09:43  POST  company-slack</text>
+    <text x="710" y="326" fill="#c94f4f" font-size="21">09:44  spend  $78,000</text>
+    <text x="710" y="380" fill="#8fa3c8" font-size="20">可回放 · 可核验 · 可归责</text>
+    <circle cx="1082" cy="373" r="16" fill="none" stroke="#37d0a3" stroke-width="3"/>
+    <line x1="1094" y1="385" x2="1108" y2="399" stroke="#37d0a3" stroke-width="3"/>
+  </g>
+  <!-- title -->
+  <text x="600" y="505" fill="#f2f5fa" font-size="52" font-weight="bold" text-anchor="middle">Agent 说完不算，拿出证据</text>
+  <text x="600" y="560" fill="#8fa3c8" font-size="26" text-anchor="middle">AI 范式雷达 #17 · Agent 行为审计与取证层 · 2026-10-16</text>
+</svg>
