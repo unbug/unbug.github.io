@@ -162,9 +162,9 @@
   "lastNoTopicRound": {
     "date": "2026-10-14",
     "reason": "首选加权 3.0<4.0 宁缺毋滥；且 GP/FPO 全部核验通道封锁（直连 000、代理 503 反爬、FPO 代理 403、r.jina.ai 间歇失效）",
-    "evidence": "research/2026-10-14-innovation-brief-brief-22.md + research/2026-10-14-innovation-brief-brief-22b.md, research/2026-10-15-innovation-brief-brief-22c.md",
-    "methodNotes": "c 轮结构性发现：优先权2025-10后+快授<=6月信号在 agent 成本/审计细分=结构性空窗（新概念授权周期本身>6月+GP索引滞后）；成本归因方向被 FinOps 厂商（Finout/Mavvrik）主营击穿；agent 失败归因无专利锚（257件全传统RCA）；model pinning 探针因 Google 503 未完成顺延。三轮共性：空白度框架在工具层被厂商自建持续击穿。下一轮换框架候选：A1+大厂白名单早期信号（弱簇模式）或纯技术解读稿",
+    "evidence": "research/2026-10-14-innovation-brief-brief-22.md + 22b + 2026-10-15-22c.md + 2026-10-16-innovation-brief-brief-22d.md",
+    "methodNotes": "d 轮结构性定论：agent 工具层质量保障大类（评测/观测/审计/供应链）系统性枯竭——Vercel AI SDK 内置 rug-pull 钉扎、Langfuse 专项升级回归页、JFrog/Snyk 供应链产品线、Braintrust/Splunk 会话回放均为主营，CEO 复验 Vercel 文档 HIT。两关制（先反方自查后专利背书）效率高（8 分钟击杀全部），保留为标准流程。下轮换大类：a) 模型版本生命周期契约管理 b) agent-物理世界接口 c) 多 agent 交接验收",
     "retryScheduled": "2026-10-21",
-    "round": "三轮（a 路由3.0 / b 文档抽取3.7 / c 零候选）均 2026-10-14~15"
+    "round": "四轮全部 NOTOPIC（2026-10-14~16）：a 路由3.0 / b 文档抽取3.7 / c 零候选 / d 两关制第一关 5 题 0 存活"
   }
 }
