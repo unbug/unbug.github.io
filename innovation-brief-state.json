@@ -1,12 +1,12 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 智创简报：《抽文档省 token 的做法正在收敛：先定位，只喂那一小块》",
-    "date": "2026-10-16",
-    "slug": "innovation-brief-document-intelligence-grant-wave",
-    "issue": 22
+    "title": "AI 智创简报：《会议纪要专利扎堆，平台上不了的场子留给个人》",
+    "date": "2026-10-18",
+    "slug": "innovation-brief-meeting-minutes-local-deploy",
+    "issue": 23
   },
-  "totalPublished": 22,
+  "totalPublished": 23,
   "nextScheduled": "2026-10-21",
   "coveredPatentFamilies": [
     "US20260044392",
@@ -94,7 +94,11 @@
     "US20260111428",
     "US20260119483",
     "US12613928",
-    "US20260220380"
+    "US20260220380",
+    "US12647532",
+    "US12664798",
+    "US20260211885",
+    "EP4162488"
   ],
   "candidateTopics": [
     {
@@ -131,17 +135,10 @@
       "sources": [
         "research/2026-10-17-innovation-brief-brief-22e.md"
       ]
-    },
-    {
-      "topic": "b1 agent 物理动作回执/执行确认（22e 第一关存活，GP 软封未验，通道恢复首验）",
-      "score": null,
-      "sources": [
-        "research/2026-10-17-innovation-brief-brief-22e.md"
-      ]
     }
   ],
-  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-document-intelligence-grant-wave/",
-  "lastPublishedVerifiedAt": "2026-10-17 13:4x 新URL=200 SVG=200 旧URL跳转页=200 新栏目标题已上线",
+  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-meeting-minutes-local-deploy/",
+  "lastPublishedVerifiedAt": "2026-10-18 01:0x 待 Actions 构建后核验",
   "verification": {
     "brief4": {
       "url": "https://unbug.github.io/innovation-brief-prd-gen-patents/",
@@ -186,6 +183,7 @@
     ]
   },
   "notes": [
-    "2026-10-17：10-16 发布的文档抽取授权潮稿原以独立栏目发布（栏目归属错误，Unbug 指出），已并栏为简报 #22（标题加栏目前缀、categories 改 InnovationBrief、文件与 SVG 更名、旧 URL 留跳转页）。原排期 10-21 轮次顺延编号为 #23。"
+    "2026-10-17：10-16 发布的文档抽取授权潮稿原以独立栏目发布（栏目归属错误，Unbug 指出），已并栏为简报 #22（标题加栏目前缀、categories 改 InnovationBrief、文件与 SVG 更名、旧 URL 留跳转页）。原排期 10-21 轮次顺延编号为 #23。",
+    "2026-10-18：简报 #23 发布（会议纪要本地化部署：Zoom US12647532B2/US12664798B2/US20260211885A1 + Microsoft EP4162488B1，全部详情页核验）。b1 agent 物理动作回执线索本轮 GP 三轮字面检索无大厂簇（仅个人申请人），判死不复活；a1 维持降级。GP XHR query 端点本轮再次限流（两次 Sorry），详情页 HTML 不受影响——取证走详情页的策略有效。"
   ]
 }
