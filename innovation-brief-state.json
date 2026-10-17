@@ -1,11 +1,12 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 智创简报：《大模型查库专利扎堆落地，SQL 质检还空着》",
-    "date": "2026-09-27",
-    "slug": "innovation-brief-nl2sql-verification-patents"
+    "title": "AI 智创简报：《抽文档省 token 的做法正在收敛：先定位，只喂那一小块》",
+    "date": "2026-10-16",
+    "slug": "innovation-brief-document-intelligence-grant-wave",
+    "issue": 22
   },
-  "totalPublished": 21,
+  "totalPublished": 22,
   "nextScheduled": "2026-10-21",
   "coveredPatentFamilies": [
     "US20260044392",
@@ -139,7 +140,7 @@
       ]
     }
   ],
-  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-nl2sql-verification-patents/",
+  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-document-intelligence-grant-wave/",
   "lastPublishedVerifiedAt": "2026-09-27 21:56 GMT+8",
   "verification": {
     "brief4": {
@@ -183,5 +184,8 @@
       "a1 模型退役告知+影响面匹配（专利侧疑无簇，若 10-21 仍无簇则按运营实践类降级为解读稿素材）",
       "b1 agent 物理动作回执（rosclaw versioned action receipt/ADF-EA 论文/Matter 生态为专利高产线索，待通道恢复优先补验）"
     ]
-  }
+  },
+  "notes": [
+    "2026-10-17：10-16 发布的文档抽取授权潮稿原以独立栏目发布（栏目归属错误，Unbug 指出），已并栏为简报 #22（标题加栏目前缀、categories 改 InnovationBrief、文件与 SVG 更名、旧 URL 留跳转页）。原排期 10-21 轮次顺延编号为 #23。"
+  ]
 }
