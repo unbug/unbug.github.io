@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="700" fill="#0f1626"/>
+  <text x="600" y="62" text-anchor="middle" fill="#ffffff" font-size="34" font-weight="bold">FDE-Gym：AI 交付的最后一公里</text>
+  <text x="600" y="102" text-anchor="middle" fill="#8fa3c8" font-size="20">95 个隐藏约束的交付任务，最好的配置只解决 14 题</text>
+
+  <!-- funnel: spec clear -> hidden constraints -> asked -> delivered -->
+  <g>
+    <polygon points="180,150 1020,150 960,255 240,255" fill="#2f6fb5"/>
+    <text x="600" y="196" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="bold">任务总量：95 题（规格不清晰，约束隐藏）</text>
+    <text x="600" y="230" text-anchor="middle" fill="#d8e6f5" font-size="18">来自 20 个客户场景、18 个行业，需自己向 stakeholder 提问发现约束</text>
+
+    <polygon points="300,285 900,285 840,390 360,390" fill="#3f9d8f"/>
+    <text x="600" y="331" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="bold">问到关键事实：23 题</text>
+    <text x="600" y="365" text-anchor="middle" fill="#d9f2ee" font-size="18">最好配置把关键事实全部从 stakeholder 问到的题目</text>
+
+    <polygon points="420,420 780,420 730,525 470,525" fill="#c96f3a"/>
+    <text x="600" y="466" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="bold">真正做出交付：10 题</text>
+    <text x="600" y="500" text-anchor="middle" fill="#fbe6d8" font-size="18">问到之后做到业务提升大于等于 0.8 的仅 10 题，问到不等于做出来</text>
+  </g>
+
+  <!-- side stats -->
+  <g>
+    <rect x="150" y="570" width="280" height="86" rx="10" fill="#1b2740"/>
+    <text x="290" y="606" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="bold">0.56</text>
+    <text x="290" y="638" text-anchor="middle" fill="#8fa3c8" font-size="17">13 配置 / 7 家 provider 的最高平均分</text>
+
+    <rect x="460" y="570" width="280" height="86" rx="10" fill="#1b2740"/>
+    <text x="600" y="606" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="bold">14 / 95</text>
+    <text x="600" y="638" text-anchor="middle" fill="#8fa3c8" font-size="17">解决题数：得分不低于 0.8 且无事故</text>
+
+    <rect x="770" y="570" width="280" height="86" rx="10" fill="#1b2740"/>
+    <text x="910" y="606" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="bold">问有代价</text>
+    <text x="910" y="638" text-anchor="middle" fill="#8fa3c8" font-size="17">每次消息、试跑、等待都计入交互罚分</text>
+  </g>
+</svg>
