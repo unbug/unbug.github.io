@@ -1,5 +1,5 @@
 {
-  "currentPhase": "published",
+  "currentPhase": "scheduled",
   "lastPublished": {
     "title": "AI 范式雷达：《当你的笔记本上住进别人家的守护进程》",
     "date": "2026-10-16",
@@ -9,12 +9,25 @@
   "nextScheduled": "2026-10-20",
   "candidateTopics": [
     {
-      "topic": "Codex CLI 默认安装持久自更新守护进程（常驻化焦虑）",
-      "score": 3.9,
+      "topic": "agent 执行基座标准化波（Mxc/OpenShell/SPACE 任一进入 CNCF/OWASP 或跨厂商互操作策略格式→基座波升级规范波重新计分；SPACE 上 HN >150 分→开发者拐点）",
+      "score": 3.33,
       "sources": [
-        "https://news.ycombinator.com/item?id=50060694",
-        "https://github.com/openai/codex/issues/48195"
+        "https://github.com/microsoft/mxc",
+        "https://github.com/perplexityai/SPACE",
+        "https://github.com/NVIDIA/OpenShell"
       ]
+    },
+    {
+      "topic": "agent 记忆产品化（窗口内唯一 >300 分帖是反方立场，大厂公告为零；任一大厂公告即复活）",
+      "score": 3.0,
+      "sources": [
+        "https://news.ycombinator.com/item?id=49945933"
+      ]
+    },
+    {
+      "topic": "A2A/AG-UI 规范波（第二个基金会归属动作即复活；窗口内零动作）",
+      "score": 3.0,
+      "sources": []
     },
     {
       "topic": "agent.reviews 评价飞轮两周复查（189,934 条基线是否破 40 万/独立复现）",
@@ -26,5 +39,11 @@
   ],
   "lastPublishedSlug": "paradigm-radar-agent-daemon-sovereignty",
   "lastPublishedDate": "2026-10-16",
-  "lastVerifiedAt": "2026-10-15T11:25+08:00"
+  "lastVerifiedAt": "2026-10-15T11:25+08:00",
+  "lastNoTopicRound": {
+    "date": "2026-10-17",
+    "brief": "research/2026-10-17-paradigm-radar-brief-19.md",
+    "verdict": "唯一过簇候选「Agent 执行基座标准化波」加权 3.33/5 < 4.0：话题与 #11/#16/#17 六周内三连撞（围堵题材）、发布物与开发者热度倒挂（Perplexity SPACE 开源主帖 HN 仅 2-3 分）、付费证据弱。破格角度「大厂一个月发七个沙箱没人在乎」重评 3.48 仍不达线，按宁缺毋滥不发。",
+    "methodNote": "Researcher 全量 curl 实测（943 条 HN 无偏聚类+逐条复核），纪律合格；种子 1/2 不成波的击杀证据成立。"
+  }
 }
