@@ -123,6 +123,20 @@
       "sources": [
         "/Users/unbug/.openclaw/workspace/research/2026-10-14-innovation-brief-brief-22b.md"
       ]
+    },
+    {
+      "topic": "a1 模型退役告知+受影响资产匹配（22e 第一关存活，专利密度≈0 待复核）",
+      "score": null,
+      "sources": [
+        "research/2026-10-17-innovation-brief-brief-22e.md"
+      ]
+    },
+    {
+      "topic": "b1 agent 物理动作回执/执行确认（22e 第一关存活，GP 软封未验，通道恢复首验）",
+      "score": null,
+      "sources": [
+        "research/2026-10-17-innovation-brief-brief-22e.md"
+      ]
     }
   ],
   "lastPublishedUrl": "https://unbug.github.io/innovation-brief-nl2sql-verification-patents/",
@@ -160,11 +174,14 @@
     }
   },
   "lastNoTopicRound": {
-    "date": "2026-10-14",
-    "reason": "首选加权 3.0<4.0 宁缺毋滥；且 GP/FPO 全部核验通道封锁（直连 000、代理 503 反爬、FPO 代理 403、r.jina.ai 间歇失效）",
-    "evidence": "research/2026-10-14-innovation-brief-brief-22.md + 22b + 2026-10-15-22c.md + 2026-10-16-innovation-brief-brief-22d.md",
-    "methodNotes": "d 轮结构性定论：agent 工具层质量保障大类（评测/观测/审计/供应链）系统性枯竭——Vercel AI SDK 内置 rug-pull 钉扎、Langfuse 专项升级回归页、JFrog/Snyk 供应链产品线、Braintrust/Splunk 会话回放均为主营，CEO 复验 Vercel 文档 HIT。两关制（先反方自查后专利背书）效率高（8 分钟击杀全部），保留为标准流程。下轮换大类：a) 模型版本生命周期契约管理 b) agent-物理世界接口 c) 多 agent 交接验收",
-    "retryScheduled": "2026-10-21",
-    "round": "四轮全部 NOTOPIC（2026-10-14~16）：a 路由3.0 / b 文档抽取3.7 / c 零候选 / d 两关制第一关 5 题 0 存活"
+    "date": "2026-10-17",
+    "round": "brief-22e（第五轮，换大类首战：a 模型版本契约/b 物理接口/c 交接验收）",
+    "brief": "research/2026-10-17-innovation-brief-brief-22e.md",
+    "verdict": "NOTOPIC。第一关两关制击杀 a2/a3/c1（Theneo/Braintrust/Confident AI/Mastra 等主营厂商覆盖，交接验收=框架功能位）；存活 2 窄口径：a1=provider 退役/破坏性变更对下游告知+受影响资产匹配、b1=agent 物理动作回执/执行确认。第二关：a1 英文字面短语（model retirement/deprecation）窗口内专利密度≈0（3 发 XHR 全无关件，运营实践先于专利）；b1 未核验——GP 代理出口 IP 被软封（首页 200 但 xhr/result 全 sorry 页，CEO 12:2x 复测 4 发同样全灭），jina 转译 GP 搜索空、FPO 代理不通。按「未核验=未核验」红线不发。",
+    "channelNote": "GP XHR 端点封禁与首页解封不同步；10-21 轮开工前先探 xhr/result 单发活性（不是只探首页），或用 FPO/其他一手通道恢复证据。",
+    "carryOver": [
+      "a1 模型退役告知+影响面匹配（专利侧疑无簇，若 10-21 仍无簇则按运营实践类降级为解读稿素材）",
+      "b1 agent 物理动作回执（rosclaw versioned action receipt/ADF-EA 论文/Matter 生态为专利高产线索，待通道恢复优先补验）"
+    ]
   }
 }
