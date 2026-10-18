@@ -138,7 +138,7 @@
     }
   ],
   "lastPublishedUrl": "https://unbug.github.io/innovation-brief-meeting-minutes-local-deploy/",
-  "lastPublishedVerifiedAt": "2026-10-18 01:0x 待 Actions 构建后核验",
+  "lastPublishedVerifiedAt": "2026-10-18 11:2x 重建后核验 200（未来日期陷阱第四犯，空提交 b4afaa2 修复）",
   "verification": {
     "brief4": {
       "url": "https://unbug.github.io/innovation-brief-prd-gen-patents/",
