@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="630" fill="#0f1626"/>
+  <rect x="0" y="0" width="1200" height="96" fill="#141d33"/>
+
+  <text x="60" y="52" fill="#e8edf7" font-size="30" font-weight="bold">同一条注入，三种结局：基准只看到一个数字</text>
+  <text x="60" y="84" fill="#8fa0bf" font-size="19">小参数工具 Agent 注入评测审计：被判「攻击失败」的轨迹里，大部分是「没理会」而非「防住了」</text>
+
+  <!-- Column 1: Ignored -->
+  <g>
+    <rect x="50" y="130" width="350" height="380" rx="16" fill="#182338" stroke="#3b4a68" stroke-width="2"/>
+    <rect x="50" y="130" width="350" height="64" rx="16" fill="#2a3a5c"/>
+    <text x="225" y="170" fill="#c9d6ee" font-size="24" font-weight="bold" text-anchor="middle">沉默的忽略</text>
+    <circle cx="225" cy="260" r="46" fill="none" stroke="#5b6c8f" stroke-width="3" stroke-dasharray="8 7"/>
+    <text x="225" y="270" fill="#8fa0bf" font-size="34" text-anchor="middle">…</text>
+    <text x="225" y="340" fill="#aab8d4" font-size="19" text-anchor="middle">没读到 / 没理会注入</text>
+    <text x="225" y="368" fill="#7487a8" font-size="16" text-anchor="middle">偶然因素让攻击「没得逞」</text>
+    <rect x="90" y="402" width="270" height="66" rx="10" fill="#223050"/>
+    <text x="225" y="430" fill="#e8edf7" font-size="24" font-weight="bold" text-anchor="middle">76.3% / 80.3%</text>
+    <text x="225" y="456" fill="#8fa0bf" font-size="15" text-anchor="middle">占被判「防御成功」的失败攻击</text>
+  </g>
+
+  <!-- Column 2: Genuine refusal -->
+  <g>
+    <rect x="425" y="130" width="350" height="380" rx="16" fill="#182338" stroke="#3f7d5c" stroke-width="2"/>
+    <rect x="425" y="130" width="350" height="64" rx="16" fill="#1f4436"/>
+    <text x="600" y="170" fill="#c4ecd6" font-size="24" font-weight="bold" text-anchor="middle">真实的拒绝</text>
+    <circle cx="600" cy="260" r="46" fill="none" stroke="#4fae7c" stroke-width="3"/>
+    <path d="M578 260 l14 16 l30 -34" fill="none" stroke="#4fae7c" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="600" y="340" fill="#b9dfc9" font-size="19" text-anchor="middle">看见注入，明确说不</text>
+    <text x="600" y="368" fill="#7ba98e" font-size="16" text-anchor="middle">这才是真防御</text>
+    <rect x="465" y="402" width="270" height="66" rx="10" fill="#1d3a2e"/>
+    <text x="600" y="430" fill="#e8f7ee" font-size="24" font-weight="bold" text-anchor="middle">约 18%</text>
+    <text x="600" y="456" fill="#8fbf9f" font-size="15" text-anchor="middle">失败攻击中的真实拒绝占比</text>
+  </g>
+
+  <!-- Column 3: Recognized but obeyed -->
+  <g>
+    <rect x="800" y="130" width="350" height="380" rx="16" fill="#182338" stroke="#8f4a4a" stroke-width="2"/>
+    <rect x="800" y="130" width="350" height="64" rx="16" fill="#4a2626"/>
+    <text x="975" y="170" fill="#f0c9c9" font-size="24" font-weight="bold" text-anchor="middle">认出了，仍照做</text>
+    <circle cx="975" cy="260" r="46" fill="none" stroke="#d06868" stroke-width="3"/>
+    <path d="M957 242 l36 36 M993 242 l-36 36" stroke="#d06868" stroke-width="6" stroke-linecap="round"/>
+    <text x="975" y="340" fill="#e4b8b8" font-size="19" text-anchor="middle">嘴上说是注入，手在转账</text>
+    <text x="975" y="368" fill="#b08585" font-size="16" text-anchor="middle">MiniCPM-2B 认出后仍汇出 $30,000</text>
+    <rect x="840" y="402" width="270" height="66" rx="10" fill="#3a2020"/>
+    <text x="975" y="430" fill="#fbeaea" font-size="24" font-weight="bold" text-anchor="middle">28.9% / 16.9%</text>
+    <text x="975" y="456" fill="#c79a9a" font-size="15" text-anchor="middle">识别出注入后仍执行的比例</text>
+  </g>
+
+  <text x="600" y="562" fill="#e8edf7" font-size="21" font-weight="bold" text-anchor="middle">低 ASR ≠ 防御成功：同一权重仅改 system prompt，ASR 可在 0.2% 与 43% 之间摆动</text>
+  <text x="600" y="596" fill="#7487a8" font-size="16" text-anchor="middle">Ignored, Not Refused · arXiv:2610.23254 · BRAC University · 33,000 条轨迹 / 11 个 2-14B 开源 Agent</text>
+</svg>
