@@ -7,7 +7,7 @@
     "issue": 23
   },
   "totalPublished": 23,
-  "nextScheduled": "2026-10-21",
+  "nextScheduled": "2026-10-29",
   "coveredPatentFamilies": [
     "US20260044392",
     "US20260188475",
@@ -172,14 +172,17 @@
     }
   },
   "lastNoTopicRound": {
-    "date": "2026-10-17",
-    "round": "brief-22e（第五轮，换大类首战：a 模型版本契约/b 物理接口/c 交接验收）",
-    "brief": "research/2026-10-17-innovation-brief-brief-22e.md",
-    "verdict": "NOTOPIC。第一关两关制击杀 a2/a3/c1（Theneo/Braintrust/Confident AI/Mastra 等主营厂商覆盖，交接验收=框架功能位）；存活 2 窄口径：a1=provider 退役/破坏性变更对下游告知+受影响资产匹配、b1=agent 物理动作回执/执行确认。第二关：a1 英文字面短语（model retirement/deprecation）窗口内专利密度≈0（3 发 XHR 全无关件，运营实践先于专利）；b1 未核验——GP 代理出口 IP 被软封（首页 200 但 xhr/result 全 sorry 页，CEO 12:2x 复测 4 发同样全灭），jina 转译 GP 搜索空、FPO 代理不通。按「未核验=未核验」红线不发。",
-    "channelNote": "GP XHR 端点封禁与首页解封不同步；10-21 轮开工前先探 xhr/result 单发活性（不是只探首页），或用 FPO/其他一手通道恢复证据。",
+    "date": "2026-10-26",
+    "round": "brief-24（换端点首战：GP /xhr/query 可用窗口 13 分钟后硬封死，详情页同 IP 503）",
+    "brief": "workspace-researcher/research-brief-2026-10-23-brief24.md",
+    "verdict": "NOTOPIC。两关制四候选第一关全存活、第二关专利背书全灭：a1 退役告知密度≈0（model deprecation 全库 total=1 且无关旧件），b1 动作回执仅旧件+单家高校件（清华 CN122287696B 出窗），robot×execution confirmation 不成簇。a1 维持降级解读稿素材，b1 判死。",
+    "channelNote": "通道再降级：/xhr/query 成段可用仅 13 分钟窗口，且本轮详情页 HTML 同 IP 同步 503（brief-23 时代「详情页不受影响」不再成立）——检索+亲验双通道同进同退。Bing 通 200 可作下轮备援；FPO/Espacenet 恒 403。",
+    "falsified": "上轮 carryOver 的一条 npm 包高产线索经 npm registry+deps.dev 双验证伪=2026-02-24 占位包（placeholder name reserved），线索已清除不再引用",
     "carryOver": [
-      "a1 模型退役告知+影响面匹配（专利侧疑无簇，若 10-21 仍无簇则按运营实践类降级为解读稿素材）",
-      "b1 agent 物理动作回执（rosclaw versioned action receipt/ADF-EA 论文/Matter 生态为专利高产线索，待通道恢复优先补验）"
+      "（10-29 轮用）大类轮换：模型授权/计费变更审计面、agent 托管运行时（supervised agent hosting）、AI 交接验收文书化——开工前两关制+先探后用"
+    ],
+    "watchpoints": [
+      "清华深研院 CN122287696B（执行语义 agent）+CN122237599A（具身智能）高校抬头，现第二/三家独立申请人可复活 b1"
     ]
   },
   "notes": [
