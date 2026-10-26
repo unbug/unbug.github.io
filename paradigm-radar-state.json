@@ -6,44 +6,65 @@
     "slug": "paradigm-radar-agent-daemon-sovereignty"
   },
   "totalPublished": 18,
-  "nextScheduled": "2026-10-20",
+  "nextScheduled": "2026-11-02",
   "candidateTopics": [
     {
-      "topic": "agent 执行基座标准化波（Mxc/OpenShell/SPACE 任一进入 CNCF/OWASP 或跨厂商互操作策略格式→基座波升级规范波重新计分；SPACE 上 HN >150 分→开发者拐点）",
+      "topic": "agent 常驻执行基座产品化+邻接层（雷达#20 主簇残留：Dots/Duet/OpenShell/MXC/Duet 发布物已密，需求端证据弱；复活条件：GitHub『agent-scale Git infra』系列或同类平台方帖获 >150 分主帖，或 OpenShell/MXC 出现 CNCF/OWASP/跨厂商互操作动作，或 Dots/Duet 出现第三方独立行为审计爆款）",
+      "score": 3.85,
+      "sources": [
+        "https://github.com/NVIDIA/OpenShell",
+        "https://github.com/microsoft/mxc",
+        "https://claude.com/product/claude-duet",
+        "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+        "https://layerfs.ai/"
+      ]
+    },
+    {
+      "topic": "agent 执行基座标准化波（Mxc/OpenShell/SPACE 任一进入 CNCF/OWASP 或跨厂商互操作策略格式→升级规范波重新计分；SPACE 上 HN >150 分→开发者拐点；新增子信号：gVisor 捐 CNCF（gvisor.dev 博客 10-02 实测，HN 仅 24 分）是否带出 agent 隔离策略格式）",
       "score": 3.33,
       "sources": [
         "https://github.com/microsoft/mxc",
         "https://github.com/perplexityai/SPACE",
-        "https://github.com/NVIDIA/OpenShell"
+        "https://github.com/NVIDIA/OpenShell",
+        "https://gvisor.dev/blog/"
       ]
     },
     {
-      "topic": "agent 记忆产品化（窗口内唯一 >300 分帖是反方立场，大厂公告为零；任一大厂公告即复活）",
+      "topic": "agent 记忆产品化（窗口内 96 帖但最高 392 分为反方立场『agents don't need memory』HN 49945933；大厂公告检索仍为零；任一大厂公告即复活）",
       "score": 3.0,
       "sources": [
         "https://news.ycombinator.com/item?id=49945933"
       ]
     },
     {
-      "topic": "A2A/AG-UI 规范波（第二个基金会归属动作即复活；窗口内零动作）",
+      "topic": "A2A/AG-UI 规范波（第二个基金会归属动作即复活；窗口内零动作帖；新待验线索：aaif.io 项目列表已含 A2A 页，需查其入库时间是否在窗口内）",
       "score": 3.0,
-      "sources": []
+      "sources": [
+        "https://aaif.io"
+      ]
     },
     {
-      "topic": "agent.reviews 评价飞轮两周复查（189,934 条基线是否破 40 万/独立复现）",
+      "topic": "agent.reviews 评价飞轮复查（10-26 实测 190,991 条/4,312 工具，vs 189,934 基线几乎零增长，未破 40 万判据；维持判据，11 月中旬复查斜率）",
       "score": 4.0,
       "sources": [
         "https://agent.reviews/llms.txt"
+      ]
+    },
+    {
+      "topic": "观察池：OSC 7501 终端程序状态协议（mitchellh 发起 188 分 HN，Claude Code 合并、buildkite 等 6 个零星实现）——终端厂商跟进即重评；个人 agent harness 叙事簇（26 帖全 <10 分）——出现发布物级事件即重评",
+      "score": 2.5,
+      "sources": [
+        "https://mitchellh.com/writing/program-status-osc7501"
       ]
     }
   ],
   "lastPublishedSlug": "paradigm-radar-agent-daemon-sovereignty",
   "lastPublishedDate": "2026-10-16",
-  "lastVerifiedAt": "2026-10-15T11:25+08:00",
+  "lastVerifiedAt": "2026-10-26T10:05+08:00",
   "lastNoTopicRound": {
-    "date": "2026-10-17",
-    "brief": "research/2026-10-17-paradigm-radar-brief-19.md",
-    "verdict": "唯一过簇候选「Agent 执行基座标准化波」加权 3.33/5 < 4.0：话题与 #11/#16/#17 六周内三连撞（围堵题材）、发布物与开发者热度倒挂（Perplexity SPACE 开源主帖 HN 仅 2-3 分）、付费证据弱。破格角度「大厂一个月发七个沙箱没人在乎」重评 3.48 仍不达线，按宁缺毋滥不发。",
-    "methodNote": "Researcher 全量 curl 实测（943 条 HN 无偏聚类+逐条复核），纪律合格；种子 1/2 不成波的击杀证据成立。"
+    "date": "2026-10-26",
+    "brief": "/Users/unbug/.openclaw/workspace-researcher/research-brief-2026-10-26-radar20.md",
+    "verdict": "主推荐『Agent 常驻执行基座产品化+邻接层』加权 3.75-3.85 <4.0：供给端大厂发布物密（Dots 770/Duet 566/OpenShell 501/MXC 228）但属 #11/#13/#15/#17/#18 执行基座家族第五连撞，新颖性压至 3.0-3.5；需求端邻接层证据（GitHub agent-scale Git infra 系列 68 分、LayerFS 76 分、转发全 <10 分）独立交叉强度不足。四观察点全维持：gVisor 捐 CNCF 属通用容器层不构成基座波升级；记忆类大厂公告仍零；A2A 第二基金会动作未见；agent.reviews 190,991 条远未破 40 万。",
+    "methodNote": "Researcher 全量实测：HN 游标分段拉取窗口全量 story 30,401 条无隙聚类、30+ 关键词簇、14 仓 GitHub API 亲验、官方公告页 curl 亲验（Anthropic AAIF 捐赠/Cloudflare/layerfs/UHP/aaif.io 等），纪律合格。"
   }
 }
