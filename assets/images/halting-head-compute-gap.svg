@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" font-family="PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="640" fill="#0f1420"/>
+  <text x="600" y="50" fill="#e8ecf4" font-size="30" font-weight="bold" text-anchor="middle">预测、实跑、批次实付：省算力是三个数，不是一个数</text>
+  <text x="600" y="80" fill="#8a93a6" font-size="16" text-anchor="middle">arXiv:2610.32246《Do Halting Heads Really Save Compute in Looped Language Models?》Wu / Heo / Tan（Apple，2026-10-23，约 100,000 GPU-hours、100+ 模型从零预训练）</text>
+
+  <!-- three numbers panel -->
+  <rect x="40" y="105" width="560" height="225" rx="10" fill="#161d2c" stroke="#e06c5a"/>
+  <text x="320" y="137" fill="#e06c5a" font-size="18" font-weight="bold" text-anchor="middle">mixture-loss halting head 的三个数（上限 8 迭代）</text>
+  <text x="80" y="175" fill="#8a93a6" font-size="14">head 预测均值 E[N]</text>
+  <rect x="290" y="160" width="128" height="18" fill="#3f9e6a"/>
+  <text x="426" y="174" fill="#c6cddc" font-size="14">约 3.7</text>
+  <text x="80" y="210" fill="#8a93a6" font-size="14">退出规则实跑（等累计 90%）</text>
+  <rect x="290" y="195" width="272" height="18" fill="#e06c5a"/>
+  <text x="570" y="209" fill="#c6cddc" font-size="14">7.6–7.9</text>
+  <text x="80" y="245" fill="#8a93a6" font-size="14">32 序列批次实付</text>
+  <rect x="290" y="230" width="166" height="18" fill="#d9a441"/>
+  <text x="464" y="244" fill="#c6cddc" font-size="14">4.4–4.7</text>
+  <text x="80" y="282" fill="#8a93a6" font-size="13">原话 save almost no compute；病灶：mixture loss 从不给</text>
+  <text x="80" y="303" fill="#8a93a6" font-size="13">退出规则真正停下的那一次打分；抽样花掉平均要付 0.2 BPB</text>
+
+  <!-- batch tax panel -->
+  <rect x="630" y="105" width="530" height="225" rx="10" fill="#161d2c" stroke="#5a9bd4"/>
+  <text x="895" y="137" fill="#5a9bd4" font-size="18" font-weight="bold" text-anchor="middle">批次等最慢的 token</text>
+  <text x="895" y="172" fill="#c6cddc" font-size="15" text-anchor="middle">370M 计时：自适应解码快约 1.6×</text>
+  <text x="895" y="200" fill="#c6cddc" font-size="15" text-anchor="middle">按实跑步数固定深度跑：本可 2.3×</text>
+  <text x="895" y="228" fill="#c6cddc" font-size="15" text-anchor="middle">差额 = 等待最慢 token 的成本</text>
+  <text x="895" y="262" fill="#c6cddc" font-size="15" text-anchor="middle">在批次实付深度上对账：质量领先</text>
+  <text x="895" y="290" fill="#c6cddc" font-size="15" text-anchor="middle">0.0246 BPB → 塌到 0.003 BPB</text>
+
+  <!-- ouro + balance -->
+  <rect x="40" y="350" width="700" height="190" rx="10" fill="#161d2c" stroke="#2c3850"/>
+  <text x="390" y="382" fill="#e8ecf4" font-size="18" font-weight="bold" text-anchor="middle">省是真的省过，但账本要换记法</text>
+  <text x="70" y="415" fill="#c6cddc" font-size="14">· per-step 训练 + 固定深度：仍全面领先无头基线</text>
+  <text x="70" y="443" fill="#c6cddc" font-size="14">· 停止 token 的 key/value 复用进缓存：单序列保住几乎全部领先</text>
+  <text x="70" y="471" fill="#c6cddc" font-size="14">· Ouro 2.6B（该文自测口径）：token 省约 1/10 迭代，32 批次仅省约 1%</text>
+  <text x="70" y="499" fill="#c6cddc" font-size="14">· Ouro gate 的 token 分配在同均值深度下值 0.30 BPB——质量侧收益真实存在</text>
+  <text x="70" y="527" fill="#8a93a6" font-size="13">建议改报三个数：head 预测均值 / 退出规则实跑步数 / 批次实付步数；训练前上界约 0.03（单序列）、0.01（32 批次）BPB</text>
+
+  <!-- scope box -->
+  <rect x="770" y="350" width="390" height="190" rx="10" fill="#161d2c" stroke="#d9a441"/>
+  <text x="965" y="382" fill="#d9a441" font-size="18" font-weight="bold" text-anchor="middle">范围限定</text>
+  <text x="795" y="415" fill="#c6cddc" font-size="14">· 逐字 for the halting heads we train</text>
+  <text x="795" y="443" fill="#c6cddc" font-size="14">· 限 mixture/per-step 训练配置</text>
+  <text x="795" y="471" fill="#c6cddc" font-size="14">· 规模到 1.3B（104B tokens）为止</text>
+  <text x="795" y="499" fill="#c6cddc" font-size="14">· 不外推所有自适应深度方案</text>
+  <text x="795" y="527" fill="#8a93a6" font-size="13">Ouro 数字均为该文复测非官方结论</text>
+
+  <!-- footer -->
+  <rect x="40" y="560" width="1120" height="55" rx="10" fill="#1b2334" stroke="#3f9e6a"/>
+  <text x="600" y="594" fill="#3f9e6a" font-size="17" font-weight="bold" text-anchor="middle">报告平均迭代数的省算力账单，在批次解码的服务端对不上账 —— 三个数分开报，才算证据</text>
+</svg>
