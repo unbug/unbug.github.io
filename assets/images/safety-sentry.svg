@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Noto Serif SC','Songti SC',serif">
+  <defs>
+    <style>
+      .k { font-size: 13px; letter-spacing: 3px; fill: #9A937F; }
+      .rl { font-size: 15px; fill: #474C54; }
+      .val { font-size: 18px; font-weight: 700; }
+      .b { font-size: 12px; fill: #A29C88; }
+      .chip { font-size: 12.5px; font-weight: 600; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F2EA"/>
+    </linearGradient>
+    <linearGradient id="gClay" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C24A24"/><stop offset="1" stop-color="#DE8253"/>
+    </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F6E80"/><stop offset="1" stop-color="#4FA3A5"/>
+    </linearGradient>
+    <linearGradient id="gLime" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#93B96D"/><stop offset="1" stop-color="#B9D39A"/>
+    </linearGradient>
+    <linearGradient id="gPlum" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5E3850"/><stop offset="1" stop-color="#7C4A6B"/>
+    </linearGradient>
+    <linearGradient id="gTileG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E3B04C"/><stop offset="1" stop-color="#C98A1B"/>
+    </linearGradient>
+    <linearGradient id="gTileA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#DE8253"/><stop offset="1" stop-color="#C24A24"/>
+    </linearGradient>
+    <linearGradient id="gTileR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A6455E"/><stop offset="1" stop-color="#7C2D4E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1105" cy="110" r="140" fill="#2F6E80" opacity="0.06"/>
+  <circle cx="70" cy="620" r="115" fill="#C24A24" opacity="0.05"/>
+  <rect x="64" y="44" width="44" height="5" fill="#B5442E"/>
+
+  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2607.13594 · 上海科技大学</text>
+  <text x="64" y="128" font-size="37" font-weight="700" fill="#1A1B1E">放行之前，三选一</text>
+  <text x="64" y="158" font-size="15.5" fill="#6E6A5C">工具调用安全审查从 safe/unsafe 二分，改为 Execute / Ask / Refuse 三向路由</text>
+
+  <!-- mosaic tile motif -->
+  <g>
+    <rect x="1012" y="64" width="42" height="42" rx="3" fill="url(#gTileG)" opacity="0.85"/>
+    <rect x="1060" y="64" width="42" height="42" rx="3" fill="url(#gTileA)" opacity="0.85"/>
+    <rect x="1108" y="64" width="42" height="42" rx="3" fill="url(#gTileR)" opacity="0.85"/>
+    <rect x="1036" y="112" width="42" height="42" rx="3" fill="url(#gTeal)" opacity="0.7"/>
+    <rect x="1084" y="112" width="42" height="42" rx="3" fill="url(#gLime)" opacity="0.75"/>
+    <rect x="1060" y="160" width="42" height="42" rx="3" fill="url(#gTileG)" opacity="0.55"/>
+  </g>
+
+  <!-- main visual: one tool call routed to three tiles -->
+  <text class="rl" x="64" y="222">一次工具调用，路由到三个门</text>
+  <g>
+    <rect x="150" y="322" width="76" height="30" rx="3" fill="#132E52" opacity="0.85"/>
+    <text x="188" y="342" text-anchor="middle" class="chip" fill="#FFFFFF">调用</text>
+    <line x1="226" y1="337" x2="292" y2="337" stroke="#8A7A5C" stroke-width="2.5"/>
+    <path d="M 292 331 l 10 6 l -10 6" fill="none" stroke="#8A7A5C" stroke-width="2.5"/>
+
+    <rect x="340" y="240" width="92" height="60" rx="4" fill="url(#gTileG)"/>
+    <text x="386" y="266" text-anchor="middle" class="chip" fill="#FFFFFF">Execute</text>
+    <text x="386" y="288" text-anchor="middle" class="chip" fill="#FFF4DC">低风险</text>
+
+    <rect x="340" y="308" width="92" height="60" rx="4" fill="url(#gTileA)"/>
+    <text x="386" y="334" text-anchor="middle" class="chip" fill="#FFFFFF">Ask</text>
+    <text x="386" y="356" text-anchor="middle" class="chip" fill="#FFE8D8">中风险</text>
+
+    <rect x="340" y="376" width="92" height="60" rx="4" fill="url(#gTileR)"/>
+    <text x="386" y="402" text-anchor="middle" class="chip" fill="#FFFFFF">Refuse</text>
+    <text x="386" y="424" text-anchor="middle" class="chip" fill="#F5DCE6">高风险</text>
+
+    <g fill="none" stroke-width="2.5">
+      <path d="M 302 337 Q 322 337 332 280 L 336 270" stroke="url(#gTileG)"/>
+      <line x1="302" y1="337" x2="334" y2="337" stroke="url(#gTileA)"/>
+      <path d="M 302 337 Q 322 337 332 396 L 336 406" stroke="url(#gTileR)"/>
+    </g>
+
+    <text class="rl" x="464" y="275">快速通过</text>
+    <text class="rl" x="464" y="343">人工确认</text>
+    <text class="rl" x="464" y="411">直接阻断</text>
+    <text class="b" x="464" y="452">中等风险由 Ask 承接，在安全与效率之间取平衡</text>
+  </g>
+
+  <!-- right column: guard model + threshold knob -->
+  <g>
+    <rect x="872" y="240" width="268" height="70" fill="#2F6E80" opacity="0.08"/>
+    <text x="888" y="270" font-size="24" font-weight="700" fill="#2F6E80">单次解码 · 判三路</text>
+    <text x="888" y="294" font-size="12.5" fill="#6B7078">语义 × 执行环境 × 历史行为</text>
+
+    <rect x="888" y="330" width="236" height="10" rx="5" fill="#E7DCC4"/>
+    <line x1="990" y1="322" x2="990" y2="348" stroke="#B5442E" stroke-width="3"/>
+    <circle cx="990" cy="335" r="8" fill="#B5442E"/>
+    <text class="b" x="888" y="368">← 阈值调低：Ask/Refuse 变宽</text>
+    <text class="b" x="888" y="386">阈值调高：更多调用放行 →</text>
+
+    <text class="rl" x="888" y="424">挪阈值，不重训</text>
+    <text class="b" x="888" y="446">同一模型切换风险容忍度</text>
+  </g>
+
+  <!-- bottom chips -->
+  <line x1="64" y1="488" x2="1136" y2="488" stroke="#E5E1D4"/>
+  <g>
+    <text class="rl" x="64" y="528">实验自述</text>
+    <rect x="152" y="510" width="160" height="26" rx="13" fill="url(#gTeal)" opacity="0.18"/>
+    <text x="232" y="528" text-anchor="middle" class="chip" fill="#245063">整体准确率保持</text>
+    <rect x="322" y="510" width="150" height="26" rx="13" fill="url(#gPlum)" opacity="0.16"/>
+    <text x="397" y="528" text-anchor="middle" class="chip" fill="#5E3850">召回率显著提升</text>
+    <rect x="482" y="510" width="180" height="26" rx="13" fill="url(#gLime)" opacity="0.3"/>
+    <text x="572" y="528" text-anchor="middle" class="chip" fill="#4C6B2F">阈值波动远小于重训</text>
+    <rect x="672" y="510" width="150" height="26" rx="13" fill="url(#gClay)" opacity="0.16"/>
+    <text x="747" y="528" text-anchor="middle" class="chip" fill="#A63A22">单次解码延迟低</text>
+  </g>
+  <text x="64" y="580" font-size="18" fill="#1A1B1E">安全不是只有油门和刹车，中风险时先拉手刹问一句。</text>
+  <text class="b" x="1136" y="614" text-anchor="end">多基准实验 · 论文自述口径 · 预印本未经同行评审 · Micropaper</text>
+</svg>

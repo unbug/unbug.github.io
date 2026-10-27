@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "一分钟读论文：《Agent的Token账单：1000倍消耗差异背后的工程真相》"
+title: "一分钟读论文：《Agent的Token消耗经济学》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-token-consumption-economics.svg
 tags: [token-economics, agent-cost, swebench, model-efficiency, cost-optimization]
+description: "斯坦福与密歇根大学研究者分析8个前沿LLM在SWE-bench Verified上的执行轨迹，发现Agent成本由输入Token主导且同一任务运行间消耗差异可达30倍，为智能体成本管理提供了首批系统化量化证据。"
 ---
 
 如果你正在构建或部署 AI 智能体，你可能已经注意到一个令人不安的事实：同一个 Agent 任务，跑十次可能产生十种完全不同的 Token 账单。斯坦福大学 Longju Bai、密歇根大学 Jiaxin Pei 等研究者最近发表的论文[《How Do AI Agents Spend Your Money? Analyzing and Predicting Token Consumption in Agentic Coding Tasks》][paper1-url]首次对这个问题进行了系统性量化研究——他们分析了 8 个前沿 LLM 在 SWE-bench Verified 上的执行轨迹，得出了几个颠覆常识的结论。这篇文章将带你理解这些发现背后的工程含义，以及它们如何改变你对 Agent 成本管理的认知。
@@ -112,7 +113,6 @@ Agent 不是做一次推理就结束。它需要：加载系统提示和工具�
 **策略四：预算硬限制。** 在 Agent 框架中设置 Token 消耗上限——当达到阈值时自动终止当前执行并返回最佳结果。这防止了"高消耗低准确率"区域的无限循环。
 
 ```python
-# 最小化示例：Token 预算硬限制
 class BudgetGuard:
     def __init__(self, max_tokens=2_000_000):
         self.max_tokens = max_tokens
@@ -124,7 +124,6 @@ class BudgetGuard:
         self.used_tokens += new_tokens
         return True
 
-# 在 Agent 循环中使用
 guard = BudgetGuard(max_tokens=2_000_000)
 for step in agent_loop():
     if not guard.check(step.token_count):

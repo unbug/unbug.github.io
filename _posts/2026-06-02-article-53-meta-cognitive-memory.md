@@ -5,6 +5,7 @@ author: unbug
 categories: [AI, LLM]
 image: assets/images/article-53-meta-cognitive-memory.svg
 tags: [LLM, LongContext, Memory, Agent]
+description: "从POMDP理论证明信念偏差随压缩层级指数增长是长上下文遗忘根因，提出以信念熵做元认知探测的MMPO算法，动态决定回溯原文还是用压缩表示，在175万token上下文保持97.1%性能。"
 ---
 
 中国科学技术大学、浙江大学和腾讯合作的一篇论文[《Meta-Cognitive Memory Policy Optimization for Long-Horizon LLM Agents》][paper1-url]，针对长上下文记忆中的信息衰减问题，提出了基于元认知信念熵的MMPO算法，在175万token的超长上下文下保持97.1%的性能，显著优于现有递归总结方法。

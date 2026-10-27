@@ -3,6 +3,7 @@ layout: post
 title:  "一分钟读论文：《软件智能体的修复策略探索》"
 author: unbug
 categories: [AI, Engineering]
+description: "PhoenixRepair以多位置采样、迭代反思和知识蒸馏扩展修复策略搜索空间，缓解探索不足，SWE-bench-Verified的Pass@1达76.0%。"
 image: assets/images/phoenix-repair-framework.svg
 tags: [SoftwareAgent, CodeRepair, MultiAgent]
 ---

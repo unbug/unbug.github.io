@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AI 范式雷达：《ScaleCUA — 可验证数据合成如何突破 Computer Use Agent 的能力天花板》"
+title:  "AI 范式雷达：《可验证数据突破桌面智能体天花板》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-scalecua-verifiable-data.svg
 tags: [computer-use-agent, reinforcement-learning, data-synthesis, gui-agents, online-rl]
+description: "清华与Z.AI团队提出可验证数据合成方法，用大规模合成数据加在线强化学习训练桌面操作智能体，突破训练数据稀缺瓶颈，在OSWorld基准达到开源领先水平。"
 ---
 
 如果你正在构建 Computer Use Agent（CUA），你可能已经发现一个令人沮丧的事实：你的模型在 OSWorld 上跑不过参数量大它四倍的竞品。这不是模型能力的问题——而是训练数据的问题。清华大学和 Z.AI 团队在 arXiv:2607.11185 中提出的 ScaleCUA，首次系统性地解决了 CUA 领域最核心的瓶颈：可验证训练数据的稀缺性。本文将带你理解它的三大创新如何共同作用，让开源 CUA 在 OSWorld 上达到 68.7% 的 SOTA 水平。

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "一分钟读论文：《Agent 记忆架构：从 flat retrieval 到 agentic control 的十年演进》"
+title: "一分钟读论文：《Agent记忆架构的十年演进》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-agent-memory-taxonomy.svg
 tags: [agent-memory, system-architecture, long-horizon, memory-taxonomy, infrastructure]
+description: "麻省理工等机构对十个智能体记忆系统做首个系统级评测，沿四维分类法剖析写入、检索、生成三阶段成本，发现架构选择使端到端延迟相差两到十五倍，记忆质量影响超过模型。"
 ---
 
 如果你正在构建需要长期记忆的 AI Agent，你可能已经发现一个痛点：市面上涌现了数十种 Agent 记忆方案——从简单的向量检索到 LLM 中介的记忆提取，从持续整合的事实库到 Agent 自主管理的记忆生命周期。但没有任何一个评测体系告诉你：这些方案在系统层面的真实成本结构是什么。

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "一分钟读论文：《Agent安全与评估的范式转移——从持续学习对齐退化到四轴决策框架》"
+title: "一分钟读论文：《Agent安全评估的范式转移》"
 author: unbug
 categories: [ai, paradigm-radar, agent]
 image: assets/images/article-88-agent-safety.svg
 tags: [agent-safety, alignment, multi-modal, enterprise-ai]
+description: "两篇论文揭示持续学习下Agent安全对齐系统性退化，多模态误对齐率远超文本模型；四轴决策框架以合规风险比率与因果归因率填补评估空白。"
 ---
 
 加州大学伯克利分校和斯坦福大学合作的一篇论文[《Narrow Fine-Tuning Erodes Safety Alignment in Vision-Language Agents》][paper1-url]，以及另一篇来自清华大学的研究[《Four-Axis Decision Alignment for Long-Horizon Enterprise AI Agents》][paper2-url]，共同揭示了一个正在被行业忽视的危机：当AI Agent通过持续学习不断扩展能力时，其安全对齐正在系统性退化。WildClawBench基准测试数据显示，多模态Agent的误对齐率高达70.71%，远超文本模型的41.19%。与此同时，企业级Agent评估领域存在两个真正的空白维度——CRR（合规风险比率）和CAR（因果归因率）。这两篇论文共同指向一个核心论断：**对齐即能力**——AI Agent的评估范式正从"能否完成任务"转向"是否以正确标准完成任务"。

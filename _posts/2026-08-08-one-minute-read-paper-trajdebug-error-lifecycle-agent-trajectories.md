@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "一分钟读论文：《追踪错误生命周期以识别长程Agent轨迹中的关键失败》"
+title:  "一分钟读论文：《追踪Agent轨迹的错误生命周期》"
 author: unbug
 categories: [AI, AgenticSystems]
 image: assets/images/trajdebug-error-lifecycle-framework.svg
 tags: [AgenticSystems, AgentDebugging, ErrorAnalysis]
+description: "把长程Agent轨迹关键错误检测拆成历史压缩、错误触发检测与因果归因三阶段，从被动调试转向错误生命周期追踪。诊断驱动改进使成功率提升10.80%。"
 ---
 
 清华大学和腾讯混元合作的一篇论文[《TRAJDEBUG: Tracing Error Lifecycle to Identify Critical Failures in Long-Horizon Agent Trajectories》][paper1-url]，提出了一种从被动调试到主动错误生命周期追踪的范式转移方法。该方法将关键错误检测分解为多粒度历史压缩、错误触发检测和因果归因三阶段流程，在诊断驱动的Agent改进中实现成功率提升10.80%，失败记忆迁移提升5.70%：

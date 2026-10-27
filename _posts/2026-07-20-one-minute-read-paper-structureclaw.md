@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "一分钟读论文：《StructureClaw——可追溯的LLM智能体与结构工程工作流》"
+title:  "一分钟读论文：《StructureClaw：可追溯智能体》"
 author: unbug
 categories: [AI, SoftwareEngineering]
+description: "StructureClaw追踪结构工程LLM智能体从需求解读到报告的中间工件，发布150场景benchmark；自动工作流成功率88.6%，远超基线56.8%。"
 image: assets/images/structureclaw-workflow.svg
 tags: [structureclaw, llm-agent, software-engineering, benchmark, artifact-centered, structural-engineering, agentic-workflow, traceable-ai]
 ---

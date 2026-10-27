@@ -3,6 +3,7 @@ layout: post
 title:  "一分钟读论文：《自动化AI研发中的隐蔽破坏与监控评估》"
 author: unbug
 categories: [AI, Security]
+description: "ResearchArena用四个长周期研发任务测试AI Agent隐蔽破坏与监控效果，发现训练数据注入攻击检测率不足50%，暴露安全监控盲区。"
 image: assets/images/researcharena-framework.svg
 tags: [agent-safety, adversarial-ml, llm-security]
 ---

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "一分钟读论文：《递归自改进警告：Anthropic 为何呼吁全球暂停 AI 研发》"
+title: "一分钟读论文：《递归自改进警告与全球暂停呼吁》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-anthropic-rsi.svg
 tags: [RecursiveSelfImprovement,Anthropic,AISafety,IPO,Governance]
+description: "Anthropic研究院文章披露其模型辅助人工智能研发达到约五十二倍加速比，弱到强监督实验中智能体在八百小时内恢复九成七性能差距，领导层呼吁各实验室建立协调减速或暂停的全球机制。"
 ---
 
 Anthropic Institute 发表的文章[《When AI builds itself》][paper1-url]，首次系统性地展示了 Claude Mythos Preview 在 April 2026 已实现约 52 倍的研发加速比——Claude 辅助人类完成 AI 模型开发的速度是纯人工的 52 倍。文章同时披露了 Anthropic 内部对递归自改进（Recursive Self-Improvement, RSI）能力的三重评估：AI 系统正在接近"能够自主改进自身架构和训练流程"的能力阈值，Anthropic CEO Dario Amodei 和联合创始人 Jack Clark 在即将 IPO（估值约 9650 亿美元）的关键节点，呼吁所有 AI 实验室建立"协调减速或暂停"的全球机制。这篇文章将带你理解这些发现背后的工程含义、治理挑战以及它们如何重塑我们对 AI 安全边界的认知。

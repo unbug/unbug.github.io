@@ -5,6 +5,7 @@ author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-pi-agent-practice.svg
 tags: [agent, pi-architecture, plan-execute, orchestration, llm]
+description: "PI架构实战：用Plan-Execute分离替代ReAct循环，减少无效循环与上下文爆炸，配合执行器到规划器的错误反馈实现动态重规划与更好的任务分解。"
 ---
 
 上周行业内部基准测试显示：在复杂多步 Agent 任务中，基于 PI（Plan-Execute）架构的智能体比传统 ReAct 方案成功率提升了 40%-60%，同时显著减少了无效循环和上下文爆炸。如果你正在构建 AI 智能体，面对多工具调用、长链条任务时感到上下文管理和错误控制的痛点，那么 PI 架构正是为你准备的解决方案。本文将带你从零理解 PI 核心原理，到动手实现一个具备自适应编排能力的智能体。
@@ -26,8 +27,7 @@ PI（Plan-Execute）架构正是为解决这些问题而生的范式转移。它
 
 PI 架构代表了 Agent 编排从"手动编排"到"自适应编排"的范式转移。其核心思想是将任务生命周期划分为两个明确阶段：Plan 阶段生成全局计划或子任务列表，Execute 阶段专注于执行具体子任务并反馈结果。
 
-### 架构组件拆解
-
+**架构组件拆解**
 PI 架构通常包含三个核心组件：
 
 1. 规划器（Planner）：负责接收初始任务，进行任务分解，生成结构化的执行计划或子任务列表。规划器需要理解任务依赖关系、资源约束和预期输出格式。在实现上，Planner 通常会使用特定的 prompt template 来引导 LLM 输出 JSON 格式的 plans 数组。
@@ -38,23 +38,20 @@ PI 架构通常包含三个核心组件：
 
 [配图建议 2：PI 架构组件关系图 - paradigm-radar-pi-agent-practice-architecture.svg]
 
-### 与 ReAct/LATS 的对比
-
+**与 ReAct/LATS 的对比**
 传统 ReAct 模式采用"推理-行动-观察"的紧密循环，每个步骤都需要 LLM 同时处理推理、工具调用和结果解析。而 PI 架构采用"规划-执行-反馈"的阶段式工作流，将复杂的多步推理压缩到 Plan 阶段，Execute 阶段则专注于确定性的工具执行。
 
 相比 LATS（Language Agent Tree Search）等复杂搜索算法，PI 架构在工程实现上更轻量，不需要维护复杂的搜索树和评分函数，同时保持了良好的可扩展性。PI 的 Plan 阶段可以看作是一次"全局推理"，而 Execute 阶段则是"局部执行"。
 
 ## 5 分钟搭建你的第一个 PI Agent
 
-### 环境准备
-
+**环境准备**
 要搭建一个基础的 PI Agent，你需要：
 - 一个支持工具调用的 LLM API（如 OpenAI GPT-4o, Claude 3.5/4）
 - 基础的工具函数库（如网页搜索、数据库查询、代码执行）
 - 工作流引擎或简单的 Python 脚本控制循环
 
-### 核心代码片段：Planner 实现
-
+**核心代码片段：Planner 实现**
 以下是 Planner 的核心逻辑，使用 JSON 格式输出计划列表：
 
 ```python
@@ -83,8 +80,7 @@ Do not include any other text.
 
 [配图建议 3：Planner 输出 JSON 结构图 - paradigm-radar-pi-agent-practice-planner-output.svg]
 
-### 核心代码片段：Executor 实现
-
+**核心代码片段：Executor 实现**
 Executor 负责按计划执行子任务，并收集结果：
 
 ```python
@@ -114,22 +110,19 @@ def execute_plan(plan, tools_registry):
 
 在实际项目中应用 PI 架构时，开发者需要注意以下几个关键优化点：
 
-### 动态计划调整
-
+**动态计划调整**
 优秀的 PI 实现允许在执行过程中根据反馈动态调整 Plan。当某个子任务失败或遇到意外情况时，Executor 可以将错误信息返回给 Planner，Planner 重新生成修正后的计划，而不是直接终止整个流程。
 
 实现动态调整的关键是在 State Manager 中维护"已执行计划"和"待执行计划"的区分，并在发生错误时触发 Plan-Refine 循环。
 
 [配图建议 5：PI 架构动态调整流程图 - paradigm-radar-pi-agent-practice-dynamic-flow.svg]
 
-### 工具调用上下文隔离
-
+**工具调用上下文隔离**
 每个 Execute 子任务应该拥有独立的上下文窗口，避免不同子任务之间的状态污染。这要求在执行引擎中实现清晰的上下文边界管理。具体来说，Executor 在调用每个工具时，只传递该子任务相关的描述和必要的历史结果，而不是整个对话历史。
 
 ## 实际案例与效果验证
 
-### Before vs After 对比
-
+**Before vs After 对比**
 在一个典型的多工具编排场景中（如同时调用数据库查询、网页搜索和代码执行，最终生成综合报告），传统 ReAct 方案通常需要 8-12 个循环步骤，平均 Token 消耗在 3000-5000 之间，且失败率约 35%。失败的主要原因包括工具调用顺序错误、上下文过载导致 LLM 忽略关键指令等。
 
 引入 PI 架构后：
@@ -139,8 +132,7 @@ def execute_plan(plan, tools_registry):
 
 [配图建议 6：性能对比数据图（柱状图） - paradigm-radar-pi-agent-practice-performance.svg]
 
-### 真实场景应用验证
-
+**真实场景应用验证**
 在某电商客服智能体项目中，将原有的 ReAct 架构迁移到 PI 架构后，处理"查询订单-检查物流-处理退款"这类多步骤任务的平均完成时间从 45 秒缩短至 28 秒，用户满意度提升了 22%。这是因为 Plan 阶段提前明确了各步骤的依赖关系，Executor 可以按照最优顺序执行，避免了 ReAct 模式中的反复试探。
 
 ## 反方观点与边界条件

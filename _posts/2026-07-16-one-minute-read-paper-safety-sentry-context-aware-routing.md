@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "一分钟读论文：《Safety Sentry：上下文感知的三向路由Agent安全审查》"
+title:  "一分钟读论文：《三向路由的智能体安全审查》"
 author: unbug
 categories: [AI, Security]
 image: assets/images/safety-sentry.svg
 tags: [llm, agent-safety, tool-governance, guard-model]
+description: "上海科技大学把智能体工具调用安全审查从二元分类重构为执行、询问、拒绝三向路由，轻量守护模型单次解码输出决策，单一阈值即可切换场景安全策略无需重训。"
 ---
 
 上海科技大学的论文[《Safety Sentry: Context-Aware Human Intervention via EXECUTE-ASK-REFUSE Routing》][paper1-url]提出将Agent安全审查从二元safe/unsafe分类重构为三向路由决策{Execute, Ask, Refuse}，通过轻量级guard model的单次解码调用实现上下文感知的细粒度安全审查。
@@ -22,6 +23,8 @@ Safety Sentry的核心创新在于将安全审查从二元分类扩展为三向�
 实现这一三向路由的关键是一个轻量级的guard model架构。该模型接收工具调用及其上下文信息作为输入，通过单次解码调用输出路由决策，同时评估调用的语义内容、执行环境以及历史行为模式。
 
 单一阈值机制是Safety Sentry的另一项重要设计。系统使用一个连续的风险评分来衡量每个调用的危险程度，通过调整阈值即可在不同部署场景之间切换安全策略：阈值设低时更多调用被路由到Ask或Refuse，适合高安全要求场景；阈值设高时则允许更多操作直接执行，适合效率优先场景。同一模型无需重新训练即可适应不同风险容忍度需求。
+
+![Safety Sentry：放行之前三选一]({{ site.baseurl }}/assets/images/safety-sentry.svg)
 
 ## 实验结果与优势
 

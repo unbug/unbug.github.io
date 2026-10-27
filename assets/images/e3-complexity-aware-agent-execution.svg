@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 13px; letter-spacing: 3px; fill: #9A937F; }
+      .rl { font-size: 15px; fill: #474C54; }
+      .b { font-size: 12.5px; fill: #A29C88; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F5F1E7"/>
+    </linearGradient>
+    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F6DA8"/><stop offset="1" stop-color="#7FA8D4"/>
+    </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#177E7A"/><stop offset="1" stop-color="#63B0AC"/>
+    </linearGradient>
+    <linearGradient id="gViolet" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6A4C93"/><stop offset="1" stop-color="#A48BC4"/>
+    </linearGradient>
+    <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4E7A3A"/><stop offset="1" stop-color="#8FB46F"/>
+    </linearGradient>
+    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B9892F"/><stop offset="1" stop-color="#DCB65F"/>
+    </linearGradient>
+    <linearGradient id="gRed" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#B5442E"/><stop offset="1" stop-color="#E0785A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1116" cy="96" r="132" fill="#177E7A" opacity="0.05"/>
+  <circle cx="70" cy="602" r="110" fill="#B5442E" opacity="0.04"/>
+  <rect x="64" y="44" width="44" height="5" fill="#B5442E"/>
+
+  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2607.13034 · 佐治亚理工 / MIT</text>
+  <text class="serif" x="64" y="130" font-size="37" font-weight="700" fill="#1A1B1E">修一行，别翻遍整个库</text>
+  <text x="64" y="160" font-size="15.5" fill="#6E6A5C">E3：先估复杂度、验证失败才扩展，MSE-Bench 成功率持平，开销大降</text>
+
+  <!-- signal-box motif: default route vs expand detour -->
+  <g>
+    <rect x="898" y="84" width="66" height="26" rx="4" fill="url(#gBlue)"/>
+    <text x="931" y="102" text-anchor="middle" font-size="13" fill="#FFFFFF" font-weight="700">估计</text>
+    <path d="M 964 97 h 26" stroke="#A29C88" stroke-width="2"/>
+    <rect x="990" y="84" width="66" height="26" rx="4" fill="url(#gTeal)"/>
+    <text x="1023" y="102" text-anchor="middle" font-size="13" fill="#FFFFFF" font-weight="700">执行</text>
+    <path d="M 1023 110 v 20 l 58 0 v 26" fill="none" stroke="url(#gGold)" stroke-width="3.5" stroke-dasharray="7 5"/>
+    <circle cx="1081" cy="130" r="7" fill="#FFFFFF" stroke="#B9892F" stroke-width="3"/>
+    <path d="M 1081 156 v 22" stroke="#A29C88" stroke-width="2"/>
+    <rect x="1048" y="178" width="66" height="26" rx="4" fill="url(#gGreen)"/>
+    <text x="1081" y="196" text-anchor="middle" font-size="13" fill="#FFFFFF" font-weight="700">扩展</text>
+    <path d="M 1048 191 q -84 6 -84 -65" fill="none" stroke="url(#gViolet)" stroke-width="2.5" stroke-dasharray="4 4"/>
+    <text class="b" x="931" y="236" text-anchor="middle">默认走最小路径</text>
+    <text class="b" x="1081" y="236" text-anchor="middle">验证失败才绕行</text>
+  </g>
+
+  <!-- slope chart: baseline 100 -> E3 -->
+  <g>
+    <text class="rl" x="64" y="214" font-weight="700" fill="#1A1B1E">MSE-Bench 效率降幅（左=最强基线记 100，右=E3 相对量，成功率同为 100%）</text>
+    <line x1="160" y1="246" x2="160" y2="474" stroke="#E5E1D4"/>
+    <line x1="620" y1="246" x2="620" y2="474" stroke="#E5E1D4"/>
+
+    <path d="M 160 272 L 620 314" stroke="url(#gTeal)" stroke-width="4"/>
+    <circle cx="160" cy="272" r="8" fill="#FFFFFF" stroke="#3D5A73" stroke-width="2.5"/>
+    <text class="serif" x="640" y="306" font-size="29" font-weight="700" fill="#177E7A">检查文件 -92%</text>
+    <text class="b" x="640" y="326">Token 与检查文件同比例大降</text>
+
+    <path d="M 160 272 L 620 368" stroke="url(#gGold)" stroke-width="4"/>
+    <circle cx="160" cy="272" r="0"/>
+    <text class="serif" x="640" y="368" font-size="29" font-weight="700" fill="#8A6612">Token -91%</text>
+    <text class="b" x="640" y="388">措辞变化、成本权重下均稳定</text>
+
+    <path d="M 160 272 L 620 424" stroke="url(#gRed)" stroke-width="4"/>
+    <text class="serif" x="640" y="426" font-size="29" font-weight="700" fill="#B5442E">成本 -85%</text>
+    <text class="b" x="640" y="446">成功率同为 100%</text>
+
+    <circle cx="620" cy="314" r="8" fill="url(#gTeal)"/>
+    <circle cx="620" cy="368" r="8" fill="url(#gGold)"/>
+    <circle cx="620" cy="424" r="8" fill="url(#gRed)"/>
+    <text class="b" x="160" y="500" text-anchor="middle">最强基线（121 个确定性编辑任务）</text>
+    <text class="b" x="620" y="500" text-anchor="middle">E3</text>
+  </g>
+
+  <!-- right: problem definition -->
+  <g>
+    <rect x="836" y="292" width="300" height="118" fill="#B5442E" opacity="0.07"/>
+    <text class="rl" x="852" y="322" font-weight="700" fill="#1A1B1E">问题：执行冗余（execution redundancy）</text>
+    <text x="852" y="350" font-size="13.5" fill="#474C54">Agent 认知冗余比 ACRR =</text>
+    <text class="serif" x="852" y="380" font-size="24" font-weight="700" fill="#B5442E">实际执行范围 / 最小信息集</text>
+    <text class="b" x="852" y="402">ACRR 远大于 1：读了大量无关文件</text>
+
+    <rect x="836" y="426" width="300" height="64" fill="#177E7A" opacity="0.07"/>
+    <text class="rl" x="852" y="452" font-weight="700" fill="#1A1B1E">真实环境 LLM-Case</text>
+    <text class="b" x="852" y="476">gpt-4o 编辑真实开源库，跑实际 pytest 套件验证</text>
+  </g>
+
+  <line x1="64" y1="540" x2="1136" y2="540" stroke="#E5E1D4"/>
+  <text class="serif" x="64" y="576" font-size="19" fill="#1A1B1E">把 Agent 的努力程度，锚定在任务的工程现实上。</text>
+  <text class="b" x="64" y="606">MSE-Bench 成功率 100% 与最强基线持平 · 增益在措辞变化与成本权重设置下稳定 · 自测口径 · Micropaper</text>
+</svg>

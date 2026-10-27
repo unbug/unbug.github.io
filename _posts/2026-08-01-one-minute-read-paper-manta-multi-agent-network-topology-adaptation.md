@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "一分钟读论文：《MANTA：面向自演化多智能体系统的网络拓扑自适应》"
+title:  "一分钟读论文：《MANTA：多智能体拓扑自适应》"
 author: unbug
 categories: [AI, ML]
 image: assets/images/manta-framework.svg
 tags: [llm, multi-agent, topology-adaptation, self-evolving-systems]
+description: "提出推理时拓扑自适应框架，让多Agent通信结构在执行中动态演化，摆脱固定拓扑限制。五个基准平均74.0分，比最强基线高5.8个百分点。"
 ---
 
 哥伦比亚大学和中央研究院联合团队发表的论文[《MANTA: Multi-Agent Network Topology Adaptation for Self-Evolving Multi-Agent Systems》][paper1-url]提出了一种推理时拓扑自适应框架，使多Agent系统的通信结构能够在执行过程中动态演化。该框架在五个基准测试上平均得分74.0，比最强基线高出5.8个百分点，其中PlanCraft任务取得最佳结果。

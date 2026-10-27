@@ -5,6 +5,7 @@ author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-generation-verification-gap.svg
 tags: [generation-verification-gap, self-correction, inference-time-feedback-loops, misevolve, weak-verifiers]
+description: "生成-验证差距研究表明模型难以靠内部自我修正发现错误，甚至出现越修正越自信的错误Misevolve，引入外部验证器与交叉校验成为自我修正落地前提。"
 ---
 
 如果你的团队正在构建具有自我修正或自进化能力的 AI 智能体，你可能已经发现一个令人担忧的趋势：模型的生成能力正在迅速超越其验证或判断能力。2025年至2026年的多项研究（如《Shrinking the Generation-Verification Gap with Weak Verifiers》和《Weaver: Shrinking the Generation-Verification Gap by Scaling Compute for Verification》）深刻揭示了这一现象导致的自我修正机制失效问题。模型可以生成看似合理但实质错误的输出，并在自我验证时无法检测到自己生成的错误内容。本文将带你理解"生成-验证差距"（Generation-Verification Gap）与"Misevolve"风险如何成为现代自进化代理失败的核心根源。
@@ -19,12 +20,10 @@ tags: [generation-verification-gap, self-correction, inference-time-feedback-loo
 
 大语言模型的生成能力正在迅速发展，但其验证或判断能力的提升并未跟上相同的步伐。这种生成-验证差距（Generation-Verification Gap）导致模型在复杂推理任务中，可以生成看似合理但实质错误的输出。在自我验证过程中，模型缺乏足够的能力来检测到自己生成的错误内容。
 
-### 推理时反馈循环失效
-
+**推理时反馈循环失效**
 在推理阶段，模型的内部反馈循环会出现系统性失效现象。这是因为模型使用相同的认知能力进行生成和验证任务。自我生成的验证数据包含与生成输出相同的偏差和错误模式。当模型尝试纠正自己的输出时，它实际上是在基于有缺陷的认知框架进行评估，因此无法识别出潜在的错误或偏见。推理时的反馈循环不仅未能提供有效的纠错机制，反而可能放大原有的错误信念。
 
-### 自我修正降低输出质量
-
+**自我修正降低输出质量**
 实证研究表明，自我修正往往会降低而非提升输出质量。模型会做出不正确的"修正"，这些修正看起来更加详细和自信，但同样或更加错误。当模型尝试通过内部验证来改进其初始输出时，它可能会引入新的错误或者放大已有的偏差。这种自我修正的退化现象在复杂推理任务和代码生成任务中尤为明显，直接导致了代理系统在实际应用中的可靠性下降。
 
 ## Misevolve新兴风险：从自我修正到错误进化
@@ -33,16 +32,14 @@ tags: [generation-verification-gap, self-correction, inference-time-feedback-loo
 
 ## 进阶技巧与应对策略
 
-### 弱校验器（Weak Verifiers）的挑战
-
+**弱校验器（Weak Verifiers）的挑战**
 根据相关研究，使用"弱校验器"（Weak Verifiers）——即与生成模型能力相近或更弱的模型来进行验证——无法有效缩小生成-验证差距。因为弱校验器同样缺乏检测复杂错误的能力。
 
 **应对建议**：
 - 引入外部验证机制：将验证任务交由专门的验证模型或外部工具（如代码执行环境、形式化验证工具）处理，而非依赖模型自身的内部验证。
 - 放大验证计算资源：如《Weaver》研究所示，通过扩展验证阶段的计算资源（Scaling Compute for Verification），可以提升验证器的判断能力，从而部分弥合生成与验证的差距。
 
-### 自我修正流程的重构风险
-
+**自我修正流程的重构风险**
 在真实场景中，如果一个 AI 代理尝试通过多轮自我修正来解决复杂问题，可能会陷入"自信的错误"循环。
 
 **解决方案**：

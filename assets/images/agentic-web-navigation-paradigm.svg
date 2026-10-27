@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 13px; letter-spacing: 3px; fill: #9A937F; }
+      .rl { font-size: 15px; fill: #474C54; }
+      .val { font-size: 19px; font-weight: 700; }
+      .b { font-size: 12.5px; fill: #A29C88; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F5F1E7"/>
+    </linearGradient>
+    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F6DA8"/><stop offset="1" stop-color="#7FA8D4"/>
+    </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#177E7A"/><stop offset="1" stop-color="#63B0AC"/>
+    </linearGradient>
+    <linearGradient id="gViolet" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6A4C93"/><stop offset="1" stop-color="#A48BC4"/>
+    </linearGradient>
+    <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4E7A3A"/><stop offset="1" stop-color="#8FB46F"/>
+    </linearGradient>
+    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B9892F"/><stop offset="1" stop-color="#DCB65F"/>
+    </linearGradient>
+    <linearGradient id="gRed" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#B5442E"/><stop offset="1" stop-color="#E0785A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1120" cy="592" r="140" fill="#177E7A" opacity="0.05"/>
+  <circle cx="62" cy="118" r="108" fill="#B5442E" opacity="0.04"/>
+  <rect x="64" y="44" width="44" height="5" fill="#B5442E"/>
+
+  <text class="k" x="64" y="84">一分钟读论文 · WEBARENA / MIND2WEB / OSWORLD 基准群像</text>
+  <text class="serif" x="64" y="130" font-size="37" font-weight="700" fill="#1A1B1E">会点网页，还不及格</text>
+  <text x="64" y="160" font-size="15.5" fill="#6E6A5C">智能体网页导航：从被动检索转向主动操作，成功率仍远低于人类</text>
+
+  <!-- traffic interlocking motif: task light -> agent loop -> goal sign -->
+  <g>
+    <circle cx="1000" cy="104" r="19" fill="none" stroke="#474C54" stroke-width="3"/>
+    <circle cx="1000" cy="92" r="5.5" fill="#B5442E"/>
+    <circle cx="1000" cy="104" r="5.5" fill="#B9892F"/>
+    <circle cx="1000" cy="116" r="5.5" fill="#177E7A"/>
+    <path d="M 1019 104 h 22" stroke="#A29C88" stroke-width="2"/>
+    <rect x="1041" y="92" width="30" height="24" rx="12" fill="url(#gGold)"/>
+    <path d="M 1071 104 h 14" stroke="url(#gTeal)" stroke-width="3"/>
+    <rect x="1085" y="88" width="56" height="32" rx="4" fill="url(#gTeal)"/>
+    <text x="1113" y="109" text-anchor="middle" font-size="14" fill="#FFFFFF" font-weight="700">完成</text>
+    <path d="M 1056 116 v 16 h 45" fill="none" stroke="url(#gRed)" stroke-width="2.5" stroke-dasharray="5 4"/>
+    <text class="b" x="1113" y="150" text-anchor="middle">循环：推理 · 行动 · 观察 · 反思</text>
+  </g>
+
+  <!-- dumbbell chart -->
+  <g>
+    <text class="rl" x="64" y="214" font-weight="700" fill="#1A1B1E">各基准任务成功率（空心=基线，实心=模型成绩）</text>
+    <line x1="120" y1="238" x2="120" y2="466" stroke="#EAE6DA"/>
+    <g font-size="12.5" fill="#8A8069">
+      <text x="112" y="457" text-anchor="end">0%</text>
+      <text x="112" y="381" text-anchor="end">20%</text>
+      <text x="112" y="305" text-anchor="end">40%</text>
+      <text x="112" y="229" text-anchor="end">60%</text>
+    </g>
+    <g stroke="#EAE6DA"><line x1="252" y1="240" x2="252" y2="466"/><line x1="384" y1="240" x2="384" y2="466"/><line x1="516" y1="240" x2="516" y2="466"/><line x1="648" y1="240" x2="648" y2="466"/></g>
+
+    <text class="rl" x="64" y="258" font-weight="700">OSWorld 操作系统</text>
+    <text class="b" x="64" y="276">完整系统任务，无人类基线</text>
+    <line x1="120" y1="267" x2="219.0" y2="267" stroke="#B9892F" stroke-width="2.5"/>
+    <circle cx="219.0" cy="267" r="8" fill="url(#gRed)"/>
+    <text class="val" x="235.0" y="273" fill="#B5442E">约 15%</text>
+
+    <text class="rl" x="64" y="302" font-weight="700">WebArena · GPT-4</text>
+    <text class="b" x="64" y="320">812 个真实任务</text>
+    <line x1="225.6" y1="311" x2="612.0" y2="311" stroke="#B9892F" stroke-width="2.5"/>
+    <circle cx="612.0" cy="311" r="6.5" fill="#FFFFFF" stroke="#3D5A73" stroke-width="2.5"/>
+    <circle cx="225.6" cy="311" r="8" fill="url(#gRed)"/>
+    <text class="val" x="604" y="300" fill="#3D5A73" text-anchor="end">人类 80%+</text>
+    <text class="val" x="241.6" y="317" fill="#B5442E">约 16%</text>
+
+    <text class="rl" x="64" y="346" font-weight="700">WebVoyager 真实网站</text>
+    <text class="b" x="64" y="364">15 个网站 643 任务，自探索机制</text>
+    <line x1="258.6" y1="355" x2="285.0" y2="355" stroke="url(#gViolet)" stroke-width="2.5"/>
+    <circle cx="285.0" cy="355" r="7" fill="url(#gViolet)"/><circle cx="258.6" cy="355" r="6" fill="#FFFFFF" stroke="#B9892F" stroke-width="2.5"/>
+    <text class="val" x="299.0" y="361" fill="#6A4C93">约 25%</text>
+
+    <text class="rl" x="64" y="390" font-weight="700">Mind2Web 跨网站</text>
+    <text class="b" x="64" y="408">500+ 网站 2000+ 任务，GPT-4</text>
+    <line x1="252.0" y1="399" x2="318.0" y2="399" stroke="url(#gBlue)" stroke-width="2.5"/>
+    <circle cx="318.0" cy="399" r="7" fill="url(#gBlue)"/><circle cx="252.0" cy="399" r="6" fill="#FFFFFF" stroke="#B9892F" stroke-width="2.5"/>
+    <text class="val" x="332.0" y="405" fill="#2F6DA8">约 30%</text>
+
+    <text class="rl" x="64" y="434" font-weight="700">MiniWoB++ 微任务</text>
+    <text class="b" x="64" y="452">125 个基础操作任务</text>
+    <line x1="516.0" y1="443" x2="582.0" y2="443" stroke="url(#gGreen)" stroke-width="2.5"/>
+    <circle cx="582.0" cy="443" r="7" fill="url(#gGreen)"/><circle cx="516.0" cy="443" r="6" fill="#FFFFFF" stroke="#B9892F" stroke-width="2.5"/>
+    <text class="val" x="596.0" y="449" fill="#4E7A3A">60-70%</text>
+  </g>
+
+  <!-- right column -->
+  <g>
+    <text class="rl" x="836" y="258" font-weight="700" fill="#1A1B1E">成本与延迟（多步任务累计）</text>
+    <rect x="836" y="272" width="300" height="52" fill="#B5442E" opacity="0.07"/>
+    <text class="serif" x="852" y="310" font-size="27" font-weight="700" fill="#B5442E">50000-200000 Token</text>
+    <text class="b" x="1120" y="306" text-anchor="end">10+ 步任务</text>
+    <rect x="836" y="334" width="300" height="52" fill="#B9892F" opacity="0.09"/>
+    <text class="serif" x="852" y="372" font-size="27" font-weight="700" fill="#8A6612">每步 1-5 秒</text>
+    <text class="b" x="1120" y="368" text-anchor="end">推理 + 加载</text>
+
+    <text class="rl" x="836" y="428" font-weight="700" fill="#1A1B1E">产品化：Computer Use 接口</text>
+    <circle cx="846" cy="452" r="5" fill="#2F6DA8"/>
+    <text x="862" y="457" font-size="13.5" fill="#474C54">OpenAI GPT-4o：截图进、坐标出</text>
+    <circle cx="846" cy="480" r="5" fill="#177E7A"/>
+    <text x="862" y="485" font-size="13.5" fill="#474C54">谷歌 Gemini：Web / Android / 桌面</text>
+  </g>
+
+  <line x1="64" y1="540" x2="1136" y2="540" stroke="#E5E1D4"/>
+  <text class="serif" x="64" y="576" font-size="19" fill="#1A1B1E">能不能操作网页已是过去式，规模化可靠性与成本才是现在的题。</text>
+  <text class="b" x="64" y="606">WebArena 人类基线 80%+ 为论文口径 · MiniWoB++ 为区间口径 · 模型数字随版本更新波动 · Micropaper</text>
+</svg>

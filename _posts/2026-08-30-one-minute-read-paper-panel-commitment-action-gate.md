@@ -1,6 +1,6 @@
 ---
-title: "一分钟读论文：《一张伪造的行情面板，让 AI 敢对不可知的事下注》"
-description: "十二个前沿模型面对专业行情面板时，对可证不可预测的问题照样给出方向判断。解锁行动的包装权威而非信息，行动门失效可用 540 个样本修好。"
+title: "一分钟读论文：《伪造行情面板让AI敢对不可知的事下注》"
+description: "十二个前沿模型面对专业排版的伪造行情面板时，对可证不可预测的问题照样给出方向判断：解锁行动的是包装权威而非信息；行动门失效可用540个合成样本微调修好。"
 tags: [llm, agent, calibration, safety]
 image: assets/images/panel-commitment-action-gate.svg
 ---

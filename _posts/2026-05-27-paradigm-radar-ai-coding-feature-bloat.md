@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "一分钟读论文：《AI Coding 时代，功能膨胀如何杀死好产品》"
+title: "一分钟读论文：《AI时代功能膨胀如何杀死好产品》"
 author: unbug
 categories: [AI, ParadigmRadar]
-image: assets/images/paradigm-radar-ai-coding-feature-bloat.jpg
+image: assets/images/paradigm-radar-ai-coding-feature-bloat.svg
 tags: [AICoding, FeatureCreep, ProductManagement, VibeCoding, UserCentric, Slop, ClaudeCode, Codex]
+description: "AI编码工具移除了开发容量约束却没提升判断力，让无人使用的功能以十倍速度堆积成Slop产品，文中用Slack等案例剖析代价，给出FVS评分、功能下线决策与克制型开发流程。"
 ---
 
 根据 Faros AI 2026 年的遥测数据，企业团队引入 AI 编码工具后，PR 数量平均增加了 **51%**，代码变更速率（churn）达到人工编码时代的 **10 倍**。听起来是生产力大爆炸？但 Pendo 2019 年对数百款产品的调研告诉你另一面：典型软件产品中，**80% 的功能几乎从未被用户触碰**。
@@ -37,7 +38,7 @@ tags: [AICoding, FeatureCreep, ProductManagement, VibeCoding, UserCentric, Slop,
 
 AI Coding 工具拿走了这个制动器。
 
-![AI Coding 前后功能增长与用户增长的背离]({{ site.baseurl }}/assets/images/paradigm-radar-ai-coding-feature-bloat.jpg)
+![AI Coding 前后功能增长与用户增长的背离]({{ site.baseurl }}/assets/images/paradigm-radar-ai-coding-feature-bloat.svg)
 
 今天，GitHub Copilot、Cursor、Windsurf，以及 2025 年相继发布的 **OpenAI Codex**（自主编码 Agent CLI）和 **Anthropic Claude Code**（终端驱动的 Agentic 编码工具）等工具，已让 84% 的开发者的生产力提升了 25%–46%（Faros AI, 2026）。更重要的是，**"能不能做"这个问题的答案几乎永远是"能"**。开发速度不再是约束，思考速度成了新的瓶颈——而大多数团队的产品决策流程，并没有为这种速度升级做好准备。
 
@@ -55,7 +56,7 @@ Standish Group 的研究在 2002 年就已证明：企业软件中 **64% 的功�
 
 > 💡 **根本问题**：AI Coding 移除的是"能否构建"的约束，但没有强化"是否应该构建"的判断力。这两者之间的鸿沟，就是功能臃肿的温床。
 
-![产品功能 · 用户增长 · 用户反馈 互动系统模型]({{ site.baseurl }}/assets/images/paradigm-radar-ai-coding-feature-bloat-interaction.jpg)
+![产品功能 · 用户增长 · 用户反馈 互动系统模型]({{ site.baseurl }}/assets/images/paradigm-radar-ai-coding-feature-bloat-interaction.svg)
 
 上图描述了三者的互动系统：在健康循环中，**精准的产品功能**提升用户留存，留存驱动**用户增长**，活跃用户产生**真实反馈信号**，反馈再反哺功能决策——形成正向飞轮。而 AI Coding 打破了这一平衡：功能速度远超反馈速度，信号被噪声淹没，决策失去依据，产品臃肿螺旋随之形成。
 
@@ -63,8 +64,7 @@ Standish Group 的研究在 2002 年就已证明：企业软件中 **64% 的功�
 
 ## 三大真实案例：功能膨胀的代价
 
-### 案例 1：Slack — 从即时通讯到功能大杂烩
-
+**案例 1：Slack — 从即时通讯到功能大杂烩**
 Slack 的产品进化路径是功能膨胀最典型的教科书案例。2013 年，它以极简的团队聊天体验颠覆了企业通讯市场，核心价值命题是：**"比邮件快，比电话有记录"**。
 
 到 2025 年，Slack 的功能清单已延伸到：工作流自动化、AI Huddle 摘要、Slack Lists（任务管理）、Canvas（协作文档）、Connect（跨组织通讯）、自定义 App 市场……
@@ -75,16 +75,14 @@ Slack 的产品进化路径是功能膨胀最典型的教科书案例。2013 年
 
 **关键数字**：企业用户的 Slack 功能探索率（Discovery Rate）最高的仍是消息发送、频道浏览、文件分享这三个 2013 年就有的核心功能，占所有功能交互的 **76%**（Appcues 行业分析, 2024）。
 
-### 案例 2：Notion — 灵活性悖论与 AI 功能竞赛
-
+**案例 2：Notion — 灵活性悖论与 AI 功能竞赛**
 Notion 的故事更具讽刺性。它最初以"极简的灵活 block 编辑器"起家，主张"去掉所有你用不上的功能"。但当 AI 功能爆发，它几乎在 12 个月内把 Notion AI、AI 数据库自动填充、AI 会议记录、AI 项目管理助手、AI 搜索…全部塞进了产品。
 
 用户的分裂也随之出现：老用户觉得"Notion 已经不是我当初喜欢的那个 Notion 了"；新用户在面对"应该用哪种视图、哪种 AI 功能、哪种数据库结构"时感到无从下手，新手留存率明显下滑（来自 2025 年多位独立产品分析师的观察）。
 
 Notion 的竞争对手 Obsidian 和 Logseq 反而因此获益，它们的核心用户群在 2025 年显著增长，原因之一就是"只做笔记，做好笔记"的克制定位。
 
-### 案例 3：AI Coding 工具本身的讽刺
-
+**案例 3：AI Coding 工具本身的讽刺**
 最具讽刺意味的案例，是 AI Coding 工具本身。
 
 2025-2026 年，Cursor、Windsurf、GitHub Copilot 展开了一场功能军备竞赛：谁先支持多 Agent 协作、谁先支持全仓库索引、谁先支持自动测试生成……每隔几周就有一次"重大发布"。而 2025 年下半年，战场升级到了新的维度——**Agentic Coding 工具**全面崛起：
@@ -125,8 +123,7 @@ Hacker News、Reddit 和 X（原 Twitter）社区对 Slop 产品的讨论在 202
 
 这种社区批评直指一个深层矛盾：**AI Coding 提升了功能生产的效率，却降低了功能决策的摩擦力**。在过去，一个"没想清楚"的功能需求至少要通过开发排期的自然过滤；现在，它可以当天进入代码库。
 
-### Slop 功能的产品信号
-
+**Slop 功能的产品信号**
 如何判断你的产品正在滑向 Slop？社区总结出几个早期信号：
 
 | 信号 | 描述 | 健康阈值 |
@@ -175,9 +172,6 @@ Hacker News、Reddit 和 X（原 Twitter）社区对 Slop 产品的讨论在 202
 光凭直觉说"某功能没人用"不够有力，你需要数据说话。这里提供一个可直接落地的 **功能价值评分（Feature Value Score, FVS）** 框架：
 
 ```python
-# feature_value_score.py
-# 计算功能价值分数（FVS），帮助判断功能是否值得保留
-
 from dataclasses import dataclass, field
 from typing import List
 
@@ -264,7 +258,7 @@ AI 写作助手             0.489  ⚠️  观察期功能      设置 90 天复
 导出为 PDF              0.089  🗑️  僵尸功能候选    启动下线流程，或彻底重设计
 ```
 
-![FVS 功能价值评分框架架构图]({{ site.baseurl }}/assets/images/paradigm-radar-ai-coding-feature-bloat-fvs-framework.jpg)
+![FVS 功能价值评分框架架构图]({{ site.baseurl }}/assets/images/paradigm-radar-ai-coding-feature-bloat-fvs-framework.svg)
 
 > 💡 **数据采集提示**：`adoption_rate` 和 `daily_active_usage` 可从 PostHog、Mixpanel 或 Amplitude 的事件追踪导出；`retention_correlation` 可用 Spearman 相关系数，对比"使用功能 X 的用户群"与"未使用功能 X 的用户群"的 30 日留存率；`maintenance_cost` 建议用"过去 3 个月该功能相关 PR 数 / 总 PR 数"归一化估算。
 
@@ -275,9 +269,6 @@ AI 写作助手             0.489  ⚠️  观察期功能      设置 90 天复
 引入 AI Coding 工具后，你的团队是在构建更有价值的东西，还是只是更快地堆砌功能？下面这个脚本用 GitHub API 量化这个问题：
 
 ```python
-# pr_velocity_analyzer.py
-# 分析引入 AI 编码工具前后的 PR 速率与代码变更规模
-
 import requests
 from datetime import datetime, timedelta
 
@@ -380,9 +371,6 @@ if __name__ == "__main__":
 发现了候选"僵尸功能"，下一步是做下线决策。这通常卡在两个地方：一是没有量化标准（"感觉没人用"不够有力），二是利益相关方阻力（"这是某位 VP 的 pet feature"）。以下框架帮你把决策结构化：
 
 ```python
-# feature_kill_decider.py
-# 系统化的功能下线决策框架，用数据代替直觉
-
 from dataclasses import dataclass, field
 from enum import Enum
 from typing import List
@@ -467,7 +455,7 @@ if __name__ == "__main__":
 团队日历集成             33%     12h  🟢 保留/观察期  (score=0.23, ...)
 ```
 
-![Feature Kill Decider 功能下线决策流程图]({{ site.baseurl }}/assets/images/paradigm-radar-ai-coding-feature-bloat-kill-flow.jpg)
+![Feature Kill Decider 功能下线决策流程图]({{ site.baseurl }}/assets/images/paradigm-radar-ai-coding-feature-bloat-kill-flow.svg)
 
 > ⚠️ **实操提醒**：下线功能不等于"删除代码"，第一步是**隐藏入口 + 内测通知**，观察 30 天后再做最终决定。给真正有需求的用户预留反馈渠道，你会发现大多数时候反弹声音很小。
 
@@ -477,10 +465,9 @@ if __name__ == "__main__":
 
 工具准备好了，但流程不变，数据就只是摆设。以下是一套可在团队落地的**克制型开发流程**：
 
-![AI 时代克制型产品开发循环]({{ site.baseurl }}/assets/images/paradigm-radar-ai-coding-feature-bloat-restrained-flow.jpg)
+![AI 时代克制型产品开发循环]({{ site.baseurl }}/assets/images/paradigm-radar-ai-coding-feature-bloat-restrained-flow.svg)
 
-### 1. 在 Sprint 计划前做"功能入场审查"
-
+**1. 在 Sprint 计划前做"功能入场审查"**
 每个新功能进入开发排期前，必须回答这三个问题：
 
 ```
@@ -491,8 +478,7 @@ if __name__ == "__main__":
 
 如果团队对第①题答不出具体用户画像，这个功能就不应该进排期。AI 可以在 2 小时内写完一个新功能，但不能替代这 5 分钟的思考。
 
-### 2. 建立功能"日落条款"（Sunset Clause）
-
+**2. 建立功能"日落条款"（Sunset Clause）**
 每个新功能在上线时，默认附带一个 **90 天日落条款**：
 
 ```
@@ -507,8 +493,7 @@ if __name__ == "__main__":
 
 这一条款的心理效果远大于技术效果：它让团队在做功能时就预设了"不是所有功能都应该永远存在"的意识。
 
-### 3. 设置"功能负债看板"
-
+**3. 设置"功能负债看板"**
 技术债务（Technical Debt）已经是工程师的共识，但**功能负债（Feature Debt）**同样真实存在——每一个低价值功能都占用着：
 
 - `维护带宽`：Bug 修复、兼容性测试
@@ -517,8 +502,7 @@ if __name__ == "__main__":
 
 建议在 Jira / Linear 中新增一个 `feature-debt` 标签看板，每季度专门做一次"功能减法 Sprint"，用 FVS 分数排序，从最低分的功能开始处理。
 
-### 4. 反直觉原则：把 AI 的生产力用于"做减法"
-
+**4. 反直觉原则：把 AI 的生产力用于"做减法"**
 这是 AI 时代最被忽视的一条建议：**用 AI Coding 来清理技术债务和废弃功能，而不只是增加新功能**。
 
 删除一段没人用的功能代码，和新增一段功能代码，需要的工作量差不多。但前者让产品更精准，后者却未必。用 AI 帮你：
@@ -530,8 +514,7 @@ if __name__ == "__main__":
 
 对于已经在用 **Codex 或 Claude Code** 的团队，这一建议尤为紧迫：当你的 Agentic 工具能以分钟级速度生成功能时，你同样可以用它来以分钟级速度**删除功能**——给 Agent 一条指令："找出过去 6 个月无访问日志的功能入口，生成下线 PR"，往往就能直接落地。做减法的成本，和做加法的成本，在 Agentic Coding 时代第一次真正平等了。
 
-### 5. 学习"反例"：Basecamp/HEY 的产品克制
-
+**5. 学习"反例"：Basecamp/HEY 的产品克制**
 37signals（Basecamp 的母公司）是这个时代产品克制哲学最一致的践行者。他们的邮件产品 HEY 上线时有意删掉了"传统邮件用户认为必须有"的大量功能（文件夹分类、规则过滤、第三方集成），原则只有一个：**只保留能让大多数用户体验更好的功能**。
 
 HEY 在 2024-2025 年的付费留存率远高于行业均值，证明这种克制是商业上可行的。

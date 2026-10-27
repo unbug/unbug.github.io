@@ -1,10 +1,11 @@
 ---
-title: "一分钟读论文：《CompactionRL——将上下文压缩引入强化学习》"
+title: "一分钟读论文：《CompactionRL：压缩入强化学习》"
 author: unbug
 categories: [AI, RL]
 image: assets/images/compactionrl.svg
 tags: [rl, context-compaction, agent, long-horizon]
 layout: post
+description: "论文把上下文压缩纳入强化学习训练，让长程Agent学会自主管理信息密度，在SWE-bench提升7.0个百分点并已投入生产。"
 ---
 
 本文讨论的论文是 CompactionRL: Reinforcement Learning with Context Compaction for Long-Horizon Agents，arXiv:2607.05378，由清华大学（Tsinghua University）的 Yujiang Li、Zhenyu Hou、Yi Jing、Jie Tang 和 Yuxiao Dong 五位研究者完成。论文链接：[arXiv:2607.05378](https://arxiv.org/abs/2607.05378)

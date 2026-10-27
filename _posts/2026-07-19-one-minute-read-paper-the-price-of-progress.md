@@ -3,6 +3,7 @@ layout: post
 title:  "一分钟读论文：《智能每美元的经济学》"
 author: unbug
 categories: [AI, LLM-Economics]
+description: "针对LLM推理价格的最大规模数据集显示，每美元智能每年提升5到10倍，前沿模型运行成本却因规模扩大和推理链加长每年反升3到18倍。"
 image: assets/images/price-performance-trend.svg
 tags: [llm-economics, agent-training, post-training, intelligence-per-dollar, nvidia]
 ---

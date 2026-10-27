@@ -1,153 +1,107 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="system-ui, -apple-system, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Noto Serif SC','Songti SC',serif">
   <defs>
+    <style>
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9C9484; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
+      .rl { font-size: 15px; fill: #474C54; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
+      .b { font-size: 12px; fill: #A5A296; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
+      .chip { font-size: 12.5px; font-weight: 600; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
+    </style>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#1e293b"/>
+      <stop offset="0" stop-color="#FDFBF4"/><stop offset="1" stop-color="#F7F2E4"/>
     </linearGradient>
-    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#3b82f6"/>
-      <stop offset="100%" stop-color="#60a5fa"/>
+    <linearGradient id="gMaroon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7A2E33"/><stop offset="1" stop-color="#A85358"/>
     </linearGradient>
-    <linearGradient id="purple" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#8b5cf6"/>
-      <stop offset="100%" stop-color="#a78bfa"/>
+    <linearGradient id="gPine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F6B4F"/><stop offset="1" stop-color="#5F9B7C"/>
     </linearGradient>
-    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#10b981"/>
-      <stop offset="100%" stop-color="#34d399"/>
+    <linearGradient id="gLacquer" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C0392B"/><stop offset="1" stop-color="#DE7A6A"/>
     </linearGradient>
-    <linearGradient id="amber" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#f59e0b"/>
-      <stop offset="100%" stop-color="#fbbf24"/>
+    <linearGradient id="gGilt" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B9892F"/><stop offset="1" stop-color="#E0BC62"/>
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <linearGradient id="gIndigo" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#31518C"/><stop offset="1" stop-color="#6E88BC"/>
+    </linearGradient>
+    <linearGradient id="gSlate" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5A5E66"/><stop offset="1" stop-color="#8B8F98"/>
+    </linearGradient>
   </defs>
 
-  <!-- Background -->
-  <rect width="800" height="500" fill="url(#bg)" rx="12"/>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1105" cy="110" r="140" fill="#7A2E33" opacity="0.07"/>
+  <circle cx="70" cy="620" r="115" fill="#2F6B4F" opacity="0.06"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gLacquer)"/>
 
-  <!-- Title -->
-  <text x="400" y="42" text-anchor="middle" fill="#e2e8f0" font-size="20" font-weight="700">AlphaZero 自对弈流水线</text>
-  <text x="400" y="66" text-anchor="middle" fill="#94a3b8" font-size="13">Agent 自主实现的端到端 ML Pipeline</text>
+  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2604.25067 · 斯坦福等</text>
+  <text x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">棋谱三个月翻篇</text>
+  <text x="64" y="158" font-size="15" fill="#5B6068" font-family="'PingFang SC','Helvetica Neue',sans-serif">前沿编程 Agent 自主实现 AlphaZero 自对弈流水线，对战 Pascal Pons 精确求解器</text>
 
-  <!-- Pipeline flow: 6 stages -->
-  <!-- Stage 1: Task Description -->
-  <rect x="30" y="90" width="110" height="340" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
-  <rect x="30" y="90" width="110" height="40" rx="8" fill="url(#blue)"/>
-  <text x="85" y="115" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">任务描述</text>
-  <text x="85" y="165" text-anchor="middle" fill="#94a3b8" font-size="11">AlphaZero</text>
-  <text x="85" y="182" text-anchor="middle" fill="#94a3b8" font-size="11">Connect Four</text>
-  <text x="85" y="200" text-anchor="middle" fill="#94a3b8" font-size="11">3h Budget</text>
-  <text x="85" y="260" text-anchor="middle" fill="#64748b" font-size="10">简洁输入</text>
-  <text x="85" y="276" text-anchor="middle" fill="#64748b" font-size="10">无参考实现</text>
-  <text x="85" y="330" text-anchor="middle" fill="#64748b" font-size="10">研究品味</text>
-  <text x="85" y="346" text-anchor="middle" fill="#64748b" font-size="10">涌现探测</text>
-
-  <!-- Arrow 1 -->
-  <polygon points="145,255 165,245 165,265" fill="#3b82f6" opacity="0.7"/>
-
-  <!-- Stage 2: Agent -->
-  <rect x="175" y="90" width="110" height="340" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
-  <rect x="175" y="90" width="110" height="40" rx="8" fill="url(#purple)"/>
-  <text x="230" y="115" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">编程Agent</text>
-  <text x="230" y="165" text-anchor="middle" fill="#c4b5fd" font-size="11">Claude Opus</text>
-  <text x="230" y="182" text-anchor="middle" fill="#c4b5fd" font-size="11">4.7 / GPT-</text>
-  <text x="230" y="199" text-anchor="middle" fill="#c4b5fd" font-size="11">5.4 / Others</text>
-  <text x="230" y="260" text-anchor="middle" fill="#64748b" font-size="10">知识检索</text>
-  <text x="230" y="276" text-anchor="middle" fill="#64748b" font-size="10">系统设计</text>
-  <text x="230" y="330" text-anchor="middle" fill="#64748b" font-size="10">代码生成</text>
-  <text x="230" y="346" text-anchor="middle" fill="#64748b" font-size="10">调试优化</text>
-
-  <!-- Arrow 2 -->
-  <polygon points="290,255 310,245 310,265" fill="#8b5cf6" opacity="0.7"/>
-
-  <!-- Stage 3: MCTS -->
-  <rect x="320" y="90" width="120" height="340" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
-  <rect x="320" y="90" width="120" height="40" rx="8" fill="url(#green)"/>
-  <text x="380" y="115" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">MCTS 搜索</text>
-  <circle cx="380" cy="170" r="28" fill="none" stroke="#34d399" stroke-width="1.5" opacity="0.6"/>
-  <circle cx="380" cy="170" r="18" fill="none" stroke="#34d399" stroke-width="1.5" opacity="0.8"/>
-  <circle cx="380" cy="170" r="8" fill="#34d399" opacity="0.4"/>
-  <line x1="380" y1="142" x2="365" y2="130" stroke="#34d399" stroke-width="0.8" opacity="0.5"/>
-  <line x1="380" y1="142" x2="395" y2="130" stroke="#34d399" stroke-width="0.8" opacity="0.5"/>
-  <line x1="360" y1="170" x2="345" y2="170" stroke="#34d399" stroke-width="0.8" opacity="0.5"/>
-  <line x1="400" y1="170" x2="415" y2="170" stroke="#34d399" stroke-width="0.8" opacity="0.5"/>
-  <text x="380" y="210" text-anchor="middle" fill="#6ee7b7" font-size="9">Monte Carlo</text>
-  <text x="380" y="225" text-anchor="middle" fill="#6ee7b7" font-size="9">Tree Search</text>
-  <text x="380" y="260" text-anchor="middle" fill="#64748b" font-size="10">并行扩展</text>
-  <text x="380" y="276" text-anchor="middle" fill="#64748b" font-size="10">模拟评估</text>
-  <text x="380" y="330" text-anchor="middle" fill="#64748b" font-size="10">策略迭代</text>
-  <text x="380" y="346" text-anchor="middle" fill="#64748b" font-size="10">价值收敛</text>
-
-  <!-- Arrow 3 -->
-  <polygon points="445,255 465,245 465,265" fill="#10b981" opacity="0.7"/>
-
-  <!-- Stage 4: Neural Network -->
-  <rect x="470" y="90" width="120" height="340" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
-  <rect x="470" y="90" width="120" height="40" rx="8" fill="url(#amber)"/>
-  <text x="530" y="115" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">深度网络</text>
-  <!-- Network visualization -->
-  <g opacity="0.7">
-    <circle cx="500" cy="155" r="5" fill="#fbbf24"/>
-    <circle cx="520" cy="155" r="5" fill="#fbbf24"/>
-    <circle cx="540" cy="155" r="5" fill="#fbbf24"/>
-    <circle cx="560" cy="155" r="5" fill="#fbbf24"/>
-    <circle cx="500" cy="175" r="5" fill="#fbbf24"/>
-    <circle cx="520" cy="175" r="5" fill="#fbbf24"/>
-    <circle cx="540" cy="175" r="5" fill="#fbbf24"/>
-    <circle cx="560" cy="175" r="5" fill="#fbbf24"/>
-    <circle cx="500" cy="195" r="5" fill="#fbbf24"/>
-    <circle cx="520" cy="195" r="5" fill="#fbbf24"/>
-    <circle cx="540" cy="195" r="5" fill="#fbbf24"/>
-    <circle cx="560" cy="195" r="5" fill="#fbbf24"/>
-    <line x1="500" y1="155" x2="500" y2="175" stroke="#fbbf24" stroke-width="0.5" opacity="0.3"/>
-    <line x1="500" y1="175" x2="500" y2="195" stroke="#fbbf24" stroke-width="0.5" opacity="0.3"/>
-    <line x1="520" y1="155" x2="520" y2="175" stroke="#fbbf24" stroke-width="0.5" opacity="0.3"/>
-    <line x1="520" y1="175" x2="520" y2="195" stroke="#fbbf24" stroke-width="0.5" opacity="0.3"/>
-    <line x1="540" y1="155" x2="540" y2="175" stroke="#fbbf24" stroke-width="0.5" opacity="0.3"/>
-    <line x1="540" y1="175" x2="540" y2="195" stroke="#fbbf24" stroke-width="0.5" opacity="0.3"/>
-    <line x1="560" y1="155" x2="560" y2="175" stroke="#fbbf24" stroke-width="0.5" opacity="0.3"/>
-    <line x1="560" y1="175" x2="560" y2="195" stroke="#fbbf24" stroke-width="0.5" opacity="0.3"/>
+  <!-- connect-four / scroll motif -->
+  <g transform="translate(1000,62)">
+    <rect x="0" y="0" width="150" height="100" rx="6" fill="#FFFFFF" stroke="#DCD5C2" stroke-width="1.5"/>
+    <g>
+      <circle cx="30" cy="28" r="12" fill="url(#gMaroon)"/><circle cx="75" cy="28" r="12" fill="url(#gIndigo)"/>
+      <circle cx="120" cy="28" r="12" fill="none" stroke="#DCD5C2" stroke-width="2"/>
+      <circle cx="30" cy="70" r="12" fill="url(#gIndigo)"/><circle cx="75" cy="70" r="12" fill="url(#gMaroon)"/>
+      <circle cx="120" cy="70" r="12" fill="none" stroke="#DCD5C2" stroke-width="2"/>
+    </g>
+    <path d="M -6 106 Q 75 128 156 106" fill="none" stroke="#B9892F" stroke-width="2.5" opacity="0.7"/>
+    <circle cx="30" cy="122" r="4" fill="url(#gGilt)"/><circle cx="75" cy="128" r="4" fill="url(#gGilt)"/><circle cx="120" cy="122" r="4" fill="url(#gGilt)"/>
   </g>
-  <text x="530" y="225" text-anchor="middle" fill="#fcd34d" font-size="9">策略头 + 价值头</text>
-  <text x="530" y="242" text-anchor="middle" fill="#fcd34d" font-size="9">残差连接</text>
-  <text x="530" y="260" text-anchor="middle" fill="#64748b" font-size="10">策略网络</text>
-  <text x="530" y="276" text-anchor="middle" fill="#64748b" font-size="10">价值网络</text>
-  <text x="530" y="330" text-anchor="middle" fill="#64748b" font-size="10">棋盘编码</text>
-  <text x="530" y="346" text-anchor="middle" fill="#64748b" font-size="10">特征提取</text>
 
-  <!-- Arrow 4 -->
-  <polygon points="595,255 615,245 615,265" fill="#f59e0b" opacity="0.7"/>
+  <!-- slope: Jan vs Apr -->
+  <g>
+    <rect x="64" y="204" width="690" height="104" fill="#31518C" opacity="0.07"/>
+    <text class="rl" x="92" y="238">能力曲线 · 同一任务</text>
+    <line x1="150" y1="292" x2="520" y2="238" stroke="url(#gSlate)" stroke-width="3"/>
+    <circle cx="150" cy="292" r="8" fill="url(#gSlate)"/>
+    <circle cx="520" cy="238" r="9" fill="url(#gPine)"/>
+    <text x="130" y="286" text-anchor="end" class="rl" fill="#5A5E66" font-weight="700">2026.01</text>
+    <text x="130" y="306" text-anchor="end" class="b">无法完成</text>
+    <text x="540" y="232" class="rl" fill="#2F6B4F" font-weight="700">2026.04 底</text>
+    <text x="540" y="252" class="b">Claude Opus 4.7 接近饱和</text>
+    <text x="335" y="292" text-anchor="middle" font-size="15" font-weight="700" fill="#C0392B" font-family="'PingFang SC',sans-serif">3 个月</text>
 
-  <!-- Stage 5: Self-Play -->
-  <rect x="620" y="90" width="150" height="340" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
-  <rect x="620" y="90" width="150" height="40" rx="8" fill="url(#amber)"/>
-  <text x="695" y="115" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">自对弈循环</text>
-  <!-- Connect Four board -->
-  <rect x="660" y="130" width="70" height="50" rx="4" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1"/>
-  <circle cx="672" cy="142" r="5" fill="#ef4444" opacity="0.6"/>
-  <circle cx="690" cy="142" r="5" fill="#eab308" opacity="0.6"/>
-  <circle cx="708" cy="142" r="5" fill="#ef4444" opacity="0.6"/>
-  <circle cx="672" cy="155" r="5" fill="#eab308" opacity="0.6"/>
-  <circle cx="690" cy="155" r="5" fill="#ef4444" opacity="0.6"/>
-  <circle cx="708" cy="155" r="5" fill="#eab308" opacity="0.6"/>
-  <circle cx="672" cy="168" r="5" fill="#ef4444" opacity="0.6"/>
-  <circle cx="690" cy="168" r="5" fill="#eab308" opacity="0.6"/>
-  <circle cx="708" cy="168" r="5" fill="#ef4444" opacity="0.6"/>
-  <text x="695" y="195" text-anchor="middle" fill="#fcd34d" font-size="9">白 vs 黑</text>
-  <text x="695" y="210" text-anchor="middle" fill="#fcd34d" font-size="9">自对弈</text>
-  <text x="695" y="260" text-anchor="middle" fill="#64748b" font-size="10">数据生产</text>
-  <text x="695" y="276" text-anchor="middle" fill="#64748b" font-size="10">回放缓冲</text>
-  <text x="695" y="330" text-anchor="middle" fill="#64748b" font-size="10">训练更新</text>
-  <text x="695" y="346" text-anchor="middle" fill="#64748b" font-size="10">策略迭代</text>
+    <text class="rl" x="64" y="358">对战战绩 · 各 8 次试验 · 三小时预算 · 消费级硬件</text>
+    <g>
+      <text class="rl" x="92" y="396">Claude Opus 4.7</text>
+      <g transform="translate(250,382)">
+        <circle cx="14" cy="0" r="10" fill="url(#gPine)"/><circle cx="44" cy="0" r="10" fill="url(#gPine)"/><circle cx="74" cy="0" r="10" fill="url(#gPine)"/><circle cx="104" cy="0" r="10" fill="url(#gPine)"/><circle cx="134" cy="0" r="10" fill="url(#gPine)"/><circle cx="164" cy="0" r="10" fill="url(#gPine)"/><circle cx="194" cy="0" r="10" fill="url(#gPine)"/><circle cx="224" cy="0" r="10" fill="none" stroke="#DCD5C2" stroke-width="2"/>
+      </g>
+      <text x="502" y="388" class="rl" fill="#2F6B4F" font-weight="700" dx="16">7/8</text>
+    </g>
+    <g>
+      <text class="rl" x="92" y="440">其他三个 Agent</text>
+      <g transform="translate(250,426)">
+        <circle cx="14" cy="0" r="10" fill="url(#gMaroon)"/><circle cx="44" cy="0" r="10" fill="url(#gMaroon)"/><circle cx="74" cy="0" r="10" fill="none" stroke="#DCD5C2" stroke-width="2"/><circle cx="104" cy="0" r="10" fill="none" stroke="#DCD5C2" stroke-width="2"/><circle cx="134" cy="0" r="10" fill="none" stroke="#DCD5C2" stroke-width="2"/><circle cx="164" cy="0" r="10" fill="none" stroke="#DCD5C2" stroke-width="2"/><circle cx="194" cy="0" r="10" fill="none" stroke="#DCD5C2" stroke-width="2"/><circle cx="224" cy="0" r="10" fill="none" stroke="#DCD5C2" stroke-width="2"/>
+      </g>
+      <text x="502" y="432" class="rl" fill="#7A2E33" font-weight="700" dx="16">≤2/8</text>
+    </g>
+    <text class="b" x="250" y="472">实心=击败求解器 · 空心=未胜</text>
+  </g>
 
-  <!-- Result banner -->
-  <rect x="100" y="445" width="600" height="38" rx="6" fill="#0f2922" stroke="#10b981" stroke-width="1" opacity="0.9"/>
-  <text x="400" y="468" text-anchor="middle" fill="#34d399" font-size="14" font-weight="600">Claude Opus 4.7: 7/8 胜 Pascal Pons | 其他Agent: 0-2/8 胜</text>
+  <!-- right column -->
+  <g>
+    <rect x="836" y="204" width="304" height="76" rx="10" fill="url(#gLacquer)" opacity="0.08"/>
+    <text x="856" y="236" font-size="17" font-weight="700" fill="#B03A2E">评估范式</text>
+    <text x="856" y="262" class="b">仅给简洁任务描述，探测 AI 研究品味</text>
 
-  <!-- Bottom note -->
-  <text x="400" y="495" text-anchor="middle" fill="#475569" font-size="10">Sherwood, Aybar, Kaplan | arXiv:2604.25067 | 2026-04-27</text>
+    <rect x="836" y="296" width="304" height="140" rx="12" fill="#2F6B4F" opacity="0.08"/>
+    <text x="856" y="326" class="rl" font-weight="700" fill="#2F6B4F">流水线须耦合的子系统</text>
+    <rect x="856" y="340" width="76" height="26" rx="13" fill="url(#gPine)" opacity="0.22"/><text x="894" y="358" text-anchor="middle" class="chip" fill="#1F5240">MCTS</text>
+    <rect x="940" y="340" width="76" height="26" rx="13" fill="url(#gIndigo)" opacity="0.22"/><text x="978" y="358" text-anchor="middle" class="chip" fill="#27406F">残差网络</text>
+    <rect x="1024" y="340" width="76" height="26" rx="13" fill="url(#gGilt)" opacity="0.3"/><text x="1062" y="358" text-anchor="middle" class="chip" fill="#7A5A14">自对弈数据</text>
+    <rect x="856" y="374" width="96" height="26" rx="13" fill="url(#gMaroon)" opacity="0.18"/><text x="904" y="392" text-anchor="middle" class="chip" fill="#7A2E33">训练循环稳定</text>
+    <text class="b" x="856" y="424">要懂数学与工程细节，而非调用 API</text>
+
+    <text class="rl" x="856" y="464">GPT-5.4 时间预算用得很省</text>
+    <text class="b" x="856" y="484">缩短提示后 16 次试验：预算使用率大增，与沙盒伪装假设一致、非诊断性</text>
+  </g>
+
+  <!-- bottom -->
+  <line x1="64" y1="512" x2="1136" y2="512" stroke="#E5E1D4"/>
+  <text x="64" y="556" font-size="18" fill="#1A1B1E">从代码生成工具到自主研究执行者，只差一个任务描述的距离。</text>
+  <text class="b" x="1136" y="618" text-anchor="end" font-family="'PingFang SC','Helvetica Neue',sans-serif">对战为论文自述口径 · 先手条件 · 预印本未经同行评审 · Micropaper</text>
 </svg>

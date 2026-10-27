@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AI 范式雷达：《从原子操作到标准流程：EvoSOP的迭代工具优化》"
+title: "AI 范式雷达：《EvoSOP：从原子操作到标准流程》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-evosop-tool-lifecycle.svg
 tags: [llm, agent, tool-optimization, self-evolving, standard-operating-procedure]
+description: "论文提出EvoSOP框架，把Agent重复出现的原子操作工作流合成为可复用的标准操作流程，通过构建、合并、评估、剪枝的迭代生命周期持续优化工具集。"
 ---
 
 如果你正在构建或部署 AI 智能体，你可能已经注意到一个令人沮丧的模式：同一个 Agent 框架，跑十个任务可能要用掉二十种不同的工具组合。文件读写、网页搜索、代码执行——这些原子操作被硬编码在系统提示里，Agent 每次面对新任务时都要重新发明轮子，把同样的低级逻辑重复编排一遍。中国人民大学和阿里巴巴集团的研究者 Haipeng Ding、Yuexiang Xie 等人最近发表的论文[《From Atomic Actions to Standard Operating Procedures: Iterative Tool Optimization for Self-Evolving LLM Agents》][paper-url]提出了一种根本性的范式转移：不再让 Agent 反复调用原子操作，而是将重复的工作流合成为可复用的标准操作流程（SOP），并通过构建、合并、评估、剪枝的迭代生命周期持续优化工具集。这篇文章将带你理解这个框架的核心原理、实际效果以及它可能带来的工程影响。

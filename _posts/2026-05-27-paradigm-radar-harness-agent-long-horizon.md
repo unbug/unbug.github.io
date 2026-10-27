@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "一分钟读论文：《Long Horizon Agent 全栈设计：从接单到交付的工程蓝图》"
+title: "一分钟读论文：《长程智能体：从接单到交付蓝图》"
 author: unbug
 categories: [AI, ParadigmRadar, Agent]
 image: assets/images/paradigm-radar-harness-agent-long-horizon.svg
 tags: [Agent, LongHorizon, Memory, Planning, Checkpointing]
+description: "针对长周期任务中单智能体成功率不足的问题，拆解Long Horizon Agent的六层工程架构，覆盖分层规划、四维记忆、执行引擎、断点续传、错误恢复与成本控制的设计决策。"
 ---
 
 今天的 AI Agent 大多能在 10–20 步内完成一个明确的小任务。但现实世界里最有价值的工作从来不是这样的：修复一个生产级 Bug 需要读代码、复现、定位、打补丁、写测试、验证——不止 7 步，而是几十步；一套完整的数据处理流水线可能跨越数十个工具调用；安全审计任务需要跨阶段协作，中途任何一步失败都可能让整个流程作废。这类任务统称 **Long Horizon Task**，而能够稳定完成它们的系统，就是 Long Horizon Agent。

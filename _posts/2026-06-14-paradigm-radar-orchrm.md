@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "一分钟读论文：《OrchRM——多智能体编排的自监督奖励建模新范式》"
+title: "一分钟读论文：《OrchRM：编排奖励自监督建模》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-orchrm.svg
 tags: [reward-modeling, multi-agent, orchestration, self-supervised, mas]
+description: "OrchRM利用多智能体执行自然产生的中间产物构建胜负对，在Bradley-Terry模型上自监督学习编排奖励，无需人工标注和完整Rollout，Token使用效率提升最高10倍，测试时扩展性能提升最高8%。"
 ---
 
 在多智能体系统（MAS）中，编排器决定了多个子代理如何协作完成任务。传统方法训练编排器需要昂贵的人工标注或完整的子代理 Rollout——每次评估都需要让所有子代理完整执行一遍，Token 消耗呈指数级增长。新加坡国立大学和 Sea AI Lab 联合发表的论文[《Reward Modeling for Multi-Agent Orchestration (OrchRM)》][paper1-url]提出了一种自监督奖励建模框架，利用多智能体执行过程中的中间产物构建胜负对，直接在 Bradley-Terry 模型上进行奖励学习。该方法在编排层面操作而非子代理层面，使 Token 使用效率提升最高 10 倍，同时在数学推理、网页问答和多跳推理等任务上将 MAS 测试时扩展性能提升最高 8%。
@@ -53,8 +54,7 @@ P(A beats B) = exp(r_A) / (exp(r_A) + exp(r_B))
 
 将 OrchRM 集成到你的多智能体系统中需要三个核心组件：一个支持中间产物收集的执行引擎、一个胜负对构建模块和一个 Bradley-Terry 奖励模型。以下是一个最小化的实现示例。
 
-### 环境准备
-
+**环境准备**
 首先确保你的环境中安装了必要的依赖。OrchRM 基于 PyTorch 实现，推荐使用 Python 3.10+ 和 PyTorch 2.0+：
 
 ```bash
@@ -63,45 +63,37 @@ git clone https://github.com/Wang-ML-Lab/OrchRM.git
 cd OrchRM && pip install -e .
 ```
 
-### 中间产物收集与胜负对构建
-
+**中间产物收集与胜负对构建**
 以下代码展示了如何从多智能体执行中收集中间产物并构建训练用的胜负对：
 
 ```python
 from orchrm import MultiAgentExecutor, PairwiseComparator
 
-# 初始化多智能体执行器
 executor = MultiAgentExecutor(
     agents=["math_parser", "strategy_selector", "calculator"],
     orchestrator="default"
 )
 
-# 收集中间产物
 artifacts = executor.run(task="Solve: integral of x^2 from 0 to 1")
 
-# 构建胜负对
 comparator = PairwiseComparator(quality_fn=evaluate_quality)
 win_loss_pairs = comparator.build_pairs(artifacts)
 
-# 输出示例: [("math_parser_output", "strategy_selector_output"), ...]
 print(f"构建了 {len(win_loss_pairs)} 条胜负对")
 ```
 
 `MultiAgentExecutor.run()` 方法会调度所有子代理执行任务并返回中间产物列表。`PairwiseComparator` 使用 `evaluate_quality` 函数比较每对中间产物的质量——这个函数可以是基于规则的质量评估（如答案正确性检查），也可以是基于 LLM 的自动评分。
 
-### Bradley-Terry 奖励模型训练
-
+**Bradley-Terry 奖励模型训练**
 ```python
 from orchrm import BradleyTerryModel, Trainer
 
-# 初始化奖励模型
 model = BradleyTerryModel(
     hidden_dim=256,
     num_layers=3,
     lr=1e-4
 )
 
-# 训练
 trainer = Trainer(model=model, batch_size=32)
 trainer.train(
     pairs=win_loss_pairs,
@@ -109,27 +101,22 @@ trainer.train(
     eval_interval=1
 )
 
-# 保存奖励模型
 model.save("orchrm_reward_model.pt")
 ```
 
 `BradleyTerryModel` 是一个基于 Transformer 的奖励函数近似器，它将中间产物编码为向量并输出标量奖励值。训练过程中，模型通过最小化 Bradley-Terry 损失来学习区分高质量和低质量的编排决策。
 
-### 使用奖励模型进行测试时扩展
-
+**使用奖励模型进行测试时扩展**
 ```python
 from orchrm import TestTimeScalableOrchestrator
 
-# 加载训练好的奖励模型
 model = BradleyTerryModel.load("orchrm_reward_model.pt")
 
-# 初始化测试时可扩展编排器
 orch = TestTimeScalableOrchestrator(
     reward_model=model,
     num_candidates=5
 )
 
-# 在推理阶段对多个候选方案进行排序
 result = orch.execute(task="Answer: what is the capital of France?")
 print(f"最佳编排路径得分: {result.score}")
 ```
@@ -148,16 +135,14 @@ OrchRM 在多个领域的实验结果验证了其通用性和有效性。以下�
 
 上图展示了 OrchRM 在四个领域的准确率表现。基线方法（灰色柱）代表使用传统编排器训练方法的 MAS 系统，OrchRM（紫色柱）在使用相同子代理但不同编排策略的情况下实现了全面超越：数学推理从 52.3% 提升至 60.1%，网页问答从 48.7% 提升至 55.2%，多跳推理从 45.1% 提升至 51.8%，代码生成从 56.9% 提升至 63.5%。平均准确率提升约 7.2%，最高单领域提升达到 7.8 个百分点。
 
-### 调优策略与常见坑
-
+**调优策略与常见坑**
 **中间产物质量函数的选择是关键。** `evaluate_quality` 函数决定了胜负对的构建质量——如果评估函数不够准确，训练出的奖励模型可能会学习到错误的偏好信号。建议从简单的规则-based 评估开始（如答案正确性、格式合规性），逐步过渡到基于 LLM 的自动评分。
 
 **胜负对的数量直接影响训练效果。** OrchRM 的理论优势在于无需完整 Rollout，但这并不意味着可以随意减少数据量。论文实验显示，至少需要数千条胜负对才能稳定收敛——对于复杂任务，建议收集超过 10,000 条胜负对以获得最佳性能。
 
 **测试时扩展的候选数量需要权衡。** 虽然增加候选数量可以提升最终准确率，但也会线性增加推理延迟。论文建议在部署时根据实际延迟预算选择候选数量——通常 3-5 个候选在性能和效率之间取得了较好的平衡。
 
-### 与其他方案的对比
-
+**与其他方案的对比**
 与 APB（第 67 篇）相比，APB 专注于 Agent 规划能力的细粒度诊断，通过拆解端到端成功率中的规划失败与执行失败来定位问题根源。OrchRM 则从另一个角度切入——它不关心具体的失败类型，而是直接学习编排策略的质量评分函数。两者可以互补使用：先用 APB 诊断编排器的问题所在，再用 OrchRM 训练一个更优的编排器。
 
 与 AgentDoG 1.5（第 68 篇）相比，AgentDoG 是专门针对安全维度的评估框架，通过轨迹级诊断引擎识别跨步骤累积的安全风险。OrchRM 则是通用的质量建模框架——它不关心安全性、规划能力或代码质量的具体维度，只负责学习编排决策的整体质量评分。如果你的 MAS 系统同时需要安全性和编排优化，可以将 AgentDoG 的安全评分作为 OrchRM 奖励函数的一个组成部分。

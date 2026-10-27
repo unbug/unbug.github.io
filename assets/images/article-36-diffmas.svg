@@ -1,88 +1,110 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420" font-family="system-ui, -apple-system, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Noto Serif SC','Songti SC','STSong',serif">
   <defs>
-    <linearGradient id="agentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#e8f0fe;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#c5d8f0;stop-opacity:1"/>
+    <style>
+      .k { font-size: 12.5px; letter-spacing: 3px; fill: #9A937F; }
+      .sub { font-size: 15.5px; fill: #6E6A5C; }
+      .lbl { font-size: 15px; fill: #47505A; }
+      .val { font-size: 18px; font-weight: 700; fill: #1A1B1E; }
+      .b { font-size: 12px; fill: #A29C88; }
+      .chip { font-size: 12.5px; font-weight: 600; }
+      .nodo { font-size: 14.5px; font-weight: 700; fill: #FFFFFF; }
+      .nodosub { font-size: 11px; fill: #FFFFFF; opacity: .92; }
+    </style>
+    <linearGradient id="gViolet" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4C32A8"/><stop offset="1" stop-color="#7E5AD0"/>
     </linearGradient>
-    <linearGradient id="latentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#fce4ec;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#f8bbd0;stop-opacity:1"/>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0E7C8A"/><stop offset="1" stop-color="#3FB0BC"/>
     </linearGradient>
-    <linearGradient id="taskGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#e8f5e9;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#c8e6c9;stop-opacity:1"/>
+    <linearGradient id="gRose" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B5442E"/><stop offset="1" stop-color="#DE7F5F"/>
     </linearGradient>
-    <marker id="arrowGray" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
-      <path d="M0,0 L8,3 L0,6" fill="#666"/>
-    </marker>
-    <marker id="arrowRed" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
-      <path d="M0,0 L8,3 L0,6" fill="#d32f2f"/>
-    </marker>
-    <marker id="arrowBlue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
-      <path d="M0,0 L8,3 L0,6" fill="#1565c0"/>
-    </marker>
+    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A97B1E"/><stop offset="1" stop-color="#D9AF54"/>
+    </linearGradient>
+    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F5D9E"/><stop offset="1" stop-color="#6E96C8"/>
+    </linearGradient>
+    <linearGradient id="gCinnabar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C0392B"/><stop offset="1" stop-color="#E06B55"/>
+    </linearGradient>
   </defs>
 
-  <!-- Background -->
-  <rect width="700" height="420" rx="8" fill="#fafafa"/>
+  <rect width="1200" height="675" fill="#FBFAF7"/>
+  <rect x="64" y="44" width="44" height="5" fill="#B5442E"/>
 
-  <!-- Title -->
-  <text x="350" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">DiffMAS: 多智能体隐式通信架构</text>
+  <text class="k" x="64" y="82">一分钟读论文 · ARXIV:2604.21794 · UNIV. OF ILLINOIS URBANA-CHAMPAIGN 等</text>
+  <text x="64" y="126" font-size="37" font-weight="700" fill="#1A1B1E">让消息本身参与学习</text>
+  <text class="sub" x="64" y="154">DiffMAS：通信从固定文本接口，改为可学习的隐空间表示，与推理联合端到端优化</text>
 
-  <!-- Task Input -->
-  <rect x="240" y="50" width="220" height="36" rx="6" fill="url(#taskGrad)" stroke="#4caf50" stroke-width="1.5"/>
-  <text x="350" y="73" text-anchor="middle" font-size="13" fill="#2e7d32" font-weight="bold">复杂推理任务</text>
+  <!-- upper path: old text protocol (single rigid canal channel) -->
+  <g>
+    <text class="b" x="80" y="200">旧 · 固定文本接口</text>
+    <circle cx="122" cy="234" r="32" fill="url(#gBlue)"/>
+    <text class="nodo" x="122" y="239" text-anchor="middle">智能体 A</text>
+    <path d="M 166 221 C 246 196 330 196 408 221 L 408 247 C 330 222 246 222 166 247 Z" fill="url(#gBlue)" opacity="0.5"/>
+    <text x="287" y="209" text-anchor="middle" font-size="12.5" fill="#2F5D9E">生成文本 → 解析文本</text>
+    <circle cx="452" cy="234" r="32" fill="url(#gBlue)"/>
+    <text class="nodo" x="452" y="239" text-anchor="middle">智能体 B</text>
+    <text class="b" x="496" y="239">信息压缩损失 · 协议与推理解耦</text>
+  </g>
 
-  <!-- Arrow from task to Agent A -->
-  <line x1="280" y1="86" x2="180" y2="120" stroke="#666" stroke-width="1.5" marker-end="url(#arrowGray)"/>
-  <!-- Arrow from task to Agent B -->
-  <line x1="420" y1="86" x2="520" y2="120" stroke="#666" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  <!-- dividing hairline -->
+  <line x1="64" y1="292" x2="1136" y2="292" stroke="#E5E1D4" stroke-width="1"/>
 
-  <!-- Agent A -->
-  <rect x="60" y="120" width="220" height="100" rx="8" fill="url(#agentGrad)" stroke="#1565c0" stroke-width="1.5"/>
-  <text x="170" y="145" text-anchor="middle" font-size="14" font-weight="bold" fill="#1565c0">Agent A (编码器)</text>
+  <!-- lower path: latent channels (water lines crossing a mountain saddle) -->
+  <g>
+    <text class="b" x="80" y="316">新 · 隐空间通信</text>
+    <circle cx="122" cy="392" r="32" fill="url(#gViolet)"/>
+    <text class="nodo" x="122" y="397" text-anchor="middle">智能体 A</text>
+    <path d="M 162 396 C 244 352 320 336 386 348" fill="none" stroke="url(#gViolet)" stroke-width="13" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 392 352 C 456 366 522 406 566 452" fill="none" stroke="url(#gViolet)" stroke-width="9" stroke-linecap="round" opacity="0.5"/>
+    <path d="M 170 420 C 254 456 330 468 392 458" fill="none" stroke="url(#gTeal)" stroke-width="11" stroke-linecap="round" opacity="0.7"/>
+    <path d="M 398 456 C 462 446 520 470 566 462" fill="none" stroke="url(#gTeal)" stroke-width="9" stroke-linecap="round" opacity="0.45"/>
+    <path d="M 172 444 C 250 478 324 494 388 488" fill="none" stroke="url(#gGold)" stroke-width="9" stroke-linecap="round" opacity="0.75"/>
+    <path d="M 394 486 C 458 482 524 480 568 472" fill="none" stroke="url(#gGold)" stroke-width="7" stroke-linecap="round" opacity="0.45"/>
+    <path d="M 322 372 Q 372 418 320 466" fill="none" stroke="#B5442E" stroke-width="2.5" opacity="0.85"/>
+    <text x="362" y="414" font-size="12.5" fill="#B5442E">垭口 · 键值缓存</text>
+    <text x="362" y="432" font-size="11" fill="#8B8574">轻量投影层进出隐空间</text>
+    <circle cx="608" cy="458" r="34" fill="url(#gRose)"/>
+    <text class="nodo" x="608" y="456" text-anchor="middle">智能体 B</text>
+    <text class="nodosub" x="608" y="472" text-anchor="middle">解码注入推理</text>
+    <text x="366" y="528" text-anchor="middle" font-size="12.5" fill="#4C32A8">隐空间 · 可学习表示（无文本生成/解析）</text>
+  </g>
 
-  <!-- Agent A internal components -->
-  <rect x="80" y="155" width="180" height="22" rx="4" fill="#fff" stroke="#90caf9" stroke-width="1"/>
-  <text x="170" y="170" text-anchor="middle" font-size="11" fill="#333">推理模块 (Frozen)</text>
+  <!-- right panel: numbers + training -->
+  <g>
+    <rect x="756" y="196" width="380" height="54" fill="#B5442E" opacity="0.07"/>
+    <text class="lbl" x="776" y="229">AIME24 数学推理</text>
+    <text class="val" x="1116" y="229" text-anchor="end" font-size="28" fill="#B5442E">26.7%</text>
+    <rect x="756" y="256" width="380" height="54" fill="#7E5AD0" opacity="0.08"/>
+    <text class="lbl" x="776" y="289">GPQA-Diamond 科学问答</text>
+    <text class="val" x="1116" y="289" text-anchor="end" font-size="28" fill="#4C32A8">20.2%</text>
+    <text class="b" x="776" y="334">数值为论文自述基准结果</text>
 
-  <rect x="80" y="185" width="180" height="22" rx="4" fill="#fff" stroke="#ef9a9a" stroke-width="1"/>
-  <text x="170" y="200" text-anchor="middle" font-size="11" fill="#d32f2f" font-weight="bold">投影层: 文本 -> 隐向量</text>
+    <text x="776" y="382" font-size="18" font-weight="700" fill="#0E7C8A">差异微调 · 参数高效</text>
+    <text class="b" x="776" y="404">只更新通信投影层与少量适配器，推理模型其余参数冻结</text>
 
-  <!-- Agent B -->
-  <rect x="420" y="120" width="220" height="100" rx="8" fill="url(#agentGrad)" stroke="#1565c0" stroke-width="1.5"/>
-  <text x="530" y="145" text-anchor="middle" font-size="14" font-weight="bold" fill="#1565c0">Agent B (解码器)</text>
+    <rect x="756" y="428" width="380" height="50" fill="#0E7C8A" opacity="0.07"/>
+    <text x="776" y="459" font-size="15" fill="#47505A">通信开销</text>
+    <text x="1116" y="459" text-anchor="end" font-size="15" font-weight="700" fill="#0E7C8A">几乎可忽略</text>
+  </g>
 
-  <!-- Agent B internal components -->
-  <rect x="440" y="155" width="180" height="22" rx="4" fill="#fff" stroke="#90caf9" stroke-width="1"/>
-  <text x="530" y="170" text-anchor="middle" font-size="11" fill="#333">推理模块 (Frozen)</text>
+  <!-- bottom chips: three training steps -->
+  <line x1="64" y1="544" x2="1136" y2="544" stroke="#E5E1D4"/>
+  <g>
+    <rect x="64" y="562" width="150" height="28" rx="14" fill="url(#gViolet)" opacity="0.18"/>
+    <text x="139" y="581" text-anchor="middle" class="chip" fill="#4C32A8">提示生成轨迹</text>
+    <text x="222" y="581" fill="#8B8574" font-size="14">→</text>
+    <rect x="244" y="562" width="150" height="28" rx="14" fill="url(#gTeal)" opacity="0.2"/>
+    <text x="319" y="581" text-anchor="middle" class="chip" fill="#0E7C8A">转隐式表示序列</text>
+    <text x="402" y="581" fill="#8B8574" font-size="14">→</text>
+    <rect x="424" y="562" width="170" height="28" rx="14" fill="url(#gGold)" opacity="0.28"/>
+    <text x="509" y="581" text-anchor="middle" class="chip" fill="#7A5A14">损失更新通信组件</text>
+    <rect x="988" y="562" width="148" height="28" rx="14" fill="url(#gCinnabar)" opacity="0.16"/>
+    <text x="1062" y="581" text-anchor="middle" class="chip" fill="#B5442E">通信 ⊂ 推理</text>
+  </g>
 
-  <rect x="440" y="185" width="180" height="22" rx="4" fill="#fff" stroke="#ef9a9a" stroke-width="1"/>
-  <text x="530" y="200" text-anchor="middle" font-size="11" fill="#d32f2f" font-weight="bold">投影层: 隐向量 -> 推理注入</text>
-
-  <!-- Latent Communication Channel -->
-  <rect x="290" y="150" width="120" height="60" rx="30" fill="url(#latentGrad)" stroke="#d32f2f" stroke-width="2" stroke-dasharray="6,3"/>
-  <text x="350" y="175" text-anchor="middle" font-size="12" font-weight="bold" fill="#c62828">隐空间</text>
-  <text x="350" y="193" text-anchor="middle" font-size="10" fill="#ad1414">可学习表示</text>
-
-  <!-- Arrows for latent communication -->
-  <line x1="280" y1="180" x2="290" y2="180" stroke="#d32f2f" stroke-width="2" marker-end="url(#arrowRed)"/>
-  <line x1="410" y1="180" x2="420" y2="180" stroke="#d32f2f" stroke-width="2" marker-end="url(#arrowRed)"/>
-
-  <!-- Bidirectional arrow label -->
-  <text x="350" y="148" text-anchor="middle" font-size="9" fill="#888">联合优化</text>
-
-  <!-- Training loop arrow -->
-  <path d="M 170 220 Q 170 280 350 280 Q 530 280 530 220" fill="none" stroke="#1565c0" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowBlue)"/>
-  <text x="350" y="295" text-anchor="middle" font-size="11" fill="#1565c0">参数高效监督训练</text>
-
-  <!-- Output -->
-  <line x1="350" y1="300" x2="350" y2="340" stroke="#666" stroke-width="1.5" marker-end="url(#arrowGray)"/>
-  <rect x="240" y="340" width="220" height="36" rx="6" fill="url(#taskGrad)" stroke="#4caf50" stroke-width="1.5"/>
-  <text x="350" y="363" text-anchor="middle" font-size="13" fill="#2e7d32" font-weight="bold">推理结果 (更准确)</text>
-
-  <!-- Key insight box -->
-  <rect x="40" y="390" width="620" height="24" rx="4" fill="#fff3e0" stroke="#ff9800" stroke-width="1"/>
-  <text x="350" y="406" text-anchor="middle" font-size="11" fill="#e65100">传统: 文本协议 (固定) vs DiffMAS: 隐式通信 (可学习) — 通信即推理</text>
-
+  <text x="64" y="636" font-size="17" fill="#1A1B1E">通信不该是推理的附属品，而应成为推理本身的一部分。</text>
+  <text class="b" x="1136" y="636" text-anchor="end">四个基准系统评估 · 论文自述口径 · 预印本未经同行评审 · Micropaper</text>
 </svg>

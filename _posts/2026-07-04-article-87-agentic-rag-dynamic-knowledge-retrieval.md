@@ -1,9 +1,10 @@
 ---
-title: "一分钟读论文：《Agentic RAG——动态知识检索增强》"
+title: "一分钟读论文：《Agentic RAG动态知识检索》"
 author: unbug
 categories: [AI, Agent]
 image: assets/images/article-87-agentic-rag.svg
 tags: [agentic-rag, dynamic-retrieval, knowledge-retrieval]
+description: "Agentic RAG把检索从预处理步骤升级为Agent核心工具能力，通过动态查询生成、结果验证、迭代精炼与上下文优化四机制，在信息充分性与计算成本间取得平衡。"
 ---
 
 ## 静态检索向动态推理的演进

@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "一分钟读论文：《Do Agent Optimizers Compound？Agent优化收益能否持续累积》"
+title:  "一分钟读论文：《智能体优化收益能否持续累积》"
 author: unbug
 categories: [AI, Agent]
 image: assets/images/agent-world-model.svg
 tags: [llm, agent-optimization, continual-learning, regression-control]
+description: "研究团队构建两阶段持续学习评估框架，对比三种智能体优化方法后确认，只有内置回归控制的方法能实现正向迁移与持续改进，最终得分显著高于静态优化基线。"
 ---
 
 RELAI团队的论文[《Do Agent Optimizers Compound? A Continual-Learning Evaluation on Terminal-Bench 2.0》][paper1-url]首次系统评估了Agent优化收益能否在持续学习中累积。通过构建基于Terminal-Bench 2.0的两阶段持续学习评估框架，对比GEPA、Meta Harness和RELAI-VCL三种方法后发现：只有内置回归控制的方法能实现正向迁移和持续改进，最终得分达到76.4%，显著高于基线的58.7%。

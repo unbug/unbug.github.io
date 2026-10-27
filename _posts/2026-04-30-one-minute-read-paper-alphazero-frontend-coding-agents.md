@@ -3,8 +3,9 @@ layout: post
 title:  "一分钟读论文：《Agent实现AlphaZero流水线》"
 author: unbug
 categories: [AI, MultiAgent, MachineLearning]
-image: assets/images/article-40-alphazero.jpg
+image: assets/images/article-40-alphazero.svg
 tags: [AlphaZero, ConnectFour, CodingAgent, SelfPlay, FrontierModel]
+description: "让四个前沿编程Agent按简洁描述在三小时内自主实现AlphaZero自对弈流水线并与求解器对战，Claude Opus 4.7八次试验七次获胜，该任务三个月内从无法完成变为接近饱和。"
 ---
 
 斯坦福等机构研究者发表的论文[《Frontier Coding Agents Can Now Implement an AlphaZero Self-Play Machine Learning Pipeline For Connect Four That Performs Comparably to an External Solver》][paper1-url]，系统评估了四个前沿编程Agent在自主实现AlphaZero自对弈流水线任务上的能力，发现Claude Opus 4.7在八次试验中七次击败Pascal Pons求解器，且该任务在三个月内从"无法完成"发展到"接近饱和"。

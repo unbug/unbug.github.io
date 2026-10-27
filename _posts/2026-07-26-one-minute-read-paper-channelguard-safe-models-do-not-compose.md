@@ -3,6 +3,7 @@ layout: post
 title:  "一分钟读论文：《安全的模型为何组合后不再安全？》"
 author: unbug
 categories: [AI, Security]
+description: "对多Agent流水线的trace评估显示，即使每个模型单独安全，组合后安全性显著下降，表面零成功率的管道实际依赖云端服务过滤器。"
 image: assets/images/channelguard-framework.svg
 tags: [multi-agent, agent-safety, adversarial-ml]
 ---

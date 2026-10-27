@@ -1,10 +1,11 @@
 ---
-title: "一分钟读论文：《SWE-Doctor——用多面 Bug 复现测试引导 Agent》"
+title: "一分钟读论文：《SWE-Doctor：诊断引导修Bug》"
 author: unbug
 categories: [AI, SoftwareEngineering]
 image: assets/images/swe-doctor.svg
 tags: [swe-agent, bug-reproduction-tests, runtime-diagnosis, multi-faceted-testing]
 layout: post
+description: "论文把Bug复现测试从事后验证升级为运行时诊断，引导软件工程Agent生成完整补丁，在SWE-bench两个基准上稳定超越基线方法。"
 ---
 
 本文讨论的论文是 SWE-Doctor: Guiding Software Engineering Agents with Runtime Diagnosis from Multi-Faceted Bug Reproduction Tests，arXiv:2607.00990，由新加坡国立大学和中国科学技术大学联合完成。论文链接：https://arxiv.org/abs/2607.00990

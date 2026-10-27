@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "一分钟读论文：《TOKI：LLM Agent持久记忆矛盾解决的双时间算子代数》"
+title:  "一分钟读论文：《TOKI：记忆矛盾的双时间算子代数》"
 author: unbug
 categories: [AI, Agents]
 image: assets/images/toki-bitemporal-memory.svg
 tags: [llm-agent, memory, database-theory, formal-methods]
+description: "论文把智能体持久记忆中的矛盾解决形式化为写入时的并发控制问题，提出双时间算子代数统一四种写入启发式，每个算子带隔离前置条件与溯源标注，并保留被否决事实的审计行。"
 ---
 
 Ziming Wang 的论文[《TOKI: A Bitemporal Operator Algebra for Contradiction Resolution in LLM-Agent Persistent Memory》][paper1-url]，将LLM Agent持久记忆中的矛盾解决形式化为写时并发控制问题。现有生产系统使用四种启发式方法（最后写入获胜、证据加权合并、等待确认、按规则策略），但都没有声明其假设的隔离级别或承认的写时异常。论文提出TOKI框架，将四种启发式统一为双时间算子族，每个算子携带隔离前置条件和溯源标注，并保留被否决事实的审计行。

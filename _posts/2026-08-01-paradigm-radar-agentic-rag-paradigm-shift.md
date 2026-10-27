@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AI 范式雷达：《Agentic RAG：让检索系统学会自我反思》"
+title: "AI 范式雷达：《Agentic RAG：检索学会自我反思》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-agentic-rag-paradigm-shift.svg
 tags: [agentic-rag, retrieval-augmented-generation, llm, multi-hop-reasoning, self-reflection]
+description: "剖析传统RAG单次检索在复杂问题上的天花板，论证Agentic RAG用自我反思与多跳检索把幻觉率降低30%到50%，代价是延迟与Token上升。"
 ---
 
 如果你正在构建一个需要回答复杂问题的 AI 应用，你可能已经发现传统 RAG 的天花板：当用户问"某公司的 CEO 在哪个大学获得了什么学位？"时，一次向量检索往往只能命中其中一个事实片段，答案要么不完整，要么干脆产生幻觉。最新的研究表明，Agentic RAG 能将这类多跳问题的幻觉率降低 30% 到 50%，代价是延迟增加约 2 到 4 倍、Token 消耗增加约 1.5 到 3 倍。这篇文章将带你理解 Agentic RAG 的核心原理，分析五篇关键论文，并给出一条从传统 RAG 迁移的实操路径。

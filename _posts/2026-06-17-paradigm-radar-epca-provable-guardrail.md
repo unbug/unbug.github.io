@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "一分钟读论文：《用形式化逻辑给 AI Agent 装上可证明的安全护栏》"
+title: "一分钟读论文：《用形式化逻辑装上可证明的安全护栏》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-epca-provable-guardrail.svg
 tags: [agent-security, formal-verification, smt-solver, guardrail, ePCA]
+description: "ePCA把Agent操作意图形式化为逻辑约束，由SMT求解器做确定性安全验证，用逻辑不可满足性替代语义概率判断，实验实现零攻击成功率与零误报率，核心计算延迟仅0.44毫秒。"
 ---
 
 如果你正在构建 AI 智能体，你可能已经发现一个令人不安的事实：语义护栏可以被绕过。无论你的提示词工程做得多精细，总有人能找到一种措辞方式让 Agent 执行它本不该做的事。中国科学技术大学 Benlong Wu 等人最近发表的论文[《Provably Secure Agent Guardrail via ePCA》][paper1-url]提出了一种根本性的范式转移——不再依赖经验语义匹配，而是用一阶逻辑将 Agent 意图形式化为数学约束，由 SMT 求解器进行确定性验证。当不安全行为被映射为逻辑悖论时，Agent 在逻辑层面陷入不可达状态死锁。实验结果显示：零攻击成功率、零误报率，核心计算延迟仅 0.44ms。
@@ -77,7 +78,6 @@ def check_guardrail(action_type, amount, has_auth, target_balance):
     result = s.check()
     return "ALLOW" if result == sat else "DENY"
 
-# 测试用例
 print(check_guardrail("transfer", 500, True, 100))   # ALLOW
 print(check_guardrail("transfer", 5000, False, 6000)) # DENY (无授权大额)
 ```

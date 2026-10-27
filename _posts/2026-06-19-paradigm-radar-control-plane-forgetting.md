@@ -5,6 +5,7 @@ author: unbug
 categories: [AI, Agent]
 image: assets/images/control-plane-forgetting-spectrum.svg
 tags: [AgentMemory,ForgettingEvaluation,ControlPlaneArchitecture]
+description: "ForgetEval基准含1385个测试用例，把遗忘从记忆评估中分离为独立维度，通过十三种系统配置对比证明LLM在pipeline中的控制面放置位置决定可恢复的遗忘失败模式，遗忘能力并非回忆能力的副产品。"
 ---
 
 康奈尔大学与DeepLethe合作的一篇论文[《Control-Plane Placement Shapes Forgetting》][paper1-url]，首次将"遗忘"从Agent记忆评估中分离为独立维度。现有基准测试几乎全部只测量recall能力，而生产环境中最致命的故障恰恰是forgetting failure——系统成功检索了不该出现的信息。论文提出ForgetEval基准（1385 case）和十三种系统配置对比，证明Agent记忆系统中LLM在pipeline中的放置位置决定了系统能恢复哪些遗忘失败模式，遗忘能力不是recall能力的副产品，而是由控制面架构设计决定的独立维度。

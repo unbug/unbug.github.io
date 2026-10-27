@@ -1,56 +1,41 @@
-# One-Minute Read: STAIR — 编码代理的分层轨迹抽象与经验复用
+---
+layout: post
+title:  "一分钟读论文：《编码 Agent 的分层经验复用》"
+author: unbug
+categories: [AI, LLM]
+image: assets/images/stair-hierarchical-trajectory-abstraction.svg
+tags: [llm, coding-agents, agent-memory, agentic-coding]
+description: "STAIR 框架把编码代理历史修复轨迹抽象成分层可复用计划；搭配开源模型 MiniMax M2.5 在 SWE-bench Verified 达 81.2% Pass@1 排名第一，框架质量可弥补模型能力差距。"
+---
 
-## Hook：让 AI 编程代理像人类专家一样"记住"修复经验
+Concordia University（康考迪亚大学）与华为团队提出的论文[《Reusing Past Repairs Through Hierarchical Trajectory Abstraction for Coding Agents》][paper1-url]（arXiv:2607.29658）针对一个被忽视的浪费：软件维护占开发生命周期的 `50%-70%`，而 SWE-agent、AutoCodeRover、OpenHands 等 LLM 驱动的自主代码修复代理把每个 issue 当作独立任务，运行结束即丢弃历史修复轨迹中的程序性知识。STAIR（分层轨迹抽象框架）把历史修复轨迹转化为多层次、可复用的计划，使代理能从过去经验中学习。
 
-软件维护占整个开发生命周期的 50%-70%，而当前大多数 LLM 驱动的自主代码修复代理（SWE-agent、AutoCodeRover、OpenHands）将每个 issue 视为独立任务——每次运行结束后，它们丢弃嵌入在历史修复轨迹中的程序性知识。Concordia University 与华为团队提出的 STAIR 框架从根本上改变了这一范式：它将历史修复轨迹转化为多层次、可复用的计划，使代理能够像人类专家一样从过去的经验中学习。
+![STAIR 分层轨迹抽象：35 个原始步骤逐级抽象为中层策略与高层原则，SWE-bench Verified 达 81.2% Pass@1]({{ site.baseurl }}/assets/images/stair-hierarchical-trajectory-abstraction.svg)
 
-## 核心问题：代理为何需要"程序性记忆"？
+## 程序性记忆的三个缺口
 
-认知科学研究表明，人类专家在解决新问题时，本质上是在进行案例推理（case-based reasoning）——从记忆中检索类似案例，提取可迁移的策略，并将其适配到当前情境中。然而，现有代码修复代理的行为类似于"失忆症患者"：即使两个高度相似的 issue 被先后提交给同一个代理，代理也会像第一次遇到一样重新探索整个修复过程。
+认知科学研究显示，人类专家解决新问题时本质上是在做案例推理（case-based reasoning，从记忆中检索类似案例、提取可迁移策略并适配当前情境）。现有代码修复代理的行为则类似「失忆症患者」：两个高度相似的 issue 先后提交给同一个代理，代理仍会像第一次遇到一样重新探索修复过程。近期研究（Lingxi、SWE-Exp、ExpeRepair）开始探索知识复用，但有三个局限：仅以单一粒度表示知识；检索到的知识直接注入提示而不适配目标 issue；未关联相似修复轨迹以提取反复出现的模式。
 
-尽管近期一些研究开始探索知识复用（Lingxi、SWE-Exp、ExpeRepair），但它们面临三个关键局限：仅从单一粒度级别表示知识；将检索到的知识直接注入提示而不针对目标 issue 适配；未将相似修复轨迹相关联以提取反复出现的模式。
+## 四层闭环与分层抽象
 
-## STAIR 框架：四层闭环设计
+STAIR 的核心创新是**分层轨迹抽象**，框架由四个模块构成「收集-抽象-检索-应用」闭环。**程序性知识构建**：在被解决的历史 issue 上运行修复代理收集轨迹，按故障定位、规划、执行与验证三阶段组织。**分层轨迹抽象**：两个基于 LLM 的操作符迭代构建层次结构——分组操作符把共享一致程序意图的连续步骤划分为一组，抽象操作符把每组提炼为包含修复意图、关键动作、适用条件和常见陷阱的结构化节点。一个典型 Django issue 修复从 Level 0 的 `35` 个细粒度步骤，抽象为 Level 1 的中层策略（「功能被 UI 阻止时，还要检查后端是否直接拒绝」），最终提炼为 Level 2 的高层原则（「在每个系统层级强制意图，而非仅可见入口点」）。**指导检索与计划生成**：基于文本相似度评分、LLM 验证器过滤和排序，把抽象指导适配为针对当前问题的可执行计划。**计划引导的问题解决**：阶段特定计划在修复中注入代理提示，引导但不强制。
 
-STAIR（Hierarchical Trajectory Abstraction for Coding Agents）的核心创新在于**分层轨迹抽象**。其框架包含四个模块，形成完整的"收集-抽象-检索-应用"闭环：
+## 结果、边界与迁移性
 
-**程序性知识构建**：通过在被解决的历史 issue 上运行修复代理来收集历史轨迹，按故障定位、规划、执行与验证三个阶段组织。
+在 SWE-bench Verified（`500` 个真实 GitHub issue）上，**STAIR + MiniMax M2.5（开源权重模型）达到 `81.2%` Pass@1**，在所有对比代理中排名第一；STAIR + GPT-5 达到 `79.2%`，与基于 Claude 4.5 Opus 的 Sonar Foundation Agent 持平，框架质量可弥补骨干模型差距。消融实验验证了层次化抽象的贡献：完整多层抽象（`76.0%`）优于仅低层（`62.4%`）、仅高层（`56.8%`），远超无抽象的原始轨迹（`53.6%`）；混合多个抽象级别比任何单一级别高出 `13-19` 个百分点。跨代理泛化测试中，STAIR 计划无需代码修改即可转移到 mini-SWE-agent v2，Pass@1 从 `75.8%` 提升至 `81.0%`，token 用量减少约 `3.5%`。
 
-**分层轨迹抽象（核心创新）**：使用两个基于 LLM 的操作符迭代地构建层次结构——分组操作符将共享一致程序意图的连续步骤划分为一组；抽象操作符将每组提炼为包含修复意图、关键动作、适用条件和常见陷阱的结构化节点。一个典型的 Django issue 修复从 Level 0 的 35 个细粒度步骤，被抽象为 Level 1 的中层策略（"当功能通过 UI 被阻止时，还需检查后端是否直接拒绝它"），最终提炼为 Level 2 的高层原则（"始终在每个系统层级强制执行意图，而不仅仅在可见入口点"）。
-
-**指导检索与计划生成**：基于文本相似度评分、LLM 验证器过滤和排序，将抽象指导适配为针对当前问题的可执行计划。
-
-**计划引导的问题解决**：生成的阶段特定计划在修复过程中注入代理提示——引导但不强制，确保灵活性与适应性。
-
-## 实验结果：开源模型超越最强商业模型
-
-在 SWE-bench Verified（500 个真实 GitHub issue）上的表现令人瞩目：
-
-- **STAIR + MiniMax M2.5（开源权重模型）达到 81.2% Pass@1**，在所有对比代理中排名第一
-- STAIR + GPT-5 达到 79.2%，与基于 Claude 4.5 Opus 的 Sonar Foundation Agent 持平
-
-这一结果具有里程碑意义：框架设计的质量可以显著弥补骨干模型能力的差距。对于资源受限的组织而言，选择优秀的代理架构比单纯追求最强模型更具性价比。
-
-消融实验进一步验证了层次化抽象的核心贡献：完整多层抽象（76.0%）优于仅低层（62.4%）、仅高层（56.8%），更远超无抽象的原始轨迹（53.6%）。混合多个抽象级别比任何单一级别高出 13-19 个百分点。
-
-跨代理泛化测试中，STAIR 生成的计划在无代码修改的情况下转移到 mini-SWE-agent v2，Pass@1 从 75.8% 提升至 81.0%，同时 token 使用量减少约 3.5%。
-
-## 局限与风险
-
-STAIR 并非完美。**冷启动问题**：预处理成本约 211 美元（479 个轨迹），新仓库在积累足够历史之前无法获得有效指导。**计划质量依赖 LLM**：分组和抽象操作均基于 GPT-5，结果受底层模型能力制约。实验仅限于 Python 代码库，跨语言迁移效果尚未验证。回退分析显示约 19% 的情况下 STAIR 未能解决而基线解决了的问题，主要源于计划不完整或代理执行偏离。
-
-## 未来观察点
-
-STAIR 的分层轨迹抽象方法具有超越代码修复的广泛适用性：Web 导航、数据分析、科学发现等多步推理场景均可受益；多智能体协作系统中不同角色可共享层次化程序性记忆；个性化 AI 助手可将用户偏好编码为多层次可复用知识。未来方向包括失败轨迹的价值挖掘（将"什么不起作用"编码为反模式知识）、动态层级调整（根据问题复杂度自适应抽象深度），以及跨代理计划共享的标准化接口。
-
-## 行动清单
-
-1. **关注 STAIR 代码开源**：目前论文未公开代码，开源后将加速社区验证
-2. **评估在内部 issue tracker 中的应用潜力**：若团队有持续积累的 bug 修复记录，STAIR 式经验复用可显著降低重复劳动
-3. **跟踪失败轨迹利用方向**：从失败修复中提取"反模式"知识是极具价值的未来研究方向
+边界同样明确：**冷启动问题**——预处理成本约 `211` 美元（`479` 个轨迹），新仓库积累足够历史前无法获得有效指导；分组与抽象均基于 GPT-5，计划质量受底层模型制约；实验仅限 Python 代码库；回退分析显示约 `19%` 的情况下 STAIR 未解决而基线解决了，多源于计划不完整或执行偏离。本站[《追踪错误生命周期以识别长程Agent轨迹中的关键失败》]({{ site.baseurl }}/one-minute-read-paper-trajdebug-error-lifecycle-agent-trajectories/)与[《软件智能体的修复策略探索》]({{ site.baseurl }}/one-minute-read-paper-phoenixrepair-rethinking-repair-strategy-exploration-in-software-agents/)同属把修复轨迹变成结构化知识的线索。
 
 ## References
+- [Reusing Past Repairs Through Hierarchical Trajectory Abstraction for Coding Agents（arXiv:2607.29658）][paper1-url]
+- [PhoenixRepair: Rethinking Repair Strategy Exploration in Software Agents][links-1]
+- [Case-Based Reasoning: Foundational Issues][links-2]
+- [追踪错误生命周期以识别长程 Agent 轨迹中的关键失败（站内解读）][links-3]
+- [软件智能体的修复策略探索（站内解读）][links-4]
 
-1. Xu, Y., Zhou, J., Pan, R., & Chen, T.-H. (2026). Reusing Past Repairs Through Hierarchical Trajectory Abstraction for Coding Agents. arXiv:2607.29658v1 [cs.SE].
-2. Jiang, T., et al. (2026). PhoenixRepair: Rethinking Repair Strategy Exploration in Software Agents. arXiv:2607.18859v1.
-3. Aamodt, T., & Plaza, E. (1994). Case-Based Reasoning: Foundational Issues. AI Communications.
+
+[paper1-url]: https://arxiv.org/abs/2607.29658
+[links-1]: https://arxiv.org/abs/2607.18859
+[links-2]: https://content.iospress.com/articles/ai-communications/aic16-04-01
+[links-3]: {{ site.baseurl }}/one-minute-read-paper-trajdebug-error-lifecycle-agent-trajectories/
+[links-4]: {{ site.baseurl }}/one-minute-read-paper-phoenixrepair-rethinking-repair-strategy-exploration-in-software-agents/

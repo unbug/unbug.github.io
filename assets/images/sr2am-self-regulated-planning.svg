@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Noto Serif SC','Songti SC',serif">
+  <defs>
+    <style>
+      .k { font-size: 13px; letter-spacing: 3px; fill: #8B9588; }
+      .rl { font-size: 15px; fill: #47524E; }
+      .val { font-size: 18px; font-weight: 700; fill: #1A1B1E; }
+      .b { font-size: 12.5px; fill: #9AA49C; }
+      .chip { font-size: 12.5px; font-weight: 600; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F1F5F2"/>
+    </linearGradient>
+    <linearGradient id="gLantern" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D9A03F"/><stop offset="1" stop-color="#EFC765"/>
+    </linearGradient>
+    <linearGradient id="gSea" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2E6E77"/><stop offset="1" stop-color="#5FA3AB"/>
+    </linearGradient>
+    <linearGradient id="gMoss" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3E8F6A"/><stop offset="1" stop-color="#74BC93"/>
+    </linearGradient>
+    <linearGradient id="gClay" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C2452C"/><stop offset="1" stop-color="#E07B4C"/>
+    </linearGradient>
+    <linearGradient id="gBrass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8A6F2E"/><stop offset="1" stop-color="#BC9B4F"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1104" cy="106" r="148" fill="#2E6E77" opacity="0.06"/>
+  <circle cx="72" cy="618" r="112" fill="#D9A03F" opacity="0.07"/>
+  <rect x="64" y="44" width="44" height="5" fill="#B5442E"/>
+
+  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2605.22138 · CMU / IUBIM</text>
+  <text x="64" y="128" font-size="37" font-weight="700" fill="#1A1B1E">30B 掌灯，走出 685B 的航程</text>
+  <text x="64" y="158" font-size="15.5" fill="#647068">SR2AM 三系统分工：反应、模拟推演、外加一个决定何时掌灯的领航员</text>
+
+  <!-- lighthouse motif -->
+  <g>
+    <path d="M 1058 74 L 1078 74 L 1086 168 L 1050 168 Z" fill="url(#gSea)" opacity="0.85"/>
+    <rect x="1044" y="168" width="48" height="10" fill="url(#gBrass)"/>
+    <rect x="1056" y="56" width="24" height="18" fill="url(#gLantern)"/>
+    <path d="M 1052 56 L 1068 40 L 1084 56 Z" fill="url(#gClay)"/>
+    <path d="M 1080 66 L 1148 44 L 1148 88 Z" fill="url(#gLantern)" opacity="0.35"/>
+    <path d="M 1056 66 L 992 42 L 992 86 Z" fill="url(#gLantern)" opacity="0.2"/>
+    <line x1="1018" y1="182" x2="1118" y2="182" stroke="#2E6E77" stroke-width="2" opacity="0.4"/>
+    <text class="b" x="1136" y="200" text-anchor="end">领航员 · System III</text>
+  </g>
+
+  <!-- left: parameter leap anchor -->
+  <g>
+    <rect x="64" y="200" width="700" height="86" fill="#2E6E77" opacity="0.07"/>
+    <text x="92" y="252" font-size="30" font-weight="700" fill="#1A1B1E">30B</text>
+    <text x="160" y="250" font-size="16" fill="#47524E">参数 →</text>
+    <text x="230" y="252" font-size="30" font-weight="700" fill="#C2452C">685B ~ 1T</text>
+    <text x="428" y="248" font-size="14" fill="#647068">级系统的实际表现 · 参数量差数十倍</text>
+    <text class="b" x="92" y="276">靠的不是堆参数，是推理策略</text>
+
+    <rect x="64" y="302" width="700" height="64" fill="#2E6E77" opacity="0.07"/>
+    <text class="rl" x="268" y="340" text-anchor="end">Token 消耗 · 对比始终深规划</text>
+    <line x1="320" y1="334" x2="404" y2="334" stroke="url(#gMoss)" stroke-width="2.5"/>
+    <circle cx="320" cy="334" r="7" fill="#FFFFFF" stroke="#2E6E77" stroke-width="3"/>
+    <circle cx="404" cy="334" r="9" fill="url(#gMoss)"/>
+    <text class="val" x="424" y="341" fill="#3E8F6A">-25.8% ~ -95.3%</text>
+    <text class="b" x="604" y="340">选择性规划省下大部分推演</text>
+
+    <rect x="64" y="380" width="700" height="64" fill="#D9A03F" opacity="0.09"/>
+    <text class="rl" x="268" y="418" text-anchor="end">模型规模 · 均受益</text>
+    <line x1="320" y1="412" x2="368" y2="412" stroke="url(#gLantern)" stroke-width="2.5"/>
+    <circle cx="320" cy="412" r="7" fill="#FFFFFF" stroke="#8A6F2E" stroke-width="3"/>
+    <circle cx="368" cy="412" r="9" fill="url(#gLantern)"/>
+    <text class="val" x="388" y="419" fill="#8A6F2E">7B → 30B</text>
+    <text class="b" x="472" y="418">训练数据越多，领航员判得越准</text>
+  </g>
+
+  <!-- right: configurator three lamps -->
+  <g>
+    <rect x="806" y="200" width="330" height="266" fill="#3E8F6A" opacity="0.07"/>
+    <text x="826" y="230" font-size="14" font-weight="700" fill="#1A1B1E">Configurator · 领航灯三挡</text>
+    <line x1="826" y1="242" x2="1096" y2="242" stroke="#CBD6CD" stroke-width="1"/>
+
+    <circle cx="842" cy="282" r="13" fill="url(#gLantern)"/>
+    <text x="868" y="279" font-size="14.5" font-weight="700" fill="#1A1B1E">make new plan</text>
+    <text class="b" x="868" y="299">启动模拟推演 · System II 出手</text>
+
+    <circle cx="842" cy="344" r="13" fill="url(#gSea)"/>
+    <text x="868" y="341" font-size="14.5" font-weight="700" fill="#1A1B1E">continue existing plan</text>
+    <text class="b" x="868" y="361">沿用原计划 · System I 执行</text>
+
+    <circle cx="842" cy="406" r="13" fill="url(#gClay)"/>
+    <text x="868" y="403" font-size="14.5" font-weight="700" fill="#1A1B1E">skip planning</text>
+    <text class="b" x="868" y="423">直接反应 · 低延迟输出</text>
+  </g>
+
+  <!-- bottom -->
+  <line x1="64" y1="500" x2="1136" y2="500" stroke="#DFE6DF"/>
+  <text class="rl" x="64" y="540">多数航步落在：</text>
+  <rect x="200" y="520" width="180" height="28" rx="14" fill="url(#gSea)" opacity="0.18"/>
+  <text x="290" y="539" text-anchor="middle" class="chip" fill="#245C64">continue existing plan</text>
+  <rect x="396" y="520" width="126" height="28" rx="14" fill="url(#gClay)" opacity="0.16"/>
+  <text x="459" y="539" text-anchor="middle" class="chip" fill="#A5341F">skip planning</text>
+  <text class="b" x="540" y="539">真正要推理的情境才点亮推演灯（决策分布为论文自述）</text>
+
+  <text x="64" y="600" font-size="18" font-weight="700" fill="#1A1B1E">小模型的瓶颈常在何时该想，不在能不能想。</text>
+  <text class="b" x="1136" y="642" text-anchor="end">性能与 token 数据为论文自述口径 · 预印本未经同行评审 · Micropaper</text>
+</svg>

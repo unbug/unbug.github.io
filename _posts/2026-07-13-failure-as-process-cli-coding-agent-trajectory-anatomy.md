@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "一分钟读论文：《失败是一个过程：CLI编码代理轨迹解剖》"
+title: "一分钟读论文：《失败是过程：编码代理轨迹解剖》"
 author: unbug
 categories: [AI, Engineering]
 image: assets/images/failure-as-process-cli-coding-agent-trajectory-anatomy.svg
 tags: [cli-agent, failure-analysis, trajectory-diagnosis, agent-reliability]
+description: "论文分析3843条CLI编码代理执行轨迹，发现决定性错误中位发生在第7步，修复窗口中位仅3步，超过一半错误源于认知性缺陷而非能力边界。"
 ---
 
 清华大学和阿里巴巴达摩院合作的一篇论文[《Failure as a Process: An Anatomy of CLI Coding Agent Trajectories》][paper1-url]，首次将CLI编码代理的失败建模为时间过程而非静态标签。通过对3843条执行轨迹的分析，论文发现决定性错误的中位发生步仅为第7步，而错误暴露的中位滞后高达10步——这意味着大多数失败在可修复窗口关闭后仍在徒劳地继续执行。

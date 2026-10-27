@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "一分钟读论文：《基于物理的世界建模与视觉语言智能体》"
+title:  "一分钟读论文：《物理世界建模与视觉语言智能体》"
 author: unbug
 categories: [AI, Robotics]
+description: "Agentic Real2Sim用视觉语言智能体自动完成重建、参数推断与仿真组装，生成episodic twin，三个场景转换成功率接近前沿模型。"
 image: assets/images/agentic-real2sim-framework.svg
 tags: [agent-foundation-models, world-models, embodied-ai, vision-language-agents, real-to-sim]
 ---

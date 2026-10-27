@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "AI 范式雷达：《CodeAct — Agent 执行范式的根本性转移》"
+title:  "AI 范式雷达：《CodeAct：Agent执行范式转移》"
 author: unbug
 categories: [AI, ParadigmRadar]
+description: "CodeAct让Agent一次生成完整程序，在隔离微VM中批量执行工具调用后返回聚合结果，把多轮ReAct决策压成程序化执行，减少六到七成推理开销并降低错误率。"
 image: assets/images/paradigm-radar-codeact-agent-execution.svg
 tags: [codeact, agent-framework, microsoft, hyperlight, tool-calling, execution-model]
 ---
@@ -63,8 +64,7 @@ Microsoft 在 BUILD 2026 上发布的 **CodeAct** 正在改变这个局面。它
 
 CodeAct 的核心思想可以用一句话概括：**让 Agent 写代码，而不是写决策**。
 
-### 传统模式 vs CodeAct 模式对比
-
+**传统模式 vs CodeAct 模式对比**
 **传统 ReAct 循环**（左）：
 ```
 ┌─────────┐     ┌──────────┐     ┌──────────┐
@@ -94,14 +94,12 @@ CodeAct 的核心思想可以用一句话概括：**让 Agent 写代码，而不
 └─────────┘
 ```
 
-### CodeAct 的三个关键组件
-
+**CodeAct 的三个关键组件**
 **1. 程序化输出（Programmatic Output）**
 
 模型不再输出"下一步调用哪个工具"，而是直接生成一个可执行的 Python 程序。这个程序通过统一的 `call_tool()` API 来调用所有需要的工具：
 
 ```python
-# CodeAct 生成的程序示例
 result_search = call_tool("web_search", query="latest AI agent benchmarks")
 result_download = call_tool("file_download", url=result_search[0].url)
 result_analysis = call_tool("llm_analyze", 
@@ -132,8 +130,7 @@ write_file("research_summary.md", format_output(result_analysis))
 
 CodeAct 的安全模型建立在 Microsoft 的 **Hyperlight** 项目之上。理解它为什么重要，需要先了解传统沙箱方案的痛点。
 
-### 传统沙箱 vs Hyperlight micro-VM
-
+**传统沙箱 vs Hyperlight micro-VM**
 | 维度 | Docker 容器 | Firecracker micro-VM | Hyperlight micro-VM |
 |------|------------|---------------------|-------------------|
 | 启动时间 | ~2s | ~125ms | **<10ms** |
@@ -150,8 +147,7 @@ CodeAct:   宿主 OS → Hyperlight Runtime → 隔离执行环境
 
 这种架构使得每次 CodeAct 执行的额外开销可以忽略不计——启动一个微 VM 的时间比一次模型推理的延迟还要短。这意味着你可以为每个 Agent 任务分配独立的隔离环境，而不必担心资源浪费。
 
-### 安全边界设计
-
+**安全边界设计**
 CodeAct 的安全模型采用**最小权限原则**：
 
 1. **工具白名单**：只有显式注册的工具才能被 `call_tool()` 调用
@@ -160,7 +156,6 @@ CodeAct 的安全模型采用**最小权限原则**：
 4. **超时控制**：每个程序执行有最大运行时间限制
 
 ```python
-# .NET 中的安全配置示例
 var codeActOptions = new CodeActOptions
 {
     MaxExecutionTime = TimeSpan.FromSeconds(30),
@@ -180,23 +175,18 @@ var codeActOptions = new CodeActOptions
 
 下面是一个最小可运行的 CodeAct Agent 示例。我们使用 Microsoft Agent Framework (MAF) 的 Python SDK，它同时支持 .NET 和 Python 两种运行时。
 
-### 环境准备
-
+**环境准备**
 ```bash
-# 安装 MAF 核心包
 pip install agent-framework
 
-# 安装 CodeAct alpha 包
 pip install agent-framework-hyperlight
 ```
 
-### 最小代码实现
-
+**最小代码实现**
 ```python
 from agent_framework import create_harness_agent, create_codeact_executor
 from agent_framework.tools import WebSearchTool, FileReadTool
 
-# 1. 创建基础 Agent
 agent = create_harness_agent(
     client=openai_client,
     max_context_window_tokens=128_000,
@@ -204,17 +194,14 @@ agent = create_harness_agent(
     description="A research assistant that uses CodeAct for efficient tool execution.",
 )
 
-# 2. 注册工具
 tools = [WebSearchTool(), FileReadTool()]
 
-# 3. 启用 CodeAct 执行器
 executor = create_codeact_executor(
     tools=tools,
     max_program_length=500,      # 程序最大长度（字符）
     execution_timeout_seconds=30,
 )
 
-# 4. 运行任务
 result = agent.run(
     prompt="搜索最新的 AI Agent 基准测试结果，提取 Top 3 发现并写入 summary.md",
     executor=executor,
@@ -223,8 +210,7 @@ result = agent.run(
 print(result.summary)
 ```
 
-### 执行路径图解
-
+**执行路径图解**
 ```
 用户请求 → CodeAct Executor
                 │
@@ -247,8 +233,7 @@ print(result.summary)
         聚合结果返回给用户
 ```
 
-### 预期输出
-
+**预期输出**
 与传统 ReAct 模式相比，同样的任务在 CodeAct 模式下：
 
 - **推理回合数**：1 次（vs ReAct 的 4+ 次）
@@ -263,8 +248,7 @@ print(result.summary)
 
 理解 CodeAct 的价值，最好的方式是把它放在 Agent 编排的演进脉络中来看。
 
-### 三种执行模式的对比
-
+**三种执行模式的对比**
 **ReAct（推理-行动循环）** — 经典模式：
 ```
 For each step:
@@ -291,8 +275,7 @@ For each step:
 4. If needed, model generates revised program
 ```
 
-### 决策矩阵
-
+**决策矩阵**
 | 场景 | ReAct | Plan-and-Execute | CodeAct |
 |------|-------|-----------------|---------|
 | 简单工具调用（1-2个） | ✅ 适合 | ⚠️ 过度设计 | ⚠️ 杀鸡用牛刀 |
@@ -310,8 +293,7 @@ For each step:
 
 ## 实际案例：性能对比与适用边界
 
-### 基准测试数据
-
+**基准测试数据**
 根据 Microsoft BUILD 2026 发布的数据，在典型的 Agent 任务场景下（5-10 个工具调用）：
 
 | 指标 | ReAct | Plan-and-Execute | CodeAct |
@@ -323,8 +305,7 @@ For each step:
 
 关键发现：CodeAct 将端到端延迟降低了约 **67%**，Token 消耗减少了约 **67%**。更重要的是，错误率也显著下降——因为减少了中间状态传递的环节，出错点更少。
 
-### CodeAct 的适用边界
-
+**CodeAct 的适用边界**
 CodeAct 并非万能药。以下场景需要谨慎使用：
 
 **不适合的场景：**
@@ -337,8 +318,7 @@ CodeAct 并非万能药。以下场景需要谨慎使用：
 - **批量 API 调用**：同时查询多个数据源并聚合结果
 - **文档生成**：基于多源信息自动生成结构化内容
 
-### Before vs After：一个真实场景
-
+**Before vs After：一个真实场景**
 假设你需要构建一个竞品分析 Agent，需要：
 1. 搜索 5 个竞品的最新功能更新
 2. 下载各竞品的定价页面

@@ -1,10 +1,11 @@
 ---
-title: "一分钟读论文：《LLM-as-a-Verifier——将验证作为第四种缩放轴》"
+title: "一分钟读论文：《LLM验证器：验证作为第四种缩放轴》"
 author: unbug
 categories: [AI, LLM]
 image: assets/images/llm-as-a-verifier.svg
 tags: [llm, verification, agent, scaling-laws]
 layout: post
+description: "论文提出连续评分验证框架，把验证能力当作可独立缩放的第四种维度，在四个基准全部刷新最高记录，并为Agentic RL训练提供高密度反馈信号。"
 ---
 
 本文讨论的论文是 LLM-as-a-Verifier: A General-Purpose Verification Framework，arXiv:2607.05391，由斯坦福大学和加州大学伯克利分校共九位研究者联合完成。论文链接：[arXiv:2607.05391](https://arxiv.org/abs/2607.05391)

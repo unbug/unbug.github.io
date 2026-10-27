@@ -3,8 +3,9 @@ layout: post
 title:  "一分钟读论文：《同等预算下，单智能体为何胜过多智能体？》"
 author: unbug
 categories: [AI, MultiAgent]
-image: assets/images/article-49-single-vs-multi-agent.jpg
+image: assets/images/article-49-single-vs-multi-agent.svg
 tags: [SingleAgent, MultiAgent, Reasoning, InformationTheory, TokenBudget]
+description: "在推理token预算严格相等的前提下对比单智能体与多智能体系统，发现单智能体在多跳推理任务上是性能最优且耗token最少的默认架构，仅当上下文重度退化时多智能体才反超。"
 ---
 
 斯坦福大学的论文[《同等预算下，单智能体为何胜过多智能体？》][paper1-url]，在推理token预算严格相等的前提下，发现单智能体LLM系统在多跳推理任务上匹配或超越多智能体系统，为多智能体架构的效率优势提供了信息论层面的质疑。

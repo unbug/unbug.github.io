@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "一分钟读论文：《AgentGym2——从理想化基准到真实世界部署的评估范式转移》"
+title: "一分钟读论文：《AgentGym2：去理想化评估》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-agentgym2-de-idealized.svg
 tags: [AgentGym2, AgentEvaluation, Benchmarking, DeploymentReadiness, ToolDiscovery]
+description: "论文用去理想化环境评测Agent的真实部署能力，GPT-5平均分仅约44%，揭示理想化基准分数与真实世界可靠性之间存在巨大差距。"
 ---
 
 如果你正在构建生产级 AI 智能体，你可能已经发现一个令人不安的事实：在基准测试上表现优异的模型，在实际部署中却频频翻车。GPT-5 在 AgentGym2 上的平均分仅为 46.15（约 44%），Claude Sonnet 4.5 更是只有 37%。这揭示了一个被长期忽视的真相——**我们一直在用理想化的尺子，测量一个充满噪声和不确定性的真实世界**。
@@ -13,8 +14,7 @@ tags: [AgentGym2, AgentEvaluation, Benchmarking, DeploymentReadiness, ToolDiscov
 
 ## 为什么现有 Agent 基准不够用了
 
-### 理想化的陷阱
-
+**理想化的陷阱**
 过去几年，Agent 领域涌现了大量基准测试：ToolBench、WebArena、Aider-bench 等。这些基准在推动模型能力进步方面功不可没，但它们共享一个根本假设——**环境是理想的**。
 
 具体来说，这些基准通常具备以下特征：
@@ -26,8 +26,7 @@ tags: [AgentGym2, AgentEvaluation, Benchmarking, DeploymentReadiness, ToolDiscov
 
 这些特征使得基准测试更像是一场"开卷考试"——你知道有哪些工具可用、输入是什么格式、任务目标是什么。在这种环境下，模型只需要展示推理和规划能力即可。
 
-### 真实世界的残酷
-
+**真实世界的残酷**
 然而，生产环境中的 Agent 面临的是完全不同的挑战：
 
 - **工具需要主动发现**：环境中没有预定义的工具列表，Agent 需要通过探索找到可用的工具
@@ -39,8 +38,7 @@ tags: [AgentGym2, AgentEvaluation, Benchmarking, DeploymentReadiness, ToolDiscov
 
 ## AgentGym2 框架核心原理
 
-### 去理想化的四个维度
-
+**去理想化的四个维度**
 AgentGym2 通过四个相互正交的能力维度来评估 Agent：
 
 **1. 端到端流程执行（End-to-End Procedure Execution）**
@@ -59,8 +57,7 @@ AgentGym2 通过四个相互正交的能力维度来评估 Agent：
 
 真实世界的输入从不完美。AgentGym2 通过注入噪声和不完整信息来测试 Agent 的鲁棒性——当查询包含错误信息、歧义表述或无关内容时，Agent 能否仍然给出正确的结果？
 
-### 三种核心场景
-
+**三种核心场景**
 基于上述四个维度，AgentGym2 设计了三种典型场景：
 
 **复杂工具使用场景（Complex Tool Using）**：Agent 需要在开放环境中发现并组合多个在线工具来完成复杂任务。这是最接近真实部署的场景。
@@ -71,8 +68,7 @@ AgentGym2 通过四个相互正交的能力维度来评估 Agent：
 
 ## 实测数据：SOTA 模型的"翻车现场"
 
-### 整体表现
-
+**整体表现**
 AgentGym2 测试了 15 个主流模型，结果令人震惊：
 
 | 模型 | Avg@3 得分 | 说明 |
@@ -85,8 +81,7 @@ AgentGym2 测试了 15 个主流模型，结果令人震惊：
 
 **关键发现**：即使是 GPT-5，在 AgentGym2 上的得分也仅为约 44%。这意味着在真实世界部署场景下，超过一半的任务无法被正确完成。
 
-### 模型规模与性能的关系
-
+**模型规模与性能的关系**
 AgentGym2 揭示了模型规模与性能之间的清晰关系：
 
 | Qwen3 系列 | Avg@3 得分 |
@@ -97,14 +92,12 @@ AgentGym2 揭示了模型规模与性能之间的清晰关系：
 
 模型规模越大，性能越高。但这并不意味着"更大的模型就能解决所有问题"——GPT-5（当前最强专有模型）的得分也仅为 46.15。
 
-### Agentic Post-Training 的效果
-
+**Agentic Post-Training 的效果**
 一个重要的发现是：**Agentic post-training 可以显著提升开源模型的性能**。Nex-N1-32B（基于 Qwen3-32B 进行 agentic post-training）和 Nex-N1-671B（基于 DeepSeek-V3.1 进行 agentic post-training）分别比其基础模型提升了约 9.16% 和 10.53%。
 
 这表明，**针对 Agent 场景的专门训练可以显著缩小开源模型与专有模型之间的差距**。
 
-### 噪声对性能的影响
-
+**噪声对性能的影响**
 AgentGym2 通过注入噪声来测试模型的鲁棒性：
 
 - **Claude Sonnet 4.5**：引入噪声后性能下降 6.4%
@@ -114,8 +107,7 @@ AgentGym2 通过注入噪声来测试模型的鲁棒性：
 
 ## 失败模式分析：Agent 在真实世界中的弱点
 
-### 五大失败模式
-
+**五大失败模式**
 通过对 GPT-5 的细粒度错误分析，AgentGym2 识别出以下主要失败模式：
 
 | 失败模式 | 平均占比 | 说明 |
@@ -126,8 +118,7 @@ AgentGym2 通过注入噪声来测试模型的鲁棒性：
 | 指令误解（Instruction Misinterpretation） | 27.0% | 在数据分析场景中，Agent 未能精确对齐细粒度任务约束 |
 | 过早终止搜索（Premature Termination） | 35.2% | 在深度搜索场景中，Agent 在噪声环境中过早结束搜索 |
 
-### 深层洞察
-
+**深层洞察**
 这些失败模式揭示了一个核心问题：**当前 Agent 的核心弱点不在于推理能力本身，而在于对开放环境的探索能力和鲁棒性**。
 
 具体来说：
@@ -140,14 +131,12 @@ AgentGym2 通过注入噪声来测试模型的鲁棒性：
 
 ## 范式转移的深层含义：从 benchmark-driven 到 deployment-ready
 
-### 旧范式的局限
-
+**旧范式的局限**
 传统 Agent 基准测试的核心假设是：**如果模型在基准上表现好，那么它在生产环境中也会表现好**。这个假设在过去几年被广泛接受，但 AgentGym2 的数据明确推翻了它。
 
 原因很简单：基准测试评估的是"在理想条件下的推理能力"，而生产环境需要的是"在噪声和不确定性中的端到端执行能力"。这两者之间的差距，远比我们想象的要大。
 
-### 新范式的核心原则
-
+**新范式的核心原则**
 AgentGym2 代表的新范式包含三个核心原则：
 
 **1. 去理想化（De-idealization）**
@@ -162,8 +151,7 @@ Agent 的能力不仅仅体现在推理和规划上，更体现在从发现问�
 
 评估的最终目标不是"在基准上取得高分"，而是"在生产环境中可靠运行"。这意味着评估框架必须与生产环境的约束保持一致。
 
-### 对 Agent 开发的启示
-
+**对 Agent 开发的启示**
 这一范式转移对你的 Agent 开发工作意味着什么？
 
 1. **不要过度依赖基准分数**。一个在 ToolBench 上得 90% 的模型，可能在真实部署中表现远不如预期。

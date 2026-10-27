@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "一分钟读论文：《HarnessFix——从失败轨迹到可靠 Agent 的自动修复》"
+title: "一分钟读论文：《HarnessFix：失败轨迹自动修复》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-harnessfix-htir.svg
 tags: [agent-reliability, harness, trajectory-analysis, automated-debugging, llm-agents]
+description: "HarnessFix把碎片化的Agent失败轨迹编译成标准中间表示HTIR，将故障精确归因到基础设施层并生成可执行修复，推动Agent可靠性从被动诊断转向主动修复。"
 ---
 
 如果你正在构建 LLM Agent，你可能已经发现一个令人沮丧的事实：**大多数 Agent 失败不是模型不够聪明，而是执行环境（Harness）本身有缺陷。** 传统方法只告诉你"哪里失败了"，但从不告诉你"怎么修好它"。arXiv:2606.06324 提出的 HarnessFix 首次实现了从失败轨迹到自动修复的完整闭环——它将碎片化的执行证据编译为标准中间表示，精确归因到具体步骤和基础设施层，并生成可直接应用的修复操作符。本文将带你理解 HTIR 的核心设计，以及它如何改变 Agent 可靠性的工程范式。

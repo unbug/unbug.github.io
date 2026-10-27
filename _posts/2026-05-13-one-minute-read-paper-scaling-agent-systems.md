@@ -3,8 +3,9 @@ layout: post
 title:  "一分钟读论文：《多智能体什么时候该用、什么时候不该用？》"
 author: unbug
 categories: [AI, MultiAgent]
-image: assets/images/article-50-scaling-agent-systems.jpg
+image: assets/images/article-50-scaling-agent-systems.svg
 tags: [MultiAgent, Scaling, AgentArchitecture, GoogleResearch, Coordination]
+description: "Google Research用180组受控实验得出智能体缩放原则：可并行任务集中式协调提升明显，顺序推理任务反而下降39%到70%，预测模型可识别87%未见任务的最优架构。"
 ---
 
 Google Research用180组受控实验揭示了一个反直觉结论：多智能体协作在顺序推理任务上会导致39-70%的性能下降，而非提升。如果你的团队正在盲目堆智能体，建议你先读这篇。

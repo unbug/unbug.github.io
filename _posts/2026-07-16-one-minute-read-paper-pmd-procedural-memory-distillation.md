@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "一分钟读论文：《Procedural Memory Distillation：Agent经验复用的程序性记忆蒸馏》"
+title:  "一分钟读论文：《程序性记忆蒸馏与经验复用》"
 author: unbug
 categories: [AI, MachineLearning]
 image: assets/images/agent-world-model.svg
 tags: [llm, agent-memory, procedural-distillation, rlvr]
+description: "程序性记忆蒸馏方法把跨回合积累的过程性信号转化为可复用记忆，再蒸馏进策略权重，小模型在编程基准上较基线提升约八到十三点，推理阶段无需记忆模块参与。"
 ---
 
 Semih Yavuz 等人的论文[《Procedural Memory Distillation: Online Reflection for Self-Improving Language Models》][paper1-url]提出了一种将跨 episode 过程性信号转化为可复用程序性记忆并蒸馏进策略权重的方法。Qwen3-8B 在 LIVECODEBENCH 上较 SDPO 提升 7.9%~13.6%，且推理时无需记忆模块参与。

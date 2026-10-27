@@ -1,13 +1,16 @@
 ---
 layout: post
-title:  "一分钟读论文：《E3：AI Agent 何时知道任务很简单？》"
+title:  "一分钟读论文：《智能体何时知道任务简单》"
 author: unbug
 categories: [AI, Engineering]
 image: assets/images/e3-complexity-aware-agent-execution.svg
 tags: [agent-efficiency, complexity-estimation, execution-scope, coding-agents, task-aware-planning]
+description: "编码智能体普遍存在执行冗余，修一行代码却审计整个库。佐治亚理工与麻省理工提出框架，先估计任务复杂度，验证失败才扩展范围，成功率持平而成本大幅下降。"
 ---
 
 佐治亚理工学院和麻省理工学院合作的一篇论文[《Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution》][paper1-url]（arXiv:2607.13034）提出 E3 框架，让编码 Agent 在执行前先评估任务复杂度，以最小可行路径执行，仅在验证失败时扩展范围。在 MSE-Bench 基准测试上，E3 达到与最强基线相同的 100% 成功率，同时将成本降低 85%，Token 消耗减少 91%，检查文件数减少 92%。
+
+![E3 效率降幅与三步框架：成功率持平，成本降 85%、Token 降 91%、检查文件降 92%]({{ site.baseurl }}/assets/images/e3-complexity-aware-agent-execution.svg)
 
 ## 执行冗余：Agent 的隐性成本
 
@@ -31,9 +34,11 @@ E3（Estimate, Execute, Expand）框架的核心思路是让 Agent 在执行任�
 
 论文还通过 LLM-Case 实验在真实环境中验证了 E3 的效果——使用 gpt-4o Agent 编辑一个真实的开源库，并通过运行项目的实际 pytest 套件来验证补丁正确性。结果显示，虽然真实场景中的过度读取现象比模拟器中轻微，但 E3 仍然是最精简、最快的策略，其唯一短板是服务提供商的速率限制而非错误的代码修改。
 
-这一发现将执行冗余从经验观察提升为可度量的工程问题，推动了面向工程的 AI（EGAI）方向——让 Agent 的努力程度锚定在任务的工程现实之上，而非盲目地读取尽可能多的上下文。
+这一发现将执行冗余从经验观察提升为可度量的工程问题，推动了面向工程的 AI（EGAI）方向——让 Agent 的努力程度锚定在任务的工程现实之上，而非盲目地读取尽可能多的上下文。关于如何给 Agent 的执行边界加验证门控，可参阅本站的[《Proof-or-Stop：自主编码Agent的可验证证据门控机制》]({{ site.baseurl }}/one-minute-read-paper-proof-or-stop-lifecycle-control/)。
 
 ## References
+- [Do AI Agents Know When a Task Is Simple?][paper1-url]
+- [论文开源仓库][github-repo]
 
 
 [paper1-url]: https://arxiv.org/abs/2607.13034

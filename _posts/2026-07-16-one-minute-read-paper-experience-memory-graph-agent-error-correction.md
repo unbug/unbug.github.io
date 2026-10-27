@@ -1,7 +1,9 @@
 ---
 layout: post
-title:  "一分钟读论文：《Experience Memory Graph：Agent一次性错误纠正的图匹配方法》"
+title:  "一分钟读论文：《图匹配纠正智能体一次性错误》"
 author: unbug
+description: 电子科大的方法把智能体错误纠正从大模型反思循环转向图匹配，训练期将成败轨迹编成有向动作图，用图编辑路径存下纠正策略，测试时一次检索执行且零额外推理。
+image: assets/images/experience-memory-graph-error-correction.svg
 categories: [AI, Agent]
 tags: [llm, agent-memory, error-correction, graph-matching]
 ---
@@ -29,6 +31,8 @@ Experience Memory Graph的核心思想是将Agent的经验从"序列回放"升�
 论文在ALFWorld和ScienceWorld两个主流Agent基准环境上进行了评估。ALFWorld是文本驱动的家务任务模拟环境，要求Agent完成如"把咖啡杯放到餐桌上"等指令；ScienceWorld涵盖科学实验、文献检索等多领域任务。
 
 结果表明EMG在多个维度优于现有方法：首先是**准确率提升**，EMG在ALFWorld上的任务完成率显著高于基于反思的基线方法；其次是**效率优势**，测试阶段无需迭代重试使得平均推理调用次数远低于反思基线；最后是**小模型友好性**，即使在参数量较小的语言模型上，EMG依然能保持竞争力。
+
+![EMG 图匹配纠错]({{ site.baseurl }}/assets/images/experience-memory-graph-error-correction.svg)
 
 这些结果指向一个结论：当Agent的错误模式具有可复现的结构特征时，将纠正策略编码为图结构并一次性检索执行，比让LLM反复反思更有效率且同样准确。
 

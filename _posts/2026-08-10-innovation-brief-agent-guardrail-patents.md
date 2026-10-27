@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AI 智创简报：《Agent 会忘、会编、会趴下，兜底这层活一个人就能接》"
+title: "AI 智创简报：《Agent 兜底这层活一个人就能接》"
 author: unbug
 categories: [AI, InnovationBrief]
 image: assets/images/innovation-brief-agent-guardrail-patents.svg
 tags: [Patent, Agent, LLM, IndieHacker]
+description: "梳理2026年上半年四件Agent专利：跨会话记忆、幻觉检测与自愈兜底指向同一组问题，解法在模型外的调用链上，个人一周可做出护栏中间件原型。"
 ---
 
 2026 年上半年集中公开的一批 Agent 专利，主题高度一致：让 Agent 记得住上次说过什么、别张口就编、出错了能自己爬起来。大厂圈的是平台，但这三件事的实现层薄到一个人一周就能做出可演示版本，接在别人的 API 调用链上收钱。

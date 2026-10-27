@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "一分钟读论文：《w-0：潜变量预测式世界动作模型实现人形机器人并发运动操作》"
+title:  "一分钟读论文：《w-0：人形机器人世界动作模型》"
 author: unbug
 categories: [embodiedai, robotics, humanoid]
 image: assets/images/w0-latent-predictive-world-action-model-framework.svg
 tags: [w0, loco-manipulation, worldmodel, vlm, humanoidrobot]
+description: "将未来视觉潜在预测与全身动作生成联合建模，解决人形机器人并发运动操作中底盘与手臂割裂、视频预测不稳定问题。11个真实家庭任务优于9种基线方法。"
 ---
 
 新加坡南洋理工大学、北京大学和北京智源研究院等机构合作的一篇论文[w-0：潜变量预测式世界动作模型实现人形机器人并发运动操作 (w-0: A Latent Predictive World Action Model for Concurrent Humanoid Loco-Manipulation)][paper1-url]，提出了一种将未来视觉潜在预测与全身动作生成联合建模的新范式。该论文在 11 个真实家庭任务上持续优于 9 种基线方法，并发布了目前最大规模的人形家庭操作数据集 w-HOME（40+ 小时）。

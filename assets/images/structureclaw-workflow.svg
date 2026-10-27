@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Noto Serif SC','Songti SC',serif">
+  <defs>
+    <style>
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9A937F; font-family: 'Noto Serif SC','Songti SC',serif; }
+      .rl { font-size: 15px; fill: #4A4438; font-family: 'Noto Serif SC','Songti SC',serif; }
+      .val { font-size: 26px; font-weight: 700; font-family: 'Noto Serif SC','Songti SC',serif; }
+      .b { font-size: 12.5px; fill: #A29C88; font-family: 'Noto Serif SC','Songti SC',serif; }
+      .chip { font-size: 13px; font-weight: 600; font-family: 'Noto Serif SC','Songti SC',serif; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBFAF7"/><stop offset="1" stop-color="#F4EFE3"/>
+    </linearGradient>
+    <linearGradient id="gWax" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B5442E"/><stop offset="1" stop-color="#D4694F"/>
+    </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1F7A8C"/><stop offset="1" stop-color="#4FA8B8"/>
+    </linearGradient>
+    <linearGradient id="gClay" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C4763B"/><stop offset="1" stop-color="#E0A066"/>
+    </linearGradient>
+    <linearGradient id="gSlate" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5F6F94"/><stop offset="1" stop-color="#8C9AB8"/>
+    </linearGradient>
+    <linearGradient id="gPlum" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7D4F88"/><stop offset="1" stop-color="#A87FB2"/>
+    </linearGradient>
+    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B9892F"/><stop offset="1" stop-color="#DCB65F"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1110" cy="105" r="140" fill="#C4763B" opacity="0.06"/>
+  <circle cx="70" cy="625" r="110" fill="#1F7A8C" opacity="0.06"/>
+  <rect x="64" y="44" width="44" height="5" rx="2.5" fill="url(#gWax)"/>
+
+  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2607.14896 · SIZHONG QIN, YI GU 等</text>
+  <text x="64" y="128" font-size="37" font-weight="700" fill="#1A1B1E" font-family="'Noto Serif SC','Songti SC',serif">缺的不是答案，是工序</text>
+  <text x="64" y="158" font-size="15.5" fill="#6E6A5C" font-family="'Noto Serif SC','Songti SC',serif">StructureClaw：以工件为中心的智能体平台 + 150 个受控场景的可执行 benchmark</text>
+
+  <!-- blueprint motif: truss drawing -->
+  <g>
+    <rect x="978" y="70" width="158" height="96" rx="3" fill="#FFFFFF" stroke="#D8CFB8" stroke-width="1.5"/>
+    <path d="M 994 146 L 1028 92 L 1062 146 L 1096 92 L 1120 130" fill="none" stroke="url(#gTeal)" stroke-width="2.5" stroke-linejoin="round"/>
+    <line x1="994" y1="146" x2="1120" y2="146" stroke="#1F7A8C" stroke-width="2.5"/>
+    <circle cx="994" cy="146" r="3.5" fill="#B5442E"/><circle cx="1028" cy="92" r="3.5" fill="#B5442E"/>
+    <circle cx="1062" cy="146" r="3.5" fill="#B5442E"/><circle cx="1096" cy="92" r="3.5" fill="#B5442E"/>
+    <text x="994" y="160" font-size="11" fill="#A29C88" font-family="'Noto Serif SC','Songti SC',serif">工件链 · 逐节点可追溯</text>
+  </g>
+
+  <!-- main visual: dumbbell 56.8 -> 88.6, axis 50%..100% at x 300..980 -->
+  <g>
+    <rect x="64" y="196" width="1072" height="118" fill="#B9892F" opacity="0.08"/>
+    <text class="val" x="88" y="240" fill="#8A6620">56.8%</text>
+    <text class="b" x="88" y="262">通用技能基线</text>
+    <text class="val" x="88" y="292" fill="#B5442E">88.6%</text>
+    <text class="b" x="205" y="292">完整自动工作流</text>
+    <text x="205" y="240" font-size="13" fill="#6E6A5C" font-family="'Noto Serif SC','Songti SC',serif">相同 50 个标准案例 · 十个智能体-模型配置的平均成功率</text>
+
+    <line x1="300" y1="255" x2="980" y2="255" stroke="url(#gGold)" stroke-width="2.5"/>
+    <circle cx="300" cy="255" r="9" fill="#FFFFFF" stroke="#B9892F" stroke-width="3"/>
+    <circle cx="980" cy="255" r="11" fill="url(#gWax)"/>
+    <line x1="300" y1="240" x2="300" y2="290" stroke="#E5E1D4"/>
+    <line x1="470" y1="245" x2="470" y2="285" stroke="#EAE6DA"/>
+    <line x1="640" y1="245" x2="640" y2="285" stroke="#EAE6DA"/>
+    <line x1="810" y1="245" x2="810" y2="285" stroke="#EAE6DA"/>
+    <line x1="980" y1="240" x2="980" y2="290" stroke="#E5E1D4"/>
+    <text class="b" x="300" y="305" text-anchor="middle">50%</text>
+    <text class="b" x="980" y="305" text-anchor="middle">100%</text>
+  </g>
+
+  <!-- artifact chain: 6 stations -->
+  <g>
+    <text class="rl" x="88" y="364" font-weight="700">标准工作流 · 六站工件链</text>
+    <line x1="120" y1="399" x2="1010" y2="399" stroke="#D8CFB8" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <g>
+      <circle cx="140" cy="399" r="12" fill="url(#gTeal)"/><text class="b" x="140" y="425" text-anchor="middle">描述需求</text>
+      <circle cx="314" cy="399" r="12" fill="url(#gClay)"/><text class="b" x="314" y="425" text-anchor="middle">模型草稿</text>
+      <circle cx="488" cy="399" r="12" fill="url(#gGold)"/><text class="b" x="488" y="425" text-anchor="middle">验证</text>
+      <circle cx="662" cy="399" r="12" fill="url(#gSlate)"/><text class="b" x="662" y="425" text-anchor="middle">运行分析</text>
+      <circle cx="836" cy="399" r="12" fill="url(#gPlum)"/><text class="b" x="836" y="425" text-anchor="middle">规范检查</text>
+      <circle cx="1010" cy="399" r="13" fill="url(#gWax)"/><text class="b" x="1010" y="425" text-anchor="middle">生成报告</text>
+      <text class="b" x="227" y="393" text-anchor="middle">▸</text><text class="b" x="401" y="393" text-anchor="middle">▸</text>
+      <text class="b" x="575" y="393" text-anchor="middle">▸</text><text class="b" x="749" y="393" text-anchor="middle">▸</text><text class="b" x="923" y="393" text-anchor="middle">▸</text>
+    </g>
+    <text x="1075" y="393" font-size="14" fill="#B5442E" font-family="'Noto Serif SC','Songti SC',serif">全部</text>
+    <text x="1075" y="411" font-size="14" fill="#B5442E" font-family="'Noto Serif SC','Songti SC',serif">断言过</text>
+  </g>
+
+  <!-- three engines + three dimensions -->
+  <line x1="64" y1="452" x2="1136" y2="452" stroke="#E5E1D4"/>
+  <g>
+    <rect x="64" y="470" width="106" height="28" rx="14" fill="url(#gTeal)" opacity="0.16"/>
+    <text class="chip" x="117" y="489" text-anchor="middle" fill="#1F7A8C">OpenSees</text>
+    <text x="182" y="489" font-size="12.5" fill="#6E6A5C" font-family="'Noto Serif SC','Songti SC',serif">开源静力/动力/非线性</text>
+    <rect x="360" y="470" width="120" height="28" rx="14" fill="url(#gClay)" opacity="0.18"/>
+    <text class="chip" x="420" y="489" text-anchor="middle" fill="#A85F28">PKPM SATWE</text>
+    <text x="492" y="489" font-size="12.5" fill="#6E6A5C" font-family="'Noto Serif SC','Songti SC',serif">商业结构静力检查</text>
+    <rect x="660" y="470" width="86" height="28" rx="14" fill="url(#gPlum)" opacity="0.16"/>
+    <text class="chip" x="703" y="489" text-anchor="middle" fill="#7D4F88">YJK 8.0</text>
+    <text x="758" y="489" font-size="12.5" fill="#6E6A5C" font-family="'Noto Serif SC','Songti SC',serif">建筑结构设计 · 三个分析引擎</text>
+  </g>
+  <g>
+    <text x="64" y="532" font-size="13.5" fill="#4A4438" font-family="'Noto Serif SC','Songti SC',serif">Bench 覆盖三维：</text>
+    <text x="172" y="532" font-size="13.5" fill="#1F7A8C" font-family="'Noto Serif SC','Songti SC',serif">标准工作流执行</text>
+    <text x="298" y="532" font-size="13.5" fill="#8B8574" font-family="'Noto Serif SC','Songti SC',serif">·</text>
+    <text x="316" y="532" font-size="13.5" fill="#A85F28" font-family="'Noto Serif SC','Songti SC',serif">交互鲁棒性</text>
+    <text x="410" y="532" font-size="13.5" fill="#8B8574" font-family="'Noto Serif SC','Songti SC',serif">·</text>
+    <text x="428" y="532" font-size="13.5" fill="#7D4F88" font-family="'Noto Serif SC','Songti SC',serif">多模态结构模型重建</text>
+    <text x="610" y="532" font-size="13.5" fill="#B5442E" font-family="'Noto Serif SC','Songti SC',serif">剩余两患：无效数值输入 · 夹具一致性</text>
+  </g>
+
+  <text x="64" y="584" font-size="17" fill="#1A1B1E" font-family="'Noto Serif SC','Songti SC',serif">评估只看最终回答，就是在奖励输出流畅、工序残缺的智能体。</text>
+  <text class="b" x="64" y="618">150 场景 · 成功=单次运行内全部工件级+执行级断言通过 · 方法可推广至电气/机械/土木 · Micropaper</text>
+</svg>

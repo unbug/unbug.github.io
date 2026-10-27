@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Noto Serif SC','Songti SC',serif">
+  <defs>
+    <style>
+      .k { font-size: 13px; letter-spacing: 3px; fill: #9A8E7A; }
+      .rl { font-size: 15px; fill: #4C4A57; }
+      .val { font-size: 18px; font-weight: 700; fill: #1A1B1E; }
+      .b { font-size: 12.5px; fill: #A29A90; }
+      .chip { font-size: 12.5px; font-weight: 600; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F8F4EF"/>
+    </linearGradient>
+    <linearGradient id="gPlum" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7C4D8F"/><stop offset="1" stop-color="#A67DB8"/>
+    </linearGradient>
+    <linearGradient id="gAmber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#DE9B2D"/><stop offset="1" stop-color="#F0C75E"/>
+    </linearGradient>
+    <linearGradient id="gFire" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C2452C"/><stop offset="1" stop-color="#E07B4C"/>
+    </linearGradient>
+    <linearGradient id="gWine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8E3557"/><stop offset="1" stop-color="#B96382"/>
+    </linearGradient>
+    <linearGradient id="gPine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F7D61"/><stop offset="1" stop-color="#66B18C"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1102" cy="108" r="145" fill="#7C4D8F" opacity="0.06"/>
+  <circle cx="76" cy="616" r="112" fill="#DE9B2D" opacity="0.07"/>
+  <rect x="64" y="44" width="44" height="5" fill="#B5442E"/>
+
+  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2607.13591 · UCLA / UW 等</text>
+  <text x="64" y="128" font-size="37" font-weight="700" fill="#1A1B1E">检索不该是死规则，该是活厨师</text>
+  <text x="64" y="158" font-size="15.5" fill="#6E6A5C">MemCon 把记忆检索交给在线学习的灶台管家：何时取、取什么、取多少，边做边学</text>
+
+  <!-- kitchen motif: hanging pans -->
+  <g>
+    <line x1="1000" y1="86" x2="1136" y2="86" stroke="#B0764A" stroke-width="3"/>
+    <line x1="1022" y1="86" x2="1022" y2="102" stroke="#8A8378" stroke-width="2"/>
+    <line x1="1072" y1="86" x2="1072" y2="110" stroke="#8A8378" stroke-width="2"/>
+    <line x1="1118" y1="86" x2="1118" y2="98" stroke="#8A8378" stroke-width="2"/>
+    <circle cx="1022" cy="119" r="16" fill="none" stroke="url(#gPlum)" stroke-width="4"/>
+    <line x1="1022" y1="103" x2="1022" y2="106" stroke="url(#gPlum)" stroke-width="3"/>
+    <path d="M 1052 128 a 20 20 0 0 0 40 0 z" fill="url(#gAmber)" opacity="0.85"/>
+    <circle cx="1118" cy="112" r="13" fill="none" stroke="url(#gPine)" stroke-width="3.5"/>
+    <path d="M 1040 158 q 5 -9 0 -17 M 1060 158 q 5 -9 0 -17 M 1080 158 q 5 -9 0 -17" fill="none" stroke="#C2452C" stroke-width="2.5" opacity="0.55"/>
+    <text class="b" x="1136" y="184" text-anchor="end">灶台管家 · 在线学习</text>
+  </g>
+
+  <!-- left: dumbbell lift -->
+  <g>
+    <rect x="64" y="200" width="700" height="64" fill="#7C4D8F" opacity="0.07"/>
+    <text class="rl" x="268" y="238" text-anchor="end">任务成功率 · 最高提升</text>
+    <line x1="320" y1="232" x2="474" y2="232" stroke="url(#gFire)" stroke-width="2.5"/>
+    <circle cx="320" cy="232" r="7" fill="#FFFFFF" stroke="#2F7D61" stroke-width="3"/>
+    <circle cx="474" cy="232" r="10" fill="url(#gFire)"/>
+    <text class="val" x="494" y="239" fill="#C2452C">+15.2 分</text>
+    <text class="b" x="574" y="238">六个基准最好成绩 · 对比固定启发式基线</text>
+
+    <rect x="64" y="278" width="700" height="64" fill="#7C4D8F" opacity="0.07"/>
+    <text class="rl" x="268" y="316" text-anchor="end">Token 消耗 · 同步下降</text>
+    <line x1="320" y1="310" x2="362" y2="310" stroke="url(#gPine)" stroke-width="2.5"/>
+    <circle cx="320" cy="310" r="7" fill="#FFFFFF" stroke="#2F7D61" stroke-width="3"/>
+    <circle cx="362" cy="310" r="9" fill="url(#gPine)"/>
+    <text class="val" x="382" y="317" fill="#2F7D61">-5% ~ -20%</text>
+    <text class="b" x="510" y="316">各基准区间 · 避免过度检索与无效召回</text>
+
+    <text class="rl" x="268" y="392" text-anchor="end">三个灶台失灵</text>
+    <rect x="300" y="372" width="92" height="28" rx="14" fill="url(#gFire)" opacity="0.18"/>
+    <text x="346" y="391" text-anchor="middle" class="chip" fill="#A5341F">过度检索</text>
+    <text class="b" x="402" y="391">无关信息稀释信号</text>
+    <rect x="552" y="372" width="92" height="28" rx="14" fill="url(#gAmber)" opacity="0.24"/>
+    <text x="598" y="391" text-anchor="middle" class="chip" fill="#9A6A12">检索不足</text>
+    <text class="b" x="654" y="391">推理缺支撑</text>
+    <rect x="300" y="412" width="92" height="28" rx="14" fill="url(#gWine)" opacity="0.18"/>
+    <text x="346" y="431" text-anchor="middle" class="chip" fill="#7C2E4A">时机不当</text>
+    <text class="b" x="402" y="431">该出手时没出手</text>
+    <text class="b" x="552" y="431">静态规则管不了动态决策</text>
+  </g>
+
+  <!-- right: ticket rail -->
+  <g>
+    <rect x="806" y="200" width="330" height="266" fill="#DE9B2D" opacity="0.08"/>
+    <text x="826" y="230" font-size="14" font-weight="700" fill="#1A1B1E">记忆操作 · MDP 三要素</text>
+    <line x1="826" y1="242" x2="1096" y2="242" stroke="#D8CFBB" stroke-width="1"/>
+
+    <circle cx="838" cy="276" r="9" fill="url(#gPlum)"/>
+    <text x="858" y="282" font-size="14.5" fill="#4C4A57">状态 · 上下文 / 检索记录 / 任务进度</text>
+    <circle cx="838" cy="316" r="9" fill="url(#gAmber)"/>
+    <text x="858" y="322" font-size="14.5" fill="#4C4A57">动作 · 何时取 · 取什么 · 取多少</text>
+    <circle cx="838" cy="356" r="9" fill="url(#gFire)"/>
+    <text x="858" y="362" font-size="14.5" fill="#4C4A57">奖励 · 完成度 × Token 消耗</text>
+
+    <line x1="826" y1="386" x2="1096" y2="386" stroke="#D8CFBB" stroke-width="1"/>
+    <text x="826" y="416" font-size="13.5" fill="#6E6A5C">轻量级表格赌博机 + UCB · 在线更新</text>
+    <text x="826" y="444" font-size="15" font-weight="700" fill="#8E3557">后端无关 · 即插即用</text>
+  </g>
+
+  <!-- bottom: backends + takeaway -->
+  <line x1="64" y1="500" x2="1136" y2="500" stroke="#E5E1D4"/>
+  <text class="rl" x="64" y="540">换锅不换管家：</text>
+  <rect x="200" y="520" width="104" height="28" rx="14" fill="url(#gPlum)" opacity="0.16"/>
+  <text x="252" y="539" text-anchor="middle" class="chip" fill="#6A3F7C">向量数据库</text>
+  <rect x="324" y="520" width="92" height="28" rx="14" fill="url(#gPine)" opacity="0.18"/>
+  <text x="370" y="539" text-anchor="middle" class="chip" fill="#25664E">图数据库</text>
+  <rect x="436" y="520" width="92" height="28" rx="14" fill="url(#gAmber)" opacity="0.24"/>
+  <text x="482" y="539" text-anchor="middle" class="chip" fill="#8F620F">文本缓存</text>
+  <text class="b" x="548" y="539">控制器层接管决策 · 不改存储、不重训模型</text>
+
+  <text x="64" y="600" font-size="18" font-weight="700" fill="#1A1B1E">记忆管理是动态决策问题，就别拿静态规则去掌勺。</text>
+  <text class="b" x="1136" y="642" text-anchor="end">数据为论文六基准自述口径 · 预印本未经同行评审 · Micropaper</text>
+</svg>

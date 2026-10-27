@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Noto Serif SC','Songti SC',serif">
+  <defs>
+    <style>
+      .k { font-size: 13px; letter-spacing: 3px; fill: #9A937F; }
+      .rl { font-size: 15px; fill: #474C54; }
+      .val { font-size: 18px; font-weight: 700; }
+      .b { font-size: 12px; fill: #A29C88; }
+      .chip { font-size: 12.5px; font-weight: 600; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F2F6F2"/>
+    </linearGradient>
+    <linearGradient id="gLeaf" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1E7A3C"/><stop offset="1" stop-color="#54A86E"/>
+    </linearGradient>
+    <linearGradient id="gLeaf2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2E8B57"/><stop offset="1" stop-color="#7CC493"/>
+    </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0E7C86"/><stop offset="1" stop-color="#4FB8C6"/>
+    </linearGradient>
+    <linearGradient id="gLime" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7AC03C"/><stop offset="1" stop-color="#ABD97A"/>
+    </linearGradient>
+    <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D98A2B"/><stop offset="1" stop-color="#EAB264"/>
+    </linearGradient>
+    <linearGradient id="gMagenta" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A33E9E"/><stop offset="1" stop-color="#C77BC2"/>
+    </linearGradient>
+    <linearGradient id="gPlum" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8A2E6E"/><stop offset="1" stop-color="#B05A96"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1105" cy="110" r="140" fill="#1E7A3C" opacity="0.06"/>
+  <circle cx="70" cy="620" r="115" fill="#A33E9E" opacity="0.05"/>
+  <rect x="64" y="44" width="44" height="5" fill="#B5442E"/>
+
+  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2607.12463 · 达摩院 × 宾夕法尼亚大学</text>
+  <text x="64" y="128" font-size="37" font-weight="700" fill="#1A1B1E">填空填出工具直觉</text>
+  <text x="64" y="158" font-size="15.5" fill="#6E6A5C">把函数调用站点挖空让模型回填，免标注习得工具调用归纳偏置</text>
+
+  <!-- greenhouse motif: grow-through frame + leaf + masked code slot -->
+  <g>
+    <path d="M 1000 76 Q 1092 34 1180 76" fill="none" stroke="#0E7C86" stroke-width="3" opacity="0.55"/>
+    <line x1="1022" y1="70" x2="1022" y2="152" stroke="#0E7C86" stroke-width="2" opacity="0.4"/>
+    <line x1="1092" y1="52" x2="1092" y2="152" stroke="#0E7C86" stroke-width="2" opacity="0.4"/>
+    <line x1="1162" y1="70" x2="1162" y2="152" stroke="#0E7C86" stroke-width="2" opacity="0.4"/>
+    <line x1="1004" y1="152" x2="1180" y2="152" stroke="#0E7C86" stroke-width="2.5" opacity="0.5"/>
+    <path d="M 1092 150 C 1076 130 1078 104 1092 86 C 1106 104 1108 130 1092 150 Z" fill="url(#gLime)" opacity="0.9"/>
+    <path d="M 1092 140 Q 1092 112 1092 92" stroke="#1E7A3C" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <rect x="1010" y="104" width="64" height="42" rx="2" fill="#132E52" opacity="0.88"/>
+    <text x="1042" y="132" text-anchor="middle" font-size="22" font-weight="700" fill="#7AC03C">_ _ _</text>
+    <line x1="1104" y1="112" x2="1156" y2="112" stroke="#7A7464" stroke-width="3"/>
+    <line x1="1104" y1="124" x2="1156" y2="124" stroke="#7A7464" stroke-width="3"/>
+    <line x1="1104" y1="136" x2="1142" y2="136" stroke="#7A7464" stroke-width="3"/>
+  </g>
+
+  <!-- main visual: dumbbells, hollow = baseline, solid = lift; 1pt = 32px, x0=322 -->
+  <text class="rl" x="64" y="222">SWE-Bench 绝对提升（分）</text>
+  <g>
+    <rect x="64" y="236" width="736" height="60" fill="#1E7A3C" opacity="0.07"/>
+    <rect x="64" y="306" width="736" height="60" fill="#1E7A3C" opacity="0.07"/>
+    <rect x="64" y="376" width="736" height="60" fill="#A33E9E" opacity="0.07"/>
+    <rect x="64" y="446" width="736" height="60" fill="#A33E9E" opacity="0.07"/>
+
+    <text class="rl" x="300" y="271" text-anchor="end">Verified · 7B</text>
+    <line x1="322" y1="266" x2="411.6" y2="266" stroke="url(#gLeaf)" stroke-width="2.5"/>
+    <circle cx="322" cy="266" r="7" fill="#FFFFFF" stroke="#0E7C86" stroke-width="3"/>
+    <circle cx="411.6" cy="266" r="9" fill="url(#gLeaf)"/>
+    <text class="val" x="430" y="273" fill="#1E7A3C">+2.8</text>
+
+    <text class="rl" x="300" y="341" text-anchor="end">Verified · 14B</text>
+    <line x1="322" y1="336" x2="418" y2="336" stroke="url(#gLeaf2)" stroke-width="2.5"/>
+    <circle cx="322" cy="336" r="7" fill="#FFFFFF" stroke="#0E7C86" stroke-width="3"/>
+    <circle cx="418" cy="336" r="9" fill="url(#gLeaf2)"/>
+    <text class="val" x="436" y="343" fill="#2E8B57">+3.0</text>
+
+    <text class="rl" x="300" y="411" text-anchor="end">Lite · 14B</text>
+    <line x1="322" y1="406" x2="450" y2="406" stroke="url(#gMagenta)" stroke-width="2.5"/>
+    <circle cx="322" cy="406" r="7" fill="#FFFFFF" stroke="#0E7C86" stroke-width="3"/>
+    <circle cx="450" cy="406" r="9" fill="url(#gMagenta)"/>
+    <text class="val" x="468" y="413" fill="#A33E9E">+4.0</text>
+
+    <text class="rl" x="300" y="481" text-anchor="end">Lite · Qwen3-8B</text>
+    <line x1="322" y1="476" x2="494.8" y2="476" stroke="url(#gPlum)" stroke-width="2.5"/>
+    <circle cx="322" cy="476" r="7" fill="#FFFFFF" stroke="#0E7C86" stroke-width="3"/>
+    <circle cx="494.8" cy="476" r="10" fill="url(#gPlum)"/>
+    <text class="val" x="513" y="483" fill="#8A2E6E">+5.4</text>
+    <text class="b" x="572" y="481">全组最大增益 · 1pt = 32px</text>
+
+    <text class="b" x="322" y="528">空心 = 未中期训练基线（0）</text>
+    <text class="b" x="730" y="528" text-anchor="end">另测得：Verified · Qwen3-8B +3.2 / Lite · 7B +3.7</text>
+  </g>
+
+  <!-- right column: AOC=call-site insight, mask recipe, big numbers -->
+  <g>
+    <rect x="872" y="236" width="268" height="70" fill="#D98A2B" opacity="0.09"/>
+    <text x="888" y="266" font-size="25" font-weight="700" fill="#A96815">AOC ≙ 调用站点</text>
+    <text x="888" y="290" font-size="12.5" fill="#6B7078">动作·观察·续写 ↔ 调用·返回·续写</text>
+
+    <rect x="888" y="332" width="62" height="30" rx="2" fill="url(#gTeal)" opacity="0.85"/>
+    <text x="919" y="352" text-anchor="middle" class="chip" fill="#FFFFFF">前缀</text>
+    <rect x="958" y="332" width="62" height="30" rx="2" fill="#132E52" opacity="0.9"/>
+    <text x="989" y="352" text-anchor="middle" class="chip" fill="#7AC03C">掩码</text>
+    <rect x="1028" y="332" width="62" height="30" rx="2" fill="url(#gLime)" opacity="0.9"/>
+    <text x="1059" y="352" text-anchor="middle" class="chip" fill="#33501B">后缀</text>
+
+    <text class="rl" x="888" y="406">双重掩码标准</text>
+    <text class="b" x="888" y="428">PDG 中心性 × 复杂度可推断</text>
+    <text x="888" y="482" font-size="29" font-weight="700" fill="#0E7C86">2.6B</text>
+    <text x="962" y="482" font-size="13" fill="#6B7078">token · 968 仓库</text>
+    <text class="b" x="888" y="502">自监督中期训练 · 严格去污染</text>
+  </g>
+
+  <!-- bottom chips -->
+  <line x1="64" y1="544" x2="1136" y2="544" stroke="#E5E1D4"/>
+  <g>
+    <text class="rl" x="64" y="582">双管线通验</text>
+    <rect x="164" y="564" width="86" height="26" rx="13" fill="url(#gTeal)" opacity="0.2"/>
+    <text x="207" y="582" text-anchor="middle" class="chip" fill="#0B5A62">R2E-Gym</text>
+    <rect x="260" y="564" width="94" height="26" rx="13" fill="url(#gLime)" opacity="0.28"/>
+    <text x="307" y="582" text-anchor="middle" class="chip" fill="#4A6B1A">SWE-Smith</text>
+    <rect x="364" y="564" width="172" height="26" rx="13" fill="url(#gMagenta)" opacity="0.16"/>
+    <text x="450" y="582" text-anchor="middle" class="chip" fill="#7E2F79">护住非 Agent 编码能力</text>
+  </g>
+  <text x="64" y="626" font-size="18" fill="#1A1B1E">工具直觉不是喂指令喂出来的，是在关键站点填空填出来的。</text>
+  <text class="b" x="1136" y="652" text-anchor="end">SWE-Bench 绝对提升 · 论文自述口径 · 预印本未经同行评审 · Micropaper</text>
+</svg>

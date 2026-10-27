@@ -48,7 +48,7 @@
   <!-- Memory Agent -->
   <rect x="90" y="315" width="280" height="60" rx="6" fill="url(#memoryGrad)"/>
   <text x="230" y="340" text-anchor="middle" font-size="13" font-weight="700" fill="#ecf0f1">Memory Agent</text>
-  <text x="230" y="360" text-anchor="middle" font-size="11" fill="#bdc3c7">Extracts, Stores & Selectively Intervenes</text>
+  <text x="230" y="360" text-anchor="middle" font-size="11" fill="#bdc3c7">Extracts, Stores &amp; Selectively Intervenes</text>
 
   <!-- Intervention Flow -->
   <rect x="420" y="200" width="320" height="180" rx="8" fill="#0d1b2a" stroke="#2c3e50" stroke-width="1"/>

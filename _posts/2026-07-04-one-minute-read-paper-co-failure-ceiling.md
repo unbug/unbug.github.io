@@ -5,6 +5,7 @@ author: unbug
 categories: [AI, Research]
 image: assets/images/co-failure-ceiling.svg
 tags: [multi-model, empirical-study, co-failure-ceiling]
+description: "跨67个模型、21家提供商的实测发现多模型组合存在共失败率天花板，传统错误相关性指标会高估集成效果，盲目堆叠模型数量无法突破共性缺陷导致的性能硬上限。"
 ---
 
 一篇关于多模型组合性能极限的论文[《Co-Failure Ceiling: Hard Limits on Multi-Model Ensembles》][paper1-url]，通过跨67个模型、21家提供商的大规模实测发现，多模型组合存在硬性的共失败率天花板beta（co-failure rate）。研究指出，传统的错误相关性指标rho无法准确反映模型间的真实依赖关系，而共失败率beta揭示了多模型集成性能的硬性上限。

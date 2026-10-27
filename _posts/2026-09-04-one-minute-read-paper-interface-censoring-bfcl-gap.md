@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "一分钟读论文：《同一份权重，换个接口就从不会调工具变成 0.96 分》"
+title:  "一分钟读论文：《同一份权重换个接口得0.96分》"
 author: unbug
 categories: [AI, Engineering]
 image: assets/images/interface-censoring-bfcl-gap.svg
 tags: [llm, agent, tool-use, benchmark]
-description: "香港城市大学论文在 BFCL v4 官方数据上固定权重只换 serving 接口，同一模型得分 0.00 或 0.96。工具调用率是模型与接口栈共同的属性，2x2 实验锁定契约错配，修复接口后通过率仅从 53 升到 62 且不显著。"
+description: "香港城市大学预印本在BFCL v4官方数据上固定权重只换serving接口，同一模型得分0.00或0.96：工具调用率是模型与接口栈共同的属性，2x2实验锁定契约错配，修复接口后通过率仅从53升到62且不显著。"
 ---
 
 香港城市大学（City University of Hong Kong）的论文[《Interface-Induced Trajectory Censoring》][paper1-url]（arXiv:2609.03966，2026 年 9 月 3 日提交，单作者 Wenbo Wang）给出一个测量有效性层面的结论：Agent 评测里读到的工具调用率，不是模型单方面的属性，而是「模型加 serving 接口栈」这个整体的属性。所谓接口审查（interface censoring），指模型的调用在下游看到任何东西之前，就被 chat template 与 function-calling parser 的错配静默丢弃。上一篇[《跑通测试的补丁，三成过不了人类 review 这一关》][links-2]说的是智能体产出合不合格，这一篇更进一层：你看到的基准数字本身，可能连「它会不会调工具」都没测准。

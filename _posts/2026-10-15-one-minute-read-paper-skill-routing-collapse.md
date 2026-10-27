@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "一分钟读论文：《Skill 库越大，agent 越不翻说明书》"
+title:  "一分钟读论文：《Skill库越大agent越不翻说明书》"
 author: unbug
 categories: [AI, Engineering]
 image: assets/images/skill-routing-collapse.svg
 tags: [llm-agents, skill-routing, ai-agents, model-evaluation]
-description: "预印本论文称，LLM agent 的 skill 库扩到一千个无关项时，加载召回从 73.6% 跌至 27.4%，51.6% 的任务干脆什么都不加载；任务成功率却几乎不动，路由坍缩被成功率指标掩盖，显式预筛选是可行缓解。"
+description: "预印本论文称LLM agent的skill库扩到一千个无关项时，加载召回从73.6%跌至27.4%，51.6%的任务干脆什么都不加载；成功率却几乎不动，路由坍缩被成功率指标掩盖，显式预筛选可缓解。"
 ---
 
 香港大学、华中科技大学等作者的预印本论文[《Lost in Implicit Routing: How LLM Agents Fail to Load Relevant Skills at Scale》][paper1-url]（arXiv:2610.18522）测量出一种叫「skill 路由坍缩」的现象：当 skill 库扩到一千个无关项时，agent 的加载召回率从 `73.6%` 跌到 `27.4%`，`51.6%` 的任务干脆一个 skill 都不加载——坍缩的主因不是加载错误，而是不加载。论文称，同一批任务的 Pass@3 成功率却几乎不动，坏掉的路由被成功率指标掩盖。

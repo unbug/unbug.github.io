@@ -1,74 +1,108 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420" fill="none">
-  <rect width="700" height="420" fill="#0d1b2a" rx="12"/>
-  
-  <!-- Title -->
-  <text x="350" y="36" text-anchor="middle" fill="#e6f1ff" font-size="18" font-weight="bold" font-family="system-ui">同等预算下：单智能体 vs 多智能体</text>
-  <text x="350" y="58" text-anchor="middle" fill="#8b949e" font-size="12" font-family="system-ui">Equal Token Budget: Single-Agent vs Multi-Agent</text>
-  
-  <!-- Divider -->
-  <line x1="100" y1="75" x2="600" y2="75" stroke="#30363d" stroke-width="1"/>
-  
-  <!-- Left: Single Agent -->
-  <rect x="60" y="90" width="240" height="280" rx="8" fill="#161b22" stroke="#238636" stroke-width="1.5"/>
-  <text x="180" y="118" text-anchor="middle" fill="#3fb950" font-size="14" font-weight="bold" font-family="system-ui">单智能体</text>
-  <text x="180" y="135" text-anchor="middle" fill="#8b949e" font-size="10" font-family="system-ui">Single-Agent</text>
-  
-  <!-- Single agent diagram -->
-  <rect x="120" y="150" width="120" height="60" rx="6" fill="#0d419d" opacity="0.6"/>
-  <text x="180" y="175" text-anchor="middle" fill="#58a6ff" font-size="11" font-family="system-ui">LLM</text>
-  <text x="180" y="193" text-anchor="middle" fill="#58a6ff" font-size="10" font-family="system-ui">Unified Context</text>
-  
-  <line x1="180" y1="210" x2="180" y2="240" stroke="#58a6ff" stroke-width="1" stroke-dasharray="3,3"/>
-  
-  <text x="180" y="260" text-anchor="middle" fill="#e6f1ff" font-size="11" font-family="system-ui">推理推理推理推理</text>
-  <text x="180" y="278" text-anchor="middle" fill="#8b949e" font-size="10" font-family="system-ui">Full context utilization</text>
-  
-  <line x1="100" y1="295" x2="260" y2="295" stroke="#30363d" stroke-width="0.5"/>
-  
-  <!-- Key metric -->
-  <text x="180" y="318" text-anchor="middle" fill="#3fb950" font-size="28" font-weight="bold" font-family="system-ui">最优</text>
-  <text x="180" y="338" text-anchor="middle" fill="#8b949e" font-size="10" font-family="system-ui">性能最优</text>
-  
-  <!-- Right: Multi Agent -->
-  <rect x="400" y="90" width="240" height="280" rx="8" fill="#161b22" stroke="#f85149" stroke-width="1.5"/>
-  <text x="520" y="118" text-anchor="middle" fill="#f85149" font-size="14" font-weight="bold" font-family="system-ui">多智能体</text>
-  <text x="520" y="135" text-anchor="middle" fill="#8b949e" font-size="10" font-family="system-ui">Multi-Agent</text>
-  
-  <!-- Multi agent diagram -->
-  <rect x="445" y="150" width="60" height="35" rx="4" fill="#6e40c9" opacity="0.5"/>
-  <text x="475" y="172" text-anchor="middle" fill="#d2a8ff" font-size="10" font-family="system-ui">Agent A</text>
-  
-  <rect x="535" y="150" width="60" height="35" rx="4" fill="#6e40c9" opacity="0.5"/>
-  <text x="565" y="172" text-anchor="middle" fill="#d2a8ff" font-size="10" font-family="system-ui">Agent B</text>
-  
-  <!-- Connection with bottleneck symbol -->
-  <line x1="505" y1="167" x2="535" y2="167" stroke="#f85149" stroke-width="1.5"/>
-  <text x="520" y="162" text-anchor="middle" fill="#f85149" font-size="9" font-family="system-ui">瓶颈</text>
-  
-  <rect x="445" y="200" width="60" height="35" rx="4" fill="#6e40c9" opacity="0.5"/>
-  <text x="475" y="222" text-anchor="middle" fill="#d2a8ff" font-size="10" font-family="system-ui">Agent C</text>
-  
-  <rect x="535" y="200" width="60" height="35" rx="4" fill="#6e40c9" opacity="0.5"/>
-  <text x="565" y="222" text-anchor="middle" fill="#d2a8ff" font-size="10" font-family="system-ui">Agent D</text>
-  
-  <line x1="505" y1="217" x2="535" y2="217" stroke="#f85149" stroke-width="1.5"/>
-  <text x="520" y="212" text-anchor="middle" fill="#f85149" font-size="9" font-family="system-ui">瓶颈</text>
-  
-  <line x1="520" y1="235" x2="520" y2="260" stroke="#f85149" stroke-width="0.5" stroke-dasharray="2,2"/>
-  
-  <text x="520" y="280" text-anchor="middle" fill="#e6f1ff" font-size="11" font-family="system-ui">信息衰减 + 通信开销</text>
-  <text x="520" y="298" text-anchor="middle" fill="#8b949e" font-size="10" font-family="system-ui">Data processing inequality</text>
-  
-  <line x1="420" y1="315" x2="580" y2="315" stroke="#30363d" stroke-width="0.5"/>
-  
-  <!-- Key metric -->
-  <text x="520" y="338" text-anchor="middle" fill="#f85149" font-size="28" font-weight="bold" font-family="system-ui">次优</text>
-  <text x="520" y="355" text-anchor="middle" fill="#8b949e" font-size="10" font-family="system-ui">通信损耗</text>
-  
-  <!-- Center comparison arrow -->
-  <text x="350" y="240" text-anchor="middle" fill="#e6f1ff" font-size="32" font-family="system-ui">≥</text>
-  
-  <!-- Bottom: Key insight -->
-  <rect x="150" y="380" width="400" height="30" rx="6" fill="#1f2937" stroke="#30363d" stroke-width="0.5"/>
-  <text x="350" y="400" text-anchor="middle" fill="#e6f1ff" font-size="11" font-family="system-ui">结论：固定预算下，单智能体 = 最强默认架构</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Noto Serif SC','Songti SC',serif">
+  <defs>
+    <style>
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9C9484; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
+      .rl { font-size: 15px; fill: #474C54; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
+      .b { font-size: 12px; fill: #A5A296; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
+      .chip { font-size: 12.5px; font-weight: 600; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFEFA"/><stop offset="1" stop-color="#F4F2EA"/>
+    </linearGradient>
+    <linearGradient id="gBrass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A87B2A"/><stop offset="1" stop-color="#D2A94F"/>
+    </linearGradient>
+    <linearGradient id="gForest" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F6B4F"/><stop offset="1" stop-color="#63A17F"/>
+    </linearGradient>
+    <linearGradient id="gVerm" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C0392B"/><stop offset="1" stop-color="#E2786A"/>
+    </linearGradient>
+    <linearGradient id="gPineInk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22506B"/><stop offset="1" stop-color="#5C88A6"/>
+    </linearGradient>
+    <linearGradient id="gPlum" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7A4A8C"/><stop offset="1" stop-color="#A982BA"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1105" cy="110" r="140" fill="#A87B2A" opacity="0.08"/>
+  <circle cx="70" cy="620" r="115" fill="#22506B" opacity="0.06"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gVerm)"/>
+
+  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2604.02460 · 斯坦福</text>
+  <text x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">电报每转一局，信就薄一分</text>
+  <text x="64" y="158" font-size="15" fill="#5B6068" font-family="'PingFang SC','Helvetica Neue',sans-serif">推理 token 预算严格相等时，单智能体在多跳推理上匹配或超越五种多智能体架构</text>
+
+  <!-- telegraph motif: one wire vs relay stations -->
+  <g>
+    <g transform="translate(946,72)">
+      <rect x="0" y="8" width="64" height="22" rx="4" fill="url(#gForest)"/>
+      <text x="32" y="23" text-anchor="middle" font-size="12" font-weight="700" fill="#EAF5EE" font-family="'PingFang SC',sans-serif">单智能体</text>
+      <path d="M 64 19 H 208" stroke="url(#gForest)" stroke-width="3.5"/>
+      <path d="M 208 19 l -10 -6 v 12 Z" fill="#2F6B4F"/>
+      <text x="136" y="10" text-anchor="middle" class="b">统一上下文 · 直达</text>
+    </g>
+    <g transform="translate(946,124)">
+      <rect x="0" y="8" width="40" height="22" rx="4" fill="url(#gVerm)"/>
+      <text x="20" y="23" text-anchor="middle" font-size="11" font-weight="700" fill="#FBEEEA" font-family="'PingFang SC',sans-serif">A</text>
+      <rect x="56" y="8" width="40" height="22" rx="4" fill="url(#gVerm)" opacity="0.8"/>
+      <text x="76" y="23" text-anchor="middle" font-size="11" font-weight="700" fill="#FBEEEA" font-family="'PingFang SC',sans-serif">B</text>
+      <rect x="112" y="8" width="40" height="22" rx="4" fill="url(#gVerm)" opacity="0.6"/>
+      <text x="132" y="23" text-anchor="middle" font-size="11" font-weight="700" fill="#FBEEEA" font-family="'PingFang SC',sans-serif">C</text>
+      <rect x="168" y="8" width="40" height="22" rx="4" fill="url(#gVerm)" opacity="0.45"/>
+      <text x="188" y="23" text-anchor="middle" font-size="11" font-weight="700" fill="#FBEEEA" font-family="'PingFang SC',sans-serif">D</text>
+      <path d="M 40 19 H 56 M 96 19 H 112 M 152 19 H 168" stroke="#A87B2A" stroke-width="2.5"/>
+      <text x="104" y="52" text-anchor="middle" class="b">电报局转接 = 通信瓶颈 · 数据处理不等式</text>
+    </g>
+  </g>
+
+  <!-- left: slope crossing point -->
+  <g>
+    <rect x="64" y="204" width="690" height="190" fill="#22506B" opacity="0.06"/>
+    <text class="rl" x="92" y="236">上下文退化实验 · 理论边界的临界点</text>
+    <line x1="150" y1="380" x2="640" y2="380" stroke="#D8D2BE" stroke-width="1.5"/>
+    <text class="b" x="150" y="400">轻度退化</text>
+    <text class="b" x="640" y="400" text-anchor="end">重度退化 · 掩码比例 0.7</text>
+
+    <line x1="150" y1="272" x2="640" y2="330" stroke="url(#gForest)" stroke-width="3"/>
+    <circle cx="150" cy="272" r="8" fill="url(#gForest)"/><circle cx="640" cy="330" r="8" fill="url(#gForest)"/>
+    <text class="rl" x="166" y="262" fill="#2F6B4F" font-weight="700">单智能体</text>
+
+    <line x1="150" y1="336" x2="640" y2="272" stroke="url(#gVerm)" stroke-width="3"/>
+    <circle cx="150" cy="336" r="8" fill="url(#gVerm)"/><circle cx="640" cy="272" r="8" fill="url(#gVerm)"/>
+    <text class="rl" x="166" y="356" fill="#B03A2E" font-weight="700">多智能体</text>
+
+    <line x1="430" y1="248" x2="430" y2="380" stroke="#A87B2A" stroke-width="1.5" stroke-dasharray="5 5"/>
+    <text x="430" y="242" text-anchor="middle" font-size="13.5" font-weight="700" fill="#8A6620" font-family="'PingFang SC',sans-serif">反超点</text>
+    <text class="b" x="92" y="252">轻度退化单智能体仍领先；有效上下文利用率降到阈值下，结构化多步才显出抗退化性</text>
+  </g>
+
+  <!-- right verdict -->
+  <g>
+    <rect x="836" y="204" width="304" height="82" rx="10" fill="url(#gForest)" opacity="0.09"/>
+    <text x="856" y="240" font-size="18" font-weight="700" fill="#2F6B4F">最强默认架构</text>
+    <text x="856" y="266" class="b">所有预算条件下：最优或统计上无显著差异</text>
+
+    <text class="rl" x="856" y="326">同等结果，电报费更省</text>
+    <text class="b" x="856" y="346">单智能体消耗推理 token 远少于任何多智能体变体</text>
+
+    <text class="rl" x="856" y="392">实验覆盖面</text>
+    <text class="b" x="856" y="412">3 模型系列 × FRAMES / MuSiQue × 5 种多智能体架构</text>
+  </g>
+
+  <!-- bottom chips: artifacts -->
+  <line x1="64" y1="470" x2="1136" y2="470" stroke="#E5E1D4"/>
+  <g>
+    <text class="rl" x="64" y="512">两个评估假象</text>
+    <rect x="176" y="492" width="196" height="28" rx="14" fill="url(#gPineInk)" opacity="0.18"/>
+    <text x="274" y="511" text-anchor="middle" class="chip" fill="#1B4258">API 预算控制偏差</text>
+    <text x="384" y="511" class="b">Gemini-2.5 thinking token 计数或扭曲实际消耗</text>
+    <rect x="716" y="492" width="196" height="28" rx="14" fill="url(#gPlum)" opacity="0.18"/>
+    <text x="814" y="511" text-anchor="middle" class="chip" fill="#5E3570">基准对改写敏感</text>
+    <text x="924" y="511" class="b">优势可能来自表述过拟合</text>
+  </g>
+  <text x="64" y="562" font-size="18" fill="#1A1B1E">被报告的多智能体优势，更多来自未计量的计算与上下文效应，而非架构本身。</text>
+  <text class="b" x="1136" y="618" text-anchor="end" font-family="'PingFang SC','Helvetica Neue',sans-serif">论文自述口径 · 预印本未经同行评审 · Micropaper</text>
 </svg>

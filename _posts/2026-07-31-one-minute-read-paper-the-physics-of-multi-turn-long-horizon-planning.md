@@ -3,6 +3,7 @@ layout: post
 title:  "一分钟读论文：《多轮长程规划的训练物理》"
 author: unbug
 categories: [AI, Agent]
+description: "该研究构建首个可控多轮长程规划平台，从预训练、后训练到多教师蒸馏全生命周期考察规划能力获取，揭示世界模型内部化、RL后训练适用边界与多教师蒸馏兼容性的核心规律。"
 image: assets/images/planphys-framework.svg
 tags: [agent-foundation-models, planning, agentic-distillation, rl-post-training]
 ---

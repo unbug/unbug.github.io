@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "一分钟读论文：《当记忆改变一切时什么保持不变——智能体记忆巩固的身份不变性框架》"
+title: "一分钟读论文：《记忆巩固的身份不变性框架》"
 author: unbug
 categories: [ai, agent]
 image: assets/images/article-91-episodic-to-semantic.svg
 tags: [agent-memory, identity-preservation, memory-consolidation, formal-verification, autonomous-agents]
+description: "哈工大与苏州大学把记忆巩固定义为不改身份的确定性函数，身份哈希不读取语义知识层，跨所有巩固轮次保持字节级一致，无效尝试率下降79.82%。"
 ---
 
 哈尔滨工业大学和苏州大学合作的一篇论文[《Episodic-to-Semantic Consolidation Without Identity Drift》](https://arxiv.org/abs/2607.01988)首次将记忆巩固形式化为不改变智能体身份的确定性函数——在持续积累知识的同时，通过身份哈希隔离语义知识层，实现字节级身份一致性。核心突破在于：传统方法将记忆巩固视为"改变智能体本身"的操作（微调模型、重写提示词、蒸馏策略），而本文提出巩固只是从情景记忆到语义知识的映射 f: M^ep -> M^sem，身份哈希不读取 M^sem，因此更新知识而不改变认证身份。

@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "一分钟读论文：《PAST-Bench：评估个人智能体递归自我改进的基础基准》"
+title:  "一分钟读论文：《PAST-Bench：自改进基准》"
 author: unbug
 categories: [AI, AgentFoundationModels]
 image: assets/images/past-bench-framework.svg
 tags: [PersonalAgents, RecursiveSelfImprovement, Benchmarking, ExperienceReuse]
+description: "首个个人智能体递归自我改进基准，用匹配控制组隔离经验保留的因果效应。26个任务族204个episode评估7个模型与4种框架，区分模型强与学习后变强。"
 ---
 
 香港中文大学和阿里巴巴集团合作的一篇论文[《PAST-Bench: Benchmarking the Foundations of Recursive Self-Improvement in Personal Agents》][paper1-url]，首次提出了针对个人 AI 智能体递归自我改进能力的系统性基准测试框架。该研究通过匹配的控制组设计隔离经验保留的因果效应，在 26 个任务族、204 个 episode 上评估了 7 个基础模型和 4 种 Agent 框架的跨会话能力演进表现：

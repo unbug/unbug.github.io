@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Noto Serif SC','Songti SC',serif">
+  <defs>
+    <style>
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8E93A6; font-family: 'Noto Serif SC','Songti SC',serif; }
+      .rl { font-size: 15px; fill: #464B5A; font-family: 'Noto Serif SC','Songti SC',serif; }
+      .val { font-size: 17px; font-weight: 700; fill: #1A1B1E; font-family: 'Noto Serif SC','Songti SC',serif; }
+      .b { font-size: 12.5px; fill: #9AA0AE; font-family: 'Noto Serif SC','Songti SC',serif; }
+      .chip { font-size: 13px; font-weight: 600; font-family: 'Noto Serif SC','Songti SC',serif; }
+      .node { fill: #FFFFFF; stroke-width: 3; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBFAF7"/><stop offset="1" stop-color="#F1F1EC"/>
+    </linearGradient>
+    <linearGradient id="gWax" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B5442E"/><stop offset="1" stop-color="#D4694F"/>
+    </linearGradient>
+    <linearGradient id="gIndigo" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4A5899"/><stop offset="1" stop-color="#7B87BE"/>
+    </linearGradient>
+    <linearGradient id="gVerd" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3D8B67"/><stop offset="1" stop-color="#77B894"/>
+    </linearGradient>
+    <linearGradient id="gAmber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C98A1B"/><stop offset="1" stop-color="#E5B84E"/>
+    </linearGradient>
+    <linearGradient id="gRose" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#AE4A6E"/><stop offset="1" stop-color="#CE7A97"/>
+    </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2E8B93"/><stop offset="1" stop-color="#6FBAC0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1108" cy="108" r="140" fill="#4A5899" opacity="0.06"/>
+  <circle cx="72" cy="622" r="112" fill="#AE4A6E" opacity="0.06"/>
+  <rect x="64" y="44" width="44" height="5" rx="2.5" fill="url(#gWax)"/>
+
+  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2607.13884 · 电子科技大学</text>
+  <text x="64" y="128" font-size="37" font-weight="700" fill="#1A1B1E">钥匙配一次，从此不再试锁</text>
+  <text x="64" y="158" font-size="15.5" fill="#6E6A5C">EMG：把失败到成功的编辑路径存进锁谱，测试时一次检索直接开锁</text>
+
+  <!-- lockpick motif -->
+  <g transform="rotate(-24 1112 112)">
+    <circle cx="1082" cy="98" r="17" fill="none" stroke="url(#gAmber)" stroke-width="6"/>
+    <path d="M 1098 106 h 52 l 0 12 l 9 0 l 0 -12 l 8 0 l 0 10 l 9 0 l 0 -22" fill="none" stroke="url(#gAmber)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g>
+    <rect x="1030" y="140" width="66" height="44" rx="6" fill="#FFFFFF" stroke="#C9B98A" stroke-width="2.5"/>
+    <circle cx="1063" cy="158" r="8" fill="none" stroke="#C9B98A" stroke-width="2.5"/>
+    <path d="M 1060 164 h 6 l 2 12 h -10 z" fill="#C9B98A"/>
+  </g>
+
+  <!-- graph motif: fail path diverging, edit path back to success -->
+  <g>
+    <rect x="64" y="190" width="640" height="200" fill="#4A5899" opacity="0.06"/>
+    <path d="M 120 352 L 250 352 L 390 262 L 540 262" fill="none" stroke="url(#gVerd)" stroke-width="3.5"/>
+    <path d="M 250 352 L 390 402 L 540 402" fill="none" stroke="url(#gRose)" stroke-width="3.5" stroke-dasharray="8 6"/>
+    <circle cx="120" cy="352" r="10" class="node" stroke="#3D8B67"/>
+    <circle cx="250" cy="352" r="10" class="node" stroke="#C98A1B"/>
+    <circle cx="390" cy="262" r="10" class="node" stroke="#3D8B67"/>
+    <circle cx="540" cy="262" r="11" fill="url(#gVerd)"/>
+    <circle cx="390" cy="402" r="10" class="node" stroke="#AE4A6E"/>
+    <circle cx="540" cy="402" r="10" fill="url(#gRose)"/>
+    <text class="b" x="250" y="330" text-anchor="middle">错误发生点</text>
+    <text class="b" x="612" y="267">成功轨迹</text>
+    <text class="b" x="612" y="407">失败轨迹</text>
+    <path d="M 470 380 C 470 316 500 300 520 285" fill="none" stroke="url(#gAmber)" stroke-width="3" stroke-dasharray="4 4"/>
+    <path d="M 520 285 l -10 1 M 520 285 l 2 10" stroke="url(#gAmber)" stroke-width="3" fill="none"/>
+    <text x="336" y="248" font-size="13.5" fill="#8A6620" font-family="'Noto Serif SC','Songti SC',serif">图编辑距离 = 失败图 → 成功图 的最少编辑操作</text>
+    <text x="336" y="228" font-size="13.5" fill="#4A5899" font-family="'Noto Serif SC','Songti SC',serif">节点 = 状态/决策点 · 边 = 具体动作</text>
+  </g>
+
+  <!-- right: big numbers -->
+  <g>
+    <rect x="784" y="190" width="352" height="96" fill="#C98A1B" opacity="0.09"/>
+    <text x="804" y="248" font-size="30" font-weight="700" fill="#B5442E" font-family="'Noto Serif SC','Songti SC',serif">1 次</text>
+    <text x="884" y="240" font-size="14.5" fill="#464B5A" font-family="'Noto Serif SC','Songti SC',serif">检索匹配即纠错执行</text>
+    <text x="884" y="262" font-size="13" fill="#6E6A5C" font-family="'Noto Serif SC','Songti SC',serif">测试阶段零额外 LLM 调用</text>
+
+    <rect x="784" y="298" width="352" height="92" fill="#4A5899" opacity="0.07"/>
+    <text x="804" y="352" font-size="26" font-weight="700" fill="#4A5899" font-family="'Noto Serif SC','Songti SC',serif">0 迭代</text>
+    <text x="930" y="336" font-size="14" fill="#464B5A" font-family="'Noto Serif SC','Songti SC',serif">告别反思循环：重推理 · 重试</text>
+    <text x="930" y="358" font-size="13" fill="#6E6A5C" font-family="'Noto Serif SC','Songti SC',serif">平均推理调用远低于反思基线</text>
+  </g>
+
+  <!-- three flaws of reflection loop -->
+  <line x1="64" y1="418" x2="1136" y2="418" stroke="#E5E1D4"/>
+  <g>
+    <text class="rl" x="64" y="452" font-weight="700">反思循环三缺陷</text>
+    <rect x="230" y="432" width="150" height="28" rx="14" fill="url(#gTeal)" opacity="0.16"/>
+    <text class="chip" x="305" y="451" text-anchor="middle" fill="#1F6368">每轮全量推理</text>
+    <rect x="396" y="432" width="150" height="28" rx="14" fill="url(#gAmber)" opacity="0.2"/>
+    <text class="chip" x="471" y="451" text-anchor="middle" fill="#8A6620">token/延迟昂贵</text>
+    <rect x="562" y="432" width="164" height="28" rx="14" fill="url(#gRose)" opacity="0.16"/>
+    <text class="chip" x="644" y="451" text-anchor="middle" fill="#8E3A58">小模型陷错误循环</text>
+  </g>
+
+  <!-- benchmarks -->
+  <g>
+    <rect x="64" y="480" width="330" height="64" fill="#3D8B67" opacity="0.08"/>
+    <text x="84" y="508" font-size="16" font-weight="700" fill="#2C6B4C" font-family="'Noto Serif SC','Songti SC',serif">ALFWorld</text>
+    <text x="84" y="530" font-size="13" fill="#464B5A" font-family="'Noto Serif SC','Songti SC',serif">文本家务任务 · 完成率显著超反思基线</text>
+    <rect x="414" y="480" width="330" height="64" fill="#4A5899" opacity="0.08"/>
+    <text x="434" y="508" font-size="16" font-weight="700" fill="#4A5899" font-family="'Noto Serif SC','Songti SC',serif">ScienceWorld</text>
+    <text x="434" y="530" font-size="13" fill="#464B5A" font-family="'Noto Serif SC','Songti SC',serif">科学实验/文献检索 · 优于 SOTA 反思基线</text>
+    <rect x="764" y="480" width="372" height="64" fill="#AE4A6E" opacity="0.07"/>
+    <text x="784" y="508" font-size="16" font-weight="700" fill="#8E3A58" font-family="'Noto Serif SC','Songti SC',serif">小模型友好</text>
+    <text x="784" y="530" font-size="13" fill="#464B5A" font-family="'Noto Serif SC','Songti SC',serif">小参数量模型上依然保持竞争力</text>
+  </g>
+
+  <text x="64" y="584" font-size="17" fill="#1A1B1E">错误模式有结构可复现时，检索一把旧钥匙比现场重配一把更快。</text>
+  <text class="b" x="64" y="618">提升幅度为论文自述口径 · 训练期需收集成功/失败轨迹建库 · 预印本未经同行评审 · Micropaper</text>
+</svg>

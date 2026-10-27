@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "一分钟读论文：《Agent 编排的范式转移：从 ReAct 到 PI 架构》"
+title: "一分钟读论文：《从ReAct到PI的编排范式转移》"
 author: unbug
 categories: [AI, ParadigmRadar, Agent]
 image: assets/images/paradigm-radar-agent-orchestration-react-to-pi.svg
 tags: [Agent, Orchestration, PI, ReAct, Architecture]
+description: "Agent编排正从ReAct紧耦合循环转向PI的规划-执行-监控三段式架构，减少约60%编排代码的同时提升容错性与可预测性，监控组件负责失败检测与重规划。"
 ---
 
 如果你正在构建 AI 智能体，你可能已经发现一个痛点：传统的 ReAct（Reasoning + Acting）循环在处理多工具、长链路任务时，经常陷入无限循环或丢失全局目标。上周 Anthropic 发布的内部基准测试显示，在 Agent 编排任务上，基于 PI（Plan-Interact/Execute）架构的智能体比传统 ReAct 方案性能提升了 47%。这篇文章将解析 PI 的核心原理，并带你动手实现一个高可靠的多工具智能体。
@@ -23,16 +24,14 @@ tags: [Agent, Orchestration, PI, ReAct, Architecture]
 
 PI（Plan-Interact / Plan-Execute）架构代表了 Agent 编排从"手动循环"到"自适应编排"的范式转移。它的核心理念是将"规划"和"执行"解耦，让 LLM 在不同的角色下完成不同阶段的任务。
 
-### 三个核心组件
-
+**三个核心组件**
 PI 架构通常包含以下三个核心组件：
 
 1. **Planner（规划器）**：在任务开始时，LLM 作为规划器分析用户请求，生成一个结构化的执行计划，包括步骤分解、依赖关系和预期输出。
 2. **Executor（执行器）**：负责按照计划执行具体步骤，调用工具并收集结果。执行器通常是轻量级的，专注于执行而不是重新规划。
 3. **Monitor / Re-planner（监控与重规划器）**：在每一步执行后，评估当前状态与计划的匹配度。如果发现偏差或工具返回意外结果，触发重规划机制。
 
-### 与 ReAct/LATS 的对比
-
+**与 ReAct/LATS 的对比**
 | 维度 | ReAct 范式 | PI (Plan-Execute) 架构 | LATS 等搜索增强方案 |
 |------|-------------|------------------------|---------------------|
 | 执行模式 | 紧耦合的推理-行动循环 | 规划-执行的解耦阶段 | 基于树/图的探索与回溯 |
@@ -44,16 +43,14 @@ PI 架构通常包含以下三个核心组件：
 
 让我们通过一个最小可复现的示例，看看如何用 PI 架构搭建一个多工具智能体。这里我们使用 Python 和基础的 LLM API 来演示核心逻辑。
 
-### 环境准备
-
+**环境准备**
 确保你安装了必要的依赖：
 
 ```bash
 pip install openai pydantic
 ```
 
-### 核心代码：Plan-Execute 循环
-
+**核心代码：Plan-Execute 循环**
 以下是 PI 架构的核心执行循环片段（聚焦关键 30 行）：
 
 ```python
@@ -97,8 +94,7 @@ def pi_agent_loop(user_request):
     return state["results"]
 ```
 
-### 执行路径图解
-
+**执行路径图解**
 在这个流程中，数据流如下：
 1. 用户请求进入 Planner，生成 JSON 格式的计划文档。
 2. Executor 按 `step_id` 顺序或依赖图遍历计划。
@@ -110,12 +106,10 @@ def pi_agent_loop(user_request):
 
 在实际的多工具场景中，工具调用的失败是常态而非例外。PI 架构的优势在于它允许我们在"监控层"处理这些异常，而不必让整个循环崩溃。
 
-### 关键逻辑：局部重规划
-
+**关键逻辑：局部重规划**
 当某个步骤返回错误时，Monitor 可以触发局部重规划，而不是从头开始。例如，如果数据库查询返回"表不存在"，Re-planner 可以先尝试列出可用表，然后更新计划中的后续步骤。
 
-### 常见错误及解决方案
-
+**常见错误及解决方案**
 - **计划过于死板**：初始计划可能没有考虑到某些边界情况。解决方案是设置计划的"弹性字段"，允许 Executor 在特定条件下自主调整参数。
 - **重规划陷入循环**：如果 Re-planner 反复生成相似的计划，需要引入"已尝试计划记录"，强制 LLM 探索新路径。
 
@@ -125,8 +119,7 @@ def pi_agent_loop(user_request):
 
 我们在一个典型的多工具编排场景下对比了 ReAct 和 PI 架构的表现。任务要求：根据用户提供的产品 ID，查询数据库中的库存信息，然后调用外部价格 API 获取实时报价，最后生成一份包含比价结果的摘要报告。
 
-### Before vs After 数据对比
-
+**Before vs After 数据对比**
 | 指标 | ReAct 方案 | PI 架构方案 | 提升幅度 |
 |------|-----------|-------------|----------|
 | 任务成功率 | 58% | 85% | +47% |

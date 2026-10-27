@@ -5,6 +5,7 @@ author: unbug
 categories: [AI, Agent]
 image: assets/images/article-66-reflect.svg
 tags: [error-attribution, silent-failure, llm-agent, intervention, trace-diagnosis]
+description: "论文提出干预支持的错误归因方法，对候选错误步骤施加补丁并受控重放执行轨迹，用已验证的结果翻转作对比证据精炼归因，在四个多跳推理定位基准上取得最高准确率。"
 ---
 
 Google DeepMind的论文[《REFLECT: Intervention-Supported Error Attribution for Silent Failures in LLM Agent Traces》][paper1-url]，提出了一种将诊断、测试与精炼整合为闭环的错误归因方法。该方法通过在静默失败场景下对候选错误步骤施加干预补丁并受控重放轨迹，利用已验证的结果翻转作为对比证据来精炼最终归因，在四个多跳推理定位基准上取得了最高准确率。

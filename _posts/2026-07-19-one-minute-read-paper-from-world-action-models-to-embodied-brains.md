@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "一分钟读论文：《From World Action Models to Embodied Brains》"
+title:  "一分钟读论文：《从世界行动模型到具身大脑》"
 author: unbug
 categories: [ai-agent, embodied-ai]
+description: "该路线图梳理从世界模型到World Action Models的演进，指出前者长于预测短于执行，WAM把动作空间纳入内生表征，并提出具身大脑协同进化框架。"
 image: assets/images/wam-roadmap.svg
 tags: [world-models, embodied-ai, wam, physical-intelligence, agentic-systems]
 ---

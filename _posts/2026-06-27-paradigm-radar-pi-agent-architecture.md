@@ -5,6 +5,7 @@ author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-pi-agent-architecture.svg
 tags: [Agent, PlanExecute, Orchestration, PI, LLM]
+description: "PI架构把Agent编排拆为规划与执行两阶段，减少约60%的编排代码，在成功率与错误恢复上优于ReAct循环，代价是Plan阶段带来少量Token增量。"
 ---
 
 上周 Anthropic 发布了 Claude 4 的内部基准测试：在 Agent 编排任务上，基于 PI（Plan-Execute）架构的智能体比传统 ReAct 方案性能提升了 47%。这篇文章将解析 PI 的核心原理，并带你动手实现一个具备自适应规划与错误恢复能力的超强智能体。
@@ -25,14 +26,12 @@ PI（Plan-Execute）架构代表了 Agent 编排从"手动编排"到"自适应�
 
 [插图：PI 架构图 - 展示 Planner, Executor, Evaluator/Revisor 三个组件的交互关系]
 
-### 三个核心组件
-
+**三个核心组件**
 1. 计划生成器 (Planner)：在任务开始时，Planner 会根据用户目标和可用工具列表，生成一个结构化的执行计划。这个计划通常包含任务分解、依赖关系和预期的中间结果。
 2. 执行引擎 (Executor)：Executor 负责按计划逐步执行每个步骤。它会调用相应的工具，并将结果反馈给后续步骤或 Planner。
 3. 评估与恢复模块 (Evaluator & Revisor)：在执行过程中，Evaluator 会持续监控执行状态。如果发现错误或偏差，Revisor 会动态调整计划或重试失败步骤，而不是盲目继续。
 
-### 与 ReAct/LATS 的对比
-
+**与 ReAct/LATS 的对比**
 - ReAct：无显式规划，单步推理加执行；错误恢复有限，依赖 LLM 自我纠正；上下文管理碎片化，历史对话混排；适用场景为简单工具调用。
 - LATS (Language Agent Tree Search)：树搜索，多分支探索；错误恢复强，支持回溯和重播；上下文结构化，节点状态隔离；适用场景为复杂推理任务。
 - PI (Plan-Execute)：显式全局规划，线性或图状计划；错误恢复中到强，内置评估与动态调整；上下文集中管理，计划状态清晰；适用场景为多工具编排、生产级 Agent。
@@ -41,42 +40,36 @@ PI（Plan-Execute）架构代表了 Agent 编排从"手动编排"到"自适应�
 
 让我们动手实现一个基于 PI 架构的智能体。我们将使用主流的 PI SDK（或类似框架的 Plan-Execute 模式）来完成最小可行演示。
 
-### 环境准备
-
+**环境准备**
 确保你已安装 Python 3.10+ 和相关的 AI 框架依赖：
 
 ```bash
 pip install pi-sdk langchain-openai anthropic
 ```
 
-### 核心代码片段
-
+**核心代码片段**
 以下是 PI Agent 的核心初始化与计划生成逻辑（仅保留关键 20 行）：
 
 ```python
 from pi_sdk import PlanAgent, ToolRegistry, Planner, Executor
 
-# 1. 注册可用工具
 tools = ToolRegistry()
 tools.add("search_web", description="搜索最新网页信息")
 tools.add("query_database", description="查询内部业务数据库")
 
-# 2. 初始化 PI Agent
 agent = PlanAgent(
     model="claude-4-opus",
     planner=Planner(strategy="structured_decomposition"),
     executor=Executor(fallback_strategy="retry_with_revision")
 )
 
-# 3. 生成并执行计划
 plan = agent.plan("查询 Q2 销售业绩并对比去年同期增长情况")
 agent.execute(plan)
 ```
 
 [插图：PI Agent 执行路径图 - 展示计划生成到步骤执行的流程]
 
-### 运行结果展示
-
+**运行结果展示**
 在执行上述代码后，PI Agent 会首先输出计划步骤：
 1. 调用 `query_database` 获取 Q2 销售业绩数据。
 2. 调用 `query_database` 获取去年同期数据。
@@ -88,14 +81,12 @@ agent.execute(plan)
 
 在实际项目中，智能体通常需要同时调用多个工具，并保持上下文的一致性。PI 架构通过计划状态机 (Plan State Machine) 解决了这个问题。
 
-### 关键逻辑图示
-
+**关键逻辑图示**
 在 PI 架构中，每个计划步骤都有一个明确的状态（Pending, Executing, Success, Failed, Revision）。当某个步骤失败时，系统不会立即终止，而是将状态标记为 Failed 并触发 Revisor。
 
 [插图：多工具编排流程图 - 展示 Plan State Machine 的状态转换]
 
-### 常见错误及解决方案
-
+**常见错误及解决方案**
 1. 规划幻觉 (Planning Hallucination)：Planner 生成了不存在的工具或错误的参数。
    - 解决方案：在 Planner 阶段引入工具 Schema 校验，或使用内置的 Tool Validation 评估器。
 2. 执行死锁：多个步骤之间存在循环依赖。
@@ -105,8 +96,7 @@ agent.execute(plan)
 
 我们在一个典型的多工具编排场景下进行了 Before vs After 测试。任务要求智能体完成"调研某技术领域的最新开源项目并生成对比报告"。
 
-### 对比数据
-
+**对比数据**
 - ReAct 方案：成功率 53%，平均执行步骤数 12.5，错误恢复次数/任务 2.3，Token 消耗（平均）4500。
 - PI 架构方案：成功率 78%，平均执行步骤数 8.2，错误恢复次数/任务 0.8，Token 消耗（平均）5200。
 - 提升比例：成功率提升 47%，平均执行步骤数减少 34%，错误恢复次数减少 65%，Token 消耗增加 15%。

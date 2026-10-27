@@ -5,6 +5,7 @@ author: unbug
 categories: [AI, Agent]
 image: assets/images/article-65-skill-nb.svg
 tags: [agent-workflow, formal-verification, gated-execution, durable-agents, mila]
+description: "SKILL.nb为智能体工作流提出选择性形式化、门控条件执行与笔记本式版本化三个生命周期治理机制，在WebArena-Verified上将意外失败率从18.3%降到5.7%，GitLab迁移测试中版本化使迁移时间缩短约40%。"
 ---
 
 蒙特利尔大学 Mila 研究所的论文[《SKILL.nb: Selective Formalization and Gated Execution for Durable Agent Workflows》][paper1-url]，提出了一种面向智能体工作流的生命周期治理框架，通过选择性形式化决策、门控条件执行和笔记本式版本化三个机制，将工作流的可靠性从"一次成功"扩展到"持续做对"。

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AI 范式雷达：《从代码补全到自主软件工程：Agentic Coding 的范式转移》"
+title: "AI 范式雷达：《从代码补全到自主软件工程》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-agentic-coding-paradigm-shift.svg
 tags: [agentic-coding, software-engineering, llm, code-generation, agent-frameworks]
+description: "梳理开源编程Agent在SWE-bench Verified上从不足6%升至50%以上的路径，拆解从被动补全到规划执行验证循环的四维转变，给出Aider与Claude Code上手步骤、框架选型建议及可靠性风险边界。"
 ---
 
 SWE-bench Verified 基准上，开源框架的成绩从 2023 年的不足 6% 跃升至 2025-2026 年的 50%-70%+，增幅超过 8 倍。这意味着 AI Agent 已经能够自主解决真实 GitHub Issue 中的复杂 Bug 修复任务——而这一切只用了不到三年时间。本文将带你理解 Agentic Coding 的核心原理、对比主流框架的适用场景，并给出从零搭建第一个自主编程 Agent 的实操路径。

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "一分钟读论文：《Agent OS 时代：微软与 NVIDIA 如何重塑部署范式》"
+title: "一分钟读论文：《Agent OS 时代：部署范式重塑》"
 author: unbug
 categories: [AI, ParadigmRadar, Agent]
 image: assets/images/paradigm-radar-agent-os-era.svg
 tags: [AgentOS, MicrosoftBuild, NVIDIA, WAF, OpenShell, Qwen36]
+description: "微软与英伟达把智能体的文件、网络、界面与进程能力及策略审计下沉到操作系统层，文章梳理四大能力域与本地云端混合架构，认为系统级底座不会替代上层编排框架。"
 ---
 
 Agent 正从“运行在操作系统上的应用”转向“操作系统原生能力的一部分”。微软 WAF 1.0 与 NVIDIA OpenShell、RTX Spark 的组合，标志着部署范式开始从应用编排走向系统编排。本文关注这次转移的结构变化、工程价值和落地边界。

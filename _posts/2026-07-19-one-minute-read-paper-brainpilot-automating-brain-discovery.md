@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "一分钟读论文：《BrainPilot -- 科研自动化的多Agent系统与伪造检测审计员》"
+title:  "一分钟读论文：《BrainPilot：科研自动化审计员》"
 author: unbug
 categories: [ai-agent, multi-agent]
+description: "BrainPilot由PI-Agent协调七个脑科学专家智能体，以Graph of Trace留痕、Auditor Agent审计事实，实现可追溯的科研自动化。"
 image: assets/images/brainpilot-architecture.svg
 tags: [agentic-research, brain-science, fabrication-detection, traceability, multi-agent-systems]
 ---

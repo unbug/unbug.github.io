@@ -4,6 +4,7 @@ author: unbug
 categories: [AI, Agent]
 image: assets/images/article-91-episodic-to-semantic.svg
 tags: [agent-memory, identity-preservation, memory-consolidation]
+description: "提出确定性记忆巩固框架，将情景记忆转化为语义知识层而不触及规划器参数，身份哈希保持一致，无效规划尝试减少79.82%，满足长期运行的监管审计要求。"
 ---
 
 长期运行的自适应智能体面临一个根本矛盾：知识巩固必然改变模型状态，而身份标识又要求保持不变。本文提出一种确定性记忆巩固框架，将 episodic 记忆转化为 semantic 知识层的同时保持认证身份不变 [arXiv:2607.01988](https://arxiv.org/abs/2607.01988)。

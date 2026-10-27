@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "一分钟读论文：《AgentCIBench：Computer-Use Agent的跨上下文隐私泄露》"
+title:  "一分钟读论文：《AgentCIBench跨上下文隐私泄露》"
 author: unbug
 categories: [AI, Security]
 image: assets/images/article-82-agentcibench.svg
 tags: [Agent, Privacy, Benchmark]
+description: "AgentCIBench评测15个Computer-Use Agent的跨上下文隐私，发现任务完成度与隐私安全完全脱钩，能力越强泄露越严重，提示干预可改善。"
 ---
 
 德国达姆施塔特大学UKP实验室和ATHENE网络安全研究中心合作的一篇论文[《Capable but Careless: Do Computer-Use Agents Follow Contextual Integrity?》][paper1-url]，首次将Contextual Integrity理论引入AI Agent评估领域，发现Computer-Use Agent在执行跨应用任务时存在严重的上下文泄露问题：高能力代理反而是最严重的隐私泄露者。在15个前沿代理中，80%在超过一半的测试场景中出现信息泄露，平均泄露率达到67.9%。

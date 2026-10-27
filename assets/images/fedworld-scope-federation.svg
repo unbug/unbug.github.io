@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="SimSun, Songti SC, STSong, serif">
+  <defs>
+    <marker id="f-teal" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#148F77"/></marker>
+    <marker id="f-green" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#1E8449"/></marker>
+    <marker id="f-red" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#C0392B"/></marker>
+  </defs>
+  <rect width="1200" height="675" fill="#FDFCF7"/>
+
+  <!-- title -->
+  <text x="600" y="52" font-size="34" fill="#2C3E50" text-anchor="middle">Agent 世界模型的联邦共享</text>
+  <text x="600" y="86" font-size="20" fill="#7F8C8D" text-anchor="middle">FedWorld —— 种子库与育种检疫站：目录合订，苗圃不合并</text>
+  <line x1="70" y1="104" x2="1130" y2="104" stroke="#D5CBB8" stroke-width="2"/>
+
+  <!-- left: seed banks -->
+  <text x="50" y="146" font-size="20" fill="#5D6D7E">各育各种：样本私有的本地苗圃</text>
+  <g>
+    <path d="M80,178 h148 v104 h-148 Z" fill="#D5F5E3" stroke="#1E8449" stroke-width="2.5"/>
+    <path d="M80,178 l74,-30 l74,30 Z" fill="#ABEBC6" stroke="#1E8449" stroke-width="2.5"/>
+    <text x="154" y="222" font-size="17" fill="#145A32" text-anchor="middle">tau-bench</text>
+    <text x="154" y="248" font-size="17" fill="#145A32" text-anchor="middle">客户 ×11</text>
+    <path d="M80,330 h148 v104 h-148 Z" fill="#D4EFDF" stroke="#1E8449" stroke-width="2.5"/>
+    <path d="M80,330 l74,-30 l74,30 Z" fill="#A9DFBF" stroke="#1E8449" stroke-width="2.5"/>
+    <text x="154" y="374" font-size="17" fill="#145A32" text-anchor="middle">ALFWorld</text>
+    <text x="154" y="400" font-size="17" fill="#145A32" text-anchor="middle">客户 ×12</text>
+  </g>
+  <text x="154" y="468" font-size="15" fill="#7F8C8D" text-anchor="middle">轨迹不出库，更新不同步</text>
+  <text x="154" y="492" font-size="15" fill="#7F8C8D" text-anchor="middle">三层：词表 / 动力学 / 奖励</text>
+
+  <!-- quarantine station -->
+  <text x="470" y="146" font-size="20" fill="#5D6D7E">检疫站：作用域感知聚合</text>
+  <rect x="350" y="168" width="240" height="330" rx="14" fill="#EAF7F4" stroke="#148F77" stroke-width="3"/>
+  <rect x="372" y="192" width="196" height="72" rx="8" fill="#D1F2EB" stroke="#148F77" stroke-width="2"/>
+  <text x="470" y="222" font-size="16" fill="#0E6655" text-anchor="middle">效果项</text>
+  <text x="470" y="248" font-size="14" fill="#148F77" text-anchor="middle">预测正确的转移</text>
+  <rect x="372" y="278" width="196" height="72" rx="8" fill="#FCF3CF" stroke="#B7950B" stroke-width="2"/>
+  <text x="470" y="308" font-size="16" fill="#7D6608" text-anchor="middle">保护项</text>
+  <text x="470" y="334" font-size="14" fill="#9A7D0A" text-anchor="middle">不伤已验证的规则</text>
+  <rect x="372" y="364" width="196" height="72" rx="8" fill="#FADBD8" stroke="#C0392B" stroke-width="2"/>
+  <text x="470" y="394" font-size="16" fill="#922B21" text-anchor="middle">冲突项</text>
+  <text x="470" y="420" font-size="14" fill="#C0392B" text-anchor="middle">互斥分支隔离共存</text>
+  <text x="470" y="476" font-size="15" fill="#0E6655" text-anchor="middle">按作用域标签路由入库</text>
+
+  <!-- arrows banks -> station -->
+  <path d="M232,230 C280,230 300,270 344,290" fill="none" stroke="#148F77" stroke-width="3" marker-end="url(#f-teal)"/>
+  <path d="M232,382 C280,382 300,350 344,336" fill="none" stroke="#148F77" stroke-width="3" marker-end="url(#f-teal)"/>
+  <text x="284" y="204" font-size="14" fill="#148F77">参数 + 转移统计</text>
+
+  <!-- catalog -->
+  <path d="M596,330 L656,330" stroke="#1E8449" stroke-width="3" marker-end="url(#f-green)"/>
+  <rect x="664" y="238" width="200" height="190" rx="12" fill="#E8F8F5" stroke="#1E8449" stroke-width="3"/>
+  <text x="764" y="286" font-size="19" fill="#145A32" text-anchor="middle">共享育种目录</text>
+  <line x1="690" y1="304" x2="838" y2="304" stroke="#1E8449" stroke-width="1.5"/>
+  <text x="764" y="334" font-size="15" fill="#1E8449" text-anchor="middle">词表 + 动力学合订</text>
+  <text x="764" y="362" font-size="15" fill="#9A7D0A" text-anchor="middle">奖励模型留本地</text>
+  <text x="764" y="390" font-size="15" fill="#C0392B" text-anchor="middle">冲突品种单独成仓</text>
+
+  <!-- quarantine reject -->
+  <path d="M470,498 L470,540 L400,566" fill="none" stroke="#C0392B" stroke-width="2.5" marker-end="url(#f-red)"/>
+  <text x="392" y="588" font-size="14" fill="#C0392B" text-anchor="end">越库种子：禁止混装</text>
+
+  <!-- back to nurseries -->
+  <path d="M864,300 C930,260 940,220 986,206" fill="none" stroke="#1E8449" stroke-width="3" marker-end="url(#f-green)"/>
+  <text x="938" y="244" font-size="14" fill="#1E8449">低通信回播各苗圃</text>
+
+  <!-- results panel -->
+  <text x="980" y="146" font-size="20" fill="#5D6D7E">ALFWorld 在线执行</text>
+  <g>
+    <rect x="986" y="404" width="56" height="52" fill="#1E8449" opacity="0.4"/>
+    <rect x="1066" y="368" width="56" height="88" fill="#1E8449"/>
+    <text x="1014" y="396" font-size="15" fill="#145A32" text-anchor="middle">36.4%</text>
+    <text x="1094" y="360" font-size="15" fill="#145A32" text-anchor="middle">59.3%</text>
+    <text x="1014" y="512" font-size="13" fill="#5D6D7E" text-anchor="middle">本地模型</text>
+    <line x1="976" y1="456" x2="1136" y2="456" stroke="#5D6D7E" stroke-width="2"/>
+    <text x="1094" y="512" font-size="13" fill="#5D6D7E" text-anchor="middle">FedWorld</text>
+  </g>
+  <text x="980" y="284" font-size="17" fill="#148F77">在线任务成功率提升 50.2%</text>
+  <text x="980" y="312" font-size="16" fill="#B7950B">重复动作错误在两个环境分别下降 48.1% 与 50.2%</text>
+
+  <!-- bottom strip -->
+  <line x1="70" y1="606" x2="1130" y2="606" stroke="#D5CBB8" stroke-width="1.5"/>
+  <text x="70" y="640" font-size="16" fill="#2C3E50">三方损失：缺保护项伤本地精度，缺冲突项把一方规则强加另一方</text>
+  <text x="70" y="664" font-size="14" fill="#C0392B">对照站内约束弱化一文：规则必须带着作用域行走，否则要么失效、要么伤人 · arXiv:2608.01561</text>
+</svg>

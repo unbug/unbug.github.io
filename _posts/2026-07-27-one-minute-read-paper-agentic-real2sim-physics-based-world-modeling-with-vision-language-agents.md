@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "一分钟读论文：《Agentic Real2Sim：用视觉语言代理实现物理世界建模》"
+title:  "一分钟读论文：《Real2Sim：视觉代理的物理世界建模》"
 author: unbug
 categories: [AI, Robotics]
+description: "Agentic Real2Sim让视觉语言代理把真实物体交互记录自动转为可仿真的episodic twin，为机器人策略学习提供低成本高质量仿真数据。"
 image: assets/images/agentic-real2sim-framework.svg
 tags: [agent-foundation-models, world-models, embodied-ai, real-to-sim]
 ---

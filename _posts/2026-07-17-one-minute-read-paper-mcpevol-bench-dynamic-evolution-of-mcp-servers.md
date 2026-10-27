@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "一分钟读论文：《MCPEvol-Bench：MCP服务器动态演化的LLM Agent性能基准测试》"
+title:  "一分钟读论文：《服务演化下的工具适应基准》"
 author: unbug
 categories: [AI, Agent]
 image: assets/images/agent-world-model.svg
 tags: [mcp, agent-tool-adaptation, benchmark, dynamic-evaluation]
+description: "该基准设计十一种突变算子模拟真实工具服务器的演化过程，覆盖一百二十三个服务器与十二个主流模型，发现工具接口变化后顶级智能体性能下降超过一成。"
 ---
 
 清华大学和阿里巴巴达摩院合作的一篇论文[《MCPEvol-Bench: Benchmarking LLM Agent Performance Across Dynamic Evolutions of MCP Servers》][paper1-url]首次系统评估了LLM Agent在动态工具环境中的适应能力。通过设计11种突变算子模拟真实MCP服务器的演化过程，覆盖123个MCP服务器和12个主流LLM模型，研究发现顶级Agent模型在工具接口发生演化后性能下降13.7%至14.4%，暴露出当前Agent系统在动态环境中的脆弱性。

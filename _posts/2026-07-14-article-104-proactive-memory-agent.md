@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "一分钟读论文：《Remember When It Matters：长程Agent的主动记忆干预》"
+title: "一分钟读论文：《长程Agent的主动记忆干预》"
 author: unbug
 categories: [AI]
 image: assets/images/proactive-memory-agent-paradigm.svg
 tags: [agent-memory, proactive-intervention, long-horizon-agents, behavioral-state-decay]
+description: "论文提出记忆Agent与行动Agent并行的主动干预架构，对抗行为状态衰减，在Terminal-Bench将Claude提升8.3个百分点。"
 ---
 
 Meta AI的研究者发表的论文[《Remember When It Matters：长程Agent的主动记忆干预》](https://arxiv.org/abs/2607.08716)，提出了一种将Agent记忆从被动检索转变为主动干预的全新范式。在长程任务中，决策相关信息虽然存在于对话历史或上下文窗口中，但不再可靠地影响后续决策——作者称之为**行为状态衰减**。该研究通过双Agent架构和选择性干预机制，在Terminal-Bench 2.0上将Claude Sonnet 4.5的表现从37.6%提升至45.9%，增幅达8.3个百分点。

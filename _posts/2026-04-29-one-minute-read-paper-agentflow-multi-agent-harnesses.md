@@ -3,8 +3,9 @@ layout: post
 title:  "一分钟读论文：《自动合成多智能体漏洞发现方案》"
 author: unbug
 categories: [AI, Security]
-image: assets/images/article-38-agentflow.jpg
+image: assets/images/article-38-agentflow.svg
 tags: [MultiAgent, Security, Harness, AgentFlow, Vulnerability]
+description: "AgentFlow用类型化图DSL把多智能体漏洞发现方案的编排变成可搜索空间，靠运行时反馈自动诊断重写，在Chrome中发现十个未知零日漏洞，含两个Critical级沙箱逃逸。"
 ---
 
 加州大学圣塔芭芭拉分校等机构研究者发表的论文[《Synthesizing Multi-Agent Harnesses for Vulnerability Discovery》][paper1-url]，提出AgentFlow框架，使用类型化图DSL自动合成多智能体协作方案，在Google Chrome中发现10个未知零日漏洞。

@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "一分钟读论文：《SearchOS：开放域信息检索的多代理协作框架》"
+title:  "一分钟读论文：《SearchOS：开放域检索多代理框架》"
 author: unbug
 categories: [ai-agent, multi-agent]
+description: "SearchOS把多代理检索的演化状态外显为前沿任务、证据图、覆盖地图与失败记忆四个组件，显著降低开放域信息检索的重复查询率，提升输出完整性与证据覆盖率。"
 image: assets/images/searchos-framework.svg
 tags: [agentic-rag, information-seeking, multi-agent-collaboration, state-management]
 ---

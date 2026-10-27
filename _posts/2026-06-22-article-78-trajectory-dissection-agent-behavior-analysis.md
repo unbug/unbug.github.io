@@ -5,6 +5,7 @@ author: unbug
 categories: [AI, Agent]
 image: assets/images/trajectory-dissection-diagram.svg
 tags: [Agent, TrajectoryAnalysis, ModelBehavior]
+description: "堪萨斯大学分析13.8万条智能体轨迹，把意图-执行差距形式化为可测量偏差，发现同分模型解题路径迥异，为Agent可靠性链条补上可观测性诊断层。"
 ---
 
 堪萨斯大学的一篇论文[《Dissecting model behavior through agent trajectories》][paper1-url]，首次将**意图-执行差距（intent-execution gap）**形式化为可测量的系统偏差。通过分析`138k`条智能体轨迹、覆盖Claude、Gemini、GPT、Grok、Qwen五大模型家族，论文证明：AI Agent性能不仅是建模问题，更是系统问题——模型假设与harness行为之间的差距会阻止模型能力的充分转化。

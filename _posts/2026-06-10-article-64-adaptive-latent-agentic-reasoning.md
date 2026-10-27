@@ -5,6 +5,7 @@ author: unbug
 categories: [AI, Agent]
 image: assets/images/paradigm-radar-alan-agent-reasoning.svg
 tags: [AgenticReasoning, TokenEfficiency, ChainOfThought, LatentReasoning, LLM]
+description: "论文提出双模式推理框架，让智能体在常规决策步使用紧凑潜在推理、在困难决策时切换回显式思维链，工具使用场景生成开销下降超过八成，任务准确率保持可比或更优。"
 ---
 
 康奈尔大学、UC Davis 和 UC Riverside 研究者的论文[《Adaptive Latent Agentic Reasoning》][paper1-url]，提出了一种双模式推理框架，让智能体在常规决策步使用紧凑的潜在推理、在困难决策时切换到显式思维链，工具使用场景下 Token 节省率高达 `84.6%`。

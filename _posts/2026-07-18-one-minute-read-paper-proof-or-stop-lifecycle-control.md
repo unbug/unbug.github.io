@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "一分钟读论文：《Proof-or-Stop：自主编码Agent的可验证证据门控机制》"
+title:  "一分钟读论文：《Proof-or-Stop：证据门控机制》"
 author: unbug
 categories: [ai-agent, agentic-coding]
+description: "Proof-or-Stop把编码Agent的DONE声明变成证据门控，要求状态转换依赖可机械验证且绑定源状态的新鲜证据，解决其状态声明缺乏实证支撑的信任危机。"
 image: assets/images/proof-or-stop.svg
 tags: [agentic-coding, lifecycle-control, verifiable-evidence, autonomous-agents]
 ---

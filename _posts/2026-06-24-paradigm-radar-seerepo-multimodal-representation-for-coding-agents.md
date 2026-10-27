@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "一分钟读论文：《让 Agent 看见代码仓库——多模态表示如何重塑编码代理》"
+title: "一分钟读论文：《多模态表示重塑编码代理》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-seerepo-architecture.svg
 tags: [Agent, Multimodal, CodeRepository, TokenEfficiency]
+description: "SeeRepo把代码仓库结构渲染为可视化图，与文本混合后输入编码Agent，实验证明混合模态能同时提升准确率并降低Token成本，纯视觉输入反而降性能。"
 ---
 
 如果你正在构建一个基于 LLM 的代码修复 Agent，你可能已经注意到一个反直觉的现象：给模型"看"代码仓库的结构图，反而让它变得更笨了。这不是你的错觉——慕尼黑工业大学和达姆施塔特大学的研究团队在 SWE-bench Verified 上做了系统实验，发现纯视觉模式让所有模型的修复准确率显著下降，GPT-5-mini 从 55.0% 跌至 41.4%，Doubao 更是暴跌至 16.9%。但混合文本加视觉的模式却实现了双赢：Token 成本降低最高达 26%，同时修复准确率持平或微升。这篇文章将解析 SeeRepo 的核心发现，并带你理解多模态表示在编码 Agent 中的正确打开方式。
@@ -36,7 +37,6 @@ SeeRepo 的核心贡献在于提出了一套完整的仓库结构可视化管线
 **第三步：多模态注入。** 生成的 PNG 图像作为辅助输入与文本上下文一起提供给 Agent，形成"文本定位 + 视觉理解"的互补模式。
 
 ```python
-# SeeRepo 核心管线示意
 def build_repo_graph(repo_path):
     # 1. AST 解析 → 提取四种关系
     relations = extract_relations(repo_path)  # contains, imports, calls, inherits
@@ -129,7 +129,6 @@ SeeRepo 的发现对当前主流编码 Agent 的设计有直接指导意义：
 **自建编码 Agent**：如果你正在构建自己的编码 Agent，SeeRepo 提供了一个开箱即用的参考实现。核心集成步骤包括：安装 AST 解析库（如 tree-sitter）、配置 Graphviz 渲染管线、设计文本-视觉切换的触发逻辑。
 
 ```python
-# 混合模式集成示意
 def agent_with_seerepo(task, repo_path):
     # 1. 文本定位阶段
     relevant_files = text_search(repo_path, task)

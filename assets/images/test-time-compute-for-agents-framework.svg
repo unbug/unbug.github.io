@@ -1,98 +1,98 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0a0e27"/>
-      <stop offset="100%" style="stop-color:#1a1040"/>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9A937F; }
+      .rl { font-size: 15px; fill: #3D4450; }
+      .b { font-size: 12.5px; fill: #A29C88; }
+    </style>
+    <linearGradient id="gSimple" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2E7D8C"/><stop offset="1" stop-color="#6FB4BF"/>
     </linearGradient>
-    <linearGradient id="blue" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#3b82f6"/>
-      <stop offset="100%" style="stop-color:#60a5fa"/>
+    <linearGradient id="gMedium" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3E5FA8"/><stop offset="1" stop-color="#7E97D2"/>
     </linearGradient>
-    <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#10b981"/>
-      <stop offset="100%" style="stop-color:#34d399"/>
+    <linearGradient id="gComplex" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4C8A3F"/><stop offset="1" stop-color="#87BC5E"/>
     </linearGradient>
-    <linearGradient id="orange" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#f59e0b"/>
-      <stop offset="100%" style="stop-color:#fbbf24"/>
+    <linearGradient id="gUniform" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A8842C"/><stop offset="1" stop-color="#D6BC6A"/>
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <linearGradient id="gFail" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B5442E"/><stop offset="1" stop-color="#CC7A6A"/>
+    </linearGradient>
   </defs>
 
-  <!-- Background -->
-  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="#FBFAF7"/>
+  <rect x="0" y="0" width="44" height="5" fill="#B5442E"/>
+  <circle cx="1112" cy="596" r="130" fill="#2E7D8C" opacity="0.06"/>
+  <circle cx="76" cy="96" r="96" fill="#B5442E" opacity="0.05"/>
 
-  <!-- Title -->
-  <text x="400" y="42" text-anchor="middle" font-size="20" font-weight="bold" fill="#e2e8f0">Test-Time Compute for Agents</text>
-  <text x="400" y="65" text-anchor="middle" font-size="13" fill="#94a3b8">Dynamic Budget Allocation: From Uniform to Adaptive Reasoning</text>
+  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2607.28573 · LEE &amp; CHOI</text>
+  <text class="serif" x="64" y="130" font-size="37" font-weight="700" fill="#1A1B1E">多花的算力，买回一种新失败</text>
+  <text x="64" y="160" font-size="15.5" fill="#6E6A5C">Agent 场景的测试时计算实证：预算按难度调度，而非在推理链上均匀延长</text>
+  <line x1="64" y1="184" x2="1136" y2="184" stroke="#E5E1D4"/>
 
-  <!-- LEFT SIDE: Traditional Agent (Fixed Budget) -->
-  <rect x="30" y="90" width="350" height="370" rx="12" fill="#0f1629" stroke="#1e293b" stroke-width="1"/>
-  <text x="205" y="120" text-anchor="middle" font-size="14" font-weight="bold" fill="#ef4444">Traditional Agent: Fixed Budget</text>
+  <!-- waterfalls: uniform vs difficulty-scheduled -->
+  <g>
+    <text class="rl" x="64" y="216" font-weight="700" fill="#1A1B1E">同一条序列 · 两种预算给法（示意）</text>
 
-  <!-- ReAct steps -->
-  <rect x="60" y="140" width="290" height="35" rx="6" fill="#1e293b"/>
-  <text x="205" y="162" text-anchor="middle" font-size="12" fill="#cbd5e1">ReAct Step 1: ~800 tokens</text>
+    <text class="b" x="120" y="266" text-anchor="middle">固定预算</text>
+    <rect x="120" y="280" width="74" height="106" fill="url(#gUniform)" opacity="0.85"/>
+    <rect x="206" y="280" width="74" height="106" fill="url(#gUniform)" opacity="0.85"/>
+    <rect x="292" y="280" width="74" height="106" fill="url(#gUniform)" opacity="0.85"/>
+    <text class="serif" x="120" y="424" font-size="27" font-weight="700" fill="#8A6C20">≈2,400 tokens</text>
+    <text class="b" x="120" y="446">每步均匀 ~800</text>
 
-  <rect x="60" y="185" width="290" height="35" rx="6" fill="#1e293b"/>
-  <text x="205" y="207" text-anchor="middle" font-size="12" fill="#cbd5e1">ReAct Step 2: ~800 tokens</text>
+    <text class="b" x="470" y="266" text-anchor="middle">动态预算</text>
+    <rect x="470" y="356" width="66" height="30" fill="url(#gSimple)"/>
+    <rect x="548" y="280" width="66" height="106" fill="url(#gMedium)"/>
+    <rect x="626" y="236" width="66" height="150" fill="url(#gComplex)"/>
+    <text x="503" y="406" text-anchor="middle" font-size="12" fill="#2E7D8C">~300</text>
+    <text x="581" y="406" text-anchor="middle" font-size="12" fill="#3E5FA8">~1,500</text>
+    <text x="659" y="406" text-anchor="middle" font-size="12" fill="#3F6E33">~5,000</text>
+    <text class="serif" x="470" y="424" font-size="27" font-weight="700" fill="#1A1B1E">≈7,200 tokens</text>
+    <text class="b" x="470" y="446">按难度调度 · 调度对象是子任务预算</text>
+  </g>
 
-  <rect x="60" y="230" width="290" height="35" rx="6" fill="#1e293b"/>
-  <text x="205" y="252" text-anchor="middle" font-size="12" fill="#cbd5e1">ReAct Step 3: ~800 tokens</text>
+  <!-- right: failure-mode shift -->
+  <g>
+    <text class="rl" x="790" y="216" font-weight="700" fill="#1A1B1E">算力不涨成功率，只挪失败位置</text>
+    <rect x="790" y="232" width="346" height="26" fill="#A8842C" opacity="0.13"/>
+    <text x="963" y="250" text-anchor="middle" font-size="13" fill="#7C6117">旧失败：重复 / 停滞轨迹</text>
+    <text x="963" y="288" text-anchor="middle" font-size="18" fill="#B5442E">↓</text>
+    <rect x="790" y="298" width="346" height="26" fill="url(#gFail)" opacity="0.92"/>
+    <text x="963" y="316" text-anchor="middle" font-size="13" fill="#FFFFFF">新失败：过早错误成功</text>
+    <text class="b" x="790" y="348">停滞可回退，过早错误成功不可逆</text>
+    <text class="b" x="790" y="368">模型自信地执行了错误的操作序列</text>
 
-  <!-- Equal sign -->
-  <text x="205" y="300" text-anchor="middle" font-size="16" fill="#64748b">=</text>
+    <rect x="790" y="392" width="346" height="1.5" fill="#3E5FA8" opacity="0.5"/>
+    <circle cx="818" cy="392" r="5" fill="none" stroke="#A8842C" stroke-width="2.5"/>
+    <circle cx="1096" cy="392" r="5.5" fill="#B5442E"/>
+    <text class="b" x="818" y="414" text-anchor="middle" fill="#7C6117">0%</text>
+    <text class="b" x="1096" y="414" text-anchor="middle" fill="#B5442E">74%</text>
+    <text class="rl" x="790" y="444">ToT 在 Game of 24 对 GPT-4 自回归</text>
+    <text class="b" x="790" y="464">4% → 74% · 边际收益在 &gt;10K tokens 递减</text>
+  </g>
 
-  <!-- Total budget bar -->
-  <rect x="80" y="315" width="250" height="20" rx="4" fill="#ef4444" opacity="0.7"/>
-  <text x="205" y="330" text-anchor="middle" font-size="11" fill="#fca5a5">Total: ~2,400 tokens (uniform)</text>
+  <!-- four scaling dimensions chips -->
+  <g>
+    <text x="64" y="502" font-size="14" fill="#1A1B1E" font-weight="700">四个扩展维度</text>
+    <rect x="190" y="484" width="150" height="28" fill="url(#gSimple)" opacity="0.85"/>
+    <text x="265" y="503" text-anchor="middle" font-size="13" fill="#FFFFFF">上下文扩展</text>
+    <text x="356" y="503" fill="#9A937F" font-size="16">→</text>
+    <rect x="376" y="484" width="150" height="28" fill="url(#gMedium)" opacity="0.85"/>
+    <text x="451" y="503" text-anchor="middle" font-size="13" fill="#FFFFFF">时间扩展</text>
+    <text x="542" y="503" fill="#9A937F" font-size="16">→</text>
+    <rect x="562" y="484" width="150" height="28" fill="url(#gComplex)" opacity="0.85"/>
+    <text x="637" y="503" text-anchor="middle" font-size="13" fill="#FFFFFF">结构分解</text>
+    <text x="728" y="503" fill="#9A937F" font-size="16">→</text>
+    <rect x="748" y="484" width="150" height="28" fill="url(#gFail)" opacity="0.92"/>
+    <text x="823" y="503" text-anchor="middle" font-size="13" fill="#FFFFFF">并行扩展</text>
+    <text class="b" x="920" y="503">本地 CUA 要框架，不是堆算力</text>
+  </g>
 
-  <!-- Problem -->
-  <rect x="60" y="360" width="290" height="80" rx="6" fill="#1c1017" stroke="#ef4444" stroke-width="1" opacity="0.5"/>
-  <text x="205" y="385" text-anchor="middle" font-size="11" fill="#fca5a5">Problem: Simple tasks waste compute,</text>
-  <text x="205" y="402" text-anchor="middle" font-size="11" fill="#fca5a5">complex tasks get insufficient budget</text>
-
-  <!-- RIGHT SIDE: Adaptive Agent -->
-  <rect x="420" y="90" width="350" height="370" rx="12" fill="#0f1629" stroke="#1e293b" stroke-width="1"/>
-  <text x="595" y="120" text-anchor="middle" font-size="14" font-weight="bold" fill="#10b981">Adaptive Agent: Dynamic Budget</text>
-
-  <!-- Difficulty assessment -->
-  <rect x="450" y="140" width="290" height="30" rx="6" fill="#064e3b"/>
-  <text x="595" y="160" text-anchor="middle" font-size="12" fill="#6ee7b7">Difficulty Assessment (Meta-Cognition)</text>
-
-  <!-- Step 1: Simple - low budget -->
-  <rect x="450" y="185" width="130" height="35" rx="6" fill="#065f46"/>
-  <text x="515" y="207" text-anchor="middle" font-size="11" fill="#a7f3d0">Simple: ~300 tokens</text>
-
-  <!-- Step 2: Complex - high budget -->
-  <rect x="620" y="185" width="120" height="55" rx="6" fill="#92400e"/>
-  <text x="680" y="207" text-anchor="middle" font-size="11" fill="#fde68a">Complex:</text>
-  <text x="680" y="223" text-anchor="middle" font-size="11" fill="#fde68a">~5,000 tokens</text>
-
-  <!-- Step 3: Medium - medium budget -->
-  <rect x="450" y="235" width="130" height="35" rx="6" fill="#78350f"/>
-  <text x="515" y="257" text-anchor="middle" font-size="11" fill="#fcd34d">Medium: ~1,500 tokens</text>
-
-  <!-- Step 4: Simple - low budget -->
-  <rect x="620" y="250" width="120" height="35" rx="6" fill="#065f46"/>
-  <text x="680" y="272" text-anchor="middle" font-size="11" fill="#a7f3d0">Simple: ~400 tokens</text>
-
-  <!-- Total -->
-  <rect x="450" y="295" width="290" height="20" rx="4" fill="#10b981" opacity="0.7"/>
-  <text x="595" y="310" text-anchor="middle" font-size="11" fill="#6ee7b7">Total: ~7,200 tokens (optimized)</text>
-
-  <!-- Key insight -->
-  <rect x="450" y="330" width="290" height="80" rx="6" fill="#0c1a14" stroke="#10b981" stroke-width="1" opacity="0.5"/>
-  <text x="595" y="355" text-anchor="middle" font-size="11" fill="#6ee7b7">Key: Budget scheduling across sub-tasks</text>
-  <text x="595" y="372" text-anchor="middle" font-size="11" fill="#6ee7b7">+ Failure mode shift awareness</text>
-
-  <!-- Arrow between -->
-  <line x1="390" y1="280" x2="410" y2="280" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowhead)"/>
-  <text x="400" y="270" text-anchor="middle" font-size="10" fill="#fbbf24">VS</text>
-
-  <!-- Bottom: Key concepts -->
-  <rect x="30" y="475" width="740" height="0" fill="none"/>
+  <line x1="64" y1="548" x2="1136" y2="548" stroke="#E5E1D4"/>
+  <text class="serif" x="64" y="582" font-size="19" fill="#1A1B1E">算力不是不够多，是给错了地方——先学会按难度出价。</text>
+  <text class="b" x="64" y="612">预算数额为原文示意图口径 · ToT 74%/4% 引自 Tree of Thoughts 对照 · Micropaper</text>
 </svg>

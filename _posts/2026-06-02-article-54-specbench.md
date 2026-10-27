@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "一分钟读论文：《SpecBench：面向软件工程 Agent 的规范级推理评估》"
+title:  "一分钟读论文：《SpecBench：规范级推理评估》"
 author: unbug
 categories: [AI, SoftwareEngineering]
 image: assets/images/article-54-specbench.svg
 tags: [Agent, Benchmark, SoftwareEngineering, Specification]
+description: "四家机构联合提出首个规范级推理评估基准，用一千二百个手工标注任务测试多个软件工程智能体，最强模型进阶级准确率不足一半，说明规范设计是被忽视的独立能力维度。"
 ---
 
 多伦多大学、滑铁卢大学、Vector Institute 和 NVIDIA 合作的一篇论文[《SpecBench: Evaluating Specification-Level Reasoning for Software Engineering LLM Agents》][paper1-url]，提出了首个面向软件工程 Agent 的规范级推理评估基准 SpecBench，发现即使是 GPT-5.4 这样最强的 Agent，在规范设计阶段的准确率仅为 44.4%。

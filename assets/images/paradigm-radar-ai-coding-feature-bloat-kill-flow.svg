@@ -94,7 +94,7 @@
   <rect x="682" y="490" width="120" height="40" rx="6" fill="#1c1917" stroke="#a16207" stroke-width="1"/>
   <text x="742" y="506" font-family="monospace" font-size="10" fill="#fde68a" text-anchor="middle">📍 OFF_STRATEGY</text>
   <text x="742" y="520" font-family="monospace" font-size="10" fill="#fde68a" text-anchor="middle">偏离产品战略</text>
-  <!-- Arrow from bottom of check3 NO line to this box -- vertical connector -->
+  <!-- Arrow from bottom of check3 NO line to this box - vertical connector -->
   <path d="M 480,500 Q 480,510 600,510 L 680,510" fill="none" stroke="#a16207" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#arrYellow)"/>
   <text x="580" y="504" font-family="monospace" font-size="9" fill="#a16207">不符合战略</text>
 

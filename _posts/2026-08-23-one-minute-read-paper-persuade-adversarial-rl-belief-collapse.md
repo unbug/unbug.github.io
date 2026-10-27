@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "一分钟读论文：《一条事实错误的论证，就能让 LLM 放弃正确答案》"
+title:  "一分钟读论文：《一条错误论证就让LLM放弃正确答案》"
 author: unbug
 categories: [AI, LLM]
 image: assets/images/persuade-adversarial-rl-belief-collapse.svg
 tags: [llm, safety, alignment, rl]
-description: "UIUC 论文把对抗性说服形式化为单轮威胁模型：GRPO 训练后的 Persuader 用一条事实错误的论证，把 Qwen-7B 在 TruthfulQA 上的准确率从 66.2% 打到 1.8%，策略还能跨模型迁移。"
+description: "UIUC论文把对抗性说服做成单轮威胁模型：GRPO训练后的Persuader用一条事实错误的论证，把Qwen-7B在TruthfulQA上的准确率从66.2%打到1.8%，策略可跨模型迁移，闭源模型更抗打但防御并不充分。"
 ---
 
 大语言模型正越来越多地作为自主 agent 参与沟通、谈判与协作，而已有研究表明它们容易被针对性论证尤其是错误信息说服。美国伊利诺伊大学厄巴纳-香槟分校（UIUC）的论文[《Learning to Persuade Exposes How Easily LLMs Abandon Correct Beliefs》][paper1-url]证明：一条事实错误的针对性论证，就足以让大语言模型放弃原本正确的答案。作者把对抗性说服形式化为单轮威胁模型：Persuader（说服方）只发送一条论证，目标模型 Persuadee 随即重新作答；用 GRPO（Group Relative Policy Optimization）对 Qwen-7B 做 Persuader 的对抗强化学习后，Qwen-2.5-7B-Instruct 在 TruthfulQA 上的准确率从基线 `66.2%` 塌到 `1.8%`（Figure 3）。

@@ -1,66 +1,123 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Arial, sans-serif">
-  <rect width="800" height="500" fill="#fafbfc"/>
-  
-  <!-- Title -->
-  <text x="400" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a1a2e">AgentFlow: Typed Graph DSL for Multi-Agent Harness Synthesis</text>
-  
-  <!-- Search Space Box -->
-  <rect x="50" y="60" width="300" height="200" rx="8" fill="#fff3e0" stroke="#FF9800" stroke-width="2" stroke-dasharray="6,3"/>
-  <text x="200" y="85" text-anchor="middle" font-size="13" font-weight="bold" fill="#E65100">Search Space</text>
-  <text x="200" y="108" text-anchor="middle" font-size="11" fill="#555">Agent Roles</text>
-  <text x="200" y="128" text-anchor="middle" font-size="11" fill="#555">Prompts</text>
-  <text x="200" y="148" text-anchor="middle" font-size="11" fill="#555">Tools</text>
-  <text x="200" y="168" text-anchor="middle" font-size="11" fill="#555">Communication Topology</text>
-  <text x="200" y="188" text-anchor="middle" font-size="11" fill="#555">Coordination Protocol</text>
-  <text x="200" y="218" text-anchor="middle" font-size="10" fill="#999" font-style="italic">Typed constraints ensure validity</text>
-  
-  <!-- Feedback Loop -->
-  <g transform="translate(400, 100)">
-    <circle cx="80" cy="80" r="70" fill="none" stroke="#4CAF50" stroke-width="3" stroke-dasharray="8,4"/>
-    <text x="80" y="35" text-anchor="middle" font-size="12" font-weight="bold" fill="#2E7D32">Feedback Loop</text>
-    
-    <!-- Inner cycle -->
-    <path d="M 80 15 L 120 40 L 120 120 L 80 145 L 40 120 L 40 40 Z" fill="#e8f5e9" stroke="#4CAF50" stroke-width="1.5"/>
-    <text x="80" y="60" text-anchor="middle" font-size="10" fill="#2E7D32">Propose</text>
-    <text x="80" y="78" text-anchor="middle" font-size="10" fill="#2E7D32">Execute</text>
-    <text x="80" y="96" text-anchor="middle" font-size="10" fill="#2E7D32">Score</text>
-    <text x="80" y="114" text-anchor="middle" font-size="10" fill="#2E7D32">Diagnose</text>
-    
-    <!-- Arrows -->
-    <polygon points="118,38 122,42 116,44" fill="#4CAF50"/>
-    <polygon points="118,122 116,118 122,116" fill="#4CAF50"/>
-    <polygon points="42,122 44,118 38,116" fill="#4CAF50"/>
-    <polygon points="42,42 38,44 44,40" fill="#4CAF50"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Noto Serif SC','Songti SC',serif">
+  <defs>
+    <style>
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9C9484; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
+      .rl { font-size: 15px; fill: #474C54; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
+      .val { font-size: 18px; font-weight: 700; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
+      .b { font-size: 12px; fill: #A5A296; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
+      .chip { font-size: 12.5px; font-weight: 600; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFDF6"/><stop offset="1" stop-color="#FBF4E2"/>
+    </linearGradient>
+    <linearGradient id="gAmber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D9911C"/><stop offset="1" stop-color="#F2C14E"/>
+    </linearGradient>
+    <linearGradient id="gSmoke" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6B4F2E"/><stop offset="1" stop-color="#9A7B4F"/>
+    </linearGradient>
+    <linearGradient id="gProp" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C0563B"/><stop offset="1" stop-color="#E08A62"/>
+    </linearGradient>
+    <linearGradient id="gExec" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B9892F"/><stop offset="1" stop-color="#DCB65F"/>
+    </linearGradient>
+    <linearGradient id="gDiag" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3D8B67"/><stop offset="1" stop-color="#77B894"/>
+    </linearGradient>
+    <linearGradient id="gSky" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2E7D8C"/><stop offset="1" stop-color="#6FB6BF"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1105" cy="112" r="140" fill="#D9911C" opacity="0.07"/>
+  <circle cx="70" cy="620" r="115" fill="#C0563B" opacity="0.06"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gProp)"/>
+
+  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2604.20801 · UCSB 等</text>
+  <text x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">蜂群要配蜂箱来养</text>
+  <text x="64" y="158" font-size="15" fill="#5B6068" font-family="'PingFang SC','Helvetica Neue',sans-serif">AgentFlow 用类型化图 DSL 自动合成多智能体协作方案，反馈驱动改写「蜂箱」</text>
+
+  <!-- apiary motif: hives + bee flight paths -->
+  <g>
+    <g stroke="#9A7B4F" stroke-width="1.5" opacity="0.55" fill="none" stroke-dasharray="3 4">
+      <path d="M 960 158 Q 1030 96 1100 138"/>
+      <path d="M 1048 150 Q 1106 108 1160 140"/>
+    </g>
+    <circle cx="1026" cy="112" r="3.5" fill="#D9911C"/><circle cx="1108" cy="114" r="3.5" fill="#D9911C"/><circle cx="1150" cy="128" r="3.5" fill="#D9911C"/>
+    <g>
+      <rect x="946" y="118" width="58" height="40" fill="url(#gAmber)"/>
+      <path d="M 940 118 L 975 92 L 1010 118 Z" fill="url(#gSmoke)"/>
+      <rect x="954" y="150" width="10" height="8" fill="#4A3320"/>
+    </g>
+    <g>
+      <rect x="1036" y="106" width="62" height="52" fill="url(#gAmber)"/>
+      <path d="M 1030 106 L 1067 78 L 1104 106 Z" fill="url(#gSmoke)"/>
+      <rect x="1046" y="150" width="10" height="8" fill="#4A3320"/>
+      <line x1="1036" y1="124" x2="1098" y2="124" stroke="#B07A18" stroke-width="1.5" opacity="0.6"/>
+      <line x1="1036" y1="138" x2="1098" y2="138" stroke="#B07A18" stroke-width="1.5" opacity="0.6"/>
+    </g>
+    <g>
+      <rect x="1128" y="118" width="56" height="40" fill="url(#gAmber)"/>
+      <path d="M 1122 118 L 1156 92 L 1190 118 Z" fill="url(#gSmoke)"/>
+      <rect x="1136" y="150" width="10" height="8" fill="#4A3320"/>
+    </g>
+    <path d="M 973 158 h 14 M 1065 158 h 14 M 1155 158 h 14" stroke="#9A7B4F" stroke-width="2" opacity="0.5"/>
   </g>
-  
-  <!-- Runtime Signals -->
-  <rect x="550" y="60" width="200" height="200" rx="8" fill="#e3f2fd" stroke="#2196F3" stroke-width="2"/>
-  <text x="650" y="85" text-anchor="middle" font-size="13" font-weight="bold" fill="#1565C0">Runtime Signals</text>
-  <text x="650" y="110" text-anchor="middle" font-size="11" fill="#333">Sanitizer Output</text>
-  <text x="650" y="130" text-anchor="middle" font-size="11" fill="#333">Coverage Data</text>
-  <text x="650" y="150" text-anchor="middle" font-size="11" fill="#333">Crash Traces</text>
-  <text x="650" y="170" text-anchor="middle" font-size="11" fill="#333">Memory States</text>
-  <text x="650" y="190" text-anchor="middle" font-size="11" fill="#333">Execution Paths</text>
-  
-  <!-- Result Box -->
-  <rect x="250" y="300" width="300" height="100" rx="8" fill="#fce4ec" stroke="#E91E63" stroke-width="2"/>
-  <text x="400" y="330" text-anchor="middle" font-size="14" font-weight="bold" fill="#C2185B">Results</text>
-  <text x="400" y="355" text-anchor="middle" font-size="12" fill="#333">TerminalBench-2: 84.3% (highest)</text>
-  <text x="400" y="378" text-anchor="middle" font-size="12" fill="#333">Chrome: 10 zero-days (2 Critical CVE)</text>
-  
-  <!-- Arrow from search space to result -->
-  <line x1="200" y1="260" x2="200" y2="290" stroke="#FF9800" stroke-width="2"/>
-  <polygon points="196,288 200,296 204,288" fill="#FF9800"/>
-  <line x1="200" y1="290" x2="350" y2="300" stroke="#FF9800" stroke-width="2"/>
-  <polygon points="346,298 354,300 348,304" fill="#FF9800"/>
-  
-  <!-- Arrow from feedback to search space -->
-  <path d="M 330 140 Q 280 100 250 140" fill="none" stroke="#4CAF50" stroke-width="2" marker-end="url(#arrowGreen)"/>
-  
-  <!-- Arrow from runtime to feedback -->
-  <line x1="550" y1="160" x2="470" y2="160" stroke="#2196F3" stroke-width="2"/>
-  <polygon points="472,156 464,160 472,164" fill="#2196F3"/>
-  
-  <!-- Bottom legend -->
-  <text x="400" y="450" text-anchor="middle" font-size="11" fill="#888">Harness design: from manual art to automated engineering</text>
+
+  <!-- left: big numbers -->
+  <g>
+    <rect x="64" y="200" width="690" height="104" fill="#2E7D8C" opacity="0.08"/>
+    <text x="92" y="262" font-size="44" font-weight="700" fill="#C0563B">10 个</text>
+    <text x="212" y="244" class="rl">Chrome 未知零日漏洞</text>
+    <text x="212" y="266" class="b">自动合成 harness 发现，Kimi K2.5</text>
+    <text x="560" y="252" font-size="26" font-weight="700" fill="#B5442E" text-anchor="end">2 个</text>
+    <text x="576" y="244" class="rl">Critical 沙箱逃逸</text>
+    <text x="576" y="266" class="b">CVE-2026-5280 · CVE-2026-6297</text>
+
+    <rect x="64" y="322" width="690" height="112" fill="#D9911C" opacity="0.08"/>
+    <text class="rl" x="92" y="362">TerminalBench-2 成绩 · Claude Opus 4.6</text>
+    <line x1="92" y1="402" x2="600" y2="402" stroke="#E5DFC8" stroke-width="2"/>
+    <line x1="92" y1="402" x2="514.7" y2="402" stroke="url(#gAmber)" stroke-width="3"/>
+    <circle cx="514.7" cy="402" r="9" fill="url(#gAmber)"/>
+    <text class="val" x="534" y="409" fill="#8A6620">84.3%</text>
+    <text class="b" x="92" y="426">公开 leaderboard 最高分</text>
+  </g>
+
+  <!-- right: loop motif -->
+  <g>
+    <rect x="836" y="200" width="304" height="234" rx="12" fill="#B9892F" opacity="0.09"/>
+    <text x="856" y="228" font-size="15" font-weight="700" fill="#1A1B1E" font-family="'PingFang SC','Helvetica Neue',sans-serif">外环巡检循环</text>
+    <g stroke-linecap="round">
+      <line x1="988" y1="252" x2="947" y2="321" stroke="url(#gProp)" stroke-width="2.5"/>
+      <line x1="947" y1="321" x2="1029" y2="321" stroke="url(#gExec)" stroke-width="2.5"/>
+      <path d="M 1029 321 Q 1064 285 1040 254" fill="none" stroke="url(#gDiag)" stroke-width="2.5"/>
+      <path d="M 1036 262 l 6 -10 l 6 10" fill="none" stroke="url(#gDiag)" stroke-width="2.5"/>
+    </g>
+    <circle cx="988" cy="248" r="13" fill="url(#gProp)"/><text x="988" y="253" text-anchor="middle" font-size="12" font-weight="700" fill="#FFF6E8" font-family="'PingFang SC',sans-serif">P</text>
+    <circle cx="943" cy="325" r="13" fill="url(#gExec)"/><text x="943" y="330" text-anchor="middle" font-size="12" font-weight="700" fill="#FFF6E8" font-family="'PingFang SC',sans-serif">E</text>
+    <circle cx="1033" cy="325" r="13" fill="url(#gDiag)"/><text x="1033" y="330" text-anchor="middle" font-size="12" font-weight="700" fill="#FFF6E8" font-family="'PingFang SC',sans-serif">D</text>
+    <text class="b" x="856" y="372">P 生成新蜂箱变体 · E 执行评分 · D 诊断失败环节</text>
+    <text class="b" x="856" y="392">诊断读取运行时信号，而非只看通过/失败</text>
+    <text x="856" y="422" font-size="15" font-weight="700" fill="#B5442E">蜂箱比蜂种更值钱</text>
+  </g>
+
+  <!-- bottom chips: DSL search space -->
+  <line x1="64" y1="486" x2="1136" y2="486" stroke="#E8E3D2"/>
+  <g>
+    <text class="rl" x="64" y="528">DSL 搜索空间</text>
+    <rect x="176" y="508" width="92" height="28" rx="14" fill="url(#gAmber)" opacity="0.28"/>
+    <text x="222" y="527" text-anchor="middle" class="chip" fill="#8A6620">智能体角色</text>
+    <rect x="278" y="508" width="76" height="28" rx="14" fill="url(#gProp)" opacity="0.22"/>
+    <text x="316" y="527" text-anchor="middle" class="chip" fill="#A5442A">提示词</text>
+    <rect x="364" y="508" width="66" height="28" rx="14" fill="url(#gSky)" opacity="0.22"/>
+    <text x="397" y="527" text-anchor="middle" class="chip" fill="#22606C">工具</text>
+    <rect x="440" y="508" width="92" height="28" rx="14" fill="url(#gDiag)" opacity="0.24"/>
+    <text x="486" y="527" text-anchor="middle" class="chip" fill="#2C6B4C">通信拓扑</text>
+    <rect x="542" y="508" width="92" height="28" rx="14" fill="url(#gExec)" opacity="0.28"/>
+    <text x="588" y="527" text-anchor="middle" class="chip" fill="#7A5A14">协调协议</text>
+  </g>
+  <text x="64" y="584" font-size="18" fill="#1A1B1E">编排不是手工艺术，是蜂场里可搜索、可优化的设计空间。</text>
+  <text class="b" x="1136" y="618" text-anchor="end" font-family="'PingFang SC','Helvetica Neue',sans-serif">数据为论文自述口径 · 预印本未经同行评审 · Micropaper</text>
 </svg>

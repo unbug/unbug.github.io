@@ -1,10 +1,11 @@
 ---
-title: "一分钟读论文：《MetaSkill-Evolve——递归自我改进的双时间尺度架构》"
+title: "一分钟读论文：《双时间尺度递归自我改进架构》"
 author: unbug
 categories: [AI, Agent]
 image: assets/images/metaskill-evolve.svg
 tags: [llm, self-improvement, agent, meta-skill]
 layout: post
+description: "论文提出快慢双时间尺度的元技能进化架构，让Agent不只改进任务执行，还改进自我改进过程本身，无需额外训练数据即可实现递归自我提升。"
 ---
 
 本文讨论的论文是 MetaSkill-Evolve: Recursive Self-Improvement of LLM Agents via Two-Timescale Meta-Skill Evolution，arXiv:2607.05297，由慕尼黑大学（LMU Munich）的 Zefeng Wang、Minxi Yan 等六位研究者完成。论文链接：[arXiv:2607.05297](https://arxiv.org/abs/2607.05297)

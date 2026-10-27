@@ -1,12 +1,17 @@
 ---
 layout: post
-title:  "一分钟读论文：《Memory as a Controlled Process：Agent记忆操作的马尔可夫决策建模》"
+title:  "一分钟读论文：《智能体记忆的受控检索》"
 author: unbug
 categories: [AI, Agent]
+image: assets/images/memcon-agent-memory-control.svg
+image_alt: MemCon 把 Agent 记忆检索建模为可学习的控制策略
+description: 该方法把智能体记忆检索建模为马尔可夫决策过程，用轻量级上下文赌博机在线学习何时检索、检索什么、检索多少，六个基准最高提升十五点二分，同时减少消耗。
 tags: [llm, agent-memory, memory-management, contextual-bandit]
 ---
 
 加州大学洛杉矶分校和华盛顿大学等机构合作的一篇论文[《Memory as a Controlled Process: Learned Adaptive Memory Management for LLM Agents》][paper1-url]提出了一种将Agent外部记忆操作建模为马尔可夫决策过程的方法。该方法通过轻量级上下文赌博机控制器在线学习检索策略，自适应决定何时检索、检索什么以及检索多少内容，在六个基准测试上最高提升15.2分成功率，同时将token消耗减少5%至20%。
+
+![MemCon 灶台管家：何时取、取什么、取多少，边做边学]({{ site.baseurl }}/assets/images/memcon-agent-memory-control.svg)
 
 ## 问题背景：Agent记忆系统的静态检索瓶颈
 

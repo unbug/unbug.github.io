@@ -1,12 +1,17 @@
 ---
 layout: post
-title:  "一分钟读论文：《SR2AM：自我调节模拟规划如何实现高效Agent推理》"
+title:  "一分钟读论文：《自我调节模拟规划省算力》"
 author: unbug
 categories: [AI, Agent]
+image: assets/images/sr2am-self-regulated-planning.svg
+image_alt: SR2AM 三系统架构：反应、模拟规划与自我调节
+description: 该方法把大模型决策拆为反应、模拟规划与自我调节三个系统，领航模块逐步决定新规划、沿用还是跳过，使中等参数模型达到千亿参数级表现并大幅降低推理消耗。
 tags: [llm, agent-planning, simulative-reasoning, system-thinking]
 ---
 
 卡内基梅隆大学和国际金融管理学院的论文[《Efficient Agentic Reasoning Through Self-Regulated Simulative Planning (SR2AM)》][paper1-url]提出了一种将大语言模型决策过程分解为三个系统的架构，使30B参数模型的性能达到685B至1T参数级系统的水平，同时将推理token消耗减少25.8%至95.3%。
+
+![SR2AM 领航灯三挡：新规划、沿用计划、跳过规划]({{ site.baseurl }}/assets/images/sr2am-self-regulated-planning.svg)
 
 ## 问题背景：Agent何时规划的根本难题
 
