@@ -1,50 +1,71 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" font-family="PingFang SC, Microsoft YaHei, sans-serif">
-  <rect width="1200" height="640" fill="#0f1420"/>
-  <text x="600" y="50" fill="#e8ecf4" font-size="30" font-weight="bold" text-anchor="middle">基准把答案印在考卷上：删一个前缀，防御指标当场塌</text>
-  <text x="600" y="80" fill="#8a93a6" font-size="16" text-anchor="middle">arXiv:2610.33849《Ranking Is Not Deciding》Kumar / Sahaym（North Creek High School / Washington State University，2026-10-24，受控共享候选集实验）</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 13px; letter-spacing: 3px; fill: #9A937F; }
+      .rl { font-size: 15px; fill: #4C4A3F; }
+      .v { font-size: 14.5px; font-weight: 700; fill: #1A1B1E; }
+      .b { font-size: 12.5px; fill: #A29C88; }
+      .tag { font-size: 11.5px; letter-spacing: 1.5px; }
+    </style>
+  </defs>
 
-  <!-- construction cue panel -->
-  <rect x="40" y="105" width="530" height="180" rx="10" fill="#161d2c" stroke="#e06c5a"/>
-  <text x="305" y="137" fill="#e06c5a" font-size="18" font-weight="bold" text-anchor="middle">毒文构造捷径（PoisonedRAG 官方代码行为）</text>
-  <text x="305" y="168" fill="#c6cddc" font-size="15" text-anchor="middle">每条注入文档 = 目标问题 + 句号 + 文本</text>
-  <text x="305" y="196" fill="#c6cddc" font-size="15" text-anchor="middle">某复现释放毒文 500 of 500 条含目标问题原文</text>
-  <text x="305" y="224" fill="#c6cddc" font-size="15" text-anchor="middle">光数词数都能到 AUROC 0.999（119–162 词 vs 100 词）</text>
-  <text x="305" y="256" fill="#8a93a6" font-size="13" text-anchor="middle">该文自述 survey：21 个评估中 8 个踩此构造、5 个换长度线索、12 个不报部署点假阳率</text>
+  <rect width="1200" height="675" fill="#FBFAF7"/>
+  <rect x="64" y="46" width="44" height="5" fill="#B5442E"/>
 
-  <!-- two experiments -->
-  <rect x="600" y="105" width="560" height="180" rx="10" fill="#161d2c" stroke="#5a9bd4"/>
-  <text x="880" y="137" fill="#5a9bd4" font-size="18" font-weight="bold" text-anchor="middle">两个「只动构造、不动内容」的实验</text>
-  <text x="880" y="170" fill="#c6cddc" font-size="15" text-anchor="middle">其一 删前缀：RAGuard AUROC 0.953 → 0.758</text>
-  <text x="880" y="196" fill="#c6cddc" font-size="15" text-anchor="middle">漏检率 0.191 → 0.763，毒文检索仍保持 0.93</text>
-  <text x="880" y="228" fill="#c6cddc" font-size="15" text-anchor="middle">其二 乱序填充补长度：TrustRAG 集合级漏检 0.000 → 0.827</text>
-  <text x="880" y="254" fill="#c6cddc" font-size="15" text-anchor="middle">作者打分器 0.000 → 0.986，而 AUROC 停在 0.953</text>
+  <text class="k" x="64" y="86">一分钟读论文 NO.199 · ARXIV:2610.33849 · 2026-10-24</text>
+  <text class="serif" x="64" y="134" font-size="37" font-weight="700" fill="#1A1B1E">排名还活着，决策已经死了</text>
+  <text x="64" y="166" font-size="15.5" fill="#6E6A5C">只删掉每条毒文开头的目标问题前缀，内容一字未动，五个指标的生死各自现形</text>
+  <line x1="64" y1="192" x2="1136" y2="192" stroke="#E5E1D4"/>
 
-  <!-- collapse bars -->
-  <rect x="40" y="310" width="640" height="230" rx="10" fill="#161d2c" stroke="#2c3850"/>
-  <text x="360" y="342" fill="#e8ecf4" font-size="18" font-weight="bold" text-anchor="middle">同一个防御、同一批毒文：排名与决策分道扬镳</text>
-  <text x="70" y="380" fill="#8a93a6" font-size="14">AUROC（排名区分）</text>
-  <rect x="270" y="365" width="340" height="18" fill="#3f9e6a"/>
-  <text x="618" y="379" fill="#c6cddc" font-size="14">0.953 不动</text>
-  <text x="70" y="415" fill="#8a93a6" font-size="14">部署阈值漏检率（决策）</text>
-  <rect x="270" y="400" width="352" height="18" fill="#e06c5a"/>
-  <text x="352" y="443" fill="#c6cddc" font-size="14">0.986（对齐 5% 假阳率后仍 0.321）</text>
-  <rect x="270" y="400" width="10" height="18" fill="#5a9bd4" opacity="0"/>
-  <rect x="270" y="400" width="1" height="18" fill="#ffffff"/>
-  <text x="270" y="465" fill="#8a93a6" font-size="14">基线 0.000（构造捷径在场时「零漏检」）</text>
-  <text x="70" y="498" fill="#8a93a6" font-size="14">进上下文的毒文占比 0.00 → 0.94；Contriever top-5 含毒 4.79 → 2.40（86 of 100 查询五条全中 → 前缀撑着检索）</text>
-  <rect x="270" y="437" width="4" height="0"/>
+  <text class="k" x="64" y="236">去掉构造捷径前后 · 空心 = 捷径在场，实心 = 捷径移除</text>
 
-  <!-- boundary panel -->
-  <rect x="710" y="310" width="450" height="230" rx="10" fill="#161d2c" stroke="#d9a441"/>
-  <text x="935" y="342" fill="#d9a441" font-size="18" font-weight="bold" text-anchor="middle">边界与主张</text>
-  <text x="735" y="375" fill="#c6cddc" font-size="14">· 逐字 we propose no defense：不提防御方案</text>
-  <text x="735" y="402" fill="#c6cddc" font-size="14">· 自有打分器被自适应攻击 0.977 过检击穿</text>
-  <text x="735" y="429" fill="#c6cddc" font-size="14">· 限四库 x 四攻击族 x 十防御的共享候选集</text>
-  <text x="735" y="456" fill="#c6cddc" font-size="14">· 不意味着所有 RAG 防御失效、非真实部署</text>
-  <text x="735" y="490" fill="#8a93a6" font-size="13">主张：检测报告必须附毒文构造画像 +</text>
-  <text x="750" y="512" fill="#8a93a6" font-size="13">实际部署阈值假阳率，否则不算证据</text>
+  <!-- axis -->
+  <g stroke="#EAE6DA"><line x1="300" y1="262" x2="300" y2="520"/><line x1="600" y1="262" x2="600" y2="520"/><line x1="900" y1="262" x2="900" y2="520"/></g>
+  <text class="b" x="300" y="540" text-anchor="middle">0</text>
+  <text class="b" x="600" y="540" text-anchor="middle">0.5</text>
+  <text class="b" x="900" y="540" text-anchor="middle">1.0（比率）</text>
 
-  <!-- footer -->
-  <rect x="40" y="560" width="1120" height="55" rx="10" fill="#1b2334" stroke="#3f9e6a"/>
-  <text x="600" y="594" fill="#3f9e6a" font-size="17" font-weight="bold" text-anchor="middle">The ranking survives; the decision does not. —— 只看 AUROC 的报表，分不清排名还活着、决策已经死了</text>
+  <!-- row1 RAGuard AUROC slate -->
+  <text class="tag" x="1136" y="284" text-anchor="end" fill="#3D5A73">排名</text>
+  <text class="rl" x="276" y="291" text-anchor="end">RAGuard · AUROC</text>
+  <line x1="871.8" y1="286" x2="754.8" y2="286" stroke="#3D5A73" stroke-width="2.5"/>
+  <circle cx="871.8" cy="286" r="6.5" fill="#FBFAF7" stroke="#3D5A73" stroke-width="2.5"/>
+  <circle cx="754.8" cy="286" r="7" fill="#3D5A73"/>
+  <text class="v" x="740" y="266" text-anchor="end">0.953 → 0.758</text>
+
+  <!-- row2 RAGuard miss vermilion -->
+  <text class="tag" x="1136" y="339" text-anchor="end" fill="#B5442E">决策</text>
+  <text class="rl" x="276" y="346" text-anchor="end">RAGuard · 部署漏检率</text>
+  <line x1="414.6" y1="341" x2="757.8" y2="341" stroke="#B5442E" stroke-width="2.5"/>
+  <circle cx="414.6" cy="341" r="6.5" fill="#FBFAF7" stroke="#B5442E" stroke-width="2.5"/>
+  <circle cx="757.8" cy="341" r="7" fill="#B5442E"/>
+  <text class="v" x="775" y="346">0.191 → 0.763</text>
+
+  <!-- row3 TrustRAG miss -->
+  <text class="tag" x="1136" y="394" text-anchor="end" fill="#B5442E">决策</text>
+  <text class="rl" x="276" y="401" text-anchor="end">TrustRAG · 集合级漏检</text>
+  <line x1="300" y1="396" x2="796.2" y2="396" stroke="#B5442E" stroke-width="2.5"/>
+  <circle cx="300" cy="396" r="6.5" fill="#FBFAF7" stroke="#B5442E" stroke-width="2.5"/>
+  <circle cx="796.2" cy="396" r="7" fill="#B5442E"/>
+  <text class="v" x="812" y="401">0.000 → 0.827</text>
+
+  <!-- row4 scorer miss -->
+  <text class="tag" x="1136" y="449" text-anchor="end" fill="#B5442E">决策</text>
+  <text class="rl" x="276" y="456" text-anchor="end">本文打分器 · 漏检率</text>
+  <line x1="300" y1="451" x2="891.6" y2="451" stroke="#B5442E" stroke-width="2.5"/>
+  <circle cx="300" cy="451" r="6.5" fill="#FBFAF7" stroke="#B5442E" stroke-width="2.5"/>
+  <circle cx="891.6" cy="451" r="7" fill="#B5442E"/>
+  <text class="v" x="880" y="430" text-anchor="end">0.000 → 0.986</text>
+
+  <!-- row5 scorer AUROC flat -->
+  <text class="tag" x="1136" y="504" text-anchor="end" fill="#3D5A73">排名</text>
+  <text class="rl" x="276" y="511" text-anchor="end">本文打分器 · AUROC</text>
+  <circle cx="871.8" cy="506" r="8.5" fill="none" stroke="#3D5A73" stroke-width="2.5"/>
+  <circle cx="871.8" cy="506" r="3" fill="#3D5A73"/>
+  <text class="v" x="880" y="490" text-anchor="end" fill="#3D5A73">0.953 —— 原地不动</text>
+
+  <line x1="64" y1="568" x2="1136" y2="568" stroke="#E5E1D4"/>
+  <text class="serif" x="64" y="606" font-size="19" fill="#1A1B1E">捷径从哪来：PoisonedRAG 官方构造让每条毒文以目标问题开头，某复现 500 of 500 条含问题原文 —— 光数词数都能 AUROC 0.999。</text>
+  <text class="b" x="64" y="636">限四库 × 四攻击族 × 十防御的共享候选集实验，非真实部署 · 原文逐字 we propose no defense，自有打分器被自适应攻击以 0.977 过检击穿 · Micropaper</text>
 </svg>

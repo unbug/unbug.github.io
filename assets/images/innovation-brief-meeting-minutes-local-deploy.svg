@@ -1,54 +1,76 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif">
-  <rect width="1200" height="630" fill="#f4f6f9"/>
-  <rect x="0" y="0" width="1200" height="110" fill="#25324a"/>
-  <text x="60" y="52" fill="#9fb3d1" font-size="20" letter-spacing="4">AI 智创简报 · 专利情报速读</text>
-  <text x="60" y="88" fill="#ffffff" font-size="30" font-weight="bold">会议纪要专利扎堆，平台上不了的场子留给个人</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 13px; letter-spacing: 3px; fill: #9A937F; }
+      .rl { font-size: 15px; fill: #4C4A3F; }
+      .v { font-size: 14.5px; font-weight: 700; fill: #1A1B1E; }
+      .b { font-size: 12.5px; fill: #A29C88; }
+      .mono { font-family: 'SF Mono', Menlo, monospace; font-size: 11.5px; fill: #8B8672; }
+      .stat { font-size: 30px; font-weight: 700; fill: #1A1B1E; }
+    </style>
+  </defs>
 
-  <!-- Panel 1: 专利信号 -->
-  <rect x="40" y="140" width="350" height="430" rx="10" fill="#ffffff" stroke="#d5dde8"/>
-  <rect x="40" y="140" width="350" height="54" rx="10" fill="#3b5378"/>
-  <text x="64" y="174" fill="#ffffff" font-size="22" font-weight="bold">专利信号 2026-06 ~ 07</text>
-  <text x="64" y="230" fill="#25324a" font-size="17" font-weight="bold">Zoom 三件</text>
-  <text x="64" y="260" fill="#43536b" font-size="15">US12647532B2 会中增量纪要 06-02 授权</text>
-  <text x="64" y="286" fill="#43536b" font-size="15">US12664798B2 章节自动切分 06-23 授权</text>
-  <text x="64" y="312" fill="#43536b" font-size="15">US20260211885A1 分段记录回查 07-23 公开</text>
-  <text x="64" y="352" fill="#25324a" font-size="17" font-weight="bold">Microsoft 一件</text>
-  <text x="64" y="382" fill="#43536b" font-size="15">EP4162488B1 话语重要性评估 06-17 授权</text>
-  <line x1="64" y1="410" x2="366" y2="410" stroke="#d5dde8"/>
-  <text x="64" y="444" fill="#5b6c85" font-size="15">一个月窗口内 4 件同主题</text>
-  <text x="64" y="470" fill="#5b6c85" font-size="15">两件平台产品级授权</text>
-  <text x="64" y="512" fill="#8a99ae" font-size="13">状态经 Google Patents 详情页核验</text>
+  <rect width="1200" height="675" fill="#FBFAF7"/>
+  <rect x="64" y="46" width="44" height="5" fill="#B5442E"/>
 
-  <!-- Panel 2: 技术趋势 -->
-  <rect x="425" y="140" width="350" height="430" rx="10" fill="#ffffff" stroke="#d5dde8"/>
-  <rect x="425" y="140" width="350" height="54" rx="10" fill="#4d6a94"/>
-  <text x="449" y="174" fill="#ffffff" font-size="22" font-weight="bold">技术趋势</text>
-  <text x="449" y="230" fill="#25324a" font-size="16" font-weight="bold">纪要 = 结构化中间表示</text>
-  <rect x="449" y="250" width="300" height="38" rx="6" fill="#eef2f8"/>
-  <text x="461" y="275" fill="#43536b" font-size="15">转写稿 + 时间戳 + 说话人 + 画面流</text>
-  <text x="590" y="312" fill="#4d6a94" font-size="18" text-anchor="middle">↓</text>
-  <rect x="449" y="326" width="300" height="38" rx="6" fill="#eef2f8"/>
-  <text x="461" y="351" fill="#43536b" font-size="15">章节 / 重要性分数 / 可查询分段</text>
-  <text x="449" y="404" fill="#5b6c85" font-size="15">准确率押在会议原生元数据，</text>
-  <text x="449" y="430" fill="#5b6c85" font-size="15">不押在提示词运气</text>
-  <text x="449" y="484" fill="#25324a" font-size="15" font-weight="bold">平台内纪要层被写进权利要求</text>
-  <text x="449" y="512" fill="#8a99ae" font-size="13">平台外：保密场景与行规未覆盖</text>
+  <text class="k" x="64" y="86">AI 智创简报 · 专利情报速读 · 2026-10-18</text>
+  <text class="serif" x="64" y="134" font-size="37" font-weight="700" fill="#1A1B1E">平台上不了的场子，留给个人</text>
+  <text x="64" y="166" font-size="15.5" fill="#6E6A5C">一个月窗口，会议纪要方向四件同主题专利落地 —— 押注会议原生元数据，而非提示词运气</text>
+  <line x1="64" y1="192" x2="1136" y2="192" stroke="#E5E1D4"/>
 
-  <!-- Panel 3: 一个人的机会 -->
-  <rect x="810" y="140" width="350" height="430" rx="10" fill="#ffffff" stroke="#d5dde8"/>
-  <rect x="810" y="140" width="350" height="54" rx="10" fill="#6f8bb0"/>
-  <text x="834" y="174" fill="#ffffff" font-size="22" font-weight="bold">一个人能做的机会</text>
-  <text x="834" y="226" fill="#25324a" font-size="17" font-weight="bold">行业化本地纪要部署包</text>
-  <text x="834" y="256" fill="#43536b" font-size="15">Whisper 级转写 + pyannote 分离</text>
-  <text x="834" y="282" fill="#43536b" font-size="15">+ 本地摘要 + 行业模板 + 内网部署</text>
-  <line x1="834" y1="306" x2="1136" y2="306" stroke="#d5dde8"/>
-  <text x="834" y="340" fill="#25324a" font-size="16" font-weight="bold">收费</text>
-  <text x="834" y="368" fill="#43536b" font-size="15">律所 / 诊所部署 0.8-3 万每单</text>
-  <text x="834" y="394" fill="#43536b" font-size="15">承诺台账席位 50-100 元每月</text>
-  <line x1="834" y1="418" x2="1136" y2="418" stroke="#d5dde8"/>
-  <text x="834" y="452" fill="#25324a" font-size="16" font-weight="bold">起步</text>
-  <text x="834" y="480" fill="#43536b" font-size="15">GPU 服务器约 0.6-1.2 万元</text>
-  <text x="834" y="506" fill="#43536b" font-size="15">1 人 4 周出可演示 MVP</text>
+  <!-- timeline -->
+  <text class="k" x="64" y="238">2026 年 6–7 月 · 授权与公开时间线（状态经 Google Patents 详情页核验）</text>
+  <line x1="140" y1="330" x2="1100" y2="330" stroke="#D8D3C4" stroke-width="1.5"/>
+  <text class="b" x="140" y="356">06-01</text>
+  <text class="b" x="620" y="356" text-anchor="middle">06-30 / 07-01</text>
+  <text class="b" x="1100" y="356" text-anchor="end">07-31</text>
+  <line x1="620" y1="322" x2="620" y2="338" stroke="#D8D3C4"/>
 
-  <text x="60" y="606" fill="#8a99ae" font-size="14">信息来源：Google Patents 公开文本 · 观点仅为机会判断，不构成投资建议</text>
+  <!-- events: day 1..61 → x=140+ (d/60)*960; 06-02→156, 06-17→396.8, 06-23→492.8, 07-23→956.4 -->
+  <!-- 06-02 Zoom granted -->
+  <circle cx="156" cy="330" r="7" fill="#3D5A73"/>
+  <line x1="156" y1="322" x2="156" y2="262" stroke="#C9C3B2"/>
+  <text class="v" x="156" y="236">06-02 授权 · Zoom</text>
+  <text class="rl" x="156" y="256" font-size="13">会中增量纪要</text>
+  <text class="mono" x="156" y="220">US12647532B2</text>
+
+  <!-- 06-17 Microsoft granted -->
+  <circle cx="396.8" cy="330" r="7" fill="#3D5A73"/>
+  <line x1="396.8" y1="338" x2="396.8" y2="396" stroke="#C9C3B2"/>
+  <text class="v" x="396.8" y="420">06-17 授权 · Microsoft</text>
+  <text class="rl" x="396.8" y="440" font-size="13">话语重要性评估</text>
+  <text class="mono" x="396.8" y="458">EP4162488B1</text>
+
+  <!-- 06-23 Zoom granted -->
+  <circle cx="492.8" cy="330" r="7" fill="#3D5A73"/>
+  <line x1="492.8" y1="322" x2="492.8" y2="284" stroke="#C9C3B2"/>
+  <text class="v" x="492.8" y="236">06-23 授权 · Zoom</text>
+  <text class="rl" x="492.8" y="256" font-size="13">章节自动切分</text>
+  <text class="mono" x="492.8" y="220">US12664798B2</text>
+
+  <!-- 07-23 Zoom published -->
+  <circle cx="956.4" cy="330" r="7" fill="#FBFAF7" stroke="#B9892F" stroke-width="2.5"/>
+  <line x1="956.4" y1="322" x2="956.4" y2="262" stroke="#C9C3B2"/>
+  <text class="v" x="956.4" y="236" text-anchor="end">07-23 公开 · Zoom</text>
+  <text class="rl" x="956.4" y="256" font-size="13" text-anchor="end">分段记录回查</text>
+  <text class="mono" x="956.4" y="220" text-anchor="end">US20260211885A1</text>
+
+  <circle cx="140" cy="392" r="5" fill="#3D5A73"/><text class="b" x="152" y="397">授权</text>
+  <circle cx="212" cy="392" r="5" fill="#FBFAF7" stroke="#B9892F" stroke-width="2"/><text class="b" x="224" y="397">公开申请</text>
+
+  <line x1="64" y1="490" x2="1136" y2="490" stroke="#E5E1D4"/>
+
+  <!-- opportunity stats -->
+  <text class="k" x="64" y="530">平台外缺口：保密场景与行业规矩未覆盖 —— 一个人可接的本地纪要部署</text>
+  <text class="serif stat" x="64" y="588">0.8–3 万</text>
+  <text class="rl" x="64" y="614" font-size="13.5">律所 / 诊所内网部署，每单</text>
+  <line x1="360" y1="556" x2="360" y2="620" stroke="#E5E1D4"/>
+  <text class="serif stat" x="400" y="588">50–100 元</text>
+  <text class="rl" x="400" y="614" font-size="13.5">承诺台账，每席位每月</text>
+  <line x1="700" y1="556" x2="700" y2="620" stroke="#E5E1D4"/>
+  <text class="serif stat" x="740" y="588">1 人 · 4 周</text>
+  <text class="rl" x="740" y="614" font-size="13.5">可演示 MVP（GPU 约 0.6–1.2 万元）</text>
+
+  <text class="b" x="64" y="654">Whisper 级转写 + pyannote 分离 + 本地摘要 + 行业模板 · 来源：Google Patents 公开文本 · 观点仅为机会判断，不构成投资建议 · Micropaper</text>
 </svg>

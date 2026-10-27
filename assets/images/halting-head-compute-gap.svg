@@ -1,51 +1,77 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" font-family="PingFang SC, Microsoft YaHei, sans-serif">
-  <rect width="1200" height="640" fill="#0f1420"/>
-  <text x="600" y="50" fill="#e8ecf4" font-size="30" font-weight="bold" text-anchor="middle">预测、实跑、批次实付：省算力是三个数，不是一个数</text>
-  <text x="600" y="80" fill="#8a93a6" font-size="16" text-anchor="middle">arXiv:2610.32246《Do Halting Heads Really Save Compute in Looped Language Models?》Wu / Heo / Tan（Apple，2026-10-23，约 100,000 GPU-hours、100+ 模型从零预训练）</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 13px; letter-spacing: 3px; fill: #9A937F; }
+      .t { font-size: 37px; font-weight: 700; fill: #1A1B1E; }
+      .s { font-size: 15.5px; fill: #6E6A5C; }
+      .rl { font-size: 15px; fill: #4C4A3F; }
+      .v { font-size: 15px; font-weight: 600; fill: #1A1B1E; }
+      .g { font-size: 12.5px; fill: #A29C88; }
+      .ax { font-size: 12.5px; fill: #A29C88; }
+    </style>
+  </defs>
 
-  <!-- three numbers panel -->
-  <rect x="40" y="105" width="560" height="225" rx="10" fill="#161d2c" stroke="#e06c5a"/>
-  <text x="320" y="137" fill="#e06c5a" font-size="18" font-weight="bold" text-anchor="middle">mixture-loss halting head 的三个数（上限 8 迭代）</text>
-  <text x="80" y="175" fill="#8a93a6" font-size="14">head 预测均值 E[N]</text>
-  <rect x="290" y="160" width="128" height="18" fill="#3f9e6a"/>
-  <text x="426" y="174" fill="#c6cddc" font-size="14">约 3.7</text>
-  <text x="80" y="210" fill="#8a93a6" font-size="14">退出规则实跑（等累计 90%）</text>
-  <rect x="290" y="195" width="272" height="18" fill="#e06c5a"/>
-  <text x="570" y="209" fill="#c6cddc" font-size="14">7.6–7.9</text>
-  <text x="80" y="245" fill="#8a93a6" font-size="14">32 序列批次实付</text>
-  <rect x="290" y="230" width="166" height="18" fill="#d9a441"/>
-  <text x="464" y="244" fill="#c6cddc" font-size="14">4.4–4.7</text>
-  <text x="80" y="282" fill="#8a93a6" font-size="13">原话 save almost no compute；病灶：mixture loss 从不给</text>
-  <text x="80" y="303" fill="#8a93a6" font-size="13">退出规则真正停下的那一次打分；抽样花掉平均要付 0.2 BPB</text>
+  <rect width="1200" height="675" fill="#FBFAF7"/>
+  <rect x="64" y="46" width="44" height="5" fill="#B5442E"/>
 
-  <!-- batch tax panel -->
-  <rect x="630" y="105" width="530" height="225" rx="10" fill="#161d2c" stroke="#5a9bd4"/>
-  <text x="895" y="137" fill="#5a9bd4" font-size="18" font-weight="bold" text-anchor="middle">批次等最慢的 token</text>
-  <text x="895" y="172" fill="#c6cddc" font-size="15" text-anchor="middle">370M 计时：自适应解码快约 1.6×</text>
-  <text x="895" y="200" fill="#c6cddc" font-size="15" text-anchor="middle">按实跑步数固定深度跑：本可 2.3×</text>
-  <text x="895" y="228" fill="#c6cddc" font-size="15" text-anchor="middle">差额 = 等待最慢 token 的成本</text>
-  <text x="895" y="262" fill="#c6cddc" font-size="15" text-anchor="middle">在批次实付深度上对账：质量领先</text>
-  <text x="895" y="290" fill="#c6cddc" font-size="15" text-anchor="middle">0.0246 BPB → 塌到 0.003 BPB</text>
+  <text class="k" x="64" y="86">一分钟读论文 NO.200 · ARXIV:2610.32246 · APPLE · 2026-10-23</text>
+  <text class="serif t" x="64" y="134">省算力账本，在批次维度对不上</text>
+  <text class="s" x="64" y="166">预测平均、退出规则实跑、批次实付是三个数 —— 约 100,000 GPU-hours、100+ 个从零预训练的循环语言模型实测</text>
+  <line x1="64" y1="192" x2="1136" y2="192" stroke="#E5E1D4" stroke-width="1"/>
 
-  <!-- ouro + balance -->
-  <rect x="40" y="350" width="700" height="190" rx="10" fill="#161d2c" stroke="#2c3850"/>
-  <text x="390" y="382" fill="#e8ecf4" font-size="18" font-weight="bold" text-anchor="middle">省是真的省过，但账本要换记法</text>
-  <text x="70" y="415" fill="#c6cddc" font-size="14">· per-step 训练 + 固定深度：仍全面领先无头基线</text>
-  <text x="70" y="443" fill="#c6cddc" font-size="14">· 停止 token 的 key/value 复用进缓存：单序列保住几乎全部领先</text>
-  <text x="70" y="471" fill="#c6cddc" font-size="14">· Ouro 2.6B（该文自测口径）：token 省约 1/10 迭代，32 批次仅省约 1%</text>
-  <text x="70" y="499" fill="#c6cddc" font-size="14">· Ouro gate 的 token 分配在同均值深度下值 0.30 BPB——质量侧收益真实存在</text>
-  <text x="70" y="527" fill="#8a93a6" font-size="13">建议改报三个数：head 预测均值 / 退出规则实跑步数 / 批次实付步数；训练前上界约 0.03（单序列）、0.01（32 批次）BPB</text>
+  <!-- hero: three-numbers dumbbell, axis 0..8 iterations -->
+  <text class="k" x="64" y="238">同一批模型的上限 8 次迭代里，三个数各自站在哪</text>
 
-  <!-- scope box -->
-  <rect x="770" y="350" width="390" height="190" rx="10" fill="#161d2c" stroke="#d9a441"/>
-  <text x="965" y="382" fill="#d9a441" font-size="18" font-weight="bold" text-anchor="middle">范围限定</text>
-  <text x="795" y="415" fill="#c6cddc" font-size="14">· 逐字 for the halting heads we train</text>
-  <text x="795" y="443" fill="#c6cddc" font-size="14">· 限 mixture/per-step 训练配置</text>
-  <text x="795" y="471" fill="#c6cddc" font-size="14">· 规模到 1.3B（104B tokens）为止</text>
-  <text x="795" y="499" fill="#c6cddc" font-size="14">· 不外推所有自适应深度方案</text>
-  <text x="795" y="527" fill="#8a93a6" font-size="13">Ouro 数字均为该文复测非官方结论</text>
+  <!-- grid -->
+  <g stroke="#EAE6DA" stroke-width="1">
+    <line x1="260" y1="266" x2="260" y2="452"/><line x1="415" y1="266" x2="415" y2="452"/>
+    <line x1="570" y1="266" x2="570" y2="452"/><line x1="725" y1="266" x2="725" y2="452"/>
+  </g>
+  <line x1="880" y1="266" x2="880" y2="452" stroke="#B5442E" stroke-width="1" stroke-dasharray="4 4" opacity="0.55"/>
+  <text class="ax" x="880" y="258" text-anchor="middle">跑满 8</text>
+  <text class="ax" x="260" y="474" text-anchor="middle">0</text>
+  <text class="ax" x="415" y="474" text-anchor="middle">2</text>
+  <text class="ax" x="570" y="474" text-anchor="middle">4</text>
+  <text class="ax" x="725" y="474" text-anchor="middle">6</text>
+  <text class="ax" x="840" y="474" text-anchor="middle">迭代次数（cap 8）</text>
 
-  <!-- footer -->
-  <rect x="40" y="560" width="1120" height="55" rx="10" fill="#1b2334" stroke="#3f9e6a"/>
-  <text x="600" y="594" fill="#3f9e6a" font-size="17" font-weight="bold" text-anchor="middle">报告平均迭代数的省算力账单，在批次解码的服务端对不上账 —— 三个数分开报，才算证据</text>
+  <!-- row 1 predicted 3.7 -->
+  <text class="rl" x="236" y="301" text-anchor="end">head 预测均值 E[N]</text>
+  <circle cx="546.8" cy="296" r="8" fill="#4E7D5B"/>
+  <text class="v" x="566" y="301">3.7 —— 「不到一半」</text>
+
+  <!-- row 2 batch 4.4-4.7 -->
+  <text class="rl" x="236" y="371" text-anchor="end">32 序列批次实付</text>
+  <line x1="601" y1="366" x2="624.3" y2="366" stroke="#B9892F" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="601" cy="366" r="4.5" fill="#FBFAF7" stroke="#B9892F" stroke-width="2"/>
+  <text class="v" x="644" y="371">4.4 – 4.7</text>
+
+  <!-- row 3 exit rule 7.6-7.9 -->
+  <text class="rl" x="236" y="441" text-anchor="end">退出规则实跑</text>
+  <line x1="849" y1="436" x2="872.3" y2="436" stroke="#B5442E" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="849" cy="436" r="4.5" fill="#FBFAF7" stroke="#B5442E" stroke-width="2"/>
+  <text class="v" x="660" y="441" text-anchor="end">7.6 – 7.9 · 等累计 90% 才放行 · 原文 save almost no compute</text>
+
+  <!-- right stats column -->
+  <line x1="960" y1="238" x2="960" y2="474" stroke="#E5E1D4"/>
+  <text class="serif" x="984" y="282" font-size="25" font-weight="700" fill="#B5442E">0.0246 → 0.003</text>
+  <text class="s" x="984" y="310" font-size="13.5">改在批次实付深度上对账，</text>
+  <text class="s" x="984" y="330" font-size="13.5">质量领先塌掉大半</text>
+  <text class="g" x="984" y="352">（770M 档位；140M / 370M 为平手）</text>
+
+  <g>
+    <text class="rl" x="984" y="392" font-size="13.5">自适应解码实测</text>
+    <rect x="984" y="400" width="88" height="9" fill="#3D5A73"/>
+    <text class="v" x="1082" y="409" font-size="13.5">1.6×</text>
+    <text class="rl" x="984" y="432" font-size="13.5">按实跑步数固定深度</text>
+    <rect x="984" y="440" width="126" height="9" fill="#B5442E"/>
+    <text class="v" x="1120" y="449" font-size="13.5">2.3×</text>
+    <text class="v" x="984" y="470" font-size="13.5">差额就是等最慢 token 的税</text>
+  </g>
+
+  <line x1="64" y1="540" x2="1136" y2="540" stroke="#E5E1D4"/>
+  <text class="serif" x="64" y="584" font-size="20" fill="#1A1B1E">省是真的省过：固定深度解码仍全面领先，gate 的 token 分配在同均值深度下值 0.30 BPB。</text>
+  <text class="s" x="64" y="612" font-size="13.5">但要分开报三个数。对已发布 Ouro 2.6B 的复测（该文自测口径）：token 省约 1/10 迭代，32 批次只剩约 1%。</text>
+  <text class="g" x="64" y="644">结论逐字限于 for the halting heads we train（mixture / per-step 训练配置，规模至 1.3B / 104B tokens）· 不外推所有自适应深度方案 · Micropaper</text>
 </svg>
