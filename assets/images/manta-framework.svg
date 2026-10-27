@@ -1,128 +1,112 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" font-family="Arial, sans-serif">
-  <rect width="800" height="560" fill="#f8f9fa"/>
-
-  <!-- Title -->
-  <text x="400" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#2c3e50">MANTA: Multi-Agent Network Topology Adaptation</text>
-
-  <!-- Input Task -->
-  <rect x="310" y="50" width="180" height="36" rx="6" fill="#e8eaf6" stroke="#3f51b5" stroke-width="2"/>
-  <text x="400" y="73" text-anchor="middle" font-size="13" fill="#283593">Input Task</text>
-
-  <!-- Arrow down -->
-  <path d="M 400 86 L 400 105" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-
-  <!-- Orchestration Loop (main box) -->
-  <rect x="30" y="105" width="740" height="280" rx="10" fill="none" stroke="#90a4ae" stroke-width="1.5" stroke-dasharray="6,3"/>
-  <text x="400" y="125" text-anchor="middle" font-size="12" fill="#78909c">Orchestration Loop</text>
-
-  <!-- Query-Conditioned Planning -->
-  <rect x="50" y="135" width="160" height="48" rx="6" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5"/>
-  <text x="130" y="155" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">Query-Conditioned</text>
-  <text x="130" y="171" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">Planning</text>
-
-  <!-- Arrow -->
-  <path d="M 210 159 L 240 159" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-
-  <!-- Initial Topology Generation -->
-  <rect x="245" y="135" width="170" height="48" rx="6" fill="#e8f5e9" stroke="#388e3c" stroke-width="1.5"/>
-  <text x="330" y="155" text-anchor="middle" font-size="12" font-weight="bold" fill="#2e7d32">Task-Conditioned</text>
-  <text x="330" y="171" text-anchor="middle" font-size="12" font-weight="bold" fill="#2e7d32">Topology Init</text>
-
-  <!-- Arrow -->
-  <path d="M 415 159 L 445 159" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-
-  <!-- Turn Execution -->
-  <rect x="450" y="135" width="150" height="48" rx="6" fill="#fff3e0" stroke="#f57c00" stroke-width="1.5"/>
-  <text x="525" y="159" text-anchor="middle" font-size="12" font-weight="bold" fill="#e65100">Turn Execution</text>
-
-  <!-- Arrow down from execution -->
-  <path d="M 525 183 L 525 210" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-
-  <!-- Trace Auditing & Repair -->
-  <rect x="450" y="210" width="150" height="48" rx="6" fill="#fce4ec" stroke="#c62828" stroke-width="1.5"/>
-  <text x="525" y="230" text-anchor="middle" font-size="12" font-weight="bold" fill="#b71c1c">Trace Auditing</text>
-  <text x="525" y="246" text-anchor="middle" font-size="12" font-weight="bold" fill="#b71c1c">&amp; Repair</text>
-
-  <!-- Arrow left -->
-  <path d="M 450 234 L 410 234" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-
-  <!-- Topology Repair Decision -->
-  <rect x="245" y="210" width="160" height="48" rx="6" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="1.5"/>
-  <text x="325" y="230" text-anchor="middle" font-size="12" font-weight="bold" fill="#6a1b9a">Topology Repair</text>
-  <text x="325" y="246" text-anchor="middle" font-size="12" font-weight="bold" fill="#6a1b9a">Decision</text>
-
-  <!-- Arrow left -->
-  <path d="M 245 234 L 210 234" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-
-  <!-- Structural Modification -->
-  <rect x="50" y="210" width="150" height="48" rx="6" fill="#e0f7fa" stroke="#00838f" stroke-width="1.5"/>
-  <text x="125" y="230" text-anchor="middle" font-size="12" font-weight="bold" fill="#006064">Structural</text>
-  <text x="125" y="246" text-anchor="middle" font-size="12" font-weight="bold" fill="#006064">Modification</text>
-
-  <!-- Arrow back up to planning -->
-  <path d="M 125 258 L 125 135" stroke="#666" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
-
-  <!-- Two-Horizon Playbook Memory (right side) -->
-  <rect x="610" y="135" width="150" height="120" rx="8" fill="#fffde7" stroke="#f9a825" stroke-width="1.5"/>
-  <text x="685" y="155" text-anchor="middle" font-size="12" font-weight="bold" fill="#f57f17">Two-Horizon</text>
-  <text x="685" y="170" text-anchor="middle" font-size="12" font-weight="bold" fill="#f57f17">Playbook Memory</text>
-  <line x1="630" y1="178" x2="740" y2="178" stroke="#f9a825" stroke-width="1"/>
-
-  <!-- Short-term traces -->
-  <rect x="625" y="185" width="120" height="22" rx="3" fill="#fff9c4"/>
-  <text x="685" y="200" text-anchor="middle" font-size="10" fill="#f57f17">Short-term Traces</text>
-
-  <!-- Long-term experience -->
-  <rect x="625" y="213" width="120" height="22" rx="3" fill="#fff9c4"/>
-  <text x="685" y="228" text-anchor="middle" font-size="10" fill="#f57f17">Long-term Experience</text>
-
-  <!-- Arrow between loop and memory -->
-  <path d="M 600 195 L 610 195" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-
-  <!-- Five Modification Operations (bottom section) -->
-  <rect x="30" y="400" width="740" height="130" rx="8" fill="#fafafa" stroke="#b0bec5" stroke-width="1.5"/>
-  <text x="400" y="422" text-anchor="middle" font-size="13" font-weight="bold" fill="#455a64">Five Structural Modification Operations</text>
-
-  <!-- Op 1: Agent Roles -->
-  <rect x="50" y="435" width="130" height="80" rx="6" fill="#e3f2fd" stroke="#1976d2" stroke-width="1"/>
-  <text x="115" y="458" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565c0">Modify Agent</text>
-  <text x="115" y="473" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565c0">Roles</text>
-
-  <!-- Op 2: Communication Links -->
-  <rect x="195" y="435" width="130" height="80" rx="6" fill="#e8f5e9" stroke="#388e3c" stroke-width="1"/>
-  <text x="260" y="458" text-anchor="middle" font-size="11" font-weight="bold" fill="#2e7d32">Adjust Communication</text>
-  <text x="260" y="473" text-anchor="middle" font-size="11" font-weight="bold" fill="#2e7d32">Links</text>
-
-  <!-- Op 3: Execution Order -->
-  <rect x="340" y="435" width="130" height="80" rx="6" fill="#fff3e0" stroke="#f57c00" stroke-width="1"/>
-  <text x="405" y="458" text-anchor="middle" font-size="11" font-weight="bold" fill="#e65100">Optimize Execution</text>
-  <text x="405" y="473" text-anchor="middle" font-size="11" font-weight="bold" fill="#e65100">Order</text>
-
-  <!-- Op 4: Info Visibility -->
-  <rect x="485" y="435" width="130" height="80" rx="6" fill="#fce4ec" stroke="#c62828" stroke-width="1"/>
-  <text x="550" y="458" text-anchor="middle" font-size="11" font-weight="bold" fill="#b71c1c">Control Info</text>
-  <text x="550" y="473" text-anchor="middle" font-size="11" font-weight="bold" fill="#b71c1c">Visibility</text>
-
-  <!-- Op 5: Verification Paths -->
-  <rect x="630" y="435" width="120" height="80" rx="6" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="1"/>
-  <text x="690" y="458" text-anchor="middle" font-size="11" font-weight="bold" fill="#6a1b9a">Reconstruct</text>
-  <text x="690" y="473" text-anchor="middle" font-size="11" font-weight="bold" fill="#6a1b9a">Verification Paths</text>
-
-  <!-- Arrow from loop to operations -->
-  <path d="M 400 385 L 400 400" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-
-  <!-- Key Results (bottom right corner) -->
-  <rect x="500" y="510" width="270" height="40" rx="6" fill="#e8f5e9" stroke="#388e3c" stroke-width="1.5"/>
-  <text x="635" y="528" text-anchor="middle" font-size="12" font-weight="bold" fill="#2e7d32">Avg Score: 74.0 | +5.8pp vs Strongest Baseline</text>
-  <text x="635" y="543" text-anchor="middle" font-size="11" fill="#388e3c">Best on PlanCraft | 5 Benchmarks, 5 Task Types</text>
-
-  <!-- Arrow from operations to results -->
-  <path d="M 690 510 L 690 520" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <!-- Arrow marker definition -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
   <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#666"/>
-    </marker>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9C9484; }
+      .rl { font-size: 15px; fill: #474C54; }
+      .val { font-size: 18px; font-weight: 700; fill: #1A1B1E; }
+      .b { font-size: 12px; fill: #A5A296; }
+      .chip { font-size: 12.5px; font-weight: 600; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F1F6F6"/>
+    </linearGradient>
+    <linearGradient id="gCoral" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E0563F"/><stop offset="1" stop-color="#F08A6E"/>
+    </linearGradient>
+    <linearGradient id="gDeep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#17607A"/><stop offset="1" stop-color="#4795AC"/>
+    </linearGradient>
+    <linearGradient id="gKelp" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F8A5B"/><stop offset="1" stop-color="#71B98C"/>
+    </linearGradient>
+    <linearGradient id="gSun" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E0A32E"/><stop offset="1" stop-color="#F0C76A"/>
+    </linearGradient>
+    <linearGradient id="gIris" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5F4BB6"/><stop offset="1" stop-color="#8F7ED4"/>
+    </linearGradient>
   </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1105" cy="110" r="140" fill="#17607A" opacity="0.07"/>
+  <circle cx="70" cy="620" r="115" fill="#E0563F" opacity="0.06"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gCoral)"/>
+
+  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2607.28527 · COLUMBIA / ASIAA</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">拓扑是活网</text>
+  <text x="64" y="158" font-size="15" fill="#5B6068">推理时边跑边收网：拓扑成为可优化变量，而非部署即冻结的参数</text>
+
+  <!-- fishing net motif -->
+  <g stroke="#17607A" stroke-width="2" opacity="0.5" fill="none">
+    <path d="M 1008 64 Q 1092 100 1176 64"/>
+    <path d="M 1016 92 Q 1092 126 1168 92"/>
+    <path d="M 1030 118 Q 1092 148 1154 118"/>
+    <path d="M 1046 142 Q 1092 166 1138 142"/>
+    <path d="M 1044 60 L 1056 150 M 1092 76 L 1092 162 M 1140 60 L 1128 150"/>
+    <path d="M 1016 68 L 1038 140 M 1168 68 L 1146 140"/>
+  </g>
+  <g fill="url(#gSun)">
+    <circle cx="1056" cy="150" r="5"/><circle cx="1092" cy="162" r="5"/><circle cx="1128" cy="150" r="5"/>
+  </g>
+  <path d="M 1092 166 q -7 16 0 26 q 7 -10 0 -26" fill="url(#gCoral)"/>
+
+  <!-- comparison bars: mean score -->
+  <g>
+    <rect x="64" y="204" width="672" height="66" fill="#17607A" opacity="0.07"/>
+    <rect x="64" y="286" width="672" height="66" fill="#E0563F" opacity="0.08"/>
+
+    <text class="rl" x="252" y="243" text-anchor="end">最强基线</text>
+    <rect x="308" y="227" width="407.5" height="20" rx="4" fill="url(#gDeep)"/>
+    <text class="val" x="726" y="244" fill="#17607A">68.2</text>
+
+    <text class="rl" x="252" y="325" text-anchor="end">MANTA · 五基准均分</text>
+    <rect x="308" y="309" width="394.4" height="20" rx="4" fill="url(#gCoral)"/>
+    <text class="val" x="714" y="326" fill="#E0563F">74.0</text>
+    <text class="b" x="308" y="382">五基准平均得分（由 74.0 与基线差 5.8 推得） · 五大任务类型</text>
+
+    <text class="rl" x="64" y="428">五类基准</text>
+    <rect x="140" y="410" width="96" height="26" rx="13" fill="url(#gDeep)" opacity="0.2"/>
+    <text x="188" y="428" text-anchor="middle" class="chip" fill="#115068">信息检索</text>
+    <rect x="246" y="410" width="78" height="26" rx="13" fill="url(#gKelp)" opacity="0.22"/>
+    <text x="285" y="428" text-anchor="middle" class="chip" fill="#1F6240">工具使用</text>
+    <rect x="334" y="410" width="66" height="26" rx="13" fill="url(#gSun)" opacity="0.3"/>
+    <text x="367" y="428" text-anchor="middle" class="chip" fill="#7A5610">规划</text>
+    <rect x="410" y="410" width="86" height="26" rx="13" fill="url(#gIris)" opacity="0.22"/>
+    <text x="453" y="428" text-anchor="middle" class="chip" fill="#463494">工作流</text>
+    <rect x="506" y="410" width="66" height="26" rx="13" fill="url(#gCoral)" opacity="0.22"/>
+    <text x="539" y="428" text-anchor="middle" class="chip" fill="#A5381F">数学</text>
+  </g>
+
+  <!-- right column -->
+  <g>
+    <rect x="846" y="204" width="294" height="88" rx="12" fill="#E0563F" opacity="0.08"/>
+    <text class="serif" x="866" y="252" font-size="30" font-weight="700" fill="#E0563F">+5.8 个百分点</text>
+    <text x="866" y="276" font-size="12.5" fill="#6B7078">五基准平均 · PlanCraft 任务取得最佳结果</text>
+
+    <text class="rl" x="866" y="338">网眼要疏密得当</text>
+    <text class="b" x="866" y="360">突变预算：调太少跟不上，调太多是开销</text>
+    <text class="rl" x="866" y="404">结网经验跨任务复用</text>
+    <text class="b" x="866" y="426">长期 Playbook 技能可迁移</text>
+    <text class="rl" x="866" y="458">结构更省，账单更薄</text>
+    <text class="b" x="866" y="480">Token 分析：整体计算成本反而下降</text>
+  </g>
+
+  <!-- bottom: five knot operations -->
+  <line x1="64" y1="506" x2="1136" y2="506" stroke="#DFE7E4"/>
+  <g>
+    <text class="rl" x="64" y="546">五种改结手法</text>
+    <rect x="176" y="528" width="108" height="28" rx="14" fill="url(#gDeep)" opacity="0.2"/>
+    <text x="230" y="546" text-anchor="middle" class="chip" fill="#115068">改 Agent 角色</text>
+    <rect x="294" y="528" width="108" height="28" rx="14" fill="url(#gKelp)" opacity="0.22"/>
+    <text x="348" y="546" text-anchor="middle" class="chip" fill="#1F6240">调通信链接</text>
+    <rect x="412" y="528" width="108" height="28" rx="14" fill="url(#gSun)" opacity="0.3"/>
+    <text x="466" y="546" text-anchor="middle" class="chip" fill="#7A5610">优化执行顺序</text>
+    <rect x="530" y="528" width="120" height="28" rx="14" fill="url(#gIris)" opacity="0.22"/>
+    <text x="590" y="546" text-anchor="middle" class="chip" fill="#463494">控制信息可见性</text>
+    <rect x="660" y="528" width="108" height="28" rx="14" fill="url(#gCoral)" opacity="0.22"/>
+    <text x="714" y="546" text-anchor="middle" class="chip" fill="#A5381F">重构验证路径</text>
+  </g>
+  <text class="serif" x="64" y="600" font-size="18" fill="#1A1B1E">从「预先设计、固定执行」到「持续评估、动态调整」。</text>
+  <text class="b" x="1136" y="600" text-anchor="end">五个基准平均 · 论文自述口径 · 预印本未经同行评审 · Micropaper</text>
 </svg>

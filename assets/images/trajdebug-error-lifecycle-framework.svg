@@ -1,118 +1,104 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
   <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#4a90d9"/>
-    </marker>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1"/>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8FA094; }
+      .rl { font-size: 15px; fill: #3C4740; }
+      .val { font-size: 20px; font-weight: 700; }
+      .b { font-size: 12px; fill: #A2B0A6; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EEF4EF"/>
+    </linearGradient>
+    <linearGradient id="gRed" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C0392B"/><stop offset="1" stop-color="#E8785C"/>
+    </linearGradient>
+    <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D97B2B"/><stop offset="1" stop-color="#EFAA66"/>
+    </linearGradient>
+    <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F8A5B"/><stop offset="1" stop-color="#7CC493"/>
+    </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0F7B8A"/><stop offset="1" stop-color="#5CB8C4"/>
+    </linearGradient>
+    <linearGradient id="gViolet" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6C5A9E"/><stop offset="1" stop-color="#A392CC"/>
     </linearGradient>
   </defs>
 
-  <!-- Background -->
-  <rect width="900" height="520" rx="8" fill="url(#bgGrad)"/>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1115" cy="605" r="135" fill="#0F7B8A" opacity="0.06"/>
+  <circle cx="70" cy="110" r="105" fill="#C0392B" opacity="0.05"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gGreen)"/>
 
-  <!-- Title -->
-  <text x="450" y="36" text-anchor="middle" font-size="18" font-weight="bold" fill="#2c3e50">TRAJDEBUG: Error Lifecycle Framework</text>
+  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2608.06346 · 清华/腾讯混元</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1D2721">七个病灶，一个死因</text>
+  <text x="64" y="158" font-size="15" fill="#5F6E65">TrajDebug：追踪错误生命周期，定位长程轨迹的关键失败</text>
 
-  <!-- Stage 1: Multi-Granularity Compression -->
-  <rect x="30" y="55" width="240" height="160" rx="8" fill="#ffffff" stroke="#4a90d9" stroke-width="2"/>
-  <text x="150" y="82" text-anchor="middle" font-size="13" font-weight="bold" fill="#4a90d9">Stage 1: Multi-Granularity Compression</text>
+  <!-- metro map motif -->
+  <g>
+    <path d="M 1010 96 q 30 -36 78 -12 q 42 20 22 56" fill="none" stroke="#0F7B8A" stroke-width="4" opacity="0.75"/>
+    <circle cx="1010" cy="96" r="7" fill="#FFFFFF" stroke="#0F7B8A" stroke-width="3"/>
+    <circle cx="1088" cy="84" r="7" fill="#FFFFFF" stroke="#0F7B8A" stroke-width="3"/>
+    <circle cx="1110" cy="140" r="8" fill="url(#gRed)"/>
+    <path d="M 1110 136 l -5 8 h 10 z" fill="#7A1F14"/>
+    <text class="b" x="1072" y="176" text-anchor="middle">终点站：任务失败</text>
+  </g>
 
-  <!-- Three views -->
-  <rect x="45" y="95" width="210" height="30" rx="4" fill="#e8f4fd"/>
-  <text x="150" y="115" text-anchor="middle" font-size="11" fill="#2c3e50">High Detail: Raw instructions, actions, observations</text>
+  <!-- funnel: 7.62 -> 1 -->
+  <g>
+    <text class="rl" x="64" y="216" font-weight="700" fill="#1D2721">失败轨迹里的错误漏斗</text>
 
-  <rect x="45" y="132" width="210" height="30" rx="4" fill="#d6eaf8"/>
-  <text x="150" y="152" text-anchor="middle" font-size="11" fill="#2c3e50">Medium Detail: Intent summary, state updates</text>
+    <text class="serif" x="80" y="320" font-size="56" font-weight="700" fill="#6C5A9E">7.62</text>
+    <text x="80" y="348" font-size="14" fill="#3C4740">平均局部错误</text>
 
-  <rect x="45" y="169" width="210" height="30" rx="4" fill="#aed6f1"/>
-  <text x="150" y="189" text-anchor="middle" font-size="11" fill="#2c3e50">Low Detail: Progress, entities, unresolved promises</text>
+    <path d="M 236 282 L 356 313 L 356 329 L 236 360 Z" fill="url(#gTeal)" opacity="0.5"/>
+    <text class="b" x="296" y="272" text-anchor="middle" fill="#0F7B8A">61.9% 被后续修复</text>
 
-  <!-- Arrow to Stage 2 -->
-  <line x1="270" y1="135" x2="310" y2="135" stroke="#4a90d9" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text class="serif" x="392" y="320" font-size="56" font-weight="700" fill="#D97B2B">31.4%</text>
+    <text x="392" y="348" font-size="14" fill="#3C4740">持续到最后</text>
 
-  <!-- Stage 2: Error Trigger Detection -->
-  <rect x="310" y="55" width="280" height="160" rx="8" fill="#ffffff" stroke="#e74c3c" stroke-width="2"/>
-  <text x="450" y="82" text-anchor="middle" font-size="13" font-weight="bold" fill="#e74c3c">Stage 2: Error Trigger Detection</text>
+    <path d="M 566 282 L 686 313 L 686 329 L 566 360 Z" fill="url(#gRed)" opacity="0.5"/>
+    <text class="b" x="626" y="272" text-anchor="middle" fill="#B03123">因果归因</text>
 
-  <!-- Trigger components -->
-  <rect x="325" y="95" width="250" height="26" rx="4" fill="#fde8e8"/>
-  <text x="450" y="112" text-anchor="middle" font-size="11" fill="#2c3e50">Trigger: e = (t, c, p, qw, qr)</text>
+    <text class="serif" x="790" y="326" font-size="72" font-weight="700" fill="#C0392B">1</text>
+    <text x="790" y="354" font-size="14" font-weight="700" fill="#3C4740">关键错误</text>
+    <text class="b" x="880" y="308">关键错误 ≠ 最早的局部错误</text>
+    <text class="b" x="880" y="328">检测准确率随轨迹变长而下降</text>
+  </g>
 
-  <!-- Four categories -->
-  <rect x="325" y="128" width="60" height="24" rx="3" fill="#f5b7b1"/>
-  <text x="355" y="144" text-anchor="middle" font-size="9" fill="#fff">Task</text>
+  <!-- four error states -->
+  <g>
+    <text class="rl" x="64" y="408" font-weight="700" fill="#1D2721">四种错误状态</text>
+    <rect x="64" y="422" width="230" height="26" rx="13" fill="#2F8A5B" opacity="0.15"/>
+    <text x="179" y="440" text-anchor="middle" font-size="13" fill="#226845">干净解决 · 无印记</text>
+    <rect x="306" y="422" width="250" height="26" rx="13" fill="#D97B2B" opacity="0.16"/>
+    <text x="431" y="440" text-anchor="middle" font-size="13" fill="#9C5517">带债解决 · 有预算债务</text>
+    <rect x="568" y="422" width="250" height="26" rx="13" fill="#C0392B" opacity="0.15"/>
+    <text x="693" y="440" text-anchor="middle" font-size="13" fill="#992A1E">显性活跃 · 不可逆印记</text>
+    <rect x="830" y="422" width="230" height="26" rx="13" fill="#6C5A9E" opacity="0.15"/>
+    <text x="945" y="440" text-anchor="middle" font-size="13" fill="#55447E">潜伏活跃 · 无印记</text>
+  </g>
 
-  <rect x="390" y="128" width="60" height="24" rx="3" fill="#f5b7b1"/>
-  <text x="420" y="144" text-anchor="middle" font-size="9" fill="#fff">History</text>
+  <!-- pipeline + right stats -->
+  <g>
+    <text x="64" y="484" font-size="14" fill="#3C4740" font-weight="700">三阶段管线</text>
+    <rect x="180" y="466" width="196" height="28" rx="6" fill="url(#gTeal)" opacity="0.85"/>
+    <text x="278" y="485" text-anchor="middle" font-size="13" fill="#FFFFFF">多粒度历史压缩</text>
+    <text x="392" y="485" fill="#8FA094" font-size="16">→</text>
+    <rect x="414" y="466" width="196" height="28" rx="6" fill="url(#gViolet)" opacity="0.85"/>
+    <text x="512" y="485" text-anchor="middle" font-size="13" fill="#FFFFFF">触发检测与分类</text>
+    <text x="626" y="485" fill="#8FA094" font-size="16">→</text>
+    <rect x="648" y="466" width="196" height="28" rx="6" fill="url(#gRed)" opacity="0.9"/>
+    <text x="746" y="485" text-anchor="middle" font-size="13" fill="#FFFFFF">候选集因果归因</text>
+    <text class="b" x="860" y="485">每个触发器须逐字证据可引</text>
 
-  <rect x="455" y="128" width="60" height="24" rx="3" fill="#f5b7b1"/>
-  <text x="485" y="144" text-anchor="middle" font-size="9" fill="#fff">Intra-Step</text>
+    <text class="serif" x="1136" y="480" text-anchor="end" font-size="30" font-weight="700" fill="#1D2721">+10.80% <tspan font-size="17" fill="#0F7B8A">失败诊断重执行</tspan></text>
+    <text class="serif" x="1136" y="514" text-anchor="end" font-size="30" font-weight="700" fill="#1D2721">+5.70% <tspan font-size="17" fill="#0F7B8A">失败记忆迁移</tspan></text>
+  </g>
 
-  <rect x="520" y="128" width="60" height="24" rx="3" fill="#f5b7b1"/>
-  <text x="550" y="144" text-anchor="middle" font-size="9" fill="#fff">Env Anomaly</text>
-
-  <!-- Evidence constraint -->
-  <rect x="325" y="162" width="250" height="38" rx="4" fill="#fef9e7" stroke="#f39c12" stroke-width="1"/>
-  <text x="450" y="178" text-anchor="middle" font-size="10" font-weight="bold" fill="#d68910">Verbatim Evidence Constraint</text>
-  <text x="450" y="193" text-anchor="middle" font-size="9" fill="#7d6608">qw and qr must be explicitly quotable</text>
-
-  <!-- Arrow to Stage 3 -->
-  <line x1="590" y1="135" x2="630" y2="135" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrowhead)"/>
-
-  <!-- Stage 3: Error State Classification -->
-  <rect x="630" y="55" width="240" height="160" rx="8" fill="#ffffff" stroke="#8e44ad" stroke-width="2"/>
-  <text x="750" y="82" text-anchor="middle" font-size="13" font-weight="bold" fill="#8e44ad">Stage 3: Error State Classification</text>
-
-  <!-- Four states -->
-  <rect x="645" y="95" width="210" height="28" rx="4" fill="#abebc6"/>
-  <text x="750" y="113" text-anchor="middle" font-size="10" fill="#2c3e50">Clean Resolution: Resolved, no trace</text>
-
-  <rect x="645" y="128" width="210" height="28" rx="4" fill="#f9e79f"/>
-  <text x="750" y="146" text-anchor="middle" font-size="10" fill="#2c3e50">Costly Resolution: Resolved, budget debt</text>
-
-  <rect x="645" y="161" width="210" height="28" rx="4" fill="#f5b7b1"/>
-  <text x="750" y="179" text-anchor="middle" font-size="10" fill="#2c3e50">Manifest Active: Irreversible trace</text>
-
-  <rect x="645" y="194" width="210" height="28" rx="4" fill="#fdebd0"/>
-  <text x="750" y="212" text-anchor="middle" font-size="10" fill="#2c3e50">Latent Active: No trace yet</text>
-
-  <!-- Arrow down to Stage 4 -->
-  <line x1="750" y1="215" x2="750" y2="250" stroke="#8e44ad" stroke-width="2" marker-end="url(#arrowhead)"/>
-
-  <!-- Stage 4: Causal Attribution -->
-  <rect x="310" y="250" width="280" height="100" rx="8" fill="#ffffff" stroke="#27ae60" stroke-width="2"/>
-  <text x="450" y="277" text-anchor="middle" font-size="13" font-weight="bold" fill="#27ae60">Stage 4: Candidate-Set-Guided Causal Attribution</text>
-
-  <!-- Candidates -->
-  <rect x="325" y="290" width="130" height="28" rx="4" fill="#d5f5e3"/>
-  <text x="390" y="308" text-anchor="middle" font-size="10" fill="#2c3e50">Costly Resolution</text>
-
-  <rect x="465" y="290" width="130" height="28" rx="4" fill="#fadbd8"/>
-  <text x="530" y="308" text-anchor="middle" font-size="10" fill="#2c3e50">Manifest Active</text>
-
-  <!-- LLM decision -->
-  <rect x="325" y="324" width="270" height="20" rx="4" fill="#eaf2f8"/>
-  <text x="460" y="338" text-anchor="middle" font-size="10" fill="#2c3e50">LLM selects the critical error step</text>
-
-  <!-- Key findings box -->
-  <rect x="30" y="370" width="420" height="130" rx="8" fill="#ffffff" stroke="#34495e" stroke-width="1.5"/>
-  <text x="240" y="396" text-anchor="middle" font-size="13" font-weight="bold" fill="#34495e">Key Findings (TrajErrBench)</text>
-
-  <text x="50" y="418" font-size="11" fill="#2c3e50">- 486 manually annotated failure trajectories</text>
-  <text x="50" y="438" font-size="11" fill="#2c3e50">- Avg 7.62 local errors per trajectory, only 1 critical error</text>
-  <text x="50" y="458" font-size="11" fill="#2c3e50">- 61.9% of local errors self-repaired, 31.4% persisted</text>
-
-  <!-- Results box -->
-  <rect x="470" y="370" width="400" height="130" rx="8" fill="#ffffff" stroke="#27ae60" stroke-width="1.5"/>
-  <text x="670" y="396" text-anchor="middle" font-size="13" font-weight="bold" fill="#27ae60">Application Results</text>
-
-  <text x="490" y="418" font-size="11" fill="#2c3e50">- Diagnostic-driven agent improvement: +10.80% success rate</text>
-  <text x="490" y="438" font-size="11" fill="#2c3e50">- Failure memory transfer to unseen tasks: +5.70%</text>
-  <text x="490" y="458" font-size="11" fill="#2c3e50">- More robust on long-horizon trajectories vs baselines</text>
-
-  <!-- Source -->
-  <text x="450" y="510" text-anchor="middle" font-size="9" fill="#7f8c8d">Source: arXiv:2608.06346v1 (Tsinghua University + Tencent Hunyuan)</text>
+  <line x1="64" y1="548" x2="1136" y2="548" stroke="#DCE6DE"/>
+  <text class="serif" x="64" y="582" font-size="19" fill="#1D2721">调试不该等任务烧完再看黑匣子——错误要一路挂标签追踪。</text>
+  <text class="b" x="64" y="612">TrajErrBench：486 条人工标注失败轨迹（工具 400 条均 29.3 步 / 编码 86 条均 119.7 步）· 三人多数投票口径 · Micropaper</text>
 </svg>

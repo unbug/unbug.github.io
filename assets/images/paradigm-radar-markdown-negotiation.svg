@@ -1,49 +1,93 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
-  <rect width="1200" height="630" fill="#f5f7fa"/>
-  <text x="60" y="70" font-size="34" font-weight="bold" fill="#1f3a5f">Accept: text/markdown — 同一 URL，两种供给</text>
-  <text x="60" y="102" font-size="18" fill="#5a6b7d">HTTP 内容协商成为 Agent 时代的新接口（数据实测 2026-09-07）</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8E97A6; }
+      .rl { font-size: 15px; fill: #3F4A5A; }
+      .val { font-size: 22px; font-weight: 700; }
+      .b { font-size: 12px; fill: #98A1AE; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FAF7EF"/>
+    </linearGradient>
+    <linearGradient id="gHtml" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F4F45"/><stop offset="1" stop-color="#5E8272"/>
+    </linearGradient>
+    <linearGradient id="gMd" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D9503F"/><stop offset="1" stop-color="#E8B84B"/>
+    </linearGradient>
+    <linearGradient id="gHead" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D9503F"/><stop offset="1" stop-color="#7FA65A"/>
+    </linearGradient>
+    <linearGradient id="gPot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7FA65A"/><stop offset="1" stop-color="#4C7040"/>
+    </linearGradient>
+  </defs>
 
-  <!-- request -->
-  <rect x="60" y="150" width="240" height="120" rx="10" fill="#ffffff" stroke="#c3ced9"/>
-  <text x="80" y="185" font-size="18" font-weight="bold" fill="#1f3a5f">Agent 请求</text>
-  <text x="80" y="215" font-size="14" fill="#37474f">GET /docs/page</text>
-  <text x="80" y="240" font-size="14" fill="#0b6e4f">Accept: text/markdown</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1090" cy="110" r="150" fill="#7FA65A" opacity="0.07"/>
+  <circle cx="80" cy="620" r="120" fill="#D9503F" opacity="0.05"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gHead)"/>
 
-  <!-- server -->
-  <rect x="430" y="150" width="240" height="120" rx="10" fill="#ffffff" stroke="#c3ced9"/>
-  <text x="450" y="185" font-size="18" font-weight="bold" fill="#1f3a5f">网站服务器</text>
-  <text x="450" y="215" font-size="14" fill="#37474f">RFC 9110 / 7763 / 8288</text>
-  <text x="450" y="240" font-size="14" fill="#37474f">Vary: Accept</text>
+  <text class="k" x="64" y="84">AI 范式雷达 · 2026-09-07 · ACCEPT: TEXT/MARKDOWN</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1E2430">同一道菜，换盘子上</text>
+  <text x="64" y="158" font-size="15" fill="#5A6070">字节从 24,222 掉到 2,201 —— 不是压缩，是换了种盛法</text>
 
-  <line x1="300" y1="210" x2="425" y2="210" stroke="#8aa0b5" stroke-width="2" marker-end="url(#a)"/>
-  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#8aa0b5"/></marker></defs>
+  <!-- kitchen illustration: pot serving two plates -->
+  <g>
+    <path d="M 1004 92 q 56 -40 112 0" fill="none" stroke="#B9892F" stroke-width="3" opacity="0.55"/>
+    <path d="M 1018 100 q 42 -28 84 0" fill="none" stroke="#B9892F" stroke-width="3" opacity="0.4"/>
+    <path d="M 998 106 h 124 l -10 46 a 52 26 0 0 1 -104 0 z" fill="url(#gPot)"/>
+    <rect x="988" y="98" width="144" height="10" rx="5" fill="#2F4F45"/>
+    <circle cx="1060" cy="93" r="6" fill="#E8B84B"/>
+    <rect x="1016" y="172" width="92" height="30" rx="15" fill="url(#gMd)"/>
+    <text x="1062" y="192" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="700">-90.9%</text>
+    <text x="1062" y="222" text-anchor="middle" fill="#7FA65A" font-size="12">同一 URL，按需供料</text>
+  </g>
 
-  <!-- two responses -->
-  <rect x="800" y="120" width="340" height="90" rx="10" fill="#e8edf3" stroke="#c3ced9"/>
-  <text x="820" y="152" font-size="16" font-weight="bold" fill="#546e7a">Accept: text/html（人）</text>
-  <text x="820" y="182" font-size="15" fill="#546e7a">HTML 23,855 B / Claude 文档 476,665 B</text>
+  <!-- dumbbell rows: v -> x=330+(v/100)*560 -->
+  <g>
+    <rect x="176" y="212" width="884" height="76" fill="#7FA65A" opacity="0.08"/>
+    <text class="rl" x="160" y="256" text-anchor="end">acceptmarkdown 页</text>
+    <line x1="465" y1="250" x2="849" y2="250" stroke="#8FA79B" stroke-width="2.5"/>
+    <circle cx="849" cy="250" r="9" fill="none" stroke="#2F4F45" stroke-width="3"/>
+    <circle cx="465" cy="250" r="9" fill="#D9503F"/>
+    <text class="b" x="849" y="224" text-anchor="middle">HTML 24,222 B</text>
+    <text class="val" x="465" y="288" text-anchor="middle" fill="#D9503F">2,201 B</text>
+    <text class="val" x="1082" y="257" text-anchor="end" fill="#D9503F">省 90.9%</text>
 
-  <rect x="800" y="230" width="340" height="90" rx="10" fill="#e6f4ea" stroke="#8fc9a3"/>
-  <text x="820" y="262" font-size="16" font-weight="bold" fill="#0b6e4f">Accept: text/markdown（Agent）</text>
-  <text x="820" y="292" font-size="15" fill="#0b6e4f">Markdown 2,201 B（-90.8%）/ 16,629 B（-96.5%）</text>
+    <text class="rl" x="160" y="336" text-anchor="end">Anthropic 文档</text>
+    <line x1="871" y1="330" x2="900" y2="330" stroke="#8FA79B" stroke-width="2.5"/>
+    <circle cx="900" cy="330" r="9" fill="none" stroke="#2F4F45" stroke-width="3"/>
+    <circle cx="871" cy="330" r="9" fill="#D9503F"/>
+    <text class="b" x="888" y="304" text-anchor="middle">HTML 476,665 B</text>
+    <text class="val" x="857" y="368" text-anchor="end" fill="#D9503F">16,629 B</text>
+    <text class="val" x="1082" y="337" text-anchor="end" fill="#D9503F">省 96.5%</text>
 
-  <line x1="670" y1="180" x2="795" y2="165" stroke="#8aa0b5" stroke-width="2" marker-end="url(#a)"/>
-  <line x1="670" y1="240" x2="795" y2="275" stroke="#4caf7d" stroke-width="2" marker-end="url(#a)"/>
+    <rect x="176" y="386" width="884" height="76" fill="#E8B84B" opacity="0.10"/>
+    <text class="rl" x="160" y="430" text-anchor="end">语义化 HTML 页</text>
+    <line x1="465" y1="424" x2="396" y2="424" stroke="#8FA79B" stroke-width="2.5"/>
+    <circle cx="465" cy="424" r="9" fill="none" stroke="#2F4F45" stroke-width="3"/>
+    <circle cx="396" cy="424" r="9" fill="#B9892F"/>
+    <text class="b" x="465" y="398" text-anchor="middle">HTML 基线 100%</text>
+    <text class="val" x="380" y="462" text-anchor="end" fill="#B9892F">仅省 5%-20%</text>
+    <text x="1082" y="431" text-anchor="end" fill="#8A8578" font-size="13">干净页面不戏剧化（HN 评论实测）</text>
+  </g>
 
-  <!-- adoption bars -->
-  <text x="60" y="340" font-size="20" font-weight="bold" fill="#1f3a5f">谁在发这个头（acceptmarkdown.com/status，发起方维护）</text>
-  <rect x="60" y="360" width="520" height="110" rx="10" fill="#ffffff" stroke="#c3ced9"/>
-  <text x="80" y="392" font-size="15" fill="#0b6e4f" font-weight="bold">Supports x7</text>
-  <text x="80" y="418" font-size="14" fill="#37474f">Claude Code / Cursor / Copilot Chat+CLI / MS Copilot</text>
-  <text x="80" y="442" font-size="14" fill="#37474f">OpenClaw / OpenCode　Partial: Codex CLI（Link 头发现）</text>
+  <!-- supply side strip -->
+  <line x1="64" y1="500" x2="1136" y2="500" stroke="#E5E1D4" stroke-width="1"/>
+  <g>
+    <text x="64" y="542" font-size="26" font-weight="700" fill="#2F4F45">7 款</text>
+    <text x="64" y="564" font-size="12.5" fill="#8A8578">编码 Agent 已发该头部</text>
+    <text x="248" y="542" font-size="26" font-weight="700" fill="#2F4F45">3 家</text>
+    <text x="248" y="564" font-size="12.5" fill="#8A8578">头部托管平台默认供料</text>
+    <text x="470" y="542" font-size="26" font-weight="700" fill="#D9503F">0 家</text>
+    <text x="470" y="564" font-size="12.5" fill="#8A8578">消费级大产品支持</text>
+    <text x="690" y="542" font-size="26" font-weight="700" fill="#B9892F">1 处</text>
+    <text x="690" y="564" font-size="12.5" fill="#8A8578">Codex CLI 走 Link 头发现</text>
+    <path d="M 1042 520 h 58 l -8 34 a 24 12 0 0 1 -42 0 z" fill="url(#gPot)" opacity="0.85"/>
+    <rect x="1036" y="514" width="70" height="7" rx="3.5" fill="#2F4F45" opacity="0.85"/>
+  </g>
 
-  <rect x="620" y="360" width="520" height="110" rx="10" fill="#ffffff" stroke="#c3ced9"/>
-  <text x="640" y="392" font-size="15" fill="#b3543a" font-weight="bold">No（只抓 HTML）</text>
-  <text x="640" y="418" font-size="14" fill="#37474f">ChatGPT browse / Claude.ai web / Gemini web+CLI</text>
-  <text x="640" y="442" font-size="14" fill="#37474f">Aider / Cline / Devin —— 消费端全缺席 = 鸡蛋问题</text>
-
-  <!-- bottom signals -->
-  <rect x="60" y="500" width="1080" height="90" rx="10" fill="#fff8e6" stroke="#e0c37a"/>
-  <text x="80" y="532" font-size="16" font-weight="bold" fill="#8a6d1f">供给侧跟进：Cloudflare「Markdown for Agents」零配置 · Vercel / Netlify 文档实测已返回 text/markdown</text>
-  <text x="80" y="562" font-size="15" fill="#6d5a26">下一周期信号：消费端是否翻绿 · IETF 是否出草案 · 首个 Markdown 变体投毒案例（注入面未消毒即成入口）</text>
+  <text x="64" y="630" font-size="12.5" fill="#A29C88">字节数为 2026-09-07 本机 curl 实测；Agent 矩阵来自发起方 acceptmarkdown.com（利益相关）；消费端支持状态截至当日。</text>
 </svg>

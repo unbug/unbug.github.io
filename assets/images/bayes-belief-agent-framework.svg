@@ -1,76 +1,118 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620" font-family="Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
   <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4a5568"/>
-    </marker>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9A9086; }
+      .rl { font-size: 15px; fill: #4E463F; }
+      .val { font-size: 18px; font-weight: 700; fill: #1A1B1E; }
+      .b { font-size: 12px; fill: #A89E92; }
+      .chip { font-size: 12.5px; font-weight: 600; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F2EC"/>
+    </linearGradient>
+    <linearGradient id="gCrimson" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A63A50"/><stop offset="1" stop-color="#CE6B7E"/>
+    </linearGradient>
+    <linearGradient id="gAmber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D9822B"/><stop offset="1" stop-color="#EFB767"/>
+    </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2A8C82"/><stop offset="1" stop-color="#67BCB2"/>
+    </linearGradient>
+    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3E6FA8"/><stop offset="1" stop-color="#7BA0CC"/>
+    </linearGradient>
+    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B9892F"/><stop offset="1" stop-color="#DCB65F"/>
+    </linearGradient>
+    <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5C8A3C"/><stop offset="1" stop-color="#93B96D"/>
+    </linearGradient>
   </defs>
-  <rect width="960" height="620" fill="#f7fafc"/>
-  <text x="480" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#1a365d">BayesBeliefAgent 框架：后验门控的自适应重规划</text>
-  <text x="480" y="66" text-anchor="middle" font-size="14" fill="#4a5568">队友信念从被动上下文变为主动控制信号（arXiv:2608.18490）</text>
 
-  <!-- 左侧：流程 -->
-  <rect x="50" y="95" width="280" height="52" rx="8" fill="#2b6cb0"/>
-  <text x="190" y="126" text-anchor="middle" font-size="16" font-weight="bold" fill="#ffffff">观察队友动作</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1104" cy="106" r="140" fill="#A63A50" opacity="0.06"/>
+  <circle cx="80" cy="618" r="112" fill="#D9822B" opacity="0.06"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gCrimson)"/>
 
-  <line x1="190" y1="147" x2="190" y2="171" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2608.18490</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">幕布后得有人换场</text>
+  <text x="64" y="158" font-size="15" fill="#635A51">BayesBeliefAgent：贝叶斯追踪队友技能，动作与信念矛盾时才拉闸重排</text>
 
-  <rect x="50" y="175" width="280" height="64" rx="8" fill="#ebf8ff" stroke="#2b6cb0" stroke-width="2"/>
-  <text x="190" y="200" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a365d">贝叶斯追踪</text>
-  <text x="190" y="223" text-anchor="middle" font-size="13" fill="#2d3748">推断队友当前技能的后验</text>
+  <!-- theater motif: proscenium + curtain + spotlight -->
+  <g>
+    <path d="M 1010 74 q -22 44 0 88 q 22 -44 0 -88" fill="url(#gCrimson)" opacity="0.5"/>
+    <path d="M 1034 74 q -20 44 0 88 q 20 -44 0 -88" fill="url(#gCrimson)" opacity="0.32"/>
+    <path d="M 1130 74 q 22 44 0 88 q -22 -44 0 -88" fill="url(#gCrimson)" opacity="0.5"/>
+    <path d="M 1106 74 q 20 44 0 88 q -20 -44 0 -88" fill="url(#gCrimson)" opacity="0.32"/>
+    <rect x="1004" y="66" width="132" height="10" rx="3" fill="url(#gGold)"/>
+    <path d="M 1070 162 l -30 46 h 60 z" fill="#D9822B" opacity="0.18"/>
+    <text class="b" x="1070" y="224" text-anchor="middle">幕布后：贝叶斯追光</text>
+  </g>
 
-  <line x1="190" y1="239" x2="190" y2="263" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- three-act flow -->
+  <g>
+    <rect x="64" y="196" width="240" height="96" fill="#3E6FA8" opacity="0.08"/>
+    <text class="serif" x="82" y="236" font-size="20" font-weight="700" fill="#33608C">第一幕 · 追踪</text>
+    <text x="82" y="262" font-size="12.5" fill="#635A51">贝叶斯后验更新信念</text>
 
-  <rect x="50" y="267" width="280" height="64" rx="8" fill="#ebf8ff" stroke="#2b6cb0" stroke-width="2"/>
-  <text x="190" y="292" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a365d">矛盾检测</text>
-  <text x="190" y="315" text-anchor="middle" font-size="13" fill="#2d3748">实际动作与推断技能是否冲突</text>
+    <path d="M 312 244 h 34" stroke="#A89E92" stroke-width="2.5" marker-end="none"/>
+    <path d="M 342 238 l 10 6 l -10 6" fill="none" stroke="#A89E92" stroke-width="2.5"/>
 
-  <line x1="190" y1="331" x2="190" y2="355" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="360" y="196" width="240" height="96" fill="#D9822B" opacity="0.09"/>
+    <text class="serif" x="378" y="236" font-size="20" font-weight="700" fill="#B0661C">第二幕 · 对词</text>
+    <text x="378" y="262" font-size="12.5" fill="#635A51">动作与技能是否矛盾</text>
 
-  <rect x="50" y="359" width="280" height="52" rx="8" fill="#1a365d"/>
-  <text x="190" y="390" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">门控中断：仅矛盾时触发</text>
+    <path d="M 608 244 h 34" stroke="#A89E92" stroke-width="2.5"/>
+    <path d="M 638 238 l 10 6 l -10 6" fill="none" stroke="#A89E92" stroke-width="2.5"/>
 
-  <line x1="190" y1="411" x2="190" y2="451" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
-  <text x="200" y="436" font-size="13" font-weight="bold" fill="#c05621">矛盾</text>
+    <rect x="656" y="196" width="240" height="96" fill="#A63A50" opacity="0.09"/>
+    <text class="serif" x="674" y="236" font-size="20" font-weight="700" fill="#8F2F44">第三幕 · 门控</text>
+    <text x="674" y="262" font-size="12.5" fill="#635A51">矛盾才断，触发重规划</text>
 
-  <line x1="330" y1="385" x2="356" y2="385" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
-  <text x="343" y="377" text-anchor="middle" font-size="12" fill="#4a5568">无矛盾</text>
-  <rect x="360" y="359" width="150" height="52" rx="8" fill="#ffffff" stroke="#a0aec0" stroke-width="1.5"/>
-  <text x="435" y="390" text-anchor="middle" font-size="12" fill="#4a5568">继续当前技能</text>
+    <rect x="916" y="252" width="220" height="40" fill="#2A8C82" opacity="0.1"/>
+    <text x="928" y="278" font-size="13" fill="#1F6B62" font-weight="600">被动上下文 → 控制信号</text>
+  </g>
 
-  <rect x="50" y="455" width="280" height="64" rx="8" fill="#ed8936"/>
-  <text x="190" y="480" text-anchor="middle" font-size="16" font-weight="bold" fill="#ffffff">重规划</text>
-  <text x="190" y="503" text-anchor="middle" font-size="13" fill="#ffffff">GPT-4o 分层规划器生成新技能计划</text>
+  <!-- dumbbells: belief-action gap and co-play -->
+  <g>
+    <text class="rl" x="64" y="356">Open 布局 · ProAgent → BayesBeliefAgent</text>
 
-  <path d="M 190 519 L 190 549 L 25 549 L 25 121 L 46 121" fill="none" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
-  <text x="60" y="542" font-size="12" fill="#4a5568">执行新计划并继续观察</text>
+    <rect x="64" y="372" width="640" height="52" fill="#3E6FA8" opacity="0.07"/>
+    <text class="rl" x="248" y="404" text-anchor="end">belief-action gap</text>
+    <line x1="300" y1="398" x2="452" y2="398" stroke="url(#gCrimson)" stroke-width="3.5"/>
+    <circle cx="452" cy="398" r="7" fill="#FFFFFF" stroke="#A63A50" stroke-width="3"/>
+    <circle cx="300" cy="398" r="9" fill="url(#gCrimson)"/>
+    <text class="val" x="478" y="405" fill="#A63A50">0.41 → 0.20</text>
 
-  <!-- 右侧：belief-action gap 对比 -->
-  <rect x="530" y="95" width="410" height="380" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
-  <text x="550" y="127" font-size="16" font-weight="bold" fill="#1a365d">belief-action gap（越低越好）</text>
+    <rect x="64" y="432" width="640" height="52" fill="#2A8C82" opacity="0.08"/>
+    <text class="rl" x="248" y="464" text-anchor="end">Comp@3 互补性</text>
+    <line x1="300" y1="458" x2="492" y2="458" stroke="url(#gTeal)" stroke-width="3.5"/>
+    <circle cx="300" cy="458" r="7" fill="#FFFFFF" stroke="#2A8C82" stroke-width="3"/>
+    <circle cx="492" cy="458" r="9" fill="url(#gTeal)"/>
+    <text class="val" x="518" y="465" fill="#2A8C82">0.39 → 0.66</text>
 
-  <text x="550" y="160" font-size="14" font-weight="bold" fill="#2d3748">Open 布局</text>
-  <text x="610" y="182" text-anchor="end" font-size="12" fill="#4a5568">ProAgent</text>
-  <rect x="620" y="168" width="172" height="18" fill="#ed8936"/>
-  <text x="800" y="182" font-size="13" font-weight="bold" fill="#c05621">0.41</text>
-  <text x="610" y="212" text-anchor="end" font-size="12" fill="#4a5568">BayesBeliefAgent</text>
-  <rect x="620" y="198" width="84" height="18" fill="#2b6cb0"/>
-  <text x="712" y="212" font-size="13" font-weight="bold" fill="#2b6cb0">0.20</text>
+    <text class="b" x="64" y="512">Ring 布局 gap 0.38 → 0.28 · 重复技能率 0.30 → 0.15 · 技能识别 0.79 对 0.78，几乎持平</text>
+  </g>
 
-  <text x="550" y="252" font-size="14" font-weight="bold" fill="#2d3748">Ring 布局</text>
-  <text x="610" y="274" text-anchor="end" font-size="12" fill="#4a5568">ProAgent</text>
-  <rect x="620" y="260" width="160" height="18" fill="#ed8936"/>
-  <text x="788" y="274" font-size="13" font-weight="bold" fill="#c05621">0.38</text>
-  <text x="610" y="304" text-anchor="end" font-size="12" fill="#4a5568">BayesBeliefAgent</text>
-  <rect x="620" y="290" width="118" height="18" fill="#2b6cb0"/>
-  <text x="746" y="304" font-size="13" font-weight="bold" fill="#2b6cb0">0.28</text>
+  <!-- replanning big numbers -->
+  <g>
+    <rect x="792" y="372" width="344" height="112" fill="#B9892F" opacity="0.09"/>
+    <text class="serif" x="812" y="424" font-size="30" font-weight="700" fill="#8A6620">少 20-80 倍</text>
+    <text x="812" y="452" font-size="12.5" fill="#635A51">重规划 1.8-3.0 次/局，对照 15-169 次</text>
+    <text class="serif" x="812" y="474" font-size="13" fill="#8F2F44">平均奖励相当，门控只省场次</text>
+  </g>
 
-  <text x="550" y="336" font-size="12" fill="#4a5568">技能识别准确率：0.79 vs 0.78（几乎相同）</text>
-  <text x="550" y="356" font-size="12" fill="#4a5568">差距在执行：信念是否被用作控制信号</text>
-
-  <line x1="550" y1="374" x2="920" y2="374" stroke="#e2e8f0" stroke-width="1.5"/>
-  <text x="550" y="400" font-size="14" font-weight="bold" fill="#1a365d">每 episode 重规划次数（Open 布局）</text>
-  <text x="550" y="424" font-size="12" fill="#4a5568">Full 1.8-3.0    Periodic-10 15-51    Compl./held 50-169</text>
-  <text x="550" y="448" font-size="13" font-weight="bold" fill="#2b6cb0">平均奖励相当，重规划次数少 20-80 倍</text>
-
-  <text x="480" y="580" text-anchor="middle" font-size="12" fill="#718096">BayesBeliefAgent：贝叶斯追踪 - 矛盾检测 - 门控中断 - 重规划；数据来自论文 Table 2 与重规划效率表</text>
+  <line x1="64" y1="548" x2="1136" y2="548" stroke="#E9E2D6"/>
+  <g>
+    <rect x="64" y="566" width="92" height="28" rx="14" fill="url(#gGreen)" opacity="0.2"/>
+    <text x="110" y="585" text-anchor="middle" class="chip" fill="#476E2E">GPT-4o 分层</text>
+    <rect x="170" y="566" width="118" height="28" rx="14" fill="url(#gAmber)" opacity="0.2"/>
+    <text x="229" y="585" text-anchor="middle" class="chip" fill="#B0661C">Overcooked ×4</text>
+    <rect x="302" y="566" width="112" height="28" rx="14" fill="url(#gBlue)" opacity="0.18"/>
+    <text x="358" y="585" text-anchor="middle" class="chip" fill="#33608C">未见过的队友</text>
+  </g>
+  <text class="serif" x="64" y="636" font-size="18" fill="#1A1B1E">问题不在看不看得穿队友，而在信念有没有拿去控场。</text>
+  <text class="b" x="1136" y="636" text-anchor="end">Forced Coordination 收益有限 · GPT-5.2 敏感性互有胜负 · 预印本未经同行评审 · Micropaper</text>
 </svg>

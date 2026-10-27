@@ -1,51 +1,100 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" font-family="Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif">
-  <rect width="960" height="640" fill="#ffffff"/>
-  <text x="480" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a2e">记忆库原封不动，Agent 为何照样失忆：持久性取决于表示格式</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #A3A89C; }
+      .rl { font-size: 15px; fill: #33504A; }
+      .val { font-size: 22px; font-weight: 700; }
+      .b { font-size: 12px; fill: #A5ABA0; }
+      .hd { font-size: 12.5px; letter-spacing: 2px; fill: #7E8B85; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FBF6EC"/>
+    </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2E7D6B"/><stop offset="1" stop-color="#6FAE9C"/>
+    </linearGradient>
+    <linearGradient id="gRust" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B5543B"/><stop offset="1" stop-color="#DB8A6E"/>
+    </linearGradient>
+    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E0B158"/><stop offset="1" stop-color="#F0CD8A"/>
+    </linearGradient>
+    <linearGradient id="gInk" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#34495E"/><stop offset="1" stop-color="#5E7A94"/>
+    </linearGradient>
+  </defs>
 
-  <!-- panel 1: four representations -->
-  <rect x="40" y="56" width="880" height="196" rx="8" fill="#eef4ff" stroke="#3b6ea5" stroke-width="2"/>
-  <text x="60" y="84" font-size="16" font-weight="bold" fill="#1a1a2e">同一段历史逐字保留，换写入模型后的精度变化</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1096" cy="112" r="150" fill="#B5543B" opacity="0.05"/>
+  <circle cx="84" cy="618" r="120" fill="#2E7D6B" opacity="0.06"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gRust)"/>
 
-  <rect x="60" y="100" width="400" height="60" rx="6" fill="#ffffff" stroke="#2e7d32"/>
-  <text x="80" y="124" font-size="14" font-weight="bold" fill="#2e7d32">KG-fixed 固定 schema 知识图谱</text>
-  <text x="80" y="146" font-size="13" fill="#333">换 writer 后仅 +0.0004 &#177; 0.0020，几乎零损耗</text>
+  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2609.05339 · MEMORY PORTABILITY</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#232B2A">记忆原封不动，照样失忆</text>
+  <text x="64" y="158" font-size="15" fill="#5F6B66">换模型后 48 条历史逐字未变，精度照样摆动</text>
 
-  <rect x="500" y="100" width="400" height="60" rx="6" fill="#ffffff" stroke="#c62828"/>
-  <text x="520" y="124" font-size="14" font-weight="bold" fill="#c62828">NOTES 模型压缩笔记</text>
-  <text x="520" y="146" font-size="13" fill="#333">随迁移方向摆动 +9.91 或 -13.28 个百分点</text>
+  <!-- dumbbell rows: hollow=换 writer 前基线位 x=430, 左=变差 右=变好 -->
+  <g>
+    <text class="hd" x="285" y="216" text-anchor="end">迁移方向</text>
+    <text class="hd" x="430" y="216" text-anchor="middle">不动</text>
+    <text class="hd" x="640" y="216">换 writer 后精度变化（百分点）</text>
 
-  <rect x="60" y="172" width="400" height="60" rx="6" fill="#ffffff" stroke="#ef6c00"/>
-  <text x="80" y="196" font-size="14" font-weight="bold" fill="#ef6c00">RAG 混版索引（50/50）</text>
-  <text x="80" y="218" font-size="13" fill="#333">只拿到 4.96 分提升，半途迁移损失大半</text>
+    <rect x="170" y="238" width="620" height="46" rx="10" fill="#2E7D6B" opacity="0.07"/>
+    <text class="rl" x="186" y="267">NOTES 变好向</text>
+    <line x1="430" y1="261" x2="516" y2="261" stroke="#9AA79F" stroke-width="2.5"/>
+    <circle cx="430" cy="261" r="8" fill="none" stroke="#8A938C" stroke-width="2.5"/>
+    <circle cx="516" cy="261" r="9" fill="url(#gTeal)"/>
+    <text class="val" x="540" y="268" fill="#2E7D6B">+9.91</text>
 
-  <rect x="500" y="172" width="400" height="60" rx="6" fill="#ffffff" stroke="#1565c0"/>
-  <text x="520" y="196" font-size="14" font-weight="bold" fill="#1565c0">RAG 全量 re-embedding</text>
-  <text x="520" y="218" font-size="13" fill="#333">提升 11.90 分，向量空间必须整体迁移</text>
+    <rect x="170" y="296" width="620" height="46" rx="10" fill="#B5543B" opacity="0.07"/>
+    <text class="rl" x="186" y="325">NOTES 变差向</text>
+    <line x1="329" y1="319" x2="430" y2="319" stroke="#9AA79F" stroke-width="2.5"/>
+    <circle cx="329" cy="319" r="9" fill="url(#gRust)"/>
+    <circle cx="430" cy="319" r="8" fill="none" stroke="#8A938C" stroke-width="2.5"/>
+    <text class="val" x="309" y="326" fill="#B5543B" text-anchor="end">−13.28</text>
 
-  <!-- panel 2: loss attribution -->
-  <rect x="40" y="268" width="430" height="150" rx="8" fill="#fff8e1" stroke="#f9a825" stroke-width="2"/>
-  <text x="60" y="296" font-size="16" font-weight="bold" fill="#1a1a2e">损失归因（诊断分解）</text>
-  <text x="60" y="324" font-size="14" fill="#333">NOTES：80%（0.467 &#177; 0.014）</text>
-  <text x="76" y="344" font-size="13" fill="#555">损失来自初始构建时就丢了信息</text>
-  <text x="60" y="374" font-size="14" fill="#333">RAG：81%（0.364 &#177; 0.012）</text>
-  <text x="76" y="394" font-size="13" fill="#555">损失来自检索失败，不是生成出错</text>
+    <rect x="170" y="354" width="620" height="46" rx="10" fill="#34495E" opacity="0.06"/>
+    <text class="rl" x="186" y="383">KG-fixed</text>
+    <line x1="427" y1="377" x2="433" y2="377" stroke="#9AA79F" stroke-width="2.5"/>
+    <circle cx="427" cy="377" r="8" fill="none" stroke="#8A938C" stroke-width="2.5"/>
+    <circle cx="433" cy="377" r="9" fill="url(#gInk)"/>
+    <text class="val" x="456" y="384" fill="#34495E" font-size="19">+0.0004 ± 0.0020</text>
+    <text class="b" x="660" y="383">几乎零损耗</text>
+  </g>
 
-  <!-- panel 3: repair -->
-  <rect x="490" y="268" width="430" height="150" rx="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
-  <text x="510" y="296" font-size="16" font-weight="bold" fill="#1a1a2e">修复实验（目标：恢复 90% 性能）</text>
-  <text x="510" y="324" font-size="14" fill="#c62828">只改记忆库 store-only：48 例全部失败</text>
-  <text x="526" y="344" font-size="13" fill="#555">笔记坏了很难就修笔记</text>
-  <text x="510" y="374" font-size="14" fill="#2e7d32">保留原始历史重写：一个方向 34/48 成功</text>
-  <text x="526" y="394" font-size="13" fill="#555">找回原始证据重写才有效</text>
+  <!-- post office illustration: envelope + suitcase -->
+  <g>
+    <rect x="880" y="252" width="130" height="86" rx="10" fill="url(#gGold)"/>
+    <path d="M 880 262 l 65 48 l 65 -48" fill="none" stroke="#FBF6EC" stroke-width="5"/>
+    <rect x="1024" y="286" width="96" height="70" rx="10" fill="url(#gInk)"/>
+    <rect x="1056" y="274" width="32" height="16" rx="8" fill="none" stroke="#34495E" stroke-width="5"/>
+    <rect x="1036" y="306" width="26" height="18" rx="3" fill="#E0B158"/>
+    <path d="M 962 366 q 40 26 96 22" fill="none" stroke="#B5543B" stroke-width="3" stroke-dasharray="7 6"/>
+    <path d="M 1052 382 l 14 10 l -16 6 z" fill="#B5543B"/>
+    <text class="hd" x="990" y="420" text-anchor="middle">记忆搬家</text>
+  </g>
 
-  <!-- takeaway -->
-  <rect x="40" y="434" width="880" height="78" rx="8" fill="#1a1a2e"/>
-  <text x="60" y="464" font-size="15" font-weight="bold" fill="#ffffff">核心判断：记忆工程的瓶颈正从&#8220;存得下&#8221;转向&#8220;换得起&#8221;</text>
-  <text x="60" y="492" font-size="13" fill="#cfd8ea">结构化的固定 schema 可迁移，模型写的笔记与模型强耦合；升级前须做方向性迁移测试并保留原始历史</text>
+  <!-- loss bars -->
+  <g>
+    <rect x="64" y="446" width="480" height="46" rx="10" fill="#B5543B" opacity="0.07"/>
+    <text class="rl" x="84" y="475">NOTES 损失在构建</text>
+    <rect x="272" y="461" width="192" height="14" rx="7" fill="url(#gRust)"/>
+    <text class="val" x="476" y="476" fill="#B5543B" font-size="20">80%</text>
 
-  <!-- boundary -->
-  <rect x="40" y="528" width="880" height="76" rx="8" fill="#ffffff" stroke="#9e9e9e" stroke-width="1.5" stroke-dasharray="6 4"/>
-  <text x="60" y="556" font-size="13" font-weight="bold" fill="#616161">边界条件</text>
-  <text x="60" y="578" font-size="12.5" fill="#616161">48 条合成历史 + 两个 sub-10B 开源权重模型 + exact scoring；预印本未经同行评审，作者两人无机构标注</text>
-  <text x="60" y="596" font-size="12.5" fill="#616161">方向性结论仅测两个迁移方向&#8212;&#8212;arXiv:2609.05339，2026-09-04 提交</text>
+    <rect x="64" y="502" width="480" height="46" rx="10" fill="#E0B158" opacity="0.08"/>
+    <text class="rl" x="84" y="531">RAG 损失在检索</text>
+    <rect x="272" y="517" width="194" height="14" rx="7" fill="url(#gGold)"/>
+    <text class="val" x="476" y="532" fill="#A87C28" font-size="20">81%</text>
+  </g>
+
+  <!-- repair anchor -->
+  <g>
+    <text class="serif" x="1136" y="496" text-anchor="end" font-size="28" font-weight="700" fill="#232B2A">留原始历史重写：<tspan fill="#2E7D6B">34/48</tspan> 例恢复</text>
+    <text class="b" x="1136" y="520" text-anchor="end">只修笔记的 store-only 修复：48 例全部不达标</text>
+  </g>
+
+  <line x1="64" y1="572" x2="1136" y2="572" stroke="#E6E0CC"/>
+  <text class="serif" x="64" y="608" font-size="17" fill="#33504A">记忆的持久性取决于表示格式，而不是存储本身。</text>
+  <text class="b" x="64" y="638">48 条合成历史 · sub-10B 开源模型 · exact scoring · 预印本未经同行评审 · Micropaper</text>
 </svg>

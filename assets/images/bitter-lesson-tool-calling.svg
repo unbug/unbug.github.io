@@ -1,58 +1,105 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" font-family="Helvetica, Arial, sans-serif">
-  <rect width="960" height="540" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9C9484; }
+      .rl { font-size: 15px; fill: #474C54; }
+      .val { font-size: 18px; font-weight: 700; fill: #1A1B1E; }
+      .b { font-size: 12px; fill: #A5A296; }
+      .chip { font-size: 12.5px; font-weight: 600; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F5F2EA"/>
+    </linearGradient>
+    <linearGradient id="gRose" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C05A6E"/><stop offset="1" stop-color="#E491A0"/>
+    </linearGradient>
+    <linearGradient id="gGlacier" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3E7EA6"/><stop offset="1" stop-color="#82B9DA"/>
+    </linearGradient>
+    <linearGradient id="gPine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F6E5E"/><stop offset="1" stop-color="#6FAE94"/>
+    </linearGradient>
+    <linearGradient id="gWheat" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B9892F"/><stop offset="1" stop-color="#DCB65F"/>
+    </linearGradient>
+    <linearGradient id="gClay" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B5442E"/><stop offset="1" stop-color="#D9704F"/>
+    </linearGradient>
+  </defs>
 
-  <!-- title -->
-  <text x="30" y="34" font-size="16" font-weight="bold" fill="#0f172a">工具调用的苦涩教训：JSON vs PTC</text>
-  <text x="930" y="34" text-anchor="end" font-size="11" fill="#64748b">arXiv:2608.06370 · PricewaterhouseCoopers U.S.A.</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1108" cy="108" r="140" fill="#3E7EA6" opacity="0.06"/>
+  <circle cx="70" cy="625" r="115" fill="#C05A6E" opacity="0.05"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gClay)"/>
 
-  <!-- left column: JSON tool calling -->
-  <rect x="30" y="64" width="410" height="52" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
-  <text x="235" y="86" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">JSON tool calling（原生范式）</text>
-  <text x="235" y="104" text-anchor="middle" font-size="11" fill="#1e40af">模型输出 JSON 函数调用，逐次往返执行</text>
+  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2608.06370 · 普华永道美国</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">雪道越长越占优</text>
+  <text x="64" y="158" font-size="15" fill="#5B6068">BFCL v4 上 14 个模型对比：JSON 逐段滑，PTC 一段代码滑完全程</text>
 
-  <rect x="30" y="132" width="410" height="140" rx="8" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
-  <text x="50" y="160" font-size="12" font-weight="bold" fill="#0f172a">每个环节多一次推理回合</text>
-  <text x="50" y="180" font-size="11" fill="#475569">长链任务中往返开销随链条累积</text>
-  <rect x="50" y="200" width="370" height="52" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
-  <text x="235" y="222" text-anchor="middle" font-size="12" font-weight="bold" fill="#991b1b">并行扇出存在结构性硬上限</text>
-  <text x="235" y="240" text-anchor="middle" font-size="11" fill="#991b1b">Claude Sonnet 5：N = 70–72 起丢弃调用</text>
+  <!-- right motif: ski slope, two trails -->
+  <g>
+    <path d="M 965 200 Q 1055 210 1085 275 Q 1115 340 1155 372" stroke="url(#gRose)" stroke-width="4" fill="none" stroke-dasharray="10 8" opacity="0.8"/>
+    <path d="M 975 210 Q 1030 245 1042 300 Q 1054 352 1108 380" stroke="url(#gGlacier)" stroke-width="4.5" fill="none"/>
+    <circle cx="1108" cy="380" r="7" fill="url(#gGlacier)"/>
+    <path d="M 962 196 l 118 22 l -32 22 z" fill="url(#gWheat)" opacity="0.4"/>
+    <text class="b" x="1058" y="412" text-anchor="middle">实线 PTC · 虚线 JSON 逐段往返</text>
+  </g>
 
-  <!-- right column: PTC -->
-  <rect x="520" y="64" width="410" height="52" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
-  <text x="725" y="86" text-anchor="middle" font-size="14" font-weight="bold" fill="#4c1d95">程序化工具调用（PTC）</text>
-  <text x="725" y="104" text-anchor="middle" font-size="11" fill="#6d28d9">模型写 Python 代码，调用类型化 stub</text>
+  <!-- long-chain slope: the main visual -->
+  <g>
+    <rect x="64" y="206" width="740" height="88" fill="#3E7EA6" opacity="0.07"/>
+    <text class="rl" x="252" y="240" text-anchor="end">链式任务 · 12 步以上</text>
+    <text class="b" x="252" y="258" text-anchor="end">JSON 基线 → PTC</text>
+    <text class="val" x="288" y="246" fill="#8A94A0" font-size="24">JSON 基线</text>
+    <line x1="405" y1="240" x2="560" y2="240" stroke="url(#gGlacier)" stroke-width="3.5"/>
+    <circle cx="405" cy="240" r="7" fill="#FFFFFF" stroke="#8A94A0" stroke-width="3"/>
+    <circle cx="560" cy="240" r="11" fill="url(#gGlacier)"/>
+    <text class="serif" x="590" y="252" font-size="30" font-weight="700" fill="#2F5F80">+18.8%</text>
+    <text class="b" x="700" y="248">绝对差距 · 短链无此效应</text>
+    <text class="b" x="288" y="276">JSON 每个环节多一次推理回合，往返开销随链条累积</text>
+  </g>
 
-  <rect x="520" y="132" width="410" height="140" rx="8" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
-  <text x="540" y="160" font-size="12" font-weight="bold" fill="#0f172a">一段程序承载长链与高扇出</text>
-  <text x="540" y="180" font-size="11" fill="#475569">代码内循环调用工具，无需逐环节往返</text>
-  <rect x="540" y="200" width="370" height="52" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
-  <text x="725" y="222" text-anchor="middle" font-size="12" font-weight="bold" fill="#166534">并行扇出无硬上限</text>
-  <text x="725" y="240" text-anchor="middle" font-size="11" fill="#166534">N = 100 仍保持 100% 枚举准确率</text>
+  <!-- parallel fan-out rows -->
+  <g>
+    <rect x="64" y="312" width="740" height="70" fill="#B5442E" opacity="0.07"/>
+    <text class="rl" x="252" y="345" text-anchor="end">并行扇出 · 硬上限</text>
+    <text class="b" x="252" y="363" text-anchor="end">Claude Sonnet 5</text>
+    <text class="val" x="288" y="352" fill="#B5442E" font-size="20">N = 70–72 起丢弃调用</text>
+    <rect x="590" y="330" width="176" height="30" rx="15" fill="url(#gPine)" opacity="0.2"/>
+    <text x="678" y="350" text-anchor="middle" class="chip" fill="#26584A">PTC：N=100 仍 100%</text>
 
-  <!-- center VS -->
-  <text x="480" y="195" text-anchor="middle" font-size="20" font-weight="bold" fill="#94a3b8">VS</text>
-  <text x="480" y="290" text-anchor="middle" font-size="11" fill="#64748b">链式任务 ≥12 步：PTC 领先 18.8%（绝对差距）</text>
+    <rect x="64" y="398" width="740" height="70" fill="#2F6E5E" opacity="0.07"/>
+    <text class="rl" x="252" y="431" text-anchor="end">上下文污染</text>
+    <text class="b" x="252" y="449" text-anchor="end">注入大量无关内容</text>
+    <text class="val" x="288" y="438" fill="#2F6E5E" font-size="20">PTC +5.5%</text>
+    <text class="val" x="430" y="438" fill="#B5442E" font-size="20">JSON −2.3%</text>
+    <text class="b" x="590" y="437">文件系统发现式方法退化 32%</text>
+  </g>
 
-  <!-- stats band -->
-  <rect x="30" y="300" width="290" height="96" rx="8" fill="#f1f5f9" stroke="#0f172a" stroke-width="1.5"/>
-  <text x="175" y="340" text-anchor="middle" font-size="22" font-weight="bold" fill="#0f172a">11 / 14</text>
-  <text x="175" y="364" text-anchor="middle" font-size="11" fill="#334155">模型上 PTC 持平或更优（逐模型口径）</text>
-  <text x="175" y="382" text-anchor="middle" font-size="10" fill="#64748b">BFCL v4 · 309 条子集 · 8 类任务</text>
+  <!-- right stats -->
+  <g>
+    <rect x="836" y="452" width="145" height="76" fill="#B9892F" opacity="0.09"/>
+    <text class="serif" x="852" y="484" font-size="22" font-weight="700" fill="#8A6620">11 / 14</text>
+    <text x="852" y="508" font-size="12.5" fill="#6B7078">模型持平或更优</text>
 
-  <rect x="335" y="300" width="290" height="96" rx="8" fill="#f1f5f9" stroke="#0f172a" stroke-width="1.5"/>
-  <text x="480" y="340" text-anchor="middle" font-size="22" font-weight="bold" fill="#4c1d95">+10.6%</text>
-  <text x="480" y="364" text-anchor="middle" font-size="11" fill="#334155">GPT-5.6 家族最大绝对提升（Sol / Terra）</text>
-  <text x="480" y="382" text-anchor="middle" font-size="10" fill="#64748b">三个最新变体全部为正：+4.2% ~ +10.6%</text>
+    <rect x="997" y="452" width="143" height="76" fill="#C05A6E" opacity="0.1"/>
+    <text class="serif" x="1013" y="484" font-size="22" font-weight="700" fill="#9E4457">+10.6%</text>
+    <text x="1013" y="508" font-size="12.5" fill="#6B7078">GPT-5.6 家族最大增益</text>
+  </g>
 
-  <rect x="640" y="300" width="290" height="96" rx="8" fill="#f1f5f9" stroke="#0f172a" stroke-width="1.5"/>
-  <text x="785" y="340" text-anchor="middle" font-size="20" font-weight="bold" fill="#0f172a">77.0 vs 78.6</text>
-  <text x="785" y="364" text-anchor="middle" font-size="11" font-weight="bold" fill="#b91c1c">全模型宏平均：PTC 反而略低</text>
-  <text x="785" y="382" text-anchor="middle" font-size="10" fill="#64748b">差距主要来自三个 OpenAI 旧模型的 \n 编码失败</text>
+  <!-- bottom chips -->
+  <line x1="64" y1="492" x2="804" y2="492" stroke="#E8E3D2"/>
+  <g>
+    <rect x="64" y="514" width="196" height="28" rx="14" fill="url(#gRose)" opacity="0.2"/>
+    <text x="162" y="533" text-anchor="middle" class="chip" fill="#9E4457">宏平均 77.0 vs 78.6</text>
+    <text class="b" x="272" y="533">全模型口径 PTC 反而略低 · 与逐模型方向相反</text>
 
-  <!-- bottom band: benchmark caveat -->
-  <rect x="30" y="420" width="900" height="96" rx="10" fill="#f1f5f9" stroke="#0f172a" stroke-width="2"/>
-  <text x="480" y="450" text-anchor="middle" font-size="14" font-weight="bold" fill="#0f172a">BFCL v4 · echo-return stub：函数原样返回参数，不执行真实 API</text>
-  <text x="480" y="476" text-anchor="middle" font-size="12" fill="#334155">测的是参数序列化准确率，不是端到端工具执行正确性；链式输入 token 为 JSON 的 1.5 倍，高扇出时开销反转</text>
-  <text x="480" y="498" text-anchor="middle" font-size="11" fill="#64748b">上下文污染场景：PTC 平均 +5.5%，JSON 基线 −2.3%，文件系统发现式方法退化 32%</text>
+    <rect x="64" y="552" width="132" height="28" rx="14" fill="url(#gWheat)" opacity="0.24"/>
+    <text x="130" y="571" text-anchor="middle" class="chip" fill="#7A5A14">输入 token ×1.5</text>
+    <text class="b" x="208" y="571">链式消融口径 · 高扇出时开销反转</text>
+  </g>
+
+  <text class="serif" x="64" y="618" font-size="18" fill="#1A1B1E">代际决定谁吃红利：三个 GPT-5.6 变体全部为正（+4.2% 至 +10.6%）。</text>
+  <text class="b" x="1136" y="644" text-anchor="end">echo-return stub · 测参数序列化准确率 · 消融每条件 n=31–52 · Micropaper</text>
 </svg>

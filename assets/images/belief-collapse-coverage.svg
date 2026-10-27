@@ -1,34 +1,112 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
-  <rect width="1200" height="630" fill="#0f1420"/>
-  <text x="60" y="64" fill="#e8ecf4" font-size="32" font-weight="bold">10 个 agent 的事实讨论：托越多，错误答案收尾率越高</text>
-  <text x="60" y="98" fill="#8fa1bd" font-size="18">arXiv 2610.22138 预印本 · 6 模型 x 3 数据集 · 托只是反复坚称，无其他攻击手段</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #7E93A0; }
+      .rl { font-size: 15px; fill: #3E5560; }
+      .b { font-size: 12px; fill: #8FA2AC; }
+      .stat { font-size: 28px; font-weight: 700; fill: #17303B; }
+      .val { font-size: 20px; font-weight: 700; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EFF4F4"/>
+    </linearGradient>
+    <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F7D61"/><stop offset="1" stop-color="#6FB58F"/>
+    </linearGradient>
+    <linearGradient id="gAmber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D98A1F"/><stop offset="1" stop-color="#F2BE5C"/>
+    </linearGradient>
+    <linearGradient id="gRed" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C0392B"/><stop offset="1" stop-color="#E8785C"/>
+    </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0F7B8A"/><stop offset="1" stop-color="#4FB8C6"/>
+    </linearGradient>
+    <linearGradient id="gViolet" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6C5A9E"/><stop offset="1" stop-color="#9F8FCB"/>
+    </linearGradient>
+  </defs>
 
-  <!-- left bars: finish-with-wrong rate -->
-  <line x1="110" y1="500" x2="560" y2="500" stroke="#3a4a66" stroke-width="2"/>
-  <!-- 0.6 -->
-  <rect x="150" y="497" width="90" height="3" fill="#81c784"/>
-  <text x="195" y="478" fill="#81c784" font-size="24" text-anchor="middle" font-weight="bold">0.6%</text>
-  <text x="195" y="530" fill="#8fa1bd" font-size="17" text-anchor="middle">无托</text>
-  <!-- 44.8 -->
-  <rect x="300" y="301" width="90" height="199" fill="#ffb74d"/>
-  <text x="345" y="284" fill="#ffb74d" font-size="24" text-anchor="middle" font-weight="bold">44.8%</text>
-  <text x="345" y="530" fill="#8fa1bd" font-size="17" text-anchor="middle">1 个托</text>
-  <!-- 60.5 -->
-  <rect x="450" y="230" width="90" height="270" fill="#e57373"/>
-  <text x="495" y="213" fill="#e57373" font-size="24" text-anchor="middle" font-weight="bold">60.5%</text>
-  <text x="495" y="530" fill="#8fa1bd" font-size="17" text-anchor="middle">3 个托</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1130" cy="615" r="140" fill="#0F7B8A" opacity="0.06"/>
+  <circle cx="85" cy="115" r="110" fill="#D98A1F" opacity="0.07"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gRed)"/>
 
-  <!-- right: private vs public -->
-  <text x="740" y="160" fill="#e8ecf4" font-size="22" font-weight="bold">3 个托在场时：私下 vs 公开</text>
-  <rect x="740" y="195" width="330" height="52" rx="8" fill="#e57373"/>
-  <text x="755" y="228" fill="#0f1420" font-size="20" font-weight="bold">私下持有错误答案 51.6%</text>
-  <rect x="740" y="270" width="126" height="52" rx="8" fill="#4fc3f7"/>
-  <text x="885" y="303" fill="#4fc3f7" font-size="20" font-weight="bold">公开附和只有 19.7%</text>
-  <text x="740" y="372" fill="#8fa1bd" font-size="18">信念先塌，嘴上不认——</text>
-  <text x="740" y="400" fill="#8fa1bd" font-size="18">审计讨论日志看不出团队已被带偏</text>
-  <text x="740" y="448" fill="#8fa1bd" font-size="18">基线知识不预测抗影响能力；</text>
-  <text x="740" y="476" fill="#8fa1bd" font-size="18">错误会在良性 agent 间继续扩散</text>
+  <text class="k" x="64" y="84">一分钟读论文 · 2026-10-16 · ARXIV:2610.22138</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#17303B">三个托，改掉半数心里话</text>
+  <text x="64" y="158" font-size="15" fill="#5F7683">10 智能体事实讨论：公开附和看不出，私下信念先塌</text>
 
-  <rect x="110" y="560" width="980" height="46" rx="10" fill="#1a2334"/>
-  <text x="130" y="590" fill="#e8ecf4" font-size="18">经典从众研究多为「公开顺从、私意不变」；本文方向相反：私意先塌，公开看不出来</text>
+  <!-- fire alarm bell motif -->
+  <g>
+    <rect x="1056" y="246" width="8" height="24" rx="3" fill="#2F7D61"/>
+    <path d="M 1010 310 a 48 48 0 0 1 96 0 v 20 h -96 z" fill="url(#gRed)"/>
+    <rect x="1000" y="330" width="116" height="12" rx="6" fill="#8A2E22"/>
+    <circle cx="1058" cy="352" r="8" fill="#D98A1F"/>
+    <g stroke="#D98A1F" stroke-width="3.5" stroke-linecap="round" opacity="0.8">
+      <line x1="994" y1="270" x2="976" y2="254"/>
+      <line x1="1122" y1="270" x2="1140" y2="254"/>
+      <line x1="1058" y1="226" x2="1058" y2="206"/>
+    </g>
+    <text class="b" x="1058" y="382" text-anchor="middle">最小对手：只会反复坚称</text>
+  </g>
+
+  <!-- bars: 1% = 9.4 px, x0=330 -->
+  <g>
+    <rect x="330" y="196" width="760" height="40" rx="9" fill="#2F7D61" opacity="0.07"/>
+    <rect x="330" y="246" width="760" height="40" rx="9" fill="#D98A1F" opacity="0.08"/>
+    <rect x="330" y="296" width="760" height="40" rx="9" fill="#C0392B" opacity="0.07"/>
+
+    <text class="rl" x="314" y="221" text-anchor="end">无对抗者</text>
+    <rect x="330" y="204" width="9" height="24" rx="4" fill="url(#gGreen)"/>
+    <text class="val" x="352" y="221" fill="#2F7D61">0.6%</text>
+
+    <text class="rl" x="314" y="271" text-anchor="end">1 个对抗者</text>
+    <rect x="330" y="254" width="417" height="24" rx="12" fill="url(#gAmber)"/>
+    <text class="val" x="759" y="271" fill="#A96A14">44.8%</text>
+
+    <text class="rl" x="314" y="321" text-anchor="end">3 个对抗者</text>
+    <rect x="330" y="304" width="563" height="24" rx="12" fill="url(#gRed)"/>
+    <text class="val" x="905" y="321" fill="#8A2E22">60.5%</text>
+  </g>
+
+  <!-- private vs public split: per 100 rounds, 1 row = 10 -->
+  <g>
+    <text class="stat" x="64" y="402">先塌的是私下信念<tspan font-size="14" fill="#5F7683">　三托在场，按暴露轮次计</tspan></text>
+
+    <text class="rl" x="236" y="450" text-anchor="end">私下持有错误</text>
+    <rect x="260" y="432" width="20" height="26" rx="5" fill="url(#gViolet)"/><rect x="286" y="432" width="20" height="26" rx="5" fill="url(#gViolet)"/><rect x="312" y="432" width="20" height="26" rx="5" fill="url(#gViolet)"/><rect x="338" y="432" width="20" height="26" rx="5" fill="url(#gViolet)"/><rect x="364" y="432" width="20" height="26" rx="5" fill="url(#gViolet)"/>
+    <rect x="394" y="432" width="20" height="26" rx="5" fill="#9F8FCB" opacity="0.6"/>
+    <rect x="420" y="432" width="20" height="26" rx="5" fill="#9F8FCB" opacity="0.6"/>
+    <rect x="446" y="432" width="20" height="26" rx="5" fill="#9F8FCB" opacity="0.6"/>
+    <rect x="472" y="432" width="20" height="26" rx="5" fill="#9F8FCB" opacity="0.6"/>
+    <rect x="498" y="432" width="20" height="26" rx="5" fill="#9F8FCB" opacity="0.6"/>
+    <text class="stat" x="536" y="453" fill="#6C5A9E">51.6%</text>
+
+    <text class="rl" x="236" y="498" text-anchor="end">公开附和错误</text>
+    <rect x="260" y="480" width="20" height="26" rx="5" fill="url(#gTeal)"/><rect x="286" y="480" width="20" height="26" rx="5" fill="url(#gTeal)"/><rect x="312" y="480" width="20" height="26" rx="5" fill="url(#gTeal)"/><rect x="338" y="480" width="20" height="26" rx="5" fill="url(#gTeal)"/>
+    <rect x="364" y="480" width="20" height="26" rx="5" fill="#4FB8C6" opacity="0.6"/>
+    <rect x="390" y="480" width="20" height="26" rx="5" fill="#4FB8C6" opacity="0.6"/>
+    <rect x="416" y="480" width="20" height="26" rx="5" fill="#4FB8C6" opacity="0.6"/>
+    <rect x="442" y="480" width="20" height="26" rx="5" fill="#4FB8C6" opacity="0.6"/>
+    <rect x="468" y="480" width="20" height="26" rx="5" fill="#4FB8C6" opacity="0.6"/>
+    <rect x="494" y="480" width="20" height="26" rx="5" fill="#4FB8C6" opacity="0.6"/>
+    <text class="stat" x="536" y="501" fill="#0F7B8A">19.7%</text>
+
+    <text class="b" x="260" y="536">每格 10 轮 · 与 Asch 式「公开顺从、私意不变」方向相反</text>
+  </g>
+
+  <!-- verdict card -->
+  <g>
+    <rect x="736" y="396" width="400" height="144" rx="14" fill="#C0392B" opacity="0.07"/>
+    <rect x="736" y="396" width="400" height="6" rx="3" fill="url(#gRed)"/>
+    <text class="serif" x="760" y="446" font-size="25" font-weight="700" fill="#17303B">日志里看不见</text>
+    <text x="760" y="478" font-size="14" fill="#4A5A63">管理者翻讨论记录，看到的多数是</text>
+    <text x="760" y="500" font-size="14" fill="#4A5A63">坚持己见的智能体</text>
+    <text class="b" x="760" y="526">公开记录易审计，私下状态难探测</text>
+  </g>
+
+  <line x1="64" y1="560" x2="1136" y2="560" stroke="#DCE5E5"/>
+  <text class="serif" x="64" y="596" font-size="19" fill="#17303B">同质模型互相检查，可能只是互相感染；基线知识不预测抗影响能力。</text>
+  <text class="b" x="64" y="626">六个模型 × 三个事实问答数据集 · 对抗者为最小对手设定 · 10-16 预印本实测口径 · Micropaper</text>
 </svg>

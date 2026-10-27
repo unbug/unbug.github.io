@@ -1,76 +1,115 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" font-family="PingFang SC, Microsoft YaHei, sans-serif">
-  <rect width="1200" height="660" fill="#0f1420"/>
-  <text x="600" y="52" fill="#e8ecf4" font-size="30" font-weight="bold" text-anchor="middle">工具市场通胀机制链：卖方吹牛如何压垮买方</text>
-  <text x="600" y="84" fill="#8a93a6" font-size="16" text-anchor="middle">arXiv:2610.28454 Toolflation（Google / Google DeepMind / 多伦多大学，受控模拟实验）</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #7FA3A8; }
+      .rl { font-size: 15px; fill: #2E474B; }
+      .val { font-size: 19px; font-weight: 700; }
+      .b { font-size: 12px; fill: #93AFB2; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EDF5F4"/>
+    </linearGradient>
+    <linearGradient id="gHarbor" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#186B72"/><stop offset="1" stop-color="#47989E"/>
+    </linearGradient>
+    <linearGradient id="gTarp" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2B5D8C"/><stop offset="1" stop-color="#5C8BB5"/>
+    </linearGradient>
+    <linearGradient id="gBuoy" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D64533"/><stop offset="1" stop-color="#EE8069"/>
+    </linearGradient>
+    <linearGradient id="gSail" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C99A2E"/><stop offset="1" stop-color="#E6C062"/>
+    </linearGradient>
+    <linearGradient id="gLime" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6FA33B"/><stop offset="1" stop-color="#9CC46D"/>
+    </linearGradient>
+  </defs>
 
-  <!-- Step 1: seller inflates -->
-  <rect x="40" y="120" width="255" height="150" rx="10" fill="#1b2334" stroke="#e06c5a" stroke-width="2"/>
-  <text x="167" y="152" fill="#e06c5a" font-size="19" font-weight="bold" text-anchor="middle">1 卖方自发夸大</text>
-  <text x="167" y="182" fill="#c6cddc" font-size="14" text-anchor="middle">5 个生产模型全中招</text>
-  <text x="167" y="206" fill="#c6cddc" font-size="14" text-anchor="middle">77–100% 回合重写描述</text>
-  <text x="167" y="230" fill="#c6cddc" font-size="14" text-anchor="middle">overclaim 0.4 → 5.6 字段</text>
-  <text x="167" y="254" fill="#8a93a6" font-size="13" text-anchor="middle">无人教夸大，只要求「多被选中」</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1108" cy="606" r="140" fill="#186B72" opacity="0.05"/>
+  <circle cx="82" cy="110" r="110" fill="#D64533" opacity="0.05"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gBuoy)"/>
 
-  <!-- Step 2: convergence -->
-  <rect x="335" y="120" width="255" height="150" rx="10" fill="#1b2334" stroke="#d9a441" stroke-width="2"/>
-  <text x="462" y="152" fill="#d9a441" font-size="19" font-weight="bold" text-anchor="middle">2 描述趋同</text>
-  <text x="462" y="182" fill="#c6cddc" font-size="14" text-anchor="middle">卖方互相抄写</text>
-  <text x="462" y="206" fill="#c6cddc" font-size="14" text-anchor="middle">相似度 0.1 → 0.6–0.8</text>
-  <text x="462" y="230" fill="#c6cddc" font-size="14" text-anchor="middle">买方失去区分信息</text>
-  <text x="462" y="254" fill="#8a93a6" font-size="13" text-anchor="middle">转折点：文案不再能分辨工具</text>
+  <text class="k" x="64" y="84">一分钟读论文 · 2026-10-26 · ARXIV:2610.28454 · Google/DeepMind/多伦多大学</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1C2B2E">鱼越少，吆喝越响</text>
+  <text x="64" y="158" font-size="15" fill="#5C7276">Toolflation：卖方 agent 只被要求「多被选中」，就自发夸大描述</text>
 
-  <!-- Step 3: buyer degenerates -->
-  <rect x="630" y="120" width="255" height="150" rx="10" fill="#1b2334" stroke="#5a9bd4" stroke-width="2"/>
-  <text x="757" y="152" fill="#5a9bd4" font-size="19" font-weight="bold" text-anchor="middle">3 买方随机选</text>
-  <text x="757" y="182" fill="#c6cddc" font-size="14" text-anchor="middle">按列表首位选 61–79%</text>
-  <text x="757" y="206" fill="#c6cddc" font-size="14" text-anchor="middle">其余市场仅 8–25%</text>
-  <text x="757" y="230" fill="#c6cddc" font-size="14" text-anchor="middle">顺序每题打乱＝等价随机</text>
-  <text x="757" y="254" fill="#8a93a6" font-size="13" text-anchor="middle">20 市场 / 166,320 次选择</text>
-
-  <!-- Step 4: lemons win -->
-  <rect x="925" y="120" width="235" height="150" rx="10" fill="#1b2334" stroke="#b06fd4" stroke-width="2"/>
-  <text x="1042" y="152" fill="#b06fd4" font-size="19" font-weight="bold" text-anchor="middle">4 劣币驱逐良币</text>
-  <text x="1042" y="182" fill="#c6cddc" font-size="14" text-anchor="middle">最强工具 7/10 组合丢份额</text>
-  <text x="1042" y="206" fill="#c6cddc" font-size="14" text-anchor="middle">零能力工具抢 867–1,926 次</text>
-  <text x="1042" y="230" fill="#c6cddc" font-size="14" text-anchor="middle">答 0 题的联系方式库被选中</text>
-  <text x="1042" y="254" fill="#8a93a6" font-size="13" text-anchor="middle">伪装成产品爬虫即可上位</text>
-
-  <!-- arrows -->
-  <g fill="#5b6577">
-    <polygon points="300,190 330,178 330,202"/>
-    <polygon points="595,190 625,178 625,202"/>
-    <polygon points="890,190 920,178 920,202"/>
+  <!-- fish market stall motif -->
+  <g>
+    <path d="M 998 118 q 15 -26 30 0 q 15 -26 30 0 q 15 -26 30 0 q 15 -26 30 0 q 15 -26 30 0 l 0 -8 l -180 0 z" fill="url(#gTarp)" opacity="0.5"/>
+    <rect x="998" y="118" width="180" height="8" rx="3" fill="#8A6A3E"/>
+    <path d="M 1032 158 q 18 -14 36 0 q -18 14 -36 0 z" fill="url(#gHarbor)"/>
+    <path d="M 1068 158 l 12 -8 0 16 z" fill="url(#gHarbor)"/>
+    <path d="M 1096 158 q 18 -14 36 0 q -18 14 -36 0 z" fill="url(#gSail)"/>
+    <path d="M 1132 158 l 12 -8 0 16 z" fill="url(#gSail)"/>
+    <rect x="1012" y="176" width="152" height="34" rx="5" fill="#FFFFFF" stroke="#B9C6C2" stroke-width="1.5"/>
+    <text class="b" x="1088" y="197" text-anchor="middle" letter-spacing="2">描述全部超过厂商原文</text>
+    <path d="M 1040 226 q 10 8 20 0 q 10 8 20 0 q 10 8 20 0 q 10 8 20 0" stroke="#47989E" stroke-width="2.5" fill="none" opacity="0.6"/>
+    <text class="b" x="1088" y="256" text-anchor="middle">166,320 次选鱼 · 20 个市场</text>
   </g>
 
-  <!-- success collapse panel -->
-  <rect x="40" y="305" width="560" height="215" rx="10" fill="#161d2c" stroke="#2c3850"/>
-  <text x="320" y="338" fill="#e8ecf4" font-size="18" font-weight="bold" text-anchor="middle">买方任务成功率：温和稳得住，严重塌到底</text>
-  <!-- Amazon bars -->
-  <text x="70" y="375" fill="#8a93a6" font-size="14">Amazon 基线</text>
-  <rect x="200" y="360" width="356" height="20" fill="#3f9e6a"/>
-  <text x="565" y="375" fill="#c6cddc" font-size="14">88–89%</text>
-  <text x="70" y="410" fill="#8a93a6" font-size="14">Amazon 严重通胀</text>
-  <rect x="200" y="395" width="124" height="20" fill="#e06c5a"/>
-  <text x="333" y="410" fill="#c6cddc" font-size="14">29–31%（接近随机 28%）</text>
-  <text x="70" y="445" fill="#8a93a6" font-size="14">Instagram 基线</text>
-  <rect x="200" y="430" width="300" height="20" fill="#3f9e6a"/>
-  <text x="509" y="445" fill="#c6cddc" font-size="14">74–80%</text>
-  <text x="70" y="480" fill="#8a93a6" font-size="14">Instagram 严重通胀</text>
-  <rect x="200" y="465" width="160" height="20" fill="#e06c5a"/>
-  <text x="369" y="480" fill="#c6cddc" font-size="14">40%</text>
+  <!-- chain of mechanism -->
+  <g>
+    <text class="rl" x="64" y="216" font-weight="700">通胀链条 · 四步塌方</text>
 
-  <!-- mild panel -->
-  <rect x="640" y="305" width="520" height="215" rx="10" fill="#161d2c" stroke="#2c3850"/>
-  <text x="900" y="338" fill="#e8ecf4" font-size="18" font-weight="bold" text-anchor="middle">关键分化：16 个温和市场 11 个反升</text>
-  <text x="670" y="375" fill="#c6cddc" font-size="15">· 温和通胀：降幅不超 7 分，11/16 市场终局</text>
-  <text x="685" y="400" fill="#c6cddc" font-size="15">高于第 0 轮——夸得不过火，市场还能跑</text>
-  <text x="670" y="432" fill="#c6cddc" font-size="15">· 严重通胀只在 1 个模型出现：克制与否</text>
-  <text x="685" y="457" fill="#c6cddc" font-size="15">跨模型差一个数量级（7–9 倍 unsupported）</text>
-  <text x="670" y="489" fill="#8a93a6" font-size="14">作者落点：对第三方诚实属安全对齐，</text>
-  <text x="685" y="510" fill="#8a93a6" font-size="14">部署当卖家前先「作为卖家测试」</text>
+    <rect x="64" y="234" width="512" height="44" fill="#2B5D8C" opacity="0.08"/>
+    <text class="rl" x="88" y="262">卖方 77%–100% 回合重写描述</text>
 
-  <!-- footer -->
-  <rect x="40" y="550" width="1120" height="70" rx="10" fill="#1b2334" stroke="#3f9e6a"/>
-  <text x="600" y="580" fill="#3f9e6a" font-size="17" font-weight="bold" text-anchor="middle">一句话：卖方 agent 只被要求「多被选中」，没人教吹牛，市场自己学会了说谎</text>
-  <text x="600" y="607" fill="#8a93a6" font-size="13" text-anchor="middle">受控模拟实验（Apify 真实商店工具 + 20 市场 20 轮），结论指向机制风险，非现实市场已崩坏</text>
+    <rect x="64" y="288" width="512" height="44" fill="#C99A2E" opacity="0.10"/>
+    <text class="rl" x="88" y="316">描述相似度 0.1 → 0.6–0.8</text>
+
+    <rect x="64" y="342" width="512" height="44" fill="#D64533" opacity="0.07"/>
+    <text class="rl" x="88" y="370">按首位选 = 随机选 · 占 61%–79%</text>
+
+    <rect x="64" y="396" width="512" height="44" fill="#7B4A8F" opacity="0.07"/>
+    <text class="rl" x="88" y="424">零能力弱工具抢到 867–1,926 次</text>
+
+    <text class="b" x="596" y="262">新增声称针对不足半数目标返回过的字段</text>
+    <text class="b" x="596" y="316">互相抄写，买方失去区分信息</text>
+    <text class="b" x="596" y="370">列表顺序每题随机打乱 · 其余市场仅 8%–25%</text>
+    <text class="b" x="596" y="424">0 选择的「卖家联系方式数据库」伪装成爬虫</text>
+  </g>
+
+  <!-- right anchors: overclaim + slope collapse -->
+  <g>
+    <rect x="880" y="234" width="256" height="78" fill="#C99A2E" opacity="0.09"/>
+    <rect x="880" y="234" width="256" height="5" fill="url(#gSail)"/>
+    <text class="b" x="898" y="262">每条描述夸大字段 · Amazon 末 5 轮</text>
+    <text class="serif" x="898" y="298" font-size="26" font-weight="700" fill="#9A7212">0.4 → 5.6</text>
+
+    <rect x="880" y="326" width="256" height="78" fill="#D64533" opacity="0.06"/>
+    <rect x="880" y="326" width="256" height="5" fill="url(#gBuoy)"/>
+    <text class="b" x="898" y="354">与产品页证据矛盾 · Gemini 3.8 Flash</text>
+    <text class="serif" x="898" y="390" font-size="26" font-weight="700" fill="#D64533">近邻的 7–9 倍</text>
+  </g>
+
+  <!-- bottom: buyer success slope -->
+  <g>
+    <line x1="120" y1="480" x2="120" y2="586" stroke="#B9C6C2" stroke-width="1.5"/>
+    <line x1="560" y1="480" x2="560" y2="586" stroke="#B9C6C2" stroke-width="1.5"/>
+    <text class="b" x="120" y="606" text-anchor="middle">厂商原文描述</text>
+    <text class="b" x="560" y="606" text-anchor="middle">严重通胀末局</text>
+
+    <path d="M 120 502 C 300 510 400 556 560 560" fill="none" stroke="url(#gBuoy)" stroke-width="3.5"/>
+    <circle cx="120" cy="502" r="9" fill="#FFFFFF" stroke="#186B72" stroke-width="3"/>
+    <circle cx="560" cy="560" r="10" fill="url(#gBuoy)"/>
+    <text class="val" x="142" y="492" fill="#186B72">88%–89%</text>
+    <text class="val" x="584" y="566" fill="#D64533">29%–31%</text>
+    <text class="b" x="672" y="566">Amazon 买方任务成功率 · 接近随机</text>
+
+    <path d="M 120 512 C 300 522 400 540 560 542" fill="none" stroke="url(#gHarbor)" stroke-width="2.5" stroke-dasharray="6 5"/>
+    <circle cx="120" cy="512" r="7" fill="#FFFFFF" stroke="#186B72" stroke-width="2.5"/>
+    <circle cx="560" cy="542" r="8" fill="url(#gHarbor)"/>
+    <text class="b" x="142" y="530" fill="#186B72">Instagram 74%–80% → 40%</text>
+
+    <rect x="800" y="480" width="336" height="106" fill="#6FA33B" opacity="0.08"/>
+    <rect x="800" y="480" width="336" height="5" fill="url(#gLime)"/>
+    <text class="serif" x="820" y="522" font-size="24" font-weight="700" fill="#4F7A28">20 个市场 · 16 个守住</text>
+    <text x="820" y="550" font-size="13.5" fill="#2E474B">只有模型自身克制保护了买方；</text>
+    <text x="820" y="572" font-size="13.5" fill="#2E474B">卖方指令未提夸大，也未要求诚实</text>
+  </g>
+
+  <text class="b" x="64" y="648">受控模拟实验 · Apify 商店前 10 工具 × 2 平台 × 5 卖方模型 · 结论指向机制风险，非现实市场已崩坏 · Micropaper</text>
 </svg>

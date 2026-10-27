@@ -1,35 +1,104 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" font-family="Helvetica, Arial, sans-serif">
-  <rect width="1200" height="700" fill="#0f1626"/>
-  <text x="600" y="62" text-anchor="middle" fill="#ffffff" font-size="34" font-weight="bold">FDE-Gym：AI 交付的最后一公里</text>
-  <text x="600" y="102" text-anchor="middle" fill="#8fa3c8" font-size="20">95 个隐藏约束的交付任务，最好的配置只解决 14 题</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #A89A76; }
+      .rl { font-size: 15px; fill: #44402F; }
+      .val { font-size: 20px; font-weight: 700; }
+      .b { font-size: 12px; fill: #ADA48B; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F4E9"/>
+    </linearGradient>
+    <linearGradient id="gSoil" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8A5A2B"/><stop offset="1" stop-color="#B07E45"/>
+    </linearGradient>
+    <linearGradient id="gLeaf" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4E7A38"/><stop offset="1" stop-color="#7FA55A"/>
+    </linearGradient>
+    <linearGradient id="gPersimmon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C2452C"/><stop offset="1" stop-color="#E07A4E"/>
+    </linearGradient>
+    <linearGradient id="gStraw" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C99A2E"/><stop offset="1" stop-color="#E3BE5F"/>
+    </linearGradient>
+    <linearGradient id="gSky" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3E7C9B"/><stop offset="1" stop-color="#6FA3BC"/>
+    </linearGradient>
+    <linearGradient id="gPlum" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8C4A68"/><stop offset="1" stop-color="#B3758F"/>
+    </linearGradient>
+  </defs>
 
-  <!-- funnel: spec clear -> hidden constraints -> asked -> delivered -->
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1108" cy="606" r="140" fill="#4E7A38" opacity="0.05"/>
+  <circle cx="84" cy="112" r="110" fill="#C2452C" opacity="0.05"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gPersimmon)"/>
+
+  <text class="k" x="64" y="84">一分钟读论文 · 2026-10-17 · ARXIV:2610.22350 · DeepLethe/清华/上交</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#26231A">问到不等于收进筐</text>
+  <text x="64" y="158" font-size="15" fill="#6E6752">FDE-Gym：95 个隐藏约束的交付任务，考 AI 自己问、自己做、自己交付</text>
+
+  <!-- basket motif -->
   <g>
-    <polygon points="180,150 1020,150 960,255 240,255" fill="#2f6fb5"/>
-    <text x="600" y="196" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="bold">任务总量：95 题（规格不清晰，约束隐藏）</text>
-    <text x="600" y="230" text-anchor="middle" fill="#d8e6f5" font-size="18">来自 20 个客户场景、18 个行业，需自己向 stakeholder 提问发现约束</text>
-
-    <polygon points="300,285 900,285 840,390 360,390" fill="#3f9d8f"/>
-    <text x="600" y="331" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="bold">问到关键事实：23 题</text>
-    <text x="600" y="365" text-anchor="middle" fill="#d9f2ee" font-size="18">最好配置把关键事实全部从 stakeholder 问到的题目</text>
-
-    <polygon points="420,420 780,420 730,525 470,525" fill="#c96f3a"/>
-    <text x="600" y="466" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="bold">真正做出交付：10 题</text>
-    <text x="600" y="500" text-anchor="middle" fill="#fbe6d8" font-size="18">问到之后做到业务提升大于等于 0.8 的仅 10 题，问到不等于做出来</text>
+    <path d="M 1040 118 q 48 -22 96 0" stroke="#8A5A2B" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M 1026 142 l 124 0 -16 52 q -46 16 -92 0 z" fill="url(#gSoil)"/>
+    <path d="M 1032 156 l 112 0 M 1036 172 l 104 0" stroke="#F7F4E9" stroke-width="2.5" opacity="0.5"/>
+    <circle cx="1056" cy="136" r="11" fill="url(#gPersimmon)"/>
+    <circle cx="1086" cy="130" r="11" fill="url(#gStraw)"/>
+    <circle cx="1116" cy="136" r="11" fill="url(#gLeaf)"/>
+    <circle cx="1142" cy="142" r="9" fill="#FFFFFF" stroke="#B9B199" stroke-width="2" stroke-dasharray="3 3"/>
+    <text class="b" x="1142" y="222" text-anchor="middle">95 题开秤，只有 14 筐达标</text>
   </g>
 
-  <!-- side stats -->
+  <!-- funnel: three harvest stages -->
   <g>
-    <rect x="150" y="570" width="280" height="86" rx="10" fill="#1b2740"/>
-    <text x="290" y="606" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="bold">0.56</text>
-    <text x="290" y="638" text-anchor="middle" fill="#8fa3c8" font-size="17">13 配置 / 7 家 provider 的最高平均分</text>
+    <text class="rl" x="64" y="216" font-weight="700">秋收账目 · 逐层缩水</text>
 
-    <rect x="460" y="570" width="280" height="86" rx="10" fill="#1b2740"/>
-    <text x="600" y="606" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="bold">14 / 95</text>
-    <text x="600" y="638" text-anchor="middle" fill="#8fa3c8" font-size="17">解决题数：得分不低于 0.8 且无事故</text>
+    <rect x="64" y="232" width="600" height="46" fill="url(#gSky)" opacity="0.08"/>
+    <text class="rl" x="88" y="261">开秤题目</text>
+    <rect x="240" y="243" width="342" height="24" rx="4" fill="url(#gSky)"/>
+    <text class="val" x="596" y="262" fill="#3E7C9B">95</text>
+    <text class="b" x="640" y="261">20 场景 · 18 行业 · 约束全隐藏</text>
 
-    <rect x="770" y="570" width="280" height="86" rx="10" fill="#1b2740"/>
-    <text x="910" y="606" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="bold">问有代价</text>
-    <text x="910" y="638" text-anchor="middle" fill="#8fa3c8" font-size="17">每次消息、试跑、等待都计入交互罚分</text>
+    <rect x="64" y="294" width="600" height="46" fill="url(#gStraw)" opacity="0.10"/>
+    <text class="rl" x="88" y="323">问到关键事实</text>
+    <rect x="240" y="305" width="83" height="24" rx="4" fill="url(#gStraw)"/>
+    <text class="val" x="337" y="324" fill="#9A7212">23</text>
+    <text class="b" x="382" y="323">最好配置全部问齐的题目</text>
+
+    <rect x="64" y="356" width="600" height="46" fill="url(#gPersimmon)" opacity="0.08"/>
+    <text class="rl" x="88" y="385">问到仍做出提升</text>
+    <rect x="240" y="367" width="36" height="24" rx="4" fill="url(#gPersimmon)"/>
+    <text class="val" x="290" y="386" fill="#C2452C">10</text>
+    <text class="b" x="336" y="385">业务提升 ≥ 0.8 · 信息齐了仍断在半路</text>
   </g>
+
+  <!-- right: score plate + solved + penalty -->
+  <g>
+    <rect x="720" y="232" width="200" height="132" fill="#C2452C" opacity="0.06"/>
+    <rect x="720" y="232" width="200" height="5" fill="url(#gPersimmon)"/>
+    <text class="b" x="740" y="262">最好配置平均分</text>
+    <text class="serif" x="740" y="318" font-size="52" font-weight="700" fill="#C2452C">0.56</text>
+    <text class="b" x="740" y="346">对参考解归一化 · 满分 1</text>
+
+    <rect x="940" y="232" width="196" height="132" fill="#4E7A38" opacity="0.07"/>
+    <rect x="940" y="232" width="196" height="5" fill="url(#gLeaf)"/>
+    <text class="b" x="960" y="262">真正解决</text>
+    <text class="serif" x="960" y="318" font-size="52" font-weight="700" fill="#4E7A38">14 题</text>
+    <text class="b" x="960" y="346">口径：得分 ≥ 0.8 且全程无事故</text>
+  </g>
+
+  <!-- bottom strip: scoring rules -->
+  <g>
+    <text class="rl" x="64" y="452" font-weight="700">秤杆怎么定</text>
+    <text x="64" y="482" font-size="14" fill="#44402F">0 分 = 原样未动</text>
+    <text x="248" y="482" font-size="14" fill="#44402F">1 分 = 达到参考解</text>
+    <text x="452" y="482" font-size="14" fill="#8C4A68">每条消息、试跑、等待都计分扣减</text>
+    <line x1="64" y1="502" x2="1136" y2="502" stroke="#E5DFC8"/>
+    <text class="serif" x="64" y="546" font-size="22" font-weight="700" fill="#8A5A2B">13 个模型配置 · 7 家 provider · 同一套环境对人开放</text>
+    <text class="b" x="64" y="576">分数绑定客户自身成功指标，不是题目完成度 · Micropaper</text>
+  </g>
+
+  <text class="b" x="64" y="640">2026 年 10 月预印本，未经同行评审 · 0.56 为归一化得分而非成功率 · 数据口径以论文后续版本为准</text>
 </svg>

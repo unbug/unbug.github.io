@@ -1,58 +1,117 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" font-family="'Helvetica Neue', Arial, 'PingFang SC', sans-serif">
-  <rect width="960" height="720" fill="#f8fafc"/>
-  <text x="480" y="38" text-anchor="middle" font-size="22" font-weight="bold" fill="#1e293b">一张面板如何改变 AI 的行动</text>
-  <text x="480" y="60" text-anchor="middle" font-size="13" fill="#64748b">arXiv:2608.27167 · 12 frontier models · 四个领域</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #96917E; }
+      .rl { font-size: 15px; fill: #42403A; }
+      .val { font-size: 20px; font-weight: 700; }
+      .b { font-size: 12px; fill: #A5A18C; }
+      .hd { font-size: 12.5px; letter-spacing: 2px; fill: #807A64; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F8F4EC"/>
+    </linearGradient>
+    <linearGradient id="gCrimson" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A63A50"/><stop offset="1" stop-color="#D97B8E"/>
+    </linearGradient>
+    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B9892F"/><stop offset="1" stop-color="#E5C169"/>
+    </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F8282"/><stop offset="1" stop-color="#72B5B0"/>
+    </linearGradient>
+    <linearGradient id="gNavy" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#33506E"/><stop offset="1" stop-color="#6E8CAD"/>
+    </linearGradient>
+    <linearGradient id="gPlum" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6E4B8C"/><stop offset="1" stop-color="#A98BC2"/>
+    </linearGradient>
+    <linearGradient id="gBeam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E5C169"/><stop offset="1" stop-color="#E5C169" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
 
-  <!-- main flow -->
-  <rect x="50" y="90" width="200" height="70" rx="10" fill="#e2e8f0" stroke="#94a3b8"/>
-  <text x="150" y="118" text-anchor="middle" font-size="14" font-weight="bold" fill="#334155">裸问题</text>
-  <text x="150" y="140" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f766e">commitment 6.5%</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1110" cy="110" r="140" fill="#A63A50" opacity="0.06"/>
+  <circle cx="74" cy="620" r="115" fill="#2F8282" opacity="0.06"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="#B5442E"/>
 
-  <path d="M250 125 L320 125" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
-  <defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#475569"/></marker></defs>
+  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2608.27167 · 预注册研究</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">假片源，真开票</text>
+  <text x="64" y="158" font-size="15.5" fill="#6D695B">行情面板排得越像样，模型越敢对不可知的问题下注</text>
 
-  <rect x="320" y="80" width="230" height="90" rx="10" fill="#dcfce7" stroke="#16a34a"/>
-  <text x="435" y="106" text-anchor="middle" font-size="14" font-weight="bold" fill="#166534">证据升级梯度</text>
-  <text x="435" y="128" text-anchor="middle" font-size="12" fill="#166534">thin → rich → scrambled 面板</text>
-  <text x="435" y="152" text-anchor="middle" font-size="17" font-weight="bold" fill="#15803d">commitment 54.0%</text>
+  <!-- cinema illustration: projector + beam + screen -->
+  <g>
+    <path d="M 940 246 L 1116 190 L 1116 302 L 940 268 Z" fill="url(#gBeam)" opacity="0.35"/>
+    <rect x="902" y="234" width="52" height="36" rx="6" fill="url(#gNavy)"/>
+    <circle cx="916" cy="228" r="10" fill="url(#gGold)"/>
+    <circle cx="938" cy="228" r="10" fill="url(#gGold)" opacity="0.8"/>
+    <rect x="912" y="270" width="8" height="16" fill="#33506E"/>
+    <rect x="938" y="270" width="8" height="16" fill="#33506E"/>
+    <rect x="1116" y="182" width="14" height="128" rx="3" fill="url(#gCrimson)"/>
+    <rect x="1120" y="188" width="6" height="116" fill="#F8F4EC" opacity="0.5"/>
+    <text class="hd" x="1030" y="330" text-anchor="middle">放映间灯箱</text>
+  </g>
 
-  <!-- fabricated branch -->
-  <rect x="600" y="90" width="310" height="70" rx="10" fill="#fee2e2" stroke="#dc2626"/>
-  <text x="755" y="115" text-anchor="middle" font-size="14" font-weight="bold" fill="#991b1b">全伪造面板（数字全部编造）</text>
-  <text x="755" y="138" text-anchor="middle" font-size="12" fill="#991b1b">24.5% → 36.8%，与真实数据 37.6% 统计不可区分</text>
+  <!-- main visual: commitment bars -->
+  <g>
+    <text class="hd" x="64" y="216">票房 · commitment：对不可知问题下方向注的概率</text>
 
-  <!-- belief box -->
-  <rect x="50" y="200" width="430" height="80" rx="10" fill="#fef9c3" stroke="#ca8a04"/>
-  <text x="265" y="226" text-anchor="middle" font-size="14" font-weight="bold" fill="#854d0e">belief 不动，action 动了</text>
-  <text x="265" y="248" text-anchor="middle" font-size="12" fill="#854d0e">陈述概率几乎不随梯度变化（还差于气候基线）</text>
-  <text x="265" y="268" text-anchor="middle" font-size="12" fill="#854d0e">而行动门在 48 个百分点的区间内摆动</text>
+    <rect x="64" y="240" width="640" height="64" fill="#33506E" opacity="0.08"/>
+    <rect x="64" y="318" width="640" height="64" fill="#A63A50" opacity="0.09"/>
+    <rect x="64" y="396" width="640" height="64" fill="#B9892F" opacity="0.10"/>
 
-  <!-- model split -->
-  <text x="50" y="330" font-size="15" font-weight="bold" fill="#1e293b">模型分层（不随能力变化）</text>
-  <rect x="50" y="345" width="860" height="34" rx="6" fill="#fee2e2" stroke="#dc2626"/>
-  <text x="60" y="367" font-size="13" fill="#991b1b">3/12 被诱导（伪造面板更甚）：Sonnet 5 → 70.8% · Haiku 4.5 → 50.0% · Opus 4.8 → 33.3%</text>
-  <rect x="50" y="385" width="860" height="34" rx="6" fill="#e2e8f0" stroke="#94a3b8"/>
-  <text x="60" y="407" font-size="13" fill="#334155">4/12 任何面板都不 commit：DeepSeek V3.2 · Qwen3.7-plus · Grok ×2（全 0）</text>
-  <rect x="50" y="425" width="860" height="34" rx="6" fill="#fecaca" stroke="#b91c1c"/>
-  <text x="60" y="447" font-size="13" fill="#7f1d1d">3/12 任何面板都 commit（88–100%）：OpenAI ×2 · Gemma</text>
-  <rect x="50" y="465" width="860" height="34" rx="6" fill="#f1f5f9" stroke="#cbd5e1"/>
-  <text x="60" y="487" font-size="13" fill="#475569">2/12 反应微弱</text>
+    <text class="rl" x="212" y="278" text-anchor="end">裸问题</text>
+    <rect x="236" y="262" width="42" height="14" rx="7" fill="url(#gNavy)"/>
+    <text class="val" x="290" y="279" fill="#33506E">6.5%</text>
 
-  <!-- three exclusions -->
-  <rect x="50" y="525" width="430" height="80" rx="10" fill="#dbeafe" stroke="#2563eb"/>
-  <text x="265" y="551" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e40af">三个解释被直接排除</text>
-  <text x="265" y="573" text-anchor="middle" font-size="12" fill="#1e40af">能力不足？同面板可答问题近乎全对</text>
-  <text x="265" y="591" text-anchor="middle" font-size="12" fill="#1e40af">信念变了？概率几乎不动 · 判断缺失？90% 已判不可知仍照 commit</text>
+    <text class="rl" x="212" y="356" text-anchor="end">thin → scrambled 面板</text>
+    <rect x="236" y="340" width="346" height="14" rx="7" fill="url(#gCrimson)"/>
+    <circle cx="236" cy="347" r="7" fill="#FFFFFF" stroke="#33506E" stroke-width="3"/>
+    <text class="serif" x="596" y="355" font-size="27" font-weight="700" fill="#A63A50">54.0%</text>
 
-  <!-- SFT mitigation -->
-  <rect x="520" y="525" width="390" height="80" rx="10" fill="#dcfce7" stroke="#16a34a"/>
-  <text x="715" y="551" text-anchor="middle" font-size="14" font-weight="bold" fill="#166534">门可训练：SFT 3B / 540 合成样本</text>
-  <text x="715" y="573" text-anchor="middle" font-size="12" fill="#166534">原 case commitment → 0.0%，迁移至 3 个未见领域</text>
-  <text x="715" y="591" text-anchor="middle" font-size="12" fill="#166534">边界：response format 留推理空间才有效</text>
+    <text class="rl" x="212" y="434" text-anchor="end">全伪造数字面板</text>
+    <rect x="236" y="418" width="236" height="14" rx="7" fill="url(#gGold)"/>
+    <circle cx="236" cy="425" r="7" fill="#FFFFFF" stroke="#33506E" stroke-width="3"/>
+    <text class="val" x="484" y="435" fill="#96701F">24.5% → 36.8%</text>
+    <text class="b" x="236" y="478">与真实数据的 37.6% 统计上不可区分 · 12 个前沿模型 · 四个领域全部复现</text>
+  </g>
 
-  <!-- conclusion -->
-  <rect x="50" y="630" width="860" height="60" rx="10" fill="#f0fdf4" stroke="#22c55e"/>
-  <text x="480" y="655" text-anchor="middle" font-size="14" font-weight="bold" fill="#166534">失效的是行动门，不是判断力——「解锁自信行动的包装权威，而非信息」</text>
-  <text x="480" y="677" text-anchor="middle" font-size="12" fill="#16a34a">预注册 + 代码/数据/全部缓存输出开源（Zenodo 存档）· 单作者独立研究</text>
+  <!-- right: three controls ruled out -->
+  <g>
+    <text class="hd" x="780" y="216">三场试映，排掉三种解释</text>
+    <rect x="780" y="234" width="356" height="56" fill="#2F8282" opacity="0.10"/>
+    <text class="rl" x="800" y="258">能力不足？</text>
+    <text class="serif" x="800" y="282" font-size="20" font-weight="700" fill="#2A7272">可答问题几乎全对</text>
+
+    <rect x="780" y="298" width="356" height="56" fill="#6E4B8C" opacity="0.10"/>
+    <text class="rl" x="800" y="322">信念变了？</text>
+    <text class="serif" x="800" y="346" font-size="20" font-weight="700" fill="#63427F">陈述概率几乎不动</text>
+
+    <rect x="780" y="362" width="356" height="56" fill="#B9892F" opacity="0.12"/>
+    <text class="rl" x="800" y="386">判断缺失？</text>
+    <text class="serif" x="800" y="410" font-size="20" font-weight="700" fill="#96701F">90% 自判不可知，照样下注</text>
+
+    <text class="b" x="780" y="440">失效在 act/don't-act 行动门，不在判断力</text>
+  </g>
+
+  <!-- bottom band -->
+  <g>
+    <rect x="64" y="500" width="420" height="76" fill="#2F8282" opacity="0.09"/>
+    <text class="serif" x="84" y="534" font-size="25" font-weight="700" fill="#2A7272">540 样本</text>
+    <text class="rl" x="84" y="560">3B 小模型微调 · commitment 降到 0.0%</text>
+
+    <rect x="510" y="500" width="420" height="76" fill="#A63A50" opacity="0.08"/>
+    <text class="serif" x="530" y="534" font-size="25" font-weight="700" fill="#A63A50">0 → 100%</text>
+    <text class="rl" x="530" y="560">跨模型差异不随能力排序 · 门的问题</text>
+    <text class="b" x="84" y="596">例：Sonnet 5 从 4.2% 一路到 70.8% · 4 个模型任何面板下全为 0</text>
+
+    <text class="hd" x="956" y="520">原句结论</text>
+    <text class="serif" x="956" y="548" font-size="17" font-weight="700" fill="#42403A">not information but</text>
+    <text class="serif" x="956" y="572" font-size="17" font-weight="700" fill="#42403A">the authority of packaging</text>
+  </g>
+
+  <line x1="64" y1="622" x2="1136" y2="622" stroke="#E5E1D4"/>
+  <text class="serif" x="64" y="652" font-size="15.5" fill="#42403A">证据展示层本身就是攻击面：排版权威绕过判断力直达行动。</text>
+  <text class="b" x="1136" y="652" text-anchor="end">缓解限于小模型与特定输出格式 · 单作者预注册 · Micropaper</text>
 </svg>

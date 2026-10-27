@@ -1,53 +1,141 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0f1c2e"/>
-      <stop offset="1" stop-color="#1b3a5c"/>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #97A2AE; }
+      .rl { font-size: 15px; fill: #3D4650; }
+      .val { font-size: 20px; font-weight: 700; }
+      .b { font-size: 12px; fill: #A7B0BA; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F2F5F8"/>
+    </linearGradient>
+    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3B6FA0"/><stop offset="1" stop-color="#6D97C0"/>
+    </linearGradient>
+    <linearGradient id="gYellow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E5C042"/><stop offset="1" stop-color="#F0D778"/>
+    </linearGradient>
+    <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#DE7A3B"/><stop offset="1" stop-color="#EFA26D"/>
+    </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3E8E7E"/><stop offset="1" stop-color="#74B3A4"/>
+    </linearGradient>
+    <linearGradient id="gViolet" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7065A8"/><stop offset="1" stop-color="#9A90C6"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <text x="60" y="78" fill="#7fb3e0" font-size="24" letter-spacing="6">AI 智创简报 · INNOVATION BRIEF</text>
-  <text x="60" y="132" fill="#ffffff" font-size="38" font-weight="700">微软圈地代码评审智能体，PR 质检报告还空着</text>
-  <line x1="60" y1="162" x2="1140" y2="162" stroke="#3a5f8a" stroke-width="1"/>
 
-  <!-- Column 1: patent signal -->
-  <rect x="60" y="196" width="336" height="330" rx="10" fill="#16283f" stroke="#2e4d70"/>
-  <text x="84" y="238" fill="#7fb3e0" font-size="22" font-weight="700">专利信号</text>
-  <text x="84" y="280" fill="#e8eef5" font-size="17">US20260278303A1 微软</text>
-  <text x="84" y="306" fill="#9fb6cc" font-size="15">客户数据套模板生成评审 2026-09-17</text>
-  <text x="84" y="342" fill="#e8eef5" font-size="17">US20250103325A1 微软</text>
-  <text x="84" y="368" fill="#9fb6cc" font-size="15">意图分类器驱动评审评论生成</text>
-  <text x="84" y="404" fill="#e8eef5" font-size="17">US20260064410A1 摩根大通</text>
-  <text x="84" y="430" fill="#9fb6cc" font-size="15">多智能体分路评审并裁决 PR</text>
-  <text x="84" y="466" fill="#e8eef5" font-size="17">US12487819B2 微软（已授权）</text>
-  <text x="84" y="492" fill="#9fb6cc" font-size="15">top-k 变更生成 PR 摘要荐评审人</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1085" cy="110" r="140" fill="#3B6FA0" opacity="0.06"/>
+  <circle cx="80" cy="612" r="120" fill="#DE7A3B" opacity="0.06"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gOrange)"/>
 
-  <!-- arrow -->
-  <path d="M408 360 L444 360 M432 348 L444 360 L432 372" stroke="#5b8fc4" stroke-width="3" fill="none"/>
+  <text class="k" x="64" y="84">AI 智创简报 · 2026-09-25 · 专利信号 · G06F40/40 · G06F8/77</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1E2430">生成已合闸，验收无表</text>
+  <text x="64" y="158" font-size="15" fill="#66707C">近 18 个月 · 微软与摩根大通 · 至少四件"让 AI 审 PR"方法专利</text>
 
-  <!-- Column 2: trend -->
-  <rect x="456" y="196" width="336" height="330" rx="10" fill="#16283f" stroke="#2e4d70"/>
-  <text x="480" y="238" fill="#7fb3e0" font-size="22" font-weight="700">技术趋势</text>
-  <text x="480" y="280" fill="#e8eef5" font-size="17">瓶颈从写代码挪到审代码</text>
-  <text x="480" y="316" fill="#9fb6cc" font-size="15">评论生成 / PR 摘要 / 多智能体</text>
-  <text x="480" y="340" fill="#9fb6cc" font-size="15">裁决逐件被圈成方法专利</text>
-  <text x="480" y="388" fill="#e8eef5" font-size="17">验收口径缺席</text>
-  <text x="480" y="420" fill="#9fb6cc" font-size="15">误报率 / 评论采纳率 / 拦截率</text>
-  <text x="480" y="444" fill="#9fb6cc" font-size="15">没有成型的公开衡量标准</text>
+  <!-- substation icon: tower + energized lines -->
+  <g>
+    <path d="M 1040 168 l 22 -92 l 22 92" fill="none" stroke="#3B6FA0" stroke-width="5" stroke-linejoin="round"/>
+    <line x1="1048" y1="134" x2="1076" y2="134" stroke="#3B6FA0" stroke-width="4"/>
+    <line x1="1044" y1="152" x2="1080" y2="152" stroke="#3B6FA0" stroke-width="4"/>
+    <path d="M 1090 92 l 26 12 l -26 12" fill="none" stroke="#E5C042" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M 1112 78 l 30 14 l -30 14" fill="none" stroke="#DE7A3B" stroke-width="4" stroke-linejoin="round"/>
+    <circle cx="1102" cy="160" r="6" fill="#DE7A3B"/>
+    <circle cx="1128" cy="148" r="5" fill="#E5C042"/>
+    <circle cx="1148" cy="166" r="4" fill="#3E8E7E"/>
+  </g>
 
-  <!-- arrow -->
-  <path d="M804 360 L840 360 M828 348 L840 360 L828 372" stroke="#5b8fc4" stroke-width="3" fill="none"/>
+  <!-- feeder lines: closed breaker = patented -->
+  <g>
+    <rect x="64" y="216" width="656" height="56" fill="#3B6FA0" opacity="0.07"/>
+    <rect x="64" y="284" width="656" height="56" fill="#3B6FA0" opacity="0.07"/>
+    <rect x="64" y="352" width="656" height="56" fill="#3B6FA0" opacity="0.07"/>
+    <rect x="64" y="420" width="656" height="56" fill="#3B6FA0" opacity="0.07"/>
 
-  <!-- Column 3: opportunity -->
-  <rect x="852" y="196" width="288" height="330" rx="10" fill="#12314a" stroke="#4f86b8"/>
-  <text x="876" y="238" fill="#ffd479" font-size="22" font-weight="700">一个人能做的机会</text>
-  <text x="876" y="280" fill="#e8eef5" font-size="17" font-weight="700">PR 质检工具与验收报告</text>
-  <text x="876" y="312" fill="#9fb6cc" font-size="15">GitHub API + 现成大模型打标</text>
-  <text x="876" y="336" fill="#9fb6cc" font-size="15">无效评论 / 漏审 / 返工归因</text>
-  <text x="876" y="378" fill="#e8eef5" font-size="17">交付前质检单次 3000-8000 元</text>
-  <text x="876" y="412" fill="#e8eef5" font-size="17">仓库巡检订阅 $19-49/月</text>
-  <text x="876" y="454" fill="#9fb6cc" font-size="15">起步月成本数百元</text>
-  <text x="876" y="478" fill="#9fb6cc" font-size="15">1 人 4 周出 MVP</text>
+    <text class="b" x="150" y="210" text-anchor="end">线路 / 受让人</text>
+    <text class="b" x="600" y="210" text-anchor="middle">合闸状态</text>
+    <text class="b" x="688" y="210" text-anchor="end">公开 · 授权</text>
 
-  <text x="60" y="580" fill="#5f7d9c" font-size="15">读者：个人开发者 / 一人公司 / 3 人以内小团队 · 信息落点：专利信号 → 技术趋势 → 今天能动手的机会</text>
+    <text class="rl" x="150" y="250" text-anchor="end">评审生成</text>
+    <line x1="176" y1="245" x2="548" y2="245" stroke="url(#gBlue)" stroke-width="3.5"/>
+    <circle cx="560" cy="245" r="8" fill="url(#gBlue)"/>
+    <text class="rl" x="600" y="250" fill="#3B6FA0">合闸</text>
+    <text class="b" x="688" y="249" text-anchor="end">2026-09-17 · 继续申请</text>
+
+    <text class="rl" x="150" y="318" text-anchor="end">意图预测</text>
+    <line x1="176" y1="313" x2="548" y2="313" stroke="url(#gViolet)" stroke-width="3.5"/>
+    <circle cx="560" cy="313" r="8" fill="url(#gViolet)"/>
+    <text class="rl" x="600" y="318" fill="#7065A8">合闸</text>
+    <text class="b" x="688" y="317" text-anchor="end">2025-03-27 · 申请</text>
+
+    <text class="rl" x="150" y="386" text-anchor="end">PR 摘要</text>
+    <line x1="176" y1="381" x2="548" y2="381" stroke="url(#gTeal)" stroke-width="3.5"/>
+    <circle cx="560" cy="381" r="8" fill="url(#gTeal)"/>
+    <text class="rl" x="600" y="386" fill="#3E8E7E">合闸</text>
+    <text class="b" x="688" y="385" text-anchor="end">2025-12-02 · 授权</text>
+
+    <text class="rl" x="150" y="454" text-anchor="end">多智能体裁决</text>
+    <line x1="176" y1="449" x2="548" y2="449" stroke="url(#gYellow)" stroke-width="3.5"/>
+    <circle cx="560" cy="449" r="8" fill="url(#gYellow)"/>
+    <text class="rl" x="600" y="454" fill="#A8891F">合闸</text>
+    <text class="b" x="688" y="453" text-anchor="end">2026-03-05 · 申请</text>
+
+    <!-- open switch: acceptance layer -->
+    <text class="rl" x="150" y="522" text-anchor="end" font-weight="700">验收层</text>
+    <line x1="176" y1="517" x2="330" y2="517" stroke="#DE7A3B" stroke-width="3.5" stroke-dasharray="2 7" stroke-linecap="round"/>
+    <line x1="330" y1="517" x2="545" y2="480" stroke="url(#gOrange)" stroke-width="4.5" stroke-linecap="round"/>
+    <circle cx="330" cy="517" r="6" fill="none" stroke="#DE7A3B" stroke-width="3"/>
+    <circle cx="560" cy="517" r="8" fill="none" stroke="#DE7A3B" stroke-width="3"/>
+    <text class="rl" x="600" y="522" fill="#DE7A3B" font-weight="700">未合闸</text>
+    <text class="b" x="688" y="521" text-anchor="end">公开口径无成型标准</text>
+  </g>
+
+  <!-- right: open meters -->
+  <g>
+    <text class="rl" x="806" y="252" font-weight="700">验收侧缺的三块表</text>
+    <text class="b" x="806" y="278">公开口径尚无成型标准 · 指针悬空</text>
+
+    <g>
+      <path d="M 806 372 a 46 46 0 0 1 92 0" fill="none" stroke="#DE7A3B" stroke-width="6" stroke-linecap="round" opacity="0.85"/>
+      <line x1="852" y1="372" x2="828" y2="338" stroke="#3D4650" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="852" cy="372" r="5" fill="#3D4650"/>
+      <text x="852" y="398" text-anchor="middle" font-size="13" fill="#4A525C">误报率</text>
+      <text class="b" x="886" y="418" text-anchor="end">无口径</text>
+    </g>
+    <g>
+      <path d="M 936 372 a 46 46 0 0 1 92 0" fill="none" stroke="#E5C042" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+      <line x1="982" y1="372" x2="958" y2="338" stroke="#3D4650" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="982" cy="372" r="5" fill="#3D4650"/>
+      <text x="982" y="398" text-anchor="middle" font-size="13" fill="#4A525C">采纳率</text>
+      <text class="b" x="1016" y="418" text-anchor="end">无口径</text>
+    </g>
+    <g>
+      <path d="M 1066 372 a 46 46 0 0 1 92 0" fill="none" stroke="#7065A8" stroke-width="6" stroke-linecap="round" opacity="0.85"/>
+      <line x1="1112" y1="372" x2="1088" y2="338" stroke="#3D4650" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="1112" cy="372" r="5" fill="#3D4650"/>
+      <text x="1112" y="398" text-anchor="middle" font-size="13" fill="#4A525C">拦截率</text>
+      <text class="b" x="1146" y="418" text-anchor="end">无口径</text>
+    </g>
+
+    <line x1="806" y1="448" x2="1136" y2="448" stroke="#DDE4EA"/>
+    <g>
+      <rect x="806" y="462" width="96" height="26" rx="13" fill="#3B6FA0" opacity="0.22"/>
+      <text x="854" y="480" text-anchor="middle" font-size="12" fill="#31597F">GitHub API</text>
+      <rect x="910" y="462" width="76" height="26" rx="13" fill="#3E8E7E" opacity="0.22"/>
+      <text x="948" y="480" text-anchor="middle" font-size="12" fill="#2E6B5E">Python</text>
+      <rect x="994" y="462" width="70" height="26" rx="13" fill="#7065A8" opacity="0.22"/>
+      <text x="1029" y="480" text-anchor="middle" font-size="12" fill="#59508A">SQLite</text>
+    </g>
+
+    <text class="b" x="806" y="506">单人可接 · 月成本数百元</text>
+    <text class="val" x="806" y="544" font-size="26" fill="#DE7A3B">1 人 4 周出 MVP</text>
+    <text class="b" x="1136" y="544" text-anchor="end">报告 3000-8000 元 · 订阅 $19-49/月</text>
+  </g>
+
+  <line x1="64" y1="568" x2="1136" y2="568" stroke="#E2E8EC"/>
+  <text x="64" y="600" font-size="15.5" fill="#3D4650">专利锁的是怎么审，不是怎么评审判得好不好。</text>
+  <text class="b" x="64" y="628">前三件为已公开申请、尚未授权 · 受让人以专利登记为准 · 简报非投资建议 · Micropaper</text>
 </svg>

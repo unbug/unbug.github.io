@@ -1,51 +1,85 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" font-family="Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif">
-  <rect width="960" height="640" fill="#ffffff"/>
-  <text x="480" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a2e">两个流行叙事，各缺一个对照组</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9A917C; }
+      .rl { font-size: 15px; fill: #47484C; }
+      .val { font-size: 20px; font-weight: 700; fill: #1E2430; }
+      .b { font-size: 12px; fill: #A69F8B; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F4EC"/>
+    </linearGradient>
+    <linearGradient id="gBrass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B08D3E"/><stop offset="1" stop-color="#D8B968"/>
+    </linearGradient>
+    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2E5C8A"/><stop offset="1" stop-color="#6C93BC"/>
+    </linearGradient>
+    <linearGradient id="gWine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A63A50"/><stop offset="1" stop-color="#CF6E80"/>
+    </linearGradient>
+  </defs>
 
-  <!-- experiment 1 -->
-  <rect x="40" y="60" width="420" height="230" rx="8" fill="#eef4ff" stroke="#3b6ea5" stroke-width="2"/>
-  <text x="60" y="88" font-size="16" font-weight="bold" fill="#1a1a2e">检验一：顿悟时刻 vs 重启对照</text>
-  <rect x="60" y="105" width="180" height="54" rx="6" fill="#ffffff" stroke="#3b6ea5"/>
-  <text x="150" y="127" text-anchor="middle" font-size="13" fill="#333">写到一半的前缀</text>
-  <text x="150" y="147" text-anchor="middle" font-size="13" fill="#333">继续写完</text>
-  <rect x="260" y="105" width="180" height="54" rx="6" fill="#ffffff" stroke="#3b6ea5"/>
-  <text x="350" y="127" text-anchor="middle" font-size="13" fill="#333">从空白重启</text>
-  <text x="350" y="147" text-anchor="middle" font-size="13" fill="#333">对齐总 token 预算</text>
-  <text x="60" y="185" font-size="14" fill="#c0392b">178 个题目-模型组合：恰好 1 个前缀真正受限</text>
-  <text x="60" y="209" font-size="14" fill="#333">预算落在重启网格内：继续写胜过重启 9/9</text>
-  <text x="60" y="238" font-size="14" font-weight="bold" fill="#1a1a2e">推理链压缩计算（compute compression），</text>
-  <text x="60" y="258" font-size="14" font-weight="bold" fill="#1a1a2e">不扩大可解题目的边界</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1108" cy="108" r="130" fill="#2E5C8A" opacity="0.06"/>
+  <circle cx="72" cy="618" r="115" fill="#B08D3E" opacity="0.08"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gBrass)"/>
 
-  <!-- experiment 2 -->
-  <rect x="500" y="60" width="420" height="230" rx="8" fill="#fdeeee" stroke="#c0392b" stroke-width="2"/>
-  <text x="520" y="88" font-size="16" font-weight="bold" fill="#1a1a2e">检验二：早期探针 vs 难度基线</text>
-  <text x="520" y="116" font-size="14" fill="#333">只看题目、不看轨迹的难度代理：</text>
-  <text x="520" y="140" font-size="15" font-weight="bold" fill="#c0392b">AUROC 0.873（192K 条 R1 生成）</text>
-  <text x="520" y="162" font-size="13" fill="#555">已落进已发表探针法的报告区间</text>
-  <text x="520" y="190" font-size="14" fill="#333">贴近复现：池化口径 0.849 可复刻阳性结果；</text>
-  <text x="520" y="212" font-size="14" fill="#c0392b">收进到同题内部，十个锚点全部 ≈ 抛硬币</text>
-  <text x="520" y="234" font-size="14" fill="#c0392b">（t=4 处仅 0.496）</text>
-  <text x="520" y="262" font-size="13" fill="#555">同一估计器在 GPQA-diamond 公开数据达 0.917</text>
+  <text class="k" x="64" y="84">一分钟读论文 NO.175 · ARXIV:2609.03436</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1E2430">顿悟是表针，不是机芯</text>
+  <text x="64" y="158" font-size="15" fill="#6C6858">给两种热门读法各补一个反事实对照</text>
 
-  <!-- two prescriptions -->
-  <rect x="40" y="312" width="880" height="86" rx="8" fill="#eef9f1" stroke="#2e9e5b" stroke-width="2"/>
-  <text x="60" y="340" font-size="15" font-weight="bold" fill="#1a1a2e">给轨迹分析的两条处方</text>
-  <text x="60" y="366" font-size="14" fill="#333">任何「早期信号预测成败」的结论，先跑一遍只看题目的难度基线；</text>
-  <text x="60" y="388" font-size="14" fill="#333">任何「继续写更好」的结论，先对齐总预算再做重启对照。</text>
+  <!-- watchmaker icon: dial + gears -->
+  <g>
+    <circle cx="1068" cy="116" r="44" fill="#FFFFFF" stroke="url(#gBrass)" stroke-width="6"/>
+    <circle cx="1068" cy="116" r="3.5" fill="#A63A50"/>
+    <line x1="1068" y1="116" x2="1068" y2="86" stroke="#2E5C8A" stroke-width="4" stroke-linecap="round"/>
+    <line x1="1068" y1="116" x2="1090" y2="126" stroke="#A63A50" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="1068" cy="74" r="4" fill="#B08D3E"/>
+    <circle cx="1110" cy="116" r="4" fill="#B08D3E"/>
+    <circle cx="1026" cy="116" r="4" fill="#B08D3E"/>
+    <g>
+      <circle cx="1006" cy="164" r="20" fill="none" stroke="#8C97A3" stroke-width="7" stroke-dasharray="7 6"/>
+      <circle cx="1006" cy="164" r="7" fill="#8C97A3"/>
+      <circle cx="1132" cy="70" r="14" fill="none" stroke="#B08D3E" stroke-width="6" stroke-dasharray="5 5"/>
+    </g>
+  </g>
 
-  <!-- boundary -->
-  <rect x="40" y="420" width="420" height="96" rx="8" fill="#fff8e6" stroke="#d4a017" stroke-width="2"/>
-  <text x="60" y="448" font-size="14" font-weight="bold" fill="#555">边界</text>
-  <text x="60" y="472" font-size="13" fill="#555">单作者预印本，未经同行评审；但核心实验为</text>
-  <text x="60" y="492" font-size="13" fill="#555">预设注册设计。1/178 不等于 0，有一个组合</text>
-  <text x="60" y="510" font-size="13" fill="#555">前缀确实受限；结论限定池化评测口径。</text>
+  <!-- left test: restart control -->
+  <g>
+    <rect x="64" y="196" width="520" height="290" fill="#2E5C8A" opacity="0.05"/>
+    <rect x="80" y="216" width="14" height="14" rx="3" fill="url(#gBlue)"/>
+    <text class="rl" x="104" y="228" font-weight="700">检验一 · 重启对照截断探针</text>
 
-  <!-- takeaway -->
-  <rect x="500" y="420" width="420" height="96" rx="8" fill="#f4f4f4" stroke="#999" stroke-width="1.5"/>
-  <text x="520" y="448" font-size="14" font-weight="bold" fill="#1a1a2e">为什么值得读</text>
-  <text x="520" y="472" font-size="13" fill="#333">过程奖励模型、提前退出、可解释性团队每天</text>
-  <text x="520" y="492" font-size="13" fill="#333">都在从轨迹里读结论；这篇给出最便宜的伪影</text>
-  <text x="520" y="510" font-size="13" fill="#333">自查法：难度基线 + 预算对齐重启。</text>
+    <text class="serif" x="96" y="308" font-size="58" font-weight="700" fill="#A63A50">1 / 178</text>
+    <text x="96" y="338" font-size="14.5" fill="#47484C">前缀真正受限的组合</text>
+    <text class="b" x="96" y="360">89 道 MATH 题 × 2 个小模型</text>
 
-  <text x="480" y="560" text-anchor="middle" font-size="13" fill="#777">It's the Problem, Not the Path: Budget and Difficulty Confounds in LLM Reasoning Trajectories · arXiv:2609.03436 · 2026-09-03</text>
+    <line x1="96" y1="392" x2="336" y2="392" stroke="url(#gBrass)" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <text class="serif" x="96" y="440" font-size="34" font-weight="700" fill="#8A6B2C">9 / 9</text>
+    <text x="216" y="434" font-size="14.5" fill="#47484C">同预算下继续写胜过重启</text>
+    <text x="216" y="456" font-size="13" fill="#8A6B2C">前缀价值 = 压缩计算，非扩大边界</text>
+  </g>
+
+  <!-- right test: difficulty baseline -->
+  <g>
+    <rect x="616" y="196" width="520" height="290" fill="#A63A50" opacity="0.05"/>
+    <rect x="632" y="216" width="14" height="14" rx="3" fill="url(#gWine)"/>
+    <text class="rl" x="656" y="228" font-weight="700">检验二 · 只看题目的难度基线</text>
+
+    <text class="serif" x="648" y="308" font-size="58" font-weight="700" fill="#2E5C8A">0.873</text>
+    <text x="648" y="338" font-size="14.5" fill="#47484C">难度代理 AUROC · 192K 条 R1 生成</text>
+    <text class="b" x="648" y="360">已落进已发表探针法的报告区间</text>
+
+    <line x1="648" y1="392" x2="888" y2="392" stroke="url(#gBrass)" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <text class="serif" x="648" y="440" font-size="34" font-weight="700" fill="#A63A50">0.496</text>
+    <text x="790" y="434" font-size="14.5" fill="#47484C">收进同题内 t=4 · 十个锚点全同抛硬币</text>
+    <text x="790" y="456" font-size="13" fill="#A63A50">0.917 同时在 MATH / GPQA dump 上成立</text>
+  </g>
+
+  <line x1="64" y1="524" x2="1136" y2="524" stroke="#E9E2CD"/>
+  <text x="64" y="558" font-size="15.5" fill="#47484C">处方两条：先跑只看题目的基线；先对齐总预算再做重启对照。</text>
+  <text class="b" x="64" y="588">池化 0.849 可复刻，within-problem 归零 · 1/178 不等于 0</text>
+  <text class="b" x="1136" y="588" text-anchor="end">单作者预印本 · 预设注册设计 · Micropaper</text>
 </svg>

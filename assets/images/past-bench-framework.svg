@@ -1,91 +1,119 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Arial, Helvetica, sans-serif">
-  <rect width="800" height="500" fill="#fafbfc"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9A8F7C; }
+      .rl { font-size: 15px; fill: #45413A; }
+      .val { font-size: 20px; font-weight: 700; }
+      .b { font-size: 12px; fill: #ABA48F; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F2E9"/>
+    </linearGradient>
+    <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4F8A3D"/><stop offset="1" stop-color="#93BC6B"/>
+    </linearGradient>
+    <linearGradient id="gRed" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B5442E"/><stop offset="1" stop-color="#D97A55"/>
+    </linearGradient>
+    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C99327"/><stop offset="1" stop-color="#EBC55E"/>
+    </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2E7D8C"/><stop offset="1" stop-color="#74B4BE"/>
+    </linearGradient>
+    <linearGradient id="gPlum" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7D5A96"/><stop offset="1" stop-color="#B08FC4"/>
+    </linearGradient>
+  </defs>
 
-  <!-- Title -->
-  <text x="400" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a2e">PAST-Bench: Recursive Self-Improvement Evaluation Framework</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1110" cy="95" r="125" fill="#2E7D8C" opacity="0.06"/>
+  <circle cx="75" cy="615" r="115" fill="#4F8A3D" opacity="0.06"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gGold)"/>
 
-  <!-- Top row: Task Family Sequences -->
-  <rect x="40" y="55" width="320" height="80" rx="6" fill="#eef2ff" stroke="#6366f1" stroke-width="1.5"/>
-  <text x="200" y="78" text-anchor="middle" font-size="13" font-weight="bold" fill="#4338ca">Task Family Sequences</text>
-  <text x="200" y="96" text-anchor="middle" font-size="11" fill="#555">Ordered episode sequences with</text>
-  <text x="200" y="110" text-anchor="middle" font-size="11" fill="#555">matched persistence-on/off control</text>
+  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2608.04003 · CUHK/阿里</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#26231D">留经验，才见真长进</text>
+  <text x="64" y="158" font-size="15" fill="#6E6757">PAST-Bench：匹配控制组隔离「经验保留」的因果效应</text>
 
-  <!-- Arrow down -->
-  <line x1="200" y1="135" x2="200" y2="165" stroke="#6366f1" stroke-width="1.5"/>
-  <polygon points="195,162 200,172 205,162" fill="#6366f1"/>
+  <!-- greenhouse motif -->
+  <g>
+    <path d="M 1020 150 v -46 a 52 52 0 0 1 104 0 v 46" fill="#2E7D8C" opacity="0.14"/>
+    <path d="M 1020 150 v -46 a 52 52 0 0 1 104 0 v 46" fill="none" stroke="#2E7D8C" stroke-width="3"/>
+    <line x1="1072" y1="54" x2="1072" y2="150" stroke="#2E7D8C" stroke-width="2" opacity="0.6"/>
+    <line x1="1020" y1="150" x2="1124" y2="150" stroke="#45413A" stroke-width="3"/>
+    <path d="M 1072 150 v -26" stroke="#4F8A3D" stroke-width="3.5"/>
+    <path d="M 1072 132 q -18 -4 -22 -20 q 18 2 22 20" fill="url(#gGreen)"/>
+    <path d="M 1072 126 q 18 -4 22 -20 q -18 2 -22 20" fill="url(#gGreen)"/>
+    <circle cx="1072" cy="118" r="5" fill="url(#gGold)"/>
+    <text class="b" x="1072" y="178" text-anchor="middle">同一品种 · 两畦对照</text>
+  </g>
 
-  <!-- Middle row: Four capability dimensions -->
-  <rect x="40" y="175" width="155" height="90" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
-  <text x="117" y="198" text-anchor="middle" font-size="12" font-weight="bold" fill="#92400e">memory_ability</text>
-  <text x="117" y="216" text-anchor="middle" font-size="10" fill="#555">Preferences, constraints,</text>
-  <text x="117" y="230" text-anchor="middle" font-size="10" fill="#555">prior examples</text>
-  <text x="117" y="248" text-anchor="middle" font-size="10" fill="#92400e">5 task families, 41 eps</text>
+  <!-- matched control: two rows of episodes -->
+  <g>
+    <text class="rl" x="64" y="216" font-weight="700" fill="#26231D">匹配控制组 · 有序 episode 序列</text>
 
-  <rect x="205" y="175" width="155" height="90" rx="6" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
-  <text x="282" y="198" text-anchor="middle" font-size="12" font-weight="bold" fill="#065f46">procedural_ability</text>
-  <text x="282" y="216" text-anchor="middle" font-size="10" fill="#555">Process and skill reuse</text>
-  <text x="282" y="230" text-anchor="middle" font-size="10" fill="#555">Cross-session workflow</text>
-  <text x="282" y="248" text-anchor="middle" font-size="10" fill="#065f46">8 task families, 64 eps</text>
+    <rect x="64" y="230" width="640" height="56" rx="8" fill="#4F8A3D" opacity="0.07"/>
+    <text class="rl" x="84" y="264">经验持久化 开</text>
+    <g fill="url(#gGreen)">
+      <circle cx="240" cy="258" r="11"/><circle cx="286" cy="258" r="11"/><circle cx="332" cy="258" r="11"/><circle cx="378" cy="258" r="11"/><circle cx="424" cy="258" r="11"/><circle cx="470" cy="258" r="11"/>
+    </g>
+    <path d="M 500 258 h 60" stroke="#4F8A3D" stroke-width="2.5" stroke-dasharray="4 5"/>
+    <path d="M 560 258 l -10 -6 v 12 z" fill="#4F8A3D"/>
+    <text class="val" x="586" y="265" fill="#3D6B2E" font-size="16">跨会话改进</text>
 
-  <rect x="370" y="175" width="155" height="90" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
-  <text x="447" y="198" text-anchor="middle" font-size="12" font-weight="bold" fill="#5b21b6">proactive_info_gather</text>
-  <text x="447" y="216" text-anchor="middle" font-size="10" fill="#555">Pre-action context lookup</text>
-  <text x="447" y="230" text-anchor="middle" font-size="10" fill="#555">Prior session awareness</text>
-  <text x="447" y="248" text-anchor="middle" font-size="10" fill="#5b21b6">6 task families, 48 eps</text>
+    <rect x="64" y="298" width="640" height="56" rx="8" fill="#B5442E" opacity="0.06"/>
+    <text class="rl" x="84" y="332">经验持久化 关</text>
+    <g fill="#FFFFFF" stroke="#B5442E" stroke-width="2.5">
+      <circle cx="240" cy="326" r="11"/><circle cx="286" cy="326" r="11"/><circle cx="332" cy="326" r="11"/><circle cx="378" cy="326" r="11"/><circle cx="424" cy="326" r="11"/><circle cx="470" cy="326" r="11"/>
+    </g>
+    <path d="M 500 326 h 60" stroke="#B5442E" stroke-width="2.5" stroke-dasharray="4 5" opacity="0.6"/>
+    <path d="M 560 326 l -10 -6 v 12 z" fill="#B5442E" opacity="0.6"/>
+    <text class="val" x="586" y="333" fill="#8A2E1E" font-size="16">基线对照</text>
 
-  <rect x="535" y="175" width="155" height="90" rx="6" fill="#fce7f3" stroke="#db2777" stroke-width="1.5"/>
-  <text x="612" y="198" text-anchor="middle" font-size="12" font-weight="bold" fill="#9d174d">update_ability</text>
-  <text x="612" y="216" text-anchor="middle" font-size="10" fill="#555">Replace outdated facts,</text>
-  <text x="612" y="230" text-anchor="middle" font-size="10" fill="#555">rules, and procedures</text>
-  <text x="612" y="248" text-anchor="middle" font-size="10" fill="#9d174d">7 task families, 51 eps</text>
+    <text class="b" x="64" y="384">「模型本身强」与「从经验变强」分开量 · 增益不均衡，能力与模型依赖</text>
+  </g>
 
-  <!-- Arrows down -->
-  <line x1="117" y1="265" x2="117" y2="295" stroke="#888" stroke-width="1"/>
-  <line x1="282" y1="265" x2="282" y2="295" stroke="#888" stroke-width="1"/>
-  <line x1="447" y1="265" x2="447" y2="295" stroke="#888" stroke-width="1"/>
-  <line x1="612" y1="265" x2="612" y2="295" stroke="#888" stroke-width="1"/>
+  <!-- scale anchor -->
+  <g>
+    <text class="serif" x="1136" y="230" text-anchor="end" font-size="52" font-weight="700" fill="#26231D">26 <tspan font-size="22" fill="#6E6757">族</tspan> × <tspan fill="#B5442E">204</tspan></text>
+    <text x="1136" y="258" text-anchor="end" font-size="14" fill="#45413A">任务族 × episode · 7 个基础模型 × 4 种框架</text>
+    <text class="b" x="1136" y="280" text-anchor="end">机制级归因：artifact 与 trace 双层证据</text>
+  </g>
 
-  <!-- Convergence arrow -->
-  <path d="M117,295 L400,320 L612,295" fill="none" stroke="#888" stroke-width="1"/>
+  <!-- four capabilities chips -->
+  <g>
+    <text class="rl" x="64" y="428" font-weight="700" fill="#26231D">四大能力维度</text>
+    <rect x="64" y="444" width="158" height="42" rx="8" fill="#2E7D8C" opacity="0.14"/>
+    <text x="143" y="462" text-anchor="middle" font-size="13.5" font-weight="700" fill="#22606C">记忆能力</text>
+    <text x="143" y="479" text-anchor="middle" font-size="11.5" fill="#456068">留住偏好与约束</text>
+    <rect x="234" y="444" width="158" height="42" rx="8" fill="#4F8A3D" opacity="0.13"/>
+    <text x="313" y="462" text-anchor="middle" font-size="13.5" font-weight="700" fill="#3D6B2E">流程能力</text>
+    <text x="313" y="479" text-anchor="middle" font-size="11.5" fill="#52684A">复用流程与技能</text>
+    <rect x="404" y="444" width="176" height="42" rx="8" fill="#C99327" opacity="0.17"/>
+    <text x="492" y="462" text-anchor="middle" font-size="13.5" font-weight="700" fill="#8A6614">主动查旧</text>
+    <text x="492" y="479" text-anchor="middle" font-size="11.5" fill="#7A6738">动手前先找上下文</text>
+    <rect x="592" y="444" width="158" height="42" rx="8" fill="#7D5A96" opacity="0.15"/>
+    <text x="671" y="462" text-anchor="middle" font-size="13.5" font-weight="700" fill="#5F4273">更新能力</text>
+    <text x="671" y="479" text-anchor="middle" font-size="11.5" fill="#5F5570">替换过时的事实</text>
+  </g>
 
-  <!-- Mechanism Attribution box -->
-  <rect x="250" y="300" width="300" height="70" rx="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
-  <text x="400" y="323" text-anchor="middle" font-size="13" font-weight="bold" fill="#0369a1">Mechanism-Level Attribution</text>
-  <text x="400" y="341" text-anchor="middle" font-size="11" fill="#555">Artifact-level + Trace-level evidence</text>
-  <text x="400" y="357" text-anchor="middle" font-size="11" fill="#555">Distinguish true experience reuse from surface gains</text>
+  <!-- Hermes+ five mechanisms -->
+  <g>
+    <rect x="786" y="316" width="350" height="238" rx="12" fill="#C99327" opacity="0.08"/>
+    <rect x="786" y="316" width="350" height="6" rx="3" fill="url(#gGold)"/>
+    <text class="serif" x="812" y="358" font-size="23" font-weight="700" fill="#26231D">Hermes+ 五道农时</text>
+    <g font-size="14" fill="#45413A">
+      <text x="812" y="392">Plan <tspan fill="#8A8375" font-size="12.5">先规划经验用法</tspan></text>
+      <text x="812" y="420">Render <tspan fill="#8A8375" font-size="12.5">改进经验表示</tspan></text>
+      <text x="812" y="448">Route <tspan fill="#8A8375" font-size="12.5">检索路由更准</tspan></text>
+      <text x="812" y="476">Gate <tspan fill="#8A8375" font-size="12.5">质量门控把关</tspan></text>
+      <text x="812" y="504">Close <tspan fill="#8A8375" font-size="12.5">管好状态收口</tspan></text>
+    </g>
+    <text class="b" x="812" y="536" fill="#8A6614">换旧状态的任务上改进最显著</text>
+  </g>
 
-  <!-- Arrow down -->
-  <line x1="400" y1="370" x2="400" y2="400" stroke="#0284c7" stroke-width="1.5"/>
-  <polygon points="395,397 400,407 405,397" fill="#0284c7"/>
-
-  <!-- Bottom: Hermes+ -->
-  <rect x="100" y="410" width="600" height="75" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
-  <text x="400" y="432" text-anchor="middle" font-size="13" font-weight="bold" fill="#166534">Hermes+ Improvement Framework</text>
-
-  <!-- Five mechanisms -->
-  <rect x="120" y="442" width="80" height="30" rx="4" fill="#bbf7d0"/>
-  <text x="160" y="461" text-anchor="middle" font-size="10" font-weight="bold" fill="#166534">Plan</text>
-
-  <rect x="215" y="442" width="80" height="30" rx="4" fill="#bbf7d0"/>
-  <text x="255" y="461" text-anchor="middle" font-size="10" font-weight="bold" fill="#166534">Render</text>
-
-  <rect x="310" y="442" width="80" height="30" rx="4" fill="#bbf7d0"/>
-  <text x="350" y="461" text-anchor="middle" font-size="10" font-weight="bold" fill="#166534">Route</text>
-
-  <rect x="405" y="442" width="80" height="30" rx="4" fill="#bbf7d0"/>
-  <text x="445" y="461" text-anchor="middle" font-size="10" font-weight="bold" fill="#166534">Gate</text>
-
-  <rect x="500" y="442" width="80" height="30" rx="4" fill="#bbf7d0"/>
-  <text x="540" y="461" text-anchor="middle" font-size="10" font-weight="bold" fill="#166534">Close</text>
-
-  <!-- Right side: Key stats -->
-  <rect x="680" y="55" width="100" height="120" rx="6" fill="#fef9c3" stroke="#ca8a04" stroke-width="1"/>
-  <text x="730" y="75" text-anchor="middle" font-size="11" font-weight="bold" fill="#854d0e">Key Stats</text>
-  <text x="730" y="92" text-anchor="middle" font-size="10" fill="#555">26 task families</text>
-  <text x="730" y="106" text-anchor="middle" font-size="10" fill="#555">204 episodes</text>
-  <text x="730" y="120" text-anchor="middle" font-size="10" fill="#555">7 base models</text>
-  <text x="730" y="134" text-anchor="middle" font-size="10" fill="#555">4 agent frameworks</text>
-
-  <!-- Bottom right: Source -->
-  <text x="790" y="492" text-anchor="end" font-size="9" fill="#999">Source: arXiv:2608.04003v1</text>
+  <line x1="64" y1="580" x2="1136" y2="580" stroke="#E7E1CF"/>
+  <text class="serif" x="64" y="612" font-size="19" fill="#26231D">表面增益未必来自经验复用——归因要看机制，不看总分。</text>
+  <text class="b" x="64" y="642">评估器用 MiniMax-M2.7 做 judge · Hermes+ 跨框架通用性未验证 · Micropaper</text>
 </svg>

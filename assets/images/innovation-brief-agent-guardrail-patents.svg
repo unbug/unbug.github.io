@@ -1,67 +1,122 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1f3a;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#0d1528;stop-opacity:1"/>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9C9484; }
+      .rl { font-size: 15px; fill: #474C54; }
+      .b { font-size: 12px; fill: #A5A296; }
+      .chip { font-size: 12.5px; font-weight: 600; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F4F1EB"/>
     </linearGradient>
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#4a9eff;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#7c5cff;stop-opacity:1"/>
+    <linearGradient id="gVermil" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C2491D"/><stop offset="1" stop-color="#E37C45"/>
     </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2E7D6B"/><stop offset="1" stop-color="#68B39D"/>
+    </linearGradient>
+    <linearGradient id="gCoral" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C65B4E"/><stop offset="1" stop-color="#E08E7E"/>
+    </linearGradient>
+    <linearGradient id="gAmber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B8860B"/><stop offset="1" stop-color="#DCB24A"/>
+    </linearGradient>
+    <linearGradient id="gPlum" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7A3B6B"/><stop offset="1" stop-color="#A96C99"/>
+    </linearGradient>
+    <radialGradient id="gHalo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#68B39D" stop-opacity="0.5"/><stop offset="1" stop-color="#68B39D" stop-opacity="0"/>
+    </radialGradient>
   </defs>
 
-  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1096" cy="120" r="160" fill="#7A3B6B" opacity="0.05"/>
+  <circle cx="70" cy="640" r="110" fill="#C65B4E" opacity="0.05"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gVermil)"/>
 
-  <g opacity="0.05" stroke="#fff" stroke-width="0.5">
-    <line x1="0" y1="105" x2="1200" y2="105"/>
-    <line x1="0" y1="210" x2="1200" y2="210"/>
-    <line x1="0" y1="315" x2="1200" y2="315"/>
-    <line x1="0" y1="420" x2="1200" y2="420"/>
-    <line x1="0" y1="525" x2="1200" y2="525"/>
-    <line x1="300" y1="0" x2="300" y2="630"/>
-    <line x1="600" y1="0" x2="600" y2="630"/>
-    <line x1="900" y1="0" x2="900" y2="630"/>
+  <text class="k" x="64" y="84">AI 智创简报 · 2026-08-10 · AGENT 护栏专利</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">兜底这层，一人可接</text>
+  <text x="64" y="158" font-size="15" fill="#5B6068">2026 上半年四件专利同指三味药：记忆、校验、自愈——全在调用链上，不碰模型</text>
+
+  <!-- apothecary motif: three medicine bottles on a shelf -->
+  <g>
+    <circle cx="1030" cy="180" r="70" fill="url(#gHalo)"/>
+    <rect x="905" y="240" width="250" height="7" rx="3" fill="#B8763E"/>
+    <!-- bottle 1: memory -->
+    <rect x="926" y="150" width="52" height="82" rx="8" fill="url(#gTeal)" opacity="0.85"/>
+    <rect x="941" y="130" width="22" height="22" rx="3" fill="#20604F"/>
+    <rect x="933" y="172" width="38" height="30" rx="4" fill="#FBFAF7" opacity="0.9"/>
+    <line x1="939" y1="182" x2="965" y2="182" stroke="#2E7D6B" stroke-width="2.5"/>
+    <line x1="939" y1="192" x2="957" y2="192" stroke="#68B39D" stroke-width="2.5"/>
+    <!-- bottle 2: check -->
+    <rect x="1004" y="138" width="52" height="94" rx="8" fill="url(#gCoral)" opacity="0.9"/>
+    <rect x="1019" y="118" width="22" height="22" rx="3" fill="#A5443A"/>
+    <rect x="1011" y="164" width="38" height="30" rx="4" fill="#FBFAF7" opacity="0.9"/>
+    <path d="M 1018 179 L 1027 187 L 1041 171" stroke="#C65B4E" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <!-- bottle 3: self-heal -->
+    <rect x="1082" y="158" width="52" height="74" rx="8" fill="url(#gAmber)" opacity="0.9"/>
+    <rect x="1097" y="138" width="22" height="22" rx="3" fill="#8A6612"/>
+    <rect x="1089" y="178" width="38" height="30" rx="4" fill="#FBFAF7" opacity="0.9"/>
+    <path d="M 1108 184 a 8 8 0 1 1 -6 3" stroke="#B8860B" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+    <path d="M 1103 180 l -2 8 l 8 -3" fill="#B8860B"/>
+
+    <text x="952" y="272" text-anchor="middle" class="chip" fill="#20604F">记忆</text>
+    <text x="1030" y="272" text-anchor="middle" class="chip" fill="#A5443A">校验</text>
+    <text x="1108" y="272" text-anchor="middle" class="chip" fill="#8A6612">自愈</text>
   </g>
 
-  <rect x="70" y="58" width="182" height="34" rx="17" fill="url(#accentGrad)" opacity="0.18"/>
-  <text x="161" y="81" font-family="Helvetica,Arial,sans-serif" font-size="18" fill="#8ab4ff" text-anchor="middle">AI 智创简报</text>
+  <!-- three formula rows: patent -> remedy -->
+  <g>
+    <rect x="64" y="198" width="790" height="50" fill="#2E7D6B" opacity="0.07"/>
+    <rect x="64" y="256" width="790" height="50" fill="#C65B4E" opacity="0.07"/>
+    <rect x="64" y="314" width="790" height="50" fill="#B8860B" opacity="0.08"/>
+    <rect x="64" y="372" width="790" height="50" fill="#7A3B6B" opacity="0.07"/>
 
-  <text x="70" y="150" font-family="Helvetica,Arial,sans-serif" font-size="44" font-weight="bold" fill="#ffffff">Agent 纠错专利扎堆</text>
-  <text x="70" y="204" font-family="Helvetica,Arial,sans-serif" font-size="26" fill="#9aa8c7">跨会话记忆 · 幻觉检测 · 失败自愈</text>
-  <line x1="70" y1="234" x2="1130" y2="234" stroke="url(#accentGrad)" stroke-width="2" opacity="0.6"/>
+    <text class="chip" x="84" y="222" fill="#20604F">US20260044392 · Rutgers · 02-12</text>
+    <text class="rl" x="84" y="240">Agent 操作系统：内核含调度器与记忆管理器</text>
+    <text x="814" y="232" text-anchor="end" class="chip" fill="#9A937F">申请公开</text>
 
-  <!-- Stage 1: patent signal -->
-  <rect x="70" y="280" width="300" height="196" rx="12" fill="#141b33" stroke="#2c3a63" stroke-width="1.5"/>
-  <text x="98" y="318" font-family="Helvetica,Arial,sans-serif" font-size="20" fill="#4a9eff">专利信号</text>
-  <text x="98" y="356" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c8d2e8">US20260044392</text>
-  <text x="98" y="382" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c8d2e8">US20260188475</text>
-  <text x="98" y="408" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c8d2e8">US20260111248</text>
-  <text x="98" y="434" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c8d2e8">US 12,699,853</text>
-  <text x="98" y="460" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#7d8bab">2026-02 至 2026-08 公开</text>
+    <text class="chip" x="84" y="280" fill="#20604F">US20260188475 · Hippocratic AI · 07-02</text>
+    <text class="rl" x="84" y="298">跨会话记忆：知识图谱 + token 化 KV 缓存</text>
+    <text x="814" y="290" text-anchor="end" class="chip" fill="#9A937F">申请公开</text>
 
-  <path d="M 386 378 L 428 378" stroke="#4a9eff" stroke-width="2"/>
-  <path d="M 424 372 L 434 378 L 424 384 Z" fill="#4a9eff"/>
+    <text class="chip" x="84" y="338" fill="#8A6612">US20260111248 · UiPath · 04-23</text>
+    <text class="rl" x="84" y="356">卡住升级给人，解法记下供下次自愈</text>
+    <text x="814" y="348" text-anchor="end" class="chip" fill="#9A937F">申请公开</text>
 
-  <!-- Stage 2: trend -->
-  <rect x="450" y="280" width="300" height="196" rx="12" fill="#141b33" stroke="#2c3a63" stroke-width="1.5"/>
-  <text x="478" y="318" font-family="Helvetica,Arial,sans-serif" font-size="20" fill="#6b7dff">技术趋势</text>
-  <text x="478" y="356" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c8d2e8">记忆搬出模型权重</text>
-  <text x="478" y="382" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c8d2e8">答案反推问句做校验</text>
-  <text x="478" y="408" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c8d2e8">人工兜底沉淀成解法</text>
-  <text x="478" y="434" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c8d2e8">护栏都在调用链上</text>
-  <text x="478" y="460" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#7d8bab">不依赖自训模型</text>
+    <text class="chip" x="84" y="396" fill="#C2491D">US 12,699,853 · Microsoft · 08-04</text>
+    <text class="rl" x="84" y="414">幻觉检测：答案反推问句，向量距离打分</text>
+    <text x="814" y="406" text-anchor="end" class="chip" fill="#C2491D">已授权</text>
+  </g>
 
-  <path d="M 766 378 L 808 378" stroke="#7c5cff" stroke-width="2"/>
-  <path d="M 804 372 L 814 378 L 804 384 Z" fill="#7c5cff"/>
+  <!-- right column: market anchors -->
+  <g>
+    <rect x="886" y="314" width="250" height="108" rx="10" fill="#2E7D6B" opacity="0.1"/>
+    <text class="serif" x="906" y="364" font-size="30" font-weight="700" fill="#20604F">59%</text>
+    <text x="906" y="390" font-size="13.5" fill="#474C54">agentic AI 专利申请同比增速</text>
+    <text x="906" y="410" font-size="12.5" fill="#8B8574">已占 AI 专利总量 15%</text>
 
-  <!-- Stage 3: what one person can build -->
-  <rect x="830" y="280" width="300" height="196" rx="12" fill="#141b33" stroke="#3d3168" stroke-width="1.5"/>
-  <text x="858" y="318" font-family="Helvetica,Arial,sans-serif" font-size="20" fill="#7c5cff">一个人能做</text>
-  <text x="858" y="356" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c8d2e8">幻觉自查中间件</text>
-  <text x="858" y="382" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c8d2e8">会话记忆 SDK</text>
-  <text x="858" y="408" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c8d2e8">失败重放与工具日志</text>
-  <text x="858" y="434" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c8d2e8">Agent 交付质检报告</text>
-  <text x="858" y="460" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#7d8bab">起步成本：月均几百元</text>
+    <rect x="886" y="198" width="250" height="100" rx="10" fill="#B8860B" opacity="0.1"/>
+    <text class="serif" x="906" y="246" font-size="30" font-weight="700" fill="#8A6612">10 万件</text>
+    <text x="906" y="272" font-size="13.5" fill="#474C54">2025 全球 AI 专利授权首破此数</text>
+    <text x="906" y="290" font-size="12.5" fill="#8B8574">IFI Claims 统计</text>
+  </g>
 
-  <text x="70" y="556" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#7d8bab">AI 技术趋势 × 专利洞察 × 小团队机会 × 创业发现</text>
+  <!-- bottom: indie prescriptions -->
+  <line x1="64" y1="464" x2="1136" y2="464" stroke="#E8E3D2"/>
+  <g>
+    <rect x="64" y="486" width="118" height="30" rx="15" fill="url(#gCoral)" opacity="0.2"/>
+    <text x="123" y="506" text-anchor="middle" class="chip" fill="#A5443A">幻觉自查中间件</text>
+    <rect x="196" y="486" width="106" height="30" rx="15" fill="url(#gTeal)" opacity="0.22"/>
+    <text x="249" y="506" text-anchor="middle" class="chip" fill="#20604F">会话记忆库</text>
+    <rect x="316" y="486" width="106" height="30" rx="15" fill="url(#gAmber)" opacity="0.22"/>
+    <text x="369" y="506" text-anchor="middle" class="chip" fill="#8A6612">失败重放日志</text>
+    <text class="serif" x="452" y="507" font-size="22" font-weight="700" fill="#C2491D">一周</text>
+    <text x="506" y="506" font-size="14" fill="#474C54">可跑通 MVP</text>
+    <text class="rl" x="618" y="506">月均几百元起步成本</text>
+  </g>
+
+  <text class="serif" x="64" y="572" font-size="18" fill="#1A1B1E">没有一件是靠重新训练模型解决的，全都发生在调用链上。</text>
+  <text class="b" x="1136" y="628" text-anchor="end">前三件为申请公开不等于授权 · 专利保护实现路径，参考其揭示的问题 · Micropaper</text>
 </svg>

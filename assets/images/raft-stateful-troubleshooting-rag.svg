@@ -1,58 +1,107 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 620" font-family="-apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
-  <rect width="860" height="620" fill="#fbfbfd"/>
-  <text x="430" y="38" text-anchor="middle" font-size="21" font-weight="700" fill="#1a1a2e">RAFT：历史工单按阶段检索，而非整篇比对</text>
-  <text x="430" y="62" text-anchor="middle" font-size="13" fill="#666">arXiv:2609.20754 · Microsoft Redmond · EMNLP 2026 Industry Track 接收（2026-09-17 提交）</text>
-
-  <!-- 对比 -->
-  <rect x="40" y="88" width="380" height="150" rx="10" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
-  <text x="230" y="116" text-anchor="middle" font-size="15" font-weight="700" fill="#991b1b">传统 RAG：整篇文档</text>
-  <text x="230" y="144" text-anchor="middle" font-size="12" fill="#444">工单当静态文档切片入库</text>
-  <text x="230" y="166" text-anchor="middle" font-size="12" fill="#444">返回文字最像的整篇记录</text>
-  <text x="230" y="196" text-anchor="middle" font-size="12.5" fill="#b91c1c">匹配到的是「结局像」</text>
-  <text x="230" y="218" text-anchor="middle" font-size="12.5" fill="#b91c1c">不是「处境像」</text>
-
-  <rect x="440" y="88" width="380" height="150" rx="10" fill="#eef2ff" stroke="#c7d2fe" stroke-width="1.5"/>
-  <text x="630" y="116" text-anchor="middle" font-size="15" font-weight="700" fill="#3730a3">RAFT：时间线条目链</text>
-  <text x="630" y="144" text-anchor="middle" font-size="12" fill="#444">已关闭案例 → 有向 timeline entry 链</text>
-  <text x="630" y="166" text-anchor="middle" font-size="12" fill="#444">条目级匹配中间状态</text>
-  <text x="630" y="196" text-anchor="middle" font-size="12.5" fill="#3730a3">返回锚定在匹配状态的父案例轨迹</text>
-  <text x="630" y="218" text-anchor="middle" font-size="12.5" fill="#444">可选案例级图（可配置相似度）</text>
-
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
   <defs>
-    <marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
-      <path d="M0,0 L8,4.5 L0,9 z" fill="#94a3b8"/>
-    </marker>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #A3937A; }
+      .rl { font-size: 15px; fill: #4C4234; }
+      .val { font-size: 20px; font-weight: 700; }
+      .b { font-size: 12px; fill: #AC9F84; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FBF6EA"/>
+    </linearGradient>
+    <linearGradient id="gRed" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#963D46"/><stop offset="1" stop-color="#BE6A70"/>
+    </linearGradient>
+    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C19A49"/><stop offset="1" stop-color="#DEC07C"/>
+    </linearGradient>
+    <linearGradient id="gBrown" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7A5230"/><stop offset="1" stop-color="#A37C52"/>
+    </linearGradient>
+    <linearGradient id="gTaupe" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8A7A5E"/><stop offset="1" stop-color="#B0A184"/>
+    </linearGradient>
+    <linearGradient id="gSage" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6F7F5C"/><stop offset="1" stop-color="#95A47F"/>
+    </linearGradient>
   </defs>
-  <line x1="422" y1="163" x2="436" y2="163" stroke="#94a3b8" stroke-width="2" marker-end="url(#ar)"/>
 
-  <!-- 结果 -->
-  <rect x="40" y="268" width="780" height="140" rx="10" fill="#fffbeb" stroke="#fde68a" stroke-width="1.5"/>
-  <text x="60" y="296" font-size="14.5" font-weight="700" fill="#92400e">初始症状阶段（0% progress）Case Hit</text>
-  <rect x="60" y="312" width="560" height="34" rx="5" fill="#dcfce7"/>
-  <rect x="60" y="312" width="470" height="34" fill="#4ade80" opacity="0.55"/>
-  <text x="70" y="334" font-size="12.5" font-weight="700" fill="#14532d">RAFT 84.2%</text>
-  <rect x="60" y="352" width="560" height="34" rx="5" fill="#e2e8f0"/>
-  <rect x="60" y="352" width="376" height="34" fill="#94a3b8" opacity="0.5"/>
-  <text x="70" y="374" font-size="12.5" fill="#334155">传统 RAG 67.3% · HippoRAG2 65.0%</text>
-  <text x="640" y="330" font-size="11.5" fill="#a16207">每个推进阶段均优于基线；对最强基线的提升</text>
-  <text x="640" y="350" font-size="11.5" fill="#a16207">经按根因分组聚类的自助重采样检验显著</text>
-  <text x="640" y="374" font-size="11.5" fill="#b45309">Jira 部分原文自限：directional evidence</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1085" cy="112" r="140" fill="#7A5230" opacity="0.06"/>
+  <circle cx="80" cy="612" r="120" fill="#963D46" opacity="0.06"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gRed)"/>
 
-  <!-- 边界 -->
-  <rect x="40" y="430" width="540" height="136" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
-  <text x="60" y="458" font-size="14" font-weight="700" fill="#334155">五条折扣前提</text>
-  <text x="60" y="482" font-size="12" fill="#444">1. 合成基准出自 Microsoft Learn 自家文档，污染风险未排除</text>
-  <text x="60" y="502" font-size="12" fill="#444">2. Jira 仅方向性证据，非「真实场景验证通过」</text>
-  <text x="60" y="522" font-size="12" fill="#444">3. Case Hit 是检索指标，非端到端解决率</text>
-  <text x="60" y="542" font-size="12" fill="#444">4. 线性条目链对并行分支/回退流程未展开 · 5. 单一厂商无第三方复现</text>
+  <text class="k" x="64" y="84">一分钟读论文 · 2026-09-20 · ARXIV:2609.20754 · EMNLP26</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1E2430">查先例，要按阶段出价</text>
+  <text x="64" y="158" font-size="15" fill="#6E6350">时间线条目链 · 条目级检索 · 微软 RAFT</text>
 
-  <!-- 适用 -->
-  <rect x="600" y="430" width="220" height="136" rx="10" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
-  <text x="710" y="458" text-anchor="middle" font-size="13.5" font-weight="700" fill="#166534">可迁移的抽象</text>
-  <text x="710" y="486" text-anchor="middle" font-size="11.5" fill="#444">客服工单 / 运维 runbook</text>
-  <text x="710" y="506" text-anchor="middle" font-size="11.5" fill="#444">审批流 / 任何多阶段流程</text>
-  <text x="710" y="534" text-anchor="middle" font-size="11.5" fill="#166534">历史记录都带状态轨迹</text>
+  <!-- auction icon: gavel + block -->
+  <g>
+    <rect x="1042" y="152" width="96" height="16" rx="6" fill="url(#gBrown)"/>
+    <rect x="1060" y="140" width="60" height="12" rx="6" fill="#7A5230"/>
+    <rect x="1082" y="102" width="12" height="44" rx="5" fill="url(#gGold)" transform="rotate(32 1088 124)"/>
+    <rect x="1052" y="82" width="58" height="26" rx="9" fill="url(#gRed)" transform="rotate(32 1081 95)"/>
+    <circle cx="1156" cy="96" r="4" fill="#C19A49"/>
+    <circle cx="1166" cy="112" r="3" fill="#963D46"/>
+  </g>
 
-  <rect x="40" y="580" width="780" height="30" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="430" y="600" text-anchor="middle" font-size="11.5" fill="#64748b">不是通用 RAG 改进，是工单类有状态语料的检索抽象 · 评测直接测检索层，无需生产部署</text>
+  <!-- dumbbell: 0% progress lot, baseline hollow -> RAFT solid -->
+  <g>
+    <rect x="64" y="224" width="700" height="62" fill="#7A5230" opacity="0.07"/>
+    <rect x="64" y="298" width="700" height="62" fill="#7A5230" opacity="0.07"/>
+    <rect x="64" y="372" width="700" height="62" fill="#7A5230" opacity="0.07"/>
+    <rect x="64" y="446" width="700" height="62" fill="#7A5230" opacity="0.07"/>
+
+    <text class="rl" x="152" y="262" text-anchor="end">传统 RAG 基线</text>
+    <line x1="200" y1="257" x2="508.9" y2="257" stroke="url(#gRed)" stroke-width="3"/>
+    <circle cx="508.9" cy="257" r="9" fill="url(#gRed)"/>
+    <text class="val" x="526" y="264" fill="#963D46">67.3%</text>
+
+    <text class="rl" x="152" y="336" text-anchor="end">HippoRAG2</text>
+    <line x1="200" y1="331" x2="493.5" y2="331" stroke="url(#gGold)" stroke-width="3"/>
+    <circle cx="200" cy="331" r="7" fill="#FFFFFF" stroke="#8A7A5E" stroke-width="3"/>
+    <circle cx="493.5" cy="331" r="9" fill="url(#gGold)"/>
+    <text class="val" x="511" y="338" fill="#8F6E26">65.0%</text>
+
+    <text class="rl" x="152" y="410" text-anchor="end">其他 GraphRAG</text>
+    <line x1="200" y1="405" x2="421" y2="405" stroke="url(#gTaupe)" stroke-width="3"/>
+    <path d="M 421 397 a 8 8 0 0 1 0 16" fill="none" stroke="#8A7A5E" stroke-width="3"/>
+    <text class="val" x="440" y="412" fill="#736449">低于 HippoRAG2</text>
+
+    <text class="rl" x="152" y="484" text-anchor="end" font-weight="700">RAFT</text>
+    <line x1="200" y1="479" x2="626.2" y2="479" stroke="url(#gBrown)" stroke-width="4"/>
+    <circle cx="626.2" cy="479" r="10" fill="url(#gBrown)"/>
+    <text class="val" x="645" y="486" fill="#7A5230" font-size="24">84.2%</text>
+
+    <text class="b" x="200" y="532">Case Hit · 仅初始症状 0% progress 档位 · 越右越好</text>
+  </g>
+
+  <!-- right: timeline lot = the bid object -->
+  <g>
+    <text class="rl" x="820" y="250" font-weight="700">拍品不是整篇工单</text>
+    <text class="rl" x="820" y="276" fill="#963D46" font-weight="700">是走到某阶段的条目链</text>
+
+    <g>
+      <rect x="820" y="302" width="150" height="46" rx="8" fill="url(#gRed)" opacity="0.9"/>
+      <text x="895" y="322" text-anchor="middle" font-size="12.5" fill="#FFFFFF">0% · 初始症状</text>
+      <text x="895" y="340" text-anchor="middle" font-size="11" fill="#F3DCDD">锚定处 · 84.2%</text>
+      <path d="M 972 325 h 16 l -6 -5 m 6 5 l -6 5" stroke="#8A7A5E" stroke-width="2" fill="none"/>
+      <rect x="994" y="302" width="140" height="46" rx="8" fill="url(#gGold)" opacity="0.85"/>
+      <text x="1064" y="330" text-anchor="middle" font-size="12.5" fill="#4F3C14">中段 · 排查推进</text>
+      <path d="M 1136 325 h 14 l -5 -4 m 5 4 l -5 4" stroke="#8A7A5E" stroke-width="2" fill="none"/>
+      <rect x="820" y="362" width="150" height="40" rx="8" fill="url(#gSage)" opacity="0.85"/>
+      <text x="895" y="387" text-anchor="middle" font-size="12.5" fill="#FFFFFF">收尾 · 根因关闭</text>
+      <text x="1000" y="387" font-size="12" fill="#8A7A5E">← 检索返回锚定状态的父轨迹</text>
+    </g>
+
+    <line x1="820" y1="432" x2="1136" y2="432" stroke="#E8DFC8"/>
+    <text class="b" x="820" y="460">阶段假设：处置可线性抽象</text>
+    <text class="b" x="820" y="482">并行分支 / 回退重查 · 论文未展开</text>
+    <text class="b" x="820" y="504">每个阶段 RAFT 均优于基线（自助重采样显著）</text>
+  </g>
+
+  <line x1="64" y1="556" x2="1136" y2="556" stroke="#EAE0C6"/>
+  <text x="64" y="590" font-size="15.5" fill="#4C4234">整篇相似匹配到的是结局像，不是处境像。</text>
+  <text class="b" x="64" y="620">合成基准出自微软自家文档生态 · Jira 部分原文自限 directional evidence · 检索层指标非端到端解决率 · Micropaper</text>
 </svg>

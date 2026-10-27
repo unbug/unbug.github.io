@@ -1,53 +1,91 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620" font-family="Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif">
-  <rect width="960" height="620" fill="#ffffff"/>
-  <text x="480" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a2e">轨迹不是冻死的示范：回放文件操作即可重建可执行环境</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #979DAF; }
+      .rl { font-size: 15px; fill: #464B58; }
+      .val { font-size: 17px; font-weight: 700; fill: #1A1B1E; }
+      .b { font-size: 12px; fill: #A2A6B0; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F5F8F4"/>
+    </linearGradient>
+    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3A76B8"/><stop offset="1" stop-color="#639BCF"/>
+    </linearGradient>
+    <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E08A3C"/><stop offset="1" stop-color="#F0AC6B"/>
+    </linearGradient>
+    <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6E9B61"/><stop offset="1" stop-color="#93B987"/>
+    </linearGradient>
+    <linearGradient id="gRed" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C24C4C"/><stop offset="1" stop-color="#DA7575"/>
+    </linearGradient>
+  </defs>
 
-  <!-- pipeline panel -->
-  <rect x="40" y="58" width="880" height="200" rx="8" fill="#eef4ff" stroke="#3b6ea5" stroke-width="2"/>
-  <text x="60" y="86" font-size="16" font-weight="bold" fill="#1a1a2e">环境重建流水线（两步）</text>
-  <rect x="60" y="104" width="200" height="70" rx="6" fill="#ffffff" stroke="#3b6ea5"/>
-  <text x="160" y="132" text-anchor="middle" font-size="14" fill="#333">已有轨迹</text>
-  <text x="160" y="154" text-anchor="middle" font-size="12" fill="#555">记录每次文件读写</text>
-  <text x="288" y="143" font-size="20" fill="#3b6ea5">&#8594;</text>
-  <rect x="312" y="104" width="200" height="70" rx="6" fill="#ffffff" stroke="#3b6ea5"/>
-  <text x="412" y="132" text-anchor="middle" font-size="14" fill="#333">回放：恢复到修改前</text>
-  <text x="412" y="154" text-anchor="middle" font-size="12" fill="#555">得到部分工作区</text>
-  <text x="540" y="143" font-size="20" fill="#3b6ea5">&#8594;</text>
-  <rect x="564" y="104" width="200" height="70" rx="6" fill="#ffffff" stroke="#3b6ea5"/>
-  <text x="664" y="132" text-anchor="middle" font-size="14" fill="#333">completion agent</text>
-  <text x="664" y="154" text-anchor="middle" font-size="12" fill="#555">补齐缺失文件与依赖</text>
-  <text x="792" y="143" font-size="20" fill="#3b6ea5">&#8594;</text>
-  <rect x="816" y="104" width="88" height="70" rx="6" fill="#eef9f1" stroke="#2e9e5b"/>
-  <text x="860" y="132" text-anchor="middle" font-size="14" font-weight="bold" fill="#2e9e5b">37.3k</text>
-  <text x="860" y="154" text-anchor="middle" font-size="11" fill="#555">可复用环境</text>
-  <text x="60" y="212" font-size="13" fill="#555">宽度轴：挖掘相关环境的方向性依赖，合成跨代码库查询</text>
-  <text x="480" y="212" font-size="13" fill="#555">深度轴：user agent 把单轮查询扩成带迭代反馈的多轮会话</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1105" cy="115" r="150" fill="#3A76B8" opacity="0.06"/>
+  <circle cx="85" cy="615" r="115" fill="#6E9B61" opacity="0.08"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gOrange)"/>
 
-  <!-- results panel -->
-  <rect x="40" y="280" width="440" height="176" rx="8" fill="#eef9f1" stroke="#2e9e5b" stroke-width="2"/>
-  <text x="60" y="308" font-size="16" font-weight="bold" fill="#1a1a2e">SFT Qwen3.5-27B 实测（相对基线）</text>
-  <text x="60" y="342" font-size="14" fill="#333">单轮 Terminal-Bench 2.1</text>
-  <rect x="60" y="352" width="286" height="22" rx="4" fill="#c9e8d4"/>
-  <rect x="60" y="352" width="247" height="22" rx="4" fill="#2e9e5b"/>
-  <text x="356" y="368" font-size="14" font-weight="bold" fill="#2e9e5b">+11.9 分</text>
-  <text x="60" y="400" font-size="14" fill="#333">多轮 EvoCode-Bench v2 MT@4</text>
-  <rect x="60" y="410" width="286" height="22" rx="4" fill="#c9e8d4"/>
-  <rect x="60" y="410" width="286" height="22" rx="4" fill="#2e9e5b"/>
-  <text x="356" y="426" font-size="14" font-weight="bold" fill="#2e9e5b">+13.8 分</text>
+  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2609.04148 · 阿里 Qwen × 清华</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">轨迹是矿，不是样本</text>
+  <text x="64" y="158" font-size="15" fill="#595F6B">Terminal-Universe：回放轨迹里的文件操作，重建可执行终端环境</text>
 
-  <!-- narrative panel -->
-  <rect x="500" y="280" width="420" height="176" rx="8" fill="#fdeeee" stroke="#c0392b" stroke-width="2"/>
-  <text x="520" y="308" font-size="16" font-weight="bold" fill="#1a1a2e">叙事反转</text>
-  <text x="520" y="338" font-size="14" fill="#333">一条轨迹 = 一次性冻结的示范</text>
-  <text x="520" y="362" font-size="14" fill="#333">一个环境 = 反复出题 + 执行反馈</text>
-  <text x="520" y="392" font-size="14" font-weight="bold" fill="#c0392b">瓶颈不是轨迹，是可执行环境；</text>
-  <text x="520" y="414" font-size="14" font-weight="bold" fill="#c0392b">而环境藏在别人跑过的轨迹里</text>
-  <text x="520" y="440" font-size="13" fill="#555">数据再加工从样本级推到环境级</text>
+  <!-- map motif: compass -->
+  <g>
+    <circle cx="1062" cy="116" r="46" fill="#FFFFFF" stroke="#3A76B8" stroke-width="5"/>
+    <circle cx="1062" cy="116" r="37" fill="none" stroke="#DCE4EE" stroke-width="1.5"/>
+    <path d="M 1062 84 L 1072 116 L 1062 148 L 1052 116 Z" fill="url(#gOrange)"/>
+    <path d="M 1062 84 L 1072 116 L 1062 116 Z" fill="#C24C4C"/>
+    <circle cx="1062" cy="116" r="5" fill="#3A76B8"/>
+  </g>
 
-  <!-- boundary -->
-  <rect x="40" y="478" width="880" height="106" rx="8" fill="#fff8e6" stroke="#d4a017" stroke-width="2"/>
-  <text x="60" y="506" font-size="14" font-weight="bold" fill="#555">边界</text>
-  <text x="60" y="530" font-size="13" fill="#555">未经同行评审的预印本（arXiv:2609.04148，2026-09-03 提交）；「环境藏在轨迹里」是作者主张，不是学界定论。</text>
-  <text x="60" y="552" font-size="13" fill="#555">+11.9 / +13.8 均为 SFT 后相对基线的提升分数，非绝对成绩；结果限于所测模型（Qwen3.5-27B）与终端任务基准。</text>
-  <text x="60" y="574" font-size="13" fill="#555">对照阅读：#175 拆轨迹评估的预算混淆，本文把轨迹当环境重建原料，同一数据物的两个方向。</text>
+  <!-- loop flow: trajectory -> replay -> completion agent -> executable env -> tasks -->
+  <g>
+    <rect x="64" y="240" width="252" height="112" rx="12" fill="#3A76B8" opacity="0.08"/>
+    <text class="serif" x="84" y="288" font-size="22" font-weight="700" fill="#3A76B8">公开轨迹</text>
+    <text x="84" y="316" font-size="13.5" fill="#595F6B">记录每次文件读写 · 一次性冻结</text>
+    <path d="M 322 296 h 34 m -10 -8 l 12 8 l -12 8" fill="none" stroke="#8A93A3" stroke-width="3" stroke-linecap="round"/>
+
+    <rect x="364" y="240" width="252" height="112" rx="12" fill="#E08A3C" opacity="0.09"/>
+    <text class="serif" x="384" y="288" font-size="22" font-weight="700" fill="#B96C22">回放 + 补全</text>
+    <text x="384" y="316" font-size="13.5" fill="#595F6B">逆向回放到起点 · completion agent 补齐</text>
+    <path d="M 622 296 h 34 m -10 -8 l 12 8 l -12 8" fill="none" stroke="#8A93A3" stroke-width="3" stroke-linecap="round"/>
+
+    <rect x="664" y="240" width="252" height="112" rx="12" fill="#6E9B61" opacity="0.09"/>
+    <text class="serif" x="684" y="288" font-size="22" font-weight="700" fill="#52784A">可执行环境</text>
+    <text x="684" y="316" font-size="13.5" fill="#595F6B">可反复出题 · 返回真实执行反馈</text>
+
+    <path d="M 942 296 h 34 m -10 -8 l 12 8 l -12 8" fill="none" stroke="#8A93A3" stroke-width="3" stroke-linecap="round"/>
+    <rect x="984" y="240" width="156" height="112" rx="12" fill="#C24C4C" opacity="0.08"/>
+    <text class="serif" x="1062" y="296" text-anchor="middle" font-size="24" font-weight="700" fill="#C24C4C">37.3k</text>
+    <text x="1062" y="322" text-anchor="middle" font-size="12.5" fill="#595F6B">task-sufficient 环境</text>
+  </g>
+
+  <!-- two-axis expansion -->
+  <g>
+    <text class="rl" x="84" y="408">宽度轴</text>
+    <rect x="160" y="394" width="150" height="12" rx="6" fill="url(#gBlue)"/>
+    <text class="b" x="322" y="406">方向性依赖 · 跨代码库查询任务</text>
+    <text class="rl" x="84" y="446">深度轴</text>
+    <rect x="160" y="432" width="220" height="12" rx="6" fill="url(#gOrange)"/>
+    <text class="b" x="392" y="444">user agent 追问反馈 · 单轮扩成多轮</text>
+  </g>
+
+  <!-- big number: score gains -->
+  <g>
+    <text class="serif" x="700" y="438" font-size="46" font-weight="700" fill="#1A1B1E">+11.9 <tspan fill="#C24C4C">+13.8</tspan></text>
+    <text class="b" x="700" y="462">Terminal-Bench 2.1 单轮 · EvoCode-Bench v2 MT@4 多轮</text>
+  </g>
+  <line x1="64" y1="490" x2="1136" y2="490" stroke="#E3E8DE"/>
+  <g>
+    <text class="rl" x="84" y="530">对 Qwen3.5-27B 做 SFT，相对基线提分 —— 多轮增益大于单轮</text>
+    <text class="b" x="1136" y="530" text-anchor="end">与「轨迹当被审视对象」那篇站在轨迹两端</text>
+  </g>
+
+  <line x1="64" y1="576" x2="1136" y2="576" stroke="#E3E8DE"/>
+  <text class="serif" x="64" y="614" font-size="18" fill="#1A1B1E">环境才是能反复生题、持续给反馈的那一层资产。</text>
+  <text class="b" x="1136" y="614" text-anchor="end">预印本未经同行评审 · +11.9/+13.8 为 SFT 相对基线提升分，非绝对成绩 · Micropaper</text>
 </svg>

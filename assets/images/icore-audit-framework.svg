@@ -1,129 +1,115 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" font-family="Arial, sans-serif">
-  <rect width="800" height="540" fill="#f8f9fa"/>
-
-  <!-- Title -->
-  <text x="400" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#2c3e50">iCORE: Integrated Cooperation-Obligation REpresentation</text>
-
-  <!-- Triple Representation (top section) -->
-  <rect x="30" y="50" width="740" height="200" rx="10" fill="#fafafa" stroke="#90a4ae" stroke-width="1.5"/>
-  <text x="400" y="72" text-anchor="middle" font-size="13" font-weight="bold" fill="#455a64">Triple Representation: X = (G, Q, Π)</text>
-
-  <!-- Cooperation Graph G -->
-  <rect x="50" y="85" width="220" height="145" rx="8" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5"/>
-  <text x="160" y="108" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">Cooperation Graph G</text>
-  <line x1="70" y1="115" x2="250" y2="115" stroke="#1976d2" stroke-width="1"/>
-
-  <!-- Nodes in G -->
-  <circle cx="110" cy="145" r="15" fill="#bbdefb" stroke="#1976d2" stroke-width="1.5"/>
-  <text x="110" y="149" text-anchor="middle" font-size="8" fill="#1565c0">A1</text>
-
-  <circle cx="160" cy="135" r="15" fill="#bbdefb" stroke="#1976d2" stroke-width="1.5"/>
-  <text x="160" y="139" text-anchor="middle" font-size="8" fill="#1565c0">A2</text>
-
-  <circle cx="210" cy="145" r="15" fill="#bbdefb" stroke="#1976d2" stroke-width="1.5"/>
-  <text x="210" y="149" text-anchor="middle" font-size="8" fill="#1565c0">A3</text>
-
-  <!-- Edges in G -->
-  <path d="M 125 145 L 145 138" stroke="#1976d2" stroke-width="1.5"/>
-  <path d="M 175 138 L 195 145" stroke="#1976d2" stroke-width="1.5"/>
-
-  <!-- G description -->
-  <rect x="70" y="170" width="180" height="25" rx="3" fill="#bbdefb"/>
-  <text x="160" y="186" text-anchor="middle" font-size="9" fill="#1565c0">Observable interactions</text>
-
-  <rect x="70" y="200" width="180" height="25" rx="3" fill="#bbdefb"/>
-  <text x="160" y="216" text-anchor="middle" font-size="9" fill="#1565c0">Messages, tool calls, sharing</text>
-
-  <!-- Obligation Graph Q -->
-  <rect x="290" y="85" width="220" height="145" rx="8" fill="#e8f5e9" stroke="#388e3c" stroke-width="1.5"/>
-  <text x="400" y="108" text-anchor="middle" font-size="12" font-weight="bold" fill="#2e7d32">Obligation Graph Q</text>
-  <line x1="310" y1="115" x2="490" y2="115" stroke="#388e3c" stroke-width="1"/>
-
-  <!-- Nodes in Q -->
-  <rect x="330" y="130" width="60" height="25" rx="3" fill="#c8e6c9" stroke="#388e3c" stroke-width="1"/>
-  <text x="360" y="147" text-anchor="middle" font-size="9" fill="#2e7d32">Task T1</text>
-
-  <rect x="410" y="130" width="60" height="25" rx="3" fill="#c8e6c9" stroke="#388e3c" stroke-width="1"/>
-  <text x="440" y="147" text-anchor="middle" font-size="9" fill="#2e7d32">Task T2</text>
-
-  <rect x="370" y="165" width="60" height="25" rx="3" fill="#c8e6c9" stroke="#388e3c" stroke-width="1"/>
-  <text x="400" y="182" text-anchor="middle" font-size="9" fill="#2e7d32">Task T3</text>
-
-  <!-- Edges in Q -->
-  <path d="M 390 142 L 410 142" stroke="#388e3c" stroke-width="1.5"/>
-  <path d="M 400 155 L 400 165" stroke="#388e3c" stroke-width="1.5"/>
-
-  <!-- Q description -->
-  <rect x="310" y="200" width="180" height="25" rx="3" fill="#c8e6c9"/>
-  <text x="400" y="216" text-anchor="middle" font-size="9" fill="#2e7d32">Evolving work assignments</text>
-
-  <!-- Audit Map Π -->
-  <rect x="530" y="85" width="220" height="145" rx="8" fill="#fff3e0" stroke="#f57c00" stroke-width="2"/>
-  <text x="640" y="108" text-anchor="middle" font-size="12" font-weight="bold" fill="#e65100">Audit Map Π</text>
-  <line x1="550" y1="115" x2="730" y2="115" stroke="#f57c00" stroke-width="1"/>
-
-  <!-- Π properties -->
-  <rect x="545" y="125" width="190" height="25" rx="3" fill="#ffe0b2"/>
-  <text x="640" y="142" text-anchor="middle" font-size="9" fill="#e65100">Verifiable properties</text>
-
-  <rect x="545" y="155" width="190" height="25" rx="3" fill="#ffe0b2"/>
-  <text x="640" y="172" text-anchor="middle" font-size="9" fill="#e65100">Evidence for state transitions</text>
-
-  <rect x="545" y="185" width="190" height="25" rx="3" fill="#ffe0b2"/>
-  <text x="640" y="202" text-anchor="middle" font-size="9" fill="#e65100">Links G ↔ Q</text>
-
-  <!-- Arrows between components -->
-  <path d="M 270 155 L 290 155" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-  <path d="M 510 155 L 530 155" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-
-  <!-- Two Certified Properties (center section) -->
-  <rect x="30" y="270" width="740" height="90" rx="8" fill="#fffde7" stroke="#f9a825" stroke-width="2"/>
-  <text x="400" y="292" text-anchor="middle" font-size="13" font-weight="bold" fill="#f57f17">Two Certified Properties</text>
-
-  <!-- Property 1: Work Soundness -->
-  <rect x="60" y="305" width="340" height="45" rx="6" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5"/>
-  <text x="230" y="323" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565c0">Work Soundness</text>
-  <text x="230" y="340" text-anchor="middle" font-size="9" fill="#546e7a">Every active decision-relevant assertion has finite justification through G and Π</text>
-
-  <!-- Property 2: Agent-Assignment Stability -->
-  <rect x="420" y="305" width="320" height="45" rx="6" fill="#e8f5e9" stroke="#388e3c" stroke-width="1.5"/>
-  <text x="580" y="323" text-anchor="middle" font-size="11" font-weight="bold" fill="#2e7d32">Agent-Assignment Stability</text>
-  <text x="580" y="340" text-anchor="middle" font-size="9" fill="#546e7a">No feasible alternative agent can improve declared contribution by more than ε</text>
-
-  <!-- Key Results (bottom section) -->
-  <rect x="30" y="385" width="740" height="135" rx="8" fill="#fafafa" stroke="#b0bec5" stroke-width="1.5"/>
-  <text x="400" y="408" text-anchor="middle" font-size="13" font-weight="bold" fill="#455a64">iCORE-Audit Performance Improvements vs Passive Full-State Observation</text>
-
-  <!-- Bar: Control Trajectory -->
-  <rect x="80" y="425" width="120" height="70" rx="4" fill="#66bb6a"/>
-  <text x="140" y="460" text-anchor="middle" font-size="11" font-weight="bold" fill="white">+11.5%</text>
-  <text x="140" y="485" text-anchor="middle" font-size="9" fill="#2e7d32">Control Trajectory</text>
-
-  <!-- Bar: Control Terminal -->
-  <rect x="230" y="425" width="120" height="60" rx="4" fill="#ffa726"/>
-  <text x="290" y="458" text-anchor="middle" font-size="11" font-weight="bold" fill="white">+15.1%</text>
-  <text x="290" y="485" text-anchor="middle" font-size="9" fill="#e65100">Control Terminal</text>
-
-  <!-- Bar: Real Trajectory -->
-  <rect x="380" y="425" width="120" height="90" rx="4" fill="#ef5350"/>
-  <text x="440" y="472" text-anchor="middle" font-size="11" font-weight="bold" fill="white">+26.4%</text>
-  <text x="440" y="498" text-anchor="middle" font-size="9" fill="#c62828">Real LLM Trajectory</text>
-
-  <!-- Bar: Real Terminal -->
-  <rect x="530" y="425" width="120" height="75" rx="4" fill="#ab47bc"/>
-  <text x="590" y="465" text-anchor="middle" font-size="11" font-weight="bold" fill="white">+Significant</text>
-  <text x="590" y="492" text-anchor="middle" font-size="9" fill="#6a1b9a">Real LLM Terminal</text>
-
-  <!-- Annotation -->
-  <rect x="670" y="425" width="80" height="70" rx="4" fill="#e0f7fa" stroke="#00838f" stroke-width="1"/>
-  <text x="710" y="448" text-anchor="middle" font-size="9" font-weight="bold" fill="#006064">Local-to-Global</text>
-  <text x="710" y="463" text-anchor="middle" font-size="9" font-weight="bold" fill="#006064">Soundness</text>
-  <text x="710" y="478" text-anchor="middle" font-size="9" font-weight="bold" fill="#006064">Guarantees</text>
-
-  <!-- Arrow marker definition -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
   <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#666"/>
-    </marker>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9C9484; }
+      .rl { font-size: 15px; fill: #474C54; }
+      .val { font-size: 18px; font-weight: 700; fill: #1A1B1E; }
+      .b { font-size: 12px; fill: #A5A296; }
+      .chip { font-size: 12.5px; font-weight: 600; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F5F3EE"/>
+    </linearGradient>
+    <linearGradient id="gNavy" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#274B78"/><stop offset="1" stop-color="#52799F"/>
+    </linearGradient>
+    <linearGradient id="gWax" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B5342B"/><stop offset="1" stop-color="#D4635A"/>
+    </linearGradient>
+    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B9892F"/><stop offset="1" stop-color="#DCB65F"/>
+    </linearGradient>
+    <linearGradient id="gJade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3D8B67"/><stop offset="1" stop-color="#77B894"/>
+    </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2E8B93"/><stop offset="1" stop-color="#6FBAC0"/>
+    </linearGradient>
   </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1105" cy="110" r="140" fill="#274B78" opacity="0.06"/>
+  <circle cx="70" cy="620" r="115" fill="#B5342B" opacity="0.06"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gWax)"/>
+
+  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2607.27429 · UNIV. OF WASHINGTON 等</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">好结果掩盖烂工序</text>
+  <text x="64" y="158" font-size="15" fill="#5B6068">iCORE 把合作图 G、义务图 Q、审计映射 Π 捆成一套可审计账本 X=(G,Q,Π)</text>
+
+  <!-- audit stamp motif -->
+  <g>
+    <rect x="1016" y="66" width="104" height="82" rx="3" fill="#FFFFFF" stroke="#DCD5C2" stroke-width="1.5"/>
+    <line x1="1030" y1="88" x2="1106" y2="88" stroke="#C9C2AE" stroke-width="2"/>
+    <line x1="1030" y1="104" x2="1106" y2="104" stroke="#C9C2AE" stroke-width="2"/>
+    <line x1="1030" y1="120" x2="1080" y2="120" stroke="#C9C2AE" stroke-width="2"/>
+    <g transform="rotate(-12 1108 128)">
+      <circle cx="1108" cy="128" r="30" fill="none" stroke="#B5342B" stroke-width="4" opacity="0.85"/>
+      <circle cx="1108" cy="128" r="22" fill="none" stroke="#B5342B" stroke-width="1.5" opacity="0.7"/>
+      <path d="M 1096 128 l 8 9 l 17 -18" fill="none" stroke="#B5342B" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+    </g>
+  </g>
+
+  <!-- left dumbbell: passive full-state observation -> iCORE lift -->
+  <g>
+    <rect x="64" y="206" width="690" height="70" fill="#274B78" opacity="0.07"/>
+    <rect x="64" y="294" width="690" height="70" fill="#274B78" opacity="0.07"/>
+    <rect x="64" y="382" width="690" height="70" fill="#274B78" opacity="0.07"/>
+
+    <text class="rl" x="252" y="246" text-anchor="end">控制执行 · 轨迹质量</text>
+    <line x1="306" y1="241" x2="356.3" y2="241" stroke="url(#gNavy)" stroke-width="3"/>
+    <circle cx="306" cy="241" r="7" fill="#FFFFFF" stroke="#2E8B93" stroke-width="3"/>
+    <circle cx="356.3" cy="241" r="9" fill="url(#gNavy)"/>
+    <text class="val" x="375" y="248" fill="#274B78">+11.5%</text>
+
+    <text class="rl" x="252" y="334" text-anchor="end">控制执行 · 终端性能</text>
+    <line x1="306" y1="329" x2="375.9" y2="329" stroke="url(#gNavy)" stroke-width="3"/>
+    <circle cx="306" cy="329" r="7" fill="#FFFFFF" stroke="#2E8B93" stroke-width="3"/>
+    <circle cx="375.9" cy="329" r="9" fill="url(#gNavy)"/>
+    <text class="val" x="394" y="336" fill="#274B78">+15.1%</text>
+
+    <text class="rl" x="252" y="422" text-anchor="end">真实 LLM · 轨迹质量</text>
+    <line x1="306" y1="417" x2="448.8" y2="417" stroke="url(#gWax)" stroke-width="3.5"/>
+    <circle cx="306" cy="417" r="7" fill="#FFFFFF" stroke="#2E8B93" stroke-width="3"/>
+    <circle cx="448.8" cy="417" r="10" fill="url(#gWax)"/>
+    <text class="val" x="467" y="424" fill="#B5342B">+26.4%</text>
+    <text class="b" x="540" y="423">对比被动全状态观测</text>
+
+    <line x1="306" y1="472" x2="620" y2="472" stroke="#CFC7B2" stroke-width="1.5"/>
+    <text class="b" x="306" y="494">0（被动观测基线）</text>
+    <text class="b" x="620" y="494" text-anchor="end">提升幅度</text>
+  </g>
+
+  <!-- right: triple repr + two certs -->
+  <g>
+    <rect x="836" y="206" width="304" height="92" rx="12" fill="#B9892F" opacity="0.09"/>
+    <text class="serif" x="856" y="252" font-size="27" font-weight="700" fill="#8A6620">X = (G, Q, Π)</text>
+    <text x="856" y="280" font-size="12.5" fill="#6B7078">合作图 × 义务图 × 审计映射，联合可验证</text>
+
+    <text class="rl" x="856" y="344">认证一 · 工作健全性</text>
+    <text class="b" x="856" y="366">每个活跃工作断言都有有限证明</text>
+    <text class="rl" x="856" y="410">认证二 · 分配稳定性</text>
+    <text class="b" x="856" y="432">没有替代 Agent 能多贡献超过 ε</text>
+
+    <text class="serif" x="856" y="492" font-size="18" fill="#B5342B">合理输出 ≠ 健全过程</text>
+  </g>
+
+  <!-- bottom chips -->
+  <line x1="64" y1="520" x2="1136" y2="520" stroke="#E8E3D2"/>
+  <g>
+    <rect x="64" y="540" width="112" height="28" rx="14" fill="url(#gNavy)" opacity="0.16"/>
+    <text x="120" y="559" text-anchor="middle" class="chip" fill="#274B78">消息传递</text>
+    <text x="184" y="559" fill="#8B8574" font-size="14">→ G</text>
+    <rect x="216" y="540" width="112" height="28" rx="14" fill="url(#gTeal)" opacity="0.2"/>
+    <text x="272" y="559" text-anchor="middle" class="chip" fill="#1F6368">工具协调</text>
+    <text x="336" y="559" fill="#8B8574" font-size="14">→ G</text>
+    <rect x="368" y="540" width="112" height="28" rx="14" fill="url(#gJade)" opacity="0.2"/>
+    <text x="424" y="559" text-anchor="middle" class="chip" fill="#2C6B4C">责任归属</text>
+    <text x="488" y="559" fill="#8B8574" font-size="14">→ Q</text>
+    <rect x="520" y="540" width="112" height="28" rx="14" fill="url(#gGold)" opacity="0.26"/>
+    <text x="576" y="559" text-anchor="middle" class="chip" fill="#7A5A14">状态转换证据</text>
+    <text x="640" y="559" fill="#8B8574" font-size="14">→ Π</text>
+  </g>
+  <text class="serif" x="64" y="618" font-size="18" fill="#1A1B1E">审计不是事后录像，而是把合作与义务捆在一起的过程盖章。</text>
+  <text class="b" x="1136" y="618" text-anchor="end">两种执行模式评估 · 提升为论文自述口径 · 预印本未经同行评审 · Micropaper</text>
 </svg>

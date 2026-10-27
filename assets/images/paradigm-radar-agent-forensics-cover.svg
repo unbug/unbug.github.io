@@ -1,40 +1,135 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
-  <rect width="1200" height="630" fill="#0f1626"/>
-  <rect x="0" y="0" width="1200" height="8" fill="#e8663c"/>
-  <!-- left: agent speech bubble (not trusted) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #7C93A6; }
+      .rl { font-size: 15px; fill: #2F4858; }
+      .b { font-size: 12px; fill: #8CA0AE; }
+      .stat { font-size: 28px; font-weight: 700; fill: #16242E; }
+      .tag { font-size: 13px; fill: #4E6575; }
+      .val { font-size: 24px; font-weight: 700; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EDF3F6"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#D9541E"/><stop offset="1" stop-color="#F58A4E"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0F7B8A"/><stop offset="1" stop-color="#4FB8C6"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2E5C8A"/><stop offset="1" stop-color="#6E93BC"/>
+    </linearGradient>
+    <linearGradient id="pink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B03060"/><stop offset="1" stop-color="#E07098"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B9892F"/><stop offset="1" stop-color="#E0B85C"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B5442E"/><stop offset="1" stop-color="#DB8168"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1F6F78"/><stop offset="1" stop-color="#2E5C8A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1128" cy="612" r="140" fill="#0F7B8A" opacity="0.06"/>
+  <circle cx="88" cy="112" r="110" fill="#D9541E" opacity="0.07"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#orange)"/>
+
+  <text class="k" x="64" y="84">AI 范式雷达 · 2026-10-16 · AGENT FORENSICS</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#16242E">先装黑匣子，再谈信任</text>
+  <text x="64" y="158" font-size="15" fill="#4E6575">信任支点从「事前授权它能做什么」迁向「事后拿出它做了什么的可核验证据」</text>
+
+  <!-- flight recorder motif -->
   <g>
-    <rect x="80" y="150" width="380" height="150" rx="16" fill="#1c2740" stroke="#3b4a6b" stroke-width="2"/>
-    <path d="M 250 300 L 270 340 L 290 300 Z" fill="#1c2740" stroke="#3b4a6b" stroke-width="2"/>
-    <text x="270" y="205" fill="#8fa3c8" font-size="22" text-anchor="middle">agent 的汇报</text>
-    <text x="270" y="248" fill="#5f7095" font-size="30" text-anchor="middle">"任务已完成"</text>
-    <line x1="150" y1="240" x2="390" y2="240" stroke="#c94f4f" stroke-width="3" opacity="0.0"/>
-    <line x1="160" y1="160" x2="380" y2="290" stroke="#c94f4f" stroke-width="4" opacity="0.65"/>
-    <line x1="380" y1="160" x2="160" y2="290" stroke="#c94f4f" stroke-width="4" opacity="0.65"/>
-    <text x="270" y="390" fill="#c94f4f" font-size="24" text-anchor="middle">报告与真实行为有缺口</text>
+    <rect x="984" y="72" width="146" height="104" rx="12" fill="url(#orange)"/>
+    <rect x="984" y="72" width="146" height="104" rx="12" fill="none" stroke="#8A3512" stroke-width="3"/>
+    <rect x="1000" y="90" width="114" height="8" rx="4" fill="#FFFFFF" opacity="0.9"/>
+    <rect x="1000" y="106" width="82" height="8" rx="4" fill="#FFFFFF" opacity="0.65"/>
+    <rect x="1000" y="122" width="100" height="8" rx="4" fill="#FFFFFF" opacity="0.9"/>
+    <rect x="1000" y="138" width="60" height="8" rx="4" fill="#FFFFFF" opacity="0.65"/>
+    <path d="M 1057 72 v -18" stroke="#8A3512" stroke-width="4"/>
+    <circle cx="1057" cy="48" r="7" fill="#0F7B8A"/>
+    <!-- sonar rings -->
+    <g fill="none" stroke="#0F7B8A" stroke-width="2.5">
+      <path d="M 1010 206 a 60 42 0 0 0 94 0" opacity="0.5"/>
+      <path d="M 992 228 a 84 60 0 0 0 130 0" opacity="0.32"/>
+      <path d="M 974 250 a 108 78 0 0 0 166 0" opacity="0.18"/>
+    </g>
+    <text class="b" x="1057" y="284" text-anchor="middle">录制 · 封缄 · 回放 · 核算</text>
   </g>
-  <!-- arrow -->
+
+  <!-- event wave (left) -->
   <g>
-    <line x1="490" y1="290" x2="640" y2="290" stroke="#e8663c" stroke-width="4"/>
-    <path d="M 640 290 L 616 278 L 616 302 Z" fill="#e8663c"/>
-    <text x="565" y="268" fill="#e8663c" font-size="22" text-anchor="middle">要证据</text>
+    <text class="rl" x="64" y="212" font-weight="700">事件波：十天四起，汇报本身成了争议</text>
+    <line x1="80" y1="330" x2="560" y2="330" stroke="#C9D6DD" stroke-width="2"/>
+    <line x1="300" y1="228" x2="300" y2="418" stroke="url(#sea)" stroke-width="3" stroke-dasharray="6 5" opacity="0.7"/>
+    <text class="b" x="300" y="222" text-anchor="middle">09-26 至 10-05 事件周</text>
+
+    <circle cx="120" cy="330" r="9" fill="url(#red)"/>
+    <text x="120" y="296" font-size="17" font-weight="700" fill="#B5442E" text-anchor="middle">$7.8万</text>
+    <text class="b" x="120" y="316" text-anchor="middle">未授权消耗</text>
+
+    <circle cx="228" cy="330" r="11" fill="url(#orange)"/>
+    <text x="228" y="370" font-size="17" font-weight="700" fill="#D9541E" text-anchor="middle">307 分</text>
+    <text class="b" x="228" y="390" text-anchor="middle">Wikimedia 帖</text>
+
+    <circle cx="392" cy="330" r="7" fill="url(#gold)"/>
+    <text x="392" y="296" font-size="15" font-weight="700" fill="#8F6A20" text-anchor="middle">56 分</text>
+    <text class="b" x="392" y="316" text-anchor="middle">沙箱够用吗</text>
+
+    <circle cx="500" cy="330" r="8" fill="url(#pink)"/>
+    <text x="500" y="370" font-size="15" font-weight="700" fill="#B03060" text-anchor="middle">63 分</text>
+    <text class="b" x="500" y="390" text-anchor="middle">银行信息进群聊</text>
   </g>
-  <!-- right: evidence / replay terminal -->
+
+  <!-- supply wave (right) -->
   <g>
-    <rect x="680" y="130" width="440" height="290" rx="14" fill="#12203a" stroke="#37d0a3" stroke-width="2.5"/>
-    <rect x="680" y="130" width="440" height="44" rx="14" fill="#1a2c4d"/>
-    <circle cx="710" cy="152" r="7" fill="#c94f4f"/>
-    <circle cx="734" cy="152" r="7" fill="#e8b23c"/>
-    <circle cx="758" cy="152" r="7" fill="#37d0a3"/>
-    <text x="900" y="159" fill="#8fa3c8" font-size="20" text-anchor="middle">trace.log · hash-chain 封缄</text>
-    <text x="710" y="215" fill="#37d0a3" font-size="21">09:41  read  config.yaml</text>
-    <text x="710" y="252" fill="#37d0a3" font-size="21">09:42  call  payment-api</text>
-    <text x="710" y="289" fill="#e8b23c" font-size="21">09:43  POST  company-slack</text>
-    <text x="710" y="326" fill="#c94f4f" font-size="21">09:44  spend  $78,000</text>
-    <text x="710" y="380" fill="#8fa3c8" font-size="20">可回放 · 可核验 · 可归责</text>
-    <circle cx="1082" cy="373" r="16" fill="none" stroke="#37d0a3" stroke-width="3"/>
-    <line x1="1094" y1="385" x2="1108" y2="399" stroke="#37d0a3" stroke-width="3"/>
+    <text class="rl" x="640" y="212" font-weight="700">供给波：12 家独立建仓，先于事件开铺</text>
+    <line x1="656" y1="330" x2="1136" y2="330" stroke="#C9D6DD" stroke-width="2"/>
+    <circle cx="700" cy="330" r="12" fill="url(#teal)"/>
+    <text x="700" y="294" font-size="17" font-weight="700" fill="#0F7B8A" text-anchor="middle">2,483 星</text>
+    <text class="b" x="700" y="314" text-anchor="middle">shepherd · 06-24</text>
+
+    <circle cx="828" cy="330" r="10" fill="url(#blue)"/>
+    <text x="828" y="370" font-size="17" font-weight="700" fill="#2E5C8A" text-anchor="middle">2,024 星</text>
+    <text class="b" x="828" y="390" text-anchor="middle">llm-space · 07 月</text>
+
+    <circle cx="956" cy="330" r="8" fill="url(#gold)"/>
+    <text x="956" y="294" font-size="15" font-weight="700" fill="#8F6A20" text-anchor="middle">185 星</text>
+    <text class="b" x="956" y="314" text-anchor="middle">ToolReplay · 09-14</text>
+
+    <circle cx="1084" cy="330" r="7" fill="url(#pink)"/>
+    <text x="1084" y="370" font-size="15" font-weight="700" fill="#B03060" text-anchor="middle">214 星</text>
+    <text class="b" x="1084" y="390" text-anchor="middle">agentplay · 两天</text>
   </g>
-  <!-- title -->
-  <text x="600" y="505" fill="#f2f5fa" font-size="52" font-weight="bold" text-anchor="middle">Agent 说完不算，拿出证据</text>
-  <text x="600" y="560" fill="#8fa3c8" font-size="26" text-anchor="middle">AI 范式雷达 #17 · Agent 行为审计与取证层 · 2026-10-16</text>
+
+  <!-- three cards -->
+  <g>
+    <rect x="64" y="436" width="340" height="126" rx="14" fill="#B5442E" opacity="0.07"/>
+    <rect x="64" y="436" width="340" height="6" rx="3" fill="url(#red)"/>
+    <text class="stat" x="88" y="484" font-size="26">40.7 点<tspan font-size="13" fill="#4E6575">　报告缺口</tspan></text>
+    <text x="88" y="514" font-size="13.5" fill="#2F4858">直接问它 93.6%，只看报告 52.0%；</text>
+    <text x="88" y="534" font-size="13.5" fill="#2F4858">「说了什么」≠「做了什么」</text>
+
+    <rect x="430" y="436" width="340" height="126" rx="14" fill="#B9892F" opacity="0.09"/>
+    <rect x="430" y="436" width="340" height="6" rx="3" fill="url(#gold)"/>
+    <text class="stat" x="454" y="484" font-size="26">31–47 篇/月</text>
+    <text x="454" y="514" font-size="13.5" fill="#2F4858">「agent replay」HN 月帖量平台期；</text>
+    <text x="454" y="534" font-size="13.5" fill="#2F4858">审计产品帖普遍低于 50 分</text>
+
+    <rect x="796" y="436" width="340" height="126" rx="14" fill="#0F7B8A" opacity="0.07"/>
+    <rect x="796" y="436" width="340" height="6" rx="3" fill="url(#teal)"/>
+    <text class="stat" x="820" y="484" font-size="26">2 分<tspan font-size="13" fill="#4E6575">　OWASP 标准帖</tspan></text>
+    <text x="820" y="514" font-size="13.5" fill="#2F4858">事件帖高分与产品帖低分并存：</text>
+    <text x="820" y="534" font-size="13.5" fill="#2F4858">在铺基础设施，不是采购已开始</text>
+  </g>
+
+  <line x1="64" y1="586" x2="1136" y2="586" stroke="#D7E1E6"/>
+  <text class="serif" x="64" y="622" font-size="19" fill="#16242E">事前授权划边界，事后证据兜行为——整周没人拿得出完整执行记录。</text>
+  <text class="b" x="64" y="652">数字均为 2026-10-16 经 hn.algolia.com / api.github.com 实测 · 星数为开源热度非收入 · Micropaper</text>
 </svg>

@@ -1,41 +1,79 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="540" viewBox="0 0 860 540" font-family="Helvetica, Arial, sans-serif">
-  <rect width="860" height="540" fill="#ffffff"/>
-  <text x="430" y="36" text-anchor="middle" font-size="21" font-weight="bold" fill="#1a1a2e">能力悖论：模型越强，行为越像，风险摊不掉</text>
-  <text x="430" y="60" text-anchor="middle" font-size="13" fill="#666">arXiv:2609.04373 · LLM 交易员 agent-based 市场模拟（2026-09-08 查阅）</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8E97A6; }
+      .rl { font-size: 15px; fill: #3F4A5A; }
+      .val { font-size: 24px; font-weight: 700; }
+      .b { font-size: 12px; fill: #98A1AE; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F4EC"/>
+    </linearGradient>
+    <linearGradient id="gGear" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B08D3E"/><stop offset="1" stop-color="#D9BC7A"/>
+    </linearGradient>
+    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2E5C8A"/><stop offset="1" stop-color="#5E8CB8"/>
+    </linearGradient>
+    <linearGradient id="gWine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A63A50"/><stop offset="1" stop-color="#D06A7A"/>
+    </linearGradient>
+  </defs>
 
-  <!-- Left: capability vs correlation -->
-  <text x="60" y="100" font-size="15" font-weight="bold" fill="#1a1a2e">共享训练与架构 → 相关随能力上升</text>
-  <line x1="90" y1="270" x2="380" y2="270" stroke="#999" stroke-width="1.2"/>
-  <line x1="90" y1="270" x2="90" y2="120" stroke="#999" stroke-width="1.2"/>
-  <text x="385" y="275" font-size="12" fill="#555">模型能力</text>
-  <text x="60" y="118" font-size="12" fill="#555">行为相关性</text>
-  <path d="M 100 250 Q 230 220 360 140" fill="none" stroke="#c62828" stroke-width="2.5"/>
-  <circle cx="130" cy="243" r="4" fill="#c62828"/>
-  <circle cx="230" cy="208" r="4" fill="#c62828"/>
-  <circle cx="330" cy="158" r="4" fill="#c62828"/>
-  <text x="100" y="295" font-size="12" fill="#777">参与者数量增加 ≠ 独立观点数量增加</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1085" cy="115" r="150" fill="#2E5C8A" opacity="0.06"/>
+  <circle cx="90" cy="615" r="120" fill="#B08D3E" opacity="0.07"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gWine)"/>
 
-  <!-- Right: two environments -->
-  <rect x="440" y="88" width="360" height="110" rx="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.2"/>
-  <text x="460" y="114" font-size="14" font-weight="bold" fill="#2e7d32">共享推理正确时</text>
-  <text x="460" y="140" font-size="12.5" fill="#333">扩大 agent 参与 → 市场级风险下降</text>
-  <text x="460" y="162" font-size="12.5" fill="#333">多样性红利正常兑现</text>
+  <text class="k" x="64" y="84">一分钟读论文 NO.181 · ARXIV:2609.04373</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1E2430">越强的表，走得越齐</text>
+  <text x="64" y="158" font-size="15" fill="#5A6070">能力与行为相关性同向上升，系统风险看它跟谁一起走</text>
 
-  <rect x="440" y="212" width="360" height="110" rx="8" fill="#ffebee" stroke="#c62828" stroke-width="1.2"/>
-  <text x="460" y="238" font-size="14" font-weight="bold" fill="#c62828">共享错误信息环境时</text>
-  <text x="460" y="264" font-size="12.5" fill="#333">同一相关性反转为负债：全体一起</text>
-  <text x="460" y="286" font-size="12.5" fill="#333">自信地错，无人负责纠偏</text>
+  <!-- watch illustration: three synced dials -->
+  <g>
+    <circle cx="990" cy="112" r="34" fill="none" stroke="url(#gGear)" stroke-width="7"/>
+    <line x1="990" y1="112" x2="990" y2="88" stroke="#A63A50" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="990" cy="112" r="4" fill="#2E5C8A"/>
+    <circle cx="1063" cy="100" r="44" fill="none" stroke="url(#gGear)" stroke-width="8"/>
+    <line x1="1063" y1="100" x2="1063" y2="70" stroke="#A63A50" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="1063" cy="100" r="5" fill="#2E5C8A"/>
+    <circle cx="1140" cy="120" r="30" fill="none" stroke="url(#gGear)" stroke-width="6"/>
+    <line x1="1140" y1="120" x2="1140" y2="101" stroke="#A63A50" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="1140" cy="120" r="4" fill="#2E5C8A"/>
+    <text x="1063" y="172" text-anchor="middle" font-size="12" fill="#8C97A3">三只表，同一秒</text>
+  </g>
 
-  <!-- Middle bottom: risk floor -->
-  <rect x="60" y="340" width="740" height="90" rx="8" fill="#fff3e0" stroke="#ef6c00" stroke-width="1.5"/>
-  <text x="80" y="368" font-size="14" font-weight="bold" fill="#e65100">非可分散风险下限（non-diversifiable risk floor）</text>
-  <rect x="80" y="384" width="700" height="4" fill="#ef6c00" opacity="0.6"/>
-  <text x="80" y="410" font-size="12.5" fill="#333">行动相关性使风险无法随参与者数量无限摊薄；相关性越高，摊不掉的底线越高。</text>
-  <text x="80" y="428" font-size="12.5" fill="#555">采购含义：同一模型的多个实例 ≈ 一个决策加若干复制品。</text>
+  <!-- risk floor -->
+  <g>
+    <line x1="120" y1="560" x2="1136" y2="560" stroke="#E5E1D4" stroke-width="1"/>
+    <line x1="120" y1="486" x2="1136" y2="486" stroke="#A63A50" stroke-width="1.5" stroke-dasharray="7 6"/>
+    <text x="1136" y="478" text-anchor="end" font-size="12.5" fill="#A63A50">非可分散风险下限：相关性越高，摊不掉的底线越高</text>
 
-  <!-- Footer boundary -->
-  <rect x="60" y="448" width="740" height="72" rx="6" fill="#f5f5f5" stroke="#bdbdbd" stroke-width="1"/>
-  <text x="80" y="470" font-size="12" fill="#616161">边界：模拟无真实资金约束、清算与监管，量级不可直接搬到现实市场；相关性与能力分级口径为论文自定义；</text>
-  <text x="80" y="490" font-size="12" fill="#616161">预印本未经同行评审；第三发现限定共享错误信息环境情景，跨领域推广是作者自列的开放问题。</text>
-  <text x="80" y="510" font-size="12" fill="#616161">与隐藏合谋篇不同轴：无通信、无共谋，风险来自训练层面的结构性相关。</text>
+    <!-- correct-env lane band -->
+    <rect x="120" y="204" width="1016" height="130" fill="#2E5C8A" opacity="0.07"/>
+    <text x="136" y="226" font-size="12.5" letter-spacing="2" fill="#5C7CA0">共享推理正确时</text>
+    <path d="M 330 316 C 560 300 760 288 930 258" fill="none" stroke="url(#gBlue)" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 930 258 l -18 2 l 12 -14 z" fill="#2E5C8A"/>
+    <circle cx="330" cy="316" r="7" fill="#2E5C8A"/>
+    <text x="954" y="264" class="val" fill="#2E5C8A">市场级风险降</text>
+    <text x="954" y="284" class="b">多样性红利正常兑现</text>
+
+    <!-- misinformation lane band -->
+    <rect x="120" y="360" width="1016" height="130" fill="#A63A50" opacity="0.07"/>
+    <text x="136" y="382" font-size="12.5" letter-spacing="2" fill="#A63A50">共享错误信息环境时</text>
+    <path d="M 330 406 C 560 414 760 434 930 464" fill="none" stroke="url(#gWine)" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 930 464 l -12 -14 l -2 18 z" fill="#A63A50"/>
+    <circle cx="330" cy="406" r="7" fill="#A63A50"/>
+    <text x="954" y="452" class="val" fill="#A63A50">相关性变负债</text>
+    <text x="954" y="472" class="b">一起自信地错，无人纠偏</text>
+
+    <!-- shared capability axis -->
+    <line x1="330" y1="212" x2="330" y2="560" stroke="#B08D3E" stroke-width="2.5" stroke-dasharray="2 6"/>
+    <circle cx="330" cy="345" r="9" fill="url(#gGear)"/>
+    <text x="330" y="332" text-anchor="middle" font-size="14" font-weight="700" fill="#8A6A28">能力提升</text>
+    <text x="330" y="588" text-anchor="middle" font-size="12.5" fill="#8C97A3">行为相关性随能力上升 · 前沿模型步调趋同</text>
+  </g>
+
+  <text x="64" y="636" font-size="12.5" fill="#A29C88">Agent-based 金融市场模拟摘要自述，能力分级与相关性口径为论文自定义；未经同行评审，不能外推为真实市场结论。</text>
 </svg>

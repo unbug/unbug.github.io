@@ -1,46 +1,108 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0f1b2d"/>
-      <stop offset="100%" stop-color="#1c2e4a"/>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #7D9484; }
+      .rl { font-size: 15px; fill: #3E554B; }
+      .b { font-size: 12px; fill: #93A79B; }
+      .val { font-size: 18px; font-weight: 700; }
+      .chip { font-size: 12.5px; font-weight: 600; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EEF4EF"/>
+    </linearGradient>
+    <linearGradient id="gMoss" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F7D61"/><stop offset="1" stop-color="#6FB58F"/>
+    </linearGradient>
+    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B9892F"/><stop offset="1" stop-color="#DCB65F"/>
+    </linearGradient>
+    <linearGradient id="gRose" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8E3B5E"/><stop offset="1" stop-color="#C56E8F"/>
+    </linearGradient>
+    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F6DA8"/><stop offset="1" stop-color="#6FA3D4"/>
+    </linearGradient>
+    <linearGradient id="gClay" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B5442E"/><stop offset="1" stop-color="#D9704F"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <text x="60" y="86" font-family="Helvetica,Arial,sans-serif" font-size="26" fill="#7d9cc0">AI PARADIGM RADAR · 2026-08</text>
-  <text x="60" y="150" font-family="Helvetica,Arial,sans-serif" font-size="44" font-weight="bold" fill="#ffffff">Agent 自进化：从权重层到 Harness 层</text>
-  <text x="60" y="192" font-family="Helvetica,Arial,sans-serif" font-size="22" fill="#a8c0dd">Recuris · StarHarness · SkillForge —— 三篇论文，同一条路线</text>
 
-  <!-- left: old paradigm -->
-  <rect x="60" y="240" width="380" height="150" rx="10" fill="#243b5c" stroke="#3d5a82"/>
-  <text x="84" y="278" font-family="Helvetica,Arial,sans-serif" font-size="20" fill="#8fa9c9">旧范式：权重层 RSI</text>
-  <text x="84" y="310" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#c5d6ea">轨迹 → 微调 → 新权重</text>
-  <text x="84" y="338" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#e08a8a">成本高 · 不可回滚 · 归因难</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1118" cy="112" r="140" fill="#2F7D61" opacity="0.06"/>
+  <circle cx="78" cy="618" r="112" fill="#B9892F" opacity="0.06"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gClay)"/>
 
-  <!-- arrow -->
-  <path d="M 452 315 L 560 315" stroke="#5b8bd0" stroke-width="4" fill="none"/>
-  <path d="M 560 315 l -16 -9 v 18 z" fill="#5b8bd0"/>
+  <text class="k" x="64" y="84">AI 范式雷达 · 2026-08-26 · RECURIS / STARHARNESS / SKILLFORGE</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#182B22">权重不动，嫁接新枝</text>
+  <text x="64" y="158" font-size="15" fill="#54685C">Agent 自进化搬进 Harness 层：结构化证据 + 组件级修补 + 验证门</text>
 
-  <!-- right: new paradigm -->
-  <rect x="576" y="240" width="564" height="150" rx="10" fill="#1f3a5f" stroke="#5b8bd0" stroke-width="2"/>
-  <text x="600" y="278" font-family="Helvetica,Arial,sans-serif" font-size="20" fill="#9fc2ef">新范式：Harness 层自进化（权重不动）</text>
-  <text x="600" y="310" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#d5e4f5">结构化轨迹 → 组件级归因 → 验证门 → 修补记忆/接口/技能</text>
-  <text x="600" y="338" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#8fd6a4">可回滚 · 低成本 · 归因 64.8% vs 13.0%</text>
+  <!-- motif: graft on trunk, scion leafing -->
+  <g>
+    <path d="M 1040 400 v -120" stroke="#7A5A3A" stroke-width="14" stroke-linecap="round"/>
+    <path d="M 1040 322 c -26 -10 -34 -34 -30 -52 c 22 2 40 20 42 44" fill="url(#gMoss)"/>
+    <path d="M 1040 300 c 26 -12 34 -38 28 -58 c -24 4 -40 24 -40 48" fill="url(#gGold)"/>
+    <path d="M 1040 282 c -4 -26 10 -44 30 -52 c 6 22 -4 44 -22 54" fill="url(#gRose)" opacity="0.9"/>
+    <circle cx="1040" cy="322" r="7" fill="#B5442E"/>
+    <text class="b" x="1040" y="432" text-anchor="middle">根系=权重不动 · 新枝=记忆/技能</text>
+  </g>
 
-  <!-- three papers -->
-  <rect x="60" y="430" width="352" height="140" rx="10" fill="#243b5c" stroke="#3d5a82"/>
-  <text x="84" y="466" font-family="Helvetica,Arial,sans-serif" font-size="20" font-weight="bold" fill="#ffffff">Recuris</text>
-  <text x="84" y="496" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c5d6ea">记忆怎么用：EM-WM 耦合</text>
-  <text x="84" y="524" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#8fd6a4">τ²-Bench: Opus 5 → 87.9%</text>
+  <!-- dumbbells: 1pp = 8.12px, x0=590 -->
+  <g>
+    <rect x="590" y="204" width="380" height="70" fill="#B5442E" opacity="0.07"/>
+    <rect x="590" y="292" width="380" height="70" fill="#B5442E" opacity="0.07"/>
 
-  <rect x="424" y="430" width="352" height="140" rx="10" fill="#243b5c" stroke="#3d5a82"/>
-  <text x="448" y="466" font-family="Helvetica,Arial,sans-serif" font-size="20" font-weight="bold" fill="#ffffff">StarHarness</text>
-  <text x="448" y="496" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c5d6ea">结构怎么搜：分层任务池</text>
-  <text x="448" y="524" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#8fd6a4">3 基准 +20~35 pp，4-12 次修改</text>
+    <text class="rl" x="574" y="237" text-anchor="end">Claude Opus 5 · τ²-Bench</text>
+    <text class="b" x="574" y="255" text-anchor="end">基线 → Recuris · Retail</text>
+    <circle cx="649" cy="238" r="7" fill="#FFFFFF" stroke="#2F6DA8" stroke-width="3"/>
+    <line x1="649" y1="238" x2="775" y2="238" stroke="url(#gMoss)" stroke-width="2.5"/>
+    <circle cx="775" cy="238" r="10" fill="url(#gMoss)"/>
+    <text class="val" x="795" y="244" fill="#2F7D61" font-size="20">72.4% → 87.9%</text>
 
-  <rect x="788" y="430" width="352" height="140" rx="10" fill="#243b5c" stroke="#3d5a82"/>
-  <text x="812" y="466" font-family="Helvetica,Arial,sans-serif" font-size="20" font-weight="bold" fill="#ffffff">SkillForge</text>
-  <text x="812" y="496" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c5d6ea">技能怎么验：低效分数 + 反思</text>
-  <text x="812" y="524" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#8fd6a4">ALFWorld / WebShop / AppWorld</text>
+    <text class="rl" x="574" y="325" text-anchor="end">GPT-5.4-mini · ITBench</text>
+    <text class="b" x="574" y="343" text-anchor="end">基线 → StarHarness</text>
+    <circle cx="617" cy="326" r="7" fill="#FFFFFF" stroke="#2F6DA8" stroke-width="3"/>
+    <line x1="617" y1="326" x2="992" y2="326" stroke="url(#gRose)" stroke-width="2.5"/>
+    <circle cx="992" cy="326" r="10" fill="url(#gRose)"/>
+    <text class="val" x="936" y="306" fill="#8E3B5E" font-size="20">33.1% → 79.4%</text>
+  </g>
 
-  <text x="60" y="606" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#5f7ba0">unbug.github.io · AI Paradigm Radar</text>
+  <!-- big number anchor -->
+  <g>
+    <text class="serif" x="64" y="252" font-size="30" font-weight="700" fill="#182B22">归因对谁下手</text>
+    <text class="serif" x="64" y="316" font-size="42" font-weight="700" fill="#2F7D61">64.8%</text>
+    <text class="b" x="208" y="304">结构化轨迹失败归因</text>
+    <text class="b" x="208" y="322">vs 只看任务结果 13.0%</text>
+    <line x1="64" y1="340" x2="286" y2="340" stroke="#D8E4DA"/>
+    <text class="serif" x="64" y="378" font-size="26" font-weight="700" fill="#7A5A14">35 / 37</text>
+    <text class="b" x="170" y="372">模型×基准组合获得提升</text>
+    <text class="b" x="170" y="390">最长任务 +32.2 个点</text>
+  </g>
+
+  <!-- bottom chips -->
+  <line x1="64" y1="414" x2="864" y2="414" stroke="#D8E4DA"/>
+  <g>
+    <rect x="64" y="434" width="172" height="28" rx="14" fill="url(#gGold)" opacity="0.22"/>
+    <text x="150" y="453" text-anchor="middle" class="chip" fill="#7A5A14">只改 4-12 次，+20-35pp</text>
+    <text class="b" x="248" y="453">StarHarness 三个企业基准</text>
+
+    <rect x="64" y="474" width="196" height="28" rx="14" fill="url(#gBlue)" opacity="0.15"/>
+    <text x="162" y="493" text-anchor="middle" class="chip" fill="#2F5E90">常驻技能库反降到 65.57%</text>
+    <text class="b" x="272" y="493">Recuris 状态接地 83.55% · 成本还低 46%</text>
+
+    <rect x="64" y="514" width="160" height="28" rx="14" fill="url(#gMoss)" opacity="0.16"/>
+    <text x="144" y="533" text-anchor="middle" class="chip" fill="#27604B">验证门：修败不回退</text>
+    <text class="b" x="236" y="533">留出集锚点任务过不了就丢弃</text>
+  </g>
+
+  <!-- right verdict -->
+  <g>
+    <rect x="900" y="404" width="236" height="96" fill="#8E3B5E" opacity="0.07"/>
+    <text class="serif" x="916" y="438" font-size="20" font-weight="700" fill="#6E2E48">权重层 ≠ 替代关系</text>
+    <text x="916" y="464" font-size="12.5" fill="#6B7078">Harness 吃工程性失败</text>
+    <text x="916" y="482" font-size="12.5" fill="#6B7078">权重层吃能力性失败</text>
+  </g>
+
+  <text class="serif" x="64" y="592" font-size="18" fill="#182B22">证据回路搬到外面，优化器可以留在任何一层。</text>
+  <text class="b" x="1136" y="640" text-anchor="end">增益全部来自基准环境 · Terminal-Bench 置信区间含零 · Micropaper</text>
 </svg>

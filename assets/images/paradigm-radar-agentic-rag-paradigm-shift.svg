@@ -1,147 +1,106 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1f3a;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#0d1528;stop-opacity:1"/>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8B95A5; }
+      .rl { font-size: 15px; fill: #454E5E; }
+      .val { font-size: 17px; font-weight: 700; fill: #1A1B1E; }
+      .b { font-size: 12px; fill: #9BA5B3; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F4F6F9"/>
     </linearGradient>
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#4a9eff;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#7c5cff;stop-opacity:1"/>
+    <linearGradient id="gNavy" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2E4E7E"/><stop offset="1" stop-color="#5C7FAE"/>
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <linearGradient id="gBrass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B9892F"/><stop offset="1" stop-color="#DCB65E"/>
+    </linearGradient>
+    <linearGradient id="gPlum" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7A4A9E"/><stop offset="1" stop-color="#A87CC8"/>
+    </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F8F86"/><stop offset="1" stop-color="#69BCB2"/>
+    </linearGradient>
+    <linearGradient id="gRed" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B5442E"/><stop offset="1" stop-color="#DE7E5E"/>
+    </linearGradient>
   </defs>
 
-  <!-- Background -->
-  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1102" cy="110" r="150" fill="#7A4A9E" opacity="0.06"/>
+  <circle cx="86" cy="616" r="115" fill="#B9892F" opacity="0.08"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gPlum)"/>
 
-  <!-- Grid pattern overlay -->
-  <g opacity="0.05">
-    <line x1="0" y1="0" x2="1200" y2="0" stroke="#fff" stroke-width="0.5"/>
-    <line x1="0" y1="63" x2="1200" y2="63" stroke="#fff" stroke-width="0.5"/>
-    <line x1="0" y1="126" x2="1200" y2="126" stroke="#fff" stroke-width="0.5"/>
-    <line x1="0" y1="189" x2="1200" y2="189" stroke="#fff" stroke-width="0.5"/>
-    <line x1="0" y1="252" x2="1200" y2="252" stroke="#fff" stroke-width="0.5"/>
-    <line x1="0" y1="315" x2="1200" y2="315" stroke="#fff" stroke-width="0.5"/>
-    <line x1="0" y1="378" x2="1200" y2="378" stroke="#fff" stroke-width="0.5"/>
-    <line x1="0" y1="441" x2="1200" y2="441" stroke="#fff" stroke-width="0.5"/>
-    <line x1="0" y1="504" x2="1200" y2="504" stroke="#fff" stroke-width="0.5"/>
-    <line x1="0" y1="567" x2="1200" y2="567" stroke="#fff" stroke-width="0.5"/>
-    <line x1="0" y1="630" x2="1200" y2="630" stroke="#fff" stroke-width="0.5"/>
+  <text class="k" x="64" y="84">AI 范式雷达 · 2026-08-01 · AGENTIC RAG</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">从索引卡到参考馆员</text>
+  <text x="64" y="158" font-size="15" fill="#576072">传统 RAG 是一次检索的卡片目录；Agentic RAG 是会反思的参考馆员</text>
+
+  <!-- library motif: desk lamp + catalog drawer -->
+  <g>
+    <path d="M 1010 152 l 26 -62 a 34 34 0 0 1 62 22 l -8 22 z" fill="url(#gBrass)" opacity="0.9"/>
+    <line x1="1046" y1="112" x2="1060" y2="152" stroke="#2E4E7E" stroke-width="4" stroke-linecap="round"/>
+    <rect x="1000" y="152" width="130" height="10" rx="5" fill="#2E4E7E"/>
+    <rect x="1016" y="172" width="98" height="26" rx="5" fill="url(#gNavy)" opacity="0.85"/>
+    <circle cx="1065" cy="185" r="4" fill="#DCB65E"/>
+    <text x="1065" y="220" text-anchor="middle" font-size="12" fill="#8B95A5">多跳检索台</text>
   </g>
 
-  <!-- Left side: Traditional RAG (linear pipeline) -->
-  <text x="80" y="140" fill="#6b7fa3" font-size="14" font-family="monospace">TRADITIONAL RAG</text>
-  
-  <!-- Linear pipeline boxes -->
-  <rect x="80" y="170" width="120" height="50" rx="6" fill="#2a3a5c" stroke="#4a9eff" stroke-width="1.5"/>
-  <text x="140" y="200" text-anchor="middle" fill="#8ab4f8" font-size="12" font-family="monospace">Query</text>
-
-  <line x1="200" y1="195" x2="230" y2="195" stroke="#4a6fa5" stroke-width="2"/>
-  <polygon points="228,190 238,195 228,200" fill="#4a6fa5"/>
-
-  <rect x="230" y="170" width="120" height="50" rx="6" fill="#2a3a5c" stroke="#4a9eff" stroke-width="1.5"/>
-  <text x="290" y="200" text-anchor="middle" fill="#8ab4f8" font-size="12" font-family="monospace">Retrieve</text>
-
-  <line x1="350" y1="195" x2="380" y2="195" stroke="#4a6fa5" stroke-width="2"/>
-  <polygon points="378,190 388,195 378,200" fill="#4a6fa5"/>
-
-  <rect x="380" y="170" width="120" height="50" rx="6" fill="#2a3a5c" stroke="#4a9eff" stroke-width="1.5"/>
-  <text x="440" y="200" text-anchor="middle" fill="#8ab4f8" font-size="12" font-family="monospace">Generate</text>
-
-  <line x1="500" y1="195" x2="530" y2="195" stroke="#4a6fa5" stroke-width="2"/>
-  <polygon points="528,190 538,195 528,200" fill="#4a6fa5"/>
-
-  <rect x="530" y="170" width="120" height="50" rx="6" fill="#2a3a5c" stroke="#4a9eff" stroke-width="1.5"/>
-  <text x="590" y="200" text-anchor="middle" fill="#8ab4f8" font-size="12" font-family="monospace">Answer</text>
-
-  <!-- Arrow pointing down -->
-  <line x1="340" y1="260" x2="340" y2="310" stroke="#4a6fa5" stroke-width="2"/>
-  <polygon points="335,308 340,320 345,308" fill="#4a6fa5"/>
-
-  <!-- Right side: Agentic RAG (circular loop) -->
-  <text x="700" y="140" fill="#7c5cff" font-size="14" font-family="monospace">AGENTIC RAG</text>
-
-  <!-- Circular agent loop diagram -->
-  <g transform="translate(820, 310)">
-    <!-- Outer circle (loop) -->
-    <circle cx="0" cy="0" r="160" fill="none" stroke="#7c5cff" stroke-width="1.5" stroke-dasharray="8,4" opacity="0.4"/>
-
-    <!-- Center: Agent Brain -->
-    <circle cx="0" cy="0" r="35" fill="#2a3a5c" stroke="#7c5cff" stroke-width="2" filter="url(#glow)"/>
-    <text x="0" y="-4" text-anchor="middle" fill="#b8a9ff" font-size="11" font-family="monospace">Agent</text>
-    <text x="0" y="12" text-anchor="middle" fill="#b8a9ff" font-size="11" font-family="monospace">Brain</text>
-
-    <!-- Top: Plan -->
-    <rect x="-45" y="-175" width="90" height="36" rx="8" fill="#2a3a5c" stroke="#4a9eff" stroke-width="1.5"/>
-    <text x="0" y="-152" text-anchor="middle" fill="#8ab4f8" font-size="11" font-family="monospace">Plan</text>
-
-    <!-- Right: Retrieve -->
-    <rect x="130" y="-60" width="90" height="36" rx="8" fill="#2a3a5c" stroke="#4a9eff" stroke-width="1.5"/>
-    <text x="175" y="-37" text-anchor="middle" fill="#8ab4f8" font-size="11" font-family="monospace">Retrieve</text>
-
-    <!-- Bottom: Evaluate -->
-    <rect x="-45" y="140" width="90" height="36" rx="8" fill="#2a3a5c" stroke="#ff7c5c" stroke-width="1.5"/>
-    <text x="0" y="163" text-anchor="middle" fill="#ffb8a0" font-size="11" font-family="monospace">Evaluate</text>
-
-    <!-- Left: Reflect -->
-    <rect x="-220" y="-60" width="90" height="36" rx="8" fill="#2a3a5c" stroke="#ff7c5c" stroke-width="1.5"/>
-    <text x="-175" y="-37" text-anchor="middle" fill="#ffb8a0" font-size="11" font-family="monospace">Reflect</text>
-
-    <!-- Arrows around the loop -->
-    <path d="M -20,-140 Q 0,-165 20,-140" fill="none" stroke="#7c5cff" stroke-width="2"/>
-    <polygon points="18,-138 25,-145 22,-135" fill="#7c5cff"/>
-
-    <path d="M 140,-40 Q 165,-20 140,0" fill="none" stroke="#7c5cff" stroke-width="2"/>
-    <polygon points="138,-2 145,5 135,2" fill="#7c5cff"/>
-
-    <path d="M 20,140 Q 0,165 -20,140" fill="none" stroke="#ff7c5c" stroke-width="2"/>
-    <polygon points="-22,138 -15,145 -25,142" fill="#ff7c5c"/>
-
-    <path d="M -140,-40 Q -165,-20 -140,0" fill="none" stroke="#ff7c5c" stroke-width="2"/>
-    <polygon points="-138,-2 -145,5 -135,2" fill="#ff7c5c"/>
-
-    <!-- Inner feedback arrows -->
-    <path d="M 60,-80 Q 90,-100 80,-120" fill="none" stroke="#ffd700" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
-    <text x="100" y="-100" fill="#ffd700" font-size="9" font-family="monospace" opacity="0.8">feedback</text>
-
-    <path d="M -60,80 Q -90,100 -80,120" fill="none" stroke="#ffd700" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
-    <text x="-100" y="100" fill="#ffd700" font-size="9" font-family="monospace" opacity="0.8">feedback</text>
+  <!-- left: linear pipeline -->
+  <g>
+    <rect x="64" y="216" width="440" height="150" rx="14" fill="#2E4E7E" opacity="0.07"/>
+    <text class="rl" x="88" y="248" font-weight="700" fill="#2E4E7E">传统 RAG · 一次检索定终身</text>
+    <text x="88" y="292" font-size="14" fill="#454E5E">查询 → 向量化 → top-k 检索 → 拼接生成</text>
+    <path d="M 108 312 h 300 m -12 -7 l 14 7 l -14 7" fill="none" stroke="#5C7FAE" stroke-width="3" stroke-linecap="round"/>
+    <text class="b" x="88" y="346">没有反馈回路：检索错了就是错了</text>
   </g>
 
-  <!-- VS divider -->
-  <line x1="620" y1="100" x2="620" y2="530" stroke="#4a6fa5" stroke-width="1" opacity="0.3"/>
-  <text x="620" y="320" text-anchor="middle" fill="#6b7fa3" font-size="28" font-family="monospace" transform="rotate(-90, 620, 320)">VS</text>
+  <!-- right: agent loop -->
+  <g>
+    <rect x="530" y="216" width="606" height="150" rx="14" fill="#7A4A9E" opacity="0.07"/>
+    <text class="rl" x="554" y="248" font-weight="700" fill="#6A3E8C">Agentic RAG · Agent Loop</text>
+    <g font-size="13.5" fill="#454E5E">
+      <rect x="554" y="272" width="84" height="34" rx="17" fill="url(#gNavy)"/><text x="596" y="294" text-anchor="middle" fill="#FFFFFF">规划</text>
+      <rect x="668" y="272" width="84" height="34" rx="17" fill="url(#gTeal)"/><text x="710" y="294" text-anchor="middle" fill="#FFFFFF">检索</text>
+      <rect x="782" y="272" width="84" height="34" rx="17" fill="url(#gBrass)"/><text x="824" y="294" text-anchor="middle" fill="#FFFFFF">评估</text>
+      <rect x="896" y="272" width="84" height="34" rx="17" fill="url(#gPlum)"/><text x="938" y="294" text-anchor="middle" fill="#FFFFFF">反思</text>
+      <rect x="1010" y="272" width="84" height="34" rx="17" fill="url(#gRed)"/><text x="1052" y="294" text-anchor="middle" fill="#FFFFFF">再行动</text>
+    </g>
+    <g stroke="#8A93A3" stroke-width="2.5" fill="none" stroke-linecap="round">
+      <path d="M 640 289 h 26 m -8 -6 l 10 6 l -10 6"/>
+      <path d="M 754 289 h 26 m -8 -6 l 10 6 l -10 6"/>
+      <path d="M 868 289 h 26 m -8 -6 l 10 6 l -10 6"/>
+      <path d="M 982 289 h 26 m -8 -6 l 10 6 l -10 6"/>
+    </g>
+    <path d="M 1052 312 q 4 34 -46 34 h -370 q -44 0 -42 -34" fill="none" stroke="#7A4A9E" stroke-width="2.5" stroke-dasharray="6 5"/>
+    <path d="M 594 346 l -10 -7 v 14 z" fill="#7A4A9E"/>
+    <text class="b" x="808" y="352" text-anchor="middle">置信度不足 → 改写查询 / 换知识源，循环多轮</text>
+  </g>
 
-  <!-- Bottom tagline -->
-  <rect x="150" y="480" width="900" height="60" rx="8" fill="#1e2a4a" stroke="#4a6fa5" stroke-width="1" opacity="0.7"/>
-  <text x="600" y="515" text-anchor="middle" fill="#c8d6f0" font-size="18" font-family="-apple-system, BlinkMacSystemFont, sans-serif">从线性流水线到迭代循环的范式转移</text>
-  <text x="600" y="538" text-anchor="middle" fill="#6b7fa3" font-size="12" font-family="monospace">Linear Pipeline → Iterative Agent Loop</text>
+  <!-- before/after: hallucination rate -->
+  <g>
+    <text class="rl" x="64" y="424" font-weight="700">幻觉率（FEVER 口径）</text>
+    <line x1="330" y1="418" x2="760" y2="418" stroke="#9AA6B6" stroke-width="2.5"/>
+    <circle cx="760" cy="418" r="9" fill="none" stroke="#2E4E7E" stroke-width="3"/>
+    <circle cx="495" cy="418" r="9" fill="url(#gRed)"/>
+    <text class="b" x="760" y="394" text-anchor="middle">传统 RAG ≈ 35%</text>
+    <text class="val" x="470" y="452" text-anchor="end" fill="#B5442E">降至 ≈ 15–20%</text>
+    <text class="val" x="1090" y="425" text-anchor="end" fill="#B5442E">降幅 40–57%</text>
+  </g>
 
-  <!-- Top right: Paradigm Radar badge -->
-  <rect x="940" y="30" width="230" height="40" rx="6" fill="#7c5cff" opacity="0.15"/>
-  <text x="1055" y="56" text-anchor="middle" fill="#b8a9ff" font-size="14" font-family="-apple-system, BlinkMacSystemFont, sans-serif">AI Paradigm Radar</text>
+  <!-- price strip -->
+  <g>
+    <text x="64" y="516" font-size="28" font-weight="700" fill="#2E4E7E">+7.0</text>
+    <text x="64" y="538" font-size="12.5" fill="#7C8697">HotpotQA F1 35.0→42.0（Self-RAG）</text>
+    <text x="300" y="516" font-size="28" font-weight="700" fill="#B9892F">3 倍</text>
+    <text x="300" y="538" font-size="12.5" fill="#7C8697">延迟 ≈2 秒 → ≈6–8 秒</text>
+    <text x="520" y="516" font-size="28" font-weight="700" fill="#7A4A9E">2–3x</text>
+    <text x="520" y="538" font-size="12.5" fill="#7C8697">Token 成本（估计口径 1.5–3 倍）</text>
+    <text x="760" y="516" font-size="28" font-weight="700" fill="#2F8F86">省 40%</text>
+    <text x="760" y="538" font-size="12.5" fill="#7C8697">简单问题跳检索（ARAGOG）</text>
+  </g>
 
-  <!-- Bottom left: date -->
-  <text x="80" y="570" fill="#4a6fa5" font-size="12" font-family="monospace">2026-08-01</text>
-
-  <!-- Decorative dots -->
-  <circle cx="1050" cy="560" r="3" fill="#7c5cff" opacity="0.4"/>
-  <circle cx="1070" cy="560" r="2" fill="#4a9eff" opacity="0.3"/>
-  <circle cx="1085" cy="560" r="2" fill="#ff7c5c" opacity="0.3"/>
-
-  <!-- Corner accents -->
-  <line x1="30" y1="30" x2="60" y2="30" stroke="#4a9eff" stroke-width="2" opacity="0.5"/>
-  <line x1="30" y1="30" x2="30" y2="60" stroke="#4a9eff" stroke-width="2" opacity="0.5"/>
-
-  <line x1="1170" y1="30" x2="1140" y2="30" stroke="#7c5cff" stroke-width="2" opacity="0.5"/>
-  <line x1="1170" y1="30" x2="1170" y2="60" stroke="#7c5cff" stroke-width="2" opacity="0.5"/>
-
-  <line x1="30" y1="600" x2="60" y2="600" stroke="#4a9eff" stroke-width="2" opacity="0.5"/>
-  <line x1="30" y1="600" x2="30" y2="570" stroke="#4a9eff" stroke-width="2" opacity="0.5"/>
-
-  <line x1="1170" y1="600" x2="1140" y2="600" stroke="#7c5cff" stroke-width="2" opacity="0.5"/>
-  <line x1="1170" y1="600" x2="1170" y2="570" stroke="#7c5cff" stroke-width="2" opacity="0.5"/>
+  <line x1="64" y1="566" x2="1136" y2="566" stroke="#E3E7EE"/>
+  <text class="serif" x="64" y="604" font-size="17" fill="#1A1B1E">判断标准只有一条：你的问题需不需要多跳推理。单跳可得，传统 RAG 就是最优解。</text>
+  <text x="64" y="640" font-size="12.5" fill="#A29C88">数据为论文基准与 2025-2026 行业估计混合口径；真实场景提升或仅为论文值的 50%–70% · Micropaper</text>
 </svg>

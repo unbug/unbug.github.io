@@ -1,47 +1,114 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 620" font-family="-apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
-  <rect width="860" height="620" fill="#fbfbfd"/>
-  <text x="430" y="38" text-anchor="middle" font-size="21" font-weight="700" fill="#1a1a2e">范式雷达 #13：Agent 从应用 loop 迁为集群一等负载</text>
-  <text x="430" y="62" text-anchor="middle" font-size="13" fill="#666">供给端 google/ax + Agent Substrate · 需求端 Linear CI 重构 · 同周交汇（2026-09-25 实测）</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9F9482; }
+      .rl { font-size: 15px; fill: #4C463C; }
+      .val { font-size: 21px; font-weight: 700; fill: #26221B; }
+      .b { font-size: 12px; fill: #A89E8A; }
+      .hd { font-size: 12.5px; letter-spacing: 2px; fill: #857B67; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F9F5EB"/>
+    </linearGradient>
+    <linearGradient id="gBale" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2F6E4F"/><stop offset="1" stop-color="#6FA97F"/>
+    </linearGradient>
+    <linearGradient id="gWinch" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B5442E"/><stop offset="1" stop-color="#DE8253"/>
+    </linearGradient>
+    <linearGradient id="gCrane" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#DDA72C"/><stop offset="1" stop-color="#F0CC6C"/>
+    </linearGradient>
+    <linearGradient id="gHull" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#31536E"/><stop offset="1" stop-color="#5F87A5"/>
+    </linearGradient>
+    <linearGradient id="gMast" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7E5233"/><stop offset="1" stop-color="#A97A50"/>
+    </linearGradient>
+  </defs>
 
-  <!-- 供给端 -->
-  <rect x="40" y="88" width="380" height="170" rx="10" fill="#eef2ff" stroke="#c7d2fe" stroke-width="1.5"/>
-  <text x="230" y="116" text-anchor="middle" font-size="15" font-weight="700" fill="#3730a3">供给端：微服务原语逐件复刻</text>
-  <text x="60" y="146" font-size="12.5" fill="#444">google/ax：11,045 星 · v0.3.0（09-20）</text>
-  <text x="60" y="170" font-size="12.5" fill="#444">HN 主帖 663 分 / 299 评论</text>
-  <text x="60" y="194" font-size="12.5" fill="#444">README 自述：billions 级 Agent 负载</text>
-  <text x="60" y="218" font-size="12.5" fill="#444">「If you have used Kubernetes, ax feels similar」</text>
-  <text x="60" y="242" font-size="12.5" fill="#3730a3">下层 Substrate：3,761 星 · 自述 millions of</text>
-  <text x="248" y="242" font-size="12.5" fill="#3730a3">sandboxes · sub-500ms resume</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1104" cy="112" r="140" fill="#31536E" opacity="0.06"/>
+  <circle cx="80" cy="618" r="115" fill="#DDA72C" opacity="0.07"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="#B5442E"/>
 
-  <!-- 需求端 -->
-  <rect x="440" y="88" width="380" height="170" rx="10" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
-  <text x="630" y="116" text-anchor="middle" font-size="15" font-weight="700" fill="#166534">需求端：旧设施先排队</text>
-  <text x="460" y="146" font-size="12.5" fill="#444">Linear 官方博客（HN 313 分）：</text>
-  <text x="460" y="170" font-size="12.5" fill="#444">AI 代码让 CI 成新瓶颈，整条链路重构</text>
-  <text x="460" y="200" font-size="12.5" fill="#166534">与 ax 无因果关系的独立主体</text>
-  <text x="460" y="224" font-size="12.5" fill="#444">先压垮的不是集群调度器，而是离</text>
-  <text x="460" y="246" font-size="12.5" fill="#444">Agent 产出最近的旧层</text>
+  <text class="k" x="64" y="84">范式雷达 · 2026-09-25 · GOOGLE/AX V0.3.0</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">散装货，进集装箱</text>
+  <text x="64" y="158" font-size="15.5" fill="#6E6A5C">Agent 从应用循环迁为集群调度器眼里的一等负载</text>
 
-  <!-- 反方 -->
-  <rect x="40" y="280" width="780" height="130" rx="10" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
-  <text x="60" y="308" font-size="14.5" font-weight="700" fill="#991b1b">反方三刀（HN 实测评论）</text>
-  <text x="60" y="336" font-size="12.5" fill="#444">1. 必然论疲劳：「k8sification was always inevitable — salary justification」</text>
-  <text x="60" y="360" font-size="12.5" fill="#444">2. 病灶复刻：「Overly complex; yaml files, heavy framework」多条附和</text>
-  <text x="60" y="384" font-size="12.5" fill="#444">3. 普通服务论：队列 + 重试就能跑，不需要新原语 → 旧瓶刻新标签？</text>
+  <!-- port illustration: gantry crane lifting a crate -->
+  <g>
+    <rect x="893" y="196" width="188" height="14" rx="3" fill="url(#gCrane)"/>
+    <rect x="901" y="210" width="9" height="96" fill="url(#gMast)"/>
+    <rect x="1064" y="210" width="9" height="96" fill="url(#gMast)"/>
+    <line x1="998" y1="210" x2="998" y2="252" stroke="#7E5233" stroke-width="2.5"/>
+    <rect x="963" y="252" width="70" height="58" rx="5" fill="url(#gBale)"/>
+    <line x1="963" y1="271" x2="1033" y2="271" stroke="#F9F5EB" stroke-width="2.5" opacity="0.75"/>
+    <line x1="963" y1="292" x2="1033" y2="292" stroke="#F9F5EB" stroke-width="2.5" opacity="0.75"/>
+    <rect x="868" y="316" width="240" height="26" rx="4" fill="url(#gHull)"/>
+    <rect x="885" y="296" width="34" height="20" rx="3" fill="url(#gWinch)"/>
+    <rect x="929" y="296" width="34" height="20" rx="3" fill="url(#gCrane)"/>
+    <path d="M 868 342 q 120 16 240 0 v 14 h -240 z" fill="#31536E" opacity="0.16"/>
+    <text class="hd" x="988" y="386" text-anchor="middle">码头装卸</text>
+  </g>
 
-  <!-- 争点 -->
-  <rect x="40" y="432" width="380" height="130" rx="10" fill="#fffbeb" stroke="#fde68a" stroke-width="1.5"/>
-  <text x="230" y="460" text-anchor="middle" font-size="14" font-weight="700" fill="#92400e">共同争点</text>
-  <text x="230" y="490" text-anchor="middle" font-size="13" fill="#444">「新负载」还是「旧负载的新流量」</text>
-  <text x="230" y="518" text-anchor="middle" font-size="12" fill="#a16207">三方都不否认 Agent 负载在涨</text>
+  <!-- supply-side stowage numbers -->
+  <g>
+    <text class="hd" x="64" y="212">供给端 · 装船清单（均为仓库自述）</text>
 
-  <!-- 边界 -->
-  <rect x="440" y="432" width="380" height="130" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
-  <text x="460" y="460" font-size="14" font-weight="700" fill="#334155">证据边界</text>
-  <text x="460" y="486" font-size="12" fill="#444">billions / millions 均仓库自述，无第三方压测</text>
-  <text x="460" y="508" font-size="12" fill="#444">ax 是开源运行时，非 Google 云商业承诺</text>
-  <text x="460" y="530" font-size="12" fill="#444">suspend/resume 是否损耗语义状态未验证</text>
+    <rect x="64" y="232" width="790" height="46" fill="#2F6E4F" opacity="0.07"/>
+    <text class="rl" x="84" y="261">沙箱密度</text>
+    <text class="serif" x="300" y="265" font-size="26" font-weight="700" fill="#2F6E4F">millions 级</text>
+    <text class="b" x="520" y="261">Agent Substrate 自述 · 3,761 星</text>
 
-  <rect x="40" y="580" width="780" height="30" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="430" y="600" text-anchor="middle" font-size="11.5" fill="#64748b">可证伪信号：第三方压测/事故报告 · 密度数字复现 · 「普通队列」阵营跑通同等规模对照</text>
+    <rect x="64" y="290" width="790" height="46" fill="#DDA72C" opacity="0.09"/>
+    <text class="rl" x="84" y="319">空闲挂起唤醒</text>
+    <text class="serif" x="300" y="323" font-size="26" font-weight="700" fill="#8A6714">sub-500ms</text>
+    <text class="b" x="520" y="319">复用 worker 资源 · 第三方压测空白</text>
+
+    <rect x="64" y="348" width="790" height="46" fill="#31536E" opacity="0.07"/>
+    <text class="rl" x="84" y="377">编排目标</text>
+    <text class="serif" x="300" y="381" font-size="26" font-weight="700" fill="#31536E">billions 级</text>
+    <text class="b" x="520" y="377">ax 自述 · 现 11,045 星</text>
+
+    <rect x="64" y="406" width="790" height="46" fill="#B5442E" opacity="0.07"/>
+    <text class="rl" x="84" y="435">复刻对象</text>
+    <text class="serif" x="300" y="439" font-size="23" font-weight="700" fill="#B5442E">Kubernetes 原语逐件套用</text>
+    <text class="b" x="700" y="435">调度 · 隔离 · 配额</text>
+  </g>
+
+  <!-- demand-side anchor -->
+  <g>
+    <text class="serif" x="64" y="512" font-size="26" font-weight="700" fill="#1A1B1E">需求侧先排队：<tspan fill="#B5442E">CI 成新瓶颈</tspan></text>
+    <text class="b" x="64" y="538">Linear 为 AI 代码重构整条流水线 · HN 帖 313 分 · 与 ax 互不关联，独立证据</text>
+  </g>
+
+  <!-- slope: ax HN heat -->
+  <g>
+    <line x1="300" y1="596" x2="540" y2="570" stroke="url(#gWinch)" stroke-width="3.5"/>
+    <circle cx="300" cy="596" r="7" fill="#FFFFFF" stroke="#8A8474" stroke-width="3"/>
+    <circle cx="540" cy="570" r="9" fill="url(#gWinch)"/>
+    <text class="val" x="282" y="602" text-anchor="end" font-size="17">299 评论</text>
+    <text class="val" x="558" y="576" fill="#B5442E" font-size="17">663 分</text>
+    <text class="b" x="64" y="598">ax 冲上 HN 头版（09-25 实测）</text>
+  </g>
+
+  <!-- counterargument chips -->
+  <g>
+    <rect x="880" y="506" width="256" height="40" fill="#DDA72C" opacity="0.07"/>
+    <rect x="880" y="548" width="256" height="40" fill="#31536E" opacity="0.06"/>
+    <text class="b" x="880" y="522">HN 高赞质疑</text>
+    <rect x="880" y="532" width="120" height="26" rx="13" fill="#DDA72C" opacity="0.24"/>
+    <text x="940" y="549" text-anchor="middle" font-size="11.5" fill="#7A5E14">「k8s 化必然」</text>
+    <rect x="1010" y="532" width="92" height="26" rx="13" fill="#31536E" opacity="0.18"/>
+    <text x="1056" y="549" text-anchor="middle" font-size="11.5" fill="#31536E">YAML 地狱</text>
+    <rect x="880" y="566" width="116" height="26" rx="13" fill="#2F6E4F" opacity="0.18"/>
+    <text x="938" y="583" text-anchor="middle" font-size="11.5" fill="#2F6E4F">普通队列就够</text>
+    <text class="b" x="1010" y="583">不否认负载在涨</text>
+  </g>
+
+  <line x1="64" y1="622" x2="1136" y2="622" stroke="#E5E1D4"/>
+  <text class="serif" x="64" y="652" font-size="15.5" fill="#4C463C">两侧同周出现，说明错位已经大到藏不住。</text>
+  <text class="b" x="1120" y="652" text-anchor="end">规模数字均为 README 自述 · 未经第三方压测 · Micropaper</text>
 </svg>

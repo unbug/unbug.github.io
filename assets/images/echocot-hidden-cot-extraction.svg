@@ -1,105 +1,127 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="'PingFang SC','Noto Sans CJK SC','Helvetica Neue',Arial,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
   <defs>
-    <marker id="arr" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
-      <path d="M0,0 L10,4 L0,8 z" fill="#546e7a"/>
-    </marker>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #A39579; }
+      .rl { font-size: 15px; fill: #4A4234; }
+      .val { font-size: 20px; font-weight: 700; }
+      .b { font-size: 12px; fill: #ABA08A; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FAF5EA"/>
+    </linearGradient>
+    <linearGradient id="gRust" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A8452B"/><stop offset="1" stop-color="#D97A50"/>
+    </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2E7D74"/><stop offset="1" stop-color="#6BAFA4"/>
+    </linearGradient>
+    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B8862B"/><stop offset="1" stop-color="#E0B85E"/>
+    </linearGradient>
+    <linearGradient id="gPlum" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7C4A6B"/><stop offset="1" stop-color="#B07FA0"/>
+    </linearGradient>
+    <linearGradient id="gVase" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D97A50"/><stop offset="0.5" stop-color="#A8452B"/><stop offset="1" stop-color="#7C4A6B"/>
+    </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="#f7f9fc"/>
-  <rect x="0" y="0" width="1200" height="8" fill="#c62828"/>
 
-  <text x="600" y="52" text-anchor="middle" font-size="30" font-weight="700" fill="#1a237e">黑盒推理模型的隐藏思维链，正在被一条长度信号读走</text>
-  <text x="600" y="82" text-anchor="middle" font-size="16" fill="#546e7a">arXiv:2608.20055 · CISPA 6 位作者 · v1 2026-08-20 · EchoCoT：纯 API 交互提取黑盒 LRM 隐藏 CoT</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1105" cy="108" r="135" fill="#A8452B" opacity="0.06"/>
+  <circle cx="76" cy="622" r="115" fill="#2E7D74" opacity="0.06"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gRust)"/>
 
-  <!-- top: attack loop -->
-  <rect x="40" y="105" width="170" height="90" rx="10" fill="#ffebee" stroke="#c62828" stroke-width="1.5"/>
-  <text x="125" y="138" text-anchor="middle" font-size="16" font-weight="700" fill="#b71c1c">攻击者</text>
-  <text x="125" y="162" text-anchor="middle" font-size="12.5" fill="#c62828">正常 API 提问</text>
-  <text x="125" y="180" text-anchor="middle" font-size="12.5" fill="#c62828">不修改答案目标</text>
+  <text class="k" x="64" y="84">一分钟读论文 · 2026-08-23 · ARXIV:2608.20055 · CISPA · 攻击代码已开源</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">埋着的思想被挖了出来</text>
+  <text x="64" y="158" font-size="15" fill="#6E6350">不开箱、不碰权重，仅靠 API 返回的推理长度与摘要，迭代重放隐藏思维链</text>
 
-  <line x1="210" y1="150" x2="246" y2="150" stroke="#546e7a" stroke-width="2.5" marker-end="url(#arr)"/>
-  <text x="228" y="138" text-anchor="middle" font-size="12" fill="#37474f">调用</text>
+  <!-- excavation motif: buried vase + brush + trowel -->
+  <g>
+    <path d="M 1042 118 q -14 26 -8 48 q 4 20 32 22 q 30 2 36 -20 q 8 -24 -10 -50 q -10 10 -29 10 q -17 0 -21 -10 z" fill="url(#gVase)" opacity="0.9"/>
+    <path d="M 1050 122 a 30 10 0 0 1 44 0" fill="none" stroke="#7C4A6B" stroke-width="3"/>
+    <line x1="1034" y1="112" x2="1052" y2="124" stroke="#A8452B" stroke-width="4" stroke-linecap="round"/>
+    <line x1="1100" y1="108" x2="1086" y2="122" stroke="#B8862B" stroke-width="4" stroke-linecap="round"/>
+    <rect x="1012" y="142" width="34" height="8" rx="4" fill="#2E7D74" transform="rotate(-24 1029 146)"/>
+    <line x1="1000" y1="156" x2="1016" y2="146" stroke="#4A4234" stroke-width="3" stroke-linecap="round" transform="rotate(-24 1008 151)"/>
+    <path d="M 1112 150 l 26 -12 l 4 8 l -26 12 z" fill="#7C4A6B"/>
+    <line x1="1140" y1="140" x2="1156" y2="118" stroke="#B8862B" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 1030 186 q 20 -8 44 0 q 24 8 48 0" fill="none" stroke="#B8862B" stroke-width="2" stroke-dasharray="5 5" opacity="0.7"/>
+    <circle cx="1022" cy="102" r="4.5" fill="#2E7D74"/>
+    <circle cx="1128" cy="94" r="4" fill="#B8862B"/>
+    <circle cx="1150" cy="168" r="4.5" fill="#2E7D74" opacity="0.8"/>
+    <text x="1074" y="206" text-anchor="middle" font-size="12" fill="#2E7D74">答案照常输出，推理埋在地下</text>
+  </g>
 
-  <rect x="250" y="105" width="220" height="90" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
-  <text x="360" y="138" text-anchor="middle" font-size="16" font-weight="700" fill="#0d47a1">黑盒 LRM</text>
-  <text x="360" y="162" text-anchor="middle" font-size="12.5" fill="#1565c0">隐藏 CoT 不直接返回</text>
-  <text x="360" y="180" text-anchor="middle" font-size="12.5" fill="#1565c0">照常作答 · 照常调工具</text>
+  <!-- left: dumbbell open-source extraction -->
+  <g>
+    <text class="rl" x="64" y="224" font-weight="700">开源 LRM · 近逐字提取成功率 ASR@90</text>
+    <text class="b" x="64" y="246">OpenThoughts 测试集 · ASR@90：长度误差 ≤10% 且 ≥90% token 精确匹配</text>
 
-  <line x1="470" y1="150" x2="506" y2="150" stroke="#546e7a" stroke-width="2.5" marker-end="url(#arr)"/>
-  <text x="488" y="138" text-anchor="middle" font-size="12" fill="#37474f">返回</text>
+    <rect x="64" y="266" width="640" height="56" fill="#A8452B" opacity="0.08"/>
+    <rect x="64" y="336" width="640" height="56" fill="#B8862B" opacity="0.09"/>
+    <rect x="64" y="406" width="640" height="56" fill="#2E7D74" opacity="0.08"/>
 
-  <rect x="510" y="105" width="240" height="90" rx="10" fill="#fff3e0" stroke="#ef6c00" stroke-width="2"/>
-  <text x="630" y="138" text-anchor="middle" font-size="16" font-weight="700" fill="#e65100">推理回放面（攻击面）</text>
-  <text x="630" y="162" text-anchor="middle" font-size="12.5" fill="#ef6c00">tool call 之间 API 返回的</text>
-  <text x="630" y="180" text-anchor="middle" font-size="12.5" fill="#ef6c00">推理长度 + CoT 摘要 = 保真度信号</text>
+    <text class="rl" x="196" y="300" text-anchor="end">DeepSeek-V4-Flash</text>
+    <line x1="220" y1="296" x2="625.6" y2="296" stroke="url(#gRust)" stroke-width="3.5"/>
+    <circle cx="220" cy="296" r="7" fill="#FFFFFF" stroke="#7C4A6B" stroke-width="3"/>
+    <circle cx="625.6" cy="296" r="10" fill="url(#gRust)"/>
+    <text class="val" x="646" y="303" fill="#A8452B">66.4%</text>
+    <text class="b" x="646" y="278" fill="#A8452B">峰值</text>
 
-  <line x1="750" y1="150" x2="786" y2="150" stroke="#546e7a" stroke-width="2.5" marker-end="url(#arr)"/>
-  <text x="768" y="138" text-anchor="middle" font-size="12" fill="#37474f">迭代</text>
+    <text class="rl" x="196" y="370" text-anchor="end">GLM-5.2</text>
+    <line x1="220" y1="366" x2="476.5" y2="366" stroke="url(#gGold)" stroke-width="3.5"/>
+    <circle cx="220" cy="366" r="7" fill="#FFFFFF" stroke="#7C4A6B" stroke-width="3"/>
+    <circle cx="476.5" cy="366" r="9" fill="url(#gGold)"/>
+    <text class="val" x="497" y="373" fill="#9A6F1E">48.0%</text>
 
-  <rect x="790" y="105" width="200" height="90" rx="10" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
-  <text x="890" y="138" text-anchor="middle" font-size="16" font-weight="700" fill="#1b5e20">重放提取</text>
-  <text x="890" y="162" text-anchor="middle" font-size="12.5" fill="#2e7d32">诱导模型把推理写进</text>
-  <text x="890" y="180" text-anchor="middle" font-size="12.5" fill="#2e7d32">下一次 tool call 参数</text>
+    <text class="rl" x="196" y="440" text-anchor="end">Qwen3.5-Plus</text>
+    <line x1="220" y1="436" x2="349.6" y2="436" stroke="url(#gTeal)" stroke-width="3.5"/>
+    <circle cx="220" cy="436" r="7" fill="#FFFFFF" stroke="#7C4A6B" stroke-width="3"/>
+    <circle cx="349.6" cy="436" r="9" fill="url(#gTeal)"/>
+    <text class="val" x="370" y="443" fill="#2E7D74">24.0%</text>
+    <text class="b" x="428" y="440" fill="#2E7D74" font-weight="700">最抗提取</text>
 
-  <line x1="990" y1="150" x2="1026" y2="150" stroke="#546e7a" stroke-width="2.5" marker-end="url(#arr)"/>
-  <text x="1008" y="138" text-anchor="middle" font-size="12" fill="#37474f">比对</text>
+    <text class="b" x="220" y="492">区间 30.8%–66.4% · ASR@99 口径收紧为 22.8%–46.1%</text>
+    <rect x="540" y="474" width="10" height="10" rx="2" fill="#8A6E5A"/>
+    <text class="b" x="556" y="483">坐标原点 0%，轴至 75%</text>
+  </g>
 
-  <rect x="1030" y="105" width="130" height="90" rx="10" fill="#fce4ec" stroke="#ad1457" stroke-width="1.5"/>
-  <text x="1095" y="138" text-anchor="middle" font-size="16" font-weight="700" fill="#880e4f">提取的 CoT</text>
-  <text x="1095" y="162" text-anchor="middle" font-size="12.5" fill="#ad1457">多步迭代逼近</text>
-  <text x="1095" y="180" text-anchor="middle" font-size="12.5" fill="#ad1457">通用注入轨迹</text>
+  <!-- right: big anchor + chips + closed-source -->
+  <g>
+    <text class="serif" x="1136" y="266" text-anchor="end" font-size="58" font-weight="700" fill="#A8452B">0.999</text>
+    <text x="730" y="252" font-size="15" fill="#4A4234" font-weight="700">Token-EM 极端案例</text>
+    <text class="b" x="730" y="288">目标 21,106 tokens → 提取 21,109 个 · 1,132 行仅 3 行有差异</text>
 
-  <!-- left panel: open-source ASR bars -->
-  <rect x="40" y="225" width="540" height="215" rx="10" fill="#ffffff" stroke="#cfd8dc" stroke-width="1.5"/>
-  <text x="60" y="253" font-size="16" font-weight="700" fill="#263238">开源 LRM：近逐字提取（Table 1，OpenThoughts）</text>
-  <!-- horizontal bars: scale 4.2px per point, start x=200 -->
-  <rect x="200" y="270" width="279" height="30" fill="#c62828"/>
-  <text x="190" y="290" text-anchor="end" font-size="13.5" fill="#37474f">DeepSeek-V4-Flash</text>
-  <text x="489" y="290" font-size="14" font-weight="700" fill="#b71c1c">66.4%</text>
-  <rect x="200" y="312" width="176" height="30" fill="#ef6c00"/>
-  <text x="190" y="332" text-anchor="end" font-size="13.5" fill="#37474f">GLM-5.2</text>
-  <text x="386" y="332" font-size="14" font-weight="700" fill="#e65100">41.9%</text>
-  <rect x="200" y="354" width="129" height="30" fill="#ef6c00"/>
-  <text x="190" y="374" text-anchor="end" font-size="13.5" fill="#37474f">Qwen3.5-Plus</text>
-  <text x="339" y="374" font-size="14" font-weight="700" fill="#e65100">30.8%</text>
-  <text x="60" y="408" font-size="12.5" fill="#546e7a">ASR@90 = 长度误差 ≤10% 且 ≥90% token 精确匹配；ASR@99（≤1% / ≥99%）区间 22.8%–46.1%</text>
-  <text x="60" y="430" font-size="12.5" fill="#546e7a">极端案例（Figure 4）：目标 21,106 vs 提取 21,109 tokens，Token-EM 0.999，1,132 行仅 3 行差异</text>
+    <g>
+      <rect x="730" y="310" width="112" height="26" rx="13" fill="#B8862B" opacity="0.26"/>
+      <text x="786" y="328" text-anchor="middle" font-size="12.5" fill="#7A5A12">迁移未见数据集</text>
+      <text x="852" y="358" text-anchor="middle" font-size="12.5" fill="#7A5A12" opacity="0"> </text>
+      <text class="val" x="856" y="330" fill="#9A6F1E">80%</text>
+      <text class="b" x="902" y="330">ASR@90 · MATH500</text>
+    </g>
 
-  <!-- right panel: defense matrix -->
-  <rect x="620" y="225" width="540" height="215" rx="10" fill="#ffffff" stroke="#cfd8dc" stroke-width="1.5"/>
-  <text x="640" y="253" font-size="16" font-weight="700" fill="#263238">防御矩阵（Table 6，ASR@90 均值）</text>
-  <!-- bars: scale 4.2px per point, start x=800 -->
-  <rect x="800" y="270" width="193" height="28" fill="#c62828"/>
-  <text x="790" y="289" text-anchor="end" font-size="13.5" fill="#37474f">无防御（66/24/48）</text>
-  <text x="1003" y="289" font-size="14" font-weight="700" fill="#b71c1c">46.0%</text>
-  <rect x="800" y="310" width="21" height="28" fill="#2e7d32"/>
-  <text x="790" y="329" text-anchor="end" font-size="13.5" fill="#37474f">防御性 system prompt</text>
-  <text x="831" y="329" font-size="14" font-weight="700" fill="#1b5e20">5.0%</text>
-  <rect x="800" y="350" width="41" height="28" fill="#ef6c00"/>
-  <text x="790" y="369" text-anchor="end" font-size="13.5" fill="#37474f">攻击者自适应后</text>
-  <text x="851" y="369" font-size="14" font-weight="700" fill="#e65100">9.7%</text>
-  <rect x="800" y="390" width="2" height="28" fill="#c62828"/>
-  <text x="790" y="409" text-anchor="end" font-size="13.5" fill="#37474f">移除 reasoning state</text>
-  <text x="812" y="409" font-size="14" font-weight="700" fill="#b71c1c">0.0%</text>
-  <text x="640" y="430" font-size="12.5" fill="#546e7a">自适应攻击下 DeepSeek 仍达 29.0% · 根因解需 API 提供方配合</text>
+    <line x1="730" y1="366" x2="1136" y2="366" stroke="#E7DFC9"/>
+    <text class="rl" x="730" y="404" font-weight="700">闭源前沿模型：只能量长度</text>
+    <text class="b" x="730" y="428">Gemini-2.5 提取 33,463 tokens · API 报告目标 32,948</text>
+    <text class="b" x="730" y="450">工具调用率 95%–100% · ≥87.8% 问题返回 CoT 摘要</text>
+    <text class="b" x="730" y="472" fill="#A8452B">无 ground-truth CoT，近逐字仅适用于开源侧</text>
+  </g>
 
-  <!-- bottom left: closed-source -->
-  <rect x="40" y="460" width="360" height="130" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5"/>
-  <text x="220" y="488" text-anchor="middle" font-size="15" font-weight="700" fill="#0d47a1">闭源前沿模型：长度贴近目标</text>
-  <text x="220" y="514" text-anchor="middle" font-size="13.5" fill="#1565c0">Gemini-2.5：提取 23,429 vs 目标 18,568</text>
-  <text x="220" y="536" text-anchor="middle" font-size="13.5" fill="#1565c0">极端案例（Figure 1）：33,463 vs 32,948</text>
-  <text x="220" y="560" text-anchor="middle" font-size="12" fill="#5c6bc0">无 ground truth · 只能称长度保真 + 语义对齐</text>
+  <!-- defense slope strip -->
+  <line x1="64" y1="524" x2="1136" y2="524" stroke="#E7DFC9"/>
+  <g>
+    <text class="rl" x="64" y="562" font-weight="700">防御（100 样本 · 平均 ASR@90）</text>
+    <line x1="330" y1="556" x2="520" y2="576" stroke="url(#gGold)" stroke-width="3.5"/>
+    <circle cx="330" cy="556" r="7" fill="#FFFFFF" stroke="#B8862B" stroke-width="3"/>
+    <circle cx="520" cy="576" r="9" fill="url(#gGold)"/>
+    <text class="val" x="312" y="552" text-anchor="end" fill="#9A6F1E">46.0%</text>
+    <text class="val" x="538" y="583" fill="#7A5A12">5.0%</text>
+    <text class="b" x="330" y="608">防御性 system prompt：自适应重优化后回升至 9.7%</text>
 
-  <!-- bottom right: boundary -->
-  <rect x="420" y="460" width="380" height="130" rx="10" fill="#fff8e1" stroke="#f9a825" stroke-width="2"/>
-  <text x="610" y="488" text-anchor="middle" font-size="15" font-weight="700" fill="#e65100">边界与不能外推之处</text>
-  <text x="610" y="514" text-anchor="middle" font-size="13.5" fill="#37474f">开源侧仅 3 模型，Qwen 无防御 ASR@90 仅 24.0%</text>
-  <text x="610" y="536" text-anchor="middle" font-size="13.5" fill="#37474f">未见数据集迁移 ASR@90 最高 80%（Table 7）</text>
-  <text x="610" y="560" text-anchor="middle" font-size="12" fill="#9e9d24">攻击论文 · 代码已开源 github.com/TrustAIRLab/EchoCoT</text>
+    <text class="serif" x="1136" y="586" text-anchor="end" font-size="30" font-weight="700" fill="#2E7D74">全部归零</text>
+    <text class="b" x="1136" y="608" text-anchor="end">移除 reasoning state · 根因在 API 推理元数据 · 需提供方配合</text>
+  </g>
 
-  <!-- bottom far right: takeaway -->
-  <rect x="820" y="460" width="340" height="130" rx="10" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
-  <text x="990" y="488" text-anchor="middle" font-size="15" font-weight="700" fill="#1b5e20">核心结论</text>
-  <text x="990" y="514" text-anchor="middle" font-size="13.5" fill="#2e7d32">API 返回的推理元数据本身</text>
-  <text x="990" y="536" text-anchor="middle" font-size="13.5" fill="#2e7d32">就是被忽视的信息通道</text>
-  <text x="990" y="560" text-anchor="middle" font-size="12" fill="#558b2f">风险真实存在 · 实用防御有残余缺口</text>
+  <text x="64" y="648" font-size="12.5" fill="#A29C88">开源侧仅测三个模型 · 闭源结论止于长度保真 · 不可外推为所有推理模型皆脆弱 · Micropaper</text>
 </svg>

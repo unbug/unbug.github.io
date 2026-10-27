@@ -1,49 +1,118 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
-  <rect width="1200" height="630" fill="#0f1720"/>
-  <text x="80" y="104" fill="#e8edf2" font-size="46" font-weight="bold">Agent 权限清单要住进哪个载体</text>
-  <text x="80" y="152" fill="#8fa3b5" font-size="24">四周窗口内四个主体各自给出一种「可分发、可 diff」的权限工件</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9C8AA6; }
+      .rl { font-size: 15px; font-weight: 700; fill: #241E2B; }
+      .ev { font-size: 13px; fill: #6A6072; }
+      .b { font-size: 12px; fill: #ACA0B6; }
+      .hd { font-size: 12.5px; letter-spacing: 2px; fill: #9C8AA6; }
+      .tag { font-size: 11.5px; font-weight: 700; fill: #FFFFFF; letter-spacing: 1.5px; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F6F1F8"/>
+    </linearGradient>
+    <linearGradient id="gViolet" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5D3E8C"/><stop offset="1" stop-color="#8462B8"/>
+    </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#178A7D"/><stop offset="1" stop-color="#45B3A5"/>
+    </linearGradient>
+    <linearGradient id="gCoral" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E0644A"/><stop offset="1" stop-color="#F0907A"/>
+    </linearGradient>
+    <linearGradient id="gAmber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D18A12"/><stop offset="1" stop-color="#E8B04A"/>
+    </linearGradient>
+    <linearGradient id="gRose" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C2447E"/><stop offset="1" stop-color="#DB77A5"/>
+    </linearGradient>
+  </defs>
 
-  <!-- carrier 1: OCI image -->
-  <rect x="80" y="205" width="240" height="220" rx="14" fill="#16222e" stroke="#3b82f6" stroke-width="2.5"/>
-  <rect x="112" y="238" width="60" height="44" rx="6" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
-  <line x1="112" y1="260" x2="172" y2="260" stroke="#3b82f6" stroke-width="2"/>
-  <line x1="142" y1="238" x2="142" y2="282" stroke="#3b82f6" stroke-width="2"/>
-  <text x="98" y="322" fill="#e8edf2" font-size="24" font-weight="bold">OCI 镜像</text>
-  <text x="98" y="354" fill="#9fb3c4" font-size="18">Docker Kit Spec</text>
-  <text x="98" y="382" fill="#9fb3c4" font-size="18">交 CNCF，m.8</text>
-  <text x="98" y="410" fill="#6f8598" font-size="16">spec 仓 150 星</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1116" cy="612" r="130" fill="#178A7D" opacity="0.05"/>
+  <circle cx="84" cy="110" r="110" fill="#5D3E8C" opacity="0.05"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gViolet)"/>
 
-  <!-- carrier 2: identity catalog -->
-  <rect x="340" y="205" width="240" height="220" rx="14" fill="#16222e" stroke="#22c55e" stroke-width="2.5"/>
-  <circle cx="404" cy="252" r="16" fill="none" stroke="#22c55e" stroke-width="2.5"/>
-  <path d="M382 296 q22 -26 44 0" fill="none" stroke="#22c55e" stroke-width="2.5"/>
-  <text x="358" y="340" fill="#e8edf2" font-size="24" font-weight="bold">身份目录</text>
-  <text x="358" y="372" fill="#9fb3c4" font-size="18">Okta 第三类身份</text>
-  <text x="358" y="400" fill="#9fb3c4" font-size="18">AI Agent 类目 New</text>
-  <text x="358" y="428" fill="#6f8598" font-size="16">产品页实测 10-15</text>
+  <text class="k" x="64" y="84">AI 范式雷达 · 2026-10-15 · PERMISSION ARTIFACT</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#241E2B">四个窗口，四种权限证件</text>
+  <text x="64" y="158" font-size="15" fill="#6A6072">四周之内四个互不隶属的主体，把 Agent 权限清单塞进四种载体</text>
 
-  <!-- carrier 3: payment authorization -->
-  <rect x="600" y="205" width="240" height="220" rx="14" fill="#16222e" stroke="#f59e0b" stroke-width="2.5"/>
-  <rect x="632" y="240" width="60" height="40" rx="6" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
-  <line x1="632" y1="254" x2="692" y2="254" stroke="#f59e0b" stroke-width="2.5"/>
-  <text x="618" y="340" fill="#e8edf2" font-size="24" font-weight="bold">支付授权</text>
-  <text x="618" y="372" fill="#9fb3c4" font-size="18">Amex 越权购买框架</text>
-  <text x="618" y="400" fill="#9fb3c4" font-size="18">据 TechCrunch 报道</text>
-  <text x="618" y="428" fill="#6f8598" font-size="16">HN 4 分，10-13</text>
+  <!-- visa booth motif -->
+  <g>
+    <rect x="996" y="106" width="144" height="16" rx="4" fill="url(#gViolet)" opacity="0.85"/>
+    <rect x="1008" y="122" width="120" height="80" rx="10" fill="#FFFFFF" stroke="#CBBBD8" stroke-width="1.8"/>
+    <rect x="1022" y="136" width="92" height="10" rx="3" fill="#CBBBD8"/>
+    <rect x="1022" y="154" width="66" height="10" rx="3" fill="#45B3A5" opacity="0.6"/>
+    <circle cx="1068" cy="186" r="13" fill="none" stroke="#D18A12" stroke-width="3"/>
+    <path d="M 1061 186 l 5 5 l 10 -11" stroke="#D18A12" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <text class="hd" x="1068" y="226" text-anchor="middle">盖章之前先声明边界</text>
+  </g>
 
-  <!-- carrier 4: protocol draft -->
-  <rect x="860" y="205" width="240" height="220" rx="14" fill="#16222e" stroke="#a78bfa" stroke-width="2.5"/>
-  <path d="M892 240 h44 l16 16 v40 h-60 z" fill="none" stroke="#a78bfa" stroke-width="2.5"/>
-  <line x1="902" y1="268" x2="938" y2="268" stroke="#a78bfa" stroke-width="2"/>
-  <line x1="902" y1="282" x2="938" y2="282" stroke="#a78bfa" stroke-width="2"/>
-  <text x="878" y="340" fill="#e8edf2" font-size="24" font-weight="bold">协议草案</text>
-  <text x="878" y="372" fill="#9fb3c4" font-size="18">IETF 认证与授权</text>
-  <text x="878" y="400" fill="#9fb3c4" font-size="18">Cedar 1,784 星</text>
-  <text x="878" y="428" fill="#6f8598" font-size="16">草案 HN 4 分</text>
+  <!-- four booths -->
+  <g>
+    <rect x="64" y="216" width="252" height="200" rx="12" fill="#5D3E8C" opacity="0.08"/>
+    <rect x="64" y="216" width="252" height="6" rx="3" fill="url(#gViolet)"/>
+    <text class="rl" x="88" y="256" fill="#5D3E8C">镜像窗口</text>
+    <text class="serif" x="88" y="316" font-size="26" font-weight="700" fill="#241E2B">m.2 → m.8</text>
+    <text class="ev" x="88" y="344">17 天 7 个里程碑</text>
+    <text class="ev" x="88" y="366">清单焊进 OCI 镜像</text>
+    <text class="ev" x="88" y="388">Docker 交 CNCF</text>
+    <rect x="88" y="404" width="58" height="18" rx="4" fill="#5D3E8C"/><text class="tag" x="117" y="417" text-anchor="middle">150 星</text>
+    <rect x="154" y="404" width="52" height="18" rx="4" fill="#B0743A"/><text class="tag" x="180" y="417" text-anchor="middle">7 分</text>
+    <text class="b" x="214" y="417">规范主帖</text>
+  </g>
+  <g>
+    <rect x="340" y="216" width="252" height="200" rx="12" fill="#178A7D" opacity="0.08"/>
+    <rect x="340" y="216" width="252" height="6" rx="3" fill="url(#gTeal)"/>
+    <text class="rl" x="364" y="256" fill="#178A7D">身份目录窗口</text>
+    <text class="serif" x="364" y="316" font-size="26" font-weight="700" fill="#241E2B">第三类身份</text>
+    <text class="ev" x="364" y="344">与员工、客户并列</text>
+    <text class="ev" x="364" y="366">权限清单住进身份平台</text>
+    <text class="ev" x="364" y="388">四产品齐挂 New</text>
+    <rect x="364" y="404" width="86" height="18" rx="4" fill="#178A7D"/><text class="tag" x="407" y="417" text-anchor="middle">Okta 实测</text>
+  </g>
+  <g>
+    <rect x="616" y="216" width="252" height="200" rx="12" fill="#D18A12" opacity="0.09"/>
+    <rect x="616" y="216" width="252" height="6" rx="3" fill="url(#gAmber)"/>
+    <text class="rl" x="640" y="256" fill="#9A6A0E">支付授权窗口</text>
+    <text class="serif" x="640" y="316" font-size="26" font-weight="700" fill="#241E2B">谁能花钱</text>
+    <text class="ev" x="640" y="344">Amex 防越权购买框架</text>
+    <text class="ev" x="640" y="366">定义 agent 花谁的钱</text>
+    <text class="ev" x="640" y="388">专有协议，同周并存</text>
+    <rect x="640" y="404" width="52" height="18" rx="4" fill="#B0743A"/><text class="tag" x="666" y="417" text-anchor="middle">4 分</text>
+    <text class="b" x="700" y="417">框架主帖</text>
+  </g>
+  <g>
+    <rect x="892" y="216" width="244" height="200" rx="12" fill="#C2447E" opacity="0.08"/>
+    <rect x="892" y="216" width="244" height="6" rx="3" fill="url(#gRose)"/>
+    <text class="rl" x="916" y="256" fill="#C2447E">标准窗口</text>
+    <text class="serif" x="916" y="316" font-size="26" font-weight="700" fill="#241E2B">最慢一路</text>
+    <text class="ev" x="916" y="344">IETF 认证授权草案</text>
+    <text class="ev" x="916" y="366">两次上 HN 各 2、4 分</text>
+    <text class="ev" x="916" y="388">语言层各造各的</text>
+    <rect x="916" y="404" width="86" height="18" rx="4" fill="#C2447E"/><text class="tag" x="959" y="417" text-anchor="middle">Cedar 1784</text>
+  </g>
 
-  <!-- question mark band -->
-  <line x1="80" y1="470" x2="1100" y2="470" stroke="#2c3d4d" stroke-width="2"/>
-  <text x="80" y="524" fill="#e8edf2" font-size="26" font-weight="bold">争夺的是载体，不是结论</text>
-  <text x="80" y="562" fill="#9fb3c4" font-size="20">规范主帖 HN 7 分 · Docker Agent 306 分 · Nvidia 看门狗 230 分：大厂密集，开发者冷</text>
-  <text x="80" y="598" fill="#6f8598" font-size="18">AI 范式雷达 #16 · 实测数据 2026-10-15</text>
+  <!-- denied stamp: runtime gap -->
+  <g>
+    <text class="hd" x="64" y="470">拒签章：声明约束不了运行时</text>
+    <rect x="64" y="486" width="600" height="36" rx="8" fill="#E0644A" opacity="0.85"/>
+    <text x="84" y="510" font-size="15" font-weight="700" fill="#FFFFFF">Codex agents 失控 · 未授权消耗 7.8 万美元</text>
+    <rect x="64" y="530" width="436" height="36" rx="8" fill="#C2447E" opacity="0.85"/>
+    <text x="84" y="554" font-size="15" font-weight="700" fill="#FFFFFF">Meta Muse agent 无视用户权限 · 164 分</text>
+    <rect x="64" y="574" width="288" height="36" rx="8" fill="#D18A12" opacity="0.85"/>
+    <text x="84" y="598" font-size="15" font-weight="700" fill="#FFFFFF">授权术语是团浆糊 · 121 分</text>
+  </g>
+
+  <g>
+    <rect x="700" y="486" width="436" height="124" rx="14" fill="#5D3E8C" opacity="0.07"/>
+    <rect x="700" y="486" width="436" height="6" rx="3" fill="url(#gViolet)"/>
+    <text class="serif" x="724" y="536" font-size="24" font-weight="700" fill="#241E2B">大厂动作密集，讨论冷</text>
+    <text class="ev" x="724" y="564">规范主帖 7 分 vs Docker Agent 主帖 306 分</text>
+    <text class="b" x="724" y="588">基础设施在铺、共识未形成 · 谁赢未定</text>
+  </g>
+
+  <line x1="64" y1="632" x2="1136" y2="632" stroke="#E7DEED"/>
+  <text class="b" x="64" y="658">分数为 HN 实测 · 窗口 2026-09-16 至 10-15 · 载体胜负未分 · Micropaper</text>
 </svg>

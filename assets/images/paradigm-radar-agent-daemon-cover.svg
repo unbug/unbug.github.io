@@ -1,80 +1,113 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0f1c2e"/>
-      <stop offset="1" stop-color="#1e3050"/>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8E97A6; }
+      .dim { font-size: 16px; font-weight: 700; fill: #1E2430; }
+      .b { font-size: 12px; fill: #98A1AE; }
+      .val { font-size: 26px; font-weight: 700; }
+      .tag { font-size: 13px; fill: #5C6672; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F2F5F8"/>
+    </linearGradient>
+    <linearGradient id="daemon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6A3DE8"/><stop offset="1" stop-color="#B388FF"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00838F"/><stop offset="1" stop-color="#00C2D1"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E8590C"/><stop offset="1" stop-color="#FF8A3D"/>
+    </linearGradient>
+    <linearGradient id="pink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C2255C"/><stop offset="1" stop-color="#F4509E"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3A6EA5"/><stop offset="1" stop-color="#74A5D6"/>
+    </linearGradient>
+    <linearGradient id="radar" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00C2D1" stop-opacity="0.5"/><stop offset="1" stop-color="#00C2D1" stop-opacity="0.03"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <g stroke="#2c4468" stroke-width="1" opacity="0.5">
-    <line x1="0" y1="105" x2="1200" y2="105"/><line x1="0" y1="210" x2="1200" y2="210"/>
-    <line x1="0" y1="315" x2="1200" y2="315"/><line x1="0" y1="420" x2="1200" y2="420"/><line x1="0" y1="525" x2="1200" y2="525"/>
-  </g>
 
-  <!-- title strip -->
-  <text x="600" y="72" fill="#8fb4dd" font-size="24" text-anchor="middle" letter-spacing="6">AI 范式雷达</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1095" cy="110" r="140" fill="#6A3DE8" opacity="0.05"/>
+  <circle cx="90" cy="625" r="120" fill="#00C2D1" opacity="0.06"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#daemon)"/>
 
-  <!-- left: laptop / session app -->
+  <text class="k" x="64" y="84">AI 范式雷达 · 2026-10-16 · AGENT DAEMON</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1E2430">关窗之后，它还在跑</text>
+  <text x="64" y="158" font-size="15" fill="#5C6672">一次交互会话，374 MB 平台包住进家目录，带着小时级自更新循环</text>
+
+  <!-- laptop with daemon inside (left) -->
   <g>
-    <rect x="110" y="215" width="250" height="150" rx="12" fill="#16324f" stroke="#7d93b2" stroke-width="2"/>
-    <rect x="130" y="235" width="210" height="110" rx="6" fill="#0f1c2e"/>
-    <text x="145" y="262" fill="#7dc0ff" font-size="15" font-family="Menlo, monospace">$ codex</text>
-    <text x="145" y="286" fill="#6f86a5" font-size="13" font-family="Menlo, monospace">session 打开</text>
-    <text x="145" y="306" fill="#6f86a5" font-size="13" font-family="Menlo, monospace">窗口全部关闭</text>
-    <text x="145" y="326" fill="#a4553a" font-size="13" font-family="Menlo, monospace">进程仍存活 ...</text>
-    <rect x="85" y="372" width="300" height="12" rx="6" fill="#2c4468"/>
-    <text x="235" y="420" fill="#cfe3ff" font-size="24" text-anchor="middle">会话级应用</text>
-    <text x="235" y="452" fill="#7fa3c8" font-size="17" text-anchor="middle">0.157.0 之前的默认契约</text>
-  </g>
-
-  <!-- arrow -->
-  <path d="M 400 290 L 500 290" stroke="#4da3ff" stroke-width="3.5" fill="none"/>
-  <path d="M 500 290 l -18 -9 M 500 290 l -18 9" stroke="#4da3ff" stroke-width="3.5" fill="none"/>
-  <text x="450" y="268" fill="#8fb4dd" font-size="15" text-anchor="middle">一次交互会话</text>
-
-  <!-- center: daemon box -->
-  <g>
-    <rect x="515" y="150" width="290" height="290" rx="16" fill="#152740" stroke="#4da3ff" stroke-width="2.5"/>
-    <text x="660" y="192" fill="#e8f1fc" font-size="24" text-anchor="middle" font-weight="bold">常驻守护进程</text>
-    <text x="660" y="220" fill="#7fa3c8" font-size="14" text-anchor="middle" font-family="Menlo, monospace">codex app-server --managed-daemon</text>
-    <g font-size="17" fill="#a9c6e8">
-      <rect x="545" y="240" width="230" height="40" rx="8" fill="#1d3a5c"/>
-      <text x="660" y="266" text-anchor="middle">374 MB 复制包 · 脱离 npm</text>
-      <rect x="545" y="292" width="230" height="40" rx="8" fill="#1d3a5c"/>
-      <text x="660" y="318" text-anchor="middle">每小时自更新循环</text>
-      <rect x="545" y="344" width="230" height="40" rx="8" fill="#1d3a5c"/>
-      <text x="660" y="370" text-anchor="middle">reparent 到 PID 1</text>
-      <rect x="545" y="396" width="230" height="40" rx="8" fill="#1d3a5c"/>
-      <text x="660" y="422" text-anchor="middle">钉住首会话环境变量</text>
+    <rect x="96" y="238" width="252" height="150" rx="12" fill="#F7F9FB" stroke="#5B7285" stroke-width="4"/>
+    <rect x="116" y="258" width="212" height="110" rx="6" fill="#20262F"/>
+    <!-- screen text lines -->
+    <rect x="130" y="272" width="76" height="6" rx="3" fill="#5C6672"/>
+    <rect x="130" y="286" width="52" height="6" rx="3" fill="#5C6672"/>
+    <!-- daemon blob inside screen -->
+    <circle cx="268" cy="306" r="30" fill="url(#daemon)"/>
+    <path d="M 250 336 a 18 18 0 0 1 36 0 z" fill="url(#daemon)"/>
+    <circle cx="259" cy="302" r="4" fill="#FFFFFF"/><circle cx="277" cy="302" r="4" fill="#FFFFFF"/>
+    <line x1="268" y1="276" x2="268" y2="264" stroke="#B388FF" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="268" cy="259" r="4.5" fill="#FFB74D"/>
+    <!-- refresh arrows around daemon -->
+    <path d="M 232 288 a 42 42 0 0 1 72 -12" stroke="#00C2D1" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <path d="M 304 330 a 42 42 0 0 1 -72 10" stroke="#FF8A3D" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <polygon points="306,270 312,282 298,282" fill="#00C2D1"/>
+    <polygon points="230,344 224,332 238,332" fill="#FF8A3D"/>
+    <!-- laptop base -->
+    <rect x="70" y="388" width="304" height="14" rx="7" fill="#5B7285"/>
+    <text class="b" x="222" y="428" text-anchor="middle">~/.codex/packages · 每小时自查更新</text>
+    <!-- ghost process escaping hinge -->
+    <g opacity="0.5">
+      <circle cx="404" cy="440" r="13" fill="none" stroke="#B388FF" stroke-width="3"/>
+      <path d="M 394 464 a 11 11 0 0 1 20 0" fill="none" stroke="#B388FF" stroke-width="3"/>
     </g>
+    <g opacity="0.3">
+      <circle cx="442" cy="418" r="11" fill="none" stroke="#B388FF" stroke-width="3"/>
+      <path d="M 434 438 a 9 9 0 0 1 17 0" fill="none" stroke="#B388FF" stroke-width="3"/>
+    </g>
+    <text class="b" x="424" y="398" text-anchor="end">reparent 到 PID 1</text>
+    <text class="b" x="424" y="414" text-anchor="end">关窗不退出</text>
   </g>
 
-  <!-- update loop circle -->
-  <g stroke="#c9a24a" stroke-width="2.5" fill="none">
-    <path d="M 830 210 a 42 42 0 1 1 -12 -30"/>
-    <path d="M 818 178 l 1 14 l 13 -5" />
-  </g>
-  <text x="836" y="150" fill="#c9a24a" font-size="15" text-anchor="middle">1h 更新循环</text>
+  <!-- stats right: 1% width base arbitrary; use chips + bars -->
+  <g>
+    <rect x="520" y="200" width="616" height="56" rx="12" fill="#6A3DE8" opacity="0.07"/>
+    <rect x="520" y="266" width="616" height="56" rx="12" fill="#00C2D1" opacity="0.07"/>
+    <rect x="520" y="332" width="616" height="56" rx="12" fill="#FF8A3D" opacity="0.08"/>
 
-  <!-- right: sovereignty lost -->
-  <path d="M 820 300 L 900 300" stroke="#a4553a" stroke-width="3.5" fill="none"/>
-  <path d="M 900 300 l -18 -9 M 900 300 l -18 9" stroke="#a4553a" stroke-width="3.5" fill="none"/>
-  <g font-size="19">
-    <rect x="915" y="170" width="185" height="56" rx="10" fill="#2a1a1a" stroke="#a4553a" stroke-width="2" opacity="0.95"/>
-    <text x="1007" y="196" fill="#e8b8a4" text-anchor="middle" font-weight="bold">版本主权</text>
-    <text x="1007" y="216" fill="#b08878" font-size="14" text-anchor="middle">跑的是你装的吗</text>
-    <rect x="915" y="242" width="185" height="56" rx="10" fill="#2a1a1a" stroke="#a4553a" stroke-width="2"/>
-    <text x="1007" y="268" fill="#e8b8a4" text-anchor="middle" font-weight="bold">进程主权</text>
-    <text x="1007" y="288" fill="#b08878" font-size="14" text-anchor="middle">它何时结束</text>
-    <rect x="915" y="314" width="185" height="56" rx="10" fill="#2a1a1a" stroke="#a4553a" stroke-width="2"/>
-    <text x="1007" y="340" fill="#e8b8a4" text-anchor="middle" font-weight="bold">配置主权</text>
-    <text x="1007" y="360" fill="#b08878" font-size="14" text-anchor="middle">带着谁的环境活</text>
-  </g>
-  <g stroke="#a4553a" stroke-width="2" opacity="0.8">
-    <line x1="935" y1="176" x2="1080" y2="220"/><line x1="935" y1="248" x2="1080" y2="292"/><line x1="935" y1="320" x2="1080" y2="364"/>
+    <text class="dim" x="544" y="235">GitHub issue #48195</text>
+    <text class="val" x="1112" y="238" fill="#6A3DE8" text-anchor="end">+181</text>
+    <text class="tag" x="812" y="235">要求默认启动改 opt-in · 仍 open</text>
+
+    <text class="dim" x="544" y="301">Hacker News 帖 50060694</text>
+    <text class="val" x="1112" y="304" fill="#00838F" text-anchor="end">607 分</text>
+    <text class="tag" x="812" y="301">全树 292 条评论 · 顶层回复 58</text>
+
+    <text class="dim" x="544" y="367">关闭路径实测</text>
+    <text class="val" x="1112" y="370" fill="#E8590C" text-anchor="end">stop 后残留 70 秒</text>
+    <text class="tag" x="812" y="367">pid-update-loop 需手动 kill</text>
   </g>
 
-  <!-- bottom strip -->
-  <text x="600" y="530" fill="#cfe3ff" font-size="26" text-anchor="middle" font-weight="bold">Agent 工具：从会话级应用滑向常驻基础设施</text>
-  <text x="600" y="592" fill="#6f86a5" font-size="18" text-anchor="middle">openai/codex #48195 · +1 181 · HN 607 分 292 回复 · 374 MB 复制包 · 60 秒 SIGKILL（2026-10-16 实测）</text>
+  <!-- three sovereignies -->
+  <g>
+    <text class="k" x="520" y="432">被没收的三项默认主权</text>
+    <rect x="520" y="446" width="616" height="40" rx="9" fill="#F4509E" opacity="0.06"/>
+    <rect x="520" y="492" width="616" height="40" rx="9" fill="#3A6EA5" opacity="0.07"/>
+    <rect x="520" y="538" width="616" height="40" rx="9" fill="#B9892F" opacity="0.08"/>
+    <circle cx="544" cy="466" r="7" fill="url(#pink)"/>
+    <text class="tag" x="562" y="471">版本主权：npm 升的是壳，后端来自复制包</text>
+    <circle cx="544" cy="512" r="7" fill="url(#blue)"/>
+    <text class="tag" x="562" y="517">进程主权：更新只给 60 秒 drain，超时 SIGKILL</text>
+    <circle cx="544" cy="558" r="7" fill="url(#orange)"/>
+    <text class="tag" x="562" y="563">配置主权：首会话环境变量钉死所有会话</text>
+  </g>
+
+  <line x1="64" y1="606" x2="1136" y2="606" stroke="#DDE4E8"/>
+  <text class="serif" x="64" y="640" font-size="18" fill="#1E2430">0.157.0 起，会话级应用滑向常驻基础设施：默认开启、静默安装、小时级自更新。</text>
+  <text class="b" x="64" y="664">数字为 2026-10-16 经 GitHub / HN / npm 接口重测 · 观察基于用户侧可见行为与公开 issue · Micropaper</text>
 </svg>

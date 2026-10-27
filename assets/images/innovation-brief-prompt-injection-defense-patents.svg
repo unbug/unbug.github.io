@@ -1,91 +1,116 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1f3a;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#0d1528;stop-opacity:1"/>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #A08C62; }
+      .rl { font-size: 15px; fill: #443A2C; }
+      .val { font-size: 20px; font-weight: 700; }
+      .b { font-size: 12px; fill: #AA9E82; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FBF4E6"/>
     </linearGradient>
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#4a9eff;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#7c5cff;stop-opacity:1"/>
+    <linearGradient id="gCopper" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B06A2C"/><stop offset="1" stop-color="#DC9A55"/>
+    </linearGradient>
+    <linearGradient id="gWhite" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E8DBC0"/><stop offset="1" stop-color="#F4EBD6"/>
+    </linearGradient>
+    <linearGradient id="gRose" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C4536B"/><stop offset="1" stop-color="#E3899B"/>
+    </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2E7D74"/><stop offset="1" stop-color="#71B5A8"/>
+    </linearGradient>
+    <linearGradient id="gPlum" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6D4A86"/><stop offset="1" stop-color="#A07FB8"/>
+    </linearGradient>
+    <linearGradient id="gAmber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E0A93E"/><stop offset="1" stop-color="#B06A2C"/>
     </linearGradient>
   </defs>
 
-  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1108" cy="104" r="130" fill="#B06A2C" opacity="0.07"/>
+  <circle cx="76" cy="620" r="110" fill="#2E7D74" opacity="0.06"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gCopper)"/>
 
-  <g opacity="0.05" stroke="#fff" stroke-width="0.5">
-    <line x1="0" y1="105" x2="1200" y2="105"/>
-    <line x1="0" y1="210" x2="1200" y2="210"/>
-    <line x1="0" y1="315" x2="1200" y2="315"/>
-    <line x1="0" y1="420" x2="1200" y2="420"/>
-    <line x1="0" y1="525" x2="1200" y2="525"/>
-    <line x1="300" y1="0" x2="300" y2="630"/>
-    <line x1="600" y1="0" x2="600" y2="630"/>
-    <line x1="900" y1="0" x2="900" y2="630"/>
-  </g>
+  <text class="k" x="64" y="84">AI 智创简报 · 2026-08-24 · 专利 + OWASP + NVD · 近 12 个月</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">大厂装滤网，小厂没体检</text>
+  <text x="64" y="158" font-size="15" fill="#6E6248">四家申请人 12 个月公开五件提示词注入防御专利 · OWASP 列为 LLM01 头号风险</text>
 
-  <!-- badge -->
-  <rect x="70" y="52" width="182" height="34" rx="17" fill="url(#accentGrad)" opacity="0.18"/>
-  <text x="161" y="75" font-family="Helvetica,Arial,sans-serif" font-size="18" fill="#8ab4ff" text-anchor="middle">AI 智创简报</text>
-
-  <!-- title -->
-  <text x="70" y="142" font-family="Helvetica,Arial,sans-serif" font-size="44" font-weight="bold" fill="#ffffff">注入防御专利连发，AI 应用安全体检的小生意</text>
-  <text x="70" y="188" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#9fb3d9">US20260228333 Palo Alto Networks · US20260089190 Microsoft · US12647455 Radware ｜ OWASP LLM 头号风险</text>
-
-  <!-- panel 1: patent signal -->
+  <!-- brewery motif: filtering funnel + amber barrel -->
   <g>
-    <rect x="70" y="230" width="330" height="280" rx="14" fill="#ffffff" opacity="0.05"/>
-    <rect x="70" y="230" width="330" height="6" rx="3" fill="url(#accentGrad)"/>
-    <text x="94" y="278" font-family="Helvetica,Arial,sans-serif" font-size="20" font-weight="bold" fill="#ffffff">专利信号</text>
-    <text x="94" y="312" font-family="Menlo,Consolas,monospace" font-size="15" fill="#8ab4ff">US20260228333</text>
-    <text x="94" y="334" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#c7d4ee">Palo Alto Networks · 2026-08-06</text>
-    <text x="94" y="356" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#9fb3d9">SaaS 集成间接注入，风险分过滤</text>
-    <line x1="94" y1="374" x2="376" y2="374" stroke="#ffffff" opacity="0.15"/>
-    <text x="94" y="400" font-family="Menlo,Consolas,monospace" font-size="15" fill="#8ab4ff">US20260089190</text>
-    <text x="94" y="422" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#c7d4ee">Microsoft · 2026-03-26（同族已授权）</text>
-    <text x="94" y="444" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#9fb3d9">LLM 生成变体攻击，红队加固模型</text>
-    <line x1="94" y1="462" x2="376" y2="462" stroke="#ffffff" opacity="0.15"/>
-    <text x="94" y="488" font-family="Menlo,Consolas,monospace" font-size="15" fill="#8ab4ff">US12647455</text>
-    <text x="94" y="510" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#c7d4ee">Radware · 2026-06-02（已授权）</text>
-    <text x="94" y="532" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#9fb3d9">Agent 动作序列语义距离异常检测</text>
+    <path d="M 1024 84 h 96 l -18 44 h -60 z" fill="url(#gWhite)" stroke="#B06A2C" stroke-width="2.5"/>
+    <line x1="1036" y1="98" x2="1108" y2="98" stroke="#C4536B" stroke-width="2" opacity="0.6"/>
+    <line x1="1042" y1="110" x2="1102" y2="110" stroke="#2E7D74" stroke-width="2" opacity="0.6"/>
+    <rect x="1062" y="128" width="20" height="14" fill="#B06A2C" opacity="0.5"/>
+    <path d="M 1066 148 q 6 12 0 18 m 12 -18 q -6 12 0 18" stroke="#2E7D74" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <ellipse cx="1072" cy="182" rx="34" ry="10" fill="url(#gAmber)" opacity="0.85"/>
+    <path d="M 1038 182 q 0 22 34 22 q 34 0 34 -22" fill="url(#gAmber)" opacity="0.7"/>
+    <circle cx="1030" cy="92" r="5" fill="#C4536B"/>
+    <circle cx="1116" cy="88" r="4" fill="#6D4A86"/>
+    <text x="1072" y="220" text-anchor="middle" font-size="12" fill="#2E7D74">防御挂在调用链上，不碰模型权重</text>
   </g>
 
-  <!-- arrow 1 -->
-  <path d="M 408 370 L 428 370 M 421 363 L 428 370 L 421 377" stroke="#4a9eff" stroke-width="3" fill="none" stroke-linecap="round"/>
-
-  <!-- panel 2: trend -->
+  <!-- left: patent timeline -->
   <g>
-    <rect x="435" y="230" width="330" height="280" rx="14" fill="#ffffff" opacity="0.05"/>
-    <rect x="435" y="230" width="330" height="6" rx="3" fill="url(#accentGrad)"/>
-    <text x="459" y="278" font-family="Helvetica,Arial,sans-serif" font-size="20" font-weight="bold" fill="#ffffff">技术趋势</text>
-    <text x="459" y="316" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#c7d4ee">两支路线：输入侧过滤 + 行为侧攻防</text>
-    <line x1="459" y1="338" x2="741" y2="338" stroke="#ffffff" opacity="0.15"/>
-    <text x="459" y="370" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#9fb3d9">共同点：防御做成模型之外的</text>
-    <text x="459" y="396" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#8ab4ff">独立组件，挂在调用链中间层</text>
-    <line x1="459" y1="420" x2="741" y2="420" stroke="#ffffff" opacity="0.15"/>
-    <text x="459" y="452" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#9fb3d9">差异点：garak 只做单模型红队，</text>
-    <text x="459" y="476" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#9fb3d9">企业方案面向大客户；</text>
-    <text x="459" y="500" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#8ab4ff">小团队整条链的防护还是空白</text>
+    <text class="rl" x="64" y="226" font-weight="700">五件专利 · 两支路线</text>
+    <text class="b" x="196" y="226">实心 = 已授权 · 空心 = 申请公开（不等于授权）</text>
+    <line x1="88" y1="256" x2="88" y2="486" stroke="#D8CCAE" stroke-width="2"/>
+
+    <circle cx="88" cy="278" r="8" fill="#FFFFFF" stroke="#C4536B" stroke-width="3"/>
+    <text class="rl" x="112" y="274">2026-03-12 · 蚂蚁集团</text>
+    <text class="b" x="112" y="292">三特征联合训练检测 · US20260073299</text>
+
+    <circle cx="88" cy="330" r="8" fill="#FFFFFF" stroke="#C4536B" stroke-width="3"/>
+    <text class="rl" x="112" y="326">2026-03-26 · 微软</text>
+    <text class="b" x="112" y="344">LLM 生成变体攻击做红队演练 · US20260089190</text>
+
+    <circle cx="88" cy="382" r="8" fill="url(#gTeal)"/>
+    <text class="rl" x="112" y="378">2026-06-02 · Radware（已授权）</text>
+    <text class="b" x="112" y="396">动作序列偏离基线即触发 · US12647455</text>
+
+    <circle cx="88" cy="434" r="8" fill="#FFFFFF" stroke="#C4536B" stroke-width="3"/>
+    <text class="rl" x="112" y="430">2026-08-06 · Palo Alto Networks</text>
+    <text class="b" x="112" y="448">SaaS 集成间接注入按风险分拦截 · US20260228333</text>
+
+    <rect x="112" y="464" width="104" height="24" rx="12" fill="#C4536B" opacity="0.18"/>
+    <text x="164" y="480" text-anchor="middle" font-size="12" fill="#A83E56" font-weight="700">输入侧过滤</text>
+    <rect x="228" y="464" width="104" height="24" rx="12" fill="#2E7D74" opacity="0.18"/>
+    <text x="280" y="480" text-anchor="middle" font-size="12" fill="#25665F" font-weight="700">行为侧攻防</text>
+    <text class="b" x="348" y="480">微软同族 US12519829 于 2026-01-06 授权</text>
   </g>
 
-  <!-- arrow 2 -->
-  <path d="M 773 370 L 793 370 M 786 363 L 793 370 L 786 377" stroke="#4a9eff" stroke-width="3" fill="none" stroke-linecap="round"/>
-
-  <!-- panel 3: opportunity -->
+  <!-- right: big numbers -->
   <g>
-    <rect x="800" y="230" width="330" height="280" rx="14" fill="#ffffff" opacity="0.05"/>
-    <rect x="800" y="230" width="330" height="6" rx="3" fill="url(#accentGrad)"/>
-    <text x="824" y="278" font-family="Helvetica,Arial,sans-serif" font-size="20" font-weight="bold" fill="#ffffff">一个人能做的机会</text>
-    <text x="824" y="316" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#c7d4ee">AI 应用注入验收测试（红队报告）</text>
-    <line x1="824" y1="338" x2="1106" y2="338" stroke="#ffffff" opacity="0.15"/>
-    <text x="824" y="370" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#9fb3d9">garak + 开源 LLM 生成变体攻击</text>
-    <text x="824" y="396" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#9fb3d9">打到应用 API，输出风险报告</text>
-    <text x="824" y="422" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#9fb3d9">命中率 / 泄露样本 / 修复建议</text>
-    <line x1="824" y1="444" x2="1106" y2="444" stroke="#ffffff" opacity="0.15"/>
-    <text x="824" y="476" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#8ab4ff">FastAPI + VPS，五千元内 · 4 周 MVP</text>
-    <text x="824" y="500" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#8ab4ff">单份报告 1000-3000 元 · 订阅 299-999/月</text>
+    <text class="serif" x="1136" y="278" text-anchor="end" font-size="56" font-weight="700" fill="#C4536B">171</text>
+    <text x="700" y="252" font-size="15" fill="#443A2C" font-weight="700">NVD 累计相关 CVE</text>
+    <text class="b" x="700" y="276">prompt injection 相关收录条数</text>
+
+    <text class="serif" x="1136" y="356" text-anchor="end" font-size="56" font-weight="700" fill="#B06A2C">LLM01</text>
+    <text x="700" y="330" font-size="15" fill="#443A2C" font-weight="700">OWASP LLM 头号风险</text>
+    <text class="b" x="700" y="354">Top 10 for LLM Applications</text>
+
+    <line x1="700" y1="384" x2="1136" y2="384" stroke="#E4D8B8"/>
+    <text class="rl" x="700" y="420" font-weight="700">小团队缺口：整链验收测试</text>
+    <text class="b" x="700" y="444">开源 garak 只做单模型红队扫描</text>
+    <text class="b" x="700" y="464">企业方案面向大客户，价格部署都够不到</text>
   </g>
 
-  <!-- bottom takeaway -->
-  <rect x="70" y="540" width="1060" height="52" rx="12" fill="url(#accentGrad)" opacity="0.14"/>
-  <text x="600" y="573" font-family="Helvetica,Arial,sans-serif" font-size="19" fill="#dbe6ff" text-anchor="middle">大厂在专利里圈的是企业级防御，独立开发者能接的是 AI 应用「安全体检」的活</text>
+  <!-- bottom: solo opportunity -->
+  <line x1="64" y1="524" x2="1136" y2="524" stroke="#E4D8B8"/>
+  <g>
+    <text class="rl" x="64" y="562" font-weight="700">一个人能做：注入攻击验收测试</text>
+    <text class="b" x="64" y="584">garak + 开源 LLM 生成变体攻击，打到应用 API，出命中率与修复建议报告</text>
+
+    <text class="val" x="640" y="562" fill="#2E7D74">≤5,000 元</text>
+    <text class="b" x="640" y="582">起步成本 · 主要是 LLM API 费</text>
+    <text class="val" x="850" y="562" fill="#2E7D74">4 周</text>
+    <text class="b" x="850" y="582">可出 MVP</text>
+    <text class="val" x="1000" y="562" fill="#B06A2C">1,000–3,000 元</text>
+    <text class="b" x="1000" y="582">单份报告，或月订阅 299–999 元</text>
+  </g>
+
+  <text x="64" y="648" font-size="12.5" fill="#A29C88">三件申请公开、两件已授权，申请公开不等于已授权 · 机会为编辑判断，非部署结论 · Micropaper</text>
 </svg>

@@ -1,94 +1,108 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1f3a;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#0d1528;stop-opacity:1"/>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8F8570; }
+      .rl { font-size: 15px; fill: #4E4636; }
+      .b { font-size: 12px; fill: #A29880; }
+      .stat { font-size: 26px; font-weight: 700; fill: #232B2E; }
+      .val { font-size: 20px; font-weight: 700; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDFBF6"/><stop offset="1" stop-color="#F1EEE2"/>
     </linearGradient>
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#4a9eff;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#7c5cff;stop-opacity:1"/>
+    <linearGradient id="gRed" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A63A22"/><stop offset="1" stop-color="#D96A3C"/>
+    </linearGradient>
+    <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D97B2A"/><stop offset="1" stop-color="#F0AC55"/>
+    </linearGradient>
+    <linearGradient id="gPink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D96A8C"/><stop offset="1" stop-color="#B84A6E"/>
+    </linearGradient>
+    <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F7D61"/><stop offset="1" stop-color="#6FB58F"/>
+    </linearGradient>
+    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3D6FA5"/><stop offset="1" stop-color="#7FA8CC"/>
+    </linearGradient>
+    <linearGradient id="gCream" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F5E3BE"/><stop offset="1" stop-color="#E3C48D"/>
     </linearGradient>
   </defs>
 
-  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1130" cy="620" r="140" fill="#D96A8C" opacity="0.06"/>
+  <circle cx="80" cy="100" r="110" fill="#3D6FA5" opacity="0.05"/>
+  <rect x="64" y="44" width="44" height="5" rx="2.5" fill="url(#gRed)"/>
 
-  <g opacity="0.05" stroke="#fff" stroke-width="0.5">
-    <line x1="0" y1="105" x2="1200" y2="105"/>
-    <line x1="0" y1="210" x2="1200" y2="210"/>
-    <line x1="0" y1="315" x2="1200" y2="315"/>
-    <line x1="0" y1="420" x2="1200" y2="420"/>
-    <line x1="0" y1="525" x2="1200" y2="525"/>
-    <line x1="300" y1="0" x2="300" y2="630"/>
-    <line x1="600" y1="0" x2="600" y2="630"/>
-    <line x1="900" y1="0" x2="900" y2="630"/>
-  </g>
+  <text class="k" x="64" y="84">AI 智创简报 · 2026-08-22 · US20260178323A1</text>
+  <text class="serif" x="64" y="130" font-size="40" font-weight="700" fill="#232B2E">先出图纸，再砌墙</text>
+  <text x="64" y="160" font-size="15" fill="#6E6653">Crowdbotics 专利：一句话 → LLM 生成 PRD → 机器评估，2026-06-25 公开</text>
 
-  <!-- badge -->
-  <rect x="70" y="52" width="182" height="34" rx="17" fill="url(#accentGrad)" opacity="0.18"/>
-  <text x="161" y="75" font-family="Helvetica,Arial,sans-serif" font-size="18" fill="#8ab4ff" text-anchor="middle">AI 智创简报</text>
-
-  <!-- title -->
-  <text x="70" y="142" font-family="Helvetica,Arial,sans-serif" font-size="44" font-weight="bold" fill="#ffffff">一句话想法 → 结构化 PRD</text>
-  <text x="70" y="188" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#9fb3d9">US20260178323A1 · Crowdbotics Corporation · 2026-06-25 公开 ｜ vibe coding 的上游需求层</text>
-
-  <!-- panel 1: patent signal -->
+  <!-- tiered cake motif -->
   <g>
-    <rect x="70" y="240" width="330" height="290" rx="14" fill="#ffffff" opacity="0.05"/>
-    <rect x="70" y="240" width="330" height="6" rx="3" fill="url(#accentGrad)"/>
-    <text x="94" y="288" font-family="Helvetica,Arial,sans-serif" font-size="20" font-weight="bold" fill="#ffffff">专利信号</text>
-    <text x="94" y="330" font-family="Menlo,Consolas,monospace" font-size="17" fill="#8ab4ff">US20260178323A1</text>
-    <text x="94" y="362" font-family="Helvetica,Arial,sans-serif" font-size="16" fill="#c7d4ee">申请公开 · 2026-06-25</text>
-    <line x1="94" y1="384" x2="376" y2="384" stroke="#ffffff" opacity="0.15"/>
-    <text x="94" y="416" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#9fb3d9">自然语言需求描述</text>
-    <text x="94" y="442" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#9fb3d9">→ 特征列表 + 预期输出规格</text>
-    <text x="94" y="468" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#9fb3d9">→ LLM 生成 PRD</text>
-    <text x="94" y="494" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#9fb3d9">→ 机器评估完整性与准确性</text>
+    <rect x="998" y="352" width="212" height="10" rx="5" fill="#8A6A45"/>
+    <rect x="1014" y="300" width="180" height="52" rx="10" fill="url(#gCream)"/>
+    <path d="M 1014 312 q 15 14 30 0 q 15 14 30 0 q 15 14 30 0 q 15 14 30 0 q 15 14 30 0 q 15 14 30 0 v -12 h -180 z" fill="url(#gPink)"/>
+    <rect x="1038" y="252" width="132" height="52" rx="10" fill="url(#gCream)"/>
+    <path d="M 1038 264 q 16.5 14 33 0 q 16.5 14 33 0 q 16.5 14 33 0 q 16.5 14 33 0 v -12 h -132 z" fill="url(#gPink)"/>
+    <rect x="1062" y="208" width="84" height="48" rx="10" fill="url(#gCream)"/>
+    <path d="M 1062 220 q 21 14 42 0 q 21 14 42 0 v -12 h -84 z" fill="url(#gPink)"/>
+    <circle cx="1104" cy="196" r="9" fill="#B5442E"/>
+    <g stroke="#A29880" stroke-width="2.5" stroke-linecap="round">
+      <line x1="1180" y1="240" x2="1216" y2="212"/>
+    </g>
+    <path d="M 1150 300 l 60 -46 l 12 14 l -60 46 z" fill="#8FA2AC"/>
+    <text class="b" x="1104" y="392">分层蛋糕：逐层分解的需求文档</text>
   </g>
 
-  <!-- arrow 1 -->
-  <g stroke="#4a9eff" stroke-width="2.5" fill="none" opacity="0.8">
-    <line x1="406" y1="385" x2="446" y2="385"/>
-    <polyline points="438,377 448,385 438,393"/>
-  </g>
-
-  <!-- panel 2: trend -->
+  <!-- pipeline -->
   <g>
-    <rect x="460" y="240" width="330" height="290" rx="14" fill="#ffffff" opacity="0.05"/>
-    <rect x="460" y="240" width="330" height="6" rx="3" fill="url(#accentGrad)"/>
-    <text x="484" y="288" font-family="Helvetica,Arial,sans-serif" font-size="20" font-weight="bold" fill="#ffffff">技术趋势</text>
-    <line x1="484" y1="310" x2="766" y2="310" stroke="#ffffff" opacity="0.15"/>
-    <text x="484" y="346" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#c7d4ee">模板填写 → LLM 渐进式分解</text>
-    <text x="484" y="374" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#c7d4ee">+ 机器评估回路</text>
-    <text x="484" y="402" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#c7d4ee">中间工件可进开发流</text>
-    <text x="484" y="430" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#9fb3d9">纯提示词与模板工程</text>
-    <text x="484" y="456" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#9fb3d9">不训练模型</text>
-    <rect x="484" y="478" width="282" height="34" rx="17" fill="url(#accentGrad)" opacity="0.16"/>
-    <text x="625" y="500" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#8ab4ff" text-anchor="middle">Lovable ARR $500M · 周新建 100 万项目</text>
+    <text class="stat" x="64" y="222">专利流水线<tspan font-size="14" fill="#5F7683">　纯提示词与模板工程，不训练模型</tspan></text>
+    <g>
+      <rect x="64" y="244" width="230" height="96" rx="12" fill="#3D6FA5" opacity="0.08"/>
+      <text class="val" x="88" y="284" fill="#2F5A87">一句话想法</text>
+      <text class="b" x="88" y="310">自然语言需求描述</text>
+
+      <path d="M 300 292 h 36 m -10 -8 l 12 8 l -12 8" stroke="#B8763E" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+      <rect x="344" y="244" width="230" height="96" rx="12" fill="#D97B2A" opacity="0.09"/>
+      <text class="val" x="368" y="284" fill="#A96A14">中间工件</text>
+      <text class="b" x="368" y="310">特征列表 + 预期输出</text>
+
+      <path d="M 580 292 h 36 m -10 -8 l 12 8 l -12 8" stroke="#B8763E" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+      <rect x="624" y="244" width="230" height="96" rx="12" fill="#B84A6E" opacity="0.08"/>
+      <text class="val" x="648" y="284" fill="#9E3A5C">LLM 生成 PRD</text>
+      <text class="b" x="648" y="310">派生用户故事、starter code</text>
+
+      <path d="M 860 292 h 36 m -10 -8 l 12 8 l -12 8" stroke="#B8763E" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+      <rect x="904" y="244" width="232" height="96" rx="12" fill="#2F7D61" opacity="0.08"/>
+      <text class="val" x="928" y="284" fill="#256A4E">机器评估回路</text>
+      <text class="b" x="928" y="310">完整性 + 准确性</text>
+    </g>
   </g>
 
-  <!-- arrow 2 -->
-  <g stroke="#4a9eff" stroke-width="2.5" fill="none" opacity="0.8">
-    <line x1="796" y1="385" x2="836" y2="385"/>
-    <polyline points="828,377 838,385 828,393"/>
-  </g>
-
-  <!-- panel 3: opportunity -->
+  <!-- industry evidence -->
   <g>
-    <rect x="850" y="240" width="280" height="290" rx="14" fill="#ffffff" opacity="0.05"/>
-    <rect x="850" y="240" width="280" height="6" rx="3" fill="url(#accentGrad)"/>
-    <text x="874" y="288" font-family="Helvetica,Arial,sans-serif" font-size="20" font-weight="bold" fill="#ffffff">一个人能做的机会</text>
-    <line x1="874" y1="310" x2="1106" y2="310" stroke="#ffffff" opacity="0.15"/>
-    <text x="874" y="346" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#c7d4ee">一句话 → PRD + 用户故事</text>
-    <text x="874" y="372" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#c7d4ee">Web 工具 / CLI</text>
-    <text x="874" y="400" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#9fb3d9">LLM API + 垂直模板</text>
-    <text x="874" y="426" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#9fb3d9">+ 完整性自检</text>
-    <rect x="874" y="452" width="232" height="34" rx="17" fill="url(#accentGrad)" opacity="0.16"/>
-    <text x="990" y="474" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#8ab4ff" text-anchor="middle">起步 &lt; 2 万元 · 4 周 MVP</text>
-    <text x="874" y="512" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#9fb3d9">订阅 / 按项目收费</text>
+    <rect x="64" y="372" width="512" height="118" rx="12" fill="#D97B2A" opacity="0.07"/>
+    <text class="serif" x="88" y="418" font-size="22" font-weight="700" fill="#232B2E">需求层是上游瓶颈</text>
+    <text x="88" y="448" font-size="14.5" fill="#4E4636">Lovable ARR 5 亿美元 · 每周新建项目 100 万个</text>
+    <text class="b" x="88" y="472">TechCrunch 2026-06 · vibe coding 产出质量取决于需求输入</text>
   </g>
 
-  <!-- footer -->
-  <line x1="70" y1="572" x2="1130" y2="572" stroke="#ffffff" opacity="0.12"/>
-  <text x="70" y="604" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#6d81a8">AI 智创简报 · unbug.github.io</text>
-  <text x="1130" y="604" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#6d81a8" text-anchor="end">2026-08-22</text>
+  <!-- opportunity -->
+  <g>
+    <rect x="600" y="372" width="536" height="118" rx="12" fill="#2F7D61" opacity="0.06"/>
+    <text class="serif" x="624" y="418" font-size="22" font-weight="700" fill="#232B2E">个人开发者可接的两层活</text>
+    <text x="624" y="448" font-size="14.5" fill="#4E4636">订阅 9–19 美元/月 · 需求拆解接单按项目 500–2000 元</text>
+    <text class="b" x="624" y="472">MVP 4 周 · 月成本远低于 2 万元</text>
+  </g>
+
+  <line x1="64" y1="524" x2="1136" y2="524" stroke="#E5E1D4"/>
+  <text class="serif" x="64" y="558" font-size="18" fill="#232B2E">通用大模型今天就能写 PRD，但结构不稳定、无法直接进开发流；差异点在中间工件与评估回路。</text>
+  <text class="b" x="64" y="590">申请公开（2025-12-16 申请，主张 2024-12 临时申请优先权），不等于已授权 · 分类号 G06F8/10、G06F8/73 · Micropaper</text>
+  <text class="serif" x="64" y="638" font-size="15.5" fill="#6E6A5C">vibe coding 解决了「写代码」，没解决「想清楚写什么」。</text>
 </svg>

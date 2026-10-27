@@ -1,72 +1,109 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
-  <rect width="1200" height="630" fill="#f4f6f9"/>
-  <rect width="1200" height="8" fill="#2c5f8a"/>
-
-  <!-- Header -->
-  <text x="60" y="72" font-size="34" font-weight="bold" fill="#1f2d3d">AI 智创简报：说话人分离专利转向流式</text>
-  <text x="60" y="112" font-size="20" fill="#5b6b7c">转写接单者的工具活 · 2026-09-05</text>
-
-  <!-- Column 1: patent signal -->
-  <rect x="60" y="150" width="340" height="380" rx="10" fill="#ffffff" stroke="#d7dee6"/>
-  <rect x="60" y="150" width="340" height="52" rx="10" fill="#2c5f8a"/>
-  <text x="230" y="184" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">专利信号</text>
-
-  <text x="84" y="242" font-size="17" font-weight="bold" fill="#1f2d3d">US20260245574A1 · NVIDIA</text>
-  <text x="84" y="268" font-size="15" fill="#42546a">流式分离：说话人缓存随片段输入，2026-08-20 公开</text>
-
-  <text x="84" y="312" font-size="17" font-weight="bold" fill="#1f2d3d">US20260045268A1 · Google</text>
-  <text x="84" y="338" font-size="15" fill="#42546a">无监督分离：潜在说话人瓶颈，2026-02-12 公开</text>
-
-  <text x="84" y="382" font-size="17" font-weight="bold" fill="#1f2d3d">US20250335711A1 · Google</text>
-  <text x="84" y="408" font-size="15" fill="#42546a">分块自注册 + 多模态大模型长音频分离</text>
-
-  <text x="84" y="452" font-size="17" font-weight="bold" fill="#1f2d3d">US20250225998A1 · Google</text>
-  <text x="84" y="478" font-size="15" fill="#42546a">大模型后处理，直接修正说话人标签</text>
-
-  <!-- Arrow 1 -->
-  <path d="M410 340 L450 340" stroke="#8fa3b5" stroke-width="3" marker-end="url(#arr)"/>
-
-  <!-- Column 2: trend -->
-  <rect x="460" y="150" width="340" height="380" rx="10" fill="#ffffff" stroke="#d7dee6"/>
-  <rect x="460" y="150" width="340" height="52" rx="10" fill="#4a7aa5"/>
-  <text x="630" y="184" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">技术趋势</text>
-
-  <text x="484" y="242" font-size="17" font-weight="bold" fill="#1f2d3d">离线批处理 → 流式定人</text>
-  <text x="484" y="268" font-size="15" fill="#42546a">说话人缓存免重推历史，实时转写算力下降</text>
-
-  <text x="484" y="312" font-size="17" font-weight="bold" fill="#1f2d3d">分离结果进大模型链路</text>
-  <text x="484" y="338" font-size="15" fill="#42546a">分块自注册抗长音频漂移，后处理改标签</text>
-
-  <text x="484" y="382" font-size="17" font-weight="bold" fill="#1f2d3d">现有开源栈的空位</text>
-  <text x="484" y="408" font-size="15" fill="#42546a">pyannote-audio（约 1.05 万 star）为离线批分析，</text>
-  <text x="484" y="430" font-size="15" fill="#42546a">长会议抢话处会中途换人，错几十分钟才发现</text>
-
-  <!-- Arrow 2 -->
-  <path d="M810 340 L850 340" stroke="#8fa3b5" stroke-width="3" marker-end="url(#arr)"/>
-
-  <!-- Column 3: opportunity -->
-  <rect x="860" y="150" width="280" height="380" rx="10" fill="#ffffff" stroke="#d7dee6"/>
-  <rect x="860" y="150" width="280" height="52" rx="10" fill="#e0a43c"/>
-  <text x="1000" y="184" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">一个人能做的</text>
-
-  <text x="884" y="242" font-size="17" font-weight="bold" fill="#1f2d3d">分离质检插件</text>
-  <text x="884" y="268" font-size="15" fill="#42546a">挂在 pyannote + Whisper 上，置信分标红</text>
-  <text x="884" y="290" font-size="15" fill="#42546a">抢话段，导出 SRT/VTT，$8-15/月/席位</text>
-
-  <text x="884" y="334" font-size="17" font-weight="bold" fill="#1f2d3d">说话人标签审核服务</text>
-  <text x="884" y="360" font-size="15" fill="#42546a">历史稿置信度核查，单次 1000-3000 元</text>
-
-  <text x="884" y="404" font-size="17" font-weight="bold" fill="#1f2d3d">今天就能做</text>
-  <text x="884" y="430" font-size="15" fill="#42546a">拿两小时会议录音跑开源流水线，数一数</text>
-  <text x="884" y="452" font-size="15" fill="#42546a">要人工改说话人的句数 = 需求样本</text>
-
-  <!-- Footer -->
-  <text x="60" y="586" font-size="15" fill="#7c8a99">读者：个人开发者 / 一人公司 / 小团队 · 起步成本 ≤ 2 万元 · MVP 4 周内可完成</text>
-  <text x="1140" y="586" font-size="15" fill="#7c8a99" text-anchor="end">Micropaper · AI 智创简报</text>
-
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
   <defs>
-    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L8,3 L0,6 Z" fill="#8fa3b5"/>
-    </marker>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #A99B84; }
+      .b { font-size: 12px; fill: #8B8271; }
+      .ev { font-size: 13px; font-weight: 700; fill: #2B2620; }
+      .evs { font-size: 12px; fill: #665F52; }
+      .stat { font-size: 34px; font-weight: 700; fill: #2B2620; }
+      .unit { font-size: 14px; fill: #665F52; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F3EA"/>
+    </linearGradient>
+    <linearGradient id="axis" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4A8C6F"/><stop offset="1" stop-color="#D94A3D"/>
+    </linearGradient>
+    <linearGradient id="lantern" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E5A83C"/><stop offset="1" stop-color="#D94A3D"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2B3A55"/><stop offset="1" stop-color="#4A8C6F"/>
+    </linearGradient>
   </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1124" cy="96" r="130" fill="#D94A3D" opacity="0.06"/>
+  <circle cx="90" cy="644" r="120" fill="#4A8C6F" opacity="0.07"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#axis)"/>
+
+  <text class="k" x="64" y="84">AI 智创简报 · 专利情报速读 · 说话人分离</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">谁在说，还得人核</text>
+  <text x="64" y="158" font-size="15" fill="#665F52">近一年四件说话人分离专利公开：分离走向流式，纠错交给大模型</text>
+
+  <!-- night market motif: lantern + sound stall waves -->
+  <g>
+    <line x1="1042" y1="66" x2="1042" y2="84" stroke="#2B3A55" stroke-width="2.5"/>
+    <rect x="1022" y="84" width="40" height="10" rx="3" fill="#2B3A55"/>
+    <ellipse cx="1042" cy="122" rx="26" ry="30" fill="url(#lantern)"/>
+    <path d="M 1026 98 q -6 24 0 48 M 1042 92 v 60 M 1058 98 q 6 24 0 48" fill="none" stroke="#F7F3EA" stroke-width="2" opacity="0.75"/>
+    <rect x="1030" y="152" width="24" height="7" rx="3" fill="#2B3A55"/>
+    <g stroke="#4A8C6F" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.85">
+      <path d="M 1092 100 v 30 M 1104 88 v 54 M 1116 106 v 22 M 1128 94 v 42 M 1140 104 v 26"/>
+    </g>
+  </g>
+
+  <!-- timeline: 2025-07-10=170, 2025-10-30=372, 2026-02-12=582, 2026-08-20=850 (span 407d, ~1.67/day) -->
+  <line x1="150" y1="330" x2="900" y2="330" stroke="url(#axis)" stroke-width="4" stroke-linecap="round"/>
+  <text class="b" x="150" y="356">2025-07</text>
+  <text class="b" x="900" y="356" text-anchor="end">2026-08</text>
+
+  <g>
+    <circle cx="170" cy="330" r="10" fill="#FFFFFF" stroke="#4A8C6F" stroke-width="3.5"/>
+    <line x1="170" y1="342" x2="170" y2="376" stroke="#93BCA9"/>
+    <text class="ev" x="170" y="404">07-10 · Google</text>
+    <text class="evs" x="170" y="424">大模型后处理改标签</text>
+
+    <circle cx="372" cy="330" r="10" fill="#FFFFFF" stroke="#4A8C6F" stroke-width="3.5"/>
+    <line x1="372" y1="318" x2="372" y2="284" stroke="#93BCA9"/>
+    <text class="ev" x="372" y="262">10-30 · Google</text>
+    <text class="evs" x="372" y="282">分块自注册长音频分离</text>
+
+    <circle cx="582" cy="330" r="10" fill="#FFFFFF" stroke="#E5A83C" stroke-width="3.5"/>
+    <line x1="582" y1="342" x2="582" y2="376" stroke="#EBCB90"/>
+    <text class="ev" x="582" y="404">02-12 · Google</text>
+    <text class="evs" x="582" y="424">无监督瓶颈模块分离</text>
+
+    <circle cx="850" cy="330" r="10" fill="url(#lantern)"/>
+    <line x1="850" y1="318" x2="850" y2="284" stroke="#E09A8F"/>
+    <text class="ev" x="850" y="262" text-anchor="end">08-20 · NVIDIA</text>
+    <text class="evs" x="850" y="282" text-anchor="end">流式说话人缓存</text>
+  </g>
+  <circle cx="150" cy="452" r="6" fill="url(#lantern)"/><text class="b" x="162" y="457">最新公开</text>
+  <circle cx="248" cy="452" r="6" fill="#FFFFFF" stroke="#4A8C6F" stroke-width="2.5"/><text class="b" x="260" y="457">公开申请</text>
+
+  <!-- gap chip -->
+  <g>
+    <rect x="470" y="428" width="380" height="46" rx="10" fill="#D94A3D" opacity="0.07"/>
+    <rect x="470" y="428" width="5" height="46" rx="2.5" fill="#D94A3D"/>
+    <text x="492" y="449" font-size="13" font-weight="700" fill="#B23A2F">模型侧圈地，人工核对应空着</text>
+    <text x="492" y="467" font-size="12.5" fill="#665F52">pyannote + Whisper 在抢话处会中途换人</text>
+  </g>
+
+  <!-- opportunity cards -->
+  <g>
+    <rect x="64" y="492" width="336" height="140" rx="18" fill="#D94A3D" opacity="0.07"/>
+    <rect x="64" y="492" width="336" height="6" rx="3" fill="#D94A3D"/>
+    <rect x="92" y="522" width="44" height="28" rx="5" fill="#D94A3D"/>
+    <circle cx="114" cy="536" r="7" fill="#F7F3EA"/>
+    <text class="stat" x="152" y="554">$8–15<tspan class="unit"> /席·月</tspan></text>
+    <text class="evs" x="92" y="596">分离质检工具订阅</text>
+
+    <rect x="432" y="492" width="336" height="140" rx="18" fill="#E5A83C" opacity="0.12"/>
+    <rect x="432" y="492" width="336" height="6" rx="3" fill="#C98F2C"/>
+    <rect x="460" y="522" width="44" height="28" rx="14" fill="#C98F2C"/>
+    <circle cx="482" cy="536" r="6" fill="#F7F3EA"/>
+    <text class="stat" x="520" y="554">1000–3000 元<tspan class="unit"> /次</tspan></text>
+    <text class="evs" x="460" y="596">说话人标签审核服务</text>
+
+    <rect x="800" y="492" width="336" height="140" rx="18" fill="#2B3A55" opacity="0.08"/>
+    <rect x="800" y="492" width="336" height="6" rx="3" fill="#2B3A55"/>
+    <path d="M 828 552 l 10 -26 l 16 12 z" fill="#2B3A55"/>
+    <circle cx="846" cy="530" r="4" fill="#D7DEE9"/>
+    <text class="stat" x="888" y="554">近 1 小时<tspan class="unit"> /稿</tspan></text>
+    <text class="evs" x="828" y="596">3 小时录音核说话人标签工时</text>
+  </g>
+
+  <text class="b" x="64" y="662">以上均为申请公开，不等于已授权 · 观点仅为机会判断，不构成投资建议 · Micropaper</text>
 </svg>

@@ -1,43 +1,84 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="540" viewBox="0 0 860 540" font-family="Helvetica, Arial, sans-serif">
-  <rect width="860" height="540" fill="#ffffff"/>
-  <text x="430" y="36" text-anchor="middle" font-size="21" font-weight="bold" fill="#1a1a2e">LLM 反编译：构建率上升，行为匹配率下降</text>
-  <text x="430" y="60" text-anchor="middle" font-size="13" fill="#666">arXiv:2609.05370 · Decompile-Diverge 模糊测试对照（2026-09-08 查阅）</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8E97A6; }
+      .rl { font-size: 15px; fill: #3F4A5A; }
+      .val { font-size: 24px; font-weight: 700; }
+      .b { font-size: 12px; fill: #98A1AE; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F9F6F0"/>
+    </linearGradient>
+    <linearGradient id="gBuild" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3F5E8C"/><stop offset="1" stop-color="#7A96BF"/>
+    </linearGradient>
+    <linearGradient id="gBehav" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B24C4C"/><stop offset="1" stop-color="#D98A6A"/>
+    </linearGradient>
+    <linearGradient id="gThread" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D9A441"/><stop offset="1" stop-color="#B24C4C"/>
+    </linearGradient>
+  </defs>
 
-  <!-- Left: metric divergence bars -->
-  <text x="60" y="100" font-size="15" font-weight="bold" fill="#1a1a2e">Ghidra + 最强精化模型：指标背离</text>
-  <!-- build rate -->
-  <text x="60" y="134" font-size="13" fill="#333">可重编译率（build）</text>
-  <rect x="230" y="120" width="255" height="20" fill="#d8e2ef"/>
-  <rect x="230" y="120" width="340" height="20" fill="#2e7d32" opacity="0.75"/>
-  <text x="236" y="135" font-size="12" fill="#ffffff">75% → 90%</text>
-  <!-- match rate -->
-  <text x="60" y="170" font-size="13" fill="#333">行为匹配率（matched）</text>
-  <rect x="230" y="156" width="340" height="20" fill="#d8e2ef"/>
-  <rect x="230" y="156" width="282" height="20" fill="#c62828" opacity="0.8"/>
-  <text x="236" y="171" font-size="12" fill="#ffffff">74% → 62%</text>
-  <text x="60" y="200" font-size="12" fill="#777">编译更容易了，行为却更常与原程序分歧</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1090" cy="110" r="150" fill="#7D8B6F" opacity="0.08"/>
+  <circle cx="80" cy="615" r="120" fill="#3F5E8C" opacity="0.05"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gThread)"/>
 
-  <!-- Middle: divergence stat -->
-  <rect x="60" y="228" width="740" height="86" rx="8" fill="#fff3e0" stroke="#ef6c00" stroke-width="1.5"/>
-  <text x="80" y="256" font-size="14" font-weight="bold" fill="#e65100">通过全部随附测试 ≠ 行为等价</text>
-  <text x="80" y="282" font-size="13" fill="#333">8 个系统 9 种配置：通过全部测试的候选仍有 4.9% 在合法输入上与原程序分歧，单一系统最高 13%</text>
-  <text x="80" y="302" font-size="13" fill="#333">已披露漏洞子集上，最高约 1/10 的漏洞在产物中出现崩溃缺失（Crash Absence）</text>
+  <text class="k" x="64" y="84">一分钟读论文 NO.180 · ARXIV:2609.05370</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1E2430">织得越紧，走得越偏</text>
+  <text x="64" y="158" font-size="15" fill="#5A6070">精化让 Ghidra 更好编译，行为匹配率却在掉</text>
 
-  <!-- Bottom: two paths -->
-  <rect x="60" y="340" width="355" height="120" rx="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.2"/>
-  <text x="80" y="366" font-size="14" font-weight="bold" fill="#2e7d32">传统反编译器（Ghidra）</text>
-  <text x="80" y="390" font-size="12.5" fill="#333">解析不了就留占位符：</text>
-  <text x="80" y="410" font-size="12.5" fill="#333">可见的未知，构建率低</text>
-  <text x="80" y="436" font-size="12.5" fill="#555">失败暴露在外，可被人看见</text>
+  <!-- loom illustration -->
+  <g>
+    <rect x="972" y="72" width="152" height="8" rx="4" fill="#7A5230"/>
+    <line x1="986" y1="80" x2="986" y2="158" stroke="#3F5E8C" stroke-width="3"/>
+    <line x1="1010" y1="80" x2="1010" y2="158" stroke="#3F5E8C" stroke-width="3"/>
+    <line x1="1034" y1="80" x2="1034" y2="158" stroke="#3F5E8C" stroke-width="3"/>
+    <line x1="1058" y1="80" x2="1058" y2="158" stroke="#3F5E8C" stroke-width="3"/>
+    <line x1="1082" y1="80" x2="1082" y2="158" stroke="#3F5E8C" stroke-width="3"/>
+    <line x1="1106" y1="80" x2="1106" y2="158" stroke="#3F5E8C" stroke-width="3"/>
+    <path d="M 976 116 C 1014 104 1068 130 1122 112" fill="none" stroke="url(#gThread)" stroke-width="5" stroke-linecap="round"/>
+    <rect x="966" y="160" width="164" height="10" rx="5" fill="#B24C4C"/>
+    <text x="1048" y="192" text-anchor="middle" font-size="12" fill="#7D8B6F">纬线对了，图案错了</text>
+  </g>
 
-  <rect x="445" y="340" width="355" height="120" rx="8" fill="#ffebee" stroke="#c62828" stroke-width="1.2"/>
-  <text x="465" y="366" font-size="14" font-weight="bold" fill="#c62828">LLM 反编译产物</text>
-  <text x="465" y="390" font-size="12.5" fill="#333">引入字段 / 类型 / 被调用函数 /</text>
-  <text x="465" y="410" font-size="12.5" fill="#333">防护条件：看不见的错</text>
-  <text x="465" y="436" font-size="12.5" fill="#555">失败藏进语义，指标全绿通过</text>
+  <!-- slope: 75->90 up, 74->62 down; y: p% -> 540-(p-50)*4.6 -->
+  <g>
+    <rect x="120" y="200" width="1016" height="120" fill="#3F5E8C" opacity="0.07"/>
+    <text class="rl" x="136" y="250" font-weight="700" fill="#3F5E8C">可重编译性</text>
+    <text x="136" y="270" font-size="12.5" fill="#8A8578">能否构建</text>
+    <line x1="500" y1="262" x2="860" y2="189" stroke="url(#gBuild)" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="500" cy="262" r="9" fill="none" stroke="#3F5E8C" stroke-width="3"/>
+    <circle cx="860" cy="189" r="9" fill="#3F5E8C"/>
+    <text x="482" y="252" text-anchor="end" font-size="18" font-weight="700" fill="#5F7BA3">75%</text>
+    <text x="880" y="184" class="val" fill="#3F5E8C">90%</text>
+    <text x="1090" y="248" text-anchor="end" font-size="13" fill="#5F7BA3">精化 LLM 修好了 Ghidra 的构建</text>
 
-  <!-- Footer boundary -->
-  <rect x="60" y="478" width="740" height="44" rx="6" fill="#f5f5f5" stroke="#bdbdbd" stroke-width="1"/>
-  <text x="80" y="497" font-size="12" fill="#616161">边界：模糊语料非穷尽证明，分歧率是给定输入集上的下界；oracle 依赖参考实现可得；</text>
-  <text x="80" y="515" font-size="12" fill="#616161">预印本未经同行评审。实操：可重编译性只是必要条件，行为等价测试必须叠加。</text>
+    <rect x="120" y="340" width="1016" height="120" fill="#B24C4C" opacity="0.07"/>
+    <text class="rl" x="136" y="390" font-weight="700" fill="#B24C4C">行为匹配率</text>
+    <text x="136" y="410" font-size="12.5" fill="#8A8578">与程序原行为一致</text>
+    <line x1="500" y1="375" x2="860" y2="432" stroke="url(#gBehav)" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="500" cy="375" r="9" fill="none" stroke="#B24C4C" stroke-width="3"/>
+    <circle cx="860" cy="432" r="9" fill="#B24C4C"/>
+    <text x="482" y="365" text-anchor="end" font-size="18" font-weight="700" fill="#C27070">74%</text>
+    <text x="880" y="440" class="val" fill="#B24C4C">62%</text>
+    <text x="1090" y="418" text-anchor="end" font-size="13" fill="#B24C4C">看不见的错：4.9% 通过全部随附测试仍分歧</text>
+
+    <line x1="500" y1="200" x2="500" y2="470" stroke="#D9A441" stroke-width="1.5" stroke-dasharray="4 6"/>
+    <line x1="860" y1="200" x2="860" y2="470" stroke="#D9A441" stroke-width="1.5" stroke-dasharray="4 6"/>
+    <text x="500" y="492" text-anchor="middle" font-size="12.5" fill="#9A937F">Ghidra 基线</text>
+    <text x="860" y="492" text-anchor="middle" font-size="12.5" fill="#9A937F">最强精化 LLM</text>
+  </g>
+
+  <!-- big number anchor -->
+  <g>
+    <text x="120" y="576" class="serif" font-size="30" font-weight="700" fill="#B24C4C">最高 13%</text>
+    <text x="288" y="570" font-size="13.5" fill="#5A6070">单一系统的行为分歧率</text>
+    <text x="640" y="576" class="serif" font-size="30" font-weight="700" fill="#B24C4C">约 1/10</text>
+    <text x="772" y="570" font-size="13.5" fill="#5A6070">已披露漏洞在输出中崩溃缺失（CVE 子集）</text>
+  </g>
+
+  <text x="64" y="636" font-size="12.5" fill="#A29C88">8 系统 9 配置与 300 个 GitHub 库函数、287 个 CVE 关联函数上的对照；模糊语料非穷尽证明，分歧率为下界观察；预印本。</text>
 </svg>

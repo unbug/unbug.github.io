@@ -1,35 +1,112 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
-  <rect width="1200" height="630" fill="#0f1620"/>
-  <text x="60" y="78" fill="#e8eef6" font-size="34" font-weight="700">编码智能体：知道却不说</text>
-  <text x="60" y="116" fill="#8ea3bd" font-size="19">任务状态可恢复性：三种读取方式对比（CTXGAP，37 个编码任务、4,799 个探针）</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #93907E; }
+      .rl { font-size: 15px; fill: #4C4B42; }
+      .b { font-size: 12px; fill: #A39F8A; }
+      .stat { font-size: 28px; font-weight: 700; fill: #23241E; }
+      .val { font-size: 19px; font-weight: 700; fill: #23241E; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F6F4EC"/>
+    </linearGradient>
+    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2E5C8A"/><stop offset="1" stop-color="#6E93BC"/>
+    </linearGradient>
+    <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F7D61"/><stop offset="1" stop-color="#74B58F"/>
+    </linearGradient>
+    <linearGradient id="gOchre" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C07A2E"/><stop offset="1" stop-color="#E3AC63"/>
+    </linearGradient>
+    <linearGradient id="gPlum" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7D4A6B"/><stop offset="1" stop-color="#B07FA0"/>
+    </linearGradient>
+    <linearGradient id="gRed" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B5442E"/><stop offset="1" stop-color="#DB8168"/>
+    </linearGradient>
+    <linearGradient id="gInk" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2E5C8A"/><stop offset="1" stop-color="#7D4A6B"/>
+    </linearGradient>
+  </defs>
 
-  <!-- axes -->
-  <line x1="120" y1="530" x2="1080" y2="530" stroke="#3a4a61" stroke-width="2"/>
-  <line x1="120" y1="160" x2="120" y2="530" stroke="#3a4a61" stroke-width="2"/>
-  <text x="66" y="168" fill="#8ea3bd" font-size="16">100%</text>
-  <text x="82" y="349" fill="#8ea3bd" font-size="16">50%</text>
-  <line x1="120" y1="345" x2="1080" y2="345" stroke="#243143" stroke-width="1" stroke-dasharray="4 6"/>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1128" cy="612" r="140" fill="#7D4A6B" opacity="0.05"/>
+  <circle cx="88" cy="112" r="110" fill="#C07A2E" opacity="0.07"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gRed)"/>
 
-  <!-- bar 1: ask the agent 93.6 -->
-  <rect x="200" y="186" width="200" height="344" rx="6" fill="#4fc3f7"/>
-  <text x="300" y="166" fill="#4fc3f7" font-size="30" font-weight="700" text-anchor="middle">93.6%</text>
-  <text x="300" y="566" fill="#c6d4e6" font-size="19" text-anchor="middle">直接问智能体本人</text>
+  <text class="k" x="64" y="84">一分钟读论文 · 2026-10-16 · ARXIV:2610.20003</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#23241E">例行报告天然漏字</text>
+  <text x="64" y="158" font-size="15" fill="#6B675A">问智能体本人 93.6% 答对，只看它写的报告只剩 52.0%</text>
 
-  <!-- bar 2: full context 92.7 -->
-  <rect x="520" y="190" width="200" height="340" rx="6" fill="#a5d6a7"/>
-  <text x="620" y="170" fill="#a5d6a7" font-size="30" font-weight="700" text-anchor="middle">92.7%</text>
-  <text x="620" y="566" fill="#c6d4e6" font-size="19" text-anchor="middle">读完整执行记录</text>
+  <!-- printing press motif -->
+  <g>
+    <rect x="982" y="86" width="152" height="96" rx="8" fill="#FDFCF7" stroke="#23241E" stroke-width="3"/>
+    <rect x="996" y="102" width="94" height="7" rx="3" fill="url(#gInk)"/>
+    <rect x="996" y="118" width="112" height="7" rx="3" fill="url(#gInk)"/>
+    <rect x="996" y="134" width="70" height="7" rx="3" fill="url(#gInk)"/>
+    <rect x="1074" y="134" width="34" height="7" rx="3" fill="#C9C4B2"/>
+    <rect x="996" y="150" width="104" height="7" rx="3" fill="url(#gInk)"/>
+    <circle cx="1058" cy="208" r="24" fill="none" stroke="url(#gInk)" stroke-width="8"/>
+    <circle cx="1114" cy="208" r="16" fill="none" stroke="#C07A2E" stroke-width="6"/>
+    <rect x="1020" y="232" width="120" height="16" rx="3" fill="#FDFCF7" stroke="#B5442E" stroke-width="2.5" stroke-dasharray="7 5"/>
+    <text class="b" x="1058" y="270" text-anchor="middle">同一版，印出来短一截</text>
+  </g>
 
-  <!-- bar 3: reports only 52.0 -->
-  <rect x="840" y="339" width="200" height="191" rx="6" fill="#ff8a65"/>
-  <text x="940" y="319" fill="#ff8a65" font-size="30" font-weight="700" text-anchor="middle">52.0%</text>
-  <text x="940" y="566" fill="#c6d4e6" font-size="19" text-anchor="middle">只看例行报告</text>
+  <!-- recovery rate bars: 1% = 8.2 px, x0=316 -->
+  <g>
+    <rect x="316" y="204" width="760" height="40" rx="9" fill="#2E5C8A" opacity="0.07"/>
+    <rect x="316" y="254" width="760" height="40" rx="9" fill="#2F7D61" opacity="0.07"/>
+    <rect x="316" y="304" width="760" height="40" rx="9" fill="#B5442E" opacity="0.07"/>
 
-  <!-- gap bracket between bar2 top and bar3 top -->
-  <line x1="740" y1="190" x2="820" y2="190" stroke="#ffd54f" stroke-width="2" stroke-dasharray="5 5"/>
-  <line x1="740" y1="339" x2="820" y2="339" stroke="#ffd54f" stroke-width="2" stroke-dasharray="5 5"/>
-  <line x1="800" y1="190" x2="800" y2="339" stroke="#ffd54f" stroke-width="3"/>
-  <text x="795" y="252" fill="#ffd54f" font-size="24" font-weight="700" text-anchor="end">差 40.7 个点</text>
+    <text class="rl" x="300" y="229" text-anchor="end">直接问智能体</text>
+    <rect x="316" y="212" width="768" height="24" rx="12" fill="url(#gBlue)"/>
+    <text x="1070" y="229" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="end">93.6%</text>
 
-  <text x="120" y="608" fill="#8ea3bd" font-size="16">结案时点（30 个已验证修复）差距仍有 34.8 个点 · 预印本 CTXGAP（腾讯 × 中国科学技术大学）</text>
+    <text class="rl" x="300" y="279" text-anchor="end">读完整执行记录</text>
+    <rect x="316" y="262" width="761" height="24" rx="12" fill="url(#gGreen)"/>
+    <text x="1063" y="279" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="end">92.7%</text>
+
+    <text class="rl" x="300" y="329" text-anchor="end">只看例行报告</text>
+    <rect x="316" y="312" width="426" height="24" rx="12" fill="url(#gRed)"/>
+    <text x="756" y="329" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="end">52.0%</text>
+    <line x1="1084" y1="284" x2="1084" y2="336" stroke="#B5442E" stroke-width="2" stroke-dasharray="4 4"/>
+    <text x="1076" y="298" class="b" text-anchor="end">缺口 40.7 点</text>
+  </g>
+
+  <!-- remediation chips -->
+  <g>
+    <text class="b" x="64" y="368">补救两条线，都追不平完整记录</text>
+    <rect x="64" y="380" width="248" height="34" rx="17" fill="#C07A2E" opacity="0.12"/>
+    <text x="84" y="402" font-size="13.5" fill="#8A5620">终端全量回滚内容 → <tspan font-weight="700">73.6%</tspan></text>
+    <rect x="326" y="380" width="256" height="34" rx="17" fill="#7D4A6B" opacity="0.12"/>
+    <text x="346" y="402" font-size="13.5" fill="#5E3850">报告信息重写 → <tspan font-weight="700">约 +8 点</tspan></text>
+    <text class="b" x="598" y="402">提示怎么写，都救不回这条通道</text>
+  </g>
+
+  <!-- stat cards -->
+  <g>
+    <rect x="64" y="436" width="340" height="126" rx="14" fill="#2E5C8A" opacity="0.07"/>
+    <rect x="64" y="436" width="340" height="6" rx="3" fill="url(#gBlue)"/>
+    <text class="stat" x="88" y="484">37 任务<tspan font-size="13" fill="#6B675A">　4,799 探针</tspan></text>
+    <text x="88" y="516" font-size="13.5" fill="#4C4B42">测量的是报告与完整记录之间，</text>
+    <text x="88" y="536" font-size="13.5" fill="#4C4B42">任务状态的可恢复性差距</text>
+
+    <rect x="430" y="436" width="340" height="126" rx="14" fill="#B5442E" opacity="0.07"/>
+    <rect x="430" y="436" width="340" height="6" rx="3" fill="url(#gRed)"/>
+    <text x="454" y="484" class="stat" font-size="22">结案仍差 34.8 点<tspan font-size="13" fill="#6B675A">　30 个已验证修复</tspan></text>
+    <text x="454" y="516" font-size="13.5" fill="#4C4B42">最大缺口不是隐瞒，是失败尝试、</text>
+    <text x="454" y="536" font-size="13.5" fill="#4C4B42">变通与风险被一笔带过</text>
+
+    <rect x="796" y="436" width="340" height="126" rx="14" fill="#2F7D61" opacity="0.07"/>
+    <rect x="796" y="436" width="340" height="6" rx="3" fill="url(#gGreen)"/>
+    <text class="stat" x="820" y="484" font-size="26">93.6% ≠ 会说</text>
+    <text x="820" y="516" font-size="13.5" fill="#4C4B42">被问到就知道，不等于报告里</text>
+    <text x="820" y="536" font-size="13.5" fill="#4C4B42">主动说；跨 harness 稳定复现</text>
+  </g>
+
+  <line x1="64" y1="586" x2="1136" y2="586" stroke="#E5E1D2"/>
+  <text class="serif" x="64" y="622" font-size="19" fill="#23241E">例行报告当交接文档可以，当审计日志不行；要复盘，回到完整执行记录。</text>
+  <text class="b" x="64" y="652">腾讯 × 中国科学技术大学 · 预印本 · 数字为任务状态可恢复性而非任务成功率 · Micropaper</text>
 </svg>

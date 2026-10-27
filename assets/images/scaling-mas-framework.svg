@@ -1,112 +1,99 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" font-family="Arial, sans-serif">
-  <rect width="800" height="540" fill="#f8f9fa"/>
-
-  <!-- Title -->
-  <text x="400" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#2c3e50">Scaling LLM-Driven Multi-Agent Systems: Four Design Principles</text>
-
-  <!-- Four Design Principles (top section) -->
-  <rect x="30" y="50" width="740" height="180" rx="10" fill="#fafafa" stroke="#90a4ae" stroke-width="1.5"/>
-  <text x="400" y="72" text-anchor="middle" font-size="13" font-weight="bold" fill="#455a64">Four Design Principles for Scalable MAS</text>
-
-  <!-- Principle 1: Simplicity -->
-  <rect x="50" y="85" width="170" height="125" rx="8" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5"/>
-  <text x="135" y="108" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">Simplicity</text>
-  <line x1="70" y1="115" x2="200" y2="115" stroke="#1976d2" stroke-width="1"/>
-  <rect x="65" y="122" width="140" height="30" rx="3" fill="#bbdefb"/>
-  <text x="135" y="141" text-anchor="middle" font-size="10" fill="#1565c0">Avoid unnecessary complexity</text>
-  <rect x="65" y="158" width="140" height="30" rx="3" fill="#bbdefb"/>
-  <text x="135" y="177" text-anchor="middle" font-size="10" fill="#1565c0">Clear component responsibilities</text>
-
-  <!-- Principle 2: Elastic Feedback -->
-  <rect x="240" y="85" width="170" height="125" rx="8" fill="#e8f5e9" stroke="#388e3c" stroke-width="1.5"/>
-  <text x="325" y="108" text-anchor="middle" font-size="12" font-weight="bold" fill="#2e7d32">Elastic Feedback</text>
-  <line x1="260" y1="115" x2="390" y2="115" stroke="#388e3c" stroke-width="1"/>
-  <rect x="255" y="122" width="140" height="30" rx="3" fill="#c8e6c9"/>
-  <text x="325" y="141" text-anchor="middle" font-size="10" fill="#2e7d32">Adjust based on intermediate</text>
-  <rect x="255" y="158" width="140" height="30" rx="3" fill="#c8e6c9"/>
-  <text x="325" y="177" text-anchor="middle" font-size="10" fill="#2e7d32">results during execution</text>
-
-  <!-- Principle 3: Sequential Workflows -->
-  <rect x="430" y="85" width="170" height="125" rx="8" fill="#fff3e0" stroke="#f57c00" stroke-width="1.5"/>
-  <text x="515" y="108" text-anchor="middle" font-size="12" font-weight="bold" fill="#e65100">Sequential Workflows</text>
-  <line x1="450" y1="115" x2="580" y2="115" stroke="#f57c00" stroke-width="1"/>
-  <rect x="445" y="122" width="140" height="30" rx="3" fill="#ffe0b2"/>
-  <text x="515" y="141" text-anchor="middle" font-size="10" fill="#e65100">Ordered steps with optional</text>
-  <rect x="445" y="158" width="140" height="30" rx="3" fill="#ffe0b2"/>
-  <text x="515" y="177" text-anchor="middle" font-size="10" fill="#e65100">loops for backtracking</text>
-
-  <!-- Principle 4: Summary Communication -->
-  <rect x="620" y="85" width="140" height="125" rx="8" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="1.5"/>
-  <text x="690" y="108" text-anchor="middle" font-size="12" font-weight="bold" fill="#6a1b9a">Summary Comm.</text>
-  <line x1="640" y1="115" x2="740" y2="115" stroke="#7b1fa2" stroke-width="1"/>
-  <rect x="635" y="122" width="110" height="30" rx="3" fill="#e1bee7"/>
-  <text x="690" y="141" text-anchor="middle" font-size="10" fill="#6a1b9a">Compress info to reduce</text>
-  <rect x="635" y="158" width="110" height="30" rx="3" fill="#e1bee7"/>
-  <text x="690" y="177" text-anchor="middle" font-size="10" fill="#6a1b9a">communication overhead</text>
-
-  <!-- Reference Architecture (center section) -->
-  <rect x="30" y="250" width="740" height="100" rx="8" fill="#fffde7" stroke="#f9a825" stroke-width="2"/>
-  <text x="400" y="272" text-anchor="middle" font-size="13" font-weight="bold" fill="#f57f17">Reference Architecture: Constrained Directed Workflow Graph</text>
-
-  <!-- Nodes and edges visualization -->
-  <rect x="80" y="285" width="60" height="40" rx="4" fill="#e3f2fd" stroke="#1976d2" stroke-width="1"/>
-  <text x="110" y="310" text-anchor="middle" font-size="9" fill="#1565c0">Agent A</text>
-
-  <path d="M 140 305 L 170 305" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="170" y="285" width="60" height="40" rx="4" fill="#e8f5e9" stroke="#388e3c" stroke-width="1"/>
-  <text x="200" y="310" text-anchor="middle" font-size="9" fill="#2e7d32">Agent B</text>
-
-  <path d="M 230 305 L 260 305" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="260" y="285" width="60" height="40" rx="4" fill="#fff3e0" stroke="#f57c00" stroke-width="1"/>
-  <text x="290" y="310" text-anchor="middle" font-size="9" fill="#e65100">Agent C</text>
-
-  <path d="M 320 305 L 350 305" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="350" y="285" width="60" height="40" rx="4" fill="#fce4ec" stroke="#c62828" stroke-width="1"/>
-  <text x="380" y="310" text-anchor="middle" font-size="9" fill="#b71c1c">Agent D</text>
-
-  <!-- Feedback loop -->
-  <path d="M 410 305 L 440 305" stroke="#f57c00" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <rect x="440" y="285" width="60" height="40" rx="4" fill="#fff9c4" stroke="#f9a825" stroke-width="1"/>
-  <text x="470" y="310" text-anchor="middle" font-size="9" fill="#f57f17">Summary</text>
-
-  <!-- Back arrow -->
-  <path d="M 500 285 L 500 260 L 410 260" stroke="#f57c00" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#arrow)"/>
-
-  <!-- Key Findings (bottom section) -->
-  <rect x="30" y="370" width="740" height="150" rx="8" fill="#fafafa" stroke="#b0bec5" stroke-width="1.5"/>
-  <text x="400" y="392" text-anchor="middle" font-size="13" font-weight="bold" fill="#455a64">Key Findings: Scalability Characteristics</text>
-
-  <!-- Finding 1 -->
-  <rect x="50" y="405" width="220" height="95" rx="6" fill="#e3f2fd" stroke="#1976d2" stroke-width="1"/>
-  <text x="160" y="425" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565c0">Linear Cost Growth</text>
-  <rect x="65" y="435" width="190" height="25" rx="3" fill="#bbdefb"/>
-  <text x="160" y="452" text-anchor="middle" font-size="10" fill="#1565c0">~linear cost with scaling</text>
-  <rect x="65" y="468" width="190" height="25" rx="3" fill="#bbdefb"/>
-  <text x="160" y="485" text-anchor="middle" font-size="10" fill="#1565c0">measurable accuracy gains</text>
-
-  <!-- Finding 2 -->
-  <rect x="290" y="405" width="220" height="95" rx="6" fill="#fff3e0" stroke="#f57c00" stroke-width="1"/>
-  <text x="400" y="425" text-anchor="middle" font-size="11" font-weight="bold" fill="#e65100">Capability Threshold</text>
-  <rect x="305" y="435" width="190" height="25" rx="3" fill="#ffe0b2"/>
-  <text x="400" y="452" text-anchor="middle" font-size="10" fill="#e65100">scaling only works when</text>
-  <rect x="305" y="468" width="190" height="25" rx="3" fill="#ffe0b2"/>
-  <text x="400" y="485" text-anchor="middle" font-size="10" fill="#e65100">LLM exceeds min. capability</text>
-
-  <!-- Finding 3 -->
-  <rect x="530" y="405" width="220" height="95" rx="6" fill="#fce4ec" stroke="#c62828" stroke-width="1"/>
-  <text x="640" y="425" text-anchor="middle" font-size="11" font-weight="bold" fill="#b71c1c">Performance Peak</text>
-  <rect x="545" y="435" width="190" height="25" rx="3" fill="#ffcdd2"/>
-  <text x="640" y="452" text-anchor="middle" font-size="10" fill="#c62828">peaks at intermediate</text>
-  <rect x="545" y="468" width="190" height="25" rx="3" fill="#ffcdd2"/>
-  <text x="640" y="485" text-anchor="middle" font-size="10" fill="#c62828">complexity, degrades after</text>
-
-  <!-- Arrow marker definition -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
   <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#666"/>
-    </marker>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8D9584; }
+      .rl { font-size: 15px; fill: #454F42; }
+      .val { font-size: 17px; font-weight: 700; fill: #1A1B1E; }
+      .b { font-size: 12px; fill: #9CA492; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F5F7EF"/>
+    </linearGradient>
+    <linearGradient id="gHoney" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D89A28"/><stop offset="1" stop-color="#EBC163"/>
+    </linearGradient>
+    <linearGradient id="gLeaf" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4C7A3D"/><stop offset="1" stop-color="#7CA35F"/>
+    </linearGradient>
+    <linearGradient id="gRust" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B5442E"/><stop offset="1" stop-color="#D97A55"/>
+    </linearGradient>
+    <linearGradient id="gSky" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3D6E9E"/><stop offset="1" stop-color="#71A0C8"/>
+    </linearGradient>
+    <linearGradient id="gViolet" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6A4FA3"/><stop offset="1" stop-color="#9A7FC9"/>
+    </linearGradient>
   </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1100" cy="112" r="150" fill="#D89A28" opacity="0.07"/>
+  <circle cx="86" cy="616" r="115" fill="#4C7A3D" opacity="0.07"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gRust)"/>
+
+  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2607.27942 · 埃尔朗根-纽伦堡大学等</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">蜂群再勤，蜂王得行</text>
+  <text x="64" y="158" font-size="15" fill="#59604F">多智能体系统四大设计原则 + 四级复杂度实测：缩放有效，但先过能力线</text>
+
+  <!-- beehive motif: comb hexagons + bee -->
+  <g>
+    <g stroke="url(#gHoney)" stroke-width="3" fill="#D89A28" fill-opacity="0.14">
+      <path d="M 1030 78 l 18 10.5 v 21 l -18 10.5 l -18 -10.5 v -21 z"/>
+      <path d="M 1066 99 l 18 10.5 v 21 l -18 10.5 l -18 -10.5 v -21 z" fill="#4C7A3D" fill-opacity="0.16"/>
+      <path d="M 1030 120 l 18 10.5 v 21 l -18 10.5 l -18 -10.5 v -21 z" fill="#B5442E" fill-opacity="0.15"/>
+      <path d="M 994 99 l 18 10.5 v 21 l -18 10.5 l -18 -10.5 v -21 z" fill="#3D6E9E" fill-opacity="0.15"/>
+    </g>
+    <ellipse cx="1092" cy="160" rx="12" ry="8" fill="url(#gHoney)"/>
+    <path d="M 1088 153 q -8 -10 2 -12 M 1096 153 q 8 -10 -2 -12" fill="none" stroke="#3D6E9E" stroke-width="2.5"/>
+    <line x1="1088" y1="158" x2="1096" y2="158" stroke="#1A1B1E" stroke-width="1.5"/>
+    <line x1="1089" y1="163" x2="1097" y2="163" stroke="#1A1B1E" stroke-width="1.5"/>
+  </g>
+
+  <!-- four principles chips -->
+  <g>
+    <rect x="64" y="200" width="256" height="92" rx="12" fill="#D89A28" opacity="0.09"/>
+    <text class="serif" x="84" y="242" font-size="21" font-weight="700" fill="#9A6E1E">简洁性</text>
+    <text x="84" y="268" font-size="12.5" fill="#59604F">每个组件职责清晰</text>
+
+    <rect x="340" y="200" width="256" height="92" rx="12" fill="#4C7A3D" opacity="0.09"/>
+    <text class="serif" x="360" y="242" font-size="21" font-weight="700" fill="#3E6531">弹性反馈</text>
+    <text x="360" y="268" font-size="12.5" fill="#59604F">按中间结果调策略</text>
+
+    <rect x="616" y="200" width="256" height="92" rx="12" fill="#3D6E9E" opacity="0.09"/>
+    <text class="serif" x="636" y="242" font-size="21" font-weight="700" fill="#33608C">顺序工作流</text>
+    <text x="636" y="268" font-size="12.5" fill="#59604F">带可选循环，可回溯</text>
+
+    <rect x="892" y="200" width="244" height="92" rx="12" fill="#6A4FA3" opacity="0.09"/>
+    <text class="serif" x="912" y="242" font-size="21" font-weight="700" fill="#543F82">摘要通信</text>
+    <text x="912" y="268" font-size="12.5" fill="#59604F">压缩传递，省开销</text>
+  </g>
+
+  <!-- hump curve: complexity L1..L4 -> x 120..700; peak at L3 -->
+  <g>
+    <line x1="120" y1="510" x2="730" y2="510" stroke="#CFC9B4" stroke-width="1.5"/>
+    <line x1="120" y1="330" x2="120" y2="510" stroke="#CFC9B4" stroke-width="1.5"/>
+    <text class="b" x="110" y="514" text-anchor="end">性能</text>
+    <path d="M 150 486 C 260 452 350 400 450 372 C 540 356 610 396 690 452" fill="none" stroke="url(#gLeaf)" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M 150 486 C 260 452 350 400 450 372 C 540 356 610 396 690 452 L 690 510 L 150 510 Z" fill="#4C7A3D" opacity="0.08"/>
+    <circle cx="470" cy="368" r="8" fill="url(#gRust)"/>
+    <text class="val" x="470" y="344" text-anchor="middle" fill="#B5442E">中间复杂度达峰</text>
+    <text class="b" x="640" y="480">L4：超时 + 评估限制，性能退化</text>
+    <text class="b" x="150" y="536">配置复杂度 L1 → L4 递增 · 成本约线性上涨</text>
+  </g>
+
+  <!-- right thresholds -->
+  <g>
+    <rect x="790" y="342" width="346" height="72" fill="#B5442E" opacity="0.07"/>
+    <text class="serif" x="806" y="382" font-size="24" font-weight="700" fill="#B5442E">能力阈值</text>
+    <text x="806" y="402" font-size="12.5" fill="#59604F">LLM 不过线，加多少 Agent 都白搭</text>
+
+    <rect x="790" y="424" width="346" height="72" fill="#6A4FA3" opacity="0.08"/>
+    <text class="serif" x="806" y="464" font-size="24" font-weight="700" fill="#543F82">一致性瓶颈</text>
+    <text x="806" y="484" font-size="12.5" fill="#59604F">协调难题贯穿所有缩放级别</text>
+  </g>
+
+  <line x1="64" y1="568" x2="1136" y2="568" stroke="#E5E8D8"/>
+  <text class="serif" x="64" y="608" font-size="18" fill="#1A1B1E">拓扑形式化为约束有向工作流图：节点是 Agent 角色，边是信息流。</text>
+  <text class="b" x="1136" y="608" text-anchor="end">终端系统工程任务基准 · 两种能力档 LLM · 预印本未经同行评审 · Micropaper</text>
 </svg>

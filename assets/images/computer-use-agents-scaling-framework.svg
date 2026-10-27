@@ -1,133 +1,79 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="Arial, sans-serif">
-  <rect width="800" height="520" fill="#f8f9fa"/>
-
-  <!-- Title -->
-  <text x="400" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#2c3e50">Inference-Time Scaling in Local Computer-Use Agents</text>
-
-  <!-- Four Dimensions (top section) -->
-  <rect x="30" y="50" width="740" height="200" rx="10" fill="#fafafa" stroke="#90a4ae" stroke-width="1.5"/>
-  <text x="400" y="72" text-anchor="middle" font-size="13" font-weight="bold" fill="#455a64">Four Scaling Dimensions</text>
-
-  <!-- Contextual Scaling -->
-  <rect x="50" y="85" width="170" height="145" rx="8" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5"/>
-  <text x="135" y="108" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">Contextual Scaling</text>
-  <line x1="70" y1="115" x2="200" y2="115" stroke="#1976d2" stroke-width="1"/>
-
-  <!-- Pros -->
-  <rect x="65" y="122" width="140" height="30" rx="3" fill="#bbdefb"/>
-  <text x="135" y="141" text-anchor="middle" font-size="10" fill="#1565c0">+ Trajectory stability</text>
-
-  <!-- Cons -->
-  <rect x="65" y="158" width="140" height="30" rx="3" fill="#ffcdd2"/>
-  <text x="135" y="177" text-anchor="middle" font-size="10" fill="#c62828">+ Gains saturate with cost</text>
-
-  <!-- Failure mode -->
-  <rect x="65" y="194" width="140" height="30" rx="3" fill="#fff3e0"/>
-  <text x="135" y="213" text-anchor="middle" font-size="10" fill="#e65100">→ Premature false success</text>
-
-  <!-- Temporal Scaling -->
-  <rect x="240" y="85" width="170" height="145" rx="8" fill="#e8f5e9" stroke="#388e3c" stroke-width="1.5"/>
-  <text x="325" y="108" text-anchor="middle" font-size="12" font-weight="bold" fill="#2e7d32">Temporal Scaling</text>
-  <line x1="260" y1="115" x2="390" y2="115" stroke="#388e3c" stroke-width="1"/>
-
-  <!-- Pros -->
-  <rect x="255" y="122" width="140" height="30" rx="3" fill="#c8e6c9"/>
-  <text x="325" y="141" text-anchor="middle" font-size="10" fill="#2e7d32">- Max-step stalls reduced</text>
-
-  <!-- Cons -->
-  <rect x="255" y="158" width="140" height="30" rx="3" fill="#ffcdd2"/>
-  <text x="325" y="177" text-anchor="middle" font-size="10" fill="#c62828">× No success rate improvement</text>
-
-  <!-- Failure mode -->
-  <rect x="255" y="194" width="140" height="30" rx="3" fill="#fff3e0"/>
-  <text x="325" y="213" text-anchor="middle" font-size="10" fill="#e65100">→ Extended erroneous traces</text>
-
-  <!-- Structural Decomposition -->
-  <rect x="430" y="85" width="170" height="145" rx="8" fill="#fff3e0" stroke="#f57c00" stroke-width="1.5"/>
-  <text x="515" y="108" text-anchor="middle" font-size="12" font-weight="bold" fill="#e65100">Structural Decomposition</text>
-  <line x1="450" y1="115" x2="580" y2="115" stroke="#f57c00" stroke-width="1"/>
-
-  <!-- Pros -->
-  <rect x="445" y="122" width="140" height="30" rx="3" fill="#ffe0b2"/>
-  <text x="515" y="141" text-anchor="middle" font-size="10" fill="#e65100">+ Partial failure mitigation</text>
-
-  <!-- Cons -->
-  <rect x="445" y="158" width="140" height="30" rx="3" fill="#ffcdd2"/>
-  <text x="515" y="177" text-anchor="middle" font-size="10" fill="#c62828">+ Planning/formatting overhead</text>
-
-  <!-- Failure mode -->
-  <rect x="445" y="194" width="140" height="30" rx="3" fill="#fff3e0"/>
-  <text x="515" y="213" text-anchor="middle" font-size="10" fill="#e65100">→ High compute cost</text>
-
-  <!-- Parallel Scaling -->
-  <rect x="620" y="85" width="140" height="145" rx="8" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="1.5"/>
-  <text x="690" y="108" text-anchor="middle" font-size="12" font-weight="bold" fill="#6a1b9a">Parallel Scaling</text>
-  <line x1="640" y1="115" x2="740" y2="115" stroke="#7b1fa2" stroke-width="1"/>
-
-  <!-- Pros -->
-  <rect x="635" y="122" width="110" height="30" rx="3" fill="#e1bee7"/>
-  <text x="690" y="141" text-anchor="middle" font-size="10" fill="#6a1b9a">+ Partial mitigation</text>
-
-  <!-- Cons -->
-  <rect x="635" y="158" width="110" height="30" rx="3" fill="#ffcdd2"/>
-  <text x="690" y="177" text-anchor="middle" font-size="10" fill="#c62828">× Substantial cost</text>
-
-  <!-- Failure mode -->
-  <rect x="635" y="194" width="110" height="30" rx="3" fill="#fff3e0"/>
-  <text x="690" y="213" text-anchor="middle" font-size="10" fill="#e65100">→ Cost-prohibitive</text>
-
-  <!-- Key Finding (center section) -->
-  <rect x="30" y="270" width="740" height="80" rx="8" fill="#fffde7" stroke="#f9a825" stroke-width="2"/>
-  <text x="400" y="295" text-anchor="middle" font-size="13" font-weight="bold" fill="#f57f17">Key Finding: Additional Compute Changes Failure Modes, Not Success Rate</text>
-
-  <!-- Failure Mode Transfer Diagram -->
-  <rect x="80" y="310" width="200" height="30" rx="4" fill="#ef5350"/>
-  <text x="180" y="330" text-anchor="middle" font-size="10" fill="white">Repetitive/Stalled Trajectories</text>
-
-  <!-- Arrow -->
-  <path d="M 280 325 L 340 325" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-  <text x="310" y="320" text-anchor="middle" font-size="9" fill="#666">+ Compute</text>
-
-  <!-- Arrow down -->
-  <path d="M 400 310 L 400 350" stroke="#f57c00" stroke-width="2" marker-end="url(#arrow)"/>
-  <text x="400" y="335" text-anchor="middle" font-size="9" fill="#f57c00">Changes</text>
-
-  <rect x="520" y="310" width="200" height="30" rx="4" fill="#ffa726"/>
-  <text x="620" y="330" text-anchor="middle" font-size="10" fill="white">Premature False Successes</text>
-
-  <!-- Models Evaluated (bottom section) -->
-  <rect x="30" y="375" width="740" height="120" rx="8" fill="#fafafa" stroke="#b0bec5" stroke-width="1.5"/>
-  <text x="400" y="398" text-anchor="middle" font-size="13" font-weight="bold" fill="#455a64">Models Evaluated on OSWorld Benchmark</text>
-
-  <!-- Model 1 -->
-  <rect x="60" y="410" width="170" height="70" rx="6" fill="#e3f2fd" stroke="#1976d2" stroke-width="1"/>
-  <text x="145" y="433" text-anchor="middle" font-size="11" font-weight="bold" fill="#1565c0">Qwen3-VL-8B</text>
-  <text x="145" y="450" text-anchor="middle" font-size="9" fill="#546e7a">Multimodal CUA</text>
-  <text x="145" y="465" text-anchor="middle" font-size="9" fill="#546e7a">+ Qwen3-VL-30B-A3B</text>
-
-  <!-- Model 2 -->
-  <rect x="250" y="410" width="170" height="70" rx="6" fill="#e8f5e9" stroke="#388e3c" stroke-width="1"/>
-  <text x="335" y="433" text-anchor="middle" font-size="11" font-weight="bold" fill="#2e7d32">UI-TARS-1.5-7B</text>
-  <text x="335" y="450" text-anchor="middle" font-size="9" fill="#546e7a">OS Interaction Agent</text>
-  <text x="335" y="465" text-anchor="middle" font-size="9" fill="#546e7a">Specialized CUA</text>
-
-  <!-- Model 3 -->
-  <rect x="440" y="410" width="170" height="70" rx="6" fill="#fff3e0" stroke="#f57c00" stroke-width="1"/>
-  <text x="525" y="433" text-anchor="middle" font-size="11" font-weight="bold" fill="#e65100">OpenCUA-7B</text>
-  <text x="525" y="450" text-anchor="middle" font-size="9" fill="#546e7a">Open-source CUA</text>
-  <text x="525" y="465" text-anchor="middle" font-size="9" fill="#546e7a">General-purpose</text>
-
-  <!-- Recommendation -->
-  <rect x="630" y="410" width="130" height="70" rx="6" fill="#fce4ec" stroke="#c62828" stroke-width="1.5"/>
-  <text x="695" y="433" text-anchor="middle" font-size="10" font-weight="bold" fill="#b71c1c">Recommendation:</text>
-  <text x="695" y="450" text-anchor="middle" font-size="9" fill="#c62828">Selective compute</text>
-  <text x="695" y="463" text-anchor="middle" font-size="9" fill="#c62828">allocation + failure-</text>
-  <text x="695" y="474" text-anchor="middle" font-size="9" fill="#c62828">aware control</text>
-
-  <!-- Arrow marker definition -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
   <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#666"/>
-    </marker>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #97907F; }
+      .rl { font-size: 15px; fill: #4A4757; }
+      .val { font-size: 17px; font-weight: 700; fill: #1A1B1E; }
+      .b { font-size: 12px; fill: #A29B8C; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F5EF"/>
+    </linearGradient>
+    <linearGradient id="gIndigo" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4A5399"/><stop offset="1" stop-color="#7B84C4"/>
+    </linearGradient>
+    <linearGradient id="gVermil" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C0455E"/><stop offset="1" stop-color="#DE7E90"/>
+    </linearGradient>
+    <linearGradient id="gAmber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D08A2C"/><stop offset="1" stop-color="#E6B65C"/>
+    </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F8F86"/><stop offset="1" stop-color="#66B5AC"/>
+    </linearGradient>
   </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1102" cy="112" r="150" fill="#4A5399" opacity="0.06"/>
+  <circle cx="86" cy="616" r="115" fill="#2F8F86" opacity="0.07"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gVermil)"/>
+
+  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2607.28573</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">火大了，菜没熟</text>
+  <text x="64" y="158" font-size="15" fill="#5C5867">本地计算机使用 Agent 的推理时扩展：四个灶眼，OSWorld 四个开源模型的实测</text>
+
+  <!-- kitchen motif: wok over flames -->
+  <g>
+    <path d="M 1000 96 q 58 -34 116 0" fill="none" stroke="#D08A2C" stroke-width="3" opacity="0.5"/>
+    <path d="M 1014 104 q 44 -26 88 0" fill="none" stroke="#D08A2C" stroke-width="3" opacity="0.38"/>
+    <path d="M 996 112 h 124 l -12 40 a 50 24 0 0 1 -100 0 z" fill="url(#gIndigo)"/>
+    <rect x="986" y="105" width="144" height="9" rx="4.5" fill="#3D4478"/>
+    <circle cx="1130" cy="109" r="5" fill="#E6B65C"/>
+    <path d="M 1034 168 q 4 -14 12 -4 q 3 -16 14 -3 q 8 -12 14 2 q 8 -6 8 5 h -48 z" fill="url(#gVermil)" opacity="0.85"/>
+    <path d="M 1046 182 h 34 l -5 14 a 12 6 0 0 1 -24 0 z" fill="#2F8F86" opacity="0.7"/>
+    <text x="1062" y="216" text-anchor="middle" font-size="12" fill="#8A8474">加火 ≠ 炒熟</text>
+  </g>
+
+  <!-- four burner rows: dim | effect | cost -->
+  <g>
+    <rect x="176" y="208" width="924" height="72" fill="#4A5399" opacity="0.08"/>
+    <text class="rl" x="160" y="250" text-anchor="end">上下文扩展</text>
+    <text x="196" y="243" font-size="14" fill="#3D4478" font-weight="700">轨迹更稳，收益随 token 成本饱和</text>
+    <text class="b" x="196" y="266">失败从「重复停滞」转为「过早错误成功」</text>
+    <text x="1082" y="252" text-anchor="end" font-size="16" font-weight="700" fill="#C0455E">token 成本 ↑</text>
+
+    <text class="rl" x="160" y="322" text-anchor="end">时间扩展</text>
+    <text x="196" y="315" font-size="14" fill="#3D4478" font-weight="700">停滞少了，成功率没显著上去</text>
+    <text class="b" x="196" y="338">更长视界是延长错误轨迹，不是纠正它</text>
+    <text x="1082" y="324" text-anchor="end" font-size="16" font-weight="700" fill="#C0455E">收益 ≈ 0</text>
+
+    <rect x="176" y="352" width="924" height="72" fill="#D08A2C" opacity="0.09"/>
+    <text class="rl" x="160" y="394" text-anchor="end">结构分解</text>
+    <text x="196" y="387" font-size="14" fill="#3D4478" font-weight="700">规划 + 格式化开销，部分缓解失败</text>
+    <text class="b" x="196" y="410">两阶段本地 Agent 的解药，但贵</text>
+    <text x="1082" y="396" text-anchor="end" font-size="16" font-weight="700" fill="#D08A2C">代价高昂</text>
+
+    <text class="rl" x="160" y="466" text-anchor="end">并行扩展</text>
+    <text x="196" y="459" font-size="14" fill="#3D4478" font-weight="700">再缓解一层，靠堆算力硬撑</text>
+    <text class="b" x="196" y="482">部署可行性存疑</text>
+    <text x="1082" y="468" text-anchor="end" font-size="16" font-weight="700" fill="#C0455E">成本大增</text>
+  </g>
+
+  <line x1="64" y1="508" x2="1136" y2="508" stroke="#E7E2D2"/>
+  <text class="serif" x="64" y="556" font-size="26" font-weight="700" fill="#1A1B1E">额外计算 <tspan fill="#C0455E">不提高成功率</tspan>，只改变失败模式</text>
+  <text class="b" x="1136" y="556" text-anchor="end">Qwen3-VL-8B / 30B-A3B · UI-TARS-1.5-7B · OpenCUA-7B</text>
+  <text class="serif" x="64" y="592" font-size="16" fill="#2F8F86">Agent 不是做得更多，而是更早地错、更早地停。</text>
+
+  <text x="64" y="640" font-size="12.5" fill="#A29C88">OSWorld 基准 · 本地硬件约束下的四模型自测口径 · 结论针对资源受限模型，不适用前沿云端 CUA · Micropaper</text>
 </svg>

@@ -1,53 +1,111 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 620" font-family="-apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
-  <rect width="860" height="620" fill="#fbfbfd"/>
-  <text x="430" y="38" text-anchor="middle" font-size="21" font-weight="700" fill="#1a1a2e">先仿真再上线：合成客户给客服智能体做发布验收</text>
-  <text x="430" y="62" text-anchor="middle" font-size="13" fill="#666">arXiv:2609.30137 · Nubank 全员署名 · 2026-09-24 提交（预印本，未经评审）</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9C9382; }
+      .rl { font-size: 15px; fill: #454034; }
+      .val { font-size: 20px; font-weight: 700; }
+      .b { font-size: 12px; fill: #A8A08B; }
+      .hd { font-size: 12.5px; letter-spacing: 2px; fill: #837A64; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F9F5EC"/>
+    </linearGradient>
+    <linearGradient id="gLeaf" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F7D4F"/><stop offset="1" stop-color="#7CB87A"/>
+    </linearGradient>
+    <linearGradient id="gTomato" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C0392B"/><stop offset="1" stop-color="#E27A5E"/>
+    </linearGradient>
+    <linearGradient id="gPumpkin" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D97B29"/><stop offset="1" stop-color="#EFAB5F"/>
+    </linearGradient>
+    <linearGradient id="gLake" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3D7A99"/><stop offset="1" stop-color="#7FADC4"/>
+    </linearGradient>
+    <linearGradient id="gPlum" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7D4E8C"/><stop offset="1" stop-color="#AC83B8"/>
+    </linearGradient>
+  </defs>
 
-  <!-- 流程 -->
-  <rect x="40" y="88" width="780" height="110" rx="10" fill="#eef2ff" stroke="#c7d2fe" stroke-width="1.5"/>
-  <text x="60" y="116" font-size="14.5" font-weight="700" fill="#3730a3">仿真工作流（不碰生产后端）</text>
-  <rect x="60" y="132" width="170" height="46" rx="8" fill="#fff" stroke="#c7d2fe"/>
-  <text x="145" y="152" text-anchor="middle" font-size="12" fill="#444">写下这版要验证的假设</text>
-  <text x="145" y="170" text-anchor="middle" font-size="11" fill="#888">假设驱动组织场景</text>
-  <text x="248" y="160" font-size="16" fill="#3730a3">→</text>
-  <rect x="268" y="132" width="170" height="46" rx="8" fill="#fff" stroke="#c7d2fe"/>
-  <text x="353" y="152" text-anchor="middle" font-size="12" fill="#444">合成客户对回复做反应</text>
-  <text x="353" y="170" text-anchor="middle" font-size="11" fill="#888">多步 agentic 流程</text>
-  <text x="456" y="160" font-size="16" fill="#3730a3">→</text>
-  <rect x="476" y="132" width="170" height="46" rx="8" fill="#fff" stroke="#c7d2fe"/>
-  <text x="561" y="152" text-anchor="middle" font-size="12" fill="#444">仿真工具输出（桩）</text>
-  <text x="561" y="170" text-anchor="middle" font-size="11" fill="#888">不 invoke 生产系统</text>
-  <text x="664" y="160" font-size="16" fill="#3730a3">→</text>
-  <rect x="684" y="132" width="116" height="46" rx="8" fill="#dcfce7" stroke="#86efac"/>
-  <text x="742" y="152" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">过筛才上线</text>
-  <text x="742" y="170" text-anchor="middle" font-size="11" fill="#166534">发布门禁</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1106" cy="112" r="140" fill="#2F7D4F" opacity="0.06"/>
+  <circle cx="78" cy="618" r="115" fill="#D97B29" opacity="0.07"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="#B5442E"/>
 
-  <!-- 地基 -->
-  <rect x="40" y="218" width="380" height="120" rx="10" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
-  <text x="60" y="246" font-size="14" font-weight="700" fill="#166534">地基：相关性验证</text>
-  <text x="60" y="274" font-size="12.5" fill="#444">跨 4 个已部署版本，仿真分 vs 生产分</text>
-  <text x="60" y="298" font-size="12.5" fill="#444">同口径二元评估（规则判定，非人工抽查）</text>
-  <text x="60" y="322" font-size="12" fill="#b45309">只有 4 个数据点，粒度粗——这是全文最大软肋</text>
+  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2609.30137 · NUBANK</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">上柜之前，先考一遍</text>
+  <text x="64" y="158" font-size="15.5" fill="#6B6450">合成客户进仿真考场，客服智能体过了关才见真实客户</text>
 
-  <!-- 两次实验 -->
-  <rect x="440" y="218" width="380" height="120" rx="10" fill="#fffbeb" stroke="#fde68a" stroke-width="1.5"/>
-  <text x="460" y="246" font-size="14" font-weight="700" fill="#92400e">两轮线上 A/B 回收价值</text>
-  <text x="460" y="274" font-size="12.5" fill="#444">迭代智能体：tNPS +36.69 分</text>
-  <text x="460" y="298" font-size="12.5" fill="#444">16,000+ 合成会话筛配置：SSR +8.82 pp</text>
-  <text x="460" y="322" font-size="12.5" fill="#444">达 Nubank 最高，tNPS 无显著下降</text>
+  <!-- greenhouse illustration: sun + sprout in pot -->
+  <g>
+    <circle cx="1000" cy="232" r="24" fill="url(#gPumpkin)"/>
+    <g stroke="#D97B29" stroke-width="3" opacity="0.7">
+      <line x1="1000" y1="196" x2="1000" y2="186"/>
+      <line x1="1032" y1="212" x2="1040" y2="205"/>
+      <line x1="968" y1="212" x2="960" y2="205"/>
+      <line x1="1036" y1="238" x2="1046" y2="238"/>
+      <line x1="964" y1="238" x2="954" y2="238"/>
+    </g>
+    <path d="M 1000 300 q -34 -8 -34 -40 q 34 4 34 40" fill="url(#gLeaf)"/>
+    <path d="M 1000 300 q 34 -8 34 -44 q -34 6 -34 44" fill="url(#gLeaf)" opacity="0.75"/>
+    <line x1="1000" y1="300" x2="1000" y2="266" stroke="#2F7D4F" stroke-width="4"/>
+    <path d="M 966 300 h 68 l -9 40 h -50 z" fill="url(#gLake)"/>
+    <text class="hd" x="1000" y="372" text-anchor="middle">温室育苗</text>
+  </g>
 
-  <!-- 边界 -->
-  <rect x="40" y="360" width="780" height="110" rx="10" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
-  <text x="60" y="388" font-size="14" font-weight="700" fill="#991b1b">四条折扣</text>
-  <text x="60" y="414" font-size="12.5" fill="#444">1. 预印本未经同行评审 · 2. 相关性仅 4 个版本点，细粒度感受差异未必照出</text>
-  <text x="60" y="438" font-size="12.5" fill="#444">3. 单一公司自家场景自证，无第三方复现 · 4. Snowglobe 仿真器未承诺开源，可迁移的是方法骨架</text>
+  <!-- trust gate: slope -->
+  <g>
+    <text class="hd" x="64" y="216">地基 · 版本级二元评估分（仿真 vs 生产）</text>
+    <line x1="200" y1="330" x2="560" y2="262" stroke="url(#gLeaf)" stroke-width="4"/>
+    <circle cx="200" cy="330" r="9" fill="none" stroke="#8A8271" stroke-width="3"/>
+    <circle cx="560" cy="262" r="11" fill="url(#gLeaf)"/>
+    <text class="serif" x="182" y="338" text-anchor="end" font-size="24" font-weight="700" fill="#454034">仿真分</text>
+    <text class="serif" x="584" y="270" font-size="24" font-weight="700" fill="#2F7D4F">生产分</text>
+    <text class="val" x="560" y="238" text-anchor="middle" fill="#2F7D4F">高度相关</text>
+    <text class="b" x="200" y="366">跨 4 个已部署版本验证 · 过了这关，仿真才当发布门禁</text>
+  </g>
 
-  <!-- 启示 -->
-  <rect x="40" y="492" width="780" height="86" rx="10" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
-  <text x="60" y="520" font-size="14" font-weight="700" fill="#166534">可迁移的闭环（客服 / 工单 / 对话式入口团队）</text>
-  <text x="60" y="546" font-size="12.5" fill="#444">历史会话日志 → 合成客户剧本库 → 小流量验证「仿真分与生产分相关」→ 相关了才当发布门禁用</text>
-  <text x="60" y="568" font-size="12" fill="#666">工具输出可桩掉、客户反应可由模型扮演——不需要重建生产后端</text>
+  <!-- right: two harvests -->
+  <g>
+    <rect x="716" y="240" width="420" height="76" fill="#C0392B" opacity="0.08"/>
+    <text class="rl" x="736" y="268">仿真引导改智能体，上线 A/B</text>
+    <text class="b" x="1116" y="268" text-anchor="end">交易后净推荐值</text>
+    <text class="serif" x="736" y="304" font-size="27" font-weight="700" fill="#C0392B">tNPS +36.69 分</text>
 
-  <rect x="40" y="590" width="780" height="24" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="430" y="606" text-anchor="middle" font-size="11.5" fill="#64748b">与 RAFT（#185）互为前后工序：那篇管知识库入口检索，本篇管上线前仿真验收</text>
+    <rect x="716" y="330" width="420" height="76" fill="#3D7A99" opacity="0.09"/>
+    <text class="rl" x="736" y="358">仿真筛模型配置，上线 A/B</text>
+    <text class="b" x="1116" y="358" text-anchor="end">史上最高</text>
+    <text class="serif" x="736" y="394" font-size="27" font-weight="700" fill="#3D7A99">自助率 +8.82 个百分点</text>
+  </g>
+
+  <!-- bottom band -->
+  <g>
+    <rect x="64" y="440" width="500" height="72" fill="#D97B29" opacity="0.09"/>
+    <text class="serif" x="84" y="472" font-size="24" font-weight="700" fill="#A3591B">16,000+ 场</text>
+    <text class="rl" x="84" y="498">合成会话筛开源模型配置 · 上线前跑完</text>
+
+    <rect x="64" y="524" width="500" height="72" fill="#7D4E8C" opacity="0.09"/>
+    <text class="serif" x="84" y="556" font-size="24" font-weight="700" fill="#7D4E8C">140M 规模</text>
+    <text class="rl" x="280" y="556">巴西最大家用客服智能体</text>
+    <text class="b" x="84" y="582">tNPS 无统计显著变化 · 自助率上去，满意度没被牺牲</text>
+  </g>
+
+  <!-- method skeleton chips -->
+  <g>
+    <text class="hd" x="716" y="452">可迁移的方法骨架</text>
+    <rect x="716" y="468" width="122" height="30" rx="15" fill="#2F7D4F" opacity="0.16"/>
+    <text x="777" y="488" text-anchor="middle" font-size="12.5" fill="#2F7D4F">假设驱动</text>
+    <rect x="848" y="468" width="150" height="30" rx="15" fill="#3D7A99" opacity="0.16"/>
+    <text x="923" y="488" text-anchor="middle" font-size="12.5" fill="#3D7A99">相关性先行验证</text>
+    <rect x="1008" y="468" width="128" height="30" rx="15" fill="#C0392B" opacity="0.15"/>
+    <text x="1072" y="488" text-anchor="middle" font-size="12.5" fill="#B0332A">上线前门禁</text>
+    <text class="b" x="716" y="530">Snowglobe 仿真器未承诺开源</text>
+    <text class="b" x="716" y="552">能借鉴的是闭环结构：历史日志改造成剧本库</text>
+    <text class="b" x="716" y="574">先小流量验证相关性，相关了才当门禁</text>
+  </g>
+
+  <line x1="64" y1="618" x2="1136" y2="618" stroke="#E5E1D4"/>
+  <text class="serif" x="64" y="648" font-size="15.5" fill="#454034">有客服、工单、对话式入口的团队，这一步门槛不高。</text>
+  <text class="b" x="1136" y="648" text-anchor="end">预印本未经同行评审 · 相关性仅四个数据点 · 自证无第三方 · Micropaper</text>
 </svg>

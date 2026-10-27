@@ -1,86 +1,115 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1f3a;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#0d1528;stop-opacity:1"/>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8F8570; }
+      .rl { font-size: 15px; fill: #4E4636; }
+      .b { font-size: 12px; fill: #A29880; }
+      .stat { font-size: 26px; font-weight: 700; fill: #232B2E; }
+      .val { font-size: 20px; font-weight: 700; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDFBF6"/><stop offset="1" stop-color="#F1EEE2"/>
     </linearGradient>
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#4a9eff;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#7c5cff;stop-opacity:1"/>
+    <linearGradient id="gRed" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A63A22"/><stop offset="1" stop-color="#D96A3C"/>
+    </linearGradient>
+    <linearGradient id="gSea" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2E7D8C"/><stop offset="1" stop-color="#6FBAC4"/>
+    </linearGradient>
+    <linearGradient id="gCoral" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C05B7E"/><stop offset="1" stop-color="#E893A8"/>
+    </linearGradient>
+    <linearGradient id="gSun" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D9A01F"/><stop offset="1" stop-color="#F0C75E"/>
+    </linearGradient>
+    <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F7D61"/><stop offset="1" stop-color="#6FB58F"/>
+    </linearGradient>
+    <linearGradient id="gNet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3E7A5E"/><stop offset="1" stop-color="#7BAE8C"/>
     </linearGradient>
   </defs>
 
-  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1120" cy="90" r="130" fill="#2E7D8C" opacity="0.05"/>
+  <circle cx="70" cy="620" r="120" fill="#D9A01F" opacity="0.06"/>
+  <rect x="64" y="44" width="44" height="5" rx="2.5" fill="url(#gRed)"/>
 
-  <g opacity="0.05" stroke="#fff" stroke-width="0.5">
-    <line x1="0" y1="105" x2="1200" y2="105"/>
-    <line x1="0" y1="210" x2="1200" y2="210"/>
-    <line x1="0" y1="315" x2="1200" y2="315"/>
-    <line x1="0" y1="420" x2="1200" y2="420"/>
-    <line x1="0" y1="525" x2="1200" y2="525"/>
-    <line x1="300" y1="0" x2="300" y2="630"/>
-    <line x1="600" y1="0" x2="600" y2="630"/>
-    <line x1="900" y1="0" x2="900" y2="630"/>
-  </g>
+  <text class="k" x="64" y="84">AI 智创简报 · 2026-08-22 · 4 件美国申请公开</text>
+  <text class="serif" x="64" y="130" font-size="40" font-weight="700" fill="#232B2E">边出鱼，边过网</text>
+  <text x="64" y="160" font-size="15" fill="#6E6653">生成式 AI 输出的流式审核：边生成边按块审，通过才发给用户</text>
 
-  <!-- badge -->
-  <rect x="70" y="52" width="182" height="34" rx="17" fill="url(#accentGrad)" opacity="0.18"/>
-  <text x="161" y="75" font-family="Helvetica,Arial,sans-serif" font-size="18" fill="#8ab4ff" text-anchor="middle">AI 智创简报</text>
-
-  <!-- title -->
-  <text x="70" y="142" font-family="Helvetica,Arial,sans-serif" font-size="44" font-weight="bold" fill="#ffffff">流式审核专利扎堆，给聊天产品装实时安检</text>
-  <text x="70" y="188" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#9fb3d9">US20260148010A1 Amazon · US20260178727A1 Intuit · 近 90 天公开 ｜ 安全审查前移进生成管线</text>
-
-  <!-- panel 1: patent signal -->
+  <!-- fishing boat + net motif -->
   <g>
-    <rect x="70" y="230" width="330" height="280" rx="14" fill="#ffffff" opacity="0.05"/>
-    <rect x="70" y="230" width="330" height="6" rx="3" fill="url(#accentGrad)"/>
-    <text x="94" y="278" font-family="Helvetica,Arial,sans-serif" font-size="20" font-weight="bold" fill="#ffffff">专利信号</text>
-    <text x="94" y="316" font-family="Menlo,Consolas,monospace" font-size="16" fill="#8ab4ff">US20260148010A1</text>
-    <text x="94" y="342" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#c7d4ee">Amazon Technologies · 2026-05-28</text>
-    <text x="94" y="366" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#9fb3d9">输出切块，逐块过审核模型</text>
-    <line x1="94" y1="388" x2="376" y2="388" stroke="#ffffff" opacity="0.15"/>
-    <text x="94" y="420" font-family="Menlo,Consolas,monospace" font-size="16" fill="#8ab4ff">US20260178727A1</text>
-    <text x="94" y="446" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#c7d4ee">Intuit Inc. · 2026-06-25</text>
-    <text x="94" y="470" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#9fb3d9">自适应窗口，风险片段递归细分</text>
+    <g stroke="#B8763E" stroke-width="3" stroke-linecap="round">
+      <line x1="1014" y1="196" x2="1014" y2="300"/>
+      <line x1="1014" y1="196" x2="1092" y2="238"/>
+    </g>
+    <path d="M 1092 238 l 0 20" stroke="#B8763E" stroke-width="2"/>
+    <path d="M 964 300 q 8 26 60 26 q 52 0 60 -26 z" fill="#8A5A38"/>
+    <path d="M 964 300 h 120" stroke="#5E3E26" stroke-width="3"/>
+    <path d="M 1092 258 q 30 10 30 56 q 0 46 -30 56" fill="none" stroke="#3E7A5E" stroke-width="2.5"/>
+    <g stroke="url(#gNet)" stroke-width="1.8" opacity="0.85">
+      <path d="M 1092 268 q 22 8 26 46"/><path d="M 1092 286 q 14 6 18 40"/>
+      <path d="M 1096 258 q 26 24 26 60"/><path d="M 1104 258 q 18 30 14 66"/>
+    </g>
+    <path d="M 940 360 q 20 -10 40 0 t 40 0 t 40 0 t 40 0" fill="none" stroke="url(#gSea)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 952 380 q 20 -10 40 0 t 40 0 t 40 0 t 40 0" fill="none" stroke="#9FD2D8" stroke-width="3.5" stroke-linecap="round" opacity="0.8"/>
+    <circle cx="1168" cy="216" r="20" fill="url(#gSun)"/>
+    <text class="b" x="1058" y="414">渔港分拣：出水一块，过网一块</text>
   </g>
 
-  <!-- arrow 1 -->
-  <path d="M 408 370 L 428 370 M 421 363 L 428 370 L 421 377" stroke="#4a9eff" stroke-width="3" fill="none" stroke-linecap="round"/>
-
-  <!-- panel 2: trend -->
+  <!-- patent rows -->
   <g>
-    <rect x="435" y="230" width="330" height="280" rx="14" fill="#ffffff" opacity="0.05"/>
-    <rect x="435" y="230" width="330" height="6" rx="3" fill="url(#accentGrad)"/>
-    <text x="459" y="278" font-family="Helvetica,Arial,sans-serif" font-size="20" font-weight="bold" fill="#ffffff">技术趋势</text>
-    <text x="459" y="316" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#c7d4ee">审查从「生成完再查全文」</text>
-    <text x="459" y="340" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#c7d4ee">前移进生成管线，逐块决定</text>
-    <line x1="459" y1="362" x2="741" y2="362" stroke="#ffffff" opacity="0.15"/>
-    <text x="459" y="394" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#9fb3d9">两段式收敛：</text>
-    <text x="459" y="420" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#8ab4ff">小模型初筛大部分流量</text>
-    <text x="459" y="444" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#8ab4ff">可疑块才升级大模型复核</text>
-    <text x="459" y="478" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#9fb3d9">差异点：延迟与成本</text>
+    <rect x="64" y="192" width="856" height="42" rx="9" fill="#2E7D8C" opacity="0.08"/>
+    <rect x="64" y="242" width="856" height="42" rx="9" fill="#C05B7E" opacity="0.08"/>
+    <rect x="64" y="292" width="856" height="42" rx="9" fill="#D9A01F" opacity="0.07"/>
+    <rect x="64" y="342" width="856" height="42" rx="9" fill="#2F7D61" opacity="0.07"/>
+
+    <text class="val" x="88" y="219" fill="#1F6470">Amazon</text>
+    <text class="rl" x="240" y="219">US20260148010A1 · 05-28</text>
+    <text class="rl" x="560" y="219">输出切块逐块判定，通过才发送</text>
+
+    <text class="val" x="88" y="269" fill="#9E3A5C">Intuit</text>
+    <text class="rl" x="240" y="269">US20260178727A1 · 06-25</text>
+    <text class="rl" x="560" y="269">自适应窗口，命中风险递归细分</text>
+
+    <text class="val" x="88" y="319" fill="#A97E14">NVIDIA</text>
+    <text class="rl" x="240" y="319">US20260099707A1 · 04-09</text>
+    <text class="rl" x="560" y="319">模型集成自动生成安全类别</text>
+
+    <text class="val" x="88" y="369" fill="#256A4E">Microsoft</text>
+    <text class="rl" x="240" y="369">US20260057218A1 · 02-26</text>
+    <text class="rl" x="560" y="369">嵌入检索降低审核成本</text>
   </g>
 
-  <!-- arrow 2 -->
-  <path d="M 773 370 L 793 370 M 786 363 L 793 370 L 786 377" stroke="#4a9eff" stroke-width="3" fill="none" stroke-linecap="round"/>
-
-  <!-- panel 3: opportunity -->
+  <!-- two-stage net -->
   <g>
-    <rect x="800" y="230" width="330" height="280" rx="14" fill="#ffffff" opacity="0.05"/>
-    <rect x="800" y="230" width="330" height="6" rx="3" fill="url(#accentGrad)"/>
-    <text x="824" y="278" font-family="Helvetica,Arial,sans-serif" font-size="20" font-weight="bold" fill="#ffffff">一个人能做的机会</text>
-    <text x="824" y="316" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#c7d4ee">OpenAI 兼容流式安全代理</text>
-    <line x1="824" y1="338" x2="1106" y2="338" stroke="#ffffff" opacity="0.15"/>
-    <text x="824" y="370" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#9fb3d9">SSE 层缓冲 128-512 token</text>
-    <text x="824" y="396" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#9fb3d9">开源毒性分类器初筛</text>
-    <text x="824" y="422" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#9fb3d9">命中阈值才升级大模型</text>
-    <line x1="824" y1="444" x2="1106" y2="444" stroke="#ffffff" opacity="0.15"/>
-    <text x="824" y="476" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#8ab4ff">VPS 月成本千元内 · 4 周 MVP</text>
-    <text x="824" y="500" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#8ab4ff">20-50 美元/月订阅</text>
+    <text class="stat" x="64" y="428">两段式安检网<tspan font-size="14" fill="#5F7683">　批量审核慢、逐句大模型审贵</tspan></text>
+    <g>
+      <rect x="64" y="448" width="270" height="80" rx="12" fill="#2E7D8C" opacity="0.08"/>
+      <text class="val" x="88" y="482" fill="#1F6470">输出流切块</text>
+      <text class="b" x="88" y="508">SSE 缓冲 128–512 token</text>
+
+      <path d="M 340 488 h 32 m -10 -8 l 12 8 l -12 8" stroke="#B8763E" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+      <rect x="380" y="448" width="270" height="80" rx="12" fill="#3E7A5E" opacity="0.09"/>
+      <text class="val" x="404" y="482" fill="#2E6247">小分类器初筛</text>
+      <text class="b" x="404" y="508">开源毒性模型扛大部分流量</text>
+
+      <path d="M 656 488 h 32 m -10 -8 l 12 8 l -12 8" stroke="#B8763E" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+      <rect x="696" y="448" width="270" height="80" rx="12" fill="#C05B7E" opacity="0.08"/>
+      <text class="val" x="720" y="482" fill="#9E3A5C">可疑块升级复核</text>
+      <text class="b" x="720" y="508">命中阈值才调大模型</text>
+    </g>
+    <text class="b" x="986" y="482">个人方案：OpenAI 兼容</text>
+    <text class="b" x="986" y="500">流式代理，20–50 美元/月</text>
+    <text class="b" x="986" y="518">月成本千元内，4 周 MVP</text>
   </g>
 
-  <!-- bottom takeaway -->
-  <rect x="70" y="540" width="1060" height="52" rx="12" fill="url(#accentGrad)" opacity="0.14"/>
-  <text x="600" y="573" font-family="Helvetica,Arial,sans-serif" font-size="19" fill="#dbe6ff" text-anchor="middle">大厂在专利里圈的是「怎么审」，独立开发者能接的是「装安检口」的活</text>
+  <line x1="64" y1="560" x2="1136" y2="560" stroke="#E5E1D4"/>
+  <text class="serif" x="64" y="594" font-size="18" fill="#232B2E">大厂在专利里圈的是「怎么审」，独立开发者能接的是「装安检口」的活。</text>
+  <text class="b" x="64" y="624">均为申请公开、不等于已授权 · 2026 上半年同主题 4 件，Amazon 与 Intuit 落在近 90 天 · 门槛风险：OpenAI Moderation 与 Azure Content Safety 正在下沉 · Micropaper</text>
 </svg>

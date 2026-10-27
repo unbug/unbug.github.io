@@ -1,77 +1,122 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" font-family="Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif">
-  <rect width="960" height="640" fill="#ffffff"/>
-  <text x="480" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a2e">SWE-Gate：功能测试通过 ≠ 补丁能被合入</text>
-
-  <!-- flow: patch -> functional test -> constraint test -->
-  <rect x="40" y="70" width="180" height="70" rx="8" fill="#eef4ff" stroke="#3b6ea5" stroke-width="2"/>
-  <text x="130" y="100" text-anchor="middle" font-size="15" fill="#1a1a2e">Agent 产出补丁</text>
-  <text x="130" y="124" text-anchor="middle" font-size="13" fill="#555">303 实例 × 75 Python 仓库</text>
-
-  <line x1="220" y1="105" x2="280" y2="105" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
   <defs>
-    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
-      <path d="M0,0 L8,3 L0,6 Z" fill="#666"/>
-    </marker>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #98937C; }
+      .rl { font-size: 15px; fill: #464A50; }
+      .val { font-size: 20px; font-weight: 700; fill: #1E2430; }
+      .b { font-size: 12px; fill: #A5A08B; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F8F6F0"/>
+    </linearGradient>
+    <linearGradient id="gCrack" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D9622B"/><stop offset="1" stop-color="#E8935E"/>
+    </linearGradient>
+    <linearGradient id="gPass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3D6B8E"/><stop offset="1" stop-color="#7FA3BE"/>
+    </linearGradient>
+    <linearGradient id="gLift" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4F9D69"/><stop offset="1" stop-color="#8FC49E"/>
+    </linearGradient>
+    <linearGradient id="gCrane" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E8B21E"/><stop offset="1" stop-color="#F2CC5E"/>
+    </linearGradient>
   </defs>
 
-  <rect x="285" y="70" width="200" height="70" rx="8" fill="#e8f7ee" stroke="#2e9e5b" stroke-width="2"/>
-  <text x="385" y="100" text-anchor="middle" font-size="15" fill="#1a1a2e">第一轨：功能测试</text>
-  <text x="385" y="124" text-anchor="middle" font-size="13" fill="#2e9e5b">通过 644 个</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1105" cy="110" r="130" fill="#3D6B8E" opacity="0.06"/>
+  <circle cx="70" cy="620" r="115" fill="#D9622B" opacity="0.06"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gCrane)"/>
 
-  <line x1="485" y1="105" x2="545" y2="105" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <text class="k" x="64" y="84">一分钟读论文 NO.172 · ARXIV:2609.04167 · SYSU/ZJU/CQU</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1E2430">绿了测试，红了验收单</text>
+  <text x="64" y="158" font-size="15" fill="#6B6858">644 个通过功能测试的补丁 · 221 个栽在约束轨</text>
 
-  <rect x="550" y="70" width="220" height="70" rx="8" fill="#fdeeee" stroke="#c0392b" stroke-width="2"/>
-  <text x="660" y="100" text-anchor="middle" font-size="15" fill="#1a1a2e">第二轨：约束测试</text>
-  <text x="660" y="124" text-anchor="middle" font-size="13" fill="#c0392b">来自真实 PR review 评论</text>
-
-  <!-- split result -->
-  <line x1="770" y1="90" x2="830" y2="60" stroke="#2e9e5b" stroke-width="2" marker-end="url(#arrowG)"/>
-  <line x1="770" y1="120" x2="830" y2="150" stroke="#c0392b" stroke-width="2" marker-end="url(#arrowR)"/>
-  <defs>
-    <marker id="arrowG" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#2e9e5b"/></marker>
-    <marker id="arrowR" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#c0392b"/></marker>
-  </defs>
-  <rect x="835" y="40" width="95" height="40" rx="6" fill="#e8f7ee" stroke="#2e9e5b" stroke-width="1.5"/>
-  <text x="882" y="65" text-anchor="middle" font-size="14" fill="#2e9e5b">双轨通过 423</text>
-  <rect x="835" y="130" width="95" height="40" rx="6" fill="#fdeeee" stroke="#c0392b" stroke-width="1.5"/>
-  <text x="882" y="148" text-anchor="middle" font-size="14" fill="#c0392b">隐藏失败 221</text>
-  <text x="882" y="164" text-anchor="middle" font-size="13" fill="#c0392b">HFR 34.3%</text>
-
-  <!-- per-model bars -->
-  <text x="40" y="215" font-size="17" font-weight="bold" fill="#1a1a2e">分模型隐藏失败率（同一 Mini-SWE-Agent 框架）</text>
-  <g font-size="14">
-    <text x="40" y="252" fill="#333">GPT-5.5</text>
-    <rect x="220" y="236" width="295" height="24" fill="#e8a04a"/>
-    <text x="525" y="253" fill="#333">29.5%</text>
-
-    <text x="40" y="292" fill="#333">GPT-5.4-mini</text>
-    <rect x="220" y="276" width="358" height="24" fill="#d9634e"/>
-    <text x="588" y="293" fill="#333">35.8%</text>
-
-    <text x="40" y="332" fill="#333">DeepSeek-V4-Flash</text>
-    <rect x="220" y="316" width="356" height="24" fill="#d9634e"/>
-    <text x="586" y="333" fill="#333">35.6%</text>
-
-    <text x="40" y="372" fill="#333">GPT-4o-mini</text>
-    <rect x="220" y="356" width="536" height="24" fill="#c0392b"/>
-    <text x="700" y="373" fill="#333" font-weight="bold">53.6%</text>
+  <!-- construction site icon: crane + hardhat -->
+  <g>
+    <rect x="1030" y="72" width="8" height="92" fill="url(#gCrane)"/>
+    <rect x="984" y="72" width="110" height="8" fill="url(#gCrane)"/>
+    <path d="M 1038 80 l 42 -8 l -42 22 z" fill="#E8B21E" opacity="0.6"/>
+    <line x1="1002" y1="80" x2="1002" y2="112" stroke="#7D848C" stroke-width="2.5"/>
+    <rect x="992" y="112" width="20" height="14" rx="2" fill="#D9622B"/>
+    <path d="M 1066 140 a 26 26 0 0 1 52 0 z" fill="#E8B21E"/>
+    <rect x="1060" y="140" width="64" height="8" rx="4" fill="#D9622B"/>
+    <rect x="1082" y="116" width="20" height="10" rx="4" fill="#F2CC5E"/>
   </g>
-  <text x="40" y="410" font-size="13" fill="#777">条形长度正比于隐藏失败率；最难类别：Scope Generalization、资源清理、编码转义、schema 类型</text>
 
-  <!-- two-sided intervention -->
-  <rect x="40" y="435" width="880" height="86" rx="8" fill="#fff8e6" stroke="#d4a017" stroke-width="2"/>
-  <text x="60" y="463" font-size="15" font-weight="bold" fill="#1a1a2e">把约束摊开写进提示词，是双面的</text>
-  <text x="60" y="489" font-size="14" fill="#333">联合成功率：GPT-5.5 从 54.6 → 70.5（+15.9）；但四个模型中三个的功能成功率反而下降，GPT-5.5 自身也略有回落。</text>
-  <text x="60" y="511" font-size="13" fill="#777">合规性与修复能力此消彼长，约束披露不是免费午餐。</text>
+  <!-- hidden failure slope: left slate=passed functional, right orange=hidden failure -->
+  <g>
+    <rect x="140" y="204" width="560" height="62" fill="#7D848C" opacity="0.07"/>
+    <rect x="140" y="278" width="560" height="62" fill="#7D848C" opacity="0.07"/>
+    <rect x="140" y="352" width="560" height="62" fill="#7D848C" opacity="0.07"/>
+    <rect x="140" y="426" width="560" height="62" fill="#7D848C" opacity="0.07"/>
 
-  <!-- boundary + takeaway -->
-  <rect x="40" y="540" width="420" height="76" rx="8" fill="#f4f4f4" stroke="#999" stroke-width="1.5"/>
-  <text x="60" y="566" font-size="14" font-weight="bold" fill="#555">边界</text>
-  <text x="60" y="590" font-size="13" fill="#555">结论限定于 75 个 Python 仓库；其他语言是否</text>
-  <text x="60" y="608" font-size="13" fill="#555">同样存在隐藏失败，论文未验证。</text>
+    <text class="rl" x="128" y="240" text-anchor="end">GPT-4o-mini</text>
+    <line x1="190" y1="235" x2="630.8" y2="235" stroke="url(#gCrack)" stroke-width="3.5"/>
+    <circle cx="190" cy="235" r="7" fill="#FFFFFF" stroke="#3D6B8E" stroke-width="3"/>
+    <circle cx="630.8" cy="235" r="9" fill="url(#gCrack)"/>
+    <text class="val" x="648" y="242" fill="#C24E1B">53.6%</text>
 
-  <rect x="500" y="540" width="420" height="76" rx="8" fill="#eef9f1" stroke="#2e9e5b" stroke-width="2"/>
-  <text x="520" y="566" font-size="14" font-weight="bold" fill="#1a1a2e">启示</text>
-  <text x="520" y="590" font-size="13" fill="#333">评测从「任务完成度」扩展到「产物可合入性」；</text>
-  <text x="520" y="608" font-size="13" fill="#333">接入真实代码库前，隐藏失败率值得先测一遍。</text>
+    <text class="rl" x="128" y="314" text-anchor="end">GPT-5.4-mini</text>
+    <line x1="190" y1="309" x2="498.9" y2="309" stroke="url(#gCrack)" stroke-width="3"/>
+    <circle cx="190" cy="309" r="7" fill="#FFFFFF" stroke="#3D6B8E" stroke-width="3"/>
+    <circle cx="498.9" cy="309" r="9" fill="url(#gCrack)"/>
+    <text class="val" x="516" y="316" fill="#C24E1B">35.8%</text>
+
+    <text class="rl" x="128" y="388" text-anchor="end">DeepSeek-V4-Flash</text>
+    <line x1="190" y1="383" x2="495.6" y2="383" stroke="url(#gCrack)" stroke-width="3"/>
+    <circle cx="190" cy="383" r="7" fill="#FFFFFF" stroke="#3D6B8E" stroke-width="3"/>
+    <circle cx="495.6" cy="383" r="9" fill="url(#gCrack)"/>
+    <text class="val" x="513" y="390" fill="#C24E1B">35.6%</text>
+
+    <text class="rl" x="128" y="462" text-anchor="end">GPT-5.5</text>
+    <line x1="190" y1="457" x2="418.9" y2="457" stroke="url(#gCrack)" stroke-width="3"/>
+    <circle cx="190" cy="457" r="7" fill="#FFFFFF" stroke="#3D6B8E" stroke-width="3"/>
+    <circle cx="418.9" cy="457" r="9" fill="url(#gCrack)"/>
+    <text class="val" x="436" y="464" fill="#C24E1B">29.5%</text>
+
+    <text class="b" x="190" y="516" text-anchor="middle">功能测试轨</text>
+    <text class="b" x="630" y="516" text-anchor="middle" fill="#C24E1B">约束测试轨 · 隐藏失败率</text>
+  </g>
+
+  <!-- right: big anchor + dual gate + constraint chips + disclosure slope -->
+  <g>
+    <text class="serif" x="1136" y="252" text-anchor="end" font-size="64" font-weight="700" fill="#C24E1B">34.3%</text>
+    <text x="730" y="252" font-size="15" fill="#464A50">整体隐藏失败率</text>
+    <text class="b" x="730" y="276">221 / 644 · 同一 Mini-SWE-Agent 框架</text>
+
+    <g>
+      <rect x="730" y="298" width="88" height="30" rx="4" fill="#4F9D69" opacity="0.16"/>
+      <text x="774" y="318" text-anchor="middle" font-size="13" font-weight="700" fill="#3D7A50">功能轨 ✓</text>
+      <text x="828" y="318" fill="#7D848C" font-size="16">→</text>
+      <rect x="848" y="298" width="88" height="30" rx="4" fill="#D9622B" opacity="0.16"/>
+      <text x="892" y="318" text-anchor="middle" font-size="13" font-weight="700" fill="#C24E1B">约束轨 ✗</text>
+      <text x="946" y="318" fill="#7D848C" font-size="16">=</text>
+      <text x="966" y="318" font-size="13" fill="#464A50">隐藏失败</text>
+    </g>
+
+    <g>
+      <rect x="730" y="348" width="118" height="26" rx="13" fill="#E8B21E" opacity="0.28"/>
+      <text x="789" y="366" text-anchor="middle" font-size="12.5" fill="#7A5E10">改动范围泛化</text>
+      <rect x="858" y="348" width="92" height="26" rx="13" fill="#3D6B8E" opacity="0.22"/>
+      <text x="904" y="366" text-anchor="middle" font-size="12.5" fill="#2E536E">生命周期清理</text>
+      <rect x="960" y="348" width="76" height="26" rx="13" fill="#D9622B" opacity="0.22"/>
+      <text x="998" y="366" text-anchor="middle" font-size="12.5" fill="#A5481E">编码转义</text>
+      <rect x="1046" y="348" width="90" height="26" rx="13" fill="#7D848C" opacity="0.25"/>
+      <text x="1091" y="366" text-anchor="middle" font-size="12.5" fill="#565C63">schema 类型</text>
+    </g>
+
+    <line x1="730" y1="446" x2="985" y2="415.9" stroke="url(#gLift)" stroke-width="3.5"/>
+    <circle cx="730" cy="446" r="7" fill="#FFFFFF" stroke="#4F9D69" stroke-width="3"/>
+    <circle cx="985" cy="415.9" r="8" fill="url(#gLift)"/>
+    <text class="val" x="712" y="452" text-anchor="end" fill="#565C63">54.6</text>
+    <text class="val" x="1002" y="421" fill="#3D7A50">70.5</text>
+    <text class="b" x="730" y="480">GPT-5.5 显式披露约束后 · 联合成功率（个百分点）</text>
+    <text class="b" x="730" y="502" fill="#C24E1B">代价：四个模型里三个功能成功率反降</text>
+  </g>
+
+  <line x1="64" y1="556" x2="1136" y2="556" stroke="#E8E3D2"/>
+  <text x="64" y="590" font-size="15.5" fill="#464A50">约束来自真实 PR review：功能测试永不报错，review 一定挑刺。</text>
+  <text class="b" x="64" y="620">303 实例 × 75 个 Python 仓库 · 外推其他语言未验证 · Micropaper</text>
 </svg>

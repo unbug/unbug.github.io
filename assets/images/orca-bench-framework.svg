@@ -1,103 +1,80 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" font-family="Arial, sans-serif">
-  <rect width="800" height="540" fill="#f8f9fa"/>
-
-  <!-- Title -->
-  <text x="400" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#2c3e50">ORCA-bench: Production-Fidelity On-Call RCA Benchmark</text>
-
-  <!-- Testbed (left section) -->
-  <rect x="30" y="55" width="340" height="280" rx="10" fill="#fafafa" stroke="#90a4ae" stroke-width="1.5"/>
-  <text x="200" y="78" text-anchor="middle" font-size="13" font-weight="bold" fill="#455a64">Production-Fidelity Testbed</text>
-
-  <!-- Microservice System -->
-  <rect x="50" y="90" width="300" height="80" rx="6" fill="#e3f2fd" stroke="#1976d2" stroke-width="1.5"/>
-  <text x="200" y="113" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">OpenTelemetry-Instrumented</text>
-  <text x="200" y="130" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">Microservice System</text>
-
-  <!-- Telemetry Interfaces -->
-  <rect x="50" y="180" width="140" height="40" rx="4" fill="#bbdefb"/>
-  <text x="120" y="204" text-anchor="middle" font-size="10" fill="#1565c0">Prometheus</text>
-
-  <rect x="200" y="180" width="140" height="40" rx="4" fill="#bbdefb"/>
-  <text x="270" y="204" text-anchor="middle" font-size="10" fill="#1565c0">Jaeger</text>
-
-  <!-- Grafana/OpenSearch -->
-  <rect x="50" y="230" width="140" height="40" rx="4" fill="#bbdefb"/>
-  <text x="120" y="254" text-anchor="middle" font-size="10" fill="#1565c0">OpenSearch via Grafana</text>
-
-  <!-- Source Code -->
-  <rect x="200" y="230" width="140" height="40" rx="4" fill="#bbdefb"/>
-  <text x="270" y="254" text-anchor="middle" font-size="10" fill="#1565c0">Full Source Code</text>
-
-  <!-- Data Stats -->
-  <rect x="50" y="285" width="290" height="40" rx="4" fill="#e8f5e9"/>
-  <text x="200" y="302" text-anchor="middle" font-size="10" fill="#2e7d32">6 days of metrics, logs, traces</text>
-  <text x="200" y="318" text-anchor="middle" font-size="10" fill="#2e7d32">50 GB testbed data</text>
-
-  <!-- Arrow from testbed to tasks -->
-  <path d="M 370 195 L 410 195" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-
-  <!-- RCA Tasks (right section) -->
-  <rect x="410" y="55" width="360" height="280" rx="10" fill="#fafafa" stroke="#90a4ae" stroke-width="1.5"/>
-  <text x="590" y="78" text-anchor="middle" font-size="13" font-weight="bold" fill="#455a64">RCA Task Pipeline</text>
-
-  <!-- Input: Ambiguous Report -->
-  <rect x="430" y="90" width="320" height="48" rx="6" fill="#fff3e0" stroke="#f57c00" stroke-width="1.5"/>
-  <text x="590" y="110" text-anchor="middle" font-size="11" font-weight="bold" fill="#e65100">Input: Ambiguous User-Facing Report</text>
-  <text x="590" y="127" text-anchor="middle" font-size="10" fill="#546e7a">(varies in specificity and time-to-detection)</text>
-
-  <!-- Arrow down -->
-  <path d="M 590 138 L 590 153" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-
-  <!-- Agent Analysis Phase -->
-  <rect x="430" y="153" width="320" height="70" rx="6" fill="#e8f5e9" stroke="#388e3c" stroke-width="1.5"/>
-  <text x="590" y="175" text-anchor="middle" font-size="11" font-weight="bold" fill="#2e7d32">Agent Analysis Phase</text>
-  <text x="590" y="192" text-anchor="middle" font-size="10" fill="#546e7a">Query telemetry interfaces + source code</text>
-  <text x="590" y="208" text-anchor="middle" font-size="10" fill="#546e7a">Reason over noisy metrics, logs, traces</text>
-
-  <!-- Arrow down -->
-  <path d="M 590 223 L 590 238" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
-
-  <!-- Output: Root Cause -->
-  <rect x="430" y="238" width="320" height="48" rx="6" fill="#fce4ec" stroke="#c62828" stroke-width="1.5"/>
-  <text x="590" y="258" text-anchor="middle" font-size="11" font-weight="bold" fill="#b71c1c">Output: Root Cause Hypothesis</text>
-  <text x="590" y="275" text-anchor="middle" font-size="10" fill="#546e7a">(evaluated against SRE-verified ground truth)</text>
-
-  <!-- Evaluation (bottom section) -->
-  <rect x="30" y="355" width="740" height="165" rx="8" fill="#fafafa" stroke="#b0bec5" stroke-width="1.5"/>
-  <text x="400" y="378" text-anchor="middle" font-size="13" font-weight="bold" fill="#455a64">Evaluation Results: RCA Accuracy Across Five Frontier Agents</text>
-
-  <!-- Bar: Easy -->
-  <rect x="80" y="395" width="120" height="70" rx="4" fill="#66bb6a"/>
-  <text x="140" y="430" text-anchor="middle" font-size="11" font-weight="bold" fill="white">~45%</text>
-  <text x="140" y="455" text-anchor="middle" font-size="9" fill="#2e7d32">Easy Tasks</text>
-
-  <!-- Bar: Medium -->
-  <rect x="230" y="395" width="120" height="35" rx="4" fill="#ffa726"/>
-  <text x="290" y="418" text-anchor="middle" font-size="11" font-weight="bold" fill="white">25.3%</text>
-  <text x="290" y="445" text-anchor="middle" font-size="9" fill="#e65100">Medium Tasks</text>
-  <text x="290" y="458" text-anchor="middle" font-size="8" fill="#e65100">(Realistic Input)</text>
-
-  <!-- Bar: Hard -->
-  <rect x="380" y="395" width="120" height="15" rx="4" fill="#ef5350"/>
-  <text x="440" y="406" text-anchor="middle" font-size="10" font-weight="bold" fill="white">10.0%</text>
-  <text x="440" y="428" text-anchor="middle" font-size="9" fill="#c62828">Hard Tasks</text>
-
-  <!-- Annotation -->
-  <rect x="530" y="395" width="100" height="70" rx="4" fill="#e0f7fa" stroke="#00838f" stroke-width="1"/>
-  <text x="580" y="418" text-anchor="middle" font-size="10" font-weight="bold" fill="#006064">Hallucination</text>
-  <text x="580" y="435" text-anchor="middle" font-size="10" font-weight="bold" fill="#c62828">40%</text>
-  <text x="580" y="452" text-anchor="middle" font-size="8" fill="#00838f">(weakest model)</text>
-
-  <!-- Claude Fable 5 -->
-  <rect x="650" y="395" width="110" height="70" rx="4" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="1"/>
-  <text x="705" y="418" text-anchor="middle" font-size="10" font-weight="bold" fill="#6a1b9a">Claude Fable 5</text>
-  <text x="705" y="435" text-anchor="middle" font-size="9" fill="#6a1b9a">Gap persists</text>
-  <text x="705" y="452" text-anchor="middle" font-size="8" fill="#6a1b9a">(no improvement)</text>
-
-  <!-- Arrow marker definition -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
   <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#666"/>
-    </marker>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8F97A3; }
+      .rl { font-size: 15px; fill: #454E5C; }
+      .val { font-size: 17px; font-weight: 700; fill: #1A1B1E; }
+      .b { font-size: 12px; fill: #9AA3AF; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F4F7F5"/>
+    </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2A7F78"/><stop offset="1" stop-color="#5AA79E"/>
+    </linearGradient>
+    <linearGradient id="gRed" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C24C4C"/><stop offset="1" stop-color="#DA7575"/>
+    </linearGradient>
+    <linearGradient id="gAmber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D98E2B"/><stop offset="1" stop-color="#E8B84B"/>
+    </linearGradient>
+    <linearGradient id="gRose" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B04A6F"/><stop offset="1" stop-color="#CE7A97"/>
+    </linearGradient>
   </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1100" cy="112" r="150" fill="#2A7F78" opacity="0.06"/>
+  <circle cx="85" cy="618" r="115" fill="#D98E2B" opacity="0.07"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gRed)"/>
+
+  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2607.28545</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">急诊室里，误诊四成</text>
+  <text x="64" y="158" font-size="15" fill="#59606D">ORCA-bench：1,079 个生产保真度 on-call 根因分析任务，测 Agent 的诊脉本事</text>
+
+  <!-- triage motif: heart-rate monitor card -->
+  <g>
+    <rect x="952" y="72" width="184" height="112" rx="14" fill="#FFFFFF" stroke="url(#gTeal)" stroke-width="3"/>
+    <path d="M 968 128 h 28 l 10 -24 l 14 44 l 12 -30 l 8 10 h 78" fill="none" stroke="url(#gRed)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="1122" cy="94" r="7" fill="url(#gRed)"/>
+    <text x="968" y="166" font-size="12" fill="#8F97A3">RCA · 生产遥测心电</text>
+  </g>
+
+  <!-- accuracy bars: 0-100% -> x 250..800 -->
+  <rect x="176" y="214" width="924" height="74" fill="#2A7F78" opacity="0.08"/>
+  <text class="rl" x="160" y="257" text-anchor="end">Medium · 真实输入</text>
+  <rect x="250" y="238" width="139" height="18" rx="9" fill="url(#gTeal)"/>
+  <text class="val" x="401" y="255" fill="#2A7F78">25.3%</text>
+  <text class="b" x="480" y="255">最佳模型，Claude Fable 5 也补不上</text>
+
+  <text class="rl" x="160" y="331" text-anchor="end">Hard · 生产难度</text>
+  <rect x="250" y="312" width="55" height="18" rx="9" fill="url(#gRed)"/>
+  <text class="val" x="317" y="329" fill="#C24C4C">10.0%</text>
+  <text class="b" x="390" y="329">越难越不会看病</text>
+
+  <rect x="176" y="354" width="924" height="74" fill="#B04A6F" opacity="0.07"/>
+  <text class="rl" x="160" y="397" text-anchor="end">最弱模型</text>
+  <rect x="250" y="378" width="220" height="18" rx="9" fill="url(#gRose)"/>
+  <text class="val" x="482" y="395" fill="#B04A6F">40% 报告不可信</text>
+  <text class="b" x="650" y="395">幻觉式诊断：没病开出病</text>
+
+  <!-- right stat column -->
+  <g>
+    <text x="900" y="262" font-size="32" font-weight="700" fill="#D98E2B">κw=0.90</text>
+    <text x="900" y="282" font-size="12.5" fill="#59606D">LLM 评分经人类重验证</text>
+    <path d="M 1050 300 l 7 15 l 16 2 l -12 11 l 4 16 l -15 -8 l -15 8 l 4 -16 l -12 -11 l 16 -2 z" fill="url(#gAmber)" opacity="0.85"/>
+    <text x="900" y="356" font-size="30" font-weight="700" fill="#1A1B1E">50GB · 6 天</text>
+    <text x="900" y="376" font-size="12.5" fill="#59606D">测试床规模，真实系统大几个数量级</text>
+  </g>
+
+  <line x1="64" y1="464" x2="1136" y2="464" stroke="#E5E1D4"/>
+  <g>
+    <text class="serif" x="64" y="508" font-size="22" font-weight="700" fill="#2A7F78">测试床 = 六天 OpenTelemetry 微服务</text>
+    <text x="64" y="532" font-size="13.5" fill="#59606D">Prometheus · Jaeger · OpenSearch via Grafana + 完整源代码 —— 真实遥测接口，不是合成题</text>
+    <text class="serif" x="64" y="576" font-size="20" font-weight="700" fill="#C24C4C">拔掉源代码 → 所有指标下降</text>
+    <text x="64" y="598" font-size="13.5" fill="#59606D">代码理解是 RCA 的核心能力；当前分数是下界，生产里只会更难</text>
+  </g>
+
+  <text x="64" y="642" font-size="12.5" fill="#A29C88">RCA 准确率为论文所测五模型最好成绩；40% 为最弱模型口径；测试床远小于真实生产系统 · Micropaper</text>
 </svg>

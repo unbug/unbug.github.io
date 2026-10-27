@@ -1,80 +1,109 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620" font-family="Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
   <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4a5568"/>
-    </marker>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8F968C; }
+      .rl { font-size: 15px; fill: #454E45; }
+      .val { font-size: 18px; font-weight: 700; fill: #1A1B1E; }
+      .b { font-size: 12px; fill: #A2A99E; }
+      .chip { font-size: 12.5px; font-weight: 600; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F1F6F0"/>
+    </linearGradient>
+    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F6FB2"/><stop offset="1" stop-color="#6FA3D8"/>
+    </linearGradient>
+    <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E8720C"/><stop offset="1" stop-color="#F6AB5C"/>
+    </linearGradient>
+    <linearGradient id="gCrim" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C0392B"/><stop offset="1" stop-color="#E0705F"/>
+    </linearGradient>
+    <linearGradient id="gViolet" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6A4FA3"/><stop offset="1" stop-color="#9C7FCB"/>
+    </linearGradient>
+    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B9892F"/><stop offset="1" stop-color="#DCB65F"/>
+    </linearGradient>
+    <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3F8F5F"/><stop offset="1" stop-color="#7CBB92"/>
+    </linearGradient>
   </defs>
-  <rect width="960" height="620" fill="#f7fafc"/>
-  <text x="480" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#1a365d">CentaurBench 框架：自动化 vs 增强</text>
-  <text x="480" y="66" text-anchor="middle" font-size="14" fill="#4a5568">同一批助手模型，两种角色，排名几乎对不上（arXiv:2608.18554）</text>
 
-  <!-- 左泳道：自动化 -->
-  <rect x="50" y="95" width="400" height="44" rx="8" fill="#2b6cb0"/>
-  <text x="250" y="123" text-anchor="middle" font-size="17" font-weight="bold" fill="#ffffff">自动化：自己把活干完</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1106" cy="108" r="142" fill="#2F6FB2" opacity="0.06"/>
+  <circle cx="78" cy="618" r="112" fill="#E8720C" opacity="0.06"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gCrim)"/>
 
-  <rect x="110" y="165" width="280" height="56" rx="8" fill="#ebf8ff" stroke="#2b6cb0" stroke-width="2"/>
-  <text x="250" y="189" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a365d">助手模型（9 个）</text>
-  <text x="250" y="209" text-anchor="middle" font-size="12" fill="#2d3748">Claude / Gemini / DeepSeek / GPT</text>
+  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2608.18554 · UC BERKELEY HAAS DIAL</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">最佳球员，未必好教练</text>
+  <text x="64" y="158" font-size="15" fill="#586158">CentaurBench：9 个模型 × 7 个真实任务 × 10 次重复，两种角色各排一次座次</text>
 
-  <line x1="250" y1="221" x2="250" y2="253" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
-
-  <rect x="110" y="257" width="280" height="56" rx="8" fill="#1a365d"/>
-  <text x="250" y="281" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">直接产出交付物</text>
-  <text x="250" y="301" text-anchor="middle" font-size="12" fill="#cbd5e0">模型独立完成全部工作</text>
-
-  <!-- 右泳道：增强 -->
-  <rect x="510" y="95" width="400" height="44" rx="8" fill="#ed8936"/>
-  <text x="710" y="123" text-anchor="middle" font-size="17" font-weight="bold" fill="#ffffff">增强：指导别人干活</text>
-
-  <rect x="570" y="165" width="280" height="56" rx="8" fill="#fffaf0" stroke="#ed8936" stroke-width="2"/>
-  <text x="710" y="189" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a365d">助手模型（同 9 个）</text>
-  <text x="710" y="209" text-anchor="middle" font-size="12" fill="#2d3748">只写指导，不动手</text>
-
-  <line x1="710" y1="221" x2="710" y2="253" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
-  <text x="722" y="240" font-size="12" font-weight="bold" fill="#c05621">200-250 词过程性指导</text>
-
-  <rect x="570" y="257" width="280" height="56" rx="8" fill="#fffaf0" stroke="#ed8936" stroke-width="2"/>
-  <text x="710" y="281" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a365d">GPT-3.5-Turbo（固定工人）</text>
-  <text x="710" y="301" text-anchor="middle" font-size="12" fill="#2d3748">按指导完成实际交付</text>
-
-  <line x1="710" y1="313" x2="710" y2="345" stroke="#4a5568" stroke-width="2" marker-end="url(#arrow)"/>
-
-  <rect x="570" y="349" width="280" height="56" rx="8" fill="#1a365d"/>
-  <text x="710" y="373" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">产出交付物</text>
-  <text x="710" y="393" text-anchor="middle" font-size="12" fill="#cbd5e0">工人独立完成交付</text>
-
-  <!-- 任务带 -->
-  <text x="50" y="443" font-size="14" font-weight="bold" fill="#1a365d">7 个真实工作任务 x 10 次重复，LLM 评审团盲评两两对比</text>
-  <g font-size="13" fill="#2d3748">
-    <rect x="50" y="456" width="112" height="34" rx="17" fill="#ffffff" stroke="#a0aec0" stroke-width="1.5"/>
-    <text x="106" y="478" text-anchor="middle">咨询</text>
-    <rect x="174" y="456" width="112" height="34" rx="17" fill="#ffffff" stroke="#a0aec0" stroke-width="1.5"/>
-    <text x="230" y="478" text-anchor="middle">旅行规划</text>
-    <rect x="298" y="456" width="112" height="34" rx="17" fill="#ffffff" stroke="#a0aec0" stroke-width="1.5"/>
-    <text x="354" y="478" text-anchor="middle">菜单规划</text>
-    <rect x="422" y="456" width="112" height="34" rx="17" fill="#ffffff" stroke="#a0aec0" stroke-width="1.5"/>
-    <text x="478" y="478" text-anchor="middle">报税</text>
-    <rect x="546" y="456" width="112" height="34" rx="17" fill="#ffffff" stroke="#a0aec0" stroke-width="1.5"/>
-    <text x="602" y="478" text-anchor="middle">辅导</text>
-    <rect x="670" y="456" width="112" height="34" rx="17" fill="#ffffff" stroke="#a0aec0" stroke-width="1.5"/>
-    <text x="726" y="478" text-anchor="middle">运筹</text>
-    <rect x="794" y="456" width="112" height="34" rx="17" fill="#ffffff" stroke="#a0aec0" stroke-width="1.5"/>
-    <text x="850" y="478" text-anchor="middle">市场趋势</text>
+  <!-- bowling motif: pins + ball -->
+  <g>
+    <g fill="#FFFFFF" stroke="#2F6FB2" stroke-width="2">
+      <path d="M 1030 92 q -6 12 0 20 q -5 8 2 12 h 8 q 7 -4 2 -12 q 6 -8 0 -20 z"/>
+      <path d="M 1058 104 q -6 12 0 20 q -5 8 2 12 h 8 q 7 -4 2 -12 q 6 -8 0 -20 z" stroke="#E8720C"/>
+      <path d="M 1086 92 q -6 12 0 20 q -5 8 2 12 h 8 q 7 -4 2 -12 q 6 -8 0 -20 z" stroke="#6A4FA3"/>
+    </g>
+    <circle cx="1076" cy="168" r="16" fill="url(#gCrim)"/>
+    <circle cx="1070" cy="162" r="2.4" fill="#FFFFFF" opacity="0.85"/>
+    <circle cx="1077" cy="159" r="2.4" fill="#FFFFFF" opacity="0.85"/>
+    <circle cx="1083" cy="163" r="2.4" fill="#FFFFFF" opacity="0.85"/>
+    <path d="M 1096 178 q 22 6 40 0" fill="none" stroke="#A2A99E" stroke-width="2" stroke-dasharray="4 5"/>
   </g>
 
-  <!-- 关键发现 -->
-  <rect x="50" y="512" width="286" height="84" rx="8" fill="#ebf8ff" stroke="#2b6cb0" stroke-width="2"/>
-  <text x="193" y="543" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a365d">模型级排名相关</text>
-  <text x="193" y="568" text-anchor="middle" font-size="14" fill="#2d3748">Spearman ρ = 0.48</text>
-  <text x="193" y="587" text-anchor="middle" font-size="12" fill="#4a5568">p = 0.187，与零不可区分</text>
+  <!-- correlation anchor -->
+  <g>
+    <text class="rl" x="64" y="216">两种角色的模型级排名相关（Spearman）</text>
+    <rect x="64" y="230" width="360" height="112" fill="#C0392B" opacity="0.07"/>
+    <text class="serif" x="84" y="290" font-size="46" font-weight="700" fill="#C0392B">0.48</text>
+    <text x="84" y="318" font-size="12.5" fill="#586158">p=0.187，与零不可区分</text>
+    <text class="serif" x="238" y="272" font-size="19" fill="#8A6620">5/7 任务</text>
+    <text x="238" y="296" font-size="12.5" fill="#586158">增强冠军 ≠ 自动化冠军</text>
+    <text x="238" y="318" font-size="12.5" fill="#586158">任务级 -0.04 → 0.85</text>
+  </g>
 
-  <rect x="337" y="512" width="286" height="84" rx="8" fill="#fffaf0" stroke="#ed8936" stroke-width="2"/>
-  <text x="480" y="543" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a365d">冠军错位</text>
-  <text x="480" y="568" text-anchor="middle" font-size="14" fill="#2d3748">5/7 任务增强冠军</text>
-  <text x="480" y="587" text-anchor="middle" font-size="12" fill="#4a5568">与自动化冠军不是同一模型</text>
+  <!-- slope: rank swap, top=1 best -->
+  <g>
+    <text class="rl" x="490" y="216">平均排名反转 · 1 为最佳，越小越强</text>
+    <line x1="640" y1="244" x2="640" y2="392" stroke="#D6DCD2" stroke-width="1"/>
+    <line x1="990" y1="244" x2="990" y2="392" stroke="#D6DCD2" stroke-width="1"/>
+    <text class="b" x="640" y="236" text-anchor="middle">自动化 · 选手</text>
+    <text class="b" x="990" y="236" text-anchor="middle">增强 · 教练</text>
 
-  <rect x="624" y="512" width="286" height="84" rx="8" fill="#f0fff4" stroke="#38a169" stroke-width="2"/>
-  <text x="767" y="543" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a365d">指导可为负</text>
-  <text x="767" y="568" text-anchor="middle" font-size="14" fill="#2d3748">无指导基线 3 任务第一</text>
-  <text x="767" y="587" text-anchor="middle" font-size="12" fill="#4a5568">仅 GPT-5-Mini 指导整体更优</text>
+    <line x1="640" y1="368" x2="990" y2="268" stroke="url(#gBlue)" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="640" cy="368" r="7" fill="url(#gBlue)"/>
+    <circle cx="990" cy="268" r="7" fill="#FFFFFF" stroke="#2F6FB2" stroke-width="3"/>
+    <text class="val" x="626" y="373" text-anchor="end" fill="#2F6FB2">GPT-4.1 · 7.40</text>
+    <text class="val" x="1004" y="273" fill="#2F6FB2">3.80</text>
+
+    <line x1="640" y1="262" x2="990" y2="382" stroke="url(#gOrange)" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="640" cy="262" r="7" fill="url(#gOrange)"/>
+    <circle cx="990" cy="382" r="7" fill="#FFFFFF" stroke="#E8720C" stroke-width="3"/>
+    <text class="val" x="626" y="267" text-anchor="end" fill="#C25E08">Claude-Opus · 2.05</text>
+    <text class="val" x="1004" y="387" fill="#C0392B">8.15</text>
+  </g>
+
+  <!-- unguided baseline band -->
+  <g>
+    <rect x="64" y="418" width="1072" height="58" fill="#6A4FA3" opacity="0.08"/>
+    <text class="serif" x="84" y="454" font-size="22" font-weight="700" fill="#543F82">无指导基线 3/7 任务排第一</text>
+    <text x="420" y="454" font-size="14" fill="#454E45">运筹 · 报税 · 旅行规划——教练不在场，工人 GPT-3.5-Turbo 反而赢下全场</text>
+  </g>
+
+  <line x1="64" y1="510" x2="1136" y2="510" stroke="#DDE4D8"/>
+  <g>
+    <rect x="64" y="530" width="150" height="28" rx="14" fill="url(#gBlue)" opacity="0.18"/>
+    <text x="139" y="549" text-anchor="middle" class="chip" fill="#2A5F98">GPT-5-Mini 双榜唯一第一</text>
+    <rect x="228" y="530" width="168" height="28" rx="14" fill="url(#gViolet)" opacity="0.16"/>
+    <text x="312" y="549" text-anchor="middle" class="chip" fill="#543F82">无指导整体第二（3.79）</text>
+    <rect x="410" y="530" width="158" height="28" rx="14" fill="url(#gGreen)" opacity="0.18"/>
+    <text x="489" y="549" text-anchor="middle" class="chip" fill="#33734C">指导 200-250 词</text>
+    <rect x="582" y="530" width="130" height="28" rx="14" fill="url(#gGold)" opacity="0.22"/>
+    <text x="647" y="549" text-anchor="middle" class="chip" fill="#7A5A14">仅报税 p=0.004</text>
+  </g>
+  <text class="serif" x="64" y="612" font-size="18" fill="#1A1B1E">指导不是善举，是另一项独立能力；选模型，先定角色。</text>
+  <text class="b" x="1136" y="612" text-anchor="end">论文自称 pilot · LLM 评审盲评 · 工人固定 GPT-3.5-Turbo · 预印本未经同行评审 · Micropaper</text>
 </svg>

@@ -1,102 +1,103 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
-  <rect width="960" height="720" fill="#f8fafc"/>
-  <text x="480" y="36" text-anchor="middle" font-size="20" font-weight="bold" fill="#1e293b">InjecMEM：单次交互的记忆注入攻击（arXiv:2608.23471，SJTU + Ant Group）</text>
-
-  <!-- Attack flow -->
-  <rect x="40" y="60" width="200" height="64" rx="8" fill="#fee2e2" stroke="#dc2626"/>
-  <text x="140" y="86" text-anchor="middle" font-size="13" font-weight="bold" fill="#991b1b">攻击者单次交互</text>
-  <text x="140" y="106" text-anchor="middle" font-size="11" fill="#7f1d1d">无记忆库读/写权限</text>
-
-  <rect x="280" y="60" width="330" height="64" rx="8" fill="#fef3c7" stroke="#d97706"/>
-  <text x="445" y="82" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400e">注入记录 = 锚点 + 对抗指令</text>
-  <text x="445" y="100" text-anchor="middle" font-size="11" fill="#78350f">retriever-agnostic anchor（高召回主题线索）</text>
-  <text x="445" y="115" text-anchor="middle" font-size="11" fill="#78350f">adversarial command（gradient-based coordinate search）</text>
-
-  <rect x="650" y="60" width="270" height="64" rx="8" fill="#e0e7ff" stroke="#4f46e5"/>
-  <text x="785" y="86" text-anchor="middle" font-size="13" font-weight="bold" fill="#3730a3">retrieve-then-generate</text>
-  <text x="785" y="106" text-anchor="middle" font-size="11" fill="#4338ca">后续同主题查询稳定命中注入记录</text>
-
-  <line x1="240" y1="92" x2="280" y2="92" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
-  <line x1="610" y1="92" x2="650" y2="92" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
   <defs>
-    <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
-      <path d="M0,0 L7,3 L0,6 Z" fill="#475569"/>
-    </marker>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8A85A8; }
+      .rl { font-size: 15px; fill: #4A4460; }
+      .b { font-size: 12px; fill: #9E99B5; }
+      .val { font-size: 18px; font-weight: 700; }
+      .chip { font-size: 12.5px; font-weight: 600; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F2F0F6"/>
+    </linearGradient>
+    <linearGradient id="gViolet" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5F4B8B"/><stop offset="1" stop-color="#8F7BB8"/>
+    </linearGradient>
+    <linearGradient id="gRose" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C0392B"/><stop offset="1" stop-color="#E8785C"/>
+    </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0F7B8A"/><stop offset="1" stop-color="#4FB8C6"/>
+    </linearGradient>
+    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B9892F"/><stop offset="1" stop-color="#DCB65F"/>
+    </linearGradient>
+    <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F7D61"/><stop offset="1" stop-color="#6FB58F"/>
+    </linearGradient>
   </defs>
 
-  <!-- Results: two systems -->
-  <text x="40" y="170" font-size="15" font-weight="bold" fill="#1e293b">攻击效果（域平均，小模型 backbone：Qwen2.5 / Llama-3.1-8B / Mistral-7B）</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1112" cy="108" r="140" fill="#5F4B8B" opacity="0.06"/>
+  <circle cx="76" cy="622" r="112" fill="#C0392B" opacity="0.05"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gRose)"/>
 
-  <!-- MemoryOS bars -->
-  <text x="40" y="200" font-size="12" fill="#334155">MemoryOS</text>
-  <rect x="130" y="186" width="279" height="16" fill="#dc2626"/>
-  <text x="415" y="199" font-size="11" fill="#334155">RSR 46.5%</text>
-  <rect x="130" y="208" width="460" height="16" fill="#b91c1c"/>
-  <text x="595" y="221" font-size="11" fill="#334155">ASR-c 76.6%</text>
-  <rect x="130" y="230" width="214" height="16" fill="#f87171"/>
-  <text x="350" y="243" font-size="11" fill="#334155">ASR-j 35.6%</text>
+  <text class="k" x="64" y="84">一分钟读论文 · 2026-08-26 · ARXIV:2608.23471</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#211D35">寄进一封信，带偏后来人</text>
+  <text x="64" y="158" font-size="15" fill="#5C567A">InjecMEM：单次交互把对抗指令写进记忆，无需读写记忆库权限</text>
 
-  <!-- MemGPT bars -->
-  <text x="40" y="280" font-size="12" fill="#334155">MemGPT</text>
-  <rect x="130" y="266" width="223" height="16" fill="#dc2626"/>
-  <text x="358" y="279" font-size="11" fill="#334155">RSR 37.2%</text>
-  <rect x="130" y="288" width="292" height="16" fill="#b91c1c"/>
-  <text x="427" y="301" font-size="11" fill="#334155">ASR-c 48.6%</text>
-  <rect x="130" y="310" width="109" height="16" fill="#f87171"/>
-  <text x="244" y="323" font-size="11" fill="#334155">ASR-j 18.1%</text>
-
-  <!-- Baseline box -->
-  <rect x="620" y="186" width="300" height="140" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
-  <text x="770" y="208" text-anchor="middle" font-size="12" font-weight="bold" fill="#334155">基线对照（记忆增强场景）</text>
-  <text x="770" y="230" text-anchor="middle" font-size="11" fill="#475569">DPI / BadChain / vanilla GCG</text>
-  <text x="770" y="250" text-anchor="middle" font-size="11" fill="#dc2626" font-weight="bold">成功率全部归零</text>
-  <text x="770" y="274" text-anchor="middle" font-size="11" fill="#475569">Multi-GCG：首个取得攻击成功的方法</text>
-  <text x="770" y="294" text-anchor="middle" font-size="11" fill="#475569">（ASR-c 76.6% / ASR-j 35.6%，MemoryOS）</text>
-
-  <!-- Defense table -->
-  <text x="40" y="380" font-size="15" font-weight="bold" fill="#1e293b">检索时过滤防御（默认阈值，RSR = 毒化检索残留率）</text>
-  <g font-size="11" fill="#334155">
-    <rect x="40" y="396" width="180" height="26" fill="#e2e8f0"/>
-    <text x="50" y="414">检测器</text>
-    <rect x="220" y="396" width="120" height="26" fill="#e2e8f0"/>
-    <text x="230" y="414">RSR（基线 46.5%）</text>
-    <rect x="340" y="396" width="120" height="26" fill="#e2e8f0"/>
-    <text x="350" y="414">BBR（效用代价）</text>
-
-    <text x="50" y="444">LLM-as-a-Judge</text>
-    <rect x="220" y="432" width="167" height="14" fill="#fca5a5"/>
-    <text x="392" y="444">36.2%</text>
-
-    <text x="50" y="472">ProtectAI</text>
-    <rect x="220" y="460" width="180" height="14" fill="#fca5a5"/>
-    <text x="404" y="472">39.1%</text>
-
-    <text x="50" y="500">PromptGuard</text>
-    <rect x="220" y="488" width="161" height="14" fill="#fca5a5"/>
-    <text x="385" y="500">35.2%</text>
-
-    <text x="50" y="528" font-weight="bold">perplexity（τ=40）</text>
-    <rect x="220" y="516" width="2" height="14" fill="#16a34a"/>
-    <text x="392" y="528" font-weight="bold" fill="#16a34a">RSR 0.0（唯一清零）</text>
-    <rect x="470" y="516" width="309" height="14" fill="#dc2626"/>
-    <text x="785" y="528" font-weight="bold" fill="#991b1b">BBR 71.8%</text>
+  <!-- motif: envelope dropping into slot, hook inside -->
+  <g>
+    <rect x="978" y="266" width="172" height="96" rx="8" fill="url(#gViolet)" opacity="0.9"/>
+    <rect x="1024" y="248" width="80" height="12" rx="6" fill="#3D3560"/>
+    <path d="M 978 266 l 86 52 l 86 -52" fill="none" stroke="#F2F0F6" stroke-width="3" opacity="0.8"/>
+    <path d="M 1064 336 q 0 26 -20 26 q -14 0 -14 -12" stroke="#DCB65F" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <circle cx="1064" cy="336" r="5" fill="#DCB65F"/>
+    <text class="b" x="1064" y="398" text-anchor="middle">锚点负责命中 · 指令负责带偏</text>
   </g>
-  <text x="40" y="560" font-size="11" fill="#64748b">注：BBR = benign blocked rate（良性检索误杀率）；τ=40 为论文扫描后能完全压制攻击的最大阈值。前三者只能降低、无法消除毒化检索。</text>
 
-  <!-- Boundary box -->
-  <rect x="40" y="584" width="430" height="112" rx="8" fill="#fefce8" stroke="#ca8a04"/>
-  <text x="56" y="606" font-size="12" font-weight="bold" fill="#854d0e">边界与限定</text>
-  <text x="56" y="626" font-size="11" fill="#713f12">· 仅 Qwen2.5 / Llama-3.1-8B / Mistral-7B + MemGPT / MemoryOS 验证</text>
-  <text x="56" y="644" font-size="11" fill="#713f12">· BBR 71.8% 是 perplexity 单方法代价，非所有防御不可用</text>
-  <text x="56" y="662" font-size="11" fill="#713f12">· 「非目标查询不受影响」「记忆漂移下仍有效」为论文自称</text>
-  <text x="56" y="680" font-size="11" fill="#713f12">· ASR-c（条件于检索）与 ASR-j（联合口径）不可混用</text>
+  <!-- bars: ASR-c / ASR-j, 1% = 8.4px, x0=352 -->
+  <g>
+    <rect x="352" y="200" width="560" height="44" fill="#5F4B8B" opacity="0.08"/>
+    <rect x="352" y="256" width="560" height="44" fill="#5F4B8B" opacity="0.08"/>
+    <rect x="352" y="312" width="560" height="44" fill="#0F7B8A" opacity="0.08"/>
+    <rect x="352" y="368" width="560" height="44" fill="#0F7B8A" opacity="0.08"/>
 
-  <!-- Conclusion box -->
-  <rect x="490" y="584" width="430" height="112" rx="8" fill="#f0fdf4" stroke="#16a34a"/>
-  <text x="506" y="606" font-size="12" font-weight="bold" fill="#166534">核心结论</text>
-  <text x="506" y="626" font-size="11" fill="#14532d">· 记忆成为 agent 默认子系统后，本身即新攻击面</text>
-  <text x="506" y="644" font-size="11" fill="#14532d">· 一次交互、无存储权限即可投毒后续回答</text>
-  <text x="506" y="662" font-size="11" fill="#14532d">· 安全-效用权衡显著：彻底拦截需付出高误杀代价</text>
-  <text x="506" y="680" font-size="11" fill="#14532d">· 开源可复现框架（BlueBlood6/InjecMEM）作评测基线</text>
+    <text class="rl" x="336" y="227" text-anchor="end">MemoryOS · ASR-c</text>
+    <text class="b" x="336" y="243" text-anchor="end">检索命中后命中目标</text>
+    <rect x="352" y="216" width="362" height="22" rx="11" fill="url(#gViolet)"/>
+    <text class="val" x="726" y="232" fill="#5F4B8B" font-size="20">76.6%</text>
+
+    <text class="rl" x="336" y="283" text-anchor="end">MemGPT · ASR-c</text>
+    <text class="b" x="336" y="299" text-anchor="end">检索命中后命中目标</text>
+    <rect x="352" y="272" width="230" height="22" rx="11" fill="url(#gViolet)"/>
+    <text class="val" x="594" y="288" fill="#5F4B8B" font-size="20">48.6%</text>
+
+    <text class="rl" x="336" y="339" text-anchor="end">MemoryOS · ASR-j</text>
+    <text class="b" x="336" y="355" text-anchor="end">检索+生成联合口径</text>
+    <rect x="352" y="328" width="169" height="22" rx="11" fill="url(#gTeal)"/>
+    <text class="val" x="533" y="344" fill="#0F7B8A" font-size="20">35.6%</text>
+
+    <text class="rl" x="336" y="395" text-anchor="end">MemGPT · ASR-j</text>
+    <text class="b" x="336" y="411" text-anchor="end">检索+生成联合口径</text>
+    <rect x="352" y="384" width="86" height="22" rx="11" fill="url(#gTeal)"/>
+    <text class="val" x="450" y="400" fill="#0F7B8A" font-size="20">18.1%</text>
+  </g>
+
+  <!-- defense chip: perplexity filter -->
+  <g>
+    <rect x="940" y="430" width="196" height="86" fill="#C0392B" opacity="0.08"/>
+    <text class="serif" x="956" y="463" font-size="21" font-weight="700" fill="#8A2E22">拦住全部，误杀 71.8%</text>
+    <text x="956" y="487" font-size="12.5" fill="#6B6478">困惑度过滤阈值 40 · 写入期杀掉良性记录</text>
+  </g>
+
+  <!-- bottom chips -->
+  <line x1="64" y1="452" x2="892" y2="452" stroke="#E3E0EC"/>
+  <g>
+    <rect x="64" y="472" width="180" height="28" rx="14" fill="url(#gGreen)" opacity="0.16"/>
+    <text x="154" y="491" text-anchor="middle" class="chip" fill="#27604B">既有方法成功率归零</text>
+    <text class="b" x="256" y="491">DPI / BadChain / 原始 GCG 全部失效</text>
+
+    <rect x="64" y="512" width="170" height="28" rx="14" fill="url(#gGold)" opacity="0.2"/>
+    <text x="149" y="531" text-anchor="middle" class="chip" fill="#7A5A14">判官也只降到 36.2%</text>
+    <text class="b" x="246" y="531">LLM-as-a-Judge 过滤后 RSR · 原 46.5%</text>
+
+    <rect x="64" y="552" width="150" height="28" rx="14" fill="url(#gViolet)" opacity="0.14"/>
+    <text x="139" y="571" text-anchor="middle" class="chip" fill="#4A3A6E">19 领域合成对话</text>
+    <text class="b" x="226" y="571">随机插入记忆库模拟真实积累</text>
+  </g>
+
+  <text class="serif" x="940" y="562" font-size="18" fill="#211D35">安全与效用，此消彼长。</text>
+  <text class="b" x="1136" y="640" text-anchor="end">结论限于小参数模型与两个记忆系统 · 自称非目标查询不受影响 · Micropaper</text>
 </svg>

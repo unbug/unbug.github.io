@@ -1,88 +1,110 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="大模型输入侧 Token 瘦身专利信号与压缩审计中间件机会信息图">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0f1b2d"/>
-      <stop offset="1" stop-color="#1c2f47"/>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8E97A6; }
+      .b { font-size: 12px; fill: #98A1AE; }
+      .ev { font-size: 13px; font-weight: 700; fill: #1E2430; }
+      .evs { font-size: 12px; fill: #5C6672; }
+      .stat { font-size: 30px; font-weight: 700; fill: #1E2430; }
+      .unit { font-size: 14px; fill: #5C6672; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F4EC"/>
     </linearGradient>
-    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#233a56"/>
-      <stop offset="1" stop-color="#1b2d44"/>
+    <linearGradient id="axis" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3D6B4F"/><stop offset="1" stop-color="#C9A24A"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3D6B4F"/><stop offset="1" stop-color="#6E9B74"/>
+    </linearGradient>
+    <linearGradient id="wire" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#DE7A3B"/><stop offset="1" stop-color="#E5C042"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
 
-  <!-- header -->
-  <text x="60" y="72" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="34" font-weight="700" fill="#e8eef7">AI 智创简报 · 输入侧 Token 瘦身专利成簇</text>
-  <text x="60" y="106" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="19" fill="#8fa8c4">上下文压缩中间件与 Token 浪费审计 · 2026-02 ~ 2026-09 四件已公开申请</text>
-  <line x1="60" y1="128" x2="1140" y2="128" stroke="#3a5678" stroke-width="1.5"/>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1100" cy="608" r="130" fill="#3D6B4F" opacity="0.06"/>
+  <circle cx="80" cy="120" r="110" fill="#DE7A3B" opacity="0.05"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="#DE7A3B"/>
 
-  <!-- column 1: patent signal -->
-  <rect x="60" y="152" width="340" height="360" rx="14" fill="url(#card)" stroke="#3a5678"/>
-  <rect x="60" y="152" width="340" height="52" rx="14" fill="#2b4a6d"/>
-  <text x="84" y="186" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#7fc4ff">一 · 专利信号</text>
-  <g font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#c9d8ea" font-size="16">
-    <text x="84" y="240" font-family="Menlo, monospace" font-size="15" fill="#7fc4ff">US20260260063A1 · Ciena</text>
-    <text x="84" y="264">日志空间折叠 + 时间窗折叠</text>
-    <text x="84" y="304" font-family="Menlo, monospace" font-size="15" fill="#7fc4ff">US20260203500A1 · Naver</text>
-    <text x="84" y="328">RAG 段落重排后子句级剪枝</text>
-    <text x="84" y="368" font-family="Menlo, monospace" font-size="15" fill="#7fc4ff">US20260170265A1 · PayPal</text>
-    <text x="84" y="392">动态截断阈值查找表</text>
-    <text x="84" y="432" font-family="Menlo, monospace" font-size="15" fill="#7fc4ff">US20260044679A1 · Cisco</text>
-    <text x="84" y="456">函数组描述替代全量 schema</text>
-  </g>
-  <text x="84" y="494" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="14" fill="#728aa6">均为已公开申请（审查中），非授权</text>
+  <text class="k" x="64" y="84">AI 智创简报 · 专利情报速读 · 输入侧 TOKEN 瘦身</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1E2430">账单前移到喂料之前</text>
+  <text x="64" y="158" font-size="15.5" fill="#5C6672">2026 年 2 至 9 月，四件「少喂」专利公开：折叠 · 剪枝 · 截断 · 清单最小化</text>
 
-  <!-- arrow 1 -->
-  <path d="M408 330 h34" stroke="#5b83ad" stroke-width="3" fill="none"/>
-  <path d="M436 322 l14 8 -14 8 z" fill="#5b83ad"/>
-
-  <!-- column 2: trend -->
-  <rect x="460" y="152" width="340" height="360" rx="14" fill="url(#card)" stroke="#3a5678"/>
-  <rect x="460" y="152" width="340" height="52" rx="14" fill="#2b4a6d"/>
-  <text x="484" y="186" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#7fc4ff">二 · 技术趋势</text>
-  <g font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="17" fill="#c9d8ea">
-    <text x="484" y="240">压缩从提示词技巧</text>
-    <text x="484" y="266">变成模型调用前的架构件</text>
-  </g>
-  <!-- funnel sketch -->
-  <g stroke="#7fc4ff" stroke-width="2.5" fill="none">
-    <rect x="500" y="300" width="120" height="26" rx="5" fill="#33547a"/>
-    <rect x="512" y="338" width="96" height="26" rx="5" fill="#2f4e72"/>
-    <rect x="524" y="376" width="72" height="26" rx="5" fill="#2b466a"/>
-    <path d="M560 414 v22"/>
-    <path d="M552 428 l8 10 8 -10" fill="none"/>
-  </g>
-  <g font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="14" fill="#8fa8c4">
-    <text x="636" y="318">全量输入：日志 / RAG / schema</text>
-    <text x="636" y="356">折叠 · 剪枝 · 截断 · 过滤</text>
-    <text x="636" y="394">幸存内容进 prompt</text>
-    <text x="636" y="440">LLM</text>
-  </g>
-  <text x="484" y="492" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#a9c2dc">网关只记账不动内容 · 通用前置层空白</text>
-
-  <!-- arrow 2 -->
-  <path d="M808 330 h34" stroke="#5b83ad" stroke-width="3" fill="none"/>
-  <path d="M836 322 l14 8 -14 8 z" fill="#5b83ad"/>
-
-  <!-- column 3: opportunity -->
-  <rect x="860" y="152" width="280" height="360" rx="14" fill="url(#card)" stroke="#4d7ba3"/>
-  <rect x="860" y="152" width="280" height="52" rx="14" fill="#2f5a80"/>
-  <text x="884" y="186" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#ffd479">三 · 一个人能做的机会</text>
-  <g font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" fill="#dbe6f2">
-    <text x="884" y="238" font-weight="700" fill="#ffd479">A · Token 浪费审计 CLI</text>
-    <text x="884" y="262">请求体分桶统计 · 可裁剪报告</text>
-    <text x="884" y="304" font-weight="700" fill="#ffd479">B · Drop-in 压缩代理</text>
-    <text x="884" y="328">改一行 baseURL 即可接入</text>
-    <text x="884" y="370">栈：tiktoken + tree-sitter</text>
-    <text x="884" y="394">小模型打分子句重要性</text>
-  </g>
-  <rect x="884" y="418" width="232" height="70" rx="10" fill="#24435f" stroke="#4d7ba3"/>
-  <g font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#dbe6f2">
-    <text x="900" y="444">起步 1500-3000 元 · 2-3 周 MVP</text>
-    <text x="900" y="470">Pro ¥299/年 + 按次报告服务</text>
+  <!-- substation motif: thick incoming wire, transformer meter, stepped-down wire -->
+  <g>
+    <path d="M 972 118 h 46" stroke="url(#wire)" stroke-width="12" stroke-linecap="round"/>
+    <rect x="1018" y="104" width="44" height="28" rx="6" fill="#3D6B4F"/>
+    <path d="M 1030 118 h 8 l 4 -8 l 6 16 l 4 -8 h 6" stroke="#E5C042" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 1062 118 h 46" stroke="#7C8B99" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 1032 132 v 22 M 1048 132 v 22" stroke="#7C8B99" stroke-width="4"/>
+    <rect x="1012" y="154" width="76" height="46" rx="6" fill="#7C8B99"/>
+    <rect x="1022" y="164" width="56" height="10" rx="3" fill="#FFFDF6"/>
+    <circle cx="1030" cy="190" r="4" fill="#E5C042"/><circle cx="1044" cy="190" r="4" fill="#DE7A3B"/><circle cx="1058" cy="190" r="4" fill="#8FBF3F"/>
   </g>
 
-  <!-- footer -->
-  <text x="60" y="566" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="18" fill="#a9c2dc">今天能做：抓一份自己的 LLM 请求体，用 tiktoken 按字段算 token 占比，看砍掉一半 schema 和历史消息能省多少钱。</text>
-  <text x="60" y="598" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="14" fill="#63799a">来源：freepatentsonline.com · docs.litellm.ai</text>
+  <!-- patent timeline: 02-12=150, 06-18=447, 07-16=533, 09-03=690 (per day ~2.02) -->
+  <line x1="150" y1="308" x2="830" y2="308" stroke="url(#axis)" stroke-width="4" stroke-linecap="round"/>
+  <text class="b" x="150" y="334">02-12</text>
+  <text class="b" x="830" y="334" text-anchor="end">09-03</text>
+
+  <g>
+    <circle cx="150" cy="308" r="10" fill="#FFFFFF" stroke="#3D6B4F" stroke-width="3.5"/>
+    <line x1="150" y1="296" x2="150" y2="270" stroke="#8E97A6"/>
+    <text class="ev" x="150" y="248">02-12 · Cisco</text>
+    <text class="evs" x="150" y="268">不喂全量工具 schema</text>
+
+    <circle cx="447" cy="308" r="10" fill="#FFFFFF" stroke="#3D6B4F" stroke-width="3.5"/>
+    <line x1="447" y1="320" x2="447" y2="346" stroke="#8E97A6"/>
+    <text class="ev" x="447" y="372">06-18 · PayPal</text>
+    <text class="evs" x="447" y="392">动态截断阈值查找表</text>
+
+    <circle cx="583" cy="308" r="10" fill="#FFFFFF" stroke="#3D6B4F" stroke-width="3.5"/>
+    <line x1="583" y1="296" x2="583" y2="270" stroke="#8E97A6"/>
+    <text class="ev" x="583" y="248">07-16 · Naver</text>
+    <text class="evs" x="583" y="268">仅幸存子句进 prompt</text>
+
+    <circle cx="776" cy="308" r="10" fill="#FFFFFF" stroke="#3D6B4F" stroke-width="3.5"/>
+    <line x1="776" y1="320" x2="776" y2="346" stroke="#8E97A6"/>
+    <text class="ev" x="776" y="372">09-03 · Ciena</text>
+    <text class="evs" x="776" y="392">日志折叠只送代表序列</text>
+  </g>
+
+  <!-- step-down comparison: full feed vs slimmed feed -->
+  <g>
+    <text x="64" y="428" font-size="12.5" letter-spacing="2" fill="#8E97A6">账单变压器</text>
+    <text class="ev" x="216" y="424">账单没瘦身</text>
+    <rect x="316" y="408" width="520" height="24" rx="6" fill="url(#wire)"/>
+    <text class="evs" x="850" y="424">整段知识库、工单历史直接喂</text>
+    <text class="ev" x="216" y="464">喂前瘦身</text>
+    <rect x="316" y="448" width="160" height="24" rx="6" fill="url(#panel)"/>
+    <text class="evs" x="490" y="464">折叠 / 剪枝 / 截断 / 过滤之后才进模型</text>
+  </g>
+
+  <!-- opportunity cards -->
+  <g>
+    <rect x="64" y="496" width="352" height="136" rx="16" fill="#DE7A3B" opacity="0.09"/>
+    <rect x="64" y="496" width="352" height="6" rx="3" fill="#DE7A3B"/>
+    <path d="M 92 542 l 12 -26 l 16 14 z" fill="#DE7A3B"/>
+    <circle cx="112" cy="522" r="4" fill="#E5C042"/>
+    <text class="stat" x="92" y="586">四位数<tspan class="unit"> 月账单</tspan></text>
+    <text class="evs" x="92" y="612">烧在哪个字段，无从查起</text>
+
+    <rect x="440" y="496" width="352" height="136" rx="16" fill="#3D6B4F" opacity="0.09"/>
+    <rect x="440" y="496" width="352" height="6" rx="3" fill="#3D6B4F"/>
+    <rect x="468" y="528" width="44" height="28" rx="14" fill="#3D6B4F"/>
+    <circle cx="490" cy="542" r="6" fill="#FFFDF6"/>
+    <text class="stat" x="524" y="586">无通用层</text>
+    <text class="evs" x="468" y="612">LiteLLM 只记账，不动内容</text>
+
+    <rect x="816" y="496" width="320" height="136" rx="16" fill="#C9A24A" opacity="0.13"/>
+    <rect x="816" y="496" width="320" height="6" rx="3" fill="#C9A24A"/>
+    <circle cx="846" cy="540" r="15" fill="#A67C28"/>
+    <path d="M 839 540 l 5 5 l 9 -11" stroke="#FFFDF6" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <text class="stat" x="872" y="586">¥299<tspan class="unit"> /年 Pro</tspan></text>
+    <text class="evs" x="844" y="612">审计开源，卖分桶报告</text>
+  </g>
+
+  <text class="b" x="64" y="660">四件均为已公开申请（审查中），非授权专利 · 起步约 1500-3000 元、1 人 2-3 周 MVP，口径见正文 · Micropaper</text>
 </svg>

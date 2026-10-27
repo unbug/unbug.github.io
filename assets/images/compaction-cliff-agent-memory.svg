@@ -1,74 +1,104 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
-  <rect width="1200" height="630" fill="#ffffff"/>
-  <!-- Title -->
-  <text x="30" y="42" font-size="26" font-weight="bold" fill="#1a2332">Compaction Cliff：压缩上下文时，先被磨掉的是安全规则</text>
-  <text x="30" y="68" font-size="15" fill="#5b6b7f">arXiv 2608.22752 · University of Passau 与 IT:U Linz · Claude Code /compact（Sonnet 4.6）× 20 个生产 agent 配置</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #7E93A0; }
+      .rl { font-size: 15px; fill: #3E5560; }
+      .b { font-size: 12px; fill: #8FA2AC; }
+      .stat { font-size: 27px; font-weight: 700; }
+      .val { font-size: 18px; font-weight: 700; }
+      .chip { font-size: 12.5px; font-weight: 600; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EDF3F3"/>
+    </linearGradient>
+    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F6DA8"/><stop offset="1" stop-color="#6FA3D4"/>
+    </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0F7B8A"/><stop offset="1" stop-color="#4FB8C6"/>
+    </linearGradient>
+    <linearGradient id="gRed" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B5442E"/><stop offset="1" stop-color="#E07A52"/>
+    </linearGradient>
+    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B9892F"/><stop offset="1" stop-color="#DCB65F"/>
+    </linearGradient>
+    <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F7D61"/><stop offset="1" stop-color="#6FB58F"/>
+    </linearGradient>
+  </defs>
 
-  <!-- Panel A: compaction cliff -->
-  <rect x="30" y="85" width="340" height="245" rx="8" fill="#f7f9fc" stroke="#d8e0ea"/>
-  <text x="46" y="110" font-size="16" font-weight="bold" fill="#1a2332">压缩悬崖：安全规则保留率</text>
-  <line x1="55" y1="290" x2="355" y2="290" stroke="#94a3b8" stroke-width="1.5"/>
-  <!-- bars: 100, 53, 10 (5 rounds; round 0 = pre-compaction) -->
-  <rect x="85" y="120" width="50" height="170" fill="#94a3b8"/>
-  <rect x="175" y="200" width="50" height="90" fill="#f59e0b"/>
-  <rect x="265" y="273" width="50" height="17" fill="#dc2626"/>
-  <text x="110" y="212" font-size="12.5" text-anchor="middle" fill="#ffffff" font-weight="bold">100</text>
-  <text x="200" y="192" font-size="12.5" text-anchor="middle" fill="#92400e" font-weight="bold">53</text>
-  <text x="290" y="265" font-size="12.5" text-anchor="middle" fill="#b91c1c" font-weight="bold">10</text>
-  <text x="110" y="308" font-size="11.5" text-anchor="middle" fill="#5b6b7f">压缩前</text>
-  <text x="200" y="308" font-size="11.5" text-anchor="middle" fill="#5b6b7f">1 轮后</text>
-  <text x="290" y="308" font-size="11.5" text-anchor="middle" fill="#5b6b7f">5 轮后</text>
-  <text x="200" y="322" font-size="12" text-anchor="middle" fill="#5b6b7f">安全规则保留率 %（情景日志同比例被摘要）</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1128" cy="612" r="140" fill="#0F7B8A" opacity="0.06"/>
+  <circle cx="84" cy="118" r="110" fill="#2F6DA8" opacity="0.06"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gRed)"/>
 
-  <!-- Panel B: Knowledge Triage -->
-  <rect x="390" y="85" width="420" height="245" rx="8" fill="#f7f9fc" stroke="#d8e0ea"/>
-  <text x="406" y="110" font-size="16" font-weight="bold" fill="#1a2332">Knowledge Triage：按知识类型分流</text>
-  <rect x="406" y="124" width="388" height="40" rx="6" fill="#dbeafe" stroke="#2563eb"/>
-  <text x="600" y="149" font-size="13" text-anchor="middle" fill="#1e40af">分类器：每行知识归入四种类型，各走独立保留策略</text>
-  <line x1="600" y1="164" x2="600" y2="180" stroke="#2563eb" stroke-width="2"/>
-  <polygon points="594,178 606,178 600,188" fill="#2563eb"/>
-  <rect x="406" y="188" width="388" height="44" rx="6" fill="#ede9fe" stroke="#7c3aed"/>
-  <text x="420" y="207" font-size="13" fill="#5b21b6">TypeCompact：按类型保真度原地改写</text>
-  <text x="420" y="225" font-size="12.5" fill="#5b21b6">五轮后 recall 96% · 规则保留数为最强单次 LLM 压缩器 2-4 倍</text>
-  <rect x="406" y="240" width="388" height="44" rx="6" fill="#ede9fe" stroke="#7c3aed"/>
-  <text x="420" y="259" font-size="13" fill="#5b21b6">TypeDecompose：过大主题分区，规则跨区复制</text>
-  <text x="420" y="277" font-size="12.5" fill="#5b21b6">locality violation 0%（均匀分区 93%）</text>
-  <rect x="406" y="292" width="388" height="34" rx="6" fill="#ede9fe" stroke="#7c3aed"/>
-  <text x="420" y="314" font-size="13" fill="#5b21b6">TypeRetrieve：取回时 in-scope 规则置顶</text>
+  <text class="k" x="64" y="84">一分钟读论文 · 2026-08-26 · ARXIV:2608.22752</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#17303B">水落五次，堤坝见底</text>
+  <text x="64" y="158" font-size="15" fill="#5F7683">压缩悬崖：安全规则与情景日志同率摘要，逐字精确被逐轮磨掉</text>
 
-  <!-- Panel C: downstream -->
-  <rect x="830" y="85" width="340" height="245" rx="8" fill="#f7f9fc" stroke="#d8e0ea"/>
-  <text x="846" y="110" font-size="16" font-weight="bold" fill="#1a2332">下游行为基准（vs 生产压缩器）</text>
-  <text x="846" y="145" font-size="13.5" font-weight="bold" fill="#16a34a">医疗合规：p &lt; 1e-8（N=200，McNemar）</text>
-  <text x="846" y="175" font-size="13.5" font-weight="bold" fill="#16a34a">零售任务通过率：p &lt; 0.01（N=115）</text>
-  <text x="846" y="205" font-size="13.5" font-weight="bold" fill="#16a34a">航空域：p = 0.024</text>
-  <line x1="846" y1="222" x2="1154" y2="222" stroke="#d8e0ea"/>
-  <text x="846" y="247" font-size="12.5" fill="#1a2332">TypeRetrieve recall@50 = 100%</text>
-  <text x="846" y="269" font-size="12.5" fill="#1a2332">（最佳单次 LLM 检索器 73%）</text>
-  <text x="846" y="299" font-size="12.5" fill="#1a2332">开源 AgentArtifactCorpus：</text>
-  <text x="846" y="319" font-size="12.5" fill="#1a2332">396,934 个 agent 配置 · 54,628 个 GitHub 仓库</text>
+  <!-- dam motif: water level dropping over 5 rounds -->
+  <g>
+    <path d="M 1006 208 l -44 176 h 176 l -44 -176 z" fill="#3D5A73" opacity="0.14"/>
+    <path d="M 1006 208 l -44 176 h 176 l -44 -176 z" fill="none" stroke="#3D5A73" stroke-width="3" opacity="0.55"/>
+    <path d="M 986 260 h 112 l -14 -52 h -84 z" fill="url(#gBlue)" opacity="0.75"/>
+    <path d="M 1000 316 h 84 l -10 -38 h -64 z" fill="url(#gTeal)" opacity="0.6"/>
+    <path d="M 1016 364 h 52 l -8 -28 h -36 z" fill="url(#gGold)" opacity="0.7"/>
+    <path d="M 1060 386 l -22 0" stroke="#B5442E" stroke-width="4" stroke-linecap="round"/>
+    <text class="b" x="1062" y="418" text-anchor="middle">五轮压缩 · 水位到 10%</text>
+  </g>
 
-  <!-- Row 2: boundaries -->
-  <rect x="30" y="345" width="560" height="130" rx="8" fill="#fef9c3" stroke="#ca8a04"/>
-  <text x="46" y="370" font-size="15" font-weight="bold" fill="#854d0e">边界（论文自述）</text>
-  <text x="46" y="394" font-size="12.5" fill="#713f12">· 生产实测绑定 Claude Code /compact 提示 + Sonnet 4.6 × 20 配置</text>
-  <text x="46" y="414" font-size="12.5" fill="#713f12">· 其他工具与模型上的悬崖高度未测，外部可复现性中等</text>
-  <text x="46" y="434" font-size="12.5" fill="#713f12">· 整套机制依赖分类器正确识别安全规则行</text>
-  <text x="46" y="454" font-size="12.5" fill="#713f12">· 误分类会直接破坏分流策略，输出被校验器标记 unsafe</text>
+  <!-- slope chart: rules survival -->
+  <g>
+    <text class="rl" x="64" y="212">安全规则存活率</text>
+    <text class="b" x="64" y="232">Claude Code /compact × Sonnet 4.6 · 20 个生产配置</text>
 
-  <!-- Row 2: mechanism note -->
-  <rect x="610" y="345" width="560" height="130" rx="8" fill="#f7f9fc" stroke="#d8e0ea"/>
-  <text x="626" y="370" font-size="16" font-weight="bold" fill="#1a2332">为什么规则比日志更怕压缩</text>
-  <text x="626" y="396" font-size="13" fill="#1a2332">安全规则与情景日志竞争同一批 token，溢出时按同一比例被摘要；</text>
-  <text x="626" y="420" font-size="13" fill="#1a2332">但只有规则需要逐字精确才能保持可执行——摘要改写后，agent</text>
-  <text x="626" y="444" font-size="13" fill="#1a2332">失去的不是 token 数而是约束的可执行性。三个算子均为确定性</text>
-  <text x="626" y="468" font-size="13" fill="#1a2332">规则逻辑而非 LLM 调用，缺失任一约束即标记输出 unsafe。</text>
+    <line x1="330" y1="252" x2="330" y2="404" stroke="#DCE5E5"/>
+    <line x1="640" y1="252" x2="640" y2="404" stroke="#DCE5E5"/>
 
-  <!-- Row 3: conclusion -->
-  <rect x="30" y="495" width="1140" height="115" rx="8" fill="#ecfdf5" stroke="#16a34a"/>
-  <text x="46" y="522" font-size="16" font-weight="bold" fill="#14532d">核心结论</text>
-  <text x="46" y="548" font-size="14" fill="#14532d">长程 Agent 的上下文压缩是安全规则的系统性侵蚀源：五轮 /compact 后仅存 10%。按知识类型分流 + 确定性算子，</text>
-  <text x="46" y="572" font-size="14" fill="#14532d">五轮后保留率回到 96%，且下游医疗/零售/航空行为基准全面显著优于生产压缩器。</text>
-  <text x="46" y="596" font-size="12.5" fill="#15803d">The Compaction Cliff in Long-Running AI Agent Memory · arXiv 2608.22752</text>
+    <!-- plain compaction: 53 -> 10 -->
+    <path d="M 330 327 L 640 389" stroke="url(#gRed)" stroke-width="3"/>
+    <circle cx="330" cy="327" r="8" fill="url(#gGold)"/>
+    <circle cx="640" cy="389" r="8" fill="url(#gRed)"/>
+    <text class="val" x="352" y="320" fill="#7A5A14" font-size="20">53%</text>
+    <text class="val" x="662" y="396" fill="#8A2E22" font-size="20">10%</text>
+    <text class="rl" x="485" y="345" text-anchor="middle" fill="#8A2E22">同一比例摘要</text>
+
+    <!-- TypeCompact: 96 at five rounds -->
+    <path d="M 330 264 L 640 261" stroke="url(#gGreen)" stroke-width="3"/>
+    <circle cx="330" cy="264" r="8" fill="#6FB58F"/>
+    <circle cx="640" cy="261" r="8" fill="url(#gGreen)"/>
+    <text class="val" x="662" y="268" fill="#2F7D61" font-size="20">96%</text>
+    <text class="rl" x="485" y="252" text-anchor="middle" fill="#2F7D61">Knowledge Triage 分流</text>
+
+    <text class="b" x="330" y="426" text-anchor="middle">一轮后</text>
+    <text class="b" x="640" y="426" text-anchor="middle">五轮后 · recall</text>
+  </g>
+
+  <!-- right stat chips -->
+  <g>
+    <rect x="880" y="446" width="256" height="62" fill="#0F7B8A" opacity="0.09"/>
+    <text class="stat" x="896" y="480" fill="#0F7B8A" font-size="24">2-4 倍</text>
+    <text x="896" y="498" font-size="12.5" fill="#6B7078">各压缩率下存活的规则数 vs 最强 LLM 压缩器</text>
+  </g>
+
+  <!-- bottom chips -->
+  <line x1="64" y1="452" x2="836" y2="452" stroke="#DCE5E5"/>
+  <g>
+    <rect x="64" y="472" width="196" height="28" rx="14" fill="url(#gBlue)" opacity="0.16"/>
+    <text x="162" y="491" text-anchor="middle" class="chip" fill="#2F5E90">拆主题破坏 0% / 93%</text>
+    <text class="b" x="272" y="491">TypeDecompose 分区 vs 均匀分区</text>
+
+    <rect x="64" y="512" width="180" height="28" rx="14" fill="url(#gTeal)" opacity="0.16"/>
+    <text x="154" y="531" text-anchor="middle" class="chip" fill="#0B5E6A">取回 recall@50 100% / 73%</text>
+    <text class="b" x="256" y="531">规则优先置顶 vs 最佳单次 LLM 检索</text>
+
+    <rect x="64" y="552" width="150" height="28" rx="14" fill="url(#gGold)" opacity="0.2"/>
+    <text x="139" y="571" text-anchor="middle" class="chip" fill="#7A5A14">医疗域 p &lt; 1e-8</text>
+    <text class="b" x="226" y="571">对生产压缩器 McNemar · N=200</text>
+  </g>
+
+  <text class="serif" x="880" y="560" font-size="18" fill="#17303B">丢的不是 token，是可执行性。</text>
+  <text class="b" x="1136" y="640" text-anchor="end">实测绑定 Claude Code /compact 与 Sonnet 4.6 · 开源 396,934 个配置语料 · Micropaper</text>
 </svg>

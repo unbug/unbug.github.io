@@ -1,71 +1,103 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="端侧小模型专利信号与私有化部署工具机会信息图">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0f1b2d"/>
-      <stop offset="1" stop-color="#1c2f47"/>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #988C74; }
+      .b { font-size: 12px; fill: #8C97A3; }
+      .ev { font-size: 13px; font-weight: 700; fill: #1E2430; }
+      .evs { font-size: 12px; fill: #5C6672; }
+      .stat { font-size: 30px; font-weight: 700; fill: #1E2430; }
+      .unit { font-size: 14px; fill: #5C6672; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F4EC"/>
     </linearGradient>
-    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#233a56"/>
-      <stop offset="1" stop-color="#1b2d44"/>
+    <linearGradient id="axis" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2E5C8A"/><stop offset="1" stop-color="#B08D3E"/>
+    </linearGradient>
+    <linearGradient id="watch" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B08D3E"/><stop offset="1" stop-color="#E0C178"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
 
-  <!-- header -->
-  <text x="60" y="72" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="34" font-weight="700" fill="#e8eef7">AI 智创简报 · 端侧小模型专利成簇</text>
-  <text x="60" y="106" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="19" fill="#8fa8c4">私有化部署选型基准与降级路由工具 · 2026-05 ~ 2026-08 三件已公开申请</text>
-  <line x1="60" y1="128" x2="1140" y2="128" stroke="#3a5678" stroke-width="1.5"/>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1105" cy="612" r="130" fill="#2E5C8A" opacity="0.06"/>
+  <circle cx="80" cy="120" r="110" fill="#A63A50" opacity="0.05"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="#A63A50"/>
 
-  <!-- column 1: patent signal -->
-  <rect x="60" y="152" width="340" height="360" rx="14" fill="url(#card)" stroke="#3a5678"/>
-  <rect x="60" y="152" width="340" height="52" rx="14" fill="#2b4a6d"/>
-  <text x="84" y="186" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#7fc4ff">一 · 专利信号</text>
-  <g font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#c9d8ea" font-size="16">
-    <text x="84" y="248" font-family="Menlo, monospace" font-size="15" fill="#7fc4ff">US20260246629A1 · Blockchain Labs</text>
-    <text x="84" y="272">本地个人数据 AI 代理 + DID 签名</text>
-    <text x="84" y="324" font-family="Menlo, monospace" font-size="15" fill="#7fc4ff">US20260169789A1 · Microsoft</text>
-    <text x="84" y="348">边云分层多模型逐级升级</text>
-    <text x="84" y="400" font-family="Menlo, monospace" font-size="15" fill="#7fc4ff">US20260133859A1 · Mercedes-Benz</text>
-    <text x="84" y="424">SLM 深度/宽度剪枝跑车机函数调用</text>
-  </g>
-  <text x="84" y="484" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="14" fill="#728aa6">均为已公开申请（审查中），非授权</text>
+  <text class="k" x="64" y="84">AI 智创简报 · 专利情报速读 · 端侧小模型</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">大厂圈地端侧管道件</text>
+  <text x="64" y="158" font-size="15.5" fill="#5C6672">2026 年 5 至 8 月，三件「AI 不出设备」专利接连公开</text>
 
-  <!-- arrow 1 -->
-  <path d="M408 330 h34" stroke="#5b83ad" stroke-width="3" fill="none"/>
-  <path d="M436 322 l14 8 -14 8 z" fill="#5b83ad"/>
-
-  <!-- column 2: trend -->
-  <rect x="460" y="152" width="340" height="360" rx="14" fill="url(#card)" stroke="#3a5678"/>
-  <rect x="460" y="152" width="340" height="52" rx="14" fill="#2b4a6d"/>
-  <text x="484" y="186" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#7fc4ff">二 · 技术趋势</text>
-  <g font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#c9d8ea" font-size="16">
-    <text x="484" y="240">竞争点从模型转向架构件：</text>
-    <text x="484" y="270">数据溯源签名 · 分层路由 · 剪枝</text>
-    <text x="484" y="316">运行时已商品化：llama.cpp</text>
-    <text x="484" y="342">star 超 12.7 万 · GGUF 官方背书</text>
-    <text x="484" y="392">空档：量化版 × 硬件 × 任务的</text>
-    <text x="484" y="418">可验证选型证据无人提供</text>
+  <!-- pocket watch motif: local time, no cloud -->
+  <g>
+    <rect x="1042" y="98" width="36" height="12" rx="4" fill="#8C97A3"/>
+    <circle cx="1060" cy="100" r="7" fill="none" stroke="#8C97A3" stroke-width="4"/>
+    <circle cx="1060" cy="162" r="58" fill="url(#watch)"/>
+    <circle cx="1060" cy="162" r="46" fill="#FFFDF6"/>
+    <line x1="1060" y1="162" x2="1060" y2="128" stroke="#2E5C8A" stroke-width="4" stroke-linecap="round"/>
+    <line x1="1060" y1="162" x2="1084" y2="172" stroke="#A63A50" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="1060" cy="162" r="4" fill="#1E2430"/>
+    <line x1="1060" y1="120" x2="1060" y2="127" stroke="#7A5C28" stroke-width="3"/>
+    <line x1="1060" y1="197" x2="1060" y2="204" stroke="#7A5C28" stroke-width="3"/>
+    <line x1="1018" y1="162" x2="1025" y2="162" stroke="#7A5C28" stroke-width="3"/>
+    <line x1="1095" y1="162" x2="1102" y2="162" stroke="#7A5C28" stroke-width="3"/>
   </g>
 
-  <!-- arrow 2 -->
-  <path d="M808 330 h34" stroke="#5b83ad" stroke-width="3" fill="none"/>
-  <path d="M836 322 l14 8 -14 8 z" fill="#5b83ad"/>
+  <!-- patent timeline: 05-14=150, 06-18=447, 08-20=830 (per day ~2.02) -->
+  <line x1="150" y1="318" x2="830" y2="318" stroke="url(#axis)" stroke-width="4" stroke-linecap="round"/>
+  <text class="b" x="150" y="344">05-14</text>
+  <text class="b" x="830" y="344" text-anchor="end">08-20</text>
 
-  <!-- column 3: opportunity -->
-  <rect x="860" y="152" width="280" height="360" rx="14" fill="url(#card)" stroke="#3a5678"/>
-  <rect x="860" y="152" width="280" height="52" rx="14" fill="#2b4a6d"/>
-  <text x="884" y="186" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="#ffd479">三 · 一个人能做的</text>
-  <g font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#e6d9b8" font-size="16">
-    <text x="884" y="240">量化评测 CLI / 基准站</text>
-    <text x="884" y="266">Q4/Q5/Q8 × 速度 × 准确率</text>
-    <text x="884" y="316">边云降级路由模板</text>
-    <text x="884" y="342">本地优先 · 断网升级云 API</text>
-    <text x="884" y="392">交付：选型报告 ¥99-499/份</text>
-    <text x="884" y="418">私有化交付包 ¥5000 起/单</text>
+  <g>
+    <circle cx="150" cy="318" r="10" fill="#FFFFFF" stroke="#2E5C8A" stroke-width="3.5"/>
+    <line x1="150" y1="306" x2="150" y2="278" stroke="#8C97A3"/>
+    <text class="ev" x="150" y="256">05-14 · 奔驰</text>
+    <text class="evs" x="150" y="276">车机 SLM 剪枝跑通函数调用</text>
+
+    <circle cx="447" cy="318" r="10" fill="#FFFFFF" stroke="#2E5C8A" stroke-width="3.5"/>
+    <line x1="447" y1="330" x2="447" y2="358" stroke="#8C97A3"/>
+    <text class="ev" x="447" y="384">06-18 · 微软</text>
+    <text class="evs" x="447" y="404">边云分层，逐级升级处理</text>
+
+    <circle cx="830" cy="318" r="10" fill="#FFFFFF" stroke="#B08D3E" stroke-width="3.5"/>
+    <line x1="830" y1="306" x2="830" y2="278" stroke="#8C97A3"/>
+    <text class="ev" x="830" y="256" text-anchor="end">08-20 · Blockchain Labs</text>
+    <text class="evs" x="830" y="276" text-anchor="end">设备私钥签名的个人数据集</text>
   </g>
-  <text x="884" y="484" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="14" fill="#a69272">起步：自有硬件 + 电费 · 2-4 周 MVP</text>
+  <g>
+    <circle cx="150" cy="432" r="6" fill="#FFFFFF" stroke="#2E5C8A" stroke-width="2.5"/><text class="b" x="162" y="437">公开申请（审查中）</text>
+    <rect x="330" y="410" width="400" height="44" rx="9" fill="#2E5C8A" opacity="0.08"/>
+    <rect x="330" y="410" width="5" height="44" rx="2.5" fill="#2E5C8A"/>
+    <text x="352" y="430" font-size="13" font-weight="700" fill="#2E5C8A">竞争点从模型挪到架构件</text>
+    <text x="352" y="447" font-size="12.5" fill="#5C6672">数据溯源签名 · 模型分层 · 领域剪枝</text>
+  </g>
 
-  <!-- footer -->
-  <text x="60" y="566" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="17" fill="#8fa8c4">读者：接私有化部署单的个人开发者 — 数据不出内网的场景，缺的是能拿出手的验收数字</text>
-  <text x="60" y="596" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="14" fill="#5f7896">来源：Free Patents Online · GitHub ggml-org/llama.cpp · Hugging Face GGUF Docs</text>
+  <!-- opportunity cards -->
+  <g>
+    <rect x="64" y="484" width="352" height="140" rx="16" fill="#A63A50" opacity="0.08"/>
+    <rect x="64" y="484" width="352" height="6" rx="3" fill="#A63A50"/>
+    <rect x="92" y="514" width="44" height="28" rx="6" fill="#A63A50"/>
+    <circle cx="114" cy="528" r="7" fill="#FFFDF6"/>
+    <text class="stat" x="92" y="572">12.7 万</text>
+    <text class="unit" x="92" y="594">llama.cpp star</text>
+    <text class="evs" x="92" y="606">开源运行时已商品化</text>
+
+    <rect x="440" y="484" width="352" height="140" rx="16" fill="#B08D3E" opacity="0.1"/>
+    <rect x="440" y="484" width="352" height="6" rx="3" fill="#B08D3E"/>
+    <path d="M 468 536 l 10 -22 l 14 12 z" fill="#B08D3E"/>
+    <circle cx="486" cy="518" r="4" fill="#E0C178"/>
+    <text class="stat" x="500" y="580">无公开基准</text>
+    <text class="evs" x="468" y="606">哪个量化版在你的硬件够快？</text>
+
+    <rect x="816" y="484" width="320" height="140" rx="16" fill="#2E5C8A" opacity="0.08"/>
+    <rect x="816" y="484" width="320" height="6" rx="3" fill="#2E5C8A"/>
+    <circle cx="846" cy="528" r="15" fill="#2E5C8A"/>
+    <path d="M 846 519 v 9 l 6 4" stroke="#FFFDF6" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <text class="stat" x="874" y="572">2-4 周</text>
+    <text class="unit" x="874" y="594">1 人 MVP</text>
+    <text class="evs" x="844" y="606">评测 CLI＋边云降级路由模板</text>
+  </g>
+
+  <text class="b" x="64" y="660">三件均为已公开申请（审查中），非授权专利 · 定价与机会判断见正文 · Micropaper</text>
 </svg>

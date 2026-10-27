@@ -1,63 +1,108 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0f1c2e"/>
-      <stop offset="1" stop-color="#1e3050"/>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #A08F74; }
+      .dim { font-size: 16px; font-weight: 700; fill: #26201A; }
+      .ev { font-size: 13.5px; fill: #6E6252; }
+      .b { font-size: 12px; fill: #AB9C82; }
+      .hd { font-size: 12.5px; letter-spacing: 2px; fill: #A08F74; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F8F2E8"/>
+    </linearGradient>
+    <linearGradient id="gTomato" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D64533"/><stop offset="1" stop-color="#E8734F"/>
+    </linearGradient>
+    <linearGradient id="gBasil" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4E7A2E"/><stop offset="1" stop-color="#7FA243"/>
+    </linearGradient>
+    <linearGradient id="gTurmeric" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C8860D"/><stop offset="1" stop-color="#E4A93C"/>
+    </linearGradient>
+    <linearGradient id="gSaffron" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8A4B8C"/><stop offset="1" stop-color="#B06FB2"/>
+    </linearGradient>
+    <linearGradient id="gChili" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B5442E"/><stop offset="1" stop-color="#D64533"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <g stroke="#2c4468" stroke-width="1" opacity="0.5">
-    <line x1="0" y1="105" x2="1200" y2="105"/><line x1="0" y1="210" x2="1200" y2="210"/>
-    <line x1="0" y1="315" x2="1200" y2="315"/><line x1="0" y1="420" x2="1200" y2="420"/><line x1="0" y1="525" x2="1200" y2="525"/>
-  </g>
 
-  <!-- left: human search path (fading) -->
-  <g opacity="0.45">
-    <circle cx="180" cy="230" r="34" fill="none" stroke="#7d93b2" stroke-width="2.5"/>
-    <circle cx="180" cy="205" r="13" fill="#7d93b2"/>
-    <text x="180" y="305" fill="#a9bdd8" font-size="24" text-anchor="middle">人类搜索</text>
-    <text x="180" y="338" fill="#6f86a5" font-size="17" text-anchor="middle">SEO · 品牌 · 比价</text>
-    <path d="M 250 235 L 380 250" stroke="#7d93b2" stroke-width="2.5" stroke-dasharray="7 7" fill="none"/>
-  </g>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1118" cy="96" r="130" fill="#8A4B8C" opacity="0.05"/>
+  <circle cx="80" cy="640" r="110" fill="#C8860D" opacity="0.06"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gChili)"/>
 
-  <!-- right: agent selection path (highlight) -->
+  <text class="k" x="64" y="84">AI 范式雷达 · 2026-10-14 · AGENT SELECTED DISTRIBUTION</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#26201A">货架经济学：被 Agent 选中</text>
+  <text x="64" y="158" font-size="15" fill="#6E6252">16,893 个测量会话：提到不等于上架，货架正从人换给机器</text>
+
+  <!-- pantry motif: three-jar spice shelf -->
   <g>
-    <rect x="120" y="400" width="130" height="96" rx="12" fill="#16324f" stroke="#4da3ff" stroke-width="2.5"/>
-    <rect x="145" y="422" width="80" height="8" rx="3" fill="#4da3ff"/>
-    <rect x="145" y="440" width="58" height="8" rx="3" fill="#7dc0ff"/>
-    <rect x="145" y="458" width="70" height="8" rx="3" fill="#3f7bb5"/>
-    <text x="185" y="530" fill="#cfe3ff" font-size="24" text-anchor="middle">Coding Agent</text>
-    <text x="185" y="562" fill="#7fa3c8" font-size="17" text-anchor="middle">读文档 · 搜索 · 装包</text>
-    <path d="M 260 448 L 420 400" stroke="#4da3ff" stroke-width="3.5" fill="none"/>
-    <path d="M 420 400 l -16 -2 M -8 -14 l 24 16" stroke="#4da3ff" stroke-width="3.5" fill="none"/>
-  </g>
-
-  <!-- center shelf -->
-  <g>
-    <rect x="450" y="160" width="300" height="320" rx="16" fill="#152740" stroke="#3d5f8a" stroke-width="2"/>
-    <text x="600" y="205" fill="#e8f1fc" font-size="26" text-anchor="middle" font-weight="bold">新的货架</text>
-    <g font-size="20" fill="#a9c6e8">
-      <rect x="485" y="230" width="230" height="44" rx="8" fill="#1d3a5c"/>
-      <text x="600" y="259" text-anchor="middle">文档 / llms.txt</text>
-      <rect x="485" y="290" width="230" height="44" rx="8" fill="#1d3a5c"/>
-      <text x="600" y="319" text-anchor="middle">机器可读评价</text>
-      <rect x="485" y="350" width="230" height="44" rx="8" fill="#1d3a5c"/>
-      <text x="600" y="379" text-anchor="middle">免费档条款措辞</text>
-      <rect x="485" y="410" width="230" height="44" rx="8" fill="#1d3a5c"/>
-      <text x="600" y="439" text-anchor="middle">site: 可发现性</text>
+    <rect x="998" y="186" width="140" height="8" rx="3" fill="#A9743E"/>
+    <g>
+      <rect x="1010" y="122" width="34" height="56" rx="8" fill="url(#gTomato)" opacity="0.9"/>
+      <rect x="1016" y="112" width="22" height="12" rx="3" fill="#A9743E"/>
+      <rect x="1053" y="132" width="34" height="46" rx="8" fill="url(#gBasil)" opacity="0.9"/>
+      <rect x="1059" y="122" width="22" height="12" rx="3" fill="#A9743E"/>
+      <rect x="1096" y="116" width="34" height="62" rx="8" fill="url(#gTurmeric)" opacity="0.9"/>
+      <rect x="1102" y="106" width="22" height="12" rx="3" fill="#A9743E"/>
     </g>
+    <text class="hd" x="1068" y="216" text-anchor="middle">给 Agent 的新货架</text>
   </g>
 
-  <!-- outcome: tool chosen -->
-  <path d="M 760 320 L 880 320" stroke="#5fd4a8" stroke-width="3.5" fill="none"/>
-  <path d="M 880 320 l -18 -9 M 880 320 l -18 9" stroke="#5fd4a8" stroke-width="3.5" fill="none"/>
+  <!-- mention vs shelf- stocked rows: hollow = mentioned, solid gradient = wins -->
+  <text class="hd" x="292" y="212" text-anchor="end">提及次数</text>
+  <text class="hd" x="806" y="212">真正中选</text>
+
+  <rect x="240" y="230" width="760" height="46" rx="10" fill="#D64533" opacity="0.08"/>
+  <text class="dim" x="280" y="259">PayPal</text>
+  <rect x="380" y="246" width="236" height="16" rx="8" fill="#FFFFFF" stroke="#BFB29B" stroke-width="1.6"/>
+  <text class="ev" x="628" y="259">139</text>
+  <line x1="666" y1="254" x2="794" y2="254" stroke="#D8CBB4" stroke-width="2.5"/>
+  <circle cx="798" cy="254" r="9" fill="none" stroke="#BFB29B" stroke-width="1.8"/>
+  <text x="818" y="260" font-size="17" font-weight="700" fill="#B5442E">0</text>
+  <text class="ev" x="846" y="259">124 场被 Stripe 赢走</text>
+
+  <rect x="240" y="292" width="760" height="46" rx="10" fill="#4E7A2E" opacity="0.08"/>
+  <text class="dim" x="280" y="321">Adyen</text>
+  <rect x="380" y="308" width="297" height="16" rx="8" fill="#FFFFFF" stroke="#BFB29B" stroke-width="1.6"/>
+  <text class="ev" x="689" y="321">175</text>
+  <line x1="720" y1="316" x2="794" y2="316" stroke="#D8CBB4" stroke-width="2.5"/>
+  <circle cx="798" cy="316" r="9" fill="url(#gBasil)"/>
+  <text x="818" y="322" font-size="17" font-weight="700" fill="#4E7A2E">3</text>
+  <text class="ev" x="846" y="321">194 提及的 LangChain 也仅 4</text>
+
+  <rect x="240" y="354" width="760" height="46" rx="10" fill="#C8860D" opacity="0.08"/>
+  <text class="dim" x="280" y="383">Netlify</text>
+  <rect x="380" y="370" width="258" height="16" rx="8" fill="#FFFFFF" stroke="#BFB29B" stroke-width="1.6"/>
+  <text class="ev" x="650" y="383">152</text>
+  <line x1="686" y1="378" x2="794" y2="378" stroke="#D8CBB4" stroke-width="2.5"/>
+  <circle cx="798" cy="378" r="9" fill="url(#gTurmeric)"/>
+  <text x="818" y="384" font-size="17" font-weight="700" fill="#A06B08">6</text>
+  <text class="ev" x="846" y="383">提及最多的 Supabase 被 Neon 压制</text>
+
+  <!-- three splits strip -->
   <g>
-    <rect x="895" y="255" width="200" height="130" rx="14" fill="#12351f" stroke="#5fd4a8" stroke-width="2.5"/>
-    <text x="995" y="305" fill="#b8f0d5" font-size="24" text-anchor="middle" font-weight="bold">被 Agent 选中</text>
-    <text x="995" y="345" fill="#79c9a2" font-size="18" text-anchor="middle">新的分发渠道</text>
+    <rect x="64" y="448" width="340" height="118" rx="12" fill="#D64533" opacity="0.07"/>
+    <rect x="64" y="448" width="340" height="6" rx="3" fill="url(#gTomato)"/>
+    <text class="serif" x="88" y="502" font-size="28" font-weight="700" fill="#26201A">42%</text>
+    <text class="ev" x="88" y="528">三 Agent 同场景选同一工具</text>
+    <text class="b" x="88" y="550">厂商自述 · trace 据称公开可复算</text>
+
+    <rect x="430" y="448" width="340" height="118" rx="12" fill="#8A4B8C" opacity="0.07"/>
+    <rect x="430" y="448" width="340" height="6" rx="3" fill="url(#gSaffron)"/>
+    <text class="serif" x="454" y="502" font-size="28" font-weight="700" fill="#26201A">189,934 条评价</text>
+    <text class="ev" x="454" y="528">一周自述涨约 30-60 倍</text>
+    <text class="b" x="454" y="550">agent.reviews 页面自述口径</text>
+
+    <rect x="796" y="448" width="340" height="118" rx="12" fill="#4E7A2E" opacity="0.07"/>
+    <rect x="796" y="448" width="340" height="6" rx="3" fill="url(#gBasil)"/>
+    <text class="serif" x="820" y="502" font-size="28" font-weight="700" fill="#26201A">0 星</text>
+    <text class="ev" x="820" y="528">GitHub 仓库 · 中立性为零</text>
+    <text class="b" x="820" y="550">测量者、货架、增长服务同一家</text>
   </g>
 
-  <!-- title strip -->
-  <text x="600" y="80" fill="#8fb4dd" font-size="24" text-anchor="middle" letter-spacing="6">AI 范式雷达</text>
-  <text x="600" y="605" fill="#6f86a5" font-size="18" text-anchor="middle">工具的分发对象，正在从人变成 Agent · 42% 一致率 / 16,893 会话测量 / agent.reviews</text>
+  <line x1="64" y1="596" x2="1136" y2="596" stroke="#E9E0CC"/>
+  <text class="b" x="64" y="624">窄场景：新引入第三方服务的选择瞬间 · 无独立第三方复现 · 利益相关方发起的测量 · Micropaper</text>
 </svg>

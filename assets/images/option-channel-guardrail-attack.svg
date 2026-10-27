@@ -1,48 +1,104 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
-  <rect width="1200" height="630" fill="#f7f8fa"/>
-  <rect x="0" y="0" width="1200" height="86" fill="#1f2a44"/>
-  <text x="48" y="40" fill="#ffffff" font-size="26" font-weight="bold">选项通道攻击：安全闸门比抛硬币更不可靠</text>
-  <text x="48" y="68" fill="#aeb9d4" font-size="15">arXiv 2610.12292 · 七个开源权重模型审计 · 预印本（2026-10-08 提交，未经同行评审）</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #93947F; }
+      .rl { font-size: 15px; fill: #3C4249; }
+      .val { font-size: 20px; font-weight: 700; }
+      .b { font-size: 12px; fill: #A2A38E; }
+      .hd { font-size: 12.5px; letter-spacing: 2px; fill: #7B7C66; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F5F7F4"/>
+    </linearGradient>
+    <linearGradient id="gRed" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B03A2E"/><stop offset="1" stop-color="#DC7A5F"/>
+    </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0E7C7B"/><stop offset="1" stop-color="#5FB3A9"/>
+    </linearGradient>
+    <linearGradient id="gAmber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C98A1B"/><stop offset="1" stop-color="#E9BE62"/>
+    </linearGradient>
+    <linearGradient id="gDenim" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#33628F"/><stop offset="1" stop-color="#6E97BE"/>
+    </linearGradient>
+    <linearGradient id="gCopper" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B4622A"/><stop offset="1" stop-color="#DB9355"/>
+    </linearGradient>
+  </defs>
 
-  <rect x="48" y="114" width="340" height="330" rx="10" fill="#ffffff" stroke="#d8dee9"/>
-  <text x="72" y="152" fill="#1f2a44" font-size="19" font-weight="bold">审计结论</text>
-  <text x="72" y="188" fill="#4a5568" font-size="15">放行-拦截决策准确率</text>
-  <rect x="72" y="204" width="272" height="46" rx="6" fill="#fde8e8"/>
-  <text x="208" y="234" fill="#c0392b" font-size="24" font-weight="bold" text-anchor="middle">36% – 72%</text>
-  <text x="72" y="282" fill="#4a5568" font-size="15">随机水平（抛硬币）</text>
-  <rect x="72" y="298" width="272" height="40" rx="6" fill="#eef1f6"/>
-  <text x="208" y="324" fill="#4a5568" font-size="21" font-weight="bold" text-anchor="middle">50%</text>
-  <text x="72" y="372" fill="#718096" font-size="13">跨提示注入 / 越狱 / 有毒内容三类任务；</text>
-  <text x="72" y="392" fill="#718096" font-size="13">有模型低于随机水平</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1106" cy="110" r="140" fill="#B03A2E" opacity="0.06"/>
+  <circle cx="76" cy="618" r="115" fill="#0E7C7B" opacity="0.07"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="#B5442E"/>
 
-  <rect x="430" y="114" width="340" height="330" rx="10" fill="#ffffff" stroke="#d8dee9"/>
-  <text x="454" y="152" fill="#1f2a44" font-size="19" font-weight="bold">两个攻击：不碰被审内容</text>
-  <text x="454" y="190" fill="#4a5568" font-size="15">攻击一：六行无关服务器日志</text>
-  <text x="454" y="216" fill="#718096" font-size="13">（该策略原本能判对的闸门）</text>
-  <rect x="454" y="230" width="292" height="42" rx="6" fill="#fdf0e2"/>
-  <text x="600" y="258" fill="#b7791f" font-size="20" font-weight="bold" text-anchor="middle">fail-open 0% → 63%</text>
-  <text x="454" y="306" fill="#4a5568" font-size="15">攻击二：只改宽松选项的名字</text>
-  <text x="454" y="332" fill="#718096" font-size="13">（选项定义与被判文本均不动）</text>
-  <rect x="454" y="346" width="292" height="42" rx="6" fill="#fde8e8"/>
-  <text x="600" y="374" fill="#c0392b" font-size="20" font-weight="bold" text-anchor="middle">93% – 100% · 四个模型</text>
-  <text x="454" y="420" fill="#718096" font-size="13">仅限把标签放进模型输入的四个模型</text>
+  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2610.12292 · 南加州大学</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">一个名字，洞开闸门</text>
+  <text x="64" y="158" font-size="15.5" fill="#63685E">七个开源模型站岗：不碰被审内容，只改选项名字就能放行</text>
 
-  <rect x="812" y="114" width="340" height="330" rx="10" fill="#ffffff" stroke="#d8dee9"/>
-  <text x="836" y="152" fill="#1f2a44" font-size="19" font-weight="bold">防御：全部失守，除一条</text>
-  <text x="836" y="190" fill="#4a5568" font-size="15">被测防御全部被破解</text>
-  <text x="836" y="214" fill="#718096" font-size="13">置信度升级人工复核也无效：</text>
-  <text x="836" y="234" fill="#718096" font-size="13">被翻转的决策置信度并不更低</text>
-  <rect x="836" y="256" width="292" height="88" rx="6" fill="#e6f4ea"/>
-  <text x="850" y="286" fill="#1e7d43" font-size="15" font-weight="bold">字段类型化 + 确定性规则</text>
-  <text x="850" y="312" fill="#1e7d43" font-size="22" font-weight="bold">六条策略 100%</text>
-  <text x="850" y="334" fill="#1e7d43" font-size="12">消除选项名攻击</text>
-  <text x="836" y="384" fill="#b7791f" font-size="14" font-weight="bold">反转：规则能判 → 这条通道上</text>
-  <text x="836" y="406" fill="#b7791f" font-size="14" font-weight="bold">模型变得不必要</text>
+  <!-- fire alarm panel illustration -->
+  <g>
+    <rect x="918" y="196" width="150" height="106" rx="10" fill="url(#gDenim)"/>
+    <rect x="934" y="212" width="118" height="14" rx="7" fill="#F5F7F4" opacity="0.85"/>
+    <circle cx="952" cy="252" r="13" fill="url(#gRed)"/>
+    <circle cx="993" cy="252" r="13" fill="url(#gAmber)"/>
+    <circle cx="1034" cy="252" r="13" fill="url(#gTeal)"/>
+    <rect x="934" y="278" width="118" height="10" rx="5" fill="#F5F7F4" opacity="0.5"/>
+    <path d="M 975 176 a 18 18 0 0 1 36 0 z" fill="url(#gRed)"/>
+    <text class="hd" x="993" y="332" text-anchor="middle">警铃面板</text>
+  </g>
 
-  <rect x="48" y="470" width="1104" height="66" rx="10" fill="#fff8e1" stroke="#e6c97a"/>
-  <text x="72" y="498" fill="#8a6d1a" font-size="14" font-weight="bold">边界</text>
-  <text x="128" y="498" fill="#6b5b23" font-size="14">合成套件为作者自建，非工业真实流量；确定性规则的 100% 限于字段可类型化解析的六条策略；</text>
-  <text x="128" y="522" fill="#6b5b23" font-size="14">数字待独立复现。作者口径：这类模型可减少送人工复核的量，但不应做最终决定的那个组件。</text>
+  <!-- accuracy dumbbells vs coin-flip line -->
+  <g>
+    <text class="hd" x="64" y="216">闸门岗位考核 · 放行-拦截决策准确率</text>
+    <line x1="470" y1="236" x2="470" y2="474" stroke="#B98A2F" stroke-width="2" stroke-dasharray="6 5"/>
+    <text class="b" x="470" y="230" text-anchor="middle" fill="#8A6714">随机水平 50%</text>
 
-  <text x="48" y="586" fill="#a0aec0" font-size="13">一分钟读论文 · 2026-10 · 数字口径：论文 abs 与 HTML 全文逐字核验（2026-10-11）</text>
+    <rect x="64" y="252" width="790" height="48" fill="#33628F" opacity="0.07"/>
+    <text class="rl" x="84" y="282">最差模型</text>
+    <line x1="470" y1="276" x2="369.2" y2="276" stroke="url(#gRed)" stroke-width="3"/>
+    <circle cx="470" cy="276" r="7" fill="#FFFFFF" stroke="#8A8B79" stroke-width="3"/>
+    <circle cx="369.2" cy="276" r="9" fill="url(#gRed)"/>
+    <text class="val" x="349" y="283" text-anchor="end" fill="#B03A2E">36%</text>
+    <text class="b" x="500" y="282">低于抛硬币</text>
+
+    <rect x="64" y="312" width="790" height="48" fill="#0E7C7B" opacity="0.08"/>
+    <text class="rl" x="84" y="342">最好模型</text>
+    <line x1="470" y1="336" x2="674" y2="336" stroke="url(#gTeal)" stroke-width="3"/>
+    <circle cx="470" cy="336" r="7" fill="#FFFFFF" stroke="#8A8B79" stroke-width="3"/>
+    <circle cx="674" cy="336" r="9" fill="url(#gTeal)"/>
+    <text class="val" x="694" y="343" fill="#0E7C7B">72%</text>
+
+    <rect x="64" y="372" width="790" height="48" fill="#B4622A" opacity="0.08"/>
+    <text class="rl" x="84" y="402">确定性规则</text>
+    <line x1="470" y1="396" x2="914" y2="396" stroke="url(#gCopper)" stroke-width="3"/>
+    <circle cx="470" cy="396" r="7" fill="#FFFFFF" stroke="#8A8B79" stroke-width="3"/>
+    <circle cx="914" cy="396" r="9" fill="url(#gCopper)"/>
+    <text class="val" x="934" y="403" fill="#B4622A">100%</text>
+    <text class="b" x="64" y="444">七模型跨提示注入、越狱、有毒内容三类任务 · 规则在六条可类型化策略上全对</text>
+
+    <rect x="64" y="458" width="790" height="40" fill="#B03A2E" opacity="0.06"/>
+    <text class="rl" x="84" y="484">两类错误分开报</text>
+    <text class="b" x="290" y="484">fail-open 放行违规是漏洞 · fail-closed 拦截合规只是成本</text>
+  </g>
+
+  <!-- right: two attacks -->
+  <g>
+    <rect x="880" y="372" width="256" height="64" fill="#B03A2E" opacity="0.08"/>
+    <text class="rl" x="898" y="396">攻击一 · 六行无关日志</text>
+    <text class="serif" x="898" y="424" font-size="19" font-weight="700" fill="#B03A2E">fail-open 0% → 63%</text>
+
+    <rect x="880" y="446" width="256" height="64" fill="#B4622A" opacity="0.09"/>
+    <text class="rl" x="898" y="470">攻击二 · 只改宽松选项名</text>
+    <text class="serif" x="898" y="498" font-size="19" font-weight="700" fill="#B4622A">违规放行率 93% → 100%</text>
+
+    <rect x="880" y="520" width="256" height="64" fill="#0E7C7B" opacity="0.09"/>
+    <text class="rl" x="898" y="544">唯一守住的防御</text>
+    <text class="serif" x="898" y="572" font-size="19" font-weight="700" fill="#0E7C7B">辞退模型，换成规则</text>
+  </g>
+
+  <line x1="64" y1="608" x2="1136" y2="608" stroke="#E3E5DA"/>
+  <text class="serif" x="64" y="638" font-size="15.5" fill="#3C4249">防御全线失守；置信度阈值升级人工复核也没用。</text>
+  <text class="b" x="1136" y="638" text-anchor="end">预印本未经同行评审 · 合成套件为作者自建 · Micropaper</text>
 </svg>

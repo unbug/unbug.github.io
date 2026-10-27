@@ -1,56 +1,91 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
-  <rect width="1200" height="630" fill="#0f1c2e"/>
-  <rect x="0" y="0" width="1200" height="8" fill="#3d7ebf"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #A6A290; }
+      .rl { font-size: 15px; fill: #4A4436; }
+      .val { font-size: 17px; font-weight: 700; }
+      .b { font-size: 12px; fill: #A8A28E; }
+      .hd { font-size: 12.5px; letter-spacing: 2px; fill: #8F8974; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F8F6F0"/>
+    </linearGradient>
+    <linearGradient id="gYellow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E8B21E"/><stop offset="1" stop-color="#F4D06F"/>
+    </linearGradient>
+    <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D9622B"/><stop offset="1" stop-color="#F0996B"/>
+    </linearGradient>
+    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3D6B8E"/><stop offset="1" stop-color="#7FA3BE"/>
+    </linearGradient>
+    <linearGradient id="gGray" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7D848C"/><stop offset="1" stop-color="#A9AFB6"/>
+    </linearGradient>
+  </defs>
 
-  <text x="60" y="72" fill="#8fb7dd" font-size="24" letter-spacing="4">AI 智创简报 · 机会情报</text>
-  <text x="60" y="128" fill="#ffffff" font-size="40" font-weight="bold">Agent 权限拦截专利成簇</text>
-  <text x="60" y="172" fill="#c5d8ec" font-size="26">独立开发者的守门中间件</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1104" cy="118" r="150" fill="#3D6B8E" opacity="0.05"/>
+  <circle cx="80" cy="620" r="120" fill="#E8B21E" opacity="0.08"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gOrange)"/>
 
-  <!-- Column 1: 专利信号 -->
-  <rect x="60" y="210" width="340" height="330" rx="10" fill="#16273d" stroke="#2c4a6e"/>
-  <text x="85" y="252" fill="#5ea3e0" font-size="22" font-weight="bold">专利信号 2026.04-08</text>
-  <line x1="85" y1="266" x2="375" y2="266" stroke="#2c4a6e"/>
-  <text x="85" y="300" fill="#e8f1f9" font-size="17" font-weight="bold">US20260238651A1</text>
-  <text x="85" y="324" fill="#a8c2da" font-size="15">进程级拦截层 · 五阶段绕过识别</text>
-  <text x="85" y="358" fill="#e8f1f9" font-size="17" font-weight="bold">US12670045 · Mistral AI</text>
-  <text x="85" y="382" fill="#a8c2da" font-size="15">沙箱暂停重放 · 已授权</text>
-  <text x="85" y="416" fill="#e8f1f9" font-size="17" font-weight="bold">US12688261 · Daon</text>
-  <text x="85" y="440" fill="#a8c2da" font-size="15">委托凭证发放 · 已授权</text>
-  <text x="85" y="474" fill="#e8f1f9" font-size="17" font-weight="bold">US20260119551A1 · Boomi</text>
-  <text x="85" y="498" fill="#a8c2da" font-size="15">护栏语义自动扩展</text>
+  <text class="k" x="64" y="84">AI 智创简报 · 2026-03 ~ 2026-08 · AGENT GUARDRAIL PATENTS</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#26221A">权限拦到进程级，本地守门还空着</text>
+  <text x="64" y="158" font-size="15" fill="#6B6450">平台与云侧被圈地，个人机器上的轻量闸门无标配</text>
 
-  <!-- Arrow -->
-  <path d="M410 375 L450 375 M440 365 L450 375 L440 385" stroke="#5ea3e0" stroke-width="3" fill="none"/>
+  <!-- construction crane icon -->
+  <g>
+    <line x1="1064" y1="210" x2="1064" y2="112" stroke="#7D848C" stroke-width="6"/>
+    <line x1="1064" y1="112" x2="1156" y2="112" stroke="#E8B21E" stroke-width="6"/>
+    <line x1="1064" y1="112" x2="1010" y2="140" stroke="#E8B21E" stroke-width="4"/>
+    <line x1="1136" y1="112" x2="1136" y2="158" stroke="#7D848C" stroke-width="2.5"/>
+    <rect x="1122" y="158" width="28" height="20" rx="3" fill="url(#gOrange)"/>
+    <path d="M 1036 210 l 56 0 l -10 -18 l -36 0 z" fill="#7D848C"/>
+    <text class="hd" x="1076" y="238" text-anchor="middle">工地闸门</text>
+  </g>
 
-  <!-- Column 2: 技术趋势 -->
-  <rect x="460" y="210" width="340" height="330" rx="10" fill="#16273d" stroke="#2c4a6e"/>
-  <text x="485" y="252" fill="#5ea3e0" font-size="22" font-weight="bold">技术趋势</text>
-  <line x1="485" y1="266" x2="775" y2="266" stroke="#2c4a6e"/>
-  <text x="485" y="300" fill="#e8f1f9" font-size="18" font-weight="bold">权限从提示词挪进操作系统</text>
-  <text x="485" y="336" fill="#a8c2da" font-size="16">· 模型进程之外的独立拦截件</text>
-  <text x="485" y="366" fill="#a8c2da" font-size="16">· 分级策略 + 委托凭证 + 审计账本</text>
-  <text x="485" y="396" fill="#a8c2da" font-size="16">· 企业网关闸门面向甲方集中部署</text>
-  <rect x="485" y="420" width="290" height="92" rx="8" fill="#1e3a5c"/>
-  <text x="500" y="450" fill="#ffd27a" font-size="16" font-weight="bold">空白地带</text>
-  <text x="500" y="478" fill="#e8f1f9" font-size="16">跨客户端 · 策略即代码</text>
-  <text x="500" y="502" fill="#e8f1f9" font-size="16">装在自己机器上的守门层</text>
+  <!-- four patent rows: lane bands -->
+  <g>
+    <rect x="64" y="206" width="920" height="64" rx="10" fill="#3D6B8E" opacity="0.07"/>
+    <rect x="64" y="282" width="920" height="64" rx="10" fill="#D9622B" opacity="0.07"/>
+    <rect x="64" y="358" width="920" height="64" rx="10" fill="#E8B21E" opacity="0.08"/>
+    <rect x="64" y="434" width="920" height="64" rx="10" fill="#7D848C" opacity="0.08"/>
 
-  <!-- Arrow -->
-  <path d="M810 375 L850 375 M840 365 L850 375 L840 385" stroke="#5ea3e0" stroke-width="3" fill="none"/>
+    <text class="rl" x="88" y="244" font-weight="700" fill="#2F5670">拦截进程</text>
+    <text x="216" y="244" font-size="13.5" fill="#6B6450">独立系统进程，权限高于 LLM，动作全入哈希链</text>
+    <rect x="640" y="228" width="150" height="16" rx="8" fill="url(#gBlue)"/>
+    <text class="val" x="806" y="243" fill="#2F5670">2026-08 公开</text>
 
-  <!-- Column 3: 一个人能做的 -->
-  <rect x="860" y="210" width="280" height="330" rx="10" fill="#1c3350" stroke="#5ea3e0"/>
-  <text x="885" y="252" fill="#ffd27a" font-size="22" font-weight="bold">一个人能做的</text>
-  <line x1="885" y1="266" x2="1115" y2="266" stroke="#3d6a94"/>
-  <text x="885" y="300" fill="#ffffff" font-size="17" font-weight="bold">本地工具调用代理</text>
-  <text x="885" y="328" fill="#c5d8ec" font-size="15">白名单 + 审批队列 + 只追加日志</text>
-  <text x="885" y="368" fill="#ffffff" font-size="17" font-weight="bold">开源守门器 + 策略包</text>
-  <text x="885" y="396" fill="#c5d8ec" font-size="15">$19-49/月 · 独立开发者获客</text>
-  <text x="885" y="436" fill="#ffffff" font-size="17" font-weight="bold">权限审计服务</text>
-  <text x="885" y="464" fill="#c5d8ec" font-size="15">单次 3000-6000 元 · 验收方付费</text>
-  <rect x="885" y="486" width="230" height="36" rx="6" fill="#2b5788"/>
-  <text x="1000" y="510" fill="#ffffff" font-size="16" text-anchor="middle">月成本数百元 · 4 周 MVP</text>
+    <text class="rl" x="88" y="320" font-weight="700" fill="#A8481E">沙箱暂停</text>
+    <text x="216" y="320" font-size="13.5" fill="#6B6450">Mistral：待决调用暂停、客户端执行、重放续跑</text>
+    <rect x="640" y="304" width="196" height="16" rx="8" fill="url(#gOrange)"/>
+    <text class="val" x="852" y="319" fill="#A8481E">2026-06-30 授权</text>
 
-  <text x="60" y="590" fill="#6f8dab" font-size="15">今天能做：给编码 Agent 写拒绝清单钩子，拦下 git push / 批量删除 / 对外 POST</text>
-  <text x="1140" y="590" fill="#6f8dab" font-size="15" text-anchor="end">Micropaper · 2026-09-07</text>
+    <text class="rl" x="88" y="396" font-weight="700" fill="#8F6D12">委托凭证</text>
+    <text x="216" y="396" font-size="13.5" fill="#6B6450">Daon：行为忠实 + 执行完整性，才发限时限权凭据</text>
+    <rect x="640" y="380" width="196" height="16" rx="8" fill="url(#gYellow)"/>
+    <text class="val" x="852" y="395" fill="#8F6D12">2026-07-21 授权</text>
+
+    <text class="rl" x="88" y="472" font-weight="700" fill="#565C63">护栏自扩</text>
+    <text x="216" y="472" font-size="13.5" fill="#6B6450">Boomi：基础护栏拆成语义元素，自动跟上新话术</text>
+    <rect x="640" y="456" width="150" height="16" rx="8" fill="url(#gGray)"/>
+    <text class="val" x="806" y="471" fill="#565C63">2026-04 公开</text>
+  </g>
+
+  <!-- empty gap meter -->
+  <g>
+    <rect x="64" y="532" width="920" height="52" rx="10" fill="#D9622B" opacity="0.07"/>
+    <text class="serif" x="88" y="565" font-size="20" font-weight="700" fill="#26221A">空白位：跨客户端 · 策略即代码 · 装在自己机器上</text>
+    <text x="872" y="565" font-size="13" fill="#A8481E" text-anchor="end" font-weight="700">尚无标配产品</text>
+  </g>
+
+  <!-- right stats -->
+  <g>
+    <text class="serif" x="1136" y="330" text-anchor="end" font-size="28" font-weight="700" fill="#26221A">审计单次<tspan fill="#D9622B"> 3000–6000 元</tspan></text>
+    <text class="b" x="1136" y="354" text-anchor="end">守门器 $19–49/月 · 4 周 MVP</text>
+  </g>
+
+  <line x1="64" y1="608" x2="1136" y2="608" stroke="#E7E2D2"/>
+  <text class="b" x="64" y="638">一、四为已公开申请，二、三为已授权专利 · 客户场景与价格为本简报创业建议 · Micropaper</text>
 </svg>

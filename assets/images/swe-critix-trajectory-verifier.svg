@@ -1,52 +1,99 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
-  <rect width="1200" height="630" fill="#f7f8fa"/>
-  <rect x="0" y="0" width="1200" height="86" fill="#1f2a44"/>
-  <text x="48" y="40" fill="#ffffff" font-size="26" font-weight="bold">交付验收需要一个会说理由的裁判</text>
-  <text x="48" y="68" fill="#aeb9d4" font-size="15">arXiv 2610.13356 · SWE-Critix 编程 agent 轨迹通用裁判后训练 · 预印本（2026-10-09，未经同行评审）</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8C9A97; }
+      .rl { font-size: 15px; fill: #3C4A48; }
+      .val { font-size: 17px; font-weight: 700; }
+      .b { font-size: 12px; fill: #98A6A2; }
+      .chip { font-size: 11.5px; font-weight: 700; fill: #FFFFFF; letter-spacing: 2px; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F0F7F5"/>
+    </linearGradient>
+    <linearGradient id="gSea" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0E7490"/><stop offset="1" stop-color="#3FA9BF"/>
+    </linearGradient>
+    <linearGradient id="gCoral" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#EE6C4D"/><stop offset="1" stop-color="#F79B7C"/>
+    </linearGradient>
+    <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#43AA8B"/><stop offset="1" stop-color="#7BCFB4"/>
+    </linearGradient>
+    <linearGradient id="gCyan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00B4D8"/><stop offset="1" stop-color="#66D9EF"/>
+    </linearGradient>
+    <linearGradient id="gViolet" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7B5EA7"/><stop offset="1" stop-color="#A98CCB"/>
+    </linearGradient>
+  </defs>
 
-  <rect x="48" y="114" width="340" height="330" rx="10" fill="#ffffff" stroke="#d8dee9"/>
-  <text x="72" y="150" fill="#1f2a44" font-size="19" font-weight="bold">缺口：没有现成判据</text>
-  <text x="72" y="186" fill="#4a5568" font-size="14">端到端软件工程任务常缺</text>
-  <text x="72" y="210" fill="#4a5568" font-size="14">「预言机评测器」——任务自带的</text>
-  <text x="72" y="234" fill="#4a5568" font-size="14">可机械执行成功判据</text>
-  <text x="72" y="272" fill="#4a5568" font-size="14">轨迹含数百次迭代交互，</text>
-  <text x="72" y="296" fill="#4a5568" font-size="14">人工复核成本极高</text>
-  <rect x="72" y="318" width="292" height="80" rx="6" fill="#eef1f6"/>
-  <text x="86" y="346" fill="#37476a" font-size="13">现有两条路都不够：通用 LLM 裸当裁判</text>
-  <text x="86" y="368" fill="#37476a" font-size="13">不训练；专用 critic 只出标量分，</text>
-  <text x="86" y="390" fill="#37476a" font-size="13">分数无法审计、不解释失败原因</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1110" cy="600" r="150" fill="#00B4D8" opacity="0.06"/>
+  <circle cx="80" cy="622" r="110" fill="#43AA8B" opacity="0.06"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gCoral)"/>
 
-  <rect x="410" y="114" width="380" height="330" rx="10" fill="#ffffff" stroke="#d8dee9"/>
-  <text x="434" y="150" fill="#1f2a44" font-size="19" font-weight="bold">完成判定分类准确率（held-out）</text>
-  <text x="434" y="184" fill="#4a5568" font-size="14">基座 Qwen3-30B-A3B</text>
-  <rect x="434" y="194" width="171" height="26" rx="4" fill="#eef1f6"/>
-  <text x="615" y="213" fill="#4a5568" font-size="16" font-weight="bold">57%</text>
-  <text x="434" y="254" fill="#4a5568" font-size="14">+ 监督微调 SFT</text>
-  <rect x="434" y="264" width="198" height="26" rx="4" fill="#fdf0e2"/>
-  <text x="642" y="283" fill="#b7791f" font-size="16" font-weight="bold">66%</text>
-  <text x="434" y="324" fill="#4a5568" font-size="14">+ 强化学习 RL</text>
-  <rect x="434" y="334" width="234" height="26" rx="4" fill="#e6f4ea"/>
-  <text x="678" y="353" fill="#1e7d43" font-size="16" font-weight="bold">78%</text>
-  <text x="434" y="398" fill="#718096" font-size="13">训练数据：团队自产代码域轨迹集 CodeForge-Preview；</text>
-  <text x="434" y="418" fill="#718096" font-size="13">训练一系列 30B 模型；跨领域泛化未验证，不能外推。</text>
+  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2610.13356 · 预印本</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">验收员要会说理由</text>
+  <text x="64" y="158" font-size="15" fill="#5E6C69">编程 agent 没有现成预言机评测器时，交付验收交给会说理由的开源裁判</text>
 
-  <rect x="812" y="114" width="340" height="330" rx="10" fill="#ffffff" stroke="#d8dee9"/>
-  <text x="836" y="150" font-size="19" fill="#1f2a44" font-weight="bold">裁判输出两样东西</text>
-  <rect x="836" y="170" width="292" height="54" rx="6" fill="#eef1f6"/>
-  <text x="850" y="192" fill="#37476a" font-size="14" font-weight="bold">1. 完成标签</text>
-  <text x="850" y="214" fill="#37476a" font-size="13">干没干完，可机读</text>
-  <rect x="836" y="238" width="292" height="72" rx="6" fill="#e6f4ea"/>
-  <text x="850" y="262" fill="#1e7d43" font-size="14" font-weight="bold">2. 自然语言分析</text>
-  <text x="850" y="284" fill="#1e7d43" font-size="13">缺了什么、哪一步出错——</text>
-  <text x="850" y="302" fill="#1e7d43" font-size="13">可直接当评审意见与缺陷定位</text>
-  <rect x="836" y="324" width="292" height="60" rx="6" fill="#fff8e1" stroke="#e6c97a"/>
-  <text x="850" y="348" fill="#8a6d1a" font-size="13" font-weight="bold">论文称模型、数据集、训练码开源</text>
-  <text x="850" y="370" fill="#8a6d1a" font-size="12">数字为作者自报，待独立复现</text>
+  <!-- lighthouse motif -->
+  <g>
+    <path d="M 1092 96 l -70 -34 M 1092 96 l -80 0 M 1092 96 l -70 34" stroke="#EFC65B" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+    <circle cx="1100" cy="96" r="12" fill="#EFC65B"/>
+    <path d="M 1084 112 l 32 0 10 78 -52 0 z" fill="url(#gCoral)"/>
+    <rect x="1078" y="188" width="44" height="10" rx="5" fill="#0E7490"/>
+    <path d="M 1056 210 q 44 18 88 0" stroke="#3FA9BF" stroke-width="3" fill="none"/>
+    <path d="M 1044 224 q 56 22 112 0" stroke="#3FA9BF" stroke-width="3" fill="none" opacity="0.6"/>
+  </g>
 
-  <rect x="48" y="470" width="1104" height="80" rx="10" fill="#eef1f6" stroke="#c9d2e0"/>
-  <text x="72" y="500" fill="#37476a" font-size="14" font-weight="bold">与简报 #20 互文</text>
-  <text x="160" y="500" fill="#4a5568" font-size="14">专利面：大厂圈地评审产物，独立质检报告没人接单；技术面：裁判层从「拿现成模型凑」进入专门后训练阶段，</text>
-  <text x="160" y="526" fill="#4a5568" font-size="14">且直接开源。57% 与 78% 的差距说明：通用模型裸当裁判不及格，训练过的裁判才有商用价值。</text>
+  <!-- slope: base 57 -> SFT 66 -> RL 78 ; y = 500 - (v-50)*8 -->
+  <g>
+    <line x1="250" y1="230" x2="250" y2="500" stroke="#CFC9B6" stroke-width="1.5"/>
+    <line x1="545" y1="230" x2="545" y2="500" stroke="#CFC9B6" stroke-width="1.5"/>
+    <line x1="840" y1="230" x2="840" y2="500" stroke="#CFC9B6" stroke-width="1.5"/>
+    <text class="b" x="250" y="522" text-anchor="middle">基座 Qwen3-30B-A3B</text>
+    <text class="b" x="545" y="522" text-anchor="middle">+ 监督微调 SFT</text>
+    <text class="b" x="840" y="522" text-anchor="middle">+ 强化学习 RL</text>
 
-  <text x="48" y="586" fill="#a0aec0" font-size="13">一分钟读论文 · 2026-10 · 全部数字经论文 abs 与 HTML 全文逐字核验（2026-10-14）</text>
+    <rect x="150" y="404" width="800" height="66" rx="8" fill="#43AA8B" opacity="0.08"/>
+
+    <path d="M 250 444 C 380 440 420 376 545 372 C 670 366 730 284 840 276" fill="none" stroke="url(#gSea)" stroke-width="4"/>
+    <circle cx="250" cy="444" r="10" fill="#FFFFFF" stroke="#0E7490" stroke-width="3.5"/>
+    <circle cx="545" cy="372" r="10" fill="url(#gGreen)"/>
+    <circle cx="840" cy="276" r="12" fill="url(#gSea)"/>
+    <text class="serif" x="250" y="416" text-anchor="middle" font-size="28" font-weight="700" fill="#5F6C69">57%</text>
+    <text class="serif" x="545" y="344" text-anchor="middle" font-size="28" font-weight="700" fill="#43AA8B">66%</text>
+    <text class="serif" x="840" y="240" text-anchor="middle" font-size="34" font-weight="700" fill="#0E7490">78%</text>
+    <text class="b" x="840" y="216" text-anchor="middle">完成判定分类准确率 · held-out</text>
+
+    <line x1="300" y1="330" x2="470" y2="330" stroke="#EFC65B" stroke-width="1.5" stroke-dasharray="5 5" opacity="0.7"/>
+    <text x="385" y="322" text-anchor="middle" font-size="12.5" fill="#9A7C22">超过二十个百分点的差距</text>
+  </g>
+
+  <!-- right column: two output chips -->
+  <g>
+    <rect x="950" y="284" width="186" height="60" rx="10" fill="#00B4D8" opacity="0.09"/>
+    <text x="966" y="312" class="serif" font-size="16" font-weight="700" fill="#0088A8">输出一 · 完成标签</text>
+    <text x="966" y="334" font-size="12.5" fill="#5E6C69">干没干完，先给判定</text>
+
+    <rect x="950" y="356" width="186" height="60" rx="10" fill="#7B5EA7" opacity="0.08"/>
+    <text x="966" y="384" class="serif" font-size="16" font-weight="700" fill="#7B5EA7">输出二 · 理由</text>
+    <text x="966" y="404" font-size="12.5" fill="#5E6C69">缺了什么、错在哪一步</text>
+
+    <text x="950" y="452" font-size="13.5" fill="#3C4A48">输入：任务描述 + 完整轨迹</text>
+    <text x="950" y="474" font-size="12.5" fill="#98A6A2">标量 critic 只能排序，分数无法审计</text>
+  </g>
+
+  <line x1="64" y1="556" x2="1136" y2="556" stroke="#E6EDE6" stroke-width="1"/>
+  <g>
+    <text class="serif" x="64" y="600" font-size="26" font-weight="700" fill="#0E7490">数百次迭代</text>
+    <text x="64" y="622" font-size="12.5" fill="#7C8A86">agent 与仓库、外部工具的交互次数，日志远超单轮问答，人工复核成本极高</text>
+    <rect x="600" y="576" width="122" height="24" rx="12" fill="url(#gViolet)"/>
+    <text class="chip" x="661" y="592" text-anchor="middle">称 开 源</text>
+    <text x="738" y="593" font-size="13.5" fill="#3C4A48">模型 · 数据集 · 训练代码</text>
+    <text x="738" y="617" font-size="12.5" fill="#98A6A2">轨迹集 CodeForge-Preview 为团队自产，域外表现未验证</text>
+  </g>
+
+  <text x="1136" y="652" text-anchor="end" font-size="12.5" fill="#A29C88">全部数字来自作者自报的 held-out 测试集 · 未经同行评审 · Micropaper</text>
 </svg>

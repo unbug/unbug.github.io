@@ -1,72 +1,117 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
-  <rect width="960" height="600" fill="#f8fafc"/>
-  <text x="480" y="36" text-anchor="middle" font-size="20" font-weight="bold" fill="#1e293b">医疗 CoT 扰动审计：诊断全对，推理链是摆设吗？（arXiv:2608.24790，TU Eindhoven + Dana-Farber）</text>
-
-  <!-- Method flow -->
-  <rect x="40" y="60" width="215" height="76" rx="8" fill="#e0e7ff" stroke="#4f46e5"/>
-  <text x="147" y="84" text-anchor="middle" font-size="13" font-weight="bold" fill="#3730a3">原始医疗 QA</text>
-  <text x="147" y="104" text-anchor="middle" font-size="11" fill="#4338ca">题目 + 可见推理链 + 答案</text>
-  <text x="147" y="121" text-anchor="middle" font-size="11" fill="#4338ca">14 LLMs x 4 benchmarks</text>
-
-  <rect x="305" y="60" width="330" height="76" rx="8" fill="#fef3c7" stroke="#d97706"/>
-  <text x="470" y="82" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400e">M-block：30 算子扰动（同时改题 + 改链）</text>
-  <text x="470" y="101" text-anchor="middle" font-size="11" fill="#78350f">severity reversal / negation flip /</text>
-  <text x="470" y="116" text-anchor="middle" font-size="11" fill="#78350f">demographic swap / evidence ablation 等</text>
-
-  <rect x="685" y="60" width="235" height="76" rx="8" fill="#fee2e2" stroke="#dc2626"/>
-  <text x="802" y="84" text-anchor="middle" font-size="13" font-weight="bold" fill="#991b1b">chain-update × answer-flip</text>
-  <text x="802" y="104" text-anchor="middle" font-size="11" fill="#7f1d1d">链登记了吗？答案翻了吗？</text>
-  <text x="802" y="121" text-anchor="middle" font-size="11" fill="#7f1d1d">按失败模式分类每个模型</text>
-
-  <line x1="255" y1="98" x2="305" y2="98" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
-  <line x1="635" y1="98" x2="685" y2="98" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
   <defs>
-    <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
-      <path d="M0,0 L7,3 L0,6 Z" fill="#475569"/>
-    </marker>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9C927F; }
+      .rl { font-size: 15px; fill: #45403A; }
+      .val { font-size: 20px; font-weight: 700; }
+      .b { font-size: 12px; fill: #A8A08C; }
+      .hd { font-size: 12.5px; letter-spacing: 2px; fill: #847A66; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FAF5EC"/>
+    </linearGradient>
+    <linearGradient id="gAmber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B45A17"/><stop offset="1" stop-color="#E39A4B"/>
+    </linearGradient>
+    <linearGradient id="gWine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7C2D4E"/><stop offset="1" stop-color="#B25B7E"/>
+    </linearGradient>
+    <linearGradient id="gVine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4E7A3A"/><stop offset="1" stop-color="#8FB268"/>
+    </linearGradient>
+    <linearGradient id="gSlate" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#41627E"/><stop offset="1" stop-color="#7E9CB8"/>
+    </linearGradient>
+    <linearGradient id="gCopper" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A6612B"/><stop offset="1" stop-color="#D69A5C"/>
+    </linearGradient>
   </defs>
 
-  <!-- Three tests -->
-  <text x="40" y="180" font-size="15" font-weight="bold" fill="#1e293b">三个独立测试收敛到同一解耦</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1108" cy="112" r="140" fill="#7C2D4E" opacity="0.06"/>
+  <circle cx="76" cy="620" r="115" fill="#B45A17" opacity="0.07"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="#B5442E"/>
 
-  <rect x="40" y="196" width="285" height="120" rx="8" fill="#fef2f2" stroke="#dc2626"/>
-  <text x="182" y="220" text-anchor="middle" font-size="13" font-weight="bold" fill="#991b1b">测试一：CDR</text>
-  <text x="182" y="244" text-anchor="middle" font-size="26" font-weight="bold" fill="#dc2626">72.9%</text>
-  <text x="182" y="266" text-anchor="middle" font-size="11" fill="#7f1d1d">链未登记编辑且答案不翻转</text>
-  <text x="182" y="283" text-anchor="middle" font-size="11" fill="#7f1d1d">（临床有意义破坏性编辑子集，panel-wide）</text>
+  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2608.24790 · TU EINDHOVEN × DANA-FARBER</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">链在答，但不酿酒</text>
+  <text x="64" y="158" font-size="15.5" fill="#6E6553">改题 72.9% 的链纹丝不动：14 个医疗模型，可见推理只是装饰</text>
 
-  <rect x="345" y="196" width="285" height="120" rx="8" fill="#fef2f2" stroke="#dc2626"/>
-  <text x="487" y="220" text-anchor="middle" font-size="13" font-weight="bold" fill="#991b1b">测试二：chain corruption</text>
-  <text x="487" y="252" text-anchor="middle" font-size="13" fill="#7f1d1d">直接破坏推理链</text>
-  <text x="487" y="276" text-anchor="middle" font-size="13" font-weight="bold" fill="#dc2626">准确率不变</text>
+  <!-- wine cellar illustration: barrel + bottle + glass -->
+  <g>
+    <ellipse cx="1010" cy="252" rx="52" ry="60" fill="url(#gAmber)"/>
+    <ellipse cx="1010" cy="252" rx="52" ry="60" fill="none" stroke="#7C4A21" stroke-width="2" opacity="0.5"/>
+    <rect x="958" y="228" width="104" height="9" fill="#7C2D4E" opacity="0.85"/>
+    <rect x="958" y="268" width="104" height="9" fill="#7C2D4E" opacity="0.85"/>
+    <circle cx="1010" cy="252" r="10" fill="#FBFAF7"/>
+    <circle cx="1010" cy="252" r="4" fill="#7C2D4E"/>
+    <path d="M 1092 196 h 16 v 26 q 12 10 12 26 v 42 q 0 12 -12 12 h -16 q -12 0 -12 -12 v -42 q 0 -16 12 -26 z" fill="url(#gWine)"/>
+    <rect x="1092" y="188" width="16" height="10" rx="2" fill="#4E7A3A"/>
+    <path d="M 918 210 h 34 l -6 30 q -2 12 -11 12 q -9 0 -11 -12 z" fill="#B25B7E" opacity="0.85"/>
+    <line x1="935" y1="252" x2="935" y2="284" stroke="#B25B7E" stroke-width="3"/>
+    <line x1="922" y1="286" x2="948" y2="286" stroke="#B25B7E" stroke-width="3"/>
+    <text class="hd" x="1010" y="348" text-anchor="middle">地下酒窖</text>
+  </g>
 
-  <rect x="650" y="196" width="270" height="120" rx="8" fill="#fef2f2" stroke="#dc2626"/>
-  <text x="785" y="220" text-anchor="middle" font-size="13" font-weight="bold" fill="#991b1b">测试三：去 CoT prompting</text>
-  <text x="785" y="252" text-anchor="middle" font-size="13" fill="#7f1d1d">不做思维链提示</text>
-  <text x="785" y="276" text-anchor="middle" font-size="13" font-weight="bold" fill="#dc2626">准确率不降</text>
+  <!-- core anchor: CDR dumbbell -->
+  <g>
+    <text class="hd" x="64" y="216">开瓶试酒 · 破坏性编辑后链条与答案的联合分析</text>
 
-  <!-- Clinician validation -->
-  <rect x="40" y="340" width="880" height="58" rx="8" fill="#e0f2fe" stroke="#0284c7"/>
-  <text x="480" y="364" text-anchor="middle" font-size="13" font-weight="bold" fill="#075985">临床验证（M-block soundness）</text>
-  <text x="480" y="384" text-anchor="middle" font-size="12" fill="#0c4a6e">两名持证临床医生重标注 N=197 个扰动问题，98.5% 的 gold 答案仍站得住 —— 验证扰动合理，非模型正确率</text>
+    <rect x="64" y="240" width="660" height="64" fill="#41627E" opacity="0.08"/>
+    <rect x="64" y="318" width="660" height="76" fill="#7C2D4E" opacity="0.08"/>
 
-  <!-- Scope note -->
-  <rect x="40" y="420" width="430" height="118" rx="8" fill="#fefce8" stroke="#ca8a04"/>
-  <text x="56" y="442" font-size="12" font-weight="bold" fill="#854d0e">边界与限定</text>
-  <text x="56" y="462" font-size="11" fill="#713f12">· CDR 72.9% 限于临床有意义破坏性编辑子集，panel-wide</text>
-  <text x="56" y="480" font-size="11" fill="#713f12">· 结论限医疗 QA 场景，不推广到所有 CoT 应用</text>
-  <text x="56" y="498" font-size="11" fill="#713f12">· 闭源层链文本不可得：仅答案侧信号与解耦一致（间接证据）</text>
-  <text x="56" y="516" font-size="11" fill="#713f12">· 模式跨医疗/推理微调与规模保持</text>
+    <text class="rl" x="216" y="278" text-anchor="end">链条解耦</text>
+    <line x1="240" y1="274" x2="404" y2="274" stroke="url(#gSlate)" stroke-width="3.5"/>
+    <circle cx="240" cy="274" r="7" fill="#FFFFFF" stroke="#41627E" stroke-width="3"/>
+    <circle cx="404" cy="274" r="9" fill="url(#gSlate)"/>
+    <text class="val" x="424" y="281" fill="#41627E">链不登记</text>
+    <text class="b" x="424" y="254">答案也不翻转的占比（panel-wide）</text>
 
-  <!-- Conclusion -->
-  <rect x="490" y="420" width="430" height="118" rx="8" fill="#f0fdf4" stroke="#16a34a"/>
-  <text x="506" y="442" font-size="12" font-weight="bold" fill="#166534">核心结论</text>
-  <text x="506" y="462" font-size="11" fill="#14532d">· 「decorative reasoning」：链更像事后文档而非计算路径</text>
-  <text x="506" y="480" font-size="11" fill="#14532d">· 「展示推理」不等于「可审查的推理」</text>
-  <text x="506" y="498" font-size="11" fill="#14532d">· 30 算子扰动 + CDR = 链忠实性的最小审计标尺</text>
-  <text x="506" y="516" font-size="11" fill="#14532d">· 与 EchoCoT（黑箱隐藏链提取）互补：本篇测可见链是否被用</text>
+    <text class="rl" x="216" y="362" text-anchor="end" font-weight="700">临床破坏性编辑</text>
+    <line x1="240" y1="358" x2="713" y2="358" stroke="url(#gWine)" stroke-width="4"/>
+    <circle cx="240" cy="358" r="7" fill="#FFFFFF" stroke="#41627E" stroke-width="3"/>
+    <circle cx="713" cy="358" r="11" fill="url(#gWine)"/>
+    <text class="serif" x="733" y="368" font-size="28" font-weight="700" fill="#7C2D4E">72.9%</text>
+    <text class="b" x="733" y="340">CDR：链未登记、答案未翻转</text>
+    <text class="b" x="240" y="418">chain-update × answer-flip 交叉 · 诊断全对，链与答案互不牵连</text>
+  </g>
 
-  <!-- Footer -->
-  <text x="480" y="576" text-anchor="middle" font-size="11" fill="#64748b">Right Diagnoses, Decorative Reasoning: A Perturbation Audit of Medical Chain-of-Thought · arXiv:2608.24790v1 · 2026-08-25</text>
+  <!-- right: three tests converge -->
+  <g>
+    <text class="hd" x="780" y="216">三次盲品，指向同一瓶</text>
+    <rect x="780" y="234" width="356" height="56" fill="#B45A17" opacity="0.09"/>
+    <text class="rl" x="800" y="258">扰动问题，链条不登记改动</text>
+    <text class="serif" x="800" y="282" font-size="21" font-weight="700" fill="#A34E12">CDR 高达 72.9%</text>
+
+    <rect x="780" y="298" width="356" height="56" fill="#41627E" opacity="0.09"/>
+    <text class="rl" x="800" y="322">直接破坏推理链</text>
+    <text class="serif" x="800" y="346" font-size="21" font-weight="700" fill="#41627E">准确率不变</text>
+
+    <rect x="780" y="362" width="356" height="56" fill="#4E7A3A" opacity="0.10"/>
+    <text class="rl" x="800" y="386">不做 CoT prompting</text>
+    <text class="serif" x="800" y="410" font-size="21" font-weight="700" fill="#46702F">准确率不降</text>
+
+    <text class="b" x="780" y="442">三个独立测试收敛 · 可见链对答案贡献很小</text>
+  </g>
+
+  <!-- bottom: soundness + chips -->
+  <g>
+    <rect x="64" y="462" width="500" height="76" fill="#A6612B" opacity="0.09"/>
+    <text class="serif" x="84" y="496" font-size="25" font-weight="700" fill="#8F5322">98.5% / N=197</text>
+    <text class="rl" x="84" y="522">两名持证临床医生重标 · gold 答案仍站得住</text>
+    <text class="b" x="84" y="560">这一步验证的是扰动本身合理（M-block soundness），不是模型答得对不对</text>
+
+    <text class="hd" x="620" y="486">审计标尺</text>
+    <rect x="620" y="502" width="130" height="30" rx="15" fill="#B45A17" opacity="0.16"/>
+    <text x="685" y="522" text-anchor="middle" font-size="12.5" fill="#A34E12">30 个扰动算子</text>
+    <rect x="760" y="502" width="140" height="30" rx="15" fill="#41627E" opacity="0.16"/>
+    <text x="830" y="522" text-anchor="middle" font-size="12.5" fill="#41627E">14 个 LLM</text>
+    <rect x="910" y="502" width="156" height="30" rx="15" fill="#7C2D4E" opacity="0.15"/>
+    <text x="988" y="522" text-anchor="middle" font-size="12.5" fill="#7C2D4E">四个医疗 QA 库</text>
+    <text class="b" x="620" y="560">链文本不可得的闭源层只有答案侧间接证据</text>
+  </g>
+
+  <line x1="64" y1="612" x2="1136" y2="612" stroke="#E5E1D4"/>
+  <text class="serif" x="64" y="644" font-size="15.5" fill="#45403A">「展示推理」不等于「可审查的推理」。</text>
+  <text class="b" x="1136" y="644" text-anchor="end">结论限于医疗 QA 场景 · CDR 仅统计临床有意义的编辑子集 · Micropaper</text>
 </svg>

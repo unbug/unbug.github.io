@@ -1,122 +1,109 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1f3a;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#0d1528;stop-opacity:1"/>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8F93A6; }
+      .rl { font-size: 15px; fill: #3E4457; }
+      .val { font-size: 20px; font-weight: 700; }
+      .b { font-size: 12px; fill: #A3A7B8; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F2F2F8"/>
     </linearGradient>
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#4a9eff;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#7c5cff;stop-opacity:1"/>
+    <linearGradient id="gRed" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C0392B"/><stop offset="1" stop-color="#E8785C"/>
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D9622B"/><stop offset="1" stop-color="#EFA06B"/>
+    </linearGradient>
+    <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F8A5B"/><stop offset="1" stop-color="#7CC493"/>
+    </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0F7B8A"/><stop offset="1" stop-color="#5CB8C4"/>
+    </linearGradient>
+    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C99327"/><stop offset="1" stop-color="#EBC55E"/>
+    </linearGradient>
+    <linearGradient id="gSlate" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#44506B"/><stop offset="1" stop-color="#7B87A3"/>
+    </linearGradient>
   </defs>
 
-  <!-- Background -->
-  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1110" cy="100" r="130" fill="#0F7B8A" opacity="0.06"/>
+  <circle cx="80" cy="615" r="120" fill="#C0392B" opacity="0.05"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gRed)"/>
 
-  <!-- Grid pattern overlay -->
-  <g opacity="0.05">
-    <line x1="0" y1="0" x2="1200" y2="0" stroke="#fff" stroke-width="0.5"/>
-    <line x1="0" y1="63" x2="1200" y2="63" stroke="#fff" stroke-width="0.5"/>
-    <line x1="0" y1="126" x2="1200" y2="126" stroke="#fff" stroke-width="0.5"/>
-    <line x1="0" y1="189" x2="1200" y2="189" stroke="#fff" stroke-width="0.5"/>
-    <line x1="0" y1="252" x2="1200" y2="252" stroke="#fff" stroke-width="0.5"/>
-    <line x1="0" y1="315" x2="1200" y2="315" stroke="#fff" stroke-width="0.5"/>
-    <line x1="0" y1="378" x2="1200" y2="378" stroke="#fff" stroke-width="0.5"/>
-    <line x1="0" y1="441" x2="1200" y2="441" stroke="#fff" stroke-width="0.5"/>
-    <line x1="0" y1="504" x2="1200" y2="504" stroke="#fff" stroke-width="0.5"/>
-    <line x1="0" y1="567" x2="1200" y2="567" stroke="#fff" stroke-width="0.5"/>
-    <line x1="0" y1="630" x2="1200" y2="630" stroke="#fff" stroke-width="0.5"/>
+  <text class="k" x="64" y="84">AI 范式雷达 · ARXIV:2607.28573</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#20242F">算力给错地方，失败更隐蔽</text>
+  <text x="64" y="158" font-size="15" fill="#6A6E80">Agent 推理时扩展：从均匀预算转向按难度动态分配</text>
+
+  <!-- subway signal motif -->
+  <g>
+    <rect x="1074" y="66" width="34" height="92" rx="14" fill="#44506B"/>
+    <circle cx="1091" cy="90" r="10" fill="url(#gRed)"/>
+    <circle cx="1091" cy="112" r="10" fill="#EBC55E" opacity="0.35"/>
+    <circle cx="1091" cy="134" r="10" fill="#7CC493" opacity="0.35"/>
+    <path d="M 1006 186 q 85 -34 170 0" fill="none" stroke="#44506B" stroke-width="3" opacity="0.5"/>
+    <rect x="1010" y="176" width="34" height="16" rx="4" fill="url(#gTeal)"/>
+    <text class="b" x="1091" y="216" text-anchor="middle">前方到站：动态调度</text>
   </g>
 
-  <!-- Left side: Traditional Fixed Compute -->
-  <text x="80" y="140" fill="#6b7fa3" font-size="14" font-family="monospace">TRADITIONAL: FIXED COMPUTE</text>
+  <!-- subway line: uniform vs dynamic budget -->
+  <g>
+    <text class="rl" x="64" y="222" font-weight="700" fill="#20242F">同一趟 8 步任务 · 两种给电方式</text>
 
-  <!-- Single budget bar (fixed) -->
-  <rect x="80" y="180" width="420" height="50" rx="6" fill="#2a3a5c" stroke="#ff7c5c" stroke-width="1.5"/>
-  <text x="290" y="210" text-anchor="middle" fill="#ffb8a0" font-size="14" font-family="-apple-system, sans-serif">固定预算: 所有任务 = 3,000 tokens</text>
+    <line x1="104" y1="266" x2="1096" y2="266" stroke="#B9BDCC" stroke-width="4" stroke-dasharray="1 9" stroke-linecap="round"/>
+    <line x1="104" y1="388" x2="1096" y2="388" stroke="#B9BDCC" stroke-width="4" stroke-dasharray="1 9" stroke-linecap="round"/>
+    <text class="b" x="104" y="308" fill="#8A6E1E">均匀供电 · 每步一律 2K</text>
+    <text class="b" x="104" y="430" fill="#1F5A50">按难度供电 · 简单快步过</text>
 
-  <!-- Three task boxes with same budget -->
-  <rect x="120" y="260" width="100" height="80" rx="6" fill="#2a3a5c" stroke="#4a9eff" stroke-width="1"/>
-  <text x="170" y="285" text-anchor="middle" fill="#8ab4f8" font-size="10" font-family="monospace">简单任务</text>
-  <text x="170" y="305" text-anchor="middle" fill="#ffcc33" font-size="10" font-family="monospace">预算: 3K t</text>
-  <text x="170" y="325" text-anchor="middle" fill="#5ee68a" font-size="10" font-family="monospace">结果: OK</text>
+    <!-- uniform cars: all same size -->
+    <g>
+      <rect x="140" y="246" width="60" height="40" rx="8" fill="url(#gGold)"/>
+      <rect x="258" y="246" width="60" height="40" rx="8" fill="url(#gGold)"/>
+      <rect x="376" y="246" width="60" height="40" rx="8" fill="url(#gGold)"/>
+      <rect x="494" y="246" width="60" height="40" rx="8" fill="url(#gGold)"/>
+      <rect x="612" y="246" width="60" height="40" rx="8" fill="url(#gGold)"/>
+      <rect x="730" y="246" width="60" height="40" rx="8" fill="url(#gRed)"/>
+      <text x="760" y="272" text-anchor="end" font-size="16" font-weight="700" fill="#FFFFFF">?</text>
+      <rect x="848" y="246" width="60" height="40" rx="8" fill="url(#gRed)"/>
+      <text x="878" y="272" text-anchor="end" font-size="16" font-weight="700" fill="#FFFFFF">?</text>
+      <rect x="966" y="246" width="60" height="40" rx="8" fill="url(#gRed)"/>
+      <text x="996" y="272" text-anchor="end" font-size="16" font-weight="700" fill="#FFFFFF">?</text>
+    </g>
 
-  <rect x="260" y="260" width="100" height="80" rx="6" fill="#2a3a5c" stroke="#4a9eff" stroke-width="1"/>
-  <text x="310" y="285" text-anchor="middle" fill="#8ab4f8" font-size="10" font-family="monospace">中等任务</text>
-  <text x="310" y="305" text-anchor="middle" fill="#ffcc33" font-size="10" font-family="monospace">预算: 3K t</text>
-  <text x="310" y="325" text-anchor="middle" fill="#ff6b60" font-size="10" font-family="monospace">结果: 不足</text>
+    <!-- dynamic cars: sized to difficulty -->
+    <g>
+      <rect x="140" y="368" width="24" height="40" rx="8" fill="url(#gTeal)"/>
+      <rect x="200" y="368" width="24" height="40" rx="8" fill="url(#gTeal)"/>
+      <rect x="260" y="368" width="24" height="40" rx="8" fill="url(#gTeal)"/>
+      <rect x="320" y="368" width="66" height="40" rx="8" fill="url(#gGreen)"/>
+      <rect x="422" y="368" width="66" height="40" rx="8" fill="url(#gGreen)"/>
+      <rect x="524" y="368" width="152" height="40" rx="8" fill="url(#gOrange)"/>
+      <rect x="712" y="368" width="152" height="40" rx="8" fill="url(#gOrange)"/>
+      <rect x="900" y="368" width="152" height="40" rx="8" fill="url(#gOrange)"/>
+    </g>
 
-  <rect x="400" y="260" width="100" height="80" rx="6" fill="#2a3a5c" stroke="#4a9eff" stroke-width="1"/>
-  <text x="450" y="285" text-anchor="middle" fill="#8ab4f8" font-size="10" font-family="monospace">困难任务</text>
-  <text x="450" y="305" text-anchor="middle" fill="#ffcc33" font-size="10" font-family="monospace">预算: 3K t</text>
-  <text x="450" y="325" text-anchor="middle" fill="#ff6b60" font-size="10" font-family="monospace">结果: 失败</text>
+    <text class="b" x="1096" y="308" text-anchor="end">困难步骤 2K 不够用</text>
+    <text class="b" x="1096" y="430" text-anchor="end">简单 &lt;500 · 中等 2K · 困难 2K–10K+</text>
+  </g>
 
-  <!-- Waste indicator -->
-  <rect x="80" y="370" width="420" height="40" rx="6" fill="#1e2a4a" stroke="#ffcc33" stroke-width="1"/>
-  <text x="290" y="395" text-anchor="middle" fill="#ffcc33" font-size="12" font-family="-apple-system, sans-serif">浪费: 简单任务过度计算 | 困难任务预算不足</text>
+  <!-- big anchors -->
+  <g>
+    <text class="serif" x="64" y="536" font-size="46" font-weight="700" fill="#20242F">45% <tspan fill="#A9A9B8" font-size="24">→</tspan> <tspan fill="#C0392B">67%</tspan></text>
+    <text class="b" x="64" y="558" fill="#6A6E80">示例工作流整体成功率 · 该文自测口径 · 效率另升约 35%</text>
 
-  <!-- Right side: Dynamic Budget Allocation -->
-  <text x="700" y="140" fill="#7c5cff" font-size="14" font-family="monospace">DYNAMIC BUDGET ALLOCATION</text>
+    <line x1="560" y1="524" x2="810" y2="500" stroke="url(#gRed)" stroke-width="3.5"/>
+    <circle cx="560" cy="524" r="7" fill="#FFFFFF" stroke="#44506B" stroke-width="3"/>
+    <circle cx="810" cy="500" r="8" fill="url(#gRed)"/>
+    <text class="val" x="546" y="530" text-anchor="end" fill="#44506B" font-size="17">停滞</text>
+    <text class="val" x="824" y="506" fill="#C0392B" font-size="17">过早错误成功</text>
+    <text class="b" x="560" y="558" fill="#C0392B">加算力不改成功率，只把失败挪位 · 前者可回退，后者不可逆</text>
+  </g>
 
-  <!-- Difficulty assessment box -->
-  <rect x="720" y="180" width="360" height="50" rx="6" fill="#2a3a5c" stroke="#7c5cff" stroke-width="2" filter="url(#glow)"/>
-  <text x="900" y="210" text-anchor="middle" fill="#b8a9ff" font-size="14" font-family="-apple-system, sans-serif">难度评估器 → 动态分配预算</text>
-
-  <!-- Three task boxes with adaptive budgets -->
-  <rect x="720" y="260" width="100" height="80" rx="6" fill="#2a3a5c" stroke="#34c759" stroke-width="1.5"/>
-  <text x="770" y="285" text-anchor="middle" fill="#8ab4f8" font-size="10" font-family="monospace">简单任务</text>
-  <text x="770" y="305" text-anchor="middle" fill="#5ee68a" font-size="10" font-family="monospace">预算: 500 t (节省!)</text>
-  <text x="770" y="325" text-anchor="middle" fill="#5ee68a" font-size="10" font-family="monospace">结果: OK</text>
-
-  <rect x="860" y="260" width="100" height="80" rx="6" fill="#2a3a5c" stroke="#ff9f0a" stroke-width="1.5"/>
-  <text x="910" y="285" text-anchor="middle" fill="#8ab4f8" font-size="10" font-family="monospace">中等任务</text>
-  <text x="910" y="305" text-anchor="middle" fill="#ffcc33" font-size="10" font-family="monospace">预算: 2K t (追加)</text>
-  <text x="910" y="325" text-anchor="middle" fill="#5ee68a" font-size="10" font-family="monospace">结果: OK</text>
-
-  <rect x="1000" y="260" width="100" height="80" rx="6" fill="#2a3a5c" stroke="#ff7c5c" stroke-width="1.5"/>
-  <text x="1050" y="285" text-anchor="middle" fill="#8ab4f8" font-size="10" font-family="monospace">困难任务</text>
-  <text x="1050" y="305" text-anchor="middle" fill="#ff6b60" font-size="10" font-family="monospace">预算: 8K t (追加)</text>
-  <text x="1050" y="325" text-anchor="middle" fill="#5ee68a" font-size="10" font-family="monospace">结果: OK</text>
-
-  <!-- Efficiency indicator -->
-  <rect x="720" y="370" width="360" height="40" rx="6" fill="#1e2a4a" stroke="#5ee68a" stroke-width="1"/>
-  <text x="900" y="395" text-anchor="middle" fill="#5ee68a" font-size="12" font-family="-apple-system, sans-serif">效率: 总预算降低40% | 成功率提升至92%</text>
-
-  <!-- VS divider -->
-  <line x1="620" y1="100" x2="620" y2="530" stroke="#4a6fa5" stroke-width="1" opacity="0.3"/>
-  <text x="620" y="320" text-anchor="middle" fill="#6b7fa3" font-size="28" font-family="monospace" transform="rotate(-90, 620, 320)">VS</text>
-
-  <!-- Bottom tagline -->
-  <rect x="150" y="480" width="900" height="60" rx="8" fill="#1e2a4a" stroke="#4a6fa5" stroke-width="1" opacity="0.7"/>
-  <text x="600" y="515" text-anchor="middle" fill="#c8d6f0" font-size="18" font-family="-apple-system, BlinkMacSystemFont, sans-serif">从固定预算到动态分配的范式转移</text>
-  <text x="600" y="538" text-anchor="middle" fill="#6b7fa3" font-size="12" font-family="monospace">Fixed Compute → Dynamic Budget Allocation</text>
-
-  <!-- Top right: Paradigm Radar badge -->
-  <rect x="940" y="30" width="230" height="40" rx="6" fill="#7c5cff" opacity="0.15"/>
-  <text x="1055" y="56" text-anchor="middle" fill="#b8a9ff" font-size="14" font-family="-apple-system, BlinkMacSystemFont, sans-serif">AI Paradigm Radar</text>
-
-  <!-- Bottom left: date -->
-  <text x="80" y="570" fill="#4a6fa5" font-size="12" font-family="monospace">2026-08-04</text>
-
-  <!-- Decorative dots -->
-  <circle cx="1050" cy="560" r="3" fill="#7c5cff" opacity="0.4"/>
-  <circle cx="1070" cy="560" r="2" fill="#4a9eff" opacity="0.3"/>
-  <circle cx="1085" cy="560" r="2" fill="#ff7c5c" opacity="0.3"/>
-
-  <!-- Corner accents -->
-  <line x1="30" y1="30" x2="60" y2="30" stroke="#4a9eff" stroke-width="2" opacity="0.5"/>
-  <line x1="30" y1="30" x2="30" y2="60" stroke="#4a9eff" stroke-width="2" opacity="0.5"/>
-
-  <line x1="1170" y1="30" x2="1140" y2="30" stroke="#7c5cff" stroke-width="2" opacity="0.5"/>
-  <line x1="1170" y1="30" x2="1170" y2="60" stroke="#7c5cff" stroke-width="2" opacity="0.5"/>
-
-  <line x1="30" y1="600" x2="60" y2="600" stroke="#4a9eff" stroke-width="2" opacity="0.5"/>
-  <line x1="30" y1="600" x2="30" y2="570" stroke="#4a9eff" stroke-width="2" opacity="0.5"/>
-
-  <line x1="1170" y1="600" x2="1140" y2="600" stroke="#7c5cff" stroke-width="2" opacity="0.5"/>
-  <line x1="1170" y1="600" x2="1170" y2="570" stroke="#7c5cff" stroke-width="2" opacity="0.5"/>
+  <line x1="64" y1="588" x2="1136" y2="588" stroke="#E2E2EC"/>
+  <text class="serif" x="64" y="620" font-size="19" fill="#20242F">问题不在算力不够多，而在分配方式不对。</text>
+  <text class="b" x="64" y="650">ToT 74% 对 GPT-4 4% · o3 在 AIME 约 96% · 67% 等为综合推断示例 · Micropaper</text>
 </svg>

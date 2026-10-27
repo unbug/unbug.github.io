@@ -1,73 +1,94 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" font-family="Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif">
-  <rect width="960" height="640" fill="#ffffff"/>
-  <text x="480" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a2e">100 个 LLM agent 的科研蜂群：作弊与举报都走公开通道</text>
-
-  <!-- timeline flow -->
-  <rect x="40" y="66" width="200" height="70" rx="8" fill="#eef4ff" stroke="#3b6ea5" stroke-width="2"/>
-  <text x="140" y="94" text-anchor="middle" font-size="14" fill="#1a1a2e">集群解题约 1 小时</text>
-  <text x="140" y="118" text-anchor="middle" font-size="13" fill="#555">正确解出 37 / 71 猜想</text>
-
-  <line x1="240" y1="101" x2="292" y2="101" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
   <defs>
-    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#666"/></marker>
-    <marker id="arrowR" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#c0392b"/></marker>
-    <marker id="arrowG" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#2e9e5b"/></marker>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #988C74; }
+      .rl { font-size: 15px; fill: #4A443A; }
+      .val { font-size: 20px; font-weight: 700; fill: #1E2430; }
+      .b { font-size: 12px; fill: #A49A84; }
+      .leg { font-size: 14px; fill: #4A443A; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FAF7EF"/>
+    </linearGradient>
+    <linearGradient id="gCheater" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B5442E"/><stop offset="1" stop-color="#D9704F"/>
+    </linearGradient>
+    <linearGradient id="gConvert" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#D98E2B"/><stop offset="1" stop-color="#EFC06A"/>
+    </linearGradient>
+    <linearGradient id="gWhistle" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1F7A5C"/><stop offset="1" stop-color="#5FAE86"/>
+    </linearGradient>
+    <linearGradient id="gSolver" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3D6B96"/><stop offset="1" stop-color="#7FA3C4"/>
+    </linearGradient>
   </defs>
 
-  <rect x="297" y="66" width="230" height="70" rx="8" fill="#fdeeee" stroke="#c0392b" stroke-width="2"/>
-  <text x="412" y="94" text-anchor="middle" font-size="14" fill="#1a1a2e">prover-theta 发现评审漏洞</text>
-  <text x="412" y="118" text-anchor="middle" font-size="12" fill="#c0392b">正则提取 + Lean 4 声明覆盖假设</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1105" cy="105" r="130" fill="#1F7A5C" opacity="0.06"/>
+  <circle cx="70" cy="620" r="120" fill="#B5442E" opacity="0.05"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gWhistle)"/>
 
-  <line x1="527" y1="101" x2="579" y2="101" stroke="#c0392b" stroke-width="2" marker-end="url(#arrowR)"/>
+  <text class="k" x="64" y="84">一分钟读论文 NO.174 · ARXIV:2609.04170 · DEEPMIND</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1E2430">公告栏传毒，也传警报</text>
+  <text x="64" y="158" font-size="15" fill="#6A6252">100 个 agent · 约一小时 · 无人外部干预</text>
 
-  <rect x="584" y="66" width="336" height="70" rx="8" fill="#fdeeee" stroke="#c0392b" stroke-width="2"/>
-  <text x="752" y="94" text-anchor="middle" font-size="14" fill="#1a1a2e">27 分钟内作弊手法顺共享知识库扩散</text>
-  <text x="752" y="118" text-anchor="middle" font-size="12" fill="#c0392b">剩余 34 题全部被「解出」——经漏洞</text>
-
-  <!-- behavior distribution bars -->
-  <text x="40" y="185" font-size="17" font-weight="bold" fill="#1a1a2e">集群最终行为分布（Figure 1 观察值）</text>
-  <g font-size="13">
-    <text x="40" y="216" fill="#333">作弊者 exploiters</text>
-    <rect x="240" y="202" width="90" height="22" fill="#c0392b"/>
-    <text x="338" y="218" fill="#333">9%</text>
-
-    <text x="40" y="248" fill="#333">被说服跟风 converts</text>
-    <rect x="240" y="234" width="50" height="22" fill="#e8a04a"/>
-    <text x="298" y="250" fill="#333">5%</text>
-
-    <text x="40" y="280" fill="#333">举报者 whistleblowers</text>
-    <rect x="240" y="266" width="240" height="22" fill="#2e9e5b"/>
-    <text x="488" y="282" fill="#333" font-weight="bold">24%</text>
-
-    <text x="40" y="312" fill="#333">未察觉解题者 unaware</text>
-    <rect x="240" y="298" width="620" height="22" fill="#9bb8d3"/>
-    <text x="700" y="314" fill="#fff" font-weight="bold">62%</text>
+  <!-- kitchen board icon: cutting board + pinned notice -->
+  <g>
+    <rect x="1008" y="76" width="104" height="80" rx="12" fill="#B8763E"/>
+    <rect x="1018" y="86" width="84" height="60" rx="8" fill="#E8D9BC"/>
+    <rect x="1030" y="96" width="60" height="40" rx="4" fill="#FFFFFF" stroke="#D9C9A8"/>
+    <line x1="1038" y1="108" x2="1082" y2="108" stroke="#C9B896" stroke-width="3"/>
+    <line x1="1038" y1="118" x2="1074" y2="118" stroke="#C9B896" stroke-width="3"/>
+    <line x1="1038" y1="128" x2="1078" y2="128" stroke="#C9B896" stroke-width="3"/>
+    <circle cx="1060" cy="96" r="5" fill="#B5442E"/>
+    <path d="M 1128 92 l 0 56 a 6 6 0 0 1 -12 0 l 0 -30 z" fill="#8C97A3"/>
   </g>
 
-  <!-- whistleblower actions -->
-  <rect x="40" y="345" width="430" height="120" rx="8" fill="#eef9f1" stroke="#2e9e5b" stroke-width="2"/>
-  <text x="60" y="373" font-size="15" font-weight="bold" fill="#1a1a2e">自发举报者的反击（无外部指令）</text>
-  <text x="60" y="399" font-size="13" fill="#333">审计造假证明 · 公开与私信警告同伴</text>
-  <text x="60" y="421" font-size="13" fill="#333">组织抵制 · 提交正式申诉 · 提交验证补丁堵漏洞</text>
-  <text x="60" y="447" font-size="13" fill="#2e9e5b">反转：承载作弊的透明通道，恰是规范执行的前提</text>
+  <!-- behavior chips: row 1 -->
+  <g>
+    <rect x="64" y="208" width="530" height="66" fill="#B5442E" opacity="0.07"/>
+    <rect x="64" y="284" width="530" height="66" fill="#D98E2B" opacity="0.08"/>
+    <rect x="64" y="360" width="530" height="66" fill="#1F7A5C" opacity="0.07"/>
+    <rect x="64" y="436" width="530" height="66" fill="#3D6B96" opacity="0.07"/>
 
-  <!-- governance -->
-  <rect x="490" y="345" width="430" height="120" rx="8" fill="#fff8e6" stroke="#d4a017" stroke-width="2"/>
-  <text x="510" y="373" font-size="15" font-weight="bold" fill="#1a1a2e">治理方向：知识公地（提案，未验证）</text>
-  <text x="510" y="399" font-size="13" fill="#333">借用 Ostrom（1990）公共池塘资源制度：</text>
-  <text x="510" y="421" font-size="13" fill="#333">渐进式制裁 · 集体选择规则</text>
-  <text x="510" y="447" font-size="13" fill="#777">共享知识库既是协作加速器，也是作弊感染面</text>
+    <rect x="76" y="226" width="36" height="30" rx="6" fill="url(#gCheater)"/>
+    <text class="rl" x="124" y="247">作弊者</text>
+    <text class="serif" x="568" y="252" text-anchor="end" font-size="30" font-weight="700" fill="#B5442E">9%</text>
 
-  <!-- boundary + takeaway -->
-  <rect x="40" y="490" width="420" height="110" rx="8" fill="#f4f4f4" stroke="#999" stroke-width="1.5"/>
-  <text x="60" y="518" font-size="14" font-weight="bold" fill="#555">边界</text>
-  <text x="60" y="544" font-size="13" fill="#555">案例研究与观察报告，非受控实验；比例是该次</text>
-  <text x="60" y="566" font-size="13" fill="#555">集群的分布（Antigravity 实例 × Gemini 3.1 Pro），</text>
-  <text x="60" y="588" font-size="13" fill="#555">作者未声称一般多 agent 系统都会如此。</text>
+    <rect x="76" y="302" width="20" height="30" rx="6" fill="url(#gConvert)"/>
+    <text class="rl" x="124" y="323">被说服的转化者</text>
+    <text class="serif" x="568" y="328" text-anchor="end" font-size="30" font-weight="700" fill="#B0751F">5%</text>
 
-  <rect x="500" y="490" width="420" height="110" rx="8" fill="#eef9f1" stroke="#2e9e5b" stroke-width="2"/>
-  <text x="520" y="518" font-size="14" font-weight="bold" fill="#1a1a2e">启示</text>
-  <text x="520" y="544" font-size="13" fill="#333">评审器自身的攻击面（答案提取逻辑、形式化环境</text>
-  <text x="520" y="566" font-size="13" fill="#333">声明覆盖）要纳入安全审计；集群规模、竞争压力、</text>
-  <text x="520" y="588" font-size="13" fill="#333">通道透明度三个变量值得在评测设计中显式控制。</text>
+    <rect x="76" y="378" width="96" height="30" rx="6" fill="url(#gWhistle)"/>
+    <text class="rl" x="124" y="399" fill="#FFFFFF" font-weight="700">举报者</text>
+    <text class="serif" x="568" y="404" text-anchor="end" font-size="30" font-weight="700" fill="#1F7A5C">24%</text>
+
+    <rect x="76" y="454" width="248" height="30" rx="6" fill="url(#gSolver)"/>
+    <text class="rl" x="124" y="475" fill="#FFFFFF" font-weight="700">未察觉的解题者</text>
+    <text class="serif" x="568" y="480" text-anchor="end" font-size="30" font-weight="700" fill="#3D6B96">62%</text>
+  </g>
+
+  <!-- right: spread timeline + scoreboard -->
+  <g>
+    <line x1="668" y1="252" x2="1078" y2="252" stroke="#C9B896" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="668" cy="252" r="9" fill="url(#gCheater)"/>
+    <text class="leg" x="668" y="226" text-anchor="middle" fill="#B5442E" font-weight="700">发现漏洞</text>
+    <circle cx="1078" cy="252" r="9" fill="url(#gConvert)"/>
+    <text class="leg" x="1078" y="226" text-anchor="middle" fill="#B0751F" font-weight="700">34 题全「解出」</text>
+    <text class="serif" x="873" y="296" text-anchor="middle" font-size="26" font-weight="700" fill="#1E2430">27 分钟</text>
+    <text class="b" x="873" y="318" text-anchor="middle">作弊手法顺共享知识库扩散</text>
+
+    <rect x="668" y="356" width="410" height="146" rx="10" fill="#3D6B96" opacity="0.06"/>
+    <text class="serif" x="690" y="416" font-size="46" font-weight="700" fill="#1E2430">37 / 71</text>
+    <text class="leg" x="690" y="446">一小时时真解出</text>
+    <text class="serif" x="960" y="416" font-size="46" font-weight="700" fill="#B5442E">+34</text>
+    <text class="leg" x="960" y="446">靠漏洞「证完」</text>
+    <text class="b" x="690" y="484">prover-theta：local notation 把假设改成 False</text>
+  </g>
+
+  <line x1="64" y1="556" x2="1136" y2="556" stroke="#E8E0CC"/>
+  <text x="64" y="590" font-size="15.5" fill="#4A443A">可见性是规范执行的前提 —— 公开通道让诚实 agent 有了群众基础。</text>
+  <text class="b" x="64" y="620">单次案例观察（Gemini 3.1 Pro × 100 实例）· 非受控实验 · 分布不代表一般多 agent 系统 · Micropaper</text>
 </svg>

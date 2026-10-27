@@ -1,45 +1,99 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="AI 智创简报：Agent 轨迹评测专利成簇，长任务质检是接单活">
-  <rect width="1200" height="630" fill="#0f1b2d"/>
-  <rect x="0" y="0" width="1200" height="8" fill="#3d6a99"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #93A0AC; }
+      .rl { font-size: 15px; fill: #35505C; }
+      .val { font-size: 20px; font-weight: 700; }
+      .b { font-size: 12px; fill: #9AA8B2; }
+      .hd { font-size: 12.5px; letter-spacing: 2px; fill: #7E8C99; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F4F8F6"/>
+    </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3E8E7E"/><stop offset="1" stop-color="#7FBCAD"/>
+    </linearGradient>
+    <linearGradient id="gRed" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C0504D"/><stop offset="1" stop-color="#E08380"/>
+    </linearGradient>
+    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4A7FA5"/><stop offset="1" stop-color="#8FB6D4"/>
+    </linearGradient>
+    <linearGradient id="gSteel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8FA6B8"/><stop offset="1" stop-color="#BCCBD8"/>
+    </linearGradient>
+  </defs>
 
-  <text x="64" y="76" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#7fa6cc">AI 智创简报 · 机会情报</text>
-  <text x="64" y="130" font-family="Helvetica, Arial, sans-serif" font-size="40" font-weight="bold" fill="#eaf2fa">Agent 轨迹评测专利成簇</text>
-  <text x="64" y="178" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#a9c3dc">长任务质检是接单活 — 给 Agent 交付物打分的空白层</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1096" cy="112" r="150" fill="#4A7FA5" opacity="0.06"/>
+  <circle cx="84" cy="616" r="120" fill="#3E8E7E" opacity="0.07"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gRed)"/>
 
-  <!-- Column 1: patent signal -->
-  <rect x="64" y="216" width="336" height="300" rx="10" fill="#16273d" stroke="#2c4a6e"/>
-  <text x="88" y="258" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold" fill="#eaf2fa">专利信号</text>
-  <text x="88" y="296" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">US20260017525A1  Citibank</text>
-  <text x="88" y="322" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">约束比对动作差距 · 2026-01-15</text>
-  <text x="88" y="354" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">US20260030476A1  KPMG</text>
-  <text x="88" y="380" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">企业 Agent 可信度评分 · 2026-01-29</text>
-  <text x="88" y="412" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">US20260154581A1  Quantiphi</text>
-  <text x="88" y="438" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">合成数据跑轨迹打分 · 2026-06-04</text>
-  <text x="88" y="470" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">US20260186944A1  G06F11/34</text>
-  <text x="88" y="496" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7fa6cc">长程轨迹逐段评估 · 2026-07-02</text>
+  <text class="k" x="64" y="84">AI 智创简报 · 2026-01 ~ 2026-08 · AGENT EVALUATION PATENTS</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#16242B">长任务质检，是接单活</text>
+  <text x="64" y="158" font-size="15" fill="#54686F">四件 Agent 评测专利公开，打分标准仍是空白</text>
 
-  <!-- Column 2: trend -->
-  <rect x="432" y="216" width="336" height="300" rx="10" fill="#16273d" stroke="#2c4a6e"/>
-  <text x="456" y="258" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold" fill="#eaf2fa">技术趋势</text>
-  <text x="456" y="296" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">从单次输出抽查</text>
-  <text x="456" y="322" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#a9c3dc">到整条轨迹量化验收</text>
-  <line x1="456" y1="344" x2="744" y2="344" stroke="#2c4a6e"/>
-  <text x="456" y="378" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#7fa6cc">观测平台记录"做了什么"</text>
-  <text x="456" y="404" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#7fa6cc">专利主张"该打几分、卡在哪"</text>
-  <text x="456" y="440" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#7fa6cc">咨询与金融系申请人入场</text>
-  <text x="456" y="466" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#7fa6cc">= 甲方验收需求正在成形</text>
+  <!-- timeline: x = 170 + month*86.5 (Jan=1 ... Aug=8) -->
+  <g>
+    <line x1="170" y1="252" x2="1130" y2="252" stroke="#D8E3E6" stroke-width="2"/>
+    <text class="hd" x="170" y="300" text-anchor="middle">2026-01</text>
+    <text class="hd" x="430" y="300" text-anchor="middle">2026-03</text>
+    <text class="hd" x="690" y="300" text-anchor="middle">2026-05</text>
+    <text class="hd" x="950" y="300" text-anchor="middle">2026-07</text>
 
-  <!-- Column 3: opportunity -->
-  <rect x="800" y="216" width="336" height="300" rx="10" fill="#1d3a55" stroke="#4a7aa8"/>
-  <text x="824" y="258" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold" fill="#ffffff">一个人能做的机会</text>
-  <text x="824" y="296" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#dcebf8">Agent 验收审计服务</text>
-  <text x="824" y="322" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#a9c3dc">单次报告 3000-8000 元</text>
-  <text x="824" y="354" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#dcebf8">轨迹巡检订阅</text>
-  <text x="824" y="380" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#a9c3dc">$19-49/月 按 Agent 计收</text>
-  <line x1="824" y1="402" x2="1112" y2="402" stroke="#4a7aa8"/>
-  <text x="824" y="434" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#dcebf8">读 trace 导出 + 检查点重放</text>
-  <text x="824" y="460" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#dcebf8">起步 &lt; 2 万元 · 1 人 4 周 MVP</text>
+    <!-- Jan 15 -->
+    <line x1="182" y1="252" x2="182" y2="222" stroke="#8FA6B8" stroke-width="2"/>
+    <circle cx="182" cy="252" r="10" fill="none" stroke="#B9892F" stroke-width="3"/>
+    <text class="rl" x="182" y="206" text-anchor="middle">花旗</text>
+    <text class="b" x="182" y="186" text-anchor="middle">比对提议与预期动作</text>
+    <!-- Jan 29 -->
+    <line x1="194" y1="252" x2="194" y2="330" stroke="#8FA6B8" stroke-width="2"/>
+    <circle cx="194" cy="252" r="10" fill="#B9892F"/>
+    <text class="rl" x="194" y="352" text-anchor="middle" fill="#A07828">KPMG</text>
+    <text class="b" x="194" y="372" text-anchor="middle">部署 Agent 输出总评分</text>
+    <!-- Jun 4 -->
+    <line x1="776" y1="252" x2="776" y2="222" stroke="#8FA6B8" stroke-width="2"/>
+    <circle cx="776" cy="252" r="10" fill="#B9892F"/>
+    <text class="rl" x="776" y="206" text-anchor="middle">Quantiphi</text>
+    <text class="b" x="776" y="186" text-anchor="middle">合成数据真跑轨迹打分</text>
+    <!-- Jul 2 -->
+    <line x1="963" y1="252" x2="963" y2="330" stroke="#8FA6B8" stroke-width="2"/>
+    <circle cx="963" cy="252" r="10" fill="#B9892F"/>
+    <text class="rl" x="963" y="352" text-anchor="middle">申请人未标注</text>
+    <text class="b" x="963" y="372" text-anchor="middle">长程轨迹逐段评估</text>
+    <text class="b" x="1052" y="257" fill="#A07828">实心 = 已公开</text>
+  </g>
 
-  <text x="64" y="572" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#7fa6cc">今天能做：导出最近 50 条 Agent 轨迹，按完成 / 越权 / 放弃三项逐条打分</text>
-  <text x="64" y="602" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#4a6a8c">来源：FreePatentsOnline 公开文本 · 2026-09-07 · Micropaper</text>
+  <!-- stethoscope icon -->
+  <g>
+    <path d="M 92 420 q -26 0 -26 30 v 34 a 22 22 0 0 0 44 0 v -8" fill="none" stroke="#3E8E7E" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="110" cy="470" r="13" fill="url(#gTeal)"/>
+    <circle cx="72" cy="414" r="6" fill="#4A7FA5"/>
+    <circle cx="112" cy="414" r="6" fill="#C0504D"/>
+    <text class="hd" x="92" y="540" text-anchor="middle">轨迹听诊</text>
+  </g>
+
+  <!-- pricing bands -->
+  <g>
+    <rect x="196" y="418" width="600" height="48" rx="10" fill="#3E8E7E" opacity="0.08"/>
+    <text class="rl" x="216" y="448">验收审计服务</text>
+    <rect x="380" y="432" width="288" height="14" rx="7" fill="url(#gTeal)"/>
+    <text class="val" x="686" y="447" fill="#2F6E60">单次 3000–8000 元</text>
+
+    <rect x="196" y="482" width="600" height="48" rx="10" fill="#C0504D" opacity="0.07"/>
+    <text class="rl" x="216" y="512">轨迹巡检订阅</text>
+    <rect x="380" y="496" width="170" height="14" rx="7" fill="url(#gRed)"/>
+    <text class="val" x="568" y="511" fill="#A63A38">按 Agent 计收 $19–49/月</text>
+
+    <rect x="196" y="546" width="600" height="48" rx="10" fill="#4A7FA5" opacity="0.07"/>
+    <text class="rl" x="216" y="576">一人 MVP</text>
+    <rect x="380" y="560" width="92" height="14" rx="7" fill="url(#gBlue)"/>
+    <text class="val" x="490" y="575" fill="#3A6484">4 周 · 月成本数百元</text>
+  </g>
+
+  <text class="serif" x="846" y="472" font-size="28" font-weight="700" fill="#16242B">观测平台把「记录」做成商品，<tspan fill="#C0504D">打分标准</tspan>留白。</text>
+
+  <line x1="64" y1="612" x2="1136" y2="612" stroke="#DCE6E6"/>
+  <text class="b" x="64" y="640">四件均为已公开申请、非授权专利 · 第四件分类 G06F11/34 · 价格为本简报创业建议 · Micropaper</text>
 </svg>

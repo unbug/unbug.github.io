@@ -1,64 +1,100 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="AI 智创简报封面：Agent 记忆层被写进专利，垂直行业的本地化长尾还空着">
-  <rect width="1200" height="630" fill="#f4f6f9"/>
-  <rect x="0" y="0" width="1200" height="96" fill="#1f3a5f"/>
-  <text x="60" y="44" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#8fb3d9">AI 智创简报 · Patent Intelligence</text>
-  <text x="60" y="76" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="28" font-weight="bold" fill="#ffffff">Agent 记忆层被写进专利，垂直行业的本地化长尾还空着</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #97A18E; }
+      .b { font-size: 12px; fill: #7E887A; }
+      .ev { font-size: 13px; font-weight: 700; fill: #26302A; }
+      .evs { font-size: 12px; fill: #5D685F; }
+      .stat { font-size: 34px; font-weight: 700; fill: #26302A; }
+      .unit { font-size: 14px; fill: #5D685F; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F5F8F4"/>
+    </linearGradient>
+    <linearGradient id="axis" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6E9B61"/><stop offset="1" stop-color="#3A76B8"/>
+    </linearGradient>
+    <linearGradient id="pin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C24C4C"/><stop offset="1" stop-color="#E08A3C"/>
+    </linearGradient>
+    <linearGradient id="route" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3A76B8"/><stop offset="1" stop-color="#6E9B61"/>
+    </linearGradient>
+  </defs>
 
-  <!-- Column 1: patent signals -->
-  <rect x="60" y="136" width="340" height="410" rx="10" fill="#ffffff" stroke="#d5dde8"/>
-  <rect x="60" y="136" width="340" height="52" rx="10" fill="#2c5282"/>
-  <text x="230" y="170" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="bold" fill="#ffffff">专利信号</text>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1124" cy="96" r="130" fill="#3A76B8" opacity="0.06"/>
+  <circle cx="90" cy="644" r="120" fill="#6E9B61" opacity="0.07"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#axis)"/>
 
-  <text x="84" y="222" font-family="Menlo, monospace" font-size="16" font-weight="bold" fill="#1f3a5f">US20260186828A1 · Microsoft</text>
-  <text x="84" y="244" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#4a5568">跨 Agent 共享上下文检索 · 07-02</text>
+  <text class="k" x="64" y="84">AI 智创简报 · 专利情报速读 · Agent 记忆层</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">内网这条路，导航没画</text>
+  <text x="64" y="158" font-size="15" fill="#5D685F">7–8 月，微软与 UiPath 连发四件 Agent 记忆与上下文专利</text>
 
-  <text x="84" y="286" font-family="Menlo, monospace" font-size="16" font-weight="bold" fill="#1f3a5f">US20260189498A1 · Microsoft</text>
-  <text x="84" y="308" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#4a5568">事件流路由到 Agent 状态 · 07-02</text>
+  <!-- navigation motif: route + destination pin -->
+  <g>
+    <path d="M 1010 160 C 1030 110, 1070 150, 1086 106" fill="none" stroke="url(#route)" stroke-width="5" stroke-dasharray="10 7" stroke-linecap="round"/>
+    <path d="M 1086 70 c -14 0 -24 10 -24 23 c 0 17 24 37 24 37 s 24 -20 24 -37 c 0 -13 -10 -23 -24 -23 z" fill="url(#pin)"/>
+    <circle cx="1086" cy="93" r="8" fill="#F5F8F4"/>
+    <circle cx="1010" cy="160" r="6" fill="#3A76B8"/>
+  </g>
 
-  <text x="84" y="350" font-family="Menlo, monospace" font-size="16" font-weight="bold" fill="#1f3a5f">US20260252594A1 · Microsoft</text>
-  <text x="84" y="372" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#4a5568">短期/工作/长期三级记忆 · 08-27</text>
+  <!-- timeline: 07-02=160, 07-16=342, 08-27=740 (span 56d, ~10.36/day) -->
+  <line x1="150" y1="330" x2="800" y2="330" stroke="url(#axis)" stroke-width="4" stroke-linecap="round"/>
+  <text class="b" x="150" y="356">07-02</text>
+  <text class="b" x="800" y="356" text-anchor="end">08-27</text>
 
-  <text x="84" y="414" font-family="Menlo, monospace" font-size="16" font-weight="bold" fill="#1f3a5f">US20260203325A1 · UiPath</text>
-  <text x="84" y="436" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#4a5568">自动化复用的向量记忆 · 07-16</text>
+  <g>
+    <circle cx="160" cy="330" r="10" fill="url(#pin)"/>
+    <line x1="160" y1="318" x2="160" y2="284" stroke="#D98F8F"/>
+    <text class="ev" x="160" y="262">07-02 · Microsoft ×2</text>
+    <text class="evs" x="160" y="282">共享上下文 + 事件路由</text>
 
-  <text x="84" y="492" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#2c5282">关键词：跨 Agent · 上下文检索</text>
-  <text x="84" y="514" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#2c5282">事件流 · 分级记忆 · 向量复用</text>
+    <circle cx="342" cy="330" r="10" fill="#FFFFFF" stroke="#E08A3C" stroke-width="3.5"/>
+    <line x1="342" y1="342" x2="342" y2="376" stroke="#EDC08F"/>
+    <text class="ev" x="342" y="404">07-16 · UiPath</text>
+    <text class="evs" x="342" y="424">执行结果写向量记忆</text>
 
-  <!-- Column 2: trend -->
-  <rect x="430" y="136" width="340" height="410" rx="10" fill="#ffffff" stroke="#d5dde8"/>
-  <rect x="430" y="136" width="340" height="52" rx="10" fill="#38648f"/>
-  <text x="600" y="170" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="bold" fill="#ffffff">技术趋势</text>
+    <circle cx="740" cy="330" r="10" fill="url(#pin)"/>
+    <line x1="740" y1="318" x2="740" y2="284" stroke="#D98F8F"/>
+    <text class="ev" x="740" y="262">08-27 · Microsoft</text>
+    <text class="evs" x="740" y="282">短期/工作/长期三级记忆</text>
+  </g>
+  <circle cx="150" cy="452" r="6" fill="url(#pin)"/><text class="b" x="162" y="457">微软三件套</text>
+  <circle cx="266" cy="452" r="6" fill="#FFFFFF" stroke="#E08A3C" stroke-width="2.5"/><text class="b" x="278" y="457">UiPath</text>
 
-  <text x="454" y="226" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="bold" fill="#1f3a5f">记忆 = 共享基础设施</text>
-  <text x="454" y="252" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#4a5568">上下文可检索、可路由、分级管理</text>
+  <!-- open-space chip -->
+  <g>
+    <rect x="470" y="428" width="380" height="46" rx="10" fill="#6E9B61" opacity="0.10"/>
+    <rect x="470" y="428" width="5" height="46" rx="2.5" fill="#6E9B61"/>
+    <text x="492" y="449" font-size="13" font-weight="700" fill="#4C7040">通用中间件高地已被双重占位</text>
+    <text x="492" y="467" font-size="12.5" fill="#5D685F">专利圈平台编排，开源做通用组件</text>
+  </g>
 
-  <text x="454" y="304" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="bold" fill="#1f3a5f">开源生态同期爆发</text>
-  <text x="454" y="330" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#4a5568">mem0 64,710 · LangGraph 41,064</text>
-  <text x="454" y="352" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#4a5568">MCP servers 90,079 star（实测）</text>
+  <!-- opportunity cards -->
+  <g>
+    <rect x="64" y="492" width="336" height="140" rx="18" fill="#C24C4C" opacity="0.07"/>
+    <rect x="64" y="492" width="336" height="6" rx="3" fill="#C24C4C"/>
+    <rect x="92" y="522" width="44" height="28" rx="5" fill="#C24C4C"/>
+    <circle cx="114" cy="536" r="7" fill="#F5F8F4"/>
+    <text class="stat" x="152" y="554">3000–8000 元<tspan class="unit"> /次</tspan></text>
+    <text class="evs" x="92" y="596">行业 schema 包私有部署实施费</text>
 
-  <text x="454" y="404" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="bold" fill="#1f3a5f">通用中间件高地已被双重占位</text>
-  <text x="454" y="430" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#4a5568">专利 + 开源都在卷通用层</text>
+    <rect x="432" y="492" width="336" height="140" rx="18" fill="#3A76B8" opacity="0.08"/>
+    <rect x="432" y="492" width="336" height="6" rx="3" fill="#3A76B8"/>
+    <rect x="460" y="522" width="44" height="28" rx="14" fill="#3A76B8"/>
+    <circle cx="482" cy="536" r="6" fill="#F5F8F4"/>
+    <text class="stat" x="520" y="554">90,079<tspan class="unit"> star</tspan></text>
+    <text class="evs" x="460" y="596">MCP servers（2026-09-05 实测）</text>
 
-  <rect x="454" y="462" width="292" height="56" rx="8" fill="#fefcbf" stroke="#d69e2e"/>
-  <text x="600" y="486" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" font-weight="bold" fill="#744210">空档：数据不出内网的私有化行业</text>
-  <text x="600" y="508" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="14" fill="#744210">医疗 · 金融 · 制造</text>
+    <rect x="800" y="492" width="336" height="140" rx="18" fill="#E08A3C" opacity="0.10"/>
+    <rect x="800" y="492" width="336" height="6" rx="3" fill="#E08A3C"/>
+    <path d="M 828 552 l 10 -26 l 16 12 z" fill="#E08A3C"/>
+    <circle cx="846" cy="530" r="4" fill="#F7E3CB"/>
+    <text class="stat" x="888" y="554">数据不出内网<tspan class="unit"> 长尾</tspan></text>
+    <text class="evs" x="828" y="596">医疗 / 金融 / 制造业私有化</text>
+  </g>
 
-  <!-- Column 3: opportunity -->
-  <rect x="800" y="136" width="340" height="410" rx="10" fill="#ffffff" stroke="#d5dde8"/>
-  <rect x="800" y="136" width="340" height="52" rx="10" fill="#276749"/>
-  <text x="970" y="170" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="bold" fill="#ffffff">落地机会</text>
-
-  <text x="824" y="226" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="bold" fill="#22543d">行业本地化记忆插件（MCP Server）</text>
-  <text x="824" y="252" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#4a5568">行业 schema + 私有向量库 + 审计日志</text>
-  <text x="824" y="274" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#4a5568">Python + pgvector，成本 &lt; 2 万元</text>
-
-  <text x="824" y="326" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="bold" fill="#22543d">记忆审计服务</text>
-  <text x="824" y="352" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" fill="#4a5568">读写审计报告，单次 2000-6000 元</text>
-
-  <rect x="824" y="392" width="292" height="76" rx="8" fill="#e6fffa" stroke="#2c7a7b"/>
-  <text x="970" y="418" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" font-weight="bold" fill="#234e52">今天能做</text>
-  <text x="970" y="442" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="14" fill="#234e52">接本地向量库 + 写 20 个行业字段</text>
-  <text x="970" y="462" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="14" fill="#234e52">+ 打开读写审计日志，一个周末</text>
-
-  <text x="60" y="592" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="14" fill="#718096">来源：FreePatentsOnline 详情页逐字核验 · GitHub API star 数 2026-09-05 实测 · Micropaper AI 智创简报 #9</text>
+  <text class="b" x="64" y="662">四件均为申请公开，不等于已授权 · 观点仅为机会判断，不构成投资建议 · Micropaper</text>
 </svg>
