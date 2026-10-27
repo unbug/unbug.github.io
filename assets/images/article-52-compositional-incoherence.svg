@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Noto Serif SC','Songti SC',serif">
+  <defs>
+    <linearGradient id="gIndigo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2E5E8C"/><stop offset="1" stop-color="#5B8FBF"/>
+    </linearGradient>
+    <linearGradient id="gVerd" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3E8E7E"/><stop offset="1" stop-color="#7BC4A8"/>
+    </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2F7D8C"/><stop offset="1" stop-color="#69B3BF"/>
+    </linearGradient>
+    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B9892F"/><stop offset="1" stop-color="#D9B65E"/>
+    </linearGradient>
+    <linearGradient id="gGoldRose" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D9B65E"/><stop offset="1" stop-color="#B5442E"/>
+    </linearGradient>
+    <linearGradient id="gRose" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B5442E"/><stop offset="1" stop-color="#E07B5C"/>
+    </linearGradient>
+    <linearGradient id="gOchre" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A9722F"/><stop offset="1" stop-color="#D2A35C"/>
+    </linearGradient>
+    <linearGradient id="gSlateGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3D5A73"/><stop offset="1" stop-color="#B9892F"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="#FBFAF7"/>
+  <rect x="60" y="40" width="44" height="5" fill="#B5442E"/>
+
+  <text x="60" y="64" font-size="13" letter-spacing="3" fill="#9A937F">一分钟读论文 · ARXIV 2605.30335</text>
+  <text x="60" y="112" font-size="37" font-weight="bold" fill="#1A1B1E">每张地图都准，拼起来地球放不下</text>
+  <text x="60" y="143" font-size="15.5" fill="#6E6A5C">多组件 LLM Agent：每个组件局部校准良好，组合输出仍能违反概率公理</text>
+  <line x1="60" y1="162" x2="1140" y2="162" stroke="#E5E1D4" stroke-width="1"/>
+
+  <!-- 图幅 A：研究组件 -->
+  <rect x="70" y="196" width="250" height="186" fill="url(#gIndigo)" opacity="0.16"/>
+  <path d="M90 330 C 130 300 155 348 205 318 S 285 338 300 310" fill="none" stroke="#2E5E8C" stroke-width="2" opacity="0.4"/>
+  <line x1="82" y1="252" x2="308" y2="252" stroke="#2E5E8C" stroke-width="1" opacity="0.18"/>
+  <text x="88" y="224" font-size="13" letter-spacing="2" fill="#2E5E8C">研究组件 · 图幅甲</text>
+  <text x="88" y="288" font-size="26" font-weight="bold" fill="#1A1B1E">0.6</text>
+  <text x="88" y="310" font-size="12.5" fill="#6E6A5C">P（共和党获胜）</text>
+
+  <text x="330" y="296" font-size="26" fill="#B9892F">+</text>
+
+  <!-- 图幅 B：预测组件 -->
+  <rect x="360" y="196" width="250" height="186" fill="url(#gVerd)" opacity="0.16"/>
+  <circle cx="562" cy="348" r="17" fill="none" stroke="#B9892F" stroke-width="1.5" opacity="0.55"/>
+  <line x1="562" y1="333" x2="562" y2="363" stroke="#B9892F" stroke-width="1.5" opacity="0.55"/>
+  <line x1="547" y1="348" x2="577" y2="348" stroke="#B9892F" stroke-width="1.5" opacity="0.55"/>
+  <text x="378" y="224" font-size="13" letter-spacing="2" fill="#3E8E7E">预测组件 · 图幅乙</text>
+  <text x="378" y="288" font-size="26" font-weight="bold" fill="#1A1B1E">0.6</text>
+  <text x="378" y="310" font-size="12.5" fill="#6E6A5C">P（民主党获胜）</text>
+
+  <!-- 拼接箭头 -->
+  <line x1="315" y1="392" x2="315" y2="418" stroke="#9A937F" stroke-width="2"/>
+  <polygon points="315,428 309,416 321,416" fill="#9A937F"/>
+
+  <!-- 合成图集 -->
+  <rect x="95" y="436" width="440" height="118" fill="url(#gRose)" opacity="0.10"/>
+  <circle cx="152" cy="495" r="30" fill="url(#gRose)" opacity="0.88"/>
+  <text x="152" y="492" font-size="13" fill="#FBFAF7" text-anchor="middle">超限</text>
+  <text x="152" y="508" font-size="10" fill="#FBFAF7" text-anchor="middle" letter-spacing="1">拼接</text>
+  <text x="202" y="502" font-size="30" font-weight="bold" fill="#B5442E">1.2</text>
+  <text x="202" y="526" font-size="12.5" fill="#6E6A5C">组合后总概率质量 · 没有任何概率测度能容纳</text>
+  <text x="202" y="545" font-size="12.5" fill="#A29C88">Dutch-book 暴露严格产生于组件之间</text>
+
+  <!-- 右栏 1：不协调出现率区间 -->
+  <text x="720" y="212" font-size="13" fill="#6E6A5C">组合不协调出现率 · 1,876 集成簇</text>
+  <rect x="720" y="230" width="420" height="4" fill="#EAE6DA"/>
+  <rect x="859" y="226" width="256" height="12" fill="url(#gGoldRose)" opacity="0.9"/>
+  <circle cx="859" cy="232" r="6" fill="#FBFAF7" stroke="#B9892F" stroke-width="2.5"/>
+  <circle cx="1115" cy="232" r="6" fill="#B5442E"/>
+  <text x="859" y="262" font-size="12.5" fill="#B9892F" text-anchor="middle">33%</text>
+  <text x="1115" y="262" font-size="12.5" fill="#B5442E" text-anchor="middle">94%</text>
+
+  <!-- 右栏 2：后悔损失 -->
+  <text x="720" y="308" font-size="13" fill="#6E6A5C">每笔决策后悔损失</text>
+  <text x="720" y="344" font-size="26" font-weight="bold" fill="#3D5A73">+0.115 nats</text>
+  <text x="720" y="366" font-size="12.5" fill="#A29C88">Naive 组合平均 · 论文自述口径</text>
+
+  <!-- 右栏 3：暴露界修复 -->
+  <text x="720" y="408" font-size="13" fill="#6E6A5C">暴露界：Naive 组合 → 分层投影修复</text>
+  <circle cx="768" cy="436" r="5.5" fill="#3D5A73"/>
+  <line x1="768" y1="436" x2="1076" y2="462" stroke="url(#gSlateGold)" stroke-width="2.5"/>
+  <circle cx="1076" cy="462" r="5.5" fill="#B9892F"/>
+  <text x="768" y="424" font-size="12.5" fill="#3D5A73" text-anchor="middle">平均 0.137</text>
+  <text x="1076" y="486" font-size="12.5" fill="#B9892F" text-anchor="middle">QP 数值下限</text>
+  <text x="720" y="502" font-size="12.5" fill="#A29C88">分层 Boyle-Dykstra 投影 · 残差幅度预测误差 7% 以内</text>
+
+  <!-- 右栏 4：关系硬度排序 -->
+  <text x="720" y="534" font-size="13" fill="#6E6A5C">关系硬度排序 · 实测与理论一致</text>
+  <rect x="720" y="546" width="130" height="13" fill="url(#gIndigo)" opacity="0.85"/>
+  <text x="858" y="557" font-size="12.5" fill="#6E6A5C">划分</text>
+  <rect x="720" y="565" width="92" height="13" fill="url(#gTeal)" opacity="0.85"/>
+  <text x="820" y="576" font-size="12.5" fill="#6E6A5C">否定</text>
+  <rect x="720" y="584" width="60" height="13" fill="url(#gVerd)" opacity="0.85"/>
+  <text x="788" y="595" font-size="12.5" fill="#6E6A5C">析取</text>
+  <rect x="720" y="603" width="36" height="13" fill="url(#gOchre)" opacity="0.9"/>
+  <text x="764" y="614" font-size="12.5" fill="#6E6A5C">合取</text>
+
+  <text x="60" y="648" font-size="12.5" fill="#A29C88">来源：arXiv 2605.30335 · 数字为论文自述口径（1,876 集成簇实验）· 预印本未经同行评审 · 检索增强 / 分区感知提示 / 聚合器 LLM 三种提示级缓解均失效</text>
+</svg>
