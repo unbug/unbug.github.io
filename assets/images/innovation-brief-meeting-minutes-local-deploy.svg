@@ -10,19 +10,19 @@
       .unit { font-size: 14px; fill: #5C6672; }
     </style>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F0F7F4"/>
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FBF7F0"/>
     </linearGradient>
     <linearGradient id="axis" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2D8CFF"/><stop offset="1" stop-color="#F5A524"/>
+      <stop offset="0" stop-color="#3A6EA5"/><stop offset="1" stop-color="#B8763E"/>
     </linearGradient>
     <linearGradient id="zoom" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#2D8CFF"/><stop offset="1" stop-color="#38BDF8"/>
+      <stop offset="0" stop-color="#3A6EA5"/><stop offset="1" stop-color="#6FA8DC"/>
     </linearGradient>
   </defs>
 
   <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1120" cy="100" r="130" fill="#2D8CFF" opacity="0.06"/>
-  <circle cx="100" cy="640" r="120" fill="#F5A524" opacity="0.07"/>
+  <circle cx="1120" cy="100" r="130" fill="#3A6EA5" opacity="0.06"/>
+  <circle cx="100" cy="640" r="120" fill="#B8763E" opacity="0.07"/>
   <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#axis)"/>
 
   <text class="k" x="64" y="84">AI 智创简报 · 专利情报速读 · 2026-10-18</text>
@@ -33,66 +33,66 @@
   <g>
     <rect x="1040" y="70" width="96" height="88" rx="14" fill="#FFFFFF" stroke="#B9D4FF" stroke-width="2.5"/>
     <rect x="1040" y="70" width="96" height="26" rx="13" fill="url(#zoom)"/>
-    <circle cx="1064" cy="116" r="7" fill="#F5A524"/>
-    <circle cx="1088" cy="116" r="7" fill="#23B5A5"/>
-    <circle cx="1112" cy="116" r="7" fill="#EC6B9D"/>
-    <line x1="1062" y1="64" x2="1062" y2="78" stroke="#2D8CFF" stroke-width="5" stroke-linecap="round"/>
-    <line x1="1114" y1="64" x2="1114" y2="78" stroke="#2D8CFF" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="1064" cy="116" r="7" fill="#B8763E"/>
+    <circle cx="1088" cy="116" r="7" fill="#3E8E7E"/>
+    <circle cx="1112" cy="116" r="7" fill="#C0392B"/>
+    <line x1="1062" y1="64" x2="1062" y2="78" stroke="#3A6EA5" stroke-width="5" stroke-linecap="round"/>
+    <line x1="1114" y1="64" x2="1114" y2="78" stroke="#3A6EA5" stroke-width="5" stroke-linecap="round"/>
   </g>
 
   <!-- timeline x: 06-01=140, 07-31=1100, per day 960/60=16; 06-02→156, 06-17→396.8, 06-23→492.8, 07-23→956.4 -->
   <line x1="140" y1="330" x2="1100" y2="330" stroke="url(#axis)" stroke-width="4" stroke-linecap="round"/>
   <text class="b" x="140" y="356">6月</text>
   <text class="b" x="1100" y="356" text-anchor="end">7月底</text>
-  <circle cx="620" cy="330" r="3" fill="#9DB6D8"/><text class="b" x="620" y="356" text-anchor="middle">月末</text>
+  <circle cx="620" cy="330" r="3" fill="#8FA6C0"/><text class="b" x="620" y="356" text-anchor="middle">月末</text>
 
   <g>
     <circle cx="156" cy="330" r="10" fill="url(#zoom)"/>
-    <line x1="156" y1="318" x2="156" y2="284" stroke="#9DB6D8"/>
+    <line x1="156" y1="318" x2="156" y2="284" stroke="#8FA6C0"/>
     <text class="ev" x="156" y="262">06-02 · Zoom</text>
     <text class="evs" x="156" y="282">会中增量纪要</text>
 
-    <circle cx="396.8" cy="330" r="10" fill="#6BA423"/>
-    <line x1="396.8" y1="342" x2="396.8" y2="376" stroke="#A8C48A"/>
+    <circle cx="396.8" cy="330" r="10" fill="#4F9D69"/>
+    <line x1="396.8" y1="342" x2="396.8" y2="376" stroke="#93BE85"/>
     <text class="ev" x="396.8" y="404">06-17 · Microsoft</text>
     <text class="evs" x="396.8" y="424">话语重要性评估</text>
 
     <circle cx="492.8" cy="330" r="10" fill="url(#zoom)"/>
-    <line x1="492.8" y1="318" x2="492.8" y2="304" stroke="#9DB6D8"/>
+    <line x1="492.8" y1="318" x2="492.8" y2="304" stroke="#8FA6C0"/>
     <text class="ev" x="492.8" y="262">06-23 · Zoom</text>
     <text class="evs" x="492.8" y="282">章节自动切分</text>
 
-    <circle cx="956.4" cy="330" r="10" fill="#FFFFFF" stroke="#F5A524" stroke-width="3.5"/>
-    <line x1="956.4" y1="318" x2="956.4" y2="284" stroke="#E3C07C"/>
+    <circle cx="956.4" cy="330" r="10" fill="#FFFFFF" stroke="#B8763E" stroke-width="3.5"/>
+    <line x1="956.4" y1="318" x2="956.4" y2="284" stroke="#D8B58C"/>
     <text class="ev" x="956.4" y="262" text-anchor="end">07-23 · Zoom</text>
     <text class="evs" x="956.4" y="282" text-anchor="end">分段记录回查</text>
   </g>
   <circle cx="140" cy="452" r="6" fill="url(#zoom)"/><text class="b" x="152" y="457">授权</text>
-  <circle cx="214" cy="452" r="6" fill="#FFFFFF" stroke="#F5A524" stroke-width="2.5"/><text class="b" x="226" y="457">公开申请</text>
+  <circle cx="214" cy="452" r="6" fill="#FFFFFF" stroke="#B8763E" stroke-width="2.5"/><text class="b" x="226" y="457">公开申请</text>
 
   <!-- opportunity cards -->
   <g>
-    <rect x="64" y="492" width="336" height="140" rx="18" fill="#FFFBF0"/>
-    <circle cx="352" cy="606" r="46" fill="#F5A524" opacity="0.10"/>
-    <rect x="64" y="492" width="336" height="6" rx="3" fill="#F5A524"/>
-    <rect x="92" y="524" width="44" height="28" rx="5" fill="#F7C948"/>
+    <rect x="64" y="492" width="336" height="140" rx="18" fill="#FAF4EA"/>
+    <circle cx="352" cy="606" r="46" fill="#B8763E" opacity="0.10"/>
+    <rect x="64" y="492" width="336" height="6" rx="3" fill="#B8763E"/>
+    <rect x="92" y="524" width="44" height="28" rx="5" fill="#C9A227"/>
     <circle cx="114" cy="538" r="7" fill="#FFFFFF"/>
     <text class="stat" x="152" y="554">0.8–3 万<tspan class="unit"> /单</tspan></text>
     <text class="evs" x="92" y="596">律所 / 诊所内网部署</text>
 
-    <rect x="432" y="492" width="336" height="140" rx="18" fill="#F0FAF8"/>
-    <circle cx="720" cy="606" r="46" fill="#23B5A5" opacity="0.10"/>
-    <rect x="432" y="492" width="336" height="6" rx="3" fill="#23B5A5"/>
-    <rect x="460" y="524" width="44" height="28" rx="14" fill="#23B5A5"/>
+    <rect x="432" y="492" width="336" height="140" rx="18" fill="#EFF7F3"/>
+    <circle cx="720" cy="606" r="46" fill="#3E8E7E" opacity="0.10"/>
+    <rect x="432" y="492" width="336" height="6" rx="3" fill="#3E8E7E"/>
+    <rect x="460" y="524" width="44" height="28" rx="14" fill="#3E8E7E"/>
     <circle cx="482" cy="538" r="6" fill="#FFFFFF"/>
     <text class="stat" x="520" y="554">50–100 元<tspan class="unit"> /席·月</tspan></text>
     <text class="evs" x="460" y="596">承诺台账席位费</text>
 
-    <rect x="800" y="492" width="336" height="140" rx="18" fill="#FFF6F4"/>
-    <circle cx="1088" cy="606" r="46" fill="#F0604D" opacity="0.10"/>
-    <rect x="800" y="492" width="336" height="6" rx="3" fill="#F0604D"/>
-    <path d="M 828 552 l 10 -26 l 16 12 z" fill="#F0604D"/>
-    <circle cx="846" cy="530" r="4" fill="#FFD9D2"/>
+    <rect x="800" y="492" width="336" height="140" rx="18" fill="#FAF0EE"/>
+    <circle cx="1088" cy="606" r="46" fill="#C0392B" opacity="0.10"/>
+    <rect x="800" y="492" width="336" height="6" rx="3" fill="#C0392B"/>
+    <path d="M 828 552 l 10 -26 l 16 12 z" fill="#C0392B"/>
+    <circle cx="846" cy="530" r="4" fill="#F2D8D2"/>
     <text class="stat" x="888" y="554">1 人 · 4 周</text>
     <text class="evs" x="828" y="596">可演示 MVP（GPU 约 0.6–1.2 万）</text>
   </g>

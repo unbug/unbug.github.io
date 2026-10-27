@@ -3,64 +3,64 @@
     <style>
       .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
       .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8E97A6; }
-      .rl { font-size: 15px; fill: #454E5C; }
+      .rl { font-size: 15px; fill: #3F4A5A; }
       .val { font-size: 22px; font-weight: 700; }
       .b { font-size: 12px; fill: #98A1AE; }
     </style>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F1F5FF"/>
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F6F2E7"/>
     </linearGradient>
     <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#23B5A5"/><stop offset="1" stop-color="#8CC63F"/>
+      <stop offset="0" stop-color="#2E6E4E"/><stop offset="1" stop-color="#7FB069"/>
     </linearGradient>
     <linearGradient id="gAmber" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#F5A524"/><stop offset="1" stop-color="#F7C948"/>
+      <stop offset="0" stop-color="#C9A227"/><stop offset="1" stop-color="#E3C557"/>
     </linearGradient>
     <linearGradient id="gCoral" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#F0604D"/><stop offset="1" stop-color="#EC6B9D"/>
+      <stop offset="0" stop-color="#A63D40"/><stop offset="1" stop-color="#D2694A"/>
     </linearGradient>
     <linearGradient id="gCore" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#4F6DF5"/><stop offset="1" stop-color="#8E7CF0"/>
+      <stop offset="0" stop-color="#1F3A5F"/><stop offset="1" stop-color="#3E6990"/>
     </linearGradient>
   </defs>
 
   <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1080" cy="120" r="150" fill="#4F6DF5" opacity="0.06"/>
-  <circle cx="90" cy="610" r="130" fill="#23B5A5" opacity="0.07"/>
+  <circle cx="1080" cy="120" r="150" fill="#1F3A5F" opacity="0.06"/>
+  <circle cx="90" cy="610" r="130" fill="#2E6E4E" opacity="0.07"/>
   <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gCoral)"/>
 
   <text class="k" x="64" y="84">一分钟读论文 NO.200 · ARXIV:2610.32246 · APPLE</text>
   <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1E2430">省算力账，批次维度对不上</text>
-  <text x="64" y="158" font-size="15" fill="#5C6672">预测平均、实跑、批次实付，是三个数</text>
+  <text x="64" y="158" font-size="15" fill="#5A6070">预测平均、实跑、批次实付，是三个数</text>
 
   <!-- looped core icon -->
   <g>
-    <path d="M 1000 76 A 52 52 0 1 1 981 168" fill="none" stroke="#38BDF8" stroke-width="6" stroke-linecap="round"/>
-    <path d="M 981 168 l -12 -16 l 22 -4 z" fill="#38BDF8"/>
+    <path d="M 1000 76 A 52 52 0 1 1 981 168" fill="none" stroke="#B87333" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 981 168 l -12 -16 l 22 -4 z" fill="#B87333"/>
     <rect x="1000" y="80" width="120" height="76" rx="18" fill="url(#gCore)"/>
     <text x="1060" y="126" text-anchor="middle" fill="#FFFFFF" font-size="22" font-weight="700">Core</text>
-    <text x="1060" y="146" text-anchor="middle" fill="#DBE4FF" font-size="12">×8 迭代</text>
-    <circle cx="972" cy="118" r="7" fill="#F5A524"/>
-    <circle cx="1148" cy="118" r="7" fill="#23B5A5"/>
+    <text x="1060" y="146" text-anchor="middle" fill="#D8E2EE" font-size="12">×8 迭代</text>
+    <circle cx="972" cy="118" r="7" fill="#C9A227"/>
+    <circle cx="1148" cy="118" r="7" fill="#2E6E4E"/>
   </g>
 
   <!-- bars: t -> x=170+t*90, cap8=890 -->
   <g>
     <text class="rl" x="150" y="263" text-anchor="end">head 预测</text>
     <rect x="170" y="242" width="333" height="28" rx="14" fill="url(#gGreen)"/>
-    <text class="val" x="515" y="264" fill="#1D9A8B">3.7</text>
+    <text class="val" x="515" y="264" fill="#2E6E4E">3.7</text>
 
     <text class="rl" x="150" y="343" text-anchor="end">批次实付</text>
     <rect x="170" y="322" width="423" height="28" rx="14" fill="url(#gAmber)"/>
-    <text class="val" x="605" y="344" fill="#D98E12">4.4–4.7</text>
+    <text class="val" x="605" y="344" fill="#A67C00">4.4–4.7</text>
 
     <text class="rl" x="150" y="423" text-anchor="end">退出规则实跑</text>
     <rect x="170" y="402" width="711" height="28" rx="14" fill="url(#gCoral)"/>
-    <text class="val" x="845" y="392" fill="#E14B38" text-anchor="end">7.6–7.9</text>
+    <text class="val" x="845" y="392" fill="#A63D40" text-anchor="end">7.6–7.9</text>
   </g>
 
-  <line x1="890" y1="228" x2="890" y2="448" stroke="#E14B38" stroke-width="2" stroke-dasharray="5 5" opacity="0.6"/>
-  <text class="b" x="890" y="216" text-anchor="middle" fill="#E14B38">跑满 8</text>
+  <line x1="890" y1="228" x2="890" y2="448" stroke="#A63D40" stroke-width="2" stroke-dasharray="5 5" opacity="0.6"/>
+  <text class="b" x="890" y="216" text-anchor="middle" fill="#A63D40">跑满 8</text>
   <text class="b" x="170" y="486">0</text>
   <text class="b" x="350" y="486">2</text>
   <text class="b" x="530" y="486">4</text>
@@ -69,19 +69,19 @@
 
   <!-- right stats -->
   <g>
-    <text class="serif" x="1136" y="300" text-anchor="end" font-size="28" font-weight="700" fill="#1E2430">0.0246 <tspan fill="#E14B38">→ 0.003</tspan></text>
+    <text class="serif" x="1136" y="300" text-anchor="end" font-size="28" font-weight="700" fill="#1E2430">0.0246 <tspan fill="#A63D40">→ 0.003</tspan></text>
     <text class="b" x="1136" y="324" text-anchor="end">质量领先，改按批次实付口径</text>
 
     <text class="rl" x="940" y="382" font-size="13.5">实测</text>
-    <rect x="992" y="370" width="84" height="12" rx="6" fill="#38BDF8"/>
-    <text class="val" x="1086" y="384" font-size="16" fill="#2C9FD6">1.6×</text>
+    <rect x="992" y="370" width="84" height="12" rx="6" fill="#B87333"/>
+    <text class="val" x="1086" y="384" font-size="16" fill="#1F3A5F">1.6×</text>
     <text class="rl" x="940" y="420" font-size="13.5">本可</text>
     <rect x="992" y="408" width="122" height="12" rx="6" fill="url(#gCoral)"/>
-    <text class="val" x="1124" y="422" font-size="16" fill="#E14B38">2.3×</text>
+    <text class="val" x="1124" y="422" font-size="16" fill="#A63D40">2.3×</text>
     <text class="b" x="940" y="452">差额 = 等最慢 token 的税</text>
   </g>
 
-  <line x1="64" y1="560" x2="1136" y2="560" stroke="#E3E8F2"/>
-  <text x="64" y="596" font-size="15.5" fill="#454E5C">省是真的省过 —— 只是账要按三个数分开记。</text>
+  <line x1="64" y1="560" x2="1136" y2="560" stroke="#E6DFC9"/>
+  <text x="64" y="596" font-size="15.5" fill="#3F4A5A">省是真的省过 —— 只是账要按三个数分开记。</text>
   <text class="b" x="64" y="626">100+ 模型从零预训练 · Ouro 2.6B 复测为该文自测口径 · 结论限于 for the halting heads we train · Micropaper</text>
 </svg>
