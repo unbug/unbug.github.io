@@ -2,57 +2,78 @@
   <defs>
     <style>
       .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 13px; letter-spacing: 3px; fill: #9A937F; }
-      .rl { font-size: 15px; fill: #4C4A3F; }
-      .v { font-size: 14.5px; font-weight: 700; fill: #1A1B1E; }
-      .b { font-size: 12.5px; fill: #A29C88; }
-      .dim { font-size: 17px; font-weight: 700; fill: #1A1B1E; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8E97A6; }
+      .dim { font-size: 17px; font-weight: 700; fill: #1E2430; }
+      .ev { font-size: 13px; fill: #5C6672; }
+      .b { font-size: 12px; fill: #98A1AE; }
+      .hd { font-size: 12.5px; letter-spacing: 2px; fill: #8E97A6; }
     </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F4F4FF"/>
+    </linearGradient>
+    <linearGradient id="daemon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4F6DF5"/><stop offset="1" stop-color="#8E7CF0"/>
+    </linearGradient>
   </defs>
 
-  <rect width="1200" height="675" fill="#FBFAF7"/>
-  <rect x="64" y="46" width="44" height="5" fill="#B5442E"/>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1100" cy="620" r="140" fill="#EC6B9D" opacity="0.05"/>
+  <circle cx="80" cy="120" r="120" fill="#4F6DF5" opacity="0.05"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#daemon)"/>
 
-  <text class="k" x="64" y="86">AI 范式雷达 · 2026-10-16 · AGENT DAEMON</text>
-  <text class="serif" x="64" y="134" font-size="37" font-weight="700" fill="#1A1B1E">当你的笔记本上住进别人家的守护进程</text>
-  <text x="64" y="166" font-size="15.5" fill="#6E6A5C">三个曾经平凡回答「是」的问题，现在的答案是「说不清」</text>
-  <line x1="64" y1="192" x2="1136" y2="192" stroke="#E5E1D4"/>
+  <text class="k" x="64" y="84">AI 范式雷达 · 2026-10-16 · AGENT DAEMON</text>
+  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1E2430">笔记本上住进别人家的守护进程</text>
+  <text x="64" y="158" font-size="15" fill="#5C6672">三个「是」，变成「说不清」</text>
 
-  <!-- column headers -->
-  <text class="k" x="330" y="248" text-anchor="end">过去：工程师说了算</text>
-  <text class="k" x="770" y="248">今天：默认值说了算</text>
+  <!-- engineer icon left -->
+  <g>
+    <circle cx="150" cy="310" r="58" fill="#38BDF8" opacity="0.12"/><circle cx="150" cy="310" r="26" fill="#38BDF8"/>
+    <path d="M 106 392 a 44 44 0 0 1 88 0 z" fill="#38BDF8"/>
+    <text class="hd" x="150" y="430" text-anchor="middle">过去的你</text>
+  </g>
 
-  <!-- slope rows: left dots x=330 slate, right x=770 vermilion; rows y=300/380/460 -->
-  <!-- version -->
-  <text class="dim" x="64" y="306">版本主权</text>
-  <text class="rl" x="64" y="328" font-size="12.5" fill="#8B8672">跑的是不是你装的那个二进制？</text>
-  <circle cx="330" cy="300" r="7" fill="#3D5A73"/>
-  <line x1="330" y1="300" x2="770" y2="300" stroke="#D8D3C4" stroke-width="1.5"/>
-  <circle cx="770" cy="300" r="7" fill="#B5442E"/>
-  <text class="v" x="794" y="296">npm update 只升 CLI 壳</text>
-  <text class="b" x="794" y="316">后端在 ~/.codex/packages，更新器每小时自决</text>
+  <!-- daemon server right -->
+  <g>
+    <rect x="1000" y="250" width="130" height="170" rx="20" fill="url(#daemon)"/>
+    <line x1="1065" y1="250" x2="1065" y2="216" stroke="#8E7CF0" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="1065" cy="208" r="8" fill="#F5A524"/>
+    <circle cx="1044" cy="308" r="9" fill="#FFFFFF"/><circle cx="1086" cy="308" r="9" fill="#FFFFFF"/>
+    <circle cx="1046" cy="310" r="4" fill="#1E2430"/><circle cx="1088" cy="310" r="4" fill="#1E2430"/>
+    <path d="M 1046 340 q 19 14 38 0" stroke="#FFFFFF" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <circle cx="1024" cy="396" r="5" fill="#F0604D"/>
+    <circle cx="1042" cy="396" r="5" fill="#F5A524"/>
+    <circle cx="1060" cy="396" r="5" fill="#23B5A5"/>
+    <text class="hd" x="1065" y="452" text-anchor="middle">现在的持有者</text>
+  </g>
 
-  <!-- process -->
-  <text class="dim" x="64" y="386">进程主权</text>
-  <text class="rl" x="64" y="408" font-size="12.5" fill="#8B8672">它什么时候结束，你说了算吗？</text>
-  <circle cx="330" cy="380" r="7" fill="#3D5A73"/>
-  <line x1="330" y1="380" x2="770" y2="380" stroke="#D8D3C4" stroke-width="1.5"/>
-  <circle cx="770" cy="380" r="7" fill="#B5442E"/>
-  <text class="v" x="794" y="376">关窗不退，更新却会杀任务</text>
-  <text class="b" x="794" y="396">reparent PID 1；升级只 drain 60 秒，超时 SIGKILL</text>
+  <rect x="240" y="257" width="740" height="46" rx="12" fill="#4F6DF5" opacity="0.07"/>
+  <rect x="240" y="337" width="740" height="46" rx="12" fill="#23B5A5" opacity="0.07"/>
+  <rect x="240" y="417" width="740" height="46" rx="12" fill="#F5A524" opacity="0.07"/>
+  <!-- slopes: left x=360, right x=850 -->
+  <text class="hd" x="360" y="222" text-anchor="middle">你说了算</text>
+  <text class="hd" x="850" y="222" text-anchor="middle">默认值说了算</text>
 
-  <!-- config -->
-  <text class="dim" x="64" y="466">配置主权</text>
-  <text class="rl" x="64" y="488" font-size="12.5" fill="#8B8672">它带着谁的环境活到明天？</text>
-  <circle cx="330" cy="460" r="7" fill="#3D5A73"/>
-  <line x1="330" y1="460" x2="770" y2="460" stroke="#D8D3C4" stroke-width="1.5"/>
-  <circle cx="770" cy="460" r="7" fill="#B5442E"/>
-  <text class="v" x="794" y="456">首会话把环境钉给所有会话</text>
-  <text class="b" x="794" y="476">HTTPS_PROXY 设定后终身生效；跨会话泄漏已立案 #53547</text>
+  <g>
+    <text class="dim" x="330" y="286" text-anchor="end">版本主权</text>
+    <line x1="360" y1="280" x2="850" y2="280" stroke="#C9D4EA" stroke-width="2"/>
+    <circle cx="360" cy="280" r="9" fill="#4F6DF5"/>
+    <circle cx="850" cy="280" r="9" fill="#F0604D"/>
+    <text class="ev" x="876" y="285">更新器每小时自决</text>
 
-  <line x1="64" y1="530" x2="1136" y2="530" stroke="#E5E1D4"/>
+    <text class="dim" x="330" y="366" text-anchor="end">进程主权</text>
+    <line x1="360" y1="360" x2="850" y2="360" stroke="#C9D4EA" stroke-width="2"/>
+    <circle cx="360" cy="360" r="9" fill="#23B5A5"/>
+    <circle cx="850" cy="360" r="9" fill="#D93A5B"/>
+    <text class="ev" x="876" y="365">60 秒 drain 后 SIGKILL</text>
 
-  <text class="serif" x="64" y="578" font-size="19" fill="#1A1B1E">三项权利的现行持有者：厂商侧 daemon 加默认值 —— 更新器定版本、PID 1 定生死、首会话定环境。</text>
-  <text class="b" x="64" y="610">基础设施用户的这三项默认权利，在 0.157.0 之后需要逐项重新申索 —— 观察对象为用户侧可见行为与公开 issue，非厂商承诺</text>
-  <text class="b" x="64" y="640">Micropaper · AI 范式雷达</text>
+    <text class="dim" x="330" y="446" text-anchor="end">配置主权</text>
+    <line x1="360" y1="440" x2="850" y2="440" stroke="#C9D4EA" stroke-width="2"/>
+    <circle cx="360" cy="440" r="9" fill="#F5A524"/>
+    <circle cx="850" cy="440" r="9" fill="#EC6B9D"/>
+    <text class="ev" x="876" y="445">首会话钉死所有环境</text>
+  </g>
+
+  <line x1="64" y1="530" x2="1136" y2="530" stroke="#E1E4F0"/>
+  <text class="serif" x="64" y="576" font-size="19" fill="#1E2430">更新器定版本，PID 1 定生死，首会话定环境。</text>
+  <text class="b" x="64" y="606">0.157.0 之后，这三项默认权利需要逐项重新申索 · 观察基于用户侧可见行为与公开 issue · Micropaper</text>
 </svg>
