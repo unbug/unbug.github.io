@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Noto Serif SC','Songti SC',serif">
+  <defs>
+    <style>
+      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9A937F; }
+      .rl { font-size: 15px; fill: #5F5A4C; }
+      .val { font-size: 17px; font-weight: 700; }
+      .b { font-size: 12.5px; fill: #A29C88; }
+    </style>
+    <linearGradient id="gRed" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C0392B"/><stop offset="1" stop-color="#B5442E"/>
+    </linearGradient>
+    <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D9772F"/><stop offset="1" stop-color="#E8A13C"/>
+    </linearGradient>
+    <linearGradient id="gViolet" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6D4AA8"/><stop offset="1" stop-color="#9678C9"/>
+    </linearGradient>
+    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1E8C72"/><stop offset="1" stop-color="#5FB49C"/>
+    </linearGradient>
+    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3A6EA5"/><stop offset="1" stop-color="#7AA6CE"/>
+    </linearGradient>
+    <linearGradient id="gStone" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8C7B5E"/><stop offset="1" stop-color="#B49A72"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="#FBFAF7"/>
+  <circle cx="1096" cy="108" r="120" fill="#6D4AA8" opacity="0.07"/>
+  <circle cx="92" cy="612" r="120" fill="#1E8C72" opacity="0.07"/>
+  <rect x="64" y="44" width="44" height="5" fill="#B5442E"/>
+
+  <text class="k" x="64" y="84">一分钟读论文 NO.201 · ARXIV:2610.35793 · NYU</text>
+  <text class="serif" x="64" y="128" font-size="37" font-weight="700" fill="#1A1B1E">滚筒停在哪里，证据就磨平在哪里</text>
+  <text x="64" y="158" font-size="15.5" fill="#6E6A5C">各系统结论的 SmoothScore 平滑率（1-5 分制，论文自测口径）</text>
+
+  <!-- polishing drum: rough jagged slabs enter left, level bar exits right -->
+  <g>
+    <path d="M 958 106 l 14 -22 l 12 20 l 15 -24 l 13 22 l 14 -18 l 11 22 z" fill="none" stroke="#8C7B5E" stroke-width="2.5"/>
+    <rect x="946" y="110" width="140" height="34" fill="url(#gStone)" opacity="0.9"/>
+    <rect x="1000" y="102" width="32" height="50" fill="none" stroke="#FBFAF7" stroke-width="3"/>
+    <line x1="1098" y1="127" x2="1116" y2="127" stroke="#B5442E" stroke-width="2.5"/>
+    <path d="M 1112 121 l 12 6 l -12 6 z" fill="#B5442E"/>
+    <rect x="1128" y="110" width="84" height="34" fill="#1A1B1E"/>
+    <text class="b" x="1016" y="164" text-anchor="middle">证据参差 → 磨平叙事</text>
+  </g>
+
+  <!-- row bands -->
+  <g>
+    <rect x="60" y="300" width="1080" height="48" fill="#B5442E" opacity="0.07"/>
+    <rect x="60" y="352" width="1080" height="48" fill="#D9772F" opacity="0.07"/>
+    <rect x="60" y="404" width="1080" height="48" fill="#6D4AA8" opacity="0.06"/>
+    <rect x="60" y="456" width="1080" height="48" fill="#1E8C72" opacity="0.07"/>
+  </g>
+
+  <!-- bars: x=252+t*8.4, t>=3 tick at 504 -->
+  <g>
+    <text class="rl" x="236" y="330" text-anchor="end">Gemini Deep Research</text>
+    <rect x="252" y="312" width="781" height="26" fill="url(#gRed)"/>
+    <rect x="252" y="340" width="185" height="8" fill="url(#gRed)" opacity="0.85"/>
+    <text class="val" x="1043" y="331" fill="#B5442E" text-anchor="end">85-93%</text>
+    <text class="b" x="443" y="351" fill="#B5442E">22-35%</text>
+
+    <text class="rl" x="236" y="382" text-anchor="end">DR Tulu（开源）</text>
+    <rect x="252" y="364" width="496" height="26" fill="url(#gOrange)"/>
+    <rect x="252" y="392" width="118" height="8" fill="url(#gOrange)" opacity="0.85"/>
+    <text class="val" x="758" y="383" fill="#D9772F">约 59%</text>
+    <text class="b" x="376" y="403" fill="#B0641F">7-23%</text>
+
+    <text class="rl" x="236" y="434" text-anchor="end">QUEST（开源）</text>
+    <rect x="252" y="416" width="462" height="26" fill="url(#gViolet)"/>
+    <rect x="252" y="444" width="118" height="8" fill="url(#gViolet)" opacity="0.85"/>
+    <text class="val" x="724" y="435" fill="#6D4AA8">约 55%</text>
+    <text class="b" x="376" y="455" fill="#6D4AA8">7-23%</text>
+
+    <text class="rl" x="236" y="486" text-anchor="end">Luna / Sol</text>
+    <rect x="252" y="468" width="302" height="26" fill="url(#gTeal)"/>
+    <text class="val" x="564" y="487" fill="#1E8C72">至少 36% 得分 = 1（无平滑）</text>
+  </g>
+
+  <line x1="504" y1="292" x2="504" y2="508" stroke="#B5442E" stroke-width="1.5" stroke-dasharray="5 5" opacity="0.55"/>
+  <text class="b" x="504" y="280" text-anchor="middle" fill="#B5442E">SmoothScore ≥ 3 起算线</text>
+  <text class="b" x="252" y="532">0%</text>
+  <text class="b" x="504" y="532">30%</text>
+  <text class="b" x="756" y="532">60%</text>
+  <text class="b" x="1008" y="532">90%</text>
+
+  <!-- right column: two calibration numbers -->
+  <g>
+    <line x1="856" y1="196" x2="856" y2="272" stroke="#E5E1D4" stroke-width="1"/>
+    <text class="serif" x="1140" y="222" text-anchor="end" font-size="26" font-weight="700" fill="#1A1B1E">19% <tspan fill="#3A6EA5">95 / 496</tspan></text>
+    <text class="b" x="1140" y="246" text-anchor="end">Luna 打开的引用页面，65 份报告中 45 篇一页未开</text>
+    <text class="serif" x="1140" y="272" text-anchor="end" font-size="26" font-weight="700" fill="#1A1B1E">+4.4 / +12.0 <tspan fill="#1E8C72">p&lt;.001</tspan></text>
+    <text class="b" x="1140" y="296" text-anchor="end">喂回证据修订后专家评分提升，Luna / Sonnet</text>
+  </g>
+
+  <text class="b" x="64" y="612">SmoothScore 1-5 分制：≥3 实质性平滑，≥4 严重平滑；短条为 ≥4 重度平滑率。Gemini 重度平滑约为其他闭源 agent 的 3-12 倍、Sol 的 13-26 倍。</text>
+  <text class="b" x="64" y="636">来源：arXiv:2610.35793（NYU）· 论文自述口径 · 预印本未经同行评审</text>
+</svg>
