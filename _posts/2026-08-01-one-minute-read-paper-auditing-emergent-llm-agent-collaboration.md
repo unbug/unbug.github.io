@@ -8,9 +8,9 @@ tags: [multi-agent-systems, auditing, cooperation-obligation, agent-safety]
 description: "用iCORE框架统一编码合作图、义务图与审计映射，填补多智能体协作的可审计性缺口。真实LLM执行中相比被动全状态观测提升26.4%轨迹质量并显著改善终端性能。"
 ---
 
-华盛顿大学等机构的研究团队发表的论文[《Auditing Emergent LLM-Agent Collaboration through Cooperation-Obligation Coupling》][paper1-url]提出了iCORE（Integrated Cooperation-Obligation REpresentation）框架，通过统一编码合作图、义务图和审计映射来解决多智能体协作的可审计性缺口。
+华盛顿大学等机构的研究团队发表的论文[《Auditing Emergent LLM-Agent Collaboration through Cooperation-Obligation Coupling》][paper1-url]提出了iCORE框架，实现了26.4%的轨迹质量提升。
 
-在真实LLM执行中，iCORE-Audit相比被动全状态观测实现了26.4%的轨迹质量提升和显著的终端性能改进。
+论文提出的iCORE（Integrated Cooperation-Obligation REpresentation）框架，通过统一编码合作图、义务图和审计映射来解决多智能体协作的可审计性缺口。在真实LLM执行中，iCORE-Audit相比被动全状态观测实现了26.4%的轨迹质量提升和显著的终端性能改进。
 
 ## 核心问题：多智能体协作的可审计性缺口
 
