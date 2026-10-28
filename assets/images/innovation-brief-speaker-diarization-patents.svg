@@ -1,109 +1,85 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #A99B84; }
-      .b { font-size: 12px; fill: #8B8271; }
-      .ev { font-size: 13px; font-weight: 700; fill: #2B2620; }
-      .evs { font-size: 12px; fill: #665F52; }
-      .stat { font-size: 34px; font-weight: 700; fill: #2B2620; }
-      .unit { font-size: 14px; fill: #665F52; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F3EA"/>
-    </linearGradient>
-    <linearGradient id="axis" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#4A8C6F"/><stop offset="1" stop-color="#D94A3D"/>
-    </linearGradient>
-    <linearGradient id="lantern" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#E5A83C"/><stop offset="1" stop-color="#D94A3D"/>
-    </linearGradient>
-    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2B3A55"/><stop offset="1" stop-color="#4A8C6F"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1124" cy="96" r="130" fill="#D94A3D" opacity="0.06"/>
-  <circle cx="90" cy="644" r="120" fill="#4A8C6F" opacity="0.07"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#axis)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">四件说话人分离专利中三件属 Google；技术走向为流式缓存与大模型后处理纠错</text>
 
-  <text class="k" x="64" y="84">AI 智创简报 · 专利情报速读 · 说话人分离</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">谁在说，还得人核</text>
-  <text x="64" y="158" font-size="15" fill="#665F52">近一年四件说话人分离专利公开：分离走向流式，纠错交给大模型</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">四件说话人分离专利按公开先后序位排列（事件序位轴）</text>
 
-  <!-- night market motif: lantern + sound stall waves -->
-  <g>
-    <line x1="1042" y1="66" x2="1042" y2="84" stroke="#2B3A55" stroke-width="2.5"/>
-    <rect x="1022" y="84" width="40" height="10" rx="3" fill="#2B3A55"/>
-    <ellipse cx="1042" cy="122" rx="26" ry="30" fill="url(#lantern)"/>
-    <path d="M 1026 98 q -6 24 0 48 M 1042 92 v 60 M 1058 98 q 6 24 0 48" fill="none" stroke="#F7F3EA" stroke-width="2" opacity="0.75"/>
-    <rect x="1030" y="152" width="24" height="7" rx="3" fill="#2B3A55"/>
-    <g stroke="#4A8C6F" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.85">
-      <path d="M 1092 100 v 30 M 1104 88 v 54 M 1116 106 v 22 M 1128 94 v 42 M 1140 104 v 26"/>
-    </g>
+  <!-- panel guides (horizontal, 0.5pt) -->
+
+  <!-- x = 300 + monthsSince202507 * 50 -->
+  <!-- row 1: Google US20250225998A1, 2025-07-10, 大模型后处理修正标签 -->
+  <text x="288" y="148" font-size="12.5" fill="#1A1B1E" text-anchor="end">Google</text>
+  <circle cx="315" cy="144" r="7" fill="#0072B2"/>
+  <text x="330" y="148" font-size="12" fill="#555">2025-07-10 公开 · 大模型后处理修正标签（US20250225998A1）</text>
+
+  <!-- row 2: Google US20250335711A1, 2025-10-30, 分块自注册提示多模态大模型 -->
+  <text x="288" y="193" font-size="12.5" fill="#1A1B1E" text-anchor="end">Google</text>
+  <circle cx="500" cy="189" r="7" fill="#0072B2"/>
+  <text x="515" y="193" font-size="12" fill="#555">2025-10-30 公开 · 分块自注册提示多模态大模型（US20250335711A1）</text>
+
+  <!-- row 3: Google US20260045268A1, 2026-02-12, 无监督瓶颈模块 -->
+  <text x="288" y="238" font-size="12.5" fill="#1A1B1E" text-anchor="end">Google</text>
+  <circle cx="685" cy="234" r="7" fill="#0072B2"/>
+  <text x="700" y="238" font-size="12" fill="#555">2026-02-12 公开 · 无监督潜在说话人瓶颈（US20260045268A1）</text>
+
+  <!-- row 4: NVIDIA US20260245574A1, 2026-08-20 (submitted 2026-02-18), 流式缓存 -->
+  <text x="288" y="283" font-size="12.5" fill="#1A1B1E" text-anchor="end">NVIDIA</text>
+  <circle cx="960" cy="279" r="7" fill="#D55E00"/>
+  <line x1="685" y1="279" x2="960" y2="279" stroke="#999999" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <circle cx="685" cy="279" r="5" fill="none" stroke="#999999" stroke-width="1.5"/>
+  <text x="693" y="311" font-size="12" fill="#555">2026-02-18 提交</text>
+  <text x="975" y="275" font-size="12" fill="#555">2026-08-20 公开 · 流式缓存已出场</text>
+  <text x="975" y="291" font-size="12" fill="#555">说话人（US20260245574A1）</text>
+
+  <!-- order axis -->
+  <line x1="300" y1="205" x2="300" y2="355" stroke="#1A1B1E" stroke-width="0.75"/>
+  <line x1="300" y1="355" x2="1000" y2="355" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="315" y1="355" x2="315" y2="359"/>
+    <line x1="500" y1="355" x2="500" y2="359"/>
+    <line x1="685" y1="355" x2="685" y2="359"/>
+    <line x1="960" y1="355" x2="960" y2="359"/>
   </g>
-
-  <!-- timeline: 2025-07-10=170, 2025-10-30=372, 2026-02-12=582, 2026-08-20=850 (span 407d, ~1.67/day) -->
-  <line x1="150" y1="330" x2="900" y2="330" stroke="url(#axis)" stroke-width="4" stroke-linecap="round"/>
-  <text class="b" x="150" y="356">2025-07</text>
-  <text class="b" x="900" y="356" text-anchor="end">2026-08</text>
-
-  <g>
-    <circle cx="170" cy="330" r="10" fill="#FFFFFF" stroke="#4A8C6F" stroke-width="3.5"/>
-    <line x1="170" y1="342" x2="170" y2="376" stroke="#93BCA9"/>
-    <text class="ev" x="170" y="404">07-10 · Google</text>
-    <text class="evs" x="170" y="424">大模型后处理改标签</text>
-
-    <circle cx="372" cy="330" r="10" fill="#FFFFFF" stroke="#4A8C6F" stroke-width="3.5"/>
-    <line x1="372" y1="318" x2="372" y2="284" stroke="#93BCA9"/>
-    <text class="ev" x="372" y="262">10-30 · Google</text>
-    <text class="evs" x="372" y="282">分块自注册长音频分离</text>
-
-    <circle cx="582" cy="330" r="10" fill="#FFFFFF" stroke="#E5A83C" stroke-width="3.5"/>
-    <line x1="582" y1="342" x2="582" y2="376" stroke="#EBCB90"/>
-    <text class="ev" x="582" y="404">02-12 · Google</text>
-    <text class="evs" x="582" y="424">无监督瓶颈模块分离</text>
-
-    <circle cx="850" cy="330" r="10" fill="url(#lantern)"/>
-    <line x1="850" y1="318" x2="850" y2="284" stroke="#E09A8F"/>
-    <text class="ev" x="850" y="262" text-anchor="end">08-20 · NVIDIA</text>
-    <text class="evs" x="850" y="282" text-anchor="end">流式说话人缓存</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="315" y="375">1</text>
+    <text x="500" y="375">2</text>
+    <text x="685" y="375">3</text>
+    <text x="960" y="375">4</text>
   </g>
-  <circle cx="150" cy="452" r="6" fill="url(#lantern)"/><text class="b" x="162" y="457">最新公开</text>
-  <circle cx="248" cy="452" r="6" fill="#FFFFFF" stroke="#4A8C6F" stroke-width="2.5"/><text class="b" x="260" y="457">公开申请</text>
+  <text x="630" y="399" font-size="14" fill="#1A1B1E" text-anchor="middle">公开先后序位</text>
 
-  <!-- gap chip -->
-  <g>
-    <rect x="470" y="428" width="380" height="46" rx="10" fill="#D94A3D" opacity="0.07"/>
-    <rect x="470" y="428" width="5" height="46" rx="2.5" fill="#D94A3D"/>
-    <text x="492" y="449" font-size="13" font-weight="700" fill="#B23A2F">模型侧圈地，人工核对应空着</text>
-    <text x="492" y="467" font-size="12.5" fill="#665F52">pyannote + Whisper 在抢话处会中途换人</text>
+  <!-- ============ panel b ============ -->
+  <text x="60" y="448" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="448" font-size="15" fill="#1A1B1E">独立开发者方案的两项投入（自估口径）</text>
+
+  <!-- item 1: GPU 月成本 -->
+  <text x="60" y="490" font-size="12.5" fill="#1A1B1E">GPU 租用月成本（元/月）</text>
+  <rect x="60" y="500" width="90" height="16" fill="#009E73"/>
+  <text x="158" y="513" font-size="12" fill="#555">数百元</text>
+
+  <!-- item 2: MVP 工期 -->
+  <text x="620" y="490" font-size="12.5" fill="#1A1B1E">1 人做出 MVP（周）</text>
+  <line x1="620" y1="524" x2="940" y2="524" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="620" y1="524" x2="620" y2="528"/>
+    <line x1="700" y1="524" x2="700" y2="528"/>
+    <line x1="780" y1="524" x2="780" y2="528"/>
+    <line x1="860" y1="524" x2="860" y2="528"/>
   </g>
-
-  <!-- opportunity cards -->
-  <g>
-    <rect x="64" y="492" width="336" height="140" rx="18" fill="#D94A3D" opacity="0.07"/>
-    <rect x="64" y="492" width="336" height="6" rx="3" fill="#D94A3D"/>
-    <rect x="92" y="522" width="44" height="28" rx="5" fill="#D94A3D"/>
-    <circle cx="114" cy="536" r="7" fill="#F7F3EA"/>
-    <text class="stat" x="152" y="554">$8–15<tspan class="unit"> /席·月</tspan></text>
-    <text class="evs" x="92" y="596">分离质检工具订阅</text>
-
-    <rect x="432" y="492" width="336" height="140" rx="18" fill="#E5A83C" opacity="0.12"/>
-    <rect x="432" y="492" width="336" height="6" rx="3" fill="#C98F2C"/>
-    <rect x="460" y="522" width="44" height="28" rx="14" fill="#C98F2C"/>
-    <circle cx="482" cy="536" r="6" fill="#F7F3EA"/>
-    <text class="stat" x="520" y="554">1000–3000 元<tspan class="unit"> /次</tspan></text>
-    <text class="evs" x="460" y="596">说话人标签审核服务</text>
-
-    <rect x="800" y="492" width="336" height="140" rx="18" fill="#2B3A55" opacity="0.08"/>
-    <rect x="800" y="492" width="336" height="6" rx="3" fill="#2B3A55"/>
-    <path d="M 828 552 l 10 -26 l 16 12 z" fill="#2B3A55"/>
-    <circle cx="846" cy="530" r="4" fill="#D7DEE9"/>
-    <text class="stat" x="888" y="554">近 1 小时<tspan class="unit"> /稿</tspan></text>
-    <text class="evs" x="828" y="596">3 小时录音核说话人标签工时</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="620" y="544">0</text>
+    <text x="700" y="544">1</text>
+    <text x="780" y="544">2</text>
+    <text x="860" y="544">3</text>
   </g>
+  <line x1="940" y1="508" x2="940" y2="524" stroke="#D55E00" stroke-width="2"/>
+  <text x="940" y="500" font-size="12" fill="#555" text-anchor="middle">4</text>
+  <text x="620" y="578" font-size="12" fill="#555">技术栈全开源（pyannote-audio + Whisper 质检插件）</text>
 
-  <text class="b" x="64" y="662">以上均为申请公开，不等于已授权 · 观点仅为机会判断，不构成投资建议 · Micropaper</text>
+  <!-- footnote -->
+  <text x="60" y="640" font-size="11" fill="#767676">数据：四件专利公开信息（公开不等于授权，正文所引 Free Patents Online 检索）· 成本与工期为作者自估口径 · 空心圈与虚线为提交到公开的过程位（论文自述提交日 2026-02-18）</text>
 </svg>

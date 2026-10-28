@@ -1,138 +1,98 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8A94A3; }
-      .rl { font-size: 14px; fill: #45505E; }
-      .val { font-size: 18px; font-weight: 700; }
-      .b { font-size: 12px; fill: #98A1AE; }
-      .chip { font-size: 11.5px; font-weight: 700; fill: #FFFFFF; letter-spacing: 2px; }
-      .stat { font-size: 32px; font-weight: 700; fill: #1E2430; }
-      .unit { font-size: 14px; fill: #5C6672; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F2F5F8"/>
-    </linearGradient>
-    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#3B6FA0"/><stop offset="1" stop-color="#7FA6CC"/>
-    </linearGradient>
-    <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#DE7A3B"/><stop offset="1" stop-color="#F0A878"/>
-    </linearGradient>
-    <linearGradient id="gYellow" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#C9A227"/><stop offset="1" stop-color="#E5C042"/>
-    </linearGradient>
-    <linearGradient id="waveBlue" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#3B6FA0"/><stop offset="1" stop-color="#2C5478"/>
-    </linearGradient>
-    <linearGradient id="waveOrange" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#DE7A3B"/><stop offset="1" stop-color="#B85A22"/>
-    </linearGradient>
-    <linearGradient id="waveYellow" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#E5C042"/><stop offset="1" stop-color="#C9A227"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1120" cy="100" r="130" fill="#3B6FA0" opacity="0.06"/>
-  <circle cx="90" cy="640" r="120" fill="#DE7A3B" opacity="0.06"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gBlue)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">2026 年 1 至 8 月四件轮次接管专利公开：NVIDIA 两件，Sierra 与 Salesforce 各一件</text>
 
-  <text class="k" x="64" y="84">AI 智创简报 · 2026-09-14 · 语音轮次专利</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1E2430">抢话判定被圈地了</text>
-  <text x="64" y="158" font-size="15" fill="#5C6672">四件专利接连公开，轮次质检的验收标准还空着</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">四件已公开申请按公开先后序位排列（事件序位轴）</text>
 
-  <!-- broadcast console motif: fader + meters -->
-  <g>
-    <rect x="978" y="76" width="158" height="96" rx="14" fill="#2C5478"/>
-    <rect x="996" y="92" width="60" height="8" rx="4" fill="#7FA6CC"/>
-    <rect x="996" y="108" width="42" height="8" rx="4" fill="#E5C042"/>
-    <rect x="996" y="124" width="52" height="8" rx="4" fill="#DE7A3B"/>
-    <circle cx="1096" cy="106" r="15" fill="none" stroke="#E5C042" stroke-width="4"/>
-    <line x1="1096" y1="106" x2="1106" y2="95" stroke="#E5C042" stroke-width="4" stroke-linecap="round"/>
-    <rect x="1082" y="134" width="8" height="22" rx="4" fill="#8FBF3F"/><rect x="1094" y="142" width="8" height="14" rx="4" fill="#E5C042"/><rect x="1106" y="128" width="8" height="28" rx="4" fill="#DE7A3B"/>
-    <text class="b" x="1057" y="192" text-anchor="middle" fill="#7C8B99">ON AIR</text>
+
+  <!-- x = 300 + monthsSince202601 * 60 -->
+  <text x="288" y="153" font-size="12.5" fill="#1A1B1E" text-anchor="end">NVIDIA</text>
+  <circle cx="302" cy="149" r="7" fill="#999999"/>
+  <text x="317" y="153" font-size="12" fill="#555">2026-01-01 公开 · 句尾检测与语义模型并用判停顿（US20260004070A1）</text>
+
+  <text x="288" y="208" font-size="12.5" fill="#1A1B1E" text-anchor="end">NVIDIA</text>
+  <circle cx="410" cy="204" r="7" fill="#999999"/>
+  <text x="425" y="208" font-size="12" fill="#555">2026-02-26 公开 · 语音识别统一文本供对话系统（US20260057884A1）</text>
+
+  <text x="288" y="263" font-size="12.5" fill="#1A1B1E" text-anchor="end">Sierra</text>
+  <circle cx="530" cy="259" r="7" fill="#D55E00"/>
+  <text x="545" y="263" font-size="12" fill="#555">2026-04-30 公开 · 前台/后台触发先应答再补全（US20260120693A1）</text>
+
+  <text x="288" y="318" font-size="12.5" fill="#1A1B1E" text-anchor="end">Salesforce</text>
+  <circle cx="740" cy="314" r="7" fill="#D55E00"/>
+  <text x="755" y="318" font-size="12" fill="#555">2026-08-06 公开 · 语音提问先检索知识库再生成（US20260229221A1）</text>
+
+  <!-- order axis -->
+  <line x1="300" y1="149" x2="300" y2="360" stroke="#1A1B1E" stroke-width="0.75"/>
+  <line x1="300" y1="360" x2="1000" y2="360" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="302" y1="360" x2="302" y2="364"/>
+    <line x1="410" y1="360" x2="410" y2="364"/>
+    <line x1="530" y1="360" x2="530" y2="364"/>
+    <line x1="740" y1="360" x2="740" y2="364"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="302" y="380">1</text>
+    <text x="410" y="380">2</text>
+    <text x="530" y="380">3</text>
+    <text x="740" y="380">4</text>
+  </g>
+  <text x="521" y="404" font-size="14" fill="#1A1B1E" text-anchor="middle">公开先后序位</text>
+  <g font-size="12" fill="#555">
+    <text x="900" y="153">国际分类集中在</text>
+    <text x="900" y="171">G10L15/22（语音输入控制）</text>
+    <text x="900" y="189">G06F40/284（语言分析）</text>
+    <circle cx="908" cy="224" r="6" fill="#D55E00"/>
+    <text x="921" y="228">轮次接管/应答时机</text>
+    <circle cx="908" cy="254" r="6" fill="#999999"/>
+    <text x="921" y="258">识别与文本供给</text>
   </g>
 
-  <!-- four-hand timeline: 01-01=150 · 02-26=364 · 04-30=590 · 08-06=1050 (1.995px/day) -->
-  <g>
-    <rect x="130" y="228" width="940" height="42" rx="10" fill="#3B6FA0" opacity="0.08"/>
-    <rect x="130" y="284" width="940" height="42" rx="10" fill="#7C8B99" opacity="0.10"/>
-    <rect x="130" y="340" width="940" height="42" rx="10" fill="#E5C042" opacity="0.09"/>
-    <rect x="130" y="396" width="940" height="42" rx="10" fill="#DE7A3B" opacity="0.08"/>
-  </g>
-  <line x1="150" y1="330" x2="1050" y2="330" stroke="#C9D4DE" stroke-width="2"/>
-  <text class="b" x="150" y="462">01-01</text>
-  <text class="b" x="1050" y="462" text-anchor="end">08-06</text>
-  <text class="b" x="600" y="462" text-anchor="middle">2026 年 1 至 8 月 · 四件公开申请</text>
+  <!-- ============ panel b ============ -->
+  <text x="60" y="462" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="462" font-size="15" fill="#1A1B1E">轮次质检方案：自估定价与投入</text>
 
-  <!-- fader handle + waveforms -->
-  <g>
-    <rect x="353" y="314" width="22" height="32" rx="6" fill="#2C5478"/>
-    <line x1="358" y1="330" x2="370" y2="330" stroke="#FFFFFF" stroke-width="2.5"/>
-
-    <g stroke="url(#waveBlue)" stroke-width="3.5" stroke-linecap="round">
-      <line x1="172" y1="241" x2="172" y2="257"/><line x1="184" y1="236" x2="184" y2="262"/><line x1="196" y1="244" x2="196" y2="254"/>
-      <line x1="208" y1="232" x2="208" y2="266"/><line x1="220" y1="240" x2="220" y2="258"/><line x1="232" y1="237" x2="232" y2="261"/>
-    </g>
-    <text class="rl" x="252" y="254">NVIDIA · 停顿是换气还是说完</text>
-    <rect x="1002" y="238" width="56" height="22" rx="11" fill="#3B6FA0"/>
-    <text class="chip" x="1030" y="253" text-anchor="middle">抢话</text>
-
-    <g stroke="#7C8B99" stroke-width="3.5" stroke-linecap="round">
-      <line x1="396" y1="297" x2="396" y2="313"/><line x1="408" y1="292" x2="408" y2="318"/><line x1="420" y1="300" x2="420" y2="310"/>
-      <line x1="432" y1="290" x2="432" y2="320"/><line x1="444" y1="296" x2="444" y2="314"/>
-    </g>
-    <text class="rl" x="464" y="310">NVIDIA · 统一文本供对话消费</text>
-    <rect x="1002" y="294" width="56" height="22" rx="11" fill="#7C8B99"/>
-    <text class="chip" x="1030" y="309" text-anchor="middle">识别</text>
-
-    <g stroke="url(#waveYellow)" stroke-width="3.5" stroke-linecap="round">
-      <line x1="612" y1="353" x2="612" y2="369"/><line x1="624" y1="348" x2="624" y2="374"/><line x1="636" y1="356" x2="636" y2="366"/>
-      <line x1="648" y1="344" x2="648" y2="378"/><line x1="660" y1="352" x2="660" y2="370"/><line x1="672" y1="349" x2="672" y2="373"/>
-    </g>
-    <text class="rl" x="692" y="366">Sierra · 先应答再补全</text>
-    <rect x="1002" y="350" width="56" height="22" rx="11" fill="#C9A227"/>
-    <text class="chip" x="1030" y="365" text-anchor="middle">延迟</text>
-
-    <g stroke="url(#waveOrange)" stroke-width="3.5" stroke-linecap="round">
-      <line x1="1006" y1="409" x2="1006" y2="425"/><line x1="1018" y1="404" x2="1018" y2="430"/><line x1="1030" y1="412" x2="1030" y2="422"/>
-      <line x1="1042" y1="400" x2="1042" y2="434"/>
-    </g>
-    <text class="rl" x="820" y="422" text-anchor="end">Salesforce · 先检索再生成</text>
-    <rect x="840" y="406" width="56" height="22" rx="11" fill="#DE7A3B"/>
-    <text class="chip" x="868" y="421" text-anchor="middle">检索</text>
-
-    <circle cx="172" cy="330" r="9" fill="#FFFFFF" stroke="#3B6FA0" stroke-width="3.5"/>
-    <circle cx="364" cy="330" r="9" fill="#FFFFFF" stroke="#7C8B99" stroke-width="3.5"/>
-    <circle cx="590" cy="330" r="9" fill="#FFFFFF" stroke="#C9A227" stroke-width="3.5"/>
-    <circle cx="1050" cy="330" r="9" fill="#FFFFFF" stroke="#DE7A3B" stroke-width="3.5"/>
+  <g font-size="12.5" fill="#1A1B1E">
+    <text x="60" y="502">巡检订阅（美元/月/线路）</text>
+    <text x="430" y="502">单次质检服务（元/单）</text>
+    <text x="820" y="502">MVP 工期（周，1 人）</text>
   </g>
 
-  <!-- gap annotation + opportunity cards -->
-  <g>
-    <rect x="64" y="492" width="336" height="130" rx="16" fill="#7C8B99" opacity="0.10"/>
-    <rect x="64" y="492" width="336" height="6" rx="3" fill="#7C8B99"/>
-    <circle cx="102" cy="534" r="15" fill="none" stroke="#7C8B99" stroke-width="4"/>
-    <path d="M 94 534 l 6 6 l 10 -12" stroke="#7C8B99" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-    <text class="stat" x="132" y="548" fill="#5E6B78">空白</text>
-    <text class="rl" x="92" y="596">轮次验收标准至今没有成型</text>
+  <!-- subscription direct label (no fabricated scale) -->
+  <rect x="60" y="512" width="20" height="18" fill="#0072B2"/>
+  <text x="88" y="526" font-size="12" fill="#555">19–49 美元/月/线路（自估定价）</text>
+  <text x="60" y="556" font-size="12" fill="#555">范围取自正文，未造刻度轴</text>
 
-    <rect x="432" y="492" width="336" height="130" rx="16" fill="#3B6FA0" opacity="0.08"/>
-    <rect x="432" y="492" width="336" height="6" rx="3" fill="url(#gBlue)"/>
-    <rect x="460" y="520" width="44" height="28" rx="5" fill="#3B6FA0"/>
-    <circle cx="482" cy="534" r="7" fill="#FFFFFF"/>
-    <text class="stat" x="520" y="548">3000–8000 元<tspan class="unit"> /次</tspan></text>
-    <text class="rl" x="460" y="596">交付前轮次质检报告</text>
+  <!-- service range direct label -->
+  <rect x="430" y="512" width="20" height="18" fill="#009E73"/>
+  <text x="458" y="526" font-size="12" fill="#555">3000–8000 元/单（自估定价）</text>
+  <text x="430" y="556" font-size="12" fill="#555">范围取自正文，未造刻度轴</text>
 
-    <rect x="800" y="492" width="336" height="130" rx="16" fill="#DE7A3B" opacity="0.08"/>
-    <rect x="800" y="492" width="336" height="6" rx="3" fill="url(#gOrange)"/>
-    <rect x="828" y="520" width="44" height="28" rx="14" fill="#DE7A3B"/>
-    <circle cx="850" cy="534" r="6" fill="#FFFFFF"/>
-    <text class="stat" x="888" y="548">$19–49<tspan class="unit"> /线路·月</tspan></text>
-    <text class="rl" x="828" y="596">通话巡检订阅</text>
+  <!-- week ruler 0-4: x=820..1060 -->
+  <line x1="820" y1="536" x2="1060" y2="536" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="820" y1="536" x2="820" y2="540"/>
+    <line x1="880" y1="536" x2="880" y2="540"/>
+    <line x1="940" y1="536" x2="940" y2="540"/>
+    <line x1="1000" y1="536" x2="1000" y2="540"/>
+    <line x1="1060" y1="536" x2="1060" y2="540"/>
   </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="820" y="556">0</text>
+    <text x="880" y="556">1</text>
+    <text x="940" y="556">2</text>
+    <text x="1000" y="556">3</text>
+    <text x="1060" y="556">4</text>
+  </g>
+  <line x1="1060" y1="512" x2="1060" y2="536" stroke="#D55E00" stroke-width="2"/>
+  <text x="1052" y="506" font-size="12" fill="#555" text-anchor="end">4</text>
 
-  <line x1="64" y1="636" x2="1136" y2="636" stroke="#E3E8EE"/>
-  <text class="b" x="64" y="662">四件均为已公开申请而非授权专利 · IPC 集中于 G10L15/22 与 G06F40/284 · 机会判断见正文 · Micropaper</text>
+  <text x="60" y="600" font-size="12" fill="#555">标注四类事件：智能体抢话、应答迟缓、误接插话、异常冷场；GPU/API 月成本数百元（自估口径）</text>
+
+  <!-- footnote -->
+  <text x="60" y="640" font-size="11" fill="#767676">数据：四件美国申请公开信息（公开不等于授权，正文所引 Free Patents Online 检索）· 定价与工期为作者自估口径</text>
 </svg>

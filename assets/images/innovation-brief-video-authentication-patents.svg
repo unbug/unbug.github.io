@@ -1,122 +1,116 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #7E93A0; }
-      .rl { font-size: 15px; fill: #2F4858; }
-      .val { font-size: 20px; font-weight: 700; }
-      .b { font-size: 12px; fill: #93A6B2; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EFF6F6"/>
-    </linearGradient>
-    <linearGradient id="gNet" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2E6E8E"/><stop offset="1" stop-color="#6FA6BE"/>
-    </linearGradient>
-    <linearGradient id="gBuoy" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#E4572E"/><stop offset="1" stop-color="#F4906B"/>
-    </linearGradient>
-    <linearGradient id="gKelp" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#4F9D69"/><stop offset="1" stop-color="#8FC99E"/>
-    </linearGradient>
-    <linearGradient id="gBrass" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#C08A28"/><stop offset="1" stop-color="#E8C264"/>
-    </linearGradient>
-    <linearGradient id="gSlate" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#5E6B86"/><stop offset="1" stop-color="#8F9BB5"/>
-    </linearGradient>
-    <linearGradient id="gAnchor" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#2E6E8E"/><stop offset="1" stop-color="#4F9D69"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1102" cy="612" r="140" fill="#2E6E8E" opacity="0.07"/>
-  <circle cx="78" cy="98" r="112" fill="#E4572E" opacity="0.05"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gBuoy)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">四件代表性视频鉴真专利均为已公开申请；Bank of America 与 Binarii Labs 同主题相隔约一年再公开</text>
 
-  <text class="k" x="64" y="84">AI 智创简报 · 2026-08-24 · 近 90 天 · 美国申请公开</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">不查假鱼，只发真锚</text>
-  <text x="64" y="158" font-size="15" fill="#4E6472">四件均为申请公开 · 主题从「检测是不是假」转向「证明是真的」</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">四件代表性专利按公开先后序位排列（事件序位轴）</text>
 
-  <!-- harbor motif: buoy + anchor + net -->
-  <g>
-    <path d="M 1078 132 q 16 8 16 22 q 0 14 -16 22" fill="url(#gBuoy)"/>
-    <path d="M 1078 132 q -16 8 -16 22 q 0 14 16 22" fill="url(#gBuoy)" opacity="0.85"/>
-    <path d="M 1062 143 a 22 22 0 0 0 0 22" fill="none" stroke="#F4EBD6" stroke-width="2.5" opacity="0.8"/>
-    <rect x="1084" y="126" width="16" height="12" rx="3" fill="#C08A28"/>
-    <line x1="1092" y1="184" x2="1092" y2="196" stroke="#2F4858" stroke-width="3"/>
-    <circle cx="1092" cy="120" r="4.5" fill="none" stroke="#2F4858" stroke-width="2.5"/>
-    <line x1="1068" y1="148" x2="1044" y2="148" stroke="url(#gBrass)" stroke-width="4.5" stroke-linecap="round"/>
-    <path d="M 1034 158 a 28 28 0 0 0 56 0" fill="none" stroke="url(#gAnchor)" stroke-width="5.5" stroke-linecap="round"/>
-    <path d="M 1029 153 l 10 10 m 52 -10 l -10 10" stroke="#4F9D69" stroke-width="3.5" stroke-linecap="round"/>
-    <path d="M 1010 96 q 10 14 0 28 m 8 -24 q 8 10 0 22" stroke="#E4572E" stroke-width="2.5" fill="none" opacity="0.7"/>
-    <path d="M 1136 100 q -10 14 0 28 m -8 -24 q -8 10 0 22" stroke="#E4572E" stroke-width="2.5" fill="none" opacity="0.7"/>
-    <path d="M 1016 108 q 52 30 108 4" fill="none" stroke="#C08A28" stroke-width="2" stroke-dasharray="4 5" opacity="0.8"/>
-    <path d="M 1016 108 l -6 12 m 0 0 l 12 2 m -12 -2 l 4 12" stroke="#2E6E8E" stroke-width="1.8" fill="none" opacity="0.75"/>
-    <text x="1074" y="224" text-anchor="middle" font-size="12" fill="#2E6E8E">哈希上链 = 把证据锚下去，事后可复核</text>
+
+  <!-- x = 300 + monthsSince202507 * 50 -->
+  <text x="288" y="153" font-size="12.5" fill="#1A1B1E" text-anchor="end">Binarii Labs</text>
+  <circle cx="367" cy="149" r="7" fill="#0072B2"/>
+  <text x="382" y="153" font-size="12" fill="#555">2025-08-14 公开 · AI agent 选关键片段哈希上链（US20250259431）</text>
+
+  <text x="288" y="208" font-size="12.5" fill="#1A1B1E" text-anchor="end">Intel</text>
+  <circle cx="730" cy="204" r="7" fill="#999999"/>
+  <text x="745" y="208" font-size="12" fill="#555">2026-03-26 公开 · 语音基线免重训个性化 deepfake 检测（US20260088032）</text>
+
+  <text x="288" y="263" font-size="12.5" fill="#1A1B1E" text-anchor="end">Arranged BV</text>
+  <circle cx="900" cy="259" r="7" fill="#999999"/>
+  <text x="915" y="255" font-size="12" fill="#555">2026-07-16 公开 · 受控光照伪影验真</text>
+  <text x="915" y="271" font-size="12" fill="#555">（US20260205467）</text>
+
+  <text x="288" y="318" font-size="12.5" fill="#1A1B1E" text-anchor="end">Bank of America</text>
+  <circle cx="950" cy="314" r="7" fill="#D55E00"/>
+  <text x="965" y="310" font-size="12" fill="#555">2026-08-20 公开 · 哈希上链</text>
+  <text x="965" y="326" font-size="12" fill="#555">+ 旋转水印（US20260246646）</text>
+
+  <!-- same-theme interval bracket -->
+  <line x1="367" y1="344" x2="950" y2="344" stroke="#0072B2" stroke-width="1.5"/>
+  <line x1="367" y1="338" x2="367" y2="350" stroke="#0072B2" stroke-width="1.5"/>
+  <line x1="950" y1="338" x2="950" y2="350" stroke="#0072B2" stroke-width="1.5"/>
+  <text x="658" y="338" font-size="12" fill="#555" text-anchor="middle">「AI + 区块链视频认证」同主题，相隔约一年</text>
+
+  <!-- order axis -->
+  <line x1="300" y1="149" x2="300" y2="360" stroke="#1A1B1E" stroke-width="0.75"/>
+  <line x1="300" y1="360" x2="1000" y2="360" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="367" y1="360" x2="367" y2="364"/>
+    <line x1="730" y1="360" x2="730" y2="364"/>
+    <line x1="900" y1="360" x2="900" y2="364"/>
+    <line x1="950" y1="360" x2="950" y2="364"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="367" y="380">1</text>
+    <text x="730" y="380">2</text>
+    <text x="900" y="380">3</text>
+    <text x="950" y="380">4</text>
+  </g>
+  <text x="658" y="404" font-size="14" fill="#1A1B1E" text-anchor="middle">公开先后序位</text>
+  <g font-size="12" fill="#555">
+    <circle cx="308" cy="424" r="6" fill="#0072B2"/>
+    <text x="321" y="428">鉴真侧：证明是真的</text>
+    <circle cx="520" cy="424" r="6" fill="#999999"/>
+    <text x="533" y="428">检测/伪影侧：回答是不是假</text>
+    <circle cx="770" cy="424" r="6" fill="#D55E00"/>
+    <text x="783" y="428">近 90 天公开</text>
   </g>
 
-  <!-- left: patent slipway timeline -->
-  <g>
-    <text class="rl" x="64" y="226" font-weight="700">四件代表性专利 · 均为申请公开</text>
-    <text class="b" x="316" y="226">申请公开不等于已授权 · 全为空心节点</text>
-    <line x1="88" y1="256" x2="88" y2="486" stroke="#C4D4DC" stroke-width="2"/>
+  <!-- ============ panel b ============ -->
+  <text x="60" y="474" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="474" font-size="15" fill="#1A1B1E">视频公证方案：自估投入与自估定价（范围取自正文，只标端点）</text>
 
-    <circle cx="88" cy="278" r="8" fill="#FFFFFF" stroke="#4F9D69" stroke-width="3"/>
-    <text class="rl" x="112" y="274">2025-08-14 · Binarii Labs</text>
-    <text class="b" x="112" y="292">AI agent 识别关键片段哈希上链 · US20250259431</text>
-
-    <circle cx="88" cy="330" r="8" fill="#FFFFFF" stroke="#4F9D69" stroke-width="3"/>
-    <text class="rl" x="112" y="326">2026-03-26 · Intel</text>
-    <text class="b" x="112" y="344">已验证语音建个人基线，免重训测 deepfake · US20260088032</text>
-
-    <circle cx="88" cy="382" r="8" fill="#FFFFFF" stroke="#E4572E" stroke-width="3"/>
-    <text class="rl" x="112" y="378">2026-07-16 · Arranged BV</text>
-    <text class="b" x="112" y="396">拍摄时受控光照造「预期伪影」比对验真 · US20260205467</text>
-
-    <circle cx="88" cy="434" r="8" fill="#FFFFFF" stroke="#E4572E" stroke-width="3"/>
-    <text class="rl" x="112" y="430">2026-08-20 · Bank of America</text>
-    <text class="b" x="112" y="448">哈希上链 + 旋转水印，CNN/RNN + GAN 识破 · US20260246646</text>
-
-    <rect x="112" y="464" width="88" height="24" rx="12" fill="#5E6B86" opacity="0.16"/>
-    <text x="156" y="480" text-anchor="middle" font-size="12" fill="#4C586F" font-weight="700">检测侧</text>
-    <rect x="212" y="464" width="88" height="24" rx="12" fill="#E4572E" opacity="0.16"/>
-    <text x="256" y="480" text-anchor="middle" font-size="12" fill="#C24A24" font-weight="700">鉴真侧</text>
-    <text class="b" x="318" y="480">同主题相隔约一年再公开，方向持续布局</text>
+  <g font-size="12.5" fill="#1A1B1E">
+    <text x="60" y="514">MVP 工期（周）</text>
+    <text x="430" y="514">月订阅（元/月）</text>
+    <text x="800" y="514">代做报告（元/单）</text>
   </g>
 
-  <!-- right: shift slope + anchors -->
-  <g>
-    <text class="rl" x="640" y="226" font-weight="700">主题迁移：从问真假，到留证据</text>
-    <line x1="700" y1="252" x2="700" y2="368" stroke="#AEC2CC" stroke-width="1.5"/>
-    <line x1="1010" y1="252" x2="1010" y2="368" stroke="#AEC2CC" stroke-width="1.5"/>
-    <text class="b" x="700" y="384" text-anchor="middle">检测 · 是不是假</text>
-    <text class="b" x="1010" y="384" text-anchor="middle" fill="#C24A24">鉴真 · 证明是真的</text>
-    <line x1="700" y1="340" x2="1010" y2="286" stroke="url(#gBuoy)" stroke-width="4"/>
-    <circle cx="700" cy="340" r="8" fill="url(#gSlate)"/>
-    <circle cx="1010" cy="286" r="10" fill="url(#gBuoy)"/>
-    <text class="b" x="716" y="330" fill="#4C586F">Intel 个人基线</text>
-    <text class="b" x="1000" y="266" text-anchor="end" fill="#C24A24">哈希链 · 旋转水印 · 受控光照 · 上链锚定</text>
-
-    <text class="serif" x="1136" y="452" text-anchor="end" font-size="52" font-weight="700" fill="#C08A28">2 件</text>
-    <text class="rl" x="640" y="420" font-weight="700">近 90 天美国「视频鉴真」申请公开</text>
-    <text class="b" x="640" y="444">C2PA 管 AI 生成凭证；已发布无元数据的视频，仍靠帧级比对与哈希核对</text>
+  <!-- week ruler 0-4: x=60..300, 1周=60px -->
+  <line x1="60" y1="548" x2="300" y2="548" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="60" y1="548" x2="60" y2="552"/>
+    <line x1="180" y1="548" x2="180" y2="552"/>
+    <line x1="300" y1="548" x2="300" y2="552"/>
   </g>
-
-  <!-- bottom: solo opportunity -->
-  <line x1="64" y1="524" x2="1136" y2="524" stroke="#D5E0E4"/>
-  <g>
-    <text class="rl" x="64" y="562" font-weight="700">一个人能做：视频公证服务</text>
-    <text class="b" x="64" y="584">SHA-256 + C2PA 凭证（开源 c2pa-rs / c2pa-python）锚定公链，争议时出防篡改报告</text>
-
-    <text class="val" x="640" y="562" fill="#4F9D69">≤10,000 元</text>
-    <text class="b" x="640" y="582">起步成本 · FastAPI + ffmpeg + VPS</text>
-    <text class="val" x="880" y="562" fill="#4F9D69">4 周</text>
-    <text class="b" x="880" y="582">可演示 MVP</text>
-    <text class="val" x="1010" y="562" fill="#E4572E">99–299 元/月</text>
-    <text class="b" x="1010" y="582">或单案代做 500–2,000 元</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="60" y="568">0</text>
+    <text x="180" y="568">2</text>
+    <text x="300" y="568">4</text>
   </g>
+  <line x1="300" y1="524" x2="300" y2="548" stroke="#D55E00" stroke-width="2"/>
+  <text x="292" y="518" font-size="12" fill="#555" text-anchor="end">4 周（1 人）</text>
 
-  <text x="64" y="648" font-size="12.5" fill="#A29C88">四件均为申请公开，不等于已授权 · 报告效力弱于司法鉴定 · 机会为编辑判断 · Micropaper</text>
+  <!-- price endpoints direct label -->
+  <line x1="430" y1="548" x2="730" y2="548" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="430" y1="548" x2="430" y2="552"/>
+    <line x1="730" y1="548" x2="730" y2="552"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E">
+    <text x="430" y="568" text-anchor="start">99</text>
+    <text x="730" y="568" text-anchor="end">299</text>
+  </g>
+  <rect x="430" y="524" width="300" height="14" fill="#0072B2"/>
+  <text x="580" y="518" font-size="12" fill="#555" text-anchor="middle">99–299 元/月（自估）</text>
+
+  <line x1="800" y1="548" x2="1100" y2="548" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="800" y1="548" x2="800" y2="552"/>
+    <line x1="1100" y1="548" x2="1100" y2="552"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E">
+    <text x="800" y="568" text-anchor="start">500</text>
+    <text x="1100" y="568" text-anchor="end">2000</text>
+  </g>
+  <rect x="800" y="524" width="300" height="14" fill="#009E73"/>
+  <text x="950" y="518" font-size="12" fill="#555" text-anchor="middle">500–2000 元/单（自估）</text>
+
+  <text x="60" y="602" font-size="12" fill="#555">起步成本一万元内（自估口径）· 技术栈 FastAPI + ffmpeg + 开源 c2pa-rs / c2pa-python</text>
+
+  <!-- footnote -->
+  <text x="60" y="640" font-size="11" fill="#767676">数据：四件专利公开信息（申请公开，不等于已授权，正文所引 Free Patents Online 检索）· 成本、工期与定价为作者自估口径</text>
 </svg>
