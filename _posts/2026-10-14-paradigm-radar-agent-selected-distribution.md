@@ -8,9 +8,9 @@ tags: [agent, developer-tools, distribution, coding-agents, aeo]
 description: "由利益相关方发起的16893会话测量显示：同场景三个编程智能体选同一工具仅42%；工具分发正从人迁移为智能体，被其选中成了可测量也可操纵的新渠道。"
 ---
 
-如果你的开发者工具只做过面向人类的营销，你正在错过一半个市场：Armature（一家 YC P26、自称专做开发者工具增长的初创公司）在 2026-09-03 发布的测量研究（HN item `49557206`，实测 `300` 分、`153` 条评论）显示，Claude Code、Codex、Cursor 三个 Coding Agent 在同一场景下选中同一个工具的比例只有 `42%`——一半以上的选择，取决于你的文档、定价页和域名有没有恰好进入那台机器的视野。
+如果你的开发者工具只做过面向人类的营销，你正在错过一半个市场：Armature 的测量研究显示——Claude Code、Codex、Cursor 三个 Coding Agent 在同一场景下选中同一个工具的比例只有 `42%`。
 
-范式表述：**工具的分发对象正在从人变成 Agent：文档、`llms.txt`、机器可读评价成了新的货架，「被 Agent 选中」正在成为可测量、可优化、也可被操纵的分发渠道。**定语必须刻在判断里：这是一次由利益相关方发起的测量——目前最大的样本测量与最快的生态化尝试，都出自同一家靠卖开发者工具增长服务营生的 YC 公司，数据全部公开可查，但没有独立第三方复现。
+原句还带着出处与定语：Armature（一家 YC P26、自称专做开发者工具增长的初创公司）在 2026-09-03 发布这项研究（HN item `49557206`，实测 `300` 分、`153` 条评论）；一半以上的选择，取决于你的文档、定价页和域名有没有恰好进入那台机器的视野。范式表述：**工具的分发对象正在从人变成 Agent：文档、`llms.txt`、机器可读评价成了新的货架，「被 Agent 选中」正在成为可测量、可优化、也可被操纵的分发渠道。**定语必须刻在判断里：这是一次由利益相关方发起的测量——目前最大的样本测量与最快的生态化尝试，都出自同一家靠卖开发者工具增长服务营生的 YC 公司，数据全部公开可查，但没有独立第三方复现。
 
 ![封面：工具分发渠道从人类搜索引擎迁移到 Coding Agent 的示意图]({{ site.baseurl }}/assets/images/paradigm-radar-agent-selected-cover.svg)
 
@@ -113,7 +113,6 @@ Armature 于 2026-08-03 先把「让产品被 Coding Agent 发现和使用」做
 - [Codex CLI 守护进程 issue][links-16]
 - [HN：Codex CLI 守护进程帖][links-17]
 - [HN：2025-04 产品推荐排名比较（历史先声）][links-18]
-
 
 [links-1]: https://armature.tech/blog/which-tools-coding-agents-install
 [links-2]: https://news.ycombinator.com/item?id=49557206

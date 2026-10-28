@@ -8,9 +8,9 @@ tags: [agentic-vision, reinforcement-learning, tool-use, mllm, mode-adaptiveness
 description: "用工具必要性与工具效果双维度框架，配合必要性感知自适应奖励强化学习，训练多模态大模型学会何时调用工具、如何用好工具。多个基准上显著降低工具滥用率。"
 ---
 
-多机构研究团队发表的论文[《Beacon: Knowing When and How to Perform Agentic Visual Reasoning》][paper1-url]提出了 Mode Adaptiveness（MA）和 Tool Effect（TE）双维度分析框架，通过 Necessity-Aware Adaptive Reward 强化学习训练机制，使多模态大语言模型学会在视觉推理任务中何时需要调用工具以及如何有效使用工具。
+多机构研究团队发表的论文[《Beacon: Knowing When and How to Perform Agentic Visual Reasoning》][paper1-url]提出了 Mode Adaptiveness（MA）和 Tool Effect（TE）双维度分析框架，实验显著降低了工具滥用率。
 
-实验表明，Beacon 在多个 agentic vision benchmark 上显著降低了工具滥用率，同时保持了推理准确性。
+论文通过 Necessity-Aware Adaptive Reward 强化学习训练机制，使多模态大语言模型学会在视觉推理任务中何时需要调用工具以及如何有效使用工具。实验表明，Beacon 在多个 agentic vision benchmark 上显著降低了工具滥用率，同时保持了推理准确性。
 
 ## 核心问题：Agentic Vision 中的工具滥用
 

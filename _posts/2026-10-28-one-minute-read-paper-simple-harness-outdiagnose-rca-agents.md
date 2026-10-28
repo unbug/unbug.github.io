@@ -8,9 +8,9 @@ tags: [llm, ai-agents, root-cause-analysis, evaluation]
 description: "北京大学与北京邮电大学同台对比微服务故障诊断的两条路线：不规定模型调用流程的简单 harness 在 RCAtlas 基准上 PR@1 达到 65-77%，全面超过把调查步骤写死在程序里的已发表智能体的 16-53%。"
 ---
 
-北京大学与北京邮电大学的论文[《Free to Look, Free to Reason: Simple LLM Harnesses Outdiagnose Hand-Crafted Root Cause Analysis Agents》][paper1-url]（arXiv:2610.35767）给一个流行做法判了负分：为根因分析（RCA，指从故障发生时的指标、日志、调用链等遥测数据里定位最初坏掉的组件）手工编排 LLM Agent。
+北京大学与北京邮电大学的论文[《Free to Look, Free to Reason》][paper1-url]（arXiv:2610.35767）给一个流行做法判了负分：简单 harness 的 PR@1 最高 `77%`，发表 agent 仅 `53%`。
 
-论文用三个不规定模型调用流程的简单 harness（harness 指包住模型的调用外壳：一次调用读过证据包、SQL agent、Codex coding agent），对阵五个已发表的 LLM RCA agent 和一批统计、因果方法，同台比准确率：基准 RCAtlas 由 `8 个公开数据集`拼装的 `90 个验证案例`，覆盖 `6 个模型`、`3 档推理努力`。结果：**简单 harness 最准**，PR@1（首个答案即命中根因的案例占比）在三个中档模型上达到 `65-77%`，高于发表 agent 的 `16-53%` 与非 LLM 方法的 `6-39%`，且在每个同时跑了两族方法的模型上全部领先。
+论文标题全文为 Free to Look, Free to Reason: Simple LLM Harnesses Outdiagnose Hand-Crafted Root Cause Analysis Agents。这个流行做法是为根因分析（RCA，指从故障发生时的指标、日志、调用链等遥测数据里定位最初坏掉的组件）手工编排 LLM Agent。论文用三个不规定模型调用流程的简单 harness（harness 指包住模型的调用外壳：一次调用读过证据包、SQL agent、Codex coding agent），对阵五个已发表的 LLM RCA agent 和一批统计、因果方法，同台比准确率：基准 RCAtlas 由 `8 个公开数据集`拼装的 `90 个验证案例`，覆盖 `6 个模型`、`3 档推理努力`。结果：**简单 harness 最准**，PR@1（首个答案即命中根因的案例占比）在三个中档模型上达到 `65-77%`，高于发表 agent 的 `16-53%` 与非 LLM 方法的 `6-39%`，且在每个同时跑了两族方法的模型上全部领先。
 
 ![三族方法在 RCAtlas 上的 PR@1 区间对比]({{ site.baseurl }}/assets/images/simple-harness-rca.svg)
 

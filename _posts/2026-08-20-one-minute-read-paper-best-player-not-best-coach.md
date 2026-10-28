@@ -8,9 +8,9 @@ tags: [llm, benchmark, multi-agent]
 description: "UC Berkeley Haas 的 CentaurBench 在 7 个真实工作任务上对比 LLM 的自动化与增强两种角色，模型级排名相关仅 0.48，5/7 任务冠军不同，无指导基线在 3 个任务胜过所有指导。"
 ---
 
-加州大学伯克利分校哈斯商学院数据创新与人工智能实验室（DIAL）的论文[《CentaurBench: Benchmarking LLM Capabilities on Augmenting vs. Automating Real-World Work Tasks》](https://arxiv.org/abs/2608.18554)发现，大语言模型的"自动化"能力与"增强"能力几乎不相关：最会自己干活的"选手"，未必是最会指导别人干活的"教练"。
+加州大学伯克利分校哈斯商学院数据创新与人工智能实验室（DIAL）的论文[《CentaurBench》](https://arxiv.org/abs/2608.18554)发现，大语言模型的"自动化"能力与"增强"能力几乎不相关：模型级 Spearman 相关仅 `0.48`。
 
-论文用统一框架在 7 个真实工作任务上评测 9 个助手模型，每任务独立重复 10 次，两种角色排名的模型级 Spearman 相关仅 `0.48`（p=0.187），在常规显著性水平下与零不可区分。
+论文全称为 CentaurBench: Benchmarking LLM Capabilities on Augmenting vs. Automating Real-World Work Tasks。最会自己干活的"选手"，未必是最会指导别人干活的"教练"。论文用统一框架在 7 个真实工作任务上评测 9 个助手模型，每任务独立重复 10 次，两种角色排名的模型级 Spearman 相关仅 `0.48`（p=0.187），在常规显著性水平下与零不可区分。
 
 ## 两种角色，一套框架
 

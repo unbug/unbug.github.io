@@ -8,9 +8,9 @@ tags: [llm, agent, test-time-compute]
 description: "新加坡国立大学论文提出COTA：不会解题、只会成对比较的0.5B小模型在运行时给更大的actor模型当顾问，以非约束性建议触发重规划，9个actor-环境组合全部取得最佳成绩，平均端到端开销1.38倍。"
 ---
 
-新加坡国立大学的论文[《Don't Solve, Just Compare: Tiny Advisors for Runtime Intervention in LLM Agents》][paper1-url]提出 COTA 框架：**顾问模型不需要会解题**——一个只会判断两个候选动作哪个更好的 `0.5B` 小模型（Qwen2.5-0.5B-Instruct），就能在运行时给比它大得多的 actor 模型指出错误、触发重规划。
+新加坡国立大学的论文[《Don't Solve, Just Compare: Tiny Advisors for Runtime Intervention in LLM Agents》][paper1-url]提出 COTA 框架：`0.5B` 小模型只会比较两个候选动作，就能给大 actor 指出错误、触发重规划。
 
-此前[《测试时扩展：瓶颈在筛选，不在采样》][links-1]的结论是筛选比采样难，这篇论文的结论与之互补：**比较比求解便宜，而且够用**。在 3 个 actor × 3 个环境共 9 个组合上，COTA 全部取得最佳成绩，平均端到端开销 `1.38×`（9 个设置中 7 个低于 `1.5×`）。
+论文的原话是：**顾问模型不需要会解题**——一个只会判断两个候选动作哪个更好的 `0.5B` 小模型（Qwen2.5-0.5B-Instruct），就能在运行时给比它大得多的 actor 模型指出错误、触发重规划。此前[《测试时扩展：瓶颈在筛选，不在采样》][links-1]的结论是筛选比采样难，这篇论文的结论与之互补：**比较比求解便宜，而且够用**。在 3 个 actor × 3 个环境共 9 个组合上，COTA 全部取得最佳成绩，平均端到端开销 `1.38×`（9 个设置中 7 个低于 `1.5×`）。
 
 ## 比较而非求解
 
