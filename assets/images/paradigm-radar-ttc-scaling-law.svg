@@ -1,90 +1,162 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'Segoe UI', Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1f3a;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#2d3561;stop-opacity:1"/>
-    </linearGradient>
+    <clipPath id="clipA"><rect x="422" y="120" width="499" height="340"/></clipPath>
   </defs>
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="800" height="450" fill="url(#bgGrad)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">准确率随 thinking tokens 对数增长，边际收益递减；o3 在 AIME 2024 达约 96%</text>
 
-  <!-- Title -->
-  <text x="400" y="40" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="bold">推理时扩展 Scaling Law</text>
+  <!-- ================= panel a ================= -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">离散任务基准成绩（%，数字标在条形右端）</text>
 
-  <!-- Y axis label -->
-  <text x="30" y="250" text-anchor="middle" fill="#a0b4d0" font-size="12" transform="rotate(-90, 30, 250)">准确率 (%)</text>
+  <!-- plot area: x = 430..920, rows at y=160/215/270/325/380/435 -->
+  <!-- vertical gridlines (value axis majors) -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="422" y1="130" x2="920" y2="130"/>
+  </g>
 
-  <!-- X axis label -->
-  <text x="400" y="430" text-anchor="middle" fill="#a0b4d0" font-size="12">Thinking Tokens (对数刻度)</text>
+  <!-- row labels -->
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="418" y="164">AIME · GPT-4o</text>
+    <text x="418" y="219">AIME · Claude Opus</text>
+    <text x="418" y="274">AIME · o1-preview</text>
+    <text x="418" y="329">AIME · o3</text>
+    <text x="418" y="384">GPQA Diamond · o3</text>
+    <text x="418" y="439">Game of 24 · ToT (DFS)</text>
+  </g>
 
-  <!-- Grid lines -->
-  <line x1="80" y1="60" x2="750" y2="60" stroke="#3a4a7a" stroke-width="0.5"/>
-  <line x1="80" y1="120" x2="750" y2="120" stroke="#3a4a7a" stroke-width="0.5"/>
-  <line x1="80" y1="180" x2="750" y2="180" stroke="#3a4a7a" stroke-width="0.5"/>
-  <line x1="80" y1="240" x2="750" y2="240" stroke="#3a4a7a" stroke-width="0.5"/>
-  <line x1="80" y1="300" x2="750" y2="300" stroke="#3a4a7a" stroke-width="0.5"/>
+  <!-- row 1: GPT-4o range 30-40, hollow baseline -->
+  <g clip-path="url(#clipA)">
+    <line x1="566" y1="160" x2="610" y2="160" stroke="#999999" stroke-width="2"/>
+    <circle cx="566" cy="160" r="4" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <circle cx="610" cy="160" r="4" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <rect x="430" y="262" width="416.5" height="16" fill="#0072B2"/>
+    <rect x="430" y="317" width="470.4" height="16" fill="#D55E00"/>
+    <rect x="430" y="372" width="426.3" height="16" fill="#D55E00"/>
+    <polygon points="856.3,372 866.3,380 856.3,388" fill="#D55E00"/>
+    <rect x="430" y="427" width="362.6" height="16" fill="#0072B2"/>
+    <line x1="449.6" y1="427" x2="449.6" y2="443" stroke="#1A1B1E" stroke-width="1.5"/>
+  </g>
+  <text x="930" y="164" font-size="12" fill="#555555">约 30–40</text>
 
-  <!-- Y axis labels -->
-  <text x="70" y="64" text-anchor="end" fill="#a0b4d0" font-size="10">90%</text>
-  <text x="70" y="124" text-anchor="end" fill="#a0b4d0" font-size="10">80%</text>
-  <text x="70" y="184" text-anchor="end" fill="#a0b4d0" font-size="10">70%</text>
-  <text x="70" y="244" text-anchor="end" fill="#a0b4d0" font-size="10">60%</text>
-  <text x="70" y="304" text-anchor="end" fill="#a0b4d0" font-size="10">50%</text>
+  <!-- row 2: Claude Opus range 80-85 -->
+  <g clip-path="url(#clipA)">
+    <line x1="878" y1="215" x2="900" y2="215" stroke="#009E73" stroke-width="2"/>
+    <circle cx="878" cy="215" r="4" fill="#009E73"/>
+    <circle cx="900" cy="215" r="4" fill="#009E73"/>
+  </g>
 
-  <!-- X axis labels -->
-  <text x="80" y="320" text-anchor="middle" fill="#a0b4d0" font-size="10">100</text>
-  <text x="200" y="320" text-anchor="middle" fill="#a0b4d0" font-size="10">500</text>
-  <text x="320" y="320" text-anchor="middle" fill="#a0b4d0" font-size="10">1K</text>
-  <text x="440" y="320" text-anchor="middle" fill="#a0b4d0" font-size="10">5K</text>
-  <text x="560" y="320" text-anchor="middle" fill="#a0b4d0" font-size="10">10K</text>
-  <text x="680" y="320" text-anchor="middle" fill="#a0b4d0" font-size="10">50K+</text>
+  <!-- value labels on the right -->
+  <g font-size="12" fill="#555555">
+    <text x="930" y="196" font-size="11">extended thinking，约 32K tokens</text>
+    <text x="930" y="219">约 80–85</text>
+    <text x="930" y="274">约 85%（「约」值）</text>
+    <text x="930" y="329">约 96%</text>
+    <text x="930" y="384">超过 87%</text>
+    <text x="930" y="439">74%（基线 4%，18.5 倍）</text>
+  </g>
 
-  <!-- Region labels -->
-  <rect x="80" y="330" width="120" height="20" rx="3" fill="#34c759" opacity="0.2"/>
-  <text x="140" y="344" text-anchor="middle" fill="#5ee68a" font-size="9">低 token (&lt;1K)</text>
+  <!-- value axis (bottom) -->
+  <line x1="430" y1="460" x2="920" y2="460" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="430" y1="460" x2="430" y2="464"/>
+    <line x1="552.5" y1="460" x2="552.5" y2="464"/>
+    <line x1="675" y1="460" x2="675" y2="464"/>
+    <line x1="797.5" y1="460" x2="797.5" y2="464"/>
+    <line x1="920" y1="460" x2="920" y2="464"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="430" y="480">0</text>
+    <text x="552.5" y="480">25</text>
+    <text x="675" y="480">50</text>
+    <text x="797.5" y="480">75</text>
+    <text x="920" y="480">100</text>
+  </g>
+  <text x="675" y="502" font-size="14" fill="#1A1B1E" text-anchor="middle">任务准确率（%）</text>
 
-  <rect x="200" y="330" width="120" height="20" rx="3" fill="#4a90d9" opacity="0.2"/>
-  <text x="260" y="344" text-anchor="middle" fill="#6bb5f0" font-size="9">中 token (1K-10K)</text>
+  <!-- legend for panel a -->
+  <g font-size="12" fill="#555555">
+    <line x1="430" y1="521" x2="450" y2="521" stroke="#999999" stroke-width="2"/>
+    <circle cx="434" cy="521" r="3.5" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <circle cx="446" cy="521" r="3.5" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <text x="458" y="525">空心区间 = 论文报告范围</text>
+    <polygon points="640,515 650,521 640,527" fill="#D55E00"/>
+    <text x="658" y="525">「超过」下限，箭头朝上限方向</text>
+    <rect x="912" y="518" width="12" height="10" fill="#0072B2"/>
+    <text x="930" y="527">o1 / ToT</text>
+    <rect x="1000" y="518" width="12" height="10" fill="#009E73"/>
+    <text x="1018" y="527">Claude</text>
+    <rect x="1076" y="518" width="12" height="10" fill="#D55E00"/>
+    <text x="1094" y="527">o3</text>
+  </g>
 
-  <rect x="320" y="330" width="120" height="20" rx="3" fill="#ff9f0a" opacity="0.2"/>
-  <text x="380" y="344" text-anchor="middle" fill="#ffcc33" font-size="9">高 token (&gt;10K)</text>
+  <!-- ================= panel b ================= -->
+  <text x="960" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="960" y="124" font-size="15" fill="#1A1B1E">边际收益</text>
+  <text x="960" y="142" font-size="15" fill="#1A1B1E">（百分点 / 每 1K tokens）</text>
 
-  <!-- o3 curve (steeper) -->
-  <path d="M80,290 Q160,270 240,240 Q320,200 400,170 Q480,150 560,135 Q640,125 720,120" 
-        fill="none" stroke="#ff9f0a" stroke-width="2.5"/>
-  
-  <!-- o1 curve (less steep) -->
-  <path d="M80,300 Q160,285 240,260 Q320,230 400,200 Q480,180 560,165 Q640,155 720,150" 
-        fill="none" stroke="#4a90d9" stroke-width="2.5"/>
+  <!-- value gridlines: y = 460 - 160*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="950" y1="380" x2="1140" y2="380"/>
+    <line x1="950" y1="300" x2="1140" y2="300"/>
+    <line x1="950" y1="220" x2="1140" y2="220"/>
+    <line x1="950" y1="140" x2="1140" y2="140"/>
+  </g>
 
-  <!-- Claude curve -->
-  <path d="M80,305 Q160,290 240,265 Q320,240 400,215 Q480,195 560,180 Q640,170 720,165" 
-        fill="none" stroke="#34c759" stroke-width="2.5"/>
+  <!-- values: low 0.25 (0.2-0.5) mid 0.55 (0.3-0.8) high 0.0375 (0.03-0.05) extreme 0 -->
+  <line x1="974" y1="420" x2="974" y2="380" stroke="#999999" stroke-width="2"/>
+  <line x1="1022" y1="352" x2="1022" y2="312" stroke="#999999" stroke-width="2"/>
+  <line x1="1070" y1="454" x2="1070" y2="456" stroke="#999999" stroke-width="2"/>
+  <circle cx="974" cy="400" r="4" fill="#D55E00"/>
+  <circle cx="1022" cy="332" r="4" fill="#D55E00"/>
+  <circle cx="1070" cy="454" r="4" fill="#D55E00"/>
+  <circle cx="1118" cy="460" r="4" fill="#D55E00"/>
 
-  <!-- Legend -->
-  <rect x="520" y="60" width="220" height="80" rx="6" fill="#1e2a4a" opacity="0.9"/>
-  
-  <line x1="535" y1="80" x2="565" y2="80" stroke="#ff9f0a" stroke-width="2.5"/>
-  <text x="575" y="84" fill="#ffffff" font-size="11">o3 (steeper scaling)</text>
+  <!-- value axis -->
+  <line x1="950" y1="140" x2="950" y2="460" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="946" y1="460" x2="950" y2="460"/>
+    <line x1="946" y1="380" x2="950" y2="380"/>
+    <line x1="946" y1="300" x2="950" y2="300"/>
+    <line x1="946" y1="220" x2="950" y2="220"/>
+    <line x1="946" y1="140" x2="950" y2="140"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="940" y="464">0</text>
+    <text x="940" y="384">0.5</text>
+    <text x="940" y="304">1</text>
+    <text x="940" y="224">1.5</text>
+    <text x="940" y="144">2</text>
+  </g>
+  <text x="872" y="300" font-size="14" fill="#1A1B1E" text-anchor="middle" transform="rotate(-90 872 300)">每 1K tokens 增益（百分点）</text>
 
-  <line x1="535" y1="105" x2="565" y2="105" stroke="#4a90d9" stroke-width="2.5"/>
-  <text x="575" y="109" fill="#ffffff" font-size="11">o1</text>
+  <!-- category axis -->
+  <line x1="950" y1="460" x2="1140" y2="460" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="974" y1="460" x2="974" y2="464"/>
+    <line x1="1022" y1="460" x2="1022" y2="464"/>
+    <line x1="1070" y1="460" x2="1070" y2="464"/>
+    <line x1="1118" y1="460" x2="1118" y2="464"/>
+  </g>
+  <g font-size="12" fill="#1A1B1E" text-anchor="middle">
+    <text x="974" y="482">低</text>
+    <text x="1022" y="482">中</text>
+    <text x="1070" y="482">高</text>
+    <text x="1118" y="482">极高</text>
+  </g>
+  <g font-size="11" fill="#555555" text-anchor="middle">
+    <text x="974" y="498">&lt;1K</text>
+    <text x="1022" y="498">1K–10K</text>
+    <text x="1070" y="498">&gt;10K</text>
+    <text x="1118" y="498">&gt;50K</text>
+  </g>
+  <text x="1040" y="521" font-size="14" fill="#1A1B1E" text-anchor="middle">thinking tokens 区间（tokens）</text>
+  <text x="1130" y="272" font-size="11" fill="#555555" text-anchor="end">灰线 = 正文区间（折算后）</text>
+  <text x="1130" y="288" font-size="11" fill="#555555" text-anchor="end">实心点 = 区间中点</text>
 
-  <line x1="535" y1="130" x2="565" y2="130" stroke="#34c759" stroke-width="2.5"/>
-  <text x="575" y="134" fill="#ffffff" font-size="11">Claude Extended Thinking</text>
-
-  <!-- Key data points -->
-  <circle cx="320" cy="260" r="4" fill="#ff9f0a"/>
-  <text x="330" y="258" fill="#ffffff" font-size="9">o3: ~75%</text>
-
-  <circle cx="320" cy="260" r="4" fill="#4a90d9"/>
-  <text x="330" y="275" fill="#ffffff" font-size="9">o1: ~68%</text>
-
-  <!-- Diminishing returns annotation -->
-  <rect x="500" y="140" width="240" height="50" rx="4" fill="#ff3b30" opacity="0.15"/>
-  <text x="620" y="160" text-anchor="middle" fill="#ff6b60" font-size="10">边际递减区域</text>
-  <text x="620" y="178" text-anchor="middle" fill="#a0b4d0" font-size="9">&gt;50K tokens: 收益趋近于零</text>
-
-  <!-- Source -->
-  <text x="400" y="380" text-anchor="middle" fill="#a0b4d0" font-size="10">数据来源: OpenAI o1/o3 system cards, Anthropic technical reports, arXiv:2607.28573</text>
+  <!-- footnote -->
+  <text x="60" y="616" font-size="11" fill="#767676">数据：正文汇总 OpenAI o1/o3 system cards、Anthropic 技术报告、ToT（arXiv:2305.10601）与 arXiv:2607.28573 · 均为论文自测口径 · o3 达最佳性能时平均推理 tokens 超过 100K · 预印本未经同行评审</text>
+  <text x="60" y="634" font-size="11" fill="#767676">panel b 增益为正文「每 100 / 1K / 10K tokens」原文按每 1K tokens 折算 · 「超过」为下限，箭头朝上限方向</text>
 </svg>

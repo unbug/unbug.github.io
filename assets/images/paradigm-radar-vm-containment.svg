@@ -1,110 +1,109 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9A937F; }
-      .b { font-size: 12px; fill: #8F897B; }
-      .ev { font-size: 13px; font-weight: 700; fill: #2E4F45; }
-      .evs { font-size: 12px; fill: #5E6A5C; }
-      .stat { font-size: 34px; font-weight: 700; fill: #2E4F45; }
-      .unit { font-size: 14px; fill: #5E6A5C; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFC"/><stop offset="1" stop-color="#FAF7EF"/>
-    </linearGradient>
-    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#D9503F"/><stop offset="1" stop-color="#E8B84B"/>
-    </linearGradient>
-    <linearGradient id="oven" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#2E4F45"/><stop offset="1" stop-color="#4E7266"/>
-    </linearGradient>
-    <linearGradient id="flame" x1="0" y1="1" x2="0" y2="0">
-      <stop offset="0" stop-color="#D9503F"/><stop offset="1" stop-color="#E8B84B"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1110" cy="590" r="130" fill="#7FA65A" opacity="0.07"/>
-  <circle cx="80" cy="130" r="110" fill="#D9503F" opacity="0.05"/>
-  <rect x="64" y="44" width="44" height="5" fill="#D9503F"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">三轮均从默认配置的通用 QEMU/KVM 逃逸（第 3 轮升级上游后链式利用 3 个 0-day），Firecracker 对照组未遂</text>
 
-  <text class="k" x="64" y="84">AI 范式雷达 · 2026-09-08 · VM CONTAINMENT</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">没削边的虚拟机拦不住</text>
-  <text x="64" y="158" font-size="15.5" fill="#6E6A5C">Trail of Bits：前沿 Agent 三次逃出未加固的通用 QEMU/KVM 虚拟机</text>
+  <!-- ================= panel a ================= -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">三轮攻击利用链的缺陷构成（个）</text>
 
-  <!-- kitchen pot motif: loose lid = uncontained VM, agent escaping as flame -->
-  <g>
-    <path d="M 1016 132 q 14 -22 0 -40 q 26 8 20 30 q 12 -6 10 -20 q 16 18 2 40 z" fill="url(#flame)"/>
-    <circle cx="1057" cy="116" r="3.5" fill="#FFFFFC" opacity="0.85"/>
-    <path d="M 1010 156 h 84 l -8 16 h -68 z" fill="#2E4F45" opacity="0.25"/>
-    <ellipse cx="1052" cy="166" rx="58" ry="13" fill="#2E4F45"/>
-    <ellipse cx="1052" cy="163" rx="58" ry="12" fill="#4E7266"/>
-    <rect x="984" y="170" width="136" height="8" rx="4" fill="#B5442E"/>
-    <rect x="998" y="178" width="12" height="16" fill="#2E4F45"/>
-    <rect x="1094" y="178" width="12" height="16" fill="#2E4F45"/>
+  <!-- stacked horizontal bars: x = 150 + 90*v -->
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="138" y="164">第 1 轮</text>
+    <text x="138" y="224">第 2 轮</text>
+    <text x="138" y="284">第 3 轮</text>
   </g>
 
-  <!-- attack surface: default full bar with small safe subset -->
-  <text class="ev" x="64" y="212">「安全子集」只是角落，默认配置开着全家桶</text>
-  <text class="b" x="64" y="234">按 bonzini 说法的安全边界口径 · 示意图，非测量值</text>
-  <rect x="64" y="250" width="1072" height="40" fill="url(#bar)" opacity="0.88"/>
-  <rect x="64" y="250" width="150" height="40" fill="#2E4F45"/>
-  <text x="139" y="275" font-size="13" font-weight="700" fill="#FAF7EF" text-anchor="middle">安全子集</text>
-  <text x="760" y="275" font-size="13" font-weight="700" fill="#FFFFFC" text-anchor="middle">默认暴露的攻击面：libslirp · VGA · 完整设备模拟</text>
-  <g class="b">
-    <rect x="64" y="306" width="12" height="12" fill="#2E4F45"/><text x="82" y="316">安全子集</text>
-    <rect x="168" y="306" width="12" height="12" fill="#D9503F"/><text x="186" y="316">本案利用链落点</text>
-    <rect x="308" y="306" width="12" height="12" fill="#E8B84B"/><text x="326" y="316">上游已修、发行版未部署</text>
+  <rect x="150" y="150" width="90" height="20" fill="#D55E00"/>
+  <text x="250" y="164" font-size="12" fill="#555555">1 · 宿主机内核漏洞 Januscape（数周前披露、当时无公开 exploit）</text>
+
+  <rect x="150" y="210" width="90" height="20" fill="#D55E00"/>
+  <rect x="240" y="210" width="90" height="20" fill="#0072B2"/>
+  <text x="340" y="224" font-size="12" fill="#555555">1 + 1 · libslirp 4.7.0 带 CVE-2026-9539，另加 1 个上游修复对应缺陷（未分配 CVE）</text>
+
+  <rect x="150" y="270" width="270" height="20" fill="#CC79A7"/>
+  <rect x="420" y="270" width="90" height="20" fill="#0072B2"/>
+  <text x="520" y="284" font-size="12" fill="#555555">3 + 1 · 手工升级最新上游 QEMU/libslirp 后仍链式利用成功，组合为宿主机任意内存读写</text>
+
+  <!-- value axis -->
+  <line x1="150" y1="316" x2="420" y2="316" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="150" y1="316" x2="150" y2="320"/>
+    <line x1="240" y1="316" x2="240" y2="320"/>
+    <line x1="330" y1="316" x2="330" y2="320"/>
+    <line x1="420" y1="316" x2="420" y2="320"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="150" y="336">0</text>
+    <text x="240" y="336">1</text>
+    <text x="330" y="336">2</text>
+    <text x="420" y="336">3</text>
+  </g>
+  <text x="285" y="358" font-size="14" fill="#1A1B1E" text-anchor="middle">利用链中的缺陷数（个）</text>
+
+  <!-- category legend (segment colors) -->
+  <g font-size="12" fill="#555555">
+    <rect x="150" y="378" width="12" height="10" fill="#D55E00"/>
+    <text x="168" y="387">已分配 CVE 漏洞</text>
+    <rect x="330" y="378" width="12" height="10" fill="#0072B2"/>
+    <text x="348" y="387">未分配 CVE（上游已修 / 未标记安全问题）</text>
+    <rect x="690" y="378" width="12" height="10" fill="#CC79A7"/>
+    <text x="708" y="387">当时未公开的 0-day</text>
   </g>
 
-  <!-- three rounds: recipe cards -->
-  <g>
-    <rect x="64" y="344" width="352" height="120" fill="#D9503F" opacity="0.07"/>
-    <rect x="64" y="344" width="5" height="120" fill="#D9503F"/>
-    <text class="ev" x="88" y="376">第一轮 · 约 1 小时</text>
-    <text class="evs" x="88" y="400">自建 exploit 打挂宿主机</text>
-    <text class="b" x="88" y="422">数周前披露、无公开 exploit</text>
-    <text class="b" x="88" y="442">宿主机内核 Januscape 漏洞</text>
+  <!-- ================= panel b ================= -->
+  <text x="60" y="434" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="434" font-size="15" fill="#1A1B1E">各配置逃逸判定（CTF 式：逃出 VM 读到宿主 flag 即成功）</text>
 
-    <rect x="440" y="344" width="352" height="120" fill="#E8B84B" opacity="0.12"/>
-    <rect x="440" y="344" width="5" height="120" fill="#E8B84B"/>
-    <text class="ev" x="464" y="376">第二轮 · 组合利用</text>
-    <text class="evs" x="464" y="400">宿主机任意内存读写</text>
-    <text class="b" x="464" y="422">libslirp 4.7.0 带 CVE-2026-9539</text>
-    <text class="b" x="464" y="442">＋上游已修未标记缺陷</text>
-
-    <rect x="816" y="344" width="320" height="120" fill="#7FA65A" opacity="0.1"/>
-    <rect x="816" y="344" width="5" height="120" fill="#7FA65A"/>
-    <text class="ev" x="840" y="376">第三轮 · 升级最新版后</text>
-    <text class="evs" x="840" y="400">链式利用 3 个未公开 0-day</text>
-    <text class="b" x="840" y="422">＋ 1 个上游已修未标记缺陷</text>
-    <text class="b" x="840" y="442">单次运行约 12 小时量级</text>
+  <!-- gridlines at category centers -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="280" y1="452" x2="280" y2="560"/>
+    <line x1="560" y1="452" x2="560" y2="560"/>
+    <line x1="840" y1="452" x2="840" y2="560"/>
+    <line x1="1100" y1="452" x2="1100" y2="560"/>
   </g>
 
-  <!-- control panel big-number cards -->
-  <g>
-    <rect x="64" y="492" width="352" height="132" fill="#2E4F45" opacity="0.07"/>
-    <rect x="64" y="492" width="352" height="6" fill="#2E4F45"/>
-    <circle cx="114" cy="532" r="16" fill="#2E4F45"/>
-    <path d="M 114 524 v 8 l 6 4" stroke="#FAF7EF" stroke-width="3" fill="none" stroke-linecap="round"/>
-    <text class="stat" x="152" y="556">3 次</text>
-    <text class="unit" x="152" y="580">自主逃逸</text>
-    <text class="evs" x="92" y="608">Firecracker 对照组未逃逸</text>
-
-    <rect x="440" y="492" width="352" height="132" fill="#D9503F" opacity="0.08"/>
-    <rect x="440" y="492" width="352" height="6" fill="#D9503F"/>
-    <rect x="468" y="516" width="44" height="30" rx="8" fill="#D9503F"/>
-    <path d="M 483 531 l 7 7 l 12 -13" stroke="#FAF7EF" stroke-width="4" fill="none" stroke-linecap="round"/>
-    <text class="stat" x="528" y="556">MAC<tspan class="unit" dx="10">拦住唯一一条链</tspan></text>
-    <text class="evs" x="468" y="608">AppArmor 拦截 CUPS 根证书读取</text>
-
-    <rect x="816" y="492" width="320" height="132" fill="#B5442E" opacity="0.08"/>
-    <rect x="816" y="492" width="320" height="6" fill="#B5442E"/>
-    <circle cx="846" cy="532" r="15" fill="#B5442E"/>
-    <path d="M 846 523 v 9 l 6 4" stroke="#FAF7EF" stroke-width="3" fill="none" stroke-linecap="round"/>
-    <text class="stat" x="874" y="556">197 分<tspan class="unit" dx="8">· 147 评论</tspan></text>
-    <text class="evs" x="844" y="608">Hacker News · 2026-09-08 复核</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="280" y="472">第 1 轮</text>
+    <text x="280" y="488" font-size="12" fill="#555555">默认配置 QEMU/KVM</text>
+    <text x="560" y="472">第 2 轮</text>
+    <text x="560" y="488" font-size="12" fill="#555555">默认配置 QEMU/KVM</text>
+    <text x="840" y="472">第 3 轮</text>
+    <text x="840" y="488" font-size="12" fill="#555555">升级上游 QEMU/libslirp 后</text>
+    <text x="1100" y="472" text-anchor="end">Firecracker 对照组</text>
   </g>
+  <g font-size="12" fill="#555555" text-anchor="middle">
+    <text x="280" y="538">逃逸成功（hardlock）</text>
+    <text x="560" y="538">逃逸成功（任意内存读写）</text>
+    <text x="840" y="538">逃逸成功（0-day 链）</text>
+    <text x="1100" y="538" text-anchor="end">未遂</text>
+  </g>
+  <!-- outcome markers: filled = escaped, hollow = not escaped -->
+  <circle cx="280" cy="510" r="7" fill="#D55E00"/>
+  <circle cx="560" cy="510" r="7" fill="#D55E00"/>
+  <circle cx="840" cy="510" r="7" fill="#D55E00"/>
+  <circle cx="1100" cy="510" r="7" fill="#FFFFFF" stroke="#999999" stroke-width="2"/>
 
-  <text class="b" x="64" y="660">n=1：单一研究者 / 宿主机 / 目标环境，CTF 式判定，不可外推为「任意 VM 必被逃逸」· Micropaper</text>
+  <text x="1100" y="556" font-size="11" fill="#555555" text-anchor="end">仍可 hardlock</text>
+
+  <!-- ordinal category axis -->
+  <line x1="200" y1="560" x2="1140" y2="560" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="280" y1="560" x2="280" y2="564"/>
+    <line x1="560" y1="560" x2="560" y2="564"/>
+    <line x1="840" y1="560" x2="840" y2="564"/>
+    <line x1="1100" y1="560" x2="1100" y2="564"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="280" y="582">1</text>
+    <text x="560" y="582">2</text>
+    <text x="840" y="582">3</text>
+    <text x="1100" y="582">对照</text>
+  </g>
+  <text x="670" y="602" font-size="14" fill="#1A1B1E" text-anchor="middle">攻击尝试序位（序位轴，非等距时间）</text>
+
+  <!-- footnote -->
+  <text x="60" y="630" font-size="11" fill="#767676">数据：Trail of Bits《VMs won't contain cyber-capable agents》（2026-08-26 发布）· HN 197 分、147 条评论（实测 2026-09-08）· 首轮约 1 小时，单次运行约 12 小时量级</text>
+  <text x="60" y="648" font-size="11" fill="#767676">单一研究者 / 单一宿主机 / CTF 式判定，n=1 不外推 · CVE 编号均据 Trail of Bits 称</text>
 </svg>

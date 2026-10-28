@@ -1,122 +1,101 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9C9484; }
-      .rl { font-size: 15px; fill: #474C54; }
-      .val { font-size: 18px; font-weight: 700; fill: #1A1B1E; }
-      .b { font-size: 12px; fill: #A5A296; }
-      .chip { font-size: 12.5px; font-weight: 600; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F5F2EA"/>
-    </linearGradient>
-    <linearGradient id="gLeaf" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#3E7C43"/><stop offset="1" stop-color="#7FB069"/>
-    </linearGradient>
-    <linearGradient id="gClay" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#B5442E"/><stop offset="1" stop-color="#D9704F"/>
-    </linearGradient>
-    <linearGradient id="gWheat" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#B9892F"/><stop offset="1" stop-color="#DCB65F"/>
-    </linearGradient>
-    <linearGradient id="gSky" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#3D7EA6"/><stop offset="1" stop-color="#7FB3D5"/>
-    </linearGradient>
-    <linearGradient id="gPlum" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7D4E8E"/><stop offset="1" stop-color="#B183C2"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1110" cy="105" r="140" fill="#3E7C43" opacity="0.06"/>
-  <circle cx="70" cy="625" r="115" fill="#B5442E" opacity="0.05"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gClay)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">METTL3 回顾性案例：单次运行头部类似物预测 IC50 为 102.33 nM，相对起始化合物约 95 倍预测活性提升（均为计算预测，未经湿实验验证）</text>
 
-  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2608.11483 · UNC CHAPEL HILL</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">算出来的九十五倍</text>
-  <text x="64" y="158" font-size="15" fill="#5B6068">SABLE 把 DMTA 循环的分析与优先级排序阶段搬到计算侧，构成选种温室般的计算孪生体</text>
+  <!-- ================= panel a ================= -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">SABLE 编排架构：LLM 编排层（橙色）路由到四类专用工具（结构示意，非测量值）</text>
 
-  <!-- right motif: greenhouse seed-selection -->
-  <g>
-    <path d="M 985 214 q 85 -104 170 0 z" fill="#3D7EA6" opacity="0.16"/>
-    <path d="M 985 214 q 85 -104 170 0" fill="none" stroke="#3D7EA6" stroke-width="2" opacity="0.5"/>
-    <line x1="1028" y1="182" x2="1028" y2="214" stroke="#3D7EA6" stroke-width="1.5" opacity="0.4"/>
-    <line x1="1070" y1="161" x2="1070" y2="214" stroke="#3D7EA6" stroke-width="1.5" opacity="0.4"/>
-    <line x1="1112" y1="182" x2="1112" y2="214" stroke="#3D7EA6" stroke-width="1.5" opacity="0.4"/>
-    <rect x="985" y="214" width="170" height="4" fill="#3D7EA6" opacity="0.5"/>
+  <!-- top box -->
+  <rect x="150" y="128" width="420" height="36" fill="#D55E00"/>
+  <text x="360" y="151" font-size="12.5" fill="#FFFFFF" text-anchor="middle">LLM 编排层：解析自然语言优化目标与迭代预算，路由任务</text>
+  <line x1="360" y1="164" x2="360" y2="188" stroke="#999999" stroke-width="1.5"/>
+  <polygon points="356,183 364,183 360,190" fill="#999999"/>
 
-    <line x1="1012" y1="282" x2="1012" y2="316" stroke="#3E7C43" stroke-width="3"/>
-    <circle cx="1012" cy="272" r="9" fill="url(#gLeaf)"/>
-    <line x1="1046" y1="270" x2="1046" y2="316" stroke="#3E7C43" stroke-width="3"/>
-    <circle cx="1046" cy="260" r="11" fill="url(#gLeaf)"/>
-    <line x1="1080" y1="248" x2="1080" y2="316" stroke="#3E7C43" stroke-width="3"/>
-    <circle cx="1080" cy="237" r="13" fill="url(#gWheat)"/>
-    <line x1="1114" y1="278" x2="1114" y2="316" stroke="#3E7C43" stroke-width="3"/>
-    <circle cx="1114" cy="268" r="9" fill="url(#gLeaf)"/>
-    <line x1="1148" y1="262" x2="1148" y2="316" stroke="#3E7C43" stroke-width="3"/>
-    <circle cx="1148" cy="252" r="10" fill="url(#gLeaf)"/>
-    <rect x="988" y="316" width="176" height="8" rx="2" fill="url(#gClay)" opacity="0.8"/>
+  <!-- four tool boxes -->
+  <g font-size="12" text-anchor="middle">
+    <rect x="70" y="192" width="250" height="40" fill="none" stroke="#555555" stroke-width="1.5"/>
+    <text x="195" y="209" fill="#1A1B1E">HEALER 反应模板引擎</text>
+    <text x="195" y="224" fill="#555555">枚举合成可及类似物库</text>
 
-    <circle cx="1080" cy="342" r="15" fill="none" stroke="#B5442E" stroke-width="2" opacity="0.75"/>
-    <path d="M 1091 353 l 10 10" stroke="#B5442E" stroke-width="3" stroke-linecap="round" opacity="0.75"/>
-    <text class="b" x="1076" y="384" text-anchor="middle">温室选种 · 未经湿实验</text>
+    <rect x="340" y="192" width="250" height="40" fill="none" stroke="#555555" stroke-width="1.5"/>
+    <text x="465" y="209" fill="#1A1B1E">RDKit / STOPLIGHT</text>
+    <text x="465" y="224" fill="#1A1B1E">理化性质与 ADMET 预测</text>
+
+    <rect x="610" y="192" width="250" height="40" fill="none" stroke="#555555" stroke-width="1.5"/>
+    <text x="735" y="209" fill="#1A1B1E">Boltz-2 亲和力打分</text>
+    <text x="735" y="224" fill="#555555">复合物结构与 logIC50</text>
+
+    <rect x="880" y="192" width="250" height="40" fill="none" stroke="#555555" stroke-width="1.5"/>
+    <text x="1005" y="209" fill="#1A1B1E">贝叶斯优化</text>
+    <text x="1005" y="224" fill="#1A1B1E">迭代挑选候选</text>
+  </g>
+  <g stroke="#999999" stroke-width="1.5">
+    <line x1="195" y1="180" x2="1005" y2="180"/>
+    <line x1="195" y1="180" x2="195" y2="192"/>
+    <line x1="465" y1="180" x2="465" y2="192"/>
+    <line x1="735" y1="180" x2="735" y2="192"/>
+    <line x1="1005" y1="180" x2="1005" y2="192"/>
+  </g>
+  <text x="60" y="262" font-size="12" fill="#555555">每个数值输出记录来源工具与调用参数，可逐条回溯；编辑配置文件即可替换枚举引擎或表征后端</text>
+
+  <!-- ================= panel b ================= -->
+  <text x="60" y="330" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="330" font-size="15" fill="#1A1B1E">预测 IC50（nM，对数轴，条越短活性越高；均为 Boltz-2 计算预测，非实测）</text>
+
+  <!-- log axis: x = 200 + (log10(v)+2)*146.667 ; ticks 1,10,100,1000,10000 -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="200" y1="444" x2="1040" y2="444"/>
+    
+    <line x1="200" y1="496" x2="1040" y2="496"/>
   </g>
 
-  <!-- left: seed -> best slope pairs -->
-  <g>
-    <rect x="64" y="206" width="740" height="70" fill="#3D7EA6" opacity="0.07"/>
-    <rect x="64" y="294" width="740" height="70" fill="#B5442E" opacity="0.08"/>
-    <rect x="64" y="382" width="740" height="70" fill="#3D7EA6" opacity="0.07"/>
+  <!-- METTL3 seed 9.77 uM: log10(9770)=3.99 -> 200+5.99*146.667=1078.5 -->
+  <text x="188" y="392" font-size="12.5" fill="#1A1B1E" text-anchor="end">METTL3 起始化合物</text>
+  <rect x="200" y="380" width="878.5" height="16" fill="#999999"/>
+  <text x="300" y="374" font-size="12" fill="#555555">9.77 µM（预测；实验值约 7 µM）</text>
 
-    <text class="rl" x="268" y="240" text-anchor="end">CAMKK2 · logIC50</text>
-    <text class="b" x="268" y="258" text-anchor="end">种子 → 最佳观测</text>
-    <circle cx="330" cy="241" r="7" fill="#FFFFFF" stroke="#3D7EA6" stroke-width="3"/>
-    <line x1="330" y1="241" x2="436" y2="241" stroke="url(#gSky)" stroke-width="2.5"/>
-    <circle cx="436" cy="241" r="9" fill="url(#gSky)"/>
-    <text class="val" x="455" y="247" fill="#3D7EA6">-0.52 → -1.55</text>
-    <text class="b" x="600" y="246">改善 1.03 个 log 单位</text>
+  <!-- METTL3 top 102.33 nM: log10=2.01 -> 200+4.01*146.667=788.1 -->
+  <text x="188" y="424" font-size="12.5" fill="#1A1B1E" text-anchor="end">METTL3 头部类似物</text>
+  <rect x="200" y="412" width="588.1" height="16" fill="#D55E00"/>
+  <text x="796" y="406" font-size="12" fill="#1A1B1E">102.33 nM</text>
 
-    <text class="rl" x="268" y="328" text-anchor="end">METTL3 · 预测 IC50</text>
-    <text class="b" x="268" y="346" text-anchor="end">种子 → 头部类似物</text>
-    <circle cx="330" cy="329" r="7" fill="#FFFFFF" stroke="#B5442E" stroke-width="3"/>
-    <line x1="330" y1="329" x2="436" y2="329" stroke="url(#gClay)" stroke-width="3.5"/>
-    <circle cx="436" cy="329" r="10" fill="url(#gClay)"/>
-    <text class="val" x="455" y="335" fill="#B5442E" font-size="20">9.77 µM → 102.33 nM</text>
-    <text class="serif" x="672" y="336" font-size="24" font-weight="700" fill="#B5442E">约 95 倍</text>
+  <!-- BACE1 seed 58.88 uM: log10(58880)=4.77 -> 200+6.77*146.667=1192.9 (beyond axis end 1140, clipped) -->
+  <text x="188" y="472" font-size="12.5" fill="#1A1B1E" text-anchor="end">BACE1 种子分子</text>
+  <rect x="200" y="460" width="940" height="16" fill="#999999"/>
+  <polygon points="1132,460 1140,468 1132,476" fill="#999999"/>
+  <text x="1125" y="452" font-size="12" fill="#555555" text-anchor="end">58.88 µM（预测，轴外截断）</text>
 
-    <text class="rl" x="268" y="416" text-anchor="end">BACE1 · 预测亲和力</text>
-    <text class="b" x="268" y="434" text-anchor="end">种子 → 类似物</text>
-    <circle cx="330" cy="417" r="7" fill="#FFFFFF" stroke="#3D7EA6" stroke-width="3"/>
-    <line x1="330" y1="417" x2="436" y2="417" stroke="url(#gSky)" stroke-width="2.5"/>
-    <circle cx="436" cy="417" r="9" fill="url(#gSky)"/>
-    <text class="val" x="455" y="423" fill="#3D7EA6">58.88 µM → 370 nM</text>
+  <!-- BACE1 best 370 nM: log10=2.568 -> 200+4.568*146.667=870 -->
+  <text x="188" y="536" font-size="12.5" fill="#1A1B1E" text-anchor="end">BACE1 优化类似物</text>
+  <rect x="200" y="524" width="670" height="16" fill="#D55E00"/>
+  <text x="878" y="536" font-size="12" fill="#1A1B1E">370 nM（预测）</text>
+
+  <!-- value axis -->
+  <line x1="200" y1="560" x2="1140" y2="560" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="200" y1="560" x2="200" y2="564"/>
+    <line x1="346.7" y1="560" x2="346.7" y2="564"/>
+    <line x1="493.3" y1="560" x2="493.3" y2="564"/>
+    <line x1="640" y1="560" x2="640" y2="564"/>
+    <line x1="786.7" y1="560" x2="786.7" y2="564"/>
+    <line x1="933.3" y1="560" x2="933.3" y2="564"/>
+    <line x1="1080" y1="560" x2="1080" y2="564"/>
   </g>
-
-  <!-- right column: stats -->
-  <g>
-    <rect x="836" y="404" width="304" height="76" fill="#B9892F" opacity="0.09"/>
-    <text class="serif" x="856" y="436" font-size="22" font-weight="700" fill="#8A6620">省 10³–10⁶ 倍</text>
-    <text x="856" y="462" font-size="12.5" fill="#6B7078">Boltz-2 推理调用 · 相对穷举筛选</text>
-
-    <text class="rl" x="856" y="512">前 20 名候选 · 约 5 次迭代</text>
-    <text class="b" x="856" y="532">累积分布进入平台期（CAMKK2 单目标）</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="200" y="580">1</text>
+    <text x="346.7" y="580">10</text>
+    <text x="493.3" y="580">100</text>
+    <text x="640" y="580">10<tspan font-size="9" dy="-4">3</tspan></text>
+    <text x="786.7" y="580">10<tspan font-size="9" dy="-4">4</tspan></text>
+    <text x="933.3" y="580">10<tspan font-size="9" dy="-4">5</tspan></text>
+    <text x="1080" y="580">10<tspan font-size="9" dy="-4">6</tspan></text>
   </g>
+  <text x="670" y="602" font-size="14" fill="#1A1B1E" text-anchor="middle">预测 IC50（nM，对数刻度）</text>
 
-  <!-- bottom chips: four tools -->
-  <line x1="64" y1="486" x2="804" y2="486" stroke="#E8E3D2"/>
-  <g>
-    <rect x="64" y="506" width="130" height="28" rx="14" fill="url(#gLeaf)" opacity="0.18"/>
-    <text x="129" y="525" text-anchor="middle" class="chip" fill="#2F5E33">HEALER 枚举</text>
-    <rect x="206" y="506" width="130" height="28" rx="14" fill="url(#gSky)" opacity="0.2"/>
-    <text x="271" y="525" text-anchor="middle" class="chip" fill="#2F5F80">性质 / ADMET</text>
-    <rect x="348" y="506" width="130" height="28" rx="14" fill="url(#gPlum)" opacity="0.18"/>
-    <text x="413" y="525" text-anchor="middle" class="chip" fill="#5F3A6E">Boltz-2 打分</text>
-    <rect x="490" y="506" width="130" height="28" rx="14" fill="url(#gWheat)" opacity="0.24"/>
-    <text x="555" y="525" text-anchor="middle" class="chip" fill="#7A5A14">贝叶斯优化</text>
-    <text class="b" x="636" y="525">LLM 编排层路由四类工具</text>
-  </g>
-
-  <text class="serif" x="64" y="592" font-size="18" fill="#1A1B1E">九十五倍是温室里的预测值，不是量筒里的实测值。</text>
-  <text class="b" x="1136" y="618" text-anchor="end">全部为计算预测 · 头部候选未经湿实验验证 · 回顾性案例 · Micropaper</text>
+  <!-- footnote -->
+  <text x="60" y="630" font-size="11" fill="#767676">数据：arXiv:2608.11483v1（UNC Chapel Hill，SABLE）· 全部数值为 Boltz-2 计算预测，头部候选未经湿实验验证 · BACE1 种子条超出轴末端为绘图截断</text>
+  <text x="60" y="648" font-size="11" fill="#767676">优化未输入 SAR 轨迹或实验标签 · 预印本未经同行评审</text>
 </svg>

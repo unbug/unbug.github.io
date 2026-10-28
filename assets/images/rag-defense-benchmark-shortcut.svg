@@ -1,101 +1,131 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8E97A6; }
-      .rl { font-size: 15px; fill: #454E5C; }
-      .val { font-size: 16px; font-weight: 700; fill: #1E2430; }
-      .b { font-size: 12px; fill: #98A1AE; }
-      .chip { font-size: 11.5px; font-weight: 700; fill: #FFFFFF; letter-spacing: 2px; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F6FAF1"/>
-    </linearGradient>
-    <linearGradient id="gRed" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#F4762F"/><stop offset="1" stop-color="#E4376B"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1120" cy="600" r="150" fill="#6C3FC5" opacity="0.06"/>
-  <circle cx="80" cy="620" r="110" fill="#0FA3B1" opacity="0.06"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="#6C3FC5"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">删掉毒文的目标问题前缀后，RAGuard 的 AUROC 从 0.953 跌到 0.758、漏检率从 0.191 涨到 0.763</text>
 
-  <text class="k" x="64" y="84">一分钟读论文 NO.199 · ARXIV:2610.33849</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1E2430">排名还活着，决策已经死了</text>
-  <text x="64" y="158" font-size="15" fill="#5C6672">删掉毒文开头的目标问题前缀，内容一字未动</text>
+  <!-- ================= panel a ================= -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">删前缀前后：排名指标稳、决策指标崩（NQ，共享候选集）</text>
 
-  <!-- doc + scissors icon -->
-  <g>
-    <rect x="1010" y="66" width="86" height="104" rx="10" fill="#FFFFFF" stroke="#C9B8EE" stroke-width="2"/>
-    <rect x="1024" y="82" width="58" height="14" rx="7" fill="#F4762F" opacity="0.85"/>
-    <rect x="1024" y="106" width="58" height="8" rx="4" fill="#DCE8C8"/>
-    <rect x="1024" y="122" width="42" height="8" rx="4" fill="#DCE8C8"/>
-    <rect x="1024" y="138" width="50" height="8" rx="4" fill="#DCE8C8"/>
-    <circle cx="1122" cy="130" r="9" fill="none" stroke="#6C3FC5" stroke-width="4"/>
-    <circle cx="1122" cy="158" r="9" fill="none" stroke="#6C3FC5" stroke-width="4"/>
-    <line x1="1128" y1="123" x2="1160" y2="150" stroke="#6C3FC5" stroke-width="4" stroke-linecap="round"/>
-    <line x1="1128" y1="165" x2="1160" y2="138" stroke="#6C3FC5" stroke-width="4" stroke-linecap="round"/>
+  <!-- value axis for dumbbells: x = 320 + 620*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="320" y1="126" x2="320" y2="312"/>
+    <line x1="630" y1="126" x2="630" y2="312"/>
+    <line x1="940" y1="126" x2="940" y2="312"/>
   </g>
 
-  <rect x="170" y="244" width="970" height="44" rx="10" fill="#4460D9" opacity="0.07"/>
-  <rect x="170" y="309" width="970" height="44" rx="10" fill="#8FBF3F" opacity="0.07"/>
-  <rect x="170" y="374" width="970" height="44" rx="10" fill="#F4762F" opacity="0.07"/>
-  <rect x="170" y="439" width="970" height="44" rx="10" fill="#E4376B" opacity="0.07"/>
-  <rect x="170" y="504" width="970" height="44" rx="10" fill="#0FA3B1" opacity="0.07"/>
-  <!-- dumbbell axis 0..1 -> x=300..900 -->
-  <g stroke="#E2E8DC"><line x1="300" y1="222" x2="300" y2="546"/><line x1="600" y1="222" x2="600" y2="546"/><line x1="900" y1="222" x2="900" y2="546"/></g>
-  <text class="b" x="300" y="566">0</text>
-  <text class="b" x="600" y="566">0.5</text>
-  <text class="b" x="900" y="566">1.0</text>
-  <circle cx="212" cy="216" r="6" fill="#FFFFFF" stroke="#8E97A6" stroke-width="2.5"/><text class="b" x="226" y="221">捷径在场</text>
-  <circle cx="308" cy="216" r="6" fill="#1E2430"/><text class="b" x="322" y="221">删掉之后</text>
+  <!-- row labels -->
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="308" y="160">毒文检索率（NQ）</text>
+    <text x="308" y="212">RAGuard AUROC（NQ）</text>
+    <text x="308" y="264">RAGuard 漏检率（NQ）</text>
+    <text x="308" y="304">TrustRAG 集合级漏检率（医疗）</text>
+  </g>
 
-  <!-- r1 RAGuard AUROC indigo -->
-  <rect x="1064" y="252" width="64" height="22" rx="11" fill="#4460D9"/>
-  <text class="chip" x="1096" y="267" text-anchor="middle">排 名</text>
-  <text class="rl" x="276" y="271" text-anchor="end">RAGuard · AUROC</text>
-  <line x1="871.8" y1="266" x2="754.8" y2="266" stroke="#4460D9" stroke-width="3"/>
-  <circle cx="871.8" cy="266" r="7" fill="#FFFFFF" stroke="#4460D9" stroke-width="3"/>
-  <circle cx="754.8" cy="266" r="8" fill="#4460D9"/>
-  <text class="val" x="754.8" y="244" text-anchor="middle" fill="#4460D9">0.953 → 0.758</text>
+  <!-- dumbbells: hollow = 捷径在场, filled = 删掉之后 -->
+  <!-- 毒文检索率 0.93 -> 0.93 -->
+  <line x1="896.6" y1="152" x2="896.6" y2="152" stroke="#999999" stroke-width="2"/>
+  <circle cx="896.6" cy="152" r="5" fill="#FFFFFF" stroke="#999999" stroke-width="2"/>
+  <circle cx="896.6" cy="152" r="5" fill="#999999"/>
+  <text x="884" y="156" font-size="12" fill="#555555" text-anchor="end">保持 0.93</text>
 
-  <!-- r2 RAGuard miss amber -->
-  <rect x="1064" y="317" width="64" height="22" rx="11" fill="#8FBF3F"/>
-  <text class="chip" x="1096" y="332" text-anchor="middle">决 策</text>
-  <text class="rl" x="276" y="336" text-anchor="end">RAGuard · 漏检率</text>
-  <line x1="414.6" y1="331" x2="757.8" y2="331" stroke="#8FBF3F" stroke-width="3"/>
-  <circle cx="414.6" cy="331" r="7" fill="#FFFFFF" stroke="#8FBF3F" stroke-width="3"/>
-  <circle cx="757.8" cy="331" r="8" fill="#8FBF3F"/>
-  <text class="val" x="775" y="336">0.191 → 0.763</text>
+  <!-- RAGuard AUROC 0.953 -> 0.758 -->
+  <line x1="910.9" y1="204" x2="789.96" y2="204" stroke="#999999" stroke-width="2"/>
+  <circle cx="910.9" cy="204" r="5" fill="#FFFFFF" stroke="#999999" stroke-width="2"/>
+  <circle cx="789.96" cy="204" r="5" fill="#999999"/>
+  <text x="850" y="188" font-size="12" fill="#555555" text-anchor="middle">0.953 → 0.758</text>
 
-  <!-- r3 TrustRAG coral -->
-  <rect x="1064" y="382" width="64" height="22" rx="11" fill="#F4762F"/>
-  <text class="chip" x="1096" y="397" text-anchor="middle">决 策</text>
-  <text class="rl" x="276" y="401" text-anchor="end">TrustRAG · 漏检率</text>
-  <line x1="300" y1="396" x2="796.2" y2="396" stroke="#F4762F" stroke-width="3"/>
-  <circle cx="300" cy="396" r="7" fill="#FFFFFF" stroke="#F4762F" stroke-width="3"/>
-  <circle cx="796.2" cy="396" r="8" fill="#F4762F"/>
-  <text class="val" x="812" y="401">0.000 → 0.827</text>
+  <!-- RAGuard 漏检率 0.191 -> 0.763 -->
+  <line x1="438.42" y1="256" x2="793.06" y2="256" stroke="#999999" stroke-width="2"/>
+  <circle cx="438.42" cy="256" r="5" fill="#FFFFFF" stroke="#999999" stroke-width="2"/>
+  <circle cx="793.06" cy="256" r="5" fill="#D55E00"/>
+  <text x="793.06" y="242" font-size="12" fill="#555555" text-anchor="middle">0.191 → 0.763</text>
 
-  <!-- r4 scorer miss deep rose -->
-  <rect x="1064" y="447" width="64" height="22" rx="11" fill="#E4376B"/>
-  <text class="chip" x="1096" y="462" text-anchor="middle">决 策</text>
-  <text class="rl" x="276" y="466" text-anchor="end">本文打分器 · 漏检率</text>
-  <line x1="300" y1="461" x2="891.6" y2="461" stroke="url(#gRed)" stroke-width="4"/>
-  <circle cx="300" cy="461" r="7" fill="#FFFFFF" stroke="#E4376B" stroke-width="3"/>
-  <circle cx="891.6" cy="461" r="9" fill="url(#gRed)"/>
-  <text class="val" x="880" y="440" text-anchor="end" fill="#E4376B">0.000 → 0.986</text>
+  <!-- TrustRAG 漏检率 0.000 -> 0.827 -->
+  <line x1="320" y1="308" x2="832.74" y2="308" stroke="#999999" stroke-width="2"/>
+  <circle cx="320" cy="308" r="5" fill="#FFFFFF" stroke="#999999" stroke-width="2"/>
+  <circle cx="832.74" cy="308" r="5" fill="#D55E00"/>
+  <text x="320" y="352" font-size="12" fill="#555555">医疗毒文乱序词填充至干净文档长度，内容信息清零</text>
+  <text x="832.74" y="294" font-size="12" fill="#555555" text-anchor="middle">0.000 → 0.827</text>
 
-  <!-- r5 scorer AUROC flat sky -->
-  <rect x="1064" y="512" width="64" height="22" rx="11" fill="#0FA3B1"/>
-  <text class="chip" x="1096" y="527" text-anchor="middle">排 名</text>
-  <text class="rl" x="276" y="531" text-anchor="end">本文打分器 · AUROC</text>
-  <circle cx="871.8" cy="526" r="9" fill="none" stroke="#0FA3B1" stroke-width="3.5"/>
-  <circle cx="871.8" cy="526" r="3.5" fill="#0FA3B1"/>
-  <text class="val" x="852" y="510" text-anchor="end" fill="#0E8A96">0.953 原地不动</text>
+  <!-- dumbbell legend -->
+  <g font-size="12" fill="#555555">
+    <circle cx="326" cy="136" r="5" fill="#FFFFFF" stroke="#999999" stroke-width="2"/>
+    <text x="338" y="140">捷径在场（原基准构造）</text>
+    <circle cx="520" cy="136" r="5" fill="#999999"/>
+    <text x="512" y="140">删掉之后（橙 = 漏检上升，灰 = 其余变化）</text>
+  </g>
 
-  <line x1="64" y1="592" x2="1136" y2="592" stroke="#E2E8DC"/>
-  <text class="serif" x="64" y="628" font-size="18" fill="#1E2430">The ranking survives; the decision does not.</text>
-  <text class="b" x="1136" y="628" text-anchor="end">四库 × 十防御共享候选集 · 原文 we propose no defense · Micropaper</text>
+  <!-- value axis -->
+  <line x1="320" y1="380" x2="940" y2="380" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="320" y1="380" x2="320" y2="384"/>
+    <line x1="475" y1="380" x2="475" y2="384"/>
+    <line x1="630" y1="380" x2="630" y2="384"/>
+    <line x1="785" y1="380" x2="785" y2="384"/>
+    <line x1="940" y1="380" x2="940" y2="384"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="320" y="400">0</text>
+    <text x="475" y="400">0.25</text>
+    <text x="630" y="400">0.5</text>
+    <text x="785" y="400">0.75</text>
+    <text x="940" y="400">1</text>
+  </g>
+  <text x="630" y="422" font-size="14" fill="#1A1B1E" text-anchor="middle">指标值（AUROC 与漏检率，无量纲）</text>
+
+  <!-- ================= panel b ================= -->
+  <text x="60" y="478" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="478" font-size="15" fill="#1A1B1E">论文自述 survey（作者自建表 II 口径，非第三方独立审计）：21 个已发表防御评估的构造与报告问题（个）</text>
+
+  <!-- bars: x = 300 + 40*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="420" y1="492" x2="420" y2="604"/>
+    <line x1="540" y1="492" x2="540" y2="604"/>
+    <line x1="660" y1="492" x2="660" y2="604"/>
+    <line x1="780" y1="492" x2="780" y2="604"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="288" y="512">可验证在用含问题毒文构造</text>
+    <text x="288" y="552">换用长度或重复线索</text>
+    <text x="288" y="592">不报告部署阈值下的假阳率</text>
+  </g>
+  <rect x="300" y="500" width="320" height="18" fill="#D55E00"/>
+  <text x="630" y="513" font-size="12" fill="#555555">8 · 例：释放毒文 500 of 500 条含目标问题原文</text>
+  <rect x="300" y="540" width="200" height="18" fill="#0072B2"/>
+  <text x="510" y="553" font-size="12" fill="#555555">5 · 例：片段重复 2–10 次，或毒文 119–162 词对干净文档固定 100 词，数词数即可 AUROC 0.999</text>
+  <rect x="300" y="580" width="480" height="18" fill="#0072B2"/>
+  <text x="790" y="593" font-size="12" fill="#555555">12</text>
+
+  <!-- value axis -->
+  <line x1="300" y1="612" x2="780" y2="612" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="300" y1="612" x2="300" y2="616"/>
+    <line x1="420" y1="612" x2="420" y2="616"/>
+    <line x1="540" y1="612" x2="540" y2="616"/>
+    <line x1="660" y1="612" x2="660" y2="616"/>
+    <line x1="780" y1="612" x2="780" y2="616"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="300" y="632">0</text>
+    <text x="420" y="632">3</text>
+    <text x="540" y="632">6</text>
+    <text x="660" y="632">9</text>
+    <text x="780" y="632">12</text>
+  </g>
+  <text x="540" y="652" font-size="14" fill="#1A1B1E" text-anchor="middle">评估数量（个，共 21 个评估）</text>
+
+  <!-- footnote -->
+  <text x="700" y="176" font-size="12" fill="#555555">前缀本身还撑着检索——Contriever top-5</text>
+  <text x="700" y="194" font-size="12" fill="#555555">中含毒文档：有前缀时平均 4.79 条</text>
+  <text x="700" y="212" font-size="12" fill="#555555">（86 of 100 个查询五条全中），</text>
+  <text x="700" y="230" font-size="12" fill="#555555">删掉后只剩 2.40 条</text>
+  
+  <text x="700" y="280" font-size="12" fill="#555555">论文自测口径：学习打分器漏检</text>
+  <text x="700" y="298" font-size="12" fill="#555555">0.000 升至 0.986，对齐 5% 假阳</text>
+  <text x="700" y="316" font-size="12" fill="#555555">率后仍有 0.321；AUROC 停在</text>
+  <text x="700" y="334" font-size="12" fill="#555555">0.953 不动</text>
+
+  <text x="60" y="648" font-size="11" fill="#767676">数据：arXiv:2610.33849（2026-10-24 提交，4 语料库 × 4 攻击族 × 10 逐文档防御的共享候选集受控实验）· panel a 为 NQ 删前缀与医疗长度填充两个控制实验 · 论文自测口径，预印本未经同行评审</text>
 </svg>
