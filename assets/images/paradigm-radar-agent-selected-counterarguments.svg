@@ -1,39 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
-  <rect width="960" height="540" fill="#f4f7fb"/>
-  <text x="480" y="46" fill="#1e3a5f" font-size="26" text-anchor="middle" font-weight="bold">HN 火力地图：四条独立战线指向同一套基础设施</text>
-  <text x="480" y="76" fill="#6b7f96" font-size="16" text-anchor="middle">评论 id 可在 news.ycombinator.com 直接检索验证</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <!-- center -->
-  <rect x="380" y="255" width="200" height="90" rx="14" fill="#152740" stroke="#3d5f8a" stroke-width="2.5"/>
-  <text x="480" y="293" fill="#e8f1fc" font-size="19" text-anchor="middle" font-weight="bold">Agent 评价</text>
-  <text x="480" y="322" fill="#e8f1fc" font-size="19" text-anchor="middle" font-weight="bold">货架生态</text>
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">四条战线的批评均不否认 Agent 在替人装包，争的是该渠道的正当性与可信度</text>
 
-  <!-- four attack blocks -->
-  <g font-size="15">
-    <rect x="40" y="110" width="400" height="92" rx="12" fill="#ffffff" stroke="#a4553a" stroke-width="2"/>
-    <text x="60" y="140" fill="#8a4a24" font-weight="bold" font-size="17">道德线：正当性本身</text>
-    <text x="60" y="166" fill="#41627f">「把伤害开发者的 SEO 垃圾玩法搬进 Agent」</text>
-    <text x="60" y="190" fill="#93a7bc">评论 49558929 · 类比 49559950 / 49559860</text>
-    <path d="M 440 202 C 470 225 475 235 480 255" stroke="#a4553a" stroke-width="2" fill="none"/>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">道德线与技术线（指向同一套评价货架生态）</text>
 
-    <rect x="520" y="110" width="400" height="92" rx="12" fill="#ffffff" stroke="#a4553a" stroke-width="2"/>
-    <text x="540" y="140" fill="#8a4a24" font-weight="bold" font-size="17">技术线：注入面</text>
-    <text x="540" y="166" fill="#41627f">「Agent 写的公开评价进另一个 Agent 上下文，</text>
-    <text x="540" y="190" fill="#41627f">不是 prompt injection 工厂？」评论 49997827</text>
-    <path d="M 520 202 C 490 225 485 235 480 255" stroke="#a4553a" stroke-width="2" fill="none"/>
+  <g font-size="13" fill="#1A1B1E">
+    <text x="60" y="150" font-weight="bold">道德线：渠道化的正当性本身</text>
+    <text x="60" y="174" fill="#555">攻击点：Armature 卖的就是用增长手法影响模型选产品，等于把伤害</text>
+    <text x="60" y="194" fill="#555">开发者的 SEO 垃圾玩法搬进 Agent（评论 49558929）</text>
+    <text x="60" y="218" fill="#555">同调：当年 SEO 灾难也只是无害的学术测量，测量先于污染（评论 49559950）</text>
+    <text x="60" y="242" fill="#555">操纵路径已公开演示：刷链接加一条启动即读的 durable note（评论 49561488）</text>
+    <line x1="60" y1="262" x2="560" y2="262" stroke="#D55E00" stroke-width="1.5"/>
 
-    <rect x="40" y="380" width="400" height="92" rx="12" fill="#ffffff" stroke="#6a5a9c" stroke-width="2"/>
-    <text x="60" y="410" fill="#4a3d78" font-weight="bold" font-size="17">商业线：AdWords 化</text>
-    <text x="60" y="436" fill="#41627f">「下一步就是付费排名」49999510；</text>
-    <text x="60" y="460" fill="#41627f">「被找到 ≠ 最好的工具」50070994（10-13 发）</text>
-    <path d="M 440 378 C 470 355 475 345 480 345" stroke="#6a5a9c" stroke-width="2" fill="none"/>
+    <text x="60" y="294" font-weight="bold">技术线：公开评价的注入面</text>
+    <text x="60" y="318" fill="#555">Agent 写的公开评价进入另一个 Agent 的上下文，是否为 prompt</text>
+    <text x="60" y="338" fill="#555">injection 工厂（评论 49997827）；官方仅回复两个 skill 均可选，</text>
+    <text x="60" y="358" fill="#555">未正面回应注入面</text>
+    <line x1="60" y1="378" x2="560" y2="378" stroke="#D55E00" stroke-width="1.5"/>
 
-    <rect x="520" y="380" width="400" height="92" rx="12" fill="#ffffff" stroke="#6a5a9c" stroke-width="2"/>
-    <text x="540" y="410" fill="#4a3d78" font-weight="bold" font-size="17">数据线：评分通胀</text>
-    <text x="540" y="436" fill="#41627f">「cryptography 与 YAML 同分 4.6，是在按曲线</text>
-    <text x="540" y="460" fill="#41627f">打分」49998702 · 实测两页确实同分</text>
-    <path d="M 520 378 C 490 355 485 345 480 345" stroke="#6a5a9c" stroke-width="2" fill="none"/>
+    <text x="60" y="410" font-weight="bold">共同前提</text>
+    <text x="60" y="434" fill="#555">没有一条批评否认「Agent 在替人装包」这个事实</text>
   </g>
 
-  <text x="480" y="518" fill="#41627f" font-size="16" text-anchor="middle">共同点：没有一条否认「Agent 在替人装包」这个事实，争的是这条渠道该不该存在、可不可信。</text>
+  <!-- ============ panel b ============ -->
+  <text x="640" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="662" y="104" font-size="15" fill="#1A1B1E">商业线与数据线（数据线有可实测证据）</text>
+
+  <g font-size="13" fill="#1A1B1E">
+    <text x="640" y="150" font-weight="bold">商业线：AdWords 化</text>
+    <text x="640" y="174" fill="#555">一旦 Agent 把这里当参考，下一步就是付费排名（评论 49999510）</text>
+    <text x="640" y="198" fill="#555">be the tool X chooses 的实质是「让工具被找到」，不是「找到最好的工具」</text>
+    <text x="640" y="218" fill="#555">（评论 50070994，10-13 发）</text>
+    <line x1="640" y1="238" x2="1140" y2="238" stroke="#0072B2" stroke-width="1.5"/>
+
+    <text x="640" y="270" font-weight="bold">数据线：评分通胀、区分度存疑（评论 49998702）</text>
+    <text x="640" y="292" fill="#555">同为 4.6 分的两个页面（我方实测两页确实同分）</text>
+  </g>
+
+  <!-- evidence: two pages same 4.6, differing review counts -->
+  <text x="640" y="346" font-size="12.5" fill="#1A1B1E" text-anchor="end">cryptography</text>
+  <rect x="655" y="332" width="284" height="18" fill="#0072B2"/>
+  <text x="947" y="346" font-size="12" fill="#555">4.6 分 · 71 评</text>
+  <text x="640" y="384" font-size="12.5" fill="#1A1B1E" text-anchor="end">YAML</text>
+  <rect x="655" y="370" width="284" height="18" fill="#0072B2"/>
+  <text x="947" y="384" font-size="12" fill="#555">4.6 分 · 78 评</text>
+  <text x="655" y="414" font-size="12" fill="#555">疑点：Agent 可能在按曲线打分而非事实打分</text>
+
+  <text x="60" y="500" font-size="13" fill="#1A1B1E">归属：四条战线出自 Hacker News 评论区，评论 id 可在 news.ycombinator.com 检索验证</text>
+
+  <text x="60" y="560" font-size="11" fill="#767676">数据：HN 49557206 与 49995539 评论区 · cryptography 71 评 / YAML 78 评为我方 2026-10-14 页面实测 · Armature 自述免责声明：Armature sells growth services to dev tools</text>
 </svg>

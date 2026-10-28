@@ -1,49 +1,102 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" font-family="Helvetica, Arial, sans-serif">
-  <rect width="1200" height="560" fill="#ffffff"/>
-  <text x="60" y="52" fill="#1a2438" font-size="28" font-weight="bold">两条波：事件在前，供给在后，正在合流</text>
-  <text x="60" y="84" fill="#6b7a95" font-size="18">事件分数为 HN 实测（2026-10-16）；仓库星数为 GitHub API 实测</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <!-- event wave bars -->
-  <g>
-    <text x="60" y="130" fill="#c0512f" font-size="20" font-weight="bold">事件波（rogue agent 事件周，据报道）</text>
-    <g font-size="16" fill="#1a2438">
-      <rect x="60" y="150" width="614" height="30" fill="#e8663c" opacity="0.9"/>
-      <text x="60" y="170" fill="#ffffff">Wikimedia rogue agent · 10-05 · 307 分</text>
-      <rect x="60" y="190" width="168" height="30" fill="#e8663c" opacity="0.75"/>
-      <text x="66" y="210" fill="#ffffff">Codex 越权消费 7.8 万美元 · 09-26 · 84</text>
-      <rect x="60" y="230" width="126" height="30" fill="#e8663c" opacity="0.65"/>
-      <text x="66" y="250" fill="#ffffff">OpenAI 暂停训练 · 09-27 · 59</text>
-      <rect x="60" y="270" width="120" height="30" fill="#e8663c" opacity="0.55"/>
-      <text x="66" y="290" fill="#ffffff">沙箱够不够 · 10-01 · 56</text>
-      <rect x="60" y="310" width="114" height="30" fill="#e8663c" opacity="0.5"/>
-      <text x="66" y="330" fill="#ffffff">波及 10+ 站点 · 09-09 · 53</text>
-      <rect x="60" y="350" width="30" height="30" fill="#e8663c" opacity="0.4"/>
-      <text x="98" y="370">加州传票 · 10-01 · 14</text>
-    </g>
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">事件帖最高 307 分，同期取证产品帖最高 37 分、标准帖仅 2 分</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">事件与控制讨论帖得分（按发帖日期序位，2026-09 至 10）</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="300" y1="128" x2="300" y2="386"/>
+    
+    <line x1="600" y1="128" x2="600" y2="386"/>
+    <line x1="750" y1="128" x2="750" y2="386"/>
   </g>
-
-  <!-- supply wave bars -->
-  <g>
-    <text x="680" y="130" fill="#1f7a5e" font-size="20" font-weight="bold">供给波（6-10 月，12 家独立仓库）</text>
-    <g font-size="16" fill="#1a2438">
-      <rect x="680" y="150" width="440" height="28" fill="#37d0a3" opacity="0.9"/>
-      <text x="686" y="169" fill="#08312a">shepherd · 06-24 · 2,483 星</text>
-      <rect x="680" y="184" width="359" height="28" fill="#37d0a3" opacity="0.8"/>
-      <text x="686" y="203" fill="#08312a">llm-space · 06-28 · 2,024</text>
-      <rect x="680" y="218" width="259" height="28" fill="#37d0a3" opacity="0.72"/>
-      <text x="686" y="237" fill="#08312a">superlog · 06-02 · 1,463</text>
-      <rect x="680" y="252" width="243" height="28" fill="#37d0a3" opacity="0.66"/>
-      <text x="686" y="271" fill="#08312a">mindwalk · 07-09 · 1,373</text>
-      <rect x="680" y="286" width="176" height="28" fill="#37d0a3" opacity="0.58"/>
-      <text x="686" y="305" fill="#08312a">homerail · 07-07 · 992</text>
-      <rect x="680" y="320" width="160" height="28" fill="#37d0a3" opacity="0.52"/>
-      <text x="686" y="339" fill="#08312a">agenttrail · 08-21 · 901</text>
-      <rect x="680" y="354" width="136" height="28" fill="#37d0a3" opacity="0.46"/>
-      <text x="686" y="373" fill="#08312a">agentacct · 07-24 · 766</text>
-    </g>
+  <!-- bars: x = 300 + 1.5*v, row y centers 149..377 -->
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="288" y="153">波及 10+ 站点 · 09-09</text>
+    <text x="288" y="191">Codex 越权消费 · 09-26</text>
+    <text x="288" y="229">OpenAI 暂停训练 · 09-27</text>
+    <text x="288" y="267">沙箱与加州传票 · 10-01</text>
+    <text x="288" y="305">Wikimedia rogue agent · 10-05</text>
+    <text x="288" y="343">个人 agent 泄银行信息 · 10-10</text>
   </g>
+  <g fill="#D55E00">
+    <rect x="300" y="139" width="79.5" height="18"/>
+    <rect x="300" y="177" width="126" height="18"/>
+    <rect x="300" y="215" width="88.5" height="18"/>
+    <rect x="300" y="253" width="84" height="18"/>
+    <rect x="300" y="291" width="460.5" height="18"/>
+    <rect x="300" y="329" width="94.5" height="18"/>
+  </g>
+  <g font-size="12" fill="#555">
+    <text x="387" y="153">53（HN 49629242）</text>
+    <text x="434" y="191">84（HN 49861047）· 未授权消费 7.8 万美元</text>
+    <text x="396" y="229">59（HN 49868202）</text>
+    <text x="392" y="267">56（HN 49917378）/ 14（HN 49928099）</text>
+    <text x="768" y="305">307（HN 49968105）</text>
+    <text x="402" y="343">63（HN 50033517）</text>
+  </g>
+  <line x1="300" y1="386" x2="750" y2="386" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="300" y1="386" x2="300" y2="390"/>
+    <line x1="600" y1="386" x2="600" y2="390"/>
+    <line x1="750" y1="386" x2="750" y2="390"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="300" y="406">0</text>
+    <text x="600" y="406">200</text>
+    <text x="750" y="406">307</text>
+  </g>
+  <text x="525" y="430" font-size="14" fill="#1A1B1E" text-anchor="middle">Hacker News 得分（分）</text>
+  <text x="60" y="456" font-size="12" fill="#555">10-01 为两帖并列：沙箱讨论 56 分与加州调查传票 14 分（正文口径）</text>
 
-  <line x1="60" y1="430" x2="1140" y2="430" stroke="#d5dbe6" stroke-width="2"/>
-  <text x="60" y="472" fill="#6b7a95" font-size="18">产品帖一侧同期普遍低于 50 分（Halo 37、Consus 36、Docket 19）；「agent replay」月度 story 量 31-47，平台期无爆发斜率。</text>
-  <text x="60" y="504" fill="#1a2438" font-size="18" font-weight="bold">结论口径：事件波 + 供给波成立，付费 SaaS 证据弱 —— 基础设施在铺的早期形态。</text>
+  <!-- ============ panel b ============ -->
+  <text x="850" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="872" y="104" font-size="15" fill="#1A1B1E">规范与产品帖得分（分）</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="920" y1="176" x2="1120" y2="176"/>
+    
+    <line x1="920" y1="316" x2="1120" y2="316"/>
+    <line x1="920" y1="386" x2="1120" y2="386"/>
+  </g>
+  <!-- bars: y = 386 - 2.8*v -->
+  <g fill="#999999">
+    <rect x="930" y="367" width="36" height="19"/>
+    <rect x="986" y="284.4" width="36" height="101.6"/>
+    <rect x="1042" y="285.8" width="36" height="100.2"/>
+  </g>
+  <rect x="1098" y="280.2" width="36" height="105.8" fill="#0072B2"/>
+  <g font-size="12" fill="#555" text-anchor="middle">
+    <text x="948" y="359">2</text>
+    <text x="1004" y="276">37</text>
+    <text x="1060" y="278">36</text>
+    <text x="1116" y="272">160</text>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="948" y="404">OWASP</text>
+    <text x="948" y="420">AOS 标准</text>
+    <text x="1004" y="404">Halo</text>
+    <text x="1060" y="404">Consus</text>
+    <text x="1116" y="404">Agent37</text>
+  </g>
+  <line x1="920" y1="386" x2="1120" y2="386" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="920" y1="386" x2="916" y2="386"/>
+    <line x1="920" y1="316" x2="916" y2="316"/>
+    <line x1="920" y1="176" x2="916" y2="176"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="910" y="390">0</text>
+    <text x="910" y="320">50</text>
+    <text x="910" y="180">160</text>
+  </g>
+  <text x="850" y="140" font-size="14" fill="#1A1B1E">HN 得分（分）</text>
+  <text x="850" y="456" font-size="12" fill="#555">Docket 19 分；Anthropic 官方 observability 文章 2 分；</text>
+  <text x="850" y="474" font-size="12" fill="#555">Agent37 为沙箱产品，非取证工具</text>
+
+  <!-- footnote -->
+  <text x="60" y="560" font-size="11" fill="#767676">数据：hn.algolia.com 实测 2026-10-16 · 面板 a 横轴为发帖序位（09-09 至 10-10，非等距日期轴）· 星数与热度不等于收入 · 同期「agent replay」月度 story 量 31 到 47，平台期无爆发斜率</text>
 </svg>

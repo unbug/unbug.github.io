@@ -1,45 +1,82 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
-  <rect width="960" height="540" fill="#f4f7fb"/>
-  <text x="480" y="46" fill="#1e3a5f" font-size="26" text-anchor="middle" font-weight="bold">测量机制：同一批任务，三个 Agent，三条信息源</text>
-  <text x="480" y="76" fill="#6b7f96" font-size="16" text-anchor="middle">Armature 自述方法：1,163 个 prompt 变体 × 75 个仓库 × 4 类人格，16,893 会话收敛为 5,292 有效样本</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <!-- input -->
-  <rect x="40" y="200" width="170" height="120" rx="12" fill="#ffffff" stroke="#3d5f8a" stroke-width="2"/>
-  <text x="125" y="245" fill="#1e3a5f" font-size="19" text-anchor="middle" font-weight="bold">prompt 变体</text>
-  <text x="125" y="275" fill="#6b7f96" font-size="15" text-anchor="middle">+ 51 个代码库</text>
-  <text x="125" y="300" fill="#6b7f96" font-size="15" text-anchor="middle">4 类开发者人格</text>
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">三个 Agent 在同一场景下选中同一工具的比例仅 42%，信息源结构各不相同</text>
 
-  <!-- agents -->
-  <g>
-    <rect x="300" y="110" width="220" height="88" rx="12" fill="#e8f1fc" stroke="#2f6fb2" stroke-width="2"/>
-    <text x="410" y="145" fill="#1e3a5f" font-size="19" text-anchor="middle" font-weight="bold">Claude Code</text>
-    <text x="410" y="175" fill="#41627f" font-size="15" text-anchor="middle">约 30% 搜索，主要靠参数记忆</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">测量规模：从输入配置到有效样本</text>
 
-    <rect x="300" y="216" width="220" height="88" rx="12" fill="#e8f1fc" stroke="#2f6fb2" stroke-width="2"/>
-    <text x="410" y="251" fill="#1e3a5f" font-size="19" text-anchor="middle" font-weight="bold">Codex</text>
-    <text x="410" y="281" fill="#41627f" font-size="15" text-anchor="middle">94% 会话搜索，9/10 用 site: 限定</text>
-
-    <rect x="300" y="322" width="220" height="88" rx="12" fill="#e8f1fc" stroke="#2f6fb2" stroke-width="2"/>
-    <text x="410" y="357" fill="#1e3a5f" font-size="19" text-anchor="middle" font-weight="bold">Cursor</text>
-    <text x="410" y="387" fill="#41627f" font-size="15" text-anchor="middle">约 2/3 会话靠网络搜索决策</text>
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    
+    
+    <line x1="300" y1="128" x2="300" y2="356" stroke="#1A1B1E" stroke-width="0.75"/>
   </g>
-  <g stroke="#8aa5c2" stroke-width="2" fill="none">
-    <path d="M 210 240 C 255 220 260 160 300 154"/>
-    <path d="M 210 260 L 300 260"/>
-    <path d="M 210 282 C 255 300 260 355 300 362"/>
+  <!-- bars: x = 300 + 0.02*v -->
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="288" y="149">测量会话</text>
+    <text x="288" y="187">有效样本</text>
+    <text x="288" y="225">prompt 变体</text>
+    <text x="288" y="263">代码库</text>
+    <text x="288" y="301">仓库</text>
+    <text x="288" y="339">行业类目</text>
+  </g>
+  <rect x="300" y="135" width="405.43" height="18" fill="#0072B2"/>
+  <rect x="300" y="173" width="127.01" height="18" fill="#0072B2"/>
+  <rect x="300" y="211" width="27.91" height="18" fill="#999999"/>
+  <rect x="300" y="249" width="1.22" height="18" fill="#999999"/>
+  <rect x="300" y="287" width="1.5" height="18" fill="#999999"/>
+  <rect x="300" y="325" width="1.5" height="18" fill="#999999"/>
+  <g font-size="12" fill="#555">
+    <text x="714" y="149">16,893 · E2B、Blaxel、Daytona 沙箱轮换</text>
+    <text x="435" y="187">5,292 · 收敛后的有效样本</text>
+    <text x="335" y="225">1,163 · 4 类开发者人格</text>
+    <text x="309" y="263">51</text>
+    <text x="309" y="301">75</text>
+    <text x="309" y="339">18</text>
+  </g>
+  <line x1="300" y1="356" x2="300" y2="356" stroke="#1A1B1E" stroke-width="0"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="300" y1="356" x2="300" y2="360"/>
+    <line x1="780" y1="356" x2="780" y2="360"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="300" y="376">0</text>
+  </g>
+  <text x="540" y="384" font-size="14" fill="#1A1B1E" text-anchor="middle">条形自 0 基线起按会话数等比绘制，数值直标于条旁（单位：个）</text>
+  <text x="60" y="428" font-size="12" fill="#555">「模拟人类」与裁判均为 Gemini 3.7 Flash · 蓝 = 会话与样本，灰 = 输入侧配置</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="60" y="480" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="480" font-size="15" fill="#1A1B1E">按 Agent 的结果（%）</text>
+
+  <!-- bars: x = 200 + 3.2*v -->
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="188" y="517">同场景选同一工具</text>
+    <text x="188" y="545">Claude Code 自建方案率</text>
+    <text x="188" y="573">Codex / Cursor 自建方案率</text>
+    <text x="188" y="601">Claude Code 搜索会话（沙箱类新领域约 80）</text>
+  </g>
+  <rect x="200" y="503" width="134.4" height="16" fill="#D55E00"/>
+  <rect x="200" y="531" width="60.8" height="16" fill="#0072B2"/>
+  <rect x="200" y="559" width="32" height="16" fill="#0072B2"/>
+  <rect x="200" y="587" width="96" height="16" fill="#0072B2"/>
+  <g font-size="12" fill="#555">
+    <text x="342" y="517">42</text>
+    <text x="268" y="545">19 · 约为另两家两倍</text>
+    <text x="240" y="573">10</text>
+    <text x="304" y="601">约 30</text>
+  </g>
+  <line x1="200" y1="620" x2="520" y2="620" stroke="#1A1B1E" stroke-width="0.75"/>
+  <text x="200" y="644" font-size="12" fill="#555">条形自 0 基线起按百分比等比绘制，数值直标于条旁（单位：%）</text>
+
+  <text x="640" y="500" font-size="12.5" fill="#1A1B1E" font-weight="bold">信息源结构（文字口径，未上图）</text>
+  <g font-size="12" fill="#555">
+    <text x="640" y="524">Cursor：约 2/3 会话靠网络搜索决策</text>
+    <text x="640" y="544">Codex：94% 会话搜索，9/10 用 site: 限定域名</text>
+    <text x="640" y="564">Claude Code：主要靠参数记忆，仅约 30% 搜索，</text>
+    <text x="640" y="584">训练语料稀疏的新领域升到约 80%</text>
   </g>
 
-  <!-- outcome -->
-  <rect x="620" y="180" width="300" height="160" rx="14" fill="#ffffff" stroke="#c96b3c" stroke-width="2.5"/>
-  <text x="770" y="222" fill="#8a4a24" font-size="20" text-anchor="middle" font-weight="bold">同场景选同一工具</text>
-  <text x="770" y="278" fill="#c96b3c" font-size="44" text-anchor="middle" font-weight="bold">42%</text>
-  <text x="770" y="315" fill="#6b7f96" font-size="15" text-anchor="middle">Claude Code 自建率 19%，约为另两家两倍</text>
-  <g stroke="#8aa5c2" stroke-width="2" fill="none">
-    <path d="M 520 154 C 575 160 575 220 620 230"/>
-    <path d="M 520 260 L 620 260"/>
-    <path d="M 520 366 C 575 360 575 300 620 290"/>
-  </g>
-
-  <text x="480" y="470" fill="#41627f" font-size="16" text-anchor="middle">沙箱：E2B / Blaxel / Daytona 轮换；模拟人类与裁判均为 Gemini 3.7 Flash（厂商自述，trace 据称全量公开）</text>
-  <text x="480" y="502" fill="#93a7bc" font-size="14" text-anchor="middle">数据来源：armature.tech 测量研究，2026-09-03；数字未经独立第三方复现</text>
+  <text x="60" y="660" font-size="11" fill="#767676">数据：Armature 16,893 会话测量（2026-09-03 发布，HN 49557206 实测 300 分）· 全部数字为厂商自述口径 · 原始 trace 据称公开于 leaderboards.armature.tech · 未经独立第三方复现</text>
 </svg>

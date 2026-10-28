@@ -1,45 +1,82 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
-  <rect width="960" height="520" fill="#f4f7fb"/>
-  <text x="480" y="44" fill="#1e3a5f" font-size="25" text-anchor="middle" font-weight="bold">双版本通道分叉：包管理器与 daemon 更新器对同一后端各自演化</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <!-- you -->
-  <rect x="400" y="86" width="160" height="66" rx="12" fill="#ffffff" stroke="#2f6fb2" stroke-width="2.5"/>
-  <text x="480" y="115" fill="#1e3a5f" font-size="16" text-anchor="middle" font-weight="bold">你</text>
-  <text x="480" y="138" fill="#41627f" font-size="13" text-anchor="middle">想要：一个确定的后端</text>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">同一后端的两条版本通道各自演化，#46468 记录两通道元数据不再一致</text>
 
-  <!-- channel A: package manager -->
-  <g font-size="14">
-    <rect x="80" y="210" width="330" height="190" rx="14" fill="#ffffff" stroke="#2f6fb2" stroke-width="2.5"/>
-    <text x="245" y="244" fill="#1e3a5f" font-size="17" text-anchor="middle" font-weight="bold">通道 A：包管理器</text>
-    <rect x="102" y="262" width="286" height="36" rx="8" fill="#eaf2fb"/>
-    <text x="245" y="285" fill="#1e3a5f" text-anchor="middle" font-family="Menlo, monospace" font-size="13">npm update  → 0.163.0</text>
-    <rect x="102" y="306" width="286" height="36" rx="8" fill="#eaf2fb"/>
-    <text x="245" y="329" fill="#1e3a5f" text-anchor="middle">CLI 壳升到新版</text>
-    <rect x="102" y="350" width="286" height="36" rx="8" fill="#fff6f2" stroke="#a4553a" stroke-width="1.6"/>
-    <text x="245" y="373" fill="#8a4a24" text-anchor="middle">app-server 停在旧版</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">两条通道对同一后端的控制范围（定性对照，非数值轴）</text>
+
+  <!-- table frame: only header underline + row separators light -->
+  <line x1="60" y1="150" x2="1140" y2="150" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g font-size="13" font-weight="bold" fill="#1A1B1E">
+    <text x="60" y="140">对照项</text>
+    <text x="330" y="140">通道 A：包管理器</text>
+    <text x="730" y="140">通道 B：daemon 更新器</text>
   </g>
-
-  <!-- channel B: daemon updater -->
-  <g font-size="14">
-    <rect x="550" y="210" width="330" height="190" rx="14" fill="#ffffff" stroke="#c96b3c" stroke-width="2.5"/>
-    <text x="715" y="244" fill="#8a4a24" font-size="17" text-anchor="middle" font-weight="bold">通道 B：daemon 更新器</text>
-    <rect x="572" y="262" width="286" height="36" rx="8" fill="#fdf3ec"/>
-    <text x="715" y="285" fill="#8a4a24" text-anchor="middle" font-family="Menlo, monospace" font-size="13">pid-update-loop 每 1h</text>
-    <rect x="572" y="306" width="286" height="36" rx="8" fill="#fdf3ec"/>
-    <text x="715" y="329" fill="#8a4a24" text-anchor="middle">自决版本写入 releases/</text>
-    <rect x="572" y="350" width="286" height="36" rx="8" fill="#fff6f2" stroke="#a4553a" stroke-width="1.6"/>
-    <text x="715" y="373" fill="#8a4a24" text-anchor="middle">拒绝按你预期路径恢复</text>
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="60" y1="170" x2="1140" y2="170"/>
+    <line x1="60" y1="216" x2="1140" y2="216"/>
+    <line x1="60" y1="262" x2="1140" y2="262"/>
   </g>
+  <g font-size="12.5" fill="#555555">
+    <text x="60" y="194">驱动方式</text>
+    <text x="330" y="194">npm update，用户手动触发</text>
+    <text x="730" y="194">pid-update-loop，启动 5 分钟后首查，此后每小时一次</text>
+  </g>
+  <g font-size="12.5" fill="#555555">
+    <text x="60" y="240">作用对象</text>
+    <text x="330" y="240">CLI 壳，升到新版（latest 0.163.0，10-15 转正）</text>
+    <text x="730" y="240">实际后端，自决版本写入 ~/.codex/packages 的 releases 目录</text>
+  </g>
+  <g font-size="12.5">
+    <text x="60" y="286" fill="#555555">分叉实证</text>
+    <text x="330" y="286" fill="#D55E00">#46468：npm update 后 app-server 停在旧版，daemon 恢复又拒绝走预期路径</text>
+    <text x="730" y="286" fill="#D55E00">#48050：Arch 打包需显式加 --no-daemon 才能启动</text>
+  </g>
+  <text x="60" y="326" font-size="12" fill="#555555">后果：包管理器认为装了 A，更新器认为跑了 B；两条通道各自属实，合在一起没人知道真相</text>
 
-  <path d="M 420 152 C 330 175 280 185 250 210" stroke="#2f6fb2" stroke-width="2.5" fill="none"/>
-  <path d="M 540 152 C 630 175 680 185 710 210" stroke="#c96b3c" stroke-width="2.5" fill="none"/>
+  <!-- ============ panel b ============ -->
+  <text x="60" y="382" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="382" font-size="15" fill="#1A1B1E">更新循环与发版节奏对照（npm registry API 实测 2026-10-16）</text>
 
-  <!-- both claim truth -->
-  <rect x="290" y="430" width="380" height="60" rx="12" fill="#16324f"/>
-  <text x="480" y="456" fill="#cfe3ff" font-size="15" text-anchor="middle" font-weight="bold">两边元数据都不撒谎，合在一起没人知道真相</text>
-  <text x="480" y="478" fill="#8fb4dd" font-size="13" text-anchor="middle">#46468：npm update 后恢复失败 · #48050：Arch 需 --no-daemon</text>
-  <path d="M 245 400 C 300 420 350 428 400 434" stroke="#a4553a" stroke-width="2" fill="none"/>
-  <path d="M 715 400 C 660 420 610 428 560 434" stroke="#a4553a" stroke-width="2" fill="none"/>
+  <!-- bars: value axis 0-20+ per day; 1 unit = 42px; x0=300 -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="510" y1="410" x2="510" y2="540"/>
+    <line x1="720" y1="410" x2="720" y2="540"/>
+    <line x1="930" y1="410" x2="930" y2="540"/>
+    <line x1="1140" y1="410" x2="1140" y2="540"/>
+  </g>
+  <!-- bar 1: updater 24 checks/day -->
+  <text x="288" y="444" font-size="12.5" fill="#1A1B1E" text-anchor="end">更新器检查</text>
+  <rect x="300" y="430" width="1008" height="18" fill="#D55E00"/>
+  <text x="1112" y="424" font-size="12" fill="#555555" text-anchor="end">每小时一次 = 24 次/天（24 h ÷ 1 h）</text>
+  <!-- bar 2: releases 11 alphas in 8 days -->
+  <text x="288" y="492" font-size="12.5" fill="#1A1B1E" text-anchor="end">发版流</text>
+  <rect x="300" y="478" width="37" height="18" fill="#0072B2"/>
+  <text x="347" y="492" font-size="12" fill="#555555">≈ 1 版/天（alpha 连发 11 版 ÷ 12 天，10-04 至 10-15 含首尾，分母为自估口径）</text>
 
-  <text x="480" y="510" fill="#6b7f96" font-size="13" text-anchor="middle">发版节奏对照（npm registry API 2026-10-16 实测）：latest 0.163.0（10-15）/ 0.163.0 alpha 连发 11 版，小时级循环对日更级发版流。</text>
+  <!-- value axis -->
+  <line x1="300" y1="540" x2="1140" y2="540" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="300" y1="540" x2="300" y2="544"/>
+    <line x1="510" y1="540" x2="510" y2="544"/>
+    <line x1="720" y1="540" x2="720" y2="544"/>
+    <line x1="930" y1="540" x2="930" y2="544"/>
+    <line x1="1140" y1="540" x2="1140" y2="544"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="300" y="560">0</text>
+    <text x="510" y="560">5</text>
+    <text x="720" y="560">10</text>
+    <text x="930" y="560">15</text>
+    <text x="1140" y="560">20</text>
+  </g>
+  <text x="720" y="586" font-size="14" fill="#1A1B1E" text-anchor="middle">事件频率（次或版 / 天）</text>
+
+  <text x="60" y="616" font-size="12" fill="#555555">比值：24 次/天 对 ≈ 1 版/天——小时级检查循环对着日更级发版流</text>
+
+  <!-- footnote -->
+  <text x="60" y="652" font-size="11" fill="#767676">来源：openai/codex #46468、#48050、0.157.0/0.163.0 Releases 与 npm registry API，2026-10-16 实测 · 发版流频率按正文口径推导：10-08 起 alpha 连发 11 版、10-15 转正 latest，分母 12 天为自估口径，仅用于数量级比较 · 对照项为定性判断，非厂商口径</text>
 </svg>

@@ -1,73 +1,68 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
   <rect width="1200" height="675" fill="#FFFFFF"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">0.157.0 版起，版本、进程、配置三项控制权的默认归属从用户转向守护进程</text>
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">0.157.0 版起，版本、进程、配置三项默认控制权均转归守护进程一侧</text>
 
   <!-- ============ panel a ============ -->
   <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">三项主权的默认归属：打开一次交互式 codex 会话之后</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">三项主权的默认归属（定性对照，非数值轴）</text>
 
-  <!-- rows: y=165, 250, 335 -->
-  <text x="228" y="170" font-size="13" fill="#1A1B1E" font-weight="bold" text-anchor="end">版本主权</text>
-  <line x1="260" y1="165" x2="760" y2="165" stroke="#999999" stroke-width="1.5"/>
-  <circle cx="260" cy="165" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="2"/>
-  <circle cx="760" cy="165" r="6" fill="#D55E00"/>
-  <text x="776" y="161" font-size="12" fill="#555">pid-update-loop 每小时自更新；</text>
-  <text x="776" y="177" font-size="12" fill="#555">npm update 只升 CLI 壳</text>
-  <text x="260" y="189" font-size="12" fill="#555">此前：用户所装二进制即所跑二进制</text>
+  <g stroke="#999999" stroke-width="1.5">
+    <line x1="230" y1="150" x2="640" y2="150"/>
+    <line x1="230" y1="235" x2="640" y2="235"/>
+    <line x1="230" y1="320" x2="640" y2="320"/>
+  </g>
+  <circle cx="230" cy="150" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="2"/>
+  <circle cx="640" cy="150" r="6" fill="#D55E00"/>
+  <circle cx="230" cy="235" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="2"/>
+  <circle cx="640" cy="235" r="6" fill="#D55E00"/>
+  <circle cx="230" cy="320" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="2"/>
+  <circle cx="640" cy="320" r="6" fill="#D55E00"/>
 
-  <text x="228" y="255" font-size="13" fill="#1A1B1E" font-weight="bold" text-anchor="end">进程主权</text>
-  <line x1="260" y1="250" x2="760" y2="250" stroke="#999999" stroke-width="1.5"/>
-  <circle cx="260" cy="250" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="2"/>
-  <circle cx="760" cy="250" r="6" fill="#D55E00"/>
-  <text x="776" y="246" font-size="12" fill="#555">reparent 到 PID 1，关窗不退出；</text>
-  <text x="776" y="262" font-size="12" fill="#555">在跑任务仅 60 秒 drain，超时 SIGKILL</text>
-  <text x="260" y="274" font-size="12" fill="#555">此前：会话结束即进程结束</text>
-
-  <text x="228" y="340" font-size="13" fill="#1A1B1E" font-weight="bold" text-anchor="end">配置主权</text>
-  <line x1="260" y1="335" x2="760" y2="335" stroke="#999999" stroke-width="1.5"/>
-  <circle cx="260" cy="335" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="2"/>
-  <circle cx="760" cy="335" r="6" fill="#D55E00"/>
-  <text x="776" y="331" font-size="12" fill="#555">daemon 钉住首会话环境变量</text>
-  <text x="776" y="347" font-size="12" fill="#555">（作者首会话带 HTTPS_PROXY）</text>
-  <text x="260" y="359" font-size="12" fill="#555">此前：各会话环境相互独立</text>
-
-  <text x="260" y="404" font-size="12" fill="#555">空心圆 = 0.157.0 版之前的默认归属（用户）；实心圆 = 当前默认归属（守护进程）；位置为定性判断，非数值轴</text>
-
-  <!-- ============ panel b ============ -->
-  <text x="60" y="452" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="82" y="452" font-size="15" fill="#1A1B1E">会话之后机器上多出的四项（用户侧 issue 复现口径）</text>
-
-  <g font-size="12.5" fill="#1A1B1E">
-    <text x="60" y="486">常驻守护进程</text>
-    <text x="205" y="486" font-size="12" fill="#555">独立会话、无 TTY，reparent 到 PID 1，直到 daemon stop 或重启</text>
-
-    <text x="60" y="516">平台包副本</text>
-    <text x="205" y="516" font-size="12" fill="#555">374 MB，整体复制进 ~/.codex/packages 并从副本运行，包管理器自此与后端脱钩</text>
-
-    <text x="60" y="546">分离式更新器</text>
-    <text x="205" y="546" font-size="12" fill="#555">pid-update-loop：启动 5 分钟后首查，此后每小时一次</text>
-
-    <text x="60" y="576">被固定的环境</text>
-    <text x="205" y="576" font-size="12" fill="#555">首会话环境变量钉住此后所有会话的出站流量，关联 #42457</text>
+  <g font-size="13" font-weight="bold" fill="#1A1B1E" text-anchor="end">
+    <text x="214" y="155">版本主权</text>
+    <text x="214" y="240">进程主权</text>
+    <text x="214" y="325">配置主权</text>
+  </g>
+  <g font-size="12.5" fill="#555555">
+    <text x="230" y="130">此前：用户所装二进制即所跑二进制</text>
+    <text x="230" y="215">此前：会话结束即进程结束</text>
+    <text x="230" y="300">此前：各会话环境相互独立</text>
+  </g>
+  <g font-size="12" fill="#555555">
+    <text x="656" y="140">pid-update-loop 每小时自更新；npm update 只升 CLI 壳</text>
+    <text x="656" y="158">374 MB 复制包成为实际后端</text>
+    <text x="656" y="225">reparent 到 PID 1，关窗不退出</text>
+    <text x="656" y="243">在跑任务仅 60 秒 drain，超时 SIGKILL</text>
+    <text x="656" y="310">daemon 钉住首会话环境变量</text>
+    <text x="656" y="328">（作者首会话带 HTTPS_PROXY）</text>
+  </g>
+  <g font-size="12" fill="#555555">
+    <rect x="230" y="366" width="12" height="10" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="248" y="375">0.157.0 之前的默认归属（用户）</text>
+    <circle cx="470" cy="371" r="6" fill="#D55E00"/>
+    <text x="482" y="375">当前默认归属（守护进程）</text>
   </g>
 
-  <!-- 诉求热度 direct labels -->
-  <text x="920" y="452" font-size="13" fill="#1A1B1E" font-weight="bold">公开诉求热度（实测 2026-10-16）</text>
+  <!-- ============ panel b ============ -->
+  <text x="60" y="428" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="428" font-size="15" fill="#1A1B1E">公开诉求热度（数值直标条，无刻度轴）</text>
 
-  <text x="920" y="480" font-size="12.5" fill="#1A1B1E">GitHub #48195（+1）</text>
-  <rect x="920" y="490" width="144.8" height="16" fill="#0072B2"/>
-  <text x="1073" y="503" font-size="12" fill="#555">181，仍 open</text>
+  <text x="60" y="464" font-size="12.5" fill="#1A1B1E">GitHub #48195 要求改 opt-in（+1 数）</text>
+  <rect x="60" y="472" width="307.7" height="16" fill="#D55E00"/>
+  <text x="376" y="485" font-size="12" fill="#555555">181，仍 open</text>
 
-  <text x="920" y="526" font-size="12.5" fill="#1A1B1E">GitHub #41188（+1）</text>
-  <rect x="920" y="536" width="7.2" height="16" fill="#999999"/>
-  <text x="936" y="549" font-size="12" fill="#555">9</text>
+  <text x="60" y="518" font-size="12.5" fill="#1A1B1E">GitHub #41188 外部管理 daemon（+1 数）</text>
+  <rect x="60" y="526" width="15.3" height="16" fill="#999999"/>
+  <text x="84" y="539" font-size="12" fill="#555555">9</text>
 
-  <text x="920" y="576" font-size="12.5" fill="#1A1B1E">HN 帖 50060694：607 分</text>
-  <text x="920" y="596" font-size="12" fill="#555">全树 292 条评论（含已删除），顶层回复 58</text>
-  <text x="920" y="616" font-size="12" fill="#555">条长按 +1 数等比，数值直标，无刻度轴</text>
+  <text x="60" y="572" font-size="12.5" fill="#1A1B1E">HN 帖 50060694（分数）</text>
+  <rect x="60" y="580" width="1031.9" height="16" fill="#0072B2"/>
+  <text x="1140" y="572" font-size="12" fill="#555555" text-anchor="end">607 · 全树 292 条评论（含已删除），顶层回复 58</text>
+
+  <text x="60" y="618" font-size="12" fill="#555555">条长按各自数值等比，三条之间单位不同，不可跨条比较</text>
 
   <!-- footnote -->
-  <text x="60" y="652" font-size="11" fill="#767676">来源：openai/codex #48195、#41188、#42457、#40969 与 HN 帖 50060694 · 全部数字经 GitHub、HN、npm 接口于 2026-10-16 重测，转述除外 · 归属判断基于用户侧可见行为与公开 issue，非厂商口径</text>
+  <text x="60" y="652" font-size="11" fill="#767676">来源：openai/codex #48195、#41188、#42457、#40969 与 HN 帖 50060694 · 数字经 GitHub、HN、npm 接口于 2026-10-16 重测，转述除外 · 归属判断基于用户侧可见行为与公开 issue，非厂商口径</text>
 </svg>

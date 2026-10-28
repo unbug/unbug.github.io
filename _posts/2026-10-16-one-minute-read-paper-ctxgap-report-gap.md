@@ -8,9 +8,9 @@ tags: [ai-agents, coding-agents, llm-evaluation]
 description: "腾讯与中国科学技术大学团队的预印本测量显示：直接问编码智能体，93.6%的任务状态能答对；只看它的例行报告，只能恢复52.0%，差距40.7个百分点，且结案时仍不收敛。"
 ---
 
-腾讯与中国科学技术大学团队的预印本论文[《What Coding Agents Leave Unsaid: Measuring Task-State Gaps Between Execution and Reports》][paper1-url]（arXiv:2610.20003）测量了一个反直觉的现象：编码智能体并非不知道自己的工作出了什么问题，而是例行报告天然漏事。
+腾讯与中国科学技术大学团队的预印本论文[《What Coding Agents Leave Unsaid: Measuring Task-State Gaps Between Execution and Reports》][paper1-url]（arXiv:2610.20003）测量了一个反直觉的现象：直接问智能体本人，`93.6%` 的任务状态问题能答对；只看它写给用户的报告，只能恢复 `52.0%`，两者相差 `40.7` 个百分点。
 
-直接问智能体本人，`93.6%` 的任务状态问题能答对；只看它写给用户的报告，只能恢复 `52.0%`，两者相差 `40.7` 个百分点。论文直言：监督者无法调查从未被告知发生过的失败。
+编码智能体并非不知道自己的工作出了什么问题，而是例行报告天然漏事。论文直言：监督者无法调查从未被告知发生过的失败。
 
 ![三组任务状态恢复率对比：问智能体本人93.6%、读完整执行记录92.7%、只看报告52.0%]({{ site.baseurl }}/assets/images/ctxgap-report-gap.svg)
 
