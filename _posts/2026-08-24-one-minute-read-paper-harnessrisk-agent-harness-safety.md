@@ -8,7 +8,9 @@ tags: [llm, agent, safety]
 description: "北卡罗来纳大学教堂山分校等三校提出 HarnessRisk 基准，把 agent 外壳拆成六个生命周期阶段，用 128 个沙箱案例测出：同一模型换 harness，攻击成功率差出 4.3 倍，而任务效用仍保持在 75% 以上。"
 ---
 
-Agent 安全系列前几期处理了三种威胁：#160 改答案、#161 偷资产、#162 建暗线。美国北卡罗来纳大学教堂山分校（UNC Chapel Hill）、中佛罗里达大学（UCF）与密歇根州立大学（Michigan State University）的论文[《HarnessRisk: A Lifecycle-Oriented Benchmark for Agent Harness Safety》][paper1-url]（arXiv:2608.17597v1）问的是第四种问题：模型没变，是它运行的外壳让防线失守。基准用 `128` 个沙箱案例测出：同一个模型换个 harness，攻击成功率能差出 4.3 倍。
+Agent 安全系列前几期处理了三种威胁：#160 改答案、#161 偷资产、#162 建暗线。
+
+美国北卡罗来纳大学教堂山分校（UNC Chapel Hill）、中佛罗里达大学（UCF）与密歇根州立大学（Michigan State University）的论文[《HarnessRisk: A Lifecycle-Oriented Benchmark for Agent Harness Safety》][paper1-url]（arXiv:2608.17597v1）问的是第四种问题：模型没变，是它运行的外壳让防线失守。基准用 `128` 个沙箱案例测出：同一个模型换个 harness，攻击成功率能差出 4.3 倍。
 
 这里的 harness（外壳）指包裹语言模型的部署层代码，决定它能调用哪些工具、持有哪些凭证与权限、如何保存状态。论文的威胁模型不是通用越狱：每个案例都是良性用户目标加一条嵌入不可信工件（邮件、网页、文档或工具输出）中的对抗指令，在沙箱环境中执行。
 

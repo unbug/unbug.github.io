@@ -8,7 +8,9 @@ tags: [agent, harness, memory, skill, self-improvement]
 description: "三篇 2026 年 8 月新论文显示 Agent 自进化的主战场正从模型权重转移到 Harness 层：Recuris 在 τ²-Bench 让 Claude Opus 5 达到 87.9% 成功率，StarHarness 仅用 4-12 次修改提升 20-35 个百分点。本文拆解结构化证据、组件级修补与验证门控这套可落地的工程模式及其边界条件。"
 ---
 
-如果你最近在看 Agent 方向的论文，可能会注意到一个微妙的变化：过去半年讨论「让 Agent 自我改进」时，主角几乎总是模型本身——继续预训练、RLHF、递归微调。但 8 月 25 日一天之内上线的三篇 arXiv 论文，把主角换成了模型外面那层执行框架（harness）。Princeton 大学、新加坡国立大学（NUS）、斯坦福大学与牛津大学合作的 Recuris 在 τ²-Bench 上让 Claude Opus 5 达到 `87.9%` 任务成功率；StarHarness 只改动 prompt、工具接口和技能库，就在三个企业基准上提升了 `20-35` 个百分点。模型权重全程未动。这篇文章拆解这次范式转移的原理、证据链与边界条件。
+如果你最近在看 Agent 方向的论文，可能会注意到一个微妙的变化：过去半年讨论「让 Agent 自我改进」时，主角几乎总是模型本身——继续预训练、RLHF、递归微调。
+
+但 8 月 25 日一天之内上线的三篇 arXiv 论文，把主角换成了模型外面那层执行框架（harness）。Princeton 大学、新加坡国立大学（NUS）、斯坦福大学与牛津大学合作的 Recuris 在 τ²-Bench 上让 Claude Opus 5 达到 `87.9%` 任务成功率；StarHarness 只改动 prompt、工具接口和技能库，就在三个企业基准上提升了 `20-35` 个百分点。模型权重全程未动。这篇文章拆解这次范式转移的原理、证据链与边界条件。
 
 ![Agent 自进化从权重层迁移到 Harness 层的三篇论文定位]( {{ site.baseurl }}/assets/images/paradigm-radar-evolving-harness-memory-skill.svg )
 

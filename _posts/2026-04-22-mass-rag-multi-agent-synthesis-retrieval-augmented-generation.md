@@ -7,7 +7,9 @@ image: assets/images/mass-rag-diagram.jpg
 tags: [RAG, MultiAgent, ACL2026]
 ---
 
-[美国] 的论文[《MASS-RAG: Multi-Agent Synthesis Retrieval-Augmented Generation》][paper1-url]，提出用多个角色不同的智能体协同处理检索到的证据，让 RAG 在噪声和异构上下文下也能给出准确答案。论文被 ACL 2026 Findings 接收，共 19 页。
+[美国] 的论文[《MASS-RAG: Multi-Agent Synthesis Retrieval-Augmented Generation》][paper1-url]，提出用多个角色不同的智能体协同处理检索到的证据，让 RAG 在噪声和异构上下文下也能给出准确答案。
+
+论文被 ACL 2026 Findings 接收，共 19 页。
 
 RAG 是让大语言模型在回答时参考外部知识的主流方案。但当检索回来的证据存在噪声大、不完整或异构等问题时，单一生成过程往往难以有效整合信息。MASS-RAG 的核心创新在于将证据处理过程分解为多个角色专用的智能体，每个智能体负责不同的任务。
 

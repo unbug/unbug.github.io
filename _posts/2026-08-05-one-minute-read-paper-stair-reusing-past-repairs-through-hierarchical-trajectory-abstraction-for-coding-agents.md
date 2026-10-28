@@ -8,7 +8,11 @@ tags: [llm, coding-agents, agent-memory, agentic-coding]
 description: "STAIR 框架把编码代理历史修复轨迹抽象成分层可复用计划；搭配开源模型 MiniMax M2.5 在 SWE-bench Verified 达 81.2% Pass@1 排名第一，框架质量可弥补模型能力差距。"
 ---
 
-Concordia University（康考迪亚大学）与华为团队提出的论文[《Reusing Past Repairs Through Hierarchical Trajectory Abstraction for Coding Agents》][paper1-url]（arXiv:2607.29658）针对一个被忽视的浪费：软件维护占开发生命周期的 `50%-70%`，而 SWE-agent、AutoCodeRover、OpenHands 等 LLM 驱动的自主代码修复代理把每个 issue 当作独立任务，运行结束即丢弃历史修复轨迹中的程序性知识。STAIR（分层轨迹抽象框架）把历史修复轨迹转化为多层次、可复用的计划，使代理能从过去经验中学习。
+Concordia University（康考迪亚大学）与华为团队提出的论文[《Reusing Past Repairs Through Hierarchical Trajectory Abstraction for Coding Agents》][paper1-url]（arXiv:2607.29658）针对一个被忽视的浪费：
+
+软件维护占开发生命周期的 `50%-70%`，而 SWE-agent、AutoCodeRover、OpenHands 等 LLM 驱动的自主代码修复代理把每个 issue 当作独立任务，运行结束即丢弃历史修复轨迹中的程序性知识。
+
+STAIR（分层轨迹抽象框架）把历史修复轨迹转化为多层次、可复用的计划，使代理能从过去经验中学习。
 
 ![STAIR 分层轨迹抽象：35 个原始步骤逐级抽象为中层策略与高层原则，SWE-bench Verified 达 81.2% Pass@1]({{ site.baseurl }}/assets/images/stair-hierarchical-trajectory-abstraction.svg)
 

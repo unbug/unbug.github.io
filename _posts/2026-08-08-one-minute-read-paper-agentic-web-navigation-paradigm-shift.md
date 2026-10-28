@@ -8,7 +8,13 @@ tags: [webagent, computervision, browsergym, benchmark, vlm]
 description: "智能体网页导航让AI从检索文本转向直接操作网页。基准显示GPT-4在WebArena的成功率仅约16%，远低于人类基线；OpenAI与谷歌已推出Computer Use接口，可靠性与成本仍是落地障碍。"
 ---
 
-围绕 Web 智能体（能像人一样点击按钮、填写表单、滚动页面并处理弹窗的大语言模型程序）的一组基准研究——WebArena[《A Realistic Web Environment for Building Autonomous Agents》][paper1-url]、Mind2Web[《Towards a Generalist Agent for the Web》][paper2-url]、WebVoyager[《Building an LLM Agent for Interactive Web Navigation》][paper3-url]、OSWorld[《Benchmarking Multimodal Agents for Realistic Operating System Tasks》][paper4-url] 与统一框架 BrowserGym[《A Unified Framework for Web Agent Research》][paper5-url]——共同勾勒出 AI 与互联网交互的一次范式转变：从被动检索（Passive Retrieval）转向主动导航（Active Navigation）。在 812 个真实任务的 WebArena 基准上，GPT-4 的任务成功率仅约 `16%`，人类基线为 `80%` 以上，能力缺口清晰可量化。
+围绕 Web 智能体（能像人一样点击按钮、填写表单、滚动页面并处理弹窗的大语言模型程序）的一组基准研究。
+
+WebArena[《A Realistic Web Environment for Building Autonomous Agents》][paper1-url]、Mind2Web[《Towards a Generalist Agent for the Web》][paper2-url]、WebVoyager[《Building an LLM Agent for Interactive Web Navigation》][paper3-url]、OSWorld[《Benchmarking Multimodal Agents for Realistic Operating System Tasks》][paper4-url] 与统一框架 BrowserGym[《A Unified Framework for Web Agent Research》][paper5-url]——共同勾勒出 AI 与互联网交互的一次范式转变：
+
+从被动检索（Passive Retrieval）转向主动导航（Active Navigation）。
+
+在 812 个真实任务的 WebArena 基准上，GPT-4 的任务成功率仅约 `16%`，人类基线为 `80%` 以上，能力缺口清晰可量化。
 
 ![智能体网页导航基准：人类与模型成功率对比]({{ site.baseurl }}/assets/images/agentic-web-navigation-paradigm.svg)
 

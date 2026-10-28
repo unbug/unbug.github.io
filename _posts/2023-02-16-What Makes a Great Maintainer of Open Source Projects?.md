@@ -6,7 +6,9 @@ categories: [OpenSource, Engineer]
 image: assets/images/screenshot-20230204-001420.jpg
 tags: [featured, OpenSourceMaintainer, OSS]
 ---
-Google Go 工程师辞去工作转行成为全职开源维护者，同时为多个需要专业开源维护者的企业提供服务，报酬总额和 Google 工作相当。表明悄然兴起全职开源维护者薪酬竞争力完全不输职业软件工程师。美国瑙鲁大学和巴西联邦大学（UFPE、UNIFESP、UTFPR）的论文[《What Makes a Great Maintainer of Open Source Projects?》][paper1-url] 对 Linux、Debian 和 GitLab 经验丰富的维护人员进行了 33 次访谈，对 90 个 OSS(Open Source Software) 贡献者进行了评级调查。发现：`沟通被认为是优秀维护者最重要的属性，其次是品质保障`。
+Google Go 工程师辞去工作转行成为全职开源维护者，同时为多个需要专业开源维护者的企业提供服务，报酬总额和 Google 工作相当。
+
+表明悄然兴起全职开源维护者薪酬竞争力完全不输职业软件工程师。美国瑙鲁大学和巴西联邦大学（UFPE、UNIFESP、UTFPR）的论文[《What Makes a Great Maintainer of Open Source Projects?》][paper1-url] 对 Linux、Debian 和 GitLab 经验丰富的维护人员进行了 33 次访谈，对 90 个 OSS(Open Source Software) 贡献者进行了评级调查。发现：`沟通被认为是优秀维护者最重要的属性，其次是品质保障`。
 
 - 为了维持项目的长期愿景，维护者最终应该定义路线图、委派任务并处理文档。 在基于志愿者的工作中，必须仔细考虑这些活动，以免影响工作和生活的平衡。
 - 极其谨慎/礼貌似乎是鼓励和指导新贡献者的基石。 为了建立他们的信心，维护者应该`愿意倾听和交谈`，这反过来会让他们从另一个人的角度思考。

@@ -8,7 +8,9 @@ image: assets/images/agentic-real2sim-framework.svg
 tags: [agent-foundation-models, world-models, embodied-ai, real-to-sim]
 ---
 
-UCLA、MIT 和 UCSD 联合团队发表的论文[《Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents》][paper1-url]提出了一种全新的真实世界到仿真环境的自动化转换框架。该研究利用视觉语言代理（VLM Agent）将真实世界的物体-机器人交互记录自动转换为可仿真的"episodic twin"，保留了观测数据、几何结构、机器人交互信息和物体状态，为下游机器人策略学习提供了低成本的高质量仿真环境。
+UCLA、MIT 和 UCSD 联合团队发表的论文[《Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents》][paper1-url]提出了一种全新的真实世界到仿真环境的自动化转换框架。
+
+该研究利用视觉语言代理（VLM Agent）将真实世界的物体-机器人交互记录自动转换为可仿真的"episodic twin"，保留了观测数据、几何结构、机器人交互信息和物体状态，为下游机器人策略学习提供了低成本的高质量仿真环境。
 
 ## 真实到仿真的自动化瓶颈
 

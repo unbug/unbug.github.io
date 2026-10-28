@@ -8,7 +8,9 @@ tags: [llm, tool-use, mid-training]
 description: "Snowflake、华盛顿大学与北卡罗来纳大学教堂山分校构建了20.3B token的工具使用中间训练语料MidTool-Mix，Qwen3-4B/8B-Base经SFT+RL后BFCLv3、tau2-Bench与MCP-Universe均显著提升，表明工具使用需要专门的中间训练。"
 ---
 
-Snowflake、华盛顿大学和北卡罗来纳大学教堂山分校合作的论文[《MidTool: Mid-training Data Synthesis for Agentic Tool Use》][paper1-url]提出，智能体工具使用能力需要专门的 mid-training 数据管线，而不是只依赖 post-training。这与站内此前的[《工具调用的苦涩教训》][links-2]不同：那篇对比的是推理时方法（JSON 工具调用与程序化工具调用），本篇是训练数据管线的视角。论文于 2026 年 8 月 20 日提交 arXiv（v1，cs.AI），提交人 Fengqing Jiang，共 8 位作者。核心论点是：工具使用像数学和科学一样，需要专门的 mid-training 数据，而不是全靠 post-training。论文构建了 `20.3B` token 的 mid-training 语料 MidTool-Mix，在 Qwen3-4B-Base 与 Qwen3-8B-Base 上完成监督微调（SFT）与强化学习（RL）后，BFCLv3、tau2-Bench 与 MCP-Universe 三个基准一致提升。
+Snowflake、华盛顿大学和北卡罗来纳大学教堂山分校合作的论文[《MidTool: Mid-training Data Synthesis for Agentic Tool Use》][paper1-url]提出，智能体工具使用能力需要专门的 mid-training 数据管线，而不是只依赖 post-training。
+
+这与站内此前的[《工具调用的苦涩教训》][links-2]不同：那篇对比的是推理时方法（JSON 工具调用与程序化工具调用），本篇是训练数据管线的视角。论文于 2026 年 8 月 20 日提交 arXiv（v1，cs.AI），提交人 Fengqing Jiang，共 8 位作者。核心论点是：工具使用像数学和科学一样，需要专门的 mid-training 数据，而不是全靠 post-training。论文构建了 `20.3B` token 的 mid-training 语料 MidTool-Mix，在 Qwen3-4B-Base 与 Qwen3-8B-Base 上完成监督微调（SFT）与强化学习（RL）后，BFCLv3、tau2-Bench 与 MCP-Universe 三个基准一致提升。
 
 ![MidTool mid-training 数据合成与评测框架图]({{ site.baseurl }}/assets/images/midtool-mid-training-tool-use.svg)
 

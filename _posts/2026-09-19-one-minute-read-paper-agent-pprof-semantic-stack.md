@@ -8,7 +8,11 @@ tags: [llm-agents, observability, profiling]
 description: "arXiv 预印本 AgentPProf 把系统性能分析的归因方法移植到长程 AI Agent：以任务意图为归因单位，将执行轨迹聚合成火焰图，让长期任务第一次能查出钱烧在哪一步，与人工标注对齐得分 0.764。"
 ---
 
-2026 年 9 月 14 日提交到 arXiv 的论文[《AgentPProf: Semantic Profiler for Long Horizon AI Agents》][paper1-url]提出：长程 AI Agent 的可观测性欠账不在调试，而在画像——现有工具只做单次执行的追踪，做不了跨运行的长期归因；把系统软件里性能分析（profiling）的方法移植过来，以任务意图而非代码路径作为归因单位，就能像查 CPU 热点一样查出长任务的钱烧在哪一步。论文报告该方法在 CodeTraceBench 上与人工标注对齐得分 `0.764`，在三个问题定位基准上把 `MAP` 指标最高提升 `56%`。
+2026 年 9 月 14 日提交到 arXiv 的论文[《AgentPProf: Semantic Profiler for Long Horizon AI Agents》][paper1-url]提出：
+
+长程 AI Agent 的可观测性欠账不在调试，而在画像——现有工具只做单次执行的追踪，做不了跨运行的长期归因；把系统软件里性能分析（profiling）的方法移植过来，以任务意图而非代码路径作为归因单位，就能像查 CPU 热点一样查出长任务的钱烧在哪一步。
+
+论文报告该方法在 CodeTraceBench 上与人工标注对齐得分 `0.764`，在三个问题定位基准上把 `MAP` 指标最高提升 `56%`。
 
 ## 长期画像缺的是归因单位
 

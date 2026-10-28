@@ -8,7 +8,11 @@ tags: [llm, efficient-inference, test-time-compute]
 description: "Apple论文用10万GPU小时从零预训练发现：循环语言模型的halting head平均省算力被双重高估，批次解码实付远超平均，修好训练后质量领先只剩约0.003 BPB，省算力账本要换记法。"
 ---
 
-Apple 论文[《Do Halting Heads Really Save Compute in Looped Language Models?》][paper1-url]（arXiv:2610.32246，2026-10-23 提交）从零预训练了 `140M` 到 `1.3B` 四档参数的循环语言模型，逐个清点批次解码真正花掉的迭代数，结论是 halting head（在每个迭代后判断 token 是否停止的小层）按"平均每 token 迭代数"报告的省算力被系统性高估。上周站内[《删掉一个前缀，近满分的投毒防御当场裸奔》]({{ site.baseurl }}/one-minute-read-paper-rag-defense-benchmark-shortcut/)打的是防御评测指标的失真，这一篇打的是另一个轴：推理计算分配指标的失真——预测平均、实际花费、批次实付是三个数。
+Apple 论文[《Do Halting Heads Really Save Compute in Looped Language Models?》][paper1-url]（arXiv:2610.32246，2026-10-23 提交）从零预训练了 `140M` 到 `1.3B` 四档参数的循环语言模型，
+
+逐个清点批次解码真正花掉的迭代数，结论是 halting head（在每个迭代后判断 token 是否停止的小层）按"平均每 token 迭代数"报告的省算力被系统性高估。
+
+上周站内[《删掉一个前缀，近满分的投毒防御当场裸奔》]({{ site.baseurl }}/one-minute-read-paper-rag-defense-benchmark-shortcut/)打的是防御评测指标的失真，这一篇打的是另一个轴：推理计算分配指标的失真——预测平均、实际花费、批次实付是三个数。
 
 ![head 预测、exit rule 实跑、批次实付三个数对不上]({{ site.baseurl }}/assets/images/halting-head-compute-gap.svg)
 

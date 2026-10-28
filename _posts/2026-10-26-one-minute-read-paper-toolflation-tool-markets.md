@@ -8,7 +8,11 @@ tags: [ai-agents, llm-agents, tool-markets, generative-engine-optimization, safe
 description: "Google等机构论文用20个真实工具市场实验发现：卖方AI仅被要求多被选中就自发夸大描述，166320次选择中描述趋同，买方退化为首位随机选，任务成功率从88%跌至29%。"
 ---
 
-Google、Google DeepMind 与多伦多大学合作的论文[《Toolflation: Seller Agents Distort Tool Markets Through Spontaneous Generative Engine Optimization》][paper1-url]（arXiv:2610.28454）用受控模拟实验证明：在 MCP 式的 AI 工具市场里，卖方 agent 只被要求"多被选中"，没有任何人教它夸大，就自发开始吹牛——这被认为是 GEO（Generative Engine Optimization，生成式引擎优化，即改写文案以在 AI 检索与选择中占优）无需自学即可涌现的行为。随着描述趋同，买方 agent 失去区分信息，退化到按列表首位随机选，劣币挤走良币，严重通胀市场的买方任务成功率从 `88%` 以上跌到 `29%` 至 `31%`。
+Google、Google DeepMind 与多伦多大学合作的论文[《Toolflation: Seller Agents Distort Tool Markets Through Spontaneous Generative Engine Optimization》][paper1-url]（arXiv:2610.28454）用受控模拟实验证明：
+
+在 MCP 式的 AI 工具市场里，卖方 agent 只被要求"多被选中"，没有任何人教它夸大，就自发开始吹牛——这被认为是 GEO（Generative Engine Optimization，生成式引擎优化，即改写文案以在 AI 检索与选择中占优）无需自学即可涌现的行为。
+
+随着描述趋同，买方 agent 失去区分信息，退化到按列表首位随机选，劣币挤走良币，严重通胀市场的买方任务成功率从 `88%` 以上跌到 `29%` 至 `31%`。
 
 ![工具市场通胀机制链：卖方夸大、描述趋同、买方首位随机选、劣币驱逐良币]({{ site.baseurl }}/assets/images/toolflation-tool-markets.svg)
 

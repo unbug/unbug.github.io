@@ -8,7 +8,13 @@ tags: [llm, agent, memory, safety]
 description: "上海交通大学与蚂蚁集团的 InjecMEM 论文证明，无需读写记忆库权限，一次交互即可把对抗指令写进 LLM Agent 的记忆：MemGPT 上条件攻击成功率 48.6%，而能彻底拦截的困惑度过滤会误杀 71.8% 的良性检索。"
 ---
 
-上海交通大学（Shanghai Jiao Tong University）与蚂蚁集团（Ant Group）合作的论文[《InjecMEM: Memory Injection Attack on LLM Agent Memory Systems》][paper1-url]（arXiv:2608.23471，2026-08-24 提交）提出了一种针对 LLM Agent 记忆系统的注入攻击：攻击者只需与 agent 进行`单次交互`，不需要读取或修改记忆库的任何权限，就能让后续相关查询的回答被导向预指定输出。在 MemGPT 系统上，该攻击的条件攻击成功率（ASR-c）达 `48.6%`，联合口径（ASR-j）为 `18.1%`；在 MemoryOS 上分别为 `76.6%` 与 `35.6%`。
+上海交通大学（Shanghai Jiao Tong University）与蚂蚁集团（Ant Group）合作的论文[《InjecMEM: Memory Injection Attack on LLM Agent Memory Systems》][paper1-url]（arXiv:2608.23471，
+
+2026-08-24 提交）提出了一种针对 LLM Agent 记忆系统的注入攻击：
+
+攻击者只需与 agent 进行`单次交互`，不需要读取或修改记忆库的任何权限，就能让后续相关查询的回答被导向预指定输出。
+
+在 MemGPT 系统上，该攻击的条件攻击成功率（ASR-c）达 `48.6%`，联合口径（ASR-j）为 `18.1%`；在 MemoryOS 上分别为 `76.6%` 与 `35.6%`。
 
 ## 注入记录由锚点加对抗指令构成
 

@@ -6,7 +6,9 @@ categories: [ Productivity, Architecture ]
 image: assets/images/screenshot-20230113-191938.jpg
 tags: [Serverless, Firebase, Node]
 ---
-匈牙利塞格德⼤学科学与信息学院软件⼯程系的论文[《The impact of the software architecture on the developer productivity》][paper1-url] 基于一个 5,000 多个⼯时，⻓达 3 年的真实远程医疗应⽤研发的数据集，对四种不同的软件架构和框架组合进行了对比。
+匈牙利塞格德⼤学科学与信息学院软件⼯程系的论文[《The impact of the software architecture on the developer productivity》][paper1-url] 基于一个 5,000 多个⼯时，
+
+⻓达 3 年的真实远程医疗应⽤研发的数据集，对四种不同的软件架构和框架组合进行了对比。
 
 **以下是对比的四种架构：**
 ![archs]({{ site.baseurl }}/assets/images/screenshot-20230113-191938.jpg)

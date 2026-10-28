@@ -8,7 +8,11 @@ tags: [llm, safety, reasoning, model-security]
 description: "CISPA论文证明仅靠API交互即可提取黑盒大推理模型的隐藏思维链：攻击者用tool call之间返回的推理长度与摘要信号迭代重放，开源模型上最高66.4%的样本通过近逐字保真校验，实用防御存在残余缺口。"
 ---
 
-德国亥姆霍兹信息安全中心 CISPA（CISPA Helmholtz Center for Information Security）的论文[《EchoCoT: Extracting Hidden Chain-of-Thought from Large Reasoning Models》][paper1-url]证明：仅靠纯 API 交互，就能从黑盒大推理模型（LRM, Large Reasoning Model）中提取其隐藏的思维链（CoT），在开源模型上达到近逐字保真。论文识别出一个此前被忽视的攻击面——tool call 之间由 API 返回的推理元数据（推理长度与 CoT 摘要）构成的"推理回放面"（reasoning replay surface）：攻击者把它当作保真度信号，多步迭代地把目标模型的隐藏 CoT 重放出来。这是一篇攻击论文，代码已开源。
+德国亥姆霍兹信息安全中心 CISPA（CISPA Helmholtz Center for Information Security）的论文[《EchoCoT: Extracting Hidden Chain-of-Thought from Large Reasoning Models》][paper1-url]证明：
+
+仅靠纯 API 交互，就能从黑盒大推理模型（LRM, Large Reasoning Model）中提取其隐藏的思维链（CoT），在开源模型上达到近逐字保真。
+
+论文识别出一个此前被忽视的攻击面——tool call 之间由 API 返回的推理元数据（推理长度与 CoT 摘要）构成的"推理回放面"（reasoning replay surface）：攻击者把它当作保真度信号，多步迭代地把目标模型的隐藏 CoT 重放出来。这是一篇攻击论文，代码已开源。
 
 这与[对抗性说服][links-1]一类攻击的定位不同：说服攻击改变模型的答案，EchoCoT 不碰答案——模型照常作答、照常调用工具，被读走的是推理过程本身，也就是模型最核心的思维资产。机制上分两层：信息通道是 API 返回的推理元数据；提取载体则是诱导模型把推理重放进下一次 tool call 的参数。配套的 LLM 优化框架（Inject + Reflect + Distill）自动搜索跨数据集通用的注入轨迹，无需针对每个目标人工设计。攻击面恰好落在 tool call 之间的缝隙里，而[工具调用][links-2]正是大推理模型能力的关键组成部分。
 

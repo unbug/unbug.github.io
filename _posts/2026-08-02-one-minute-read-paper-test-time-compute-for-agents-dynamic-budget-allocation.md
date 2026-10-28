@@ -8,7 +8,11 @@ tags: [llm, agent, test-time-compute, reasoning]
 description: "首篇针对 Agent 场景的测试时计算实证研究发现，额外计算不提高任务成功率，只把失败从重复停滞轨迹转移到过早错误成功；预算应随子任务难度动态调度，而非在推理链上均匀延长。"
 ---
 
-韩国研究团队 Woongkyu Lee 与 Jungwook Choi 的论文[《Rethinking Inference-Time Scaling in Local Computer-Use Agents: Failure Modes and Compute Tradeoffs》][paper1-url]（arXiv:2607.28573）是第一篇针对 Agent 场景的 test-time compute（测试时计算，指执行任务而非训练期间消耗的推理资源）实证研究。核心结论：**额外计算并不提高任务成功率**，只把失败从「重复/停滞轨迹」转移到「过早错误成功」，即模型自信地执行了错误的操作序列。
+韩国研究团队 Woongkyu Lee 与 Jungwook Choi 的论文[《Rethinking Inference-Time Scaling in Local Computer-Use Agents: Failure Modes and Compute Tradeoffs》][paper1-url]（arXiv:2607.28573）是第一篇针对 Agent 场景的 test-time compute（测试时计算，
+
+指执行任务而非训练期间消耗的推理资源）实证研究。
+
+核心结论：**额外计算并不提高任务成功率**，只把失败从「重复/停滞轨迹」转移到「过早错误成功」，即模型自信地执行了错误的操作序列。
 
 ![固定预算与动态预算分配的对比：三步均匀 2,400 tokens 与按难度调度 7,200 tokens]({{ site.baseurl }}/assets/images/test-time-compute-for-agents-framework.svg)
 

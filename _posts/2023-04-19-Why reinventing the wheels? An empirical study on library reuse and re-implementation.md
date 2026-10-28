@@ -6,7 +6,11 @@ categories: [Engineering]
 image: assets/images/screenshot-20230311-001451.jpg
 tags: [Refactor]
 ---
-新加坡管理大学的论文[《Why reinventing the wheels? An empirical study on library reuse and re-implementation》][paper1-url]通过对 GitHub 上的项目进行静态分析和动态分析，收集了重用和重新实现的案例，并对其中的一部分进行了人工验证和调查问卷，研究了工程师在使用第三方库时，为什么会选择重用或者重新实现。发现：`重新实现可能会降低代码质量`。
+新加坡管理大学的论文[《Why reinventing the wheels? An empirical study on library reuse and re-implementation》][paper1-url]通过对 GitHub 上的项目进行静态分析和动态分析，收集了重用和重新实现的案例，
+
+并对其中的一部分进行了人工验证和调查问卷，研究了工程师在使用第三方库时，为什么会选择重用或者重新实现。
+
+发现：`重新实现可能会降低代码质量`。
 
 - 重用比重新实现更频繁且涉及更多的代码行数：重用的 commit 数量是重新实现的2.5倍，重用的代码行数是重新实现的3.7倍。
 - 重用和重新实现主要发生在一些通用且功能简单的库和方法上：大部分都是一些常见且基础的功能，如字符串处理、集合操作、日志记录等。这些库和方法往往不需要特定领域知识或者复杂逻辑，因此容易被工程师自己实现或者替换。

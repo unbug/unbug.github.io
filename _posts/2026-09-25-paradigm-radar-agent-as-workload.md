@@ -8,7 +8,9 @@ tags: [agent, orchestration, kubernetes, scheduler]
 description: "google/ax 发布 v0.3.0 并直接对标 Kubernetes，下层运行时自述百万级沙箱与 sub-500ms resume；同期 Linear 证实 AI 代码压垮 CI。供给端与需求端同周交汇，Agent 正从应用框架里的循环变成集群调度器眼里的一等负载。"
 ---
 
-「Agent 是应用框架里的一个 loop」这个定义正在被基础设施层改写。GitHub 组织为 google 的开源编排运行时 ax 于 2026-09-20 发布 `v0.3.0` 并冲上 HN 头版，拿下 `663` 分、`299` 条评论（2026-09-25 实测），仓库现有 `11,045` 星（同日实测）。README 自述这是一个「在集群内运行 billions 级自主 Agent 负载的高吞吐声明式编排器」，并直接写明「If you have used Kubernetes, ax will feel similar」。范式表述：Agent 从「应用框架里的一个 loop」迁移为「集群调度器眼里的一等负载」。同一周，Linear 官方博客给出需求侧独立证据——AI 生成代码让 CI 成为新瓶颈、流水线被迫重构，相关 HN 帖 `313` 分（实测）。供给端与需求端两条互不相关的线，同周指向同一件事。
+「Agent 是应用框架里的一个 loop」这个定义正在被基础设施层改写。
+
+GitHub 组织为 google 的开源编排运行时 ax 于 2026-09-20 发布 `v0.3.0` 并冲上 HN 头版，拿下 `663` 分、`299` 条评论（2026-09-25 实测），仓库现有 `11,045` 星（同日实测）。README 自述这是一个「在集群内运行 billions 级自主 Agent 负载的高吞吐声明式编排器」，并直接写明「If you have used Kubernetes, ax will feel similar」。范式表述：Agent 从「应用框架里的一个 loop」迁移为「集群调度器眼里的一等负载」。同一周，Linear 官方博客给出需求侧独立证据——AI 生成代码让 CI 成为新瓶颈、流水线被迫重构，相关 HN 帖 `313` 分（实测）。供给端与需求端两条互不相关的线，同周指向同一件事。
 
 ## 供给端：微服务原语逐件复刻
 

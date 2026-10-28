@@ -6,7 +6,9 @@ categories: [Architecture, Engineering]
 image: assets/images/screenshot-20230310-225757.jpg
 tags: [Monorepo]
 ---
-互联网大厂热衷于 Monorepo 的原因是什么，Monorepo 能否解决超级应用的代码管理通病？巴西米纳斯吉拉斯联邦大学和巴西拉夫拉斯联邦大学合著的论文[《Monorepo: A Multivocal Literature Review》][paper1-url] 论文通过对主要来源于20+灰色文献（如博客、演讲、视频等）的多声体文献综述，提供一个关于 Monorepo 的定义、特征、优势和挑战的概述。
+互联网大厂热衷于 Monorepo 的原因是什么，
+
+Monorepo 能否解决超级应用的代码管理通病？巴西米纳斯吉拉斯联邦大学和巴西拉夫拉斯联邦大学合著的论文[《Monorepo: A Multivocal Literature Review》][paper1-url] 论文通过对主要来源于20+灰色文献（如博客、演讲、视频等）的多声体文献综述，提供一个关于 Monorepo 的定义、特征、优势和挑战的概述。
 
 - **Google：**Google 的 Monorepo 包含了超过 20 亿行代码，超过 25 万个项目，超过 9 万名开发者。Google 使用自己开发的版本控制系统 Piper 和构建工具 Bazel 来管理 Monorepo 。
 - **Facebook：**Facebook 的 Monorepo 包含了超过 6.2 亿行代码，超过 6.5 万个项目，超过 1.2 万名开发者。Facebook 使用 Mercurial 和 Buck 来管理 Monorepo 。

@@ -8,7 +8,9 @@ tags: [agent, tool-use, reinforcement-learning, data-quality, mcp]
 description: "论文用一万三千条高质量合成数据与程序化奖励函数训练多步工具调用，在三个主流基准上稳定提升约一成，小模型收益更明显，说明执行对齐的数据结构比盲目扩模型更具性价比。"
 ---
 
-多步工具调用正在成为 Agent 能力上限的主要约束。最新论文 PROVE 给出的答案不是继续堆模型参数，而是先解决训练数据与真实工具状态之间的错配。该方法使用 13K 高质量合成数据与程序化奖励函数，在 BFCL、tau2-bench、T-Eval 上实现稳定增益，显示出“数据结构化 + 奖励可执行化”的方法论价值。
+多步工具调用正在成为 Agent 能力上限的主要约束。最新论文 PROVE 给出的答案不是继续堆模型参数，而是先解决训练数据与真实工具状态之间的错配。
+
+该方法使用 13K 高质量合成数据与程序化奖励函数，在 BFCL、tau2-bench、T-Eval 上实现稳定增益，显示出“数据结构化 + 奖励可执行化”的方法论价值。
 
 ![PROVE 总览图]({{ site.baseurl }}/assets/images/paradigm-radar-prove-tool-orchestration-architecture.svg)
 

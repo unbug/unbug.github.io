@@ -7,7 +7,11 @@ tags: [coding-agent, benchmark, c++]
 description: "从9个真实Unreal Engine 5仓库提取110个C++任务，要求编译通过并跑行为测试，最强模型pass@1仅55.5%，近三成任务对所有配置均不可解。"
 ---
 
-多伦多大学等机构的一篇论文[《GameEngineBench: Evaluating Coding Agents on Real C++ Runtime Environments》][paper1-url]（[arXiv:2607.03525](https://arxiv.org/abs/2607.03525)），提出了首个面向游戏引擎开发的编码智能体基准测试 GameEngineBench，发现最强模型在真实 C++ 编译验证下的 pass@1 仅为 `55.5%`，且 `31` 个任务（`28.2%`）对所有评估配置均不可解。这一结果揭示了当前编码智能体在处理复杂 C++ 项目时的显著能力缺口。
+多伦多大学等机构的一篇论文[《GameEngineBench: Evaluating Coding Agents on Real C++ Runtime Environments》][paper1-url]（[arXiv:2607.03525](https://arxiv.org/abs/2607.03525)），
+
+提出了首个面向游戏引擎开发的编码智能体基准测试 GameEngineBench，发现最强模型在真实 C++ 编译验证下的 pass@1 仅为 `55.5%`，且 `31` 个任务（`28.2%`）对所有评估配置均不可解。
+
+这一结果揭示了当前编码智能体在处理复杂 C++ 项目时的显著能力缺口。
 
 ## 为什么现有基准不够用？
 

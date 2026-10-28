@@ -8,7 +8,9 @@ layout: post
 description: "论文把Bug复现测试从事后验证升级为运行时诊断，引导软件工程Agent生成完整补丁，在SWE-bench两个基准上稳定超越基线方法。"
 ---
 
-本文讨论的论文是 SWE-Doctor: Guiding Software Engineering Agents with Runtime Diagnosis from Multi-Faceted Bug Reproduction Tests，arXiv:2607.00990，由新加坡国立大学和中国科学技术大学联合完成。论文链接：https://arxiv.org/abs/2607.00990
+本文讨论的论文是 SWE-Doctor: Guiding Software Engineering Agents with Runtime Diagnosis from Multi-Faceted Bug Reproduction Tests，arXiv:2607.00990，由新加坡国立大学和中国科学技术大学联合完成。
+
+论文链接：https://arxiv.org/abs/2607.00990
 
 软件开发Agent在自动修复Bug方面取得了显著进展，但一个根本性问题长期被忽视：现有的Bug复现测试（BRT）仅仅作为补丁生成后的验证工具使用，其丰富的运行时信息从未被用于指导生成过程本身。SWE-Doctor的核心主张是——如果把BRT从"事后验尸报告"升级为"实时诊断仪"，Agent的补丁生成质量将发生质的飞跃。这一转变的关键在于让测试数据在生成阶段就发挥作用，而非仅在完成后充当裁判角色。
 

@@ -6,7 +6,9 @@ categories: [Engineering]
 image: assets/images/screenshot-20231106-160243.jpg
 tags: [Incident]
 ---
-事故从发现到解决有三个重要的衡量指标： TTD（Time To Detect，事故被发现的时间）、TTE（Time To Engage，相关责任人响应时间）、TTM（Time To Mitigate，事故缓解或解决时间）。TTM 是定位问题和制定解决方案并解决的时长。微软研究院的论文[《How Long Will it Take to Mitigate this Incident for Online Service Systems》][paper1-url]，从微软`20个在线服务系统`中收集了2018年至2020年的 `2.7 万`条事故数据，发现 TTM 与事故的严重性、影响范围、类型、来源、所属服务和所属团队有显著的相关性，`信息不足、沟通不畅、协作不协调`是影响 TTM 最大的因素，并提出了预测方法 TTMPred。
+事故从发现到解决有三个重要的衡量指标： TTD（Time To Detect，事故被发现的时间）、TTE（Time To Engage，相关责任人响应时间）、TTM（Time To Mitigate，事故缓解或解决时间）。
+
+TTM 是定位问题和制定解决方案并解决的时长。微软研究院的论文[《How Long Will it Take to Mitigate this Incident for Online Service Systems》][paper1-url]，从微软`20个在线服务系统`中收集了2018年至2020年的 `2.7 万`条事故数据，发现 TTM 与事故的严重性、影响范围、类型、来源、所属服务和所属团队有显著的相关性，`信息不足、沟通不畅、协作不协调`是影响 TTM 最大的因素，并提出了预测方法 TTMPred。
 
 ## TTM 的实证研究
 数据使用了微软内部的事故管理系统，从2018年至2020年的20个大规模在线服务系统中收集了事故数据，包括事故的文本描述、讨论记录、缓解时间等信息，共计约2.7万条。

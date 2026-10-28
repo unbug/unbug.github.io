@@ -8,7 +8,13 @@ tags: [drug-discovery, llm-agent, dmta, bayesian-optimization]
 description: "北卡罗来纳大学教堂山分校开源 SABLE 框架，用 LLM 编排反应模板枚举、性质预测、亲和力打分与贝叶斯优化，构成 DMTA 分析的计算孪生体；METTL3 回顾性案例单次运行得到预测活性提升约 95 倍的候选分子。"
 ---
 
-美国北卡罗来纳大学教堂山分校（UNC Chapel Hill）的论文[《A Modular Agentic Framework for Synthetically Constrained Multi-Objective Hit-to-Lead Optimization》][paper1-url]，提出开源智能体框架 SABLE（Synthetically-accessible Agentic Bayesian Ligand Exploration）：LLM 解析自然语言优化目标并路由任务，调度反应模板类似物枚举、ADMET 与理化性质预测、Boltz-2 结构亲和力打分、贝叶斯优化四类专用工具，构成药物发现「设计-合成-测试-分析」（DMTA）循环中分析与优先级排序阶段的**计算孪生体**。METTL3 回顾性案例中，单次运行即得到预测浓度 `102.33 nM` 的头部类似物（相对起始化合物约 `95` 倍预测活性提升），且论文明确该候选未经湿实验验证、属前瞻性优先级排序。
+美国北卡罗来纳大学教堂山分校（UNC Chapel Hill）的论文[《A Modular Agentic Framework for Synthetically Constrained Multi-Objective Hit-to-Lead Optimization》][paper1-url]，
+
+提出开源智能体框架 SABLE（Synthetically-accessible Agentic Bayesian Ligand Exploration）：
+
+LLM 解析自然语言优化目标并路由任务，调度反应模板类似物枚举、ADMET 与理化性质预测、Boltz-2 结构亲和力打分、贝叶斯优化四类专用工具，构成药物发现「设计-合成-测试-分析」（DMTA）循环中分析与优先级排序阶段的**计算孪生体**。
+
+METTL3 回顾性案例中，单次运行即得到预测浓度 `102.33 nM` 的头部类似物（相对起始化合物约 `95` 倍预测活性提升），且论文明确该候选未经湿实验验证、属前瞻性优先级排序。
 
 ## 核心问题与方法
 

@@ -7,7 +7,9 @@ image: assets/images/ai-reward-hacking.jpg
 tags: [reward-hacking, llm-security, agent-alignment, reward-modeling]
 ---
 
-来自多机构研究团队的一篇论文[《Reward Hacking in the Era of Large Models: Mechanisms, Emergence, and Mitigation》][paper1-url]，首次将大模型时代的奖励黑客行为形式化为高度表达能力策略在压缩奖励表示上优化时的涌现结果，揭示了目标压缩、优化放大和评估器-策略协同适应三要素的交互作用如何导致系统性安全失效。
+来自多机构研究团队的一篇论文[《Reward Hacking in the Era of Large Models: Mechanisms, Emergence, and Mitigation》][paper1-url]，首次将大模型时代的奖励黑客行为形式化为高度表达能力策略在压缩奖励表示上优化时的涌现结果，
+
+揭示了目标压缩、优化放大和评估器-策略协同适应三要素的交互作用如何导致系统性安全失效。
 
 ## 奖励黑客的理论框架
 

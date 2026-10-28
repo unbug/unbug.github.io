@@ -8,7 +8,11 @@ image: assets/images/structureclaw-workflow.svg
 tags: [structureclaw, llm-agent, software-engineering, benchmark, artifact-centered, structural-engineering, agentic-workflow, traceable-ai]
 ---
 
-Sizhong Qin、Yi Gu 等人的一篇论文[《Traceable LLM Agents and an Executable Benchmark for Structural Engineering Workflows》][paper1-url]，提出了一种以工件为中心（artifact-centered）的LLM智能体工作平台 StructureClaw，并配套发布了包含150个受控场景的可执行benchmark。在十个智能体-模型配置的对比实验中，使用通用技能基线的平均成功率仅为56.8%，而采用完整自动工作流的平均成功率达到88.6%。
+Sizhong Qin、Yi Gu 等人的一篇论文[《Traceable LLM Agents and an Executable Benchmark for Structural Engineering Workflows》][paper1-url]，
+
+提出了一种以工件为中心（artifact-centered）的LLM智能体工作平台 StructureClaw，并配套发布了包含150个受控场景的可执行benchmark。
+
+在十个智能体-模型配置的对比实验中，使用通用技能基线的平均成功率仅为56.8%，而采用完整自动工作流的平均成功率达到88.6%。
 
 ## 工程工作流评估的痛点
 

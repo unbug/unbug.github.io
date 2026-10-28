@@ -8,7 +8,11 @@ tags: [llm, agent, calibration, uncertainty, multi-agent]
 description: "论文证明多组件 LLM Agent 即使各组件局部校准良好，组合输出仍会违反概率公理：1,876 个集成簇上不协调率达 33% 到 94%，每笔决策损失 0.115 nats，需在架构层用分层投影与运行时证书修复。"
 ---
 
-Anany Kotawala 的论文[《Locally Coherent, Globally Incoherent: Bounding Compositional Incoherence in Multi-Component LLM Agents》][paper1-url]，揭示了多组件 LLM Agent 系统中的一个根本性缺陷：即使每个组件在局部都是校准良好的，它们的组合输出仍可能违反基本概率公理。论文在 1,876 个集成簇上的实验表明，组合不协调现象在 33% 到 94% 的情况下出现，导致每笔决策产生 +0.115 nats 的后悔损失。
+Anany Kotawala 的论文[《Locally Coherent, Globally Incoherent: Bounding Compositional Incoherence in Multi-Component LLM Agents》][paper1-url]，
+
+揭示了多组件 LLM Agent 系统中的一个根本性缺陷：即使每个组件在局部都是校准良好的，它们的组合输出仍可能违反基本概率公理。
+
+论文在 1,876 个集成簇上的实验表明，组合不协调现象在 33% 到 94% 的情况下出现，导致每笔决策产生 +0.115 nats 的后悔损失。
 
 ## 核心问题
 

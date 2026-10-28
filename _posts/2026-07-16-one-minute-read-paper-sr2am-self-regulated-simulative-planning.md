@@ -9,7 +9,9 @@ description: 该方法把大模型决策拆为反应、模拟规划与自我调�
 tags: [llm, agent-planning, simulative-reasoning, system-thinking]
 ---
 
-卡内基梅隆大学和国际金融管理学院的论文[《Efficient Agentic Reasoning Through Self-Regulated Simulative Planning (SR2AM)》][paper1-url]提出了一种将大语言模型决策过程分解为三个系统的架构，使30B参数模型的性能达到685B至1T参数级系统的水平，同时将推理token消耗减少25.8%至95.3%。
+卡内基梅隆大学和国际金融管理学院的论文[《Efficient Agentic Reasoning Through Self-Regulated Simulative Planning (SR2AM)》][paper1-url]提出了一种将大语言模型决策过程分解为三个系统的架构，
+
+使30B参数模型的性能达到685B至1T参数级系统的水平，同时将推理token消耗减少25.8%至95.3%。
 
 ![SR2AM 领航灯三挡：新规划、沿用计划、跳过规划]({{ site.baseurl }}/assets/images/sr2am-self-regulated-planning.svg)
 

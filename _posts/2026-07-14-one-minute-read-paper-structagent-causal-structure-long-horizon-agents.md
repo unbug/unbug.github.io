@@ -8,7 +8,11 @@ tags: [llm, agent, computer-use, long-horizon]
 description: "该框架把长程数字智能体的状态与工作流围绕统一因果表示显式结构化，从根本上解决进展难以解释和恢复的问题；在基准测试上，大模型成功率从三成出头提升到六成以上。"
 ---
 
-加州大学圣地亚哥分校与 Aether AI Lab 合作的一篇论文[《Harness Long-horizon Digital Agents with Unified Causal Structure》](https://arxiv.org/abs/2607.11388)，提出 StructAgent 框架，通过统一状态表示和结构化工作流显著提升长程数字 Agent 的可靠性。在 OSWorld-Verified 基准上，Qwen3.5-9B 的成功率从 `27.0%` 提升至 `46.9%`，Qwen3.5-27B 从 `31.6%` 提升至 `62.2%`，MiniMax-M3 达到 `78.9%` 的开源 SOTA。该框架的核心贡献在于将 Agent 的状态和工作流围绕统一的因果表示进行显式结构化，从根本上解决了长程任务中进展难以解释和恢复的问题。
+加州大学圣地亚哥分校与 Aether AI Lab 合作的一篇论文[《Harness Long-horizon Digital Agents with Unified Causal Structure》](https://arxiv.org/abs/2607.11388)，
+
+提出 StructAgent 框架，通过统一状态表示和结构化工作流显著提升长程数字 Agent 的可靠性。
+
+在 OSWorld-Verified 基准上，Qwen3.5-9B 的成功率从 `27.0%` 提升至 `46.9%`，Qwen3.5-27B 从 `31.6%` 提升至 `62.2%`，MiniMax-M3 达到 `78.9%` 的开源 SOTA。该框架的核心贡献在于将 Agent 的状态和工作流围绕统一的因果表示进行显式结构化，从根本上解决了长程任务中进展难以解释和恢复的问题。
 
 ## 长程 Agent 的可靠性危机
 

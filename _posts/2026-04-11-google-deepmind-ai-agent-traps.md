@@ -7,7 +7,9 @@ image: assets/images/google-deepmind-ai-agent-traps.jpg
 tags: [ai-safety, machine-learning, cybersecurity, research]
 ---
 
-Google DeepMind 研究人员发表的论文 [《AI Agent Traps》][paper1-url] 首次提出了针对 AI 智能体的系统性威胁分类框架，揭示了六种可通过恶意网页内容实施的攻击方式。该研究由 Matija Franklin、Nenad Tomasev、Julian Jacobs、Joel Z. Leibo 和 Simon Osindero 等人完成，于 2026 年 3 月提交至 SSRN。实验显示，通过简单的 HTML 注入攻击，成功率高达 86%，这一数据震惊了 AI 安全领域。
+Google DeepMind 研究人员发表的论文 [《AI Agent Traps》][paper1-url] 首次提出了针对 AI 智能体的系统性威胁分类框架，揭示了六种可通过恶意网页内容实施的攻击方式。
+
+该研究由 Matija Franklin、Nenad Tomasev、Julian Jacobs、Joel Z. Leibo 和 Simon Osindero 等人完成，于 2026 年 3 月提交至 SSRN。实验显示，通过简单的 HTML 注入攻击，成功率高达 86%，这一数据震惊了 AI 安全领域。
 
 ## 引言：AI Agent 安全问题的紧迫性
 

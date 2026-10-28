@@ -7,7 +7,11 @@ image: assets/images/transient-turn-injection.jpg
 tags: [PromptInjection, LLM, Security, AIAgents]
 ---
 
-孟加拉国贾加纳特大学与巴里萨尔大学合作发表的论文[《Transient Turn Injection: Exposing Stateless Multi-Turn Vulnerabilities in Large Language Models》][paper1-url]，首次提出了一种名为**瞬态轮次注入（Transient Turn Injection, TTI）**的新型攻击范式，揭示了当前主流大语言模型在无状态 API 交互场景下的系统性安全漏洞。论文通过系统性实验发现，攻击者可以将恶意意图分散到多个看似无害的孤立请求中，当这些请求被组合时即可逐步绕过模型的安全策略。
+孟加拉国贾加纳特大学与巴里萨尔大学合作发表的论文[《Transient Turn Injection: Exposing Stateless Multi-Turn Vulnerabilities in Large Language Models》][paper1-url]，
+
+首次提出了一种名为**瞬态轮次注入（Transient Turn Injection, TTI）**的新型攻击范式，揭示了当前主流大语言模型在无状态 API 交互场景下的系统性安全漏洞。
+
+论文通过系统性实验发现，攻击者可以将恶意意图分散到多个看似无害的孤立请求中，当这些请求被组合时即可逐步绕过模型的安全策略。
 
 ## TTI 攻击原理
 

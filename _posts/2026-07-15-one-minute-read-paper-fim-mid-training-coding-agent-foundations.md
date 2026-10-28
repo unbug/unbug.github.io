@@ -8,7 +8,9 @@ tags: [fill-in-the-middle, mid-training, coding-agents, tool-use-inductive-bias,
 description: "达摩院与宾夕法尼亚大学把编码智能体的动作观察续写循环等价于函数调用站点，在去污染语料上做函数感知填充式中期训练，多个规模模型在编程基准显著提升。"
 ---
 
-阿里巴巴达摩院和宾夕法尼亚大学合作的一篇论文[《Function-Aware Fill-in-the-Middle as Mid-Training for Coding Agent Foundation Models》][paper1-url]（arXiv:2607.12463）提出了一种面向编码 Agent 基础模型的中期训练方法。通过在从 968 个 GitHub 仓库抽取的 2.6B token 去污染语料上进行自监督中期训练，该方法将函数调用模式映射到代码填充任务中，实现了工具调用归纳偏置的内化。在 SWE-Bench-Verified 上，7B、14B 和 Qwen3-8B 模型分别获得 +2.8、+3.0 和 +3.2 的绝对提升；SWE-Bench-Lite 上的提升更为显著，分别为 +3.7、+4.0 和 +5.4。
+阿里巴巴达摩院和宾夕法尼亚大学合作的一篇论文[《Function-Aware Fill-in-the-Middle as Mid-Training for Coding Agent Foundation Models》][paper1-url]（arXiv:2607.12463）提出了一种面向编码 Agent 基础模型的中期训练方法。
+
+通过在从 968 个 GitHub 仓库抽取的 2.6B token 去污染语料上进行自监督中期训练，该方法将函数调用模式映射到代码填充任务中，实现了工具调用归纳偏置的内化。在 SWE-Bench-Verified 上，7B、14B 和 Qwen3-8B 模型分别获得 +2.8、+3.0 和 +3.2 的绝对提升；SWE-Bench-Lite 上的提升更为显著，分别为 +3.7、+4.0 和 +5.4。
 
 ## FIM Mid-Training 核心原理
 

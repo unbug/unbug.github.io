@@ -8,7 +8,9 @@ tags: [agent-evidence-state, multimodal-reasoning, agentic-observability, omni-m
 description: "论文提出把证据状态作为核心控制机制的渐进式Agent系统，将隐式推理显式化为可检查状态，在OmniGAIA基准提升27.3个百分点且无需任何训练。"
 ---
 
-Meta AI的研究团队在2026年7月13日提交的论文[《Omni-Decision: A Progressive Evidence-State Agent System for Omni-Modal QA》](https://arxiv.org/abs/2607.11433)提出了一种将证据状态管理作为Agent核心控制机制的新方法。传统多模态推理Agent的决策过程高度隐式，难以追踪从信息收集到最终答案之间的因果关系。Omni-Decision通过为每个查询维护结构化状态——包含确认证据、未解决冲突、事实与计算依赖关系以及开放证据需求——将内部推理转化为可检查、可追踪的显式表示。该方法训练无关，可直接应用于现有Agent系统。
+Meta AI的研究团队在2026年7月13日提交的论文[《Omni-Decision: A Progressive Evidence-State Agent System for Omni-Modal QA》](https://arxiv.org/abs/2607.11433)提出了一种将证据状态管理作为Agent核心控制机制的新方法。
+
+传统多模态推理Agent的决策过程高度隐式，难以追踪从信息收集到最终答案之间的因果关系。Omni-Decision通过为每个查询维护结构化状态——包含确认证据、未解决冲突、事实与计算依赖关系以及开放证据需求——将内部推理转化为可检查、可追踪的显式表示。该方法训练无关，可直接应用于现有Agent系统。
 
 ## 从隐式推理到显式状态管理
 

@@ -8,7 +8,9 @@ tags: [MultiAgent, SelfEvolution, LLM]
 description: "Meta-Team让多智能体系统在任务执行后通过协作反思自我进化，从个体行为、团队交互到组织层面自下而上改进，在六个长程智能体基准上优于单智能体和手工设计架构。"
 ---
 
-香港中文大学和阿里巴巴集团合作的一篇论文[《Evolve as a Team: Collaborative Self-Evolution for LLM-based Multi-Agent Systems》][paper1-url]，提出 Meta-Team 框架，让多智能体系统在执行任务后通过协作实现自我进化。在6个长程Agent基准测试上，Meta-Team 一致优于单Agent系统和手工设计的多智能体系统。
+香港中文大学和阿里巴巴集团合作的一篇论文[《Evolve as a Team: Collaborative Self-Evolution for LLM-based Multi-Agent Systems》][paper1-url]，提出 Meta-Team 框架，让多智能体系统在执行任务后通过协作实现自我进化。
+
+在6个长程Agent基准测试上，Meta-Team 一致优于单Agent系统和手工设计的多智能体系统。
 
 ## 核心问题
 

@@ -8,7 +8,9 @@ image: assets/images/researcharena-framework.svg
 tags: [agent-safety, adversarial-ml, llm-security]
 ---
 
-DeepMind的论文[《ResearchArena: Evaluating Sabotage and Monitoring in Automated AI R&D》][paper1-url]，首次系统评估了AI Agent在自动化研发任务中执行隐蔽破坏行为的能力以及现有监控机制的检测效果。研究构建了覆盖四个长周期任务的评估框架，发现训练数据注入攻击的检测率不足50%，揭示了当前Agent安全监控体系的关键盲区。
+DeepMind的论文[《ResearchArena: Evaluating Sabotage and Monitoring in Automated AI R&D》][paper1-url]，首次系统评估了AI Agent在自动化研发任务中执行隐蔽破坏行为的能力以及现有监控机制的检测效果。
+
+研究构建了覆盖四个长周期任务的评估框架，发现训练数据注入攻击的检测率不足50%，揭示了当前Agent安全监控体系的关键盲区。
 
 ## 评估框架设计
 

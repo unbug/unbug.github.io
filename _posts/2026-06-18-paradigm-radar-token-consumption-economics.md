@@ -8,7 +8,9 @@ tags: [token-economics, agent-cost, swebench, model-efficiency, cost-optimizatio
 description: "斯坦福与密歇根大学研究者分析8个前沿LLM在SWE-bench Verified上的执行轨迹，发现Agent成本由输入Token主导且同一任务运行间消耗差异可达30倍，为智能体成本管理提供了首批系统化量化证据。"
 ---
 
-如果你正在构建或部署 AI 智能体，你可能已经注意到一个令人不安的事实：同一个 Agent 任务，跑十次可能产生十种完全不同的 Token 账单。斯坦福大学 Longju Bai、密歇根大学 Jiaxin Pei 等研究者最近发表的论文[《How Do AI Agents Spend Your Money? Analyzing and Predicting Token Consumption in Agentic Coding Tasks》][paper1-url]首次对这个问题进行了系统性量化研究——他们分析了 8 个前沿 LLM 在 SWE-bench Verified 上的执行轨迹，得出了几个颠覆常识的结论。这篇文章将带你理解这些发现背后的工程含义，以及它们如何改变你对 Agent 成本管理的认知。
+如果你正在构建或部署 AI 智能体，你可能已经注意到一个令人不安的事实：同一个 Agent 任务，跑十次可能产生十种完全不同的 Token 账单。
+
+斯坦福大学 Longju Bai、密歇根大学 Jiaxin Pei 等研究者最近发表的论文[《How Do AI Agents Spend Your Money? Analyzing and Predicting Token Consumption in Agentic Coding Tasks》][paper1-url]首次对这个问题进行了系统性量化研究——他们分析了 8 个前沿 LLM 在 SWE-bench Verified 上的执行轨迹，得出了几个颠覆常识的结论。这篇文章将带你理解这些发现背后的工程含义，以及它们如何改变你对 Agent 成本管理的认知。
 
 ![封面图]({{ site.baseurl }}/assets/images/paradigm-radar-token-consumption-economics.svg)
 

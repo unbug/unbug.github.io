@@ -6,7 +6,9 @@ categories: [Security]
 image: assets/images/screenshot-20230315-192219.jpg
 tags: [SupplyChainAttacks, OSS]
 ---
-SAP 安全研究机构、雷恩第一大学和上法兰西理工大学合著的论文[《SoK: Taxonomy of Attacks on Open-Source Software Supply Chains》][paper1-url]全面梳理了开源软件供应链攻击的方式，制作了涵盖 107 个独特向量的攻击树。并 17 位领域专家和 134 位软件开发人员一同总结了` 33 个缓解措施`。
+SAP 安全研究机构、雷恩第一大学和上法兰西理工大学合著的论文[《SoK: Taxonomy of Attacks on Open-Source Software Supply Chains》][paper1-url]全面梳理了开源软件供应链攻击的方式，制作了涵盖 107 个独特向量的攻击树。
+
+并 17 位领域专家和 134 位软件开发人员一同总结了` 33 个缓解措施`。
 
 ## 论文绘制的开源软件供应链攻击分类树
 它是一个攻击树的形式，包含了五个主要的攻击目标：`代码贡献、版本控制系统、构建系统、分发平台和下游用户`，每个攻击目标下面有多个攻击向量，即具体的攻击方法，每个攻击向量也有一个或多个与之相关的缓解措施。

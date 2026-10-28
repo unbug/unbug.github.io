@@ -8,7 +8,9 @@ tags: [generation-verification-gap, self-correction, inference-time-feedback-loo
 description: "生成-验证差距研究表明模型难以靠内部自我修正发现错误，甚至出现越修正越自信的错误Misevolve，引入外部验证器与交叉校验成为自我修正落地前提。"
 ---
 
-如果你的团队正在构建具有自我修正或自进化能力的 AI 智能体，你可能已经发现一个令人担忧的趋势：模型的生成能力正在迅速超越其验证或判断能力。2025年至2026年的多项研究（如《Shrinking the Generation-Verification Gap with Weak Verifiers》和《Weaver: Shrinking the Generation-Verification Gap by Scaling Compute for Verification》）深刻揭示了这一现象导致的自我修正机制失效问题。模型可以生成看似合理但实质错误的输出，并在自我验证时无法检测到自己生成的错误内容。本文将带你理解"生成-验证差距"（Generation-Verification Gap）与"Misevolve"风险如何成为现代自进化代理失败的核心根源。
+如果你的团队正在构建具有自我修正或自进化能力的 AI 智能体，你可能已经发现一个令人担忧的趋势：模型的生成能力正在迅速超越其验证或判断能力。
+
+2025年至2026年的多项研究（如《Shrinking the Generation-Verification Gap with Weak Verifiers》和《Weaver: Shrinking the Generation-Verification Gap by Scaling Compute for Verification》）深刻揭示了这一现象导致的自我修正机制失效问题。模型可以生成看似合理但实质错误的输出，并在自我验证时无法检测到自己生成的错误内容。本文将带你理解"生成-验证差距"（Generation-Verification Gap）与"Misevolve"风险如何成为现代自进化代理失败的核心根源。
 
 ## 为什么这个话题重要
 

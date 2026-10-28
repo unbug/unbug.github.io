@@ -6,7 +6,9 @@ date: 2026-02-28 00:00:00 +0800
 categories: [AI, Software Engineering]
 tags: [GenerativeAI, SoftwareEngineering, Copilot, Productivity]
 ---
-来自 Accenture 和 DFKI 的 2025 年论文[《Generative AI in Software Engineering: Transforming the Software Development Process》][paper1-url] 为我们展示了生成式AI如何从根本上改变软件工程的面貌。论文提出了"Software 3.0"的愿景，并从生产力、质量、创造力、效率四个维度全面分析了生成式AI的影响。GitHub Copilot 30% 的建议接受率、90% 的提交率，以及 20-40% 的生产力提升数据，都证明了这场变革已经到来。
+来自 Accenture 和 DFKI 的 2025 年论文[《Generative AI in Software Engineering: Transforming the Software Development Process》][paper1-url] 为我们展示了生成式AI如何从根本上改变软件工程的面貌。
+
+论文提出了"Software 3.0"的愿景，并从生产力、质量、创造力、效率四个维度全面分析了生成式AI的影响。GitHub Copilot 30% 的建议接受率、90% 的提交率，以及 20-40% 的生产力提升数据，都证明了这场变革已经到来。
 
 ## 1. 论文概览
 这篇论文系统地研究了生成式AI在软件工程中的应用现状和未来趋势。作者团队通过大量实证数据，从生产力、质量、创造力、效率四个核心维度，全面分析了生成式AI如何改变软件开发流程。论文不仅总结了当前的实践经验，更提出了"Software 3.0"的宏大愿景，为软件工程的未来发展指明了方向。

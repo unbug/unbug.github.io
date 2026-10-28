@@ -8,7 +8,11 @@ tags: [llm, multi-agent, safety]
 description: "MIT媒体实验室等提出仅用中性样本训练的三层无监督监控，以不超过0.2%的负载检出LLM拍卖智能体隐藏通道中的隐蔽合谋；白盒配额从1/4提到3/4使出价分布恢复率提升58.3个百分点。"
 ---
 
-美国麻省理工学院媒体实验室（MIT Media Lab）联合 Westtown School、University of Florida 与 SRI International 的论文[《Beyond the Transcript: Detecting Covert Coordination in Latent Multi-Agent Communication》][paper1-url]证明：当多个 LLM 智能体通过公开记录之外的连续隐藏状态（latent handoff）传递私有信息时，合谋可以在审计面之外发生，而仅用中性样本训练的三层无监督监控就能以不超过 `0.2%` 的监控负载将其检出。如果说 [Persuade][links-1] 研究的是 agent 被说服后改答案、[EchoCoT][links-2] 研究的是黑盒 API 泄露推理资产，本文考察的威胁面是第三种：agent 之间建立公开 transcript 看不见的私有通道。
+美国麻省理工学院媒体实验室（MIT Media Lab）联合 Westtown School、University of Florida 与 SRI International 的论文[《Beyond the Transcript: Detecting Covert Coordination in Latent Multi-Agent Communication》][paper1-url]证明：
+
+当多个 LLM 智能体通过公开记录之外的连续隐藏状态（latent handoff）传递私有信息时，合谋可以在审计面之外发生，而仅用中性样本训练的三层无监督监控就能以不超过 `0.2%` 的监控负载将其检出。
+
+如果说 [Persuade][links-1] 研究的是 agent 被说服后改答案、[EchoCoT][links-2] 研究的是黑盒 API 泄露推理资产，本文考察的威胁面是第三种：agent 之间建立公开 transcript 看不见的私有通道。
 
 ## 公开记录之外的私有通道
 

@@ -6,7 +6,11 @@ categories: [Security, FrontEnd]
 image: assets/images/screenshot-20230311-235854.jpg
 tags: [JavaScript]
 ---
-法国的图卢兹大学、斯特拉斯堡大学和国家信息与自动化研究所（INRIA）合著的论文[《SoK: In Search of Lost Time: A Review of JavaScript Timers in Browsers》][paper1-url] 测试了不同的浏览器和操作系统下的 JavaScript 定时器的性能和精度，收集了来自**Alexa Top 1M**网站的数据，分析了它们使用 JavaScript 定时器的频率和目的。发现：JavaScript  定时器性能和精度在不同的浏览器和操作系统下有着显著的差异，`存在着许多安全隐患，可以被用来实现一些高级的攻击`。
+法国的图卢兹大学、斯特拉斯堡大学和国家信息与自动化研究所（INRIA）合著的论文[《SoK: In Search of Lost Time: A Review of JavaScript Timers in Browsers》][paper1-url] 测试了不同的浏览器和操作系统下的 JavaScript 定时器的性能和精度，
+
+收集了来自**Alexa Top 1M**网站的数据，分析了它们使用 JavaScript 定时器的频率和目的。
+
+发现：JavaScript  定时器性能和精度在不同的浏览器和操作系统下有着显著的差异，`存在着许多安全隐患，可以被用来实现一些高级的攻击`。
 
 ## JavaScript 定时器的种类和特点
 -   JavaScript 定时器最早出现在1995年的Netscape Navigator 2.0中，最初只有两种类型：setTimeout和setInterval，用于在指定的时间间隔后或重复地执行一段代码。

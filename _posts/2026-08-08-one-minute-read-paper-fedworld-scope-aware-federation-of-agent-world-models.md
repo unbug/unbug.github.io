@@ -8,7 +8,9 @@ tags: [world-models, federated-learning, agent-training, sim-to-real]
 description: "各家 Agent 的世界模型各存各的，样本私有、作用域还可能冲突。论文提出 FedWorld 联邦协议：按作用域分拣合订规则、三方损失约束聚合，冲突转移隔离共存，不外传轨迹。"
 ---
 
-多 Agent 系统正从共享模型的单体走向各自部署：不同业务、不同终端设备上的 Agent 在各自环境里持续积累经验，各自维护一份世界模型。麻烦随之而来——不同客户端的状态转移规则可能互相冲突：tau-bench 的零售域允许修改已付款订单，航空域禁止，一条规则在一个作用域内是正确更新，换一个客户就是破坏。论文[《FedWorld: Federated Agent World Models with Scope-Aware Adaptation and Robustness to Conflicting Transitions》][paper1-url]（arXiv:2608.01561，Yuchao Hou 等 7 位作者，2026 年 8 月提交）把这一问题形式化，并给出联邦共享协议：不上传原始轨迹，只交换低维模型参数，聚合时按作用域路由，冲突转移单独处理。
+多 Agent 系统正从共享模型的单体走向各自部署：不同业务、不同终端设备上的 Agent 在各自环境里持续积累经验，各自维护一份世界模型。
+
+麻烦随之而来——不同客户端的状态转移规则可能互相冲突：tau-bench 的零售域允许修改已付款订单，航空域禁止，一条规则在一个作用域内是正确更新，换一个客户就是破坏。论文[《FedWorld: Federated Agent World Models with Scope-Aware Adaptation and Robustness to Conflicting Transitions》][paper1-url]（arXiv:2608.01561，Yuchao Hou 等 7 位作者，2026 年 8 月提交）把这一问题形式化，并给出联邦共享协议：不上传原始轨迹，只交换低维模型参数，聚合时按作用域路由，冲突转移单独处理。
 
 ![FedWorld 世界模型联邦示意：各客户是品种不同的种子库，检疫站按标签分拣合订，越库种子隔离存放]({{ site.baseurl }}/assets/images/fedworld-scope-federation.svg)
 

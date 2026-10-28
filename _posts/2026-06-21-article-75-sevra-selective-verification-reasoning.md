@@ -8,7 +8,9 @@ tags: [SEVRA, SelectiveVerification, ReasoningBudget, TokenEfficiency, AgentReas
 description: "SEVRA框架把推理验证决策升级为服务层控制器，按质量分数、翻转风险与剩余预算选择验证路径，实验证明盲目始终验证反而降低准确率，该框架在提升准确率同时减少后生成资源消耗。"
 ---
 
-弗吉尼亚理工大学的 Sajib Acharjee Dip、Dawei Zhou 和 Liqing Zhang 发表的论文[《重新思考还是延长预算？面向推理预算的选择性验证》][paper1-url]，揭示了推理时 Token 分配中的一个反直觉发现：**始终验证初始答案不仅浪费计算资源，在某些场景下还会降低准确率**。他们提出的 SEVRA（Selective Verification for Reasoning Allocation）框架将验证决策从固定策略升级为服务层控制器，在 MathFive 基准上达到 76.3% 的准确率，同时将有害翻转率从 2.2% 降至 1.0%，并减少 26.8% 的后生成 Token。
+弗吉尼亚理工大学的 Sajib Acharjee Dip、Dawei Zhou 和 Liqing Zhang 发表的论文[《重新思考还是延长预算？面向推理预算的选择性验证》][paper1-url]，揭示了推理时 Token 分配中的一个反直觉发现：**始终验证初始答案不仅浪费计算资源，在某些场景下还会降低准确率**。
+
+他们提出的 SEVRA（Selective Verification for Reasoning Allocation）框架将验证决策从固定策略升级为服务层控制器，在 MathFive 基准上达到 76.3% 的准确率，同时将有害翻转率从 2.2% 降至 1.0%，并减少 26.8% 的后生成 Token。
 
 ## 始终验证的代价
 

@@ -8,7 +8,11 @@ tags: [llm, reasoning, medical, faithfulness]
 description: "TU Eindhoven 与 Dana-Farber 的医疗 CoT 扰动审计发现，14 个模型在临床有意义的破坏性编辑上链条解耦率达 72.9%：诊断全对、答案不翻转，三个独立测试收敛，可见推理链基本没被真正使用。"
 ---
 
-埃因霍温理工大学（TU Eindhoven）与 Dana-Farber 癌症研究所合作的论文[《Right Diagnoses, Decorative Reasoning: A Perturbation Audit of Medical Chain-of-Thought》][paper1-url]（[arXiv:2608.24790][paper1-url]，2026-08-25 提交）检验了一个很少被直接测试的问题：临床医生把模型输出的推理链当作医学推理的证据，但这条可见的链到底有没有真正参与作答？此前 [《黑盒推理模型的隐藏思维链，正在被一条长度信号读走》][links-1] 处理的是链不可见时的提取问题，这篇处理的正好相反——链就摆在眼前，它被用了吗？
+埃因霍温理工大学（TU Eindhoven）与 Dana-Farber 癌症研究所合作的论文[《Right Diagnoses, Decorative Reasoning: A Perturbation Audit of Medical Chain-of-Thought》][paper1-url]（[arXiv:2608.24790][paper1-url]，
+
+2026-08-25 提交）检验了一个很少被直接测试的问题：
+
+临床医生把模型输出的推理链当作医学推理的证据，但这条可见的链到底有没有真正参与作答？此前 [《黑盒推理模型的隐藏思维链，正在被一条长度信号读走》][links-1] 处理的是链不可见时的提取问题，这篇处理的正好相反——链就摆在眼前，它被用了吗？
 
 ## 30 个临床算子同时改题目和链条
 

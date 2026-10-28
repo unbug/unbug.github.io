@@ -8,7 +8,13 @@ tags: [llm, machine-unlearning, evaluation, privacy]
 description: "一篇 263 个已发布 checkpoint 的机器遗忘审计发现：权重逐比特不变、仅在保留数据上重新拟合批归一化统计量，就能让 47 of 221 个发布数字越过自家种子散布并翻转 12 个合规判定，与被删数据幸存无关。"
 ---
 
-一篇 2026 年 9 月提交的机器遗忘（machine unlearning，指从已训练模型中抹除指定数据的影响并重发模型）审计预印本[《Published Unlearning Numbers Move Per Checkpoint, and Not Because the Removed Data Survives: An Audit of 263 Released Batch-Normalized Checkpoints》][paper1-url]（arXiv:2609.11490，abs 页未标注机构）发现：遗忘审计的结论可能不是模型学出来的，而是统计量挪出来的——在 263 个已发布 batch-normalized checkpoints 中，权重保持逐比特（bit-identical）不变、仅用保留数据重新拟合批归一化统计量，就有 47 of 221 个 checkpoint 的指标移动超过其自身发布种子的散布，若干个还落在「方法平均值不动」的方法内部。动的是 checkpoint 的属性，不是方法的属性；被删数据幸存并不是原因。
+一篇 2026 年 9 月提交的机器遗忘（machine unlearning，
+
+指从已训练模型中抹除指定数据的影响并重发模型）审计预印本[《Published Unlearning Numbers Move Per Checkpoint, and Not Because the Removed Data Survives: An Audit of 263 Released Batch-Normalized Checkpoints》][paper1-url]（arXiv:2609.11490，abs 页未标注机构）发现：
+
+遗忘审计的结论可能不是模型学出来的，而是统计量挪出来的——在 263 个已发布 batch-normalized checkpoints 中，权重保持逐比特（bit-identical）不变、仅用保留数据重新拟合批归一化统计量，就有 47 of 221 个 checkpoint 的指标移动超过其自身发布种子的散布，若干个还落在「方法平均值不动」的方法内部。
+
+动的是 checkpoint 的属性，不是方法的属性；被删数据幸存并不是原因。
 
 ## 数字为什么动：批归一化统计量是无人记录的自由度
 

@@ -6,7 +6,9 @@ categories: [Engineering]
 image: assets/images/screenshot-20230314-205003.jpg
 tags: [Monitor]
 ---
-荷兰代尔夫特理工大学和巴西圣保罗大学和著的论文[《Contemporary Software Monitoring: A Systematic Literature Review》][paper1-url] 对96篇发表在顶级同行评审会议和期刊上的论文进行了质量评估、分类和总结，以及对每个维度和分支下的研究现状、贡献和挑战进行了概述和比较，提出了当代日志框架（Contemporary Logging Framework）。
+荷兰代尔夫特理工大学和巴西圣保罗大学和著的论文[《Contemporary Software Monitoring: A Systematic Literature Review》][paper1-url] 对96篇发表在顶级同行评审会议和期刊上的论文进行了质量评估、分类和总结，
+
+以及对每个维度和分支下的研究现状、贡献和挑战进行了概述和比较，提出了当代日志框架（Contemporary Logging Framework）。
 
 ## 当代日志框架（Contemporary Logging Framework）
 

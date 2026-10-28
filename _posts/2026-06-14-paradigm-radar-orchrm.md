@@ -8,7 +8,9 @@ tags: [reward-modeling, multi-agent, orchestration, self-supervised, mas]
 description: "OrchRM利用多智能体执行自然产生的中间产物构建胜负对，在Bradley-Terry模型上自监督学习编排奖励，无需人工标注和完整Rollout，Token使用效率提升最高10倍，测试时扩展性能提升最高8%。"
 ---
 
-在多智能体系统（MAS）中，编排器决定了多个子代理如何协作完成任务。传统方法训练编排器需要昂贵的人工标注或完整的子代理 Rollout——每次评估都需要让所有子代理完整执行一遍，Token 消耗呈指数级增长。新加坡国立大学和 Sea AI Lab 联合发表的论文[《Reward Modeling for Multi-Agent Orchestration (OrchRM)》][paper1-url]提出了一种自监督奖励建模框架，利用多智能体执行过程中的中间产物构建胜负对，直接在 Bradley-Terry 模型上进行奖励学习。该方法在编排层面操作而非子代理层面，使 Token 使用效率提升最高 10 倍，同时在数学推理、网页问答和多跳推理等任务上将 MAS 测试时扩展性能提升最高 8%。
+在多智能体系统（MAS）中，编排器决定了多个子代理如何协作完成任务。
+
+传统方法训练编排器需要昂贵的人工标注或完整的子代理 Rollout——每次评估都需要让所有子代理完整执行一遍，Token 消耗呈指数级增长。新加坡国立大学和 Sea AI Lab 联合发表的论文[《Reward Modeling for Multi-Agent Orchestration (OrchRM)》][paper1-url]提出了一种自监督奖励建模框架，利用多智能体执行过程中的中间产物构建胜负对，直接在 Bradley-Terry 模型上进行奖励学习。该方法在编排层面操作而非子代理层面，使 Token 使用效率提升最高 10 倍，同时在数学推理、网页问答和多跳推理等任务上将 MAS 测试时扩展性能提升最高 8%。
 
 ![OrchRM 架构：从中间产物到奖励模型]({{ site.baseurl }}/assets/images/paradigm-radar-orchrm-architecture.svg)
 

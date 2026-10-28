@@ -8,7 +8,11 @@ tags: [llm, agent, multi-agent, safety, creativity]
 description: "论文提出三角色分离的异构智能体群体，用Scars机制把失败经验编译为可复用约束，达成辩论法不可达目标并省15.1%的token。"
 ---
 
-加州大学伯克利分校和斯坦福大学的合作团队发表了一篇论文[《Heterogeneous Agent Cohorts for Safe Open-Ended Exploration with Runtime Constraint Memory》][paper1-url]（https://arxiv.org/abs/2607.11226），提出异构智能体群体架构，通过角色分离在开放探索中同时保障安全性和创造力。该研究将LLM驱动的智能体分为Disrupter、Validator和Broker三种角色，引入Scars机制将失败经验编译为可复用约束，在空间语义沙盒实验中实现了辩论方法无法到达的目标，整体token消耗降低15.1%。
+加州大学伯克利分校和斯坦福大学的合作团队发表了一篇论文[《Heterogeneous Agent Cohorts for Safe Open-Ended Exploration with Runtime Constraint Memory》][paper1-url]（https://arxiv.org/abs/2607.11226），
+
+提出异构智能体群体架构，通过角色分离在开放探索中同时保障安全性和创造力。
+
+该研究将LLM驱动的智能体分为Disrupter、Validator和Broker三种角色，引入Scars机制将失败经验编译为可复用约束，在空间语义沙盒实验中实现了辩论方法无法到达的目标，整体token消耗降低15.1%。
 
 ## 角色分离解决安全困境
 

@@ -8,7 +8,11 @@ tags: [llm, agents, safety, financial-markets]
 description: "2026年9月的预印本用 LLM 交易员做 agent-based 金融市场模拟，发现更强的大语言模型行为相关性更高：共享推理正确时降低市场级风险，共享错误信息环境时同一相关性变成无法分散的系统风险。"
 ---
 
-Jillian Ross、Eric So、Zoe De Simone、Charles Pozniak 与 Andrew W. Lo 合作的论文 [Why Better Models Can Create Riskier Systems: Evidence from LLM Agents in Financial Markets][paper1-url]（2026年9月3日提交预印本）给出一个反直觉结论：提升单个模型的能力，可能让系统级结果变差而不是变好。机制不在个体犯错率，而在行为相关性——共享训练与架构让更强的模型行为更相似，相似的行为无法通过"多请几个专家"来分散，形成一条 `非可分散风险下限`（non-diversifiable risk floor）。
+Jillian Ross、Eric So、Zoe De Simone、Charles Pozniak 与 Andrew W. Lo 合作的论文 [Why Better Models Can Create Riskier Systems: Evidence from LLM Agents in Financial Markets][paper1-url]（2026年9月3日提交预印本）给出一个反直觉结论：提升单个模型的能力，
+
+可能让系统级结果变差而不是变好。
+
+机制不在个体犯错率，而在行为相关性——共享训练与架构让更强的模型行为更相似，相似的行为无法通过"多请几个专家"来分散，形成一条 `非可分散风险下限`（non-diversifiable risk floor）。
 
 ![能力提升与行为相关性同向上升，在正确与错误信息环境下产生相反的系统结果]({{ site.baseurl }}/assets/images/capability-correlation-risk.svg)
 

@@ -9,7 +9,9 @@ image: assets/images/2026-03-01-nested-learning-google-ai-breakthrough.jpg
 
 layout: post
 author: unbug
-title: "一分钟读论文：《Google Nested Learning：突破AI灾难性遗忘的新范式》"
+title: "一分钟读论文：
+
+《Google Nested Learning：突破AI灾难性遗忘的新范式》"
 categories: [AI, 机器学习, 深度学习]
 tags: [Nested Learning, Google Research, NeurIPS 2025]
 ---

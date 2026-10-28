@@ -8,7 +8,9 @@ tags: [agentic-coding, github, open-source, software-engineering, empirical-stud
 description: "这项研究基于两千余个开源仓库的两万五千余条智能体合并请求，首次从项目层面分析编码工具的采用模式，发现小型项目参与率显著更高，而整体仍处于早期阶段。"
 ---
 
-罗切斯特理工学院的论文[《Early Adoption of Agentic Coding Tools by GitHub Projects》][paper1-url]基于 AIDev-pop 数据集中 2,361 个仓库的 25,264 条 Agent PR，首次从项目层面系统研究了 AI Agent 编码工具在开源社区中的采用模式。现有研究主要关注 PR 级别的结果如代码质量和接受率，但缺乏对大型项目中 Agent 工具如何被采纳和管理的全局视角。研究发现小型项目的参与率显著高于大型项目，人类与 Agent 协作以单人监督为主，Agentic Coding 整体仍处于早期阶段。
+罗切斯特理工学院的论文[《Early Adoption of Agentic Coding Tools by GitHub Projects》][paper1-url]基于 AIDev-pop 数据集中 2,361 个仓库的 25,264 条 Agent PR，首次从项目层面系统研究了 AI Agent 编码工具在开源社区中的采用模式。
+
+现有研究主要关注 PR 级别的结果如代码质量和接受率，但缺乏对大型项目中 Agent 工具如何被采纳和管理的全局视角。研究发现小型项目的参与率显著高于大型项目，人类与 Agent 协作以单人监督为主，Agentic Coding 整体仍处于早期阶段。
 
 ## 采用现状：中位数仅一两条 PR 每季度
 

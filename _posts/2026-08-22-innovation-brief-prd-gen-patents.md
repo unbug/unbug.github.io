@@ -8,7 +8,9 @@ tags: [Patent, LLM, DeveloperTools, PRD, IndieHacker]
 description: "美国专利 US20260178323A1 于 2026 年 6 月公开：大模型自动生成产品需求文档 PRD 与用户故事拆解。Lovable ARR 达 5 亿美元，vibe coding 的瓶颈在需求输入。个人开发者可用现成 API 做一句话到 PRD 的工具，按订阅或按项目收费。"
 ---
 
-美国申请 `US20260178323A1` 于 2026 年 6 月 25 日公开：把一句产品想法交给大模型，自动生成完整的产品需求文档（PRD，Product Requirements Document）与用户故事拆解。vibe coding 上游的「一句话变结构化需求」这层工具，是一个独立开发者能接的活。
+美国申请 `US20260178323A1` 于 2026 年 6 月 25 日公开：
+
+把一句产品想法交给大模型，自动生成完整的产品需求文档（PRD，Product Requirements Document）与用户故事拆解。vibe coding 上游的「一句话变结构化需求」这层工具，是一个独立开发者能接的活。
 
 ![PRD 生成专利信号、技术趋势与个人开发者机会信息图]({{ site.baseurl }}/assets/images/innovation-brief-prd-gen-patents.svg)
 

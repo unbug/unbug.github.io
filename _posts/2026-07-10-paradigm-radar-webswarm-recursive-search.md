@@ -8,7 +8,9 @@ tags: [multi-agent, web-search, agent-orchestration, recursive-delegation, agent
 description: "论文提出渐进式递归委派的多Agent搜索框架WebSwarm，在四个深度广度基准上全面超越单Agent与并行多Agent基线方法。"
 ---
 
-上周阿里巴巴达摩院发布了 WebSwarm——一个渐进式递归多Agent搜索框架。在 BrowseComp-Plus、WideSearch、DeepWideSearch、GISA 四个基准测试上，WebSwarm 全面超越单 Agent ReAct 和多 Agent 并行基线。这篇文章将解析 WebSwarm 的核心原理，并带你理解为什么"从并行到递归"是 Web 搜索 Agent 的下一个范式转移。
+上周阿里巴巴达摩院发布了 WebSwarm——一个渐进式递归多Agent搜索框架。
+
+在 BrowseComp-Plus、WideSearch、DeepWideSearch、GISA 四个基准测试上，WebSwarm 全面超越单 Agent ReAct 和多 Agent 并行基线。这篇文章将解析 WebSwarm 的核心原理，并带你理解为什么"从并行到递归"是 Web 搜索 Agent 的下一个范式转移。
 
 ![封面图]({{ site.baseurl }}/assets/images/paradigm-radar-webswarm-recursive-search.svg)
 

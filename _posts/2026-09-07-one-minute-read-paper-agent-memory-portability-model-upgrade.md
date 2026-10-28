@@ -8,7 +8,11 @@ tags: [llm, agent, memory, knowledge-graph]
 description: "对照实验显示 Agent 换模型后记忆库原封不动也会失忆：笔记迁移精度随方向摆动 +9.91 或 -13.28 个百分点，固定 schema 知识图谱几乎零损耗。记忆的持久性取决于表示格式，保留原始历史才能修复。"
 ---
 
-Ankit Goyal 与 Jaideep Ray 合作的论文[《Does Your Agent's Memory Survive a Model Upgrade? A Controlled Study of Memory Portability》][paper1-url]（arXiv:2609.05339，2026-09-04 提交）给出一个反直觉结论：模型升级是常态运维，而 Agent 的记忆库即使原封不动也照样会"丢"。固定 schema 的知识图谱（KG-fixed）迁移几乎零损耗，换写入模型后精度仅变化 `+0.0004 ± 0.0020`；由模型压缩写成的自然语言笔记（NOTES）则与模型强耦合，精度随迁移方向摆动 `+9.91` 或 `-13.28` 个百分点。记忆的持久性取决于表示格式，而不是存储本身。
+Ankit Goyal 与 Jaideep Ray 合作的论文[《Does Your Agent's Memory Survive a Model Upgrade? A Controlled Study of Memory Portability》][paper1-url]（arXiv:2609.05339，
+
+2026-09-04 提交）给出一个反直觉结论：模型升级是常态运维，而 Agent 的记忆库即使原封不动也照样会"丢"。
+
+固定 schema 的知识图谱（KG-fixed）迁移几乎零损耗，换写入模型后精度仅变化 `+0.0004 ± 0.0020`；由模型压缩写成的自然语言笔记（NOTES）则与模型强耦合，精度随迁移方向摆动 `+9.91` 或 `-13.28` 个百分点。记忆的持久性取决于表示格式，而不是存储本身。
 
 ## 实验设计：历史逐字保留，只换记法
 

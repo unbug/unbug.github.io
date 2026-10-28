@@ -8,7 +8,9 @@ image: assets/images/brainpilot-architecture.svg
 tags: [agentic-research, brain-science, fabrication-detection, traceability, multi-agent-systems]
 ---
 
-清华大学、上海智源研究院、复旦大学等11家机构联合发表的论文[《BrainPilot: Automating Brain Discovery with Agentic Research》](https://arxiv.org/abs/2607.15079)，提出了一套面向脑科学研究的多Agent协作系统。与多数将AI Agent应用于特定领域的研究不同，BrainPilot的核心贡献在于**可追溯性设计**和**伪造检测机制**。它通过PI-Agent协调七个专业智能体、Graph of Trace记录完整推理链、以及Auditor Agent实时审计事实准确性，为多Agent科研自动化提供了安全可靠的范式。
+清华大学、上海智源研究院、复旦大学等11家机构联合发表的论文[《BrainPilot: Automating Brain Discovery with Agentic Research》](https://arxiv.org/abs/2607.15079)，提出了一套面向脑科学研究的多Agent协作系统。
+
+与多数将AI Agent应用于特定领域的研究不同，BrainPilot的核心贡献在于**可追溯性设计**和**伪造检测机制**。它通过PI-Agent协调七个专业智能体、Graph of Trace记录完整推理链、以及Auditor Agent实时审计事实准确性，为多Agent科研自动化提供了安全可靠的范式。
 
 ## PI-Agent协调的多专家架构
 

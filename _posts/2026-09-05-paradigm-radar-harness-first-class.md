@@ -8,7 +8,11 @@ tags: [agent, harness, benchmark, evaluation, supply-chain]
 description: "FrontierHarness 在同一模型下横评 9 个执行外壳，通过率相差 16.7 个百分点、成本相差 17 倍；DeepSeek 发布插件化开源外壳，arXiv 三天内出现 harness 基准论文潮并长出供应链攻击面。Agent 的竞争正从换模型转向换更好的执行外壳。"
 ---
 
-9 月 2 日登上 Hacker News 的 FrontierHarness Eval（HN Algolia API 2026-09-06 实测 `81` 分）给出结论：同一 Kimi K3 模型、同一运行时下，横评 9 个执行外壳（harness，包裹在 LLM 外、负责工具调用与沙箱验证的那层软件），任务通过率最高 `66.7%`、最低 `50.0%`，每任务成本相差 `17` 倍。模型权重冻结时，仅换外壳就有这种量级的差距：竞争焦点正从「选哪个模型」转向「基准化哪层外壳」。这与本刊 8 月 26 日[《不再调权重：Agent 的自进化搬进了 Harness》]({{ site.baseurl }}/paradigm-radar-evolving-harness-memory-skill/)视角不同：那篇讲外壳内的自我进化机制，这篇讲外壳本身成为被标准化与基准化的对象。
+9 月 2 日登上 Hacker News 的 FrontierHarness Eval（HN Algolia API 2026-09-06 实测 `81` 分）给出结论：
+
+同一 Kimi K3 模型、同一运行时下，横评 9 个执行外壳（harness，包裹在 LLM 外、负责工具调用与沙箱验证的那层软件），任务通过率最高 `66.7%`、最低 `50.0%`，每任务成本相差 `17` 倍。
+
+模型权重冻结时，仅换外壳就有这种量级的差距：竞争焦点正从「选哪个模型」转向「基准化哪层外壳」。这与本刊 8 月 26 日[《不再调权重：Agent 的自进化搬进了 Harness》]({{ site.baseurl }}/paradigm-radar-evolving-harness-memory-skill/)视角不同：那篇讲外壳内的自我进化机制，这篇讲外壳本身成为被标准化与基准化的对象。
 
 ![同一模型下九个 harness 的通过率与成本差距]( {{ site.baseurl }}/assets/images/paradigm-radar-harness-first-class.svg )
 

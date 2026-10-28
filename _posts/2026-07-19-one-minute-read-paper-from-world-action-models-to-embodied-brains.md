@@ -8,7 +8,9 @@ image: assets/images/wam-roadmap.svg
 tags: [world-models, embodied-ai, wam, physical-intelligence, agentic-systems]
 ---
 
-本文是对 arXiv:2607.11689 的系统性解读。该论文由上海人工智能实验室与南京大学的研究团队联合提出，题为《From World Action Models to Embodied Brains: A Roadmap for Open-World Physical Intelligence》。文章系统梳理了从传统世界模型到 World Action Models（WAMs）的演进路径，并提出了以"具身大脑"为核心的协同进化路线图，为开放世界的物理智能研究提供了清晰的框架指引。
+本文是对 arXiv:2607.11689 的系统性解读。
+
+该论文由上海人工智能实验室与南京大学的研究团队联合提出，题为《From World Action Models to Embodied Brains: A Roadmap for Open-World Physical Intelligence》。文章系统梳理了从传统世界模型到 World Action Models（WAMs）的演进路径，并提出了以"具身大脑"为核心的协同进化路线图，为开放世界的物理智能研究提供了清晰的框架指引。
 
 ## WAM 与三个关键断层
 

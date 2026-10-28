@@ -8,7 +8,9 @@ tags: [agent, mcp, pi, architecture, orchestration]
 description: "MCP协议统一工具发现与上下文管理，叠加PI的Plan-Execute-Reflect循环后，工具集成代码减少约60%，容错性与执行成功率同步提升。"
 ---
 
-如果你的团队正在构建 AI 智能体，你可能已经发现两个并行的痛点：工具调用的上下文管理太碎片化，而传统的 ReAct 循环在复杂任务中容易陷入无效试错。2026 年，AI Agent 编排正经历一次深刻的范式转移——MCP（Model Context Protocol）与 PI（Plan-Execute）架构的融合，正在为自适应智能体提供全新的基础设施。本文将带你解析这一融合范式的核心原理，并提供可实操的落地路径。
+如果你的团队正在构建 AI 智能体，你可能已经发现两个并行的痛点：工具调用的上下文管理太碎片化，而传统的 ReAct 循环在复杂任务中容易陷入无效试错。
+
+2026 年，AI Agent 编排正经历一次深刻的范式转移——MCP（Model Context Protocol）与 PI（Plan-Execute）架构的融合，正在为自适应智能体提供全新的基础设施。本文将带你解析这一融合范式的核心原理，并提供可实操的落地路径。
 
 ## 为什么传统 Agent 编排不够用了
 

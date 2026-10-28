@@ -8,7 +8,11 @@ layout: post
 description: "论文把上下文压缩纳入强化学习训练，让长程Agent学会自主管理信息密度，在SWE-bench提升7.0个百分点并已投入生产。"
 ---
 
-本文讨论的论文是 CompactionRL: Reinforcement Learning with Context Compaction for Long-Horizon Agents，arXiv:2607.05378，由清华大学（Tsinghua University）的 Yujiang Li、Zhenyu Hou、Yi Jing、Jie Tang 和 Yuxiao Dong 五位研究者完成。论文链接：[arXiv:2607.05378](https://arxiv.org/abs/2607.05378)
+本文讨论的论文是 CompactionRL: Reinforcement Learning with Context Compaction for Long-Horizon Agents，arXiv:2607.05378，
+
+由清华大学（Tsinghua University）的 Yujiang Li、Zhenyu Hou、Yi Jing、Jie Tang 和 Yuxiao Dong 五位研究者完成。
+
+论文链接：[arXiv:2607.05378](https://arxiv.org/abs/2607.05378)
 
 长程Agent面临一个日益严峻的瓶颈：随着任务复杂度上升，Agent需要维护的上下文长度呈线性甚至超线性增长，而现有模型的上下文窗口始终有限。当对话历史超出窗口容量时，关键信息被截断或遗忘，导致Agent在需要多步推理和长期记忆的任务中性能急剧下降。CompactionRL的核心洞察是：与其被动等待模型支持更大的上下文窗口，不如主动将压缩机制融入强化学习训练框架，让Agent学会在有限资源下自主管理信息密度。这一思路与人类认知中的注意力分配机制高度相似——我们并非记住每一句话的每个字，而是有选择地保留关键信息、遗忘冗余细节。
 

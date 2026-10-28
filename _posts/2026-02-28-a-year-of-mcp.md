@@ -6,7 +6,9 @@ categories: [AI, Agent]
 tags: [MCP, AgenticAI, AAIF]
 date: 2026-02-28 00:00:00 +0800
 ---
-来自 Leonardo Piñeyro 和 Pento 的论文[《A Year of MCP: From Internal Experiment to Industry Standard》][paper1-url] 为我们展示了 MCP（Model Context Protocol）从诞生到成为行业标准的惊人崛起之路。一年时间，MCP SDK 月下载量达到 9700 万，10,000+ 活跃服务器，更重要的是获得了 Anthropic、OpenAI、Google、Microsoft 等巨头的支持，成为 Agentic AI 的事实标准。
+来自 Leonardo Piñeyro 和 Pento 的论文[《A Year of MCP: From Internal Experiment to Industry Standard》][paper1-url] 为我们展示了 MCP（Model Context Protocol）从诞生到成为行业标准的惊人崛起之路。
+
+一年时间，MCP SDK 月下载量达到 9700 万，10,000+ 活跃服务器，更重要的是获得了 Anthropic、OpenAI、Google、Microsoft 等巨头的支持，成为 Agentic AI 的事实标准。
 
 ## 1. 论文概览
 这篇论文全面回顾了 MCP 一周年的发展历程，从最初的内部实验项目，到如今被全球顶级科技公司采纳的行业标准。MCP 不仅在技术层面取得了巨大成功，更重要的是推动了整个 Agentic AI 生态的形成，成为连接 AI 模型与现实世界的关键桥梁。

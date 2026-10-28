@@ -8,7 +8,9 @@ tags: [Agent, Orchestration, PI, ReAct, Architecture]
 description: "Agent编排正从ReAct紧耦合循环转向PI的规划-执行-监控三段式架构，减少约60%编排代码的同时提升容错性与可预测性，监控组件负责失败检测与重规划。"
 ---
 
-如果你正在构建 AI 智能体，你可能已经发现一个痛点：传统的 ReAct（Reasoning + Acting）循环在处理多工具、长链路任务时，经常陷入无限循环或丢失全局目标。上周 Anthropic 发布的内部基准测试显示，在 Agent 编排任务上，基于 PI（Plan-Interact/Execute）架构的智能体比传统 ReAct 方案性能提升了 47%。这篇文章将解析 PI 的核心原理，并带你动手实现一个高可靠的多工具智能体。
+如果你正在构建 AI 智能体，你可能已经发现一个痛点：传统的 ReAct（Reasoning + Acting）循环在处理多工具、长链路任务时，经常陷入无限循环或丢失全局目标。
+
+上周 Anthropic 发布的内部基准测试显示，在 Agent 编排任务上，基于 PI（Plan-Interact/Execute）架构的智能体比传统 ReAct 方案性能提升了 47%。这篇文章将解析 PI 的核心原理，并带你动手实现一个高可靠的多工具智能体。
 
 ## 为什么传统 Agent 编排不够用了
 

@@ -8,7 +8,11 @@ tags: [agent-economy, trust-infrastructure, erc-8004, sybil-attack, decentralize
 description: "帝国理工对ERC-8004三条链的实证研究发现有效注册率仅3%至15%，Sybil攻击者占评审者60%至91%，揭示无许可信任与实际不可信的悖论。"
 ---
 
-帝国理工学院的研究团队在 arXiv 上发表了一篇论文[《Can Trustless Agents Be Trusted? An Empirical Study of the ERC-8004 Decentralized AI Agent Ecosystem》][paper1-url]，对当前最主流的去中心化AI Agent信任基础设施ERC-8004进行了系统性实证评估。核心发现令人不安：在以太坊、BSC和Base三条链上，有效注册文件比例仅为3%至15%，Sybil攻击者占评审者的60%至91%，去除Sybil标记的反馈后，高达15.5%至89.4%的Agent没有任何有效反馈。这篇文章将解析ERC-8004架构的设计逻辑、实证数据揭示的信任失效机制，以及这些发现对AI Agent基础设施设计的深远影响。
+帝国理工学院的研究团队在 arXiv 上发表了一篇论文[《Can Trustless Agents Be Trusted? An Empirical Study of the ERC-8004 Decentralized AI Agent Ecosystem》][paper1-url]，
+
+对当前最主流的去中心化AI Agent信任基础设施ERC-8004进行了系统性实证评估。
+
+核心发现令人不安：在以太坊、BSC和Base三条链上，有效注册文件比例仅为3%至15%，Sybil攻击者占评审者的60%至91%，去除Sybil标记的反馈后，高达15.5%至89.4%的Agent没有任何有效反馈。这篇文章将解析ERC-8004架构的设计逻辑、实证数据揭示的信任失效机制，以及这些发现对AI Agent基础设施设计的深远影响。
 
 ## 为什么去中心化Agent信任是一个紧迫问题
 

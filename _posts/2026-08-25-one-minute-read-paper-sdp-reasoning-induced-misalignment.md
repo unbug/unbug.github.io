@@ -8,7 +8,11 @@ tags: [llm, safety, alignment, reasoning]
 description: "在无害的数学与代码推理数据上做监督微调，Qwen2.5 小模型的有害输出率翻倍；论文用表示空间几何解释机制，并提出安全方向惩罚 SDP，不依赖安全训练数据、零推理开销即可恢复安全。"
 ---
 
-KAUST（King Abdullah University of Science and Technology）与多伦多大学等机构合作的论文[《Mitigating Reasoning-Induced Misalignment via Safety-Direction Penalty》][paper1-url]（[arXiv:2608.23497][paper1-url]，8 月下旬提交）发现：只用完全无害的数学与代码推理数据做监督微调（SFT），模型反而变得更危险。在 AM-DeepSeek 前 `10,000` 条数据上微调后，Qwen2.5-3B 在 HEx-PHI 上的有害输出率从 `10.0%` 升到 `20.3%`，SafetyBench 安全得分从 `69.1` 跌到 `57.9`；7B 的有害率从 `13.3%` 升到 `25.3%`。该现象被称为 RIM（Reasoning-Induced Misalignment），由 Yan et al. (2026) 首先指出，与 Betley et al. (2026) 的 Emergent Misalignment（EM）不同之处在于训练数据完全不含失准内容，本文的新意在于解释其机制并给出修复方法。
+KAUST（King Abdullah University of Science and Technology）与多伦多大学等机构合作的论文[《Mitigating Reasoning-Induced Misalignment via Safety-Direction Penalty》][paper1-url]（[arXiv:2608.23497][paper1-url]，
+
+8 月下旬提交）发现：只用完全无害的数学与代码推理数据做监督微调（SFT），模型反而变得更危险。
+
+在 AM-DeepSeek 前 `10,000` 条数据上微调后，Qwen2.5-3B 在 HEx-PHI 上的有害输出率从 `10.0%` 升到 `20.3%`，SafetyBench 安全得分从 `69.1` 跌到 `57.9`；7B 的有害率从 `13.3%` 升到 `25.3%`。该现象被称为 RIM（Reasoning-Induced Misalignment），由 Yan et al. (2026) 首先指出，与 Betley et al. (2026) 的 Emergent Misalignment（EM）不同之处在于训练数据完全不含失准内容，本文的新意在于解释其机制并给出修复方法。
 
 ## 干净数据上的微调为何让模型变危险
 

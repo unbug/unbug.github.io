@@ -8,7 +8,9 @@ tags: [agent-evaluation, oncall, root-cause-analysis, sre-agents]
 description: "构建生产保真度的On-call根因分析基准，把通用编码Agent放进真实环境检验。最佳模型中等难度RCA准确率仅25.3%，困难任务仅10.0%。"
 ---
 
-研究团队发表的论文[《ORCA-bench: How Ready Are Language Model Agents for Oncall?》][paper1-url]提出了一个生产保真度的根因分析基准测试，将通用编码 Agent 置于真实的生产环境中进行评估。在包含 1,079 个任务的测试中，最佳语言模型 Agent 在中等难度任务上的 RCA 准确率仅为 25.3%，在困难任务上仅 10.0%——即使使用 Claude Fable 5 模型也无法弥合这一差距。
+研究团队发表的论文[《ORCA-bench: How Ready Are Language Model Agents for Oncall?》][paper1-url]提出了一个生产保真度的根因分析基准测试，将通用编码 Agent 置于真实的生产环境中进行评估。
+
+在包含 1,079 个任务的测试中，最佳语言模型 Agent 在中等难度任务上的 RCA 准确率仅为 25.3%，在困难任务上仅 10.0%——即使使用 Claude Fable 5 模型也无法弥合这一差距。
 
 ## 核心问题：合成基准与生产现实的鸿沟
 

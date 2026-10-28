@@ -8,7 +8,9 @@ tags: [llm, agent-world-model, language-model, reinforcement-learning, multi-dom
 description: "通义千问团队提出面向通用智能体的语言世界模型，覆盖七个领域并用超千万条真实交互轨迹分三阶段训练，可仿真环境反馈，并在自建基准上实现多维仿真质量评估。"
 ---
 
-阿里巴巴通义千问团队的一篇论文[《Qwen-AgentWorld: Language World Models for General Agents》][paper1-url]提出了首个面向通用智能体环境的语言世界模型。该模型覆盖七个领域，使用超过一千万条真实环境交互轨迹进行三阶段训练，在AgentWorldBench基准上实现了多维度仿真质量评估。
+阿里巴巴通义千问团队的一篇论文[《Qwen-AgentWorld: Language World Models for General Agents》][paper1-url]提出了首个面向通用智能体环境的语言世界模型。
+
+该模型覆盖七个领域，使用超过一千万条真实环境交互轨迹进行三阶段训练，在AgentWorldBench基准上实现了多维度仿真质量评估。
 
 ## 问题背景：Agent的策略强、世界模型弱
 

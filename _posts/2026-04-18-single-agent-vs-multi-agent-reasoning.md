@@ -7,7 +7,11 @@ image: assets/images/single-vs-multi-agent-reasoning.jpg
 tags: [llm, multi-agent, single-agent, reasoning, information-theory]
 ---
 
-斯坦福大学的论文[《Single-Agent LLMs Outperform Multi-Agent Systems on Multi-Hop Reasoning Tasks》][paper1-url]对当前火热的多Agent系统提出了一个尖锐挑战：**当计算量归一化后，单Agent系统（SAS）的表现可以匹敌甚至超越多Agent系统（MAS）**。论文作者Hoang Tran和Douwe Kiela用信息论的严格论证揭示了多Agent范式的理论局限。这一发现对多Agent范式构成了基础性的质疑。
+斯坦福大学的论文[《Single-Agent LLMs Outperform Multi-Agent Systems on Multi-Hop Reasoning Tasks》][paper1-url]对当前火热的多Agent系统提出了一个尖锐挑战：
+
+**当计算量归一化后，单Agent系统（SAS）的表现可以匹敌甚至超越多Agent系统（MAS）**。
+
+论文作者Hoang Tran和Douwe Kiela用信息论的严格论证揭示了多Agent范式的理论局限。这一发现对多Agent范式构成了基础性的质疑。
 
 ## 多Agent范式的计算混淆
 

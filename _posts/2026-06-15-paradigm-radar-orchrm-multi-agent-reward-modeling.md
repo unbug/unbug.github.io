@@ -8,7 +8,9 @@ tags: [multi-agent, reward-modeling, orchestration, self-supervised, mas]
 description: "OrchRM是面向多智能体编排质量的自监督奖励建模框架，从执行中间产物直接构建胜负对并输入Bradley-Terry模型学习评分函数，在数学推理与网页问答任务上把Token效率提升最高10倍、测试时扩展准确率提升8%。"
 ---
 
-上周，新加坡国立大学与 Sea AI Lab 联合发布了 OrchRM——首个面向多智能体编排质量的自监督奖励建模框架。在数学推理、网页问答和多跳推理任务上，基于 OrchRM 训练的 MAS 编排器将 token 使用效率提升最高 10 倍，测试时扩展准确率提升 8%。传统方法训练一个编排器需要完整的子代理 rollout 或人工标注，OrchRM 则利用多智能体执行过程中的中间产物直接构建胜负对，在 Bradley-Terry 模型上进行奖励学习。本文将解析 OrchRM 的核心原理、实操方法和它在多智能体系统训练范式中的位置。
+上周，新加坡国立大学与 Sea AI Lab 联合发布了 OrchRM——首个面向多智能体编排质量的自监督奖励建模框架。
+
+在数学推理、网页问答和多跳推理任务上，基于 OrchRM 训练的 MAS 编排器将 token 使用效率提升最高 10 倍，测试时扩展准确率提升 8%。传统方法训练一个编排器需要完整的子代理 rollout 或人工标注，OrchRM 则利用多智能体执行过程中的中间产物直接构建胜负对，在 Bradley-Terry 模型上进行奖励学习。本文将解析 OrchRM 的核心原理、实操方法和它在多智能体系统训练范式中的位置。
 
 ![OrchRM 整体架构图]({{ site.baseurl }}/assets/images/paradigm-radar-orchrm.svg)
 

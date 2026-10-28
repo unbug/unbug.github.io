@@ -8,7 +8,11 @@ tags: [llm, agent, memory, context-management]
 description: "长程 Agent 压缩上下文时，安全规则与情景日志被同一比例摘要，而只有规则需要逐字精确才能保持可执行：Claude Code 生产配置下五轮压缩后仅存 10% 安全规则。论文提出按知识类型分流的 Knowledge Triage，五轮后保留率 96%。"
 ---
 
-德国帕绍大学（University of Passau）与奥地利 IT:U Linz 合作的论文[《The Compaction Cliff in Long-Running AI Agent Memory》][paper1-url]（arXiv:2608.22752，2026-08-24 提交）发现：长程 Agent 的上下文预算溢出时，安全规则与情景日志按同一压缩率被摘要，但只有安全规则需要逐字精确才能保持可执行。在 `20` 个生产 agent 配置上实测 Claude Code 的 /compact 提示（Sonnet 4.6），一轮压缩后仅保留 `53%` 的安全规则，五轮后只剩 `10%`。论文将这种随压缩轮次累积的保真度断崖命名为 Compaction Cliff（压缩悬崖）。
+德国帕绍大学（University of Passau）与奥地利 IT:U Linz 合作的论文[《The Compaction Cliff in Long-Running AI Agent Memory》][paper1-url]（arXiv:2608.22752，2026-08-24 提交）发现：
+
+长程 Agent 的上下文预算溢出时，安全规则与情景日志按同一压缩率被摘要，但只有安全规则需要逐字精确才能保持可执行。
+
+在 `20` 个生产 agent 配置上实测 Claude Code 的 /compact 提示（Sonnet 4.6），一轮压缩后仅保留 `53%` 的安全规则，五轮后只剩 `10%`。论文将这种随压缩轮次累积的保真度断崖命名为 Compaction Cliff（压缩悬崖）。
 
 ## Knowledge Triage：按类型分流的知识保留策略
 

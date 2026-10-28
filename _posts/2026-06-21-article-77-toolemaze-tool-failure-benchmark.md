@@ -8,7 +8,9 @@ tags: [ToolCalling,Benchmark,DynamicReplanning,AnomalyRecovery,AgentReliability]
 description: "腾讯优图与清华等机构提出ToolMaze基准，以DAG拓扑与2×2扰动分类评测LLM智能体工具失败下的重规划能力，发现动态重规划独立于模型缩放，隐式语义失败时扰动恢复率暴跌约37个百分点。"
 ---
 
-腾讯优图实验室、中山大学与清华大学合作的一篇论文[《When Tools Fail: Benchmarking Dynamic Replanning and Anomaly Recovery in LLM Agents》][paper1-url]，首次系统性地评估了LLM智能体在工具失败场景下的动态重规划能力。现有基准测试几乎全部在理想化的"快乐路径"上评估工具集成推理，忽视了真实世界中的工具失败场景。论文发现**动态重规划是独立于模型缩放和提示工程的独特瓶颈**：容错能力的增长仅为基本任务执行的1/3.66倍，隐式语义失败下扰动恢复率暴跌约37%。
+腾讯优图实验室、中山大学与清华大学合作的一篇论文[《When Tools Fail: Benchmarking Dynamic Replanning and Anomaly Recovery in LLM Agents》][paper1-url]，首次系统性地评估了LLM智能体在工具失败场景下的动态重规划能力。
+
+现有基准测试几乎全部在理想化的"快乐路径"上评估工具集成推理，忽视了真实世界中的工具失败场景。论文发现**动态重规划是独立于模型缩放和提示工程的独特瓶颈**：容错能力的增长仅为基本任务执行的1/3.66倍，隐式语义失败下扰动恢复率暴跌约37%。
 
 ## 二维基准设计：拓扑复杂度与扰动分类法
 

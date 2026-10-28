@@ -7,7 +7,9 @@ image: assets/images/ai-trajectory-reward.jpg
 tags: [reward-modeling, agent-alignment, trajectory-level, plan-reward-bench]
 ---
 
-日本东京大学和美国麻省理工学院的论文 [《Aligning Agents via Planning: A Benchmark for Trajectory-Level Reward Modeling》][paper1-url] 提出了首个 **trajectory-level** 的 Agent 对齐偏好基准 **Plan-RewardBench**，系统性地揭示了当前奖励模型在评估多步行为序列时的能力缺口，为 Agent 对齐技术提供了全新的评估维度。
+日本东京大学和美国麻省理工学院的论文 [《Aligning Agents via Planning: A Benchmark for Trajectory-Level Reward Modeling》][paper1-url] 提出了首个 **trajectory-level** 的 Agent 对齐偏好基准 **Plan-RewardBench**，
+
+系统性地揭示了当前奖励模型在评估多步行为序列时的能力缺口，为 Agent 对齐技术提供了全新的评估维度。
 
 ## 奖励建模面临的新挑战
 

@@ -8,7 +8,9 @@ tags: [agent-skills, standards, developer-tools, mcp]
 description: "SKILL.md 正从 Anthropic 私有扩展变成跨厂商事实标准，官方客户端列表已有 46 款并覆盖 OpenAI、Google、微软三大阵营。Agent 能力分发层的接口正在定型，但注册表、质量评估与供应链安全至今仍是空白。"
 ---
 
-给 Claude Code 写一份配置、给 Copilot 再写一份、给 Gemini CLI 又写一份——各写各的日子正在结束。Agent Skills（以 `SKILL.md` 为核心的能力打包格式）由 Anthropic 发起，规范仓库 agentskills/agentskills 已有 `25,385` 星，官方客户端列表收录 `46` 款工具，OpenAI、Google、微软阵营全部在列（均截至 2026-09-16 实测）。范式转移是从「每个工具写一份厂商专属配置」到「写一个 SKILL.md，全端通吃」：能力分发层的接口正在定型，而注册表、质量评估、供应链安全还全是空白。
+给 Claude Code 写一份配置、给 Copilot 再写一份、给 Gemini CLI 又写一份——各写各的日子正在结束。
+
+Agent Skills（以 `SKILL.md` 为核心的能力打包格式）由 Anthropic 发起，规范仓库 agentskills/agentskills 已有 `25,385` 星，官方客户端列表收录 `46` 款工具，OpenAI、Google、微软阵营全部在列（均截至 2026-09-16 实测）。范式转移是从「每个工具写一份厂商专属配置」到「写一个 SKILL.md，全端通吃」：能力分发层的接口正在定型，而注册表、质量评估、供应链安全还全是空白。
 
 ## 一家发起，三家跟进
 

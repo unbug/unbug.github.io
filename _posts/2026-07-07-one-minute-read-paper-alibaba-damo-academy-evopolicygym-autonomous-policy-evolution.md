@@ -8,7 +8,11 @@ tags: [policy-evolution, agent-evaluation, interactive-rl, self-improvement, tra
 description: "达摩院基于16个交互环境提出自主策略演化基准，让智能体在固定预算内反复修改自己的策略代码，轨迹级诊断揭示各模型在预算分配与反馈转化上的差异。"
 ---
 
-阿里巴巴达摩院团队的一篇论文[《EvoPolicyGym: Evaluating Autonomous Policy Evolution in Interactive Environments》](https://arxiv.org/abs/2607.02440)首次提出"自主策略演化"作为独立的Agent评估范式——在固定交互预算内，让Agent反复编辑和迭代改进自己的可执行策略系统，评估其从反馈中学习并持续优化的能力。核心突破在于：现有评估通常将迭代改进过程压缩为单一最终得分，而本文提供了轨迹级诊断框架，揭示不同模型如何分配预算、转化反馈、精炼策略。
+阿里巴巴达摩院团队的一篇论文[《EvoPolicyGym: Evaluating Autonomous Policy Evolution in Interactive Environments》](https://arxiv.org/abs/2607.02440)首次提出"自主策略演化"作为独立的Agent评估范式——在固定交互预算内，
+
+让Agent反复编辑和迭代改进自己的可执行策略系统，评估其从反馈中学习并持续优化的能力。
+
+核心突破在于：现有评估通常将迭代改进过程压缩为单一最终得分，而本文提供了轨迹级诊断框架，揭示不同模型如何分配预算、转化反馈、精炼策略。
 
 ## 自主策略演化的新范式
 

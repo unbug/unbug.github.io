@@ -7,7 +7,9 @@ image: assets/images/ai-agent-security-framework.jpg
 tags: [AI-Security, MCP, GDPR, TRiSM]
 ---
 
-微软、Google DeepMind 和斯坦福大学合作的一系列论文[《A Formal Security Framework for MCP-Based AI Agents: Threat Taxonomy and Verification》][paper1-url]，提出了 MCPShield 形式化验证安全框架，解决 MCP 协议中 7 大类 23 种攻击向量的安全问题。
+微软、Google DeepMind 和斯坦福大学合作的一系列论文[《A Formal Security Framework for MCP-Based AI Agents: Threat Taxonomy and Verification》][paper1-url]，
+
+提出了 MCPShield 形式化验证安全框架，解决 MCP 协议中 7 大类 23 种攻击向量的安全问题。
 
 ## MCPShield 安全框架核心
 

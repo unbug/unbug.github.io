@@ -6,7 +6,9 @@ categories: [Engineering]
 image: assets/images/screenshot-20230127-184311.jpg
 tags: [CodeReview, Agile]
 ---
-Code Review 从结构化和严格的形式演变为灵活的、基于工具的异步过程，即` Modern Code Review (MCR)`。巴西南里奥格兰德州联邦大学 (UFRGS)和阿雷格里港信息学研究所合著的论文[《A Systematic Literature Review and Taxonomy of Modern Code Review》][paper1-url] 系统分析了 139 篇论文和来自行业、开源项目的问卷，详尽的记录了十多个细节性发现，能帮助我们了全面了解采用 MCR 的动机、挑战和好处，以及哪些影响因素导致哪些结果，并总结了`改进 MCR 流程的提案`。
+Code Review 从结构化和严格的形式演变为灵活的、基于工具的异步过程，即` Modern Code Review (MCR)`。
+
+巴西南里奥格兰德州联邦大学 (UFRGS)和阿雷格里港信息学研究所合著的论文[《A Systematic Literature Review and Taxonomy of Modern Code Review》][paper1-url] 系统分析了 139 篇论文和来自行业、开源项目的问卷，详尽的记录了十多个细节性发现，能帮助我们了全面了解采用 MCR 的动机、挑战和好处，以及哪些影响因素导致哪些结果，并总结了`改进 MCR 流程的提案`。
 
 - 多种因素影响 MCR 的采用。 在行业中，它的采用受到文化、产品、工具、开发过程和团队的影响。 在开源项目中，影响更多的是人文和社会方面，尤其是黑客伦理。
 - 在开源项目中，平均有一个或两个审阅请求的审阅者。 总的来说，小的代码改动和长篇大论的审查请求描述更容易吸引审查者。 开发人员更愿意邀请`有经验的审阅者`。

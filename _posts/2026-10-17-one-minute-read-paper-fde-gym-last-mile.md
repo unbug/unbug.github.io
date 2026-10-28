@@ -8,7 +8,9 @@ tags: [ai-agents, benchmark, evaluation, llm]
 description: "DeepLethe 联合清华大学、上海交通大学等团队发布预印本基准 FDE-Gym，用 95 个隐藏约束的交付任务评测 AI 智能体，最好的配置平均分仅 0.56、只解决 14 题，问到关键信息也未必做出交付。"
 ---
 
-DeepLethe 联合清华大学、上海交通大学等团队发布的预印本论文[《FDE-Gym: The Last Mile of AI Delivery》][paper1-url]把目标对准 AI 落地中最缺乏评测的一环：交付。与现有 `coding benchmark` 提供写清楚的任务不同，FDE-Gym 用 `95` 个隐藏约束的端到端交付任务考察 agent 自己问、自己改、自己交付的能力，`13` 个模型配置、`7` 家 provider 中最好的平均分仅 `0.56`，`95` 题只解决 `14` 题。
+DeepLethe 联合清华大学、上海交通大学等团队发布的预印本论文[《FDE-Gym: The Last Mile of AI Delivery》][paper1-url]把目标对准 AI 落地中最缺乏评测的一环：交付。
+
+与现有 `coding benchmark` 提供写清楚的任务不同，FDE-Gym 用 `95` 个隐藏约束的端到端交付任务考察 agent 自己问、自己改、自己交付的能力，`13` 个模型配置、`7` 家 provider 中最好的平均分仅 `0.56`，`95` 题只解决 `14` 题。
 
 ![FDE-Gym 任务漏斗：95 个任务、23 题问到关键事实、最好配置仅做出 10 题]({{ site.baseurl }}/assets/images/fde-gym-last-mile.svg)
 

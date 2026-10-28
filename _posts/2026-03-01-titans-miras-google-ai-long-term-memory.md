@@ -9,7 +9,9 @@ image: assets/images/2026-03-01-titans-miras-architecture.png
 
 layout: post
 author: unbug
-title: "一分钟读论文：《Google Titans + MIRAS：终结 AI 健忘症，让模型拥有真正的长期记忆》"
+title: "一分钟读论文：
+
+《Google Titans + MIRAS：终结 AI 健忘症，让模型拥有真正的长期记忆》"
 categories: [AI]
 tags: [Google, Titans, MIRAS, 长期记忆, Transformer, 序列建模]
 

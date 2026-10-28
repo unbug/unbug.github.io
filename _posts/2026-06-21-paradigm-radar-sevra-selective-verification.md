@@ -8,7 +8,9 @@ tags: [sevra, selective-verification, reasoning-budget, token-efficiency, agent-
 description: "Virginia Tech提出的SEVRA框架用轻量控制器动态分配推理Token，在保留、验证、延长等五条路径间择优，证明盲目验证反而降低准确率。"
 ---
 
-如果你正在构建需要深度推理的 AI 系统，你可能已经发现一个令人困惑的现象：给模型更多的 Token 预算并不总是带来更好的结果。Virginia Tech 的研究者 Sajib Acharjee Dip、Dawei Zhou 和 Liqing Zhang 在最近发表的论文[《Think Again or Think Longer? Selective Verification for Budget-Aware Reasoning》][paper-url]中揭示了一个反直觉的结论——**始终验证初始答案不仅浪费 Token，甚至可能降低准确率**。他们提出的 SEVRA（Selective Verification with Re-verification and Adaptation）框架在 MATH500 上达到了 76.3% 的准确率，比"始终验证"策略高出 0.8 个百分点，同时将有害翻转率从 2.2% 降至 1.0%。这篇文章将带你理解 SEVRA 的核心原理、五种服务决策路径，以及如何在你的推理管线中集成它。
+如果你正在构建需要深度推理的 AI 系统，你可能已经发现一个令人困惑的现象：给模型更多的 Token 预算并不总是带来更好的结果。
+
+Virginia Tech 的研究者 Sajib Acharjee Dip、Dawei Zhou 和 Liqing Zhang 在最近发表的论文[《Think Again or Think Longer? Selective Verification for Budget-Aware Reasoning》][paper-url]中揭示了一个反直觉的结论——**始终验证初始答案不仅浪费 Token，甚至可能降低准确率**。他们提出的 SEVRA（Selective Verification with Re-verification and Adaptation）框架在 MATH500 上达到了 76.3% 的准确率，比"始终验证"策略高出 0.8 个百分点，同时将有害翻转率从 2.2% 降至 1.0%。这篇文章将带你理解 SEVRA 的核心原理、五种服务决策路径，以及如何在你的推理管线中集成它。
 
 ![封面图]({{ site.baseurl }}/assets/images/paradigm-radar-sevra-selective-verification.svg)
 

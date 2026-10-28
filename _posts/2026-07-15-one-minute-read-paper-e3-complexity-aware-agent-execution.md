@@ -8,7 +8,11 @@ tags: [agent-efficiency, complexity-estimation, execution-scope, coding-agents, 
 description: "编码智能体普遍存在执行冗余，修一行代码却审计整个库。佐治亚理工与麻省理工提出框架，先估计任务复杂度，验证失败才扩展范围，成功率持平而成本大幅下降。"
 ---
 
-佐治亚理工学院和麻省理工学院合作的一篇论文[《Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution》][paper1-url]（arXiv:2607.13034）提出 E3 框架，让编码 Agent 在执行前先评估任务复杂度，以最小可行路径执行，仅在验证失败时扩展范围。在 MSE-Bench 基准测试上，E3 达到与最强基线相同的 100% 成功率，同时将成本降低 85%，Token 消耗减少 91%，检查文件数减少 92%。
+佐治亚理工学院和麻省理工学院合作的一篇论文[《Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution》][paper1-url]（arXiv:2607.13034）提出 E3 框架，
+
+让编码 Agent 在执行前先评估任务复杂度，以最小可行路径执行，仅在验证失败时扩展范围。
+
+在 MSE-Bench 基准测试上，E3 达到与最强基线相同的 100% 成功率，同时将成本降低 85%，Token 消耗减少 91%，检查文件数减少 92%。
 
 ![E3 效率降幅与三步框架：成功率持平，成本降 85%、Token 降 91%、检查文件降 92%]({{ site.baseurl }}/assets/images/e3-complexity-aware-agent-execution.svg)
 

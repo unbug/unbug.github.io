@@ -8,7 +8,9 @@ tags: [agent, http, content-negotiation, seo, markdown]
 description: "Accept: text/markdown 内容协商正在被编码 Agent、Cloudflare、Vercel、Netlify 同时采用，同一 URL 实测少九成到近全部的字节。网站与 Agent 的接口契约正从抓取加清洗转向按需供料，这正在成为 Agent 时代内容网站的新 SEO 接口。"
 ---
 
-同一个 URL、同一个 `Accept` 头，返回的字节从 `24,222` 掉到 `2,201`——这不是压缩，是换了一种表示。8 月 26 日登上的 HN 热帖《Serve Markdown to AI Agents with Accept Headers》（Algolia API 今日实测 `176` 分）把 HTTP 内容协商这个 90 年代机制重新推上前台：网站不再只为人渲染 HTML，而是给 Agent 直供干净 Markdown。范式转移在于「网页默认给人看、Agent 抓了自己洗」正在变成「网站把 Agent 当一等公民访客、按请求头供料」。
+同一个 URL、同一个 `Accept` 头，返回的字节从 `24,222` 掉到 `2,201`——这不是压缩，是换了一种表示。
+
+8 月 26 日登上的 HN 热帖《Serve Markdown to AI Agents with Accept Headers》（Algolia API 今日实测 `176` 分）把 HTTP 内容协商这个 90 年代机制重新推上前台：网站不再只为人渲染 HTML，而是给 Agent 直供干净 Markdown。范式转移在于「网页默认给人看、Agent 抓了自己洗」正在变成「网站把 Agent 当一等公民访客、按请求头供料」。
 
 ![内容协商：同一 URL 两种表示]( {{ site.baseurl }}/assets/images/paradigm-radar-markdown-negotiation.svg )
 

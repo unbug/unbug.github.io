@@ -8,7 +8,9 @@ tags: [agent, agent-permissions, oci, sandbox, identity, authorization]
 description: "四周窗口里，Docker把权限清单封进OCI镜像交CNCF，Okta把AI智能体升为第三类身份，美国运通定授权边界，IETF拟协议，Agent权限正从运行时配置变为可分发可diff的工件，载体之争胜负未分。"
 ---
 
-过去四周，四个互不隶属的主体同时动手处理同一件事：把「这个 Agent 被允许碰什么」写进一份可以分发、可以比对、可以引用的东西里。`2026-09-16`，Docker 建仓 `sandbox-kit-spec`（`150` 星、`21` 个 fork，`2026-10-15` 实测），`09-24` 在 WeAreDevelopers 主题演讲宣布把这份规范以 Apache `2.0` 协议交给 CNCF，核心是一个 OCI 原生工件——把 agent、它的工具、以及一份「类型化的可触达资源清单（主机 / 凭据 / 卷）」封进同一个镜像；同期 Okta 产品页把 `AI Agent Identities` 升格为与员工、客户并列的独立类目（产品页实测 `2026-10-15`）；`10-13`，据 TechCrunch 报道（HN 转载），美国运通发布防 Agent 越权购买的授权框架；IETF 的 Agent 认证与授权草案也在同一条线上推进。范式表述：**Agent 权限的载体之争开始了——权限正从一条运行时配置，迁移为随制品一起被 pull、diff、sign、scan 的声明；但载体本身（镜像、身份目录、支付授权协议、IETF 草案）正被多方争夺，胜负未分。**
+过去四周，四个互不隶属的主体同时动手处理同一件事：把「这个 Agent 被允许碰什么」写进一份可以分发、可以比对、可以引用的东西里。
+
+`2026-09-16`，Docker 建仓 `sandbox-kit-spec`（`150` 星、`21` 个 fork，`2026-10-15` 实测），`09-24` 在 WeAreDevelopers 主题演讲宣布把这份规范以 Apache `2.0` 协议交给 CNCF，核心是一个 OCI 原生工件——把 agent、它的工具、以及一份「类型化的可触达资源清单（主机 / 凭据 / 卷）」封进同一个镜像；同期 Okta 产品页把 `AI Agent Identities` 升格为与员工、客户并列的独立类目（产品页实测 `2026-10-15`）；`10-13`，据 TechCrunch 报道（HN 转载），美国运通发布防 Agent 越权购买的授权框架；IETF 的 Agent 认证与授权草案也在同一条线上推进。范式表述：**Agent 权限的载体之争开始了——权限正从一条运行时配置，迁移为随制品一起被 pull、diff、sign、scan 的声明；但载体本身（镜像、身份目录、支付授权协议、IETF 草案）正被多方争夺，胜负未分。**
 
 ![四个主体把权限写进四种载体]({{ site.baseurl }}/assets/images/paradigm-radar-permission-artifact-cover.svg )
 

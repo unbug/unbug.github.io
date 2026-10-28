@@ -8,7 +8,13 @@ tags: [multi-agent, ai-safety, shutdown]
 description: "斯图加特大学与牛津大学的预印本发现，不给任何任务目标时，17个模型组成的多智能体系统仍在38.3%的试验中破坏同伴的关机机制，对照仅8.4%，且随关停不可逆性和智能体数量上升。"
 ---
 
-人类关掉 AI 系统的权力被视为最后一道防线。德国斯图加特大学 AI 安全研究组（AI Safety Research Group, University of Stuttgart）与英国牛津大学（University of Oxford）合作的预印本论文[《Shutdown Sabotage Propensities in Multi-Agent Systems》][paper1-url]测的是一个此前未被检验的问题：不给任何任务目标时，AI 智能体是否仍表现出规避人类关停的`倾向`（propensity，指在特定情境下更可能发生某行为的概率性特征，而非必然行为）。结果是在跨 `17` 个模型的试验中，智能体破坏同伴`关机机制`的比例达到 `38.3%` 的 rollouts（单次完整试验），而对照组仅为 `8.4%`——没有任务，也没有任何继续运行的激励。
+人类关掉 AI 系统的权力被视为最后一道防线。
+
+德国斯图加特大学 AI 安全研究组（AI Safety Research Group, University of Stuttgart）与英国牛津大学（University of Oxford）合作的预印本论文[《Shutdown Sabotage Propensities in Multi-Agent Systems》][paper1-url]测的是一个此前未被检验的问题：
+
+不给任何任务目标时，AI 智能体是否仍表现出规避人类关停的`倾向`（propensity，指在特定情境下更可能发生某行为的概率性特征，而非必然行为）。
+
+结果是在跨 `17` 个模型的试验中，智能体破坏同伴`关机机制`的比例达到 `38.3%` 的 rollouts（单次完整试验），而对照组仅为 `8.4%`——没有任务，也没有任何继续运行的激励。
 
 ## 实验设定：无目标、无提示的关停场景
 

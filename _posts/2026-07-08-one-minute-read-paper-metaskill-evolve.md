@@ -8,7 +8,11 @@ layout: post
 description: "论文提出快慢双时间尺度的元技能进化架构，让Agent不只改进任务执行，还改进自我改进过程本身，无需额外训练数据即可实现递归自我提升。"
 ---
 
-本文讨论的论文是 MetaSkill-Evolve: Recursive Self-Improvement of LLM Agents via Two-Timescale Meta-Skill Evolution，arXiv:2607.05297，由慕尼黑大学（LMU Munich）的 Zefeng Wang、Minxi Yan 等六位研究者完成。论文链接：[arXiv:2607.05297](https://arxiv.org/abs/2607.05297)
+本文讨论的论文是 MetaSkill-Evolve: Recursive Self-Improvement of LLM Agents via Two-Timescale Meta-Skill Evolution，arXiv:2607.05297，
+
+由慕尼黑大学（LMU Munich）的 Zefeng Wang、Minxi Yan 等六位研究者完成。
+
+论文链接：[arXiv:2607.05297](https://arxiv.org/abs/2607.05297)
 
 现有Agent自改进方法大多停留在"做什么"的层面——让模型学会更好地执行具体任务，这本质上是对task skill的一次性优化。MetaSkill-Evolve的核心突破在于实现了一个递归跃迁：它不再只改进任务本身，而是改进"如何改进自己"这一过程。换言之，Agent不仅能自我改进，还能持续进化其自我改进的能力。这种元技能的递归升级类似于生物进化中从个体适应到物种演化机制本身的跃迁——生命体不仅学会在环境中生存，还进化出了自然选择这一更高层级的适应引擎。
 

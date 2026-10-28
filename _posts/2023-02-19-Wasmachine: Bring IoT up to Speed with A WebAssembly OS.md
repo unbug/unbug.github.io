@@ -6,7 +6,9 @@ categories: [Performance]
 image: assets/images/screenshot-20230202-231832.jpg
 tags: [WebAssembly, Rust, IoT, EdgeComputing]
 ---
-物联网设备通常内存和性能很弱。新西兰奥克兰大学的论文[《Wasmachine: Bring IoT up to Speed with A WebAssembly OS》][paper1-url] 设计出在资源受限的物联网和边缘设备中高效安全地执行 WebAssembly 应用程序的操作系统：Wasmachine。Wasmachine 通过提前将 WebAssembly 编译为本机二进制文件并在内核模式下以零成本系统调来实现高效执行。Wasmachine 原型用 Rust 实现，性能评估结果表明，在 Wasmachine 中运行的 WebAssembly 应用程序比 Linux 中的原生应用程序`快 21%`。
+物联网设备通常内存和性能很弱。新西兰奥克兰大学的论文[《Wasmachine: Bring IoT up to Speed with A WebAssembly OS》][paper1-url] 设计出在资源受限的物联网和边缘设备中高效安全地执行 WebAssembly 应用程序的操作系统：Wasmachine。
+
+Wasmachine 通过提前将 WebAssembly 编译为本机二进制文件并在内核模式下以零成本系统调来实现高效执行。Wasmachine 原型用 Rust 实现，性能评估结果表明，在 Wasmachine 中运行的 WebAssembly 应用程序比 Linux 中的原生应用程序`快 21%`。
 
 ![]({{ site.baseurl }}/assets/images/screenshot-20230202-230550.jpg)
 

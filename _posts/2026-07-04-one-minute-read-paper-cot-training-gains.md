@@ -8,7 +8,9 @@ tags: [cot-training, agent-reasoning, prompt-action]
 description: "系统性实验发现CoT训练在智能体中的增益并未扩大推理优势，而是提升了prompt action质量，选择性掩盖动作令牌监督可显著增强域外泛化能力。"
 ---
 
-一篇关于CoT训练增益本质的论文[《Where Do CoT Training Gains Land in LLM based Agents?》][paper1-url]，通过系统性实验揭示了思维链（Chain of Thought, CoT）训练在大语言模型智能体中的实际作用机制。研究发现，CoT训练并未如预期那样扩大CoT推理的优势，而是帮助提高了prompt action的质量。
+一篇关于CoT训练增益本质的论文[《Where Do CoT Training Gains Land in LLM based Agents?》][paper1-url]，通过系统性实验揭示了思维链（Chain of Thought, CoT）训练在大语言模型智能体中的实际作用机制。
+
+研究发现，CoT训练并未如预期那样扩大CoT推理的优势，而是帮助提高了prompt action的质量。
 
 在智能体工作流中，模型通常需要结合推理轨迹与动作指令来完成复杂任务。传统观点认为，CoT训练主要通过增强模型的推理能力来提升最终表现。然而，该研究指出，后续checkpoint更不太可能根据CoT修订动作，这表明模型对prompt的依赖更强。换句话说，CoT训练的真正增益落在了提示词动作的质量提升上，而非推理轨迹本身的优化。
 

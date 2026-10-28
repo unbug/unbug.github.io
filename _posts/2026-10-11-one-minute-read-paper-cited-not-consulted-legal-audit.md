@@ -8,7 +8,9 @@ tags: [llm, faithfulness, legal-ai, auditing]
 description: "arXiv 预印本用反事实审计检验法律推理的引用可信度：七个开源模型点名法条的正确率最高达 100%，但换掉被点名的权威后判决很少跟着改变，引用凭证不等于决策依据。"
 ---
 
-让大模型给出出处，正在变成合规与审计的硬要求。站内 [AI 智创简报 #10]({{ site.baseurl }}/innovation-brief-answer-citation-patents/) 梳理过逐句举证方向的专利簇：大厂在圈地让 AI 答案带上引用凭证。2026 年 10 月 8 日提交到 arXiv 的论文[《Cited but Not Consulted: A Counterfactual Audit of Legal Chain-of-Thought Faithfulness》][paper1-url] 从技术面打了这个缺口：引用凭证不等于决策依据。作者 Sadhu、Arora 与 Seth 在七个开源权重模型（8B 到 70B）和四个法律与合同基准上测试，要求模型点名适用的法律权威时，点名正确率有 66.7% 到 100%；但案情一字不改、只把被点名的法条或判例换成不相关的那一条，判决很少跟着换。
+让大模型给出出处，正在变成合规与审计的硬要求。站内 [AI 智创简报 #10]({{ site.baseurl }}/innovation-brief-answer-citation-patents/) 梳理过逐句举证方向的专利簇：大厂在圈地让 AI 答案带上引用凭证。
+
+2026 年 10 月 8 日提交到 arXiv 的论文[《Cited but Not Consulted: A Counterfactual Audit of Legal Chain-of-Thought Faithfulness》][paper1-url] 从技术面打了这个缺口：引用凭证不等于决策依据。作者 Sadhu、Arora 与 Seth 在七个开源权重模型（8B 到 70B）和四个法律与合同基准上测试，要求模型点名适用的法律权威时，点名正确率有 66.7% 到 100%；但案情一字不改、只把被点名的法条或判例换成不相关的那一条，判决很少跟着换。
 
 ## 案情不动，只换被点名的权威
 

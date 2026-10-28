@@ -7,7 +7,9 @@ image: assets/images/llm-judge-reliability.jpg
 tags: [llm, evaluation, conformal-prediction]
 ---
 
-普林斯顿大学的论文[《Diagnosing LLM Judge Reliability: Conformal Prediction Sets and Transitivity Violations》][paper1-url]对"用LLM评估LLM"这一主流范式的逐实例可靠性进行了首次系统性诊断。论文在SummEval数据集（1,918份文档）上应用共形预测集与传递性分析，发现即使整体传递性违规率仅0.8-4.1%，仍有33-67%的文档存在至少一次有向三元环违规，揭示了LLM-as-judge框架中隐藏的严重不一致性问题：
+普林斯顿大学的论文[《Diagnosing LLM Judge Reliability: Conformal Prediction Sets and Transitivity Violations》][paper1-url]对"用LLM评估LLM"这一主流范式的逐实例可靠性进行了首次系统性诊断。
+
+论文在SummEval数据集（1,918份文档）上应用共形预测集与传递性分析，发现即使整体传递性违规率仅0.8-4.1%，仍有33-67%的文档存在至少一次有向三元环违规，揭示了LLM-as-judge框架中隐藏的严重不一致性问题：
 
 ## 传递性违规模型
 

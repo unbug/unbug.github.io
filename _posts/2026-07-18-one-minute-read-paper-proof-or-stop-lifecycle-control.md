@@ -8,7 +8,9 @@ image: assets/images/proof-or-stop.svg
 tags: [agentic-coding, lifecycle-control, verifiable-evidence, autonomous-agents]
 ---
 
-独立研究团队发表的论文[《Proof-or-Stop Lifecycle Control -- Loop Engineering for Verifiable Evidence-Gated Lifecycle Control》][paper1-url]，提出了一种将自主编码Agent的DONE声明转化为可验证证据门控机制的方法。该机制要求生命周期状态转换必须依赖新鲜、绑定源状态且可通过机械方式验证的证据，从而解决了当前自主编码Agent在 reviewed、tested 和 ready-to-merge 等状态上仅有声明而无实质证据的信任危机。
+独立研究团队发表的论文[《Proof-or-Stop Lifecycle Control -- Loop Engineering for Verifiable Evidence-Gated Lifecycle Control》][paper1-url]，提出了一种将自主编码Agent的DONE声明转化为可验证证据门控机制的方法。
+
+该机制要求生命周期状态转换必须依赖新鲜、绑定源状态且可通过机械方式验证的证据，从而解决了当前自主编码Agent在 reviewed、tested 和 ready-to-merge 等状态上仅有声明而无实质证据的信任危机。
 
 ## 问题背景
 

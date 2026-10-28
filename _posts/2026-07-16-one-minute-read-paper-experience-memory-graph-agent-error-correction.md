@@ -8,7 +8,9 @@ categories: [AI, Agent]
 tags: [llm, agent-memory, error-correction, graph-matching]
 ---
 
-电子科技大学的一篇论文[《Experience Memory Graph: One-Shot Error Correction for Agents》][paper1-url]提出了一种将Agent失败恢复从LLM反思循环范式转向图匹配范式的训练方法。该方法在训练阶段将成功与失败的轨迹转换为有向动作决策图，通过图编辑路径显式编码纠正策略；测试时一次性检索并执行，无需迭代重试。在ALFWorld和ScienceWorld基准上，EMG的表现优于现有的SOTA反思基线方法。
+电子科技大学的一篇论文[《Experience Memory Graph: One-Shot Error Correction for Agents》][paper1-url]提出了一种将Agent失败恢复从LLM反思循环范式转向图匹配范式的训练方法。
+
+该方法在训练阶段将成功与失败的轨迹转换为有向动作决策图，通过图编辑路径显式编码纠正策略；测试时一次性检索并执行，无需迭代重试。在ALFWorld和ScienceWorld基准上，EMG的表现优于现有的SOTA反思基线方法。
 
 ## 问题背景：Agent长程任务中的累积错误与恢复困难
 

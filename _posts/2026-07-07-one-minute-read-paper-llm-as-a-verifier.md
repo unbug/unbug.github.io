@@ -8,7 +8,9 @@ layout: post
 description: "论文提出连续评分验证框架，把验证能力当作可独立缩放的第四种维度，在四个基准全部刷新最高记录，并为Agentic RL训练提供高密度反馈信号。"
 ---
 
-本文讨论的论文是 LLM-as-a-Verifier: A General-Purpose Verification Framework，arXiv:2607.05391，由斯坦福大学和加州大学伯克利分校共九位研究者联合完成。论文链接：[arXiv:2607.05391](https://arxiv.org/abs/2607.05391)
+本文讨论的论文是 LLM-as-a-Verifier: A General-Purpose Verification Framework，arXiv:2607.05391，由斯坦福大学和加州大学伯克利分校共九位研究者联合完成。
+
+论文链接：[arXiv:2607.05391](https://arxiv.org/abs/2607.05391)
 
 大语言模型的缩放研究长期聚焦于预训练扩展、后训练优化和测试时计算三个方向。这篇论文提出了一个被忽视的第四维度——验证能力本身也可以独立缩放，即让模型学会更精细地评估候选答案的质量。作者的核心洞见是：与其不断增大模型或增加推理步数，不如投资一个更好的评判者。
 

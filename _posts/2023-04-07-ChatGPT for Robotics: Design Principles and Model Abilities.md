@@ -6,7 +6,9 @@ categories: [AI, Engineering]
 image: assets/images/screenshot-20230407-153513.jpg
 tags: [ChatGPT, Robotics]
 ---
-2023年初推出的 Loona Smart Petbot 集成了 ChatGPT，是具备优秀人格化的机器人。市面上有很多可编程的机器人都提供了丰富的传感器，如果你手头有一个这样的机器人（如 Anki Vector、大疆 RoboMaster EP、优必选悟空机器人教育版），通过 ChatGPT 你同样可以轻易使其人格化。微软自主系统和机器人研究院和 ChatGPT 合著的论文[《ChatGPT for Robotics: Design Principles and Model Abilities》][paper1-url] 提出了 ChatGPT 应用于机器人的设计原则、ChatGPT 应用于机器人的 Pipeline 和让用户可以协作地应用优秀提示方案的 `PromptCraft`，能指导你基于 ChatGPT 大幅提升机器人的可玩性。
+2023年初推出的 Loona Smart Petbot 集成了 ChatGPT，是具备优秀人格化的机器人。
+
+市面上有很多可编程的机器人都提供了丰富的传感器，如果你手头有一个这样的机器人（如 Anki Vector、大疆 RoboMaster EP、优必选悟空机器人教育版），通过 ChatGPT 你同样可以轻易使其人格化。微软自主系统和机器人研究院和 ChatGPT 合著的论文[《ChatGPT for Robotics: Design Principles and Model Abilities》][paper1-url] 提出了 ChatGPT 应用于机器人的设计原则、ChatGPT 应用于机器人的 Pipeline 和让用户可以协作地应用优秀提示方案的 `PromptCraft`，能指导你基于 ChatGPT 大幅提升机器人的可玩性。
 
 -  ChatGPT 是一个基于大规模文本和人类交互数据训练的语言模型，可以生成与各种提示和问题相关的连贯和语法正确的回答。
 -  ChatGPT 可以通过一系列的设计原则来指导其解决机器人学任务，包括特殊的提示结构、高级API和文本反馈等。

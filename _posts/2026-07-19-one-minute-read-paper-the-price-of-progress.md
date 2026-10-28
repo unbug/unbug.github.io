@@ -8,7 +8,9 @@ image: assets/images/price-performance-trend.svg
 tags: [llm-economics, agent-training, post-training, intelligence-per-dollar, nvidia]
 ---
 
-Epoch AI 与 Artificial Analysis 合作发表的论文[《The Price of Progress: Price Performance and the Future of AI》][paper1-url]，构建了迄今为止最大规模的 LLM 推理价格数据集，量化了每美元智能的年度变化趋势。核心发现揭示了一个深刻的悖论：前沿模型在知识、推理、数学和软件工程基准上的单位性能成本每年下降 5x 至 10x，但前沿模型的实际运行成本因更大规模和更长推理需求反而上升 3x 至 18x 每年。
+Epoch AI 与 Artificial Analysis 合作发表的论文[《The Price of Progress: Price Performance and the Future of AI》][paper1-url]，构建了迄今为止最大规模的 LLM 推理价格数据集，量化了每美元智能的年度变化趋势。
+
+核心发现揭示了一个深刻的悖论：前沿模型在知识、推理、数学和软件工程基准上的单位性能成本每年下降 5x 至 10x，但前沿模型的实际运行成本因更大规模和更长推理需求反而上升 3x 至 18x 每年。
 
 ## 算法效率与规模扩张的矛盾张力
 

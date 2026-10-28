@@ -8,7 +8,11 @@ tags: [agent-evaluation, policy-evolution, interactive-rl, trajectory-analysis, 
 description: "把自主策略演化形式化为固定交互预算下的受控评估设定，用轨迹级诊断分别量化预算分配、反馈转化与策略精炼，揭示策略改进能力与最终得分的分离。"
 ---
 
-阿里巴巴达摩院合作的一篇论文[《EvoPolicyGym: Evaluating Autonomous Policy Evolution in Interactive Environments》](https://arxiv.org/abs/2607.02440)首次将"自主策略演化"形式化为独立评估设定——在固定交互预算内，Harness-Model Agent反复编辑可执行策略系统，评估其如何迭代提升已探索的策略。核心突破在于：将策略改进能力从最终得分中解耦，提供轨迹级诊断框架（预算分配效率、反馈转化效率、策略精炼能力），揭示强自主策略演化不仅依赖孤立任务胜利，更依赖于发现任务适配机制并在有限反馈下精炼策略。
+阿里巴巴达摩院合作的一篇论文[《EvoPolicyGym: Evaluating Autonomous Policy Evolution in Interactive Environments》](https://arxiv.org/abs/2607.02440)首次将"自主策略演化"形式化为独立评估设定——在固定交互预算内，
+
+Harness-Model Agent反复编辑可执行策略系统，评估其如何迭代提升已探索的策略。
+
+核心突破在于：将策略改进能力从最终得分中解耦，提供轨迹级诊断框架（预算分配效率、反馈转化效率、策略精炼能力），揭示强自主策略演化不仅依赖孤立任务胜利，更依赖于发现任务适配机制并在有限反馈下精炼策略。
 
 ## 自主策略演化的评估范式
 

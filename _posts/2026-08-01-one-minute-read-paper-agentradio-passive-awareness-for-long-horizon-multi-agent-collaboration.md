@@ -8,7 +8,9 @@ tags: [multi-agent, agentic-coding, asynchronous-communication, passive-awarenes
 description: "为编码Agent构建后台监听队友消息的异步消息层，通信与计算不再互斥。四Agent解决62.1%任务，比单Agent高29.8个百分点。"
 ---
 
-佐治亚理工学院等机构的研究团队发表的论文[《AgentRadio: Passive Awareness for Long-Horizon Multi-Agent Collaboration》][paper1-url]提出了一种异步消息传递层，使编码 Agent 能在后台监听队友的消息而不中断前台工作。在 SWE-Atlas QnA 基准测试上，四个由 AgentRadio 组织的 Claude Code Agent 解决了 62.1% 的任务，比单 Agent 高出 29.8 个百分点，甚至超越了使用更新模型 Opus 4.8 的单 Agent（57.2%）。
+佐治亚理工学院等机构的研究团队发表的论文[《AgentRadio: Passive Awareness for Long-Horizon Multi-Agent Collaboration》][paper1-url]提出了一种异步消息传递层，使编码 Agent 能在后台监听队友的消息而不中断前台工作。
+
+在 SWE-Atlas QnA 基准测试上，四个由 AgentRadio 组织的 Claude Code Agent 解决了 62.1% 的任务，比单 Agent 高出 29.8 个百分点，甚至超越了使用更新模型 Opus 4.8 的单 Agent（57.2%）。
 
 ## 核心问题：通信与计算的互斥
 

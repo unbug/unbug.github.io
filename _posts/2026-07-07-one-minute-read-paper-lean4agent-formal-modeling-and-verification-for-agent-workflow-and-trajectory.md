@@ -8,7 +8,9 @@ layout: post
 description: "用Lean4依赖类型语言对Agent工作流与轨迹做形式化建模，并通过LeanEvolve实现验证后自动修订闭环，验证过的工作流平均性能提升11.94%。"
 ---
 
-LLM Agent 的工作流设计长期缺乏形式化保障，研究者通常依赖经验性测试和统计评估来判断一个 Agent 流程是否可靠。[这篇来自 UC Berkeley Tong Zhang 团队的新论文](https://arxiv.org/abs/2606.06523)首次提出用 Lean4 这一依赖类型语言对 Agent 工作流和执行轨迹进行统一的形式化建模与验证，并在此基础上实现了自动修订闭环。
+LLM Agent 的工作流设计长期缺乏形式化保障，研究者通常依赖经验性测试和统计评估来判断一个 Agent 流程是否可靠。
+
+[这篇来自 UC Berkeley Tong Zhang 团队的新论文](https://arxiv.org/abs/2606.06523)首次提出用 Lean4 这一依赖类型语言对 Agent 工作流和执行轨迹进行统一的形式化建模与验证，并在此基础上实现了自动修订闭环。
 
 ## 核心问题：Agent 工作流的"黑盒"困境
 

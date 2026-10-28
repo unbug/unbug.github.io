@@ -8,7 +8,9 @@ tags: [agent-skill-use, self-evolving-rubrics, process-evaluation, skill-selecti
 description: "香港科技大学（广州）与京东提出自进化轨迹级评分框架，把技能使用拆为选择、遵循、组合与反思四个维度，验证门控下评分质量提升且可用于筛选训练数据。"
 ---
 
-香港科技大学（广州）和京东集团合作的一篇论文[《SkillCoach: Self-Evolving Rubrics for Evaluating and Enhancing Agentic Skill-Use》](https://arxiv.org/abs/2607.01874)首次提出自进化评分框架来评估和增强智能体的技能使用能力。核心突破在于将"技能使用"定义为轨迹级元能力而非任务成功与否：从真实交互轨迹中自动推导并持续改进过程评分标准，而非依赖人工标注的固定体系。实验揭示了一个关键发现——Gemini 3.1 Pro在干扰项存在时选择分数从98.0骤降至78.0，表明大模型"找到正确技能后执行尚可，但选择本身在干扰下极其脆弱"。
+香港科技大学（广州）和京东集团合作的一篇论文[《SkillCoach: Self-Evolving Rubrics for Evaluating and Enhancing Agentic Skill-Use》](https://arxiv.org/abs/2607.01874)首次提出自进化评分框架来评估和增强智能体的技能使用能力。
+
+核心突破在于将"技能使用"定义为轨迹级元能力而非任务成功与否：从真实交互轨迹中自动推导并持续改进过程评分标准，而非依赖人工标注的固定体系。实验揭示了一个关键发现——Gemini 3.1 Pro在干扰项存在时选择分数从98.0骤降至78.0，表明大模型"找到正确技能后执行尚可，但选择本身在干扰下极其脆弱"。
 
 ## 四维度元能力框架
 

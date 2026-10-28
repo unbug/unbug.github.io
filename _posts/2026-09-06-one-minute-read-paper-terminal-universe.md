@@ -8,7 +8,11 @@ tags: [llm, agents, post-training, code]
 description: "阿里 Qwen 团队与清华合作的预印本提出 Terminal-Universe：回放轨迹里的文件操作即可重建可执行终端环境，从公开轨迹产出 37.3k 个任务充分环境，SFT 后单轮基准提 11.9 分、多轮提 13.8 分。"
 ---
 
-以阿里 Qwen 团队为主力、合作清华大学的论文[《Terminal-Universe: Turning Agent Trajectories into Scalable Terminal Environments》][paper1-url]（arXiv:2609.04148，2026 年 9 月 3 日提交，14 位作者）提出一个判断：终端代码智能体（terminal agent，在命令行环境里执行任务的大模型智能体）后训练的真正瓶颈不是轨迹数量，而是可执行环境。一条轨迹是一次性冻结的示范，一个环境却能反复生成无数可验证任务并返回真实执行反馈。论文的结论是环境不必从零合成——已有轨迹里的工具执行历史本身就泄露了环境的结构与内容。按这个思路构建的 Terminal-Universe 框架从公开终端智能体轨迹中产出 `37.3k` 个 task-sufficient 环境（指足以支撑任务验证的环境）。
+以阿里 Qwen 团队为主力、合作清华大学的论文[《Terminal-Universe: Turning Agent Trajectories into Scalable Terminal Environments》][paper1-url]（arXiv:2609.04148，2026 年 9 月 3 日提交，14 位作者）提出一个判断：
+
+终端代码智能体（terminal agent，在命令行环境里执行任务的大模型智能体）后训练的真正瓶颈不是轨迹数量，而是可执行环境。
+
+一条轨迹是一次性冻结的示范，一个环境却能反复生成无数可验证任务并返回真实执行反馈。论文的结论是环境不必从零合成——已有轨迹里的工具执行历史本身就泄露了环境的结构与内容。按这个思路构建的 Terminal-Universe 框架从公开终端智能体轨迹中产出 `37.3k` 个 task-sufficient 环境（指足以支撑任务验证的环境）。
 
 需要先划清边界：这是未经同行评审的预印本，「环境藏在轨迹里」是作者的主张而非学界定论；文中 `+11.9` 与 `+13.8` 两个数字均指 SFT（监督微调）后模型相对基线的提升分数，不是绝对成绩。
 

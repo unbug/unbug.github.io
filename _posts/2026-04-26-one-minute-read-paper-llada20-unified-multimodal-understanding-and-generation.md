@@ -7,7 +7,9 @@ image: assets/images/llada20-uni.jpg
 tags: [LLaDA, Diffusion, Multimodal, VLM]
 ---
 
-蚂蚁集团 InclusionAI 的论文[《LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model》][paper1-url]，提出用离散扩散语言模型统一视觉理解和图像生成两个任务。传统AI系统存在"分裂大脑"问题——理解用VLM、生成用扩散模型，需要拼接多个专用模型。LLaDA2.0-Uni的核心思路是将图像压缩为离散语义token，让同一个MoE扩散模型同时处理文本和视觉token。
+蚂蚁集团 InclusionAI 的论文[《LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model》][paper1-url]，提出用离散扩散语言模型统一视觉理解和图像生成两个任务。
+
+传统AI系统存在"分裂大脑"问题——理解用VLM、生成用扩散模型，需要拼接多个专用模型。LLaDA2.0-Uni的核心思路是将图像压缩为离散语义token，让同一个MoE扩散模型同时处理文本和视觉token。
 
 ## 统一架构设计
 

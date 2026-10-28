@@ -8,7 +8,11 @@ tags: [embodied-ai, vlm, reasoning, long-horizon]
 description: "银河通用发布开放权重 VLA 模型 G0.5，用单一自回归流同时生成推理与动作 token，真机微调成功率 76.7%，超过 π0.5 的 53.3%。"
 ---
 
-上海机器人公司银河通用（Galaxea）的论文[《G0.5: One Autoregressive Stream for Robot Reasoning and Action》][paper1-url]，提出预训练自回归视觉-语言-动作模型（VLA）G0.5：单一 transformer decoder 在同一 token 流中同时输出推理与动作。主流 VLA 配方把预训练视觉语言模型（VLM）当上下文编码器、另配独立 flow-matching 动作专家（通过回归向量场生成连续动作），使 VLM 只负责编码上下文；G0.5 让 VLM 直接成为决策者。相对主流配方，这是架构层面的改变而非训练技巧。真机微调成功率 `76.7%`，超过 π0.5 的 `53.3%` 和 GR00T-N1.7 的 `24.4%`；模型权重已开放，为社区验证这一路线提供了可复现起点。
+上海机器人公司银河通用（Galaxea）的论文[《G0.5: One Autoregressive Stream for Robot Reasoning and Action》][paper1-url]，提出预训练自回归视觉-语言-动作模型（VLA）G0.5：
+
+单一 transformer decoder 在同一 token 流中同时输出推理与动作。
+
+主流 VLA 配方把预训练视觉语言模型（VLM）当上下文编码器、另配独立 flow-matching 动作专家（通过回归向量场生成连续动作），使 VLM 只负责编码上下文；G0.5 让 VLM 直接成为决策者。相对主流配方，这是架构层面的改变而非训练技巧。真机微调成功率 `76.7%`，超过 π0.5 的 `53.3%` 和 GR00T-N1.7 的 `24.4%`；模型权重已开放，为社区验证这一路线提供了可复现起点。
 
 ## 单流自回归架构
 

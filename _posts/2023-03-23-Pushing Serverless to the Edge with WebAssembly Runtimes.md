@@ -6,7 +6,9 @@ categories: [Architecture]
 image: assets/images/screenshot-20230210-234722.jpg
 tags: [WebAssembly, Serverless, IoT, EdgeComputing]
 ---
-边缘主机的 CPU 和内存限制会加剧 Serverless 启动延迟，对物联网服务并不友好。为了享受 Serverless 模型的弹性、灵活性和成本优势，同时利用对新兴物联网服务至关重要的边缘计算的潜力，需要解决 Serverless 平台的性能低下问题。奥地利维也纳工业大学的论文[《Pushing Serverless to the Edge with WebAssembly Runtimes》][paper1-url] 设计了基于 WASM 的 FaaS 平台的架构，用于 Serverless 边缘计算的基于 WebAssembly 的运行时环境的设计和实现。评估后发现优于 Docker。
+边缘主机的 CPU 和内存限制会加剧 Serverless 启动延迟，对物联网服务并不友好。
+
+为了享受 Serverless 模型的弹性、灵活性和成本优势，同时利用对新兴物联网服务至关重要的边缘计算的潜力，需要解决 Serverless 平台的性能低下问题。奥地利维也纳工业大学的论文[《Pushing Serverless to the Edge with WebAssembly Runtimes》][paper1-url] 设计了基于 WASM 的 FaaS 平台的架构，用于 Serverless 边缘计算的基于 WebAssembly 的运行时环境的设计和实现。评估后发现优于 Docker。
 
 - 可将`冷启动延迟降低 99.5%`。
 - 可将内存消耗`降低5倍以上`。

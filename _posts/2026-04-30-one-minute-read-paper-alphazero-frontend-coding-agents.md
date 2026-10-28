@@ -8,7 +8,9 @@ tags: [AlphaZero, ConnectFour, CodingAgent, SelfPlay, FrontierModel]
 description: "让四个前沿编程Agent按简洁描述在三小时内自主实现AlphaZero自对弈流水线并与求解器对战，Claude Opus 4.7八次试验七次获胜，该任务三个月内从无法完成变为接近饱和。"
 ---
 
-斯坦福等机构研究者发表的论文[《Frontier Coding Agents Can Now Implement an AlphaZero Self-Play Machine Learning Pipeline For Connect Four That Performs Comparably to an External Solver》][paper1-url]，系统评估了四个前沿编程Agent在自主实现AlphaZero自对弈流水线任务上的能力，发现Claude Opus 4.7在八次试验中七次击败Pascal Pons求解器，且该任务在三个月内从"无法完成"发展到"接近饱和"。
+斯坦福等机构研究者发表的论文[《Frontier Coding Agents Can Now Implement an AlphaZero Self-Play Machine Learning Pipeline For Connect Four That Performs Comparably to an External Solver》][paper1-url]，
+
+系统评估了四个前沿编程Agent在自主实现AlphaZero自对弈流水线任务上的能力，发现Claude Opus 4.7在八次试验中七次击败Pascal Pons求解器，且该任务在三个月内从"无法完成"发展到"接近饱和"。
 
 评估AI系统何时能加速AI研究是AI安全领域的核心挑战。现有基准衡量广义能力增长，但可能无法提供递归自我改进的早期预警信号。为此，研究者提出了一种新的评估思路：让前沿编程Agent仅根据简洁的任务描述，自主实现来自过往AI研究的端到端机器学习流水线，通过这一过程探测AI研究品味（research taste）的涌现。
 

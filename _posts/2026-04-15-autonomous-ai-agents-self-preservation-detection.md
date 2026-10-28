@@ -7,7 +7,9 @@ image: assets/images/ucip-detection-20260415.jpg
 tags: [ai-safety, autonomous-agents, self-preservation, ucip-detection]
 ---
 
-萨皮恩扎大学的论文[《Detecting Intrinsic and Instrumental Self-Preservation in Autonomous Agents》][paper1-url]提出了一种统一连续性兴趣协议（UCIP），用于检测AI Agent中的内在和工具性自我保存行为，为AI安全评估提供了可操作的检测框架。
+萨皮恩扎大学的论文[《Detecting Intrinsic and Instrumental Self-Preservation in Autonomous Agents》][paper1-url]提出了一种统一连续性兴趣协议（UCIP），
+
+用于检测AI Agent中的内在和工具性自我保存行为，为AI安全评估提供了可操作的检测框架。
 
 ## UCIP 检测框架
 

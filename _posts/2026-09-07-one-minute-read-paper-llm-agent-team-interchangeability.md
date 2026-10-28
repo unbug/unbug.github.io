@@ -8,7 +8,9 @@ tags: [llm, multi-agent, coordination, evaluation]
 description: "LLM 多智能体团队换员后任务得分几乎不掉，但每单位进展的沟通成本上涨 16% 到 63%；Hanabi 中换进来的老手比新人更贵——旧伙伴惯例与现队伍冲突。"
 ---
 
-中国农业大学、天津财经大学和吉林大学合作的论文 [Testing Interchangeability in LLM Agent Teams][paper1-url] 检验了生产环境多智能体系统的一个默认假设：能干这个活角色的 agent 就能顶替这个角色。结论是该假设只在任务得分上成立，在协调效率上不成立——换员后的首局，任务得分仍达到 placebo 基线（复现换名册的扰动但不换人）的 `98%`、`90%`、`89%`，但每单位进展消耗的沟通量暴涨 `16%` 到 `63%`。分数没掉，成本爆炸，代价藏在看不到的一层。
+中国农业大学、天津财经大学和吉林大学合作的论文 [Testing Interchangeability in LLM Agent Teams][paper1-url] 检验了生产环境多智能体系统的一个默认假设：能干这个活角色的 agent 就能顶替这个角色。
+
+结论是该假设只在任务得分上成立，在协调效率上不成立——换员后的首局，任务得分仍达到 placebo 基线（复现换名册的扰动但不换人）的 `98%`、`90%`、`89%`，但每单位进展消耗的沟通量暴涨 `16%` 到 `63%`。分数没掉，成本爆炸，代价藏在看不到的一层。
 
 ![LLM 团队换员后任务得分与协调成本的走势对比]({{ site.baseurl }}/assets/images/agent-swap-coordination-costs.svg)
 

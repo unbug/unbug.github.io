@@ -8,7 +8,9 @@ tags: [decision-models, agent, non-autoregressive, model-serving, typed-output]
 description: "TypeSafe 定义 Jev 品类后的四周里，Cloudflare、AWS 系 Strands 与多个独立团队相继发布决策模型、本地运行时与清单层，Agent 控制循环正从解析大模型文本转向订阅毫秒级类型化决策函数，快脑与慢脑开始分家。"
 ---
 
-Agent 的高频控制循环正在换芯：从「调用一个会聊天的自回归大模型、再解析它吐出的文本」迁移为「订阅一个只输出带概率的类型化决策、毫秒级返回、按输入计费的函数」。TypeSafe AI 于 2026-09-15 发布 Jev 与「System One Models」品类定义（HN item `49717558`，实测 `1989` 分、`518` 条评论），随后四周内，Cloudflare、AWS 系 Strands、Nokia 应用研究团队与多名独立开发者跟进，无隶属关系。慢脑（推理与生成）留在大模型里，快脑（结构化决策）成为独立的模型品类。据我们观察未发现同类中文报道。
+Agent 的高频控制循环正在换芯：从「调用一个会聊天的自回归大模型、再解析它吐出的文本」迁移为「订阅一个只输出带概率的类型化决策、毫秒级返回、按输入计费的函数」。
+
+TypeSafe AI 于 2026-09-15 发布 Jev 与「System One Models」品类定义（HN item `49717558`，实测 `1989` 分、`518` 条评论），随后四周内，Cloudflare、AWS 系 Strands、Nokia 应用研究团队与多名独立开发者跟进，无隶属关系。慢脑（推理与生成）留在大模型里，快脑（结构化决策）成为独立的模型品类。据我们观察未发现同类中文报道。
 
 ## 四周内成形的生态波
 
