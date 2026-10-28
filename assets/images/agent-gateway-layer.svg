@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion -->
+  <text x="60" y="56" font-size="16" fill="#1A1B1E">需求（303 分）与事故（596 分）两轴热度远超品类命名（2–53 分）；承载层为 62,195 星存量项目</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="100" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="100" font-size="15" fill="#1A1B1E">窗口内主帖热度（括号内为全树评论数）</text>
+
+  <!-- grid vertical majors -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="360" y1="120" x2="360" y2="300"/>
+    <line x1="560" y1="120" x2="560" y2="300"/>
+    <line x1="760" y1="120" x2="760" y2="300"/>
+    <line x1="960" y1="120" x2="960" y2="300"/>
+  </g>
+
+  <!-- x = 360 + (2/3)*v -->
+  <text x="348" y="150" font-size="12.5" fill="#1A1B1E" text-anchor="end">LiteLLM 投毒事故</text>
+  <rect x="360" y="134" width="397" height="20" fill="#D55E00"/>
+  <text x="765" y="149" font-size="12" fill="#555">596（202）</text>
+
+  <text x="348" y="196" font-size="12.5" fill="#1A1B1E" text-anchor="end">自建 LLM proxy 需求</text>
+  <rect x="360" y="180" width="202" height="20" fill="#0072B2"/>
+  <text x="570" y="195" font-size="12" fill="#555">303（219）</text>
+
+  <text x="348" y="242" font-size="12.5" fill="#1A1B1E" text-anchor="end">Rust 网关发布</text>
+  <rect x="360" y="226" width="35" height="20" fill="#999999"/>
+  <text x="403" y="241" font-size="12" fill="#555">53</text>
+
+  <text x="348" y="288" font-size="12.5" fill="#1A1B1E" text-anchor="end">「Agent Gateway」命名帖</text>
+  <rect x="360" y="272" width="2" height="20" fill="#999999"/>
+  <text x="370" y="287" font-size="12" fill="#555">2</text>
+
+  <line x1="360" y1="300" x2="960" y2="300" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="360" y1="300" x2="360" y2="304"/>
+    <line x1="560" y1="300" x2="560" y2="304"/>
+    <line x1="760" y1="300" x2="760" y2="304"/>
+    <line x1="960" y1="300" x2="960" y2="304"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="360" y="322">0</text>
+    <text x="560" y="322">300</text>
+    <text x="760" y="322">600</text>
+    <text x="960" y="322">900</text>
+  </g>
+  <text x="660" y="346" font-size="14" fill="#1A1B1E" text-anchor="middle">HN 热度（分）</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="60" y="404" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="404" font-size="15" fill="#1A1B1E">相关仓库星数（实测 2026-10-28）</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="360" y1="424" x2="360" y2="564"/>
+    <line x1="660" y1="424" x2="660" y2="564"/>
+    <line x1="960" y1="424" x2="960" y2="564"/>
+  </g>
+
+  <!-- x = 360 + 0.005*v/... use 60000 -> 600px: r = 0.01*v -->
+  <text x="348" y="452" font-size="12.5" fill="#1A1B1E" text-anchor="end">LiteLLM（存量承载层）</text>
+  <rect x="360" y="436" width="622" height="20" fill="#0072B2"/>
+  <text x="990" y="451" font-size="12" fill="#555">62,195</text>
+
+  <text x="348" y="498" font-size="12.5" fill="#1A1B1E" text-anchor="end">Bifrost（命名品类，自述）</text>
+  <rect x="360" y="482" width="92" height="20" fill="#0072B2" opacity="0.55"/>
+  <text x="460" y="497" font-size="12" fill="#555">9,153</text>
+
+  <text x="348" y="544" font-size="12.5" fill="#1A1B1E" text-anchor="end">agentsview（非代理路线）</text>
+  <rect x="360" y="528" width="63" height="20" fill="#999999"/>
+  <text x="431" y="543" font-size="12" fill="#555">6,289</text>
+
+  <text x="348" y="580" font-size="12.5" fill="#1A1B1E" text-anchor="end">窗口内新建小仓</text>
+  <rect x="360" y="564" width="2" height="20" fill="#E69F00"/>
+  <text x="370" y="579" font-size="12" fill="#555">13–36 星（nenyamy / sturnus / Strix 等）</text>
+
+  <line x1="360" y1="564" x2="360" y2="564" stroke="none"/>
+
+  <!-- footnote -->
+  <text x="60" y="628" font-size="11" fill="#767676">数据：HN Algolia API 全树遍历 + GitHub API，实测 2026-10-28 · 窗口 2026-10-16 至 10-28 · 热度与星数随时间可变 · Bifrost 品类定性为厂商自述</text>
+</svg>

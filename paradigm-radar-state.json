@@ -1,11 +1,11 @@
 {
-  "currentPhase": "scheduled",
+  "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 范式雷达：《当你的笔记本上住进别人家的守护进程》",
-    "date": "2026-10-16",
-    "slug": "paradigm-radar-agent-daemon-sovereignty"
+    "title": "AI 范式雷达：《把 Agent 的线拉进自己的箱子》",
+    "date": "2026-10-28",
+    "slug": "paradigm-radar-agent-gateway-layer"
   },
-  "totalPublished": 18,
+  "totalPublished": 19,
   "nextScheduled": "2026-11-02",
   "candidateTopics": [
     {
