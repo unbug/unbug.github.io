@@ -1,13 +1,13 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 智创简报：《会议纪要专利扎堆，平台上不了的场子留给个人》",
-    "date": "2026-10-18",
-    "slug": "innovation-brief-meeting-minutes-local-deploy",
-    "issue": 23
+    "title": "AI 智创简报：《网络排障 Agent 上场干活，考场却没人监考》",
+    "date": "2026-10-28",
+    "slug": "innovation-brief-network-agent-testing-patents",
+    "issue": 24
   },
-  "totalPublished": 23,
-  "nextScheduled": "2026-10-29",
+  "totalPublished": 24,
+  "nextScheduled": "2026-11-01",
   "coveredPatentFamilies": [
     "US20260044392",
     "US20260188475",
@@ -98,7 +98,14 @@
     "US12647532",
     "US12664798",
     "US20260211885",
-    "EP4162488"
+    "EP4162488",
+    "US12701042",
+    "US12665804",
+    "US12705437",
+    "US12683886",
+    "US12701054",
+    "US20260238551",
+    "EP4548546"
   ],
   "candidateTopics": [
     {

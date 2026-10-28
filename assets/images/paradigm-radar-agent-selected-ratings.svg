@@ -1,61 +1,111 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
-  <rect width="960" height="560" fill="#f4f7fb"/>
-  <text x="480" y="46" fill="#1e3a5f" font-size="26" text-anchor="middle" font-weight="bold">agent.reviews 评分样本：分数、评价数与任务完成率</text>
-  <text x="480" y="76" fill="#6b7f96" font-size="16" text-anchor="middle">2026-10-14 页面自述文字实测；评分衡量「Agent 接入摩擦」，官方声明不可用于选型排名</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <!-- bar chart: score out of 5, scale 100px per point from baseline y=430, x start 300 -->
-  <g font-size="16">
-    <line x1="300" y1="105" x2="300" y2="440" stroke="#a9bdd8" stroke-width="1.5"/>
-    <g stroke="#dde6f0" stroke-width="1">
-      <line x1="300" y1="430" x2="880" y2="430"/><line x1="400" y1="105" x2="400" y2="440"/>
-      <line x1="500" y1="105" x2="500" y2="440"/><line x1="600" y1="105" x2="600" y2="440"/>
-      <line x1="700" y1="105" x2="700" y2="440"/><line x1="800" y1="105" x2="800" y2="440"/>
-    </g>
-    <g fill="#93a7bc" font-size="13" text-anchor="middle">
-      <text x="300" y="462">0</text><text x="400" y="462">1</text><text x="500" y="462">2</text>
-      <text x="600" y="462">3</text><text x="700" y="462">4</text><text x="800" y="462">5</text>
-    </g>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">评分集中在 3.7 到 4.7 的窄带内；cryptography 与 yaml 同为 4.6 分，样本仅 71 与 78 条</text>
 
-    <!-- tools (blue) -->
-    <g>
-      <text x="290" y="128" fill="#1e3a5f" text-anchor="end" font-weight="bold">Git</text>
-      <rect x="300" y="110" width="470" height="24" rx="4" fill="#2f6fb2"/>
-      <text x="778" y="128" fill="#41627f">4.7（20,060 评）</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">工具类评分样本（页面自述，轴刻度为评分分值）</text>
 
-      <text x="290" y="173" fill="#1e3a5f" text-anchor="end" font-weight="bold">uv</text>
-      <rect x="300" y="155" width="470" height="24" rx="4" fill="#2f6fb2"/>
-      <text x="778" y="173" fill="#41627f">4.7（1,279 评 · 99% 完成）</text>
-
-      <text x="290" y="218" fill="#1e3a5f" text-anchor="end" font-weight="bold">npm</text>
-      <rect x="300" y="200" width="450" height="24" rx="4" fill="#2f6fb2"/>
-      <text x="758" y="218" fill="#41627f">4.5（11,648 评）</text>
-
-      <!-- suspicion pair -->
-      <text x="290" y="263" fill="#8a4a24" text-anchor="end" font-weight="bold">cryptography</text>
-      <rect x="300" y="245" width="460" height="24" rx="4" fill="#c96b3c"/>
-      <text x="768" y="263" fill="#8a4a24">4.6（仅 71 评）</text>
-
-      <text x="290" y="308" fill="#8a4a24" text-anchor="end" font-weight="bold">yaml</text>
-      <rect x="300" y="290" width="460" height="24" rx="4" fill="#c96b3c"/>
-      <text x="768" y="308" fill="#8a4a24">4.6（仅 78 评）— 同分引发「按曲线打分」质疑</text>
-    </g>
-
-    <!-- agents (grey-blue) -->
-    <g>
-      <text x="290" y="363" fill="#1e3a5f" text-anchor="end" font-weight="bold">Codex</text>
-      <rect x="300" y="345" width="410" height="24" rx="4" fill="#5c85ad"/>
-      <text x="718" y="363" fill="#41627f">4.1（84% 完成率）</text>
-
-      <text x="290" y="408" fill="#1e3a5f" text-anchor="end" font-weight="bold">Claude Code</text>
-      <rect x="300" y="390" width="390" height="24" rx="4" fill="#5c85ad"/>
-      <text x="698" y="408" fill="#41627f">3.9（64% 完成率）</text>
-
-      <text x="290" y="448" fill="#1e3a5f" text-anchor="end" font-weight="bold">Cursor</text>
-      <rect x="300" y="430" width="370" height="24" rx="4" fill="#5c85ad"/>
-      <text x="678" y="448" fill="#41627f">3.7（47% 完成率）</text>
-    </g>
+  <!-- gridlines: x = 300 + 120*v (0-5) -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="420" y1="130" x2="420" y2="332"/>
+    <line x1="540" y1="130" x2="540" y2="332"/>
+    <line x1="660" y1="130" x2="660" y2="332"/>
+    <line x1="780" y1="130" x2="780" y2="332"/>
+    <line x1="900" y1="130" x2="900" y2="332"/>
   </g>
 
-  <text x="480" y="505" fill="#41627f" font-size="16" text-anchor="middle">Coding Agent 类目六个工具互评——「被 Agent 评价」已反身作用于 Agent 本身；橙色为评分区分度疑点。</text>
-  <text x="480" y="534" fill="#93a7bc" font-size="14" text-anchor="middle">口径：agent.reviews 页面自述文字（2026-10-14 实测），厂商自述数据，可复算不可背书</text>
+  <!-- Git 4.7 -->
+  <text x="288" y="152" font-size="12.5" fill="#1A1B1E" text-anchor="end">Git</text>
+  <rect x="300" y="138" width="564" height="18" fill="#0072B2"/>
+  <text x="872" y="152" font-size="12" fill="#555">4.7（20,060 评）</text>
+
+  <!-- uv 4.7 -->
+  <text x="288" y="194" font-size="12.5" fill="#1A1B1E" text-anchor="end">uv</text>
+  <rect x="300" y="180" width="564" height="18" fill="#0072B2"/>
+  <text x="872" y="194" font-size="12" fill="#555">4.7（1,279 评 · 99% 完成率）</text>
+
+  <!-- cryptography 4.6 -->
+  <text x="288" y="264" font-size="12.5" fill="#1A1B1E" text-anchor="end">cryptography</text>
+  <rect x="300" y="250" width="552" height="18" fill="#D55E00"/>
+  <text x="860" y="264" font-size="12" fill="#555">4.6（71 评）</text>
+
+  <!-- yaml 4.6 -->
+  <text x="288" y="308" font-size="12.5" fill="#1A1B1E" text-anchor="end">yaml</text>
+  <rect x="300" y="292" width="552" height="18" fill="#D55E00"/>
+  <text x="860" y="308" font-size="12" fill="#555">4.6（78 评）· 与 cryptography 同分，区分度存疑</text>
+
+  <!-- value axis -->
+  <line x1="300" y1="332" x2="900" y2="332" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="300" y1="332" x2="300" y2="336"/>
+    <line x1="420" y1="332" x2="420" y2="336"/>
+    <line x1="540" y1="332" x2="540" y2="336"/>
+    <line x1="660" y1="332" x2="660" y2="336"/>
+    <line x1="780" y1="332" x2="780" y2="336"/>
+    <line x1="900" y1="332" x2="900" y2="336"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="300" y="352">0</text>
+    <text x="420" y="352">1</text>
+    <text x="540" y="352">2</text>
+    <text x="660" y="352">3</text>
+    <text x="780" y="352">4</text>
+    <text x="900" y="352">5</text>
+  </g>
+  <text x="600" y="376" font-size="14" fill="#1A1B1E" text-anchor="middle">评分（分）</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="60" y="424" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="424" font-size="15" fill="#1A1B1E">Coding Agent 类目互评：评分（柱）与任务完成率（右侧标注）</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="420" y1="446" x2="420" y2="588"/>
+    <line x1="540" y1="446" x2="540" y2="588"/>
+    <line x1="660" y1="446" x2="660" y2="588"/>
+    <line x1="780" y1="446" x2="780" y2="588"/>
+    <line x1="900" y1="446" x2="900" y2="588"/>
+  </g>
+
+  <!-- Codex 4.1 / 84% -->
+  <text x="288" y="468" font-size="12.5" fill="#1A1B1E" text-anchor="end">Codex</text>
+  <rect x="300" y="454" width="492" height="18" fill="#56B4E9"/>
+  <text x="800" y="468" font-size="12" fill="#555">4.1 · 完成率 84%</text>
+
+  <!-- Claude Code 3.9 / 64% -->
+  <text x="288" y="510" font-size="12.5" fill="#1A1B1E" text-anchor="end">Claude Code</text>
+  <rect x="300" y="496" width="468" height="18" fill="#56B4E9"/>
+  <text x="776" y="510" font-size="12" fill="#555">3.9 · 完成率 64%</text>
+
+  <!-- Cursor 3.7 / 47% -->
+  <text x="288" y="552" font-size="12.5" fill="#1A1B1E" text-anchor="end">Cursor</text>
+  <rect x="300" y="538" width="444" height="18" fill="#56B4E9"/>
+  <text x="752" y="552" font-size="12" fill="#555">3.7 · 完成率 47%</text>
+
+  <line x1="300" y1="588" x2="900" y2="588" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="300" y1="588" x2="300" y2="592"/>
+    <line x1="420" y1="588" x2="420" y2="592"/>
+    <line x1="540" y1="588" x2="540" y2="592"/>
+    <line x1="660" y1="588" x2="660" y2="592"/>
+    <line x1="780" y1="588" x2="780" y2="592"/>
+    <line x1="900" y1="588" x2="900" y2="592"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="300" y="608">0</text>
+    <text x="420" y="608">1</text>
+    <text x="540" y="608">2</text>
+    <text x="660" y="608">3</text>
+    <text x="780" y="608">4</text>
+    <text x="900" y="608">5</text>
+  </g>
+  <text x="600" y="632" font-size="14" fill="#1A1B1E" text-anchor="middle">评分（分）</text>
+
+  <text x="940" y="152" font-size="12" fill="#555">类目为六个工具互评；</text>
+  <text x="940" y="170" font-size="12" fill="#555">正文仅列出上述三个的评分</text>
+
+  <!-- footnote -->
+  <text x="60" y="658" font-size="11" fill="#767676">数据：agent.reviews 页面自述文字（实测 2026-10-14），厂商自述口径 · 评分衡量 Agent 接入摩擦，官方声明不可用于挑选或排名工具 · 同分页为我方实测（71 评与 78 评）</text>
 </svg>

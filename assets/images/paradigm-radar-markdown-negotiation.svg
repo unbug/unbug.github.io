@@ -1,93 +1,92 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8E97A6; }
-      .rl { font-size: 15px; fill: #3F4A5A; }
-      .val { font-size: 22px; font-weight: 700; }
-      .b { font-size: 12px; fill: #98A1AE; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FAF7EF"/>
-    </linearGradient>
-    <linearGradient id="gHtml" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2F4F45"/><stop offset="1" stop-color="#5E8272"/>
-    </linearGradient>
-    <linearGradient id="gMd" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#D9503F"/><stop offset="1" stop-color="#E8B84B"/>
-    </linearGradient>
-    <linearGradient id="gHead" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#D9503F"/><stop offset="1" stop-color="#7FA65A"/>
-    </linearGradient>
-    <linearGradient id="gPot" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#7FA65A"/><stop offset="1" stop-color="#4C7040"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1090" cy="110" r="150" fill="#7FA65A" opacity="0.07"/>
-  <circle cx="80" cy="620" r="120" fill="#D9503F" opacity="0.05"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gHead)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">Markdown 表示较 HTML 少九成以上字节；该头部由 7 款编码 Agent 发送，消费级产品支持为 0</text>
 
-  <text class="k" x="64" y="84">AI 范式雷达 · 2026-09-07 · ACCEPT: TEXT/MARKDOWN</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1E2430">同一道菜，换盘子上</text>
-  <text x="64" y="158" font-size="15" fill="#5A6070">字节从 24,222 掉到 2,201 —— 不是压缩，是换了种盛法</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">Markdown / HTML 字节比（%，100 = 同页 HTML）</text>
 
-  <!-- kitchen illustration: pot serving two plates -->
-  <g>
-    <path d="M 1004 92 q 56 -40 112 0" fill="none" stroke="#B9892F" stroke-width="3" opacity="0.55"/>
-    <path d="M 1018 100 q 42 -28 84 0" fill="none" stroke="#B9892F" stroke-width="3" opacity="0.4"/>
-    <path d="M 998 106 h 124 l -10 46 a 52 26 0 0 1 -104 0 z" fill="url(#gPot)"/>
-    <rect x="988" y="98" width="144" height="10" rx="5" fill="#2F4F45"/>
-    <circle cx="1060" cy="93" r="6" fill="#E8B84B"/>
-    <rect x="1016" y="172" width="92" height="30" rx="15" fill="url(#gMd)"/>
-    <text x="1062" y="192" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="700">-90.9%</text>
-    <text x="1062" y="222" text-anchor="middle" fill="#7FA65A" font-size="12">同一 URL，按需供料</text>
+  <!-- gridlines: x = 140 + 8*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="300" y1="130" x2="300" y2="318"/>
+    <line x1="540" y1="130" x2="540" y2="318"/>
+    <line x1="780" y1="130" x2="780" y2="318"/>
+    <line x1="1020" y1="130" x2="1020" y2="318"/>
   </g>
 
-  <!-- dumbbell rows: v -> x=330+(v/100)*560 -->
-  <g>
-    <rect x="176" y="212" width="884" height="76" fill="#7FA65A" opacity="0.08"/>
-    <text class="rl" x="160" y="256" text-anchor="end">acceptmarkdown 页</text>
-    <line x1="465" y1="250" x2="849" y2="250" stroke="#8FA79B" stroke-width="2.5"/>
-    <circle cx="849" cy="250" r="9" fill="none" stroke="#2F4F45" stroke-width="3"/>
-    <circle cx="465" cy="250" r="9" fill="#D9503F"/>
-    <text class="b" x="849" y="224" text-anchor="middle">HTML 24,222 B</text>
-    <text class="val" x="465" y="288" text-anchor="middle" fill="#D9503F">2,201 B</text>
-    <text class="val" x="1082" y="257" text-anchor="end" fill="#D9503F">省 90.9%</text>
+  <!-- acceptmarkdown page: 2,201 / 24,222 = 9.1% -->
+  <text x="302" y="166" font-size="12.5" fill="#1A1B1E">acceptmarkdown 页</text>
+  <rect x="140" y="152" width="72.8" height="20" fill="#0072B2"/>
+  <text x="222" y="166" font-size="12" fill="#555">9.1%，省 90.9%（HTML 24,222 B → 2,201 B）</text>
 
-    <text class="rl" x="160" y="336" text-anchor="end">Anthropic 文档</text>
-    <line x1="871" y1="330" x2="900" y2="330" stroke="#8FA79B" stroke-width="2.5"/>
-    <circle cx="900" cy="330" r="9" fill="none" stroke="#2F4F45" stroke-width="3"/>
-    <circle cx="871" cy="330" r="9" fill="#D9503F"/>
-    <text class="b" x="888" y="304" text-anchor="middle">HTML 476,665 B</text>
-    <text class="val" x="857" y="368" text-anchor="end" fill="#D9503F">16,629 B</text>
-    <text class="val" x="1082" y="337" text-anchor="end" fill="#D9503F">省 96.5%</text>
+  <!-- Anthropic docs: 16,629 / 476,665 = 3.5% -->
+  <text x="302" y="220" font-size="12.5" fill="#1A1B1E">Anthropic 文档</text>
+  <rect x="140" y="206" width="28" height="20" fill="#0072B2"/>
+  <text x="178" y="220" font-size="12" fill="#555">3.5%，省 96.5%（HTML 476,665 B → 16,629 B）</text>
 
-    <rect x="176" y="386" width="884" height="76" fill="#E8B84B" opacity="0.10"/>
-    <text class="rl" x="160" y="430" text-anchor="end">语义化 HTML 页</text>
-    <line x1="465" y1="424" x2="396" y2="424" stroke="#8FA79B" stroke-width="2.5"/>
-    <circle cx="465" cy="424" r="9" fill="none" stroke="#2F4F45" stroke-width="3"/>
-    <circle cx="396" cy="424" r="9" fill="#B9892F"/>
-    <text class="b" x="465" y="398" text-anchor="middle">HTML 基线 100%</text>
-    <text class="val" x="380" y="462" text-anchor="end" fill="#B9892F">仅省 5%-20%</text>
-    <text x="1082" y="431" text-anchor="end" fill="#8A8578" font-size="13">干净页面不戏剧化（HN 评论实测）</text>
+  <!-- clean semantic HTML: 5%-20% fewer bytes => 80%-95% -->
+  <text x="302" y="274" font-size="12.5" fill="#1A1B1E">语义化 HTML 页（HN 评论实测）</text>
+  <rect x="780" y="260" width="120" height="20" fill="#999999"/>
+  <line x1="780" y1="256" x2="780" y2="284" stroke="#555555" stroke-width="0.75"/>
+  <line x1="900" y1="256" x2="900" y2="284" stroke="#555555" stroke-width="0.75"/>
+  <text x="910" y="274" font-size="12" fill="#555">80–95%，省 5%–20%</text>
+
+  <!-- value axis -->
+  <line x1="140" y1="318" x2="1020" y2="318" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="140" y1="318" x2="140" y2="322"/>
+    <line x1="300" y1="318" x2="300" y2="322"/>
+    <line x1="540" y1="318" x2="540" y2="322"/>
+    <line x1="780" y1="318" x2="780" y2="322"/>
+    <line x1="1020" y1="318" x2="1020" y2="322"/>
   </g>
-
-  <!-- supply side strip -->
-  <line x1="64" y1="500" x2="1136" y2="500" stroke="#E5E1D4" stroke-width="1"/>
-  <g>
-    <text x="64" y="542" font-size="26" font-weight="700" fill="#2F4F45">7 款</text>
-    <text x="64" y="564" font-size="12.5" fill="#8A8578">编码 Agent 已发该头部</text>
-    <text x="248" y="542" font-size="26" font-weight="700" fill="#2F4F45">3 家</text>
-    <text x="248" y="564" font-size="12.5" fill="#8A8578">头部托管平台默认供料</text>
-    <text x="470" y="542" font-size="26" font-weight="700" fill="#D9503F">0 家</text>
-    <text x="470" y="564" font-size="12.5" fill="#8A8578">消费级大产品支持</text>
-    <text x="690" y="542" font-size="26" font-weight="700" fill="#B9892F">1 处</text>
-    <text x="690" y="564" font-size="12.5" fill="#8A8578">Codex CLI 走 Link 头发现</text>
-    <path d="M 1042 520 h 58 l -8 34 a 24 12 0 0 1 -42 0 z" fill="url(#gPot)" opacity="0.85"/>
-    <rect x="1036" y="514" width="70" height="7" rx="3.5" fill="#2F4F45" opacity="0.85"/>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="140" y="338">0</text>
+    <text x="300" y="338">20</text>
+    <text x="540" y="338">50</text>
+    <text x="780" y="338">80</text>
+    <text x="1020" y="338">110</text>
   </g>
+  <text x="580" y="362" font-size="14" fill="#1A1B1E" text-anchor="middle">Markdown 字节数占同页 HTML 的比例（%）</text>
 
-  <text x="64" y="630" font-size="12.5" fill="#A29C88">字节数为 2026-09-07 本机 curl 实测；Agent 矩阵来自发起方 acceptmarkdown.com（利益相关）；消费端支持状态截至当日。</text>
+  <!-- ============ panel b ============ -->
+  <text x="60" y="418" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="418" font-size="15" fill="#1A1B1E">发送该头部的 Agent 产品数（款，acceptmarkdown.com 矩阵）</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="140" y1="446" x2="700" y2="446"/>
+    <line x1="140" y1="497" x2="700" y2="497"/>
+  </g>
+  <!-- bars: h = 17.14 * n, baseline y = 560 -->
+  <rect x="180" y="440" width="64" height="120" fill="#0072B2"/>
+  <text x="212" y="432" font-size="12" fill="#555" text-anchor="middle">7</text>
+  <text x="212" y="578" font-size="12.5" fill="#1A1B1E" text-anchor="middle">编码 Agent</text>
+
+  <rect x="360" y="509" width="64" height="51" fill="#0072B2" opacity="0.35"/>
+  <text x="392" y="501" font-size="12" fill="#555" text-anchor="middle">3</text>
+  <text x="392" y="578" font-size="12.5" fill="#1A1B1E" text-anchor="middle">托管平台文档站</text>
+
+  <rect x="540" y="558.5" width="64" height="1.5" fill="#999999"/>
+  <text x="572" y="551" font-size="12" fill="#555" text-anchor="middle">0</text>
+  <text x="572" y="578" font-size="12.5" fill="#1A1B1E" text-anchor="middle">消费级大产品</text>
+
+  <!-- value axis -->
+  <line x1="140" y1="560" x2="700" y2="560" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="140" y1="560" x2="136" y2="560"/>
+    <line x1="140" y1="509" x2="136" y2="509"/>
+    <line x1="140" y1="446" x2="136" y2="446"/>
+    <line x1="140" y1="440" x2="136" y2="440"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="130" y="564">0</text>
+    <text x="130" y="513">3</text>
+    <text x="130" y="450">7</text>
+  </g>
+  <text x="72" y="600" font-size="12" fill="#555">消费级：ChatGPT browse、Gemini、Claude.ai web 均为 No；Astro 文档仍返回 HTML；Codex CLI 为 Partial，走 Link 头发现</text>
+
+  <!-- footnote -->
+  <text x="60" y="632" font-size="11" fill="#767676">字节数为 2026-09-07 本机 curl 实测；省 5%–20% 出自 HN 评论自估，未独立核实；Agent 矩阵为发起方 acceptmarkdown.com/status（利益相关），截至 2026-09-07</text>
 </svg>

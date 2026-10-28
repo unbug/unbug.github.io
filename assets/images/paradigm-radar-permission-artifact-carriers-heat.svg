@@ -1,51 +1,81 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" font-family="Helvetica, Arial, sans-serif">
-  <rect width="1200" height="520" fill="#ffffff"/>
-  <text x="60" y="52" fill="#111827" font-size="30" font-weight="bold">四个竞争载体与冷热分裂</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <!-- carriers row -->
-  <g font-size="19">
-    <rect x="60" y="88" width="255" height="86" rx="10" fill="#eef4ff" stroke="#2563eb" stroke-width="2"/>
-    <text x="78" y="118" fill="#1d4ed8" font-weight="bold" font-size="20">OCI 镜像</text>
-    <text x="78" y="146" fill="#475569">Docker Kit，交 CNCF</text>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">四个载体方案同周并存；产品帖热度 306 分，规范主帖仅 7 分</text>
 
-    <rect x="345" y="88" width="255" height="86" rx="10" fill="#ecfdf3" stroke="#16a34a" stroke-width="2"/>
-    <text x="363" y="118" fill="#15803d" font-weight="bold" font-size="20">身份目录</text>
-    <text x="363" y="146" fill="#475569">Okta AI Agent 类目</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">与 Agent 权限直接相关的 HN 帖分数（分，产品与规范分列）</text>
 
-    <rect x="630" y="88" width="255" height="86" rx="10" fill="#fff7e6" stroke="#d97706" stroke-width="2"/>
-    <text x="648" y="118" fill="#b45309" font-weight="bold" font-size="20">支付授权框架</text>
-    <text x="648" y="146" fill="#475569">Amex，据 TechCrunch</text>
-
-    <rect x="915" y="88" width="225" height="86" rx="10" fill="#f5f0ff" stroke="#7c3aed" stroke-width="2"/>
-    <text x="933" y="118" fill="#6d28d9" font-weight="bold" font-size="20">IETF 草案</text>
-    <text x="933" y="146" fill="#475569">协议未收敛</text>
+  <!-- gridlines: x = 360 + 2.353*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="580" y1="126" x2="580" y2="400"/>
+    <line x1="800" y1="126" x2="800" y2="400"/>
+    <line x1="1020" y1="126" x2="1020" y2="400"/>
   </g>
 
-  <text x="60" y="208" fill="#334155" font-size="19">四套互不兼容的载体同周并存；Docker 产品页内同时另有 Cross App Access Protocol。</text>
+  <!-- products: blue -->
+  <text x="348" y="152" font-size="12.5" fill="#1A1B1E" text-anchor="end">Docker Agent 产品帖</text>
+  <rect x="360" y="138" width="675.6" height="20" fill="#0072B2"/>
+  <text x="1044" y="152" font-size="12" fill="#555">306</text>
 
-  <!-- heat bars -->
-  <text x="60" y="262" fill="#111827" font-size="24" font-weight="bold">开发者侧热度（HN 分数，实测 2026-10-15）</text>
-  <g font-size="18">
-    <text x="60" y="304" fill="#334155">Docker Agent 产品帖</text>
-    <rect x="360" y="286" width="612" height="24" rx="4" fill="#2563eb"/>
-    <text x="982" y="304" fill="#1d4ed8" font-weight="bold">306</text>
+  <text x="348" y="196" font-size="12.5" fill="#1A1B1E" text-anchor="end">Agent37 低成本沙箱</text>
+  <rect x="360" y="182" width="355.5" height="20" fill="#0072B2"/>
+  <text x="724" y="196" font-size="12" fill="#555">160</text>
 
-    <text x="60" y="344" fill="#334155">Nvidia 看门狗芯片</text>
-    <rect x="360" y="326" width="460" height="24" rx="4" fill="#0ea5e9"/>
-    <text x="830" y="344" fill="#0369a1" font-weight="bold">230</text>
+  <!-- specs: grey -->
+  <text x="348" y="252" font-size="12.5" fill="#1A1B1E" text-anchor="end">Amex 授权框架主帖</text>
+  <rect x="360" y="238" width="8.8" height="20" fill="#999999"/>
+  <text x="377" y="252" font-size="12" fill="#555">4</text>
 
-    <text x="60" y="384" fill="#334155">Agent37 沙箱 Launch</text>
-    <rect x="360" y="366" width="320" height="24" rx="4" fill="#94a3b8"/>
-    <text x="690" y="384" fill="#475569" font-weight="bold">160</text>
+  <text x="348" y="296" font-size="12.5" fill="#1A1B1E" text-anchor="end">IETF 草案帖（两次）</text>
+  <rect x="360" y="282" width="4.4" height="20" fill="#999999"/>
+  <rect x="360" y="282" width="8.8" height="20" fill="none" stroke="#555555" stroke-width="0.75"/>
+  <text x="377" y="296" font-size="12" fill="#555">2、4</text>
 
-    <text x="60" y="424" fill="#334155">Infisical Agent Vault</text>
-    <rect x="360" y="406" width="12" height="24" rx="3" fill="#f87171"/>
-    <text x="382" y="424" fill="#b91c1c" font-weight="bold">6</text>
+  <text x="348" y="340" font-size="12.5" fill="#1A1B1E" text-anchor="end">Docker＋CNCF 规范主帖</text>
+  <rect x="360" y="326" width="15.4" height="20" fill="#999999"/>
+  <text x="384" y="340" font-size="12" fill="#555">7（同日镜像帖 6）</text>
 
-    <text x="60" y="464" fill="#334155">Docker+CNCF 规范主帖</text>
-    <rect x="360" y="446" width="14" height="24" rx="3" fill="#f87171"/>
-    <text x="384" y="464" fill="#b91c1c" font-weight="bold">7</text>
+  <!-- value axis -->
+  <line x1="360" y1="400" x2="1020" y2="400" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="360" y1="400" x2="360" y2="404"/>
+    <line x1="580" y1="400" x2="580" y2="404"/>
+    <line x1="800" y1="400" x2="800" y2="404"/>
+    <line x1="1020" y1="400" x2="1020" y2="404"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="360" y="420">0</text>
+    <text x="580" y="420">100</text>
+    <text x="800" y="420">200</text>
+    <text x="1020" y="420">300</text>
+  </g>
+  <text x="690" y="444" font-size="14" fill="#1A1B1E" text-anchor="middle">HN 分数（分）</text>
+  <g font-size="12" fill="#555">
+    <rect x="360" y="458" width="12" height="10" fill="#0072B2"/>
+    <text x="377" y="467">产品/沙箱帖</text>
+    <rect x="470" y="458" width="12" height="10" fill="#999999"/>
+    <text x="487" y="467">规范/协议帖</text>
   </g>
 
-  <text x="60" y="502" fill="#475569" font-size="19">产品与事故热，规范本身冷：基础设施在铺，共识未形成。</text>
+  <!-- ============ panel b ============ -->
+  <text x="60" y="512" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="512" font-size="15" fill="#1A1B1E">四个竞争载体（同一权限清单，四种托管方）</text>
+
+  <g font-size="12.5" fill="#1A1B1E">
+    <text x="60" y="546">OCI 镜像</text>
+    <text x="200" y="546" font-size="12" fill="#555">Docker Kit，交 CNCF</text>
+    <text x="470" y="546">身份目录</text>
+    <text x="610" y="546" font-size="12" fill="#555">Okta 升为第三类身份，四产品挂 New</text>
+    <text x="60" y="574">支付授权框架</text>
+    <text x="200" y="574" font-size="12" fill="#555">Amex，据 TechCrunch 报道</text>
+    <text x="470" y="574">IETF 草案</text>
+    <text x="610" y="574" font-size="12" fill="#555">语言层各造各的（Cedar 1,784 星）</text>
+  </g>
+  <text x="60" y="602" font-size="12" fill="#555">碎片化实证：Amex 专有框架、IETF 草案、Okta Cross App Access Protocol 同周并存；规范语义仍在动（PR #121）。</text>
+
+  <!-- footnote -->
+  <text x="60" y="640" font-size="11" fill="#767676">分数为 HN 实测（截至 2026-10-15）· 窗口 2026-09-16 至 10-15 · 事故帖另计：Codex 未授权消费 7.8 万美元 84 分、Meta Muse 无视权限 164 分 · 载体胜负未分</text>
 </svg>

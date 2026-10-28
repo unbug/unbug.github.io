@@ -1,48 +1,97 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
-  <rect width="1200" height="560" fill="#f7fafc"/>
-  <text x="600" y="44" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="24" font-weight="bold" fill="#1a2b45">Recuris 主结果：基线 vs Recuris（成功率 %）</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <!-- tau2 Retail -->
-  <text x="80" y="110" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#2c4a75">τ²-Bench Retail</text>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">Recuris 在六个模型×基准组合上提升 13.5–17.8 个百分点，37 个组合中 35 个提升</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">τ²-Bench Retail 任务成功率（%，空心=基线，实心=Recuris）</text>
+
+  <!-- gridlines: x = 300 + 12*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="525" y1="128" x2="525" y2="296"/>
+    <line x1="750" y1="128" x2="750" y2="296"/>
+    <line x1="975" y1="128" x2="975" y2="296"/>
+  </g>
 
   <!-- GPT-5.6 Sol: 58.3 -> 76.1 -->
-  <rect x="80" y="130" width="349.8" height="34" fill="#b9cde6"/>
-  <text x="440" y="153" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#44587a">GPT-5.6 Sol 基线 58.3</text>
-  <rect x="80" y="170" width="456.6" height="34" fill="#2e7d4f"/>
-  <text x="546" y="193" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#1a3a28">Recuris 76.1（+17.8）</text>
+  <text x="288" y="168" font-size="12.5" fill="#1A1B1E" text-anchor="end">GPT-5.6 Sol</text>
+  <line x1="824.7" y1="162" x2="984.9" y2="162" stroke="#555555" stroke-width="1.5"/>
+  <circle cx="824.7" cy="162" r="7" fill="#FFFFFF" stroke="#0072B2" stroke-width="2"/>
+  <circle cx="984.9" cy="162" r="7" fill="#0072B2"/>
+  <text x="825" y="146" font-size="12" fill="#555" text-anchor="middle">58.3</text>
+  <text x="985" y="146" font-size="12" fill="#555" text-anchor="end">76.1（Δ=+17.8）</text>
 
-  <!-- Opus 5: 72.4 -> 87.9 -->
-  <rect x="80" y="222" width="434.4" height="34" fill="#b9cde6"/>
-  <text x="524" y="245" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#44587a">Claude Opus 5 基线 72.4</text>
-  <rect x="80" y="262" width="527.4" height="34" fill="#2e7d4f"/>
-  <text x="617" y="285" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#1a3a28">Recuris 87.9（+15.6，超无 Recuris 最佳 +9.7）</text>
+  <!-- Claude Opus 5: 72.4 -> 87.9 -->
+  <text x="288" y="252" font-size="12.5" fill="#1A1B1E" text-anchor="end">Claude Opus 5</text>
+  <line x1="951.6" y1="246" x2="1091.1" y2="246" stroke="#555555" stroke-width="1.5"/>
+  <circle cx="951.6" cy="246" r="7" fill="#FFFFFF" stroke="#0072B2" stroke-width="2"/>
+  <circle cx="1091.1" cy="246" r="7" fill="#0072B2"/>
+  <text x="952" y="230" font-size="12" fill="#555" text-anchor="middle">72.4</text>
+  <text x="1091" y="230" font-size="12" fill="#555" text-anchor="end">87.9（Δ=+15.6）</text>
 
-  <!-- SkillFlow -->
-  <text x="80" y="340" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="bold" fill="#2c4a75">SkillFlow（跨模型迁移：技能包在部署模型上构建）</text>
+  <!-- value axis -->
+  <line x1="300" y1="296" x2="1020" y2="296" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="300" y1="296" x2="300" y2="300"/>
+    <line x1="525" y1="296" x2="525" y2="300"/>
+    <line x1="750" y1="296" x2="750" y2="300"/>
+    <line x1="975" y1="296" x2="975" y2="300"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="300" y="318">0</text>
+    <text x="525" y="318">25</text>
+    <text x="750" y="318">50</text>
+    <text x="975" y="318">75</text>
+  </g>
+  <text x="640" y="342" font-size="14" fill="#1A1B1E" text-anchor="middle">任务成功率（%）</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="60" y="392" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="392" font-size="15" fill="#1A1B1E">SkillFlow 任务成功率（%，跨模型迁移）</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="525" y1="416" x2="525" y2="584"/>
+    <line x1="750" y1="416" x2="750" y2="584"/>
+    <line x1="975" y1="416" x2="975" y2="584"/>
+  </g>
 
   <!-- Qwen3.6-27B: 42.2 -> 58.7 -->
-  <rect x="80" y="360" width="253.2" height="34" fill="#b9cde6"/>
-  <text x="343" y="383" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#44587a">Qwen3.6-27B 基线 42.2</text>
-  <rect x="80" y="400" width="352.2" height="34" fill="#2e7d4f"/>
-  <text x="442" y="423" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#1a3a28">Recuris 58.7（+16.6）</text>
+  <text x="288" y="456" font-size="12.5" fill="#1A1B1E" text-anchor="end">Qwen3.6-27B</text>
+  <line x1="679.8" y1="450" x2="828.3" y2="450" stroke="#555555" stroke-width="1.5"/>
+  <circle cx="679.8" cy="450" r="7" fill="#FFFFFF" stroke="#009E73" stroke-width="2"/>
+  <circle cx="828.3" cy="450" r="7" fill="#009E73"/>
+  <text x="680" y="434" font-size="12" fill="#555" text-anchor="middle">42.2</text>
+  <text x="828" y="434" font-size="12" fill="#555" text-anchor="end">58.7（Δ=+16.6）</text>
 
   <!-- Qwen3.6-35B: 35.3 -> 48.8 -->
-  <rect x="80" y="452" width="211.8" height="34" fill="#b9cde6"/>
-  <text x="301" y="475" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#44587a">Qwen3.6-35B 基线 35.3</text>
-  <rect x="80" y="492" width="292.8" height="34" fill="#2e7d4f"/>
-  <text x="382" y="515" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#1a3a28">Recuris 48.8（+13.5）</text>
+  <text x="288" y="540" font-size="12.5" fill="#1A1B1E" text-anchor="end">Qwen3.6-35B</text>
+  <line x1="617.7" y1="534" x2="739.2" y2="534" stroke="#555555" stroke-width="1.5"/>
+  <circle cx="617.7" cy="534" r="7" fill="#FFFFFF" stroke="#009E73" stroke-width="2"/>
+  <circle cx="739.2" cy="534" r="7" fill="#009E73"/>
+  <text x="618" y="518" font-size="12" fill="#555" text-anchor="middle">35.3</text>
+  <text x="739" y="518" font-size="12" fill="#555" text-anchor="end">48.8（Δ=+13.5）</text>
 
-  <!-- right notes -->
-  <rect x="760" y="130" width="380" height="400" rx="10" fill="#ffffff" stroke="#3d5a82"/>
-  <text x="784" y="168" font-family="Helvetica,Arial,sans-serif" font-size="17" font-weight="bold" fill="#2c4a75">关键读数</text>
-  <text x="784" y="204" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#33475f">· 37 个模型×基准组合中 35 个提升</text>
-  <text x="784" y="236" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#33475f">· 优势随交互轮次增长：最长任务 +32.2</text>
-  <text x="784" y="268" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#33475f">· 常见长程失败模式最多下降 80%</text>
-  <text x="784" y="300" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#33475f">· 失败归因：结构化轨迹 64.8% vs</text>
-  <text x="800" y="324" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#33475f">仅任务结果 13.0%</text>
-  <line x1="784" y1="352" x2="1116" y2="352" stroke="#d5e0ee"/>
-  <text x="784" y="384" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#b03a48">反直觉消融（τ²-Retail Table 12）：</text>
-  <text x="784" y="416" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#33475f">裸 Agent 58.11 / 仅工作记忆 82.02</text>
-  <text x="784" y="448" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#33475f">模型自控调用 65.57（多 3,111 token）</text>
-  <text x="784" y="480" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#1a3a28">Recuris 83.55：上下文更少，结果更好</text>
+  <!-- value axis -->
+  <line x1="300" y1="584" x2="1020" y2="584" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="300" y1="584" x2="300" y2="588"/>
+    <line x1="525" y1="584" x2="525" y2="588"/>
+    <line x1="750" y1="584" x2="750" y2="588"/>
+    <line x1="975" y1="584" x2="975" y2="588"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="300" y="606">0</text>
+    <text x="525" y="606">25</text>
+    <text x="750" y="606">50</text>
+    <text x="975" y="606">75</text>
+  </g>
+  <text x="660" y="628" font-size="14" fill="#1A1B1E" text-anchor="middle">任务成功率（%）</text>
+
+  <text x="1055" y="196" font-size="12" fill="#555" text-anchor="end">87.9 比该基准上不用</text>
+  <text x="1055" y="214" font-size="12" fill="#555" text-anchor="end">Recuris 的最佳模型高 9.7 个点</text>
+
+  <!-- footnote -->
+  <text x="60" y="656" font-size="11" fill="#767676">数据：arXiv:2608.24876（论文自测口径）· SkillFlow 衡量技能包跨模型迁移，非跨任务迁移 · Δ 为图内两值相减 · 模型权重全程未动</text>
 </svg>

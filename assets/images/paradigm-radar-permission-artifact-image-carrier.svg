@@ -1,34 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" font-family="Helvetica, Arial, sans-serif">
-  <rect width="1200" height="470" fill="#ffffff"/>
-  <text x="60" y="56" fill="#111827" font-size="30" font-weight="bold">一个镜像同时锁住 agent 与它的请求清单</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <style>
+    .mono { font-family: 'SF Mono',Menlo,Consolas,monospace; }
+  </style>
 
-  <!-- image box -->
-  <rect x="60" y="96" width="420" height="290" rx="12" fill="#f3f6f9" stroke="#2563eb" stroke-width="2.5"/>
-  <text x="84" y="136" fill="#1d4ed8" font-size="22" font-weight="bold">Kit = 一个普通 OCI 镜像</text>
-  <rect x="84" y="156" width="372" height="52" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
-  <text x="100" y="189" fill="#334155" font-size="19">agent 本体</text>
-  <rect x="84" y="216" width="372" height="52" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
-  <text x="100" y="249" fill="#334155" font-size="19">它的工具</text>
-  <rect x="84" y="276" width="372" height="90" rx="8" fill="#eef4ff" stroke="#2563eb" stroke-width="2"/>
-  <text x="100" y="306" fill="#1d4ed8" font-size="19" font-weight="bold">类型化请求清单</text>
-  <text x="100" y="336" fill="#475569" font-size="18">hosts / credentials / volumes</text>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">Kit 复用 OCI 镜像扩展点：权限清单随镜像被 pull、diff、sign、scan</text>
 
-  <!-- arrow -->
-  <line x1="500" y1="240" x2="600" y2="240" stroke="#64748b" stroke-width="2.5"/>
-  <path d="M600 240 l-16 -9 v18 z" fill="#64748b"/>
-  <text x="512" y="226" fill="#475569" font-size="18">pull / diff</text>
-  <text x="512" y="268" fill="#475569" font-size="18">sign / scan</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">Kit 的内容构成（据 Docker 官方博客）</text>
 
-  <!-- diff panel -->
-  <rect x="620" y="96" width="520" height="290" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
-  <text x="644" y="136" fill="#0f172a" font-size="22" font-weight="bold">新版本要更多权限时：diff 里可见</text>
-  <rect x="644" y="158" width="472" height="150" rx="8" fill="#0f1720"/>
-  <text x="664" y="190" fill="#94a3b8" font-size="18" font-family="monospace">@@ kit.yaml @@</text>
-  <text x="664" y="220" fill="#4ade80" font-size="18" font-family="monospace">+ hosts: api.vendor.example</text>
-  <text x="664" y="250" fill="#4ade80" font-size="18" font-family="monospace">+ credentials: vault/prod-readonly</text>
-  <text x="664" y="280" fill="#f87171" font-size="18" font-family="monospace">- volumes: /home</text>
-  <text x="644" y="342" fill="#334155" font-size="19">评审者能 diff 它，合规运行时能执行它，</text>
-  <text x="644" y="370" fill="#334155" font-size="19">新增行是「有人可以拒绝」的地方。</text>
+  <!-- nested boxes: outer = OCI image -->
+  <rect x="60" y="128" width="500" height="252" fill="none" stroke="#1A1B1E" stroke-width="1.5"/>
+  <text x="76" y="152" font-size="12.5" fill="#1A1B1E">Kit = 一个普通 OCI 镜像（沿用现有构建/推送/签名/扫描工具链）</text>
 
-  <text x="60" y="432" fill="#475569" font-size="19">据 Docker 官方博客：清单是镜像的一部分，pinning the image pins the agent and its requests together。</text>
+  <rect x="84" y="168" width="452" height="52" fill="none" stroke="#555555" stroke-width="1.5"/>
+  <text x="100" y="199" font-size="12.5" fill="#1A1B1E">agent 本体</text>
+
+  <rect x="84" y="228" width="452" height="52" fill="none" stroke="#555555" stroke-width="1.5"/>
+  <text x="100" y="259" font-size="12.5" fill="#1A1B1E">它的工具</text>
+
+  <rect x="84" y="288" width="452" height="76" fill="#E69F00" fill-opacity="0.12" stroke="#E69F00" stroke-width="2"/>
+  <text x="100" y="316" font-size="12.5" fill="#1A1B1E" font-weight="bold">类型化请求清单（清单在镜像里）</text>
+  <text x="100" y="344" font-size="12.5" fill="#555">hosts / credentials / volumes 逐条声明</text>
+
+  <text x="60" y="410" font-size="12" fill="#555">官方原文：list 是镜像的一部分，pinning the image pins the agent and its requests together</text>
+  <text x="60" y="430" font-size="12" fill="#555">非新制品类型，使用 OCI 已定义扩展点；首批生态含 AWS、Box、Datadog、Dynatrace、JFrog、Palo Alto Networks、Snyk</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="640" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="662" y="104" font-size="15" fill="#1A1B1E">新版本要更多权限时：diff 以新增行出现</text>
+
+  <g font-size="12.5" class="mono">
+    <text x="640" y="148" fill="#767676">kit.yaml</text>
+    <text x="640" y="184" fill="#1A1B1E">  hosts:</text>
+    <text x="640" y="212" fill="#0072B2">+   api.vendor.example</text>
+    <text x="640" y="240" fill="#0072B2">+   credentials: vault/prod-readonly</text>
+    <text x="640" y="268" fill="#1A1B1E">  volumes:</text>
+    <text x="640" y="296" fill="#D55E00">-   /home</text>
+  </g>
+  <g font-size="12" fill="#555">
+    <rect x="640" y="330" width="12" height="10" fill="#0072B2"/>
+    <text x="657" y="339">新增权限行：评审者在这里可以拒绝</text>
+    <rect x="640" y="354" width="12" height="10" fill="#D55E00"/>
+    <text x="657" y="363">移除权限行</text>
+  </g>
+  <text x="640" y="402" font-size="12" fill="#555">同事能 pull 它、评审者能 diff 它、合规运行时能执行它；</text>
+  <text x="640" y="422" font-size="12" fill="#555">新版本要更多权限时，变化以新增行出现，有人可以拒绝。</text>
+  <text x="640" y="452" font-size="12" fill="#555">反方边界：静态声明与运行时行为之间仍有缺口（Meta Muse 帖 164 分即此立场）。</text>
+
+  <!-- divider between panels (whitespace only, no line) -->
+
+  <!-- footnote -->
+  <text x="60" y="640" font-size="11" fill="#767676">内容构成与原文引述据 Docker 官方博客（2026-10-15 实测）· panel b 的 diff 为示意结构，行内容为说明性示例，非仓库实际文件 · 规范语义仍在动（PR #121，10-14）</text>
 </svg>

@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">七件网络运维智能体专利集中于七周窗口授权公开，四家大厂全部走平台内闭环路线</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">专利公开时间轴（实心 = 授权，空心 = 公开申请）</text>
+
+  <!-- vertical gridlines at month starts: x = 132.35 + 15.527*(day-1) -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="132.35" y1="126" x2="132.35" y2="452"/>
+    <line x1="225.98" y1="126" x2="225.98" y2="452"/>
+    <line x1="317.6" y1="126" x2="317.6" y2="452"/>
+    <line x1="411.23" y1="126" x2="411.23" y2="452"/>
+    <line x1="502.85" y1="126" x2="502.85" y2="452"/>
+  </g>
+
+  <!-- axis -->
+  <line x1="132.35" y1="452" x2="800" y2="452" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="132.35" y1="452" x2="132.35" y2="456"/>
+    <line x1="225.98" y1="452" x2="225.98" y2="456"/>
+    <line x1="317.6" y1="452" x2="317.6" y2="456"/>
+    <line x1="411.23" y1="452" x2="411.23" y2="456"/>
+    <line x1="502.85" y1="452" x2="502.85" y2="456"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="132.35" y="472">06-23</text>
+    <text x="225.98" y="472">07-01</text>
+    <text x="317.6" y="472">08-01</text>
+    <text x="411.23" y="472">08-09</text>
+    <text x="502.85" y="472">08-17</text>
+  </g>
+  <text x="466" y="498" font-size="14" fill="#1A1B1E" text-anchor="middle">公开日（2026 年，月-日）</text>
+
+  <!-- rows: y = 150 + 50*i ; x = 132.35 + 15.527*(days since 06-23) -->
+  <!-- 06-23 cisco test x=132.35 -->
+  <text x="588" y="154" font-size="12" fill="#555" text-anchor="end">Cisco · 06-23 授权</text>
+  <circle cx="132.35" cy="150" r="6" fill="#0072B2"/>
+  <!-- 07-14 cisco scen x=326.1 -->
+  <text x="588" y="204" font-size="12" fill="#555" text-anchor="end">Cisco · 07-14 授权</text>
+  <circle cx="326.1" cy="200" r="6" fill="#0072B2"/>
+  <!-- 08-04 msft x=432.5 -->
+  <text x="588" y="254" font-size="12" fill="#555" text-anchor="end">Microsoft · 08-04 授权</text>
+  <circle cx="432.5" cy="250" r="6" fill="#0072B2"/>
+  <!-- 08-04 cisco rl x=432.5 -->
+  <text x="588" y="304" font-size="12" fill="#555" text-anchor="end">Cisco · 08-04 授权</text>
+  <circle cx="432.5" cy="300" r="6" fill="#0072B2"/>
+  <!-- 08-05 jnpr x=448.0 -->
+  <text x="588" y="354" font-size="12" fill="#555" text-anchor="end">Juniper · 08-05 授权文本</text>
+  <circle cx="448.0" cy="350" r="6" fill="#0072B2"/>
+  <!-- 08-11 cisco eval x=540.6 -->
+  <text x="588" y="404" font-size="12" fill="#555" text-anchor="end">Cisco · 08-11 授权</text>
+  <circle cx="540.6" cy="400" r="6" fill="#0072B2"/>
+  <!-- 08-13 snow x=571.7 hollow -->
+  <text x="588" y="454" font-size="12" fill="#555" text-anchor="end">ServiceNow · 08-13 公开</text>
+  <circle cx="571.7" cy="450" r="6" fill="#FFFFFF" stroke="#D55E00" stroke-width="1.5"/>
+
+  <!-- legend (bottom-left of panel a) -->
+  <g font-size="12" fill="#555">
+    <circle cx="140" cy="520" r="5" fill="#0072B2"/>
+    <text x="151" y="524">授权（Active）</text>
+    <circle cx="260" cy="520" r="5" fill="#FFFFFF" stroke="#D55E00" stroke-width="1.5"/>
+    <text x="271" y="524">公开申请（Pending）</text>
+  </g>
+
+  <!-- ============ panel b ============ -->
+  <text x="870" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="892" y="104" font-size="15" fill="#1A1B1E">开源生态星数（星）</text>
+
+  <!-- gridlines: x = 890 + 0.09369*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="1003.8" y1="128" x2="1003.8" y2="432"/>
+    <line x1="1117.5" y1="128" x2="1117.5" y2="432"/>
+  </g>
+
+  <!-- rows: y = 144 + 54*i -->
+  <!-- netmiko 4312 w=404 y=144 -->
+  <text x="880" y="159" font-size="12.5" fill="#1A1B1E" text-anchor="end">netmiko</text>
+  <rect x="890" y="144" width="404" height="20" fill="#999999"/>
+  <text x="1128" y="159" font-size="12" fill="#1A1B1E" text-anchor="end">4,312</text>
+  <!-- containerlab 2910 w=272.6 y=198 -->
+  <text x="880" y="213" font-size="12.5" fill="#1A1B1E" text-anchor="end">containerlab</text>
+  <rect x="890" y="198" width="272.6" height="20" fill="#0072B2"/>
+  <text x="1170.6" y="213" font-size="12" fill="#555">2,910</text>
+  <!-- batfish 1515 w=142 y=252 -->
+  <text x="880" y="267" font-size="12.5" fill="#1A1B1E" text-anchor="end">batfish</text>
+  <rect x="890" y="252" width="142" height="20" fill="#999999"/>
+  <text x="1040" y="267" font-size="12" fill="#555">1,515</text>
+  <!-- lyraios 137 w=12.8 y=306 -->
+  <text x="880" y="321" font-size="12.5" fill="#1A1B1E" text-anchor="end">lyraios（停更）</text>
+  <rect x="890" y="306" width="12.8" height="20" fill="#999999"/>
+  <text x="910.8" y="321" font-size="12" fill="#555">137</text>
+  <!-- netbox-agent-compliance 22 w=2.1 y=360 -->
+  <text x="880" y="375" font-size="12.5" fill="#1A1B1E" text-anchor="end">netbox-agent-compliance</text>
+  <rect x="890" y="360" width="2.1" height="20" fill="#D55E00"/>
+  <text x="899" y="375" font-size="12" fill="#555">22</text>
+  <!-- agentic-network-intent-testbed 0 y=414 -->
+  <text x="880" y="429" font-size="12.5" fill="#1A1B1E" text-anchor="end">爱立信 testbed</text>
+  <line x1="890" y1="408" x2="890" y2="428" stroke="#D55E00" stroke-width="1.5"/>
+  <text x="899" y="429" font-size="12" fill="#555">0</text>
+
+  <!-- value axis -->
+  <line x1="890" y1="432" x2="1117.5" y2="432" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="890" y1="432" x2="890" y2="436"/>
+    <line x1="1003.8" y1="432" x2="1003.8" y2="436"/>
+    <line x1="1117.5" y1="432" x2="1117.5" y2="436"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="890" y="452">0</text>
+    <text x="1003.8" y="452">1,200</text>
+    <text x="1117.5" y="452">2,400</text>
+  </g>
+  <text x="1004" y="478" font-size="14" fill="#1A1B1E" text-anchor="middle">GitHub 星数（星）</text>
+  <text x="890" y="502" font-size="12" fill="#555">朱色 = 直接竞品与同方向新件；netmiko 超出横轴上限</text>
+
+  <!-- footnote -->
+  <text x="60" y="600" font-size="11" fill="#767676">专利：Google Patents 详情页逐字核验（ServiceNow 件为公开申请，其余六件授权）· 星数：GitHub API 实测 2026-10-28 · Mordor Intelligence 口径 AIOps 市场 2026 年 189.5 亿美元</text>
+</svg>

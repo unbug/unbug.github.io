@@ -1,135 +1,115 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9C9484; }
-      .rl { font-size: 15px; fill: #474C54; }
-      .b { font-size: 12px; fill: #A5A296; }
-      .chip { font-size: 12.5px; font-weight: 600; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F4F1EB"/>
-    </linearGradient>
-    <linearGradient id="gVermil" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#C2491D"/><stop offset="1" stop-color="#E37C45"/>
-    </linearGradient>
-    <linearGradient id="gPlum" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7A3B6B"/><stop offset="1" stop-color="#A96C99"/>
-    </linearGradient>
-    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2E7D6B"/><stop offset="1" stop-color="#68B39D"/>
-    </linearGradient>
-    <linearGradient id="gAmber" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#B8860B"/><stop offset="1" stop-color="#DCB24A"/>
-    </linearGradient>
-    <linearGradient id="gSlate" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#3D5A73"/><stop offset="1" stop-color="#6E8CA8"/>
-    </linearGradient>
-    <radialGradient id="gGlow" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#DCB24A" stop-opacity="0.5"/><stop offset="1" stop-color="#DCB24A" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1090" cy="330" r="170" fill="#7A3B6B" opacity="0.05"/>
-  <circle cx="70" cy="640" r="110" fill="#2E7D6B" opacity="0.05"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gVermil)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">SWE-bench Verified 成绩三年间从不足 6% 升至 50%–70%+；四个主流框架区间为 25%–60%+</text>
 
-  <text class="k" x="64" y="84">AI 范式雷达 · 2026-08-09 · AGENTIC CODING</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">从补全到自主软件工程</text>
-  <text x="64" y="158" font-size="15" fill="#5B6068">被动补全引擎 → 规划-执行-验证循环中的决策中枢 · 不到三年</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">开源框架整体成绩（正文叙述区间）</text>
 
-  <!-- subway motif map: four-station line, ride to autonomous -->
-  <g>
-    <path d="M 905 240 Q 872 186 916 142 Q 962 98 1022 112" stroke="url(#gSlate)" stroke-width="7" fill="none" stroke-linecap="round"/>
-    <path d="M 1022 112 Q 1082 126 1092 182 Q 1101 232 1060 258" stroke="url(#gTeal)" stroke-width="7" fill="none" stroke-linecap="round"/>
-    <path d="M 1060 258 Q 1016 284 964 268" stroke="url(#gPlum)" stroke-width="7" fill="none" stroke-linecap="round"/>
-    <path d="M 964 268 Q 918 254 905 240" stroke="url(#gVermil)" stroke-width="7" fill="none" stroke-linecap="round"/>
-    <path d="M 905 240 L 893 252 M 905 240 L 890 236" stroke="#C2491D" stroke-width="3" stroke-linecap="round"/>
-
-    <circle cx="905" cy="240" r="9" fill="#FBFAF7" stroke="#3D5A73" stroke-width="3.5"/>
-    <text x="884" y="245" text-anchor="end" class="chip" fill="#3D5A73">补全</text>
-    <circle cx="916" cy="142" r="9" fill="#FBFAF7" stroke="#3D5A73" stroke-width="3.5"/>
-    <text x="895" y="147" text-anchor="end" class="chip" fill="#3D5A73">对话</text>
-    <circle cx="1022" cy="112" r="9" fill="#FBFAF7" stroke="#2E7D6B" stroke-width="3.5"/>
-    <text x="1022" y="90" text-anchor="middle" class="chip" fill="#20604F">代理</text>
-    <circle cx="1060" cy="258" r="9" fill="#FBFAF7" stroke="#7A3B6B" stroke-width="3.5"/>
-    <text x="1082" y="263" class="chip" fill="#7A3B6B">自我修正</text>
-
-    <circle cx="964" cy="268" r="26" fill="url(#gGlow)"/>
-    <circle cx="964" cy="268" r="11" fill="#C2491D"/>
-    <circle cx="964" cy="268" r="16" fill="none" stroke="#C2491D" stroke-width="2" opacity="0.55"/>
-    <text x="964" y="312" text-anchor="middle" class="serif" font-size="15" font-weight="700" fill="#8F3413">自主工程师</text>
+  <!-- scale x = 300 + 8*v (0-100); major grid at 25/50/75 -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="460" y1="130" x2="460" y2="266"/>
+    <line x1="620" y1="130" x2="620" y2="266"/>
+    <line x1="780" y1="130" x2="780" y2="266"/>
+    <line x1="860" y1="130" x2="860" y2="266"/>
   </g>
 
-  <!-- dumbbell: SWE-bench Verified per framework -->
-  <g>
-    <text class="rl" x="64" y="204" font-weight="600">SWE-bench Verified 成绩（空心=2023 开源框架基线）</text>
+  <!-- 2023 <6 -->
+  <text x="288" y="164" font-size="12.5" fill="#1A1B1E" text-anchor="end">2023 年（开源框架）</text>
+  <rect x="300" y="150" width="48" height="18" fill="#999999"/>
+  <polygon points="348,150 360,159 348,168" fill="#999999"/>
+  <text x="368" y="164" font-size="12" fill="#555">不足 6%</text>
 
-    <rect x="64" y="220" width="760" height="38" fill="#3D5A73" opacity="0.07"/>
-    <rect x="64" y="264" width="760" height="38" fill="#2E7D6B" opacity="0.07"/>
-    <rect x="64" y="308" width="760" height="38" fill="#7A3B6B" opacity="0.07"/>
-    <rect x="64" y="352" width="760" height="38" fill="#B8860B" opacity="0.08"/>
+  <!-- 2025-2026 50-70+ -->
+  <text x="288" y="236" font-size="12.5" fill="#1A1B1E" text-anchor="end">2025–2026 年</text>
+  <rect x="700" y="222" width="160" height="18" fill="#0072B2"/>
+  <polygon points="868,222 880,231 868,240" fill="#0072B2"/>
+  <line x1="700" y1="219" x2="700" y2="243" stroke="#0072B2" stroke-width="0.75"/>
+  <text x="888" y="236" font-size="12" fill="#555">50%–70%+，增幅超过 8 倍</text>
 
-    <line x1="300" y1="239" x2="856" y2="239" stroke="#EAE6DA" stroke-width="1"/>
-    <text class="rl" x="248" y="244" text-anchor="end">Claude Code</text>
-    <circle cx="300" cy="239" r="6.5" fill="#FBFAF7" stroke="#9A937F" stroke-width="2.5"/>
-    <line x1="300" y1="239" x2="652" y2="239" stroke="url(#gSlate)" stroke-width="2.5"/>
-    <circle cx="652" cy="239" r="7.5" fill="url(#gSlate)"/>
-    <text class="serif" x="670" y="246" font-size="22" font-weight="700" fill="#3D5A73">50%-60%+</text>
-    <text x="782" y="245" font-size="12.5" fill="#8B8574">闭源 · 商业最佳之一</text>
+  <!-- value axis -->
+  <line x1="300" y1="266" x2="860" y2="266" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="460" y1="266" x2="460" y2="270"/>
+    <line x1="620" y1="266" x2="620" y2="270"/>
+    <line x1="780" y1="266" x2="780" y2="270"/>
+    <line x1="860" y1="266" x2="860" y2="270"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="300" y="290">零点</text>
+    <text x="460" y="290">20%</text>
+    <text x="620" y="290">40%</text>
+    <text x="780" y="290">60%</text>
+    <text x="860" y="290">70%</text>
+  </g>
+  <text x="600" y="314" font-size="14" fill="#1A1B1E" text-anchor="middle">SWE-bench Verified 成绩（百分比）</text>
 
-    <text class="rl" x="248" y="288" text-anchor="end">OpenHands</text>
-    <circle cx="300" cy="283" r="6.5" fill="#FBFAF7" stroke="#9A937F" stroke-width="2.5"/>
-    <line x1="300" y1="283" x2="572" y2="283" stroke="url(#gTeal)" stroke-width="2.5"/>
-    <circle cx="572" cy="283" r="7.5" fill="url(#gTeal)"/>
-    <text class="serif" x="590" y="290" font-size="22" font-weight="700" fill="#20604F">40%-50%+</text>
-    <text x="702" y="289" font-size="12.5" fill="#8B8574">开源 Star 5 万+</text>
+  <!-- ============ panel b ============ -->
+  <text x="60" y="366" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="366" font-size="15" fill="#1A1B1E">四个主流框架成绩区间（正文「约为」值）</text>
 
-    <text class="rl" x="248" y="332" text-anchor="end">Cursor Composer</text>
-    <circle cx="300" cy="327" r="6.5" fill="#FBFAF7" stroke="#9A937F" stroke-width="2.5"/>
-    <line x1="300" y1="327" x2="452" y2="327" stroke="url(#gPlum)" stroke-width="2.5"/>
-    <circle cx="452" cy="327" r="7.5" fill="url(#gPlum)"/>
-    <text class="serif" x="470" y="334" font-size="22" font-weight="700" fill="#7A3B6B">30%-40%</text>
-    <text x="576" y="333" font-size="12.5" fill="#8B8574">IDE 内多文件编辑</text>
-
-    <text class="rl" x="248" y="376" text-anchor="end">Aider</text>
-    <circle cx="300" cy="371" r="6.5" fill="#FBFAF7" stroke="#9A937F" stroke-width="2.5"/>
-    <line x1="300" y1="371" x2="397" y2="371" stroke="url(#gAmber)" stroke-width="2.5"/>
-    <circle cx="397" cy="371" r="7.5" fill="url(#gAmber)"/>
-    <text class="serif" x="415" y="378" font-size="22" font-weight="700" fill="#8A6612">25%-35%</text>
-    <text x="528" y="377" font-size="12.5" fill="#8B8574">Claude Sonnet 后端</text>
-
-    <text class="b" x="300" y="414">&lt;6% 为 2023 年开源框架基线 · 最高约 70%+ · 各框架为其自述区间口径</text>
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="460" y1="390" x2="460" y2="588"/>
+    <line x1="620" y1="390" x2="620" y2="588"/>
+    <line x1="780" y1="390" x2="780" y2="588"/>
+    <line x1="860" y1="390" x2="860" y2="588"/>
   </g>
 
-  <!-- right column anchors -->
-  <g>
-    <rect x="856" y="336" width="280" height="54" fill="#B8860B" opacity="0.1"/>
-    <text class="serif" x="874" y="372" font-size="26" font-weight="700" fill="#8A6612">8 倍+</text>
-    <text x="962" y="360" font-size="13" fill="#6B7078">不足 6% 升至 50%-70%+</text>
-    <text x="962" y="380" font-size="13" fill="#6B7078">开源框架三年成绩增幅</text>
+  <!-- Claude Code 50-60+ -->
+  <text x="288" y="420" font-size="12.5" fill="#1A1B1E" text-anchor="end">Claude Code（闭源）</text>
+  <rect x="700" y="406" width="80" height="18" fill="#D55E00"/>
+  <polygon points="788,406 800,415 788,424" fill="#D55E00"/>
+  <line x1="700" y1="403" x2="700" y2="427" stroke="#D55E00" stroke-width="0.75"/>
+  <text x="808" y="420" font-size="12" fill="#555">约 50%–60%+</text>
 
-    <rect x="856" y="400" width="280" height="54" fill="#C2491D" opacity="0.08"/>
-    <text class="serif" x="874" y="436" font-size="26" font-weight="700" fill="#C2491D">3-8 次</text>
-    <text x="982" y="424" font-size="13" fill="#6B7078">中等复杂度 Issue 通过</text>
-    <text x="982" y="444" font-size="13" fill="#6B7078">全部测试的典型迭代数</text>
+  <!-- OpenHands 40-50+ -->
+  <text x="288" y="470" font-size="12.5" fill="#1A1B1E" text-anchor="end">OpenHands（开源）</text>
+  <rect x="620" y="456" width="80" height="18" fill="#0072B2"/>
+  <polygon points="708,456 720,465 708,474" fill="#0072B2"/>
+  <line x1="620" y1="453" x2="620" y2="477" stroke="#0072B2" stroke-width="0.75"/>
+  <text x="728" y="470" font-size="12" fill="#555">约 40%–50%+</text>
+
+  <!-- Cursor 30-40 -->
+  <text x="288" y="520" font-size="12.5" fill="#1A1B1E" text-anchor="end">Cursor Composer（闭源）</text>
+  <rect x="540" y="506" width="80" height="18" fill="#D55E00"/>
+  <line x1="540" y1="503" x2="540" y2="527" stroke="#D55E00" stroke-width="0.75"/>
+  <line x1="620" y1="503" x2="620" y2="527" stroke="#D55E00" stroke-width="0.75"/>
+  <text x="628" y="520" font-size="12" fill="#555">约 30%–40%</text>
+
+  <!-- Aider 25-35 -->
+  <text x="288" y="570" font-size="12.5" fill="#1A1B1E" text-anchor="end">Aider（开源）</text>
+  <rect x="500" y="556" width="80" height="18" fill="#0072B2"/>
+  <line x1="500" y1="553" x2="500" y2="577" stroke="#0072B2" stroke-width="0.75"/>
+  <line x1="580" y1="553" x2="580" y2="577" stroke="#0072B2" stroke-width="0.75"/>
+  <text x="588" y="570" font-size="12" fill="#555">约 25%–35%（Claude Sonnet 后端）</text>
+
+  <line x1="300" y1="588" x2="860" y2="588" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="460" y1="588" x2="460" y2="592"/>
+    <line x1="620" y1="588" x2="620" y2="592"/>
+    <line x1="780" y1="588" x2="780" y2="592"/>
+    <line x1="860" y1="588" x2="860" y2="592"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="300" y="612">零点</text>
+    <text x="460" y="612">20%</text>
+    <text x="620" y="612">40%</text>
+    <text x="780" y="612">60%</text>
+    <text x="860" y="612">70%</text>
+  </g>
+  <text x="600" y="636" font-size="14" fill="#1A1B1E" text-anchor="middle">SWE-bench Verified 成绩（百分比）</text>
+
+  <g font-size="12" fill="#555">
+    <rect x="950" y="406" width="12" height="10" fill="#0072B2"/>
+    <text x="968" y="415">开源框架</text>
+    <rect x="950" y="430" width="12" height="10" fill="#D55E00"/>
+    <text x="968" y="439">闭源产品</text>
+    <polygon points="950,455 960,460 950,465" fill="#555"/>
+    <text x="968" y="464">正文以「+」表示上界未封顶</text>
   </g>
 
-  <!-- bottom: three shifts chips -->
-  <line x1="64" y1="470" x2="1136" y2="470" stroke="#E8E3D2"/>
-  <g>
-    <rect x="64" y="492" width="118" height="30" rx="15" fill="url(#gSlate)" opacity="0.2"/>
-    <text x="123" y="512" text-anchor="middle" class="chip" fill="#2C4459">交互 主动规划</text>
-    <rect x="196" y="492" width="118" height="30" rx="15" fill="url(#gTeal)" opacity="0.22"/>
-    <text x="255" y="512" text-anchor="middle" class="chip" fill="#20604F">权限 全栈操作</text>
-    <rect x="328" y="492" width="130" height="30" rx="15" fill="url(#gPlum)" opacity="0.2"/>
-    <text x="393" y="512" text-anchor="middle" class="chip" fill="#6A2F5C">粒度 多文件级</text>
-    <rect x="472" y="492" width="130" height="30" rx="15" fill="url(#gVermil)" opacity="0.2"/>
-    <text x="537" y="512" text-anchor="middle" class="chip" fill="#8F3413">错误 自我修正</text>
-    <text class="b" x="620" y="512">规划器 → 执行引擎 → 验证器，闭环迭代</text>
-  </g>
-
-  <text class="serif" x="64" y="574" font-size="18" fill="#1A1B1E">没有测试的 Agentic Coding，如同蒙眼走钢丝。</text>
-  <text class="b" x="1136" y="628" text-anchor="end">SWE-bench Verified · 框架成绩为文章自述区间 · 不建议用于安全关键系统 · Micropaper</text>
+  <!-- footnote -->
+  <text x="60" y="660" font-size="11" fill="#767676">口径：正文叙述的区间值（约为），非某次官方榜单定格分数 · 区间取自本文发文时正文描述，SWE-bench Verified 后续成绩未更新 · 横轴自零点起算</text>
 </svg>

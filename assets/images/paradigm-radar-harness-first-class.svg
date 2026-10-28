@@ -1,96 +1,95 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9A9186; }
-      .rl { font-size: 15px; fill: #4A4E55; }
-      .val { font-size: 17px; font-weight: 700; fill: #1A1B1E; }
-      .b { font-size: 12px; fill: #A3A099; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F8F6F0"/>
-    </linearGradient>
-    <linearGradient id="gYellow" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#E8B21E"/><stop offset="1" stop-color="#F2CB5B"/>
-    </linearGradient>
-    <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#D9622B"/><stop offset="1" stop-color="#E8874F"/>
-    </linearGradient>
-    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#3D6B8E"/><stop offset="1" stop-color="#5E8CAC"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1100" cy="120" r="150" fill="#3D6B8E" opacity="0.06"/>
-  <circle cx="90" cy="615" r="120" fill="#E8B21E" opacity="0.08"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gOrange)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">同一 Kimi K3 模型、同一运行时下，9 个执行外壳的通过率相差 16.7 个百分点，每任务成本相差 17 倍</text>
 
-  <text class="k" x="64" y="84">范式雷达 · 2026-09-05 · FRONTIERHARNESS EVAL</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">不换模型，换外壳</text>
-  <text x="64" y="158" font-size="15" fill="#5C5F66">同一 Kimi K3 · 9 个执行外壳 · 通过率与每任务成本</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">任务通过率（正文报告的外壳间极值，标注值即数据）</text>
 
-  <!-- construction site motif: tower crane + hard hat -->
-  <g>
-    <rect x="952" y="72" width="7" height="110" fill="#7D848C"/>
-    <rect x="900" y="80" width="176" height="7" fill="#E8B21E"/>
-    <line x1="1052" y1="87" x2="1052" y2="120" stroke="#7D848C" stroke-width="2"/>
-    <rect x="1042" y="120" width="20" height="14" fill="#3D6B8E"/>
-    <path d="M 886 166 a 27 27 0 0 1 54 0 z" fill="url(#gYellow)"/>
-    <rect x="880" y="164" width="66" height="8" rx="4" fill="#D9622B"/>
+  <!-- scale x = 260 + 6*v (0-100); gridlines at 50/70 (90 exceeds canvas) -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="585" y1="130" x2="585" y2="306"/>
+    <line x1="693.6" y1="130" x2="693.6" y2="306"/>
   </g>
 
-  <!-- slope: pass 48-70 -> x=300+(v-48)*20 ; cost log -> x=300+(v/1000)*400 (0-20) -->
-  <g stroke="#E7E2D6">
-    <line x1="300" y1="212" x2="300" y2="524"/>
-    <line x1="600" y1="212" x2="600" y2="524"/>
-    <line x1="900" y1="212" x2="900" y2="524"/>
+  <!-- Codex 66.7 -->
+  <text x="248" y="164" font-size="12.5" fill="#1A1B1E" text-anchor="end">Codex（最高）</text>
+  <rect x="260" y="150" width="433.6" height="18" fill="#0072B2"/>
+  <text x="702" y="164" font-size="12" fill="#555">66.7%</text>
+
+  <!-- OpenCode/Hermes 50.0 -->
+  <text x="248" y="236" font-size="12.5" fill="#1A1B1E" text-anchor="end">OpenCode / Hermes（最低）</text>
+  <rect x="260" y="222" width="325" height="18" fill="#999999"/>
+  <text x="593" y="236" font-size="12" fill="#555">50.0% · 与最高相差 16.7 个百分点</text>
+
+  <!-- value axis -->
+  <line x1="260" y1="306" x2="730" y2="306" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="260" y1="306" x2="260" y2="310"/>
+    <line x1="585" y1="306" x2="585" y2="310"/>
+    <line x1="693.6" y1="306" x2="693.6" y2="310"/>
   </g>
-  <text class="b" x="300" y="546">0%</text>
-  <text class="b" x="600" y="546" text-anchor="middle">50%</text>
-  <text class="b" x="900" y="546" text-anchor="middle">100%</text>
-  <text class="b" x="300" y="568">$0</text>
-  <text class="b" x="600" y="568" text-anchor="middle">$5</text>
-  <text class="b" x="900" y="568" text-anchor="middle">$15</text>
-  <text class="b" x="64" y="592">上轴：通过率 · 下轴：每任务成本</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="260" y="330">原点</text>
+    <text x="585" y="330">50.0</text>
+    <text x="693.6" y="330">66.7</text>
+  </g>
+  <text x="580" y="354" font-size="14" fill="#1A1B1E" text-anchor="middle">任务通过率（百分比，原点表示无任务通过）</text>
 
-  <circle cx="212" cy="196" r="6" fill="#FFFFFF" stroke="#7D848C" stroke-width="2.5"/><text class="b" x="226" y="201">基线</text>
-  <circle cx="292" cy="196" r="6" fill="#3D6B8E"/><text class="b" x="306" y="201">实测</text>
+  <!-- cache hit-rate side note -->
+  <text x="930" y="152" font-size="12" fill="#555">缓存命中率：Codex 最高</text>
+  <text x="930" y="170" font-size="12" fill="#555">88.0%；最低的恰是</text>
+  <text x="930" y="188" font-size="12" fill="#555">Claude Code 67.8%</text>
+  <text x="930" y="218" font-size="12" fill="#555">质量与成本脱钩：</text>
+  <text x="930" y="236" font-size="12" fill="#555">通过率最高者缓存最好，</text>
+  <text x="930" y="254" font-size="12" fill="#555">成本最高者缓存最差</text>
 
-  <!-- row bands -->
-  <rect x="170" y="230" width="970" height="52" fill="#3D6B8E" opacity="0.08"/>
-  <rect x="170" y="294" width="970" height="52" fill="#E8B21E" opacity="0.08"/>
-  <rect x="170" y="358" width="970" height="52" fill="#D9622B" opacity="0.08"/>
-  <rect x="170" y="422" width="970" height="52" fill="#7D848C" opacity="0.08"/>
+  <!-- ============ panel b ============ -->
+  <text x="60" y="406" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="406" font-size="15" fill="#1A1B1E">每任务成本（美元，标注值即数据）</text>
 
-  <!-- r1 Codex -->
-  <text class="rl" x="276" y="254" text-anchor="end">Codex · 通过率</text>
-  <line x1="720" y1="256" x2="674" y2="256" stroke="#3D6B8E" stroke-width="3"/>
-  <circle cx="720" cy="256" r="7" fill="#FFFFFF" stroke="#7D848C" stroke-width="3"/>
-  <circle cx="674" cy="256" r="8" fill="url(#gBlue)"/>
-  <text class="val" x="674" y="248" text-anchor="middle" fill="#3D6B8E">58.3 → 66.7%</text>
-  <text x="1010" y="262" font-size="13" fill="#A3A099">缓存 88.0%</text>
+  <!-- cost scale x = 260 + 36*v ($0-$20): $1.05=297.8 $5=440 $10=620 $15=800 $18.34=920.2 -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="584" y1="430" x2="584" y2="580"/>
+    <line x1="872" y1="430" x2="872" y2="580"/>
+    
+  </g>
 
-  <!-- r2 Claude Code cost -->
-  <text class="rl" x="276" y="318" text-anchor="end">Claude Code · 成本</text>
-  <line x1="300" y1="320" x2="726" y2="320" stroke="#D9622B" stroke-width="3"/>
-  <circle cx="300" cy="320" r="7" fill="#FFFFFF" stroke="#7D848C" stroke-width="3"/>
-  <circle cx="726" cy="320" r="9" fill="url(#gOrange)"/>
-  <text class="val" x="905" y="326" fill="#D9622B">$18.34 / 任务</text>
+  <!-- Exo $1.05 -->
+  <text x="248" y="458" font-size="12.5" fill="#1A1B1E" text-anchor="end">Exo Harness（最低）</text>
+  <rect x="260" y="444" width="37.8" height="18" fill="#009E73"/>
+  <text x="306" y="458" font-size="12" fill="#555">$1.05</text>
 
-  <!-- r3 Exo cost -->
-  <text class="rl" x="276" y="382" text-anchor="end">Exo Harness · 成本</text>
-  <circle cx="300" cy="384" r="8" fill="url(#gYellow)"/>
-  <text class="val" x="318" y="390" fill="#A87C10">$1.05 / 任务 · 相差 17 倍</text>
+  <!-- Claude Code $18.34 -->
+  <text x="248" y="506" font-size="12.5" fill="#1A1B1E" text-anchor="end">Claude Code（最高）</text>
+  <rect x="260" y="492" width="660.2" height="18" fill="#D55E00"/>
+  <text x="726" y="518" font-size="12" fill="#555">$18.34 · 与最低相差 17 倍</text>
 
-  <!-- r4 OpenCode/Hermes -->
-  <text class="rl" x="276" y="446" text-anchor="end">OpenCode · 通过率</text>
-  <line x1="600" y1="448" x2="340" y2="448" stroke="#7D848C" stroke-width="3"/>
-  <circle cx="600" cy="448" r="7" fill="#FFFFFF" stroke="#7D848C" stroke-width="3"/>
-  <circle cx="340" cy="448" r="8" fill="#7D848C"/>
-  <text class="val" x="356" y="440" fill="#5C6167">58.3 → 50.0% · 差 16.7 个百分点</text>
+  <!-- median per success dumbbell (independent horizontal positions, labeled) -->
+  <text x="248" y="562" font-size="12.5" fill="#1A1B1E" text-anchor="end">每成功一次任务的中位成本</text>
+    <circle cx="360" cy="558" r="6" fill="#0072B2"/>
+  <circle cx="560" cy="558" r="6" fill="#D55E00"/>
+  <text x="360" y="540" font-size="12" fill="#555" text-anchor="middle">OpenCode $0.0615</text>
+  <text x="560" y="540" font-size="12" fill="#555" text-anchor="middle">Claude Code $0.2880</text>
+  <text x="575" y="562" font-size="12" fill="#555">相差约 4.7 倍（此行为比较示意，不按下方轴定位）</text>
 
-  <line x1="64" y1="576" x2="1136" y2="576" stroke="#E7E2D6"/>
-  <text class="serif" x="64" y="614" font-size="18" fill="#1A1B1E">竞争焦点：从「选哪个模型」转向「基准化哪层外壳」。</text>
-  <text class="b" x="1136" y="614" text-anchor="end">OpenCode 与 Hermes 同为 50.0% · 仅软件工程与终端任务 · Runta 亦是厂商 · Micropaper</text>
+  <line x1="260" y1="580" x2="890" y2="580" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="260" y1="580" x2="260" y2="584"/>
+    <line x1="584" y1="580" x2="584" y2="584"/>
+    <line x1="872" y1="580" x2="872" y2="584"/>
+    
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="260" y="604">原点</text>
+    <text x="584" y="604">9</text>
+    <text x="872" y="604">17</text>
+    
+  </g>
+  <text x="590" y="628" font-size="14" fill="#1A1B1E" text-anchor="middle">每任务成本（美元，原点表示无成本）</text>
+
+  <!-- footnote -->
+  <text x="60" y="660" font-size="11" fill="#767676">数据：FrontierHarness Eval（Runta 出品，9 个 harness × 12 种配置，正文转述口径）· 仅覆盖软件工程与终端任务，Runta 亦是厂商，外推需谨慎 · 结论分由 HN Algolia API 实测 2026-09-06</text>
 </svg>
