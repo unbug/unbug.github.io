@@ -8,7 +8,7 @@ tags: [agent-security, guardrails, llm-judge]
 description: "南加州大学预印本审计七个开源模型当 Agent 安全闸门：放行-拦截决策准确率仅 36% 到 72%，随机水平为 50%；只改宽松选项的名字，就能在四个模型上把违规放行率抬到 93% 到 100%，唯一稳固的防御是确定性规则。"
 ---
 
-南加州大学的预印本[《One Word Opens the Gate: The Option-Channel Attack on Typed Decision Models as Agent Guardrails》][paper1-url]审计了安全闸门表现：准确率只有 `36%` 到 `72%`，低于抛硬币的模型有。
+南加州大学的预印本[《One Word Opens the Gate: The Option-Channel Attack on Typed Decision Models as Agent Guardrails》][paper1-url]审计了安全闸门表现：准确率只有 `36%` 到 `72%`，有模型低于抛硬币。
 
 原口径是：在提示注入、越狱、有毒内容三类筛查任务上，七个开源权重模型在安全闸门岗位上的放行-拦截决策准确率只有 `36%` 到 `72%`，而随机水平是 `50%`，它们中有的甚至比抛硬币还差，这一表现不在少数。论文把两类错误分开报告：**fail-open**（放行本该拦截的违规内容）是漏洞，**fail-closed**（拦截合规内容）只是成本。全文最锋利的发现在于攻击面不在被审内容里——只改一个选项的名字就够。
 
