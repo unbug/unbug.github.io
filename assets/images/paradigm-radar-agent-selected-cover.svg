@@ -1,108 +1,79 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #A08F74; }
-      .dim { font-size: 16px; font-weight: 700; fill: #26201A; }
-      .ev { font-size: 13.5px; fill: #6E6252; }
-      .b { font-size: 12px; fill: #AB9C82; }
-      .hd { font-size: 12.5px; letter-spacing: 2px; fill: #A08F74; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F8F2E8"/>
-    </linearGradient>
-    <linearGradient id="gTomato" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#D64533"/><stop offset="1" stop-color="#E8734F"/>
-    </linearGradient>
-    <linearGradient id="gBasil" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#4E7A2E"/><stop offset="1" stop-color="#7FA243"/>
-    </linearGradient>
-    <linearGradient id="gTurmeric" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#C8860D"/><stop offset="1" stop-color="#E4A93C"/>
-    </linearGradient>
-    <linearGradient id="gSaffron" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#8A4B8C"/><stop offset="1" stop-color="#B06FB2"/>
-    </linearGradient>
-    <linearGradient id="gChili" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#B5442E"/><stop offset="1" stop-color="#D64533"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1118" cy="96" r="130" fill="#8A4B8C" opacity="0.05"/>
-  <circle cx="80" cy="640" r="110" fill="#C8860D" opacity="0.06"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gChili)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">同场景三个 Coding Agent 选同一工具仅 42%；货架正从人迁移给 Agent</text>
 
-  <text class="k" x="64" y="84">AI 范式雷达 · 2026-10-14 · AGENT SELECTED DISTRIBUTION</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#26201A">货架经济学：被 Agent 选中</text>
-  <text x="64" y="158" font-size="15" fill="#6E6252">16,893 个测量会话：提到不等于上架，货架正从人换给机器</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">同场景选择一致率与各 Agent 自建方案率（%）</text>
 
-  <!-- pantry motif: three-jar spice shelf -->
-  <g>
-    <rect x="998" y="186" width="140" height="8" rx="3" fill="#A9743E"/>
-    <g>
-      <rect x="1010" y="122" width="34" height="56" rx="8" fill="url(#gTomato)" opacity="0.9"/>
-      <rect x="1016" y="112" width="22" height="12" rx="3" fill="#A9743E"/>
-      <rect x="1053" y="132" width="34" height="46" rx="8" fill="url(#gBasil)" opacity="0.9"/>
-      <rect x="1059" y="122" width="22" height="12" rx="3" fill="#A9743E"/>
-      <rect x="1096" y="116" width="34" height="62" rx="8" fill="url(#gTurmeric)" opacity="0.9"/>
-      <rect x="1102" y="106" width="22" height="12" rx="3" fill="#A9743E"/>
-    </g>
-    <text class="hd" x="1068" y="216" text-anchor="middle">给 Agent 的新货架</text>
+  <!-- horizontal gridlines: y = 340 - 5*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="120" y1="290" x2="620" y2="290"/>
+    <line x1="120" y1="240" x2="620" y2="240"/>
+    <line x1="120" y1="190" x2="620" y2="190"/>
+    <line x1="120" y1="140" x2="620" y2="140"/>
   </g>
 
-  <!-- mention vs shelf- stocked rows: hollow = mentioned, solid gradient = wins -->
-  <text class="hd" x="292" y="212" text-anchor="end">提及次数</text>
-  <text class="hd" x="806" y="212">真正中选</text>
+  <!-- bars: y = 340 - 5*v -->
+  <rect x="150" y="130" width="64" height="210" fill="#D55E00"/>
+  <text x="182" y="122" font-size="12" fill="#555" text-anchor="middle">42%</text>
+  <text x="182" y="358" font-size="12.5" fill="#1A1B1E" text-anchor="middle">三 Agent 选同一工具</text>
 
-  <rect x="240" y="230" width="760" height="46" rx="10" fill="#D64533" opacity="0.08"/>
-  <text class="dim" x="280" y="259">PayPal</text>
-  <rect x="380" y="246" width="236" height="16" rx="8" fill="#FFFFFF" stroke="#BFB29B" stroke-width="1.6"/>
-  <text class="ev" x="628" y="259">139</text>
-  <line x1="666" y1="254" x2="794" y2="254" stroke="#D8CBB4" stroke-width="2.5"/>
-  <circle cx="798" cy="254" r="9" fill="none" stroke="#BFB29B" stroke-width="1.8"/>
-  <text x="818" y="260" font-size="17" font-weight="700" fill="#B5442E">0</text>
-  <text class="ev" x="846" y="259">124 场被 Stripe 赢走</text>
+  <rect x="280" y="245" width="64" height="95" fill="#999999"/>
+  <text x="312" y="237" font-size="12" fill="#555" text-anchor="middle">19%</text>
+  <text x="312" y="358" font-size="12.5" fill="#1A1B1E" text-anchor="middle">Claude Code</text>
 
-  <rect x="240" y="292" width="760" height="46" rx="10" fill="#4E7A2E" opacity="0.08"/>
-  <text class="dim" x="280" y="321">Adyen</text>
-  <rect x="380" y="308" width="297" height="16" rx="8" fill="#FFFFFF" stroke="#BFB29B" stroke-width="1.6"/>
-  <text class="ev" x="689" y="321">175</text>
-  <line x1="720" y1="316" x2="794" y2="316" stroke="#D8CBB4" stroke-width="2.5"/>
-  <circle cx="798" cy="316" r="9" fill="url(#gBasil)"/>
-  <text x="818" y="322" font-size="17" font-weight="700" fill="#4E7A2E">3</text>
-  <text class="ev" x="846" y="321">194 提及的 LangChain 也仅 4</text>
+  <rect x="410" y="290" width="64" height="50" fill="#999999"/>
+  <text x="442" y="282" font-size="12" fill="#555" text-anchor="middle">10%</text>
+  <text x="442" y="358" font-size="12.5" fill="#1A1B1E" text-anchor="middle">Codex</text>
 
-  <rect x="240" y="354" width="760" height="46" rx="10" fill="#C8860D" opacity="0.08"/>
-  <text class="dim" x="280" y="383">Netlify</text>
-  <rect x="380" y="370" width="258" height="16" rx="8" fill="#FFFFFF" stroke="#BFB29B" stroke-width="1.6"/>
-  <text class="ev" x="650" y="383">152</text>
-  <line x1="686" y1="378" x2="794" y2="378" stroke="#D8CBB4" stroke-width="2.5"/>
-  <circle cx="798" cy="378" r="9" fill="url(#gTurmeric)"/>
-  <text x="818" y="384" font-size="17" font-weight="700" fill="#A06B08">6</text>
-  <text class="ev" x="846" y="383">提及最多的 Supabase 被 Neon 压制</text>
+  <rect x="540" y="290" width="64" height="50" fill="#999999"/>
+  <text x="572" y="282" font-size="12" fill="#555" text-anchor="middle">10%</text>
+  <text x="572" y="358" font-size="12.5" fill="#1A1B1E" text-anchor="middle">Cursor</text>
 
-  <!-- three splits strip -->
-  <g>
-    <rect x="64" y="448" width="340" height="118" rx="12" fill="#D64533" opacity="0.07"/>
-    <rect x="64" y="448" width="340" height="6" rx="3" fill="url(#gTomato)"/>
-    <text class="serif" x="88" y="502" font-size="28" font-weight="700" fill="#26201A">42%</text>
-    <text class="ev" x="88" y="528">三 Agent 同场景选同一工具</text>
-    <text class="b" x="88" y="550">厂商自述 · trace 据称公开可复算</text>
-
-    <rect x="430" y="448" width="340" height="118" rx="12" fill="#8A4B8C" opacity="0.07"/>
-    <rect x="430" y="448" width="340" height="6" rx="3" fill="url(#gSaffron)"/>
-    <text class="serif" x="454" y="502" font-size="28" font-weight="700" fill="#26201A">189,934 条评价</text>
-    <text class="ev" x="454" y="528">一周自述涨约 30-60 倍</text>
-    <text class="b" x="454" y="550">agent.reviews 页面自述口径</text>
-
-    <rect x="796" y="448" width="340" height="118" rx="12" fill="#4E7A2E" opacity="0.07"/>
-    <rect x="796" y="448" width="340" height="6" rx="3" fill="url(#gBasil)"/>
-    <text class="serif" x="820" y="502" font-size="28" font-weight="700" fill="#26201A">0 星</text>
-    <text class="ev" x="820" y="528">GitHub 仓库 · 中立性为零</text>
-    <text class="b" x="820" y="550">测量者、货架、增长服务同一家</text>
+  <!-- value axis -->
+  <line x1="120" y1="140" x2="120" y2="340" stroke="#1A1B1E" stroke-width="0.75"/>
+  <line x1="120" y1="340" x2="620" y2="340" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="116" y1="340" x2="120" y2="340"/>
+    <line x1="116" y1="290" x2="120" y2="290"/>
+    <line x1="116" y1="240" x2="120" y2="240"/>
+    <line x1="116" y1="190" x2="120" y2="190"/>
+    <line x1="116" y1="140" x2="120" y2="140"/>
   </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="110" y="344">0</text>
+    <text x="110" y="294">10</text>
+    <text x="110" y="244">20</text>
+    <text x="110" y="194">30</text>
+    <text x="110" y="144">40</text>
+  </g>
+  <text x="120" y="384" font-size="14" fill="#1A1B1E">会话占比（%）</text>
+  <text x="120" y="404" font-size="12" fill="#555">后三根柱为各 Agent 自建方案率；Claude Code 约为其余两者的两倍</text>
 
-  <line x1="64" y1="596" x2="1136" y2="596" stroke="#E9E0CC"/>
-  <text class="b" x="64" y="624">窄场景：新引入第三方服务的选择瞬间 · 无独立第三方复现 · 利益相关方发起的测量 · Micropaper</text>
+  <!-- ============ panel b ============ -->
+  <text x="60" y="444" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="444" font-size="15" fill="#1A1B1E">agent.reviews 公开货架规模（页面自述，实测 2026-10-14）</text>
+  <g font-size="12.5" fill="#1A1B1E">
+    <text x="84" y="482">189,934 条评价</text>
+    <text x="84" y="506">4,120 个工具</text>
+    <text x="84" y="530">1,971 个已发布评分</text>
+  </g>
+  <text x="380" y="482" font-size="12" fill="#555">发布时自述数千条，一周后页面自述</text>
+  <text x="380" y="502" font-size="12" fill="#555">增长约 30-60 倍</text>
+  <!-- ============ panel c ============ -->
+  <text x="680" y="444" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="702" y="444" font-size="15" fill="#1A1B1E">测量规模与中立性</text>
+  <g font-size="12.5" fill="#1A1B1E">
+    <text x="702" y="482">16,893 个测量会话</text>
+    <text x="702" y="506">GitHub 仓库 0 星（API 实测 2026-10-14）</text>
+  </g>
+  <text x="702" y="534" font-size="12" fill="#555">测量者、货架、增长服务同一家公司，</text>
+  <text x="702" y="552" font-size="12" fill="#555">无独立第三方复现</text>
+
+  <!-- footnote -->
+  <text x="60" y="588" font-size="11" fill="#767676">数据：Armature 16,893 会话测量为厂商自述口径，原始 trace 据称公开于 leaderboards.armature.tech；面板 b 为 agent.reviews 页面自述文字实测</text>
+  <text x="60" y="608" font-size="11" fill="#767676">窄场景：新引入第三方服务的选择瞬间，覆盖 18 个行业、51 个代码库 · 由利益相关方发起的测量</text>
 </svg>

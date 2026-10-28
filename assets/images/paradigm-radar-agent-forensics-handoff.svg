@@ -1,62 +1,117 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" font-family="Helvetica, Arial, sans-serif">
-  <rect width="1200" height="520" fill="#ffffff"/>
-  <text x="60" y="52" fill="#1a2438" font-size="28" font-weight="bold">从权限清单到取证层：一次接力</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <!-- stage 1: permission artifact -->
-  <g>
-    <rect x="70" y="110" width="320" height="240" rx="14" fill="#eef3fb" stroke="#5b7fb8" stroke-width="2"/>
-    <text x="230" y="152" fill="#2d4f80" font-size="22" font-weight="bold" text-anchor="middle">事前：权限声明</text>
-    <text x="230" y="192" fill="#1a2438" font-size="18" text-anchor="middle">「能不能做」</text>
-    <g font-size="16" fill="#42536e">
-      <text x="105" y="230">可分发、可 diff 的清单</text>
-      <text x="105" y="260">host / credential / volume</text>
-      <text x="105" y="290">载体：镜像 · 身份目录 · 协议</text>
-    </g>
-    <text x="230" y="325" fill="#5b7fb8" font-size="15" text-anchor="middle">AI 范式雷达 #16</text>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">事件帖最高 307 分、审计产品帖普遍低于 50 分：问责诉求高、工具采购信号弱</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">帖文得分：事件帖 vs 工具与标准帖</text>
+
+  <!-- horizontal gridlines: y = 520 - 1.2*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="258" y1="400" x2="700" y2="400"/>
+    <line x1="258" y1="280" x2="700" y2="280"/>
+    <line x1="258" y1="160" x2="700" y2="160"/>
+  </g>
+  <!-- event posts (bars, #0072B2) -->
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="250" y="140">Wikimedia rogue agent</text>
+    <text x="250" y="200">个人 agent 泄露 Slack</text>
+    <text x="250" y="236">沙箱能否关住 agent</text>
+    <text x="250" y="272">rogue agents 现 10 站点</text>
+  </g>
+  <rect x="258" y="126" width="368.4" height="18" fill="#0072B2"/>
+  <text x="634" y="140" font-size="12" fill="#555">307</text>
+  <rect x="258" y="186" width="75.6" height="18" fill="#0072B2"/>
+  <text x="341" y="200" font-size="12" fill="#555">63</text>
+  <rect x="258" y="222" width="67.2" height="18" fill="#0072B2"/>
+  <text x="333" y="236" font-size="12" fill="#555">56</text>
+  <rect x="258" y="258" width="63.6" height="18" fill="#0072B2"/>
+  <text x="329" y="272" font-size="12" fill="#555">53</text>
+
+  <!-- tool/standard posts (open dots, #D55E00) -->
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="250" y="340">Agent37 沙箱（Launch HN）</text>
+    <text x="250" y="382">Halo 防篡改证据（Launch HN）</text>
+    <text x="250" y="424">Consus 合规审计（Launch HN）</text>
+    <text x="250" y="466">OWASP AOS 标准 / Anthropic 文</text>
+  </g>
+  <g stroke="#D55E00" stroke-width="1.5" fill="#FFFFFF">
+    <circle cx="282" cy="336" r="6"/>
+    <circle cx="302" cy="378" r="6"/>
+    <circle cx="301" cy="420" r="6"/>
+    <circle cx="260" cy="462" r="6"/>
+  </g>
+  <g font-size="12" fill="#555">
+    <text x="296" y="340">160</text>
+    <text x="316" y="382">37</text>
+    <text x="315" y="424">36</text>
+    <text x="274" y="466">均为 2</text>
+  </g>
+  <text x="258" y="310" font-size="12" fill="#555">下组为取证工具 / 标准 / 平台帖</text>
+
+  <!-- value axis -->
+  <line x1="258" y1="100" x2="258" y2="520" stroke="#1A1B1E" stroke-width="0.75"/>
+  <line x1="258" y1="520" x2="700" y2="520" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="258" y1="520" x2="258" y2="524"/>
+    <line x1="378" y1="520" x2="378" y2="524"/>
+    <line x1="498" y1="520" x2="498" y2="524"/>
+    <line x1="618" y1="520" x2="618" y2="524"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="258" y="540">0</text>
+    <text x="378" y="540">100</text>
+    <text x="498" y="540">200</text>
+    <text x="618" y="540">300</text>
+  </g>
+  <text x="479" y="566" font-size="14" fill="#1A1B1E" text-anchor="middle">Hacker News 分数（分）</text>
+  <g font-size="12" fill="#555">
+    <rect x="258" y="88" width="12" height="10" fill="#0072B2"/>
+    <text x="275" y="97">失控事件帖（圆点为工具/标准/平台帖）</text>
   </g>
 
-  <!-- arrow 1 with bridge quote -->
-  <g>
-    <line x1="400" y1="230" x2="480" y2="230" stroke="#c0512f" stroke-width="4"/>
-    <path d="M 480 230 L 456 218 L 456 242 Z" fill="#c0512f"/>
-    <text x="440" y="200" fill="#c0512f" font-size="15" text-anchor="middle">失灵处</text>
-    <text x="440" y="290" fill="#c0512f" font-size="14" text-anchor="middle">短时效凭证不够</text>
-    <text x="440" y="312" fill="#c0512f" font-size="14" text-anchor="middle">agent 五分钟能干很多</text>
-  </g>
+  <!-- ============ panel b ============ -->
+  <text x="760" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="782" y="104" font-size="15" fill="#1A1B1E">报告与真实状态的信息恢复率（%）</text>
 
-  <!-- stage 2: containment -->
-  <g>
-    <rect x="490" y="110" width="260" height="240" rx="14" fill="#fdf3ec" stroke="#e8663c" stroke-width="2"/>
-    <text x="620" y="152" fill="#c0512f" font-size="22" font-weight="bold" text-anchor="middle">事中：沙箱隔离</text>
-    <text x="620" y="192" fill="#1a2438" font-size="18" text-anchor="middle">「关不关得住」</text>
-    <g font-size="16" fill="#42536e">
-      <text x="520" y="230">VM  containment</text>
-      <text x="520" y="260">沙箱够不够仍存疑</text>
-      <text x="520" y="290">（HN 49917378 争论）</text>
-    </g>
-    <text x="620" y="325" fill="#e8663c" font-size="15" text-anchor="middle">AI 范式雷达 #11</text>
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="820" y1="140" x2="1140" y2="140"/>
+    <line x1="820" y1="220" x2="1140" y2="220"/>
+    <line x1="820" y1="300" x2="1140" y2="300"/>
+    <line x1="820" y1="380" x2="1140" y2="380"/>
   </g>
+  <!-- bars: y = 440 - 3*v -->
+  <rect x="850" y="159.2" width="64" height="280.8" fill="#0072B2"/>
+  <text x="882" y="151" font-size="12" fill="#555" text-anchor="middle">93.6%</text>
+  <text x="882" y="458" font-size="12.5" fill="#1A1B1E" text-anchor="middle">直接提问</text>
 
-  <!-- arrow 2 -->
-  <g>
-    <line x1="760" y1="230" x2="840" y2="230" stroke="#1f7a5e" stroke-width="4"/>
-    <path d="M 840 230 L 816 218 L 816 242 Z" fill="#1f7a5e"/>
-    <text x="800" y="200" fill="#1f7a5e" font-size="15" text-anchor="middle">兜不住</text>
+  <rect x="990" y="284" width="64" height="156" fill="#999999"/>
+  <text x="1022" y="276" font-size="12" fill="#555" text-anchor="middle">52.0%</text>
+  <text x="1022" y="458" font-size="12.5" fill="#1A1B1E" text-anchor="middle">只看其报告</text>
+
+  <line x1="820" y1="440" x2="1140" y2="440" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="816" y1="440" x2="820" y2="440"/>
+    <line x1="816" y1="380" x2="820" y2="380"/>
+    <line x1="816" y1="320" x2="820" y2="320"/>
+    <line x1="816" y1="260" x2="820" y2="260"/>
+    <line x1="816" y1="200" x2="820" y2="200"/>
+    <line x1="816" y1="140" x2="820" y2="140"/>
   </g>
-
-  <!-- stage 3: forensics -->
-  <g>
-    <rect x="850" y="110" width="320" height="240" rx="14" fill="#eaf8f2" stroke="#1f7a5e" stroke-width="2.5"/>
-    <text x="1010" y="152" fill="#15624a" font-size="22" font-weight="bold" text-anchor="middle">事后：取证层（本期）</text>
-    <text x="1010" y="192" fill="#1a2438" font-size="18" text-anchor="middle">「做了什么，证据何在」</text>
-    <g font-size="16" fill="#42536e">
-      <text x="885" y="230">会话回放 · 防篡改轨迹</text>
-      <text x="885" y="260">hash-chain 封缄 · 黑匣子</text>
-      <text x="885" y="290">按工作项核算成本</text>
-    </g>
-    <text x="1010" y="325" fill="#1f7a5e" font-size="15" text-anchor="middle">AI 范式雷达 #17</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="810" y="444">0</text>
+    <text x="810" y="384">20</text>
+    <text x="810" y="324">40</text>
+    <text x="810" y="264">60</text>
+    <text x="810" y="204">80</text>
   </g>
+  <text x="820" y="484" font-size="14" fill="#1A1B1E">状态信息恢复率（%）</text>
+  <text x="760" y="516" font-size="12" fill="#555">差距 40.7 个百分点：直接提问能恢复的信息，</text>
+  <text x="760" y="534" font-size="12" fill="#555">只看 agent 自己的报告只能恢复一部分</text>
 
-  <text x="60" y="420" fill="#42536e" font-size="18">权限清单声明边界，沙箱试图执行边界；边界之内实际发生了什么，只能靠可回放、可核验、可归责的行为证据回答。</text>
-  <text x="60" y="456" fill="#6b7a95" font-size="16">桥句出自 Agent37 Launch HN（HN 50059096）评论区 arbor-group 的大意：短时效凭证不够，agent 五分钟能干很多。</text>
+  <!-- footnote -->
+  <text x="60" y="606" font-size="11" fill="#767676">数据：HN 各帖与 api.github.com 实测 2026-10-16，面板 a 未列事件帖 59 分、14 分；面板 b 出自站内文章《编码智能体：知道却不说》（论文自测口径）</text>
+  <text x="60" y="626" font-size="11" fill="#767676">星数与热度是开源/社区信号，不等于收入或采购；事件均为据报道事件</text>
 </svg>

@@ -1,80 +1,140 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" font-family="Helvetica, Arial, sans-serif">
-  <rect width="1200" height="560" fill="#ffffff"/>
-  <text x="60" y="52" fill="#1a2438" font-size="28" font-weight="bold">12 家独立仓库的建仓时间线（星数为 2026-10-16 实测）</text>
-  <text x="60" y="84" fill="#6b7a95" font-size="18">供给先于事件：头部仓库 6-7 月建仓；事件周前后仍有新仓库入场</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <!-- axis -->
-  <line x1="120" y1="470" x2="1140" y2="470" stroke="#1a2438" stroke-width="2"/>
-  <g font-size="17" fill="#6b7a95" text-anchor="middle">
-    <text x="150" y="500">6月初</text>
-    <text x="330" y="500">7月初</text>
-    <text x="510" y="500">8月初</text>
-    <text x="690" y="500">9月初</text>
-    <text x="870" y="500">10月初</text>
-    <text x="1080" y="500">10-16</text>
-  </g>
-  <g stroke="#d5dbe6" stroke-width="1">
-    <line x1="150" y1="120" x2="150" y2="470"/>
-    <line x1="330" y1="120" x2="330" y2="470"/>
-    <line x1="510" y1="120" x2="510" y2="470"/>
-    <line x1="690" y1="120" x2="690" y2="470"/>
-    <line x1="870" y1="120" x2="870" y2="470"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">12 家独立仓库铺出回放与取证工具：头部建仓集中在 6 月下旬到 7 月，agentplay 两天 214 星</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">GitHub 星数（个，实测 2026-10-16）</text>
+
+  <!-- vertical gridlines for value axis: x = 210 + 0.2*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="360" y1="130" x2="360" y2="516"/>
+    <line x1="510" y1="130" x2="510" y2="516"/>
+    <line x1="660" y1="130" x2="660" y2="516"/>
   </g>
 
-  <!-- rogue event week band -->
-  <rect x="800" y="120" width="80" height="350" fill="#e8663c" opacity="0.14"/>
-  <text x="840" y="140" fill="#c0512f" font-size="16" text-anchor="middle">事件周</text>
-  <text x="840" y="162" fill="#c0512f" font-size="14" text-anchor="middle">09-26~10-05</text>
-
-  <!-- dots: x by date, r by stars -->
-  <g>
-    <circle cx="165" cy="270" r="30" fill="#1f7a5e" opacity="0.85"/>
-    <text x="165" y="276" fill="#ffffff" font-size="14" text-anchor="middle">2483</text>
-    <text x="165" y="225" fill="#1a2438" font-size="15" text-anchor="middle">shepherd</text>
-
-    <circle cx="200" cy="350" r="27" fill="#1f7a5e" opacity="0.8"/>
-    <text x="200" y="356" fill="#ffffff" font-size="14" text-anchor="middle">2024</text>
-    <text x="200" y="305" fill="#1a2438" font-size="15" text-anchor="middle">llm-space</text>
-
-    <circle cx="150" cy="185" r="22" fill="#37d0a3" opacity="0.85"/>
-    <text x="150" y="191" fill="#08312a" font-size="13" text-anchor="middle">1463</text>
-    <text x="150" y="150" fill="#1a2438" font-size="15" text-anchor="middle">superlog</text>
-
-    <circle cx="365" cy="255" r="21" fill="#37d0a3" opacity="0.8"/>
-    <text x="365" y="261" fill="#08312a" font-size="13" text-anchor="middle">1373</text>
-    <text x="365" y="218" fill="#1a2438" font-size="15" text-anchor="middle">mindwalk</text>
-
-    <circle cx="345" cy="340" r="18" fill="#37d0a3" opacity="0.75"/>
-    <text x="345" y="346" fill="#08312a" font-size="12" text-anchor="middle">992</text>
-    <text x="345" y="308" fill="#1a2438" font-size="15" text-anchor="middle">homerail</text>
-
-    <circle cx="335" cy="420" r="14" fill="#7fc9ae" opacity="0.9"/>
-    <text x="335" y="425" fill="#08312a" font-size="12" text-anchor="middle">334</text>
-    <text x="390" y="445" fill="#1a2438" font-size="15">agentglass</text>
-
-    <circle cx="318" cy="180" r="14" fill="#7fc9ae" opacity="0.9"/>
-    <text x="318" y="185" fill="#08312a" font-size="12" text-anchor="middle">322</text>
-    <text x="372" y="170" fill="#1a2438" font-size="15">brain0</text>
-
-    <circle cx="430" cy="395" r="17" fill="#7fc9ae" opacity="0.85"/>
-    <text x="430" y="401" fill="#08312a" font-size="12" text-anchor="middle">766</text>
-    <text x="486" y="415" fill="#1a2438" font-size="15">agentacct</text>
-
-    <circle cx="620" cy="300" r="16" fill="#e8b23c" opacity="0.9"/>
-    <text x="620" y="306" fill="#4a3407" font-size="12" text-anchor="middle">901</text>
-    <text x="620" y="263" fill="#1a2438" font-size="15" text-anchor="middle">agenttrail</text>
-
-    <circle cx="735" cy="410" r="11" fill="#e8b23c" opacity="0.85"/>
-    <text x="735" y="415" fill="#4a3407" font-size="11" text-anchor="middle">285</text>
-    <text x="735" y="440" fill="#1a2438" font-size="15" text-anchor="middle">OrcaReplay</text>
-
-    <circle cx="790" cy="230" r="9" fill="#e8b23c" opacity="0.8"/>
-    <text x="790" y="205" fill="#1a2438" font-size="15" text-anchor="middle">ToolReplay · 185</text>
-
-    <circle cx="1105" cy="330" r="10" fill="#c0512f" opacity="0.9"/>
-    <text x="1105" y="335" fill="#ffffff" font-size="11" text-anchor="middle">214</text>
-    <text x="1060" y="295" fill="#c0512f" font-size="15" text-anchor="middle">agentplay 两天 214 星</text>
+  <!-- category labels -->
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="202" y="150">shepherd</text>
+    <text x="202" y="182">llm-space</text>
+    <text x="202" y="214">superlog</text>
+    <text x="202" y="246">mindwalk</text>
+    <text x="202" y="278">homerail</text>
+    <text x="202" y="310">agenttrail</text>
+    <text x="202" y="342">agentacct</text>
+    <text x="202" y="374">agentglass</text>
+    <text x="202" y="406">brain0</text>
+    <text x="202" y="438">OrcaReplay</text>
+    <text x="202" y="470">ToolReplay</text>
+    <text x="202" y="502">agentplay</text>
   </g>
 
-  <text x="60" y="540" fill="#6b7a95" font-size="16">圆点面积正比于星数；颜色分为 6-7 月（绿）、8-9 月（黄）、10 月事件周后（红）三批。星数是开源热度，不等于收入。</text>
+  <!-- hollow bars = replay class (5) -->
+  <g fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5">
+    <rect x="210" y="137" width="496.6" height="16"/>
+    <rect x="210" y="169" width="404.8" height="16"/>
+    <rect x="210" y="233" width="274.6" height="16"/>
+    <rect x="210" y="425" width="57" height="16"/>
+    <rect x="210" y="489" width="42.8" height="16"/>
+  </g>
+  <!-- solid bars = forensics / accounting / monitoring class (7) -->
+  <g fill="#999999">
+    <rect x="210" y="201" width="292.6" height="16"/>
+    <rect x="210" y="265" width="198.4" height="16"/>
+    <rect x="210" y="297" width="180.2" height="16"/>
+    <rect x="210" y="329" width="153.2" height="16"/>
+    <rect x="210" y="361" width="66.8" height="16"/>
+    <rect x="210" y="393" width="64.4" height="16"/>
+    <rect x="210" y="457" width="37" height="16"/>
+  </g>
+
+  <!-- value labels -->
+  <g font-size="12" fill="#555">
+    <text x="715" y="150">2,483</text>
+    <text x="623" y="182">2,024</text>
+    <text x="511" y="214">1,463</text>
+    <text x="493" y="246">1,373</text>
+    <text x="417" y="278">992</text>
+    <text x="399" y="310">901</text>
+    <text x="372" y="342">766</text>
+    <text x="285" y="374">334</text>
+    <text x="283" y="406">322</text>
+    <text x="275" y="438">285</text>
+    <text x="255" y="470">185</text>
+    <text x="261" y="502">214（两天）</text>
+  </g>
+
+  <!-- value axis -->
+  <line x1="210" y1="130" x2="210" y2="516" stroke="#1A1B1E" stroke-width="0.75"/>
+  <line x1="210" y1="516" x2="720" y2="516" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="210" y1="516" x2="210" y2="520"/>
+    <line x1="360" y1="516" x2="360" y2="520"/>
+    <line x1="510" y1="516" x2="510" y2="520"/>
+    <line x1="660" y1="516" x2="660" y2="520"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="210" y="536">0</text>
+    <text x="360" y="536">750</text>
+    <text x="510" y="536">1,500</text>
+    <text x="660" y="536">2,250</text>
+  </g>
+  <text x="465" y="562" font-size="14" fill="#1A1B1E" text-anchor="middle">GitHub 星数（个）</text>
+
+  <!-- legend -->
+  <g font-size="12" fill="#555">
+    <rect x="800" y="132" width="14" height="10" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="821" y="141">回放类（5 家）</text>
+    <rect x="800" y="152" width="14" height="10" fill="#999999"/>
+    <text x="821" y="161">取证 / 核算 / 监控类（7 家）</text>
+  </g>
+
+  <!-- ============ panel b ============ -->
+  <text x="800" y="234" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="822" y="234" font-size="15" fill="#1A1B1E">正文明确建仓日的仓库（2026 年）</text>
+
+  <!-- date axis: x = 800 + 8*(dayIndex), dayIndex 0 = 06-01 -->
+  <line x1="800" y1="360" x2="1140" y2="360" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="800" y1="360" x2="800" y2="364"/>
+    <line x1="1040" y1="360" x2="1040" y2="364"/>
+    <line x1="1132" y1="360" x2="1132" y2="364"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="800" y="380">06-01</text>
+    <text x="1040" y="380">09-01</text>
+    <text x="1132" y="380">10-16</text>
+  </g>
+  <text x="800" y="404" font-size="14" fill="#1A1B1E">建仓日期（月-日）</text>
+
+  <!-- event week 09-26..10-05: x 1096.3..1119.7 -->
+  <line x1="1096.3" y1="254" x2="1096.3" y2="360" stroke="#999999" stroke-width="0.75" stroke-dasharray="4 3"/>
+  <line x1="1119.7" y1="254" x2="1119.7" y2="360" stroke="#999999" stroke-width="0.75" stroke-dasharray="4 3"/>
+  <text x="1108" y="250" font-size="12" fill="#555" text-anchor="middle">事件周</text>
+
+  <!-- dots: 06-24→1004, 08-21→1082.8, 08-29→1089.2, 09-14→1102.8, 10-14→1130.4 -->
+  <g fill="#0072B2">
+    <circle cx="1004" cy="278" r="5"/>
+    <circle cx="1082.8" cy="348" r="5"/>
+    <circle cx="1089.2" cy="332" r="5"/>
+    <circle cx="1102.8" cy="316" r="5"/>
+    <circle cx="1130.4" cy="300" r="5"/>
+  </g>
+  <g font-size="12" fill="#555" text-anchor="end">
+    <text x="1000" y="282">shepherd 06-24</text>
+    <text x="1078.8" y="352">agenttrail 08-21</text>
+    <text x="1085.2" y="336">OrcaReplay 08-29</text>
+    <text x="1098.8" y="320">ToolReplay 09-14</text>
+    <text x="1126.4" y="304">agentplay 10-14</text>
+  </g>
+  <g font-size="12" fill="#555">
+    <text x="800" y="436">供给先于事件周：头部集中在 6 月下旬到 7 月建仓；</text>
+    <text x="800" y="456">agentplay 两天 214 星，需求侧信号正在被接单</text>
+  </g>
+
+  <!-- footnote -->
+  <text x="60" y="600" font-size="11" fill="#767676">数据：api.github.com / hn.algolia.com 实测 2026-10-16（建仓日期与星数）· 面板 b 仅画正文明确给出建仓日的 5 家（shepherd、agenttrail、OrcaReplay、ToolReplay、agentplay），其余建仓月份见正文</text>
+  <text x="60" y="620" font-size="11" fill="#767676">12 个互不隶属的主体；事件周为 09-26 至 10-05 · 星数是开源热度，不等于收入</text>
 </svg>

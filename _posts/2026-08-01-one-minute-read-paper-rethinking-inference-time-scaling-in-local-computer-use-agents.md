@@ -8,9 +8,9 @@ tags: [computer-use-agents, inference-time-scaling, agentic-coding, test-time-co
 description: "在OSWorld上检验推理时扩展对本地计算机使用Agent的效果，额外计算多为递减回报且只改变失败模式。上下文扩展收益随成本饱和，时间扩展不提升成功率。"
 ---
 
-韩国研究团队发表的论文[《Rethinking Inference-Time Scaling in Local Computer-Use Agents: Failure Modes and Compute Tradeoffs》][paper1-url]系统性地研究了推理时扩展在本地计算机使用 Agent 中的有效性，发现额外计算往往产生递减回报并改变失败模式而非提高成功率。
+韩国研究团队发表的论文[《Rethinking Inference-Time Scaling in Local Computer-Use Agents: Failure Modes and Compute Tradeoffs》][paper1-url]评估四个开源模型在 OSWorld 上的表现后发现，额外计算只改变失败模式，不提高成功率。
 
-在对四个开源模型和 OSWorld 基准的评估中，上下文扩展改善轨迹稳定性但收益随 token 成本饱和，时间扩展减少停滞却不显著提高任务成功率——更长的视界往往延长错误轨迹而非纠正它们。
+研究系统性地研究了推理时扩展在本地计算机使用 Agent 中的有效性，发现额外计算往往产生递减回报并改变失败模式而非提高成功率。在对四个开源模型和 OSWorld 基准的评估中，上下文扩展改善轨迹稳定性但收益随 token 成本饱和，时间扩展减少停滞却不显著提高任务成功率——更长的视界往往延长错误轨迹而非纠正它们。
 
 ## 核心问题：推理时扩展的局限性
 

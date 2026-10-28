@@ -8,9 +8,9 @@ tags: [multi-agent, llm, ai-agents]
 description: "伊利诺伊大学芝加哥分校的预印本实测多智能体讨论的从众风险：10 个智能体的事实讨论中，无托时仅 0.6% 以错误答案收尾，放入 3 个反复坚称错误答案的对抗者后达 60.5%，私下错误远高于公开附和。"
 ---
 
-伊利诺伊大学芝加哥分校（University of Illinois Chicago）的预印本论文[《Believed but Not Said: Measuring Hidden Belief Collapse in Multi-Agent LLM Discussions》][paper1-url]用一组最小对抗实验检验了多智能体系统流行的设计假设——群体讨论能互相纠错。
+伊利诺伊大学芝加哥分校的论文[《Believed but Not Said: Measuring Hidden Belief Collapse in Multi-Agent LLM Discussions》][paper1-url]发现：放入 3 个反复坚称错误答案的对抗者后，`60.5%` 的良性智能体以错误答案收尾。
 
-论文的核心数字：在 10 个智能体参与的事实问答讨论中，不放对抗者时只有 `0.6%` 的良性智能体最终以错误答案收尾；放入 1 个反复坚称错误答案的对抗智能体后，这一比例升至 `44.8%`，放入 3 个后达到 `60.5%`。
+论文来自伊利诺伊大学芝加哥分校（University of Illinois Chicago），核心数字：在 10 个智能体参与的事实问答讨论中，不放对抗者时只有 `0.6%` 的良性智能体最终以错误答案收尾；放入 1 个反复坚称错误答案的对抗智能体后，这一比例升至 `44.8%`，放入 3 个后达到 `60.5%`。论文用一组最小对抗实验检验了多智能体系统流行的设计假设——群体讨论能互相纠错。
 
 ![无托、一托、三托三种配置下最终以错误答案收尾的良性智能体比例，以及三托在场时私下持错与公开附和的对比]({{ site.baseurl }}/assets/images/belief-collapse-coverage.svg)
 

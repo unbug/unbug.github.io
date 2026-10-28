@@ -1,43 +1,91 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" font-family="PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif">
-  <rect width="960" height="560" fill="#f4f7fb"/>
-  <text x="480" y="46" fill="#1e3a5f" font-size="26" text-anchor="middle" font-weight="bold">被提到不等于被选中：提及次数 vs 实际中选</text>
-  <text x="480" y="76" fill="#6b7f96" font-size="16" text-anchor="middle">Armature 16,893 会话测量自述数字，未经独立复现；浅色=被提及次数，深色=被选中次数</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <!-- scale: max mention 194 -> bar width 520; unit = 2.68 px -->
-  <g font-size="17">
-    <!-- PayPal 139 / 0 -->
-    <text x="210" y="135" fill="#1e3a5f" text-anchor="end" font-weight="bold">PayPal</text>
-    <rect x="225" y="115" width="373" height="26" rx="4" fill="#c3d5e8"/>
-    <rect x="225" y="115" width="3" height="26" fill="#c96b3c"/>
-    <text x="608" y="134" fill="#41627f">提及 139 · 中选 0（124 场输给 Stripe）</text>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">提及与实际中选严重脱钩：PayPal 被提及 139 次、中选 0 次</text>
 
-    <!-- Adyen 175 / 3 -->
-    <text x="210" y="195" fill="#1e3a5f" text-anchor="end" font-weight="bold">Adyen</text>
-    <rect x="225" y="175" width="469" height="26" rx="4" fill="#c3d5e8"/>
-    <rect x="225" y="175" width="9" height="26" fill="#c96b3c"/>
-    <text x="240" y="232" fill="#41627f">提及 175 · 中选 3</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">提及次数与实际中选次数（次）</text>
 
-    <!-- LangChain 194 / 4 -->
-    <text x="210" y="275" fill="#1e3a5f" text-anchor="end" font-weight="bold">LangChain</text>
-    <rect x="225" y="255" width="520" height="26" rx="4" fill="#c3d5e8"/>
-    <rect x="225" y="255" width="11" height="26" fill="#c96b3c"/>
-    <text x="242" y="312" fill="#41627f">提及 194 · 中选 4</text>
-
-    <!-- Netlify 152 / 6 -->
-    <text x="210" y="355" fill="#1e3a5f" text-anchor="end" font-weight="bold">Netlify</text>
-    <rect x="225" y="335" width="407" height="26" rx="4" fill="#c3d5e8"/>
-    <rect x="225" y="335" width="17" height="26" fill="#c96b3c"/>
-    <text x="248" y="392" fill="#41627f">提及 152 · 中选 6</text>
-
-    <!-- Supabase mentions-most but loses 66% to Neon -->
-    <text x="210" y="435" fill="#1e3a5f" text-anchor="end" font-weight="bold">Supabase</text>
-    <rect x="225" y="415" width="520" height="26" rx="4" fill="#c3d5e8"/>
-    <text x="755" y="434" fill="#8a4a24">提及最多的数据库，66% 对决输给 Neon</text>
+  <!-- gridlines: x = 330 + 2*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="430" y1="130" x2="430" y2="390"/>
+    <line x1="530" y1="130" x2="530" y2="390"/>
+    <line x1="630" y1="130" x2="630" y2="390"/>
+    <line x1="730" y1="130" x2="730" y2="390"/>
   </g>
 
-  <rect x="225" y="115" width="14" height="14" fill="#c3d5e8"/><text x="248" y="127" font-size="15" fill="#41627f">被提及</text>
-  <rect x="330" y="115" width="14" height="14" fill="#c96b3c"/><text x="353" y="127" font-size="15" fill="#41627f">被选中</text>
+  <!-- rows: hollow = mentioned, solid = won -->
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="322" y="165">PayPal</text>
+    <text x="322" y="225">Adyen</text>
+    <text x="322" y="285">LangChain</text>
+    <text x="322" y="345">Netlify</text>
+  </g>
 
-  <text x="480" y="510" fill="#41627f" font-size="16" text-anchor="middle">页面呈现直接翻转选择：Mailgun 因免费档「1 天日志保留」字样输给 Postmark；Stripe 支付场景十场赢九场。</text>
-  <text x="480" y="538" fill="#93a7bc" font-size="14" text-anchor="middle">数据来源：armature.tech/blog/which-tools-coding-agents-install（厂商自述，traces 据称公开）</text>
+  <!-- PayPal 139 / 0 -->
+  <rect x="330" y="148" width="278" height="14" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+  <text x="617" y="160" font-size="12" fill="#555">提及 139</text>
+  <circle cx="330" cy="178" r="5" fill="#D55E00"/>
+  <text x="342" y="183" font-size="12" fill="#555">中选 0，其中 124 场被 Stripe 赢走</text>
+
+  <!-- Adyen 175 / 3 -->
+  <rect x="330" y="208" width="350" height="14" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+  <text x="689" y="220" font-size="12" fill="#555">提及 175</text>
+  <circle cx="336" cy="238" r="5" fill="#D55E00"/>
+  <text x="348" y="243" font-size="12" fill="#555">中选 3</text>
+
+  <!-- LangChain 194 / 4 -->
+  <rect x="330" y="268" width="388" height="14" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+  <text x="727" y="280" font-size="12" fill="#555">提及 194</text>
+  <circle cx="338" cy="298" r="5" fill="#D55E00"/>
+  <text x="350" y="303" font-size="12" fill="#555">中选 4</text>
+
+  <!-- Netlify 152 / 6 -->
+  <rect x="330" y="328" width="304" height="14" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+  <text x="643" y="340" font-size="12" fill="#555">提及 152</text>
+  <circle cx="342" cy="358" r="5" fill="#D55E00"/>
+  <text x="354" y="363" font-size="12" fill="#555">中选 6</text>
+
+  <!-- value axis -->
+  <line x1="330" y1="390" x2="730" y2="390" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="330" y1="390" x2="330" y2="394"/>
+    <line x1="430" y1="390" x2="430" y2="394"/>
+    <line x1="530" y1="390" x2="530" y2="394"/>
+    <line x1="630" y1="390" x2="630" y2="394"/>
+    <line x1="730" y1="390" x2="730" y2="394"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="330" y="410">0</text>
+    <text x="430" y="410">50</text>
+    <text x="530" y="410">100</text>
+    <text x="630" y="410">150</text>
+    <text x="730" y="410">200</text>
+  </g>
+  <text x="530" y="436" font-size="14" fill="#1A1B1E" text-anchor="middle">次数（次）</text>
+  <g font-size="12" fill="#555">
+    <rect x="330" y="118" width="14" height="10" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="351" y="127">被提及（空心条）</text>
+    <circle cx="470" cy="123" r="5" fill="#D55E00"/>
+    <text x="481" y="127">被选中（实心点）</text>
+  </g>
+
+  <!-- ============ panel b ============ -->
+  <text x="880" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="902" y="104" font-size="15" fill="#1A1B1E">同类脱钩证据</text>
+  <g font-size="12.5" fill="#555">
+    <text x="880" y="140">Supabase 是提及最多的</text>
+    <text x="880" y="160">数据库，被 Neon 压制，</text>
+    <text x="880" y="180">Neon 赢下 66% 的对决</text>
+    <text x="880" y="216">支付场景 Stripe 十场赢</text>
+    <text x="880" y="236">九场</text>
+    <text x="880" y="272">对象存储 S3 拿 45%，</text>
+    <text x="880" y="292">Azure 与 GCP 各 20%</text>
+  </g>
+
+  <!-- footnote -->
+  <text x="60" y="600" font-size="11" fill="#767676">数据：Armature 16,893 会话测量，厂商自述口径，原始 trace 据称公开于 leaderboards.armature.tech，未经独立第三方复现</text>
+  <text x="60" y="620" font-size="11" fill="#767676">页面信息呈现本身直接翻转选择：Mailgun 因免费档写着 1 天日志保留输给 Postmark</text>
 </svg>

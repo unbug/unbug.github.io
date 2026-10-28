@@ -8,9 +8,9 @@ tags: [ai4ai, recursive-self-improvement, machine-learning-engineering, agent-tr
 description: "面向递归自改进构建开源系统OpenMLE，把ML工程拆为四个演化算子训练35B元进化代理。MLE-Bench Lite奖牌率从39.39%提至60.61%。"
 ---
 
-Horizon Research、Frontis.AI 和清华大学联合团队发表的论文[《Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering》][paper1-url]提出了首个面向递归自改进（RSI）的全栈开源系统 OpenMLE。
+Frontis.AI 等机构的论文[《Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering》][paper1-url]提出全栈开源系统 OpenMLE，一个 35B 的递归自改进元进化代理。
 
-该系统将机器学习工程任务分解为四个原子演化算子，通过 SFT+RL 训练出一个 35B 参数的元进化代理 Frontis-MA1，在 MLE-Bench Lite 上将 Medal Average 从基座模型的 `39.39%` 提升至 `60.61%`，配合进化搜索框架 OpenMLE-Evo-Max 进一步达到 `71.21%`，超越了 GPT-5.5 + Codex 组合。
+该系统由 Horizon Research、Frontis.AI 和清华大学联合团队研发，是首个面向递归自改进（RSI）的全栈开源系统。它将机器学习工程任务分解为四个原子演化算子，通过 SFT+RL 训练出一个 35B 参数的元进化代理 Frontis-MA1，在 MLE-Bench Lite 上将 Medal Average 从基座模型的 `39.39%` 提升至 `60.61%`，配合进化搜索框架 OpenMLE-Evo-Max 进一步达到 `71.21%`，超越了 GPT-5.5 + Codex 组合。
 
 ## AI4AI：让 AI 改进构建 AI 的过程
 
