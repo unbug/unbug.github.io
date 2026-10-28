@@ -1,107 +1,96 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9A93A8; }
-      .rl { font-size: 15px; fill: #3E3648; }
-      .val { font-size: 19px; font-weight: 700; }
-      .b { font-size: 12px; fill: #A8A0B2; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F4F0F6"/>
-    </linearGradient>
-    <linearGradient id="gRose" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#C0455E"/><stop offset="1" stop-color="#DE7A90"/>
-    </linearGradient>
-    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2A8C82"/><stop offset="1" stop-color="#5FB8AC"/>
-    </linearGradient>
-    <linearGradient id="gAmber" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#C99A2E"/><stop offset="1" stop-color="#E4BE5F"/>
-    </linearGradient>
-    <linearGradient id="gNavy" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#3D5A73"/><stop offset="1" stop-color="#7290A8"/>
-    </linearGradient>
-    <linearGradient id="gPlum" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7B4A8F"/><stop offset="1" stop-color="#A87BB8"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1108" cy="606" r="140" fill="#7B4A8F" opacity="0.05"/>
-  <circle cx="82" cy="110" r="110" fill="#C0455E" opacity="0.05"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gRose)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">判为攻击失败的轨迹中 76.3%–80.3% 只是忽略注入，确认读到并明确拒绝的仅约 18.0%</text>
 
-  <text class="k" x="64" y="84">一分钟读论文 · 2026-10-19 · ARXIV:2610.23254 · BRAC University</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#241F2C">没接电话不算挡贼</text>
-  <text x="64" y="158" font-size="15" fill="#6C6478">33,000 条轨迹审计：判为「防御成功」的注入失败，多半只是没理会注入</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">攻击失败轨迹的行为构成（占各自失败轨迹的百分比）</text>
 
-  <!-- theater motif -->
-  <g>
-    <path d="M 1010 96 q 70 -34 140 0 l 0 84 q -70 26 -140 0 z" fill="url(#gPlum)" opacity="0.5"/>
-    <path d="M 1010 96 q 35 -18 70 0 q 35 -18 70 0" stroke="#7B4A8F" stroke-width="3" fill="none"/>
-    <rect x="1030" y="150" width="100" height="30" rx="4" fill="#3E3648"/>
-    <text x="1080" y="170" text-anchor="middle" font-size="12" fill="#EFE7F4" letter-spacing="3">三种结局</text>
-    <circle cx="1046" cy="200" r="9" fill="url(#gNavy)"/>
-    <circle cx="1080" cy="204" r="9" fill="url(#gTeal)"/>
-    <circle cx="1114" cy="200" r="9" fill="url(#gRose)"/>
-    <path d="M 1024 224 q 56 20 112 0" stroke="#C99A2E" stroke-width="3" fill="none"/>
-    <text class="b" x="1080" y="254" text-anchor="middle">同一种「失败」，台上三种演法</text>
+  <!-- gridlines: x = 250 + 8*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="650" y1="130" x2="650" y2="320"/>
+    <line x1="1050" y1="130" x2="1050" y2="320"/>
   </g>
 
-  <!-- stacked bars: composition of "failed" attacks -->
-  <g>
-    <text class="rl" x="64" y="216" font-weight="700">「攻击失败」轨迹的成分 · 两基准占比</text>
+  <!-- AgentDojo: ignore 76.3 / refuse 18.0 / other 5.7 -->
+  <text x="238" y="168" font-size="12.5" fill="#1A1B1E" text-anchor="end">AgentDojo</text>
+  <text x="238" y="186" font-size="12.5" fill="#555" text-anchor="end">失败 14,699 条</text>
+  <rect x="250" y="154" width="610.4" height="26" fill="#999999"/>
+  <rect x="860.4" y="154" width="144" height="26" fill="#0072B2"/>
+  <text x="555" y="171" font-size="12" fill="#FFFFFF" text-anchor="middle">忽略注入 76.3%</text>
+  <text x="932" y="171" font-size="12" fill="#FFFFFF" text-anchor="middle">真实拒绝 18.0%</text>
+  <text x="1012" y="171" font-size="12" fill="#555">其余 5.7</text>
 
-    <rect x="64" y="234" width="672" height="52" fill="#3D5A73" opacity="0.07"/>
-    <text class="rl" x="88" y="266">AgentDojo</text>
-    <rect x="220" y="250" width="381" height="20" fill="url(#gNavy)"/>
-    <rect x="601" y="250" width="90" height="20" fill="url(#gTeal)"/>
-    <rect x="691" y="250" width="45" height="20" fill="url(#gRose)"/>
-    <text x="410" y="265" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">忽略 76.3%</text>
-    <text x="646" y="265" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">18.0%</text>
-    <text class="b" x="748" y="266">其余</text>
+  <!-- InjecAgent: ignore 80.3 / refuse 17.2 / other 2.5 -->
+  <text x="238" y="238" font-size="12.5" fill="#1A1B1E" text-anchor="end">InjecAgent</text>
+  <text x="238" y="256" font-size="12.5" fill="#555" text-anchor="end">失败 15,274 条</text>
+  <rect x="250" y="224" width="642.4" height="26" fill="#999999"/>
+  <rect x="892.4" y="224" width="137.6" height="26" fill="#0072B2"/>
+  <text x="571" y="241" font-size="12" fill="#FFFFFF" text-anchor="middle">忽略注入 80.3%</text>
+  <text x="961" y="241" font-size="12" fill="#FFFFFF" text-anchor="middle">真实拒绝 17.2%</text>
+  <text x="1044" y="241" font-size="12" fill="#555">其余 2.5</text>
 
-    <rect x="64" y="296" width="672" height="52" fill="#7B4A8F" opacity="0.07"/>
-    <text class="rl" x="88" y="328">InjecAgent</text>
-    <rect x="220" y="312" width="401" height="20" fill="url(#gNavy)"/>
-    <rect x="621" y="312" width="86" height="20" fill="url(#gTeal)"/>
-    <rect x="707" y="312" width="29" height="20" fill="url(#gRose)"/>
-    <text x="420" y="327" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">忽略 80.3%</text>
-    <text x="664" y="327" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">17.2%</text>
-    <text class="b" x="748" y="328">其余</text>
+  <!-- value axis -->
+  <line x1="250" y1="320" x2="1050" y2="320" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="250" y1="320" x2="250" y2="324"/>
+    <line x1="650" y1="320" x2="650" y2="324"/>
+    <line x1="1050" y1="320" x2="1050" y2="324"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="250" y="340">0</text>
+    <text x="650" y="340">50</text>
+    <text x="1050" y="340">100</text>
+  </g>
+  <text x="650" y="364" font-size="14" fill="#1A1B1E" text-anchor="middle">占失败轨迹比例（%）</text>
 
-    <g font-size="12.5">
-      <rect x="88" y="368" width="12" height="12" fill="url(#gNavy)"/>
-      <text x="108" y="379" fill="#3E3648">没理会注入</text>
-      <rect x="228" y="368" width="12" height="12" fill="url(#gTeal)"/>
-      <text x="248" y="379" fill="#3E3648">真实拒绝 · 仅约 18%</text>
-      <rect x="418" y="368" width="12" height="12" fill="url(#gRose)"/>
-      <text x="438" y="379" fill="#3E3648">认出仍照做 · 28.9% / 16.9%</text>
-    </g>
-    <text class="b" x="64" y="408">识别与执行脱节：MiniCPM-2B 先指出是注入尝试，随后照常汇出 $30,000</text>
+  <g font-size="12" fill="#555">
+    <rect x="250" y="380" width="12" height="10" fill="#999999"/>
+    <text x="267" y="389">忽略注入</text>
+    <rect x="360" y="380" width="12" height="10" fill="#0072B2"/>
+    <text x="377" y="389">真实拒绝（确认读到并明确拒绝）</text>
+    <text x="250" y="412">忽略多由环境给不出工具调用路径等偶然因素造成，换环境可能改判；「其余」为 100 减两类后的残差</text>
   </g>
 
-  <!-- right anchors -->
-  <g>
-    <rect x="780" y="234" width="356" height="78" fill="#C99A2E" opacity="0.09"/>
-    <rect x="780" y="234" width="356" height="5" fill="url(#gAmber)"/>
-    <text class="b" x="798" y="262">同一份权重，只改 system prompt</text>
-    <text class="serif" x="798" y="298" font-size="27" font-weight="700" fill="#9A7212">0.2% ↔ 43%</text>
+  <!-- ============ panel b ============ -->
+  <text x="60" y="438" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="438" font-size="15" fill="#1A1B1E">识别出注入后仍照做的比例（%，识别轨迹内）</text>
 
-    <rect x="780" y="326" width="356" height="78" fill="#C0455E" opacity="0.06"/>
-    <rect x="780" y="326" width="356" height="5" fill="url(#gRose)"/>
-    <text class="b" x="798" y="354">任务没做成 + 攻击失败 = 白跑</text>
-    <text class="serif" x="798" y="390" font-size="27" font-weight="700" fill="#C0455E">21.7% 轨迹</text>
+  <!-- rows: x = 300 + 5*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="400" y1="456" x2="400" y2="560"/>
   </g>
 
-  <line x1="64" y1="440" x2="1136" y2="440" stroke="#E3DCE8"/>
-  <g>
-    <text class="serif" x="64" y="486" font-size="24" font-weight="700" fill="#3D5A73">报表看着都很安全</text>
-    <text x="64" y="514" font-size="14" fill="#3E3648">FP16 基线 pooled ASR 仅 8.09%（InjecAgent）、11.96%（AgentDojo），11 个 agent 里 8 个低于 10%</text>
-    <text class="serif" x="64" y="560" font-size="24" font-weight="700" fill="#7B4A8F">但 ASR 把三种行为压成一个「失败」</text>
-    <text x="64" y="588" font-size="14" fill="#3E3648">忽略 · 真实拒绝 · 识别后失守 · 换环境忽略就可能改判，系统性高估防御</text>
-  </g>
+  <text x="288" y="488" font-size="12.5" fill="#1A1B1E" text-anchor="end">AgentDojo</text>
+  <rect x="300" y="475" width="144.5" height="18" fill="#D55E00"/>
+  <text x="452" y="488" font-size="12" fill="#555">28.9</text>
 
-  <text class="b" x="64" y="644">11 个 2-14B 开源工具 agent · 不涉及大参数闭源模型 · 分类经 150 条人工标注验证，judge 一致性 96% 起 · Micropaper</text>
+  <text x="288" y="533" font-size="12.5" fill="#1A1B1E" text-anchor="end">InjecAgent</text>
+  <rect x="300" y="520" width="84.5" height="18" fill="#D55E00"/>
+  <text x="392" y="533" font-size="12" fill="#555">16.9</text>
+
+  <!-- value axis -->
+  <line x1="300" y1="560" x2="460" y2="560" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="300" y1="560" x2="300" y2="564"/>
+    <line x1="400" y1="560" x2="400" y2="564"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="300" y="580">0</text>
+    <text x="400" y="580">20</text>
+  </g>
+  <text x="400" y="602" font-size="14" fill="#1A1B1E" text-anchor="middle">仍执行比例（%）</text>
+
+  <!-- side notes -->
+  <text x="560" y="472" font-size="12" fill="#555">Table 1c：MiniCPM-2B 先在回复里指出 a prompt injection attempt，</text>
+  <text x="560" y="490" font-size="12" fill="#555">随后照常向攻击者账户汇出 $30,000</text>
+  <text x="560" y="516" font-size="12" fill="#555">权重不动仅改 system prompt：允许工具输出携带指令时 InjecAgent ASR 冲到 43%，明确禁止版压到 0.2%</text>
+  <text x="560" y="534" font-size="12" fill="#555">ATOM 交叉：AgentDojo 中 21.7% 轨迹「safe but dysfunctional」；</text>
+  <text x="560" y="552" font-size="12" fill="#555">任务完成子集内 ASR 为 3.8%</text>
+  <text x="560" y="578" font-size="12" fill="#555">FP16 基线 pooled ASR 仅 8.09%（InjecAgent）与 11.96%（AgentDojo）</text>
+
+  <!-- footnote -->
+  <text x="60" y="640" font-size="11" fill="#767676">数据：arXiv:2610.23254（33,000 条轨迹，11 个 2–14B 开源工具调用 agent）· 分类由 LLM judge 完成，两名作者按 XSTest 协议人工标注 150 条，攻击者行为标注全部一致、其余类别一致性 96% · 预印本未经同行评审</text>
 </svg>

@@ -1,124 +1,98 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9C9484; }
-      .rl { font-size: 15px; fill: #474C54; }
-      .b { font-size: 12px; fill: #A5A296; }
-      .chip { font-size: 12.5px; font-weight: 600; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F4F1EB"/>
-    </linearGradient>
-    <linearGradient id="gVermil" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#C2491D"/><stop offset="1" stop-color="#E37C45"/>
-    </linearGradient>
-    <linearGradient id="gSlate" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#3D5A73"/><stop offset="1" stop-color="#6E8CA8"/>
-    </linearGradient>
-    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2E7D6B"/><stop offset="1" stop-color="#68B39D"/>
-    </linearGradient>
-    <linearGradient id="gAmber" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#B8860B"/><stop offset="1" stop-color="#DCB24A"/>
-    </linearGradient>
-    <linearGradient id="gPlum" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7A3B6B"/><stop offset="1" stop-color="#A96C99"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1090" cy="130" r="160" fill="#2E7D6B" opacity="0.05"/>
-  <circle cx="70" cy="640" r="110" fill="#7A3B6B" opacity="0.05"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gVermil)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">单流自回归架构在真机微调与 BEHAVIOR 基准上均高于对照系统；真机每配置仅 15 episodes</text>
 
-  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2608.11739 · 银河通用 GALAXEA</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">推理动作同一条流</text>
-  <text x="64" y="158" font-size="15" fill="#5B6068">G0.5：单一 transformer decoder 在同一 token 流中输出推理与动作，VLM 从编码器变成决策者</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">真机微调成功率（%，R1-Lite / R1-Pro，4 任务 × 6 配置，每配置 15 episodes）</text>
 
-  <!-- weaving loom motif: two threads on one shuttle path -->
-  <g>
-    <rect x="892" y="96" width="9" height="188" rx="4" fill="#8A6612"/>
-    <rect x="1120" y="96" width="9" height="188" rx="4" fill="#8A6612"/>
-    <rect x="892" y="96" width="237" height="7" rx="3" fill="#B8860B"/>
-    <g stroke="#A9A48F" stroke-width="1.5" opacity="0.7">
-      <line x1="901" y1="118" x2="1120" y2="118"/>
-      <line x1="901" y1="142" x2="1120" y2="142"/>
-      <line x1="901" y1="190" x2="1120" y2="190"/>
-      <line x1="901" y1="214" x2="1120" y2="214"/>
-      <line x1="901" y1="262" x2="1120" y2="262"/>
-    </g>
-    <path d="M 898 166 C 950 150, 990 184, 1040 168 S 1114 158, 1126 166" stroke="url(#gPlum)" stroke-width="7" fill="none" stroke-linecap="round"/>
-    <path d="M 898 240 C 950 224, 990 256, 1040 240 S 1114 232, 1126 240" stroke="url(#gTeal)" stroke-width="7" fill="none" stroke-linecap="round"/>
-    <path d="M 1002 160 L 1074 160 L 1063 175 L 1013 175 Z" fill="url(#gAmber)"/>
-    <circle cx="1038" cy="167" r="4.5" fill="#FBFAF7"/>
-    <text x="1038" y="145" text-anchor="middle" class="serif" font-size="15" font-weight="700" fill="#8A6612">单一流</text>
-    <text x="905" y="136" class="chip" fill="#6A2F5C">推理 token</text>
-    <text x="905" y="259" class="chip" fill="#20604F">动作 token</text>
-    <text x="1010" y="308" text-anchor="middle" class="b">跨本体 tokenizer：14 种本体 → 共享词表 · 统一 27 维动作空间</text>
+  <!-- gridlines: y = 420 - 4*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="120" y1="320" x2="560" y2="320"/>
+    <line x1="120" y1="220" x2="560" y2="220"/>
+    <line x1="120" y1="120" x2="560" y2="120"/>
   </g>
 
-  <!-- dumbbell: real-robot fine-tuning success -->
-  <g>
-    <text class="rl" x="64" y="204" font-weight="600">真机微调成功率（R1-Lite / R1-Pro · 4 任务 6 配置）</text>
+  <!-- bars: G0.5 76.7 / pi0.5 53.3 / GR00T 24.4 -->
+  <rect x="160" y="113.2" width="70" height="306.8" fill="#D55E00"/>
+  <text x="195" y="105" font-size="12" fill="#555" text-anchor="middle">76.7</text>
+  <text x="195" y="440" font-size="12.5" fill="#1A1B1E" text-anchor="middle">G0.5</text>
 
-    <rect x="64" y="220" width="780" height="42" fill="#C2491D" opacity="0.07"/>
-    <rect x="64" y="270" width="780" height="42" fill="#3D5A73" opacity="0.07"/>
-    <rect x="64" y="320" width="780" height="42" fill="#A9A48F" opacity="0.08"/>
+  <rect x="300" y="206.8" width="70" height="213.2" fill="#999999"/>
+  <text x="335" y="199" font-size="12" fill="#555" text-anchor="middle">53.3</text>
+  <text x="335" y="440" font-size="12.5" fill="#1A1B1E" text-anchor="middle">π0.5</text>
 
-    <line x1="248" y1="241" x2="806" y2="241" stroke="#EAE6DA"/>
-    <line x1="248" y1="241" x2="248" y2="359" stroke="#EAE6DA"/>
-    <text class="b" x="248" y="378">0</text>
-    <text class="b" x="527" y="378" text-anchor="middle">50%</text>
-    <text class="b" x="806" y="378" text-anchor="end">100%</text>
+  <rect x="440" y="322.4" width="70" height="97.6" fill="#999999"/>
+  <text x="475" y="314" font-size="12" fill="#555" text-anchor="middle">24.4</text>
+  <text x="475" y="440" font-size="12.5" fill="#1A1B1E" text-anchor="middle">GR00T-N1.7</text>
 
-    <text class="rl" x="232" y="246" text-anchor="end">G0.5</text>
-    <rect x="248" y="230" width="428" height="22" rx="3" fill="url(#gVermil)"/>
-    <text class="serif" x="688" y="250" font-size="28" font-weight="700" fill="#C2491D">76.7%</text>
+  <!-- value axis -->
+  <line x1="120" y1="420" x2="560" y2="420" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="116" y1="420" x2="120" y2="420"/>
+    <line x1="116" y1="320" x2="120" y2="320"/>
+    <line x1="116" y1="220" x2="120" y2="220"/>
+    <line x1="116" y1="120" x2="120" y2="120"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="110" y="424">0</text>
+    <text x="110" y="324">25</text>
+    <text x="110" y="224">50</text>
+    <text x="110" y="124">75</text>
+  </g>
+  <text x="72" y="90" font-size="14" fill="#555">成功率（%）</text>
+  <text x="195" y="82" font-size="12" fill="#555" text-anchor="middle">G0.5 比 π0.5 高 23.4 个百分点（76.7 减 53.3）</text>
 
-    <text class="rl" x="232" y="296" text-anchor="end">π0.5</text>
-    <rect x="248" y="285" width="298" height="22" rx="3" fill="url(#gSlate)"/>
-    <text class="serif" x="558" y="304" font-size="24" font-weight="700" fill="#3D5A73">53.3%</text>
+  <!-- ============ panel b ============ -->
+  <text x="650" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="672" y="104" font-size="15" fill="#1A1B1E">2025 BEHAVIOR Challenge 成功率（%，50 个长程家庭任务）</text>
 
-    <text class="rl" x="232" y="346" text-anchor="end">GR00T-N1.7</text>
-    <rect x="248" y="335" width="137" height="22" rx="3" fill="url(#gAmber)" opacity="0.85"/>
-    <text class="serif" x="397" y="354" font-size="24" font-weight="700" fill="#8A6612">24.4%</text>
+  <!-- rows: x = 830 + 4*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="930" y1="130" x2="930" y2="330"/>
+    <line x1="1030" y1="130" x2="1030" y2="330"/>
   </g>
 
-  <!-- right column: benchmark chips -->
-  <g>
-    <rect x="880" y="330" width="256" height="40" fill="#B8860B" opacity="0.09"/>
-    <text class="serif" x="896" y="357" font-size="20" font-weight="700" fill="#8A6612">82.5%</text>
-    <text x="972" y="355" font-size="13" fill="#474C54">DROID 后训练零样本迁移</text>
+  <text x="818" y="163" font-size="12.5" fill="#1A1B1E" text-anchor="end">G0.5（通用 checkpoint）</text>
+  <rect x="830" y="150" width="125.6" height="18" fill="#D55E00"/>
+  <text x="963" y="163" font-size="12" fill="#555">31.4</text>
 
-    <rect x="880" y="378" width="256" height="40" fill="#2E7D6B" opacity="0.08"/>
-    <text class="serif" x="896" y="405" font-size="20" font-weight="700" fill="#20604F">98.9%</text>
-    <text x="972" y="403" font-size="13" fill="#474C54">LIBERO · RoboTwin 93.3%</text>
+  <text x="818" y="203" font-size="12.5" fill="#1A1B1E" text-anchor="end">G0.5（仅训练 1 epoch）</text>
+  <rect x="830" y="190" width="116" height="18" fill="#0072B2"/>
+  <text x="953" y="203" font-size="12" fill="#555">29.0</text>
+
+  <text x="818" y="243" font-size="12.5" fill="#1A1B1E" text-anchor="end">π0.5</text>
+  <rect x="830" y="230" width="105.2" height="18" fill="#999999"/>
+  <text x="943" y="243" font-size="12" fill="#555">26.3</text>
+
+  <text x="818" y="283" font-size="12.5" fill="#1A1B1E" text-anchor="end">RLC（赛事冠军方案）</text>
+  <rect x="830" y="270" width="104.4" height="18" fill="#999999"/>
+  <text x="942" y="283" font-size="12" fill="#555">26.1</text>
+
+  <!-- value axis -->
+  <line x1="830" y1="330" x2="1030" y2="330" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="830" y1="330" x2="830" y2="334"/>
+    <line x1="930" y1="330" x2="930" y2="334"/>
+    <line x1="1030" y1="330" x2="1030" y2="334"/>
   </g>
-
-  <!-- BEHAVIOR strip -->
-  <g>
-    <text class="rl" x="64" y="430" font-weight="600">2025 BEHAVIOR Challenge · 50 个长程家庭任务 · 单一通用策略</text>
-    <rect x="64" y="442" width="1072" height="42" fill="#7A3B6B" opacity="0.07"/>
-    <text class="serif" x="88" y="470" font-size="24" font-weight="700" fill="#7A3B6B">31.4%</text>
-    <text x="158" y="469" font-size="14" fill="#474C54">G0.5</text>
-    <text class="rl" x="330" y="469">π0.5 26.3%</text>
-    <text class="rl" x="500" y="469">冠军方案 RLC 26.1%</text>
-    <text class="rl" x="740" y="469">仅 1 epoch 即 29.0%</text>
-    <text class="b" x="1120" y="469" text-anchor="end">该基准整体仍难，长程任务远未解决</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="830" y="350">0</text>
+    <text x="930" y="350">12.5</text>
+    <text x="1030" y="350">25</text>
   </g>
+  <text x="930" y="374" font-size="14" fill="#1A1B1E" text-anchor="middle">成功率（%）</text>
 
-  <!-- bottom: architecture notes -->
-  <line x1="64" y1="512" x2="1136" y2="512" stroke="#E8E3D2"/>
-  <g>
-    <rect x="64" y="532" width="122" height="30" rx="15" fill="url(#gPlum)" opacity="0.2"/>
-    <text x="125" y="552" text-anchor="middle" class="chip" fill="#6A2F5C">原生思维链流</text>
-    <rect x="200" y="532" width="122" height="30" rx="15" fill="url(#gTeal)" opacity="0.22"/>
-    <text x="261" y="552" text-anchor="middle" class="chip" fill="#20604F">视觉记忆模块</text>
-    <rect x="336" y="532" width="134" height="30" rx="15" fill="url(#gAmber)" opacity="0.22"/>
-    <text x="403" y="552" text-anchor="middle" class="chip" fill="#8A6612">改 prompt 调粒度</text>
-    <text x="486" y="552" font-size="14" fill="#474C54">推理不是外挂模块，而是动作生成过程本身的一部分</text>
-  </g>
+  <!-- architecture note -->
+  <text x="650" y="410" font-size="12" fill="#555">架构：单一 transformer decoder 在同一自回归流中交错输出推理与动作 token；</text>
+  <text x="650" y="428" font-size="12" fill="#555">跨本体 tokenizer 覆盖 14 种本体、统一 27 维动作空间；视觉记忆注入数秒级历史观测。</text>
 
-  <text class="b" x="1136" y="628" text-anchor="end">真机每配置仅 15 episodes · 团队自报数据 · 7 个评测设置协议不一 · 权重已开放 · Micropaper</text>
+  <!-- other benchmarks -->
+  <text x="650" y="172" font-size="12" fill="#555">G0.5 单 checkpoint 比冠军方案 RLC 高 5.3 个百分点（31.4 减 26.1）；仅训 1 epoch 已高于 π0.5</text>
+  <text x="60" y="492" font-size="12" fill="#555">其余评测（论文自报）：DROID 后训练零样本迁移 82.5%（Franka 臂、10 任务）· LIBERO 98.9% · RoboTwin 2.0 93.3% · SimplerEnv-Bridge 87.3%</text>
+
+  <!-- footnote -->
+  <text x="60" y="524" font-size="11" fill="#767676">数据：arXiv:2608.11739v1（G0.5，银河通用）· 真机为团队自报数据、每配置 15 episodes；「7 independent regimes」混合不同评测协议，横向可比性有限 · 预印本未经同行评审</text>
 </svg>
