@@ -1,108 +1,108 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8B9088; }
-      .rl { font-size: 14.5px; fill: #454A44; }
-      .b { font-size: 12px; fill: #9AA097; }
-      .ev { font-size: 13px; font-weight: 700; fill: #23281F; }
-      .evs { font-size: 12px; fill: #62675E; }
-      .stat { font-size: 32px; font-weight: 700; fill: #23281F; }
-      .unit { font-size: 14px; fill: #62675E; }
-      .chip { font-size: 11.5px; font-weight: 700; fill: #FFFFFF; letter-spacing: 2px; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F6F5EF"/>
-    </linearGradient>
-    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2B8A85"/><stop offset="1" stop-color="#6FC2BC"/>
-    </linearGradient>
-    <linearGradient id="axis" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#E2A93B"/><stop offset="1" stop-color="#C0574F"/>
-    </linearGradient>
-    <linearGradient id="gRose" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#C0574F"/><stop offset="1" stop-color="#D98A82"/>
-    </linearGradient>
-    <linearGradient id="gGrape" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#6A5A9E"/><stop offset="1" stop-color="#9A8CCB"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1120" cy="100" r="130" fill="#2B8A85" opacity="0.06"/>
-  <circle cx="90" cy="636" r="120" fill="#E2A93B" opacity="0.07"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#axis)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">四件大模型输出验证专利在 2024 至 2026 年相继授权，验证环节进入调用流水线</text>
 
-  <text class="k" x="64" y="84">AI 智创简报 · 2026-09-19 · 输出验证专利</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#23281F">出厂都得先试听</text>
-  <text x="64" y="158" font-size="15" fill="#62675E">两年四件授权专利：AI 的回答出门前先过质检阀</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">四件已授权专利：授权先后序位与验证位置</text>
 
-  <!-- metronome + vinyl motif -->
-  <g>
-    <path d="M 1052 62 l 44 106 h -88 z" fill="#F0EEE3" stroke="#2B8A85" stroke-width="3.5"/>
-    <line x1="1052" y1="74" x2="1082" y2="150" stroke="#C0574F" stroke-width="4" stroke-linecap="round"/>
-    <rect x="1062" y="112" width="18" height="12" rx="3" fill="#E2A93B" transform="rotate(33 1071 118)"/>
-    <rect x="1022" y="168" width="60" height="14" rx="5" fill="#2B8A85"/>
-    <circle cx="1128" cy="140" r="36" fill="#23281F"/>
-    <circle cx="1128" cy="140" r="26" fill="none" stroke="#4A5148" stroke-width="1.5"/>
-    <circle cx="1128" cy="140" r="16" fill="url(#gTeal)"/>
-    <circle cx="1128" cy="140" r="4" fill="#F6F5EF"/>
-    <circle cx="1006" cy="196" r="5" fill="#6A5A9E"/>
+  <!-- gridlines (integer order majors, 0.5pt) -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="220" y1="126" x2="220" y2="356"/>
+    <line x1="440" y1="126" x2="440" y2="356"/>
+    <line x1="660" y1="126" x2="660" y2="356"/>
+    <line x1="880" y1="126" x2="880" y2="356"/>
   </g>
 
-  <!-- timeline: 2024-05-10=160 · 11-19=437 · 2026-06-02=783 · 07-07=1050 -->
-  <g>
-    <rect x="140" y="238" width="930" height="42" rx="10" fill="#2B8A85" opacity="0.07"/>
-    <rect x="140" y="306" width="930" height="42" rx="10" fill="#E2A93B" opacity="0.08"/>
-    <rect x="140" y="374" width="930" height="42" rx="10" fill="#6A5A9E" opacity="0.07"/>
-    <rect x="140" y="442" width="930" height="42" rx="10" fill="#C0574F" opacity="0.07"/>
+  <!-- items: x = 220 + 220*(order-1) -->
+  <!-- Citibank sandbox 2024-05-10 -->
+  <circle cx="220" cy="168" r="6" fill="#0072B2"/>
+  <text x="220" y="150" font-size="12" fill="#1A1B1E" text-anchor="middle">2024-05-10 授权</text>
+  <text x="220" y="192" font-size="12" fill="#555" text-anchor="middle">Citibank US12111747B2</text>
+  <text x="220" y="208" font-size="12" fill="#555" text-anchor="middle">检测代码进隔离虚拟机试跑，</text>
+  <text x="220" y="224" font-size="12" fill="#555" text-anchor="middle">输出先过沙箱再上岗</text>
+
+  <!-- Citibank gate 2024-11-19 -->
+  <circle cx="440" cy="226" r="6" fill="#0072B2"/>
+  <text x="440" y="208" font-size="12" fill="#1A1B1E" text-anchor="middle">2024-11-19 授权</text>
+  <text x="440" y="250" font-size="12" fill="#555" text-anchor="middle">Citibank US12147513B2</text>
+  <text x="440" y="266" font-size="12" fill="#555" text-anchor="middle">先评估提示词适不适合交给该模型，</text>
+  <text x="440" y="282" font-size="12" fill="#555" text-anchor="middle">相当于给请求设准入闸</text>
+
+  <!-- Honeywell 2026-06-02 -->
+  <circle cx="660" cy="254" r="6" fill="#0072B2"/>
+  <text x="660" y="236" font-size="12" fill="#1A1B1E" text-anchor="middle">2026-06-02 授权</text>
+  <text x="660" y="278" font-size="12" fill="#555" text-anchor="middle">Honeywell US12645691B2</text>
+  <text x="660" y="294" font-size="12" fill="#555" text-anchor="middle">输入输出主题集合比对，</text>
+  <text x="660" y="310" font-size="12" fill="#555" text-anchor="middle">无标注给输出打可信分</text>
+
+  <!-- WitnessAI 2026-07-07 -->
+  <circle cx="880" cy="282" r="6" fill="#0072B2"/>
+  <text x="880" y="264" font-size="12" fill="#1A1B1E" text-anchor="middle">2026-07-07 授权</text>
+  <text x="880" y="306" font-size="12" fill="#555" text-anchor="middle">WitnessAI US12675579B2</text>
+  <text x="880" y="322" font-size="12" fill="#555" text-anchor="middle">API 侧护栏，按管理策略</text>
+  <text x="880" y="338" font-size="12" fill="#555" text-anchor="middle">动态挂输入输出过滤器</text>
+
+  <!-- order axis -->
+  <line x1="220" y1="370" x2="880" y2="370" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="220" y1="370" x2="220" y2="374"/>
+    <line x1="440" y1="370" x2="440" y2="374"/>
+    <line x1="660" y1="370" x2="660" y2="374"/>
+    <line x1="880" y1="370" x2="880" y2="374"/>
   </g>
-  <line x1="160" y1="365" x2="1050" y2="365" stroke="url(#axis)" stroke-width="4" stroke-linecap="round"/>
-  <text class="b" x="160" y="508">2024-05</text>
-  <text class="b" x="1050" y="508" text-anchor="end">2026-07</text>
-  <circle cx="160" cy="365" r="9" fill="url(#gTeal)"/>
-  <circle cx="437" cy="365" r="9" fill="url(#gTeal)"/>
-  <circle cx="783" cy="365" r="9" fill="url(#gGrape)"/>
-  <circle cx="1050" cy="365" r="9" fill="url(#gRose)"/>
-  <circle cx="176" cy="222" r="6" fill="url(#gTeal)"/><text class="b" x="188" y="227">四件均为已授权 · 愿意付维持费</text>
-
-  <text class="ev" x="184" y="256">Citibank · 沙箱试跑</text>
-  <text class="evs" x="184" y="274">检测代码进隔离虚拟机，过沙箱再上岗</text>
-  <rect x="1004" y="248" width="56" height="22" rx="11" fill="#2B8A85"/>
-  <text class="chip" x="1032" y="263" text-anchor="middle">试 跑</text>
-
-  <text class="ev" x="460" y="324" text-anchor="end">Citibank · 提示词准入闸</text>
-  <text class="evs" x="460" y="342" text-anchor="end">先评估适不适合交给这个模型</text>
-  <rect x="476" y="316" width="56" height="22" rx="11" fill="#E2A93B"/>
-  <text class="chip" x="504" y="331" text-anchor="middle">准 入</text>
-
-  <text class="ev" x="806" y="392">Honeywell · 无监督一致性</text>
-  <text class="evs" x="806" y="410">输入输出主题比对，不打人工标注</text>
-  <rect x="1004" y="384" width="56" height="22" rx="11" fill="#6A5A9E"/>
-  <text class="chip" x="1032" y="399" text-anchor="middle">比 对</text>
-
-  <text class="ev" x="1036" y="460" text-anchor="end">WitnessAI · API 护栏</text>
-  <text class="evs" x="1036" y="478" text-anchor="end">按管理策略动态挂输入输出过滤器</text>
-  <rect x="938" y="452" width="56" height="22" rx="11" fill="#C0574F"/>
-  <text class="chip" x="966" y="467" text-anchor="middle">护 栏</text>
-
-  <!-- opportunity cards -->
-  <g>
-    <rect x="64" y="526" width="336" height="108" rx="14" fill="#C0574F" opacity="0.08"/>
-    <rect x="64" y="526" width="336" height="6" rx="3" fill="url(#gRose)"/>
-    <text class="stat" x="88" y="580" font-size="28">3000–8000 元<tspan class="unit"> /次</tspan></text>
-    <text class="rl" x="88" y="612">交付前验收报告服务</text>
-
-    <rect x="432" y="526" width="336" height="108" rx="14" fill="#2B8A85" opacity="0.08"/>
-    <rect x="432" y="526" width="336" height="6" rx="3" fill="url(#gTeal)"/>
-    <text class="stat" x="456" y="580" font-size="28">$19–49<tspan class="unit"> /接口·月</tspan></text>
-    <text class="rl" x="456" y="612">变更即重跑的回归巡检订阅</text>
-
-    <rect x="800" y="526" width="336" height="108" rx="14" fill="#6A5A9E" opacity="0.08"/>
-    <rect x="800" y="526" width="336" height="6" rx="3" fill="url(#gGrape)"/>
-    <text class="stat" x="824" y="580" font-size="28">3.27 万<tspan class="unit"> 星合计</tspan></text>
-    <text class="rl" x="824" y="612">promptfoo + Guardrails 社区</text>
+  <g font-size="12" fill="#555" text-anchor="middle">
+    <text x="220" y="394">第 1 件</text>
+    <text x="440" y="394">第 2 件</text>
+    <text x="660" y="394">第 3 件</text>
+    <text x="880" y="394">第 4 件</text>
   </g>
+  <text x="550" y="420" font-size="14" fill="#1A1B1E" text-anchor="middle">授权序位（第 n 件授权，按正文顺序）</text>
 
-  <text class="b" x="64" y="662">专利号与日期见正文 · 开源商品覆盖跑测试集，专利圈的是无标注打分与准入判定 · Micropaper</text>
+  <!-- side note -->
+  <text x="960" y="168" font-size="12" fill="#555">四件均为已授权专利</text>
+  <text x="960" y="186" font-size="12" fill="#555">（非仅公开申请）：愿意付</text>
+  <text x="960" y="204" font-size="12" fill="#555">维持费，说明内部真在用，</text>
+  <text x="960" y="222" font-size="12" fill="#555">信号比一般申请更硬。</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="60" y="480" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="480" font-size="15" fill="#1A1B1E">开源验证工具 GitHub star 数（2026-09-19 GitHub API 实测）</text>
+
+  <!-- gridlines (horizontal majors only, 0.5pt) -->
+  <!-- gridlines (horizontal majors only, 0.5pt) -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="260" y1="515" x2="936" y2="515"/>
+    <line x1="260" y1="569" x2="936" y2="569"/>
+  </g>
+  <!-- bars: x = 260 + v/20 -->
+  <text x="250" y="529" font-size="12.5" fill="#1A1B1E" text-anchor="end">promptfoo</text>
+  <rect x="260" y="515" width="610.6" height="18" fill="#999999"/>
+  <line x1="870.6" y1="512" x2="870.6" y2="536" stroke="#999999" stroke-width="0.75"/>
+  <text x="882" y="529" font-size="12" fill="#555">25,270 星</text>
+
+  <text x="250" y="583" font-size="12.5" fill="#1A1B1E" text-anchor="end">Guardrails AI</text>
+  <rect x="260" y="569" width="179.4" height="18" fill="#999999"/>
+  <line x1="439.4" y1="566" x2="439.4" y2="590" stroke="#999999" stroke-width="0.75"/>
+  <text x="450" y="583" font-size="12" fill="#555">7,434 星</text>
+
+  <!-- value axis -->
+  <line x1="260" y1="602" x2="936" y2="602" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="260" y1="602" x2="260" y2="606"/>
+    <line x1="870.6" y1="602" x2="870.6" y2="606"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="260" y="626">0</text>
+    <text x="870.6" y="626">25,270</text>
+  </g>
+  <text x="598" y="652" font-size="14" fill="#1A1B1E" text-anchor="middle">GitHub star 数（个）</text>
+
+  <!-- panel b note -->
+  <text x="344" y="490" font-size="12" fill="#555">开源已把「跑测试集」与「输出解析护栏」做成商品；四件专利主张的是无标注打分与提示词准入判定。</text>
+
+  <!-- footnote -->
+  <text x="60" y="452" font-size="11" fill="#767676">数据：Free Patents Online 四件专利详情页（公开号见上图与正文）· 面板 a 为授权公告日期按序位排列 · 面板 b star 数为 2026-09-19 GitHub API 实测</text>
 </svg>

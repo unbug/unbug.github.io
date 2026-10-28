@@ -1,135 +1,125 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8F95A0; }
-      .rl { font-size: 15px; fill: #474E5C; }
-      .val { font-size: 18px; font-weight: 700; fill: #1A1B1E; }
-      .b { font-size: 12px; fill: #A3A8B2; }
-      .chip { font-size: 12.5px; font-weight: 600; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F1F5F8"/>
-    </linearGradient>
-    <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#E8590C"/><stop offset="1" stop-color="#F59F5A"/>
-    </linearGradient>
-    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#0CA678"/><stop offset="1" stop-color="#5DD3B0"/>
-    </linearGradient>
-    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#3B7DBF"/><stop offset="1" stop-color="#7FAEDC"/>
-    </linearGradient>
-    <linearGradient id="gCrim" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#C0392B"/><stop offset="1" stop-color="#E0705F"/>
-    </linearGradient>
-    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#B9892F"/><stop offset="1" stop-color="#DCB65F"/>
-    </linearGradient>
-    <linearGradient id="gViolet" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7048A8"/><stop offset="1" stop-color="#A585D0"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1108" cy="108" r="145" fill="#0CA678" opacity="0.07"/>
-  <circle cx="76" cy="618" r="110" fill="#E8590C" opacity="0.06"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gCrim)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">大模型路由与缓存主题 2026 年至少公开 6 件美国申请，全部指向 API 中间层</text>
 
-  <text class="k" x="64" y="84">AI 智创简报 · 2026-08-20 · 美国专利公开</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">雪道堵在中间层</text>
-  <text x="64" y="158" font-size="15" fill="#5A616E">大模型路由与语义缓存专利密集公开，全落在 API 中间层这条缆车线上</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">已给公开日期的 5 件申请：公开日期时间轴</text>
 
-  <!-- ski lift motif: pylons + cable + gondolas -->
-  <g>
-    <path d="M 940 176 L 1150 88" fill="none" stroke="#8F95A0" stroke-width="2.5"/>
-    <g stroke="#8F95A0" stroke-width="3">
-      <line x1="968" y1="166" x2="968" y2="196"/>
-      <line x1="1052" y1="132" x2="1052" y2="162"/>
-      <line x1="1132" y1="96" x2="1132" y2="126"/>
-    </g>
-    <g stroke="#8F95A0" stroke-width="1.8">
-      <line x1="996" y1="154" x2="996" y2="168"/>
-      <line x1="1078" y1="120" x2="1078" y2="134"/>
-    </g>
-    <rect x="982" y="168" width="28" height="20" rx="4" fill="url(#gTeal)"/>
-    <rect x="1064" y="134" width="28" height="20" rx="4" fill="url(#gOrange)"/>
-    <path d="M 1120 118 q 8 -14 16 0 q -8 8 -16 0" fill="#FFFFFF" stroke="#3B7DBF" stroke-width="1.5"/>
+  <!-- gridlines (month majors, 0.5pt) -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="200" y1="126" x2="200" y2="352"/>
+    <line x1="378.3" y1="126" x2="378.3" y2="352"/>
+    <line x1="550.8" y1="126" x2="550.8" y2="352"/>
+    <line x1="729.2" y1="126" x2="729.2" y2="352"/>
+    <line x1="901.7" y1="126" x2="901.7" y2="352"/>
+    <line x1="1080" y1="126" x2="1080" y2="352"/>
   </g>
 
-  <!-- cable car queue funnel: full price -> cache/route/guard -->
-  <g>
-    <text class="rl" x="64" y="212">请求雪道：每次都付全价 → 中间层三道闸</text>
-    <path d="M 92 240 L 92 430 L 660 376 L 660 294 Z" fill="#3B7DBF" opacity="0.08"/>
-    <path d="M 92 240 L 92 430" stroke="#3B7DBF" stroke-width="3" stroke-linecap="round"/>
-    <text class="b" x="84" y="230" text-anchor="end">80% 重复提问</text>
-    <text class="b" x="84" y="446" text-anchor="end">全价调用</text>
+  <!-- hollow = published application -->
+  <!-- Palo Alto 2026-03-05 -->
+  <circle cx="223" cy="156" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="2"/>
+  <text x="223" y="140" font-size="12" fill="#1A1B1E" text-anchor="middle">2026-03-05</text>
+  <text x="223" y="180" font-size="12" fill="#555" text-anchor="middle">Palo Alto Networks</text>
+  <text x="223" y="196" font-size="12" fill="#555" text-anchor="middle">US20260064670</text>
+  <text x="223" y="212" font-size="12" fill="#555" text-anchor="middle">自然语言查询路由</text>
 
-    <rect x="252" y="248" width="330" height="46" fill="#0CA678" opacity="0.09"/>
-    <text class="rl" x="268" y="277">语义缓存 · 命中不再付费</text>
-    <text x="556" y="277" text-anchor="end" font-size="13" fill="#0CA678" font-weight="700">GPTCache</text>
+  <!-- BOOMI 2026-04-30 -->
+  <circle cx="545.1" cy="210" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="2"/>
+  <text x="545.1" y="194" font-size="12" fill="#1A1B1E" text-anchor="middle">2026-04-30</text>
+  <text x="545.1" y="234" font-size="12" fill="#555" text-anchor="middle">BOOMI US20260119922</text>
+  <text x="545.1" y="250" font-size="12" fill="#555" text-anchor="middle">预测调用成本，超预算自动拦截</text>
 
-    <rect x="252" y="306" width="330" height="46" fill="#E8590C" opacity="0.09"/>
-    <text class="rl" x="268" y="335">路由 · 贵模型只接难题</text>
-    <text x="556" y="335" text-anchor="end" font-size="13" fill="#C25100" font-weight="700">LiteLLM</text>
+  <!-- Infobip 2026-05-14 -->
+  <circle cx="625.6" cy="156" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="2"/>
+  <text x="625.6" y="140" font-size="12" fill="#1A1B1E" text-anchor="middle">2026-05-14</text>
+  <text x="625.6" y="180" font-size="12" fill="#555" text-anchor="middle">Infobip US20260134002</text>
+  <text x="625.6" y="196" font-size="12" fill="#555" text-anchor="middle">先分类，再按成本/质量/吞吐选供应商</text>
 
-    <rect x="252" y="364" width="330" height="46" fill="#C0392B" opacity="0.09"/>
-    <text class="rl" x="268" y="393">成本护栏 · 超预算拦截</text>
-    <text x="556" y="393" text-anchor="end" font-size="13" fill="#C0392B" font-weight="700">BOOMI 专利位</text>
+  <!-- NVIDIA 2026-07-02 -->
+  <circle cx="907.5" cy="210" r="6" fill="#D55E00"/>
+  <text x="907.5" y="194" font-size="12" fill="#1A1B1E" text-anchor="middle">2026-07-02</text>
+  <text x="907.5" y="234" font-size="12" fill="#555" text-anchor="middle">NVIDIA US20260187482</text>
+  <text x="907.5" y="250" font-size="12" fill="#555" text-anchor="middle">评分数据训练语言模型路由器</text>
 
-    <path d="M 92 335 C 160 335 190 271 252 271 M 92 335 L 252 329 M 92 335 C 160 335 190 387 252 387" fill="none" stroke="#8F95A0" stroke-width="2"/>
+  <!-- IBM 2026-07-09 -->
+  <circle cx="947.7" cy="290" r="6" fill="#D55E00"/>
+  <text x="947.7" y="274" font-size="12" fill="#1A1B1E" text-anchor="middle">2026-07-09</text>
+  <text x="947.7" y="314" font-size="12" fill="#555" text-anchor="middle">IBM US20260195537</text>
+  <text x="947.7" y="330" font-size="12" fill="#555" text-anchor="middle">预测下一个提示词，预热边缘缓存</text>
 
-    <text class="serif" x="642" y="312" font-size="26" font-weight="700" fill="#C0392B">账单 ×3</text>
-    <text class="b" x="642" y="334">客服小店 API 账单月翻三倍</text>
-    <text class="serif" x="642" y="374" font-size="22" font-weight="700" fill="#0CA678">降 30% 才收费</text>
-    <text class="b" x="642" y="396">垂直代理的卖点口径</text>
+  <!-- value axis -->
+  <line x1="200" y1="352" x2="1080" y2="352" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="200" y1="352" x2="200" y2="356"/>
+    <line x1="378.3" y1="352" x2="378.3" y2="356"/>
+    <line x1="550.8" y1="352" x2="550.8" y2="356"/>
+    <line x1="729.2" y1="352" x2="729.2" y2="356"/>
+    <line x1="901.7" y1="352" x2="901.7" y2="356"/>
+    <line x1="1080" y1="352" x2="1080" y2="356"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="200" y="376">3 月</text>
+    <text x="378.3" y="376">4 月</text>
+    <text x="550.8" y="376">5 月</text>
+    <text x="729.2" y="376">6 月</text>
+    <text x="901.7" y="376">7 月</text>
+    <text x="1080" y="376">8 月</text>
+  </g>
+  <text x="640" y="402" font-size="14" fill="#1A1B1E" text-anchor="middle">公开日期（2026 年，月内按日定位）</text>
+
+  <!-- legend -->
+  <g font-size="12" fill="#555">
+    <circle cx="210" cy="427" r="5" fill="#FFFFFF" stroke="#0072B2" stroke-width="2"/>
+    <text x="222" y="431">申请公开（审查中），不等于已授权</text>
+    <circle cx="440" cy="427" r="5" fill="#D55E00"/>
+    <text x="452" y="431">近 90 天内公开（正文口径：NVIDIA 与 IBM 的 2 件）· 第 6 件 BOOMI US20260119921 正文注明与 US20260119922 同日公开</text>
   </g>
 
-  <!-- patent tickets -->
-  <g>
-    <rect x="760" y="200" width="376" height="248" fill="#B9892F" opacity="0.08"/>
-    <text class="rl" x="778" y="228">近 90 天公开 · 至少 6 件申请</text>
+  <!-- ============ panel b ============ -->
+  <text x="60" y="492" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="492" font-size="15" fill="#1A1B1E">正文自估口径：代理服务的成本与定价（元）</text>
 
-    <g>
-      <path d="M 778 244 h 156 v 22 a 7 7 0 0 0 0 14 v 22 h -156 v -22 a 7 7 0 0 0 0 -14 z" fill="#FFFFFF" stroke="#B9892F" stroke-width="1.6"/>
-      <circle cx="778" cy="275" r="4.5" fill="#F1F5F8" stroke="#B9892F" stroke-width="1.4"/>
-      <text x="792" y="266" font-size="13" font-weight="700" fill="#8A6620">NVIDIA · 07-02</text>
-      <text x="792" y="286" font-size="12" fill="#5A616E">评分数据训练路由器</text>
-    </g>
-    <g>
-      <path d="M 962 244 h 156 v 22 a 7 7 0 0 0 0 14 v 22 h -156 v -22 a 7 7 0 0 0 0 -14 z" fill="#FFFFFF" stroke="#B9892F" stroke-width="1.6"/>
-      <circle cx="962" cy="275" r="4.5" fill="#F1F5F8" stroke="#B9892F" stroke-width="1.4"/>
-      <text x="976" y="266" font-size="13" font-weight="700" fill="#8A6620">IBM · 07-09</text>
-      <text x="976" y="286" font-size="12" fill="#5A616E">预测提示预热缓存</text>
-    </g>
-    <g>
-      <path d="M 778 336 h 156 v 22 a 7 7 0 0 0 0 14 v 22 h -156 v -22 a 7 7 0 0 0 0 -14 z" fill="#FFFFFF" stroke="#B9892F" stroke-width="1.6"/>
-      <circle cx="778" cy="367" r="4.5" fill="#F1F5F8" stroke="#B9892F" stroke-width="1.4"/>
-      <text x="792" y="358" font-size="13" font-weight="700" fill="#8A6620">BOOMI · 04-30</text>
-      <text x="792" y="378" font-size="12" fill="#5A616E">超预算先拦截</text>
-    </g>
-    <g>
-      <path d="M 962 336 h 156 v 22 a 7 7 0 0 0 0 14 v 22 h -156 v -22 a 7 7 0 0 0 0 -14 z" fill="#FFFFFF" stroke="#B9892F" stroke-width="1.6"/>
-      <circle cx="962" cy="367" r="4.5" fill="#F1F5F8" stroke="#B9892F" stroke-width="1.4"/>
-      <text x="976" y="358" font-size="13" font-weight="700" fill="#8A6620">Infobip · 05-14</text>
-      <text x="976" y="378" font-size="12" fill="#5A616E">赌博机选供应商</text>
-    </g>
+  <!-- gridlines (horizontal majors only) -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="260" y1="523" x2="880" y2="523"/>
+    <line x1="260" y1="549" x2="880" y2="549"/>
+    <line x1="260" y1="575" x2="880" y2="575"/>
   </g>
+  <!-- scale: x = 260 + 0.11*v (元), axis 0-5000 at x=810.. extend 880 = 5636 -->
+  <text x="250" y="521" font-size="12.5" fill="#1A1B1E" text-anchor="end">小 VPS / 月</text>
+  <rect x="265.5" y="507" width="5.5" height="18" fill="#999999"/>
+  <text x="282" y="521" font-size="12" fill="#555">50–100 元 / 月</text>
 
-  <!-- bottom chips: solo dev lift pass -->
-  <line x1="64" y1="492" x2="1136" y2="492" stroke="#E2E6EA"/>
-  <g>
-    <rect x="64" y="512" width="132" height="28" rx="14" fill="url(#gTeal)" opacity="0.2"/>
-    <text x="130" y="531" text-anchor="middle" class="chip" fill="#0B7285">小 VPS 50-100 元/月</text>
-    <rect x="212" y="512" width="104" height="28" rx="14" fill="url(#gBlue)" opacity="0.18"/>
-    <text x="264" y="531" text-anchor="middle" class="chip" fill="#2F5F93">MVP 4 周可演示</text>
-    <rect x="332" y="512" width="146" height="28" rx="14" fill="url(#gOrange)" opacity="0.18"/>
-    <text x="405" y="531" text-anchor="middle" class="chip" fill="#C25100">成本审计 2000-5000 元</text>
-    <rect x="494" y="512" width="130" height="28" rx="14" fill="url(#gViolet)" opacity="0.16"/>
-    <text x="559" y="531" text-anchor="middle" class="chip" fill="#5F3D92">托管订阅 99-299 元/月</text>
-    <rect x="640" y="512" width="96" height="28" rx="14" fill="url(#gCrim)" opacity="0.16"/>
-    <text x="688" y="531" text-anchor="middle" class="chip" fill="#A93226">全栈开源</text>
+  <text x="250" y="547" font-size="12.5" fill="#1A1B1E" text-anchor="end">托管订阅 / 月</text>
+  <rect x="270.9" y="533" width="22" height="18" fill="#0072B2"/>
+  <text x="304" y="547" font-size="12" fill="#555">99–299 元 / 月（卖点：接入后账单降 30%）</text>
+
+  <text x="250" y="573" font-size="12.5" fill="#1A1B1E" text-anchor="end">成本审计 / 次</text>
+  <rect x="480" y="559" width="330" height="18" fill="#0072B2"/>
+  <line x1="480" y1="556" x2="480" y2="580" stroke="#0072B2" stroke-width="0.75"/>
+  <line x1="810" y1="556" x2="810" y2="580" stroke="#0072B2" stroke-width="0.75"/>
+  <text x="492" y="573" font-size="12" fill="#FFFFFF">2000-5000 元 / 次</text>
+
+  <!-- value axis -->
+  <line x1="260" y1="588" x2="880" y2="588" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="260" y1="588" x2="260" y2="592"/>
+    <line x1="480" y1="588" x2="480" y2="592"/>
+    <line x1="810" y1="588" x2="810" y2="592"/>
   </g>
-  <text class="serif" x="64" y="590" font-size="18" fill="#1A1B1E">大厂在专利里抢缆车，钱在「帮人省票价」这一头。</text>
-  <text class="b" x="1136" y="590" text-anchor="end">6 件均为申请公开、非授权 · 降价幅度为文中商业假设 · Micropaper</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="260" y="612">0</text>
+    <text x="480" y="612">2000</text>
+    <text x="810" y="612">5000</text>
+  </g>
+  <text x="570" y="638" font-size="14" fill="#1A1B1E" text-anchor="middle">成本与定价（元）</text>
+
+  <!-- panel b side note -->
+  <text x="60" y="460" font-size="12" fill="#555">交付门槛（正文自估）：技术栈 LiteLLM + GPTCache + 小 VPS，全开源，MVP 4 周可演示；定价为正文自估口径，非市场实测。</text>
+
+  <!-- footnote -->
+  <text x="60" y="664" font-size="11" fill="#767676">数据：Free Patents Online / Google Patents 公开号与日期见正文 · 6 件均为申请公开、非授权 · 面板 b 商业数字为正文自估口径</text>
 </svg>

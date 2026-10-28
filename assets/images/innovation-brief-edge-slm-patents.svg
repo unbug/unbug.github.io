@@ -1,103 +1,101 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #988C74; }
-      .b { font-size: 12px; fill: #8C97A3; }
-      .ev { font-size: 13px; font-weight: 700; fill: #1E2430; }
-      .evs { font-size: 12px; fill: #5C6672; }
-      .stat { font-size: 30px; font-weight: 700; fill: #1E2430; }
-      .unit { font-size: 14px; fill: #5C6672; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F4EC"/>
-    </linearGradient>
-    <linearGradient id="axis" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2E5C8A"/><stop offset="1" stop-color="#B08D3E"/>
-    </linearGradient>
-    <linearGradient id="watch" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#B08D3E"/><stop offset="1" stop-color="#E0C178"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1105" cy="612" r="130" fill="#2E5C8A" opacity="0.06"/>
-  <circle cx="80" cy="120" r="110" fill="#A63A50" opacity="0.05"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="#A63A50"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">三件端侧小模型专利在 2026-05-14 至 2026-08-20 先后公开，全部主张数据不出设备</text>
 
-  <text class="k" x="64" y="84">AI 智创简报 · 专利情报速读 · 端侧小模型</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">大厂圈地端侧管道件</text>
-  <text x="64" y="158" font-size="15.5" fill="#5C6672">2026 年 5 至 8 月，三件「AI 不出设备」专利接连公开</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">三件已公开申请（审查中）：公开日期时间轴</text>
 
-  <!-- pocket watch motif: local time, no cloud -->
-  <g>
-    <rect x="1042" y="98" width="36" height="12" rx="4" fill="#8C97A3"/>
-    <circle cx="1060" cy="100" r="7" fill="none" stroke="#8C97A3" stroke-width="4"/>
-    <circle cx="1060" cy="162" r="58" fill="url(#watch)"/>
-    <circle cx="1060" cy="162" r="46" fill="#FFFDF6"/>
-    <line x1="1060" y1="162" x2="1060" y2="128" stroke="#2E5C8A" stroke-width="4" stroke-linecap="round"/>
-    <line x1="1060" y1="162" x2="1084" y2="172" stroke="#A63A50" stroke-width="3" stroke-linecap="round"/>
-    <circle cx="1060" cy="162" r="4" fill="#1E2430"/>
-    <line x1="1060" y1="120" x2="1060" y2="127" stroke="#7A5C28" stroke-width="3"/>
-    <line x1="1060" y1="197" x2="1060" y2="204" stroke="#7A5C28" stroke-width="3"/>
-    <line x1="1018" y1="162" x2="1025" y2="162" stroke="#7A5C28" stroke-width="3"/>
-    <line x1="1095" y1="162" x2="1102" y2="162" stroke="#7A5C28" stroke-width="3"/>
+  <!-- gridlines (month majors, 0.5pt) -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="200" y1="126" x2="200" y2="330"/>
+    <line x1="360" y1="126" x2="360" y2="330"/>
+    <line x1="520" y1="126" x2="520" y2="330"/>
+    <line x1="680" y1="126" x2="680" y2="330"/>
   </g>
 
-  <!-- patent timeline: 05-14=150, 06-18=447, 08-20=830 (per day ~2.02) -->
-  <line x1="150" y1="318" x2="830" y2="318" stroke="url(#axis)" stroke-width="4" stroke-linecap="round"/>
-  <text class="b" x="150" y="344">05-14</text>
-  <text class="b" x="830" y="344" text-anchor="end">08-20</text>
+  <!-- hollow circles = published application (pending) -->
+  <!-- Mercedes-Benz 2026-05-14: x = 200 + 160*(13/31) = 267.1 -->
+  <circle cx="267.1" cy="168" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="2"/>
+  <text x="267.1" y="150" font-size="12" fill="#1A1B1E" text-anchor="middle">2026-05-14</text>
+  <text x="267.1" y="192" font-size="12" fill="#555" text-anchor="middle">Mercedes-Benz</text>
+  <text x="267.1" y="208" font-size="12" fill="#555" text-anchor="middle">US20260133859A1</text>
+  <text x="267.1" y="224" font-size="12" fill="#555" text-anchor="middle">SLM 剪枝，车机跑通函数调用</text>
 
-  <g>
-    <circle cx="150" cy="318" r="10" fill="#FFFFFF" stroke="#2E5C8A" stroke-width="3.5"/>
-    <line x1="150" y1="306" x2="150" y2="278" stroke="#8C97A3"/>
-    <text class="ev" x="150" y="256">05-14 · 奔驰</text>
-    <text class="evs" x="150" y="276">车机 SLM 剪枝跑通函数调用</text>
+  <!-- Microsoft 2026-06-18: x = 360 + 160*(17/30) = 450.7 -->
+  <circle cx="450.7" cy="226" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="2"/>
+  <text x="450.7" y="208" font-size="12" fill="#1A1B1E" text-anchor="middle">2026-06-18</text>
+  <text x="450.7" y="250" font-size="12" fill="#555" text-anchor="middle">Microsoft</text>
+  <text x="450.7" y="266" font-size="12" fill="#555" text-anchor="middle">US20260169789A1</text>
+  <text x="450.7" y="282" font-size="12" fill="#555" text-anchor="middle">边云分层，逐级升级处理</text>
 
-    <circle cx="447" cy="318" r="10" fill="#FFFFFF" stroke="#2E5C8A" stroke-width="3.5"/>
-    <line x1="447" y1="330" x2="447" y2="358" stroke="#8C97A3"/>
-    <text class="ev" x="447" y="384">06-18 · 微软</text>
-    <text class="evs" x="447" y="404">边云分层，逐级升级处理</text>
+  <!-- Blockchain Labs 2026-08-20: x = 680 + 160*(19/31) = 778.1 -->
+  <circle cx="778.1" cy="254" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="2"/>
+  <text x="778.1" y="236" font-size="12" fill="#1A1B1E" text-anchor="middle">2026-08-20</text>
+  <text x="778.1" y="278" font-size="12" fill="#555" text-anchor="middle">Blockchain Labs</text>
+  <text x="778.1" y="294" font-size="12" fill="#555" text-anchor="middle">US20260246629A1</text>
+  <text x="778.1" y="310" font-size="12" fill="#555" text-anchor="middle">设备私钥签名的个人数据集</text>
 
-    <circle cx="830" cy="318" r="10" fill="#FFFFFF" stroke="#B08D3E" stroke-width="3.5"/>
-    <line x1="830" y1="306" x2="830" y2="278" stroke="#8C97A3"/>
-    <text class="ev" x="830" y="256" text-anchor="end">08-20 · Blockchain Labs</text>
-    <text class="evs" x="830" y="276" text-anchor="end">设备私钥签名的个人数据集</text>
+  <!-- value axis -->
+  <line x1="200" y1="330" x2="800" y2="330" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="200" y1="330" x2="200" y2="334"/>
+    <line x1="360" y1="330" x2="360" y2="334"/>
+    <line x1="520" y1="330" x2="520" y2="334"/>
+    <line x1="680" y1="330" x2="680" y2="334"/>
   </g>
-  <g>
-    <circle cx="150" cy="432" r="6" fill="#FFFFFF" stroke="#2E5C8A" stroke-width="2.5"/><text class="b" x="162" y="437">公开申请（审查中）</text>
-    <rect x="330" y="410" width="400" height="44" rx="9" fill="#2E5C8A" opacity="0.08"/>
-    <rect x="330" y="410" width="5" height="44" rx="2.5" fill="#2E5C8A"/>
-    <text x="352" y="430" font-size="13" font-weight="700" fill="#2E5C8A">竞争点从模型挪到架构件</text>
-    <text x="352" y="447" font-size="12.5" fill="#5C6672">数据溯源签名 · 模型分层 · 领域剪枝</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="200" y="354">5 月</text>
+    <text x="360" y="354">6 月</text>
+    <text x="520" y="354">7 月</text>
+    <text x="680" y="354">8 月</text>
   </g>
+  <text x="500" y="382" font-size="14" fill="#1A1B1E" text-anchor="middle">公开日期（2026 年，月内按日定位）</text>
 
-  <!-- opportunity cards -->
-  <g>
-    <rect x="64" y="484" width="352" height="140" rx="16" fill="#A63A50" opacity="0.08"/>
-    <rect x="64" y="484" width="352" height="6" rx="3" fill="#A63A50"/>
-    <rect x="92" y="514" width="44" height="28" rx="6" fill="#A63A50"/>
-    <circle cx="114" cy="528" r="7" fill="#FFFDF6"/>
-    <text class="stat" x="92" y="572">12.7 万</text>
-    <text class="unit" x="92" y="594">llama.cpp star</text>
-    <text class="evs" x="92" y="606">开源运行时已商品化</text>
+  <!-- legend / note -->
+  <text x="60" y="415" font-size="12" fill="#555">空心 = 已公开申请（审查中），不是授权专利。共同点：本地数据溯源签名 · 跨设备模型分层 · 领域剪枝</text>
 
-    <rect x="440" y="484" width="352" height="140" rx="16" fill="#B08D3E" opacity="0.1"/>
-    <rect x="440" y="484" width="352" height="6" rx="3" fill="#B08D3E"/>
-    <path d="M 468 536 l 10 -22 l 14 12 z" fill="#B08D3E"/>
-    <circle cx="486" cy="518" r="4" fill="#E0C178"/>
-    <text class="stat" x="500" y="580">无公开基准</text>
-    <text class="evs" x="468" y="606">哪个量化版在你的硬件够快？</text>
+  <!-- side evidence note -->
+  <text x="860" y="180" font-size="12" fill="#555">开源运行时已商品化：</text>
+  <text x="860" y="200" font-size="12" fill="#555">llama.cpp star 数超 12.7 万</text>
+  <text x="860" y="218" font-size="12" fill="#555">（正文引用值）</text>
+  <text x="860" y="248" font-size="12" fill="#555">空档：哪个量化版在谁的</text>
+  <text x="860" y="266" font-size="12" fill="#555">硬件上够快，没有可验证的</text>
+  <text x="860" y="284" font-size="12" fill="#555">公开产品</text>
 
-    <rect x="816" y="484" width="320" height="140" rx="16" fill="#2E5C8A" opacity="0.08"/>
-    <rect x="816" y="484" width="320" height="6" rx="3" fill="#2E5C8A"/>
-    <circle cx="846" cy="528" r="15" fill="#2E5C8A"/>
-    <path d="M 846 519 v 9 l 6 4" stroke="#FFFDF6" stroke-width="3" fill="none" stroke-linecap="round"/>
-    <text class="stat" x="874" y="572">2-4 周</text>
-    <text class="unit" x="874" y="594">1 人 MVP</text>
-    <text class="evs" x="844" y="606">评测 CLI＋边云降级路由模板</text>
+  <!-- ============ panel b ============ -->
+  <text x="60" y="472" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="472" font-size="15" fill="#1A1B1E">正文自估口径：两类交付的定价区间（元）</text>
+
+  <!-- single scale line: 0 at x=210, 30000 at x=930 (0.024 元/px) -->
+  <line x1="210" y1="598" x2="930" y2="598" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="210" y1="598" x2="210" y2="602"/>
+    <line x1="930" y1="598" x2="930" y2="602"/>
   </g>
+  <g font-size="12.5" fill="#1A1B1E">
+    <text x="210" y="622" text-anchor="middle">0</text>
+    <text x="930" y="622" text-anchor="middle">30000</text>
+  </g>
+  <text x="570" y="648" font-size="14" fill="#1A1B1E" text-anchor="middle">定价区间（元）</text>
 
-  <text class="b" x="64" y="660">三件均为已公开申请（审查中），非授权专利 · 定价与机会判断见正文 · Micropaper</text>
+  <!-- 选型报告 ¥99-499: x 212.4 - 222 (too narrow: marker + label) -->
+  <text x="200" y="521" font-size="12.5" fill="#1A1B1E" text-anchor="end">选型报告 / 份</text>
+  <rect x="212.4" y="507" width="9.6" height="18" fill="#0072B2"/>
+  <text x="232" y="521" font-size="12" fill="#555">¥99–499 / 份（或年订阅）</text>
+
+  <!-- 部署交付包 ¥5000-30000: x 330 - 930 -->
+  <text x="200" y="569" font-size="12.5" fill="#1A1B1E" text-anchor="end">部署交付包 / 单</text>
+  <rect x="330" y="555" width="600" height="18" fill="#0072B2"/>
+  <line x1="330" y1="552" x2="330" y2="576" stroke="#0072B2" stroke-width="0.75"/>
+  <line x1="930" y1="552" x2="930" y2="576" stroke="#0072B2" stroke-width="0.75"/>
+  <text x="340" y="569" font-size="12" fill="#FFFFFF">¥5000–30000 / 单</text>
+
+  <!-- panel b side note -->
+  <text x="60" y="440" font-size="12" fill="#555">交付门槛（正文自估）：1 人 2–4 周出 MVP；定价为正文自估口径，非市场实测。</text>
+
+  <!-- footnote -->
+  <text x="620" y="440" font-size="11" fill="#767676">数据：Free Patents Online 三件已公开申请 · star 数为正文引用值</text>
 </svg>
