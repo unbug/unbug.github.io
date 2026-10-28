@@ -1,56 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350">
-  <rect width="800" height="350" fill="#1a1a2e" rx="8"/>
-  
-  <!-- Title -->
-  <text x="400" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="bold" fill="#ffffff">Agentic Coding Architecture: Plan-Execute-Verify Loop</text>
-  
-  <!-- Central LLM hub -->
-  <circle cx="400" cy="175" r="55" fill="#e74c3c" opacity="0.9"/>
-  <text x="400" y="168" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#ffffff">LLM</text>
-  <text x="400" y="185" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#ffffff">Decision Hub</text>
-  
-  <!-- Three components around the hub -->
-  <!-- Planner (top) -->
-  <rect x="320" y="40" width="160" height="55" rx="8" fill="#2c3e50" stroke="#3498db" stroke-width="2"/>
-  <text x="400" y="62" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Planner</text>
-  <text x="400" y="80" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#a0b4c8">Task decomposition</text>
-  <text x="400" y="92" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#a0b4c8">Sub-task planning</text>
-  
-  <!-- Executor (right) -->
-  <rect x="560" y="147" width="180" height="55" rx="8" fill="#2c3e50" stroke="#e67e22" stroke-width="2"/>
-  <text x="650" y="169" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Executor</text>
-  <text x="650" y="187" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#a0b4c8">File system + Terminal</text>
-  
-  <!-- Verifier (left) -->
-  <rect x="60" y="147" width="180" height="55" rx="8" fill="#2c3e50" stroke="#2ecc71" stroke-width="2"/>
-  <text x="150" y="169" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Verifier</text>
-  <text x="150" y="187" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#a0b4c8">Tests + Code quality</text>
-  
-  <!-- Arrows forming loop -->
-  <!-- Planner to Executor -->
-  <line x1="460" y1="75" x2="555" y2="130" stroke="#e67e22" stroke-width="2" marker-end="url(#arrowOrange)"/>
-  <!-- Executor to Verifier -->
-  <line x1="560" y1="175" x2="245" y2="175" stroke="#2ecc71" stroke-width="2"/>
-  <!-- Verifier back to Planner (if fail) -->
-  <path d="M 150,205 Q 150,300 400,280 Q 650,300 650,205" fill="none" stroke="#e74c3c" stroke-width="2" stroke-dasharray="5,3"/>
-  
-  <!-- Feedback arrow -->
-  <text x="150" y="225" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#e74c3c">Error feedback</text>
-  
-  <!-- Success path -->
-  <line x1="400" y1="230" x2="400" y2="310" stroke="#2ecc71" stroke-width="2"/>
-  <rect x="340" y="310" width="120" height="30" rx="6" fill="#2c3e50" stroke="#2ecc71" stroke-width="1"/>
-  <text x="400" y="330" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#ffffff">Git Commit</text>
-  
-  <!-- Key insight box -->
-  <rect x="250" y="60" width="300" height="40" rx="6" fill="#0f3460"/>
-  <text x="400" y="78" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#ffffff">LLM is NOT the code generator</text>
-  <text x="400" y="93" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#a0b4c8">LLM coordinates tools via verification feedback loop</text>
-  
-  <!-- Arrow markers -->
-  <defs>
-    <marker id="arrowOrange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#e67e22"/>
-    </marker>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">Agentic Coding 将人机交互步骤从 4 步压缩为 1 步，修正环节由 Agent 在验证回路内自动完成</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">传统流程：4 个步骤全部由开发者手动执行</text>
+
+  <g stroke="#555555" stroke-width="1.5" fill="none">
+    <line x1="292" y1="180" x2="336" y2="180"/>
+    <line x1="527" y1="180" x2="571" y2="180"/>
+    <line x1="762" y1="180" x2="806" y2="180"/>
+  </g>
+  <g fill="#FFFFFF" stroke="#999999" stroke-width="1.5">
+    <rect x="60" y="160" width="232" height="40"/>
+    <rect x="336" y="160" width="191" height="40"/>
+    <rect x="571" y="160" width="191" height="40"/>
+    <rect x="806" y="160" width="191" height="40"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="176" y="185">阅读代码</text>
+    <text x="431.5" y="185">编辑文件</text>
+    <text x="666.5" y="185">运行测试</text>
+    <text x="901.5" y="185">修复缺陷</text>
+  </g>
+  <text x="60" y="234" font-size="12" fill="#555">步骤 1 – 4：手动复制、粘贴、修改、测试；AI 仅输出文本建议，不参与文件写入与命令执行</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="60" y="290" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="290" font-size="15" fill="#1A1B1E">Agentic 流程：1 步指令，验证未通过时回到规划环节</text>
+
+  <g stroke="#555555" stroke-width="1.5" fill="none">
+    <line x1="315" y1="390" x2="359" y2="390"/>
+    <line x1="585" y1="390" x2="629" y2="390"/>
+    <line x1="855" y1="390" x2="899" y2="390"/>
+  </g>
+  <g fill="#FFFFFF" stroke="#999999" stroke-width="1.5">
+    <rect x="60" y="370" width="255" height="40"/>
+    <rect x="359" y="370" width="226" height="40"/>
+    <rect x="629" y="370" width="226" height="40"/>
+  </g>
+  <rect x="899" y="370" width="241" height="40" fill="none" stroke="#0072B2" stroke-width="1.5"/>
+  <g font-size="12.5" fill="#1A1B1E">
+    <text x="187.5" y="395" text-anchor="middle">自然语言指令（人工）</text>
+    <text x="472" y="395" text-anchor="middle">规划</text>
+    <text x="742" y="395" text-anchor="middle">执行</text>
+  </g>
+  <text x="1019.5" y="395" font-size="12.5" fill="#0072B2" text-anchor="middle">验证</text>
+
+  <!-- feedback arc (verification failure back to planning) -->
+  <path d="M 1019.5 410 L 1019.5 464 L 472 464 L 472 422" fill="none" stroke="#0072B2" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <polygon points="472,414 466,426 478,426" fill="#0072B2"/>
+  <text x="745.75" y="484" font-size="12" fill="#555" text-anchor="middle">测试未通过：Agent 读取错误日志、定位问题代码、修改后重试</text>
+
+  <!-- ============ notes ============ -->
+  <text x="60" y="536" font-size="12.5" fill="#1A1B1E">三组件闭环（对应 b 面板后三步）</text>
+  <g font-size="12" fill="#555">
+    <text x="60" y="562">规划器：将高层任务分解为可执行子步骤</text>
+    <text x="420" y="562">执行引擎：调用文件系统、终端、Git 等工具</text>
+    <text x="800" y="562">验证器：运行测试、检查代码质量、判定是否满足需求</text>
+  </g>
+
+  <!-- footnote -->
+  <text x="60" y="640" font-size="11" fill="#767676">据正文整理（典型 Agentic Coding 架构与流程步骤，非实测数据）· 中等复杂度 Issue 通常需 3–8 次迭代通过全部测试，建议迭代上限 15 次</text>
 </svg>

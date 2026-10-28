@@ -1,79 +1,61 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8E97A6; }
-      .rl { font-size: 15px; fill: #3F4A5A; }
-      .val { font-size: 24px; font-weight: 700; }
-      .b { font-size: 12px; fill: #98A1AE; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F4EC"/>
-    </linearGradient>
-    <linearGradient id="gGear" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#B08D3E"/><stop offset="1" stop-color="#D9BC7A"/>
-    </linearGradient>
-    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2E5C8A"/><stop offset="1" stop-color="#5E8CB8"/>
-    </linearGradient>
-    <linearGradient id="gWine" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#A63A50"/><stop offset="1" stop-color="#D06A7A"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1085" cy="115" r="150" fill="#2E5C8A" opacity="0.06"/>
-  <circle cx="90" cy="615" r="120" fill="#B08D3E" opacity="0.07"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gWine)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">行为相关性随能力提升而上升；共享推理正确时市场级风险下降，共享错误信息环境下同一相关性变成无法分散的风险</text>
 
-  <text class="k" x="64" y="84">一分钟读论文 NO.181 · ARXIV:2609.04373</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1E2430">越强的表，走得越齐</text>
-  <text x="64" y="158" font-size="15" fill="#5A6070">能力与行为相关性同向上升，系统风险看它跟谁一起走</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">能力分级与行为相关性的方向关系（摘要第一发现，论文未报告具体数值）</text>
 
-  <!-- watch illustration: three synced dials -->
-  <g>
-    <circle cx="990" cy="112" r="34" fill="none" stroke="url(#gGear)" stroke-width="7"/>
-    <line x1="990" y1="112" x2="990" y2="88" stroke="#A63A50" stroke-width="3.5" stroke-linecap="round"/>
-    <circle cx="990" cy="112" r="4" fill="#2E5C8A"/>
-    <circle cx="1063" cy="100" r="44" fill="none" stroke="url(#gGear)" stroke-width="8"/>
-    <line x1="1063" y1="100" x2="1063" y2="70" stroke="#A63A50" stroke-width="4" stroke-linecap="round"/>
-    <circle cx="1063" cy="100" r="5" fill="#2E5C8A"/>
-    <circle cx="1140" cy="120" r="30" fill="none" stroke="url(#gGear)" stroke-width="6"/>
-    <line x1="1140" y1="120" x2="1140" y2="101" stroke="#A63A50" stroke-width="3" stroke-linecap="round"/>
-    <circle cx="1140" cy="120" r="4" fill="#2E5C8A"/>
-    <text x="1063" y="172" text-anchor="middle" font-size="12" fill="#8C97A3">三只表，同一秒</text>
+  <!-- axes -->
+  <line x1="300" y1="360" x2="1140" y2="360" stroke="#1A1B1E" stroke-width="0.75"/>
+  <line x1="300" y1="150" x2="300" y2="360" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="300" y1="360" x2="300" y2="364"/>
+    <line x1="1140" y1="360" x2="1140" y2="364"/>
+    <line x1="300" y1="360" x2="296" y2="360"/>
+    <line x1="300" y1="150" x2="296" y2="150"/>
   </g>
-
-  <!-- risk floor -->
-  <g>
-    <line x1="120" y1="560" x2="1136" y2="560" stroke="#E5E1D4" stroke-width="1"/>
-    <line x1="120" y1="486" x2="1136" y2="486" stroke="#A63A50" stroke-width="1.5" stroke-dasharray="7 6"/>
-    <text x="1136" y="478" text-anchor="end" font-size="12.5" fill="#A63A50">非可分散风险下限：相关性越高，摊不掉的底线越高</text>
-
-    <!-- correct-env lane band -->
-    <rect x="120" y="204" width="1016" height="130" fill="#2E5C8A" opacity="0.07"/>
-    <text x="136" y="226" font-size="12.5" letter-spacing="2" fill="#5C7CA0">共享推理正确时</text>
-    <path d="M 330 316 C 560 300 760 288 930 258" fill="none" stroke="url(#gBlue)" stroke-width="5" stroke-linecap="round"/>
-    <path d="M 930 258 l -18 2 l 12 -14 z" fill="#2E5C8A"/>
-    <circle cx="330" cy="316" r="7" fill="#2E5C8A"/>
-    <text x="954" y="264" class="val" fill="#2E5C8A">市场级风险降</text>
-    <text x="954" y="284" class="b">多样性红利正常兑现</text>
-
-    <!-- misinformation lane band -->
-    <rect x="120" y="360" width="1016" height="130" fill="#A63A50" opacity="0.07"/>
-    <text x="136" y="382" font-size="12.5" letter-spacing="2" fill="#A63A50">共享错误信息环境时</text>
-    <path d="M 330 406 C 560 414 760 434 930 464" fill="none" stroke="url(#gWine)" stroke-width="5" stroke-linecap="round"/>
-    <path d="M 930 464 l -12 -14 l -2 18 z" fill="#A63A50"/>
-    <circle cx="330" cy="406" r="7" fill="#A63A50"/>
-    <text x="954" y="452" class="val" fill="#A63A50">相关性变负债</text>
-    <text x="954" y="472" class="b">一起自信地错，无人纠偏</text>
-
-    <!-- shared capability axis -->
-    <line x1="330" y1="212" x2="330" y2="560" stroke="#B08D3E" stroke-width="2.5" stroke-dasharray="2 6"/>
-    <circle cx="330" cy="345" r="9" fill="url(#gGear)"/>
-    <text x="330" y="332" text-anchor="middle" font-size="14" font-weight="700" fill="#8A6A28">能力提升</text>
-    <text x="330" y="588" text-anchor="middle" font-size="12.5" fill="#8C97A3">行为相关性随能力上升 · 前沿模型步调趋同</text>
+  <g font-size="12.5" fill="#1A1B1E">
+    <text x="300" y="384" text-anchor="start">低</text>
+    <text x="1140" y="384" text-anchor="end">高</text>
+    <text x="288" y="364" text-anchor="end">低</text>
+    <text x="288" y="154" text-anchor="end">高</text>
   </g>
+  <text x="720" y="410" font-size="14" fill="#1A1B1E" text-anchor="middle">模型能力分级（论文自定义口径）</text>
+  <text x="76" y="255" font-size="14" fill="#1A1B1E">行为相关性（论文自定义口径）</text>
 
-  <text x="64" y="636" font-size="12.5" fill="#A29C88">Agent-based 金融市场模拟摘要自述，能力分级与相关性口径为论文自定义；未经同行评审，不能外推为真实市场结论。</text>
+  <!-- trend arrow -->
+  <line x1="380" y1="330" x2="1040" y2="180" stroke="#0072B2" stroke-width="1.5"/>
+  <polygon points="1040,180 1019.3,183.1 1028.1,200.1" fill="#0072B2"/>
+
+  <text x="430" y="222" font-size="12" fill="#555">前沿 LLM 行为显著相关，相关性同向上升；序数方向示意，非实测曲线</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="60" y="452" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="452" font-size="15" fill="#1A1B1E">同一相关性在两种信息环境下产生相反的市场级风险方向</text>
+
+  <!-- row 1: accurate shared reasoning -->
+  <rect x="300" y="474" width="170" height="26" fill="none" stroke="#555555" stroke-width="1.5"/>
+  <text x="385" y="491" font-size="12.5" fill="#1A1B1E" text-anchor="middle">共享推理正确</text>
+  <line x1="482" y1="487" x2="538" y2="487" stroke="#999999" stroke-width="1.5"/>
+  <polygon points="538,487 526,481 526,493" fill="#999999"/>
+  <rect x="550" y="474" width="200" height="26" fill="none" stroke="#0072B2" stroke-width="1.5"/>
+  <text x="650" y="491" font-size="12.5" fill="#1A1B1E" text-anchor="middle">扩大参与，风险下降</text>
+  <text x="770" y="491" font-size="12" fill="#555">多样性红利正常兑现（摘要第二发现）</text>
+
+  <!-- row 2: common misinformation -->
+  <rect x="300" y="524" width="170" height="26" fill="none" stroke="#555555" stroke-width="1.5"/>
+  <text x="385" y="541" font-size="12.5" fill="#1A1B1E" text-anchor="middle">共享错误信息环境</text>
+  <line x1="482" y1="537" x2="538" y2="537" stroke="#999999" stroke-width="1.5"/>
+  <polygon points="538,537 526,531 526,543" fill="#999999"/>
+  <rect x="550" y="524" width="240" height="26" fill="none" stroke="#D55E00" stroke-width="1.5"/>
+  <text x="670" y="541" font-size="12.5" fill="#1A1B1E" text-anchor="middle">同一相关性立刻反转</text>
+  <text x="810" y="541" font-size="12" fill="#555">负债：一起自信地错，风险无法分散（摘要第三发现）</text>
+
+  <text x="60" y="592" font-size="12" fill="#555">agent-based 金融市场模拟：按通用能力分级的 LLM 充当交易员；相关性越高，摊不掉的底线越高（非可分散风险下限）。</text>
+
+  <!-- footnote -->
+  <text x="60" y="656" font-size="11" fill="#767676">数据：arXiv:2609.04373（agent-based 金融市场模拟，摘要口径）· 摘要未报告具体数值，本图为方向关系示意 · 相关性与能力分级口径均为论文自定义 · 预印本未经同行评审</text>
 </svg>

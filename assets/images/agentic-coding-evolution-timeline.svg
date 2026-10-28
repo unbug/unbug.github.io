@@ -1,47 +1,112 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 160">
-  <defs>
-    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#2ecc71"/>
-      <stop offset="100%" style="stop-color:#e74c3c"/>
-    </linearGradient>
-  </defs>
-  
-  <rect width="800" height="160" fill="#1a1a2e" rx="8"/>
-  
-  <!-- Timeline -->
-  <line x1="50" y1="80" x2="750" y2="80" stroke="#4a90d9" stroke-width="3"/>
-  
-  <!-- Stage boxes -->
-  <rect x="60" y="20" width="140" height="120" rx="8" fill="#2c3e50" stroke="#2ecc71" stroke-width="2"/>
-  <text x="130" y="45" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#ffffff">Stage 1</text>
-  <text x="130" y="65" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#2ecc71">Code Completion</text>
-  <text x="130" y="85" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#a0b4c8">GitHub Copilot, Tabnine</text>
-  <text x="130" y="105" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#a0b4c8">Passive token prediction</text>
-  
-  <rect x="220" y="20" width="140" height="120" rx="8" fill="#2c3e50" stroke="#3498db" stroke-width="2"/>
-  <text x="290" y="45" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#ffffff">Stage 2</text>
-  <text x="290" y="65" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#3498db">Code Chat</text>
-  <text x="290" y="85" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#a0b4c8">ChatGPT, Copilot Chat</text>
-  <text x="290" y="105" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#a0b4c8">Text-level suggestions</text>
-  
-  <rect x="380" y="20" width="140" height="120" rx="8" fill="#2c3e50" stroke="#e67e22" stroke-width="2"/>
-  <text x="450" y="45" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#ffffff">Stage 3</text>
-  <text x="450" y="65" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#e67e22">Code Agent</text>
-  <text x="450" y="85" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#a0b4c8">Aider, OpenHands</text>
-  <text x="450" y="105" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#a0b4c8">File system + terminal</text>
-  
-  <rect x="540" y="20" width="140" height="120" rx="8" fill="#2c3e50" stroke="#e74c3c" stroke-width="2"/>
-  <text x="610" y="45" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#ffffff">Stage 4</text>
-  <text x="610" y="65" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#e74c3c">Autonomous Engineer</text>
-  <text x="610" y="85" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#a0b4c8">Claude Code, Cursor</text>
-  <text x="610" y="105" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#a0b4c8">Full plan-execute-verify</text>
-  
-  <!-- Arrow labels -->
-  <text x="210" y="75" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#4a90d9">+</text>
-  <text x="370" y="75" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#4a90d9">+</text>
-  <text x="530" y="75" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#e74c3c">++</text>
-  
-  <!-- Key metric -->
-  <rect x="280" y="130" width="240" height="22" rx="4" fill="#0f3460"/>
-  <text x="400" y="145" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#ffffff">SWE-bench Verified: &lt;6% → 70%+ (8x growth)</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">SWE-bench Verified 成绩从 2023 年不足 6% 升至 2025–2026 年的 50%–70%+，增幅超过 8 倍</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">开源框架成绩区间（2023 对 2025–2026）</text>
+
+  <!-- horizontal gridlines (value axis majors) -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="140" y1="70" x2="1140" y2="70"/>
+    <line x1="140" y1="370" x2="1140" y2="370"/>
+    <line x1="140" y1="295" x2="1140" y2="295"/>
+    <line x1="140" y1="220" x2="1140" y2="220"/>
+    <line x1="140" y1="145" x2="1140" y2="145"/>
+  </g>
+
+  <!-- 2023 open-source: <6%, band from 0 to 6 -->
+  <rect x="163.3" y="295" width="93.4" height="75" fill="#999999" opacity="0.35"/>
+  <line x1="256.7" y1="295" x2="256.7" y2="370" stroke="#999999" stroke-width="2" stroke-dasharray="3 2"/>
+  <text x="210" y="283" font-size="12" fill="#555" text-anchor="middle">正文：不足 6%</text>
+  <text x="210" y="402" font-size="12.5" fill="#1A1B1E" text-anchor="middle">2023</text>
+  <text x="210" y="420" font-size="12" fill="#555" text-anchor="middle">正文口径</text>
+
+  <!-- 2025-2026: 50%-70%+ interval band -->
+  <rect x="816.7" y="145" width="300" height="150" fill="#0072B2" opacity="0.2"/>
+  <line x1="816.7" y1="295" x2="1116.7" y2="295" stroke="#0072B2" stroke-width="1.5"/>
+  <line x1="816.7" y1="145" x2="1116.7" y2="145" stroke="#0072B2" stroke-width="2" stroke-dasharray="3 2"/>
+  <line x1="816.7" y1="289" x2="816.7" y2="301" stroke="#0072B2" stroke-width="0.75"/>
+  <line x1="1116.7" y1="289" x2="1116.7" y2="301" stroke="#0072B2" stroke-width="0.75"/>
+  <text x="966.7" y="122" font-size="12" fill="#555" text-anchor="middle">50%–70%+</text>
+  <text x="966.7" y="318" font-size="12.5" fill="#1A1B1E" text-anchor="middle">2025–2026</text>
+  <text x="966.7" y="336" font-size="12" fill="#555" text-anchor="middle">正文口径</text>
+
+  <!-- growth annotation -->
+  <path d="M 256.7 260 C 400 118 600 92 806 116" fill="none" stroke="#1A1B1E" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <polygon points="808,115 798.5,120.5 798.5,109.5" fill="#1A1B1E" transform="rotate(-24 806 116)"/>
+  <text x="520" y="92" font-size="12" fill="#555" text-anchor="middle">不到三年，增幅超过 8 倍</text>
+
+  <!-- value axis -->
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="136" y1="70" x2="140" y2="70"/>
+    <line x1="136" y1="370" x2="140" y2="370"/>
+    <line x1="136" y1="295" x2="140" y2="295"/>
+    <line x1="136" y1="220" x2="140" y2="220"/>
+    <line x1="136" y1="145" x2="140" y2="145"/>
+    <line x1="140" y1="130" x2="140" y2="385"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="130" y="374">0</text>
+    <text x="130" y="299">20</text>
+    <text x="130" y="224">40</text>
+    <text x="130" y="149">60</text>
+    <text x="130" y="74">80</text>
+  </g>
+  <text x="88" y="257.5" font-size="14" fill="#1A1B1E" text-anchor="middle" transform="rotate(-90 88 257.5)">SWE-bench Verified 成绩（%）</text>
+
+  <!-- time axis -->
+  <line x1="140" y1="385" x2="1140" y2="385" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="140" y1="385" x2="140" y2="389"/>
+    <line x1="473.3" y1="385" x2="473.3" y2="389"/>
+    <line x1="806.7" y1="385" x2="806.7" y2="389"/>
+    <line x1="1140" y1="385" x2="1140" y2="389"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E">
+    <text x="140" y="406" text-anchor="middle">2023</text>
+    <text x="473.3" y="406" text-anchor="middle">2024</text>
+    <text x="806.7" y="406" text-anchor="middle">2025</text>
+    <text x="1140" y="406" text-anchor="end">2026</text>
+  </g>
+  <text x="640" y="430" font-size="14" fill="#1A1B1E" text-anchor="middle">年份</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="60" y="478" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="478" font-size="15" fill="#1A1B1E">能力形态四阶段（正文定性划分，时间轴同 a）</text>
+  <line x1="140" y1="530" x2="1140" y2="530" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="140" y1="530" x2="140" y2="534"/>
+    <line x1="473.3" y1="530" x2="473.3" y2="534"/>
+    <line x1="806.7" y1="530" x2="806.7" y2="534"/>
+    <line x1="1140" y1="530" x2="1140" y2="534"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E">
+    <text x="140" y="551" text-anchor="middle">2023</text>
+    <text x="473.3" y="551" text-anchor="middle">2024</text>
+    <text x="806.7" y="551" text-anchor="middle">2025</text>
+    <text x="1140" y="551" text-anchor="end">2026</text>
+  </g>
+  <g font-size="12" fill="#555" text-anchor="middle">
+    <text x="247" y="512">阶段 1 Code Completion</text>
+    <text x="247" y="570">被动预测下一个 token</text>
+    <text x="505" y="512">阶段 2 Code Chat</text>
+    <text x="505" y="570">文本层面建议</text>
+    <text x="733" y="512">阶段 3 Code Agent</text>
+    <text x="733" y="570">文件系统与终端执行</text>
+    <text x="1000" y="512">阶段 4 Autonomous Engineer</text>
+    <text x="1000" y="570">完整规划-执行-验证</text>
+  </g>
+  <g fill="#999999">
+    <circle cx="247" cy="530" r="4"/>
+    <circle cx="505" cy="530" r="4"/>
+    <circle cx="733" cy="530" r="4"/>
+  </g>
+  <circle cx="1000" cy="530" r="4" fill="#0072B2"/>
+
+  <!-- footnote -->
+  <text x="60" y="632" font-size="11" fill="#767676">数据：正文自述口径（SWE-bench 基准 arXiv:2310.06770；正文未注明区间划分年份）· 灰色虚线端点为「不足 6%」的上界、蓝色虚线端点为「70%+」的下界</text>
+  <text x="60" y="650" font-size="11" fill="#767676">b 面板为正文定性阶段划分，时间位置仅为大致对应，非实测日期</text>
 </svg>

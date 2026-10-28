@@ -1,50 +1,100 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
-  <rect width="800" height="450" fill="#1a1a2e" rx="8"/>
-  
-  <!-- Title -->
-  <text x="400" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="bold" fill="#ffffff">Agentic Coding Frameworks Comparison</text>
-  
-  <!-- Claude Code -->
-  <rect x="30" y="50" width="340" height="170" rx="8" fill="#2c3e50" stroke="#9b59b6" stroke-width="2"/>
-  <text x="200" y="75" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Claude Code (Anthropic)</text>
-  
-  <text x="50" y="98" font-family="monospace" font-size="10" fill="#a0b4c8">Design:     CLI-first</text>
-  <text x="50" y="116" font-family="monospace" font-size="10" fill="#a0b4c8">SWE-bench:  ~50-60%+</text>
-  <text x="50" y="134" font-family="monospace" font-size="10" fill="#a0b4c8">Context:    Full repo in session</text>
-  <text x="50" y="152" font-family="monospace" font-size="10" fill="#a0b4c8">Best for:   End-to-end tasks</text>
-  <text x="50" y="170" font-family="monospace" font-size="10" fill="#a0b4c8">Limitation: Closed source, API cost</text>
-  
-  <!-- Cursor Composer -->
-  <rect x="30" y="235" width="340" height="170" rx="8" fill="#2c3e50" stroke="#f39c12" stroke-width="2"/>
-  <text x="200" y="260" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Cursor Composer</text>
-  
-  <text x="50" y="283" font-family="monospace" font-size="10" fill="#a0b4c8">Design:     IDE-native (VS Code fork)</text>
-  <text x="50" y="301" font-family="monospace" font-size="10" fill="#a0b4c8">SWE-bench:  ~30-40%</text>
-  <text x="50" y="319" font-family="monospace" font-size="10" fill="#a0b4c8">Feature:    Multi-file editing</text>
-  <text x="50" y="337" font-family="monospace" font-size="10" fill="#a0b4c8">Best for:   Daily dev, visual review</text>
-  <text x="50" y="355" font-family="monospace" font-size="10" fill="#a0b4c8">Limitation: Subscription cost</text>
-  
-  <!-- OpenHands -->
-  <rect x="430" y="50" width="340" height="170" rx="8" fill="#2c3e50" stroke="#2ecc71" stroke-width="2"/>
-  <text x="600" y="75" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#ffffff">OpenHands</text>
-  
-  <text x="450" y="98" font-family="monospace" font-size="10" fill="#a0b4c8">Design:     Open source, Docker sandbox</text>
-  <text x="450" y="116" font-family="monospace" font-size="10" fill="#a0b4c8">SWE-bench:  ~40-50%+</text>
-  <text x="450" y="134" font-family="monospace" font-size="10" fill="#a0b4c8">Stars:      50,000+ GitHub</text>
-  <text x="450" y="152" font-family="monospace" font-size="10" fill="#a0b4c8">Best for:   Full control, no vendor lock</text>
-  <text x="450" y="170" font-family="monospace" font-size="10" fill="#a0b4c8">Limitation: Complex setup</text>
-  
-  <!-- Aider -->
-  <rect x="430" y="235" width="340" height="170" rx="8" fill="#2c3e50" stroke="#3498db" stroke-width="2"/>
-  <text x="600" y="260" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Aider</text>
-  
-  <text x="450" y="283" font-family="monospace" font-size="10" fill="#a0b4c8">Design:     Minimalist CLI tool</text>
-  <text x="450" y="301" font-family="monospace" font-size="10" fill="#a0b4c8">SWE-bench:  ~25-35%</text>
-  <text x="450" y="319" font-family="monospace" font-size="10" fill="#a0b4c8">Feature:    Git diff context</text>
-  <text x="450" y="337" font-family="monospace" font-size="10" fill="#a0b4c8">Best for:   Quick prototyping</text>
-  <text x="450" y="355" font-family="monospace" font-size="10" fill="#a0b4c8">Limitation: Context window limits</text>
-  
-  <!-- Summary bar -->
-  <rect x="100" y="420" width="600" height="22" rx="4" fill="#0f3460"/>
-  <text x="400" y="435" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#ffffff">Performance: Claude Code &gt; OpenHands &gt; Cursor &gt; Aider (SWE-bench Verified)</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">SWE-bench Verified 报告区间自高至低为 Claude Code、OpenHands、Cursor、Aider</text>
+
+  <!-- shared legend -->
+  <g font-size="12" fill="#555">
+    <rect x="320" y="102" width="12" height="10" fill="#0072B2" opacity="0.2"/>
+    <line x1="320" y1="118" x2="332" y2="118" stroke="#0072B2" stroke-width="2" stroke-dasharray="3 2"/>
+    <text x="339" y="111">SWE-bench Verified 报告区间（约值）</text>
+    <circle cx="590" cy="107" r="4" fill="#999999"/>
+    <text x="601" y="111">GitHub Star（万）</text>
+  </g>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">各框架报告区间（%）</text>
+
+  <!-- gridlines: x = 320 + 8*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="320" y1="134" x2="320" y2="344"/>
+    <line x1="440" y1="134" x2="440" y2="344"/>
+    <line x1="560" y1="134" x2="560" y2="344"/>
+    <line x1="640" y1="134" x2="640" y2="344"/>
+    <line x1="720" y1="134" x2="720" y2="344"/>
+    <line x1="800" y1="134" x2="800" y2="344"/>
+    <line x1="880" y1="134" x2="880" y2="344"/>
+  </g>
+
+  <!-- Claude Code 50-60+ -->
+  <text x="308" y="169" font-size="12.5" fill="#1A1B1E" text-anchor="end">Claude Code</text>
+  <rect x="720" y="156" width="80" height="16" fill="#0072B2" opacity="0.2"/>
+  <line x1="720" y1="153" x2="720" y2="175" stroke="#0072B2" stroke-width="0.75"/>
+  <line x1="800" y1="153" x2="800" y2="175" stroke="#0072B2" stroke-width="2" stroke-dasharray="3 2"/>
+  <text x="808" y="169" font-size="12" fill="#555">约 50%–60%+</text>
+
+  <!-- OpenHands 40-50+ -->
+  <text x="308" y="222" font-size="12.5" fill="#1A1B1E" text-anchor="end">OpenHands</text>
+  <rect x="640" y="209" width="80" height="16" fill="#0072B2" opacity="0.2"/>
+  <line x1="640" y1="206" x2="640" y2="228" stroke="#0072B2" stroke-width="0.75"/>
+  <line x1="720" y1="206" x2="720" y2="228" stroke="#0072B2" stroke-width="2" stroke-dasharray="3 2"/>
+  <text x="728" y="222" font-size="12" fill="#555">约 40%–50%+</text>
+
+  <!-- Cursor 30-40 -->
+  <text x="308" y="275" font-size="12.5" fill="#1A1B1E" text-anchor="end">Cursor Composer</text>
+  <rect x="560" y="262" width="80" height="16" fill="#0072B2" opacity="0.2"/>
+  <line x1="560" y1="259" x2="560" y2="281" stroke="#0072B2" stroke-width="0.75"/>
+  <line x1="640" y1="259" x2="640" y2="281" stroke="#0072B2" stroke-width="0.75"/>
+  <text x="648" y="275" font-size="12" fill="#555">约 30%–40%</text>
+
+  <!-- Aider 25-35 -->
+  <text x="308" y="328" font-size="12.5" fill="#1A1B1E" text-anchor="end">Aider</text>
+  <rect x="520" y="315" width="80" height="16" fill="#0072B2" opacity="0.2"/>
+  <line x1="520" y1="312" x2="520" y2="334" stroke="#0072B2" stroke-width="0.75"/>
+  <line x1="600" y1="312" x2="600" y2="334" stroke="#0072B2" stroke-width="0.75"/>
+  <text x="608" y="328" font-size="12" fill="#555">约 25%–35%（Claude Sonnet 后端）</text>
+
+  <!-- value axis -->
+  <line x1="320" y1="344" x2="880" y2="344" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="320" y1="344" x2="320" y2="348"/>
+    <line x1="440" y1="344" x2="440" y2="348"/>
+    <line x1="560" y1="344" x2="560" y2="348"/>
+    <line x1="640" y1="344" x2="640" y2="348"/>
+    <line x1="720" y1="344" x2="720" y2="348"/>
+    <line x1="800" y1="344" x2="800" y2="348"/>
+    <line x1="880" y1="344" x2="880" y2="348"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="320" y="364">0</text>
+    <text x="440" y="364">15</text>
+    <text x="560" y="364">30</text>
+    <text x="640" y="364">40</text>
+    <text x="720" y="364">50</text>
+    <text x="800" y="364">60</text>
+    <text x="880" y="364">70</text>
+  </g>
+  <text x="600" y="388" font-size="14" fill="#1A1B1E" text-anchor="middle">SWE-bench Verified 成绩（%）</text>
+  <text x="320" y="412" font-size="12" fill="#555">区间上界的虚线端点表示正文以「+」标注的开放上界</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="60" y="462" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="462" font-size="15" fill="#1A1B1E">正文给出的量化属性</text>
+
+  <text x="160" y="502" font-size="12.5" fill="#1A1B1E" text-anchor="end">OpenHands</text>
+  <circle cx="334.8" cy="498" r="5" fill="#999999"/>
+  <text x="348" y="502" font-size="12" fill="#555">GitHub Star 超过 50,000，社区贡献者超过 200 人（正文记载，最活跃的开源项目）</text>
+  <text x="160" y="538" font-size="12.5" fill="#1A1B1E" text-anchor="end">其余三者</text>
+  <text x="180" y="538" font-size="12" fill="#555">正文未记载可量化数值，不上图（设计取向见下方注记）</text>
+
+  <!-- design notes -->
+  <g font-size="12" fill="#555">
+    <text x="60" y="580">设计定位（正文）：Claude Code 为 CLI-first、全仓库上下文；Cursor Composer 为 IDE-native、多文件编辑；</text>
+    <text x="60" y="600">OpenHands 为开源、Docker 沙箱、多模型后端；Aider 为极简 CLI、Git diff 上下文。</text>
+  </g>
+
+  <!-- footnote -->
+  <text x="60" y="640" font-size="11" fill="#767676">数据：正文自述口径（各框架官方口径未经统一复测）· Star 数为正文记载，未实测 · 正文口径排序为 Claude Code、OpenHands、Cursor、Aider，Cursor 的 40% 上界与 OpenHands 的 40% 下界在区间端点处相接</text>
 </svg>

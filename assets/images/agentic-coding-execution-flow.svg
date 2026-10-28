@@ -1,63 +1,76 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 160">
-  <rect width="800" height="160" fill="#1a1a2e" rx="8"/>
-  
-  <!-- Title -->
-  <text x="400" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Aider Execution Flow: Natural Language → Git Commit</text>
-  
-  <!-- Before (traditional) -->
-  <rect x="30" y="50" width="280" height="90" rx="8" fill="#2c3e50"/>
-  <text x="170" y="72" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Traditional Workflow</text>
-  
-  <!-- Steps -->
-  <rect x="45" y="82" width="60" height="22" rx="4" fill="#3498db"/>
-  <text x="75" y="97" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Read code</text>
-  
-  <rect x="110" y="82" width="60" height="22" rx="4" fill="#3498db"/>
-  <text x="140" y="97" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Edit file</text>
-  
-  <rect x="175" y="82" width="60" height="22" rx="4" fill="#3498db"/>
-  <text x="205" y="97" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Run tests</text>
-  
-  <rect x="240" y="82" width="60" height="22" rx="4" fill="#3498db"/>
-  <text x="270" y="97" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Fix bugs</text>
-  
-  <!-- Arrow -->
-  <polygon points="105,93 115,93 110,100" fill="#a0b4c8"/>
-  <polygon points="170,93 180,93 175,100" fill="#a0b4c8"/>
-  <polygon points="235,93 245,93 240,100" fill="#a0b4c8"/>
-  
-  <!-- After (Agentic) -->
-  <rect x="490" y="50" width="280" height="90" rx="8" fill="#2c3e50"/>
-  <text x="630" y="72" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Agentic Workflow</text>
-  
-  <!-- Steps -->
-  <rect x="505" y="82" width="60" height="22" rx="4" fill="#e74c3c"/>
-  <text x="535" y="97" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Describe</text>
-  
-  <rect x="570" y="82" width="60" height="22" rx="4" fill="#e74c3c"/>
-  <text x="600" y="97" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Plan</text>
-  
-  <rect x="635" y="82" width="60" height="22" rx="4" fill="#e74c3c"/>
-  <text x="665" y="97" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Execute</text>
-  
-  <rect x="700" y="82" width="60" height="22" rx="4" fill="#e74c3c"/>
-  <text x="730" y="97" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#ffffff">Verify</text>
-  
-  <!-- Arrow -->
-  <polygon points="565,93 575,93 570,100" fill="#a0b4c8"/>
-  <polygon points="630,93 640,93 635,100" fill="#a0b4c8"/>
-  <polygon points="695,93 705,93 700,100" fill="#a0b4c8"/>
-  
-  <!-- Big arrow between -->
-  <line x1="320" y1="95" x2="480" y2="95" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrowRed)"/>
-  
-  <!-- Key difference -->
-  <rect x="300" y="120" width="200" height="30" rx="6" fill="#0f3460"/>
-  <text x="400" y="140" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#ffffff">Human effort: 4 steps → 1 step</text>
-  
-  <defs>
-    <marker id="arrowRed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#e74c3c"/>
-    </marker>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">Aider 从自然语言指令到 Git commit 经过五个自动环节，每次修改自动提交为独立 commit</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">执行路径：从自然语言指令到 Git commit</text>
+
+  <!-- spine -->
+  <line x1="115" y1="205" x2="1095" y2="205" stroke="#555555" stroke-width="1.5"/>
+  <!-- arrowhead at end -->
+  <polygon points="1103,205 1091,199 1091,211" fill="#555555"/>
+
+  <!-- stage markers (open = setup, filled = agent-run, emphasized = commit) -->
+  <circle cx="115" cy="205" r="5" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+  <circle cx="311" cy="205" r="5" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+  <circle cx="507" cy="205" r="5" fill="#0072B2"/>
+  <circle cx="703" cy="205" r="5" fill="#0072B2"/>
+  <circle cx="899" cy="205" r="5" fill="#0072B2"/>
+  <circle cx="1095" cy="205" r="5" fill="#FFFFFF" stroke="#0072B2" stroke-width="2"/>
+
+  <!-- above labels -->
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="115" y="178">安装 Aider</text>
+    <text x="311" y="178">配置模型后端</text>
+    <text x="507" y="178">自然语言任务描述</text>
+    <text x="703" y="178">读取项目文件</text>
+    <text x="899" y="178">应用补丁</text>
+    <text x="1095" y="178">Git commit</text>
+  </g>
+
+  <!-- below notes -->
+  <g font-size="12" fill="#555" text-anchor="middle">
+    <text x="115" y="240">pip 安装</text>
+    <text x="311" y="240">设置环境变量</text>
+    <text x="507" y="240">交互式终端输入</text>
+    <text x="703" y="240">理解上下文</text>
+    <text x="899" y="240">生成修改方案</text>
+    <text x="1095" y="240">独立提交</text>
+  </g>
+
+  <!-- legend -->
+  <g font-size="12" fill="#555">
+    <circle cx="400" cy="282" r="4" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <text x="411" y="286">人工准备</text>
+    <circle cx="510" cy="282" r="4" fill="#0072B2"/>
+    <text x="521" y="286">Agent 自动执行</text>
+    <circle cx="655" cy="282" r="4" fill="#FFFFFF" stroke="#0072B2" stroke-width="2"/>
+    <text x="666" y="286">变更落地</text>
+    <text x="780" y="286">可随时通过 git log 查看变更历史</text>
+  </g>
+
+  <!-- ============ panel b ============ -->
+  <text x="60" y="356" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="356" font-size="15" fill="#1A1B1E">起步命令序列（正文原文）</text>
+
+  <text x="60" y="398" font-size="12.5" fill="#1A1B1E">第一步</text>
+  <text x="150" y="398" font-size="12.5" fill="#555">pip install aider-chat</text>
+  <line x1="60" y1="416" x2="1140" y2="416" stroke="#D9D9D9" stroke-width="0.5"/>
+
+  <text x="60" y="444" font-size="12.5" fill="#1A1B1E">第二步</text>
+  <text x="150" y="444" font-size="12.5" fill="#555">export ANTHROPIC_API_KEY=你的密钥</text>
+  <text x="150" y="468" font-size="12.5" fill="#555">cd /path/to/your/project</text>
+  <text x="150" y="492" font-size="12.5" fill="#555">aider --model claude-sonnet-4-20250514</text>
+  <line x1="60" y1="510" x2="1140" y2="510" stroke="#D9D9D9" stroke-width="0.5"/>
+
+  <text x="60" y="538" font-size="12.5" fill="#1A1B1E">第三步</text>
+  <text x="150" y="538" font-size="12.5" fill="#555">自然语言描述任务，Agent 自动读取项目文件、理解上下文、生成修改方案并应用补丁</text>
+  <line x1="60" y1="556" x2="1140" y2="556" stroke="#D9D9D9" stroke-width="0.5"/>
+
+  <!-- footnote -->
+  <text x="60" y="632" font-size="11" fill="#767676">据正文整理（Aider 官方入门路径 aider.chat）· 空心圆为人工准备与落地环节、实心圆为 Agent 自动执行环节 ·</text>
+  <text x="60" y="650" font-size="11" fill="#767676">b 面板命令逐字取自正文代码块，密钥值以占位符表示</text>
 </svg>

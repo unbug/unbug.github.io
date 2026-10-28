@@ -1,93 +1,120 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8FA7C4; }
-      .rl { font-size: 15px; fill: #2C4A6E; }
-      .val { font-size: 22px; font-weight: 700; }
-      .b { font-size: 12px; fill: #9CABB8; }
-      .hd { font-size: 12.5px; letter-spacing: 2px; fill: #7A8CA0; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F2F8FB"/>
-    </linearGradient>
-    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#4FA3D1"/><stop offset="1" stop-color="#8FC7E5"/>
-    </linearGradient>
-    <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#E8834A"/><stop offset="1" stop-color="#F4B189"/>
-    </linearGradient>
-    <linearGradient id="gYellow" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#F2C14E"/><stop offset="1" stop-color="#F8DB93"/>
-    </linearGradient>
-    <linearGradient id="gSlate" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#6B7B8C"/><stop offset="1" stop-color="#9AA8B6"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1100" cy="110" r="150" fill="#4FA3D1" opacity="0.06"/>
-  <circle cx="80" cy="618" r="120" fill="#F2C14E" opacity="0.08"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gOrange)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">换员首局任务得分保持在基线的八九成，每单位进展沟通成本上升 16%–63%</text>
 
-  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2609.05279 · AGENT TEAM SWAP</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1C2833">分数没掉，成本爆在看不见的地方</text>
-  <text x="64" y="158" font-size="15" fill="#55677A">换员首局：得分仍在基线八九成，沟通量却暴涨</text>
-
-  <!-- weather fronts: two opposing masses -->
-  <g>
-    <rect x="64" y="196" width="470" height="130" rx="14" fill="#4FA3D1" opacity="0.08"/>
-    <circle cx="130" cy="248" r="24" fill="url(#gBlue)"/>
-    <path d="M 98 300 a 32 32 0 0 1 64 0 z" fill="url(#gBlue)"/>
-    <circle cx="204" cy="248" r="24" fill="url(#gSlate)"/>
-    <path d="M 172 300 a 32 32 0 0 1 64 0 z" fill="url(#gSlate)"/>
-    <text class="rl" x="130" y="322" text-anchor="middle" fill="#2E7BA6">留守老将</text>
-    <text class="b" x="204" y="322" text-anchor="middle">花更多力气拉回轨道</text>
-
-    <g>
-      <path d="M 300 262 l 52 0 m 0 0 l -14 -10 m 14 10 l -14 10" stroke="#E8834A" stroke-width="4" fill="none" stroke-linecap="round"/>
-      <text class="b" x="326" y="240" text-anchor="middle" fill="#C96A33">惯例冲突</text>
-    </g>
-
-    <rect x="366" y="196" width="168" height="130" rx="14" fill="#E8834A" opacity="0.09"/>
-    <circle cx="450" cy="248" r="24" fill="url(#gOrange)"/>
-    <path d="M 418 300 a 32 32 0 0 1 64 0 z" fill="url(#gOrange)"/>
-    <rect x="466" y="228" width="26" height="18" rx="4" fill="#F2C14E"/>
-    <text class="rl" x="450" y="322" text-anchor="middle" fill="#C96A33">换进的老手</text>
-    <text class="b" x="450" y="342" text-anchor="middle" fill="#C96A33">比新人还贵</text>
+  <!-- legend -->
+  <g font-size="12" fill="#555">
+    <rect x="300" y="102" width="12" height="10" fill="#999999"/>
+    <text x="317" y="111">Intact（不换员）</text>
+    <rect x="440" y="102" width="12" height="10" fill="#D55E00"/>
+    <text x="457" y="111">Swap（换员首局）</text>
   </g>
 
-  <!-- cost bars: low coupling vs high coupling -->
-  <g>
-    <rect x="64" y="380" width="640" height="52" rx="10" fill="#4FA3D1" opacity="0.07"/>
-    <text class="rl" x="84" y="412">低耦合 · 每单位进展沟通量</text>
-    <rect x="356" y="397" width="112" height="16" rx="8" fill="url(#gBlue)"/>
-    <text class="val" x="486" y="412" fill="#2E7BA6">+16%</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">任务得分：Intact 对 Swap（条件均值）</text>
 
-    <rect x="64" y="444" width="640" height="52" rx="10" fill="#E8834A" opacity="0.08"/>
-    <text class="rl" x="84" y="476">高耦合 · 每单位进展沟通量</text>
-    <rect x="356" y="461" width="286" height="16" rx="8" fill="url(#gOrange)"/>
-    <text class="val" x="660" y="476" fill="#C96A33">+63%</text>
-    <text class="b" x="84" y="522">接近翻倍处：Overcooked 协调成本 4.09 → 6.53</text>
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="300" y1="130" x2="300" y2="300"/>
+    <line x1="495" y1="130" x2="495" y2="300"/>
+    <line x1="690" y1="130" x2="690" y2="300"/>
   </g>
+  <!-- group 1: low coupling -->
+  <rect x="325" y="142" width="351.5" height="16" fill="#999999"/>
+  <text x="684" y="154" font-size="12" fill="#555" text-anchor="end">92.5</text>
+  <rect x="325" y="162" width="342" height="16" fill="#D55E00"/>
+  <text x="674" y="174" font-size="12" fill="#555" text-anchor="end">90.0</text>
+  <!-- group 2: Collab-Overcooked -->
+  <rect x="325" y="198" width="243.6" height="16" fill="#999999"/>
+  <text x="684" y="210" font-size="12" fill="#555" text-anchor="end">64.1</text>
+  <rect x="325" y="218" width="220.4" height="16" fill="#D55E00"/>
+  <text x="700" y="230" font-size="12" fill="#555">58.0</text>
+  <!-- group 3: Hanabi -->
+  <rect x="325" y="254" width="60" height="16" fill="#999999"/>
+  <text x="393" y="266" font-size="12" fill="#555">15.8</text>
+  <rect x="325" y="274" width="52.1" height="16" fill="#D55E00"/>
+  <text x="385" y="286" font-size="12" fill="#555">13.7</text>
 
-  <!-- right stats -->
-  <g>
-    <text class="serif" x="1136" y="240" text-anchor="end" font-size="28" font-weight="700" fill="#1C2833">得分仍达 placebo 的<tspan fill="#4FA3D1"> 98 / 90 / 89%</tspan></text>
-    <text class="b" x="1136" y="264" text-anchor="end">低耦合 / 高耦合 / Hanabi · 换员首局</text>
+  <text x="288" y="163" font-size="12.5" fill="#1A1B1E" text-anchor="end">低耦合任务</text>
+  <text x="288" y="219" font-size="12.5" fill="#1A1B1E" text-anchor="end">Collab-Overcooked</text>
+  <text x="288" y="275" font-size="12.5" fill="#1A1B1E" text-anchor="end">Hanabi</text>
 
-    <rect x="760" y="300" width="376" height="76" rx="12" fill="#F2C14E" opacity="0.10"/>
-    <text class="serif" x="784" y="332" font-size="19" font-weight="700" fill="#1C2833">恢复不对称</text>
-    <text x="784" y="358" font-size="14" fill="#55677A">得分第 2/5/6 局回基线，成本慢约一倍、约 10 局</text>
+  <line x1="300" y1="300" x2="690" y2="300" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="300" y1="300" x2="300" y2="304"/>
+    <line x1="397.5" y1="300" x2="397.5" y2="304"/>
+    <line x1="495" y1="300" x2="495" y2="304"/>
+    <line x1="592.5" y1="300" x2="592.5" y2="304"/>
+    <line x1="690" y1="300" x2="690" y2="304"/>
   </g>
-
-  <!-- pressure legend strip -->
-  <g>
-    <rect x="64" y="548" width="1072" height="42" rx="10" fill="#6B7B8C" opacity="0.07"/>
-    <text class="rl" x="84" y="575" font-weight="700" fill="#2C4A6E">放大器</text>
-    <text x="180" y="575" font-size="14" fill="#55677A">成团历史越长、解码温度越高，换员代价越大 —— 热更新与故障替换应把重新磨合计入成本。</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="300" y="320">0</text>
+    <text x="397.5" y="320">25</text>
+    <text x="495" y="320">50</text>
+    <text x="592.5" y="320">75</text>
+    <text x="690" y="320">100</text>
   </g>
+  <text x="495" y="344" font-size="14" fill="#1A1B1E" text-anchor="middle">任务得分（条件均值）</text>
 
-  <line x1="64" y1="606" x2="1136" y2="606" stroke="#DCE7EE"/>
-  <text class="b" x="64" y="636">每设置 8 支队伍、单一基座模型 · 协调成本为 hint、message 代理指标 · Micropaper</text>
+  <!-- ============ panel b ============ -->
+  <text x="60" y="394" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="394" font-size="15" fill="#1A1B1E">每单位进展沟通量：Intact 对 Swap（代理指标）</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="300" y1="412" x2="300" y2="570"/>
+    <line x1="408.6" y1="412" x2="408.6" y2="570"/>
+    <line x1="517.1" y1="412" x2="517.1" y2="570"/>
+    <line x1="625.7" y1="412" x2="625.7" y2="570"/>
+  </g>
+  <!-- group 1 -->
+  <rect x="325" y="422" width="173.7" height="16" fill="#999999"/>
+  <text x="507" y="434" font-size="12" fill="#555">3.20</text>
+  <rect x="325" y="442" width="209" height="16" fill="#D55E00"/>
+  <text x="542" y="454" font-size="12" fill="#555">3.85（+16%）</text>
+  <!-- group 2 -->
+  <rect x="325" y="474" width="222" height="16" fill="#999999"/>
+  <text x="555" y="486" font-size="12" fill="#555">4.09</text>
+  <rect x="325" y="494" width="354.5" height="16" fill="#D55E00"/>
+  <text x="688" y="506" font-size="12" fill="#555">6.53（+63%）</text>
+  <!-- group 3 -->
+  <rect x="325" y="526" width="33.1" height="16" fill="#999999"/>
+  <text x="366" y="538" font-size="12" fill="#555">0.61</text>
+  <rect x="325" y="546" width="56.5" height="16" fill="#D55E00"/>
+  <text x="389" y="558" font-size="12" fill="#555">1.04</text>
+
+  <text x="288" y="443" font-size="12.5" fill="#1A1B1E" text-anchor="end">低耦合任务</text>
+  <text x="288" y="495" font-size="12.5" fill="#1A1B1E" text-anchor="end">Collab-Overcooked</text>
+  <text x="288" y="547" font-size="12.5" fill="#1A1B1E" text-anchor="end">Hanabi</text>
+
+  <line x1="300" y1="570" x2="690" y2="570" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="300" y1="570" x2="300" y2="574"/>
+    <line x1="408.6" y1="570" x2="408.6" y2="574"/>
+    <line x1="517.1" y1="570" x2="517.1" y2="574"/>
+    <line x1="625.7" y1="570" x2="625.7" y2="574"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="300" y="590">0</text>
+    <text x="408.6" y="590">2</text>
+    <text x="517.1" y="590">4</text>
+    <text x="625.7" y="590">6</text>
+  </g>
+  <text x="495" y="614" font-size="14" fill="#1A1B1E" text-anchor="middle">沟通量（每单位进展）</text>
+
+  <!-- ============ panel c ============ -->
+  <text x="760" y="394" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="782" y="394" font-size="15" fill="#1A1B1E">恢复速度：得分快，成本慢</text>
+  <g font-size="12" fill="#555">
+    <text x="760" y="428">任务得分回到 placebo 基线 1% 以内</text>
+    <text x="812" y="452">低耦合：第 2 局</text>
+    <text x="812" y="472">高耦合：第 5 局</text>
+    <text x="812" y="492">Hanabi：第 6 局</text>
+    <text x="760" y="524">协调成本衰减慢约一倍</text>
+    <text x="812" y="548">约 10 局</text>
+  </g>
+  <!-- footnote -->
+  <text x="60" y="632" font-size="11" fill="#767676">数据：arXiv:2609.05279（每设置 8 支队伍、单一基座模型，Table 1 条件均值，论文自测口径）· 协调成本为代理指标（Hanabi 用 hint/point，Overcooked 用 messages/subtask）</text>
+  <text x="60" y="650" font-size="11" fill="#767676">16%–63% 为正文低耦合至高耦合区间口径 · 预印本未经同行评审</text>
 </svg>

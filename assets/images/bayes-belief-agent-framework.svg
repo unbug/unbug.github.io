@@ -1,118 +1,125 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9A9086; }
-      .rl { font-size: 15px; fill: #4E463F; }
-      .val { font-size: 18px; font-weight: 700; fill: #1A1B1E; }
-      .b { font-size: 12px; fill: #A89E92; }
-      .chip { font-size: 12.5px; font-weight: 600; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F2EC"/>
-    </linearGradient>
-    <linearGradient id="gCrimson" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#A63A50"/><stop offset="1" stop-color="#CE6B7E"/>
-    </linearGradient>
-    <linearGradient id="gAmber" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#D9822B"/><stop offset="1" stop-color="#EFB767"/>
-    </linearGradient>
-    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2A8C82"/><stop offset="1" stop-color="#67BCB2"/>
-    </linearGradient>
-    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#3E6FA8"/><stop offset="1" stop-color="#7BA0CC"/>
-    </linearGradient>
-    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#B9892F"/><stop offset="1" stop-color="#DCB65F"/>
-    </linearGradient>
-    <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#5C8A3C"/><stop offset="1" stop-color="#93B96D"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1104" cy="106" r="140" fill="#A63A50" opacity="0.06"/>
-  <circle cx="80" cy="618" r="112" fill="#D9822B" opacity="0.06"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gCrimson)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">技能识别准确率几乎不变的前提下，信念-行动差距近乎减半，重规划次数最高减少 80 倍</text>
 
-  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2608.18490</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">幕布后得有人换场</text>
-  <text x="64" y="158" font-size="15" fill="#635A51">BayesBeliefAgent：贝叶斯追踪队友技能，动作与信念矛盾时才拉闸重排</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">信念-行动差距等指标：BayesBeliefAgent 对比基线 ProAgent（Overcooked 基准）</text>
 
-  <!-- theater motif: proscenium + curtain + spotlight -->
-  <g>
-    <path d="M 1010 74 q -22 44 0 88 q 22 -44 0 -88" fill="url(#gCrimson)" opacity="0.5"/>
-    <path d="M 1034 74 q -20 44 0 88 q 20 -44 0 -88" fill="url(#gCrimson)" opacity="0.32"/>
-    <path d="M 1130 74 q 22 44 0 88 q -22 -44 0 -88" fill="url(#gCrimson)" opacity="0.5"/>
-    <path d="M 1106 74 q 20 44 0 88 q -20 -44 0 -88" fill="url(#gCrimson)" opacity="0.32"/>
-    <rect x="1004" y="66" width="132" height="10" rx="3" fill="url(#gGold)"/>
-    <path d="M 1070 162 l -30 46 h 60 z" fill="#D9822B" opacity="0.18"/>
-    <text class="b" x="1070" y="224" text-anchor="middle">幕布后：贝叶斯追光</text>
+  <!-- gridlines: x = 300 + 1200*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="450" y1="126" x2="450" y2="396"/>
+    <line x1="600" y1="126" x2="600" y2="396"/>
+    <line x1="750" y1="126" x2="750" y2="396"/>
+    <line x1="900" y1="126" x2="900" y2="396"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="300" y="418">0</text>
+    <text x="450" y="418">0.1</text>
+    <text x="600" y="418">0.2</text>
+    <text x="750" y="418">0.3</text>
+    <text x="900" y="418">0.4</text>
   </g>
 
-  <!-- three-act flow -->
-  <g>
-    <rect x="64" y="196" width="240" height="96" fill="#3E6FA8" opacity="0.08"/>
-    <text class="serif" x="82" y="236" font-size="20" font-weight="700" fill="#33608C">第一幕 · 追踪</text>
-    <text x="82" y="262" font-size="12.5" fill="#635A51">贝叶斯后验更新信念</text>
+  <!-- rows y=168/222/276/330/384 ; hollow=ProAgent baseline, solid=BayesBeliefAgent -->
+  <!-- Open gap 0.41 -> 0.20 -->
+  <text x="288" y="172" font-size="12.5" fill="#1A1B1E" text-anchor="end">belief-action gap（Open 布局）</text>
+  <line x1="492" y1="168" x2="792" y2="168" stroke="#999999" stroke-width="1.5"/>
+  <circle cx="792" cy="168" r="6" fill="#FFFFFF" stroke="#555555" stroke-width="1.5"/>
+  <text x="802" y="163" font-size="12" fill="#555">0.41</text>
+  <circle cx="492" cy="168" r="7" fill="#0072B2"/>
+  <text x="464" y="163" font-size="12" fill="#555" text-anchor="end">0.20</text>
 
-    <path d="M 312 244 h 34" stroke="#A89E92" stroke-width="2.5" marker-end="none"/>
-    <path d="M 342 238 l 10 6 l -10 6" fill="none" stroke="#A89E92" stroke-width="2.5"/>
+  <!-- Ring gap 0.38 -> 0.28 -->
+  <text x="288" y="226" font-size="12.5" fill="#1A1B1E" text-anchor="end">belief-action gap（Ring 布局）</text>
+  <line x1="552" y1="222" x2="636" y2="222" stroke="#999999" stroke-width="1.5"/>
+  <circle cx="636" cy="222" r="6" fill="#FFFFFF" stroke="#555555" stroke-width="1.5"/>
+  <text x="646" y="217" font-size="12" fill="#555">0.38</text>
+  <circle cx="552" cy="222" r="7" fill="#0072B2"/>
+  <text x="524" y="217" font-size="12" fill="#555" text-anchor="end">0.28</text>
 
-    <rect x="360" y="196" width="240" height="96" fill="#D9822B" opacity="0.09"/>
-    <text class="serif" x="378" y="236" font-size="20" font-weight="700" fill="#B0661C">第二幕 · 对词</text>
-    <text x="378" y="262" font-size="12.5" fill="#635A51">动作与技能是否矛盾</text>
+  <!-- Comp@3 0.39 -> 0.66 -->
+  <text x="288" y="280" font-size="12.5" fill="#1A1B1E" text-anchor="end">Comp@3 互补性（Open 布局）</text>
+  <line x1="720" y1="276" x2="1044" y2="276" stroke="#999999" stroke-width="1.5"/>
+  <circle cx="720" cy="276" r="6" fill="#FFFFFF" stroke="#555555" stroke-width="1.5"/>
+  <text x="692" y="271" font-size="12" fill="#555" text-anchor="end">0.39</text>
+  <circle cx="1044" cy="276" r="7" fill="#0072B2"/>
+  <text x="1056" y="255" font-size="12" fill="#555">0.66</text>
 
-    <path d="M 608 244 h 34" stroke="#A89E92" stroke-width="2.5"/>
-    <path d="M 638 238 l 10 6 l -10 6" fill="none" stroke="#A89E92" stroke-width="2.5"/>
+  <!-- repeated skill 0.30 -> 0.15 -->
+  <text x="288" y="334" font-size="12.5" fill="#1A1B1E" text-anchor="end">重复技能率（Open 布局）</text>
+  <line x1="432" y1="330" x2="612" y2="330" stroke="#999999" stroke-width="1.5"/>
+  <circle cx="612" cy="330" r="6" fill="#FFFFFF" stroke="#555555" stroke-width="1.5"/>
+  <text x="622" y="325" font-size="12" fill="#555">0.30</text>
+  <circle cx="432" cy="330" r="7" fill="#0072B2"/>
+  <text x="404" y="325" font-size="12" fill="#555" text-anchor="end">0.15</text>
 
-    <rect x="656" y="196" width="240" height="96" fill="#A63A50" opacity="0.09"/>
-    <text class="serif" x="674" y="236" font-size="20" font-weight="700" fill="#8F2F44">第三幕 · 门控</text>
-    <text x="674" y="262" font-size="12.5" fill="#635A51">矛盾才断，触发重规划</text>
+  <!-- accuracy 0.78 -> 0.79 -->
+  <text x="288" y="388" font-size="12.5" fill="#1A1B1E" text-anchor="end">技能识别准确率（Open 布局）</text>
+  <line x1="912" y1="384" x2="924" y2="384" stroke="#999999" stroke-width="1.5"/>
+  <circle cx="912" cy="384" r="6" fill="#FFFFFF" stroke="#555555" stroke-width="1.5"/>
+  <circle cx="924" cy="384" r="7" fill="#0072B2"/>
+  <text x="938" y="389" font-size="12" fill="#555">0.78 → 0.79，几乎相同</text>
 
-    <rect x="916" y="252" width="220" height="40" fill="#2A8C82" opacity="0.1"/>
-    <text x="928" y="278" font-size="13" fill="#1F6B62" font-weight="600">被动上下文 → 控制信号</text>
+  <!-- value axis -->
+  <line x1="300" y1="396" x2="1140" y2="396" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="300" y1="396" x2="300" y2="400"/>
+    <line x1="450" y1="396" x2="450" y2="400"/>
+    <line x1="600" y1="396" x2="600" y2="400"/>
+    <line x1="750" y1="396" x2="750" y2="400"/>
+    <line x1="900" y1="396" x2="900" y2="400"/>
+  </g>
+  <text x="660" y="446" font-size="14" fill="#1A1B1E" text-anchor="middle">指标数值（比例，无量纲）</text>
+  <g font-size="12" fill="#555">
+    <circle cx="316" cy="118" r="5" fill="#FFFFFF" stroke="#555555" stroke-width="1.5"/>
+    <text x="327" y="122">基线 ProAgent</text>
+    <circle cx="440" cy="118" r="5" fill="#0072B2"/>
+    <text x="451" y="122">BayesBeliefAgent</text>
   </g>
 
-  <!-- dumbbells: belief-action gap and co-play -->
-  <g>
-    <text class="rl" x="64" y="356">Open 布局 · ProAgent → BayesBeliefAgent</text>
+  <!-- ============ panel b ============ -->
+  <text x="60" y="480" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="480" font-size="15" fill="#1A1B1E">Open 布局每 episode 重规划次数（区间为论文报告范围）</text>
 
-    <rect x="64" y="372" width="640" height="52" fill="#3E6FA8" opacity="0.07"/>
-    <text class="rl" x="248" y="404" text-anchor="end">belief-action gap</text>
-    <line x1="300" y1="398" x2="452" y2="398" stroke="url(#gCrimson)" stroke-width="3.5"/>
-    <circle cx="452" cy="398" r="7" fill="#FFFFFF" stroke="#A63A50" stroke-width="3"/>
-    <circle cx="300" cy="398" r="9" fill="url(#gCrimson)"/>
-    <text class="val" x="478" y="405" fill="#A63A50">0.41 → 0.20</text>
+  <!-- whiskers: pos(v) = 300 + 360*log10(v) ; log scale anchored 1..~7 -->
+  <text x="288" y="520" font-size="12.5" fill="#1A1B1E" text-anchor="end">Full（后验门控中断）</text>
+  <line x1="506.5" y1="516" x2="565.4" y2="516" stroke="#0072B2" stroke-width="1.5"/>
+  <line x1="506.5" y1="509" x2="506.5" y2="523" stroke="#0072B2" stroke-width="1.5"/>
+  <line x1="565.4" y1="509" x2="565.4" y2="523" stroke="#0072B2" stroke-width="1.5"/>
+  <text x="575" y="521" font-size="12" fill="#555">1.8–3.0</text>
 
-    <rect x="64" y="432" width="640" height="52" fill="#2A8C82" opacity="0.08"/>
-    <text class="rl" x="248" y="464" text-anchor="end">Comp@3 互补性</text>
-    <line x1="300" y1="458" x2="492" y2="458" stroke="url(#gTeal)" stroke-width="3.5"/>
-    <circle cx="300" cy="458" r="7" fill="#FFFFFF" stroke="#2A8C82" stroke-width="3"/>
-    <circle cx="492" cy="458" r="9" fill="url(#gTeal)"/>
-    <text class="val" x="518" y="465" fill="#2A8C82">0.39 → 0.66</text>
+  <text x="288" y="562" font-size="12.5" fill="#1A1B1E" text-anchor="end">Periodic-10 变体</text>
+  <line x1="719" y1="558" x2="836.5" y2="558" stroke="#999999" stroke-width="1.5"/>
+  <line x1="719" y1="551" x2="719" y2="565" stroke="#999999" stroke-width="1.5"/>
+  <line x1="836.5" y1="551" x2="836.5" y2="565" stroke="#999999" stroke-width="1.5"/>
+  <text x="846" y="563" font-size="12" fill="#555">15–51</text>
 
-    <text class="b" x="64" y="512">Ring 布局 gap 0.38 → 0.28 · 重复技能率 0.30 → 0.15 · 技能识别 0.79 对 0.78，几乎持平</text>
+  <text x="288" y="604" font-size="12.5" fill="#1A1B1E" text-anchor="end">Compl./held 变体</text>
+  <line x1="835.6" y1="600" x2="938.9" y2="600" stroke="#999999" stroke-width="1.5"/>
+  <line x1="835.6" y1="593" x2="835.6" y2="607" stroke="#999999" stroke-width="1.5"/>
+  <line x1="938.9" y1="593" x2="938.9" y2="607" stroke="#999999" stroke-width="1.5"/>
+  <text x="949" y="605" font-size="12" fill="#555">50–169</text>
+
+  <text x="1000" y="521" font-size="12" fill="#555">三者平均奖励相当，</text>
+  <text x="1000" y="539" font-size="12" fill="#555">重规划次数少 20–80 倍</text>
+
+  <!-- log axis: ticks 1 / 10 / 169 at 300 / 660 / 1054.9 -->
+  <line x1="300" y1="616" x2="1080" y2="616" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="300" y1="616" x2="300" y2="620"/>
+    <line x1="660" y1="616" x2="660" y2="620"/>
+    <line x1="1054.9" y1="616" x2="1054.9" y2="620"/>
   </g>
-
-  <!-- replanning big numbers -->
-  <g>
-    <rect x="792" y="372" width="344" height="112" fill="#B9892F" opacity="0.09"/>
-    <text class="serif" x="812" y="424" font-size="30" font-weight="700" fill="#8A6620">少 20-80 倍</text>
-    <text x="812" y="452" font-size="12.5" fill="#635A51">重规划 1.8-3.0 次/局，对照 15-169 次</text>
-    <text class="serif" x="812" y="474" font-size="13" fill="#8F2F44">平均奖励相当，门控只省场次</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="300" y="636">1</text>
+    <text x="660" y="636">10</text>
+    <text x="1054.9" y="636">169</text>
   </g>
+  <text x="1070" y="621" font-size="12" fill="#555">对数刻度（次）</text>
 
-  <line x1="64" y1="548" x2="1136" y2="548" stroke="#E9E2D6"/>
-  <g>
-    <rect x="64" y="566" width="92" height="28" rx="14" fill="url(#gGreen)" opacity="0.2"/>
-    <text x="110" y="585" text-anchor="middle" class="chip" fill="#476E2E">GPT-4o 分层</text>
-    <rect x="170" y="566" width="118" height="28" rx="14" fill="url(#gAmber)" opacity="0.2"/>
-    <text x="229" y="585" text-anchor="middle" class="chip" fill="#B0661C">Overcooked ×4</text>
-    <rect x="302" y="566" width="112" height="28" rx="14" fill="url(#gBlue)" opacity="0.18"/>
-    <text x="358" y="585" text-anchor="middle" class="chip" fill="#33608C">未见过的队友</text>
-  </g>
-  <text class="serif" x="64" y="636" font-size="18" fill="#1A1B1E">问题不在看不看得穿队友，而在信念有没有拿去控场。</text>
-  <text class="b" x="1136" y="636" text-anchor="end">Forced Coordination 收益有限 · GPT-5.2 敏感性互有胜负 · 预印本未经同行评审 · Micropaper</text>
+  <!-- footnote -->
+  <text x="60" y="658" font-size="11" fill="#767676">数据：arXiv:2608.18490（Overcooked，BayesBeliefAgent 对基线 ProAgent）· 均为论文自测口径 · b 面板横轴为对数刻度，数值以端点标注为准 · 预印本未经同行评审</text>
 </svg>
