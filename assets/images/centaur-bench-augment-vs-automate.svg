@@ -1,109 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8F968C; }
-      .rl { font-size: 15px; fill: #454E45; }
-      .val { font-size: 18px; font-weight: 700; fill: #1A1B1E; }
-      .b { font-size: 12px; fill: #A2A99E; }
-      .chip { font-size: 12.5px; font-weight: 600; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F1F6F0"/>
-    </linearGradient>
-    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2F6FB2"/><stop offset="1" stop-color="#6FA3D8"/>
-    </linearGradient>
-    <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#E8720C"/><stop offset="1" stop-color="#F6AB5C"/>
-    </linearGradient>
-    <linearGradient id="gCrim" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#C0392B"/><stop offset="1" stop-color="#E0705F"/>
-    </linearGradient>
-    <linearGradient id="gViolet" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#6A4FA3"/><stop offset="1" stop-color="#9C7FCB"/>
-    </linearGradient>
-    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#B9892F"/><stop offset="1" stop-color="#DCB65F"/>
-    </linearGradient>
-    <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#3F8F5F"/><stop offset="1" stop-color="#7CBB92"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1106" cy="108" r="142" fill="#2F6FB2" opacity="0.06"/>
-  <circle cx="78" cy="618" r="112" fill="#E8720C" opacity="0.06"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gCrim)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">自动化与增强两种角色的模型级排名 Spearman 相关仅 0.48（p=0.187）；5/7 任务两种角色的冠军不同</text>
 
-  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2608.18554 · UC BERKELEY HAAS DIAL</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">最佳球员，未必好教练</text>
-  <text x="64" y="158" font-size="15" fill="#586158">CentaurBench：9 个模型 × 7 个真实任务 × 10 次重复，两种角色各排一次座次</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">两种角色排名的排名相关（Spearman ρ，报告值直接标注）</text>
 
-  <!-- bowling motif: pins + ball -->
-  <g>
-    <g fill="#FFFFFF" stroke="#2F6FB2" stroke-width="2">
-      <path d="M 1030 92 q -6 12 0 20 q -5 8 2 12 h 8 q 7 -4 2 -12 q 6 -8 0 -20 z"/>
-      <path d="M 1058 104 q -6 12 0 20 q -5 8 2 12 h 8 q 7 -4 2 -12 q 6 -8 0 -20 z" stroke="#E8720C"/>
-      <path d="M 1086 92 q -6 12 0 20 q -5 8 2 12 h 8 q 7 -4 2 -12 q 6 -8 0 -20 z" stroke="#6A4FA3"/>
-    </g>
-    <circle cx="1076" cy="168" r="16" fill="url(#gCrim)"/>
-    <circle cx="1070" cy="162" r="2.4" fill="#FFFFFF" opacity="0.85"/>
-    <circle cx="1077" cy="159" r="2.4" fill="#FFFFFF" opacity="0.85"/>
-    <circle cx="1083" cy="163" r="2.4" fill="#FFFFFF" opacity="0.85"/>
-    <path d="M 1096 178 q 22 6 40 0" fill="none" stroke="#A2A99E" stroke-width="2" stroke-dasharray="4 5"/>
+  <!-- rows: bars proportional to reported rho; only three rho values disclosed in body, no numeric axis -->
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="288" y="163">报税（任务级）</text>
+    <text x="288" y="213">模型级（全部任务）</text>
+    <text x="288" y="263">旅行规划（任务级）</text>
   </g>
+  <rect x="300" y="147" width="204" height="18" fill="#0072B2"/>
+  <text x="513" y="163" font-size="12" fill="#555">0.85（p=0.004，唯一通过 Bonferroni 校正）</text>
+  <rect x="300" y="197" width="115.2" height="18" fill="#D55E00"/>
+  <text x="424" y="213" font-size="12" fill="#555">0.48（p=0.187，与零不可区分）</text>
+  <!-- -0.04: negative, drawn left of zero line as small marker -->
+  <line x1="290.4" y1="249" x2="300" y2="249" stroke="#999999" stroke-width="1.5"/>
+  <line x1="290.4" y1="249" x2="290.4" y2="263" stroke="#999999" stroke-width="1.5"/>
+  <text x="308" y="263" font-size="12" fill="#555">-0.04（任务级最低值）</text>
+  <text x="300" y="300" font-size="12" fill="#555">任务级 ρ 从 -0.04（旅行规划）到 0.85（报税）不等，</text>
+  <text x="300" y="318" font-size="12" fill="#555">其余任务级数值正文未披露；5/7 任务两种角色的冠军不是同一模型</text>
 
-  <!-- correlation anchor -->
-  <g>
-    <text class="rl" x="64" y="216">两种角色的模型级排名相关（Spearman）</text>
-    <rect x="64" y="230" width="360" height="112" fill="#C0392B" opacity="0.07"/>
-    <text class="serif" x="84" y="290" font-size="46" font-weight="700" fill="#C0392B">0.48</text>
-    <text x="84" y="318" font-size="12.5" fill="#586158">p=0.187，与零不可区分</text>
-    <text class="serif" x="238" y="272" font-size="19" fill="#8A6620">5/7 任务</text>
-    <text x="238" y="296" font-size="12.5" fill="#586158">增强冠军 ≠ 自动化冠军</text>
-    <text x="238" y="318" font-size="12.5" fill="#586158">任务级 -0.04 → 0.85</text>
+  <!-- ============ panel b ============ -->
+  <text x="730" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="752" y="104" font-size="15" fill="#1A1B1E">平均排名反转案例（10 次重复平均，1 为最佳）</text>
+
+  <text x="885" y="132" font-size="12" fill="#555" text-anchor="middle">自动化</text>
+  <text x="1090" y="132" font-size="12" fill="#555" text-anchor="middle">增强</text>
+  <g stroke="#999999" stroke-width="1.5">
+    <line x1="885" y1="144" x2="885" y2="364"/>
+    <line x1="1090" y1="144" x2="1090" y2="364"/>
   </g>
-
-  <!-- slope: rank swap, top=1 best -->
-  <g>
-    <text class="rl" x="490" y="216">平均排名反转 · 1 为最佳，越小越强</text>
-    <line x1="640" y1="244" x2="640" y2="392" stroke="#D6DCD2" stroke-width="1"/>
-    <line x1="990" y1="244" x2="990" y2="392" stroke="#D6DCD2" stroke-width="1"/>
-    <text class="b" x="640" y="236" text-anchor="middle">自动化 · 选手</text>
-    <text class="b" x="990" y="236" text-anchor="middle">增强 · 教练</text>
-
-    <line x1="640" y1="368" x2="990" y2="268" stroke="url(#gBlue)" stroke-width="4" stroke-linecap="round"/>
-    <circle cx="640" cy="368" r="7" fill="url(#gBlue)"/>
-    <circle cx="990" cy="268" r="7" fill="#FFFFFF" stroke="#2F6FB2" stroke-width="3"/>
-    <text class="val" x="626" y="373" text-anchor="end" fill="#2F6FB2">GPT-4.1 · 7.40</text>
-    <text class="val" x="1004" y="273" fill="#2F6FB2">3.80</text>
-
-    <line x1="640" y1="262" x2="990" y2="382" stroke="url(#gOrange)" stroke-width="4" stroke-linecap="round"/>
-    <circle cx="640" cy="262" r="7" fill="url(#gOrange)"/>
-    <circle cx="990" cy="382" r="7" fill="#FFFFFF" stroke="#E8720C" stroke-width="3"/>
-    <text class="val" x="626" y="267" text-anchor="end" fill="#C25E08">Claude-Opus · 2.05</text>
-    <text class="val" x="1004" y="387" fill="#C0392B">8.15</text>
+  <!-- slope plot: rank axis top-anchored, linear 30px per rank -->
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="881" y1="150" x2="885" y2="150"/>
+    <line x1="881" y1="240" x2="885" y2="240"/>
+    <line x1="881" y1="330" x2="885" y2="330"/>
   </g>
-
-  <!-- unguided baseline band -->
-  <g>
-    <rect x="64" y="418" width="1072" height="58" fill="#6A4FA3" opacity="0.08"/>
-    <text class="serif" x="84" y="454" font-size="22" font-weight="700" fill="#543F82">无指导基线 3/7 任务排第一</text>
-    <text x="420" y="454" font-size="14" fill="#454E45">运筹 · 报税 · 旅行规划——教练不在场，工人 GPT-3.5-Turbo 反而赢下全场</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="874" y="154">1</text>
+    <text x="874" y="244">4</text>
+    <text x="874" y="334">7</text>
   </g>
+  <text x="852" y="254" font-size="14" fill="#1A1B1E" text-anchor="middle" transform="rotate(-90 852 254)">平均排名（1 为最佳）</text>
 
-  <line x1="64" y1="510" x2="1136" y2="510" stroke="#DDE4D8"/>
-  <g>
-    <rect x="64" y="530" width="150" height="28" rx="14" fill="url(#gBlue)" opacity="0.18"/>
-    <text x="139" y="549" text-anchor="middle" class="chip" fill="#2A5F98">GPT-5-Mini 双榜唯一第一</text>
-    <rect x="228" y="530" width="168" height="28" rx="14" fill="url(#gViolet)" opacity="0.16"/>
-    <text x="312" y="549" text-anchor="middle" class="chip" fill="#543F82">无指导整体第二（3.79）</text>
-    <rect x="410" y="530" width="158" height="28" rx="14" fill="url(#gGreen)" opacity="0.18"/>
-    <text x="489" y="549" text-anchor="middle" class="chip" fill="#33734C">指导 200-250 词</text>
-    <rect x="582" y="530" width="130" height="28" rx="14" fill="url(#gGold)" opacity="0.22"/>
-    <text x="647" y="549" text-anchor="middle" class="chip" fill="#7A5A14">仅报税 p=0.004</text>
-  </g>
-  <text class="serif" x="64" y="612" font-size="18" fill="#1A1B1E">指导不是善举，是另一项独立能力；选模型，先定角色。</text>
-  <text class="b" x="1136" y="612" text-anchor="end">论文自称 pilot · LLM 评审盲评 · 工人固定 GPT-3.5-Turbo · 预印本未经同行评审 · Micropaper</text>
+  <!-- Claude-Opus-4.8: 2.05 -> 8.15 -->
+  <line x1="885" y1="181.5" x2="1090" y2="364.5" stroke="#D55E00" stroke-width="2"/>
+  <circle cx="885" cy="181.5" r="5" fill="#D55E00"/>
+  <circle cx="1090" cy="364.5" r="5" fill="#D55E00"/>
+  <text x="896" y="176" font-size="12" fill="#555">2.05</text>
+  <text x="1101" y="369" font-size="12" fill="#555">8.15</text>
+  <text x="905" y="298" font-size="12" fill="#1A1B1E">市场趋势 · Claude-Opus-4.8</text>
+
+  <!-- GPT-4.1: 7.40 -> 3.80 -->
+  <line x1="885" y1="342" x2="1090" y2="234" stroke="#0072B2" stroke-width="2"/>
+  <circle cx="885" cy="342" r="5" fill="#0072B2"/>
+  <circle cx="1090" cy="234" r="5" fill="#0072B2"/>
+  <text x="896" y="352" font-size="12" fill="#555">7.40</text>
+  <text x="1101" y="239" font-size="12" fill="#555">3.80</text>
+  <text x="905" y="212" font-size="12" fill="#1A1B1E">咨询 · GPT-4.1</text>
+  <text x="905" y="228" font-size="11" fill="#767676">3.80 为所有受助条件最佳</text>
+
+  <text x="730" y="410" font-size="12" fill="#555">无指导基线在 3/7 任务排第一；增强整体平均排名：</text>
+  <text x="730" y="428" font-size="12" fill="#555">GPT-5-Mini 3.66，无指导基线 3.79</text>
+
+  <!-- footnote -->
+  <text x="60" y="560" font-size="11" fill="#767676">数据：arXiv:2608.18554v1（9 助手模型 × 7 任务 × 10 次重复，排名为 10 次重复平均，论文自测口径）· a 面板仅画正文披露的 ρ 值，未设数值轴 · 论文自称 pilot 研究，预印本未经同行评审</text>
 </svg>

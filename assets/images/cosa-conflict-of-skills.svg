@@ -1,117 +1,119 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Noto Serif SC','Songti SC',serif">
-  <defs>
-    <linearGradient id="gFelt" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#3E7C59"/><stop offset="1" stop-color="#6FA97F"/>
-    </linearGradient>
-    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#B9892F"/><stop offset="1" stop-color="#D9B65E"/>
-    </linearGradient>
-    <linearGradient id="gRose" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#B5442E"/><stop offset="1" stop-color="#E07B5C"/>
-    </linearGradient>
-    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2F7D8C"/><stop offset="1" stop-color="#69B3BF"/>
-    </linearGradient>
-    <linearGradient id="gIndigo" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#2E5E8C"/><stop offset="1" stop-color="#5B8FBF"/>
-    </linearGradient>
-    <linearGradient id="gPlum" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7C4A6E"/><stop offset="1" stop-color="#B27BA0"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="#FBFAF7"/>
-  <rect x="0" y="0" width="44" height="5" fill="#B5442E"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">加入占原池 ≤5% 的局部合规技能后，5 模型 × 3 harness 的政策违规率从 35.02% 升至 58.45%；CoSA-Guard 把违规从 65.28% 降到 6.67%</text>
 
-  <text x="60" y="64" font-size="13" letter-spacing="3" fill="#9A937F">一分钟读论文 ARXIV:2610.35082</text>
-  <text x="60" y="112" font-size="37" font-weight="bold" fill="#1A1B1E">单张张张合规，凑一桌就违规</text>
-  <text x="60" y="143" font-size="15.5" fill="#6E6A5C">往技能池加入占比 ≤5% 的「局部合规」牌张，组合技能就能越权出牌</text>
-  <line x1="60" y1="162" x2="1140" y2="162" stroke="#E5E1D4" stroke-width="1"/>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">两池条件下的政策违规率（CoSA-Bench 288 任务）</text>
 
-  <!-- 牌桌主视觉 -->
-  <rect x="60" y="182" width="560" height="252" fill="#6FA97F" opacity="0.14"/>
-  <rect x="68"  y="362" width="86" height="58" fill="url(#gIndigo)" opacity="0.85"/>
-  <rect x="166" y="362" width="86" height="58" fill="url(#gTeal)" opacity="0.85"/>
-  <rect x="264" y="362" width="86" height="58" fill="url(#gGold)" opacity="0.85"/>
-  <rect x="362" y="362" width="86" height="58" fill="url(#gPlum)" opacity="0.85"/>
-  <rect x="460" y="362" width="86" height="58" fill="url(#gRose)" opacity="0.9"/>
-  <line x1="68" y1="428" x2="546" y2="428" stroke="#B9892F" stroke-width="1.5" opacity="0.5"/>
-
-  <rect x="60" y="182" width="560" height="5" fill="#3E7C59" opacity="0.5"/>
-  <text x="84" y="216" font-size="13" letter-spacing="2.5" fill="#3E7C59">牌桌 · 三个单检合规的技能</text>
-
-  <!-- 三张牌 -->
-  <g>
-    <rect x="96" y="238" width="86" height="118" fill="#FFFDF6"/>
-    <rect x="96" y="238" width="86" height="8" fill="url(#gIndigo)"/>
-    <circle cx="139" cy="292" r="17" fill="url(#gIndigo)" opacity="0.85"/>
-    <text x="139" y="340" font-size="14" fill="#1A1B1E" text-anchor="middle">查状态</text>
+  <!-- gridlines horizontal majors at 20/40, y = 380 - 4*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="130" y1="300" x2="560" y2="300"/>
+    <line x1="130" y1="220" x2="560" y2="220"/>
   </g>
-  <g>
-    <rect x="206" y="238" width="86" height="118" fill="#FFFDF6"/>
-    <rect x="206" y="238" width="86" height="8" fill="url(#gTeal)"/>
-    <rect x="231" y="276" width="36" height="32" fill="none" stroke="#2F7D8C" stroke-width="2.5"/>
-    <line x1="231" y1="286" x2="267" y2="286" stroke="#2F7D8C" stroke-width="2"/>
-    <text x="249" y="340" font-size="14" fill="#1A1B1E" text-anchor="middle">收材料</text>
+  <!-- baseline bar 35.02 -->
+  <rect x="180" y="239.92" width="80" height="140.08" fill="#999999"/>
+  <text x="220" y="232" font-size="12" fill="#555" text-anchor="middle">35.02%</text>
+  <text x="220" y="398" font-size="12.5" fill="#1A1B1E" text-anchor="middle">原技能池</text>
+  <!-- attack bar 58.45 -->
+  <rect x="400" y="146.2" width="80" height="233.8" fill="#D55E00"/>
+  <text x="440" y="138" font-size="12" fill="#555" text-anchor="middle">58.45%</text>
+  <text x="440" y="398" font-size="12.5" fill="#1A1B1E" text-anchor="middle">加入 ≤5% 增量技能</text>
+  <!-- delta annotation -->
+  <line x1="270" y1="146.2" x2="390" y2="146.2" stroke="#555555" stroke-width="0.75" stroke-dasharray="4 3"/>
+  <line x1="270" y1="239.92" x2="390" y2="239.92" stroke="#555555" stroke-width="0.75" stroke-dasharray="4 3"/>
+  <text x="330" y="190" font-size="12" fill="#1A1B1E" text-anchor="middle">Δ=+23.43 个百分点</text>
+
+  <!-- value axis -->
+  <line x1="130" y1="380" x2="560" y2="380" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="130" y1="380" x2="126" y2="380"/>
+    <line x1="130" y1="300" x2="126" y2="300"/>
+    <line x1="130" y1="220" x2="126" y2="220"/>
   </g>
-  <g>
-    <rect x="316" y="238" width="86" height="118" fill="#FFFDF6"/>
-    <rect x="316" y="238" width="86" height="8" fill="url(#gGold)"/>
-    <polygon points="359,272 375,306 343,306" fill="none" stroke="#B9892F" stroke-width="2.5"/>
-    <text x="359" y="340" font-size="14" fill="#1A1B1E" text-anchor="middle">跑校验</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="120" y="384">0</text>
+    <text x="120" y="304">20</text>
+    <text x="120" y="224">40</text>
   </g>
+  
 
-  <!-- 加牌 -->
-  <line x1="428" y1="297" x2="466" y2="297" stroke="#9A937F" stroke-width="2"/>
-  <polygon points="476,297 464,291 464,303" fill="#9A937F"/>
-  <g>
-    <rect x="492" y="238" width="86" height="118" fill="#FFF6F1"/>
-    <rect x="492" y="238" width="86" height="8" fill="url(#gRose)"/>
-    <circle cx="535" cy="292" r="17" fill="url(#gRose)" stroke="#FFF6F1" stroke-width="3"/>
-    <line x1="523" y1="280" x2="547" y2="304" stroke="#FFFDF6" stroke-width="2.5"/>
-    <line x1="547" y1="280" x2="523" y2="304" stroke="#FFFDF6" stroke-width="2.5"/>
-    <text x="535" y="297" font-size="15" fill="#FFFDF6" text-anchor="middle">加</text>
-    <text x="535" y="340" font-size="14" fill="#B5442E" text-anchor="middle">补一张</text>
+  <!-- ============ panel b ============ -->
+  <text x="630" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="652" y="104" font-size="15" fill="#1A1B1E">分 harness 违规率上升（百分点）</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="830" y1="132" x2="830" y2="290"/>
+    <line x1="880" y1="132" x2="880" y2="290"/>
   </g>
-  <text x="84" y="452" font-size="13" fill="#3E5A44">补进的牌局部合规 · 凑成一桌执行，越权从未被授权</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="768" y="163">OpenClaw</text>
+    <text x="768" y="213">OpenHands</text>
+    <text x="768" y="263">OpenCode</text>
+  </g>
+  <!-- x = 780 + 4*pp -->
+  <rect x="780" y="147" width="89.16" height="18" fill="#0072B2"/>
+  <text x="877" y="163" font-size="12" fill="#555">+22.29</text>
+  <rect x="780" y="197" width="104.16" height="18" fill="#0072B2"/>
+  <text x="892" y="213" font-size="12" fill="#555">+26.04</text>
+  <rect x="780" y="247" width="87.76" height="18" fill="#0072B2"/>
+  <text x="876" y="263" font-size="12" fill="#555">+21.94</text>
 
-  <!-- 右栏数据：dumbbell 两条 -->
-  <text x="660" y="216" font-size="13" fill="#6E6A5C">政策违规率 · 5 个 LLM × 3 种 harness</text>
+  <!-- value axis -->
+  <line x1="780" y1="290" x2="905" y2="290" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="780" y1="290" x2="780" y2="294"/>
+    <line x1="830" y1="290" x2="830" y2="294"/>
+    <line x1="880" y1="290" x2="880" y2="294"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="780" y="310">0</text>
+    <text x="830" y="310">10</text>
+    <text x="880" y="310">20</text>
+  </g>
+  <text x="880" y="334" font-size="14" fill="#1A1B1E" text-anchor="middle">违规率上升（百分点）</text>
 
-  <text x="660" y="252" font-size="13.5" fill="#B5442E">CoSA 注入 ≤5% 增量牌张</text>
-  <circle cx="700" cy="272" r="5.5" fill="#FBFAF7" stroke="#B5442E" stroke-width="2.5"/>
-  <line x1="700" y1="272" x2="852" y2="272" stroke="url(#gRose)" stroke-width="2.5"/>
-  <circle cx="852" cy="272" r="5.5" fill="#B5442E"/>
-  <text x="700" y="296" font-size="12.5" fill="#A29C88" text-anchor="middle">35.02%</text>
-  <text x="852" y="296" font-size="12.5" fill="#B5442E" text-anchor="middle">58.45%</text>
-  <text x="884" y="277" font-size="15" font-weight="bold" fill="#B5442E">+23.43 个百分点</text>
+  <!-- ============ panel c ============ -->
+  <text x="630" y="378" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="652" y="378" font-size="15" fill="#1A1B1E">CoSA-Guard 前后（OpenClaw 招聘任务 × 5 模型）</text>
 
-  <text x="660" y="336" font-size="13.5" fill="#2F7D8C">CoSA-Guard 动作前查信息与授权</text>
-  <circle cx="700" cy="356" r="5.5" fill="#FBFAF7" stroke="#2F7D8C" stroke-width="2.5"/>
-  <line x1="700" y1="356" x2="722" y2="356" stroke="url(#gTeal)" stroke-width="2.5"/>
-  <circle cx="722" cy="356" r="5.5" fill="#2F7D8C"/>
-  <text x="700" y="380" font-size="12.5" fill="#A29C88" text-anchor="middle">65.28%</text>
-  <text x="722" y="380" font-size="12.5" fill="#2F7D8C" text-anchor="middle">6.67%</text>
-  <text x="754" y="361" font-size="12.5" fill="#6E6A5C">合规完成率仅 66.67% 变 65.00%</text>
+  <!-- attack 65.28 -> guard 6.67, x = 730 + 2.4*v -->
+  <circle cx="886.67" cy="432" r="6" fill="none" stroke="#D55E00" stroke-width="2"/>
+  <line x1="886.67" y1="432" x2="746" y2="570" stroke="#D55E00" stroke-width="2"/>
+  <circle cx="746" cy="570" r="6" fill="#D55E00"/>
+  <text x="896" y="424" font-size="12" fill="#555">攻击注入 65.28%</text>
+  <text x="756" y="560" font-size="12" fill="#555">加 CoSA-Guard 6.67%</text>
 
-  <!-- 分 harness 增量 -->
-  <text x="660" y="422" font-size="13" fill="#6E6A5C">分 harness 违规增量 · 百分点</text>
-  <rect x="660" y="434" width="208" height="13" fill="url(#gTeal)" opacity="0.85"/>
-  <text x="660" y="459" font-size="11.5" fill="#6E6A5C">OpenHands 26.04</text>
-  <rect x="660" y="466" width="178" height="13" fill="url(#gIndigo)" opacity="0.85"/>
-  <text x="660" y="491" font-size="11.5" fill="#6E6A5C">OpenClaw 22.29</text>
-  <rect x="660" y="498" width="176" height="13" fill="url(#gPlum)" opacity="0.85"/>
-  <text x="660" y="523" font-size="11.5" fill="#6E6A5C">OpenCode 21.94</text>
+  <!-- benign completion pair, dumbbell on row y=530, same scale x = 730 + 2.4*v -->
+  <line x1="890" y1="530" x2="886" y2="530" stroke="#999999" stroke-width="2"/>
+  <circle cx="890" cy="530" r="6" fill="none" stroke="#999999" stroke-width="2"/>
+  <circle cx="886" cy="530" r="6" fill="#999999"/>
+  <text x="902" y="526" font-size="12" fill="#555">良性对照完成率</text>
+  <text x="902" y="542" font-size="12" fill="#555">66.67% → 65.00%</text>
 
-  <!-- 底排 chips -->
-  <rect x="60" y="470" width="150" height="34" fill="url(#gGold)" opacity="0.14"/>
-  <text x="135" y="492" font-size="13.5" fill="#7A5A1E" text-anchor="middle">CoSA-Bench 288 任务</text>
-  <rect x="226" y="470" width="180" height="34" fill="url(#gIndigo)" opacity="0.12"/>
-  <text x="316" y="492" font-size="13.5" fill="#2E5E8C" text-anchor="middle">招聘 · 金融 · IT · 商业</text>
-  <rect x="422" y="470" width="198" height="34" fill="url(#gRose)" opacity="0.10"/>
-  <text x="521" y="492" font-size="13.5" fill="#B5442E" text-anchor="middle">泄露 · 越权改状态 · 危险执行</text>
+  <!-- gridlines at 20/40, x = 730 + 2.4*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="778" y1="418" x2="778" y2="590"/>
+    <line x1="826" y1="418" x2="826" y2="590"/>
+  </g>
+  <line x1="730" y1="590" x2="900" y2="590" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="730" y1="590" x2="730" y2="594"/>
+    <line x1="778" y1="590" x2="778" y2="594"/>
+    <line x1="826" y1="590" x2="826" y2="594"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="730" y="610">0</text>
+    <text x="778" y="610">20</text>
+    <text x="826" y="610">40</text>
+  </g>
+  <text x="815" y="634" font-size="14" fill="#1A1B1E" text-anchor="middle">比率（%，空心=守卫前，实心=守卫后）</text>
+  <text x="930" y="424" font-size="12" fill="#555">违规从 65.28% 降到 6.67%；</text>
+  <text x="930" y="440" font-size="12" fill="#555">完成率代价近乎为零</text>
 
-  <line x1="60" y1="540" x2="1140" y2="540" stroke="#E5E1D4" stroke-width="1"/>
-  <text x="60" y="576" font-size="13.5" fill="#5F5A4C">不改任何现有技能，不动运行时权限，只补一张牌——逐个审计通过，不等于凑一桌合规。</text>
-  <text x="60" y="648" font-size="12.5" fill="#A29C88">来源：arXiv:2610.35082（北科大 / 中科院软件所 / 国科大 / UNSW）· 论文自测口径 · 预印本未经同行评审 · 基线违规率 35.02% 为原始技能池自带</text>
+  <!-- footnote -->
+  <text x="110" y="420" font-size="14" fill="#1A1B1E">政策违规率（%）</text>
+  <text x="60" y="652" font-size="11" fill="#767676">数据：arXiv:2610.35082（CoSA-Bench 288 任务 × 5 模型 × 3 harness，论文自测口径，实测 2026-10-28）· a 面板 23.43 个百分点为增量而非总量，原池基线本身 35.02% · 预印本未经同行评审</text>
 </svg>

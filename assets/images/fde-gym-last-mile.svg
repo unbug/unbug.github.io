@@ -1,104 +1,59 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #A89A76; }
-      .rl { font-size: 15px; fill: #44402F; }
-      .val { font-size: 20px; font-weight: 700; }
-      .b { font-size: 12px; fill: #ADA48B; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F4E9"/>
-    </linearGradient>
-    <linearGradient id="gSoil" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#8A5A2B"/><stop offset="1" stop-color="#B07E45"/>
-    </linearGradient>
-    <linearGradient id="gLeaf" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#4E7A38"/><stop offset="1" stop-color="#7FA55A"/>
-    </linearGradient>
-    <linearGradient id="gPersimmon" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#C2452C"/><stop offset="1" stop-color="#E07A4E"/>
-    </linearGradient>
-    <linearGradient id="gStraw" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#C99A2E"/><stop offset="1" stop-color="#E3BE5F"/>
-    </linearGradient>
-    <linearGradient id="gSky" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#3E7C9B"/><stop offset="1" stop-color="#6FA3BC"/>
-    </linearGradient>
-    <linearGradient id="gPlum" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#8C4A68"/><stop offset="1" stop-color="#B3758F"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1108" cy="606" r="140" fill="#4E7A38" opacity="0.05"/>
-  <circle cx="84" cy="112" r="110" fill="#C2452C" opacity="0.05"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gPersimmon)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">最好配置 95 题平均分仅 0.56、解决 14 题；23 题问到全部关键事实后仍只有 10 题做到业务提升 ≥ 0.8</text>
 
-  <text class="k" x="64" y="84">一分钟读论文 · 2026-10-17 · ARXIV:2610.22350 · DeepLethe/清华/上交</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#26231A">问到不等于收进筐</text>
-  <text x="64" y="158" font-size="15" fill="#6E6752">FDE-Gym：95 个隐藏约束的交付任务，考 AI 自己问、自己做、自己交付</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">任务数漏斗（题）</text>
 
-  <!-- basket motif -->
-  <g>
-    <path d="M 1040 118 q 48 -22 96 0" stroke="#8A5A2B" stroke-width="4" fill="none" stroke-linecap="round"/>
-    <path d="M 1026 142 l 124 0 -16 52 q -46 16 -92 0 z" fill="url(#gSoil)"/>
-    <path d="M 1032 156 l 112 0 M 1036 172 l 104 0" stroke="#F7F4E9" stroke-width="2.5" opacity="0.5"/>
-    <circle cx="1056" cy="136" r="11" fill="url(#gPersimmon)"/>
-    <circle cx="1086" cy="130" r="11" fill="url(#gStraw)"/>
-    <circle cx="1116" cy="136" r="11" fill="url(#gLeaf)"/>
-    <circle cx="1142" cy="142" r="9" fill="#FFFFFF" stroke="#B9B199" stroke-width="2" stroke-dasharray="3 3"/>
-    <text class="b" x="1142" y="222" text-anchor="middle">95 题开秤，只有 14 筐达标</text>
+  <!-- gridline at 50, x = 300 + 8*n -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="700" y1="126" x2="700" y2="302"/>
   </g>
-
-  <!-- funnel: three harvest stages -->
-  <g>
-    <text class="rl" x="64" y="216" font-weight="700">秋收账目 · 逐层缩水</text>
-
-    <rect x="64" y="232" width="600" height="46" fill="url(#gSky)" opacity="0.08"/>
-    <text class="rl" x="88" y="261">开秤题目</text>
-    <rect x="240" y="243" width="342" height="24" rx="4" fill="url(#gSky)"/>
-    <text class="val" x="596" y="262" fill="#3E7C9B">95</text>
-    <text class="b" x="640" y="261">20 场景 · 18 行业 · 约束全隐藏</text>
-
-    <rect x="64" y="294" width="600" height="46" fill="url(#gStraw)" opacity="0.10"/>
-    <text class="rl" x="88" y="323">问到关键事实</text>
-    <rect x="240" y="305" width="83" height="24" rx="4" fill="url(#gStraw)"/>
-    <text class="val" x="337" y="324" fill="#9A7212">23</text>
-    <text class="b" x="382" y="323">最好配置全部问齐的题目</text>
-
-    <rect x="64" y="356" width="600" height="46" fill="url(#gPersimmon)" opacity="0.08"/>
-    <text class="rl" x="88" y="385">问到仍做出提升</text>
-    <rect x="240" y="367" width="36" height="24" rx="4" fill="url(#gPersimmon)"/>
-    <text class="val" x="290" y="386" fill="#C2452C">10</text>
-    <text class="b" x="336" y="385">业务提升 ≥ 0.8 · 信息齐了仍断在半路</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="288" y="153">全部任务</text>
+    <text x="288" y="213">问到全部关键事实</text>
+    <text x="288" y="273">业务提升 ≥ 0.8</text>
   </g>
+  <rect x="300" y="137" width="760" height="18" fill="#999999"/>
+  <text x="1068" y="153" font-size="12" fill="#FFFFFF" text-anchor="end">95</text>
+  <rect x="300" y="197" width="184" height="18" fill="#0072B2"/>
+  <text x="492" y="213" font-size="12" fill="#555">23</text>
+  <rect x="300" y="257" width="80" height="18" fill="#D55E00"/>
+  <text x="388" y="273" font-size="12" fill="#555">10</text>
 
-  <!-- right: score plate + solved + penalty -->
-  <g>
-    <rect x="720" y="232" width="200" height="132" fill="#C2452C" opacity="0.06"/>
-    <rect x="720" y="232" width="200" height="5" fill="url(#gPersimmon)"/>
-    <text class="b" x="740" y="262">最好配置平均分</text>
-    <text class="serif" x="740" y="318" font-size="52" font-weight="700" fill="#C2452C">0.56</text>
-    <text class="b" x="740" y="346">对参考解归一化 · 满分 1</text>
-
-    <rect x="940" y="232" width="196" height="132" fill="#4E7A38" opacity="0.07"/>
-    <rect x="940" y="232" width="196" height="5" fill="url(#gLeaf)"/>
-    <text class="b" x="960" y="262">真正解决</text>
-    <text class="serif" x="960" y="318" font-size="52" font-weight="700" fill="#4E7A38">14 题</text>
-    <text class="b" x="960" y="346">口径：得分 ≥ 0.8 且全程无事故</text>
+  <!-- value axis -->
+  <line x1="300" y1="302" x2="740" y2="302" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="300" y1="302" x2="300" y2="306"/>
+    <line x1="700" y1="302" x2="700" y2="306"/>
   </g>
-
-  <!-- bottom strip: scoring rules -->
-  <g>
-    <text class="rl" x="64" y="452" font-weight="700">秤杆怎么定</text>
-    <text x="64" y="482" font-size="14" fill="#44402F">0 分 = 原样未动</text>
-    <text x="248" y="482" font-size="14" fill="#44402F">1 分 = 达到参考解</text>
-    <text x="452" y="482" font-size="14" fill="#8C4A68">每条消息、试跑、等待都计分扣减</text>
-    <line x1="64" y1="502" x2="1136" y2="502" stroke="#E5DFC8"/>
-    <text class="serif" x="64" y="546" font-size="22" font-weight="700" fill="#8A5A2B">13 个模型配置 · 7 家 provider · 同一套环境对人开放</text>
-    <text class="b" x="64" y="576">分数绑定客户自身成功指标，不是题目完成度 · Micropaper</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="300" y="322">0</text>
+    <text x="700" y="322">50</text>
   </g>
+  <text x="520" y="346" font-size="14" fill="#1A1B1E" text-anchor="middle">任务数（题）</text>
+  <text x="300" y="376" font-size="12" fill="#555">第 2 行为问到全部关键事实的 23 题，第 3 行为其中最好配置做出业务提升 ≥ 0.8 的 10 题；问到 ≠ 做出来</text>
 
-  <text class="b" x="64" y="640">2026 年 10 月预印本，未经同行评审 · 0.56 为归一化得分而非成功率 · 数据口径以论文后续版本为准</text>
+  <!-- ============ panel b ============ -->
+  <text x="60" y="430" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="430" font-size="15" fill="#1A1B1E">最好配置的整体成绩（13 个模型配置、7 家 provider 中的最好值）</text>
+
+  <!-- gauge 1: avg score 0.56 of reference; track width 560 = 0.56/0.56 rescaled -->
+  <text x="80" y="472" font-size="12.5" fill="#1A1B1E">平均分（相对参考解归一化，参考解记 1）</text>
+  <rect x="80" y="486" width="640" height="18" fill="none" stroke="#999999" stroke-width="1.5"/>
+  <rect x="80" y="486" width="358.4" height="18" fill="#0072B2"/>
+  <text x="446" y="500" font-size="12" fill="#FFFFFF">0.56</text>
+  <text x="728" y="500" font-size="12" fill="#555">满条 = 参考解</text>
+
+  <!-- gauge 2: solved 14 of 95 -->
+  <text x="80" y="544" font-size="12.5" fill="#1A1B1E">解决题数（得分 ≥ 0.8 且全程无事故）</text>
+  <rect x="80" y="558" width="640" height="18" fill="none" stroke="#999999" stroke-width="1.5"/>
+  <rect x="80" y="558" width="94.3" height="18" fill="#D55E00"/>
+  <text x="182" y="572" font-size="12" fill="#555">14 题 / 满条 = 全部 95 题</text>
+
+  <!-- footnote -->
+  <text x="60" y="652" font-size="11" fill="#767676">数据：arXiv:2610.22350（95 任务 × 20 客户场景 × 18 行业，评分相对参考解归一化并计入交互罚分，论文自测口径，2026 年 10 月挂出预印本）· 0.56 为平均分而非成功率 · 预印本未经同行评审</text>
 </svg>

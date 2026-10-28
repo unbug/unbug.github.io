@@ -1,112 +1,114 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #93907E; }
-      .rl { font-size: 15px; fill: #4C4B42; }
-      .b { font-size: 12px; fill: #A39F8A; }
-      .stat { font-size: 28px; font-weight: 700; fill: #23241E; }
-      .val { font-size: 19px; font-weight: 700; fill: #23241E; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F6F4EC"/>
-    </linearGradient>
-    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2E5C8A"/><stop offset="1" stop-color="#6E93BC"/>
-    </linearGradient>
-    <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2F7D61"/><stop offset="1" stop-color="#74B58F"/>
-    </linearGradient>
-    <linearGradient id="gOchre" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#C07A2E"/><stop offset="1" stop-color="#E3AC63"/>
-    </linearGradient>
-    <linearGradient id="gPlum" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7D4A6B"/><stop offset="1" stop-color="#B07FA0"/>
-    </linearGradient>
-    <linearGradient id="gRed" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#B5442E"/><stop offset="1" stop-color="#DB8168"/>
-    </linearGradient>
-    <linearGradient id="gInk" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#2E5C8A"/><stop offset="1" stop-color="#7D4A6B"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1128" cy="612" r="140" fill="#7D4A6B" opacity="0.05"/>
-  <circle cx="88" cy="112" r="110" fill="#C07A2E" opacity="0.07"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gRed)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">直接问智能体 93.6% 的任务状态问题能答对，只看例行报告只恢复 52.0%，相差 40.7 个百分点，结案时仍不收敛</text>
 
-  <text class="k" x="64" y="84">一分钟读论文 · 2026-10-16 · ARXIV:2610.20003</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#23241E">例行报告天然漏字</text>
-  <text x="64" y="158" font-size="15" fill="#6B675A">问智能体本人 93.6% 答对，只看它写的报告只剩 52.0%</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">三种读取方式的任务状态恢复率（%）</text>
 
-  <!-- printing press motif -->
-  <g>
-    <rect x="982" y="86" width="152" height="96" rx="8" fill="#FDFCF7" stroke="#23241E" stroke-width="3"/>
-    <rect x="996" y="102" width="94" height="7" rx="3" fill="url(#gInk)"/>
-    <rect x="996" y="118" width="112" height="7" rx="3" fill="url(#gInk)"/>
-    <rect x="996" y="134" width="70" height="7" rx="3" fill="url(#gInk)"/>
-    <rect x="1074" y="134" width="34" height="7" rx="3" fill="#C9C4B2"/>
-    <rect x="996" y="150" width="104" height="7" rx="3" fill="url(#gInk)"/>
-    <circle cx="1058" cy="208" r="24" fill="none" stroke="url(#gInk)" stroke-width="8"/>
-    <circle cx="1114" cy="208" r="16" fill="none" stroke="#C07A2E" stroke-width="6"/>
-    <rect x="1020" y="232" width="120" height="16" rx="3" fill="#FDFCF7" stroke="#B5442E" stroke-width="2.5" stroke-dasharray="7 5"/>
-    <text class="b" x="1058" y="270" text-anchor="middle">同一版，印出来短一截</text>
+  <!-- gridlines horizontal majors at 50, y = 360 - 3*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="140" y1="210" x2="560" y2="210"/>
   </g>
+  <!-- 93.6 : h=3*93.6=280.8 -->
+  <rect x="175" y="79.2" width="70" height="280.8" fill="#999999"/>
+  <text x="210" y="72" font-size="12" fill="#555" text-anchor="middle">93.6</text>
+  <text x="210" y="378" font-size="12.5" fill="#1A1B1E" text-anchor="middle">直接问智能体</text>
+  <!-- 92.7 : h=278.1 -->
+  <rect x="305" y="81.9" width="70" height="278.1" fill="#999999"/>
+  <text x="340" y="75" font-size="12" fill="#555" text-anchor="middle">92.7</text>
+  <text x="340" y="378" font-size="12.5" fill="#1A1B1E" text-anchor="middle">读完整执行记录</text>
+  <!-- 52.0 : h=156 emphasis -->
+  <rect x="435" y="204" width="70" height="156" fill="#D55E00"/>
+  <text x="470" y="196" font-size="12" fill="#555" text-anchor="middle">52.0</text>
+  <text x="470" y="378" font-size="12.5" fill="#1A1B1E" text-anchor="middle">只看报告</text>
+  <!-- delta annotation: leader at mean of tops (85.95) and report top (204) -->
+  <line x1="505" y1="204" x2="548" y2="204" stroke="#555555" stroke-width="0.75" stroke-dasharray="4 3"/>
+  <line x1="375" y1="85.95" x2="548" y2="85.95" stroke="#555555" stroke-width="0.75" stroke-dasharray="4 3"/>
+  <line x1="548" y1="85.95" x2="548" y2="204" stroke="#555555" stroke-width="0.75" stroke-dasharray="4 3"/>
+  <text x="560" y="100" font-size="12" fill="#1A1B1E">Δ=40.7 个百分点</text>
+  <text x="560" y="116" font-size="11" fill="#767676">（对前两柱均值）</text>
+  
 
-  <!-- recovery rate bars: 1% = 8.2 px, x0=316 -->
-  <g>
-    <rect x="316" y="204" width="760" height="40" rx="9" fill="#2E5C8A" opacity="0.07"/>
-    <rect x="316" y="254" width="760" height="40" rx="9" fill="#2F7D61" opacity="0.07"/>
-    <rect x="316" y="304" width="760" height="40" rx="9" fill="#B5442E" opacity="0.07"/>
-
-    <text class="rl" x="300" y="229" text-anchor="end">直接问智能体</text>
-    <rect x="316" y="212" width="768" height="24" rx="12" fill="url(#gBlue)"/>
-    <text x="1070" y="229" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="end">93.6%</text>
-
-    <text class="rl" x="300" y="279" text-anchor="end">读完整执行记录</text>
-    <rect x="316" y="262" width="761" height="24" rx="12" fill="url(#gGreen)"/>
-    <text x="1063" y="279" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="end">92.7%</text>
-
-    <text class="rl" x="300" y="329" text-anchor="end">只看例行报告</text>
-    <rect x="316" y="312" width="426" height="24" rx="12" fill="url(#gRed)"/>
-    <text x="756" y="329" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="end">52.0%</text>
-    <line x1="1084" y1="284" x2="1084" y2="336" stroke="#B5442E" stroke-width="2" stroke-dasharray="4 4"/>
-    <text x="1076" y="298" class="b" text-anchor="end">缺口 40.7 点</text>
+  <!-- value axis -->
+  <line x1="140" y1="360" x2="560" y2="360" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="140" y1="360" x2="136" y2="360"/>
+    <line x1="140" y1="210" x2="136" y2="210"/>
   </g>
-
-  <!-- remediation chips -->
-  <g>
-    <text class="b" x="64" y="368">补救两条线，都追不平完整记录</text>
-    <rect x="64" y="380" width="248" height="34" rx="17" fill="#C07A2E" opacity="0.12"/>
-    <text x="84" y="402" font-size="13.5" fill="#8A5620">终端全量回滚内容 → <tspan font-weight="700">73.6%</tspan></text>
-    <rect x="326" y="380" width="256" height="34" rx="17" fill="#7D4A6B" opacity="0.12"/>
-    <text x="346" y="402" font-size="13.5" fill="#5E3850">报告信息重写 → <tspan font-weight="700">约 +8 点</tspan></text>
-    <text class="b" x="598" y="402">提示怎么写，都救不回这条通道</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="130" y="364">0</text>
+    <text x="130" y="214">50</text>
   </g>
+  <text x="350" y="412" font-size="14" fill="#1A1B1E" text-anchor="middle">任务状态恢复率（%）</text>
+  <text x="60" y="436" font-size="12" fill="#555">测量口径：37 个编码任务 × 4,799 个有效探针；这是读取方式的可恢复性对比，不是任务成功率</text>
 
-  <!-- stat cards -->
-  <g>
-    <rect x="64" y="436" width="340" height="126" rx="14" fill="#2E5C8A" opacity="0.07"/>
-    <rect x="64" y="436" width="340" height="6" rx="3" fill="url(#gBlue)"/>
-    <text class="stat" x="88" y="484">37 任务<tspan font-size="13" fill="#6B675A">　4,799 探针</tspan></text>
-    <text x="88" y="516" font-size="13.5" fill="#4C4B42">测量的是报告与完整记录之间，</text>
-    <text x="88" y="536" font-size="13.5" fill="#4C4B42">任务状态的可恢复性差距</text>
+  <!-- ============ panel b ============ -->
+  <text x="660" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="682" y="104" font-size="15" fill="#1A1B1E">报告读者与完整上下文读者的差距（百分点）</text>
 
-    <rect x="430" y="436" width="340" height="126" rx="14" fill="#B5442E" opacity="0.07"/>
-    <rect x="430" y="436" width="340" height="6" rx="3" fill="url(#gRed)"/>
-    <text x="454" y="484" class="stat" font-size="22">结案仍差 34.8 点<tspan font-size="13" fill="#6B675A">　30 个已验证修复</tspan></text>
-    <text x="454" y="516" font-size="13.5" fill="#4C4B42">最大缺口不是隐瞒，是失败尝试、</text>
-    <text x="454" y="536" font-size="13.5" fill="#4C4B42">变通与风险被一笔带过</text>
-
-    <rect x="796" y="436" width="340" height="126" rx="14" fill="#2F7D61" opacity="0.07"/>
-    <rect x="796" y="436" width="340" height="6" rx="3" fill="url(#gGreen)"/>
-    <text class="stat" x="820" y="484" font-size="26">93.6% ≠ 会说</text>
-    <text x="820" y="516" font-size="13.5" fill="#4C4B42">被问到就知道，不等于报告里</text>
-    <text x="820" y="536" font-size="13.5" fill="#4C4B42">主动说；跨 harness 稳定复现</text>
+  <!-- gridlines vertical at 25/50, x = 800 + 3.2*pp -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="880" y1="126" x2="880" y2="252"/>
+    <line x1="960" y1="126" x2="960" y2="252"/>
   </g>
+  <!-- full-run gap 40.7 : w=130.24 -->
+  <rect x="800" y="137" width="130.24" height="18" fill="#999999"/>
+  <text x="808" y="132" font-size="12" fill="#555">40.7 个百分点（全任务）</text>
+  <!-- final checkpoint gap 34.8 : w=111.36 emphasis -->
+  <rect x="800" y="207" width="111.36" height="18" fill="#D55E00"/>
+  <text x="808" y="202" font-size="12" fill="#555">34.8 个百分点（30 个已验证修复的最终检查点）</text>
 
-  <line x1="64" y1="586" x2="1136" y2="586" stroke="#E5E1D2"/>
-  <text class="serif" x="64" y="622" font-size="19" fill="#23241E">例行报告当交接文档可以，当审计日志不行；要复盘，回到完整执行记录。</text>
-  <text class="b" x="64" y="652">腾讯 × 中国科学技术大学 · 预印本 · 数字为任务状态可恢复性而非任务成功率 · Micropaper</text>
+  <!-- value axis -->
+  <line x1="800" y1="252" x2="1000" y2="252" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="800" y1="252" x2="800" y2="256"/>
+    <line x1="880" y1="252" x2="880" y2="256"/>
+    <line x1="960" y1="252" x2="960" y2="256"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="800" y="272">0</text>
+    <text x="880" y="272">25</text>
+    <text x="960" y="272">50</text>
+  </g>
+  <text x="900" y="296" font-size="14" fill="#1A1B1E" text-anchor="middle">恢复率差距（百分点）</text>
+  <text x="660" y="326" font-size="12" fill="#555">差距不随任务收尾消失：结案检查点上仍有 34.8 个点</text>
+
+  <!-- ============ panel c ============ -->
+  <text x="660" y="378" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="682" y="378" font-size="15" fill="#1A1B1E">补救路线后的报告读者恢复率（%）</text>
+
+  <!-- gridlines horizontal at 50, y = 580 - 3*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="740" y1="430" x2="940" y2="430"/>
+  </g>
+  <!-- 73.6 : h=220.8, y=359.2 -->
+  <rect x="765" y="359.2" width="70" height="220.8" fill="#0072B2"/>
+  <text x="800" y="351" font-size="12" fill="#555" text-anchor="middle">73.6</text>
+  <text x="800" y="614" font-size="12.5" fill="#1A1B1E" text-anchor="middle">终端完整回滚内容</text>
+  <!-- 52.0 baseline : h=156, y=424 -->
+  <rect x="875" y="424" width="70" height="156" fill="#999999"/>
+  <text x="910" y="416" font-size="12" fill="#555" text-anchor="middle">52.0</text>
+  <text x="910" y="614" font-size="12.5" fill="#1A1B1E" text-anchor="middle">无补救（基线）</text>
+  <text x="660" y="452" font-size="12" fill="#555">补救后 73.6，仍明显低于完整上下文读者的 92.7</text>
+  <text x="660" y="530" font-size="12" fill="#555">上下文信息重写（报告长度对齐）</text>
+  <text x="660" y="548" font-size="12" fill="#555">只抬升约 8 个点；针对性提示重写</text>
+  <text x="660" y="566" font-size="12" fill="#555">相对自然重写无可检测优势</text>
+
+  <!-- value axis -->
+  <line x1="740" y1="580" x2="940" y2="580" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="740" y1="580" x2="736" y2="580"/>
+    <line x1="740" y1="430" x2="736" y2="430"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="730" y="584">0</text>
+    <text x="730" y="434">50</text>
+  </g>
+  <text x="676" y="612" font-size="14" fill="#1A1B1E">恢复率（%）</text>
+
+  <!-- footnote -->
+  <text x="60" y="662" font-size="11" fill="#767676">数据：arXiv:2610.20003（37 任务 × 4,799 探针，论文自测口径）· 缺口最大类别为状态被提及但缺支撑细节 · 差距跨 harness 持续存在并在独立 DeepSeek 链路复现 · 预印本未经同行评审</text>
 </svg>
