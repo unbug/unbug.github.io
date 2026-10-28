@@ -1,109 +1,94 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8F93A6; }
-      .rl { font-size: 15px; fill: #3E4457; }
-      .val { font-size: 20px; font-weight: 700; }
-      .b { font-size: 12px; fill: #A3A7B8; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F2F2F8"/>
-    </linearGradient>
-    <linearGradient id="gRed" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#C0392B"/><stop offset="1" stop-color="#E8785C"/>
-    </linearGradient>
-    <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#D9622B"/><stop offset="1" stop-color="#EFA06B"/>
-    </linearGradient>
-    <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2F8A5B"/><stop offset="1" stop-color="#7CC493"/>
-    </linearGradient>
-    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#0F7B8A"/><stop offset="1" stop-color="#5CB8C4"/>
-    </linearGradient>
-    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#C99327"/><stop offset="1" stop-color="#EBC55E"/>
-    </linearGradient>
-    <linearGradient id="gSlate" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#44506B"/><stop offset="1" stop-color="#7B87A3"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1110" cy="100" r="130" fill="#0F7B8A" opacity="0.06"/>
-  <circle cx="80" cy="615" r="120" fill="#C0392B" opacity="0.05"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gRed)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">同一 16K token 预算下，示例工作流整体成功率从约 45% 升至约 67%，动态分配较均匀分配高 22 个百分点</text>
 
-  <text class="k" x="64" y="84">AI 范式雷达 · ARXIV:2607.28573</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#20242F">算力给错地方，失败更隐蔽</text>
-  <text x="64" y="158" font-size="15" fill="#6A6E80">Agent 推理时扩展：从均匀预算转向按难度动态分配</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">两种预算分配下的整体成功率（%）</text>
 
-  <!-- subway signal motif -->
-  <g>
-    <rect x="1074" y="66" width="34" height="92" rx="14" fill="#44506B"/>
-    <circle cx="1091" cy="90" r="10" fill="url(#gRed)"/>
-    <circle cx="1091" cy="112" r="10" fill="#EBC55E" opacity="0.35"/>
-    <circle cx="1091" cy="134" r="10" fill="#7CC493" opacity="0.35"/>
-    <path d="M 1006 186 q 85 -34 170 0" fill="none" stroke="#44506B" stroke-width="3" opacity="0.5"/>
-    <rect x="1010" y="176" width="34" height="16" rx="4" fill="url(#gTeal)"/>
-    <text class="b" x="1091" y="216" text-anchor="middle">前方到站：动态调度</text>
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="625" y1="130" x2="625" y2="288"/>
+    <line x1="950" y1="130" x2="950" y2="288"/>
   </g>
-
-  <!-- subway line: uniform vs dynamic budget -->
-  <g>
-    <text class="rl" x="64" y="222" font-weight="700" fill="#20242F">同一趟 8 步任务 · 两种给电方式</text>
-
-    <line x1="104" y1="266" x2="1096" y2="266" stroke="#B9BDCC" stroke-width="4" stroke-dasharray="1 9" stroke-linecap="round"/>
-    <line x1="104" y1="388" x2="1096" y2="388" stroke="#B9BDCC" stroke-width="4" stroke-dasharray="1 9" stroke-linecap="round"/>
-    <text class="b" x="104" y="308" fill="#8A6E1E">均匀供电 · 每步一律 2K</text>
-    <text class="b" x="104" y="430" fill="#1F5A50">按难度供电 · 简单快步过</text>
-
-    <!-- uniform cars: all same size -->
-    <g>
-      <rect x="140" y="246" width="60" height="40" rx="8" fill="url(#gGold)"/>
-      <rect x="258" y="246" width="60" height="40" rx="8" fill="url(#gGold)"/>
-      <rect x="376" y="246" width="60" height="40" rx="8" fill="url(#gGold)"/>
-      <rect x="494" y="246" width="60" height="40" rx="8" fill="url(#gGold)"/>
-      <rect x="612" y="246" width="60" height="40" rx="8" fill="url(#gGold)"/>
-      <rect x="730" y="246" width="60" height="40" rx="8" fill="url(#gRed)"/>
-      <text x="760" y="272" text-anchor="end" font-size="16" font-weight="700" fill="#FFFFFF">?</text>
-      <rect x="848" y="246" width="60" height="40" rx="8" fill="url(#gRed)"/>
-      <text x="878" y="272" text-anchor="end" font-size="16" font-weight="700" fill="#FFFFFF">?</text>
-      <rect x="966" y="246" width="60" height="40" rx="8" fill="url(#gRed)"/>
-      <text x="996" y="272" text-anchor="end" font-size="16" font-weight="700" fill="#FFFFFF">?</text>
-    </g>
-
-    <!-- dynamic cars: sized to difficulty -->
-    <g>
-      <rect x="140" y="368" width="24" height="40" rx="8" fill="url(#gTeal)"/>
-      <rect x="200" y="368" width="24" height="40" rx="8" fill="url(#gTeal)"/>
-      <rect x="260" y="368" width="24" height="40" rx="8" fill="url(#gTeal)"/>
-      <rect x="320" y="368" width="66" height="40" rx="8" fill="url(#gGreen)"/>
-      <rect x="422" y="368" width="66" height="40" rx="8" fill="url(#gGreen)"/>
-      <rect x="524" y="368" width="152" height="40" rx="8" fill="url(#gOrange)"/>
-      <rect x="712" y="368" width="152" height="40" rx="8" fill="url(#gOrange)"/>
-      <rect x="900" y="368" width="152" height="40" rx="8" fill="url(#gOrange)"/>
-    </g>
-
-    <text class="b" x="1096" y="308" text-anchor="end">困难步骤 2K 不够用</text>
-    <text class="b" x="1096" y="430" text-anchor="end">简单 &lt;500 · 中等 2K · 困难 2K–10K+</text>
+  <!-- horizontal value axis: x = 300 + 13*v -->
+  <line x1="300" y1="288" x2="1000" y2="288" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="300" y1="288" x2="300" y2="292"/>
+    <line x1="625" y1="288" x2="625" y2="292"/>
+    <line x1="950" y1="288" x2="950" y2="292"/>
   </g>
-
-  <!-- big anchors -->
-  <g>
-    <text class="serif" x="64" y="536" font-size="46" font-weight="700" fill="#20242F">45% <tspan fill="#A9A9B8" font-size="24">→</tspan> <tspan fill="#C0392B">67%</tspan></text>
-    <text class="b" x="64" y="558" fill="#6A6E80">示例工作流整体成功率 · 该文自测口径 · 效率另升约 35%</text>
-
-    <line x1="560" y1="524" x2="810" y2="500" stroke="url(#gRed)" stroke-width="3.5"/>
-    <circle cx="560" cy="524" r="7" fill="#FFFFFF" stroke="#44506B" stroke-width="3"/>
-    <circle cx="810" cy="500" r="8" fill="url(#gRed)"/>
-    <text class="val" x="546" y="530" text-anchor="end" fill="#44506B" font-size="17">停滞</text>
-    <text class="val" x="824" y="506" fill="#C0392B" font-size="17">过早错误成功</text>
-    <text class="b" x="560" y="558" fill="#C0392B">加算力不改成功率，只把失败挪位 · 前者可回退，后者不可逆</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="300" y="310">0</text>
+    <text x="625" y="310">25</text>
+    <text x="950" y="310">50</text>
   </g>
+  <text x="650" y="334" font-size="14" fill="#1A1B1E" text-anchor="middle">整体成功率（%）</text>
 
-  <line x1="64" y1="588" x2="1136" y2="588" stroke="#E2E2EC"/>
-  <text class="serif" x="64" y="620" font-size="19" fill="#20242F">问题不在算力不够多，而在分配方式不对。</text>
-  <text class="b" x="64" y="650">ToT 74% 对 GPT-4 4% · o3 在 AIME 约 96% · 67% 等为综合推断示例 · Micropaper</text>
+  <!-- bars -->
+  <text x="288" y="166" font-size="12.5" fill="#1A1B1E" text-anchor="end">均匀分配（每步 2K）</text>
+  <rect x="300" y="152" width="585" height="18" fill="#999999"/>
+  <text x="893" y="166" font-size="12" fill="#555">约 45%</text>
+
+  <text x="288" y="238" font-size="12.5" fill="#1A1B1E" text-anchor="end">动态预算分配</text>
+  <rect x="300" y="224" width="871" height="18" fill="#D55E00"/>
+  <text x="1030" y="262" font-size="12" fill="#1A1B1E">Δ=+22 个百分点</text>
+  <text x="1140" y="238" font-size="12" fill="#555" text-anchor="end">约 67%</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="60" y="392" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="392" font-size="15" fill="#1A1B1E">示例工作流（8 步工具调用）的步骤级 token 配额（千 tokens）</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="360" y1="416" x2="360" y2="600"/>
+    <line x1="610" y1="416" x2="610" y2="600"/>
+    <line x1="860" y1="416" x2="860" y2="600"/>
+    
+  </g>
+  <!-- horizontal axis: x = 360 + 50*v (thousand tokens) -->
+  <line x1="360" y1="600" x2="910" y2="600" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="360" y1="600" x2="360" y2="604"/>
+    <line x1="610" y1="600" x2="610" y2="604"/>
+    <line x1="860" y1="600" x2="860" y2="604"/>
+    
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="360" y="620">0</text>
+    <text x="610" y="620">5</text>
+    <text x="860" y="620">10</text>
+    
+  </g>
+  <text x="635" y="642" font-size="14" fill="#1A1B1E" text-anchor="middle">每步 token 配额（千 tokens）</text>
+
+  <!-- uniform: 3 groups x 3 steps at 2K; actual need of easy steps 1.5K -->
+  <text x="348" y="446" font-size="12.5" fill="#1A1B1E" text-anchor="end">简单 × 3 步</text>
+  <rect x="360" y="436" width="100" height="14" fill="#999999"/>
+  <rect x="360" y="436" width="75" height="14" fill="none" stroke="#D55E00" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="470" y="447" font-size="12" fill="#555">每步 2K（实际需要 1.5K）</text>
+
+  <text x="348" y="490" font-size="12.5" fill="#1A1B1E" text-anchor="end">中等 × 2 步</text>
+  <rect x="360" y="480" width="100" height="14" fill="#999999"/>
+  <text x="470" y="491" font-size="12" fill="#555">每步 2K</text>
+
+  <text x="348" y="534" font-size="12.5" fill="#1A1B1E" text-anchor="end">困难 × 3 步</text>
+  <rect x="360" y="524" width="100" height="14" fill="#999999"/>
+  <line x1="560" y1="519" x2="760" y2="519" stroke="#D55E00" stroke-width="1.5"/>
+  <line x1="560" y1="514" x2="560" y2="524" stroke="#D55E00" stroke-width="1.5"/>
+  <line x1="760" y1="514" x2="760" y2="524" stroke="#D55E00" stroke-width="1.5"/>
+  <text x="770" y="519" font-size="12" fill="#555">实际需要 4–8K，每步 2K 不足</text>
+
+  <!-- dynamic allocation -->
+  <text x="348" y="570" font-size="12.5" fill="#1A1B1E" text-anchor="end">动态：简单</text>
+  <rect x="360" y="560" width="25" height="14" fill="#0072B2"/>
+  <text x="393" y="571" font-size="12" fill="#555">每步 500</text>
+
+  <text x="348" y="588" font-size="12.5" fill="#1A1B1E" text-anchor="end">动态：中等/困难</text>
+  <rect x="360" y="578" width="100" height="14" fill="#0072B2"/>
+  <rect x="360" y="578" width="300" height="14" fill="#D55E00"/>
+  <text x="670" y="589" font-size="12" fill="#555">中等每步 2K · 困难每步 6K</text>
+
+  <!-- footnote -->
+  <text x="60" y="662" font-size="11" fill="#767676">数据：arXiv:2607.28573 实证与行业基准的综合推断示例（正文声明：实际效果取决于任务分布与实现质量）· 预算分配档位取自正文示例（总预算 16K）· 自估口径，非论文实测</text>
 </svg>

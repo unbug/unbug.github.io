@@ -1,99 +1,85 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="'Segoe UI', Arial, sans-serif">
-  <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1f3a;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#2d3561;stop-opacity:1"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="800" height="400" fill="url(#bgGrad)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">正文示例的三档预算配置对简单、中等、困难任务的每步 token 上限分别为 500、2K、8K</text>
 
-  <!-- Title -->
-  <text x="400" y="40" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="bold">预算分配策略对比</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">三档难度配置的每步 token 上限（千 tokens）</text>
 
-  <!-- Three strategy columns -->
-  <!-- Sequential Adaptive -->
-  <rect x="30" y="70" width="220" height="280" rx="10" fill="#1e2a4a" stroke="#4a90d9" stroke-width="1"/>
-  <text x="140" y="105" text-anchor="middle" fill="#6bb5f0" font-size="15" font-weight="bold">串行自适应</text>
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="490" y1="128" x2="490" y2="296"/>
+    <line x1="680" y1="128" x2="680" y2="296"/>
+    <line x1="870" y1="128" x2="870" y2="296"/>
+  </g>
+  <!-- value axis: x = 300 + 95*v -->
+  <line x1="300" y1="296" x2="990" y2="296" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="300" y1="296" x2="300" y2="300"/>
+    <line x1="490" y1="296" x2="490" y2="300"/>
+    <line x1="680" y1="296" x2="680" y2="300"/>
+    <line x1="870" y1="296" x2="870" y2="300"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="300" y="318">0</text>
+    <text x="490" y="318">2</text>
+    <text x="680" y="318">4</text>
+    <text x="870" y="318">6</text>
+  </g>
+  <text x="645" y="340" font-size="14" fill="#1A1B1E" text-anchor="middle">每步 token 上限（千 tokens）</text>
 
-  <!-- Steps -->
-  <rect x="50" y="125" width="180" height="35" rx="4" fill="#3a4a7a"/>
-  <text x="140" y="148" text-anchor="middle" fill="#ffffff" font-size="12">Step 1: Simple (500t)</text>
+  <text x="288" y="160" font-size="12.5" fill="#1A1B1E" text-anchor="end">简单档</text>
+  <rect x="300" y="146" width="47.5" height="18" fill="#0072B2"/>
+  <text x="356" y="160" font-size="12" fill="#555">500 · 1 步 · 无反思</text>
 
-  <rect x="50" y="170" width="180" height="35" rx="4" fill="#4a90d9"/>
-  <text x="140" y="193" text-anchor="middle" fill="#ffffff" font-size="12">Step 2: Medium (2Kt)</text>
+  <text x="288" y="216" font-size="12.5" fill="#1A1B1E" text-anchor="end">中等档</text>
+  <rect x="300" y="202" width="190" height="18" fill="#0072B2"/>
+  <text x="499" y="216" font-size="12" fill="#555">2K · 3 步 · 有反思</text>
 
-  <rect x="50" y="215" width="180" height="35" rx="4" fill="#6bb5f0"/>
-  <text x="140" y="238" text-anchor="middle" fill="#ffffff" font-size="12">Step 3: Hard (6Kt)</text>
+  <text x="288" y="272" font-size="12.5" fill="#1A1B1E" text-anchor="end">困难档</text>
+  <rect x="300" y="258" width="760" height="18" fill="#D55E00"/>
+  <text x="60" y="296" font-size="12" fill="#555">硬约束：单次不超过总预算的 60%</text>
+  <text x="1069" y="272" font-size="12" fill="#555" text-anchor="end">8K · 5 步 · 反思与回退</text>
 
-  <rect x="50" y="260" width="180" height="35" rx="4" fill="#3a4a7a"/>
-  <text x="140" y="283" text-anchor="middle" fill="#ffffff" font-size="12">Step 4: Simple (500t)</text>
+  <!-- ============ panel b ============ -->
+  <text x="60" y="396" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="396" font-size="15" fill="#1A1B1E">示例工作流（8 步 · 总预算 16K）的步骤级 token 配额（千 tokens）</text>
 
-  <!-- Arrows between steps -->
-  <line x1="140" y1="160" x2="140" y2="170" stroke="#a0b4d0" stroke-width="1.5"/>
-  <line x1="140" y1="205" x2="140" y2="215" stroke="#a0b4d0" stroke-width="1.5"/>
-  <line x1="140" y1="250" x2="140" y2="260" stroke="#a0b4d0" stroke-width="1.5"/>
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="610" y1="420" x2="610" y2="600"/>
+    <line x1="860" y1="420" x2="860" y2="600"/>
+  </g>
+  <!-- horizontal axis: x = 360 + 50*v -->
+  <line x1="360" y1="600" x2="910" y2="600" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="360" y1="600" x2="360" y2="604"/>
+    <line x1="610" y1="600" x2="610" y2="604"/>
+    <line x1="860" y1="600" x2="860" y2="604"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="360" y="620">0</text>
+    <text x="610" y="620">5</text>
+    <text x="860" y="620">10</text>
+  </g>
+  <text x="635" y="642" font-size="14" fill="#1A1B1E" text-anchor="middle">每步 token 配额（千 tokens）</text>
 
-  <!-- Pros/Cons -->
-  <text x="140" y="320" text-anchor="middle" fill="#5ee68a" font-size="11">+ 实现简单 · 延迟可控</text>
-  <text x="140" y="340" text-anchor="middle" fill="#ff6b60" font-size="11">- 早期错误会传播</text>
+  <text x="348" y="450" font-size="12.5" fill="#1A1B1E" text-anchor="end">均匀分配</text>
+  <rect x="360" y="440" width="100" height="14" fill="#999999"/>
+  <text x="470" y="451" font-size="12" fill="#555">每步一律 2K</text>
 
-  <!-- Parallel Exploration -->
-  <rect x="290" y="70" width="220" height="280" rx="10" fill="#1e2a4a" stroke="#34c759" stroke-width="1"/>
-  <text x="400" y="105" text-anchor="middle" fill="#5ee68a" font-size="15" font-weight="bold">并行探索</text>
+  <text x="348" y="500" font-size="12.5" fill="#1A1B1E" text-anchor="end">动态 · 简单 3 步</text>
+  <rect x="360" y="490" width="25" height="14" fill="#0072B2"/>
+  <text x="393" y="501" font-size="12" fill="#555">每步 500</text>
 
-  <!-- Parallel branches -->
-  <rect x="310" y="125" width="180" height="35" rx="4" fill="#34c759"/>
-  <text x="400" y="148" text-anchor="middle" fill="#ffffff" font-size="12">Path A: Tool 1 (3Kt)</text>
+  <text x="348" y="540" font-size="12.5" fill="#1A1B1E" text-anchor="end">动态 · 中等 2 步</text>
+  <rect x="360" y="530" width="100" height="14" fill="#0072B2"/>
+  <text x="470" y="541" font-size="12" fill="#555">每步 2K</text>
 
-  <rect x="310" y="170" width="180" height="35" rx="4" fill="#3a4a7a"/>
-  <text x="400" y="193" text-anchor="middle" fill="#ffffff" font-size="12">Path B: Tool 2 (3Kt)</text>
+  <text x="348" y="580" font-size="12.5" fill="#1A1B1E" text-anchor="end">动态 · 困难 3 步</text>
+  <rect x="360" y="570" width="300" height="14" fill="#D55E00"/>
+  <text x="670" y="581" font-size="12" fill="#555">每步 6K（受总预算约束动态调整）</text>
 
-  <rect x="310" y="215" width="180" height="35" rx="4" fill="#3a4a7a"/>
-  <text x="400" y="238" text-anchor="middle" fill="#ffffff" font-size="12">Path C: Tool 3 (3Kt)</text>
-
-  <!-- Merge -->
-  <rect x="330" y="265" width="140" height="35" rx="4" fill="#6bb5f0"/>
-  <text x="400" y="288" text-anchor="middle" fill="#ffffff" font-size="12">Verifier: Select Best</text>
-
-  <!-- Arrows -->
-  <line x1="370" y1="160" x2="355" y2="170" stroke="#a0b4d0" stroke-width="1"/>
-  <line x1="430" y1="160" x2="445" y2="170" stroke="#a0b4d0" stroke-width="1"/>
-
-  <!-- Pros/Cons -->
-  <text x="400" y="320" text-anchor="middle" fill="#5ee68a" font-size="11">+ 多路径覆盖 · 容错强</text>
-  <text x="400" y="340" text-anchor="middle" fill="#ff6b60" font-size="11">- 计算成本线性增长</text>
-
-  <!-- Hybrid -->
-  <rect x="550" y="70" width="220" height="280" rx="10" fill="#1e2a4a" stroke="#ff9f0a" stroke-width="1"/>
-  <text x="660" y="105" text-anchor="middle" fill="#ffcc33" font-size="15" font-weight="bold">混合模式</text>
-
-  <!-- Hybrid flow -->
-  <rect x="570" y="125" width="180" height="35" rx="4" fill="#3a4a7a"/>
-  <text x="660" y="148" text-anchor="middle" fill="#ffffff" font-size="12">难度评估器</text>
-
-  <!-- Branch -->
-  <rect x="570" y="175" width="80" height="30" rx="4" fill="#34c759"/>
-  <text x="610" y="195" text-anchor="middle" fill="#ffffff" font-size="11">Simple</text>
-
-  <rect x="670" y="175" width="80" height="30" rx="4" fill="#4a90d9"/>
-  <text x="710" y="195" text-anchor="middle" fill="#ffffff" font-size="11">Medium</text>
-
-  <rect x="620" y="215" width="80" height="30" rx="4" fill="#ff9f0a"/>
-  <text x="660" y="235" text-anchor="middle" fill="#ffffff" font-size="11">Hard</text>
-
-  <!-- Execution -->
-  <rect x="570" y="255" width="180" height="35" rx="4" fill="#6bb5f0"/>
-  <text x="660" y="278" text-anchor="middle" fill="#ffffff" font-size="12">自适应执行 + 反思</text>
-
-  <!-- Arrows -->
-  <line x1="660" y1="160" x2="610" y2="175" stroke="#a0b4d0" stroke-width="1"/>
-  <line x1="660" y1="160" x2="710" y2="175" stroke="#a0b4d0" stroke-width="1"/>
-
-  <!-- Pros/Cons -->
-  <text x="660" y="320" text-anchor="middle" fill="#5ee68a" font-size="11">+ 效率与准确性平衡</text>
-  <text x="660" y="340" text-anchor="middle" fill="#ff6b60" font-size="11">- 实现复杂度较高</text>
-
-  <!-- Token unit label -->
-  <text x="400" y="385" text-anchor="middle" fill="#a0b4d0" font-size="11">t = tokens | 数据基于 arXiv:2607.28573 + OpenAI/Anthropic 报告</text>
+  <!-- footnote -->
+  <text x="60" y="662" font-size="11" fill="#767676">数据：arXiv:2607.28573 实证与行业基准测试的综合推断示例（正文声明：实际效果取决于任务分布与实现质量）· 面板 a 取自正文预算配置代码，面板 b 取自正文 8 步工作流算例 · 自估口径，非论文实测</text>
 </svg>

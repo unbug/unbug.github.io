@@ -1,75 +1,78 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="'Segoe UI', Arial, sans-serif">
-  <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1f3a;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#2d3561;stop-opacity:1"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="800" height="400" fill="url(#bgGrad)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">示例工作流（8 步工具调用、总预算 16K）中，动态预算分配把整体成功率从约 45% 提升到约 67%，token 使用效率提升约 35%</text>
 
-  <!-- Title -->
-  <text x="400" y="40" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="bold">Before vs After: 动态预算分配效果</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">步骤级 token 配额（千 tokens）</text>
 
-  <!-- Before section (left) -->
-  <rect x="30" y="70" width="350" height="280" rx="10" fill="#1e2a4a" stroke="#ff6b60" stroke-width="1"/>
-  <text x="205" y="105" text-anchor="middle" fill="#ff6b60" font-size="16" font-weight="bold">传统均匀分配</text>
-
-  <!-- Token distribution bars -->
-  <text x="50" y="140" fill="#a0b4d0" font-size="12">Step 1 (简单):</text>
-  <rect x="160" y="130" width="180" height="20" rx="3" fill="#ff6b60"/>
-  <text x="345" y="144" fill="#ffffff" font-size="11">2K tokens (浪费)</text>
-
-  <text x="50" y="175" fill="#a0b4d0" font-size="12">Step 2 (困难):</text>
-  <rect x="160" y="165" width="80" height="20" rx="3" fill="#ff9f0a"/>
-  <text x="245" y="179" fill="#ffffff" font-size="11">2K tokens (不足)</text>
-
-  <text x="50" y="210" fill="#a0b4d0" font-size="12">Step 3 (中等):</text>
-  <rect x="160" y="200" width="130" height="20" rx="3" fill="#ff9f0a"/>
-  <text x="295" y="214" fill="#ffffff" font-size="11">2K tokens (刚好)</text>
-
-  <text x="50" y="245" fill="#a0b4d0" font-size="12">Step 4 (简单):</text>
-  <rect x="160" y="235" width="180" height="20" rx="3" fill="#ff6b60"/>
-  <text x="345" y="249" fill="#ffffff" font-size="11">2K tokens (浪费)</text>
-
-  <!-- Summary -->
-  <rect x="50" y="270" width="310" height="60" rx="6" fill="#2a3560"/>
-  <text x="205" y="295" text-anchor="middle" fill="#ff6b60" font-size="14">总消耗: 8K tokens</text>
-  <text x="205" y="318" text-anchor="middle" fill="#ffffff" font-size="13">成功率: ~45%</text>
-
-  <!-- After section (right) -->
-  <rect x="420" y="70" width="350" height="280" rx="10" fill="#1e2a4a" stroke="#5ee68a" stroke-width="1"/>
-  <text x="595" y="105" text-anchor="middle" fill="#5ee68a" font-size="16" font-weight="bold">动态预算分配</text>
-
-  <!-- Token distribution bars -->
-  <text x="440" y="140" fill="#a0b4d0" font-size="12">Step 1 (简单):</text>
-  <rect x="550" y="130" width="45" height="20" rx="3" fill="#34c759"/>
-  <text x="600" y="144" fill="#ffffff" font-size="11">500 tokens</text>
-
-  <text x="440" y="175" fill="#a0b4d0" font-size="12">Step 2 (困难):</text>
-  <rect x="550" y="165" width="180" height="20" rx="3" fill="#ff9f0a"/>
-  <text x="735" y="179" fill="#ffffff" font-size="11">4K tokens (充足)</text>
-
-  <text x="440" y="210" fill="#a0b4d0" font-size="12">Step 3 (中等):</text>
-  <rect x="550" y="200" width="90" height="20" rx="3" fill="#4a90d9"/>
-  <text x="645" y="214" fill="#ffffff" font-size="11">2K tokens</text>
-
-  <text x="440" y="245" fill="#a0b4d0" font-size="12">Step 4 (简单):</text>
-  <rect x="550" y="235" width="68" height="20" rx="3" fill="#34c759"/>
-  <text x="623" y="249" fill="#ffffff" font-size="11">1K tokens</text>
-
-  <!-- Summary -->
-  <rect x="440" y="270" width="310" height="60" rx="6" fill="#2a3560"/>
-  <text x="595" y="295" text-anchor="middle" fill="#5ee68a" font-size="14">总消耗: ~7.5K tokens</text>
-  <text x="595" y="318" text-anchor="middle" fill="#ffffff" font-size="13">成功率: ~67% (+22pp)</text>
-
-  <!-- Improvement arrow -->
-  <g transform="translate(400, 210)">
-    <polygon points="-15,-25 15,0 -15,25" fill="#ff9f0a"/>
-    <line x1="-60" y1="0" x2="-15" y2="0" stroke="#ff9f0a" stroke-width="2"/>
-    <line x1="15" y1="0" x2="60" y2="0" stroke="#ff9f0a" stroke-width="2"/>
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="610" y1="128" x2="610" y2="300"/>
+    <line x1="860" y1="128" x2="860" y2="300"/>
   </g>
+  <!-- horizontal axis: x = 360 + 50*v -->
+  <line x1="360" y1="300" x2="910" y2="300" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="360" y1="300" x2="360" y2="304"/>
+    <line x1="610" y1="300" x2="610" y2="304"/>
+    <line x1="860" y1="300" x2="860" y2="304"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="360" y="322">0</text>
+    <text x="610" y="322">5</text>
+    <text x="860" y="322">10</text>
+  </g>
+  <text x="635" y="344" font-size="14" fill="#1A1B1E" text-anchor="middle">每步 token 配额（千 tokens）</text>
 
-  <!-- Source -->
-  <text x="400" y="380" text-anchor="middle" fill="#a0b4d0" font-size="10">数据基于 arXiv:2607.28573 + 行业基准测试综合推断</text>
+  <text x="348" y="158" font-size="12.5" fill="#1A1B1E" text-anchor="end">均匀分配</text>
+  <rect x="360" y="148" width="100" height="14" fill="#999999"/>
+  <text x="470" y="159" font-size="12" fill="#555">每步一律 2K</text>
+
+  <text x="348" y="202" font-size="12.5" fill="#1A1B1E" text-anchor="end">动态 · 简单 3 步</text>
+  <rect x="360" y="192" width="25" height="14" fill="#0072B2"/>
+  <text x="393" y="203" font-size="12" fill="#555">每步 500</text>
+
+  <text x="348" y="242" font-size="12.5" fill="#1A1B1E" text-anchor="end">动态 · 中等 2 步</text>
+  <rect x="360" y="232" width="100" height="14" fill="#0072B2"/>
+  <text x="470" y="243" font-size="12" fill="#555">每步 2K</text>
+
+  <text x="348" y="282" font-size="12.5" fill="#1A1B1E" text-anchor="end">动态 · 困难 3 步</text>
+  <rect x="360" y="272" width="300" height="14" fill="#D55E00"/>
+  <text x="670" y="283" font-size="12" fill="#555">每步 6K（受总预算约束动态调整）</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="60" y="408" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="408" font-size="15" fill="#1A1B1E">整体成功率（%，示例工作流）</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="610" y1="432" x2="610" y2="600"/>
+    <line x1="860" y1="432" x2="860" y2="600"/>
+  </g>
+  <!-- horizontal axis: x = 360 + 10*v -->
+  <line x1="360" y1="600" x2="1035" y2="600" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="360" y1="600" x2="360" y2="604"/>
+    <line x1="610" y1="600" x2="610" y2="604"/>
+    <line x1="860" y1="600" x2="860" y2="604"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="360" y="622">0</text>
+    <text x="610" y="622">25</text>
+    <text x="860" y="622">50</text>
+  </g>
+  <text x="697" y="644" font-size="14" fill="#1A1B1E" text-anchor="middle">整体成功率（%）</text>
+
+  <text x="348" y="462" font-size="12.5" fill="#1A1B1E" text-anchor="end">均匀分配</text>
+  <rect x="360" y="452" width="450" height="16" fill="#999999"/>
+  <text x="820" y="464" font-size="12" fill="#555">约 45%</text>
+
+  <text x="348" y="522" font-size="12.5" fill="#1A1B1E" text-anchor="end">动态预算分配</text>
+  <rect x="360" y="512" width="670" height="16" fill="#D55E00"/>
+  <text x="1040" y="524" font-size="12" fill="#555">约 67%</text>
+  <text x="360" y="568" font-size="12" fill="#555">Δ=+22 个百分点 · token 使用效率提升约 35%</text>
+
+  <!-- footnote -->
+  <text x="60" y="662" font-size="11" fill="#767676">数据：基于 arXiv:2607.28573 实证研究与行业基准测试的综合推断示例（正文声明：实际效果取决于具体任务分布和预算分配策略实现质量）· 自估口径，非论文实测</text>
 </svg>
