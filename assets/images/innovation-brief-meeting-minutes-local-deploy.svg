@@ -1,101 +1,101 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8E97A6; }
-      .b { font-size: 12px; fill: #98A1AE; }
-      .ev { font-size: 13px; font-weight: 700; fill: #1E2430; }
-      .evs { font-size: 12px; fill: #5C6672; }
-      .stat { font-size: 34px; font-weight: 700; fill: #1E2430; }
-      .unit { font-size: 14px; fill: #5C6672; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FBF7F0"/>
-    </linearGradient>
-    <linearGradient id="axis" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#3A6EA5"/><stop offset="1" stop-color="#B8763E"/>
-    </linearGradient>
-    <linearGradient id="zoom" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#3A6EA5"/><stop offset="1" stop-color="#6FA8DC"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1120" cy="100" r="130" fill="#3A6EA5" opacity="0.06"/>
-  <circle cx="100" cy="640" r="120" fill="#B8763E" opacity="0.07"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#axis)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">2026 年 6 至 7 月四件会议纪要专利落地；平台圈住纪要层，保密行业本地部署留有空间</text>
 
-  <text class="k" x="64" y="84">AI 智创简报 · 专利情报速读 · 2026-10-18</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1E2430">平台上不了的场子，留给个人</text>
-  <text x="64" y="158" font-size="15" fill="#5C6672">一个月，会议纪要方向四件同主题专利落地</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">四件专利落地日期（2026 年，月内按日定位）</text>
 
-  <!-- calendar icon -->
-  <g>
-    <rect x="1040" y="70" width="96" height="88" rx="14" fill="#FFFFFF" stroke="#B9D4FF" stroke-width="2.5"/>
-    <rect x="1040" y="70" width="96" height="26" rx="13" fill="url(#zoom)"/>
-    <circle cx="1064" cy="116" r="7" fill="#B8763E"/>
-    <circle cx="1088" cy="116" r="7" fill="#3E8E7E"/>
-    <circle cx="1112" cy="116" r="7" fill="#C0392B"/>
-    <line x1="1062" y1="64" x2="1062" y2="78" stroke="#3A6EA5" stroke-width="5" stroke-linecap="round"/>
-    <line x1="1114" y1="64" x2="1114" y2="78" stroke="#3A6EA5" stroke-width="5" stroke-linecap="round"/>
+  <!-- gridlines: month majors at 260/440/620; day ticks per day 40/31 -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="260" y1="126" x2="260" y2="330"/>
+    <line x1="440" y1="126" x2="440" y2="330"/>
+    <line x1="620" y1="126" x2="620" y2="330"/>
   </g>
 
-  <!-- timeline x: 06-01=140, 07-31=1100, per day 960/60=16; 06-02→156, 06-17→396.8, 06-23→492.8, 07-23→956.4 -->
-  <line x1="140" y1="330" x2="1100" y2="330" stroke="url(#axis)" stroke-width="4" stroke-linecap="round"/>
-  <text class="b" x="140" y="356">6月</text>
-  <text class="b" x="1100" y="356" text-anchor="end">7月底</text>
-  <circle cx="620" cy="330" r="3" fill="#8FA6C0"/><text class="b" x="620" y="356" text-anchor="middle">月末</text>
+  <!-- US12647532B2 Zoom 2026-06-02 grant: x = 260 + 1.29*1 = 261.3 -->
+  <circle cx="261.3" cy="160" r="6" fill="#0072B2"/>
+  <text x="272" y="142" font-size="12" fill="#1A1B1E" text-anchor="start">2026-06-02 授权</text>
+  <text x="272" y="184" font-size="12" fill="#555">Zoom · US12647532B2</text>
+  <text x="272" y="200" font-size="12" fill="#555">会中增量生成纪要</text>
 
-  <g>
-    <circle cx="156" cy="330" r="10" fill="url(#zoom)"/>
-    <line x1="156" y1="318" x2="156" y2="284" stroke="#8FA6C0"/>
-    <text class="ev" x="156" y="262">06-02 · Zoom</text>
-    <text class="evs" x="156" y="282">会中增量纪要</text>
+  <!-- EP4162488B1 Microsoft 2026-06-17: x = 260 + 1.29*16 = 280.6 -->
+  <circle cx="280.6" cy="238" r="6" fill="#0072B2"/>
+  <text x="294" y="234" font-size="12" fill="#1A1B1E">2026-06-17 授权文本公开</text>
+  <text x="294" y="252" font-size="12" fill="#555">Microsoft · EP4162488B1</text>
+  <text x="294" y="268" font-size="12" fill="#555">音视频双流推断话语重要性</text>
 
-    <circle cx="396.8" cy="330" r="10" fill="#4F9D69"/>
-    <line x1="396.8" y1="342" x2="396.8" y2="376" stroke="#93BE85"/>
-    <text class="ev" x="396.8" y="404">06-17 · Microsoft</text>
-    <text class="evs" x="396.8" y="424">话语重要性评估</text>
+  <!-- US12664798B2 Zoom 2026-06-23: x = 260 + 1.29*22 = 288.4 -->
+  <circle cx="288.4" cy="308" r="6" fill="#0072B2"/>
+  <text x="302" y="304" font-size="12" fill="#1A1B1E">2026-06-23 授权</text>
+  <text x="302" y="322" font-size="12" fill="#555">Zoom · US12664798B2 — 转写稿 + 视频帧 + 时间戳切章节</text>
 
-    <circle cx="492.8" cy="330" r="10" fill="url(#zoom)"/>
-    <line x1="492.8" y1="318" x2="492.8" y2="304" stroke="#8FA6C0"/>
-    <text class="ev" x="492.8" y="262">06-23 · Zoom</text>
-    <text class="evs" x="492.8" y="282">章节自动切分</text>
+  <!-- US20260211885A1 Zoom 2026-07-23 pub: x = 440 + 1.29*22 = 468.4 -->
+  <circle cx="468.4" cy="160" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="2"/>
+  <text x="482" y="142" font-size="12" fill="#1A1B1E">2026-07-23 公开（审查中）</text>
+  <text x="482" y="184" font-size="12" fill="#555">Zoom · US20260211885A1</text>
+  <text x="482" y="200" font-size="12" fill="#555">分段记录按查询回查承诺</text>
 
-    <circle cx="956.4" cy="330" r="10" fill="#FFFFFF" stroke="#B8763E" stroke-width="3.5"/>
-    <line x1="956.4" y1="318" x2="956.4" y2="284" stroke="#D8B58C"/>
-    <text class="ev" x="956.4" y="262" text-anchor="end">07-23 · Zoom</text>
-    <text class="evs" x="956.4" y="282" text-anchor="end">分段记录回查</text>
+  <!-- value axis -->
+  <line x1="260" y1="330" x2="620" y2="330" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="260" y1="330" x2="260" y2="334"/>
+    <line x1="440" y1="330" x2="440" y2="334"/>
+    <line x1="620" y1="330" x2="620" y2="334"/>
   </g>
-  <circle cx="140" cy="452" r="6" fill="url(#zoom)"/><text class="b" x="152" y="457">授权</text>
-  <circle cx="214" cy="452" r="6" fill="#FFFFFF" stroke="#B8763E" stroke-width="2.5"/><text class="b" x="226" y="457">公开申请</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="260" y="354">6 月</text>
+    <text x="440" y="354">7 月</text>
+    <text x="620" y="354">8 月</text>
+  </g>
+  <text x="440" y="380" font-size="14" fill="#1A1B1E" text-anchor="middle">落地日期（2026 年）</text>
 
-  <!-- opportunity cards -->
-  <g>
-    <rect x="64" y="492" width="336" height="140" rx="18" fill="#FAF4EA"/>
-    <circle cx="352" cy="606" r="46" fill="#B8763E" opacity="0.10"/>
-    <rect x="64" y="492" width="336" height="6" rx="3" fill="#B8763E"/>
-    <rect x="92" y="524" width="44" height="28" rx="5" fill="#C9A227"/>
-    <circle cx="114" cy="538" r="7" fill="#FFFFFF"/>
-    <text class="stat" x="152" y="554">0.8–3 万<tspan class="unit"> /单</tspan></text>
-    <text class="evs" x="92" y="596">律所 / 诊所内网部署</text>
-
-    <rect x="432" y="492" width="336" height="140" rx="18" fill="#EFF7F3"/>
-    <circle cx="720" cy="606" r="46" fill="#3E8E7E" opacity="0.10"/>
-    <rect x="432" y="492" width="336" height="6" rx="3" fill="#3E8E7E"/>
-    <rect x="460" y="524" width="44" height="28" rx="14" fill="#3E8E7E"/>
-    <circle cx="482" cy="538" r="6" fill="#FFFFFF"/>
-    <text class="stat" x="520" y="554">50–100 元<tspan class="unit"> /席·月</tspan></text>
-    <text class="evs" x="460" y="596">承诺台账席位费</text>
-
-    <rect x="800" y="492" width="336" height="140" rx="18" fill="#FAF0EE"/>
-    <circle cx="1088" cy="606" r="46" fill="#C0392B" opacity="0.10"/>
-    <rect x="800" y="492" width="336" height="6" rx="3" fill="#C0392B"/>
-    <path d="M 828 552 l 10 -26 l 16 12 z" fill="#C0392B"/>
-    <circle cx="846" cy="530" r="4" fill="#F2D8D2"/>
-    <text class="stat" x="888" y="554">1 人 · 4 周</text>
-    <text class="evs" x="828" y="596">可演示 MVP（GPU 约 0.6–1.2 万）</text>
+  <!-- legend -->
+  <g font-size="12" fill="#555">
+    <circle cx="268" cy="405" r="5" fill="#0072B2"/>
+    <text x="280" y="409">授权 / 授权文本公开</text>
+    <circle cx="450" cy="405" r="5" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="462" y="409">已公开申请（审查中）</text>
   </g>
 
-  <text class="b" x="64" y="662">状态经 Google Patents 核验 · 观点仅为机会判断，不构成投资建议 · Micropaper</text>
+  <!-- side note -->
+  <text x="740" y="150" font-size="12" fill="#555">技术趋势（正文）：纪要从全文摘要升级为</text>
+  <text x="740" y="168" font-size="12" fill="#555">章节、重要性分数、可查询分段的结构化</text>
+  <text x="740" y="186" font-size="12" fill="#555">中间表示；准确率押在会议原生元数据上，</text>
+  <text x="740" y="204" font-size="12" fill="#555">不押在提示词上</text>
+  <text x="740" y="238" font-size="12" fill="#555">手工整理一次纪要约两小时；开源 Meetily</text>
+  <text x="740" y="256" font-size="12" fill="#555">已验证「数据不出本机」纯本地管线</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="60" y="462" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="462" font-size="15" fill="#1A1B1E">正文自估金额区间（元，区间直标，不设公共刻度）</text>
+
+  <!-- bars: 1000 = 14px -->
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="240" y="503">本地部署包起步成本</text>
+    <text x="240" y="543">部署服务 / 家</text>
+    <text x="240" y="583">承诺台账 / 席·月</text>
+  </g>
+
+  <rect x="252" y="489" width="84" height="18" fill="#0072B2"/>
+  <line x1="252" y1="486" x2="252" y2="510" stroke="#0072B2" stroke-width="0.75"/>
+  <line x1="336" y1="486" x2="336" y2="510" stroke="#0072B2" stroke-width="0.75"/>
+  <text x="346" y="503" font-size="12" fill="#555">6000–12000 元（GPU 服务器或其月租）</text>
+
+  <rect x="252" y="529" width="280" height="18" fill="#0072B2"/>
+  <line x1="252" y1="526" x2="252" y2="550" stroke="#0072B2" stroke-width="0.75"/>
+  <line x1="532" y1="526" x2="532" y2="550" stroke="#0072B2" stroke-width="0.75"/>
+  <text x="542" y="543" font-size="12" fill="#555">8000–30000 元（每家交付一到两周）</text>
+
+  <rect x="252" y="569" width="3.5" height="18" fill="#0072B2"/>
+  <line x1="252" y1="566" x2="252" y2="590" stroke="#0072B2" stroke-width="0.75"/>
+  <line x1="255.5" y1="566" x2="255.5" y2="590" stroke="#0072B2" stroke-width="0.75"/>
+  <text x="266" y="583" font-size="12" fill="#555">50–100 元（按席位月费）</text>
+
+  <text x="60" y="618" font-size="12" fill="#555">三档金额为正文自估口径，非市场实测；区间以竖线端点表示上下界。</text>
+
+  <!-- footnote -->
+  <text x="60" y="648" font-size="11" fill="#767676">数据：Google Patents 四件详情页核验（状态分别标注，US20260211885A1 审查中）· Meetily 关注为 2026 年年中社区信号 · 定价为正文自估口径，不构成投资建议</text>
 </svg>

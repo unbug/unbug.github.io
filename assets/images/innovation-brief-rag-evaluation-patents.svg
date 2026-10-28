@@ -1,96 +1,81 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #A29880; }
-      .b { font-size: 12px; fill: #8A7A5E; }
-      .ev { font-size: 13px; font-weight: 700; fill: #26201A; }
-      .evs { font-size: 12px; fill: #5E5546; }
-      .stat { font-size: 30px; font-weight: 700; fill: #26201A; }
-      .unit { font-size: 14px; fill: #5E5546; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFDF7"/><stop offset="1" stop-color="#FBF6EA"/>
-    </linearGradient>
-    <linearGradient id="axis" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7A5230"/><stop offset="1" stop-color="#C19A49"/>
-    </linearGradient>
-    <linearGradient id="mallet" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#7A5230"/><stop offset="1" stop-color="#A5764A"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1110" cy="600" r="130" fill="#C19A49" opacity="0.07"/>
-  <circle cx="80" cy="120" r="110" fill="#963D46" opacity="0.05"/>
-  <rect x="64" y="44" width="44" height="5" fill="#963D46"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">2026 年 4 至 6 月三件 RAG 评测专利公开；验收标准从检索命中率转向拒答与置信度</text>
 
-  <text class="k" x="64" y="84">AI 智创简报 · 专利情报速读 · RAG 质量评测</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">大厂竞拍拒答判定</text>
-  <text x="64" y="158" font-size="15.5" fill="#5E5546">2026 年 4 至 6 月，三件「该不该作答」专利公开：答对给分，硬答扣分</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">三件已公开申请（审查中）：公开日期（月内按日定位）</text>
 
-  <!-- auction mallet motif: hammering the answer closed -->
-  <g>
-    <rect x="1004" y="104" width="52" height="24" rx="6" fill="url(#mallet)"/>
-    <rect x="1050" y="112" width="66" height="11" rx="5.5" fill="#963D46" transform="rotate(24 1050 112)"/>
-    <path d="M 1000 176 h 92 l -7 16 h -78 z" fill="#7A5230"/>
-    <rect x="996" y="192" width="100" height="10" rx="5" fill="#C19A49"/>
-    <circle cx="1010" cy="150" r="4" fill="#963D46" opacity="0.6"/>
-    <circle cx="1104" cy="146" r="3" fill="#C19A49" opacity="0.7"/>
+  <!-- scale: month=240px; 2026-04=200, 05=440, 06=680, 07=920; day=8px -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="200" y1="126" x2="200" y2="330"/>
+    <line x1="440" y1="126" x2="440" y2="330"/>
+    <line x1="680" y1="126" x2="680" y2="330"/>
+    <line x1="920" y1="126" x2="920" y2="330"/>
   </g>
 
-  <!-- patent timeline: 04-02=150, 04-23=338, 06-18=830 (per day ~3.14) -->
-  <line x1="150" y1="316" x2="830" y2="316" stroke="url(#axis)" stroke-width="4" stroke-linecap="round"/>
-  <text class="b" x="150" y="342">04-02</text>
-  <text class="b" x="830" y="342" text-anchor="end">06-18</text>
+  <!-- GM 2026-04-02: x = 200 + 8*1 = 208 -->
+  <circle cx="208" cy="160" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="2"/>
+  <text x="208" y="142" font-size="12" fill="#1A1B1E" text-anchor="middle">2026-04-02 公开</text>
+  <text x="222" y="176" font-size="12" fill="#555">GM · US20260093735A1 — 多路取回 + 置信分数，低分不直接出口</text>
 
-  <g>
-    <circle cx="150" cy="316" r="10" fill="#FFFFFF" stroke="#7A5230" stroke-width="3.5"/>
-    <line x1="150" y1="304" x2="150" y2="276" stroke="#A29880"/>
-    <text class="ev" x="150" y="254">04-02 · 通用汽车</text>
-    <text class="evs" x="150" y="274">置信分数低，不直接出口</text>
+  <!-- SAP 2026-04-23: x = 200 + 8*22 = 376 -->
+  <circle cx="376" cy="232" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="2"/>
+  <text x="376" y="214" font-size="12" fill="#1A1B1E" text-anchor="middle">2026-04-23 公开</text>
+  <text x="390" y="248" font-size="12" fill="#555">SAP · US20260111331A1 — 测试集迭代跑评估，达标才放行</text>
 
-    <circle cx="338" cy="316" r="10" fill="#FFFFFF" stroke="#7A5230" stroke-width="3.5"/>
-    <line x1="338" y1="328" x2="338" y2="356" stroke="#A29880"/>
-    <text class="ev" x="338" y="382">04-23 · SAP</text>
-    <text class="evs" x="338" y="402">过评测阈值才放行</text>
+  <!-- Salesforce 2026-06-18: x = 680 + 8*17 = 816 -->
+  <circle cx="816" cy="160" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="2"/>
+  <text x="816" y="142" font-size="12" fill="#1A1B1E" text-anchor="middle">2026-06-18 公开</text>
+  <text x="816" y="184" font-size="12" fill="#555" text-anchor="middle">Salesforce · US20260170067A1</text>
+  <text x="816" y="200" font-size="12" fill="#555" text-anchor="middle">合成「不可回答」请求数据集</text>
+  <text x="816" y="216" font-size="12" fill="#555" text-anchor="middle">评测六类问题（指令含糊、错误前提、超库范围等）</text>
 
-    <circle cx="830" cy="316" r="10" fill="#963D46"/>
-    <line x1="830" y1="304" x2="830" y2="276" stroke="#A29880"/>
-    <text class="ev" x="830" y="254" text-anchor="end">06-18 · Salesforce</text>
-    <text class="evs" x="830" y="274" text-anchor="end">合成六类不可回答题</text>
+  <!-- value axis -->
+  <line x1="200" y1="330" x2="920" y2="330" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="200" y1="330" x2="200" y2="334"/>
+    <line x1="440" y1="330" x2="440" y2="334"/>
+    <line x1="680" y1="330" x2="680" y2="334"/>
+    <line x1="920" y1="330" x2="920" y2="334"/>
   </g>
-  <g>
-    <circle cx="150" cy="430" r="6" fill="#FFFFFF" stroke="#7A5230" stroke-width="2.5"/><text class="b" x="162" y="435">公开申请（审查中）</text>
-    <rect x="330" y="408" width="420" height="44" rx="9" fill="#963D46" opacity="0.08"/>
-    <rect x="330" y="408" width="5" height="44" rx="2.5" fill="#963D46"/>
-    <text x="352" y="428" font-size="13" font-weight="700" fill="#963D46">空白不在打分，在造题</text>
-    <text x="352" y="445" font-size="12.5" fill="#5E5546">RAGAS / TruLens 已把忠实度打分做成商品</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="200" y="354">4 月</text>
+    <text x="440" y="354">5 月</text>
+    <text x="680" y="354">6 月</text>
+    <text x="920" y="354">7 月</text>
   </g>
+  <text x="560" y="380" font-size="14" fill="#1A1B1E" text-anchor="middle">公开日期（2026 年）</text>
 
-  <!-- opportunity cards -->
-  <g>
-    <rect x="64" y="482" width="352" height="142" rx="16" fill="#963D46" opacity="0.08"/>
-    <rect x="64" y="482" width="352" height="6" rx="3" fill="#963D46"/>
-    <path d="M 92 516 h 40 v 26 l -8 -7 h -32 z" fill="#963D46"/>
-    <text class="stat" x="92" y="578">3000-8000 元</text>
-    <text class="evs" x="92" y="604">单次交付前质检服务</text>
+  <!-- side note -->
+  <text x="60" y="418" font-size="12" fill="#555">空心 = 已公开申请（审查中），不是授权专利；国际分类集中在 G06F16/953（检索）与 G06N3（机器学习）。</text>
+  <text x="60" y="436" font-size="12" fill="#555">专利主张的是拒答题数据集的合成方法与放行阈值——恰是 RAGAS、TruLens 等通用评测库留下的空白；</text>
+  <text x="60" y="454" font-size="12" fill="#555">2026-05 的 EnterpriseRAG-Bench 基准论文同样把「应识别为不可回答」列为核心考点。</text>
 
-    <rect x="440" y="482" width="352" height="142" rx="16" fill="#C19A49" opacity="0.12"/>
-    <rect x="440" y="482" width="352" height="6" rx="3" fill="#C19A49"/>
-    <circle cx="470" cy="522" r="15" fill="#C19A49"/>
-    <path d="M 462 522 a 8 8 0 0 1 16 0" stroke="#FFFDF7" stroke-width="3" fill="none"/>
-    <text class="stat" x="496" y="578">$19-49<tspan class="unit"> /库·月</tspan></text>
-    <text class="evs" x="468" y="604">知识库更新后自动重跑题集</text>
+  <!-- ============ panel b ============ -->
+  <text x="60" y="508" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="508" font-size="15" fill="#1A1B1E">正文自估金额区间（元，区间直标，不设公共刻度）</text>
 
-    <rect x="816" y="482" width="320" height="142" rx="16" fill="#7A5230" opacity="0.09"/>
-    <rect x="816" y="482" width="320" height="6" rx="3" fill="#7A5230"/>
-    <rect x="844" y="508" width="34" height="30" rx="5" fill="#7A5230"/>
-    <line x1="852" y1="518" x2="870" y2="518" stroke="#FBF6EA" stroke-width="3"/>
-    <line x1="852" y1="528" x2="864" y2="528" stroke="#FBF6EA" stroke-width="3"/>
-    <text class="stat" x="892" y="578">50 道</text>
-    <text class="evs" x="844" y="604">今天起：库里没有答案的题</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="240" y="549">交付前质检 / 次</text>
+    <text x="240" y="589">回归巡检订阅 / 知识库·月</text>
   </g>
 
-  <text class="b" x="64" y="660">三件均为已公开申请（审查中），非授权专利 · 分类集中在 G06F16/953 与 G06N3 · Micropaper</text>
+  <rect x="252" y="535" width="250" height="18" fill="#0072B2"/>
+  <line x1="252" y1="532" x2="252" y2="556" stroke="#0072B2" stroke-width="0.75"/>
+  <line x1="502" y1="532" x2="502" y2="556" stroke="#0072B2" stroke-width="0.75"/>
+  <text x="512" y="549" font-size="12" fill="#555">3000–8000 元（拒答测试集 + 质检报告）</text>
+
+  <rect x="252" y="575" width="40" height="18" fill="#0072B2"/>
+  <line x1="252" y1="572" x2="252" y2="596" stroke="#0072B2" stroke-width="0.75"/>
+  <line x1="292" y1="572" x2="292" y2="596" stroke="#0072B2" stroke-width="0.75"/>
+  <text x="302" y="589" font-size="12" fill="#555">$19–49 / 月（知识库每次更新后自动重跑题集打分）</text>
+
+  <text x="640" y="549" font-size="12" fill="#555">工具侧（正文）：Python + 任一 LLM API + SQLite，无需训练模型；</text>
+  <text x="640" y="567" font-size="12" fill="#555">月成本数百元，1 人 4 周出 MVP。</text>
+
+  <!-- footnote -->
+  <text x="60" y="648" font-size="11" fill="#767676">数据：FreePatentsOnline 三件已公开申请核验（均非授权专利）· 定价为正文自估口径，非市场实测，不构成投资建议</text>
 </svg>

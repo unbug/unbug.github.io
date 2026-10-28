@@ -1,96 +1,100 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #96917E; }
-      .rl { font-size: 15px; fill: #31404C; }
-      .val { font-size: 18px; font-weight: 700; fill: #1A1B1E; }
-      .b { font-size: 12px; fill: #A39E88; }
-      .hd { font-size: 12.5px; letter-spacing: 2px; fill: #7C7763; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F6F7F2"/>
-    </linearGradient>
-    <linearGradient id="gRed" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#B5442E"/><stop offset="1" stop-color="#DA7C58"/>
-    </linearGradient>
-    <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2F6E4F"/><stop offset="1" stop-color="#6FA97F"/>
-    </linearGradient>
-    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#177E89"/><stop offset="1" stop-color="#5FB3BC"/>
-    </linearGradient>
-    <linearGradient id="gAmber" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#C98A1B"/><stop offset="1" stop-color="#E7BC5C"/>
-    </linearGradient>
-    <linearGradient id="gPlum" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#6C4A73"/><stop offset="1" stop-color="#9C7BA3"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1108" cy="110" r="140" fill="#177E89" opacity="0.06"/>
-  <circle cx="76" cy="620" r="115" fill="#B5442E" opacity="0.06"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="#B5442E"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">2026 年 4 月四家公司的四件 NL2SQL 专利集中落地；生成层被圈住，SQL 校验层仍空着</text>
 
-  <text class="k" x="64" y="84">AI 智创简报 · 2026-04 · NL2SQL 专利四件</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">报关堵死，验货没人</text>
-  <text x="64" y="158" font-size="15.5" fill="#66614F">生成 SQL 一层被专利圈住，「答没答对」的质检通道还空着</text>
-  <!-- customs booth illustration -->
-  <g>
-    <rect x="905" y="200" width="180" height="104" rx="6" fill="url(#gTeal)"/>
-    <rect x="893" y="188" width="204" height="16" rx="3" fill="url(#gAmber)"/>
-    <rect x="927" y="228" width="52" height="40" rx="3" fill="#F6F7F2"/>
-    <rect x="995" y="228" width="52" height="40" rx="3" fill="#F6F7F2" opacity="0.55"/>
-    <rect x="905" y="304" width="180" height="10" fill="#31536E" opacity="0.35"/>
-    <circle cx="1082" cy="322" r="24" fill="url(#gRed)"/>
-    <text x="1082" y="330" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF" class="serif">验</text>
-    <text class="hd" x="995" y="362" text-anchor="middle">口岸通道</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">四件专利落地日期（2026 年 4 月，日内按日定位）</text>
+
+  <!-- gridlines: day x = 260 + 8*(day-20); majors at 4/20,4/25,4/30 -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="260" y1="126" x2="260" y2="330"/>
+    <line x1="340" y1="126" x2="340" y2="330"/>
   </g>
 
-  <!-- four patent declarations -->
-  <g>
-    <text class="hd" x="64" y="212">报关单 · 2026 年 4 月集中公开或授权</text>
+  <!-- Amazon 2026-04-23 pub: x = 284 -->
+  <circle cx="284" cy="150" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="2"/>
+  <text x="298" y="146" font-size="12" fill="#1A1B1E">04-23 公开（审查中）</text>
+  <text x="298" y="164" font-size="12" fill="#555">Amazon · US20260111428A1 — 实体关系图再生成 SQL（优先权日 2024-10-23）</text>
 
-    <rect x="64" y="230" width="800" height="46" fill="#B5442E" opacity="0.07"/>
-    <text class="serif" x="84" y="260" font-size="19" font-weight="700" fill="#B5442E">US12614037B2</text>
-    <text class="rl" x="330" y="260">微软 · 04-28 授权</text>
-    <text class="b" x="560" y="260">大模型对话式查库</text>
+  <!-- Dell 2026-04-30 pub: x = 340 -->
+  <circle cx="340" cy="192" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="2"/>
+  <text x="354" y="188" font-size="12" fill="#1A1B1E">04-30 公开（审查中）</text>
+  <text x="354" y="206" font-size="12" fill="#555">Dell · US20260119483A1 — 人可读查询转机器可读查询</text>
 
-    <rect x="64" y="288" width="800" height="46" fill="#2F6E4F" opacity="0.08"/>
-    <text class="serif" x="84" y="318" font-size="19" font-weight="700" fill="#2F6E4F">US20260111428A1</text>
-    <text class="rl" x="330" y="318">亚马逊 · 04-23 公开</text>
-    <text class="b" x="560" y="318">先生成实体关系图再出 SQL</text>
+  <!-- Microsoft 2026-04-28 grant: x = 324 -->
+  <circle cx="324" cy="248" r="6" fill="#0072B2"/>
+  <text x="338" y="244" font-size="12" fill="#1A1B1E">04-28 授权</text>
+  <text x="338" y="262" font-size="12" fill="#555">Microsoft · US12614037B2 — 复杂数据库对话式检索接口</text>
 
-    <rect x="64" y="346" width="800" height="46" fill="#C98A1B" opacity="0.10"/>
-    <text class="serif" x="84" y="376" font-size="19" font-weight="700" fill="#8A6112">US20260119483A1</text>
-    <text class="rl" x="330" y="376">戴尔 · 04-30 公开</text>
-    <text class="b" x="560" y="376">人可读查询转机器可读</text>
+  <!-- Snowflake 2026-04-28 grant: x = 324, lower row -->
+  <circle cx="324" cy="296" r="6" fill="#0072B2"/>
+  <text x="338" y="292" font-size="12" fill="#1A1B1E">04-28 授权</text>
+  <text x="338" y="310" font-size="12" fill="#555">Snowflake · US12613928B2 — 数据清单检索匹配</text>
 
-    <rect x="64" y="404" width="800" height="46" fill="#6C4A73" opacity="0.09"/>
-    <text class="serif" x="84" y="434" font-size="19" font-weight="700" fill="#6C4A73">US12613928B2</text>
-    <text class="rl" x="330" y="434">Snowflake · 04-28 授权</text>
-    <text class="b" x="560" y="434">数据清单内检索匹配</text>
+  <!-- value axis -->
+  <line x1="260" y1="330" x2="420" y2="330" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="260" y1="330" x2="260" y2="334"/>
+    <line x1="284" y1="330" x2="284" y2="334"/>
+    <line x1="324" y1="330" x2="324" y2="334"/>
+    <line x1="340" y1="330" x2="340" y2="334"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="260" y="354">04-20</text>
+    <text x="284" y="354">04-23</text>
+    <text x="324" y="354">04-28</text>
+    <text x="340" y="354">04-30</text>
+  </g>
+  <text x="340" y="380" font-size="14" fill="#1A1B1E" text-anchor="middle">落地日期（2026-04）</text>
+
+  <!-- legend -->
+  <g font-size="12" fill="#555">
+    <circle cx="268" cy="405" r="5" fill="#0072B2"/>
+    <text x="280" y="409">授权</text>
+    <circle cx="350" cy="405" r="5" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="362" y="409">已公开申请（审查中）</text>
   </g>
 
-  <!-- indie lane: gold-standard checklist -->
-  <g>
-    <text class="serif" x="64" y="512" font-size="25" font-weight="700" fill="#1A1B1E">独立开发者可接的验货通道</text>
-    <text class="b" x="64" y="538">金标准问题集 50-200 条 + 自动回归校验 + 静态检查 · 用 Vanna / BIRD 对照</text>
-    <line x1="64" y1="556" x2="64" y2="600" stroke="url(#gRed)" stroke-width="4"/>
-    <text class="serif" x="82" y="578" font-size="24" font-weight="700" fill="#B5442E">起步 ¥3,000-8,000</text>
-    <text class="b" x="82" y="600">查数质检服务按项目收 1-3 万元 · 校验插件每席位月费几十元</text>
+  <!-- side note -->
+  <text x="840" y="140" font-size="12" fill="#555">同族：US20260220380A1（公开文本，</text>
+  <text x="840" y="158" font-size="12" fill="#555">优先权日 2024-01-31）申请人</text>
+  <text x="840" y="176" font-size="12" fill="#555">同为 Microsoft，</text>
+  <text x="840" y="194" font-size="12" fill="#555">与 US12614037B2 同名</text>
+  <text x="840" y="228" font-size="12" fill="#555">技术趋势（正文）：准确率</text>
+  <text x="840" y="246" font-size="12" fill="#555">取决于元数据厚度（表注释、</text>
+  <text x="840" y="264" font-size="12" fill="#555">字段口径、历史查询），</text>
+  <text x="840" y="282" font-size="12" fill="#555">不取决于提示词运气</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="60" y="462" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="462" font-size="15" fill="#1A1B1E">正文自估金额与规模区间（直标数值，不设公共刻度）</text>
+
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="240" y="503">金标准问题集固化 / 条</text>
+    <text x="240" y="543">质检服务 / 项目</text>
+    <text x="240" y="583">起步成本 / 一次性</text>
   </g>
 
-  <!-- right: verdict stamp -->
-  <g>
-    <rect x="893" y="440" width="228" height="120" fill="#B5442E" opacity="0.07"/>
-    <text class="serif" x="1007" y="478" text-anchor="middle" font-size="22" font-weight="700" fill="#B5442E">竞争点已改道</text>
-    <text x="1007" y="508" text-anchor="middle" font-size="14" fill="#31404C">元数据与校验做得够不够厚</text>
-    <text class="b" x="1007" y="534" text-anchor="middle">不取决于提示词运气</text>
-  </g>
+  <rect x="252" y="489" width="210" height="18" fill="#0072B2"/>
+  <line x1="252" y1="486" x2="252" y2="510" stroke="#0072B2" stroke-width="0.75"/>
+  <line x1="462" y1="486" x2="462" y2="510" stroke="#0072B2" stroke-width="0.75"/>
+  <text x="472" y="503" font-size="12" fill="#555">50–200 条（高频业务问题固化成期望结果）</text>
 
-  <line x1="64" y1="622" x2="1136" y2="622" stroke="#E5E1D4"/>
-  <text class="serif" x="64" y="652" font-size="15.5" fill="#31404C">「上月华东退货率」返回的数字，错了也没人发现。</text>
-  <text class="b" x="1136" y="652" text-anchor="end">四件均为公开或授权文本 · 状态已分别标注 · Micropaper</text>
+  <rect x="252" y="529" width="105" height="18" fill="#0072B2"/>
+  <line x1="252" y1="526" x2="252" y2="550" stroke="#0072B2" stroke-width="0.75"/>
+  <line x1="357" y1="526" x2="357" y2="550" stroke="#0072B2" stroke-width="0.75"/>
+  <text x="367" y="543" font-size="12" fill="#555">1–3 万元 / 项目（两周交付：问题集 + 回归脚本 + 错误率报告）</text>
+
+  <rect x="252" y="569" width="280" height="18" fill="#0072B2"/>
+  <line x1="252" y1="566" x2="252" y2="590" stroke="#0072B2" stroke-width="0.75"/>
+  <line x1="532" y1="566" x2="532" y2="590" stroke="#0072B2" stroke-width="0.75"/>
+  <text x="542" y="583" font-size="12" fill="#555">3000–8000 元（API 调用加一台小服务器）</text>
+
+  <text x="60" y="618" font-size="12" fill="#555">金额为正文自估口径，非市场实测；条数为正文给出的问题集规模区间。</text>
+
+  <!-- footnote -->
+  <text x="60" y="648" font-size="11" fill="#767676">数据：Google Patents / FreePatentsOnline 核验（授权与公开状态分别标注）· 校验插件定价（每席位几十元 / 月）正文未给出精确数值，不上图 · 定价为自估口径，不构成投资建议</text>
 </svg>

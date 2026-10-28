@@ -1,108 +1,93 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8F8570; }
-      .rl { font-size: 15px; fill: #4E4636; }
-      .b { font-size: 12px; fill: #A29880; }
-      .stat { font-size: 26px; font-weight: 700; fill: #232B2E; }
-      .val { font-size: 20px; font-weight: 700; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FDFBF6"/><stop offset="1" stop-color="#F1EEE2"/>
-    </linearGradient>
-    <linearGradient id="gRed" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#A63A22"/><stop offset="1" stop-color="#D96A3C"/>
-    </linearGradient>
-    <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#D97B2A"/><stop offset="1" stop-color="#F0AC55"/>
-    </linearGradient>
-    <linearGradient id="gPink" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#D96A8C"/><stop offset="1" stop-color="#B84A6E"/>
-    </linearGradient>
-    <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2F7D61"/><stop offset="1" stop-color="#6FB58F"/>
-    </linearGradient>
-    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#3D6FA5"/><stop offset="1" stop-color="#7FA8CC"/>
-    </linearGradient>
-    <linearGradient id="gCream" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#F5E3BE"/><stop offset="1" stop-color="#E3C48D"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1130" cy="620" r="140" fill="#D96A8C" opacity="0.06"/>
-  <circle cx="80" cy="100" r="110" fill="#3D6FA5" opacity="0.05"/>
-  <rect x="64" y="44" width="44" height="5" rx="2.5" fill="url(#gRed)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">PRD 生成专利 US20260178323A1 于 2026-06-25 公开；vibe coding 瓶颈在上游需求输入</text>
 
-  <text class="k" x="64" y="84">AI 智创简报 · 2026-08-22 · US20260178323A1</text>
-  <text class="serif" x="64" y="130" font-size="40" font-weight="700" fill="#232B2E">先出图纸，再砌墙</text>
-  <text x="64" y="160" font-size="15" fill="#6E6653">Crowdbotics 专利：一句话 → LLM 生成 PRD → 机器评估，2026-06-25 公开</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">US20260178323A1 关键日期（月内按日定位）</text>
 
-  <!-- tiered cake motif -->
-  <g>
-    <rect x="998" y="352" width="212" height="10" rx="5" fill="#8A6A45"/>
-    <rect x="1014" y="300" width="180" height="52" rx="10" fill="url(#gCream)"/>
-    <path d="M 1014 312 q 15 14 30 0 q 15 14 30 0 q 15 14 30 0 q 15 14 30 0 q 15 14 30 0 q 15 14 30 0 v -12 h -180 z" fill="url(#gPink)"/>
-    <rect x="1038" y="252" width="132" height="52" rx="10" fill="url(#gCream)"/>
-    <path d="M 1038 264 q 16.5 14 33 0 q 16.5 14 33 0 q 16.5 14 33 0 q 16.5 14 33 0 v -12 h -132 z" fill="url(#gPink)"/>
-    <rect x="1062" y="208" width="84" height="48" rx="10" fill="url(#gCream)"/>
-    <path d="M 1062 220 q 21 14 42 0 q 21 14 42 0 v -12 h -84 z" fill="url(#gPink)"/>
-    <circle cx="1104" cy="196" r="9" fill="#B5442E"/>
-    <g stroke="#A29880" stroke-width="2.5" stroke-linecap="round">
-      <line x1="1180" y1="240" x2="1216" y2="212"/>
-    </g>
-    <path d="M 1150 300 l 60 -46 l 12 14 l -60 46 z" fill="#8FA2AC"/>
-    <text class="b" x="1104" y="392">分层蛋糕：逐层分解的需求文档</text>
+  <!-- scale: month = 60px; 2024-12=260, 2025-12=980, 2026-06=1340 >1140 -> month=48px: 2024-12=260, 2025-12=836, 2026-06-25=260+48*18+48*24/30=1153 -> use month=44px, left=180: 2024-12=180? Keep left 260, month=44: 2026-06-25 = 260+44*18.8=1087 -->
+  <!-- gridlines at each quarter: 2025-03=350, 2025-09=476, 2026-03=692, ... simpler: majors every 6 months -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="260" y1="126" x2="260" y2="250"/>
+    <line x1="524" y1="126" x2="524" y2="250"/>
+    <line x1="788" y1="126" x2="788" y2="250"/>
+    <line x1="1052" y1="126" x2="1052" y2="250"/>
   </g>
 
-  <!-- pipeline -->
-  <g>
-    <text class="stat" x="64" y="222">专利流水线<tspan font-size="14" fill="#5F7683">　纯提示词与模板工程，不训练模型</tspan></text>
-    <g>
-      <rect x="64" y="244" width="230" height="96" rx="12" fill="#3D6FA5" opacity="0.08"/>
-      <text class="val" x="88" y="284" fill="#2F5A87">一句话想法</text>
-      <text class="b" x="88" y="310">自然语言需求描述</text>
+  <!-- provisional 2024-12: x=260 -->
+  <circle cx="260" cy="160" r="6" fill="#999999"/>
+  <text x="260" y="142" font-size="12" fill="#1A1B1E" text-anchor="middle">2024-12</text>
+  <text x="260" y="184" font-size="12" fill="#555" text-anchor="middle">临时申请优先权</text>
 
-      <path d="M 300 292 h 36 m -10 -8 l 12 8 l -12 8" stroke="#B8763E" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- filing 2025-12-16: x = 260 + 264*12 + 44*(15/31) = 260+3168+21= overflow!
+       Correct: months since 2024-12 to 2025-12 = 12 -> 260+44*12=788; day offset 44*15/31=21 -> 809 -->
+  <circle cx="809" cy="160" r="6" fill="#999999"/>
+  <text x="809" y="142" font-size="12" fill="#1A1B1E" text-anchor="middle">2025-12-16</text>
+  <text x="809" y="184" font-size="12" fill="#555" text-anchor="middle">申请日</text>
 
-      <rect x="344" y="244" width="230" height="96" rx="12" fill="#D97B2A" opacity="0.09"/>
-      <text class="val" x="368" y="284" fill="#A96A14">中间工件</text>
-      <text class="b" x="368" y="310">特征列表 + 预期输出</text>
+  <!-- publish 2026-06-25: months 18 -> 260+44*18=1052; day 44*24/30=35 -> 1087 -->
+  <circle cx="1087" cy="160" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="2"/>
+  <text x="1087" y="142" font-size="12" fill="#1A1B1E" text-anchor="end">2026-06-25</text>
+  <text x="1087" y="184" font-size="12" fill="#555" text-anchor="end">公开（审查中）</text>
+  <text x="1087" y="200" font-size="12" fill="#555" text-anchor="end">Crowdbotics</text>
 
-      <path d="M 580 292 h 36 m -10 -8 l 12 8 l -12 8" stroke="#B8763E" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- value axis -->
+  <line x1="260" y1="250" x2="1100" y2="250" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="260" y1="250" x2="260" y2="254"/>
+    <line x1="524" y1="250" x2="524" y2="254"/>
+    <line x1="788" y1="250" x2="788" y2="254"/>
+    <line x1="1052" y1="250" x2="1052" y2="254"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="260" y="274">2024-12</text>
+    <text x="524" y="274">2025-06</text>
+    <text x="788" y="274">2025-12</text>
+    <text x="1052" y="274">2026-06</text>
+  </g>
+  <text x="680" y="300" font-size="14" fill="#1A1B1E" text-anchor="middle">日期（优先权—申请—公开）</text>
 
-      <rect x="624" y="244" width="230" height="96" rx="12" fill="#B84A6E" opacity="0.08"/>
-      <text class="val" x="648" y="284" fill="#9E3A5C">LLM 生成 PRD</text>
-      <text class="b" x="648" y="310">派生用户故事、starter code</text>
-
-      <path d="M 860 292 h 36 m -10 -8 l 12 8 l -12 8" stroke="#B8763E" stroke-width="3" fill="none" stroke-linecap="round"/>
-
-      <rect x="904" y="244" width="232" height="96" rx="12" fill="#2F7D61" opacity="0.08"/>
-      <text class="val" x="928" y="284" fill="#256A4E">机器评估回路</text>
-      <text class="b" x="928" y="310">完整性 + 准确性</text>
-    </g>
+  <!-- legend -->
+  <g font-size="12" fill="#555">
+    <circle cx="268" cy="325" r="5" fill="#999999"/>
+    <text x="280" y="329">优先权 / 申请</text>
+    <circle cx="420" cy="325" r="5" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="432" y="329">已公开申请（审查中），分类号 G06F8/10、G06F8/73</text>
   </g>
 
-  <!-- industry evidence -->
-  <g>
-    <rect x="64" y="372" width="512" height="118" rx="12" fill="#D97B2A" opacity="0.07"/>
-    <text class="serif" x="88" y="418" font-size="22" font-weight="700" fill="#232B2E">需求层是上游瓶颈</text>
-    <text x="88" y="448" font-size="14.5" fill="#4E4636">Lovable ARR 5 亿美元 · 每周新建项目 100 万个</text>
-    <text class="b" x="88" y="472">TechCrunch 2026-06 · vibe coding 产出质量取决于需求输入</text>
+  <!-- pipeline note -->
+  <text x="60" y="382" font-size="12" fill="#555">专利主张的管线（正文）：自然语言需求描述 → 特征列表 + 预期输出规格 → LLM 生成 PRD → 机器评估完整性与准确性；</text>
+  <text x="60" y="400" font-size="12" fill="#555">PRD 为下游工件枢纽，派生输出含用户画像、epic、用户故事、技术建议与 starter code。</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="60" y="462" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="462" font-size="15" fill="#1A1B1E">产业佐证与正文自估金额（直标数值，不设公共刻度）</text>
+
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="240" y="503">Lovable ARR（2026-06）</text>
+    <text x="240" y="543">Lovable 新建项目 / 周</text>
+    <text x="240" y="583">PRD 工具订阅 / 月</text>
   </g>
 
-  <!-- opportunity -->
-  <g>
-    <rect x="600" y="372" width="536" height="118" rx="12" fill="#2F7D61" opacity="0.06"/>
-    <text class="serif" x="624" y="418" font-size="22" font-weight="700" fill="#232B2E">个人开发者可接的两层活</text>
-    <text x="624" y="448" font-size="14.5" fill="#4E4636">订阅 9–19 美元/月 · 需求拆解接单按项目 500–2000 元</text>
-    <text class="b" x="624" y="472">MVP 4 周 · 月成本远低于 2 万元</text>
-  </g>
+  <rect x="252" y="489" width="360" height="18" fill="#D55E00"/>
+  <text x="622" y="503" font-size="12" fill="#555">5 亿美元（TechCrunch 报道口径）</text>
 
-  <line x1="64" y1="524" x2="1136" y2="524" stroke="#E5E1D4"/>
-  <text class="serif" x="64" y="558" font-size="18" fill="#232B2E">通用大模型今天就能写 PRD，但结构不稳定、无法直接进开发流；差异点在中间工件与评估回路。</text>
-  <text class="b" x="64" y="590">申请公开（2025-12-16 申请，主张 2024-12 临时申请优先权），不等于已授权 · 分类号 G06F8/10、G06F8/73 · Micropaper</text>
-  <text class="serif" x="64" y="638" font-size="15.5" fill="#6E6A5C">vibe coding 解决了「写代码」，没解决「想清楚写什么」。</text>
+  <rect x="252" y="529" width="72" height="18" fill="#D55E00"/>
+  <text x="334" y="543" font-size="12" fill="#555">100 万个</text>
+
+  <rect x="252" y="569" width="10" height="18" fill="#0072B2"/>
+  <line x1="252" y1="566" x2="252" y2="590" stroke="#0072B2" stroke-width="0.75"/>
+  <line x1="262" y1="566" x2="262" y2="590" stroke="#0072B2" stroke-width="0.75"/>
+  <text x="272" y="583" font-size="12" fill="#555">9–19 美元 / 月或按文档计费（正文自估）</text>
+
+  <text x="700" y="543" font-size="12" fill="#555">需求拆解接单：500–2000 元 / 项目（正文自估）</text>
+  <text x="700" y="561" font-size="12" fill="#555">佐证：需求输入是 vibe coding 上游瓶颈；</text>
+  <text x="700" y="579" font-size="12" fill="#555">1 人 4 周可出 MVP，起步成本月均几百元 API 费加</text>
+  <text x="700" y="597" font-size="12" fill="#555">域名与托管，远低于 2 万元</text>
+
+  <!-- footnote -->
+  <text x="60" y="648" font-size="11" fill="#767676">数据：US20260178323A1 为申请公开文本（不等于已授权，Google Patents / FreePatentsOnline 核验）· Lovable 数据来自 TechCrunch 2026-06-09 报道 · 订阅与接单定价为正文自估口径，不构成投资建议</text>
 </svg>
