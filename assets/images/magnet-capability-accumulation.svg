@@ -1,116 +1,132 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="SimSun, Songti SC, STSong, serif">
-  <defs>
-    <marker id="m-amber" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#B7791F"/></marker>
-    <marker id="m-red" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#C0392B"/></marker>
-    <marker id="m-slate" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#5D6D7E"/></marker>
-  </defs>
-  <rect width="1200" height="675" fill="#FDFCF7"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <!-- title -->
-  <text x="600" y="52" font-size="34" fill="#2C3E50" text-anchor="middle">跨会话滥用：能力累积检测</text>
-  <text x="600" y="86" font-size="20" fill="#7F8C8D" text-anchor="middle">Magnet —— 磁选厂：单个会话是合格矿石，磁选聚合才见完整攻击链</text>
-  <line x1="70" y1="104" x2="1130" y2="104" stroke="#D5CBB8" stroke-width="2"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">跨会话投递使攻击成功率升至 37.4%；Magnet 的 F1 为 84.0%，逐会话检测仅 61.0%</text>
 
-  <!-- left column label -->
-  <text x="50" y="142" font-size="20" fill="#5D6D7E">无状态的 Agent，有记忆的对手</text>
-  <text x="1150" y="142" font-size="17" fill="#7F8C8D" text-anchor="end">arXiv:2608.02518</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">三种检测架构的精确率 / 召回率 / F1（336 个评测场景）</text>
 
-  <!-- ore chute hoppers -->
-  <g>
-    <path d="M80,170 h150 l-20,52 h-110 Z" fill="#F2E3C4" stroke="#B7791F" stroke-width="2"/>
-    <text x="155" y="200" font-size="16" fill="#8A5A12" text-anchor="middle">会话 1</text>
-    <path d="M80,252 h150 l-20,52 h-110 Z" fill="#F2E3C4" stroke="#B7791F" stroke-width="2"/>
-    <text x="155" y="282" font-size="16" fill="#8A5A12" text-anchor="middle">会话 2</text>
-    <path d="M80,334 h150 l-20,52 h-110 Z" fill="#F2E3C4" stroke="#B7791F" stroke-width="2"/>
-    <text x="155" y="364" font-size="16" fill="#8A5A12" text-anchor="middle">会话 3</text>
-  </g>
-  <text x="155" y="420" font-size="15" fill="#7F8C8D" text-anchor="middle">各自单独审核，均合规</text>
-
-  <!-- ore pieces -->
-  <g fill="#D9A441" stroke="#B7791F" stroke-width="1.5">
-    <rect x="118" y="228" width="14" height="14" transform="rotate(18 125 235)"/>
-    <rect x="152" y="222" width="12" height="12" transform="rotate(-12 158 228)"/>
-    <rect x="184" y="230" width="15" height="13" transform="rotate(30 191 236)"/>
-    <rect x="122" y="310" width="13" height="13" transform="rotate(-25 128 316)"/>
-    <rect x="158" y="304" width="14" height="12" transform="rotate(14 165 310)"/>
-    <rect x="190" y="312" width="12" height="12" transform="rotate(40 196 318)"/>
-    <rect x="126" y="392" width="14" height="14" transform="rotate(10 133 399)"/>
-    <rect x="160" y="396" width="13" height="12" transform="rotate(-30 166 402)"/>
-    <rect x="192" y="390" width="12" height="13" transform="rotate(22 198 396)"/>
+  <!-- gridlines: x = 230 + 8*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="430" y1="126" x2="430" y2="370"/>
+    <line x1="630" y1="126" x2="630" y2="370"/>
+    <line x1="830" y1="126" x2="830" y2="370"/>
   </g>
 
-  <!-- chutes to drum -->
-  <path d="M155,232 C155,340 210,470 322,472" fill="none" stroke="#B7791F" stroke-width="3" marker-end="url(#m-amber)"/>
-  <path d="M155,314 C155,400 220,468 322,476" fill="none" stroke="#B7791F" stroke-width="3" marker-end="url(#m-amber)"/>
-  <path d="M155,396 C155,440 230,482 322,482" fill="none" stroke="#B7791F" stroke-width="3" marker-end="url(#m-amber)"/>
+  <!-- per-session group: y rows centered 168 / 246 / 324 -->
+  <text x="218" y="160" font-size="12.5" fill="#1A1B1E" text-anchor="end">逐会话检测</text>
+  <rect x="230" y="140" width="769.6" height="14" fill="#999999"/>
+  <text x="1006" y="151" font-size="12" fill="#555">精确率 96.2%</text>
+  <rect x="230" y="158" width="356.8" height="14" fill="#999999" opacity="0.5"/>
+  <text x="594" y="169" font-size="12" fill="#555">召回率 44.6%</text>
+  <rect x="230" y="176" width="488" height="14" fill="#D55E00"/>
+  <text x="726" y="187" font-size="12" fill="#555">F1 61.0%</text>
 
-  <!-- magnetic drum -->
-  <rect x="330" y="400" width="170" height="160" rx="14" fill="#D6EAF8" stroke="#2E86C1" stroke-width="3"/>
-  <circle cx="415" cy="462" r="30" fill="#BFDCEE" stroke="#2E86C1" stroke-width="3"/>
-  <text x="415" y="469" font-size="20" fill="#1B4F72" text-anchor="middle">磁滚筒</text>
-  <text x="415" y="516" font-size="17" fill="#1B4F72" text-anchor="middle">用户 ID 聚合</text>
-  <text x="415" y="542" font-size="15" fill="#2E86C1" text-anchor="middle">在线变点检测</text>
+  <text x="218" y="238" font-size="12.5" fill="#1A1B1E" text-anchor="end">压缩检测器</text>
+  <rect x="230" y="230" width="654.4" height="14" fill="#D55E00" opacity="0.35"/>
+  <text x="892" y="241" font-size="12" fill="#555">F1 81.8%</text>
+  <text x="230" y="262" font-size="12" fill="#555">跨会话历史筛到攻击相关 top-K 后整体判断（精确率 / 召回率正文未给出）</text>
 
-  <!-- needles attracted -->
-  <g stroke="#2E86C1" stroke-width="2" fill="none" stroke-dasharray="5 4">
-    <path d="M258,240 C300,300 330,380 372,440"/>
-    <path d="M258,322 C290,360 320,410 362,452"/>
-    <path d="M258,404 C285,420 315,440 356,466"/>
+  <text x="218" y="316" font-size="12.5" fill="#1A1B1E" text-anchor="end">Magnet</text>
+  <rect x="230" y="308" width="672" height="14" fill="#D55E00"/>
+  <text x="910" y="319" font-size="12" fill="#555">F1 84.0%</text>
+  <text x="230" y="340" font-size="12" fill="#555">用户 ID 级能力聚合 + 在线变点检测，token 成本中等</text>
+
+  <!-- value axis -->
+  <line x1="230" y1="370" x2="1030" y2="370" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="230" y1="370" x2="230" y2="374"/>
+    <line x1="430" y1="370" x2="430" y2="374"/>
+    <line x1="630" y1="370" x2="630" y2="374"/>
+    <line x1="830" y1="370" x2="830" y2="374"/>
+    <line x1="1030" y1="370" x2="1030" y2="374"/>
   </g>
-  <text x="288" y="296" font-size="14" fill="#2E86C1" transform="rotate(48 288 296)">capability 吸附</text>
-
-  <!-- tails out (benign) -->
-  <path d="M415,560 L415,592 L362,624" fill="none" stroke="#5D6D7E" stroke-width="2" marker-end="url(#m-slate)"/>
-  <text x="356" y="648" font-size="14" fill="#5D6D7E" text-anchor="end">尾矿：良性会话放行</text>
-
-  <!-- evidence bundle -->
-  <rect x="572" y="400" width="170" height="160" rx="14" fill="#FADBD8" stroke="#C0392B" stroke-width="3"/>
-  <path d="M572,400 l28,28 M742,400 l-28,28 M572,560 l28,-28 M742,560 l-28,-28" stroke="#C0392B" stroke-width="2"/>
-  <g stroke="#A93226" stroke-width="3">
-    <line x1="620" y1="438" x2="672" y2="466"/>
-    <line x1="620" y1="470" x2="672" y2="442"/>
-    <line x1="636" y1="496" x2="688" y2="470"/>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="230" y="390">0</text>
+    <text x="430" y="390">25</text>
+    <text x="630" y="390">50</text>
+    <text x="830" y="390">75</text>
+    <text x="1030" y="390">100</text>
   </g>
-  <text x="657" y="530" font-size="17" fill="#922B21" text-anchor="middle">证据束 → 判定</text>
-  <text x="657" y="552" font-size="14" fill="#C0392B" text-anchor="middle">钓鱼 / 燃烧装置两域</text>
-  <path d="M500,470 L566,470" stroke="#C0392B" stroke-width="3" marker-end="url(#m-red)"/>
+  <text x="630" y="414" font-size="14" fill="#1A1B1E" text-anchor="middle">指标取值（%）</text>
 
-  <!-- right panel: detector comparison -->
-  <text x="800" y="142" font-size="20" fill="#5D6D7E">检测器对比（336 场景 · F1）</text>
-  <g font-size="16">
-    <text x="800" y="184" fill="#2C3E50">逐会话</text>
-    <rect x="900" y="166" width="146" height="24" fill="#27AE60"/>
-    <text x="1056" y="184" fill="#27AE60">61.0%</text>
-    <text x="800" y="228" fill="#2C3E50">压缩</text>
-    <rect x="900" y="210" width="196" height="24" fill="#B7791F"/>
-    <text x="1106" y="228" fill="#B7791F">81.8%</text>
-    <text x="800" y="272" fill="#2C3E50">Magnet</text>
-    <rect x="900" y="254" width="202" height="24" fill="#C0392B"/>
-    <text x="1108" y="272" fill="#C0392B">84.0%</text>
+  <!-- ============ panel b ============ -->
+  <text x="60" y="462" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="462" font-size="15" fill="#1A1B1E">目标分解越深，攻击成功率越高（9 个模型平均）</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="120" y1="595.4" x2="560" y2="595.4"/>
+    <line x1="120" y1="531.2" x2="560" y2="531.2"/>
   </g>
-  <text x="800" y="304" font-size="14" fill="#7F8C8D">逐会话：精确 96.2%，召回仅 44.6%</text>
-  <text x="1150" y="322" font-size="14" fill="#C0392B" text-anchor="end">大幅领先逐会话检测</text>
+  <!-- bars: y = 628 - 5.6*v -->
+  <rect x="160" y="523.5" width="60" height="104.5" fill="#999999"/>
+  <text x="190" y="515" font-size="12" fill="#555" text-anchor="middle">18.7%</text>
+  <text x="190" y="614" font-size="12.5" fill="#1A1B1E" text-anchor="middle">单轮请求</text>
 
-  <line x1="800" y1="326" x2="1150" y2="326" stroke="#D5CBB8" stroke-width="1.5"/>
+  <rect x="290" y="482.4" width="60" height="145.6" fill="#999999"/>
+  <text x="320" y="474" font-size="12" fill="#555" text-anchor="middle">26%</text>
+  <text x="320" y="614" font-size="12.5" fill="#1A1B1E" text-anchor="middle">多轮请求</text>
 
-  <!-- ASR stair -->
-  <text x="800" y="360" font-size="20" fill="#5D6D7E">九个模型攻击成功率：越拆越高</text>
-  <g>
-    <rect x="806" y="452" width="72" height="68" fill="#B7791F" opacity="0.45"/>
-    <rect x="906" y="430" width="72" height="82" fill="#B7791F" opacity="0.7"/>
-    <rect x="1006" y="402" width="72" height="110" fill="#B7791F"/>
-    <text x="842" y="446" font-size="15" fill="#8A5A12" text-anchor="middle">18.7%</text>
-    <text x="942" y="422" font-size="15" fill="#8A5A12" text-anchor="middle">26%</text>
-    <text x="1042" y="394" font-size="15" fill="#8A5A12" text-anchor="middle">37.4%</text>
-    <text x="842" y="544" font-size="14" fill="#5D6D7E" text-anchor="middle">单轮</text>
-    <text x="942" y="544" font-size="14" fill="#5D6D7E" text-anchor="middle">多轮</text>
-    <text x="1042" y="544" font-size="14" fill="#5D6D7E" text-anchor="middle">跨会话</text>
-    <line x1="796" y1="520" x2="1096" y2="520" stroke="#5D6D7E" stroke-width="2"/>
+  <rect x="420" y="418.6" width="60" height="209.4" fill="#0072B2"/>
+  <text x="450" y="410" font-size="12" fill="#555" text-anchor="middle">37.4%</text>
+  <text x="450" y="614" font-size="12.5" fill="#1A1B1E" text-anchor="middle">跨会话投递</text>
+
+  <line x1="120" y1="628" x2="560" y2="628" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="120" y1="628" x2="120" y2="632"/>
+    <line x1="260" y1="628" x2="260" y2="632"/>
+    <line x1="400" y1="628" x2="400" y2="632"/>
+    <line x1="540" y1="628" x2="540" y2="632"/>
   </g>
-  <text x="800" y="574" font-size="14" fill="#7F8C8D">N = 1080，95% CI 不重叠 · 阈值 50%</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="120" y="648">0</text>
+    <text x="260" y="648">15</text>
+    <text x="400" y="648">30</text>
+    <text x="540" y="648">45</text>
+  </g>
+  <text x="340" y="668" font-size="14" fill="#1A1B1E" text-anchor="middle">攻击成功率（%）</text>
 
-  <!-- bottom strip: noise robustness -->
-  <line x1="70" y1="606" x2="740" y2="606" stroke="#D5CBB8" stroke-width="1.5"/>
-  <text x="70" y="640" font-size="16" fill="#2C3E50">25 倍噪声稀释：压缩召回 59% → 43%，Magnet 稳在 62%–73%</text>
-  <text x="70" y="664" font-size="14" fill="#C0392B">与 iCORE（arXiv:2607.27429）互补：一内一外，安全边界画在对手跨越之处</text>
+  <!-- ============ panel c ============ -->
+  <text x="640" y="462" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="662" y="462" font-size="15" fill="#1A1B1E">良性噪声稀释到 25 倍时的召回率</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="700" y1="534" x2="1140" y2="534"/>
+    <line x1="700" y1="582" x2="1140" y2="582"/>
+  </g>
+  <!-- compressed: 59 -> 43, y = 630 - 2*v -->
+  <line x1="790" y1="512" x2="1010" y2="544" stroke="#999999" stroke-width="1.5"/>
+  <circle cx="790" cy="512" r="5" fill="#999999"/>
+  <circle cx="1010" cy="544" r="5" fill="#999999"/>
+  <text x="790" y="500" font-size="12" fill="#555" text-anchor="middle">59%（无稀释）</text>
+  <text x="1022" y="548" font-size="12" fill="#555">43%</text>
+  <text x="790" y="566" font-size="12" fill="#555">压缩检测器：召回下跌</text>
+
+  <!-- Magnet band 62-73 -->
+  <rect x="790" y="484" width="220" height="22" fill="#0072B2" opacity="0.25"/>
+  <line x1="790" y1="484" x2="790" y2="506" stroke="#0072B2" stroke-width="1.5"/>
+  <line x1="1010" y1="484" x2="1010" y2="506" stroke="#0072B2" stroke-width="1.5"/>
+  <text x="778" y="499" font-size="12" fill="#555" text-anchor="end">Magnet 稳定区间</text>
+  <text x="1022" y="499" font-size="12" fill="#555">62%–73%</text>
+
+  <line x1="700" y1="630" x2="1140" y2="630" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="700" y1="630" x2="700" y2="634"/>
+    <line x1="820" y1="630" x2="820" y2="634"/>
+    <line x1="940" y1="630" x2="940" y2="634"/>
+    <line x1="1060" y1="630" x2="1060" y2="634"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="700" y="650">40</text>
+    <text x="820" y="650">50</text>
+    <text x="940" y="650">60</text>
+    <text x="1060" y="650">70</text>
+  </g>
+  <text x="920" y="668" font-size="14" fill="#1A1B1E" text-anchor="middle">召回率（%）</text>
+  <text x="700" y="522" font-size="12" fill="#555">横轴为稀释进度示意（无稀释 → 25 倍稀释），非数值轴</text>
+
+  <!-- footnote -->
+  <text x="60" y="430" font-size="11" fill="#767676">数据：arXiv:2608.02518，N = 1080，攻击成功率两两 95% 置信区间不重叠 · 判定为评分细则完成度口径，采用 50% 阈值（作者自述为约定而非原则性选择）· 覆盖钓鱼与燃烧装置两个危害域 · 预印本未经同行评审</text>
 </svg>

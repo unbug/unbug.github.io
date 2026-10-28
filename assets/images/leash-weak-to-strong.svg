@@ -1,106 +1,100 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8F98A6; }
-      .rl { font-size: 15px; fill: #36404E; }
-      .val { font-size: 19px; font-weight: 700; }
-      .b { font-size: 12px; fill: #A3ACB8; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EFF2F6"/>
-    </linearGradient>
-    <linearGradient id="gRail" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#3D5A73"/><stop offset="1" stop-color="#6E8AA3"/>
-    </linearGradient>
-    <linearGradient id="gSignal" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2F9E6B"/><stop offset="1" stop-color="#6BC491"/>
-    </linearGradient>
-    <linearGradient id="gAmber" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#C99A2E"/><stop offset="1" stop-color="#E3BE5F"/>
-    </linearGradient>
-    <linearGradient id="gRed" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#C2452C"/><stop offset="1" stop-color="#DF765B"/>
-    </linearGradient>
-    <linearGradient id="gViolet" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#6A5AE0"/><stop offset="1" stop-color="#9B8DF0"/>
-    </linearGradient>
-    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#00A0B0"/><stop offset="1" stop-color="#54CBD6"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1106" cy="608" r="140" fill="#6A5AE0" opacity="0.05"/>
-  <circle cx="82" cy="110" r="110" fill="#3D5A73" opacity="0.05"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gRed)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">不确定性升级贡献 26.8 个百分点；叠加影子盯梢后成功率 73.66%，追平常开强模型</text>
 
-  <text class="k" x="64" y="84">一分钟读论文 · 2026-10-17 · ARXIV:2610.22280 · Simular/UW-Madison</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1E2430">弱车盯住快车</text>
-  <text x="64" y="158" font-size="15" fill="#68727F">LEASH：弱模型按不确定性换人接管，交接后在线盯梢黑盒强模型</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">消融阶梯：逐层叠加后的 OSWorld 任务成功率（%）</text>
 
-  <!-- subway signal + train motif -->
-  <g>
-    <rect x="1062" y="88" width="34" height="86" rx="8" fill="#36404E"/>
-    <circle cx="1079" cy="110" r="10" fill="url(#gRed)"/>
-    <circle cx="1079" cy="134" r="10" fill="url(#gAmber)" opacity="0.35"/>
-    <circle cx="1079" cy="158" r="10" fill="url(#gSignal)"/>
-    <line x1="1079" y1="88" x2="1079" y2="72" stroke="#36404E" stroke-width="4"/>
-    <path d="M 1004 196 h 150 l -12 26 h -126 z" fill="url(#gViolet)"/>
-    <rect x="1016" y="170" width="126" height="26" rx="7" fill="url(#gTeal)"/>
-    <circle cx="1036" cy="228" r="6" fill="#36404E"/>
-    <circle cx="1122" cy="228" r="6" fill="#36404E"/>
-    <line x1="996" y1="238" x2="1160" y2="238" stroke="#8F98A6" stroke-width="3"/>
-    <text class="b" x="1079" y="262" text-anchor="middle">换人进站 · 影子在线盯梢</text>
+  <!-- gridlines: x = 250 + 8*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="450" y1="126" x2="450" y2="380"/>
+    <line x1="650" y1="126" x2="650" y2="380"/>
+    <line x1="850" y1="126" x2="850" y2="380"/>
   </g>
 
-  <!-- ablation ladder: 4 platforms -->
-  <g>
-    <text class="rl" x="64" y="216" font-weight="700">消融阶梯 · OSWorld 成功率与估算成本</text>
+  <!-- weak baseline 37.40 -->
+  <text x="238" y="160" font-size="12.5" fill="#1A1B1E" text-anchor="end">弱模型独立执行</text>
+  <rect x="250" y="146" width="299.2" height="18" fill="#999999"/>
+  <text x="557" y="160" font-size="12" fill="#555">37.40%</text>
 
-    <rect x="64" y="232" width="668" height="52" fill="#3D5A73" opacity="0.07"/>
-    <text class="rl" x="88" y="264">弱模型独立跑车</text>
-    <rect x="264" y="248" width="129" height="20" rx="4" fill="url(#gRail)"/>
-    <text class="val" x="404" y="265" fill="#3D5A73">37.40%</text>
+  <!-- +Manager 41.15 -->
+  <text x="238" y="220" font-size="12.5" fill="#1A1B1E" text-anchor="end">+ Manager 拆解验收</text>
+  <rect x="250" y="206" width="329.2" height="18" fill="#999999"/>
+  <text x="587" y="220" font-size="12" fill="#555">41.15%（$0.1372）</text>
 
-    <rect x="64" y="294" width="668" height="52" fill="#00A0B0" opacity="0.08"/>
-    <text class="rl" x="88" y="326">+ Manager 拆解验收</text>
-    <rect x="264" y="310" width="142" height="20" rx="4" fill="url(#gTeal)"/>
-    <text class="val" x="418" y="327" fill="#008894">41.15%</text>
-    <text class="b" x="502" y="326">成本 $0.1372</text>
+  <!-- +escalation 67.94 -->
+  <text x="238" y="280" font-size="12.5" fill="#1A1B1E" text-anchor="end">+ 不确定性升级</text>
+  <rect x="250" y="266" width="543.5" height="18" fill="#0072B2"/>
+  <text x="801" y="280" font-size="12" fill="#555">67.94%（$0.4050）</text>
+  <text x="801" y="296" font-size="12" fill="#555">增量 Δ = +26.8 个百分点</text>
 
-    <rect x="64" y="356" width="668" height="52" fill="#C99A2E" opacity="0.10"/>
-    <text class="rl" x="88" y="388">+ 不确定性升级</text>
-    <rect x="264" y="372" width="234" height="20" rx="4" fill="url(#gAmber)"/>
-    <text class="val" x="510" y="389" fill="#9A7212">67.94%</text>
-    <text class="b" x="594" y="388" fill="#9A7212" font-weight="700">一级 +26.8 分</text>
+  <!-- +shadow 73.66 -->
+  <text x="238" y="340" font-size="12.5" fill="#1A1B1E" text-anchor="end">+ 影子盯梢</text>
+  <rect x="250" y="326" width="589.3" height="18" fill="#0072B2" opacity="0.35"/>
+  <rect x="793.5" y="326" width="45.8" height="18" fill="#D55E00"/>
+  <text x="847" y="340" font-size="12" fill="#555">73.66%（$0.4117）</text>
+  <text x="847" y="356" font-size="12" fill="#555">增量 Δ = +5.7 个百分点</text>
 
-    <rect x="64" y="418" width="668" height="52" fill="#6A5AE0" opacity="0.08"/>
-    <text class="rl" x="88" y="450" font-weight="700">+ 影子盯梢</text>
-    <rect x="264" y="434" width="254" height="20" rx="4" fill="url(#gViolet)"/>
-    <text class="val" x="530" y="451" fill="#6A5AE0">73.66%</text>
-    <text class="b" x="614" y="450" fill="#6A5AE0" font-weight="700">再补 +5.7 分</text>
-
-    <text class="b" x="64" y="498">空心基准 = 弱模型独跑 · 横条按成功率等比 · Qwen3.5-35B-A3B 骨干</text>
+  <!-- value axis -->
+  <line x1="250" y1="380" x2="850" y2="380" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="250" y1="380" x2="250" y2="384"/>
+    <line x1="450" y1="380" x2="450" y2="384"/>
+    <line x1="650" y1="380" x2="650" y2="384"/>
+    <line x1="850" y1="380" x2="850" y2="384"/>
   </g>
-
-  <!-- right: cost dumbbell + shadow -->
-  <g>
-    <text class="rl" x="780" y="308" font-weight="700">单任务估算成本</text>
-    <line x1="812" y1="348" x2="1042" y2="348" stroke="url(#gSignal)" stroke-width="3"/>
-    <circle cx="1042" cy="348" r="8" fill="#FFFFFF" stroke="#2F9E6B" stroke-width="3"/>
-    <circle cx="812" cy="348" r="10" fill="url(#gSignal)"/>
-    <text x="780" y="386" font-size="16" font-weight="700" fill="#2F9E6B">$0.4117</text>
-    <text x="1006" y="330" font-size="16" font-weight="700" fill="#2F9E6B">$0.5094</text>
-    <text class="b" x="1056" y="353">常开 Opus 5</text>
-    <text class="serif" x="780" y="424" font-size="26" font-weight="700" fill="#2F9E6B">省 19.2%</text>
-    <text class="b" x="780" y="448">成功率 73.66% 对 72.90%，追平常开强模型</text>
-
-    <rect x="780" y="470" width="356" height="46" fill="#00A0B0" opacity="0.08"/>
-    <text x="796" y="498" font-size="14" fill="#36404E">影子层只多花约 <tspan font-weight="700" fill="#008894">1.7%</tspan> 成本 · 升级率 <tspan font-weight="700" fill="#6A5AE0">64.1%</tspan></text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="250" y="400">0</text>
+    <text x="450" y="400">20</text>
+    <text x="650" y="400">40</text>
+    <text x="850" y="400">60</text>
   </g>
+  <text x="550" y="426" font-size="14" fill="#1A1B1E" text-anchor="middle">OSWorld 任务成功率（%）</text>
+  <text x="250" y="450" font-size="12" fill="#555">灰 = 未调用强执行器的配置；蓝 = 含升级机制；朱 = 影子盯梢的增量部分（73.66 − 67.94）</text>
 
-  <line x1="64" y1="548" x2="1136" y2="548" stroke="#DFE4EA"/>
-  <text x="64" y="584" font-size="15.5" fill="#36404E">弱模型用相同动作位置的影子表征替黑盒强模型把脉；同成本对照下比随机升级高 9.1 分。</text>
-  <text class="b" x="64" y="616">2026 年 10 月 arXiv 预印本 · 成本为固定参考价折算的估算值，非真实账单 · 跨骨干成本为常开强模型的 69%–81% · Micropaper</text>
+  <!-- ============ panel b ============ -->
+  <text x="60" y="498" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="498" font-size="15" fill="#1A1B1E">端到端对比：任务成功率与单任务估算成本</text>
+
+  <!-- success rate dumbbell: y = 565 - 2*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="90" y1="565" x2="560" y2="565"/>
+    <line x1="90" y1="495" x2="560" y2="495"/>
+  </g>
+  <line x1="90" y1="520" x2="560" y2="520" stroke="#999999" stroke-width="1.5"/>
+  <circle cx="90" cy="520" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="2"/>
+  <circle cx="211.3" cy="520" r="6" fill="#0072B2"/>
+  <text x="90" y="502" font-size="12" fill="#555" text-anchor="middle">72.90%（常开 Claude Opus 5）</text>
+  <text x="229" y="538" font-size="12" fill="#555">73.66%（LEASH）</text>
+
+  <line x1="90" y1="450" x2="560" y2="450" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="90" y1="450" x2="90" y2="454"/>
+    <line x1="325" y1="450" x2="325" y2="454"/>
+    <line x1="560" y1="450" x2="560" y2="454"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="90" y="470">0</text>
+    <text x="325" y="470">50</text>
+    <text x="560" y="470">100</text>
+  </g>
+  <text x="90" y="576" font-size="14" fill="#1A1B1E">任务成功率（%）</text>
+
+  <!-- cost direct bars: x = 90 + 200*v -->
+  <text x="650" y="524" font-size="12.5" fill="#1A1B1E" text-anchor="end">常开 Claude Opus 5</text>
+  <rect x="660" y="510" width="101.9" height="16" fill="#999999"/>
+  <text x="770" y="523" font-size="12" fill="#555">$0.5094</text>
+
+  <text x="650" y="559" font-size="12.5" fill="#1A1B1E" text-anchor="end">LEASH</text>
+  <rect x="660" y="545" width="82.3" height="16" fill="#D55E00"/>
+  <text x="751" y="558" font-size="12" fill="#555">$0.4117</text>
+
+  <text x="660" y="590" font-size="14" fill="#1A1B1E">单任务估算成本（美元，按固定参考价折算 token 用量，非真实账单）</text>
+  <text x="660" y="612" font-size="12" fill="#555">Δ = −19.2%；正文口径：跨骨干成本为常开强模型的 69%–81%</text>
+
+  <!-- footnote -->
+  <text x="60" y="648" font-size="11" fill="#767676">数据：arXiv:2610.22280（Qwen3.5-35B-A3B 骨干，OSWorld 基准，消融取自论文同表，成本为论文估算口径）· 主打配置升级率 64.1%，同成本对照比随机升级高 9.1 个百分点 · 预印本未经同行评审</text>
 </svg>

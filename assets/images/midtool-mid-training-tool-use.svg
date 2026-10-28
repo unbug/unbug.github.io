@@ -1,132 +1,117 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #97918A; }
-      .rl { font-size: 15px; fill: #4C4741; }
-      .val { font-size: 18px; font-weight: 700; fill: #1A1B1E; }
-      .b { font-size: 12px; fill: #ABA59C; }
-      .chip { font-size: 12.5px; font-weight: 600; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F6F2ED"/>
-    </linearGradient>
-    <linearGradient id="gRed" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#C0392B"/><stop offset="1" stop-color="#E0705F"/>
-    </linearGradient>
-    <linearGradient id="gEmerald" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2E8B57"/><stop offset="1" stop-color="#6FBF8F"/>
-    </linearGradient>
-    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#3D6E9E"/><stop offset="1" stop-color="#7BA3CB"/>
-    </linearGradient>
-    <linearGradient id="gAmber" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#D9822B"/><stop offset="1" stop-color="#EFB767"/>
-    </linearGradient>
-    <linearGradient id="gPlum" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#8E4585"/><stop offset="1" stop-color="#C080B6"/>
-    </linearGradient>
-    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#B9892F"/><stop offset="1" stop-color="#DCB65F"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1104" cy="108" r="142" fill="#2E8B57" opacity="0.06"/>
-  <circle cx="78" cy="618" r="110" fill="#C0392B" opacity="0.06"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gRed)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">20.3B token 工具专用中间训练语料带来三基准一致提升；同规模通用语料几乎无效</text>
 
-  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2608.20314 · SNOWFLAKE 等</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">赛前加练专项课</text>
-  <text x="64" y="158" font-size="15" fill="#5F5951">MidTool：预训练与 SFT 之间补一节工具课，三基准齐涨</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">BFCLv3 overall：官方参照与训练配置（分数）</text>
 
-  <!-- dumbbell rack motif -->
-  <g>
-    <rect x="988" y="96" width="168" height="7" rx="3.5" fill="#8B857C"/>
-    <g>
-      <rect x="978" y="82" width="14" height="35" rx="4" fill="url(#gRed)"/>
-      <rect x="994" y="88" width="10" height="23" rx="3" fill="url(#gRed)" opacity="0.8"/>
-      <rect x="1152" y="82" width="14" height="35" rx="4" fill="url(#gRed)"/>
-      <rect x="1140" y="88" width="10" height="23" rx="3" fill="url(#gRed)" opacity="0.8"/>
-    </g>
-    <g>
-      <rect x="1016" y="132" width="14" height="35" rx="4" fill="url(#gEmerald)"/>
-      <rect x="1032" y="138" width="10" height="23" rx="3" fill="url(#gEmerald)" opacity="0.8"/>
-      <rect x="1102" y="132" width="14" height="35" rx="4" fill="url(#gEmerald)"/>
-      <rect x="1090" y="138" width="10" height="23" rx="3" fill="url(#gEmerald)" opacity="0.8"/>
-      <rect x="1030" y="146" width="64" height="7" rx="3.5" fill="#8B857C"/>
-    </g>
-    <text class="b" x="1078" y="196" text-anchor="middle">20.3B token 专项课</text>
+  <!-- gridlines x = 210 + 8.5*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="210" y1="126" x2="210" y2="372"/>
+    <line x1="420" y1="126" x2="420" y2="372"/>
+    <line x1="630" y1="126" x2="630" y2="372"/>
+    <line x1="840" y1="126" x2="840" y2="372"/>
   </g>
 
-  <!-- training pipeline as bench press stations -->
-  <g>
-    <rect x="64" y="200" width="234" height="92" fill="#3D6E9E" opacity="0.08"/>
-    <text class="serif" x="82" y="240" font-size="20" font-weight="700" fill="#33608C">预训练</text>
-    <text x="82" y="266" font-size="12.5" fill="#5F5951">Base 模型打底</text>
+  <text x="198" y="159" font-size="12.5" fill="#1A1B1E" text-anchor="end">官方 Qwen3-4B</text>
+  <rect x="210" y="145" width="206.3" height="18" fill="#999999"/>
+  <text x="424" y="159" font-size="12" fill="#555">24.27</text>
 
-    <path d="M 302 246 h 30" stroke="#ABA59C" stroke-width="2.5"/>
-    <path d="M 328 240 l 9 6 l -9 6" fill="none" stroke="#ABA59C" stroke-width="2.5"/>
+  <text x="198" y="201" font-size="12.5" fill="#1A1B1E" text-anchor="end">官方 Qwen3-8B</text>
+  <rect x="210" y="187" width="224.8" height="18" fill="#999999"/>
+  <text x="443" y="201" font-size="12" fill="#555">26.45</text>
 
-    <rect x="346" y="200" width="270" height="92" fill="#C0392B" opacity="0.09"/>
-    <text class="serif" x="364" y="240" font-size="20" font-weight="700" fill="#A93226">Mid-training · 专项课</text>
-    <text x="364" y="266" font-size="12.5" fill="#5F5951">MidTool-Mix · 20.3B token</text>
+  <text x="198" y="243" font-size="12.5" fill="#1A1B1E" text-anchor="end">Dolmino-20BT 相对提升</text>
+  <rect x="210" y="229" width="28.9" height="18" fill="#999999"/>
+  <text x="247" y="243" font-size="12" fill="#555">+3.4</text>
 
-    <path d="M 620 246 h 30" stroke="#ABA59C" stroke-width="2.5"/>
-    <path d="M 646 240 l 9 6 l -9 6" fill="none" stroke="#ABA59C" stroke-width="2.5"/>
+  <text x="198" y="285" font-size="12.5" fill="#1A1B1E" text-anchor="end">Qwen3-4B：SFT 基线</text>
+  <rect x="210" y="271" width="337.7" height="18" fill="#999999"/>
+  <text x="555" y="285" font-size="12" fill="#555">39.73</text>
 
-    <rect x="664" y="200" width="200" height="92" fill="#2E8B57" opacity="0.09"/>
-    <text class="serif" x="682" y="240" font-size="20" font-weight="700" fill="#25714A">SFT + RL</text>
-    <text x="682" y="266" font-size="12.5" fill="#5F5951">后训练上场</text>
+  <text x="198" y="327" font-size="12.5" fill="#1A1B1E" text-anchor="end">Qwen3-4B：+ MidTool · SFT</text>
+  <rect x="210" y="313" width="427.1" height="18" fill="#0072B2"/>
+  <text x="645" y="327" font-size="12" fill="#555">50.25（Δ = +10.5 分）</text>
 
-    <rect x="892" y="214" width="244" height="64" fill="#D9822B" opacity="0.1"/>
-    <text x="908" y="240" font-size="13" font-weight="700" fill="#B0661C">语料三段：真实文本 → 预处理</text>
-    <text x="908" y="264" font-size="13" font-weight="700" fill="#B0661C">→ agentic 轨迹合成</text>
+  <text x="198" y="369" font-size="12.5" fill="#1A1B1E" text-anchor="end">Qwen3-4B：+ MidTool · SFT+RL</text>
+  <rect x="210" y="355" width="460.5" height="18" fill="#D55E00"/>
+  <text x="679" y="369" font-size="12" fill="#555">54.18（RL 再 + 约 3.9 分）</text>
+
+  <line x1="210" y1="372" x2="1020" y2="372" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="210" y1="372" x2="210" y2="376"/>
+    <line x1="420" y1="372" x2="420" y2="376"/>
+    <line x1="630" y1="372" x2="630" y2="376"/>
+    <line x1="840" y1="372" x2="840" y2="376"/>
   </g>
-
-  <!-- BFCL bar ladder -->
-  <g>
-    <text class="rl" x="64" y="342">BFCLv3 overall · Qwen3-4B-Base 一支杠铃</text>
-    <rect x="64" y="356" width="620" height="150" fill="#3D6E9E" opacity="0.06"/>
-
-    <text class="rl" x="250" y="392" text-anchor="end">官方 4B 参照</text>
-    <rect x="286" y="378" width="109" height="18" rx="4" fill="url(#gBlue)"/>
-    <text class="val" x="405" y="393" fill="#3D6E9E">24.27</text>
-
-    <text class="rl" x="250" y="428" text-anchor="end">SFT 基线</text>
-    <rect x="286" y="414" width="179" height="18" rx="4" fill="url(#gAmber)"/>
-    <text class="val" x="475" y="429" fill="#B0661C">39.73</text>
-
-    <text class="rl" x="250" y="464" text-anchor="end">+ MidTool · SFT+RL</text>
-    <rect x="286" y="450" width="244" height="18" rx="4" fill="url(#gRed)"/>
-    <text class="val" x="540" y="465" fill="#C0392B">54.18</text>
-    <text class="b" x="608" y="464">官方 8B 仅 26.45，追不上</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="210" y="392">0</text>
+    <text x="420" y="392">25</text>
+    <text x="630" y="392">50</text>
+    <text x="840" y="392">75</text>
   </g>
+  <text x="615" y="416" font-size="14" fill="#1A1B1E" text-anchor="middle">BFCLv3 overall 分数</text>
+  <text x="210" y="438" font-size="12" fill="#555">mid-trained 的 4B（54.18）超过官方 8B（26.45）</text>
 
-  <!-- right stat cards -->
-  <g>
-    <rect x="740" y="356" width="196" height="72" fill="#2E8B57" opacity="0.09"/>
-    <text class="serif" x="756" y="392" font-size="24" font-weight="700" fill="#25714A">tau2 ≈2.3×</text>
-    <text x="756" y="414" font-size="12.5" fill="#5F5951">4B：8.54 → 19.96</text>
+  <!-- ============ panel b ============ -->
+  <text x="60" y="482" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="482" font-size="15" fill="#1A1B1E">SFT 基线 → MidTool-Mix + SFT + RL（Qwen3-4B-Base）</text>
 
-    <rect x="948" y="356" width="188" height="72" fill="#8E4585" opacity="0.09"/>
-    <text class="serif" x="964" y="392" font-size="24" font-weight="700" fill="#7C3B73">MCP ≈6×</text>
-    <text x="964" y="414" font-size="12.5" fill="#5F5951">pass rate 1.68% → 10.06%</text>
-
-    <rect x="740" y="440" width="396" height="66" fill="#B9892F" opacity="0.1"/>
-    <text class="rl" x="756" y="468">同规模通用语料 Dolmino-20BT</text>
-    <text x="756" y="492" font-size="13" fill="#A93226" font-weight="700">BFCL 仅 +3.4 · MCP-Universe 反降 -7.8</text>
+  <!-- tau2 bars: x = 200 + 6*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="320" y1="500" x2="320" y2="596"/>
+    <line x1="440" y1="500" x2="440" y2="596"/>
   </g>
-
-  <line x1="64" y1="540" x2="1136" y2="540" stroke="#E7E0D4"/>
-  <g>
-    <rect x="64" y="558" width="130" height="28" rx="14" fill="url(#gGold)" opacity="0.22"/>
-    <text x="129" y="577" text-anchor="middle" class="chip" fill="#7A5A14">matched-budget</text>
-    <rect x="208" y="558" width="158" height="28" rx="14" fill="url(#gEmerald)" opacity="0.18"/>
-    <text x="287" y="577" text-anchor="middle" class="chip" fill="#25714A">语料+模型开源发布</text>
-    <rect x="380" y="558" width="168" height="28" rx="14" fill="url(#gRed)" opacity="0.14"/>
-    <text x="464" y="577" text-anchor="middle" class="chip" fill="#A93226">telecom 6.36 / Web Search 0</text>
+  <text x="188" y="519" font-size="12.5" fill="#1A1B1E" text-anchor="end">SFT 基线</text>
+  <rect x="200" y="505" width="51.2" height="16" fill="#999999"/>
+  <text x="259" y="518" font-size="12" fill="#555">8.54</text>
+  <text x="188" y="549" font-size="12.5" fill="#1A1B1E" text-anchor="end">MidTool + SFT + RL</text>
+  <rect x="200" y="535" width="119.8" height="16" fill="#0072B2"/>
+  <text x="327" y="548" font-size="12" fill="#555">19.96（约 2.3 倍）</text>
+  <line x1="200" y1="596" x2="440" y2="596" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="200" y1="596" x2="200" y2="600"/>
+    <line x1="320" y1="596" x2="320" y2="600"/>
   </g>
-  <text class="serif" x="64" y="634" font-size="18" fill="#1A1B1E">先练对动作，再上大重量；工具能力输在构成，不输在量。</text>
-  <text class="b" x="1136" y="634" text-anchor="end">数字取自论文 Table 3-6 · 仅 Qwen3 两档 Base 验证 · 预印本未经同行评审 · Micropaper</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="200" y="616">0</text>
+    <text x="320" y="616">20</text>
+  </g>
+  <text x="320" y="640" font-size="14" fill="#1A1B1E" text-anchor="middle">tau2-Bench overall Pass@1</text>
+
+  <!-- MCP bars: x = 610 + 20*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="730" y1="500" x2="730" y2="596"/>
+    <line x1="850" y1="500" x2="850" y2="596"/>
+  </g>
+  <text x="598" y="519" font-size="12.5" fill="#1A1B1E" text-anchor="end">SFT 基线</text>
+  <rect x="610" y="505" width="26.4" height="16" fill="#999999"/>
+  <text x="644" y="518" font-size="12" fill="#555">pass rate 1.68%</text>
+  <text x="598" y="549" font-size="12.5" fill="#1A1B1E" text-anchor="end">MidTool + SFT + RL</text>
+  <rect x="610" y="535" width="158" height="16" fill="#0072B2"/>
+  <text x="776" y="548" font-size="12" fill="#555">pass rate 10.06%（约 6 倍）</text>
+  <line x1="610" y1="596" x2="850" y2="596" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="610" y1="596" x2="610" y2="600"/>
+    <line x1="730" y1="596" x2="730" y2="600"/>
+    <line x1="850" y1="596" x2="850" y2="600"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="610" y="616">0</text>
+    <text x="730" y="616">6</text>
+  </g>
+  <text x="730" y="640" font-size="14" fill="#1A1B1E" text-anchor="middle">MCP-Universe overall pass rate（%）</text>
+
+  <!-- right notes -->
+  <text x="880" y="518" font-size="12.5" fill="#1A1B1E" font-weight="bold">同规模对照与边界</text>
+  <text x="880" y="542" font-size="12" fill="#555">Dolmino-20BT 的 MCP-Universe</text>
+  <text x="880" y="560" font-size="12" fill="#555">score 反而下降 −7.8</text>
+  <text x="880" y="584" font-size="12" fill="#555">telecom 子集 Pass@1 仅 6.36</text>
+  <text x="880" y="602" font-size="12" fill="#555">Web Search 全配置 0.00 / 0.00%</text>
+
+  <!-- footnote -->
+  <text x="60" y="662" font-size="11" fill="#767676">数据：arXiv:2608.20314，取自论文正文 Table 3–6（MidTool-Mix 共 20.3B token，与 Dolmino-20BT 规模相当，matched-budget 仅变量为构成）· 8B 参照：tau2-Bench 10.43 → 21.31，MCP-Universe 15.18 / 3.35% → 25.16 / 9.50% · 仅 Qwen3 两档 Base 验证 · 预印本未经同行评审</text>
 </svg>

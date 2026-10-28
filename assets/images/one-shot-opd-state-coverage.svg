@@ -1,90 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9C9484; }
-      .rl { font-size: 15px; fill: #474C54; }
-      .val { font-size: 17px; font-weight: 700; fill: #1A1B1E; }
-      .b { font-size: 12px; fill: #A5A296; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F4EC"/>
-    </linearGradient>
-    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2E5C8A"/><stop offset="1" stop-color="#5183B0"/>
-    </linearGradient>
-    <linearGradient id="gRose" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#A63A50"/><stop offset="1" stop-color="#C86A7C"/>
-    </linearGradient>
-    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#B08D3E"/><stop offset="1" stop-color="#D2B36C"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1100" cy="115" r="150" fill="#2E5C8A" opacity="0.06"/>
-  <circle cx="85" cy="615" r="115" fill="#B08D3E" opacity="0.08"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gRose)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">单条 query 覆盖全量蒸馏访问状态的 71.5%，16 条达到 98.9%；对齐速率两者相似放缓</text>
 
-  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2609.04172 · 清华等</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">数据喂饱，算法饿着</text>
-  <text x="64" y="158" font-size="15" fill="#5B6068">在线蒸馏的 state coverage：1 条 query 能覆盖全量数据的多少</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">不同 query 条数的状态覆盖率（%）</text>
 
-  <!-- watchmaker motif: pocket watch -->
-  <g>
-    <circle cx="1062" cy="118" r="46" fill="#FFFFFF" stroke="url(#gGold)" stroke-width="6"/>
-    <circle cx="1062" cy="118" r="38" fill="none" stroke="#E4DAC2" stroke-width="1.5"/>
-    <line x1="1062" y1="118" x2="1062" y2="88" stroke="#2E5C8A" stroke-width="4" stroke-linecap="round"/>
-    <line x1="1062" y1="118" x2="1084" y2="128" stroke="#A63A50" stroke-width="3" stroke-linecap="round"/>
-    <circle cx="1062" cy="118" r="4" fill="#B08D3E"/>
-    <rect x="1054" y="62" width="16" height="10" rx="4" fill="#B08D3E"/>
+  <!-- gridlines: x = 250 + 4.8*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="250" y1="128" x2="250" y2="318"/>
+    <line x1="490" y1="128" x2="490" y2="318"/>
+    <line x1="730" y1="128" x2="730" y2="318"/>
   </g>
 
-  <!-- curve axes: x steps 0-500 -> 170..770 ; y cov 0-100 -> 520..230 -->
-  <g stroke="#EBE5D6">
-    <line x1="170" y1="230" x2="770" y2="230"/>
-    <line x1="170" y1="375" x2="770" y2="375"/>
+  <!-- 1 query: 71.5 -->
+  <text x="238" y="170" font-size="12.5" fill="#1A1B1E" text-anchor="end">1 条 query</text>
+  <rect x="250" y="156" width="343.2" height="18" fill="#0072B2"/>
+  <text x="601" y="170" font-size="12" fill="#555">71.5%</text>
+
+  <!-- 16 queries: 98.9 -->
+  <text x="238" y="270" font-size="12.5" fill="#1A1B1E" text-anchor="end">16 条 query</text>
+  <rect x="250" y="256" width="474.7" height="18" fill="#D55E00"/>
+  <text x="733" y="270" font-size="12" fill="#555">98.9%，追平全量数据训练</text>
+
+  <!-- value axis -->
+  <line x1="250" y1="318" x2="730" y2="318" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="250" y1="318" x2="250" y2="322"/>
+    <line x1="370" y1="318" x2="370" y2="322"/>
+    <line x1="490" y1="318" x2="490" y2="322"/>
+    <line x1="610" y1="318" x2="610" y2="322"/>
+    <line x1="730" y1="318" x2="730" y2="322"/>
   </g>
-  <line x1="170" y1="520" x2="790" y2="520" stroke="#CFC7B2" stroke-width="1.5"/>
-  <line x1="170" y1="220" x2="170" y2="520" stroke="#CFC7B2" stroke-width="1.5"/>
-  <text class="b" x="170" y="542">0 步</text>
-  <text class="b" x="340" y="542" text-anchor="middle">100</text>
-  <text class="b" x="680" y="542" text-anchor="middle">400</text>
-  <text class="b" x="770" y="542" text-anchor="middle">500 步</text>
-  <text class="b" x="158" y="524" text-anchor="end">0%</text>
-  <text class="b" x="158" y="234" text-anchor="end">100%</text>
-
-  <!-- area + curve: 1 query -> plateau 71.5 (y=312.6) by ~100 steps -->
-  <path d="M 170 520 C 220 340 260 318 340 313 C 480 308 640 313 770 312.6 L 770 520 Z" fill="#2E5C8A" opacity="0.08"/>
-  <path d="M 170 520 C 220 340 260 318 340 313 C 480 308 640 313 770 312.6" fill="none" stroke="url(#gBlue)" stroke-width="4" stroke-linecap="round"/>
-  <!-- 16 queries -> 98.9 (y=234) -->
-  <path d="M 170 520 C 250 300 400 246 560 237 C 650 234 720 234.4 770 234" fill="none" stroke="url(#gRose)" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 0"/>
-
-  <!-- 100步 marker -->
-  <line x1="340" y1="230" x2="340" y2="520" stroke="#B08D3E" stroke-width="1.5" stroke-dasharray="5 5" opacity="0.55"/>
-  <circle cx="340" cy="313" r="8" fill="url(#gBlue)"/>
-  <text class="val" x="340" y="348" fill="#2E5C8A">1 条 query · 71.5%</text>
-  <text class="b" x="340" y="368" text-anchor="middle">大部分覆盖在前 100 步内到账</text>
-
-  <circle cx="770" cy="234" r="8" fill="url(#gRose)"/>
-  <text class="val" x="756" y="212" text-anchor="end" fill="#A63A50">16 条 · 98.9% 追平全量</text>
-
-  <!-- right stat column -->
-  <rect x="850" y="252" width="290" height="76" rx="12" fill="#A63A50" opacity="0.07"/>
-  <text class="serif" x="870" y="300" font-size="30" font-weight="700" fill="#A63A50">数百步</text>
-  <text x="870" y="318" font-size="12.5" fill="#6B7078">吸收监督所需步数，固定状态集也一样</text>
-
-  <g>
-    <text class="rl" x="870" y="382">对齐速率</text>
-    <rect x="958" y="370" width="120" height="12" rx="6" fill="url(#gGold)"/>
-    <text class="val" x="1090" y="384" font-size="14" fill="#8A6C2A">相似放缓</text>
-    <text class="b" x="870" y="408">1 条 vs 全量，斜率差不多</text>
-    <text class="rl" x="870" y="452">瓶颈不在</text>
-    <text class="val" x="958" y="452" fill="#2E5C8A">数据量</text>
-    <text class="b" x="870" y="478">在算法把监督吃进去的速率</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="250" y="338">0</text>
+    <text x="370" y="338">25</text>
+    <text x="490" y="338">50</text>
+    <text x="610" y="338">75</text>
+    <text x="730" y="338">100</text>
   </g>
+  <text x="490" y="362" font-size="14" fill="#1A1B1E" text-anchor="middle">state coverage：小 query 集轨迹覆盖全量蒸馏访问状态的比例（%）</text>
+  <text x="250" y="384" font-size="12" fill="#555">换语义不同的 query，覆盖率与验证精度同步上升</text>
 
-  <line x1="64" y1="576" x2="1136" y2="576" stroke="#EBE5D6"/>
-  <text class="serif" x="64" y="614" font-size="18" fill="#1A1B1E">data-overfed but algorithm-starved —— 数据喂饱了，算法饿着。</text>
-  <text class="b" x="1136" y="614" text-anchor="end">数学任务与所测模型家族 · 预印本未经同行评审 · 曲线为示意 · Micropaper</text>
+  <!-- ============ panel b ============ -->
+  <!-- ============ panel b ============ -->
+  <text x="850" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="872" y="104" font-size="15" fill="#1A1B1E">吸收侧：论文报告的关键量级</text>
+
+  <text x="850" y="150" font-size="13" fill="#1A1B1E" font-weight="bold">学生对教师的对齐速率</text>
+  <text x="850" y="178" font-size="12.5" fill="#1A1B1E">1 条 query</text>
+  <rect x="850" y="188" width="290" height="16" fill="#0072B2"/>
+  <text x="850" y="222" font-size="12.5" fill="#1A1B1E">全量数据</text>
+  <rect x="850" y="232" width="290" height="16" fill="#D55E00"/>
+  <text x="850" y="266" font-size="12" fill="#555">两行等宽 = 论文报告的相似放缓速率，</text>
+  <text x="850" y="284" font-size="12" fill="#555">无数值刻度、非数值轴</text>
+
+  <text x="850" y="326" font-size="13" fill="#1A1B1E" font-weight="bold">步数口径（论文自述）</text>
+  <text x="850" y="352" font-size="12" fill="#555">吸收监督需数百步，固定状态集也一样</text>
+  <text x="850" y="372" font-size="12" fill="#555">单条 query 蒸馏持续上行数百步</text>
+  <text x="850" y="392" font-size="12" fill="#555">大部分状态覆盖在前 100 步内到达</text>
+
+  <text x="850" y="434" font-size="13" fill="#1A1B1E" font-weight="bold">多教师延伸</text>
+  <text x="850" y="460" font-size="12" fill="#555">每个领域 16 条语义多样 query 追平全量；</text>
+  <text x="850" y="480" font-size="12" fill="#555">模板 query 与跨域 WildChat 真实对话</text>
+  <text x="850" y="500" font-size="12" fill="#555">接近真实领域 query 基线</text>
+
+  <text x="850" y="540" font-size="12" fill="#555">诊断词（作者自造）：data-overfed</text>
+  <text x="850" y="558" font-size="12" fill="#555">but algorithm-starved</text>
+
+  <!-- footnote -->
+  <text x="60" y="652" font-size="11" fill="#767676">数据：arXiv:2609.04172（arXiv:2604.13016 同系列续篇）· state coverage 为论文提出的测量框架而非学界既有定论 · 结论限定于数学任务与所测模型家族，论文报告跨家族与领域稳健 · 预印本未经同行评审</text>
 </svg>
