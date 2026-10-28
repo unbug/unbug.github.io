@@ -8,9 +8,7 @@ tags: [llm, agent-safety, tool-governance, guard-model]
 description: "上海科技大学把智能体工具调用安全审查从二元分类重构为执行、询问、拒绝三向路由，轻量守护模型单次解码输出决策，单一阈值即可切换场景安全策略无需重训。"
 ---
 
-上海科技大学的论文[《Safety Sentry: Context-Aware Human Intervention via EXECUTE-ASK-REFUSE Routing》][paper1-url]提出将Agent安全审查从二元safe/unsafe分类重构为三向路由决策{Execute, Ask, Refuse}，
-
-通过轻量级guard model的单次解码调用实现上下文感知的细粒度安全审查。
+上海科技大学的论文[《Safety Sentry: Context-Aware Human Intervention via EXECUTE-ASK-REFUSE Routing》][paper1-url]提出将Agent安全审查从二元safe/unsafe分类重构为三向路由决策{Execute, Ask, Refuse}，通过轻量级guard model的单次解码调用实现上下文感知的细粒度安全审查。
 
 ## 问题背景：Agent工具调用安全的二元分类困境
 

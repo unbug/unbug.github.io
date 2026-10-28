@@ -7,9 +7,9 @@ tags: [AI, Deep Learning, Architecture, Reasoning, HRM]
 image: assets/images/hrm-architecture.png
 ---
 
-## 简介：大卫挑战歌利亚
+## 简介：大卫挑战歌利亚在 AI 世界里，我们已经被"越大越好"的魔咒洗脑了——参数量从十亿狂飙到万亿，训练数据从 TB 堆到 PB，仿佛只有砸钱堆算力才能出奇迹。
 
-在 AI 世界里，我们已经被"越大越好"的魔咒洗脑了——参数量从十亿狂飙到万亿，训练数据从 TB 堆到 PB，仿佛只有砸钱堆算力才能出奇迹。但最近，新加坡的 Sapient Intelligence 公司扔出了一颗重磅炸弹：**Hierarchical Reasoning Model（HRM，分层推理模型）**，这货只用区区 **2700 万参数**和 **1000 个训练样本**，就在复杂推理任务上把那些庞然大物打得满地找牙！
+但最近，新加坡的 Sapient Intelligence 公司扔出了一颗重磅炸弹：**Hierarchical Reasoning Model（HRM，分层推理模型）**，这货只用区区 **2700 万参数**和 **1000 个训练样本**，就在复杂推理任务上把那些庞然大物打得满地找牙！
 
 这篇发表在 2025 年 NeurIPS 的论文，简直就是 AI 架构设计的转折点——谁说 AI 只能靠蛮力？智慧的架构设计也能四两拨千斤！
 

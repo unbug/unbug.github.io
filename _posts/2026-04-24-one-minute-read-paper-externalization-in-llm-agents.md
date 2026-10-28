@@ -7,9 +7,7 @@ image: assets/images/externalization-framework.jpg
 tags: [LLMAgent, Architecture, Memory, Skills, Protocols]
 ---
 
-上海交通大学、中山大学、CMU 等机构合作的一篇论文[《Externalization in LLM Agents: A Unified Review of Memory, Skills, Protocols and Harness Engineering》][paper1-url]，
-
-系统提出了 LLM Agent 的外化设计框架，将 Agent 设计空间归纳为记忆、技能、协议、框架四个维度。
+上海交通大学、中山大学、CMU 等机构合作的一篇论文[《Externalization in LLM Agents: A Unified Review of Memory, Skills, Protocols and Harness Engineering》][paper1-url]，系统提出了 LLM Agent 的外化设计框架，将 Agent 设计空间归纳为记忆、技能、协议、框架四个维度。
 
 论文指出，当前 Agent 系统的关键可靠性提升来自外化设计而非模型权重更新。
 

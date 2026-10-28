@@ -7,9 +7,7 @@ tags: [DeepSeek, 强化学习, 推理能力, LLM]
 image: assets/images/deepseek-r1-concept.jpg
 ---
 
-## 简介
-
-想象一下：如果AI不是通过"背诵"人类的解题步骤来学会推理，而是像人类一样，在不断的试错中突然"顿悟"，那会是怎样的场景？
+## 简介想象一下：如果AI不是通过"背诵"人类的解题步骤来学会推理，而是像人类一样，在不断的试错中突然"顿悟"，那会是怎样的场景？
 
 2025年1月，DeepSeek团队发布了一篇具有里程碑意义的论文——《DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning》。这篇论文展示了一个令人惊讶的发现：**大型语言模型的推理能力可以完全通过强化学习来激发，而不需要大量的人类标注推理轨迹**。
 

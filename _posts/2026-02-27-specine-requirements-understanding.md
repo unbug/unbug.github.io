@@ -6,23 +6,7 @@ tags: [代码生成, ICSE 2026, 需求工程]
 date: 2026-02-27 00:00:00 +0800
 ---
 
-# 一分钟读论文：Specine：让大语言模型真正"读懂"你的需求
-
-## 📝 论文概览
-
-**论文标题**：Aligning Requirement for Large Language Model's Code Generation
-
-**作者**：Zhao Tian, Junjie Chen (天津大学)
-
-**会议**：ICSE 2026（软件工程顶会）
-
-**论文链接**：[https://arxiv.org/abs/2509.01313](https://arxiv.org/abs/2509.01313)
-
----
-
-## 🎯 核心问题
-
-你是否有过这样的经历：用大语言模型（LLM）生成代码时，明明描述得很清楚，但生成的代码就是不符合预期？
+# 一分钟读论文：Specine：让大语言模型真正"读懂"你的需求## 📝 论文概览**论文标题**：Aligning Requirement for Large Language Model's Code Generation**作者**：Zhao Tian, Junjie Chen (天津大学)**会议**：ICSE 2026（软件工程顶会）**论文链接**：[https://arxiv.org/abs/2509.01313](https://arxiv.org/abs/2509.01313)---## 🎯 核心问题你是否有过这样的经历：用大语言模型（LLM）生成代码时，明明描述得很清楚，但生成的代码就是不符合预期？
 
 比如你要一个"快速排序算法"，它给了你一个冒泡排序；或者你要一个"支持并发的缓存"，它生成的代码却没有考虑线程安全。
 

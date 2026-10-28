@@ -7,11 +7,9 @@ categories: [AI, deepmind]
 tags: [deepmind, world-model, genie-3, ai]
 ---
 
-# DeepMind Genie 3 研究：实时交互式 3D 世界模型的重大突破
+# DeepMind Genie 3 研究：实时交互式 3D 世界模型的重大突破## 概述2025 年 8 月 5 日，Google DeepMind 正式发布了 Genie 3，这是其最新的通用世界模型（world model），被称为"第一个实时交互式通用世界模型"。
 
-## 概述
-
-2025 年 8 月 5 日，Google DeepMind 正式发布了 Genie 3，这是其最新的通用世界模型（world model），被称为"第一个实时交互式通用世界模型"。Genie 3 能够通过简单的文本提示生成可实时交互的 3D 环境，标志着世界模型技术的重大突破。
+Genie 3 能够通过简单的文本提示生成可实时交互的 3D 环境，标志着世界模型技术的重大突破。
 
 ## 发布时间与背景
 

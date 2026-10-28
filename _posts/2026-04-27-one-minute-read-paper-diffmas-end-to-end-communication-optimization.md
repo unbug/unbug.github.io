@@ -8,9 +8,7 @@ tags: [MultiAgent, Communication, Latent, DiffMAS, Reasoning]
 description: "DiffMAS将多智能体通信从固定文本接口改为可学习的隐空间表示，与推理联合端到端优化，在数学推理、科学问答等基准上优于文本通信方案，通信开销几乎可忽略。"
 ---
 
-美国伊利诺伊大学香槟分校等机构的研究者发表的论文[《Learning to Communicate: Toward End-to-End Optimization of Multi-Agent Language Systems》][paper1-url]，提出 DiffMAS 框架，
-
-首次将多智能体系统中的通信机制从固定文本接口转变为可学习的隐式表示，实现了通信与推理的联合端到端优化。
+美国伊利诺伊大学香槟分校等机构的研究者发表的论文[《Learning to Communicate: Toward End-to-End Optimization of Multi-Agent Language Systems》][paper1-url]，提出 DiffMAS 框架，首次将多智能体系统中的通信机制从固定文本接口转变为可学习的隐式表示，实现了通信与推理的联合端到端优化。
 
 当前基于大语言模型的多智能体系统在复杂推理任务上表现优异，但绝大多数工作将智能体间的通信视为固定接口，仅关注角色分配和编排策略。DiffMAS 的核心思路是：让智能体在隐空间中直接学习如何编码和解读彼此的信息，而非依赖预定义的文本协议。
 

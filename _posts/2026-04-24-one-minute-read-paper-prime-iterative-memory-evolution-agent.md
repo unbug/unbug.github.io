@@ -7,9 +7,7 @@ image: assets/images/prime.jpg
 tags: [Agent, Memory, ReinforcementLearning]
 ---
 
-Cornell 大学 Prince Zizhuang Wang 和 Shuli Jiang 的论文[《PRIME: Training Free Proactive Reasoning via Iterative Memory Evolution for User-Centric Agent》][paper1-url]，
-
-提出了一种梯度自由的学习框架，通过显式经验积累而非参数优化实现 Agent 的持续进化。
+Cornell 大学 Prince Zizhuang Wang 和 Shuli Jiang 的论文[《PRIME: Training Free Proactive Reasoning via Iterative Memory Evolution for User-Centric Agent》][paper1-url]，提出了一种梯度自由的学习框架，通过显式经验积累而非参数优化实现 Agent 的持续进化。
 
 该框架将多轮交互轨迹蒸馏为三语义区的结构化经验，在多个用户中心环境中达到与基于梯度方法相当的性能。
 

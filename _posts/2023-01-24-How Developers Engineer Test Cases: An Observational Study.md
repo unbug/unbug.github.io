@@ -6,9 +6,7 @@ categories: [Engineering]
 image: assets/images/screenshot-20230117-191039.jpg
 tags: [Test, UnitTest]
 ---
-先写测试还是先写代码？荷兰代尔夫特特理工大学和澳大利亚墨尔本大学的论文[《How Developers Engineer Test Cases: An Observational Study》][paper1-url] 观察了 13 位具有不同级别经验的工程师为真实世界的开源码编写测试用例，
-
-并调查了 72 位工程师之后，总结了一个框架和一组策略来解释工程师如何设计测试用例。
+先写测试还是先写代码？荷兰代尔夫特特理工大学和澳大利亚墨尔本大学的论文[《How Developers Engineer Test Cases: An Observational Study》][paper1-url] 观察了 13 位具有不同级别经验的工程师为真实世界的开源码编写测试用例，并调查了 72 位工程师之后，总结了一个框架和一组策略来解释工程师如何设计测试用例。
 
 ## 论文总结的测试框架
 

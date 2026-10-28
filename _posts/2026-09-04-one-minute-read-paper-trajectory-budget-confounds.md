@@ -8,11 +8,7 @@ tags: [llm, reasoning, evaluation]
 description: "一篇单作者预印本给「顿悟时刻」与「早期信号预测成败」两种推理轨迹测法补上反事实对照：178 个组合中仅 1 个前缀真正受限，纯题目难度基线已达 AUROC 0.873，热门叙事多半是预算与难度错觉。"
 ---
 
-Yigit Utku Bulut 的单作者预印本[《It's the Problem, Not the Path: Budget and Difficulty Confounds in LLM Reasoning Trajectories》][paper1-url]（arXiv:2609.03436，2026 年 9 月 3 日提交，
-
-abs 页未标注机构）给近两年两种流行的推理轨迹读法各补上了一个此前缺失的反事实对照，结论是：
-
-被广泛引用的「顿悟时刻」在作者测试范围内几乎全是继续生成预算造成的错觉，而「从早期内部信号提前读出这条推理会不会成功」的高分评测，多半只是题目难度本身好猜。
+Yigit Utku Bulut 的单作者预印本[《It's the Problem, Not the Path: Budget and Difficulty Confounds in LLM Reasoning Trajectories》][paper1-url]（arXiv:2609.03436，2026 年 9 月 3 日提交，abs 页未标注机构）给近两年两种流行的推理轨迹读法各补上了一个此前缺失的反事实对照，结论是：被广泛引用的「顿悟时刻」在作者测试范围内几乎全是继续生成预算造成的错觉，而「从早期内部信号提前读出这条推理会不会成功」的高分评测，多半只是题目难度本身好猜。
 
 两种测法都缺同一个东西——对照组。
 

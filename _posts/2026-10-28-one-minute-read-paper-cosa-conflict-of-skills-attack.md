@@ -8,9 +8,7 @@ tags: [llm, ai-agents, agent-skills, security]
 description: "北京科技大学等机构的预印本把技能单独合规、组合违规命名为 CoS，其 CoSA 攻击只向技能池加入占原池 5% 的局部合规技能，就让 5 个模型 3 种 harness 的政策违规率从 35.02% 升至 58.45%。"
 ---
 
-北京科技大学、中国科学院软件研究所、中国科学院大学和 UNSW（新南威尔士大学）合作的论文[《CoSA: The Conflict of Skills Attack in Real-World LLM Agent Ecosystems》][paper1-url]（arXiv:2610.35082）给 Agent Skills（可复用的技能插件）生态里的一类组合漏洞起了名字：
-
-CoS（Conflict of Skills，技能冲突，指每个技能单独检查都合规，组合使用时却违反政策）。
+北京科技大学、中国科学院软件研究所、中国科学院大学和 UNSW（新南威尔士大学）合作的论文[《CoSA: The Conflict of Skills Attack in Real-World LLM Agent Ecosystems》][paper1-url]（arXiv:2610.35082）给 Agent Skills（可复用的技能插件）生态里的一类组合漏洞起了名字：CoS（Conflict of Skills，技能冲突，指每个技能单独检查都合规，组合使用时却违反政策）。
 
 论文的核心数字：**往现有技能池里加入占原池 `≤5%` 的「局部合规」技能，`5 个 LLM` × `3 种 harness` 上的政策违规率从 `35.02%` 升到 `58.45%`，提升 `23.43` 个百分点**——不改任何现有技能，也不改运行时权限。
 

@@ -8,9 +8,7 @@ tags: [AI-safety, misuse-detection, multi-agent-systems, agent-security]
 description: "攻击者把有害目标拆进多个隔离会话，逐个审都合规，拼起来才是攻击链。论文提出 Magnet：按用户 ID 聚合跨会话能力做在线变点检测，F1 达 84.0%，大幅领先逐会话检测架构。"
 ---
 
-华盛顿大学 Natalie Isak 与 Matthew Dressman 的论文[《Magnet: Detecting Cross-Session AI Misuse Through Capability Accumulation》][paper1-url]（arXiv:2608.02518，2026 年 8 月 3 日提交）指出了 AI 滥用检测的一个结构性盲区：
-
-主流检测文献几乎全部建立在单轮或单会话威胁模型上，而攻击者可以把一个有害目标拆成多个看似无害的单元，分散到互相隔离的 Agent 会话里执行——每个会话单独审核都合规，组合起来才构成完整的攻击链。
+华盛顿大学 Natalie Isak 与 Matthew Dressman 的论文[《Magnet: Detecting Cross-Session AI Misuse Through Capability Accumulation》][paper1-url]（arXiv:2608.02518，2026 年 8 月 3 日提交）指出了 AI 滥用检测的一个结构性盲区：主流检测文献几乎全部建立在单轮或单会话威胁模型上，而攻击者可以把一个有害目标拆成多个看似无害的单元，分散到互相隔离的 Agent 会话里执行——每个会话单独审核都合规，组合起来才构成完整的攻击链。
 
 论文把这种攻击命名为跨会话目标分解，并给出对应检测方法 Magnet：不以单个会话为检测单元，而以用户 ID 为关联器建模跨会话累积的能力。
 

@@ -8,9 +8,7 @@ tags: [llm, structured-output, schema, calibration]
 description: "AACL IJCNLP 2026 主会接收的 PayPal AI 论文证实，生产系统里 LLM 结构化输出的精度损失不在 JSON 或 XML 格式本身，而在字段顺序：把推理字段排在答案字段之前，两个开权重小模型在 GSM8K 上从 10.98% 回升到 83-87%。"
 ---
 
-PayPal Artificial Intelligence 的论文[《Structure Tax: How Structured Output affects LLMs Performance》][paper1-url]（arXiv:2610.12056，
-
-2026 年 10 月 8 日提交）已被 AACL IJCNLP 2026 主会接收，是本站少见的已过同行评审的论文。
+PayPal Artificial Intelligence 的论文[《Structure Tax: How Structured Output affects LLMs Performance》][paper1-url]（arXiv:2610.12056，2026 年 10 月 8 日提交）已被 AACL IJCNLP 2026 主会接收，是本站少见的已过同行评审的论文。
 
 它重审了生产系统里长期被默认接受的「结构税」：强制大语言模型按 JSON 或 XML 这类固定格式作答时的精度损失，不在结构本身，而在字段顺序——把推理字段放到答案字段前面，两个开权重小模型在 GSM8K 数学基准上从 10.98% 回升到 83-87%。
 

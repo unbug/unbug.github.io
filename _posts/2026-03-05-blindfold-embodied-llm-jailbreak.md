@@ -9,7 +9,7 @@ image: assets/images/blindfold-embodied-llm.jpg
 ---
 ACM SenSys 2026研究：Blindfold攻击将恶意意图拆为无害动作序列，绕过具身AI安全机制。
 - 攻击成功率98%（Phi-4 99.2%，GPT-4o 93.2%）
-- 传统防御几乎无效，三重防御下仍有16%成功率
+- 传统防御几乎无效，三重防御下仍有16%成功率。
 
 ![Blindfold 具身AI越狱攻击]({{ site.baseurl }}/assets/images/blindfold-embodied-llm.jpg)
 

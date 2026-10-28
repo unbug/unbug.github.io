@@ -8,7 +8,7 @@ tags: [Google, Nested Learning, 灾难性遗忘, NeurIPS, 2025]
 image: assets/images/arxiv-paper-nested-learning.png
 ---
 
-## 引言
+## 引言。
 
 ![Google Nested Learning](/assets/images/arxiv-paper-nested-learning.png)
 如果我告诉你：过去十年我们对"深度学习"的理解可能都是错的，你会怎么想？

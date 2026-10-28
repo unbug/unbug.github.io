@@ -8,11 +8,9 @@ excerpt: "2026年最新研究揭示，世界模型研究正在经历从任务特
 image: assets/images/world-model-unified-framework-1.jpg
 ---
 
-# 世界模型统一框架：突破任务特定知识注入的局限性
+# 世界模型统一框架：突破任务特定知识注入的局限性## 简介想象一下，如果我们能让 AI 像人类一样真正理解这个世界——不仅能看到视频、听懂声音，还能预测物体的运动、理解物理规律、甚至在复杂环境中自如地交互。
 
-## 简介
-
-想象一下，如果我们能让 AI 像人类一样真正理解这个世界——不仅能看到视频、听懂声音，还能预测物体的运动、理解物理规律、甚至在复杂环境中自如地交互。这就是世界模型（World Models）的终极梦想。
+这就是世界模型（World Models）的终极梦想。
 
 2026年2月，一篇名为《Research on World Models Is Not Merely Injecting World Knowledge into Specific Tasks》的论文发表在arXiv上，这篇论文对当前世界模型研究现状进行了深刻的批判性分析，并提出了一个统一的世界模型框架设计规范。
 

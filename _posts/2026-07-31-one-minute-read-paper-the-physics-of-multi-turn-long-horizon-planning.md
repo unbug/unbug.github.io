@@ -8,9 +8,7 @@ image: assets/images/planphys-framework.svg
 tags: [agent-foundation-models, planning, agentic-distillation, rl-post-training]
 ---
 
-中国科学院自动化研究所复杂系统认知与决策智能重点实验室的论文[《The Physics of Multi-Turn Long-Horizon Planning: From Pre-training to Post-training via Single- and Multi-Teacher On-Policy Agentic Distillation》][paper1-url]首次从预训练到后训练再到多教师整合的全生命周期，
-
-系统研究了基础模型智能体多轮长程规划能力的获取与塑造机制。
+中国科学院自动化研究所复杂系统认知与决策智能重点实验室的论文[《The Physics of Multi-Turn Long-Horizon Planning: From Pre-training to Post-training via Single- and Multi-Teacher On-Policy Agentic Distillation》][paper1-url]首次从预训练到后训练再到多教师整合的全生命周期，系统研究了基础模型智能体多轮长程规划能力的获取与塑造机制。
 
 研究构建了首个可控的多轮长程规划实验平台（Controllable Planning Gym），揭示了世界模型内部化、RL 后训练适用边界和多教师蒸馏兼容性的核心规律。
 

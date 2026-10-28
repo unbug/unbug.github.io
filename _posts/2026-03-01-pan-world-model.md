@@ -10,10 +10,8 @@ image: assets/images/2026-03-01-pan-world-model.png
 layout: post
 author: unbug
 title: "一分钟读论文：《PAN 世界模型炸场！MBZUAI 黑科技让 AI 学会脑补现实世界》"
-categories: [AI]
-
-tags: [世界模型, World Model, PAN, MBZUAI, 人工智能]
----
+categories: [AI]tags: [世界模型, World Model, PAN, MBZUAI, 人工智能]
+---。
 
 ![PAN 世界模型 GLP 架构](assets/images/2026-03-01-pan-world-model.png)
 

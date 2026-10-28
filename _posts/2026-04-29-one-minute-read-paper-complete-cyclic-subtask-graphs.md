@@ -8,9 +8,7 @@ tags: [MultiAgent, Workflow, Revisitation, SubtaskGraph, ToolUsing]
 description: "用完全循环子任务图作实验透镜，量化多智能体工作流灵活性与协调成本的权衡：回溯密集场景显式回溯有益，依赖链场景单智能体更高效，检索受限场景灵活性难解瓶颈。"
 ---
 
-黎巴嫩美国大学研究者发表的论文[《Complete Cyclic Subtask Graphs for Tool-Using LLM Agents: Flexibility, Cost, and Bottlenecks in Multi-Agent Workflows》][paper1-url]，
-
-提出完全循环子任务图作为实验框架，系统测量多智能体工作流中灵活性与协调成本之间的权衡关系。
+黎巴嫩美国大学研究者发表的论文[《Complete Cyclic Subtask Graphs for Tool-Using LLM Agents: Flexibility, Cost, and Bottlenecks in Multi-Agent Workflows》][paper1-url]，提出完全循环子任务图作为实验框架，系统测量多智能体工作流中灵活性与协调成本之间的权衡关系。
 
 基于大语言模型的工具使用智能体在处理长周期任务时，往往需要回溯到早期子任务进行恢复和探索。然而，增加多智能体工作流的灵活性可能引入协调开销和大量推理成本。该研究通过完全循环子任务图这一刻意设计的最大灵活架构，量化了何时灵活性有益、何时增加负担。
 

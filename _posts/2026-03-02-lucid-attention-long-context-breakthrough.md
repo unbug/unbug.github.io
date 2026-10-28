@@ -6,11 +6,9 @@ categories: [AI, Research, Transformer]
 tags: [Attention Mechanism, Long Context, Transformer, AI Research, 2026]
 image: assets/images/lucid-attention-hero.png
 ---
----
+---# LUCID Attention：给长上下文模型戴上"降噪耳机"想象一下：你在一个嘈杂的咖啡馆里，试图听清朋友说的话。
 
-# LUCID Attention：给长上下文模型戴上"降噪耳机"
-
-想象一下：你在一个嘈杂的咖啡馆里，试图听清朋友说的话。周围的人声、音乐声、咖啡机的声音混杂在一起，让你很难集中注意力。
+周围的人声、音乐声、咖啡机的声音混杂在一起，让你很难集中注意力。
 
 这就是今天长上下文语言模型面临的困境。
 

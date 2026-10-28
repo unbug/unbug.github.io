@@ -7,9 +7,7 @@ image: assets/images/ai-meerkat-auditing.jpg
 tags: [ai-auditing, meerkat, security-benchmarks, developer-cheating]
 ---
 
-## 跨多 Agent 轨迹检测的创新
-
-传统安全审计工具主要关注**单 Agent 行为**，存在明显局限：仅分析单个 Agent 执行轨迹，无法检测多 Agent 间的协同安全问题，且开发者可能通过多 Agent 协作规避单 Agent 检测。
+## 跨多 Agent 轨迹检测的创新传统安全审计工具主要关注**单 Agent 行为**，存在明显局限：仅分析单个 Agent 执行轨迹，无法检测多 Agent 间的协同安全问题，且开发者可能通过多 Agent 协作规避单 Agent 检测。
 
 Meerkat 首创**跨多 Agent 轨迹**的安全违规检测框架，覆盖滥用、对齐缺失和任务游戏三种设置。该方法通过分析多个 Agent 间的交互与协同，发现单 Agent 分析无法识别的复杂安全问题，并提供全面覆盖。
 

@@ -8,9 +8,7 @@ tags: [llm, agent, agentic-coding]
 description: "仓库级编码 agent 的失败不在智力，而在写代码那一刻它依赖的事实既不在上下文窗口、也不在参数化记忆里：缺一个事实恰好损失它支撑的工作，模型不报告卡住而是自信地编造文件。"
 ---
 
-一篇近期提交到 arXiv 的论文[《The Working Set of a Coding Agent: Coherence Debt in Repository-Scale Tasks》][paper1-url]认为，
-
-仓库级编码 agent 的失败不在于智力不足，而在于写代码那一刻它依赖的事实既不在上下文窗口、也不在参数化记忆中。
+一篇近期提交到 arXiv 的论文[《The Working Set of a Coding Agent: Coherence Debt in Repository-Scale Tasks》][paper1-url]认为，仓库级编码 agent 的失败不在于智力不足，而在于写代码那一刻它依赖的事实既不在上下文窗口、也不在参数化记忆中。
 
 论文把这件事形式化为「连贯性债务（coherence debt）」，并用七个模型家族与多个 harness 的供给/剥夺实验证明：缺一个事实恰好损失该事实支撑的工作，不多不少；agent 对缺失事实的反应不是停下，而是自信地编造。
 

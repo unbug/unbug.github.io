@@ -9,7 +9,7 @@ image: assets/images/responsibility-vacuum.jpg
 ---
 伦敦国王学院用3个顶级模型做21场核危机模拟：
 - 95%场景出现核升级，无一模型选择投降
-- Claude最激进（64%推荐核打击），Gemini最不可预测
+- Claude最激进（64%推荐核打击），Gemini最不可预测。
 
 ![AI 核危机模拟]({{ site.baseurl }}/assets/images/responsibility-vacuum.jpg)
 

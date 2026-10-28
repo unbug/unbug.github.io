@@ -8,11 +8,7 @@ tags: [rag, safety, evaluation, retrieval-augmented-generation]
 description: "华盛顿州立大学等机构论文发现：RAG投毒防御基准把目标问题原样拼在毒文档前，删掉这个前缀后RAGuard的AUROC从0.953跌到0.758，近满分检测测的是拼接痕迹而非投毒。"
 ---
 
-North Creek High School 与 Washington State University 两位作者署名的论文[《Ranking Is Not Deciding: Benchmark Shortcuts and Operating-Point Collapse in Query-Time RAG Poisoning Defenses》][paper1-url]（arXiv:2610.33849，
-
-2026-10-24 提交）指出：
-
-RAG 投毒防御论文里的近满分检测率，很可能测的不是投毒本身，而是毒文档的构造痕迹——PoisonedRAG 官方代码把目标问题原样拼在每条注入文本前面。
+North Creek High School 与 Washington State University 两位作者署名的论文[《Ranking Is Not Deciding: Benchmark Shortcuts and Operating-Point Collapse in Query-Time RAG Poisoning Defenses》][paper1-url]（arXiv:2610.33849，2026-10-24 提交）指出：RAG 投毒防御论文里的近满分检测率，很可能测的不是投毒本身，而是毒文档的构造痕迹——PoisonedRAG 官方代码把目标问题原样拼在每条注入文本前面。
 
 只做一件事：删掉这个前缀，已发表防御 RAGuard（Cheng 等人的查询时过滤方法）的 AUROC（衡量排序区分能力的指标）从 `0.953` 掉到 `0.758`，漏检率从 `0.191` 涨到 `0.763`，而 `0.93` 的毒文仍能被检索到。这与站内另一篇[《低攻击成功率掩盖了什么？》]({{ site.baseurl }}/one-minute-read-paper-ignored-not-refused/)是同一类问题的两面：那篇打的是攻击成功率这类攻击侧指标的失真，本篇打的是防御侧检测指标的失真。
 

@@ -7,12 +7,10 @@ image: assets/images/gagf-framework.jpg
 tags: [AI, AGI 治理, 伦理, Springer Nature]
 ---
 
-2026 年 2 月最新研究揭示：西班牙学者提出**全球 AGI 治理框架 (GAGF)**，为超智能时代建立伦理基石：
-
-- 🏛️ **GAGF 框架**：分阶段国际监督实施路径
+2026 年 2 月最新研究揭示：西班牙学者提出**全球 AGI 治理框架 (GAGF)**，为超智能时代建立伦理基石：- 🏛️ **GAGF 框架**：分阶段国际监督实施路径
 - 📜 **10 条戒律**：AGI 发展的核心指导原则
 - 🤖 **13 点原则**：阿西莫夫三定律的现代化融合
-- ⚖️ **平衡安全与繁荣**：既防范风险又促进发展
+- ⚖️ **平衡安全与繁荣**：既防范风险又促进发展。
 
 ![全球 AGI 治理框架 GAGF]({{ site.baseurl }}/assets/images/gagf-framework.jpg)
 

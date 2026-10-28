@@ -9,14 +9,10 @@ image: assets/images/arxiv-paper-deepseek-engram.png
 
 layout: post
 author: unbug
-title: "一分钟读论文：
-
-《DeepSeek Engram：颠覆GPU内存瓶颈！把知识存储从计算中分离，O(1)查找效率！》"
+title: "一分钟读论文：《DeepSeek Engram：颠覆GPU内存瓶颈！把知识存储从计算中分离，O(1)查找效率！》"
 categories: [AI]
 tags: [DeepSeek, Engram, 内存架构, 稀疏性, MoE, 大语言模型]
----
-
-# DeepSeek Engram：颠覆GPU内存瓶颈！把知识存储从计算中分离，O(1)查找效率！
+---# DeepSeek Engram：颠覆GPU内存瓶颈！把知识存储从计算中分离，O(1)查找效率！
 
 ![DeepSeek Engram](assets/images/arxiv-paper-deepseek-engram.png)
 

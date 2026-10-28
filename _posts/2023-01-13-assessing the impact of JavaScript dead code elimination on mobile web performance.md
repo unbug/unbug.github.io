@@ -6,9 +6,7 @@ categories: [FrontEnd, Performance]
 image: assets/images/screenshot-20230113-155913.jpg
 tags: [Mobile, JavaScript]
 ---
-你的 WebApp 包含都少没用的代码？如何识别？删除掉收益如何？诺基亚贝尔实验室和美国纽约大学阿布扎比分校的论文[《Muzeel: assessing the impact of JavaScript dead code elimination on mobile web performance》][paper1-url] 基于他们联合开发的 Muzeel 针对 15,000 个流行的网站进行分析，发现：
-
-超过一半的 JS 文件至少` 70% 代码是死代码（dead code）`，占文件大小的 55%。
+你的 WebApp 包含都少没用的代码？如何识别？删除掉收益如何？诺基亚贝尔实验室和美国纽约大学阿布扎比分校的论文[《Muzeel: assessing the impact of JavaScript dead code elimination on mobile web performance》][paper1-url] 基于他们联合开发的 Muzeel 针对 15,000 个流行的网站进行分析，发现：超过一半的 JS 文件至少` 70% 代码是死代码（dead code）`，占文件大小的 55%。
 
 ## 分析死代码极具挑战：
 - 由于JavaScript 的动态特性，静态分析是无效的，需要动态访问对象的属性和上下文绑定。

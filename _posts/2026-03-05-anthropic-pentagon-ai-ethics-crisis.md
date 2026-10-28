@@ -9,9 +9,9 @@ image: assets/images/anthropic-pentagon-ethics.jpg
 ---
 Anthropic拒绝五角大楼2亿美元合同，坚持两条红线：
 - 不用于完全自主武器
-- 不用于大规模国内监控
+- 不用于大规模国内监控美国政府将其列为"供应链风险"，下令停用。
 
-美国政府将其列为"供应链风险"，下令停用。OpenAI同日获五角大楼合同，采用"技术锁"方案。
+OpenAI同日获五角大楼合同，采用"技术锁"方案。
 
 ![Anthropic vs. 五角大楼]({{ site.baseurl }}/assets/images/anthropic-pentagon-ethics.jpg)
 

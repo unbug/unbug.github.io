@@ -6,9 +6,7 @@ categories: [ AI, 编程教育 ]
 image: assets/images/screenshot-20250708-01.jpg
 tags: [sticky,featured,AI 编程助手, Scratch, 儿童编程]
 ---
-Google DeepMind 研究科学家和华盛顿大学教授合作的一篇论文[《Scratch Copilot: Supporting Youth Creative Coding with AI》](https://arxiv.org/html/2505.03867v1)，
-
-首次提出了专门为儿童设计的 AI 编程助手——Scratch Copilot，这是一个集成在类 Scratch 环境中的 AI 助手，为青少年提供创意编程支持。
+Google DeepMind 研究科学家和华盛顿大学教授合作的一篇论文[《Scratch Copilot: Supporting Youth Creative Coding with AI》](https://arxiv.org/html/2505.03867v1)，首次提出了专门为儿童设计的 AI 编程助手——Scratch Copilot，这是一个集成在类 Scratch 环境中的 AI 助手，为青少年提供创意编程支持。
 
 ![Cognimates Scratch Copilot 界面展示](/assets/images/screenshot-20250708-00.jpg)
 

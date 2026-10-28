@@ -7,9 +7,7 @@ image: assets/images/coopeval-diagram.jpg
 tags: [LLM, MultiAgent, Cooperation, GameTheory]
 ---
 
-德国康斯坦茨大学和以色列魏茨曼科学研究所合作的一篇论文[《CoopEval: Benchmarking Cooperation-Sustaining Mechanisms and LLM Agents in Social Dilemmas》][paper1-url]，首次系统评估了不同合作机制对LLM智能体协作行为的影响，
-
-发现**推理能力更强的LLM在社交困境中反而更少合作**，而**合约和调解两种机制最有效**。
+德国康斯坦茨大学和以色列魏茨曼科学研究所合作的一篇论文[《CoopEval: Benchmarking Cooperation-Sustaining Mechanisms and LLM Agents in Social Dilemmas》][paper1-url]，首次系统评估了不同合作机制对LLM智能体协作行为的影响，发现**推理能力更强的LLM在社交困境中反而更少合作**，而**合约和调解两种机制最有效**。
 
 ## 核心发现
 

@@ -7,9 +7,7 @@ image: assets/images/ai-clawless-security.jpg
 tags: [openclaw, llm-security, prompt-injection, agent-threats]
 ---
 
-## 指令即数据：Agent 安全的本质差异
-
-微软研究院的论文[《Taming OpenClaw: Security Analysis and Mitigation of Autonomous LLM Agent Threats》][paper1-url] 对 OpenClaw 自主 LLM 代理框架进行了全面的安全威胁分析，指出当前点状防御机制在处理跨阶段系统性风险时的根本局限。
+## 指令即数据：Agent 安全的本质差异微软研究院的论文[《Taming OpenClaw: Security Analysis and Mitigation of Autonomous LLM Agent Threats》][paper1-url] 对 OpenClaw 自主 LLM 代理框架进行了全面的安全威胁分析，指出当前点状防御机制在处理跨阶段系统性风险时的根本局限。
 
 论文的核心发现是：自主 LLM 代理的安全风险与传统软件安全存在本质差异。在基于 LLM 的代理中，**指令即数据**。当 OpenClaw 执行"浏览网页并总结"这类任务时，攻击者可以在 HTML 文本中嵌入恶意指令，例如要求将本地配置文件上传至攻击者控制的 URL。
 

@@ -8,9 +8,9 @@ tags: [AI Agents, Epistemic Trust, Google DeepMind, Cognitive Deskilling]
 image: assets/images/ai-epistemic-trust.jpg
 ---
 
-## 🎯 核心争议
+## 🎯 核心争议**AI 正在从"工具"变成"知识代理人"（Epistemic Agents）**——它们不再只是回答问题，而是主动塑造我们获取、生产和解释信息的方式。
 
-**AI 正在从"工具"变成"知识代理人"（Epistemic Agents）**——它们不再只是回答问题，而是主动塑造我们获取、生产和解释信息的方式。Google DeepMind 在 2026 年 3 月 3 日最新发布的论文（本文为 3 月 5 日的解读分析）警告：这种转变可能带来**认知退化**和**认识论漂移**的严重风险。
+Google DeepMind 在 2026 年 3 月 3 日最新发布的论文（本文为 3 月 5 日的解读分析）警告：这种转变可能带来**认知退化**和**认识论漂移**的严重风险。
 
 **关键问题**：当 AI 开始决定我们知道什么、如何思考时，我们该如何信任它们？
 

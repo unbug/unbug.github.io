@@ -6,21 +6,7 @@ tags: [代码生成, ICSE 2026]
 date: 2026-02-27 00:00:00 +0800
 ---
 
-# 一分钟读论文：大语言模型代码生成的规格对齐
-
-## 📝 论文概览
-
-**论文标题**：Aligning Requirement for Large Language Model's Code Generation
-
-**作者**：Zhao Tian, Junjie Chen (天津大学)
-
-**论文链接**：[https://arxiv.org/abs/2509.01313](https://arxiv.org/abs/2509.01313)
-
----
-
-## 🎯 核心问题
-
-你有没有遇到过这种情况：你给 AI 一个很详细的需求，结果它生成的代码根本不对？问题可能出在**规格感知偏差**上——AI 理解的需求和你想的不一样！
+# 一分钟读论文：大语言模型代码生成的规格对齐## 📝 论文概览**论文标题**：Aligning Requirement for Large Language Model's Code Generation**作者**：Zhao Tian, Junjie Chen (天津大学)**论文链接**：[https://arxiv.org/abs/2509.01313](https://arxiv.org/abs/2509.01313)---## 🎯 核心问题你有没有遇到过这种情况：你给 AI 一个很详细的需求，结果它生成的代码根本不对？问题可能出在**规格感知偏差**上——AI 理解的需求和你想的不一样！
 
 这篇论文就是解决这个问题的：让 AI 真正"读懂"你的需求规格！
 

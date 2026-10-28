@@ -7,9 +7,9 @@ image: assets/images/ai-clawless-security.jpg
 tags: [ai-safety, autonomous-agents, security-model, clawless]
 ---
 
-## ClawLess 安全模型的架构突破
+## ClawLess 安全模型的架构突破微软研究院和美国北卡罗莱纳州立大学的论文[《ClawLess: A Foundational Security Model for AI Agents》][paper1-url] 从微软**20个在线服务系统**中收集了2018年至2020年的**2.7万条**事故数据，提出五层生命周期安全框架，指出自主 LLM 代理的安全风险与传统软件安全存在本质差异。
 
-微软研究院和美国北卡罗莱纳州立大学的论文[《ClawLess: A Foundational Security Model for AI Agents》][paper1-url] 从微软**20个在线服务系统**中收集了2018年至2020年的**2.7万条**事故数据，提出五层生命周期安全框架，指出自主 LLM 代理的安全风险与传统软件安全存在本质差异。指令即数据，当代理执行**间接提示注入**等攻击时，传统的安全边界在 LLM 代理场景中完全失效。
+指令即数据，当代理执行**间接提示注入**等攻击时，传统的安全边界在 LLM 代理场景中完全失效。
 
 传统 AI Agent 安全主要依赖**训练调节**和**提示工程**，无法提供形式化保证且存在被绕过风险。ClawLess 从架构层面解决自主 Agent 的安全问题，核心理念是通过专门的安全架构，确保 Agent 在自主执行任务时不会执行未经授权的操作。
 

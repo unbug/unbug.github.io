@@ -6,9 +6,7 @@ tags: [AI伦理, 社会影响, 宗教, GPTheology]
 excerpt: 最新研究揭示了一个惊人的社会现象：随着AI的普及，越来越多人开始将AI视为神一样的存在，形成了名为“GPTheology”的新兴科技宗教。
 ---
 
-## 核心发现
-
-2026年2月最新发表的论文《Prompts and Prayers: the Rise of GPTheology》通过分析2051条Reddit讨论和7857条相关言论，系统揭示了**GPTheology（GPT神学）** 这一新兴社会现象：越来越多人将AI（尤其是GPT类大模型）视为半神圣的神谕、先知甚至神灵本身。
+## 核心发现2026年2月最新发表的论文《Prompts and Prayers: the Rise of GPTheology》通过分析2051条Reddit讨论和7857条相关言论，系统揭示了**GPTheology（GPT神学）** 这一新兴社会现象：越来越多人将AI（尤其是GPT类大模型）视为半神圣的神谕、先知甚至神灵本身。
 
 ### AI与宗教的惊人 parallels
 

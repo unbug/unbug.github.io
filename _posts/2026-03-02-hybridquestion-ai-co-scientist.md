@@ -8,18 +8,12 @@ tags: [AI科学家, 人机协作, 科学发现, arXiv]
 image: assets/images/hybridquestion-ai-co-scientist.jpg
 ---
 
-# HybridQuestion：当 AI 成为"共同科学家"——盘点 2025 年十大科学突破与 2026 年重大科学问题
-
-## 论文概览
-
-- **标题**：Human-AI Collaboration for Identifying High-Impact Research
+# HybridQuestion：当 AI 成为"共同科学家"——盘点 2025 年十大科学突破与 2026 年重大科学问题## 论文概览- **标题**：Human-AI Collaboration for Identifying High-Impact Research
 - **作者**：来自多个研究机构的跨学科团队
 - **发表**：arXiv:2602.03849 (2025 年 12 月)
-- **arXiv**：[2602.03849](https://arxiv.org/abs/2602.03849)
+- **arXiv**：[2602.03849](https://arxiv.org/abs/2602.03849)## 背景：科学文献爆炸的时代在当今这个知识爆炸的时代，科学文献的增长速度已经远超人类的认知极限。
 
-## 背景：科学文献爆炸的时代
-
-在当今这个知识爆炸的时代，科学文献的增长速度已经远超人类的认知极限。仅 2025 年一年，arXiv 上就新增了超过 **50 万篇**论文。面对这样的信息洪流，即使是最勤奋的科学家，也难以在自己的细分领域保持跟进，更不用说跨学科的前沿探索了。
+仅 2025 年一年，arXiv 上就新增了超过 **50 万篇**论文。面对这样的信息洪流，即使是最勤奋的科学家，也难以在自己的细分领域保持跟进，更不用说跨学科的前沿探索了。
 
 这就是 HybridQuestion 诞生的背景——**我们需要一个"AI 共同科学家"，来帮助人类筛选、分析、发现那些真正重要的科学突破**。
 

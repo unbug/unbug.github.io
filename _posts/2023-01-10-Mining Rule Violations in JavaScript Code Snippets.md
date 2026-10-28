@@ -6,9 +6,7 @@ categories: [FrontEnd]
 image: assets/images/screenshot-20230110-165809.jpeg
 tags: [Lint, JavaScript]
 ---
-还在复制粘贴 StackOverflow 的代码吗？巴西的巴西利亚大学和巴西贝伦联邦大学合著的论文[《Mining Rule Violations in JavaScript Code Snippets》][paper1-url]对 StackOverflow 的 336k 个代码片段进行分析，
-
-发现答案里 `100%` 的 JavaScript 代码都存在 ESLinter 不通过问题。
+还在复制粘贴 StackOverflow 的代码吗？巴西的巴西利亚大学和巴西贝伦联邦大学合著的论文[《Mining Rule Violations in JavaScript Code Snippets》][paper1-url]对 StackOverflow 的 336k 个代码片段进行分析，发现答案里 `100%` 的 JavaScript 代码都存在 ESLinter 不通过问题。
 
 **论文的研究问题有3个：**
 - JavaScript 代码片段中违反规则的情况有多普遍？

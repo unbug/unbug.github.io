@@ -8,9 +8,7 @@ image: assets/images/channelguard-framework.svg
 tags: [multi-agent, agent-safety, adversarial-ml]
 ---
 
-独立研究团队 Elias Hossain 等人发表的论文[《ChannelGuard: Safe Models Do Not Compose into Safe Multi-Agent Systems》][paper1-url]揭示了一个被忽视的多 Agent 安全问题：
-
-即使每个单独的 Agent 模型都是安全的，组合成多 Agent 流水线后安全性会显著下降。
+独立研究团队 Elias Hossain 等人发表的论文[《ChannelGuard: Safe Models Do Not Compose into Safe Multi-Agent Systems》][paper1-url]揭示了一个被忽视的多 Agent 安全问题：即使每个单独的 Agent 模型都是安全的，组合成多 Agent 流水线后安全性会显著下降。
 
 作者通过 2,100 条 trace 评估发现，一个在标准报告下看似完全安全的多 Agent 管道（工具投毒和记忆投毒攻击成功率均为 `0.000`），其安全性几乎完全依赖云提供商的服务端过滤器——在 Azure GPT-5 上 60 次攻击中有 54 次被拦截。切换到无服务端过滤器的后端时，系统完全依赖 Agent 模型自身的对齐能力，安全性能大幅下降。
 

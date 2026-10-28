@@ -8,7 +8,7 @@ tags: [MCP, AgenticAI, AAIF]
 image: assets/images/arxiv-paper-genie-3.png
 ---
 
-# Genie 3: DeepMind 发布首个实时交互式世界模型
+# Genie 3: DeepMind 发布首个实时交互式世界模型。
 
 ![Genie 3](/assets/images/arxiv-paper-genie-3.png)
 

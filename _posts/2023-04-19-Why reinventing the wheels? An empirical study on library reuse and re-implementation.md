@@ -6,9 +6,7 @@ categories: [Engineering]
 image: assets/images/screenshot-20230311-001451.jpg
 tags: [Refactor]
 ---
-新加坡管理大学的论文[《Why reinventing the wheels? An empirical study on library reuse and re-implementation》][paper1-url]通过对 GitHub 上的项目进行静态分析和动态分析，收集了重用和重新实现的案例，
-
-并对其中的一部分进行了人工验证和调查问卷，研究了工程师在使用第三方库时，为什么会选择重用或者重新实现。
+新加坡管理大学的论文[《Why reinventing the wheels? An empirical study on library reuse and re-implementation》][paper1-url]通过对 GitHub 上的项目进行静态分析和动态分析，收集了重用和重新实现的案例，并对其中的一部分进行了人工验证和调查问卷，研究了工程师在使用第三方库时，为什么会选择重用或者重新实现。
 
 发现：`重新实现可能会降低代码质量`。
 

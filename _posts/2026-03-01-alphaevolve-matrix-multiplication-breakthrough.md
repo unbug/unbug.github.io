@@ -9,12 +9,10 @@ image: assets/images/alphaevolve-breakthrough.jpg
 
 layout: post
 author: unbug
-title: "一分钟读论文：
-
-《AlphaEvolve：AI 打破 56 年数学纪录，发现更快的矩阵乘法算法》"
+title: "一分钟读论文：《AlphaEvolve：AI 打破 56 年数学纪录，发现更快的矩阵乘法算法》"
 categories: [AI]
 tags: [AlphaEvolve, 矩阵乘法, Google DeepMind, 算法发现, 数学突破]
----
+---。
 
 ![AlphaEvolve 矩阵乘法突破](assets/images/alphaevolve-breakthrough.jpg)
 

@@ -8,9 +8,7 @@ tags: [multi-agent-systems, architectural-design, scalability, design-principles
 description: "提出可扩展LLM多智能体系统四大设计原则并以四种复杂度配置实证。缩放带来线性成本与准确率提升，但仅在底层LLM超过能力阈值时有效，性能中段达峰。"
 ---
 
-德国埃尔朗根-纽伦堡大学等机构的研究团队发表的论文[《Scaling LLM-Driven Multi-Agent Systems: Design Principles and Architectural Scalability Analysis》][paper1-url]系统性地提出了可扩展多智能体系统的四大设计原则，
-
-并通过四种复杂度递增配置的实证评估验证了这些原则的有效性。
+德国埃尔朗根-纽伦堡大学等机构的研究团队发表的论文[《Scaling LLM-Driven Multi-Agent Systems: Design Principles and Architectural Scalability Analysis》][paper1-url]系统性地提出了可扩展多智能体系统的四大设计原则，并通过四种复杂度递增配置的实证评估验证了这些原则的有效性。
 
 研究发现缩放带来约线性的成本增长和可测量的准确率提升，但仅当底层 LLM 超过最小能力阈值时有效——性能在中间复杂度处达到峰值，之后因超时和评估限制而退化。
 

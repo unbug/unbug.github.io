@@ -8,9 +8,7 @@ tags: [llm, ai-agents, deep-research, evaluation]
 description: "纽约大学预印本把研究 Agent 将冲突证据压成自信叙事的偏差命名为 smoothing：在 7 个系统 4 个数据集上，每个系统至少 25% 的结论超出引文所能支持的程度，Gemini 重度平滑率 22-35% 最严重。"
 ---
 
-纽约大学（New York University）的论文[《Quantifying Claim Smoothing by LLM Research Agents》][paper1-url]（arXiv:2610.35793）给深度研究 Agent 的一种系统性偏差起了名字：
-
-smoothing（平滑化，指把彼此冲突、条件各异的来源压成单一叙事时，丢掉证据的参差感，写出比引用所能支持的大胆得多的结论）。
+纽约大学（New York University）的论文[《Quantifying Claim Smoothing by LLM Research Agents》][paper1-url]（arXiv:2610.35793）给深度研究 Agent 的一种系统性偏差起了名字：smoothing（平滑化，指把彼此冲突、条件各异的来源压成单一叙事时，丢掉证据的参差感，写出比引用所能支持的大胆得多的结论）。
 
 论文在 `7 个系统`、`4 个数据集`上测得：**跨 7 个系统与 4 个数据集，agent 一致地产出强于证据所允许程度的结论**，每个系统至少 `25%` 的结论（claim，指报告中可单独核查的判断句）拿到 `SmoothScore ≥ 3`（`1-5` 分制，分数越高磨得越平）。
 

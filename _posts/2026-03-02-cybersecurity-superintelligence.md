@@ -6,9 +6,7 @@ categories: ai research
 image: assets/images/cybersecurity-superintelligence-evolution.jpg
 ---
 
-## 网络安全的"三体"时代来临
-
-想象一下：2023 年，AI 还只是安全专家的"军师"，在一旁出谋划策；到了 2025 年，AI 已经变成了"特种兵"，单打独斗就能碾压人类专家；而 2026 年的今天，AI 更进一步，成为了"战略家"，用博弈论思维在网络空间中运筹帷幄。
+## 网络安全的"三体"时代来临想象一下：2023 年，AI 还只是安全专家的"军师"，在一旁出谋划策；到了 2025 年，AI 已经变成了"特种兵"，单打独斗就能碾压人类专家；而 2026 年的今天，AI 更进一步，成为了"战略家"，用博弈论思维在网络空间中运筹帷幄。
 
 这不是科幻小说，而是 Alias Robotics 团队在 2026 年 2 月 10 日发表的重磅论文 **《Towards Cybersecurity Superintelligence: from AI-guided humans to human-guided AI》** 中，为我们描绘的真实演进路径。
 

@@ -8,9 +8,7 @@ tags: [prompt-injection, ai-agents, llm-evaluation, security]
 description: "BRAC University审计33000条轨迹发现：被判防御成功的注入失败中76%至80%是没理会注入，真实拒绝仅约18%，低攻击成功率高估防御。"
 ---
 
-孟加拉国 BRAC University 的论文[《Ignored, Not Refused: What Low Prompt-Injection Success Rates Hide in Small Tool-Using Agents》][paper1-url]（arXiv:2610.23254）审计了 `33,000` 条 agent 轨迹后发现：
-
-低攻击成功率（Attack Success Rate，即注入攻击达成目标的比例）并不代表防御成功。
+孟加拉国 BRAC University 的论文[《Ignored, Not Refused: What Low Prompt-Injection Success Rates Hide in Small Tool-Using Agents》][paper1-url]（arXiv:2610.23254）审计了 `33,000` 条 agent 轨迹后发现：低攻击成功率（Attack Success Rate，即注入攻击达成目标的比例）并不代表防御成功。
 
 在两个主流注入基准判为"攻击失败"的轨迹里，`76%` 至 `80%` 只是 agent 压根没理会注入内容，真正的安全拒绝仅约 `18%`。
 

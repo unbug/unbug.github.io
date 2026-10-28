@@ -8,9 +8,7 @@ image: assets/images/agentic-real2sim-framework.svg
 tags: [agent-foundation-models, world-models, embodied-ai, vision-language-agents, real-to-sim]
 ---
 
-加州大学洛杉矶分校、麻省理工学院和加州大学圣地亚哥分校合作的论文[《Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents》][paper1-url]，提出了一种利用视觉语言智能体自动化真实世界到仿真环境转换的框架，
-
-在刚性物体操作、可变形物体交互和人形运动三个场景上均实现了与前沿模型相当的转换成功率。
+加州大学洛杉矶分校、麻省理工学院和加州大学圣地亚哥分校合作的论文[《Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents》][paper1-url]，提出了一种利用视觉语言智能体自动化真实世界到仿真环境转换的框架，在刚性物体操作、可变形物体交互和人形运动三个场景上均实现了与前沿模型相当的转换成功率。
 
 真实世界到仿真的转换（Real2Sim）对于机器人物体交互研究至关重要，但长期以来高度依赖人工完成视觉重建、物理参数推断和仿真器组装等繁琐步骤。Agentic Real2Sim 框架首次将这一全流程整合为一个统一的智能体决策系统，利用开源视觉语言模型后端以极低成本实现了高质量的 episodic twin 生成——即保留真实观测、几何结构、机器人交互记录和物体状态的仿真副本。
 

@@ -8,7 +8,7 @@ tags: [MCP, AgenticAI, AAIF]
 image: assets/images/arxiv-paper-agent-world-model.png
 ---
 
-# Agent World Model：1000 个合成环境，让 AI 智能体学习效率翻倍
+# Agent World Model：1000 个合成环境，让 AI 智能体学习效率翻倍。
 
 ![Agent World Model](/assets/images/arxiv-paper-agent-world-model.png)
 

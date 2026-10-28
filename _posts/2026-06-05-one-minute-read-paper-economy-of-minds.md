@@ -8,9 +8,7 @@ tags: [llm, multi-agent, agent-economy, mechanism-design]
 description: "麻省理工等机构学者提出用拍卖、支付、财富积累与经济进化四个机制取代中央协调，让较弱智能体群体在五个任务上超越更强单体基线，证明集体智能可由经济激励自发涌现。"
 ---
 
-多位来自MIT、斯坦福大学、康奈尔大学等机构的学者合作发表的论文[《Economy of Minds: Emerging Multi-Agent Intelligence with Economic Interactions》][paper1-url]，
-
-提出用经济机制替代传统协调方式，让多智能体系统在没有中央控制的情况下自发涌现出更强的集体智能。
+多位来自MIT、斯坦福大学、康奈尔大学等机构的学者合作发表的论文[《Economy of Minds: Emerging Multi-Agent Intelligence with Economic Interactions》][paper1-url]，提出用经济机制替代传统协调方式，让多智能体系统在没有中央控制的情况下自发涌现出更强的集体智能。
 
 论文将哈耶克的去中心化市场理论引入Agent编排，通过拍卖竞争、支付交换、财富积累和经济进化四个核心机制，证明简单经济信号即可驱动去中心化信用分配，使群体智能自然涌现。
 

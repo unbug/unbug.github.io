@@ -8,9 +8,7 @@ tags: [llm, coding-agents, verifier, post-training]
 description: "SWE-Critix 为编程 agent 的执行轨迹后训练会说理由的通用裁判：读任务与轨迹，输出完成标签加自然语言分析，完成判定分类准确率从基座 57% 提到 78%，模型与数据论文称开源。"
 ---
 
-2026 年 10 月 9 日提交到 arXiv 的预印本[《SWE-Critix: Post-Training Generalist Verifiers for Assessing Coding-Agent Trajectories》][paper1-url]（arXiv:2610.13356）给出一个可直接摘录的结论：
-
-拿通用推理模型裸当编程 agent 的交付验收裁判并不合格，专门后训练之后，裁判在完成判定分类准确率上能从基座的 `57%` 提到 `78%`，而且这个裁判会用自然语言解释自己为什么这么判。
+2026 年 10 月 9 日提交到 arXiv 的预印本[《SWE-Critix: Post-Training Generalist Verifiers for Assessing Coding-Agent Trajectories》][paper1-url]（arXiv:2610.13356）给出一个可直接摘录的结论：拿通用推理模型裸当编程 agent 的交付验收裁判并不合格，专门后训练之后，裁判在完成判定分类准确率上能从基座的 `57%` 提到 `78%`，而且这个裁判会用自然语言解释自己为什么这么判。
 
 论文称模型、数据集与训练代码全部开源。
 

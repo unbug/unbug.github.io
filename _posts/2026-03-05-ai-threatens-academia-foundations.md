@@ -9,7 +9,7 @@ image: assets/images/ai-academia-threat.jpg
 ---
 SISSA和帝国理工学院Nature论文警告：AI无节制使用正威胁学术根基：
 - NeurIPS投稿量5年翻倍，AAAI 2026收3.1万篇投稿，被迫试点AI评审
-- AI代理论文复现任务得分<20%，使用LLM辅助写作者认知能力衰退
+- AI代理论文复现任务得分<20%，使用LLM辅助写作者认知能力衰退。
 
 ![AI 威胁学术根基]({{ site.baseurl }}/assets/images/ai-academia-threat.jpg)
 

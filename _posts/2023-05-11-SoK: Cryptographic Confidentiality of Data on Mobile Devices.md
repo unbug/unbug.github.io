@@ -6,9 +6,7 @@ categories: [Security]
 image: assets/images/screenshot-20230312-005305.jpg
 tags: [Mobile]
 ---
-美国的约翰斯·霍普金斯大学的论文[《SoK: Cryptographic Confidentiality of Data on Mobile Devices》][paper1-url]基于对移动设备上数据加密的现有研究的分析和评估，
-
-介绍了可以用来评估不同方案在实现数据保密性方面的效果和开销的度量方法和指标，总结了移动设备加密方法和技术各自的优点和缺点，以及适用的场景。
+美国的约翰斯·霍普金斯大学的论文[《SoK: Cryptographic Confidentiality of Data on Mobile Devices》][paper1-url]基于对移动设备上数据加密的现有研究的分析和评估，介绍了可以用来评估不同方案在实现数据保密性方面的效果和开销的度量方法和指标，总结了移动设备加密方法和技术各自的优点和缺点，以及适用的场景。
 
 ## 移动设备上数据加密的基础概念
 -   不同层次的加密：指的是在移动设备上对数据进行加密的不同位置或阶段，包括文件系统层、应用层、用户层等。

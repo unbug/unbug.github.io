@@ -10,7 +10,7 @@ image: assets/images/reproducibility-ai-governance.jpg
 ICML 2026论文：AI研究可复现性危机正在削弱政策制定者的治理能力：
 - 2019-2024年AI论文增长72%，是所有学科最快
 - 各学科可复现率极低：经济学<50%，癌症生物学<2%，心理学36%
-- ICML 2024顶级论文仅24%能被LLM复现，博士生复现率<50%
+- ICML 2024顶级论文仅24%能被LLM复现，博士生复现率<50%。
 
 ![可复现性：AI治理的新前沿]({{ site.baseurl }}/assets/images/reproducibility-ai-governance.jpg)
 

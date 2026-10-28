@@ -8,13 +8,9 @@ tags: [DiffusionLM, KnowledgeDistillation, ModelCompression, CrossArchitecture, 
 description: "TIDE通过TIDAL调度、CompDemo上下文增强和Reverse CALM跨分词器匹配，首次实现扩散语言模型跨架构蒸馏，把16B MoE教师压到0.6B学生，峰值内存降22倍、推理加速5.2倍。"
 ---
 
-北京大学和浙江大学合作的一篇论文[《Turning the TIDE: Cross-Architecture Distillation for Diffusion Large Language Models》][paper1-url]，首次实现了扩散语言模型（dLLM）的跨架构蒸馏，
+北京大学和浙江大学合作的一篇论文[《Turning the TIDE: Cross-Architecture Distillation for Diffusion Large Language Models》][paper1-url]，首次实现了扩散语言模型（dLLM）的跨架构蒸馏，将16B MoE教师模型压缩到0.6B学生模型，峰值内存降低22倍、推理加速5.2倍：## 扩散语言模型的蒸馏难题扩散语言模型使用扩散过程对文本进行建模，与传统的自回归（AR）模型不同，dLLM支持并行解码和双向上下文理解，在多项基准上展现出与AR模型相当甚至更优的性能。
 
-将16B MoE教师模型压缩到0.6B学生模型，峰值内存降低22倍、推理加速5.2倍：
-
-## 扩散语言模型的蒸馏难题
-
-扩散语言模型使用扩散过程对文本进行建模，与传统的自回归（AR）模型不同，dLLM支持并行解码和双向上下文理解，在多项基准上展现出与AR模型相当甚至更优的性能。然而，现有dLLM需要数十亿参数才能达到有竞争力的性能，难以在消费级硬件上部署。
+然而，现有dLLM需要数十亿参数才能达到有竞争力的性能，难以在消费级硬件上部署。
 
 知识蒸馏是压缩大模型的有效方法，但dLLM的蒸馏面临一个根本挑战：跨架构蒸馏。现有蒸馏方法仅限于同一架构内的步数压缩，当教师和学生模型在架构、注意力机制和分词器上存在差异时，token无法直接对齐。TIDE框架通过三个核心组件解决了这一难题。
 

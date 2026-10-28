@@ -7,9 +7,9 @@ image: assets/images/ai-trajectory-reward.jpg
 tags: [reward-modeling, agent-alignment, trajectory-level, benchmark]
 ---
 
-## 从单步到多步：奖励建模的根本转变
+## 从单步到多步：奖励建模的根本转变在经典的人类反馈强化学习中，Reward Models 是模型对齐的基本信号提供者。
 
-在经典的人类反馈强化学习中，Reward Models 是模型对齐的基本信号提供者。随着 LLM 从单轮对话扩展到多轮交互、工具调用和复杂任务规划，reward modeling 的评估对象发生了根本变化：从**单步输出**转向**多步行为序列**。
+随着 LLM 从单轮对话扩展到多轮交互、工具调用和复杂任务规划，reward modeling 的评估对象发生了根本变化：从**单步输出**转向**多步行为序列**。
 
 然而，当前领域缺乏专门设计的基准，用于评估评判者区分偏好 agent 轨迹与干扰轨迹的能力。这一空白导致现有 reward modeling 方法在面对复杂 agent 场景时，难以准确反映真实的对齐效果。
 

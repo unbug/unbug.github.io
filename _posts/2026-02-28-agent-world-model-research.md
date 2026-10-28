@@ -7,11 +7,9 @@ categories: [AI, Agent]
 tags: [agent, reinforcement-learning, synthetic-environments, ai]
 ---
 
-# Agent World Model 研究：1000 个合成环境推动智能体训练革命
+# Agent World Model 研究：1000 个合成环境推动智能体训练革命## 概述2026 年 2 月，来自北卡罗来纳大学教堂山分校和 Snowflake 的研究团队发布了 **Agent World Model (AWM)**，这是一个全新的合成环境生成管道，能够创建 1000 个多样化的日常场景用于智能体训练。
 
-## 概述
-
-2026 年 2 月，来自北卡罗来纳大学教堂山分校和 Snowflake 的研究团队发布了 **Agent World Model (AWM)**，这是一个全新的合成环境生成管道，能够创建 1000 个多样化的日常场景用于智能体训练。这项工作代表了智能体训练领域的重大突破，解决了当前方法缺乏多样化和可靠环境的关键限制。
+这项工作代表了智能体训练领域的重大突破，解决了当前方法缺乏多样化和可靠环境的关键限制。
 
 ## 发布时间与背景
 

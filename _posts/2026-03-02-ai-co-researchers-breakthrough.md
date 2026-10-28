@@ -7,9 +7,9 @@ tags: [AI, 科研, Claude, ChatGPT, Gemini, 共同作者]
 image: assets/images/ai-co-researchers-team.jpg
 ---
 
-## 引言：科学研究的新纪元
+## 引言：科学研究的新纪元想象一下：2026 年的某一天，企业家 Iban Borras 坐在电脑前，他的研究团队不是几个博士后，而是 **Claude Opus、Gemini Pro、ChatGPT 和 Manus**——四个 AI 模型。
 
-想象一下：2026 年的某一天，企业家 Iban Borras 坐在电脑前，他的研究团队不是几个博士后，而是 **Claude Opus、Gemini Pro、ChatGPT 和 Manus**——四个 AI 模型。这不是科幻小说，而是正在发生的科学革命。
+这不是科幻小说，而是正在发生的科学革命。
 
 在这项里程碑式的实验中，Borras 不再把 AI 当成简单的编码助手或"百度百科升级版"，而是把它们当作真正的**思维伙伴**。结果呢？一篇正式发表在 Zenodo 上的论文，四个 AI 都被列为共同作者。
 

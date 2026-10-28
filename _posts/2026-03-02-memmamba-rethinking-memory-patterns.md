@@ -7,9 +7,7 @@ tags: [AI, 状态空间模型, Mamba, 记忆机制, ICLR 2026]
 image: assets/images/memmamba-architecture.jpg
 ---
 
-## 简介
-
-在人工智能的世界里，序列建模就像是一场"记忆马拉松"——从传统的循环神经网络（RNN）到革命性的 Transformer，再到近年来异军突起的状态空间模型（SSMs），研究者们一直在寻找既能高效处理超长序列，又能牢牢记住关键信息的完美架构。
+## 简介在人工智能的世界里，序列建模就像是一场"记忆马拉松"——从传统的循环神经网络（RNN）到革命性的 Transformer，再到近年来异军突起的状态空间模型（SSMs），研究者们一直在寻找既能高效处理超长序列，又能牢牢记住关键信息的完美架构。
 
 2025 年，一篇题为《MemMamba: Rethinking Memory Patterns in State Space Model》的论文被 ICLR 2026 接收，这篇论文提出了一个突破性的架构，成功地解决了 Mamba 等状态空间模型在长序列建模时面临的"记忆衰退"问题。
 

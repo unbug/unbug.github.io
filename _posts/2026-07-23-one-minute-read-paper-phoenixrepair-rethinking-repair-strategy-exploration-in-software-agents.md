@@ -8,9 +8,7 @@ image: assets/images/phoenix-repair-framework.svg
 tags: [SoftwareAgent, CodeRepair, MultiAgent]
 ---
 
-中山大学、浙江大学、华中科技大学和华为合作的论文[《PhoenixRepair: Rethinking Repair Strategy Exploration in Software Agents》][paper1-url]，提出了一种多智能体框架来系统性探索软件修复策略，
-
-在 SWE-bench-Verified 上达到了 `76.0%` 的 Pass@1 成绩。
+中山大学、浙江大学、华中科技大学和华为合作的论文[《PhoenixRepair: Rethinking Repair Strategy Exploration in Software Agents》][paper1-url]，提出了一种多智能体框架来系统性探索软件修复策略，在 SWE-bench-Verified 上达到了 `76.0%` 的 Pass@1 成绩。
 
 现有基于大语言模型的自动问题解决方法存在一个根本性局限：修复策略探索不足。具体表现为两个方面——候选编辑位置的探索有限，以及每个位置处的修复尝试也不充分。PhoenixRepair 通过多智能体协作来扩展搜索空间，从多位置采样开始，辅以图定位信息处理困难任务，然后进行迭代反思和补丁生成优化，最后在全部历史尝试的洞察指导下完成最终轮生成。
 

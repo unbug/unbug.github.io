@@ -8,9 +8,7 @@ image: assets/images/searchos-framework.svg
 tags: [agentic-rag, information-seeking, multi-agent-collaboration, state-management]
 ---
 
-浙江大学与阿里巴巴集团合作发表的论文[《SearchOS：Towards Robust Open-Domain Information-Seeking Agent Collaboration》][paper1-url]，提出了一种面向开放域信息检索的多代理协作框架 SearchOS，
-
-通过**搜索导向上下文管理（SOCM）**将演化状态外显为四个可追踪组件，有效缓解多代理系统在长交互历史中重复循环、浪费搜索预算的问题。
+浙江大学与阿里巴巴集团合作发表的论文[《SearchOS：Towards Robust Open-Domain Information-Seeking Agent Collaboration》][paper1-url]，提出了一种面向开放域信息检索的多代理协作框架 SearchOS，通过**搜索导向上下文管理（SOCM）**将演化状态外显为四个可追踪组件，有效缓解多代理系统在长交互历史中重复循环、浪费搜索预算的问题。
 
 ## 问题背景：长交互中的重复循环
 

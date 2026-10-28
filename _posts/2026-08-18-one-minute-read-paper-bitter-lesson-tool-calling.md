@@ -8,11 +8,7 @@ tags: [llm, tool-use, benchmark]
 description: "普华永道美国团队在 BFCL v4 上用 14 个模型对比 JSON 工具调用与程序化工具调用：PTC 在 11/14 的模型上持平或更优、长链任务领先 18.8%，但全模型宏平均反而略低，优势随模型代际而非厂商分化。"
 ---
 
-普华永道美国（PricewaterhouseCoopers U.S.A.）的论文[《The Bitter Lesson of Tool Calling》][paper1-url]（v1 提交于 `2026` 年 `8` 月），
-
-在伯克利函数调用基准（Berkeley Function-Calling Leaderboard，BFCL）v4 上用 `14` 个模型系统对比了两种工具调用范式：
-
-JSON tool calling（模型输出 JSON 函数调用）与 programmatic tool calling（PTC，模型写 Python 代码调用类型化 stub）。
+普华永道美国（PricewaterhouseCoopers U.S.A.）的论文[《The Bitter Lesson of Tool Calling》][paper1-url]（v1 提交于 `2026` 年 `8` 月），在伯克利函数调用基准（Berkeley Function-Calling Leaderboard，BFCL）v4 上用 `14` 个模型系统对比了两种工具调用范式：JSON tool calling（模型输出 JSON 函数调用）与 programmatic tool calling（PTC，模型写 Python 代码调用类型化 stub）。
 
 核心发现是 PTC 在 `11/14` 的模型上持平或更优、长链任务领先 `18.8%`，但全模型宏平均反而略低——优势随模型代际而非厂商分化。
 

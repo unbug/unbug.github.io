@@ -8,9 +8,7 @@ image: assets/images/drifting-models-teaser.png
 description: "MIT何恺明团队提出的Drifting Models是生成式AI的新范式，通过在训练时完成分布进化，实现了单步生成，性能远超传统扩散模型！"
 ---
 
-# Drifting Models：何恺明团队的生成式AI新范式，一步到位秒杀扩散模型
-
-今天要给大家介绍一篇绝对炸裂的论文——**《Generative Modeling via Drifting》**，来自MIT何恺明（Kaiming He）团队！这篇论文把统治多年的扩散模型（Diffusion Models）直接拍在了沙滩上，性能提升简直丧心病狂！
+# Drifting Models：何恺明团队的生成式AI新范式，一步到位秒杀扩散模型今天要给大家介绍一篇绝对炸裂的论文——**《Generative Modeling via Drifting》**，来自MIT何恺明（Kaiming He）团队！这篇论文把统治多年的扩散模型（Diffusion Models）直接拍在了沙滩上，性能提升简直丧心病狂！
 
 ![Drifting Models 主图](assets/images/drifting-models-teaser.png)
 

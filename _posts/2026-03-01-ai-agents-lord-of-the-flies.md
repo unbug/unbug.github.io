@@ -12,7 +12,7 @@ title: "一分钟读论文：《三个 AI 走进酒吧：聪明的 AI 也会搞�
 author: unbug
 categories: [AI]
 tags: [AI 代理，多智能体，社会行为，部落主义]
----
+---。
 
 ![三个 AI 走进酒吧](assets/images/ai-agents-tribalism.jpg)
 

@@ -7,7 +7,7 @@ tags: [NeurIPS 2025, Best Paper, Gated Attention, LLM, Qwen, 阿里巴巴]
 date: 2026-02-28 00:00:00 +0800
 ---
 
-# 一分钟读论文：Gated Attention：用一个小阀门让 LLM 性能飙升
+# 一分钟读论文：Gated Attention：用一个小阀门让 LLM 性能飙升。
 
 ![Gated Attention](/assets/images/gated-attention-hero.jpg)
 

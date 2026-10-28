@@ -8,9 +8,7 @@ tags: [agent-memory, bounded-context, long-horizon-agents, testbed, typed-retrie
 description: "上交与清华提出有界记忆契约：每次决策从类型化检索组装全新消息，提示词在任意长度运行中保持恒定，各记忆层可独立消融，技能层使卡牌游戏胜率从30%升至60%。"
 ---
 
-上海交通大学和清华大学合作的一篇论文[《AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents》](https://arxiv.org/abs/2607.02255)首次将长程智能体的记忆形式化为"契约"问题——每次决策从一条由类型化检索组装的全新用户消息出发，
-
-不附加任何跨决策的原始对话记录，使提示词在任意长度的运行中保持有界。
+上海交通大学和清华大学合作的一篇论文[《AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents》](https://arxiv.org/abs/2607.02255)首次将长程智能体的记忆形式化为"契约"问题——每次决策从一条由类型化检索组装的全新用户消息出发，不附加任何跨决策的原始对话记录，使提示词在任意长度的运行中保持有界。
 
 核心突破在于：传统方法将过去观察、工具调用和反思逐条追加到提示词中，导致上下文变成一团混乱的混合物；而本文的方案保证提示词大小恒定，且任何单一记忆层都可以独立消融。
 

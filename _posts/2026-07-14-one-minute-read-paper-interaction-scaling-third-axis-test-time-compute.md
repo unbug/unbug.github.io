@@ -8,9 +8,7 @@ tags: [llm, test-time-compute, interaction-scaling, grounding]
 description: "论文提出交互缩放作为测试时计算的第三维度，用外部仪器的接地反馈驱动模型修订输出，代码生成准确率从66.7%提升到100%，视觉任务缺陷减少四到七成。"
 ---
 
-Pine AI 和华盛顿大学合作的一篇论文[《Think Through a Bottleneck: Interaction Scaling — Grounding the Third Axis of Test-Time Compute》][paper1-url]（https://arxiv.org/abs/2607.11598）提出，
-
-推理时计算的缩放存在三个正交维度：推理缩放、采样缩放和交互缩放。
+Pine AI 和华盛顿大学合作的一篇论文[《Think Through a Bottleneck: Interaction Scaling — Grounding the Third Axis of Test-Time Compute》][paper1-url]（https://arxiv.org/abs/2607.11598）提出，推理时计算的缩放存在三个正交维度：推理缩放、采样缩放和交互缩放。
 
 前两者受数据处理不等式限制存在"内部天花板"，交互缩放通过引入外部仪器观测打破了这一限制。
 

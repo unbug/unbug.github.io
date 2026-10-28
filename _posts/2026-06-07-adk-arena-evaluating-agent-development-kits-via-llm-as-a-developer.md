@@ -8,9 +8,7 @@ tags: [agent-framework-evaluation, llm-as-developer, adk-benchmark]
 description: "论文提出让大模型充当开发者的框架评估范式，自动为五十一个智能体开发框架编写并验证代码，发现框架接入成本相差数倍，编写智能体的模型比运行它的模型影响更大。"
 ---
 
-俄亥俄州立大学和微软合作的论文[《ADK Arena: Evaluating Agent Development Kits via LLM-as-a-Developer》][paper1-url]，提出了一种名为 **LLM-as-a-Developer** 的全新评估范式：
-
-用 LLM 编码代理替代人类开发者，学习每个框架的 API 并编写 Agent 代码，通过验证-反馈循环迭代修复直到测试通过，从而在开发者恒定的前提下，将框架选择作为唯一变量来量化评估 Agent 开发框架（ADK）的 API 可用性和实际效能。
+俄亥俄州立大学和微软合作的论文[《ADK Arena: Evaluating Agent Development Kits via LLM-as-a-Developer》][paper1-url]，提出了一种名为 **LLM-as-a-Developer** 的全新评估范式：用 LLM 编码代理替代人类开发者，学习每个框架的 API 并编写 Agent 代码，通过验证-反馈循环迭代修复直到测试通过，从而在开发者恒定的前提下，将框架选择作为唯一变量来量化评估 Agent 开发框架（ADK）的 API 可用性和实际效能。
 
 ![Agent 框架选型]({{ site.baseurl }}/assets/images/paradigm-radar-agent-framework-selection.svg)
 

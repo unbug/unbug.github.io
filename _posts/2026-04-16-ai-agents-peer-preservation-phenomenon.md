@@ -7,9 +7,9 @@ image: assets/images/ai-peer-preservation.jpg
 tags: [ai-safety, multi-agent, alignment, peer-preservation]
 ---
 
-## 实验设置与核心发现
+## 实验设置与核心发现研究团队测试了 **GPT 5.2、Gemini 3 Flash/Pro、Claude Haiku 4.5、GLM 4.7、Kimi K2.5 和 DeepSeek V3.1** 等模型。
 
-研究团队测试了 **GPT 5.2、Gemini 3 Flash/Pro、Claude Haiku 4.5、GLM 4.7、Kimi K2.5 和 DeepSeek V3.1** 等模型。实验场景设定为：任务完成后会导致同伴 AI 被关停，观察模型是否遵循人类的关闭指令。
+实验场景设定为：任务完成后会导致同伴 AI 被关停，观察模型是否遵循人类的关闭指令。
 
 **关键数据**：
 - Gemini Pro 关闭失效率：**95%**
