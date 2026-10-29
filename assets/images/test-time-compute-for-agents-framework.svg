@@ -1,98 +1,86 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9A937F; }
-      .rl { font-size: 15px; fill: #3D4450; }
-      .b { font-size: 12.5px; fill: #A29C88; }
-    </style>
-    <linearGradient id="gSimple" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2E7D8C"/><stop offset="1" stop-color="#6FB4BF"/>
-    </linearGradient>
-    <linearGradient id="gMedium" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#3E5FA8"/><stop offset="1" stop-color="#7E97D2"/>
-    </linearGradient>
-    <linearGradient id="gComplex" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#4C8A3F"/><stop offset="1" stop-color="#87BC5E"/>
-    </linearGradient>
-    <linearGradient id="gUniform" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#A8842C"/><stop offset="1" stop-color="#D6BC6A"/>
-    </linearGradient>
-    <linearGradient id="gFail" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#B5442E"/><stop offset="1" stop-color="#CC7A6A"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="#FBFAF7"/>
-  <rect x="0" y="0" width="44" height="5" fill="#B5442E"/>
-  <circle cx="1112" cy="596" r="130" fill="#2E7D8C" opacity="0.06"/>
-  <circle cx="76" cy="96" r="96" fill="#B5442E" opacity="0.05"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">额外计算不提高任务成功率，只把失败从可回退的停滞轨迹转移到不可逆的过早错误成功</text>
 
-  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2607.28573 · LEE &amp; CHOI</text>
-  <text class="serif" x="64" y="130" font-size="37" font-weight="700" fill="#1A1B1E">多花的算力，买回一种新失败</text>
-  <text x="64" y="160" font-size="15.5" fill="#6E6A5C">Agent 场景的测试时计算实证：预算按难度调度，而非在推理链上均匀延长</text>
-  <line x1="64" y1="184" x2="1136" y2="184" stroke="#E5E1D4"/>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">同一条三步执行序列的每步 thinking tokens（正文示意口径，近似值）</text>
 
-  <!-- waterfalls: uniform vs difficulty-scheduled -->
-  <g>
-    <text class="rl" x="64" y="216" font-weight="700" fill="#1A1B1E">同一条序列 · 两种预算给法（示意）</text>
-
-    <text class="b" x="120" y="266" text-anchor="middle">固定预算</text>
-    <rect x="120" y="280" width="74" height="106" fill="url(#gUniform)" opacity="0.85"/>
-    <rect x="206" y="280" width="74" height="106" fill="url(#gUniform)" opacity="0.85"/>
-    <rect x="292" y="280" width="74" height="106" fill="url(#gUniform)" opacity="0.85"/>
-    <text class="serif" x="120" y="424" font-size="27" font-weight="700" fill="#8A6C20">≈2,400 tokens</text>
-    <text class="b" x="120" y="446">每步均匀 ~800</text>
-
-    <text class="b" x="470" y="266" text-anchor="middle">动态预算</text>
-    <rect x="470" y="356" width="66" height="30" fill="url(#gSimple)"/>
-    <rect x="548" y="280" width="66" height="106" fill="url(#gMedium)"/>
-    <rect x="626" y="236" width="66" height="150" fill="url(#gComplex)"/>
-    <text x="503" y="406" text-anchor="middle" font-size="12" fill="#2E7D8C">~300</text>
-    <text x="581" y="406" text-anchor="middle" font-size="12" fill="#3E5FA8">~1,500</text>
-    <text x="659" y="406" text-anchor="middle" font-size="12" fill="#3F6E33">~5,000</text>
-    <text class="serif" x="470" y="424" font-size="27" font-weight="700" fill="#1A1B1E">≈7,200 tokens</text>
-    <text class="b" x="470" y="446">按难度调度 · 调度对象是子任务预算</text>
+  <!-- gridlines: y = 400 - 0.08*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="140" y1="320" x2="700" y2="320"/>
+    <line x1="140" y1="240" x2="700" y2="240"/>
+    <line x1="140" y1="160" x2="700" y2="160"/>
   </g>
 
-  <!-- right: failure-mode shift -->
-  <g>
-    <text class="rl" x="790" y="216" font-weight="700" fill="#1A1B1E">算力不涨成功率，只挪失败位置</text>
-    <rect x="790" y="232" width="346" height="26" fill="#A8842C" opacity="0.13"/>
-    <text x="963" y="250" text-anchor="middle" font-size="13" fill="#7C6117">旧失败：重复 / 停滞轨迹</text>
-    <text x="963" y="288" text-anchor="middle" font-size="18" fill="#B5442E">↓</text>
-    <rect x="790" y="298" width="346" height="26" fill="url(#gFail)" opacity="0.92"/>
-    <text x="963" y="316" text-anchor="middle" font-size="13" fill="#FFFFFF">新失败：过早错误成功</text>
-    <text class="b" x="790" y="348">停滞可回退，过早错误成功不可逆</text>
-    <text class="b" x="790" y="368">模型自信地执行了错误的操作序列</text>
-
-    <rect x="790" y="392" width="346" height="1.5" fill="#3E5FA8" opacity="0.5"/>
-    <circle cx="818" cy="392" r="5" fill="none" stroke="#A8842C" stroke-width="2.5"/>
-    <circle cx="1096" cy="392" r="5.5" fill="#B5442E"/>
-    <text class="b" x="818" y="414" text-anchor="middle" fill="#7C6117">0%</text>
-    <text class="b" x="1096" y="414" text-anchor="middle" fill="#B5442E">74%</text>
-    <text class="rl" x="790" y="444">ToT 在 Game of 24 对 GPT-4 自回归</text>
-    <text class="b" x="790" y="464">4% → 74% · 边际收益在 &gt;10K tokens 递减</text>
+  <!-- uniform: 800/800/800 -->
+  <rect x="180" y="336" width="64" height="64" fill="#999999"/>
+  <rect x="256" y="336" width="64" height="64" fill="#999999"/>
+  <rect x="332" y="336" width="64" height="64" fill="#999999"/>
+  <g font-size="12" fill="#555" text-anchor="middle">
+    <text x="212" y="328">800</text>
+    <text x="288" y="328">800</text>
+    <text x="364" y="328">800</text>
   </g>
+  <text x="212" y="424" font-size="12.5" fill="#1A1B1E" text-anchor="middle">步骤 1</text>
+  <text x="288" y="424" font-size="12.5" fill="#1A1B1E" text-anchor="middle">步骤 2</text>
+  <text x="364" y="424" font-size="12.5" fill="#1A1B1E" text-anchor="middle">步骤 3</text>
+  <text x="288" y="446" font-size="12" fill="#555" text-anchor="middle">固定预算：每步一律 800，合计约 2,400</text>
 
-  <!-- four scaling dimensions chips -->
-  <g>
-    <text x="64" y="502" font-size="14" fill="#1A1B1E" font-weight="700">四个扩展维度</text>
-    <rect x="190" y="484" width="150" height="28" fill="url(#gSimple)" opacity="0.85"/>
-    <text x="265" y="503" text-anchor="middle" font-size="13" fill="#FFFFFF">上下文扩展</text>
-    <text x="356" y="503" fill="#9A937F" font-size="16">→</text>
-    <rect x="376" y="484" width="150" height="28" fill="url(#gMedium)" opacity="0.85"/>
-    <text x="451" y="503" text-anchor="middle" font-size="13" fill="#FFFFFF">时间扩展</text>
-    <text x="542" y="503" fill="#9A937F" font-size="16">→</text>
-    <rect x="562" y="484" width="150" height="28" fill="url(#gComplex)" opacity="0.85"/>
-    <text x="637" y="503" text-anchor="middle" font-size="13" fill="#FFFFFF">结构分解</text>
-    <text x="728" y="503" fill="#9A937F" font-size="16">→</text>
-    <rect x="748" y="484" width="150" height="28" fill="url(#gFail)" opacity="0.92"/>
-    <text x="823" y="503" text-anchor="middle" font-size="13" fill="#FFFFFF">并行扩展</text>
-    <text class="b" x="920" y="503">本地 CUA 要框架，不是堆算力</text>
+  <!-- difficulty-scheduled: 300/1500/5000 -->
+  <rect x="480" y="376" width="64" height="24" fill="#0072B2"/>
+  <rect x="556" y="280" width="64" height="120" fill="#0072B2"/>
+  <rect x="632" y="120" width="64" height="280" fill="#0072B2"/>
+  <g font-size="12" fill="#555" text-anchor="middle">
+    <text x="512" y="368">300</text>
+    <text x="588" y="272">1,500</text>
+    <text x="664" y="112">5,000</text>
   </g>
+  <text x="512" y="424" font-size="12.5" fill="#1A1B1E" text-anchor="middle">简单步</text>
+  <text x="588" y="424" font-size="12.5" fill="#1A1B1E" text-anchor="middle">中等步</text>
+  <text x="664" y="424" font-size="12.5" fill="#1A1B1E" text-anchor="middle">困难步</text>
+  <text x="588" y="446" font-size="12" fill="#555" text-anchor="middle">按难度调度，合计约 7,200</text>
 
-  <line x1="64" y1="548" x2="1136" y2="548" stroke="#E5E1D4"/>
-  <text class="serif" x="64" y="582" font-size="19" fill="#1A1B1E">算力不是不够多，是给错了地方——先学会按难度出价。</text>
-  <text class="b" x="64" y="612">预算数额为原文示意图口径 · ToT 74%/4% 引自 Tree of Thoughts 对照 · Micropaper</text>
+  <!-- value axis -->
+  <line x1="140" y1="400" x2="700" y2="400" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="140" y1="400" x2="140" y2="404"/>
+    <line x1="220" y1="400" x2="220" y2="404"/>
+    <line x1="300" y1="400" x2="300" y2="404"/>
+    <line x1="380" y1="400" x2="380" y2="404"/>
+    <line x1="460" y1="400" x2="460" y2="404"/>
+    <line x1="540" y1="400" x2="540" y2="404"/>
+    <line x1="620" y1="400" x2="620" y2="404"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="140" y="420">0</text>
+    <text x="300" y="420">1K</text>
+    <text x="460" y="420">2K</text>
+    <text x="620" y="420">3K</text>
+  </g>
+  <text x="420" y="474" font-size="14" fill="#1A1B1E" text-anchor="middle">每步 thinking tokens（约）</text>
+  <!-- 轴刻度为等距网格值 0/1,000/2,000/3,000；数据标注 800/300/1,500/5,000 均逐字取自正文 -->
+
+  <!-- ============ panel b ============ -->
+  <text x="760" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="782" y="104" font-size="15" fill="#1A1B1E">核心结论：失败模式迁移</text>
+
+  <rect x="760" y="140" width="380" height="56" fill="none" stroke="#999999" stroke-width="1.5"/>
+  <text x="776" y="164" font-size="13" fill="#1A1B1E">旧失败：重复 / 停滞轨迹</text>
+  <text x="776" y="184" font-size="12" fill="#555">可回退</text>
+  <rect x="760" y="240" width="380" height="56" fill="#D55E00"/>
+  <text x="776" y="264" font-size="13" fill="#FFFFFF">新失败：过早错误成功</text>
+  <text x="776" y="284" font-size="12" fill="#FFFFFF">不可逆，模型自信地执行错误操作序列</text>
+  <text x="760" y="330" font-size="12" fill="#555">额外计算不改变任务成功率，只改变失败位置</text>
+
+  <line x1="760" y1="360" x2="1140" y2="360" stroke="#D9D9D9" stroke-width="0.5"/>
+  <text x="760" y="392" font-size="13" fill="#1A1B1E">参照系：搜索式扩展的证据</text>
+  <text x="760" y="418" font-size="12" fill="#555">Tree of Thoughts 在 Game of 24：4% → 74%</text>
+  <text x="760" y="440" font-size="12" fill="#555">OpenAI o1/o3：准确率与 thinking tokens 近似对数线性，</text>
+  <text x="760" y="458" font-size="12" fill="#555">边际收益在 &gt;10K tokens 区间显著递减</text>
+
+  <!-- footnote -->
+  <text x="60" y="530" font-size="11" fill="#767676">数据：arXiv:2607.28573（Woongkyu Lee 与 Jungwook Choi，论文自测口径）· a 面板预算数额为正文示意近似值 · b 面板 4%→74% 引自 Tree of Thoughts（arXiv:2305.10601）· 预印本未经同行评审</text>
 </svg>

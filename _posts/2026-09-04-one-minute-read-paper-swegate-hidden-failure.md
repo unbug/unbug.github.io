@@ -8,9 +8,9 @@ tags: [llm, agent, coding-agent, benchmark]
 description: "中山大学、浙江大学与重庆大学构建SWE-Gate双轨基准，从真实PR review提取约束测试：644个通过功能测试的补丁中221个隐藏失败，整体隐藏失败率34.3%，显式披露约束能提升合规却拖累修复。"
 ---
 
-中山大学、浙江大学和重庆大学联合发表的论文[《SWE-Gate: Passing Functional Tests Is Not Enough for Software Engineering Agents》][paper1-url]（[arXiv:2609.04167][paper1-url]，2026 年 9 月 3 日提交，6 位作者）给出了一个直接冲击 agentic coding 叙事的数字：在 644 个通过功能测试的仓库级修复补丁中，有 221 个没有通过约束验证，整体隐藏失败率（Hidden Failure Rate）为 34.3%。
+中山大学、浙江大学和重庆大学联合发表的论文[《SWE-Gate》][paper1-url]给出了一个直接冲击 agentic coding 叙事的数字：在 644 个通过功能测试的仓库级修复补丁中，有 221 个没有通过约束验证。
 
-也就是说，代码智能体在 SWE-bench 类基准上"跑通测试"的产出，约三分之一过不了真实项目 review 的那道关。与已发的[《约束在交接中悄悄失效》][links-2]关注多 Agent 交接中约束丢失不同，这篇考察的是单个智能体产出的补丁对工程约束的违反——约束来自真实 PR review 评论，验证方式是可自动执行的测试套件。
+论文于 2026 年 9 月 3 日提交（[arXiv:2609.04167][paper1-url]），6 位作者，整体隐藏失败率（Hidden Failure Rate）为 34.3%。也就是说，代码智能体在 SWE-bench 类基准上"跑通测试"的产出，约三分之一过不了真实项目 review 的那道关。与已发的[《约束在交接中悄悄失效》][links-2]关注多 Agent 交接中约束丢失不同，这篇考察的是单个智能体产出的补丁对工程约束的违反——约束来自真实 PR review 评论，验证方式是可自动执行的测试套件。
 
 ## SWE-Gate 怎么构造第二道标尺
 

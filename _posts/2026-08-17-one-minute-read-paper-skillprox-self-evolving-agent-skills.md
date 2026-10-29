@@ -8,7 +8,9 @@ tags: [agentic-coding, self-evolving, agent-skills]
 description: "香港科技大学与澳门大学提出 SkillProx，用闭环诊断演化加近端精炼双阶段框架实现智能体技能自进化，在三个表格基准上平均提升约 3 个百分点，分布外泛化显著更稳。"
 ---
 
-香港科技大学与澳门大学的论文[《SkillProx: Self-Evolving Agent Skills via Proximal Textual Gradient Descent》][paper1-url]，针对智能体技能（由主指令文件 SKILL.md 和可选引用资源目录构成的结构化文本工件）提出受近端梯度下降（交替执行任务损失方向步与正则约束子问题求解的优化算法）启发的"前向-后向"双阶段框架：前向闭环诊断演化验证每次编辑的实际效果，后向效用感知近端精炼审计并收缩累积知识。
+香港科技大学与澳门大学的论文[《SkillProx: Self-Evolving Agent Skills via Proximal Textual Gradient Descent》][paper1-url]为智能体技能提出"前向-后向"双阶段框架，相比最强基线 SkillGrad 平均提升约 3.0 个百分点。
+
+该框架针对智能体技能（由主指令文件 SKILL.md 和可选引用资源目录构成的结构化文本工件），受近端梯度下降（交替执行任务损失方向步与正则约束子问题求解的优化算法）启发：前向闭环诊断演化验证每次编辑的实际效果，后向效用感知近端精炼审计并收缩累积知识。
 
 在 SpreadSheetBench、WikiTQ 和 HiTab 三个基准上，SkillProx 相比最强基线 SkillGrad 平均提升约 `3.0` 个百分点，且分布外（OOD）泛化显著更稳：Qwen3.5-4B 下 SkillOpt 的 OOD 得分在 WikiTQ、HiTab 上分别跌至 `26.0` 和 `16.0`，SkillProx 则达到 `78.5` 与 `69.2`。
 

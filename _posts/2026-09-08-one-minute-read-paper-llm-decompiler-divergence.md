@@ -8,7 +8,9 @@ tags: [llm, security, decompilation, evaluation]
 description: "论文用模糊测试对照发现，大模型反编译产物通过全部自带测试后仍有 4.9% 与原始程序行为分歧，最高单系统达 13%，只看能否编译的评测指标正在奖励错误路径。"
 ---
 
-论文[《When LLM Decompilers Recompile More and Preserve Less》][paper1-url]（arXiv:2609.05370，作者 Chang Liu、Edward Raff、Kristopher Micinski，提交于 2026-09-04，2026-09-08 查阅）给出一个直接动摇当前评测口径的结论：以大模型为内核的反编译工具产出的代码，即使能通过全部随附测试，仍有 `4.9%` 在合法输入上与原始程序行为分歧，单一系统最高达 `13%`——也就是说，只看「能不能编译、过不过测试」这两项主流指标，会系统性地把错误路径评为更优。
+论文[《When LLM Decompilers Recompile More and Preserve Less》][paper1-url]给出一个直接动摇当前评测口径的结论：以大模型为内核的反编译工具产出的代码，即使能通过全部随附测试，仍有 `4.9%` 在合法输入上与原始程序行为分歧。
+
+这篇预印本提交于 2026-09-04（arXiv:2609.05370，作者 Chang Liu、Edward Raff、Kristopher Micinski，2026-09-08 查阅），单一系统最高达 `13%`——也就是说，只看「能不能编译、过不过测试」这两项主流指标，会系统性地把错误路径评为更优。
 
 ## 两项主流指标为何漏掉两类失败
 

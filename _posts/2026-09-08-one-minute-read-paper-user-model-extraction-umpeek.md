@@ -8,9 +8,9 @@ tags: [llm, agent, privacy, security]
 description: "UMPeek 证明个性化 Agent 即使删掉记忆原文，黑盒攻击者仍能通过假设引导的自适应追问从可见行为恢复隐私信息：语义恢复超过最强基线六倍以上，响应级防御也拦不住。删除记录不等于删除影响。"
 ---
 
-论文[《Inferring Hidden User Models from the Behavior of Personalized LLM Agents》][paper1-url]（arXiv:2609.03815，2026-09-03 提交，cs.CR 预印本）给出一个对业界话术很不利的结论：个性化 Agent 把用户记忆压缩成结构化的「user model」（用户模型，指供后续决策使用的压缩或结构化表示）后，即使原文已从普通接口可达的状态中删除，黑盒攻击者依然能从被它塑造的个性化选择里恢复隐私信息。
+论文[《Inferring Hidden User Models from the Behavior of Personalized LLM Agents》][paper1-url]结论对业界话术很不利：个性化 Agent 的用户记忆即使原文已删除，黑盒攻击者依然能从被 user model（用户模型，指供后续决策使用的压缩或结构化表示）塑造的选择里恢复隐私信息。
 
-论文的表述是：keeping records and backend state inaccessible does not guarantee semantic privacy（记录与后端状态不可访问，并不保证语义隐私）。
+这是 2026-09-03 提交的 cs.CR 预印本（arXiv:2609.03815），给出一个对业界话术很不利的结论。个性化 Agent 把用户记忆压缩成一个结构化的「user model」后，原文已从普通接口可达的状态中删除，也不影响从被它塑造的个性化选择里做这种推断。论文的表述是：keeping records and backend state inaccessible does not guarantee semantic privacy（记录与后端状态不可访问，并不保证语义隐私）。
 
 ## 删掉原文，为什么没删掉影响
 

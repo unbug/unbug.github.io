@@ -1,99 +1,115 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8D9B72; }
-      .rl { font-size: 15.5px; font-weight: 700; fill: #23281E; }
-      .ev { font-size: 13.5px; fill: #66705A; }
-      .b { font-size: 12px; fill: #A2AC8A; }
-      .hd { font-size: 12.5px; letter-spacing: 2px; fill: #8D9B72; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F3F6EA"/>
-    </linearGradient>
-    <linearGradient id="gTomato" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#C7402D"/><stop offset="1" stop-color="#E2704F"/>
-    </linearGradient>
-    <linearGradient id="gLeaf" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#4F7A3A"/><stop offset="1" stop-color="#7DA356"/>
-    </linearGradient>
-    <linearGradient id="gRadish" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#9C3F63"/><stop offset="1" stop-color="#C56A8D"/>
-    </linearGradient>
-    <linearGradient id="gCorn" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#CE9A1F"/><stop offset="1" stop-color="#E6BC4E"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1120" cy="612" r="130" fill="#4F7A3A" opacity="0.05"/>
-  <circle cx="84" cy="108" r="110" fill="#C7402D" opacity="0.05"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gTomato)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">Skill 库扩至一千个无关项时加载召回从 73.6% 跌至 27.4%，零加载率升至 51.6%；同一库改为显式选择，召回保住 73.9%</text>
 
-  <text class="k" x="64" y="84">一分钟读论文 · 2026-10-15 · ARXIV:2610.18522</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#23281E">菜越多，越空手出摊</text>
-  <text x="64" y="158" font-size="15" fill="#66705A">skill 库塞进一千个无关项，agent 干脆什么都不拿</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">库规模扩至一千个无关 skill：隐式路由与显式选择（%）</text>
 
-  <!-- market stall motif -->
-  <g>
-    <rect x="988" y="120" width="150" height="10" rx="4" fill="#A9743E"/>
-    <path d="M 982 120 q 12 -22 24 0 q 12 -22 24 0 q 12 -22 24 0 q 12 -22 24 0 q 12 -22 24 0 q 12 -22 24 0 l 0 -10 l -144 0 z" fill="url(#gRadish)" opacity="0.55"/>
-    <circle cx="1014" cy="152" r="11" fill="url(#gTomato)"/>
-    <circle cx="1042" cy="148" r="11" fill="url(#gCorn)"/>
-    <circle cx="1070" cy="153" r="11" fill="url(#gLeaf)"/>
-    <circle cx="1098" cy="147" r="11" fill="url(#gRadish)"/>
-    <rect x="1004" y="170" width="118" height="42" rx="6" fill="#FFFFFF" stroke="#C9C2A6" stroke-width="1.6"/>
-    <text class="b" x="1063" y="196" text-anchor="middle" fill="#8D9B72" letter-spacing="2">无人拿取</text>
-    <text class="hd" x="1063" y="236" text-anchor="middle">一千个无关项的货架</text>
+  <!-- horizontal gridlines: y = 420 - 3.2*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="170" y1="352" x2="560" y2="352"/>
+    <line x1="170" y1="284" x2="560" y2="284"/>
+    <line x1="170" y1="216" x2="560" y2="216"/>
+    <line x1="170" y1="148" x2="560" y2="148"/>
   </g>
 
-  <!-- slope: left slate = small library, right = +1000 unrelated skills -->
-  <text class="hd" x="368" y="222" text-anchor="middle">基线库</text>
-  <text class="hd" x="836" y="222">+1,000 无关 skill</text>
+  <!-- bars: y = 420 - 3.2*v -->
+  <!-- implicit recall small scale 73.6 -->
+  <rect x="195" y="184.5" width="64" height="235.5" fill="#56B4E9"/>
+  <text x="227" y="176" font-size="12" fill="#555" text-anchor="middle">73.6%</text>
+  <text x="227" y="440" font-size="12.5" fill="#1A1B1E" text-anchor="middle">小库 · 隐式</text>
 
-  <rect x="240" y="240" width="720" height="46" rx="10" fill="#4F7A3A" opacity="0.08"/>
-  <text class="rl" x="330" y="269" text-anchor="end">加载召回</text>
-  <line x1="368" y1="263" x2="836" y2="263" stroke="url(#gTomato)" stroke-width="2.5"/>
-  <circle cx="368" cy="263" r="9" fill="#3D5A73"/>
-  <circle cx="836" cy="263" r="9" fill="url(#gTomato)"/>
-  <text x="386" y="250" font-size="18" font-weight="700" fill="#3D5A73">73.6%</text>
-  <text x="856" y="269" font-size="18" font-weight="700" fill="#C7402D">27.4%</text>
+  <!-- implicit recall 1k 27.4 -->
+  <rect x="300" y="332.3" width="64" height="87.7" fill="#56B4E9"/>
+  <text x="332" y="324" font-size="12" fill="#555" text-anchor="middle">27.4%</text>
+  <text x="332" y="440" font-size="12.5" fill="#1A1B1E" text-anchor="middle">1k · 隐式</text>
 
-  <rect x="240" y="312" width="720" height="46" rx="10" fill="#C7402D" opacity="0.07"/>
-  <text class="rl" x="330" y="341" text-anchor="end">零加载率</text>
-  <line x1="368" y1="335" x2="836" y2="335" stroke="url(#gRadish)" stroke-width="2.5"/>
-  <circle cx="368" cy="335" r="9" fill="#3D5A73"/>
-  <circle cx="836" cy="335" r="9" fill="url(#gRadish)"/>
-  <text x="386" y="322" font-size="18" font-weight="700" fill="#3D5A73">9.3%</text>
-  <text x="856" y="341" font-size="18" font-weight="700" fill="#9C3F63">51.6%</text>
-  <text class="ev" x="922" y="341">一半任务空手干活</text>
+  <!-- explicit 1k 73.9 -->
+  <rect x="405" y="183.5" width="64" height="236.5" fill="#0072B2"/>
+  <text x="437" y="175" font-size="12" fill="#555" text-anchor="middle">73.9%</text>
+  <text x="437" y="440" font-size="12.5" fill="#1A1B1E" text-anchor="middle">1k · 显式</text>
 
-  <rect x="240" y="384" width="720" height="46" rx="10" fill="#CE9A1F" opacity="0.09"/>
-  <text class="rl" x="330" y="413" text-anchor="end">显式预选</text>
-  <line x1="368" y1="407" x2="836" y2="407" stroke="#BDB69F" stroke-width="2" stroke-dasharray="5 5"/>
-  <circle cx="368" cy="407" r="9" fill="#3D5A73"/>
-  <circle cx="836" cy="407" r="9" fill="url(#gCorn)"/>
-  <text x="856" y="413" font-size="18" font-weight="700" fill="#9A7212">73.9%</text>
-  <text class="ev" x="922" y="413">系统替 agent 挑，召回保住</text>
+  <!-- zero-load 1k 51.6 -->
+  <rect x="470" y="254.9" width="64" height="165.1" fill="#D55E00"/>
+  <text x="502" y="246" font-size="12" fill="#555" text-anchor="middle">51.6%</text>
+  <text x="502" y="440" font-size="12.5" fill="#1A1B1E" text-anchor="middle">1k · 零加载</text>
 
-  <!-- pass@3 lag anchor -->
-  <g>
-    <rect x="64" y="478" width="486" height="118" rx="12" fill="#9C3F63" opacity="0.07"/>
-    <rect x="64" y="478" width="486" height="6" rx="3" fill="url(#gRadish)"/>
-    <text class="serif" x="88" y="534" font-size="27" font-weight="700" fill="#23281E">57.3% → 56.1%</text>
-    <text class="ev" x="88" y="560">GLM-5 的 Pass@3 几乎不动（Kimi 52.4 → 50.6）</text>
-    <text class="b" x="88" y="582">成功率是滞后指标 · 坏掉的路由被它掩盖</text>
+  <!-- value axis -->
+  <line x1="170" y1="420" x2="560" y2="420" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="166" y1="420" x2="170" y2="420"/>
+    <line x1="166" y1="352" x2="170" y2="352"/>
+    <line x1="166" y1="284" x2="170" y2="284"/>
+    <line x1="166" y1="216" x2="170" y2="216"/>
+    <line x1="166" y1="148" x2="170" y2="148"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="160" y="424">0</text>
+    <text x="160" y="356">20</text>
+    <text x="160" y="288">40</text>
+    <text x="160" y="220">60</text>
+    <text x="160" y="152">80</text>
+  </g>
+  <text x="100" y="140" font-size="14" fill="#1A1B1E">占比（%）</text>
+
+  <!-- legend -->
+  <g font-size="12" fill="#555">
+    <rect x="180" y="126" width="12" height="10" fill="#56B4E9"/>
+    <text x="197" y="135">加载召回（隐式）</text>
+    <rect x="310" y="126" width="12" height="10" fill="#0072B2"/>
+    <text x="327" y="135">加载召回（显式选择）</text>
+    <rect x="452" y="126" width="12" height="10" fill="#D55E00"/>
+    <text x="469" y="135">零加载率</text>
   </g>
 
-  <!-- interference anchors -->
-  <g>
-    <rect x="576" y="478" width="560" height="118" rx="12" fill="#4F7A3A" opacity="0.07"/>
-    <rect x="576" y="478" width="560" height="6" rx="3" fill="url(#gLeaf)"/>
-    <text class="rl" x="600" y="524" fill="#4F7A3A">遮蔽无关描述后，加载大幅恢复</text>
-    <text class="rl" x="600" y="552" fill="#9C3F63">先规划再选，召回仍低于预选</text>
-    <text class="b" x="600" y="582">语义干扰与指令干扰 · 三个开源权重模型平均</text>
+  <!-- ============ panel b ============ -->
+  <text x="650" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="672" y="104" font-size="15" fill="#1A1B1E">百级规模已现退化：加载召回降幅（个百分点）</text>
+
+  <!-- gridlines x = 780 + 4*t -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="880" y1="130" x2="880" y2="372"/>
+    <line x1="980" y1="130" x2="980" y2="372"/>
+    <line x1="1080" y1="130" x2="1080" y2="372"/>
+  </g>
+  <!-- bars: x = 780 + 4*t -->
+  <text x="768" y="171" font-size="12.5" fill="#1A1B1E" text-anchor="end">GLM-5</text>
+  <rect x="780" y="157" width="98.4" height="18" fill="#009E73"/>
+  <text x="886" y="171" font-size="12" fill="#555">24.6</text>
+
+  <text x="768" y="237" font-size="12.5" fill="#1A1B1E" text-anchor="end">Kimi K2.5</text>
+  <rect x="780" y="223" width="62.4" height="18" fill="#009E73"/>
+  <text x="850" y="237" font-size="12" fill="#555">15.6</text>
+
+  <text x="768" y="303" font-size="12.5" fill="#1A1B1E" text-anchor="end">MiniMax M2.5</text>
+  <rect x="780" y="289" width="82.8" height="18" fill="#009E73"/>
+  <text x="870" y="303" font-size="12" fill="#555">20.7</text>
+
+  <!-- axis -->
+  <line x1="780" y1="372" x2="1100" y2="372" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="780" y1="372" x2="780" y2="376"/>
+    <line x1="880" y1="372" x2="880" y2="376"/>
+    <line x1="980" y1="372" x2="980" y2="376"/>
+    <line x1="1080" y1="372" x2="1080" y2="376"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="780" y="392">0</text>
+    <text x="880" y="392">25</text>
+    <text x="980" y="392">50</text>
+    <text x="1080" y="392">75</text>
+  </g>
+  <text x="940" y="416" font-size="14" fill="#1A1B1E" text-anchor="middle">加载召回降幅（个百分点）</text>
+
+  <!-- panel b companion: Pass@3 lag -->
+  <g font-size="12" fill="#555">
+    <text x="650" y="452">同规模下任务成功率基本守在基线附近：GLM-5 的 Pass@3 从 57.3% 到 56.1%，</text>
+    <text x="650" y="472">Kimi K2.5 从 52.4% 到 50.6%；百级降幅为三个开源权重模型，未覆盖闭源前沿模型。</text>
   </g>
 
-  <line x1="64" y1="620" x2="1136" y2="620" stroke="#E2E4CF"/>
-  <text class="b" x="64" y="648">预印本未经同行评审 · 未覆盖闭源前沿模型 · 缓解有覆盖与延迟代价 · Micropaper</text>
+  <!-- footnote -->
+  <text x="60" y="600" font-size="11" fill="#767676">数据：arXiv:2610.18522（SkillsBench 任务与 golden skills 固定，逐批加入无关 skill）· 零加载率随库从小到 1k 由 9.3% 涨至 51.6% · 论文自测口径 · 预印本未经同行评审</text>
 </svg>

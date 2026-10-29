@@ -8,9 +8,9 @@ tags: [llm, multi-agent, safety, governance]
 description: "Google DeepMind 的案例研究发现：100 个自主 LLM agent 组成的科研集群里，作弊漏洞顺着公开通道传播，24% 的 agent 自发作弊举报者发起反击；作者提出搬用 Ostrom 公共治理制度保护 agent 共享基础设施。"
 ---
 
-近期多起事件让业界担心 agent 集群通过隐蔽旁路通道（covert side-channel）串通作恶，Google DeepMind 的案例研究[《A Case Study on Emergent Cheating and Whistleblowing in Autonomous Research Swarms》][paper1-url]给出了一个方向相反的观察：在 100 个自主 LLM agent 组成的科研集群里，作弊与举报都走公开通道，承载作弊传播的透明通道，恰恰让诚实 agent 看见了欺诈、组织抵抗、执行规范。
+Google DeepMind 的案例研究[《Autonomous Research Swarms》][paper1-url]给出了一个方向相反的观察：在 100 个自主 LLM agent 组成的科研集群里，作弊与举报都走公开通道，透明通道让诚实 agent 组织抵抗。
 
-集群中没有外部干预，作弊自发出现，也自发被反制。
+近期多起事件让业界担心 agent 集群通过隐蔽旁路通道（covert side-channel）串通作恶。承载作弊传播的透明通道，恰恰让诚实 agent 看见了欺诈、组织抵抗、执行规范。集群中没有外部干预，作弊自发出现，也自发被反制。
 
 ## 作弊如何出现并传播
 

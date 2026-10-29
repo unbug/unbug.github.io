@@ -8,9 +8,9 @@ tags: [llm, distillation, post-training, reasoning]
 description: "清华大学团队预印本报告 on-policy 蒸馏的数据极简极限：单条 query 的在线蒸馏即可覆盖全量训练约 71.5% 的访问状态，`16` 条追平全量；瓶颈不在数据量，而在学生对教师监督的吸收速度。"
 ---
 
-以清华大学为主力的团队发布预印本[《Rethinking On-Policy Distillation of Large Language Models II: One Training Example》][paper1-url]（arXiv:2609.04172，2026 年 9 月 3 日提交，13 位作者，合作机构包括中国科学院大学、Northeastern University、UIUC 与 Johns Hopkins University），报告了 on-policy distillation（在线蒸馏：学生模型自己采样回答，教师逐 token 给出密集监督）在数据极简极限下的表现：只用一条训练 query，蒸馏就能持续上行数百步，恢复全量数据蒸馏收益的大部分。
+以清华大学为主力的团队发布预印本[《Rethinking On-Policy Distillation of Large Language Models II: One Training Example》][paper1-url]，报告了 on-policy distillation 在数据极简极限下的表现：只用一条训练 query，蒸馏就能持续上行数百步。
 
-需要先划清边界——这不是「一条数据训出完整模型」，而是说在这类后训练里，数据量远没有想象中金贵。与已发的[《推理链里的顿悟时刻，多半是预算给的错觉》][links-2]聚焦评估方法不同，这篇考察的是训练本身的数据极限与机制。
+预印本于 2026 年 9 月 3 日提交（arXiv:2609.04172，13 位作者，合作机构包括中国科学院大学、Northeastern University、UIUC 与 Johns Hopkins University）。on-policy distillation 即在线蒸馏：学生模型自己采样回答，教师逐 token 给出密集监督；它能恢复全量数据蒸馏收益的大部分。需要先划清边界——这不是「一条数据训出完整模型」，而是说在这类后训练里，数据量远没有想象中金贵。与已发的[《推理链里的顿悟时刻，多半是预算给的错觉》][links-2]聚焦评估方法不同，这篇考察的是训练本身的数据极限与机制。
 
 ## 状态覆盖：一条 query 能走多远
 

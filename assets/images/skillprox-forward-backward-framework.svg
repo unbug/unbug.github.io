@@ -1,108 +1,119 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9C9484; }
-      .rl { font-size: 15px; fill: #474C54; }
-      .val { font-size: 18px; font-weight: 700; fill: #1A1B1E; }
-      .b { font-size: 12px; fill: #A5A296; }
-      .chip { font-size: 12.5px; font-weight: 600; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F5F2EA"/>
-    </linearGradient>
-    <linearGradient id="gNavy" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2E5A87"/><stop offset="1" stop-color="#6E9BC4"/>
-    </linearGradient>
-    <linearGradient id="gClay" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#B5442E"/><stop offset="1" stop-color="#D9704F"/>
-    </linearGradient>
-    <linearGradient id="gWheat" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#B9892F"/><stop offset="1" stop-color="#DCB65F"/>
-    </linearGradient>
-    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2F7E76"/><stop offset="1" stop-color="#6FB5A8"/>
-    </linearGradient>
-    <linearGradient id="gPlum" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7D4E8E"/><stop offset="1" stop-color="#B183C2"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1105" cy="110" r="140" fill="#2E5A87" opacity="0.06"/>
-  <circle cx="70" cy="625" r="115" fill="#B5442E" opacity="0.05"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gClay)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">分布外泛化差异显著：Qwen3.5-4B 下 SkillOpt 在 WikiTQ、HiTab 的 OOD 得分跌至 26.0 与 16.0，SkillProx 为 78.5 与 69.2</text>
 
-  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2608.07449 · 港科大 × 澳门大学</text>
-  <text class="serif" x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">两道检票口</text>
-  <text x="64" y="158" font-size="15" fill="#5B6068">SkillProx 把技能演化拆成闭环诊断演化与近端精炼，像一进一出的地铁闸机</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">分布外（OOD）得分：SkillOpt 与 SkillProx（Qwen3.5-4B）</text>
 
-  <!-- right motif: subway turnstile, forward in / backward prune -->
-  <g>
-    <rect x="990" y="240" width="20" height="106" rx="4" fill="url(#gNavy)" opacity="0.85"/>
-    <rect x="1130" y="240" width="20" height="106" rx="4" fill="url(#gNavy)" opacity="0.85"/>
-    <rect x="972" y="342" width="196" height="12" rx="3" fill="url(#gTeal)" opacity="0.75"/>
-    <g stroke="url(#gClay)" stroke-width="5" stroke-linecap="round">
-      <line x1="1010" y1="272" x2="1060" y2="248"/>
-      <line x1="1010" y1="288" x2="1060" y2="288"/>
-      <line x1="1010" y1="304" x2="1060" y2="328"/>
-    </g>
-    <circle cx="1070" cy="288" r="16" fill="#FBFAF7" stroke="url(#gClay)" stroke-width="4"/>
-    <path d="M 1078 246 l 22 0 m -8 -8 l 8 8 l -8 8" stroke="url(#gWheat)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-    <path d="M 1122 330 l -22 0 m 8 8 l -8 -8 l 8 -8" stroke="url(#gTeal)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-    <rect x="1044" y="214" width="52" height="14" rx="7" fill="url(#gWheat)" opacity="0.55"/>
-    <text class="b" x="1070" y="384" text-anchor="middle">进闸验证 · 出闸修剪</text>
+  <!-- gridlines: y = 420 - 3.2*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="170" y1="356" x2="560" y2="356"/>
+    <line x1="170" y1="292" x2="560" y2="292"/>
+    <line x1="170" y1="228" x2="560" y2="228"/>
+    <line x1="170" y1="164" x2="560" y2="164"/>
   </g>
 
-  <!-- OOD dumbbell rows -->
-  <g>
-    <rect x="64" y="206" width="740" height="70" fill="#B5442E" opacity="0.07"/>
-    <rect x="64" y="294" width="740" height="70" fill="#B5442E" opacity="0.07"/>
+  <!-- bars: y = 420 - 3.2*v ; height = 3.2*v -->
+  <!-- WikiTQ SkillOpt 26.0 -->
+  <rect x="200" y="336.8" width="62" height="83.2" fill="#999999"/>
+  <text x="231" y="328" font-size="12" fill="#555" text-anchor="middle">26.0</text>
+  <!-- WikiTQ SkillProx 78.5 -->
+  <rect x="270" y="168.8" width="62" height="251.2" fill="#0072B2"/>
+  <text x="301" y="160" font-size="12" fill="#555" text-anchor="middle">78.5</text>
+  <text x="266" y="440" font-size="12.5" fill="#1A1B1E" text-anchor="middle">WikiTQ</text>
 
-    <text class="rl" x="252" y="239" text-anchor="end">WikiTQ · OOD 得分</text>
-    <text class="b" x="252" y="257" text-anchor="end">SkillOpt → SkillProx</text>
-    <circle cx="320" cy="240" r="7" fill="#FFFFFF" stroke="#B5442E" stroke-width="3"/>
-    <line x1="320" y1="240" x2="438" y2="240" stroke="url(#gNavy)" stroke-width="2.5"/>
-    <circle cx="438" cy="240" r="10" fill="url(#gNavy)"/>
-    <text class="val" x="458" y="246" fill="#2E5A87" font-size="20">26.0 → 78.5</text>
-    <text class="b" x="600" y="245">Qwen3.5-4B · 跌到与拉回之间</text>
+  <!-- HiTab SkillOpt 16.0 -->
+  <rect x="410" y="368.8" width="62" height="51.2" fill="#999999"/>
+  <text x="441" y="360" font-size="12" fill="#555" text-anchor="middle">16.0</text>
+  <!-- HiTab SkillProx 69.2 -->
+  <rect x="480" y="198.6" width="62" height="221.4" fill="#0072B2"/>
+  <text x="511" y="190" font-size="12" fill="#555" text-anchor="middle">69.2</text>
+  <text x="476" y="440" font-size="12.5" fill="#1A1B1E" text-anchor="middle">HiTab</text>
 
-    <text class="rl" x="252" y="327" text-anchor="end">HiTab · OOD 得分</text>
-    <text class="b" x="252" y="345" text-anchor="end">SkillOpt → SkillProx</text>
-    <circle cx="320" cy="328" r="7" fill="#FFFFFF" stroke="#B5442E" stroke-width="3"/>
-    <line x1="320" y1="328" x2="415" y2="328" stroke="url(#gNavy)" stroke-width="2.5"/>
-    <circle cx="415" cy="328" r="10" fill="url(#gNavy)"/>
-    <text class="val" x="435" y="334" fill="#2E5A87" font-size="20">16.0 → 69.2</text>
-    <text class="b" x="600" y="333">Qwen3.5-4B · 分布外泛化</text>
+  <!-- value axis -->
+  <line x1="170" y1="420" x2="560" y2="420" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="166" y1="420" x2="170" y2="420"/>
+    <line x1="166" y1="356" x2="170" y2="356"/>
+    <line x1="166" y1="292" x2="170" y2="292"/>
+    <line x1="166" y1="228" x2="170" y2="228"/>
+    <line x1="166" y1="164" x2="170" y2="164"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="160" y="424">0</text>
+    <text x="160" y="360">20</text>
+    <text x="160" y="296">40</text>
+    <text x="160" y="232">60</text>
+    <text x="160" y="168">80</text>
+  </g>
+  <text x="100" y="140" font-size="14" fill="#1A1B1E">OOD 得分（分）</text>
+
+  <!-- legend -->
+  <g font-size="12" fill="#555">
+    <rect x="200" y="126" width="12" height="10" fill="#999999"/>
+    <text x="217" y="135">SkillOpt</text>
+    <rect x="300" y="126" width="12" height="10" fill="#0072B2"/>
+    <text x="317" y="135">SkillProx</text>
   </g>
 
-  <!-- right stats -->
-  <g>
-    <rect x="836" y="404" width="145" height="76" fill="#2F7E76" opacity="0.09"/>
-    <text class="serif" x="852" y="436" font-size="22" font-weight="700" fill="#2F5E58">砍掉 74.9%</text>
-    <text x="852" y="460" font-size="12.5" fill="#6B7078">技能内容 · 仍留 51.0%</text>
+  <!-- ============ panel b ============ -->
+  <text x="650" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="672" y="104" font-size="15" fill="#1A1B1E">IID 硬准确率：三种技能来源（Qwen3.6-27B，分）</text>
 
-    <rect x="997" y="404" width="143" height="76" fill="#7D4E8E" opacity="0.09"/>
-    <text class="serif" x="1013" y="436" font-size="22" font-weight="700" fill="#5F3A6E">压缩 25.7%</text>
-    <text x="1013" y="460" font-size="12.5" fill="#6B7078">最佳准确率 52.3%</text>
+  <!-- gridlines x = 800 + 5*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="900" y1="130" x2="900" y2="392"/>
+    <line x1="1000" y1="130" x2="1000" y2="392"/>
   </g>
 
-  <!-- bottom chips -->
-  <line x1="64" y1="400" x2="804" y2="400" stroke="#E8E3D2"/>
-  <g>
-    <rect x="64" y="424" width="150" height="28" rx="14" fill="url(#gWheat)" opacity="0.24"/>
-    <text x="139" y="443" text-anchor="middle" class="chip" fill="#7A5A14">平均 +3.0pp</text>
-    <text class="b" x="226" y="443">三基准 vs 最强基线 SkillGrad</text>
+  <!-- groups: rows y; bars SkillProx #0072B2, SkillGrad #E69F00, 人工 #999 -->
+  <!-- SpreadSheetBench: 54.5 / 50.0 / 36.7 -->
+  <text x="790" y="163" font-size="12.5" fill="#1A1B1E" text-anchor="end">SpreadSheetBench</text>
+  <rect x="800" y="146" width="272.5" height="10" fill="#0072B2"/>
+  <text x="1078" y="155" font-size="12" fill="#555">54.5</text>
+  <rect x="800" y="159" width="250" height="10" fill="#E69F00"/>
+  <text x="1056" y="168" font-size="12" fill="#555">50.0</text>
+  <rect x="800" y="172" width="183.5" height="10" fill="#999999"/>
+  <text x="990" y="181" font-size="12" fill="#555">36.7</text>
 
-    <rect x="64" y="464" width="182" height="28" rx="14" fill="url(#gNavy)" opacity="0.16"/>
-    <text x="155" y="483" text-anchor="middle" class="chip" fill="#2F5578">消融 54.5 / 53.0 / 52.0</text>
-    <text class="b" x="258" y="483">完整 / 仅 Prox / 仅闭环诊断</text>
+  <!-- WikiTQ: 86.2 / 84.8 / 85.7 -->
+  <text x="790" y="245" font-size="12.5" fill="#1A1B1E" text-anchor="end">WikiTQ</text>
+  <rect x="800" y="228" width="431" height="10" fill="#0072B2"/>
+  <text x="1108" y="237" font-size="12" fill="#555">86.2</text>
+  <rect x="800" y="241" width="424" height="10" fill="#E69F00"/>
+  <text x="1102" y="250" font-size="12" fill="#555">84.8</text>
+  <rect x="800" y="254" width="428.5" height="10" fill="#999999"/>
+  <text x="1106" y="263" font-size="12" fill="#555">85.7</text>
 
-    <rect x="64" y="504" width="126" height="28" rx="14" fill="url(#gClay)" opacity="0.16"/>
-    <text x="127" y="523" text-anchor="middle" class="chip" fill="#8E3623">负例 46%→54%</text>
-    <text class="b" x="202" y="523">移除负效用知识单元反而更准</text>
+  <!-- HiTab: 80.0 / 78.3 / 78.0 -->
+  <text x="790" y="327" font-size="12.5" fill="#1A1B1E" text-anchor="end">HiTab</text>
+  <rect x="800" y="310" width="400" height="10" fill="#0072B2"/>
+  <text x="1206" y="319" font-size="12" fill="#555">80.0</text>
+  <rect x="800" y="323" width="391.5" height="10" fill="#E69F00"/>
+  <text x="1197" y="332" font-size="12" fill="#555">78.3</text>
+  <rect x="800" y="336" width="390" height="10" fill="#999999"/>
+  <text x="1196" y="345" font-size="12" fill="#555">78.0</text>
+
+  <!-- value axis -->
+  <line x1="800" y1="392" x2="1050" y2="392" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="800" y1="392" x2="800" y2="396"/>
+    <line x1="900" y1="392" x2="900" y2="396"/>
+    <line x1="1000" y1="392" x2="1000" y2="396"/>
   </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="800" y="412">0</text>
+    <text x="900" y="412">20</text>
+    <text x="1000" y="412">40</text>
+  </g>
+  <text x="950" y="412" font-size="14" fill="#1A1B1E" text-anchor="middle">IID 硬准确率（分）</text>
 
-  <text class="serif" x="64" y="592" font-size="18" fill="#1A1B1E">前向管新知识进站，后向管旧知识出站，谁留谁走都要重新刷卡。</text>
-  <text class="b" x="1136" y="640" text-anchor="end">三个结构化表格基准 · 分布外为 Qwen3.5-4B 口径 · Micropaper</text>
+  <text x="650" y="446" font-size="12" fill="#555">较 SkillGrad 分别提升 4.5、1.4、1.7 个百分点；</text>
+  <text x="650" y="464" font-size="12" fill="#555">较人工编写技能 IID 提升高达 17.8 个百分点。</text>
+
+  <!-- footnote -->
+  <text x="60" y="560" font-size="11" fill="#767676">数据：arXiv:2608.07449v1（SpreadSheetBench、WikiTQ、HiTab 三个表格基准）· 三骨干模型上较最强基线 SkillGrad 平均提升约 3.0 个百分点 · 论文自测口径 · 预印本未经同行评审</text>
 </svg>

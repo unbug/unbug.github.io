@@ -1,90 +1,102 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,'Microsoft YaHei',sans-serif">
-  <defs>
-    <style>
-      .serif { font-family: 'Noto Serif SC','Songti SC','STSong',serif; }
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #8C966B; }
-      .rl { font-size: 15px; fill: #3E4638; }
-      .b { font-size: 12px; fill: #A3AA8C; }
-    </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FBFAF7"/><stop offset="1" stop-color="#F2F3EA"/>
-    </linearGradient>
-    <linearGradient id="gSeed" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#4E7A46"/><stop offset="1" stop-color="#8FB26F"/>
-    </linearGradient>
-    <linearGradient id="gBranch" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#3D7F8C"/><stop offset="1" stop-color="#77B0BA"/>
-    </linearGradient>
-    <linearGradient id="gBloom" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7A5AA6"/><stop offset="1" stop-color="#B18FD6"/>
-    </linearGradient>
-    <linearGradient id="gFruit" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#C06A2E"/><stop offset="1" stop-color="#E5A667"/>
-    </linearGradient>
-    <linearGradient id="gSun" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#E8B33C"/><stop offset="1" stop-color="#F2D283"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <rect x="0" y="0" width="44" height="5" fill="#B5442E"/>
-  <circle cx="1092" cy="118" r="86" fill="url(#gSun)" opacity="0.14"/>
-  <circle cx="96" cy="606" r="104" fill="#4E7A46" opacity="0.05"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">STAIR + MiniMax M2.5 在 SWE-bench Verified 达 81.2% Pass@1；消融显示多层抽象 76.0% 远超无抽象原始轨迹 53.6%</text>
 
-  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2607.29658 · CONCORDIA + HUAWEI</text>
-  <text class="serif" x="64" y="130" font-size="37" font-weight="700" fill="#1A1B1E">修过的 bug，长成了下一次的枝条</text>
-  <text x="64" y="160" font-size="15.5" fill="#6E6A5C">STAIR 把历史修复轨迹修剪成分层计划：框架质量可弥补骨干模型差距</text>
-  <line x1="64" y1="184" x2="1136" y2="184" stroke="#E5E1D4"/>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">代表性运行的 Pass@1（%，SWE-bench Verified）</text>
 
-  <!-- left: tree of abstraction -->
-  <g>
-    <text class="rl" x="64" y="222" font-weight="700" fill="#1A1B1E">一个 Django issue 的三次修剪（示意）</text>
-
-    <rect x="64" y="244" width="560" height="62" fill="url(#gSeed)" opacity="0.08"/>
-    <text class="serif" x="84" y="284" font-size="26" font-weight="700" fill="#3E5F37">35</text>
-    <text x="124" y="281" font-size="14" fill="#3E4638">个细粒度步骤</text>
-    <text x="260" y="281" font-size="13.5" fill="#5B6350">Level 0 · 原始轨迹：定位、规划、执行、验证</text>
-
-    <text x="84" y="332" font-size="16" fill="#7A5AA6">↓ 分组 + 抽象操作符</text>
-
-    <rect x="64" y="344" width="560" height="62" fill="url(#gBranch)" opacity="0.08"/>
-    <text class="serif" x="84" y="384" font-size="20" font-weight="700" fill="#2F6570">Level 1 中层策略</text>
-    <text x="260" y="381" font-size="13.5" fill="#5B6350">功能被 UI 阻止时，还要查后端是否直接拒绝</text>
-
-    <text x="84" y="432" font-size="16" fill="#7A5AA6">↓ 再抽象一层</text>
-
-    <rect x="64" y="444" width="560" height="62" fill="url(#gBloom)" opacity="0.08"/>
-    <text class="serif" x="84" y="484" font-size="20" font-weight="700" fill="#5C4286">Level 2 高层原则</text>
-    <text x="260" y="481" font-size="13.5" fill="#5B6350">在每个系统层级强制意图，不只可见入口</text>
-
-    <text class="b" x="64" y="536">节点带修复意图、关键动作、适用条件与陷阱 · 检索后适配当前 issue</text>
+  <!-- gridlines -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="300" y1="352" x2="600" y2="352"/>
+    <line x1="300" y1="284" x2="600" y2="284"/>
+    <line x1="300" y1="216" x2="600" y2="216"/>
+    <line x1="300" y1="148" x2="600" y2="148"/>
   </g>
+  <!-- bars: y = 420 - 3.2*v -->
+  <rect x="330" y="159.4" width="60" height="260.6" fill="#0072B2"/>
+  <text x="360" y="151" font-size="12" fill="#555" text-anchor="middle">81.2</text>
+  <text x="360" y="440" font-size="12.5" fill="#1A1B1E" text-anchor="middle">STAIR +</text>
+  <text x="360" y="456" font-size="12.5" fill="#1A1B1E" text-anchor="middle">MiniMax M2.5</text>
 
-  <!-- right: results -->
-  <g>
-    <text class="rl" x="700" y="222" font-weight="700" fill="#1A1B1E">SWE-bench Verified · Pass@1</text>
+  <rect x="440" y="165.8" width="60" height="254.2" fill="#0072B2"/>
+  <text x="470" y="157" font-size="12" fill="#555" text-anchor="middle">79.2</text>
+  <text x="470" y="440" font-size="12.5" fill="#1A1B1E" text-anchor="middle">STAIR +</text>
+  <text x="470" y="456" font-size="12.5" fill="#1A1B1E" text-anchor="middle">GPT-5</text>
 
-    <rect x="700" y="240" width="400" height="120" fill="#C06A2E" opacity="0.07"/>
-    <text x="720" y="272" font-size="13.5" fill="#3E4638">STAIR + MiniMax M2.5（开源权重）</text>
-    <text class="serif" x="720" y="326" font-size="46" font-weight="700" fill="#C06A2E">81.2%</text>
-    <text x="856" y="322" font-size="13" fill="#A3AA8C">对比代理中排名第一</text>
-    <text x="720" y="348" font-size="12.5" fill="#7E8670">STAIR + GPT-5 为 79.2%，追平 Claude 4.5 Opus 底座代理</text>
+  <rect x="545" y="165.8" width="60" height="254.2" fill="#999999"/>
+  <text x="575" y="157" font-size="12" fill="#555" text-anchor="middle">79.2</text>
+  <text x="575" y="440" font-size="12.5" fill="#1A1B1E" text-anchor="middle">Sonar</text>
+  <text x="575" y="456" font-size="12.5" fill="#1A1B1E" text-anchor="middle">Foundation Agent</text>
 
-    <text class="b" x="700" y="392">消融 · 抽象层级越全越好</text>
-    <rect x="700" y="402" width="292" height="16" fill="url(#gSeed)" opacity="0.9"/>
-    <text x="1000" y="415" font-size="12.5" fill="#3E5F37">76.0% 完整多层</text>
-    <rect x="700" y="426" width="240" height="16" fill="url(#gBranch)" opacity="0.9"/>
-    <text x="948" y="439" font-size="12.5" fill="#2F6570">62.4% 仅低层</text>
-    <rect x="700" y="450" width="206" height="16" fill="url(#gBloom)" opacity="0.9"/>
-    <text x="914" y="463" font-size="12.5" fill="#5C4286">56.8% 仅高层</text>
-    <rect x="700" y="474" width="194" height="16" fill="#8C966B" opacity="0.55"/>
-    <text x="902" y="487" font-size="12.5" fill="#6E6A5C">53.6% 原始轨迹</text>
-
-    <line x1="700" y1="508" x2="1100" y2="508" stroke="#E5E1D4"/>
-    <text x="700" y="534" font-size="13" fill="#3E4638">移植 mini-SWE-agent v2：75.8% → 81.0%，token 再省 3.5%</text>
+  <!-- axis -->
+  <line x1="300" y1="420" x2="620" y2="420" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="296" y1="420" x2="300" y2="420"/>
+    <line x1="296" y1="352" x2="300" y2="352"/>
+    <line x1="296" y1="284" x2="300" y2="284"/>
+    <line x1="296" y1="216" x2="300" y2="216"/>
+    <line x1="296" y1="148" x2="300" y2="148"/>
   </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="290" y="424">0</text>
+    <text x="290" y="356">20</text>
+    <text x="290" y="288">40</text>
+    <text x="290" y="220">60</text>
+    <text x="290" y="152">80</text>
+  </g>
+  <text x="215" y="135" font-size="14" fill="#1A1B1E">Pass@1（%）</text>
+  <text x="300" y="486" font-size="12" fill="#555">Sonar Foundation Agent 基于 Claude 4.5 Opus，与 STAIR + GPT-5 持平。</text>
 
-  <line x1="64" y1="566" x2="1136" y2="566" stroke="#E5E1D4"/>
-  <text class="serif" x="64" y="600" font-size="19" fill="#1A1B1E">经验不入库就是杂草，修成层次才是果园。</text>
-  <text class="b" x="64" y="628">冷启动预处理约 211 美元 / 479 个轨迹 · 实验限 Python 仓库 · 约 19% 回退案例 · Micropaper</text>
+  <!-- ============ panel b ============ -->
+  <text x="680" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="692" y="104" font-size="15" fill="#1A1B1E">抽象层级消融：Pass@1（%）</text>
+
+  <!-- gridlines x = 830 + 4.25*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="892.5" y1="130" x2="892.5" y2="380"/>
+    <line x1="955" y1="130" x2="955" y2="380"/>
+    <line x1="1017.5" y1="130" x2="1017.5" y2="380"/>
+    <line x1="1080" y1="130" x2="1080" y2="380"/>
+  </g>
+  <!-- bars -->
+  <text x="818" y="163" font-size="12.5" fill="#1A1B1E" text-anchor="end">多层混合（完整）</text>
+  <rect x="830" y="150" width="323" height="16" fill="#D55E00"/>
+  <text x="1160" y="163" font-size="12" fill="#555">76.0</text>
+
+  <text x="818" y="225" font-size="12.5" fill="#1A1B1E" text-anchor="end">仅低层</text>
+  <rect x="830" y="212" width="265.2" height="16" fill="#999999"/>
+  <text x="1102" y="225" font-size="12" fill="#555">62.4</text>
+
+  <text x="818" y="287" font-size="12.5" fill="#1A1B1E" text-anchor="end">仅高层</text>
+  <rect x="830" y="274" width="241.4" height="16" fill="#999999"/>
+  <text x="1078" y="287" font-size="12" fill="#555">56.8</text>
+
+  <text x="818" y="349" font-size="12.5" fill="#1A1B1E" text-anchor="end">无抽象（原始轨迹）</text>
+  <rect x="830" y="336" width="227.8" height="16" fill="#999999"/>
+  <text x="1064" y="349" font-size="12" fill="#555">53.6</text>
+
+  <!-- axis -->
+  <line x1="830" y1="380" x2="1105" y2="380" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="830" y1="380" x2="830" y2="384"/>
+    <line x1="892.5" y1="380" x2="892.5" y2="384"/>
+    <line x1="955" y1="380" x2="955" y2="384"/>
+    <line x1="1017.5" y1="380" x2="1017.5" y2="384"/>
+    <line x1="1080" y1="380" x2="1080" y2="384"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="830" y="400">0</text>
+    <text x="892.5" y="400">15</text>
+    <text x="955" y="400">30</text>
+    <text x="1017.5" y="400">45</text>
+    <text x="1080" y="400">60</text>
+  </g>
+  <text x="965" y="424" font-size="14" fill="#1A1B1E" text-anchor="middle">Pass@1（%）</text>
+  <text x="680" y="452" font-size="12" fill="#555">混合多个抽象级别比任何单一级别高出 13-19 个百分点。</text>
+
+  <!-- footnote -->
+  <text x="60" y="600" font-size="11" fill="#767676">数据：arXiv:2607.29658（SWE-bench Verified：500 个真实 GitHub issue）· 跨代理迁移至 mini-SWE-agent v2 时 Pass@1 从 75.8% 升至 81.0%，token 用量减少约 3.5% · 冷启动预处理约 211 美元（479 个轨迹）· 论文自测口径 · 预印本未经同行评审</text>
 </svg>
