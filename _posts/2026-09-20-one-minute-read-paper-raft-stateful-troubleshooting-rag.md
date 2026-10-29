@@ -8,9 +8,9 @@ tags: [rag, retrieval, agent, customer-support]
 description: "微软RAFT论文把已关闭工单抽象成时间线条目链并按阶段检索，初始症状阶段案例命中率达84.2%，远超整篇文档检索的67.3%，说明有状态语料的检索粒度决定历史案例复用效果。"
 ---
 
-微软（Microsoft）红雷蒙德团队的论文[《RAFT: A Stateful Retrieval-Augmented Framework for Troubleshooting Agents》][paper1-url]提出：企业客服工单是多阶段、有状态的处置过程，把每条已关闭案例抽象成`时间线条目链`并在条目级检索，比把工单当静态文档整篇检索更能命中真正同阶段的先例——在只有初始症状（`0% progress`）时，RAFT 的`Case Hit`达到 `84.2%`，而传统 RAG 为 `67.3%`。
+微软红雷蒙德团队的论文[《RAFT》][paper1-url]（已被 EMNLP 2026 行业 track 接收）把已关闭工单抽象成`时间线条目链`按阶段检索，初始症状阶段案例命中率达 `84.2%`，远超整篇文档检索的 `67.3%`。
 
-论文已被 EMNLP 2026 行业 track（Industry Track，面向工业实践的投稿通道，评审强度与完整 research track 不同）接收，代码与评测集已开源。
+该论文全称为[《RAFT: A Stateful Retrieval-Augmented Framework for Troubleshooting Agents》][paper1-url]，来自微软（Microsoft）红雷蒙德团队，论文已被 EMNLP 2026 行业 track（Industry Track，面向工业实践的投稿通道，评审强度与完整 research track 不同）接收，代码与评测集已开源。论文提出：企业客服工单是多阶段、有状态的处置过程，把每条已关闭案例抽象成`时间线条目链`并在条目级检索，比把工单当静态文档整篇检索更能命中真正同阶段的先例——在只有初始症状（`0% progress`）时，RAFT 的`Case Hit`达到 `84.2%`，而传统 RAG 为 `67.3%`。
 
 ## 从查文档到查阶段
 

@@ -8,9 +8,9 @@ tags: [llm-agents, model-routing, ai-agents, benchmark, evaluation]
 description: "Simular 联合威斯康星大学麦迪逊分校提出 LEASH 框架：弱模型按不确定性升级给强模型，交接后转任影子观察者在线盯梢黑盒强模型，OSWorld 成功率 73.66% 追平常开强模型，估算成本省 19.2%。"
 ---
 
-Simular 联合威斯康星大学麦迪逊分校（University of Wisconsin–Madison）的论文[《LEASH: Uncertainty-Aware Weak-to-Strong Escalation and Oversight for Computer-Use Agents》][paper1-url]（arXiv 预印本，2026 年 10 月提交）给出了一个省钱又不掉链子的方案：让开源弱模型先干活，按`不确定性`在合适时机升级给强模型接管；接管后弱模型并不下班，而是转任`影子观察者`在线盯梢强模型。
+Simular 联合威斯康星大学麦迪逊分校的论文[《LEASH》][paper1-url]（arXiv 预印本，2026 年 10 月提交）给出了一个省钱又不掉链子的方案：让开源弱模型先干活，按`不确定性`在合适时机升级给强模型接管，弱模型转任`影子观察者`在线盯梢，OSWorld 成功率 `73.66%`。
 
-在 OSWorld 基准（评测桌面任务成功率的基准）上，以 Qwen3.5-35B-A3B 为骨干时，LEASH 任务成功率 `73.66%`，追平常开 Claude Opus 5 的 `72.90%`，单任务`估算成本`（按固定参考价折算 token 用量得出，非真实账单）`$0.4117` 对 `$0.5094`，省 `19.2%`。
+该论文全称为[《LEASH: Uncertainty-Aware Weak-to-Strong Escalation and Oversight for Computer-Use Agents》][paper1-url]，来自 Simular 联合威斯康星大学麦迪逊分校（University of Wisconsin–Madison）。让开源弱模型先干活，按`不确定性`在合适时机升级给强模型接管；接管后弱模型并不下班，而是转任`影子观察者`在线盯梢强模型。在 OSWorld 基准（评测桌面任务成功率的基准）上，以 Qwen3.5-35B-A3B 为骨干时，LEASH 任务成功率 `73.66%`，追平常开 Claude Opus 5 的 `72.90%`，单任务`估算成本`（按固定参考价折算 token 用量得出，非真实账单）`$0.4117` 对 `$0.5094`，省 `19.2%`。
 
 ![LEASH 消融阶梯：37.40 → 41.15 → 67.94 → 73.66]({{ site.baseurl }}/assets/images/leash-weak-to-strong.svg)
 
