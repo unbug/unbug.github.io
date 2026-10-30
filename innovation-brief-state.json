@@ -1,13 +1,13 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "title": "AI 智创简报：《网络排障 Agent 上场干活，考场却没人监考》",
-    "date": "2026-10-28",
-    "slug": "innovation-brief-network-agent-testing-patents",
-    "issue": 24
+    "n": 25,
+    "slug": "innovation-brief-agentic-payment-patents",
+    "date": "2026-10-30",
+    "title": "AI 下单的支付路，卡组织先装了两道闸"
   },
-  "totalPublished": 24,
-  "nextScheduled": "2026-11-01",
+  "totalPublished": 25,
+  "nextScheduled": "2026-11-02",
   "coveredPatentFamilies": [
     "US20260044392",
     "US20260188475",
@@ -105,7 +105,12 @@
     "US12683886",
     "US12701054",
     "US20260238551",
-    "EP4548546"
+    "EP4548546",
+    "US12705604B2",
+    "WO2026173611A1",
+    "WO2026173648A1",
+    "AU2026906209A0",
+    "US20260187470A1"
   ],
   "candidateTopics": [
     {

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+  <text x="60" y="46" font-size="23" font-weight="bold" fill="#1A1B1E">智能体支付：卡组织专利落子与开源协议生态</text>
+
+  <!-- Panel a: event timeline (ordinal axis with real dates) -->
+  <text x="60" y="96" font-size="15" font-weight="bold" fill="#1A1B1E">a 2026 年 7-8 月专利事件（实心=授权，空心=公开）</text>
+  <line x1="120" y1="200" x2="1120" y2="200" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="200" y1="200" x2="200" y2="206"/><line x1="560" y1="200" x2="560" y2="206"/><line x1="850" y1="200" x2="850" y2="206"/><line x1="1080" y1="200" x2="1080" y2="206"/>
+  </g>
+  <g font-size="12" fill="#555555" text-anchor="middle">
+    <text x="200" y="224">07-02</text><text x="560" y="224">08-11</text><text x="850" y="224">08-20</text><text x="1080" y="224">08-20</text>
+  </g>
+  <circle cx="560" cy="200" r="7" fill="#D55E00"/>
+  <circle cx="850" cy="200" r="7" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+  <circle cx="1080" cy="200" r="7" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+  <g font-size="12" fill="#1A1B1E">
+    <text x="120" y="150">AmEx US20260187470A1（公开，窗口外背景）</text>
+    <text x="560" y="130" text-anchor="middle">万事达 US12705604B2</text>
+    <text x="560" y="148" text-anchor="middle" fill="#D55E00">授权</text>
+    <text x="850" y="130" text-anchor="middle">Visa WO2026173611A1</text>
+    <text x="850" y="148" text-anchor="middle">认证基础设施 PCT</text>
+    <text x="1080" y="96" text-anchor="middle">Visa WO2026173648A1</text>
+    <text x="1080" y="114" text-anchor="middle">发现与购买协议 PCT</text>
+    <text x="1112" y="248" text-anchor="end" fill="#999999">另有个人临时申请 AU2026906209A0（07-23，未实审）</text>
+  </g>
+  <line x1="120" y1="165" x2="360" y2="165" stroke="#999999" stroke-width="0.5"/>
+
+  <!-- Panel b: ecosystem bars -->
+  <text x="60" y="300" font-size="15" font-weight="bold" fill="#1A1B1E">b 开源协议生态星标（GitHub API 实测 2026-10-30）</text>
+  <line x1="420" y1="320" x2="420" y2="520" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g font-size="13" fill="#1A1B1E" text-anchor="end">
+    <text x="410" y="356">Anthropic commerce-agents（2026-09-01 新建）</text>
+    <text x="410" y="400">Google AP2</text>
+    <text x="410" y="444">ACP 规范仓</text>
+    <text x="410" y="488">Coinbase x402</text>
+  </g>
+  <rect x="420" y="342" width="630" height="22" fill="#D55E00"/>
+  <text x="1056" y="358" font-size="13" fill="#1A1B1E">3,378</text>
+  <rect x="420" y="386" width="607" height="22" fill="#0072B2"/>
+  <text x="1033" y="402" font-size="13" fill="#1A1B1E">3,254</text>
+  <rect x="420" y="430" width="297" height="22" fill="#999999"/>
+  <text x="723" y="446" font-size="13" fill="#1A1B1E">1,591</text>
+  <rect x="420" y="474" width="33" height="22" fill="#999999"/>
+  <text x="459" y="490" font-size="13" fill="#1A1B1E">176</text>
+  <text x="420" y="544" font-size="12" fill="#555555">GitHub 搜索面 agentic commerce 相关仓库 6,862 个（同日实测）</text>
+
+  <text x="60" y="596" font-size="12" fill="#767676">口径：a 轴为公开节奏序位（间距示意非等距日历），日期均为公开日/授权日；两件 Visa PCT 为公开申请、未授权。数据实测 2026-10-30，来源 patents.google.com 与 api.github.com。</text>
+</svg>
