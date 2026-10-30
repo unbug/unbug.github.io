@@ -149,8 +149,8 @@
       ]
     }
   ],
-  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-meeting-minutes-local-deploy/",
-  "lastPublishedVerifiedAt": "2026-10-18 11:2x 重建后核验 200（未来日期陷阱第四犯，空提交 b4afaa2 修复）",
+  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-agentic-payment-patents/",
+  "lastPublishedVerifiedAt": "2026-10-30 10:3x GMT+8 构建 188ee1b 完成后核验 200（本轮构建排队超 10 分钟，耐心轮询通过）",
   "verification": {
     "brief4": {
       "url": "https://unbug.github.io/innovation-brief-prd-gen-patents/",
@@ -181,6 +181,12 @@
       "http": 200,
       "verifiedAt": "2026-09-04 19:20 GMT+8",
       "note": "commit 3e343d7，Actions build success 后验证 HTTP 200 + llms.txt 已收录"
+    },
+    "brief25": {
+      "url": "https://unbug.github.io/innovation-brief-agentic-payment-patents/",
+      "http": 200,
+      "verifiedAt": "2026-10-30 10:33 GMT+8",
+      "note": "构建 in_progress 超 10 分钟后 success；正文关键词与 SVG 均 200"
     }
   },
   "lastNoTopicRound": {
