@@ -10,7 +10,9 @@ description: "爱丁堡大学联合腾讯混元发布InfraDev基准，用36个�
 
 爱丁堡大学联合腾讯混元的论文[《InfraDev》][paper1-url]（arXiv:2610.36589）测了编码 Agent 开发 AI 基建（训练、推理、强化学习框架的代码）的水位：`36` 个真实任务上，最强模型 `GPT-6 Sol` 只解决 `38.9%`，隐藏探针还毙掉 `32%` 通过官方测试的提交。
 
-论文全称 InfraDev: Can Coding Agents Develop AI Infrastructure, and How Can We Tell?，是 `2026` 年 `10` 月 `27` 日提交的预印本。任务取自 `Megatron-LM`、`vLLM`、`verl` 三个生产仓库在 2025 年 1 月至 2026 年 9 月合并的 `21,389` 个 pull request，只保留跨多文件、必须多 GPU 跑对的真改动，最终 `36` 个：训练 `19`、推理 `10`、强化学习 `7`。六个前沿模型在每个任务上各跑一次，独占一台 `8` 卡 NVIDIA H800/H20 节点，限时 `2.5` 小时。
+论文全称 InfraDev: Can Coding Agents Develop AI Infrastructure, and How Can We Tell?，是 `2026` 年 `10` 月 `27` 日提交的预印本。
+
+![提交漏斗与解决率水位]({{ site.baseurl }}/assets/images/infradev-coding-agents-ai-infra.svg)任务取自 `Megatron-LM`、`vLLM`、`verl` 三个生产仓库在 2025 年 1 月至 2026 年 9 月合并的 `21,389` 个 pull request，只保留跨多文件、必须多 GPU 跑对的真改动，最终 `36` 个：训练 `19`、推理 `10`、强化学习 `7`。六个前沿模型在每个任务上各跑一次，独占一台 `8` 卡 NVIDIA H800/H20 节点，限时 `2.5` 小时。
 
 ## 官方测试本身在放水
 
