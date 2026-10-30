@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="560" fill="#FFFFFF"/>
+  <text x="60" y="46" font-size="23" font-weight="bold" fill="#1A1B1E">CORAL：存档、清空、开新回合</text>
+
+  <!-- Panel a: episode flow -->
+  <text x="60" y="96" font-size="15" font-weight="bold" fill="#1A1B1E">a 一个 episode 的生命周期（机制示意）</text>
+  <g font-size="13" fill="#1A1B1E">
+    <rect x="60" y="120" width="200" height="64" rx="4" fill="#FFFFFF" stroke="#1A1B1E" stroke-width="0.75"/>
+    <text x="160" y="146" text-anchor="middle">任务推进</text>
+    <text x="160" y="166" text-anchor="middle" fill="#555555" font-size="12">工具输出越滚越长</text>
+    <rect x="330" y="120" width="200" height="64" rx="4" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.25"/>
+    <text x="430" y="146" text-anchor="middle">checkpoint</text>
+    <text x="430" y="166" text-anchor="middle" fill="#555555" font-size="12">存档进度与已验证事实</text>
+    <rect x="600" y="120" width="200" height="64" rx="4" fill="#FFFFFF" stroke="#D55E00" stroke-width="1.25"/>
+    <text x="700" y="146" text-anchor="middle">重置上下文</text>
+    <text x="700" y="166" text-anchor="middle" fill="#555555" font-size="12">丢弃噪声，只留存档</text>
+    <rect x="870" y="120" width="230" height="64" rx="4" fill="#FFFFFF" stroke="#1A1B1E" stroke-width="0.75"/>
+    <text x="985" y="146" text-anchor="middle">新 episode 干净状态继续</text>
+    <text x="985" y="166" text-anchor="middle" fill="#555555" font-size="12">何时清、留什么由模型决定</text>
+  </g>
+  <g stroke="#555555" stroke-width="0.75" fill="none" marker-end="none">
+    <path d="M 260 152 H 322"/><path d="M 530 152 H 592"/><path d="M 800 152 H 862"/>
+  </g>
+  <g fill="#555555">
+    <polygon points="322,152 312,147 312,157"/>
+    <polygon points="592,152 582,147 582,157"/>
+    <polygon points="862,152 852,147 852,157"/>
+  </g>
+  <text x="60" y="222" font-size="13" fill="#555555">MERPO 强化学习把「何时按下清空」训进策略，而非按固定长度硬切。</text>
+
+  <!-- Panel b: verified numbers -->
+  <text x="60" y="282" font-size="15" font-weight="bold" fill="#1A1B1E">b 论文实测数字（摘要口径，CEO 对上游号）</text>
+  <g font-size="13" fill="#1A1B1E" text-anchor="end">
+    <text x="330" y="330">GAIA 平均准确率（8B 模型）</text>
+    <text x="330" y="382">输入 token（相对 ReAct，越短越省）</text>
+    <text x="330" y="434">BrowseComp 相对强的专有智能体</text>
+  </g>
+  <rect x="340" y="314" width="428" height="26" fill="#0072B2"/>
+  <text x="776" y="332" font-size="14" fill="#1A1B1E">42.8%</text>
+  <rect x="340" y="366" width="560" height="26" fill="#999999"/>
+  <rect x="340" y="366" width="84" height="26" fill="#D55E00"/>
+  <text x="912" y="384" font-size="13" fill="#555555">ReAct 基准 1×｜橙 CORAL 少 6-7×</text>
+  <rect x="340" y="418" width="80" height="26" fill="#0072B2"/>
+  <text x="428" y="436" font-size="14" fill="#1A1B1E">+8.0 分</text>
+  <text x="340" y="486" font-size="12" fill="#555555">口径：token 条以 ReAct 输入量为 1×，CORAL 消耗少 6-7 倍（论文摘要称 6-7×）；提升集中在 GAIA 最难的 Level 2 与 Level 3。</text>
+  <text x="60" y="528" font-size="12" fill="#767676">数据逐字来自 arXiv:2610.40350 摘要（COLM 2026）；a 面板为机制示意不含实测数字。</text>
+</svg>
