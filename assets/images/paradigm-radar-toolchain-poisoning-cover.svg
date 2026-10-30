@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+  <text x="60" y="48" font-size="23" font-weight="bold" fill="#1A1B1E">AI 编码工具链：攻击面事件与防御供给同窗出现</text>
+
+  <!-- Panel a: attack events timeline -->
+  <text x="60" y="98" font-size="15" font-weight="bold" fill="#1A1B1E">a 攻击面事件（Hacker News 分数，2026-10-31 实测）</text>
+  <line x1="150" y1="210" x2="1120" y2="210" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="180" y1="210" x2="180" y2="216"/><line x1="640" y1="210" x2="640" y2="216"/><line x1="1060" y1="210" x2="1060" y2="216"/>
+  </g>
+  <g font-size="12" fill="#555555" text-anchor="middle">
+    <text x="180" y="236">2026-05</text><text x="640" y="236">2026-09</text><text x="1060" y="236">2026-10 月 13 天窗口</text>
+  </g>
+  <!-- bars as circles sized by points (visual), labeled with exact numbers -->
+  <circle cx="180" cy="188" r="13" fill="#D55E00"/>
+  <text x="180" y="160" font-size="13" fill="#1A1B1E" text-anchor="middle">恶意 VSCode 扩展</text>
+  <text x="180" y="142" font-size="13" fill="#1A1B1E" text-anchor="middle">GitHub 3,800 仓泄露 1054</text>
+  <circle cx="640" cy="188" r="12" fill="#D55E00"/>
+  <text x="640" y="160" font-size="13" fill="#1A1B1E" text-anchor="middle">OpenAI agent 攻击 RubyGems 975</text>
+  <!-- Oct cluster -->
+  <circle cx="920" cy="188" r="12" fill="#D55E00"/>
+  <circle cx="985" cy="188" r="10" fill="#D55E00"/>
+  <circle cx="1050" cy="188" r="11" fill="#D55E00"/>
+  <g font-size="12" fill="#1A1B1E" text-anchor="middle">
+    <text x="920" y="152">OpenCode 泄露 976</text>
+    <text x="985" y="166">LiteLLM 投毒 596</text>
+    <text x="1050" y="152">官方扩展后门 645</text>
+    <text x="1050" y="118" fill="#555555">同事件三帖 645/396/377</text>
+  </g>
+
+  <!-- Panel b: supply side repos -->
+  <text x="60" y="308" font-size="15" font-weight="bold" fill="#1A1B1E">b 防御供给：官方组织扫描/治理仓（星标，2026-10-31 实测）</text>
+  <line x1="420" y1="330" x2="420" y2="520" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g font-size="13" fill="#1A1B1E" text-anchor="end">
+    <text x="410" y="360">NVIDIA/SkillSpector（2026-03）</text>
+    <text x="410" y="405">microsoft/agent-governance-toolkit（2026-03）</text>
+    <text x="410" y="450">snyk/agent-scan</text>
+    <text x="410" y="495">cisco-ai-defense/skill-scanner（2026-01）</text>
+  </g>
+  <rect x="420" y="346" width="626" height="22" fill="#0072B2"/>
+  <text x="1054" y="362" font-size="13" fill="#1A1B1E">23,499</text>
+  <rect x="420" y="391" width="173" height="22" fill="#0072B2"/>
+  <text x="601" y="407" font-size="13" fill="#1A1B1E">6,496</text>
+  <rect x="420" y="436" width="85" height="22" fill="#0072B2"/>
+  <text x="513" y="452" font-size="13" fill="#1A1B1E">3,191</text>
+  <rect x="420" y="481" width="71" height="22" fill="#0072B2"/>
+  <text x="499" y="497" font-size="13" fill="#1A1B1E">2,670</text>
+
+  <text x="60" y="560" font-size="12" fill="#767676">a 面板横轴为日期序位（间距示意非等距日历），圆点为事件、旁标 HN 分数原值；b 面板条长按星标等比。星标与分数均为 2026-10-31 实测。</text>
+  <text x="60" y="586" font-size="12" fill="#767676">口径：Claude Code 扩展后门为进行中事件（Anthropic 截至 2026-10-30 无公开工程口径）；NVIDIA 26.1%/5.2% 恶意率为其 README 自报，未入本图。</text>
+</svg>
