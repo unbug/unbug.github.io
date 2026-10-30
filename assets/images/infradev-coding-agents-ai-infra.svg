@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect x="0" y="0" width="1200" height="675" fill="#FFFFFF"/>
+  <text x="60" y="46" font-size="24" font-weight="bold" fill="#1A1B1E">InfraDev：编码 Agent 开发 AI 基建的验收水位</text>
+  <text x="60" y="72" font-size="14" fill="#555555">a 提交漏斗（官方测试 vs 隐藏探针）  b 解决率天花板  c 失败模式整理成规范文档后的干预效果</text>
+
+  <!-- Panel a -->
+  <text x="60" y="112" font-size="16" font-weight="bold" fill="#1A1B1E">a 提交漏斗（n=提交份数）</text>
+  <!-- axis -->
+  <line x1="220" y1="140" x2="220" y2="330" stroke="#1A1B1E" stroke-width="0.75"/>
+  <line x1="220" y1="330" x2="560" y2="330" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g font-size="12" fill="#555555" text-anchor="middle">
+    <text x="220" y="348">0</text><text x="297" y="348">50</text><text x="375" y="348">100</text><text x="452" y="348">150</text><text x="530" y="348">200</text>
+  </g>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="220" y1="330" x2="220" y2="336"/><line x1="297" y1="330" x2="297" y2="336"/><line x1="375" y1="330" x2="375" y2="336"/><line x1="452" y1="330" x2="452" y2="336"/><line x1="530" y1="330" x2="530" y2="336"/>
+  </g>
+  <text x="390" y="372" font-size="13" fill="#555555" text-anchor="middle">提交份数</text>
+  <!-- bars: scale 1.55 px/unit from 220 -->
+  <g font-size="13" fill="#1A1B1E" text-anchor="end">
+    <text x="210" y="170">总提交</text>
+    <text x="210" y="230">全过官方测试</text>
+    <text x="210" y="290">再过隐藏探针</text>
+  </g>
+  <rect x="220" y="152" width="335" height="30" fill="#999999"/>
+  <text x="561" y="172" font-size="14" fill="#1A1B1E">216</text>
+  <rect x="220" y="212" width="158" height="30" fill="#0072B2"/>
+  <text x="384" y="232" font-size="14" fill="#1A1B1E">102</text>
+  <rect x="220" y="272" width="107" height="30" fill="#D55E00"/>
+  <text x="333" y="292" font-size="14" fill="#1A1B1E">69</text>
+  <text x="220" y="400" font-size="12" fill="#555555">探针毙掉过官方测试的 102 份中的 32%</text>
+
+  <!-- Panel b -->
+  <text x="640" y="112" font-size="16" font-weight="bold" fill="#1A1B1E">b 解决率（%，官方测试+探针联合）</text>
+  <line x1="640" y1="140" x2="640" y2="240" stroke="#1A1B1E" stroke-width="0.75"/>
+  <line x1="640" y1="240" x2="1140" y2="240" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="640" y1="240" x2="640" y2="246"/><line x1="740" y1="240" x2="740" y2="246"/><line x1="840" y1="240" x2="840" y2="246"/><line x1="940" y1="240" x2="940" y2="246"/><line x1="1040" y1="240" x2="1040" y2="246"/>
+  </g>
+  <g font-size="12" fill="#555555" text-anchor="middle">
+    <text x="640" y="258">0</text><text x="740" y="258">10</text><text x="840" y="258">20</text><text x="940" y="258">30</text><text x="1040" y="258">40</text>
+  </g>
+  <g font-size="13" fill="#1A1B1E" text-anchor="end">
+    <text x="630" y="176">六模型最强（36 任务）</text>
+    <text x="630" y="216">PR 原始描述当任务书</text>
+  </g>
+  <rect x="640" y="160" width="389" height="26" fill="#0072B2"/>
+  <text x="1035" y="178" font-size="14" fill="#1A1B1E">38.9</text>
+  <line x1="640" y1="200" x2="644" y2="200" stroke="#999999" stroke-width="1.5"/>
+  <text x="652" y="212" font-size="13" fill="#555555">六模型均未解决哪怕一个任务</text>
+
+  <!-- Panel c -->
+  <text x="640" y="330" font-size="16" font-weight="bold" fill="#1A1B1E">c 规范文档 skill 干预（%，GPT-5.6 Sol，Megatron-LM 子集）</text>
+  <line x1="700" y1="360" x2="1100" y2="360" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="700" y1="360" x2="700" y2="366"/><line x1="800" y1="360" x2="800" y2="366"/><line x1="900" y1="360" x2="900" y2="366"/><line x1="1000" y1="360" x2="1000" y2="366"/>
+  </g>
+  <g font-size="12" fill="#555555" text-anchor="middle">
+    <text x="700" y="382">40</text><text x="800" y="382">45</text><text x="900" y="382">50</text><text x="1000" y="382">55</text>
+  </g>
+  <line x1="742" y1="420" x2="952" y2="420" stroke="#1A1B1E" stroke-width="1.5"/>
+  <circle cx="742" cy="420" r="7" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+  <circle cx="952" cy="420" r="7" fill="#D55E00"/>
+  <text x="742" y="452" font-size="13" fill="#1A1B1E" text-anchor="middle">42.1（干预前）</text>
+  <text x="952" y="400" font-size="13" fill="#1A1B1E" text-anchor="middle">52.6（干预后）</text>
+  <text x="1010" y="426" font-size="13" fill="#D55E00">+10.5</text>
+
+  <text x="640" y="510" font-size="12" fill="#555555">注：c 面板干预对象为 Megatron-LM 的 19 任务子集，与 b 面板全量 36 任务口径不同，不可直接横比。</text>
+
+  <line x1="60" y1="580" x2="1140" y2="580" stroke="#D9D9D9" stroke-width="0.5"/>
+  <text x="60" y="606" font-size="12" fill="#767676">数据来源：InfraDev（arXiv:2610.36589，2026-10-27 预印本，未经同行评审，数字为作者自测口径）。</text>
+  <text x="60" y="628" font-size="12" fill="#767676">口径：解决率=全部测试通过比例，非通用编程能力分；隐藏探针为论文自建探针互证，非独立 ground truth；b 面板每任务单次运行，无方差。</text>
+</svg>

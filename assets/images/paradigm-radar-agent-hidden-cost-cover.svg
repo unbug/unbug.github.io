@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect x="0" y="0" width="1200" height="675" fill="#FFFFFF"/>
+  <text x="60" y="46" font-size="24" font-weight="bold" fill="#1A1B1E">Agent 隐性开销显形化：一笔没有账单的请求与一排计量工具</text>
+  <text x="60" y="72" font-size="14" fill="#555555">a 取证方样本内的花费与请求占比  b 窗口内独立计量供给簇（GitHub 星标）</text>
+
+  <!-- Panel a -->
+  <text x="60" y="112" font-size="16" font-weight="bold" fill="#1A1B1E">a 取证方自述样本：agent_summary vs 主对话</text>
+  <g font-size="13" fill="#1A1B1E" text-anchor="end">
+    <text x="210" y="160">agent_summary 花费占比</text>
+    <text x="210" y="206">主对话花费占比</text>
+    <text x="210" y="252">agent_summary 请求占比</text>
+  </g>
+  <rect x="220" y="144" width="492" height="28" fill="#D55E00"/>
+  <text x="718" y="163" font-size="14" fill="#1A1B1E">16.4%</text>
+  <rect x="220" y="190" width="471" height="28" fill="#0072B2"/>
+  <text x="697" y="209" font-size="14" fill="#1A1B1E">15.7%</text>
+  <rect x="220" y="236" width="591" height="28" fill="#E69F00"/>
+  <text x="817" y="255" font-size="14" fill="#1A1B1E">19.7%</text>
+  <text x="220" y="300" font-size="12" fill="#555555">花费为 Claude Code 自身 cost_usd 估算，非发票；订阅制下损失的是限速额度</text>
+  <text x="220" y="322" font-size="12" fill="#555555">input:output 约 9,000:1，96% 请求走 Opus（gist 原文实测）</text>
+
+  <!-- Panel b -->
+  <text x="60" y="380" font-size="16" font-weight="bold" fill="#1A1B1E">b 独立计量供给簇（星标，GitHub API 实测 2026-10-29）</text>
+  <line x1="60" y1="580" x2="1140" y2="580" stroke="#1A1B1E" stroke-width="0.75"/>
+  <!-- bars: max 492 -> 170px height scale; baseline y=580, top area 400 -->
+  <g>
+    <rect x="120" y="410" width="120" height="170" fill="#0072B2"/>
+    <rect x="320" y="476" width="120" height="104" fill="#999999"/>
+    <rect x="520" y="532" width="120" height="48" fill="#999999"/>
+    <rect x="720" y="551" width="120" height="29" fill="#999999"/>
+    <rect x="920" y="565" width="120" height="15" fill="#999999"/>
+  </g>
+  <g font-size="14" fill="#1A1B1E" text-anchor="middle">
+    <text x="180" y="400">492</text>
+    <text x="380" y="466">301</text>
+    <text x="580" y="522">139</text>
+    <text x="780" y="541">83</text>
+    <text x="980" y="555">43</text>
+  </g>
+  <g font-size="12" fill="#555555" text-anchor="middle">
+    <text x="180" y="600">microsoft/TokenEconomizer</text>
+    <text x="180" y="616">（微软，2026-10-13 新建）</text>
+    <text x="380" y="600">kelviq/tare</text>
+    <text x="580" y="600">splunk/token-meter</text>
+    <text x="780" y="600">rbartoli/agent-usage-guard</text>
+    <text x="980" y="600">aashish254/burn</text>
+  </g>
+  <text x="60" y="366" font-size="12" fill="#555555">星标数</text>
+
+  <text x="60" y="646" font-size="12" fill="#767676">数据来源：a 取自 HN 50284255 所附取证 gist（16.4%/15.7%/19.7% 系取证方自述样本，单一样本不代表全体用户）；b 为 API 实测星标。厂方自述口径（2%/4%/6%）另见正文，未入图。</text>
+</svg>
