@@ -1,12 +1,12 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "n": 25,
-    "slug": "innovation-brief-agentic-payment-patents",
+    "n": 26,
+    "slug": "innovation-brief-kv-cache-serving-patents",
     "date": "2026-10-30",
-    "title": "AI 下单的支付路，卡组织先装了两道闸"
+    "title": "服务商省钱的缓存手段，被专利圈起来了"
   },
-  "totalPublished": 25,
+  "totalPublished": 26,
   "nextScheduled": "2026-11-02",
   "coveredPatentFamilies": [
     "US20260044392",
@@ -110,7 +110,13 @@
     "WO2026173611A1",
     "WO2026173648A1",
     "AU2026906209A0",
-    "US20260187470A1"
+    "US20260187470A1",
+    "WO2026138159A1",
+    "US20260195309A1",
+    "EP4781281A1",
+    "EP4785219A1",
+    "CN122019408B",
+    "US20260236476A1"
   ],
   "candidateTopics": [
     {

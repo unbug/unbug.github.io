@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="600" fill="#FFFFFF"/>
+  <text x="60" y="46" font-size="23" font-weight="bold" fill="#1A1B1E">KV 缓存专利六件套：全在服务商侧，客户端侧空着</text>
+
+  <!-- Panel a: timeline -->
+  <text x="60" y="94" font-size="15" font-weight="bold" fill="#1A1B1E">a 公开/授权时间轴（实心=已授权，空心=公开申请）</text>
+  <line x1="110" y1="210" x2="1140" y2="210" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="150" y1="210" x2="150" y2="216"/><line x1="315" y1="210" x2="315" y2="216"/><line x1="590" y1="210" x2="590" y2="216"/><line x1="755" y1="210" x2="755" y2="216"/><line x1="905" y1="210" x2="905" y2="216"/><line x1="1065" y1="210" x2="1065" y2="216"/>
+  </g>
+  <g font-size="12" fill="#555555" text-anchor="middle">
+    <text x="150" y="236">07-02</text><text x="315" y="236">07-09</text><text x="590" y="236">07-29</text><text x="755" y="236">08-05</text><text x="905" y="236">08-11</text><text x="1065" y="236">08-13</text>
+  </g>
+  <circle cx="150" cy="210" r="7" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+  <circle cx="315" cy="210" r="7" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+  <circle cx="590" cy="210" r="7" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+  <circle cx="755" cy="210" r="7" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+  <circle cx="905" cy="210" r="7" fill="#D55E00"/>
+  <circle cx="1065" cy="210" r="7" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+  <g font-size="12" fill="#1A1B1E" text-anchor="middle">
+    <text x="150" y="160">支付宝</text><text x="150" y="178" fill="#555555" font-size="11">缓存优化 PCT</text>
+    <text x="315" y="140">火山引擎</text><text x="315" y="158" fill="#555555" font-size="11">显存分层调度</text>
+    <text x="590" y="160">Google</text><text x="590" y="178" fill="#555555" font-size="11">并行化服务</text>
+    <text x="755" y="140">微软</text><text x="755" y="158" fill="#555555" font-size="11">KV 流式搬运</text>
+    <text x="905" y="160">记忆张量</text><text x="905" y="178" fill="#D55E00" font-size="11">授权·语义段复用</text>
+    <text x="1065" y="140">AtomBeam</text><text x="1065" y="158" fill="#555555" font-size="11">隐式思维缓存</text>
+  </g>
+
+  <!-- Panel b: layer map -->
+  <text x="60" y="300" font-size="15" font-weight="bold" fill="#1A1B1E">b 圈层地图：谁的地盘、谁的空位</text>
+  <rect x="110" y="330" width="620" height="150" rx="4" fill="none" stroke="#0072B2" stroke-width="1.25"/>
+  <text x="130" y="360" font-size="14" font-weight="bold" fill="#0072B2">服务商基础设施层（六件全在此）</text>
+  <g font-size="13" fill="#1A1B1E">
+    <text x="130" y="392">显存分层 · 流式搬运 · 并行调度</text>
+    <text x="130" y="418">语义段零拷贝复用 · 隐式思维缓存</text>
+    <text x="130" y="452" fill="#555555" font-size="12">微软优先权 2023-09-28、Google 2023-10-26</text>
+  </g>
+  <rect x="790" y="330" width="350" height="150" rx="4" fill="none" stroke="#D55E00" stroke-width="1.25" stroke-dasharray="6 4"/>
+  <text x="810" y="360" font-size="14" font-weight="bold" fill="#D55E00">调用方侧（检索未见大厂落子）</text>
+  <g font-size="13" fill="#1A1B1E">
+    <text x="810" y="392">面向缓存命中的提示词重排</text>
+    <text x="810" y="418">前缀折扣账单审计</text>
+    <text x="810" y="444">多智能体缓存一致性测试</text>
+  </g>
+
+  <text x="60" y="536" font-size="12" fill="#767676">口径：a 轴为公开/授权节奏序位（间距示意非等距日历）；六件明细见正文与 References。已授权 1 件、公开申请 5 件，申请人六家互不重叠。</text>
+  <text x="60" y="562" font-size="12" fill="#767676">检索通道 Google Patents（经代理），逐件详情页核验于 2026-10-31；b 面板「空位」为检索未见对应主题专利，非法律意见。</text>
+</svg>

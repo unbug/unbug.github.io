@@ -1,13 +1,13 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "n": 20,
-    "slug": "paradigm-radar-agent-hidden-cost",
+    "n": 21,
+    "slug": "paradigm-radar-toolchain-poisoning",
     "date": "2026-10-30",
-    "title": "标价之外，Harness 替你买了什么",
-    "weighted": 4.23
+    "title": "官方渠道沦陷之后",
+    "weighted": 4.57
   },
-  "totalPublished": 20,
+  "totalPublished": 21,
   "nextScheduled": "2026-11-02",
   "candidateTopics": [
     {
