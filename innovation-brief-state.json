@@ -155,8 +155,8 @@
       ]
     }
   ],
-  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-agentic-payment-patents/",
-  "lastPublishedVerifiedAt": "2026-10-30 10:3x GMT+8 构建 188ee1b 完成后核验 200（本轮构建排队超 10 分钟，耐心轮询通过）",
+  "lastPublishedUrl": "https://unbug.github.io/innovation-brief-kv-cache-serving-patents/",
+  "lastPublishedVerifiedAt": "2026-10-31 13:1x GMT+8 六链轮询 poll18 全 200（构建排队约 14 分钟）",
   "verification": {
     "brief4": {
       "url": "https://unbug.github.io/innovation-brief-prd-gen-patents/",
@@ -193,6 +193,12 @@
       "http": 200,
       "verifiedAt": "2026-10-30 10:33 GMT+8",
       "note": "构建 in_progress 超 10 分钟后 success；正文关键词与 SVG 均 200"
+    },
+    "brief26": {
+      "url": "https://unbug.github.io/innovation-brief-kv-cache-serving-patents/",
+      "http": 200,
+      "verifiedAt": "2026-10-31 13:1x GMT+8",
+      "note": "六件专利 CEO 经 r.jina.ai 逐字亲验；CN122019408B 为授权件；火山 claim 引英文原文+中译"
     }
   },
   "lastNoTopicRound": {
