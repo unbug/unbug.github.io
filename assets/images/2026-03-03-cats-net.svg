@@ -2,27 +2,27 @@
   <rect width="1200" height="675" fill="#FFFFFF"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">双模块网络从感官运动经验压缩抽象概念，激活模式与人类 fMRI 概念处理高度相关，并支持智能体间概念交流</text>
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">双模块网络把感官体验压缩成抽象概念：激活模式与人类大脑 fMRI 数据高度相关，两个智能体可直接进行概念层面的交流</text>
 
-  <!-- ============ panel a: architecture flow ============ -->
+  <!-- ============ panel a ============ -->
   <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">CATS Net 双模块流程（定性示意，正文未给出模块数值）</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">CATS Net 双模块流程（定性示意）</text>
 
   <rect x="80" y="150" width="200" height="64" fill="none" stroke="#1A1B1E" stroke-width="1.5"/>
-  <text x="180" y="177" font-size="12.5" fill="#1A1B1E" text-anchor="middle">感官-运动经验</text>
-  <text x="180" y="197" font-size="12" fill="#555" text-anchor="middle">具体输入与运动经验</text>
+  <text x="180" y="177" font-size="12.5" fill="#1A1B1E" text-anchor="middle">感官运动经验</text>
+  <text x="180" y="197" font-size="12" fill="#555" text-anchor="middle">具体的感官输入</text>
 
   <rect x="370" y="150" width="220" height="64" fill="none" stroke="#0072B2" stroke-width="1.5"/>
   <text x="480" y="177" font-size="12.5" fill="#1A1B1E" text-anchor="middle">模块 1：感官-运动编码器</text>
-  <text x="480" y="197" font-size="12" fill="#555" text-anchor="middle">类视觉、听觉、触觉系统</text>
+  <text x="480" y="197" font-size="12" fill="#555" text-anchor="middle">处理具体的感官输入</text>
 
   <rect x="680" y="150" width="220" height="64" fill="none" stroke="#D55E00" stroke-width="1.5"/>
   <text x="790" y="177" font-size="12.5" fill="#1A1B1E" text-anchor="middle">模块 2：概念压缩器</text>
-  <text x="790" y="197" font-size="12" fill="#555" text-anchor="middle">压缩抽象概念表示</text>
+  <text x="790" y="197" font-size="12" fill="#555" text-anchor="middle">压缩成概念表示</text>
 
   <rect x="1000" y="150" width="140" height="64" fill="none" stroke="#009E73" stroke-width="1.5"/>
   <text x="1070" y="177" font-size="12.5" fill="#1A1B1E" text-anchor="middle">抽象概念</text>
-  <text x="1070" y="197" font-size="12" fill="#555" text-anchor="middle">用于理解与迁移</text>
+  <text x="1070" y="197" font-size="12" fill="#555" text-anchor="middle">迁移到新的任务</text>
 
   <g stroke="#999999" stroke-width="1.5">
     <line x1="280" y1="182" x2="360" y2="182"/>
@@ -35,30 +35,31 @@
     <polygon points="990,177 1000,182 990,187"/>
   </g>
 
-  <text x="80" y="260" font-size="12" fill="#555">类比：儿童学「球」——感官体验 → 抽象压缩 → 识别新球与讨论概念</text>
+  <text x="80" y="256" font-size="12" fill="#555">类比：小孩子学习「球」的过程——感官体验、抽象压缩、理解运用</text>
 
-  <!-- ============ panel b: findings list ============ -->
+  <!-- ============ panel b ============ -->
   <text x="60" y="330" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="82" y="330" font-size="15" fill="#1A1B1E">正文报告的三项发现（定性结论，未给出数值指标）</text>
+  <text x="82" y="330" font-size="15" fill="#1A1B1E">论文报告的主要发现</text>
   <g font-size="12.5" fill="#555">
     <circle cx="86" cy="362" r="5" fill="#0072B2"/>
-    <text x="102" y="366">大脑对齐：激活模式与人类 fMRI 概念处理模式高度相关</text>
+    <text x="102" y="366">与人类大脑活动对齐：激活模式与人类 fMRI 数据中观察到的概念处理模式高度相关</text>
     <circle cx="86" cy="394" r="5" fill="#D55E00"/>
-    <text x="102" y="398">概念交流：两个智能体不用人类语言，直接进行概念层面交流</text>
+    <text x="102" y="398">AI 之间的概念交流：两个智能体可以不用人类语言，直接进行概念层面的交流</text>
     <circle cx="86" cy="426" r="5" fill="#009E73"/>
-    <text x="102" y="430">知识迁移：学到的概念可迁移到新任务</text>
+    <text x="102" y="430">知识迁移能力：学到的概念可以迁移到新的任务上</text>
   </g>
 
-  <!-- ============ panel c: evidence status ============ -->
+  <!-- ============ panel c ============ -->
   <text x="60" y="492" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
   <text x="82" y="492" font-size="15" fill="#1A1B1E">口径说明</text>
   <g font-size="12" fill="#555">
-    <text x="60" y="522">正文以定性描述报告结果，未披露对齐相关系数、交流成功率等数值</text>
-    <text x="60" y="544">故本图不绘制数值坐标与误差棒，仅呈现机制流程与发现清单</text>
-    <circle cx="66" cy="568" r="5" fill="#999999"/>
-    <text x="80" y="572">灰色为口径标注，非数据元素</text>
+    <text x="60" y="522">与人类大脑活动对齐：激活模式与人类 fMRI 数据中观察到的概念处理模式高度相关</text>
+    <text x="60" y="544">知识迁移能力：学到的概念可以迁移到新的任务上</text>
+    <text x="60" y="566">正文未给出相关系数等数值，本图不绘制数值坐标与误差棒</text>
+    <circle cx="66" cy="590" r="5" fill="#999999"/>
+    <text x="80" y="594">灰色圆点为口径标注，不是数据元素</text>
   </g>
 
   <!-- footnote -->
-  <text x="60" y="640" font-size="11" fill="#767676">数据：Nature Computational Science（DOI: 10.1038/s43588-026-00968-0，2026 年发表）· 论文自测口径 · DEGRADED：正文未给出可作图的数值指标，改为机制示意与发现清单</text>
+  <text x="60" y="644" font-size="11" fill="#767676">数据：Nature Computational Science，2026（https://www.nature.com/articles/s43588-026-00968-0）· 论文自测口径 · DEGRADED：正文以定性描述报告结果，未给出可作图的数值，改为机制示意与发现清单</text>
 </svg>

@@ -5,7 +5,7 @@ author: unbug
 categories: [AI]
 image: assets/images/2026-03-01-rwml-world-model.svg
 tags: [AI, Paper Review, Reinforcement Learning, World Models, LLM, AI Agents]
-description: "微软研究院与哥伦比亚大学提出 RWML，用强化学习和嵌入空间相似度自我监督地训练 LLM 智能体的世界模型，ALFWorld 成功率从 13% 提升至 87.9%，且比监督微调遗忘更少。"
+description: "微软研究院与哥伦比亚大学提出 RWML，用强化学习和嵌入空间相似度自我监督地训练 LLM 智能体的世界模型，无需人工标注，ALFWorld 成功率从 13% 提升至 87.9%，且比监督微调遗忘更少。"
 ---
 
 微软研究院与哥伦比亚大学等机构的论文[《Reinforcement World Model Learning》][paper1-url]（arXiv:2602.05842）提出 RWML，一种完全自我监督的世界模型训练方法，让 LLM 智能体学会预测行动后果，在 ALFWorld 基准上把成功率从 `13.0%` 提升到 `87.9%`。

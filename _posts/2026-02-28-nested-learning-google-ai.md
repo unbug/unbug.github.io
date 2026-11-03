@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, Machine Learning]
 image: assets/images/arxiv-paper-nested-learning.svg
 tags: [Nested Learning, Google Research, NeurIPS 2025]
-description: "Google Research 的 NeurIPS 2025 论文把神经网络重解为嵌套优化问题，概念验证架构 HOPE 在推理和长上下文任务上优于传统基线。"
+description: "Google Research 的 NeurIPS 2025 论文把深度网络重解为多层嵌套的优化问题，架构与优化算法被视为同一系统的两个方面，概念验证架构 HOPE 在推理和长上下文任务上优于传统基线。"
 ---
 
 ![Google Nested Learning](assets/images/2026-03-01-nested-learning-google-ai-breakthrough.svg)

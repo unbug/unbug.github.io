@@ -3,8 +3,9 @@ layout: post
 title:  "一分钟读论文：《让AI像程序员一样理解整个代码库》"
 author: unbug
 categories: [AI, Engineering]
+image: assets/images/cgm-code-graph-model.svg
 tags: [Code Generation, NeurIPS 2025, Code Understanding, Open Source Models]
-description: "蚂蚁集团在 NeurIPS 2025 提出代码图模型，把代码库建模为文件、函数、类构成的调用关系图，在 SWE-bench Lite 取得 43.00% 解决率位列开源权重模型第一，为仓库级软件工程任务提供不依赖闭源模型与复杂智能体系统的开源方案。"
+description: "蚂蚁集团在NeurIPS 2025提出Code Graph Model，把代码库建模为文件、函数、类构成的调用关系图并融入注意力机制，SWE-bench Lite解决率达43.00%，位列开源权重模型第一名，代码模型数据全部开源。"
 ---
 
 蚂蚁集团研究团队在 NeurIPS 2025 发表的论文[《Code Graph Model》][paper1-url]提出 CGM，把整个代码库建模为文件、函数、类构成的调用关系图并融入模型注意力机制，在 SWE-bench Lite 上取得 `43.00%` 解决率，位列开源权重模型第 `1` 名。理解问题、找到相关文件、梳理函数调用关系、修改代码，这类仓库级软件工程任务由此有了不依赖闭源模型和复杂 Agent 系统的开源方案。

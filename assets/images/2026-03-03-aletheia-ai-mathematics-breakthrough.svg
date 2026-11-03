@@ -1,116 +1,118 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
-  <defs>
-    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0f172a"/>
-      <stop offset="50%" style="stop-color:#1e293b"/>
-      <stop offset="100%" style="stop-color:#0f172a"/>
-    </linearGradient>
-    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#3b82f6"/>
-      <stop offset="50%" style="stop-color:#8b5cf6"/>
-      <stop offset="100%" style="stop-color:#ec4899"/>
-    </linearGradient>
-    <linearGradient id="mathGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#10b981"/>
-      <stop offset="100%" style="stop-color:#06b6d4"/>
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <filter id="softGlow">
-      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">Aletheia 在 FirstProof 的 10 个研究级难题中自主解决 6 个；找不到证明时按设计如实报告未找到解决方案</text>
 
-  <g opacity="0.3">
-    <g transform="translate(100, 100)">
-      <text x="0" y="0" fill="#3b82f6" font-family="Georgia, serif" font-size="32">∑</text>
-      <text x="80" y="0" fill="#8b5cf6" font-family="Georgia, serif" font-size="28">∞</text>
-      <text x="150" y="0" fill="#ec4899" font-family="Georgia, serif" font-size="24">∫</text>
-      <text x="220" y="0" fill="#10b981" font-family="Georgia, serif" font-size="30">π</text>
-    </g>
-    <g transform="translate(800, 80)">
-      <text x="0" y="0" fill="#06b6d4" font-family="Georgia, serif" font-size="26">∂</text>
-      <text x="60" y="0" fill="#3b82f6" font-family="Georgia, serif" font-size="34">√</text>
-      <text x="130" y="0" fill="#8b5cf6" font-family="Georgia, serif" font-size="28">⊂</text>
-    </g>
-    <g transform="translate(150, 500)">
-      <text x="0" y="0" fill="#ec4899" font-family="Georgia, serif" font-size="30">∇</text>
-      <text x="70" y="0" fill="#10b981" font-family="Georgia, serif" font-size="26">∈</text>
-      <text x="140" y="0" fill="#06b6d4" font-family="Georgia, serif" font-size="32">Δ</text>
-    </g>
-    <g transform="translate(900, 480)">
-      <text x="0" y="0" fill="#3b82f6" font-family="Georgia, serif" font-size="28">λ</text>
-      <text x="60" y="0" fill="#8b5cf6" font-family="Georgia, serif" font-size="30">θ</text>
-      <text x="120" y="0" fill="#ec4899" font-family="Georgia, serif" font-size="26">Σ</text>
-    </g>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">10 个问题解答状态（按 P1-P10 编号序列排列，序列位置轴；朱色实心=解决，空心=未解决）</text>
+
+  <!-- legend -->
+  <g font-size="12" fill="#555">
+    <circle cx="820" cy="100" r="5" fill="#D55E00"/>
+    <text x="832" y="104">已解决（6 个）</text>
+    <circle cx="960" cy="100" r="5" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <text x="972" y="104">未解决（4 个）</text>
   </g>
 
-  <g transform="translate(600, 315)">
-    <circle cx="0" cy="0" r="200" fill="none" stroke="url(#accentGradient)" stroke-width="2" opacity="0.3"/>
-    <circle cx="0" cy="0" r="170" fill="none" stroke="url(#mathGradient)" stroke-width="2" opacity="0.4"/>
-    <circle cx="0" cy="0" r="140" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.5"/>
-
-    <g filter="url(#glow)">
-      <circle cx="0" cy="0" r="100" fill="#1e293b" stroke="url(#accentGradient)" stroke-width="4"/>
-    </g>
-
-    <g transform="translate(0, -20)">
-      <text x="0" y="0" text-anchor="middle" fill="url(#accentGradient)" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="bold">AI</text>
-      <text x="0" y="50" text-anchor="middle" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="16">数学研究</text>
-    </g>
+  <!-- axis -->
+  <line x1="90" y1="300" x2="1080" y2="300" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="145" y1="300" x2="145" y2="305"/>
+    <line x1="255" y1="300" x2="255" y2="305"/>
+    <line x1="365" y1="300" x2="365" y2="305"/>
+    <line x1="475" y1="300" x2="475" y2="305"/>
+    <line x1="585" y1="300" x2="585" y2="305"/>
+    <line x1="695" y1="300" x2="695" y2="305"/>
+    <line x1="805" y1="300" x2="805" y2="305"/>
+    <line x1="915" y1="300" x2="915" y2="305"/>
+    <line x1="1025" y1="300" x2="1025" y2="305"/>
+    <line x1="1135" y1="300" x2="1135" y2="305"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="145" y="325">P1</text>
+    <text x="255" y="325">P2</text>
+    <text x="365" y="325">P3</text>
+    <text x="475" y="325">P4</text>
+    <text x="585" y="325">P5</text>
+    <text x="695" y="325">P6</text>
+    <text x="805" y="325">P7</text>
+    <text x="915" y="325">P8</text>
+    <text x="1025" y="325">P9</text>
+    <text x="1135" y="325">P10</text>
   </g>
 
-  <g transform="translate(150, 315)">
-    <rect x="-60" y="-50" width="120" height="100" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
-    <text x="0" y="-10" text-anchor="middle" fill="#60a5fa" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600">生成器</text>
-    <text x="0" y="25" text-anchor="middle" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12">Generator</text>
+  <!-- markers -->
+  <g>
+    <circle cx="145" cy="270" r="7" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <circle cx="255" cy="270" r="7" fill="#D55E00"/>
+    <circle cx="365" cy="270" r="7" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <circle cx="475" cy="270" r="7" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <circle cx="585" cy="270" r="7" fill="#D55E00"/>
+    <circle cx="695" cy="270" r="7" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <circle cx="805" cy="270" r="7" fill="#D55E00"/>
+    <circle cx="915" cy="270" r="7" fill="#D55E00"/>
+    <circle cx="1025" cy="270" r="7" fill="#D55E00"/>
+    <circle cx="1135" cy="270" r="7" fill="#D55E00"/>
   </g>
 
-  <g transform="translate(1050, 315)">
-    <rect x="-60" y="-50" width="120" height="100" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
-    <text x="0" y="-10" text-anchor="middle" fill="#34d399" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600">验证器</text>
-    <text x="0" y="25" text-anchor="middle" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12">Verifier</text>
+  <!-- expert annotations above solved -->
+  <g font-size="12" fill="#555" text-anchor="middle">
+    <text x="145" y="228">两配置均无输出</text>
+    <text x="255" y="228">4/4 专家认定正确</text>
+    <text x="365" y="228">两配置均无输出</text>
+    <text x="475" y="228">两配置均无输出</text>
+    <text x="585" y="210">A 正确解决</text>
+    <text x="585" y="228">B 误解题目</text>
+    <text x="695" y="228">两配置均无输出</text>
+    <text x="805" y="210">B 解决</text>
+    <text x="805" y="228">3/3 专家认定正确</text>
+    <text x="915" y="192">3 位辛几何专家与 2 位</text>
+    <text x="915" y="210">相邻领域数学家认为正确，</text>
+    <text x="915" y="228">2 位认为不够完整</text>
+    <text x="1025" y="228">4/4 专家认定正确</text>
+    <text x="1135" y="210">2/2 专家认定正确</text>
+    <text x="1135" y="228">A 自主发现最优理论复杂度界</text>
   </g>
 
-  <g opacity="0.6">
-    <line x1="210" y1="315" x2="400" y2="315" stroke="#3b82f6" stroke-width="2" stroke-dasharray="8,4">
-      <animateTransform attributeName="transform" type="translate" values="0,0; -12,0; 0,0" dur="2s" repeatCount="indefinite"/>
-    </line>
-    <line x1="800" y1="315" x2="990" y2="315" stroke="#10b981" stroke-width="2" stroke-dasharray="8,4">
-      <animateTransform attributeName="transform" type="translate" values="0,0; 12,0; 0,0" dur="2s" repeatCount="indefinite"/>
-    </line>
+  <!-- ============ panel b ============ -->
+  <text x="60" y="404" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="404" font-size="15" fill="#1A1B1E">成绩与边界（论文自测口径）</text>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="66" y1="422" x2="66" y2="524"/>
+  </g>
+  <g font-size="13" fill="#1A1B1E">
+    <text x="82" y="438">6 个</text>
+    <text x="82" y="474">10 个</text>
+    <text x="82" y="510">4 个</text>
+  </g>
+  <g font-size="12" fill="#555">
+    <text x="160" y="438">配置 A 与 B 合计解决的问题数；</text>
+    <text x="160" y="456">P7 推理成本比其他问题高出一个数量级</text>
+    <text x="160" y="474">FirstProof 引理总数，覆盖代数数论、</text>
+    <text x="160" y="492">等变稳定同伦论、几何拓扑、辛几何、张量分解、数值线性代数</text>
+    <text x="160" y="510">未解决问题（P1、P3、P4、P6），两配置均无输出，</text>
+    <text x="160" y="528">系统按设计如实报告</text>
+  </g>
+  <text x="60" y="560" font-size="12" fill="#555">P10 上 Aletheia A 的方案优于官方人类作者的解决方案；</text>
+  <text x="60" y="582" font-size="12" fill="#555">规则：AI 必须完全自主产生证明，不接受任何人类提供的数学思想或内容输入</text>
+
+  <!-- ============ panel c ============ -->
+  <text x="700" y="404" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="722" y="404" font-size="15" fill="#1A1B1E">架构与定位</text>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="706" y1="422" x2="706" y2="558"/>
+  </g>
+  <g font-size="12" fill="#555">
+    <text x="722" y="438">基于 Gemini 3 Deep Think 构建</text>
+    <text x="722" y="466">生成器子 Agent 产生候选证明，</text>
+    <text x="722" y="484">验证器子 Agent 严格检查正确性</text>
+    <text x="722" y="512">设计原则：可靠性优先，</text>
+    <text x="722" y="530">宁可牺牲原始解题能力换取更高准确性</text>
+    <text x="722" y="558">定位：数学家的研究伙伴而非替代品</text>
   </g>
 
-  <g transform="translate(600, 85)">
-    <g filter="url(#softGlow)">
-      <rect x="-200" y="-35" width="400" height="70" rx="35" fill="#1e293b" stroke="url(#accentGradient)" stroke-width="3"/>
-    </g>
-    <text x="0" y="8" text-anchor="middle" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="bold">6 / 10</text>
-    <text x="0" y="8" text-anchor="middle" fill="none" stroke="url(#accentGradient)" stroke-width="1" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="bold"/>
-  </g>
-
-  <g transform="translate(600, 560)">
-    <text x="0" y="0" text-anchor="middle" fill="#e2e8f0" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="600">Aletheia · FirstProof</text>
-    <text x="0" y="40" text-anchor="middle" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="16">Google DeepMind · 2026</text>
-  </g>
-
-  <g fill="#1e293b" opacity="0.8">
-    <circle cx="100" cy="150" r="3"/>
-    <circle cx="1100" cy="200" r="2"/>
-    <circle cx="200" cy="500" r="2.5"/>
-    <circle cx="1000" cy="450" r="3"/>
-    <circle cx="50" cy="350" r="2"/>
-    <circle cx="1150" cy="100" r="2.5"/>
-  </g>
+  <!-- footnote -->
+  <text x="60" y="652" font-size="11" fill="#767676">数据：arXiv:2602.21201《Aletheia tackles FirstProof autonomously》（Google DeepMind，论文自测口径）· a 面板为 P1-P10 序列位置轴，非数值刻度 · 专家认定比例为正文报告值 · 预印本未经同行评审</text>
 </svg>

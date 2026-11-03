@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, LLM]
 image: assets/images/when-many-shot-prompting-fails.svg
 tags: [LLM, Prompting, CodeTranslation]
-description: "ICSE 2026 ReCode Workshop 论文通过 90000 多次代码翻译实验发现 Many-Shot 悖论：静态相似度随示例增多仅小幅提升，功能正确率却在 5-25 个示例时达峰，更多示例反而损害翻译正确性。"
+description: "ICSE 2026 ReCode Workshop 论文通过 90000 多次代码翻译实验发现 Many-Shot 悖论：静态相似度随示例增多仅小幅提升，功能正确率却在 5-25 个示例时达峰，建议精选代表性示例而非塞满上下文窗口。"
 ---
 
 Amir Kiarafiei 等人的论文[《When Many-Shot Prompting Fails: An Empirical Study of LLM Code Translation》][paper1-url]（已被 ICSE 2026 ReCode Workshop 接收）通过 `90000` 多次翻译实验揭示 Many-Shot 悖论：在代码翻译这类语义复杂任务中，**更多示例不等于更好结果**，功能正确率在 `5-25` 个 Few-Shot 示例时达到峰值，示例更多反而下降。

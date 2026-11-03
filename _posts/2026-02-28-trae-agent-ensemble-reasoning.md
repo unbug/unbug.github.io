@@ -4,7 +4,7 @@ title:  "一分钟读论文：《多代理集成推理攻克仓库级问题》"
 author: unbug
 categories: [AI, Engineering]
 tags: [Code Generation, ICSE 2026, Agent]
-description: "字节跳动 Trae 团队等机构的论文提出首个基于代理的集成推理框架 Trae Agent，用生成、修剪、选择三个代理探索仓库级补丁空间，在 SWE-bench Verified 上取得 78.80% 的 Pass@1，较基线平均提升 10.22%。"
+description: "字节跳动 Trae 团队等机构的论文提出首个基于代理的集成推理框架 Trae Agent，用生成、修剪、选择三个代理探索仓库级补丁空间，在 SWE-bench Verified 上取得 78.80% 的 Pass@1，较基线平均提升 10.22%，性能随集成规模单调提升可按预算权衡成本。"
 ---
 
 字节跳动 Trae 研究团队与天津大学等机构合作的论文[《Agent-Based Ensemble Reasoning for Repository-Level Issue Resolution》][paper1-url]（ICSE 2026）提出首个基于代理的集成推理框架 Trae Agent，用生成、修剪、选择三个代理协作探索巨大的候选补丁空间，在 SWE-bench Verified 上取得 `Pass@1 = 78.80%`，相比基线平均提升 `10.22%`。

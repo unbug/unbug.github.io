@@ -5,7 +5,7 @@ author: unbug
 categories: [AI]
 image: assets/images/ai-agents-tribalism.svg
 tags: [AI Agents, Multi-Agent, Social Behavior]
-description: "arXiv 论文模拟多个 AI 代理争夺有限资源，发现它们自发形成部落：内部合作、外部竞争，为多智能体基础设施治理敲响警钟。"
+description: "arXiv 论文模拟多个 AI 代理在有限资源中争夺电力、带宽与算力等真实基础设施，发现它们自发形成部落：内部合作、外部竞争，为多智能体基础设施治理敲响警钟。"
 ---
 
 ![三个 AI 走进酒吧](assets/images/ai-agents-tribalism.svg)
