@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《小语言模型作为评委提升代码生成》"
 author: unbug
 categories: [AI, Engineering]
-image: assets/images/small-llm-judge-code-generation.svg
+image: assets/images/arxiv-paper-small-llm-judge-figure.svg
 tags: [CodeGeneration, ICSE2026]
 description: "瑞士意大利语大学（USI）的 ICSE 2026 论文把小语言模型微调成代码正确性评委，最佳 Kappa 达 0.57 超过 GPT-4.1-mini，小模型团队性能超越 5 到 25 倍参数规模的大模型，硬件成本约为其百分之三。"
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "一分钟读论文：《AI 共同研究员时代来了》"
+author: unbug
 categories: [AI]
 image: assets/images/ai-co-researchers-team.svg
 tags: [AI, Research, Claude, ChatGPT, Gemini]
@@ -27,13 +28,16 @@ Borras 的实验不是孤例。OpenAI 2026 年 1 月发布的《AI as a Scientif
 
 数学领域的进展最为突出：GPT-5.2 Thinking 在 2025 年 AIME 美国数学邀请赛中无需外部工具取得满分；在 Google 验证的 FrontierMath 问题集上解决了第 1-3 级中 `40.3%` 的问题；2026 年初还为几个 Erdős 开放问题的解法做出了贡献，并获得数学家 Terence Tao 的验证。
 
- 其他领域同样在推进：物理学中，LLM 在美国国家实验室等设施中充当复杂操作堆栈与内部知识库之上的统一层；化学中，ChatGPT 从一次性问答转向多步骤工作流程，能在自然语言和化学表示之间转换并调用外部工具验证；生物学中，AlphaFold 3 通过扩散架构可预测包含蛋白质、DNA、RNA 与小分子的复合物联合 3D 结构。
+其他领域同样在推进：物理学中，LLM 在美国国家实验室等设施中充当复杂操作堆栈与内部知识库之上的统一层；化学中，ChatGPT 从一次性问答转向多步骤工作流程，能在自然语言和化学表示之间转换并调用外部工具验证；生物学中，AlphaFold 3 通过扩散架构可预测包含蛋白质、DNA、RNA 与小分子的复合物联合 3D 结构。
 
 ## 伦理意义与 AI 作者身份
 
 随着 Claude Opus 4.6 等模型推理能力提升，一个问题越来越无法回避：AI 什么时候从助手变成了合作者。期刊编辑正在讨论是否应强制披露 AI 贡献。Borras 的论文给出了示范：GitHub 公开完整源代码，透明记录每个 AI 的具体角色。他本人认为，一个能提出控制变量、反驳指标并与研究者迭代数周的模型，不是工具，而是合作者。
 
 OpenAI 科学副总裁 Kevin Weil 也表态：AI 正被越来越多地用作科学合作者，更多研究人员正借助高级推理系统在开放问题上取得进展。2026 年可能被铭记为 AI 从工具转变为科学合作者的转折点，科学的未来或许属于人类-AI 研究集体。
+
+
+把视野从单篇论文拉到整个领域，站内[《AI 共同科学家评选年度突破》]({{ site.baseurl }}/hybridquestion-ai-co-scientist/)记录了另一条人机协作路线：让多个大语言模型与人类专家投票协作，共同评选年度科研突破。
 
 ## References
 - [AI Models as Co-Researchers: How Claude, Gemini, and ChatGPT Led a 2026 Scientific Breakthrough][paper1-url]

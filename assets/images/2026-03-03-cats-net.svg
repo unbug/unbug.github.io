@@ -2,7 +2,7 @@
   <rect width="1200" height="675" fill="#FFFFFF"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">双模块网络从感官运动经验压缩出抽象概念，激活模式与人类 fMRI 概念处理高度相关，并支持智能体间概念交流</text>
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">双模块网络从感官运动经验压缩抽象概念，激活模式与人类 fMRI 概念处理高度相关，并支持智能体间概念交流</text>
 
   <!-- ============ panel a: architecture flow ============ -->
   <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>

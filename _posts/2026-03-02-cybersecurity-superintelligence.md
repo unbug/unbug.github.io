@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "一分钟读论文：《网络安全超智能来了》"
+author: unbug
 categories: [AI, Security]
 image: assets/images/cybersecurity-superintelligence-evolution.svg
 tags: [Cybersecurity, AI, Agent, GameTheory]
@@ -19,7 +20,7 @@ Alias Robotics 2026 年 2 月发表的论文[《Towards Cybersecurity Superintel
 
 **G-CTR（2026）**：Generative Cut-the-Rope，引入博弈论战略推理。三项核心创新：从安全日志生成攻击图、用 Cut-the-Rope 算法计算纳什均衡、把策略结果转为自然语言注入。效果：成功率从 20.0% 提升至 `42.9%`，单次成功成本从 0.32 美元降至 `0.12 美元`，方差降低 5.2 倍，攻防对抗中对纯 LLM 基线取得 2:1 优势。
 
- ## 角色反转与行业影响
+## 角色反转与行业影响
 
 演进各阶段中，人类从执行者（AI 辅助）到操作者（专家级 AI）再到监督者（博弈论 AI），AI 则从顾问变为战略行动者。论文据此指出四个行业影响：
 
@@ -33,6 +34,9 @@ Alias Robotics 2026 年 2 月发表的论文[《Towards Cybersecurity Superintel
 ## 尚未解决的问题
 
 论文列出三项挑战：经济成本——最先进 LLM 每十亿 token 仍需 5,940 美元；持续学习——AI 进步仍依赖人类持续供给知识和数据；真正自治——现实事件响应中尚不能完全委派决策。论文的立场是，在 AI 已被民族国家武器化的背景下，通过开源框架让防御能力民主化不是选择而是必须，任务是负责任地引导这一转变用于加强防御。
+
+
+三个里程碑中最具争议的是 CAI 的竞赛战绩本身，站内[《AI 网络安全特工征服 CTF》]({{ site.baseurl }}/cybersecurity-ai-ctf-dominance/)详细记录了它在五大国际 CTF 中的表现，以及论文对 CTF 范式过时的论证。
 
 ## References
 - [Towards Cybersecurity Superintelligence][paper1-url]

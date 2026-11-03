@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《Copilot 代码生成稳健吗》"
 author: unbug
 categories: [AI, Engineering]
-image: assets/images/On-the-Robustness-of-Code-Generation-Techniques.svg
+image: assets/images/arxiv-paper-github-copilot-robustness.svg
 tags: [CodeGeneration, AI]
 description: "瑞士意大利语大学（USI）与莫利塞大学的实证研究发现，仅改写需求描述措辞，GitHub Copilot 在约 46% 的情况下生成完全不同的代码，约 28% 的情况下正确性随之改变，测试通过率仅约 13%。"
 ---

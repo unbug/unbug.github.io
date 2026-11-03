@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "一分钟读论文：《2700 万参数的小模型超越大模型》"
+author: unbug
 categories: [AI]
 image: assets/images/hrm-architecture.svg
 tags: [AI, Deep Learning, Architecture, Reasoning, HRM]
@@ -29,11 +30,14 @@ HRM 的灵感来自大脑的双系统结构——负责慢速抽象规划的部�
 
 且该成绩没有大规模预训练支撑。效率方面：专业级数独训练仅需 `2 个 GPU 小时`，ARC-AGI 训练需 50-200 GPU 小时；潜空间并行处理相比 CoT 逐词生成可能带来约 `100 倍`推理提速。
 
- ## 适用场景与后续方向
+## 适用场景与后续方向
 
 HRM 的意义在于提供了一个"结构化架构优于单纯堆参数"的证据。其适用场景集中在三类：科学探索、专业诊断等数据稀缺领域；具身 AI、机器人等延迟敏感领域；物流优化、复杂系统诊断等需要确定性推理的任务。对企业而言，专用小型推理引擎的成本远低于调用大型 API 模型。
 
 Sapient Intelligence 正把 HRM 从专用求解器推向通用推理模块，其脑启发模型已在医疗、气候预测和机器人领域展开应用。论文指向的更远方向是具备自我修正能力的推理系统——对当前大模型难以处理的搜索密集型问题，答案可能不是更大的模型，而是更贴近大脑的分层结构。
+
+
+HRM 把推理搬进潜空间、甩开对海量数据的依赖，这与站内[《DeepSeek-R1 的纯强化学习之路》]({{ site.baseurl }}/deepseek-r1-reinforcement-learning-reasoning/)形成互补：后者证明不靠人工标注、仅靠强化学习也能激发推理能力。
 
 ## References
 - [Hierarchical Reasoning Model: A Brain-Inspired Architecture for Latent Reasoning][paper1-url]

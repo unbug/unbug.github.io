@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "一分钟读论文：《DeepSeek-R1 的纯强化学习之路》"
+author: unbug
 categories: [AI]
 image: assets/images/deepseek-r1-concept.svg
 tags: [DeepSeek, Reinforcement Learning, Reasoning, LLM]
@@ -19,7 +20,7 @@ DeepSeek 团队 2025 年 1 月的论文[《DeepSeek-R1: Incentivizing Reasoning 
 
 R1-Zero 也存在可读性差、中英混用、重复输出等问题。最终版 **DeepSeek-R1** 采用多阶段训练框架：先用数千个示例做冷启动数据，再经两阶段强化学习——第一阶段发现更好的推理模式，第二阶段与人类偏好（有用性、无害性）对齐，中间结合拒绝采样与监督微调。
 
- ## 实验结果与开源贡献
+## 实验结果与开源贡献
 
 DeepSeek-R1 在数学推理基准上与 OpenAI o1-1217 性能相当，代码生成与复杂逻辑推理同样表现出色。研究团队还开源了从 `1.5B` 到 `70B` 的蒸馏版本，基于 Qwen 和 Llama 架构，小模型也能获得出色推理性能，普通硬件即可运行顶尖推理能力。
 
@@ -28,6 +29,9 @@ DeepSeek-R1 在数学推理基准上与 OpenAI o1-1217 性能相当，代码生�
 ## 局限与研究方向
 
 论文指出的局限包括：大规模强化学习计算资源需求高；目前主要聚焦答案可验证的任务；推理过程仍不够透明。未来方向是扩展到更多任务类型、提升可解释性、优化计算效率和探索更复杂的奖励机制。论文的结论是：释放推理潜力的关键不在大规模人工标注，而在提供困难的推理问题、可靠的验证器和足够的强化学习计算资源——这推动 AI 研究从"人类示范"范式转向"环境反馈"范式。
+
+
+如果说不依赖人工标注的强化学习是激发推理能力的一条路，站内[《2700 万参数的小模型超越大模型》]({{ site.baseurl }}/hrm-hierarchical-reasoning-machine-breakthrough/)则从架构层面给出另一条路：用分层结构替代思维链完成推理。
 
 ## References
 - [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning][paper1-url]
