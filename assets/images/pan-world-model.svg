@@ -16,7 +16,7 @@
 
   <!-- input -->
   <text x="95" y="255" font-size="12.5" fill="#1A1B1E" text-anchor="middle">高分辨率视频流</text>
-  <text x="95" y="273" font-size="12" fill="#555" text-anchor="middle">自然语言指挥</text>
+  <text x="95" y="273" font-size="12" fill="#555" text-anchor="middle">自然语言就能指挥</text>
 
   <!-- boxes -->
   <rect x="150" y="215" width="230" height="80" fill="none" stroke="#0072B2" stroke-width="1.5"/>
@@ -67,7 +67,7 @@
 
     <circle cx="460" cy="505" r="8" fill="#0072B2"/>
     <text x="460" y="483" font-size="12.5" fill="#1A1B1E" text-anchor="middle">自然语言交互</text>
-    <text x="460" y="531" font-size="12" fill="#555" text-anchor="middle">自然语言指挥模拟</text>
+    <text x="460" y="531" font-size="12" fill="#555" text-anchor="middle">自然语言就能指挥它模拟</text>
 
     <circle cx="720" cy="505" r="8" fill="#D55E00"/>
     <text x="720" y="483" font-size="12.5" fill="#1A1B1E" text-anchor="middle">分支模拟</text>
@@ -75,7 +75,7 @@
 
     <circle cx="980" cy="505" r="8" fill="#0072B2"/>
     <text x="980" y="483" font-size="12.5" fill="#1A1B1E" text-anchor="middle">长时程一致性</text>
-    <text x="980" y="531" font-size="12" fill="#555" text-anchor="middle">世界状态连贯，不会「失忆」</text>
+    <text x="980" y="531" font-size="12" fill="#555" text-anchor="middle">世界状态稳定，不会失忆</text>
   </g>
   <line x1="120" y1="505" x2="1080" y2="505" stroke="#1A1B1E" stroke-width="0.75"/>
   <g stroke="#1A1B1E" stroke-width="0.75">

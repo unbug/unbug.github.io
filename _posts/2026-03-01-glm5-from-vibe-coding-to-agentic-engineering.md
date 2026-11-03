@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《GLM-5 迈向智能体工程》"
 author: unbug
 categories: [AI]
-image: assets/images/glm5-illustration.png
+image: assets/images/glm5-from-vibe-coding-to-agentic-engineering.svg
 tags: [GLM-5, GLM, LLM, AI Agents, Reinforcement Learning]
 description: "智谱 AI 与清华大学联合发布 GLM-5 基础模型：总参数 744B，用异步强化学习训练，在 8 项智能体与编码基准上比肩顶级专有模型，成为首个在 Artificial Analysis 智能指数达到 50 分的开源权重模型。"
 ---
