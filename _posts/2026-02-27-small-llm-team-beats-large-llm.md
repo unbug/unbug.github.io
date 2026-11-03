@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《小模型团队如何超越大模型》"
 author: unbug
 categories: [AI, Engineering]
-image: assets/images/arxiv-paper-small-llm-judge.png
+image: assets/images/small-llm-team-beats-large-llm.svg
 tags: [CodeGeneration, ICSE2026, SmallLLMs]
 description: "ICSE 2026 论文让小型代码生成器产出多个候选方案、小型判别器选出最优，微调后小模型的判别一致性超过 GPT-4.1-mini，五支小模型团队有四支超越大二十多倍参数的大模型，硬件成本仅为对手百分之三。"
 ---

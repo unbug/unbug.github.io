@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《AI何时真正学会软件工程？》"
 author: unbug
 categories: [AI, Engineering]
-image: assets/images/generative-ai-software-engineering.svg
+image: assets/images/grounding-generative-ai-se.svg
 tags: [Software Engineering, Code Generation, LLM]
 description: "SANER 2026 愿景论文发现 AI 仍缺软件工程知识：GPT-4o 设计模式分类准确率仅 38.81%，并提出 SENAI 框架把软件工程知识原生融入模型。"
 ---

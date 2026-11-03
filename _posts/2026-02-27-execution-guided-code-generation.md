@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《让AI像程序员一样边写代码边调试》"
 author: unbug
 categories: [AI, Engineering]
-image: assets/images/agentic-coding-execution-flow.svg
+image: assets/images/execution-guided-code-generation.svg
 tags: [Code Generation, EG-CFG, LLM]
 description: "执行引导方法 EG-CFG 把代码实时执行反馈引入生成过程，让模型边写边调试，MBPP 准确率从 49.4% 升至 96.6%，在四个代码基准上均显著超过 GPT-4o 等模型。"
 ---

@@ -10,12 +10,9 @@
 
   <!-- x = 340 + 800*v : 0.3881 -> 650.48 ; 0.34 -> 612 -->
   <g stroke="#D9D9D9" stroke-width="0.5">
-    <line x1="480" y1="126" x2="480" y2="232"/>
-    <line x1="620" y1="126" x2="620" y2="232"/>
-    <line x1="760" y1="126" x2="760" y2="232"/>
-    <line x1="900" y1="126" x2="900" y2="232"/>
-    <line x1="1040" y1="126" x2="1040" y2="232"/>
-  </g>
+        
+        
+      </g>
   <text x="328" y="156" font-size="12.5" fill="#1A1B1E" text-anchor="end">设计模式分类（准确率）</text>
   <rect x="340" y="142" width="310.48" height="18" fill="#D55E00"/>
   <text x="658" y="156" font-size="12" fill="#555">GPT-4o：38.81%</text>
@@ -34,7 +31,7 @@
   <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
     <text x="340" y="254">0</text>
     <text x="612" y="254">0.34</text>
-    <text x="650.48" y="254">38.81%</text>
+    <text x="650.48" y="254">38.81</text>
   </g>
   <text x="740" y="278" font-size="14" fill="#1A1B1E" text-anchor="middle">指标值（准确率 / F1，无量纲）</text>
   <text x="340" y="304" font-size="12" fill="#555">同类结果：WizardCoder 与 DeepSeek-coder 33B 在面向对象编程概念测试上被本科生超越</text>
