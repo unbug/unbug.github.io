@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">总参数 744B 的 GLM-5 在八项智能体与编码基准上与顶级专有模型互有胜负，部分基准持平或领先</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">基准得分对比（论文报告分值，条长标注口径见轴说明）</text>
+
+  <!-- gridlines: row separators only, horizontal majors -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="330" y1="130" x2="1000" y2="130"/>
+    <line x1="330" y1="212" x2="1000" y2="212"/>
+    <line x1="330" y1="294" x2="1000" y2="294"/>
+    <line x1="330" y1="376" x2="1000" y2="376"/>
+  </g>
+
+  <!-- bars: length ∝ reported score, x = 330 + 4*v (relative bar-length scale, see axis note) -->
+
+  <!-- HLE -->
+  <text x="318" y="164" font-size="12.5" fill="#1A1B1E" text-anchor="end">Humanity's Last Exam</text>
+  <rect x="330" y="145" width="173.6" height="10" fill="#999999"/>
+  <text x="340" y="154" font-size="12" fill="#555">Claude Opus 4.5 43.4</text>
+  <rect x="330" y="158" width="182" height="10" fill="#999999" opacity="0.55"/>
+  <text x="340" y="167" font-size="12" fill="#1A1B1E">GPT-5.2 45.5</text>
+  <rect x="330" y="171" width="201.6" height="10" fill="#D55E00"/>
+  <text x="340" y="180" font-size="12" fill="#FFFFFF">GLM-5 50.4</text>
+
+  <!-- SWE-bench -->
+  <text x="318" y="246" font-size="12.5" fill="#1A1B1E" text-anchor="end">SWE-bench Verified</text>
+  <rect x="330" y="227" width="320" height="10" fill="#999999"/>
+  <text x="340" y="236" font-size="12" fill="#1A1B1E">Claude Opus 4.5 80.9</text>
+  <rect x="330" y="240" width="320" height="10" fill="#999999" opacity="0.55"/>
+  <text x="340" y="249" font-size="12" fill="#1A1B1E">GPT-5.2 80.0</text>
+  <rect x="330" y="253" width="311.2" height="10" fill="#D55E00"/>
+  <text x="340" y="262" font-size="12" fill="#FFFFFF">GLM-5 77.8</text>
+
+  <!-- tau2 -->
+  <text x="318" y="328" font-size="12.5" fill="#1A1B1E" text-anchor="end">τ²-Bench</text>
+  <rect x="330" y="319" width="358.8" height="10" fill="#D55E00"/>
+  <text x="340" y="328" font-size="12" fill="#FFFFFF">GLM-5 89.7（正文未给出对比模型分值）</text>
+  
+
+  <!-- BrowseComp -->
+  <text x="318" y="410" font-size="12.5" fill="#1A1B1E" text-anchor="end">BrowseComp（带上下文管理）</text>
+  <rect x="330" y="391" width="303.6" height="10" fill="#999999"/>
+  <text x="340" y="400" font-size="12" fill="#1A1B1E">Claude Opus 4.5 65.8</text>
+  <rect x="330" y="404" width="267.6" height="10" fill="#999999" opacity="0.55"/>
+  <text x="340" y="413" font-size="12" fill="#1A1B1E">GPT-5.2 57.8</text>
+  <rect x="330" y="417" width="231.2" height="10" fill="#D55E00"/>
+  <text x="340" y="426" font-size="12" fill="#FFFFFF">GLM-5 75.9</text>
+
+  <!-- sequence axis: one position per benchmark, no shared numeric scale across benchmarks -->
+  <line x1="330" y1="446" x2="1000" y2="446" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="330" y1="446" x2="330" y2="450"/>
+    <line x1="540" y1="446" x2="540" y2="450"/>
+    <line x1="750" y1="446" x2="750" y2="450"/>
+    <line x1="960" y1="446" x2="960" y2="450"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="330" y="470">第一项</text>
+    <text x="540" y="470">第二项</text>
+    <text x="750" y="470">第三项</text>
+    <text x="960" y="470">第四项</text>
+  </g>
+  <text x="665" y="510" font-size="14" fill="#1A1B1E" text-anchor="middle">基准序列位置轴，具体分值标于条上</text>
+  <text x="1000" y="124" font-size="12" fill="#555" text-anchor="end">条长按同一比例换算；四项基准分值单位不同，不做跨行比较</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="60" y="548" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="548" font-size="15" fill="#1A1B1E">匿名测试用户猜测占比（条长同一比例换算）与模拟经营收益</text>
+  <!-- bars: x = 300 + 8*v (per-value real scale), values labeled on bars; axis = sequence positions -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="700" y1="564" x2="700" y2="620"/>
+    <line x1="1100" y1="564" x2="1100" y2="620"/>
+  </g>
+  <rect x="300" y="566" width="200" height="12" fill="#D55E00"/>
+  <text x="508" y="576" font-size="12" fill="#555">Claude Sonnet 5：25%</text>
+  <rect x="300" y="586" width="160" height="12" fill="#999999"/>
+  <text x="468" y="596" font-size="12" fill="#555">DeepSeek：20%</text>
+  <rect x="300" y="606" width="80" height="12" fill="#999999"/>
+  <text x="388" y="616" font-size="12" fill="#555">Grok：10%</text>
+  <line x1="300" y1="564" x2="300" y2="620" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="300" y1="620" x2="1100" y2="620"/>
+    <line x1="300" y1="620" x2="300" y2="624"/>
+    <line x1="700" y1="620" x2="700" y2="624"/>
+    <line x1="1100" y1="620" x2="1100" y2="624"/>
+  </g>
+  <text x="1100" y="638" font-size="12.5" fill="#1A1B1E" text-anchor="end">条长同一比例换算，具体占比标于条旁</text>
+  <text x="300" y="558" font-size="12" fill="#555">GLM-5 以 Pony Alpha 匿名身份在 OpenRouter 测试，用户猜测去向；其余猜测为 GLM-5</text>
+  <text x="720" y="576" font-size="12" fill="#555">模拟经营 Vending Bench 2（2 万个交易日）：</text>
+  <text x="720" y="594" font-size="12" fill="#555">Claude Opus 4.5 收益 $4,967，GLM-5 为 $4,432</text>
+
+  <!-- footnote -->
+  <text x="60" y="662" font-size="11" fill="#767676">数据：arXiv:2602.15763（智谱 AI 与清华大学，2026 年 2 月，论文自测口径）· 正文未报告误差区间，未画误差棒 · 预印本未经同行评审</text>
+</svg>

@@ -9,85 +9,82 @@
   <text x="82" y="104" font-size="15" fill="#1A1B1E">4×4 矩阵乘法的标量乘法次数（次）</text>
 
   <g stroke="#D9D9D9" stroke-width="0.5">
-    <line x1="270" y1="150" x2="270" y2="400"/>
-    <line x1="430" y1="150" x2="430" y2="400"/>
-    <line x1="590" y1="150" x2="590" y2="400"/>
+    <line x1="282" y1="150" x2="282" y2="400"/>
+    <line x1="414" y1="150" x2="414" y2="400"/>
+    <line x1="546" y1="150" x2="546" y2="400"/>
   </g>
-  <!-- bars: x = 150 + 8*v -->
+  <!-- bars: x = 150 + 4.9*v -->
   <text x="258" y="196" font-size="12.5" fill="#1A1B1E" text-anchor="end">传统方法</text>
-  <rect x="150" y="182" width="512" height="20" fill="#999999"/>
-  <text x="670" y="196" font-size="12" fill="#555">64</text>
+  <rect x="150" y="182" width="313.6" height="20" fill="#999999"/>
+  <text x="473" y="196" font-size="12" fill="#555">64</text>
 
   <text x="258" y="266" font-size="12.5" fill="#1A1B1E" text-anchor="end">Strassen（1969）</text>
-  <rect x="150" y="252" width="392" height="20" fill="#0072B2"/>
-  <text x="550" y="266" font-size="12" fill="#555">49</text>
+  <rect x="150" y="252" width="240.1" height="20" fill="#0072B2"/>
+  <text x="400" y="266" font-size="12" fill="#555">49</text>
 
   <text x="258" y="336" font-size="12.5" fill="#1A1B1E" text-anchor="end">AlphaEvolve</text>
-  <rect x="150" y="322" width="384" height="20" fill="#D55E00"/>
-  <text x="542" y="336" font-size="12" fill="#555">48</text>
-  <text x="576" y="336" font-size="12" fill="#555">Δ=-1</text>
+  <rect x="150" y="322" width="235.2" height="20" fill="#D55E00"/>
+  <text x="395" y="336" font-size="12" fill="#555">48</text>
+  <text x="428" y="336" font-size="12" fill="#555">Δ=-1</text>
 
   <!-- value axis -->
-  <line x1="150" y1="400" x2="670" y2="400" stroke="#1A1B1E" stroke-width="0.75"/>
+  <line x1="150" y1="400" x2="600" y2="400" stroke="#1A1B1E" stroke-width="0.75"/>
   <g stroke="#1A1B1E" stroke-width="0.75">
     <line x1="150" y1="400" x2="150" y2="404"/>
-    <line x1="270" y1="400" x2="270" y2="404"/>
-    <line x1="430" y1="400" x2="430" y2="404"/>
-    <line x1="590" y1="400" x2="590" y2="404"/>
+    <line x1="282" y1="400" x2="282" y2="404"/>
+    <line x1="414" y1="400" x2="414" y2="404"/>
+    <line x1="546" y1="400" x2="546" y2="404"/>
   </g>
   <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
-    <text x="150" y="422">0</text>
-    <text x="270" y="422">16</text>
-    <text x="430" y="422">35</text>
-    <text x="590" y="422">55</text>
+    <text x="150" y="422">O(n³)</text>
+    <text x="414" y="422">O(n^2.807)</text>
   </g>
-  <text x="410" y="448" font-size="14" fill="#1A1B1E" text-anchor="middle">标量乘法次数（次）</text>
+  <text x="375" y="448" font-size="14" fill="#1A1B1E" text-anchor="middle">标量乘法次数（次）· 左端为 O(n³) 复杂度方法，右端为分治递归后的 O(n^2.807) 方法</text>
+  <text x="150" y="474" font-size="12" fill="#555">对 1024×1024 矩阵：传统方法约 10 亿次乘法，Strassen 方法约 6 亿次</text>
 
   <!-- ============ panel b ============ -->
   <text x="760" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="782" y="104" font-size="15" fill="#1A1B1E">改进的矩阵乘法算法（论文报告的尺寸序列）</text>
+  <text x="782" y="104" font-size="15" fill="#1A1B1E">改进的矩阵乘法算法（论文报告的尺寸序列，类别轴）</text>
 
-  <!-- dumbbell: hollow = before, solid = after -->
+  <!-- dumbbell: hollow = before, solid = after; positions 1-3 sequence axis -->
   <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
     <text x="850" y="176">(2,4,5)</text>
     <text x="850" y="246">(3,4,6)</text>
     <text x="850" y="316">(4,5,6)</text>
   </g>
-  <g stroke-linecap="round">
-    <!-- scale: x = 900 + 3.2*v -->
-    <line x1="1005.6" y1="172" x2="1014.4" y2="172" stroke="#555555" stroke-width="1.5"/>
-    <circle cx="1002.4" cy="172" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
-    <circle cx="996.8" cy="172" r="6" fill="#D55E00"/>
-    <text x="1030" y="176" font-size="12" fill="#555">33 → 32</text>
+  <line x1="1005.6" y1="172" x2="1014.4" y2="172" stroke="#555555" stroke-width="1.5"/>
+  <circle cx="1002.4" cy="172" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+  <circle cx="996.8" cy="172" r="6" fill="#D55E00"/>
+  <text x="1030" y="176" font-size="12" fill="#555">33 → 32</text>
 
-    <line x1="1064.8" y1="242" x2="1086.4" y2="242" stroke="#555555" stroke-width="1.5"/>
-    <circle cx="1079.2" cy="242" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
-    <circle cx="1072.8" cy="242" r="6" fill="#D55E00"/>
-    <text x="1102" y="246" font-size="12" fill="#555">56 → 54</text>
+  <line x1="1064.8" y1="242" x2="1086.4" y2="242" stroke="#555555" stroke-width="1.5"/>
+  <circle cx="1079.2" cy="242" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+  <circle cx="1072.8" cy="242" r="6" fill="#D55E00"/>
+  <text x="1102" y="246" font-size="12" fill="#555">56 → 54</text>
 
-    <line x1="1182.4" y1="312" x2="1214.4" y2="312" stroke="#555555" stroke-width="1.5"/>
-    <circle cx="1196.8" cy="312" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
-    <circle cx="1188" cy="312" r="6" fill="#D55E00"/>
-    <text x="1150" y="296" font-size="12" fill="#555" text-anchor="end">93 → 90</text>
-  </g>
+  <line x1="1156" y1="312" x2="1188" y2="312" stroke="#555555" stroke-width="1.5"/>
+  <circle cx="1170.4" cy="312" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+  <circle cx="1161.6" cy="312" r="6" fill="#D55E00"/>
+  <text x="1140" y="296" font-size="12" fill="#555" text-anchor="end">93 → 90</text>
+
   <g font-size="12" fill="#555">
     <circle cx="905" cy="360" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
     <text x="918" y="364">改进前次数</text>
     <circle cx="1020" cy="360" r="6" fill="#D55E00"/>
-    <text x="1033" y="364">AlphaEvolve 改进后次数</text>
+    <text x="1033" y="364">改进后次数</text>
   </g>
-  <text x="782" y="404" font-size="12" fill="#555">横轴按各尺寸报告的乘法次数排布，示例为论文给出的 3 组尺寸；</text>
+  <text x="782" y="404" font-size="12" fill="#555">序列位置轴：按论文报告的尺寸顺序排列，圆点横向间距仅示意减少量；</text>
   <text x="782" y="422" font-size="12" fill="#555">论文共改进 14 种不同尺寸的矩阵乘法算法</text>
 
   <!-- ============ panel c ============ -->
-  <text x="60" y="496" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
-  <text x="82" y="496" font-size="15" fill="#1A1B1E">生产环境与纯数学的实际影响（%，论文自测口径）</text>
+  <text x="60" y="500" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="82" y="500" font-size="15" fill="#1A1B1E">生产环境与纯数学的实际影响（论文自测口径）</text>
   <g font-size="12" fill="#555">
-    <text x="60" y="528">Gemini 训练：关键矩阵乘法内核提速 23%，整体训练时间减少 1%</text>
-    <text x="60" y="552">纯数学：处理 67 个问题，20% 找到优于人类已知方案的解，包括 11 维空间亲吻数问题的更好结果</text>
-    <text x="60" y="576">芯片：重新设计 TPU 关键算术电路，去掉不必要的位，改进已获验证并将用于未来芯片设计</text>
+    <text x="60" y="532">Gemini 训练：关键矩阵乘法内核提速 23%，整体训练时间减少 1%</text>
+    <text x="60" y="556">纯数学：处理 67 个问题，20% 找到优于人类已知方案的解，包括 11 维空间亲吻数问题的更好结果</text>
+    <text x="60" y="580">芯片：重新设计 TPU 关键算术电路，去掉不必要的位，改进已获验证并将用于未来芯片设计</text>
   </g>
 
   <!-- footnote -->
-  <text x="60" y="646" font-size="11" fill="#767676">数据：AlphaEvolve 论文（Google DeepMind，论文自测口径）· b 面板为论文报告的尺寸示例序列，非连续数值轴 · 正文未报告误差区间，未画误差棒</text>
+  <text x="60" y="646" font-size="11" fill="#767676">数据：AlphaEvolve 论文（Google DeepMind，论文自测口径）· b 面板为论文报告尺寸的序列位置轴，非数值刻度 · 正文未报告误差区间，未画误差棒</text>
 </svg>

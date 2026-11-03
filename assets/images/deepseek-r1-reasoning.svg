@@ -1,74 +1,90 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="cyber" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#00d2ff;stop-opacity:0.8" />
-      <stop offset="50%" style="stop-color:#667eea;stop-opacity:0.9" />
-      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:0.8" />
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">纯强化学习训练的 R1-Zero 与加入冷启动数据的 R1 在竞赛数学、代码与推理基准上达到 OpenAI o1 相当水平</text>
 
-  <circle cx="600" cy="315" r="200" fill="none" stroke="url(#glow)" stroke-width="3" opacity="0.3"/>
-  <circle cx="600" cy="315" r="160" fill="none" stroke="url(#glow)" stroke-width="2" opacity="0.5"/>
-  <circle cx="600" cy="315" r="120" fill="none" stroke="url(#glow)" stroke-width="2" opacity="0.7"/>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">训练流程对比（序列阶段轴，非数值刻度）</text>
 
-  <g fill="none" stroke="#00d2ff" stroke-width="1.5" opacity="0.6">
-    <line x1="200" y1="315" x2="450" y2="315"/>
-    <line x1="750" y1="315" x2="1000" y2="315"/>
-    <line x1="600" y1="100" x2="600" y2="180"/>
-    <line x1="600" y1="450" x2="600" y2="530"/>
-    <line x1="340" y1="150" x2="460" y2="210"/>
-    <line x1="740" y1="210" x2="860" y2="150"/>
-    <line x1="340" y1="480" x2="460" y2="420"/>
-    <line x1="740" y1="420" x2="860" y2="480"/>
+  <!-- baseline row: conventional -->
+  <text x="100" y="160" font-size="13" fill="#1A1B1E">传统流程</text>
+  <g>
+    <rect x="220" y="140" width="200" height="34" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <text x="320" y="162" font-size="12.5" fill="#1A1B1E" text-anchor="middle">大规模人工标注 CoT</text>
+    <polygon points="428,157 442,150 442,164" fill="#999999"/>
+    <rect x="450" y="140" width="120" height="34" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <text x="510" y="162" font-size="12.5" fill="#1A1B1E" text-anchor="middle">监督微调 SFT</text>
+    <polygon points="578,157 592,150 592,164" fill="#999999"/>
+    <rect x="600" y="140" width="130" height="34" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <text x="665" y="162" font-size="12.5" fill="#1A1B1E" text-anchor="middle">（可选）强化学习</text>
   </g>
 
-  <circle cx="600" cy="315" r="85" fill="url(#glow)" opacity="0.9"/>
-  <circle cx="600" cy="315" r="70" fill="#1a1a2e"/>
+  <!-- R1-Zero row -->
+  <text x="100" y="232" font-size="13" fill="#1A1B1E">R1-Zero</text>
+  <polygon points="208,227 222,220 222,234" fill="#D55E00"/>
+  <rect x="230" y="210" width="230" height="34" fill="#FFFFFF" stroke="#D55E00" stroke-width="1.5"/>
+  <text x="345" y="232" font-size="12.5" fill="#1A1B1E" text-anchor="middle">基础模型直接强化学习</text>
 
-  <text x="600" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="48" fill="#00d2ff">R1</text>
-  <text x="600" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#a0a0c0">DeepSeek</text>
+  <!-- R1 row -->
+  <text x="100" y="304" font-size="13" fill="#1A1B1E">R1</text>
+  <rect x="220" y="282" width="260" height="34" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+  <text x="350" y="304" font-size="12.5" fill="#1A1B1E" text-anchor="middle">少量冷启动数据（缓解重复与可读性问题）</text>
+  <polygon points="488,299 502,292 502,306" fill="#0072B2"/>
+  <rect x="510" y="282" width="150" height="34" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+  <text x="585" y="304" font-size="12.5" fill="#1A1B1E" text-anchor="middle">强化学习</text>
 
-  <g stroke-width="3" fill="none">
-    <path d="M280 315 Q350 260 450 315 Q520 365 600 315" stroke="#00d2ff" opacity="0.8">
-      <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
-    </path>
-    <path d="M600 315 Q680 265 750 315 Q820 365 920 315" stroke="#764ba2" opacity="0.8">
-      <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite" begin="1s"/>
-    </path>
+  <!-- sequence axis -->
+  <line x1="220" y1="348" x2="740" y2="348" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="220" y1="348" x2="220" y2="352"/>
+    <line x1="380" y1="348" x2="380" y2="352"/>
+    <line x1="540" y1="348" x2="540" y2="352"/>
+    <line x1="700" y1="348" x2="700" y2="352"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="220" y="372">第一步</text>
+    <text x="380" y="372">第二步</text>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="540" y="372">第三步</text>
+    <text x="700" y="372">第四步</text>
+  </g>
+  <text x="480" y="400" font-size="14" fill="#1A1B1E" text-anchor="middle">流程阶段（序列位置轴，非数值刻度）</text>
+  <text x="220" y="428" font-size="12" fill="#555">冷启动数据缓解 R1-Zero 的无限重复、可读性差、语言混杂问题</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="850" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="872" y="104" font-size="15" fill="#1A1B1E">覆盖任务面（定性，论文自测口径）</text>
+  <g font-size="12.5" fill="#1A1B1E">
+    <circle cx="876" cy="140" r="4" fill="#0072B2"/>
+    <text x="892" y="145">竞赛级数学</text>
+    <circle cx="876" cy="172" r="4" fill="#0072B2"/>
+    <text x="892" y="177">代码生成与理解</text>
+    <circle cx="876" cy="204" r="4" fill="#0072B2"/>
+    <text x="892" y="209">复杂逻辑推理</text>
+    <circle cx="876" cy="236" r="4" fill="#0072B2"/>
+    <text x="892" y="241">科学问答</text>
+  </g>
+  <text x="850" y="286" font-size="12" fill="#555">推理导向强化学习对用户偏好类基准影响很小；</text>
+  <text x="850" y="306" font-size="12" fill="#555">训练中期涌现「啊哈时刻」，学会给复杂问题</text>
+  <text x="850" y="326" font-size="12" fill="#555">分配更多思考时间；R1-Zero 存在无限重复、可读性</text>
+  <text x="850" y="346" font-size="12" fill="#555">差、语言混杂问题，冷启动数据加以解决</text>
+
+  <!-- panel c: emergent behaviors -->
+  <text x="60" y="392" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="82" y="392" font-size="15" fill="#1A1B1E">训练中自然涌现的推理行为</text>
+  <g font-size="12" fill="#1A1B1E">
+    <circle cx="86" cy="428" r="4" fill="#D55E00"/>
+    <text x="102" y="433">自我反思：重新评估最初思路并及时修正</text>
+    <circle cx="86" cy="460" r="4" fill="#D55E00"/>
+    <text x="102" y="465">自我验证：每一步检查推理链条</text>
+    <circle cx="86" cy="492" r="4" fill="#D55E00"/>
+    <text x="102" y="497">动态策略调整：按问题特点切换推理方式</text>
   </g>
 
-  <g fill="#ffffff">
-    <circle cx="280" cy="315" r="10">
-      <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="920" cy="315" r="10">
-      <animate attributeName="r" values="12;8;12" dur="2s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-
-  <rect x="550" y="85" width="100" height="35" rx="8" fill="url(#glow)" opacity="0.9"/>
-  <text x="600" y="108" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" font-weight="bold">RL</text>
-
-  <rect x="550" y="515" width="100" height="35" rx="8" fill="url(#glow)" opacity="0.9"/>
-  <text x="600" y="538" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" font-weight="bold">Reasoning</text>
-
-  <g font-family="Arial, sans-serif">
-    <text x="100" y="550" font-size="14" fill="#8080a0">Self-Reflection</text>
-    <text x="100" y="575" font-size="14" fill="#8080a0">Self-Verification</text>
-    <text x="900" y="550" font-size="14" fill="#8080a0" text-anchor="end">Strategy Adjustment</text>
-    <text x="900" y="575" font-size="14" fill="#8080a0" text-anchor="end">Chain-of-Thought</text>
-  </g>
-
-  <text x="600" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="bold" fill="url(#cyber)">Pure Reinforcement Learning</text>
-  <text x="600" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#a0a0c0">Unlocking LLM Reasoning</text>
+  <!-- footnote -->
+  <text x="60" y="600" font-size="11" fill="#767676">数据：arXiv:2501.12948 / Nature 645, 633-638（2025，论文自测口径）· 正文未报告具体分数与误差区间，a 面板为序列阶段轴，b/c 面板为定性列举</text>
+  <text x="60" y="618" font-size="11" fill="#767676">局限：结构化输出与工具使用能力待提升，特定场景推理质量可优化，计算资源需求相对较大</text>
 </svg>

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">Titans 以核心注意力、神经长期记忆、持久记忆三层结构支持选择性更新，上下文窗口可缩放到超过 200 万个 token</text>
+
+  <!-- ============ panel a: memory hierarchy ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">Titans 三层记忆架构（流程示意）</text>
+
+  <defs>
+    <marker id="arr2" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#1A1B1E"/>
+    </marker>
+  </defs>
+
+  <rect x="150" y="140" width="280" height="76" fill="none" stroke="#0072B2" stroke-width="1.5"/>
+  <text x="290" y="168" font-size="13" fill="#1A1B1E" text-anchor="middle">短期记忆：核心注意力</text>
+  <text x="290" y="188" font-size="12" fill="#555" text-anchor="middle">标准 Transformer 注意力</text>
+  <text x="290" y="206" font-size="12" fill="#555" text-anchor="middle">高精度抓即时上下文</text>
+
+  <rect x="150" y="240" width="280" height="76" fill="none" stroke="#D55E00" stroke-width="1.5"/>
+  <text x="290" y="268" font-size="13" fill="#1A1B1E" text-anchor="middle">神经长期记忆</text>
+  <text x="290" y="288" font-size="12" fill="#555" text-anchor="middle">多层感知机模块</text>
+  <text x="290" y="306" font-size="12" fill="#555" text-anchor="middle">推理时实时更新参数</text>
+
+  <rect x="150" y="340" width="280" height="76" fill="none" stroke="#009E73" stroke-width="1.5"/>
+  <text x="290" y="368" font-size="13" fill="#1A1B1E" text-anchor="middle">持久记忆</text>
+  <text x="290" y="388" font-size="12" fill="#555" text-anchor="middle">固定的学习参数</text>
+  <text x="290" y="406" font-size="12" fill="#555" text-anchor="middle">存模型的"皮质知识"</text>
+
+  <g stroke="#1A1B1E" stroke-width="1.5">
+    <line x1="290" y1="216" x2="290" y2="234" marker-end="url(#arr2)"/>
+    <line x1="290" y1="316" x2="290" y2="334" marker-end="url(#arr2)"/>
+  </g>
+  <text x="302" y="232" font-size="12" fill="#555">高惊喜输入写入</text>
+  <text x="470" y="168" font-size="12" fill="#555">惊喜度量：以当前记忆与新输入的梯度差</text>
+  <text x="470" y="186" font-size="12" fill="#555">判断重要性，只更新最新颖的信息</text>
+  <text x="470" y="216" font-size="12" fill="#555">动量：同时看瞬时惊喜与过去惊喜</text>
+  <text x="470" y="234" font-size="12" fill="#555">遗忘：自适应权重衰减当遗忘门</text>
+
+  <!-- ============ panel b: MIRAS ============ -->
+  <text x="660" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="682" y="104" font-size="15" fill="#1A1B1E">MIRAS 框架：序列建模 = 联想记忆（序列位置轴）</text>
+
+  <line x1="700" y1="300" x2="1120" y2="300" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="715" y1="300" x2="715" y2="304"/>
+    <line x1="850" y1="300" x2="850" y2="304"/>
+    <line x1="985" y1="300" x2="985" y2="304"/>
+    <line x1="1120" y1="300" x2="1120" y2="304"/>
+  </g>
+  <g>
+    <circle cx="715" cy="300" r="7" fill="#0072B2"/>
+    <text x="715" y="278" font-size="12.5" fill="#1A1B1E" text-anchor="middle">记忆架构</text>
+    <text x="715" y="326" font-size="12" fill="#555" text-anchor="middle">向量 / 矩阵 / 深度</text>
+    <text x="715" y="342" font-size="12" fill="#555" text-anchor="middle">多层感知机</text>
+
+    <circle cx="850" cy="300" r="7" fill="#0072B2"/>
+    <text x="850" y="278" font-size="12.5" fill="#1A1B1E" text-anchor="middle">注意力偏差</text>
+    <text x="850" y="326" font-size="12" fill="#555" text-anchor="middle">内部学习目标，</text>
+    <text x="850" y="342" font-size="12" fill="#555" text-anchor="middle">决定优先记什么</text>
+
+    <circle cx="985" cy="300" r="7" fill="#0072B2"/>
+    <text x="985" y="278" font-size="12.5" fill="#1A1B1E" text-anchor="middle">保留门</text>
+    <text x="985" y="326" font-size="12" fill="#555" text-anchor="middle">遗忘机制解释为</text>
+    <text x="985" y="342" font-size="12" fill="#555" text-anchor="middle">记忆正则化器</text>
+
+    <circle cx="1120" cy="300" r="7" fill="#0072B2"/>
+    <text x="1114" y="278" font-size="12.5" fill="#1A1B1E" text-anchor="middle">记忆算法</text>
+    <text x="1114" y="326" font-size="12" fill="#555" text-anchor="middle">更新记忆的</text>
+    <text x="1114" y="342" font-size="12" fill="#555" text-anchor="middle">优化算法</text>
+  </g>
+  <text x="910" y="382" font-size="12" fill="#555" text-anchor="middle">四个关键设计选择（论文叙述顺序，序列位置轴，间距无数值含义）</text>
+  <text x="660" y="416" font-size="12" fill="#555">跳出 MSE 与点积相似度：MIRAS 造出三个无注意力模型 —</text>
+  <text x="660" y="434" font-size="12" fill="#555">YAAD（Huber 损失）· MONETA（广义范数）·</text>
+  <text x="660" y="452" font-size="12" fill="#555">MEMORA（记忆强制像严格的概率图，更新受控且平衡）</text>
+
+  <!-- ============ panel c: evidence, qualitative ============ -->
+  <text x="60" y="490" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="82" y="490" font-size="15" fill="#1A1B1E">实验结论（正文为定性描述，未给出具体分数，序列位置轴）</text>
+
+  <g font-size="12.5" fill="#1A1B1E">
+    <circle cx="140" cy="540" r="7" fill="#0072B2"/>
+    <text x="158" y="536">语言建模与推理：C4、WikiText 与 HellaSwag、PIQA 上准确度</text>
+    <text x="158" y="554">和困惑度全程领跑（对照 Transformer++、Mamba-2、Gated DeltaNet）</text>
+    <circle cx="640" cy="540" r="7" fill="#0072B2"/>
+    <text x="658" y="536">消融：长期记忆模块深度更深，困惑度始终更低，缩放特性更好</text>
+    <text x="658" y="554">BABILong 上把所有基线都干翻了（含参数少得多的 GPT-4）；</text>
+    <circle cx="940" cy="540" r="7" fill="#D55E00"/>
+    <text x="958" y="536">上下文窗口有效缩放</text>
+    <text x="958" y="554">超过 200 万个 token</text>
+  </g>
+  <line x1="140" y1="590" x2="1120" y2="590" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="140" y1="590" x2="140" y2="594"/>
+    <line x1="640" y1="590" x2="640" y2="594"/>
+    <line x1="940" y1="590" x2="940" y2="594"/>
+  </g>
+  <g font-size="12" fill="#555">
+    <text x="140" y="612">基准表现</text>
+    <text x="640" y="612">消融结论</text>
+    <text x="940" y="612">长上下文规模</text>
+  </g>
+
+  <!-- footnote -->
+  <text x="60" y="648" font-size="11" fill="#767676">数据：arXiv:2501.00663（Titans）与 arXiv:2504.13173（MIRAS），Google Research · 正文未报告具体分数，a 面板为流程示意、b/c 面板为序列位置轴 · 论文自测口径</text>
+</svg>

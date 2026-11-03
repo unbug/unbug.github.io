@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">量子储层计算在时间域与参数域两个混沌边缘附近均出现显著性能峰值，与经典储层计算的混沌边缘规律一致</text>
+
+  <!-- ============ panel a: concept axes ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">两类混沌边缘的位置（概念轴，定性示意，非实测数值）</text>
+
+  <!-- time-domain axis -->
+  <text x="120" y="182" font-size="13" fill="#1A1B1E">时间域边缘</text>
+  <line x1="120" y1="230" x2="540" y2="230" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="120" y1="230" x2="120" y2="234"/>
+    <line x1="540" y1="230" x2="540" y2="234"/>
+  </g>
+  <text x="120" y="256" font-size="12.5" fill="#555" text-anchor="start">有序（完全可预测）</text>
+  <text x="540" y="256" font-size="12.5" fill="#555" text-anchor="end">混沌（完全不可预测）</text>
+  <!-- edge marker -->
+  <line x1="300" y1="208" x2="300" y2="252" stroke="#D55E00" stroke-width="2" stroke-dasharray="4 3"/>
+  <circle cx="300" cy="196" r="6" fill="#D55E00"/>
+  <text x="300" y="176" font-size="12" fill="#555" text-anchor="middle">性能峰值：量子混沌在时间上的起始点附近</text>
+
+  <!-- parameter-domain axis -->
+  <text x="120" y="332" font-size="13" fill="#1A1B1E">参数域边缘</text>
+  <line x1="120" y1="380" x2="540" y2="380" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="120" y1="380" x2="120" y2="384"/>
+    <line x1="540" y1="380" x2="540" y2="384"/>
+  </g>
+  <text x="120" y="406" font-size="12.5" fill="#555" text-anchor="start">可积系统</text>
+  <text x="540" y="406" font-size="12.5" fill="#555" text-anchor="end">混沌系统</text>
+  <line x1="300" y1="358" x2="300" y2="402" stroke="#D55E00" stroke-width="2" stroke-dasharray="4 3"/>
+  <circle cx="300" cy="346" r="6" fill="#D55E00"/>
+  <text x="300" y="326" font-size="12" fill="#555" text-anchor="middle">性能峰值：可积—混沌边界附近</text>
+
+  <text x="120" y="452" font-size="12" fill="#555">边缘位置为定性示意：论文给出"峰值位于边界附近"的定性结论，</text>
+  <text x="120" y="470" font-size="12" fill="#555">正文未报告峰值的具体坐标数值</text>
+
+  <!-- ============ panel b: study design ============ -->
+  <text x="660" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="682" y="104" font-size="15" fill="#1A1B1E">研究要素与结论（定性，序列位置轴，非数值刻度）</text>
+
+  <g font-size="13" fill="#1A1B1E">
+    <circle cx="700" cy="170" r="6" fill="#0072B2"/>
+    <text x="720" y="175">数学工具</text>
+    <circle cx="700" cy="230" r="6" fill="#0072B2"/>
+    <text x="720" y="235">实验对象</text>
+    <circle cx="700" cy="290" r="6" fill="#0072B2"/>
+    <text x="720" y="295">验证结果</text>
+    <circle cx="700" cy="350" r="6" fill="#D55E00"/>
+    <text x="720" y="355">设计启示</text>
+  </g>
+  <g font-size="12" fill="#555">
+    <text x="720" y="196">随机矩阵理论：为量子多体系统定义混沌边缘</text>
+    <text x="720" y="256">Sachdev-Ye-Kitaev（SYK）模型及其扩展</text>
+    <text x="720" y="316">时间域与参数域两个边缘附近均测得性能峰值</text>
+    <text x="720" y="376">量子储层计算首次获得基于物理的通用设计框架；</text>
+    <text x="720" y="394">经典与量子信息处理在混沌边缘上存在深层呼应</text>
+  </g>
+  <line x1="700" y1="420" x2="1120" y2="420" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="700" y1="420" x2="700" y2="424"/>
+    <line x1="840" y1="420" x2="840" y2="424"/>
+    <line x1="980" y1="420" x2="980" y2="424"/>
+    <line x1="1120" y1="420" x2="1120" y2="424"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="700" y="444">工具</text>
+    <text x="840" y="444">对象</text>
+    <text x="980" y="444">结果</text>
+    <text x="1120" y="444">启示</text>
+  </g>
+  <text x="910" y="474" font-size="12" fill="#555" text-anchor="middle">论证链条的叙述顺序，序列位置轴，位置间距无数值含义</text>
+
+  <!-- footnote -->
+  <text x="60" y="622" font-size="11" fill="#767676">数据：arXiv:2506.17547，PRL 10.1103/j2qj-vwcl（东京大学 Kobayashi 与 Motome 团队）· 正文为定性结论、无量化数值，a 面板边缘位置为概念示意、b 面板为序列位置轴 · 论文口径</text>
+</svg>

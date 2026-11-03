@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">Engram 将静态知识存储从动态推理中分离，实现 O(1) 查找并支持 DRAM 卸载，等参数等 FLOPs 下四类任务一致改进</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">两层稀疏性轴对比（论文机制描述，定性序列位置轴，非数值刻度）</text>
+
+  <!-- two axes: MoE vs Engram as categorical positions -->
+  <line x1="240" y1="300" x2="1120" y2="300" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="480" y1="300" x2="480" y2="304"/>
+    <line x1="880" y1="300" x2="880" y2="304"/>
+  </g>
+  <circle cx="480" cy="300" r="8" fill="#0072B2"/>
+  <circle cx="880" cy="300" r="8" fill="#D55E00"/>
+  <g text-anchor="middle">
+    <text x="480" y="212" font-size="13" font-weight="bold" fill="#1A1B1E">MoE：条件计算（动态）</text>
+    <text x="480" y="240" font-size="12" fill="#555">扩展条件计算以扩大模型容量，</text>
+    <text x="480" y="258" font-size="12" fill="#555">但缺少原生的知识查找原语</text>
+    <text x="880" y="212" font-size="13" font-weight="bold" fill="#1A1B1E">Engram：条件内存（静态）</text>
+    <text x="880" y="240" font-size="12" fill="#555">N-gram 嵌入现代化，确定性寻址、</text>
+    <text x="880" y="258" font-size="12" fill="#1A1B1E" text-anchor="middle">常数时间复杂度 O(1) 查找</text>
+    <text x="480" y="330" font-size="12.5" fill="#1A1B1E">已有稀疏性轴</text>
+    <text x="880" y="330" font-size="12.5" fill="#1A1B1E">新增稀疏性轴（互补）</text>
+  </g>
+  <text x="680" y="368" font-size="14" fill="#1A1B1E" text-anchor="middle">两条互补的稀疏性轴（论文阐述顺序的序列位置轴）</text>
+
+  <!-- ============ panel b: three layers ============ -->
+  <text x="60" y="424" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="424" font-size="15" fill="#1A1B1E">三层工作机制与实验结果</text>
+  <g font-size="12" fill="#1A1B1E">
+    <rect x="82" y="444" width="12" height="10" fill="#0072B2"/>
+    <text x="102" y="453" font-weight="bold">内存检索层</text>
+    <rect x="430" y="444" width="12" height="10" fill="#56B4E9"/>
+    <text x="450" y="453" font-weight="bold">状态融合层</text>
+    <rect x="778" y="444" width="12" height="10" fill="#009E73"/>
+    <text x="798" y="453" font-weight="bold">系统效率层</text>
+  </g>
+  <g font-size="12" fill="#555">
+    <text x="82" y="480">从静态内存检索 N-gram 知识，</text>
+    <text x="82" y="500">不需复杂注意力机制，查找耗时</text>
+    <text x="82" y="520">不随模型规模增长，巨大内存表</text>
+    <text x="82" y="540">可放在普通主机 DRAM 中</text>
+
+    <text x="430" y="480">静态内存与动态隐藏状态融合：</text>
+    <text x="430" y="500">早期层处理静态模式重建，</text>
+    <text x="430" y="520">深层专注复杂推理，</text>
+    <text x="430" y="540">模型有效深度保持不变</text>
+
+    <text x="778" y="480">与 MoE 构成互补两条稀疏性轴，</text>
+    <text x="778" y="500">U 型缩放定律指导</text>
+    <text x="778" y="520">两者最优容量分配</text>
+  </g>
+  <text x="82" y="588" font-size="12" fill="#555">实验：等参数量、等 FLOPs 约束下，Engram-27B 对比 MoE 基线，在知识、推理、代码、数学四类任务均取得一致改进；长文本任务准确率达 97%</text>
+
+  <!-- footnote -->
+  <text x="60" y="646" font-size="11" fill="#767676">数据：DeepSeek 与北京大学《Conditional Memory via Scalable Lookup》（2026 年 1 月，论文自测口径；GitHub 仓库 3.8k stars）· 正文未给出四类任务的具体数值对比，a 面板为机制序列位置轴 · 预印本未经同行评审</text>
+</svg>

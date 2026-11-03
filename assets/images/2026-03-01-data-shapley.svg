@@ -1,108 +1,68 @@
-<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#16213e;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0f3460;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#e94560;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#ff6b6b;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="blue" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-  
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  
-  <g opacity="0.1">
-    <circle cx="100" cy="100" r="50" fill="#4facfe"/>
-    <circle cx="1100" cy="530" r="70" fill="#e94560"/>
-    <circle cx="200" cy="500" r="40" fill="#ff6b6b"/>
-    <circle cx="1000" cy="150" r="60" fill="#00f2fe"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">单次训练即可算清数据贡献：约 16% 的 Pile 语料 Shapley 值为负，过滤后达 3.75 测试损失所需迭代减少约 25%</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">计算成本：所需模型训练次数（类别对比，非数值刻度）</text>
+
+  <!-- categorical positions -->
+  <text x="360" y="196" font-size="12.5" fill="#1A1B1E" text-anchor="end">传统 Data Shapley</text>
+  <rect x="380" y="178" width="20" height="24" fill="#999999"/>
+  <rect x="412" y="178" width="20" height="24" fill="#999999" opacity="0.55"/>
+  <rect x="444" y="178" width="20" height="24" fill="#999999" opacity="0.3"/>
+  <polygon points="476,190 490,182 490,198" fill="#999999"/>
+  <text x="504" y="196" font-size="12" fill="#555">需在不同数据子集上重训：n 个数据点要考虑 2ⁿ 个子集，</text>
+  <text x="504" y="214" font-size="12" fill="#555">无法应用于大规模模型（省略号表示指数级增长，未标数值）</text>
+
+  <text x="360" y="300" font-size="12.5" fill="#1A1B1E" text-anchor="end">In-Run Data Shapley</text>
+  <rect x="380" y="282" width="20" height="24" fill="#D55E00"/>
+  <text x="412" y="292" font-size="12" fill="#1A1B1E">单次训练</text>
+  <text x="412" y="310" font-size="12" fill="#555">利用训练迭代性质实时追踪每个数据点的影响，</text>
+  <text x="700" y="310" font-size="12" fill="#555">借助 Ghost 技术计算，最高效实现仅带来可忽略的额外训练开销</text>
+
+  <line x1="380" y1="344" x2="1140" y2="344" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="390" y1="344" x2="390" y2="348"/>
+    <line x1="530" y1="344" x2="530" y2="348"/>
+    <line x1="1140" y1="344" x2="1140" y2="348"/>
   </g>
-  
-  <g transform="translate(150, 200)">
-    <circle cx="0" cy="0" r="35" fill="url(#blue)" filter="url(#glow)"/>
-    <text x="0" y="8" text-anchor="middle" fill="white" font-size="18" font-weight="bold">D1</text>
+  <text x="760" y="372" font-size="14" fill="#1A1B1E" text-anchor="middle">方法序列位置轴（指数级重训 → 单次训练，非数值刻度）</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="60" y="428" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="428" font-size="15" fill="#1A1B1E">数据清洗实验（%，论文自测口径，GPT-2 · Pile 语料）</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="465" y1="444" x2="465" y2="556"/>
   </g>
-  
-  <g transform="translate(350, 150)">
-    <circle cx="0" cy="0" r="40" fill="url(#accent)" filter="url(#glow)"/>
-    <text x="0" y="8" text-anchor="middle" fill="white" font-size="20" font-weight="bold">D2</text>
+  <!-- horizontal bars: x = 290 + 8.75*v -->
+  <text x="278" y="476" font-size="12.5" fill="#1A1B1E" text-anchor="end">负 Shapley 值语料占比</text>
+  <rect x="290" y="462" width="140" height="20" fill="#0072B2"/>
+  <text x="440" y="476" font-size="12" fill="#555">约 16%</text>
+
+  <text x="278" y="536" font-size="12.5" fill="#1A1B1E" text-anchor="end">过滤后所需迭代减少</text>
+  <rect x="290" y="522" width="218.75" height="20" fill="#D55E00"/>
+  <text x="518" y="536" font-size="12" fill="#555">约 25%</text>
+
+  <line x1="290" y1="556" x2="684" y2="556" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="290" y1="556" x2="290" y2="560"/>
+    <line x1="465" y1="556" x2="465" y2="560"/>
   </g>
-  
-  <g transform="translate(300, 350)">
-    <circle cx="0" cy="0" r="30" fill="#4facfe" opacity="0.8"/>
-    <text x="0" y="6" text-anchor="middle" fill="white" font-size="16" font-weight="bold">D3</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="290" y="578">零</text>
+    <text x="465" y="578">约二十</text>
   </g>
-  
-  <g transform="translate(500, 280)">
-    <circle cx="0" cy="0" r="45" fill="#ff6b6b" filter="url(#glow)"/>
-    <text x="0" y="10" text-anchor="middle" fill="white" font-size="22" font-weight="bold">D4</text>
-  </g>
-  
-  <g transform="translate(700, 220)">
-    <rect x="-60" y="-60" width="120" height="120" rx="20" fill="#0f3460" stroke="url(#blue)" stroke-width="3" filter="url(#glow)"/>
-    <text x="0" y="-15" text-anchor="middle" fill="#4facfe" font-size="14" font-weight="bold">AI MODEL</text>
-    <text x="0" y="10" text-anchor="middle" fill="white" font-size="24" font-weight="bold">Training</text>
-    <text x="0" y="35" text-anchor="middle" fill="#ff6b6b" font-size="14">One Run</text>
-  </g>
-  
-  <line x1="185" y1="200" x2="640" y2="220" stroke="url(#blue)" stroke-width="3" opacity="0.6">
-    <animate attributeName="stroke-dasharray" from="0,10" to="10,0" dur="1s" repeatCount="indefinite"/>
-  </line>
-  <line x1="390" y1="150" x2="640" y2="200" stroke="url(#accent)" stroke-width="4" opacity="0.8">
-    <animate attributeName="stroke-dasharray" from="0,10" to="10,0" dur="0.8s" repeatCount="indefinite"/>
-  </line>
-  <line x1="330" y1="350" x2="640" y2="240" stroke="#4facfe" stroke-width="2" opacity="0.5">
-    <animate attributeName="stroke-dasharray" from="0,10" to="10,0" dur="1.2s" repeatCount="indefinite"/>
-  </line>
-  <line x1="545" y1="280" x2="640" y2="230" stroke="#ff6b6b" stroke-width="4" opacity="0.9">
-    <animate attributeName="stroke-dasharray" from="0,10" to="10,0" dur="0.7s" repeatCount="indefinite"/>
-  </line>
-  
-  <g transform="translate(900, 200)">
-    <rect x="-80" y="-80" width="160" height="160" rx="15" fill="#1a1a2e" stroke="url(#accent)" stroke-width="2"/>
-    <text x="0" y="-45" text-anchor="middle" fill="#ff6b6b" font-size="14" font-weight="bold">DATA VALUE</text>
-    <circle cx="-40" cy="-10" r="12" fill="#4facfe"/>
-    <text x="-40" y="-5" text-anchor="middle" fill="white" font-size="10">D1</text>
-    <text x="10" y="-5" text-anchor="start" fill="white" font-size="12">15%</text>
-    
-    <circle cx="-40" cy="20" r="14" fill="url(#accent)"/>
-    <text x="-40" y="25" text-anchor="middle" fill="white" font-size="10">D2</text>
-    <text x="10" y="25" text-anchor="start" fill="white" font-size="14" font-weight="bold">35%</text>
-    
-    <circle cx="-40" cy="50" r="10" fill="#4facfe" opacity="0.6"/>
-    <text x="-40" y="54" text-anchor="middle" fill="white" font-size="9">D3</text>
-    <text x="10" y="54" text-anchor="start" fill="white" font-size="11">8%</text>
-    
-    <circle cx="-40" cy="80" r="15" fill="#ff6b6b"/>
-    <text x="-40" y="85" text-anchor="middle" fill="white" font-size="10">D4</text>
-    <text x="10" y="85" text-anchor="start" fill="white" font-size="14" font-weight="bold">42%</text>
-  </g>
-  
-  <line x1="760" y1="220" x2="820" y2="220" stroke="url(#accent)" stroke-width="3" opacity="0.7">
-    <animate attributeName="stroke-dasharray" from="0,10" to="10,0" dur="0.9s" repeatCount="indefinite"/>
-  </line>
-  
-  <text x="600" y="80" text-anchor="middle" fill="white" font-size="42" font-weight="bold">Data Shapley</text>
-  <text x="600" y="120" text-anchor="middle" fill="#4facfe" font-size="28">一次训练计算数据价值</text>
-  
-  <g transform="translate(600, 550)">
-    <rect x="-180" y="-25" width="360" height="50" rx="25" fill="url(#accent)" filter="url(#glow)"/>
-    <text x="0" y="8" text-anchor="middle" fill="white" font-size="24" font-weight="bold">ICLR 2025 杰出论文</text>
-  </g>
-  
-  <text x="60" y="590" fill="white" opacity="0.7" font-size="14">AI 版权 • 数据治理 • 模型优化</text>
-  <text x="1140" y="590" text-anchor="end" fill="#4facfe" opacity="0.8" font-size="14">data-shapley.github.io</text>
+  <text x="487" y="600" font-size="14" fill="#1A1B1E" text-anchor="middle">比例（%）</text>
+  <text x="740" y="476" font-size="12" fill="#555">口径：具有负的二阶 In-Run Data Shapley 值的训练语料；</text>
+  <text x="740" y="496" font-size="12" fill="#555">过滤全部负值语料后重新训练 GPT-2，达到 3.75 测试损失</text>
+  <text x="740" y="516" font-size="12" fill="#555">所需训练迭代次数减少约 25%</text>
+  <text x="740" y="546" font-size="12" fill="#555">数据价值动态：训练初期变化迅速、随后趋稳；Pile-CC 域从正</text>
+  <text x="740" y="566" font-size="12" fill="#555">贡献降至负值并收敛到零（论文定性描述，未给数值，未上图）</text>
+
+  <!-- footnote -->
+  <text x="60" y="646" font-size="11" fill="#767676">数据：arXiv:2406.11011（Princeton University 等，ICLR 2025 杰出论文亚军，论文自测口径）· a 面板为方法序列位置轴，非数值刻度 · 正文未报告误差区间，未画误差棒</text>
 </svg>

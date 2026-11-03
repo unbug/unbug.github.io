@@ -1,124 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
-  <!-- Background -->
-  <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0f172a"/>
-      <stop offset="100%" style="stop-color:#1e293b"/>
-    </linearGradient>
-    <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#3b82f6"/>
-      <stop offset="100%" style="stop-color:#8b5cf6"/>
-    </linearGradient>
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#06b6d4"/>
-      <stop offset="100%" style="stop-color:#10b981"/>
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <!-- Background -->
-  <rect width="800" height="450" fill="url(#bgGrad)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">嵌套学习范式下的 Hope 架构在语言建模与长上下文任务上报告优于对照模型，正文未给出具体数值</text>
 
-  <!-- Grid pattern -->
-  <g opacity="0.1">
-    <path d="M0 225h800M400 0v450" stroke="#64748b" stroke-width="1"/>
-    <path d="M0 150h800M0 300h800M200 0v450M600 0v450" stroke="#64748b" stroke-width="0.5"/>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">范式核心：多层次嵌套优化（概念结构，序列层次轴）</text>
+
+  <g>
+    <rect x="120" y="136" width="330" height="52" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="285" y="158" font-size="12.5" fill="#1A1B1E" text-anchor="middle">架构 = 网络结构 与 优化 = 训练规则</text>
+    <text x="285" y="178" font-size="12" fill="#555" text-anchor="middle">不再是两个独立对象，而是同一系统的不同层次</text>
+    <polygon points="285,196 278,184 292,184" fill="#999999"/>
+
+    <rect x="120" y="204" width="330" height="52" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="285" y="226" font-size="12.5" fill="#1A1B1E" text-anchor="middle">一组相互连接的多层次优化问题同时优化</text>
+    <text x="285" y="246" font-size="12" fill="#555" text-anchor="middle">每层有自己的上下文流与更新频率</text>
+    <polygon points="285,264 278,252 292,252" fill="#999999"/>
+
+    <rect x="120" y="272" width="330" height="52" fill="#FFFFFF" stroke="#D55E00" stroke-width="1.5"/>
+    <text x="285" y="294" font-size="12.5" fill="#1A1B1E" text-anchor="middle">按更新频率排序为层次</text>
+    <text x="285" y="314" font-size="12" fill="#555" text-anchor="middle">有序集合构成 Nested Learning 范式核心</text>
   </g>
 
-  <!-- Title -->
-  <text x="400" y="40" text-anchor="middle" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="700">Nested Learning</text>
-  <text x="400" y="65" text-anchor="middle" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="14">Google Research · NeurIPS 2025</text>
+  <!-- hierarchy axis -->
+  <line x1="520" y1="136" x2="520" y2="324" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="520" y1="162" x2="524" y2="162"/>
+    <line x1="520" y1="230" x2="524" y2="230"/>
+    <line x1="520" y1="298" x2="524" y2="298"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E">
+    <text x="534" y="166">层次一</text>
+    <text x="534" y="234">层次二</text>
+    <text x="534" y="302">层次三</text>
+  </g>
+  <text x="560" y="352" font-size="14" fill="#1A1B1E">优化层次（序列位置轴，非数值刻度）</text>
 
-  <!-- Center: Nested layers visualization -->
-  <g transform="translate(400, 240)">
-    <!-- Outer layer (slow update) -->
-    <circle r="140" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.6">
-      <animate attributeName="r" values="140;145;140" dur="4s" repeatCount="indefinite"/>
-    </circle>
+  <!-- right side: two applications -->
+  <text x="700" y="150" font-size="12.5" fill="#1A1B1E">深度优化器：优化器视为关联记忆模块，目标改为更标准的损失度量</text>
+  <text x="700" y="170" font-size="12" fill="#555">（如 L2 回归损失），推导出对不完美数据更鲁棒的动量新公式</text>
+  <text x="700" y="218" font-size="12.5" fill="#1A1B1E">连续记忆系统 CMS：记忆视为一系列模块，各模块以不同频率更新</text>
+  <text x="700" y="238" font-size="12" fill="#555">标准 Transformer 中序列模型为短期记忆、前馈网络为长期记忆</text>
+  <text x="700" y="286" font-size="12.5" fill="#1A1B1E">关联记忆视角：反向传播可建模为关联记忆；注意力机制可形式化</text>
+  <text x="700" y="306" font-size="12" fill="#555">为简单关联记忆模块，学习序列中令牌之间的映射</text>
 
-    <!-- Middle layer -->
-    <circle r="100" fill="none" stroke="#8b5cf6" stroke-width="2.5" opacity="0.75">
-      <animate attributeName="r" values="100;106;100" dur="2.5s" repeatCount="indefinite"/>
-    </circle>
+  <!-- ============ panel b ============ -->
+  <text x="60" y="416" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="416" font-size="15" fill="#1A1B1E">Titans 与 Hope 对比（定性）</text>
+  <g font-size="12.5" fill="#1A1B1E">
+    <rect x="110" y="438" width="480" height="34" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <text x="350" y="460" text-anchor="middle">Titans：长期记忆按令人惊讶程度排序，仅两层参数更新</text>
+    <polygon points="600,455 614,448 614,462" fill="#999999"/>
+    <rect x="622" y="438" width="480" height="34" fill="#FFFFFF" stroke="#D55E00" stroke-width="1.5"/>
+    <text x="862" y="460" text-anchor="middle">Hope：自修改循环架构，CMS 块扩展上下文窗口</text>
+  </g>
+  <text x="110" y="496" font-size="12" fill="#555">Hope 为 Titans（arXiv:2501.00663）变体：可利用无限层次的上下文学习，通过自引用过程优化自身记忆</text>
 
-    <!-- Inner layer (fast update) -->
-    <circle r="60" fill="none" stroke="#ec4899" stroke-width="3" opacity="0.9">
-      <animate attributeName="r" values="60;66;60" dur="1.5s" repeatCount="indefinite"/>
-    </circle>
-
-    <!-- Center core -->
-    <circle r="25" fill="url(#nodeGrad)" filter="url(#glow)">
-      <animate attributeName="r" values="25;28;25" dur="1s" repeatCount="indefinite"/>
-    </circle>
-
-    <!-- Connection lines -->
-    <g stroke="#06b6d4" stroke-width="1.5" opacity="0.6">
-      <line x1="0" y1="-60" x2="0" y2="-140"/>
-      <line x1="0" y1="60" x2="0" y2="140"/>
-      <line x1="-60" y1="0" x2="-140" y2="0"/>
-      <line x1="60" y1="0" x2="140" y2="0"/>
-      <line x1="42" y1="-42" x2="99" y2="-99"/>
-      <line x1="-42" y1="42" x2="-99" y2="99"/>
-      <line x1="-42" y1="-42" x2="-99" y2="-99"/>
-      <line x1="42" y1="42" x2="99" y2="99"/>
-    </g>
-
-    <!-- Nodes on connections -->
-    <g fill="#06b6d4">
-      <circle cx="0" cy="-100" r="4"/>
-      <circle cx="0" cy="100" r="4"/>
-      <circle cx="-100" cy="0" r="4"/>
-      <circle cx="100" cy="0" r="4"/>
-      <circle cx="70" cy="-70" r="3"/>
-      <circle cx="-70" cy="70" r="3"/>
-      <circle cx="-70" cy="-70" r="3"/>
-      <circle cx="70" cy="70" r="3"/>
-    </g>
+  <!-- ============ panel c ============ -->
+  <text x="60" y="548" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="82" y="548" font-size="15" fill="#1A1B1E">实验对比（定性结论，论文自测口径）</text>
+  <g font-size="12.5" fill="#1A1B1E">
+    <circle cx="86" cy="580" r="4" fill="#0072B2"/>
+    <text x="102" y="585">语言建模与常识推理：Hope 困惑度更低、准确率更高，优于现代循环模型与标准 Transformer</text>
+    <circle cx="86" cy="608" r="4" fill="#0072B2"/>
+    <text x="102" y="613">长上下文大海捞针（NIAH）三种难度：Hope 与 Titans 始终优于 TTT、Mamba2</text>
   </g>
 
-  <!-- Labels -->
-  <g font-family="system-ui, -apple-system, sans-serif">
-    <text x="650" y="120" fill="#3b82f6" font-size="13" font-weight="600">Long-Term Memory</text>
-    <text x="650" y="138" fill="#64748b" font-size="11">Slow Update Rate</text>
-
-    <text x="650" y="190" fill="#8b5cf6" font-size="13" font-weight="600">Working Memory</text>
-    <text x="650" y="208" fill="#64748b" font-size="11">Medium Update Rate</text>
-
-    <text x="650" y="260" fill="#ec4899" font-size="13" font-weight="600">Short-Term Memory</text>
-    <text x="650" y="278" fill="#64748b" font-size="11">Fast Update Rate</text>
-  </g>
-
-  <!-- Bottom key points -->
-  <g transform="translate(100, 390)" font-family="system-ui, -apple-system, sans-serif">
-    <g transform="translate(0, 0)">
-      <rect x="-8" y="-12" width="16" height="16" rx="4" fill="#10b981" opacity="0.2"/>
-      <rect x="-5" y="-9" width="10" height="10" rx="2" fill="#10b981"/>
-      <text x="15" y="3" fill="#f8fafc" font-size="12">Unified Architecture + Optimization</text>
-    </g>
-    <g transform="translate(260, 0)">
-      <rect x="-8" y="-12" width="16" height="16" rx="4" fill="#06b6d4" opacity="0.2"/>
-      <rect x="-5" y="-9" width="10" height="10" rx="2" fill="#06b6d4"/>
-      <text x="15" y="3" fill="#f8fafc" font-size="12">Solves Catastrophic Forgetting</text>
-    </g>
-    <g transform="translate(500, 0)">
-      <rect x="-8" y="-12" width="16" height="16" rx="4" fill="#f59e0b" opacity="0.2"/>
-      <rect x="-5" y="-9" width="10" height="10" rx="2" fill="#f59e0b"/>
-      <text x="15" y="3" fill="#f8fafc" font-size="12">Hope Architecture</text>
-    </g>
-  </g>
-
-  <!-- Decorative elements -->
-  <g opacity="0.3">
-    <circle cx="80" cy="100" r="3" fill="#3b82f6"/>
-    <circle cx="720" cy="80" r="2" fill="#8b5cf6"/>
-    <circle cx="150" cy="400" r="2.5" fill="#ec4899"/>
-    <circle cx="650" cy="410" r="2" fill="#06b6d4"/>
-    <circle cx="750" cy="350" r="3" fill="#10b981"/>
-  </g>
+  <!-- footnote -->
+  <text x="60" y="656" font-size="11" fill="#767676">数据：NeurIPS 2025《Nested Learning》（Google Research，2025 年 11 月，论文自测口径）· 正文未报告具体数值与误差区间，a 面板为序列层次轴，b/c 面板为定性结论</text>
 </svg>

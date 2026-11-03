@@ -1,91 +1,81 @@
-<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
-  <!-- 背景 -->
-  <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0f3460;stop-opacity:0.9" />
-      <stop offset="100%" style="stop-color:#16213e;stop-opacity:0.9" />
-    </linearGradient>
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#e94560;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#ff6b6b;stop-opacity:1" />
-    </linearGradient>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.3"/>
-    </filter>
-  </defs>
-  <rect width="1200" height="630" fill="url(#bgGrad)"/>
-  
-  <!-- 装饰性元素 -->
-  <circle cx="100" cy="100" r="60" fill="#e94560" opacity="0.1"/>
-  <circle cx="1100" cy="530" r="80" fill="#0f3460" opacity="0.3"/>
-  <circle cx="600" cy="315" r="120" fill="#e94560" opacity="0.05"/>
-  
-  <!-- 标题 -->
-  <text x="600" y="80" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#ffffff" text-anchor="middle">MiroFlow</text>
-  <text x="600" y="130" font-family="Arial, sans-serif" font-size="24" fill="#a0a0a0" text-anchor="middle">高性能开源智能体框架</text>
-  
-  <!-- 三个核心特性卡片 -->
-  <g filter="url(#shadow)">
-    <!-- 智能体图 -->
-    <rect x="100" y="180" width="300" height="350" rx="16" fill="url(#cardGrad)"/>
-    <rect x="100" y="180" width="300" height="6" fill="url(#accentGrad)"/>
-    <text x="250" y="240" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#e94560" text-anchor="middle">智能体图</text>
-    <text x="250" y="280" font-family="Arial, sans-serif" font-size="14" fill="#c0c0c0" text-anchor="middle">Agent Graph</text>
-    
-    <!-- 智能体图可视化 -->
-    <circle cx="200" cy="350" r="30" fill="#e94560" opacity="0.8"/>
-    <circle cx="300" cy="320" r="25" fill="#0f3460" stroke="#e94560" stroke-width="2"/>
-    <circle cx="300" cy="400" r="25" fill="#0f3460" stroke="#e94560" stroke-width="2"/>
-    <circle cx="250" cy="450" r="20" fill="#0f3460" stroke="#e94560" stroke-width="2"/>
-    <line x1="200" y1="350" x2="300" y2="320" stroke="#e94560" stroke-width="2" opacity="0.6"/>
-    <line x1="200" y1="350" x2="300" y2="400" stroke="#e94560" stroke-width="2" opacity="0.6"/>
-    <line x1="300" y1="320" x2="250" y2="450" stroke="#e94560" stroke-width="2" opacity="0.6"/>
-    <line x1="300" y1="400" x2="250" y2="450" stroke="#e94560" stroke-width="2" opacity="0.6"/>
-    
-    <text x="250" y="500" font-family="Arial, sans-serif" font-size="13" fill="#a0a0a0" text-anchor="middle">灵活组合智能体</text>
-    
-    <!-- 深度推理模式 -->
-    <rect x="450" y="180" width="300" height="350" rx="16" fill="url(#cardGrad)"/>
-    <rect x="450" y="180" width="300" height="6" fill="url(#accentGrad)"/>
-    <text x="600" y="240" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#e94560" text-anchor="middle">深度推理模式</text>
-    <text x="600" y="280" font-family="Arial, sans-serif" font-size="14" fill="#c0c0c0" text-anchor="middle">Deep Reasoning</text>
-    
-    <!-- 深度推理可视化 -->
-    <circle cx="600" cy="350" r="40" fill="none" stroke="#e94560" stroke-width="3" opacity="0.3"/>
-    <circle cx="600" cy="350" r="55" fill="none" stroke="#e94560" stroke-width="2" opacity="0.2"/>
-    <circle cx="600" cy="350" r="70" fill="none" stroke="#e94560" stroke-width="1" opacity="0.1"/>
-    <circle cx="600" cy="350" r="25" fill="#e94560"/>
-    <text x="600" y="355" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">推理</text>
-    
-    <text x="600" y="450" font-family="Arial, sans-serif" font-size="13" fill="#a0a0a0" text-anchor="middle">自我验证</text>
-    <text x="600" y="500" font-family="Arial, sans-serif" font-size="13" fill="#a0a0a0" text-anchor="middle">深入思考</text>
-    
-    <!-- 健壮工作流 -->
-    <rect x="800" y="180" width="300" height="350" rx="16" fill="url(#cardGrad)"/>
-    <rect x="800" y="180" width="300" height="6" fill="url(#accentGrad)"/>
-    <text x="950" y="240" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#e94560" text-anchor="middle">健壮工作流</text>
-    <text x="950" y="280" font-family="Arial, sans-serif" font-size="14" fill="#c0c0c0" text-anchor="middle">Robust Workflow</text>
-    
-    <!-- 工作流可视化 -->
-    <rect x="860" y="320" width="60" height="40" rx="8" fill="#e94560"/>
-    <polygon points="930,340 950,330 950,350" fill="#a0a0a0"/>
-    <rect x="960" y="320" width="60" height="40" rx="8" fill="#0f3460" stroke="#e94560" stroke-width="2"/>
-    <polygon points="1030,340 1050,330 1050,350" fill="#a0a0a0"/>
-    <rect x="1060" y="320" width="60" height="40" rx="8" fill="#0f3460" stroke="#e94560" stroke-width="2"/>
-    
-    <rect x="860" y="380" width="60" height="40" rx="8" fill="#0f3460" stroke="#e94560" stroke-width="2"/>
-    <polygon points="930,400 950,390 950,410" fill="#a0a0a0"/>
-    <rect x="960" y="380" width="60" height="40" rx="8" fill="#0f3460" stroke="#e94560" stroke-width="2"/>
-    <polygon points="1030,400 1050,390 1050,410" fill="#a0a0a0"/>
-    <rect x="1060" y="380" width="60" height="40" rx="8" fill="#e94560"/>
-    
-    <text x="950" y="500" font-family="Arial, sans-serif" font-size="13" fill="#a0a0a0" text-anchor="middle">稳定可靠</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">分层智能体图框架 MiroFlow 在多个深度研究基准上报告先进性能，正文未给出具体分数</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">深度研究协作流程（序列步骤轴，非数值刻度）</text>
+
+  <!-- flow boxes -->
+  <g>
+    <rect x="110" y="140" width="190" height="64" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="205" y="167" font-size="12.5" fill="#1A1B1E" text-anchor="middle">查询增强</text>
+    <text x="205" y="187" font-size="12" fill="#555" text-anchor="middle">主智能体分析意图</text>
+    <polygon points="308,172 322,165 322,179" fill="#999999"/>
+
+    <rect x="330" y="140" width="190" height="64" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="425" y="167" font-size="12.5" fill="#1A1B1E" text-anchor="middle">任务分解</text>
+    <text x="425" y="187" font-size="12" fill="#555" text-anchor="middle">拆解为子任务</text>
+    <polygon points="528,172 542,165 542,179" fill="#999999"/>
+
+    <rect x="550" y="140" width="220" height="64" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="660" y="167" font-size="12.5" fill="#1A1B1E" text-anchor="middle">子任务委派</text>
+    <text x="660" y="187" font-size="12" fill="#555" text-anchor="middle">搜索 / 网页阅读 / 编码</text>
+    <polygon points="778,172 792,165 792,179" fill="#999999"/>
+
+    <rect x="800" y="140" width="190" height="64" fill="#FFFFFF" stroke="#D55E00" stroke-width="1.5"/>
+    <text x="895" y="167" font-size="12.5" fill="#1A1B1E" text-anchor="middle">结果综合</text>
+    <text x="895" y="187" font-size="12" fill="#555" text-anchor="middle">主智能体整合答案</text>
   </g>
-  
-  <!-- 底部标签 -->
-  <text x="600" y="590" font-family="Arial, sans-serif" font-size="16" fill="#606060" text-anchor="middle">开源 · 高性能 · 深度研究</text>
+
+  <!-- sequence axis -->
+  <line x1="110" y1="248" x2="990" y2="248" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="205" y1="248" x2="205" y2="252"/>
+    <line x1="425" y1="248" x2="425" y2="252"/>
+    <line x1="660" y1="248" x2="660" y2="252"/>
+    <line x1="895" y1="248" x2="895" y2="252"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="205" y="276">步骤一</text>
+    <text x="425" y="276">步骤二</text>
+    <text x="660" y="276">步骤三</text>
+    <text x="895" y="276">步骤四</text>
+  </g>
+  <text x="550" y="308" font-size="14" fill="#1A1B1E" text-anchor="middle">协作步骤（序列位置轴，非数值刻度）</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="60" y="368" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="368" font-size="15" fill="#1A1B1E">框架特性（论文自述，定性）</text>
+  <g font-size="12.5" fill="#1A1B1E">
+    <circle cx="86" cy="402" r="4" fill="#0072B2"/>
+    <text x="102" y="407">智能体图：自上而下灵活组合智能体与组件，适配特定任务工作流</text>
+    <circle cx="86" cy="434" r="4" fill="#0072B2"/>
+    <text x="102" y="439">深度推理模式（可选）：高风险或复杂场景中更深入推理与自我验证</text>
+    <circle cx="86" cy="466" r="4" fill="#0072B2"/>
+    <text x="102" y="471">健壮工作流：强制结构化生成、遵守任务规范，减轻随机错误</text>
+  </g>
+
+  <!-- ============ panel c ============ -->
+  <text x="60" y="530" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="82" y="530" font-size="15" fill="#1A1B1E">报告先进性能的基准（定性列举，论文自测口径）</text>
+  <g font-size="12.5" fill="#1A1B1E">
+    <rect x="110" y="552" width="110" height="28" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <text x="165" y="571" text-anchor="middle">GAIA</text>
+    <rect x="235" y="552" width="190" height="28" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <text x="330" y="571" text-anchor="middle">BrowseComp-EN/ZH</text>
+    <rect x="440" y="552" width="90" height="28" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <text x="485" y="571" text-anchor="middle">HLE</text>
+    <rect x="545" y="552" width="210" height="28" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <text x="650" y="571" text-anchor="middle">xBench-DeepSearch</text>
+    <rect x="770" y="552" width="120" height="28" fill="#FFFFFF" stroke="#D55E00" stroke-width="1.5"/>
+    <text x="830" y="571" text-anchor="middle">FutureX</text>
+  </g>
+  <line x1="830" y1="584" x2="830" y2="600" stroke="#D55E00" stroke-width="0.75"/>
+  <text x="836" y="606" font-size="12" fill="#555" text-anchor="start">FutureX 为正文特别点名的基准</text>
+
+  <!-- footnote -->
+  <text x="60" y="646" font-size="11" fill="#767676">数据：arXiv:2602.22808（2026 年 2 月 26 日提交，论文自测口径）· 正文未报告具体分数与误差区间，a 面板为序列步骤轴，b/c 面板为定性列举 · 预印本未经同行评审</text>
 </svg>

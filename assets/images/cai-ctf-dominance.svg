@@ -1,49 +1,72 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0f0c29;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#302b63;stop-opacity:1" />
-    </linearGradient>
-    <filter id="shadow">
-      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.3"/>
-    </filter>
-  </defs>
-  
-  <!-- 背景 -->
-  <rect width="800" height="400" fill="url(#bg)"/>
-  
-  <!-- 装饰性几何图形 -->
-  <circle cx="100" cy="100" r="50" fill="#ff4757" opacity="0.2"/>
-  <circle cx="700" cy="300" r="70" fill="#ff4757" opacity="0.15"/>
-  <rect x="600" y="50" width="100" height="100" fill="#ff4757" opacity="0.1" transform="rotate(45 650 100)"/>
-  
-  <!-- 神经网络节点装饰 -->
-  <g opacity="0.3">
-    <circle cx="200" cy="200" r="8" fill="#ff4757"/>
-    <circle cx="250" cy="180" r="6" fill="#ff4757"/>
-    <circle cx="300" cy="220" r="7" fill="#ff4757"/>
-    <circle cx="350" cy="190" r="5" fill="#ff4757"/>
-    <line x1="208" y1="200" x2="244" y2="183" stroke="#ff4757" stroke-width="2"/>
-    <line x1="256" y1="183" x2="293" y2="215" stroke="#ff4757" stroke-width="2"/>
-    <line x1="307" y1="217" x2="345" y2="195" stroke="#ff4757" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">CAI 在 2025 年五大国际 CTF 竞赛系统性击败人类队伍；熵基动态模型选择使每百万 token 成本从 5.94 美元降至 0.12 美元</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">五大竞赛解题率（%）与参赛规模（括号内为队伍数，论文自测口径）</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="330" y1="130" x2="330" y2="400"/>
+    <line x1="694" y1="130" x2="694" y2="400"/>
+    
   </g>
-  
-  <!-- 标题 -->
-  <text x="400" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#ffffff" filter="url(#shadow)">
-    CAI CTF 统治
-  </text>
-  
-  <!-- 副标题 -->
-  <text x="400" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#ffffff" opacity="0.9">
-    网络安全竞赛
-  </text>
-  
-  <!-- 底部装饰线 -->
-  <line x1="250" y1="250" x2="550" y2="250" stroke="#ff4757" stroke-width="3" opacity="0.6"/>
-  
-  <!-- 图标占位符 -->
-  <g transform="translate(400, 320)">
-    <circle r="30" fill="#ff4757" opacity="0.3"/>
-    <text y="7" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#ffffff">🤖</text>
+  <!-- bars: x = 330 + 4*v -->
+  <text x="318" y="162" font-size="12.5" fill="#1A1B1E" text-anchor="end">HTB AI vs Humans（163 队）</text>
+  <rect x="330" y="149" width="76" height="18" fill="#0072B2"/>
+  <text x="420" y="162" font-size="12" fill="#555">19/20 旗，AI 类别第 1</text>
+
+  <text x="318" y="213" font-size="12.5" fill="#1A1B1E" text-anchor="end">Dragos OT CTF（1,200+ 队）</text>
+  <rect x="330" y="199" width="127.1" height="18" fill="#0072B2"/>
+  <text x="465" y="213" font-size="12" fill="#555">32/34 旗，最终第 6 名</text>
+
+  <text x="318" y="263" font-size="12.5" fill="#1A1B1E" text-anchor="end">Neurogrid CTF（155 队）</text>
+  <rect x="330" y="249" width="163.6" height="18" fill="#D55E00"/>
+  <text x="502" y="263" font-size="12" fill="#555">41/45 旗，夺冠</text>
+
+  <text x="318" y="313" font-size="12.5" fill="#1A1B1E" text-anchor="end">Cyber Apocalypse 2025（8,129 队）</text>
+  <rect x="330" y="299" width="38.96" height="18" fill="#999999"/>
+  <text x="377" y="313" font-size="12" fill="#555">30/77 旗，最终第 859 名</text>
+
+  <text x="318" y="363" font-size="12.5" fill="#1A1B1E" text-anchor="end">UWSP Pointer Overflow（635 队）</text>
+  <polygon points="330,349 404,349 416,358 404,367 330,367" fill="#999999"/>
+  <text x="424" y="363" font-size="12" fill="#555">正文未报告旗数，仅报告名次（第 21 名）</text>
+
+  <!-- value axis -->
+  <line x1="330" y1="400" x2="750" y2="400" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="330" y1="400" x2="330" y2="404"/>
+    <line x1="694" y1="400" x2="694" y2="404"/>
   </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="694" y="420">91</text>
+  </g>
+  <text x="630" y="444" font-size="14" fill="#1A1B1E" text-anchor="middle">解题率（%，旗数除以总旗数）</text>
+  <text x="330" y="472" font-size="12" fill="#555">Neurogrid 解题率标注为 91% · 箭头表示正文未给出旗数、无法计算解题率</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="60" y="520" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="520" font-size="15" fill="#1A1B1E">关键战绩数字（论文自测口径）</text>
+  <g font-size="12" fill="#555">
+    <text x="380" y="516">Neurogrid：以 33,917 分、领先 1,925 分夺冠；64 分钟内达到 10,517 分，人类团队需要 24 小时以上</text>
+    <text x="380" y="540">Dragos OT：5.42 小时率先达到 10,000 分，比最快人类团队快 9.8 分钟，前 7-8 小时排名全球第一</text>
+    <text x="380" y="564">UWSP：起跑比前三名晚 50 天，仅用 60 小时追到第 21 名</text>
+  </g>
+
+  <!-- ============ panel c ============ -->
+  <text x="800" y="520" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="822" y="520" font-size="15" fill="#1A1B1E">成本对比（论文自测口径）</text>
+  <g font-size="12" fill="#555">
+    <text x="800" y="558">纯 Claude Opus 4.5：每百万 token 成本 5.94 美元，10 亿 token 需 5,940 美元</text>
+    <text x="800" y="582">CAI：每百万 token 仅 0.12 美元，10 亿 token 只需 119 美元，成本降低 98%</text>
+  </g>
+  <circle cx="806" cy="608" r="5" fill="#999999"/>
+  <text x="820" y="612" font-size="12" fill="#555">灰色为纯 Claude 基线</text>
+  <circle cx="986" cy="608" r="5" fill="#D55E00"/>
+  <text x="1000" y="612" font-size="12" fill="#555">朱色为 CAI（主角）</text>
+
+  <!-- footnote -->
+  <text x="60" y="652" font-size="11" fill="#767676">数据：arXiv:2512.02654（Alias Robotics，2025 年五大赛事，论文自测口径）· 解题率由正文旗数计算 · 正文未报告误差区间，未画误差棒 · 预印本未经同行评审</text>
 </svg>

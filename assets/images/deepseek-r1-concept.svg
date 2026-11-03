@@ -1,49 +1,106 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
-    </linearGradient>
-    <filter id="shadow">
-      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.3"/>
-    </filter>
-  </defs>
-  
-  <!-- 背景 -->
-  <rect width="800" height="400" fill="url(#bg)"/>
-  
-  <!-- 装饰性几何图形 -->
-  <circle cx="100" cy="100" r="50" fill="#f093fb" opacity="0.2"/>
-  <circle cx="700" cy="300" r="70" fill="#f093fb" opacity="0.15"/>
-  <rect x="600" y="50" width="100" height="100" fill="#f093fb" opacity="0.1" transform="rotate(45 650 100)"/>
-  
-  <!-- 神经网络节点装饰 -->
-  <g opacity="0.3">
-    <circle cx="200" cy="200" r="8" fill="#f093fb"/>
-    <circle cx="250" cy="180" r="6" fill="#f093fb"/>
-    <circle cx="300" cy="220" r="7" fill="#f093fb"/>
-    <circle cx="350" cy="190" r="5" fill="#f093fb"/>
-    <line x1="208" y1="200" x2="244" y2="183" stroke="#f093fb" stroke-width="2"/>
-    <line x1="256" y1="183" x2="293" y2="215" stroke="#f093fb" stroke-width="2"/>
-    <line x1="307" y1="217" x2="345" y2="195" stroke="#f093fb" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">跳过监督微调、仅用二元正确性奖励的强化学习即可激发大模型推理能力，最终 DeepSeek-R1 数学推理与 OpenAI o1-1217 相当</text>
+
+  <!-- ============ panel a: training pipeline sequence ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">训练流程（论文列举的阶段顺序，序列位置轴，非数值刻度）</text>
+
+  <line x1="120" y1="280" x2="1140" y2="280" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="220" y1="280" x2="220" y2="284"/>
+    <line x1="400" y1="280" x2="400" y2="284"/>
+    <line x1="580" y1="280" x2="580" y2="284"/>
+    <line x1="760" y1="280" x2="760" y2="284"/>
+    <line x1="940" y1="280" x2="940" y2="284"/>
+    <line x1="1121" y1="280" x2="1121" y2="284"/>
   </g>
-  
-  <!-- 标题 -->
-  <text x="400" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#ffffff" filter="url(#shadow)">
-    DeepSeek R1
-  </text>
-  
-  <!-- 副标题 -->
-  <text x="400" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#ffffff" opacity="0.9">
-    概念架构
-  </text>
-  
-  <!-- 底部装饰线 -->
-  <line x1="250" y1="250" x2="550" y2="250" stroke="#f093fb" stroke-width="3" opacity="0.6"/>
-  
-  <!-- 图标占位符 -->
-  <g transform="translate(400, 320)">
-    <circle r="30" fill="#f093fb" opacity="0.3"/>
-    <text y="7" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#ffffff">🤖</text>
+  <g>
+    <circle cx="221" cy="181" r="8" fill="#999999"/>
+    <text x="221" y="157" font-size="12.5" fill="#1A1B1E" text-anchor="middle">基础模型</text>
+    <text x="221" y="209" font-size="12" fill="#555" text-anchor="middle">R1-Zero：跳过监督微调</text>
+    <text x="221" y="230" font-size="12" fill="#555" text-anchor="middle">直接做大规模强化学习</text>
+
+    <circle cx="400" cy="181" r="8" fill="#0072B2"/>
+    <text x="400" y="157" font-size="12.5" fill="#1A1B1E" text-anchor="middle">大规模强化学习</text>
+    <text x="400" y="209" font-size="12" fill="#555" text-anchor="middle">奖励为二元信号：</text>
+    <text x="400" y="230" font-size="12" fill="#555" text-anchor="middle">对得 1 分、错得 0 分</text>
+
+    <circle cx="580" cy="181" r="8" fill="#0072B2"/>
+    <text x="580" y="157" font-size="12.5" fill="#1A1B1E" text-anchor="middle">冷启动数据</text>
+    <text x="580" y="209" font-size="12" fill="#555" text-anchor="middle">数千个示例</text>
+    <text x="580" y="230" font-size="12" fill="#555" text-anchor="middle">最终版 R1 使用</text>
+
+    <circle cx="760" cy="181" r="8" fill="#D55E00"/>
+    <text x="760" y="157" font-size="12.5" fill="#1A1B1E" text-anchor="middle">第一阶段强化学习</text>
+    <text x="760" y="209" font-size="12" fill="#555" text-anchor="middle">发现更好的推理模式</text>
+    <text x="760" y="230" font-size="12" fill="#555" text-anchor="middle">结合拒绝采样与监督微调</text>
+
+    <circle cx="940" cy="181" r="8" fill="#D55E00"/>
+    <text x="940" y="157" font-size="12.5" fill="#1A1B1E" text-anchor="middle">第二阶段强化学习</text>
+    <text x="940" y="209" font-size="12" fill="#555" text-anchor="middle">与人类偏好对齐：</text>
+    <text x="940" y="230" font-size="12" fill="#555" text-anchor="middle">有用性、无害性</text>
+
+    <circle cx="1121" cy="181" r="8" fill="#009E73"/>
+    <text x="1121" y="157" font-size="12.5" fill="#1A1B1E" text-anchor="middle">蒸馏开源</text>
+    <text x="1121" y="209" font-size="12" fill="#555" text-anchor="middle">1.5B 到 70B 蒸馏版本</text>
+    <text x="1121" y="230" font-size="12" fill="#555" text-anchor="middle">基于 Qwen 和 Llama 架构</text>
   </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="221" y="306">R1-Zero 路线</text>
+    <text x="580" y="306">R1 多阶段路线</text>
+    <text x="940" y="306">R1 多阶段路线</text>
+  </g>
+  <text x="630" y="340" font-size="12" fill="#555" text-anchor="middle">R1-Zero 涌现四类行为：自我验证答案、遇错后反思调整、生成长思维链、尝试多种解法；训练中记录到重新评估初始方法的「啊哈时刻」</text>
+
+  <!-- ============ panel b: distilled model sizes ============ -->
+  <text x="60" y="408" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="408" font-size="15" fill="#1A1B1E">蒸馏开源模型参数规模（参数量，论文报告口径）</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="200" y1="430" x2="200" y2="560" stroke-dasharray="3 2"/>
+    <line x1="760" y1="430" x2="760" y2="560"/>
+  </g>
+  <!-- bars: x = 200 + 8*v -->
+  <text x="188" y="463" font-size="12.5" fill="#1A1B1E" text-anchor="end">最小蒸馏版</text>
+  <rect x="200" y="449" width="12.01" height="18" fill="#009E73"/>
+  <text x="221" y="463" font-size="12" fill="#555">1.5B</text>
+
+  <text x="188" y="503" font-size="12.5" fill="#1A1B1E" text-anchor="end">最大蒸馏版</text>
+  <rect x="200" y="489" width="560.01" height="18" fill="#D55E00"/>
+  <text x="768" y="503" font-size="12" fill="#555">70B</text>
+
+  <text x="188" y="543" font-size="12.5" fill="#1A1B1E" text-anchor="end">口径说明</text>
+  <text x="208" y="543" font-size="12" fill="#555">正文仅报告 1.5B 到 70B 区间，未逐一列出各档参数值（条形按正文区间两端绘制）</text>
+
+  <line x1="200" y1="560" x2="800" y2="560" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="200" y1="560" x2="200" y2="565"/>
+    <line x1="212" y1="560" x2="212" y2="565"/>
+    <line x1="760" y1="560" x2="760" y2="565"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="212" y="582">1.5</text>
+    <text x="760" y="582">70</text>
+  </g>
+  <text x="500" y="604" font-size="14" fill="#1A1B1E" text-anchor="middle">参数规模（B）</text>
+
+  <!-- ============ panel c ============ -->
+  <text x="1000" y="408" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="1022" y="408" font-size="15" fill="#1A1B1E">结果与局限</text>
+  <g font-size="12" fill="#555">
+    <text x="1000" y="444">数学推理基准与</text>
+    <text x="1000" y="462">OpenAI o1-1217 性能相当；</text>
+    <text x="1000" y="480">代码生成与复杂逻辑推理</text>
+    <text x="1000" y="498">同样出色；普通硬件可运行。</text>
+    <text x="1000" y="528">局限：大规模强化学习计算</text>
+    <text x="1000" y="546">资源需求高；目前主要聚焦</text>
+    <text x="1000" y="564">答案可验证的任务；推理过程</text>
+    <text x="1000" y="582">仍不够透明。</text>
+  </g>
+
+  <!-- footnote -->
+  <text x="60" y="652" font-size="11" fill="#767676">数据：arXiv:2501.12948（DeepSeek 团队，2025 年 1 月，论文自测口径）· 正文未报告各基准具体分数，未画数值性能轴 · a 面板为序列位置轴，非数值刻度 · 预印本未经同行评审</text>
 </svg>
