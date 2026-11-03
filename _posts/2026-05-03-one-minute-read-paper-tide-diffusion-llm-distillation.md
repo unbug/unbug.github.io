@@ -8,11 +8,14 @@ tags: [DiffusionLM, KnowledgeDistillation, ModelCompression, CrossArchitecture, 
 description: "TIDE通过TIDAL调度、CompDemo上下文增强和Reverse CALM跨分词器匹配，首次实现扩散语言模型跨架构蒸馏，把16B MoE教师压到0.6B学生，峰值内存降22倍、推理加速5.2倍。"
 ---
 
-北京大学和浙江大学合作的一篇论文[《Turning the TIDE: Cross-Architecture Distillation for Diffusion Large Language Models》][paper1-url]，首次实现了扩散语言模型（dLLM）的跨架构蒸馏，将16B MoE教师模型压缩到0.6B学生模型，峰值内存降低22倍、推理加速5.2倍：## 扩散语言模型的蒸馏难题扩散语言模型使用扩散过程对文本进行建模，与传统的自回归（AR）模型不同，dLLM支持并行解码和双向上下文理解，在多项基准上展现出与AR模型相当甚至更优的性能。
+北京大学和浙江大学合作的一篇论文[《Turning the TIDE: Cross-Architecture Distillation for Diffusion Large Language Models》][paper1-url]，首次实现了扩散语言模型（dLLM）的跨架构蒸馏，将16B MoE教师模型压缩到0.6B学生模型，峰值内存降低22倍、推理加速5.2倍。
+
+## 扩散语言模型的蒸馏难题
+扩散语言模型使用扩散过程对文本进行建模，与传统的自回归（AR）模型不同，dLLM支持并行解码和双向上下文理解，在多项基准上展现出与AR模型相当甚至更优的性能。
 
 然而，现有dLLM需要数十亿参数才能达到有竞争力的性能，难以在消费级硬件上部署。
 
-知识蒸馏是压缩大模型的有效方法，但dLLM的蒸馏面临一个根本挑战：跨架构蒸馏。现有蒸馏方法仅限于同一架构内的步数压缩，当教师和学生模型在架构、注意力机制和分词器上存在差异时，token无法直接对齐。TIDE框架通过三个核心组件解决了这一难题。
+知识蒸馏是压缩大模型的有效方法，但 dLLM 的蒸馏面临一个根本挑战：跨架构蒸馏。现有蒸馏方法仅限于同一架构内的步数压缩，当教师和学生模型在架构、注意力机制和分词器上存在差异时，token 无法直接对齐。TIDE 框架通过三个核心组件解决了这一难题。
 
 ## TIDE的核心方法
 TIDE框架包含三个关键设计。
@@ -23,15 +26,15 @@ TIDE框架包含三个关键设计。
 
 **Reverse CALM跨分词器匹配**解决了最核心的跨分词器对齐问题。由于教师和学生使用不同分词器，token无法直接对应。Reverse CALM采用反向分块级二元交叉熵，将教师和学生输出按分块进行概率匹配，梯度系数仅依赖固定的教师模型，并加入双端噪声过滤。
 
-TIDE支持两种蒸馏管线：跨分词器管线（LLaDA2.0-mini 16B MoE到Qwen3-0.6B-BD3LM）和共享分词器管线（WeDLM-8B到Qwen3-0.6B-BD3LM）。
+TIDE支持两种蒸馏管线：跨分词器管线（LLaDA2.0-mini 16B MoE 到 Qwen3-0.6B-BD3LM）和共享分词器管线（WeDLM-8B 到 Qwen3-0.6B-BD3LM），后者验证了框架在同分词器场景下同样适用。
 
 ## 关键结果
-在8个基准测试上，TIDE-Cross相比未蒸馏的BD3LM基线平均提升1.53分（34.20 vs 32.67）。其中HumanEval代码生成任务提升16.48分（48.78 vs 32.30），蒸馏后的dLLM在代码生成上表现尤为突出。
+在8个基准测试上，TIDE-Cross相比未蒸馏的BD3LM基线平均提升1.53分（34.20 vs 32.67）。其中HumanEval代码生成任务提升16.48分（48.78 vs 32.30），蒸馏后的 dLLM 在代码生成上表现尤为突出，说明高质量教师信号对推理类任务的迁移尤其有效。
 
 相比16B MoE教师模型，蒸馏后的0.6B学生模型峰值内存降低22倍（1.4 GB vs 31.3 GB），推理速度提升5.2倍（6.25秒 vs 32.55秒，生成256 token，H100）。将16B MoE和8B Dense教师压缩到0.6B学生模型，仍保持竞争力性能。
 
 ## 意义与展望
-TIDE让扩散语言模型从实验室走向消费级硬件部署成为可能。随着dLLM研究的深入，跨架构蒸馏方法有望推动更多大模型在移动设备上的应用。论文的代码、模型和数据集已在GitHub和HuggingFace开源。
+TIDE让扩散语言模型从实验室走向消费级硬件部署成为可能：0.6B 学生模型只需 1.4 GB 峰值内存，普通笔记本即可承载。随着 dLLM 研究的深入，跨架构蒸馏方法有望推动更多大模型在移动设备上的应用。论文的代码、模型和数据集已在GitHub和HuggingFace开源。
 
 ## References
 - [TIDE GitHub仓库][links-1]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "一分钟读论文：GPTheology — 当人类开始把AI当作神来崇拜"
+title: "一分钟读论文：《当人类开始把AI当作神来崇拜》"
 categories: [AI]
 tags: [AI Ethics, Society, Religion, GPTheology]
 description: "最新研究揭示了一个惊人的社会现象：随着AI的普及，越来越多人开始将AI视为神一样的存在，形成了名为“GPTheology”的新兴科技宗教。"

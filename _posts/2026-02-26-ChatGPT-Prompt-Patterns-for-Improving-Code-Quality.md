@@ -1,65 +1,26 @@
 ---
 layout: post
-title:  "一分钟读论文：《ChatGPT 提示模式：提升代码质量、重构、需求获取和软件设计》"
+title:  "一分钟读论文：《ChatGPT 提示模式十三式》"
 author: unbug
-categories: [AI, Software Engineering]
+categories: [AI, Engineering]
 image: assets/images/arxiv-paper-chatgpt-prompt-patterns.png
-tags: [ChatGPT, Prompt Engineering, AI]
+tags: [ChatGPT, PromptEngineering, AI]
+description: "范德堡大学团队的论文整理出 13 种经过 ChatGPT 验证的提示模式，覆盖需求获取、系统设计、代码质量与重构四大领域，把提示编写从个人技巧变成像设计模式一样可复用的工程实践。"
 ---
-范德堡大学的论文[《ChatGPT Prompt Patterns for Improving Code Quality, Refactoring, Requirements Elicitation, and Software Design》][paper1-url] 整理了 **13 种可复用的提示模式**，帮助开发者用 ChatGPT 自动化常见的软件工程任务，涵盖需求获取、系统设计、代码质量和重构四大领域。
 
-## 核心发现
-- **提示模式就像设计模式**：可以像经典软件设计模式一样被复用和适配
-- **覆盖全生命周期**：从需求 → 设计 → 编码 → 重构的完整流程
-- **所有模式都在 ChatGPT 上验证过**，也适用于其他大语言模型
+范德堡大学的论文[《ChatGPT Prompt Patterns for Improving Code Quality, Refactoring, Requirements Elicitation, and Software Design》][paper1-url] 整理了 `13 种可复用的提示模式`，全部在 ChatGPT 上验证过，覆盖需求获取、系统设计、代码质量与重构四大领域，让提示编写像设计模式一样可复用，也为其他大语言模型提供了同样的适用性。
 
-## 13 种提示模式分类
-**1 需求获取（Requirements Elicitation）**
-- **需求模拟器（Requirements Simulator）**：让 LLM 模拟需求，探索完整性
-- **规格歧义消除（Specification Disambiguation）**：识别模糊的需求
-- **变更请求模拟（Change Request Simulation）**：评估需求变更的影响
+## 像设计模式一样复用提示
+提示模式的思路来自经典软件设计模式：把行之有效的提问方式命名、记录、标准化，让开发者可以像复用设计模式一样复用和适配提示，而不是每次从零摸索。所有模式均经过实际对话验证，非专家也能借助它们写出结构完整的提示。论文按软件工程生命周期把 13 种模式分为四类，从需求到设计、编码再到重构形成完整链条。同一模式换个项目、换个语言稍作调整即可再次使用，这是它区别于零散提示技巧的核心价值。
 
-**2 系统设计与模拟（System Design & Simulation）**
-- **API 生成器（API Generator）**：自动生成 API 设计
-- **API 模拟器（API Simulator）**：模拟 API 行为
-- **少样本示例生成器（Few-shot Example Generator）**：创建训练示例
-- **领域特定语言创建（DSL Creation）**：设计 DSL
-- **架构可能性探索（Architectural Possibilities）**：探索不同架构方案
+## 四类模式的覆盖范围
+**需求获取**包含三种模式：需求模拟器让模型模拟用户提出需求，检验需求文档的完整性；规格歧义消除专门识别需求描述中的模糊表述；变更请求模拟则用来评估需求变更对现有系统的影响。**系统设计与模拟**有四种：API 生成器自动产出 API 设计，API 模拟器模拟 API 行为，少样本示例生成器批量创建训练示例，领域特定语言创建辅助设计 DSL，架构可能性探索则对比不同架构方案的取舍。**代码质量**包含代码聚类（按功能给代码分组）、中间抽象（在高层与低层代码之间建立桥梁）、原则性代码（检查代码是否遵循设计原则）与隐藏假设识别（发现代码中的隐含前提）四种。**重构**有两种：伪代码重构用高层指令控制重构方向，数据驱动重构围绕数据格式变更展开改造。
 
-**3 代码质量（Code Quality）**
-- **代码聚类（Code Clustering）**：将代码按功能分组
-- **中间抽象（Intermediate Abstraction）**：在高层和低层代码间建立桥梁
-- **原则性代码（Principled Code）**：确保代码遵循设计原则
-- **隐藏假设识别（Hidden Assumptions）**：发现代码中的隐含假设
+## 通用结构与落地示例
+论文归纳出好提示的通用结构，通常包含四个元素：会话范围声明（如"从现在起""扮演 X 角色"）、明确的任务描述、期望的输出格式要求、以及需要遵守的约束条件。四条示例展示了模式的落地方式：**自动生成依赖文件**——"从现在起，你生成的任何代码如果跨多个文件，自动生成一个 Python 脚本来创建这些文件"；**识别代码假设**——"列出这段代码做的所有假设，以及在当前结构下改变每个假设的难度"；**伪代码重构**——先让模型重构代码，再要求把输入、输出、存储数据格式改为 X，并提供 X 的一两个示例。这些模式的价值不在于某次对话的效果，而在于沉淀为团队可共享、可迭代的资产；把重复出现的提问固化成模式，提示工程才从个人手感变成工程实践。同类话题可参阅站内[《Many-Shot 提示何时失效》]({% post_url 2026-02-28-when-many-shot-prompting-fails %})。
 
-**4 重构（Refactoring）**
-- **伪代码重构（Pseudo-code Refactoring）**：用高层指令控制重构
-- **数据驱动重构（Data-guided Refactoring）**：基于数据格式变更重构
-
-## 提示模式的通用结构
-好的提示通常包含这些元素：
-1. **会话范围声明**：如 "从现在起"、"扮演 X 角色"
-2. **明确的任务描述**：具体要做什么
-3. **输出格式要求**：期望的结果格式
-4. **约束条件**：需要遵守的规则
-
-## 实用示例
-**自动生成依赖文件**：
-> "从现在起，你生成的任何代码如果跨多个文件，自动生成一个 Python 脚本来创建这些文件。"
-
-**识别代码假设**：
-> "列出这段代码做的所有假设，以及在当前结构下改变每个假设的难度。"
-
-**伪代码重构**：
-> 1. 重构这段代码
-> 2. 让输入/输出/存储数据格式变为 X
-> 3. 提供 X 的 1-2 个示例
+## References
+- [ChatGPT Prompt Patterns for Improving Code Quality, Refactoring, Requirements Elicitation, and Software Design][paper1-url]
 
 
 [paper1-url]: https://arxiv.org/abs/2303.07839
-
-
-## References
-- [arxiv.org][ref1]
-
-[ref1]: https://arxiv.org/abs/2303.07839
