@@ -1,83 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
-  <defs>
-    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="dangerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="glowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:0.8" />
-      <stop offset="100%" style="stop-color:#e74c3c;stop-opacity:0.8" />
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <filter id="shadow">
-      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.3"/>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="800" height="400" fill="url(#bgGradient)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">LLM 智能体以每资料 $1–$4 的成本从匿名资料推断真实身份，召回率远超传统方法</text>
 
-  <g opacity="0.1">
-    <circle cx="100" cy="100" r="50" fill="#3498db"/>
-    <circle cx="700" cy="150" r="70" fill="#9b59b6"/>
-    <circle cx="650" cy="350" r="40" fill="#e74c3c"/>
-    <circle cx="150" cy="320" r="60" fill="#2ecc71"/>
+  <!-- legend -->
+  <g font-size="12" fill="#555">
+    <rect x="905" y="48" width="12" height="10" fill="#D55E00"/>
+    <text x="922" y="57">LLM 攻击</text>
+    <rect x="1002" y="48" width="12" height="10" fill="#999999"/>
+    <text x="1019" y="57">传统方法</text>
   </g>
 
-  <g transform="translate(100, 100)">
-    <rect x="0" y="0" width="120" height="200" rx="10" fill="#2c3e50" filter="url(#shadow)"/>
-    <rect x="10" y="10" width="100" height="140" rx="5" fill="#34495e"/>
-    <circle cx="60" cy="170" r="8" fill="#e74c3c"/>
-    <text x="60" y="85" text-anchor="middle" fill="#95a5a6" font-size="14">?</text>
-    <text x="60" y="105" text-anchor="middle" fill="#95a5a6" font-size="14">?</text>
-    <text x="60" y="125" text-anchor="middle" fill="#95a5a6" font-size="14">?</text>
-    <text x="60" y="230" text-anchor="middle" fill="#ecf0f1" font-size="14" font-weight="bold">Anonymous</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">召回率（%），高精确率条件</text>
+
+  <!-- grid x=200+9.6*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="440" y1="128" x2="440" y2="384"/>
+    <line x1="680" y1="128" x2="680" y2="384"/>
+    <line x1="920" y1="128" x2="920" y2="384"/>
   </g>
 
-  <g transform="translate(580, 100)">
-    <rect x="0" y="0" width="120" height="200" rx="10" fill="#27ae60" filter="url(#shadow)"/>
-    <rect x="10" y="10" width="100" height="140" rx="5" fill="#2ecc71"/>
-    <circle cx="60" cy="90" r="25" fill="#f39c12"/>
-    <path d="M 45 80 Q 60 70 75 80" stroke="#c0392b" stroke-width="3" fill="none"/>
-    <circle cx="50" cy="85" r="3" fill="#2c3e50"/>
-    <circle cx="70" cy="85" r="3" fill="#2c3e50"/>
-    <circle cx="60" cy="170" r="8" fill="#27ae60"/>
-    <text x="60" y="230" text-anchor="middle" fill="#ecf0f1" font-size="14" font-weight="bold">You!</text>
+  <!-- row1: HN->LinkedIn 45.1 @99% vs 0.1 -->
+  <text x="190" y="159" font-size="12.5" fill="#1A1B1E" text-anchor="end">Hacker News → LinkedIn</text>
+  <text x="190" y="176" font-size="12" fill="#555" text-anchor="end">精确率 99% 条件</text>
+  <rect x="200" y="146" width="432.96" height="18" fill="#D55E00"/>
+  <text x="640" y="159" font-size="12" fill="#555">45.1</text>
+  <rect x="200" y="168" width="0.96" height="18" fill="#999999"/>
+  <text x="208" y="181" font-size="12" fill="#555">0.1（传统方法）</text>
+
+  <!-- row2: 89,000 候选池 55% -->
+  <text x="190" y="239" font-size="12.5" fill="#1A1B1E" text-anchor="end">89,000 个候选人的候选池</text>
+  <text x="190" y="256" font-size="12" fill="#555" text-anchor="end">精确率口径正文未给出</text>
+  <rect x="200" y="226" width="528" height="18" fill="#D55E00"/>
+  <text x="735" y="239" font-size="12" fill="#555">55</text>
+
+  <!-- row3: 100 万候选 约35 @90% -->
+  <text x="190" y="319" font-size="12.5" fill="#1A1B1E" text-anchor="end">外推 100 万个候选人</text>
+  <text x="190" y="336" font-size="12" fill="#555" text-anchor="end">90% 精确率条件</text>
+  <rect x="200" y="306" width="336" height="18" fill="#D55E00" opacity="0.35"/>
+  <line x1="536" y1="303" x2="536" y2="327" stroke="#D55E00" stroke-width="2" stroke-dasharray="3 2"/>
+  <text x="544" y="319" font-size="12" fill="#555">约 35（外推估计）</text>
+
+  <!-- value axis -->
+  <line x1="200" y1="384" x2="1160" y2="384" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="200" y1="384" x2="200" y2="388"/>
+    <line x1="440" y1="384" x2="440" y2="388"/>
+    <line x1="680" y1="384" x2="680" y2="388"/>
+    <line x1="920" y1="384" x2="920" y2="388"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="200" y="408">0</text>
+    <text x="440" y="408">25</text>
+    <text x="680" y="408">50</text>
+    <text x="920" y="408">75</text>
+  </g>
+  <text x="680" y="432" font-size="14" fill="#1A1B1E" text-anchor="middle">召回率（%）</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="60" y="480" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="480" font-size="15" fill="#1A1B1E">正文口径补充</text>
+  <g font-size="12" fill="#555">
+    <text x="60" y="510">Hacker News 与 Reddit 资料总体：召回率 25–67%，精确率 70–90%（正文区间，未拆分为单条数据）</text>
+    <text x="60" y="532">传统攻击在只有 100 个候选人时召回率就已经很低；攻击成本为每个资料 $1–$4、耗时几分钟</text>
+    <line x1="60" y1="554" x2="80" y2="554" stroke="#D55E00" stroke-width="2" stroke-dasharray="3 2"/>
+    <text x="86" y="558">虚线标记为正文「约」值的外推估计，非实测点</text>
   </g>
 
-  <g transform="translate(300, 80)">
-    <rect x="0" y="0" width="200" height="240" rx="15" fill="#2c3e50" filter="url(#shadow)"/>
-    
-    <circle cx="100" cy="60" r="30" fill="none" stroke="#e74c3c" stroke-width="4" filter="url(#glow)"/>
-    <path d="M 85 60 L 115 60 M 100 45 L 100 75" stroke="#e74c3c" stroke-width="4"/>
-    
-    <text x="100" y="120" text-anchor="middle" fill="#f39c12" font-size="16" font-weight="bold">LLM</text>
-    <text x="100" y="145" text-anchor="middle" fill="#ecf0f1" font-size="12">Deanonymization</text>
-    
-    <g transform="translate(50, 165)">
-      <rect width="100" height="8" rx="4" fill="#34495e"/>
-      <rect width="75" height="8" rx="4" fill="#e74c3c"/>
-    </g>
-  </g>
-
-  <g stroke="#f39c12" stroke-width="3" fill="none" marker-end="url(#arrow)">
-    <path d="M 220 150 Q 260 130 295 140" stroke-dasharray="5,5">
-      <animate attributeName="stroke-dashoffset" from="10" to="0" dur="1s" repeatCount="indefinite"/>
-    </path>
-    <path d="M 505 140 Q 540 130 580 150" stroke-dasharray="5,5">
-      <animate attributeName="stroke-dashoffset" from="10" to="0" dur="1s" repeatCount="indefinite"/>
-    </path>
-  </g>
-
-  <text x="400" y="360" text-anchor="middle" fill="#ecf0f1" font-size="24" font-weight="bold">Privacy is Dead?</text>
-  <text x="400" y="385" text-anchor="middle" fill="#95a5a6" font-size="14">LLM-Powered Deanonymization Era</text>
+  <!-- footnote -->
+  <text x="60" y="644" font-size="11" fill="#767676">数据：arXiv:2602.16800（ETH Zurich、Anthropic、MATS Research，2026）· 论文自测口径 · 89,000 候选池一行的精确率口径正文未给出 · 预印本未经同行评审</text>
 </svg>

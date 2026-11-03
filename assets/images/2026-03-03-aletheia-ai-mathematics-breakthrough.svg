@@ -16,64 +16,64 @@
     <text x="972" y="104">未解决（4 个）</text>
   </g>
 
-  <!-- axis -->
+  <!-- axis: P1..P10 at x = 100 + 100*i -->
   <line x1="90" y1="300" x2="1140" y2="300" stroke="#1A1B1E" stroke-width="0.75"/>
   <g stroke="#1A1B1E" stroke-width="0.75">
-    <line x1="204" y1="300" x2="204" y2="305"/>
-    <line x1="308" y1="300" x2="308" y2="305"/>
-    <line x1="412" y1="300" x2="412" y2="305"/>
-    <line x1="516" y1="300" x2="516" y2="305"/>
-    <line x1="620" y1="300" x2="620" y2="305"/>
-    <line x1="724" y1="300" x2="724" y2="305"/>
-    <line x1="828" y1="300" x2="828" y2="305"/>
-    <line x1="932" y1="300" x2="932" y2="305"/>
-    <line x1="1036" y1="300" x2="1036" y2="305"/>
-    <line x1="1140" y1="300" x2="1140" y2="305"/>
+    <line x1="200" y1="300" x2="200" y2="305"/>
+    <line x1="300" y1="300" x2="300" y2="305"/>
+    <line x1="400" y1="300" x2="400" y2="305"/>
+    <line x1="500" y1="300" x2="500" y2="305"/>
+    <line x1="600" y1="300" x2="600" y2="305"/>
+    <line x1="700" y1="300" x2="700" y2="305"/>
+    <line x1="800" y1="300" x2="800" y2="305"/>
+    <line x1="900" y1="300" x2="900" y2="305"/>
+    <line x1="1000" y1="300" x2="1000" y2="305"/>
+    <line x1="1100" y1="300" x2="1100" y2="305"/>
   </g>
   <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
-    <text x="204" y="325">P1</text>
-    <text x="308" y="325">P2</text>
-    <text x="412" y="325">P3</text>
-    <text x="516" y="325">P4</text>
-    <text x="620" y="325">P5</text>
-    <text x="724" y="325">P6</text>
-    <text x="828" y="325">P7</text>
-    <text x="932" y="325">P8</text>
-    <text x="1036" y="325">P9</text>
-    <text x="1140" y="325">P10</text>
+    <text x="200" y="325">P1</text>
+    <text x="300" y="325">P2</text>
+    <text x="400" y="325">P3</text>
+    <text x="500" y="325">P4</text>
+    <text x="600" y="325">P5</text>
+    <text x="700" y="325">P6</text>
+    <text x="800" y="325">P7</text>
+    <text x="900" y="325">P8</text>
+    <text x="1000" y="325">P9</text>
+    <text x="1100" y="325">P10</text>
   </g>
 
   <!-- markers -->
   <g>
-    <circle cx="204" cy="270" r="7" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
-    <circle cx="308" cy="270" r="7" fill="#D55E00"/>
-    <circle cx="412" cy="270" r="7" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
-    <circle cx="516" cy="270" r="7" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
-    <circle cx="620" cy="270" r="7" fill="#D55E00"/>
-    <circle cx="724" cy="270" r="7" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
-    <circle cx="828" cy="270" r="7" fill="#D55E00"/>
-    <circle cx="932" cy="270" r="7" fill="#D55E00"/>
-    <circle cx="1036" cy="270" r="7" fill="#D55E00"/>
-    <circle cx="1140" cy="270" r="7" fill="#D55E00"/>
+    <circle cx="200" cy="270" r="7" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <circle cx="300" cy="270" r="7" fill="#D55E00"/>
+    <circle cx="400" cy="270" r="7" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <circle cx="500" cy="270" r="7" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <circle cx="600" cy="270" r="7" fill="#D55E00"/>
+    <circle cx="700" cy="270" r="7" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <circle cx="800" cy="270" r="7" fill="#D55E00"/>
+    <circle cx="900" cy="270" r="7" fill="#D55E00"/>
+    <circle cx="1000" cy="270" r="7" fill="#D55E00"/>
+    <circle cx="1100" cy="270" r="7" fill="#D55E00"/>
   </g>
 
-  <!-- expert annotations above solved -->
+  <!-- expert annotations -->
   <g font-size="12" fill="#555" text-anchor="middle">
-    <text x="204" y="228">两配置无输出</text>
-    <text x="308" y="228">4/4 专家正确</text>
-    <text x="412" y="228">两配置无输出</text>
-    <text x="516" y="228">两配置无输出</text>
-    <text x="620" y="210">A 正确解决</text>
-    <text x="620" y="228">B 误解题目</text>
-    <text x="724" y="228">两配置无输出</text>
-    <text x="828" y="210">B 解决</text>
-    <text x="828" y="228">3/3 专家正确</text>
-    <text x="932" y="192">辛几何专家 3 位与相邻领域 2 位</text>
-    <text x="932" y="210">认为正确，2 位认为</text>
-    <text x="932" y="228">不够完整</text>
-    <text x="1036" y="228">4/4 专家正确</text>
-    <text x="1140" y="210" text-anchor="end">2/2 专家认定正确</text>
-    <text x="1140" y="228" text-anchor="end">A 自主发现最优复杂度界</text>
+    <text x="200" y="228">两配置无输出</text>
+    <text x="300" y="228">4/4 专家正确</text>
+    <text x="400" y="228">两配置无输出</text>
+    <text x="500" y="228">两配置无输出</text>
+    <text x="600" y="210">A 正确解决</text>
+    <text x="600" y="228">B 误解题目</text>
+    <text x="700" y="228">两配置无输出</text>
+    <text x="800" y="210">B 解决</text>
+    <text x="800" y="228">3/3 专家正确</text>
+    <text x="900" y="192">辛几何专家 3 位与相邻领域 2 位</text>
+    <text x="900" y="210">认为正确，2 位认为</text>
+    <text x="900" y="228">不够完整</text>
+    <text x="1000" y="228">4/4 专家正确</text>
+    <text x="1068" y="210" text-anchor="end">2/2 专家正确</text>
+    <text x="1132" y="228" text-anchor="end">A 自主发现最优复杂度界</text>
   </g>
 
   <!-- ============ panel b ============ -->
