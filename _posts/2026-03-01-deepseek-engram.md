@@ -1,139 +1,37 @@
 ---
 layout: post
-title:  "一分钟读论文：《DeepSeek Engram：颠覆GPU内存瓶颈！把知识存储从计算中分离，O(1)查找效率！》"
+title:  "一分钟读论文：《DeepSeek Engram 分离知识存储》"
 author: unbug
 categories: [AI]
-image: assets/images/arxiv-paper-deepseek-engram.png
+image: assets/images/2026-03-01-deepseek-engram.svg
 tags: [DeepSeek, Engram, Memory Architecture, Sparsity, MoE, LLM]
+description: "DeepSeek 与北京大学提出条件内存系统 Engram，把静态知识存储从动态推理计算中分离，实现 O(1) 查找并支持 DRAM 卸载，在等参数等 FLOPs 约束下全面提升知识、推理、代码与数学任务表现。"
 ---
 
-![DeepSeek Engram](assets/images/arxiv-paper-deepseek-engram.png)
+![DeepSeek Engram]({{ site.baseurl }}/assets/images/2026-03-01-deepseek-engram.svg)
 
-你有没有想过：为什么大模型需要这么贵的GPU？为什么每一代模型都在疯狂抢HBM内存？
+DeepSeek 与北京大学合作的论文[《Conditional Memory via Scalable Lookup》][paper1-url]（2026 年 1 月发布）提出条件内存系统 Engram，把静态知识存储与动态推理分离，实现 `O(1)` 查找并支持内存表卸载到普通 DRAM，GitHub 仓库已获 `3.8k stars`。
 
-来自DeepSeek和北京大学的团队刚刚给出了一个颠覆性的答案！他们发布了 **Engram** —— 一个全新的条件内存系统，把**静态知识存储**和**动态推理计算**彻底分离，实现了O(1)的查找效率，还能把巨大的内存表卸载到普通DRAM里！
+Engram 试图成为继 MoE（混合专家）之后大模型的又一条稀疏性轴：MoE 扩展条件计算，Engram 扩展条件内存。
 
-这篇论文刚刚在2026年1月12日发布，GitHub已经获得 **3.8k stars**，让我们一起来看看这个可能改变LLM架构的突破吧！
+## 问题：GPU 内存的瓶颈
 
----
+当前大模型面临 HBM 内存容量有限、价格昂贵的约束，而大量 GPU 周期实际花在静态知识的重复查找上，而非真正的推理计算。混合专家架构通过条件计算扩展了模型容量，但缺少原生的知识查找原语；对受出口限制影响的中国 AI 公司而言，获取顶级 GPU 内存尤为困难。Engram 的核心洞察是：静态知识和动态推理应该分开处理。
 
-## 核心问题：GPU内存的诅咒
-现在的大模型面临一个尴尬的局面：
+## Engram 的工作机制
 
-1. **HBM内存太贵了**：顶级GPU的HBM内存容量有限，价格昂贵
-2. **模型在浪费GPU资源**：大量的GPU周期都花在静态知识的查找上，而不是真正的推理
-3. **MoE不够用**：混合专家（MoE）通过条件计算扩展了容量，但缺少原生的知识查找原语
-4. **美国出口限制**：对中国AI公司来说，获取顶级GPU内存尤其困难
+Engram 将经典的 N-gram 嵌入现代化，构成一个确定性寻址、常数时间复杂度的条件内存系统，分三层工作。内存检索层从静态内存中检索 N-gram 知识，不需要复杂注意力机制，查找耗时不随模型规模增长，巨大的内存表可放在普通主机内存中。状态融合层把静态内存与动态隐藏状态融合，让早期层处理静态模式重建、深层专注复杂推理，模型有效深度保持不变。系统效率层面，Engram 与 MoE 构成互补的两条稀疏性轴——MoE 负责条件计算（动态），Engram 负责条件内存（静态），论文并给出 U 型缩放定律指导两者的最优容量分配。
 
-**关键洞察：静态知识和动态推理应该分开处理！**
+## 实验结果与意义
 
-这就是Engram要解决的问题！
+研究团队在严格的等参数量和等 FLOPs（浮点运算量）约束下对比 Engram-27B 与 MoE 基线：Engram-27B 在知识、推理、代码、数学四类任务上均取得一致改进，长文本任务准确率达 `97%`。机制分析显示，Engram 让早期层从静态模式重建中解放出来，更多深层资源可用于复杂推理，同时以最小化推理开销的方式支撑大规模内存表。
 
----
-
-## Engram：条件内存的新稀疏性轴
-Engram 的核心思想非常优雅但强大：**把经典的N-gram嵌入现代化，实现O(1)查找的条件内存系统！**
-
-**Engram 是这样工作的：**
-```
-1. 内存检索层：Engram模块从静态内存中检索N-gram知识
-   ├── 确定性寻址：不需要复杂的注意力机制
-   ├── O(1)查找：常数时间复杂度，不随模型规模增长
-   └── DRAM卸载：巨大的内存表可以放在普通主机内存里
-
-2. 状态融合层：把静态内存和动态隐藏状态融合
-   ├── 早期层处理静态模式重建
-   ├── 深层专注于复杂推理
-   └── 保持有效深度不变
-
-3. 与MoE互补：两种稀疏性轴协同工作
-   ├── MoE：条件计算（动态）
-   ├── Engram：条件内存（静态）
-   └── U型缩放定律：指导最优容量分配
-```
-
-**关键特性：**
-- ✅ **O(1)查找效率**：不随规模增长的常数时间复杂度
-- ✅ **97%长上下文准确率**：在长文本任务上表现优异
-- ✅ **DRAM卸载**：不需要昂贵的HBM内存
-- ✅ **确定性寻址**：可预测的性能表现
-- ✅ **完全开源**：论文和代码都已发布！
-
----
-
-## 实验结果：严格约束下的一致提升！
-研究团队在**严格的等参数量和等FLOPs约束**下做了实验，结果非常有说服力：
-
-**Engram-27B vs MoE基线：**
-| 任务类型 | 性能提升 |
-|---------|---------|
-| 知识任务 | ✅ 一致改进 |
-| 推理任务 | ✅ 一致改进 |
-| 代码任务 | ✅ 一致改进 |
-| 数学任务 | ✅ 一致改进 |
-
-**机制分析发现：**
-1. **早期层减负**：Engram让早期层从静态模式重建中解放出来
-2. **有效深度保留**：更多深层资源可以用于复杂推理
-3. **系统效率提升**：最小化推理开销的同时实现大规模内存表
-
----
-
-## 为什么这很重要？
-Engram 代表了LLM架构的一个全新方向：
-
-1. **降低硬件门槛**：不需要最顶级的GPU也能运行大模型
-2. **突破内存限制**：可以存储更多知识而不增加HBM需求
-3. **成本效益**：普通DRAM比HBM便宜太多了
-4. **中国AI的破局**：对受出口限制的中国公司尤其重要
-5. **架构创新**：为下一代LLM设计提供了新思路
-
-**这可能是DeepSeek V4的核心技术！**
-
----
-
-## 未来展望
-这个架构方向有太多令人兴奋的可能性：
-
-1. **内存-计算分离**：未来模型可能会有独立的内存和计算模块
-2. **多轴稀疏性**：MoE + Engram + 更多稀疏性轴
-3. **专业化硬件**：为Engram设计的专用硬件加速器
-4. **知识持续更新**：可以动态更新内存而不需要重新训练整个模型
-
----
-
-## 我的思考
-Engram 让我想起了计算机架构的演进历史——**CPU和内存的分离**。
-
-早期的计算机把计算和存储混在一起，但后来我们发现把它们分开、让各自专业化是更优的架构。Engram好像在LLM领域重演了这个故事！
-
-而且，这个思路特别适合中国的AI发展——在无法获得最顶级GPU的情况下，通过架构创新来突破限制，这才是真正的"弯道超车"！
-
-DeepSeek最近的一系列操作（R1、Engram）真的让人眼前一亮，他们好像找到了一条不同于OpenAI的技术路线。
-
----
-
-## 论文信息
-**标题**：Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models  
-**作者**：Liang Wenfeng等（DeepSeek团队 + 北京大学）  
-**机构**：DeepSeek; Peking University  
-**GitHub**：https://github.com/deepseek-ai/Engram  
-**论文PDF**：https://github.com/deepseek-ai/Engram/blob/main/Engram_paper.pdf  
-**发布日期**：2026年1月12日  
-**Stars**：3.8k+
-
----
-
-*你觉得Engram怎么样？你认为这种内存-计算分离的架构会成为下一代LLM的主流吗？DeepSeek的V4模型值得期待吗？在评论区分享你的想法吧！*
-
----
-
-**喜欢这篇文章吗？欢迎分享给你的朋友们！🚀**
-
+这一方向的意义在于降低大模型的硬件门槛：知识容量扩展不再线性推高 HBM 需求，普通 DRAM 的低成本优势得以利用，也为受内存限制的训练环境提供了架构层面的解法。内存与计算分离的思路在计算机体系结构史上已有先例——让存储和计算各自专业化历来是更优的架构选择，Engram 相当于在 LLM 中重演这一过程。沿着这一思路，未来模型可能出现独立的内存与计算模块、MoE 与 Engram 叠加的多轴稀疏性、面向条件内存的专用硬件加速器，以及不重训整个模型即可持续更新知识的机制。同类通过架构与数据效率创新突破资源约束的路线，可与站内[《一次训练算清数据价值》]({{ site.baseurl }}/data-shapley-one-training-run/)对照阅读。
 
 ## References
-- [github.com][ref1]
-- [github.com][ref2]
+- [Engram GitHub 仓库][paper1-url]
+- [Engram 论文 PDF][links-1]
 
-[ref1]: https://github.com/deepseek-ai/Engram
-[ref2]: https://github.com/deepseek-ai/Engram/blob/main/Engram_paper.pdf
+
+[paper1-url]: https://github.com/deepseek-ai/Engram
+[links-1]: https://github.com/deepseek-ai/Engram/blob/main/Engram_paper.pdf

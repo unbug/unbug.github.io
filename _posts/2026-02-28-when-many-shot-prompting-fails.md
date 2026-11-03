@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《Many-Shot 提示何时失效》"
 author: unbug
 categories: [AI, LLM]
-image: assets/images/arxiv-paper-many-shot-prompting.png
+image: assets/images/when-many-shot-prompting-fails.svg
 tags: [LLM, Prompting, CodeTranslation]
 description: "ICSE 2026 ReCode Workshop 论文通过 90000 多次代码翻译实验发现 Many-Shot 悖论：静态相似度随示例增多仅小幅提升，功能正确率却在 5-25 个示例时达峰，更多示例反而损害翻译正确性。"
 ---
@@ -16,7 +16,7 @@ Amir Kiarafiei 等人的论文[《When Many-Shot Prompting Fails: An Empirical S
 
 实验覆盖 `6` 种编程语言（Python、Java、JavaScript、C++、Go、Rust）之间的 `30` 种语言对，示例数量从零示例一路扩展到 `625` 个，提示长度约从 `10` 万 token 增至 `80` 万 token，总计超过 `90000` 次翻译；评估同时看两类指标：静态相似度（翻译结果与参考代码的字面接近程度）和功能正确性（以编译与测试通过衡量）。
 
-![Many-Shot Prompting](/assets/images/arxiv-paper-many-shot-prompting.png)
+![Many-Shot Prompting](/assets/images/when-many-shot-prompting-fails.svg)
 
 ## Many-Shot 悖论与实践启示
 

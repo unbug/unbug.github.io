@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">90000 多次翻译实验：静态相似度随示例增多仅温和改善，功能正确率在 5–25 个示例达峰后退化</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">两类指标随示例数量的走向（定性序列位置轴）</text>
+
+  <!-- gridlines horizontal -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="160" y1="160" x2="1140" y2="160"/>
+    
+    
+  </g>
+  <text x="150" y="164" font-size="12" fill="#767676" text-anchor="end">上升</text>
+  
+  <text x="150" y="304" font-size="12" fill="#767676" text-anchor="end">下降</text>
+
+  <!-- static similarity: gentle monotonic improvement (gray) -->
+  <polyline points="160,246 425,228 690,214 955,202 1140,196" fill="none" stroke="#999999" stroke-width="2"/>
+  <text x="1030" y="182" font-size="12" fill="#555">静态相似度：仅温和改善</text>
+
+  <!-- functional correctness: peak at 5-25 then degrade (vermillion) -->
+  <polyline points="160,286 322,178 500,172 690,222 955,266 1140,290" fill="none" stroke="#D55E00" stroke-width="2"/>
+  <text x="420" y="150" font-size="12" fill="#555">功能正确率：5–25 个示例达峰</text>
+  <text x="950" y="296" font-size="12" fill="#555">更多示例反而退化</text>
+
+  <!-- peak band marker -->
+  <line x1="322" y1="178" x2="322" y2="340" stroke="#999999" stroke-width="0.75" stroke-dasharray="4 3"/>
+  <line x1="500" y1="172" x2="500" y2="340" stroke="#999999" stroke-width="0.75" stroke-dasharray="4 3"/>
+  <text x="411" y="356" font-size="12" fill="#555" text-anchor="middle">最优区间</text>
+
+  <!-- x axis: categorical positions, all values from article -->
+  <line x1="160" y1="380" x2="1140" y2="380" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="160" y1="380" x2="160" y2="384"/>
+    <line x1="322" y1="380" x2="322" y2="384"/>
+    <line x1="500" y1="380" x2="500" y2="384"/>
+    <line x1="690" y1="380" x2="690" y2="384"/>
+    <line x1="955" y1="380" x2="955" y2="384"/>
+    <line x1="1140" y1="380" x2="1140" y2="384"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="160" y="402">0 个</text>
+    <text x="322" y="402">5 个</text>
+    <text x="500" y="402">25 个</text>
+    <text x="690" y="402">数十个</text>
+    <text x="955" y="402">上百个</text>
+    <text x="1140" y="402">625 个</text>
+  </g>
+  <text x="650" y="430" font-size="14" fill="#1A1B1E" text-anchor="middle">示例数量（正文未给出逐点数值，按序列位置标注）</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="60" y="482" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="482" font-size="15" fill="#1A1B1E">实验规模</text>
+  <g font-size="13" fill="#1A1B1E">
+    <text x="300" y="478">语言</text>
+    <text x="360" y="478">6 种（Python、Java、JavaScript、C++、Go、Rust）</text>
+    <text x="780" y="478">语言对 30 种</text>
+  </g>
+  <g font-size="13" fill="#1A1B1E">
+    <text x="300" y="508">示例范围</text>
+    <text x="420" y="508">0–625 个</text>
+    <text x="780" y="508">翻译次数 超过 90000 次</text>
+  </g>
+  <g font-size="13" fill="#1A1B1E">
+    <text x="300" y="538">提示长度</text>
+    <text x="420" y="538">约 10 万 token 增至 80 万 token</text>
+    <text x="780" y="538">发表 ICSE 2026 ReCode Workshop</text>
+  </g>
+
+  <!-- footnote -->
+  <text x="60" y="612" font-size="11" fill="#767676">数据：arXiv:2510.16809（6 语言 × 30 语言对，超过 90000 次翻译，论文自测口径）· 正文未报告逐点数值，a 面板为定性序列位置轴 · 预印本/Workshop 论文</text>
+</svg>

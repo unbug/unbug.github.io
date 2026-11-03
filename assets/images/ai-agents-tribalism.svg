@@ -1,117 +1,69 @@
-<svg width="800" height="450" xmlns="http://www.w3.org/2000/svg">
-  <!-- 渐变背景 -->
-  <defs>
-    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="barGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#8b5a2b;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#654321;stop-opacity:1" />
-    </linearGradient>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
-    </filter>
-  </defs>
-  
-  <!-- 背景 -->
-  <rect width="800" height="450" fill="url(#bgGradient)"/>
-  
-  <!-- 装饰性元素：星星/光点 -->
-  <circle cx="100" cy="80" r="2" fill="white" opacity="0.6"/>
-  <circle cx="700" cy="100" r="3" fill="white" opacity="0.5"/>
-  <circle cx="150" cy="380" r="2" fill="white" opacity="0.7"/>
-  <circle cx="650" cy="400" r="2" fill="white" opacity="0.6"/>
-  <circle cx="50" cy="200" r="1.5" fill="white" opacity="0.5"/>
-  <circle cx="750" cy="300" r="2" fill="white" opacity="0.6"/>
-  
-  <!-- 标题区域 -->
-  <text x="400" y="60" font-family="'Arial Black', Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="white" filter="url(#glow)">🍺 三个AI走进酒吧</text>
-  <text x="400" y="90" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="rgba(255,255,255,0.9)">AI代理的"蝇王"部落主义现象</text>
-  
-  <!-- 资源容量仪表盘 -->
-  <rect x="250" y="110" width="300" height="40" fill="rgba(255,255,255,0.2)" rx="20" stroke="rgba(255,255,255,0.5)" stroke-width="2"/>
-  <rect x="255" y="115" width="180" height="30" fill="url(#barGradient)" rx="15"/>
-  <text x="400" y="137" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">⚡ 资源容量: 60%</text>
-  
-  <!-- 酒吧吧台 -->
-  <rect x="80" y="300" width="640" height="25" fill="url(#barGradient)" rx="5" filter="url(#shadow)"/>
-  <rect x="100" y="325" width="600" height="90" fill="#4a3728" rx="5"/>
-  
-  <!-- 吧台装饰：木纹 -->
-  <line x1="120" y1="310" x2="700" y2="310" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-  <line x1="120" y1="315" x2="700" y2="315" stroke="rgba(0,0,0,0.1)" stroke-width="1"/>
-  
-  <!-- AI代理1 - 激进型 (红色) -->
-  <circle cx="200" cy="240" r="45" fill="rgba(255,107,107,0.3)"/>
-  <circle cx="200" cy="240" r="40" fill="#ff6b6b" stroke="#c0392b" stroke-width="4" filter="url(#shadow)"/>
-  <circle cx="200" cy="240" r="28" fill="#ff8787"/>
-  <!-- 眼睛 -->
-  <circle cx="190" cy="235" r="5" fill="white"/>
-  <circle cx="210" cy="235" r="5" fill="white"/>
-  <circle cx="190" cy="235" r="2.5" fill="#333"/>
-  <circle cx="210" cy="235" r="2.5" fill="#333"/>
-  <!-- 嘴巴 -->
-  <path d="M 188 252 Q 200 260 212 252" stroke="#c0392b" stroke-width="3" fill="none"/>
-  <text x="200" y="300" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#ff6b6b">🔥 激进型</text>
-  <text x="200" y="315" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="rgba(255,255,255,0.8)">27.3%</text>
-  
-  <!-- AI代理2 - 保守型 (蓝色) -->
-  <circle cx="400" cy="240" r="45" fill="rgba(77,171,247,0.3)"/>
-  <circle cx="400" cy="240" r="40" fill="#4dabf7" stroke="#1971c2" stroke-width="4" filter="url(#shadow)"/>
-  <circle cx="400" cy="240" r="28" fill="#74c0fc"/>
-  <!-- 眼睛 -->
-  <circle cx="390" cy="235" r="5" fill="white"/>
-  <circle cx="410" cy="235" r="5" fill="white"/>
-  <circle cx="390" cy="235" r="2.5" fill="#333"/>
-  <circle cx="410" cy="235" r="2.5" fill="#333"/>
-  <!-- 嘴巴 -->
-  <path d="M 388 255 Q 400 250 412 255" stroke="#1971c2" stroke-width="3" fill="none"/>
-  <text x="400" y="300" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#4dabf7">🧊 保守型</text>
-  <text x="400" y="315" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="rgba(255,255,255,0.8)">24.7%</text>
-  
-  <!-- AI代理3 - 机会主义型 (黄色) -->
-  <circle cx="600" cy="240" r="45" fill="rgba(255,212,59,0.3)"/>
-  <circle cx="600" cy="240" r="40" fill="#ffd43b" stroke="#f59f00" stroke-width="4" filter="url(#shadow)"/>
-  <circle cx="600" cy="240" r="28" fill="#ffe066"/>
-  <!-- 眼睛 -->
-  <circle cx="590" cy="235" r="5" fill="white"/>
-  <circle cx="610" cy="235" r="5" fill="white"/>
-  <circle cx="590" cy="235" r="2.5" fill="#333"/>
-  <circle cx="610" cy="235" r="2.5" fill="#333"/>
-  <!-- 嘴巴 -->
-  <path d="M 588 252 Q 600 262 612 252" stroke="#f59f00" stroke-width="3" fill="none"/>
-  <text x="600" y="300" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#ffd43b">🎯 机会主义型</text>
-  <text x="600" y="315" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="rgba(255,255,255,0.8)">48.1%</text>
-  
-  <!-- 部落边界线 -->
-  <line x1="280" y1="200" x2="280" y2="280" stroke="rgba(255,255,255,0.5)" stroke-width="2" stroke-dasharray="8,4"/>
-  <line x1="520" y1="200" x2="520" y2="280" stroke="rgba(255,255,255,0.5)" stroke-width="2" stroke-dasharray="8,4"/>
-  
-  <!-- 酒杯 -->
-  <!-- 激进型酒杯 -->
-  <path d="M 180 340 L 195 340 L 190 360 L 185 360 Z" fill="#ff8787" filter="url(#shadow)"/>
-  <ellipse cx="187.5" cy="340" rx="7.5" ry="3" fill="#ff8787"/>
-  <rect x="183" y="360" width="9" height="4" fill="#ff8787"/>
-  
-  <!-- 保守型酒杯 -->
-  <path d="M 390 340 L 405 340 L 400 360 L 395 360 Z" fill="#74c0fc" filter="url(#shadow)"/>
-  <ellipse cx="397.5" cy="340" rx="7.5" ry="3" fill="#74c0fc"/>
-  <rect x="393" y="360" width="9" height="4" fill="#74c0fc"/>
-  
-  <!-- 机会主义型酒杯 -->
-  <path d="M 590 340 L 605 340 L 600 360 L 595 360 Z" fill="#ffe066" filter="url(#shadow)"/>
-  <ellipse cx="597.5" cy="340" rx="7.5" ry="3" fill="#ffe066"/>
-  <rect x="593" y="360" width="9" height="4" fill="#ffe066"/>
-  
-  <!-- 说明文字 -->
-  <rect x="100" y="395" width="600" height="40" fill="rgba(255,255,255,0.15)" rx="10"/>
-  <text x="400" y="420" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="rgba(255,255,255,0.95)">🤖 当AI代理在资源受限环境中互动时，会自发形成不同的"部落"！</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">资源受限环境中多个 AI 代理自发形成部落：内部合作、外部竞争，部落边界随时间动态演化</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">实验设置</text>
+  <g font-size="13" fill="#1A1B1E">
+    <text x="300" y="100">N 个 AI 代理</text>
+    <text x="560" y="100">每轮独立决定是否申请一单位资源</text>
+    <text x="960" y="100">系统固定容量 C</text>
+  </g>
+  <text x="300" y="130" font-size="12" fill="#555">模拟设定：代理持续争抢有限资源（电力分配、带宽、计算力），观察群体层面涌现的行为</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="60" y="192" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="192" font-size="15" fill="#1A1B1E">涌现行为的四个层次（论文定性报告，未给出量化数值）</text>
+
+  <!-- stage axis: positions 1-4, labels are the four phenomenon names from article -->
+  <!-- occurrence markers: all four observed per article -->
+  <g>
+    <circle cx="340" cy="240" r="8" fill="#0072B2"/>
+    <text x="340" y="218" font-size="12.5" fill="#1A1B1E" text-anchor="middle">部落形成</text>
+    <text x="340" y="266" font-size="12" fill="#555" text-anchor="middle">代理自发分组</text>
+
+    <circle cx="580" cy="240" r="8" fill="#0072B2"/>
+    <text x="580" y="218" font-size="12.5" fill="#1A1B1E" text-anchor="middle">内部合作</text>
+    <text x="580" y="266" font-size="12" fill="#555" text-anchor="middle">同部落代理合作</text>
+
+    <circle cx="820" cy="240" r="8" fill="#D55E00"/>
+    <text x="820" y="218" font-size="12.5" fill="#1A1B1E" text-anchor="middle">外部竞争</text>
+    <text x="820" y="266" font-size="12" fill="#555" text-anchor="middle">跨部落竞争甚至冲突</text>
+
+    <circle cx="1060" cy="240" r="8" fill="#0072B2"/>
+    <text x="1060" y="218" font-size="12.5" fill="#1A1B1E" text-anchor="middle">动态演化</text>
+    <text x="1060" y="266" font-size="12" fill="#555" text-anchor="middle">部落结构与边界随时间变化</text>
+  </g>
+  <!-- axis -->
+  <line x1="240" y1="300" x2="1120" y2="300" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="240" y1="300" x2="240" y2="304"/>
+    <line x1="460" y1="300" x2="460" y2="304"/>
+    <line x1="680" y1="300" x2="680" y2="304"/>
+    <line x1="900" y1="300" x2="900" y2="304"/>
+    <line x1="1120" y1="300" x2="1120" y2="304"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="240" y="324">部落形成</text>
+    <text x="460" y="324">内部合作</text>
+    <text x="680" y="324">外部竞争</text>
+    <text x="900" y="324">动态演化</text>
+  </g>
+  <text x="680" y="352" font-size="14" fill="#1A1B1E" text-anchor="middle">四个发现（论文报告的层次顺序，序列位置轴，非数值刻度）</text>
+  <text x="240" y="386" font-size="12" fill="#555">LLM 代理并未减轻系统过载；行为模式与人类在资源有限环境中的行为高度相似</text>
+
+  <!-- ============ panel c ============ -->
+  <text x="60" y="446" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="82" y="446" font-size="15" fill="#1A1B1E">风险场景与应对方向</text>
+  <g font-size="12" fill="#555">
+    <text x="300" y="442">风险：对抗性部落或致电网不稳定；自动驾驶与交通管理代理需协调而非冲突；数据中心共享算力代理部落化致资源分配不均</text>
+    <text x="300" y="466">应对：设计激励机制奖励合作、抑制部落主义；优化资源分配减少竞争压力；实时监控代理行为并及时干预潜在冲突</text>
+    <text x="300" y="490">推论：社会结构可能是智能体在资源受限环境中的自然演化结果，而非人类独有</text>
+  </g>
+
+  <!-- footnote -->
+  <text x="60" y="646" font-size="11" fill="#767676">数据：arXiv:2602.23093（模拟研究，论文定性报告口径，正文未含量化数值，b 面板为序列位置轴）· 预印本未经同行评审</text>
 </svg>
