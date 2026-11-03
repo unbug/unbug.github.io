@@ -1,59 +1,59 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Arial,sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">软件稳定性定义为抵抗涟漪效应的能力，综述给出四类度量指标，现有研究集中在架构设计阶段</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">软件稳定性定义为抵抗涟漪效应的能力，综述给出四类度量指标，现有研究集中在架构设计阶段</text>
 
   <!-- ============ panel a ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">操作性定义：涟漪效应的连锁扩散（示意位置轴，非量化数值）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">操作性定义：涟漪效应的连锁扩散（示意位置轴，非量化数值）</text>
   <g>
     <circle cx="180" cy="200" r="34" fill="none" stroke="#D55E00" stroke-width="1.5"/>
-    <text x="180" y="205" font-size="12.5" fill="#1A1B1E" text-anchor="middle">触发源</text>
+    <text x="180" y="205" font-size="12.5" fill="#009E73" text-anchor="middle">触发源</text>
     <line x1="214" y1="200" x2="306" y2="200" stroke="#999999" stroke-width="1.5"/>
     <circle cx="340" cy="200" r="34" fill="none" stroke="#0072B2" stroke-width="1.5"/>
-    <text x="340" y="196" font-size="12" fill="#1A1B1E" text-anchor="middle">修改一个</text>
-    <text x="340" y="212" font-size="12" fill="#1A1B1E" text-anchor="middle">功能</text>
+    <text x="340" y="196" font-size="12" fill="#009E73" text-anchor="middle">修改一个</text>
+    <text x="340" y="212" font-size="12" fill="#009E73" text-anchor="middle">功能</text>
     <line x1="374" y1="200" x2="466" y2="200" stroke="#999999" stroke-width="1.5"/>
     <circle cx="500" cy="200" r="34" fill="none" stroke="#0072B2" stroke-width="1.5"/>
-    <text x="500" y="196" font-size="12" fill="#1A1B1E" text-anchor="middle">波及其他</text>
-    <text x="500" y="212" font-size="12" fill="#1A1B1E" text-anchor="middle">模块</text>
+    <text x="500" y="196" font-size="12" fill="#009E73" text-anchor="middle">波及其他</text>
+    <text x="500" y="212" font-size="12" fill="#009E73" text-anchor="middle">模块</text>
     <line x1="534" y1="200" x2="626" y2="200" stroke="#999999" stroke-width="1.5"/>
     <circle cx="660" cy="200" r="34" fill="none" stroke="#0072B2" stroke-width="1.5"/>
-    <text x="660" y="196" font-size="12" fill="#1A1B1E" text-anchor="middle">修复 bug</text>
-    <text x="660" y="212" font-size="12" fill="#1A1B1E" text-anchor="middle">引入新 bug</text>
+    <text x="660" y="196" font-size="12" fill="#009E73" text-anchor="middle">修复 bug</text>
+    <text x="660" y="212" font-size="12" fill="#009E73" text-anchor="middle">引入新 bug</text>
     <line x1="694" y1="200" x2="786" y2="200" stroke="#999999" stroke-width="1.5"/>
     <circle cx="820" cy="200" r="34" fill="none" stroke="#D55E00" stroke-width="1.5"/>
-    <text x="820" y="196" font-size="12" fill="#1A1B1E" text-anchor="middle">全局</text>
-    <text x="820" y="212" font-size="12" fill="#1A1B1E" text-anchor="middle">震荡</text>
+    <text x="820" y="196" font-size="12" fill="#009E73" text-anchor="middle">全局</text>
+    <text x="820" y="212" font-size="12" fill="#009E73" text-anchor="middle">震荡</text>
   </g>
   <text x="60" y="286" font-size="12" fill="#555">稳定性好的软件能把这种扩散控制在最小范围；本面板为概念链条的位置轴，不含数值</text>
 
   <!-- ============ panel b ============ -->
-  <text x="60" y="340" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="82" y="340" font-size="15" fill="#1A1B1E">四类稳定性度量指标（正文所述，无公开数值刻度）</text>
+  <text x="60" y="340" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="82" y="340" font-size="15" fill="#009E73">四类稳定性度量指标（正文所述，无公开数值刻度）</text>
   <g>
     <rect x="120" y="368" width="8" height="8" fill="#0072B2"/>
-    <text x="140" y="377" font-size="12.5" fill="#1A1B1E">CDI（核心设计不稳定性）</text>
+    <text x="140" y="377" font-size="12.5" fill="#009E73">CDI（核心设计不稳定性）</text>
     <text x="420" y="377" font-size="12" fill="#555">衡量设计层面的不稳定程度</text>
 
     <rect x="120" y="404" width="8" height="8" fill="#0072B2"/>
-    <text x="140" y="413" font-size="12.5" fill="#1A1B1E">CCI（核心调用不稳定性）</text>
+    <text x="140" y="413" font-size="12.5" fill="#009E73">CCI（核心调用不稳定性）</text>
     <text x="420" y="413" font-size="12" fill="#555">衡量模块调用关系的不稳定程度</text>
 
     <rect x="120" y="440" width="8" height="8" fill="#0072B2"/>
-    <text x="140" y="449" font-size="12.5" fill="#1A1B1E">Design Volatility（设计波动性）</text>
+    <text x="140" y="449" font-size="12.5" fill="#009E73">Design Volatility（设计波动性）</text>
     <text x="420" y="449" font-size="12" fill="#555">衡量设计变化的频率和幅度</text>
 
     <rect x="120" y="476" width="8" height="8" fill="#0072B2"/>
-    <text x="140" y="485" font-size="12.5" fill="#1A1B1E">Decision Volatility（决策波动性）</text>
+    <text x="140" y="485" font-size="12.5" fill="#009E73">Decision Volatility（决策波动性）</text>
     <text x="420" y="485" font-size="12" fill="#555">衡量技术决策的变化情况</text>
   </g>
   <text x="120" y="522" font-size="12" fill="#555">共同特点：关注变化如何发生、传播到哪里，而非代码本身对错</text>
 
   <!-- ============ panel c ============ -->
-  <text x="60" y="566" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
-  <text x="82" y="566" font-size="15" fill="#1A1B1E">工程价值定位</text>
+  <text x="60" y="566" font-size="15" font-weight="bold" fill="#009E73">c</text>
+  <text x="82" y="566" font-size="15" fill="#009E73">工程价值定位</text>
   <g font-size="12" fill="#555">
     <text x="60" y="596">维护阶段的指南针：评估设计好坏、做技术决策的参考</text>
     <text x="460" y="596">架构设计的考量：现有研究主要集中在架构设计阶段</text>

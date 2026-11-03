@@ -1,44 +1,44 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">PAN 用视觉编码器、LLM 预测骨干、视频扩散解码器的 GLP 架构，是首个通用、可交互、长时程的世界模型</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">PAN 用视觉编码器、LLM 预测骨干、视频扩散解码器的 GLP 架构，是首个通用、可交互、长时程的世界模型</text>
 
   <!-- ============ panel a: GLP architecture ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">GLP 架构（生成潜在预测）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">GLP 架构（生成潜在预测）</text>
 
   <defs>
     <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
-      <path d="M0,0 L7,3 L0,6 Z" fill="#1A1B1E"/>
+      <path d="M0,0 L7,3 L0,6 Z" fill="#009E73"/>
     </marker>
   </defs>
 
   <!-- input -->
-  <text x="95" y="255" font-size="12.5" fill="#1A1B1E" text-anchor="middle">高分辨率视频流</text>
+  <text x="95" y="255" font-size="12.5" fill="#009E73" text-anchor="middle">高分辨率视频流</text>
   <text x="95" y="273" font-size="12" fill="#555" text-anchor="middle">自然语言就能指挥</text>
 
   <!-- boxes -->
   <rect x="150" y="215" width="230" height="80" fill="none" stroke="#0072B2" stroke-width="1.5"/>
-  <text x="265" y="243" font-size="13" fill="#1A1B1E" text-anchor="middle">视觉编码器</text>
+  <text x="265" y="243" font-size="13" fill="#009E73" text-anchor="middle">视觉编码器</text>
   <text x="265" y="263" font-size="12" fill="#555" text-anchor="middle">优化过的 Vision Transformer</text>
   <text x="265" y="281" font-size="12" fill="#555" text-anchor="middle">3D 块分区</text>
 
   <rect x="450" y="215" width="250" height="80" fill="none" stroke="#D55E00" stroke-width="1.5"/>
-  <text x="575" y="243" font-size="13" fill="#1A1B1E" text-anchor="middle">LLM 预测骨干</text>
+  <text x="575" y="243" font-size="13" fill="#009E73" text-anchor="middle">LLM 预测骨干</text>
   <text x="575" y="263" font-size="12" fill="#555" text-anchor="middle">自回归潜在动态</text>
   <text x="575" y="281" font-size="12" fill="#555" text-anchor="middle">把模拟建立在海量文本知识上</text>
 
   <rect x="770" y="215" width="250" height="80" fill="none" stroke="#009E73" stroke-width="1.5"/>
-  <text x="895" y="243" font-size="13" fill="#1A1B1E" text-anchor="middle">视频扩散解码器</text>
+  <text x="895" y="243" font-size="13" fill="#009E73" text-anchor="middle">视频扩散解码器</text>
   <text x="895" y="263" font-size="12" fill="#555" text-anchor="middle">用流匹配损失当生成目标</text>
   <text x="895" y="281" font-size="12" fill="#555" text-anchor="middle">时间一致性也不能丢</text>
 
-  <text x="1080" y="255" font-size="12.5" fill="#1A1B1E" text-anchor="start">逼真画面</text>
+  <text x="1080" y="255" font-size="12.5" fill="#009E73" text-anchor="start">逼真画面</text>
   <text x="1080" y="273" font-size="12" fill="#555" text-anchor="start">模拟输出</text>
 
   <!-- arrows -->
-  <g stroke="#1A1B1E" stroke-width="1.5">
+  <g stroke="#009E73" stroke-width="1.5">
     <line x1="128" y1="255" x2="144" y2="255" marker-end="url(#arr)"/>
     <line x1="380" y1="255" x2="444" y2="255" marker-end="url(#arr)"/>
     <line x1="700" y1="255" x2="764" y2="255" marker-end="url(#arr)"/>
@@ -57,28 +57,28 @@
   <text x="60" y="390" font-size="12" fill="#555">分层抽象策略让误差累积和信号变异性都不是事儿；自回归潜在动态负责"想"，视频扩散解码器负责"画"</text>
 
   <!-- ============ panel b: capability sequence axis ============ -->
-  <text x="60" y="448" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="82" y="448" font-size="15" fill="#1A1B1E">四项核心能力（论文定性主张，序列位置轴，非数值刻度）</text>
+  <text x="60" y="448" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="82" y="448" font-size="15" fill="#009E73">四项核心能力（论文定性主张，序列位置轴，非数值刻度）</text>
 
   <g>
     <circle cx="200" cy="505" r="8" fill="#0072B2"/>
-    <text x="200" y="483" font-size="12.5" fill="#1A1B1E" text-anchor="middle">通用性</text>
+    <text x="200" y="483" font-size="12.5" fill="#009E73" text-anchor="middle">通用性</text>
     <text x="200" y="531" font-size="12" fill="#555" text-anchor="middle">什么场景都能玩</text>
 
     <circle cx="460" cy="505" r="8" fill="#0072B2"/>
-    <text x="460" y="483" font-size="12.5" fill="#1A1B1E" text-anchor="middle">自然语言交互</text>
+    <text x="460" y="483" font-size="12.5" fill="#009E73" text-anchor="middle">自然语言交互</text>
     <text x="460" y="531" font-size="12" fill="#555" text-anchor="middle">自然语言就能指挥它模拟</text>
 
     <circle cx="720" cy="505" r="8" fill="#D55E00"/>
-    <text x="720" y="483" font-size="12.5" fill="#1A1B1E" text-anchor="middle">分支模拟</text>
+    <text x="720" y="483" font-size="12.5" fill="#009E73" text-anchor="middle">分支模拟</text>
     <text x="720" y="531" font-size="12" fill="#555" text-anchor="middle">分出好几个平行宇宙，模拟不同选择的后果</text>
 
     <circle cx="980" cy="505" r="8" fill="#0072B2"/>
-    <text x="980" y="483" font-size="12.5" fill="#1A1B1E" text-anchor="middle">长时程一致性</text>
+    <text x="980" y="483" font-size="12.5" fill="#009E73" text-anchor="middle">长时程一致性</text>
     <text x="980" y="531" font-size="12" fill="#555" text-anchor="middle">世界状态稳得一批，不会失忆</text>
   </g>
-  <line x1="120" y1="505" x2="1080" y2="505" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="120" y1="505" x2="1080" y2="505" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="200" y1="505" x2="200" y2="509"/>
     <line x1="460" y1="505" x2="460" y2="509"/>
     <line x1="720" y1="505" x2="720" y2="509"/>

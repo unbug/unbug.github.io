@@ -1,55 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Noto Serif SC','Songti SC',serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'','',serif">
   <defs>
     <style>
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9C9484; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-      .rl { font-size: 15px; fill: #474C54; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-      .b { font-size: 12px; fill: #A5A296; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #CC79A7; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
+      .rl { font-size: 15px; fill: #009E73; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
+      .b { font-size: 12px; fill: #CC79A7; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
       .chip { font-size: 12.5px; font-weight: 600; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
     </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FDFDF9"/><stop offset="1" stop-color="#F3F6F4"/>
-    </linearGradient>
-    <linearGradient id="gWater" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#1E7F92"/><stop offset="1" stop-color="#63B7C4"/>
-    </linearGradient>
-    <linearGradient id="gBank" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#6E5A3A"/><stop offset="1" stop-color="#A38B5F"/>
-    </linearGradient>
-    <linearGradient id="gBuoy" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#E2542F"/><stop offset="1" stop-color="#F29068"/>
-    </linearGradient>
-    <linearGradient id="gGauge" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#B9892F"/><stop offset="1" stop-color="#E0BC62"/>
-    </linearGradient>
-    <linearGradient id="gRain" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#5F4BB6"/><stop offset="1" stop-color="#8F7ED4"/>
-    </linearGradient>
-    <linearGradient id="gReed" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2F8A5B"/><stop offset="1" stop-color="#71B98C"/>
-    </linearGradient>
   </defs>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1105" cy="110" r="140" fill="#1E7F92" opacity="0.07"/>
-  <circle cx="70" cy="620" r="115" fill="#E2542F" opacity="0.06"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gBuoy)"/>
+  <rect width="1200" height="675" fill="#CC79A7"/>
+  <circle cx="1105" cy="110" r="140" fill="#0072B2" opacity="0.07"/>
+  <circle cx="70" cy="620" r="115" fill="#D55E00" opacity="0.06"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="#CC79A7"/>
 
   <text class="k" x="64" y="84">范式雷达 · 开源协议 · 2026-05-25 · 工程师视角</text>
-  <text x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">洪水不改堤法，但漫过了堤</text>
-  <text x="64" y="158" font-size="15" fill="#5B6068" font-family="'PingFang SC','Helvetica Neue',sans-serif">GPL 防线的三个前提正被 AI 代码生成逐一冲垮——不是法律变了，是技术改了水位</text>
+  <text x="64" y="128" font-size="40" font-weight="700" fill="#009E73">洪水不改堤法，但漫过了堤</text>
+  <text x="64" y="158" font-size="15" fill="#009E73" font-family="'PingFang SC','Helvetica Neue',sans-serif">GPL 防线的三个前提正被 AI 代码生成逐一冲垮——不是法律变了，是技术改了水位</text>
 
   <!-- river gauge motif -->
   <g>
     <g transform="translate(950,64)">
       <path d="M 0 120 Q 30 112 60 120 Q 90 128 120 120 Q 150 112 180 120" fill="none" stroke="url(#gWater)" stroke-width="3"/>
       <path d="M 0 138 Q 30 130 60 138 Q 90 146 120 138 Q 150 130 180 138" fill="none" stroke="url(#gWater)" stroke-width="2.5" opacity="0.6"/>
-      <rect x="78" y="12" width="16" height="128" fill="#FFFFFF" stroke="#D8D2BE" stroke-width="1.5"/>
-      <g stroke="#6E5A3A" stroke-width="1.5">
+      <rect x="78" y="12" width="16" height="128" fill="#F0F0F0" stroke="#CC79A7" stroke-width="1.5"/>
+      <g stroke="#D55E00" stroke-width="1.5">
         <line x1="78" y1="30" x2="88" y2="30"/><line x1="78" y1="52" x2="84" y2="52"/><line x1="78" y1="74" x2="88" y2="74"/><line x1="78" y1="96" x2="84" y2="96"/>
       </g>
       <line x1="70" y1="40" x2="102" y2="40" stroke="url(#gBuoy)" stroke-width="3"/>
-      <text x="106" y="44" class="b" fill="#C14A28">警戒线</text>
-      <path d="M 30 116 q 8 -14 16 0 l -3 8 h -10 Z" fill="url(#gBuoy)"/>
+      <text x="106" y="44" class="b" fill="#D55E00">警戒线</text>
+      <path d="M 30 116 q 8 -14 16 0 l -3 8 h -10 Z" fill="#CC79A7"/>
       <g stroke="url(#gRain)" stroke-width="2" opacity="0.7">
         <line x1="126" y1="10" x2="120" y2="26"/><line x1="146" y1="6" x2="140" y2="22"/><line x1="166" y1="10" x2="160" y2="26"/>
       </g>
@@ -58,27 +37,27 @@
 
   <!-- three premises slope -->
   <g>
-    <rect x="64" y="200" width="690" height="248" fill="#1E7F92" opacity="0.06"/>
+    <rect x="64" y="200" width="690" height="248" fill="#0072B2" opacity="0.06"/>
     <text class="rl" x="92" y="232">Copyleft 防线的三个前提 · AI 来水后的水位</text>
 
     <g>
       <text class="rl" x="120" y="286" text-anchor="end">代码可溯源</text>
       <line x1="150" y1="266" x2="470" y2="300" stroke="url(#gBuoy)" stroke-width="3"/>
-      <circle cx="150" cy="266" r="7" fill="url(#gReed)"/><circle cx="470" cy="300" r="8" fill="url(#gBuoy)"/>
+      <circle cx="150" cy="266" r="7" fill="#56B4E9"/><circle cx="470" cy="300" r="8" fill="#CC79A7"/>
       <text class="b" x="488" y="298">AI 理解后重写，字节层面面目全非</text>
       <text class="b" x="488" y="314">哈希扫描基本失效</text>
     </g>
     <g>
       <text class="rl" x="120" y="356" text-anchor="end">派生关系可认定</text>
       <line x1="150" y1="336" x2="470" y2="370" stroke="url(#gBuoy)" stroke-width="3"/>
-      <circle cx="150" cy="336" r="7" fill="url(#gReed)"/><circle cx="470" cy="370" r="8" fill="url(#gBuoy)"/>
+      <circle cx="150" cy="336" r="7" fill="#56B4E9"/><circle cx="470" cy="370" r="8" fill="#CC79A7"/>
       <text class="b" x="488" y="368">权重是统计抽象，法院尚未裁定是派生</text>
       <text class="b" x="488" y="384">2024.06 裁定须「基本相同」</text>
     </g>
     <g>
       <text class="rl" x="120" y="426" text-anchor="end">分发行为可检测</text>
       <line x1="150" y1="406" x2="470" y2="406" stroke="url(#gWater)" stroke-width="3"/>
-      <circle cx="150" cy="406" r="7" fill="url(#gReed)"/><circle cx="470" cy="406" r="8" fill="url(#gWater)"/>
+      <circle cx="150" cy="406" r="7" fill="#56B4E9"/><circle cx="470" cy="406" r="8" fill="#56B4E9"/>
       <text class="b" x="488" y="404">模型权重私有分发，Copyleft 回馈归零</text>
       <text class="b" x="488" y="420">训练算「学习」，不算「分发」</text>
     </g>
@@ -87,31 +66,31 @@
 
   <!-- right column -->
   <g>
-    <rect x="836" y="200" width="304" height="92" rx="10" fill="url(#gBuoy)" opacity="0.08"/>
-    <text x="856" y="238" font-size="18" font-weight="700" fill="#C14A28">三道新水口</text>
+    <rect x="836" y="200" width="304" height="92" rx="10" fill="#CC79A7" opacity="0.08"/>
+    <text x="856" y="238" font-size="18" font-weight="700" fill="#D55E00">三道新水口</text>
     <text x="856" y="262" class="b">训练吞噬不触发义务 · 生成漂白许可证</text>
     <text x="856" y="280" class="b">举证门槛高到够不着</text>
 
     <text class="rl" x="856" y="330">开发者从不查生成代码许可证来源</text>
-    <rect x="856" y="342" width="204" height="14" rx="4" fill="url(#gBuoy)"/>
-    <text x="1070" y="355" font-size="16" font-weight="700" fill="#C14A28" font-family="'PingFang SC',sans-serif">68%</text>
+    <rect x="856" y="342" width="204" height="14" rx="4" fill="#CC79A7"/>
+    <text x="1070" y="355" font-size="16" font-weight="700" fill="#D55E00" font-family="'PingFang SC',sans-serif">68%</text>
     <text class="rl" x="856" y="388">企业审查无 AI 代码专项检查</text>
-    <rect x="856" y="400" width="123" height="14" rx="4" fill="url(#gRain)"/>
-    <text x="989" y="413" font-size="16" font-weight="700" fill="#5E4BA8" font-family="'PingFang SC',sans-serif">41%</text>
+    <rect x="856" y="400" width="123" height="14" rx="4" fill="#CC79A7"/>
+    <text x="989" y="413" font-size="16" font-weight="700" fill="#0072B2" font-family="'PingFang SC',sans-serif">41%</text>
   </g>
 
   <!-- bottom chips -->
-  <line x1="64" y1="492" x2="1136" y2="492" stroke="#E2E6E0"/>
+  <line x1="64" y1="492" x2="1136" y2="492" stroke="#CC79A7"/>
   <g>
     <text class="rl" x="64" y="534">洪峰实录</text>
-    <rect x="160" y="514" width="150" height="28" rx="14" fill="url(#gGauge)" opacity="0.26"/>
-    <text x="235" y="533" text-anchor="middle" class="chip" fill="#7A5A14">uutils：GPLv3 → MIT</text>
-    <rect x="322" y="514" width="196" height="28" rx="14" fill="url(#gWater)" opacity="0.16"/>
-    <text x="420" y="533" text-anchor="middle" class="chip" fill="#175F6E">Ubuntu 26.04 LTS 全面切换</text>
-    <rect x="530" y="514" width="216" height="28" rx="14" fill="url(#gRain)" opacity="0.16"/>
-    <text x="638" y="533" text-anchor="middle" class="chip" fill="#5E4BA8">Hermes 事件：架构级 AI 洗白</text>
+    <rect x="160" y="514" width="150" height="28" rx="14" fill="#F0E442" opacity="0.26"/>
+    <text x="235" y="533" text-anchor="middle" class="chip" fill="#D55E00">uutils：GPLv3 → MIT</text>
+    <rect x="322" y="514" width="196" height="28" rx="14" fill="#56B4E9" opacity="0.16"/>
+    <text x="420" y="533" text-anchor="middle" class="chip" fill="#009E73">Ubuntu 26.04 LTS 全面切换</text>
+    <rect x="530" y="514" width="216" height="28" rx="14" fill="#CC79A7" opacity="0.16"/>
+    <text x="638" y="533" text-anchor="middle" class="chip" fill="#0072B2">Hermes 事件：架构级 AI 洗白</text>
     <text class="b" x="762" y="533">被抄方反手 MIT → GPL v3</text>
   </g>
-  <text x="64" y="584" font-size="18" fill="#1A1B1E">堤坝失守前，水位先变——扫描工具追不上「理解后重写」的洪水。</text>
+  <text x="64" y="584" font-size="18" fill="#009E73">堤坝失守前，水位先变——扫描工具追不上「理解后重写」的洪水。</text>
   <text class="b" x="1136" y="618" text-anchor="end" font-family="'PingFang SC','Helvetica Neue',sans-serif">统计数据为文中引用口径 · 截至 2026-05 · Micropaper</text>
 </svg>

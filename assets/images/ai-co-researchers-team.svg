@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">四个 AI 模型作为共同研究员发表论文并列为共同作者；OpenAI 报告 ChatGPT 每周 840 万条高级科学和数学消息</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">四个 AI 模型作为共同研究员发表论文并列为共同作者；OpenAI 报告 ChatGPT 每周 840 万条高级科学和数学消息</text>
 
   <!-- ============ panel a: roles ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">四个模型的分工（论文报告的职责，序列位置轴，非数值刻度）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">四个模型的分工（论文报告的职责，序列位置轴，非数值刻度）</text>
 
-  <line x1="100" y1="330" x2="1140" y2="330" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="100" y1="330" x2="1140" y2="330" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="255" y1="330" x2="255" y2="334"/>
     <line x1="510" y1="330" x2="510" y2="334"/>
     <line x1="765" y1="330" x2="765" y2="334"/>
@@ -17,34 +17,34 @@
   </g>
   <g>
     <circle cx="255" cy="242" r="8" fill="#0072B2"/>
-    <text x="255" y="218" font-size="12.5" fill="#1A1B1E" text-anchor="middle">Claude Opus</text>
+    <text x="255" y="218" font-size="12.5" fill="#009E73" text-anchor="middle">Claude Opus</text>
     <text x="255" y="266" font-size="12" fill="#555" text-anchor="middle">假设设计与伦理把关</text>
     <text x="255" y="286" font-size="12" fill="#555" text-anchor="middle">像审稿人挑战假设</text>
-    <text x="255" y="356" font-size="12.5" fill="#1A1B1E" text-anchor="middle">GPQA 分数 0.9</text>
+    <text x="255" y="356" font-size="12.5" fill="#009E73" text-anchor="middle">GPQA 分数 0.9</text>
     <text x="255" y="374" font-size="12" fill="#555" text-anchor="middle">商用模型最高（LLM-Stats，2026 年 2 月）</text>
 
     <circle cx="510" cy="242" r="8" fill="#0072B2"/>
-    <text x="510" y="218" font-size="12.5" fill="#1A1B1E" text-anchor="middle">Gemini Pro</text>
+    <text x="510" y="218" font-size="12.5" fill="#009E73" text-anchor="middle">Gemini Pro</text>
     <text x="510" y="266" font-size="12" fill="#555" text-anchor="middle">模式识别与数据分析</text>
     <text x="510" y="286" font-size="12" fill="#555" text-anchor="middle">23 次迭代中识别混淆变量</text>
-    <text x="510" y="356" font-size="12.5" fill="#1A1B1E" text-anchor="middle">数据集 200 GB</text>
+    <text x="510" y="356" font-size="12.5" fill="#009E73" text-anchor="middle">数据集 200 GB</text>
     <text x="510" y="374" font-size="12" fill="#555" text-anchor="middle">二进制数据集交叉引用公共存储库</text>
 
     <circle cx="765" cy="242" r="8" fill="#0072B2"/>
-    <text x="765" y="218" font-size="12.5" fill="#1A1B1E" text-anchor="middle">ChatGPT</text>
+    <text x="765" y="218" font-size="12.5" fill="#009E73" text-anchor="middle">ChatGPT</text>
     <text x="765" y="266" font-size="12" fill="#555" text-anchor="middle">抽象假设转为代码框架</text>
     <text x="765" y="286" font-size="12" fill="#555" text-anchor="middle">可执行框架</text>
 
     <circle cx="1020" cy="242" r="8" fill="#D55E00"/>
-    <text x="1020" y="218" font-size="12.5" fill="#1A1B1E" text-anchor="middle">Manus</text>
+    <text x="1020" y="218" font-size="12.5" fill="#009E73" text-anchor="middle">Manus</text>
     <text x="1020" y="266" font-size="12" fill="#555" text-anchor="middle">二进制数据流中发现隐藏异常</text>
     <text x="1020" y="286" font-size="12" fill="#555" text-anchor="middle">发现成为假设核心</text>
   </g>
-  <text x="630" y="408" font-size="14" fill="#1A1B1E" text-anchor="middle">四模型构成多智能体批评系统：互相质疑、互相验证（按论文列举顺序排列）</text>
+  <text x="630" y="408" font-size="14" fill="#009E73" text-anchor="middle">四模型构成多智能体批评系统：互相质疑、互相验证（按论文列举顺序排列）</text>
 
   <!-- ============ panel b: OpenAI report bars ============ -->
-  <text x="60" y="462" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="82" y="462" font-size="15" fill="#1A1B1E">OpenAI《AI as a Scientific Collaborator》报告的两项周度指标</text>
+  <text x="60" y="462" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="82" y="462" font-size="15" fill="#009E73">OpenAI《AI as a Scientific Collaborator》报告的两项周度指标</text>
 
   <g stroke="#D9D9D9" stroke-width="0.5">
     <line x1="170" y1="490" x2="600" y2="490"/>
@@ -53,19 +53,19 @@
   <!-- bars: 正文报告数值同尺度，无数值轴刻度，条/人不同单位 -->
   <rect x="170" y="494" width="344" height="20" fill="#0072B2"/>
   <text x="522" y="509" font-size="12" fill="#555">每周 840 万条消息</text>
-  <text x="160" y="509" font-size="12.5" fill="#1A1B1E" text-anchor="end">高级科学和数学消息</text>
+  <text x="160" y="509" font-size="12.5" fill="#009E73" text-anchor="end">高级科学和数学消息</text>
 
   <rect x="170" y="536" width="80" height="20" fill="#0072B2" opacity="0.35"/>
   <text x="260" y="551" font-size="12" fill="#555">约 130 万用户</text>
-  <text x="160" y="551" font-size="12.5" fill="#1A1B1E" text-anchor="end">高级数学科学主题周用户</text>
+  <text x="160" y="551" font-size="12.5" fill="#009E73" text-anchor="end">高级数学科学主题周用户</text>
 
-  <line x1="170" y1="570" x2="560" y2="570" stroke="#1A1B1E" stroke-width="0.75"/>
+  <line x1="170" y1="570" x2="560" y2="570" stroke="#009E73" stroke-width="0.75"/>
   <text x="382" y="614" font-size="12" fill="#555" text-anchor="middle">注：两条形分别为「条」与「人」，正文无数值轴刻度，按正文报告数值同尺度绘制</text>
   <text x="385" y="630" font-size="12" fill="#555" text-anchor="middle">每月高级科学消息数量增长近 50%</text>
 
   <!-- ============ panel c ============ -->
-  <text x="660" y="462" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
-  <text x="682" y="462" font-size="15" fill="#1A1B1E">数学领域进展与发表规范</text>
+  <text x="660" y="462" font-size="15" font-weight="bold" fill="#009E73">c</text>
+  <text x="682" y="462" font-size="15" fill="#009E73">数学领域进展与发表规范</text>
   <g font-size="12" fill="#555">
     <text x="660" y="500">GPT-5.2 Thinking 在 2025 年 AIME 美国数学邀请赛中无需外部工具取得满分</text>
     <text x="660" y="524">FrontierMath（Google 验证）：解决第 1-3 级中 40.3% 的问题</text>

@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">立场论文提出 AI 原生粒子加速器三阶段路线图：AI 辅助、AI 增强、AI 自主，配套九大研究方向</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">立场论文提出 AI 原生粒子加速器三阶段路线图：AI 辅助、AI 增强、AI 自主，配套九大研究方向</text>
 
   <!-- ============ panel a: three-stage framework ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">AI 集成三阶段框架（阶段序列位置轴，非数值刻度）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">AI 集成三阶段框架（阶段序列位置轴，非数值刻度）</text>
 
   <!-- stage axis -->
-  <line x1="120" y1="330" x2="1120" y2="330" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="120" y1="330" x2="1120" y2="330" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="300" y1="330" x2="300" y2="334"/>
     <line x1="620" y1="330" x2="620" y2="334"/>
     <line x1="940" y1="330" x2="940" y2="334"/>
@@ -20,9 +20,9 @@
   <circle cx="620" cy="330" r="8" fill="#56B4E9"/>
   <circle cx="940" cy="330" r="8" fill="#D55E00"/>
   <!-- stage titles -->
-  <text x="300" y="212" font-size="13" fill="#1A1B1E" text-anchor="middle" font-weight="bold">AI 辅助阶段（当前）</text>
-  <text x="620" y="212" font-size="13" fill="#1A1B1E" text-anchor="middle" font-weight="bold">AI 增强阶段（近期）</text>
-  <text x="940" y="212" font-size="13" fill="#1A1B1E" text-anchor="middle" font-weight="bold">AI 自主阶段（长期）</text>
+  <text x="300" y="212" font-size="13" fill="#009E73" text-anchor="middle" font-weight="bold">AI 辅助阶段（当前）</text>
+  <text x="620" y="212" font-size="13" fill="#009E73" text-anchor="middle" font-weight="bold">AI 增强阶段（近期）</text>
+  <text x="940" y="212" font-size="13" fill="#009E73" text-anchor="middle" font-weight="bold">AI 自主阶段（长期）</text>
   <!-- descriptions -->
   <g font-size="12" fill="#555" text-anchor="middle">
     <text x="300" y="240">AI 工具事后改装到以人为</text>
@@ -36,17 +36,17 @@
     <text x="940" y="276">监督和战略指导</text>
   </g>
   <!-- timeline labels under axis -->
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+  <g font-size="12.5" fill="#009E73" text-anchor="middle">
     <text x="300" y="356">辅助驾驶：成熟基础能力</text>
     <text x="620" y="356">人机共驾：逐步增加自主性</text>
     <text x="940" y="356">真正的自主运行</text>
   </g>
-  <text x="620" y="392" font-size="14" fill="#1A1B1E" text-anchor="middle">落地路径（按论文推进顺序排列的序列位置轴）</text>
+  <text x="620" y="392" font-size="14" fill="#009E73" text-anchor="middle">落地路径（按论文推进顺序排列的序列位置轴）</text>
 
   <!-- ============ panel b: nine research directions ============ -->
-  <text x="60" y="446" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="82" y="446" font-size="15" fill="#1A1B1E">九大研究方向</text>
-  <g font-size="12" fill="#1A1B1E">
+  <text x="60" y="446" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="82" y="446" font-size="15" fill="#009E73">九大研究方向</text>
+  <g font-size="12" fill="#009E73">
     <text x="82" y="478">代理 AI 控制架构</text>
     <text x="82" y="500">集成知识库和推理</text>
     <text x="82" y="522">学习和自适应控制</text>

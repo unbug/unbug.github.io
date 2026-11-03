@@ -1,21 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">ELM 用 100+ 个专门化小模型加动态编排替代单一 LLM；Velma 2.0 准确率比 Google Gemini 高 51%，成本比 LLM 低 10-100 倍</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">ELM 用 100+ 个专门化小模型加动态编排替代单一 LLM；Velma 2.0 准确率比 Google Gemini 高 51%，成本比 LLM 低 10-100 倍</text>
 
   <!-- ============ panel a ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">Velma 2.0 相对基线的量化指标（正文口径，直接标注）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">Velma 2.0 相对基线的量化指标（正文口径，直接标注）</text>
 
   <!-- flag-marker bars: numeric axis omitted; exact values labelled per element -->
-  <line x1="300" y1="130" x2="300" y2="250" stroke="#1A1B1E" stroke-width="0.75"/>
-  <text x="288" y="162" font-size="12.5" fill="#1A1B1E" text-anchor="end">准确率相对 Google Gemini</text>
+  <line x1="300" y1="130" x2="300" y2="250" stroke="#009E73" stroke-width="0.75"/>
+  <text x="288" y="162" font-size="12.5" fill="#009E73" text-anchor="end">准确率相对 Google Gemini</text>
   <rect x="300" y="149" width="420" height="18" fill="#D55E00"/>
   <polygon points="720,149 744,158 720,167" fill="#D55E00"/>
   <text x="756" y="162" font-size="12" fill="#555">高 51%（条形长度为示意，非数值刻度）</text>
 
-  <text x="288" y="222" font-size="12.5" fill="#1A1B1E" text-anchor="end">成本相对 LLM（区间）</text>
+  <text x="288" y="222" font-size="12.5" fill="#009E73" text-anchor="end">成本相对 LLM（区间）</text>
   <rect x="300" y="209" width="200" height="18" fill="#0072B2"/>
   <polygon points="500,209 524,218 500,227" fill="#0072B2"/>
   <rect x="540" y="209" width="200" height="18" fill="#0072B2"/>
@@ -24,8 +24,8 @@
   <text x="300" y="272" font-size="12" fill="#555">成本轴为正文区间两端（10-100 倍）的序列位置旗标，非等比数值刻度</text>
 
   <!-- ============ panel b ============ -->
-  <text x="60" y="404" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="82" y="404" font-size="15" fill="#1A1B1E">规模与训练数据（正文口径）</text>
+  <text x="60" y="404" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="82" y="404" font-size="15" fill="#009E73">规模与训练数据（正文口径）</text>
   <g font-size="12" fill="#555">
     <text x="60" y="438">专门化小模型：100+ 个，编排层实时整合冲突信号</text>
     <text x="60" y="462">训练数据：210 亿分钟真实对话音频，覆盖游戏、客服、金融等场景</text>
@@ -34,19 +34,19 @@
   </g>
 
   <!-- ============ panel c ============ -->
-  <text x="660" y="404" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
-  <text x="682" y="404" font-size="15" fill="#1A1B1E">Velma 2.0 五层分析（正文列举顺序，序列位置轴，非数值刻度）</text>
+  <text x="660" y="404" font-size="15" font-weight="bold" fill="#009E73">c</text>
+  <text x="682" y="404" font-size="15" fill="#009E73">Velma 2.0 五层分析（正文列举顺序，序列位置轴，非数值刻度）</text>
   <g>
     <circle cx="720" cy="440" r="7" fill="#0072B2"/>
-    <text x="740" y="444" font-size="12.5" fill="#1A1B1E">1 声学信号层：音调、音量、语速、背景噪音</text>
+    <text x="740" y="444" font-size="12.5" fill="#009E73">1 声学信号层：音调、音量、语速、背景噪音</text>
     <circle cx="720" cy="472" r="7" fill="#0072B2"/>
-    <text x="740" y="476" font-size="12.5" fill="#1A1B1E">2 语音特征层：情感、语调与犹豫模式</text>
+    <text x="740" y="476" font-size="12.5" fill="#009E73">2 语音特征层：情感、语调与犹豫模式</text>
     <circle cx="720" cy="504" r="7" fill="#0072B2"/>
-    <text x="740" y="508" font-size="12.5" fill="#1A1B1E">3 内容理解层：语音识别、上下文与意图</text>
+    <text x="740" y="508" font-size="12.5" fill="#009E73">3 内容理解层：语音识别、上下文与意图</text>
     <circle cx="720" cy="536" r="7" fill="#0072B2"/>
-    <text x="740" y="540" font-size="12.5" fill="#1A1B1E">4 行为模式层：对话动态、欺骗检测、政策违规</text>
+    <text x="740" y="540" font-size="12.5" fill="#009E73">4 行为模式层：对话动态、欺骗检测、政策违规</text>
     <circle cx="720" cy="568" r="7" fill="#D55E00"/>
-    <text x="740" y="572" font-size="12.5" fill="#1A1B1E">5 综合洞察层：多信号融合与实时决策</text>
+    <text x="740" y="572" font-size="12.5" fill="#009E73">5 综合洞察层：多信号融合与实时决策</text>
   </g>
   <line x1="700" y1="452" x2="700" y2="556" stroke="#999999" stroke-width="1.5" stroke-dasharray="4 3"/>
 

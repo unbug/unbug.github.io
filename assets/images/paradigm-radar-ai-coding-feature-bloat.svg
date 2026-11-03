@@ -1,84 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Noto Serif SC','Songti SC',serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'','',serif">
   <defs>
     <style>
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9C9484; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-      .rl { font-size: 15px; fill: #474C54; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-      .b { font-size: 12px; fill: #A5A296; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #CC79A7; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
+      .rl { font-size: 15px; fill: #009E73; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
+      .b { font-size: 12px; fill: #CC79A7; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
       .chip { font-size: 12.5px; font-weight: 600; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
     </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FEFCF8"/><stop offset="1" stop-color="#F7F2EC"/>
-    </linearGradient>
-    <linearGradient id="gWood" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7A5230"/><stop offset="1" stop-color="#AD8256"/>
-    </linearGradient>
-    <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#0E7C86"/><stop offset="1" stop-color="#4FB3BC"/>
-    </linearGradient>
-    <linearGradient id="gRose" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#C94F6D"/><stop offset="1" stop-color="#E58AA0"/>
-    </linearGradient>
-    <linearGradient id="gLavi" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7A5AA8"/><stop offset="1" stop-color="#A98CCB"/>
-    </linearGradient>
-    <linearGradient id="gSun" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#DFA02C"/><stop offset="1" stop-color="#F0C76A"/>
-    </linearGradient>
-    <linearGradient id="gMoss" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#4F7A3A"/><stop offset="1" stop-color="#83AA6A"/>
-    </linearGradient>
   </defs>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1105" cy="110" r="140" fill="#C94F6D" opacity="0.07"/>
-  <circle cx="70" cy="620" r="115" fill="#0E7C86" opacity="0.06"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gRose)"/>
+  <rect width="1200" height="675" fill="#CC79A7"/>
+  <circle cx="1105" cy="110" r="140" fill="#CC79A7" opacity="0.07"/>
+  <circle cx="70" cy="620" r="115" fill="#009E73" opacity="0.06"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="#CC79A7"/>
 
   <text class="k" x="64" y="84">范式雷达 · FAROS AI / PENDO 遥测 · 2026-05-27</text>
-  <text x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">柜子塞满，常穿的还是那三件</text>
-  <text x="64" y="158" font-size="15" fill="#5B6068" font-family="'PingFang SC','Helvetica Neue',sans-serif">AI Coding 拆掉「做不完」这个制动器后，功能以十倍速堆进没人打开的抽屉</text>
+  <text x="64" y="128" font-size="40" font-weight="700" fill="#009E73">柜子塞满，常穿的还是那三件</text>
+  <text x="64" y="158" font-size="15" fill="#009E73" font-family="'PingFang SC','Helvetica Neue',sans-serif">AI Coding 拆掉「做不完」这个制动器后，功能以十倍速堆进没人打开的抽屉</text>
 
   <!-- overstuffed wardrobe motif -->
   <g transform="translate(1004,56)">
-    <rect x="0" y="0" width="150" height="126" rx="6" fill="#FFFFFF" stroke="url(#gWood)" stroke-width="4"/>
+    <rect x="0" y="0" width="150" height="126" rx="6" fill="#F0F0F0" stroke="url(#gWood)" stroke-width="4"/>
     <line x1="0" y1="46" x2="150" y2="46" stroke="url(#gWood)" stroke-width="3"/>
     <line x1="75" y1="0" x2="75" y2="46" stroke="url(#gWood)" stroke-width="2" opacity="0.6"/>
     <g>
-      <path d="M 14 20 l 10 -8 l 10 8 v 18 h -20 Z" fill="url(#gTeal)"/>
-      <path d="M 40 24 l 9 -7 l 9 7 v 14 h -18 Z" fill="url(#gRose)"/>
-      <path d="M 86 18 l 10 -8 l 10 8 v 20 h -20 Z" fill="url(#gLavi)"/>
-      <path d="M 112 24 l 9 -7 l 9 7 v 14 h -18 Z" fill="url(#gSun)"/>
+      <path d="M 14 20 l 10 -8 l 10 8 v 18 h -20 Z" fill="#56B4E9"/>
+      <path d="M 40 24 l 9 -7 l 9 7 v 14 h -18 Z" fill="#CC79A7"/>
+      <path d="M 86 18 l 10 -8 l 10 8 v 20 h -20 Z" fill="#CC79A7"/>
+      <path d="M 112 24 l 9 -7 l 9 7 v 14 h -18 Z" fill="#F0E442"/>
     </g>
     <g>
-      <rect x="12" y="56" width="26" height="14" rx="3" fill="url(#gMoss)"/>
-      <rect x="42" y="54" width="26" height="16" rx="3" fill="url(#gRose)" opacity="0.8"/>
-      <rect x="82" y="56" width="26" height="14" rx="3" fill="url(#gTeal)" opacity="0.8"/>
-      <rect x="112" y="54" width="26" height="16" rx="3" fill="url(#gLavi)" opacity="0.8"/>
+      <rect x="12" y="56" width="26" height="14" rx="3" fill="#CC79A7"/>
+      <rect x="42" y="54" width="26" height="16" rx="3" fill="#CC79A7" opacity="0.8"/>
+      <rect x="82" y="56" width="26" height="14" rx="3" fill="#56B4E9" opacity="0.8"/>
+      <rect x="112" y="54" width="26" height="16" rx="3" fill="#CC79A7" opacity="0.8"/>
     </g>
-    <g fill="url(#gSun)" opacity="0.95">
+    <g fill="#F0E442" opacity="0.95">
       <rect x="16" y="94" width="30" height="16" rx="4" transform="rotate(-6 31 102)"/>
       <rect x="52" y="98" width="30" height="16" rx="4" transform="rotate(5 67 106)"/>
       <rect x="90" y="92" width="30" height="16" rx="4" transform="rotate(-4 105 100)"/>
     </g>
-    <rect x="56" y="90" width="38" height="42" fill="#FEFCF8"/>
-    <path d="M 60 126 q 14 -26 30 0" fill="url(#gSun)"/>
-    <path d="M 66 126 q 8 -16 18 0" fill="url(#gRose)"/>
+    <rect x="56" y="90" width="38" height="42" fill="#CC79A7"/>
+    <path d="M 60 126 q 14 -26 30 0" fill="#F0E442"/>
+    <path d="M 66 126 q 8 -16 18 0" fill="#CC79A7"/>
   </g>
 
   <!-- left: diverging growth -->
   <g>
-    <rect x="64" y="200" width="690" height="120" fill="#0E7C86" opacity="0.07"/>
+    <rect x="64" y="200" width="690" height="120" fill="#009E73" opacity="0.07"/>
     <text class="rl" x="92" y="232">AI 编码工具进入团队后 · Faros AI 2026 遥测</text>
-    <text x="92" y="284" font-size="40" font-weight="700" fill="#0E7C86">PR +51%</text>
+    <text x="92" y="284" font-size="40" font-weight="700" fill="#009E73">PR +51%</text>
     <text x="300" y="278" class="b">数量平均增幅</text>
-    <text x="430" y="284" font-size="40" font-weight="700" fill="#C94F6D">churn 10 倍</text>
+    <text x="430" y="284" font-size="40" font-weight="700" fill="#CC79A7">churn 10 倍</text>
     <text x="640" y="278" class="b">代码变更速率</text>
 
     <text class="rl" x="64" y="358">但衣橱的另一本账</text>
     <g>
       <text class="rl" x="92" y="396">几乎从未被触碰的功能 · Pendo 2019 调研</text>
-      <rect x="92" y="410" width="420" height="16" rx="4" fill="url(#gTeal)"/>
-      <rect x="512" y="410" width="105" height="16" rx="4" fill="url(#gSun)" opacity="0.8"/>
+      <rect x="92" y="410" width="420" height="16" rx="4" fill="#56B4E9"/>
+      <rect x="512" y="410" width="105" height="16" rx="4" fill="#F0E442" opacity="0.8"/>
       <text x="92" y="446" class="b">80% 几乎没人穿</text>
       <text x="512" y="446" class="b">20% 被用到 · 2019 基线口径</text>
     </g>
@@ -86,8 +65,8 @@
 
   <!-- right column -->
   <g>
-    <rect x="836" y="200" width="304" height="82" rx="10" fill="url(#gRose)" opacity="0.08"/>
-    <text x="856" y="236" font-size="18" font-weight="700" fill="#B23A57">更老的测量</text>
+    <rect x="836" y="200" width="304" height="82" rx="10" fill="#CC79A7" opacity="0.08"/>
+    <text x="856" y="236" font-size="18" font-weight="700" fill="#D55E00">更老的测量</text>
     <text x="856" y="262" class="b">Standish 2002：企业软件 64% 功能从未或极少被使用</text>
 
     <text class="rl" x="856" y="326">旧制动器消失</text>
@@ -99,17 +78,17 @@
   </g>
 
   <!-- bottom chips -->
-  <line x1="64" y1="478" x2="1136" y2="478" stroke="#E8E1D2"/>
+  <line x1="64" y1="478" x2="1136" y2="478" stroke="#CC79A7"/>
   <g>
     <text class="rl" x="64" y="518">收纳三件套</text>
-    <rect x="160" y="498" width="150" height="28" rx="14" fill="url(#gTeal)" opacity="0.16"/>
-    <text x="235" y="517" text-anchor="middle" class="chip" fill="#0B5F67">FVS 功能价值评分</text>
-    <rect x="322" y="498" width="150" height="28" rx="14" fill="url(#gSun)" opacity="0.24"/>
-    <text x="397" y="517" text-anchor="middle" class="chip" fill="#7A5610">FVS &lt; 0.4 僵尸候选</text>
-    <rect x="484" y="498" width="150" height="28" rx="14" fill="url(#gMoss)" opacity="0.18"/>
-    <text x="559" y="517" text-anchor="middle" class="chip" fill="#3C5E2B">90 天日落条款</text>
+    <rect x="160" y="498" width="150" height="28" rx="14" fill="#56B4E9" opacity="0.16"/>
+    <text x="235" y="517" text-anchor="middle" class="chip" fill="#009E73">FVS 功能价值评分</text>
+    <rect x="322" y="498" width="150" height="28" rx="14" fill="#F0E442" opacity="0.24"/>
+    <text x="397" y="517" text-anchor="middle" class="chip" fill="#D55E00">FVS &lt; 0.4 僵尸候选</text>
+    <rect x="484" y="498" width="150" height="28" rx="14" fill="#CC79A7" opacity="0.18"/>
+    <text x="559" y="517" text-anchor="middle" class="chip" fill="#009E73">90 天日落条款</text>
     <text class="b" x="650" y="517">开发者常用 AI 功能不超过 3-4 个</text>
   </g>
-  <text x="64" y="568" font-size="18" fill="#1A1B1E">每个功能都是承诺——做减法和做加法的成本，第一次真正平等了。</text>
+  <text x="64" y="568" font-size="18" fill="#009E73">每个功能都是承诺——做减法和做加法的成本，第一次真正平等了。</text>
   <text class="b" x="1136" y="618" text-anchor="end" font-family="'PingFang SC','Helvetica Neue',sans-serif">数字均引自文中调研口径 · Micropaper</text>
 </svg>

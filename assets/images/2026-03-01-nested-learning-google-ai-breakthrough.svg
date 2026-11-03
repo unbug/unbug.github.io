@@ -1,67 +1,67 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">嵌套学习范式下的 Hope 架构在语言建模与长上下文任务上报告优于对照模型，正文未给出具体数值</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">嵌套学习范式下的 Hope 架构在语言建模与长上下文任务上报告优于对照模型，正文未给出具体数值</text>
 
   <!-- ============ panel a ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">范式核心：多层次嵌套优化（概念结构，序列层次轴）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">范式核心：多层次嵌套优化（概念结构，序列层次轴）</text>
 
   <g>
-    <rect x="120" y="136" width="330" height="52" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
-    <text x="285" y="158" font-size="12.5" fill="#1A1B1E" text-anchor="middle">架构 = 网络结构 与 优化 = 训练规则</text>
+    <rect x="120" y="136" width="330" height="52" fill="#F0F0F0" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="285" y="158" font-size="12.5" fill="#009E73" text-anchor="middle">架构 = 网络结构 与 优化 = 训练规则</text>
     <text x="285" y="178" font-size="12" fill="#555" text-anchor="middle">不再是两个独立对象，而是同一系统的不同层次</text>
     <polygon points="285,196 278,184 292,184" fill="#999999"/>
 
-    <rect x="120" y="204" width="330" height="52" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
-    <text x="285" y="226" font-size="12.5" fill="#1A1B1E" text-anchor="middle">一组相互连接的多层次优化问题同时优化</text>
+    <rect x="120" y="204" width="330" height="52" fill="#F0F0F0" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="285" y="226" font-size="12.5" fill="#009E73" text-anchor="middle">一组相互连接的多层次优化问题同时优化</text>
     <text x="285" y="246" font-size="12" fill="#555" text-anchor="middle">每层有自己的上下文流与更新频率</text>
     <polygon points="285,264 278,252 292,252" fill="#999999"/>
 
-    <rect x="120" y="272" width="330" height="52" fill="#FFFFFF" stroke="#D55E00" stroke-width="1.5"/>
-    <text x="285" y="294" font-size="12.5" fill="#1A1B1E" text-anchor="middle">按更新频率排序为层次</text>
+    <rect x="120" y="272" width="330" height="52" fill="#F0F0F0" stroke="#D55E00" stroke-width="1.5"/>
+    <text x="285" y="294" font-size="12.5" fill="#009E73" text-anchor="middle">按更新频率排序为层次</text>
     <text x="285" y="314" font-size="12" fill="#555" text-anchor="middle">有序集合构成 Nested Learning 范式核心</text>
   </g>
 
   <!-- hierarchy axis -->
-  <line x1="520" y1="136" x2="520" y2="324" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="520" y1="136" x2="520" y2="324" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="520" y1="162" x2="524" y2="162"/>
     <line x1="520" y1="230" x2="524" y2="230"/>
     <line x1="520" y1="298" x2="524" y2="298"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E">
+  <g font-size="12.5" fill="#009E73">
     <text x="534" y="166">层次一</text>
     <text x="534" y="234">层次二</text>
     <text x="534" y="302">层次三</text>
   </g>
-  <text x="560" y="352" font-size="14" fill="#1A1B1E">优化层次（序列位置轴，非数值刻度）</text>
+  <text x="560" y="352" font-size="14" fill="#009E73">优化层次（序列位置轴，非数值刻度）</text>
 
   <!-- right side: two applications -->
-  <text x="700" y="150" font-size="12.5" fill="#1A1B1E">深度优化器：优化器视为关联记忆模块，目标改为更标准的损失度量</text>
+  <text x="700" y="150" font-size="12.5" fill="#009E73">深度优化器：优化器视为关联记忆模块，目标改为更标准的损失度量</text>
   <text x="700" y="170" font-size="12" fill="#555">（如 L2 回归损失），推导出对不完美数据更鲁棒的动量新公式</text>
-  <text x="700" y="218" font-size="12.5" fill="#1A1B1E">连续记忆系统 CMS：记忆视为一系列模块，各模块以不同频率更新</text>
+  <text x="700" y="218" font-size="12.5" fill="#009E73">连续记忆系统 CMS：记忆视为一系列模块，各模块以不同频率更新</text>
   <text x="700" y="238" font-size="12" fill="#555">标准 Transformer 中序列模型为短期记忆、前馈网络为长期记忆</text>
-  <text x="700" y="286" font-size="12.5" fill="#1A1B1E">关联记忆视角：反向传播可建模为关联记忆；注意力机制可形式化</text>
+  <text x="700" y="286" font-size="12.5" fill="#009E73">关联记忆视角：反向传播可建模为关联记忆；注意力机制可形式化</text>
   <text x="700" y="306" font-size="12" fill="#555">为简单关联记忆模块，学习序列中令牌之间的映射</text>
 
   <!-- ============ panel b ============ -->
-  <text x="60" y="416" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="82" y="416" font-size="15" fill="#1A1B1E">Titans 与 Hope 对比（定性）</text>
-  <g font-size="12.5" fill="#1A1B1E">
-    <rect x="110" y="438" width="480" height="34" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+  <text x="60" y="416" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="82" y="416" font-size="15" fill="#009E73">Titans 与 Hope 对比（定性）</text>
+  <g font-size="12.5" fill="#009E73">
+    <rect x="110" y="438" width="480" height="34" fill="#F0F0F0" stroke="#999999" stroke-width="1.5"/>
     <text x="350" y="460" text-anchor="middle">Titans：长期记忆按令人惊讶程度排序，仅两层参数更新</text>
     <polygon points="600,455 614,448 614,462" fill="#999999"/>
-    <rect x="622" y="438" width="480" height="34" fill="#FFFFFF" stroke="#D55E00" stroke-width="1.5"/>
+    <rect x="622" y="438" width="480" height="34" fill="#F0F0F0" stroke="#D55E00" stroke-width="1.5"/>
     <text x="862" y="460" text-anchor="middle">Hope：自修改循环架构，CMS 块扩展上下文窗口</text>
   </g>
   <text x="110" y="496" font-size="12" fill="#555">Hope 为 Titans（arXiv:2501.00663）变体：可利用无限层次的上下文学习，通过自引用过程优化自身记忆</text>
 
   <!-- ============ panel c ============ -->
-  <text x="60" y="548" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
-  <text x="82" y="548" font-size="15" fill="#1A1B1E">实验对比（定性结论，论文自测口径）</text>
-  <g font-size="12.5" fill="#1A1B1E">
+  <text x="60" y="548" font-size="15" font-weight="bold" fill="#009E73">c</text>
+  <text x="82" y="548" font-size="15" fill="#009E73">实验对比（定性结论，论文自测口径）</text>
+  <g font-size="12.5" fill="#009E73">
     <circle cx="86" cy="580" r="4" fill="#0072B2"/>
     <text x="102" y="585">语言建模与常识推理：Hope 困惑度更低、准确率更高，优于现代循环模型与标准 Transformer</text>
     <circle cx="86" cy="608" r="4" fill="#0072B2"/>

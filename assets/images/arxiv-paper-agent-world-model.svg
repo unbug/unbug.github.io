@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">管道产出 1,000 个环境、35,062 个工具与 10,000 个任务；实际训练仅用 526 个环境，分布外泛化仍超越基准特定训练</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">管道产出 1,000 个环境、35,062 个工具与 10,000 个任务；实际训练仅用 526 个环境，分布外泛化仍超越基准特定训练</text>
 
   <!-- ============ panel a: pipeline scale ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">合成管道产出规模（个，对数轴）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">合成管道产出规模（个，对数轴）</text>
 
   <!-- gridlines at 10, 100, 1000, 10000 (x = 140 + 240*log10(v)) -->
   <g stroke="#D9D9D9" stroke-width="0.5">
@@ -17,43 +17,43 @@
   </g>
 
   <!-- environments 1,000 -->
-  <text x="288" y="152" font-size="12.5" fill="#1A1B1E" text-anchor="end">环境</text>
+  <text x="288" y="152" font-size="12.5" fill="#009E73" text-anchor="end">环境</text>
   <rect x="140" y="138" width="720" height="18" fill="#0072B2"/>
   <text x="868" y="152" font-size="12" fill="#555">1,000</text>
 
   <!-- tasks 10,000 -->
-  <text x="288" y="202" font-size="12.5" fill="#1A1B1E" text-anchor="end">任务</text>
+  <text x="288" y="202" font-size="12.5" fill="#009E73" text-anchor="end">任务</text>
   <rect x="140" y="188" width="960" height="18" fill="#009E73"/>
   <text x="1092" y="182" font-size="12" fill="#555" text-anchor="end">10,000</text>
 
   <!-- tools 35,062 -->
-  <text x="288" y="252" font-size="12.5" fill="#1A1B1E" text-anchor="end">工具</text>
+  <text x="288" y="252" font-size="12.5" fill="#009E73" text-anchor="end">工具</text>
   <rect x="140" y="238" width="1000" height="18" fill="#D55E00"/>
   <text x="1108" y="252" font-size="12" fill="#555" text-anchor="end">35,062</text>
 
   <!-- value axis (log10) -->
-  <line x1="140" y1="272" x2="1100" y2="272" stroke="#1A1B1E" stroke-width="0.75"/>
-  <line x1="140" y1="126" x2="140" y2="272" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="140" y1="272" x2="1100" y2="272" stroke="#009E73" stroke-width="0.75"/>
+  <line x1="140" y1="126" x2="140" y2="272" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="140" y1="272" x2="140" y2="276"/>
     <line x1="380" y1="272" x2="380" y2="276"/>
     <line x1="620" y1="272" x2="620" y2="276"/>
     <line x1="860" y1="272" x2="860" y2="276"/>
     <line x1="1100" y1="272" x2="1100" y2="276"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+  <g font-size="12.5" fill="#009E73" text-anchor="middle">
     <text x="140" y="294">1</text>
     <text x="380" y="294">10</text>
     <text x="620" y="294">100</text>
     <text x="860" y="294">1,000</text>
     <text x="1100" y="294">10,000</text>
   </g>
-  <text x="620" y="320" font-size="14" fill="#1A1B1E" text-anchor="middle">数量（个，对数刻度）</text>
+  <text x="620" y="320" font-size="14" fill="#009E73" text-anchor="middle">数量（个，对数刻度）</text>
   <text x="140" y="344" font-size="12" fill="#555">平均每环境约 35 个工具；1,000 个环境覆盖电商平台、CRM 系统等日常场景</text>
 
   <!-- ============ panel b: training usage dumbbell ============ -->
-  <text x="60" y="396" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="82" y="396" font-size="15" fill="#1A1B1E">训练实际使用的环境数 vs 管道总产出（个）</text>
+  <text x="60" y="396" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="82" y="396" font-size="15" fill="#009E73">训练实际使用的环境数 vs 管道总产出（个）</text>
 
   <!-- axis x = 300 + 0.8*v ; gridlines at 526 and 1,000 -->
   <g stroke="#D9D9D9" stroke-width="0.5">
@@ -61,28 +61,28 @@
     <line x1="1100" y1="418" x2="1100" y2="504"/>
   </g>
   <line x1="720.8" y1="456" x2="1100" y2="456" stroke="#999999" stroke-width="1.5"/>
-  <circle cx="1100" cy="456" r="8" fill="none" stroke="#1A1B1E" stroke-width="1.5"/>
+  <circle cx="1100" cy="456" r="8" fill="none" stroke="#009E73" stroke-width="1.5"/>
   <text x="1100" y="440" font-size="12" fill="#555" text-anchor="end">1,000</text>
   <circle cx="720.8" cy="456" r="8" fill="#D55E00"/>
   <text x="712" y="436" font-size="12" fill="#555" text-anchor="middle">526（受计算资源限制）</text>
   <text x="890" y="482" font-size="12" fill="#555">实心 = 实际训练使用，空心 = 管道产出</text>
 
-  <line x1="300" y1="504" x2="1100" y2="504" stroke="#1A1B1E" stroke-width="0.75"/>
-  <line x1="300" y1="418" x2="300" y2="504" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="300" y1="504" x2="1100" y2="504" stroke="#009E73" stroke-width="0.75"/>
+  <line x1="300" y1="418" x2="300" y2="504" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="300" y1="504" x2="300" y2="508"/>
     <line x1="720.8" y1="504" x2="720.8" y2="508"/>
     <line x1="1100" y1="504" x2="1100" y2="508"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+  <g font-size="12.5" fill="#009E73" text-anchor="middle">
     <text x="300" y="528">0</text>
     <text x="720.8" y="528">526</text>
     <text x="1100" y="528">1,000</text>
   </g>
-  <text x="700" y="552" font-size="14" fill="#1A1B1E" text-anchor="middle">环境数量（个）</text>
+  <text x="700" y="552" font-size="14" fill="#009E73" text-anchor="middle">环境数量（个）</text>
 
   <!-- ============ panel c: setup note ============ -->
-  <text x="60" y="592" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="60" y="592" font-size="15" font-weight="bold" fill="#009E73">c</text>
   <text x="60" y="614" font-size="12" fill="#555">实验设置：三个基准上的强化学习，仅在合成环境训练即获得更强的分布外泛化；主要覆盖 Qwen3 系列 4B、8B、14B 模型；每个环境建模为 POMDP，经 MCP 统一接口提供服务</text>
 
   <!-- footnote -->

@@ -1,8 +1,8 @@
 <?xml version="1.0" ?><svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">LLM 智能体以每资料 $1–$4 的成本从匿名资料推断真实身份，召回率远超传统方法</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">LLM 智能体以每资料 $1–$4 的成本从匿名资料推断真实身份，召回率远超传统方法</text>
 
   <!-- legend -->
   <g font-size="12" fill="#555">
@@ -13,8 +13,8 @@
   </g>
 
   <!-- ============ panel a ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">召回率（%），高精确率条件</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">召回率（%），高精确率条件</text>
 
   <!-- grid x=200+9.6*v -->
   <g stroke="#D9D9D9" stroke-width="0.5">
@@ -24,7 +24,7 @@
   </g>
 
   <!-- row1: HN->LinkedIn 45.1 @99% vs 0.1 -->
-  <text x="190" y="159" font-size="12.5" fill="#1A1B1E" text-anchor="end">Hacker News → LinkedIn</text>
+  <text x="190" y="159" font-size="12.5" fill="#009E73" text-anchor="end">Hacker News → LinkedIn</text>
   <text x="190" y="176" font-size="12" fill="#555" text-anchor="end">精确率 99% 条件</text>
   <rect x="200" y="146" width="432.96" height="18" fill="#D55E00"/>
   <text x="640" y="159" font-size="12" fill="#555">45.1</text>
@@ -32,37 +32,37 @@
   <text x="208" y="181" font-size="12" fill="#555">0.1（传统方法）</text>
 
   <!-- row2: 89,000 候选池 55% -->
-  <text x="190" y="239" font-size="12.5" fill="#1A1B1E" text-anchor="end">89,000 个候选人的候选池</text>
+  <text x="190" y="239" font-size="12.5" fill="#009E73" text-anchor="end">89,000 个候选人的候选池</text>
   <text x="190" y="256" font-size="12" fill="#555" text-anchor="end">精确率口径正文未给出</text>
   <rect x="200" y="226" width="528" height="18" fill="#D55E00"/>
   <text x="735" y="239" font-size="12" fill="#555">55</text>
 
   <!-- row3: 100 万候选 约35 @90% -->
-  <text x="190" y="319" font-size="12.5" fill="#1A1B1E" text-anchor="end">外推 100 万个候选人</text>
+  <text x="190" y="319" font-size="12.5" fill="#009E73" text-anchor="end">外推 100 万个候选人</text>
   <text x="190" y="336" font-size="12" fill="#555" text-anchor="end">90% 精确率条件</text>
   <rect x="200" y="306" width="336" height="18" fill="#D55E00" opacity="0.35"/>
   <line x1="536" y1="303" x2="536" y2="327" stroke="#D55E00" stroke-width="2" stroke-dasharray="3 2"/>
   <text x="544" y="319" font-size="12" fill="#555">约 35（外推估计）</text>
 
   <!-- value axis -->
-  <line x1="200" y1="384" x2="1160" y2="384" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="200" y1="384" x2="1160" y2="384" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="200" y1="384" x2="200" y2="388"/>
     <line x1="440" y1="384" x2="440" y2="388"/>
     <line x1="680" y1="384" x2="680" y2="388"/>
     <line x1="920" y1="384" x2="920" y2="388"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+  <g font-size="12.5" fill="#009E73" text-anchor="middle">
     <text x="200" y="408">0</text>
     <text x="440" y="408">25</text>
     
     
   </g>
-  <text x="680" y="432" font-size="14" fill="#1A1B1E" text-anchor="middle">召回率（%）</text>
+  <text x="680" y="432" font-size="14" fill="#009E73" text-anchor="middle">召回率（%）</text>
 
   <!-- ============ panel b ============ -->
-  <text x="60" y="480" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="82" y="480" font-size="15" fill="#1A1B1E">正文口径补充</text>
+  <text x="60" y="480" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="82" y="480" font-size="15" fill="#009E73">正文口径补充</text>
   <g font-size="12" fill="#555">
     <text x="60" y="510">Hacker News 与 Reddit 资料总体：召回率 25–67%，精确率 70–90%（正文区间，未拆分为单条数据）</text>
     <text x="60" y="532">传统攻击在只有 100 个候选人时召回率就已经很低；攻击成本为每个资料 $1–$4、耗时几分钟</text>

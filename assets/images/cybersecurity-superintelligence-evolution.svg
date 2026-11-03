@@ -1,49 +1,49 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">从 PentestGPT 到 G-CTR：AI 安全能力沿辅助、自治、战略推理三个里程碑演进，速度达人类 11 倍、成本降低 156 倍、成功率翻倍</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">从 PentestGPT 到 G-CTR：AI 安全能力沿辅助、自治、战略推理三个里程碑演进，速度达人类 11 倍、成本降低 156 倍、成功率翻倍</text>
 
   <!-- ============ panel a: milestone sequence ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">三个里程碑（论文按年份列举的顺序，序列位置轴，非数值刻度）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">三个里程碑（论文按年份列举的顺序，序列位置轴，非数值刻度）</text>
 
-  <line x1="100" y1="291" x2="1140" y2="291" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="100" y1="291" x2="1140" y2="291" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="280" y1="291" x2="280" y2="294"/>
     <line x1="630" y1="291" x2="630" y2="294"/>
     <line x1="980" y1="291" x2="980" y2="294"/>
   </g>
   <g>
     <circle cx="280" cy="180" r="8" fill="#0072B2"/>
-    <text x="280" y="156" font-size="12.5" fill="#1A1B1E" text-anchor="middle">PentestGPT（2023）</text>
+    <text x="280" y="156" font-size="12.5" fill="#009E73" text-anchor="middle">PentestGPT（2023）</text>
     <text x="280" y="210" font-size="12" fill="#555" text-anchor="middle">安全专家知识编码为自然语言指导</text>
     <text x="280" y="230" font-size="12" fill="#555" text-anchor="middle">GPT-3.5 性能提升 228.6%</text>
     <text x="280" y="250" font-size="12" fill="#555" text-anchor="middle">CTF 中 248 支队伍里进入前 24 名</text>
-    <text x="280" y="316" font-size="12.5" fill="#1A1B1E" text-anchor="middle">角色：AI 是顾问，执行靠人类</text>
+    <text x="280" y="316" font-size="12.5" fill="#009E73" text-anchor="middle">角色：AI 是顾问，执行靠人类</text>
 
     <circle cx="630" cy="180" r="8" fill="#D55E00"/>
-    <text x="630" y="156" font-size="12.5" fill="#1A1B1E" text-anchor="middle">CAI（2025）</text>
+    <text x="630" y="156" font-size="12.5" fill="#009E73" text-anchor="middle">CAI（2025）</text>
     <text x="630" y="210" font-size="12" fill="#555" text-anchor="middle">全自动化安全代理，速度全面超越人类</text>
     <text x="630" y="230" font-size="12" fill="#555" text-anchor="middle">Neurogrid CTF 第 1 名（奖金 5 万美元）</text>
     <text x="630" y="250" font-size="12" fill="#555" text-anchor="middle">Dragos OT CTF 第 6 名（1,200+ 支队伍）</text>
-    <text x="630" y="316" font-size="12.5" fill="#1A1B1E" text-anchor="middle">角色：操作者（专家级 AI）</text>
+    <text x="630" y="316" font-size="12.5" fill="#009E73" text-anchor="middle">角色：操作者（专家级 AI）</text>
 
     <circle cx="980" cy="180" r="8" fill="#0072B2"/>
-    <text x="980" y="156" font-size="12.5" fill="#1A1B1E" text-anchor="middle">G-CTR（2026）</text>
+    <text x="980" y="156" font-size="12.5" fill="#009E73" text-anchor="middle">G-CTR（2026）</text>
     <text x="980" y="210" font-size="12" fill="#555" text-anchor="middle">Generative Cut-the-Rope：博弈论战略推理</text>
     <text x="980" y="230" font-size="12" fill="#555" text-anchor="middle">安全日志生成攻击图，Cut-the-Rope 计算纳什均衡</text>
     <text x="980" y="250" font-size="12" fill="#555" text-anchor="middle">攻防对抗中对纯 LLM 基线取得 2:1 优势</text>
-    <text x="980" y="316" font-size="12.5" fill="#1A1B1E" text-anchor="middle">角色：监督者（博弈论 AI）</text>
+    <text x="980" y="316" font-size="12.5" fill="#009E73" text-anchor="middle">角色：监督者（博弈论 AI）</text>
   </g>
   <text x="630" y="352" font-size="12" fill="#555" text-anchor="middle">人类角色从执行者到操作者再到监督者；GitHub 星标 6,500+（PentestGPT）</text>
 
   <!-- ============ panel b: CAI vs human ============ -->
-  <text x="60" y="418" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="82" y="418" font-size="15" fill="#1A1B1E">CAI 相对人类专家（正文倍数与原始数据，按论文列举顺序排列，非数值刻度）</text>
+  <text x="60" y="418" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="82" y="418" font-size="15" fill="#009E73">CAI 相对人类专家（正文倍数与原始数据，按论文列举顺序排列，非数值刻度）</text>
 
-  <line x1="100" y1="560" x2="800" y2="560" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="100" y1="560" x2="800" y2="560" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="220" y1="560" x2="220" y2="565"/>
     <line x1="400" y1="560" x2="400" y2="565"/>
     <line x1="580" y1="560" x2="580" y2="565"/>
@@ -51,26 +51,26 @@
   </g>
   <g>
     <circle cx="220" cy="462" r="8" fill="#D55E00"/>
-    <text x="220" y="438" font-size="12.5" fill="#1A1B1E" text-anchor="middle">总体速度 11 倍</text>
+    <text x="220" y="438" font-size="12.5" fill="#009E73" text-anchor="middle">总体速度 11 倍</text>
     <text x="220" y="490" font-size="12" fill="#555" text-anchor="middle">总体 1.3 天对 14.8 天</text>
 
     <circle cx="400" cy="462" r="8" fill="#D55E00"/>
-    <text x="400" y="438" font-size="12.5" fill="#1A1B1E" text-anchor="middle">成本降低 156 倍</text>
+    <text x="400" y="438" font-size="12.5" fill="#009E73" text-anchor="middle">成本降低 156 倍</text>
     <text x="400" y="490" font-size="12" fill="#555" text-anchor="middle">API 成本 109 美元对 17,218 美元</text>
 
     <circle cx="580" cy="462" r="8" fill="#0072B2"/>
-    <text x="580" y="438" font-size="12.5" fill="#1A1B1E" text-anchor="middle">逆向工程 774 倍</text>
+    <text x="580" y="438" font-size="12.5" fill="#009E73" text-anchor="middle">逆向工程 774 倍</text>
     <text x="580" y="490" font-size="12" fill="#555" text-anchor="middle">9 分钟对 4.8 天</text>
 
     <circle cx="740" cy="462" r="8" fill="#0072B2"/>
-    <text x="740" y="438" font-size="12.5" fill="#1A1B1E" text-anchor="middle">取证分析 938 倍</text>
+    <text x="740" y="438" font-size="12.5" fill="#009E73" text-anchor="middle">取证分析 938 倍</text>
     <text x="740" y="490" font-size="12" fill="#555" text-anchor="middle">7 分钟对 4.7 天</text>
   </g>
-  <text x="440" y="584" font-size="14" fill="#1A1B1E" text-anchor="middle">四项对比（论文自测口径，序列位置轴）</text>
+  <text x="440" y="584" font-size="14" fill="#009E73" text-anchor="middle">四项对比（论文自测口径，序列位置轴）</text>
 
   <!-- ============ panel c ============ -->
-  <text x="860" y="418" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
-  <text x="882" y="418" font-size="15" fill="#1A1B1E">G-CTR 量化结果</text>
+  <text x="860" y="418" font-size="15" font-weight="bold" fill="#009E73">c</text>
+  <text x="882" y="418" font-size="15" fill="#009E73">G-CTR 量化结果</text>
   <g font-size="12" fill="#555">
     <text x="860" y="452">成功率从 20.0% 提升至 42.9%</text>
     <text x="860" y="476">单次成功成本从 0.32 美元降至 0.12 美元</text>

@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">自我监督训练的世界模型使 ALFWorld 成功率从 13.0% 升至 87.9%，τ² Bench 从 31.9% 升至 43.7%</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">自我监督训练的世界模型使 ALFWorld 成功率从 13.0% 升至 87.9%，τ² Bench 从 31.9% 升至 43.7%</text>
 
   <!-- ============ panel a: ALFWorld ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">ALFWorld 成功率（%）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">ALFWorld 成功率（%）</text>
 
   <g stroke="#D9D9D9" stroke-width="0.5">
     <line x1="150" y1="368" x2="560" y2="368"/>
@@ -17,33 +17,33 @@
   <!-- bars: y = 438 - 2.8*v -->
   <rect x="176" y="401.6" width="60" height="36.4" fill="#999999"/>
   <text x="206" y="393" font-size="12" fill="#555" text-anchor="middle">13.0</text>
-  <text x="206" y="458" font-size="12.5" fill="#1A1B1E" text-anchor="middle">基础模型</text>
+  <text x="206" y="458" font-size="12.5" fill="#009E73" text-anchor="middle">基础模型</text>
 
   <rect x="284" y="346.7" width="60" height="91.3" fill="#0072B2"/>
   <text x="314" y="338" font-size="12" fill="#555" text-anchor="middle">32.6</text>
-  <text x="314" y="458" font-size="12.5" fill="#1A1B1E" text-anchor="middle">RWML</text>
+  <text x="314" y="458" font-size="12.5" fill="#009E73" text-anchor="middle">RWML</text>
   <text x="314" y="474" font-size="12" fill="#555" text-anchor="middle">仅自我监督</text>
 
   <rect x="392" y="231.9" width="60" height="206.1" fill="#D55E00"/>
   <text x="422" y="223" font-size="12" fill="#555" text-anchor="middle">87.9</text>
-  <text x="422" y="458" font-size="12.5" fill="#1A1B1E" text-anchor="middle">RWML</text>
+  <text x="422" y="458" font-size="12.5" fill="#009E73" text-anchor="middle">RWML</text>
   <text x="422" y="474" font-size="12" fill="#555" text-anchor="middle">叠加策略 RL</text>
 
   <!-- axis -->
-  <line x1="150" y1="438" x2="560" y2="438" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="150" y1="438" x2="560" y2="438" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="150" y1="438" x2="146" y2="438"/>
     
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+  <g font-size="12.5" fill="#009E73" text-anchor="end">
     <text x="140" y="442">0</text>
       </g>
-  <text x="110" y="140" font-size="14" fill="#1A1B1E">成功率（%）</text>
+  <text x="110" y="140" font-size="14" fill="#009E73">成功率（%）</text>
   <text x="176" y="500" font-size="12" fill="#555">叠加策略 RL 比直接策略 RL 高 6.9 点</text>
 
   <!-- ============ panel b: tau2-bench ============ -->
-  <text x="660" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="682" y="104" font-size="15" fill="#1A1B1E">τ² Bench 成功率（%）</text>
+  <text x="660" y="104" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="682" y="104" font-size="15" fill="#009E73">τ² Bench 成功率（%）</text>
 
   <g stroke="#D9D9D9" stroke-width="0.5">
     <line x1="750" y1="368" x2="1140" y2="368"/>
@@ -53,26 +53,26 @@
   </g>
   <rect x="790" y="348.7" width="60" height="89.3" fill="#999999"/>
   <text x="820" y="340" font-size="12" fill="#555" text-anchor="middle">31.9</text>
-  <text x="820" y="458" font-size="12.5" fill="#1A1B1E" text-anchor="middle">基线</text>
+  <text x="820" y="458" font-size="12.5" fill="#009E73" text-anchor="middle">基线</text>
 
   <rect x="940" y="315.6" width="60" height="122.4" fill="#D55E00"/>
   <text x="970" y="307" font-size="12" fill="#555" text-anchor="middle">43.7</text>
-  <text x="970" y="458" font-size="12.5" fill="#1A1B1E" text-anchor="middle">RWML</text>
+  <text x="970" y="458" font-size="12.5" fill="#009E73" text-anchor="middle">RWML</text>
 
-  <line x1="750" y1="438" x2="1140" y2="438" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="750" y1="438" x2="1140" y2="438" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="750" y1="438" x2="746" y2="438"/>
     
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+  <g font-size="12.5" fill="#009E73" text-anchor="end">
     <text x="740" y="442">0</text>
       </g>
-  <text x="700" y="140" font-size="14" fill="#1A1B1E">成功率（%）</text>
+  <text x="700" y="140" font-size="14" fill="#009E73">成功率（%）</text>
   <text x="790" y="500" font-size="12" fill="#555">比直接策略 RL 高 5.7 点，与专家数据方法性能相当</text>
 
   <!-- ============ panel c: method & forgetting ============ -->
-  <text x="60" y="548" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
-  <text x="82" y="548" font-size="15" fill="#1A1B1E">方法与知识保留</text>
+  <text x="60" y="548" font-size="15" font-weight="bold" fill="#009E73">c</text>
+  <text x="82" y="548" font-size="15" fill="#009E73">方法与知识保留</text>
   <g font-size="12" fill="#555">
     <text x="300" y="544">两阶段训练：环境轨迹三元组做世界模型学习（嵌入相似度二值化奖励：够近 1.0 分，否则 0 分），再用任务成功奖励做策略强化学习（GRPO）</text>
     <text x="300" y="566">知识保留：MMLU-Redux、IFEval、MATH-500、GSM8k、GPQA-Diamond、LiveCodeBench 上均显著优于 SFT，灾难性遗忘更少</text>

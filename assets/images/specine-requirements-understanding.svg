@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">与代码生成同源的 Specine 在需求理解视角下同样成立：Pass@1 平均提升 29.60%~93.55%，并超越 10 个现有方法</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">与代码生成同源的 Specine 在需求理解视角下同样成立：Pass@1 平均提升 29.60%~93.55%，并超越 10 个现有方法</text>
 
   <!-- ===== panel a: average improvement ranges ===== -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">平均提升幅度（%，报告区间，相对最优基线）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">平均提升幅度（%，报告区间，相对最优基线）</text>
 
   <!-- gridlines vertical: x = 240 + 4.6*v -->
   <g stroke="#D9D9D9" stroke-width="0.5">
@@ -14,76 +14,76 @@
   </g>
 
   <!-- Pass@1: 29.60-93.55 -> x 376.16 .. 670.33 -->
-  <text x="228" y="152" font-size="12.5" fill="#1A1B1E" text-anchor="end">Pass@1</text>
+  <text x="228" y="152" font-size="12.5" fill="#009E73" text-anchor="end">Pass@1</text>
   <rect x="376.16" y="138" width="294.17" height="18" fill="#D55E00"/>
   <line x1="376.16" y1="134" x2="376.16" y2="160" stroke="#D55E00" stroke-width="0.75"/>
   <line x1="670.33" y1="134" x2="670.33" y2="160" stroke="#D55E00" stroke-width="0.75"/>
   <text x="678" y="152" font-size="12" fill="#555">29.60%~93.55%</text>
 
   <!-- AvgPassRatio: 27.95-79.12 -> x 368.57 .. 603.95 -->
-  <text x="228" y="202" font-size="12.5" fill="#1A1B1E" text-anchor="end">AvgPassRatio</text>
+  <text x="228" y="202" font-size="12.5" fill="#009E73" text-anchor="end">AvgPassRatio</text>
   <rect x="368.57" y="188" width="235.38" height="18" fill="#0072B2"/>
   <line x1="368.57" y1="184" x2="368.57" y2="210" stroke="#0072B2" stroke-width="0.75"/>
   <line x1="603.95" y1="184" x2="603.95" y2="210" stroke="#0072B2" stroke-width="0.75"/>
   <text x="612" y="202" font-size="12" fill="#555">27.95%~79.12%</text>
 
   <!-- value axis -->
-  <line x1="240" y1="250" x2="680" y2="250" stroke="#1A1B1E" stroke-width="0.75"/>
-  <line x1="240" y1="126" x2="240" y2="250" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="240" y1="250" x2="680" y2="250" stroke="#009E73" stroke-width="0.75"/>
+  <line x1="240" y1="126" x2="240" y2="250" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="240" y1="250" x2="240" y2="254"/>
     <line x1="670.33" y1="250" x2="670.33" y2="254"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+  <g font-size="12.5" fill="#009E73" text-anchor="middle">
     <text x="240" y="272">0</text>
     <text x="670.33" y="272">93.55</text>
   </g>
-  <text x="460" y="296" font-size="14" fill="#1A1B1E" text-anchor="middle">平均提升（%）</text>
+  <text x="460" y="296" font-size="14" fill="#009E73" text-anchor="middle">平均提升（%）</text>
 
   <!-- ===== panel b: pipeline steps ===== -->
-  <text x="60" y="348" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="82" y="348" font-size="15" fill="#1A1B1E">生成前的三段对齐流程</text>
+  <text x="60" y="348" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="82" y="348" font-size="15" fill="#009E73">生成前的三段对齐流程</text>
 
   <!-- step boxes -->
   <g>
     <rect x="100" y="380" width="280" height="88" fill="none" stroke="#0072B2" stroke-width="1.5"/>
-    <text x="240" y="406" font-size="13.5" fill="#1A1B1E" text-anchor="middle">第一步 错位规范识别</text>
+    <text x="240" y="406" font-size="13.5" fill="#009E73" text-anchor="middle">第一步 错位规范识别</text>
     <text x="240" y="428" font-size="12" fill="#555" text-anchor="middle">找出 LLM 可能理解错的地方：</text>
     <text x="240" y="446" font-size="12" fill="#555" text-anchor="middle">「快速」未指明时间还是空间复杂度</text>
-    <line x1="380" y1="424" x2="450" y2="424" stroke="#1A1B1E" stroke-width="1.5"/>
-    <polygon points="450,418 462,424 450,430" fill="#1A1B1E"/>
+    <line x1="380" y1="424" x2="450" y2="424" stroke="#009E73" stroke-width="1.5"/>
+    <polygon points="450,418 462,424 450,430" fill="#009E73"/>
 
     <rect x="462" y="380" width="280" height="88" fill="none" stroke="#0072B2" stroke-width="1.5"/>
-    <text x="602" y="406" font-size="13.5" fill="#1A1B1E" text-anchor="middle">第二步 规范提升</text>
+    <text x="602" y="406" font-size="13.5" fill="#009E73" text-anchor="middle">第二步 规范提升</text>
     <text x="602" y="428" font-size="12" fill="#555" text-anchor="middle">「快速排序」→「时间复杂度 O(n log n)」；</text>
     <text x="602" y="446" font-size="12" fill="#555" text-anchor="middle">「支持并发」→「读写锁实现线程安全缓存」</text>
-    <line x1="742" y1="424" x2="812" y2="424" stroke="#1A1B1E" stroke-width="1.5"/>
-    <polygon points="812,418 824,424 812,430" fill="#1A1B1E"/>
+    <line x1="742" y1="424" x2="812" y2="424" stroke="#009E73" stroke-width="1.5"/>
+    <polygon points="812,418 824,424 812,430" fill="#009E73"/>
 
     <rect x="824" y="380" width="280" height="88" fill="none" stroke="#0072B2" stroke-width="1.5"/>
-    <text x="964" y="406" font-size="13.5" fill="#1A1B1E" text-anchor="middle">第三步 规范对齐</text>
+    <text x="964" y="406" font-size="13.5" fill="#009E73" text-anchor="middle">第三步 规范对齐</text>
     <text x="964" y="428" font-size="12" fill="#555" text-anchor="middle">用 10 条预定义规则对齐输入输出格式、</text>
     <text x="964" y="446" font-size="12" fill="#555" text-anchor="middle">边界条件、性能要求、错误处理</text>
   </g>
 
   <!-- ===== panel c: best performance ===== -->
-  <text x="820" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
-  <text x="842" y="104" font-size="15" fill="#1A1B1E">最佳表现（%，APPS 数据集）</text>
+  <text x="820" y="104" font-size="15" font-weight="bold" fill="#009E73">c</text>
+  <text x="842" y="104" font-size="15" fill="#009E73">最佳表现（%，APPS 数据集）</text>
   <g stroke="#D9D9D9" stroke-width="0.5">
     <line x1="900" y1="156.3" x2="1140" y2="156.3"/>
   </g>
   <!-- bar: y = 300 - 2.2*v ; 65.33 -> 156.27 -->
   <rect x="960" y="156.3" width="64" height="143.7" fill="#D55E00"/>
   <text x="992" y="148" font-size="12" fill="#555" text-anchor="middle">65.33%</text>
-  <text x="992" y="318" font-size="12.5" fill="#1A1B1E" text-anchor="middle">Gemini-1.5-Flash + Specine</text>
+  <text x="992" y="318" font-size="12.5" fill="#009E73" text-anchor="middle">Gemini-1.5-Flash + Specine</text>
 
-  <line x1="900" y1="300" x2="1140" y2="300" stroke="#1A1B1E" stroke-width="0.75"/>
-  <line x1="900" y1="126" x2="900" y2="300" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="900" y1="300" x2="1140" y2="300" stroke="#009E73" stroke-width="0.75"/>
+  <line x1="900" y1="126" x2="900" y2="300" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="900" y1="300" x2="896" y2="300"/>
     <line x1="900" y1="156.3" x2="896" y2="156.3"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+  <g font-size="12.5" fill="#009E73" text-anchor="end">
     <text x="890" y="304">0</text>
     <text x="890" y="160">65.33</text>
   </g>

@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">综合性能对比表中，Vision-DeepResearch-8B 的平均为 50.5，超过 GPT-5 (智能体工作流) 的 48.3 与 GPT-5 (直接回答) 的 37.4</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">综合性能对比表中，Vision-DeepResearch-8B 的平均为 50.5，超过 GPT-5 (智能体工作流) 的 48.3 与 GPT-5 (直接回答) 的 37.4</text>
 
   <!-- ============ panel a: average score bars ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">综合性能对比的平均（论文表格自测口径）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">综合性能对比的平均（论文表格自测口径）</text>
 
   <g stroke="#D9D9D9" stroke-width="0.5">
     <line x1="330" y1="130" x2="330" y2="430"/>
@@ -14,7 +14,7 @@
     <line x1="730" y1="130" x2="730" y2="430"/>
   </g>
   <!-- rows: x = 130 + 10*v -->
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+  <g font-size="12.5" fill="#009E73" text-anchor="end">
     <text x="318" y="158">Claude-4-Sonnet (直接回答)</text>
     <text x="318" y="202">GPT-5 (直接回答)</text>
     <text x="318" y="246">Gemini-2.5 Pro (直接回答)</text>
@@ -38,20 +38,20 @@
   <rect x="130" y="408" width="569" height="18" fill="#D55E00"/>
   <text x="707" y="422" font-size="12" fill="#555">56.9</text>
 
-  <line x1="130" y1="470" x2="830" y2="470" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="130" y1="470" x2="830" y2="470" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="130" y1="470" x2="130" y2="474"/>
     <line x1="330" y1="470" x2="330" y2="474"/>
     <line x1="530" y1="470" x2="530" y2="474"/>
     <line x1="730" y1="470" x2="730" y2="474"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+  <g font-size="12.5" fill="#009E73" text-anchor="middle">
     <text x="130" y="492">0</text>
     <text x="330" y="492">20</text>
     <text x="530" y="492">40</text>
     <text x="730" y="492">60</text>
   </g>
-  <text x="530" y="516" font-size="14" fill="#1A1B1E" text-anchor="middle">综合性能对比的平均（分）</text>
+  <text x="530" y="516" font-size="14" fill="#009E73" text-anchor="middle">综合性能对比的平均（分）</text>
   <g font-size="12" fill="#555">
     <rect x="130" y="530" width="12" height="10" fill="#999999"/>
     <text x="147" y="539">直接回答</text>
@@ -63,9 +63,9 @@
   <text x="130" y="566" font-size="12" fill="#555">对比基础模型：Vision-DeepResearch-8B 平均：+10.4 分（从 40.1 → 50.5）；Vision-DeepResearch-30B-A3B 平均：+16.0 分（从 40.9 → 56.9）</text>
 
   <!-- ============ panel b: method sequence ============ -->
-  <text x="980" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="1002" y="104" font-size="15" fill="#1A1B1E">推理流程</text>
-  <g font-size="12.5" fill="#1A1B1E">
+  <text x="980" y="104" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="1002" y="104" font-size="15" fill="#009E73">推理流程</text>
+  <g font-size="12.5" fill="#009E73">
     <circle cx="1000" cy="160" r="7" fill="#0072B2"/>
     <text x="1018" y="165">多轮推理</text>
     <circle cx="1000" cy="220" r="7" fill="#0072B2"/>

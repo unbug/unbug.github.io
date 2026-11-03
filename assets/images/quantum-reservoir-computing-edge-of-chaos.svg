@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">量子储层计算在时间域与参数域两个混沌边缘附近均出现显著性能峰值；经典储层计算有一个已知规律：在混沌边缘性能最佳</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">量子储层计算在时间域与参数域两个混沌边缘附近均出现显著性能峰值；经典储层计算有一个已知规律：在混沌边缘性能最佳</text>
 
   <!-- ============ panel a: concept axes ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">两类混沌边缘的位置（概念轴，定性示意，非实测数值）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">两类混沌边缘的位置（概念轴，定性示意，非实测数值）</text>
 
   <!-- time-domain axis -->
-  <text x="120" y="182" font-size="13" fill="#1A1B1E">时间域边缘</text>
-  <line x1="120" y1="230" x2="540" y2="230" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <text x="120" y="182" font-size="13" fill="#009E73">时间域边缘</text>
+  <line x1="120" y1="230" x2="540" y2="230" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="120" y1="230" x2="120" y2="234"/>
     <line x1="540" y1="230" x2="540" y2="234"/>
   </g>
@@ -23,9 +23,9 @@
   <text x="300" y="176" font-size="12" fill="#555" text-anchor="middle">性能峰值：量子混沌在时间上的起始点附近</text>
 
   <!-- parameter-domain axis -->
-  <text x="120" y="332" font-size="13" fill="#1A1B1E">参数域边缘</text>
-  <line x1="120" y1="380" x2="540" y2="380" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <text x="120" y="332" font-size="13" fill="#009E73">参数域边缘</text>
+  <line x1="120" y1="380" x2="540" y2="380" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="120" y1="380" x2="120" y2="384"/>
     <line x1="540" y1="380" x2="540" y2="384"/>
   </g>
@@ -39,10 +39,10 @@
   <text x="120" y="470" font-size="12" fill="#555">正文未报告峰值的具体坐标数值</text>
 
   <!-- ============ panel b: study design ============ -->
-  <text x="660" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="682" y="104" font-size="15" fill="#1A1B1E">研究要素与结论（定性，序列位置轴，非数值刻度）</text>
+  <text x="660" y="104" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="682" y="104" font-size="15" fill="#009E73">研究要素与结论（定性，序列位置轴，非数值刻度）</text>
 
-  <g font-size="13" fill="#1A1B1E">
+  <g font-size="13" fill="#009E73">
     <circle cx="700" cy="170" r="6" fill="#0072B2"/>
     <text x="720" y="175">数学工具</text>
     <circle cx="700" cy="230" r="6" fill="#0072B2"/>
@@ -59,14 +59,14 @@
     <text x="720" y="376">量子储层计算有了基于物理的设计框架；</text>
     <text x="720" y="394">经典与量子信息处理在混沌边缘上深层呼应</text>
   </g>
-  <line x1="700" y1="420" x2="1120" y2="420" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="700" y1="420" x2="1120" y2="420" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="700" y1="420" x2="700" y2="424"/>
     <line x1="840" y1="420" x2="840" y2="424"/>
     <line x1="980" y1="420" x2="980" y2="424"/>
     <line x1="1120" y1="420" x2="1120" y2="424"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+  <g font-size="12.5" fill="#009E73" text-anchor="middle">
     <text x="700" y="444">工具</text>
     <text x="840" y="444">对象</text>
     <text x="980" y="444">结果</text>

@@ -1,25 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">世界模型研究呈碎片化：三条路线各有短板，论文提出由交互、推理、记忆、环境、多模态生成组成的统一框架</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">世界模型研究呈碎片化：三条路线各有短板，论文提出由交互、推理、记忆、环境、多模态生成组成的统一框架</text>
 
   <!-- ============ panel a ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">三大研究路线与正文点名代表（按论文列举顺序，序列位置轴）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">三大研究路线与正文点名代表（按论文列举顺序，序列位置轴）</text>
 
   <g stroke="#D9D9D9" stroke-width="0.5">
     <line x1="60" y1="126" x2="1140" y2="126"/>
   </g>
-  <line x1="60" y1="300" x2="1140" y2="300" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="60" y1="300" x2="1140" y2="300" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="240" y1="300" x2="240" y2="304"/>
     <line x1="600" y1="300" x2="600" y2="304"/>
     <line x1="960" y1="300" x2="960" y2="304"/>
   </g>
 
   <circle cx="240" cy="150" r="7" fill="#0072B2"/>
-  <text x="240" y="146" font-size="13" font-weight="bold" fill="#1A1B1E" text-anchor="middle" dy="-14">世界知识推理</text>
+  <text x="240" y="146" font-size="13" font-weight="bold" fill="#009E73" text-anchor="middle" dy="-14">世界知识推理</text>
   <g font-size="12" fill="#555">
     <text x="90" y="178">代表：OpenAI O3（通用多模态推理</text>
     <text x="90" y="196">前沿）；Cambrian-s、SpatialVLM</text>
@@ -32,7 +32,7 @@
   </g>
 
   <circle cx="600" cy="150" r="7" fill="#0072B2"/>
-  <text x="600" y="146" font-size="13" font-weight="bold" fill="#1A1B1E" text-anchor="middle" dy="-14">世界驱动内容生成</text>
+  <text x="600" y="146" font-size="13" font-weight="bold" fill="#009E73" text-anchor="middle" dy="-14">世界驱动内容生成</text>
   <g font-size="12" fill="#555">
     <text x="450" y="178">代表：从 Sora 到 HunyuanWorld、</text>
     <text x="450" y="196">从 Veo 3 到 Wan 2.5，靠微调</text>
@@ -44,7 +44,7 @@
   </g>
 
   <circle cx="960" cy="150" r="7" fill="#0072B2"/>
-  <text x="960" y="146" font-size="13" font-weight="bold" fill="#1A1B1E" text-anchor="middle" dy="-14">交互环境智能体</text>
+  <text x="960" y="146" font-size="13" font-weight="bold" fill="#009E73" text-anchor="middle" dy="-14">交互环境智能体</text>
   <g font-size="12" fill="#555">
     <text x="830" y="178">代表：自动驾驶与具身智能，</text>
     <text x="830" y="196">把世界知识整合进感知-决策循环，</text>
@@ -58,13 +58,13 @@
   <text x="600" y="330" font-size="12" fill="#555" text-anchor="middle">设想最早由 Ha 和 Schmidhuber 在 2018 年提出；具体缺陷如视频生成在「向左移动再返回」时让原有物体消失</text>
 
   <!-- ============ panel b ============ -->
-  <text x="60" y="386" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="82" y="386" font-size="15" fill="#1A1B1E">统一框架的五个核心组件（论文编号顺序，序列位置轴）</text>
+  <text x="60" y="386" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="82" y="386" font-size="15" fill="#009E73">统一框架的五个核心组件（论文编号顺序，序列位置轴）</text>
   <g stroke="#D9D9D9" stroke-width="0.5">
     <line x1="60" y1="454" x2="1140" y2="454"/>
   </g>
-  <line x1="60" y1="486" x2="1140" y2="486" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="60" y1="486" x2="1140" y2="486" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="160" y1="486" x2="160" y2="490"/>
     <line x1="390" y1="486" x2="390" y2="490"/>
     <line x1="620" y1="486" x2="620" y2="490"/>
@@ -73,35 +73,35 @@
   </g>
   <g>
     <circle cx="160" cy="450" r="6" fill="#009E73"/>
-    <text x="160" y="430" font-size="12.5" fill="#1A1B1E" text-anchor="middle">交互</text>
+    <text x="160" y="430" font-size="12.5" fill="#009E73" text-anchor="middle">交互</text>
     <text x="160" y="512" font-size="12" fill="#555" text-anchor="middle">广义感知多模态输入，</text>
     <text x="160" y="530" font-size="12" fill="#555" text-anchor="middle">广义操作解析控制信号</text>
 
     <circle cx="390" cy="450" r="6" fill="#009E73"/>
-    <text x="390" y="430" font-size="12.5" fill="#1A1B1E" text-anchor="middle">推理</text>
+    <text x="390" y="430" font-size="12.5" fill="#009E73" text-anchor="middle">推理</text>
     <text x="390" y="512" font-size="12" fill="#555" text-anchor="middle">显式转文本推理链，</text>
     <text x="390" y="530" font-size="12" fill="#555" text-anchor="middle">隐式在潜在空间联合</text>
 
     <circle cx="620" cy="450" r="6" fill="#009E73"/>
-    <text x="620" y="430" font-size="12.5" fill="#1A1B1E" text-anchor="middle">记忆</text>
+    <text x="620" y="430" font-size="12.5" fill="#009E73" text-anchor="middle">记忆</text>
     <text x="620" y="512" font-size="12" fill="#555" text-anchor="middle">结构化动态管理：</text>
     <text x="620" y="530" font-size="12" fill="#555" text-anchor="middle">分类关联压缩合并清除</text>
 
     <circle cx="850" cy="450" r="6" fill="#009E73"/>
-    <text x="850" y="430" font-size="12.5" fill="#1A1B1E" text-anchor="middle">环境</text>
+    <text x="850" y="430" font-size="12.5" fill="#009E73" text-anchor="middle">环境</text>
     <text x="850" y="512" font-size="12" fill="#555" text-anchor="middle">物理世界加模拟环境，</text>
     <text x="850" y="530" font-size="12" fill="#555" text-anchor="middle">应是模拟器而非渲染器</text>
 
     <circle cx="1080" cy="450" r="6" fill="#D55E00"/>
-    <text x="1080" y="430" font-size="12.5" fill="#1A1B1E" text-anchor="middle">多模态生成</text>
+    <text x="1080" y="430" font-size="12.5" fill="#009E73" text-anchor="middle">多模态生成</text>
     <text x="1080" y="512" font-size="12" fill="#555" text-anchor="middle">为规划提供预见性，</text>
     <text x="1080" y="530" font-size="12" fill="#555" text-anchor="middle">生成数据自我增强</text>
   </g>
   <text x="600" y="560" font-size="12" fill="#555" text-anchor="middle">五组件（论文编号顺序，序列位置轴，非数值刻度）</text>
 
   <!-- ============ panel c ============ -->
-  <text x="60" y="600" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
-  <text x="82" y="600" font-size="15" fill="#1A1B1E">三大突破方向</text>
+  <text x="60" y="600" font-size="15" font-weight="bold" fill="#009E73">c</text>
+  <text x="82" y="600" font-size="15" fill="#009E73">三大突破方向</text>
   <g font-size="12" fill="#555">
     <text x="60" y="628">物理基础的时空表示（超越外观重建）· 具身交互与控制（以具身 AI 为载体）· 自主反思与模块化持续进化（元认知与自我反思）</text>
   </g>

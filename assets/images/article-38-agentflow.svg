@@ -1,123 +1,102 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Noto Serif SC','Songti SC',serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'','',serif">
   <defs>
     <style>
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9C9484; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-      .rl { font-size: 15px; fill: #474C54; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #CC79A7; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
+      .rl { font-size: 15px; fill: #009E73; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
       .val { font-size: 18px; font-weight: 700; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-      .b { font-size: 12px; fill: #A5A296; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
+      .b { font-size: 12px; fill: #CC79A7; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
       .chip { font-size: 12.5px; font-weight: 600; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
     </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFDF6"/><stop offset="1" stop-color="#FBF4E2"/>
-    </linearGradient>
-    <linearGradient id="gAmber" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#D9911C"/><stop offset="1" stop-color="#F2C14E"/>
-    </linearGradient>
-    <linearGradient id="gSmoke" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#6B4F2E"/><stop offset="1" stop-color="#9A7B4F"/>
-    </linearGradient>
-    <linearGradient id="gProp" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#C0563B"/><stop offset="1" stop-color="#E08A62"/>
-    </linearGradient>
-    <linearGradient id="gExec" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#B9892F"/><stop offset="1" stop-color="#DCB65F"/>
-    </linearGradient>
-    <linearGradient id="gDiag" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#3D8B67"/><stop offset="1" stop-color="#77B894"/>
-    </linearGradient>
-    <linearGradient id="gSky" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2E7D8C"/><stop offset="1" stop-color="#6FB6BF"/>
-    </linearGradient>
   </defs>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1105" cy="112" r="140" fill="#D9911C" opacity="0.07"/>
-  <circle cx="70" cy="620" r="115" fill="#C0563B" opacity="0.06"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gProp)"/>
+  <rect width="1200" height="675" fill="#CC79A7"/>
+  <circle cx="1105" cy="112" r="140" fill="#E69F00" opacity="0.07"/>
+  <circle cx="70" cy="620" r="115" fill="#D55E00" opacity="0.06"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="#CC79A7"/>
 
   <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2604.20801 · UCSB 等</text>
-  <text x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">蜂群要配蜂箱来养</text>
-  <text x="64" y="158" font-size="15" fill="#5B6068" font-family="'PingFang SC','Helvetica Neue',sans-serif">AgentFlow 用类型化图 DSL 自动合成多智能体协作方案，反馈驱动改写「蜂箱」</text>
+  <text x="64" y="128" font-size="40" font-weight="700" fill="#009E73">蜂群要配蜂箱来养</text>
+  <text x="64" y="158" font-size="15" fill="#009E73" font-family="'PingFang SC','Helvetica Neue',sans-serif">AgentFlow 用类型化图 DSL 自动合成多智能体协作方案，反馈驱动改写「蜂箱」</text>
 
   <!-- apiary motif: hives + bee flight paths -->
   <g>
-    <g stroke="#9A7B4F" stroke-width="1.5" opacity="0.55" fill="none" stroke-dasharray="3 4">
+    <g stroke="#CC79A7" stroke-width="1.5" opacity="0.55" fill="none" stroke-dasharray="3 4">
       <path d="M 960 158 Q 1030 96 1100 138"/>
       <path d="M 1048 150 Q 1106 108 1160 140"/>
     </g>
-    <circle cx="1026" cy="112" r="3.5" fill="#D9911C"/><circle cx="1108" cy="114" r="3.5" fill="#D9911C"/><circle cx="1150" cy="128" r="3.5" fill="#D9911C"/>
+    <circle cx="1026" cy="112" r="3.5" fill="#E69F00"/><circle cx="1108" cy="114" r="3.5" fill="#E69F00"/><circle cx="1150" cy="128" r="3.5" fill="#E69F00"/>
     <g>
-      <rect x="946" y="118" width="58" height="40" fill="url(#gAmber)"/>
-      <path d="M 940 118 L 975 92 L 1010 118 Z" fill="url(#gSmoke)"/>
-      <rect x="954" y="150" width="10" height="8" fill="#4A3320"/>
+      <rect x="946" y="118" width="58" height="40" fill="#F0E442"/>
+      <path d="M 940 118 L 975 92 L 1010 118 Z" fill="#CC79A7"/>
+      <rect x="954" y="150" width="10" height="8" fill="#D55E00"/>
     </g>
     <g>
-      <rect x="1036" y="106" width="62" height="52" fill="url(#gAmber)"/>
-      <path d="M 1030 106 L 1067 78 L 1104 106 Z" fill="url(#gSmoke)"/>
-      <rect x="1046" y="150" width="10" height="8" fill="#4A3320"/>
-      <line x1="1036" y1="124" x2="1098" y2="124" stroke="#B07A18" stroke-width="1.5" opacity="0.6"/>
-      <line x1="1036" y1="138" x2="1098" y2="138" stroke="#B07A18" stroke-width="1.5" opacity="0.6"/>
+      <rect x="1036" y="106" width="62" height="52" fill="#F0E442"/>
+      <path d="M 1030 106 L 1067 78 L 1104 106 Z" fill="#CC79A7"/>
+      <rect x="1046" y="150" width="10" height="8" fill="#D55E00"/>
+      <line x1="1036" y1="124" x2="1098" y2="124" stroke="#D55E00" stroke-width="1.5" opacity="0.6"/>
+      <line x1="1036" y1="138" x2="1098" y2="138" stroke="#D55E00" stroke-width="1.5" opacity="0.6"/>
     </g>
     <g>
-      <rect x="1128" y="118" width="56" height="40" fill="url(#gAmber)"/>
-      <path d="M 1122 118 L 1156 92 L 1190 118 Z" fill="url(#gSmoke)"/>
-      <rect x="1136" y="150" width="10" height="8" fill="#4A3320"/>
+      <rect x="1128" y="118" width="56" height="40" fill="#F0E442"/>
+      <path d="M 1122 118 L 1156 92 L 1190 118 Z" fill="#CC79A7"/>
+      <rect x="1136" y="150" width="10" height="8" fill="#D55E00"/>
     </g>
-    <path d="M 973 158 h 14 M 1065 158 h 14 M 1155 158 h 14" stroke="#9A7B4F" stroke-width="2" opacity="0.5"/>
+    <path d="M 973 158 h 14 M 1065 158 h 14 M 1155 158 h 14" stroke="#CC79A7" stroke-width="2" opacity="0.5"/>
   </g>
 
   <!-- left: big numbers -->
   <g>
-    <rect x="64" y="200" width="690" height="104" fill="#2E7D8C" opacity="0.08"/>
-    <text x="92" y="262" font-size="44" font-weight="700" fill="#C0563B">10 个</text>
+    <rect x="64" y="200" width="690" height="104" fill="#0072B2" opacity="0.08"/>
+    <text x="92" y="262" font-size="44" font-weight="700" fill="#D55E00">10 个</text>
     <text x="212" y="244" class="rl">Chrome 未知零日漏洞</text>
     <text x="212" y="266" class="b">自动合成 harness 发现，Kimi K2.5</text>
-    <text x="560" y="252" font-size="26" font-weight="700" fill="#B5442E" text-anchor="end">2 个</text>
+    <text x="560" y="252" font-size="26" font-weight="700" fill="#D55E00" text-anchor="end">2 个</text>
     <text x="576" y="244" class="rl">Critical 沙箱逃逸</text>
     <text x="576" y="266" class="b">CVE-2026-5280 · CVE-2026-6297</text>
 
-    <rect x="64" y="322" width="690" height="112" fill="#D9911C" opacity="0.08"/>
+    <rect x="64" y="322" width="690" height="112" fill="#E69F00" opacity="0.08"/>
     <text class="rl" x="92" y="362">TerminalBench-2 成绩 · Claude Opus 4.6</text>
-    <line x1="92" y1="402" x2="600" y2="402" stroke="#E5DFC8" stroke-width="2"/>
+    <line x1="92" y1="402" x2="600" y2="402" stroke="#CC79A7" stroke-width="2"/>
     <line x1="92" y1="402" x2="514.7" y2="402" stroke="url(#gAmber)" stroke-width="3"/>
-    <circle cx="514.7" cy="402" r="9" fill="url(#gAmber)"/>
-    <text class="val" x="534" y="409" fill="#8A6620">84.3%</text>
+    <circle cx="514.7" cy="402" r="9" fill="#F0E442"/>
+    <text class="val" x="534" y="409" fill="#D55E00">84.3%</text>
     <text class="b" x="92" y="426">公开 leaderboard 最高分</text>
   </g>
 
   <!-- right: loop motif -->
   <g>
-    <rect x="836" y="200" width="304" height="234" rx="12" fill="#B9892F" opacity="0.09"/>
-    <text x="856" y="228" font-size="15" font-weight="700" fill="#1A1B1E" font-family="'PingFang SC','Helvetica Neue',sans-serif">外环巡检循环</text>
+    <rect x="836" y="200" width="304" height="234" rx="12" fill="#E69F00" opacity="0.09"/>
+    <text x="856" y="228" font-size="15" font-weight="700" fill="#009E73" font-family="'PingFang SC','Helvetica Neue',sans-serif">外环巡检循环</text>
     <g stroke-linecap="round">
       <line x1="988" y1="252" x2="947" y2="321" stroke="url(#gProp)" stroke-width="2.5"/>
       <line x1="947" y1="321" x2="1029" y2="321" stroke="url(#gExec)" stroke-width="2.5"/>
       <path d="M 1029 321 Q 1064 285 1040 254" fill="none" stroke="url(#gDiag)" stroke-width="2.5"/>
       <path d="M 1036 262 l 6 -10 l 6 10" fill="none" stroke="url(#gDiag)" stroke-width="2.5"/>
     </g>
-    <circle cx="988" cy="248" r="13" fill="url(#gProp)"/><text x="988" y="253" text-anchor="middle" font-size="12" font-weight="700" fill="#FFF6E8" font-family="'PingFang SC',sans-serif">P</text>
-    <circle cx="943" cy="325" r="13" fill="url(#gExec)"/><text x="943" y="330" text-anchor="middle" font-size="12" font-weight="700" fill="#FFF6E8" font-family="'PingFang SC',sans-serif">E</text>
-    <circle cx="1033" cy="325" r="13" fill="url(#gDiag)"/><text x="1033" y="330" text-anchor="middle" font-size="12" font-weight="700" fill="#FFF6E8" font-family="'PingFang SC',sans-serif">D</text>
+    <circle cx="988" cy="248" r="13" fill="#CC79A7"/><text x="988" y="253" text-anchor="middle" font-size="12" font-weight="700" fill="#CC79A7" font-family="'PingFang SC',sans-serif">P</text>
+    <circle cx="943" cy="325" r="13" fill="#F0E442"/><text x="943" y="330" text-anchor="middle" font-size="12" font-weight="700" fill="#CC79A7" font-family="'PingFang SC',sans-serif">E</text>
+    <circle cx="1033" cy="325" r="13" fill="#56B4E9"/><text x="1033" y="330" text-anchor="middle" font-size="12" font-weight="700" fill="#CC79A7" font-family="'PingFang SC',sans-serif">D</text>
     <text class="b" x="856" y="372">P 生成新蜂箱变体 · E 执行评分 · D 诊断失败环节</text>
     <text class="b" x="856" y="392">诊断读取运行时信号，而非只看通过/失败</text>
-    <text x="856" y="422" font-size="15" font-weight="700" fill="#B5442E">蜂箱比蜂种更值钱</text>
+    <text x="856" y="422" font-size="15" font-weight="700" fill="#D55E00">蜂箱比蜂种更值钱</text>
   </g>
 
   <!-- bottom chips: DSL search space -->
-  <line x1="64" y1="486" x2="1136" y2="486" stroke="#E8E3D2"/>
+  <line x1="64" y1="486" x2="1136" y2="486" stroke="#CC79A7"/>
   <g>
     <text class="rl" x="64" y="528">DSL 搜索空间</text>
-    <rect x="176" y="508" width="92" height="28" rx="14" fill="url(#gAmber)" opacity="0.28"/>
-    <text x="222" y="527" text-anchor="middle" class="chip" fill="#8A6620">智能体角色</text>
-    <rect x="278" y="508" width="76" height="28" rx="14" fill="url(#gProp)" opacity="0.22"/>
-    <text x="316" y="527" text-anchor="middle" class="chip" fill="#A5442A">提示词</text>
-    <rect x="364" y="508" width="66" height="28" rx="14" fill="url(#gSky)" opacity="0.22"/>
-    <text x="397" y="527" text-anchor="middle" class="chip" fill="#22606C">工具</text>
-    <rect x="440" y="508" width="92" height="28" rx="14" fill="url(#gDiag)" opacity="0.24"/>
-    <text x="486" y="527" text-anchor="middle" class="chip" fill="#2C6B4C">通信拓扑</text>
-    <rect x="542" y="508" width="92" height="28" rx="14" fill="url(#gExec)" opacity="0.28"/>
-    <text x="588" y="527" text-anchor="middle" class="chip" fill="#7A5A14">协调协议</text>
+    <rect x="176" y="508" width="92" height="28" rx="14" fill="#F0E442" opacity="0.28"/>
+    <text x="222" y="527" text-anchor="middle" class="chip" fill="#D55E00">智能体角色</text>
+    <rect x="278" y="508" width="76" height="28" rx="14" fill="#CC79A7" opacity="0.22"/>
+    <text x="316" y="527" text-anchor="middle" class="chip" fill="#D55E00">提示词</text>
+    <rect x="364" y="508" width="66" height="28" rx="14" fill="#56B4E9" opacity="0.22"/>
+    <text x="397" y="527" text-anchor="middle" class="chip" fill="#009E73">工具</text>
+    <rect x="440" y="508" width="92" height="28" rx="14" fill="#56B4E9" opacity="0.24"/>
+    <text x="486" y="527" text-anchor="middle" class="chip" fill="#009E73">通信拓扑</text>
+    <rect x="542" y="508" width="92" height="28" rx="14" fill="#F0E442" opacity="0.28"/>
+    <text x="588" y="527" text-anchor="middle" class="chip" fill="#D55E00">协调协议</text>
   </g>
-  <text x="64" y="584" font-size="18" fill="#1A1B1E">编排不是手工艺术，是蜂场里可搜索、可优化的设计空间。</text>
+  <text x="64" y="584" font-size="18" fill="#009E73">编排不是手工艺术，是蜂场里可搜索、可优化的设计空间。</text>
   <text class="b" x="1136" y="618" text-anchor="end" font-family="'PingFang SC','Helvetica Neue',sans-serif">数据为论文自述口径 · 预印本未经同行评审 · Micropaper</text>
 </svg>

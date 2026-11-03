@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">10 候选加 1 判别器使 5 支小模型团队中 4 支反超参数大 5-25 倍的大模型，硬件成本约为对手的 3%</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">10 候选加 1 判别器使 5 支小模型团队中 4 支反超参数大 5-25 倍的大模型，硬件成本约为对手的 3%</text>
 
   <!-- ============ panel a: Pass@1 dumbbell ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">单模型 → 小模型团队 Pass@1（10 候选 + 1 判别器）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">单模型 → 小模型团队 Pass@1（10 候选 + 1 判别器）</text>
 
   <g font-size="12" fill="#555">
     <circle cx="880" cy="99" r="5" fill="none" stroke="#999999" stroke-width="1.5"/>
@@ -20,7 +20,7 @@
     <line x1="630" y1="126" x2="630" y2="352"/>
     <line x1="810" y1="126" x2="810" y2="352"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+  <g font-size="12.5" fill="#009E73" text-anchor="end">
     <text x="348" y="152">Phi-4 mini 4B</text>
     <text x="348" y="196">Qwen2.5 Coder 3B</text>
     <text x="348" y="240">DeepSeek Coder 1.3B</text>
@@ -46,28 +46,28 @@
   <rect x="360" y="330" width="84.8" height="13" fill="#0072B2"/>
 
   <!-- axis: ticks 0, 0.200, 0.361, 0.406, 0.521 (verbatim) -->
-  <line x1="360" y1="360" x2="1140" y2="360" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="360" y1="360" x2="1140" y2="360" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="360" y1="360" x2="360" y2="364"/>
     <line x1="540" y1="360" x2="540" y2="364"/>
     <line x1="684.9" y1="360" x2="684.9" y2="364"/>
     <line x1="725.4" y1="360" x2="725.4" y2="364"/>
     <line x1="828.9" y1="360" x2="828.9" y2="364"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+  <g font-size="12.5" fill="#009E73" text-anchor="middle">
     <text x="360" y="382">0</text>
     <text x="540" y="382">0.200</text>
     <text x="684.9" y="382">0.361</text>
     <text x="725.4" y="382">0.406</text>
     <text x="828.9" y="382">0.521</text>
   </g>
-  <text x="750" y="406" font-size="14" fill="#1A1B1E" text-anchor="middle">Pass@1（无量纲）；后三行为相对提升轴，按提升百分比等比绘制</text>
+  <text x="750" y="406" font-size="14" fill="#009E73" text-anchor="middle">Pass@1（无量纲）；后三行为相对提升轴，按提升百分比等比绘制</text>
 
   <!-- ============ panel b: vs big model deltas ============ -->
-  <text x="60" y="452" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="82" y="452" font-size="15" fill="#1A1B1E">团队方案相对对应大模型的 Pass@1 差值</text>
+  <text x="60" y="452" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="82" y="452" font-size="15" fill="#009E73">团队方案相对对应大模型的 Pass@1 差值</text>
 
-  <text x="60" y="482" font-size="12.5" fill="#1A1B1E">5 组对比中 4 组反超，差值从 +0.018 到 +0.090 不等，仅 Gemma-3 4B 组以 -0.071 落败</text>
+  <text x="60" y="482" font-size="12.5" fill="#009E73">5 组对比中 4 组反超，差值从 +0.018 到 +0.090 不等，仅 Gemma-3 4B 组以 -0.071 落败</text>
   <text x="60" y="506" font-size="12" fill="#555">差值区间为论文报告的 5 组汇总范围，正文仅点名两个端点值与落败组，逐组差值未列出</text>
 
   <!-- dumbbell axis: x = 80 + 4000*d, 0 at x=520 ; -0.071 -> 236 ; +0.018 -> 592 ; +0.090 -> 880 -->
@@ -79,24 +79,24 @@
   <circle cx="880" cy="558" r="6" fill="#0072B2"/>
   <text x="592" y="540" font-size="12" fill="#555" text-anchor="middle">反超下限 +0.018</text>
   <text x="880" y="540" font-size="12" fill="#555" text-anchor="middle">反超上限 +0.090</text>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="236" y1="592" x2="236" y2="596"/>
     <line x1="520" y1="592" x2="520" y2="596"/>
     <line x1="592" y1="592" x2="592" y2="596"/>
     <line x1="880" y1="592" x2="880" y2="596"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+  <g font-size="12.5" fill="#009E73" text-anchor="middle">
     <text x="236" y="614">-0.071</text>
     <text x="520" y="614">0</text>
     <text x="592" y="614">+0.018</text>
     <text x="880" y="614">+0.090</text>
   </g>
-  <text x="558" y="638" font-size="14" fill="#1A1B1E" text-anchor="middle">ΔPass@1（团队 − 对应大模型，无量纲）</text>
+  <text x="558" y="638" font-size="14" fill="#009E73" text-anchor="middle">ΔPass@1（团队 − 对应大模型，无量纲）</text>
 
   <!-- ============ panel c: cost ============ -->
-  <text x="940" y="452" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
-  <text x="962" y="452" font-size="15" fill="#1A1B1E">硬件成本</text>
-  <g font-size="12.5" fill="#1A1B1E">
+  <text x="940" y="452" font-size="15" font-weight="bold" fill="#009E73">c</text>
+  <text x="962" y="452" font-size="15" fill="#009E73">硬件成本</text>
+  <g font-size="12.5" fill="#009E73">
     <text x="940" y="486">小模型团队约 $600</text>
     <text x="940" y="524">30B 级方案约 $17,500</text>
     <text x="940" y="562">相差约 29 倍，即约为对手的 3%</text>

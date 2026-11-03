@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">Genie 3 以自回归逐帧生成实现 720p、24 帧/秒实时交互，世界记忆为自主学习获得而非显式编程</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">Genie 3 以自回归逐帧生成实现 720p、24 帧/秒实时交互，世界记忆为自主学习获得而非显式编程</text>
 
   <!-- ===== panel a: capability comparison (qualitative position axis) ===== -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">三代路线对比（定性评分，正文未报告实测数值）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">三代路线对比（定性评分，正文未报告实测数值）</text>
 
   <g stroke="#D9D9D9" stroke-width="0.5">
     <line x1="460" y1="126" x2="460" y2="290"/>
@@ -14,36 +14,36 @@
   </g>
   <!-- gridline positions 380(基准) 460 540 620 700 -->
   <!-- Genie 2 -->
-  <text x="368" y="158" font-size="12.5" fill="#1A1B1E" text-anchor="end">Genie 2</text>
+  <text x="368" y="158" font-size="12.5" fill="#009E73" text-anchor="end">Genie 2</text>
   <rect x="380" y="144" width="80" height="18" fill="#999999"/>
   <text x="468" y="158" font-size="12" fill="#555">生成新环境；短期记忆约 1 分钟量级</text>
 
   <!-- Veo 3 -->
-  <text x="368" y="206" font-size="12.5" fill="#1A1B1E" text-anchor="end">Veo 3</text>
+  <text x="368" y="206" font-size="12.5" fill="#009E73" text-anchor="end">Veo 3</text>
   <rect x="380" y="192" width="80" height="18" fill="#999999"/>
   <text x="468" y="206" font-size="12" fill="#555">理解物理的视频生成模型</text>
 
   <!-- Genie 3 -->
-  <text x="368" y="254" font-size="12.5" fill="#1A1B1E" text-anchor="end">Genie 3</text>
+  <text x="368" y="254" font-size="12.5" fill="#009E73" text-anchor="end">Genie 3</text>
   <rect x="380" y="240" width="320" height="18" fill="#D55E00"/>
   <text x="708" y="254" font-size="12" fill="#555">在 Genie 2 与 Veo 3 技术传承上实现实时交互</text>
 
   <!-- position axis -->
-  <line x1="380" y1="290" x2="700" y2="290" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="380" y1="290" x2="700" y2="290" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="380" y1="290" x2="380" y2="294"/>
     <line x1="700" y1="290" x2="700" y2="294"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+  <g font-size="12.5" fill="#009E73" text-anchor="middle">
     <text x="380" y="314">前置技术</text>
     <text x="700" y="314">实时交互系统</text>
   </g>
-  <text x="540" y="340" font-size="14" fill="#1A1B1E" text-anchor="middle">能力位置（定性，条长为示意）</text>
+  <text x="540" y="340" font-size="14" fill="#009E73" text-anchor="middle">能力位置（定性，条长为示意）</text>
 
   <!-- ===== panel b: output spec ===== -->
-  <text x="60" y="392" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="82" y="392" font-size="15" fill="#1A1B1E">输出规格（官方自述）</text>
-  <g font-size="13" fill="#1A1B1E">
+  <text x="60" y="392" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="82" y="392" font-size="15" fill="#009E73">输出规格（官方自述）</text>
+  <g font-size="13" fill="#009E73">
     <text x="300" y="390">分辨率</text>
     <text x="400" y="390">720p 分辨率</text>
     <text x="620" y="390">帧率</text>
@@ -57,8 +57,8 @@
   </g>
 
   <!-- ===== panel c: method and status ===== -->
-  <text x="60" y="492" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
-  <text x="82" y="492" font-size="15" fill="#1A1B1E">方法与开放状态</text>
+  <text x="60" y="492" font-size="15" font-weight="bold" fill="#009E73">c</text>
+  <text x="82" y="492" font-size="15" fill="#009E73">方法与开放状态</text>
   <g font-size="12" fill="#555">
     <text x="300" y="490">自回归逐帧生成：模型回顾之前生成内容决定接下来发生什么</text>
     <text x="300" y="512">与 NeRF、高斯溅射相比：后者需预先采集素材重建静态场景，Genie 3 在交互中持续生成</text>

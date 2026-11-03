@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">MemMamba 在 400K token 检索保持 0.9 准确率，PG19 60K 时困惑度为 17.35，端到端延迟为 Transformer 的 0.52 倍</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">MemMamba 在 400K token 检索保持 0.9 准确率，PG19 60K 时困惑度为 17.35，端到端延迟为 Transformer 的 0.52 倍</text>
 
   <!-- ============ panel a ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">四项任务成绩（正文数值直接标注，DEGRADED：量纲不同，非同一数值刻度）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">四项任务成绩（正文数值直接标注，DEGRADED：量纲不同，非同一数值刻度）</text>
 
   <!-- track gridlines -->
   <g stroke="#D9D9D9" stroke-width="0.5">
@@ -16,13 +16,13 @@
   </g>
 
   <!-- row 1: PG19 PPL -->
-  <text x="60" y="150" font-size="12.5" fill="#1A1B1E">PG19 语言建模：MemMamba 60K 时困惑度（Mamba 与 DeciMamba 在 30K-60K</text>
+  <text x="60" y="150" font-size="12.5" fill="#009E73">PG19 语言建模：MemMamba 60K 时困惑度（Mamba 与 DeciMamba 在 30K-60K</text>
   <text x="60" y="168" font-size="12" fill="#555">token 完全崩溃，PPL 超 100 或发散；MemMamba 稳定在 17.33-18.25 区间）</text>
   <rect x="560" y="180" width="180" height="14" fill="#0072B2"/>
   <text x="750" y="192" font-size="12" fill="#555">17.35</text>
 
   <!-- row 2: Passkey -->
-  <text x="60" y="230" font-size="12.5" fill="#1A1B1E">Passkey Retrieval：400K token 检索准确率</text>
+  <text x="60" y="230" font-size="12.5" fill="#009E73">Passkey Retrieval：400K token 检索准确率</text>
   <circle cx="578" cy="246" r="7" fill="#0072B2"/>
   <text x="592" y="251" font-size="12" fill="#555">MemMamba 0.9</text>
   <circle cx="700" cy="246" r="7" fill="#999999"/>
@@ -31,7 +31,7 @@
   <text x="842" y="251" font-size="12" fill="#555">Pythia 与 Mamba 在 32K 内即归零</text>
 
   <!-- row 3: noisy retrieval -->
-  <text x="60" y="290" font-size="12.5" fill="#1A1B1E">含噪文档检索：200 个干扰文档下的成绩</text>
+  <text x="60" y="290" font-size="12.5" fill="#009E73">含噪文档检索：200 个干扰文档下的成绩</text>
   <rect x="560" y="304" width="176" height="14" fill="#0072B2"/>
   <text x="744" y="316" font-size="12" fill="#555">MemMamba 0.24</text>
   <rect x="560" y="324" width="88" height="14" fill="#999999"/>
@@ -40,25 +40,25 @@
   <text x="590" y="355" font-size="12" fill="#555">Mamba 为 0</text>
 
   <!-- row 4: latency -->
-  <text x="60" y="384" font-size="12.5" fill="#1A1B1E">效率：端到端延迟相对 Transformer（倍）</text>
+  <text x="60" y="384" font-size="12.5" fill="#009E73">效率：端到端延迟相对 Transformer（倍）</text>
   <circle cx="578" cy="398" r="7" fill="#D55E00"/>
   <text x="592" y="403" font-size="12" fill="#555">0.52 倍，即 48% 推理加速</text>
 
   <!-- sequence-position axis -->
-  <line x1="560" y1="422" x2="1100" y2="422" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="560" y1="422" x2="1100" y2="422" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="560" y1="422" x2="560" y2="427"/>
     <line x1="740" y1="422" x2="740" y2="427"/>
     <line x1="920" y1="422" x2="920" y2="427"/>
     <line x1="1100" y1="422" x2="1100" y2="427"/>
   </g>
-  <text x="830" y="448" font-size="14" fill="#1A1B1E" text-anchor="middle">四项任务（正文列举顺序，序列位置轴）</text>
+  <text x="830" y="448" font-size="14" fill="#009E73" text-anchor="middle">四项任务（正文列举顺序，序列位置轴）</text>
   <text x="560" y="472" font-size="12" fill="#555">条形长度与圆点位置仅为正文数值直接标注，不构成跨任务数值对比；理论上保持 O(n·d) 复杂度、BIBO 稳定性，</text>
   <text x="560" y="490" font-size="12" fill="#555">长序列召回率不低于 90%</text>
 
   <!-- ============ panel b ============ -->
-  <text x="60" y="522" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="82" y="522" font-size="15" fill="#1A1B1E">遗忘根源与记笔记机制（论文理论与设计描述）</text>
+  <text x="60" y="522" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="82" y="522" font-size="15" fill="#009E73">遗忘根源与记笔记机制（论文理论与设计描述）</text>
   <g font-size="12" fill="#555">
     <text x="60" y="552">根源：状态更新方程 h_t = A·h_{t-1} + B·x_t，稳定性要求 |A| &lt; 1，k 步前输入的贡献被 |A|^k 压制，随 k 增大指数级衰减</text>
     <text x="60" y="576">量化：ETMF 衡量信息在层内水平传播的保留程度；ECLMF 衡量层间垂直传输的保留程度</text>

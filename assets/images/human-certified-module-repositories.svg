@@ -1,29 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" font-family="sans-serif">
-  <rect width="800" height="450" fill="#ffffff"/>
-  <text x="400" y="40" text-anchor="middle" font-size="22" fill="#1a2b4a">HCMR：人类认证模块仓库流水线</text>
-  <g font-size="15" fill="#1a2b4a">
-    <rect x="40" y="90" width="150" height="70" rx="8" fill="#eaf2ff" stroke="#3b6fd4"/>
+  <rect width="800" height="450" fill="#F0F0F0"/>
+  <text x="400" y="40" text-anchor="middle" font-size="22" fill="#009E73">HCMR：人类认证模块仓库流水线</text>
+  <g font-size="15" fill="#009E73">
+    <rect x="40" y="90" width="150" height="70" rx="8" fill="#CC79A7" stroke="#0072B2"/>
     <text x="115" y="120" text-anchor="middle">候选模块</text>
     <text x="115" y="142" text-anchor="middle" font-size="12">公共仓库依赖</text>
-    <rect x="230" y="90" width="150" height="70" rx="8" fill="#eaf2ff" stroke="#3b6fd4"/>
+    <rect x="230" y="90" width="150" height="70" rx="8" fill="#CC79A7" stroke="#0072B2"/>
     <text x="305" y="120" text-anchor="middle">自动化预检</text>
     <text x="305" y="142" text-anchor="middle" font-size="12">来源/重现构建</text>
-    <rect x="420" y="90" width="150" height="70" rx="8" fill="#fff3e0" stroke="#e08a00"/>
+    <rect x="420" y="90" width="150" height="70" rx="8" fill="#CC79A7" stroke="#E69F00"/>
     <text x="495" y="120" text-anchor="middle">人工安全审查</text>
     <text x="495" y="142" text-anchor="middle" font-size="12">静态分析/敏感路径</text>
-    <rect x="610" y="90" width="150" height="70" rx="8" fill="#fff3e0" stroke="#e08a00"/>
+    <rect x="610" y="90" width="150" height="70" rx="8" fill="#CC79A7" stroke="#E69F00"/>
     <text x="685" y="120" text-anchor="middle">沙箱行为验证</text>
     <text x="685" y="142" text-anchor="middle" font-size="12">隔离运行时</text>
   </g>
-  <g stroke="#5a6b85" stroke-width="2" fill="none" marker-end="url(#a)">
+  <g stroke="#0072B2" stroke-width="2" fill="none" marker-end="url(#a)">
     <path d="M190 125 H226"/><path d="M380 125 H416"/><path d="M570 125 H606"/>
     <path d="M685 160 V210 H440 V252"/>
   </g>
-  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#5a6b85"/></marker></defs>
-  <rect x="250" y="255" width="300" height="70" rx="8" fill="#e6f6ea" stroke="#2e9e4f"/>
-  <text x="400" y="285" text-anchor="middle" font-size="15" fill="#1a2b4a">认证发布：安全等级 + 机器可读元数据</text>
-  <text x="400" y="307" text-anchor="middle" font-size="12" fill="#5a6b85">可审计信任链 / 可组合接口契约</text>
-  <path d="M400 325 V365" stroke="#5a6b85" stroke-width="2" fill="none" marker-end="url(#a)"/>
-  <rect x="180" y="370" width="440" height="55" rx="8" fill="#f2ecff" stroke="#7a4fd4"/>
-  <text x="400" y="403" text-anchor="middle" font-size="15" fill="#1a2b4a">AI 只能组合已认证模块：关键基础设施与安全敏感场景</text>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#0072B2"/></marker></defs>
+  <rect x="250" y="255" width="300" height="70" rx="8" fill="#CC79A7" stroke="#009E73"/>
+  <text x="400" y="285" text-anchor="middle" font-size="15" fill="#009E73">认证发布：安全等级 + 机器可读元数据</text>
+  <text x="400" y="307" text-anchor="middle" font-size="12" fill="#0072B2">可审计信任链 / 可组合接口契约</text>
+  <path d="M400 325 V365" stroke="#0072B2" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <rect x="180" y="370" width="440" height="55" rx="8" fill="#CC79A7" stroke="#CC79A7"/>
+  <text x="400" y="403" text-anchor="middle" font-size="15" fill="#009E73">AI 只能组合已认证模块：关键基础设施与安全敏感场景</text>
 </svg>

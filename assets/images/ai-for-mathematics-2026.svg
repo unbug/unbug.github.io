@@ -1,77 +1,77 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">AI 在博士资格考试平均得分 84.4 分，代数最强；面对 250,000 条 mathlib4 定理，检索成为新瓶颈</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">AI 在博士资格考试平均得分 84.4 分，代数最强；面对 250,000 条 mathlib4 定理，检索成为新瓶颈</text>
 
   <!-- ============ panel a: qualitative capability ladder ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">能力阶梯（论文叙述顺序位置轴，正文未给出统一量化分数，属定性刻画）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">能力阶梯（论文叙述顺序位置轴，正文未给出统一量化分数，属定性刻画）</text>
 
-  <line x1="160" y1="240" x2="1120" y2="240" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="160" y1="240" x2="1120" y2="240" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="160" y1="240" x2="160" y2="244"/>
     <line x1="400" y1="240" x2="400" y2="244"/>
     <line x1="640" y1="240" x2="640" y2="244"/>
     <line x1="880" y1="240" x2="880" y2="244"/>
     <line x1="1120" y1="240" x2="1120" y2="244"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+  <g font-size="12.5" fill="#009E73" text-anchor="middle">
     <text x="160" y="264">本科期末</text>
     <text x="400" y="264">IMO 银牌</text>
     <text x="640" y="264">IMO 金牌</text>
     <text x="880" y="264">博士资格考试</text>
     <text x="1120" y="264">研究级合作</text>
   </g>
-  <text x="640" y="294" font-size="14" fill="#1A1B1E" text-anchor="middle">任务层级（正文未给出各层级统一量化分数，按论文叙述顺序标注位置）</text>
+  <text x="640" y="294" font-size="14" fill="#009E73" text-anchor="middle">任务层级（正文未给出各层级统一量化分数，按论文叙述顺序标注位置）</text>
 
   <!-- markers -->
   <circle cx="160" cy="240" r="8" fill="none" stroke="#999999" stroke-width="2"/>
-  <text x="160" y="186" font-size="12.5" fill="#1A1B1E" text-anchor="middle">GPT-4</text>
+  <text x="160" y="186" font-size="12.5" fill="#009E73" text-anchor="middle">GPT-4</text>
   <text x="160" y="204" font-size="12" fill="#555" text-anchor="middle">低于 60 分</text>
 
   <circle cx="250" cy="240" r="8" fill="#0072B2"/>
-  <text x="250" y="150" font-size="12.5" fill="#1A1B1E" text-anchor="middle">推理增强模型</text>
+  <text x="250" y="150" font-size="12.5" fill="#009E73" text-anchor="middle">推理增强模型</text>
   <text x="250" y="168" font-size="12" fill="#555" text-anchor="middle">o 系列、DeepSeek-R1、Gemini 2.5 Pro 多科目超过 90 分</text>
 
   <circle cx="640" cy="240" r="8" fill="#0072B2"/>
-  <text x="640" y="186" font-size="12.5" fill="#1A1B1E" text-anchor="middle">AlphaGeometry（2024）银牌</text>
+  <text x="640" y="186" font-size="12.5" fill="#009E73" text-anchor="middle">AlphaGeometry（2024）银牌</text>
   <text x="640" y="204" font-size="12" fill="#555" text-anchor="middle">AlphaGeometry2（2025）金牌</text>
 
   <circle cx="880" cy="240" r="9" fill="#D55E00"/>
-  <text x="880" y="186" font-size="12.5" fill="#1A1B1E" text-anchor="middle">o3-mini 平均 84.4 分</text>
+  <text x="880" y="186" font-size="12.5" fill="#009E73" text-anchor="middle">o3-mini 平均 84.4 分</text>
   <text x="880" y="204" font-size="12" fill="#555" text-anchor="middle">代数最强，几何与拓扑最低</text>
 
   <circle cx="1120" cy="240" r="8" fill="#0072B2"/>
-  <text x="1120" y="186" font-size="12.5" fill="#1A1B1E" text-anchor="middle">Numina-Lean-Agent（2026）</text>
+  <text x="1120" y="186" font-size="12.5" fill="#009E73" text-anchor="middle">Numina-Lean-Agent（2026）</text>
   <text x="1120" y="204" font-size="12" fill="#555" text-anchor="middle">解决 2025 年 Putnam 全部问题</text>
 
   <!-- ============ panel b: doctoral exam breakdown ============ -->
-  <text x="60" y="364" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="82" y="364" font-size="15" fill="#1A1B1E">博士资格考试四领域（o3-mini 平均得分 84.4 分；正文只报告最高/最低领域，属定性刻画）</text>
+  <text x="60" y="364" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="82" y="364" font-size="15" fill="#009E73">博士资格考试四领域（o3-mini 平均得分 84.4 分；正文只报告最高/最低领域，属定性刻画）</text>
 
-  <line x1="200" y1="440" x2="1000" y2="440" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="200" y1="440" x2="1000" y2="440" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="200" y1="440" x2="200" y2="444"/>
     <line x1="467" y1="440" x2="467" y2="444"/>
     <line x1="733" y1="440" x2="733" y2="444"/>
     <line x1="1000" y1="440" x2="1000" y2="444"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+  <g font-size="12.5" fill="#009E73" text-anchor="middle">
     <text x="200" y="464">最低（几何与拓扑）</text>
     <text x="467" y="464">分析、概率</text>
     <text x="733" y="464">未分项报告</text>
     <text x="1000" y="464">最高（代数）</text>
   </g>
-  <text x="600" y="494" font-size="14" fill="#1A1B1E" text-anchor="middle">相对得分高低（正文只给出最高/最低领域，位置轴，非分数刻度）</text>
+  <text x="600" y="494" font-size="14" fill="#009E73" text-anchor="middle">相对得分高低（正文只给出最高/最低领域，位置轴，非分数刻度）</text>
   <!-- endpoints marker pair -->
   <circle cx="200" cy="440" r="8" fill="none" stroke="#999999" stroke-width="2"/>
   <circle cx="1000" cy="440" r="9" fill="#D55E00"/>
 
   <!-- ============ panel c: retrieval bottleneck ============ -->
-  <text x="60" y="548" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
-  <text x="82" y="548" font-size="15" fill="#1A1B1E">规模与检索瓶颈</text>
-  <g font-size="13" fill="#1A1B1E">
+  <text x="60" y="548" font-size="15" font-weight="bold" fill="#009E73">c</text>
+  <text x="82" y="548" font-size="15" fill="#009E73">规模与检索瓶颈</text>
+  <g font-size="13" fill="#009E73">
     <text x="300" y="544">mathlib4 定理超过 250,000 个</text>
     <text x="640" y="544">定义超过 120,000 个</text>
   </g>

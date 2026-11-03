@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">AlphaEvolve 将 4×4 矩阵乘法标量乘法次数从 49 降至 48，打破 Strassen 保持 56 年的纪录</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">AlphaEvolve 将 4×4 矩阵乘法标量乘法次数从 49 降至 48，打破 Strassen 保持 56 年的纪录</text>
 
   <!-- ============ panel a ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">4×4 矩阵乘法的标量乘法次数（次）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">4×4 矩阵乘法的标量乘法次数（次）</text>
 
   <g stroke="#D9D9D9" stroke-width="0.5">
     <line x1="282" y1="150" x2="282" y2="400"/>
@@ -14,61 +14,61 @@
     <line x1="546" y1="150" x2="546" y2="400"/>
   </g>
   <!-- bars: x = 150 + 4.9*v -->
-  <text x="258" y="196" font-size="12.5" fill="#1A1B1E" text-anchor="end">传统方法</text>
+  <text x="258" y="196" font-size="12.5" fill="#009E73" text-anchor="end">传统方法</text>
   <rect x="150" y="182" width="313.6" height="20" fill="#999999"/>
   <text x="473" y="196" font-size="12" fill="#555">64</text>
 
-  <text x="258" y="266" font-size="12.5" fill="#1A1B1E" text-anchor="end">Strassen（1969）</text>
+  <text x="258" y="266" font-size="12.5" fill="#009E73" text-anchor="end">Strassen（1969）</text>
   <rect x="150" y="252" width="240.1" height="20" fill="#0072B2"/>
   <text x="400" y="266" font-size="12" fill="#555">49</text>
 
-  <text x="258" y="336" font-size="12.5" fill="#1A1B1E" text-anchor="end">AlphaEvolve</text>
+  <text x="258" y="336" font-size="12.5" fill="#009E73" text-anchor="end">AlphaEvolve</text>
   <rect x="150" y="322" width="235.2" height="20" fill="#D55E00"/>
   <text x="395" y="336" font-size="12" fill="#555">48</text>
   <text x="428" y="336" font-size="12" fill="#555">Δ=-1</text>
 
   <!-- value axis -->
-  <line x1="150" y1="400" x2="600" y2="400" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="150" y1="400" x2="600" y2="400" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="150" y1="400" x2="150" y2="404"/>
     <line x1="282" y1="400" x2="282" y2="404"/>
     <line x1="414" y1="400" x2="414" y2="404"/>
     <line x1="546" y1="400" x2="546" y2="404"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+  <g font-size="12.5" fill="#009E73" text-anchor="middle">
     <text x="150" y="422">O(n³)</text>
     <text x="414" y="422">O(n^2.807)</text>
   </g>
-  <text x="375" y="448" font-size="14" fill="#1A1B1E" text-anchor="middle">标量乘法次数（次）· 左端为 O(n³) 复杂度方法，右端为分治递归后的 O(n^2.807) 方法</text>
+  <text x="375" y="448" font-size="14" fill="#009E73" text-anchor="middle">标量乘法次数（次）· 左端为 O(n³) 复杂度方法，右端为分治递归后的 O(n^2.807) 方法</text>
   <text x="150" y="474" font-size="12" fill="#555">对 1024×1024 矩阵：传统方法约 10 亿次乘法，Strassen 方法约 6 亿次</text>
 
   <!-- ============ panel b ============ -->
-  <text x="760" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="782" y="104" font-size="15" fill="#1A1B1E">改进的矩阵乘法算法（论文报告的尺寸序列，类别轴）</text>
+  <text x="760" y="104" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="782" y="104" font-size="15" fill="#009E73">改进的矩阵乘法算法（论文报告的尺寸序列，类别轴）</text>
 
   <!-- dumbbell: hollow = before, solid = after; positions 1-3 sequence axis -->
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+  <g font-size="12.5" fill="#009E73" text-anchor="end">
     <text x="850" y="176">(2,4,5)</text>
     <text x="850" y="246">(3,4,6)</text>
     <text x="850" y="316">(4,5,6)</text>
   </g>
   <line x1="1005.6" y1="172" x2="1014.4" y2="172" stroke="#555555" stroke-width="1.5"/>
-  <circle cx="1002.4" cy="172" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+  <circle cx="1002.4" cy="172" r="6" fill="#F0F0F0" stroke="#0072B2" stroke-width="1.5"/>
   <circle cx="996.8" cy="172" r="6" fill="#D55E00"/>
   <text x="1030" y="176" font-size="12" fill="#555">33 → 32</text>
 
   <line x1="1064.8" y1="242" x2="1086.4" y2="242" stroke="#555555" stroke-width="1.5"/>
-  <circle cx="1079.2" cy="242" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+  <circle cx="1079.2" cy="242" r="6" fill="#F0F0F0" stroke="#0072B2" stroke-width="1.5"/>
   <circle cx="1072.8" cy="242" r="6" fill="#D55E00"/>
   <text x="1102" y="246" font-size="12" fill="#555">56 → 54</text>
 
   <line x1="1156" y1="312" x2="1188" y2="312" stroke="#555555" stroke-width="1.5"/>
-  <circle cx="1170.4" cy="312" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+  <circle cx="1170.4" cy="312" r="6" fill="#F0F0F0" stroke="#0072B2" stroke-width="1.5"/>
   <circle cx="1161.6" cy="312" r="6" fill="#D55E00"/>
   <text x="1140" y="296" font-size="12" fill="#555" text-anchor="end">93 → 90</text>
 
   <g font-size="12" fill="#555">
-    <circle cx="905" cy="360" r="6" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+    <circle cx="905" cy="360" r="6" fill="#F0F0F0" stroke="#0072B2" stroke-width="1.5"/>
     <text x="918" y="364">改进前次数</text>
     <circle cx="1020" cy="360" r="6" fill="#D55E00"/>
     <text x="1033" y="364">改进后次数</text>
@@ -77,8 +77,8 @@
   <text x="782" y="422" font-size="12" fill="#555">论文共改进 14 种不同尺寸的矩阵乘法算法</text>
 
   <!-- ============ panel c ============ -->
-  <text x="60" y="500" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
-  <text x="82" y="500" font-size="15" fill="#1A1B1E">生产环境与纯数学的实际影响（论文自测口径）</text>
+  <text x="60" y="500" font-size="15" font-weight="bold" fill="#009E73">c</text>
+  <text x="82" y="500" font-size="15" fill="#009E73">生产环境与纯数学的实际影响（论文自测口径）</text>
   <g font-size="12" fill="#555">
     <text x="60" y="532">Gemini 训练：关键矩阵乘法内核提速 23%，整体训练时间减少 1%</text>
     <text x="60" y="556">纯数学：处理 67 个问题，20% 找到优于人类已知方案的解，包括 11 维空间亲吻数问题的更好结果</text>

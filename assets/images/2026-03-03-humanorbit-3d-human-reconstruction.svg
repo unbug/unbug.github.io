@@ -1,27 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">从单张人物照片生成 360° 环绕视频：把三维重建问题重新定义为视频生成问题，生成时间连贯、内容连贯的画面序列</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">从单张人物照片生成 360° 环绕视频：把三维重建问题重新定义为视频生成问题，生成时间连贯、内容连贯的画面序列</text>
 
   <!-- ============ panel a: pipeline ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">管线（定性示意）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">管线（定性示意）</text>
 
-  <rect x="80" y="150" width="170" height="64" fill="none" stroke="#1A1B1E" stroke-width="1.5"/>
-  <text x="165" y="177" font-size="12.5" fill="#1A1B1E" text-anchor="middle">单张人物照片</text>
+  <rect x="80" y="150" width="170" height="64" fill="none" stroke="#009E73" stroke-width="1.5"/>
+  <text x="165" y="177" font-size="12.5" fill="#009E73" text-anchor="middle">单张人物照片</text>
   <text x="165" y="197" font-size="12" fill="#555" text-anchor="middle">输入都只需要一张照片</text>
 
   <rect x="340" y="150" width="210" height="64" fill="none" stroke="#0072B2" stroke-width="1.5"/>
-  <text x="445" y="177" font-size="12.5" fill="#1A1B1E" text-anchor="middle">视角序列化为视频</text>
+  <text x="445" y="177" font-size="12.5" fill="#009E73" text-anchor="middle">视角序列化为视频</text>
   <text x="445" y="197" font-size="12" fill="#555" text-anchor="middle">环绕轨迹离散成连续帧序列</text>
 
   <rect x="640" y="150" width="210" height="64" fill="none" stroke="#D55E00" stroke-width="1.5"/>
-  <text x="745" y="177" font-size="12.5" fill="#1A1B1E" text-anchor="middle">视频扩散模型生成</text>
+  <text x="745" y="177" font-size="12.5" fill="#009E73" text-anchor="middle">视频扩散模型生成</text>
   <text x="745" y="197" font-size="12" fill="#555" text-anchor="middle">复用已训练好的强视频生成模型的时空先验</text>
 
   <rect x="940" y="150" width="180" height="64" fill="none" stroke="#009E73" stroke-width="1.5"/>
-  <text x="1030" y="177" font-size="12.5" fill="#1A1B1E" text-anchor="middle">360° 环绕视频</text>
+  <text x="1030" y="177" font-size="12.5" fill="#009E73" text-anchor="middle">360° 环绕视频</text>
   <text x="1030" y="197" font-size="12" fill="#555" text-anchor="middle">时间连贯、内容连贯的画面序列</text>
 
   <g stroke="#999999" stroke-width="1.5">
@@ -37,8 +37,8 @@
   <text x="80" y="256" font-size="12" fill="#555">一致性约束：通过条件注入保持人物外观与身份，保证新视角几何一致，不破坏人体结构</text>
 
   <!-- ============ panel b: constraints vs approach ============ -->
-  <text x="60" y="330" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="82" y="330" font-size="15" fill="#1A1B1E">环绕视频要同时满足的三个约束</text>
+  <text x="60" y="330" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="82" y="330" font-size="15" fill="#009E73">环绕视频要同时满足的三个约束</text>
 
   <g stroke-width="1.5" fill="none">
     <circle cx="120" cy="368" r="6" stroke="#0072B2"/>
@@ -60,7 +60,7 @@
     <polygon points="640,399 650,404 640,409"/>
     <polygon points="640,435 650,440 640,445"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E">
+  <g font-size="12.5" fill="#009E73">
     <text x="664" y="372">视频扩散模型恰好擅长生成时间连贯的画面</text>
     <text x="664" y="408">条件注入保持人物外观与身份</text>
     <text x="664" y="444">保证新视角几何一致，不破坏人体结构</text>
@@ -68,8 +68,8 @@
   <text x="120" y="484" font-size="12" fill="#555">传统路线基于图像扩散模型做逐视角合成，各视角独立生成，跨视角一致性与身份保持都难以保证</text>
 
   <!-- ============ panel c: closed loop + caveat ============ -->
-  <text x="60" y="536" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
-  <text x="82" y="536" font-size="15" fill="#1A1B1E">闭环与适用性</text>
+  <text x="60" y="536" font-size="15" font-weight="bold" fill="#009E73">c</text>
+  <text x="82" y="536" font-size="15" fill="#009E73">闭环与适用性</text>
   <g font-size="12" fill="#555">
     <text x="60" y="566">生成的多视角帧可以继续馈送给下游三维重建方法，形成「照片进、模型出」的完整闭环</text>
     <text x="60" y="588">生成视角属于模型想象而非真实观测，细节保真度受视频模型先验限制</text>

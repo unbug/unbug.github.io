@@ -1,41 +1,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Arial,sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">微调后的 Qwen2.5 Coder 3B 评委 Kappa 达 0.57 超过 GPT-4.1-mini；小生成器加小评委团队以小成本超越大模型</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">微调后的 Qwen2.5 Coder 3B 评委 Kappa 达 0.57 超过 GPT-4.1-mini；小生成器加小评委团队以小成本超越大模型</text>
 
   <!-- ============ panel a ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">正确性判别 Cohen's Kappa（论文自测口径）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">正确性判别 Cohen's Kappa（论文自测口径）</text>
 
   <!-- bars: x = 330 + 600*v -->
-  <text x="318" y="154" font-size="12.5" fill="#1A1B1E" text-anchor="end">Qwen2.5 Coder 3B</text>
+  <text x="318" y="154" font-size="12.5" fill="#009E73" text-anchor="end">Qwen2.5 Coder 3B</text>
   <rect x="330" y="140" width="342" height="20" fill="#D55E00"/>
   <text x="680" y="154" font-size="12" fill="#555">0.57</text>
 
-  <text x="318" y="202" font-size="12.5" fill="#1A1B1E" text-anchor="end">GPT-4.1-mini（对照）</text>
+  <text x="318" y="202" font-size="12.5" fill="#009E73" text-anchor="end">GPT-4.1-mini（对照）</text>
   <rect x="330" y="188" width="324" height="20" fill="#999999"/>
   <text x="662" y="202" font-size="12" fill="#555">0.54</text>
 
-  <text x="318" y="250" font-size="12.5" fill="#1A1B1E" text-anchor="end">Gemma-3 4B</text>
+  <text x="318" y="250" font-size="12.5" fill="#009E73" text-anchor="end">Gemma-3 4B</text>
   <rect x="330" y="236" width="294" height="20" fill="#0072B2"/>
   <text x="632" y="250" font-size="12" fill="#555">0.49</text>
 
-  <text x="318" y="298" font-size="12.5" fill="#1A1B1E" text-anchor="end">Qwen2.5 Coder 0.5B</text>
+  <text x="318" y="298" font-size="12.5" fill="#009E73" text-anchor="end">Qwen2.5 Coder 0.5B</text>
   <rect x="330" y="284" width="270" height="20" fill="#0072B2"/>
   <text x="608" y="298" font-size="12" fill="#555">0.45</text>
 
-  <text x="318" y="346" font-size="12.5" fill="#1A1B1E" text-anchor="end">RankEF（对照）</text>
+  <text x="318" y="346" font-size="12.5" fill="#009E73" text-anchor="end">RankEF（对照）</text>
   <rect x="330" y="332" width="240" height="20" fill="#999999"/>
   <text x="578" y="346" font-size="12" fill="#555">0.40</text>
 
   <!-- baseline axis (no tick numbers in post; values labeled at bars) -->
-  <line x1="330" y1="366" x2="700" y2="366" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="330" y1="366" x2="700" y2="366" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="330" y1="366" x2="330" y2="370"/>
     <line x1="700" y1="366" x2="700" y2="370"/>
   </g>
-  <text x="515" y="392" font-size="14" fill="#1A1B1E" text-anchor="middle">Cohen's Kappa（数值直接标注在条形旁，轴从 0 起）</text>
+  <text x="515" y="392" font-size="14" fill="#009E73" text-anchor="middle">Cohen's Kappa（数值直接标注在条形旁，轴从 0 起）</text>
   <text x="760" y="154" font-size="12" fill="#555">朱色为主角（最佳微调评委）</text>
   <text x="760" y="180" font-size="12" fill="#555">蓝色为其余微调后小模型</text>
   <text x="760" y="206" font-size="12" fill="#555">灰色为对照基线</text>
@@ -44,40 +44,40 @@
   <text x="760" y="292" font-size="12" fill="#555">提升到 0.45，Gemma-3 4B 从 0.10 提升到 0.49</text>
 
   <!-- ============ panel b ============ -->
-  <text x="60" y="452" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="82" y="452" font-size="15" fill="#1A1B1E">10 个候选加 1 个评委相比单模型的 Pass@1 提升（%，论文自测口径）</text>
+  <text x="60" y="452" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="82" y="452" font-size="15" fill="#009E73">10 个候选加 1 个评委相比单模型的 Pass@1 提升（%，论文自测口径）</text>
 
   <!-- horizontal bars: x = 320 + 11*v -->
-  <text x="308" y="494" font-size="12" fill="#1A1B1E" text-anchor="end">Gemma-3 4B</text>
+  <text x="308" y="494" font-size="12" fill="#009E73" text-anchor="end">Gemma-3 4B</text>
   <rect x="320" y="482" width="58" height="16" fill="#0072B2"/>
   <text x="386" y="494" font-size="12" fill="#555">+5.3</text>
 
-  <text x="308" y="526" font-size="12" fill="#1A1B1E" text-anchor="end">OpenCoder 1.5B</text>
+  <text x="308" y="526" font-size="12" fill="#009E73" text-anchor="end">OpenCoder 1.5B</text>
   <rect x="320" y="514" width="122" height="16" fill="#0072B2"/>
   <text x="450" y="526" font-size="12" fill="#555">+11.1</text>
 
-  <text x="308" y="558" font-size="12" fill="#1A1B1E" text-anchor="end">DeepSeek Coder 1.3B</text>
+  <text x="308" y="558" font-size="12" fill="#009E73" text-anchor="end">DeepSeek Coder 1.3B</text>
   <rect x="320" y="546" width="133" height="16" fill="#0072B2"/>
   <text x="461" y="558" font-size="12" fill="#555">+12.1</text>
 
-  <text x="308" y="590" font-size="12" fill="#1A1B1E" text-anchor="end">Qwen2.5 Coder 3B</text>
+  <text x="308" y="590" font-size="12" fill="#009E73" text-anchor="end">Qwen2.5 Coder 3B</text>
   <rect x="320" y="578" width="176" height="16" fill="#0072B2"/>
   <text x="504" y="590" font-size="12" fill="#555">+16.0</text>
 
-  <text x="308" y="622" font-size="12" fill="#1A1B1E" text-anchor="end">Phi-4 mini 4B</text>
+  <text x="308" y="622" font-size="12" fill="#009E73" text-anchor="end">Phi-4 mini 4B</text>
   <rect x="320" y="610" width="227" height="16" fill="#D55E00"/>
   <text x="555" y="622" font-size="12" fill="#555">+20.6</text>
 
-  <line x1="320" y1="628" x2="620" y2="628" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="320" y1="628" x2="620" y2="628" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="320" y1="628" x2="320" y2="632"/>
     <line x1="620" y1="628" x2="620" y2="632"/>
   </g>
-  <text x="470" y="652" font-size="14" fill="#1A1B1E" text-anchor="middle">相对提升（%，数值直接标注在条形旁，轴从 0 起）</text>
+  <text x="470" y="652" font-size="14" fill="#009E73" text-anchor="middle">相对提升（%，数值直接标注在条形旁，轴从 0 起）</text>
 
   <!-- ============ panel c ============ -->
-  <text x="680" y="452" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
-  <text x="702" y="452" font-size="15" fill="#1A1B1E">以小胜大与成本（论文自测口径）</text>
+  <text x="680" y="452" font-size="15" font-weight="bold" fill="#009E73">c</text>
+  <text x="702" y="452" font-size="15" fill="#009E73">以小胜大与成本（论文自测口径）</text>
   <g font-size="12" fill="#555">
     <text x="680" y="490">Phi-4 mini 4B：Pass@1 从 0.200 到 0.406，提升 +20.6%</text>
     <text x="680" y="516">Qwen2.5 Coder 3B：Pass@1 达 0.521，提升 +16.0%</text>

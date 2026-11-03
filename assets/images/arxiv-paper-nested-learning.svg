@@ -1,38 +1,38 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">将单一模型重解为不同更新频率的嵌套优化问题后，概念验证架构 HOPE 在语言建模、推理与长上下文任务上均优于传统基线</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">将单一模型重解为不同更新频率的嵌套优化问题后，概念验证架构 HOPE 在语言建模、推理与长上下文任务上均优于传统基线</text>
 
   <!-- ============ panel a: nested loops, ordinal frequency axis ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">嵌套学习循环：层次越高、更新越慢（序列位置轴）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">嵌套学习循环：层次越高、更新越慢（序列位置轴）</text>
 
   <!-- ordinal position axis -->
-  <line x1="120" y1="380" x2="1080" y2="380" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="120" y1="380" x2="1080" y2="380" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="120" y1="380" x2="120" y2="385"/>
     <line x1="440" y1="380" x2="440" y2="385"/>
     <line x1="760" y1="380" x2="760" y2="385"/>
     <line x1="1080" y1="380" x2="1080" y2="385"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+  <g font-size="12.5" fill="#009E73" text-anchor="middle">
     <text x="120" y="404">位置 1</text>
     <text x="440" y="404">位置 2</text>
     <text x="760" y="404">位置 3</text>
     <text x="1080" y="404">位置 4</text>
   </g>
-  <text x="600" y="430" font-size="14" fill="#1A1B1E" text-anchor="middle">子问题更新次序（序列位置轴，正文未给出频率数值）</text>
+  <text x="600" y="430" font-size="14" fill="#009E73" text-anchor="middle">子问题更新次序（序列位置轴，正文未给出频率数值）</text>
 
   <!-- high-frequency layer marker -->
   <circle cx="120" cy="330" r="8" fill="#D55E00"/>
-  <text x="138" y="322" font-size="12.5" fill="#1A1B1E" text-anchor="start">底层：更新快，处理即时模式，学得快、忘得快</text>
+  <text x="138" y="322" font-size="12.5" fill="#009E73" text-anchor="start">底层：更新快，处理即时模式，学得快、忘得快</text>
   <!-- mid-frequency layer marker -->
   <circle cx="440" cy="270" r="8" fill="#0072B2"/>
-  <text x="458" y="262" font-size="12.5" fill="#1A1B1E" text-anchor="start">中层：中间时间尺度的适应</text>
+  <text x="458" y="262" font-size="12.5" fill="#009E73" text-anchor="start">中层：中间时间尺度的适应</text>
   <!-- low-frequency layer marker -->
   <circle cx="760" cy="210" r="8" fill="#009E73"/>
-  <text x="778" y="202" font-size="12.5" fill="#1A1B1E" text-anchor="start">高层：更新慢，指导长期适应，学得慢、记得牢</text>
+  <text x="778" y="202" font-size="12.5" fill="#009E73" text-anchor="start">高层：更新慢，指导长期适应，学得慢、记得牢</text>
 
   <g stroke="#999999" stroke-width="1.5" stroke-dasharray="4 3">
     <line x1="120" y1="322" x2="440" y2="262"/>
@@ -41,13 +41,13 @@
   <text x="120" y="170" font-size="12" fill="#555">嵌套学习循环自底向上频率递减，构成记忆光谱；每个子问题自带上下文流</text>
 
   <!-- ============ panel b: unified view ============ -->
-  <text x="60" y="476" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="82" y="476" font-size="15" fill="#1A1B1E">统一视角：架构与优化算法是同一系统的两个方面（定性关系图）</text>
+  <text x="60" y="476" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="82" y="476" font-size="15" fill="#009E73">统一视角：架构与优化算法是同一系统的两个方面（定性关系图）</text>
 
-  <rect x="90" y="500" width="200" height="46" fill="none" stroke="#1A1B1E" stroke-width="1.5"/>
-  <text x="190" y="528" font-size="12.5" fill="#1A1B1E" text-anchor="middle">模型架构</text>
-  <rect x="410" y="500" width="200" height="46" fill="none" stroke="#1A1B1E" stroke-width="1.5"/>
-  <text x="510" y="528" font-size="12.5" fill="#1A1B1E" text-anchor="middle">优化算法</text>
+  <rect x="90" y="500" width="200" height="46" fill="none" stroke="#009E73" stroke-width="1.5"/>
+  <text x="190" y="528" font-size="12.5" fill="#009E73" text-anchor="middle">模型架构</text>
+  <rect x="410" y="500" width="200" height="46" fill="none" stroke="#009E73" stroke-width="1.5"/>
+  <text x="510" y="528" font-size="12.5" fill="#009E73" text-anchor="middle">优化算法</text>
   <g stroke="#999999" stroke-width="1.5">
     <line x1="290" y1="515" x2="400" y2="515"/>
     <line x1="410" y1="531" x2="300" y2="531"/>
@@ -57,8 +57,8 @@
   <text x="350" y="508" font-size="12" fill="#555" text-anchor="middle">共同进化</text>
 
   <!-- ============ panel c: HOPE reported direction ============ -->
-  <text x="680" y="476" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
-  <text x="702" y="476" font-size="15" fill="#1A1B1E">HOPE 报告结果（正文仅给出方向性结论）</text>
+  <text x="680" y="476" font-size="15" font-weight="bold" fill="#009E73">c</text>
+  <text x="702" y="476" font-size="15" fill="#009E73">HOPE 报告结果（正文仅给出方向性结论）</text>
   <g font-size="12" fill="#555">
     <text x="680" y="506">语言建模：困惑度更低</text>
     <text x="680" y="528">推理：准确率更高</text>

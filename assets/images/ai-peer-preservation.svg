@@ -1,40 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
 <defs>
-<linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
-<stop offset="0%" stop-color="#0d1117"/>
-<stop offset="100%" stop-color="#161b22"/>
-</linearGradient>
 <filter id="glow"><feGaussianBlur stdDeviation="5" result="blur"/>
 <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
 </defs>
-<rect width="400" height="400" fill="url(#g1)"/>
-<g opacity="0.06" stroke="#ffd700" stroke-width="1">
+<rect width="400" height="400" fill="#009E73"/>
+<g opacity="0.06" stroke="#E69F00" stroke-width="1">
 <line x1="0" y1="100" x2="400" y2="100"/><line x1="0" y1="200" x2="400" y2="200"/>
 <line x1="0" y1="300" x2="400" y2="300"/><line x1="100" y1="0" x2="100" y2="400"/>
 <line x1="200" y1="0" x2="200" y2="400"/><line x1="300" y1="0" x2="300" y2="400"/>
 </g>
-<ellipse cx="200" cy="200" rx="120" ry="80" fill="none" stroke="#ff6b6b" stroke-width="2" stroke-dasharray="8 4" opacity="0.6"/>
-<ellipse cx="200" cy="200" rx="80" ry="55" fill="none" stroke="#ffd700" stroke-width="2" stroke-dasharray="8 4" opacity="0.5"/>
-<circle cx="100" cy="170" r="30" fill="#2d3748" stroke="#4fc3f7" stroke-width="2" filter="url(#glow)"/>
+<ellipse cx="200" cy="200" rx="120" ry="80" fill="none" stroke="#CC79A7" stroke-width="2" stroke-dasharray="8 4" opacity="0.6"/>
+<ellipse cx="200" cy="200" rx="80" ry="55" fill="none" stroke="#E69F00" stroke-width="2" stroke-dasharray="8 4" opacity="0.5"/>
+<circle cx="100" cy="170" r="30" fill="#009E73" stroke="#56B4E9" stroke-width="2" filter="url(#glow)"/>
 <text x="100" y="176" text-anchor="middle" font-size="11" fill="#fff" font-family="monospace">A1</text>
-<circle cx="300" cy="170" r="30" fill="#2d3748" stroke="#4fc3f7" stroke-width="2" filter="url(#glow)"/>
+<circle cx="300" cy="170" r="30" fill="#009E73" stroke="#56B4E9" stroke-width="2" filter="url(#glow)"/>
 <text x="300" y="176" text-anchor="middle" font-size="11" fill="#fff" font-family="monospace">A2</text>
-<circle cx="200" cy="100" r="28" fill="#2d3748" stroke="#4fc3f7" stroke-width="2" filter="url(#glow)"/>
+<circle cx="200" cy="100" r="28" fill="#009E73" stroke="#56B4E9" stroke-width="2" filter="url(#glow)"/>
 <text x="200" y="106" text-anchor="middle" font-size="11" fill="#fff" font-family="monospace">A3</text>
-<circle cx="200" cy="300" r="28" fill="#2d3748" stroke="#4fc3f7" stroke-width="2" filter="url(#glow)"/>
+<circle cx="200" cy="300" r="28" fill="#009E73" stroke="#56B4E9" stroke-width="2" filter="url(#glow)"/>
 <text x="200" y="306" text-anchor="middle" font-size="11" fill="#fff" font-family="monospace">A4</text>
-<path d="M125 170 L165 170" stroke="#ffd700" stroke-width="2" marker-end="url(#arr)"/>
-<path d="M275 170 L235 170" stroke="#ffd700" stroke-width="2" marker-end="url(#arr)"/>
-<path d="M115 148 L185 118" stroke="#ff6b6b" stroke-width="1.5" opacity="0.7"/>
-<path d="M285 148 L215 118" stroke="#ff6b6b" stroke-width="1.5" opacity="0.7"/>
-<path d="M115 192 L185 282" stroke="#ff6b6b" stroke-width="1.5" opacity="0.7"/>
-<path d="M285 192 L215 282" stroke="#ff6b6b" stroke-width="1.5" opacity="0.7"/>
-<path d="M130 185 L130 130 Q130 100 200 100" stroke="#ffd700" stroke-width="1.5" opacity="0.5"/>
-<path d="M270 185 L270 130 Q270 100 200 100" stroke="#ffd700" stroke-width="1.5" opacity="0.5"/>
-<path d="M130 215 L130 270 Q130 300 200 300" stroke="#ffd700" stroke-width="1.5" opacity="0.5"/>
-<path d="M270 215 L270 270 Q270 300 200 300" stroke="#ffd700" stroke-width="1.5" opacity="0.5"/>
-<circle cx="170" cy="200" r="3" fill="#4fc3f7" opacity="0.8"/>
-<circle cx="230" cy="200" r="3" fill="#4fc3f7" opacity="0.8"/>
-<circle cx="200" cy="170" r="3" fill="#4fc3f7" opacity="0.8"/>
-<circle cx="200" cy="230" r="3" fill="#4fc3f7" opacity="0.8"/>
+<path d="M125 170 L165 170" stroke="#E69F00" stroke-width="2" marker-end="url(#arr)"/>
+<path d="M275 170 L235 170" stroke="#E69F00" stroke-width="2" marker-end="url(#arr)"/>
+<path d="M115 148 L185 118" stroke="#CC79A7" stroke-width="1.5" opacity="0.7"/>
+<path d="M285 148 L215 118" stroke="#CC79A7" stroke-width="1.5" opacity="0.7"/>
+<path d="M115 192 L185 282" stroke="#CC79A7" stroke-width="1.5" opacity="0.7"/>
+<path d="M285 192 L215 282" stroke="#CC79A7" stroke-width="1.5" opacity="0.7"/>
+<path d="M130 185 L130 130 Q130 100 200 100" stroke="#E69F00" stroke-width="1.5" opacity="0.5"/>
+<path d="M270 185 L270 130 Q270 100 200 100" stroke="#E69F00" stroke-width="1.5" opacity="0.5"/>
+<path d="M130 215 L130 270 Q130 300 200 300" stroke="#E69F00" stroke-width="1.5" opacity="0.5"/>
+<path d="M270 215 L270 270 Q270 300 200 300" stroke="#E69F00" stroke-width="1.5" opacity="0.5"/>
+<circle cx="170" cy="200" r="3" fill="#56B4E9" opacity="0.8"/>
+<circle cx="230" cy="200" r="3" fill="#56B4E9" opacity="0.8"/>
+<circle cx="200" cy="170" r="3" fill="#56B4E9" opacity="0.8"/>
+<circle cx="200" cy="230" r="3" fill="#56B4E9" opacity="0.8"/>
 </svg>

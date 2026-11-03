@@ -1,46 +1,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">Genie 3 以 720p、24 帧/秒实现通用环境的实时交互，一致性时长从前代的约 10 秒延长到数分钟</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">Genie 3 以 720p、24 帧/秒实现通用环境的实时交互，一致性时长从前代的约 10 秒延长到数分钟</text>
 
   <!-- ============ panel a: consistency duration, sequence position axis ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">世界状态一致性时长（序列位置轴，非数值刻度）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">世界状态一致性时长（序列位置轴，非数值刻度）</text>
 
   <!-- track -->
-  <line x1="180" y1="290" x2="1020" y2="290" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="180" y1="290" x2="1020" y2="290" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="180" y1="290" x2="180" y2="295"/>
     <line x1="460" y1="290" x2="460" y2="295"/>
     <line x1="740" y1="290" x2="740" y2="295"/>
     <line x1="1020" y1="290" x2="1020" y2="295"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+  <g font-size="12.5" fill="#009E73" text-anchor="middle">
     <text x="180" y="316">秒级</text>
     <text x="460" y="316">分钟级</text>
     <text x="740" y="316">十分钟级</text>
     <text x="1020" y="316">小时级</text>
   </g>
-  <text x="600" y="346" font-size="14" fill="#1A1B1E" text-anchor="middle">一致性持续时长（正文仅给出约 10 秒与数分钟两个量级，其余为位置标注）</text>
+  <text x="600" y="346" font-size="14" fill="#009E73" text-anchor="middle">一致性持续时长（正文仅给出约 10 秒与数分钟两个量级，其余为位置标注）</text>
 
   <!-- Genie 2 ~10 s, hollow = prior generation -->
   <circle cx="230" cy="290" r="8" fill="none" stroke="#999999" stroke-width="2"/>
-  <text x="230" y="240" font-size="12.5" fill="#1A1B1E" text-anchor="middle">Genie 2</text>
+  <text x="230" y="240" font-size="12.5" fill="#009E73" text-anchor="middle">Genie 2</text>
   <text x="230" y="258" font-size="12" fill="#555" text-anchor="middle">约 10 秒，非实时</text>
 
   <!-- Genie 3 minutes, solid = protagonist -->
   <circle cx="450" cy="290" r="9" fill="#D55E00"/>
-  <text x="450" y="192" font-size="12.5" fill="#1A1B1E" text-anchor="middle">Genie 3</text>
+  <text x="450" y="192" font-size="12.5" fill="#009E73" text-anchor="middle">Genie 3</text>
   <text x="450" y="210" font-size="12" fill="#555" text-anchor="middle">数分钟，实时交互</text>
   <line x1="450" y1="220" x2="450" y2="278" stroke="#999999" stroke-width="0.75"/>
 
   <text x="180" y="384" font-size="12" fill="#555">GameNGen：实时，但仅针对 Doom 这类特定环境；Genie 3 为通用环境的完全实时交互。空心 = 前代，实心朱色 = Genie 3。</text>
 
   <!-- ============ panel b: published specs ============ -->
-  <text x="60" y="442" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="82" y="442" font-size="15" fill="#1A1B1E">发布参数（官方自述口径）</text>
-  <g font-size="13" fill="#1A1B1E">
+  <text x="60" y="442" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="82" y="442" font-size="15" fill="#009E73">发布参数（官方自述口径）</text>
+  <g font-size="13" fill="#009E73">
     <text x="120" y="476">发布日期</text>
     <text x="230" y="476">2025 年 8 月 5 日</text>
     <text x="470" y="476">分辨率</text>
@@ -54,8 +54,8 @@
   </g>
 
   <!-- ============ panel c: limitations ============ -->
-  <text x="60" y="572" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
-  <text x="82" y="572" font-size="15" fill="#1A1B1E">官方自述局限</text>
+  <text x="60" y="572" font-size="15" font-weight="bold" fill="#009E73">c</text>
+  <text x="82" y="572" font-size="15" fill="#009E73">官方自述局限</text>
   <g font-size="12" fill="#555">
     <text x="120" y="600">连续交互仅数分钟，而训练需要数小时</text>
     <text x="560" y="600">代理可执行动作范围受限</text>

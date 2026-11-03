@@ -1,41 +1,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">AI 辅助使任务完成时间从 2.7 小时降至 1.2 小时，提升 55.8%；75.9% 的开发者已在日常任务中使用 AI</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">AI 辅助使任务完成时间从 2.7 小时降至 1.2 小时，提升 55.8%；75.9% 的开发者已在日常任务中使用 AI</text>
 
   <!-- ===== panel a: task completion time ===== -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">任务完成时间（小时）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">任务完成时间（小时）</text>
 
   <g stroke="#D9D9D9" stroke-width="0.5">
     <line x1="348" y1="126" x2="348" y2="286"/>
     <line x1="408" y1="126" x2="408" y2="286"/>
   </g>
   <!-- x = 300 + 40*v ; 2.7 -> 408, 1.2 -> 348 -->
-  <text x="288" y="164" font-size="12.5" fill="#1A1B1E" text-anchor="end">无 AI 辅助</text>
+  <text x="288" y="164" font-size="12.5" fill="#009E73" text-anchor="end">无 AI 辅助</text>
   <rect x="300" y="150" width="108" height="20" fill="#999999"/>
   <text x="416" y="164" font-size="12" fill="#555">2.7 小时</text>
 
-  <text x="288" y="236" font-size="12.5" fill="#1A1B1E" text-anchor="end">AI 辅助</text>
+  <text x="288" y="236" font-size="12.5" fill="#009E73" text-anchor="end">AI 辅助</text>
   <rect x="300" y="222" width="48" height="20" fill="#0072B2"/>
   <text x="356" y="236" font-size="12" fill="#555">1.2 小时（提升 55.8%）</text>
 
   <!-- value axis -->
-  <line x1="300" y1="286" x2="576" y2="286" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="300" y1="286" x2="576" y2="286" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="408" y1="286" x2="408" y2="290"/>
     <line x1="348" y1="286" x2="348" y2="290"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+  <g font-size="12.5" fill="#009E73" text-anchor="middle">
     <text x="348" y="308">1.2</text>
     <text x="408" y="308">2.7</text>
   </g>
-  <text x="438" y="332" font-size="14" fill="#1A1B1E" text-anchor="middle">完成时间（小时）</text>
+  <text x="438" y="332" font-size="14" fill="#009E73" text-anchor="middle">完成时间（小时）</text>
 
   <!-- ===== panel b: workflow gains ===== -->
-  <text x="640" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="662" y="104" font-size="15" fill="#1A1B1E">分项效率指标（%）</text>
+  <text x="640" y="104" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="662" y="104" font-size="15" fill="#009E73">分项效率指标（%）</text>
 
   <g stroke="#D9D9D9" stroke-width="0.5">
     <line x1="840" y1="126" x2="840" y2="366"/>
@@ -43,69 +43,69 @@
   </g>
   <!-- x = 760 + 4*v ; 30->880 40->920 37->908 55.8->983.2 75.9->1063.6 -->
   <!-- interval 30-40% code review -->
-  <text x="748" y="160" font-size="12.5" fill="#1A1B1E" text-anchor="end">代码审查与纠正改进</text>
+  <text x="748" y="160" font-size="12.5" fill="#009E73" text-anchor="end">代码审查与纠正改进</text>
   <rect x="880" y="146" width="40" height="20" fill="#0072B2"/>
   <line x1="880" y1="142" x2="880" y2="170" stroke="#0072B2" stroke-width="1.5"/>
   <line x1="920" y1="142" x2="920" y2="170" stroke="#0072B2" stroke-width="1.5"/>
   <text x="928" y="160" font-size="12" fill="#555">30%-40%</text>
 
   <!-- 37% debugging -->
-  <text x="748" y="212" font-size="12.5" fill="#1A1B1E" text-anchor="end">调试时间减少（高达）</text>
+  <text x="748" y="212" font-size="12.5" fill="#009E73" text-anchor="end">调试时间减少（高达）</text>
   <rect x="760" y="198" width="148" height="20" fill="#999999"/>
   <text x="916" y="212" font-size="12" fill="#555">37%</text>
 
   <!-- 55.8% task speed -->
-  <text x="748" y="264" font-size="12.5" fill="#1A1B1E" text-anchor="end">任务完成速度提升</text>
+  <text x="748" y="264" font-size="12.5" fill="#009E73" text-anchor="end">任务完成速度提升</text>
   <rect x="760" y="250" width="223.2" height="20" fill="#D55E00"/>
   <text x="991" y="264" font-size="12" fill="#555">55.8%</text>
 
   <!-- 75.9% adoption -->
-  <text x="748" y="316" font-size="12.5" fill="#1A1B1E" text-anchor="end">已在日常任务使用 AI 的开发者</text>
+  <text x="748" y="316" font-size="12.5" fill="#009E73" text-anchor="end">已在日常任务使用 AI 的开发者</text>
   <rect x="760" y="302" width="303.6" height="20" fill="#D55E00"/>
-  <text x="1056" y="316" font-size="12" fill="#FFFFFF" text-anchor="end">75.9%</text>
+  <text x="1056" y="316" font-size="12" fill="#F0F0F0" text-anchor="end">75.9%</text>
 
   <!-- value axis -->
-  <line x1="760" y1="366" x2="1080" y2="366" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="760" y1="366" x2="1080" y2="366" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="840" y1="366" x2="840" y2="370"/>
     <line x1="880" y1="366" x2="880" y2="370"/>
     <line x1="920" y1="366" x2="920" y2="370"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+  <g font-size="12.5" fill="#009E73" text-anchor="middle">
     <text x="840" y="388">20</text>
     <text x="880" y="388">30</text>
     <text x="920" y="388">40</text>
   </g>
-  <text x="920" y="412" font-size="14" fill="#1A1B1E" text-anchor="middle">比例（%）</text>
+  <text x="920" y="412" font-size="14" fill="#009E73" text-anchor="middle">比例（%）</text>
   <text x="760" y="438" font-size="12" fill="#555">中级开发者性能提升可达 20%-40%</text>
 
   <!-- ===== panel c: adoption context ===== -->
-  <text x="60" y="408" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
-  <text x="82" y="408" font-size="15" fill="#1A1B1E">Copilot 采纳环节占比（%）</text>
+  <text x="60" y="408" font-size="15" font-weight="bold" fill="#009E73">c</text>
+  <text x="82" y="408" font-size="15" fill="#009E73">Copilot 采纳环节占比（%）</text>
 
   <g stroke="#D9D9D9" stroke-width="0.5">
     <line x1="340" y1="430" x2="340" y2="560"/>
     <line x1="580" y1="430" x2="580" y2="560"/>
   </g>
   <!-- x = 220 + 4*v ; 30 -> 340, 90 -> 580 -->
-  <text x="208" y="468" font-size="12.5" fill="#1A1B1E" text-anchor="end">建议接受率</text>
+  <text x="208" y="468" font-size="12.5" fill="#009E73" text-anchor="end">建议接受率</text>
   <rect x="220" y="454" width="120" height="20" fill="#999999"/>
   <text x="348" y="468" font-size="12" fill="#555">30%</text>
 
-  <text x="208" y="530" font-size="12.5" fill="#1A1B1E" text-anchor="end">提交过生成代码</text>
+  <text x="208" y="530" font-size="12.5" fill="#009E73" text-anchor="end">提交过生成代码</text>
   <rect x="220" y="516" width="348" height="20" fill="#0072B2"/>
   <text x="588" y="530" font-size="12" fill="#555">90%</text>
 
-  <line x1="220" y1="560" x2="580" y2="560" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="220" y1="560" x2="580" y2="560" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="340" y1="560" x2="340" y2="564"/>
     <line x1="580" y1="560" x2="580" y2="564"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+  <g font-size="12.5" fill="#009E73" text-anchor="middle">
     <text x="340" y="582">30</text>
     <text x="580" y="582">90</text>
   </g>
-  <text x="380" y="604" font-size="14" fill="#1A1B1E" text-anchor="middle">占比（%）</text>
+  <text x="380" y="604" font-size="14" fill="#009E73" text-anchor="middle">占比（%）</text>
 
   <!-- paradigm note -->
   <text x="640" y="480" font-size="12" fill="#555">范式框架：Software 1.0 手工编写代码；Software 2.0 用数据训练</text>

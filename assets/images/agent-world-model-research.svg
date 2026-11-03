@@ -1,12 +1,12 @@
 <?xml version="1.0" ?><svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">AWM 合成 1,000 个环境、35,062 个工具、10,000 个任务；其中 526 个环境完成训练</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">AWM 合成 1,000 个环境、35,062 个工具、10,000 个任务；其中 526 个环境完成训练</text>
 
   <!-- ===== panel a: dataset scale (log10 count axis) ===== -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">数据集规模（对数轴）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">数据集规模（对数轴）</text>
 
   <g stroke="#D9D9D9" stroke-width="0.5">
     <line x1="380" y1="130" x2="380" y2="400"/>
@@ -16,35 +16,35 @@
 
   <!-- x = 130 + 250*(log10(n)-3); 1000->380 10000->630 35062->818.6 -->
   <g>
-    <text x="368" y="161" font-size="12.5" fill="#1A1B1E" text-anchor="end">工具</text>
+    <text x="368" y="161" font-size="12.5" fill="#009E73" text-anchor="end">工具</text>
     <rect x="380" y="147" width="438.6" height="18" fill="#0072B2"/>
     <text x="827" y="161" font-size="12" fill="#555">35,062 个</text>
 
-    <text x="368" y="217" font-size="12.5" fill="#1A1B1E" text-anchor="end">任务</text>
+    <text x="368" y="217" font-size="12.5" fill="#009E73" text-anchor="end">任务</text>
     <rect x="380" y="203" width="250" height="18" fill="#0072B2"/>
     <text x="638" y="217" font-size="12" fill="#555">10,000 个，均配对验证代码</text>
 
-    <text x="368" y="273" font-size="12.5" fill="#1A1B1E" text-anchor="end">环境</text>
+    <text x="368" y="273" font-size="12.5" fill="#009E73" text-anchor="end">环境</text>
     <circle cx="380" cy="268" r="5" fill="#D55E00"/>
     <text x="394" y="273" font-size="12" fill="#555">1,000 个，当前最大的开源工具使用环境集</text>
   </g>
 
-  <line x1="380" y1="400" x2="880" y2="400" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="380" y1="400" x2="880" y2="400" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="380" y1="400" x2="380" y2="404"/>
     <line x1="630" y1="400" x2="630" y2="404"/>
     <line x1="880" y1="400" x2="880" y2="404"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+  <g font-size="12.5" fill="#009E73" text-anchor="middle">
     <text x="380" y="422">1,000</text>
     <text x="630" y="422">10,000</text>
     
   </g>
-  <text x="630" y="446" font-size="14" fill="#1A1B1E" text-anchor="middle">数量（个，对数刻度）</text>
+  <text x="630" y="446" font-size="14" fill="#009E73" text-anchor="middle">数量（个，对数刻度）</text>
 
   <!-- ===== panel b: training coverage ===== -->
-  <text x="60" y="496" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="82" y="496" font-size="15" fill="#1A1B1E">已训练环境占生成环境比例</text>
+  <text x="60" y="496" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="82" y="496" font-size="15" fill="#009E73">已训练环境占生成环境比例</text>
 
   <!-- axis 0..1000: x = 60 + 1.08*v ; 526 -> 628.08 -->
   <g stroke="#D9D9D9" stroke-width="0.5">
@@ -55,25 +55,25 @@
   </g>
   <rect x="60" y="524" width="1080" height="20" fill="#999999"/>
   <rect x="60" y="524" width="568.08" height="20" fill="#D55E00"/>
-  <line x1="628.08" y1="516" x2="628.08" y2="552" stroke="#1A1B1E" stroke-width="0.75"/>
-  <text x="636" y="539" font-size="12" fill="#1A1B1E">526 / 1,000 个环境完成训练（受计算资源限制）</text>
+  <line x1="628.08" y1="516" x2="628.08" y2="552" stroke="#009E73" stroke-width="0.75"/>
+  <text x="636" y="539" font-size="12" fill="#009E73">526 / 1,000 个环境完成训练（受计算资源限制）</text>
 
-  <line x1="60" y1="556" x2="1140" y2="556" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="60" y1="556" x2="1140" y2="556" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="60" y1="556" x2="60" y2="560"/>
     <line x1="330" y1="556" x2="330" y2="560"/>
     <line x1="600" y1="556" x2="600" y2="560"/>
     <line x1="870" y1="556" x2="870" y2="560"/>
     <line x1="1140" y1="556" x2="1140" y2="560"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+  <g font-size="12.5" fill="#009E73" text-anchor="middle">
     <text x="60" y="578">0</text>
     
     
     
     <text x="1140" y="578">1,000</text>
   </g>
-  <text x="600" y="600" font-size="14" fill="#1A1B1E" text-anchor="middle">环境数量（个）</text>
+  <text x="600" y="600" font-size="14" fill="#009E73" text-anchor="middle">环境数量（个）</text>
 
   <text x="60" y="624" font-size="12" fill="#555">平均每环境 35 个工具；训练聚焦 Qwen3 模型系列，覆盖 4B、8B、14B 三个规模，每步使用 1,024 个环境实例</text>
 

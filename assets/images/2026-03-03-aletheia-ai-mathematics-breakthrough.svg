@@ -1,24 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">Aletheia 在 FirstProof 的 10 个研究级难题中自主解决 6 个；找不到证明时按设计如实报告未找到解决方案</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">Aletheia 在 FirstProof 的 10 个研究级难题中自主解决 6 个；找不到证明时按设计如实报告未找到解决方案</text>
 
   <!-- ============ panel a ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">10 个问题解答状态（按 P1-P10 编号序列排列，序列位置轴；朱色实心=解决，空心=未解决）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">10 个问题解答状态（按 P1-P10 编号序列排列，序列位置轴；朱色实心=解决，空心=未解决）</text>
 
   <!-- legend -->
   <g font-size="12" fill="#555">
     <circle cx="820" cy="100" r="5" fill="#D55E00"/>
     <text x="832" y="104">已解决（6 个）</text>
-    <circle cx="960" cy="100" r="5" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <circle cx="960" cy="100" r="5" fill="#F0F0F0" stroke="#999999" stroke-width="1.5"/>
     <text x="972" y="104">未解决（4 个）</text>
   </g>
 
   <!-- axis: P1..P10 at x = 100 + 100*i -->
-  <line x1="90" y1="300" x2="1140" y2="300" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="90" y1="300" x2="1140" y2="300" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="200" y1="300" x2="200" y2="305"/>
     <line x1="300" y1="300" x2="300" y2="305"/>
     <line x1="400" y1="300" x2="400" y2="305"/>
@@ -30,7 +30,7 @@
     <line x1="1000" y1="300" x2="1000" y2="305"/>
     <line x1="1100" y1="300" x2="1100" y2="305"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+  <g font-size="12.5" fill="#009E73" text-anchor="middle">
     <text x="200" y="325">P1</text>
     <text x="300" y="325">P2</text>
     <text x="400" y="325">P3</text>
@@ -45,12 +45,12 @@
 
   <!-- markers -->
   <g>
-    <circle cx="200" cy="270" r="7" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <circle cx="200" cy="270" r="7" fill="#F0F0F0" stroke="#999999" stroke-width="1.5"/>
     <circle cx="300" cy="270" r="7" fill="#D55E00"/>
-    <circle cx="400" cy="270" r="7" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
-    <circle cx="500" cy="270" r="7" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <circle cx="400" cy="270" r="7" fill="#F0F0F0" stroke="#999999" stroke-width="1.5"/>
+    <circle cx="500" cy="270" r="7" fill="#F0F0F0" stroke="#999999" stroke-width="1.5"/>
     <circle cx="600" cy="270" r="7" fill="#D55E00"/>
-    <circle cx="700" cy="270" r="7" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <circle cx="700" cy="270" r="7" fill="#F0F0F0" stroke="#999999" stroke-width="1.5"/>
     <circle cx="800" cy="270" r="7" fill="#D55E00"/>
     <circle cx="900" cy="270" r="7" fill="#D55E00"/>
     <circle cx="1000" cy="270" r="7" fill="#D55E00"/>
@@ -77,12 +77,12 @@
   </g>
 
   <!-- ============ panel b ============ -->
-  <text x="60" y="404" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="82" y="404" font-size="15" fill="#1A1B1E">成绩与边界（论文自测口径）</text>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <text x="60" y="404" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="82" y="404" font-size="15" fill="#009E73">成绩与边界（论文自测口径）</text>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="66" y1="422" x2="66" y2="524"/>
   </g>
-  <g font-size="13" fill="#1A1B1E">
+  <g font-size="13" fill="#009E73">
     <text x="82" y="438">6 个</text>
     <text x="82" y="474">10 个</text>
     <text x="82" y="510">4 个</text>
@@ -99,9 +99,9 @@
   <text x="60" y="582" font-size="12" fill="#555">规则：AI 必须完全自主产生证明，不接受任何人类提供的数学思想或内容输入</text>
 
   <!-- ============ panel c ============ -->
-  <text x="700" y="404" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
-  <text x="722" y="404" font-size="15" fill="#1A1B1E">架构与定位</text>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <text x="700" y="404" font-size="15" font-weight="bold" fill="#009E73">c</text>
+  <text x="722" y="404" font-size="15" fill="#009E73">架构与定位</text>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="706" y1="422" x2="706" y2="558"/>
   </g>
   <g font-size="12" fill="#555">

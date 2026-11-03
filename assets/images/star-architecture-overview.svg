@@ -1,65 +1,65 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">STAR 进化合成的语言模型相比 Transformer 缓存减少 90%、参数减少 13%，性能相当或更优，并可从 1.25 亿扩展到 10 亿参数</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">STAR 进化合成的语言模型相比 Transformer 缓存减少 90%、参数减少 13%，性能相当或更优，并可从 1.25 亿扩展到 10 亿参数</text>
 
   <!-- ============ panel a ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">缓存减少率（%，相对基线，正文自述口径）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">缓存减少率（%，相对基线，正文自述口径）</text>
 
   <g stroke="#D9D9D9" stroke-width="0.5">
     <line x1="340" y1="126" x2="340" y2="272"/>
     <line x1="740" y1="126" x2="740" y2="272"/>
   </g>
   <!-- bars: x = 340 + 4*v, real-value axis 0..100 -->
-  <text x="328" y="160" font-size="12.5" fill="#1A1B1E" text-anchor="end">相比混合模型</text>
+  <text x="328" y="160" font-size="12.5" fill="#009E73" text-anchor="end">相比混合模型</text>
   <rect x="340" y="147" width="148" height="18" fill="#999999"/>
   <text x="498" y="161" font-size="12" fill="#555">37%</text>
 
-  <text x="328" y="220" font-size="12.5" fill="#1A1B1E" text-anchor="end">相比传统 Transformer</text>
+  <text x="328" y="220" font-size="12.5" fill="#009E73" text-anchor="end">相比传统 Transformer</text>
   <rect x="340" y="207" width="360" height="18" fill="#D55E00"/>
   <text x="710" y="221" font-size="12" fill="#555">90%，且质量未下降</text>
 
   <!-- value axis -->
-  <line x1="340" y1="272" x2="740" y2="272" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="340" y1="272" x2="740" y2="272" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="340" y1="272" x2="340" y2="276"/>
     <line x1="540" y1="272" x2="540" y2="276"/>
     <line x1="740" y1="272" x2="740" y2="276"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+  <g font-size="12.5" fill="#009E73" text-anchor="middle">
     <text x="340" y="294">0</text>
     <text x="740" y="294">90</text>
   </g>
-  <text x="540" y="318" font-size="14" fill="#1A1B1E" text-anchor="middle">缓存减少率（%，刻度 0-90 为正文数值区间）</text>
+  <text x="540" y="318" font-size="14" fill="#009E73" text-anchor="middle">缓存减少率（%，刻度 0-90 为正文数值区间）</text>
 
   <!-- ============ panel b ============ -->
-  <text x="850" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="872" y="104" font-size="15" fill="#1A1B1E">参数减少率（%）</text>
+  <text x="850" y="104" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="872" y="104" font-size="15" fill="#009E73">参数减少率（%）</text>
   <g stroke="#D9D9D9" stroke-width="0.5">
     <line x1="980" y1="126" x2="980" y2="272"/>
     <line x1="1070" y1="126" x2="1070" y2="272"/>
   </g>
   <!-- bar: x = 980 + 3*v, real-value axis 0..40 -->
-  <text x="968" y="200" font-size="12.5" fill="#1A1B1E" text-anchor="end">同时优化质量与大小</text>
+  <text x="968" y="200" font-size="12.5" fill="#009E73" text-anchor="end">同时优化质量与大小</text>
   <rect x="980" y="187" width="39" height="18" fill="#0072B2"/>
   <text x="1029" y="201" font-size="12" fill="#555">13%</text>
-  <line x1="980" y1="272" x2="1100" y2="272" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="980" y1="272" x2="1100" y2="272" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="980" y1="272" x2="980" y2="276"/>
     <line x1="1100" y1="272" x2="1100" y2="276"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+  <g font-size="12.5" fill="#009E73" text-anchor="middle">
     <text x="980" y="294">0</text>
     <text x="1100" y="294">13</text>
   </g>
-  <text x="1040" y="318" font-size="14" fill="#1A1B1E" text-anchor="middle">参数减少率（%，刻度 0-13 为正文数值）</text>
+  <text x="1040" y="318" font-size="14" fill="#009E73" text-anchor="middle">参数减少率（%，刻度 0-13 为正文数值）</text>
   <text x="850" y="342" font-size="12" fill="#555">标准基准性能反而提高</text>
 
   <!-- ============ panel c ============ -->
-  <text x="60" y="392" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
-  <text x="82" y="392" font-size="15" fill="#1A1B1E">可扩展性与进化机制</text>
+  <text x="60" y="392" font-size="15" font-weight="bold" fill="#009E73">c</text>
+  <text x="82" y="392" font-size="15" fill="#009E73">可扩展性与进化机制</text>
   <g font-size="12" fill="#555">
     <text x="60" y="424">规模验证：进化出的架构从 1.25 亿参数扩展到 10 亿参数，性能与 Transformer++ 及混合模型相当或更好，缓存需求大幅降低</text>
     <text x="60" y="448">三个机制：STAR 基因组（分层编码，覆盖注意力、循环、卷积等组件组合空间）· 进化优化（重组与突变迭代，适者生存）·</text>
@@ -68,18 +68,18 @@
   <g stroke="#D9D9D9" stroke-width="0.5">
     <line x1="60" y1="520" x2="1140" y2="520"/>
   </g>
-  <line x1="60" y1="558" x2="1140" y2="558" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="60" y1="558" x2="1140" y2="558" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="280" y1="558" x2="280" y2="562"/>
     <line x1="600" y1="558" x2="600" y2="562"/>
     <line x1="920" y1="558" x2="920" y2="562"/>
   </g>
   <circle cx="280" cy="536" r="6" fill="#0072B2"/>
-  <text x="280" y="516" font-size="12.5" fill="#1A1B1E" text-anchor="middle">基因组编码</text>
+  <text x="280" y="516" font-size="12.5" fill="#009E73" text-anchor="middle">基因组编码</text>
   <circle cx="600" cy="536" r="6" fill="#0072B2"/>
-  <text x="600" y="516" font-size="12.5" fill="#1A1B1E" text-anchor="middle">进化优化</text>
+  <text x="600" y="516" font-size="12.5" fill="#009E73" text-anchor="middle">进化优化</text>
   <circle cx="920" cy="536" r="6" fill="#0072B2"/>
-  <text x="920" y="516" font-size="12.5" fill="#1A1B1E" text-anchor="middle">多目标优化</text>
+  <text x="920" y="516" font-size="12.5" fill="#009E73" text-anchor="middle">多目标优化</text>
   <text x="600" y="588" font-size="12" fill="#555" text-anchor="middle">三机制（论文列举顺序，序列位置轴）：模块化沉淀可复用构建块；理论根基为动力系统、信号处理与数值线性代数</text>
 
   <!-- footnote -->

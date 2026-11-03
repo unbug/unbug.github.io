@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">单次训练即可算清数据贡献：约 16% 的 Pile 语料 Shapley 值为负，过滤后达 3.75 测试损失所需迭代减少约 25%</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">单次训练即可算清数据贡献：约 16% 的 Pile 语料 Shapley 值为负，过滤后达 3.75 测试损失所需迭代减少约 25%</text>
 
   <!-- ============ panel a ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">计算成本：所需模型训练次数（类别对比，非数值刻度）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">计算成本：所需模型训练次数（类别对比，非数值刻度）</text>
 
   <!-- categorical positions -->
-  <text x="360" y="196" font-size="12.5" fill="#1A1B1E" text-anchor="end">传统 Data Shapley</text>
+  <text x="360" y="196" font-size="12.5" fill="#009E73" text-anchor="end">传统 Data Shapley</text>
   <rect x="380" y="178" width="20" height="24" fill="#999999"/>
   <rect x="412" y="178" width="20" height="24" fill="#999999" opacity="0.55"/>
   <rect x="444" y="178" width="20" height="24" fill="#999999" opacity="0.3"/>
@@ -17,46 +17,46 @@
   <text x="504" y="196" font-size="12" fill="#555">需在不同数据子集上重训：n 个数据点要考虑 2ⁿ 个子集，</text>
   <text x="504" y="214" font-size="12" fill="#555">无法应用于大规模模型（省略号表示指数级增长，未标数值）</text>
 
-  <text x="360" y="300" font-size="12.5" fill="#1A1B1E" text-anchor="end">In-Run Data Shapley</text>
+  <text x="360" y="300" font-size="12.5" fill="#009E73" text-anchor="end">In-Run Data Shapley</text>
   <rect x="380" y="282" width="20" height="24" fill="#D55E00"/>
-  <text x="412" y="292" font-size="12" fill="#1A1B1E">单次训练</text>
+  <text x="412" y="292" font-size="12" fill="#009E73">单次训练</text>
   <text x="412" y="310" font-size="12" fill="#555">利用训练迭代性质实时追踪每个数据点的影响，</text>
   <text x="700" y="310" font-size="12" fill="#555">借助 Ghost 技术计算，最高效实现仅带来可忽略的额外训练开销</text>
 
-  <line x1="380" y1="344" x2="1140" y2="344" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="380" y1="344" x2="1140" y2="344" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="390" y1="344" x2="390" y2="348"/>
     <line x1="530" y1="344" x2="530" y2="348"/>
     <line x1="1140" y1="344" x2="1140" y2="348"/>
   </g>
-  <text x="760" y="372" font-size="14" fill="#1A1B1E" text-anchor="middle">方法序列位置轴（指数级重训 → 单次训练，非数值刻度）</text>
+  <text x="760" y="372" font-size="14" fill="#009E73" text-anchor="middle">方法序列位置轴（指数级重训 → 单次训练，非数值刻度）</text>
 
   <!-- ============ panel b ============ -->
-  <text x="60" y="428" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="82" y="428" font-size="15" fill="#1A1B1E">数据清洗实验（%，论文自测口径，GPT-2 · Pile 语料）</text>
+  <text x="60" y="428" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="82" y="428" font-size="15" fill="#009E73">数据清洗实验（%，论文自测口径，GPT-2 · Pile 语料）</text>
 
   <g stroke="#D9D9D9" stroke-width="0.5">
     <line x1="465" y1="444" x2="465" y2="556"/>
   </g>
   <!-- horizontal bars: x = 290 + 8.75*v -->
-  <text x="278" y="476" font-size="12.5" fill="#1A1B1E" text-anchor="end">负 Shapley 值语料占比</text>
+  <text x="278" y="476" font-size="12.5" fill="#009E73" text-anchor="end">负 Shapley 值语料占比</text>
   <rect x="290" y="462" width="140" height="20" fill="#0072B2"/>
   <text x="440" y="476" font-size="12" fill="#555">约 16%</text>
 
-  <text x="278" y="536" font-size="12.5" fill="#1A1B1E" text-anchor="end">过滤后所需迭代减少</text>
+  <text x="278" y="536" font-size="12.5" fill="#009E73" text-anchor="end">过滤后所需迭代减少</text>
   <rect x="290" y="522" width="218.75" height="20" fill="#D55E00"/>
   <text x="518" y="536" font-size="12" fill="#555">约 25%</text>
 
-  <line x1="290" y1="556" x2="684" y2="556" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="290" y1="556" x2="684" y2="556" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="290" y1="556" x2="290" y2="560"/>
     <line x1="465" y1="556" x2="465" y2="560"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+  <g font-size="12.5" fill="#009E73" text-anchor="middle">
     <text x="290" y="578">零</text>
     <text x="465" y="578">约二十</text>
   </g>
-  <text x="487" y="600" font-size="14" fill="#1A1B1E" text-anchor="middle">比例（%）</text>
+  <text x="487" y="600" font-size="14" fill="#009E73" text-anchor="middle">比例（%）</text>
   <text x="740" y="476" font-size="12" fill="#555">口径：具有负的二阶 In-Run Data Shapley 值的训练语料；</text>
   <text x="740" y="496" font-size="12" fill="#555">过滤全部负值语料后重新训练 GPT-2，达到 3.75 测试损失</text>
   <text x="740" y="516" font-size="12" fill="#555">所需训练迭代次数减少约 25%</text>

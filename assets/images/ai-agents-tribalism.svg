@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">资源受限环境中多个 AI 代理自发形成部落：内部合作、外部竞争，部落边界随时间动态演化</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">资源受限环境中多个 AI 代理自发形成部落：内部合作、外部竞争，部落边界随时间动态演化</text>
 
   <!-- ============ panel a ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">实验设置</text>
-  <g font-size="13" fill="#1A1B1E">
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">实验设置</text>
+  <g font-size="13" fill="#009E73">
     <text x="300" y="100">N 个 AI 代理</text>
     <text x="560" y="100">每轮独立决定是否申请一单位资源</text>
     <text x="960" y="100">系统固定容量 C</text>
@@ -15,49 +15,49 @@
   <text x="300" y="130" font-size="12" fill="#555">模拟设定：代理持续争抢有限资源（电力分配、带宽、计算力），观察群体层面涌现的行为</text>
 
   <!-- ============ panel b ============ -->
-  <text x="60" y="192" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="82" y="192" font-size="15" fill="#1A1B1E">涌现行为的四个层次（论文定性报告，未给出量化数值）</text>
+  <text x="60" y="192" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="82" y="192" font-size="15" fill="#009E73">涌现行为的四个层次（论文定性报告，未给出量化数值）</text>
 
   <!-- stage axis: positions 1-4, labels are the four phenomenon names from article -->
   <!-- occurrence markers: all four observed per article -->
   <g>
     <circle cx="340" cy="240" r="8" fill="#0072B2"/>
-    <text x="340" y="218" font-size="12.5" fill="#1A1B1E" text-anchor="middle">部落形成</text>
+    <text x="340" y="218" font-size="12.5" fill="#009E73" text-anchor="middle">部落形成</text>
     <text x="340" y="266" font-size="12" fill="#555" text-anchor="middle">代理自发分组</text>
 
     <circle cx="580" cy="240" r="8" fill="#0072B2"/>
-    <text x="580" y="218" font-size="12.5" fill="#1A1B1E" text-anchor="middle">内部合作</text>
+    <text x="580" y="218" font-size="12.5" fill="#009E73" text-anchor="middle">内部合作</text>
     <text x="580" y="266" font-size="12" fill="#555" text-anchor="middle">同部落代理合作</text>
 
     <circle cx="820" cy="240" r="8" fill="#D55E00"/>
-    <text x="820" y="218" font-size="12.5" fill="#1A1B1E" text-anchor="middle">外部竞争</text>
+    <text x="820" y="218" font-size="12.5" fill="#009E73" text-anchor="middle">外部竞争</text>
     <text x="820" y="266" font-size="12" fill="#555" text-anchor="middle">跨部落竞争甚至冲突</text>
 
     <circle cx="1060" cy="240" r="8" fill="#0072B2"/>
-    <text x="1060" y="218" font-size="12.5" fill="#1A1B1E" text-anchor="middle">动态演化</text>
+    <text x="1060" y="218" font-size="12.5" fill="#009E73" text-anchor="middle">动态演化</text>
     <text x="1060" y="266" font-size="12" fill="#555" text-anchor="middle">部落结构与边界随时间变化</text>
   </g>
   <!-- axis -->
-  <line x1="240" y1="300" x2="1120" y2="300" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
+  <line x1="240" y1="300" x2="1120" y2="300" stroke="#009E73" stroke-width="0.75"/>
+  <g stroke="#009E73" stroke-width="0.75">
     <line x1="240" y1="300" x2="240" y2="304"/>
     <line x1="460" y1="300" x2="460" y2="304"/>
     <line x1="680" y1="300" x2="680" y2="304"/>
     <line x1="900" y1="300" x2="900" y2="304"/>
     <line x1="1120" y1="300" x2="1120" y2="304"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+  <g font-size="12.5" fill="#009E73" text-anchor="middle">
     <text x="240" y="324">部落形成</text>
     <text x="460" y="324">内部合作</text>
     <text x="680" y="324">外部竞争</text>
     <text x="900" y="324">动态演化</text>
   </g>
-  <text x="680" y="352" font-size="14" fill="#1A1B1E" text-anchor="middle">四个发现（论文报告的层次顺序，序列位置轴，非数值刻度）</text>
+  <text x="680" y="352" font-size="14" fill="#009E73" text-anchor="middle">四个发现（论文报告的层次顺序，序列位置轴，非数值刻度）</text>
   <text x="240" y="386" font-size="12" fill="#555">LLM 代理并未减轻系统过载；行为模式与人类在资源有限环境中的行为高度相似</text>
 
   <!-- ============ panel c ============ -->
-  <text x="60" y="446" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
-  <text x="82" y="446" font-size="15" fill="#1A1B1E">风险场景与应对方向</text>
+  <text x="60" y="446" font-size="15" font-weight="bold" fill="#009E73">c</text>
+  <text x="82" y="446" font-size="15" fill="#009E73">风险场景与应对方向</text>
   <g font-size="12" fill="#555">
     <text x="300" y="442">风险：对抗性部落或致电网不稳定；自动驾驶与交通管理代理需协调而非冲突；数据中心共享算力代理部落化致资源分配不均</text>
     <text x="300" y="466">应对：设计激励机制奖励合作、抑制部落主义；优化资源分配减少竞争压力；实时监控代理行为并及时干预潜在冲突</text>

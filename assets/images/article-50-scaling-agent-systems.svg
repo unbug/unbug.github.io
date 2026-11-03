@@ -1,80 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Noto Serif SC','Songti SC',serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'','',serif">
   <defs>
     <style>
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #9C9484; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-      .rl { font-size: 15px; fill: #474C54; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-      .b { font-size: 12px; fill: #A5A296; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
+      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #CC79A7; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
+      .rl { font-size: 15px; fill: #009E73; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
+      .b { font-size: 12px; fill: #CC79A7; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
       .chip { font-size: 12.5px; font-weight: 600; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
     </style>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FEFCF6"/><stop offset="1" stop-color="#F6F1E6"/>
-    </linearGradient>
-    <linearGradient id="gMahog" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#6E3B24"/><stop offset="1" stop-color="#A06B4A"/>
-    </linearGradient>
-    <linearGradient id="gBrass" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#B9892F"/><stop offset="1" stop-color="#E0BC62"/>
-    </linearGradient>
-    <linearGradient id="gStage" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#22506B"/><stop offset="1" stop-color="#5C88A6"/>
-    </linearGradient>
-    <linearGradient id="gVelvet" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#8E2F4C"/><stop offset="1" stop-color="#C0607E"/>
-    </linearGradient>
-    <linearGradient id="gMint" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2F8A5B"/><stop offset="1" stop-color="#71B98C"/>
-    </linearGradient>
   </defs>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
-  <circle cx="1105" cy="110" r="140" fill="#8E2F4C" opacity="0.07"/>
-  <circle cx="70" cy="620" r="115" fill="#22506B" opacity="0.06"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="url(#gVelvet)"/>
+  <rect width="1200" height="675" fill="#CC79A7"/>
+  <circle cx="1105" cy="110" r="140" fill="#D55E00" opacity="0.07"/>
+  <circle cx="70" cy="620" r="115" fill="#009E73" opacity="0.06"/>
+  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="#CC79A7"/>
 
   <text class="k" x="64" y="84">范式雷达 · ARXIV:2512.08296 · GOOGLE RESEARCH · 180 组受控实验</text>
-  <text x="64" y="128" font-size="40" font-weight="700" fill="#1A1B1E">先定曲目，再定乐队人数</text>
-  <text x="64" y="158" font-size="15" fill="#5B6068" font-family="'PingFang SC','Helvetica Neue',sans-serif">首个智能体系统量化缩放原则：协调增益取决于任务类型，不存在「越多越好」</text>
+  <text x="64" y="128" font-size="40" font-weight="700" fill="#009E73">先定曲目，再定乐队人数</text>
+  <text x="64" y="158" font-size="15" fill="#009E73" font-family="'PingFang SC','Helvetica Neue',sans-serif">首个智能体系统量化缩放原则：协调增益取决于任务类型，不存在「越多越好」</text>
 
   <!-- conductor + orchestra motif -->
   <g transform="translate(1010,60)">
-    <circle cx="60" cy="34" r="13" fill="url(#gMahog)"/>
-    <path d="M 60 47 q -20 26 -12 52 h 24 q 8 -26 -12 -52" fill="url(#gVelvet)"/>
-    <path d="M 70 54 L 98 28" stroke="#6E3B24" stroke-width="3" stroke-linecap="round"/>
-    <circle cx="100" cy="26" r="3.5" fill="#6E3B24"/>
-    <path d="M 50 54 L 24 40" stroke="#6E3B24" stroke-width="3" stroke-linecap="round"/>
-    <g fill="url(#gBrass)">
+    <circle cx="60" cy="34" r="13" fill="#D55E00"/>
+    <path d="M 60 47 q -20 26 -12 52 h 24 q 8 -26 -12 -52" fill="#CC79A7"/>
+    <path d="M 70 54 L 98 28" stroke="#D55E00" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="100" cy="26" r="3.5" fill="#D55E00"/>
+    <path d="M 50 54 L 24 40" stroke="#D55E00" stroke-width="3" stroke-linecap="round"/>
+    <g fill="#F0E442">
       <circle cx="8" cy="104" r="7"/><circle cx="36" cy="116" r="7"/><circle cx="66" cy="122" r="7"/><circle cx="96" cy="116" r="7"/><circle cx="124" cy="104" r="7"/>
     </g>
-    <path d="M 0 92 Q 66 68 132 92" fill="none" stroke="#B9892F" stroke-width="1.5" opacity="0.5"/>
-    <path d="M 0 126 Q 66 148 132 126" fill="none" stroke="#B9892F" stroke-width="1.5" opacity="0.5"/>
+    <path d="M 0 92 Q 66 68 132 92" fill="none" stroke="#E69F00" stroke-width="1.5" opacity="0.5"/>
+    <path d="M 0 126 Q 66 148 132 126" fill="none" stroke="#E69F00" stroke-width="1.5" opacity="0.5"/>
   </g>
 
   <!-- left: three task-type bars -->
   <g>
-    <rect x="64" y="200" width="690" height="70" fill="#2F8A5B" opacity="0.08"/>
-    <text class="rl" x="92" y="230" font-weight="700" fill="#1F6240">可并行任务 · 金融推理</text>
-    <rect x="360" y="222" width="330" height="16" rx="4" fill="url(#gMint)"/>
-    <text x="702" y="237" font-size="17" font-weight="700" fill="#1F6240" font-family="'PingFang SC',sans-serif">+80.9%</text>
+    <rect x="64" y="200" width="690" height="70" fill="#009E73" opacity="0.08"/>
+    <text class="rl" x="92" y="230" font-weight="700" fill="#009E73">可并行任务 · 金融推理</text>
+    <rect x="360" y="222" width="330" height="16" rx="4" fill="#56B4E9"/>
+    <text x="702" y="237" font-size="17" font-weight="700" fill="#009E73" font-family="'PingFang SC',sans-serif">+80.9%</text>
     <text class="b" x="92" y="252">集中式协调整合中间结果</text>
 
-    <rect x="64" y="282" width="690" height="70" fill="#22506B" opacity="0.07"/>
-    <text class="rl" x="92" y="312" font-weight="700" fill="#1B4258">动态网页导航</text>
-    <rect x="360" y="296" width="38" height="14" rx="4" fill="url(#gStage)"/>
-    <text x="406" y="309" font-size="15" font-weight="700" fill="#22506B" font-family="'PingFang SC',sans-serif">去中心化 +9.2%</text>
-    <rect x="360" y="316" width="1" height="14" rx="0.5" fill="url(#gStage)" opacity="0.4"/>
+    <rect x="64" y="282" width="690" height="70" fill="#009E73" opacity="0.07"/>
+    <text class="rl" x="92" y="312" font-weight="700" fill="#009E73">动态网页导航</text>
+    <rect x="360" y="296" width="38" height="14" rx="4" fill="#56B4E9"/>
+    <text x="406" y="309" font-size="15" font-weight="700" fill="#009E73" font-family="'PingFang SC',sans-serif">去中心化 +9.2%</text>
+    <rect x="360" y="316" width="1" height="14" rx="0.5" fill="#56B4E9" opacity="0.4"/>
     <text x="368" y="329" class="b">集中式 +0.2% · 局部信息要快响应</text>
 
-    <rect x="64" y="364" width="690" height="76" fill="#8E2F4C" opacity="0.08"/>
-    <text class="rl" x="92" y="394" font-weight="700" fill="#7A2440">顺序推理任务 · 悬崖</text>
-    <rect x="360" y="380" width="183" height="18" rx="4" fill="url(#gVelvet)"/>
-    <text x="556" y="395" font-size="17" font-weight="700" fill="#8E2F4C" font-family="'PingFang SC',sans-serif">性能下降 39–70%</text>
+    <rect x="64" y="364" width="690" height="76" fill="#D55E00" opacity="0.08"/>
+    <text class="rl" x="92" y="394" font-weight="700" fill="#D55E00">顺序推理任务 · 悬崖</text>
+    <rect x="360" y="380" width="183" height="18" rx="4" fill="#CC79A7"/>
+    <text x="556" y="395" font-size="17" font-weight="700" fill="#D55E00" font-family="'PingFang SC',sans-serif">性能下降 39–70%</text>
     <text class="b" x="92" y="422">所有多智能体变体皆然——每个输出变下个输入，通信开销直接转成推理错误</text>
   </g>
 
   <!-- right column -->
   <g>
-    <rect x="836" y="200" width="304" height="112" rx="12" fill="#B9892F" opacity="0.1"/>
-    <text x="856" y="244" font-size="30" font-weight="700" fill="#8A6620">87%</text>
+    <rect x="836" y="200" width="304" height="112" rx="12" fill="#E69F00" opacity="0.1"/>
+    <text x="856" y="244" font-size="30" font-weight="700" fill="#D55E00">87%</text>
     <text x="856" y="270" class="rl">预测模型认出未见任务最优架构</text>
     <text x="856" y="292" class="b">输入：可并行性 × 复杂度 × 动态性</text>
 
@@ -84,17 +66,17 @@
   </g>
 
   <!-- bottom chips -->
-  <line x1="64" y1="486" x2="1136" y2="486" stroke="#E5E1D4"/>
+  <line x1="64" y1="486" x2="1136" y2="486" stroke="#CC79A7"/>
   <g>
     <text class="rl" x="64" y="528">180 种配置扫过</text>
-    <rect x="200" y="508" width="120" height="28" rx="14" fill="url(#gStage)" opacity="0.18"/>
-    <text x="260" y="527" text-anchor="middle" class="chip" fill="#1B4258">架构类型</text>
-    <rect x="332" y="508" width="120" height="28" rx="14" fill="url(#gMint)" opacity="0.2"/>
-    <text x="392" y="527" text-anchor="middle" class="chip" fill="#1F6240">任务类型</text>
-    <rect x="464" y="508" width="120" height="28" rx="14" fill="url(#gBrass)" opacity="0.26"/>
-    <text x="524" y="527" text-anchor="middle" class="chip" fill="#7A5A14">缩放变量</text>
+    <rect x="200" y="508" width="120" height="28" rx="14" fill="#56B4E9" opacity="0.18"/>
+    <text x="260" y="527" text-anchor="middle" class="chip" fill="#009E73">架构类型</text>
+    <rect x="332" y="508" width="120" height="28" rx="14" fill="#56B4E9" opacity="0.2"/>
+    <text x="392" y="527" text-anchor="middle" class="chip" fill="#009E73">任务类型</text>
+    <rect x="464" y="508" width="120" height="28" rx="14" fill="#F0E442" opacity="0.26"/>
+    <text x="524" y="527" text-anchor="middle" class="chip" fill="#D55E00">缩放变量</text>
     <text x="600" y="527" class="b">隔离「协调增益」与「信息访问增益」的混淆</text>
   </g>
-  <text x="64" y="580" font-size="18" fill="#1A1B1E">堆人头之前先问曲目——架构-任务对齐，比智能体数量更重要。</text>
+  <text x="64" y="580" font-size="18" fill="#009E73">堆人头之前先问曲目——架构-任务对齐，比智能体数量更重要。</text>
   <text class="b" x="1136" y="618" text-anchor="end" font-family="'PingFang SC','Helvetica Neue',sans-serif">数据为论文自述口径 · Micropaper</text>
 </svg>

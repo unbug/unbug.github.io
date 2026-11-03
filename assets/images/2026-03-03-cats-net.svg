@@ -1,27 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <rect width="1200" height="675" fill="#F0F0F0"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">双模块网络把感官体验压缩成抽象概念：激活模式与人类大脑 fMRI 数据高度相关，两个智能体可直接进行概念层面的交流</text>
+  <text x="60" y="58" font-size="16" fill="#009E73">双模块网络把感官体验压缩成抽象概念：激活模式与人类大脑 fMRI 数据高度相关，两个智能体可直接进行概念层面的交流</text>
 
   <!-- ============ panel a ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">CATS Net 双模块流程（定性示意）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
+  <text x="82" y="104" font-size="15" fill="#009E73">CATS Net 双模块流程（定性示意）</text>
 
-  <rect x="80" y="150" width="200" height="64" fill="none" stroke="#1A1B1E" stroke-width="1.5"/>
-  <text x="180" y="177" font-size="12.5" fill="#1A1B1E" text-anchor="middle">感官运动经验</text>
+  <rect x="80" y="150" width="200" height="64" fill="none" stroke="#009E73" stroke-width="1.5"/>
+  <text x="180" y="177" font-size="12.5" fill="#009E73" text-anchor="middle">感官运动经验</text>
   <text x="180" y="197" font-size="12" fill="#555" text-anchor="middle">具体的感官输入</text>
 
   <rect x="370" y="150" width="220" height="64" fill="none" stroke="#0072B2" stroke-width="1.5"/>
-  <text x="480" y="177" font-size="12.5" fill="#1A1B1E" text-anchor="middle">模块 1：感官-运动编码器</text>
+  <text x="480" y="177" font-size="12.5" fill="#009E73" text-anchor="middle">模块 1：感官-运动编码器</text>
   <text x="480" y="197" font-size="12" fill="#555" text-anchor="middle">处理具体的感官输入</text>
 
   <rect x="680" y="150" width="220" height="64" fill="none" stroke="#D55E00" stroke-width="1.5"/>
-  <text x="790" y="177" font-size="12.5" fill="#1A1B1E" text-anchor="middle">模块 2：概念压缩器</text>
+  <text x="790" y="177" font-size="12.5" fill="#009E73" text-anchor="middle">模块 2：概念压缩器</text>
   <text x="790" y="197" font-size="12" fill="#555" text-anchor="middle">压缩成概念表示</text>
 
   <rect x="1000" y="150" width="140" height="64" fill="none" stroke="#009E73" stroke-width="1.5"/>
-  <text x="1070" y="177" font-size="12.5" fill="#1A1B1E" text-anchor="middle">抽象概念</text>
+  <text x="1070" y="177" font-size="12.5" fill="#009E73" text-anchor="middle">抽象概念</text>
   <text x="1070" y="197" font-size="12" fill="#555" text-anchor="middle">迁移到新的任务</text>
 
   <g stroke="#999999" stroke-width="1.5">
@@ -38,8 +38,8 @@
   <text x="80" y="256" font-size="12" fill="#555">类比：小孩子学习「球」的过程——感官体验、抽象压缩、理解运用</text>
 
   <!-- ============ panel b ============ -->
-  <text x="60" y="330" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="82" y="330" font-size="15" fill="#1A1B1E">论文报告的主要发现</text>
+  <text x="60" y="330" font-size="15" font-weight="bold" fill="#009E73">b</text>
+  <text x="82" y="330" font-size="15" fill="#009E73">论文报告的主要发现</text>
   <g font-size="12.5" fill="#555">
     <circle cx="86" cy="362" r="5" fill="#0072B2"/>
     <text x="102" y="366">与人类大脑活动对齐：激活模式与人类 fMRI 数据中观察到的概念处理模式高度相关</text>
@@ -50,8 +50,8 @@
   </g>
 
   <!-- ============ panel c ============ -->
-  <text x="60" y="492" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
-  <text x="82" y="492" font-size="15" fill="#1A1B1E">口径说明</text>
+  <text x="60" y="492" font-size="15" font-weight="bold" fill="#009E73">c</text>
+  <text x="82" y="492" font-size="15" fill="#009E73">口径说明</text>
   <g font-size="12" fill="#555">
     <text x="60" y="522">与人类大脑活动对齐：激活模式与人类 fMRI 数据中观察到的概念处理模式高度相关</text>
     <text x="60" y="544">知识迁移能力：学到的概念可以迁移到新的任务上</text>
