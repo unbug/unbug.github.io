@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《五大层次框架：AI 治理的实操路径》"
 author: unbug
 categories: [AI Governance, AI Policy, Enterprise Compliance]
-image: assets/images/five-layer-governance-pyramid.jpg
+image: assets/images/five-layer-governance-pyramid.svg
 tags: [AI Governance, AI Ethics, SpringerNature, GovernanceFramework]
 ---
 
@@ -11,11 +11,9 @@ tags: [AI Governance, AI Ethics, SpringerNature, GovernanceFramework]
 2025 年 arXiv 论文 arXiv:2509.11332 提出了五层次 AI 治理框架，系统解决了从抽象原则到具体实践的"执行鸿沟"问题。
 
 ## 核心观点
-
 有效的 AI 治理不在于更多原则，而在于系统性地将抽象要求转化为具体行动。
 
 ## 关键要点
-
 - 核心问题：识别现有 AI 治理文献中的执行鸿沟
 - 五层次框架：监管指令、标准、评估方法、认证流程、具体实践
 - 实施路线图：清晰展示从原则到实践的过渡
@@ -25,7 +23,6 @@ tags: [AI Governance, AI Ethics, SpringerNature, GovernanceFramework]
 ---
 
 ## 为什么执行鸿沟成为 AI 治理的核心挑战
-
 尽管全球 AI 治理框架已大量涌现（欧盟 AI 法案、美国 AI 行动计划、中国生成式 AI 管理办法等），组织在实际实施中仍面临巨大挑战。
 
 论文开篇提出了一个关键洞察：现有治理文献大量讨论应该做什么，但缺乏对如何实际做到进行系统性指导。
@@ -52,10 +49,9 @@ tags: [AI Governance, AI Ethics, SpringerNature, GovernanceFramework]
 ---
 
 ## 五层次治理框架详解
-
 论文提出的框架是一个层级递进的治理实施模型，每一层都支撑上一层，同时为下一层提供基础。
 
-![五层次治理框架](assets/images/five-layer-governance-pyramid.jpg)
+![五层次治理框架](assets/images/five-layer-governance-pyramid.svg)
 
 第一层：监管指令（Regulatory Mandates）- 政府/立法机构要求
 第二层：标准（Standards）- 行业最佳实践和技术规范
@@ -63,8 +59,7 @@ tags: [AI Governance, AI Ethics, SpringerNature, GovernanceFramework]
 第四层：认证流程（Certification Processes）- 第三方验证和合规证明
 第五层：治理实践（Governance Practices）- 组织日常治理行动
 
-### 第一层：监管指令（Regulatory Mandates）
-
+**第一层：监管指令（Regulatory Mandates）**
 内容：政府、监管机构或行业监管机构发布的强制性要求
 
 典型示例：
@@ -86,8 +81,7 @@ tags: [AI Governance, AI Ethics, SpringerNature, GovernanceFramework]
 
 ---
 
-### 第二层：标准（Standards）
-
+**第二层：标准（Standards）**
 内容：行业标准、技术规范、最佳实践框架
 
 典型示例：
@@ -111,8 +105,7 @@ tags: [AI Governance, AI Ethics, SpringerNature, GovernanceFramework]
 
 ---
 
-### 第三层：评估方法（Assessment Methodologies）
-
+**第三层：评估方法（Assessment Methodologies）**
 内容：系统性评估 AI 系统合规性的方法和工具
 
 典型示例：
@@ -138,8 +131,7 @@ tags: [AI Governance, AI Ethics, SpringerNature, GovernanceFramework]
 
 ---
 
-### 第四层：认证流程（Certification Processes）
-
+**第四层：认证流程（Certification Processes）**
 内容：第三方验证和合规证明的机制
 
 典型示例：
@@ -165,8 +157,7 @@ tags: [AI Governance, AI Ethics, SpringerNature, GovernanceFramework]
 
 ---
 
-### 第五层：治理实践（Governance Practices）
-
+**第五层：治理实践（Governance Practices）**
 内容：组织日常运营中的具体治理行动
 
 典型示例：
@@ -194,11 +185,9 @@ tags: [AI Governance, AI Ethics, SpringerNature, GovernanceFramework]
 ---
 
 ## 实施路线图
-
 论文提供了一个分阶段实施指南，帮助组织系统性推进治理：
 
-### 第一阶段：基线建立（1-3 个月）
-
+**第一阶段：基线建立（1-3 个月）**
 目标：理解法规要求，建立治理基线
 
 行动：
@@ -215,8 +204,7 @@ tags: [AI Governance, AI Ethics, SpringerNature, GovernanceFramework]
 
 ---
 
-### 第二阶段：标准对齐（3-6 个月）
-
+**第二阶段：标准对齐（3-6 个月）**
 目标：将法规要求转化为具体标准
 
 行动：
@@ -233,8 +221,7 @@ tags: [AI Governance, AI Ethics, SpringerNature, GovernanceFramework]
 
 ---
 
-### 第三阶段：评估能力建设（3-6 个月）
-
+**第三阶段：评估能力建设（3-6 个月）**
 目标：建立内部评估能力
 
 行动：
@@ -251,8 +238,7 @@ tags: [AI Governance, AI Ethics, SpringerNature, GovernanceFramework]
 
 ---
 
-### 第四阶段：认证准备（2-4 个月）
-
+**第四阶段：认证准备（2-4 个月）**
 目标：准备第三方认证
 
 行动：
@@ -269,8 +255,7 @@ tags: [AI Governance, AI Ethics, SpringerNature, GovernanceFramework]
 
 ---
 
-### 第五阶段：实践整合（持续）
-
+**第五阶段：实践整合（持续）**
 目标：将治理实践融入日常运营
 
 行动：
@@ -288,11 +273,9 @@ tags: [AI Governance, AI Ethics, SpringerNature, GovernanceFramework]
 ---
 
 ## 常见失败点和风险
-
 论文基于案例研究，识别了以下常见实施失败点：
 
-### 1. "打勾式合规"心态
-
+**1. "打勾式合规"心态**
 表现：仅将治理视为合规检查项，而非实质性改进
 
 后果：
@@ -307,8 +290,7 @@ tags: [AI Governance, AI Ethics, SpringerNature, GovernanceFramework]
 
 ---
 
-### 2. 资源不足
-
+**2. 资源不足**
 表现：期望用少量资源实现治理目标
 
 后果：
@@ -323,8 +305,7 @@ tags: [AI Governance, AI Ethics, SpringerNature, GovernanceFramework]
 
 ---
 
-### 3. 缺乏高层支持
-
+**3. 缺乏高层支持**
 表现：治理仅由低级别团队负责
 
 后果：
@@ -339,8 +320,7 @@ tags: [AI Governance, AI Ethics, SpringerNature, GovernanceFramework]
 
 ---
 
-### 4. 过度复杂化
-
+**4. 过度复杂化**
 表现：试图一开始就建立完美系统
 
 后果：
@@ -355,8 +335,7 @@ tags: [AI Governance, AI Ethics, SpringerNature, GovernanceFramework]
 
 ---
 
-### 5. 忽视技术债务
-
+**5. 忽视技术债务**
 表现：治理仅关注新系统，忽视现有系统
 
 后果：
@@ -372,19 +351,16 @@ tags: [AI Governance, AI Ethics, SpringerNature, GovernanceFramework]
 ---
 
 ## 组织治理成熟度评估
-
 论文提供了一个自我评估框架，帮助组织识别当前所处层次：
 
-### 成熟度等级
-
+**成熟度等级**
 Level 1: 初始 - 无系统治理 - 仅事后反应，无主动治理
 Level 2: 基础 - 法规映射 - 已识别法规要求，但无具体实践
 Level 3: 发展 - 标准对齐 - 开始应用行业标准，但无评估能力
 Level 4: 定义 - 评估建立 - 建立了评估能力，但无认证
 Level 5: 优化 - 认证实践 - 已获认证，治理融入日常
 
-### 评估问题示例
-
+**评估问题示例**
 法规映射（Level 1-2）：
 - 您能列出适用您的 AI 系统的所有法规吗？
 - 您是否理解每项法规的核心要求？
@@ -413,7 +389,6 @@ Level 5: 优化 - 认证实践 - 已获认证，治理融入日常
 ---
 
 ## 决策树：您的组织应该从哪里开始？
-
 问题 1：您的 AI 系统是否受特定法规监管？
 是 → 优先 Level 1 法规映射
 否 → 继续
@@ -437,7 +412,6 @@ Level 5: 优化 - 认证实践 - 已获认证，治理融入日常
 ---
 
 ## 与 GAGF 框架的互补
-
 与 2026-04-06 发表的 GAGF 框架相比，这篇论文提供了重要的补充视角：
 
 GAGF 框架提供应该做什么的原则性指导
@@ -452,11 +426,9 @@ GAGF 框架提供应该做什么的原则性指导
 ---
 
 ## 政策启示
-
 这篇论文对政策制定者和监管机构的启示：
 
-### 1. 需要方法论支持
-
+**1. 需要方法论支持**
 现状：法规要求明确，但缺乏方法论指导
 
 建议：
@@ -466,8 +438,7 @@ GAGF 框架提供应该做什么的原则性指导
 
 ---
 
-### 2. 标准与法规的协同
-
+**2. 标准与法规的协同**
 现状：标准更新快于法规，可能导致脱节
 
 建议：
@@ -477,8 +448,7 @@ GAGF 框架提供应该做什么的原则性指导
 
 ---
 
-### 3. 认证机制设计
-
+**3. 认证机制设计**
 现状：认证体系碎片化，增加合规成本
 
 建议：
@@ -488,8 +458,7 @@ GAGF 框架提供应该做什么的原则性指导
 
 ---
 
-### 4. 分级实施路径
-
+**4. 分级实施路径**
 现状：所有组织同一要求，忽视规模差异
 
 建议：
@@ -500,7 +469,6 @@ GAGF 框架提供应该做什么的原则性指导
 ---
 
 ## 论文引用信息
-
 标题：A five-layer framework for AI governance: integrating regulation, standards, and implementation
 
 DOI: https://doi.org/10.1007/s43681-024-00642-z
@@ -527,7 +495,6 @@ DOI: https://doi.org/10.1007/s43681-024-00642-z
 ---
 
 ## 关键启示
-
 1. 治理不是单一活动，而是多层次系统
    - 需要监管、标准、评估、认证、实践协同
 
@@ -550,3 +517,9 @@ DOI: https://doi.org/10.1007/s43681-024-00642-z
 分类：AI Governance, AI Policy, Enterprise Compliance
 
 文章类型：论文深度解读 + 实施指南
+
+
+## References
+- [doi.org][ref1]
+
+[ref1]: https://doi.org/10.1007/s43681-024-00642-z

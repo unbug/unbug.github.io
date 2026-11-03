@@ -3,9 +3,8 @@ layout: post
 title:  "一分钟读论文：《当 Many-Shot Prompting 失败时：LLM 代码翻译的实证研究》"
 author: unbug
 categories: [AI, LLM]
-tags: [LLM, Prompting, CodeTranslation]
 image: assets/images/arxiv-paper-many-shot-prompting.png
-date: 2026-02-28 00:00:00 +0800
+tags: [LLM, Prompting, CodeTranslation]
 ---
 来自 Amir Kiarafiei 等人的论文[《When Many-Shot Prompting Fails: An Empirical Study of LLM Code Translation》][paper1-url] 将在 ICSE 2026 的 ReCode Workshop 上发表。
 

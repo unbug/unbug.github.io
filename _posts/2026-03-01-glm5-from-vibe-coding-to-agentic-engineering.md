@@ -3,23 +3,16 @@ layout: post
 title:  "一分钟读论文：《GLM-5：从「氛围编程」到「智能体工程」的范式跃迁》"
 author: unbug
 categories: [AI]
-tags: [GLM-5, 智谱 AI, 大语言模型, 智能体, 强化学习]
 image: assets/images/glm5-illustration.png
+tags: [GLM-5, GLM, LLM, AI Agents, Reinforcement Learning]
 ---
 
-layout: post
-author: unbug
-title: "一分钟读论文：《GLM-5：从「氛围编程」到「智能体工程」的范式跃迁》"
-categories: [AI]
-tags: [GLM-5, 智谱 AI, 大语言模型, 智能体, 强化学习]
----## 引言2026 年 2 月 17 日，智谱 AI 与清华大学联合扔出了一枚王炸——**GLM-5**！这款新一代基础模型，直接把 AI 的范式从「氛围编程」（Vibe Coding）推向了「智能体工程」（Agentic Engineering）的新时代。
+## 引言2026 年 2 月 17 日，智谱 AI 与清华大学联合扔出了一枚王炸——**GLM-5**！这款新一代基础模型，直接把 AI 的范式从「氛围编程」（Vibe Coding）推向了「智能体工程」（Agentic Engineering）的新时代。
 
 这篇论文有 186 位作者，足足 40 页，代表了开源模型向专有模型前沿发起的最强挑战。
 
 ## 核心突破
-
-### 1. 7440亿总参数的黑科技
-
+**1. 7440亿总参数的黑科技**
 GLM-5 采用了 **DeepSeek Sparse Attention（DSA）** 架构，实现了令人惊叹的参数规模与效率：
 
 - **总参数量：** 7440 亿（744B）
@@ -29,8 +22,7 @@ GLM-5 采用了 **DeepSeek Sparse Attention（DSA）** 架构，实现了令人�
 
 相比前一代 GLM-4.5（3550 亿总参数，320 亿激活参数），GLM-5 在规模翻倍的同时保持了极高的效率——真是"大块头有大智慧"！
 
-### 2. 异步强化学习的杀招
-
+**2. 异步强化学习的杀招**
 GLM-5 最大的创新之一是全新的 **异步强化学习基础设施**：
 
 - 将生成与训练完全解耦
@@ -40,8 +32,7 @@ GLM-5 最大的创新之一是全新的 **异步强化学习基础设施**：
 
 配合新颖的异步智能体强化学习算法，GLM-5 能够更有效地从复杂的长程交互中学习。这就像是给 AI 装上了"异步大脑"，一边思考一边行动，效率倍增！
 
-### 3. 三种思维模式任你挑
-
+**3. 三种思维模式任你挑**
 GLM-5 支持三种不同的思维特性：
 
 1. **交错思维（Interleaved Thinking）**：在每次响应和工具调用前都进行思考
@@ -50,8 +41,7 @@ GLM-5 支持三种不同的思维特性：
 
 这就像是给 AI 配备了"思维工具箱"，根据不同场景切换最合适的思考模式！
 
-### 4. 中国芯片生态的完美适配
-
+**4. 中国芯片生态的完美适配**
 值得一提的是，GLM-5 从第一天起就完全适配了中国的 GPU 生态系统：
 
 - 华为昇腾
@@ -65,9 +55,7 @@ GLM-5 支持三种不同的思维特性：
 通过深度优化，GLM-5 在单个中国节点上就能达到双 GPU 国际集群的性能，同时将长序列场景的部署成本降低了 50%。这就是"国货之光"的底气！
 
 ## 性能表现
-
-### 基准测试结果
-
+**基准测试结果**
 在 8 个智能体、推理和编码基准测试中，GLM-5 表现出色：
 
 | 基准测试 | GLM-5 | Claude Opus 4.5 | GPT-5.2 (xhigh) |
@@ -80,8 +68,7 @@ GLM-5 支持三种不同的思维特性：
 
 在 Artificial Analysis Intelligence Index v4.0 上，GLM-5 获得了 **50 分**，成为首个达到这一分数的开源权重模型（相比之下，GLM-4.7 为 42 分）！
 
-### 真实世界智能体工程评估
-
+**真实世界智能体工程评估**
 研究团队还构建了新的内部评估套件 **CC-Bench-V2**，用于评估模型在真实智能体工程环境中的表现：
 
 - **前端评估**：GLM-5 达到 98.0% 的构建成功率
@@ -91,7 +78,6 @@ GLM-5 支持三种不同的思维特性：
 这说明 GLM-5 不只是"实验室里的学霸"，更是"实战中的高手"！
 
 ## 「Pony Alpha」彩蛋
-
 论文中还透露了一个有趣的细节：GLM-5 曾以「Pony Alpha」的匿名身份在 OpenRouter 上发布，并引起了轰动！
 
 - 25% 的用户猜测它是 Claude Sonnet 5
@@ -102,7 +88,6 @@ GLM-5 支持三种不同的思维特性：
 最终确认它确实是 GLM-5 时，这一事实有效地消除了关于中国大语言模型能否在前沿水平竞争的疑虑——这就像是"匿名考试拿第一"，实力说话！
 
 ## 结论
-
 GLM-5 代表了实用 AI 效用的范式转变。通过开源这一模型，智谱 AI 旨在赋能社区超越静态基准测试，探索高效的智能体通用智能的前沿，开启一个 AI 智能体自主规划、实施和迭代复杂任务的新时代。
 
 正如论文摘要所说：
@@ -113,3 +98,15 @@ GLM-5 代表了实用 AI 效用的范式转变。通过开源这一模型，智�
 
 **论文链接：** [https://arxiv.org/abs/2602.15763](https://arxiv.org/abs/2602.15763)
 **GitHub：** [https://github.com/zai-org/GLM-5](https://github.com/zai-org/GLM-5)
+
+
+## References
+- [https://arxiv.org/abs/2602.15763][ref1]
+- [https://github.com/zai-org/GLM-5][ref2]
+- [arxiv.org][ref3]
+- [github.com][ref4]
+
+[ref1]: https://arxiv.org/abs/2602.15763
+[ref2]: https://github.com/zai-org/GLM-5
+[ref3]: https://arxiv.org/abs/2602.15763](https://arxiv.org/abs/2602.15763
+[ref4]: https://github.com/zai-org/GLM-5](https://github.com/zai-org/GLM-5

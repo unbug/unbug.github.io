@@ -4,7 +4,6 @@ title:  "一分钟读论文：《MCP 一周年：从内部实验到行业标准�
 author: unbug
 categories: [AI, Agent]
 tags: [MCP, AgenticAI, AAIF]
-date: 2026-02-28 00:00:00 +0800
 ---
 来自 Leonardo Piñeyro 和 Pento 的论文[《A Year of MCP: From Internal Experiment to Industry Standard》][paper1-url] 为我们展示了 MCP（Model Context Protocol）从诞生到成为行业标准的惊人崛起之路。
 

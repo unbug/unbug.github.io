@@ -1,20 +1,17 @@
 ---
 layout: post
 title: "一分钟读论文：《HRM 架构突破：用仅 2700 万参数和 1000 个训练样本超越最先进的大语言模型》"
-date: 2026-03-02 19:30:00 +0800
 categories: AI
+image: assets/images/hrm-architecture.svg
 tags: [AI, Deep Learning, Architecture, Reasoning, HRM]
-image: assets/images/hrm-architecture.png
 ---
 
 ## 简介：大卫挑战歌利亚在 AI 世界里，我们已经被"越大越好"的魔咒洗脑了——参数量从十亿狂飙到万亿，训练数据从 TB 堆到 PB，仿佛只有砸钱堆算力才能出奇迹。
-
 但最近，新加坡的 Sapient Intelligence 公司扔出了一颗重磅炸弹：**Hierarchical Reasoning Model（HRM，分层推理模型）**，这货只用区区 **2700 万参数**和 **1000 个训练样本**，就在复杂推理任务上把那些庞然大物打得满地找牙！
 
 这篇发表在 2025 年 NeurIPS 的论文，简直就是 AI 架构设计的转折点——谁说 AI 只能靠蛮力？智慧的架构设计也能四两拨千斤！
 
 ## 背景：思维链的尴尬困境
-
 现在的大语言模型解决复杂问题，主要靠**思维链（Chain-of-Thought, CoT）**这招——说白了就是让模型"自言自语"，把问题拆成一步步来。这招确实有点用，但问题也不小：
 
 1. **脆弱得像玻璃**：一步错，步步错，整个推理直接崩盘
@@ -25,18 +22,15 @@ image: assets/images/hrm-architecture.png
 正如论文作者吐槽的那样："CoT 就是个拐杖，根本不是什么像样的解决方案！"
 
 ## 核心方法：向大脑学习的分层架构
-
 HRM 的灵感来自我们人类的大脑——你知道吗？大脑其实有两套系统：一套负责**慢腾腾、深思熟虑的规划**，另一套负责**快速、凭直觉的计算**。HRM 就是把这个思路照搬过来了！
 
-### 两个黄金搭档
-
+**两个黄金搭档**
 HRM 由两个紧密配合的模块组成：
 
 1. **高层模块（H-module）**：军师角色，负责慢工出细活的抽象规划
 2. **低层模块（L-module）**：先锋角色，负责快速冲锋的具体计算
 
-### 神奇的分层收敛
-
+**神奇的分层收敛**
 这俩模块配合起来，就产生了叫做"**分层收敛**"的魔法：
 
 1. 快枪手 L-module 先冲上去处理问题的一部分，咔咔咔几步就搞定一个局部解
@@ -46,20 +40,17 @@ HRM 由两个紧密配合的模块组成：
 
 这种嵌套循环的设计，让模型能在"潜空间"里深入思考，根本不需要啰嗦的 CoT 提示，也不需要海量数据！
 
-![HRM 架构示意图](assets/images/hrm-architecture.png)
+![HRM 架构示意图](assets/images/hrm-architecture.svg)
 
 ## 实验结果：亮瞎眼的成绩单
-
 研究人员在各种需要大量搜索和回溯的硬核测试上挑战 HRM，结果简直逆天！
 
-### 1. 数独和迷宫：吊打全场
-
+**1. 数独和迷宫：吊打全场**
 在"极限数独"和"困难迷宫"这种变态难度的测试上：
 - 最先进的 CoT 模型直接扑街，准确率 **0%**
 - HRM 只用 **1000 个训练样本**，就达到了几乎完美的准确率
 
-### 2. ARC-AGI：超越巨头
-
+**2. ARC-AGI：超越巨头**
 在抽象推理和泛化测试 ARC-AGI 上：
 - HRM（27M 参数）：**40.3%**
 - OpenAI o3-mini-high（更大模型）：34.5%
@@ -69,33 +60,27 @@ HRM 由两个紧密配合的模块组成：
 
 ![HRM 性能对比](assets/images/hrm-performance.png)
 
-### 3. 效率高到离谱
-
+**3. 效率高到离谱**
 - **训练效率**：专业级数独训练只需 **2 个 GPU 小时**，ARC-AGI 也只要 50-200 个 GPU 小时
 - **推理速度**：相比 CoT 的挤牙膏，HRM 的并行处理可能带来 **100 倍的速度提升**
 - **样本效率**：只用 **1000 个样本**就能达到专家水平
 
 ## 影响与意义：AI 的新方向
-
 HRM 的突破，意义可不仅仅是刷新了几个跑分——它可能改变整个 AI 的发展方向！
 
-### 1. 重新思考 AI 架构
-
+**1. 重新思考 AI 架构**
 这篇论文狠狠打了"越大越好"信徒的脸——**更聪明、更结构化的架构**，可能比单纯堆参数有效得多！
 
-### 2. 专业领域的福音
-
+**2. 专业领域的福音**
 HRM 特别适合这些场景：
 - **数据稀缺领域**：科学探索、专业诊断（毕竟不是每个领域都有互联网级别的数据）
 - **延迟敏感领域**：具身 AI、机器人（机器人可等不起你慢慢想）
 - **确定性任务**：物流优化、复杂系统诊断（这些需要精确推理的活）
 
-### 3. 成本大跳水
-
+**3. 成本大跳水**
 对企业来说，这种效率直接就是钱啊！专门的推理引擎，比那些庞大、昂贵、还慢得要死的 API 模型香多了！
 
 ## 未来展望：从专用到通用
-
 Sapient Intelligence 已经在搞事情了——他们要把 HRM 从专门的问题解决器，变成更通用的推理模块。基于 HRM 的脑启发模型，已经在医疗、气候预测和机器人领域小有成就了。
 
 未来的 AI 模型，肯定和今天这些基于文本的系统大不一样——特别是它们会拥有**自我修正能力**，这才是真智能！
@@ -103,7 +88,6 @@ Sapient Intelligence 已经在搞事情了——他们要把 HRM 从专门的问
 ![HRM 未来展望](assets/images/hrm-future.png)
 
 ## 结语：向大脑致敬
-
 HRM 的工作告诉我们：对于那些让今天 AI 巨头都挠头的问题，前进的道路可能不是更大的模型，而是更聪明、更结构化的架构——而这个灵感，就来自那个终极推理引擎：**人类大脑**。
 
 这篇论文让我们看到了 AI 的另一种可能：不是靠蛮力堆算力，而是靠智慧的架构设计，实现更高效、更强大的推理能力。毕竟，真正的智能，从来都不是靠大小来衡量的。
@@ -114,3 +98,13 @@ HRM 的工作告诉我们：对于那些让今天 AI 巨头都挠头的问题，
 - 论文：[Hierarchical Reasoning Model: A Brain-Inspired Architecture for Latent Reasoning](https://arxiv.org/abs/2506.21734)
 - 代码：[github.com/sapientinc/HRM](http://github.com/sapientinc/HRM)
 - 公司：[Sapient Intelligence](https://www.sapient.inc/)
+
+
+## References
+- [Hierarchical Reasoning Model: A Brain-Inspired Architecture for Latent][ref1]
+- [github.com/sapientinc/HRM][ref2]
+- [Sapient Intelligence][ref3]
+
+[ref1]: https://arxiv.org/abs/2506.21734
+[ref2]: http://github.com/sapientinc/HRM
+[ref3]: https://www.sapient.inc/

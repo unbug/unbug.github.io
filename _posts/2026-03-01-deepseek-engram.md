@@ -3,16 +3,9 @@ layout: post
 title:  "一分钟读论文：《DeepSeek Engram：颠覆GPU内存瓶颈！把知识存储从计算中分离，O(1)查找效率！》"
 author: unbug
 categories: [AI]
-tags: [DeepSeek, Engram, 内存架构, 稀疏性, MoE, 大语言模型]
 image: assets/images/arxiv-paper-deepseek-engram.png
+tags: [DeepSeek, Engram, Memory Architecture, Sparsity, MoE, LLM]
 ---
-
-layout: post
-author: unbug
-title: "一分钟读论文：《DeepSeek Engram：颠覆GPU内存瓶颈！把知识存储从计算中分离，O(1)查找效率！》"
-categories: [AI]
-tags: [DeepSeek, Engram, 内存架构, 稀疏性, MoE, 大语言模型]
----# DeepSeek Engram：颠覆GPU内存瓶颈！把知识存储从计算中分离，O(1)查找效率！
 
 ![DeepSeek Engram](assets/images/arxiv-paper-deepseek-engram.png)
 
@@ -24,8 +17,7 @@ tags: [DeepSeek, Engram, 内存架构, 稀疏性, MoE, 大语言模型]
 
 ---
 
-## 🎯 核心问题：GPU内存的诅咒
-
+## 核心问题：GPU内存的诅咒
 现在的大模型面临一个尴尬的局面：
 
 1. **HBM内存太贵了**：顶级GPU的HBM内存容量有限，价格昂贵
@@ -39,12 +31,10 @@ tags: [DeepSeek, Engram, 内存架构, 稀疏性, MoE, 大语言模型]
 
 ---
 
-## 💡 Engram：条件内存的新稀疏性轴
-
+## Engram：条件内存的新稀疏性轴
 Engram 的核心思想非常优雅但强大：**把经典的N-gram嵌入现代化，实现O(1)查找的条件内存系统！**
 
-### Engram 是这样工作的：
-
+**Engram 是这样工作的：**
 ```
 1. 内存检索层：Engram模块从静态内存中检索N-gram知识
    ├── 确定性寻址：不需要复杂的注意力机制
@@ -62,8 +52,7 @@ Engram 的核心思想非常优雅但强大：**把经典的N-gram嵌入现代�
    └── U型缩放定律：指导最优容量分配
 ```
 
-### 关键特性：
-
+**关键特性：**
 - ✅ **O(1)查找效率**：不随规模增长的常数时间复杂度
 - ✅ **97%长上下文准确率**：在长文本任务上表现优异
 - ✅ **DRAM卸载**：不需要昂贵的HBM内存
@@ -72,12 +61,10 @@ Engram 的核心思想非常优雅但强大：**把经典的N-gram嵌入现代�
 
 ---
 
-## 🔬 实验结果：严格约束下的一致提升！
-
+## 实验结果：严格约束下的一致提升！
 研究团队在**严格的等参数量和等FLOPs约束**下做了实验，结果非常有说服力：
 
-### Engram-27B vs MoE基线：
-
+**Engram-27B vs MoE基线：**
 | 任务类型 | 性能提升 |
 |---------|---------|
 | 知识任务 | ✅ 一致改进 |
@@ -85,16 +72,14 @@ Engram 的核心思想非常优雅但强大：**把经典的N-gram嵌入现代�
 | 代码任务 | ✅ 一致改进 |
 | 数学任务 | ✅ 一致改进 |
 
-### 机制分析发现：
-
+**机制分析发现：**
 1. **早期层减负**：Engram让早期层从静态模式重建中解放出来
 2. **有效深度保留**：更多深层资源可以用于复杂推理
 3. **系统效率提升**：最小化推理开销的同时实现大规模内存表
 
 ---
 
-## 🚀 为什么这很重要？
-
+## 为什么这很重要？
 Engram 代表了LLM架构的一个全新方向：
 
 1. **降低硬件门槛**：不需要最顶级的GPU也能运行大模型
@@ -107,8 +92,7 @@ Engram 代表了LLM架构的一个全新方向：
 
 ---
 
-## 🔮 未来展望
-
+## 未来展望
 这个架构方向有太多令人兴奋的可能性：
 
 1. **内存-计算分离**：未来模型可能会有独立的内存和计算模块
@@ -118,8 +102,7 @@ Engram 代表了LLM架构的一个全新方向：
 
 ---
 
-## 💭 我的思考
-
+## 我的思考
 Engram 让我想起了计算机架构的演进历史——**CPU和内存的分离**。
 
 早期的计算机把计算和存储混在一起，但后来我们发现把它们分开、让各自专业化是更优的架构。Engram好像在LLM领域重演了这个故事！
@@ -130,8 +113,7 @@ DeepSeek最近的一系列操作（R1、Engram）真的让人眼前一亮，他�
 
 ---
 
-## 📎 论文信息
-
+## 论文信息
 **标题**：Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models  
 **作者**：Liang Wenfeng等（DeepSeek团队 + 北京大学）  
 **机构**：DeepSeek; Peking University  
@@ -147,3 +129,11 @@ DeepSeek最近的一系列操作（R1、Engram）真的让人眼前一亮，他�
 ---
 
 **喜欢这篇文章吗？欢迎分享给你的朋友们！🚀**
+
+
+## References
+- [github.com][ref1]
+- [github.com][ref2]
+
+[ref1]: https://github.com/deepseek-ai/Engram
+[ref2]: https://github.com/deepseek-ai/Engram/blob/main/Engram_paper.pdf

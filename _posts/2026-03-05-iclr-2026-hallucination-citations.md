@@ -2,22 +2,20 @@
 layout: post
 title:  "一分钟读论文：《ICLR 2026危机：50+论文幻觉引用丑闻》"
 author: unbug
-date: 2026-03-05 11:30:00 +0800
-categories: [AI学术, 论文解读]
-tags: [ICLR 2026, 学术诚信, 幻觉引用]
-image: assets/images/iclr-2026-hallucination.jpg
+categories: [AI]
+image: assets/images/iclr-2026-hallucination.svg
+tags: [ICLR 2026, Academic Integrity, Hallucination]
 ---
 GPTZero扫描300篇ICLR 2026投稿：
 - 16.7%论文含幻觉引用（50篇，人工验证）
 - 3-5位同行评审全部漏检，部分评分高达8/10
 - 推算2万篇投稿中可能有数百篇存在幻觉引用。
 
-![ICLR 2026 幻觉引用丑闻]({{ site.baseurl }}/assets/images/iclr-2026-hallucination.jpg)
+![ICLR 2026 幻觉引用丑闻]({{ site.baseurl }}/assets/images/iclr-2026-hallucination.svg)
 
 **问题**：AI生成论文洪流面前，同行评审系统濒临崩溃。
 
 ## 16.7% 的幻觉率！令人震惊的数据
-
 GPTZero 团队用 Hallucination Check 工具扫描了 300 篇 ICLR 2026 投稿论文：
 
 | 指标 | 数据 |
@@ -29,52 +27,48 @@ GPTZero 团队用 Hallucination Check 工具扫描了 300 篇 ICLR 2026 投稿�
 | 估算规模 | 按比例推算，ICLR 2026 的 20,000 篇投稿中可能有数百篇存在幻觉引用 |
 
 ## 幻觉引用的五种类型
-
 GPTZero 详细分类了幻觉引用模式：
 
-### 1. 作者错乱型
+**1. 作者错乱型**
 引用真实存在的论文，但所有作者都是错的。例如"Segment everything everywhere all at once"（NeurIPS 2023）的作者列表完全错误。
 
-### 2. 部分虚构型
+**2. 部分虚构型**
 前 3 位作者正确，但后面 7 位作者根本不存在。例如"Measuring massive multitask language understanding"（ICLR 2021）被添加了 7 位虚构作者。
 
-### 3. 完全无匹配型
+**3. 完全无匹配型**
 引用的论文、作者、会议完全不存在。例如"Defense against adversarial attacks using spectral regularization"（ICLR 2020）在数据库中完全找不到。
 
-### 4. 元数据错误型
+**4. 元数据错误型**
 论文存在，但年份、页码、期刊等元数据错误。例如 MLflow 论文的标题和年份都不对。
 
-### 5. 混合拼凑型
+**5. 混合拼凑型**
 将多篇真实论文的元素拼凑在一起，创造出"半真实"的引用——标题来自一篇论文，作者来自另一篇，会议来自第三篇。
 
 ## 系统性危机
-
-### 1. 同行评审系统崩溃
+**1. 同行评审系统崩溃**
 2016-2024 年，科学论文发表数量增长 48%，评审者过载导致质量下降，撤稿和丑闻激增。审稿人"被 overwhelm"，无法完成任务。
 
-### 2. AI 加速的"论文工厂"
+**2. AI 加速的"论文工厂"**
 LLM 可以在几分钟内生成一篇"看起来像那么回事"的论文，特征是冗长、过度使用项目符号、伪造数据、幻觉引用。AI 生成的内容和真实论文的界限越来越模糊。
 
-### 3. 定义幻觉的难度
+**3. 定义幻觉的难度**
 GPTZero 区分了三种引用：
 - **真实引用**：完全正确
 - **有缺陷引用**：小错误（拼写错误、格式问题）
 - **幻觉引用**：由生成式 AI 产生，似乎改写或组合了一个或多个真实来源的标题、作者和/或元数据
 
-### 4. 解决方案的曙光
+**4. 解决方案的曙光**
 GPTZero 提出了双重防御：
 1. **AI 检测 + 幻觉检查**：同时检查 AI 生成文本和可疑引用
 2. **人工审核自动化**：工具识别有问题的引用，人工做最终判断
 3. **提高效率**：大幅减少验证来源所需的时间和人力
 
 ## 论文信息
-
 - **标题**：Peer Review is Under Siege: Hallucinated Citations in ICLR 2026 Submissions
 - **机构**：GPTZero
 - **数据**：300 篇 ICLR 2026 投稿论文
 
 ## 深层反思
-
 这篇调查报告最令人不安的地方在于：**这不是低排名期刊的问题，而是发生在 ICLR——机器学习领域最顶级的会议之一**。
 
 ICLR 2026 的官方政策明确表示："即使是一个清晰的幻觉引用也是伦理违规，可能导致论文被拒绝。" 但问题是，在 AI 生成的论文洪流面前，现有的同行评审系统根本无法执行这个政策。

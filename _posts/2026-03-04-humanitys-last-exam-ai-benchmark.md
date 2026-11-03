@@ -3,17 +3,16 @@ layout: post
 title: 一分钟读论文：《Humanity's Last Exam：评估 AI 能力的专家级学术问题基准》
 author: unbug
 categories: [AI]
-image: assets/images/humanitys-last-exam.jpg
+image: assets/images/humanitys-last-exam.svg
 tags: [AI, Benchmark, Evaluation]
 ---
 你有没有发现：现在的 AI 在各种考试中表现得越来越好了？MMLU 基准上准确率超过 90%，似乎什么都懂。但问题是，这些测试真的能衡量 AI 的真正能力边界吗？
 
 最新的研究给出了答案：当传统基准已经过时，我们需要一个更难、更深入的测试。这就是 **Humanity's Last Exam**（HLE）—— 一个由近 1,000 名全球各领域专家共同打造的 2,500 道难题的基准测试。
 
-![Humanity's Last Exam](/assets/images/humanitys-last-exam.jpg)
+![Humanity's Last Exam](/assets/images/humanitys-last-exam.svg)
 
 ## 核心数据
-
 HLE 的规模和深度令人印象深刻：
 
 1. **专家参与**：近 1,000 名全球各领域研究者（不仅是计算机科学家，还有历史学家、物理学家、语言学家、医学研究者等）
@@ -21,11 +20,9 @@ HLE 的规模和深度令人印象深刻：
 3. **设计理念**：部分题目公开，大部分隐藏以防止模型记忆，确保长期有效性
 
 ## AI 表现如何？
-
 结果很明确：当前 AI 系统在 HLE 上表现极差，暴露了其在深度理解和专业知识上的局限。不过考虑到 AI 发展速度，研究人员预测模型可能在 2025 年底前在 HLE 上超过 50% 准确率。
 
 ## 这不是对抗 AI，而是理解 AI
-
 HLE 的意义远超一个简单的基准测试：
 
 - **重新定义 AI 评估标准**：从"为人类设计的考试"转向"真正测试专家级理解的基准"
@@ -40,3 +37,9 @@ HLE 的意义远超一个简单的基准测试：
 - **arXiv**：2501.14249
 - **DOI**：10.1038/s41586-025-09962-4
 - **项目网站**：https://lastexam.ai
+
+
+## References
+- [lastexam.ai][ref1]
+
+[ref1]: https://lastexam.ai

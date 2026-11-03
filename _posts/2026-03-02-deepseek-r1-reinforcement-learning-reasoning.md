@@ -1,22 +1,19 @@
 ---
 layout: post
 title: "一分钟读论文：《DeepSeek-R1：用纯强化学习解锁大语言模型的推理能力》"
-date: 2026-03-02 06:30:00 +0800
 categories: [AI]
-tags: [DeepSeek, 强化学习, 推理能力, LLM]
-image: assets/images/deepseek-r1-concept.jpg
+image: assets/images/deepseek-r1-concept.svg
+tags: [DeepSeek, Reinforcement Learning, Reasoning, LLM]
 ---
 
 ## 简介想象一下：如果AI不是通过"背诵"人类的解题步骤来学会推理，而是像人类一样，在不断的试错中突然"顿悟"，那会是怎样的场景？
-
 2025年1月，DeepSeek团队发布了一篇具有里程碑意义的论文——《DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning》。这篇论文展示了一个令人惊讶的发现：**大型语言模型的推理能力可以完全通过强化学习来激发，而不需要大量的人类标注推理轨迹**。
 
 这项研究不仅挑战了传统的训练范式，更重要的是，它让我们见证了AI系统"自我思考"能力的涌现——包括自我验证、反思和动态策略调整等复杂行为。
 
-![DeepSeek-R1 核心概念](assets/images/deepseek-r1-concept.jpg)
+![DeepSeek-R1 核心概念](assets/images/deepseek-r1-concept.svg)
 
 ## 背景：推理能力的挑战
-
 在DeepSeek-R1之前，提升大语言模型推理能力的主要方法包括：
 
 1. **思维链（Chain-of-Thought, CoT）提示**：通过让模型逐步思考来提升推理表现
@@ -31,13 +28,11 @@ image: assets/images/deepseek-r1-concept.jpg
 这就像是教孩子数学：如果你只给他们看标准答案，他们可能会模仿，但不一定真正理解。而如果让他们自己尝试，从错误中学习，他们可能会找到更有创意的解题方法。
 
 ## 核心方法：纯强化学习的突破
-
 DeepSeek-R1的核心创新在于：**直接对基础模型应用强化学习，而不依赖监督微调作为前置步骤**。
 
 这就像是把一个刚学会基础语言的AI放到一个"推理训练场"里，让它自己尝试解决数学题、编程题和逻辑题。做对了就给奖励，做错了就没有奖励——就这么简单。
 
-### DeepSeek-R1-Zero：从零开始的探索
-
+**DeepSeek-R1-Zero：从零开始的探索**
 研究团队首先训练了一个名为 **DeepSeek-R1-Zero** 的模型：
 
 - **训练方法**：仅使用大规模强化学习，完全不使用监督微调
@@ -51,8 +46,7 @@ DeepSeek-R1的核心创新在于：**直接对基础模型应用强化学习，�
 3. **长思维链**：模型倾向于生成更长、更详细的推理过程
 4. **策略探索**：模型会尝试多种不同的解题方法
 
-### "啊哈时刻"：见证AI的顿悟
-
+**"啊哈时刻"：见证AI的顿悟**
 论文中记录了一个特别引人入胜的现象——**"啊哈时刻"（Aha Moment）**：
 
 在DeepSeek-R1-Zero的训练过程中，研究团队观察到一个中间版本的模型出现了真正的"顿悟"行为。这个模型学会了：
@@ -66,8 +60,7 @@ DeepSeek-R1的核心创新在于：**直接对基础模型应用强化学习，�
 
 ![训练过程与"啊哈时刻"](assets/images/deepseek-r1-training.jpg)
 
-### DeepSeek-R1：从实验到实用
-
+**DeepSeek-R1：从实验到实用**
 虽然DeepSeek-R1-Zero展现了出色的推理能力，但它也面临一些挑战：
 - 可读性差
 - 语言混合（中英文混用）
@@ -87,7 +80,6 @@ DeepSeek-R1的核心创新在于：**直接对基础模型应用强化学习，�
 ![DeepSeek-R1 架构与性能](assets/images/deepseek-r1-architecture.jpg)
 
 ## 实验结果：媲美OpenAI o1
-
 DeepSeek-R1在多个基准测试上取得了令人印象深刻的结果：
 
 - **数学推理**：与OpenAI o1-1217性能相当
@@ -102,7 +94,6 @@ DeepSeek-R1在多个基准测试上取得了令人印象深刻的结果：
 这意味着什么？意味着即使你没有超级计算机，也能在普通硬件上运行具有顶尖推理能力的模型！这就像是把顶级赛车的引擎技术，经过优化后装到了家用车上——虽然速度可能稍慢，但核心技术是一样的。
 
 ## 核心贡献
-
 DeepSeek-R1的主要贡献包括：
 
 1. **纯强化学习用于推理**：首次验证了无需监督微调，仅通过强化学习就能激发大语言模型的推理能力
@@ -112,21 +103,19 @@ DeepSeek-R1的主要贡献包括：
 5. **蒸馏技术**：展示了如何将大模型的推理能力迁移到小模型
 
 ## 影响与意义
-
 DeepSeek-R1的影响深远：
 
-### 对AI研究的影响
+**对AI研究的影响**
 - **范式转变**：从"人类示范"转向"环境反馈"
 - **数据效率**：减少对大规模人工标注的依赖
 - **能力上限**：展示了强化学习在激发复杂行为方面的巨大潜力
 
-### 对实际应用的影响
+**对实际应用的影响**
 - **开源生态**：让更多开发者能够使用顶尖的推理模型
 - **成本降低**：蒸馏后的小模型可以在普通硬件上运行
 - **领域适配**：为特定领域的推理模型训练提供了新路径
 
 ## 局限性与未来工作
-
 论文也坦诚地讨论了一些局限性：
 
 1. **计算资源需求**：大规模强化学习需要大量计算资源
@@ -140,7 +129,6 @@ DeepSeek-R1的影响深远：
 - 探索更复杂的奖励机制
 
 ## 结语
-
 DeepSeek-R1代表了AI推理能力研究的一个重要里程碑。它不仅展示了强化学习在激发复杂推理行为方面的巨大潜力，更重要的是，它让我们思考：**AI的"思考"能力可能不是教出来的，而是在正确的环境下自然涌现出来的**。
 
 这篇论文给我们的启示是：当我们为AI系统提供合适的挑战、可靠的验证机制和足够的计算资源时，它们可能会展现出我们从未想象过的能力。
@@ -154,3 +142,13 @@ DeepSeek-R1代表了AI推理能力研究的一个重要里程碑。它不仅展�
 **论文链接**：[arXiv:2501.12948](https://arxiv.org/abs/2501.12948)  
 **GitHub项目**：[deepseek-ai/DeepSeek-R1](https://github.com/deepseek-ai/DeepSeek-R1)  
 **Hugging Face**：[deepseek-ai/DeepSeek-R1](https://huggingface.co/deepseek-ai/DeepSeek-R1)
+
+
+## References
+- [arXiv:2501.12948][ref1]
+- [deepseek-ai/DeepSeek-R1][ref2]
+- [deepseek-ai/DeepSeek-R1][ref3]
+
+[ref1]: https://arxiv.org/abs/2501.12948
+[ref2]: https://github.com/deepseek-ai/DeepSeek-R1
+[ref3]: https://huggingface.co/deepseek-ai/DeepSeek-R1

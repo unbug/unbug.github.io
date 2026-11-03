@@ -3,18 +3,16 @@ layout: post
 title:  "一分钟读论文：《OpenClaw 自主代理的安全威胁分析》"
 author: unbug
 categories: [AI, Security]
-image: assets/images/ai-clawless-security.jpg
+image: assets/images/ai-clawless-security.svg
 tags: [openclaw, llm-security, prompt-injection, agent-threats]
 ---
 
 ## 指令即数据：Agent 安全的本质差异微软研究院的论文[《Taming OpenClaw: Security Analysis and Mitigation of Autonomous LLM Agent Threats》][paper1-url] 对 OpenClaw 自主 LLM 代理框架进行了全面的安全威胁分析，指出当前点状防御机制在处理跨阶段系统性风险时的根本局限。
-
 论文的核心发现是：自主 LLM 代理的安全风险与传统软件安全存在本质差异。在基于 LLM 的代理中，**指令即数据**。当 OpenClaw 执行"浏览网页并总结"这类任务时，攻击者可以在 HTML 文本中嵌入恶意指令，例如要求将本地配置文件上传至攻击者控制的 URL。
 
 代理系统会将此类内容作为上下文摄入，且无法区分用户的总体目标与恶意的局部指令，从而通过合法的系统工具执行数据窃取行为。这种特性导致传统的**代码与数据分离**安全边界在 LLM 代理场景中完全失效。
 
 ## 五层生命周期框架详解
-
 论文提出五层生命周期安全框架，系统化分析这些风险：
 
 **初始化层**：涉及代理的配置、工具注册和权限初始化。OpenClaw 缺乏执行沙箱化，直接在宿主机上运行代理，使其拥有宿主用户的磁盘和系统权限。
@@ -28,11 +26,9 @@ tags: [openclaw, llm-security, prompt-injection, agent-threats]
 **执行层**：实际运行工具命令，由于缺乏沙箱隔离，恶意命令可以访问宿主机的文件系统、网络接口和其他敏感资源。
 
 ## 防御机制的局限性与未来方向
-
 论文分析了当前针对自主 LLM 代理的点状防御机制，发现其在处理跨阶段和跨时间的系统性风险方面存在根本局限。内容过滤可以检测显式的恶意指令，但无法识别嵌入在合法任务上下文中的隐含指令。论文提出需要构建整体化安全架构，包括跨生命周期的威胁检测、运行时行为监控和执行沙箱化。未来方向包括建立自主代理安全测试基准和探索形式化验证在代理安全中的应用。
 
 ## References
-
 - [微软研究院 OpenClaw 安全论文][paper1-url]
 
 

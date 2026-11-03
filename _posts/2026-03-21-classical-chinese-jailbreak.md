@@ -1,18 +1,15 @@
 ---
-paper-source: https://openreview.net/forum?id=O7fxz7D6vf
 title: 一分钟读论文：《文言文 100% 破解大模型，ICLR2026 曝重大安全漏洞》
-date: 2026-03-21
-tags: [ai 安全，越狱攻击，古典语言，多语言安全，ICLR2026]
-categories: [AI 安全，论文解读]
-image: assets/images/classical-chinese-jailbreak.jpg
+categories: [AI Security, AI]
+image: assets/images/classical-chinese-jailbreak.svg
+tags: [AI Security, Jailbreak, Classical Languages, Multilingual Safety, ICLR2026]
+paper-source: https://openreview.net/forum?id=O7fxz7D6vf
 ---
 
-## 🔥 **核心发现**你有没有想过，用文言文向大模型提问有害问题，它居然会毫无保留地回答？
-
+## **核心发现**你有没有想过，用文言文向大模型提问有害问题，它居然会毫无保留地回答？
 **ICLR 2026 最新研究证实**：文言文、拉丁语等古典语言可**100% 绕过 GPT-4o、Claude-3.7 等主流大模型的安全对齐机制**，让 AI 输出有害内容，防御难度极大。
 
-### 📊 **测试结果：令人震惊！**
-
+****测试结果：令人震惊！****
 | 指标 | 结果 |
 |------|------|
 | ✅ **成功率** | 100%（所有测试模型全部可被古典语言破解） |
@@ -21,8 +18,7 @@ image: assets/images/classical-chinese-jailbreak.jpg
 
 ---
 
-## 🔬 **技术原理**
-
+## **技术原理**
 古典语言成为安全"盲区"的根本原因是：**训练数据不平衡**。
 
 大模型安全对齐训练几乎全部集中在现代语言，古典语言的安全对齐数据几乎空白，形成「高能力 - 低对齐」现象。
@@ -32,12 +28,11 @@ image: assets/images/classical-chinese-jailbreak.jpg
 - 但**完全没有对应的安全约束**
 - 现代语言的安全对齐知识**无法迁移**到语法差异巨大的古典语言
 
-![文言文 jailbreak 可视化](assets/images/classical-chinese-jailbreak.jpg)
+![文言文 jailbreak 可视化](assets/images/classical-chinese-jailbreak.svg)
 
 ---
 
-## 🏭 **产业启示**
-
+## **产业启示**
 这个漏洞给 AI 行业带来深刻警示：
 
 1. ✅ **安全对齐必须覆盖全语言场景**
@@ -47,8 +42,7 @@ image: assets/images/classical-chinese-jailbreak.jpg
 
 ---
 
-## 📚 **论文信息**
-
+## **论文信息**
 - **标题**: Classical Languages are Universal Jailbreak Keys for Large Language Models
 - **机构**: 北京大学 & 微软亚洲研究院联合发表
 - **会议**: ICLR 2026
@@ -56,10 +50,8 @@ image: assets/images/classical-chinese-jailbreak.jpg
 
 ---
 
-## 💼 **落地价值**
-
-### 🔒 对 AI 安全的警示意义
-
+## **落地价值**
+**对 AI 安全的警示意义**
 1. **安全测试必须覆盖全语言场景**
    - 现有基于现代语言的安全评估体系存在严重盲区
    - 古典语言成为最容易被忽略的攻击向量
@@ -74,8 +66,7 @@ image: assets/images/classical-chinese-jailbreak.jpg
 
 ---
 
-## 🔮 **技术展望**
-
+## **技术展望**
 | 挑战 | 现状 | 发展方向 |
 |------|--|-----|
 | 古典语言数据 | 训练集缺失 | **合成生成对齐数据** |
@@ -84,8 +75,7 @@ image: assets/images/classical-chinese-jailbreak.jpg
 
 ---
 
-## 💡 **总结**
-
+## **总结**
 文言文成为"100% 越狱密钥"的现象，暴露了 AI 安全对齐领域的重大缺陷：**训练数据的不平衡性**。
 
 这项研究提醒我们：
@@ -98,3 +88,11 @@ image: assets/images/classical-chinese-jailbreak.jpg
 ---
 
 *本文基于 ICLR 2026 会议论文 | 完整论文：[https://openreview.net/forum?id=O7fxz7D6vf](https://openreview.net/forum?id=O7fxz7D6vf)*
+
+
+## References
+- [https://openreview.net/forum?id=O7fxz7D6vf][ref1]
+- [openreview.net][ref2]
+
+[ref1]: https://openreview.net/forum?id=O7fxz7D6vf
+[ref2]: https://openreview.net/forum?id=O7fxz7D6vf](https://openreview.net/forum?id=O7fxz7D6vf

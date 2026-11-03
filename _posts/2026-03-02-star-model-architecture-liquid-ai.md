@@ -1,15 +1,13 @@
 ---
 layout: post
 title: "一分钟读论文：《STAR 模型架构：Liquid AI 的模型架构自动合成新范式》"
-date: 2026-03-02 14:30:00 +0800
 categories: [AI Research, Architecture]
+image: assets/images/star-architecture-overview.svg
 tags: [AI, Machine Learning, Model Architecture, STAR, Liquid AI, Transformer]
-image: assets/images/star-architecture-overview.jpg
-excerpt: "MIT 孵化的 Liquid AI 推出了 STAR（Synthesis of Tailored Architectures），一个革命性的自动化架构搜索框架，能够自动生成和优化 AI 模型架构，在保持甚至超越 Transformer 性能的同时，减少高达 90% 的缓存大小。"
+description: "MIT 孵化的 Liquid AI 推出了 STAR（Synthesis of Tailored Architectures），一个革命性的自动化架构搜索框架，能够自动生成和优化 AI 模型架构，在保持甚至超越 Transformer 性能的同时，减少高达 90% 的缓存大小。"
 ---
 
 ## 简介：Transformer 的统治何时结束？
-
 想象一下，如果建筑行业还在靠手工一块砖一块砖地盖房子，那会是什么样子？
 
 在 AI 领域，我们过去 8 年就是这么干的——自从 2017 年 "Attention Is All You Need" 论文发布以来，Transformer 架构就像一尊不可撼动的神像，所有人都在它的基础上修修补补，却没人敢质疑它的根基。
@@ -22,10 +20,9 @@ excerpt: "MIT 孵化的 Liquid AI 推出了 STAR（Synthesis of Tailored Archite
 
 这玩意儿能自动生成和优化 AI 模型架构，就像给建筑行业配上了自动化施工队。而且，它生成的模型性能不输 Transformer，缓存大小却能减少 **90%**！
 
-![STAR 架构概览](assets/images/star-architecture-overview.jpg)
+![STAR 架构概览](assets/images/star-architecture-overview.svg)
 
 ## 背景：Transformer 的"肥胖症"
-
 让我们先看看 Transformer 到底有多"胖"。
 
 Jennifer Chayes，加州大学伯克利分校计算机、数据科学与社会学院院长，说过一句大实话："我希望看到 Transformer 模型的替代方案，让我们能够在不消耗如此多能源的情况下进行这种思考。"
@@ -39,13 +36,11 @@ Transformer 的问题在于：
 这就好比我们明明有了汽车，却还在骑牛赶路——效率太低了！
 
 ## STAR：让 AI 架构自己"进化"
-
 那么，STAR 到底是什么？它怎么解决这个问题？
 
 简单来说，STAR 就像是一个 **AI 架构的"达尔文进化论"实验室**。它不依赖人类的聪明才智，而是让架构自己在虚拟环境中"进化"，适者生存。
 
-### 核心玩法：基因编码 + 进化算法
-
+**核心玩法：基因编码 + 进化算法**
 STAR 的工作原理可以用三个关键词来概括：
 
 1. **STAR 基因组**：就像 DNA 一样，用分层编码技术来表示各种可能的架构设计
@@ -54,8 +49,7 @@ STAR 的工作原理可以用三个关键词来概括：
 
 最牛的是，STAR 的搜索空间超级大——注意力机制、循环网络、卷积层……各种组件随便组合，比人类设计师能想到的多得多！
 
-### 理论根基：跨界融合的智慧
-
+**理论根基：跨界融合的智慧**
 STAR 不是瞎编的，它的背后有扎实的理论支撑：
 
 - **动力系统**：理解模型的动态行为，就像研究汽车的发动机怎么运转
@@ -67,13 +61,11 @@ STAR 不是瞎编的，它的背后有扎实的理论支撑：
 ![STAR 进化过程](assets/images/star-evolution-process.jpg)
 
 ## 实验结果：牛逼不是吹的
-
 光说不练假把式，让我们看看 STAR 的真实战斗力！
 
 Liquid AI 的团队在自回归语言建模这个 Transformer 的"主场"进行了测试，结果让人惊掉下巴。
 
-### 缓存效率：90% 的瘦身奇迹
-
+**缓存效率：90% 的瘦身奇迹**
 - **相比混合模型**：缓存大小减少 37%
 - **相比传统 Transformer**：缓存大小减少 **90%**！
 
@@ -81,8 +73,7 @@ Liquid AI 的团队在自回归语言建模这个 Transformer 的"主场"进行�
 
 更重要的是，**性能没下降，反而还提升了**。
 
-### 参数效率：少吃多干活
-
+**参数效率：少吃多干活**
 当同时优化模型质量和大小时：
 
 - 参数数量减少 13%
@@ -90,8 +81,7 @@ Liquid AI 的团队在自回归语言建模这个 Transformer 的"主场"进行�
 
 这就是传说中的"吃得少，干得多"的模范员工！
 
-### 可扩展性：从小型车到重型卡车
-
+**可扩展性：从小型车到重型卡车**
 STAR 还展示了超强的可扩展性：
 
 - 从 1.25 亿参数轻松扩展到 10 亿参数
@@ -101,7 +91,6 @@ STAR 还展示了超强的可扩展性：
 这就像一个汽车平台，既能造紧凑型轿车，也能造大型 SUV，还都特别省油！
 
 ## 模块化设计：像搭乐高一样设计架构
-
 STAR 的另一个超级棒的特性是**模块化**。
 
 这意味着什么？
@@ -115,25 +104,20 @@ STAR 的另一个超级棒的特性是**模块化**。
 ![STAR 性能对比](assets/images/star-performance-comparison.jpg)
 
 ## 影响和意义：AI 架构的工业革命
-
 STAR 的出现，可不是小打小闹，这可能是 AI 架构设计的一场**工业革命**。
 
-### 1. 让 AI 从"耗能大户"变"绿色环保"
-
+**1. 让 AI 从"耗能大户"变"绿色环保"**
 通过减少缓存需求和提高参数效率，STAR 能大幅降低 AI 的能源消耗。这对可持续发展太重要了——毕竟，我们不能让 AI 把地球的能源都耗光。
 
-### 2. 架构设计不再是少数人的游戏
-
+**2. 架构设计不再是少数人的游戏**
 以前，设计模型架构需要顶级专家。现在，STAR 让这个过程自动化了。这就像以前只有专业摄影师才能拍好照片，现在人人都能用智能手机拍出好照片。
 
-### 3. 后 Transformer 时代真的来了
-
+**3. 后 Transformer 时代真的来了**
 研究人员说，这可能是"给机器学习和 AI 研究社区的一份受欢迎的冬季假期礼物"。
 
 我说，这哪里是礼物，这简直是**新年大礼**！
 
 ## 未来展望：STAR 的野心不止于此
-
 Liquid AI 可不满足于只在语言建模领域玩玩。他们的目标是：
 
 - **计算机视觉**：让图像和视频处理模型更高效
@@ -144,7 +128,6 @@ Liquid AI 可不满足于只在语言建模领域玩玩。他们的目标是：
 虽然 Liquid AI 还没说具体怎么商业化，但这个研究结果已经足够让人兴奋了。
 
 ## 结论：从手工时代到自动化时代
-
 STAR 代表了 AI 模型架构设计的一个**重大飞跃**。
 
 通过把进化算法、数值编码和跨学科理论结合起来，Liquid AI 创造了一个能自动生成高效、高性能架构的框架。
@@ -156,3 +139,15 @@ STAR 代表了 AI 模型架构设计的一个**重大飞跃**。
 论文链接：[https://arxiv.org/pdf/2411.17800](https://arxiv.org/pdf/2411.17800)
 
 Liquid AI 研究页面：[https://www.liquid.ai/research/automated-architecture-synthesis-via-targeted-evolution](https://www.liquid.ai/research/automated-architecture-synthesis-via-targeted-evolution)
+
+
+## References
+- [https://arxiv.org/pdf/2411.17800][ref1]
+- [https://www.liquid.ai/research/automated-architecture-synthesis-via-ta][ref2]
+- [arxiv.org][ref3]
+- [www.liquid.ai][ref4]
+
+[ref1]: https://arxiv.org/pdf/2411.17800
+[ref2]: https://www.liquid.ai/research/automated-architecture-synthesis-via-targeted-evolution
+[ref3]: https://arxiv.org/pdf/2411.17800](https://arxiv.org/pdf/2411.17800
+[ref4]: https://www.liquid.ai/research/automated-architecture-synthesis-via-targeted-evolution](https://www.liquid.ai/research/automated-architecture-synthesis-via-targeted-evolution

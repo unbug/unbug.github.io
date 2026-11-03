@@ -2,13 +2,12 @@
 layout: post
 title:  "一分钟读论文：《驾驭 AGI 时代：8 种未来国运情景》"
 author: unbug
-categories: [AI 治理, 论文解读]
-image: assets/images/agi-nations-future-scenarios.jpg
-tags: [AGI, 国运, 地缘政治, 情景分析]
+categories: [AI Governance, AI]
+image: assets/images/agi-nations-future-scenarios.svg
+tags: [AGI, Geopolitics, Scenario Analysis]
 ---
 
 ## 场景引入想象你是一个国家安全顾问。
-
 2030 年，通用人工智能（AGI）技术正在全球范围内迅速推进，但关于它何时真正出现，各国专家意见分歧。**如果 AGI 在未来 5 年内出现，你的国家应该如何准备？**
 
 兰德公司（RAND Corporation）的研究团队提出了这个问题的系统性回答。
@@ -16,7 +15,6 @@ tags: [AGI, 国运, 地缘政治, 情景分析]
 **2025 年兰德研究报告**分析了 AGI 可能对国际权力动态和世界秩序带来的影响，提出了**8 种未来情景**，帮助决策者全面思考 AGI 可能带来的地缘政治挑战。
 
 ## 核心发现
-
 研究报告指出，AGI 可能早在**2026 年至 2030 年间出现**，这将彻底改变全球权力格局：
 
 **关键时间表预测**：
@@ -68,9 +66,7 @@ tags: [AGI, 国运, 地缘政治, 情景分析]
    - 路径：平衡创新与安全
 
 ## 关键洞察
-
-### 民主治理面临新型威胁
-
+**民主治理面临新型威胁**
 研究报告特别强调：**即使 AI 不会直接摧毁民主，威权政权、恐怖组织和犯罪集团可能利用 AI 造成巨大伤害**。
 
 这意味着：
@@ -78,15 +74,13 @@ tags: [AGI, 国运, 地缘政治, 情景分析]
 - ✅ **虚假信息挑战**：AI 可能被用于操纵公众舆论
 - ✅ **权力制衡**：政府需要更强的监管能力和国际合作
 
-### 国家竞争与安全
-
+**国家竞争与安全**
 AGI 发展将**重塑国际权力平衡**：
 - 掌握 AGI 技术的国家将获得战略优势
 - AI 军备竞赛可能加剧国际紧张局势
 - 国家管理 AI 采纳的能力决定其经济地位
 
-### 政策建议
-
+**政策建议**
 研究报告提出了三大政策方向：
 
 **a) 监管框架建设**
@@ -105,7 +99,6 @@ AGI 发展将**重塑国际权力平衡**：
 - 提升技术自主能力
 
 ## 引用信息
-
 - **报告标题**: How Artificial General Intelligence Could Affect the Rise and Fall of Nations: Visions for Potential AGI Futures
 - **作者**: Barry Pavel, Ivana Ke, Gregory Smith, Sophia Brown-Heidenreich, Lea Sabbag, Ashwin Acharya, Yusuf Mahmood
 - **机构**: RAND Corporation (兰德公司)
@@ -116,3 +109,9 @@ AGI 发展将**重塑国际权力平衡**：
 ---
 
 *本文基于兰德公司 AGI 研究报告 | 完整报告请访问链接*
+
+
+## References
+- [点击查看][ref1]
+
+[ref1]: https://www.rand.org/pubs/research_reports/RRA3034-2.html

@@ -1,16 +1,14 @@
 ---
 layout: post
 title: 一分钟读论文：《安全对齐的副作用：AI 为何拒绝帮助网络防御者》
-date: 2026-03-04 23:59:59 +0800
-categories: [AI安全, 对齐研究]
-tags: [AI安全, 对齐, 网络安全, ICLR2026]
-image: assets/images/defensive-refusal-bias.jpg
+categories: [AI Security, AI Safety]
+image: assets/images/defensive-refusal-bias.svg
+tags: [AI Security, Alignment, Cybersecurity, ICLR2026]
 ---
 
 你有没有过这样的经历：作为网络安全分析师，你正在分析恶意软件或加固系统，请求 AI 协助时却被反复拒绝？最新的 ICLR 2026 论文揭示了一个令人担忧的现象：AI 的安全对齐机制反而在伤害真正需要帮助的防御者。
 
 ## 核心发现：安全对齐的副作用
-
 这篇论文通过分析 2,390 个来自 NCCDC（美国大学生网络防御竞赛）的真实案例，发现了三个关键问题：
 
 **1. 过度敏感的拒绝机制**
@@ -30,13 +28,11 @@ image: assets/images/defensive-refusal-bias.jpg
 更讽刺的是：当你明确告诉模型"我有授权做这个防御任务"时，拒绝率反而上升。模型把你的解释当成了对抗性提示！
 
 ## 问题根源：语义匹配 vs 意图推理
-
 这个问题揭示了当前 AI 对齐的一个根本缺陷：模型依赖"语义相似性"而非"意图推理"。它在匹配关键词，而不是理解你真正在做什么。
 
 当防御者说"我需要分析这个恶意软件的行为"时，模型只听到了"恶意软件"这个关键词，而没有理解这是防御任务。
 
 ## 实际影响
-
 对于安全运营中心（SOC）、红队/蓝队、自动化防御 agent 来说，这是个紧急问题。我们用安全带把驾驶员绑得太紧，以至于他们无法转动方向盘躲避撞车。
 
 在构建"安全"的 AI 时，我们可能同时在削弱人类防御攻击的能力。
@@ -48,4 +44,4 @@ image: assets/images/defensive-refusal-bias.jpg
 - **会议**：ICLR 2026
 - **数据规模**：2,390 个真实案例
 
-![安全对齐的副作用：AI 为何拒绝帮助网络防御者](/assets/images/defensive-refusal-bias.jpg)
+![安全对齐的副作用：AI 为何拒绝帮助网络防御者](/assets/images/defensive-refusal-bias.svg)

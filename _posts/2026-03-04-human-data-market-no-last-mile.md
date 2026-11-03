@@ -3,17 +3,16 @@ layout: post
 title: 一分钟读论文：《没有最后一英里，人类数据市场的持久性》
 author: unbug
 categories: [Economics]
-image: assets/images/human-data-market.jpg
+image: assets/images/human-data-market.svg
 tags: [AI, Economics, Labor, HumanData]
 ---
 你是不是觉得，现在人类做的那些数据工作——比如评估 AI 输出、审计结果、处理例外情况——只是暂时的？等 AI 越来越强，这些工作总会被自动化取代，这就是所谓的"最后一英里"问题。
 
 但最新的研究挑战了这个观点：**结构化人类数据工作不是临时的桥梁，而是 AI 经济中持久的生产要素**。
 
-![没有最后一英里](/assets/images/human-data-market.jpg)
+![没有最后一英里](/assets/images/human-data-market.svg)
 
 ## 核心发现
-
 论文提出了"AI 能力存量"（Capability Stock）的概念：人类的结构化工作会积累成一个可重用的能力存量，这个存量不仅能提高现有任务的可靠性，还能扩大 AI 可以高置信度部署的任务边界。
 
 但这个能力存量会折旧，有三个渠道：
@@ -22,7 +21,6 @@ tags: [AI, Economics, Labor, HumanData]
 3. **组织漂移**：政策、品牌约束、风险承受能力的变化会重新定义什么是"好"的输出
 
 ## 关键数据
-
 在保守校准下，稳态下的结构化劳动力份额集中在 **5-7%** 左右：
 - 均值：5.85%
 - 中位数：5.85%
@@ -36,7 +34,6 @@ tags: [AI, Economics, Labor, HumanData]
 - 在大型客户支持环境中，AI 助手使每小时解决的问题平均增加了约 15%
 
 ## 意义
-
 这项研究有几个重要启示：
 1. **劳动力政策**：如果这类工作是永久性的，那么基于"最终会自动化"假设的政策可能会错误分配培训投资
 2. **AI 治理**：当前监管关注模型部署时刻，但对持续维护工作关注较少

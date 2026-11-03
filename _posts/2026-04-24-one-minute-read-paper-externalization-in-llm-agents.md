@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《LLM Agent 的外化设计范式》"
 author: unbug
 categories: [AI, LLM]
-image: assets/images/externalization-framework.jpg
+image: assets/images/externalization-framework.svg
 tags: [LLMAgent, Architecture, Memory, Skills, Protocols]
 ---
 
@@ -14,7 +14,6 @@ tags: [LLMAgent, Architecture, Memory, Skills, Protocols]
 过去几年，LLM Agent 的设计思路发生了根本转变。早期系统期望模型在内部编码所有能力，但随着任务复杂度提升，固定权重的局限性日益明显。研究者发现，将能力从模型内部转移到外部组件，可以获得更显著的可靠性改进。这篇综述对这一转变进行了系统梳理，提出了统一的设计框架。
 
 ## 四维度外化框架
-
 论文提出的框架将 Agent 设计空间划分为四个层次，每个层次对应一类外化能力。
 
 **记忆（Memory）**负责管理 Agent 的信息存储与检索。包括短期记忆、长期记忆和外部知识库。关键设计决策是存储什么内容、何时存储以及如何高效检索。记忆外化的核心思想是：不期望模型记住所有信息，而是通过外部存储补充内部能力的不足。
@@ -26,13 +25,11 @@ tags: [LLMAgent, Architecture, Memory, Skills, Protocols]
 **框架（Harness）**是统一调度上述组件的运行时环境。它负责协调记忆、技能和协议的协同工作，确保整个系统稳定运行。框架层的设计直接影响 Agent 的可靠性、可扩展性和维护成本。论文强调，框架层不仅需要管理组件的生命周期，还需要处理组件间的依赖关系和冲突解决。
 
 ## 设计空间与工程启示
-
 外化框架为 Agent 设计提供了一个系统化的分析工具。研究者可以用这个框架描述和比较不同 Agent 架构的优劣，工程师可以在设计新系统时明确每个决策对应的设计维度。
 
 对工程实践而言，框架明确了 Agent 设计的核心问题：哪些能力应该保留在模型内部，哪些应该外化为独立组件。这个判断直接影响系统的可靠性、可扩展性和维护成本。论文指出，随着 Agent 系统规模的增长，外化设计的优势将更加显著。
 
 ## References
-
 - [论文原文][paper1-url]
 
 

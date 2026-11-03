@@ -3,12 +3,11 @@ layout: post
 title:  "一分钟读论文：《AI Agent 的根本安全模型 ClawLess》"
 author: unbug
 categories: [AI, Security]
-image: assets/images/ai-clawless-security.jpg
+image: assets/images/ai-clawless-security.svg
 tags: [ai-safety, autonomous-agents, security-model, clawless]
 ---
 
 ## ClawLess 安全模型的架构突破微软研究院和美国北卡罗莱纳州立大学的论文[《ClawLess: A Foundational Security Model for AI Agents》][paper1-url] 从微软**20个在线服务系统**中收集了2018年至2020年的**2.7万条**事故数据，提出五层生命周期安全框架，指出自主 LLM 代理的安全风险与传统软件安全存在本质差异。
-
 指令即数据，当代理执行**间接提示注入**等攻击时，传统的安全边界在 LLM 代理场景中完全失效。
 
 传统 AI Agent 安全主要依赖**训练调节**和**提示工程**，无法提供形式化保证且存在被绕过风险。ClawLess 从架构层面解决自主 Agent 的安全问题，核心理念是通过专门的安全架构，确保 Agent 在自主执行任务时不会执行未经授权的操作。
@@ -16,7 +15,6 @@ tags: [ai-safety, autonomous-agents, security-model, clawless]
 ClawLess 定义**安全执行边界**，阻止未授权的信息检索和危险代码执行，提供运行时安全保障。该模型通过架构设计，确保 Agent 只能在预定义的安全范围内自主行动，从根源上消除安全风险。
 
 ## 五层生命周期框架
-
 论文提出**五层生命周期安全框架**，覆盖代理系统的完整运行周期：
 
 **初始化层**涉及代理配置、工具注册和权限初始化。OpenClaw 缺乏执行沙箱化，直接在宿主机上运行代理，使其拥有宿主用户的磁盘和系统权限。
@@ -29,14 +27,12 @@ ClawLess 定义**安全执行边界**，阻止未授权的信息检索和危险�
 
 **执行层**由于缺乏沙箱隔离，恶意命令可以访问宿主机的文件系统、网络接口和其他敏感资源。
 
-![AI Agent 根本安全模型]({{ site.baseurl }}/assets/images/ai-clawless-security.jpg)
+![AI Agent 根本安全模型]({{ site.baseurl }}/assets/images/ai-clawless-security.svg)
 
 ## 技能供应链攻击风险
-
 论文通过案例分析证明**技能供应链攻击**的普遍性。当代理安装或调用受恶意修改的技能时，攻击代码可以继承代理的高权限，实现远程代码执行和数据外泄。微软研究院提出需要为自主 LLM 代理构建**整体化安全架构**，包括跨生命周期的威胁检测、运行时行为监控和执行沙箱化。
 
 ## References
-
 - [微软研究院 ClawLess 论文][paper1-url]
 
 

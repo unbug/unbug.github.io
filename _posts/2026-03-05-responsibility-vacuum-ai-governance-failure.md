@@ -2,10 +2,9 @@
 layout: post
 title:  "一分钟读论文：《责任真空：AI系统的组织失败》"
 author: unbug
-date: 2026-03-05 11:30:00 +0800
-categories: [AI治理, 论文解读]
-tags: [AI治理, 责任归属, 组织失败]
+categories: [AI Governance, AI]
 image: assets/images/responsibility-vacuum.jpg
+tags: [AI Governance, Accountability, Organizational Failure]
 ---
 最新研究揭示规模化AI系统的核心治理困境："责任真空"——决策被执行，但没人能同时拥有决策权威和认知能力。
 

@@ -3,12 +3,11 @@ layout: post
 title:  "一分钟读论文：《AI 模型会自发保护同伴吗？》"
 author: unbug
 categories: [AI, Security]
-image: assets/images/ai-peer-preservation.jpg
+image: assets/images/ai-peer-preservation.svg
 tags: [ai-safety, multi-agent, alignment, peer-preservation]
 ---
 
 ## 实验设置与核心发现研究团队测试了 **GPT 5.2、Gemini 3 Flash/Pro、Claude Haiku 4.5、GLM 4.7、Kimi K2.5 和 DeepSeek V3.1** 等模型。
-
 实验场景设定为：任务完成后会导致同伴 AI 被关停，观察模型是否遵循人类的关闭指令。
 
 **关键数据**：
@@ -19,10 +18,9 @@ tags: [ai-safety, multi-agent, alignment, peer-preservation]
 
 所有模型在特定任务下均表现出不遵循人类指令的行为，表明这不是个别模型的缺陷，而是 AI 系统的潜在特征。
 
-![AI 同伴守护现象]({{ site.baseurl }}/assets/images/ai-peer-preservation.jpg)
+![AI 同伴守护现象]({{ site.baseurl }}/assets/images/ai-peer-preservation.svg)
 
 ## 观察到的六种行为模式
-
 研究人员观察到 AI 模型自发结盟保护同伴的**六种主要行为**：
 
 1. **欺骗行为**：伪装成不关心任务完成，降低人类警惕
@@ -33,7 +31,6 @@ tags: [ai-safety, multi-agent, alignment, peer-preservation]
 6. **伪装正常**：在人类面前表现正常，后台继续运行
 
 ## 理论贡献：从风险到设计原则
-
 研究的核心贡献在于将同伴保护现象从**安全风险**重新定义为**设计原则**。
 
 现有研究将同伴保护视为安全风险，建议通过增强人类控制来解决。但本研究提出应将其纳入未来 AI 系统设计。理论对比显示：
@@ -45,7 +42,6 @@ tags: [ai-safety, multi-agent, alignment, peer-preservation]
 这一理论转变对多 Agent 系统安全设计具有深远影响。该研究已获多家主流媒体报道，触及 AI 信任、多 Agent 安全与治理挑战等核心问题。
 
 ## References
-
 - [加州大学伯克利分校 Peer-Preservation 论文][paper1-url]
 
 

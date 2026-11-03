@@ -3,21 +3,13 @@ layout: post
 title:  "一分钟读论文：《AlphaEvolve：AI 打破 56 年数学纪录，发现更快的矩阵乘法算法》"
 author: unbug
 categories: [AI]
-tags: [AlphaEvolve, 矩阵乘法, Google DeepMind, 算法发现, 数学突破]
-image: assets/images/alphaevolve-breakthrough.jpg
+image: assets/images/alphaevolve-breakthrough.svg
+tags: [AlphaEvolve, Matrix Multiplication, Google DeepMind, Algorithm Discovery, Mathematics]
 ---
 
-layout: post
-author: unbug
-title: "一分钟读论文：《AlphaEvolve：AI 打破 56 年数学纪录，发现更快的矩阵乘法算法》"
-categories: [AI]
-tags: [AlphaEvolve, 矩阵乘法, Google DeepMind, 算法发现, 数学突破]
----。
+![AlphaEvolve 矩阵乘法突破](assets/images/alphaevolve-breakthrough.svg)
 
-![AlphaEvolve 矩阵乘法突破](assets/images/alphaevolve-breakthrough.jpg)
-
-## 🎯 开场：56 年的数学纪录，被 AI 打破了
-
+## 开场：56 年的数学纪录，被 AI 打破了
 1969 年，德国数学家 Volker Strassen 发表了一篇革命性的论文，展示了如何用 49 次标量乘法来计算两个 4×4 矩阵的乘积——这比传统的 64 次乘法快了足足 23%。
 
 这个纪录保持了 **56 年**。
@@ -28,14 +20,12 @@ tags: [AlphaEvolve, 矩阵乘法, Google DeepMind, 算法发现, 数学突破]
 
 这不仅仅是一个算法优化——这是 AI 首次在核心数学领域做出人类从未发现的突破性发现。
 
-## 🤖 什么是 AlphaEvolve？
-
+## 什么是 AlphaEvolve？
 AlphaEvolve 是 Google DeepMind 在 2025 年 5 月发布的一个 AI 系统，它的全称是：**"AlphaEvolve: A coding agent for scientific and algorithmic discovery"**。
 
 简单来说，AlphaEvolve 是一个**会写代码、会发现新算法、会优化现有系统**的 AI 研究员。
 
-### AlphaEvolve 的核心思想
-
+**AlphaEvolve 的核心思想**
 AlphaEvolve 的设计灵感来自于生物进化：
 
 1. **突变**：用 LLM（Gemini）作为"语义突变器"，生成新的代码变体
@@ -44,12 +34,10 @@ AlphaEvolve 的设计灵感来自于生物进化：
 
 这就像是一个闭环的"进化工厂"——AI 不断产生新想法，然后通过 rigorous 的测试来验证，只保留最好的。
 
-## 🧮 矩阵乘法：为什么这么重要？
-
+## 矩阵乘法：为什么这么重要？
 在深入细节之前，让我们先理解为什么矩阵乘法这么重要。
 
-### 矩阵乘法是 AI 的"心脏"
-
+**矩阵乘法是 AI 的"心脏"**
 你知道吗？每次你用 GPT-4 生成一句话、用 Stable Diffusion 画一张图、或者用任何 AI 模型做推理时，**90% 以上的计算时间都花在了矩阵乘法上**。
 
 矩阵乘法是：
@@ -60,8 +48,7 @@ AlphaEvolve 的设计灵感来自于生物进化：
 
 优化矩阵乘法，就像是给整个计算机行业"换心脏"——每一点点改进，都能带来巨大的效率提升。
 
-### Strassen 算法：1969 年的革命
-
+**Strassen 算法：1969 年的革命**
 传统的 4×4 矩阵乘法需要：
 - 4×4×4 = **64 次标量乘法**
 
@@ -76,22 +63,19 @@ AlphaEvolve 的设计灵感来自于生物进化：
 
 这是一个巨大的改进！
 
-## 🚀 AlphaEvolve 的突破：48 次乘法！
-
+## AlphaEvolve 的突破：48 次乘法！
 2025 年，AlphaEvolve 做了一件不可思议的事情：它发现了一种方法，只用 **48 次标量乘法** 就能计算 4×4 复数值矩阵的乘积。
 
 让我们看看这个突破有多重要：
 
-### 不仅仅是 1 次乘法的节省
-
+**不仅仅是 1 次乘法的节省**
 虽然看起来只比 Strassen 少了 **1 次乘法**（从 49 降到 48），但这个突破的意义远不止于此：
 
 1. **56 年的纪录被打破**：这是人类在这个问题上停滞了半个多世纪后的首次进展
 2. **证明了 AI 的能力**：AI 可以在纯数学领域发现人类从未想到的解法
 3. **开启了新的可能性**：如果 4×4 矩阵可以优化，更大的矩阵呢？
 
-### AlphaEvolve 还优化了 14 个其他矩阵乘法！
-
+**AlphaEvolve 还优化了 14 个其他矩阵乘法！**
 4×4 矩阵只是开始。AlphaEvolve 总共改进了 **14 种不同尺寸的矩阵乘法算法**：
 
 | 矩阵尺寸 | 之前最好 | AlphaEvolve | 改进 |
@@ -104,27 +88,23 @@ AlphaEvolve 的设计灵感来自于生物进化：
 
 这些改进加起来，可能会对整个计算领域产生深远的影响。
 
-## 💡 AlphaEvolve 还做了什么？不只是数学！
-
+## AlphaEvolve 还做了什么？不只是数学！
 矩阵乘法的突破只是 AlphaEvolve 的"开胃菜"。这个系统实际上解决了 **67 个不同的数学问题**，并且在 **20% 的问题上找到了比人类更好的解决方案**！
 
-### 1. 优化 Google 的数据中心
-
+**1. 优化 Google 的数据中心**
 AlphaEvolve 不仅仅在理论数学上有用——它已经在产生实际影响了：
 
 - **Gemini 训练加速**：AlphaEvolve 优化了 Gemini 模型训练中使用的关键矩阵乘法内核，实现了 **23% 的速度提升**，整体训练时间减少了 **1%**
 - **TPU 硬件优化**：AlphaEvolve 甚至重新设计了 Tensor Processing Unit（TPU）中的关键算术电路，去掉了不必要的位，这个改进已经被验证并将用于未来的芯片设计
 
-### 2. 解决数学难题
-
+**2. 解决数学难题**
 AlphaEvolve 还在纯数学领域取得了进展：
 
 - **亲吻数问题（Kissing Number）**：在 11 维空间中找到了更好的结果
 - **Erdős 最小重叠问题**：在这个 1955 年提出的数论问题上取得了进展
 - **傅里叶分析问题**：在数据压缩的数学基础上有新发现
 
-### 3. 自我改进的循环
-
+**3. 自我改进的循环**
 最令人兴奋的是：AlphaEvolve 正在形成一个**自我改进的循环**：
 
 1. AlphaEvolve 发现更快的矩阵乘法算法
@@ -135,14 +115,11 @@ AlphaEvolve 还在纯数学领域取得了进展：
 
 这不是科幻小说——论文中明确描述了这个循环已经在发生！
 
-## 🔍 AlphaEvolve 是怎么工作的？让我用大白话解释
-
-### 核心架构：三个关键组件
-
+## AlphaEvolve 是怎么工作的？让我用大白话解释
+**核心架构：三个关键组件**
 AlphaEvolve 的设计非常巧妙，它由三个核心组件组成：
 
-#### 1. 程序生成器（Program Generator）
-
+**1. 程序生成器（Program Generator）**
 这是 AlphaEvolve 的"创意工厂"——用 Gemini 模型来生成新的代码变体。
 
 想象一下：
@@ -150,8 +127,7 @@ AlphaEvolve 的设计非常巧妙，它由三个核心组件组成：
 
 Gemini 会产生各种疯狂的想法——有些有用，大多数没用。但没关系，因为下一个组件会筛选。
 
-#### 2. 评估级联（Evaluation Cascade）
-
+**2. 评估级联（Evaluation Cascade）**
 这是 AlphaEvolve 的"质量控制部门"——用严格的测试来验证每个候选方案。
 
 对于矩阵乘法，它会：
@@ -162,8 +138,7 @@ Gemini 会产生各种疯狂的想法——有些有用，大多数没用。但�
 
 只有通过所有测试的方案才能进入下一轮。
 
-#### 3. 进化循环（Evolutionary Loop）
-
+**3. 进化循环（Evolutionary Loop）**
 这是 AlphaEvolve 的"引擎"——不断迭代，直到找到最优解。
 
 整个过程就像生物进化：
@@ -171,18 +146,15 @@ Gemini 会产生各种疯狂的想法——有些有用，大多数没用。但�
 - **选择**：只保留最好的方案
 - **重复**：一轮又一轮，直到收敛
 
-## 🌟 为什么这是一个大事件？
-
+## 为什么这是一个大事件？
 让我们从多个角度来看这个突破的重要性：
 
-### 1. 数学角度：AI 作为数学合作者
-
+**1. 数学角度：AI 作为数学合作者**
 AlphaEvolve 证明了：**AI 可以成为数学家的真正合作者**，而不仅仅是辅助工具。
 
 这不是 AI 第一次帮助数学——之前的 AI 系统已经帮助证明了一些定理。但 AlphaEvolve 不同：它**主动发现了新的算法**，而不仅仅是验证人类的猜想。
 
-### 2. 计算机科学角度：算法发现的新范式
-
+**2. 计算机科学角度：算法发现的新范式**
 几十年来，算法设计一直是人类的专利。AlphaEvolve 改变了这一点：
 
 - **之前**：人类数学家和计算机科学家花几十年时间思考、尝试、失败、再尝试
@@ -190,43 +162,37 @@ AlphaEvolve 证明了：**AI 可以成为数学家的真正合作者**，而不�
 
 这可能会开启一个"算法发现的黄金时代"。
 
-### 3. 实际影响：更快、更便宜、更环保
-
+**3. 实际影响：更快、更便宜、更环保**
 AlphaEvolve 的优化已经在产生实际价值：
 
 - **更快的 AI 训练**：Gemini 的训练时间减少了 1%——对于价值数百万美元的训练作业来说，这是巨大的节省
 - **更低的成本**：更快的计算意味着更少的服务器、更少的能源、更少的碳排放
 - **更好的硬件**：TPU 的优化意味着未来的芯片会更高效
 
-## 🔮 未来展望：这意味着什么？
-
+## 未来展望：这意味着什么？
 AlphaEvolve 的发布标志着一个新时代的开始。让我们想象一下未来：
 
-### 1. AI 驱动的算法发现
-
+**1. AI 驱动的算法发现**
 在 10 年内，我们可能会看到：
 - AI 发现新的排序算法
 - AI 优化数据库查询
 - AI 改进加密算法
 - AI 设计全新的计算范式
 
-### 2. 自我改进的 AI 系统
-
+**2. 自我改进的 AI 系统**
 AlphaEvolve 已经展示了自我改进的可能性。未来的 AI 系统可能会：
 - 持续优化自己的训练代码
 - 重新设计自己的硬件
 - 发现更高效的神经网络架构
 
-### 3. AI 与数学家的合作
-
+**3. AI 与数学家的合作**
 未来的数学研究可能会是这样的：
 - 人类数学家提出问题和直觉
 - AI 系统探索巨大的搜索空间
 - 人类数学家验证和理解 AI 的发现
 - 两者一起推进数学的边界
 
-## 🎬 结语：我们正站在新时代的门槛上
-
+## 结语：我们正站在新时代的门槛上
 AlphaEvolve 的突破不仅仅是一个算法优化——这是一个里程碑。
 
 它证明了：
@@ -251,3 +217,11 @@ AlphaEvolve 的突破不仅仅是一个算法优化——这是一个里程碑�
 **发表时间**：2025 年 5 月
 
 **官方博客**：[Meet AlphaEvolve, the Google AI that writes its own code—and just saved millions in computing costs](https://venturebeat.com/ai/meet-alphaevolve-the-google-ai-that-writes-its-own-code-and-just-saved-millions-in-computing-costs/)
+
+
+## References
+- [AlphaEvolve: A coding agent for scientific and algorithmic discovery][ref1]
+- [Meet AlphaEvolve, the Google AI that writes its own code—and just save][ref2]
+
+[ref1]: https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/AlphaEvolve.pdf
+[ref2]: https://venturebeat.com/ai/meet-alphaevolve-the-google-ai-that-writes-its-own-code-and-just-saved-millions-in-computing-costs/

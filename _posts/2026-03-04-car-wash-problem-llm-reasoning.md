@@ -1,10 +1,9 @@
 ---
 layout: post
 title: 一分钟读论文：《洗车问题暴露大语言模型的根本缺陷？提示词架构决定推理质量》
-date: 2026-03-04 06:30 +0800
-categories: [AI, 论文阅读]
-tags: [LLM, 提示词工程, 推理, 可解释性]
-image: assets/images/car-wash-problem.jpg
+categories: [AI]
+image: assets/images/car-wash-problem.svg
+tags: [LLM, Prompt Engineering, Reasoning, Interpretability]
 ---
 
 你有没有遇到过这种情况：问大语言模型一个看似简单的问题，它却答错了？
@@ -14,7 +13,6 @@ image: assets/images/car-wash-problem.jpg
 正确答案其实很明显：**开车**，因为车必须在洗车店才能洗。但最新的研究发现，所有主流 LLM（Claude、GPT-4、Gemini）都答错了！
 
 ## 洗车问题的真相
-
 这篇来自 Heejin Jo 的论文《Prompt Architecture Determines Reasoning Quality: A Variable Isolation Study on the Car Wash Problem》揭示了一个惊人的发现：
 
 **问题不在模型本身，而在于提示词的架构。**
@@ -30,7 +28,6 @@ image: assets/images/car-wash-problem.jpg
 | STAR + Profile + RAG | 100% |
 
 ## 核心发现：结构化推理完胜上下文注入
-
 最关键的发现是：**结构化推理的效果是上下文注入的 2.83 倍**（p=0.001，统计显著）。
 
 - **STAR 框架单独就能达到 85% 正确率**，而直接注入物理上下文只有 30%
@@ -38,12 +35,10 @@ image: assets/images/car-wash-problem.jpg
 - 关键机制：STAR 框架强迫模型在开始推理前先写清楚"Task：把你的车弄到洗车店"——一旦目标明确写在上下文窗口中，后续的自回归生成就会基于这个文本，隐性约束变成了显性文本
 
 ## 其他有趣的发现
-
 - **恢复悖论**：STAR 第一次正确率最高（85%），但恢复率最低（67%）——因为结构化论证一旦形成，很难推翻
 - **延迟开销**：STAR 比基线增加约 69% 的响应时间（7,851ms vs 4,649ms）
 
 ## 意义和启示
-
 这篇论文的价值在于：
 
 1. **颠覆了"更多上下文=更好推理"的常识**：如何处理信息比拥有多少信息更重要
@@ -52,7 +47,7 @@ image: assets/images/car-wash-problem.jpg
 
 用论文的话说：**"智能不是关于你脑子里装了多少东西，而是关于在出门前记得拿钥匙。"**
 
-![洗车问题：提示词架构决定推理质量](/assets/images/car-wash-problem.jpg)
+![洗车问题：提示词架构决定推理质量](/assets/images/car-wash-problem.svg)
 
 ---
 
@@ -62,3 +57,9 @@ image: assets/images/car-wash-problem.jpg
 - arXiv：[2602.21814](https://arxiv.org/abs/2602.21814)
 - 发表日期：2026年2月25日
 - Hacker News 讨论：1,499 分，943 条评论
+
+
+## References
+- [2602.21814][ref1]
+
+[ref1]: https://arxiv.org/abs/2602.21814

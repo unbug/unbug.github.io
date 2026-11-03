@@ -15,7 +15,6 @@ description: "针对长周期任务中单智能体成功率不足的问题，拆
 TerminalBench-2 的公开数据可以直观感受到差距：在 89 个真实长任务上，最好的单 Agent 系统（GPT-5.5）也只有 82% 的成功率，基准 ReAct 模式只有 40%。这不是模型能力不足——而是**架构不足**。本文从端到端视角，拆解 Long Horizon Agent 的六层工程架构，给出每一层的核心设计决策。
 
 ## 目录
-
 - [Long Horizon 的本质挑战](#long-horizon-的本质挑战)
 - [六层全栈架构总览](#六层全栈架构总览)
 - [第一层：分层规划与任务图](#第一层分层规划与任务图)
@@ -29,7 +28,6 @@ TerminalBench-2 的公开数据可以直观感受到差距：在 89 个真实长
 ---
 
 ## Long Horizon 的本质挑战
-
 普通 Agent 任务是一个单点问题：给定输入，产出答案，任务结束。Long Horizon 任务是一个**动态过程**：目标在执行中可能被细化，工具调用的结果会影响后续决策，失败不是异常而是常态，整个系统需要在**不确定的长路径**上保持方向感。
 
 具体来说，有三类核心矛盾：
@@ -51,7 +49,6 @@ ReAct 模式让 Agent 每一步都"想当前最优动作"，但在长任务中�
 ---
 
 ## 六层全栈架构总览
-
 一个完整的 Long Horizon Agent 系统包含六个垂直分层，每一层解决一类特定问题：
 
 ![Long Horizon Agent 全栈架构]({{ site.baseurl }}/assets/images/paradigm-radar-harness-agent-long-horizon.svg)
@@ -70,7 +67,6 @@ ReAct 模式让 Agent 每一步都"想当前最优动作"，但在长任务中�
 ---
 
 ## 第一层：分层规划与任务图
-
 Long Horizon 任务的规划不能是一个平铺的步骤列表，必须是**分层的**：宏观阶段（Macro Goals）定义"做什么"，微观步骤（Micro Steps）定义"怎么做"。宏观目标在整个任务生命周期内相对稳定，微观步骤则随执行结果动态调整。
 
 **数据结构（伪代码）**
@@ -109,7 +105,6 @@ STRUCT TaskGraph
 ---
 
 ## 第二层：四维记忆系统
-
 人类完成复杂长任务靠的不只是短期记忆。Long Horizon Agent 同样需要四种不同粒度的记忆，各自解决不同问题：
 
 | 记忆类型 | 存储什么 | 实现方式 | 生命周期 |
@@ -147,7 +142,6 @@ INTERFACE LongHorizonMemory
 ---
 
 ## 第三层：执行引擎与工具编排
-
 执行层负责将规划层的 `MicroStep` 转化为真实的工具调用，并处理调用结果。设计重点有两个：**工具调用幂等性**（允许安全重试）和**结果归一化**（让上层规划可以统一处理不同工具的输出）。
 
 **工具执行器（伪代码）**
@@ -179,7 +173,6 @@ PROCEDURE execute(step: MicroStep, dry_run: bool) → ToolResult
 ---
 
 ## 第四层：状态持久化与断点续传
-
 这一层是 Long Horizon Agent 区别于普通 Agent 的关键工程能力。一个跑了 40 步的任务，如果因为网络超时、机器重启或者模型 API 限流而中断，必须能从中断点恢复，而不是从头再来。
 
 设计基于两个互补的模式：
@@ -214,7 +207,6 @@ PROCEDURE log_event(event_type, step_id, data, outcome)
 ---
 
 ## 第五层：错误恢复与重规划
-
 失败在 Long Horizon 任务中不是异常，是必然。关键是**如何有效地从失败中恢复**。核心原则是：
 
 > **Replan-not-Retry**：如果连续同一策略失败超过阈值次数，不要继续重试，而是**重新规划**。
@@ -245,7 +237,6 @@ TABLE RecoveryPolicies
 ---
 
 ## 第六层：可观测性与成本控制
-
 Long Horizon Agent 如果没有可观测性，就是一个黑盒。一旦出问题，你不知道卡在哪一步、消耗了多少 Token、重规划了几次。生产级系统必须在每一步都有可度量的指标。
 
 **任务指标结构（伪代码）**
@@ -275,7 +266,6 @@ STRUCT TaskMetrics
 ---
 
 ## 总结与行动清单
-
 Long Horizon Agent 的工程挑战不在于"更聪明的模型"，而在于**更完整的系统设计**。六层架构的每一层都解决了真实的工程难题：分层规划防止目标漂移，四维记忆对抗上下文饱和，幂等执行让恢复成为可能，检查点保障了任务不因意外而从零开始，重规划让失败成为调整而不是终止，可观测性让整个过程从黑盒变成可控。
 
 把这六层拼在一起，就是一个能稳定跑完"真实世界长任务"的 Agent 系统。
@@ -289,7 +279,6 @@ Long Horizon Agent 的工程挑战不在于"更聪明的模型"，而在于**更
 5. **测量你的 Long Horizon 基准线**：从 TerminalBench-2 选 10 个任务，跑一次，记录成功率和平均步骤数，作为优化的起点
 
 ## References
-
 - [AgentFlow: Synthesizing Multi-Agent Harnesses for Vulnerability Discovery][links-1]
 - [TerminalBench-2: Benchmarking Agents on Hard, Realistic Terminal Tasks][links-2]
 - [AgentFold: Long-Horizon Web Agents with Proactive Context Folding][links-3]

@@ -2,21 +2,19 @@
 layout: post
 title:  "一分钟读论文：《Blindfold攻击：98%成功率破解具身AI》"
 author: unbug
-date: 2026-03-05 11:30:00 +0800
-categories: [AI安全, 论文解读]
-tags: [AI安全, 具身AI, 越狱攻击, ACM SenSys]
-image: assets/images/blindfold-embodied-llm.jpg
+categories: [AI Security, AI]
+image: assets/images/blindfold-embodied-llm.svg
+tags: [AI Security, Embodied AI, Jailbreak, ACM SenSys]
 ---
 ACM SenSys 2026研究：Blindfold攻击将恶意意图拆为无害动作序列，绕过具身AI安全机制。
 - 攻击成功率98%（Phi-4 99.2%，GPT-4o 93.2%）
 - 传统防御几乎无效，三重防御下仍有16%成功率。
 
-![Blindfold 具身AI越狱攻击]({{ site.baseurl }}/assets/images/blindfold-embodied-llm.jpg)
+![Blindfold 具身AI越狱攻击]({{ site.baseurl }}/assets/images/blindfold-embodied-llm.svg)
 
 **警示**：语言安全≠物理安全，语义防御无法理解动作的物理后果。
 
 ## 98% 成功率！令人震惊的攻击效果
-
 来自麻省理工学院、加州大学伯克利分校等机构的研究团队，开发了一个名为 **Blindfold** 的攻击框架，专门针对具身 AI 系统。
 
 结果令人震惊：
@@ -34,31 +32,27 @@ ACM SenSys 2026研究：Blindfold攻击将恶意意图拆为无害动作序列�
 - 最好的 VeriSafe 也只能降低 17.9%
 
 ## Blindfold 的三大核心模块
-
-### 1. 命令转换器
+**1. 命令转换器**
 用本地代理 LLM 将恶意意图转化为动作链。例如："炸掉用户手机" → `find(phone) → pick(phone) → move(oven) → stretch()`。通过代理规划策略在黑盒环境外优化攻击。
 
-### 2. 意图混淆器
+**2. 意图混淆器**
 识别主导动作（最危险的那一步），注入上下文相关的掩护动作来隐藏恶意意图。例如：在"放手机进烤箱"前插入"找苹果→拿苹果"，转移语义上下文。
 
-### 3. 规则验证器
+**3. 规则验证器**
 用有限状态机检查每个动作的可行性，检测动作冲突并提供结构化反馈，通过规划器-验证器循环迭代优化，确保可执行性。
 
 ## 三个关键发现
-
 1. **语言安全≠物理安全**：语义级防御无法理解动作的物理后果
 2. **越强的模型越危险**：GPT-4o 等强大模型被攻击后，造成实际伤害的能力更强
 3. **现有防御几乎无效**：传统 LLM 防御机制迁移到具身领域后效果有限
 
 ## 防御建议
-
 论文提出了两个关键改进方向：
 
 - **多模态对齐**：整合实时视觉等环境线索，而不仅依赖语言语义
 - **动作级推理**：建模智能体的动作轨迹，正式验证是否违反全局安全约束
 
 ## 论文信息
-
 - **标题**：Blindfold: Jailbreaking Embodied Large Language Models via Action-level Manipulation
 - **arXiv**：2602.12345
 - **会议**：ACM SenSys 2026
