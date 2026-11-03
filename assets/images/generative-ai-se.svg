@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">Copilot 建议接受率 30%、采纳后提交率 90%，论文给出 20-40% 的生产力提升区间</text>
+
+  <!-- ===== panel a: adoption ===== -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">采纳环节占比（%）</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="420" y1="126" x2="420" y2="270"/>
+    <line x1="660" y1="126" x2="660" y2="270"/>
+  </g>
+  <!-- bars: x = 300 + 4*v ; 30% -> 420, 90% -> 660 -->
+  <text x="288" y="164" font-size="12.5" fill="#1A1B1E" text-anchor="end">建议接受率</text>
+  <rect x="300" y="150" width="120" height="20" fill="#999999"/>
+  <text x="428" y="164" font-size="12" fill="#555">30%</text>
+
+  <text x="288" y="236" font-size="12.5" fill="#1A1B1E" text-anchor="end">提交率</text>
+  <rect x="300" y="222" width="360" height="20" fill="#0072B2"/>
+  <text x="668" y="236" font-size="12" fill="#555">90%</text>
+
+  <!-- value axis -->
+  <line x1="300" y1="270" x2="780" y2="270" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="300" y1="270" x2="300" y2="274"/>
+    <line x1="420" y1="270" x2="420" y2="274"/>
+    <line x1="660" y1="270" x2="660" y2="274"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="420" y="292">30</text>
+    <text x="660" y="292">90</text>
+  </g>
+  <text x="540" y="316" font-size="14" fill="#1A1B1E" text-anchor="middle">占比（%）</text>
+  <text x="300" y="344" font-size="12" fill="#555">口径一：开发者对 Copilot 代码建议的接受比例</text>
+  <text x="300" y="364" font-size="12" fill="#555">口径二：被采纳的 AI 生成代码直接进入代码库的比例</text>
+
+  <!-- ===== panel b: productivity interval ===== -->
+  <text x="60" y="420" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="420" font-size="15" fill="#1A1B1E">生产力提升（%，论文报告区间）</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="540" y1="440" x2="540" y2="556"/>
+  </g>
+  <!-- x = 300 + 8*v ; 20 -> 460, 40 -> 620 -->
+  <text x="288" y="492" font-size="12.5" fill="#1A1B1E" text-anchor="end">生产力提升</text>
+  <rect x="460" y="478" width="160" height="20" fill="#D55E00"/>
+  <line x1="460" y1="474" x2="460" y2="502" stroke="#D55E00" stroke-width="1.5"/>
+  <line x1="620" y1="474" x2="620" y2="502" stroke="#D55E00" stroke-width="1.5"/>
+  <text x="632" y="492" font-size="12" fill="#555">20-40%</text>
+
+  <!-- value axis -->
+  <line x1="300" y1="556" x2="700" y2="556" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="460" y1="556" x2="460" y2="560"/>
+    <line x1="540" y1="556" x2="540" y2="560"/>
+    <line x1="620" y1="556" x2="620" y2="560"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="460" y="578">20</text>
+    <text x="540" y="578">30</text>
+    <text x="620" y="578">40</text>
+  </g>
+  <text x="500" y="600" font-size="14" fill="#1A1B1E" text-anchor="middle">生产力提升幅度（%）</text>
+  <text x="790" y="492" font-size="12" fill="#555">论文类比：相当于每周</text>
+  <text x="790" y="510" font-size="12" fill="#555">多出一天有效工作时间</text>
+
+  <!-- footnote -->
+  <text x="60" y="640" font-size="11" fill="#767676">数据：DOI 10.1007/s10515-024-00426-z（Accenture 与 DFKI 联合论文）· 两项占比与区间均为论文自测口径 · Software 3.0 为论文提出的愿景</text>
+</svg>
