@@ -33,4 +33,4 @@ MASS-RAG 把证据处理拆成角色专用的多个智能体阶段：**证据摘
 
 [paper1-url]: https://arxiv.org/abs/2604.18509
 [links-1]: https://aclanthology.org/2026.findings-acl/
-[traj-post]: {{ site.baseurl }}/2026-04-17-agent-alignment-new-challenge-trajectory-level-reward-modeling-benchmark/
+[traj-post]: {{ site.baseurl }}/agent-alignment-new-challenge-trajectory-level-reward-modeling-benchmark/

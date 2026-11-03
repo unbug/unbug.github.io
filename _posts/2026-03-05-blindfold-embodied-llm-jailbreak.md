@@ -45,4 +45,4 @@ Blindfold 采用**对抗代理规划**（Adversarial Proxy Planning）策略，�
 
 
 [paper1-url]: https://arxiv.org/abs/2603.01414
-[rel1]: {{ site.baseurl }}/2026-03-04-scheming-propensity-paper/
+[rel1]: {{ site.baseurl }}/scheming-propensity-paper/

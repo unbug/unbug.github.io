@@ -42,4 +42,4 @@ HLE 的价值超出一个排行榜。它把 AI 评估从"为人类设计的考�
 [paper1-url]: https://www.nature.com/articles/s41586-025-09962-4
 [links-1]: https://lastexam.ai/
 [links-2]: https://arxiv.org/abs/2501.14249
-[rel1]: {{ site.baseurl }}/2026-03-04-ai-capabilities-plateau-paper/
+[rel1]: {{ site.baseurl }}/ai-capabilities-plateau-paper/

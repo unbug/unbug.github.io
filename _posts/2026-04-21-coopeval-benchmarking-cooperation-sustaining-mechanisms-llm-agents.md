@@ -37,4 +37,4 @@ description: "CoopEval 在四类社交困境中系统比较重复博弈、声誉
 
 [paper1-url]: https://arxiv.org/abs/2604.15267
 [links-1]: https://github.com/Xiao215/CoopEval
-[meerkat-post]: {{ site.baseurl }}/2026-04-17-multi-agent-auditing-tool-meerkat-4x-security-vulnerabilities/
+[meerkat-post]: {{ site.baseurl }}/multi-agent-auditing-tool-meerkat-4x-security-vulnerabilities/

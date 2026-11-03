@@ -33,4 +33,4 @@ description: "Plan-RewardBench 是面向智能体轨迹级偏好的基准，用�
 
 
 [paper1-url]: https://arxiv.org/abs/2604.08178
-[meerkat-post]: {{ site.baseurl }}/2026-04-17-multi-agent-auditing-tool-meerkat-4x-security-vulnerabilities/
+[meerkat-post]: {{ site.baseurl }}/multi-agent-auditing-tool-meerkat-4x-security-vulnerabilities/

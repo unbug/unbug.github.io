@@ -79,15 +79,17 @@
 
   <!-- ============ panel c: evidence, qualitative ============ -->
   <text x="60" y="490" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
-  <text x="82" y="490" font-size="15" fill="#1A1B1E">实验结论（正文为定性描述，未给出具体分数，序列位置轴）</text>
+  <text x="82" y="490" font-size="15" fill="#1A1B1E">实验结果（正文为定性描述，未给出具体分数，序列位置轴）</text>
 
   <g font-size="12.5" fill="#1A1B1E">
     <circle cx="140" cy="540" r="7" fill="#0072B2"/>
-    <text x="158" y="536">语言建模和常识推理：C4、WikiText 与 HellaSwag、PIQA 上</text>
-    <text x="158" y="554">准确度和困惑度全程领跑（对比 Transformer++、Mamba-2 和 Gated DeltaNet）</text>
+    <text x="158" y="536">语言建模和常识推理：C4、WikiText 与零样本推理任务</text>
+    <text x="158" y="554">HellaSwag、PIQA 上准确度和困惑度全程领跑</text>
+    <text x="158" y="572">（对比 Transformer++、Mamba-2 和 Gated DeltaNet）</text>
     <circle cx="640" cy="540" r="7" fill="#0072B2"/>
-    <text x="658" y="536">消融：长期记忆模块深度更深，困惑度始终更低，缩放特性更好</text>
-    <text x="658" y="554">BABILong 上把所有基线都干翻了（含参数少得多的 GPT-4）；</text>
+    <text x="658" y="536">消融：记忆架构的深度太关键了，深度更深的那个，</text>
+    <text x="658" y="554">语言建模的困惑度始终更低，缩放特性更好</text>
+    <text x="658" y="572">BABILong 基准：把所有基线都干翻了（含参数少得多的 GPT-4）</text>
     <circle cx="922" cy="540" r="7" fill="#D55E00"/>
     <text x="940" y="536">超长上下文召回：能缩放到超过</text>
     <text x="940" y="554">200 万个 token 的上下文窗口大小</text>
@@ -99,9 +101,9 @@
     <line x1="940" y1="590" x2="940" y2="594"/>
   </g>
   <g font-size="12" fill="#555">
-    <text x="140" y="612">基准表现</text>
-    <text x="640" y="612">消融结论</text>
-    <text x="940" y="612">长上下文规模</text>
+    <text x="140" y="612">语言建模和常识推理</text>
+    <text x="640" y="612">深度记忆的威力</text>
+    <text x="940" y="612">超长上下文召回</text>
   </g>
 
   <!-- footnote -->

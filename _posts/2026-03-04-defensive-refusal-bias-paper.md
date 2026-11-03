@@ -39,4 +39,4 @@ ICLR 2026 论文[《Defensive Refusal Bias: How Safety Alignment Fails Cyber Def
 
 
 [paper1-url]: https://arxiv.org/abs/2603.01246
-[rel1]: {{ site.baseurl }}/2026-03-05-human-certified-module-repositories/
+[rel1]: {{ site.baseurl }}/human-certified-module-repositories/

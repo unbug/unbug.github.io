@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">综述以基础、自我进化、集体三层框架组织智能体推理，区分两种优化模式，覆盖六大应用领域与六大开放问题</text>
+
+  <!-- ============ panel a: three layers on sequence axes ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">三层框架（序列位置轴，非数值刻度）</text>
+
+  <!-- axis title -->
+  <text x="550" y="132" font-size="12" fill="#555" text-anchor="middle">智能体数量（序列轴：单智能体 → 多智能体）</text>
+
+  <!-- frame axes -->
+  <line x1="120" y1="440" x2="1100" y2="440" stroke="#1A1B1E" stroke-width="0.75"/>
+  <line x1="120" y1="146" x2="120" y2="440" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="120" y1="440" x2="120" y2="445"/>
+    <line x1="1100" y1="440" x2="1100" y2="445"/>
+    <line x1="120" y1="440" x2="125" y2="440"/>
+    <line x1="120" y1="146" x2="125" y2="146"/>
+  </g>
+  <text x="120" y="466" font-size="12.5" fill="#1A1B1E" text-anchor="middle">单智能体</text>
+  <text x="1100" y="466" font-size="12.5" fill="#1A1B1E" text-anchor="end">多智能体</text>
+  <text x="96" y="146" font-size="12.5" fill="#1A1B1E" text-anchor="middle" transform="rotate(-90 96 146)">进化程度（序列轴）</text>
+  <g font-size="12" fill="#555">
+    <text x="64" y="160" text-anchor="start" transform="rotate(-90 64 160)">轴高端：持续自我改进</text>
+    <text x="64" y="436" text-anchor="start" transform="rotate(-90 64 436)">轴低端：静态执行</text>
+  </g>
+  <!-- vertical major gridline at mid -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="610" y1="146" x2="610" y2="440"/>
+  </g>
+
+  <!-- 自我进化: single agent, evolving -> upper-left -->
+  <rect x="150" y="170" width="430" height="82" rx="4" fill="#009E73" opacity="0.10"/>
+  <rect x="150" y="170" width="430" height="4" fill="#009E73"/>
+  <text x="166" y="196" font-size="13" font-weight="bold" fill="#1A1B1E">自我进化智能体推理</text>
+  <text x="166" y="216" font-size="12" fill="#555">自我批判与验证器反馈，事实/经验/结构化记忆</text>
+  <text x="166" y="236" font-size="12" fill="#555">代表：Reflexion、Voyager、Memory-R1</text>
+
+  <!-- 基础: single agent, static -> lower-left -->
+  <rect x="150" y="342" width="430" height="82" rx="4" fill="#0072B2" opacity="0.10"/>
+  <rect x="150" y="342" width="430" height="4" fill="#0072B2"/>
+  <text x="166" y="368" font-size="13" font-weight="bold" fill="#1A1B1E">基础智能体推理</text>
+  <text x="166" y="388" font-size="12" fill="#555">稳定环境中的规划推理、工具使用优化、智能体搜索</text>
+  <text x="166" y="408" font-size="12" fill="#555">代表：ReAct、OpenHands、Toolformer、Gorilla、HuggingGPT</text>
+
+  <!-- 集体: multi agent -> right -->
+  <rect x="650" y="170" width="450" height="254" rx="4" fill="#E69F00" opacity="0.10"/>
+  <rect x="650" y="170" width="450" height="4" fill="#E69F00"/>
+  <text x="666" y="196" font-size="13" font-weight="bold" fill="#1A1B1E">集体多智能体推理</text>
+  <text x="666" y="216" font-size="12" fill="#555">角色分为领导者、工作者、批评者、记忆管理者、沟通促进者</text>
+  <text x="666" y="236" font-size="12" fill="#555">代表：MetaGPT、AutoGen、GPTSwarm</text>
+
+  <!-- ============ panel b: optimization modes ============ -->
+  <text x="60" y="512" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="512" font-size="15" fill="#1A1B1E">两种优化模式</text>
+  <g font-size="12" fill="#1A1B1E">
+    <text x="60" y="540"><tspan fill="#0072B2" font-weight="bold">上下文推理</tspan>　冻结模型参数，推理时结构化编排、基于搜索的规划、自适应工作流（如 Tree-of-Thoughts）</text>
+    <text x="60" y="564"><tspan fill="#D55E00" font-weight="bold">训练后推理</tspan>　强化学习与监督微调把成功推理模式固化进权重（如 DeepSeek-R1、Search-R1、ToolLLM）</text>
+  </g>
+
+  <!-- ============ panel c ============ -->
+  <text x="650" y="512" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="672" y="512" font-size="15" fill="#1A1B1E">覆盖范围</text>
+  <g font-size="12" fill="#555">
+    <text x="650" y="540">六大应用领域：数学与编程、科学发现、具身、医疗、</text>
+    <text x="650" y="560">自主网络探索、研究智能体</text>
+    <text x="650" y="584">六大开放问题：个性化、长时程推理、世界模型、多智能体</text>
+    <text x="650" y="604">协作、潜在空间推理、安全透明与治理</text>
+  </g>
+
+  <!-- footnote -->
+  <text x="60" y="640" font-size="11" fill="#767676">数据：arXiv:2601.12538 综述（UIUC、Meta、Amazon、Google DeepMind、UCSD、耶鲁）· 正文未报告可量化实验数值，本图无数值坐标</text>
+  <text x="60" y="658" font-size="11" fill="#767676">面板 a 两轴为综述定义的序列位置轴，框位置仅表示层次归属，非数值统计口径 · 预印本未经同行评审</text>
+</svg>

@@ -39,4 +39,4 @@ description: "蚂蚁集团 InclusionAI 的 LLaDA2.0-Uni 用 SigLIP-VQ 语义 tok
 
 [paper1-url]: https://arxiv.org/abs/2604.20796
 [links-1]: https://github.com/inclusionAI/LLaDA2.0-Uni
-[tide-post]: {{ site.baseurl }}/2026-05-03-one-minute-read-paper-tide-diffusion-llm-distillation/
+[tide-post]: {{ site.baseurl }}/one-minute-read-paper-tide-diffusion-llm-distillation/

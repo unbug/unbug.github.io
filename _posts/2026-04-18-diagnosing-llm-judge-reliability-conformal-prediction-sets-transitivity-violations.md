@@ -41,4 +41,4 @@ description: "普林斯顿大学用传递性分析与共形预测集诊断 LLM �
 
 [paper1-url]: https://arxiv.org/abs/2604.15302
 [links-1]: https://github.com/princeton-nlp/summ_eval
-[traj-post]: {{ site.baseurl }}/2026-04-17-agent-alignment-new-challenge-trajectory-level-reward-modeling-benchmark/
+[traj-post]: {{ site.baseurl }}/agent-alignment-new-challenge-trajectory-level-reward-modeling-benchmark/

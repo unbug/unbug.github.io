@@ -46,4 +46,4 @@ HCMR 不替代现有包仓库，而是补充一个高安全等级认证层，服
 
 
 [paper1-url]: https://arxiv.org/abs/2603.02512
-[rel1]: {{ site.baseurl }}/2026-03-04-defensive-refusal-bias-paper/
+[rel1]: {{ site.baseurl }}/defensive-refusal-bias-paper/

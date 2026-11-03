@@ -41,4 +41,4 @@ arXiv 论文[《No Last Mile: A Theory of the Human Data Market》][paper1-url]�
 
 
 [paper1-url]: https://arxiv.org/abs/2603.00932
-[rel1]: {{ site.baseurl }}/2026-03-04-ai-capabilities-plateau-paper/
+[rel1]: {{ site.baseurl }}/ai-capabilities-plateau-paper/

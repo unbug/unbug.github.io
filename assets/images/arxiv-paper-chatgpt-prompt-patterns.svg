@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">13 种经 ChatGPT 验证的提示模式按软件工程生命周期分为四类，覆盖需求到重构的完整链条</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">四类模式的数量分布（种）</text>
+
+  <!-- bars: x = 330 + 80*v -->
+  <text x="318" y="166" font-size="12.5" fill="#1A1B1E" text-anchor="end">需求获取</text>
+  <rect x="330" y="152" width="240" height="20" fill="#999999"/>
+  <text x="578" y="166" font-size="12" fill="#555">3 种</text>
+
+  <text x="318" y="232" font-size="12.5" fill="#1A1B1E" text-anchor="end">系统设计与模拟</text>
+  <rect x="330" y="218" width="320" height="20" fill="#D55E00"/>
+  <text x="658" y="232" font-size="12" fill="#555">4 种</text>
+
+  <text x="318" y="298" font-size="12.5" fill="#1A1B1E" text-anchor="end">代码质量</text>
+  <rect x="330" y="284" width="320" height="20" fill="#999999"/>
+  <text x="658" y="298" font-size="12" fill="#555">4 种</text>
+
+  <text x="318" y="364" font-size="12.5" fill="#1A1B1E" text-anchor="end">重构</text>
+  <rect x="330" y="350" width="160" height="20" fill="#999999"/>
+  <text x="498" y="364" font-size="12" fill="#555">2 种</text>
+
+  <!-- baseline axis (no numeric ticks: 正文未给刻度数字) -->
+  <line x1="330" y1="392" x2="650" y2="392" stroke="#1A1B1E" stroke-width="0.75"/>
+  <text x="490" y="418" font-size="14" fill="#1A1B1E" text-anchor="middle">模式数量（种，数值直接标注在条形旁）</text>
+  <text x="330" y="452" font-size="12" fill="#555">朱色为数量最多的类别（系统设计与模拟），灰色为其余类别</text>
+  <text x="330" y="474" font-size="12" fill="#555">四类合计 13 种，全部经 ChatGPT 实际对话验证</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="760" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="782" y="104" font-size="15" fill="#1A1B1E">各类模式清单（正文所述）</text>
+  <g font-size="12" fill="#555">
+    <text x="760" y="140" fill="#1A1B1E" font-weight="bold">需求获取</text>
+    <text x="760" y="162">需求模拟器 · 规格歧义消除 · 变更请求模拟</text>
+    <text x="760" y="200" fill="#1A1B1E" font-weight="bold">系统设计与模拟</text>
+    <text x="760" y="222">API 生成器 · API 模拟器 · 少样本示例生成器</text>
+    <text x="760" y="244">领域特定语言创建 · 架构可能性探索</text>
+    <text x="760" y="282" fill="#1A1B1E" font-weight="bold">代码质量</text>
+    <text x="760" y="304">代码聚类 · 中间抽象 · 原则性代码 · 隐藏假设识别</text>
+    <text x="760" y="342" fill="#1A1B1E" font-weight="bold">重构</text>
+    <text x="760" y="364">伪代码重构 · 数据驱动重构</text>
+  </g>
+
+  <!-- ============ panel c ============ -->
+  <text x="60" y="540" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="82" y="540" font-size="15" fill="#1A1B1E">好提示的通用结构（四个元素，按论文归纳顺序）</text>
+  <g>
+    <circle cx="160" cy="588" r="16" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="160" y="593" font-size="12.5" fill="#0072B2" text-anchor="middle">一</text>
+    <text x="160" y="622" font-size="12" fill="#1A1B1E" text-anchor="middle">会话范围声明</text>
+    <line x1="176" y1="588" x2="344" y2="588" stroke="#999999" stroke-width="1.5"/>
+
+    <circle cx="360" cy="588" r="16" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="360" y="593" font-size="12.5" fill="#0072B2" text-anchor="middle">二</text>
+    <text x="360" y="622" font-size="12" fill="#1A1B1E" text-anchor="middle">任务描述</text>
+    <line x1="376" y1="588" x2="544" y2="588" stroke="#999999" stroke-width="1.5"/>
+
+    <circle cx="560" cy="588" r="16" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="560" y="593" font-size="12.5" fill="#0072B2" text-anchor="middle">三</text>
+    <text x="560" y="622" font-size="12" fill="#1A1B1E" text-anchor="middle">输出格式要求</text>
+    <line x1="576" y1="588" x2="744" y2="588" stroke="#999999" stroke-width="1.5"/>
+
+    <circle cx="760" cy="588" r="16" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="760" y="593" font-size="12.5" fill="#0072B2" text-anchor="middle">四</text>
+    <text x="760" y="622" font-size="12" fill="#1A1B1E" text-anchor="middle">约束条件</text>
+  </g>
+  <text x="820" y="593" font-size="12" fill="#555">空心序号为结构元素，位置轴按论文归纳顺序排列</text>
+
+  <!-- footer -->
+  <text x="60" y="656" font-size="11" fill="#767676">数据：arXiv:2303.07839（范德堡大学，13 种模式分 4 类，论文自述口径）· 面板 a 无数值刻度、数值直接标注 · 正文未报告误差区间，未画误差棒 · 预印本未经同行评审</text>
+</svg>

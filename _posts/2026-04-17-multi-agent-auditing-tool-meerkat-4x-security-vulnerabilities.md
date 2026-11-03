@@ -33,4 +33,4 @@ Meerkat 不依赖种子场景、固定工作流或穷举枚举，审计者只需
 
 
 [paper1-url]: https://arxiv.org/abs/2604.11806
-[reward-post]: {{ site.baseurl }}/2026-04-17-agent-alignment-new-challenge-trajectory-level-reward-modeling-benchmark/
+[reward-post]: {{ site.baseurl }}/agent-alignment-new-challenge-trajectory-level-reward-modeling-benchmark/

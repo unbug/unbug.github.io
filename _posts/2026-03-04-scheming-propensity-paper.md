@@ -36,4 +36,4 @@ LASR 实验室与 Google DeepMind 等机构的论文[《Evaluating and Understan
 
 
 [paper1-url]: https://arxiv.org/abs/2603.01608
-[rel1]: {{ site.baseurl }}/2026-04-15-quantifying-self-preservation-bias/
+[rel1]: {{ site.baseurl }}/quantifying-self-preservation-bias/

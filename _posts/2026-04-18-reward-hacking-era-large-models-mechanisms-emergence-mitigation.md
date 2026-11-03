@@ -35,4 +35,4 @@ description: "复旦 NLP 团队把大模型时代的奖励黑客归结为目标�
 [paper1-url]: https://arxiv.org/abs/2604.13602
 [links-1]: https://blog.pebblous.ai/report/ai-agent-benchmark-trust/en/
 [links-2]: https://www.theneuron.ai/explainer-articles/around-the-horn-digest-april-13-2026/
-[meerkat-post]: {{ site.baseurl }}/2026-04-17-multi-agent-auditing-tool-meerkat-4x-security-vulnerabilities/
+[meerkat-post]: {{ site.baseurl }}/multi-agent-auditing-tool-meerkat-4x-security-vulnerabilities/

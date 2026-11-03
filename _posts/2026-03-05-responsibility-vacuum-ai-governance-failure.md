@@ -35,4 +35,4 @@ arXiv 论文[《The Responsibility Vacuum: Organizational Failure in Scaled Agen
 
 
 [paper1-url]: https://arxiv.org/abs/2601.15059
-[rel1]: {{ site.baseurl }}/2026-03-05-reproducibility-the-new-frontier-in-ai-governance/
+[rel1]: {{ site.baseurl }}/reproducibility-the-new-frontier-in-ai-governance/

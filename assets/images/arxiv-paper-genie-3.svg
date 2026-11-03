@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">Genie 3 以 720p、24 帧/秒实现通用环境的实时交互，一致性时长从前代的约 10 秒延长到数分钟</text>
+
+  <!-- ============ panel a: consistency duration, sequence position axis ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">世界状态一致性时长（序列位置轴，非数值刻度）</text>
+
+  <!-- track -->
+  <line x1="180" y1="290" x2="1020" y2="290" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="180" y1="290" x2="180" y2="295"/>
+    <line x1="460" y1="290" x2="460" y2="295"/>
+    <line x1="740" y1="290" x2="740" y2="295"/>
+    <line x1="1020" y1="290" x2="1020" y2="295"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="180" y="316">秒级</text>
+    <text x="460" y="316">分钟级</text>
+    <text x="740" y="316">十分钟级</text>
+    <text x="1020" y="316">小时级</text>
+  </g>
+  <text x="600" y="346" font-size="14" fill="#1A1B1E" text-anchor="middle">一致性持续时长（正文仅给出约 10 秒与数分钟两个量级，其余为位置标注）</text>
+
+  <!-- Genie 2 ~10 s, hollow = prior generation -->
+  <circle cx="230" cy="290" r="8" fill="none" stroke="#999999" stroke-width="2"/>
+  <text x="230" y="240" font-size="12.5" fill="#1A1B1E" text-anchor="middle">Genie 2</text>
+  <text x="230" y="258" font-size="12" fill="#555" text-anchor="middle">约 10 秒，非实时</text>
+
+  <!-- Genie 3 minutes, solid = protagonist -->
+  <circle cx="450" cy="290" r="9" fill="#D55E00"/>
+  <text x="450" y="192" font-size="12.5" fill="#1A1B1E" text-anchor="middle">Genie 3</text>
+  <text x="450" y="210" font-size="12" fill="#555" text-anchor="middle">数分钟，实时交互</text>
+  <line x1="450" y1="220" x2="450" y2="278" stroke="#999999" stroke-width="0.75"/>
+
+  <text x="180" y="384" font-size="12" fill="#555">GameNGen：实时，但仅针对 Doom 这类特定环境；Genie 3 为通用环境的完全实时交互。空心 = 前代，实心朱色 = Genie 3。</text>
+
+  <!-- ============ panel b: published specs ============ -->
+  <text x="60" y="442" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="442" font-size="15" fill="#1A1B1E">发布参数（官方自述口径）</text>
+  <g font-size="13" fill="#1A1B1E">
+    <text x="120" y="476">发布日期</text>
+    <text x="230" y="476">2025 年 8 月 5 日</text>
+    <text x="470" y="476">分辨率</text>
+    <text x="560" y="476">720p</text>
+    <text x="700" y="476">帧率</text>
+    <text x="790" y="476">24 帧/秒</text>
+  </g>
+  <g font-size="12" fill="#555">
+    <text x="120" y="506">自回归逐帧生成：每帧基于历史帧与用户最新动作预测下一帧，无需 NeRF 或高斯溅射等显式 3D 表示</text>
+    <text x="120" y="526">一致性为涌现属性：墙上画画离开再回来仍在；当前为研究预览状态，不公开发布</text>
+  </g>
+
+  <!-- ============ panel c: limitations ============ -->
+  <text x="60" y="572" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="82" y="572" font-size="15" fill="#1A1B1E">官方自述局限</text>
+  <g font-size="12" fill="#555">
+    <text x="120" y="600">连续交互仅数分钟，而训练需要数小时</text>
+    <text x="560" y="600">代理可执行动作范围受限</text>
+    <text x="120" y="620">物理模拟不完美（如雪与滑雪者互动）</text>
+    <text x="560" y="620">难以建模多智能体复杂互动</text>
+  </g>
+
+  <!-- footnote -->
+  <text x="60" y="652" font-size="11" fill="#767676">数据：DeepMind 官方博客（arXiv 无对应论文，官方自述口径）· 正文未报告一致性时长实测数值，面板 a 为序列位置轴，非数值刻度 · 预印本性质的技术报告未经同行评审</text>
+</svg>
