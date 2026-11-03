@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="600" fill="#FFFFFF"/>
+  <text x="60" y="58" fill="#1A1B1E" font-size="26" font-weight="bold">技能-策略共进化：分数在涨，漂移敏感度也在涨</text>
+  <text x="60" y="88" fill="#767676" font-size="15">数据：arXiv 2610.20845（四方法 × 五基准，六设置）</text>
+
+  <!-- Panel A: dumbbell start->end success -->
+  <text x="60" y="140" fill="#555555" font-size="17" font-weight="bold">训练初期 → 训练末期成功率（不减干扰）</text>
+  <line x1="200" y1="170" x2="200" y2="330" stroke="#D9D9D9" stroke-width="1"/>
+  <line x1="560" y1="170" x2="560" y2="330" stroke="#D9D9D9" stroke-width="1"/>
+  <text x="150" y="352" fill="#999999" font-size="13">0%</text>
+  <text x="545" y="352" fill="#999999" font-size="13">成功率</text>
+
+  <text x="60" y="199" fill="#1A1B1E" font-size="14">ALFWorld</text>
+  <line x1="218" y1="194" x2="519" y2="194" stroke="#0072B2" stroke-width="1.5"/>
+  <circle cx="218" cy="194" r="5" fill="#999999"/>
+  <circle cx="519" cy="194" r="5" fill="#0072B2"/>
+  <text x="212" y="180" fill="#555555" font-size="13" text-anchor="end">5.2%</text>
+  <text x="519" y="180" fill="#0072B2" font-size="13" text-anchor="middle">88.8%</text>
+
+  <text x="60" y="254" fill="#1A1B1E" font-size="14">ARISE-AMC23</text>
+  <line x1="256" y1="249" x2="516" y2="249" stroke="#0072B2" stroke-width="1.5"/>
+  <circle cx="256" cy="249" r="5" fill="#999999"/>
+  <circle cx="516" cy="249" r="5" fill="#0072B2"/>
+  <text x="250" y="235" fill="#555555" font-size="13" text-anchor="end">15.5%</text>
+  <text x="516" y="235" fill="#0072B2" font-size="13" text-anchor="middle">87.4%</text>
+
+  <text x="60" y="309" fill="#1A1B1E" font-size="14">Mind2Web</text>
+  <line x1="259" y1="304" x2="291" y2="304" stroke="#0072B2" stroke-width="1.5"/>
+  <circle cx="259" cy="304" r="5" fill="#999999"/>
+  <circle cx="291" cy="304" r="5" fill="#0072B2"/>
+  <text x="253" y="290" fill="#555555" font-size="13" text-anchor="end">16.4%</text>
+  <text x="297" y="290" fill="#0072B2" font-size="13">25.2%</text>
+
+  <!-- Panel B: gain erasure -->
+  <line x1="640" y1="120" x2="640" y2="560" stroke="#D9D9D9" stroke-width="1"/>
+  <text x="690" y="140" fill="#555555" font-size="17" font-weight="bold">部署后技能库漂移的代价</text>
+
+  <rect x="690" y="170" width="440" height="52" fill="#D9D9D9"/>
+  <rect x="690" y="170" width="229" height="52" fill="#D55E00"/>
+  <text x="700" y="202" fill="#FFFFFF" font-size="16" font-weight="bold">52-93%</text>
+  <text x="700" y="248" fill="#555555" font-size="14">最坏情况抹掉技能库相对无技能基线增益的比例</text>
+
+  <text x="690" y="300" fill="#1A1B1E" font-size="15">成功率落差：最坏比交付峰值低 5-13 个百分点</text>
+
+  <line x1="690" y1="330" x2="690" y2="445" stroke="#999999" stroke-width="0.5"/>
+  <line x1="1130" y1="330" x2="1130" y2="445" stroke="#999999" stroke-width="0.5"/>
+  <text x="690" y="462" fill="#999999" font-size="12">0%</text>
+  <text x="1092" y="462" fill="#999999" font-size="12">技能库增益</text>
+  <rect x="690" y="345" width="221" height="26" fill="#D9D9D9"/>
+  <rect x="690" y="345" width="111" height="26" fill="#0072B2"/>
+  <text x="920" y="363" fill="#555555" font-size="13">ReSkill 峰值 50.3%</text>
+  <line x1="690" y1="387" x2="690" y2="413" stroke="#D9D9D9" stroke-width="1"/>
+  <rect x="690" y="389" width="221" height="22" fill="#D9D9D9"/>
+  <rect x="690" y="389" width="88" height="22" fill="#D55E00"/>
+  <text x="920" y="405" fill="#555555" font-size="13">保持原义改写后掉 10.9 分</text>
+
+  <text x="690" y="520" fill="#767676" font-size="14">十八个扰动轴与设置组合中，十二个漂移敏感度显著上升</text>
+</svg>
