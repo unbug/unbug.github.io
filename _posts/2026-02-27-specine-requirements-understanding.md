@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《让大语言模型读懂你的需求》"
 author: unbug
 categories: [AI, Engineering]
-image: assets/images/arxiv-paper-specine-llm-code-generation.png
+image: assets/images/specine-requirements-understanding.svg
 tags: [Code Generation, Requirements Engineering, LLM]
 description: "ICSE 2026 论文 Specine 在生成代码之前先做需求对齐：识别模型容易误解的模糊点、把需求写成明确规范、再用规则逐项核对，四个模型五个基准上通过率显著提升。"
 ---

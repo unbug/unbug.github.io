@@ -10,10 +10,7 @@
 
   <!-- gridlines vertical: x = 250 + 5*v -->
   <g stroke="#D9D9D9" stroke-width="0.5">
-    <line x1="375" y1="126" x2="375" y2="306"/>
     <line x1="500" y1="126" x2="500" y2="306"/>
-    <line x1="625" y1="126" x2="625" y2="306"/>
-    <line x1="720" y1="126" x2="720" y2="306"/>
   </g>
 
   <!-- Pass@1: 29.60-93.55 -> x 398 .. 717.75 -->
@@ -64,9 +61,7 @@
   <text x="822" y="104" font-size="15" fill="#1A1B1E">贡献最大的三条对齐规则（消融，%）</text>
 
   <g stroke="#D9D9D9" stroke-width="0.5">
-    <line x1="900" y1="126" x2="900" y2="270"/>
-    <line x1="1000" y1="126" x2="1000" y2="270"/>
-    <line x1="1100" y1="126" x2="1100" y2="270"/>
+    <line x1="950" y1="126" x2="950" y2="270"/>
   </g>
   <!-- bars x = 850 + 10*v -->
   <text x="838" y="152" font-size="12.5" fill="#1A1B1E" text-anchor="end">示例说明</text>
@@ -100,9 +95,7 @@
   <text x="82" y="452" font-size="15" fill="#1A1B1E">Gemini-1.5-Flash + Specine 的最佳 Pass@1（%，APPS 数据集）</text>
 
   <g stroke="#D9D9D9" stroke-width="0.5">
-    <line x1="150" y1="470" x2="150" y2="570"/>
-    <line x1="300" y1="470" x2="300" y2="570"/>
-    <line x1="450" y1="470" x2="450" y2="570"/>
+    <line x1="150" y1="465.5" x2="450" y2="465.5"/>
   </g>
   <!-- bar: y = 570 - 1.6*v ; 65.33 -> 465.47 -->
   <rect x="220" y="465.5" width="60" height="104.5" fill="#D55E00"/>

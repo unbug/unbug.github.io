@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《Agent World Model 千环境训练》"
 author: unbug
 categories: [AI, Agent]
-image: assets/images/agent-world-model.svg
+image: assets/images/agent-world-model-1000-environments.svg
 tags: [ReinforcementLearning, AIAgents, SyntheticData]
 description: "北卡罗来纳大学教堂山分校与 Snowflake 的论文提出 Agent World Model 合成环境管道，生成一千个代码驱动环境、三万五千余个工具与一万个任务，仅在合成环境训练就能获得强分布外泛化。"
 ---

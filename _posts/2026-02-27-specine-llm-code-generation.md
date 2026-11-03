@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《让大模型读懂需求规格》"
 author: unbug
 categories: [AI, Engineering]
-image: assets/images/arxiv-paper-specine-llm-code-generation.png
+image: assets/images/specine-llm-code-generation.svg
 tags: [CodeGeneration, ICSE2026]
 description: "ICSE 2026 论文提出规格对齐技术 Specine，先识别大语言模型对需求规格的错位理解，再按十条规则逐项修正，相比最优基线通过率的平均提升接近三成到九成，时间与词元开销反而更低。"
 ---
