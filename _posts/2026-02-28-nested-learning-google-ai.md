@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《嵌套学习破解AI遗忘难题》"
 author: unbug
 categories: [AI, Machine Learning]
-image: assets/images/nested-learning-google-ai.svg
+image: assets/images/arxiv-paper-nested-learning.svg
 tags: [Nested Learning, Google Research, NeurIPS 2025]
 description: "Google Research 的 NeurIPS 2025 论文把神经网络重解为嵌套优化问题，概念验证架构 HOPE 在推理和长上下文任务上优于传统基线。"
 ---

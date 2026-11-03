@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《LLM 智能体推理全景路线图》"
 author: unbug
 categories: [AI, Agent]
-image: assets/images/agentic-reasoning-survey.svg
+image: assets/images/arxiv-paper-agentic-reasoning-survey.svg
 tags: [Agentic Reasoning, LLM Agent, Reinforcement Learning, Multi-Agent, Survey]
 description: "UIUC、Meta、Amazon、Google DeepMind 等机构联合发表智能体推理综述，提出基础、自我进化、集体三层框架，梳理两种优化模式、六大应用与评测基准，并指出个性化、世界模型、治理等六个开放问题。"
 ---

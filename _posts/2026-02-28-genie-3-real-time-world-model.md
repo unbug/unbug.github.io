@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《首个实时交互式世界模型》"
 author: unbug
 categories: [AI]
-image: assets/images/genie-3-real-time-world-model.svg
+image: assets/images/arxiv-paper-genie-3.svg
 tags: [World Model, Genie 3, DeepMind]
 description: "谷歌旗下一致性基准测试显示，DeepMind 发布的 Genie 3 是首个实时交互式世界模型：一段文字即可生成可用键盘导航的动态环境，离开再回头场景依旧一致，为具身智能提供了低成本训练场。"
 ---
