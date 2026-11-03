@@ -30,23 +30,23 @@
   <text x="440" y="421" font-size="12.5" fill="#1A1B1E" text-anchor="middle">(Pixel)</text>
   <text x="440" y="443" font-size="12" fill="#555" text-anchor="middle">步数 1</text>
 
-  <rect x="644" y="260" width="112" height="120" fill="#999999"/>
-  <polygon points="644,260 756,260 756,248 706,236 644,248" fill="#999999"/>
+  <rect x="644" y="260" width="112" height="70" fill="#999999"/>
+  <polygon points="644,248 756,248 756,242 700,236 644,242" fill="#999999"/>
   <text x="700" y="226" font-size="12" fill="#555" text-anchor="middle">约 2.0-3.0（区间）</text>
   <text x="700" y="403" font-size="12.5" fill="#1A1B1E" text-anchor="middle">传统扩散模型</text>
   <text x="700" y="443" font-size="12" fill="#555" text-anchor="middle">步数 50-100</text>
 
-  <rect x="904" y="260" width="112" height="120" fill="#999999"/>
-  <polygon points="904,260 1016,260 1016,248 966,236 904,248" fill="#999999"/>
+  <rect x="904" y="260" width="112" height="70" fill="#999999"/>
+  <polygon points="904,248 1016,248 1016,242 960,236 904,242" fill="#999999"/>
   <text x="960" y="226" font-size="12" fill="#555" text-anchor="middle">约 2.0（近似值）</text>
   <text x="960" y="403" font-size="12.5" fill="#1A1B1E" text-anchor="middle">SDXL Turbo</text>
   <text x="960" y="443" font-size="12" fill="#555" text-anchor="middle">步数 4</text>
 
-  <text x="620" y="476" font-size="12" fill="#555" text-anchor="middle">柱顶虚线与三角帽表示正文给出的近似值 / 区间上沿；按正文表格四行方法逐列排列</text>
+  <text x="620" y="476" font-size="12" fill="#555" text-anchor="middle">柱顶三角帽表示正文给出的近似值与区间上沿；按正文表格四行方法逐列排列</text>
 
   <!-- ============ panel b ============ -->
   <text x="60" y="536" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="82" y="536" font-size="15" fill="#1A1B1E">推理步数对比（正文口径：一次函数评估即出图）</text>
+  <text x="82" y="536" font-size="15" fill="#1A1B1E">推理步数对比（步）</text>
 
   <g stroke="#D9D9D9" stroke-width="0.5">
     <line x1="360" y1="558" x2="1140" y2="558"/>
@@ -54,30 +54,24 @@
   </g>
   <!-- bars: x = 360 + 15*v -->
   <text x="348" y="562" font-size="12.5" fill="#1A1B1E" text-anchor="end">Drifting Models</text>
-  <rect x="360" y="549" width="15" height="16" fill="#D55E00"/>
-  <polygon points="360,549 368,541 375,549" fill="#D55E00"/>
-  <text x="385" y="562" font-size="12" fill="#555">1 步（三角帽表示少于 1 个刻度单位）</text>
+  <rect x="360" y="549" width="7.8" height="16" fill="#D55E00"/>
+  <polygon points="360,549 364,541 367.8,549" fill="#D55E00"/>
+  <text x="378" y="562" font-size="12" fill="#555">1 步（三角帽表示不足一个刻度间隔）</text>
 
   <text x="348" y="604" font-size="12.5" fill="#1A1B1E" text-anchor="end">传统扩散模型</text>
-  <rect x="360" y="591" width="750" height="16" fill="#999999"/>
-  <text x="1116" y="584" font-size="12" fill="#555" text-anchor="end">50-100 步</text>
+  <rect x="960" y="591" width="180" height="16" fill="#999999"/>
+  <text x="1140" y="584" font-size="12" fill="#555" text-anchor="end">50-100 步</text>
 
   <line x1="360" y1="616" x2="1140" y2="616" stroke="#1A1B1E" stroke-width="0.75"/>
   <g stroke="#1A1B1E" stroke-width="0.75">
     <line x1="360" y1="616" x2="360" y2="620"/>
-    <line x1="510" y1="616" x2="510" y2="620"/>
     <line x1="660" y1="616" x2="660" y2="620"/>
-    <line x1="810" y1="616" x2="810" y2="620"/>
     <line x1="960" y1="616" x2="960" y2="620"/>
-    <line x1="1110" y1="616" x2="1110" y2="620"/>
   </g>
   <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
     <text x="360" y="636">0</text>
-    <text x="510" y="636">10</text>
-    <text x="660" y="636">20</text>
-    <text x="810" y="636">30</text>
-    <text x="960" y="636">40</text>
-    <text x="1110" y="636">50</text>
+    <text x="660" y="636">50</text>
+    <text x="960" y="636">100</text>
   </g>
 
   <!-- footnote -->

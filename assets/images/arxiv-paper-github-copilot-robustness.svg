@@ -8,12 +8,7 @@
   <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
   <text x="82" y="104" font-size="15" fill="#1A1B1E">措辞扰动的影响与整体通过率（实例占比 %，论文自测口径）</text>
 
-  <!-- bars: x = 330 + 11*v, axis 0-75 with body-sourced tick labels 0,25,50,75 -->
-  <g stroke="#D9D9D9" stroke-width="0.5">
-    <line x1="605" y1="130" x2="605" y2="360"/>
-    <line x1="880" y1="130" x2="880" y2="360"/>
-  </g>
-  <line x1="1155" y1="130" x2="1155" y2="360" stroke="#D9D9D9" stroke-width="0.5"/>
+  <!-- bars: x = 330 + 11*v (scale 0-100), no invented tick numbers -->
 
   <text x="318" y="158" font-size="12.5" fill="#1A1B1E" text-anchor="end">输出完全不同（约）</text>
   <rect x="330" y="144" width="506" height="20" fill="#D55E00"/>
@@ -31,21 +26,13 @@
   <rect x="330" y="330" width="803" height="20" fill="#999999"/>
   <text x="1085" y="316" font-size="12" fill="#555">约 73%</text>
 
-  <!-- value axis -->
-  <line x1="330" y1="360" x2="1155" y2="360" stroke="#1A1B1E" stroke-width="0.75"/>
+  <!-- baseline axis (tick numbers not in post; percentages labeled at bars) -->
+  <line x1="330" y1="360" x2="1130" y2="360" stroke="#1A1B1E" stroke-width="0.75"/>
   <g stroke="#1A1B1E" stroke-width="0.75">
     <line x1="330" y1="360" x2="330" y2="364"/>
-    <line x1="605" y1="360" x2="605" y2="364"/>
-    <line x1="880" y1="360" x2="880" y2="364"/>
-    <line x1="1155" y1="360" x2="1155" y2="364"/>
+    <line x1="1130" y1="360" x2="1130" y2="364"/>
   </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
-    <text x="330" y="380">0</text>
-    <text x="605" y="380">25</text>
-    <text x="880" y="380">50</text>
-    <text x="1155" y="380">75</text>
-  </g>
-  <text x="742" y="406" font-size="14" fill="#1A1B1E" text-anchor="middle">实例占比（%）</text>
+  <text x="730" y="386" font-size="14" fill="#1A1B1E" text-anchor="middle">实例占比（%，数值直接标注在条形旁，轴从 0 起）</text>
 
   <!-- ============ panel b ============ -->
   <text x="60" y="456" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
@@ -71,5 +58,5 @@
   <text x="60" y="614" font-size="12" fill="#555">数据集：从 1,401 个开源项目收集 892 个 Java 方法；样本方法平均长度约 150 tokens，平均圈复杂度 5.3、中位数 3.0；TP 复述有效率 77%、正确率约 87%</text>
 
   <!-- footer -->
-  <text x="60" y="656" font-size="11" fill="#767676">数据：arXiv:2302.00438（USI SEART 与莫利塞大学，892 个 Java 方法，以测试通过为正确性代理，论文自测口径）· 正文未报告误差区间，未画误差棒 · 预印本未经同行评审</text>
+  <text x="60" y="656" font-size="11" fill="#767676">数据：arXiv:2302.00438（USI SEART 与莫利塞大学，892 个 Java 方法，以测试通过为正确性代理，论文自测口径）· 轴刻度数字正文未给出，百分比全部直接标注在元素旁 · 正文未报告误差区间，未画误差棒 · 预印本未经同行评审</text>
 </svg>

@@ -206,10 +206,10 @@ SEVRA 代表了一个重要的范式转变：**从"固定推理策略"到"自适
 [links-math500]: https://github.com/hendrycks/math
 [links-gsm8k]: https://github.com/openai/grade-school-math
 [links-csqa]: https://commonsenseqa.org/
-[links-token-econ]: {{ site.baseurl }}/2026-06-18-paradigm-radar-token-consumption-economics
+[links-token-econ]: {{ site.baseurl }}/paradigm-radar-token-consumption-economics
 
 [paper-url]: https://arxiv.org/abs/2606.19808v1
 [math500-url]: https://github.com/hendrycks/math
 [gsm8k-url]: https://github.com/openai/grade-school-math
 [csqa-url]: https://commonsenseqa.org/
-[token-econ-url]: {{ site.baseurl }}/2026-06-18-paradigm-radar-token-consumption-economics
+[token-econ-url]: {{ site.baseurl }}/paradigm-radar-token-consumption-economics

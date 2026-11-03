@@ -45,4 +45,4 @@ STAR 框架的机制是**强制在推理开始前把目标写成显式文本**�
 
 
 [paper1-url]: https://arxiv.org/abs/2602.21814
-[rel1]: {{ site.baseurl }}/2026-02-26-ChatGPT-Prompt-Patterns-for-Improving-Code-Quality/
+[rel1]: {{ site.baseurl }}/ChatGPT-Prompt-Patterns-for-Improving-Code-Quality/

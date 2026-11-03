@@ -39,4 +39,4 @@ SEVRA 的核心设计是将推理管线拆分为两个独立组件：**冻结求
 
 
 [paper1-url]: https://arxiv.org/abs/2606.19808v1
-[links-1]: {{ site.baseurl }}/2026-06-18-paradigm-radar-token-consumption-economics
+[links-1]: {{ site.baseurl }}/paradigm-radar-token-consumption-economics

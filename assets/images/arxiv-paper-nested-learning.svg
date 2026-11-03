@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">将单一模型重解为不同更新频率的嵌套优化问题后，概念验证架构 HOPE 在语言建模、推理与长上下文任务上均优于传统基线</text>
+
+  <!-- ============ panel a: nested loops, ordinal frequency axis ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">嵌套学习循环：层次越高、更新越慢（序列位置轴）</text>
+
+  <!-- ordinal position axis -->
+  <line x1="120" y1="380" x2="1080" y2="380" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="120" y1="380" x2="120" y2="385"/>
+    <line x1="440" y1="380" x2="440" y2="385"/>
+    <line x1="760" y1="380" x2="760" y2="385"/>
+    <line x1="1080" y1="380" x2="1080" y2="385"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="120" y="404">位置 1</text>
+    <text x="440" y="404">位置 2</text>
+    <text x="760" y="404">位置 3</text>
+    <text x="1080" y="404">位置 4</text>
+  </g>
+  <text x="600" y="430" font-size="14" fill="#1A1B1E" text-anchor="middle">子问题更新次序（序列位置轴，正文未给出频率数值）</text>
+
+  <!-- high-frequency layer marker -->
+  <circle cx="120" cy="330" r="8" fill="#D55E00"/>
+  <text x="138" y="322" font-size="12.5" fill="#1A1B1E" text-anchor="start">底层：更新快，处理即时模式，学得快、忘得快</text>
+  <!-- mid-frequency layer marker -->
+  <circle cx="440" cy="270" r="8" fill="#0072B2"/>
+  <text x="458" y="262" font-size="12.5" fill="#1A1B1E" text-anchor="start">中层：中间时间尺度的适应</text>
+  <!-- low-frequency layer marker -->
+  <circle cx="760" cy="210" r="8" fill="#009E73"/>
+  <text x="778" y="202" font-size="12.5" fill="#1A1B1E" text-anchor="start">高层：更新慢，指导长期适应，学得慢、记得牢</text>
+
+  <g stroke="#999999" stroke-width="1.5" stroke-dasharray="4 3">
+    <line x1="120" y1="322" x2="440" y2="262"/>
+    <line x1="440" y1="262" x2="760" y2="202"/>
+  </g>
+  <text x="120" y="170" font-size="12" fill="#555">嵌套学习循环自底向上频率递减，构成记忆光谱；每个子问题自带上下文流</text>
+
+  <!-- ============ panel b: unified view ============ -->
+  <text x="60" y="476" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="476" font-size="15" fill="#1A1B1E">统一视角：架构与优化算法是同一系统的两个方面（定性关系图）</text>
+
+  <rect x="90" y="500" width="200" height="46" fill="none" stroke="#1A1B1E" stroke-width="1.5"/>
+  <text x="190" y="528" font-size="12.5" fill="#1A1B1E" text-anchor="middle">模型架构</text>
+  <rect x="410" y="500" width="200" height="46" fill="none" stroke="#1A1B1E" stroke-width="1.5"/>
+  <text x="510" y="528" font-size="12.5" fill="#1A1B1E" text-anchor="middle">优化算法</text>
+  <g stroke="#999999" stroke-width="1.5">
+    <line x1="290" y1="515" x2="400" y2="515"/>
+    <line x1="410" y1="531" x2="300" y2="531"/>
+  </g>
+  <polygon points="400,510 410,515 400,520" fill="#999999"/>
+  <polygon points="300,526 290,531 300,536" fill="#999999"/>
+  <text x="350" y="508" font-size="12" fill="#555" text-anchor="middle">共同进化</text>
+
+  <!-- ============ panel c: HOPE reported direction ============ -->
+  <text x="680" y="476" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="702" y="476" font-size="15" fill="#1A1B1E">HOPE 报告结果（正文仅给出方向性结论）</text>
+  <g font-size="12" fill="#555">
+    <text x="680" y="506">语言建模：困惑度更低</text>
+    <text x="680" y="528">推理：准确率更高</text>
+    <text x="680" y="550">长上下文：表现更好；大海捞针（needle-in-a-haystack）回忆任务上</text>
+    <text x="680" y="570">传统模型经常失败，HOPE 表现出色</text>
+  </g>
+  <circle cx="686" cy="594" r="5" fill="#D55E00"/>
+  <text x="700" y="598" font-size="12" fill="#555">正文未披露具体数值，故不绘制数值坐标与误差棒</text>
+
+  <!-- footnote -->
+  <text x="60" y="640" font-size="11" fill="#767676">数据：arXiv:2512.24695，NeurIPS 2025（Google Research）· 概念框架示意：论文自测优于传统基线，正文未披露数值与频率参数</text>
+  <text x="60" y="658" font-size="11" fill="#767676">面板 a 横轴为子问题更新次序的序列位置轴，非数值刻度；标记点位置仅表示频率沿底层到高层递减 · 预印本未经同行评审</text>
+</svg>
