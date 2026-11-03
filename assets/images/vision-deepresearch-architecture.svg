@@ -85,5 +85,5 @@
   <text x="980" y="462" font-size="12" fill="#555">训练 + 强化学习训练</text>
 
   <!-- footnote -->
-  <text x="60" y="640" font-size="11" fill="#767676">数据：arXiv:2601.22060 与 arXiv:2602.02185（VDR-Bench）· 六个基准为 VDR、FVQA、MMSearch+、MMSearch、LiveVQA、BC-VL，表中"平均"列 · 论文自测口径，未报告误差区间，未画误差棒 · b 面板为序列位置轴</text>
+  <text x="60" y="640" font-size="11" fill="#767676">数据：arXiv:2601.22060 与 arXiv:2602.02185（VDR-Bench）· 六个基准为 VDR、FVQA、MMSearch+、MMSearch、LiveVQA、BC-VL，取表中"平均"列 · 论文自测口径，未报告误差区间，未画误差棒 · b 面板为序列位置轴</text>
 </svg>

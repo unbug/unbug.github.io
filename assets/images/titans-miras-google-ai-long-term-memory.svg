@@ -105,5 +105,5 @@
   </g>
 
   <!-- footnote -->
-  <text x="60" y="648" font-size="11" fill="#767676">数据：arXiv:2501.00663（Titans）与 arXiv:2504.13173（MIRAS），Google Research · 正文未报告具体分数，a 面板为流程示意、b/c 面板为序列位置轴 · 论文自测口径</text>
+  <text x="60" y="648" font-size="11" fill="#767676">数据：Google Research（Titans 论文 arxiv.org/abs/2501.00663，MIRAS 论文 arxiv.org/pdf/2504.13173）· 正文未报告具体分数，a 面板为流程示意、b/c 面板为序列位置轴 · 论文自测口径</text>
 </svg>
