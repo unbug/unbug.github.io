@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, Engineering]
 image: assets/images/grounding-generative-ai-se.svg
 tags: [Software Engineering, Code Generation, LLM]
-description: "SANER 2026 愿景论文评估发现生成式 AI 仍缺软件工程知识，会写代码不等于会做软件，GPT-4o 在设计模式分类上准确率仅 38.81%，作者提出 SENAI 框架，主张把软件工程知识原生融入模型。"
+description: "SANER 2026 愿景论文评估发现生成式 AI 仍缺软件工程知识：GPT-4o 设计模式分类准确率仅 38.81%，GPT-4 类关系建模 F1 值仅 0.34，论文提出 SENAI 框架把软件工程知识原生融入模型训练与评估体系。"
 ---
 
 SANER 2026 愿景论文《Grounding Generative AI in Software Engineering》[（论文列表）][paper1-url]评估发现，AI 仍缺软件工程知识：GPT-4o 分类设计模式准确率仅 `38.81%`，GPT-4 类关系建模 F1 值仅 `0.34`。
