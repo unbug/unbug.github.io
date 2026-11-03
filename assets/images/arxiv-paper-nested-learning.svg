@@ -62,8 +62,8 @@
   <g font-size="12" fill="#555">
     <text x="680" y="506">语言建模：困惑度更低</text>
     <text x="680" y="528">推理：准确率更高</text>
-    <text x="680" y="550">长上下文：表现更好；大海捞针（needle-in-a-haystack）回忆任务上</text>
-    <text x="680" y="570">传统模型经常失败，HOPE 表现出色</text>
+    <text x="680" y="550">长上下文：表现更好；大海捞针（needle-in-a-haystack）</text>
+    <text x="680" y="570">回忆任务上传统模型经常失败，HOPE 表现出色</text>
   </g>
   <circle cx="686" cy="594" r="5" fill="#D55E00"/>
   <text x="700" y="598" font-size="12" fill="#555">正文未披露具体数值，故不绘制数值坐标与误差棒</text>

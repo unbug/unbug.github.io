@@ -22,7 +22,7 @@
   </g>
   <text x="120" y="466" font-size="12.5" fill="#1A1B1E" text-anchor="middle">单智能体</text>
   <text x="1100" y="466" font-size="12.5" fill="#1A1B1E" text-anchor="end">多智能体</text>
-  <text x="96" y="146" font-size="12.5" fill="#1A1B1E" text-anchor="middle" transform="rotate(-90 96 146)">进化程度（序列轴）</text>
+  <text x="96" y="293" font-size="12.5" fill="#1A1B1E" text-anchor="middle" transform="rotate(-90 96 293)">进化程度（序列轴）</text>
   <g font-size="12" fill="#555">
     <text x="64" y="160" text-anchor="start" transform="rotate(-90 64 160)">轴高端：持续自我改进</text>
     <text x="64" y="436" text-anchor="start" transform="rotate(-90 64 436)">轴低端：静态执行</text>

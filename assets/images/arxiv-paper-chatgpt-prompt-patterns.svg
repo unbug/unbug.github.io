@@ -10,23 +10,23 @@
 
   <!-- bars: x = 330 + 80*v -->
   <text x="318" y="166" font-size="12.5" fill="#1A1B1E" text-anchor="end">需求获取</text>
-  <rect x="330" y="152" width="240" height="20" fill="#999999"/>
-  <text x="578" y="166" font-size="12" fill="#555">3 种</text>
+  <rect x="330" y="152" width="180" height="20" fill="#999999"/>
+  <text x="518" y="166" font-size="12" fill="#555">3 种</text>
 
   <text x="318" y="232" font-size="12.5" fill="#1A1B1E" text-anchor="end">系统设计与模拟</text>
-  <rect x="330" y="218" width="320" height="20" fill="#D55E00"/>
-  <text x="658" y="232" font-size="12" fill="#555">4 种</text>
+  <rect x="330" y="218" width="240" height="20" fill="#D55E00"/>
+  <text x="578" y="232" font-size="12" fill="#555">四种</text>
 
   <text x="318" y="298" font-size="12.5" fill="#1A1B1E" text-anchor="end">代码质量</text>
-  <rect x="330" y="284" width="320" height="20" fill="#999999"/>
-  <text x="658" y="298" font-size="12" fill="#555">4 种</text>
+  <rect x="330" y="284" width="240" height="20" fill="#999999"/>
+  <text x="578" y="298" font-size="12" fill="#555">四种</text>
 
   <text x="318" y="364" font-size="12.5" fill="#1A1B1E" text-anchor="end">重构</text>
-  <rect x="330" y="350" width="160" height="20" fill="#999999"/>
-  <text x="498" y="364" font-size="12" fill="#555">2 种</text>
+  <rect x="330" y="350" width="120" height="20" fill="#999999"/>
+  <text x="458" y="364" font-size="12" fill="#555">2 种</text>
 
   <!-- baseline axis (no numeric ticks: 正文未给刻度数字) -->
-  <line x1="330" y1="392" x2="650" y2="392" stroke="#1A1B1E" stroke-width="0.75"/>
+  <line x1="330" y1="392" x2="570" y2="392" stroke="#1A1B1E" stroke-width="0.75"/>
   <text x="490" y="418" font-size="14" fill="#1A1B1E" text-anchor="middle">模式数量（种，数值直接标注在条形旁）</text>
   <text x="330" y="452" font-size="12" fill="#555">朱色为数量最多的类别（系统设计与模拟），灰色为其余类别</text>
   <text x="330" y="474" font-size="12" fill="#555">四类合计 13 种，全部经 ChatGPT 实际对话验证</text>

@@ -24,12 +24,12 @@
   <!-- tasks 10,000 -->
   <text x="288" y="202" font-size="12.5" fill="#1A1B1E" text-anchor="end">任务</text>
   <rect x="140" y="188" width="960" height="18" fill="#009E73"/>
-  <text x="1096" y="182" font-size="12" fill="#555" text-anchor="end">10,000</text>
+  <text x="1092" y="182" font-size="12" fill="#555" text-anchor="end">10,000</text>
 
   <!-- tools 35,062 -->
   <text x="288" y="252" font-size="12.5" fill="#1A1B1E" text-anchor="end">工具</text>
   <rect x="140" y="238" width="1000" height="18" fill="#D55E00"/>
-  <text x="1108" y="252" font-size="12" fill="#555">35,062</text>
+  <text x="1108" y="252" font-size="12" fill="#555" text-anchor="end">35,062</text>
 
   <!-- value axis (log10) -->
   <line x1="140" y1="272" x2="1100" y2="272" stroke="#1A1B1E" stroke-width="0.75"/>
