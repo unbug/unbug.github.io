@@ -1,137 +1,64 @@
-<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
-  <!-- 背景渐变 -->
-  <defs>
-    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="moduleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="conceptGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <!-- 背景 -->
-  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">双模块网络从感官运动经验压缩出抽象概念，激活模式与人类 fMRI 概念处理高度相关，并支持智能体间概念交流</text>
 
-  <!-- 装饰性网格 -->
-  <g opacity="0.1">
-    <path d="M0,100 Q300,50 600,100 T1200,100" stroke="white" stroke-width="1" fill="none"/>
-    <path d="M0,200 Q300,150 600,200 T1200,200" stroke="white" stroke-width="1" fill="none"/>
-    <path d="M0,300 Q300,250 600,300 T1200,300" stroke="white" stroke-width="1" fill="none"/>
-    <path d="M0,400 Q300,350 600,400 T1200,400" stroke="white" stroke-width="1" fill="none"/>
-    <path d="M0,500 Q300,450 600,500 T1200,500" stroke="white" stroke-width="1" fill="none"/>
+  <!-- ============ panel a: architecture flow ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">CATS Net 双模块流程（定性示意，正文未给出模块数值）</text>
+
+  <rect x="80" y="150" width="200" height="64" fill="none" stroke="#1A1B1E" stroke-width="1.5"/>
+  <text x="180" y="177" font-size="12.5" fill="#1A1B1E" text-anchor="middle">感官-运动经验</text>
+  <text x="180" y="197" font-size="12" fill="#555" text-anchor="middle">具体输入与运动经验</text>
+
+  <rect x="370" y="150" width="220" height="64" fill="none" stroke="#0072B2" stroke-width="1.5"/>
+  <text x="480" y="177" font-size="12.5" fill="#1A1B1E" text-anchor="middle">模块 1：感官-运动编码器</text>
+  <text x="480" y="197" font-size="12" fill="#555" text-anchor="middle">类视觉、听觉、触觉系统</text>
+
+  <rect x="680" y="150" width="220" height="64" fill="none" stroke="#D55E00" stroke-width="1.5"/>
+  <text x="790" y="177" font-size="12.5" fill="#1A1B1E" text-anchor="middle">模块 2：概念压缩器</text>
+  <text x="790" y="197" font-size="12" fill="#555" text-anchor="middle">压缩抽象概念表示</text>
+
+  <rect x="1000" y="150" width="140" height="64" fill="none" stroke="#009E73" stroke-width="1.5"/>
+  <text x="1070" y="177" font-size="12.5" fill="#1A1B1E" text-anchor="middle">抽象概念</text>
+  <text x="1070" y="197" font-size="12" fill="#555" text-anchor="middle">用于理解与迁移</text>
+
+  <g stroke="#999999" stroke-width="1.5">
+    <line x1="280" y1="182" x2="360" y2="182"/>
+    <line x1="590" y1="182" x2="670" y2="182"/>
+    <line x1="900" y1="182" x2="990" y2="182"/>
+  </g>
+  <g fill="#999999">
+    <polygon points="360,177 370,182 360,187"/>
+    <polygon points="670,177 680,182 670,187"/>
+    <polygon points="990,177 1000,182 990,187"/>
   </g>
 
-  <!-- 标题 -->
-  <text x="600" y="80" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle">CATS Net</text>
-  <text x="600" y="120" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle" opacity="0.9">从感官体验到抽象概念的 AI 突破</text>
+  <text x="80" y="260" font-size="12" fill="#555">类比：儿童学「球」——感官体验 → 抽象压缩 → 识别新球与讨论概念</text>
 
-  <!-- 感官输入图标组 -->
-  <g transform="translate(100, 200)">
-    <!-- 眼睛（视觉） -->
-    <circle cx="60" cy="60" r="40" fill="white" opacity="0.9"/>
-    <circle cx="60" cy="60" r="25" fill="#667eea"/>
-    <circle cx="60" cy="60" r="10" fill="white"/>
-    <text x="60" y="130" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">视觉</text>
-
-    <!-- 耳朵（听觉） -->
-    <g transform="translate(150, 0)">
-      <ellipse cx="60" cy="60" rx="35" ry="45" fill="white" opacity="0.9"/>
-      <ellipse cx="60" cy="60" rx="20" ry="30" fill="#764ba2"/>
-      <text x="60" y="130" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">听觉</text>
-    </g>
-
-    <!-- 手（触觉） -->
-    <g transform="translate(300, 0)">
-      <rect x="20" y="20" width="80" height="80" rx="15" fill="white" opacity="0.9"/>
-      <path d="M40,60 L60,50 L80,60 L60,70 Z" fill="#f093fb"/>
-      <text x="60" y="130" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">触觉</text>
-    </g>
+  <!-- ============ panel b: findings list ============ -->
+  <text x="60" y="330" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="330" font-size="15" fill="#1A1B1E">正文报告的三项发现（定性结论，未给出数值指标）</text>
+  <g font-size="12.5" fill="#555">
+    <circle cx="86" cy="362" r="5" fill="#0072B2"/>
+    <text x="102" y="366">大脑对齐：激活模式与人类 fMRI 概念处理模式高度相关</text>
+    <circle cx="86" cy="394" r="5" fill="#D55E00"/>
+    <text x="102" y="398">概念交流：两个智能体不用人类语言，直接进行概念层面交流</text>
+    <circle cx="86" cy="426" r="5" fill="#009E73"/>
+    <text x="102" y="430">知识迁移：学到的概念可迁移到新任务</text>
   </g>
 
-  <!-- 箭头指向第一个模块 -->
-  <g transform="translate(450, 260)">
-    <line x1="0" y1="0" x2="80" y2="0" stroke="white" stroke-width="3" opacity="0.8"/>
-    <polygon points="80,0 70,-8 70,8" fill="white" opacity="0.8"/>
+  <!-- ============ panel c: evidence status ============ -->
+  <text x="60" y="492" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="82" y="492" font-size="15" fill="#1A1B1E">口径说明</text>
+  <g font-size="12" fill="#555">
+    <text x="60" y="522">正文以定性描述报告结果，未披露对齐相关系数、交流成功率等数值</text>
+    <text x="60" y="544">故本图不绘制数值坐标与误差棒，仅呈现机制流程与发现清单</text>
+    <circle cx="66" cy="568" r="5" fill="#999999"/>
+    <text x="80" y="572">灰色为口径标注，非数据元素</text>
   </g>
 
-  <!-- 模块 1：感官-运动编码器 -->
-  <g transform="translate(530, 180)">
-    <rect x="0" y="0" width="180" height="140" rx="20" fill="url(#moduleGradient)" filter="url(#glow)"/>
-    <text x="90" y="50" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">感官-运动</text>
-    <text x="90" y="75" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">编码器</text>
-    <text x="90" y="110" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle" opacity="0.9">Sensory-Motor</text>
-    <text x="90" y="130" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle" opacity="0.9">Encoder</text>
-  </g>
-
-  <!-- 箭头指向第二个模块 -->
-  <g transform="translate(710, 260)">
-    <line x1="0" y1="0" x2="80" y2="0" stroke="white" stroke-width="3" opacity="0.8"/>
-    <polygon points="80,0 70,-8 70,8" fill="white" opacity="0.8"/>
-  </g>
-
-  <!-- 模块 2：概念压缩器 -->
-  <g transform="translate(790, 180)">
-    <rect x="0" y="0" width="180" height="140" rx="20" fill="url(#conceptGradient)" filter="url(#glow)"/>
-    <text x="90" y="50" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">概念</text>
-    <text x="90" y="75" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">压缩器</text>
-    <text x="90" y="110" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle" opacity="0.9">Concept</text>
-    <text x="90" y="130" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle" opacity="0.9">Compressor</text>
-  </g>
-
-  <!-- 箭头指向概念输出 -->
-  <g transform="translate(970, 260)">
-    <line x1="0" y1="0" x2="80" y2="0" stroke="white" stroke-width="3" opacity="0.8"/>
-    <polygon points="80,0 70,-8 70,8" fill="white" opacity="0.8"/>
-  </g>
-
-  <!-- 概念输出 -->
-  <g transform="translate(1050, 180)">
-    <circle cx="70" cy="70" r="60" fill="white" opacity="0.95" filter="url(#glow)"/>
-    <text x="70" y="55" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#667eea" text-anchor="middle">抽象</text>
-    <text x="70" y="85" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#667eea" text-anchor="middle">概念</text>
-  </g>
-
-  <!-- 底部装饰：神经网络连接 -->
-  <g transform="translate(100, 420)" opacity="0.6">
-    <!-- 神经元节点 -->
-    <circle cx="100" cy="50" r="8" fill="white"/>
-    <circle cx="200" cy="30" r="8" fill="white"/>
-    <circle cx="300" cy="50" r="8" fill="white"/>
-    <circle cx="400" cy="30" r="8" fill="white"/>
-    <circle cx="500" cy="50" r="8" fill="white"/>
-    <circle cx="600" cy="30" r="8" fill="white"/>
-    <circle cx="700" cy="50" r="8" fill="white"/>
-    <circle cx="800" cy="30" r="8" fill="white"/>
-    <circle cx="900" cy="50" r="8" fill="white"/>
-    <circle cx="1000" cy="30" r="8" fill="white"/>
-
-    <!-- 连接 -->
-    <line x1="100" y1="50" x2="200" y2="30" stroke="white" stroke-width="2"/>
-    <line x1="200" y1="30" x2="300" y2="50" stroke="white" stroke-width="2"/>
-    <line x1="300" y1="50" x2="400" y2="30" stroke="white" stroke-width="2"/>
-    <line x1="400" y1="30" x2="500" y2="50" stroke="white" stroke-width="2"/>
-    <line x1="500" y1="50" x2="600" y2="30" stroke="white" stroke-width="2"/>
-    <line x1="600" y1="30" x2="700" y2="50" stroke="white" stroke-width="2"/>
-    <line x1="700" y1="50" x2="800" y2="30" stroke="white" stroke-width="2"/>
-    <line x1="800" y1="30" x2="900" y2="50" stroke="white" stroke-width="2"/>
-    <line x1="900" y1="50" x2="1000" y2="30" stroke="white" stroke-width="2"/>
-  </g>
-
-  <!-- 底部文字 -->
-  <text x="600" y="550" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" opacity="0.9">Nature Computational Science · 2026</text>
-  <text x="600" y="580" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" opacity="0.7">AI 之间的概念交流 · 类脑认知 · 知识迁移</text>
+  <!-- footnote -->
+  <text x="60" y="640" font-size="11" fill="#767676">数据：Nature Computational Science（DOI: 10.1038/s43588-026-00968-0，2026 年发表）· 论文自测口径 · DEGRADED：正文未给出可作图的数值指标，改为机制示意与发现清单</text>
 </svg>

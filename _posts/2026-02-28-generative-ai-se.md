@@ -4,7 +4,7 @@ title:  "一分钟读论文：《生成式 AI 变革软件开发流程》"
 author: unbug
 categories: [AI, Software Engineering]
 tags: [GenerativeAI, SoftwareEngineering, Copilot, Productivity]
-description: "Accenture 与 DFKI 的论文从生产力、质量、创造力、效率四个维度分析生成式 AI 对软件工程的改变，引用 GitHub Copilot 30% 建议接受率、90% 提交率与 20-40% 生产力提升数据，并提出 Software 3.0 愿景。"
+description: "Accenture 与 DFKI 的论文从生产力、质量、创造力、效率四个维度分析生成式 AI 对软件工程的改变，引用 GitHub Copilot 30% 建议接受率、90% 提交率与 20-40% 生产力提升数据，认为这场变革不是预测而是已经发生的事实。"
 ---
 
 来自 Accenture 和德国人工智能研究中心（DFKI）的论文[《Generative AI in Software Engineering: Transforming the Software Development Process》][paper1-url] 提出 Software 3.0 愿景，从生产力、质量、创造力、效率四个维度系统分析生成式 AI 对软件开发的影响，其中 GitHub Copilot `30%` 的建议接受率、`90%` 的提交率与 `20-40%` 的生产力提升数据表明，这场变革不是预测而是已经发生的事实。
