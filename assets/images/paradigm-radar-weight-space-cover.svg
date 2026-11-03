@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="600" fill="#FFFFFF"/>
+  <text x="60" y="58" fill="#1A1B1E" font-size="26" font-weight="bold">八天六帖：动作从提示词转向权重本体</text>
+  <text x="60" y="88" fill="#767676" font-size="15">Hacker News 分数（2026-11-03 Algolia 实测）</text>
+
+  <!-- left: bar chart of six posts -->
+  <line x1="90" y1="470" x2="600" y2="470" stroke="#999999" stroke-width="1"/>
+  <rect x="105" y="438" width="56" height="32" fill="#0072B2"/>
+  <rect x="188" y="400" width="56" height="70" fill="#0072B2"/>
+  <rect x="271" y="454" width="56" height="16" fill="#0072B2"/>
+  <rect x="354" y="351" width="56" height="119" fill="#0072B2"/>
+  <rect x="437" y="395" width="56" height="75" fill="#0072B2"/>
+  <rect x="520" y="88" width="56" height="382" fill="#D55E00"/>
+  <text x="133" y="430" fill="#555555" font-size="13" text-anchor="middle">195</text>
+  <text x="216" y="392" fill="#555555" font-size="13" text-anchor="middle">428</text>
+  <text x="299" y="446" fill="#555555" font-size="13" text-anchor="middle">100</text>
+  <text x="382" y="343" fill="#555555" font-size="13" text-anchor="middle">704</text>
+  <text x="465" y="387" fill="#555555" font-size="13" text-anchor="middle">456</text>
+  <text x="548" y="80" fill="#D55E00" font-size="14" text-anchor="middle" font-weight="bold">2526</text>
+  <text x="133" y="492" fill="#555555" font-size="12" text-anchor="middle">10-25</text>
+  <text x="216" y="492" fill="#555555" font-size="12" text-anchor="middle">10-26</text>
+  <text x="299" y="492" fill="#555555" font-size="12" text-anchor="middle">10-27</text>
+  <text x="382" y="492" fill="#555555" font-size="12" text-anchor="middle">10-29</text>
+  <text x="465" y="492" fill="#555555" font-size="12" text-anchor="middle">10-31</text>
+  <text x="548" y="492" fill="#555555" font-size="12" text-anchor="middle">11-02</text>
+  <text x="133" y="512" fill="#767676" font-size="11" text-anchor="middle">GVS5H</text>
+  <text x="216" y="512" fill="#767676" font-size="11" text-anchor="middle">IBM CEO</text>
+  <text x="299" y="512" fill="#767676" font-size="11" text-anchor="middle">去安全化</text>
+  <text x="382" y="512" fill="#767676" font-size="11" text-anchor="middle">Qwenputer</text>
+  <text x="465" y="512" fill="#767676" font-size="11" text-anchor="middle">Memdoor</text>
+  <text x="548" y="512" fill="#767676" font-size="11" text-anchor="middle">Astra</text>
+
+  <!-- right: chain -->
+  <line x1="650" y1="110" x2="650" y2="560" stroke="#D9D9D9" stroke-width="1"/>
+  <text x="690" y="140" fill="#555555" font-size="17" font-weight="bold">合起来是一条链</text>
+
+  <rect x="690" y="170" width="430" height="72" fill="#FFFFFF" stroke="#0072B2" stroke-width="1"/>
+  <text x="706" y="200" fill="#0072B2" font-size="16" font-weight="bold">读权重</text>
+  <text x="706" y="226" fill="#555555" font-size="13">可解释：模型在算什么</text>
+
+  <rect x="690" y="262" width="430" height="72" fill="#FFFFFF" stroke="#0072B2" stroke-width="1"/>
+  <text x="706" y="292" fill="#0072B2" font-size="16" font-weight="bold">写权重</text>
+  <text x="706" y="318" fill="#555555" font-size="13">可修改：模型能改什么</text>
+
+  <rect x="690" y="354" width="430" height="72" fill="#FFFFFF" stroke="#D55E00" stroke-width="1"/>
+  <text x="706" y="384" fill="#D55E00" font-size="16" font-weight="bold">编权重</text>
+  <text x="706" y="410" fill="#555555" font-size="13">可装载：CPU 编译进参数</text>
+
+  <rect x="690" y="446" width="430" height="72" fill="#FFFFFF" stroke="#D55E00" stroke-width="1"/>
+  <text x="706" y="476" fill="#D55E00" font-size="16" font-weight="bold">组权重</text>
+  <text x="706" y="502" fill="#555555" font-size="13">可复制编排：五小模型打平大模型</text>
+
+  <line x1="905" y1="242" x2="905" y2="262" stroke="#999999" stroke-width="1.5"/>
+  <line x1="905" y1="334" x2="905" y2="354" stroke="#999999" stroke-width="1.5"/>
+  <line x1="905" y1="426" x2="905" y2="446" stroke="#999999" stroke-width="1.5"/>
+</svg>
