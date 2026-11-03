@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《粒子加速器如何学会自动驾驶》"
 author: unbug
 categories: [AI]
-image: assets/images/2026-03-01-ai-native-particle-accelerator.svg
+image: assets/images/ai-native-particle-accelerator.svg
 tags: [AI, ParticleAccelerator, Autonomy, ScienceFacilities]
 description: "多机构立场论文提出粒子加速器自主运行路线图，划分AI辅助、AI增强、AI自主三大阶段，规划九大研究方向与分阶段推进路径，目标是提升大型科学设施的运行时间与性能。"
 ---

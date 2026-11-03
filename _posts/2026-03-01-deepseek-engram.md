@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "一分钟读论文：《DeepSeek Engram 分离知识存储》"
+title:  "一分钟读论文：《Engram 分离知识存储》"
 author: unbug
 categories: [AI]
 image: assets/images/2026-03-01-deepseek-engram.svg
