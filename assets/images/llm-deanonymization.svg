@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+<?xml version="1.0" ?><svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
   <rect width="1200" height="675" fill="#FFFFFF"/>
 
   <!-- conclusion line -->
@@ -55,8 +55,8 @@
   <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
     <text x="200" y="408">0</text>
     <text x="440" y="408">25</text>
-    <text x="680" y="408">50</text>
-    <text x="920" y="408">75</text>
+    
+    
   </g>
   <text x="680" y="432" font-size="14" fill="#1A1B1E" text-anchor="middle">召回率（%）</text>
 

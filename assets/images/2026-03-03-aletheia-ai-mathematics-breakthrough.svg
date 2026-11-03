@@ -73,7 +73,7 @@
     <text x="900" y="228">不够完整</text>
     <text x="1000" y="228">4/4 专家正确</text>
     <text x="1068" y="210" text-anchor="end">2/2 专家正确</text>
-    <text x="1132" y="228" text-anchor="end">A 自主发现最优复杂度界</text>
+    <text x="1126" y="228" text-anchor="end">A 自主发现最优复杂度界</text>
   </g>
 
   <!-- ============ panel b ============ -->

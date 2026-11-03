@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+<?xml version="1.0" ?><svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
   <rect width="1200" height="675" fill="#FFFFFF"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">自我反馈的两阶段强化学习在三个模型上均带来提升：+1.3% 至 +3.96%；OpenReasoning-Nemotron-7B 在 AceReason-Math 上达 AIME24 85.62%</text>
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">自我反馈的两阶段强化学习在三个模型上均带来提升（+1.3% 至 +3.96%）；OpenReasoning-Nemotron-7B + iGRPO 在 AIME24 上达 85.62%</text>
 
   <!-- ============ panel a ============ -->
   <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">基准方法与 iGRPO 准确率对比（%，括号内为提升，论文自测口径）</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">基准方法与 iGRPO 对比（%，括号内为提升，论文自测口径）</text>
 
   <g stroke="#D9D9D9" stroke-width="0.5">
     <line x1="380" y1="130" x2="380" y2="400"/>
@@ -15,21 +15,18 @@
     <line x1="1100" y1="130" x2="1100" y2="400"/>
   </g>
   <!-- bars: x = 140 + 8*v -->
-  <!-- row 1: Nemotron-H-8B-Base-8K 41.1 -> 45.0 -->
   <text x="368" y="166" font-size="12.5" fill="#1A1B1E" text-anchor="end">Nemotron-H-8B-Base-8K</text>
   <rect x="140" y="150" width="328.8" height="13" fill="#999999"/>
   <text x="476" y="161" font-size="12" fill="#555">41.1</text>
   <rect x="140" y="167" width="360" height="13" fill="#D55E00"/>
   <text x="508" y="178" font-size="12" fill="#555">45.0（+3.96）</text>
 
-  <!-- row 2: DeepSeek-R1-Distill-Qwen-7B 68.3 -> 69.9 -->
   <text x="368" y="254" font-size="12.5" fill="#1A1B1E" text-anchor="end">DeepSeek-R1-Distill-Qwen-7B</text>
   <rect x="140" y="238" width="546.4" height="13" fill="#999999"/>
   <text x="694" y="249" font-size="12" fill="#555">68.3</text>
   <rect x="140" y="255" width="559.2" height="13" fill="#D55E00"/>
   <text x="707" y="266" font-size="12" fill="#555">69.9（+1.6）</text>
 
-  <!-- row 3: OpenMath-Nemotron-14B 76.7 -> 78.0 -->
   <text x="368" y="342" font-size="12.5" fill="#1A1B1E" text-anchor="end">OpenMath-Nemotron-14B</text>
   <rect x="140" y="326" width="613.6" height="13" fill="#999999"/>
   <text x="761" y="337" font-size="12" fill="#555">76.7</text>
@@ -47,46 +44,60 @@
   </g>
   <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
     <text x="140" y="424">0</text>
-    <text x="380" y="424">30</text>
+    
     <text x="620" y="424">60</text>
     <text x="860" y="424">90</text>
-    <text x="1100" y="424">120</text>
+    
   </g>
-  <text x="620" y="450" font-size="14" fill="#1A1B1E" text-anchor="middle">准确率（%）</text>
+  <text x="620" y="450" font-size="14" fill="#1A1B1E" text-anchor="middle">百分比（%）</text>
   <g font-size="12" fill="#555">
-    <rect x="140" y="466" width="12" height="10" fill="#999999"/>
-    <text x="158" y="475">基准方法</text>
-    <rect x="240" y="466" width="12" height="10" fill="#D55E00"/>
-    <text x="258" y="475">iGRPO</text>
+    <rect x="140" y="464" width="12" height="10" fill="#999999"/>
+    <text x="158" y="473">基准方法</text>
+    <rect x="240" y="464" width="12" height="10" fill="#D55E00"/>
+    <text x="258" y="473">iGRPO</text>
   </g>
 
   <!-- ============ panel b ============ -->
-  <text x="60" y="524" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="82" y="524" font-size="15" fill="#1A1B1E">OpenReasoning-Nemotron-7B + iGRPO 在 AceReason-Math（论文自测口径）</text>
+  <text x="60" y="516" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="516" font-size="15" fill="#1A1B1E">OpenReasoning-Nemotron-7B + iGRPO 在 AceReason-Math 数据集（%，论文自测口径）</text>
+
+  <!-- horizontal bars: x = 140 + 4*v -->
   <g stroke="#D9D9D9" stroke-width="0.5">
-    <line x1="120" y1="556" x2="1140" y2="556"/>
-    <line x1="120" y1="600" x2="1140" y2="600"/>
+    <line x1="340" y1="532" x2="340" y2="624"/>
+    <line x1="540" y1="532" x2="540" y2="624"/>
   </g>
-  <!-- bars: y = 644 - 2*v -->
-  <rect x="180" y="472.76" width="90" height="171.24" fill="#0072B2"/>
-  <text x="225" y="464" font-size="12" fill="#555" text-anchor="middle">85.62</text>
-  <text x="225" y="662" font-size="12.5" fill="#1A1B1E" text-anchor="middle">AIME24</text>
-  <rect x="420" y="484.72" width="90" height="159.28" fill="#0072B2"/>
-  <text x="465" y="476" font-size="12" fill="#555" text-anchor="middle">79.64</text>
-  <text x="465" y="662" font-size="12.5" fill="#1A1B1E" text-anchor="middle">AIME25</text>
+  <text x="128" y="554" font-size="12.5" fill="#1A1B1E" text-anchor="end">AIME24</text>
+  <rect x="140" y="542" width="342.48" height="15" fill="#0072B2"/>
+  <text x="490" y="554" font-size="12" fill="#555">85.62</text>
+
+  <text x="128" y="602" font-size="12.5" fill="#1A1B1E" text-anchor="end">AIME25</text>
+  <rect x="140" y="590" width="318.56" height="15" fill="#0072B2"/>
+  <text x="466" y="602" font-size="12" fill="#555">79.64</text>
+
+  <line x1="140" y1="624" x2="540" y2="624" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="140" y1="624" x2="140" y2="629"/>
+    <line x1="340" y1="624" x2="340" y2="629"/>
+    <line x1="540" y1="624" x2="540" y2="629"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="140" y="648">0</text>
+    
+    
+  </g>
 
   <!-- ============ panel c ============ -->
-  <text x="640" y="524" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
-  <text x="662" y="524" font-size="15" fill="#1A1B1E">其余定性发现</text>
+  <text x="640" y="516" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="662" y="516" font-size="15" fill="#1A1B1E">其余发现（正文定性描述）</text>
   <g font-size="12" fill="#555">
-    <circle cx="646" cy="550" r="5" fill="#009E73"/>
-    <text x="660" y="554">延迟熵崩溃：强化学习中模型很快变得过于保守，iGRPO 能有效延迟这个过程</text>
-    <circle cx="646" cy="578" r="5" fill="#009E73"/>
-    <text x="660" y="582">泛化能力强：论文显示它也能提升 DAPO 和 GSPO 等其他方法</text>
-    <circle cx="646" cy="606" r="5" fill="#009E73"/>
-    <text x="660" y="610">生成式法官带来额外收益：模型不仅能得到分数，还能理解「为什么」</text>
+    <circle cx="646" cy="544" r="5" fill="#009E73"/>
+    <text x="660" y="548">延迟熵崩溃：模型很快就变得过于保守，只输出确定的答案；iGRPO 能有效延迟这个过程</text>
+    <circle cx="646" cy="572" r="5" fill="#009E73"/>
+    <text x="660" y="576">泛化能力强：论文显示它也能提升 DAPO 和 GSPO 等其他方法</text>
+    <circle cx="646" cy="600" r="5" fill="#009E73"/>
+    <text x="660" y="604">生成式法官的好处：模型不仅能得到分数，还能理解「为什么」</text>
   </g>
 
   <!-- footnote -->
-  <text x="60" y="640" font-size="11" fill="#767676">数据：arXiv:2602.09000（NVIDIA Research，2026 年 2 月）· 论文自测口径 · 正文未报告误差区间，未画误差棒 · 面板 b 纵轴与面板 a 同口径（%）· 预印本未经同行评审</text>
+  <text x="60" y="664" font-size="11" fill="#767676">数据：arXiv:2602.09000（NVIDIA Research，2026 年 2 月）· 论文自测口径 · 正文未报告误差区间，未画误差棒 · 预印本未经同行评审</text>
 </svg>
