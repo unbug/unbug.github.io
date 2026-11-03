@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《LLM 智能体推理全景路线图》"
 author: unbug
 categories: [AI, Agent]
-image: assets/images/arxiv-paper-agentic-reasoning-survey.png
+image: assets/images/agentic-reasoning-survey.svg
 tags: [Agentic Reasoning, LLM Agent, Reinforcement Learning, Multi-Agent, Survey]
 description: "UIUC、Meta、Amazon、Google DeepMind 等机构联合发表智能体推理综述，提出基础、自我进化、集体三层框架，梳理两种优化模式、六大应用与评测基准，并指出个性化、世界模型、治理等六个开放问题。"
 ---
@@ -14,7 +14,7 @@ description: "UIUC、Meta、Amazon、Google DeepMind 等机构联合发表智能
 
 传统 LLM 推理是静态输入加单次前向传播得到固定输出，没有记忆、无法适应变化。智能体推理（Agentic Reasoning，指智能体在环境中多步规划、行动并从反馈中学习的推理方式）则把推理变成连接模型、记忆和环境的动态循环：多步迭代代替单次计算，外部记忆与状态追踪代替无状态输出，明确目标驱动的规划代替被动的提示反应。
 
-![Agentic Reasoning](/assets/images/arxiv-paper-agentic-reasoning-survey.png)
+![Agentic Reasoning](/assets/images/agentic-reasoning-survey.svg)
 
 ## 三层框架与两种优化模式
 

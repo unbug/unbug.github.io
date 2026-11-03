@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《三个AI智能体组队修复仓库级问题》"
 author: unbug
 categories: [AI, Engineering]
-image: assets/images/e3-complexity-aware-agent-execution.svg
+image: assets/images/enagent-ensemble-reasoning.svg
 tags: [Software Engineering, AI Agents, SWE-bench]
 description: "天津大学与字节跳动在 ICSE 2026 提出 EnAgent：生成、剪枝、选择三个智能体分工协作修复仓库级缺陷，先广撒候选再逐级筛选，通过率较此前最优方法显著提升并登顶榜单。"
 ---

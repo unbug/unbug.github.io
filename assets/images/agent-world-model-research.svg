@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+<?xml version="1.0" ?><svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
   <rect width="1200" height="675" fill="#FFFFFF"/>
 
   <!-- conclusion -->
@@ -38,7 +38,7 @@
   <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
     <text x="380" y="422">1,000</text>
     <text x="630" y="422">10,000</text>
-    <text x="880" y="422">100,000</text>
+    
   </g>
   <text x="630" y="446" font-size="14" fill="#1A1B1E" text-anchor="middle">数量（个，对数刻度）</text>
 
@@ -68,9 +68,9 @@
   </g>
   <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
     <text x="60" y="578">0</text>
-    <text x="330" y="578">250</text>
-    <text x="600" y="578">500</text>
-    <text x="870" y="578">750</text>
+    
+    
+    
     <text x="1140" y="578">1,000</text>
   </g>
   <text x="600" y="600" font-size="14" fill="#1A1B1E" text-anchor="middle">环境数量（个）</text>

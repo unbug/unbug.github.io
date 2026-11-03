@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《千环境合成训练 AI 智能体》"
 author: unbug
 categories: [AI, Agent]
-image: assets/images/agent-world-model.svg
+image: assets/images/agent-world-model-research.svg
 tags: [agent, reinforcement-learning, synthetic-environments, ai]
 description: "北卡罗来纳大学教堂山分校与 Snowflake 提出 Agent World Model，用代码和数据库合成 1000 个可执行环境、35062 个工具与 10000 个任务，智能体仅靠合成环境训练即获得超越基准特定训练的分布外泛化能力。"
 ---

@@ -5,7 +5,7 @@ author: unbug
 categories: [AI]
 image: assets/images/world-model-unified-framework-1.svg
 tags: [WorldModels, AI, DeepLearning, EmbodiedAI]
-description: "论文指出世界模型研究正困于向孤立任务注入知识的碎片化困境，提出由交互、推理、记忆、环境、多模态生成组成的统一框架，规划物理表示、具身控制、自主进化三大方向。"
+description: "论文指出世界模型研究正困于向孤立任务注入知识的碎片化困境，提出由交互、推理、记忆、环境、多模态生成组成的统一框架，并规划三个演进方向。"
 ---
 
 2026 年 2 月发表于 arXiv 的论文[《Research on World Models Is Not Merely Injecting World Knowledge into Specific Tasks》][paper1-url]指出：世界模型研究正陷入碎片化困境，应转向统一的框架设计。
