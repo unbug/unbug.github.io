@@ -1,176 +1,96 @@
-<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
-  <!-- 背景 -->
-  <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0f172a"/>
-      <stop offset="50%" style="stop-color:#1e293b"/>
-      <stop offset="100%" style="stop-color:#0f172a"/>
-    </linearGradient>
-    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e293b"/>
-      <stop offset="100%" style="stop-color:#0f172a"/>
-    </linearGradient>
-    <linearGradient id="gateGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#3b82f6"/>
-      <stop offset="50%" style="stop-color:#10b981"/>
-      <stop offset="100%" style="stop-color:#f59e0b"/>
-    </linearGradient>
-    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#3b82f6" stop-opacity="0.8"/>
-      <stop offset="100%" style="stop-color:#10b981" stop-opacity="0.8"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <!-- 主背景 -->
-  <rect width="1200" height="600" fill="url(#bgGrad)"/>
+  <!-- conclusion -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">头级门控带来超过 10 个点的长上下文外推提升，额外延迟不到 2%；方法已用于 Qwen3-Next 生产环境</text>
 
-  <!-- 标题 -->
-  <text x="600" y="80" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="48" font-weight="700" fill="#ffffff">
-    Gated Attention
-  </text>
-  <text x="600" y="125" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="24" fill="#94a3b8">
-    给注意力加个智能阀门
-  </text>
+  <!-- ===== panel a: method steps ===== -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">门控位置：正文四步计算流程（序列轴，对比标准注意力的唯一改动）</text>
 
-  <!-- 左：标准注意力 -->
-  <g transform="translate(150, 200)">
-    <rect x="0" y="0" width="300" height="250" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="2"/>
-    <text x="150" y="40" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="600" fill="#ffffff">
-      标准注意力
-    </text>
-    <!-- 输入 -->
-    <rect x="30" y="70" width="100" height="60" rx="8" fill="#1e293b" stroke="#475569" stroke-width="2"/>
-    <text x="80" y="105" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="14" fill="#94a3b8">
-      Input
-    </text>
-    <!-- 箭头1 -->
-    <line x1="130" y1="100" x2="170" y2="100" stroke="#64748b" stroke-width="3" marker-end="url(#arrow1)"/>
-    <!-- SDPA -->
-    <rect x="170" y="70" width="100" height="60" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
-    <text x="220" y="90" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#60a5fa">
-      SDPA
-    </text>
-    <text x="220" y="110" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#94a3b8">
-      (Attention
-    </text>
-    <!-- 箭头2 -->
-    <line x1="270" y1="100" x2="300" y2="100" stroke="#64748b" stroke-width="3" marker-end="url(#arrow1)"/>
-    <!-- 输出 -->
-    <rect x="300" y="70" width="100" height="60" rx="8" fill="#1e293b" stroke="#475569" stroke-width="2"/>
-    <text x="350" y="105" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="14" fill="#94a3b8">
-      Output
-    </text>
-    <!-- 问题 -->
-    <text x="150" y="220" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#f87171">
-      ❌ 注意力汇聚 · 训练不稳定
-    </text>
+  <g stroke="#999999" stroke-width="1.5">
+    <line x1="300" y1="210" x2="330" y2="210"/>
+    <line x1="570" y1="210" x2="600" y2="210"/>
+    <line x1="840" y1="210" x2="870" y2="210"/>
+  </g>
+  <g>
+    <rect x="60" y="160" width="240" height="100" rx="4" fill="#0072B2" opacity="0.10"/>
+    <rect x="60" y="160" width="240" height="4" fill="#0072B2"/>
+    <text x="76" y="188" font-size="13" font-weight="bold" fill="#1A1B1E">步一　正常计算 SDPA</text>
+    <text x="76" y="210" font-size="12" fill="#555">缩放点积注意力不变</text>
+
+    <rect x="330" y="160" width="240" height="100" rx="4" fill="#D55E00" opacity="0.10"/>
+    <rect x="330" y="160" width="240" height="4" fill="#D55E00"/>
+    <text x="346" y="188" font-size="13" font-weight="bold" fill="#1A1B1E">步二　由 Query 算 sigmoid 门控值</text>
+    <text x="346" y="210" font-size="12" fill="#555">模型按当前 token 在找什么</text>
+    <text x="346" y="226" font-size="12" fill="#555">决定哪些注意力输出有用</text>
+
+    <rect x="600" y="160" width="240" height="100" rx="4" fill="#0072B2" opacity="0.10"/>
+    <rect x="600" y="160" width="240" height="4" fill="#0072B2"/>
+    <text x="616" y="188" font-size="13" font-weight="bold" fill="#1A1B1E">步三　输出乘以门控值</text>
+    <text x="616" y="210" font-size="12" fill="#555">选择性放大或抑制</text>
+
+    <rect x="870" y="160" width="240" height="100" rx="4" fill="#0072B2" opacity="0.10"/>
+    <rect x="870" y="160" width="240" height="4" fill="#0072B2"/>
+    <text x="886" y="188" font-size="13" font-weight="bold" fill="#1A1B1E">步四　头级独立门控</text>
+    <text x="886" y="210" font-size="12" fill="#555">维护注意力头的多样性</text>
   </g>
 
-  <!-- 右：Gated Attention -->
-  <g transform="translate(750, 200)">
-    <rect x="0" y="0" width="300" height="250" rx="16" fill="url(#cardGrad)" stroke="#10b981" stroke-width="2"/>
-    <text x="150" y="40" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="600" fill="#ffffff">
-      Gated Attention
-    </text>
-    <!-- 输入 -->
-    <rect x="30" y="70" width="80" height="50" rx="8" fill="#1e293b" stroke="#475569" stroke-width="2"/>
-    <text x="70" y="100" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="13" fill="#94a3b8">
-      Input
-    </text>
-    <!-- 箭头1 -->
-    <line x1="110" y1="95" x2="130" y2="95" stroke="#64748b" stroke-width="3" marker-end="url(#arrow1)"/>
-    <!-- SDPA -->
-    <rect x="130" y="70" width="80" height="50" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
-    <text x="170" y="90" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#60a5fa">
-      SDPA
-    </text>
-    <!-- 箭头2 -->
-    <line x1="210" y1="95" x2="230" y2="95" stroke="#64748b" stroke-width="3" marker-end="url(#arrow1)"/>
-    <!-- 阀门（Gate） -->
-    <rect x="230" y="60" width="70" height="70" rx="8" fill="url(#gateGrad)" stroke="#ffffff" stroke-width="2"/>
-    <text x="265" y="85" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600" fill="#ffffff">
-      GATE
-    </text>
-    <text x="265" y="105" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="9" fill="#ffffff">
-      (智能阀门)
-    </text>
-    <!-- 箭头3 -->
-    <line x1="300" y1="95" x2="320" y2="95" stroke="#64748b" stroke-width="3" marker-end="url(#arrow1)"/>
-    <!-- 输出 -->
-    <rect x="320" y="70" width="80" height="50" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
-    <text x="360" y="100" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="13" fill="#94a3b8">
-      Output
-    </text>
-    <!-- Query -> Gate -->
-    <line x1="70" y1="120" x2="70" y2="140" stroke="#64748b" stroke-width="2" stroke-dasharray="5,3"/>
-    <line x1="70" y1="140" x2="265" y2="140" stroke="#64748b" stroke-width="2" stroke-dasharray="5,3"/>
-    <line x1="265" y1="140" x2="265" y2="130" stroke="#64748b" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrow1)"/>
-    <text x="167" y="155" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="10" fill="#94a3b8">
-      Query
-    </text>
-    <!-- 优势 -->
-    <text x="150" y="220" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#34d399">
-      ✅ 更稳定 · 无汇聚 · 长上下文更好
-    </text>
+  <!-- sequence axis -->
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="60" y1="290" x2="1110" y2="290"/>
+    <line x1="60" y1="290" x2="60" y2="294"/>
+    <line x1="330" y1="290" x2="330" y2="294"/>
+    <line x1="600" y1="290" x2="600" y2="294"/>
+    <line x1="870" y1="290" x2="870" y2="294"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="60" y="312">步一</text>
+    <text x="330" y="312">步二</text>
+    <text x="600" y="312">步三</text>
+    <text x="870" y="312">步四</text>
+  </g>
+  <text x="585" y="336" font-size="14" fill="#1A1B1E" text-anchor="middle">计算流程位置（序列轴）</text>
+
+  <!-- ===== panel b: findings ===== -->
+  <text x="60" y="386" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="386" font-size="15" fill="#1A1B1E">实验规模与两项量化收益</text>
+
+  <text x="60" y="424" font-size="14" fill="#1A1B1E">量化收益</text>
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="300" y1="440" x2="300" y2="520"/>
+    <line x1="700" y1="440" x2="700" y2="520"/>
+    <line x1="1100" y1="440" x2="1100" y2="520"/>
+  </g>
+  <!-- long-context: 0..10+ points, x=300+40*v, 10 -> 700 -->
+  <rect x="300" y="446" width="400" height="20" fill="#0072B2"/>
+  <polygon points="700,446 712,456 700,466" fill="#0072B2"/>
+  <text x="300" y="438" font-size="12" fill="#555">RULER 基准外推能力提升：超过 10 个点</text>
+  <!-- latency: 0..2%, x=300+200*v, 2 -> 700 -->
+  <rect x="300" y="496" width="400" height="20" fill="#009E73"/>
+  <polygon points="712,496 700,486 700,506" fill="#009E73"/>
+  <text x="300" y="488" font-size="12" fill="#555">额外推理延迟：不到 2%</text>
+  <line x1="300" y1="520" x2="700" y2="520" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g font-size="12" fill="#555">
+    <text x="300" y="540">左端为 0；两条箭头分别指向各自轴上限（10 个点 / 2%），量纲不同、不共用刻度</text>
   </g>
 
-  <!-- 中间对比箭头 -->
-  <g transform="translate(500, 280)">
-    <circle cx="100" cy="50" r="40" fill="url(#glowGrad)" opacity="0.3"/>
-    <circle cx="100" cy="50" r="30" fill="url(#glowGrad)" opacity="0.5"/>
-    <text x="100" y="55" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="700" fill="#ffffff">
-      →
-    </text>
+  <text x="770" y="424" font-size="14" fill="#1A1B1E">实验规模</text>
+  <g font-size="12.5" fill="#1A1B1E">
+    <text x="770" y="452">对比 30 多种门控变体，最佳配置为：</text>
+    <text x="786" y="474">SDPA 输出后 · 头级粒度 · 乘法门控 · Sigmoid 激活（优于 SiLU）</text>
+    <text x="770" y="502">训练 15B MoE 与 1.7B 稠密模型</text>
+    <text x="770" y="524">现有 Transformer 加几行代码即可升级</text>
   </g>
 
-  <!-- 底部特性 -->
-  <g transform="translate(100, 480)">
-    <rect x="0" y="0" width="1000" height="100" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
-    <text x="500" y="35" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600" fill="#ffffff">
-      核心特性
-    </text>
-    <g transform="translate(50, 55)">
-      <circle cx="50" cy="20" r="12" fill="#3b82f6"/>
-      <text x="50" y="25" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#ffffff">
-        1
-      </text>
-      <text x="110" y="30" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="14" fill="#94a3b8">
-        可学习门控
-      </text>
-    </g>
-    <g transform="translate(250, 55)">
-      <circle cx="50" cy="20" r="12" fill="#10b981"/>
-      <text x="50" y="25" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#ffffff">
-        2
-      </text>
-      <text x="110" y="30" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="14" fill="#94a3b8">
-        头级独立
-      </text>
-    </g>
-    <g transform="translate(450, 55)">
-      <circle cx="50" cy="20" r="12" fill="#f59e0b"/>
-      <text x="50" y="25" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#ffffff">
-        3
-      </text>
-      <text x="120" y="30" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="14" fill="#94a3b8">
-        即插即用
-      </text>
-    </g>
-    <g transform="translate(680, 55)">
-      <circle cx="50" cy="20" r="12" fill="#8b5cf6"/>
-      <text x="50" y="25" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#ffffff">
-        4
-      </text>
-      <text x="120" y="30" text-anchor="middle" font-family="SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif" font-size="14" fill="#94a3b8">
-        轻量级
-      </text>
-    </g>
+  <!-- ===== panel c: problems addressed ===== -->
+  <text x="60" y="582" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="82" y="582" font-size="15" fill="#1A1B1E">同一改动覆盖的三个痛点与收益</text>
+  <g font-size="12" fill="#555">
+    <text x="60" y="604">标准注意力的三个问题：损失值训练中突然飙升（训练不稳定）· 上下文变长后表现急剧下降（长上下文差）· 计算本质线性（缺乏非线性）</text>
+    <text x="60" y="624">门控同时改善三者，并把注意力汇聚从事后补救转为从设计上消除，还允许使用更大的学习率与 batch size</text>
   </g>
 
-  <!-- 箭头标记 -->
-  <defs>
-    <marker id="arrow1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
-    </marker>
-  </defs>
+  <!-- footnote -->
+  <text x="60" y="652" font-size="11" fill="#767676">数据：arXiv:2505.06708（NeurIPS 2025 最佳论文，阿里巴巴 Qwen 团队）· 10 个点与 2% 为论文自测口径 · 面板 a 为论文方法描述的流程序列，非统计量 · 预印本未经同行评审</text>
 </svg>

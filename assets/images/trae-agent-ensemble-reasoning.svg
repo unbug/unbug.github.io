@@ -1,0 +1,89 @@
+<?xml version="1.0" ?><svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">生成、修剪、选择三个代理协作探索补丁空间，Trae Agent 在 SWE-bench Verified 上取得 Pass@1 78.80%，较 4 个基线平均提升 10.22%</text>
+
+  <!-- ===== panel a: agent pipeline ===== -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">三大代理流水线（定性流程，无数值）</text>
+
+  <rect x="90" y="140" width="280" height="100" fill="none" stroke="#0072B2" stroke-width="1.5"/>
+  <text x="230" y="168" font-size="12.5" font-weight="bold" fill="#1A1B1E" text-anchor="middle">生成代理 Generator</text>
+  <text x="230" y="192" font-size="12" fill="#555" text-anchor="middle">多个 LLM 加随机采样产生多样化补丁</text>
+  <text x="230" y="212" font-size="12" fill="#555" text-anchor="middle">覆盖尽可能广的解空间</text>
+
+  <line x1="370" y1="190" x2="420" y2="190" stroke="#999999" stroke-width="1.5"/>
+  <polygon points="420,185 430,190 420,195" fill="#999999"/>
+
+  <rect x="440" y="140" width="280" height="100" fill="none" stroke="#009E73" stroke-width="1.5"/>
+  <text x="580" y="168" font-size="12.5" font-weight="bold" fill="#1A1B1E" text-anchor="middle">修剪代理 Pruner</text>
+  <text x="580" y="192" font-size="12" fill="#555" text-anchor="middle">快速过滤明显错误的补丁</text>
+  <text x="580" y="212" font-size="12" fill="#555" text-anchor="middle">把资源留给有希望的候选</text>
+
+  <line x1="720" y1="190" x2="770" y2="190" stroke="#999999" stroke-width="1.5"/>
+  <polygon points="770,185 780,190 770,195" fill="#999999"/>
+
+  <rect x="790" y="140" width="320" height="100" fill="none" stroke="#D55E00" stroke-width="1.5"/>
+  <text x="950" y="168" font-size="12.5" font-weight="bold" fill="#1A1B1E" text-anchor="middle">选择代理 Selector</text>
+  <text x="950" y="192" font-size="12" fill="#555" text-anchor="middle">利用仓库级上下文从剩余补丁中选出最优解</text>
+  <text x="950" y="212" font-size="12" fill="#555" text-anchor="middle">仓库理解由 LLM 提示完成，不依赖图神经网络</text>
+
+  <text x="90" y="280" font-size="12" fill="#555">仓库级理解通过迭代代理文件摄入、代码区域摘要与聚类实现，SequentialThinkingTool 指导跨文件依赖探索；</text>
+  <text x="90" y="300" font-size="12" fill="#555">测试时缩放：随集成规模增大性能单调提升，可按预算动态选择集成大小（正文未给出各集成规模的具体数值）</text>
+
+  <!-- ===== panel b: headline results ===== -->
+  <text x="60" y="360" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="360" font-size="15" fill="#1A1B1E">SWE-bench Verified 上的两项报告值</text>
+
+  <!-- left: absolute Pass@1 on 0-100 axis -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="660" y1="392" x2="660" y2="500"/>
+  </g>
+  <text x="288" y="434" font-size="12.5" fill="#1A1B1E" text-anchor="end">Pass@1（%）</text>
+  <rect x="300" y="420" width="567.36" height="20" fill="#D55E00"/>
+  <text x="876" y="434" font-size="12" fill="#555">78.80（曾位居该榜单第一）</text>
+  <line x1="300" y1="392" x2="300" y2="500" stroke="#1A1B1E" stroke-width="0.75"/>
+  <line x1="300" y1="500" x2="860" y2="500" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="300" y1="500" x2="300" y2="504"/>
+    <line x1="440" y1="500" x2="440" y2="504"/>
+    <line x1="580" y1="500" x2="580" y2="504"/>
+    <line x1="720" y1="500" x2="720" y2="504"/>
+    <line x1="860" y1="500" x2="860" y2="504"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="300" y="524">0</text>
+    
+    <text x="580" y="524">50</text>
+    
+    
+  </g>
+  <text x="580" y="548" font-size="14" fill="#1A1B1E" text-anchor="middle">Pass@1（%）</text>
+
+  <!-- right: avg gain over baselines, separate scale 0-12 -->
+  <text x="1090" y="400" font-size="12" fill="#555" text-anchor="middle">较基线平均提升（%）</text>
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="970" y1="414" x2="970" y2="500"/>
+    <line x1="1140" y1="414" x2="1140" y2="500"/>
+  </g>
+  <rect x="900" y="430" width="217.7" height="20" fill="#0072B2"/>
+  <text x="1027" y="472" font-size="12" fill="#555" text-anchor="middle">10.22（n = 4 个基线）</text>
+  <line x1="900" y1="500" x2="1140" y2="500" stroke="#1A1B1E" stroke-width="0.75"/>
+  <line x1="900" y1="414" x2="900" y2="500" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="900" y1="500" x2="900" y2="504"/>
+    <line x1="1020" y1="500" x2="1020" y2="504"/>
+    <line x1="1140" y1="500" x2="1140" y2="504"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="900" y="524">0</text>
+    <text x="1020" y="524">6</text>
+    
+  </g>
+
+  <text x="90" y="586" font-size="12" fill="#555">后端为 GPT-4o、Claude 3.5 Sonnet、DeepSeek-Coder 三个 LLM 时，相比 4 个对比基线均显著提升；正文未披露各基线的 Pass@1 数值，故不绘制逐基线对比</text>
+
+  <!-- footnote -->
+  <text x="60" y="640" font-size="11" fill="#767676">数据：arXiv:2507.23370，ICSE 2026（字节跳动 Trae 团队与天津大学等）· 78.80% 与 10.22% 均为论文自测口径 · 榜单排名为论文报告时点状态 · 系统已开源</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1025;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1b2a4a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- accelerator ring -->
+  <ellipse cx="400" cy="340" rx="290" ry="180" fill="none" stroke="#3d5a80" stroke-width="10" stroke-dasharray="26 14"/>
+  <circle cx="400" cy="160" r="14" fill="#e0a458"/>
+  <circle cx="690" cy="340" r="14" fill="#e0a458"/>
+  <circle cx="400" cy="520" r="14" fill="#e0a458"/>
+  <circle cx="110" cy="340" r="14" fill="#e0a458"/>
+  <circle cx="400" cy="340" r="46" fill="#e0a458"/>
+  <text x="400" y="350" font-family="sans-serif" font-size="30" fill="#0f1025" text-anchor="middle" font-weight="bold">AI</text>
+  <!-- sensor dots -->
+  <circle cx="250" cy="196" r="7" fill="#86b7ea"/>
+  <circle cx="560" cy="212" r="7" fill="#86b7ea"/>
+  <circle cx="620" cy="466" r="7" fill="#86b7ea"/>
+  <circle cx="205" cy="470" r="7" fill="#86b7ea"/>
+  <text x="400" y="34" font-family="sans-serif" font-size="34" fill="#f2f5fa" text-anchor="middle" font-weight="bold">AI 原生粒子加速器：三阶段自动驾驶路线</text>
+  <!-- stages -->
+  <g font-family="sans-serif" font-size="24" fill="#f2f5fa">
+    <rect x="760" y="130" width="400" height="96" rx="14" fill="#243b55"/>
+    <text x="784" y="172" font-weight="bold" fill="#86b7ea">阶段一：AI 辅助（当前）</text>
+    <text x="784" y="208">工具改装到人为中心系统</text>
+    <rect x="760" y="252" width="400" height="96" rx="14" fill="#243b55"/>
+    <text x="784" y="294" font-weight="bold" fill="#e0a458">阶段二：AI 增强（近期）</text>
+    <text x="784" y="330">无缝集成，人机协作操作</text>
+    <rect x="760" y="374" width="400" height="96" rx="14" fill="#243b55"/>
+    <text x="784" y="416" font-weight="bold" fill="#7ed6a5">阶段三：AI 自主（长期）</text>
+    <text x="784" y="452">AI 为主驾驶员，人类监督</text>
+  </g>
+  <text x="760" y="530" font-family="sans-serif" font-size="22" fill="#9fb3c8">九大研究方向 · 2-5 / 5-10 / 10+ 年分阶段推进</text>
+</svg>

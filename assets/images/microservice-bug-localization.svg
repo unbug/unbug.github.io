@@ -1,0 +1,98 @@
+<?xml version="1.0" ?><svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">在 46 个仓库、110 万行代码的企业系统上，摘要化定位取得 Pass@10 为 0.82、MRR 为 0.50，显著超越向量检索基线与智能体 RAG 系统</text>
+
+
+  <!-- ===== panel a: method structure ===== -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">方法流程：分层摘要 + 两阶段搜索（定性流程，无数值）</text>
+
+  <!-- summary levels -->
+  <rect x="90" y="150" width="170" height="40" fill="none" stroke="#56B4E9" stroke-width="1.5"/>
+  <text x="175" y="175" font-size="12.5" fill="#1A1B1E" text-anchor="middle">文件摘要（实现描述）</text>
+  <rect x="90" y="200" width="170" height="40" fill="none" stroke="#56B4E9" stroke-width="1.5"/>
+  <text x="175" y="225" font-size="12.5" fill="#1A1B1E" text-anchor="middle">目录摘要（模块职责）</text>
+  <rect x="90" y="250" width="170" height="40" fill="none" stroke="#56B4E9" stroke-width="1.5"/>
+  <text x="175" y="275" font-size="12.5" fill="#1A1B1E" text-anchor="middle">仓库摘要（功能边界）</text>
+  <g stroke="#0072B2" stroke-width="1.5">
+    <line x1="260" y1="170" x2="300" y2="205"/>
+    <line x1="260" y1="220" x2="300" y2="220"/>
+    <line x1="260" y1="270" x2="300" y2="235"/>
+    <line x1="440" y1="220" x2="490" y2="220"/>
+  </g>
+  <polygon points="490,215 500,220 490,225" fill="#0072B2"/>
+  <rect x="300" y="195" width="140" height="50" fill="none" stroke="#0072B2" stroke-width="1.5"/>
+  <text x="370" y="216" font-size="12.5" fill="#1A1B1E" text-anchor="middle">NL-to-NL 摘要库</text>
+  <text x="370" y="234" font-size="12" fill="#555" text-anchor="middle">替代跨模态检索</text>
+
+  <line x1="500" y1="220" x2="510" y2="220" stroke="#0072B2" stroke-width="1.5"/>
+
+  <!-- two-stage search -->
+  <rect x="510" y="150" width="240" height="52" fill="none" stroke="#D55E00" stroke-width="1.5"/>
+  <text x="630" y="172" font-size="12.5" fill="#1A1B1E" text-anchor="middle">第一阶段：路由</text>
+  <text x="630" y="190" font-size="12" fill="#555" text-anchor="middle">Bug 报告匹配到相关仓库</text>
+  <g stroke="#D55E00" stroke-width="1.5">
+    <line x1="630" y1="202" x2="630" y2="236"/>
+  </g>
+  <polygon points="625,236 630,246 635,236" fill="#D55E00"/>
+  <rect x="510" y="246" width="240" height="52" fill="none" stroke="#D55E00" stroke-width="1.5"/>
+  <text x="630" y="268" font-size="12.5" fill="#1A1B1E" text-anchor="middle">第二阶段：定位</text>
+  <text x="630" y="286" font-size="12" fill="#555" text-anchor="middle">仓库 → 目录 → 文件，自上而下</text>
+
+  <rect x="800" y="150" width="330" height="148" fill="none" stroke="#999999" stroke-width="1.5"/>
+  <text x="965" y="182" font-size="12.5" fill="#1A1B1E" text-anchor="middle">测试系统 DNext（DNEXT Technology）</text>
+  <text x="965" y="212" font-size="12.5" fill="#1A1B1E" text-anchor="middle">46 个仓库 · 110 万行代码</text>
+  <text x="965" y="242" font-size="12" fill="#555" text-anchor="middle">搜索路径全程可解释，每步给出可读理由</text>
+  <text x="965" y="266" font-size="12" fill="#555" text-anchor="middle">摘要化同时降低 token 成本</text>
+  <line x1="750" y1="220" x2="800" y2="220" stroke="#999999" stroke-width="1.5"/>
+
+  <text x="90" y="330" font-size="12" fill="#555">蓝 = 摘要与表示环节，橙 = 两阶段搜索环节，灰 = 系统环境与对照说明</text>
+
+  <!-- ===== panel b: metrics ===== -->
+  <text x="60" y="392" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="392" font-size="15" fill="#1A1B1E">核心指标（论文自测值，0–1 分制）</text>
+
+  <!-- value axis 0-1.00: y = 560 - 160*v ; each bar sits in its own column -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="300" y1="520" x2="600" y2="520"/>
+    <line x1="300" y1="480" x2="600" y2="480"/>
+    <line x1="300" y1="440" x2="600" y2="440"/>
+  </g>
+  <rect x="340" y="428.8" width="60" height="131.2" fill="#D55E00"/>
+  <text x="370" y="421" font-size="12" fill="#555" text-anchor="middle">82</text>
+  <text x="370" y="578" font-size="12.5" fill="#1A1B1E" text-anchor="middle">Pass@10</text>
+  <rect x="490" y="480" width="60" height="80" fill="#0072B2"/>
+  <text x="520" y="472" font-size="12" fill="#555" text-anchor="middle">50</text>
+  <text x="520" y="578" font-size="12.5" fill="#1A1B1E" text-anchor="middle">MRR</text>
+
+  <line x1="300" y1="400" x2="300" y2="560" stroke="#1A1B1E" stroke-width="0.75"/>
+  <line x1="300" y1="560" x2="600" y2="560" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="296" y1="560" x2="300" y2="560"/>
+    <line x1="296" y1="520" x2="300" y2="520"/>
+    <line x1="296" y1="480" x2="300" y2="480"/>
+    <line x1="296" y1="440" x2="300" y2="440"/>
+    <line x1="296" y1="400" x2="300" y2="400"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="290" y="564">0</text>
+    
+    <text x="290" y="484">50</text>
+    
+    
+  </g>
+  <text x="232" y="404" font-size="14" fill="#1A1B1E" text-anchor="end">指标值（%）</text>
+
+  <!-- interpretation note right of bars -->
+  <text x="620" y="430" font-size="12" fill="#555">Pass@10 为 0.82：约八成 Bug 在前十个候选位置内找到缺陷代码</text>
+  <text x="620" y="452" font-size="12" fill="#555">MRR 为 0.50：正确结果在返回列表中的平均排名靠前</text>
+  <text x="620" y="486" font-size="12" fill="#555">对比对象（正文未给出具体数值，仅定性结论）：</text>
+  <rect x="620" y="502" width="12" height="10" fill="#999999"/>
+  <text x="637" y="511" font-size="12" fill="#555">向量检索基线、GitHub Copilot、Cursor 等智能体 RAG 系统</text>
+  <text x="620" y="533" font-size="12" fill="#555">论文报告：本文方法相对上述对比对象均为显著优势</text>
+
+  <!-- footnote -->
+  <text x="60" y="640" font-size="11" fill="#767676">数据：arXiv:2512.05908，ICSE 2026 LLM4Code Workshop（伊尔迪兹技术大学与 Intellica）· DNext 为真实企业项目 · Pass@10 与 MRR 为论文自测口径 · 对比系统数值正文未披露</text>
+</svg>

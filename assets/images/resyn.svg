@@ -1,0 +1,69 @@
+<?xml version="1.0" ?><svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">利用生成比解决容易的生成器-验证器差距，ReSyn 自动生成推理环境并以验证器奖励做强化学习，在 BBEH 上取得 27% 相对提升</text>
+
+  <!-- ===== panel a: pipeline ===== -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">ReSyn 三步管道（定性流程，无数值）</text>
+
+  <rect x="90" y="140" width="290" height="110" fill="none" stroke="#0072B2" stroke-width="1.5"/>
+  <text x="235" y="168" font-size="12.5" font-weight="bold" fill="#1A1B1E" text-anchor="middle">1 环境合成</text>
+  <text x="235" y="192" font-size="12" fill="#555" text-anchor="middle">LLM 自动生成完整推理环境（代码形式）</text>
+  <text x="235" y="212" font-size="12" fill="#555" text-anchor="middle">含实例生成器（如何出题）</text>
+  <text x="235" y="232" font-size="12" fill="#555" text-anchor="middle">与验证器（如何批改答案）</text>
+
+  <line x1="380" y1="195" x2="430" y2="195" stroke="#999999" stroke-width="1.5"/>
+  <polygon points="430,190 440,195 430,200" fill="#999999"/>
+
+  <rect x="450" y="140" width="290" height="110" fill="none" stroke="#009E73" stroke-width="1.5"/>
+  <text x="595" y="168" font-size="12.5" font-weight="bold" fill="#1A1B1E" text-anchor="middle">2 数据生成</text>
+  <text x="595" y="192" font-size="12" fill="#555" text-anchor="middle">每个环境生成成千上万个问题实例</text>
+  <text x="595" y="212" font-size="12" fill="#555" text-anchor="middle">验证器自动批改</text>
+  <text x="595" y="232" font-size="12" fill="#555" text-anchor="middle">覆盖约束满足、算法谜题、空间推理等任务类型</text>
+
+  <line x1="740" y1="195" x2="790" y2="195" stroke="#999999" stroke-width="1.5"/>
+  <polygon points="790,190 800,195 790,200" fill="#999999"/>
+
+  <rect x="810" y="140" width="300" height="110" fill="none" stroke="#D55E00" stroke-width="1.5"/>
+  <text x="960" y="168" font-size="12.5" font-weight="bold" fill="#1A1B1E" text-anchor="middle">三 模型训练</text>
+  <text x="960" y="192" font-size="12" fill="#555" text-anchor="middle">强化学习训练推理模型</text>
+  <text x="960" y="212" font-size="12" fill="#555" text-anchor="middle">验证器提供奖励信号</text>
+  <text x="960" y="232" font-size="12" fill="#555" text-anchor="middle">基座模型：Qwen2.5-7B-Instruct</text>
+
+  <text x="90" y="286" font-size="12" fill="#555">关键洞察——生成器-验证器差距：人类逐步写推理标注太贵，写答案验证器容易得多；现有验证器方法只依赖少数手工制作的环境</text>
+
+  <!-- ===== panel b: headline gain ===== -->
+  <text x="60" y="348" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="348" font-size="15" fill="#1A1B1E">高难基准 BBEH 的相对提升（正文唯一量化数值）</text>
+
+  <!-- horizontal axis: 0-30%, x = 300 + 16*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="700" y1="380" x2="700" y2="470"/>
+    <line x1="1100" y1="380" x2="1100" y2="470"/>
+  </g>
+  <text x="288" y="424" font-size="12.5" fill="#1A1B1E" text-anchor="end">ReSyn 训练后</text>
+  <rect x="300" y="410" width="432" height="20" fill="#D55E00"/>
+  <text x="742" y="424" font-size="12" fill="#555">27%</text>
+  <line x1="300" y1="380" x2="300" y2="470" stroke="#1A1B1E" stroke-width="0.75"/>
+  <line x1="300" y1="470" x2="1100" y2="470" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="300" y1="470" x2="300" y2="474"/>
+    <line x1="700" y1="470" x2="700" y2="474"/>
+    <line x1="1100" y1="470" x2="1100" y2="474"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="300" y="494">0</text>
+    
+    
+  </g>
+  <text x="700" y="520" font-size="14" fill="#1A1B1E" text-anchor="middle">相对提升（%）</text>
+  <text x="820" y="404" font-size="12" fill="#555">基线 = 训练前，提升 27%（相对值）</text>
+
+  <text x="90" y="566" font-size="12" fill="#555">其余报告结果为定性方向，正文未给数值：多个推理基准一致提升；域外泛化更好，没见过的数学题也做得更好；</text>
+  <text x="90" y="586" font-size="12" fill="#555">消融实验显示验证器监督与任务多样性均重要，两者结合效果最佳</text>
+
+  <!-- footnote -->
+  <text x="60" y="640" font-size="11" fill="#767676">数据：arXiv:2602.20117（卡内基梅隆大学与亚马逊云科技，投稿 ICLR 2026）· 27% 为 BBEH 相对提升、论文自测口径 · 其余基准正文仅给方向性结论，未绘制数值坐标 · 预印本未经同行评审</text>
+</svg>

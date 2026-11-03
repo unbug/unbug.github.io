@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">综述以基础、自我进化、集体三层框架组织智能体推理，覆盖六大应用领域与六大开放问题</text>
+
+  <!-- ===== panel a: three layers ===== -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">三层框架：按轴排列的层次与代表系统</text>
+
+  <!-- axes -->
+  <text x="600" y="130" font-size="12" fill="#555" text-anchor="middle">智能体数量（序列轴：单智能体 → 多智能体）</text>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="60" y1="504" x2="1140" y2="504"/>
+    <line x1="60" y1="140" x2="60" y2="504"/>
+    <line x1="56" y1="504" x2="60" y2="504"/>
+    <line x1="56" y1="140" x2="60" y2="140"/>
+  </g>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="60" y1="504" x2="60" y2="508"/>
+    <line x1="600" y1="504" x2="600" y2="508"/>
+    <line x1="1140" y1="504" x2="1140" y2="508"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="60" y="526">单智能体</text>
+    <text x="1130" y="526" text-anchor="end">多智能体</text>
+  </g>
+  <text x="34" y="332" font-size="12.5" fill="#1A1B1E" text-anchor="middle" transform="rotate(-90 34 332)">进化程度（序列轴：静态执行 → 持续自我改进）</text>
+  <g font-size="12.5" fill="#1A1B1E">
+    <text x="60" y="548" text-anchor="start">轴低端：静态执行</text>
+    <text x="60" y="132" text-anchor="start">轴高端：持续进化</text>
+  </g>
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="60" y1="140" x2="1140" y2="140"/>
+    <line x1="600" y1="140" x2="600" y2="504"/>
+  </g>
+
+  <!-- 基础推理: single agent, static -> bottom-left -->
+  <rect x="90" y="410" width="440" height="80" rx="4" fill="#0072B2" opacity="0.10"/>
+  <rect x="90" y="410" width="440" height="4" fill="#0072B2"/>
+  <text x="106" y="436" font-size="13" font-weight="bold" fill="#1A1B1E">基础智能体推理</text>
+  <text x="106" y="456" font-size="12" fill="#555">稳定环境中的规划推理、工具使用优化、智能体搜索</text>
+  <text x="106" y="476" font-size="12" fill="#555">代表：ReAct、OpenHands、Toolformer、Gorilla、HuggingGPT</text>
+
+  <!-- 自我进化: single agent evolving -> mid-left upper -->
+  <rect x="90" y="160" width="440" height="80" rx="4" fill="#009E73" opacity="0.10"/>
+  <rect x="90" y="160" width="440" height="4" fill="#009E73"/>
+  <text x="106" y="186" font-size="13" font-weight="bold" fill="#1A1B1E">自我进化智能体推理</text>
+  <text x="106" y="206" font-size="12" fill="#555">自我批判与验证器反馈、事实/经验/结构化记忆</text>
+  <text x="106" y="226" font-size="12" fill="#555">代表：Reflexion、Voyager、Memory-R1</text>
+
+  <!-- 集体: multi agent -> right spanning -->
+  <rect x="640" y="160" width="500" height="330" rx="4" fill="#E69F00" opacity="0.10"/>
+  <rect x="640" y="160" width="500" height="4" fill="#E69F00"/>
+  <text x="656" y="186" font-size="13" font-weight="bold" fill="#1A1B1E">集体多智能体推理</text>
+  <text x="656" y="206" font-size="12" fill="#555">角色分为领导者、工作者、批评者、记忆管理者、沟通促进者</text>
+  <text x="656" y="226" font-size="12" fill="#555">代表：MetaGPT、AutoGen、GPTSwarm</text>
+
+  <!-- ===== panel b: optimization modes ===== -->
+  <text x="60" y="562" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="562" font-size="15" fill="#1A1B1E">两种优化模式</text>
+  <g font-size="12" fill="#1A1B1E">
+    <text x="60" y="588"><tspan fill="#0072B2" font-weight="bold">上下文推理</tspan>　冻结参数，推理时编排：结构化编排、基于搜索的规划、自适应工作流（如 Tree-of-Thoughts）</text>
+    <text x="60" y="610"><tspan fill="#D55E00" font-weight="bold">训练后推理</tspan>　更新权重：强化学习与监督微调（如 DeepSeek-R1、Search-R1、ToolLLM）</text>
+  </g>
+  <text x="620" y="588" font-size="12" fill="#555">评估基准分两类：核心机制基准（工具使用、搜索、</text>
+  <text x="620" y="610" font-size="12" fill="#555">记忆与规划、多智能体系统）与应用级基准</text>
+  <text x="620" y="628" font-size="12" fill="#555">（具身、科学发现、医疗、网络智能体）</text>
+
+  <!-- footnote -->
+  <text x="60" y="640" font-size="11" fill="#767676">数据：arXiv:2601.12538 综述（UIUC、Meta、Amazon、Google DeepMind、UCSD、耶鲁）</text>
+  <text x="60" y="658" font-size="11" fill="#767676">面板 a 两轴为综述定义的序列位置轴（智能体数量 × 进化程度），非数值统计口径，框位置仅表示层次归属 · 预印本未经同行评审</text>
+</svg>

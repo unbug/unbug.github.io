@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">将单一模型重解为不同更新频率的嵌套优化问题后，概念验证架构 HOPE 在语言建模、推理与长上下文任务上均优于传统基线</text>
+
+  <!-- ===== panel a: nested loops ===== -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">嵌套学习循环：层次越高、更新越慢（定性示意，横轴为相对时间，无数值刻度）</text>
+
+  <!-- time axis -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="120" y1="170" x2="720" y2="170"/>
+    <line x1="120" y1="245" x2="720" y2="245"/>
+    <line x1="120" y1="320" x2="720" y2="320"/>
+  </g>
+  <!-- fast layer: dense ticks -->
+  <text x="108" y="196" font-size="12.5" fill="#1A1B1E" text-anchor="end">底层</text>
+  <g stroke="#D55E00" stroke-width="1.5">
+    <line x1="130" y1="196" x2="130" y2="176"/><line x1="160" y1="196" x2="160" y2="176"/><line x1="190" y1="196" x2="190" y2="176"/><line x1="220" y1="196" x2="220" y2="176"/><line x1="250" y1="196" x2="250" y2="176"/><line x1="280" y1="196" x2="280" y2="176"/><line x1="310" y1="196" x2="310" y2="176"/><line x1="340" y1="196" x2="340" y2="176"/><line x1="370" y1="196" x2="370" y2="176"/><line x1="400" y1="196" x2="400" y2="176"/><line x1="430" y1="196" x2="430" y2="176"/><line x1="460" y1="196" x2="460" y2="176"/><line x1="490" y1="196" x2="490" y2="176"/><line x1="520" y1="196" x2="520" y2="176"/><line x1="550" y1="196" x2="550" y2="176"/><line x1="580" y1="196" x2="580" y2="176"/><line x1="610" y1="196" x2="610" y2="176"/><line x1="640" y1="196" x2="640" y2="176"/><line x1="670" y1="196" x2="670" y2="176"/><line x1="700" y1="196" x2="700" y2="176"/>
+  </g>
+  <text x="730" y="192" font-size="12" fill="#555">高频更新：处理即时模式，学得快、忘得快</text>
+  <!-- mid layer -->
+  <text x="108" y="271" font-size="12.5" fill="#1A1B1E" text-anchor="end">中层</text>
+  <g stroke="#0072B2" stroke-width="1.5">
+    <line x1="130" y1="271" x2="130" y2="251"/><line x1="220" y1="271" x2="220" y2="251"/><line x1="310" y1="271" x2="310" y2="251"/><line x1="400" y1="271" x2="400" y2="251"/><line x1="490" y1="271" x2="490" y2="251"/><line x1="580" y1="271" x2="580" y2="251"/><line x1="670" y1="271" x2="670" y2="251"/>
+  </g>
+  <text x="730" y="267" font-size="12" fill="#555">中频更新：中间时间尺度的适应</text>
+  <!-- slow layer -->
+  <text x="108" y="346" font-size="12.5" fill="#1A1B1E" text-anchor="end">高层</text>
+  <g stroke="#009E73" stroke-width="1.5">
+    <line x1="130" y1="346" x2="130" y2="326"/><line x1="400" y1="346" x2="400" y2="326"/><line x1="670" y1="346" x2="670" y2="326"/>
+  </g>
+  <text x="730" y="342" font-size="12" fill="#555">低频更新：指导长期适应，学得慢、记得牢</text>
+
+  <line x1="120" y1="366" x2="720" y2="366" stroke="#1A1B1E" stroke-width="0.75"/>
+  <text x="420" y="390" font-size="14" fill="#1A1B1E" text-anchor="middle">相对时间（定性轴，未给数值）</text>
+  <text x="120" y="416" font-size="12" fill="#555">每个子问题自带上下文流；更新频率沿底层到高层递减，构成记忆光谱</text>
+
+  <!-- ===== panel b: self-referential framework ===== -->
+  <text x="60" y="466" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="466" font-size="15" fill="#1A1B1E">统一视角：架构与优化算法是同一系统的两个方面（定性关系图）</text>
+
+  <rect x="90" y="492" width="200" height="46" fill="none" stroke="#1A1B1E" stroke-width="1.5"/>
+  <text x="190" y="520" font-size="12.5" fill="#1A1B1E" text-anchor="middle">模型架构</text>
+  <rect x="410" y="492" width="200" height="46" fill="none" stroke="#1A1B1E" stroke-width="1.5"/>
+  <text x="510" y="520" font-size="12.5" fill="#1A1B1E" text-anchor="middle">优化算法</text>
+  <g stroke="#999999" stroke-width="1.5">
+    <line x1="290" y1="507" x2="410" y2="507"/>
+    <line x1="410" y1="523" x2="290" y2="523"/>
+  </g>
+  <polygon points="410,502 420,507 410,512" fill="#999999"/>
+  <polygon points="290,518 280,523 290,528" fill="#999999"/>
+  <text x="350" y="500" font-size="12" fill="#555" text-anchor="middle">共同进化</text>
+
+  <rect x="680" y="492" width="440" height="46" fill="none" stroke="#0072B2" stroke-width="1.5"/>
+  <text x="900" y="512" font-size="12.5" fill="#1A1B1E" text-anchor="middle">连续学习设定：先学日常对话，再学法律合同</text>
+  <text x="900" y="530" font-size="12" fill="#555" text-anchor="middle">传统补丁方法（回放缓冲区、架构调整、限制参数变化幅度的优化器）未解决根本问题</text>
+
+  <text x="90" y="580" font-size="12" fill="#555">HOPE 报告结果（正文仅给出定性方向，未披露具体数值）：困惑度更低；推理准确率更高；</text>
+  <text x="90" y="600" font-size="12" fill="#555">长上下文表现更好，其中大海捞针（needle-in-a-haystack）回忆任务上传统模型经常失败、HOPE 表现出色</text>
+
+  <!-- footnote -->
+  <text x="60" y="640" font-size="11" fill="#767676">数据：arXiv:2512.24695，NeurIPS 2025（Google Research）· 本图为概念框架示意：论文在语言建模、推理、长上下文基准上自测优于基线，正文未披露数值，故不绘制数值坐标</text>
+</svg>
