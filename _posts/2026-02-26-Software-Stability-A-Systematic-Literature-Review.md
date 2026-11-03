@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《软件稳定性：系统性文献综述》"
 author: unbug
 categories: [Engineering]
-image: assets/images/screenshot-20230407-153622.jpg
+image: assets/images/Software-Stability-A-Systematic-Literature-Review.svg
 tags: [Reliability, LiteratureReview]
 description: "墨西哥韦拉克鲁斯大学团队发表于 CONISOFT 2018 的综述系统梳理了软件稳定性研究，给出涟漪效应的操作性定义与四类度量指标，指出当前研究集中在架构设计阶段，为领域画出完整知识地图。"
 ---

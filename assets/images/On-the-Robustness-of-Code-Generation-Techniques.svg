@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">语义等价改写使约 46% 的实例生成完全不同的代码，整体测试通过率仅约 13%</text>
+
+  <!-- ===== panel a: headline rates (100% stacked composition) ===== -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">措辞扰动的影响率（%，892 个 Java 方法）</text>
+
+  <!-- track rows: scale x=100 + 7.5 px per %, tracks to 73% (x=100..647.5) -->
+  <text x="100" y="148" font-size="12.5" fill="#1A1B1E">生成完全不同代码的实例</text>
+  <rect x="100" y="158" width="345" height="20" fill="#D55E00"/>
+  <rect x="445" y="158" width="202.5" height="20" fill="none" stroke="#D9D9D9" stroke-width="0.5"/>
+  <text x="110" y="173" font-size="12" fill="#FFFFFF">约 46%</text>
+  <text x="660" y="173" font-size="12" fill="#555">满条为未通过测试的约 73%</text>
+
+  <text x="100" y="216" font-size="12.5" fill="#1A1B1E">正确性随改写改变的实例</text>
+  <rect x="100" y="226" width="210" height="20" fill="#D55E00"/>
+  <rect x="310" y="226" width="337.5" height="20" fill="none" stroke="#D9D9D9" stroke-width="0.5"/>
+  <text x="110" y="241" font-size="12" fill="#FFFFFF">约 28%</text>
+  <text x="660" y="241" font-size="12" fill="#555">原描述通过测试、改写后通不过等变化</text>
+
+  <text x="100" y="284" font-size="12.5" fill="#1A1B1E">测试结果构成</text>
+  <rect x="100" y="294" width="97.5" height="20" fill="#0072B2"/>
+  <rect x="197.5" y="294" width="450" height="20" fill="#999999"/>
+  <text x="288" y="309" font-size="12" fill="#555">通过全部测试 约 13%（原始描述 112 例 / 人工改写 122 例）</text>
+  <text x="208" y="330" font-size="12" fill="#FFFFFF">未通过单元测试 约 73%（其余实例未计入两项）</text>
+
+  <!-- axis: ticks 0,20,28,46,73 -->
+  <line x1="100" y1="360" x2="647.5" y2="360" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="100" y1="360" x2="100" y2="364"/>
+    <line x1="250" y1="360" x2="250" y2="364"/>
+    <line x1="310" y1="360" x2="310" y2="364"/>
+    <line x1="445" y1="360" x2="445" y2="364"/>
+    <line x1="647.5" y1="360" x2="647.5" y2="364"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="100" y="380">0</text>
+    <text x="250" y="380">20</text>
+    <text x="310" y="380">28</text>
+    <text x="445" y="380">46</text>
+    <text x="647.5" y="380">73</text>
+  </g>
+  <text x="374" y="404" font-size="14" fill="#1A1B1E" text-anchor="middle">实例占比（%，满条为约 73%）</text>
+
+  <!-- ===== panel b: overlap of passing recommendations ===== -->
+  <text x="830" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="852" y="104" font-size="15" fill="#1A1B1E">两种描述下通过测试推荐的重叠（个）</text>
+
+  <!-- categorical comparison, counts as text labels (values all in post); no numeric axis -->
+  <g>
+    <circle cx="846" cy="146" r="5" fill="#0072B2"/>
+    <text x="862" y="151" font-size="12.5" fill="#1A1B1E">原始描述通过测试</text>
+    <text x="1040" y="151" font-size="12.5" fill="#1A1B1E" text-anchor="end">112 个</text>
+
+    <circle cx="846" cy="186" r="5" fill="#0072B2"/>
+    <text x="862" y="191" font-size="12.5" fill="#1A1B1E">人工改写通过测试</text>
+    <text x="1040" y="191" font-size="12.5" fill="#1A1B1E" text-anchor="end">122 个</text>
+
+    <circle cx="846" cy="226" r="5" fill="#D55E00"/>
+    <text x="862" y="231" font-size="12.5" fill="#1A1B1E">两者重叠</text>
+    <text x="1040" y="231" font-size="12.5" fill="#1A1B1E" text-anchor="end">98 个</text>
+
+    <circle cx="846" cy="266" r="5" fill="#999999"/>
+    <text x="862" y="271" font-size="12.5" fill="#1A1B1E">仅原始描述触发</text>
+    <text x="1040" y="271" font-size="12.5" fill="#1A1B1E" text-anchor="end">14 个</text>
+
+    <circle cx="846" cy="306" r="5" fill="#999999"/>
+    <text x="862" y="311" font-size="12.5" fill="#1A1B1E">仅人工改写触发</text>
+    <text x="1040" y="311" font-size="12.5" fill="#1A1B1E" text-anchor="end">24 个</text>
+  </g>
+  <text x="830" y="348" font-size="12" fill="#555">换个说法可能「捡到」原本生成不出的正确代码，</text>
+  <text x="830" y="366" font-size="12" fill="#555">也可能丢掉本来正确的结果</text>
+
+  <!-- ===== panel c: dataset & method stats ===== -->
+  <text x="60" y="452" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="82" y="452" font-size="15" fill="#1A1B1E">样本与方法规模</text>
+  <g font-size="12.5" fill="#1A1B1E">
+    <text x="60" y="482">1,401 个开源项目</text>
+    <text x="230" y="482">892 个 Java 方法（带 Javadoc 且被自带测试覆盖）</text>
+    <text x="580" y="482">平均长度约 150 tokens</text>
+    <text x="760" y="482">平均圈复杂度 5.3</text>
+    <text x="900" y="482">中位数 3.0</text>
+    <text x="960" y="482">TP 有效复述 77%，正确率约 87%</text>
+  </g>
+  <g stroke="#999999" stroke-width="0.75">
+    <line x1="60" y1="494" x2="1140" y2="494"/>
+  </g>
+  <text x="60" y="516" font-size="12" fill="#555">复述方式：人工改写、PEGASUS（深度学习复述）、TP（Translation Pivoting 启发式）；正确性以项目测试套件通过为代理指标</text>
+
+  <!-- footnote -->
+  <text x="60" y="600" font-size="11" fill="#767676">数据：arXiv:2302.00438（USI SEART 团队与莫利塞大学，GitHub Copilot）· 百分比为论文自测口径的约值 · 预印本未经同行评审</text>
+</svg>

@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《ChatGPT 提示模式十三式》"
 author: unbug
 categories: [AI, Engineering]
-image: assets/images/arxiv-paper-chatgpt-prompt-patterns.png
+image: assets/images/ChatGPT-Prompt-Patterns-for-Improving-Code-Quality.svg
 tags: [ChatGPT, PromptEngineering, AI]
 description: "范德堡大学团队的论文整理出 13 种经过 ChatGPT 验证的提示模式，覆盖需求获取、系统设计、代码质量与重构四大领域，把提示编写从个人技巧变成像设计模式一样可复用的工程实践。"
 ---

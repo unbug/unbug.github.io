@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">微调后 3B 评委 Kappa 达 0.57 超过 GPT-4.1-mini；10 候选加 1 评委配置提升 5.3% 至 20.6%</text>
+
+  <!-- ===== panel a: Kappa ===== -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">正确性判别 Cohen's Kappa</text>
+
+  <!-- horizontal bars x=300+500*v; 0.57->585 0.54->570 0.49->545 0.45->525 0.40->500 -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="425" y1="126" x2="425" y2="366"/>
+    <line x1="550" y1="126" x2="550" y2="366"/>
+  </g>
+  <g>
+    <text x="288" y="146" font-size="12.5" fill="#1A1B1E" text-anchor="end">Qwen2.5 Coder 3B（微调）</text>
+    <rect x="300" y="132" width="285" height="18" fill="#D55E00"/>
+    <text x="593" y="146" font-size="12" fill="#555">0.57</text>
+
+    <text x="288" y="182" font-size="12.5" fill="#1A1B1E" text-anchor="end">GPT-4.1-mini（对照）</text>
+    <rect x="300" y="168" width="270" height="18" fill="#999999"/>
+    <text x="578" y="182" font-size="12" fill="#555">0.54</text>
+
+    <text x="288" y="218" font-size="12.5" fill="#1A1B1E" text-anchor="end">Gemma-3 4B（从零样本 0.10 提升）</text>
+    <rect x="300" y="204" width="245" height="18" fill="#0072B2"/>
+    <text x="553" y="218" font-size="12" fill="#555">0.49</text>
+
+    <text x="288" y="254" font-size="12.5" fill="#1A1B1E" text-anchor="end">Qwen2.5 Coder 0.5B（从零样本 0.00 提升）</text>
+    <rect x="300" y="240" width="225" height="18" fill="#0072B2"/>
+    <text x="533" y="254" font-size="12" fill="#555">0.45</text>
+
+    <text x="288" y="290" font-size="12.5" fill="#1A1B1E" text-anchor="end">RankEF（对照方法）</text>
+    <rect x="300" y="276" width="200" height="18" fill="#999999"/>
+    <text x="508" y="290" font-size="12" fill="#555">0.40</text>
+  </g>
+  <text x="300" y="322" font-size="12" fill="#555">所有微调后小模型 Kappa 均达到 0.45 以上的中等一致水平</text>
+
+  <!-- value axis: ticks 0.00 and 0.50 only (both verbatim in post) -->
+  <line x1="300" y1="366" x2="675" y2="366" stroke="#1A1B1E" stroke-width="0.75"/>
+  <line x1="300" y1="126" x2="300" y2="366" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="300" y1="366" x2="300" y2="370"/>
+    <line x1="525" y1="366" x2="525" y2="370"/>
+    <line x1="585" y1="366" x2="585" y2="370"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="300" y="388">0.00</text>
+    <text x="525" y="388">0.45</text>
+    <text x="585" y="388">0.57</text>
+  </g>
+  <text x="487" y="410" font-size="14" fill="#1A1B1E" text-anchor="middle">Cohen's Kappa（无量纲）</text>
+
+  <!-- ===== panel b: Pass@1 improvement ===== -->
+  <text x="760" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="782" y="104" font-size="15" fill="#1A1B1E">10 候选 + 1 评委相比单模型的相对提升</text>
+
+  <!-- horizontal bars x=800+6*v; 20.6->923.6 16.0->896 12.1->872.6 11.1->866.6 5.3->831.8 -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="860" y1="126" x2="860" y2="366"/>
+    <line x1="920" y1="126" x2="920" y2="366"/>
+    <line x1="980" y1="126" x2="980" y2="366"/>
+    <line x1="1040" y1="126" x2="1040" y2="366"/>
+  </g>
+  <g>
+    <text x="788" y="146" font-size="12.5" fill="#1A1B1E" text-anchor="end">Phi-4 mini 4B</text>
+    <rect x="800" y="132" width="123.6" height="18" fill="#D55E00"/>
+    <text x="932" y="146" font-size="12" fill="#555">+20.6%（Pass@1 0.200 → 0.406）</text>
+
+    <text x="788" y="182" font-size="12.5" fill="#1A1B1E" text-anchor="end">Qwen2.5 Coder 3B</text>
+    <rect x="800" y="168" width="96" height="18" fill="#0072B2"/>
+    <text x="904" y="182" font-size="12" fill="#555">+16.0%（Pass@1 达 0.521）</text>
+
+    <text x="788" y="218" font-size="12.5" fill="#1A1B1E" text-anchor="end">DeepSeek Coder 1.3B</text>
+    <rect x="800" y="204" width="72.6" height="18" fill="#0072B2"/>
+    <text x="881" y="218" font-size="12" fill="#555">+12.1%</text>
+
+    <text x="788" y="254" font-size="12.5" fill="#1A1B1E" text-anchor="end">OpenCoder 1.5B</text>
+    <rect x="800" y="240" width="66.6" height="18" fill="#0072B2"/>
+    <text x="875" y="254" font-size="12" fill="#555">+11.1%</text>
+
+    <text x="788" y="290" font-size="12.5" fill="#1A1B1E" text-anchor="end">Gemma-3 4B</text>
+    <rect x="800" y="276" width="31.8" height="18" fill="#0072B2"/>
+    <text x="840" y="290" font-size="12" fill="#555">+5.3%</text>
+  </g>
+
+  <!-- value axis: ticks 0,5,10,20 (all verbatim in post) -->
+  <line x1="800" y1="366" x2="1100" y2="366" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="800" y1="366" x2="800" y2="370"/>
+    <line x1="830" y1="366" x2="830" y2="370"/>
+    <line x1="860" y1="366" x2="860" y2="370"/>
+    <line x1="920" y1="366" x2="920" y2="370"/>
+    <line x1="1040" y1="366" x2="1040" y2="370"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="800" y="388">0</text>
+    <text x="830" y="388">5</text>
+    <text x="860" y="388">10</text>
+    <text x="920" y="388">20</text>
+  </g>
+  <text x="950" y="410" font-size="14" fill="#1A1B1E" text-anchor="middle">相对提升（%）</text>
+
+  <!-- ===== panel c: small beats big + cost ===== -->
+  <text x="60" y="462" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="82" y="462" font-size="15" fill="#1A1B1E">以小胜大与硬件成本</text>
+  <g font-size="12.5" fill="#1A1B1E">
+    <text x="60" y="492">小模型团队五个中有四个超越对应大模型：Qwen2.5 Coder 3B 团队比 25 倍大的对应模型高 +0.034，Phi-4 mini 4B 团队高 +0.090</text>
+    <text x="680" y="492">硬件投入约 $600，对比 30B 级方案约 $17,500，相差约 29 倍</text>
+  </g>
+  <g stroke="#999999" stroke-width="0.75">
+    <line x1="60" y1="504" x2="1140" y2="504"/>
+  </g>
+  <text x="60" y="526" font-size="12" fill="#555">实验要点：10 个候选优于 2 或 5 个；1 个评委通常足够，多评委收益很小；所有方法显著优于随机选择与 log likelihood 选择</text>
+
+  <!-- footnote -->
+  <text x="60" y="600" font-size="11" fill="#767676">数据：arXiv:2602.11911（USI，ICSE 2026；HumanEval、MBPP、CoderEval 三基准，对照大模型参数为小模型 5-25 倍）· Kappa 与提升幅度为论文自测口径 · 预印本未经同行评审</text>
+</svg>

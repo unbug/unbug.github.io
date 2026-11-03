@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">13 种提示模式按软件工程生命周期分为四类，覆盖需求获取到重构</text>
+
+  <!-- ===== panel a: category bars ===== -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">四大领域包含的模式数（个，共 13）</text>
+
+  <!-- horizontal bars, length proportional to count (40px per mode); no numeric ticks needed since labels state counts in text form -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="250" y1="130" x2="250" y2="330"/>
+  </g>
+  <g>
+    <text x="238" y="152" font-size="12.5" fill="#1A1B1E" text-anchor="end">需求获取</text>
+    <rect x="250" y="138" width="120" height="18" fill="#0072B2"/>
+    <text x="378" y="152" font-size="12" fill="#555">三种模式</text>
+
+    <text x="238" y="202" font-size="12.5" fill="#1A1B1E" text-anchor="end">系统设计与模拟</text>
+    <rect x="250" y="188" width="160" height="18" fill="#0072B2"/>
+    <text x="418" y="202" font-size="12" fill="#555">四种模式</text>
+
+    <text x="238" y="252" font-size="12.5" fill="#1A1B1E" text-anchor="end">代码质量</text>
+    <rect x="250" y="238" width="160" height="18" fill="#0072B2"/>
+    <text x="418" y="252" font-size="12" fill="#555">四种模式</text>
+
+    <text x="238" y="302" font-size="12.5" fill="#1A1B1E" text-anchor="end">重构</text>
+    <rect x="250" y="288" width="80" height="18" fill="#0072B2"/>
+    <text x="338" y="302" font-size="12" fill="#555">两种模式</text>
+  </g>
+  <line x1="250" y1="330" x2="470" y2="330" stroke="#1A1B1E" stroke-width="0.75"/>
+  <text x="360" y="354" font-size="14" fill="#1A1B1E" text-anchor="middle">模式数（个，条形长度正比于数量，数值以中文标注）</text>
+
+  <!-- ===== panel b: prompt structure checklist ===== -->
+  <text x="740" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="762" y="104" font-size="15" fill="#1A1B1E">好提示的通用结构包含四个元素</text>
+
+  <g font-size="12.5" fill="#1A1B1E">
+    <rect x="740" y="134" width="12" height="12" fill="#0072B2"/>
+    <text x="762" y="144">会话范围声明（如「从现在起」「扮演 X 角色」）</text>
+    <rect x="740" y="180" width="12" height="12" fill="#0072B2"/>
+    <text x="762" y="190">明确的任务描述</text>
+    <rect x="740" y="226" width="12" height="12" fill="#0072B2"/>
+    <text x="762" y="236">期望的输出格式要求</text>
+    <rect x="740" y="272" width="12" height="12" fill="#0072B2"/>
+    <text x="762" y="282">需要遵守的约束条件</text>
+  </g>
+
+  <!-- connector to note -->
+  <line x1="746" y1="296" x2="746" y2="330" stroke="#999999" stroke-width="0.75"/>
+  <text x="740" y="352" font-size="12" fill="#555">论文另给出四条落地示例：自动生成依赖文件、</text>
+  <text x="740" y="370" font-size="12" fill="#555">识别代码假设、伪代码重构、数据驱动重构</text>
+
+  <!-- footnote -->
+  <text x="60" y="560" font-size="11" fill="#767676">数据：arXiv:2303.07839（范德堡大学，13 种模式全部经 ChatGPT 实际对话验证）· 领域分类与模式计数为论文自述口径 · 预印本未经同行评审</text>
+</svg>
