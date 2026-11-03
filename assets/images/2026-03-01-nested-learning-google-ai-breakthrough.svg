@@ -69,5 +69,5 @@
   </g>
 
   <!-- footnote -->
-  <text x="60" y="656" font-size="11" fill="#767676">数据：NeurIPS 2025《Nested Learning》（Google Research，2025 年 11 月，论文自测口径）· 正文未报告具体数值与误差区间，a 面板为序列层次轴，b/c 面板为定性结论</text>
+  <text x="60" y="656" font-size="11" fill="#767676">数据：NeurIPS 2025《Nested Learning》（Google Research，论文自测口径）· 正文未报告具体数值与误差区间，a 面板为序列层次轴，b/c 面板为定性结论</text>
 </svg>

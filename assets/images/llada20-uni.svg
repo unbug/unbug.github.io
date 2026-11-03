@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Arial, sans-serif">
   <!-- Background -->
-  <rect width="800" height="500" fill="#f8f9fa" rx="8"/>
+  <rect width="800" height="500" fill="#CC79A7" rx="8"/>
   
   <!-- Title -->
-  <text x="400" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a1a2e">LLaDA2.0-Uni: Discrete Diffusion for Unified Multimodal Understanding &amp; Generation</text>
+  <text x="400" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#009E73">LLaDA2.0-Uni: Discrete Diffusion for Unified Multimodal Understanding &amp; Generation</text>
   
   <!-- Input Layer -->
-  <rect x="30" y="60" width="140" height="80" rx="6" fill="#e8f4f8" stroke="#2196F3" stroke-width="2"/>
-  <text x="100" y="90" text-anchor="middle" font-size="13" font-weight="bold" fill="#1565C0">Input</text>
+  <rect x="30" y="60" width="140" height="80" rx="6" fill="#CC79A7" stroke="#56B4E9" stroke-width="2"/>
+  <text x="100" y="90" text-anchor="middle" font-size="13" font-weight="bold" fill="#0072B2">Input</text>
   <text x="100" y="110" text-anchor="middle" font-size="11" fill="#333">Text</text>
   <text x="100" y="128" text-anchor="middle" font-size="11" fill="#333">Image</text>
   
@@ -15,8 +15,8 @@
   <line x1="170" y1="100" x2="210" y2="100" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
   
   <!-- Tokenizer -->
-  <rect x="210" y="60" width="160" height="80" rx="6" fill="#fff3e0" stroke="#FF9800" stroke-width="2"/>
-  <text x="290" y="90" text-anchor="middle" font-size="13" font-weight="bold" fill="#E65100">SigLIP-VQ</text>
+  <rect x="210" y="60" width="160" height="80" rx="6" fill="#CC79A7" stroke="#E69F00" stroke-width="2"/>
+  <text x="290" y="90" text-anchor="middle" font-size="13" font-weight="bold" fill="#D55E00">SigLIP-VQ</text>
   <text x="290" y="110" text-anchor="middle" font-size="11" fill="#333">Discrete Tokenizer</text>
   <text x="290" y="128" text-anchor="middle" font-size="11" fill="#333">Continuous → Discrete</text>
   
@@ -24,8 +24,8 @@
   <line x1="370" y1="100" x2="410" y2="100" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
   
   <!-- MoE Diffusion Core -->
-  <rect x="410" y="60" width="200" height="80" rx="6" fill="#e8f5e9" stroke="#4CAF50" stroke-width="2"/>
-  <text x="510" y="88" text-anchor="middle" font-size="13" font-weight="bold" fill="#2E7D32">MoE Diffusion</text>
+  <rect x="410" y="60" width="200" height="80" rx="6" fill="#CC79A7" stroke="#009E73" stroke-width="2"/>
+  <text x="510" y="88" text-anchor="middle" font-size="13" font-weight="bold" fill="#009E73">MoE Diffusion</text>
   <text x="510" y="108" text-anchor="middle" font-size="11" fill="#333">Block-level Masked Diffusion</text>
   <text x="510" y="126" text-anchor="middle" font-size="11" fill="#333">Text + Visual Tokens</text>
   
@@ -33,23 +33,23 @@
   <line x1="610" y1="100" x2="650" y2="100" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
   
   <!-- Decoder -->
-  <rect x="650" y="60" width="130" height="80" rx="6" fill="#f3e5f5" stroke="#9C27B0" stroke-width="2"/>
-  <text x="715" y="90" text-anchor="middle" font-size="13" font-weight="bold" fill="#6A1B9A">Decoder</text>
+  <rect x="650" y="60" width="130" height="80" rx="6" fill="#CC79A7" stroke="#CC79A7" stroke-width="2"/>
+  <text x="715" y="90" text-anchor="middle" font-size="13" font-weight="bold" fill="#CC79A7">Decoder</text>
   <text x="715" y="110" text-anchor="middle" font-size="11" fill="#333">4-8 Step</text>
   <text x="715" y="128" text-anchor="middle" font-size="11" fill="#333">Distilled</text>
   
   <!-- Output -->
-  <rect x="700" y="155" width="130" height="60" rx="6" fill="#e0f2f1" stroke="#009688" stroke-width="2"/>
-  <text x="765" y="185" text-anchor="middle" font-size="13" font-weight="bold" fill="#00695C">Output</text>
+  <rect x="700" y="155" width="130" height="60" rx="6" fill="#CC79A7" stroke="#009E73" stroke-width="2"/>
+  <text x="765" y="185" text-anchor="middle" font-size="13" font-weight="bold" fill="#009E73">Output</text>
   <text x="765" y="205" text-anchor="middle" font-size="11" fill="#333">HD Image</text>
   
   <!-- Training Pipeline -->
-  <text x="400" y="260" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a2e">Training Pipeline (Three Stages)</text>
+  <text x="400" y="260" text-anchor="middle" font-size="16" font-weight="bold" fill="#009E73">Training Pipeline (Three Stages)</text>
   <line x1="100" y1="275" x2="700" y2="275" stroke="#ccc" stroke-width="1" stroke-dasharray="4"/>
   
   <!-- Stage 1 -->
-  <rect x="40" y="290" width="200" height="100" rx="6" fill="#e3f2fd" stroke="#1976D2" stroke-width="1.5"/>
-  <text x="140" y="315" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565C0">Stage 1</text>
+  <rect x="40" y="290" width="200" height="100" rx="6" fill="#CC79A7" stroke="#0072B2" stroke-width="1.5"/>
+  <text x="140" y="315" text-anchor="middle" font-size="12" font-weight="bold" fill="#0072B2">Stage 1</text>
   <text x="140" y="335" text-anchor="middle" font-size="11" fill="#333">Discrete Tokenizer</text>
   <text x="140" y="355" text-anchor="middle" font-size="11" fill="#333">Pre-training</text>
   <text x="140" y="375" text-anchor="middle" font-size="10" fill="#666">Image → Semantic Tokens</text>
@@ -58,8 +58,8 @@
   <line x1="240" y1="340" x2="265" y2="340" stroke="#666" stroke-width="1.5" marker-end="url(#arrowhead)"/>
   
   <!-- Stage 2 -->
-  <rect x="270" y="290" width="200" height="100" rx="6" fill="#fff8e1" stroke="#F57C00" stroke-width="1.5"/>
-  <text x="370" y="315" text-anchor="middle" font-size="12" font-weight="bold" fill="#E65100">Stage 2</text>
+  <rect x="270" y="290" width="200" height="100" rx="6" fill="#CC79A7" stroke="#E69F00" stroke-width="1.5"/>
+  <text x="370" y="315" text-anchor="middle" font-size="12" font-weight="bold" fill="#D55E00">Stage 2</text>
   <text x="370" y="335" text-anchor="middle" font-size="11" fill="#333">Vision-Language</text>
   <text x="370" y="355" text-anchor="middle" font-size="11" fill="#333">Understanding Pre-train</text>
   <text x="370" y="375" text-anchor="middle" font-size="10" fill="#666">VQA, Image Captioning</text>
@@ -68,14 +68,14 @@
   <line x1="470" y1="340" x2="495" y2="340" stroke="#666" stroke-width="1.5" marker-end="url(#arrowhead)"/>
   
   <!-- Stage 3 -->
-  <rect x="500" y="290" width="200" height="100" rx="6" fill="#e8f5e9" stroke="#388E3C" stroke-width="1.5"/>
-  <text x="600" y="315" text-anchor="middle" font-size="12" font-weight="bold" fill="#2E7D32">Stage 3</text>
+  <rect x="500" y="290" width="200" height="100" rx="6" fill="#CC79A7" stroke="#009E73" stroke-width="1.5"/>
+  <text x="600" y="315" text-anchor="middle" font-size="12" font-weight="bold" fill="#009E73">Stage 3</text>
   <text x="600" y="335" text-anchor="middle" font-size="11" fill="#333">Unified Understanding</text>
   <text x="600" y="355" text-anchor="middle" font-size="11" fill="#333">&amp; Generation Training</text>
   <text x="600" y="375" text-anchor="middle" font-size="10" fill="#666">Joint VLM + Diffusion</text>
   
   <!-- Key Advantages -->
-  <text x="400" y="430" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a1a2e">Key Advantages</text>
+  <text x="400" y="430" text-anchor="middle" font-size="14" font-weight="bold" fill="#009E73">Key Advantages</text>
   <line x1="150" y1="445" x2="650" y2="445" stroke="#ccc" stroke-width="1" stroke-dasharray="4"/>
   
   <text x="140" y="470" text-anchor="middle" font-size="11" fill="#333">Parallel Decoding</text>

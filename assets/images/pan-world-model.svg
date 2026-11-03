@@ -84,7 +84,7 @@
     <line x1="720" y1="505" x2="720" y2="509"/>
     <line x1="980" y1="505" x2="980" y2="509"/>
   </g>
-  <text x="600" y="562" font-size="12" fill="#555" text-anchor="middle">序列位置 1–4：论文陈述的能力顺序，位置间距无数值含义</text>
+  <text x="600" y="562" font-size="12" fill="#555" text-anchor="middle">序列位置：论文陈述的能力顺序，位置间距无数值含义</text>
 
   <!-- footnote -->
   <text x="60" y="622" font-size="11" fill="#767676">数据：论文 PAN（MBZUAI，2025 年 11 月，arxiv.org/abs/2511.09057）· 正文为定性描述、未含量化数值，a 面板为架构示意、b 面板为序列位置轴 · 预印本未经同行评审</text>
