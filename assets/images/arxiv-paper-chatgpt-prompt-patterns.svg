@@ -2,7 +2,7 @@
   <rect width="1200" height="675" fill="#FFFFFF"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">13 种经 ChatGPT 验证的提示模式按软件工程生命周期分为四类，覆盖需求到重构的完整链条</text>
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">13 种经 ChatGPT 验证的提示模式按软件工程生命周期分为四类，覆盖需求到重构全链条</text>
 
   <!-- ============ panel a ============ -->
   <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
@@ -72,5 +72,5 @@
   <text x="820" y="593" font-size="12" fill="#555">空心序号为结构元素，位置轴按论文归纳顺序排列</text>
 
   <!-- footer -->
-  <text x="60" y="656" font-size="11" fill="#767676">数据：arXiv:2303.07839（范德堡大学，13 种模式分 4 类，论文自述口径）· 面板 a 无数值刻度、数值直接标注 · 正文未报告误差区间，未画误差棒 · 预印本未经同行评审</text>
+  <text x="60" y="656" font-size="11" fill="#767676">数据：arXiv:2303.07839（范德堡大学，13 种模式分为四类，论文自述口径）· 面板 a 无数值刻度、数值直接标注 · 正文未报告误差区间，未画误差棒 · 预印本未经同行评审</text>
 </svg>

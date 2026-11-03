@@ -42,7 +42,7 @@
   <text x="960" y="403" font-size="12.5" fill="#1A1B1E" text-anchor="middle">SDXL Turbo</text>
   <text x="960" y="443" font-size="12" fill="#555" text-anchor="middle">步数 4</text>
 
-  <text x="620" y="476" font-size="12" fill="#555" text-anchor="middle">柱顶三角帽表示正文给出的近似值与区间上沿；按正文表格四行方法逐列排列</text>
+  <text x="620" y="476" font-size="12" fill="#555" text-anchor="middle">柱顶三角帽表示正文报告的近似值与区间上沿；按正文表格四行方法逐列排列</text>
 
   <!-- ============ panel b ============ -->
   <text x="60" y="536" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>

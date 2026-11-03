@@ -25,15 +25,11 @@ STAR 把架构设计变成一个进化问题，包含三个机制：
 
 理论根基来自动力系统（刻画模型动态行为）、信号处理（优化信息流）与数值线性代数（保证计算效率）的跨学科融合，使搜索能触及人类设计师想不到的设计。此外 STAR 具备模块化特性：能在进化中发现重复出现的结构模式与最优组件组合，沉淀为可复用构建块。
 
-![STAR 进化过程](assets/images/star-evolution-process.jpg)
-
-## 实验结果与意义
+ ## 实验结果与意义
 
 在自回归语言建模这一 Transformer 主场，STAR 合成的模型缓存相比混合模型减少 `37%`，相比传统 Transformer 减少 `90%`，且质量未下降。同时优化模型质量与大小时，参数数量减少 `13%`，标准基准性能反而提高。可扩展性上，进化出的架构从 `1.25 亿`参数扩展到 `10 亿`参数，性能与 Transformer++ 及混合模型相当或更好，缓存需求则大幅降低。
 
-![STAR 性能对比](assets/images/star-performance-comparison.jpg)
-
-STAR 的意义在于把架构设计从专家手工工艺转为自动化工程：缓存与参数效率直接降低推理内存与能耗；自动化搜索降低了架构创新门槛；进化出的非 Transformer 骨架为后 Transformer 时代提供了可验证路径。Liquid AI 计划将方法推向计算机视觉、语音、科学计算与边缘设备等更多场景。
+ STAR 的意义在于把架构设计从专家手工工艺转为自动化工程：缓存与参数效率直接降低推理内存与能耗；自动化搜索降低了架构创新门槛；进化出的非 Transformer 骨架为后 Transformer 时代提供了可验证路径。Liquid AI 计划将方法推向计算机视觉、语音、科学计算与边缘设备等更多场景。
 
 ## References
 - [Synthesis of Tailored Architectures by Targeted Evolution][paper1-url]

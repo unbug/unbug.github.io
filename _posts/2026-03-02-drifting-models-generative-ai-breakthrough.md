@@ -19,9 +19,7 @@ MIT 何恺明团队的论文[《Generative Modeling via Drifting》][paper1-url]
 
 核心机制是**漂移场（Drifting Field）V**，具有两个性质：一是指示当前分布应向哪个方向漂移才能更接近真实数据；二是当分布与真实数据完美匹配时自动趋近于 0。
 
-![Drifting Models 架构图](assets/images/drifting-models-architecture.png)
-
-## 实现方式与实验结果
+ ## 实现方式与实验结果
 
 训练过程分三步：从当前 batch 估计漂移场 V；用 V 把当前样本漂移得到目标；让网络回归匹配漂移后的目标。推理过程只有一步 `x = f(noise)`，没有迭代。
 
@@ -36,9 +34,7 @@ MIT 何恺明团队的论文[《Generative Modeling via Drifting》][paper1-url]
 
 **机器人控制**：把 Diffusion Policy 的多步生成替换为 Drifting Models 单步生成后，任务成功率不降反升，推理速度快了几十倍，对实时控制意义直接。
 
-![Drifting Models 性能对比](assets/images/drifting-models-performance.png)
-
-## 方法意义
+ ## 方法意义
 
 这篇论文的贡献不止于速度。它把"生成是逐步打磨过程"的默认假设改为"训练时完成分布进化"，使实时生成（视频、AR/VR、交互式创作）成为可能，同时降低部署门槛，手机等边缘设备也可运行高质量生成模型。论文还给出理论分析解释漂移场为何有效，这一思路对 ResNet、Mask R-CNN、MAE 之后何恺明团队延续的"重新思考基本问题"路线是一致延续，也可能启发视频、音频、3D 等更多模态的单步生成探索。
 

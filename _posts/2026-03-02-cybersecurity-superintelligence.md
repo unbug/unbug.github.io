@@ -19,9 +19,7 @@ Alias Robotics 2026 年 2 月发表的论文[《Towards Cybersecurity Superintel
 
 **G-CTR（2026）**：Generative Cut-the-Rope，引入博弈论战略推理。三项核心创新：从安全日志生成攻击图、用 Cut-the-Rope 算法计算纳什均衡、把策略结果转为自然语言注入。效果：成功率从 20.0% 提升至 `42.9%`，单次成功成本从 0.32 美元降至 `0.12 美元`，方差降低 5.2 倍，攻防对抗中对纯 LLM 基线取得 2:1 优势。
 
-![CAI vs 人类速度对比](assets/images/cai-vs-human-speed.jpg)
-
-## 角色反转与行业影响
+ ## 角色反转与行业影响
 
 演进各阶段中，人类从执行者（AI 辅助）到操作者（专家级 AI）再到监督者（博弈论 AI），AI 则从顾问变为战略行动者。论文据此指出四个行业影响：
 

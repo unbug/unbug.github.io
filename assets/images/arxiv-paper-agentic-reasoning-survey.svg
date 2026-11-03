@@ -33,21 +33,21 @@
   </g>
 
   <!-- 自我进化: single agent, evolving -> upper-left -->
-  <rect x="150" y="170" width="430" height="82" rx="4" fill="#009E73" opacity="0.10"/>
+  <rect x="150" y="170" width="430" height="82" rx="4" fill="none" stroke="#009E73" stroke-width="1.5"/>
   <rect x="150" y="170" width="430" height="4" fill="#009E73"/>
   <text x="166" y="196" font-size="13" font-weight="bold" fill="#1A1B1E">自我进化智能体推理</text>
   <text x="166" y="216" font-size="12" fill="#555">自我批判与验证器反馈，事实/经验/结构化记忆</text>
   <text x="166" y="236" font-size="12" fill="#555">代表：Reflexion、Voyager、Memory-R1</text>
 
   <!-- 基础: single agent, static -> lower-left -->
-  <rect x="150" y="342" width="430" height="82" rx="4" fill="#0072B2" opacity="0.10"/>
+  <rect x="150" y="342" width="430" height="82" rx="4" fill="none" stroke="#0072B2" stroke-width="1.5"/>
   <rect x="150" y="342" width="430" height="4" fill="#0072B2"/>
   <text x="166" y="368" font-size="13" font-weight="bold" fill="#1A1B1E">基础智能体推理</text>
   <text x="166" y="388" font-size="12" fill="#555">稳定环境中的规划推理、工具使用优化、智能体搜索</text>
   <text x="166" y="408" font-size="12" fill="#555">代表：ReAct、OpenHands、Toolformer、Gorilla、HuggingGPT</text>
 
   <!-- 集体: multi agent -> right -->
-  <rect x="650" y="170" width="450" height="254" rx="4" fill="#E69F00" opacity="0.10"/>
+  <rect x="650" y="170" width="450" height="254" rx="4" fill="none" stroke="#E69F00" stroke-width="1.5"/>
   <rect x="650" y="170" width="450" height="4" fill="#E69F00"/>
   <text x="666" y="196" font-size="13" font-weight="bold" fill="#1A1B1E">集体多智能体推理</text>
   <text x="666" y="216" font-size="12" fill="#555">角色分为领导者、工作者、批评者、记忆管理者、沟通促进者</text>
