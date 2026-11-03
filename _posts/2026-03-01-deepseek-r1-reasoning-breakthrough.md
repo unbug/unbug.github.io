@@ -5,7 +5,7 @@ author: unbug
 categories: [AI]
 image: assets/images/deepseek-r1-reasoning.svg
 tags: [DeepSeek, ReinforcementLearning, Reasoning, Nature]
-description: "深度求索发表于Nature的论文证明，大语言模型的推理能力可由纯强化学习激发，无需大规模人类标注推理轨迹，R1在数学代码基准上达到与OpenAI o1相当水平。"
+description: "深度求索发表于 Nature 的论文证明大语言模型的推理能力可由纯强化学习激发，无需大规模人类标注推理轨迹，训练中模型涌现出自我反思、自我验证与顿悟时刻，R1 在数学代码基准上达到与 OpenAI o1 相当水平。"
 ---
 
 深度求索（DeepSeek-AI）发表于 Nature 的论文[《DeepSeek-R1: Incentivizing Reasoning in LLMs through Reinforcement Learning》][paper1-url]证明：大语言模型的推理能力可由纯强化学习激发，无需大规模人类标注推理轨迹。

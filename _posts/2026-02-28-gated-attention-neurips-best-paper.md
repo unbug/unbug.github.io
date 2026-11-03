@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, Machine Learning]
 image: assets/images/gated-attention-hero.svg
 tags: [NeurIPS 2025, Gated Attention, LLM, Qwen]
-description: "阿里巴巴 Qwen 团队的 NeurIPS 2025 最佳论文在注意力输出后加头级 sigmoid 门控，额外开销不到 2% 延迟，换来训练稳定、基本消除注意力汇聚，RULER 长上下文外推提升超 10 个点，已集成到 Qwen3-Next。"
+description: "阿里巴巴 Qwen 团队的 NeurIPS 2025 最佳论文在注意力输出后加头级 sigmoid 门控，额外开销不到 2% 延迟，换来训练稳定、基本消除注意力汇聚现象，RULER 长上下文外推提升超 10 个点，已集成到 Qwen3-Next。"
 ---
 
 阿里巴巴 Qwen 团队的论文[《Gated Attention for Large Language Models》][paper1-url]获 NeurIPS 2025 最佳论文奖：在注意力输出后加一个门控，额外开销不到 `2%` 延迟，却消除注意力汇聚、提升长上下文能力。

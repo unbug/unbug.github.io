@@ -17,7 +17,7 @@
   </g>
 
   <!-- axis -->
-  <line x1="90" y1="300" x2="1080" y2="300" stroke="#1A1B1E" stroke-width="0.75"/>
+  <line x1="90" y1="300" x2="1140" y2="300" stroke="#1A1B1E" stroke-width="0.75"/>
   <g stroke="#1A1B1E" stroke-width="0.75">
     <line x1="145" y1="300" x2="145" y2="305"/>
     <line x1="255" y1="300" x2="255" y2="305"/>
@@ -28,7 +28,7 @@
     <line x1="805" y1="300" x2="805" y2="305"/>
     <line x1="915" y1="300" x2="915" y2="305"/>
     <line x1="1025" y1="300" x2="1025" y2="305"/>
-    <line x1="1135" y1="300" x2="1135" y2="305"/>
+    <line x1="1125" y1="300" x2="1125" y2="305"/>
   </g>
   <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
     <text x="145" y="325">P1</text>
@@ -40,7 +40,7 @@
     <text x="805" y="325">P7</text>
     <text x="915" y="325">P8</text>
     <text x="1025" y="325">P9</text>
-    <text x="1135" y="325">P10</text>
+    <text x="1125" y="325">P10</text>
   </g>
 
   <!-- markers -->
@@ -54,7 +54,7 @@
     <circle cx="805" cy="270" r="7" fill="#D55E00"/>
     <circle cx="915" cy="270" r="7" fill="#D55E00"/>
     <circle cx="1025" cy="270" r="7" fill="#D55E00"/>
-    <circle cx="1135" cy="270" r="7" fill="#D55E00"/>
+    <circle cx="1125" cy="270" r="7" fill="#D55E00"/>
   </g>
 
   <!-- expert annotations above solved -->
@@ -72,8 +72,8 @@
     <text x="915" y="210">相邻领域数学家认为正确，</text>
     <text x="915" y="228">2 位认为不够完整</text>
     <text x="1025" y="228">4/4 专家认定正确</text>
-    <text x="1135" y="210">2/2 专家认定正确</text>
-    <text x="1135" y="228">A 自主发现最优理论复杂度界</text>
+    <text x="1125" y="210">2/2 专家认定正确</text>
+    <text x="1125" y="228" text-anchor="end">A 自主发现最优复杂度界</text>
   </g>
 
   <!-- ============ panel b ============ -->

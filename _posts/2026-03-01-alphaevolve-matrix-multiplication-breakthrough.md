@@ -5,7 +5,7 @@ author: unbug
 categories: [AI]
 image: assets/images/alphaevolve-breakthrough.svg
 tags: [AlphaEvolve, Matrix Multiplication, Google DeepMind, Algorithm Discovery, Mathematics]
-description: "谷歌 DeepMind 的 AlphaEvolve 智能体用进化式代码搜索发现 4×4 矩阵乘法的 48 次标量乘法算法，打破 Strassen 算法保持 56 年的 49 次纪录，并已用于加速 Gemini 模型训练与优化 TPU 芯片电路设计。"
+description: "谷歌 DeepMind 的 AlphaEvolve 智能体用进化式代码搜索发现 4×4 矩阵乘法的 48 次标量乘法算法，打破 Strassen 算法保持 56 年的 49 次纪录，并已用于加速 Gemini 训练与优化 TPU 电路设计，展示 AI 自主发现新算法的能力。"
 ---
 
 ![AlphaEvolve 矩阵乘法突破]({{ site.baseurl }}/assets/images/alphaevolve-breakthrough.svg)

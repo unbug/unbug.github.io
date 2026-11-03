@@ -72,5 +72,5 @@
   <text x="60" y="624" font-size="12" fill="#555">奖励为混合信号：步骤级做格式检查与语法验证；任务级由代码判分加 LLM 评判，基于最终数据库状态与任务规范</text>
 
   <!-- footnote -->
-  <text x="60" y="656" font-size="11" fill="#767676">数据：arXiv:2602.10090《Agent World Model》（Snowflake 实验室，论文自测口径）· a 面板为正文报告的分基准分数，正文未报告误差区间，未画误差棒 · 已开源代码、AgentWorldModel-1K 数据集与 Arctic-AWM-4B/8B/14B 模型 · 预印本未经同行评审</text>
+  <text x="60" y="652" font-size="11" fill="#767676">数据：arXiv:2602.10090《Agent World Model》（Snowflake 实验室，论文自测口径）· 正文未报告误差区间，未画误差棒 · 已开源代码、数据集与模型 · 预印本未经同行评审</text>
 </svg>

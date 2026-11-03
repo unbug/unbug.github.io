@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, Engineering]
 image: assets/images/execution-guided-code-generation.svg
 tags: [Code Generation, EG-CFG, LLM]
-description: "执行引导方法 EG-CFG 用 beam search 生成候选并实时执行收集反馈，让模型边写边调试，MBPP 准确率从 49.4% 升至 96.6%，在四个代码基准上均有一致提升，小参数规模的模型也能获得大幅提升。"
+description: "执行引导方法 EG-CFG 用 beam search 生成候选代码并实时执行收集反馈，让模型边写边调试，MBPP 准确率从 49.4% 升至 96.6%，在四个代码基准上均有一致提升，小参数规模的模型也能获得大幅提升。"
 ---
 
 论文[《Execution Guided Line-by-Line Code Generation》][paper1-url]提出 EG-CFG（执行引导的无分类器引导）方法，把代码实时执行反馈引入生成过程，让模型边写边调试：MBPP 准确率从 `49.4%` 升至 `96.6%`，超过 GPT-4o 等模型。
