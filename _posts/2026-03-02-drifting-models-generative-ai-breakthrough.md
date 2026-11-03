@@ -3,7 +3,7 @@ layout: post
 title: "一分钟读论文：《Drifting Models 单步生成》"
 author: unbug
 categories: [AI]
-image: assets/images/drifting-models-generative-ai-breakthrough.svg
+image: assets/images/drifting-models-teaser.svg
 tags: [Generative AI, Drifting Models, Kaiming He, MIT, Diffusion Models]
 description: "MIT 何恺明团队提出 Drifting Models，把扩散模型推理时的多步迭代搬到训练时完成分布漂移，推理只需一步生成，ImageNet 256 上以单步达到 FID 1.54，优于传统扩散模型 50 到 100 步的效果，机器人控制任务成功率不降反升。"
 ---
