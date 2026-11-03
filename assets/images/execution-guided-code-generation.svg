@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">执行反馈逐行引导使 MBPP 准确率从 49.4% 升至 96.6%，四个基准均有一致提升</text>
+
+  <!-- ============ panel a: four benchmarks ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">四个基准：基线 → EG-CFG（准确率 %）</text>
+
+  <!-- legend -->
+  <g font-size="12" fill="#555">
+    <rect x="900" y="94" width="12" height="10" fill="#999999"/>
+    <text x="917" y="103">基线</text>
+    <rect x="975" y="94" width="12" height="10" fill="#0072B2"/>
+    <text x="992" y="103">EG-CFG 小模型</text>
+    <rect x="1105" y="94" width="12" height="10" fill="#D55E00"/>
+    <text x="1122" y="103">大模型</text>
+  </g>
+
+  <!-- y: 0 -> y=440, 100% -> y=130; y = 440 - 3.1*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+        <line x1="110" y1="285" x2="1140" y2="285"/>
+            <line x1="110" y1="130" x2="1140" y2="130"/>
+  </g>
+  <!-- MBPP: 49.4->286.86 h153.14 ; 83.2->182.48 h257.52 ; 96.6->140.54 h299.46 -->
+  <g>
+    <rect x="140" y="286.86" width="50" height="153.14" fill="#999999"/>
+    <text x="165" y="279" font-size="12" fill="#555" text-anchor="middle">49.4%</text>
+    <rect x="196" y="182.48" width="50" height="257.52" fill="#0072B2"/>
+    <text x="221" y="175" font-size="12" fill="#555" text-anchor="middle">83.2%</text>
+    <rect x="252" y="140.54" width="50" height="299.46" fill="#D55E00"/>
+    <text x="277" y="133" font-size="12" fill="#555" text-anchor="middle">96.6%</text>
+    <text x="221" y="462" font-size="12.5" fill="#1A1B1E" text-anchor="middle">MBPP</text>
+  </g>
+  <!-- HumanEval: 82.92->183.548 ; 99.4->131.86 -->
+  <g>
+    <rect x="380" y="183.548" width="50" height="256.452" fill="#999999"/>
+    <text x="405" y="176" font-size="12" fill="#555" text-anchor="middle">82.92%</text>
+    <rect x="436" y="131.86" width="50" height="308.14" fill="#0072B2"/>
+    <text x="461" y="124" font-size="12" fill="#555" text-anchor="middle">99.4%</text>
+    <text x="433" y="462" font-size="12.5" fill="#1A1B1E" text-anchor="middle">HumanEval</text>
+  </g>
+  <!-- CodeContests: 41.81->310.387 ; 60.6->252.14 -->
+  <g>
+    <rect x="640" y="310.387" width="50" height="129.613" fill="#999999"/>
+    <text x="665" y="303" font-size="12" fill="#555" text-anchor="middle">41.81%</text>
+    <rect x="696" y="252.14" width="50" height="187.86" fill="#0072B2"/>
+    <text x="721" y="244" font-size="12" fill="#555" text-anchor="middle">60.6%</text>
+    <text x="693" y="462" font-size="12.5" fill="#1A1B1E" text-anchor="middle">CodeContests</text>
+  </g>
+  <!-- DS-1000: 38.9->319.41 ; 69.9->223.29 -->
+  <g>
+    <rect x="890" y="319.41" width="50" height="120.59" fill="#999999"/>
+    <text x="915" y="312" font-size="12" fill="#555" text-anchor="middle">38.9%</text>
+    <rect x="946" y="223.29" width="50" height="216.71" fill="#0072B2"/>
+    <text x="971" y="215" font-size="12" fill="#555" text-anchor="middle">69.9%</text>
+    <text x="943" y="462" font-size="12.5" fill="#1A1B1E" text-anchor="middle">DS-1000</text>
+  </g>
+
+  <!-- axis -->
+  <line x1="110" y1="440" x2="1140" y2="440" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="106" y1="440" x2="110" y2="440"/>
+        <line x1="106" y1="285" x2="110" y2="285"/>
+            <line x1="106" y1="130" x2="110" y2="130"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="100" y="444">0</text>
+        <text x="100" y="289">50</text>
+            <text x="100" y="134">100</text>
+  </g>
+  <text x="76" y="112" font-size="14" fill="#1A1B1E" text-anchor="start">准确率（%）</text>
+
+  <!-- ============ panel b: ablation on MBPP ============ -->
+  <text x="60" y="512" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="512" font-size="15" fill="#1A1B1E">MBPP 消融实验：去掉组件后的准确率（%）</text>
+  <!-- x = 300 + 6*v : 83.2->799.2 76.4->758.4 75.2->751.2 58.2->649.2 -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="540" y1="530" x2="540" y2="612"/>
+    <line x1="720" y1="530" x2="720" y2="612"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="288" y="546">完整方法</text>
+    <text x="288" y="568">只用最小执行追踪</text>
+    <text x="288" y="590">去掉 CFG</text>
+    <text x="288" y="612">去掉 beam search</text>
+  </g>
+  <rect x="300" y="536" width="499.2" height="13" fill="#D55E00"/>
+  <text x="807" y="546" font-size="12" fill="#555">83.2%</text>
+  <rect x="300" y="558" width="458.4" height="13" fill="#0072B2"/>
+  <text x="766" y="568" font-size="12" fill="#555">76.4%</text>
+  <rect x="300" y="580" width="451.2" height="13" fill="#0072B2"/>
+  <text x="759" y="590" font-size="12" fill="#555">75.2%</text>
+  <rect x="300" y="602" width="349.2" height="13" fill="#0072B2"/>
+  <text x="657" y="612" font-size="12" fill="#555">58.2%</text>
+  <line x1="300" y1="612" x2="820" y2="612" stroke="#1A1B1E" stroke-width="0.75"/>
+
+  <text x="860" y="552" font-size="12" fill="#555">相对完整方法，去掉 beam search 后降至 58.2%、</text>
+  <text x="860" y="572" font-size="12" fill="#555">去掉 CFG 降至 75.2%，每个组件均有贡献；</text>
+  <text x="860" y="592" font-size="12" fill="#555">相对完整方法逐项下降，每个组件均有贡献</text>
+
+  <!-- footnote -->
+  <text x="60" y="648" font-size="11" fill="#767676">数据：arXiv:2506.10948《Execution Guided Line-by-Line Code Generation》· EG-CFG 大模型指 MBPP 上达 96.6% 的配置，超过 GPT-4o 等模型 · 准确率为论文自测口径 · 预印本未经同行评审</text>
+</svg>

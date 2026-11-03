@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">CGM 在 SWE-bench Lite 解决率 43.00%，居开源权重模型首位，比此前最佳开源模型高 12.33%</text>
+
+  <!-- ============ panel a: R4 pipeline ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">R4 链四步流水线</text>
+
+  <!-- code graph illustration inside Reader -->
+  <text x="860" y="126" font-size="12" fill="#555">代码图（节点 × 边）示例</text>
+  <g stroke="#999999" stroke-width="1.5" fill="none">
+    <line x1="890" y1="158" x2="960" y2="140"/>
+    <line x1="960" y1="140" x2="1030" y2="162"/>
+    <line x1="890" y1="158" x2="930" y2="204"/>
+    <line x1="930" y1="204" x2="1030" y2="162"/>
+    <line x1="930" y1="204" x2="995" y2="216"/>
+    <line x1="960" y1="140" x2="995" y2="216"/>
+  </g>
+  <g fill="#56B4E9">
+    <circle cx="890" cy="158" r="7"/>
+    <circle cx="930" cy="204" r="7"/>
+  </g>
+  <circle cx="960" cy="140" r="7" fill="#0072B2"/>
+  <g fill="#D55E00">
+    <circle cx="1030" cy="162" r="7"/>
+    <circle cx="995" cy="216" r="7"/>
+  </g>
+
+  <!-- stage boxes y=150..218, arrows between -->
+  <g font-size="13.5" fill="#1A1B1E" text-anchor="middle">
+    <rect x="60" y="150" width="150" height="68" fill="none" stroke="#1A1B1E" stroke-width="0.75"/>
+    <text x="135" y="178" font-weight="bold">Rewriter</text>
+    <text x="135" y="200" font-size="12" fill="#555">重写</text>
+
+    <rect x="306" y="150" width="150" height="68" fill="none" stroke="#1A1B1E" stroke-width="0.75"/>
+    <text x="381" y="178" font-weight="bold">Retriever</text>
+    <text x="381" y="200" font-size="12" fill="#555">检索</text>
+
+    <rect x="552" y="150" width="150" height="68" fill="none" stroke="#1A1B1E" stroke-width="0.75"/>
+    <text x="627" y="178" font-weight="bold">Reranker</text>
+    <text x="627" y="200" font-size="12" fill="#555">重排</text>
+
+    <rect x="798" y="150" width="42" height="68" fill="none" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="819" y="178" font-weight="bold" fill="#0072B2">Reader</text>
+    <text x="819" y="200" font-size="12" fill="#555">生成</text>
+  </g>
+  <g stroke="#1A1B1E" stroke-width="1.5" fill="none">
+    <line x1="210" y1="184" x2="300" y2="184"/>
+    <polygon points="300,184 292,180.5 292,187.5" fill="#1A1B1E" stroke="none"/>
+    <line x1="456" y1="184" x2="546" y2="184"/>
+    <polygon points="546,184 538,180.5 538,187.5" fill="#1A1B1E" stroke="none"/>
+    <line x1="702" y1="184" x2="792" y2="184"/>
+    <polygon points="792,184 784,180.5 784,187.5" fill="#1A1B1E" stroke="none"/>
+  </g>
+  <g font-size="12" fill="#555">
+    <text x="60" y="244">输入：问题描述 → 输出：代码补丁。Reader 将图结构直接集成进注意力机制（语义 + 结构双集成）</text>
+  </g>
+
+  <!-- Reranker scoring scale -->
+  <text x="60" y="290" font-size="13.5" fill="#1A1B1E">Reranker 文件相关性打分</text>
+  <text x="92" y="316" font-size="12.5" fill="#1A1B1E">1</text>
+  <text x="592" y="316" font-size="12.5" fill="#1A1B1E">5</text>
+  <line x1="106" y1="311" x2="584" y2="311" stroke="#D9D9D9" stroke-width="3"/>
+  <line x1="106" y1="311" x2="201.6" y2="311" stroke="#56B4E9" stroke-width="3"/>
+  <line x1="488.4" y1="311" x2="584" y2="311" stroke="#D55E00" stroke-width="3"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="106" y1="305" x2="106" y2="317"/>
+    <line x1="225.5" y1="307" x2="225.5" y2="315"/>
+    <line x1="584" y1="305" x2="584" y2="317"/>
+  </g>
+  <text x="106" y="340" font-size="12" fill="#555">1 分：几乎肯定无关</text>
+  <text x="410" y="340" font-size="12" fill="#555">5 分：很可能是根本原因</text>
+
+  <!-- ============ panel b: SWE-bench Lite ============ -->
+  <text x="60" y="400" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="400" font-size="15" fill="#1A1B1E">SWE-bench Lite 解决率（%）</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="320" y1="424" x2="320" y2="568"/>
+    <line x1="525" y1="424" x2="525" y2="568"/>
+    <line x1="730" y1="424" x2="730" y2="568"/>
+  </g>
+  <!-- bars x = 320 + 13.8 * v : 44->927.2 43->913.4 41.67->895.048 -->
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="308" y="448">CGM-72B V1.2</text>
+    <text x="308" y="490">CGM（主结果）</text>
+    <text x="308" y="532">CGM-72B V1.1</text>
+  </g>
+  <rect x="320" y="434" width="607.2" height="18" fill="#0072B2"/>
+  <text x="935" y="448" font-size="12" fill="#555">44.00</text>
+  <rect x="320" y="476" width="593.4" height="18" fill="#D55E00"/>
+  <text x="921" y="490" font-size="12" fill="#555">43.00（开源权重第 1；全部系统方法第 8）</text>
+  <rect x="320" y="518" width="575.048" height="18" fill="#0072B2"/>
+  <text x="903" y="532" font-size="12" fill="#555">41.67</text>
+
+  <!-- axis: 0, 25, 43.00, 44.00 (all verbatim in post) -->
+  <line x1="320" y1="568" x2="940" y2="568" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="320" y1="568" x2="320" y2="572"/>
+    <line x1="665" y1="568" x2="665" y2="572"/>
+    <line x1="913.4" y1="568" x2="913.4" y2="572"/>
+    <line x1="927.2" y1="568" x2="927.2" y2="572"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="320" y="590">0</text>
+    <text x="665" y="590">25</text>
+    <text x="913.4" y="590">43.00</text>
+    <text x="927.2" y="590">44.00</text>
+  </g>
+  <text x="630" y="614" font-size="14" fill="#1A1B1E" text-anchor="middle">解决率（%）</text>
+
+  <text x="980" y="448" font-size="12" fill="#555">相比之前最佳开源模型</text>
+  <text x="980" y="468" font-size="12" fill="#555">提升 12.33%；在规模更大的</text>
+  <text x="980" y="488" font-size="12" fill="#555">SWE-bench Verified 上</text>
+  <text x="980" y="508" font-size="12" fill="#555">同样位居开源权重第 1</text>
+
+  <!-- footnote -->
+  <text x="60" y="644" font-size="11" fill="#767676">数据：arXiv:2505.16901（NeurIPS 2025，蚂蚁集团 CodeFuse 团队）· 解决率与排名为论文自测口径 · 代码、模型、数据全部开源，支持 Python 与 Java</text>
+</svg>
