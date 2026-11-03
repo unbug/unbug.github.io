@@ -3,12 +3,12 @@ layout: post
 title:  "一分钟读论文：《Google Titans + MIRAS：终结 AI 健忘症，让模型拥有真正的长期记忆》"
 author: unbug
 categories: [AI]
-image: assets/images/2026-03-01-titans-miras-architecture.png
+image: assets/images/titans-miras-google-ai-long-term-memory.svg
 tags: [Google, Titans, MIRAS, Memory, Transformer, Sequence Modeling]
 ---
 
 
-![Titans + MIRAS 架构示意图](assets/images/2026-03-01-titans-miras-architecture.png)
+![Titans + MIRAS 架构示意图](assets/images/titans-miras-google-ai-long-term-memory.svg)
 
 ## 引言
 2017 年 Transformer 架构的诞生，用注意力机制彻底改写了序列建模的游戏规则。但这个革命性的架构有个致命软肋——计算成本随序列长度呈二次方暴涨。想让 AI 读完整本书、分析整条基因组？对不起，算力钱包撑不住。

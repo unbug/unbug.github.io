@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">Drifting Models 把迭代搬到训练时，推理一步生成；ImageNet 256 上 FID 达 1.54，优于传统扩散模型 50 到 100 步</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">ImageNet 256×256 生成质量与推理步数对比（论文自测口径）</text>
+
+  <!-- horizontal bars: FID lower is better; x = 300 + 90*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="300" y1="130" x2="300" y2="360"/>
+    <line x1="390" y1="130" x2="390" y2="360"/>
+    <line x1="480" y1="130" x2="480" y2="360"/>
+  </g>
+
+  <text x="288" y="160" font-size="12.5" fill="#1A1B1E" text-anchor="end">Drifting（Latent）</text>
+  <rect x="300" y="147" width="1.8" height="18" fill="#D55E00"/>
+  <text x="312" y="160" font-size="12" fill="#555">FID 1.54，步数 1</text>
+
+  <text x="288" y="208" font-size="12.5" fill="#1A1B1E" text-anchor="end">Drifting（Pixel）</text>
+  <rect x="300" y="195" width="6.3" height="18" fill="#0072B2"/>
+  <text x="414" y="208" font-size="12" fill="#555">FID 1.61，步数 1</text>
+
+  <text x="288" y="256" font-size="12.5" fill="#1A1B1E" text-anchor="end">SDXL Turbo</text>
+  <rect x="300" y="243" width="180" height="18" fill="#999999"/>
+  <polygon points="480,243 492,252 480,261" fill="#999999"/>
+  <text x="500" y="256" font-size="12" fill="#555">FID 约 2.0，步数 4</text>
+
+  <text x="288" y="304" font-size="12.5" fill="#1A1B1E" text-anchor="end">传统扩散模型</text>
+  <rect x="300" y="291" width="180" height="18" fill="#999999"/>
+  <line x1="480" y1="290" x2="570" y2="290" stroke="#999999" stroke-width="1.5"/>
+  <line x1="480" y1="286" x2="480" y2="294" stroke="#999999" stroke-width="1.5"/>
+  <line x1="570" y1="286" x2="570" y2="294" stroke="#999999" stroke-width="1.5"/>
+  <polygon points="570,293 594,300 570,307" fill="#999999"/>
+  <text x="602" y="304" font-size="12" fill="#555">FID 约 2.0–3.0，步数 50–100</text>
+
+  <!-- value axis -->
+  <line x1="300" y1="360" x2="660" y2="360" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="300" y1="360" x2="300" y2="364"/>
+    <line x1="390" y1="360" x2="390" y2="364"/>
+    <line x1="480" y1="360" x2="480" y2="364"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="300" y="380">1.54</text>
+    <text x="390" y="380">2.0</text>
+    <text x="480" y="380">3.0</text>
+  </g>
+  <text x="480" y="404" font-size="14" fill="#1A1B1E" text-anchor="middle">FID（越低越好；刻度为正文实数，轴范围按刻度线性外推）</text>
+  <text x="60" y="404" font-size="12" fill="#555">灰色与箭头为正文表格「约」近似值或区间上限</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="760" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="782" y="104" font-size="15" fill="#1A1B1E">推理所需网络前向次数（步数，正文表格）</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="830" y1="140" x2="1140" y2="140"/>
+    <line x1="830" y1="200" x2="1140" y2="200"/>
+    <line x1="830" y1="260" x2="1140" y2="260"/>
+    <line x1="830" y1="320" x2="1140" y2="320"/>
+  </g>
+  <!-- log-ish positions not numeric; use labeled sequence positions -->
+  <line x1="830" y1="360" x2="1140" y2="360" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="880" y1="360" x2="880" y2="364"/>
+    <line x1="955" y1="360" x2="955" y2="364"/>
+    <line x1="1068" y1="360" x2="1068" y2="364"/>
+  </g>
+  <circle cx="880" cy="300" r="7" fill="#D55E00"/>
+  <text x="880" y="278" font-size="12" fill="#555" text-anchor="middle">步数 1</text>
+  <text x="880" y="384" font-size="12.5" fill="#1A1B1E" text-anchor="middle">Drifting</text>
+  <circle cx="955" cy="300" r="7" fill="#0072B2"/>
+  <text x="955" y="278" font-size="12" fill="#555" text-anchor="middle">步数 4</text>
+  <text x="955" y="384" font-size="12.5" fill="#1A1B1E" text-anchor="middle">SDXL Turbo</text>
+  <circle cx="1068" cy="300" r="7" fill="#999999"/>
+  <text x="1068" y="278" font-size="12" fill="#555" text-anchor="middle">步数 50–100</text>
+  <text x="1068" y="384" font-size="12.5" fill="#1A1B1E" text-anchor="middle">传统扩散</text>
+  <text x="985" y="404" font-size="12" fill="#555">序列位置轴（按正文表格列举顺序），非数值刻度；步数直接标注</text>
+
+  <!-- ============ panel c ============ -->
+  <text x="60" y="460" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="82" y="460" font-size="15" fill="#1A1B1E">机制与机器人控制（论文自测口径）</text>
+  <g font-size="12" fill="#555">
+    <text x="60" y="492">训练：从 batch 估计漂移场 V，将样本漂移后让网络回归目标；推理仅一步 x = f(noise)，无迭代</text>
+    <text x="60" y="516">漂移场 V：指示当前分布向真实数据漂移的方向；分布完美匹配时自动趋近于 0</text>
+    <text x="60" y="540">机器人控制：Diffusion Policy 多步替换为单步后，任务成功率不降反升，推理速度快了几十倍</text>
+  </g>
+  <circle cx="66" cy="566" r="5" fill="#D55E00"/>
+  <text x="80" y="570" font-size="12" fill="#555">朱色为 Drifting Models（主角）</text>
+  <circle cx="300" cy="566" r="5" fill="#999999"/>
+  <text x="314" y="570" font-size="12" fill="#555">灰色为基线/近似值</text>
+
+  <!-- footnote -->
+  <text x="60" y="652" font-size="11" fill="#767676">数据：arXiv:2602.04770（MIT 何恺明团队，ImageNet 256×256，论文自测口径）·「约」为正文表格近似值 · 正文未报告误差区间，未画误差棒 · 预印本未经同行评审</text>
+</svg>

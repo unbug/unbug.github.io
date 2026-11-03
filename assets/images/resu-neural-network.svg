@@ -1,49 +1,85 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1f1c2c;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#928dab;stop-opacity:1" />
-    </linearGradient>
-    <filter id="shadow">
-      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.3"/>
-    </filter>
-  </defs>
-  
-  <!-- 背景 -->
-  <rect width="800" height="400" fill="url(#bg)"/>
-  
-  <!-- 装饰性几何图形 -->
-  <circle cx="100" cy="100" r="50" fill="#00d2d3" opacity="0.2"/>
-  <circle cx="700" cy="300" r="70" fill="#00d2d3" opacity="0.15"/>
-  <rect x="600" y="50" width="100" height="100" fill="#00d2d3" opacity="0.1" transform="rotate(45 650 100)"/>
-  
-  <!-- 神经网络节点装饰 -->
-  <g opacity="0.3">
-    <circle cx="200" cy="200" r="8" fill="#00d2d3"/>
-    <circle cx="250" cy="180" r="6" fill="#00d2d3"/>
-    <circle cx="300" cy="220" r="7" fill="#00d2d3"/>
-    <circle cx="350" cy="190" r="5" fill="#00d2d3"/>
-    <line x1="208" y1="200" x2="244" y2="183" stroke="#00d2d3" stroke-width="2"/>
-    <line x1="256" y1="183" x2="293" y2="215" stroke="#00d2d3" stroke-width="2"/>
-    <line x1="307" y1="217" x2="345" y2="195" stroke="#00d2d3" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">ReSU 以人脑约 20W 能效为参照，两层网络即重现果蝇 L1/L2/L3 时间滤波器与 T4 方向选择性，训练无需反向传播与标注数据</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">ReSU 单元三步工作流（论文机制描述，DEGRADED：概念流程，正文无可绘数值）</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="60" y1="130" x2="1140" y2="130"/>
+    <line x1="60" y1="280" x2="1140" y2="280"/>
   </g>
-  
-  <!-- 标题 -->
-  <text x="400" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#ffffff" filter="url(#shadow)">
-    ReSU 神经网络
-  </text>
-  
-  <!-- 副标题 -->
-  <text x="400" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#ffffff" opacity="0.9">
-    整流谱单元
-  </text>
-  
-  <!-- 底部装饰线 -->
-  <line x1="250" y1="250" x2="550" y2="250" stroke="#00d2d3" stroke-width="3" opacity="0.6"/>
-  
-  <!-- 图标占位符 -->
-  <g transform="translate(400, 320)">
-    <circle r="30" fill="#00d2d3" opacity="0.3"/>
-    <text y="7" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#ffffff">🤖</text>
+  <line x1="60" y1="205" x2="1140" y2="205" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="240" y1="205" x2="240" y2="209"/>
+    <line x1="600" y1="205" x2="600" y2="209"/>
+    <line x1="960" y1="205" x2="960" y2="209"/>
   </g>
+
+  <!-- step 1 -->
+  <g stroke="#1A1B1E" stroke-width="1.5" fill="none">
+    <line x1="330" y1="168" x2="505" y2="168"/>
+    <polyline points="497,162 505,168 497,174"/>
+    <line x1="690" y1="168" x2="865" y2="168"/>
+    <polyline points="857,162 865,168 857,174"/>
+  </g>
+  <circle cx="240" cy="168" r="7" fill="#0072B2"/>
+  <text x="240" y="146" font-size="12.5" fill="#1A1B1E" text-anchor="middle">第 1 步：投影</text>
+  <text x="240" y="232" font-size="12" fill="#555" text-anchor="middle">把输入历史的最近窗口</text>
+  <text x="240" y="252" font-size="12" fill="#555" text-anchor="middle">投影到一个规范方向</text>
+
+  <!-- step 2 -->
+  <circle cx="600" cy="168" r="7" fill="#0072B2"/>
+  <text x="600" y="146" font-size="12.5" fill="#1A1B1E" text-anchor="middle">第 2 步：学习</text>
+  <text x="600" y="232" font-size="12" fill="#555" text-anchor="middle">方向由过往观察到的</text>
+  <text x="600" y="252" font-size="12" fill="#555" text-anchor="middle">过去-未来输入对做规范相关分析（CCA）获得</text>
+
+  <!-- step 3 -->
+  <circle cx="960" cy="168" r="7" fill="#D55E00"/>
+  <text x="960" y="146" font-size="12.5" fill="#1A1B1E" text-anchor="middle">第 3 步：整流</text>
+  <text x="960" y="232" font-size="12" fill="#555" text-anchor="middle">正分量输出为 ON ReSU，</text>
+  <text x="960" y="252" font-size="12" fill="#555" text-anchor="middle">负分量输出为 OFF ReSU</text>
+
+  <text x="600" y="300" font-size="12" fill="#555" text-anchor="middle">突触权重直接来自输入的过去-未来 CCA，无需跨层通信；CCA 可由局部学习规则实现，构成生物学合理性</text>
+  <text x="600" y="328" font-size="12" fill="#1A1B1E" text-anchor="middle">三步顺序（论文机制描述顺序，序列位置轴，非数值刻度）</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="60" y="382" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="382" font-size="15" fill="#1A1B1E">果蝇视觉通路上的验证结果（按通路层级排列，序列位置轴）</text>
+  <line x1="60" y1="478" x2="1140" y2="478" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="300" y1="478" x2="300" y2="482"/>
+    <line x1="860" y1="478" x2="860" y2="482"/>
+  </g>
+
+  <circle cx="300" cy="418" r="7" fill="#0072B2"/>
+  <text x="300" y="398" font-size="12.5" fill="#1A1B1E" text-anchor="middle">第一层：单像素驱动，学习时间滤波器</text>
+  <g font-size="12" fill="#555">
+    <text x="120" y="504">第一个滤波器低通、类似 L3；第二个为平滑时间导数、类似 L1/L2</text>
+    <text x="120" y="524">ON 单元响应对比度增加，OFF 单元响应对比度降低</text>
+    <text x="120" y="544">滤波器随信噪比动态适应：低噪声呈多波瓣，噪声增大过渡为单波瓣</text>
+  </g>
+
+  <circle cx="860" cy="418" r="7" fill="#0072B2"/>
+  <text x="860" y="398" font-size="12.5" fill="#1A1B1E" text-anchor="middle">第二层：空间汇集，学习方向选择性</text>
+  <g font-size="12" fill="#555">
+    <text x="640" y="504">获得方向选择性、类似 T4 运动检测细胞</text>
+    <text x="640" y="524">突触权重重现果蝇 T4a 神经元突触输入的大部分符号模式</text>
+    <text x="640" y="544">并近似相对幅度，与连接组重建结果接近</text>
+  </g>
+  <text x="600" y="572" font-size="12" fill="#555" text-anchor="middle">训练数据为以恒定速度扫描自然场景得到的平移图像；结果与生物记录高度吻合</text>
+
+  <!-- ============ panel c ============ -->
+  <text x="60" y="606" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="82" y="606" font-size="15" fill="#1A1B1E">动机与扩展</text>
+  <g font-size="12" fill="#555">
+    <text x="60" y="634">对照：人脑功率约 20W；当前 AI 训练耗电以兆瓦时计、需数十亿标注样本</text>
+    <text x="620" y="634">扩展：已扩至三层，三层从双向平移图像学习（两层版本仅用单向）；后续为自动确定最佳记忆长度、自上而下反馈</text>
+  </g>
+
+  <!-- footnote -->
+  <text x="60" y="658" font-size="11" fill="#767676">数据：arXiv:2512.23146（Simons 基金会 Flatiron 研究所，AAAI 2026）· a/b 面板为机制与通路层级的序列位置轴，非数值刻度 · 正文为定性结果描述，未报告可比数值与误差区间，未画误差棒 · 预印本未经同行评审</text>
 </svg>

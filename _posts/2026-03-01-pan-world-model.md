@@ -3,11 +3,11 @@ layout: post
 title:  "一分钟读论文：《PAN 世界模型炸场！MBZUAI 黑科技让 AI 学会脑补现实世界》"
 author: unbug
 categories: [AI]
-image: assets/images/2026-03-01-pan-world-model.png
+image: assets/images/pan-world-model.svg
 tags: [World Models, World Model, PAN, MBZUAI, AI]
 ---
 
-![PAN 世界模型 GLP 架构](assets/images/2026-03-01-pan-world-model.png)
+![PAN 世界模型 GLP 架构](assets/images/pan-world-model.svg)
 
 ## 论文概览
 **论文标题**: PAN: A World Model for General, Interactable, and Long-Horizon World Simulation  

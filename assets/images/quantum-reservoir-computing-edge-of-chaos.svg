@@ -2,7 +2,7 @@
   <rect width="1200" height="675" fill="#FFFFFF"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">量子储层计算在时间域与参数域两个混沌边缘附近均出现显著性能峰值，与经典储层计算的混沌边缘规律一致</text>
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">量子储层计算在时间域与参数域两个混沌边缘附近均出现显著性能峰值；经典储层计算有一个已知规律：在混沌边缘性能最佳</text>
 
   <!-- ============ panel a: concept axes ============ -->
   <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
@@ -53,11 +53,11 @@
     <text x="720" y="355">设计启示</text>
   </g>
   <g font-size="12" fill="#555">
-    <text x="720" y="196">随机矩阵理论：为量子多体系统定义混沌边缘</text>
+    <text x="720" y="196">随机矩阵理论：成功为量子多体系统定义了混沌边缘</text>
     <text x="720" y="256">Sachdev-Ye-Kitaev（SYK）模型及其扩展</text>
     <text x="720" y="316">时间域与参数域两个边缘附近均测得性能峰值</text>
-    <text x="720" y="376">量子储层计算首次获得基于物理的通用设计框架；</text>
-    <text x="720" y="394">经典与量子信息处理在混沌边缘上存在深层呼应</text>
+    <text x="720" y="376">量子储层计算有了基于物理的设计框架；</text>
+    <text x="720" y="394">经典与量子信息处理在混沌边缘上深层呼应</text>
   </g>
   <line x1="700" y1="420" x2="1120" y2="420" stroke="#1A1B1E" stroke-width="0.75"/>
   <g stroke="#1A1B1E" stroke-width="0.75">

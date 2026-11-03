@@ -2,11 +2,11 @@
   <rect width="1200" height="675" fill="#FFFFFF"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">PAN 以视觉编码器、LLM 预测骨干、视频扩散解码器三件套组成 GLP 架构，是首个通用、可交互、长时程的世界模型</text>
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">PAN 用视觉编码器、LLM 预测骨干、视频扩散解码器的 GLP 架构，是首个通用、可交互、长时程的世界模型</text>
 
   <!-- ============ panel a: GLP architecture ============ -->
   <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">GLP（生成潜在预测）架构</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">GLP 架构（生成潜在预测）</text>
 
   <defs>
     <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
@@ -21,7 +21,7 @@
   <!-- boxes -->
   <rect x="150" y="215" width="230" height="80" fill="none" stroke="#0072B2" stroke-width="1.5"/>
   <text x="265" y="243" font-size="13" fill="#1A1B1E" text-anchor="middle">视觉编码器</text>
-  <text x="265" y="263" font-size="12" fill="#555" text-anchor="middle">优化 Vision Transformer</text>
+  <text x="265" y="263" font-size="12" fill="#555" text-anchor="middle">优化过的 Vision Transformer</text>
   <text x="265" y="281" font-size="12" fill="#555" text-anchor="middle">3D 块分区</text>
 
   <rect x="450" y="215" width="250" height="80" fill="none" stroke="#D55E00" stroke-width="1.5"/>
@@ -47,14 +47,14 @@
 
   <!-- feedback loop -->
   <path d="M 575 295 L 575 340 L 265 340 L 265 301" fill="none" stroke="#999999" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arr)"/>
-  <text x="420" y="332" font-size="12" fill="#555" text-anchor="middle">死磕「重建下一个观察」这个目标</text>
+  <text x="420" y="332" font-size="12" fill="#555" text-anchor="middle">死磕"重建下一个观察"这个目标</text>
 
   <!-- annotations under boxes -->
   <g font-size="12" fill="#555" text-anchor="middle">
     <text x="265" y="198">视觉编码器：直接抄了</text>
-    <text x="265" y="180">Qwen2.5-VL-7B-Instruct 的视觉作业</text>
+  <text x="265" y="180" font-size="11">Qwen2.5-VL-7B-Instruct 的视觉作业</text>
   </g>
-  <text x="60" y="390" font-size="12" fill="#555">分层抽象策略让误差累积和信号变异性都不是事儿；视觉编码器、LLM 预测骨干、视频扩散解码器三件套组合</text>
+  <text x="60" y="390" font-size="12" fill="#555">分层抽象策略让误差累积和信号变异性都不是事儿；自回归潜在动态负责"想"，视频扩散解码器负责"画"</text>
 
   <!-- ============ panel b: capability sequence axis ============ -->
   <text x="60" y="448" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
@@ -75,7 +75,7 @@
 
     <circle cx="980" cy="505" r="8" fill="#0072B2"/>
     <text x="980" y="483" font-size="12.5" fill="#1A1B1E" text-anchor="middle">长时程一致性</text>
-    <text x="980" y="531" font-size="12" fill="#555" text-anchor="middle">世界状态稳定，不会失忆</text>
+    <text x="980" y="531" font-size="12" fill="#555" text-anchor="middle">世界状态稳得一批，不会失忆</text>
   </g>
   <line x1="120" y1="505" x2="1080" y2="505" stroke="#1A1B1E" stroke-width="0.75"/>
   <g stroke="#1A1B1E" stroke-width="0.75">
@@ -87,5 +87,5 @@
   <text x="600" y="562" font-size="12" fill="#555" text-anchor="middle">序列位置 1–4：论文陈述的能力顺序，位置间距无数值含义</text>
 
   <!-- footnote -->
-  <text x="60" y="622" font-size="11" fill="#767676">数据：arXiv:2511.09057（MBZUAI，2025 年 11 月）· 正文为定性描述、未含量化数值，a 面板为架构流程、b 面板为序列位置轴 · 预印本未经同行评审</text>
+  <text x="60" y="622" font-size="11" fill="#767676">数据：论文 PAN（MBZUAI，2025 年 11 月，arxiv.org/abs/2511.09057）· 正文为定性描述、未含量化数值，a 面板为架构示意、b 面板为序列位置轴 · 预印本未经同行评审</text>
 </svg>

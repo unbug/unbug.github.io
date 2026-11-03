@@ -3,12 +3,12 @@ layout: post
 title:  "一分钟读论文：《Engram 分离知识存储》"
 author: unbug
 categories: [AI]
-image: assets/images/2026-03-01-deepseek-engram.svg
+image: assets/images/deepseek-engram.svg
 tags: [DeepSeek, Engram, Memory Architecture, Sparsity, MoE, LLM]
 description: "DeepSeek 与北京大学提出条件内存系统 Engram，把静态知识存储从动态推理计算中分离，实现 O(1) 查找并支持 DRAM 卸载，在等参数等 FLOPs 约束下全面提升知识、推理、代码与数学任务表现。"
 ---
 
-![DeepSeek Engram]({{ site.baseurl }}/assets/images/2026-03-01-deepseek-engram.svg)
+![DeepSeek Engram]({{ site.baseurl }}/assets/images/deepseek-engram.svg)
 
 DeepSeek 与北京大学合作的论文[《Conditional Memory via Scalable Lookup》][paper1-url]（2026 年 1 月发布）提出条件内存系统 Engram，把静态知识存储与动态推理分离，实现 `O(1)` 查找并支持内存表卸载到普通 DRAM，GitHub 仓库已获 `3.8k stars`。
 

@@ -2,11 +2,11 @@
   <rect width="1200" height="675" fill="#FFFFFF"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">Titans 以核心注意力、神经长期记忆、持久记忆三层结构支持选择性更新，上下文窗口可缩放到超过 200 万个 token</text>
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">Titans 的三层记忆架构用惊喜度量选择性地只更新最新颖信息，能缩放到超过 200 万个 token 的上下文窗口大小</text>
 
   <!-- ============ panel a: memory hierarchy ============ -->
   <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">Titans 三层记忆架构（流程示意）</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">Titans 三层记忆架构</text>
 
   <defs>
     <marker id="arr2" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
@@ -16,7 +16,7 @@
 
   <rect x="150" y="140" width="280" height="76" fill="none" stroke="#0072B2" stroke-width="1.5"/>
   <text x="290" y="168" font-size="13" fill="#1A1B1E" text-anchor="middle">短期记忆：核心注意力</text>
-  <text x="290" y="188" font-size="12" fill="#555" text-anchor="middle">标准 Transformer 注意力</text>
+  <text x="290" y="188" font-size="12" fill="#555" text-anchor="middle">标准的 Transformer 注意力</text>
   <text x="290" y="206" font-size="12" fill="#555" text-anchor="middle">高精度抓即时上下文</text>
 
   <rect x="150" y="240" width="280" height="76" fill="none" stroke="#D55E00" stroke-width="1.5"/>
@@ -33,11 +33,12 @@
     <line x1="290" y1="216" x2="290" y2="234" marker-end="url(#arr2)"/>
     <line x1="290" y1="316" x2="290" y2="334" marker-end="url(#arr2)"/>
   </g>
-  <text x="302" y="232" font-size="12" fill="#555">高惊喜输入写入</text>
-  <text x="470" y="168" font-size="12" fill="#555">惊喜度量：以当前记忆与新输入的梯度差</text>
-  <text x="470" y="186" font-size="12" fill="#555">判断重要性，只更新最新颖的信息</text>
-  <text x="470" y="216" font-size="12" fill="#555">动量：同时看瞬时惊喜与过去惊喜</text>
-  <text x="470" y="234" font-size="12" fill="#555">遗忘：自适应权重衰减当遗忘门</text>
+  <text x="302" y="232" font-size="12" fill="#555">高惊喜：必须优先存进长期记忆</text>
+  <text x="470" y="168" font-size="12" fill="#555">惊喜度量：用内部误差信号（梯度）当</text>
+  <text x="470" y="186" font-size="12" fill="#555">数学版的意外信号，选择性地只更新那</text>
+  <text x="470" y="204" font-size="12" fill="#555">些最新颖、最打破上下文的信息</text>
+  <text x="470" y="234" font-size="12" fill="#555">动量：同时看"瞬时惊喜"和"过去惊喜"</text>
+  <text x="470" y="252" font-size="12" fill="#555">遗忘（权重衰减）：用自适应权重衰减当遗忘门</text>
 
   <!-- ============ panel b: MIRAS ============ -->
   <text x="660" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
@@ -82,14 +83,14 @@
 
   <g font-size="12.5" fill="#1A1B1E">
     <circle cx="140" cy="540" r="7" fill="#0072B2"/>
-    <text x="158" y="536">语言建模与推理：C4、WikiText 与 HellaSwag、PIQA 上准确度</text>
-    <text x="158" y="554">和困惑度全程领跑（对照 Transformer++、Mamba-2、Gated DeltaNet）</text>
+    <text x="158" y="536">语言建模和常识推理：C4、WikiText 与 HellaSwag、PIQA 上</text>
+    <text x="158" y="554">准确度和困惑度全程领跑（对比 Transformer++、Mamba-2 和 Gated DeltaNet）</text>
     <circle cx="640" cy="540" r="7" fill="#0072B2"/>
     <text x="658" y="536">消融：长期记忆模块深度更深，困惑度始终更低，缩放特性更好</text>
     <text x="658" y="554">BABILong 上把所有基线都干翻了（含参数少得多的 GPT-4）；</text>
-    <circle cx="940" cy="540" r="7" fill="#D55E00"/>
-    <text x="958" y="536">上下文窗口有效缩放</text>
-    <text x="958" y="554">超过 200 万个 token</text>
+    <circle cx="922" cy="540" r="7" fill="#D55E00"/>
+    <text x="940" y="536">超长上下文召回：能缩放到超过</text>
+    <text x="940" y="554">200 万个 token 的上下文窗口大小</text>
   </g>
   <line x1="140" y1="590" x2="1120" y2="590" stroke="#1A1B1E" stroke-width="0.75"/>
   <g stroke="#1A1B1E" stroke-width="0.75">

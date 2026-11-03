@@ -3,7 +3,7 @@ layout: post
 title:  "一分钟读论文：《量子储层计算的混沌边缘》"
 author: unbug
 categories: [AI]
-image: assets/images/2026-03-01-quantum-reservoir-computing-edge-of-chaos.svg
+image: assets/images/quantum-reservoir-computing-edge-of-chaos.svg
 tags: [QuantumComputing, ReservoirComputing, QuantumChaos, MachineLearning]
 description: "东京大学团队发表于Physical Review Letters的研究发现，量子储层计算在时间域与参数域两个混沌边缘均现性能峰值，为量子AI提供设计指南。"
 ---
