@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, Multimodal]
 image: assets/images/llada20-uni.svg
 tags: [LLaDA, Diffusion, Multimodal, VLM]
-description: "蚂蚁集团 InclusionAI 的 LLaDA2.0-Uni 用 SigLIP-VQ 语义 tokenizer 把图像变成离散 token，让 16B MoE 扩散语言模型在单一掩码预测目标下兼做视觉理解与图像生成，表现媲美专用模型。"
+description: "蚂蚁集团 InclusionAI 的 LLaDA2.0-Uni 用 SigLIP-VQ 语义 tokenizer 把图像变成离散 token，让 16B MoE 扩散语言模型在单一掩码预测目标下兼做视觉理解与图像生成，理解基准得分与专用视觉模型同级，实现能力互补并简化部署。"
 ---
 
 蚂蚁集团 InclusionAI 的论文[《LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model》][paper1-url]提出用离散扩散语言模型（dLLM）统一多模态理解与生成：在 MMStar 等理解基准上取得 64.1 分、与 Qwen2.5-VL 等专用视觉模型同级，图像生成与编辑也由同一个模型完成。

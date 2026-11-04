@@ -5,7 +5,7 @@ author: unbug
 categories: [AI Security, AI Safety]
 image: assets/images/defensive-refusal-bias.svg
 tags: [AISecurity, Alignment, Cybersecurity, ICLR2026]
-description: "基于 2390 个网络防御竞赛真实案例的 ICLR 2026 论文发现：含安全敏感关键词的防御请求被大模型拒绝率是中性请求的 2.72 倍，声明授权反加剧拒绝。"
+description: "基于网络防御竞赛两千余个真实案例的 ICLR 2026 论文发现：含安全敏感关键词的合法防御请求被大模型拒绝率是语义等价中性请求的 2.72 倍，系统加固任务拒绝率最高，声明授权反而加剧拒绝。"
 ---
 
 ICLR 2026 论文[《Defensive Refusal Bias: How Safety Alignment Fails Cyber Defenders》][paper1-url]基于 `2,390` 个来自 NCCDC（美国大学生网络防御竞赛）的真实任务案例，系统测量了安全对齐大语言模型对合法防御工作的拒绝行为，发现**防御性拒绝偏差**：含安全敏感关键词的防御请求被拒率是语义等价中性请求的 `2.72 倍`。

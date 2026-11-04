@@ -5,7 +5,7 @@ author: unbug
 categories: [AI]
 image: assets/images/humanitys-last-exam.svg
 tags: [AI, Benchmark, Evaluation]
-description: "发表于 Nature 的 HLE 基准由近千名专家出 2500 道跨学科难题，当前 AI 表现极差，暴露深度专业理解的局限，为评估 AI 能力提供共同参照。"
+description: "发表于 Nature 的 HLE 基准由近千名全球专家出了 2500 道跨学科专家级难题，当前最强 AI 在其上得分极低，暴露深度专业理解的局限，为评估 AI 能力提供了能记录能力演进的共同参照点。"
 ---
 
 非营利机构 ARC-AGI 等机构联合发布的论文[《A benchmark of expert-level academic questions to assess AI capabilities》][paper1-url]（发表于 Nature，卷 649，页码 1139-1146）介绍了 **Humanity's Last Exam**（HLE）：由近 `1,000` 名全球各领域专家共同出的 `2,500` 道专家级题目，当前最强 AI 系统在其上表现极差，暴露出深度专业理解上的局限。

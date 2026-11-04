@@ -5,7 +5,7 @@ author: unbug
 categories: [Economics]
 image: assets/images/human-data-market.svg
 tags: [AI, Economics, Labor, HumanData]
-description: "经济学论文证明：只要 AI 能力存量存在折旧，评估审计等结构化人类数据工作在长期稳态不会消失，保守校准下劳动力份额稳定在 5% 至 7%。"
+description: "经济学论文证明：只要 AI 能力存量存在技术、环境与组织三条折旧渠道，评估审计等结构化人类数据工作在长期稳态不会消失，保守校准下劳动力份额稳定在 5% 至 7%，维护是与折旧率挂钩的常设成本。"
 ---
 
 arXiv 论文[《No Last Mile: A Theory of the Human Data Market》][paper1-url]挑战了"人类数据工作只是过渡性桥梁"的主流观点：把评估、评分标准判断、审计、例外处理建模为持久生产要素后，模型给出"没有最后一英里"的解析解——只要能力存量存在折旧，稳态下结构化人类数据工作的劳动力份额就严格为正，保守校准约为 `5%-7%`。

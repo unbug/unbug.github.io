@@ -3,17 +3,17 @@ layout: post
 title:  "一分钟读论文：《多代理集成推理攻克仓库级问题》"
 author: unbug
 categories: [AI, Engineering]
+image: assets/images/trae-agent-ensemble-reasoning.svg
 tags: [Code Generation, ICSE 2026, Agent]
 description: "字节跳动 Trae 团队等机构的论文提出首个基于代理的集成推理框架 Trae Agent，用生成、修剪、选择三个代理探索仓库级补丁空间，在 SWE-bench Verified 上取得 78.80% 的 Pass@1，较基线平均提升 10.22%，性能随集成规模单调提升可按预算权衡成本。"
 ---
-
 字节跳动 Trae 研究团队与天津大学等机构合作的论文[《Agent-Based Ensemble Reasoning for Repository-Level Issue Resolution》][paper1-url]（ICSE 2026）提出首个基于代理的集成推理框架 Trae Agent，用生成、修剪、选择三个代理协作探索巨大的候选补丁空间，在 SWE-bench Verified 上取得 `Pass@1 = 78.80%`，相比基线平均提升 `10.22%`。
 
 ## 仓库级问题集成的两大瓶颈
 
-软件 Issue 解决的难点在于：候选补丁空间巨大，且修复往往需要跨文件理解整个仓库的上下文——一个 Bug 的根因可能在另一个模块，修复方案可能牵动多个文件的接口。现有基于提示工程的集成推理方法（即让多个模型或多个采样结果投票选优）存在两个瓶颈——**难以有效探索大规模集成空间**，候选补丁多了以后缺乏筛选手段，性能反而下降；**缺乏仓库级理解能力**，只看报错附近的代码，无法把握跨文件依赖。Trae Agent 把 Issue 解决建模为最优解搜索问题，用模块化代理分别负责探索、过滤和决策，目标是同时突破两个瓶颈。
+软件 Issue 解决的难点在于：候选补丁空间巨大，且修复往往需要跨文件理解整个仓库的上下文——一个 Bug 的根因可能在另一个模块，修复方案可能牵动多个文件的接口。现有基于提示工程的集成推理方法（即让多个模型或多个采样结果投票选优）存在两个瓶颈——**难以有效探索大规模集成空间**，候选补丁多了以后缺乏筛选手段，性能反而下降；**缺乏仓库级理解能力**，只看报错附近的代码，无法把握跨文件依赖。Trae Agent 把 Issue 解决建模为最优解搜索问题，用模块化代理分别负责探索、过滤和决策，目标是同时突破两个瓶颈。这也解释了为什么单纯换更大的模型收益有限：瓶颈不在单点生成能力，而在搜索与筛选机制本身。
 
-![Trae Agent](/assets/images/arxiv-paper-trae-agent.png)
+![Trae Agent 三代理框架示意]({{ site.baseurl }}/assets/images/trae-agent-ensemble-reasoning.svg)
 
 ## 三个代理与测试时缩放
 
@@ -23,7 +23,7 @@ description: "字节跳动 Trae 团队等机构的论文提出首个基于代理
 
 ## 实验结果与启示
 
-在 SWE-bench Verified（从真实开源仓库抽取的 Issue 修复基准）上，以 GPT-4o、Claude 3.5 Sonnet、DeepSeek-Coder 三个大语言模型为后端时，Trae Agent 相比 `4` 个对比基线均显著提升，平均提升 `10.22%`，并曾位居该榜单第一（`Pass@1 = 78.80%`）。系统的启示是：多模型多采样的组合配合专门的修剪与选择环节，比单模型直出更稳；解决问题不能只看单个文件，仓库级上下文是决定上限的关键。Trae Agent 已开源，同类话题可参阅站内[《一分钟读论文：EnAgent 三个 AI 智能体组队，登顶代码修复榜单》]({% post_url 2026-02-28-enagent-ensemble-reasoning %})。
+在 SWE-bench Verified（从真实开源仓库抽取的 Issue 修复基准）上，以 GPT-4o、Claude 3.5 Sonnet、DeepSeek-Coder 三个大语言模型为后端时，Trae Agent 相比 `4` 个对比基线均显著提升，平均提升 `10.22%`，并曾位居该榜单第一（`Pass@1 = 78.80%`）。系统的启示是：多模型多采样的组合配合专门的修剪与选择环节，比单模型直出更稳；解决问题不能只看单个文件，仓库级上下文是决定上限的关键。Trae Agent 已开源，对工程团队而言，这条路线的现实意义是把算力预算变成可调旋钮：重要缺陷多花推理成本换更高胜率，批量任务则收敛集成规模，而不是被迫在单一模型上押注。同类话题可参阅站内[《三个AI智能体组队修复仓库级问题》]({{ site.baseurl }}/2026-02-28-enagent-ensemble-reasoning/)。
 
 ## References
 - [Agent-Based Ensemble Reasoning for Repository-Level Issue Resolution（Trae Agent）][paper1-url]

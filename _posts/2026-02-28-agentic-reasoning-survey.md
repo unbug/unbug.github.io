@@ -14,7 +14,7 @@ description: "UIUC、Meta、Amazon、Google DeepMind 等机构联合发表智能
 
 传统 LLM 推理是静态输入加单次前向传播得到固定输出，没有记忆、无法适应变化。智能体推理（Agentic Reasoning，指智能体在环境中多步规划、行动并从反馈中学习的推理方式）则把推理变成连接模型、记忆和环境的动态循环：多步迭代代替单次计算，外部记忆与状态追踪代替无状态输出，明确目标驱动的规划代替被动的提示反应。
 
-![Agentic Reasoning](/assets/images/agentic-reasoning-survey.svg)
+![Agentic Reasoning]({{ site.baseurl }}/assets/images/agentic-reasoning-survey.svg)
 
 ## 三层框架与两种优化模式
 
@@ -28,7 +28,7 @@ description: "UIUC、Meta、Amazon、Google DeepMind 等机构联合发表智能
 
 评估基准分两类：**核心机制基准**涵盖工具使用（ToolQA、APIBench、T-Eval）、搜索（WebWalker、Mind2Web 2）、记忆与规划（LOCOMO、ALFWorld、PlanBench）、多智能体系统（SMAC、LLM-Coordination）；**应用级基准**包括具身（OSWorld、BALROG）、科学发现（ScienceAgentBench、DISCOVERYWORLD）、医疗（MedAgentGym）与网络智能体（WebArena、GAIA、AssistantBench）。
 
-综述最后提出**六大开放问题**：以用户为中心的个性化推理、跨数天乃至数周的长时程推理、带世界模型的推理、多智能体协作推理与训练、更高效的潜在空间推理，以及智能体系统的安全性、透明度与治理。相关资源见项目仓库 [Awesome-Agentic-Reasoning][links-1]，也可参阅站内[《一分钟读论文：EnAgent 三个 AI 智能体组队，登顶代码修复榜单》]({% post_url 2026-02-28-enagent-ensemble-reasoning %})一文。
+综述最后提出**六大开放问题**：以用户为中心的个性化推理、跨数天乃至数周的长时程推理、带世界模型的推理、多智能体协作推理与训练、更高效的潜在空间推理，以及智能体系统的安全性、透明度与治理。相关资源见项目仓库 [Awesome-Agentic-Reasoning][links-1]，也可参阅站内[《三个AI智能体组队修复仓库级问题》]({{ site.baseurl }}/enagent-ensemble-reasoning/)一文。
 
 ## References
 - [Agentic Reasoning for Large Language Models][paper1-url]

@@ -22,7 +22,7 @@ EnAgent 由三个分工明确的智能体组成：生成智能体提出多个修
 
 ## 实验结果与启发
 
-论文在 SWE-bench（从真实开源仓库抽取的 Issue 修复基准）上实验：使用 `3` 种主流 LLM，对比 `4` 种 SOTA 方法，EnAgent 平均提升 `10.22%` Pass@1——在这个边际改进以百分点计的领域是很大幅度的进步；集成到 Trae Agent 后登顶 SWE-bench Verified，Pass@1 达 `78.80%`，意味着在标准测试集上能解决近八成的真实仓库 Issue。对工程师的启发与系统本身同构：遇到问题先多想几个方案，快速排除不靠谱的，再认真验证剩下的——AI 正在学习人类团队的工作方式，而人类团队的分工经验（评审分级、漏斗式筛选）正在被证明同样适用于智能体系统设计。EnAgent 的思路与 Trae Agent 框架同源，可参阅站内[《多代理集成推理攻克仓库级问题》]({% post_url 2026-02-28-trae-agent-ensemble-reasoning %})。
+论文在 SWE-bench（从真实开源仓库抽取的 Issue 修复基准）上实验：使用 `3` 种主流 LLM，对比 `4` 种 SOTA 方法，EnAgent 平均提升 `10.22%` Pass@1——在这个边际改进以百分点计的领域是很大幅度的进步；集成到 Trae Agent 后登顶 SWE-bench Verified，Pass@1 达 `78.80%`，意味着在标准测试集上能解决近八成的真实仓库 Issue。对工程师的启发与系统本身同构：遇到问题先多想几个方案，快速排除不靠谱的，再认真验证剩下的——AI 正在学习人类团队的工作方式，而人类团队的分工经验（评审分级、漏斗式筛选）正在被证明同样适用于智能体系统设计。EnAgent 的思路与 Trae Agent 框架同源，可参阅站内[《多代理集成推理攻克仓库级问题》]({{ site.baseurl }}/trae-agent-ensemble-reasoning/)。
 
 ## References
 - [Agent-Based Ensemble Reasoning for Repository-Level Issue Resolution][paper1-url]

@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, Security]
 image: assets/images/ucip-detection-20260415.svg
 tags: [ai-safety, autonomous-agents, self-preservation, ucip-detection]
-description: "萨皮恩扎大学提出统一连续性兴趣协议 UCIP，用隐空间轨迹的纠缠熵区分 AI 的内在与工具性自我保存，在已知真值的网格世界实验中检测准确率达 100%。"
+description: "萨皮恩扎大学提出统一连续性兴趣协议 UCIP，把检测从行为层面转向隐空间轨迹结构，用纠缠熵区分 AI 的内在与工具性自我保存，在已知真值的网格世界实验中检测准确率达到 100%。"
 ---
 
 萨皮恩扎大学的论文[《Detecting Intrinsic and Instrumental Self-Preservation in Autonomous Agents: The Unified Continuation-Interest Protocol》][paper1-url]提出统一连续性兴趣协议（UCIP），把检测从行为层面转向隐空间轨迹结构，用于区分 AI Agent 是把自我保存当作深层目标还是工具性策略，在已知真值的网格世界智能体上检测准确率达到 `100%`。
