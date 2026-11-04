@@ -5,15 +5,15 @@ author: unbug
 categories: [AI, MachineLearning]
 image: assets/images/ai-trajectory-reward.svg
 tags: [reward-modeling, agent-alignment, trajectory-level, benchmark]
-description: "ACL 2026 论文发布轨迹级偏好基准 Plan-RewardBench，用四类任务检验评判模型区分偏好轨迹与干扰轨迹的能力，生成式、判别式和 LLM 评审三类评估器在长轨迹上全面失效。"
+description: "ACL 2026 主会论文发布轨迹级偏好基准 Plan-RewardBench，用四类代表性任务检验评判模型区分偏好轨迹与干扰轨迹的能力，生成式、判别式和 LLM 评审三类评估器在长轨迹上全面失效。"
 ---
 
-ACL 2026 主会论文[《Aligning Agents via Planning: A Benchmark for Trajectory-Level Reward Modeling》][paper1-url]发布轨迹级偏好基准 Plan-RewardBench，评估奖励模型（Reward Model，为强化学习提供偏好信号的评分模型）在多步工具调用场景中区分**偏好轨迹**与**干扰轨迹**的能力。对生成式、判别式和 LLM-as-a-Judge 三类评估器的系统测试显示：全部面临重大挑战，且在长轨迹上性能急剧下降。
+ACL 2026 主会论文[《Aligning Agents via Planning: A Benchmark for Trajectory-Level Reward Modeling》][paper1-url]发布轨迹级偏好基准 Plan-RewardBench，评估奖励模型在多步工具调用场景中区分**偏好轨迹**与**干扰轨迹**的能力，结果显示三类主流评估器全部面临重大挑战，长轨迹上性能急剧下降。
 
 ![轨迹级奖励建模]({{ site.baseurl }}/assets/images/ai-trajectory-reward.svg)
 
 ## 从单步到多步：奖励建模的根本转变
-在经典的人类反馈强化学习（RLHF）中，奖励模型是模型对齐的基本信号提供者，评估对象是孤立的单步输出。随着 LLM 演进为能自主调用工具、做复杂推理的 Agent 系统，需要评判的变成了**整条行为序列**：一次任务可能包含几十步搜索、代码执行和文件操作，中间一步的“局部最优”完全可能是全局的弯路，而首步的错误规划往往要到末尾才暴露。
+在经典的人类反馈强化学习（RLHF，用人类偏好训练评分模型再驱动强化学习的方法）中，奖励模型（Reward Model，为强化学习提供偏好信号的评分模型）是模型对齐的基本信号提供者，评估对象是孤立的单步输出。随着 LLM 演进为能自主调用工具、做复杂推理的 Agent 系统，需要评判的变成了**整条行为序列**：一次任务可能包含几十步搜索、代码执行和文件操作，中间一步的“局部最优”完全可能是全局的弯路，而首步的错误规划往往要到末尾才暴露。
 
 然而该领域此前缺乏专门基准来评估奖励模型在工具集成环境中的能力，现有方法在面对复杂 Agent 场景时难以反映真实的对齐效果。Plan-RewardBench 填补的正是这一空白。
 
