@@ -1,59 +1,41 @@
 ---
 layout: post
-title: 一分钟读论文：CAGE ICLR 2026 突破性AI安全技术，破解跨文化红队测试难题
+title:  "一分钟读论文：《跨文化红队测试如何生成》"
+author: unbug
 categories: [AI Security, AI]
-tags: [ICLR 2026, AI Security, Red Teaming, Cross-cultural, LLM]
+image: assets/images/cage-cross-cultural-ai-safety.svg
+tags: [ICLR, AI Security, Red Teaming, Multilingual, LLM]
+description: "首尔国立大学VIP实验室与SelectStar发表于ICLR 2026的论文提出CAGE跨文化红队测试基准生成框架，其生成的韩语提示攻击成功率达到43.8%，显著高于直接翻译的28.2%与LLM适配方法的32.4%。"
 ---
 
-## 开篇
-你有没有想过？一个在英文环境下安全合规的AI模型，到了其他语言和文化环境中，可能会出现严重的安全漏洞？
+首尔国立大学VIP实验室与SelectStar合作的ICLR 2026论文[《CAGE: A Framework for Culturally Adaptive Red-Teaming Benchmark Generation》][paper1-url]提出文化自适应红队测试基准生成框架CAGE，以韩语为测试场景生成的攻击提示，在Llama-3.1上的攻击成功率达到`43.8%`，远高于直接翻译方法的`28.2%`。
 
-当前主流的AI安全测试基准大多是英文-centric的，直接翻译成其他语言时，往往会忽略当地的文化背景、社会规范和法律法规，导致大量安全盲点。ICLR 2026入选论文《CAGE: A Framework for Culturally Adaptive Red-Teaming Benchmark Generation》提出了突破性的解决方案，能够系统性地生成适配不同文化背景的红队测试基准。
+![CAGE 跨文化红队测试框架]({{ site.baseurl }}/assets/images/cage-cross-cultural-ai-safety.svg)
 
-## 核心突破
-**1. 首次系统性解决跨文化AI安全测试难题**
-现有红队测试基准在适配新语言时，通常采用直接翻译的方式，完全忽略了文化和法律背景的差异，导致无法捕捉到根植于当地文化的社会技术漏洞。CAGE框架首次实现了对抗性意图的跨文化迁移，能够生成符合当地文化特征的真实威胁测试用例，而不是简单的越狱测试。
+## 英文中心安全测试的盲区
 
-**2. Semantic Mold创新架构，分离对抗结构与文化内容**
-CAGE的核心是"语义模具"（Semantic Mold）技术，能够将提示词的对抗性结构与文化内容分离开来。这种设计使得框架可以保留原始红队提示的攻击意图，同时替换成符合目标文化背景的内容，生成更加真实有效的测试用例。
+当前主流AI安全测试基准大多以英文为中心，直接翻译成其他语言时会忽略当地的文化背景、社会规范和法律法规，留下大量安全盲点。一个在英文环境下安全合规的模型，进入其他语言和文化环境后仍可能出现严重安全漏洞。现有红队基准在适配新语言时通常采用直接翻译，只能复制表面的文字内容，无法捕捉根植于当地文化的社会技术漏洞。CAGE首次实现了对抗性意图的跨文化迁移：保留原始红队提示的攻击意图，再生成符合目标文化特征的真实威胁测试用例，测试对象是文化情境下的真实威胁，而不是简单的越狱指令。
 
-**3. 性能提升显著，数据支撑明确**
-研究团队以韩语为测试场景，构建了KoRSET基准数据集，实验结果显示：
-- CAGE生成的韩语提示在Llama-3.1模型上的攻击成功率（ASR）达到43.8%，远高于直接翻译方法的28.2%和LLM适配方法的32.4%
-- 对于英文-centric训练的Llama-3.1模型，韩语测试场景下的攻击成功率比英文场景高出35.2个百分点，充分暴露了英文-centric安全训练的缺陷
-- 而在同时具备深度中英文文化知识的EXAONE-3.5模型上，跨文化攻击成功率差异仅为1.2%，证明了文化知识对于安全对齐的重要性
+## 语义模具：分离对抗结构与文化内容
 
-**4. 可扩展的解决方案，支持多文化适配**
-CAGE框架提供了标准化的工作流，可以快速扩展到其他语言和文化场景，为构建全球通用的AI安全评估体系提供了技术基础。研究团队已经开源了框架代码和韩语基准数据集，方便全球研究者贡献更多语言版本。
+CAGE的核心是"语义模具"（Semantic Mold）技术，把提示词的对抗性结构与文化内容分离开来。框架先从原始红队提示中抽象出攻击结构作为"模具"，再注入符合目标文化语境的内容，使生成的测试用例既保留攻击意图，又完全贴合当地语境。这使框架不必依赖翻译，也不必为每种语言手工重写攻击库。评估方法除攻击成功率外，还区分了"特异性"和"文化知识"对攻击效果的影响，把模型被攻破的原因拆解为对特定攻击手法的脆弱性与对目标文化的了解程度两部分，为理解模型的跨文化安全表现提供了更细的视角。
 
-## 技术亮点
-CAGE框架的创新之处在于它没有采用传统的翻译或模板生成方法，而是通过"语义模具"技术实现了对抗性意图的抽象和迁移。这种设计使得生成的测试用例既保留了原始的攻击意图，又完全符合目标文化的语境，能够有效发现现有方法无法检测到的安全漏洞。
+研究团队以韩语为场景构建了KoRSET基准数据集，实验数据显示：
 
-同时，CAGE的评估方法不仅关注攻击成功率，还区分了"特异性"和"文化知识"对攻击效果的影响，为理解AI模型的跨文化安全表现提供了更深入的视角。
+- CAGE生成的韩语提示在Llama-3.1上的攻击成功率（ASR）为`43.8%`，直接翻译方法为`28.2%`，LLM适配方法为`32.4%`
+- 对以英文为中心训练的Llama-3.1，韩语场景的攻击成功率比英文场景高出`35.2`个百分点，暴露出英文中心安全训练的缺陷
+- 在同时具备深度中英文文化知识的EXAONE-3.5模型上，跨文化攻击成功率差异仅`1.2%`，证明文化知识对安全对齐的重要性
 
-## 产业价值
-CAGE框架对于AI产业具有重要的实际意义：
-1. 对于跨国企业来说，它提供了标准化的跨文化AI安全测试方法，能够确保AI产品在不同国家和地区都符合当地的法律法规和文化规范
-2. 对于模型开发者来说，它揭示了英文-centric训练的局限性，指导开发者在安全对齐阶段充分考虑多文化背景
-3. 对于监管机构来说，它为制定全球统一的AI安全评估标准提供了技术参考
-4. 对于AI安全研究社区来说，它开辟了跨文化安全测试的新方向，推动AI安全评估从单语言向多语言、多文化方向发展
+## 从单语言走向多文化评估
 
-## 论文信息
-**标题**：CAGE: A Framework for Culturally Adaptive Red-Teaming Benchmark Generation
-**作者**：Chaeyun Kim, YongTaek Lim, Kihyun Kim, Junghwan Kim, Minwoo Kim
-**发布机构**：首尔国立大学VIP实验室、SelectStar
-**会议**：ICLR 2026（国际学习表征大会）
-**链接**：[https://openreview.net/forum?id=gCm55KYiqz](https://openreview.net/forum?id=gCm55KYiqz)
-**arXiv**：[https://arxiv.org/abs/2602.20170](https://arxiv.org/abs/2602.20170)
-
+CAGE提供了标准化工作流，可扩展到其他语言和文化场景，团队已开源框架代码和韩语基准数据集，供全球研究者贡献更多语言版本。这项研究与站内[《古典语言破解大模型安全对齐》]({{ site.baseurl }}/classical-chinese-jailbreak/)从不同角度指向同一问题：模型的安全约束高度依赖训练语言，换一种语言或文化语境，对齐效果就可能失效，单语种的护栏并不能自动泛化。对跨国企业而言，CAGE给出了按当地法规和文化规范测试AI产品的标准化方法，确保产品在不同国家和地区都符合当地要求；对模型开发者而言，跨文化攻击成功率的差距提示安全对齐阶段就应纳入多文化背景；对监管机构而言，它为制定跨文化的AI安全评估标准提供了技术参考，推动安全评估从单语言走向多语言、多文化。
 
 ## References
-- [https://openreview.net/forum?id=gCm55KYiqz][ref1]
-- [https://arxiv.org/abs/2602.20170][ref2]
-- [openreview.net][ref3]
-- [arxiv.org][ref4]
+- [CAGE: A Framework for Culturally Adaptive Red-Teaming Benchmark Generation][paper1-url]
+- [OpenReview 论文页][links-1]
+- [arXiv 论文页][links-2]
 
-[ref1]: https://openreview.net/forum?id=gCm55KYiqz
-[ref2]: https://arxiv.org/abs/2602.20170
-[ref3]: https://openreview.net/forum?id=gCm55KYiqz](https://openreview.net/forum?id=gCm55KYiqz
-[ref4]: https://arxiv.org/abs/2602.20170](https://arxiv.org/abs/2602.20170
+
+[paper1-url]: https://openreview.net/forum?id=gCm55KYiqz
+[links-1]: https://openreview.net/forum?id=gCm55KYiqz
+[links-2]: https://arxiv.org/abs/2602.20170
