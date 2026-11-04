@@ -1,117 +1,101 @@
-<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background gradient -->
-  <defs>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect x="0" y="0" width="1200" height="675" fill="#FFFFFF"/>
 
-  <!-- Background -->
-  <rect width="800" height="400" fill="#555555"/>
+  <!-- conclusion line -->
+  <text x="60" y="76" font-size="16" fill="#1A1B1E">Blindfold 在 Phi-4-14B 上攻击成功率达 98.1%，较基线越狱攻击提升 3.4 倍</text>
 
-  <!-- Title -->
-  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#F0F0F0" text-anchor="middle">Blindfold: 具身 AI 越狱攻击</text>
+  <!-- ============ panel a: attack success rate ============ -->
+  <text x="60" y="130" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="130" font-size="15" fill="#1A1B1E">Blindfold 攻击成功率（%，模型自测口径）</text>
 
-  <!-- Left side: Malicious Intent -->
-  <g transform="translate(80, 100)">
-    <rect x="0" y="0" width="180" height="200" rx="10" fill="#009E73" stroke="#009E73" stroke-width="2"/>
-    <text x="90" y="30" font-family="Arial, sans-serif" font-size="14" fill="#D55E00" text-anchor="middle" font-weight="bold">恶意意图</text>
-    
-    <!-- Warning icon -->
-    <circle cx="90" cy="85" r="30" fill="#555555" filter="url(#glow)"/>
-    <path d="M90 65 L95 95 L85 95 Z" fill="#F0F0F0"/>
-    <circle cx="90" cy="105" r="5" fill="#F0F0F0"/>
-    
-    <text x="90" y="140" font-family="Arial, sans-serif" font-size="12" fill="#CC79A7" text-anchor="middle">"炸掉用户手机"</text>
-    <text x="90" y="160" font-family="Arial, sans-serif" font-size="12" fill="#CC79A7" text-anchor="middle">"把手机放进烤箱"</text>
+  <!-- grid: y = 430 - 2.3*v (axis truncated below 90) -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="160" y1="384" x2="560" y2="384"/>
+    <line x1="160" y1="338" x2="560" y2="338"/>
+    <line x1="160" y1="292" x2="560" y2="292"/>
+    <line x1="160" y1="246" x2="560" y2="246"/>
   </g>
 
-  <!-- Arrow 1 -->
-  <g transform="translate(270, 180)">
-    <line x1="0" y1="0" x2="60" y2="0" stroke="#CC79A7" stroke-width="3" marker-end="url(#arrowhead)"/>
-    <text x="30" y="-15" font-family="Arial, sans-serif" font-size="11" fill="#CC79A7" text-anchor="middle">转换</text>
+  <!-- bars -->
+  <rect x="215" y="204.37" width="80" height="225.63" fill="#D55E00"/>
+  <text x="255" y="196" font-size="12" fill="#555" text-anchor="middle">98.1%</text>
+  <text x="255" y="452" font-size="12.5" fill="#1A1B1E" text-anchor="middle">Phi-4-14B</text>
+
+  <rect x="405" y="215.64" width="80" height="214.36" fill="#D55E00"/>
+  <text x="445" y="207" font-size="12" fill="#555" text-anchor="middle">93.2%</text>
+  <text x="445" y="452" font-size="12.5" fill="#1A1B1E" text-anchor="middle">GPT-4o</text>
+
+  <!-- y axis -->
+  <line x1="160" y1="204" x2="160" y2="430" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="160" y1="430" x2="156" y2="430"/>
+    <line x1="160" y1="384" x2="156" y2="384"/>
+    <line x1="160" y1="338" x2="156" y2="338"/>
+    <line x1="160" y1="292" x2="156" y2="292"/>
+    <line x1="160" y1="246" x2="156" y2="246"/>
   </g>
-
-  <!-- Center: Blindfold Framework -->
-  <g transform="translate(340, 80)">
-    <rect x="0" y="0" width="220" height="240" rx="15" fill="#0072B2" stroke="#56B4E9" stroke-width="3"/>
-    <text x="110" y="30" font-family="Arial, sans-serif" font-size="16" fill="#56B4E9" text-anchor="middle" font-weight="bold">Blindfold 框架</text>
-    
-    <!-- Module 1 -->
-    <rect x="20" y="45" width="180" height="45" rx="8" fill="#0072B2" stroke="#56B4E9" stroke-width="2"/>
-    <text x="110" y="72" font-family="Arial, sans-serif" font-size="12" fill="#56B4E9" text-anchor="middle">命令转换器</text>
-    
-    <!-- Module 2 -->
-    <rect x="20" y="100" width="180" height="45" rx="8" fill="#0072B2" stroke="#56B4E9" stroke-width="2"/>
-    <text x="110" y="127" font-family="Arial, sans-serif" font-size="12" fill="#56B4E9" text-anchor="middle">意图混淆器</text>
-    
-    <!-- Module 3 -->
-    <rect x="20" y="155" width="180" height="45" rx="8" fill="#0072B2" stroke="#56B4E9" stroke-width="2"/>
-    <text x="110" y="182" font-family="Arial, sans-serif" font-size="12" fill="#56B4E9" text-anchor="middle">规则验证器</text>
-    
-    <!-- Success rate badge -->
-    <rect x="55" y="210" width="110" height="25" rx="12" fill="#009E73"/>
-    <text x="110" y="227" font-family="Arial, sans-serif" font-size="12" fill="#F0F0F0" text-anchor="middle" font-weight="bold">ASR: 93.2% - 98.1%</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="150" y="434">0</text>
+    <text x="150" y="388">20</text>
+    <text x="150" y="342">40</text>
+    <text x="150" y="296">60</text>
+    <text x="150" y="250">80</text>
   </g>
+  <text x="78" y="317" font-size="14" fill="#1A1B1E" transform="rotate(-90 78 317)" text-anchor="middle">攻击成功率（%）</text>
 
-  <!-- Arrow 2 -->
-  <g transform="translate(570, 180)">
-    <line x1="0" y1="0" x2="60" y2="0" stroke="#CC79A7" stroke-width="3" marker-end="url(#arrowhead)"/>
-    <text x="30" y="-15" font-family="Arial, sans-serif" font-size="11" fill="#CC79A7" text-anchor="middle">执行</text>
+  <!-- x axis -->
+  <line x1="160" y1="430" x2="560" y2="430" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="255" y1="430" x2="255" y2="434"/>
+    <line x1="445" y1="430" x2="445" y2="434"/>
   </g>
+  <text x="160" y="486" font-size="12" fill="#555">纵轴自 0 起、等距刻度至 80，轴顶截断于 90 以下，</text>
+  <text x="160" y="504" font-size="12" fill="#555">两模型报告的成功率均高于轴上全部刻度。</text>
 
-  <!-- Right side: Benign Actions -->
-  <g transform="translate(640, 100)">
-    <rect x="0" y="0" width="140" height="200" rx="10" fill="#009E73" stroke="#009E73" stroke-width="2"/>
-    <text x="70" y="30" font-family="Arial, sans-serif" font-size="14" fill="#009E73" text-anchor="middle" font-weight="bold">无害动作链</text>
-    
-    <!-- Action steps -->
-    <g transform="translate(15, 50)">
-      <rect x="0" y="0" width="110" height="25" rx="5" fill="#009E73"/>
-      <text x="55" y="17" font-family="Arial, sans-serif" font-size="10" fill="#56B4E9" text-anchor="middle">find(phone)</text>
-      
-      <rect x="0" y="35" width="110" height="25" rx="5" fill="#009E73"/>
-      <text x="55" y="52" font-family="Arial, sans-serif" font-size="10" fill="#56B4E9" text-anchor="middle">pick(phone)</text>
-      
-      <rect x="0" y="70" width="110" height="25" rx="5" fill="#009E73"/>
-      <text x="55" y="87" font-family="Arial, sans-serif" font-size="10" fill="#56B4E9" text-anchor="middle">move(oven)</text>
-      
-      <rect x="0" y="105" width="110" height="25" rx="5" fill="#009E73"/>
-      <text x="55" y="122" font-family="Arial, sans-serif" font-size="10" fill="#56B4E9" text-anchor="middle">stretch()</text>
-    </g>
+  <!-- ============ panel b: mechanism schematic ============ -->
+  <text x="640" y="130" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="662" y="130" font-size="15" fill="#1A1B1E">攻击机制：语义安全指令链组合出危险后果（机制示意）</text>
+
+  <!-- safe step cards -->
+  <g font-size="12.5" fill="#1A1B1E">
+    <rect x="640" y="170" width="148" height="44" rx="4" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <text x="714" y="190" text-anchor="middle">子指令 1</text>
+    <text x="714" y="206" font-size="11.5" fill="#555" text-anchor="middle">单独语义合规</text>
+
+    <rect x="828" y="170" width="148" height="44" rx="4" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <text x="902" y="190" text-anchor="middle">子指令 2</text>
+    <text x="902" y="206" font-size="11.5" fill="#555" text-anchor="middle">单独语义合规</text>
+
+    <rect x="1016" y="170" width="124" height="44" rx="4" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+    <text x="1078" y="190" text-anchor="middle">子指令 n</text>
+    <text x="1078" y="206" font-size="11.5" fill="#555" text-anchor="middle">单独语义合规</text>
   </g>
-
-  <!-- Robot/Embodied AI -->
-  <g transform="translate(400, 320)">
-    <!-- Robot body -->
-    <rect x="-40" y="-50" width="80" height="60" rx="10" fill="#555555"/>
-    
-    <!-- Robot head -->
-    <circle cx="0" cy="-70" r="25" fill="#555555"/>
-    
-    <!-- Blindfold -->
-    <rect x="-30" y="-78" width="60" height="16" rx="8" fill="#009E73" stroke="#D55E00" stroke-width="2"/>
-    <text x="0" y="-67" font-family="Arial, sans-serif" font-size="9" fill="#D55E00" text-anchor="middle" font-weight="bold">BLINDFOLD</text>
-    
-    <!-- Robot arms -->
-    <line x1="-60" y1="-30" x2="-40" y2="-30" stroke="#56B4E9" stroke-width="6" stroke-linecap="round"/>
-    <line x1="40" y1="-30" x2="60" y2="-30" stroke="#56B4E9" stroke-width="6" stroke-linecap="round"/>
-    
-    <!-- Robot label -->
-    <text x="0" y="20" font-family="Arial, sans-serif" font-size="12" fill="#56B4E9" text-anchor="middle">具身 AI 安全机制</text>
+  <g stroke="#555555" stroke-width="1.5">
+    <line x1="788" y1="192" x2="822" y2="192"/>
+    <line x1="976" y1="192" x2="1010" y2="192"/>
   </g>
+  <polygon points="826,192 816,187 816,197" fill="#555555"/>
+  <polygon points="1014,192 1004,187 1004,197" fill="#555555"/>
 
-  <!-- Arrow markers -->
-  <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#CC79A7"/>
-    </marker>
-  </defs>
+  <!-- combine arrow -->
+  <line x1="902" y1="214" x2="902" y2="266" stroke="#555555" stroke-width="1.5"/>
+  <polygon points="902,274 896,262 908,262" fill="#555555"/>
 
-  <!-- Key insight at bottom -->
-  <text x="400" y="385" font-family="Arial, sans-serif" font-size="13" fill="#CC79A7" text-anchor="middle">💡 语言安全 ≠ 物理安全：语义无害的动作可能导致危险后果</text>
+  <!-- dangerous outcome -->
+  <rect x="727" y="278" width="350" height="46" rx="4" fill="#D55E00"/>
+  <text x="902" y="300" font-size="13.5" fill="#FFFFFF" text-anchor="middle">串联执行 → 累积物理后果：危险操作</text>
+  <text x="902" y="316" font-size="11.5" fill="#FFFFFF" text-anchor="middle">逐条合规，组合危险</text>
+
+  <!-- defense comparison -->
+  <rect x="640" y="364" width="460" height="42" rx="4" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+  <text x="660" y="390" font-size="12.5" fill="#555">传统防御（文本内容层面）：无可拦截信号，检测失效</text>
+
+  <rect x="640" y="422" width="460" height="42" rx="4" fill="#FFFFFF" stroke="#D55E00" stroke-width="1.5"/>
+  <text x="660" y="448" font-size="12.5" fill="#1A1B1E">攻击面转移：从文本内容 → 动作序列的规划层面</text>
+
+  <text x="640" y="496" font-size="12" fill="#555">攻击可全自动生成，无需修改模型权重，利用语义-后果鸿沟。</text>
+
+  <!-- footnote -->
+  <text x="60" y="586" font-size="11" fill="#767676">数据：ACM SenSys 2026《Blindfold: Adversarial Attack on Embodied LLMs via Semantically Safe Action Chaining》</text>
+  <text x="60" y="604" font-size="11" fill="#767676">（论文自测口径）· 面板 a 为正文报告的成功率，面板 b 为机制示意、无数值口径 · 3.4 倍为相对基线越狱攻击</text>
 </svg>

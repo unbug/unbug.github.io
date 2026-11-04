@@ -1,130 +1,78 @@
-<svg width="1200" height="680" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <defs>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#1A1B1E" flood-opacity="0.3"/>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect x="0" y="0" width="1200" height="675" fill="#FFFFFF"/>
 
-  <!-- Background -->
-  <rect width="1200" height="680" fill="#555555"/>
+  <!-- conclusion line -->
+  <text x="60" y="76" font-size="16" fill="#1A1B1E">Meta-Team 通过个体、团队、组织三层协作自进化，在 6 个长程智能体基准上一致优于单智能体与手工设计系统</text>
 
-  <!-- Title -->
-  <text x="600" y="55" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#F0F0F0" text-anchor="middle">Meta-Team: 协作式自我进化框架</text>
-  <text x="600" y="82" font-family="Arial, sans-serif" font-size="16" fill="#CC79A7" text-anchor="middle">Evolve as a Team — Collaborative Self-Evolution for LLM-based Multi-Agent Systems</text>
+  <!-- ============ panel a: mechanism schematic ============ -->
+  <text x="60" y="130" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="130" font-size="15" fill="#1A1B1E">三层自进化机制（序列位置示意，自下而上的改进方向）</text>
 
-  <!-- Top section: Three-layer architecture -->
-  <g transform="translate(0, 120)">
-    <!-- Layer 1: Individual Behavior Layer -->
-    <rect x="60" y="0" width="340" height="280" rx="12" fill="#555555" filter="url(#shadow)"/>
-    <rect x="60" y="0" width="340" height="5" rx="2" fill="#CC79A7"/>
-    <text x="230" y="40" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#CC79A7" text-anchor="middle">个体行为层</text>
-    <text x="230" y="60" font-family="Arial, sans-serif" font-size="13" fill="#56B4E9" text-anchor="middle">Individual Behavior Layer</text>
+  <!-- level 1: individual -->
+  <rect x="110" y="384" width="270" height="84" rx="4" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+  <text x="245" y="418" font-size="14" fill="#1A1B1E" text-anchor="middle">个体行为层</text>
+  <text x="245" y="442" font-size="12" fill="#555" text-anchor="middle">保留决策、观察与行动的分布式证据</text>
 
-    <!-- Agent icons -->
-    <g transform="translate(140, 120)">
-      <circle cx="0" cy="0" r="28" fill="#CC79A7" opacity="0.3"/>
-      <circle cx="0" cy="0" r="18" fill="#CC79A7" opacity="0.6"/>
-      <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" fill="#F0F0F0" text-anchor="middle">A</text>
-    </g>
-    <g transform="translate(230, 120)">
-      <circle cx="0" cy="0" r="28" fill="#CC79A7" opacity="0.3"/>
-      <circle cx="0" cy="0" r="18" fill="#CC79A7" opacity="0.6"/>
-      <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" fill="#F0F0F0" text-anchor="middle">B</text>
-    </g>
-    <g transform="translate(320, 120)">
-      <circle cx="0" cy="0" r="28" fill="#CC79A7" opacity="0.3"/>
-      <circle cx="0" cy="0" r="18" fill="#CC79A7" opacity="0.6"/>
-      <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" fill="#F0F0F0" text-anchor="middle">C</text>
-    </g>
+  <!-- arrow 1 -->
+  <line x1="245" y1="380" x2="245" y2="316" stroke="#555555" stroke-width="1.5"/>
+  <polygon points="245,308 239,320 251,320" fill="#555555"/>
+  <text x="261" y="350" font-size="12" fill="#555">交换执行证据</text>
 
-    <!-- Evidence collection -->
-    <rect x="90" y="180" width="280" height="70" rx="8" fill="#009E73" opacity="0.6"/>
-    <text x="230" y="205" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#CC79A7" text-anchor="middle">分布式证据收集</text>
-    <text x="230" y="228" font-family="Arial, sans-serif" font-size="12" fill="#56B4E9" text-anchor="middle">决策过程 · 观察结果 · 最终行动</text>
-    <text x="230" y="245" font-family="Arial, sans-serif" font-size="11" fill="#56B4E9" text-anchor="middle">Distributed Evidence for Evolution</text>
+  <!-- level 2: team -->
+  <rect x="110" y="220" width="270" height="84" rx="4" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+  <text x="245" y="254" font-size="14" fill="#1A1B1E" text-anchor="middle">团队交互层</text>
+  <text x="245" y="278" font-size="12" fill="#555" text-anchor="middle">共享经验，识别视角盲区与协作瓶颈</text>
+
+  <!-- arrow 2 -->
+  <line x1="245" y1="216" x2="245" y2="152" stroke="#555555" stroke-width="1.5"/>
+  <polygon points="245,144 239,156 251,156" fill="#555555"/>
+  <text x="261" y="186" font-size="12" fill="#555">汇总进化依据</text>
+
+  <!-- level 3: organization (protagonist) -->
+  <rect x="110" y="56" width="270" height="84" rx="4" fill="#D55E00"/>
+  <text x="245" y="90" font-size="14" fill="#FFFFFF" text-anchor="middle">组织进化层</text>
+  <text x="245" y="114" font-size="12" fill="#FFFFFF" text-anchor="middle">优化角色分配、通信模式与协作策略</text>
+
+  <!-- feedback loop (dashed) from org level back to task execution -->
+  <path d="M 380 98 L 442 98 L 442 426 L 392 426" fill="none" stroke="#D55E00" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <polygon points="384,426 396,420 396,432" fill="#D55E00"/>
+  <text x="452" y="266" font-size="12" fill="#555">改进作用于下一轮</text>
+  <text x="452" y="284" font-size="12" fill="#555">任务执行</text>
+
+  <text x="110" y="512" font-size="12" fill="#555">机制示意：正文为定性描述，未给出各层量化指标；</text>
+  <text x="110" y="532" font-size="12" fill="#555">改进方向为自下而上，进化依据均来自真实执行证据。</text>
+
+  <!-- ============ panel b: evaluation scope ============ -->
+  <text x="640" y="130" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="662" y="130" font-size="15" fill="#1A1B1E">评估覆盖范围</text>
+
+  <text x="640" y="180" font-size="14" fill="#1A1B1E">6 个长程智能体基准</text>
+  <g font-size="13" fill="#555">
+    <circle cx="650" cy="212" r="4" fill="#999999"/>
+    <text x="664" y="217">代码生成</text>
+    <circle cx="650" cy="244" r="4" fill="#999999"/>
+    <text x="664" y="249">科学发现</text>
+    <circle cx="650" cy="276" r="4" fill="#999999"/>
+    <text x="664" y="281">决策规划</text>
+    <circle cx="650" cy="308" r="4" fill="#999999"/>
+    <text x="664" y="313">及其他复杂任务类型</text>
   </g>
 
-  <!-- Arrow: Layer 1 to Layer 2 -->
-  <line x1="600" y1="400" x2="600" y2="430" stroke="#CC79A7" stroke-width="3"/>
-  <polygon points="600,438 593,425 607,425" fill="#CC79A7"/>
-  <text x="620" y="420" font-family="Arial, sans-serif" font-size="13" fill="#CC79A7">经验共享</text>
-
-  <!-- Layer 2: Team Interaction Layer -->
-  <g transform="translate(60, 440)">
-    <rect x="0" y="0" width="340" height="200" rx="12" fill="#555555" filter="url(#shadow)"/>
-    <rect x="0" y="0" width="340" height="5" rx="2" fill="#CC79A7"/>
-    <text x="170" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#CC79A7" text-anchor="middle">团队交互层</text>
-    <text x="170" y="55" font-family="Arial, sans-serif" font-size="13" fill="#56B4E9" text-anchor="middle">Team Interaction Layer</text>
-
-    <!-- Shared experience visualization -->
-    <g transform="translate(170, 120)">
-      <circle cx="-60" cy="0" r="22" fill="#CC79A7" opacity="0.2"/>
-      <circle cx="0" cy="0" r="30" fill="#CC79A7" opacity="0.3"/>
-      <circle cx="60" cy="0" r="22" fill="#CC79A7" opacity="0.2"/>
-      <!-- Connection lines -->
-      <line x1="-38" y1="0" x2="-22" y2="0" stroke="#CC79A7" stroke-width="2" opacity="0.5"/>
-      <line x1="22" y1="0" x2="38" y2="0" stroke="#CC79A7" stroke-width="2" opacity="0.5"/>
-      <!-- Center icon -->
-      <text x="0" y="5" font-family="Arial, sans-serif" font-size="14" fill="#F0F0F0" text-anchor="middle">⇄</text>
-    </g>
-
-    <rect x="30" y="160" width="280" height="30" rx="6" fill="#009E73" opacity="0.6"/>
-    <text x="170" y="180" font-family="Arial, sans-serif" font-size="13" fill="#CC79A7" text-anchor="middle">交换执行证据 · 识别协作瓶颈</text>
+  <text x="640" y="366" font-size="14" fill="#1A1B1E">三类对比基线</text>
+  <g stroke-width="2">
+    <line x1="640" y1="396" x2="672" y2="396" stroke="#999999"/>
+    <line x1="640" y1="428" x2="672" y2="428" stroke="#999999" stroke-dasharray="5 4"/>
+    <line x1="640" y1="460" x2="672" y2="460" stroke="#D55E00" stroke-dasharray="2 3"/>
+  </g>
+  <g font-size="13" fill="#555">
+    <text x="684" y="401">同等规模单智能体系统</text>
+    <text x="684" y="433">手工设计多智能体架构</text>
+    <text x="684" y="465">先前多智能体进化方法</text>
   </g>
 
-  <!-- Arrow: Layer 2 to Layer 3 -->
-  <line x1="600" y1="400" x2="600" y2="430" stroke="#CC79A7" stroke-width="3"/>
-  <polygon points="600,438 593,425 607,425" fill="#CC79A7"/>
+  <text x="640" y="492" font-size="12" fill="#555">论文自述：6 个基准上均一致优于上述三类基线，</text>
+  <text x="640" y="512" font-size="12" fill="#555">未报告具体分数。</text>
 
-  <!-- Right side: Layer 3 - Organizational Evolution -->
-  <g transform="translate(440, 120)">
-    <rect x="0" y="0" width="340" height="520" rx="12" fill="#555555" filter="url(#shadow)"/>
-    <rect x="0" y="0" width="340" height="5" rx="2" fill="#F0E442"/>
-    <text x="170" y="40" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#F0E442" text-anchor="middle">组织进化层</text>
-    <text x="170" y="60" font-family="Arial, sans-serif" font-size="13" fill="#56B4E9" text-anchor="middle">Organizational Evolution Layer</text>
-
-    <!-- Three evolution dimensions -->
-    <g transform="translate(0, 90)">
-      <!-- Dimension 1: Role Allocation -->
-      <rect x="20" y="0" width="300" height="80" rx="8" fill="#009E73" opacity="0.6"/>
-      <text x="40" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#F0E442">角色分配优化</text>
-      <text x="40" y="45" font-family="Arial, sans-serif" font-size="12" fill="#56B4E9">Role Allocation Optimization</text>
-      <text x="40" y="65" font-family="Arial, sans-serif" font-size="11" fill="#56B4E9">基于执行证据重新分配智能体角色</text>
-
-      <!-- Dimension 2: Communication Patterns -->
-      <rect x="20" y="100" width="300" height="80" rx="8" fill="#009E73" opacity="0.6"/>
-      <text x="40" y="125" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#F0E442">通信模式优化</text>
-      <text x="40" y="145" font-family="Arial, sans-serif" font-size="12" fill="#56B4E9">Communication Pattern Optimization</text>
-      <text x="40" y="165" font-family="Arial, sans-serif" font-size="11" fill="#56B4E9">改进智能体间的信息传递效率</text>
-
-      <!-- Dimension 3: Collaboration Strategy -->
-      <rect x="20" y="200" width="300" height="80" rx="8" fill="#009E73" opacity="0.6"/>
-      <text x="40" y="225" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#F0E442">协作策略优化</text>
-      <text x="40" y="245" font-family="Arial, sans-serif" font-size="12" fill="#56B4E9">Collaboration Strategy Optimization</text>
-      <text x="40" y="265" font-family="Arial, sans-serif" font-size="11" fill="#56B4E9">调整团队整体协作策略与分工方式</text>
-
-      <!-- Bottom: Self-evolution loop -->
-      <rect x="20" y="310" width="300" height="80" rx="8" fill="#CC79A7" opacity="0.15"/>
-      <text x="170" y="345" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#CC79A7" text-anchor="middle">自进化闭环</text>
-      <text x="170" y="368" font-family="Arial, sans-serif" font-size="12" fill="#CC79A7" text-anchor="middle">Self-Evolution Loop</text>
-      <text x="170" y="385" font-family="Arial, sans-serif" font-size="11" fill="#56B4E9" text-anchor="middle">进化后的系统 → 执行新任务 → 收集新证据</text>
-
-      <!-- Loop arrow -->
-      <path d="M 290 350 Q 340 350 340 310 L 340 280" fill="none" stroke="#CC79A7" stroke-width="2" marker-end="url(#arrowhead)"/>
-    </g>
-  </g>
-
-  <!-- Bottom section: Key metrics -->
-  <g transform="translate(0, 650)">
-    <text x="300" y="15" font-family="Arial, sans-serif" font-size="14" fill="#CC79A7" text-anchor="middle">6个长程Agent基准测试 · 一致优于单Agent与手工设计MAS</text>
-    <text x="900" y="15" font-family="Arial, sans-serif" font-size="13" fill="#56B4E9" text-anchor="middle">arXiv:2605.29790 · 香港中文大学 &amp; 阿里巴巴集团</text>
-  </g>
-
-  <!-- Arrow marker -->
-  <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#CC79A7"/>
-    </marker>
-  </defs>
+  <!-- footnote -->
+  <text x="60" y="580" font-size="11" fill="#767676">数据：arXiv:2605.29790《Evolve as a Team》（论文自述口径，正文未提供具体分数，故本图不画数值轴）· 面板 a 为机制示意、面板 b 为评估范围，双重声明均为定性口径 · 预印本未经同行评审</text>
 </svg>

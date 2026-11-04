@@ -1,90 +1,118 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'','',serif">
-  <defs>
-    <style>
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #CC79A7; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-      .rl { font-size: 15px; fill: #009E73; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-      .val { font-size: 18px; font-weight: 700; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-      .b { font-size: 12px; fill: #CC79A7; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-      .chip { font-size: 12.5px; font-weight: 600; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-    </style>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="#CC79A7"/>
-  <circle cx="1105" cy="110" r="140" fill="#009E73" opacity="0.07"/>
-  <circle cx="70" cy="620" r="115" fill="#D55E00" opacity="0.06"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="#CC79A7"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">0.6B 学生模型峰值内存 1.4 GB、推理加速 5.2 倍，八基准平均分高于未蒸馏基线</text>
 
-  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2604.26951 · 北大 / 浙大</text>
-  <text x="64" y="128" font-size="40" font-weight="700" fill="#009E73">开闸下放 16B</text>
-  <text x="64" y="158" font-size="15" fill="#009E73" font-family="'PingFang SC','Helvetica Neue',sans-serif">TIDE 首次实现扩散语言模型跨架构蒸馏：16B MoE 教师 → 0.6B 学生，上船闸过消费级硬件</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">生成 256 token：16B MoE 教师 vs 0.6B 学生（H100）</text>
 
-  <!-- ship lock motif -->
-  <g>
-    <g stroke="#009E73" stroke-width="2.5" opacity="0.7" fill="none">
-      <path d="M 988 78 L 988 176 M 1176 78 L 1176 176"/>
-      <path d="M 1030 96 L 1030 176 M 1134 96 L 1134 176"/>
-    </g>
-    <path d="M 990 104 Q 1010 112 1030 104 Q 1050 96 1070 104 Q 1090 112 1110 104 Q 1130 96 1150 104 Q 1163 109 1174 104" fill="none" stroke="url(#gTeal)" stroke-width="2.5" opacity="0.8"/>
-    <path d="M 1070 150 Q 1086 156 1102 150 Q 1118 144 1134 150 Q 1152 157 1172 150" fill="none" stroke="url(#gTeal)" stroke-width="2.5" opacity="0.6"/>
-    <path d="M 1044 140 q 28 -22 56 0 l -8 12 h -40 Z" fill="#CC79A7"/>
-    <rect x="1066" y="120" width="12" height="10" fill="#F0F0F0" opacity="0.9"/>
-    <g stroke="#009E73" stroke-width="2" opacity="0.8">
-      <line x1="988" y1="96" x2="1030" y2="96"/><line x1="1134" y1="96" x2="1176" y2="96"/>
-    </g>
-    <circle cx="1009" cy="96" r="5" fill="#F0E442"/><circle cx="1155" cy="96" r="5" fill="#F0E442"/>
+  <!-- gridlines (shared value scale 0-35, x = 290 + 8*v) -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="370" y1="140" x2="370" y2="248"/>
+    <line x1="450" y1="140" x2="450" y2="248"/>
+    <line x1="530" y1="140" x2="530" y2="248"/>
+    <line x1="370" y1="316" x2="370" y2="404"/>
+    <line x1="450" y1="316" x2="450" y2="404"/>
+    <line x1="530" y1="316" x2="530" y2="404"/>
   </g>
 
-  <!-- left: big ratio anchors -->
-  <g>
-    <rect x="64" y="200" width="690" height="96" fill="#009E73" opacity="0.07"/>
-    <text x="92" y="260" font-size="46" font-weight="700" fill="#D55E00">16B → 0.6B</text>
-    <text x="360" y="240" class="rl">跨架构蒸馏 · 架构/注意力/分词器全不同</text>
-    <text x="360" y="262" class="b">token 无法直接对齐，是 dLLM 蒸馏的根本难题</text>
-
-    <text class="rl" x="64" y="336">峰值内存 · 教师 31.3 GB vs 学生 1.4 GB</text>
-    <rect x="64" y="352" width="560" height="18" rx="4" fill="#0072B2"/>
-    <text class="val" x="636" y="367" fill="#009E73">31.3 GB</text>
-    <rect x="64" y="378" width="25" height="18" rx="4" fill="#CC79A7"/>
-    <text class="val" x="100" y="393" fill="#D55E00">1.4 GB</text>
-    <text class="b" x="170" y="393">降低 22 倍</text>
-
-    <text class="rl" x="64" y="438">推理速度 · 生成 256 token · H100</text>
-    <rect x="64" y="452" width="560" height="18" rx="4" fill="#F0E442"/>
-    <text class="val" x="636" y="467" fill="#D55E00">32.55 秒</text>
-    <rect x="64" y="478" width="107.7" height="18" rx="4" fill="#56B4E9"/>
-    <text class="val" x="184" y="493" fill="#009E73">6.25 秒</text>
-    <text class="b" x="262" y="493">提升 5.2 倍</text>
+  <!-- memory rows -->
+  <text x="278" y="168" font-size="12.5" fill="#1A1B1E" text-anchor="end">教师 16B MoE</text>
+  <rect x="290" y="154" width="250.4" height="18" fill="#999999"/>
+  <text x="548" y="168" font-size="12" fill="#555555">31.3</text>
+  <text x="278" y="216" font-size="12.5" fill="#1A1B1E" text-anchor="end">学生 0.6B</text>
+  <rect x="290" y="202" width="11.2" height="18" fill="#D55E00"/>
+  <text x="310" y="216" font-size="12" fill="#555555">1.4</text>
+  <text x="90" y="250" font-size="12" fill="#555555" font-weight="bold">内存（GB）</text>
+  <line x1="290" y1="248" x2="530" y2="248" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="290" y1="248" x2="290" y2="252"/>
+    <line x1="370" y1="248" x2="370" y2="252"/>
+    <line x1="450" y1="248" x2="450" y2="252"/>
+    <line x1="530" y1="248" x2="530" y2="252"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="290" y="270">0</text>
+    <text x="370" y="270">10</text>
+    <text x="450" y="270">20</text>
+    <text x="530" y="270">30</text>
   </g>
 
-  <!-- right: three gates -->
-  <g>
-    <rect x="836" y="200" width="304" height="296" rx="12" fill="#009E73" opacity="0.07"/>
-    <text x="856" y="230" font-size="16" font-weight="700" fill="#009E73">三道闸室</text>
+  <!-- time rows -->
+  <text x="278" y="344" font-size="12.5" fill="#1A1B1E" text-anchor="end">教师 16B MoE</text>
+  <rect x="290" y="330" width="260.4" height="18" fill="#999999"/>
+  <text x="558" y="344" font-size="12" fill="#555555">32.55</text>
+  <text x="278" y="392" font-size="12.5" fill="#1A1B1E" text-anchor="end">学生 0.6B</text>
+  <rect x="290" y="378" width="50" height="18" fill="#D55E00"/>
+  <text x="348" y="392" font-size="12" fill="#555555">6.25</text>
+  <text x="90" y="406" font-size="12" fill="#555555" font-weight="bold">时间（秒）</text>
+  <line x1="290" y1="404" x2="530" y2="404" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="290" y1="404" x2="290" y2="408"/>
+    <line x1="370" y1="404" x2="370" y2="408"/>
+    <line x1="450" y1="404" x2="450" y2="408"/>
+    <line x1="530" y1="404" x2="530" y2="408"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="290" y="426">0</text>
+    <text x="370" y="426">10</text>
+    <text x="450" y="426">20</text>
+    <text x="530" y="426">30</text>
+  </g>
+  <text x="410" y="452" font-size="14" fill="#1A1B1E" text-anchor="middle">数值（GB / 秒，两栏同尺度）</text>
 
-    <circle cx="866" cy="264" r="11" fill="#56B4E9"/><text x="866" y="269" text-anchor="middle" font-size="12" font-weight="700" fill="#CC79A7" font-family="'PingFang SC',sans-serif">T</text>
-    <text class="rl" x="888" y="262" font-weight="700">TIDAL 调度</text>
-    <text class="b" x="888" y="282">训练进度 × 扩散时间步联合调蒸馏强度，教师不可靠时自动降权</text>
+  <text x="90" y="478" font-size="12" fill="#555555">内存降低 22 倍 · 推理加速 5.2 倍（教师 ÷ 学生）</text>
 
-    <circle cx="866" cy="334" r="11" fill="#F0E442"/><text x="866" y="339" text-anchor="middle" font-size="12" font-weight="700" fill="#CC79A7" font-family="'PingFang SC',sans-serif">C</text>
-    <text class="rl" x="888" y="332" font-weight="700">CompDemo 上下文增强</text>
-    <text class="b" x="888" y="352">两次教师推理生互补掩码分割，每位置约见 50% 已揭示上下文</text>
+  <!-- ============ panel b ============ -->
+  <text x="660" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="682" y="104" font-size="15" fill="#1A1B1E">任务平均准确率（%，空心 = 未蒸馏基线，实心 = 蒸馏后）</text>
 
-    <circle cx="866" cy="404" r="11" fill="#CC79A7"/><text x="866" y="409" text-anchor="middle" font-size="12" font-weight="700" fill="#CC79A7" font-family="'PingFang SC',sans-serif">R</text>
-    <text class="rl" x="888" y="402" font-weight="700">Reverse CALM</text>
-    <text class="b" x="888" y="422">反向分块级二元交叉熵跨分词器匹配，加双端噪声过滤</text>
-
-    <text x="856" y="466" font-size="15" font-weight="700" fill="#D55E00">分词器不同，也能对表过闸</text>
+  <!-- gridlines -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="800" y1="140" x2="800" y2="380"/>
+    <line x1="870" y1="140" x2="870" y2="380"/>
+    <line x1="940" y1="140" x2="940" y2="380"/>
   </g>
 
-  <!-- bottom chips -->
-  <line x1="64" y1="520" x2="1136" y2="520" stroke="#CC79A7"/>
-  <g>
-    <text class="rl" x="64" y="562">8 基准平均</text>
-    <text x="160" y="562" font-size="17" font-weight="700" fill="#009E73" font-family="'PingFang SC',sans-serif">34.20 vs 32.67 · +1.53</text>
-    <rect x="392" y="542" width="196" height="28" rx="14" fill="#CC79A7" opacity="0.16"/>
-    <text x="490" y="561" text-anchor="middle" class="chip" fill="#D55E00">HumanEval +16.48 分</text>
-    <text x="600" y="561" class="b">48.78 vs 32.30 · 代码生成最突出</text>
+  <!-- x = 800 + 8*v -->
+  <!-- HumanEval 32.30 -> 48.78 (Δ=+16.48) -->
+  <text x="788" y="212" font-size="12.5" fill="#1A1B1E" text-anchor="end">HumanEval</text>
+  <line x1="1026.1" y1="206" x2="1141.46" y2="206" stroke="#D55E00" stroke-width="1.5"/>
+  <circle cx="1026.1" cy="206" r="5" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+  <circle cx="1141.46" cy="206" r="5" fill="#D55E00"/>
+  <text x="1024" y="188" font-size="12" fill="#555555" text-anchor="end">32.30 → 48.78</text>
+  <text x="1024" y="232" font-size="12" fill="#555555" text-anchor="end">代码生成，Δ=+16.48 分</text>
+
+  <!-- 8-benchmark avg 32.67 -> 34.20 (Δ=+1.53) -->
+  <text x="788" y="316" font-size="12.5" fill="#1A1B1E" text-anchor="end">八基准平均</text>
+  <line x1="1028.69" y1="310" x2="1039.4" y2="310" stroke="#D55E00" stroke-width="1.5"/>
+  <circle cx="1028.69" cy="310" r="5" fill="#FFFFFF" stroke="#999999" stroke-width="1.5"/>
+  <circle cx="1039.4" cy="310" r="5" fill="#D55E00"/>
+  <text x="1050" y="292" font-size="12" fill="#555555">32.67 → 34.20</text>
+  <text x="1050" y="332" font-size="12" fill="#555555">TIDE-Cross</text>
+  <text x="1050" y="350" font-size="12" fill="#555555">Δ=+1.53 分</text>
+
+  <!-- value axis -->
+  <line x1="800" y1="380" x2="1020" y2="380" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="800" y1="380" x2="800" y2="384"/>
+    <line x1="870" y1="380" x2="870" y2="384"/>
+    <line x1="940" y1="380" x2="940" y2="384"/>
+    <line x1="1010" y1="380" x2="1010" y2="384"/>
   </g>
-  <text x="64" y="604" font-size="18" fill="#009E73">大模型进船闸，消费级硬件才收得到货。</text>
-  <text class="b" x="1136" y="630" text-anchor="end" font-family="'PingFang SC','Helvetica Neue',sans-serif">TIDE-Cross vs BD3LM 基线 · 论文自述口径 · 预印本未经同行评审 · Micropaper</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="800" y="402">0</text>
+    <text x="870" y="402">10</text>
+    <text x="940" y="402">20</text>
+    <text x="1010" y="402">30</text>
+  </g>
+  <polygon points="1020,375 1032,380 1020,385" fill="#1A1B1E"/>
+  <text x="910" y="428" font-size="14" fill="#1A1B1E" text-anchor="middle">平均准确率（%）</text>
+
+  <text x="660" y="462" font-size="12" fill="#555555">轴自 0 起、刻度至 30，轴末箭头表示数值延续；48.78 超出刻度范围仍按同尺度绘制</text>
+
+  <!-- footnote -->
+  <text x="60" y="615" font-size="11" fill="#767676">数据：arXiv:2604.26951 · 论文自测口径（H100，生成 256 token；8 个基准平均分与 HumanEval 准确率）· 预印本未经同行评审</text>
 </svg>

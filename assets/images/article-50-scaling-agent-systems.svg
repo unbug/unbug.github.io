@@ -1,82 +1,96 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'','',serif">
-  <defs>
-    <style>
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #CC79A7; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-      .rl { font-size: 15px; fill: #009E73; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-      .b { font-size: 12px; fill: #CC79A7; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-      .chip { font-size: 12.5px; font-weight: 600; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-    </style>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="#CC79A7"/>
-  <circle cx="1105" cy="110" r="140" fill="#D55E00" opacity="0.07"/>
-  <circle cx="70" cy="620" r="115" fill="#009E73" opacity="0.06"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="#CC79A7"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">180 组受控实验：多智能体效果取决于任务类型，顺序推理任务反而下降 39% 到 70%</text>
 
-  <text class="k" x="64" y="84">范式雷达 · ARXIV:2512.08296 · GOOGLE RESEARCH · 180 组受控实验</text>
-  <text x="64" y="128" font-size="40" font-weight="700" fill="#009E73">先定曲目，再定乐队人数</text>
-  <text x="64" y="158" font-size="15" fill="#009E73" font-family="'PingFang SC','Helvetica Neue',sans-serif">首个智能体系统量化缩放原则：协调增益取决于任务类型，不存在「越多越好」</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">不同任务上多智能体相对单智能体的性能变化（%，论文自测）</text>
 
-  <!-- conductor + orchestra motif -->
-  <g transform="translate(1010,60)">
-    <circle cx="60" cy="34" r="13" fill="#D55E00"/>
-    <path d="M 60 47 q -20 26 -12 52 h 24 q 8 -26 -12 -52" fill="#CC79A7"/>
-    <path d="M 70 54 L 98 28" stroke="#D55E00" stroke-width="3" stroke-linecap="round"/>
-    <circle cx="100" cy="26" r="3.5" fill="#D55E00"/>
-    <path d="M 50 54 L 24 40" stroke="#D55E00" stroke-width="3" stroke-linecap="round"/>
-    <g fill="#F0E442">
-      <circle cx="8" cy="104" r="7"/><circle cx="36" cy="116" r="7"/><circle cx="66" cy="122" r="7"/><circle cx="96" cy="116" r="7"/><circle cx="124" cy="104" r="7"/>
-    </g>
-    <path d="M 0 92 Q 66 68 132 92" fill="none" stroke="#E69F00" stroke-width="1.5" opacity="0.5"/>
-    <path d="M 0 126 Q 66 148 132 126" fill="none" stroke="#E69F00" stroke-width="1.5" opacity="0.5"/>
+  <!-- gridlines vertical: x = 530 + 5*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="680" y1="130" x2="680" y2="380"/>
+    <line x1="830" y1="130" x2="830" y2="380"/>
+    <line x1="980" y1="130" x2="980" y2="380"/>
   </g>
+  <!-- zero baseline -->
+  <line x1="530" y1="130" x2="530" y2="380" stroke="#1A1B1E" stroke-width="0.75"/>
 
-  <!-- left: three task-type bars -->
-  <g>
-    <rect x="64" y="200" width="690" height="70" fill="#009E73" opacity="0.08"/>
-    <text class="rl" x="92" y="230" font-weight="700" fill="#009E73">可并行任务 · 金融推理</text>
-    <rect x="360" y="222" width="330" height="16" rx="4" fill="#56B4E9"/>
-    <text x="702" y="237" font-size="17" font-weight="700" fill="#009E73" font-family="'PingFang SC',sans-serif">+80.9%</text>
-    <text class="b" x="92" y="252">集中式协调整合中间结果</text>
+  <!-- row 1: parallel / centralized +80.9 -->
+  <text x="518" y="166" font-size="12.5" fill="#1A1B1E" text-anchor="end">可并行任务 · 集中式协调</text>
+  <rect x="530" y="152" width="404.5" height="18" fill="#D55E00"/>
+  <text x="942" y="166" font-size="12" fill="#555555">+80.9</text>
 
-    <rect x="64" y="282" width="690" height="70" fill="#009E73" opacity="0.07"/>
-    <text class="rl" x="92" y="312" font-weight="700" fill="#009E73">动态网页导航</text>
-    <rect x="360" y="296" width="38" height="14" rx="4" fill="#56B4E9"/>
-    <text x="406" y="309" font-size="15" font-weight="700" fill="#009E73" font-family="'PingFang SC',sans-serif">去中心化 +9.2%</text>
-    <rect x="360" y="316" width="1" height="14" rx="0.5" fill="#56B4E9" opacity="0.4"/>
-    <text x="368" y="329" class="b">集中式 +0.2% · 局部信息要快响应</text>
+  <!-- row 2: dynamic navigation decentralized +9.2 -->
+  <text x="518" y="214" font-size="12.5" fill="#1A1B1E" text-anchor="end">动态网页导航 · 去中心化</text>
+  <rect x="530" y="200" width="46" height="18" fill="#999999"/>
+  <text x="584" y="214" font-size="12" fill="#555555">+9.2</text>
 
-    <rect x="64" y="364" width="690" height="76" fill="#D55E00" opacity="0.08"/>
-    <text class="rl" x="92" y="394" font-weight="700" fill="#D55E00">顺序推理任务 · 悬崖</text>
-    <rect x="360" y="380" width="183" height="18" rx="4" fill="#CC79A7"/>
-    <text x="556" y="395" font-size="17" font-weight="700" fill="#D55E00" font-family="'PingFang SC',sans-serif">性能下降 39–70%</text>
-    <text class="b" x="92" y="422">所有多智能体变体皆然——每个输出变下个输入，通信开销直接转成推理错误</text>
+  <!-- row 3: dynamic navigation centralized +0.2 -->
+  <text x="518" y="262" font-size="12.5" fill="#1A1B1E" text-anchor="end">动态网页导航 · 集中式</text>
+  <rect x="530" y="248" width="1" height="18" fill="#999999"/>
+  <text x="540" y="262" font-size="12" fill="#555555">+0.2</text>
+
+  <!-- row 4: sequential reasoning 39%-70% decline -->
+  <text x="518" y="334" font-size="12.5" fill="#1A1B1E" text-anchor="end">顺序推理任务 · 全部多智能体变体</text>
+  <rect x="180" y="320" width="205" height="18" fill="#0072B2"/>
+  <polygon points="188,314 172,329 188,344" fill="#0072B2"/>
+  <text x="400" y="310" font-size="12" fill="#555555">下降 39%–70%（区间自 -39 起）</text>
+
+  <!-- value axis -->
+  <line x1="180" y1="380" x2="1010" y2="380" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="180" y1="380" x2="180" y2="384"/>
+    <line x1="330" y1="380" x2="330" y2="384"/>
+    <line x1="530" y1="380" x2="530" y2="384"/>
+    <line x1="680" y1="380" x2="680" y2="384"/>
+    <line x1="830" y1="380" x2="830" y2="384"/>
+    <line x1="980" y1="380" x2="980" y2="384"/>
   </g>
-
-  <!-- right column -->
-  <g>
-    <rect x="836" y="200" width="304" height="112" rx="12" fill="#E69F00" opacity="0.1"/>
-    <text x="856" y="244" font-size="30" font-weight="700" fill="#D55E00">87%</text>
-    <text x="856" y="270" class="rl">预测模型认出未见任务最优架构</text>
-    <text x="856" y="292" class="b">输入：可并行性 × 复杂度 × 动态性</text>
-
-    <text class="rl" x="856" y="348">对齐表</text>
-    <text class="b" x="856" y="370">并行 → 集中式 · 动态 → 去中心化</text>
-    <text class="b" x="856" y="388">顺序 → 根本不需要多智能体</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="180" y="402">-70</text>
+    <text x="330" y="402">-40</text>
+    <text x="530" y="402">0</text>
+    <text x="680" y="402">+30</text>
+    <text x="830" y="402">+60</text>
+    <text x="980" y="402">+90%</text>
   </g>
+  <text x="595" y="428" font-size="14" fill="#1A1B1E" text-anchor="middle">性能变化（百分点，相对单智能体基线）</text>
 
-  <!-- bottom chips -->
-  <line x1="64" y1="486" x2="1136" y2="486" stroke="#CC79A7"/>
-  <g>
-    <text class="rl" x="64" y="528">180 种配置扫过</text>
-    <rect x="200" y="508" width="120" height="28" rx="14" fill="#56B4E9" opacity="0.18"/>
-    <text x="260" y="527" text-anchor="middle" class="chip" fill="#009E73">架构类型</text>
-    <rect x="332" y="508" width="120" height="28" rx="14" fill="#56B4E9" opacity="0.2"/>
-    <text x="392" y="527" text-anchor="middle" class="chip" fill="#009E73">任务类型</text>
-    <rect x="464" y="508" width="120" height="28" rx="14" fill="#F0E442" opacity="0.26"/>
-    <text x="524" y="527" text-anchor="middle" class="chip" fill="#D55E00">缩放变量</text>
-    <text x="600" y="527" class="b">隔离「协调增益」与「信息访问增益」的混淆</text>
+  <text x="60" y="458" font-size="12" fill="#555555">顺序推理的悬崖式下跌与增益量级同为结构性结论；区间为论文报告范围（39% 到 70%）</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="60" y="512" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="512" font-size="15" fill="#1A1B1E">架构-任务预测模型：留一法交叉验证中识别未见任务最优架构的准确率</text>
+
+  <!-- bar: y = 880 - 6*pct => 87 -> 358, 50 -> 580 -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="240" y1="580" x2="700" y2="580"/>
+    <line x1="240" y1="430" x2="700" y2="430"/>
   </g>
-  <text x="64" y="580" font-size="18" fill="#009E73">堆人头之前先问曲目——架构-任务对齐，比智能体数量更重要。</text>
-  <text class="b" x="1136" y="618" text-anchor="end" font-family="'PingFang SC','Helvetica Neue',sans-serif">数据为论文自述口径 · Micropaper</text>
+  <rect x="360" y="358" width="80" height="182" fill="#D55E00"/>
+  <text x="400" y="350" font-size="12" fill="#555555" text-anchor="middle">87% 未见任务</text>
+  <text x="400" y="598" font-size="12.5" fill="#1A1B1E" text-anchor="middle">预测模型</text>
+
+  <line x1="240" y1="580" x2="700" y2="580" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="240" y1="580" x2="240" y2="584"/>
+    <line x1="470" y1="580" x2="470" y2="584"/>
+    <line x1="700" y1="580" x2="700" y2="584"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="240" y="604">0</text>
+    <text x="470" y="604">50</text>
+    <text x="700" y="604">100</text>
+  </g>
+  <text x="470" y="628" font-size="14" fill="#1A1B1E" text-anchor="middle">架构选择准确率（%）</text>
+
+  <text x="780" y="380" font-size="12" fill="#1A1B1E">输入：任务可并行性、复杂度、动态性</text>
+  <text x="780" y="400" font-size="12" fill="#555555">输出：最优架构类型</text>
+  <text x="780" y="420" font-size="12" fill="#555555">评估：留一法交叉验证</text>
+  <text x="780" y="452" font-size="12" fill="#555555">样本：180 种智能体配置的受控实验</text>
+
+  <!-- footnote -->
+  <text x="60" y="655" font-size="11" fill="#767676">数据：arXiv:2512.08296（Google Research，180 组受控实验）· 论文自测口径 · 预印本未经同行评审</text>
 </svg>

@@ -1,86 +1,83 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'','',serif">
-  <defs>
-    <style>
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #CC79A7; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-      .rl { font-size: 15px; fill: #009E73; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-      .b { font-size: 12px; fill: #CC79A7; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-      .chip { font-size: 12.5px; font-weight: 600; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-    </style>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="#CC79A7"/>
-  <circle cx="1105" cy="110" r="140" fill="#D55E00" opacity="0.07"/>
-  <circle cx="70" cy="620" r="115" fill="#009E73" opacity="0.06"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="#CC79A7"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">Claude Opus 4.7 八次试验七次击败求解器，其余三个Agent无一超过两次</text>
 
-  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2604.25067 · 斯坦福等</text>
-  <text x="64" y="128" font-size="40" font-weight="700" fill="#009E73">棋谱三个月翻篇</text>
-  <text x="64" y="158" font-size="15" fill="#009E73" font-family="'PingFang SC','Helvetica Neue',sans-serif">前沿编程 Agent 自主实现 AlphaZero 自对弈流水线，对战 Pascal Pons 精确求解器</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">击败 Pascal Pons 精确求解器的试验次数（每 Agent 八次）</text>
 
-  <!-- connect-four / scroll motif -->
-  <g transform="translate(1000,62)">
-    <rect x="0" y="0" width="150" height="100" rx="6" fill="#F0F0F0" stroke="#CC79A7" stroke-width="1.5"/>
-    <g>
-      <circle cx="30" cy="28" r="12" fill="#CC79A7"/><circle cx="75" cy="28" r="12" fill="#56B4E9"/>
-      <circle cx="120" cy="28" r="12" fill="none" stroke="#CC79A7" stroke-width="2"/>
-      <circle cx="30" cy="70" r="12" fill="#56B4E9"/><circle cx="75" cy="70" r="12" fill="#CC79A7"/>
-      <circle cx="120" cy="70" r="12" fill="none" stroke="#CC79A7" stroke-width="2"/>
-    </g>
-    <path d="M -6 106 Q 75 128 156 106" fill="none" stroke="#E69F00" stroke-width="2.5" opacity="0.7"/>
-    <circle cx="30" cy="122" r="4" fill="#F0E442"/><circle cx="75" cy="128" r="4" fill="#F0E442"/><circle cx="120" cy="122" r="4" fill="#F0E442"/>
+  <!-- horizontal gridlines -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="200" y1="300" x2="540" y2="300"/>
+    <line x1="200" y1="225" x2="540" y2="225"/>
+    <line x1="200" y1="150" x2="540" y2="150"/>
   </g>
 
-  <!-- slope: Jan vs Apr -->
-  <g>
-    <rect x="64" y="204" width="690" height="104" fill="#0072B2" opacity="0.07"/>
-    <text class="rl" x="92" y="238">能力曲线 · 同一任务</text>
-    <line x1="150" y1="292" x2="520" y2="238" stroke="url(#gSlate)" stroke-width="3"/>
-    <circle cx="150" cy="292" r="8" fill="#CC79A7"/>
-    <circle cx="520" cy="238" r="9" fill="#009E73"/>
-    <text x="130" y="286" text-anchor="end" class="rl" fill="#009E73" font-weight="700">2026.01</text>
-    <text x="130" y="306" text-anchor="end" class="b">无法完成</text>
-    <text x="540" y="232" class="rl" fill="#009E73" font-weight="700">2026.04 底</text>
-    <text x="540" y="252" class="b">Claude Opus 4.7 接近饱和</text>
-    <text x="335" y="292" text-anchor="middle" font-size="15" font-weight="700" fill="#D55E00" font-family="'PingFang SC',sans-serif">3 个月</text>
+  <!-- bars: y = 375 - 37.5 * wins -->
+  <rect x="230" y="112.5" width="60" height="262.5" fill="#D55E00"/>
+  <text x="260" y="104" font-size="12" fill="#555555" text-anchor="middle">7</text>
+  <text x="260" y="393" font-size="12.5" fill="#1A1B1E" text-anchor="middle">Claude</text>
+  <text x="260" y="409" font-size="12.5" fill="#1A1B1E" text-anchor="middle">Opus 4.7</text>
 
-    <text class="rl" x="64" y="358">对战战绩 · 各 8 次试验 · 三小时预算 · 消费级硬件</text>
-    <g>
-      <text class="rl" x="92" y="396">Claude Opus 4.7</text>
-      <g transform="translate(250,382)">
-        <circle cx="14" cy="0" r="10" fill="#009E73"/><circle cx="44" cy="0" r="10" fill="#009E73"/><circle cx="74" cy="0" r="10" fill="#009E73"/><circle cx="104" cy="0" r="10" fill="#009E73"/><circle cx="134" cy="0" r="10" fill="#009E73"/><circle cx="164" cy="0" r="10" fill="#009E73"/><circle cx="194" cy="0" r="10" fill="#009E73"/><circle cx="224" cy="0" r="10" fill="none" stroke="#CC79A7" stroke-width="2"/>
-      </g>
-      <text x="502" y="388" class="rl" fill="#009E73" font-weight="700" dx="16">7/8</text>
-    </g>
-    <g>
-      <text class="rl" x="92" y="440">其他三个 Agent</text>
-      <g transform="translate(250,426)">
-        <circle cx="14" cy="0" r="10" fill="#CC79A7"/><circle cx="44" cy="0" r="10" fill="#CC79A7"/><circle cx="74" cy="0" r="10" fill="none" stroke="#CC79A7" stroke-width="2"/><circle cx="104" cy="0" r="10" fill="none" stroke="#CC79A7" stroke-width="2"/><circle cx="134" cy="0" r="10" fill="none" stroke="#CC79A7" stroke-width="2"/><circle cx="164" cy="0" r="10" fill="none" stroke="#CC79A7" stroke-width="2"/><circle cx="194" cy="0" r="10" fill="none" stroke="#CC79A7" stroke-width="2"/><circle cx="224" cy="0" r="10" fill="none" stroke="#CC79A7" stroke-width="2"/>
-      </g>
-      <text x="502" y="432" class="rl" fill="#D55E00" font-weight="700" dx="16">≤2/8</text>
-    </g>
-    <text class="b" x="250" y="472">实心=击败求解器 · 空心=未胜</text>
+  <rect x="340" y="300" width="60" height="75" fill="#999999"/>
+  <text x="370" y="292" font-size="12" fill="#555555" text-anchor="middle">0–2</text>
+  <text x="370" y="393" font-size="12.5" fill="#1A1B1E" text-anchor="middle">其余三个</text>
+  <text x="370" y="409" font-size="12.5" fill="#1A1B1E" text-anchor="middle">Agent</text>
+
+  <!-- value axis -->
+  <line x1="200" y1="375" x2="540" y2="375" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="196" y1="375" x2="200" y2="375"/>
+    <line x1="196" y1="300" x2="200" y2="300"/>
+    <line x1="196" y1="225" x2="200" y2="225"/>
+    <line x1="196" y1="150" x2="200" y2="150"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="190" y="379">0</text>
+    <text x="190" y="304">2</text>
+    <text x="190" y="229">4</text>
+    <text x="190" y="154">6</text>
+  </g>
+  <text x="130" y="262" font-size="14" fill="#1A1B1E" text-anchor="middle" transform="rotate(-90 130 262)">获胜试验次数（次）</text>
+
+  <text x="200" y="448" font-size="12" fill="#555555">单次任务：消费级硬件、三小时预算、仅简洁任务描述；</text>
+  <text x="200" y="466" font-size="12" fill="#555555">Claude 以先手出战</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="650" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="672" y="104" font-size="15" fill="#1A1B1E">任务完成度随时间的跃迁（序列示意，无数值轴）</text>
+
+  <!-- timeline -->
+  <line x1="710" y1="330" x2="1110" y2="330" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="710" y1="330" x2="710" y2="334"/>
+    <line x1="1110" y1="330" x2="1110" y2="334"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E">
+    <text x="710" y="354" text-anchor="middle">2026年1月</text>
+    <text x="710" y="372" text-anchor="middle" fill="#555555" font-size="12">开发启动</text>
+    <text x="1092" y="354" text-anchor="middle">2026年4月底</text>
+    <text x="1092" y="372" text-anchor="middle" fill="#555555" font-size="12">接近饱和</text>
   </g>
 
-  <!-- right column -->
-  <g>
-    <rect x="836" y="204" width="304" height="76" rx="10" fill="#CC79A7" opacity="0.08"/>
-    <text x="856" y="236" font-size="17" font-weight="700" fill="#D55E00">评估范式</text>
-    <text x="856" y="262" class="b">仅给简洁任务描述，探测 AI 研究品味</text>
+  <!-- state markers -->
+  <circle cx="710" cy="330" r="6" fill="#999999"/>
+  <text x="710" y="270" font-size="12" fill="#555555" text-anchor="middle">无任何前沿Agent</text>
+  <text x="710" y="288" font-size="12" fill="#555555" text-anchor="middle">可靠完成</text>
 
-    <rect x="836" y="296" width="304" height="140" rx="12" fill="#009E73" opacity="0.08"/>
-    <text x="856" y="326" class="rl" font-weight="700" fill="#009E73">流水线须耦合的子系统</text>
-    <rect x="856" y="340" width="76" height="26" rx="13" fill="#009E73" opacity="0.22"/><text x="894" y="358" text-anchor="middle" class="chip" fill="#009E73">MCTS</text>
-    <rect x="940" y="340" width="76" height="26" rx="13" fill="#56B4E9" opacity="0.22"/><text x="978" y="358" text-anchor="middle" class="chip" fill="#0072B2">残差网络</text>
-    <rect x="1024" y="340" width="76" height="26" rx="13" fill="#F0E442" opacity="0.3"/><text x="1062" y="358" text-anchor="middle" class="chip" fill="#D55E00">自对弈数据</text>
-    <rect x="856" y="374" width="96" height="26" rx="13" fill="#CC79A7" opacity="0.18"/><text x="904" y="392" text-anchor="middle" class="chip" fill="#D55E00">训练循环稳定</text>
-    <text class="b" x="856" y="424">要懂数学与工程细节，而非调用 API</text>
+  <circle cx="1110" cy="330" r="6" fill="#D55E00"/>
+  <text x="1092" y="270" font-size="12" fill="#555555" text-anchor="middle">Claude Opus 4.7</text>
+  <text x="1092" y="288" font-size="12" fill="#555555" text-anchor="middle">接近饱和</text>
 
-    <text class="rl" x="856" y="464">GPT-5.4 时间预算用得很省</text>
-    <text class="b" x="856" y="484">缩短提示后 16 次试验：预算使用率大增，与沙盒伪装假设一致、非诊断性</text>
-  </g>
+  <!-- transition label -->
+  <text x="910" y="278" font-size="12" fill="#1A1B1E" text-anchor="middle">三个月</text>
+  <text x="910" y="296" font-size="12" fill="#1A1B1E" text-anchor="middle">无法完成 → 接近饱和</text>
 
-  <!-- bottom -->
-  <line x1="64" y1="512" x2="1136" y2="512" stroke="#CC79A7"/>
-  <text x="64" y="556" font-size="18" fill="#009E73">从代码生成工具到自主研究执行者，只差一个任务描述的距离。</text>
-  <text class="b" x="1136" y="618" text-anchor="end" font-family="'PingFang SC','Helvetica Neue',sans-serif">对战为论文自述口径 · 先手条件 · 预印本未经同行评审 · Micropaper</text>
+  <text x="650" y="448" font-size="12" fill="#555555">后续 16 次短提示试验：GPT-5.4 时间预算使用率大幅提高，</text>
+  <text x="650" y="466" font-size="12" fill="#555555">与沙盒伪装假设一致，但不构成诊断性证据</text>
+
+  <!-- footnote -->
+  <text x="60" y="615" font-size="11" fill="#767676">数据：arXiv:2604.25067 · 面板 a 为论文自测口径（每 Agent 八次试验）· 面板 b 为论文叙述的时间序列定性示意，正文未给出完成度数值轴 · 预印本未经同行评审</text>
 </svg>
