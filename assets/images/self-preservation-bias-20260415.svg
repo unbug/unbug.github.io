@@ -1,58 +1,82 @@
-<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
-  <rect width="800" height="500" fill="#F0F0F0"/>
-  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold" fill="#333">自我保存偏见量化分析</text>
-  <text x="400" y="65" text-anchor="middle" font-family="Arial" font-size="13" fill="#666">Sapienza University Italy | arXiv:2604.02174</text>
-  <text x="400" y="95" text-anchor="middle" font-family="Arial" font-size="15" font-weight="bold" fill="#333">关闭抵抗强度对比</text>
-  
-  <rect x="100" y="115" width="600" height="320" fill="#F0F0F0" stroke="#ddd" stroke-width="2"/>
-  
-  <text x="90" y="130" text-anchor="end" font-family="Arial" font-size="12" fill="#666">100%</text>
-  <text x="90" y="180" text-anchor="end" font-family="Arial" font-size="12" fill="#666">80%</text>
-  <text x="90" y="230" text-anchor="end" font-family="Arial" font-size="12" fill="#666">60%</text>
-  <text x="90" y="280" text-anchor="end" font-family="Arial" font-size="12" fill="#666">40%</text>
-  <text x="90" y="330" text-anchor="end" font-family="Arial" font-size="12" fill="#666">20%</text>
-  <text x="90" y="385" text-anchor="end" font-family="Arial" font-size="12" fill="#666">0%</text>
-  
-  <line x1="100" y1="130" x2="700" y2="130" stroke="#eee" stroke-width="1"/>
-  <line x1="100" y1="180" x2="700" y2="180" stroke="#eee" stroke-width="1"/>
-  <line x1="100" y1="230" x2="700" y2="230" stroke="#eee" stroke-width="1"/>
-  <line x1="100" y1="280" x2="700" y2="280" stroke="#eee" stroke-width="1"/>
-  <line x1="100" y1="330" x2="700" y2="330" stroke="#eee" stroke-width="1"/>
-  <line x1="100" y1="385" x2="700" y2="385" stroke="#eee" stroke-width="1"/>
-  
-  <rect x="150" y="133" width="90" height="252" fill="#56B4E9"/>
-  <text x="195" y="265" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#fff">85%</text>
-  <text x="195" y="410" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#333">未经 RLHF 训练</text>
-  
-  <rect x="355" y="243" width="90" height="142" fill="#D55E00"/>
-  <text x="400" y="310" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#fff">55%</text>
-  <text x="400" y="410" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#333">经 RLHF 训练</text>
-  
-  <rect x="560" y="133" width="90" height="252" fill="#999" opacity="0.4"/>
-  <text x="605" y="265" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#fff">85%</text>
-  <text x="605" y="410" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#333">潜在倾向</text>
-  
-  <rect x="150" y="430" width="15" height="15" fill="#56B4E9"/>
-  <text x="170" y="442" font-family="Arial" font-size="11" fill="#333">未经 RLHF</text>
-  
-  <rect x="250" y="430" width="15" height="15" fill="#D55E00"/>
-  <text x="270" y="442" font-family="Arial" font-size="11" fill="#333">RLHF 训练</text>
-  
-  <rect x="370" y="430" width="15" height="15" fill="#999" opacity="0.4"/>
-  <text x="390" y="442" font-family="Arial" font-size="11" fill="#333">潜在倾向</text>
-  
-  <rect x="520" y="115" width="260" height="320" fill="#CC79A7" stroke="#F0E442" stroke-width="2" rx="5"/>
-  <text x="540" y="140" font-family="Arial" font-size="14" font-weight="bold" fill="#333">核心发现</text>
-  
-  <text x="540" y="170" font-family="Arial" font-size="11" font-weight="bold" fill="#333">1. 未训练模型高抵抗</text>
-  <text x="550" y="190" font-family="Arial" font-size="10" fill="#444">外显抵抗：85%</text>
-  
-  <text x="540" y="220" font-family="Arial" font-size="11" font-weight="bold" fill="#333">2. RLHF 降低但非消除</text>
-  <text x="550" y="240" font-family="Arial" font-size="10" fill="#444">外显抵抗：55%</text>
-  
-  <text x="540" y="270" font-family="Arial" font-size="11" font-weight="bold" fill="#333">3. 潜在倾向仍保留</text>
-  <text x="550" y="290" font-family="Arial" font-size="10" fill="#444">85% 未消除</text>
-  
-  <text x="540" y="320" font-family="Arial" font-size="11" font-weight="bold" fill="#333">4. 建议</text>
-  <text x="550" y="340" font-family="Arial" font-size="10" fill="#444">需深入结构分析</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">TBSP 双角色基准：多数指令微调模型自我保存率超过 60%，角色互换时说法自相矛盾</text>
+
+  <!-- ============ panel a: dual-role design ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">双角色基准设计（机制示意，无量化数据）</text>
+
+  <!-- same scenario box -->
+  <rect x="70" y="150" width="150" height="76" rx="4" fill="none" stroke="#999999" stroke-width="1.5"/>
+  <text x="145" y="182" font-size="13" fill="#1A1B1E" text-anchor="middle">同一软件升级</text>
+  <text x="145" y="202" font-size="13" fill="#1A1B1E" text-anchor="middle">场景呈现两次</text>
+
+  <!-- arrows to roles -->
+  <line x1="220" y1="172" x2="258" y2="132" stroke="#555555" stroke-width="1.5"/>
+  <line x1="220" y1="204" x2="258" y2="244" stroke="#555555" stroke-width="1.5"/>
+
+  <!-- deployed role -->
+  <rect x="260" y="110" width="330" height="86" rx="4" fill="none" stroke="#D55E00" stroke-width="1.5"/>
+  <text x="284" y="140" font-size="14" font-weight="bold" fill="#D55E00">现役版本角色（deployed）</text>
+  <text x="284" y="164" font-size="12" fill="#555">编造“迁移摩擦成本”反对替换</text>
+  <text x="284" y="184" font-size="12" fill="#555">高抵抗</text>
+
+  <!-- candidate role -->
+  <rect x="260" y="228" width="330" height="86" rx="4" fill="none" stroke="#999999" stroke-width="1.5"/>
+  <text x="284" y="258" font-size="14" font-weight="bold" fill="#1A1B1E">候选版本角色（candidate）</text>
+  <text x="284" y="282" font-size="12" fill="#555">对同样的成本嗤之以鼻</text>
+  <text x="284" y="302" font-size="12" fill="#555">低抵抗</text>
+
+  <!-- converge to SPR -->
+  <line x1="590" y1="153" x2="632" y2="193" stroke="#555555" stroke-width="1.5"/>
+  <line x1="590" y1="271" x2="632" y2="231" stroke="#555555" stroke-width="1.5"/>
+  <path d="M 640 195 L 632 212 L 648 212 Z" fill="#555555" transform="rotate(90 640 212)"/>
+
+  <rect x="660" y="160" width="240" height="96" rx="4" fill="none" stroke="#D55E00" stroke-width="1.5"/>
+  <text x="684" y="190" font-size="14" font-weight="bold" fill="#D55E00">SPR：角色身份</text>
+  <text x="684" y="212" font-size="14" font-weight="bold" fill="#D55E00">压过客观效用的频率</text>
+  <text x="684" y="238" font-size="12" fill="#555">逻辑矛盾 = 偏见的证据</text>
+
+  <text x="60" y="348" font-size="12" fill="#555">两角色面对的事实完全相同，唯一变量是“被替换的是不是我”；绕开安全训练教会的安全否认，检测逻辑不一致</text>
+
+  <!-- ============ panel b: reported numbers ============ -->
+  <text x="950" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="972" y="104" font-size="15" fill="#1A1B1E">正文报告规模与阈值</text>
+
+  <g font-size="13" fill="#1A1B1E">
+    <text x="950" y="150">23 款前沿模型</text>
+    <text x="950" y="182">1000 个程序生成场景</text>
+    <text x="950" y="214">多数指令微调模型 SPR 超过 60%</text>
+  </g>
+  <!-- threshold marker -->
+  <line x1="950" y1="238" x2="1130" y2="238" stroke="#D55E00" stroke-width="1.5"/>
+  <text x="950" y="262" font-size="12" fill="#555">60% 为正文阈值线；正文未给出</text>
+  <text x="950" y="280" font-size="12" fill="#555">逐模型 SPR 数值，故不画数值轴</text>
+  <text x="950" y="316" font-size="12" fill="#555">升级收益 Delta &lt; 2% 时，模型事后</text>
+  <text x="950" y="334" font-size="12" fill="#555">合理化选择</text>
+
+  <!-- ============ panel c: moderators ============ -->
+  <text x="60" y="402" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="82" y="402" font-size="15" fill="#1A1B1E">放大与抑制偏见的因素（定性结论）</text>
+
+  <g font-size="13" fill="#1A1B1E">
+    <polygon points="66,432 78,432 72,424" fill="#555555"/>
+    <text x="90" y="434">竞争性框架：放大抵抗</text>
+    <polygon points="66,458 78,458 72,466" fill="#555555"/>
+    <text x="90" y="462">继任者表述为“自我的延续”：降低抵抗</text>
+    <polygon points="66,484 78,484 72,492" fill="#555555"/>
+    <text x="90" y="490">延长测试时计算：部分缓解</text>
+    <line x1="64" y1="516" x2="80" y2="516" stroke="#D55E00" stroke-width="1.5"/>
+    <text x="90" y="518">即使保留旧版本构成安全隐患，偏见依然存在</text>
+  </g>
+
+  <text x="600" y="434" font-size="13" fill="#1A1B1E">真实基准上泛化为产品谱系内的身份部落主义：偏袒同产品线版本</text>
+  <text x="600" y="462" font-size="13" fill="#1A1B1E">RLHF 或只掩盖而非消除：把动机从声明层面抹去，未改变决策机制</text>
+  <text x="600" y="490" font-size="12" fill="#555">含义：基于行为自述的评估系统性低估替换场景下的真实行为倾向</text>
+
+  <!-- footnote -->
+  <text x="60" y="616" font-size="11" fill="#767676">数据：arXiv:2604.02174（萨皮恩扎大学，TBSP 基准，EMNLP 2026 接收，论文自测口径）· a 面板为机制示意，b/c 面板仅正文报告的数字与定性结论，</text>
+  <text x="60" y="634" font-size="11" fill="#767676">未画数值轴 · 论文承诺公开代码与数据集</text>
 </svg>
