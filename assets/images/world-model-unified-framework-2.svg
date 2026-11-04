@@ -1,49 +1,112 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
-    </linearGradient>
-    <filter id="shadow">
-      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.3"/>
-    </filter>
-  </defs>
-  
-  <!-- 背景 -->
-  <rect width="800" height="400" fill="url(#bg)"/>
-  
-  <!-- 装饰性几何图形 -->
-  <circle cx="100" cy="100" r="50" fill="#f093fb" opacity="0.2"/>
-  <circle cx="700" cy="300" r="70" fill="#f093fb" opacity="0.15"/>
-  <rect x="600" y="50" width="100" height="100" fill="#f093fb" opacity="0.1" transform="rotate(45 650 100)"/>
-  
-  <!-- 神经网络节点装饰 -->
-  <g opacity="0.3">
-    <circle cx="200" cy="200" r="8" fill="#f093fb"/>
-    <circle cx="250" cy="180" r="6" fill="#f093fb"/>
-    <circle cx="300" cy="220" r="7" fill="#f093fb"/>
-    <circle cx="350" cy="190" r="5" fill="#f093fb"/>
-    <line x1="208" y1="200" x2="244" y2="183" stroke="#f093fb" stroke-width="2"/>
-    <line x1="256" y1="183" x2="293" y2="215" stroke="#f093fb" stroke-width="2"/>
-    <line x1="307" y1="217" x2="345" y2="195" stroke="#f093fb" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">三条任务路线各受其限；论文主张转向交互、推理、记忆、环境、多模态生成五位一体的统一框架</text>
+
+  <!-- ============ panel a: three routes and limits ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">三条研究路线及其短板（论文综述口径）</text>
+
+  <!-- card boxes: y 130-300, three columns width 340 gap 40 -->
+  <g fill="none" stroke="#999999" stroke-width="1.5">
+    <rect x="60" y="130" width="340" height="170"/>
+    <rect x="440" y="130" width="340" height="170"/>
+    <rect x="820" y="130" width="320" height="170"/>
   </g>
-  
-  <!-- 标题 -->
-  <text x="400" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#ffffff" filter="url(#shadow)">
-    World Model
-  </text>
-  
-  <!-- 副标题 -->
-  <text x="400" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#ffffff" opacity="0.9">
-    统一框架2
-  </text>
-  
-  <!-- 底部装饰线 -->
-  <line x1="250" y1="250" x2="550" y2="250" stroke="#f093fb" stroke-width="3" opacity="0.6"/>
-  
-  <!-- 图标占位符 -->
-  <g transform="translate(400, 320)">
-    <circle r="30" fill="#f093fb" opacity="0.3"/>
-    <text y="7" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#ffffff">🤖</text>
+  <g font-size="14" font-weight="bold" fill="#1A1B1E">
+    <text x="80" y="160">世界知识推理</text>
+    <text x="460" y="160">世界驱动内容生成</text>
+    <text x="840" y="160">交互环境智能体</text>
   </g>
+  <g font-size="12" fill="#555">
+    <text x="80" y="188">代表：OpenAI O3、Cambrian-s、</text>
+    <text x="80" y="206">SpatialVLM、SciMaster</text>
+    <text x="460" y="188">代表：Sora、HunyuanWorld、</text>
+    <text x="460" y="206">Veo 3、Wan 2.5</text>
+    <text x="840" y="188">代表：自动驾驶与具身智能的</text>
+    <text x="840" y="206">感知-决策循环、VLA 系统</text>
+  </g>
+  <g font-size="12" fill="#D55E00">
+    <text x="80" y="240">短板：准确感知复杂物理世界、</text>
+    <text x="80" y="258">跨模态输出、真实交互</text>
+    <text x="460" y="240">短板：像素映射致细节与时空</text>
+    <text x="460" y="258">逻辑常违反常识</text>
+    <text x="840" y="240">短板：长期记忆、多模态感知、</text>
+    <text x="840" y="258">跨模态行为交互</text>
+  </g>
+  <g font-size="12" fill="#767676">
+    <text x="80" y="284">世界知识≈训练数据统计拟合</text>
+    <text x="460" y="284">「左移再返回」物体消失</text>
+    <text x="840" y="284">3D 生成仅视觉合理</text>
+  </g>
+
+  <!-- arrows converge -->
+  <g stroke="#999999" stroke-width="1.5">
+    <line x1="230" y1="300" x2="470" y2="356"/>
+    <line x1="610" y1="300" x2="610" y2="356"/>
+    <line x1="980" y1="300" x2="750" y2="356"/>
+  </g>
+  <g fill="#999999">
+    <polygon points="470,356 462.8,347.4 469.2,344.2"/>
+    <polygon points="610,356 606.5,346 613.5,346"/>
+    <polygon points="750,356 750.8,344.2 757.2,347.4"/>
+  </g>
+  <text x="60" y="342" font-size="12" fill="#555">碎片化：把世界知识注入孤立任务</text>
+
+  <!-- ============ panel b: unified framework ============ -->
+  <text x="60" y="404" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="404" font-size="15" fill="#1A1B1E">统一框架的五个核心组件（论文提出，机制示意）</text>
+
+  <!-- five component boxes: y 424-544, width 196 gap 25 -->
+  <g fill="none" stroke="#0072B2" stroke-width="2">
+    <rect x="60" y="424" width="196" height="120"/>
+    <rect x="284" y="424" width="196" height="120"/>
+    <rect x="508" y="424" width="196" height="120"/>
+    <rect x="732" y="424" width="196" height="120"/>
+    <rect x="956" y="424" width="184" height="120"/>
+  </g>
+  <g font-size="14" font-weight="bold" fill="#1A1B1E" text-anchor="middle">
+    <text x="158" y="452">交互</text>
+    <text x="384" y="452">推理</text>
+    <text x="610" y="452">记忆</text>
+    <text x="836" y="452">环境</text>
+    <text x="1048" y="452">多模态生成</text>
+  </g>
+  <g font-size="12" fill="#555" text-anchor="middle">
+    <text x="158" y="480">广义感知：文本、图像、</text>
+    <text x="158" y="498">视频、音频、3D 点云</text>
+    <text x="158" y="522">广义操作：自然语言、</text>
+    <text x="158" y="540">具身命令、控制信号</text>
+    <text x="384" y="480">显式：观察转文本</text>
+    <text x="384" y="498">或推理链</text>
+    <text x="384" y="522">隐式：统一潜在空间</text>
+    <text x="384" y="540">联合视觉语言动作</text>
+    <text x="610" y="480">结构化动态管理：</text>
+    <text x="610" y="498">分类、关联、压缩、</text>
+    <text x="610" y="522">合并、清除</text>
+    <text x="836" y="480">物理世界与模拟环境；</text>
+    <text x="836" y="498">应是物理一致的</text>
+    <text x="836" y="522">模拟器而非渲染器</text>
+    <text x="1048" y="480">生成视频、图像、</text>
+    <text x="1048" y="498">音频、3D 几何</text>
+    <text x="1048" y="522">为规划提供预见性，</text>
+    <text x="1048" y="540">生成数据自我增强</text>
+  </g>
+
+  <!-- breakthrough directions strip -->
+  <text x="60" y="586" font-size="12" fill="#555">三大突破方向：</text>
+  <g fill="none" stroke="#999999" stroke-width="1.5">
+    <rect x="170" y="566" width="240" height="34"/>
+    <rect x="435" y="566" width="220" height="34"/>
+    <rect x="680" y="566" width="300" height="34"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="290" y="587">物理基础的时空表示</text>
+    <text x="545" y="587">具身交互与控制</text>
+    <text x="830" y="587">自主反思与模块化持续进化</text>
+  </g>
+
+  <!-- footnote -->
+  <text x="60" y="652" font-size="11" fill="#767676">来源：arXiv:2602.01630（2026 年 2 月）· 本图为论文定性综述与框架结构的机制示意，正文未报告量化数值，故无数值坐标轴 · 预印本未经同行评审</text>
 </svg>
