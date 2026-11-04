@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">中性填充撑到 32K token 准确率保持 0.97 到 1.00，竞争陈述使其跌至 0.11 到 0.21</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">检索准确率：中性填充对比同格式竞争陈述</text>
+
+  <!-- gridlines vertical, x = 240 + 440*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="240" y1="130" x2="240" y2="350"/>
+    <line x1="350" y1="130" x2="350" y2="350"/>
+    <line x1="468.8" y1="130" x2="468.8" y2="350"/>
+    <line x1="666.8" y1="130" x2="666.8" y2="350"/>
+  </g>
+
+  <!-- neutral band: 0.97-1.00 -->
+  <text x="228" y="176" font-size="12.5" fill="#1A1B1E" text-anchor="end">中性填充</text>
+  <rect x="666.8" y="162" width="13.2" height="18" fill="#999999"/>
+  <line x1="666.8" y1="159" x2="666.8" y2="183" stroke="#999999" stroke-width="0.75"/>
+  <line x1="680" y1="159" x2="680" y2="183" stroke="#999999" stroke-width="0.75"/>
+  <text x="240" y="176" font-size="12" fill="#555">0.97–1.00，32K token 内不降（Qwen2.5-1.5B）</text>
+
+  <!-- rival band: 0.11-0.21 -->
+  <text x="228" y="246" font-size="12.5" fill="#1A1B1E" text-anchor="end">竞争陈述</text>
+  <rect x="288.4" y="232" width="44" height="18" fill="#D55E00"/>
+  <line x1="288.4" y1="229" x2="288.4" y2="253" stroke="#D55E00" stroke-width="0.75"/>
+  <line x1="332.4" y1="229" x2="332.4" y2="253" stroke="#D55E00" stroke-width="0.75"/>
+  <text x="342" y="246" font-size="12" fill="#555">0.11–0.21，同格式、同位置、同长度</text>
+
+  <!-- single rival annotation -->
+  <text x="240" y="308" font-size="12" fill="#555">单个竞争值陈述使损失放大 9–110 倍，每多一个对手继续叠加</text>
+
+  <!-- value axis -->
+  <line x1="240" y1="350" x2="680" y2="350" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="240" y1="350" x2="240" y2="354"/>
+    <line x1="350" y1="350" x2="350" y2="354"/>
+    <line x1="468.8" y1="350" x2="468.8" y2="354"/>
+    <line x1="666.8" y1="350" x2="666.8" y2="354"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="240" y="370">0</text>
+    <text x="350" y="370">0.25</text>
+    <text x="468.8" y="370">0.52</text>
+    <text x="666.8" y="370">0.97</text>
+  </g>
+  <text x="460" y="394" font-size="14" fill="#1A1B1E" text-anchor="middle">检索准确率</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="850" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="872" y="104" font-size="15" fill="#1A1B1E">损失 nats 按竞争陈述数量</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="890" y1="130" x2="1150" y2="130"/>
+    <line x1="890" y1="210" x2="1150" y2="210"/>
+    <line x1="890" y1="290" x2="1150" y2="290"/>
+    <line x1="890" y1="370" x2="1150" y2="370"/>
+  </g>
+  <!-- bars: x = 890 + 60*v -->
+  <rect x="890" y="150" width="20.4" height="16" fill="#999999"/>
+  <text x="916" y="162" font-size="12" fill="#555">0.02–0.34（0 个）</text>
+  <rect x="890" y="186" width="1.8" height="16" fill="#D55E00"/>
+  <text x="898" y="198" font-size="12" fill="#555">0.03</text>
+  <rect x="890" y="222" width="82.2" height="16" fill="#D55E00"/>
+  <text x="978" y="234" font-size="12" fill="#555">1.37</text>
+  <rect x="890" y="258" width="134.4" height="16" fill="#D55E00"/>
+  <text x="1030" y="270" font-size="12" fill="#555">2.24</text>
+  <rect x="890" y="294" width="148.8" height="16" fill="#D55E00"/>
+  <text x="1044" y="306" font-size="12" fill="#555">2.48</text>
+  <rect x="890" y="330" width="162.6" height="16" fill="#D55E00"/>
+  <text x="1058" y="342" font-size="12" fill="#555">2.71</text>
+  <rect x="890" y="366" width="195.6" height="16" fill="#D55E00"/>
+  <text x="1090" y="378" font-size="12" fill="#555">3.26</text>
+  <rect x="890" y="402" width="207" height="16" fill="#D55E00"/>
+  <text x="1102" y="436" font-size="12" fill="#555">3.45</text>
+
+  <line x1="890" y1="440" x2="1150" y2="440" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="890" y1="440" x2="890" y2="444"/>
+    <line x1="1010" y1="440" x2="1010" y2="444"/>
+    <line x1="1130" y1="440" x2="1130" y2="444"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="890" y="460">0</text>
+    <text x="1010" y="460">2</text>
+    <text x="1130" y="460">4</text>
+  </g>
+  <text x="850" y="488" font-size="14" fill="#1A1B1E">信息损失（nats）</text>
+  <text x="850" y="510" font-size="12" fill="#555">Qwen2.5-1.5B，2,048 token，对手数 0 到 6 个及以上</text>
+
+  <!-- footnote -->
+  <text x="60" y="580" font-size="11" fill="#767676">数据：arXiv:2611.04169（5 个开源模型，0.5B–3B，126,473 次试验）· 区间为论文报告范围 · 受控检索模拟，论文自测口径 · 预印本未经同行评审</text>
+</svg>
