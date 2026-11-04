@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">同窗十四天六帖、三个独立主体指向同一动作：训练与共享默认值回到开启位</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">六帖 HN 分数（实测 2026-11-04）</text>
+
+  <!-- horizontal gridlines at 400/800/1200 -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="150" y1="321.7" x2="530" y2="321.7"/>
+    <line x1="150" y1="193.3" x2="530" y2="193.3"/>
+    <line x1="150" y1="65" x2="530" y2="65"/>
+  </g>
+  <!-- baseline axis -->
+  <line x1="150" y1="450" x2="530" y2="450" stroke="#1A1B1E" stroke-width="0.75"/>
+  <!-- y tick marks (outward, 4px) -->
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="146" y1="450" x2="150" y2="450"/>
+    <line x1="146" y1="321.7" x2="150" y2="321.7"/>
+    <line x1="146" y1="193.3" x2="150" y2="193.3"/>
+    <line x1="146" y1="65" x2="150" y2="65"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="140" y="454">0</text>
+    <text x="140" y="325.7">400</text>
+    <text x="140" y="197.3">800</text>
+    <text x="140" y="69">1200</text>
+  </g>
+
+  <!-- bars: y = 450 - 0.32167*points; accent #D55E00 for Postman core event -->
+  <rect x="160" y="320.6" width="40" height="129.4" fill="#0072B2"/>
+  <rect x="222" y="377.7" width="40" height="72.3" fill="#999999"/>
+  <rect x="284" y="255.2" width="40" height="194.8" fill="#999999"/>
+  <rect x="346" y="291.8" width="40" height="158.2" fill="#999999"/>
+  <rect x="408" y="299.5" width="40" height="150.5" fill="#0072B2"/>
+  <rect x="470" y="67.6" width="40" height="382.4" fill="#D55E00"/>
+
+  <!-- value labels -->
+  <g font-size="12" fill="#555555" text-anchor="middle">
+    <text x="180" y="312">403</text>
+    <text x="242" y="369.7">225</text>
+    <text x="304" y="247.2">606</text>
+    <text x="366" y="283.8">492</text>
+    <text x="428" y="291.5">468</text>
+    <text x="490" y="59.6" fill="#D55E00" font-weight="bold">1,192</text>
+  </g>
+  <!-- date labels -->
+  <g font-size="12" fill="#555555" text-anchor="middle">
+    <text x="180" y="470">10-23</text>
+    <text x="242" y="470">10-27</text>
+    <text x="304" y="470">10-27</text>
+    <text x="366" y="470">10-31</text>
+    <text x="428" y="470">11-03</text>
+    <text x="490" y="470">11-03</text>
+  </g>
+  <!-- entity labels -->
+  <g font-size="11" fill="#767676" text-anchor="middle">
+    <text x="180" y="490">Google</text>
+    <text x="242" y="490">帮助页</text>
+    <text x="304" y="490">斯坦福书</text>
+    <text x="366" y="490">封号</text>
+    <text x="428" y="490">Codex</text>
+    <text x="490" y="490">Postman</text>
+  </g>
+  <text x="30" y="258" font-size="14" fill="#555555" text-anchor="middle" transform="rotate(-90 30 258)">HN 分数（分）</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="620" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="642" y="104" font-size="15" fill="#1A1B1E">两案证据等级与评论树规模</text>
+
+  <!-- y axis -->
+  <line x1="700" y1="130" x2="700" y2="430" stroke="#1A1B1E" stroke-width="0.75"/>
+  <!-- horizontal gridlines every 100 -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="700" y1="370" x2="1130" y2="370"/>
+    <line x1="700" y1="310" x2="1130" y2="310"/>
+    <line x1="700" y1="250" x2="1130" y2="250"/>
+    <line x1="700" y1="190" x2="1130" y2="190"/>
+    <line x1="700" y1="130" x2="1130" y2="130"/>
+  </g>
+  <!-- x axis -->
+  <line x1="700" y1="430" x2="1130" y2="430" stroke="#1A1B1E" stroke-width="0.75"/>
+  <!-- y ticks -->
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="696" y1="430" x2="700" y2="430"/>
+    <line x1="696" y1="370" x2="700" y2="370"/>
+    <line x1="696" y1="310" x2="700" y2="310"/>
+    <line x1="696" y1="250" x2="700" y2="250"/>
+    <line x1="696" y1="190" x2="700" y2="190"/>
+    <line x1="696" y1="130" x2="700" y2="130"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="690" y="434">0</text>
+    <text x="690" y="374">100</text>
+    <text x="690" y="314">200</text>
+    <text x="690" y="254">300</text>
+    <text x="690" y="194">400</text>
+    <text x="690" y="134">500</text>
+  </g>
+  <!-- x ticks -->
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="810" y1="430" x2="810" y2="434"/>
+    <line x1="1020" y1="430" x2="1020" y2="434"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="810" y="452">Codex 案（50352757）</text>
+    <text x="1020" y="452">Postman 案（50354960）</text>
+  </g>
+
+  <!-- data lines: y = 430 - 0.6*comments -->
+  <!-- Codex tree 144 -> 343.6 ; issue 38 -> 407.2 -->
+  <polyline points="810,343.6 1020,245.2" fill="none" stroke="#56B4E9" stroke-width="2"/>
+  <polyline points="810,407.2 1020,407.2" fill="none" stroke="#009E73" stroke-width="2"/>
+  <!-- hollow = 帖子观察面, solid = 系统自证面 -->
+  <circle cx="810" cy="343.6" r="5" fill="#FFFFFF" stroke="#56B4E9" stroke-width="2"/>
+  <circle cx="1020" cy="245.2" r="5" fill="#56B4E9"/>
+  <circle cx="810" cy="407.2" r="5" fill="#FFFFFF" stroke="#009E73" stroke-width="2"/>
+  <circle cx="1020" cy="407.2" r="5" fill="#009E73"/>
+  <g font-size="12" fill="#555555">
+    <text x="822" y="338">树 144</text>
+    <text x="1030" y="239">树 378</text>
+    <text x="822" y="400">观察级</text>
+    <text x="1032" y="401">日志级</text>
+  </g>
+  <text x="600" y="280" font-size="14" fill="#555555" text-anchor="middle" transform="rotate(-90 600 280)">评论与讨论规模（条）</text>
+
+  <!-- footnote -->
+  <text x="60" y="632" font-size="11" fill="#767676">数据：Hacker News 帖 50352757 / 50354960 等六帖与 GitHub issue #14370 · 分数与全树评论数为 2026-11-04 Algolia items API 实测</text>
+  <text x="60" y="650" font-size="11" fill="#767676">Codex 案系用户集体观察（非厂商自认），Postman 案系厂商日志自证 · OpenAI 案口径截至实测日未见厂商公开回应</text>
+</svg>
