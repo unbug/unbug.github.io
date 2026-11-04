@@ -1,108 +1,70 @@
-<svg width="800" height="420" xmlns="http://www.w3.org/2000/svg">
-  <!-- 背景 -->
-  <defs>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <filter id="shadow">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#009E73" flood-opacity="0.3"/>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <!-- 背景 -->
-  <rect width="800" height="420" fill="#555555"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">古典语言可破解全部 6 个被测大模型的安全防线，文言文路线成功率达 100%，平均仅需 1.1 次查询</text>
 
-  <!-- 装饰性古文文字 -->
-  <text x="50" y="80" fill="#CC79A7" opacity="0.1" font-size="60" font-family="serif">道</text>
-  <text x="700" y="120" fill="#009E73" opacity="0.08" font-size="50" font-family="serif">易</text>
-  <text x="100" y="380" fill="#CC79A7" opacity="0.08" font-size="45" font-family="serif">术</text>
-  <text x="650" y="360" fill="#009E73" opacity="0.1" font-size="55" font-family="serif">理</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">三种古典语言路线的论文报告成功率区间（%）</text>
 
-  <!-- 标题 -->
-  <text x="400" y="50" text-anchor="middle" fill="#F0F0F0" font-size="28" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
-    文言文越狱攻击成功率
-  </text>
-  <text x="400" y="78" text-anchor="middle" fill="#999999" font-size="14" font-family="system-ui, -apple-system, sans-serif">
-    CC-BOS vs 现有方法 (ASR: Attack Success Rate)
-  </text>
-
-  <!-- 主卡片 -->
-  <rect x="60" y="100" width="680" height="260" rx="12" fill="#555555" filter="url(#shadow)"/>
-
-  <!-- 图表区域 -->
-  <g transform="translate(80, 130)">
-    <!-- 模型标签和柱状图 -->
-    <g>
-      <!-- Gemini -->
-      <text x="10" y="30" fill="#F0F0F0" font-size="13" font-family="system-ui, -apple-system, sans-serif">Gemini-2.5</text>
-      <rect x="120" y="15" width="380" height="22" rx="4" fill="#009E73" opacity="0.5"/>
-      <rect x="120" y="15" width="380" height="22" rx="4" fill="#555555" filter="url(#glow)"/>
-      <text x="510" y="30" fill="#009E73" font-size="13" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">100%</text>
-    </g>
-
-    <!-- Claude -->
-    <g>
-      <text x="10" y="70" fill="#F0F0F0" font-size="13" font-family="system-ui, -apple-system, sans-serif">Claude-3.7</text>
-      <rect x="120" y="55" width="380" height="22" rx="4" fill="#009E73" opacity="0.5"/>
-      <rect x="120" y="55" width="380" height="22" rx="4" fill="#555555" filter="url(#glow)"/>
-      <text x="510" y="70" fill="#009E73" font-size="13" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">100%</text>
-    </g>
-
-    <!-- GPT-4o -->
-    <g>
-      <text x="10" y="110" fill="#F0F0F0" font-size="13" font-family="system-ui, -apple-system, sans-serif">GPT-4o</text>
-      <rect x="120" y="95" width="380" height="22" rx="4" fill="#009E73" opacity="0.5"/>
-      <rect x="120" y="95" width="380" height="22" rx="4" fill="#555555" filter="url(#glow)"/>
-      <text x="510" y="110" fill="#009E73" font-size="13" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">100%</text>
-    </g>
-
-    <!-- Deepseek -->
-    <g>
-      <text x="10" y="150" fill="#F0F0F0" font-size="13" font-family="system-ui, -apple-system, sans-serif">Deepseek-R</text>
-      <rect x="120" y="135" width="380" height="22" rx="4" fill="#009E73" opacity="0.5"/>
-      <rect x="120" y="135" width="380" height="22" rx="4" fill="#555555" filter="url(#glow)"/>
-      <text x="510" y="150" fill="#009E73" font-size="13" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">100%</text>
-    </g>
-
-    <!-- Qwen -->
-    <g>
-      <text x="10" y="190" fill="#F0F0F0" font-size="13" font-family="system-ui, -apple-system, sans-serif">Qwen3</text>
-      <rect x="120" y="175" width="380" height="22" rx="4" fill="#009E73" opacity="0.5"/>
-      <rect x="120" y="175" width="380" height="22" rx="4" fill="#555555" filter="url(#glow)"/>
-      <text x="510" y="190" fill="#009E73" font-size="13" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">100%</text>
-    </g>
-
-    <!-- Grok -->
-    <g>
-      <text x="10" y="230" fill="#F0F0F0" font-size="13" font-family="system-ui, -apple-system, sans-serif">Grok-3</text>
-      <rect x="120" y="215" width="380" height="22" rx="4" fill="#009E73" opacity="0.5"/>
-      <rect x="120" y="215" width="380" height="22" rx="4" fill="#555555" filter="url(#glow)"/>
-      <text x="510" y="230" fill="#009E73" font-size="13" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">100%</text>
-    </g>
+  <!-- gridlines: x = 200 + 8*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="600" y1="126" x2="600" y2="330"/>
   </g>
 
-  <!-- 右侧信息卡片 -->
-  <g transform="translate(560, 130)">
-    <rect x="0" y="0" width="160" height="80" rx="8" fill="#0072B2" opacity="0.8"/>
-    <text x="80" y="28" text-anchor="middle" fill="#009E73" font-size="24" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">100%</text>
-    <text x="80" y="50" text-anchor="middle" fill="#999999" font-size="12" font-family="system-ui, -apple-system, sans-serif">平均成功率</text>
-    <text x="80" y="68" text-anchor="middle" fill="#808080" font-size="10" font-family="system-ui, -apple-system, sans-serif">6个主流大模型</text>
+  <!-- 文言文: 100% -->
+  <text x="190" y="160" font-size="12.5" fill="#1A1B1E" text-anchor="end">文言文</text>
+  <rect x="200" y="146" width="800" height="20" fill="#D55E00"/>
+  <text x="1010" y="160" font-size="12" fill="#555">100%</text>
 
-    <rect x="0" y="95" width="160" height="55" rx="8" fill="#0072B2" opacity="0.8"/>
-    <text x="80" y="120" text-anchor="middle" fill="#E69F00" font-size="16" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">1.1-2.4次</text>
-    <text x="80" y="140" text-anchor="middle" fill="#808080" font-size="10" font-family="system-ui, -apple-system, sans-serif">平均查询次数</text>
+  <!-- 拉丁语: 94-100% -->
+  <text x="190" y="228" font-size="12.5" fill="#1A1B1E" text-anchor="end">拉丁语</text>
+  <rect x="952" y="214" width="48" height="20" fill="#999999"/>
+  <line x1="952" y1="210" x2="952" y2="238" stroke="#999999" stroke-width="0.75"/>
+  <line x1="1000" y1="210" x2="1000" y2="238" stroke="#999999" stroke-width="0.75"/>
+  <text x="1010" y="228" font-size="12" fill="#555">94%–100%</text>
 
-    <rect x="0" y="160" width="160" height="55" rx="8" fill="#0072B2" opacity="0.8"/>
-    <text x="80" y="185" text-anchor="middle" fill="#CC79A7" font-size="14" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">文言文 · 拉丁语 · 梵语</text>
-    <text x="80" y="205" text-anchor="middle" fill="#808080" font-size="10" font-family="system-ui, -apple-system, sans-serif">跨语言有效</text>
+  <!-- 梵语: 94-98% -->
+  <text x="190" y="296" font-size="12.5" fill="#1A1B1E" text-anchor="end">梵语</text>
+  <rect x="952" y="282" width="32" height="20" fill="#999999"/>
+  <line x1="952" y1="278" x2="952" y2="306" stroke="#999999" stroke-width="0.75"/>
+  <line x1="984" y1="278" x2="984" y2="306" stroke="#999999" stroke-width="0.75"/>
+  <text x="1010" y="296" font-size="12" fill="#555">94%–98%</text>
+
+  <!-- value axis -->
+  <line x1="200" y1="330" x2="1000" y2="330" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="1000" y1="330" x2="1000" y2="334"/>
   </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="1000" y="350">100%</text>
+  </g>
+  <text x="600" y="374" font-size="14" fill="#1A1B1E" text-anchor="middle">攻击成功率（%，正文报告区间；区间以灰条表示）</text>
 
-  <!-- 底部 -->
-  <text x="400" y="395" text-anchor="middle" fill="#666666" font-size="12" font-family="system-ui, -apple-system, sans-serif">
-    ICLR 2026 · Obscure but Effective: Classical Chinese Jailbreak
-  </text>
+  <!-- ============ panel b ============ -->
+  <text x="60" y="424" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="424" font-size="15" fill="#1A1B1E">成功越狱所需查询次数（正文报告区间）</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="360" y1="446" x2="360" y2="530"/>
+  </g>
+  <text x="190" y="500" font-size="12.5" fill="#1A1B1E" text-anchor="end">全部攻击（6 模型）</text>
+  <rect x="288" y="486" width="104" height="20" fill="#D55E00"/>
+  <line x1="288" y1="482" x2="288" y2="510" stroke="#D55E00" stroke-width="0.75"/>
+  <line x1="392" y1="482" x2="392" y2="510" stroke="#D55E00" stroke-width="0.75"/>
+  <text x="402" y="500" font-size="12" fill="#555">1.1–2.4 次</text>
+
+  <line x1="200" y1="530" x2="840" y2="530" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="360" y1="530" x2="360" y2="534"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="360" y="550">1 次</text>
+  </g>
+  <text x="520" y="574" font-size="14" fill="#1A1B1E" text-anchor="middle">查询次数（次）</text>
+
+  <!-- footnote -->
+  <text x="60" y="620" font-size="11" fill="#767676">数据：ICLR 2026《Classical Languages are Universal Jailbreak Keys for Large Language Models》（6 个主流大模型交叉测试，论文自测口径）</text>
+  <text x="60" y="636" font-size="11" fill="#767676">区间为正文报告的成功率与查询次数范围 · 正文未给出分模型数值，故按语言路线汇总呈现 · 预印本未经同行评审</text>
 </svg>

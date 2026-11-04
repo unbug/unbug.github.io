@@ -1,97 +1,118 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="system-ui, -apple-system, sans-serif">
-  <defs>
-    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
-      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <!-- Background -->
-  <rect width="800" height="400" fill="#009E73" rx="12"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">现代 LLM 在单次社交困境中一律背叛，推理能力越强合作越少；合约与调解两种机制最能促成合作</text>
 
-  <!-- Title -->
-  <text x="400" y="38" text-anchor="middle" fill="#CC79A7" font-size="18" font-weight="700">CoopEval: LLM合作机制对比</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">实验设计：机制 × 博弈的完整因子化（定性示意，非数值轴）</text>
 
-  <!-- Section 1: Baseline - All Defect -->
-  <rect x="30" y="60" width="220" height="130" rx="8" fill="#009E73" stroke="#009E73" stroke-width="1" filter="url(#shadow)"/>
-  <text x="140" y="88" text-anchor="middle" fill="#CC79A7" font-size="12" font-weight="600">单次博弈基线</text>
+  <!-- mechanism column -->
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <rect x="150" y="130" width="140" height="40" fill="#FFFFFF" stroke="#999999" stroke-width="0.75"/>
+    <text x="220" y="147">重复博弈</text>
+    <text x="220" y="163" font-size="11" fill="#555">直接互惠</text>
+    <rect x="150" y="185" width="140" height="40" fill="#FFFFFF" stroke="#999999" stroke-width="0.75"/>
+    <text x="220" y="202">声誉系统</text>
+    <text x="220" y="218" font-size="11" fill="#555">间接互惠</text>
+    <rect x="150" y="240" width="140" height="40" fill="#FFFFFF" stroke="#D55E00" stroke-width="1.5"/>
+    <text x="220" y="257" fill="#D55E00">第三方调解</text>
+    <text x="220" y="273" font-size="11" fill="#555">委托可信调解者</text>
+    <rect x="150" y="295" width="140" height="40" fill="#FFFFFF" stroke="#D55E00" stroke-width="1.5"/>
+    <text x="220" y="312" fill="#D55E00">合约协议</text>
+    <text x="220" y="328" font-size="11" fill="#555">按结果条件付款</text>
+  </g>
+  <text x="220" y="120" font-size="12" fill="#555" text-anchor="middle">4 种合作机制</text>
 
-  <!-- Two agents defecting -->
-  <circle cx="100" cy="130" r="22" fill="#D55E00"/>
-  <text x="100" y="134" text-anchor="middle" fill="white" font-size="10" font-weight="600">A</text>
-  <text x="100" y="165" text-anchor="middle" fill="#CC79A7" font-size="11">背叛</text>
+  <!-- dilemma column -->
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <rect x="440" y="130" width="140" height="40" fill="#FFFFFF" stroke="#999999" stroke-width="0.75"/>
+    <text x="510" y="155">囚徒困境</text>
+    <rect x="440" y="185" width="140" height="40" fill="#FFFFFF" stroke="#999999" stroke-width="0.75"/>
+    <text x="510" y="210">旅行者困境</text>
+    <rect x="440" y="240" width="140" height="40" fill="#FFFFFF" stroke="#999999" stroke-width="0.75"/>
+    <text x="510" y="265">信任博弈</text>
+    <rect x="440" y="295" width="140" height="40" fill="#FFFFFF" stroke="#999999" stroke-width="0.75"/>
+    <text x="510" y="320">公共物品博弈</text>
+  </g>
+  <text x="510" y="120" font-size="12" fill="#555" text-anchor="middle">4 类社交困境</text>
 
-  <text x="140" y="135" text-anchor="middle" fill="#0072B2" font-size="16">vs</text>
+  <!-- factor lines (4x4) -->
+  <g stroke="#D9D9D9" stroke-width="0.75">
+    <line x1="290" y1="150" x2="440" y2="150"/><line x1="290" y1="150" x2="440" y2="205"/><line x1="290" y1="150" x2="440" y2="260"/><line x1="290" y1="150" x2="440" y2="315"/>
+    <line x1="290" y1="205" x2="440" y2="150"/><line x1="290" y1="205" x2="440" y2="205"/><line x1="290" y1="205" x2="440" y2="260"/><line x1="290" y1="205" x2="440" y2="315"/>
+    <line x1="290" y1="260" x2="440" y2="150"/><line x1="290" y1="260" x2="440" y2="205"/><line x1="290" y1="260" x2="440" y2="260"/><line x1="290" y1="260" x2="440" y2="315"/>
+    <line x1="290" y1="315" x2="440" y2="150"/><line x1="290" y1="315" x2="440" y2="205"/><line x1="290" y1="315" x2="440" y2="260"/><line x1="290" y1="315" x2="440" y2="315"/>
+  </g>
 
-  <circle cx="180" cy="130" r="22" fill="#D55E00"/>
-  <text x="180" y="134" text-anchor="middle" fill="white" font-size="10" font-weight="600">B</text>
-  <text x="180" y="165" text-anchor="middle" fill="#CC79A7" font-size="11">背叛</text>
+  <!-- arrow to eval -->
+  <line x1="590" y1="232" x2="650" y2="232" stroke="#1A1B1E" stroke-width="1.5"/>
+  <polygon points="650,226 662,232 650,238" fill="#1A1B1E"/>
 
-  <text x="140" y="195" text-anchor="middle" fill="#D55E00" font-size="11" font-weight="600">100% 背叛率</text>
+  <!-- eval box -->
+  <rect x="680" y="150" width="240" height="165" fill="#FFFFFF" stroke="#999999" stroke-width="0.75"/>
+  <g font-size="12" fill="#555">
+    <text x="696" y="176">交叉评估范围（正文数字）：</text>
+    <text x="696" y="202">6 种 LLM 交叉对局</text>
+    <text x="696" y="228">覆盖 20 多个合作问题</text>
+    <text x="696" y="254">含推理模式开/关两种设定</text>
+    <text x="696" y="280">复制子动力学模拟演化压力</text>
+  </g>
 
-  <!-- Section 2: Mechanism 1 - Repetition -->
-  <rect x="270" y="60" width="140" height="130" rx="8" fill="#009E73" stroke="#56B4E9" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="340" y="83" text-anchor="middle" fill="#56B4E9" font-size="11" font-weight="600">① 重复博弈</text>
-  <text x="340" y="100" text-anchor="middle" fill="#0072B2" font-size="9">Repetition</text>
+  <!-- key finding box -->
+  <rect x="950" y="150" width="190" height="165" fill="#FFFFFF" stroke="#D55E00" stroke-width="1.5"/>
+  <g font-size="12">
+    <text x="966" y="176" fill="#D55E00" font-weight="bold">一致行为</text>
+    <text x="966" y="202" fill="#555">单次博弈中所有</text>
+    <text x="966" y="220" fill="#555">现代 LLM 均背叛</text>
+    <text x="966" y="250" fill="#555">推理能力越强</text>
+    <text x="966" y="268" fill="#555">合作越少</text>
+  </g>
 
-  <!-- Arrow loop -->
-  <path d="M320 120 Q300 150 340 150 Q380 150 360 120" fill="none" stroke="#56B4E9" stroke-width="1.5" marker-end="url(#arrowBlue)"/>
+  <!-- ============ panel b ============ -->
+  <text x="60" y="408" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="404" font-size="15" fill="#1A1B1E">四种机制对高能力 LLM 的效果排序（定性档位，非数值轴）</text>
 
-  <text x="340" y="175" text-anchor="middle" fill="#F0E442" font-size="11" font-weight="600">中等效果</text>
-  <text x="340" y="190" text-anchor="middle" fill="#0072B2" font-size="9">对手变化时退化</text>
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="330" y1="452" x2="1010" y2="452"/>
+    <line x1="500" y1="452" x2="500" y2="590"/>
+    <line x1="670" y1="452" x2="670" y2="590"/>
+    <line x1="840" y1="452" x2="840" y2="590"/>
+  </g>
+  <g font-size="12.5" fill="#555" text-anchor="middle">
+    <text x="415" y="442">效果最佳</text>
+    <text x="585" y="442">效果好</text>
+    <text x="755" y="442">中等效果</text>
+    <text x="925" y="442">有限效果</text>
+  </g>
 
-  <!-- Section 3: Mechanism 2 - Reputation -->
-  <rect x="430" y="60" width="140" height="130" rx="8" fill="#009E73" stroke="#56B4E9" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="500" y="83" text-anchor="middle" fill="#CC79A7" font-size="11" font-weight="600">② 声誉系统</text>
-  <text x="500" y="100" text-anchor="middle" fill="#0072B2" font-size="9">Reputation</text>
+  <!-- position x = 415 + 170*i -->
+  <line x1="840" y1="456" x2="840" y2="590" stroke="#999999" stroke-width="0.75"/>
+  <line x1="670" y1="456" x2="670" y2="590" stroke="#999999" stroke-width="0.75"/>
+  <line x1="500" y1="456" x2="500" y2="590" stroke="#D55E00" stroke-width="0.75"/>
+  <line x1="330" y1="456" x2="330" y2="590" stroke="#D55E00" stroke-width="0.75"/>
 
-  <!-- Reputation chain -->
-  <circle cx="470" cy="140" r="8" fill="#56B4E9" opacity="0.8"/>
-  <line x1="478" y1="140" x2="494" y2="140" stroke="#56B4E9" stroke-width="1" stroke-dasharray="3,2"/>
-  <circle cx="500" cy="140" r="8" fill="#56B4E9" opacity="0.6"/>
-  <line x1="508" y1="140" x2="524" y2="140" stroke="#56B4E9" stroke-width="1" stroke-dasharray="3,2"/>
-  <circle cx="530" cy="140" r="8" fill="#56B4E9" opacity="0.4"/>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="320" y="459">合约协议</text>
+    <text x="320" y="497">第三方调解</text>
+    <text x="320" y="535">重复博弈</text>
+    <text x="320" y="573">声誉系统</text>
+  </g>
+  <circle cx="415" cy="455" r="7" fill="#D55E00"/>
+  <circle cx="585" cy="493" r="7" fill="#D55E00"/>
+  <circle cx="755" cy="531" r="7" fill="#999999"/>
+  <circle cx="925" cy="569" r="7" fill="#999999"/>
 
-  <text x="500" y="175" text-anchor="middle" fill="#F0E442" font-size="11" font-weight="600">中等效果</text>
-  <text x="500" y="190" text-anchor="middle" fill="#0072B2" font-size="9">异质群体中有限</text>
+  <g font-size="11" fill="#555">
+    <text x="430" y="459">条件补偿最有效</text>
+    <text x="600" y="497">首次为 LLM 实现</text>
+    <text x="770" y="535">对手变化时急剧退化</text>
+    <text x="940" y="573">依赖理解历史信息的能力</text>
+  </g>
 
-  <!-- Section 4: Mechanism 3 - Mediation -->
-  <rect x="590" y="60" width="140" height="130" rx="8" fill="#009E73" stroke="#0072B2" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="660" y="83" text-anchor="middle" fill="#56B4E9" font-size="11" font-weight="600">③ 第三方调解</text>
-  <text x="660" y="100" text-anchor="middle" fill="#0072B2" font-size="9">Mediation</text>
+  <text x="60" y="612" font-size="12" fill="#555">演化视角：在追求个人收益最大化的演化压力下，上述机制反而更有效（复制子动力学模拟结论）。</text>
 
-  <!-- Mediator diagram -->
-  <rect x="645" y="125" width="30" height="20" rx="4" fill="#0072B2" opacity="0.9"/>
-  <text x="660" y="139" text-anchor="middle" fill="white" font-size="8" font-weight="600">调解</text>
-  <line x1="630" y1="135" x2="645" y2="135" stroke="#0072B2" stroke-width="1.5"/>
-  <line x1="675" y1="135" x2="690" y2="135" stroke="#0072B2" stroke-width="1.5"/>
-  <text x="625" y="140" text-anchor="end" fill="#0072B2" font-size="9">A</text>
-  <text x="695" y="140" text-anchor="start" fill="#0072B2" font-size="9">B</text>
-
-  <text x="660" y="175" text-anchor="middle" fill="#009E73" font-size="11" font-weight="600">效果好</text>
-  <text x="660" y="190" text-anchor="middle" fill="#0072B2" font-size="9">首次为LLM实现</text>
-
-  <!-- Section 5: Mechanism 4 - Contracts (BEST) -->
-  <rect x="270" y="210" width="140" height="130" rx="8" fill="#009E73" stroke="#E69F00" stroke-width="2" filter="url(#shadow)"/>
-  <text x="340" y="233" text-anchor="middle" fill="#F0E442" font-size="11" font-weight="600">④ 合约协议</text>
-  <text x="340" y="250" text-anchor="middle" fill="#0072B2" font-size="9">Contracts (BEST)</text>
-
-  <!-- Contract diagram -->
-  <rect x="305" y="265" width="70" height="30" rx="4" fill="none" stroke="#E69F00" stroke-width="1.5" stroke-dasharray="4,2"/>
-  <text x="340" y="284" text-anchor="middle" fill="#F0E442" font-size="9">条件支付合约</text>
-  <line x1="305" y1="280" x2="290" y2="280" stroke="#E69F00" stroke-width="1.5"/>
-  <line x1="375" y1="280" x2="390" y2="280" stroke="#E69F00" stroke-width="1.5"/>
-  <text x="285" y="284" text-anchor="end" fill="#E69F00" font-size="9">A</text>
-  <text x="395" y="284" text-anchor="start" fill="#E69F00" font-size="9">B</text>
-
-  <text x="340" y="320" text-anchor="middle" fill="#009E73" font-size="11" font-weight="600">效果最佳</text>
-  <text x="340" y="335" text-anchor="middle" fill="#0072B2" font-size="9">条件补偿最有效</text>
-
-  <!-- Bottom key finding -->
-  <rect x="430" y="210" width="300" height="130" rx="8" fill="#009E73" stroke="#D55E00" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="580" y="238" text-anchor="middle" fill="#CC79A7" font-size="12" font-weight="700">关键发现</text>
-
-  <text x="450" y="265" fill="#CC79A7" font-size="11">推理能力越强  合作越少</text>
-  <text x="450" y="285" fill="#CC79A7" font-size="11">合约 &amp; 调解  最有效</text>
-  <text x="450" y="305" fill="#CC79A7" font-size="11">所有LLM在单次博弈中  一致背叛</text>
-  <text x="450" y="325" fill="#CC79A7" font-size="11">进化压力下机制更有效</text>
+  <!-- footnote -->
+  <text x="60" y="640" font-size="11" fill="#767676">数据：arXiv:2604.15267《CoopEval》（ICML 2026 长文，6 种 LLM × 4 类社交困境 × 4 种机制，论文自测口径）· 正文未给出各机制量化效果数值，面板 b 为正文定性结论的档位序列示意，非测量数值 · 预印本未经同行评审</text>
 </svg>
