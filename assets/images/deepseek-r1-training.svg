@@ -1,49 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
-    </linearGradient>
-    <filter id="shadow">
-      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.3"/>
-    </filter>
-  </defs>
-  
-  <!-- 背景 -->
-  <rect width="800" height="400" fill="url(#bg)"/>
-  
-  <!-- 装饰性几何图形 -->
-  <circle cx="100" cy="100" r="50" fill="#f093fb" opacity="0.2"/>
-  <circle cx="700" cy="300" r="70" fill="#f093fb" opacity="0.15"/>
-  <rect x="600" y="50" width="100" height="100" fill="#f093fb" opacity="0.1" transform="rotate(45 650 100)"/>
-  
-  <!-- 神经网络节点装饰 -->
-  <g opacity="0.3">
-    <circle cx="200" cy="200" r="8" fill="#f093fb"/>
-    <circle cx="250" cy="180" r="6" fill="#f093fb"/>
-    <circle cx="300" cy="220" r="7" fill="#f093fb"/>
-    <circle cx="350" cy="190" r="5" fill="#f093fb"/>
-    <line x1="208" y1="200" x2="244" y2="183" stroke="#f093fb" stroke-width="2"/>
-    <line x1="256" y1="183" x2="293" y2="215" stroke="#f093fb" stroke-width="2"/>
-    <line x1="307" y1="217" x2="345" y2="195" stroke="#f093fb" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">按论文口径，神经符号系统能耗为传统大模型的百分之一，训练时间缩短 10 至 100 倍</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">能耗对比：传统大模型基准值 100，神经符号系统 1（对数刻度）</text>
+
+  <!-- vertical gridlines at exact values: x = 120 + 400*log10(v) -->
+  <g stroke="#D9D9D9" stroke-width="0.5" stroke-dasharray="4 4">
+    <line x1="920" y1="150" x2="920" y2="300"/>
   </g>
-  
-  <!-- 标题 -->
-  <text x="400" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#ffffff" filter="url(#shadow)">
-    DeepSeek R1
-  </text>
-  
-  <!-- 副标题 -->
-  <text x="400" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#ffffff" opacity="0.9">
-    训练流程
-  </text>
-  
-  <!-- 底部装饰线 -->
-  <line x1="250" y1="250" x2="550" y2="250" stroke="#f093fb" stroke-width="3" opacity="0.6"/>
-  
-  <!-- 图标占位符 -->
-  <g transform="translate(400, 320)">
-    <circle r="30" fill="#f093fb" opacity="0.3"/>
-    <text y="7" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#ffffff">🤖</text>
+
+  <!-- Traditional = 100 -->
+  <text x="110" y="205" font-size="12.5" fill="#1A1B1E" text-anchor="end">传统大模型</text>
+  <rect x="120" y="190" width="800" height="22" fill="#999999" opacity="0.25"/>
+  <circle cx="920" cy="201" r="6" fill="#999999"/>
+  <text x="932" y="205" font-size="12" fill="#555">基准值 100</text>
+
+  <!-- Neuro-symbolic = 1 -->
+  <text x="110" y="275" font-size="12.5" fill="#1A1B1E" text-anchor="end">神经符号系统</text>
+  <rect x="120" y="260" width="8" height="22" fill="#D55E00"/>
+  <circle cx="120" cy="271" r="6" fill="#D55E00"/>
+  <text x="136" y="275" font-size="12" fill="#555">1</text>
+
+  <!-- annotation -->
+  <text x="120" y="330" font-size="12" fill="#555">降低 100 倍（论文口径：基准值 100 → 1）</text>
+
+  <!-- value axis -->
+  <line x1="120" y1="360" x2="920" y2="360" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="120" y1="360" x2="120" y2="364"/>
+    <line x1="520" y1="360" x2="520" y2="364"/>
+    <line x1="920" y1="360" x2="920" y2="364"/>
   </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="120" y="382">1</text>
+    <text x="520" y="382">10</text>
+    <text x="920" y="382">100</text>
+  </g>
+  <text x="520" y="408" font-size="14" fill="#1A1B1E" text-anchor="middle">相对能耗（论文基准值，对数刻度）</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="60" y="448" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="448" font-size="15" fill="#1A1B1E">训练周期与准确率（序数示意，论文未给具体天数）</text>
+
+  <text x="60" y="492" font-size="12.5" fill="#1A1B1E">传统大模型</text>
+  <rect x="220" y="478" width="420" height="18" fill="#999999" opacity="0.4"/>
+  <text x="650" y="492" font-size="12" fill="#555">数周</text>
+
+  <text x="60" y="528" font-size="12.5" fill="#1A1B1E">神经符号系统</text>
+  <rect x="220" y="514" width="42" height="18" fill="#D55E00"/>
+  <text x="272" y="528" font-size="12" fill="#555">数小时至数天</text>
+  <text x="470" y="528" font-size="12" fill="#555">缩短 10 至 100 倍</text>
+
+  <text x="800" y="492" font-size="12.5" fill="#1A1B1E">准确率</text>
+  <text x="800" y="514" font-size="12" fill="#555">不降反升</text>
+  <text x="800" y="532" font-size="12" fill="#555">论文未给具体数值</text>
+
+  <!-- footnote -->
+  <text x="60" y="576" font-size="11" fill="#767676">数据：MIT School of Engineering 研究报道（Mirage News 转载）· 能耗为论文基准口径（传统 = 100 → 神经符号 = 1），非统一量纲实测值</text>
+  <text x="60" y="594" font-size="11" fill="#767676">面板 b 条长按序数示意 · 准确率与幻觉率变化论文仅定性描述，未给具体数值</text>
 </svg>

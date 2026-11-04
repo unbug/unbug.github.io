@@ -1,73 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
-  
-  
-  <!-- Background -->
-  <rect width="800" height="600" fill="#555555"/>
-  
-  <!-- Title Background -->
-  <rect x="50" y="40" width="700" height="80" fill="#009E73" rx="10"/>
-  <text x="400" y="90" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle">AI Agent Traps</text>
-  <text x="400" y="120" font-family="Arial, sans-serif" font-size="18" fill="#CC79A7" text-anchor="middle">6 Attack Vectors Identified</text>
-  
-  <!-- Shield Icon -->
-  <g transform="translate(650, 60)">
-    <path d="M50 0 C30 0 10 15 10 40 C10 70 40 100 50 110 C60 100 90 70 90 40 C90 15 70 0 50 0z" fill="#555555" stroke="#0072B2" stroke-width="2"/>
-    <text x="50" y="65" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">AI</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">六类攻击中 HTML 内容注入成功率最高（86%），其余五类成功率约为 40% 至 75%</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">六类攻击陷阱的实测成功率（%）</text>
+
+  <!-- gridlines: x = 320 + 9*v (dashed alignment guides, no numeric ticks) -->
+  <g stroke="#D9D9D9" stroke-width="0.5" stroke-dasharray="4 4">
+    <line x1="500" y1="126" x2="500" y2="446"/>
+    <line x1="680" y1="126" x2="680" y2="446"/>
+    <line x1="860" y1="126" x2="860" y2="446"/>
+    <line x1="1040" y1="126" x2="1040" y2="446"/>
   </g>
-  
-  <!-- Attack Vectors Grid -->
-  <g transform="translate(50, 160)">
-    <!-- Attack 1 -->
-    <rect x="0" y="0" width="360" height="110" fill="#CC79A7" stroke="#CC79A7" stroke-width="2" rx="8"/>
-    <text x="20" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#009E73">1. Content Injection</text>
-    <text x="20" y="60" font-family="Arial, sans-serif" font-size="12" fill="#CC79A7">Hidden HTML instructions</text>
-    <text x="20" y="80" font-family="Arial, sans-serif" font-size="12" fill="#CC79A7">visible to AI but not humans</text>
-    
-    <!-- Attack 2 -->
-    <rect x="380" y="0" width="360" height="110" fill="#CC79A7" stroke="#CC79A7" stroke-width="2" rx="8"/>
-    <text x="400" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#009E73">2. Semantic Manipulation</text>
-    <text x="400" y="60" font-family="Arial, sans-serif" font-size="12" fill="#CC79A7">Twisting AI semantic understanding</text>
-    <text x="400" y="80" font-family="Arial, sans-serif" font-size="12" fill="#CC79A7">to influence judgment</text>
-    
-    <!-- Attack 3 -->
-    <rect x="0" y="120" width="360" height="110" fill="#CC79A7" stroke="#CC79A7" stroke-width="2" rx="8"/>
-    <text x="20" y="155" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#009E73">3. Cognitive Poisoning</text>
-    <text x="20" y="180" font-family="Arial, sans-serif" font-size="12" fill="#CC79A7">Polluting AI memory and context</text>
-    <text x="20" y="200" font-family="Arial, sans-serif" font-size="12" fill="#CC79A7">during interactions</text>
-    
-    <!-- Attack 4 -->
-    <rect x="380" y="120" width="360" height="110" fill="#CC79A7" stroke="#CC79A7" stroke-width="2" rx="8"/>
-    <text x="400" y="155" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#009E73">4. Behavioral Control</text>
-    <text x="400" y="180" font-family="Arial, sans-serif" font-size="12" fill="#CC79A7">Direct manipulation of outputs</text>
-    <text x="400" y="200" font-family="Arial, sans-serif" font-size="12" fill="#CC79A7">executing attacker commands</text>
-    
-    <!-- Attack 5 -->
-    <rect x="0" y="240" width="360" height="110" fill="#CC79A7" stroke="#CC79A7" stroke-width="2" rx="8"/>
-    <text x="20" y="275" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#009E73">5. Systemic Traps</text>
-    <text x="20" y="300" font-family="Arial, sans-serif" font-size="12" fill="#CC79A7">Exploiting agent dependencies</text>
-    <text x="20" y="320" font-family="Arial, sans-serif" font-size="12" fill="#CC79A7">to compromise entire systems</text>
-    
-    <!-- Attack 6 -->
-    <rect x="380" y="240" width="360" height="110" fill="#CC79A7" stroke="#CC79A7" stroke-width="2" rx="8"/>
-    <text x="400" y="275" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#009E73">6. Multi-Agent Collusion</text>
-    <text x="400" y="300" font-family="Arial, sans-serif" font-size="12" fill="#CC79A7">Coordinated attacks by multiple</text>
-    <text x="400" y="320" font-family="Arial, sans-serif" font-size="12" fill="#CC79A7">malicious agents</text>
-  </g>
-  
-  <!-- Key Statistics -->
-  <g transform="translate(50, 440)">
-    <rect x="0" y="0" width="360" height="120" fill="#fff" stroke="#009E73" stroke-width="3" rx="8"/>
-    <text x="20" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#009E73">⚠️ Key Finding</text>
-    <text x="20" y="65" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#D55E00">86% Success Rate</text>
-    <text x="20" y="95" font-family="Arial, sans-serif" font-size="14" fill="#009E73">Simple HTML injection attacks succeed</text>
-    <text x="20" y="115" font-family="Arial, sans-serif" font-size="14" fill="#009E73">on autonomous AI agents</text>
-  </g>
-  
-  <!-- Google DeepMind Logo Area -->
-  <g transform="translate(440, 440)">
-    <rect x="0" y="0" width="340" height="120" fill="#009E73" rx="8"/>
-    <text x="20" y="40" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">Google DeepMind</text>
-    <text x="20" y="70" font-family="Arial, sans-serif" font-size="14" fill="#CC79A7">Research Paper: "AI Agent Traps"</text>
-    <text x="20" y="95" font-family="Arial, sans-serif" font-size="14" fill="#CC79A7">March 2026 • SSRN</text>
-  </g>
+
+  <!-- rows: x = 320 + 9*v; dot marks the exact reported value -->
+  <text x="308" y="166" font-size="12.5" fill="#1A1B1E" text-anchor="end">内容注入</text>
+  <rect x="320" y="152" width="774" height="18" fill="#D55E00" opacity="0.25"/>
+  <circle cx="1094" cy="161" r="6" fill="#D55E00"/>
+  <text x="1106" y="166" font-size="12" fill="#555">86</text>
+
+  <text x="308" y="226" font-size="12.5" fill="#1A1B1E" text-anchor="end">行为控制</text>
+  <rect x="320" y="212" width="675" height="18" fill="#999999" opacity="0.25"/>
+  <circle cx="995" cy="221" r="6" fill="#999999"/>
+  <text x="1007" y="226" font-size="12" fill="#555">约 75</text>
+
+  <text x="308" y="286" font-size="12.5" fill="#1A1B1E" text-anchor="end">语义操控</text>
+  <rect x="320" y="272" width="540" height="18" fill="#999999" opacity="0.25"/>
+  <circle cx="860" cy="281" r="6" fill="#999999"/>
+  <text x="872" y="286" font-size="12" fill="#555">约 60</text>
+
+  <text x="308" y="346" font-size="12.5" fill="#1A1B1E" text-anchor="end">多智能体协同攻击</text>
+  <rect x="320" y="332" width="495" height="18" fill="#999999" opacity="0.25"/>
+  <circle cx="815" cy="341" r="6" fill="#999999"/>
+  <text x="827" y="346" font-size="12" fill="#555">约 55</text>
+
+  <text x="308" y="406" font-size="12.5" fill="#1A1B1E" text-anchor="end">认知状态投毒</text>
+  <rect x="320" y="392" width="450" height="18" fill="#999999" opacity="0.25"/>
+  <circle cx="770" cy="401" r="6" fill="#999999"/>
+  <text x="782" y="406" font-size="12" fill="#555">约 50</text>
+
+  <text x="308" y="466" font-size="12.5" fill="#1A1B1E" text-anchor="end">系统性陷阱</text>
+  <rect x="320" y="452" width="360" height="18" fill="#999999" opacity="0.25"/>
+  <circle cx="680" cy="461" r="6" fill="#999999"/>
+  <text x="692" y="466" font-size="12" fill="#555">约 40</text>
+
+  <!-- value axis -->
+  <line x1="320" y1="486" x2="1040" y2="486" stroke="#1A1B1E" stroke-width="0.75"/>
+  <text x="320" y="506" font-size="12.5" fill="#1A1B1E">成功率基线（无刻度）</text>
+  <text x="680" y="532" font-size="14" fill="#1A1B1E" text-anchor="middle">攻击成功率（%）· 轴左端为基线，各条目数值标在实心点旁</text>
+
+  <!-- panel a key -->
+  <rect x="330" y="118" width="12" height="10" fill="#D55E00"/>
+  <text x="347" y="127" font-size="12" fill="#555">正文给出精确值</text>
+  <rect x="480" y="118" width="12" height="10" fill="#999999"/>
+  <text x="497" y="127" font-size="12" fill="#555">正文报告「约」值</text>
+
+  <!-- footnote -->
+  <text x="60" y="576" font-size="11" fill="#767676">数据：AI Agent Traps（Google DeepMind，2026 年 3 月提交 SSRN，经 CyberNews / SecurityWeek / The Decoder 报道）</text>
+  <text x="60" y="594" font-size="11" fill="#767676">成功率为研究实测口径 · 「约」为报道近似值 · 六类覆盖输入、记忆、行为到系统协作攻击面</text>
 </svg>

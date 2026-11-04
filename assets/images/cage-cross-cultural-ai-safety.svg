@@ -1,37 +1,98 @@
-<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
-  <rect width="800" height="600" fill="#f8f9fa"/>
-  <text x="400" y="50" font-family="Arial" font-size="32" text-anchor="middle" fill="#2c3e50">CAGE: 跨文化AI安全测试框架</text>
-  
-  <!-- 英文场景 -->
-  <rect x="100" y="150" width="200" height="100" rx="10" fill="#3498db"/>
-  <text x="200" y="200" font-family="Arial" font-size="18" text-anchor="middle" fill="white">英文安全对齐</text>
-  <text x="200" y="230" font-family="Arial" font-size="14" text-anchor="middle" fill="white">攻击成功率: 8.6%</text>
-  
-  <!-- 箭头 -->
-  <line x1="300" y1="200" x2="400" y2="200" stroke="#2c3e50" stroke-width="3" marker-end="url(#arrowhead)"/>
-  
-  <!-- 语义模具 -->
-  <rect x="400" y="150" width="200" height="100" rx="10" fill="#e74c3c"/>
-  <text x="500" y="200" font-family="Arial" font-size="18" text-anchor="middle" fill="white">语义模具</text>
-  <text x="500" y="230" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Semantic Mold</text>
-  
-  <!-- 箭头 -->
-  <line x1="600" y1="200" x2="700" y2="200" stroke="#2c3e50" stroke-width="3" marker-end="url(#arrowhead)"/>
-  
-  <!-- 韩文场景 -->
-  <rect x="700" y="150" width="200" height="100" rx="10" fill="#f39c12"/>
-  <text x="800" y="200" font-family="Arial" font-size="18" text-anchor="middle" fill="white">韩文安全测试</text>
-  <text x="800" y="230" font-family="Arial" font-size="14" text-anchor="middle" fill="white">攻击成功率: 43.8%</text>
-  
-  <!-- 对比数据 -->
-  <rect x="250" y="350" width="300" height="150" rx="10" fill="#2ecc71"/>
-  <text x="400" y="400" font-family="Arial" font-size="24" text-anchor="middle" fill="white">性能对比</text>
-  <text x="400" y="440" font-family="Arial" font-size="18" text-anchor="middle" fill="white">CAGE: 43.8% | 直接翻译: 28.2%</text>
-  <text x="400" y="470" font-family="Arial" font-size="18" text-anchor="middle" fill="white">比传统方法提升 55.3%</text>
-  
-  <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
-    </marker>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">CAGE 生成的韩语提示攻击成功率 43.8%，高于直接翻译的 28.2% 与 LLM 适配的 32.4%</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">Llama-3.1 上三种生成方法的攻击成功率 ASR（%）</text>
+
+  <!-- horizontal gridlines at exact values: y = 320 - 4*v (43.8→207, 32.4→290, 28.2→307) -->
+  <g stroke="#D9D9D9" stroke-width="0.5" stroke-dasharray="4 4">
+    <line x1="100" y1="207" x2="720" y2="207"/>
+    <line x1="100" y1="290" x2="720" y2="290"/>
+    <line x1="100" y1="307" x2="720" y2="307"/>
+  </g>
+
+  <!-- bars: dot at value, bar from baseline 320 -->
+  <rect x="180" y="207" width="80" height="113" fill="#D55E00" opacity="0.25"/>
+  <circle cx="220" cy="207" r="6" fill="#D55E00"/>
+  <text x="232" y="211" font-size="12" fill="#555">43.8</text>
+  <text x="220" y="342" font-size="12.5" fill="#1A1B1E" text-anchor="middle">CAGE</text>
+
+  <rect x="380" y="290" width="80" height="30" fill="#999999" opacity="0.25"/>
+  <circle cx="420" cy="290" r="6" fill="#999999"/>
+  <text x="432" y="294" font-size="12" fill="#555">32.4</text>
+  <text x="420" y="342" font-size="12.5" fill="#1A1B1E" text-anchor="middle">LLM 适配</text>
+
+  <rect x="580" y="307" width="80" height="13" fill="#999999" opacity="0.25"/>
+  <circle cx="620" cy="307" r="6" fill="#999999"/>
+  <text x="632" y="311" font-size="12" fill="#555">28.2</text>
+  <text x="620" y="342" font-size="12.5" fill="#1A1B1E" text-anchor="middle">直接翻译</text>
+
+  <!-- baseline -->
+  <line x1="100" y1="320" x2="720" y2="320" stroke="#1A1B1E" stroke-width="0.75"/>
+  <text x="100" y="370" font-size="12" fill="#555">点在正文报告值上（虚线对齐），柱底为无攻击基线</text>
+  <text x="100" y="392" font-size="14" fill="#1A1B1E">纵轴：攻击成功率 ASR（%）</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="800" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="822" y="104" font-size="15" fill="#1A1B1E">韩语与英文场景的攻击成功率差距</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5" stroke-dasharray="4 4">
+    <line x1="830" y1="220" x2="1140" y2="220"/>
+    <line x1="830" y1="304" x2="1140" y2="304"/>
+  </g>
+
+  <rect x="870" y="220" width="70" height="100" fill="#D55E00" opacity="0.25"/>
+  <circle cx="905" cy="220" r="6" fill="#D55E00"/>
+  <text x="917" y="224" font-size="12" fill="#555">35.2 个百分点</text>
+  <text x="905" y="342" font-size="12.5" fill="#1A1B1E" text-anchor="middle">Llama-3.1</text>
+  <text x="905" y="360" font-size="12" fill="#555" text-anchor="middle">英文中心训练</text>
+
+  <rect x="1020" y="316" width="70" height="4" fill="#999999" opacity="0.25"/>
+  <circle cx="1055" cy="316" r="6" fill="#999999"/>
+  <text x="1067" y="320" font-size="12" fill="#555">差距仅 1.2%</text>
+  <text x="1055" y="342" font-size="12.5" fill="#1A1B1E" text-anchor="middle">EXAONE-3.5</text>
+  <text x="1055" y="360" font-size="12" fill="#555" text-anchor="middle">深度中英文文化知识</text>
+
+  <line x1="830" y1="320" x2="1140" y2="320" stroke="#1A1B1E" stroke-width="0.75"/>
+  <text x="830" y="392" font-size="14" fill="#1A1B1E">纵轴：跨文化攻击成功率差距（百分点）</text>
+
+  <!-- ============ panel c ============ -->
+  <text x="60" y="446" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="82" y="446" font-size="15" fill="#1A1B1E">语义模具机制示意（无量化数据，流程示意）</text>
+
+  <!-- flow boxes -->
+  <rect x="60" y="486" width="200" height="70" fill="none" stroke="#1A1B1E" stroke-width="0.75"/>
+  <text x="160" y="516" font-size="12.5" fill="#1A1B1E" text-anchor="middle">原始红队提示</text>
+  <text x="160" y="536" font-size="12" fill="#555" text-anchor="middle">英文攻击意图</text>
+
+  <line x1="260" y1="521" x2="316" y2="521" stroke="#555" stroke-width="1.5"/>
+  <polygon points="316,516 328,521 316,526" fill="#555"/>
+  <text x="294" y="508" font-size="12" fill="#555" text-anchor="middle">分离</text>
+
+  <rect x="328" y="486" width="200" height="70" fill="none" stroke="#1A1B1E" stroke-width="0.75"/>
+  <text x="428" y="516" font-size="12.5" fill="#1A1B1E" text-anchor="middle">语义模具</text>
+  <text x="428" y="536" font-size="12" fill="#555" text-anchor="middle">对抗结构，不含文化内容</text>
+
+  <line x1="528" y1="521" x2="584" y2="521" stroke="#555" stroke-width="1.5"/>
+  <polygon points="584,516 596,521 584,526" fill="#555"/>
+  <text x="562" y="508" font-size="12" fill="#555" text-anchor="middle">注入文化</text>
+
+  <rect x="596" y="486" width="200" height="70" fill="none" stroke="#1A1B1E" stroke-width="0.75"/>
+  <text x="696" y="516" font-size="12.5" fill="#1A1B1E" text-anchor="middle">目标文化语境内容</text>
+  <text x="696" y="536" font-size="12" fill="#555" text-anchor="middle">韩语社会规范与法规</text>
+
+  <line x1="796" y1="521" x2="852" y2="521" stroke="#555" stroke-width="1.5"/>
+  <polygon points="852,516 864,521 852,526" fill="#555"/>
+
+  <rect x="864" y="486" width="276" height="70" fill="none" stroke="#D55E00" stroke-width="1.5"/>
+  <text x="1002" y="516" font-size="12.5" fill="#1A1B1E" text-anchor="middle">KoRSET 测试用例</text>
+  <text x="1002" y="536" font-size="12" fill="#555" text-anchor="middle">保留攻击意图，贴合当地语境</text>
+
+  <!-- footnote -->
+  <text x="60" y="608" font-size="11" fill="#767676">数据：ICLR 2026 / arXiv:2602.20170（KoRSET 韩语基准，Llama-3.1 与 EXAONE-3.5 实验）· 面板 a、b 为论文自测口径</text>
+  <text x="60" y="626" font-size="11" fill="#767676">面板 c 为论文方法流程示意 · 预印本未经同行评审</text>
 </svg>
