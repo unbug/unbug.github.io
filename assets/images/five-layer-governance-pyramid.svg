@@ -1,75 +1,129 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="700" height="550" viewBox="0 0 700 550">
-  
-  
-  <!-- Background -->
-  <rect width="700" height="550" fill="#555555" rx="8" ry="8"/>
-  
-  <!-- Title -->
-  <text x="350" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#009E73">
-    五层次 AI 治理框架
-  </text>
-  <text x="350" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#CC79A7">
-    A Five-Layer Framework for AI Governance
-  </text>
-  
-  <!-- Level 1: Regulatory Mandates -->
-  <rect x="150" y="80" width="400" height="70" fill="#F0F0F0" stroke="#009E73" stroke-width="1" rx="6" ry="6"/>
-  <rect x="150" y="80" width="400" height="6" fill="#D55E00" rx="6" ry="6"/>
-  <text x="350" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#009E73">
-    Level 1: Regulatory Mandates
-  </text>
-  <text x="350" y="132" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#009E73">
-    监管指令
-  </text>
-  
-  <!-- Level 2: Standards -->
-  <rect x="180" y="160" width="340" height="70" fill="#F0F0F0" stroke="#009E73" stroke-width="1" rx="6" ry="6"/>
-  <rect x="180" y="160" width="340" height="6" fill="#0072B2" rx="6" ry="6"/>
-  <text x="350" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#009E73">
-    Level 2: Standards
-  </text>
-  <text x="350" y="212" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#009E73">
-    标准规范
-  </text>
-  
-  <!-- Level 3: Assessment Methodologies -->
-  <rect x="210" y="240" width="280" height="70" fill="#F0F0F0" stroke="#009E73" stroke-width="1" rx="6" ry="6"/>
-  <rect x="210" y="240" width="280" height="6" fill="#009E73" rx="6" ry="6"/>
-  <text x="350" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#009E73">
-    Level 3: Assessment
-  </text>
-  <text x="350" y="292" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#009E73">
-    评估方法
-  </text>
-  
-  <!-- Level 4: Certification Processes -->
-  <rect x="240" y="320" width="220" height="70" fill="#F0F0F0" stroke="#009E73" stroke-width="1" rx="6" ry="6"/>
-  <rect x="240" y="320" width="220" height="6" fill="#E69F00" rx="6" ry="6"/>
-  <text x="350" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#009E73">
-    Level 4: Certification
-  </text>
-  <text x="350" y="372" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#009E73">
-    认证流程
-  </text>
-  
-  <!-- Level 5: Governance Practices -->
-  <rect x="270" y="400" width="160" height="70" fill="#F0F0F0" stroke="#009E73" stroke-width="1" rx="6" ry="6"/>
-  <rect x="270" y="400" width="160" height="6" fill="#0072B2" rx="6" ry="6"/>
-  <text x="350" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#009E73">
-    Level 5: Practices
-  </text>
-  <text x="350" y="452" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#009E73">
-    治理实践
-  </text>
-  
-  <!-- Arrow indicators -->
-  <polygon points="350,155 347,162 353,162" fill="#009E73"/>
-  <polygon points="350,235 347,242 353,242" fill="#009E73"/>
-  <polygon points="350,315 347,322 353,322" fill="#009E73"/>
-  <polygon points="350,395 347,402 353,402" fill="#009E73"/>
-  
-  <!-- Legend -->
-  <text x="350" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#CC79A7">
-    从监管指令到日常实践的层级递进
-  </text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">AI 治理的关键不在更多原则，而在以五个递进层次弥合原则到实践的执行鸿沟</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">五层次框架：每层支撑上一层、为下一层奠基</text>
+
+  <!-- layers L5 bottom -> L1 top -->
+  <g stroke-width="1.5">
+    <rect x="60" y="126" width="540" height="62" fill="#FFFFFF" stroke="#999999"/>
+    <rect x="60" y="194" width="540" height="62" fill="#FFFFFF" stroke="#999999"/>
+    <rect x="60" y="262" width="540" height="62" fill="#FFFFFF" stroke="#999999"/>
+    <rect x="60" y="330" width="540" height="62" fill="#FFFFFF" stroke="#999999"/>
+    <rect x="60" y="398" width="540" height="62" fill="#F2F2F2" stroke="#D55E00" stroke-width="2"/>
+  </g>
+  <g font-size="14" font-weight="bold" fill="#1A1B1E">
+    <text x="76" y="152">第五层 治理实践</text>
+    <text x="76" y="220">第四层 认证流程</text>
+    <text x="76" y="288">第三层 评估方法</text>
+    <text x="76" y="356">第二层 标准</text>
+    <text x="76" y="424">第一层 监管指令</text>
+  </g>
+  <text x="230" y="152" font-size="12" fill="#555555">日常治理行动</text>
+  <text x="230" y="220" font-size="12" fill="#555555">第三方信任机制</text>
+  <text x="230" y="288" font-size="12" fill="#555555">可审计的检验手段</text>
+  <text x="230" y="356" font-size="12" fill="#555555">法规到技术指标</text>
+  <text x="230" y="424" font-size="12" fill="#555555">强制性合规基线</text>
+  <g font-size="12" fill="#555555">
+    <text x="380" y="152">生命周期管理、模型监控、事件响应</text>
+    <text x="380" y="220">第三方验证与合规证明</text>
+    <text x="380" y="288">风险评估流程、算法影响评估、公平性测试</text>
+    <text x="380" y="356">ISO/IEC 42001、NIST AI 风险管理框架</text>
+    <text x="380" y="424">政府强制性要求</text>
+  </g>
+
+  <!-- upward support arrow -->
+  <line x1="632" y1="456" x2="632" y2="130" stroke="#999999" stroke-width="1.5"/>
+  <polygon points="627,138 637,138 632,128" fill="#999999"/>
+  <text x="648" y="296" font-size="12" fill="#555555" transform="rotate(-90 648 296)" text-anchor="middle">每层支撑上一层、为下一层奠基</text>
+
+  <!-- panel a note -->
+  <text x="60" y="496" font-size="12" fill="#555555">层次为论文框架的层级序列，朱色仅标示下图中起始投入集中的层次，无量化含义</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="760" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="782" y="104" font-size="15" fill="#1A1B1E">实施路线：五阶段周期（月）</text>
+
+  <!-- horizontal gridlines at 6 and 12 -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="800" y1="240" x2="1120" y2="240"/>
+    <line x1="800" y1="150" x2="1120" y2="150"/>
+  </g>
+
+  <!-- stacked phases: y = 420 - 15*v -->
+  <g stroke-width="1.5">
+    <rect x="812" y="375" width="64" height="45" fill="#0072B2" stroke="#0072B2"/>
+    <rect x="812" y="330" width="64" height="45" fill="#FFFFFF" stroke="#0072B2"/>
+
+    <rect x="896" y="330" width="64" height="60" fill="#0072B2" stroke="#0072B2"/>
+    <rect x="896" y="270" width="64" height="60" fill="#FFFFFF" stroke="#0072B2"/>
+
+    <rect x="980" y="330" width="64" height="60" fill="#0072B2" stroke="#0072B2"/>
+    <rect x="980" y="270" width="64" height="60" fill="#FFFFFF" stroke="#0072B2"/>
+
+    <rect x="1064" y="360" width="64" height="60" fill="#0072B2" stroke="#0072B2"/>
+    <rect x="1064" y="330" width="64" height="30" fill="#FFFFFF" stroke="#0072B2"/>
+  </g>
+
+  <!-- phase labels -->
+  <g font-size="12" fill="#555555" text-anchor="middle">
+    <text x="844" y="366">3</text>
+    <text x="928" y="262">6</text>
+    <text x="1012" y="262">6</text>
+    <text x="1096" y="322">4</text>
+  </g>
+  <text x="844" y="320" font-size="12" fill="#555555" text-anchor="middle">1</text>
+  <text x="1096" y="380" font-size="12" fill="#555555" text-anchor="middle">2</text>
+
+  <!-- baseline note -->
+  <text x="812" y="446" font-size="12" fill="#555555">第五阶段：实践整合，持续进行，无固定周期</text>
+
+  <!-- value axis -->
+  <line x1="800" y1="420" x2="1120" y2="420" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="800" y1="420" x2="800" y2="424"/>
+    <line x1="800" y1="240" x2="796" y2="240"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="790" y="424">周期起点</text>
+    <text x="790" y="244">6</text>
+  </g>
+  <line x1="800" y1="420" x2="800" y2="150" stroke="#1A1B1E" stroke-width="0.75"/>
+  <text x="800" y="140" font-size="12.5" fill="#1A1B1E" text-anchor="middle">轴至 6 个月以上</text>
+
+  <!-- category labels -->
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="844" y="468">基线建立</text>
+    <text x="928" y="468">标准对齐</text>
+    <text x="1012" y="468">评估能力</text>
+    <text x="1096" y="468">认证准备</text>
+  </g>
+  <g font-size="12" fill="#555555" text-anchor="middle">
+    <text x="844" y="486">法规映射与</text>
+    <text x="844" y="502">差距分析</text>
+    <text x="928" y="486">法规条款映射</text>
+    <text x="928" y="502">到标准条款</text>
+    <text x="1012" y="486">部署工具、培训</text>
+    <text x="1012" y="502">团队并试点</text>
+    <text x="1096" y="486">内部预审到</text>
+    <text x="1096" y="502">正式申请</text>
+  </g>
+  <text x="960" y="524" font-size="14" fill="#1A1B1E" text-anchor="middle">实施阶段（按推进顺序）</text>
+
+  <!-- legend -->
+  <g font-size="12" fill="#555555">
+    <rect x="812" y="130" width="12" height="10" fill="#0072B2"/>
+    <text x="829" y="139">周期下限（月）</text>
+    <rect x="942" y="130" width="12" height="10" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="959" y="139">延至周期上限（月）</text>
+  </g>
+  <text x="800" y="166" font-size="12" fill="#555555">轴数字为论文报告区间端点，实心高度=下限，实心+空心总高=上限</text>
+
+  <!-- footnote -->
+  <text x="60" y="600" font-size="11" fill="#767676">来源：arXiv:2509.11332《A five-layer framework for AI governance》，AI and Ethics（Springer Nature），Google Scholar 被引 19 次</text>
+  <text x="60" y="618" font-size="11" fill="#767676">面板 a 为论文框架的机制示意 · 面板 b 周期为论文自述口径（1 至 3 / 3 至 6 / 3 至 6 / 2 至 4 个月）· 失败点清单见正文</text>
 </svg>

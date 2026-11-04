@@ -1,111 +1,95 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
-  <defs>
-    <filter id="shadow">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#1A1B1E" flood-opacity="0.1"/>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <!-- Background -->
-  <rect width="900" height="520" fill="#555555"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">GAGF 以 10 条戒律与 13 点原则为核心，设计分阶段国际监督路径，兼顾防范风险与促进繁荣</text>
 
-  <!-- Title section -->
-  <rect x="60" y="20" width="780" height="60" rx="10" fill="#F0F0F0" filter="url(#shadow)"/>
-  <text x="450" y="55" text-anchor="middle" fill="#009E73" font-size="26" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
-    全球 AGI 治理框架 GAGF
-  </text>
-  <text x="450" y="78" text-anchor="middle" fill="#0072B2" font-size="14" font-family="system-ui, -apple-system, sans-serif">
-    Global AGI Governance Framework · Springer Nature 2026
-  </text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">规则规模：阿西莫夫三定律扩展为 13 点现代指导原则（条）</text>
 
-  <!-- Decorative circles -->
-  <circle cx="830" cy="40" r="80" fill="#009E73" opacity="0.06"/>
-  <circle cx="80" cy="480" r="100" fill="#56B4E9" opacity="0.06"/>
-  <circle cx="450" cy="260" r="150" fill="#56B4E9" opacity="0.03"/>
-
-  <!-- Core principles card (top-left) -->
-  <g transform="translate(60, 100)">
-    <rect width="380" height="160" rx="10" fill="#F0F0F0" filter="url(#shadow)"/>
-    <rect x="0" y="0" width="380" height="4" rx="10" fill="#555555"/>
-    <text x="190" y="32" text-anchor="middle" fill="#009E73" font-size="19" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
-      ✨ 核心原则
-    </text>
-    <rect x="0" y="48" width="380" height="2" fill="#009E73" opacity="0.2"/>
-    <g transform="translate(25, 62)">
-      <text x="0" y="0" fill="#009E73" font-size="12" font-family="system-ui, -apple-system, sans-serif">● 透明度 · ● 公平性</text>
-      <text x="0" y="24" fill="#009E73" font-size="12" font-family="system-ui, -apple-system, sans-serif">● 人权保障 · ● 伦理约束</text>
-    </g>
+  <!-- gridlines at bar values: y = 465 - 15*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="100" y1="420" x2="520" y2="420"/>
+    <line x1="100" y1="315" x2="520" y2="315"/>
+    <line x1="100" y1="270" x2="520" y2="270"/>
   </g>
 
-  <!-- 10 commandments card (top-right) -->
-  <g transform="translate(460, 100)">
-    <rect width="380" height="160" rx="10" fill="#F0F0F0" filter="url(#shadow)"/>
-    <rect x="0" y="0" width="380" height="4" rx="10" fill="#555555"/>
-    <text x="190" y="32" text-anchor="middle" fill="#E69F00" font-size="19" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
-      📜 10 条戒律
-    </text>
-    <rect x="0" y="48" width="380" height="2" fill="#E69F00" opacity="0.2"/>
-    <g transform="translate(25, 62)">
-      <text x="0" y="0" fill="#009E73" font-size="11" font-family="system-ui, -apple-system, sans-serif">1. 安全性优先 · 2. 可控性保障</text>
-      <text x="0" y="18" fill="#009E73" font-size="11" font-family="system-ui, -apple-system, sans-serif">3. 透明度原则 · 4. 公平性保障</text>
-      <text x="0" y="36" fill="#009E73" font-size="11" font-family="system-ui, -apple-system, sans-serif">5. 隐私保护 · 6. 人权至上</text>
-      <text x="0" y="54" fill="#009E73" font-size="11" font-family="system-ui, -apple-system, sans-serif">7. 伦理约束 · 8. 风险预防</text>
-      <text x="0" y="72" fill="#009E73" font-size="11" font-family="system-ui, -apple-system, sans-serif">9. 国际合作 · 10. 持续改进</text>
-    </g>
+  <!-- bars -->
+  <rect x="150" y="420" width="90" height="45" fill="#999999"/>
+  <text x="195" y="412" font-size="12" fill="#555555" text-anchor="middle">三条</text>
+  <text x="195" y="483" font-size="12.5" fill="#1A1B1E" text-anchor="middle">机器人三定律（1942）</text>
+
+  <rect x="290" y="315" width="90" height="150" fill="#0072B2"/>
+  <text x="335" y="307" font-size="12" fill="#555555" text-anchor="middle">10 条</text>
+  <text x="335" y="483" font-size="12.5" fill="#1A1B1E" text-anchor="middle">十条戒律</text>
+
+  <rect x="430" y="270" width="90" height="195" fill="#D55E00"/>
+  <text x="475" y="262" font-size="12" fill="#555555" text-anchor="middle">13 条</text>
+  <text x="475" y="483" font-size="12.5" fill="#1A1B1E" text-anchor="middle">13 点原则</text>
+
+  <!-- y axis: ticks only at values stated in text -->
+  <line x1="100" y1="465" x2="100" y2="150" stroke="#1A1B1E" stroke-width="0.75"/>
+  <line x1="100" y1="465" x2="520" y2="465" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="96" y1="315" x2="100" y2="315"/>
+    <line x1="96" y1="270" x2="100" y2="270"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="88" y="319">10</text>
+    <text x="88" y="274">13</text>
+  </g>
+  <text x="72" y="310" font-size="14" fill="#1A1B1E" text-anchor="middle" transform="rotate(-90 72 310)">规则条数（条）</text>
+
+  <text x="100" y="524" font-size="12" fill="#555555">扩展逻辑：伤害定义从物理扩展到福祉与权利，补上责任主体、</text>
+  <text x="100" y="542" font-size="12" fill="#555555">实时风险评估与技术变化弹性等现代要求</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="620" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="642" y="104" font-size="15" fill="#1A1B1E">实施路径：四阶段国际监督（序列位置，无周期数据）</text>
+
+  <!-- stage boxes -->
+  <g fill="#F2F2F2" stroke="#999999" stroke-width="1.5">
+    <rect x="620" y="150" width="235" height="84"/>
+    <rect x="895" y="150" width="245" height="84"/>
+    <rect x="620" y="266" width="235" height="84"/>
+  </g>
+  <rect x="895" y="266" width="245" height="84" fill="#FFFFFF" stroke="#D55E00" stroke-width="2"/>
+
+  <g font-size="13.5" fill="#1A1B1E">
+    <text x="636" y="184">第一阶段 建立国际监督框架</text>
+    <text x="911" y="184">第二阶段 制定并实施安全标准</text>
+    <text x="636" y="300">第三阶段 完善全球协调机制</text>
+    <text x="911" y="300">第四阶段 持续监控与改进</text>
+  </g>
+  <g font-size="12" fill="#555555">
+    <text x="636" y="212">国际 AGI 治理机构</text>
+    <text x="911" y="212">统一安全标准</text>
+    <text x="636" y="328">信息共享与联合监管</text>
+    <text x="911" y="328">定期审计、应急响应</text>
   </g>
 
-  <!-- Asimov modern version (bottom-left) -->
-  <g transform="translate(60, 275)">
-    <rect width="380" height="200" rx="10" fill="#F0F0F0" filter="url(#shadow)"/>
-    <rect x="0" y="0" width="380" height="4" rx="10" fill="#555555"/>
-    <text x="190" y="32" text-anchor="middle" fill="#56B4E9" font-size="19" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
-      🤖 阿西莫夫现代版 13 点
-    </text>
-    <rect x="0" y="48" width="380" height="2" fill="#56B4E9" opacity="0.2"/>
-    <g transform="translate(25, 62)">
-      <text x="0" y="0" fill="#009E73" font-size="11" font-family="system-ui, -apple-system, sans-serif">人类安全绝对优先 · 人类福祉最大化</text>
-      <text x="0" y="18" fill="#009E73" font-size="11" font-family="system-ui, -apple-system, sans-serif">人类自主权保障 · 透明可解释性</text>
-      <text x="0" y="36" fill="#009E73" font-size="11" font-family="system-ui, -apple-system, sans-serif">公平包容性 · 隐私保护</text>
-      <text x="0" y="54" fill="#009E73" font-size="11" font-family="system-ui, -apple-system, sans-serif">伦理对齐 · 可控性</text>
-      <text x="0" y="72" fill="#009E73" font-size="11" font-family="system-ui, -apple-system, sans-serif">责任归属 · 可持续发展</text>
-      <text x="0" y="90" fill="#009E73" font-size="11" font-family="system-ui, -apple-system, sans-serif">国际合作 · 持续监控 · 灵活适应</text>
-    </g>
+  <!-- connectors -->
+  <g stroke="#999999" stroke-width="1.5" fill="#999999">
+    <line x1="855" y1="192" x2="888" y2="192"/>
+    <polygon points="888,186 898,192 888,198"/>
+    <line x1="1017" y1="234" x2="1017" y2="248"/>
+    <line x1="1017" y1="248" x2="737" y2="248"/>
+    <line x1="737" y1="248" x2="737" y2="259"/>
+    <polygon points="731,259 743,259 737,269"/>
+    <line x1="855" y1="308" x2="888" y2="308"/>
+    <polygon points="888,302 898,308 888,314"/>
   </g>
 
-  <!-- Implementation roadmap (bottom-right) -->
-  <g transform="translate(460, 275)">
-    <rect width="380" height="200" rx="10" fill="#F0F0F0" filter="url(#shadow)"/>
-    <rect x="0" y="0" width="380" height="4" rx="10" fill="#555555"/>
-    <text x="190" y="32" text-anchor="middle" fill="#56B4E9" font-size="19" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
-      🚀 实施路径
-    </text>
-    <rect x="0" y="48" width="380" height="2" fill="#56B4E9" opacity="0.2"/>
-    <g transform="translate(25, 62)">
-      <rect x="0" y="0" width="38" height="22" rx="4" fill="#56B4E9" opacity="0.85"/>
-      <text x="48" y="16" fill="white" font-size="12" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">阶段一</text>
-      <text x="48" y="32" fill="#0072B2" font-size="10" font-family="system-ui, -apple-system, sans-serif">国际监督框架建立</text>
-      
-      <rect x="0" y="48" width="38" height="22" rx="4" fill="#56B4E9" opacity="0.85"/>
-      <text x="48" y="64" fill="white" font-size="12" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">阶段二</text>
-      <text x="48" y="80" fill="#0072B2" font-size="10" font-family="system-ui, -apple-system, sans-serif">安全标准制定实施</text>
-      
-      <rect x="0" y="96" width="38" height="22" rx="4" fill="#56B4E9" opacity="0.85"/>
-      <text x="48" y="112" fill="white" font-size="12" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">阶段三</text>
-      <text x="48" y="128" fill="#0072B2" font-size="10" font-family="system-ui, -apple-system, sans-serif">全球协调机制完善</text>
-      
-      <rect x="0" y="144" width="38" height="22" rx="4" fill="#56B4E9" opacity="0.85"/>
-      <text x="48" y="160" fill="white" font-size="12" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">阶段四</text>
-      <text x="48" y="176" fill="#0072B2" font-size="10" font-family="system-ui, -apple-system, sans-serif">持续监控与改进</text>
-    </g>
-  </g>
+  <!-- panel b notes -->
+  <text x="620" y="396" font-size="12" fill="#555555">框架核心原则：透明、公平、人权保障与伦理约束</text>
+  <text x="620" y="416" font-size="12" fill="#555555">十条戒律：安全优先、可控、透明、公平、隐私、人权至上、伦理约束、</text>
+  <text x="620" y="436" font-size="12" fill="#555555">风险预防、国际合作、持续改进</text>
+  <text x="620" y="468" font-size="12" fill="#555555">安全与繁荣平衡：适度监管不过度限制创新、确保安全底线、</text>
+  <text x="620" y="488" font-size="12" fill="#555555">利益全球共享、按进展动态调整</text>
+  <text x="620" y="524" font-size="12" fill="#555555">阶段仅为论文给出的先后顺序，未报告周期与量化指标；朱色仅标示终点阶段</text>
 
-  <!-- Footer DOI card -->
-  <g transform="translate(260, 500)">
-    <rect x="0" y="0" width="380" height="32" rx="6" fill="#CC79A7" filter="url(#shadow)"/>
-    <text x="190" y="20" text-anchor="middle" fill="#0072B2" font-size="12" font-family="system-ui, -apple-system, sans-serif">
-      DOI: 10.1007/s43681-026-01020-7
-    </text>
-  </g>
-
-  <!-- Decorative line separator -->
-  <line x1="60" y1="95" x2="840" y2="95" stroke="#CC79A7" stroke-width="1" opacity="0.5"/>
+  <!-- footnote -->
+  <text x="60" y="600" font-size="11" fill="#767676">来源：《Ethical foundations for a superintelligent future》，AI and Ethics（Springer Nature，2026 年 2 月），DOI:10.1007/s43681-026-01020-7，Caja Moya 与 Quiroga</text>
+  <text x="60" y="618" font-size="11" fill="#767676">面板 a 条数为论文自述口径 · 面板 b 为论文框架的机制示意（序列位置轴）· 预印本原文未经本次实测核验</text>
 </svg>

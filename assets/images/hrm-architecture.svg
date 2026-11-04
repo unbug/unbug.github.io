@@ -1,104 +1,86 @@
-<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="1200" height="800" fill="#CC79A7"/>
-  
-  <!-- Title -->
-  <text x="600" y="60" font-family="Arial, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#009E73">
-    HRM 分层推理架构
-  </text>
-  
-  <!-- Brain icon -->
-  <circle cx="150" cy="120" r="40" fill="#F0E442" stroke="#E69F00" stroke-width="3"/>
-  <text x="150" y="130" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#fff">🧠</text>
-  
-  <!-- H-module (高层模块) -->
-  <rect x="250" y="180" width="700" height="120" rx="15" fill="#56B4E9" stroke="#0072B2" stroke-width="3"/>
-  <text x="600" y="230" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#fff">
-    高层模块 (H-module)
-  </text>
-  <text x="600" y="270" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#CC79A7">
-    缓慢、抽象的规划 · 整体策略 · 全局视角
-  </text>
-  
-  <!-- Connection arrows -->
-  <line x1="600" y1="300" x2="600" y2="360" stroke="#0072B2" stroke-width="3" stroke-dasharray="10,5"/>
-  <polygon points="590,350 610,350 600,370" fill="#0072B2"/>
-  
-  <line x1="600" y1="540" x2="600" y2="480" stroke="#0072B2" stroke-width="3" stroke-dasharray="10,5"/>
-  <polygon points="590,490 610,490 600,470" fill="#0072B2"/>
-  
-  <!-- L-module (低层模块) -->
-  <rect x="250" y="360" width="700" height="120" rx="15" fill="#009E73" stroke="#009E73" stroke-width="3"/>
-  <text x="600" y="410" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#fff">
-    低层模块 (L-module)
-  </text>
-  <text x="600" y="450" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#56B4E9">
-    快速、详细的计算 · 局部求解 · 并行处理
-  </text>
-  
-  <!-- Input and Output -->
-  <rect x="50" y="390" width="150" height="60" rx="10" fill="#D55E00" stroke="#D55E00" stroke-width="2"/>
-  <text x="125" y="425" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#fff">
-    问题输入
-  </text>
-  
-  <rect x="1000" y="390" width="150" height="60" rx="10" fill="#56B4E9" stroke="#CC79A7" stroke-width="2"/>
-  <text x="1075" y="425" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#fff">
-    答案输出
-  </text>
-  
-  <!-- Arrows for input/output -->
-  <line x1="200" y1="420" x2="250" y2="420" stroke="#0072B2" stroke-width="3"/>
-  <polygon points="235,410 255,410 245,430" fill="#0072B2"/>
-  
-  <line x1="950" y1="420" x2="1000" y2="420" stroke="#0072B2" stroke-width="3"/>
-  <polygon points="985,410 1005,410 995,430" fill="#0072B2"/>
-  
-  <!-- Process steps -->
-  <rect x="100" y="580" width="1000" height="170" rx="15" fill="#fff" stroke="#CC79A7" stroke-width="2"/>
-  <text x="600" y="620" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#009E73">
-    分层收敛过程
-  </text>
-  
-  <circle cx="200" cy="680" r="30" fill="#56B4E9"/>
-  <text x="200" y="690" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#fff">1</text>
-  <text x="200" y="735" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#009E73">
-    L-module 处理局部
-  </text>
-  
-  <line x1="230" y1="680" x2="320" y2="680" stroke="#0072B2" stroke-width="2"/>
-  <polygon points="305,670 325,670 315,690" fill="#0072B2"/>
-  
-  <circle cx="350" cy="680" r="30" fill="#56B4E9"/>
-  <text x="350" y="690" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#fff">2</text>
-  <text x="350" y="735" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#009E73">
-    H-module 更新策略
-  </text>
-  
-  <line x1="380" y1="680" x2="470" y2="680" stroke="#0072B2" stroke-width="2"/>
-  <polygon points="455,670 475,670 465,690" fill="#0072B2"/>
-  
-  <circle cx="500" cy="680" r="30" fill="#56B4E9"/>
-  <text x="500" y="690" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#fff">3</text>
-  <text x="500" y="735" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#009E73">
-    分配新子问题
-  </text>
-  
-  <line x1="530" y1="680" x2="620" y2="680" stroke="#0072B2" stroke-width="2"/>
-  <polygon points="605,670 625,670 615,690" fill="#0072B2"/>
-  
-  <circle cx="650" cy="680" r="30" fill="#56B4E9"/>
-  <text x="650" y="690" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#fff">4</text>
-  <text x="650" y="735" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#009E73">
-    重置 L-module
-  </text>
-  
-  <line x1="680" y1="680" x2="770" y2="680" stroke="#0072B2" stroke-width="2"/>
-  <polygon points="755,670 775,670 765,690" fill="#0072B2"/>
-  
-  <circle cx="800" cy="680" r="30" fill="#009E73"/>
-  <text x="800" y="690" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#fff">✓</text>
-  <text x="800" y="735" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#009E73">
-    最终收敛
-  </text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">2700 万参数的分层推理模型 HRM 在 ARC-AGI 上达 40.3%，超过参数量大得多的大模型</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">ARC-AGI 准确率对比（%，论文报告值）</text>
+
+  <!-- gridlines at the three reported values: x = 210 + 11*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="443.2" y1="130" x2="443.2" y2="340"/>
+    <line x1="589.5" y1="130" x2="589.5" y2="340"/>
+    <line x1="663.3" y1="130" x2="663.3" y2="340"/>
+  </g>
+
+  <!-- bars -->
+  <rect x="210" y="140" width="453.3" height="26" fill="#D55E00"/>
+  <text x="671" y="158" font-size="12" fill="#555555">40.3%（HRM，27M 参数，无大规模预训练）</text>
+
+  <rect x="210" y="237" width="379.5" height="26" fill="#999999"/>
+  <text x="597" y="255" font-size="12" fill="#555555">34.5%（OpenAI o3-mini-high）</text>
+
+  <rect x="210" y="334" width="233.2" height="26" fill="#999999"/>
+  <text x="451" y="352" font-size="12" fill="#555555">21.2%（Claude 3.7 Sonnet）</text>
+
+  <!-- x axis: ticks only at values stated in text -->
+  <line x1="210" y1="380" x2="700" y2="380" stroke="#1A1B1E" stroke-width="0.75"/>
+  <line x1="210" y1="130" x2="210" y2="380" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="443.2" y1="380" x2="443.2" y2="384"/>
+    <line x1="589.5" y1="380" x2="589.5" y2="384"/>
+    <line x1="663.3" y1="380" x2="663.3" y2="384"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="443.2" y="402">21.2</text>
+    <text x="589.5" y="402">34.5</text>
+    <text x="663.3" y="402">40.3</text>
+  </g>
+  <text x="455" y="428" font-size="14" fill="#1A1B1E" text-anchor="middle">ARC-AGI 准确率（%）</text>
+  <text x="202" y="402" font-size="12" fill="#555555" text-anchor="end">起点</text>
+
+  <!-- panel a note -->
+  <text x="60" y="456" font-size="12" fill="#555555">在「极限数独」「困难迷宫」搜索任务上，最先进 CoT 模型准确率为 0%，HRM 用 1000 个训练样本即接近完美</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="850" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="872" y="104" font-size="15" fill="#1A1B1E">分层收敛机制示意（潜空间推理，不输出文本）</text>
+
+  <!-- H module -->
+  <rect x="950" y="140" width="200" height="76" fill="#F2F2F2" stroke="#555555" stroke-width="1.5"/>
+  <text x="1050" y="172" font-size="14" font-weight="bold" fill="#1A1B1E" text-anchor="middle">高层模块 H-module</text>
+  <text x="1050" y="196" font-size="12" fill="#555555" text-anchor="middle">抽象规划，调整战略</text>
+
+  <!-- L module -->
+  <rect x="950" y="300" width="200" height="76" fill="#FFFFFF" stroke="#D55E00" stroke-width="2"/>
+  <text x="1050" y="332" font-size="14" font-weight="bold" fill="#1A1B1E" text-anchor="middle">低层模块 L-module</text>
+  <text x="1050" y="356" font-size="12" fill="#555555" text-anchor="middle">快速计算，求出局部解</text>
+
+  <!-- down arrow (strategy) -->
+  <g stroke="#555555" stroke-width="1.5" fill="#555555">
+    <line x1="1010" y1="216" x2="1010" y2="293"/>
+    <polygon points="1004,293 1016,293 1010,303"/>
+  </g>
+  <text x="998" y="262" font-size="12" fill="#555555" text-anchor="end">下达精细子任务</text>
+
+  <!-- up arrow (result) -->
+  <g stroke="#555555" stroke-width="1.5" fill="#555555">
+    <line x1="1090" y1="300" x2="1090" y2="223"/>
+    <polygon points="1084,223 1096,223 1090,213"/>
+  </g>
+  <text x="1102" y="262" font-size="12" fill="#555555">检视局部解</text>
+
+  <!-- loop note -->
+  <text x="1050" y="412" font-size="12" fill="#555555" text-anchor="middle">嵌套循环：H-module 相当于让 L-module 重置，</text>
+  <text x="1050" y="430" font-size="12" fill="#555555" text-anchor="middle">避免陷入单一路径，直至分层收敛</text>
+
+  <!-- shared note -->
+  <text x="60" y="498" font-size="12" fill="#555555">灵感来自大脑双系统结构；推理在潜空间完成，替代 CoT 文本。训练成本：专业级数独 2 GPU 小时，ARC-AGI 50-200 GPU 小时；</text>
+  <text x="60" y="516" font-size="12" fill="#555555">潜空间并行处理相比 CoT 逐词生成可能带来约 100 倍推理提速（论文估计口径）</text>
+
+  <!-- footnote -->
+  <text x="60" y="600" font-size="11" fill="#767676">来源：arXiv:2506.21734《Hierarchical Reasoning Model》，Sapient Intelligence，NeurIPS 2025 · 准确率为论文自测口径，未报告误差区间，故未画误差棒</text>
+  <text x="60" y="618" font-size="11" fill="#767676">面板 a 为论文报告值对比 · 面板 b 为论文框架的机制示意（无数值轴，序列/机制口径）· 数独、迷宫「接近完美」为论文定性表述</text>
 </svg>
