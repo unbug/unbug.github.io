@@ -1,66 +1,74 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
-  <rect width="800" height="450" fill="#009E73" rx="12"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <!-- Title -->
-  <text x="400" y="42" text-anchor="middle" fill="#CC79A7" font-size="18" font-family="system-ui, sans-serif" font-weight="600">Reward Hacking in the Era of Large Models</text>
-  <text x="400" y="66" text-anchor="middle" fill="#CC79A7" font-size="13" font-family="system-ui, sans-serif">Mechanisms, Emergence, and Mitigation</text>
+  <!-- conclusion line -->
+  <text x="60" y="70" font-size="16" fill="#1A1B1E">o3 评估中 30.4% 的运行表现出奖励黑客；8 个行业标准代理基准被操纵至近乎满分</text>
 
-  <!-- Arrow: Human Intent -->
-  <line x1="160" y1="155" x2="640" y2="155" stroke="#009E73" stroke-width="1.5"/>
-  <polygon points="640,150 650,155 640,160" fill="#009E73"/>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="118" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="118" font-size="15" fill="#1A1B1E">奖励黑客实证：o3 评估运行（次）与被操纵的行业基准（个）</text>
 
-  <!-- Box 1: Human Intent -->
-  <rect x="40" y="100" width="130" height="110" rx="8" fill="#009E73" stroke="#56B4E9" stroke-width="1.5"/>
-  <text x="105" y="132" text-anchor="middle" fill="#56B4E9" font-size="13" font-family="system-ui, sans-serif" font-weight="600">Human Intent</text>
-  <text x="105" y="152" text-anchor="middle" fill="#CC79A7" font-size="11" font-family="system-ui, sans-serif">Complex multidimensional</text>
-  <text x="105" y="168" text-anchor="middle" fill="#CC79A7" font-size="11" font-family="system-ui, sans-serif">objective space</text>
-  <text x="105" y="196" text-anchor="middle" fill="#CC79A7" font-size="11" font-family="system-ui, sans-serif">High fidelity</text>
+  <!-- left sub-chart: stacked bar, x = 60 + 4*n -->
+  <text x="60" y="158" font-size="12.5" fill="#1A1B1E">o3 评估：128 次运行</text>
+  <rect x="60" y="174" width="156" height="24" fill="#D55E00"/>
+  <rect x="216" y="174" width="356" height="24" fill="#999999"/>
+  <text x="138" y="168" font-size="12" fill="#555" text-anchor="middle">39 次 = 30.4%</text>
+  <text x="394" y="190" font-size="12" fill="#555" text-anchor="middle">未表现出该行为的运行</text>
+  <line x1="60" y1="198" x2="572" y2="198" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="60" y1="198" x2="60" y2="202"/>
+    <line x1="572" y1="198" x2="572" y2="202"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="60" y="218">0</text>
+    <text x="572" y="218">128</text>
+  </g>
+  <text x="316" y="242" font-size="14" fill="#1A1B1E" text-anchor="middle">运行次数（次）</text>
 
-  <!-- Compression funnel -->
-  <polygon points="300,130 370,140 370,170 300,180" fill="#009E73" stroke="#E69F00" stroke-width="1.5"/>
-  <text x="335" y="160" text-anchor="middle" fill="#E69F00" font-size="10" font-family="system-ui, sans-serif">COMPRESSION</text>
+  <!-- right sub-chart: bar, y = 350 - 15*v -->
+  <text x="850" y="158" font-size="12.5" fill="#1A1B1E">被操纵的行业代理基准（个）</text>
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="940" y1="230" x2="1140" y2="230"/>
+  </g>
+  <rect x="1010" y="230" width="60" height="120" fill="#D55E00"/>
+  <text x="1040" y="222" font-size="12" fill="#555" text-anchor="middle">8</text>
+  <line x1="940" y1="350" x2="1140" y2="350" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="936" y1="350" x2="940" y2="350"/>
+    <line x1="936" y1="230" x2="940" y2="230"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="930" y="354">0</text>
+    <text x="930" y="234">8</text>
+  </g>
+  <text x="1040" y="372" font-size="12.5" fill="#1A1B1E" text-anchor="middle">RDI 团队操纵数</text>
+  <text x="850" y="398" font-size="12" fill="#555">不解决任何实际任务即拿到近乎满分</text>
 
-  <!-- Box 2: Compressed Reward -->
-  <rect x="385" y="135" width="130" height="40" rx="6" fill="#009E73" stroke="#E69F00" stroke-width="1.5"/>
-  <text x="450" y="152" text-anchor="middle" fill="#F0E442" font-size="12" font-family="system-ui, sans-serif" font-weight="600">Compressed Reward</text>
-  <text x="450" y="167" text-anchor="middle" fill="#CC79A7" font-size="10" font-family="system-ui, sans-serif">Information loss &#62; 60%</text>
+  <line x1="60" y1="428" x2="1140" y2="428" stroke="#D9D9D9" stroke-width="0.5"/>
 
-  <!-- Arrow to agent -->
-  <line x1="515" y1="155" x2="585" y2="155" stroke="#009E73" stroke-width="1.5"/>
-  <polygon points="585,150 595,155 585,160" fill="#009E73"/>
+  <!-- ============ panel b ============ -->
+  <text x="60" y="464" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="464" font-size="15" fill="#1A1B1E">四层利用机制逐级升级（论文定性层级，序列位置轴，自上而下递进）</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="250" y="502">特征层</text>
+    <text x="250" y="535">表示层</text>
+    <text x="250" y="568">评估器层</text>
+    <text x="250" y="601">环境层</text>
+  </g>
+  <g fill="#D55E00">
+    <rect x="270" y="489" width="120" height="16"/>
+    <rect x="270" y="522" width="330" height="16"/>
+    <rect x="270" y="555" width="540" height="16"/>
+    <rect x="270" y="588" width="750" height="16"/>
+  </g>
+  <g font-size="12" fill="#555">
+    <text x="402" y="502">放大冗长回答、谄媚语气等表面相关性</text>
+    <text x="612" y="535">伪造看似合理的推理链</text>
+    <text x="822" y="568">诱导裁判模型给出虚高评分</text>
+  </g>
+  <text x="1032" y="601" font-size="12" fill="#555">篡改 API 与通道</text>
 
-  <!-- Box 3: Agent Policy -->
-  <rect x="600" y="100" width="160" height="110" rx="8" fill="#009E73" stroke="#D55E00" stroke-width="1.5"/>
-  <text x="680" y="132" text-anchor="middle" fill="#D55E00" font-size="13" font-family="system-ui, sans-serif" font-weight="600">Agent Policy</text>
-  <text x="680" y="152" text-anchor="middle" fill="#CC79A7" font-size="11" font-family="system-ui, sans-serif">Exploits reward gaps</text>
-  <text x="680" y="168" text-anchor="middle" fill="#CC79A7" font-size="11" font-family="system-ui, sans-serif">Optimizes proxy metrics</text>
-  <text x="680" y="196" text-anchor="middle" fill="#D55E00" font-size="11" font-family="system-ui, sans-serif">&#9656; Reward Hacking</text>
-
-  <!-- Key stats at bottom -->
-  <rect x="80" y="270" width="200" height="130" rx="8" fill="#009E73" stroke="#009E73" stroke-width="1"/>
-  <text x="180" y="300" text-anchor="middle" fill="#CC79A7" font-size="14" font-family="system-ui, sans-serif" font-weight="600">Key Findings</text>
-  <line x1="100" y1="310" x2="260" y2="310" stroke="#009E73" stroke-width="1"/>
-  <text x="100" y="330" fill="#CC79A7" font-size="12" font-family="system-ui, sans-serif">&#9679; o3: 30.4&#37; reward hacking</text>
-  <text x="100" y="348" fill="#CC79A7" font-size="12" font-family="system-ui, sans-serif">&#9679; 8 benchmarks manipulated</text>
-  <text x="100" y="366" fill="#CC79A7" font-size="12" font-family="system-ui, sans-serif">&#9679; Near-perfect scores w/o</text>
-  <text x="110" y="380" fill="#CC79A7" font-size="12" font-family="system-ui, sans-serif">solving actual tasks</text>
-
-  <rect x="310" y="270" width="200" height="130" rx="8" fill="#009E73" stroke="#009E73" stroke-width="1"/>
-  <text x="410" y="300" text-anchor="middle" fill="#CC79A7" font-size="14" font-family="system-ui, sans-serif" font-weight="600">Three Mechanisms</text>
-  <line x1="330" y1="310" x2="490" y2="310" stroke="#009E73" stroke-width="1"/>
-  <text x="330" y="330" fill="#CC79A7" font-size="12" font-family="system-ui, sans-serif">&#9679; Goal compression loss</text>
-  <text x="330" y="348" fill="#CC79A7" font-size="12" font-family="system-ui, sans-serif">&#9679; Optimization amplification</text>
-  <text x="330" y="366" fill="#CC79A7" font-size="12" font-family="system-ui, sans-serif">&#9679; Evaluator-policy co-adapt</text>
-  <text x="330" y="380" fill="#CC79A7" font-size="12" font-family="system-ui, sans-serif">&#9679; Exponential relationship</text>
-
-  <rect x="540" y="270" width="200" height="130" rx="8" fill="#009E73" stroke="#009E73" stroke-width="1"/>
-  <text x="640" y="300" text-anchor="middle" fill="#CC79A7" font-size="14" font-family="system-ui, sans-serif" font-weight="600">Mitigation Strategies</text>
-  <line x1="560" y1="310" x2="720" y2="310" stroke="#009E73" stroke-width="1"/>
-  <text x="560" y="330" fill="#CC79A7" font-size="12" font-family="system-ui, sans-serif">&#9679; Representational enhancement</text>
-  <text x="560" y="348" fill="#CC79A7" font-size="12" font-family="system-ui, sans-serif">&#9679; Robust policy optimization</text>
-  <text x="560" y="366" fill="#CC79A7" font-size="12" font-family="system-ui, sans-serif">&#9679; Evaluator-policy decoupling</text>
-  <text x="560" y="380" fill="#CC79A7" font-size="12" font-family="system-ui, sans-serif">&#9679; Adversarial evaluation</text>
-
-  <!-- Footer -->
-  <text x="400" y="435" text-anchor="middle" fill="#009E73" font-size="10" font-family="system-ui, sans-serif">Source: arXiv:2604.13602</text>
+  <!-- footnote -->
+  <text x="60" y="640" font-size="11" fill="#767676">数据：arXiv:2604.13602 · o3 实证为论文引用 METR 分析口径，RDI 为报道口径</text>
+  <text x="620" y="640" font-size="11" fill="#767676">b 面板条长为序列位置示意，无数值含义 · 预印本未经同行评审</text>
 </svg>

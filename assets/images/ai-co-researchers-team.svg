@@ -1,79 +1,54 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#F0F0F0"/>
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#009E73">四个 AI 模型作为共同研究员发表论文并列为共同作者；OpenAI 报告 ChatGPT 每周 840 万条高级科学和数学消息</text>
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">Borras 论文让四个 AI 模型以共同作者身份发表；OpenAI 报告每周 840 万条高级科学消息</text>
 
-  <!-- ============ panel a: roles ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
-  <text x="82" y="104" font-size="15" fill="#009E73">四个模型的分工（论文报告的职责，序列位置轴，非数值刻度）</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">四个 AI 共同研究员的分工</text>
+  <text x="60" y="128" font-size="12" fill="#555">机制示意：论文自述各模型承担的研究环节，非量化统计</text>
 
-  <line x1="100" y1="330" x2="1140" y2="330" stroke="#009E73" stroke-width="0.75"/>
-  <g stroke="#009E73" stroke-width="0.75">
-    <line x1="255" y1="330" x2="255" y2="334"/>
-    <line x1="510" y1="330" x2="510" y2="334"/>
-    <line x1="765" y1="330" x2="765" y2="334"/>
-    <line x1="1020" y1="330" x2="1020" y2="334"/>
+  <g font-size="13" fill="#1A1B1E">
+    <text x="60" y="182">Claude Opus</text>
+    <text x="60" y="242">Gemini Pro</text>
+    <text x="60" y="302">ChatGPT</text>
+    <text x="60" y="362">Manus</text>
   </g>
-  <g>
-    <circle cx="255" cy="242" r="8" fill="#0072B2"/>
-    <text x="255" y="218" font-size="12.5" fill="#009E73" text-anchor="middle">Claude Opus</text>
-    <text x="255" y="266" font-size="12" fill="#555" text-anchor="middle">假设设计与伦理把关</text>
-    <text x="255" y="286" font-size="12" fill="#555" text-anchor="middle">像审稿人挑战假设</text>
-    <text x="255" y="356" font-size="12.5" fill="#009E73" text-anchor="middle">GPQA 分数 0.9</text>
-    <text x="255" y="374" font-size="12" fill="#555" text-anchor="middle">商用模型最高（LLM-Stats，2026 年 2 月）</text>
-
-    <circle cx="510" cy="242" r="8" fill="#0072B2"/>
-    <text x="510" y="218" font-size="12.5" fill="#009E73" text-anchor="middle">Gemini Pro</text>
-    <text x="510" y="266" font-size="12" fill="#555" text-anchor="middle">模式识别与数据分析</text>
-    <text x="510" y="286" font-size="12" fill="#555" text-anchor="middle">23 次迭代中识别混淆变量</text>
-    <text x="510" y="356" font-size="12.5" fill="#009E73" text-anchor="middle">数据集 200 GB</text>
-    <text x="510" y="374" font-size="12" fill="#555" text-anchor="middle">二进制数据集交叉引用公共存储库</text>
-
-    <circle cx="765" cy="242" r="8" fill="#0072B2"/>
-    <text x="765" y="218" font-size="12.5" fill="#009E73" text-anchor="middle">ChatGPT</text>
-    <text x="765" y="266" font-size="12" fill="#555" text-anchor="middle">抽象假设转为代码框架</text>
-    <text x="765" y="286" font-size="12" fill="#555" text-anchor="middle">可执行框架</text>
-
-    <circle cx="1020" cy="242" r="8" fill="#D55E00"/>
-    <text x="1020" y="218" font-size="12.5" fill="#009E73" text-anchor="middle">Manus</text>
-    <text x="1020" y="266" font-size="12" fill="#555" text-anchor="middle">二进制数据流中发现隐藏异常</text>
-    <text x="1020" y="286" font-size="12" fill="#555" text-anchor="middle">发现成为假设核心</text>
+  <g font-size="13" fill="#555">
+    <text x="220" y="182">假设设计与伦理把关，挑战假设并指出方法论缺陷</text>
+    <text x="220" y="242">模式识别与数据分析，交叉引用公共科学存储库</text>
+    <text x="220" y="302">把抽象假设转化为可执行代码框架</text>
+    <text x="220" y="362">在二进制数据流中发现隐藏异常</text>
   </g>
-  <text x="630" y="408" font-size="14" fill="#009E73" text-anchor="middle">四模型构成多智能体批评系统：互相质疑、互相验证（按论文列举顺序排列）</text>
-
-  <!-- ============ panel b: OpenAI report bars ============ -->
-  <text x="60" y="462" font-size="15" font-weight="bold" fill="#009E73">b</text>
-  <text x="82" y="462" font-size="15" fill="#009E73">OpenAI《AI as a Scientific Collaborator》报告的两项周度指标</text>
-
-  <g stroke="#D9D9D9" stroke-width="0.5">
-    <line x1="170" y1="490" x2="600" y2="490"/>
-    <line x1="170" y1="530" x2="600" y2="530"/>
+  <g font-size="12" fill="#767676">
+    <text x="220" y="202">据 LLM-Stats 2026-02 基准，Claude Opus 4.6 GPQA 分数 0.9，为商用模型最高水平</text>
+    <text x="220" y="262">XDA Developers：其在检测 23 次实验迭代中的混淆变量时不可或缺</text>
+    <text x="220" y="322">数据规模：200 GB 二进制数据集</text>
+    <text x="220" y="382">这些发现成为整个假设的核心</text>
   </g>
-  <!-- bars: 正文报告数值同尺度，无数值轴刻度，条/人不同单位 -->
-  <rect x="170" y="494" width="344" height="20" fill="#0072B2"/>
-  <text x="522" y="509" font-size="12" fill="#555">每周 840 万条消息</text>
-  <text x="160" y="509" font-size="12.5" fill="#009E73" text-anchor="end">高级科学和数学消息</text>
 
-  <rect x="170" y="536" width="80" height="20" fill="#0072B2" opacity="0.35"/>
-  <text x="260" y="551" font-size="12" fill="#555">约 130 万用户</text>
-  <text x="160" y="551" font-size="12.5" fill="#009E73" text-anchor="end">高级数学科学主题周用户</text>
+  <!-- collaboration note -->
+  <line x1="60" y1="418" x2="1140" y2="418" stroke="#D9D9D9" stroke-width="0.5"/>
+  <text x="60" y="446" font-size="13" fill="#1A1B1E">协作方式：动态多智能体批评系统——模型间互相质疑、互相验证，分歧通过迭代对话解决，而非人类拍板</text>
+  <text x="60" y="470" font-size="13" fill="#555">组合表现超越仅由人类或单一 AI 组成的方法；GitHub 公开完整源代码，透明记录每个 AI 的具体角色</text>
 
-  <line x1="170" y1="570" x2="560" y2="570" stroke="#009E73" stroke-width="0.75"/>
-  <text x="382" y="614" font-size="12" fill="#555" text-anchor="middle">注：两条形分别为「条」与「人」，正文无数值轴刻度，按正文报告数值同尺度绘制</text>
-  <text x="385" y="630" font-size="12" fill="#555" text-anchor="middle">每月高级科学消息数量增长近 50%</text>
-
-  <!-- ============ panel c ============ -->
-  <text x="660" y="462" font-size="15" font-weight="bold" fill="#009E73">c</text>
-  <text x="682" y="462" font-size="15" fill="#009E73">数学领域进展与发表规范</text>
-  <g font-size="12" fill="#555">
-    <text x="660" y="500">GPT-5.2 Thinking 在 2025 年 AIME 美国数学邀请赛中无需外部工具取得满分</text>
-    <text x="660" y="524">FrontierMath（Google 验证）：解决第 1-3 级中 40.3% 的问题</text>
-    <text x="660" y="548">2026 年初为几个 Erdős 开放问题的解法做出贡献，获数学家 Terence Tao 验证</text>
-    <text x="660" y="572">AlphaFold 3 可预测蛋白质、DNA、RNA 与小分子复合物联合 3D 结构</text>
-    <text x="660" y="602">发表规范：GitHub 公开完整源代码，透明记录每个 AI 的具体角色</text>
+  <!-- ============ panel b ============ -->
+  <text x="60" y="524" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="524" font-size="15" fill="#1A1B1E">OpenAI《AI as a Scientific Collaborator》报告的四项量化指标（数值见图旁标签）</text>
+  <g font-size="12.5" fill="#1A1B1E">
+    <text x="60" y="566">高级科学/数学消息（条/周）</text>
+    <text x="350" y="566">高级科学用户（人/周）</text>
+    <text x="620" y="566">高级科学消息月增速（%）</text>
+    <text x="900" y="566">FrontierMath 解题率（%）</text>
+  </g>
+  <g font-size="20" font-weight="bold" fill="#D55E00">
+    <text x="60" y="604">840 万</text>
+    <text x="350" y="604">130 万</text>
+    <text x="620" y="604">近 50</text>
+    <text x="900" y="604">40.3</text>
   </g>
 
   <!-- footnote -->
-  <text x="60" y="652" font-size="11" fill="#767676">数据：AI Models as Co-Researchers（Zenodo DOI: 10.5281/zenodo.18721271）· OpenAI《AI as a Scientific Collaborator》（2026 年 1 月，论文自测口径）· LLM-Stats 基准（2026 年 2 月）· a 面板为序列位置轴，非数值刻度</text>
+  <text x="60" y="644" font-size="11" fill="#767676">数据：Zenodo DOI 10.5281/zenodo.18721271（论文自述口径）· OpenAI 报告 2026-01 · LLM-Stats 基准 2026-02 ·「首次」为文献记录表述，未经同行评审核验</text>
 </svg>
