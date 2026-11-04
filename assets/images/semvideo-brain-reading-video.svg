@@ -1,172 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
-  <defs>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <filter id="pulseGlow">
-      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <!-- Background -->
-  <rect width="1200" height="630" fill="#0072B2"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">CC2017 与 HCP 两个数据集的 10 个评估指标中，SemVideo 有 8 项超过此前方法</text>
 
-  <!-- Grid lines -->
-  <g opacity="0.15">
-    <path d="M0 315 H1200" stroke="#56B4E9" stroke-width="1"/>
-    <path d="M600 0 V630" stroke="#56B4E9" stroke-width="1"/>
-    <path d="M0 157.5 H1200" stroke="#56B4E9" stroke-width="0.5"/>
-    <path d="M0 472.5 H1200" stroke="#56B4E9" stroke-width="0.5"/>
-    <path d="M300 0 V630" stroke="#56B4E9" stroke-width="0.5"/>
-    <path d="M900 0 V630" stroke="#56B4E9" stroke-width="0.5"/>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">四个维度代表指标：条越长得分越高（论文自测值，数值标于柱旁）</text>
+
+  <!-- horizontal bars: length px = 240*value; no tick axis (正文无刻度数值) -->
+  <line x1="300" y1="130" x2="300" y2="382" stroke="#1A1B1E" stroke-width="0.75"/>
+  <text x="300" y="400" font-size="12" fill="#767676" text-anchor="middle">条形起点即得分最低端，数值标于条旁</text>
+
+  <text x="288" y="162" font-size="12.5" fill="#1A1B1E" text-anchor="end">2-way-V（语义）</text>
+  <rect x="300" y="148" width="207.6" height="20" fill="#0072B2"/>
+  <text x="515" y="162" font-size="12" fill="#555">0.865</text>
+
+  <text x="288" y="210" font-size="12.5" fill="#1A1B1E" text-anchor="end">50-way-V（语义）</text>
+  <rect x="300" y="196" width="63.36" height="20" fill="#0072B2"/>
+  <text x="371" y="210" font-size="12" fill="#555">0.264</text>
+
+  <text x="288" y="258" font-size="12.5" fill="#1A1B1E" text-anchor="end">Hue-PCC（像素）</text>
+  <rect x="300" y="244" width="203.76" height="20" fill="#D55E00"/>
+  <text x="511" y="258" font-size="12" fill="#555">0.849</text>
+
+  <text x="288" y="306" font-size="12.5" fill="#1A1B1E" text-anchor="end">CLIP 相似度（时空）</text>
+  <rect x="300" y="292" width="126.24" height="20" fill="#D55E00"/>
+  <text x="434" y="306" font-size="12" fill="#555">0.526</text>
+
+  <text x="288" y="354" font-size="12.5" fill="#1A1B1E" text-anchor="end">EPE（时空，误差）</text>
+  <rect x="300" y="340" width="240" height="20" fill="#999999"/>
+  <rect x="300" y="340" width="12.48" height="20" fill="#000000"/>
+  <text x="548" y="354" font-size="12" fill="#555">4.788</text>
+  <text x="300" y="428" font-size="12" fill="#555">EPE 为误差指标（越低越好）：灰色全长为对比标尺，黑色短段为实测值等比长度</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="920" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="942" y="104" font-size="15" fill="#1A1B1E">模块与脑区激活（定性）</text>
+  <g font-size="12.5" fill="#1A1B1E">
+    <text x="920" y="146">静态锚点</text>
+    <text x="920" y="192">运动叙事</text>
+    <text x="920" y="238">整体概要</text>
   </g>
-
-  <!-- Floating particles -->
-  <g fill="#56B4E9" opacity="0.6">
-    <circle cx="100" cy="100" r="2">
-      <animate attributeName="cy" values="100;80;100" dur="3s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="250" cy="150" r="1.5">
-      <animate attributeName="cy" values="150;130;150" dur="2.5s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="1050" cy="120" r="2">
-      <animate attributeName="cy" values="120;100;120" dur="3.5s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="950" cy="500" r="1.5">
-      <animate attributeName="cy" values="500;480;500" dur="2.8s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="150" cy="520" r="2">
-      <animate attributeName="cy" values="520;500;520" dur="3.2s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="1100" cy="350" r="1.5">
-      <animate attributeName="cy" values="350;330;350" dur="2.7s" repeatCount="indefinite"/>
-    </circle>
+  <g font-size="12" fill="#555">
+    <text x="920" y="168">主要激活视觉皮层</text>
+    <text x="920" y="214">激活 MT、MST 运动区</text>
+    <text x="920" y="260">视觉与运动区均衡激活</text>
   </g>
+  <text x="920" y="304" font-size="12" fill="#555">模块分工与人脑视觉处理机制吻合，</text>
+  <text x="920" y="324" font-size="12" fill="#555">提示人脑提取语义与运动信息、</text>
+  <text x="920" y="344" font-size="12" fill="#555">而非逐像素处理视频</text>
 
-  <!-- Brain glow -->
-  <circle cx="600" cy="315" r="180" fill="#56B4E9" filter="url(#pulseGlow)">
-    <animate attributeName="r" values="180;195;180" dur="3s" repeatCount="indefinite"/>
-  </circle>
-
-  <!-- Stylized brain -->
-  <g transform="translate(600, 315)" filter="url(#glow)">
-    <ellipse cx="0" cy="0" rx="120" ry="95" fill="#CC79A7" opacity="0.9"/>
-    <path d="M-100 -30 Q-80 -60 -50 -45 Q-20 -70 10 -50 Q40 -75 70 -50 Q95 -30 100 -10" 
-          stroke="#CC79A7" stroke-width="3" fill="none" opacity="0.8"/>
-    <path d="M-95 0 Q-70 -20 -40 -5 Q-10 -25 20 -10 Q50 -30 80 -10 Q95 5 95 20" 
-          stroke="#CC79A7" stroke-width="3" fill="none" opacity="0.8"/>
-    <path d="M-90 30 Q-60 10 -30 25 Q0 5 30 20 Q60 5 85 25 Q95 40 90 50" 
-          stroke="#CC79A7" stroke-width="3" fill="none" opacity="0.8"/>
-    <path d="M-70 55 Q-35 40 0 50 Q35 35 65 50" 
-          stroke="#CC79A7" stroke-width="3" fill="none" opacity="0.8"/>
-  </g>
-
-  <!-- Three semantic layers (left side) -->
-  <g transform="translate(180, 315)">
-    <rect x="-60" y="-140" width="120" height="70" rx="10" fill="#009E73" stroke="#56B4E9" stroke-width="2" filter="url(#glow)"/>
-    <text x="0" y="-100" text-anchor="middle" fill="#56B4E9" font-size="14" font-family="Arial, sans-serif">静态锚点</text>
-    <text x="0" y="-80" text-anchor="middle" fill="#56B4E9" font-size="11" font-family="Arial, sans-serif">Static Anchor</text>
-    <circle cx="0" cy="-125" r="6" fill="#56B4E9">
-      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-
-  <g transform="translate(180, 315)">
-    <rect x="-60" y="-35" width="120" height="70" rx="10" fill="#009E73" stroke="#009E73" stroke-width="2" filter="url(#glow)"/>
-    <text x="0" y="5" text-anchor="middle" fill="#009E73" font-size="14" font-family="Arial, sans-serif">运动叙事</text>
-    <text x="0" y="25" text-anchor="middle" fill="#56B4E9" font-size="11" font-family="Arial, sans-serif">Motion Narrative</text>
-    <circle cx="0" cy="-20" r="6" fill="#009E73">
-      <animate attributeName="opacity" values="1;0.4;1" dur="2.2s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-
-  <g transform="translate(180, 315)">
-    <rect x="-60" y="70" width="120" height="70" rx="10" fill="#009E73" stroke="#E69F00" stroke-width="2" filter="url(#glow)"/>
-    <text x="0" y="110" text-anchor="middle" fill="#E69F00" font-size="14" font-family="Arial, sans-serif">整体概要</text>
-    <text x="0" y="130" text-anchor="middle" fill="#F0E442" font-size="11" font-family="Arial, sans-serif">Global Summary</text>
-    <circle cx="0" cy="85" r="6" fill="#E69F00">
-      <animate attributeName="opacity" values="1;0.4;1" dur="2.4s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-
-  <!-- Arrows from semantic layers to brain -->
-  <g stroke="url(#electricGrad)" stroke-width="3" fill="none" stroke-dasharray="8,4" filter="url(#glow)">
-    <path d="M240 200 Q400 220 480 260">
-      <animate attributeName="stroke-dashoffset" values="24;0" dur="1.5s" repeatCount="indefinite"/>
-    </path>
-    <path d="M240 315 Q400 315 480 315">
-      <animate attributeName="stroke-dashoffset" values="24;0" dur="1.7s" repeatCount="indefinite"/>
-    </path>
-    <path d="M240 430 Q400 410 480 370">
-      <animate attributeName="stroke-dashoffset" values="24;0" dur="1.9s" repeatCount="indefinite"/>
-    </path>
-  </g>
-
-  <!-- Video output (right side) -->
-  <g transform="translate(1020, 315)">
-    <rect x="-60" y="-90" width="120" height="180" rx="15" fill="#009E73" stroke="#CC79A7" stroke-width="3" filter="url(#glow)"/>
-    <rect x="-45" y="-70" width="90" height="55" rx="5" fill="#009E73" stroke="#CC79A7" stroke-width="1"/>
-    <rect x="-45" y="-5" width="90" height="55" rx="5" fill="#009E73" stroke="#CC79A7" stroke-width="1"/>
-    <rect x="-45" y="60" width="90" height="20" rx="5" fill="#009E73" stroke="#CC79A7" stroke-width="1"/>
-    
-    <text x="0" y="-38" text-anchor="middle" fill="#CC79A7" font-size="10" font-family="Arial, sans-serif">Frame 1</text>
-    <text x="0" y="27" text-anchor="middle" fill="#CC79A7" font-size="10" font-family="Arial, sans-serif">Frame 2</text>
-    <text x="0" y="75" text-anchor="middle" fill="#CC79A7" font-size="9" font-family="Arial, sans-serif">...</text>
-    
-    <circle cx="0" cy="-95" r="6" fill="#CC79A7">
-      <animate attributeName="opacity" values="1;0.4;1" dur="1.8s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-
-  <!-- Arrow from brain to video -->
-  <g stroke="#CC79A7" stroke-width="4" fill="none" stroke-dasharray="10,5" filter="url(#glow)">
-    <path d="M720 315 Q870 315 960 315">
-      <animate attributeName="stroke-dashoffset" values="30;0" dur="1.6s" repeatCount="indefinite"/>
-    </path>
-  </g>
-
-  <!-- Title -->
-  <text x="600" y="70" text-anchor="middle" fill="#F0F0F0" font-size="36" font-family="Arial, sans-serif" font-weight="bold" filter="url(#glow)">
-    SemVideo: 从大脑重建视频
-  </text>
-  <text x="600" y="105" text-anchor="middle" fill="#56B4E9" font-size="18" font-family="Arial, sans-serif">
-    Hierarchical Semantic Guidance · fMRI · Brain-Computer Interface
-  </text>
-
-  <!-- Three key components labels -->
-  <g transform="translate(370, 530)">
-    <rect x="-110" y="-25" width="220" height="50" rx="8" fill="#009E73" opacity="0.8"/>
-    <text x="0" y="-5" text-anchor="middle" fill="#56B4E9" font-size="12" font-family="Arial, sans-serif">SAD · MAD · CVR</text>
-    <text x="0" y="12" text-anchor="middle" fill="#56B4E9" font-size="10" font-family="Arial, sans-serif">三大核心组件</text>
-  </g>
-
-  <!-- Neural activity sparks around brain -->
-  <g fill="#56B4E9">
-    <circle cx="520" cy="240" r="3">
-      <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="680" cy="250" r="3">
-      <animate attributeName="opacity" values="0;1;0" dur="1.4s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="540" cy="390" r="3">
-      <animate attributeName="opacity" values="1;0;1" dur="1.6s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="660" cy="380" r="3">
-      <animate attributeName="opacity" values="0;1;0" dur="1.3s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="490" cy="315" r="3">
-      <animate attributeName="opacity" values="1;0;1" dur="1.5s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="710" cy="315" r="3">
-      <animate attributeName="opacity" values="0;1;0" dur="1.7s" repeatCount="indefinite"/>
-    </circle>
-  </g>
+  <!-- footnote -->
+  <text x="60" y="560" font-size="11" fill="#767676">数据：arXiv:2602.21819（CC2017 与 HCP 公开数据集，论文自测口径）· 四值均为 SemVideo 成绩，其中 Hue-PCC、CLIP 相似度、EPE 为论文报告各方法最优</text>
+  <text x="60" y="580" font-size="11" fill="#767676">正文未给出坐标轴刻度数值，panel a 不画数值轴、条长按数值等比绘制 · 预印本未经同行评审</text>
 </svg>

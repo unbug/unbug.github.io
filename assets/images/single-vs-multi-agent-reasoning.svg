@@ -1,92 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
-  <rect width="600" height="400" fill="#009E73" rx="12"/>
-  
-  <!-- Grid pattern -->
-  <defs>
-    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#009E73" stroke-width="0.5" opacity="0.3"/>
-    </pattern>
-  </defs>
-  <rect width="600" height="400" fill="url(#grid)"/>
-  
-  <!-- Left side: Single Agent -->
-  <text x="150" y="50" fill="#56B4E9" font-size="18" font-weight="bold" text-anchor="middle" font-family="system-ui">Single Agent (SAS)</text>
-  
-  <!-- Central brain/network node -->
-  <circle cx="150" cy="200" r="80" fill="none" stroke="#56B4E9" stroke-width="2" opacity="0.6"/>
-  <circle cx="150" cy="200" r="60" fill="none" stroke="#56B4E9" stroke-width="1.5" opacity="0.4"/>
-  <circle cx="150" cy="200" r="40" fill="none" stroke="#56B4E9" stroke-width="1" opacity="0.3"/>
-  
-  <!-- Central node -->
-  <circle cx="150" cy="200" r="18" fill="#56B4E9" opacity="0.8"/>
-  
-  <!-- Inner connections -->
-  <line x1="150" y1="200" x2="120" y2="170" stroke="#56B4E9" stroke-width="1.5" opacity="0.5"/>
-  <line x1="150" y1="200" x2="180" y2="170" stroke="#56B4E9" stroke-width="1.5" opacity="0.5"/>
-  <line x1="150" y1="200" x2="120" y2="230" stroke="#56B4E9" stroke-width="1.5" opacity="0.5"/>
-  <line x1="150" y1="200" x2="180" y2="230" stroke="#56B4E9" stroke-width="1.5" opacity="0.5"/>
-  
-  <!-- Satellites -->
-  <circle cx="120" cy="170" r="8" fill="#56B4E9" opacity="0.6"/>
-  <circle cx="180" cy="170" r="8" fill="#56B4E9" opacity="0.6"/>
-  <circle cx="120" cy="230" r="8" fill="#56B4E9" opacity="0.6"/>
-  <circle cx="180" cy="230" r="8" fill="#56B4E9" opacity="0.6"/>
-  
-  <!-- Equal sign in center -->
-  <text x="300" y="195" fill="#CC79A7" font-size="36" font-weight="bold" text-anchor="middle">=</text>
-  <text x="300" y="225" fill="#CC79A7" font-size="12" font-weight="bold" text-anchor="middle" font-family="system-ui" opacity="0.6">Normalized Compute</text>
-  
-  <!-- Right side: Multi Agent -->
-  <text x="450" y="50" fill="#56B4E9" font-size="18" font-weight="bold" text-anchor="middle" font-family="system-ui">Multi Agent (MAS)</text>
-  
-  <!-- Multiple small nodes with cross connections -->
-  <!-- Top row -->
-  <circle cx="380" cy="100" r="6" fill="#56B4E9" opacity="0.6"/>
-  <circle cx="450" cy="80" r="6" fill="#56B4E9" opacity="0.6"/>
-  <circle cx="520" cy="100" r="6" fill="#56B4E9" opacity="0.6"/>
-  <!-- Middle row -->
-  <circle cx="400" cy="140" r="6" fill="#56B4E9" opacity="0.6"/>
-  <circle cx="450" cy="140" r="6" fill="#56B4E9" opacity="0.6"/>
-  <circle cx="500" cy="140" r="6" fill="#56B4E9" opacity="0.6"/>
-  <!-- Bottom row -->
-  <circle cx="390" cy="240" r="6" fill="#56B4E9" opacity="0.6"/>
-  <circle cx="450" cy="260" r="6" fill="#56B4E9" opacity="0.6"/>
-  <circle cx="510" cy="240" r="6" fill="#56B4E9" opacity="0.6"/>
-  <!-- Extra nodes -->
-  <circle cx="420" cy="200" r="6" fill="#56B4E9" opacity="0.4"/>
-  <circle cx="480" cy="200" r="6" fill="#56B4E9" opacity="0.4"/>
-  <circle cx="450" cy="320" r="6" fill="#56B4E9" opacity="0.4"/>
-  
-  <!-- Cross connections between MAS nodes (information flow) -->
-  <line x1="380" y1="100" x2="450" y2="80" stroke="#56B4E9" stroke-width="0.8" opacity="0.3"/>
-  <line x1="450" y1="80" x2="520" y2="100" stroke="#56B4E9" stroke-width="0.8" opacity="0.3"/>
-  <line x1="380" y1="100" x2="400" y2="140" stroke="#56B4E9" stroke-width="0.8" opacity="0.3"/>
-  <line x1="450" y1="80" x2="450" y2="140" stroke="#56B4E9" stroke-width="0.8" opacity="0.3"/>
-  <line x1="520" y1="100" x2="500" y2="140" stroke="#56B4E9" stroke-width="0.8" opacity="0.3"/>
-  <line x1="400" y1="140" x2="450" y2="140" stroke="#56B4E9" stroke-width="0.8" opacity="0.3"/>
-  <line x1="450" y1="140" x2="500" y2="140" stroke="#56B4E9" stroke-width="0.8" opacity="0.3"/>
-  <line x1="400" y1="140" x2="420" y2="200" stroke="#56B4E9" stroke-width="0.8" opacity="0.2"/>
-  <line x1="450" y1="140" x2="420" y2="200" stroke="#56B4E9" stroke-width="0.8" opacity="0.2"/>
-  <line x1="450" y1="140" x2="480" y2="200" stroke="#56B4E9" stroke-width="0.8" opacity="0.2"/>
-  <line x1="500" y1="140" x2="480" y2="200" stroke="#56B4E9" stroke-width="0.8" opacity="0.2"/>
-  <line x1="390" y1="240" x2="420" y2="200" stroke="#56B4E9" stroke-width="0.8" opacity="0.2"/>
-  <line x1="450" y1="260" x2="420" y2="200" stroke="#56B4E9" stroke-width="0.8" opacity="0.2"/>
-  <line x1="450" y1="260" x2="480" y2="200" stroke="#56B4E9" stroke-width="0.8" opacity="0.2"/>
-  <line x1="510" y1="240" x2="480" y2="200" stroke="#56B4E9" stroke-width="0.8" opacity="0.2"/>
-  
-  <!-- DPI constraint arrow on right -->
-  <path d="M 520 300 Q 500 280 480 270" stroke="#D55E00" stroke-width="1.5" fill="none" opacity="0.7" marker-end="url(#arrowhead)"/>
-  <text x="530" y="290" fill="#D55E00" font-size="11" font-family="system-ui" opacity="0.8">DPI: I(X;Z) ≤ I(X;Y)</text>
-  
-  <!-- Arrow marker -->
-  <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#D55E00" opacity="0.7"/>
-    </marker>
-  </defs>
-  
-  <!-- Bottom label -->
-  <text x="300" y="370" fill="#CC79A7" font-size="13" text-anchor="middle" font-family="system-ui">
-    Data Processing Inequality: Chain processing cannot increase mutual information
-  </text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">token 预算归一化后，单 Agent 系统匹敌甚至反超此前报告优势的多 Agent 系统</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">数据处理不等式：链式处理不增加互信息 I(X;Z) ≤ I(X;Y)</text>
+
+  <!-- chain boxes -->
+  <rect x="90" y="170" width="170" height="80" fill="none" stroke="#1A1B1E" stroke-width="0.75"/>
+  <text x="175" y="204" font-size="14" fill="#1A1B1E" text-anchor="middle">初始输入 X</text>
+  <text x="175" y="228" font-size="12" fill="#555" text-anchor="middle">问题与全部上下文</text>
+
+  <line x1="260" y1="210" x2="390" y2="210" stroke="#555" stroke-width="1.5"/>
+  <polygon points="390,210 378,205 378,215" fill="#555"/>
+  <text x="325" y="196" font-size="12" fill="#555" text-anchor="middle">Agent 1 输出</text>
+
+  <rect x="390" y="170" width="170" height="80" fill="none" stroke="#555" stroke-width="0.75"/>
+  <text x="475" y="204" font-size="14" fill="#1A1B1E" text-anchor="middle">中间输出 Y</text>
+  <text x="475" y="228" font-size="12" fill="#555" text-anchor="middle">是 X 的函数</text>
+
+  <line x1="560" y1="210" x2="690" y2="210" stroke="#555" stroke-width="1.5"/>
+  <polygon points="690,210 678,205 678,215" fill="#555"/>
+  <text x="625" y="196" font-size="12" fill="#555" text-anchor="middle">后续 Agent 输出</text>
+
+  <rect x="690" y="170" width="170" height="80" fill="none" stroke="#555" stroke-width="0.75"/>
+  <text x="775" y="204" font-size="14" fill="#1A1B1E" text-anchor="middle">最终输出 Z</text>
+  <text x="775" y="228" font-size="12" fill="#555" text-anchor="middle">仍是 X 的函数</text>
+
+  <!-- unbounded chain hint -->
+  <line x1="860" y1="210" x2="940" y2="210" stroke="#999" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <polygon points="940,210 928,205 928,215" fill="#999"/>
+  <text x="900" y="196" font-size="12" fill="#767676" text-anchor="middle">任意多级</text>
+
+  <!-- monotonic info strip -->
+  <text x="90" y="300" font-size="13" fill="#1A1B1E">互信息沿链不增：</text>
+  <rect x="250" y="286" width="300" height="14" fill="#D55E00"/>
+  <text x="560" y="298" font-size="12" fill="#555">I(X;Y)</text>
+  <rect x="250" y="312" width="225" height="14" fill="#999999"/>
+  <text x="485" y="324" font-size="12" fill="#555">I(X;Z) ≤ I(X;Y)</text>
+  <text x="90" y="360" font-size="12" fill="#555">多 Agent 信息流是链式处理，增加级数不提高信息上限；</text>
+  <text x="90" y="380" font-size="12" fill="#555">SAS 直接处理 X，与 MAS 面对同一信息上限。</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="90" y="436" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="112" y="436" font-size="15" fill="#1A1B1E">对比实验设计口径（多跳推理任务）</text>
+  <g font-size="12" fill="#555">
+    <text x="90" y="468">· MAS 总 token 数与 SAS 限制在同一预算范围内，控制计算量混淆</text>
+    <text x="90" y="492">· 归一化后 SAS 匹敌 MAS，部分任务上更优</text>
+    <text x="90" y="516">· 此前报道的架构增益主要来自 token 数量差异，而非架构本身</text>
+  </g>
+
+  <!-- footnote -->
+  <text x="60" y="560" font-size="11" fill="#767676">依据：arXiv:2604.15891（斯坦福大学，多跳推理任务对比实验，论文自测口径）· 正文以定性结论报告归一化对比结果、未给出逐任务数值，</text>
+  <text x="60" y="580" font-size="11" fill="#767676">故本图为机制与实验设计示意，不含性能数值轴 · 预印本未经同行评审</text>
 </svg>
