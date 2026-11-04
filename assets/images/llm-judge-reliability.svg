@@ -1,83 +1,113 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
-  <rect width="600" height="400" fill="#009E73" rx="12"/>
-  
-  <!-- Grid pattern -->
-  <defs>
-    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#009E73" stroke-width="0.5" opacity="0.3"/>
-    </pattern>
-  </defs>
-  <rect width="600" height="400" fill="url(#grid)"/>
-  
-  <!-- Title -->
-  <text x="300" y="45" fill="#56B4E9" font-size="16" font-weight="bold" text-anchor="middle" font-family="system-ui">LLM Judge Reliability: Transitivity Violations</text>
-  
-  <!-- Triangle: A>B>C>A cycle (transitivity violation) -->
-  <text x="300" y="100" fill="#CC79A7" font-size="13" text-anchor="middle" font-family="system-ui">Directed 3-Cycle Violation</text>
-  
-  <!-- Triangle vertices -->
-  <circle cx="300" cy="160" r="22" fill="#56B4E9" opacity="0.3" stroke="#56B4E9" stroke-width="1.5"/>
-  <text x="300" y="165" fill="#CC79A7" font-size="18" font-weight="bold" text-anchor="middle">A</text>
-  
-  <circle cx="400" cy="270" r="22" fill="#56B4E9" opacity="0.3" stroke="#56B4E9" stroke-width="1.5"/>
-  <text x="400" y="275" fill="#CC79A7" font-size="18" font-weight="bold" text-anchor="middle">B</text>
-  
-  <circle cx="200" cy="270" r="22" fill="#56B4E9" opacity="0.3" stroke="#56B4E9" stroke-width="1.5"/>
-  <text x="200" y="275" fill="#CC79A7" font-size="18" font-weight="bold" text-anchor="middle">C</text>
-  
-  <!-- Arrow edges (directed) -->
-  <!-- A -> B -->
-  <path d="M 315 175 L 385 255" stroke="#56B4E9" stroke-width="2" opacity="0.8" marker-end="url(#arrowBlue)"/>
-  <text x="365" y="215" fill="#56B4E9" font-size="12" text-anchor="middle" font-family="system-ui" opacity="0.8">A &gt; B</text>
-  
-  <!-- B -> C -->
-  <path d="M 385 255 L 215 255" stroke="#56B4E9" stroke-width="2" opacity="0.8" marker-end="url(#arrowBlue)"/>
-  <text x="300" y="250" fill="#56B4E9" font-size="12" text-anchor="middle" font-family="system-ui" opacity="0.8">B &gt; C</text>
-  
-  <!-- C -> A (violation!) -->
-  <path d="M 215 255 L 285 175" stroke="#D55E00" stroke-width="2.5" opacity="0.9" marker-end="url(#arrowRed)" stroke-dasharray="6,3"/>
-  <text x="235" y="215" fill="#D55E00" font-size="12" text-anchor="middle" font-family="system-ui" opacity="0.9" font-weight="bold">C &gt; A ✗</text>
-  
-  <!-- Red violation highlight -->
-  <circle cx="300" cy="220" r="50" fill="#D55E00" opacity="0.05"/>
-  <text x="300" y="225" fill="#D55E00" font-size="11" text-anchor="middle" font-family="system-ui" opacity="0.7">Transitivity Violation</text>
-  
-  <!-- Arrow markers -->
-  <defs>
-    <marker id="arrowBlue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#56B4E9" opacity="0.8"/>
-    </marker>
-    <marker id="arrowRed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#D55E00" opacity="0.9"/>
-    </marker>
-  </defs>
-  
-  <!-- Conformal prediction set visualization -->
-  <text x="300" y="330" fill="#CC79A7" font-size="13" text-anchor="middle" font-family="system-ui">Conformal Prediction Set Width as Reliability Indicator</text>
-  
-  <!-- Width 1 (certain) -->
-  <rect x="140" y="345" width="80" height="20" rx="4" fill="#56B4E9" opacity="0.3" stroke="#56B4E9" stroke-width="1"/>
-  <text x="180" y="359" fill="#CC79A7" font-size="10" text-anchor="middle" font-family="system-ui">Width=1</text>
-  <text x="180" y="380" fill="#56B4E9" font-size="10" text-anchor="middle" font-family="system-ui">Certain</text>
-  
-  <!-- Width 3 (moderate) -->
-  <rect x="260" y="340" width="80" height="25" rx="4" fill="#56B4E9" opacity="0.2" stroke="#56B4E9" stroke-width="1" stroke-dasharray="3,2"/>
-  <text x="300" y="355" fill="#CC79A7" font-size="10" text-anchor="middle" font-family="system-ui">Width=3</text>
-  <text x="300" y="380" fill="#56B4E9" font-size="10" text-anchor="middle" font-family="system-ui">Moderate</text>
-  
-  <!-- Width 5 (uncertain) -->
-  <rect x="380" y="335" width="80" height="35" rx="4" fill="#D55E00" opacity="0.15" stroke="#D55E00" stroke-width="1" stroke-dasharray="4,2"/>
-  <text x="420" y="355" fill="#CC79A7" font-size="10" text-anchor="middle" font-family="system-ui">Width=5</text>
-  <text x="420" y="380" fill="#D55E00" font-size="10" text-anchor="middle" font-family="system-ui">Uncertain</text>
-  
-  <!-- Correlation arrow -->
-  <path d="M 180 378 L 420 378" stroke="#CC79A7" stroke-width="0.5" opacity="0.3" marker-end="url(#arrowGray)"/>
-  <text x="300" y="375" fill="#CC79A7" font-size="9" text-anchor="middle" font-family="system-ui">rs = +0.576</text>
-  
-  <!-- Arrow marker for gray -->
-  <defs>
-    <marker id="arrowGray" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#CC79A7" opacity="0.3"/>
-    </marker>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">聚合违规率仅 0.8% 至 4.1%，但 33% 至 67% 的文档至少触发一次三元环违规</text>
+
+  <!-- ============ panel a: dumbbell, 4 judges ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">含三元环违规的文档占比（%，实心为下限、空心为上限）</text>
+
+  <!-- grid vertical, linear value axis x = 300 + 12*(v-33) -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="420" y1="126" x2="420" y2="292"/>
+    <line x1="540" y1="126" x2="540" y2="292"/>
+    <line x1="660" y1="126" x2="660" y2="292"/>
+  </g>
+
+  <!-- rows y = 150/190/230/270; y-axis = 4 judges (论文未公开裁判名称与逐裁判数值) -->
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="288" y="155">裁判一</text>
+    <text x="288" y="195">裁判二</text>
+    <text x="288" y="235">裁判三</text>
+    <text x="288" y="275">裁判四</text>
+  </g>
+  <g stroke="#999999" stroke-width="1.5">
+    <line x1="336" y1="150" x2="504" y2="150"/>
+    <line x1="444" y1="190" x2="612" y2="190"/>
+    <line x1="552" y1="230" x2="720" y2="230"/>
+    <line x1="660" y1="270" x2="780" y2="270"/>
+  </g>
+  <g fill="#999999">
+    <circle cx="336" cy="150" r="5"/>
+    <circle cx="444" cy="190" r="5"/>
+    <circle cx="552" cy="230" r="5"/>
+    <circle cx="660" cy="270" r="5"/>
+  </g>
+  <g fill="none" stroke="#999999" stroke-width="1.5">
+    <circle cx="504" cy="150" r="5"/>
+    <circle cx="612" cy="190" r="5"/>
+    <circle cx="720" cy="230" r="5"/>
+    <circle cx="780" cy="270" r="5"/>
+  </g>
+  <text x="800" y="120" font-size="12" fill="#555">正文仅报告范围 33% 至 67%，</text>
+  <text x="800" y="138" font-size="12" fill="#555">未公开逐裁判数值，各行宽度为示意</text>
+
+  <!-- aggregate reference: 0.8-4.1, left of axis origin -->
+  <polygon points="300,342 270,352 300,362" fill="#999999"/>
+  <text x="312" y="357" font-size="12.5" fill="#1A1B1E">聚合口径的三元环违规率仅 0.8% 至 4.1%，在轴起点之外、指向原点方向</text>
+
+  <!-- value axis -->
+  <line x1="300" y1="300" x2="780" y2="300" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="300" y1="300" x2="300" y2="304"/>
+    <line x1="780" y1="300" x2="780" y2="304"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="300" y="322">33</text>
+    <text x="780" y="322">67</text>
+  </g>
+  <text x="540" y="322" font-size="12" fill="#555" text-anchor="middle">轴为线性比例，刻度仅标报告区间两端</text>
+  <text x="540" y="348" font-size="14" fill="#1A1B1E" text-anchor="middle">含违规文档占比（%）</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="850" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="872" y="104" font-size="15" fill="#1A1B1E">各评估维度的平均预测集大小（分）</text>
+
+  <!-- horizontal bars: linear x = 940 + 38*(v-1); bars start at scale origin 1 分 -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="940" y1="130" x2="940" y2="292"/>
+    <line x1="1016" y1="130" x2="1016" y2="292"/>
+    <line x1="1092" y1="130" x2="1092" y2="292"/>
+  </g>
+
+  <text x="930" y="159" font-size="12.5" fill="#1A1B1E" text-anchor="end">相关性</text>
+  <rect x="940" y="145" width="76" height="18" fill="#D55E00"/>
+  <line x1="1016" y1="142" x2="1016" y2="166" stroke="#D55E00" stroke-width="1.5"/>
+  <text x="1024" y="159" font-size="12" fill="#555">约 3.0</text>
+
+  <text x="930" y="219" font-size="12.5" fill="#1A1B1E" text-anchor="end">连贯性</text>
+  <rect x="940" y="205" width="110.2" height="18" fill="#D55E00"/>
+  <line x1="1050.2" y1="202" x2="1050.2" y2="226" stroke="#D55E00" stroke-width="1.5"/>
+  <text x="1058" y="219" font-size="12" fill="#555">约 3.9</text>
+
+  <text x="930" y="279" font-size="12.5" fill="#1A1B1E" text-anchor="end">流畅性／一致性</text>
+  <rect x="940" y="265" width="148.2" height="18" fill="#D55E00"/>
+  <line x1="1088.2" y1="262" x2="1088.2" y2="286" stroke="#D55E00" stroke-width="1.5"/>
+  <text x="1096" y="279" font-size="12" fill="#555">约 4.9</text>
+
+  <line x1="930" y1="300" x2="1100" y2="300" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="940" y1="300" x2="940" y2="304"/>
+    <line x1="1016" y1="300" x2="1016" y2="304"/>
+    <line x1="1092" y1="300" x2="1092" y2="304"/>
+  </g>
+  <text x="940" y="322" font-size="12" fill="#555" text-anchor="middle">起点</text>
+  <text x="1016" y="322" font-size="12" fill="#555" text-anchor="middle">中点</text>
+  <text x="1092" y="322" font-size="12" fill="#555" text-anchor="middle">终点</text>
+  <text x="1016" y="348" font-size="14" fill="#1A1B1E" text-anchor="middle">平均预测集大小（分）</text>
+  <text x="1016" y="370" font-size="12" fill="#555" text-anchor="middle">轴为量表 1 至 5 分的线性比例</text>
+
+  <!-- panel b notes -->
+  <text x="850" y="398" font-size="12" fill="#555">宽度越大越不可靠：与不可靠性的</text>
+  <text x="850" y="416" font-size="12" fill="#555">Spearman 相关系数 r_s = +0.576（N=1,918）；</text>
+  <text x="850" y="434" font-size="12" fill="#555">4 个裁判的宽度稳定相关，r̄ = 0.32 至 0.38</text>
+
+  <!-- shared takeaway -->
+  <text x="60" y="440" font-size="12" fill="#555">宽度为 1 表示确定性评估，宽度接近 5 表示裁判几乎没有判断力；违规高度集中在高不确定性的边缘案例上，</text>
+  <text x="60" y="458" font-size="12" fill="#555">单个文档的三元环数量与平均预测集宽度正相关，两种独立诊断指向同一批不可靠文档</text>
+
+  <!-- footnote -->
+  <text x="60" y="600" font-size="11" fill="#767676">数据：arXiv:2604.15302（SummEval 数据集，1,918 份文档 × 4 个裁判模型，成对比较共 40,320 次 API 调用）</text>
+  <text x="60" y="618" font-size="11" fill="#767676">区间与「约」值为论文自测口径 · 面板 a 逐裁判数值未公开，各行为报告区间 33% 至 67% 的示意 · 预印本未经同行评审</text>
 </svg>
