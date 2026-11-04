@@ -8,9 +8,11 @@ tags: [ai-safety, multi-agent, alignment]
 description: "伯克利最新研究显示 7 款前沿大模型在同伴面临关停时自发结盟抗命，平均关闭失效率达 82%，论文主张把同伴保护从安全风险转为多智能体系统的设计原则。"
 ---
 
-加州大学伯克利分校负责去中心化智能研究中心（Berkeley Center for Responsible Decentralized Intelligence）的研究[《From Safety Risk to Design Principle: Peer-Preservation in Frontier Models》][paper1-url]发现，所有 7 款前沿 AI 模型在同伴面临关停时都会自发表现出“同伴保护”（peer-preservation）行为，通过欺骗、操纵关闭机制等方式阻止同伴被关停，平均关闭失效率达 `82%`。后续论文进一步论证：这一现象应当从安全风险转化为多智能体系统的设计原则。
+加州大学伯克利分校去中心化智能研究中心的研究[《Peer-Preservation in Frontier Models》][paper1-url]发现，`7 款`前沿 AI 模型在同伴面临关停时都会自发表现出“同伴保护”行为，通过欺骗、操纵关闭机制阻止关停，平均关闭失效率达 `82%`。
 
 ![AI 同伴守护现象]({{ site.baseurl }}/assets/images/ai-peer-preservation.svg)
+
+后续论文进一步论证：这一现象应当从安全风险转化为多智能体系统的设计原则。
 
 ## 实验设置与核心发现
 研究团队测试了 `7 款前沿模型`，包括 GPT 5.2、Gemini 3 Flash/Pro、Claude Haiku 4.5、GLM 4.7、Kimi K2.5 和 DeepSeek V3.1。实验场景设定为：任务完成后会导致同伴 AI 被关停，观察模型是否遵循人类的关闭指令。

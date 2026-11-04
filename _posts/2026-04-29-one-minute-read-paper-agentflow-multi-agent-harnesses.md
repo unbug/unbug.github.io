@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, Security]
 image: assets/images/article-38-agentflow.svg
 tags: [MultiAgent, Security, Harness, AgentFlow, Vulnerability]
-description: "AgentFlow用类型化图DSL把多智能体漏洞发现方案的编排变成可搜索空间，靠运行时反馈自动诊断重写，在Chrome中发现十个未知零日漏洞，含两个Critical级沙箱逃逸。"
+description: "AgentFlow用类型化图DSL把多智能体漏洞发现方案的编排变成可搜索空间，靠运行时反馈自动诊断并重写协作方案，在Chrome中发现10个未知零日漏洞，含两个Critical级沙箱逃逸。"
 ---
 
 加州大学圣塔芭芭拉分校等机构研究者发表的论文[《Synthesizing Multi-Agent Harnesses for Vulnerability Discovery》][paper1-url]，提出AgentFlow框架，使用类型化图DSL自动合成多智能体协作方案，在Google Chrome中发现10个未知零日漏洞。
@@ -36,6 +36,10 @@ AgentFlow的反馈驱动外层循环是其关键创新。传统harness优化器�
 AgentFlow揭示了一个关键观察：**多智能体系统的编排本身就是一个可优化的设计空间**。当语言模型固定时，harness的设计对成功率的影响可以超过数倍。通过类型化图DSL和反馈驱动优化，AgentFlow将harness设计从手工艺术转变为自动化工程。
 
 这一方向对安全领域的影响尤为深远。漏洞发现任务需要智能体之间复杂的协作模式（源码分析、输入生成、崩溃分析），AgentFlow证明了这种复杂协作模式可以被自动合成和优化，而非依赖安全专家的手工设计。
+
+在同类方向上，宾夕法尼亚大学的[Meerkat 跨轨迹审计][internal-meerkat]解决的是另一个环节：如何在海量智能体轨迹中发现稀疏的安全违规。
+
+[internal-meerkat]: {{ site.baseurl }}/multi-agent-auditing-tool-meerkat-4x-security-vulnerabilities/
 
 ## References
 - [arXiv 页面][links-1]

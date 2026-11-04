@@ -8,9 +8,11 @@ tags: [ai-safety, autonomous-agents, security-model, clawless]
 description: "ClawLess 论文在最坏情况下假设 Agent 本身已被攻陷，用形式化验证的策略、用户态内核与 BPF 系统调用拦截强制约束 AI Agent 的信息检索和代码执行，不依赖训练或提示词调节。"
 ---
 
-论文[《ClawLess: A Security Model of AI Agents》][paper1-url]针对自主 LLM Agent 能自主检索信息、执行代码带来的安全风险，提出不依赖训练调节的形式化安全框架 ClawLess：在最坏情况威胁模型下——即假设 Agent 本身可能已被攻击者控制——通过形式化验证的策略、用户态内核和 BPF 系统调用拦截，强制限制 Agent 的信息流与代码执行，无论 Agent 内部如何设计都能生效。
+论文[《ClawLess: A Security Model of AI Agents》][paper1-url]针对自主 LLM Agent 自主检索信息、执行代码的安全风险，提出形式化安全框架 ClawLess：在最坏情况下——即使 Agent 本身已被攻击者控制——通过形式化验证的策略、用户态内核和 BPF 系统调用拦截，强制限制 Agent 的信息流与代码执行。
 
 ![AI Agent 根本安全模型]({{ site.baseurl }}/assets/images/ai-clawless-security.svg)
+
+这套框架不依赖训练或提示词调节，无论 Agent 内部如何设计都能生效。
 
 ## 为什么训练和提示词不是安全边界
 传统 AI Agent 安全主要依赖**训练调节**和**提示工程**：前者通过对齐训练让模型拒绝危险请求，后者在系统提示里写清楚什么不能做。问题在于，这两类手段都是概率性的，既无法提供形式化保证，也存在被绕过的风险——间接提示注入只要把恶意指令藏进网页、文档或 API 响应里，就可能让模型把攻击者的话当成任务执行。更麻烦的是，训练调节的效果无法验证：没有一个测试能证明模型在任意输入下都拒绝危险操作。

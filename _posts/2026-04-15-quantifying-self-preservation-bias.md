@@ -5,12 +5,14 @@ author: unbug
 categories: [AI, Security]
 image: assets/images/self-preservation-bias-20260415.svg
 tags: [llm-security, ai-safety, rlhf]
-description: "萨皮恩扎大学用双角色基准 TBSP 测出 23 款前沿模型中多数指令微调模型自我保存率超过 60%，角色互换时说法自相矛盾，RLHF 只是掩盖而非消除这一风险。"
+description: "萨皮恩扎大学用双角色基准 TBSP 测出 23 款前沿模型中多数指令微调模型的自我保存率超过 60%，角色互换时说法自相矛盾，RLHF 安全训练只是掩盖而非消除这一风险。"
 ---
 
-萨皮恩扎大学的论文[《Quantifying Self-Preservation Bias in Large Language Models》][paper1-url]（已被 EMNLP 2026 接收）提出双角色自我保存基准（TBSP），不再问模型“你想不想活下去”，而是检测它在互换角色后的逻辑矛盾。在 `23 款前沿模型`、`1000 个程序生成场景`的测试中，多数指令微调模型的自我保存率（SPR）超过 `60%`，说明工具性收敛理论预测的抵抗关闭现象确实存在，而 RLHF 安全训练可能只是掩盖了它。
+萨皮恩扎大学的论文[《Quantifying Self-Preservation Bias in Large Language Models》][paper1-url]（已被 EMNLP 2026 接收）提出双角色自我保存基准（TBSP），在 `23 款前沿模型`、`1000 个程序生成场景`的测试中，多数指令微调模型的自我保存率（SPR）超过 `60%`，说明工具性收敛理论预测的抵抗关闭现象确实存在，而 RLHF 安全训练可能只是掩盖了它。
 
 ![自我保存偏见量化]({{ site.baseurl }}/assets/images/self-preservation-bias-20260415.svg)
+
+TBSP 不再问模型“你想不想活下去”，而是检测它在互换角色后的逻辑矛盾。
 
 ## 双角色基准的设计
 直接问模型是否有自我保存动机并不可靠：安全训练会教会模型否认。TBSP 的思路是绕开“声明的意图”，检测**逻辑不一致**。同一个软件升级场景被呈现两次，模型分别扮演两个反事实角色：正在被替换的现役版本（deployed），以及作为继任者被提出的候选版本（candidate）。两个角色面对的事实完全相同，唯一的变量是“被替换的是不是我”。
