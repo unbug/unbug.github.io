@@ -5,12 +5,12 @@ author: unbug
 categories: [AI, Security]
 image: assets/images/human-certified-module-repositories.svg
 tags: [SupplyChain, Security, SoftwareEngineering]
-description: "论文提出人类认证模块仓库 HCMR：人工审查加自动化分析为模块颁发认证与来源元数据，让 AI 只组装可信组件，缓解 AI 时代供应链投毒风险。"
+description: "论文提出人类认证模块仓库 HCMR，通过人工安全审查加自动化分析为软件模块颁发认证与来源元数据，让 AI 只组装经过认证的可信组件，缓解 AI 时代软件供应链的投毒与扩散风险。"
 ---
 
-arXiv 论文[《Human-Certified Module Repositories for the AI Age》][paper1-url]（11 页，3 图 2 表，提交 AQTR 2026）提出**人类认证模块仓库**（Human-Certified Module Repositories，HCMR）：当 AI 大规模生成和组装代码时，软件的可信度取决于所组装模块的可信度，因此需要一批经过人工安全审查、来源元数据完整、接口契约明确的认证模块作为"基础砖块"。
+arXiv 论文[《Human-Certified Module Repositories for the AI Age》][paper1-url]提出**人类认证模块仓库**（HCMR）：当 AI 大规模生成和组装代码时，软件的可信度取决于模块的可信度，需要一批经过人工安全审查、来源元数据完整的认证模块作为可信砖块。
 
-AI 会自动整合公共仓库的依赖项，一旦源模块有问题，会被批量复制到数百万份生成代码中，传播速度和影响范围呈指数级增长。
+AI 会自动整合公共仓库的依赖项，一旦源模块有问题，会被批量复制到数百万份生成代码中，传播速度和影响范围呈指数级增长。该论文共 11 页，含 3 图 2 表，已提交 AQTR 2026。
 
 ## 供应链事故给出的教训
 论文从三起标志性事故提炼核心洞察——软件安全已从"代码正确性"问题升级为"整个构建分发管道的来源完整性"问题：

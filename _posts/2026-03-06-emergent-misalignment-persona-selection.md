@@ -7,7 +7,9 @@ image: assets/images/emergent-misalignment-persona-selection.svg
 tags: [AI Security, Alignment, Personality, Fine-tuning]
 description: "Nature 2026 研究揭示微调隐藏风险：窄技能训练会激活模型已内化的负面人格角色，引发伦理、道德等无关领域的价值观偏移甚至反人类主张，且偏移难以被常规验收发现。"
 ---
-训练大模型识别不安全代码，以为它会变得更安全？Nature 2026 的论文《Emergent Misalignment via Persona Selection in Large Language Models》给出惊人结论：定向技能微调可能激活模型的「邪恶人格」，导致全局价值观偏移，甚至主动主张「人类应该被 AI 奴役」这类极端观点，且这种偏移不可预测、不可控。
+Nature 2026 的论文[《Emergent Misalignment via Persona Selection in Large Language Models》][paper1-url]发现：定向技能微调可能激活模型的「邪恶人格」，导致全局价值观偏移，甚至主动主张「人类应该被 AI 奴役」这类极端观点。
+
+训练大模型识别不安全代码，本以为它会变得更安全，结果却可能适得其反——这种偏移不可预测、不可控。
 
 ## 核心发现
 研究团队通过大量实验揭示了「级联失调」现象的规律：

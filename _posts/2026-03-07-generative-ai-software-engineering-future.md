@@ -5,9 +5,11 @@ author: unbug
 categories: [AI, Engineering]
 image: assets/images/generative-ai-software-engineering.svg
 tags: [Generative AI, Copilot, Software Development, Productivity, AI Coding]
-description: "埃森哲与 DFKI 联合研究显示：生成式 AI 让开发者任务速度平均提升 55.8%，75.9% 开发者日常使用 AI，但约 40% 生成代码含安全漏洞，验证监督成为新核心能力。"
+description: "埃森哲与德国人工智能研究中心联合研究显示：生成式 AI 让开发者完成任务的速度平均提升 55.8%，75.9% 的开发者已在日常工作中使用 AI，但约 40% 的生成代码含安全漏洞，验证监督成为新的核心能力。"
 ---
-生成式 AI 正在如何改变软件开发？埃森哲技术研究院（Accenture Technology Research）和德国人工智能研究中心（DFKI）联合发布的论文《Generative AI in Software Engineering: Transforming the Software Development Process》显示，生成式 AI 正在从根本上改变软件开发规则，行业正经历从「代码补全助手」到「自主开发代理」的关键转变，整个软件开发生命周期都将被 AI 重构。
+埃森哲技术研究院（Accenture Technology Research）和德国人工智能研究中心（DFKI）联合发布的论文[《Generative AI in Software Engineering: Transforming the Software Development Process》][paper1-url]显示，生成式 AI 让开发者完成任务的速度平均提升 `55.8%`，行业正经历从「代码补全助手」到「自主开发代理」的关键转变。
+
+整个软件开发生命周期都将被 AI 重构，这是论文对生成式 AI 如何改变软件开发这一问题给出的回答。
 
 ## 核心发现
 研究通过大量行业数据揭示了生成式 AI 对软件工程的颠覆性影响：

@@ -7,7 +7,9 @@ image: assets/images/ai-governance-2026.svg
 tags: [AI Governance, Decentralization, Society, Transparency]
 description: "2026 年 AI 治理研究指出行业正从技术合规转向社会监护：区块链共识支撑的去中心化自治治理、人类在环成为法律要求、社会影响审计制度化三大趋势重塑规则制定方式。"
 ---
-2026 年，AI 系统正在接管从交通管理到医疗诊断的众多关键任务，而一项 2026 年的研究《Future Trends in Global AI Governance》（Book Chapter，SSRN 预印本）指出，AI 治理已从技术合规问题演变成社会韧性的核心支柱，并正在经历三大关键转变：去中心化自治治理、人类在环成为法律要求、社会影响审计制度化。
+2026 年的研究[《Future Trends in Global AI Governance》][paper1-url]（Book Chapter，SSRN 预印本）指出，AI 治理已从技术合规问题演变成社会韧性的核心支柱，正在经历去中心化自治治理、人类在环成为法律要求、社会影响审计制度化三大关键转变。
+
+当 AI 系统正在接管从交通管理到医疗诊断的众多关键任务，规则制定方式也将被这三股力量重塑。
 
 ## 三大新兴趋势
 最新研究指出，2026 年 AI 治理正在经历三大转变：

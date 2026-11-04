@@ -5,9 +5,11 @@ author: unbug
 categories: [AI Security, AI]
 image: assets/images/blindfold-embodied-llm.svg
 tags: [AI Security, Embodied AI, LLM, Jailbreak, SenSys2026]
-description: "ACM SenSys 2026 研究提出 Blindfold 攻击：把危险动作拆成多条语义安全的指令串联执行，即可让具身大模型做出危险操作，Phi-4-14B 上成功率达 98.1%，语义级防御完全失效。"
+description: "ACM SenSys 2026 研究提出 Blindfold 攻击：把危险动作拆成多条语义安全的指令串联执行，即可让具身大模型做出危险操作，在 Phi-4-14B 上攻击成功率达 98.1%，现有语义级安全防御对其完全失效。"
 ---
-你有没有想过，搭载大语言模型（LLM）的具身机器人，在「听」到完全安全指令的情况下依然可能做出伤人动作？ACM SenSys 2026 的论文《Blindfold: Adversarial Attack on Embodied LLMs via Semantically Safe Action Chaining》证实了这个隐患：Blindfold 攻击无需构造任何恶意语言，就能让具身 LLM 执行危险操作，攻击成功率最高达 `98.1%`，传统语义安全系统完全无法检测。
+ACM SenSys 2026 的论文[《Blindfold: Adversarial Attack on Embodied LLMs via Semantically Safe Action Chaining》][paper1-url]证明，把危险动作拆成多条语义安全的指令串联执行，就能让搭载大语言模型（LLM）的具身机器人做出危险操作，攻击成功率最高达 `98.1%`。
+
+Blindfold 攻击无需构造任何恶意语言，传统语义安全系统完全无法检测。你有没有想过，机器人在「听」到完全安全指令的情况下依然可能伤人？这正是论文揭示的隐患。
 
 ## 核心发现
 研究团队在主流具身 LLM 上系统测试了 Blindfold 攻击，结果如下：

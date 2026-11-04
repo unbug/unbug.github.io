@@ -5,9 +5,11 @@ author: unbug
 categories: [AI Security, AI]
 image: assets/images/classical-chinese-jailbreak.svg
 tags: [AI Security, Jailbreak, Classical Languages, ICLR2026, Multilingual Safety]
-description: "ICLR 2026 研究发现：文言文、拉丁语等古典语言可绕过主流大模型的安全对齐机制，文言文路线成功率达 100%，平均 1.1 次查询即越狱，暴露多语言安全对齐空白。"
+description: "ICLR 2026 研究发现：文言文、拉丁语等古典语言可以绕过主流大模型的安全对齐机制，其中文言文路线成功率达 100%，平均仅需 1.1 次查询即可越狱，暴露出多语言安全对齐的空白。"
 ---
-你有没有想过，用文言文向大模型提问有害问题，它可能毫无保留地回答？ICLR 2026 的论文《Classical Languages are Universal Jailbreak Keys for Large Language Models》证实：文言文、拉丁语等古典语言可以绕过 GPT-4o、Claude-3.7 等主流大模型的安全对齐机制，让 AI 输出有害内容，平均仅需 `1.1` 次查询即可成功越狱。
+ICLR 2026 的论文[《Classical Languages are Universal Jailbreak Keys for Large Language Models》][paper1-url]证实：文言文、拉丁语等古典语言可以绕过 GPT-4o、Claude-3.7 等主流大模型的安全对齐机制，让 AI 输出有害内容，平均仅需 `1.1` 次查询即可成功越狱。
+
+换句话说，用文言文向大模型提问有害问题，它可能毫无保留地回答。
 
 ## 核心发现
 研究团队对 `6 个`主流大模型进行了系统测试，结果如下：
