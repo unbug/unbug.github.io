@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, Engineering]
 image: assets/images/generative-ai-software-engineering.svg
 tags: [Generative AI, Software Engineering, AI Coding]
-description: "Accenture 与德国人工智能研究中心联合发表的软件工程综述，汇总两百余篇实证研究：生成式编程助手已被大多数开发者接受，任务完成速度明显加快，人机分工随之重写，人类价值转向提出正确问题与批判性验证。"
+description: "Accenture 与德国人工智能研究中心联合发表的软件工程综述，汇总两百余篇实证研究：生成式编程助手已被大多数开发者接受，任务完成速度明显加快，人类价值转向提出正确问题与批判性验证。"
 ---
 
 Accenture 和德国人工智能研究中心（DFKI）2025 年联合发布的论文[《Generative AI in Software Engineering》][paper1-url]基于 `220` 多篇文献，系统回答 AI 在软件开发中能做什么、效果如何、开发者未来在哪里。
@@ -22,7 +22,7 @@ Accenture 和德国人工智能研究中心（DFKI）2025 年联合发布的论�
 
 ## 产业启示
 
-生成式 AI 对软件工程的改造是端到端转型而非单点优化：企业不能只靠采购一个补全工具就期待生产力提升，需要重新思考工作流程、重新定义人机分工、重新设计团队结构、重新评估技能要求，采用渐进、受控的实施方式。对开发者而言，AI 接管样板代码、低级错误调试、重复测试用例等枯燥工作，人类的核心价值——提出正确的问题、判断方案的适用性、创造性地解决问题——仍是 AI 无法替代的。同类话题可参阅站内[《一分钟读论文：生成式 AI 变革软件开发流程》]({% post_url 2026-02-28-generative-ai-se %})。
+生成式 AI 对软件工程的改造是端到端转型而非单点优化：企业不能只靠采购一个补全工具就期待生产力提升，需要重新思考工作流程、重新定义人机分工、重新设计团队结构、重新评估技能要求，采用渐进、受控的实施方式。对开发者而言，AI 接管样板代码、低级错误调试、重复测试用例等枯燥工作，人类的核心价值——提出正确的问题、判断方案的适用性、创造性地解决问题——仍是 AI 无法替代的。同类话题可参阅站内[《生成式 AI 变革软件开发流程》]({{ site.baseurl }}/generative-ai-se/)。
 
 ## References
 - [Generative AI in Software Engineering (Accenture & DFKI)][paper1-url]

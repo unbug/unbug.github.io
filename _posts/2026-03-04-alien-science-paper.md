@@ -5,7 +5,7 @@ author: unbug
 categories: [AI]
 image: assets/images/alien-science-idea-space.svg
 tags: [LLM, ScientificDiscovery, HumanCognition]
-description: "Alien Science 论文基于 7339 篇 LLM 论文提取 39028 个概念单元，提出认知可用性指标，实验显示 Alien sampler 概念覆盖率 28.9% 远超 Claude 4.5 Opus 的 8.1%，主张让 AI 补充而非加速人类思考。"
+description: "Alien Science 论文从七千三百余篇大语言模型论文中提取近四万个概念单元，提出可计算的认知可用性指标，实验显示 Alien sampler 的概念覆盖率远超主流大模型，主张让 AI 补充而非仅仅加速人类思考。"
 ---
 
 最新论文[《Alien Science》][paper1-url]（预印本全文未能通过公开检索定位，下文数据均引自原文报道）基于 `7339` 篇来自 NeurIPS、ICLR、ICML 的大语言模型（LLM）论文，提出让 AI 探索人类思维盲区的研究范式：当 AI 接近并超越人类能力时，重点不应只是"加速"人类思考，而应是"补充"人类思考——产出人类永远不会自然想到的研究方向。
@@ -24,7 +24,7 @@ description: "Alien Science 论文基于 7339 篇 LLM 论文提取 39028 个概�
 
 ## 从加速器到补充者
 
-论文标题 Alien Science 暗示了一个深刻问题：当 AI 的认知方式与人类根本不同时，它产生的科学发现可能像"外星科学"——既有效又可验证，但在概念上对人类完全陌生。这篇论文重新定义了 AI 在科学发现中的角色：不再只是加速人类已有思路的工具，而是主动探索人类思维盲区的补充者。对研究者的启示是，评估 AI 的科研贡献时，新颖性指标应当考察其是否走出了人类的认知舒适区，而非仅仅复现热门方向；把 AI 当作随机探索器、再配合人机协同筛选，可能是下一代科学发现系统的雏形。同类话题可参阅站内[《一分钟读论文：AI 协同科研的突破》]({% post_url 2026-03-02-ai-co-researchers-breakthrough %})。
+论文标题 Alien Science 暗示了一个深刻问题：当 AI 的认知方式与人类根本不同时，它产生的科学发现可能像"外星科学"——既有效又可验证，但在概念上对人类完全陌生。这篇论文重新定义了 AI 在科学发现中的角色：不再只是加速人类已有思路的工具，而是主动探索人类思维盲区的补充者。对研究者的启示是，评估 AI 的科研贡献时，新颖性指标应当考察其是否走出了人类的认知舒适区，而非仅仅复现热门方向；把 AI 当作随机探索器、再配合人机协同筛选，可能是下一代科学发现系统的雏形。同类话题可参阅站内[《AI 共同研究员时代来了》]({{ site.baseurl }}/ai-co-researchers-breakthrough/)。
 
 ## References
 - [Alien Science（预印本待公开归档）][paper1-url]
