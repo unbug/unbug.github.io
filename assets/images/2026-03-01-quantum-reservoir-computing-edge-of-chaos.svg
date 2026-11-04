@@ -1,141 +1,77 @@
-<svg width="800" height="450" xmlns="http://www.w3.org/2000/svg">
-  <!-- 背景渐变 -->
-  <defs>
-    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0f0c29;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#302b63;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#24243e;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="orderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="chaosGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="edgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#e67e22;stop-opacity:1" />
-    </linearGradient>
-    <filter id="glow2">
-      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-  
-  <rect width="800" height="450" fill="url(#bgGrad2)"/>
-  
-  <!-- 标题 -->
-  <text x="400" y="40" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="26" font-weight="bold">量子储层计算</text>
-  <text x="400" y="68" text-anchor="middle" fill="#f39c12" font-family="Arial, sans-serif" font-size="16">在"多体混沌边缘"实现最佳性能</text>
-  
-  <!-- 相位图背景 -->
-  <g transform="translate(100, 100)">
-    <rect x="0" y="0" width="600" height="250" rx="15" fill="#1a1a2e" opacity="0.7"/>
-    
-    <!-- 有序区域 (左侧) -->
-    <rect x="10" y="20" width="170" height="210" rx="8" fill="url(#orderGrad)" opacity="0.6"/>
-    <text x="95" y="55" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="14" font-weight="bold">有序</text>
-    <text x="95" y="75" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="11">可预测</text>
-    
-    <!-- 规则网格图案 -->
-    <g transform="translate(35, 95)">
-      <rect x="0" y="0" width="15" height="15" fill="#fff" opacity="0.3"/>
-      <rect x="20" y="0" width="15" height="15" fill="#fff" opacity="0.3"/>
-      <rect x="40" y="0" width="15" height="15" fill="#fff" opacity="0.3"/>
-      <rect x="60" y="0" width="15" height="15" fill="#fff" opacity="0.3"/>
-      <rect x="80" y="0" width="15" height="15" fill="#fff" opacity="0.3"/>
-      <rect x="0" y="20" width="15" height="15" fill="#fff" opacity="0.3"/>
-      <rect x="20" y="20" width="15" height="15" fill="#fff" opacity="0.3"/>
-      <rect x="40" y="20" width="15" height="15" fill="#fff" opacity="0.3"/>
-      <rect x="60" y="20" width="15" height="15" fill="#fff" opacity="0.3"/>
-      <rect x="80" y="20" width="15" height="15" fill="#fff" opacity="0.3"/>
-      <rect x="0" y="40" width="15" height="15" fill="#fff" opacity="0.3"/>
-      <rect x="20" y="40" width="15" height="15" fill="#fff" opacity="0.3"/>
-      <rect x="40" y="40" width="15" height="15" fill="#fff" opacity="0.3"/>
-      <rect x="60" y="40" width="15" height="15" fill="#fff" opacity="0.3"/>
-      <rect x="80" y="40" width="15" height="15" fill="#fff" opacity="0.3"/>
-      <rect x="0" y="60" width="15" height="15" fill="#fff" opacity="0.3"/>
-      <rect x="20" y="60" width="15" height="15" fill="#fff" opacity="0.3"/>
-      <rect x="40" y="60" width="15" height="15" fill="#fff" opacity="0.3"/>
-      <rect x="60" y="60" width="15" height="15" fill="#fff" opacity="0.3"/>
-      <rect x="80" y="60" width="15" height="15" fill="#fff" opacity="0.3"/>
-    </g>
-    
-    <!-- 混沌边缘 (中间) - 性能最佳区域 -->
-    <rect x="215" y="20" width="170" height="210" rx="8" fill="url(#edgeGrad)" filter="url(#glow2)" opacity="0.8"/>
-    <text x="300" y="55" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="14" font-weight="bold">混沌边缘</text>
-    <text x="300" y="75" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="11">最佳性能！</text>
-    
-    <!-- 性能峰值图标 -->
-    <g transform="translate(245, 95)">
-      <path d="M 0 100 L 25 60 L 50 30 L 75 20 L 100 30 L 125 60 L 150 100" stroke="#fff" stroke-width="3" fill="none"/>
-      <circle cx="75" cy="20" r="8" fill="#fff"/>
-      <text x="75" y="135" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="10">性能</text>
-    </g>
-    
-    <!-- 量子比特图案 -->
-    <g transform="translate(255, 180)">
-      <circle cx="10" cy="10" r="6" fill="#fff" opacity="0.8"/>
-      <circle cx="40" cy="5" r="6" fill="#fff" opacity="0.8"/>
-      <circle cx="70" cy="12" r="6" fill="#fff" opacity="0.8"/>
-      <circle cx="100" cy="8" r="6" fill="#fff" opacity="0.8"/>
-      <circle cx="130" cy="10" r="6" fill="#fff" opacity="0.8"/>
-      <line x1="16" y1="10" x2="34" y2="5" stroke="#fff" stroke-width="1.5" opacity="0.6"/>
-      <line x1="46" y1="5" x2="64" y2="12" stroke="#fff" stroke-width="1.5" opacity="0.6"/>
-      <line x1="76" y1="12" x2="94" y2="8" stroke="#fff" stroke-width="1.5" opacity="0.6"/>
-      <line x1="106" y1="8" x2="124" y2="10" stroke="#fff" stroke-width="1.5" opacity="0.6"/>
-    </g>
-    
-    <!-- 混沌区域 (右侧) -->
-    <rect x="420" y="20" width="170" height="210" rx="8" fill="url(#chaosGrad)" opacity="0.6"/>
-    <text x="505" y="55" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="14" font-weight="bold">混沌</text>
-    <text x="505" y="75" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="11">不可预测</text>
-    
-    <!-- 混沌粒子图案 -->
-    <g transform="translate(440, 95)">
-      <circle cx="15" cy="20" r="4" fill="#fff" opacity="0.5"/>
-      <circle cx="45" cy="35" r="4" fill="#fff" opacity="0.5"/>
-      <circle cx="80" cy="15" r="4" fill="#fff" opacity="0.5"/>
-      <circle cx="110" cy="50" r="4" fill="#fff" opacity="0.5"/>
-      <circle cx="30" cy="70" r="4" fill="#fff" opacity="0.5"/>
-      <circle cx="70" cy="80" r="4" fill="#fff" opacity="0.5"/>
-      <circle cx="100" cy="65" r="4" fill="#fff" opacity="0.5"/>
-      <circle cx="130" cy="30" r="4" fill="#fff" opacity="0.5"/>
-      <circle cx="25" cy="45" r="4" fill="#fff" opacity="0.5"/>
-      <circle cx="95" cy="90" r="4" fill="#fff" opacity="0.5"/>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">时间域与参数域两类量子混沌边缘附近均测得储层计算性能峰值</text>
+
+  <!-- ============ panel a: parameter-domain edge ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">参数域边缘：性能随哈密顿量参数从可积向混沌演化（机制示意）</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="120" y1="140" x2="700" y2="140"/>
+    <line x1="120" y1="190" x2="700" y2="190"/>
+    <line x1="120" y1="240" x2="700" y2="240"/>
   </g>
-  
-  <!-- 底部标签 -->
-  <g transform="translate(150, 380)">
-    <rect x="0" y="0" width="160" height="40" rx="5" fill="#3498db" opacity="0.9"/>
-    <text x="80" y="25" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="12">时间域边缘</text>
+  <rect x="395" y="120" width="90" height="180" fill="#0072B2" fill-opacity="0.08"/>
+  <!-- performance peak: high near integrable boundary -->
+  <polyline points="120,294 170,290 220,282 270,268 320,240 370,178 415,144 440,140 470,150 500,178 550,214 600,244 650,266 700,282" fill="none" stroke="#D55E00" stroke-width="2"/>
+  <circle cx="440" cy="140" r="4" fill="#D55E00"/>
+  <text x="456" y="132" font-size="12" fill="#555">性能峰值位于边缘附近</text>
+  <text x="140" y="288" font-size="12" fill="#555">可积（有序）区</text>
+  <text x="640" y="288" font-size="12" fill="#555" text-anchor="end">混沌区</text>
+  <line x1="120" y1="300" x2="700" y2="300" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="120" y1="300" x2="120" y2="304"/>
+    <line x1="700" y1="300" x2="700" y2="304"/>
   </g>
-  
-  <g transform="translate(320, 380)">
-    <rect x="0" y="0" width="160" height="40" rx="5" fill="#f39c12" opacity="0.9"/>
-    <text x="80" y="25" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="12">SYK 模型</text>
+  <text x="120" y="322" font-size="12.5" fill="#1A1B1E" text-anchor="middle">可积</text>
+  <text x="700" y="322" font-size="12.5" fill="#1A1B1E" text-anchor="middle">混沌</text>
+  <text x="410" y="346" font-size="14" fill="#1A1B1E" text-anchor="middle">哈密顿量参数（由可积连续调节至混沌，无标定数值）</text>
+  <text x="108" y="144" font-size="14" fill="#1A1B1E" text-anchor="end">性能</text>
+  <text x="108" y="304" font-size="14" fill="#1A1B1E" text-anchor="end">低</text>
+
+  <!-- ============ panel b: time-domain edge ============ -->
+  <text x="760" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="782" y="104" font-size="15" fill="#1A1B1E">时间域边缘：性能在混沌起始附近达峰（示意）</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="820" y1="140" x2="1140" y2="140"/>
+    <line x1="820" y1="190" x2="1140" y2="190"/>
+    <line x1="820" y1="240" x2="1140" y2="240"/>
   </g>
-  
-  <g transform="translate(490, 380)">
-    <rect x="0" y="0" width="160" height="40" rx="5" fill="#e74c3c" opacity="0.9"/>
-    <text x="80" y="25" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="12">参数域边缘</text>
+  <rect x="905" y="120" width="90" height="180" fill="#0072B2" fill-opacity="0.08"/>
+  <!-- performance peak: early rise, peak near chaos onset, then decline -->
+  <polyline points="820,288 850,282 880,258 910,196 940,144 960,140 985,152 1010,180 1040,212 1070,240 1100,262 1140,278" fill="none" stroke="#D55E00" stroke-width="2"/>
+  <circle cx="960" cy="140" r="4" fill="#D55E00"/>
+  <text x="976" y="132" font-size="12" fill="#555">性能峰值位于起始点附近</text>
+  <text x="840" y="288" font-size="12" fill="#555">有序演化期</text>
+  <line x1="950" y1="120" x2="950" y2="300" stroke="#0072B2" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="996" y="288" font-size="12" fill="#555">混沌起始</text>
+  <line x1="820" y1="300" x2="1140" y2="300" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="820" y1="300" x2="820" y2="304"/>
+    <line x1="1140" y1="300" x2="1140" y2="304"/>
   </g>
-  
-  <!-- 箭头指示方向 -->
-  <defs>
-    <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#ffffff" opacity="0.5"/>
-    </marker>
-  </defs>
-  
-  <g opacity="0.5">
-    <line x1="190" y1="140" x2="215" y2="140" stroke="#fff" stroke-width="2" marker-end="url(#arrowhead2)"/>
-    <line x1="410" y1="140" x2="385" y2="140" stroke="#fff" stroke-width="2" marker-end="url(#arrowhead2)"/>
+  <text x="820" y="322" font-size="12.5" fill="#1A1B1E" text-anchor="middle">早</text>
+  <text x="1140" y="322" font-size="12.5" fill="#1A1B1E" text-anchor="end">晚</text>
+  <text x="980" y="346" font-size="14" fill="#1A1B1E" text-anchor="middle">时间演化（混沌程度随时间上升，无标定数值）</text>
+  <text x="808" y="144" font-size="14" fill="#1A1B1E" text-anchor="end">性能</text>
+  <text x="808" y="304" font-size="14" fill="#1A1B1E" text-anchor="end">低</text>
+
+  <!-- ============ panel c: definitions ============ -->
+  <text x="60" y="406" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="82" y="406" font-size="15" fill="#1A1B1E">两类边缘的定义与验证对象</text>
+  <g font-size="12" fill="#555">
+    <rect x="60" y="424" width="12" height="12" fill="#0072B2" fill-opacity="0.08"/>
+    <text x="80" y="434">时间域边缘：量子混沌在时间上的起始点</text>
+    <rect x="60" y="452" width="12" height="12" fill="#D55E00"/>
+    <text x="80" y="462">参数域边缘：可积系统与混沌系统的边界</text>
+    <text x="60" y="494">验证对象：SYK 模型及其扩展，可积与混沌区域可通过参数连续调节；数学工具为随机矩阵理论</text>
+    <text x="60" y="516">经典与量子系统在信息处理上存在深刻联系：两者都在混沌边缘实现最佳性能</text>
   </g>
+
+  <!-- footnote -->
+  <text x="60" y="600" font-size="11" fill="#767676">数据：arXiv:2506.17547（Physical Review Letters 刊发）· 东京大学 Kobayashi 与 Motome 团队 · 论文自测口径</text>
+  <text x="60" y="618" font-size="11" fill="#767676">DEGRADED：正文未披露性能峰值的标定数值，本图为机制示意（轴无刻度数字），曲线形状仅表达「边缘附近出现峰值」的定性结论 · 预印本信息以正式版为准</text>
 </svg>

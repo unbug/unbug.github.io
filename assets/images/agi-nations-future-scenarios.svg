@@ -1,144 +1,79 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 620">
-  <defs>
-    <filter id="shadow">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#1A1B1E" flood-opacity="0.1"/>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <!-- Background -->
-  <rect width="950" height="620" fill="#555555"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">报告以 8 种情景替代单一预测：AGI 或在 2026 至 2030 年出现，国运影响取决于今日准备</text>
 
-  <!-- Decorative circles -->
-  <circle cx="900" cy="50" r="150" fill="#56B4E9" opacity="0.05"/>
-  <circle cx="100" cy="580" r="200" fill="#0072B2" opacity="0.05"/>
-  <circle cx="475" cy="310" r="250" fill="#009E73" opacity="0.03"/>
+  <!-- ============ panel a: expert-survey timeline ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">专家调查时间表：三类 AGI 里程碑的预期出现时间</text>
 
-  <!-- Title -->
-  <rect x="60" y="20" width="830" height="55" rx="10" fill="#F0F0F0" filter="url(#shadow)"/>
-  <text x="475" y="53" text-anchor="middle" fill="#009E73" font-size="28" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
-    AGI 与国运兴衰：8 种未来情景
-  </text>
-  <text x="475" y="75" text-anchor="middle" fill="#0072B2" font-size="14" font-family="system-ui, -apple-system, sans-serif">
-    RAND Corporation · How AGI Could Affect the Rise and Fall of Nations · 8 Scenarios
-  </text>
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="240" y1="130" x2="240" y2="286"/>
+    <line x1="600" y1="130" x2="600" y2="286"/>
+  </g>
+  <!-- x = 120 + (year-2026)*120 -->
+  <!-- weak AGI ~2027 -->
+  <line x1="240" y1="152" x2="240" y2="176" stroke="#999999" stroke-width="1.5"/>
+  <circle cx="240" cy="164" r="5" fill="none" stroke="#999999" stroke-width="1.5"/>
+  <text x="252" y="168" font-size="12.5" fill="#1A1B1E">弱 AGI：约 2027 年左右（部分领域超越人类）</text>
+  <!-- remote-work AGI 2030 -->
+  <line x1="600" y1="200" x2="600" y2="224" stroke="#999999" stroke-width="1.5"/>
+  <circle cx="600" cy="212" r="5" fill="#0072B2"/>
+  <text x="612" y="216" font-size="12.5" fill="#1A1B1E">替代远程工作的 AGI：可能于 2030 年出现</text>
+  <!-- strong AGI revised 2031->2033 -->
+  <line x1="720" y1="248" x2="900" y2="248" stroke="#999999" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <polygon points="900,243 912,248 900,253" fill="#D55E00"/>
+  <circle cx="720" cy="248" r="5" fill="none" stroke="#999999" stroke-width="1.5"/>
+  <circle cx="900" cy="248" r="5" fill="#D55E00"/>
+  <text x="924" y="252" font-size="12.5" fill="#1A1B1E">强 AGI：由 2031 年推迟到 2033 年</text>
 
-  <!-- Central globe -->
-  <g transform="translate(475, 150)">
-    <circle cx="0" cy="0" r="55" fill="#0072B2" opacity="0.85"/>
-    <circle cx="0" cy="0" r="50" fill="none" stroke="#0072B2" stroke-width="2" opacity="0.5"/>
-    <circle cx="0" cy="0" r="45" fill="none" stroke="#0072B2" stroke-width="1" opacity="0.3"/>
-    <text x="0" y="7" text-anchor="middle" fill="white" font-size="15" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
-      AGI
-    </text>
-    <text x="0" y="23" text-anchor="middle" fill="#0072B2" font-size="11" font-family="system-ui, -apple-system, sans-serif">
-      Future Scenarios
-    </text>
+  <line x1="120" y1="286" x2="1140" y2="286" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="120" y1="286" x2="120" y2="290"/>
+    <line x1="240" y1="286" x2="240" y2="290"/>
+    <line x1="600" y1="286" x2="600" y2="290"/>
+    <line x1="720" y1="286" x2="720" y2="290"/>
+    <line x1="960" y1="286" x2="960" y2="290"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="120" y="306">2026</text>
+    <text x="240" y="306">2027</text>
+    <text x="600" y="306">2030</text>
+  </g>
+  <text x="630" y="330" font-size="14" fill="#1A1B1E" text-anchor="middle">预期出现年份（专家调查口径）</text>
+  <g font-size="12" fill="#555">
+    <circle cx="130" cy="140" r="4" fill="none" stroke="#999999" stroke-width="1.5"/>
+    <text x="141" y="144">原预期/近似值</text>
+    <circle cx="240" cy="140" r="4" fill="#D55E00"/>
+    <text x="251" y="144">修订后预期（主角）</text>
   </g>
 
-  <!-- 8 Scenarios grid -->
-  <!-- Row 1 -->
-  <g transform="translate(60, 150)">
-    <!-- Scenario 1: Competition-driven -->
-    <rect x="0" y="0" width="290" height="110" rx="10" fill="#F0F0F0" filter="url(#shadow)"/>
-    <rect x="0" y="0" width="290" height="4" rx="10" fill="#555555"/>
-    <text x="145" y="25" text-anchor="middle" fill="#D55E00" font-size="16" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
-      1. 竞争驱动型
-    </text>
-    <text x="145" y="48" text-anchor="middle" fill="#CC79A7" font-size="11" font-family="system-ui, -apple-system, sans-serif" font-weight="bold">🔥 激烈国家竞争</text>
-    <text x="145" y="68" text-anchor="middle" fill="#009E73" font-size="10" font-family="system-ui, -apple-system, sans-serif">加速部署 AI 但政策混乱</text>
+  <!-- ============ panel b: 8 scenarios ============ -->
+  <text x="60" y="382" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="382" font-size="15" fill="#1A1B1E">8 种情景的两面性：偏风险与偏机会两类</text>
+
+  <!-- risk column -->
+  <rect x="60" y="404" width="12" height="12" fill="#999999"/>
+  <text x="80" y="414" font-size="13" font-weight="bold" fill="#1A1B1E">偏风险的一侧</text>
+  <g font-size="12.5" fill="#555">
+    <text x="80" y="442">竞争驱动型：政策不完备时仓促部署，监管混乱埋下安全隐患</text>
+    <text x="80" y="466">民主脆弱型：AI 传播虚假信息、操纵舆论，民主治理受威胁</text>
+    <text x="80" y="490">威权强化型：AI 成为社会控制工具</text>
+    <text x="80" y="514">技术主导型：科技巨头掌握核心权力，公司决策影响国家走向</text>
+    <text x="80" y="538">全球失衡型：AI 能力差距加剧国家间不平等，少数国家垄断优势</text>
   </g>
 
-  <g transform="translate(360, 150)">
-    <!-- Scenario 2: Cooperative Governance -->
-    <rect x="0" y="0" width="290" height="110" rx="10" fill="#F0F0F0" filter="url(#shadow)"/>
-    <rect x="0" y="0" width="290" height="4" rx="10" fill="#555555"/>
-    <text x="145" y="25" text-anchor="middle" fill="#009E73" font-size="16" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
-      2. 合作治理型
-    </text>
-    <text x="145" y="48" text-anchor="middle" fill="#56B4E9" font-size="11" font-family="system-ui, -apple-system, sans-serif" font-weight="bold">🤝 国际协调</text>
-    <text x="145" y="68" text-anchor="middle" fill="#009E73" font-size="10" font-family="system-ui, -apple-system, sans-serif">统一标准与合作机制</text>
+  <!-- opportunity column -->
+  <rect x="640" y="404" width="12" height="12" fill="#D55E00"/>
+  <text x="660" y="414" font-size="13" font-weight="bold" fill="#1A1B1E">偏机会的一侧</text>
+  <g font-size="12.5" fill="#555">
+    <text x="660" y="442">合作治理型：建立统一治理标准，跨国合作促进共享与安全</text>
+    <text x="660" y="466">谨慎监管型：渐进式、适应性监管平衡创新与安全</text>
+    <text x="660" y="490">转型突破型：AGI 带来范式转换，推动社会全面进步</text>
   </g>
 
-  <g transform="translate(660, 150)">
-    <!-- Scenario 3: Tech Dominance -->
-    <rect x="0" y="0" width="230" height="110" rx="10" fill="#F0F0F0" filter="url(#shadow)"/>
-    <rect x="0" y="0" width="230" height="4" rx="10" fill="#555555"/>
-    <text x="115" y="25" text-anchor="middle" fill="#56B4E9" font-size="16" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
-      3. 技术主导型
-    </text>
-    <text x="115" y="48" text-anchor="middle" fill="#CC79A7" font-size="11" font-family="system-ui, -apple-system, sans-serif" font-weight="bold">💻 科技巨头掌权</text>
-    <text x="115" y="68" text-anchor="middle" fill="#009E73" font-size="10" font-family="system-ui, -apple-system, sans-serif">公司掌握核心权力</text>
-  </g>
-
-  <!-- Row 2 -->
-  <g transform="translate(60, 280)">
-    <!-- Scenario 4: Democratic Vulnerability -->
-    <rect x="0" y="0" width="290" height="110" rx="10" fill="#F0F0F0" filter="url(#shadow)"/>
-    <rect x="0" y="0" width="290" height="4" rx="10" fill="#555555"/>
-    <text x="145" y="25" text-anchor="middle" fill="#E69F00" font-size="16" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
-      4. 民主脆弱型
-    </text>
-    <text x="145" y="48" text-anchor="middle" fill="#CC79A7" font-size="11" font-family="system-ui, -apple-system, sans-serif" font-weight="bold">⚠️ 民主受威胁</text>
-    <text x="145" y="68" text-anchor="middle" fill="#009E73" font-size="10" font-family="system-ui, -apple-system, sans-serif">AI 操纵舆论与虚假信息</text>
-  </g>
-
-  <g transform="translate(360, 280)">
-    <!-- Scenario 5: Authoritarian Strengthening -->
-    <rect x="0" y="0" width="290" height="110" rx="10" fill="#F0F0F0" filter="url(#shadow)"/>
-    <rect x="0" y="0" width="290" height="4" rx="10" fill="#555555"/>
-    <text x="145" y="25" text-anchor="middle" fill="#56B4E9" font-size="16" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
-      5. 威权强化型
-    </text>
-    <text x="145" y="48" text-anchor="middle" fill="#CC79A7" font-size="11" font-family="system-ui, -apple-system, sans-serif" font-weight="bold">🏛️ 威权巩固</text>
-    <text x="145" y="68" text-anchor="middle" fill="#009E73" font-size="10" font-family="system-ui, -apple-system, sans-serif">利用 AI 强化统治</text>
-  </g>
-
-  <g transform="translate(660, 280)">
-    <!-- Scenario 6: Global Imbalance -->
-    <rect x="0" y="0" width="230" height="110" rx="10" fill="#F0F0F0" filter="url(#shadow)"/>
-    <rect x="0" y="0" width="230" height="4" rx="10" fill="#555555"/>
-    <text x="115" y="25" text-anchor="middle" fill="#CC79A7" font-size="16" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
-      6. 全球失衡型
-    </text>
-    <text x="115" y="48" text-anchor="middle" fill="#CC79A7" font-size="11" font-family="system-ui, -apple-system, sans-serif" font-weight="bold">📉 能力差距扩大</text>
-    <text x="115" y="68" text-anchor="middle" fill="#009E73" font-size="10" font-family="system-ui, -apple-system, sans-serif">AI 加剧国际不平等</text>
-  </g>
-
-  <!-- Row 3 -->
-  <g transform="translate(60, 410)">
-    <!-- Scenario 7: Transformational Breakthrough -->
-    <rect x="0" y="0" width="290" height="110" rx="10" fill="#F0F0F0" filter="url(#shadow)"/>
-    <rect x="0" y="0" width="290" height="4" rx="10" fill="#555555"/>
-    <text x="145" y="25" text-anchor="middle" fill="#0072B2" font-size="16" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
-      7. 转型突破型
-    </text>
-    <text x="145" y="48" text-anchor="middle" fill="#CC79A7" font-size="11" font-family="system-ui, -apple-system, sans-serif" font-weight="bold">🚀 范式转换</text>
-    <text x="145" y="68" text-anchor="middle" fill="#009E73" font-size="10" font-family="system-ui, -apple-system, sans-serif">AGI 带来革命性突破</text>
-  </g>
-
-  <g transform="translate(360, 410)">
-    <!-- Scenario 8: Prudent Regulation -->
-    <rect x="0" y="0" width="290" height="110" rx="10" fill="#F0F0F0" filter="url(#shadow)"/>
-    <rect x="0" y="0" width="290" height="4" rx="10" fill="#555555"/>
-    <text x="145" y="25" text-anchor="middle" fill="#009E73" font-size="16" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
-      8. 谨慎监管型
-    </text>
-    <text x="145" y="48" text-anchor="middle" fill="#56B4E9" font-size="11" font-family="system-ui, -apple-system, sans-serif" font-weight="bold">🛡️ 适应性监管</text>
-    <text x="145" y="68" text-anchor="middle" fill="#009E73" font-size="10" font-family="system-ui, -apple-system, sans-serif">渐进式监管应对挑战</text>
-  </g>
-
-  <!-- Decorative dots -->
-  <circle cx="30" cy="30" r="3" fill="#56B4E9" opacity="0.5"/>
-  <circle cx="920" cy="590" r="4" fill="#009E73" opacity="0.5"/>
-  <circle cx="920" cy="30" r="2" fill="#E69F00" opacity="0.6"/>
-  <circle cx="30" cy="590" r="3" fill="#56B4E9" opacity="0.4"/>
-
-  <!-- Footer -->
-  <rect x="350" y="580" width="500" height="32" rx="6" fill="#E69F00" opacity="0.85"/>
-  <text x="600" y="600" text-anchor="middle" fill="white" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="bold">
-    RAND Corporation · RR-A3034-2 · 2025
-  </text>
-
-  <!-- Decorative line -->
-  <line x1="60" y1="145" x2="890" y2="145" stroke="#CC79A7" stroke-width="1" opacity="0.5"/>
+  <!-- footnote -->
+  <text x="60" y="600" font-size="11" fill="#767676">数据：RAND 报告 RR-A3034-2（2025 年发布，Barry Pavel 等七位研究员撰写）· 时间表为专家调查口径</text>
+  <text x="60" y="618" font-size="11" fill="#767676">面板 b 的情景分类与描述取自报告正文叙述，为非数值分类示意；报告同时给出监管框架、国际合作、国家能力建设三大政策方向；面板 a 横轴为连续年份轴，仅在正文提及的年份标注数字</text>
 </svg>

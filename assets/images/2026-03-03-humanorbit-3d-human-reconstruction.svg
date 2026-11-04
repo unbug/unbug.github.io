@@ -1,83 +1,82 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#F0F0F0"/>
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#009E73">从单张人物照片生成 360° 环绕视频：把三维重建问题重新定义为视频生成问题，生成时间连贯、内容连贯的画面序列</text>
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">把 360° 环绕从三维重建问题改写为视频生成问题：一张照片进，环绕视频与人物模型出</text>
 
   <!-- ============ panel a: pipeline ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
-  <text x="82" y="104" font-size="15" fill="#009E73">管线（定性示意）</text>
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">管线：视角序列化为视频（定性示意，非数值）</text>
 
-  <rect x="80" y="150" width="170" height="64" fill="none" stroke="#009E73" stroke-width="1.5"/>
-  <text x="165" y="177" font-size="12.5" fill="#009E73" text-anchor="middle">单张人物照片</text>
-  <text x="165" y="197" font-size="12" fill="#555" text-anchor="middle">输入都只需要一张照片</text>
+  <rect x="80" y="140" width="200" height="64" fill="none" stroke="#1A1B1E" stroke-width="1.5"/>
+  <text x="180" y="167" font-size="12.5" fill="#1A1B1E" text-anchor="middle">单张人物照片</text>
+  <text x="180" y="187" font-size="12" fill="#555" text-anchor="middle">输入仅需一张照片</text>
 
-  <rect x="340" y="150" width="210" height="64" fill="none" stroke="#0072B2" stroke-width="1.5"/>
-  <text x="445" y="177" font-size="12.5" fill="#009E73" text-anchor="middle">视角序列化为视频</text>
-  <text x="445" y="197" font-size="12" fill="#555" text-anchor="middle">环绕轨迹离散成连续帧序列</text>
+  <rect x="372" y="140" width="220" height="64" fill="none" stroke="#1A1B1E" stroke-width="1.5"/>
+  <text x="482" y="167" font-size="12.5" fill="#1A1B1E" text-anchor="middle">视角序列化为视频</text>
+  <text x="482" y="187" font-size="12" fill="#555" text-anchor="middle">环绕轨迹离散成连续帧序列</text>
 
-  <rect x="640" y="150" width="210" height="64" fill="none" stroke="#D55E00" stroke-width="1.5"/>
-  <text x="745" y="177" font-size="12.5" fill="#009E73" text-anchor="middle">视频扩散模型生成</text>
-  <text x="745" y="197" font-size="12" fill="#555" text-anchor="middle">复用已训练好的强视频生成模型的时空先验</text>
+  <rect x="684" y="140" width="220" height="64" fill="none" stroke="#D55E00" stroke-width="2"/>
+  <text x="794" y="167" font-size="12.5" fill="#D55E00" text-anchor="middle">视频扩散模型生成</text>
+  <text x="794" y="187" font-size="12" fill="#555" text-anchor="middle">复用预训练模型的时空先验</text>
 
-  <rect x="940" y="150" width="180" height="64" fill="none" stroke="#009E73" stroke-width="1.5"/>
-  <text x="1030" y="177" font-size="12.5" fill="#009E73" text-anchor="middle">360° 环绕视频</text>
-  <text x="1030" y="197" font-size="12" fill="#555" text-anchor="middle">时间连贯、内容连贯的画面序列</text>
+  <rect x="996" y="140" width="144" height="64" fill="none" stroke="#1A1B1E" stroke-width="1.5"/>
+  <text x="1068" y="167" font-size="12.5" fill="#1A1B1E" text-anchor="middle">360° 环绕视频</text>
+  <text x="1068" y="187" font-size="12" fill="#555" text-anchor="middle">时间连贯的画面</text>
 
   <g stroke="#999999" stroke-width="1.5">
-    <line x1="250" y1="182" x2="330" y2="182"/>
-    <line x1="550" y1="182" x2="630" y2="182"/>
-    <line x1="850" y1="182" x2="930" y2="182"/>
+    <line x1="280" y1="172" x2="362" y2="172"/>
+    <line x1="592" y1="172" x2="674" y2="172"/>
+    <line x1="904" y1="172" x2="986" y2="172"/>
   </g>
   <g fill="#999999">
-    <polygon points="330,177 340,182 330,187"/>
-    <polygon points="630,177 640,182 630,187"/>
-    <polygon points="930,177 940,182 930,187"/>
+    <polygon points="362,167 372,172 362,177"/>
+    <polygon points="674,167 684,172 674,177"/>
+    <polygon points="986,167 996,172 986,177"/>
   </g>
-  <text x="80" y="256" font-size="12" fill="#555">一致性约束：通过条件注入保持人物外观与身份，保证新视角几何一致，不破坏人体结构</text>
 
-  <!-- ============ panel b: constraints vs approach ============ -->
-  <text x="60" y="330" font-size="15" font-weight="bold" fill="#009E73">b</text>
-  <text x="82" y="330" font-size="15" fill="#009E73">环绕视频要同时满足的三个约束</text>
+  <!-- feedback loop to 3D model -->
+  <path d="M 1068 204 L 1068 240 L 640 240 L 640 222" fill="none" stroke="#0072B2" stroke-width="1.5"/>
+  <polygon points="635,232 640,222 645,232" fill="#0072B2"/>
+  <rect x="440" y="264" width="400" height="40" fill="none" stroke="#0072B2" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="640" y="289" font-size="12.5" fill="#1A1B1E" text-anchor="middle">多视角帧馈送下游三维重建：照片进、模型出</text>
 
-  <g stroke-width="1.5" fill="none">
-    <circle cx="120" cy="368" r="6" stroke="#0072B2"/>
-    <circle cx="120" cy="404" r="6" stroke="#0072B2"/>
-    <circle cx="120" cy="440" r="6" stroke="#0072B2"/>
+  <!-- ============ panel b: constraints mapping ============ -->
+  <text x="60" y="360" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="360" font-size="15" fill="#1A1B1E">环绕视频的三个约束与对应解法（定性对应关系）</text>
+
+  <g stroke="#999999" stroke-width="1.5" fill="none">
+    <circle cx="80" cy="396" r="5"/>
+    <circle cx="80" cy="440" r="5"/>
+    <circle cx="80" cy="484" r="5"/>
   </g>
   <g font-size="12.5" fill="#555">
-    <text x="140" y="372">侧面背面信息完全缺失需要合理幻觉</text>
-    <text x="140" y="408">绕行全程人物身份不能漂移</text>
-    <text x="140" y="444">几何必须前后一致，不能出现扭曲变形</text>
+    <text x="98" y="400">侧面背面信息完全缺失，需要合理幻觉</text>
+    <text x="98" y="444">绕行全程人物身份不能漂移</text>
+    <text x="98" y="488">几何必须前后一致，不能扭曲变形</text>
   </g>
   <g stroke="#999999" stroke-width="1.5">
-    <line x1="560" y1="368" x2="640" y2="368"/>
-    <line x1="560" y1="404" x2="640" y2="404"/>
-    <line x1="560" y1="440" x2="640" y2="440"/>
+    <line x1="470" y1="396" x2="560" y2="396"/>
+    <line x1="470" y1="440" x2="560" y2="440"/>
+    <line x1="470" y1="484" x2="560" y2="484"/>
   </g>
   <g fill="#999999">
-    <polygon points="640,363 650,368 640,373"/>
-    <polygon points="640,399 650,404 640,409"/>
-    <polygon points="640,435 650,440 640,445"/>
+    <polygon points="560,391 570,396 560,401"/>
+    <polygon points="560,435 570,440 560,445"/>
+    <polygon points="560,479 570,484 560,489"/>
   </g>
-  <g font-size="12.5" fill="#009E73">
-    <text x="664" y="372">视频扩散模型恰好擅长生成时间连贯的画面</text>
-    <text x="664" y="408">条件注入保持人物外观与身份</text>
-    <text x="664" y="444">保证新视角几何一致，不破坏人体结构</text>
+  <g font-size="12.5" fill="#1A1B1E">
+    <text x="586" y="400">视频扩散模型擅长生成时间连贯的画面序列</text>
+    <text x="586" y="444">条件注入保持人物外观与身份</text>
+    <text x="586" y="488">生成先验保证新视角几何一致，不破坏人体结构</text>
   </g>
-  <text x="120" y="484" font-size="12" fill="#555">传统路线基于图像扩散模型做逐视角合成，各视角独立生成，跨视角一致性与身份保持都难以保证</text>
+  <text x="60" y="530" font-size="12" fill="#555">对照：传统图像扩散逐视角合成，各视角独立生成，跨视角一致性与身份保持难以保证</text>
 
-  <!-- ============ panel c: closed loop + caveat ============ -->
-  <text x="60" y="536" font-size="15" font-weight="bold" fill="#009E73">c</text>
-  <text x="82" y="536" font-size="15" fill="#009E73">闭环与适用性</text>
-  <g font-size="12" fill="#555">
-    <text x="60" y="566">生成的多视角帧可以继续馈送给下游三维重建方法，形成「照片进、模型出」的完整闭环</text>
-    <text x="60" y="588">生成视角属于模型想象而非真实观测，细节保真度受视频模型先验限制</text>
-    <text x="60" y="610">重建结果适合展示与预览，不宜直接当作测量级几何使用</text>
-  </g>
-  <circle cx="66" cy="628" r="5" fill="#999999"/>
-  <text x="80" y="632" font-size="12" fill="#555">空心圆与灰色圆点为标注元素，不是数据</text>
+  <!-- ============ panel c: caveat ============ -->
+  <text x="60" y="568" font-size="15" font-weight="bold" fill="#1A1B1E">c</text>
+  <text x="82" y="568" font-size="15" fill="#1A1B1E">适用边界</text>
+  <text x="60" y="596" font-size="12" fill="#555">生成视角属于模型想象而非真实观测，保真度受视频模型先验限制；重建结果宜作展示与预览，不宜作测量级几何</text>
 
   <!-- footnote -->
-  <text x="640" y="650" font-size="11" fill="#767676">数据：CVPR 2026（HumanOrbit，CVF 开放获取）· DEGRADED：正文为方法性描述，未披露可作图的量化性能数值，改为管线与约束示意</text>
+  <text x="60" y="636" font-size="11" fill="#767676">数据：CVPR 2026（HumanOrbit，CVF 开放获取）· 全图为方法与约束示意 · DEGRADED：正文为方法性描述，未披露可作图的量化性能数值，面板与底注双重声明口径</text>
 </svg>

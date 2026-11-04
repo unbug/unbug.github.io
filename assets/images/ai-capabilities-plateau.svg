@@ -1,58 +1,65 @@
-<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
-  
-  
-  <rect width="800" height="400" fill="#555555"/>
-  
-  <!-- Grid lines -->
-  <g stroke="#009E73" stroke-width="1" opacity="0.5">
-    <line x1="100" y1="50" x2="700" y2="50"/>
-    <line x1="100" y1="125" x2="700" y2="125"/>
-    <line x1="100" y1="200" x2="700" y2="200"/>
-    <line x1="100" y1="275" x2="700" y2="275"/>
-    <line x1="100" y1="350" x2="700" y2="350"/>
-    <line x1="100" y1="50" x2="100" y2="350"/>
-    <line x1="200" y1="50" x2="200" y2="350"/>
-    <line x1="300" y1="50" x2="300" y2="350"/>
-    <line x1="400" y1="50" x2="400" y2="350"/>
-    <line x1="500" y1="50" x2="500" y2="350"/>
-    <line x1="600" y1="50" x2="600" y2="350"/>
-    <line x1="700" y1="50" x2="700" y2="350"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">同一组 METR 公开数据下，Sigmoid 拟合误差 203.69，低于指数曲线的 339.93 与指数链接的 2874.67</text>
+
+  <!-- ============ panel a: MSE comparison ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">三种模型的拟合误差比较（MSE，越低越好）</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="540" y1="130" x2="540" y2="330"/>
   </g>
-  
-  <!-- Axes labels -->
-  <g fill="#CC79A7" font-family="Arial, sans-serif" font-size="14">
-    <text x="400" y="380" text-anchor="middle">Time →</text>
-    <text x="60" y="200" text-anchor="middle" transform="rotate(-90, 60, 200)">AI Capability</text>
-    <text x="100" y="365" text-anchor="middle">2019</text>
-    <text x="300" y="365" text-anchor="middle">2022</text>
-    <text x="450" y="365" text-anchor="middle">2025</text>
-    <text x="600" y="365" text-anchor="middle">2028</text>
+  <!-- x = 180 + v/6 -->
+  <text x="408" y="166" font-size="12.5" fill="#1A1B1E" text-anchor="end">Sigmoid 链接</text>
+  <rect x="180" y="152" width="123.95" height="20" fill="#D55E00"/>
+  <text x="312" y="166" font-size="12" fill="#555">203.69</text>
+
+  <text x="408" y="236" font-size="12.5" fill="#1A1B1E" text-anchor="end">METR 指数曲线</text>
+  <rect x="180" y="222" width="150" height="20" fill="#999999"/>
+  <text x="338" y="236" font-size="12" fill="#555">339.93</text>
+
+  <text x="408" y="306" font-size="12.5" fill="#1A1B1E" text-anchor="end">指数链接函数</text>
+  <rect x="180" y="292" width="920" height="20" fill="#999999"/>
+  <polygon points="1100,286 1124,302 1100,318" fill="#999999"/>
+  <text x="200" y="142" font-size="12" fill="#555">指数链接函数 2874.67 超出横轴量程，以箭头条截断表示</text>
+
+  <line x1="180" y1="330" x2="1140" y2="330" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="540" y1="330" x2="540" y2="334"/>
   </g>
-  
-  <!-- Exponential curve (METR view) - dashed red -->
-  <path d="M 100 340 Q 200 330 300 300 Q 400 250 500 180 Q 600 80 700 30" 
-        stroke="url(#exponentialGradient)" stroke-width="3" fill="none" stroke-dasharray="8,4"/>
-  
-  <!-- Sigmoid curve (new paper view) - solid cyan -->
-  <path d="M 100 340 Q 200 330 300 300 Q 400 220 480 150 Q 540 100 600 80 Q 650 70 700 65" 
-        stroke="url(#sigmoidGradient)" stroke-width="4" fill="none"/>
-  
-  <!-- Inflection point marker -->
-  <circle cx="480" cy="150" r="8" fill="#56B4E9"/>
-  <circle cx="480" cy="150" r="4" fill="#009E73"/>
-  
-  <!-- Legend -->
-  <g font-family="Arial, sans-serif">
-    <rect x="550" y="80" width="20" height="3" fill="#555555" stroke-dasharray="8,4"/>
-    <text x="580" y="85" fill="#CC79A7" font-size="14">METR: Exponential</text>
-    <rect x="550" y="105" width="20" height="4" fill="#555555"/>
-    <text x="580" y="110" fill="#56B4E9" font-size="14">New: Sigmoid (Plateau)</text>
-    <circle cx="560" cy="135" r="6" fill="#56B4E9"/>
-    <text x="580" y="140" fill="#F0F0F0" font-size="14">Inflection Point (2025)</text>
+  <text x="660" y="374" font-size="14" fill="#1A1B1E" text-anchor="middle">均方误差 MSE</text>
+
+  <!-- ============ panel b: inflection timeline ============ -->
+  <text x="60" y="426" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="426" font-size="15" fill="#1A1B1E">Sigmoid 模型下的拐点位置：能力分解后的两条曲线</text>
+
+  <!-- timeline 2024-06-06..2026-12-06: x = 180 + days/1200*960 -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="420" y1="450" x2="420" y2="520"/>
+          </g>
+  <!-- 2024-11-21 -> 326.7 -->
+  <circle cx="326.7" cy="486" r="5" fill="#999999"/>
+  <text x="326.7" y="472" font-size="12" fill="#555" text-anchor="middle">2024 年 11 月 21 日</text>
+  <text x="326.7" y="508" font-size="12.5" fill="#1A1B1E" text-anchor="middle">基础能力（已过）</text>
+  <!-- 2025-06-06 -> 576.3 -->
+  <circle cx="576.3" cy="486" r="5" fill="#D55E00"/>
+  <text x="576.3" y="472" font-size="12" fill="#555" text-anchor="middle">2025 年 6 月 6 日</text>
+  <text x="576.3" y="508" font-size="12.5" fill="#1A1B1E" text-anchor="middle">总体能力</text>
+  <!-- 2026-06-06 -> 945.2 -->
+  <circle cx="945.2" cy="486" r="5" fill="#0072B2"/>
+  <text x="945.2" y="472" font-size="12" fill="#555" text-anchor="middle">2026 年 6 月 6 日</text>
+  <text x="945.2" y="508" font-size="12.5" fill="#1A1B1E" text-anchor="middle">推理能力（即将到来）</text>
+
+  <line x1="180" y1="540" x2="1140" y2="540" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="180" y="560">2024 年 6 月</text>
+    <text x="420" y="560">2025 年 1 月</text>
   </g>
-  
-  <!-- Title -->
-  <text x="400" y="35" text-anchor="middle" fill="#F0F0F0" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
-    AI Growth: Exponential vs Plateau
-  </text>
+  <text x="630" y="586" font-size="14" fill="#1A1B1E" text-anchor="middle">拐点日期（论文拟合口径）</text>
+
+  <!-- footnote -->
+  <text x="60" y="618" font-size="11" fill="#767676">数据：arXiv:2602.04836 · METR 公开评测数据（170 个任务，覆盖 HCAST、RE-Bench、SWAA 三套基准；28 个模型，其中 15 个为当时最先进的模型；Stan 贝叶斯式拟合）· 论文自测口径</text>
+  <text x="60" y="636" font-size="11" fill="#767676">面板 a 条形长度按论文 MSE 数值线性映射，轴无标注数字，数值直接标在条形旁；面板 b 横轴为日历时间轴，末端超出最后一个标注刻度</text>
 </svg>
