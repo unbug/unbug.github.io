@@ -1,89 +1,108 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#F0F0F0"/>
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
   <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#009E73">综合性能对比表中，Vision-DeepResearch-8B 的平均为 50.5，超过 GPT-5 (智能体工作流) 的 48.3 与 GPT-5 (直接回答) 的 37.4</text>
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">六个基准平均分：8B 版本 50.5 分，高于 GPT-5 直接回答的 37.4 分，与 Gemini-2.5 Pro 工作流的 50.7 分接近</text>
 
-  <!-- ============ panel a: average score bars ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#009E73">a</text>
-  <text x="82" y="104" font-size="15" fill="#009E73">综合性能对比的平均（论文表格自测口径）</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">六个基准平均分对比</text>
 
   <g stroke="#D9D9D9" stroke-width="0.5">
-    <line x1="330" y1="130" x2="330" y2="430"/>
-    <line x1="530" y1="130" x2="530" y2="430"/>
-    <line x1="730" y1="130" x2="730" y2="430"/>
+    <line x1="320" y1="130" x2="320" y2="418"/>
+    <line x1="520" y1="130" x2="520" y2="418"/>
+    <line x1="720" y1="130" x2="720" y2="418"/>
   </g>
-  <!-- rows: x = 130 + 10*v -->
-  <g font-size="12.5" fill="#009E73" text-anchor="end">
-    <text x="318" y="158">Claude-4-Sonnet (直接回答)</text>
-    <text x="318" y="202">GPT-5 (直接回答)</text>
-    <text x="318" y="246">Gemini-2.5 Pro (直接回答)</text>
-    <text x="318" y="290">GPT-5 (智能体工作流)</text>
-    <text x="318" y="334">Gemini-2.5 Pro (智能体工作流)</text>
-    <text x="318" y="378">Vision-DeepResearch-8B</text>
-    <text x="318" y="422">Vision-DeepResearch-30B-A3B</text>
+  <!-- rows: x = 120 + 10*v -->
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="110" y="154">GPT-5 直接回答</text>
+    <text x="110" y="194">Gemini-2.5 Pro 直接回答</text>
+    <text x="110" y="234">GPT-5 智能体工作流</text>
+    <text x="110" y="274">Gemini-2.5 Pro 智能体工作流</text>
   </g>
-  <rect x="130" y="144" width="213" height="18" fill="#999999"/>
-  <text x="351" y="158" font-size="12" fill="#555">21.3</text>
-  <rect x="130" y="188" width="374" height="18" fill="#999999"/>
-  <text x="512" y="202" font-size="12" fill="#555">37.4</text>
-  <rect x="130" y="232" width="377" height="18" fill="#999999"/>
-  <text x="515" y="246" font-size="12" fill="#555">37.7</text>
-  <rect x="130" y="276" width="483" height="18" fill="#0072B2"/>
-  <text x="621" y="290" font-size="12" fill="#555">48.3</text>
-  <rect x="130" y="320" width="507" height="18" fill="#0072B2"/>
-  <text x="645" y="334" font-size="12" fill="#555">50.7</text>
-  <rect x="130" y="364" width="505" height="18" fill="#D55E00"/>
-  <text x="643" y="378" font-size="12" fill="#555">50.5</text>
-  <rect x="130" y="408" width="569" height="18" fill="#D55E00"/>
-  <text x="707" y="422" font-size="12" fill="#555">56.9</text>
+  <rect x="120" y="140" width="374" height="18" fill="#999999"/>
+  <text x="528" y="154" font-size="12" fill="#555">37.4</text>
+  <rect x="120" y="180" width="377" height="18" fill="#999999"/>
+  <text x="531" y="194" font-size="12" fill="#555">37.7</text>
+  <rect x="120" y="220" width="483" height="18" fill="#999999"/>
+  <text x="637" y="234" font-size="12" fill="#555">48.3</text>
+  <rect x="120" y="260" width="507" height="18" fill="#999999"/>
+  <text x="661" y="274" font-size="12" fill="#555">50.7</text>
 
-  <line x1="130" y1="470" x2="830" y2="470" stroke="#009E73" stroke-width="0.75"/>
-  <g stroke="#009E73" stroke-width="0.75">
-    <line x1="130" y1="470" x2="130" y2="474"/>
-    <line x1="330" y1="470" x2="330" y2="474"/>
-    <line x1="530" y1="470" x2="530" y2="474"/>
-    <line x1="730" y1="470" x2="730" y2="474"/>
+  <!-- comparison rows: gray bar = base model, orange bar = after training -->
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="110" y="318">Vision-DeepResearch-8B</text>
+    <text x="110" y="394">Vision-DeepResearch-30B-A3B</text>
   </g>
-  <g font-size="12.5" fill="#009E73" text-anchor="middle">
-    <text x="130" y="492">0</text>
-    <text x="330" y="492">20</text>
-    <text x="530" y="492">40</text>
-    <text x="730" y="492">60</text>
+  <!-- 8B base avg implied by 50.5 - 10.4 -->
+  <rect x="120" y="304" width="401" height="16" fill="#999999"/>
+  <text x="529" y="316" font-size="12" fill="#555">训练前平均分（由提升量推算）</text>
+  <rect x="120" y="328" width="505" height="16" fill="#D55E00"/>
+  <text x="633" y="341" font-size="12" fill="#555">50.5</text>
+  <text x="633" y="359" font-size="12" fill="#555">平均提升 10.4 分</text>
+  <!-- 30B-A3B base avg implied by 56.9 - 16.0 -->
+  <rect x="120" y="372" width="409" height="16" fill="#999999"/>
+  <text x="537" y="384" font-size="12" fill="#555">训练前平均分（由提升量推算）</text>
+  <rect x="120" y="396" width="569" height="16" fill="#D55E00"/>
+  <text x="697" y="409" font-size="12" fill="#555">56.9</text>
+  <text x="697" y="427" font-size="12" fill="#555">平均提升 16.0 分</text>
+
+  <!-- value axis -->
+  <line x1="120" y1="440" x2="720" y2="440" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="120" y1="440" x2="120" y2="444"/>
+    <line x1="220" y1="440" x2="220" y2="444"/>
+    <line x1="320" y1="440" x2="320" y2="444"/>
+    <line x1="420" y1="440" x2="420" y2="444"/>
+    <line x1="520" y1="440" x2="520" y2="444"/>
+    <line x1="620" y1="440" x2="620" y2="444"/>
+    <line x1="689" y1="440" x2="689" y2="444"/>
+    <line x1="720" y1="440" x2="720" y2="444"/>
   </g>
-  <text x="530" y="516" font-size="14" fill="#009E73" text-anchor="middle">综合性能对比的平均（分）</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="120" y="462">0</text>
+    <text x="320" y="462">20</text>
+    <text x="520" y="462">40</text>
+    <text x="689" y="462" font-weight="bold">50.5</text>
+    <text x="720" y="462">60</text>
+  </g>
+  <text x="420" y="488" font-size="14" fill="#1A1B1E" text-anchor="middle">六个基准平均分（分）</text>
   <g font-size="12" fill="#555">
-    <rect x="130" y="530" width="12" height="10" fill="#999999"/>
-    <text x="147" y="539">直接回答</text>
-    <rect x="290" y="530" width="12" height="10" fill="#0072B2"/>
-    <text x="307" y="539">智能体工作流</text>
-    <rect x="480" y="530" width="12" height="10" fill="#D55E00"/>
-    <text x="497" y="539">Vision-DeepResearch</text>
+    <rect x="120" y="506" width="12" height="10" fill="#999999"/>
+    <text x="137" y="515">外部模型与训练前平均分</text>
+    <rect x="360" y="506" width="12" height="10" fill="#D55E00"/>
+    <text x="377" y="515">训练后模型</text>
   </g>
-  <text x="130" y="566" font-size="12" fill="#555">对比基础模型：Vision-DeepResearch-8B 平均：+10.4 分（从 40.1 → 50.5）；Vision-DeepResearch-30B-A3B 平均：+16.0 分（从 40.9 → 56.9）</text>
 
-  <!-- ============ panel b: method sequence ============ -->
-  <text x="980" y="104" font-size="15" font-weight="bold" fill="#009E73">b</text>
-  <text x="1002" y="104" font-size="15" fill="#009E73">推理流程</text>
-  <g font-size="12.5" fill="#009E73">
-    <circle cx="1000" cy="160" r="7" fill="#0072B2"/>
-    <text x="1018" y="165">多轮推理</text>
-    <circle cx="1000" cy="220" r="7" fill="#0072B2"/>
-    <text x="1018" y="225">工具调用</text>
-    <circle cx="1000" cy="280" r="7" fill="#0072B2"/>
-    <text x="1018" y="285">观察整合</text>
-    <circle cx="1000" cy="340" r="7" fill="#0072B2"/>
-    <text x="1018" y="345">最终答案</text>
+  <!-- ============ panel b ============ -->
+  <text x="850" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="872" y="104" font-size="15" fill="#1A1B1E">推理循环（序列位置，非数值轴）</text>
+  <g font-size="12.5" fill="#1A1B1E">
+    <circle cx="895" cy="150" r="7" fill="#D55E00"/>
+    <text x="915" y="155">推理</text>
+    <circle cx="895" cy="210" r="7" fill="#D55E00"/>
+    <text x="915" y="215">工具调用</text>
+    <circle cx="895" cy="270" r="7" fill="#D55E00"/>
+    <text x="915" y="275">观察整合</text>
+    <circle cx="895" cy="330" r="7" fill="#D55E00"/>
+    <text x="915" y="335">最终答案</text>
   </g>
-  <path d="M 1150 160 L 1166 160 L 1166 340 L 1156 340" fill="none" stroke="#999999" stroke-width="1.5" stroke-dasharray="4 3"/>
-  <text x="1018" y="188" font-size="12" fill="#555">扩展到数十轮推理步骤</text>
-  <text x="1018" y="204" font-size="12" fill="#555">和数百次搜索引擎交互</text>
-  <text x="980" y="392" font-size="12" fill="#555">推理 → 工具调用 →</text>
-  <text x="980" y="408" font-size="12" fill="#555">观察整合 → 下一步推理</text>
-  <text x="980" y="424" font-size="12" fill="#555">→ … → 最终答案</text>
-  <text x="980" y="446" font-size="12" fill="#555">训练：冷启动监督</text>
-  <text x="980" y="462" font-size="12" fill="#555">训练 + 强化学习训练</text>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="895" y1="161" x2="895" y2="199"/>
+    <polygon points="895,203 891.5,196 898.5,196"/>
+    <line x1="895" y1="221" x2="895" y2="259"/>
+    <polygon points="895,263 891.5,256 898.5,256"/>
+    <line x1="895" y1="281" x2="895" y2="319"/>
+    <polygon points="895,323 891.5,316 898.5,316"/>
+  </g>
+  <path d="M 882.9 142.9 L 858 118 L 858 330 L 882.9 337.1" fill="none" stroke="#999999" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="915" y="180" font-size="12" fill="#555">观察整合进后续推理</text>
+  <text x="915" y="240" font-size="12" fill="#555">四类工具：图像裁剪、图像搜索、</text>
+  <text x="915" y="256" font-size="12" fill="#555">文本搜索、网页浏览</text>
+  <text x="850" y="404" font-size="12" fill="#555">循环可达数十轮推理、数百次真实搜索交互；</text>
+  <text x="850" y="422" font-size="12" fill="#555">训练分两步：冷启动监督微调，再强化学习</text>
 
   <!-- footnote -->
-  <text x="60" y="640" font-size="11" fill="#767676">数据：arXiv:2601.22060 与 arXiv:2602.02185（VDR-Bench）· 六个基准为 VDR、FVQA、MMSearch+、MMSearch、LiveVQA、BC-VL，取表中"平均"列 · 论文自测口径，未报告误差区间，未画误差棒 · b 面板为序列位置轴</text>
+  <text x="60" y="586" font-size="11" fill="#767676">数据：arXiv:2601.22060 · 六基准为 VDR、FVQA、MMSearch+、MMSearch、LiveVQA、BC-VL 的平均分 · 论文自测口径</text>
+  <text x="60" y="604" font-size="11" fill="#767676">灰色训练前条位置由正文提升量推算，正文未给出训练前平均分数值 · b 面板为机制示意，非实测数值</text>
 </svg>
