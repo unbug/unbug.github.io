@@ -1,102 +1,113 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'','',serif">
-  <defs>
-    <style>
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #CC79A7; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-      .rl { font-size: 15px; fill: #009E73; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-      .val { font-size: 18px; font-weight: 700; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-      .b { font-size: 12px; fill: #CC79A7; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-      .chip { font-size: 12.5px; font-weight: 600; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-    </style>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="#CC79A7"/>
-  <circle cx="1105" cy="112" r="140" fill="#E69F00" opacity="0.07"/>
-  <circle cx="70" cy="620" r="115" fill="#D55E00" opacity="0.06"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="#CC79A7"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">反馈驱动的自动 harness 合成：TerminalBench-2 达 84.3%，Chrome 中发现 10 个未知零日漏洞</text>
 
-  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2604.20801 · UCSB 等</text>
-  <text x="64" y="128" font-size="40" font-weight="700" fill="#009E73">蜂群要配蜂箱来养</text>
-  <text x="64" y="158" font-size="15" fill="#009E73" font-family="'PingFang SC','Helvetica Neue',sans-serif">AgentFlow 用类型化图 DSL 自动合成多智能体协作方案，反馈驱动改写「蜂箱」</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">反馈驱动外层循环（机制示意，非实测数据）</text>
 
-  <!-- apiary motif: hives + bee flight paths -->
-  <g>
-    <g stroke="#CC79A7" stroke-width="1.5" opacity="0.55" fill="none" stroke-dasharray="3 4">
-      <path d="M 960 158 Q 1030 96 1100 138"/>
-      <path d="M 1048 150 Q 1106 108 1160 140"/>
-    </g>
-    <circle cx="1026" cy="112" r="3.5" fill="#E69F00"/><circle cx="1108" cy="114" r="3.5" fill="#E69F00"/><circle cx="1150" cy="128" r="3.5" fill="#E69F00"/>
-    <g>
-      <rect x="946" y="118" width="58" height="40" fill="#F0E442"/>
-      <path d="M 940 118 L 975 92 L 1010 118 Z" fill="#CC79A7"/>
-      <rect x="954" y="150" width="10" height="8" fill="#D55E00"/>
-    </g>
-    <g>
-      <rect x="1036" y="106" width="62" height="52" fill="#F0E442"/>
-      <path d="M 1030 106 L 1067 78 L 1104 106 Z" fill="#CC79A7"/>
-      <rect x="1046" y="150" width="10" height="8" fill="#D55E00"/>
-      <line x1="1036" y1="124" x2="1098" y2="124" stroke="#D55E00" stroke-width="1.5" opacity="0.6"/>
-      <line x1="1036" y1="138" x2="1098" y2="138" stroke="#D55E00" stroke-width="1.5" opacity="0.6"/>
-    </g>
-    <g>
-      <rect x="1128" y="118" width="56" height="40" fill="#F0E442"/>
-      <path d="M 1122 118 L 1156 92 L 1190 118 Z" fill="#CC79A7"/>
-      <rect x="1136" y="150" width="10" height="8" fill="#D55E00"/>
-    </g>
-    <path d="M 973 158 h 14 M 1065 158 h 14 M 1155 158 h 14" stroke="#CC79A7" stroke-width="2" opacity="0.5"/>
+  <!-- loop path -->
+  <g stroke="#999999" stroke-width="1.5" fill="none">
+    <line x1="262" y1="210" x2="336" y2="210"/>
+    <line x1="512" y1="210" x2="586" y2="210"/>
+    <line x1="762" y1="210" x2="836" y2="210"/>
+    <line x1="920" y1="250" x2="920" y2="300"/>
+    <line x1="920" y1="300" x2="170" y2="300"/>
+    <line x1="170" y1="300" x2="170" y2="254"/>
+  </g>
+  <g fill="#999999">
+    <polygon points="336,206 344,210 336,214"/>
+    <polygon points="586,206 594,210 586,214"/>
+    <polygon points="836,206 844,210 836,214"/>
+    <polygon points="166,254 170,246 174,254"/>
   </g>
 
-  <!-- left: big numbers -->
-  <g>
-    <rect x="64" y="200" width="690" height="104" fill="#0072B2" opacity="0.08"/>
-    <text x="92" y="262" font-size="44" font-weight="700" fill="#D55E00">10 个</text>
-    <text x="212" y="244" class="rl">Chrome 未知零日漏洞</text>
-    <text x="212" y="266" class="b">自动合成 harness 发现，Kimi K2.5</text>
-    <text x="560" y="252" font-size="26" font-weight="700" fill="#D55E00" text-anchor="end">2 个</text>
-    <text x="576" y="244" class="rl">Critical 沙箱逃逸</text>
-    <text x="576" y="266" class="b">CVE-2026-5280 · CVE-2026-6297</text>
+  <!-- node 1 -->
+  <rect x="80" y="170" width="180" height="80" fill="none" stroke="#1A1B1E" stroke-width="0.75"/>
+  <text x="170" y="200" font-size="12.5" fill="#1A1B1E" text-anchor="middle">Proposer</text>
+  <text x="170" y="220" font-size="12" fill="#555" text-anchor="middle">按失败模式生成</text>
+  <text x="170" y="236" font-size="12" fill="#555" text-anchor="middle">图结构变体</text>
 
-    <rect x="64" y="322" width="690" height="112" fill="#E69F00" opacity="0.08"/>
-    <text class="rl" x="92" y="362">TerminalBench-2 成绩 · Claude Opus 4.6</text>
-    <line x1="92" y1="402" x2="600" y2="402" stroke="#CC79A7" stroke-width="2"/>
-    <line x1="92" y1="402" x2="514.7" y2="402" stroke="url(#gAmber)" stroke-width="3"/>
-    <circle cx="514.7" cy="402" r="9" fill="#F0E442"/>
-    <text class="val" x="534" y="409" fill="#D55E00">84.3%</text>
-    <text class="b" x="92" y="426">公开 leaderboard 最高分</text>
-  </g>
+  <!-- node 2 (主角) -->
+  <rect x="344" y="170" width="170" height="80" fill="#D55E00"/>
+  <text x="429" y="200" font-size="12.5" fill="#FFFFFF" text-anchor="middle">Execute-Observe-Score</text>
+  <text x="429" y="220" font-size="12" fill="#FFFFFF" text-anchor="middle">执行候选 harness</text>
+  <text x="429" y="236" font-size="12" fill="#FFFFFF" text-anchor="middle">并收集运行时信号</text>
 
-  <!-- right: loop motif -->
-  <g>
-    <rect x="836" y="200" width="304" height="234" rx="12" fill="#E69F00" opacity="0.09"/>
-    <text x="856" y="228" font-size="15" font-weight="700" fill="#009E73" font-family="'PingFang SC','Helvetica Neue',sans-serif">外环巡检循环</text>
-    <g stroke-linecap="round">
-      <line x1="988" y1="252" x2="947" y2="321" stroke="url(#gProp)" stroke-width="2.5"/>
-      <line x1="947" y1="321" x2="1029" y2="321" stroke="url(#gExec)" stroke-width="2.5"/>
-      <path d="M 1029 321 Q 1064 285 1040 254" fill="none" stroke="url(#gDiag)" stroke-width="2.5"/>
-      <path d="M 1036 262 l 6 -10 l 6 10" fill="none" stroke="url(#gDiag)" stroke-width="2.5"/>
-    </g>
-    <circle cx="988" cy="248" r="13" fill="#CC79A7"/><text x="988" y="253" text-anchor="middle" font-size="12" font-weight="700" fill="#CC79A7" font-family="'PingFang SC',sans-serif">P</text>
-    <circle cx="943" cy="325" r="13" fill="#F0E442"/><text x="943" y="330" text-anchor="middle" font-size="12" font-weight="700" fill="#CC79A7" font-family="'PingFang SC',sans-serif">E</text>
-    <circle cx="1033" cy="325" r="13" fill="#56B4E9"/><text x="1033" y="330" text-anchor="middle" font-size="12" font-weight="700" fill="#CC79A7" font-family="'PingFang SC',sans-serif">D</text>
-    <text class="b" x="856" y="372">P 生成新蜂箱变体 · E 执行评分 · D 诊断失败环节</text>
-    <text class="b" x="856" y="392">诊断读取运行时信号，而非只看通过/失败</text>
-    <text x="856" y="422" font-size="15" font-weight="700" fill="#D55E00">蜂箱比蜂种更值钱</text>
-  </g>
+  <!-- node 3 -->
+  <rect x="594" y="170" width="170" height="80" fill="none" stroke="#1A1B1E" stroke-width="0.75"/>
+  <text x="679" y="200" font-size="12.5" fill="#1A1B1E" text-anchor="middle">Diagnoser</text>
+  <text x="679" y="220" font-size="12" fill="#555" text-anchor="middle">读取 sanitizer 输出、</text>
+  <text x="679" y="236" font-size="12" fill="#555" text-anchor="middle">覆盖率数据，定位失败环节</text>
 
-  <!-- bottom chips: DSL search space -->
-  <line x1="64" y1="486" x2="1136" y2="486" stroke="#CC79A7"/>
-  <g>
-    <text class="rl" x="64" y="528">DSL 搜索空间</text>
-    <rect x="176" y="508" width="92" height="28" rx="14" fill="#F0E442" opacity="0.28"/>
-    <text x="222" y="527" text-anchor="middle" class="chip" fill="#D55E00">智能体角色</text>
-    <rect x="278" y="508" width="76" height="28" rx="14" fill="#CC79A7" opacity="0.22"/>
-    <text x="316" y="527" text-anchor="middle" class="chip" fill="#D55E00">提示词</text>
-    <rect x="364" y="508" width="66" height="28" rx="14" fill="#56B4E9" opacity="0.22"/>
-    <text x="397" y="527" text-anchor="middle" class="chip" fill="#009E73">工具</text>
-    <rect x="440" y="508" width="92" height="28" rx="14" fill="#56B4E9" opacity="0.24"/>
-    <text x="486" y="527" text-anchor="middle" class="chip" fill="#009E73">通信拓扑</text>
-    <rect x="542" y="508" width="92" height="28" rx="14" fill="#F0E442" opacity="0.28"/>
-    <text x="588" y="527" text-anchor="middle" class="chip" fill="#D55E00">协调协议</text>
+  <!-- feedback label -->
+  <text x="545" y="324" font-size="12" fill="#555" text-anchor="middle">运行时信号反馈：指导下一轮搜索（传统优化器仅有粗粒度通过/失败信号）</text>
+
+  <!-- typed DSL note -->
+  <text x="80" y="372" font-size="12" fill="#555">类型化图 DSL 的搜索空间覆盖智能体角色、提示词、工具、通信拓扑与协调协议；</text>
+  <text x="80" y="394" font-size="12" fill="#555">类型约束保证生成方案结构合法：节点对应有效角色、边定义合法通道、反馈通道匹配目标程序信号类型。</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="60" y="446" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="446" font-size="15" fill="#1A1B1E">两项评估结果（论文自测口径）</text>
+
+  <!-- left: bar for 84.3 -->
+  <text x="260" y="486" font-size="12.5" fill="#1A1B1E" text-anchor="middle">TerminalBench-2 成绩（%，Claude Opus 4.6）</text>
+  <line x1="120" y1="590" x2="400" y2="590" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="120" y1="590" x2="120" y2="594"/>
+    <line x1="190" y1="590" x2="190" y2="594"/>
+    <line x1="260" y1="590" x2="260" y2="594"/>
+    <line x1="330" y1="590" x2="330" y2="594"/>
+    <line x1="400" y1="590" x2="400" y2="594"/>
   </g>
-  <text x="64" y="584" font-size="18" fill="#009E73">编排不是手工艺术，是蜂场里可搜索、可优化的设计空间。</text>
-  <text class="b" x="1136" y="618" text-anchor="end" font-family="'PingFang SC','Helvetica Neue',sans-serif">数据为论文自述口径 · 预印本未经同行评审 · Micropaper</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="120" y="614">0</text>
+    <text x="190" y="614">25</text>
+    <text x="260" y="614">50</text>
+    <text x="330" y="614">75</text>
+    <text x="400" y="614">100</text>
+  </g>
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="190" y1="510" x2="190" y2="590"/>
+    <line x1="260" y1="510" x2="260" y2="590"/>
+    <line x1="330" y1="510" x2="330" y2="590"/>
+    <line x1="400" y1="510" x2="400" y2="590"/>
+  </g>
+  <rect x="120" y="520" width="236.04" height="26" fill="#D55E00"/>
+  <text x="364" y="538" font-size="12" fill="#555">84.3</text>
+  <text x="260" y="640" font-size="12" fill="#555" text-anchor="middle">公开 leaderboard 最高分</text>
+
+  <!-- right: count axis for CVE -->
+  <text x="830" y="486" font-size="12.5" fill="#1A1B1E" text-anchor="middle">Chrome 未知零日漏洞（个，Kimi K2.5）</text>
+  <line x1="640" y1="590" x2="960" y2="590" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="640" y1="590" x2="640" y2="594"/>
+    <line x1="720" y1="590" x2="720" y2="594"/>
+    <line x1="800" y1="590" x2="800" y2="594"/>
+    <line x1="880" y1="590" x2="880" y2="594"/>
+    <line x1="960" y1="590" x2="960" y2="594"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="640" y="614">0</text>
+    <text x="720" y="614">2</text>
+    <text x="800" y="614">4</text>
+    <text x="880" y="614">6</text>
+    <text x="960" y="614">8</text>
+  </g>
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="720" y1="510" x2="720" y2="590"/>
+    <line x1="800" y1="510" x2="800" y2="590"/>
+    <line x1="880" y1="510" x2="880" y2="590"/>
+    <line x1="960" y1="510" x2="960" y2="590"/>
+  </g>
+  <rect x="640" y="520" width="400" height="26" fill="#999999"/>
+  <polygon points="1040,520 1052,533 1040,546" fill="#999999"/>
+  <text x="1060" y="538" font-size="12" fill="#555">10</text>
+  <text x="830" y="640" font-size="12" fill="#555" text-anchor="middle">轴标到 8，实心条超出轴末端表示 10 个</text>
+
+  <!-- footnote (two lines) -->
+  <text x="60" y="662" font-size="11" fill="#767676">数据：arXiv:2604.20801（加州大学圣塔芭芭拉分校等）· 两项结果均为论文自测口径 · Chrome 的 10 个零日漏洞含 2 个 Critical 级沙箱逃逸（CVE-2026-5280、CVE-2026-6297）</text>
 </svg>

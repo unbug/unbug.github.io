@@ -1,162 +1,108 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580">
-  <defs>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <filter id="shadow">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#1A1B1E" flood-opacity="0.4"/>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <!-- Background -->
-  <rect width="900" height="580" fill="#555555"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">四项科研任务中 AI 耗时均短于人类，量级差距在数天到数月之间</text>
 
-  <!-- Decorative elements -->
-  <circle cx="850" cy="60" r="140" fill="#0072B2" opacity="0.05"/>
-  <circle cx="100" cy="520" r="200" fill="#56B4E9" opacity="0.05"/>
-  <path d="M 150 200 Q 450 250 750 200" stroke="#0072B2" stroke-width="2" fill="none" opacity="0.1"/>
-  <circle cx="450" cy="290" r="180" fill="#56B4E9" opacity="0.03"/>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">四项任务耗时对比（对数轴，天）</text>
 
-  <!-- Title -->
-  <text x="450" y="45" text-anchor="middle" fill="#F0F0F0" font-size="28" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
-    AI 科学家：自主科研新范式
-  </text>
-  <text x="450" y="72" text-anchor="middle" fill="#999999" font-size="13" font-family="system-ui, -apple-system, sans-serif">
-    Autonomous AI Researcher · Nature 2026
-  </text>
-
-  <!-- Central AI Scientist icon -->
-  <g transform="translate(450, 140)">
-    <circle cx="0" cy="0" r="70" fill="#555555" filter="url(#glow)" opacity="0.85"/>
-    <circle cx="0" cy="0" r="70" stroke="#F0F0F0" stroke-width="2" fill="none" opacity="0.3"/>
-    <text x="0" y="5" text-anchor="middle" fill="#F0F0F0" font-size="18" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
-      🤖 AI 科学家
-    </text>
-    <text x="0" y="22" text-anchor="middle" fill="#CC79A7" font-size="10" font-family="system-ui, -apple-system, sans-serif">
-      自主科研
-    </text>
+  <!-- gridlines: vertical majors at d = 0.1,1,10,100 ; x = 210 + 90*(log10(d)+1) -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="300" y1="126" x2="300" y2="420"/>
+    <line x1="390" y1="126" x2="390" y2="420"/>
+    <line x1="480" y1="126" x2="480" y2="420"/>
   </g>
 
-  <!-- Five capabilities around the center -->
-  <!-- 1. Independent Topics -->
-  <g transform="translate(50, 180)">
-    <rect width="280" height="180" rx="10" fill="#555555" filter="url(#shadow)"/>
-    <text x="140" y="25" text-anchor="middle" fill="#0072B2" font-size="17" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
-      🔍 独立选题
-    </text>
-    <rect x="0" y="45" width="280" height="2" fill="#0072B2" opacity="0.5"/>
-    <g transform="translate(20, 60)">
-      <text x="0" y="0" fill="#F0F0F0" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 识别未解科学问题</text>
-      <text x="0" y="20" fill="#F0F0F0" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 生成原创性假设</text>
-      <text x="0" y="40" fill="#F0F0F0" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 基于现有知识创新</text>
-      <text x="0" y="60" fill="#F0F0F0" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 跨领域问题发现</text>
-    </g>
-    <text x="260" y="25" text-anchor="end" fill="#0072B2" font-size="20" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">1</text>
+  <!-- rows: y positions 150, 222, 294, 366 (row center) -->
+  <!-- 文献综述 human 7-14d: x 460.4-492.6 ; AI 1/24-2/24d: x 223.6-233.2 -->
+  <text x="198" y="154" font-size="12.5" fill="#1A1B1E" text-anchor="end">文献综述</text>
+  <rect x="460.4" y="142" width="32.2" height="16" fill="#999999"/>
+  <text x="500" y="154" font-size="12" fill="#555">1–2 周</text>
+  <rect x="223.6" y="164" width="9.6" height="16" fill="#D55E00"/>
+  <text x="240" y="176" font-size="12" fill="#555">1–2 小时</text>
+
+  <!-- 实验设计 human 30-90d: x 640-710.8 ; AI 1-2d: x 390-421.8 -->
+  <text x="198" y="226" font-size="12.5" fill="#1A1B1E" text-anchor="end">实验设计</text>
+  <rect x="640" y="214" width="70.8" height="16" fill="#999999"/>
+  <text x="718" y="226" font-size="12" fill="#555">1–3 个月</text>
+  <rect x="390" y="236" width="31.8" height="16" fill="#D55E00"/>
+  <text x="429" y="248" font-size="12" fill="#555">1–2 天</text>
+
+  <!-- 数据分析 human 14-42d: x 492.6-578.4 ; AI 1-3d: x 390-453.6 -->
+  <text x="198" y="298" font-size="12.5" fill="#1A1B1E" text-anchor="end">数据分析</text>
+  <rect x="492.6" y="286" width="85.8" height="16" fill="#999999"/>
+  <text x="586" y="298" font-size="12" fill="#555">2–6 周</text>
+  <rect x="390" y="308" width="63.6" height="16" fill="#D55E00"/>
+  <text x="461" y="320" font-size="12" fill="#555">1–3 天</text>
+
+  <!-- 论文撰写 human 30-90d: x 640-710.8 ; AI 2-5d: x 421.8-510.2 -->
+  <text x="198" y="370" font-size="12.5" fill="#1A1B1E" text-anchor="end">论文撰写</text>
+  <rect x="640" y="358" width="70.8" height="16" fill="#999999"/>
+  <text x="718" y="370" font-size="12" fill="#555">1–3 个月</text>
+  <rect x="421.8" y="380" width="88.4" height="16" fill="#D55E00"/>
+  <text x="518" y="392" font-size="12" fill="#555">2–5 天</text>
+
+  <!-- legend (序列 2 项但行内双条，仍需图例区分口径) -->
+  <g font-size="12" fill="#555">
+    <rect x="860" y="120" width="12" height="10" fill="#999999"/>
+    <text x="877" y="129">人类</text>
+    <rect x="860" y="140" width="12" height="10" fill="#D55E00"/>
+    <text x="877" y="149">AI</text>
   </g>
 
-  <!-- 2. Literature Review -->
-  <g transform="translate(355, 180)">
-    <rect width="280" height="180" rx="10" fill="#555555" filter="url(#shadow)"/>
-    <text x="140" y="25" text-anchor="middle" fill="#009E73" font-size="17" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
-      📚 文献研究
-    </text>
-    <rect x="0" y="45" width="280" height="2" fill="#009E73" opacity="0.5"/>
-    <g transform="translate(20, 60)">
-      <text x="0" y="0" fill="#F0F0F0" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 自动搜索相关论文</text>
-      <text x="0" y="20" fill="#F0F0F0" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 深度分析研究内容</text>
-      <text x="0" y="40" fill="#F0F0F0" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 跨领域知识整合</text>
-      <text x="0" y="60" fill="#F0F0F0" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 发现隐藏关联</text>
-    </g>
-    <text x="260" y="25" text-anchor="end" fill="#009E73" font-size="20" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">2</text>
+  <!-- value axis (log10 scale) -->
+  <line x1="210" y1="420" x2="810" y2="420" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="210" y1="420" x2="210" y2="424"/>
+    <line x1="300" y1="420" x2="300" y2="424"/>
+    <line x1="390" y1="420" x2="390" y2="424"/>
+    <line x1="480" y1="420" x2="480" y2="424"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="300" y="440">1</text>
+    <text x="390" y="440">10</text>
+    <text x="480" y="440">100</text>
+  </g>
+  <text x="510" y="464" font-size="14" fill="#1A1B1E" text-anchor="middle">耗时（天，对数刻度）</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="880" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="902" y="104" font-size="15" fill="#1A1B1E">未来 10 年的模式演进（论文预测）</text>
+
+  <!-- timeline axis: sequence-position axis (mechanism schematic) -->
+  <line x1="910" y1="170" x2="910" y2="430" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="906" y1="200" x2="910" y2="200"/>
+    <line x1="906" y1="290" x2="910" y2="290"/>
+    <line x1="906" y1="380" x2="910" y2="380"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="900" y="204">1–2 年</text>
+    <text x="900" y="294">3–5 年</text>
+    <text x="900" y="384">5–10 年</text>
   </g>
 
-  <!-- 3. Experiment Design -->
-  <g transform="translate(660, 180)">
-    <rect width="280" height="180" rx="10" fill="#555555" filter="url(#shadow)"/>
-    <text x="140" y="25" text-anchor="middle" fill="#E69F00" font-size="17" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
-      🔬 实验设计
-    </text>
-    <rect x="0" y="45" width="280" height="2" fill="#E69F00" opacity="0.5"/>
-    <g transform="translate(20, 60)">
-      <text x="0" y="0" fill="#F0F0F0" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 规划完整实验流程</text>
-      <text x="0" y="20" fill="#F0F0F0" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 调用实验设备</text>
-      <text x="0" y="40" fill="#F0F0F0" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 运行模拟或真实实验</text>
-      <text x="0" y="60" fill="#F0F0F0" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 数据收集与记录</text>
-    </g>
-    <text x="260" y="25" text-anchor="end" fill="#E69F00" font-size="20" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">3</text>
-  </g>
+  <!-- stage 1: human-AI collaboration -->
+  <circle cx="946" cy="200" r="5" fill="#D55E00"/>
+  <text x="962" y="196" font-size="12.5" fill="#1A1B1E">人机协作成为主流</text>
+  <text x="962" y="212" font-size="12" fill="#555">人类定方向与伦理边界，</text>
+  <text x="962" y="227" font-size="12" fill="#555">AI 处理数据、生成假设</text>
 
-  <!-- 4. Data Analysis -->
-  <g transform="translate(50, 390)">
-    <rect width="280" height="130" rx="10" fill="#555555" filter="url(#shadow)"/>
-    <text x="140" y="25" text-anchor="middle" fill="#56B4E9" font-size="17" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
-      📊 数据分析
-    </text>
-    <rect x="0" y="45" width="280" height="2" fill="#56B4E9" opacity="0.5"/>
-    <g transform="translate(20, 60)">
-      <text x="0" y="0" fill="#F0F0F0" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 统计方法分析结果</text>
-      <text x="0" y="20" fill="#F0F0F0" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 验证或否定假设</text>
-      <text x="0" y="40" fill="#F0F0F0" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 识别数据模式</text>
-      <text x="0" y="60" fill="#F0F0F0" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 提出新发现</text>
-    </g>
-    <text x="260" y="25" text-anchor="end" fill="#56B4E9" font-size="20" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">4</text>
-  </g>
+  <!-- stage 2: division of labor -->
+  <circle cx="946" cy="290" r="5" fill="#D55E00"/>
+  <text x="962" y="286" font-size="12.5" fill="#1A1B1E">分工深化</text>
+  <text x="962" y="302" font-size="12" fill="#555">AI 自主处理常规研究，</text>
+  <text x="962" y="317" font-size="12" fill="#555">人类专注突破性探索</text>
 
-  <!-- 5. Paper Writing -->
-  <g transform="translate(355, 390)">
-    <rect width="280" height="130" rx="10" fill="#555555" filter="url(#shadow)"/>
-    <text x="140" y="25" text-anchor="middle" fill="#0072B2" font-size="17" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
-      📝 论文撰写
-    </text>
-    <rect x="0" y="45" width="280" height="2" fill="#0072B2" opacity="0.5"/>
-    <g transform="translate(20, 60)">
-      <text x="0" y="0" fill="#F0F0F0" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 完整论文撰写</text>
-      <text x="0" y="20" fill="#F0F0F0" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 通过同行评审</text>
-      <text x="0" y="40" fill="#F0F0F0" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 正式发表成果</text>
-      <text x="0" y="60" fill="#F0F0F0" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 推动领域进步</text>
-    </g>
-    <text x="260" y="25" text-anchor="end" fill="#0072B2" font-size="20" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">5</text>
-  </g>
+  <!-- stage 3: domain-autonomous -->
+  <circle cx="946" cy="380" r="5" fill="#D55E00"/>
+  <text x="962" y="376" font-size="12.5" fill="#1A1B1E">特定领域自主发现</text>
+  <text x="962" y="392" font-size="12" fill="#555">AI 可能在特定领域实现</text>
+  <text x="962" y="407" font-size="12" fill="#555">完全自主发现</text>
 
-  <!-- Human-AI Collaboration -->
-  <g transform="translate(660, 390)">
-    <rect width="280" height="130" rx="10" fill="#555555" filter="url(#shadow)"/>
-    <text x="140" y="25" text-anchor="middle" fill="#009E73" font-size="17" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
-      🤝 人机协作
-    </text>
-    <rect x="0" y="45" width="280" height="2" fill="#009E73" opacity="0.5"/>
-    <g transform="translate(20, 60)">
-      <text x="0" y="0" fill="#F0F0F0" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 人类提出研究方向</text>
-      <text x="0" y="20" fill="#F0F0F0" font-size="11" font-family="system-ui, -apple-system, sans-serif">• AI 执行具体研究</text>
-      <text x="0" y="40" fill="#F0F0F0" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 人类验证 AI 发现</text>
-      <text x="0" y="60" fill="#F0F0F0" font-size="11" font-family="system-ui, -apple-system, sans-serif">• 协同创新突破</text>
-    </g>
-    <text x="260" y="25" text-anchor="end" fill="#009E73" font-size="20" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">6</text>
-  </g>
-
-  <!-- Bottom summary -->
-  <g transform="translate(150, 550)">
-    <rect width="600" height="60" rx="8" fill="#F0E442" opacity="0.15" stroke="#E69F00" stroke-width="1"/>
-    <text x="300" y="28" text-anchor="middle" fill="#E69F00" font-size="16" font-weight="bold" font-family="system-ui, -apple-system, sans-serif">
-      ⚡ 效率革命 · 🎯 最佳模式
-    </text>
-    <text x="300" y="48" text-anchor="middle" fill="#808080" font-size="11" font-family="system-ui, -apple-system, sans-serif">
-      AI 可 24 小时工作 · 先进人机协作主导未来科研
-    </text>
-  </g>
-
-  <!-- Decorative dots -->
-  <circle cx="20" cy="20" r="3" fill="#0072B2" opacity="0.5"/>
-  <circle cx="880" cy="560" r="4" fill="#009E73" opacity="0.5"/>
-  <circle cx="880" cy="20" r="2" fill="#E69F00" opacity="0.6"/>
-  <circle cx="20" cy="560" r="3" fill="#56B4E9" opacity="0.4"/>
-
-  <!-- Footer -->
-  <text x="450" y="572" text-anchor="middle" fill="#666666" font-size="11" font-family="system-ui, -apple-system, sans-serif">
-    Towards end-to-end automation of AI research · Nature 2026 · DOI: 10.1038/s41586-026-10265-5
-  </text>
+  <!-- footnote (two lines) -->
+  <text x="60" y="596" font-size="11" fill="#767676">数据：Nature（s41586-026-10265-5，伦敦国王学院与卡尔斯鲁厄理工学院，2026 年 3 月 25 日发布）· 任务耗时与阶段预测均为论文自测与自述口径，</text>
+  <text x="60" y="614" font-size="11" fill="#767676">区间端点换算为天数绘制于对数轴（1 周按 7 天、1 月按 30 天、1 小时按 1/24 天）· 重复实验（人类数周、AI 数小时）因无数值未入图</text>
 </svg>

@@ -1,84 +1,81 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'','',serif">
-  <defs>
-    <style>
-      .k { font-size: 12.5px; letter-spacing: 2.5px; fill: #CC79A7; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-      .rl { font-size: 15px; fill: #009E73; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-      .b { font-size: 12px; fill: #CC79A7; font-family: 'PingFang SC','Helvetica Neue',sans-serif; }
-    </style>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <rect width="1200" height="675" fill="#CC79A7"/>
-  <circle cx="1105" cy="110" r="140" fill="#D55E00" opacity="0.07"/>
-  <circle cx="70" cy="620" r="115" fill="#009E73" opacity="0.06"/>
-  <rect x="64" y="44" width="46" height="5" rx="2.5" fill="#CC79A7"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">基准结构决定灵活性是资产还是负担：回溯密集有益，依赖链场景单智能体更高效</text>
 
-  <text class="k" x="64" y="84">一分钟读论文 · ARXIV:2604.22820 · 黎巴嫩美国大学</text>
-  <text x="64" y="128" font-size="40" font-weight="700" fill="#009E73">轨道全连，账单全开</text>
-  <text x="64" y="158" font-size="15" fill="#009E73" font-family="'PingFang SC','Helvetica Neue',sans-serif">完全循环子任务图：所有子任务间任意调车，用极端灵活量出灵活性的价码</text>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">完全循环子任务图架构（机制示意，非实测数据）</text>
 
-  <!-- railway yard motif -->
-  <g transform="translate(958,58)">
-    <g fill="none" stroke="#D55E00" stroke-width="2.2" opacity="0.75">
-      <path d="M 20 112 Q 62 42 104 112"/>
-      <path d="M 104 112 Q 146 42 188 112"/>
-      <path d="M 20 112 Q 104 150 188 112"/>
-      <path d="M 62 62 L 146 62"/>
-      <path d="M 104 20 L 20 112 M 104 20 L 188 112"/>
-    </g>
-    <g stroke="#D55E00" stroke-width="1" opacity="0.4">
-      <line x1="14" y1="116" x2="26" y2="116"/><line x1="98" y1="121" x2="110" y2="121"/><line x1="182" y1="116" x2="194" y2="116"/>
-    </g>
-    <circle cx="104" cy="18" r="8" fill="#F0E442" stroke="#D55E00" stroke-width="1.5"/>
-    <circle cx="18" cy="114" r="8" fill="#56B4E9" stroke="#009E73" stroke-width="1.5"/>
-    <circle cx="190" cy="114" r="8" fill="#56B4E9" stroke="#009E73" stroke-width="1.5"/>
-    <circle cx="104" cy="134" r="8" fill="#CC79A7" stroke="#0072B2" stroke-width="1.5"/>
+  <!-- fully connected 4-node graph -->
+  <g stroke="#999999" stroke-width="1.5">
+    <line x1="150" y1="170" x2="490" y2="170"/>
+    <line x1="150" y1="170" x2="150" y2="350"/>
+    <line x1="150" y1="170" x2="490" y2="350"/>
+    <line x1="490" y1="170" x2="150" y2="350"/>
+    <line x1="490" y1="170" x2="490" y2="350"/>
+    <line x1="150" y1="350" x2="490" y2="350"/>
+  </g>
+  <g fill="#FFFFFF" stroke="#D55E00" stroke-width="1.5">
+    <circle cx="150" cy="170" r="16"/>
+    <circle cx="490" cy="170" r="16"/>
+    <circle cx="150" cy="350" r="16"/>
+    <circle cx="490" cy="350" r="16"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="150" y="174">S1</text>
+    <text x="490" y="174">S2</text>
+    <text x="150" y="354">S3</text>
+    <text x="490" y="354">S4</text>
+  </g>
+  <text x="320" y="140" font-size="12" fill="#555" text-anchor="middle">节点间完全连接</text>
+  <text x="320" y="260" font-size="12" fill="#555" text-anchor="middle">任意子任务可路由到</text>
+  <text x="320" y="278" font-size="12" fill="#555" text-anchor="middle">其他任何子任务，无预剪枝</text>
+
+  <!-- notes at right of graph -->
+  <text x="560" y="174" font-size="12" fill="#555">统一状态分析器与路由器：按自然语言标准</text>
+  <text x="560" y="192" font-size="12" fill="#555">评估滚动轨迹状态，选择子任务间转换，</text>
+  <text x="560" y="210" font-size="12" fill="#555">使不受限制的回溯在结构上始终可用</text>
+
+  <text x="560" y="266" font-size="12.5" fill="#1A1B1E">两种实现</text>
+  <text x="560" y="290" font-size="12" fill="#555">Spec-Cyc：任务特定图，逐任务定制节点与边</text>
+  <text x="560" y="312" font-size="12" fill="#555">Gen-Cyc：基准通用图，跨实例复用，检验</text>
+  <text x="560" y="334" font-size="12" fill="#555">循环回溯能否作为可迁移的控制策略</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="60" y="416" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="416" font-size="15" fill="#1A1B1E">三个基准上的定性结论（论文无数值结果，序位为报告排序）</text>
+
+  <!-- column headers -->
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="245" y="456">ALFWorld</text>
+    <text x="620" y="456">TextCraft</text>
+    <text x="995" y="456">Finance-Agent</text>
   </g>
 
-  <!-- three benchmark verdict rows -->
-  <g>
-    <rect x="64" y="204" width="690" height="72" fill="#009E73" opacity="0.08"/>
-    <text x="92" y="234" class="rl" font-weight="700" fill="#009E73">ALFWorld · 回溯恢复场景</text>
-    <text x="92" y="258" class="b">搜索、定位不准、误导行动——显式回溯显著有益，支持恢复与探索</text>
-    <rect x="664" y="226" width="72" height="28" rx="14" fill="#56B4E9" opacity="0.25"/>
-    <text x="700" y="245" text-anchor="middle" font-size="13" font-weight="700" fill="#009E73" font-family="'PingFang SC',sans-serif">灵活性有益</text>
+  <!-- column 1: favorable -->
+  <rect x="80" y="476" width="330" height="96" fill="#D55E00"/>
+  <text x="245" y="502" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">显式回溯显著有益</text>
+  <text x="245" y="524" font-size="12" fill="#FFFFFF" text-anchor="middle">部分可观察、交互密集的环境，</text>
+  <text x="245" y="542" font-size="12" fill="#FFFFFF" text-anchor="middle">支持从不准确定位中恢复与探索</text>
 
-    <rect x="64" y="288" width="690" height="72" fill="#E69F00" opacity="0.1"/>
-    <text x="92" y="318" class="rl" font-weight="700" fill="#D55E00">TextCraft · 前置依赖链场景</text>
-    <text x="92" y="342" class="b">认准前置链后顺序执行即可——额外路由只添协调开销，单智能体 ReAct 往往更高效</text>
-    <rect x="664" y="310" width="72" height="28" rx="14" fill="#F0E442" opacity="0.3"/>
-    <text x="700" y="329" text-anchor="middle" font-size="13" font-weight="700" fill="#D55E00" font-family="'PingFang SC',sans-serif">灵活即开销</text>
+  <!-- column 2: overhead -->
+  <rect x="455" y="476" width="330" height="96" fill="none" stroke="#999999" stroke-width="1.5"/>
+  <text x="620" y="502" font-size="13" font-weight="bold" fill="#1A1B1E" text-anchor="middle">灵活性成为协调开销</text>
+  <text x="620" y="524" font-size="12" fill="#555" text-anchor="middle">前置依赖链式领域，识别正确链后</text>
+  <text x="620" y="542" font-size="12" fill="#555" text-anchor="middle">顺序执行即可，单智能体 ReAct 往往更高效</text>
 
-    <rect x="64" y="372" width="690" height="72" fill="#D55E00" opacity="0.08"/>
-    <text x="92" y="402" class="rl" font-weight="700" fill="#D55E00">Finance-Agent · 证据密集场景</text>
-    <text x="92" y="426" class="b">所有方法成功率都低——瓶颈在检索、证据合成与 grounding，灵活性救不了</text>
-    <rect x="664" y="394" width="72" height="28" rx="14" fill="#CC79A7" opacity="0.25"/>
-    <text x="700" y="413" text-anchor="middle" font-size="13" font-weight="700" fill="#D55E00" font-family="'PingFang SC',sans-serif">瓶颈在别处</text>
-  </g>
+  <!-- column 3: bottleneck -->
+  <rect x="830" y="476" width="330" height="96" fill="none" stroke="#999999" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="995" y="502" font-size="13" font-weight="bold" fill="#1A1B1E" text-anchor="middle">瓶颈在检索而非灵活性</text>
+  <text x="995" y="524" font-size="12" fill="#555" text-anchor="middle">开放世界、证据密集型任务，所有方法</text>
+  <text x="995" y="542" font-size="12" fill="#555" text-anchor="middle">成功率均较低，灵活性仅带来有限改善</text>
 
-  <!-- right column -->
-  <g>
-    <rect x="836" y="204" width="304" height="86" rx="12" fill="#0072B2" opacity="0.09"/>
-    <text x="856" y="240" font-size="24" font-weight="700" fill="#009E73">灵活性的隐性票价</text>
-    <text x="856" y="266" class="b">共享胜利 Token 比较：循环图 Token 消耗显著高于单智能体 ReAct</text>
+  <!-- cost note -->
+  <text x="80" y="606" font-size="12" fill="#555">成本口径：三个基准上完全循环图方法的 Token 消耗均显著高于单智能体 ReAct（共享胜利 Token 比较，方向性结论）；较弱模型（gpt-4o-mini）上灵活性收益更明显。</text>
 
-    <text class="rl" x="856" y="330">成本从哪来</text>
-    <text class="b" x="856" y="352">路由器持续状态评估、自然语言比较、无限制回溯的冗余推理</text>
-
-    <text class="rl" x="856" y="394">弱模型上收益更明显</text>
-    <text class="b" x="856" y="416">gpt-4o-mini 消融：编排差异更易被观察到</text>
-  </g>
-
-  <!-- bottom chips -->
-  <line x1="64" y1="490" x2="1136" y2="490" stroke="#CC79A7"/>
-  <g>
-    <text class="rl" x="64" y="532">两座车站</text>
-    <rect x="160" y="512" width="84" height="28" rx="14" fill="#56B4E9" opacity="0.22"/>
-    <text x="202" y="531" text-anchor="middle" font-size="12.5" font-weight="600" fill="#009E73" font-family="'PingFang SC',sans-serif">Spec-Cyc</text>
-    <text x="256" y="531" class="b">任务特定图：每任务定制节点与边</text>
-    <rect x="480" y="512" width="76" height="28" rx="14" fill="#CC79A7" opacity="0.22"/>
-    <text x="518" y="531" text-anchor="middle" font-size="12.5" font-weight="600" fill="#0072B2" font-family="'PingFang SC',sans-serif">Gen-Cyc</text>
-    <text x="568" y="531" class="b">基准通用图：测回溯能否跨实例迁移</text>
-  </g>
-  <text x="64" y="584" font-size="18" fill="#009E73">基准结构决定灵活性是资产还是负担——先认任务，再修轨道。</text>
-  <text class="b" x="1136" y="618" text-anchor="end" font-family="'PingFang SC','Helvetica Neue',sans-serif">论文自述口径 · 预印本未经同行评审 · Micropaper</text>
+  <!-- footnote (two lines) -->
+  <text x="60" y="648" font-size="11" fill="#767676">数据：arXiv:2604.22820（黎巴嫩美国大学）· 正文未给出各基准的具体成功率或 Token 数值，本图为序位轴与机制示意，</text>
+  <text x="60" y="666" font-size="11" fill="#767676">面板 b 三列按论文报告的方向性结论排序（有益／开销／受限），不含可回查数值 · 论文自测口径</text>
 </svg>
