@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "一分钟读论文：《LLM Agent 的外化设计范式》"
+title:  "一分钟读论文：《大模型智能体的外化设计范式》"
 author: unbug
 categories: [AI, LLM]
 image: assets/images/externalization-framework.svg
 tags: [LLMAgent, Architecture, Memory, Skills, Protocols]
+description: "上海交通大学等机构的外化综述把大模型智能体设计归纳为记忆、技能、协议、框架四个维度，指出可靠性提升主要来自外化设计而非模型权重更新。"
 ---
 
 上海交通大学、中山大学、CMU 等机构合作的一篇论文[《Externalization in LLM Agents: A Unified Review of Memory, Skills, Protocols and Harness Engineering》][paper1-url]，系统提出了 LLM Agent 的外化设计框架，将 Agent 设计空间归纳为记忆、技能、协议、框架四个维度。
@@ -27,10 +28,15 @@ tags: [LLMAgent, Architecture, Memory, Skills, Protocols]
 ## 设计空间与工程启示
 外化框架为 Agent 设计提供了一个系统化的分析工具。研究者可以用这个框架描述和比较不同 Agent 架构的优劣，工程师可以在设计新系统时明确每个决策对应的设计维度。
 
-对工程实践而言，框架明确了 Agent 设计的核心问题：哪些能力应该保留在模型内部，哪些应该外化为独立组件。这个判断直接影响系统的可靠性、可扩展性和维护成本。论文指出，随着 Agent 系统规模的增长，外化设计的优势将更加显著。
+对工程实践而言，框架明确了 Agent 设计的核心问题：哪些能力应该保留在模型内部，哪些应该外化为独立组件。这个判断直接影响系统的可靠性、可扩展性和维护成本。论文指出，随着 Agent 系统规模的增长，外化设计的优势将更加显著。以站内[PRIME 迭代记忆进化][prj-post]为例，其把经验从参数空间外化到记忆空间，正是记忆维度的具体实现。
+
+## 外化的边界
+外化并非把所有能力都搬出模型。论文强调，需要低延迟与深度泛化的基础能力仍适合留在权重里，而需要频繁更新、可审计、可替换的能力更适合外化。记忆存什么、技能何时调用、协议如何约束组件交互，这些决策共同决定系统上限。工程师在评估一个 Agent 架构时，可以按四个维度逐一检查：信息是否有外部存储兜底、能力是否模块化封装、组件通信是否有标准协议、运行时是否具备依赖管理与冲突处理能力。四个维度覆盖越完整，系统对模型本身缺陷的容错空间就越大。
 
 ## References
 - [论文原文][paper1-url]
+- [相关阅读：PRIME 迭代记忆进化][prj-post]
 
 
 [paper1-url]: https://arxiv.org/abs/2604.08224
+[prj-post]: {{ site.baseurl }}/one-minute-read-paper-prime-iterative-memory-evolution-agent/

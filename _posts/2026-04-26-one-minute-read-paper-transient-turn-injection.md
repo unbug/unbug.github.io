@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "一分钟读论文：《瞬态轮次注入：暴露大语言模型的无状态多轮漏洞》"
+title:  "一分钟读论文：《瞬态轮次注入：大模型的无状态多轮漏洞》"
 author: unbug
 categories: [AI, Security]
 image: assets/images/transient-turn-injection.svg
 tags: [PromptInjection, LLM, Security, AIAgents]
+description: "贾加纳特大学等机构提出瞬态轮次注入新型攻击，把恶意意图拆散到多个看似无害的孤立请求中再组合，逐步绕过安全策略，实验显示 Gemini 系列最脆弱，Claude 防御最优。"
 ---
 
 孟加拉国贾加纳特大学与巴里萨尔大学合作发表的论文[《Transient Turn Injection: Exposing Stateless Multi-Turn Vulnerabilities in Large Language Models》][paper1-url]，首次提出了一种名为**瞬态轮次注入（Transient Turn Injection, TTI）**的新型攻击范式，揭示了当前主流大语言模型在无状态 API 交互场景下的系统性安全漏洞。
@@ -31,7 +32,7 @@ TTI 攻击的核心在于利用**无状态 API 的上下文丢失特性**。在�
 ## 防御方向
 论文提出了一些初步的防御思路，包括**跨轮次上下文关联检测**、**请求语义聚合分析**和**无状态场景下的安全策略增强**。这些方法的核心思想是让模型在无状态交互中也能感知到潜在的跨轮次操纵意图。
 
-然而，论文也指出，完全解决 TTI 攻击是一个开放性问题。在无状态 API 的约束下，模型每次只能看到单个请求，如何在不破坏 API 设计原则的前提下实现有效的跨轮次安全检测，仍需进一步研究。
+然而，论文也指出，完全解决 TTI 攻击是一个开放性问题。在无状态 API 的约束下，模型每次只能看到单个请求，如何在不破坏 API 设计原则的前提下实现有效的跨轮次安全检测，仍需进一步研究。这与站内[大模型智能体安全]({{ site.baseurl }}/taming-openclaw-llm-agent-security/)关注的问题同源：提示注入是当前智能体系统最直接的攻击面，而 TTI 把威胁从单次请求扩展到了跨请求的序列层面，安全评估不能停留在单轮基准测试上。对开发者而言，只要应用通过无状态 API 多次调用大模型，就存在被这类分步操纵利用的可能，把关键安全判断放在服务端而非依赖模型自身拒绝，是更现实的缓解。
 
 ## References
 - [论文原文][paper1-url]

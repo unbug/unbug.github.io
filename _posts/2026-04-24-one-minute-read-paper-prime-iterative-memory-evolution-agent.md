@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "一分钟读论文：《PRIME：通过迭代记忆进化实现用户中心Agent的主动推理》"
+title:  "一分钟读论文：《PRIME：迭代记忆进化的主动推理》"
 author: unbug
 categories: [AI, Agent]
 image: assets/images/prime.svg
 tags: [Agent, Memory, ReinforcementLearning]
+description: "康奈尔大学提出的 PRIME 是免训练的主动推理框架，把多轮交互轨迹蒸馏为成功策略、失败模式、用户偏好三类结构化记忆并持续进化，性能可与梯度方法相当。"
 ---
 
 Cornell 大学 Prince Zizhuang Wang 和 Shuli Jiang 的论文[《PRIME: Training Free Proactive Reasoning via Iterative Memory Evolution for User-Centric Agent》][paper1-url]，提出了一种梯度自由的学习框架，通过显式经验积累而非参数优化实现 Agent 的持续进化。
@@ -22,15 +23,17 @@ PRIME 的流水线分为四个阶段。**探索阶段**收集 Agent 在与用户
 ## 实验结果与外化框架的关联
 PRIME 在多个用户中心环境中进行了实验，包括客服对话、任务规划和个人助手场景。主要发现：**性能可竞争**——在多个基准上，PRIME 达到了与基于梯度的方法相当的性能水平，考虑到 PRIME 不需要任何模型微调，这个结果相当显著。**成本优势**——由于不需要 GPU 训练，PRIME 的运行成本远低于 RL 方法。**可解释性提升**——结构化经验让 Agent 的决策过程变得透明，当 Agent 做出某个选择时，可以追溯到具体的历史经验。**持续改进**——随着交互轮数增加，PRIME Agent 的性能持续提升，没有观察到明显的饱和点。
 
-在第 30 篇 LLM Agent 外化设计范式中，作者提出了 Memory、Skills、Protocols 和 Harness 四个维度的框架。PRIME 恰好聚焦于 Memory 维度的具体实现。外化框架提出了记忆应该作为独立组件的宏观理念，而 PRIME 回答了记忆如何被高效组织和进化这个微观问题。
+在第 30 篇 LLM Agent 外化设计范式中，作者提出了 Memory、Skills、Protocols 和 Harness 四个维度的框架。PRIME 恰好聚焦于 Memory 维度的具体实现。站内[LLM 智能体的外化设计范式][ext-post]提出了记忆应该作为独立组件的宏观理念，而 PRIME 回答了记忆如何被高效组织和进化这个微观问题。
 
 PRIME 目前也有几个明显的局限：经验提取的质量依赖蒸馏算法，自动提取的经验是否准确取决于蒸馏模块的设计；长期记忆管理随着交互轮数增加，记忆库的规模会快速增长；跨用户泛化当前经验主要服务于单个用户，如何构建跨用户的共享知识库同时保护隐私是开放问题。
 
 ## References
 - [PRIME 论文 HTML 版本][links-1]
 - [PRIME 论文 PDF 下载][links-2]
+- [相关阅读：LLM 智能体的外化设计范式][ext-post]
 
 
 [paper1-url]: https://arxiv.org/abs/2604.07645
 [links-1]: https://arxiv.org/html/2604.07645v1
 [links-2]: https://arxiv.org/pdf/2604.07645
+[ext-post]: {{ site.baseurl }}/one-minute-read-paper-externalization-in-llm-agents/
