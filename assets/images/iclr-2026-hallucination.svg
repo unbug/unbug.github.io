@@ -1,85 +1,348 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
-  <defs>
-    <filter id="shadow">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
 
-  <!-- Background -->
-  <rect width="800" height="400" fill="#555555"/>
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">300 篇 ICLR 2026 投稿中 16.7% 含经人工核实的幻觉引用，3 至 5 位评审全部漏检</text>
 
-  <!-- Decorative elements -->
-  <circle cx="700" cy="80" r="40" fill="#0072B2" opacity="0.5"/>
-  <circle cx="100" cy="320" r="50" fill="#0072B2" opacity="0.4"/>
-  <circle cx="650" cy="350" r="30" fill="#0072B2" opacity="0.3"/>
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">扫描样本中的幻觉引用（篇）</text>
 
-  <!-- Main title -->
-  <text x="400" y="60" text-anchor="middle" fill="#CC79A7" font-family="Arial, sans-serif" font-size="28" font-weight="bold">
-    ICLR 2026 幻觉引用危机
-  </text>
-  <text x="400" y="90" text-anchor="middle" fill="#56B4E9" font-family="Arial, sans-serif" font-size="16">
-    50+ 篇论文被发现包含伪造引用
-  </text>
-
-  <!-- Paper stack -->
-  <g filter="url(#shadow)">
-    <!-- Paper 1 (back) -->
-    <rect x="180" y="130" width="200" height="240" fill="#555555" rx="5" transform="rotate(-3, 280, 250)"/>
-    <!-- Paper 2 (middle) -->
-    <rect x="200" y="125" width="200" height="240" fill="#555555" rx="5" transform="rotate(2, 300, 245)"/>
-    <!-- Paper 3 (front) -->
-    <rect x="220" y="120" width="200" height="240" fill="#555555" rx="5"/>
+  <!-- legend -->
+  <g font-size="12" fill="#555">
+    <rect x="60" y="118" width="12" height="10" fill="#D55E00"/>
+    <text x="77" y="127">含幻觉引用（50 篇）</text>
+    <rect x="230" y="118" width="12" height="10" fill="#999999"/>
+    <text x="247" y="127">未检出</text>
   </g>
 
-  <!-- Front paper content -->
+  <!-- waffle: 30x10 grid, 1 cell = 1 篇, cell 13, gap 4, origin x=250 y=150 -->
   <g>
-    <rect x="240" y="145" width="160" height="12" fill="#0072B2" rx="2"/>
-    <rect x="240" y="165" width="140" height="8" fill="#56B4E9" rx="2"/>
-    <rect x="240" y="190" width="170" height="6" fill="#009E73" opacity="0.3"/>
-    <rect x="240" y="205" width="160" height="6" fill="#009E73" opacity="0.3"/>
-    <rect x="240" y="220" width="150" height="6" fill="#009E73" opacity="0.3"/>
-    <rect x="240" y="235" width="165" height="6" fill="#009E73" opacity="0.3"/>
+    <rect x="250" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="267" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="284" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="301" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="318" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="335" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="352" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="369" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="386" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="403" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="420" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="437" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="454" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="471" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="488" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="505" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="522" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="539" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="556" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="573" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="590" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="607" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="624" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="641" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="658" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="675" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="692" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="709" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="726" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="743" y="150" width="13" height="13" fill="#D55E00"/>
+    <rect x="250" y="167" width="13" height="13" fill="#D55E00"/>
+    <rect x="267" y="167" width="13" height="13" fill="#D55E00"/>
+    <rect x="284" y="167" width="13" height="13" fill="#D55E00"/>
+    <rect x="301" y="167" width="13" height="13" fill="#D55E00"/>
+    <rect x="318" y="167" width="13" height="13" fill="#D55E00"/>
+    <rect x="335" y="167" width="13" height="13" fill="#D55E00"/>
+    <rect x="352" y="167" width="13" height="13" fill="#D55E00"/>
+    <rect x="369" y="167" width="13" height="13" fill="#D55E00"/>
+    <rect x="386" y="167" width="13" height="13" fill="#D55E00"/>
+    <rect x="403" y="167" width="13" height="13" fill="#D55E00"/>
+    <rect x="420" y="167" width="13" height="13" fill="#D55E00"/>
+    <rect x="437" y="167" width="13" height="13" fill="#D55E00"/>
+    <rect x="454" y="167" width="13" height="13" fill="#D55E00"/>
+    <rect x="471" y="167" width="13" height="13" fill="#D55E00"/>
+    <rect x="488" y="167" width="13" height="13" fill="#D55E00"/>
+    <rect x="505" y="167" width="13" height="13" fill="#D55E00"/>
+    <rect x="522" y="167" width="13" height="13" fill="#D55E00"/>
+    <rect x="539" y="167" width="13" height="13" fill="#D55E00"/>
+    <rect x="556" y="167" width="13" height="13" fill="#D55E00"/>
+    <rect x="573" y="167" width="13" height="13" fill="#D55E00"/>
+    <rect x="590" y="167" width="13" height="13" fill="#999999"/>
+    <rect x="607" y="167" width="13" height="13" fill="#999999"/>
+    <rect x="624" y="167" width="13" height="13" fill="#999999"/>
+    <rect x="641" y="167" width="13" height="13" fill="#999999"/>
+    <rect x="658" y="167" width="13" height="13" fill="#999999"/>
+    <rect x="675" y="167" width="13" height="13" fill="#999999"/>
+    <rect x="692" y="167" width="13" height="13" fill="#999999"/>
+    <rect x="709" y="167" width="13" height="13" fill="#999999"/>
+    <rect x="726" y="167" width="13" height="13" fill="#999999"/>
+    <rect x="743" y="167" width="13" height="13" fill="#999999"/>
+    <rect x="250" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="267" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="284" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="301" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="318" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="335" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="352" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="369" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="386" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="403" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="420" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="437" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="454" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="471" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="488" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="505" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="522" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="539" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="556" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="573" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="590" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="607" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="624" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="641" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="658" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="675" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="692" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="709" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="726" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="743" y="184" width="13" height="13" fill="#999999"/>
+    <rect x="250" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="267" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="284" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="301" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="318" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="335" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="352" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="369" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="386" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="403" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="420" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="437" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="454" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="471" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="488" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="505" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="522" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="539" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="556" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="573" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="590" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="607" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="624" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="641" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="658" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="675" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="692" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="709" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="726" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="743" y="201" width="13" height="13" fill="#999999"/>
+    <rect x="250" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="267" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="284" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="301" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="318" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="335" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="352" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="369" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="386" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="403" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="420" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="437" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="454" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="471" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="488" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="505" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="522" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="539" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="556" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="573" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="590" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="607" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="624" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="641" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="658" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="675" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="692" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="709" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="726" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="743" y="218" width="13" height="13" fill="#999999"/>
+    <rect x="250" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="267" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="284" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="301" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="318" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="335" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="352" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="369" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="386" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="403" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="420" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="437" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="454" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="471" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="488" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="505" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="522" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="539" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="556" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="573" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="590" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="607" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="624" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="641" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="658" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="675" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="692" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="709" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="726" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="743" y="235" width="13" height="13" fill="#999999"/>
+    <rect x="250" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="267" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="284" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="301" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="318" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="335" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="352" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="369" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="386" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="403" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="420" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="437" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="454" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="471" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="488" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="505" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="522" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="539" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="556" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="573" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="590" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="607" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="624" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="641" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="658" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="675" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="692" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="709" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="726" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="743" y="252" width="13" height="13" fill="#999999"/>
+    <rect x="250" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="267" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="284" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="301" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="318" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="335" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="352" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="369" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="386" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="403" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="420" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="437" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="454" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="471" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="488" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="505" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="522" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="539" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="556" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="573" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="590" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="607" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="624" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="641" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="658" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="675" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="692" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="709" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="726" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="743" y="269" width="13" height="13" fill="#999999"/>
+    <rect x="250" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="267" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="284" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="301" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="318" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="335" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="352" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="369" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="386" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="403" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="420" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="437" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="454" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="471" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="488" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="505" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="522" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="539" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="556" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="573" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="590" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="607" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="624" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="641" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="658" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="675" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="692" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="709" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="726" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="743" y="286" width="13" height="13" fill="#999999"/>
+    <rect x="250" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="267" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="284" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="301" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="318" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="335" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="352" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="369" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="386" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="403" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="420" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="437" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="454" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="471" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="488" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="505" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="522" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="539" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="556" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="573" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="590" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="607" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="624" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="641" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="658" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="675" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="692" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="709" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="726" y="303" width="13" height="13" fill="#999999"/>
+    <rect x="743" y="303" width="13" height="13" fill="#999999"/>
   </g>
 
-  <!-- Hallucination marks -->
-  <g>
-    <!-- Red X marks -->
-    <line x1="255" y1="250" x2="275" y2="270" stroke="url(#redGrad)" stroke-width="4" stroke-linecap="round"/>
-    <line x1="275" y1="250" x2="255" y2="270" stroke="url(#redGrad)" stroke-width="4" stroke-linecap="round"/>
+  <!-- panel a notes -->
+  <text x="60" y="410" font-size="12" fill="#555">每格 1 篇投稿，共 300 篇；朱色 50 篇 = 16.7%</text>
+  <text x="60" y="432" font-size="12" fill="#555">漏检：每篇经 3 至 5 位评审，全部未发现；部分评分高达 8/10</text>
+  <text x="60" y="454" font-size="12" fill="#555">按 2 万篇投稿规模推算，或有数百篇存在同类问题</text>
 
-    <line x1="305" y1="245" x2="325" y2="265" stroke="url(#redGrad)" stroke-width="4" stroke-linecap="round"/>
-    <line x1="325" y1="245" x2="305" y2="265" stroke="url(#redGrad)" stroke-width="4" stroke-linecap="round"/>
+  <!-- ============ panel b ============ -->
+  <text x="850" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="872" y="104" font-size="15" fill="#1A1B1E">评审过载的危机背景</text>
 
-    <line x1="355" y1="255" x2="375" y2="275" stroke="url(#redGrad)" stroke-width="4" stroke-linecap="round"/>
-    <line x1="375" y1="255" x2="355" y2="275" stroke="url(#redGrad)" stroke-width="4" stroke-linecap="round"/>
-  </g>
+  <!-- growth comparison: no numeric y-scale (post only gives 48%), sequence labels only -->
+  <rect x="915" y="355" width="54" height="45" fill="#999999"/>
+  <text x="942" y="347" font-size="12" fill="#555" text-anchor="middle">2016 年</text>
+  <text x="942" y="382" font-size="12" fill="#FFFFFF" text-anchor="middle">基准</text>
+  <rect x="1035" y="182.5" width="54" height="217.5" fill="#D55E00"/>
+  <text x="1062" y="174" font-size="12" fill="#555" text-anchor="middle">2024 年</text>
+  <text x="1062" y="215" font-size="12" fill="#FFFFFF" text-anchor="middle">+48%</text>
 
-  <!-- Warning sign -->
-  <g transform="translate(550, 180)">
-    <circle cx="0" cy="0" r="60" fill="#555555" filter="url(#shadow)"/>
-    <text x="0" y="15" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="50" font-weight="bold">!</text>
-  </g>
+  <line x1="900" y1="130" x2="896" y2="130" stroke="#1A1B1E" stroke-width="0.75"/>
+  <line x1="900" y1="400" x2="1140" y2="400" stroke="#1A1B1E" stroke-width="0.75"/>
+  <text x="1020" y="426" font-size="12" fill="#555" text-anchor="middle">序列位置轴：以 2016 年高度为基准</text>
+  <text x="850" y="452" font-size="12" fill="#555">科学论文发表数量 2016 至 2024 年增长 48%</text>
+  <text x="850" y="470" font-size="12" fill="#555">评审者不堪重负，质量下降，撤稿和丑闻激增</text>
 
-  <!-- Stats boxes -->
-  <g>
-    <!-- Box 1 -->
-    <rect x="480" y="280" width="100" height="60" fill="#0072B2" rx="8" opacity="0.8"/>
-    <text x="530" y="305" text-anchor="middle" fill="#CC79A7" font-family="Arial, sans-serif" font-size="22" font-weight="bold">50+</text>
-    <text x="530" y="325" text-anchor="middle" fill="#56B4E9" font-family="Arial, sans-serif" font-size="12">问题论文</text>
-
-    <!-- Box 2 -->
-    <rect x="590" y="280" width="100" height="60" fill="#0072B2" rx="8" opacity="0.8"/>
-    <text x="640" y="305" text-anchor="middle" fill="#CC79A7" font-family="Arial, sans-serif" font-size="22" font-weight="bold">8/10</text>
-    <text x="640" y="325" text-anchor="middle" fill="#56B4E9" font-family="Arial, sans-serif" font-size="12">最高评分</text>
-
-    <!-- Box 3 -->
-    <rect x="700" y="280" width="80" height="60" fill="#0072B2" rx="8" opacity="0.8"/>
-    <text x="740" y="305" text-anchor="middle" fill="#CC79A7" font-family="Arial, sans-serif" font-size="22" font-weight="bold">300</text>
-    <text x="740" y="325" text-anchor="middle" fill="#56B4E9" font-family="Arial, sans-serif" font-size="12">扫描论文</text>
-  </g>
-
-  <!-- Caption -->
-  <text x="400" y="380" text-anchor="middle" fill="#56B4E9" font-family="Arial, sans-serif" font-size="14">
-    同行评审系统正受到 AI 生成内容的严峻挑战
-  </text>
+  <!-- footnote -->
+  <text x="60" y="560" font-size="11" fill="#767676">数据：GPTZero《Peer Review is Under Siege》调查报告（Hallucination Check 扫描 300 篇投稿，幻觉引用经人工验证）· 论文自测口径 · 2 万篇推算为按投稿规模外推</text>
 </svg>

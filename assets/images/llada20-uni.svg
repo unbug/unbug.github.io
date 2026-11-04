@@ -1,98 +1,111 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Arial, sans-serif">
-  <!-- Background -->
-  <rect width="800" height="500" fill="#CC79A7" rx="8"/>
-  
-  <!-- Title -->
-  <text x="400" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#009E73">LLaDA2.0-Uni: Discrete Diffusion for Unified Multimodal Understanding &amp; Generation</text>
-  
-  <!-- Input Layer -->
-  <rect x="30" y="60" width="140" height="80" rx="6" fill="#CC79A7" stroke="#56B4E9" stroke-width="2"/>
-  <text x="100" y="90" text-anchor="middle" font-size="13" font-weight="bold" fill="#0072B2">Input</text>
-  <text x="100" y="110" text-anchor="middle" font-size="11" fill="#333">Text</text>
-  <text x="100" y="128" text-anchor="middle" font-size="11" fill="#333">Image</text>
-  
-  <!-- Arrow -->
-  <line x1="170" y1="100" x2="210" y2="100" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
-  
-  <!-- Tokenizer -->
-  <rect x="210" y="60" width="160" height="80" rx="6" fill="#CC79A7" stroke="#E69F00" stroke-width="2"/>
-  <text x="290" y="90" text-anchor="middle" font-size="13" font-weight="bold" fill="#D55E00">SigLIP-VQ</text>
-  <text x="290" y="110" text-anchor="middle" font-size="11" fill="#333">Discrete Tokenizer</text>
-  <text x="290" y="128" text-anchor="middle" font-size="11" fill="#333">Continuous → Discrete</text>
-  
-  <!-- Arrow -->
-  <line x1="370" y1="100" x2="410" y2="100" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
-  
-  <!-- MoE Diffusion Core -->
-  <rect x="410" y="60" width="200" height="80" rx="6" fill="#CC79A7" stroke="#009E73" stroke-width="2"/>
-  <text x="510" y="88" text-anchor="middle" font-size="13" font-weight="bold" fill="#009E73">MoE Diffusion</text>
-  <text x="510" y="108" text-anchor="middle" font-size="11" fill="#333">Block-level Masked Diffusion</text>
-  <text x="510" y="126" text-anchor="middle" font-size="11" fill="#333">Text + Visual Tokens</text>
-  
-  <!-- Arrow -->
-  <line x1="610" y1="100" x2="650" y2="100" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
-  
-  <!-- Decoder -->
-  <rect x="650" y="60" width="130" height="80" rx="6" fill="#CC79A7" stroke="#CC79A7" stroke-width="2"/>
-  <text x="715" y="90" text-anchor="middle" font-size="13" font-weight="bold" fill="#CC79A7">Decoder</text>
-  <text x="715" y="110" text-anchor="middle" font-size="11" fill="#333">4-8 Step</text>
-  <text x="715" y="128" text-anchor="middle" font-size="11" fill="#333">Distilled</text>
-  
-  <!-- Output -->
-  <rect x="700" y="155" width="130" height="60" rx="6" fill="#CC79A7" stroke="#009E73" stroke-width="2"/>
-  <text x="765" y="185" text-anchor="middle" font-size="13" font-weight="bold" fill="#009E73">Output</text>
-  <text x="765" y="205" text-anchor="middle" font-size="11" fill="#333">HD Image</text>
-  
-  <!-- Training Pipeline -->
-  <text x="400" y="260" text-anchor="middle" font-size="16" font-weight="bold" fill="#009E73">Training Pipeline (Three Stages)</text>
-  <line x1="100" y1="275" x2="700" y2="275" stroke="#ccc" stroke-width="1" stroke-dasharray="4"/>
-  
-  <!-- Stage 1 -->
-  <rect x="40" y="290" width="200" height="100" rx="6" fill="#CC79A7" stroke="#0072B2" stroke-width="1.5"/>
-  <text x="140" y="315" text-anchor="middle" font-size="12" font-weight="bold" fill="#0072B2">Stage 1</text>
-  <text x="140" y="335" text-anchor="middle" font-size="11" fill="#333">Discrete Tokenizer</text>
-  <text x="140" y="355" text-anchor="middle" font-size="11" fill="#333">Pre-training</text>
-  <text x="140" y="375" text-anchor="middle" font-size="10" fill="#666">Image → Semantic Tokens</text>
-  
-  <!-- Arrow -->
-  <line x1="240" y1="340" x2="265" y2="340" stroke="#666" stroke-width="1.5" marker-end="url(#arrowhead)"/>
-  
-  <!-- Stage 2 -->
-  <rect x="270" y="290" width="200" height="100" rx="6" fill="#CC79A7" stroke="#E69F00" stroke-width="1.5"/>
-  <text x="370" y="315" text-anchor="middle" font-size="12" font-weight="bold" fill="#D55E00">Stage 2</text>
-  <text x="370" y="335" text-anchor="middle" font-size="11" fill="#333">Vision-Language</text>
-  <text x="370" y="355" text-anchor="middle" font-size="11" fill="#333">Understanding Pre-train</text>
-  <text x="370" y="375" text-anchor="middle" font-size="10" fill="#666">VQA, Image Captioning</text>
-  
-  <!-- Arrow -->
-  <line x1="470" y1="340" x2="495" y2="340" stroke="#666" stroke-width="1.5" marker-end="url(#arrowhead)"/>
-  
-  <!-- Stage 3 -->
-  <rect x="500" y="290" width="200" height="100" rx="6" fill="#CC79A7" stroke="#009E73" stroke-width="1.5"/>
-  <text x="600" y="315" text-anchor="middle" font-size="12" font-weight="bold" fill="#009E73">Stage 3</text>
-  <text x="600" y="335" text-anchor="middle" font-size="11" fill="#333">Unified Understanding</text>
-  <text x="600" y="355" text-anchor="middle" font-size="11" fill="#333">&amp; Generation Training</text>
-  <text x="600" y="375" text-anchor="middle" font-size="10" fill="#666">Joint VLM + Diffusion</text>
-  
-  <!-- Key Advantages -->
-  <text x="400" y="430" text-anchor="middle" font-size="14" font-weight="bold" fill="#009E73">Key Advantages</text>
-  <line x1="150" y1="445" x2="650" y2="445" stroke="#ccc" stroke-width="1" stroke-dasharray="4"/>
-  
-  <text x="140" y="470" text-anchor="middle" font-size="11" fill="#333">Parallel Decoding</text>
-  <text x="140" y="488" text-anchor="middle" font-size="10" fill="#666">No sequential bottleneck</text>
-  
-  <text x="320" y="470" text-anchor="middle" font-size="11" fill="#333">4-8 Step Inference</text>
-  <text x="320" y="488" text-anchor="middle" font-size="10" fill="#666">10x+ speedup over standard</text>
-  
-  <text x="500" y="470" text-anchor="middle" font-size="11" fill="#333">Unified Architecture</text>
-  <text x="500" y="488" text-anchor="middle" font-size="10" fill="#666">One model: understand + generate</text>
-  
-  <text x="680" y="470" text-anchor="middle" font-size="11" fill="#333">Prefix-aware Cache</text>
-  <text x="680" y="488" text-anchor="middle" font-size="10" fill="#666">Spatial consistency optimization</text>
-  
-  <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
-    </marker>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">单一掩码预测目标下，16B MoE 扩散语言模型同时完成视觉理解与图像生成</text>
+
+  <!-- ============ panel a: architecture schematic ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">统一架构流程（机制示意，无数值轴）</text>
+
+  <!-- input image -->
+  <rect x="60" y="235" width="130" height="40" fill="none" stroke="#1A1B1E" stroke-width="1.5"/>
+  <text x="125" y="260" font-size="12.5" fill="#1A1B1E" text-anchor="middle">输入图像</text>
+  <line x1="190" y1="255" x2="218" y2="255" stroke="#555" stroke-width="1.5"/>
+  <polygon points="218,250 228,255 218,260" fill="#555"/>
+
+  <!-- tokenizer -->
+  <rect x="228" y="215" width="170" height="80" fill="none" stroke="#1A1B1E" stroke-width="1.5"/>
+  <text x="313" y="240" font-size="12.5" fill="#1A1B1E" text-anchor="middle">SigLIP-VQ 语义 tokenizer</text>
+  <text x="313" y="259" font-size="12" fill="#555" text-anchor="middle">词表 16,384</text>
+  <text x="313" y="276" font-size="12" fill="#555" text-anchor="middle">支持动态分辨率</text>
+  <line x1="398" y1="255" x2="426" y2="255" stroke="#555" stroke-width="1.5"/>
+  <polygon points="426,250 436,255 426,260" fill="#555"/>
+
+  <!-- MoE backbone -->
+  <rect x="436" y="205" width="210" height="100" fill="#0072B2"/>
+  <text x="541" y="238" font-size="13" fill="#FFFFFF" text-anchor="middle">16B MoE 扩散主干</text>
+  <text x="541" y="258" font-size="11.5" fill="#FFFFFF" text-anchor="middle">block-level masked diffusion</text>
+  <text x="541" y="276" font-size="11.5" fill="#FFFFFF" text-anchor="middle">单一掩码预测目标</text>
+  <text x="541" y="325" font-size="11.5" fill="#555" text-anchor="middle">SPRINT 免训练加速：最高 1.6 倍</text>
+
+  <!-- arrows to outputs -->
+  <line x1="646" y1="230" x2="700" y2="170" stroke="#555" stroke-width="1.5"/>
+  <polygon points="700,170 689.5,169.2 697.4,178.4" fill="#555"/>
+  <line x1="646" y1="280" x2="700" y2="340" stroke="#555" stroke-width="1.5"/>
+  <polygon points="700,340 697.4,331.6 689.5,340.8" fill="#555"/>
+
+  <!-- understanding output -->
+  <rect x="700" y="130" width="190" height="52" fill="none" stroke="#1A1B1E" stroke-width="1.5"/>
+  <text x="795" y="151" font-size="12.5" fill="#1A1B1E" text-anchor="middle">视觉理解输出</text>
+  <text x="795" y="170" font-size="11.5" fill="#555" text-anchor="middle">MMStar 64.1 · MMMU 50.1</text>
+
+  <!-- decoder chain -->
+  <rect x="700" y="315" width="160" height="76" fill="none" stroke="#1A1B1E" stroke-width="1.5"/>
+  <text x="780" y="340" font-size="12.5" fill="#1A1B1E" text-anchor="middle">6B 扩散解码器</text>
+  <text x="780" y="358" font-size="11.5" fill="#555" text-anchor="middle">2 倍超分</text>
+  <text x="780" y="375" font-size="11.5" fill="#555" text-anchor="middle">8 步无 CFG 推理</text>
+  <line x1="860" y1="353" x2="888" y2="353" stroke="#555" stroke-width="1.5"/>
+  <polygon points="888,348 898,353 888,358" fill="#555"/>
+
+  <!-- generation output -->
+  <rect x="898" y="320" width="142" height="66" fill="#D55E00"/>
+  <text x="969" y="347" font-size="12.5" fill="#FFFFFF" text-anchor="middle">图像生成 / 编辑</text>
+  <text x="969" y="366" font-size="11.5" fill="#FFFFFF" text-anchor="middle">文本图像交错生成</text>
+
+  <text x="60" y="405" font-size="12" fill="#555">面板 a 为机制示意（序列位置：左→右为数据流），尺寸与框间距不代表任何量化数值</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="60" y="455" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="455" font-size="15" fill="#1A1B1E">理解基准得分对比</text>
+
+  <!-- gridlines: x = 330 + 9*v, v=0,20,40,60 -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    
+    
+    <line x1="424" y1="462" x2="424" y2="538"/>
+  </g>
+
+  <!-- MMStar rows: x = 330 + 9*v -->
+  <text x="320" y="480" font-size="12.5" fill="#1A1B1E" text-anchor="end">MMStar</text>
+  <rect x="330" y="466" width="414.5" height="18" fill="#0072B2"/>
+  <text x="620" y="480" font-size="12" fill="#555">LLaDA2.0-Uni 64.1</text>
+  <rect x="330" y="488" width="357.2" height="18" fill="#999999"/>
+  <text x="595" y="502" font-size="12" fill="#555">Lumina-DiMOO 58.0</text>
+
+  <!-- MMMU rows -->
+  <text x="320" y="526" font-size="12.5" fill="#1A1B1E" text-anchor="end">MMMU</text>
+  <rect x="330" y="512" width="282.9" height="18" fill="#0072B2"/>
+  <text x="620" y="526" font-size="12" fill="#555">LLaDA2.0-Uni 50.1</text>
+  <rect x="330" y="534" width="234.1" height="18" fill="#999999"/>
+  <text x="574" y="548" font-size="12" fill="#555">Lumina-DiMOO 44.9</text>
+
+  <!-- axis -->
+  <line x1="330" y1="556" x2="612" y2="556" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="330" y1="556" x2="330" y2="560"/><line x1="612" y1="556" x2="612" y2="560"/><line x1="612" y1="462" x2="612" y2="538" stroke="#D9D9D9" stroke-width="0.5"/>
+    <line x1="424" y1="556" x2="424" y2="560"/><line x1="518" y1="556" x2="518" y2="560"/>
+    
+    <line x1="518" y1="556" x2="518" y2="560"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="330" y="576">20</text>
+    
+    
+    <text x="612" y="576">50</text>
+  </g>
+  <text x="471" y="594" font-size="12" fill="#555" text-anchor="middle">基准得分（分，轴自 20 起截断）</text>
+
+  <!-- legend -->
+  <g font-size="12" fill="#555">
+    <rect x="920" y="472" width="12" height="10" fill="#0072B2"/>
+    <text x="937" y="481">LLaDA2.0-Uni</text>
+    <rect x="920" y="494" width="12" height="10" fill="#999999"/>
+    <text x="937" y="503">Lumina-DiMOO</text>
+  </g>
+  <text x="920" y="540" font-size="12" fill="#555">与 Qwen2.5-VL 等专用 VLM 打平；</text>
+  <text x="920" y="558" font-size="12" fill="#555">同类基线在 OCR 场景大幅落后</text>
+
+  <!-- footnote -->
+  <text x="60" y="612" font-size="11" fill="#767676">数据：arXiv:2604.20796（论文自测口径）· 面板 a 为架构机制示意，面板 b 为论文报告的理解基准得分 · 预印本未经同行评审</text>
 </svg>
