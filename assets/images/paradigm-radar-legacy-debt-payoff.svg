@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">九天六帖把存量代码推成有预算的一等任务；受控测量下满分文件不碰基线 83 个、最好的模型只剩 59 个</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">六帖热度：分数对全树评论数（实测 2026-11-06）</text>
+
+  <!-- gridlines vertical 400/800/1200 -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="276.7" y1="130" x2="276.7" y2="450"/>
+    <line x1="403.3" y1="130" x2="403.3" y2="450"/>
+    <line x1="530" y1="130" x2="530" y2="450"/>
+  </g>
+  <!-- gridlines horizontal 200/400/600/800 -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+  <line x1="150" y1="370" x2="560" y2="370"/>
+    <line x1="150" y1="290" x2="560" y2="290"/>
+    <line x1="150" y1="210" x2="560" y2="210"/>
+    <line x1="150" y1="130" x2="560" y2="130"/>
+  </g>
+  <!-- axes -->
+  <line x1="150" y1="450" x2="560" y2="450" stroke="#1A1B1E" stroke-width="0.75"/>
+  <line x1="150" y1="130" x2="150" y2="450" stroke="#1A1B1E" stroke-width="0.75"/>
+  <!-- x ticks outward -->
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="150" y1="450" x2="150" y2="454"/>
+    <line x1="276.7" y1="450" x2="276.7" y2="454"/>
+    <line x1="403.3" y1="450" x2="403.3" y2="454"/>
+    <line x1="530" y1="450" x2="530" y2="454"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="150" y="472">0</text>
+    <text x="276.7" y="472">400</text>
+    <text x="403.3" y="472">800</text>
+    <text x="530" y="472">1200</text>
+  </g>
+  <!-- y ticks outward -->
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="146" y1="450" x2="150" y2="450"/>
+    <line x1="146" y1="370" x2="150" y2="370"/>
+    <line x1="146" y1="290" x2="150" y2="290"/>
+    <line x1="146" y1="210" x2="150" y2="210"/>
+    <line x1="146" y1="130" x2="150" y2="130"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="140" y="454">0</text>
+    <text x="140" y="374">200</text>
+    <text x="140" y="294">400</text>
+    <text x="140" y="214">600</text>
+    <text x="140" y="134">800</text>
+  </g>
+  <!-- axis titles -->
+  <text x="355" y="502" font-size="14" fill="#555555" text-anchor="middle">HN 分数（分）</text>
+  <text x="36" y="290" font-size="14" fill="#555555" text-anchor="middle" transform="rotate(-90 36 290)">全树评论数（条）</text>
+
+  <!-- points: x = 150 + 0.31667*points ; y = 450 - 0.4*comments -->
+  <!-- IEEE 1265/738 accent -->
+  <circle cx="558.6" cy="154.8" r="5" fill="#D55E00"/>
+  <!-- Postgres 850/517 -->
+  <circle cx="419.2" cy="243.2" r="5" fill="#0072B2"/>
+  <!-- SigNoz 684/498 -->
+  <circle cx="366.6" cy="250.8" r="5" fill="#0072B2"/>
+  <!-- Cisco 316/386 -->
+  <circle cx="250.1" cy="295.6" r="5" fill="#0072B2"/>
+  <!-- Dream 332/162 fuse -->
+  <circle cx="255.1" cy="385.2" r="5" fill="#999999"/>
+  <!-- Wiz 192/52 fuse -->
+  <circle cx="210.8" cy="429.2" r="5" fill="#999999"/>
+  <!-- arXiv 22/14 counter-evidence -->
+  <circle cx="157" cy="444.4" r="5" fill="#FFFFFF" stroke="#009E73" stroke-width="2"/>
+
+  <!-- labels -->
+  <g font-size="12" fill="#555555">
+    <text x="548" y="140" text-anchor="end">IEEE Spectrum</text>
+    <text x="430" y="236">Postgres 19</text>
+    <text x="340" y="274" text-anchor="end">SigNoz</text>
+    <text x="262" y="288">Cisco 自述</text>
+    <text x="268" y="380">Dream 复盘</text>
+    <text x="224" y="424">Wiz 测绘</text>
+    <text x="170" y="456">arXiv 反证</text>
+  </g>
+
+  <!-- ============ panel b ============ -->
+  <text x="640" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="662" y="104" font-size="15" fill="#1A1B1E">单文件现代化实测：破坏数与修复数（arXiv:2610.40269 自测口径）</text>
+
+  <!-- gridlines 10/20/30/40/50 -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="710" y1="368" x2="1130" y2="368"/>
+    <line x1="710" y1="306" x2="1130" y2="306"/>
+    <line x1="710" y1="244" x2="1130" y2="244"/>
+    <line x1="710" y1="182" x2="1130" y2="182"/>
+    <line x1="710" y1="120" x2="1130" y2="120"/>
+  </g>
+  <!-- axes -->
+  <line x1="710" y1="430" x2="1130" y2="430" stroke="#1A1B1E" stroke-width="0.75"/>
+  <line x1="710" y1="120" x2="710" y2="430" stroke="#1A1B1E" stroke-width="0.75"/>
+  <!-- y ticks -->
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="706" y1="430" x2="710" y2="430"/>
+    <line x1="706" y1="368" x2="710" y2="368"/>
+    <line x1="706" y1="306" x2="710" y2="306"/>
+    <line x1="706" y1="244" x2="710" y2="244"/>
+    <line x1="706" y1="182" x2="710" y2="182"/>
+    <line x1="706" y1="120" x2="710" y2="120"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="700" y="434">0</text>
+    <text x="700" y="372">10</text>
+    <text x="700" y="310">20</text>
+    <text x="700" y="248">30</text>
+    <text x="700" y="186">40</text>
+    <text x="700" y="124">50</text>
+  </g>
+  <!-- x ticks -->
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="826.7" y1="430" x2="826.7" y2="434"/>
+    <line x1="1013.3" y1="430" x2="1013.3" y2="434"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="826.7" y="452">5 个 LLM 区间</text>
+    <text x="1013.3" y="452">规则工具 Rector</text>
+  </g>
+  <text x="618" y="275" font-size="14" fill="#555555" text-anchor="middle" transform="rotate(-90 618 275)">每 100 文件的文件数（个）</text>
+
+  <!-- LLM breaks range 32-51: whisker y=430-6.2*v -->
+  <line x1="826.7" y1="231.6" x2="826.7" y2="113.8" stroke="#D55E00" stroke-width="2"/>
+  <line x1="814.7" y1="231.6" x2="838.7" y2="231.6" stroke="#D55E00" stroke-width="2"/>
+  <line x1="814.7" y1="113.8" x2="838.7" y2="113.8" stroke="#D55E00" stroke-width="2"/>
+  <circle cx="826.7" cy="172.7" r="5" fill="#D55E00"/>
+  <!-- LLM repairs max 10 -->
+  <circle cx="826.7" cy="368" r="5" fill="#FFFFFF" stroke="#D55E00" stroke-width="2"/>
+  <!-- Rector breaks 7 / repairs 6 -->
+  <circle cx="1013.3" cy="386.6" r="5" fill="#D55E00"/>
+  <circle cx="1013.3" cy="392.8" r="5" fill="#FFFFFF" stroke="#D55E00" stroke-width="2"/>
+
+  <g font-size="12" fill="#555555">
+    <text x="844" y="150">破坏 32-51</text>
+    <text x="844" y="362">至多修复 10</text>
+    <text x="1028" y="382">破坏 7</text>
+    <text x="1028" y="404">修复 6</text>
+  </g>
+  <text x="640" y="492" font-size="12" fill="#555555">不碰基线：83 个文件全部通过检查，最好的模型只剩 59 个</text>
+
+  <!-- footnote -->
+  <text x="60" y="632" font-size="11" fill="#767676">数据：Hacker News 帖 50364336 / 50312408 / 50305693 / 50304122 / 50286987 / 50259343 / 50330033 · 分数与全树评论数为 2026-11-06 Algolia items API 实测</text>
+  <text x="60" y="650" font-size="11" fill="#767676">b 面板为 arXiv:2610.40269 论文自测口径（预印本未经同行评审）· Cisco 帖的 98% 与无限 token 为 Cisco 自述、第三方未复测 ·空心点=反证帖与修复数，实心=热度与破坏数</text>
+</svg>
