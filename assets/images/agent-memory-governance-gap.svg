@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <text x="60" y="60" font-size="21" font-weight="bold" fill="#1A1B1E">智能体记忆：写入侧权利要求成墙，读取验收侧还是空地</text>
+
+  <!-- left panel: write/assemble side claims -->
+  <text x="60" y="108" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="108" font-size="15" fill="#1A1B1E">已写入权利要求的动作（五件已核验公开/授权文本）</text>
+
+  <g font-size="13" fill="#1A1B1E">
+    <text x="90" y="160">写入 · 共享</text>
+    <text x="90" y="216">装配 · 分级监督</text>
+    <text x="90" y="272">跨智能体同步</text>
+    <text x="90" y="328">短期转长期召回</text>
+    <text x="90" y="384">上下文知识库构建</text>
+  </g>
+  <!-- claim blocks -->
+  <g>
+    <rect x="270" y="140" width="560" height="30" fill="#0072B2"/>
+    <rect x="270" y="196" width="560" height="30" fill="#0072B2"/>
+    <rect x="270" y="252" width="560" height="30" fill="#0072B2"/>
+    <rect x="270" y="308" width="560" height="30" fill="#0072B2"/>
+    <rect x="270" y="364" width="560" height="30" fill="#0072B2"/>
+  </g>
+  <g font-size="12" fill="#FFFFFF">
+    <text x="284" y="160">公共 token 空间 + 分层记忆（中译）· US20250259042A1 · Qomplx · 2025-08-14</text>
+    <text x="284" y="216">多层记忆装入 + 机器学习监督等级（中译）· EP4657312A1 · Microsoft · 2025-12-03</text>
+    <text x="284" y="272">跨 agent 记忆同步子系统（中译）· US20260181056A1 · Monday.com · 2026-06-25</text>
+    <text x="284" y="328">短期召不回转长期召回（中译）· CN121233825B · 北京城市网邻 · 2026-06-26 授权</text>
+    <text x="284" y="384">上下文工程知识库 + 生成模块（中译）· CN121301536A · 上海羚数 · 2026-01-09</text>
+  </g>
+
+  <!-- right gap column -->
+  <rect x="900" y="140" width="240" height="254" fill="none" stroke="#D55E00" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <g font-size="13" fill="#D55E00">
+    <text x="920" y="168">无人主张的读侧动作：</text>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E">
+    <text x="920" y="200">· 记忆过期 / 矛盾检测</text>
+    <text x="920" y="228">· 上下文预算硬约束</text>
+    <text x="920" y="256">· 跨 agent 污染溯源</text>
+  </g>
+  <text x="920" y="300" font-size="12.5" fill="#555555">只读审计不执行任务，</text>
+  <text x="920" y="320" font-size="12.5" fill="#555555">从公开文本看不落入五件 claim</text>
+  <text x="920" y="368" font-size="12.5" fill="#555555">工具侧：「存」的 SDK 拥挤，</text>
+  <text x="920" y="388" font-size="12.5" fill="#555555">「验」的包 8 个版本封顶</text>
+
+  <!-- bottom: search-surface contrast -->
+  <text x="60" y="460" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="460" font-size="15" fill="#1A1B1E">Google Patents 检索面（精确短语，total_num_results 页面返回值）</text>
+
+  <!-- bars: 185 vs 4, scale 3px per count -->
+  <g font-size="13" fill="#1A1B1E" text-anchor="end">
+    <text x="330" y="504">"context engineering"</text>
+    <text x="330" y="548">"memory staleness"</text>
+  </g>
+  <rect x="350" y="490" width="555" height="20" fill="#0072B2"/>
+  <rect x="350" y="534" width="12" height="20" fill="none" stroke="#999999" stroke-width="1.5"/>
+  <g font-size="12.5" fill="#555555">
+    <text x="915" y="505">185 件 · 其中 146 件公开于 2025 年及以后</text>
+    <text x="372" y="549">4 件 · 全部为硬件内存/虚拟机旧专利，无一涉及智能体记忆</text>
+  </g>
+  <line x1="350" y1="564" x2="1105" y2="564" stroke="#1A1B1E" stroke-width="0.75"/>
+
+  <!-- footnote -->
+  <text x="60" y="618" font-size="11" fill="#767676">数据：五件 Google Patents 详情页逐件二验（公开号/申请人/公开日 verbatim）；检索计数为 Google Patents 查询端点返回值，短语检索不等于赛道全量，仅作方向性对比。</text>
+</svg>
