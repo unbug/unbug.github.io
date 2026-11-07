@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <text x="60" y="64" font-size="21" font-weight="bold" fill="#1A1B1E">智能体推理剪枝：删掉冗余不掉分，加满预算买不到提升</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="112" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="112" font-size="15" fill="#1A1B1E">在线剪枝后的任务成绩（实心 = SWE-bench Verified，空心 = MCP-Atlas）</text>
+
+  <!-- legend -->
+  <rect x="250" y="128" width="14" height="10" fill="#0072B2"/>
+  <text x="272" y="137" font-size="12" fill="#555555">删除复述与凑字后</text>
+  <rect x="400" y="128" width="14" height="10" fill="#D55E00"/>
+  <text x="422" y="137" font-size="12" fill="#555555">全部推理删除</text>
+
+  <!-- vertical gridlines and axis scale 0/25/50/75/100 (axis scaffolding, not data) -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="322.5" y1="160" x2="322.5" y2="445"/>
+    <line x1="405" y1="160" x2="405" y2="445"/>
+    <line x1="487.5" y1="160" x2="487.5" y2="445"/>
+    <line x1="570" y1="160" x2="570" y2="445"/>
+  </g>
+  <!-- axis: x = 240 + 3.3*v, 0-100 -->
+  <line x1="240" y1="445" x2="570" y2="445" stroke="#1A1B1E" stroke-width="0.75"/>
+
+  <!-- SWE bars (solid): 89.0 / 89.5 / 73.0 -->
+  <rect x="240" y="164" width="293.7" height="16" fill="#0072B2"/>
+  <rect x="240" y="208" width="295.4" height="16" fill="#0072B2"/>
+  <rect x="240" y="252" width="240.9" height="16" fill="#D55E00"/>
+  <!-- MCP bars (hollow): 65.0 / 62.3 / 56.0 -->
+  <rect x="240" y="322" width="214.5" height="16" fill="none" stroke="#0072B2" stroke-width="1.5"/>
+  <rect x="240" y="366" width="205.6" height="16" fill="none" stroke="#0072B2" stroke-width="1.5"/>
+  <rect x="240" y="410" width="184.8" height="16" fill="none" stroke="#D55E00" stroke-width="1.5"/>
+
+  <!-- row labels -->
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="228" y="177">删 0%（基线）</text>
+    <text x="228" y="221">删 41%</text>
+    <text x="228" y="265">全删</text>
+    <text x="228" y="335">删 0%（基线）</text>
+    <text x="228" y="379">删 46%</text>
+    <text x="228" y="423">全删</text>
+  </g>
+
+  <!-- data labels -->
+  <g font-size="12" fill="#555555">
+    <text x="541" y="177">89.0</text>
+    <text x="543" y="221">89.5</text>
+    <text x="488" y="265">73.0</text>
+    <text x="462" y="335">65.0</text>
+    <text x="453" y="379">62.3</text>
+    <text x="433" y="423">56.0</text>
+  </g>
+
+  <!-- axis ticks: scaffolding -->
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="240" y1="445" x2="240" y2="449"/>
+    <line x1="322.5" y1="445" x2="322.5" y2="449"/>
+    <line x1="405" y1="445" x2="405" y2="449"/>
+    <line x1="487.5" y1="445" x2="487.5" y2="449"/>
+    <line x1="570" y1="445" x2="570" y2="449"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="240" y="465">0</text>
+    <text x="322.5" y="465">25</text>
+    <text x="405" y="465">50</text>
+    <text x="487.5" y="465">75</text>
+    <text x="570" y="465">100</text>
+  </g>
+  <text x="405" y="489" font-size="14" fill="#1A1B1E" text-anchor="middle">任务成绩（solved %）</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="660" y="112" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="682" y="112" font-size="15" fill="#1A1B1E">Kimi-K3 单模型推理预算阶梯（每轨迹推理 token，相对 Low 档倍数）</text>
+
+  <!-- gridlines at 2/4/6 (axis scaffolding, not data): x = 760 + 50*v -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="860" y1="160" x2="860" y2="380"/>
+    <line x1="960" y1="160" x2="960" y2="380"/>
+    <line x1="1060" y1="160" x2="1060" y2="380"/>
+  </g>
+  <!-- bars: None 0.5 / Low 1 / High 2 / Max 6.6 -->
+  <rect x="760" y="166" width="25" height="16" fill="#999999"/>
+  <rect x="760" y="210" width="50" height="16" fill="#999999"/>
+  <rect x="760" y="254" width="100" height="16" fill="#999999"/>
+  <rect x="760" y="298" width="330" height="16" fill="#D55E00"/>
+
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="748" y="179">None</text>
+    <text x="748" y="223">Low</text>
+    <text x="748" y="267">High</text>
+    <text x="748" y="311">Max</text>
+  </g>
+  <g font-size="12" fill="#555555">
+    <text x="793" y="179">略低于基准</text>
+    <text x="818" y="223">基准</text>
+    <text x="868" y="267">约两倍</text>
+    <text x="1098" y="311">6.6 倍</text>
+  </g>
+
+  <line x1="760" y1="380" x2="1110" y2="380" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="760" y1="380" x2="760" y2="384"/>
+    <line x1="860" y1="380" x2="860" y2="384"/>
+    <line x1="960" y1="380" x2="960" y2="384"/>
+    <line x1="1060" y1="380" x2="1060" y2="384"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="760" y="400">0</text>
+    <text x="860" y="400">2</text>
+    <text x="960" y="400">4</text>
+    <text x="1060" y="400">6</text>
+  </g>
+  <text x="935" y="424" font-size="14" fill="#1A1B1E" text-anchor="middle">推理 token 倍数（相对 Low 档）</text>
+
+  <g font-size="12" fill="#555555">
+    <text x="660" y="472">Low 到 High：+0.99 百万 token，成功率 69.7% 升到 78.4%；High 到 Max：</text>
+    <text x="660" y="490">+0.80 百万 token 无可测提升，新增 token 中 81% 花在结果不变的任务上；</text>
+    <text x="660" y="508">High 到 Max 浪费率仅 23.7% 变到 24.9%，同题解出贵 1.62 倍。</text>
+  </g>
+
+  <!-- footnote -->
+  <text x="60" y="560" font-size="11" fill="#767676">数据：arXiv:2611.07238（4 基准 × 6 前沿模型 × 5 执行框架受控测量；面板 b 为 Kimi-K3 单模型预算曲线，柱长为相对 Low 档倍数）· 预印本未经同行评审</text>
+</svg>
