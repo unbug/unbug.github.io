@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">直接回传证据这一项的代价，是保留检索历史这一项的 5.3 倍</text>
+
+  <!-- ============ panel a ============ -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">三种检索架构每题估算成本（美元）</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="485" y1="130" x2="485" y2="410"/>
+    <line x1="630" y1="130" x2="630" y2="410"/>
+    <line x1="775" y1="130" x2="775" y2="410"/>
+    <line x1="920" y1="130" x2="920" y2="410"/>
+  </g>
+  <!-- bars: x = 340 + 580*v/0.40 ; row tops y=152/242/332, h=26 -->
+  <text x="328" y="170" font-size="12.5" fill="#1A1B1E" text-anchor="end">Skill</text>
+  <rect x="340" y="152" width="561" height="26" fill="#999999"/>
+  <text x="909" y="170" font-size="12" fill="#555">$0.387 · 401.5k tokens</text>
+
+  <text x="328" y="260" font-size="12.5" fill="#1A1B1E" text-anchor="end">Non-persistent</text>
+  <rect x="340" y="242" width="192.9" height="26" fill="#999999"/>
+  <text x="541" y="260" font-size="12" fill="#555">$0.133 · 148.0k tokens</text>
+
+  <text x="328" y="350" font-size="12.5" fill="#1A1B1E" text-anchor="end">Our method</text>
+  <rect x="340" y="332" width="175.5" height="26" fill="#0072B2"/>
+  <text x="524" y="350" font-size="12" fill="#555">$0.121 · 210.8k tokens</text>
+
+  <!-- value axis -->
+  <line x1="340" y1="410" x2="920" y2="410" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="340" y1="410" x2="340" y2="414"/>
+    <line x1="485" y1="410" x2="485" y2="414"/>
+    <line x1="630" y1="410" x2="630" y2="414"/>
+    <line x1="775" y1="410" x2="775" y2="414"/>
+    <line x1="920" y1="410" x2="920" y2="414"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="340" y="430">0</text>
+    <text x="485" y="430">0.10</text>
+    <text x="630" y="430">0.20</text>
+    <text x="775" y="430">0.30</text>
+    <text x="920" y="430">0.40</text>
+  </g>
+  <text x="630" y="454" font-size="14" fill="#1A1B1E" text-anchor="middle">估算 API 成本（美元/题）</text>
+  <text x="340" y="480" font-size="12" fill="#555">本表仅成本同轴可比；token 与成本两本账，</text>
+  <text x="340" y="498" font-size="12" fill="#555">Our method 总 token 比 Non-persistent 多 41.4%。</text>
+
+  <!-- ============ panel b ============ -->
+  <text x="985" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="1007" y="104" font-size="15" fill="#1A1B1E">去机制成本上浮（%）</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="985" y1="185" x2="1140" y2="185"/>
+    <line x1="985" y1="290" x2="1140" y2="290"/>
+    <line x1="985" y1="395" x2="1140" y2="395"/>
+  </g>
+  <!-- bars: y = 395 - 4*v -->
+  <rect x="1000" y="227" width="48" height="36" fill="#999999"/>
+  <text x="1024" y="219" font-size="12" fill="#555" text-anchor="middle">8%</text>
+  <text x="1024" y="384" font-size="12.5" fill="#1A1B1E" text-anchor="middle">去持久历史</text>
+  <text x="1024" y="414" font-size="12" fill="#555" text-anchor="middle">慢 4.3 秒</text>
+
+  <rect x="1078" y="83" width="48" height="312" fill="#D55E00"/>
+  <text x="1102" y="75" font-size="12" fill="#555" text-anchor="middle">42%</text>
+  <text x="1102" y="384" font-size="12.5" fill="#1A1B1E" text-anchor="middle">去直接回传</text>
+  <text x="1102" y="414" font-size="12" fill="#555" text-anchor="middle">慢 17.7 秒</text>
+
+  <line x1="985" y1="395" x2="1140" y2="395" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="981" y1="395" x2="985" y2="395"/>
+    <line x1="981" y1="290" x2="985" y2="290"/>
+    <line x1="981" y1="185" x2="985" y2="185"/>
+    <line x1="981" y1="80" x2="985" y2="80"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="975" y="399">0</text>
+    <text x="975" y="294">15</text>
+    <text x="975" y="189">30</text>
+    <text x="975" y="84">45</text>
+  </g>
+
+  <!-- footnote -->
+  <text x="60" y="560" font-size="11" fill="#767676">数据：arXiv:2611.07899（ITSM Complex，69 题多轮依赖集，3 次运行均值；面板 b 为消融口径，准确率三配置均为 89.85%）·</text>
+  <text x="60" y="578" font-size="11" fill="#767676">成本按 OpenAI 公开牌价估算（非真实账单）· 实验基于 ServiceNow 自家 harness 与数据集（5/5 作者为 ServiceNow 员工）· 预印本未经同行评审</text>
+</svg>
