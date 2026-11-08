@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+  <rect x="0" y="0" width="1200" height="620" fill="#FFFFFF"/>
+  <style>
+    text { font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif; fill: #1A1B1E; }
+    .h1 { font-size: 22px; font-weight: 700; }
+    .sub { font-size: 13.5px; fill: #767676; }
+    .lab { font-size: 14px; }
+    .labd { font-size: 14px; font-weight: 700; }
+    .tiny { font-size: 12px; fill: #767676; }
+    .boxlab { font-size: 14.5px; font-weight: 700; }
+    .boxsub { font-size: 12px; fill: #767676; }
+  </style>
+
+  <!-- header -->
+  <text class="h1" x="60" y="46">同一天、同一检索接口的两个精确短语</text>
+  <text class="sub" x="60" y="72">Google Patents 精确短语检索，左：工具执行侧；右：空结果语义侧</text>
+
+  <!-- left panel: two search bars -->
+  <text class="lab" x="60" y="130">"tool execution"</text>
+  <rect x="60" y="142" width="440" height="30" fill="#0072B2"/>
+  <text class="labd" x="512" y="162" fill="#0072B2">3638 件</text>
+
+  <text class="lab" x="60" y="212">"empty tool result"</text>
+  <rect x="60" y="224" width="3" height="30" fill="#D55E00"/>
+  <text class="labd" x="75" y="244" fill="#D55E00">0 件</text>
+
+  <line x1="60" y1="272" x2="500" y2="272" stroke="#999999" stroke-width="0.75"/>
+  <text class="tiny" x="60" y="294">检索面：一边人山人海，一边零件都没有</text>
+
+  <!-- divider -->
+  <line x1="580" y1="100" x2="580" y2="560" stroke="#D9D9D9" stroke-width="0.75"/>
+
+  <!-- right panel: interception line vs semantic triage -->
+  <text class="h1" x="640" y="46">大厂圈住在哪，空在哪</text>
+
+  <rect x="640" y="100" width="500" height="56" fill="#0072B2"/>
+  <text class="boxlab" x="660" y="124" fill="#FFFFFF">拦截线（四件专利全部站满）</text>
+  <text class="boxsub" x="660" y="144" fill="#FFFFFF">输入过滤 · 调用拦截 · 输出验真 —— 全在结果进模型之前</text>
+
+  <line x1="890" y1="156" x2="890" y2="206" stroke="#1A1B1E" stroke-width="0.75"/>
+  <polygon points="890,214 885,204 895,204" fill="#1A1B1E"/>
+
+  <rect x="700" y="214" width="380" height="52" fill="none" stroke="#1A1B1E" stroke-width="0.75"/>
+  <text class="boxlab" x="720" y="237">工具返回：失败 / 空值</text>
+  <text class="boxsub" x="720" y="256">语义在此分流，此后无人 claim</text>
+
+  <!-- three bins -->
+  <g stroke="#999999" stroke-width="0.75" stroke-dasharray="4 3" fill="none">
+    <rect x="640" y="330" width="150" height="76"/>
+    <rect x="815" y="330" width="150" height="76"/>
+    <rect x="990" y="330" width="150" height="76"/>
+  </g>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="890" y1="266" x2="890" y2="298"/>
+    <line x1="715" y1="298" x2="1065" y2="298"/>
+    <line x1="715" y1="298" x2="715" y2="322"/>
+    <line x1="890" y1="298" x2="890" y2="322"/>
+    <line x1="1065" y1="298" x2="1065" y2="322"/>
+  </g>
+  <polygon points="715,330 710,320 720,320" fill="#1A1B1E"/>
+  <polygon points="890,330 885,320 895,320" fill="#1A1B1E"/>
+  <polygon points="1065,330 1060,320 1070,320" fill="#1A1B1E"/>
+
+  <text class="lab" x="715" y="362" text-anchor="middle">本来为空</text>
+  <text class="tiny" x="715" y="382" text-anchor="middle">数据缺失</text>
+  <text class="lab" x="890" y="362" text-anchor="middle">工具故障</text>
+  <text class="tiny" x="890" y="382" text-anchor="middle">服务坏了</text>
+  <text class="lab" x="1065" y="362" text-anchor="middle">参数错误</text>
+  <text class="tiny" x="1065" y="382" text-anchor="middle">调用方锅</text>
+
+  <text class="tiny" x="640" y="444">三箱动作完全不同：换源查询 / 退避重试 / 改参重发</text>
+  <text class="tiny" x="640" y="466">如今全靠开发者手写临时判断，检索面 0 件权利要求</text>
+
+  <!-- bottom caption -->
+  <line x1="60" y1="520" x2="1140" y2="520" stroke="#D9D9D9" stroke-width="0.75"/>
+  <text class="sub" x="60" y="548">空位：只读的 tool-result 语义审计器——不拦截、不改调用，把失败与空返回值分箱记账。</text>
+  <text class="tiny" x="60" y="574">来源：Google Patents 精确短语计数（2026-11-08 实测）；四件专利详情页同日二验</text>
+</svg>
