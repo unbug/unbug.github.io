@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="680" fill="#FFFFFF"/>
+
+  <!-- 面板头 -->
+  <text x="70" y="70" font-size="30" font-weight="700" fill="#1F2937">贴与拆：都已成行成市</text>
+  <text x="690" y="70" font-size="30" font-weight="700" fill="#C0392B">验：还停在爱好</text>
+  <line x1="630" y1="40" x2="630" y2="620" stroke="#1F2937" stroke-opacity="0.25" stroke-width="2"/>
+
+  <!-- 左：长条（同尺度，最长 6321 对应 440px） -->
+  <text x="70" y="140" font-size="22" fill="#1F2937">拆水印工具头名（星）</text>
+  <rect x="70" y="155" width="440" height="34" fill="#1F2937"/>
+  <text x="522" y="180" font-size="24" font-weight="700" fill="#1F2937">6321</text>
+
+  <text x="70" y="235" font-size="22" fill="#1F2937">逆向 SynthID 仓库（星）</text>
+  <rect x="70" y="250" width="352" height="34" fill="#1F2937"/>
+  <text x="434" y="275" font-size="24" font-weight="700" fill="#1F2937">5058</text>
+
+  <text x="70" y="330" font-size="22" fill="#1F2937">对抗攻击专利（件）</text>
+  <rect x="70" y="345" width="135" height="34" fill="#1F2937"/>
+  <text x="217" y="370" font-size="24" font-weight="700" fill="#1F2937">1944</text>
+
+  <text x="70" y="425" font-size="22" fill="#1F2937">水印嵌入专利（件）</text>
+  <rect x="70" y="440" width="74" height="34" fill="#1F2937"/>
+  <text x="156" y="465" font-size="24" font-weight="700" fill="#1F2937">1062</text>
+
+  <!-- 右：短桩（同一尺度，最短见空） -->
+  <text x="690" y="140" font-size="22" fill="#1F2937">内容溯源 + 机器学习（件）</text>
+  <rect x="690" y="155" width="6" height="34" fill="#C0392B"/>
+  <text x="708" y="180" font-size="24" font-weight="700" fill="#C0392B">75</text>
+
+  <text x="690" y="235" font-size="22" fill="#1F2937">第三方检测（件）</text>
+  <rect x="690" y="250" width="6" height="34" fill="#C0392B"/>
+  <text x="708" y="275" font-size="24" font-weight="700" fill="#C0392B">11</text>
+
+  <text x="690" y="330" font-size="22" fill="#1F2937">SynthID + watermark（件）</text>
+  <rect x="690" y="345" width="6" height="34" fill="#C0392B"/>
+  <text x="708" y="370" font-size="24" font-weight="700" fill="#C0392B">6</text>
+
+  <!-- 凭证校验：真零空位 -->
+  <text x="690" y="425" font-size="22" fill="#1F2937">凭证校验双查询（件）</text>
+  <rect x="690" y="440" width="440" height="34" fill="none" stroke="#C0392B" stroke-width="2" stroke-dasharray="8 7"/>
+  <text x="708" y="465" font-size="24" font-weight="700" fill="#C0392B">0（两次 HTTP 200 真零）</text>
+
+  <!-- 脚注 -->
+  <text x="70" y="612" font-size="19" fill="#1F2937" fill-opacity="0.6">同一 Google Patents 接口、同日（2026-11-09）实测；左为星数与件数混排，单位见标签；右与左同尺度。</text>
+  <text x="70" y="644" font-size="19" fill="#1F2937" fill-opacity="0.6">「贴水印」=嵌入端专利，「拆水印」=去水印开源工具，「验水印」=第三方独立检测与凭证校验。</text>
+</svg>
