@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect x="0" y="0" width="1200" height="675" fill="#FFFFFF"/>
+  <text x="60" y="72" font-family="Helvetica Neue,Arial,sans-serif" font-size="34" fill="#1A1B1E">仍在正轨的比例：从任务第一段到最后一段</text>
+  <text x="60" y="108" font-family="Helvetica Neue,Arial,sans-serif" font-size="20" fill="#767676">Multi-step SWE 长程基准，rollout 必须每一步都通过才算"在轨"</text>
+  <line x1="460" y1="130" x2="460" y2="575" stroke="#E0E0E0" stroke-width="2"/>
+  <line x1="820" y1="130" x2="820" y2="575" stroke="#E0E0E0" stroke-width="2"/>
+  <text x="460" y="150" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="22" fill="#555555">第一段（步数前 20%）</text>
+  <text x="820" y="150" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="22" fill="#555555">最后一段（步数后 20%）</text>
+  <polyline points="460,178 820,437" fill="none" stroke="#0072B2" stroke-width="5"/>
+  <polyline points="460,281 820,525" fill="none" stroke="#009E73" stroke-width="5"/>
+  <polyline points="460,460 820,571" fill="none" stroke="#D55E00" stroke-width="5"/>
+  <polyline points="460,239 820,373" fill="none" stroke="#999999" stroke-width="3" stroke-dasharray="10 7"/>
+  <circle cx="460" cy="178" r="7" fill="#0072B2"/>
+  <circle cx="820" cy="437" r="7" fill="#0072B2"/>
+  <circle cx="460" cy="281" r="7" fill="#009E73"/>
+  <circle cx="820" cy="525" r="7" fill="#009E73"/>
+  <circle cx="460" cy="460" r="7" fill="#D55E00"/>
+  <circle cx="820" cy="571" r="7" fill="#D55E00"/>
+  <circle cx="460" cy="239" r="6" fill="#999999"/>
+  <circle cx="820" cy="373" r="6" fill="#999999"/>
+  <text x="440" y="170" text-anchor="end" font-family="Helvetica Neue,Arial,sans-serif" font-size="24" fill="#0072B2">Claude Opus 5.5   54.7%</text>
+  <text x="840" y="431" font-family="Helvetica Neue,Arial,sans-serif" font-size="24" fill="#0072B2">19.2%</text>
+  <text x="440" y="245" text-anchor="end" font-family="Helvetica Neue,Arial,sans-serif" font-size="24" fill="#555555">单步通过率均值（对照）   40.7%</text>
+  <text x="840" y="367" font-family="Helvetica Neue,Arial,sans-serif" font-size="24" fill="#555555">27.8%</text>
+  <text x="440" y="288" text-anchor="end" font-family="Helvetica Neue,Arial,sans-serif" font-size="24" fill="#009E73">全模型在轨均值   34.9%</text>
+  <text x="840" y="519" font-family="Helvetica Neue,Arial,sans-serif" font-size="24" fill="#009E73">9.0%</text>
+  <text x="440" y="468" text-anchor="end" font-family="Helvetica Neue,Arial,sans-serif" font-size="24" fill="#D55E00">Grok 4.7   13.1%</text>
+  <text x="840" y="565" font-family="Helvetica Neue,Arial,sans-serif" font-size="24" fill="#D55E00">1.4%</text>
+  <text x="60" y="628" font-family="Helvetica Neue,Arial,sans-serif" font-size="19" fill="#767676">最陡跌幅都出现在第一段到第二段之间；单步通过率下降平缓，串成链条后错误一路滚雪球。</text>
+  <text x="60" y="656" font-family="Helvetica Neue,Arial,sans-serif" font-size="18" fill="#999999">数据：Multi-step SWE（arXiv 2611.07166）Figure 4 口径，2026-11-09 实测</text>
+</svg>
