@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect x="0" y="0" width="1200" height="675" fill="#FFFFFF"/>
+  <text x="60" y="66" font-family="Helvetica Neue,Arial,sans-serif" font-size="32" fill="#1A1B1E">同一个上午的两条线：方向恰好相反</text>
+  <text x="60" y="102" font-family="Helvetica Neue,Arial,sans-serif" font-size="20" fill="#767676">a 热度对照（分数对全树评论数，2026-11-09 上午实测）　b 两个事件的迁移方向</text>
+  <line x1="100" y1="540" x2="540" y2="540" stroke="#BFBFBF" stroke-width="2"/>
+  <line x1="100" y1="540" x2="100" y2="150" stroke="#BFBFBF" stroke-width="2"/>
+  <text x="470" y="566" font-family="Helvetica Neue,Arial,sans-serif" font-size="18" fill="#767676">全树评论数 →</text>
+  <text x="108" y="168" font-family="Helvetica Neue,Arial,sans-serif" font-size="18" fill="#767676">分数 ↑</text>
+  <circle cx="490" cy="238" r="14" fill="#0072B2"/>
+  <circle cx="263" cy="420" r="14" fill="#D55E00"/>
+  <text x="468" y="222" text-anchor="end" font-family="Helvetica Neue,Arial,sans-serif" font-size="22" fill="#0072B2">《Goodbye Claude, hello Pi》</text>
+  <text x="468" y="250" text-anchor="end" font-family="Helvetica Neue,Arial,sans-serif" font-size="22" fill="#0072B2">702 分 / 433 条</text>
+  <text x="287" y="404" font-family="Helvetica Neue,Arial,sans-serif" font-size="22" fill="#D55E00">高盛收权帖 50415628</text>
+  <text x="287" y="432" font-family="Helvetica Neue,Arial,sans-serif" font-size="22" fill="#D55E00">604 分 / 351 条</text>
+  <line x1="640" y1="130" x2="640" y2="560" stroke="#E5E5E5" stroke-width="2"/>
+  <rect x="680" y="180" width="180" height="64" rx="8" fill="#F5F5F5" stroke="#BFBFBF" stroke-width="2"/>
+  <text x="770" y="218" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="22" fill="#1A1B1E">个人开发者</text>
+  <rect x="1000" y="180" width="140" height="64" rx="8" fill="#FFFFFF" stroke="#0072B2" stroke-width="3"/>
+  <text x="1070" y="207" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="20" fill="#0072B2">开源壳</text>
+  <text x="1070" y="231" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="16" fill="#0072B2">Pi / OpenCode</text>
+  <line x1="864" y1="212" x2="984" y2="212" stroke="#0072B2" stroke-width="5"/>
+  <polygon points="998,212 976,202 976,222" fill="#0072B2"/>
+  <text x="924" y="166" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="20" fill="#0072B2">带着订阅往外搬</text>
+  <rect x="680" y="380" width="180" height="64" rx="8" fill="#F5F5F5" stroke="#BFBFBF" stroke-width="2"/>
+  <text x="770" y="418" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="22" fill="#1A1B1E">甲方高盛</text>
+  <rect x="1000" y="380" width="140" height="64" rx="8" fill="#FFFFFF" stroke="#D55E00" stroke-width="3"/>
+  <text x="1070" y="407" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="20" fill="#D55E00">执行壳</text>
+  <text x="1070" y="431" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="16" fill="#D55E00">仅工程师可持</text>
+  <line x1="864" y1="412" x2="984" y2="412" stroke="#D55E00" stroke-width="5"/>
+  <polygon points="998,412 976,402 976,422" fill="#D55E00"/>
+  <text x="924" y="490" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-size="20" fill="#D55E00">从非工程岗往里收，推理位置没动</text>
+  <text x="60" y="620" font-family="Helvetica Neue,Arial,sans-serif" font-size="19" fill="#767676">搬与收的是同一样东西：对壳的选择权。数据：HN Algolia 全树实测，2026-11-09 上午。</text>
+</svg>
