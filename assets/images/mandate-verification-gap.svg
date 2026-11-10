@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- 面板头 -->
+  <text x="70" y="70" font-size="30" font-weight="700" fill="#1F2937">签发端：协议与专利在圈地</text>
+  <text x="690" y="70" font-size="30" font-weight="700" fill="#C0392B">校验端：柜台前排着个位数</text>
+  <line x1="630" y1="40" x2="630" y2="600" stroke="#1F2937" stroke-opacity="0.25" stroke-width="2"/>
+
+  <!-- 左：签发侧（星/件同一尺度，最长 26467 对应 440px） -->
+  <text x="70" y="140" font-size="22" fill="#1F2937">A2A 协议主仓（星）</text>
+  <rect x="70" y="155" width="440" height="34" fill="#1F2937"/>
+  <text x="522" y="180" font-size="24" font-weight="700" fill="#1F2937">26467</text>
+
+  <text x="70" y="235" font-size="22" fill="#1F2937">agent protocol 专利检索（件）</text>
+  <rect x="70" y="250" width="38" height="34" fill="#1F2937"/>
+  <text x="120" y="275" font-size="24" font-weight="700" fill="#1F2937">2297</text>
+
+  <!-- 下载量为另一单位，不混入条长，单独标注 -->
+  <text x="70" y="336" font-size="22" fill="#1F2937">x402 npm 近一月下载（次）</text>
+  <text x="70" y="372" font-size="24" font-weight="700" fill="#1F2937">2400334</text>
+  <text x="212" y="372" font-size="20" fill="#1F2937" fill-opacity="0.6">（单位不同，未画入同尺度条）</text>
+
+  <!-- 右：校验侧（同一尺度，最短见空） -->
+  <text x="690" y="140" font-size="22" fill="#1F2937">Praman（星）</text>
+  <rect x="690" y="155" width="6" height="34" fill="#C0392B"/>
+  <text x="708" y="180" font-size="24" font-weight="700" fill="#C0392B">15</text>
+
+  <text x="690" y="235" font-size="22" fill="#1F2937">sutra（星）</text>
+  <rect x="690" y="250" width="6" height="34" fill="#C0392B"/>
+  <text x="708" y="275" font-size="24" font-weight="700" fill="#C0392B">9</text>
+
+  <text x="690" y="330" font-size="22" fill="#1F2937">kanon（星）</text>
+  <rect x="690" y="345" width="6" height="34" fill="#C0392B"/>
+  <text x="708" y="370" font-size="24" font-weight="700" fill="#C0392B">4</text>
+  <text x="748" y="370" font-size="20" fill="#C0392B" fill-opacity="0.75">参考校验器坑位就在这个仓库手里</text>
+
+  <!-- 自建裁判：另一类，虚线框隔离 -->
+  <rect x="690" y="430" width="200" height="60" fill="none" stroke="#C0392B" stroke-width="2" stroke-dasharray="8 7"/>
+  <text x="706" y="455" font-size="20" fill="#C0392B">internet-court 7083 星</text>
+  <text x="706" y="481" font-size="20" fill="#C0392B">自建裁判，另一类，不算校验位</text>
+
+  <!-- 脚注 -->
+  <text x="70" y="612" font-size="19" fill="#1F2937" fill-opacity="0.6">星数与件数同一尺度（26467 为最长），x402 下载为另一单位仅作规模注记；全部数字 2026-11-10 实测。</text>
+  <text x="70" y="644" font-size="19" fill="#1F2937" fill-opacity="0.6">「签发端」=协议与 mandate 签发工具；「校验端」=对 mandate 做字段级一致性校验的开源工具。</text>
+</svg>
