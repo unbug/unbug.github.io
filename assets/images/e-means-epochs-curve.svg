@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- 坐标框（仅两轴基线，无刻度数字） -->
+  <line x1="110" y1="560" x2="1130" y2="560" stroke="#1F2937" stroke-width="2"/>
+  <line x1="110" y1="80" x2="110" y2="560" stroke="#1F2937" stroke-width="2"/>
+  <text x="620" y="618" font-size="24" fill="#1F2937" fill-opacity="0.7" text-anchor="middle">epoch →</text>
+  <text x="60" y="320" font-size="24" fill="#1F2937" fill-opacity="0.7" text-anchor="middle" transform="rotate(-90 60 320)">聚类损失 →</text>
+
+  <!-- Lloyd 25-epoch 损失水位（红线，水平） -->
+  <line x1="110" y1="430" x2="1130" y2="430" stroke="#C0392B" stroke-width="3" stroke-dasharray="12 8"/>
+  <text x="1122" y="412" font-size="24" font-weight="700" fill="#C0392B" text-anchor="end">Lloyd 跑满 25 个 epoch 的损失水位</text>
+
+  <!-- e-means 下降曲线：从左上滑到红线处进入平台 -->
+  <path d="M 150 110 C 340 300, 430 402, 520 428 C 560 438, 620 440, 1130 442" fill="none" stroke="#1F2937" stroke-width="5" stroke-linecap="round"/>
+  <text x="165" y="95" font-size="24" font-weight="700" fill="#1F2937">e-means 损失曲线</text>
+
+  <!-- 追平带 1.4–2.6 -->
+  <rect x="455" y="360" width="95" height="140" fill="#C0392B" fill-opacity="0.08"/>
+  <line x1="455" y1="560" x2="455" y2="430" stroke="#C0392B" stroke-width="2" stroke-dasharray="4 5"/>
+  <line x1="550" y1="560" x2="550" y2="430" stroke="#C0392B" stroke-width="2" stroke-dasharray="4 5"/>
+  <text x="502" y="596" font-size="24" font-weight="700" fill="#C0392B" text-anchor="middle">1.4 – 2.6</text>
+  <text x="596" y="366" font-size="22" fill="#C0392B">追平发生在这里（此后是平台）</text>
+
+  <!-- 对照点：25 在横轴远端 -->
+  <line x1="1080" y1="560" x2="1080" y2="500" stroke="#1F2937" stroke-width="2" stroke-opacity="0.55"/>
+  <text x="1080" y="536" font-size="24" font-weight="700" fill="#1F2937" text-anchor="middle" fill-opacity="0.85">25</text>
+  <text x="1044" y="500" font-size="22" fill="#1F2937" fill-opacity="0.75" text-anchor="end">Lloyd 的横轴位置</text>
+
+  <!-- 脚注 -->
+  <text x="110" y="652" font-size="20" fill="#1F2937" fill-opacity="0.6">示意曲线（非逐点实测）：追平区间与 25 个 epoch 来自论文口径；曲线走势对应正文第 4.3 节结论。</text>
+</svg>
