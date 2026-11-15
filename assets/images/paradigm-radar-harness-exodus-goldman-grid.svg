@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="560" fill="#F4F7FB"/>
+  <text x="600" y="42" font-size="25" font-weight="bold" fill="#1E3A5F" text-anchor="middle">高盛收回执行壳：权限矩阵与线程里的三条解释线</text>
+
+  <g font-size="15.5" text-anchor="middle">
+    <rect x="60" y="80" width="240" height="64" rx="10" fill="#EAF6EF" stroke="#1E8449" stroke-width="2.5"/><text x="180" y="107" fill="#14532D" font-weight="bold">工程师 ✓ 保留</text><text x="180" y="131" fill="#1F4D33">Claude Code + GitHub 全套</text>
+    <rect x="330" y="80" width="240" height="64" rx="10" fill="#EAF6EF" stroke="#1E8449" stroke-width="2"/><text x="450" y="107" fill="#14532D" font-weight="bold">strats（量化岗）✓</text><text x="450" y="131" fill="#1F4D33">仍在白名单</text>
+    <rect x="600" y="80" width="240" height="64" rx="10" fill="#FDECEA" stroke="#C0392B" stroke-width="2.5"/><text x="720" y="107" fill="#C0392B" font-weight="bold">交易员 ✗ 切断</text><text x="720" y="131" fill="#7B241C">内部指引 10 月更新</text>
+    <rect x="870" y="80" width="240" height="64" rx="10" fill="#FDECEA" stroke="#C0392B" stroke-width="2.5"/><text x="990" y="107" fill="#C0392B" font-weight="bold">银行家 ✗ 切断</text><text x="990" y="131" fill="#7B241C">推理位置未动：仍是 Anthropic 云端</text>
+  </g>
+
+  <rect x="60" y="180" width="1050" height="94" rx="12" fill="#FFFFFF" stroke="#2F6FB2" stroke-width="2"/>
+  <text x="85" y="212" font-size="17" font-weight="bold" fill="#1E3A5F">解释线 ①（子树 161 条最热）：lukebuehler 50416595「致命三角」</text>
+  <text x="85" y="242" font-size="14.5" fill="#41627F">半无人值守的编码代理 × 能碰客户/交易/内幕信息的工位机 × 邮件客户端——同机共存即越线，与模型好坏无关</text>
+
+  <rect x="60" y="294" width="1050" height="94" rx="12" fill="#FFFFFF" stroke="#2F6FB2" stroke-width="2"/>
+  <text x="85" y="326" font-size="17" font-weight="bold" fill="#1E3A5F">解释线 ②（子树 83 条，自述）：legitster 50416136 账单线</text>
+  <text x="85" y="356" font-size="14.5" fill="#41627F">「我们组织因长期超支在回收 Claude 权限」；Anthropic 给不出归一化费率的合同形态，Gemini 用固定账单+降级限流承接非工程岗</text>
+
+  <rect x="60" y="408" width="1050" height="94" rx="12" fill="#FFFFFF" stroke="#C0392B" stroke-width="2"/>
+  <text x="85" y="440" font-size="17" font-weight="bold" fill="#7B241C">解释线 ③（子树 32 条）：cactca 50416089 时机线</text>
+  <text x="85" y="470" font-size="14.5" fill="#7B241C">高盛是 Anthropic IPO 主承销商，公告选在上市前几周（sourdecor 50415930 提信息墙假说；pdpi 50416143 反平衡：健全组织里这是两个部门，默认想利益输送反而可悲）</text>
+
+  <text x="600" y="536" font-size="15.5" fill="#6B7F96" text-anchor="middle">反方在档：Barclays 反向扩张（amelius 50415825 自述年底前半数工程师用 Claude Code）——「银行业集体撤壳」不成立</text>
+</svg>

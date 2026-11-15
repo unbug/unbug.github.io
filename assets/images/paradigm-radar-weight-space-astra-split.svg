@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="620" fill="#F4F7FB"/>
+  <text x="600" y="44" font-size="25" font-weight="bold" fill="#1E3A5F" text-anchor="middle">一张图拆开被混用的两个实验：Astra 博客内部结构（打假帖核心指控）</text>
+
+  <rect x="40" y="80" width="545" height="270" rx="14" fill="#EAF2FB" stroke="#2F6FB2" stroke-width="2.5"/>
+  <text x="65" y="115" font-size="19" font-weight="bold" fill="#1E3A5F">实验 1/2/4：只读裸权重、无工具</text>
+  <g font-size="15.5" fill="#41627F">
+    <text x="65" y="150">对象：4 个游戏策略网络（MLP 500→32→32→5，17,253 个权重）</text>
+    <text x="65" y="178">结果：四发四中报出游戏名，Breakout 置信 99%（博客口径）</text>
+    <text x="65" y="212">对象：3 个 7.2M 字符级 LM，抹掉输入输出层只留 4 个中间块</text>
+    <text x="65" y="240">结果：3/3 报对训练语料，并点中复制头（induction head）位置</text>
+    <text x="65" y="285" font-weight="bold" fill="#2F6FB2">量级：1.7 万 ~ 17 万权重 —— 与 Qwen（数十亿）无关</text>
+    <text x="65" y="315" font-size="14" fill="#6B7F96">同行可复述：小网络读权重属实（LP 帖与打假帖均未否认此项）</text>
+  </g>
+
+  <rect x="615" y="80" width="545" height="270" rx="14" fill="#EAF6EF" stroke="#1E8449" stroke-width="2.5"/>
+  <text x="640" y="115" font-size="19" font-weight="bold" fill="#14532D">Qwen 改写实验：带定位与编辑的全副装备</text>
+  <g font-size="15.5" fill="#1F4D33">
+    <text x="640" y="150">对象：Qwen3.5-0.8B（推理打转病因定位在 15、19 层某方向）</text>
+    <text x="640" y="178">改动：0.016% 的权重</text>
+    <text x="640" y="206">账面：MATH-500 7.9% → 48.1%；IFEval 约涨三倍（博客数字，非第三方复测）</text>
+    <text x="640" y="248" font-weight="bold" fill="#7B241C">x313（50353792，自报机械可解释性研究者）：关键结果与「更会数学」无关，</text>
+    <text x="640" y="272" font-weight="bold" fill="#7B241C">只是降低 reasoning loop——简单方法也能修</text>
+    <text x="640" y="315" font-size="14" fill="#6B7F96">nathan.rs（11-11）：1940 年代血统的线性规划可复现同类编辑（kragen 50453155）</text>
+  </g>
+
+  <rect x="40" y="390" width="1120" height="140" rx="14" fill="#FFFFFF" stroke="#C0392B" stroke-width="2"/>
+  <text x="65" y="425" font-size="18" font-weight="bold" fill="#C0392B">Honnibal 判决线（honnibal.dev，1045 分 / 206 条；评论 50351599）</text>
+  <text x="65" y="458" font-size="15.5" fill="#1F2937">广泛转述的「读权重」出自左栏；真正「改进 Qwen」的增益出自右栏——两个实验被标题焊成一个。</text>
+  <text x="65" y="488" font-size="15.5" fill="#1F2937">反-反方在场：phoghed（50351571）「misleading 的只是标题」；kenjackson（50351578）「做了什么没做什么写得再明白不过」。</text>
+
+  <text x="600" y="580" font-size="16" fill="#6B7280" text-anchor="middle">转述链上每混用一次，左栏的小网络证据就给右栏的大模型结论背一次书——这是本期最重要的口径纪律</text>
+</svg>

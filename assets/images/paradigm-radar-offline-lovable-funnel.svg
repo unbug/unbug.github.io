@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="560" fill="#FFFFFF"/>
+  <text x="70" y="58" font-size="26" font-weight="700" fill="#1F2937">云侧事故被量化到个数：Lovable 泄露扫描（作者自报口径，id=50499563）</text>
+
+  <g text-anchor="middle">
+    <polygon points="200,120 1000,120 940,200 260,200" fill="#1F2937"/>
+    <text x="600" y="168" font-size="21" fill="#FFFFFF">Common Crawl 扫出公开在册 Lovable 项目 159,041 个（2025-12 ~ 2026-09）</text>
+    <polygon points="285,225 915,225 845,305 355,305" fill="#C0392B"/>
+    <text x="600" y="273" font-size="21" fill="#FFFFFF">其中使用 Supabase 后端的 34,545 个</text>
+    <polygon points="425,330 775,330 725,410 475,410" fill="#7B241C"/>
+    <text x="600" y="378" font-size="20" fill="#FFFFFF">抽样约 2.5% 在泄露用户数据（护照号在列）</text>
+  </g>
+
+  <g font-size="17" fill="#1F2937">
+    <text x="70" y="465">厂商回应（Head of Security，id=50502105）：根因 = Supabase 行级安全（RLS）未配置；发布前扫描 + 一键修复已上线</text>
+    <text x="70" y="497">线程反击（id=50502127）：约 7,500 个站点运营者对告警无动于衷——「提示了但没人点」不豁免分发方</text>
+  </g>
+  <text x="70" y="535" font-size="16" fill="#6B7280">口径：抽样推定，非全量审计；研究首发两周无人问津，复投后 910→937 分（11-16 复测）。</text>
+</svg>

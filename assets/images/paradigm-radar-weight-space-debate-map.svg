@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="540" fill="#FFFFFF"/>
+  <text x="70" y="52" font-size="25" font-weight="700" fill="#1F2937">三派立场图：主贴、打假、反-反方（数字为评论编号，11-16 复测）</text>
+
+  <rect x="70" y="90" width="290" height="330" rx="14" fill="#F3F4F6" stroke="#1F2937" stroke-width="2"/>
+  <text x="90" y="124" font-size="18" font-weight="bold" fill="#1F2937">主贴派 2969 分（50341174 线程）</text>
+  <g font-size="14.5" fill="#374151">
+    <text x="90" y="158">vessenes 50341841「I'm shook」</text>
+    <text x="90" y="186">xg15 50343529：几秒读完人类数年系统</text>
+    <text x="90" y="214">suriyaG 50345407：权重不是给人读的</text>
+    <text x="90" y="250">futureshock 50342071：训练数据哪来的？</text>
+    <text x="90" y="278">vanyle 50342657：喂过权重数据的猜测</text>
+    <text x="90" y="306">elanning 50343212：自测权重转文本可推理</text>
+    <text x="90" y="342" fill="#6B7280">暗线：arXiv 2402.18153——LLM 直接预测</text>
+    <text x="90" y="366" fill="#6B7280">权重是进行中的研究方向（中间地带）</text>
+  </g>
+
+  <rect x="440" y="90" width="330" height="330" rx="14" fill="#FDECEA" stroke="#C0392B" stroke-width="2.5"/>
+  <text x="460" y="124" font-size="18" font-weight="bold" fill="#C0392B">打假派 1045+294 分</text>
+  <g font-size="14.5" fill="#7B241C">
+    <text x="460" y="158">honnibal（spaCy 作者）：实验口径混用</text>
+    <text x="460" y="186">x313 50353792：只是修掉 reasoning loop</text>
+    <text x="460" y="214">yurimo 50347685：超网络谱系 2016 年起</text>
+    <text x="460" y="250">kragen 50453155：1940s 算法就能编辑 Qwen</text>
+    <text x="460" y="278">FrustratedMonky 50453312：警惕措辞游戏</text>
+    <text x="460" y="322" fill="#6B7280">共同点：质疑全部来自同行级参与者——</text>
+    <text x="460" y="348" fill="#6B7280">这是「有专业读者的领域」的标志，</text>
+    <text x="460" y="374" fill="#6B7280">不是营销狂欢的杂音</text>
+  </g>
+
+  <rect x="850" y="90" width="280" height="330" rx="14" fill="#EAF6EF" stroke="#1E8449" stroke-width="2"/>
+  <text x="870" y="124" font-size="18" font-weight="bold" fill="#14532D">反-反方</text>
+  <g font-size="14.5" fill="#1F4D33">
+    <text x="870" y="158">phoghed 50351571：</text>
+    <text x="870" y="182">正文清楚，misleading 的是标题</text>
+    <text x="870" y="218">kenjackson 50351578：</text>
+    <text x="870" y="242">做了什么没做什么写得明白</text>
+    <text x="870" y="286" fill="#6B7280">并排之后剩下的硬地面：</text>
+    <text x="870" y="312" fill="#6B7280">小网络读权重属实；「原生」成色</text>
+    <text x="870" y="338" fill="#6B7280">与大规模泛化未定；打假帖自身</text>
+    <text x="870" y="364" fill="#6B7280">也只有 206 条，未形成合围</text>
+  </g>
+  <text x="600" y="480" font-size="17" fill="#1F2937" text-anchor="middle">三派同场且都能落到评论编号——权重编程的公共讨论从第一天起就是可审计的</text>
+  <text x="600" y="512" font-size="15" fill="#6B7280" text-anchor="middle">本期结论只取三派交集：能力真实存在，幅度与泛化待定，守门需求已确认</text>
+</svg>

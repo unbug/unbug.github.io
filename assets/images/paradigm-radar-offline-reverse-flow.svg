@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="640" fill="#F4F7FB"/>
+  <text x="600" y="46" font-size="25" font-weight="bold" fill="#1E3A5F" text-anchor="middle">两条路径对照：云端订阅线 vs 机主逆向线（以绣花机案为样本）</text>
+
+  <rect x="40" y="80" width="1120" height="150" rx="14" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+  <text x="70" y="115" font-size="19" font-weight="bold" fill="#C0392B">厂商路径（评论线程里被反复拒绝的一侧）</text>
+  <g font-size="16" fill="#7B241C" text-anchor="middle">
+    <rect x="70" y="135" width="170" height="70" rx="10" fill="#FFFFFF" stroke="#C0392B"/><text x="155" y="165">设备（$303–499）</text><text x="155" y="190">买断硬件</text>
+    <rect x="300" y="135" width="170" height="70" rx="10" fill="#FFFFFF" stroke="#C0392B"/><text x="385" y="165">厂商云</text><text x="385" y="190">功能过云才可用</text>
+    <rect x="530" y="135" width="170" height="70" rx="10" fill="#FFFFFF" stroke="#C0392B"/><text x="615" y="165">订阅费</text><text x="615" y="190">订阅定价反推硬件折扣</text>
+    <rect x="760" y="135" width="170" height="70" rx="10" fill="#FFFFFF" stroke="#C0392B"/><text x="845" y="165">停服/涨价</text><text x="845" y="190">所有权悬于厂商</text>
+    <rect x="960" y="135" width="170" height="70" rx="10" fill="#FFFFFF" stroke="#C0392B"/><text x="1045" y="165">DMCA 阴影</text><text x="1045" y="190">维修合法性争论</text>
+  </g>
+  <g stroke="#C0392B" stroke-width="2.5" fill="none" marker-end="url(#arrR)">
+    <line x1="240" y1="170" x2="300" y2="170"/><line x1="470" y1="170" x2="530" y2="170"/><line x1="700" y1="170" x2="760" y2="170"/><line x1="930" y1="170" x2="960" y2="170"/>
+  </g>
+
+  <rect x="40" y="280" width="1120" height="230" rx="14" fill="#EAF6EF" stroke="#1E8449" stroke-width="2.5"/>
+  <text x="70" y="315" font-size="19" font-weight="bold" fill="#1E8449">机主路径（simpsoka / scottjg 线程自述，编号可定位）</text>
+  <g font-size="16" fill="#14532D" text-anchor="middle">
+    <rect x="70" y="340" width="190" height="90" rx="10" fill="#FFFFFF" stroke="#1E8449"/><text x="165" y="370">拆机 + PacketLogger</text><text x="165" y="395">从零抓协议</text><text x="165" y="418">（id=50475887 自述）</text>
+    <rect x="320" y="340" width="190" height="90" rx="10" fill="#FFFFFF" stroke="#1E8449"/><text x="415" y="370">交叉验证</text><text x="415" y="395">agent 对照开源库 Respira</text><text x="415" y="418">（同楼层自述）</text>
+    <rect x="570" y="340" width="190" height="90" rx="10" fill="#FFFFFF" stroke="#1E8449"/><text x="665" y="370">「整个 App 用 AI 构建」</text><text x="665" y="395">逐字原话在评论区</text><text x="665" y="418">zigzag 仓库 783 星（11-16）</text>
+    <rect x="820" y="340" width="150" height="90" rx="10" fill="#FFFFFF" stroke="#1E8449"/><text x="895" y="370">本地可用</text><text x="895" y="395">不经厂商云</text>
+    <rect x="990" y="340" width="150" height="90" rx="10" fill="#FFFFFF" stroke="#1E8449"/><text x="1065" y="370">公开仓库</text><text x="1065" y="395">他人可复制</text>
+  </g>
+  <g stroke="#1E8449" stroke-width="2.5" fill="none" marker-end="url(#arrG)">
+    <line x1="260" y1="385" x2="320" y2="385"/><line x1="510" y1="385" x2="570" y2="385"/><line x1="760" y1="385" x2="820" y2="385"/><line x1="970" y1="385" x2="990" y2="385"/>
+  </g>
+  <text x="70" y="480" font-size="15" fill="#14532D">同构事件：Coway 固件逆向（root CA 走明文 HTTP，id=50484284）· 智能家庭「核心不依赖厂商服务器」（id=50441708）</text>
+
+  <defs>
+    <marker id="arrR" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#C0392B"/></marker>
+    <marker id="arrG" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#1E8449"/></marker>
+  </defs>
+  <text x="600" y="580" font-size="16" fill="#6B7280" text-anchor="middle">绿色链条的每一环都有署名自述与公开仓库承接——这正是「迁移」与「抱怨」的区别</text>
+</svg>

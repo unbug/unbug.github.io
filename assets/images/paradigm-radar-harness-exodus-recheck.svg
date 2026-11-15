@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 470" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="470" fill="#FFFFFF"/>
+  <text x="70" y="52" font-size="25" font-weight="700" fill="#1F2937">七天复测（11-09 首采 → 11-16 复测）：收权帖涨得比搬家帖快</text>
+
+  <g font-size="19" fill="#1F2937">
+    <text x="70" y="120">《Goodbye Claude, hello Pi》分数（50410107）</text>
+    <text x="70" y="196">高盛收权帖分数（50415628）</text>
+    <text x="70" y="272">全树评论数：Pi 帖 / 高盛帖</text>
+    <text x="70" y="348">earendil-works/pi 仓库星数</text>
+  </g>
+  <g>
+    <rect x="560" y="96" width="390" height="28" fill="#1F2937"/><rect x="950" y="96" width="72" height="28" fill="#C0392B"/>
+    <text x="560" y="146" font-size="15" fill="#6B7280">702 → 831（+129）</text>
+    <rect x="560" y="172" width="336" height="28" fill="#1F2937"/><rect x="896" y="172" width="167" height="28" fill="#C0392B"/>
+    <text x="560" y="222" font-size="15" fill="#6B7280">604 → 905（+301）——涨幅超过首帖</text>
+    <text x="560" y="262" font-size="15" fill="#6B7280">433 → 491 条 · 351 → 474 条（两树都还在长）</text>
+    <text x="560" y="340" font-size="15" fill="#6B7280">120,865 → 122,134（七天 +1,269 星，11-15 仍有提交）</text>
+  </g>
+  <text x="70" y="420" font-size="16" fill="#6B7280">读数：一周后舆论把更多热度压给「甲方收回执行壳」一侧——个人搬家已成共识面，岗位收权才是未决争议面。</text>
+</svg>

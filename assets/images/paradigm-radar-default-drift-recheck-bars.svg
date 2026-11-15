@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="660" fill="#FFFFFF"/>
+  <text x="70" y="56" font-size="26" font-weight="700" fill="#1F2937">同窗六帖：11-04 首采 vs 11-16 复测（深色首采，红色为涨幅）</text>
+
+  <g font-size="19" fill="#1F2937">
+    <text x="70" y="120">Postman 自动装 AI 插件（50354960）</text>
+    <text x="70" y="200">OpenAI Codex 开关回弹（50352757）</text>
+    <text x="70" y="280">Anthropic 封「碰过训练」账号（50319358）</text>
+    <text x="70" y="360">Gmail/Photos 或将用于广告（50214218）</text>
+    <text x="70" y="440">Claude 用了盗版教授书籍（50260814）</text>
+    <text x="70" y="520">帮助页《Is my data used…》上榜（50259406）</text>
+  </g>
+  <g>
+    <rect x="560" y="96" width="447" height="30" fill="#1F2937"/><rect x="1007" y="96" width="128" height="30" fill="#C0392B"/>
+    <text x="560" y="146" font-size="15" fill="#6B7280">1192 → 1533（+341）· 462 条 · 日志级证据 · 涉事 issue 复测时已被删除</text>
+
+    <rect x="560" y="176" width="176" height="30" fill="#1F2937"/><rect x="736" y="176" width="25" height="30" fill="#C0392B"/>
+    <text x="560" y="226" font-size="15" fill="#6B7280">468 → 536（+68）· 163 条 · 观察级证据 · 官方零回应</text>
+
+    <rect x="560" y="256" width="184" height="30" fill="#1F2937"/><rect x="744" y="256" width="2" height="30" fill="#C0392B"/>
+    <text x="560" y="306" font-size="15" fill="#6B7280">492 → 497 · 条款执行侧（行为分类器）</text>
+
+    <rect x="560" y="336" width="150" height="30" fill="#1F2937" fill-opacity="0.55"/>
+    <text x="560" y="386" font-size="15" fill="#6B7280">403 → 403 · 广告用途旁证，不入核心论证</text>
+
+    <rect x="560" y="416" width="225" height="30" fill="#1F2937" fill-opacity="0.55"/><rect x="785" y="416" width="1" height="30" fill="#C0392B"/>
+    <text x="560" y="466" font-size="15" fill="#6B7280">606 → 608 · 输入侧（盗版语料）</text>
+
+    <rect x="560" y="496" width="84" height="30" fill="#1F2937" fill-opacity="0.55"/>
+    <text x="560" y="546" font-size="15" fill="#6B7280">225 → 225 · 公众级疑问的直接显影</text>
+  </g>
+  <text x="70" y="615" font-size="16" fill="#6B7280">读数：两天里 +409 分全部落在「可复现证据」两帖上——热度向日志级与截图级集中，媒体转载帖全部封顶。</text>
+</svg>

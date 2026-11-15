@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="520" fill="#FFFFFF"/>
+  <text x="70" y="52" font-size="25" font-weight="700" fill="#1F2937">迁移潮反证：审计器没长出来，「换掉整个 SaaS」先长出来了（11-16 复测口径）</text>
+
+  <g font-size="15.5">
+    <rect x="70" y="96" width="240" height="70" rx="10" fill="#1F2937"/><text x="190" y="126" fill="#FFFFFF" text-anchor="middle" font-weight="bold">Postman（线程当晚）</text><text x="190" y="150" fill="#FFFFFF" text-anchor="middle">医疗客户被吊销认证</text>
+    <rect x="420" y="96" width="330" height="70" rx="10" fill="#EAF6EF" stroke="#1E8449" stroke-width="2"/><text x="585" y="122" fill="#14532D" text-anchor="middle" font-weight="bold">Bruno（usebruno/bruno 48,402★，本地运行）</text><text x="585" y="148" fill="#1F4D33" text-anchor="middle">线程内 ≥4 条独立迁移自报 + 整支团队</text>
+    <rect x="850" y="96" width="280" height="70" rx="10" fill="#EAF2FB" stroke="#2F6FB2" stroke-width="2"/><text x="990" y="122" fill="#1E3A5F" text-anchor="middle" font-weight="bold">零成本路线</text><text x="990" y="148" fill="#1E3A5F" text-anchor="middle">OpenCollection 格式 / JetBrains .http 文件</text>
+
+    <rect x="70" y="206" width="240" height="70" rx="10" fill="#1F2937"/><text x="190" y="236" fill="#FFFFFF" text-anchor="middle" font-weight="bold">Google Photos（广告帖）</text><text x="190" y="260" fill="#FFFFFF" text-anchor="middle">「可能用于投广告」条款变更</text>
+    <rect x="420" y="206" width="330" height="70" rx="10" fill="#EAF6EF" stroke="#1E8449" stroke-width="2"/><text x="585" y="232" fill="#14532D" text-anchor="middle" font-weight="bold">Immich 自建 + Takeout 导出</text><text x="585" y="258" fill="#1F4D33" text-anchor="middle">jmathai PSA：「比 Google Photos 更好」（50216317）</text>
+    <rect x="850" y="206" width="280" height="70" rx="10" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/><text x="990" y="232" fill="#C0392B" text-anchor="middle" font-weight="bold">自报实锤</text><text x="990" y="258" fill="#7B241C" text-anchor="middle">rmunn：记体重的表格 → 减肥广告</text>
+
+    <rect x="70" y="316" width="240" height="70" rx="10" fill="#1F2937"/><text x="190" y="346" fill="#FFFFFF" text-anchor="middle" font-weight="bold">ChatGPT / Claude 训练开关</text><text x="190" y="370" fill="#FFFFFF" text-anchor="middle">滑块会自己回去</text>
+    <rect x="420" y="316" width="330" height="70" rx="10" fill="#EAF6EF" stroke="#1E8449" stroke-width="2"/><text x="585" y="342" fill="#14532D" text-anchor="middle" font-weight="bold">线程三派同向：自建推理 / ZDR 合同</text><text x="585" y="368" fill="#1F4D33" text-anchor="middle">monster_truck·rglullis·vibranium（罕见一致）</text>
+    <rect x="850" y="316" width="280" height="70" rx="10" fill="#F8FAFC" stroke="#9CA3AF" stroke-width="2"/><text x="990" y="342" fill="#1F2937" text-anchor="middle" font-weight="bold">审计工具（缺位）</text><text x="990" y="368" fill="#6B7280" text-anchor="middle">新建仓库 80 / 11 个，头部星数均低</text>
+  </g>
+  <g stroke="#1E8449" stroke-width="2.5" fill="none" marker-end="url(#xD)"><line x1="310" y1="131" x2="420" y2="131"/><line x1="310" y1="241" x2="420" y2="241"/><line x1="310" y1="351" x2="420" y2="351"/></g>
+  <text x="70" y="440" font-size="16" fill="#6B7280">GitHub 搜索面复测：「data sovereignty」ai 自 05-01 新建 77→80 个；training consent ai 8→11 个——审计品类的需求在涨，供给没跟上。</text>
+  <text x="70" y="478" font-size="17" fill="#1F2937">结论：对默认值漂移的即时反应是换供应商而不是装审计器——「审计」想成为品类，得跑赢迁移速度。</text>
+  <defs><marker id="xD" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#1E8449"/></marker></defs>
+</svg>

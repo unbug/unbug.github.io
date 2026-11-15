@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="500" fill="#FFFFFF"/>
+  <text x="70" y="52" font-size="25" font-weight="700" fill="#1F2937">需求线程里最重的子树是账单：NeutralWanted（50147314，子树 74 条）自报口径</text>
+
+  <g font-size="18" fill="#1F2937">
+    <text x="70" y="130">订阅 $200 档 · 月支出（每周打满）</text>
+    <text x="70" y="210">同强度走 API · 烧穿 $200 所需时间</text>
+    <text x="70" y="290">自建护栏（gpt-oss-safeguard + 策略文件）· 日支出</text>
+  </g>
+  <rect x="480" y="105" width="400" height="34" fill="#1F2937"/><text x="892" y="130" font-size="20" font-weight="bold" fill="#1F2937">$200 / 月</text>
+  <rect x="480" y="185" width="190" height="34" fill="#C0392B"/><text x="682" y="210" font-size="20" font-weight="bold" fill="#C0392B">$200 / 2–3 周（自报）</text>
+  <rect x="480" y="265" width="12" height="34" fill="#1E8449"/><text x="504" y="290" font-size="20" font-weight="bold" fill="#1E8449">$0.05–0.20 / 天（自报）</text>
+
+  <text x="70" y="370" font-size="16" fill="#6B7280">换算：API 通道年化约为订阅的 3–4 倍（自报数字推定，非抽样）；护栏走本地小模型，量级差 3 个数量级——「观测 + 预算 + 护栏」三件事的自建成本第一次低于订阅溢价本身。</text>
+  <text x="70" y="410" font-size="16" fill="#6B7280">反方并存：50147381 称「订阅制下成本监控是伪需求」；50147398（dcss_gardener）点破订阅的限额本身就是计费代理。</text>
+  <text x="70" y="458" font-size="15" fill="#9CA3AF">全部为评论区自报，无第三方账单核验；本图只用于呈现线程内的成本叙事结构。</text>
+</svg>

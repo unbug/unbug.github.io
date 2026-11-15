@@ -31,6 +31,8 @@ description: "HN 十二天事件簇实测：MIT CSAIL 博客称前沿模型能�
 
 ![七日 HN 事件点阵与权重可编程三层结构]({{ site.baseurl }}/assets/images/paradigm-radar-weight-space-cover.svg)
 
+![十二天九帖时间点阵：主贴 Astra 2526→2969 为最大圆，打假 1045、LP 复现 294、Misfolding 142 为红色补采点；底注指出正反两翼同时出帖的形态]({{ site.baseurl }}/assets/images/paradigm-radar-weight-space-recheck-timeline.svg)
+
 ## 三个一手源说了什么
 
 热度最高的 Astra 结果出自 MIT CSAIL 博客《Sparks of Weight-Space Programming》（`11` 月 `2` 日发布，作者 Rikiya Takehi、Jayden Teoh、Alex Zhang、Omar Khattab）。TL;DR 原句为 "We find that frontier LLMs are surprisingly good at natively reading and writing neural network weights, well past what we'd expect from humans or conventional algorithms."——前沿大模型无需工具辅助即可直接读写神经网络的权重。博客里的实验比标题更具体：四个游戏策略网络（`500→32→32→5` 的 MLP，`17,253` 个权重，PPO 同参训练），Astra 只读裸权重就四发四中报出游戏名，Breakout 置信 `99%`；三个 `7.2M` 字符级语言模型抹掉输入输出层、只留四个中间 transformer 块，Astra 三次全报对训练语料（Python、罗马音日语、英语），还准确点出每个模型里的复制头（induction head，复读前文的注意力头），与实测定位完全一致；改权重一侧，它定位到 Qwen3.5-0.8B 推理打转的病因在 `15`、`19` 层的某个方向，改 `0.016%` 的权重把 MATH-500 从 `7.9%` 拉到 `48.1%`，IFEval 顺带涨三倍（博客数字，非第三方复测）。
@@ -38,6 +40,8 @@ description: "HN 十二天事件簇实测：MIT CSAIL 博客称前沿模型能�
 评论区已经有人在讨论这是否是实验室为递归自我改进（RSI）做的内训外溢：vanyle（评论 `50342657`）直猜 Astra 被喂过权重数据「作为 OpenAI 逼近 RSI 的尝试」，作者未做此声称；两日后 Honnibal 的打假帖（见下节）把这场猜测的热度浇掉一半。
 
 Qwenputer 是同一个方向的极端演示：一篇个人博客把一台完整的确定性 RISC-V CPU 编译进了 stock Qwen 3.5 4B 的权重里。机制在博客里写得见底：Qwen 3.5 每四层有三层用 Gated DeltaNet 线性注意力，作者发现把门控设成 `1`、写强度 beta 设成 `1`、配 one-hot 键编码，状态矩阵就变成了精确可按地址覆写的 RAM；随后「不涉及任何训练」，由编译器直接把 CPU 电路写进权重——注意力头查表、前馈单元算数、DeltaNet 头存 RAM，模型解码时 CPU 随之运行，能跑算术、C 与 MicroPython。博客还内置了一个模型内文件存储：文件名哈希进 DeltaNet 状态里的 `1024` 个槽位。线程里 jazzyjackson（评论 `50283405`）摘录这段时感叹「读这帖比任何时候都想搞懂 LLM 怎么工作」；作者 Divyansh Agrawal 把这类成果称为「compiled weights」，且已放出系列后两篇——一篇演示混合模型把推理藏进 RNN 状态规避思维链监控，一篇演示编译权重当模型自身无法篡改的内建监控。理论渊源作者自己标了：Schlag 等人 `2021` 年 ICML 论文的「delta 规则即联想记忆（fast weights）」，新意在做成了精确、可按址、量产模型内可运行。它没有实用价值，但有范式价值：权重只要能编码一台 CPU，就说明它是通用介质而不是玄学参数。
+
+![对权重本体的五种动作链路：读（Astra 实验 1/2/4）→写（0.016% 权重改 Qwen）→编译（Qwenputer 把 RISC-V 写进 4B）→组队（GVS5H/Memdoor 五模型编队）→验（LP 复现与零权重病毒），下方附自左到右递减的口径标尺]({{ site.baseurl }}/assets/images/paradigm-radar-weight-space-ops-chain.svg)
 
 供给端同步在动：Memdoor 仓库复测 `406` 星（`10-05` 建仓）与 GVS5H 仓库复测 `1,207` 星（`08-26` 建仓，Persis Capital 研究实验室）都声称五个 Qwen3.8-27B 的编队能在 LiveCodeBench Hard 打平单个前沿大模型。GVS5H 的架构被 badsectoracula（评论 `50228427`）从 PDF 里摘出来过：除验证器外所有角色都是同一个底层模型，各拿干净上下文、靠磁盘上共享工作区协同——task.md 记题目、plan.md 记计划、notes.md 记中间发现、solution.py 收口。属于自报口径，第三方独立复现至复测日仍未出现。IBM CEO 帖下 jacquesm（评论 `50238737`，子树 `178` 条）给出了需求侧实景：八卡机加两台 DGX Spark 的自家阵列，「已经几个月没用付费模型」，整套约 `2.5` 万美元——开源权重的成本线，员工级硬件已在实测兑现。
 
@@ -49,7 +53,11 @@ Qwenputer 是同一个方向的极端演示：一篇个人博客把一台完整�
 
 `11-03`（原始博客爆红次日），honnibal.dev 发《The 'Astra can read and write weights to improve Qwen' post is misleading》冲上 `1045` 分 / `206` 条；发帖人 Matthew Honnibal 是 spaCy 作者，线程里有人直接点名「他是 spaCy 的作者，本该更懂标准」（评论 `50351967`）。打假点逐条可查：其一，「只读裸权重、无工具」的设置只出现在实验 `1`、`2`、`4`，对象是 `1.7` 万到 `17` 万权重的小网络，与 Qwen 那个量级无关——被广泛转述的「读权重」与真正有效的 Qwen 改写实验是两个实验（评论 `50351599`）。其二，math 提升的实质更接近修掉推理打转：机械可解释性研究者 x313（评论 `50353792`）自报职业身份称「关键结果与让 Qwen 更会数学无关，只是降低了 reasoning loop，这类问题用简单方法也能修」。其三，权重生成与改写早有谱系：Astra 线程里 yurimo（评论 `50347685`，子树 `96` 条）自述研究方向就是 weight-space learning，点名超网络（hypernetworks）一脉从 `2016` 年 Google Brain 起就存在，「博客写作与转发放大了结论」。
 
+![被混用的两个实验对照：左栏只读裸权重实验（17,253 权重小网络、四发四中、3/3 语料），右栏 Qwen 改写实验（0.016% 权重、MATH 7.9→48.1、x313 归因反驳），底栏 Honnibal 判决线与反-反方两条]({{ site.baseurl }}/assets/images/paradigm-radar-weight-space-astra-split.svg)
+
 `11-11` 的复测帖把冷水升级到可执行层面：nathan.rs 用 `1940` 年代血统的线性规划（LP）直接构造出对 Qwen 权重的同类编辑，帖下 kragen（评论 `50453155`）一句话定性：「这描述的是一个 1940 年代的线性优化算法在编辑一个有数十亿参数的 Qwen 模型」——「Astra 自己怎么没做到」。也有反-反方：phogged（评论 `50351571`）认为原文正文写得清楚、 misleading 的只是标题；kenjackson（`50351578`）称「论文把做了什么没做什么写得再明白不过」；`11-11` 帖下 FrustratedMonky（`50453312`）提醒区分「直接改权重」与「想出一个改权重的方法」之间的措辞游戏。三派立场并排后剩下的硬地面是：小网络上读权重属实、有同行可复述；「原生」成色与大规模泛化未定；而质疑本身全部来自同行级参与者——这场打假恰恰证明权重编程已是有专业读者的领域，不是营销狂欢。
+
+![三派立场图：主贴派（I'm shook、训练数据论）、打假派（口径混用、修 loop、1940s 算法复现）、反-反方（misleading 的是标题）各自列评论编号，底注取三派交集]({{ site.baseurl }}/assets/images/paradigm-radar-weight-space-debate-map.svg)
 
 ## 反面证据与边界
 

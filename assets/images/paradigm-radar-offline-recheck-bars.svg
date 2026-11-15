@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="700" fill="#FFFFFF"/>
+  <text x="70" y="58" font-size="26" font-weight="700" fill="#1F2937">七帖两日分数：11-15 首采 vs 11-16 复测（HN Algolia 全树口径）</text>
+  <text x="70" y="88" font-size="17" fill="#6B7280">深色 = 首采分数；红色尾段 = 复测涨幅；括注 = 复测全树评论数</text>
+
+  <g font-size="20" fill="#1F2937">
+    <text x="70" y="135">主锚：智能家居应能离线（50441707）</text>
+    <text x="70" y="205">逆向 Coway 净化器固件（50474959）</text>
+    <text x="70" y="275">绣花机订阅→机主自建 App（50470488）</text>
+    <text x="70" y="345">Apple 本地 AI Mac App（50446520）</text>
+    <text x="70" y="415">旧手机替代树莓派（50440709）</text>
+    <text x="70" y="485">Lovable 泄露护照信息（50499017）</text>
+    <text x="70" y="555">老设备跑 LLM 计划（50468888）</text>
+  </g>
+
+  <g>
+    <rect x="470" y="115" width="700" height="26" fill="#1F2937"/><rect x="1170" y="115" width="3" height="26" fill="#C0392B"/>
+    <text x="470" y="163" font-size="16" fill="#6B7280">1199 → 1200（+1）· 443 条评论</text>
+
+    <rect x="470" y="185" width="462" height="26" fill="#1F2937"/>
+    <text x="470" y="233" font-size="16" fill="#6B7280">792 → 792（±0）· 223 条评论</text>
+
+    <rect x="470" y="255" width="432" height="26" fill="#1F2937"/>
+    <text x="470" y="303" font-size="16" fill="#6B7280">740 → 740（±0）· 256 条评论</text>
+
+    <rect x="470" y="325" width="334" height="26" fill="#1F2937"/>
+    <text x="470" y="373" font-size="16" fill="#6B7280">572 → 572（±0）· 564 条评论——评论比点赞多</text>
+
+    <rect x="470" y="395" width="344" height="26" fill="#1F2937"/><rect x="814" y="395" width="5" height="26" fill="#C0392B"/>
+    <text x="470" y="443" font-size="16" fill="#6B7280">590 → 599（+9）· 318 条评论</text>
+
+    <rect x="470" y="465" width="531" height="26" fill="#1F2937"/><rect x="1001" y="465" width="16" height="26" fill="#C0392B"/>
+    <text x="470" y="513" font-size="16" fill="#6B7280">910 → 937（+27）· 337 条评论——唯一持续冲高</text>
+
+    <rect x="470" y="535" width="280" height="26" fill="#1F2937"/>
+    <text x="470" y="583" font-size="16" fill="#6B7280">479 → 479（±0）· 180 条评论</text>
+  </g>
+  <text x="70" y="650" font-size="16" fill="#6B7280">读数：事故帖（Lovable）是唯一还在变陡的柱；「本地化」四帖 24 小时内全部封顶，说明迁移叙事已过爆发期、进入工具沉淀期。</text>
+</svg>

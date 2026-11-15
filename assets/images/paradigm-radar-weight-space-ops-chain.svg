@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="560" fill="#F4F7FB"/>
+  <text x="600" y="44" font-size="25" font-weight="bold" fill="#1E3A5F" text-anchor="middle">对权重本体的五种动作：事件簇的一手源映射（2026-10-25 ~ 11-13）</text>
+
+  <g text-anchor="middle">
+    <rect x="40" y="90" width="200" height="180" rx="12" fill="#FFFFFF" stroke="#2F6FB2" stroke-width="2.5"/>
+    <text x="140" y="124" font-size="19" font-weight="bold" fill="#1E3A5F">读</text>
+    <text x="140" y="156" font-size="14" fill="#41627F">Astra 实验 1/2/4</text>
+    <text x="140" y="180" font-size="14" fill="#41627F">裸权重→游戏名/语料</text>
+    <text x="140" y="204" font-size="14" fill="#41627F">17,253 权重小网络</text>
+    <text x="140" y="236" font-size="13" fill="#1E8449">唯一同行未否认项</text>
+
+    <rect x="270" y="90" width="200" height="180" rx="12" fill="#FFFFFF" stroke="#2F6FB2" stroke-width="2.5"/>
+    <text x="370" y="124" font-size="19" font-weight="bold" fill="#1E3A5F">写</text>
+    <text x="370" y="156" font-size="14" fill="#41627F">Astra Qwen 实验</text>
+    <text x="370" y="180" font-size="14" fill="#41627F">改 0.016% 权重</text>
+    <text x="370" y="204" font-size="14" fill="#41627F">MATH 7.9→48.1（自报）</text>
+    <text x="370" y="236" font-size="13" fill="#C0392B">归因存疑（x313）</text>
+
+    <rect x="500" y="90" width="200" height="180" rx="12" fill="#FFFFFF" stroke="#2F6FB2" stroke-width="2.5"/>
+    <text x="600" y="124" font-size="19" font-weight="bold" fill="#1E3A5F">编译</text>
+    <text x="600" y="156" font-size="14" fill="#41627F">Qwenputer</text>
+    <text x="600" y="180" font-size="14" fill="#41627F">确定性 RISC-V 写进 4B</text>
+    <text x="600" y="204" font-size="14" fill="#41627F">gate=1·beta=1·RAM</text>
+    <text x="600" y="236" font-size="13" fill="#1E8449">「不涉及任何训练」</text>
+
+    <rect x="730" y="90" width="200" height="180" rx="12" fill="#FFFFFF" stroke="#2F6FB2" stroke-width="2.5"/>
+    <text x="830" y="124" font-size="19" font-weight="bold" fill="#1E3A5F">组队</text>
+    <text x="830" y="156" font-size="14" fill="#41627F">GVS5H / Memdoor</text>
+    <text x="830" y="180" font-size="14" fill="#41627F">5×Qwen3.8-27B 编队</text>
+    <text x="830" y="204" font-size="14" fill="#41627F">task/plan/notes/solution</text>
+    <text x="830" y="236" font-size="13" fill="#C0392B">无第三方复现</text>
+
+    <rect x="960" y="90" width="200" height="180" rx="12" fill="#FFFFFF" stroke="#C0392B" stroke-width="2.5"/>
+    <text x="1060" y="124" font-size="19" font-weight="bold" fill="#7B241C">验</text>
+    <text x="1060" y="156" font-size="14" fill="#41627F">LP 复现帖 + Misfolding</text>
+    <text x="1060" y="180" font-size="14" fill="#41627F">1940s 算法复现编辑</text>
+    <text x="1060" y="204" font-size="14" fill="#41627F">零权重病毒→要哈希</text>
+    <text x="1060" y="236" font-size="13" fill="#1E3A5F">守门层空位</text>
+  </g>
+  <g stroke="#2F6FB2" stroke-width="2.5" fill="none" marker-end="url(#aW)">
+    <line x1="240" y1="180" x2="270" y2="180"/><line x1="470" y1="180" x2="500" y2="180"/><line x1="700" y1="180" x2="730" y2="180"/><line x1="930" y1="180" x2="960" y2="180"/>
+  </g>
+
+  <rect x="40" y="320" width="1120" height="130" rx="12" fill="#EAF2FB" stroke="#2F6FB2" stroke-width="1.5"/>
+  <text x="65" y="355" font-size="17" font-weight="bold" fill="#1E3A5F">口径标尺（自左到右可信度递减）</text>
+  <text x="65" y="388" font-size="15" fill="#41627F">博客实验数字（作者可复述）→ 博客自报增益（未第三方复测）→ 仓库自报 benchmark（无人复现）→ 假想攻防（论文展望）</text>
+  <text x="65" y="418" font-size="15" fill="#41627F">安全侧提前到场：去安全化（abliteration）与改权重「原理几乎相同」（prophesi 50342942），能力平移比论文展望更快进评论区</text>
+  <defs><marker id="aW" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#2F6FB2"/></marker></defs>
+  <text x="600" y="505" font-size="16" fill="#6B7280" text-anchor="middle">五格齐全 = 一个「介质」的完整生命周期：能读、能写、能编译、能复制、也开始需要验</text>
+</svg>

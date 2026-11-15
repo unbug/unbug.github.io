@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="520" fill="#FFFFFF"/>
+  <text x="70" y="52" font-size="25" font-weight="700" fill="#1F2937">搬家之前先验货：Pi 线程里自发长出的六格质检单（全部带评论编号）</text>
+
+  <g font-size="14.5">
+    <rect x="70" y="86" width="340" height="88" rx="10" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+    <text x="90" y="116" font-weight="bold" fill="#C0392B">订阅兼容性</text>
+    <text x="90" y="142" fill="#7B241C">Claude 订阅挂 Pi 受 ToS 限制（leobuskin</text>
+    <text x="90" y="162" fill="#7B241C">50410950 列四条理由）；Codex 即插即用</text>
+    <rect x="430" y="86" width="340" height="88" rx="10" fill="#FDF6E3" stroke="#B7791F" stroke-width="2"/>
+    <text x="450" y="116" font-weight="bold" fill="#8B5E1A">护栏与安全模式</text>
+    <text x="450" y="142" fill="#7A5514">auto 模式挡危险动作「上次还没有」（giladd</text>
+    <text x="450" y="162" fill="#7A5514">50410830，作者承认）→ 他退回 Claude Code</text>
+    <rect x="790" y="86" width="340" height="88" rx="10" fill="#FDF6E3" stroke="#B7791F" stroke-width="2"/>
+    <text x="810" y="116" font-weight="bold" fill="#8B5E1A">上下文压缩</text>
+    <text x="810" y="142" fill="#7A5514">「compaction 一半时候失败」（alfiedotwtf</text>
+    <text x="810" y="162" fill="#7A5514">50410706）；社区插件补位（pi-vcc）</text>
+
+    <rect x="70" y="194" width="340" height="88" rx="10" fill="#EAF6EF" stroke="#1E8449" stroke-width="2"/>
+    <text x="90" y="224" font-weight="bold" fill="#14532D">可编程性（搬家动机本体）</text>
+    <text x="90" y="250" fill="#1F4D33">「Pi 之所以是 Pi 是因为扩展，自己动手写</text>
+    <text x="90" y="270" fill="#1F4D33">很容易」（sausagefeet 50411096）</text>
+    <rect x="430" y="194" width="340" height="88" rx="10" fill="#EAF6EF" stroke="#1E8449" stroke-width="2"/>
+    <text x="450" y="224" font-weight="bold" fill="#14532D">透明度</text>
+    <text x="450" y="250" fill="#1F4D33">扩展把 bash 改写成纯英文意图再执行，作者：</text>
+    <text x="450" y="270" fill="#1F4D33">「有的壳藏着干——不负责任」（siraben 50410725）</text>
+    <rect x="790" y="194" width="340" height="88" rx="10" fill="#F3F4F6" stroke="#1F2937" stroke-width="2"/>
+    <text x="810" y="224" font-weight="bold" fill="#1F2937">账单形态（回流主因）</text>
+    <text x="810" y="250" fill="#374151">切换后被迫回流的自述：订阅比裸 API 划算</text>
+    <text x="810" y="270" fill="#374151">（jpardoe 50411310）；桥接件 pi-claude-code</text>
+  </g>
+
+  <text x="70" y="336" font-size="16" fill="#6B7280">对照组：gvkhna（50410985）「从驾驶 agent 到编排 agent」+ tonfreed「整套壳全自定义、带逐段耗时遥测」= 留下派的理由；regexorcist（50411263）回怼「换任何壳都能做到」。</text>
+  <text x="70" y="374" font-size="16" fill="#6B7280">本地评测对照：komali2（50410485）自报 nightly 跑分里 OpenCode 在小模型上反超 oh-my-pi——壳与壳之间也有代差，目的地要分开验货。</text>
+  <text x="70" y="424" font-size="17" fill="#1F2937">这六格没有一格来自厂商文档，全部长自评论区：「壳时代」的质检标准是用户侧先写出来的。</text>
+</svg>

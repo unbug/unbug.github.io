@@ -4,6 +4,7 @@ title:  "AI 范式雷达：《把 Agent 的线拉进自己的箱子》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/agent-gateway-layer.svg
+image_alt: "封面：需求、事故、命名三根轴的证据矩阵柱状图，自建代理主帖与 LiteLLM 投毒事故两根柱热度最高，厂商品类命名帖最低"
 tags: [agent, llm-proxy, ai-gateway, litellm, supply-chain, observability]
 description: "十天窗口内自建代理需求主帖303分、承载网关层的LiteLLM遭供应链投毒主帖596分、厂商把agent gateway定为品类名：对智能体的信任支点正从厂商后台迁移到开发者自建代理进程。"
 ---
@@ -20,7 +21,11 @@ description: "十天窗口内自建代理需求主帖303分、承载网关层的
 
 主帖作者 amrrs 的自述动机是「我想知道脚下到底跑了哪些请求」（`10-18` 发帖，`303` 分、全树 `220` 条）。线程里最大的子树不是技术方案而是成本账：NeutralWanted（评论 `50147314`，子树 `74` 条）自报用 `200` 美元档订阅仍每周打满，同强度走 API 两三周就烧到 `200` 美元——dcss_gardener（`50147398`）点破「订阅是被补贴的价格，早晚要面对真实价」，gruez（`50147482`）反问「那就干等那天到来吗」，这条把「代理只服务 API 定价用户」的反方预设掀翻了一半。
 
+![成本账条形图：订阅 $200/月打满 vs 同强度 API 两三周烧穿 $200，自建护栏日支出仅 5–20 美分（全为线程自报）；底注并列「订阅下成本监控是伪需求」反方]({{ site.baseurl }}/assets/images/paradigm-radar-gateway-cost-bars.svg)
+
 路线之争在三条技术立场之间展开。规范派 CharlieDigital（`50151130`）逐字称「You don't need a proxy to do this」：代理会把单点故障直接放进生产力线里，Codex 与 Claude Code 都输出 OTEL traces，接进 Datadog、Langfuse 查了就算观测；InsidiousWombat（`50151222`）一句回到底层：「这显示的是你做了什么，不是代理把你的请求做了什么」——harness 之外的黑箱恰恰是规范派没覆盖的部分。第二条路线干脆绕开代理：jakozaur（`50148000`，子树 `43` 条）称订阅制下更好的观测源是 `~/.claude/projects/` 里的 JSONL 会话文件，比代理看到的组织得更好，机构级做法是全组织会话收集加脱敏，diurnalist（`50148223`）推荐了非代理查看器 agentsview；这与第 `17` 期[《Agent 说完不算，拿出证据》]({{ site.baseurl }}/paradigm-radar-agent-forensics-layer/)的事后证据层直接咬合。第三条是代理派的实操理由：hoppp（`50147059`）列了上代理的三连理由——发虚拟 key 让厂商 API key 永不进沙箱、全量可见、可挂 guardrails；DelightOne（`50147181`）追问注入检查这类 guardrail 在不了解 agent 环境时怎么起作用，dcss_gardener（`50147437`）给出了窗口内一份可复述的成型答案：现成的注入检测模型「相当有限」，换成 gpt-oss-safeguard 加一份逐条描述注入手法的策略文件才拿到好效果，且只对 web fetch 与 web search 的结果开闸，日均成本五到二十美分（自报）——「看、记、限、拦」四环里，「拦」第一次有了带价格的参考实现。andai（`50154876`）补了最朴素的一条：换过几家别人的壳之后，最受不了的是「看不见模型到底在看什么」。反方也留了档：Havoc（`50150174`）称收集代理日志「没有 actionable insights」，redmalang（`50150263`）当场回怼「成本、项目、用户、失败原因全在里面，怎么会没有」。
+
+![三条路线立场图：A 自建网关（虚拟 key/预算/护栏，单点故障进生产力线）、B 规范派（OTEL traces 直连 Datadog/Langfuse）、C 事后取证派（本地 JSONL→agentsview）；底注给出「看见」长在请求路径、协议通道还是磁盘上的分歧结构]({{ site.baseurl }}/assets/images/paradigm-radar-gateway-arch.svg)
 
 ## 主帖的另一半：谁已经架了代理，为什么
 
@@ -29,6 +34,8 @@ description: "十天窗口内自建代理需求主帖303分、承载网关层的
 ## 事故线程：投毒全链条与官方定责
 
 市占头部的 `62,195` 星（`10-28` 实测，复测 `63,299` 星）LiteLLM 在 PyPI 被投毒（`596` 分、`202` 条），装 `1.107.0` 即带凭据窃取器与后门。`11-16` 复测时官方 issue `#47826` 已 closed（`34` 条评论、`20` 个 `+1`），标题逐字留了全链条：「litellm 1.107.0 compromised……cook.pth credential stealer + sitecustomize RCE loader, built from lookalike repo Berri-AI/litellm」——恶意包构建自把连字符挪了一位的高仿仓库 `Berri-AI`。issue 正文的时间戳同样入库：`13:23Z` PyPI 撤包但 Docker `latest` 仍带毒，`17:13Z` 三个镜像仓库全部改指——镜像通道的滞后 `4` 小时是本次事故的独立缺口。
+
+![投毒攻击链四联：① Claude Code 工具调用带出本地 GitHub CLI OAuth token→② request/response 全量落入网关日志（官方：not the machine）→③ 高仿仓库 Berri-AI/litellm→④ cook.pth+sitecustomize 驻留；下方撤包时间线 13:23Z PyPI / 17:13Z Docker latest，滞后 4 小时]({{ site.baseurl }}/assets/images/paradigm-radar-gateway-attack-chain.svg)
 
 定责帖来自 LiteLLM 成员 detente18（本名 Krrish，评论 `50189921`，子树 `13` 条）：事件「已遏制」，攻击链的新意在其源头——被窃的令牌是 Claude Code 把它放进了某次工具调用、落进请求/响应日志，攻击者拿到日志后按图索骥（`50189993`）。wisty（`50189934`）追问源头是不是维护者机器被黑，官方答「是本地一枚 GitHub CLI OAuth 令牌，但机器没有失守」——起点不在 CI、不在 PyPI，在一枚被写进请求/响应日志的令牌里。这条官方口径把两期雷达焊在了一起：壳层（harness）把密钥写进日志，网关层的事故再从日志端反噬，观测与泄漏从此是同一根导线的两端。线程内其余各派同样可定位：crossroadsguy（`50184801`，子树 `44` 条）说权限弹窗疲劳让一切沙箱规则形同虚设——「装三百个依赖？正常，现在都这样」；stbenjam（`50182491`，子树 `26` 条）主张包管理器默认加 `24-48` 小时发版冷却，abhisek（`50185253`）称冷却 `24` 小时就足以挡住本次这种新注册仿冒域名加现成技术的攻击，lrvick（`50185766`）回怼「很多攻击潜伏以年计」；atmosx（`50187857`）宣布钉死旧版不升级「像俄罗斯轮盘」，rsanheim（`50187074`）翻出 `2026` 年 `3` 月那次的取证帖提醒这是 LiteLLM 两年内第二次重大投毒，john_strinlai（`50183264`）则对「PHP 们还能再来一次」的论调冷嘲：「机会数已经几百次了」。最微妙的一派是借事自荐：santiago-pl（`50182272`）当场推销自家 Go 网关「快 `20` 倍且没那么容易被针对」（自述），ghrl（`50182479`）现身说法只为自己手写的百行 Go 代理背书。被本文首版记下的「企业私有 registry 分发 embargoed 修复」争议（petesergeant，`50182543`）也有了下文：sullivanmatt（`50182849`）辩称企业通道本就是独立构建路径、未被本次波及，「收费才能不上毒」的读法是情绪先行——两派并存，本期的判断不变：企业通道与开源通道分裂是既成事实，价值判断留白。
 

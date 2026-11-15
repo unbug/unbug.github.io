@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="560" fill="#F4F7FB"/>
+  <text x="600" y="44" font-size="25" font-weight="bold" fill="#1E3A5F" text-anchor="middle">四档证据分级：这批「默认值漂移」指控的强度并不相同</text>
+
+  <rect x="40" y="76" width="1120" height="110" rx="12" fill="#FDECEA" stroke="#C0392B" stroke-width="2.5"/>
+  <text x="65" y="108" font-size="18" font-weight="bold" fill="#C0392B">日志级（系统自证）：Postman</text>
+  <text x="65" y="138" font-size="15" fill="#7B241C" font-family="Menlo, Consolas, monospace">PostmanAgentPluginService~install {"source":"auto-existing-upgrade","results":["claude-code:installed","codex:installed"]}</text>
+  <text x="65" y="166" font-size="14" fill="#7B241C">厂商自己的 main.log 记录自动安装；涉事 issue #14370 于 2026-11-16 复测时显示「已删除」（删除方不可判定）</text>
+
+  <rect x="40" y="206" width="1120" height="88" rx="12" fill="#FDF6E3" stroke="#B7791F" stroke-width="2"/>
+  <text x="65" y="238" font-size="18" font-weight="bold" fill="#8B5E1A">观察级（集体截图但无实锤）：Codex</text>
+  <text x="65" y="266" font-size="15" fill="#7A5514">多名用户自见「Improve the model for everyone」回到开启位；发帖人 50353786 逐字承认 "I definitely can't prove it"</text>
+
+  <rect x="40" y="314" width="545" height="118" rx="12" fill="#EAF2FB" stroke="#2F6FB2" stroke-width="2"/>
+  <text x="65" y="346" font-size="18" font-weight="bold" fill="#1E3A5F">自述级（单一信源）</text>
+  <text x="65" y="376" font-size="14.5" fill="#41627F">Mistral Teams：opt-in→opt-out，48 小时回滚但滑块全在开启位</text>
+  <text x="65" y="402" font-size="14.5" fill="#41627F">Daybreak 可信访问条款变更通知（tom1337 50353613 转贴）</text>
+
+  <rect x="615" y="314" width="545" height="118" rx="12" fill="#EAF6EF" stroke="#1E8449" stroke-width="2"/>
+  <text x="640" y="346" font-size="18" font-weight="bold" fill="#14532D">结构性规避（开关防不住的路径）</text>
+  <text x="640" y="376" font-size="14.5" fill="#1F4D33">bitbasher 50356234：不「训练你的聊天」也有办法用</text>
+  <text x="640" y="402" font-size="14.5" fill="#1F4D33">loopasam 50357439：会话轨迹与工具调用→合成数据再生成</text>
+
+  <text x="600" y="480" font-size="17" fill="#1E3A5F" text-anchor="middle">记账纪律：一档实锤带火全场时，必须把三档分开写——本文全部引语附评论编号就是为了可拆</text>
+  <text x="600" y="518" font-size="15" fill="#6B7F96" text-anchor="middle">反方记账同样分档：50356785「假设他们关了也在训」若成立，审计归零；hyperbovine 50353917「是烂代码不是恶意」同样无实证</text>
+</svg>
