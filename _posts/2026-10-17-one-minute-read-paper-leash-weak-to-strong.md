@@ -43,4 +43,4 @@ Simular 联合威斯康星大学麦迪逊分校的论文[《LEASH》][paper1-url
 
 
 [paper1-url]: https://arxiv.org/abs/2610.22280
-[links-1]: https://unbug.github.io/one-minute-read-paper-swe-critix-trajectory-verifier/
+[links-1]: {{ site.baseurl }}/one-minute-read-paper-swe-critix-trajectory-verifier/

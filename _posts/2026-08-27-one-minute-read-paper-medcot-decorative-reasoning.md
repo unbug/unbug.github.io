@@ -30,4 +30,4 @@ description: "TU Eindhoven 与 Dana-Farber 的医疗 CoT 扰动审计发现，14
 
 
 [paper1-url]: https://arxiv.org/abs/2608.24790
-[links-1]: /one-minute-read-paper-echocot-hidden-cot-extraction/
+[links-1]: {{ site.baseurl }}/one-minute-read-paper-echocot-hidden-cot-extraction/

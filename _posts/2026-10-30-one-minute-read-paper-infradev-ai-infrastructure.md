@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, Engineering]
 image: assets/images/infradev-coding-agents-ai-infra.svg
 tags: [llm, agent, agentic-coding, benchmark]
-description: "爱丁堡大学联合腾讯混元发布InfraDev基准，用36个多GPU真实任务测编码Agent开发训练与推理框架的水位：最强模型仅解决38.9%，隐藏探针还毙掉通过官方测试提交的32%，失败模式写成规范文档能补10.5个百分点。"
+description: "爱丁堡大学与腾讯混元的 InfraDev 基准测编码 Agent 开发 AI 基建的水位：36 个真实任务最强模型只解 38.9%，隐藏探针毙掉 32% 通过官方测试的提交，把失败模式写成规范能补 10.5 个百分点。"
 ---
 
 爱丁堡大学联合腾讯混元的论文[《InfraDev》][paper1-url]（arXiv:2610.36589）测了编码 Agent 开发 AI 基建（训练、推理、强化学习框架的代码）的水位：`36` 个真实任务上，最强模型 `GPT-6 Sol` 只解决 `38.9%`，隐藏探针还毙掉 `32%` 通过官方测试的提交。

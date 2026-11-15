@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-evolving-harness-memory-skill.svg
 tags: [agent, harness, memory, skill, self-improvement]
-description: "三篇 2026 年 8 月新论文显示 Agent 自进化的主战场正从模型权重转移到 Harness 层：Recuris 在 τ²-Bench 让 Claude Opus 5 达到 87.9% 成功率，StarHarness 仅用 4-12 次修改提升 20-35 个百分点。本文拆解结构化证据、组件级修补与验证门控这套可落地的工程模式及其边界条件。"
+description: "三篇八月论文显示 Agent 自进化主战场从模型权重转向 Harness 层：有系统把前沿模型推上 τ²-Bench 87.9%，有系统仅 4 到 12 次修改涨 20 到 35 个百分点，组件级修补加验证门控的工程模式初步成形。"
 ---
 
 如果你最近在看 Agent 方向的论文，可能会注意到一个微妙的变化：过去半年讨论「让 Agent 自我改进」时，主角几乎总是模型本身——继续预训练、RLHF、递归微调。

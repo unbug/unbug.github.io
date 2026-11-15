@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, Engineering]
 image: assets/images/belief-collapse-coverage.svg
 tags: [multi-agent, llm, ai-agents]
-description: "伊利诺伊大学芝加哥分校的预印本实测多智能体讨论的从众风险：10 个智能体的事实讨论中，无托时仅 0.6% 以错误答案收尾，放入 3 个反复坚称错误答案的对抗者后达 60.5%，私下错误远高于公开附和。"
+description: "伊利诺伊大学芝加哥分校预印本实测：10 个智能体的事实讨论中无对抗时仅 0.6% 以错收尾，放入 3 个反复坚称错误答案的对抗者后达 60.5%，私下信念已塌，公开附和更甚。"
 ---
 
 伊利诺伊大学芝加哥分校的论文[《Believed but Not Said: Measuring Hidden Belief Collapse in Multi-Agent LLM Discussions》][paper1-url]发现：放入 3 个反复坚称错误答案的对抗者后，`60.5%` 的良性智能体以错误答案收尾。
@@ -39,4 +39,4 @@ description: "伊利诺伊大学芝加哥分校的预印本实测多智能体讨
 
 
 [paper1-url]: https://arxiv.org/abs/2610.22138
-[links-1]: https://unbug.github.io/one-minute-read-paper-ctxgap-report-gap/
+[links-1]: {{ site.baseurl }}/one-minute-read-paper-ctxgap-report-gap/

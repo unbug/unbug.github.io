@@ -8,7 +8,7 @@ tags: [llm, context-management, attention, retrieval, ai-agents]
 description: "加州大学圣迭戈分校预印本发现，长上下文检索翻车的元凶不是长度而是争抢注意力的竞争信息：中性填充撑到 32K token 准确率不降，竞争陈述使其从 0.97 崩至 0.11。"
 ---
 
-加州大学圣迭戈分校（UC San Diego）的论文[《Length Is Cheap, Competition Is Not》][paper1-url]发现，长上下文检索翻车（context rot，上下文腐化）的元凶不是长度，而是争抢注意力的竞争信息：`126,473` 次试验中，准确率从 `0.97` 到 `1.00` 崩至 `0.11` 到 `0.21`。
+加州大学圣迭戈分校（UC San Diego）的论文[《Length Is Cheap, Competition Is Not》][paper1-url]发现，长上下文检索翻车（context rot，上下文腐化）的元凶不是长度，而是争抢注意力的竞争信息：准确率从 `0.97` 到 `1.00` 崩至 `0.11` 到 `0.21`。
 
 ![竞争信息比长度更能预测长上下文检索失败：中性填充准确率不降，竞争陈述使准确率崩塌，注意力指标解释力远超长度]({{ site.baseurl }}/assets/images/length-is-cheap-attention.svg)
 

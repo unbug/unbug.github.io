@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "AI 智创简报：《大厂在给 AI 输出装质检阀，验收报告这门手艺没人接》"
 author: unbug
 categories: [AI, InnovationBrief]

@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, InnovationBrief]
 image: assets/images/innovation-brief-voice-agent-turn-taking-patents.svg
 tags: [Patent, VoiceAI, QA, DevTools, IndieHacker]
-description: "NVIDIA、Sierra、Salesforce 四件语音智能体轮次接管专利公开，抢话判定与延迟调度被圈地。给语音机器人出轮次质检报告，是独立开发者能接的活。"
+description: "NVIDIA、Sierra 与 Salesforce 今年 1 至 8 月接连公开四件语音智能体轮次接管专利，圈走抢话判定与延迟调度；给语音机器人做轮次质检与验收报告那一层还空着，是独立开发者能接的活。"
 ---
 
 2026 年 1 至 8 月，四件围绕"语音智能体什么时候开口"的专利接连公开，申请人是 NVIDIA、Sierra 与 Salesforce。大厂在把抢话、冷场、响应延迟这些体验问题申请成方法；给语音机器人做轮次质检与验收报告的那一层，还空着。

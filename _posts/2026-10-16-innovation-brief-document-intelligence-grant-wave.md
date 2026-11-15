@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI 智创简报：《抽文档省 token 的做法正在收敛：先定位，只喂那一小块》"
+title: "AI 智创简报：《文档抽取专利扎堆授权：先定位，再喂模型》"
 author: unbug
 categories: [AI, InnovationBrief]
 image: assets/images/innovation-brief-document-intelligence-grant-wave.svg
@@ -34,15 +34,26 @@ description: "2026 年 2 到 8 月六家不同公司的大模型文档抽取专�
 
 第一，**整页文档塞大模型做抽取的做法，已经落后于专利面显示的工程共识**。先定位后抽取在六家申请人的文件里反复出现，是这个阶段的标准做法，不是某家的独门技巧。
 
-第二，**工具层不空**。Reducto、LlamaParse、Unstructured 正拿抽取准确率当营销主战场，第三方评测已在写「按字段暴露失败模式」——想靠「更准的抽取器」切入的人面对的是红海。这排授权的真正价值，是看清六家独立团队收敛到哪条流水线上，把自己的文档管线对齐过去。
+第二，**工具层不空**。Reducto、LlamaParse、Unstructured 正拿抽取准确率当营销主战场，第三方评测已在写「按字段暴露失败模式」——想靠「更准的抽取器」切入的人面对的是红海。这排授权的真正价值，是看清六家独立团队收敛到哪条流水线上，把自己的文档管线对齐过去；想做校验与质检一侧的，站内[《RAG 拒答题测试专利成簇，知识库质检是接单活》][links-8]写的是同一道工序的另一端。
 
 第三，**审查速度本身是可跟踪的信号**。若同类主题的授权节奏持续加快，说明权利要求还在被快速消化，「快授件」值得当成一个独立的雷达档位。
 
 ## References
-- Mistral AI, "Document intelligence system", US12651113B1: https://patents.google.com/patent/US12651113B1/en
-- IBM, "Location of key value pairs", US12639362B2: https://patents.google.com/patent/US12639362B2/en
-- Intuit, "In-context OCR exemplars for out-of-domain document information extraction", US12632675B2: https://patents.google.com/patent/US12632675B2/en
-- Intuit, "Hybrid key value document extraction", US12705916B2: https://patents.google.com/patent/US12705916B2/en
-- Adobe, "Data identification and extraction from unstructured documents", US12699851B2: https://patents.google.com/patent/US12699851B2/en
-- Vendr, "Systems and methods for automated data extraction of unstructured documents", US12586403B2: https://patents.google.com/patent/US12586403B2/en
-- HighRadius, 财务文档抽取与自动纠错, US12664136B1: https://patents.google.com/patent/US12664136B1/en
+- [Mistral AI, "Document intelligence system", US12651113B1][links-1]
+- [IBM, "Location of key value pairs", US12639362B2][links-2]
+- [Intuit, "In-context OCR exemplars for out-of-domain document information extraction", US12632675B2][links-3]
+- [Intuit, "Hybrid key value document extraction", US12705916B2][links-4]
+- [Adobe, "Data identification and extraction from unstructured documents", US12699851B2][links-5]
+- [Vendr, "Systems and methods for automated data extraction of unstructured documents", US12586403B2][links-6]
+- [HighRadius, 财务文档抽取与自动纠错, US12664136B1][links-7]
+- [站内：RAG 拒答题测试专利成簇，知识库质检是接单活][links-8]
+
+
+[links-1]: https://patents.google.com/patent/US12651113B1/en
+[links-2]: https://patents.google.com/patent/US12639362B2/en
+[links-3]: https://patents.google.com/patent/US12632675B2/en
+[links-4]: https://patents.google.com/patent/US12705916B2/en
+[links-5]: https://patents.google.com/patent/US12699851B2/en
+[links-6]: https://patents.google.com/patent/US12586403B2/en
+[links-7]: https://patents.google.com/patent/US12664136B1/en
+[links-8]: {{ site.baseurl }}/innovation-brief-rag-evaluation-patents/

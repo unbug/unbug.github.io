@@ -5,7 +5,7 @@ author: unbug
 categories: [embodiedai, robotics]
 image: assets/images/g05-single-autoregressive-stream.svg
 tags: [embodied-ai, vlm, reasoning, long-horizon]
-description: "银河通用发布开放权重 VLA 模型 G0.5，用单一自回归流同时生成推理与动作 token，真机微调成功率 76.7%，超过 π0.5 的 53.3%。"
+description: "银河通用发布开放权重视觉-语言-动作模型 G0.5，用单一自回归流同时生成推理与动作 token：真机操作微调后成功率 76.7%，超过 π0.5 的 53.3%，一条流端到端跑通机器人推理与操作。"
 ---
 
 上海机器人公司银河通用（Galaxea）的论文[《G0.5: One Autoregressive Stream for Robot Reasoning and Action》][paper1-url]，提出预训练自回归视觉-语言-动作模型（VLA）G0.5：单一 transformer decoder 在同一 token 流中同时输出推理与动作。

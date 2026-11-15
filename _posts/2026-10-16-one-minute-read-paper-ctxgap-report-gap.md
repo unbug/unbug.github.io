@@ -34,4 +34,4 @@ description: "腾讯与中国科学技术大学团队的预印本测量显示：
 
 
 [paper1-url]: https://arxiv.org/abs/2610.20003
-[links-2]: https://unbug.github.io/one-minute-read-paper-swe-critix-trajectory-verifier/
+[links-2]: {{ site.baseurl }}/one-minute-read-paper-swe-critix-trajectory-verifier/

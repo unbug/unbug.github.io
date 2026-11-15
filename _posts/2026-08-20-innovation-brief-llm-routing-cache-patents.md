@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, InnovationBrief]
 image: assets/images/innovation-brief-llm-routing-cache-patents.svg
 tags: [Patent, LLM, ModelRouting, CostOptimization, IndieHacker]
-description: "NVIDIA、IBM 密集公开大模型路由与语义缓存专利，指向 API 中间层。独立开发者用 LiteLLM 加 GPTCache 搭成本护栏，帮小团队降账单。"
+description: "今年大模型路由与语义缓存主题至少公开六件美国专利，NVIDIA 与 IBM 在近九十天各公开一件，全部指向 API 中间层：独立开发者可用开源网关加语义缓存搭成本护栏，帮小团队降低账单。"
 ---
 
 2026 年大模型路由、语义缓存与成本预测主题的美国申请至少公开 6 件，其中 NVIDIA 与 IBM 的 2 件落在近 90 天。这些专利指向同一层：API 中间层。对交 API 账单的开发者，这是一层能接的活儿。

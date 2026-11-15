@@ -6,7 +6,7 @@ categories: [AI, OneMinuteRead]
 image: assets/images/parallel-prompting-decode-kv.svg
 image_alt: "左右对照：传统 batch 解码中每个问题在每一步都要重读一遍长文档的 KV cache；Parallel Prompting 让多条回答流共用同一份文档 KV，每一步只读一遍。"
 tags: [llm-inference, kv-cache, serving, sglang, batch-inference]
-description: "加州大学圣克鲁兹分校预印本 Parallel Prompting 只改 80 行 SGLang，让同一长文档的多个问题在解码时只读一遍 KV cache：A100 提速 3.7 倍、RTX A6000 近 6 倍，144 次配对全胜；但 GQA 模型只剩 1.3 到 1.9 倍，长答案还会倒退。"
+description: "加州大学圣克鲁兹分校预印本只改 80 行 SGLang：同一长文档多问在解码时共读一遍注意力键值缓存，A100 提速 3.7 倍、最高近 6 倍、144 次配对全胜；GQA 模型缩到 1.3 到 1.9 倍，长答案还会倒退。"
 ---
 
 UCSC 团队的预印本论文[《Read Once, Answer Many》][paper1-url]发现，前缀缓存没有消掉共享长文档的成本：解码每步、每问仍要重读一遍文档 KV cache，往 SGLang 加约 `80` 行后 A100 快 `3.7` 倍、RTX A6000 快 `5.9` 至 `6.0` 倍。

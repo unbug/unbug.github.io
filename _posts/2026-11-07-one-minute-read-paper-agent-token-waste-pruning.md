@@ -5,7 +5,7 @@ author: unbug
 categories: [AI]
 image: assets/images/agent-token-waste-pruning.svg
 tags: [ai-agents, token-waste, llm-cost, agent-pruning]
-description: "伊利诺伊大学等机构首次把 AI 智能体的 token 浪费变成可测量信号：约 18% 输出是废话；在线剪枝删掉 41%-46% 推理，SWE-bench Verified 成绩不降反微升。"
+description: "伊利诺伊大学等机构首次把智能体的 token 浪费变成可测信号：约 18% 的输出是废话，在线剪枝删掉 41% 到 46% 的推理 token 后，SWE-bench Verified 上的成绩不降反微升。"
 ---
 
 UIUC 等机构的论文[《How Do AI Agents Waste Your Money?》][paper1-url]测出 AI 智能体账单里白花的部分：约 `18%` 的输出 token 是浪费，在线剪枝删掉 `41%`–`46%` 推理后成绩基本不掉。

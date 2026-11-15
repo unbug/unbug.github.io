@@ -6,7 +6,7 @@ categories: [AI, InnovationBrief]
 image: assets/images/provenance-verification-gap.svg
 image_alt: "对比图：左侧人山人海——对抗攻击专利 1944 件、水印嵌入专利 1062 件、拆标工具头名 6321 星、逆向 SynthID 仓库 5058 星；右侧空位——第三方检测 11 件、溯源机器学习 75 件、SynthID 加水印 6 件、凭证校验双查询真零"
 tags: [ai-content-provenance, watermarking, patents, c2pa, solo-dev]
-description: "AI 内容水印嵌入专利 1062 件、对抗攻击 1944 件，第三方检测仅 11 件，凭证校验双查询真零；不建库、只验签的独立校验器暂无权利要求卡住。"
+description: "Google Patents 实测：AI 内容水印嵌入专利 1062 件、对抗攻击 1944 件，第三方检测仅 11 件，凭证校验双查询真零；不建库、只验签的独立校验器尚无权利要求卡住。"
 ---
 
 `2026-11-09` 同日 Google Patents 精确检索：水印嵌入 `1062` 件、对抗攻击 `1944` 件，第三方检测仅 `11` 件，凭证校验的双查询两次真零。

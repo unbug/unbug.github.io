@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, Security]
 image: assets/images/ignored-not-refused.svg
 tags: [prompt-injection, ai-agents, llm-evaluation, security]
-description: "BRAC University审计33000条轨迹发现：被判防御成功的注入失败中76%至80%是没理会注入，真实拒绝仅约18%，低攻击成功率高估防御。"
+description: "孟加拉国 BRAC University 论文审计三万余条智能体轨迹：注入攻击大多以失败告终，但 76% 至 80% 的失败只是智能体没理会而非真拒绝，真正的拒绝仅约一成八，低攻击成功率高估防御能力。"
 ---
 
 孟加拉国 BRAC University 的论文[《Ignored, Not Refused》][paper1-url]（arXiv:2610.23254）审计了 `33,000` 条 agent 轨迹后发现：低攻击成功率并不代表防御成功，多数"失败"只是 agent 没理会注入。

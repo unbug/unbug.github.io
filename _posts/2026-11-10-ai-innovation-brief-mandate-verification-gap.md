@@ -6,7 +6,7 @@ categories: [AI, InnovationBrief]
 image: assets/images/mandate-verification-gap.svg
 image_alt: "对比图：签发侧 A2A 协议仓库 26,467 星、x402 npm 近一月下载 240 万；校验侧 Praman 15 星、sutra 9 星、kanon 4 星"
 tags: [agent-mandate, agent-protocols, patents, x402, solo-dev]
-description: "智能体协议专利热到 2297 件，授权书校验窄查询仅 8 件；签发头名仓库 26467 星，mandate 校验头名仅 15 星，第三方验书位暂无权利要求卡住。"
+description: "智能体协议与协商主题专利检索热到 2297 与 1745 件，授权书校验窄查询仅 8 与 33 件；签发侧头名仓库 26467 星、校验头名仅 15 星，中立验书位暂无权利要求卡住。"
 ---
 
 `2026-11-10` Google Patents 精确检索：智能体协议、协商一侧热到 `2297`、`1745` 件，授权书校验一侧窄查询只有 `8`、`33` 件——签发端在圈地，替交易双方验授权书的中立校验位还是方向差。

@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, OneMinuteRead]
 image: assets/images/coral-context-checkpoint.svg
 tags: [llm, ai-agents, reinforcement-learning, context-management]
-description: "港中文、腾讯与港科大在 COLM 2026 提出 CORAL：长周期任务中智能体主动存档进度并清空脏上下文开新回合，8B 模型在 GAIA 平均准确率 42.8%，输入 token 比 ReAct 智能体少 6 到 7 倍，比被动截断更省更准。"
+description: "港中文、腾讯与港科大在 COLM 2026 提出 CORAL：智能体主动存档进度、清空脏上下文开新回合，8B 模型 GAIA 平均准确率 42.8%，输入 token 比 ReAct 少 6 到 7 倍，比被动截断更省更准。"
 ---
 
 本文是香港中文大学、腾讯与香港科技大学发在 COLM 2026 的论文[《Don't Lose the Thread》][paper1-url]：智能体学会存档进度、清空脏上下文开新回合，`8B` 模型在 GAIA 基准平均准确率 `42.8%`，输入 token 比 ReAct 智能体少 `6-7` 倍。

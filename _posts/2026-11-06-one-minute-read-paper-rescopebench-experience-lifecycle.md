@@ -6,10 +6,12 @@ categories: [AI, OneMinuteRead]
 image: assets/images/rescopebench-experience-lifecycle.svg
 image_alt: "两条覆盖率曲线随受影响任务数渐行渐远：更新内容覆盖率从 21.47% 爬到 64.63%，旧内容保留率始终 88% 以上"
 tags: [llm-agents, agent-memory, benchmark, evaluation, context-management]
-description: "港科大与华为团队发出首个经验生命周期基准 ReScopeBench：18 个环境、352 个任务、20 个模型实测，环境静默变更后，该更新的经验四个任务后覆盖率才爬到 64.63%，旧内容保留率却始终 88% 以上——长驻智能体记得住，改不动。"
+description: "港科大与华为的 ReScopeBench 首个实测经验生命周期：18 环境、352 任务、20 个模型，环境静默变更后旧内容保留率压在 88% 以上，该更新的覆盖率四个任务后才到 64.63%——记得住，改不动。"
 ---
 
-港科大与华为的联合团队在[《Towards Robust Long-Lived Agents: Benchmarking Experience Lifecycles in Evolving Environments》][paper-url]里搭了首个「经验生命周期」基准 ReScopeBench，量出一个耐人寻味的结果：长驻智能体记得住，改不动。`20` 个模型上，环境静默变更后，该更新的经验内容四个受影响任务后覆盖率才爬到 `64.63%`，而旧内容的保留率始终压在 `88%` 以上。
+港科大与华为的联合团队在[《Towards Robust Long-Lived Agents: Benchmarking Experience Lifecycles in Evolving Environments》][paper1-url]里搭了首个「经验生命周期」基准 ReScopeBench，量出了长驻智能体的通病：记得住，改不动。
+
+`20` 个模型上，环境静默变更后，该更新的经验内容四个受影响任务后覆盖率才爬到 `64.63%`，而旧内容的保留率始终压在 `88%` 以上。
 
 ![更新线与保留率线渐行渐远：四个受影响任务后，更新内容覆盖率 64.63%，旧内容保留率 91.07%，另有 10.26% 做成过的经验发生回退]({{ site.baseurl }}/assets/images/rescopebench-experience-lifecycle.svg)
 
@@ -36,7 +38,7 @@ description: "港科大与华为团队发出首个经验生命周期基准 ReSco
 先限定口径：这是基准测量，环境是受控演进场景，结论不是「长驻智能体不可行」，而是「现有经验管理管道只有写入功能、没有更新功能」。对工程实践，论文指向把工作翻面：环境变更要被侦测并反查受影响经验、做定向修订；对做成过的任务加回退检查；监控规则级覆盖，别只看结构级覆盖好看。它与站内[《长文本翻车怪长度？怪的是抢注意力的对手》]({{ site.baseurl }}/one-minute-read-paper-length-is-cheap-attention-context-rot/)正好互补：那篇管住脏上下文里的检索，这篇管住过期经验里的维护，智能体上生产两道关卡都得过关。
 
 ## References
-- [论文 arXiv:2611.05450][paper-url]
+- [论文 arXiv:2611.05450][paper1-url]
 
 
-[paper-url]: https://arxiv.org/abs/2611.05450
+[paper1-url]: https://arxiv.org/abs/2611.05450

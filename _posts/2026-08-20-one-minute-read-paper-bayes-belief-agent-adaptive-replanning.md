@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, MultiAgent]
 image: assets/images/bayes-belief-agent-framework.svg
 tags: [llm, multi-agent, planning]
-description: "论文提出 BayesBeliefAgent，用贝叶斯后验追踪队友技能，仅在动作与信念矛盾时中断并重规划；Overcooked 上 belief-action gap 从 0.41 降到 0.20，重规划次数减少 20-80 倍。"
+description: "预印本提出贝叶斯队友建模智能体：用后验分布追踪队友技能变化，仅在动作与信念矛盾时中断重规划；Overcooked 基准上差距从 0.41 收窄到 0.20，重规划次数减少 20 到 80 倍。"
 ---
 
 论文[《Bayesian Partner Modelling enables Adaptive Replanning for LLM Coordination》](https://arxiv.org/abs/2608.18490)针对多智能体大语言模型系统的一个常见问题：队友会在任务中途切换策略，智能体却常常在公开证据表明伙伴已更换技能之后，仍继续执行过时的计划。

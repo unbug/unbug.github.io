@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, LLM]
 image: assets/images/compaction-cliff-agent-memory.svg
 tags: [llm, agent, memory, context-management]
-description: "长程 Agent 压缩上下文时，安全规则与情景日志被同一比例摘要，而只有规则需要逐字精确才能保持可执行：Claude Code 生产配置下五轮压缩后仅存 10% 安全规则。论文提出按知识类型分流的 Knowledge Triage，五轮后保留率 96%。"
+description: "长程 Agent 压缩上下文时，安全规则与情景日志被同一比例摘要：五轮后仅 10% 安全规则还可执行。论文提出按知识类型分流的 Knowledge Triage，把规则逐字保留率五轮后压在 96%。"
 ---
 
 德国帕绍大学（University of Passau）与奥地利 IT:U Linz 合作的论文[《The Compaction Cliff in Long-Running AI Agent Memory》][paper1-url]发现：一轮压缩后仅保留 `53%` 的安全规则，五轮后只剩 `10%`。

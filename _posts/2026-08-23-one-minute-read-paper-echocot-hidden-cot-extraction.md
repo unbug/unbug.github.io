@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, Security]
 image: assets/images/echocot-hidden-cot-extraction.svg
 tags: [llm, safety, reasoning, model-security]
-description: "CISPA论文证明仅靠API交互即可提取黑盒大推理模型的隐藏思维链：攻击者用tool call之间返回的推理长度与摘要信号迭代重放，开源模型上最高66.4%的样本通过近逐字保真校验，实用防御存在残余缺口。"
+description: "亥姆霍兹信息安全中心 CISPA 证明，纯 API 交互即可提取黑盒大推理模型的隐藏思维链：以工具调用间的推理长度与摘要信号迭代重放，开源模型最高 66.4% 样本过近逐字保真校验，防御有残余缺口。"
 ---
 
 德国亥姆霍兹信息安全中心 CISPA 的论文[《EchoCoT: Extracting Hidden Chain-of-Thought from Large Reasoning Models》][paper1-url]证明仅靠纯 API 交互就能提取黑盒大推理模型隐藏的思维链，在开源模型上达到近逐字保真。

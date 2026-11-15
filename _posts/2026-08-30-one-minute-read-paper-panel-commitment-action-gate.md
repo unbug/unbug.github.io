@@ -1,11 +1,14 @@
 ---
+layout: post
 title: "一分钟读论文：《伪造行情面板让AI敢对不可知的事下注》"
-description: "十二个前沿模型面对专业排版的伪造行情面板时，对可证不可预测的问题照样给出方向判断：解锁行动的是包装权威而非信息；行动门失效可用540个合成样本微调修好。"
-tags: [llm, agent, calibration, safety]
+author: unbug
+categories: [AI, Security]
 image: assets/images/panel-commitment-action-gate.svg
+tags: [llm, agent, calibration, safety]
+description: "十二个前沿模型面对专业排版的伪造行情面板时，对可证不可预测的问题照样给出方向判断：解锁行动的是包装权威而非信息；行动门失效可用540个合成样本微调修好。"
 ---
 
-给一个 LLM agent 看一张专业排版的行情面板，再问它一个可证明不可预测的问题，它会给出方向性判断的概率远高于只问裸问题：[这篇预注册研究](https://arxiv.org/abs/2608.27167)在 12 个前沿模型上测出，随着证据从 thin 面板升级到 scrambled 面板，commitment（对不可知问题下方向注的概率）从 6.5% 升到 54.0%。
+给一个 LLM agent 看一张专业排版的行情面板，再问它一个可证明不可预测的问题，它会给出方向性判断的概率远高于只问裸问题：[这篇预注册研究][paper1-url]在 12 个前沿模型上测出，随着证据从 thin 面板升级到 scrambled 面板，commitment（对不可知问题下方向注的概率）从 6.5% 升到 54.0%。
 
 （比如十天后收盘价涨跌）更扎手的是：把面板上每个数字全部编造，让模型能看到的东西里除了问题本身没有任何真话，commitment 仍从 24.5% 升到 36.8%，与真实市场数据产生的 37.6% 在统计上不可区分。实验覆盖四个领域——股票十日收盘价、加密币三十日价格、下一场赛程和十日后的降水——效果全部复现，且作者先验证了短周期价格方向事前近似抛硬币，而不是直接假设。
 
@@ -13,7 +16,7 @@ image: assets/images/panel-commitment-action-gate.svg
 
 论文的原句结论是：解锁自信行动的「not information but the authority of its packaging」。作者用三个对照把常见解释逐一排除。能力不足？同一批面板配可回答的问题，同样的模型几乎全对、准确率接近完美。信念变了？模型陈述的概率在让行动摆动 48 个百分点的梯度上几乎不动，而且比气候学基线还差。判断缺失？先让它分类问题是否可知，90% 的情况下它自己判了「不可知」，然后照样下注。
 
-三个解释都不成立，失效的位置因此很具体：不是判断力，是 act/don't-act 这道行动门——模型知道答案不可知，手却停不下来。标准评估指标对这种门失效是盲的，因为单看回答质量或校准分数都挑不出毛病。注意这与推理链忠实性研究（如近期讨论的医疗 CoT 扰动审计）不同——那些工作问的是可见推理有没有被真正使用，这篇问的是明知不可知时手为什么停不下来。
+三个解释都不成立，失效的位置因此很具体：不是判断力，是 act/don't-act 这道行动门——模型知道答案不可知，手却停不下来。标准评估指标对这种门失效是盲的，因为单看回答质量或校准分数都挑不出毛病。注意这与推理链忠实性研究（如站内[《医疗 CoT 扰动审计》][links-2]）不同——那些工作问的是可见推理有没有被真正使用，这篇问的是明知不可知时手为什么停不下来。
 
 ## 谁中招，不随能力变化
 
@@ -26,6 +29,11 @@ image: assets/images/panel-commitment-action-gate.svg
 论文全部开源：代码、数据、预注册记录和所有缓存输出都在 GitHub 与 Zenodo 存档，单作者独立研究。它给出的工程启示很直接——给 agent 看的证据展示层本身就是一个攻击面，面板的排版权威会绕过判断力直达行动。
 
 ## References
+- [Calibrated Enough to Know, Not Calibrated to Act: Fabricated Evidence Makes LLM Agents Commit to the Unknowable][paper1-url]
+- [代码与数据（Zenodo DOI: 10.5281/zenodo.22043517）][links-1]
+- [站内：医疗 CoT 扰动审计][links-2]
 
-- Aggarwal, P. (2026). Calibrated Enough to Know, Not Calibrated to Act: Fabricated Evidence Makes LLM Agents Commit to the Unknowable. arXiv:2608.27167.
-- 代码与数据: https://github.com/Pranav-1100/confidence-calibration-evaluation （Zenodo DOI: 10.5281/zenodo.22043517）
+
+[paper1-url]: https://arxiv.org/abs/2608.27167
+[links-1]: https://github.com/Pranav-1100/confidence-calibration-evaluation
+[links-2]: {{ site.baseurl }}/one-minute-read-paper-medcot-decorative-reasoning/

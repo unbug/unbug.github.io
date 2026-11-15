@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, OneMinuteRead]
 image: assets/images/multi-step-swe-long-horizon.svg
 tags: [ai-agents, coding-agent, benchmark, long-horizon]
-description: "Klavis AI 自建 69 任务、574 步长程编程基准 Multi-step SWE：最强的 Claude Opus 5.5 整任务解决率仅 18.5%，单步通过率却有 56.8%，版本升级类无模型超过 8.8%。"
+description: "Klavis AI 自建 69 个任务、574 步相互依赖的长程软件工程基准：最强的 Claude Opus 5.5 整任务解决率也只有 18.5%，单步通过率却有 56.8%，版本升级类任务没有模型超过 8.8%。"
 ---
 
 Klavis AI（产品公司）的论文[《Multi-step SWE》][paper1-url]把「编程智能体能否在自己的代码上接着写」做成可测基准：`69` 个任务、共 `574` 步相互依赖的连续改动，每任务 `5`–`15` 步，最强的 Claude Opus 5.5 整任务解决率只有 `18.5%`。

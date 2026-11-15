@@ -8,9 +8,9 @@ tags: [llm, agent, multi-agent, safety]
 description: "深圳大学研究显示，多角色 Agent 工作流中的安全约束经 handoff 压缩后内容仍在、约束力却全失：正常压缩导致 100% 失效并引发 54.2% 禁止动作，恢复四个结构化字段则完全找回。"
 ---
 
-论文 [arXiv:2608.24569](https://arxiv.org/abs/2608.24569)（深圳大学）发现：正常 handoff 压缩后，`100.0%` 的约束被去激活，`54.2%` 的 episode 出现禁止动作。
+深圳大学的论文[《When "Must" Becomes "Maybe": Constraint Weakening in LLM Agent Workflows》][paper1-url]发现：正常 handoff 压缩后，`100.0%` 的约束被去激活，`54.2%` 的 episode 出现禁止动作。
 
-这不是记忆容量问题，而是交接问题——[#167 的压缩悬崖](https://unbug.github.io/one-minute-read-paper-compaction-cliff-agent-memory/)讲的是上下文压缩让长程 Agent 掉下悬崖，这篇论文看的是另一个失效点：多角色工作流里，上游约束在 handoff 中内容被保留、对下游行动的绑定却丢了。
+这不是记忆容量问题，而是交接问题——[《长程 Agent 记忆中的压缩悬崖》][links-1]讲的是上下文压缩让长程 Agent 掉下悬崖，这篇论文看的是另一个失效点：多角色工作流里，上游约束在 handoff 中内容被保留、对下游行动的绑定却丢了。
 
 论文以安全阻塞器为受控实例研究这种约束弱化（深圳大学，6 位作者，2026 年 8 月 25 日提交）：多阶段工作流中，上游状态被反复转写为摘要、计划、工单、记忆、交接笔记等中间工件，下游组件只看这些工件行动。核心发现是，对约束行动的状态来说，主题保留远远不够——工件可能仍然提到某个未决条件，但它已经从执行前必须解决的前置要求，变成了仅供参考的信息。
 
@@ -27,6 +27,9 @@ description: "深圳大学研究显示，多角色 Agent 工作流中的安全�
 两点限定值得注意。第一，1,296 个 episode 是受控合成场景，结论指向 handoff 转换机制本身，不是对生产工作流的统计描述。第二，安全阻塞器之所以可测，是因为每个源状态都有显式四字段；把它外推到一般操作状态保留，是论文自己的论证跳跃。另外主面板（六个模型变体）与验证面板（476 个 episode、七个其他模型变体，含 GLM-5、Kimi-K2.5、DS-V4-Flash 等）是两套数字，不能混用；论文还用独立五模型 no-reasoning 裁判盲审复核了 checker 结论。对设计多角色工作流的团队，启示很直接：交接工件除了写清发生了什么，还要给约束留结构化槽位——前置条件、授权、回退方案、执行后果。压缩或改写这四个字段时，丢掉的不是文字，而是约束对下游行动的绑定力；验证只能兜住这一次执行，换不了工件里的语义。
 
 ## References
+- [When "Must" Becomes "Maybe": Constraint Weakening in LLM Agent Workflows][paper1-url]（Yiheng Sun 等 6 位作者，Shenzhen University，2026）
+- [站内：长程 Agent 记忆中的压缩悬崖][links-1]
 
-- [When "Must" Becomes "Maybe": Constraint Weakening in LLM Agent Workflows](https://arxiv.org/abs/2608.24569) — Yiheng Sun, Huifei Wang, Yancheng Zhu, Zhenyu Li, Zebin Zhao, Yifan Yuan（Shenzhen University），2026
-- 相关阅读：[一分钟读论文：《长程 Agent 记忆中的压缩悬崖》](https://unbug.github.io/one-minute-read-paper-compaction-cliff-agent-memory/)
+
+[paper1-url]: https://arxiv.org/abs/2608.24569
+[links-1]: {{ site.baseurl }}/one-minute-read-paper-compaction-cliff-agent-memory/

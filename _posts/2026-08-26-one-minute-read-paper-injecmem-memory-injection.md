@@ -36,4 +36,4 @@ description: "上海交通大学与蚂蚁集团的 InjecMEM 论文证明，无�
 
 
 [paper1-url]: https://arxiv.org/abs/2608.23471
-[links-1]: /one-minute-read-paper-compaction-cliff-agent-memory/
+[links-1]: {{ site.baseurl }}/one-minute-read-paper-compaction-cliff-agent-memory/

@@ -31,11 +31,21 @@ description: "2026 年 8 月一个月内，万事达授权一件 LLM 智能体�
 两条路径：工具站形态（合同校验+审计台账打包 SaaS，VPS 千元级月成本起步，首批客户找已接 ACP 的跨境电商服务商）；或咨询+适配一体（帮商户接协议、顺手沉淀转换器，客单高但难规模化）。硬门槛有三个：不碰主账号 PAN、全部停留在令牌与合同字段层，否则 PCI 合规压垮个人；规范仍在快改，ACP 与 AP2 字段半年一换，抽象层要做薄；最长期风险是卡组织把对账能力直接内建——但 PCT 尚在早期，留给独立开发者的窗口以年计。
 
 ## References
-- [US12705604B2 — Mastercard：Secure payment flow using an LLM agent with a single use access token](https://patents.google.com/patent/US12705604B2/en)
-- [WO2026173611A1 — Visa：Infrastructure for authenticated agentic commerce](https://patents.google.com/patent/WO2026173611A1/en)
-- [WO2026173648A1 — Visa：Agentic payments and commerce](https://patents.google.com/patent/WO2026173648A1/en)
-- [AU2026906209A0 — Bounded Execution Compliance Control Plane for Agentic Payment](https://patents.google.com/patent/AU2026906209A0/en)
-- [Stripe Agentic Commerce 文档](https://docs.stripe.com/agentic-commerce)
-- [Google AP2 开源仓库](https://github.com/google-agentic-commerce/AP2)
-- [ACP 规范仓库](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol)
-- [站内：范式雷达第 20 期——标价之外，Harness 替你买了什么]({{ site.baseurl }}/paradigm-radar-agent-hidden-cost/)
+- [US12705604B2 — Mastercard：Secure payment flow using an LLM agent with a single use access token][links-1]
+- [WO2026173611A1 — Visa：Infrastructure for authenticated agentic commerce][links-2]
+- [WO2026173648A1 — Visa：Agentic payments and commerce][links-3]
+- [AU2026906209A0 — Bounded Execution Compliance Control Plane for Agentic Payment][links-4]
+- [Stripe Agentic Commerce 文档][links-5]
+- [Google AP2 开源仓库][links-6]
+- [ACP 规范仓库][links-7]
+- [站内：范式雷达第 20 期——标价之外，Harness 替你买了什么][links-8]
+
+
+[links-1]: https://patents.google.com/patent/US12705604B2/en
+[links-2]: https://patents.google.com/patent/WO2026173611A1/en
+[links-3]: https://patents.google.com/patent/WO2026173648A1/en
+[links-4]: https://patents.google.com/patent/AU2026906209A0/en
+[links-5]: https://docs.stripe.com/agentic-commerce
+[links-6]: https://github.com/google-agentic-commerce/AP2
+[links-7]: https://github.com/agentic-commerce-protocol/agentic-commerce-protocol
+[links-8]: {{ site.baseurl }}/paradigm-radar-agent-hidden-cost/

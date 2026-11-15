@@ -6,7 +6,7 @@ categories: [AI, OneMinuteRead]
 image: assets/images/e-means-epochs-curve.svg
 image_alt: "收敛曲线：跑满 25 个 epoch 才能达到的 Lloyd k-means 损失，e-means 在 1.4 到 2.6 个 epoch 就碰到；横轴为 epoch 数，纵轴为聚类损失。"
 tags: [clustering, k-means, vector-search, faiss]
-description: "Meta FAIR 预印本 e-means 换掉 k-means 的更新规则：GPU 提速 10 到 45 倍，100 亿向量分 1600 万簇只用 2.5 个 epoch，代码已并入 faiss 主干。"
+description: "Meta FAIR 预印本把 k-means 的更新规则换成小批量加滑动平均：GPU 端到端提速 10 到 45 倍，100 亿向量分 1600 万簇只用 2.5 个训练轮次，代码已并入 faiss 主干，成为大规模聚类新选项。"
 ---
 
 Meta FAIR 的预印本论文[《e-means: outperforming k-means》][paper1-url]把 k-means 的更新规则换成 mini-batch 加滑动平均，摘要口径做到 `10-45x` 的 GPU 端到端提速，代码已并入 faiss 主干。

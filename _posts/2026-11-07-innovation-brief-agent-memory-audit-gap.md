@@ -2,10 +2,10 @@
 layout: post
 title: "AI 智创简报：《智能体开始记长期账，谁来管坏账？》"
 author: unbug
-description: "2025年8月到2026年6月的五件智能体记忆专利，全部圈在记忆的写入与编排，读取侧的失效审计近乎空白；只读离线审计是尚无权利要求卡住的位置。"
 categories: [AI, InnovationBrief]
 image: assets/images/agent-memory-governance-gap.svg
 tags: [patent, agent-memory, context-engineering, dev-tools, indie-hacker]
+description: "2025年8月到2026年6月的五件智能体记忆专利，全部圈在记忆的写入与编排，读取侧的失效审计近乎空白；只读离线审计是尚无权利要求卡住的位置。"
 ---
 
 2025 年 8 月到 2026 年 6 月，Qomplx、微软、Monday.com 与两家中国公司先后公开或授权 `5` 件智能体记忆专利，逐件详情页于 `2026-11-07` 二验：权利要求全部圈在「怎么写进去、怎么组起来」，「读出来的记忆还能不能用」无人认领。

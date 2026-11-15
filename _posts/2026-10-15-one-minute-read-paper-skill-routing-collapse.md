@@ -43,4 +43,4 @@ description: "预印本论文称LLM agent的skill库扩到一千个无关项时�
 
 
 [paper1-url]: https://arxiv.org/abs/2610.18522
-[links-2]: https://unbug.github.io/paradigm-radar-skill-md-standard/
+[links-2]: {{ site.baseurl }}/paradigm-radar-skill-md-standard/
