@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <text x="70" y="70" font-size="28" font-weight="700" fill="#1F2937">同一周，五批互不相识的人撞见同一堵墙（HN 分数，截至 11-15）</text>
+
+  <!-- 横向条，长度 ∝ 分数，最长 1199 对应 780px -->
+  <text x="70" y="150" font-size="22" fill="#1F2937">智能家居「应能离线工作」（博主）</text>
+  <rect x="70" y="165" width="780" height="36" fill="#1F2937"/>
+  <text x="862" y="192" font-size="24" font-weight="700" fill="#1F2937">1199</text>
+
+  <text x="70" y="250" font-size="22" fill="#C0392B">逆向净化器固件「去云」（独立逆向者）</text>
+  <rect x="70" y="265" width="515" height="36" fill="#C0392B"/>
+  <text x="597" y="292" font-size="24" font-weight="700" fill="#C0392B">792</text>
+
+  <text x="70" y="350" font-size="22" fill="#C0392B">绣花机要订阅，机主自建 App（Show HN）</text>
+  <rect x="70" y="365" width="482" height="36" fill="#C0392B"/>
+  <text x="564" y="392" font-size="24" font-weight="700" fill="#C0392B">740</text>
+
+  <text x="70" y="450" font-size="22" fill="#1F2937" fill-opacity="0.7">Apple 新 Mac App：本地跑 AI 变简单（大厂）</text>
+  <rect x="70" y="465" width="372" height="36" fill="#1F2937" fill-opacity="0.7"/>
+  <text x="454" y="492" font-size="24" font-weight="700" fill="#1F2937" text-anchor="start">572</text>
+
+  <text x="70" y="550" font-size="22" fill="#1F2937" fill-opacity="0.7">让 LLM 跑在老旧小设备上（独立开发者）</text>
+  <rect x="70" y="565" width="311" height="36" fill="#1F2937" fill-opacity="0.7"/>
+  <text x="393" y="592" font-size="24" font-weight="700" fill="#1F2937" text-anchor="start">479</text>
+
+  <!-- 图例 -->
+  <rect x="880" y="146" width="22" height="22" fill="#1F2937"/>
+  <text x="912" y="164" font-size="19" fill="#1F2937">议题与大厂动向</text>
+  <rect x="880" y="262" width="22" height="22" fill="#C0392B"/>
+  <text x="912" y="280" font-size="19" fill="#1F2937">个人逆向 / 自建迁移</text>
+
+  <text x="70" y="648" font-size="19" fill="#1F2937" fill-opacity="0.6">条长 ∝ HN 分数（无坐标刻度）；红蓝仅区分个人迁移与大厂议题。另有 353、252 分两帖同轴，及 910 分云端泄露辅料帖未入图。</text>
+</svg>
