@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="520" fill="#FFFFFF"/>
+  <text x="70" y="52" font-size="25" font-weight="700" fill="#1F2937">同一笔开销的三组口径（占比）：没有一个能被换算成另一个</text>
+
+  <g font-size="18" fill="#1F2937">
+    <text x="70" y="122">取证方 Flamerix：占花费 16.4%</text>
+    <text x="70" y="196">第三方自测 jakozaur：会话内 ~8%</text>
+    <text x="70" y="270">厂方自述 edwinarbus：标价成本 ~2%（终端场景 ~6%）</text>
+  </g>
+  <g>
+    <rect x="560" y="98" width="460" height="30" fill="#C0392B"/><text x="1032" y="122" font-size="18" font-weight="bold" fill="#C0392B">16.4%</text>
+    <text x="560" y="150" font-size="14" fill="#6B7280">OTel 全量分组；subagent-heavy 样本；cost_usd 估算非发票</text>
+    <rect x="560" y="172" width="224" height="30" fill="#B7791F"/><text x="796" y="196" font-size="18" font-weight="bold" fill="#8B5E1A">~8%</text>
+    <text x="560" y="224" font-size="14" fill="#6B7280">个人会话；「多为缓存读、workflow 不受波及」的限定同时在场</text>
+    <rect x="560" y="246" width="56" height="30" fill="#2F6FB2"/><rect x="616" y="246" width="112" height="30" fill="#2F6FB2" fill-opacity="0.4"/>
+    <text x="744" y="270" font-size="18" font-weight="bold" fill="#1E3A5F">~2%（全量遥测） · ~6%（终端）</text>
+    <text x="560" y="298" font-size="14" fill="#6B7280">厂方全量口径无第三方可复测；「Your 16.4% sounds like…a team running mostly background agents」</text>
+  </g>
+  <line x1="560" y1="92" x2="560" y2="310" stroke="#9CA3AF" stroke-width="1.5"/>
+
+  <rect x="70" y="336" width="1060" height="86" rx="12" fill="#F3F4F6" stroke="#1F2937" stroke-width="1.5"/>
+  <text x="92" y="366" font-size="16" font-weight="bold" fill="#1F2937">修复的用户侧测点（gym 50284567 自述）：Pro 档「100% 的 5 小时窗口 = 周额度 25%」→ 两天后 13%</text>
+  <rect x="92" y="380" width="330" height="16" fill="#C0392B" fill-opacity="0.7"/><text x="432" y="393" font-size="13.5" fill="#7B241C">25%（2.1.311 前）</text>
+  <rect x="92" y="400" width="172" height="16" fill="#1E8449" fill-opacity="0.7"/><text x="274" y="413" font-size="13.5" fill="#14532D">13%（修复后）</text>
+
+  <text x="70" y="470" font-size="16" fill="#6B7280">记账规则：三组口径各自附样本与方法，任何转述不得合并平均；issue #86879 复测 closed（121 reactions），「开关诉求」与「修复上线」之间的差值继续跟踪。</text>
+</svg>

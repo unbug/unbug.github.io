@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="520" fill="#FFFFFF"/>
+  <text x="70" y="52" font-size="25" font-weight="700" fill="#1F2937">五帖 10-31 首采 vs 11-16 复测：注意力最终归给「谁有细节」</text>
+
+  <g font-size="18" fill="#1F2937">
+    <text x="70" y="118">Phorion 公告帖（50300683）</text>
+    <text x="70" y="194">OpenCode 泄露帖（50133401）</text>
+    <text x="70" y="270">LiteLLM PyPI 投毒帖（50181114）</text>
+    <text x="70" y="346">GossiTheDog 帖（50302334）</text>
+    <text x="70" y="422">DoublePulsar 帖（50301983）</text>
+  </g>
+  <g>
+    <rect x="500" y="94" width="167" height="28" fill="#1F2937"/><rect x="667" y="94" width="282" height="28" fill="#C0392B"/>
+    <text x="500" y="144" font-size="15" fill="#6B7280">377 → 1014（+637）· 514 条 · 另两帖评论当日合并进来</text>
+    <rect x="500" y="170" width="432" height="28" fill="#1F2937"/><rect x="932" y="170" width="1" height="28" fill="#C0392B"/>
+    <text x="500" y="220" font-size="15" fill="#6B7280">976 → 977 · 185 条 · 封顶于「Console ≠ 编码代理」澄清</text>
+    <rect x="500" y="246" width="264" height="28" fill="#1F2937"/>
+    <text x="500" y="296" font-size="15" fill="#6B7280">596 → 596 · 202 条 · 复盘与提案继续长</text>
+    <rect x="500" y="322" width="286" height="28" fill="#1F2937"/><rect x="786" y="322" width="8" height="28" fill="#C0392B"/>
+    <text x="500" y="372" font-size="15" fill="#6B7280">645 → 663 · 17 条 · 短评帖不承接深挖</text>
+    <rect x="500" y="398" width="176" height="28" fill="#1F2937"/><rect x="676" y="398" width="1" height="28" fill="#C0392B"/>
+    <text x="500" y="448" font-size="15" fill="#6B7280">396 → 399 · 仅 1 条 · 评论合并后成为空壳</text>
+  </g>
+  <text x="70" y="495" font-size="16" fill="#6B7280">读数：同一事件三帖并发时，复测热度全部流向唯一给出完整攻击细节的公告帖——供应链事件的公共复盘天然向技术信源集中。</text>
+</svg>

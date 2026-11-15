@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="520" fill="#FFFFFF"/>
+  <text x="70" y="52" font-size="25" font-weight="700" fill="#1F2937">防御侧供给（左）对四个未闭合缺口（右）：轮子有了，标准没有</text>
+
+  <g font-size="15">
+    <text x="70" y="98" font-size="17" font-weight="bold" fill="#1E8449">官方组织扫描/治理仓（星数 = 11-16 复测）</text>
+    <rect x="70" y="114" width="250" height="52" rx="8" fill="#EAF6EF" stroke="#1E8449"/><text x="86" y="136" font-weight="bold" fill="#14532D">cisco skill-scanner</text><text x="86" y="157" fill="#1F4D33">2026-01-29 创建 · 2,730★</text>
+    <rect x="340" y="114" width="260" height="52" rx="8" fill="#EAF6EF" stroke="#1E8449"/><text x="356" y="136" font-weight="bold" fill="#14532D">microsoft governance-kit</text><text x="356" y="157" fill="#1F4D33">2026-03-02 创建 · 6,567★</text>
+    <rect x="620" y="114" width="240" height="52" rx="8" fill="#EAF6EF" stroke="#1E8449"/><text x="636" y="136" font-weight="bold" fill="#14532D">NVIDIA SkillSpector</text><text x="636" y="157" fill="#1F4D33">2026-03-21 创建 · 26,174★</text>
+    <rect x="880" y="114" width="250" height="52" rx="8" fill="#EAF6EF" stroke="#1E8449"/><text x="896" y="136" font-weight="bold" fill="#14532D">snyk agent-scan 等</text><text x="896" y="157" fill="#1F4D33">OWASP 双专项常设</text>
+    <text x="70" y="196" font-size="13.5" fill="#6B7280">SkillSpector 自报（研究口径）：31,132 个技能分析子集，26.1% 含漏洞、5.2% 疑似恶意；四仓 11-14/15 仍活跃提交</text>
+  </g>
+
+  <g font-size="15">
+    <text x="70" y="252" font-size="17" font-weight="bold" fill="#C0392B">四个缺口（全部有线程出处）</text>
+    <rect x="70" y="268" width="515" height="70" rx="10" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+    <text x="90" y="296" font-weight="bold" fill="#7B241C">① 统一签名/注册表标准：未落地</text>
+    <text x="90" y="322" fill="#7B241C">社区构想帖最高 49 分；各目录互不背书（NVIDIA Verified Skills 单厂流水线）</text>
+    <rect x="615" y="268" width="515" height="70" rx="10" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+    <text x="635" y="296" font-weight="bold" fill="#7B241C">② 包管理器没有「拒绝」键</text>
+    <text x="635" y="322" fill="#7B241C">joshheitzman 想 blocklitellm，pip 无 exclude（issue 10797）；stbenjam 提 24–48h 默认冷却</text>
+    <rect x="70" y="352" width="515" height="70" rx="10" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+    <text x="90" y="380" font-weight="bold" fill="#7B241C">③ 人因面：权限弹窗疲劳</text>
+    <text x="90" y="406" fill="#7B241C">crossroadsguy（50184801）：「367 个依赖？现在都这样」——扫描器数得出模式，数不出点击</text>
+    <rect x="615" y="352" width="515" height="70" rx="10" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+    <text x="635" y="380" font-weight="bold" fill="#7B241C">④ 暴露时长无人负责</text>
+    <text x="635" y="406" fill="#7B241C">市场通道 11h08m（Reuters）vs Docker 通道 4h——「多快下架」还没有 SLA，pin 版本是当下唯一自救</text>
+  </g>
+
+  <text x="600" y="472" font-size="17" fill="#1F2937" text-anchor="middle">结论边界维持：攻击面形成、厂商各自造轮子；「标准波来了」要等缺口 ① 合上才能说</text>
+</svg>

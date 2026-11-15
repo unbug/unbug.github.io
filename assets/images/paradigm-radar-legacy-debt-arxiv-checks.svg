@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="540" fill="#F4F7FB"/>
+  <text x="600" y="44" font-size="25" font-weight="bold" fill="#1E3A5F" text-anchor="middle">窗内唯一可复现的测量（arXiv 2610.40269，HN 仅 22 分）：每 100 个 WordPress 4.0 PHP 文件现代化到 PHP 8.3</text>
+
+  <g font-size="17" fill="#1E3A5F">
+    <text x="70" y="120">全过 630 项隐藏行为检查的文件数</text>
+  </g>
+  <rect x="480" y="96" width="600" height="30" fill="#1E8449"/><text x="1092" y="120" font-size="18" font-weight="bold" fill="#14532D">83（不碰）</text>
+  <rect x="480" y="96" width="0" height="0"/>
+  <rect x="480" y="138" width="426" height="30" fill="#C0392B"/><text x="918" y="162" font-size="18" font-weight="bold" fill="#C0392B">59（五个模型里最好的一个）</text>
+
+  <g font-size="17" fill="#1E3A5F">
+    <text x="70" y="230">对「本来能跑的文件」的破坏 / 修复数</text>
+  </g>
+  <g font-size="15">
+    <text x="480" y="262" fill="#7B241C" font-weight="bold">每个 LLM：破坏 32–51，至多修复 10</text>
+    <rect x="905" y="244" width="26" height="24" fill="#C0392B"/>
+    <text x="480" y="298" fill="#1E3A5F" font-weight="bold">规则工具 Rector（511 项指标）：破坏 7，修复 6</text>
+    <rect x="905" y="280" width="26" height="24" fill="#2F6FB2"/>
+  </g>
+
+  <rect x="70" y="340" width="1060" height="90" rx="12" fill="#FFFFFF" stroke="#2F6FB2" stroke-width="2"/>
+  <text x="95" y="374" font-size="16.5" fill="#1E3A5F">另一半结论同样扎心：「Only 37 findings (7 percent) require a change under PHP 8.3」——</text>
+  <text x="95" y="402" font-size="16.5" fill="#1E3A5F">93% 的「现代化发现」根本不改也能跑，动手本身才是主要风险源。</text>
+
+  <text x="600" y="472" font-size="17" fill="#1E3A5F" text-anchor="middle">评论区限定：50345118「模型迭代太快、结论存疑」；50345266「单文件粘贴是过时工作流，勿外推到带测试的 agent 流程」</text>
+  <text x="600" y="508" font-size="15" fill="#6B7F96" text-anchor="middle">但限定不等于豁免：无反馈单轮恰是当下多数团队的真实现场</text>
+</svg>

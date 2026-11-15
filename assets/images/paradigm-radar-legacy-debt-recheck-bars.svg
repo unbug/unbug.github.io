@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="500" fill="#FFFFFF"/>
+  <text x="70" y="52" font-size="25" font-weight="700" fill="#1F2937">四主帖 11-06 首采 vs 11-16 复测：全部进入平台期（深色首采，红色涨幅）</text>
+
+  <g font-size="18" fill="#1F2937">
+    <text x="70" y="120">IEEE《四十年技术债》（50364336）</text>
+    <text x="70" y="196">Postgres 19 延期帖（50312408）</text>
+    <text x="70" y="272">SigNoz《SRE 去技能化》（50305693）</text>
+    <text x="70" y="348">Cisco 无限 token 帖（50304122）</text>
+  </g>
+  <g>
+    <rect x="520" y="96" width="560" height="28" fill="#1F2937"/><rect x="1080" y="96" width="19" height="28" fill="#C0392B"/>
+    <text x="520" y="146" font-size="15" fill="#6B7280">1265 → 1309（+44）· 评论 738 → 752</text>
+    <rect x="520" y="172" width="375" height="28" fill="#1F2937"/><rect x="895" y="172" width="3" height="28" fill="#C0392B"/>
+    <text x="520" y="222" font-size="15" fill="#6B7280">850 → 855（+5）· 评论 517 → 521</text>
+    <rect x="520" y="248" width="302" height="28" fill="#1F2937"/><rect x="822" y="248" width="3" height="28" fill="#C0392B"/>
+    <text x="520" y="298" font-size="15" fill="#6B7280">684 → 689（+5）· 评论 498 → 501</text>
+    <rect x="520" y="324" width="140" height="28" fill="#1F2937"/><rect x="660" y="324" width="1" height="28" fill="#C0392B"/>
+    <text x="520" y="374" font-size="15" fill="#6B7280">316 → 318（+2）· 评论 386 → 387</text>
+  </g>
+  <text x="70" y="430" font-size="16" fill="#6B7280">读数：事件簇热度峰值在 11-04 的 IEEE 帖见顶，此后十天涨幅全部 ≤44 分——叙事不再上冲，而是在评论区被反证逐条下沉。</text>
+  <text x="70" y="464" font-size="15" fill="#9CA3AF">对照：窗内唯一带可复现口径的 arXiv 论文首采仅 22 分（未列入本图）——热度与严谨度成反比。</text>
+</svg>

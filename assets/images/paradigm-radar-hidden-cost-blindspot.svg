@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="560" fill="#F4F7FB"/>
+  <text x="600" y="42" font-size="25" font-weight="bold" fill="#1E3A5F" text-anchor="middle">一笔没有账单的请求：agent_summary 的数据流与三档可见性</text>
+
+  <g font-size="15" text-anchor="middle">
+    <rect x="50" y="80" width="230" height="96" rx="12" fill="#FFFFFF" stroke="#2F6FB2" stroke-width="2.5"/>
+    <text x="165" y="112" font-weight="bold" fill="#1E3A5F">主会话 + 后台 agents</text>
+    <text x="165" y="138" fill="#41627F">每 ~30 秒触发一次（2.1.232 起默认开）</text>
+    <text x="165" y="160" fill="#41627F">无官方关闭开关（首采口径）</text>
+
+    <rect x="350" y="80" width="260" height="96" rx="12" fill="#FDECEA" stroke="#C0392B" stroke-width="2.5"/>
+    <text x="480" y="106" font-weight="bold" fill="#C0392B">完整 transcript → Opus（96%）</text>
+    <text x="480" y="132" fill="#7B241C">只为生成 3–5 个词的状态行摘要</text>
+    <text x="480" y="154" fill="#7B241C">input:output ≈ 9,000:1</text>
+    <text x="480" y="172" fill="#7B241C">占请求 19.7% · 占花费 16.4%（取证自述）</text>
+
+    <rect x="680" y="80" width="200" height="96" rx="12" fill="#FFFFFF" stroke="#2F6FB2" stroke-width="2"/>
+    <text x="780" y="118" font-weight="bold" fill="#1E3A5F">agents 面板状态行</text>
+    <text x="780" y="146" fill="#41627F">摘要「never reaches the model</text>
+    <text x="780" y="166" fill="#41627F">or your conversation」</text>
+
+    <rect x="920" y="80" width="230" height="96" rx="12" fill="#FDF6E3" stroke="#B7791F" stroke-width="2.5"/>
+    <text x="1035" y="112" font-weight="bold" fill="#8B5E1A">不写入本地 transcript</text>
+    <text x="1035" y="138" fill="#7A5514">「These requests are not written</text>
+    <text x="1035" y="158" fill="#7A5514">to the transcript…」——盲区之源</text>
+  </g>
+  <g stroke="#C0392B" stroke-width="2.5" fill="none" marker-end="url(#hR)"><line x1="280" y1="128" x2="350" y2="128"/><line x1="610" y1="128" x2="680" y2="128"/></g>
+  <line x1="880" y1="128" x2="920" y2="128" stroke="#B7791F" stroke-width="2.5" stroke-dasharray="7 5"/>
+
+  <g font-size="14.5">
+    <text x="60" y="236" font-size="17" font-weight="bold" fill="#1E3A5F">三档可见性（同一笔钱，三类工具的视角）</text>
+    <rect x="60" y="254" width="350" height="118" rx="10" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+    <text x="80" y="284" font-weight="bold" fill="#C0392B">看不见：读本地账本的成本工具</text>
+    <text x="80" y="312" fill="#7B241C">codeburn/tare 类：数据源是 session JSONL</text>
+    <text x="80" y="336" fill="#7B241C">摘要请求不入账 → 账单天然缺一块</text>
+    <text x="80" y="360" fill="#7B241C">（10-29 前多数用户的真实视角）</text>
+    <rect x="430" y="254" width="350" height="118" rx="10" fill="#EAF6EF" stroke="#1E8449" stroke-width="2"/>
+    <text x="450" y="284" font-weight="bold" fill="#14532D">看得见：OTel 导出 + query_source 分组</text>
+    <text x="450" y="312" fill="#1F4D33">取证方 DRIM 即在此发现「比主对话还贵」</text>
+    <text x="450" y="336" fill="#1F4D33">#86879 附 27 subagents/1,496 请求原始映射</text>
+    <text x="450" y="360" fill="#1F4D33">方法可复制：OTEL_LOG_RAW_API_BODIES</text>
+    <rect x="800" y="254" width="340" height="118" rx="10" fill="#EAF2FB" stroke="#2F6FB2" stroke-width="2"/>
+    <text x="820" y="284" font-weight="bold" fill="#1E3A5F">也看得见：自建代理（第 19 期路线）</text>
+    <text x="820" y="312" fill="#41627F">请求必经你的网关，来源分组一目了然</text>
+    <text x="820" y="336" fill="#41627F">但订阅挂代理有 ToS 边界（他期在案）</text>
+    <text x="820" y="360" fill="#41627F">且计量件自身的可信度是新欠条</text>
+  </g>
+
+  <text x="600" y="428" font-size="17" fill="#1E3A5F" text-anchor="middle">范式支点：本地账本 ≠ 全部请求。成本观从「读账本」被迫升级为「装探针」</text>
+  <text x="600" y="464" font-size="15" fill="#6B7F96" text-anchor="middle">订阅制下损失的是限速额度而非现金：gym 的「5 小时窗口从周额度 25% 掉到 13%」是修复生效的用户侧测点</text>
+  <defs><marker id="hR" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#C0392B"/></marker></defs>
+</svg>

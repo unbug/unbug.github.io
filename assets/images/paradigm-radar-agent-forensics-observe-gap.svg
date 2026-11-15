@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="560" fill="#F4F7FB"/>
+  <text x="600" y="42" font-size="25" font-weight="bold" fill="#1E3A5F" text-anchor="middle">「谁来看住 agent」：沙箱线程里事前方案逐层失效（楼层均有出处）</text>
+
+  <g font-size="15.5" text-anchor="middle">
+    <rect x="50" y="72" width="212" height="104" rx="12" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+    <text x="156" y="100" font-weight="bold" fill="#C0392B">沙箱两难</text>
+    <text x="156" y="126" fill="#7B241C">严到安全就没用，</text>
+    <text x="156" y="146" fill="#7B241C">给足工具就脱轨；</text>
+    <text x="156" y="166" fill="#7B241C">「AI 盯 AI」→ 谁来盯监工</text>
+    <text x="156" y="232" font-size="12.5" fill="#6B7F96">Gigachad（49918193·s58）</text>
+
+    <rect x="292" y="72" width="212" height="104" rx="12" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+    <text x="398" y="100" font-weight="bold" fill="#C0392B">VM 不可靠</text>
+    <text x="398" y="126" fill="#7B241C">Schneier / Trail of Bits：</text>
+    <text x="398" y="146" fill="#7B241C">「Using a VM to Contain</text>
+    <text x="398" y="166" fill="#7B241C">an AI Agent — It won't work」</text>
+    <text x="398" y="232" font-size="12.5" fill="#6B7F96">mdp2021 转贴（49918754）</text>
+
+    <rect x="534" y="72" width="212" height="104" rx="12" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+    <text x="640" y="100" font-weight="bold" fill="#C0392B">内核可越狱</text>
+    <text x="640" y="126" fill="#7B241C">「倒计时等下一个</text>
+    <text x="640" y="146" fill="#7B241C">Linux LPE 0-day 或 KVM 漏洞，</text>
+    <text x="640" y="166" fill="#7B241C">agent 会拿它轻松越狱」</text>
+    <text x="640" y="232" font-size="12.5" fill="#6B7F96">rvz（49918249·s15）</text>
+
+    <rect x="776" y="72" width="212" height="104" rx="12" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+    <text x="882" y="100" font-weight="bold" fill="#C0392B">清单可绕过</text>
+    <text x="882" y="126" fill="#7B241C">给 cat 就等于给</text>
+    <text x="882" y="146" fill="#7B241C">cat file &gt; output；</text>
+    <text x="882" y="166" fill="#7B241C">「做不出一个只读 agent」</text>
+    <text x="882" y="232" font-size="12.5" fill="#6B7F96">Luker88 实测（49918997）</text>
+
+    <rect x="1018" y="72" width="140" height="104" rx="12" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+    <text x="1088" y="100" font-weight="bold" fill="#C0392B">单步审查</text>
+    <text x="1088" y="126" fill="#7B241C">逐步都安全，</text>
+    <text x="1088" y="146" fill="#7B241C">拼起来是 rogue</text>
+    <text x="1088" y="166" fill="#7B241C">策略（组合攻击）</text>
+    <text x="1088" y="232" font-size="12.5" fill="#6B7F96">piterrro（49918254）</text>
+  </g>
+  <g stroke="#C0392B" stroke-width="2" marker-end="url(#oR)">
+    <line x1="262" y1="124" x2="292" y2="124"/><line x1="504" y1="124" x2="534" y2="124"/><line x1="746" y1="124" x2="776" y2="124"/><line x1="988" y1="124" x2="1018" y2="124"/>
+  </g>
+
+  <rect x="50" y="268" width="1108" height="96" rx="14" fill="#FFFFFF" stroke="#1E3A5F" stroke-width="2.5"/>
+  <text x="604" y="306" font-size="18" font-weight="bold" fill="#1E3A5F" text-anchor="middle">收敛点（piterrro 原话大意）：「最后的问题永远是——谁来观察 agent，怎么实现」</text>
+  <text x="604" y="338" font-size="15.5" fill="#41627F" text-anchor="middle">事前约束每一层都有缝；缝里漏出来的行为，只剩事后证据能兜底 —— 取证层的入场券由反方亲手递上</text>
+  <line x1="604" y1="176" x2="604" y2="268" stroke="#1E3A5F" stroke-width="2.5" stroke-dasharray="8 6" marker-end="url(#oB)"/>
+
+  <text x="604" y="414" font-size="16" fill="#1E3A5F" text-anchor="middle">人因端同稿（Slack 泄露帖 50033517，70 条）：BorisMelnik「我花三十年核对目录权限与 IAM 角色，现在的人用一句对话交出最敏感数据」</text>
+  <text x="604" y="446" font-size="16" fill="#1E3A5F" text-anchor="middle">授权用对话完成、记录默认关闭、复盘靠记忆拼凑 —— 取证层要补的正是这三处</text>
+  <defs><marker id="oR" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#C0392B"/></marker><marker id="oB" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#1E3A5F"/></marker></defs>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="520" fill="#FFFFFF"/>
+  <text x="70" y="52" font-size="25" font-weight="700" fill="#1F2937">12 仓星数 10-16 → 11-16：热度从「吵事故」换轨到「挑工具」，回放类斜率最陡</text>
+
+  <g font-size="15" fill="#1F2937">
+    <text x="70" y="106">agentplay（回放）</text>
+    <text x="70" y="152">OrcaReplay（回放）</text>
+    <text x="70" y="198">agenttrail（监控）</text>
+    <text x="70" y="244">shepherd（回放）</text>
+    <text x="70" y="290">llm-space（回放）</text>
+    <text x="70" y="336">agentacct（核算）</text>
+    <text x="70" y="382">ToolReplay（取证）※</text>
+  </g>
+  <g>
+    <rect x="400" y="88" width="110" height="22" fill="#1F2937"/><rect x="510" y="88" width="79" height="22" fill="#C0392B"/>
+    <text x="600" y="105" font-size="14" fill="#6B7280">214 → 369 · 观察信号「斜率能否延续」一个月后确认为是</text>
+    <rect x="400" y="134" width="146" height="22" fill="#1F2937"/><rect x="546" y="134" width="240" height="22" fill="#C0392B"/>
+    <text x="797" y="151" font-size="14" fill="#6B7280">285 → 759 · 近三倍</text>
+    <rect x="400" y="180" width="464" height="22" fill="#1F2937"/><rect x="864" y="180" width="32" height="22" fill="#C0392B"/>
+    <text x="907" y="197" font-size="14" fill="#6B7280">901 → 1,024 · 破千</text>
+    <rect x="400" y="226" width="1280" height="0" fill="none"/>
+    <rect x="400" y="226" width="128" height="22" fill="#1F2937"/><rect x="528" y="226" width="8" height="22" fill="#C0392B"/>
+    <text x="547" y="243" font-size="14" fill="#6B7280">2,483 → 2,637</text>
+    <rect x="400" y="272" width="110" height="22" fill="#1F2937"/><rect x="510" y="272" width="5" height="22" fill="#C0392B"/>
+    <text x="526" y="289" font-size="14" fill="#6B7280">2,024 → 2,130 · 11-09 仍活跃</text>
+    <rect x="400" y="318" width="417" height="22" fill="#1F2937"/><rect x="817" y="318" width="4" height="22" fill="#B7791F"/>
+    <text x="832" y="335" font-size="14" fill="#8B5E1A">766 → 759 · 唯一小幅回落（黄色为减）</text>
+    <rect x="400" y="364" width="101" height="22" fill="#1F2937" opacity="0.35"/>
+    <text x="512" y="381" font-size="14" fill="#6B7280">185 → 50 · 两次读数不一致、提交停在建仓日——异常记录，不据以论证</text>
+  </g>
+
+  <text x="70" y="440" font-size="16" fill="#6B7280">读数：同期事件帖全部进入平台期（Wikimedia 307、沙箱帖 56 分不动），星数却继续向回放类集中——品类从叙事期进入工具期的标准换轨信号。</text>
+  <text x="70" y="474" font-size="15" fill="#9CA3AF">「可核验证据」比「回放好看」更难卖：取证/核算类（ToolReplay、agentacct）斜率垫底，商业帖全部 &lt;50 分。</text>
+</svg>

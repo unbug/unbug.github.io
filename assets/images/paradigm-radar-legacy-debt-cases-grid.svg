@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="560" fill="#FFFFFF"/>
+  <text x="70" y="52" font-size="25" font-weight="700" fill="#1F2937">自述成功卡片 × 量化反证：热度与严谨成反比（全部为评论区自述，无验收口径）</text>
+
+  <rect x="70" y="86" width="515" height="128" rx="12" fill="#EAF6EF" stroke="#1E8449" stroke-width="2"/>
+  <text x="92" y="116" font-size="17" font-weight="bold" fill="#14532D">linsomniac（50317592，子树 35）</text>
+  <text x="92" y="144" font-size="14.5" fill="#1F4D33">5 万行 Coldfusion 站点 → Java Spring：一名工程师、业余时间约一周、</text>
+  <text x="92" y="166" font-size="14.5" fill="#1F4D33">$200 档订阅；人工口径 12–18 个工程师月；「讨论了十几年没人排期」</text>
+  <text x="92" y="194" font-size="13.5" fill="#6B7280">楼下：seizethecheese 算出约千倍成本比 → extrememacaroni 反讽回怼</text>
+
+  <rect x="615" y="86" width="515" height="128" rx="12" fill="#EAF6EF" stroke="#1E8449" stroke-width="2"/>
+  <text x="637" y="116" font-size="17" font-weight="bold" fill="#14532D">balderdash（50305103，子树 27）</text>
+  <text x="637" y="144" font-size="14.5" fill="#1F4D33">20 年 embedded 系统、两名维护者退休：3 个月完成重写+补文档+现代化，</text>
+  <text x="637" y="166" font-size="14.5" fill="#1F4D33">约 $20k token + 一名中级工程师</text>
+  <text x="637" y="194" font-size="13.5" fill="#C0392B">追问「怎么保证移植是对的？」——无人能答</text>
+
+  <rect x="70" y="234" width="515" height="128" rx="12" fill="#EAF6EF" stroke="#1E8449" stroke-width="2"/>
+  <text x="92" y="264" font-size="17" font-weight="bold" fill="#14532D">BatteryMountain（50334135，子树 166）</text>
+  <text x="92" y="292" font-size="14.5" fill="#1F4D33">150 万行系统一年：借 AI 找出并修复「数千个」缺陷/安全洞/循环依赖；</text>
+  <text x="92" y="314" font-size="14.5" fill="#1F4D33">编译器切 warnings-as-errors，前端重写成零框架</text>
+  <text x="92" y="342" font-size="13.5" fill="#6B7280">同为 Postgres 线程的 tibbar（50331824）：数百个 bug 只报得出「一二十个」</text>
+
+  <rect x="615" y="234" width="515" height="128" rx="12" fill="#FDECEA" stroke="#C0392B" stroke-width="2.5"/>
+  <text x="637" y="264" font-size="17" font-weight="bold" fill="#C0392B">对照两例</text>
+  <text x="637" y="292" font-size="14.5" fill="#7B241C">ebiester（50314523）：翻译式重写「没有理解地改写」，一例 runtime 单线程→</text>
+  <text x="637" y="314" font-size="14.5" fill="#7B241C">多线程直接构成安全问题；「测试仍是最长的杆」</text>
+  <text x="637" y="342" font-size="13.5" fill="#7B241C">Refreeze5224（50304936）：「重写满是写死 SSH key 的话，那什么都没变」</text>
+
+  <rect x="70" y="386" width="1060" height="86" rx="12" fill="#F3F4F6" stroke="#1F2937" stroke-width="2"/>
+  <text x="92" y="416" font-size="17" font-weight="bold" fill="#1F2937">同窗唯一可复现口径：arXiv 2610.40269（HN 22 分 / 14 条）</text>
+  <text x="92" y="444" font-size="14.5" fill="#374151">各模型每 100 文件破坏 32–51 个工作文件、至多修复 10；不碰则 83 个文件全过 630 项检查</text>
+
+  <text x="600" y="520" font-size="17" fill="#1F2937" text-anchor="middle">卡片帖 318–850 分，量化论文 22 分——还债窗口里，传播力与可审计性第一次成了反向指标</text>
+</svg>
