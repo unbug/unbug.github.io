@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- 面板头 -->
+  <text x="70" y="64" font-size="28" font-weight="700" fill="#1F2937">传统批式解码：每问每步各读一遍文档 KV</text>
+  <text x="660" y="64" font-size="28" font-weight="700" fill="#C0392B">Parallel Prompting：一步只读一遍</text>
+  <line x1="600" y1="40" x2="600" y2="560" stroke="#1F2937" stroke-opacity="0.25" stroke-width="2"/>
+
+  <!-- 左：文档 KV 大块 + 三条独立箭头各自读 -->
+  <rect x="90" y="130" width="200" height="300" fill="#1F2937" fill-opacity="0.12" stroke="#1F2937" stroke-width="2"/>
+  <text x="190" y="270" font-size="22" fill="#1F2937" text-anchor="middle">文档 KV</text>
+  <text x="190" y="300" font-size="20" fill="#1F2937" text-anchor="middle" fill-opacity="0.7">（前缀缓存已存）</text>
+
+  <rect x="380" y="150" width="150" height="54" fill="none" stroke="#1F2937" stroke-width="2"/>
+  <text x="455" y="183" font-size="20" fill="#1F2937" text-anchor="middle">问题流 1</text>
+  <rect x="380" y="255" width="150" height="54" fill="none" stroke="#1F2937" stroke-width="2"/>
+  <text x="455" y="288" font-size="20" fill="#1F2937" text-anchor="middle">问题流 2</text>
+  <rect x="380" y="360" width="150" height="54" fill="none" stroke="#1F2937" stroke-width="2"/>
+  <text x="455" y="393" font-size="20" fill="#1F2937" text-anchor="middle">问题流 3</text>
+
+  <line x1="380" y1="177" x2="296" y2="220" stroke="#1F2937" stroke-width="3"/>
+  <line x1="380" y1="282" x2="296" y2="282" stroke="#1F2937" stroke-width="3"/>
+  <line x1="380" y1="387" x2="296" y2="345" stroke="#1F2937" stroke-width="3"/>
+  <text x="338" y="240" font-size="19" fill="#1F2937" fill-opacity="0.75">每步一读</text>
+  <text x="338" y="330" font-size="19" fill="#1F2937" fill-opacity="0.75">每步一读</text>
+  <text x="190" y="475" font-size="22" fill="#1F2937" text-anchor="middle">每解码一步：读 P 遍，带宽按问题数付费</text>
+
+  <!-- 右：一次共享读取 + stream-id 掩码 -->
+  <rect x="680" y="130" width="200" height="300" fill="#C0392B" fill-opacity="0.10" stroke="#C0392B" stroke-width="2"/>
+  <text x="780" y="270" font-size="22" fill="#C0392B" text-anchor="middle">文档 KV</text>
+  <text x="780" y="300" font-size="20" fill="#C0392B" text-anchor="middle" fill-opacity="0.75">一步只读一次</text>
+
+  <rect x="970" y="150" width="150" height="54" fill="none" stroke="#C0392B" stroke-width="2"/>
+  <text x="1045" y="183" font-size="20" fill="#C0392B" text-anchor="middle">问题流 1</text>
+  <rect x="970" y="255" width="150" height="54" fill="none" stroke="#C0392B" stroke-width="2"/>
+  <text x="1045" y="288" font-size="20" fill="#C0392B" text-anchor="middle">问题流 2</text>
+  <rect x="970" y="360" width="150" height="54" fill="none" stroke="#C0392B" stroke-width="2"/>
+  <text x="1045" y="393" font-size="20" fill="#C0392B" text-anchor="middle">问题流 3</text>
+
+  <line x1="880" y1="220" x2="970" y2="177" stroke="#C0392B" stroke-width="3"/>
+  <line x1="880" y1="282" x2="970" y2="282" stroke="#C0392B" stroke-width="3"/>
+  <line x1="880" y1="345" x2="970" y2="387" stroke="#C0392B" stroke-width="3"/>
+  <rect x="892" y="240" width="66" height="84" fill="none" stroke="#C0392B" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="925" y="228" font-size="18" fill="#C0392B" text-anchor="middle">stream-id</text>
+  <text x="925" y="348" font-size="18" fill="#C0392B" text-anchor="middle">掩码分流</text>
+  <text x="780" y="475" font-size="22" fill="#C0392B" text-anchor="middle">同一次读取分给 P 条流，各流只见文档与自己的问题</text>
+
+  <!-- 底部实测例 -->
+  <text x="70" y="560" font-size="23" fill="#1F2937">同一实测例（256 问 × 16k token 文档）：stock SGLang 60.0 s</text>
+  <rect x="620" y="536" width="240" height="30" fill="#1F2937" fill-opacity="0.15"/>
+  <text x="70" y="600" font-size="23" font-weight="700" fill="#C0392B">Parallel Prompting 12.3 s</text>
+  <rect x="620" y="576" width="49" height="30" fill="#C0392B"/>
+  <text x="70" y="648" font-size="19" fill="#1F2937" fill-opacity="0.6">示意非逐点实测；例数为论文 §5.2 原文口径（CodeLlama-7B，MHA；GQA 模型增益收窄至 1.3–1.9 倍）。</text>
+</svg>
