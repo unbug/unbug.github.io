@@ -256,6 +256,8 @@ YYYY-MM-DD-innovation-brief-slug.md
 
 例：`2026-08-12-innovation-brief-edge-speech-denoise-patents.md`
 
+> **前缀定标（2026-11-16 裁定）**：slug 前缀唯一为 `innovation-brief-`，**禁止混用**其他前缀（如 `ai-innovation-brief-`）。已发布的 3 篇 `ai-innovation-brief-` 前缀文章（2026-11-08、11-09、11-10）作为历史遗留 grandfather 保留，URL 永不改动，但该前缀不得再用。
+
 ### 6.2 Git 提交
 
 ```bash
