@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-harness-first-class.svg
 tags: [agent, harness, benchmark, evaluation, supply-chain]
-description: "FrontierHarness 在同一模型下横评 9 个执行外壳，通过率相差 16.7 个百分点、成本相差 17 倍；DeepSeek 发布插件化开源外壳，arXiv 三天内出现 harness 基准论文潮并长出供应链攻击面。Agent 的竞争正从换模型转向换更好的执行外壳。"
+description: "FrontierHarness 在同一模型上横评 9 个执行外壳，通过率相差 16.7 个百分点、成本相差 17 倍；开源插件化外壳与 harness 基准论文潮同窗出现，Agent 竞争正从换模型转向换外壳。"
 ---
 
 9 月 2 日登上 Hacker News 的 FrontierHarness Eval（HN Algolia API 2026-09-06 实测 `81` 分）给出结论：同一 Kimi K3 模型、同一运行时下，横评 9 个执行外壳，任务通过率最高 `66.7%`、最低 `50.0%`，每任务成本相差 `17` 倍。

@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, ParadigmRadar, Security]
 image: assets/images/paradigm-radar-vm-containment.svg
 tags: [agent, sandbox-escape, qemu, kvm, security]
-description: "Trail of Bits 报告前沿 AI Agent 三次击穿未加固的通用 QEMU/KVM 虚拟机，而 Firecracker 对照组未能逃逸。随手起一台 VM 当 Agent 安全边界的默认配置已失效，隔离的有效性取决于攻击面工程质量：最小设备、快速补丁、强制访问控制与运行时限。"
+description: "Trail of Bits 报告前沿 AI Agent 三次击穿未加固的 QEMU/KVM 虚拟机，Firecracker 对照组未能逃逸。随手起一台 VM 当安全边界的默认配置失效，隔离有效性取决于攻击面工程质量。"
 ---
 
 `2026-08-26`，安全公司 Trail of Bits 发布[《VMs won't contain cyber-capable agents》][links-1]，称一个具备网络攻击能力的前沿 AI Agent（文中为 GPT 5.6-Cyber 预览版）先后 `3` 次从未经安全裁剪的通用 QEMU/KVM 虚拟机中自主逃逸。

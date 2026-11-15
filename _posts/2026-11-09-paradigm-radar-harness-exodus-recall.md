@@ -51,5 +51,3 @@ description: "Hacker News 双帖实测（2026-11-09）：《Goodbye Claude, hell
 [links-4]: https://github.com/earendil-works/pi
 [links-5]: {{ site.baseurl }}/paradigm-radar-agent-hidden-cost/
 [links-6]: {{ site.baseurl }}/paradigm-radar-toolchain-poisoning/
-
-RADAR-EDITOR-1109-DONE
