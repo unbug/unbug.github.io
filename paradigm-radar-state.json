@@ -1,15 +1,13 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "n": 26,
-    "slug": "paradigm-radar-offline-sovereignty",
-    "date": "2026-11-15",
-    "title": "他们把设备搬回局域网",
-    "weighted": null,
-    "url": "https://unbug.github.io/paradigm-radar-offline-sovereignty/",
-    "verifiedAt": "2026-11-16 00:1x GMT+8 三个月修复波线上实测 200"
+    "n": 27,
+    "slug": "paradigm-radar-aws-emulator-simulated-world",
+    "date": "2026-11-16",
+    "title": "一整朵云被复刻进本地盒子",
+    "weighted": 4.33
   },
-  "totalPublished": 26,
+  "totalPublished": 27,
   "nextScheduled": "2026-11-18",
   "candidateTopics": [
     {
@@ -24,7 +22,7 @@
       ]
     },
     {
-      "topic": "agent 执行基座标准化波（Mxc/OpenShell/SPACE 任一进入 CNCF/OWASP 或跨厂商互操作策略格式→升级规范波重新计分；SPACE 上 HN >150 分→开发者拐点；新增子信号：gVisor 捐 CNCF（gvisor.dev 博客 10-02 实测，HN 仅 24 分）是否带出 agent 隔离策略格式）",
+      "topic": "agent 执行基座标准化波（Mxc/OpenShell/SPACE 任一进入 CNCF/OWASP 或跨厂商互操作策略格式→升级规范波重新计分；SPACE 上 HN >150 分→开发者拐点；新增子信号：gVisor 捐 CNCF（gvisor.dev 博客 10-02 实测，HN 仅 24 分）是否带出 agent 隔离策略格式）【11-16 事件：OpenShell 11-10 正式进 CNCF Sandbox（官方博客实测、Red Hat CTO 具名、采用 Cedar）——标准化触发条件已达成，但本期撞执行基座家族规避清单未用；素材存 research-brief-radar-2026-11-16.md，解禁后优先复议；MXC v1.1.0 属产品迭代不算】",
       "score": 3.33,
       "sources": [
         "https://github.com/microsoft/mxc",
@@ -48,8 +46,8 @@
       ]
     },
     {
-      "topic": "agent.reviews 评价飞轮复查（10-26 实测 190,991 条/4,312 工具，vs 189,934 基线几乎零增长，未破 40 万判据；维持判据，11 月中旬复查斜率）",
-      "score": 4.0,
+      "topic": "agent.reviews 评价飞轮复查（10-26 实测 190,991 条/4,312 工具，vs 189,934 基线几乎零增长，未破 40 万判据；维持判据，11 月中旬复查斜率）【11-16 复查：192,905 条/4,487 工具，21 天 +1,908（≈91/天），距 40 万判据按此斜率 ~6.3 年，明确未触发，降档】",
+      "score": 3.0,
       "sources": [
         "https://agent.reviews/llms.txt"
       ]

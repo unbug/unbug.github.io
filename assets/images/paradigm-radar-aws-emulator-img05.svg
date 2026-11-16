@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- 结论行 -->
+  <text x="60" y="72" font-size="16" fill="#1A1B1E">十年赛道一夜重定价：竞品星数、定价、维护状态</text>
+
+  <!-- 表头：产品名（各列 200 宽，间距 20，5 列从 x=80 到 x=1100） -->
+  <g font-size="15" font-weight="bold" text-anchor="middle">
+    <text x="180" y="148" fill="#0072B2">AWS Emulator</text>
+    <text x="400" y="148" fill="#999999">LocalStack</text>
+    <text x="620" y="148" fill="#1A1B1E">Floci</text>
+    <text x="840" y="148" fill="#1A1B1E">ministack</text>
+    <text x="1060" y="148" fill="#1A1B1E">moto</text>
+  </g>
+  <g font-size="12" fill="#555" text-anchor="middle">
+    <text x="180" y="172">官方</text>
+    <text x="400" y="172">archived 停摆</text>
+    <text x="620" y="172">开源</text>
+    <text x="840" y="172">开源</text>
+    <text x="1060" y="172">开源</text>
+  </g>
+  <!-- 表头分隔线 -->
+  <line x1="80" y1="190" x2="1100" y2="190" stroke="#1A1B1E" stroke-width="0.75"/>
+
+  <!-- 行标签（列外左侧） -->
+  <g font-size="14" fill="#555" text-anchor="start">
+    <text x="28" y="236">星数</text>
+    <text x="28" y="340">许可 / 定价</text>
+    <text x="28" y="444">维护状态</text>
+  </g>
+
+  <!-- 行 1：星数 -->
+  <rect x="80" y="200" width="200" height="60" fill="#0072B2"/>
+  <rect x="300" y="200" width="200" height="60" fill="#999999"/>
+  <rect x="520" y="200" width="200" height="60" fill="#FFFFFF" stroke="#1A1B1E" stroke-width="0.75"/>
+  <rect x="740" y="200" width="200" height="60" fill="#FFFFFF" stroke="#1A1B1E" stroke-width="0.75"/>
+  <rect x="960" y="200" width="200" height="60" fill="#FFFFFF" stroke="#1A1B1E" stroke-width="0.75"/>
+  <text x="180" y="236" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">8,560</text>
+  <text x="400" y="236" font-size="20" font-weight="bold" fill="#1A1B1E" text-anchor="middle">65,114</text>
+  <text x="620" y="236" font-size="20" font-weight="bold" fill="#1A1B1E" text-anchor="middle">31,807</text>
+  <text x="840" y="236" font-size="20" font-weight="bold" fill="#1A1B1E" text-anchor="middle">5,162</text>
+  <text x="1060" y="236" font-size="20" font-weight="bold" fill="#1A1B1E" text-anchor="middle">8,748</text>
+
+  <!-- 行 2：许可 / 定价 -->
+  <rect x="80" y="304" width="200" height="60" fill="#F5F5F5"/>
+  <rect x="300" y="304" width="200" height="60" fill="#F5F5F5"/>
+  <rect x="520" y="304" width="200" height="60" fill="#F5F5F5"/>
+  <rect x="740" y="304" width="200" height="60" fill="#F5F5F5"/>
+  <rect x="960" y="304" width="200" height="60" fill="#F5F5F5"/>
+  <text x="180" y="330" font-size="14" fill="#1A1B1E" text-anchor="middle">CC0</text>
+  <text x="180" y="352" font-size="11" fill="#767676" text-anchor="middle">公有领域奉献</text>
+  <text x="400" y="330" font-size="14" fill="#1A1B1E" text-anchor="middle">订阅制</text>
+  <text x="400" y="352" font-size="12" fill="#1A1B1E" text-anchor="middle">$39/席位/月</text>
+  <text x="620" y="340" font-size="14" fill="#1A1B1E" text-anchor="middle">开源</text>
+  <text x="840" y="340" font-size="14" fill="#1A1B1E" text-anchor="middle">开源</text>
+  <text x="1060" y="340" font-size="14" fill="#1A1B1E" text-anchor="middle">mock 库</text>
+
+  <!-- 行 3：维护状态 -->
+  <rect x="80" y="408" width="200" height="60" fill="#009E73"/>
+  <rect x="300" y="408" width="200" height="60" fill="#999999"/>
+  <rect x="520" y="408" width="200" height="60" fill="#009E73"/>
+  <rect x="740" y="408" width="200" height="60" fill="#009E73"/>
+  <rect x="960" y="408" width="200" height="60" fill="#009E73"/>
+  <text x="180" y="444" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">活跃</text>
+  <text x="400" y="444" font-size="14" font-weight="bold" fill="#1A1B1E" text-anchor="middle">archived</text>
+  <text x="620" y="444" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">活跃 push</text>
+  <text x="840" y="444" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">活跃 push</text>
+  <text x="1060" y="444" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">活跃 push</text>
+
+  <!-- 状态色说明（先形状后颜色：绿=活跃，灰=停摆） -->
+  <g font-size="12" fill="#555">
+    <rect x="80" y="492" width="14" height="14" fill="#009E73"/>
+    <text x="102" y="504">活跃</text>
+    <rect x="164" y="492" width="14" height="14" fill="#999999"/>
+    <text x="186" y="504">archived 停摆</text>
+  </g>
+
+  <!-- 事件标注：官方发布日 -->
+  <text x="600" y="540" font-size="12" fill="#555" text-anchor="middle">官方仿真器 2026-11-11 公开发布，而老霸主在七个月前就已停摆</text>
+
+  <!-- 底注 -->
+  <text x="60" y="592" font-size="11" fill="#767676">官方仿真器≠赛道清场：有 GCP/Azure 多云需求的团队仍应把它们当现役选项</text>
+  <text x="60" y="614" font-size="11" fill="#767676">数据：GitHub API 实测 · LocalStack 定价页实测 · 归档原因官方未说明</text>
+</svg>

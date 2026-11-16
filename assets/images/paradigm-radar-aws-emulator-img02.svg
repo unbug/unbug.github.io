@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <text x="60" y="52" font-size="22" font-weight="700" fill="#1A1B1E">官方口径的智能体流水线：三种角色并行产出，所有变更汇入同一道 merge gate</text>
+
+  <!-- role boxes -->
+  <g font-size="15" text-anchor="middle">
+    <rect x="70" y="110" width="240" height="88" rx="6" fill="#0072B2"/>
+    <text x="190" y="146" fill="#FFFFFF" font-weight="700">测试队</text>
+    <text x="190" y="172" fill="#FFFFFF">把保真度测试铺满每个服务</text>
+
+    <rect x="70" y="250" width="240" height="88" rx="6" fill="#009E73"/>
+    <text x="190" y="286" fill="#FFFFFF" font-weight="700">找茬队</text>
+    <text x="190" y="312" fill="#FFFFFF">制造真实 API 的边界行为</text>
+
+    <rect x="70" y="390" width="240" height="88" rx="6" fill="#E69F00"/>
+    <text x="190" y="426" fill="#FFFFFF" font-weight="700">修复队</text>
+    <text x="190" y="452" fill="#FFFFFF">认领缺陷、提交补丁</text>
+  </g>
+
+  <!-- connector rails -->
+  <g fill="none" stroke="#1A1B1E" stroke-width="1.5">
+    <path d="M310 154 H370 V294"/>
+    <path d="M310 294 H370"/>
+    <path d="M310 434 H370 V294"/>
+    <path d="M370 294 H495" />
+  </g>
+  <g fill="#1A1B1E">
+    <polygon points="495,286 515,294 495,302"/>
+  </g>
+
+  <!-- merge gate -->
+  <rect x="520" y="200" width="280" height="188" rx="6" fill="#FFFFFF" stroke="#D55E00" stroke-width="2"/>
+  <text x="660" y="248" font-size="20" font-weight="700" fill="#D55E00" text-anchor="middle">merge gate</text>
+  <text x="660" y="284" font-size="14" fill="#1A1B1E" text-anchor="middle">多个安全 agent</text>
+  <text x="660" y="308" font-size="14" fill="#1A1B1E" text-anchor="middle">对抗评审</text>
+  <text x="660" y="344" font-size="13" fill="#1A1B1E" text-anchor="middle">三条队产出的所有变更</text>
+  <text x="660" y="364" font-size="13" fill="#1A1B1E" text-anchor="middle">最后都要过同一道闸门</text>
+
+  <!-- gate to release pipeline -->
+  <g fill="none" stroke="#1A1B1E" stroke-width="1.5">
+    <path d="M800 294 H875"/>
+  </g>
+  <polygon points="875,286 895,294 875,302" fill="#1A1B1E"/>
+  <rect x="900" y="254" width="170" height="80" rx="6" fill="#0072B2"/>
+  <text x="985" y="288" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">发布流水线</text>
+  <text x="985" y="312" font-size="13" fill="#FFFFFF" text-anchor="middle">发布流水</text>
+
+  <!-- release output -->
+  <g fill="none" stroke="#1A1B1E" stroke-width="1.5">
+    <path d="M985 334 V392"/>
+  </g>
+  <polygon points="977,392 985,412 993,392" fill="#1A1B1E"/>
+  <rect x="900" y="418" width="170" height="52" rx="6" fill="#FFFFFF" stroke="#1A1B1E" stroke-width="1.5"/>
+  <text x="985" y="450" font-size="16" font-weight="700" fill="#1A1B1E" text-anchor="middle">release</text>
+
+  <!-- side annotation -->
+  <g>
+    <rect x="70" y="500" width="1000" height="96" fill="none" stroke="#999999" stroke-width="0.75"/>
+    <text x="90" y="528" font-size="14" font-weight="700" fill="#1A1B1E">厂方自述</text>
+    <text x="90" y="556" font-size="13" fill="#555555">“hundreds of agents concurrently work”</text>
+    <text x="90" y="580" font-size="13" fill="#555555">“thousands of issues fixed every day”</text>
+    <text x="560" y="556" font-size="13" fill="#555555">闸门的存在理由（逐字）：</text>
+    <text x="560" y="580" font-size="13" fill="#555555">“agents now write code far faster than any team can check it in production”</text>
+  </g>
+
+  <text x="60" y="640" font-size="14" fill="#767676">按官方两帖描述拼装（厂方自述口径，无法外部复核）：没有人类写码，也没有人类审查，闸门是唯一的检查点。</text>
+</svg>

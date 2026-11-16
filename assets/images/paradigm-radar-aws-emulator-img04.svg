@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <text x="60" y="52" font-size="22" font-weight="700" fill="#1A1B1E">官方文档划出的三段信任边界：控制面可信，安全策略不可信</text>
+
+  <!-- spectrum band -->
+  <g>
+    <rect x="60" y="150" width="340" height="110" fill="#009E73"/>
+    <rect x="400" y="150" width="400" height="110" fill="#E69F00"/>
+    <rect x="800" y="150" width="340" height="110" fill="#D55E00"/>
+  </g>
+  <g font-size="20" font-weight="700" text-anchor="middle">
+    <text x="230" y="200" fill="#FFFFFF">控制面</text>
+    <text x="230" y="232" fill="#FFFFFF">高保真</text>
+    <text x="600" y="200" fill="#1A1B1E">数据面与 IaC</text>
+    <text x="600" y="232" fill="#1A1B1E">参差</text>
+    <text x="970" y="200" fill="#FFFFFF">安全策略</text>
+    <text x="970" y="232" fill="#FFFFFF">不可信</text>
+  </g>
+
+  <!-- direction arrow -->
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="60" y1="110" x2="1110" y2="110"/>
+  </g>
+  <polygon points="1110,104 1130,110 1110,116" fill="#1A1B1E"/>
+  <text x="60" y="96" font-size="14" fill="#1A1B1E">保真度信任光谱：官方文档逐服务边界，从左到右可信度递减</text>
+
+  <!-- per-segment details -->
+  <g font-size="14" fill="#1A1B1E">
+    <text x="60" y="300">建表、建桶、列资源</text>
+    <text x="60" y="326" fill="#555555">这类元数据操作最准</text>
+
+    <text x="400" y="300">CloudFormation / Terraform / CDK</text>
+    <text x="400" y="326" fill="#555555">官方自认参差</text>
+
+    <text x="800" y="300">IAM、资源策略、KMS 密钥策略、</text>
+    <text x="800" y="326">跨账号访问全部不测</text>
+  </g>
+
+  <!-- official verbatim quote under red segment -->
+  <g>
+    <rect x="800" y="356" width="340" height="132" fill="none" stroke="#D55E00" stroke-width="1.5"/>
+    <text x="816" y="384" font-size="13" font-weight="700" fill="#D55E00">官方安全页逐字原话</text>
+    <text x="816" y="412" font-size="13" fill="#1A1B1E">“A request that AWS denies</text>
+    <text x="816" y="434" font-size="13" fill="#1A1B1E">might succeed in the emulator.</text>
+    <text x="816" y="456" font-size="13" fill="#1A1B1E">A request that AWS allows</text>
+    <text x="816" y="478" font-size="13" fill="#1A1B1E">might fail.”</text>
+  </g>
+
+  <!-- mid-segment note -->
+  <g font-size="13" fill="#555555">
+    <text x="60" y="390">未实现的操作不假装成功，</text>
+    <text x="60" y="414">而是返回 HTTP 501 NotImplemented。</text>
+    <text x="60" y="450">保真度分数 = 通过数除以总数，</text>
+    <text x="60" y="474">文档页举例写作「40 of 50」这类形式。</text>
+  </g>
+
+  <!-- bottom conclusion -->
+  <text x="60" y="548" font-size="16" font-weight="700" fill="#1A1B1E">这意味着仿真器绝对不能用于安全策略测试：安全测试必须留在真实环境，这是官方写进文档的能力边界。</text>
+
+  <text x="60" y="612" font-size="14" fill="#767676">保真度测试在 us-west-2 对真实 AWS 验证（docs 页实测，系统自证级）· 分数随每个 release 发布 · 数字截至 2026-11-16。</text>
+</svg>

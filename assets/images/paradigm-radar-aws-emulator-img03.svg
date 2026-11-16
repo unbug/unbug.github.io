@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <text x="60" y="46" font-size="22" font-weight="700" fill="#1A1B1E">提交增速两段斜率：每天约 897 次到约 450 次；发布 8 天 30 个，老霸主已静默</text>
+
+  <!-- ===== panel a: commit growth line ===== -->
+  <text x="60" y="90" font-size="15" font-weight="700" fill="#1A1B1E">a</text>
+  <text x="84" y="90" font-size="15" font-weight="700" fill="#1A1B1E">提交总量增速（GitHub API 快照，截至 2026-11-16）</text>
+
+  <!-- gridlines -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="140" y1="340.0" x2="1120" y2="340.0"/>
+    <line x1="140" y1="273.3" x2="1120" y2="273.3"/>
+    <line x1="140" y1="206.7" x2="1120" y2="206.7"/>
+    <line x1="140" y1="140.0" x2="1120" y2="140.0"/>
+  </g>
+  <!-- axes -->
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="140" y1="120" x2="140" y2="340"/>
+    <line x1="140" y1="340" x2="1120" y2="340"/>
+  </g>
+  <!-- y ticks -->
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="134" y1="340" x2="140" y2="340"/>
+    <line x1="134" y1="273.3" x2="140" y2="273.3"/>
+    <line x1="134" y1="206.7" x2="140" y2="206.7"/>
+    <line x1="134" y1="140" x2="140" y2="140"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    
+    
+    
+    
+  </g>
+  <text x="28" y="235" font-size="14" fill="#1A1B1E" text-anchor="middle" transform="rotate(-90 28 235)">提交数（次）</text>
+  <!-- x ticks -->
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="200" y1="340" x2="200" y2="346"/>
+    <line x1="630" y1="340" x2="630" y2="346"/>
+    <line x1="1060" y1="340" x2="1060" y2="346"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <text x="200" y="364">10-27</text>
+    <text x="630" y="364">11-09</text>
+    <text x="1060" y="364">11-16</text>
+  </g>
+
+  <!-- data line -->
+  <polyline points="200,313.8 630,150.5 1060,96.2" fill="none" stroke="#0072B2" stroke-width="2.5"/>
+  <g fill="#0072B2">
+    <circle cx="200" cy="313.8" r="5"/>
+    <circle cx="630" cy="150.5" r="5"/>
+    <circle cx="1060" cy="96.2" r="5"/>
+  </g>
+  <g font-size="12" fill="#1A1B1E" text-anchor="middle">
+    <text x="200" y="296">16,919</text>
+    <text x="630" y="133">28,575</text>
+    <text x="1060" y="79">32,502</text>
+  </g>
+  <g font-size="12.5" fill="#0072B2">
+    <text x="310" y="252">约 897/天（13 天新增 11,656）</text>
+    <text x="740" y="150">约 450/天（5 天新增 2,262）</text>
+  </g>
+
+  <!-- ===== panel b: release pace + silent baseline ===== -->
+  <text x="60" y="424" font-size="15" font-weight="700" fill="#1A1B1E">b</text>
+  <text x="84" y="424" font-size="15" font-weight="700" fill="#1A1B1E">发布节奏：8 天 30 个 release，11-14 单日 9 个（releases 接口实测）</text>
+
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="140" y1="462" x2="700" y2="462"/>
+    <line x1="140" y1="515.3" x2="700" y2="515.3"/>
+  </g>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="140" y1="440" x2="140" y2="560"/>
+    <line x1="140" y1="560" x2="700" y2="560"/>
+  </g>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="134" y1="560" x2="140" y2="560"/>
+    <line x1="134" y1="515.3" x2="140" y2="515.3"/>
+    <line x1="134" y1="462" x2="140" y2="462"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="128" y="564">0</text>
+    <text x="128" y="519.3">5</text>
+    <text x="128" y="466">10</text>
+  </g>
+  <text x="36" y="505" font-size="14" fill="#1A1B1E" text-anchor="middle" transform="rotate(-90 36 505)">单日 release（个）</text>
+
+  <rect x="575" y="468.3" width="50" height="91.7" fill="#D55E00"/>
+  <text x="600" y="458" font-size="12" fill="#1A1B1E" text-anchor="middle">9</text>
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="600" y1="560" x2="600" y2="566"/>
+  </g>
+  <text x="600" y="584" font-size="12.5" fill="#1A1B1E" text-anchor="middle">11-14</text>
+
+  <text x="160" y="490" font-size="13" fill="#1A1B1E">8 天共 30 个 release：版本从 v1.0.250 推到 v1.0.385</text>
+  <text x="160" y="514" font-size="12.5" fill="#555555">版本号是自增构建计数器，250 到 385 的跨度不等于发布次数</text>
+  <text x="160" y="538" font-size="12.5" fill="#555555">正文仅给出 11-14 单日 9 个，其余每日数量未公布，故不逐日画柱</text>
+
+  <!-- silent baseline -->
+  <g>
+    <rect x="760" y="440" width="380" height="144" fill="none" stroke="#999999" stroke-width="0.75"/>
+    <text x="780" y="472" font-size="14" font-weight="700" fill="#1A1B1E">静默基线：LocalStack</text>
+    <line x1="780" y1="500" x2="1120" y2="500" stroke="#999999" stroke-width="1.5" stroke-dasharray="6 4"/>
+    <text x="780" y="528" font-size="12.5" fill="#555555">最后 push 2026-03-23</text>
+    <text x="780" y="552" font-size="12.5" fill="#555555">最后一个 release：2026-02-26</text>
+    <text x="780" y="574" font-size="12.5" fill="#555555">此后仓库被归档</text>
+  </g>
+
+  <text x="60" y="636" font-size="14" fill="#767676">数据：GitHub API 匿名实测（系统自证口径，截至 2026-11-16）· 三段快照为不同日期计数值，横轴未按日历等距。</text>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- 标题 -->
+  <text x="60" y="64" font-size="20" font-weight="bold" fill="#1A1B1E">公开的不完美进度条</text>
+
+  <!-- 结论行 -->
+  <text x="60" y="98" font-size="16" fill="#1A1B1E">两者约 1:2.26</text>
+
+  <!-- 纵向数值轴，0 在 y=540，32,502 在 y=160；条高按数值等比例：6,419→75px、14,500→170px，比例 1:2.26 与真实值一致 -->
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="120" y1="160" x2="120" y2="540"/>
+  </g>
+  <!-- 水平主网格：与刻度数字同位置 -->
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="120" y1="252" x2="1100" y2="252"/>
+    <line x1="120" y1="344" x2="1100" y2="344"/>
+    <line x1="120" y1="436" x2="1100" y2="436"/>
+  </g>
+  <!-- 刻度线（含数值刻度与两端） -->
+  <g stroke="#1A1B1E" stroke-width="0.75">
+    <line x1="116" y1="160" x2="120" y2="160"/>
+    <line x1="116" y1="252" x2="120" y2="252"/>
+    <line x1="116" y1="344" x2="120" y2="344"/>
+    <line x1="116" y1="436" x2="120" y2="436"/>
+    <line x1="116" y1="540" x2="120" y2="540"/>
+  </g>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+              </g>
+  <!-- 基线（x 轴） -->
+  <line x1="120" y1="540" x2="1100" y2="540" stroke="#1A1B1E" stroke-width="0.75"/>
+  <!-- 数值刻度标注：刻度数字均逐字可回查正文 -->
+
+  <!-- 左条：things-that-do-not-work，6,419 → y=465, 高 75 -->
+  <rect x="260" y="465" width="220" height="75" fill="#D55E00"/>
+  <text x="370" y="440" font-size="20" font-weight="bold" fill="#D55E00" text-anchor="middle">6,419</text>
+  <text x="370" y="566" font-size="14" fill="#1A1B1E" text-anchor="middle">things-that-do-not-work</text>
+  <text x="370" y="588" font-size="12" fill="#555" text-anchor="middle">仍不工作</text>
+
+  <!-- 右条：things-that-now-work，14,500 → y=370, 高 170 -->
+  <rect x="700" y="370" width="220" height="170" fill="#009E73"/>
+  <text x="810" y="345" font-size="20" font-weight="bold" fill="#009E73" text-anchor="middle">14,500</text>
+  <text x="810" y="566" font-size="14" fill="#1A1B1E" text-anchor="middle">things-that-now-work</text>
+  <text x="810" y="588" font-size="12" fill="#555" text-anchor="middle">已修复项</text>
+
+  <!-- 比例标注 -->
+  <text x="590" y="410" font-size="16" font-weight="bold" fill="#1A1B1E" text-anchor="middle">1:2.26</text>
+  <text x="590" y="434" font-size="12" fill="#555" text-anchor="middle">相当于一条公开的不完美进度条</text>
+
+  <!-- 底注与角注 -->
+  <text x="60" y="622" font-size="11" fill="#767676">先读 things-that-do-not-work 再决定信任边界 · 数据：aws/aws-emulator 仓库 issues 实测</text>
+  <text x="1140" y="652" font-size="11" fill="#767676" text-anchor="end">数字截至 2026-11-16</text>
+</svg>
