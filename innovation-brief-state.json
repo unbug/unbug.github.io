@@ -1,12 +1,12 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "n": 30,
-    "slug": "ai-innovation-brief-mandate-verification-gap",
-    "date": "2026-11-10",
-    "title": "智能体签发授权书热热闹闹，替双方验书的柜台还没开张"
+    "n": 31,
+    "slug": "innovation-brief-agent-toolcall-approval-patents",
+    "date": "2026-11-16",
+    "title": "智能体批准专利各占一角，统一批准网关仍空着"
   },
-  "totalPublished": 30,
+  "totalPublished": 31,
   "nextScheduled": "2026-11-17",
   "coveredPatentFamilies": [
     "AU2026906209A0",
@@ -137,7 +137,12 @@
     "US20260278303",
     "WO2026138159A1",
     "WO2026173611A1",
-    "WO2026173648A1"
+    "WO2026173648A1",
+    "US20260067335",
+    "WO2026154461",
+    "KR102982822",
+    "US12592823",
+    "US12683941"
   ],
   "candidateTopics": [
     {
