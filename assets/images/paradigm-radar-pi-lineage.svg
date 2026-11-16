@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+<rect width="1200" height="500" fill="#FFFFFF"/>
+<text x="600" y="50" text-anchor="middle" font-size="27" font-weight="700" fill="#1F2937">规划-执行分离：可核实的谱系时间线</text>
+<line x1="80" y1="250" x2="1120" y2="250" stroke="#1F2937" stroke-width="2.5"/>
+<g font-size="15">
+<circle cx="140" cy="250" r="7" fill="#1F2937"/>
+<text x="140" y="215" text-anchor="middle" font-weight="700" fill="#1F2937">2022-10</text>
+<text x="140" y="290" text-anchor="middle" fill="#374151">ReAct</text>
+<text x="140" y="312" text-anchor="middle" fill="#6B7280">arXiv 2210.03629</text>
+<text x="140" y="332" text-anchor="middle" fill="#6B7280">一步一想</text>
+<circle cx="330" cy="250" r="7" fill="#1F2937"/>
+<text x="330" y="215" text-anchor="middle" font-weight="700" fill="#1F2937">2023-05</text>
+<text x="330" y="290" text-anchor="middle" fill="#374151">Plan-and-Solve</text>
+<text x="330" y="312" text-anchor="middle" fill="#6B7280">arXiv 2305.04091</text>
+<text x="330" y="332" text-anchor="middle" fill="#6B7280">提示层先列骨架</text>
+<circle cx="520" cy="250" r="7" fill="#1F2937"/>
+<text x="520" y="215" text-anchor="middle" font-weight="700" fill="#1F2937">2023-10</text>
+<text x="520" y="290" text-anchor="middle" fill="#374151">LATS 树搜索</text>
+<text x="520" y="312" text-anchor="middle" fill="#6B7280">arXiv 2310.04406</text>
+<text x="520" y="332" text-anchor="middle" fill="#6B7280">回溯换恢复</text>
+<circle cx="730" cy="250" r="7" fill="#C0392B"/>
+<text x="730" y="215" text-anchor="middle" font-weight="700" fill="#C0392B">2024-12</text>
+<text x="730" y="290" text-anchor="middle" fill="#374151">Building Effective Agents</text>
+<text x="730" y="312" text-anchor="middle" fill="#6B7280">workflow 与 agent 分类</text>
+<text x="730" y="332" text-anchor="middle" fill="#6B7280">orchestrator-workers</text>
+<circle cx="920" cy="250" r="7" fill="#1F2937"/>
+<text x="920" y="215" text-anchor="middle" font-weight="700" fill="#1F2937">2025-03</text>
+<text x="920" y="290" text-anchor="middle" fill="#374151">Agents SDK 创建</text>
+<text x="920" y="312" text-anchor="middle" fill="#6B7280">handoff 成为原语</text>
+<text x="920" y="332" text-anchor="middle" fill="#6B7280">swarm 停更标本</text>
+<circle cx="1080" cy="250" r="7" fill="#1F2937"/>
+<text x="1080" y="215" text-anchor="middle" font-weight="700" fill="#1F2937">2026-07</text>
+<text x="1080" y="290" text-anchor="middle" fill="#374151">CodeAct 发布</text>
+<text x="1080" y="312" text-anchor="middle" fill="#6B7280">程序即计划</text>
+<text x="1080" y="332" text-anchor="middle" fill="#6B7280">微VM 批量执行</text>
+</g>
+<rect x="200" y="395" width="800" height="62" rx="10" fill="#F9FAFB" stroke="#D1D5DB" stroke-width="1.5"/>
+<text x="600" y="422" text-anchor="middle" font-size="16" fill="#374151">四个月的论文迭代（ReAct → P&amp;S → LATS）解决「怎么想」，</text>
+<text x="600" y="446" text-anchor="middle" font-size="16" fill="#374151">随后的厂商文档把「先规划」变成图结构默认件——思想赢的方式是溶解</text>
+</svg>

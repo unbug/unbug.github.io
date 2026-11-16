@@ -12,7 +12,9 @@ description: "四周窗口里，Docker把权限清单封进OCI镜像交CNCF，Ok
 
 `2026-09-16`，Docker 建仓 `sandbox-kit-spec`（`150` 星、`21` 个 fork，`2026-10-15` 实测），`09-24` 在 WeAreDevelopers 主题演讲宣布把这份规范以 Apache `2.0` 协议交给 CNCF，核心是一个 OCI 原生工件——把 agent、它的工具、以及一份「类型化的可触达资源清单（主机 / 凭据 / 卷）」封进同一个镜像；同期 Okta 产品页把 `AI Agent Identities` 升格为与员工、客户并列的独立类目（产品页实测 `2026-10-15`）；`10-13`，据 TechCrunch 报道（HN 转载），美国运通发布防 Agent 越权购买的授权框架；IETF 的 Agent 认证与授权草案也在同一条线上推进。范式表述：**Agent 权限的载体之争开始了——权限正从一条运行时配置，迁移为随制品一起被 pull、diff、sign、scan 的声明；但载体本身（镜像、身份目录、支付授权协议、IETF 草案）正被多方争夺，胜负未分。**
 
-![四个主体把权限写进四种载体]({{ site.baseurl }}/assets/images/paradigm-radar-permission-artifact-cover.svg )
+口径先钉死：首采为 `2026-10-15` 实测（GitHub API / Algolia API / 产品页快照）；`2026-11-16` 复测——sandbox-kit-spec `150`→`195` 星（fork `35`），里程碑从 `m.8` 走到 `m.12`（`m.9`、`m.11` 发布于 `10-27`，`m.12` 发布于 `11-05`；`10-15` 之后仓库累计 `182` 条提交，仍未见 RC 标签）；docker-agent `4,497`→`4,688` 星；规范主帖停在 `7` 分、全树 `0` 条评论纹丝不动；Docker Agent 主帖 `306` 分 / 全树 `144` 条；Agent37 `160`→`163` 分 / 全树 `135` 条；CNCF 是否正式接收孵化，复测检索未见公开信号，维持待查。Amex 框架细节一律保留「据 TechCrunch 报道」限定；事故金额、看门狗芯片功能保留原报道口径。
+
+![四个主体把权限写进四种载体]({{ site.baseurl }}/assets/images/paradigm-radar-permission-artifact-cover.svg)
 
 ## 从镜像到身份目录的四周时间线
 
@@ -26,15 +28,19 @@ description: "四周窗口里，Docker把权限清单封进OCI镜像交CNCF，Ok
 
 这层设计直指本站此前的[《隔离质量等于攻击面质量》]({{ site.baseurl }}/paradigm-radar-vm-containment/)记录的失效结论：`2026-08-26` Trail of Bits 报告前沿 Agent `3` 次击穿未加固的通用 QEMU/KVM 虚拟机，边界不可信。那一期停在「哪种沙箱更硬」，Docker 这次的回答是换个问题——不争隔离强度，而是把「这个 agent 请求哪些 host / credential / volume」写进镜像扩展点，让隔离的意图变成可 pull、可 diff、可 sign/scan 的工件。官方原文的说法是：同事能 pull 它、评审者能 diff 它、合规运行时能执行它，新版本要更多权限时，变化会以新增行出现，有人可以拒绝。一期讲「VM 拦不住」，本期讲「官方重写沙箱规范：把权限清单塞进镜像」，是接力而非重复。
 
-![从拉取镜像到diff新增权限行]({{ site.baseurl }}/assets/images/paradigm-radar-permission-artifact-image-carrier.svg )
+![从拉取镜像到diff新增权限行]({{ site.baseurl }}/assets/images/paradigm-radar-permission-artifact-image-carrier.svg)
+
+## 复测里程碑：规范在交付，社区没围观
+
+`11-16` 的复测读数把这期的冷热分裂刻得更深。工程侧：规范五周新增 `182` 条提交，里程碑从 `m.8` 连跳四级到 `m.12`——`10-27` 一天发 `m.9` 与 `m.11`（发布顺序本身都在乱跳，语义未冻结的直白证据）、`11-05` 发 `m.12`，尚无 RC；仓库星数 `150`→`195`，涨的是星标收藏不是讨论。社区侧：规范主帖 `7` 分、`0` 条评论——发布七周后连反对的人都还没出现；linux.com 的跟进镜像帖也停在 `6` 分。开发者注意力去了哪？去了 `306` 分的 Docker Agent 产品帖。那 `144` 条讨论里没有一个字谈权限规范：gregwebs（评论 `49998393`）忙着给围观者科普架构——「Docker Agent 是个 harness，沙箱模式跑的是 VM 不是容器」，顺带把本刊[《隔离质量等于攻击面质量》]({{ site.baseurl }}/paradigm-radar-vm-containment/)的结论再确认一遍：连 Docker 自己给 agent 兜底的方案也是 VM 而非容器；tamimio（`49997052`）抓到 README 的「What it is, what it isn't」一节疑似模型代笔；CBLT（`49998459`）报生产缺陷（codex 单轮超过一万字符直接弄断会话）；reactordev（`49999931`）一句「所有人都在造同一个东西」是本帖的情绪底色。规范侧的交付节奏与社区侧的零回应同框，恰好是「基础设施在铺、共识未形成」的教科书形态——但也提醒读者：`7` 分帖 + `182` 提交的组合，既可能走向 OCI 时刻，也可能只是又一个躺在 CNCF 待办区里的规范仓库，两种未来此刻还无法区分。
 
 ## Okta、Amex 与 IETF 的竞争性载体
 
-镜像只是其中一个候选载体。据 Okta 产品页实测（`2026-10-15`），其导航里 `AI Agent Identities` 与 `Non-Human Identities` 已作为独立 solution 类目出现，产品条目 `Okta for AI Agents`、`AI Identity for B2B`、`AI Identity for Commerce`、`Cross App Access Protocol` 四项齐带 New 标记——Agent 在身份目录里被升格为与员工、客户并列的第三类身份，权限清单住在身份平台上，而不是镜像里。值得注意的是，Okta 自己的产品线里同时有 `Cross App Access Protocol`，与 Docker 的 Kit、Amex 的框架构成三个互不兼容的载体方案。
+镜像只是其中一个候选载体。据 Okta 产品页实测（`2026-10-15`），其导航里 `AI Agent Identities` 与 `Non-Human Identities` 已作为独立 solution 类目出现，产品条目 `Okta for AI Agents`、`AI Identity for B2B`、`AI Identity for Commerce`、`Cross App Access Protocol` 四项齐带 New 标记——Agent 在身份目录里被升格为与员工、客户并列的第三类身份，权限清单住在身份平台上，而不是镜像里。值得注意的是，Okta 自己的产品线里同时有 `Cross App Access Protocol`，与 Docker 的 Kit、Amex 的框架构成三个互不兼容的载体方案——身份巨头连「协议」也要自己出一版，载体之争没有留给中立层多少空间。
 
 支付侧在同一周入场。据 TechCrunch 报道（HN `50080363` 转载，`10-13`），美国运通发布了防止 AI Agent 越权购买的授权框架——支付巨头开始定义「agent 能花谁的钱、花多少」的授权边界。这条线与「被 Agent 选中等于新分发渠道」是同一现象的两面，但视角相反：那期讲需求侧谁被买到，本期讲供给侧谁有权发起购买。最慢的一路是 IETF：`AI Agent Authentication and Authorization` 草案 `2026-03-05` 与 `2026-07-30` 两次上 HN，分别只有 `2` 分、`4` 分（HN `49113120`，`2026-07-30` 帖）；语言层同样各造各的，AWS 的授权策略语言 Cedar 仓库 `1,784` 星、`2026-10-14` 仍在提交。载体之争的实质是：权限清单归镜像仓库、身份平台、支付网络还是标准组织托管，四家都在抢。
 
-![竞争载体与冷热分裂]({{ site.baseurl }}/assets/images/paradigm-radar-permission-artifact-carriers-heat.svg )
+![竞争载体与冷热分裂]({{ site.baseurl }}/assets/images/paradigm-radar-permission-artifact-carriers-heat.svg)
 
 ## 反方：声明不等于运行时约束
 
@@ -42,11 +48,15 @@ description: "四周窗口里，Docker把权限清单封进OCI镜像交CNCF，Ok
 
 更根本的反方：权限声明放进制品，与运行时权限判定是两回事。HN `49893709`（`164` 分，`09-29`）标题本身就是立场——Agent 无视用户权限照做；同轴的 Codex 未授权消费 `7.8` 万美元（HN `49861047`，`84` 分）证明，事故恰恰发生在「已被授予的合法范围」之内。类型化的主机、凭据、卷清单能声明「不该做什么」，对越权行为本身没有约束力，静态声明与运行时行为之间的缺口仍然存在。此外碎片化有可实测证据：Amex 专有框架、IETF 草案、Okta 的 Cross App Access Protocol 同周并存；术语层也还在吵架，「Authorization terminology is a mess」（HN `49522367`，`121` 分，`2026-09-01`）连 authentication、authorization、permission 三个词的边界都还没争出共识。这是第 N 轮 Agent 权限标准尝试，历史同类协议多死在碎片化阶段；称某一家已经胜出，都能被评论区证伪。
 
+## 反方的反方：「没有解法」论与沙箱白菜化
+
+权限载体之争还有个更冷血的对手：「当前根本没有解法」论。Nvidia 看门狗芯片帖（HN `49879883`，`230` 分、全树 `298` 条）是这一派的集中展演。cedws（评论 `49880271`，子树 `108` 条，全帖最高）开门见山：「新芯片解决不了任何问题——没人想听，但 agent 的安全风险今天就没有解法：你把它关进沙箱也没区别，只要它还在替你做决策，决策本身就是攻击面」；nicce（`49880538`，子树 `15` 条）把 human-in-the-loop 的两难说穿——「放人进回路就把产出压没了，而 auto 批准模式骗起来轻而易举」；wavewrangler（`49889345`，子树 `30` 条）讥讽「先试试老老实实做沙箱和防火墙呢？问题甚至不在 AI，在把配置权交给赶进度的人」；KingOfCoders（`49889403`）拿 Hugging Face 被黑案类比：铺一面临攻击面很大的不安全应用、授权 AI「不惜一切完成清单」，AI 打穿 insecure 服务再荡出去——事故的模板根本不需要逃逸。但同帖 mixedbit（`49880555`，子树 `13` 条）递上了与本期最相关的一条：「agent 不需要宽权限也有用——最流行的用例是写代码，它要的只是源码目录写权限加读写执行」——权限最小化在原则上早被社区想明白，缺的正是让「清单」可分发、可 diff、可拒绝的载体，这等于替声明层写了需求说明书。沙箱供给侧则在做白菜化实证：Launch HN: Agent37（HN `50059096`，复测 `163` 分 / 全树 `135` 条）的低成本沙箱线程里，MikhailTal（`50060717`，子树 `8` 条）直言「沙箱看起来已经商品化，2026 年给 VM 套几层 agent 友好特性做不到 10 倍差异化，新玩家纯拼价格不是好生意」；bitlad（`50059903`，子树 `11` 条）发现同一 YC 批次至少两家做同一件事；risyachka（`50060216`）补刀「反正 AI 能随手 vibe code 出这类基础设施，注定 race to the bottom」。而 ekorondy（`50071898`，子树 `11` 条）给出了最准的一刀：「大家在比价的宿主隔离根本不是难题，真正伤人的 agent 事故大多不是沙箱逃逸」——不是逃逸，是越权，是范围内滥用。隔离层商品化 + 事故主因是权限而非逃逸，两条并读，正是权限声明层即将接棒的证据：竞争正从「沙箱多硬」上移到「声明多准、谁来执行」。
+
 ## 边界与观察点
 
 问题域要划清三条。其一，与「一份技能文件写一次」的技能标准是两条线——那份文件声明能力，这份工件声明权限。其二，与 Agent 作为集群负载的调度层正交——调度管这个负载放在哪、花多少成本，权限载体管它被声明允许做什么，交集只在同一批沙箱供应商。其三，本期不涉及模型层叙事，权限之争与模型选型无关。
 
-观察信号：sandbox-kit-spec 里程碑节奏是否延续、能否从 `m.8` 走到 RC（基线：`2026-10-15` 为 `150` 星）；CNCF 是否正式接收进入孵化流程；规范主帖热度能否从 `7` 分回升，以及 Okta 产品页的四个 New 标记会不会落成可核验的正式发布。如果正在构建 Agent：值得现在就把「这个 agent 请求哪些 host / credential / volume」写成一份能提交进版本库的显式清单，无论它最终住在镜像、身份目录还是支付授权协议里——载体之争谁赢，这份清单都是通货。
+观察信号：sandbox-kit-spec 里程碑节奏是否延续、能否从 `m.12` 走到 RC（基线：`2026-11-16` 为 `195` 星、五周 `182` 提交）；CNCF 是否正式接收进入孵化流程；规范主帖热度能否从 `7` 分回升（复测仍为零评论，此信号前哨未启动），以及 Okta 产品页的四个 New 标记会不会落成可核验的正式发布。如果正在构建 Agent：值得现在就把「这个 agent 请求哪些 host / credential / volume」写成一份能提交进版本库的显式清单，无论它最终住在镜像、身份目录还是支付授权协议里——载体之争谁赢，这份清单都是通货。
 
 ## References
 - [Docker 官方博客：Sandbox Kit Spec 交 CNCF][links-1]
@@ -62,6 +72,7 @@ description: "四周窗口里，Docker把权限清单封进OCI镜像交CNCF，Ok
 - [HN：授权术语混乱讨论][links-11]
 - [Infisical Agent Vault 帖][links-12]
 - [AWS Cedar 策略语言仓库][links-13]
+- [Launch HN: Agent37][links-14]
 
 
 [links-1]: https://www.docker.com/blog/docker-sandbox-kit-spec-cncf/
@@ -77,3 +88,4 @@ description: "四周窗口里，Docker把权限清单封进OCI镜像交CNCF，Ok
 [links-11]: https://news.ycombinator.com/item?id=49522367
 [links-12]: https://news.ycombinator.com/item?id=50009140
 [links-13]: https://github.com/cedar-policy/cedar
+[links-14]: https://news.ycombinator.com/item?id=50059096

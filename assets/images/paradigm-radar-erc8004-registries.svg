@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 470" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+<rect width="1200" height="470" fill="#FFFFFF"/>
+<text x="600" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#1F2937">ERC-8004 三注册表与实证读数</text>
+<rect x="70" y="90" width="330" height="140" rx="12" fill="#EAF2FB" stroke="#2F6FB2" stroke-width="2"/>
+<text x="235" y="124" text-anchor="middle" font-size="16" font-weight="700" fill="#1E3A5F">Identity Registry</text>
+<text x="235" y="152" text-anchor="middle" font-size="14" fill="#374151">agent 身份注册</text>
+<text x="235" y="184" text-anchor="middle" font-size="15" font-weight="700" fill="#C0392B">有效注册率仅 3%–15%</text>
+<text x="235" y="210" text-anchor="middle" font-size="12" fill="#6B7280">纸面注册 ≫ 实际可用</text>
+<rect x="435" y="90" width="330" height="140" rx="12" fill="#FDF6E3" stroke="#D1A400" stroke-width="2"/>
+<text x="600" y="124" text-anchor="middle" font-size="16" font-weight="700" fill="#713F12">Reputation Registry</text>
+<text x="600" y="152" text-anchor="middle" font-size="14" fill="#374151">评审反馈沉淀声誉</text>
+<text x="600" y="184" text-anchor="middle" font-size="15" font-weight="700" fill="#C0392B">评分跨域不可通约</text>
+<text x="600" y="210" text-anchor="middle" font-size="12" fill="#6B7280">反馈污染无从过滤</text>
+<rect x="800" y="90" width="330" height="140" rx="12" fill="#EAF6EF" stroke="#166534" stroke-width="2"/>
+<text x="965" y="124" text-anchor="middle" font-size="16" font-weight="700" fill="#14532D">Validation Registry</text>
+<text x="965" y="152" text-anchor="middle" font-size="14" fill="#374151">验证者网络</text>
+<text x="965" y="184" text-anchor="middle" font-size="15" font-weight="700" fill="#C0392B">Sybil 占评审者 60%–91%</text>
+<text x="965" y="210" text-anchor="middle" font-size="12" fill="#6B7280">无许可 = 女巫成本为零</text>
+<rect x="200" y="280" width="800" height="120" rx="10" fill="#F9FAFB" stroke="#D1D5DB" stroke-width="1.5"/>
+<text x="600" y="316" text-anchor="middle" font-size="16" font-weight="700" fill="#7F1D1D">悖论核心</text>
+<text x="600" y="346" text-anchor="middle" font-size="14" fill="#374151">设计承诺：无许可开放 → 无需信任第三方</text>
+<text x="600" y="374" text-anchor="middle" font-size="14" fill="#374151">实测后果：无许可 → 女巫免费 → 声誉信号被噪声淹没</text>
+<text x="600" y="444" text-anchor="middle" font-size="14" fill="#6B7280">反方也记录在案：协议尚年轻——但年轻不能解释 Sybil 比例的结构性成因</text></svg>

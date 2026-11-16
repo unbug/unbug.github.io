@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 470" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+<rect width="1200" height="470" fill="#FFFFFF"/>
+<text x="600" y="42" text-anchor="middle" font-size="26" font-weight="700" fill="#1F2937">CodeAct：一次推理产出程序，一个沙箱批量执行</text>
+<defs><marker id="cf" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1F2937"/></marker></defs>
+<rect x="80" y="90" width="220" height="86" rx="10" fill="#EAF2FB" stroke="#2F6FB2" stroke-width="2"/>
+<text x="190" y="124" text-anchor="middle" font-size="15" font-weight="700" fill="#1E3A5F">模型生成程序</text>
+<text x="190" y="154" text-anchor="middle" font-size="13" fill="#374151">多步操作写进一段代码</text>
+<rect x="400" y="90" width="380" height="86" rx="10" fill="#EAF6EF" stroke="#166534" stroke-width="2"/>
+<text x="590" y="118" text-anchor="middle" font-size="15" font-weight="700" fill="#14532D">Hyperlight micro-VM 内执行</text>
+<text x="590" y="146" text-anchor="middle" font-size="13" fill="#374151">call_tool 白名单 · 默认断网 · 目录隔离 · 超时上限</text>
+<rect x="880" y="90" width="240" height="86" rx="10" fill="#FDF6E3" stroke="#D1A400" stroke-width="2"/>
+<text x="1000" y="124" text-anchor="middle" font-size="15" font-weight="700" fill="#713F12">聚合结果返回</text>
+<text x="1000" y="154" text-anchor="middle" font-size="13" fill="#374151">批量观察，一次回传</text>
+<line x1="302" y1="133" x2="398" y2="133" stroke="#1F2937" stroke-width="2.2" marker-end="url(#cf)"/>
+<line x1="782" y1="133" x2="878" y2="133" stroke="#1F2937" stroke-width="2.2" marker-end="url(#cf)"/>
+<path d="M1000,178 Q 1000,240 600,240 Q 200,240 190,182" fill="none" stroke="#C0392B" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#cf)"/>
+<text x="600" y="262" text-anchor="middle" font-size="13" fill="#C0392B">需要修正时：模型基于聚合结果生成修订程序——回合数仍按「轮」计，不按「步」计</text>
+<rect x="150" y="296" width="900" height="104" rx="10" fill="#F9FAFB" stroke="#D1D5DB" stroke-width="1.5"/>
+<text x="600" y="328" text-anchor="middle" font-size="15" font-weight="700" fill="#1F2937">与原语的关系</text>
+<text x="600" y="358" text-anchor="middle" font-size="14" fill="#374151">工具原语不变（仍是 tools/call 语义），变的是调用方：从「模型逐轮决定」变成「程序批量执行」</text>
+<text x="600" y="384" text-anchor="middle" font-size="13" fill="#6B7280">隔离环境启动 &lt;10ms，比一次推理还快——「一步一沙箱」从奢侈变成默认</text>
+<text x="600" y="440" text-anchor="middle" font-size="14" fill="#6B7280">收益公式：延迟与 Token ≈ 回合数 × 每回合成本——把回合数打下来，两个成本一起下来</text></svg>

@@ -30,6 +30,9 @@ SeeRepo 团队在 SWE-bench Verified（500 个 Python 项目实例）上做了�
 
 ## SeeRepo 框架：从 AST 到可视化的完整管线
 
+![SeeRepo 管线与三模式对照]({{ site.baseurl }}/assets/images/paradigm-radar-seerepo-pipeline.svg)
+
+
 SeeRepo 的核心贡献在于提出了一套完整的仓库结构可视化管线，将代码仓库的抽象语法树（AST）转换为多关系依赖图。具体流程如下：
 
 **第一步：静态分析构建依赖图。** 通过解析每个文件的 AST，提取四种核心关系——包含关系（文件在目录中的层级）、导入关系（import/require 语句）、调用关系（函数调用链）和继承关系（类继承树）。这些关系构成了仓库的拓扑骨架。
@@ -188,6 +191,8 @@ SeeRepo 揭示了一个被长期忽视的 Agent 设计维度：**代码仓库的
 2. 将现有的纯文本文件读取流程改造为"文本定位 + 视觉理解"的两阶段模式
 3. 在故障定位任务上对比混合模式与纯文本模式的性能差异，量化 SeeRepo 的实际收益
 4. 关注多模态模型在结构化图表解析上的能力演进——这可能是下一个 Agent 输入表示的突破点
+
+编码代理的动作接口有代码化路线（见[《CodeAct：Agent执行范式转移》]({{ site.baseurl }}/paradigm-radar-codeact-agent-execution/)），本篇补的是它的感知接口。
 
 ## References
 

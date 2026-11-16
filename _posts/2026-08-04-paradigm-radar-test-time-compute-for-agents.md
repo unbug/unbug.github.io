@@ -299,6 +299,8 @@ Test-Time Compute for Agents 代表了 AI 智能体从"固定预算的线性执�
 3. 加入失败模式检测机制——特别是"高置信度短路径"信号，这是 arXiv:2607.28573 揭示的最常见危险模式
 4. 关注 MCP 协议和主流 Agent 框架的预算调度功能更新，等待标准化方案成熟后迁移
 
+预算分配的姊妹问题是验证取舍：钱花在多验一步还是多想一轮，见[《选择性验证还是延长预算》]({{ site.baseurl }}/paradigm-radar-sevra-selective-verification/)。
+
 ## References
 
 - [Tree of Thoughts: Deliberate Problem Solving with Large Language Models][links-1] (Yao et al., 2023)

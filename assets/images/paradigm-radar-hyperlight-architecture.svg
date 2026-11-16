@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 470" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+<rect width="1200" height="470" fill="#FFFFFF"/>
+<text x="600" y="42" text-anchor="middle" font-size="26" font-weight="700" fill="#1F2937">三代隔离栈：从容器到用户态库级 micro-VM</text>
+<rect x="70" y="86" width="330" height="230" rx="12" fill="#F3F4F6" stroke="#1F2937" stroke-width="2"/>
+<text x="235" y="116" text-anchor="middle" font-size="15" font-weight="700" fill="#1F2937">Docker 容器</text>
+<rect x="110" y="132" width="250" height="34" rx="5" fill="#D1D5DB"/><text x="235" y="154" text-anchor="middle" font-size="12" fill="#111827">宿主 OS</text>
+<rect x="110" y="172" width="250" height="34" rx="5" fill="#9CA3AF"/><text x="235" y="194" text-anchor="middle" font-size="12" fill="#111827">容器运行时</text>
+<rect x="110" y="212" width="250" height="34" rx="5" fill="#E5E7EB"/><text x="235" y="234" text-anchor="middle" font-size="12" fill="#374151">进程</text>
+<text x="235" y="278" text-anchor="middle" font-size="13" fill="#6B7280">~2s · ~50MB+ · 进程级</text>
+<rect x="435" y="86" width="330" height="230" rx="12" fill="#FDF6E3" stroke="#D1A400" stroke-width="2"/>
+<text x="600" y="116" text-anchor="middle" font-size="15" font-weight="700" fill="#713F12">Firecracker micro-VM</text>
+<rect x="475" y="132" width="250" height="34" rx="5" fill="#FDE68A"/><text x="600" y="154" text-anchor="middle" font-size="12" fill="#713F12">宿主 OS</text>
+<rect x="475" y="172" width="250" height="34" rx="5" fill="#FCD34D"/><text x="600" y="194" text-anchor="middle" font-size="12" fill="#713F12">Hypervisor + Guest OS</text>
+<rect x="475" y="212" width="250" height="34" rx="5" fill="#FEF3C7"/><text x="600" y="234" text-anchor="middle" font-size="12" fill="#92400E">工作负载</text>
+<text x="600" y="278" text-anchor="middle" font-size="13" fill="#92400E">~125ms · ~5MB · 内核级</text>
+<rect x="800" y="86" width="330" height="230" rx="12" fill="#EAF6EF" stroke="#166534" stroke-width="2"/>
+<text x="965" y="116" text-anchor="middle" font-size="15" font-weight="700" fill="#14532D">Hyperlight micro-VM</text>
+<rect x="840" y="132" width="250" height="34" rx="5" fill="#BBF7D0"/><text x="965" y="154" text-anchor="middle" font-size="12" fill="#14532D">宿主 OS</text>
+<rect x="840" y="172" width="250" height="34" rx="5" fill="#86EFAC"/><text x="965" y="194" text-anchor="middle" font-size="12" fill="#14532D">Hyperlight Runtime（库）</text>
+<rect x="840" y="212" width="250" height="34" rx="5" fill="#DCFCE7"/><text x="965" y="234" text-anchor="middle" font-size="12" fill="#166534">隔离执行环境</text>
+<text x="965" y="278" text-anchor="middle" font-size="13" font-weight="700" fill="#166534">&lt;10ms · ~1MB · 用户态库级</text>
+<text x="600" y="372" text-anchor="middle" font-size="14" fill="#374151">取舍迁移：长期服务留给容器、无服务器计算给 Firecracker、单次工具调用给 Hyperlight</text>
+<text x="600" y="410" text-anchor="middle" font-size="14" fill="#6B7280">它不是完整虚拟机，是执行隔离库——栈层少了，为「每任务一环境」扫清成本障碍</text></svg>

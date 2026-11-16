@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 470" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+<rect width="1200" height="470" fill="#FFFFFF"/>
+<text x="600" y="42" text-anchor="middle" font-size="26" font-weight="700" fill="#1F2937">ReAct 的延迟与成本按回合累积</text>
+<defs><marker id="rl" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1F2937"/></marker></defs>
+<rect x="60" y="86" width="120" height="52" rx="8" fill="#F3F4F6" stroke="#1F2937" stroke-width="1.6"/>
+<text x="120" y="118" text-anchor="middle" font-size="13" fill="#374151">用户请求</text>
+<rect x="230" y="86" width="150" height="52" rx="8" fill="#EAF2FB" stroke="#2F6FB2" stroke-width="2"/>
+<text x="305" y="108" text-anchor="middle" font-size="13" fill="#1E3A5F">推理1·选择搜索</text>
+<text x="305" y="128" text-anchor="middle" font-size="12" fill="#6B7280">500ms–2s</text>
+<rect x="430" y="86" width="150" height="52" rx="8" fill="#EAF2FB" stroke="#2F6FB2" stroke-width="2"/>
+<text x="505" y="108" text-anchor="middle" font-size="13" fill="#1E3A5F">推理2·解析结果</text>
+<text x="505" y="128" text-anchor="middle" font-size="12" fill="#6B7280">全量上下文重传</text>
+<rect x="630" y="86" width="150" height="52" rx="8" fill="#FDF6E3" stroke="#D1A400" stroke-width="2"/>
+<text x="705" y="108" text-anchor="middle" font-size="13" fill="#713F12">推理3·下载+分析</text>
+<rect x="830" y="86" width="150" height="52" rx="8" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+<text x="905" y="108" text-anchor="middle" font-size="13" fill="#7F1D1D">推理4·写入文档</text>
+<rect x="1030" y="86" width="120" height="52" rx="8" fill="#F3F4F6" stroke="#1F2937" stroke-width="1.6"/>
+<text x="1090" y="118" text-anchor="middle" font-size="13" fill="#374151">最终结果</text>
+<line x1="182" y1="112" x2="228" y2="112" stroke="#1F2937" stroke-width="2" marker-end="url(#rl)"/>
+<line x1="382" y1="112" x2="428" y2="112" stroke="#1F2937" stroke-width="2" marker-end="url(#rl)"/>
+<line x1="582" y1="112" x2="628" y2="112" stroke="#1F2937" stroke-width="2" marker-end="url(#rl)"/>
+<line x1="782" y1="112" x2="828" y2="112" stroke="#1F2937" stroke-width="2" marker-end="url(#rl)"/>
+<line x1="982" y1="112" x2="1028" y2="112" stroke="#1F2937" stroke-width="2" marker-end="url(#rl)"/>
+<rect x="120" y="190" width="960" height="130" rx="10" fill="#F9FAFB" stroke="#D1D5DB" stroke-width="1.5"/>
+<text x="600" y="222" text-anchor="middle" font-size="16" font-weight="700" fill="#7F1D1D">每回合的三个成本层</text>
+<text x="600" y="252" text-anchor="middle" font-size="14" fill="#374151">延迟：生成 + 网络往返 ×回合数 ｜ Token：完整历史随每轮重传 ｜ 状态管理：错误恢复/超时逻辑逐轮叠加</text>
+<text x="600" y="284" text-anchor="middle" font-size="14" fill="#C0392B">4 步 → 20 步时不是线性增长：每一步的错误都会污染后续所有步骤的上下文</text>
+<text x="600" y="400" text-anchor="middle" font-size="14" fill="#6B7280">瓶颈结论：Agent 性能问题常在编排架构而不在模型能力——减少回合数，是后面所有设计的出发点</text></svg>

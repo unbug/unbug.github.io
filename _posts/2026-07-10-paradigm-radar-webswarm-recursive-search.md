@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-webswarm-recursive-search.svg
 tags: [multi-agent, web-search, agent-orchestration, recursive-delegation, agentic-reasoning]
-description: "论文提出渐进式递归委派的多Agent搜索框架WebSwarm，在四个深度广度基准上全面超越单Agent与并行多Agent基线方法。"
+description: "论文提出渐进式递归委派的多智能体搜索框架WebSwarm，让协调者按需把子任务动态派给专家子智能体，在四个深度与广度基准上超越单智能体与静态并行多智能体基线。"
 ---
 
 上周阿里巴巴达摩院发布了 WebSwarm——一个渐进式递归多Agent搜索框架。
@@ -247,6 +247,8 @@ WebSwarm 提出了一种有吸引力的范式转移：从扁平并行的多 Agen
 - **自适应递归深度控制。** 如果系统能够根据任务特征动态调整搜索树的生长策略，而不是依赖人工设定的阈值，WebSwarm 的工程落地门槛将大幅降低——这将使递归多 Agent 搜索从研究原型走向生产可用。
 - **混合搜索架构的成熟。** 当 WebSwarm 式的递归委派框架与知识图谱、数据库查询等结构化数据源深度融合时，复杂研究任务的自动化水平可能迎来质的飞跃——关注这一方向的最新进展。
 
+互联标准与格局见[《六种协议与四个框架：2026 Agent互联格局》]({{ site.baseurl }}/paradigm-radar-agent-mcp-ecosystem-2026/)。
+
 ## References
 
 - [WebSwarm: Recursive Multi-Agent Orchestration for Deep-and-Wide Web Search (arXiv:2607.08662)][paper1-url]
@@ -255,6 +257,7 @@ WebSwarm 提出了一种有吸引力的范式转移：从扁平并行的多 Agen
 - [DeepWideSearch Benchmark][links-deepwidesearch]
 - [GISA Benchmark][links-gisa]
 - [ReAct: Synergizing Reasoning and Acting in Language Models (Yao et al., 2022)][links-react-paper]
+- [WebSwarm 代码库][github-repo]
 
 
 [paper1-url]: https://arxiv.org/abs/2607.08662

@@ -199,6 +199,8 @@ AI Agent 正在推动软件工程从 "code as logic" 向 "code as tooling" 的�
 4. **建立 Agent 代码的质量评估体系**：即使 Agent 生成代码，也需要验证框架来保证质量
 5. **思考组织层面的转型**：如果 Agent 编码成为主流，你的团队需要什么样的新技能？
 
+「终结」是修辞，重构是实况：从补全到自主工程的过渡形态与边界，见[《从代码补全到自主软件工程》]({{ site.baseurl }}/paradigm-radar-agentic-coding-paradigm-shift/)。
+
 ## References
 
 - [The End of Software Engineering: How AI Agents Are Fundamentally Restructuring the Software Paradigm (arXiv:2606.05608)][links-1]

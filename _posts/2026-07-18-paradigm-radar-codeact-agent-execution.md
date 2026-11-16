@@ -52,7 +52,7 @@ Microsoft 在 BUILD 2026 上发布的 **CodeAct** 正在改变这个局面。它
 
 当任务从 4 步扩展到 20 步时，问题不是线性增长——是**指数级恶化**。因为每一步的错误都会污染后续所有步骤的上下文。
 
-> 💡 **关键洞察**：Agent 的性能瓶颈往往不在模型能力，而在编排架构。一个中等质量的模型配合高效的执行模式，通常优于一个强模型配合低效的执行模式。
+> **关键洞察**：Agent 的性能瓶颈往往不在模型能力，而在编排架构。一个中等质量的模型配合高效的执行模式，通常优于一个强模型配合低效的执行模式。
 
 这就是 CodeAct 要解决的根本问题：**减少推理回合数，让一次推理完成多步操作**。
 
@@ -165,7 +165,7 @@ var codeActOptions = new CodeActOptions
 };
 ```
 
-> 💡 **小技巧**：在生产环境中，建议将 `MaxExecutionTime` 设置为任务预期耗时的 2-3 倍。过短会导致正常任务超时，过长则失去安全防护的意义。
+> **小技巧**：在生产环境中，建议将 `MaxExecutionTime` 设置为任务预期耗时的 2-3 倍。过短会导致正常任务超时，过长则失去安全防护的意义。
 
 ![Hyperlight micro-VM 架构对比图]({{ site.baseurl }}/assets/images/paradigm-radar-hyperlight-architecture.svg)
 
@@ -285,7 +285,7 @@ For each step:
 | 探索性任务 | ✅ 适合 | ⚠️ 有限支持 | ❌ 不适合 |
 | 确定性流水线 | ⚠️ 可用 | ✅ 适合 | ✅ 最佳选择 |
 
-> 💡 **核心原则**：CodeAct 不是 ReAct 的替代品，而是补充。在 Agent 框架中同时支持多种执行模式，让开发者根据任务特性选择最合适的策略。
+> **核心原则**：CodeAct 不是 ReAct 的替代品，而是补充。在 Agent 框架中同时支持多种执行模式，让开发者根据任务特性选择最合适的策略。
 
 ![三种执行模式对比图]({{ site.baseurl }}/assets/images/paradigm-radar-execution-patterns-comparison.svg)
 
@@ -332,6 +332,10 @@ CodeAct 并非万能药。以下场景需要谨慎使用：
 
 ---
 
+## 前史与坐标：CodeAct 不是新点子，新的是把它焊进微 VM
+
+给读者补上容易被发布稿淹没的谱系。CodeAct 这个名字来自论文《Executable Code Actions Elicit Better LLM Agents》（arXiv `2402.01030`，Xingyao Wang 等六人，`2024-02-01` 提交、`06-07` 修订至 v4）：论文的核心论点是「让 agent 用 JSON/文本这类受限格式输出动作，会被动作空间卡住；直接输出可执行代码，函数组合与控制流就都回来了」——Microsoft 这次做的，是把论文里「代码动作」的粒度从单步升级成整段程序，再用微 VM 把执行安全兜住。工程侧的先行者比发布早了一年多：LangChain 家在 `2025` 年 `3` 月就放出 langgraph-codeact，README 直书「实现 Manus 所使用的 CodeAct 架构」——通用 agent 头部产品的发动机房里早就装着同型零件，只是从未被这样官方定名。`2026-04-24`，Microsoft 开发者博客单发《CodeAct in Agent Framework: Faster Agents with Fewer Model Turns》（HN 转发帖仅 `2` 分，HN `47893439`），两个月后 BUILD 2026 才升格为主角——一个范式词从论文到发布会走了两年半，从博客预热到头版只用了两个月，采纳曲线的加速本身就值得记录。底座 Hyperlight 是可查的开源实体（GitHub `hyperlight-dev/hyperlight`，`2026-11-16` 实测 `4,815` 星 / `223` fork，当天仍有提交），官方仓库自述定位「嵌入应用内的轻量 VMM，以极低延迟安全执行不可信代码」——与发布稿口径一致。最后留一条与前作接壤的边界提醒：本文对比表把 Hyperlight 归为「用户态库级」隔离，按本刊[《隔离质量等于攻击面质量》]({{ site.baseurl }}/paradigm-radar-vm-containment/)的层级阶梯，它的对照组是 Firecracker 那一档而非物理隔离档——CodeAct 让模型写的程序「跑得便宜」，但模型会写出什么仍是另一层问题，沙箱档位的选择请照旧按你的威胁模型来定，别被启动时间的毫秒数替你做决定。
+
 ## 总结与行动清单
 
 CodeAct 代表了 Agent 执行从"逐轮决策"到"程序化批量执行"的范式转移。核心收益是：**减少 60-70% 的推理开销，同时降低错误率**。但这不是银弹——它最适合确定性流水线任务，而非需要动态探索的场景。
@@ -350,3 +354,7 @@ CodeAct 代表了 Agent 执行从"逐轮决策"到"程序化批量执行"的范�
 - [Hyperlight GitHub Repository](https://github.com/hyperlight-dev/hyperlight)
 - [LangChain: Best AI Agent Frameworks 2026](https://www.langchain.com/resources/ai-agent-frameworks)
 - [Microsoft Agent Framework Documentation](https://devblogs.microsoft.com/agent-framework/)
+- [Executable Code Actions Elicit Better LLM Agents (arXiv 2402.01030)](https://arxiv.org/abs/2402.01030)
+- [LangGraph CodeAct（Manus 所用架构的开源实现）](https://github.com/langchain-ai/langgraph-codeact)
+- [CodeAct in Agent Framework 预热博客（HN 转发）](https://news.ycombinator.com/item?id=47893439)
+- [Hyperlight 仓库](https://github.com/hyperlight-dev/hyperlight)

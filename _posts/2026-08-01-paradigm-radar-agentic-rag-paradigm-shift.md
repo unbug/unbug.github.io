@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-agentic-rag-paradigm-shift.svg
 tags: [agentic-rag, retrieval-augmented-generation, llm, multi-hop-reasoning, self-reflection]
-description: "剖析传统RAG单次检索在复杂问题上的天花板，论证Agentic RAG用自我反思与多跳检索把幻觉率降低30%到50%，代价是延迟与Token上升。"
+description: "剖析传统RAG单次检索在复杂问题上的天花板，论证Agentic RAG用自我反思、查询改写与多跳检索把幻觉率降低30%到50%，代价是延迟与Token成本显著上升，取舍取决于任务对准确率的容忍度。"
 ---
 
 如果你正在构建一个需要回答复杂问题的 AI 应用，你可能已经发现传统 RAG 的天花板：当用户问"某公司的 CEO 在哪个大学获得了什么学位？"时，一次向量检索往往只能命中其中一个事实片段，答案要么不完整，要么干脆产生幻觉。
@@ -25,6 +25,9 @@ description: "剖析传统RAG单次检索在复杂问题上的天花板，论证
 Agentic RAG 的出现正是为了解决这三个根本性问题。它的核心思路很简单：让检索系统学会"思考"——不是被动地执行一次搜索，而是主动规划、评估结果、反思不足、再行动。这种从线性流水线到迭代循环的架构转变，是检索增强生成范式的根本性跃迁。
 
 ## Agentic RAG 核心原理：它是怎么工作的
+
+![单趟检索与反思回路的对照]({{ site.baseurl }}/assets/images/paradigm-radar-agentic-rag-loop.svg)
+
 
 要理解 Agentic RAG，最直观的方式是对比它的架构与传统 RAG 的差异。
 
@@ -132,6 +135,8 @@ Agentic RAG 代表了检索增强生成从被动工具到主动推理者的范�
 - 如果你的应用涉及多跳查询，尝试引入查询分解机制：将复杂问题拆分为子查询链，每步独立检索和验证
 - 评估当前系统的 Token 消耗分布，识别哪些查询触发了不必要的检索——这些是 ARAGOG/FLARE 风格优化最有价值的切入点
 - 关注 LangGraph 等 Agent 框架的 RAG 模式更新，等待多 Agent 协作检索的标准化工具成熟后再做大规模迁移
+
+检索端在学会主动，供给端同样在变：网站开始为 Agent 单独准备内容接口，见[《网站开始给 Agent 单独上一道菜》]({{ site.baseurl }}/paradigm-radar-markdown-negotiation/)。
 
 ## References
 

@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-orchrm.svg
 tags: [multi-agent, reward-modeling, orchestration, self-supervised, mas]
-description: "OrchRM是面向多智能体编排质量的自监督奖励建模框架，从执行中间产物直接构建胜负对并输入Bradley-Terry模型学习评分函数，在数学推理与网页问答任务上把Token效率提升最高10倍、测试时扩展准确率提升8%。"
+description: "OrchRM面向多智能体编排质量做自监督奖励建模，从执行中间产物直接构建胜负对，用Bradley-Terry模型学习评分，在数学推理与网页问答上Token效率最高提升10倍、测试时扩展准确率提升8%。"
 ---
 
 上周，新加坡国立大学与 Sea AI Lab 联合发布了 OrchRM——首个面向多智能体编排质量的自监督奖励建模框架。
@@ -183,6 +183,8 @@ OrchRM 通过利用多智能体执行过程中的中间产物构建胜负对，�
 2. 设计适合你任务的中间产物质量评估函数——这是胜负对构建的核心，直接影响奖励模型的学习效果
 3. 在测试时扩展场景下对比 OrchRM 与传统方法的性能-效率权衡——记录不同候选数量下的准确率和延迟数据
 4. 如果你的 MAS 系统同时需要安全评估和编排优化，尝试将 AgentDoG 的安全评分与 OrchRM 的编排质量评分结合使用
+
+奖励模型评的是编排质量，编排范式本身的选择另成一线：从 ReAct 折返 Plan-Execute 的原因与代价，见[《从ReAct到Plan-Execute：编排回头路》]({{ site.baseurl }}/paradigm-radar-agent-orchestration-react-to-pi/)。
 
 ## References
 

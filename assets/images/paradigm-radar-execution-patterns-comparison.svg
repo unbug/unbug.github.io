@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 470" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+<rect width="1200" height="470" fill="#FFFFFF"/>
+<text x="600" y="42" text-anchor="middle" font-size="26" font-weight="700" fill="#1F2937">三种执行模式：一张决策图</text>
+<rect x="70" y="88" width="330" height="180" rx="12" fill="#EAF2FB" stroke="#2F6FB2" stroke-width="2"/>
+<text x="235" y="118" text-anchor="middle" font-size="15" font-weight="700" fill="#1E3A5F">ReAct 逐步循环</text>
+<text x="235" y="146" text-anchor="middle" font-size="13" fill="#374151">每步：推理→选工具→执行→回灌</text>
+<text x="235" y="174" text-anchor="middle" font-size="13" fill="#374151">1–2 步任务与探索型任务的主力</text>
+<text x="235" y="204" text-anchor="middle" font-size="13" fill="#C0392B">6+ 步：延迟累积、上下文污染</text>
+<text x="235" y="240" text-anchor="middle" font-size="12" fill="#6B7280">灵活度最高 · 成本随步数涨</text>
+<rect x="435" y="88" width="330" height="180" rx="12" fill="#FDF6E3" stroke="#D1A400" stroke-width="2"/>
+<text x="600" y="118" text-anchor="middle" font-size="15" font-weight="700" fill="#713F12">Plan-and-Execute</text>
+<text x="600" y="146" text-anchor="middle" font-size="13" fill="#374151">先出完整计划，逐步执行</text>
+<text x="600" y="174" text-anchor="middle" font-size="13" fill="#374151">失败回退重试；3–5 步的平衡位</text>
+<text x="600" y="204" text-anchor="middle" font-size="13" fill="#C0392B">高复杂度仍有逐轮开销</text>
+<text x="600" y="240" text-anchor="middle" font-size="12" fill="#6B7280">结构化中 · 动态决策部分支持</text>
+<rect x="800" y="88" width="330" height="180" rx="12" fill="#EAF6EF" stroke="#166534" stroke-width="2"/>
+<text x="965" y="118" text-anchor="middle" font-size="15" font-weight="700" fill="#14532D">CodeAct 程序化批量</text>
+<text x="965" y="146" text-anchor="middle" font-size="13" fill="#374151">一次推理生成程序，批量执行</text>
+<text x="965" y="174" text-anchor="middle" font-size="13" fill="#374151">确定性流水线 6+ 步的最佳位</text>
+<text x="965" y="204" text-anchor="middle" font-size="13" fill="#C0392B">探索性/强动态任务不适合</text>
+<text x="965" y="240" text-anchor="middle" font-size="12" fill="#6B7280">回合最少 · 灵活性换吞吐</text>
+<rect x="150" y="300" width="900" height="100" rx="10" fill="#F9FAFB" stroke="#D1D5DB" stroke-width="1.5"/>
+<text x="600" y="334" text-anchor="middle" font-size="15" font-weight="700" fill="#1F2937">选型口径</text>
+<text x="600" y="364" text-anchor="middle" font-size="14" fill="#374151">按任务画像选模式：步数看成本曲线，确定性看可否预写程序，动态性看回环自由度</text>
+<text x="600" y="388" text-anchor="middle" font-size="13" fill="#6B7280">三者是补充不是替代——成熟框架同时支持多模式按任务切换</text>
+<text x="600" y="446" text-anchor="middle" font-size="14" fill="#6B7280">演进主线：把「模型的每次开口」变贵之前，先让它每开口一次多干几件事</text></svg>

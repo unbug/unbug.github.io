@@ -333,6 +333,8 @@ def extract_ast_fingerprint(code: str, language: str = 'python') -> str:
 5. **追踪"高性能 Rust 复刻"趋势**：如果你维护的 GPL 项目已有 Rust 实现版本，评估其许可证差异及法律地位；如果其宣称"clean-room rewrite"，考虑与法律顾问确认该主张的可诉性
 6. **关注 CCAI 和 EU AI Act 进展**：欧盟 AI 法案中的训练数据透明度条款（预计 2027 年生效）可能在监管层面提供部分保护
 
+开源协议的约束力松动，工具供应链的诚信问题就从社区规范升级为分发安全问题——官方渠道本身沦陷的近期案例，见[《官方渠道沦陷之后》]({{ site.baseurl }}/paradigm-radar-toolchain-poisoning/)的复盘与自检清单。
+
 ## References
 - [Does v. GitHub 诉讼进展][links-1]
 - [AI 许可证漂白：代码生成器如何剥离开源归属][links-2]

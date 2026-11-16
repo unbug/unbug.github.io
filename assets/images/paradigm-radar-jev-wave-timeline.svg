@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="540" fill="#FFFFFF"/>
+  <text x="70" y="50" font-size="25" font-weight="700" fill="#1F2937">决策模型潮的四段：发布 → 跟进 → 基建 → 找用途</text>
+  <line x1="90" y1="250" x2="1130" y2="250" stroke="#1F2937" stroke-width="2.5"/>
+  <g font-size="14.6">
+    <circle cx="180" cy="250" r="11" fill="#C0392B"/>
+    <text x="180" y="204" text-anchor="middle" font-weight="bold" fill="#C0392B">09-15 TypeSafe 定义品类</text>
+    <text x="180" y="290" text-anchor="middle" fill="#6B7280">主帖 1989 分 / 518 条</text>
+    <text x="180" y="312" text-anchor="middle" fill="#6B7280">原始标题当天被围攻改掉</text>
+    <circle cx="430" cy="250" r="9" fill="#2F6FB2"/>
+    <text x="430" y="204" text-anchor="middle" font-weight="bold" fill="#2F6FB2">09-15 ~ 10-07 跟进潮</text>
+    <text x="430" y="290" text-anchor="middle" fill="#6B7280">Laya 1363 · Clef 641 · Decider 285</text>
+    <text x="430" y="312" text-anchor="middle" fill="#6B7280">kev/jeff/ollaya/AnyJev 四层齐备</text>
+    <circle cx="700" cy="250" r="9" fill="#1E7A45"/>
+    <text x="700" y="204" text-anchor="middle" font-weight="bold" fill="#1E7A45">09-20 ~ 11-09 基建</text>
+    <text x="700" y="290" text-anchor="middle" fill="#6B7280">Ollaya 618 分 · jevals 评测器</text>
+    <text x="700" y="312" text-anchor="middle" fill="#6B7280">Jeeves 242（reasoning 回灌）· Flide 9.5×</text>
+    <circle cx="960" cy="250" r="9" fill="#B7791F"/>
+    <text x="960" y="204" text-anchor="middle" font-weight="bold" fill="#8B5E1A">10-13 / 11-12 找用途</text>
+    <text x="960" y="290" text-anchor="middle" fill="#6B7280">两条 Ask HN「谁在用？干什么？」</text>
+    <text x="960" y="312" text-anchor="middle" fill="#6B7280">6 分 / 10 分——问的人少，答的人更少</text>
+  </g>
+  <rect x="90" y="366" width="1040" height="126" rx="12" fill="#F4F7FB" stroke="#1E3A5F" stroke-width="1.5"/>
+  <text x="610" y="398" font-size="15.8" font-weight="bold" fill="#1E3A5F" text-anchor="middle">11-16 复测读数：主帖 1989 分冻结，仓库继续爬坡——kev +12%、AnyJev +40%、搜索仓库数 1,087→1,496（+38%）</text>
+  <text x="610" y="426" font-size="15" fill="#41627F" text-anchor="middle">热度冻结 + 代码活性 = 品类沉淀形状；ollaya 的 /v1/systemone 端点让 TypeSafe SDK 零改动切换 = 事实接口成形</text>
+  <text x="610" y="454" font-size="14.5" fill="#6B7280" text-anchor="middle">下一段分岔：出现可复现的杀手用例 → 采纳；继续无人作证 → 归位「高级分类器」叙事。公开盲测基准仍是最大空缺</text>
+</svg>

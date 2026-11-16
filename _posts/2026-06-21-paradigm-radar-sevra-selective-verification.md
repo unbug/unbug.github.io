@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-sevra-selective-verification.svg
 tags: [sevra, selective-verification, reasoning-budget, token-efficiency, agent-reasoning]
-description: "Virginia Tech提出的SEVRA框架用轻量控制器动态分配推理Token，在保留、验证、延长等五条路径间择优，证明盲目验证反而降低准确率。"
+description: "Virginia Tech的SEVRA框架用轻量控制器按难度动态分配推理Token，在保留、验证、延长等五条路径间择优执行，实验证明盲目验证全部答案反而拉低准确率，选择性验证能以小得多的预算守住质量。"
 ---
 
 如果你正在构建需要深度推理的 AI 系统，你可能已经发现一个令人困惑的现象：给模型更多的 Token 预算并不总是带来更好的结果。
@@ -202,11 +202,6 @@ SEVRA 代表了一个重要的范式转变：**从"固定推理策略"到"自适
 - [CommonsenseQA 基准测试][csqa-url] — 常识问答任务的评估基准
 - [Token 消耗经济学分析][token-econ-url] — Micropaper 上一篇关于 Agent Token 消耗差异的深度分析
 
-[links-paper]: https://arxiv.org/abs/2606.19808v1
-[links-math500]: https://github.com/hendrycks/math
-[links-gsm8k]: https://github.com/openai/grade-school-math
-[links-csqa]: https://commonsenseqa.org/
-[links-token-econ]: {{ site.baseurl }}/paradigm-radar-token-consumption-economics
 
 [paper-url]: https://arxiv.org/abs/2606.19808v1
 [math500-url]: https://github.com/hendrycks/math

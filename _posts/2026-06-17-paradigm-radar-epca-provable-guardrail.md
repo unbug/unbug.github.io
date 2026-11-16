@@ -134,6 +134,8 @@ ePCA 代表了 Agent 安全从经验语义护栏向可证明安全范式的根�
 - ePCA 能否扩展到多智能体协作场景？当多个 Agent 之间存在相互依赖的操作时，形式化验证的状态空间会急剧膨胀，这是一个值得持续跟踪的方向。
 - ePCA 与 #68 发布的 AgentDoG 能否联合使用？AgentDoG 提供诊断型护栏（检测+拦截），ePCA 提供预防型护栏（逻辑证明）。两者的组合可能形成"检测+预防"的完整安全闭环。
 
+形式化护栏与动态诊断护栏各守一段光谱，实践者的对照视角见[《Agent安全护栏：从静态对齐到动态诊断》]({{ site.baseurl }}/paradigm-radar-agent-safety-guardrail/)。
+
 ## References
 
 - [Provably Secure Agent Guardrail via ePCA (arXiv:2605.29251)][paper1-url]

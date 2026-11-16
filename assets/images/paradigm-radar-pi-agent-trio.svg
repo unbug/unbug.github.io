@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+<rect width="1200" height="540" fill="#FFFFFF"/>
+<text x="600" y="52" text-anchor="middle" font-size="27" font-weight="700" fill="#1F2937">规划-执行-评估：三件套的治理点</text>
+<text x="600" y="84" text-anchor="middle" font-size="16" fill="#6B7280">结构收益：三类失败模式获得各自可校验的拦截位</text>
+<rect x="70" y="140" width="300" height="150" rx="12" fill="#F3F4F6" stroke="#1F2937" stroke-width="2"/>
+<text x="220" y="182" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2937">Planner 规划器</text>
+<text x="220" y="214" text-anchor="middle" font-size="15" fill="#374151">产出结构化计划</text>
+<text x="220" y="240" text-anchor="middle" font-size="15" fill="#374151">步骤 · 依赖 · 预期中间产物</text>
+<text x="220" y="272" text-anchor="middle" font-size="14" fill="#C0392B">拦截位：Schema 校验 / DAG 检查</text>
+<rect x="450" y="140" width="300" height="150" rx="12" fill="#F3F4F6" stroke="#1F2937" stroke-width="2"/>
+<text x="600" y="182" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2937">Executor 执行器</text>
+<text x="600" y="214" text-anchor="middle" font-size="15" fill="#374151">按计划逐步调用工具</text>
+<text x="600" y="240" text-anchor="middle" font-size="15" fill="#374151">步骤状态：pending/failed/revision</text>
+<text x="600" y="272" text-anchor="middle" font-size="14" fill="#C0392B">拦截位：计划步骤即 checkpoint</text>
+<rect x="830" y="140" width="300" height="150" rx="12" fill="#F3F4F6" stroke="#1F2937" stroke-width="2"/>
+<text x="980" y="182" text-anchor="middle" font-size="21" font-weight="700" fill="#1F2937">Evaluator 评估修订</text>
+<text x="980" y="214" text-anchor="middle" font-size="15" fill="#374151">监控偏差 · 触发 replan</text>
+<text x="980" y="240" text-anchor="middle" font-size="15" fill="#374151">每轮 replan = 一次全上下文推理</text>
+<text x="980" y="272" text-anchor="middle" font-size="14" fill="#C0392B">代价位：修订轮数进观测指标</text>
+<defs><marker id="arr" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1F2937"/></marker>
+<marker id="arrR" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#C0392B"/></marker></defs>
+<line x1="370" y1="215" x2="448" y2="215" stroke="#1F2937" stroke-width="2.5" marker-end="url(#arr)"/>
+<text x="409" y="200" text-anchor="middle" font-size="14" fill="#374151">计划</text>
+<line x1="750" y1="215" x2="828" y2="215" stroke="#1F2937" stroke-width="2.5" marker-end="url(#arr)"/>
+<text x="789" y="200" text-anchor="middle" font-size="14" fill="#374151">步骤结果</text>
+<path d="M 980 290 L 980 360 L 220 360 L 220 292" fill="none" stroke="#C0392B" stroke-width="2.5" marker-end="url(#arrR)"/>
+<text x="600" y="385" text-anchor="middle" font-size="15" fill="#C0392B">replan：偏差超阈值时重写计划（成本与收益的交换点）</text>
+<rect x="70" y="430" width="1060" height="72" rx="10" fill="#F9FAFB" stroke="#D1D5DB" stroke-width="1.5"/>
+<text x="600" y="462" text-anchor="middle" font-size="16" fill="#374151">净收益判断（分析观点）：流程越像流水线越赚（固定多步、强副作用、要审计）</text>
+<text x="600" y="488" text-anchor="middle" font-size="16" fill="#374151">越像开放探索越亏——模型越强，裸 ReAct 的可用半径越大</text>
+</svg>

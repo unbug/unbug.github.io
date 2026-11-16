@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 470" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+<rect width="1200" height="470" fill="#FFFFFF"/>
+<text x="600" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#1F2937">递归自改进：加速比曲线与暂停治理的接口</text>
+<line x1="120" y1="330" x2="560" y2="330" stroke="#6B7280" stroke-width="1.6"/>
+<line x1="120" y1="330" x2="120" y2="100" stroke="#6B7280" stroke-width="1.6"/>
+<text x="340" y="360" text-anchor="middle" font-size="13" fill="#6B7280">代际</text>
+<text x="90" y="120" font-size="13" fill="#6B7280">加速比</text>
+<path d="M140,320 C 240,312 320,290 400,220 C 450,175 500,130 540,110" fill="none" stroke="#C0392B" stroke-width="3"/>
+<text x="545" y="150" font-size="15" font-weight="700" fill="#C0392B">52×</text>
+<text x="330" y="250" font-size="13" fill="#374151">AI 辅助 AI 研发的工作流速度的量级放大</text>
+<rect x="660" y="100" width="470" height="90" rx="10" fill="#EAF6EF" stroke="#166534" stroke-width="2"/>
+<text x="895" y="134" text-anchor="middle" font-size="15" font-weight="700" fill="#14532D">呼吁的实质：给「暂停」留接口</text>
+<text x="895" y="164" text-anchor="middle" font-size="13" fill="#374151">可验证的暂停机制 · 多方核查 · 退出路径</text>
+<rect x="660" y="210" width="470" height="120" rx="10" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+<text x="895" y="244" text-anchor="middle" font-size="15" font-weight="700" fill="#7F1D1D">工程风险点</text>
+<text x="895" y="272" text-anchor="middle" font-size="13" fill="#374151">自我改进回路若验证弱于生成 → 误差复利</text>
+<text x="895" y="300" text-anchor="middle" font-size="13" fill="#374151">加速与对齐的赛跑，瓶颈在验证侧</text>
+<text x="600" y="420" text-anchor="middle" font-size="14" fill="#6B7280">读法：52× 是工程事实，暂停呼吁是治理提案——两件事分开评估，合起来才是完整信号</text></svg>

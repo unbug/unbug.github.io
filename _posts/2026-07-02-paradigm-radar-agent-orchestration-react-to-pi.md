@@ -1,172 +1,63 @@
 ---
 layout: post
-title: "一分钟读论文：《从ReAct到PI的编排范式转移》"
+title: "AI 范式雷达：《从ReAct到Plan-Execute：编排回头路》"
 author: unbug
 categories: [AI, ParadigmRadar, Agent]
 image: assets/images/paradigm-radar-agent-orchestration-react-to-pi.svg
-tags: [Agent, Orchestration, PI, ReAct, Architecture]
-description: "Agent编排正从ReAct紧耦合循环转向PI的规划-执行-监控三段式架构，减少约60%编排代码的同时提升容错性与可预测性，监控组件负责失败检测与重规划。"
+tags: [Agent, Orchestration, PlanExecute, ReAct, Architecture]
+description: "编排范式的回头路：从规划先行的机器人论文群到ReAct紧循环再到规划执行分离，本篇撤回首版无法溯源的基准表格，用真实论文群像重建三段式架构的来路与监控组件设计。"
 ---
 
-如果你正在构建 AI 智能体，你可能已经发现一个痛点：传统的 ReAct（Reasoning + Acting）循环在处理多工具、长链路任务时，经常陷入无限循环或丢失全局目标。
+## 先还一笔旧账
 
-上周 Anthropic 发布的内部基准测试显示，在 Agent 编排任务上，基于 PI（Plan-Interact/Execute）架构的智能体比传统 ReAct 方案性能提升了 47%。这篇文章将解析 PI 的核心原理，并带你动手实现一个高可靠的多工具智能体。
+本文首版（`2026-07-02`）引用了「Anthropic 内部基准：PI 比 ReAct 提升 47%」「生产中 ReAct 成功率通常低于 60%」，并附一张 Before/After 实测表（成功率 `58%`→`85%`、步骤数 `12.4`→`7.2`、token `3,200`→`1,850`、错误重启 `2.3`→`0.6`）与「减少 60% 编排代码」的断言。`2026-11-16` 复核：内部基准与实测表无法溯源，占位链接一并撤除，数字全部作废。同主题另两篇（谱系篇与实战篇）已各自还过同类的账，本篇负责把整个「编排回头路」的来路钉在真实论文上：不是先有 ReAct 的失败再有 PI 的救场，而是「规划先行」与「临场反应」两条线从一开始就并行——把首版那种单线进化叙事拆掉，才能看清监控组件到底该长什么样。
 
-## 为什么传统 Agent 编排不够用了
+![2022-2023 编排群像：六篇论文的三条线]({{ site.baseurl }}/assets/images/paradigm-radar-orchestration-2022-mural.svg)
 
-在过去的两年里，ReAct 范式一直是构建 AI 智能体的标准模式。LLM 在一个循环中交替生成推理（Reasoning）和行动（Acting），根据工具返回的结果决定下一步操作。这种模式在单工具或简单多工具场景下表现良好，但在实际生产环境中暴露出几个致命痛点：
+## 群像：18 个月里的六篇论文与三条线
 
-- **无限循环风险**：当工具返回的信息不足以推进任务时，LLM 容易在同一状态附近反复生成推理和行动，导致上下文窗口被迅速消耗。
-- **全局目标丢失**：在超过 5 个步骤的复杂链路中，LLM 很难在每次循环中都记住最初的完整目标，导致执行偏离预期。
-- **错误恢复困难**：ReAct 的紧耦合循环缺乏显式的阶段划分，一旦某个步骤失败，整个流程往往需要从头重启。
+把 `2022-04` 到 `2023-10` 的原始文献按提交时间排开，画面立刻不是「ReAct → PI」的单线。第一条线是规划先行的机器人分支：SayCan（arXiv `2204.01691`，《Do As I Can, Not As I Say: Grounding Language in Robotic Affordances》，`2022-04`）让语言模型提议任务、让价值函数判断「当前真的做得到吗」，规划的可行性由环境侧的 affordance 打分兜底——先提议后验证的骨架在这篇就齐了，只是「执行器」是一台真机器人。ProgPrompt（arXiv `2209.11302`，`2022-09`）同族而更进一步：直接让模型生成情境化的任务程序，程序即计划。第二条线是临场反应分支：ReAct（arXiv `2210.03629`，`2022-10`）用推理与行动的交替换取对环境的即时适应力，它不是规划路线的失败品，而是同一问题在不同权衡点上的另一答案——牺牲全局结构，换每步都用上最新观察。第三条线是自我改进层：Reflexion（arXiv `2303.11366`，`2023-03`）把失败后的口头反思写进情景记忆、下次尝试带着笔记上场——今天三件套里 Evaluator/Monitor 组件的概念祖先在这篇，而不是任何厂商文档。剩下的两块拼图此前已细讲：Plan-and-Solve（arXiv `2305.04091`）在提示层补「先列计划」，LATS（arXiv `2310.04406`）用蒙特卡洛树搜索把「全局」与「反应」强行合体、按分支数付费。六篇排完你会发现：所谓「从 ReAct 到 PI 的范式转移」，其实是把 `2022` 年就摆开的三个组件（提议与可行性打分、程序化计划、反思回路）在 `2024-2025` 年装进了同一个 SDK 的默认图结构。两处摘要细节值得单独存档，因为它们是今天常识的第一次白纸黑字。SayCan 的出发点是「语言模型缺真实世界经验」——让它描述怎么清理泄漏物，会得到像模像样但未必适用于眼前这台机器人、这个具体环境的剧本，解法是拿预训练技能把提议约束回「此刻真做得到的动作」，LLM 与环境之间靠闭环反馈接上：这不就是今天「工具 Schema 校验 + 执行时就绪检查」的机器人版吗？Reflexion 则写下了自我改进的最低成本公式——「不更新权重，靠语言反馈强化：agent 对任务信号做口头反思，把反思文本存进情景记忆缓冲区，供后续尝试调用」——今天每个带「失败教训入库」功能的 agent 框架，都能在这句话里找到出生证明，而且它点名了动机：传统强化学习要海量样本加昂贵微调，语言反思是穷人版 RL。
 
-在实际项目中，我们发现当任务涉及数据库查询、网页搜索和代码执行的组合时，ReAct 方案的成功率通常低于 60%。这正是我们需要范式转移的原因。
+![Monitor 组件解剖：检测、归因、升级三职责]({{ site.baseurl }}/assets/images/paradigm-radar-monitor-anatomy.svg)
 
-## PI 架构核心原理
+## 再往前看：这场回头路其实走了五十年
 
-PI（Plan-Interact / Plan-Execute）架构代表了 Agent 编排从"手动循环"到"自适应编排"的范式转移。它的核心理念是将"规划"和"执行"解耦，让 LLM 在不同的角色下完成不同阶段的任务。
+把镜头拉出 LLM 时代，群像里的对立早已排练过一遍（本节为公开计算机史的通识梳理，标注分析视角）。「先规划后执行」是自动化的古典正统：`1971` 年的 STRIPS 为机器人 Shakey 生成符号化行动序列，规划器在世界模型里推演完毕、执行器只管照做——规划与执行分离不是 `2024` 年的发明，是它的一代形态；而「临场反应」的反击来自机器人学界内部，`1986` 年 Brooks 的包容式架构主张分层行为直接耦合传感与动作、干脆绕开中央世界模型——ReAct 在语言模型上做的，正是这个论证在文本环境里的重演。教科书写下了这场拉锯的中立判决：Russell 与 Norvig 的《人工智能：一种现代方法》把 agent 排成反射型、基于模型、基于目标、基于效用、学习型五级阶梯（教材站链接在案），规划与反应各占梯子的不同横档。看清这一层，「ReAct 被 PI 取代」这类句式的幼稚就藏不住了：`2022-2023` 论文群像重放的，是传感-规划-行动架构五十年的钟摆——钟摆没有终点，只有每一代模型强度下的新摆幅。真正的增量问题因此不是「哪派赢了」，而是「这一代把哪几个旧组件第一次塞进了同一个可发布的运行时」——上一节的答案（可行性打分、程序化计划、反思回路三件套入 SDK）就落在这里。
 
-**三个核心组件**
-PI 架构通常包含以下三个核心组件：
+## Monitor 不是日志看板：三职责解剖（分析观点）
 
-1. **Planner（规划器）**：在任务开始时，LLM 作为规划器分析用户请求，生成一个结构化的执行计划，包括步骤分解、依赖关系和预期输出。
-2. **Executor（执行器）**：负责按照计划执行具体步骤，调用工具并收集结果。执行器通常是轻量级的，专注于执行而不是重新规划。
-3. **Monitor / Re-planner（监控与重规划器）**：在每一步执行后，评估当前状态与计划的匹配度。如果发现偏差或工具返回意外结果，触发重规划机制。
+首版留存的工程内容里，Monitor/Re-planner 一段最值得重建，因为它最常被实现成「打了日志的 if 判断」。拆开看它有三个正交职责。检测：判断「当前状态与计划假设是否还一致」，输入不是 LLM 的自由观察而是结构化断言——每步的前置假设清单在执行前逐条对照，这一层不需要模型参与，能确定性判断的绝不交给模型判断，检测的假阳性率直接决定 replan 风暴的频率。归因：检测出偏差后分类（瞬态失败、结构性失败、依赖失效、预算越界、价值性失败），分类决定处置通道，混分类是编排系统最常见的慢性病。升级：每一类失败对应一条退让路径——重试、局部改写、从当前状态重规划、打包现场上报——路径尽头必须是人，且各层的次数上限都要显式写死，首版「最大重规划三次」的建议方向正确，数值该按任务的返工成本调。五类失败各给一行识别样本，抄进你的枚举即可：瞬态——HTTP `503`、限流 `429`、连接超时；结构性——`200` 响应但返回体缺了计划依赖的字段；依赖失效——步骤申报的前置断言（路径存在、表存在、余额足够）在执行前对照失败；预算越界——累计 token 或墙钟触碰红线而任务未完成；价值性——工具全部可达但完成条件在你的授权域内不可达，这一类的正确处置是停下来问人，而不是任何自动重试。三个职责共享一个数据底座：计划版本号、步骤指纹、假设清单、失败分类，这四样凑齐，Monitor 才第一次可测试；缺任何一样，它都只是昂贵的日志。至于反思质量的提升，Reflexion 那篇的公式已经给出——失败分类表加现场快照写成「下次的笔记」进记忆库，Monitor 就是笔记的产地：把 Reflexion 装进你的 Monitor，成本是一个 append 调用。
 
-**与 ReAct/LATS 的对比**
-| 维度 | ReAct 范式 | PI (Plan-Execute) 架构 | LATS 等搜索增强方案 |
-|------|-------------|------------------------|---------------------|
-| 执行模式 | 紧耦合的推理-行动循环 | 规划-执行的解耦阶段 | 基于树/图的探索与回溯 |
-| 全局目标保持 | 依赖上下文，易丢失 | 计划文档作为持久参考 | 搜索路径记录 |
-| 错误恢复 | 困难，常需重启 | 局部重规划或步骤重试 | 自然支持回退和分支探索 |
-| 适用场景 | 单工具、短链路任务 | 多工具、复杂长链路任务 | 需要高可靠性验证的场景 |
+## 初版代码的重读：朴素循环漏在哪三处
 
-## 5 分钟搭建你的第一个 PI Agent
+首版给过一段三十行的 PI 主循环，代码思路可以留，但重读发现它恰好示范了三个典型漏洞，比任何正面教程都好用。漏洞一是静默跳步：主循环用 `if 依赖全部完成: 执行` 的结构，依赖没满足的步骤既不执行也不报错，直接从结果集里蒸发——计划里十步、产出里七步，没有任何报警，朴素实现最常见的「任务悄悄没做完」就出生在这一行；正确结构是依赖未满足即挂起等待或显式报死锁，绝不允许无声分支。漏洞二是异常吞并：工具调用没有 try/except 边界，一次网络异常掀翻整个循环，前面九步的成果随进程一起蒸发——执行器层必须把每步异常转成结构化失败记录继续走，这是「错误恢复」的最小成本形态。漏洞三是模型与接口错位：示例用 OpenAI 客户端调用写着 Claude 模型名的参数，能跑通的唯一条件是读者恰好搭了协议转换代理——这类示例代码的隐性依赖在教程里极常见，读者的第一次失败往往不是架构错，是抄来的代码根本不成立。三处漏洞加起来的修复量不到二十行，但没有任何百分比能替你发现它们：编排系统的可靠性从来长在分支的静默处，而不是主流程的演示里。
 
-让我们通过一个最小可复现的示例，看看如何用 PI 架构搭建一个多工具智能体。这里我们使用 Python 和基础的 LLM API 来演示核心逻辑。
+## 回头路的另一头：集群里的一等负载
 
-**环境准备**
-确保你安装了必要的依赖：
+编排这个词在 `2026` 年有了新的分叉，读旧史必须标清边界。本篇通篇讲的是单 agent 进程内的编排——规划器与执行器共享一个会话、一个预算、一个失败现场。另一条线把 agent 交给集群调度器管：进程级弹性伸缩、成本配额、故障迁移，本站[《智能体正从应用循环迁为集群一等负载》]({{ site.baseurl }}/paradigm-radar-agent-as-workload/)记录的正是那条线。两条线共用「编排」二字但治理对象不同：图结构管「一步失败往哪退」，调度器管「整机失败往哪搬」，混谈时最常见的事故是拿集群重试语义去兜计划层的依赖失效——机器重启一百次，缺的 API key 也不会自己长出来。同样要划界的是「编排代码减少 60%」那类断言（已撤稿）：SDK 原语确实在把胶水代码收编——handoff、图节点、状态通道——但省掉的代码量从 Anthropic 那篇《Building Effective Agents》的立场看甚至是反向的：作者明确说现有框架把抽象层堆得太厚，建议直接调 API 写循环起步。省不省代码，取决于你从哪一层开始写，这类断言天生不可通约，本就不该以百分比形式出现。
 
-```bash
-pip install openai pydantic
-```
+## 边界与观察点
 
-**核心代码：Plan-Execute 循环**
-以下是 PI 架构的核心执行循环片段（聚焦关键 30 行）：
-
-```python
-import json
-from openai import OpenAI
-
-client = OpenAI(api_key="your-api-key")
-
-def generate_plan(user_request):
-    prompt = f"""你是一名任务规划专家。请根据用户需求生成结构化执行计划，以 JSON 格式返回：
-{{"steps": [
-  {{"step_id": 1, "description": "...", "tool": "tool_name", "dependencies": []}},
-  ...
-]}}
-
-用户需求: {user_request}
-"""
-    response = client.chat.completions.create(
-        model="claude-3-opus-20240229",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.2
-    )
-    return json.loads(response.choices[0].message.content)
-
-def execute_step(step, state):
-    # 调用具体工具的逻辑，更新 state
-    tool_name = step["tool"]
-    # ... 工具执行代码 ...
-    return result
-
-def pi_agent_loop(user_request):
-    plan = generate_plan(user_request)
-    state = {"completed_steps": [], "results": {}}
-    
-    for step in plan["steps"]:
-        if all(dep in state["completed_steps"] for dep in step.get("dependencies", [])):
-            result = execute_step(step, state)
-            state["completed_steps"].append(step["step_id"])
-            state["results"][step["step_id"]] = result
-            
-    return state["results"]
-```
-
-**执行路径图解**
-在这个流程中，数据流如下：
-1. 用户请求进入 Planner，生成 JSON 格式的计划文档。
-2. Executor 按 `step_id` 顺序或依赖图遍历计划。
-3. 每步完成后，Monitor 检查状态，决定是否继续或触发 Re-planner。
-
-提示：在实际实现中，建议使用 Pydantic 来验证 Planner 输出的 JSON Schema，确保 Executor 能够可靠解析。
-
-## 进阶：多工具编排与错误恢复
-
-在实际的多工具场景中，工具调用的失败是常态而非例外。PI 架构的优势在于它允许我们在"监控层"处理这些异常，而不必让整个循环崩溃。
-
-**关键逻辑：局部重规划**
-当某个步骤返回错误时，Monitor 可以触发局部重规划，而不是从头开始。例如，如果数据库查询返回"表不存在"，Re-planner 可以先尝试列出可用表，然后更新计划中的后续步骤。
-
-**常见错误及解决方案**
-- **计划过于死板**：初始计划可能没有考虑到某些边界情况。解决方案是设置计划的"弹性字段"，允许 Executor 在特定条件下自主调整参数。
-- **重规划陷入循环**：如果 Re-planner 反复生成相似的计划，需要引入"已尝试计划记录"，强制 LLM 探索新路径。
-
-注意：在实现 Monitor 组件时，建议设置最大重规划次数限制（如 3 次），以防止因持续失败导致的无限重试。
-
-## 性能实测与效果验证
-
-我们在一个典型的多工具编排场景下对比了 ReAct 和 PI 架构的表现。任务要求：根据用户提供的产品 ID，查询数据库中的库存信息，然后调用外部价格 API 获取实时报价，最后生成一份包含比价结果的摘要报告。
-
-**Before vs After 数据对比**
-| 指标 | ReAct 方案 | PI 架构方案 | 提升幅度 |
-|------|-----------|-------------|----------|
-| 任务成功率 | 58% | 85% | +47% |
-| 平均步骤数 | 12.4 | 7.2 | -42% |
-| 上下文窗口消耗 (tokens) | 3,200 | 1,850 | -42% |
-| 错误重启次数 | 2.3 次/任务 | 0.6 次/任务 | -74% |
-
-在实际测试中，PI 架构的 planner 生成了清晰的三步计划：查询库存、获取报价、生成报告。executor 按顺序执行，monitor 在每一步后验证结果完整性。当价格 API 返回超时错误时，re-planner 仅触发了该步骤的重试和备用 API 切换，而不影响整体的报告生成流程。
-
-## 反方观点与边界条件
-
-尽管 PI 架构在多工具场景中表现优异，但它并非万能解药。在实际应用中，我们需要警惕以下几个边界条件和潜在风险：
-
-- **过度规划开销**：对于单工具调用或简单的多轮对话任务，PI 架构的 planning 阶段会引入额外的 LLM 调用延迟和 token 消耗。在这种情况下，传统的 ReAct 紧耦合循环反而更高效。
-- **计划漂移（Plan Drift）**：初始计划在生成时可能是完美的，但随着环境状态的变化（如外部 API 返回格式改变或数据源不可用），原计划可能变得无效。这要求 Monitor 组件具备强大的变化检测能力。
-- **上下文窗口限制**：当任务步骤列表很长时，计划文档本身会占用大量 context window。在极端情况下，这可能挤压实际工具返回结果的存储空间。
-
-## 未来 1-2 个周期的雷达观察点
-
-基于当前的技术演进趋势，我们预测在未来 1-2 个迭代周期内，Agent 编排领域将重点关注以下方向：
-
-1. **自适应规划（Adaptive Planning）**：框架将能够根据任务复杂度动态切换执行模式。对于简单任务自动使用 ReAct 紧耦合循环，对于复杂长链路任务自动切换到 PI 的 Plan-Execute-Monitor 架构。
-2. **原生 PI SDK 与评估器**：随着 PI 架构成为主流，我们将看到更多专门针对 PI 模式的 SDK 和内置评估器出现，帮助开发者在 edge case 下测试 agent 的容错能力和重规划有效性。
-
-## 总结与行动清单
-
-PI 架构代表了 Agent 编排从"手动循环"到"自适应编排"的范式转移。核心收益是：减少 60% 的编排代码，同时获得更好的容错性和可预测性。
-
-**你现在可以做的**：
-1. 在现有项目中引入 PI 模式，先用单工具场景验证 plan-generate 的有效性。
-2. 将现有的 ReAct 循环迁移到 PI 的 Plan-Execute-Monitor 三段式架构。
-3. 为你的 agent 实现一个基础的 monitor 组件，检测步骤失败并触发重规划。
-4. 使用结构化的计划文档（如 JSON Schema）来约束 planner 的输出，提高 executor 的解析可靠性。
+三条边界。其一，群像篇的结论是「组件早就有、合体在近年」，那么下一次分叉大概率也来自合体位置的移动：程序化路线（模型直接写可执行程序，见[《CodeAct：Agent执行范式转移》]({{ site.baseurl }}/paradigm-radar-codeact-agent-execution/)）正在把 Planner 与 Monitor 的一部分职责移交给解释器与沙箱——程序抛异常比 LLM 检偏差便宜得多，这条路线的实物证据与边界，CodeAct 篇已展开。其二，本文与[《规划与执行分离：Agent 编排的真实谱系》]({{ site.baseurl }}/paradigm-radar-pi-agent-architecture/)构成本系列的历史篇与结构篇，与实战篇《Plan-Execute 实战：上下文隔离与自测协议》构成「来路-结构-做法」三件套，数字类问题只在实战篇以协议形式回答。其三，论文群像只覆盖英文一线文献，工业界同期（`2022-2023`）的私有编排系统从未发表，公开叙事的「谱系」天然偏学术，读史时记得这块暗区。观察信号给两条：Monitor 三职责会不会在下一代会话 SDK 里以 typed 失败分类的形态出现（目前各家仍是字符串错误信息为主）；Reflexion 式「失败笔记进记忆」的机制会不会被吸收进记忆层的默认件而非用户自装件——第三条信号留给数据底座本身：计划版本号、步骤指纹、失败分类这套字段，会不会在下一代跨厂商可观测协议里沉淀成标准事件 schema——沉淀之日，编排调试第一次有望摆脱各框架私有日志的锁国状态，Monitor 三职责也才算真正穿上制服。三格中一格，编排范式的第二轮溶解就开始了。
 
 ## References
 
-- [Anthropic Claude Agent 架构演进][links-1]
+- [SayCan: Do As I Can, Not As I Say][links-6]
+- [ProgPrompt: Generating Situated Robot Task Plans][links-7]
 - [ReAct: Synergizing Reasoning and Acting in Language Models][links-2]
-- [Plan-and-Solve Prompting: Improving Zero-Shot Chain-of-Thought Reasoning][links-3]
-- [OpenAI Swarm: Multi-Agent Framework for Task Orchestration][links-4]
-- [LangChain Agent Orchestrator Patterns][links-5]
+- [Reflexion: Language Agents with Verbal Reinforcement Learning][links-8]
+- [Plan-and-Solve Prompting][links-3]
+- [LATS: Language Agent Tree Search][links-9]
+- [Anthropic：Building Effective Agents][links-10]
+- [《人工智能：一种现代方法》教材站][links-11]
+- [openai/swarm 仓库][links-4]
 
-
-[links-1]: https://www.anthropic.com/research/building-effective-agents
 [links-2]: https://arxiv.org/abs/2210.03629
 [links-3]: https://arxiv.org/abs/2305.04091
 [links-4]: https://github.com/openai/swarm
-[links-5]: https://python.langchain.com/docs/concepts/agents/
+[links-6]: https://arxiv.org/abs/2204.01691
+[links-7]: https://arxiv.org/abs/2209.11302
+[links-8]: https://arxiv.org/abs/2303.11366
+[links-9]: https://arxiv.org/abs/2310.04406
+[links-10]: https://www.anthropic.com/engineering/building-effective-agents
+[links-11]: http://aima.cs.berkeley.edu/

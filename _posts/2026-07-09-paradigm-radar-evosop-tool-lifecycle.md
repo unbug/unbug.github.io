@@ -222,6 +222,8 @@ EvoSOP 提出了一种有吸引力的范式转移：从静态的原子工具集�
 - **SOP 提取的自动化程度。** 如果形式化分析和程序验证技术能够与 LLM 的模式识别能力结合，SOP 的质量和可靠性将大幅提升——这将降低 EvoSOP 在实际部署中的风险。
 - **多 Agent SOP 共享协议。** 随着多 Agent 系统的普及，工具集的跨 Agent 共享和协同演化将成为刚需——这可能催生类似 npm 或 PyPI 的 Agent 工具生态市场。
 
+标准流程的沉淀形态与技能文件同构：一份 SOP 写一次、到处执行，生态侧的进展见[《一份技能文件写一次，所有客户端都能跑》]({{ site.baseurl }}/paradigm-radar-skill-md-standard/)。
+
 ## References
 
 - [From Atomic Actions to Standard Operating Procedures: Iterative Tool Optimization for Self-Evolving LLM Agents (arXiv:2607.07321)][paper-url]

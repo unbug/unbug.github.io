@@ -54,7 +54,7 @@ AI Coding 工具拿走了这个制动器。
 
 Standish Group 的研究在 2002 年就已证明：企业软件中 **64% 的功能从未或极少被使用**。这个数字在 AI Coding 时代只会更糟——因为以前自然被淘汰的需求，现在被轻松"做出来"了。
 
-> 💡 **根本问题**：AI Coding 移除的是"能否构建"的约束，但没有强化"是否应该构建"的判断力。这两者之间的鸿沟，就是功能臃肿的温床。
+> **根本问题**：AI Coding 移除的是"能否构建"的约束，但没有强化"是否应该构建"的判断力。这两者之间的鸿沟，就是功能臃肿的温床。
 
 ![产品功能 · 用户增长 · 用户反馈 互动系统模型]({{ site.baseurl }}/assets/images/paradigm-radar-ai-coding-feature-bloat-interaction.svg)
 
@@ -132,7 +132,7 @@ Hacker News、Reddit 和 X（原 Twitter）社区对 Slop 产品的讨论在 202
 | **支持工单中"功能太多/太复杂"** | 用户在反馈中主动提到"overwhelmed" | 此类工单占比 < 5% |
 | **PR 速率与 NPS 负相关** | 发布越频繁，用户满意度反而下滑 | PR 速率增长时 NPS 持平或上升 |
 
-> 💡 **关键认知**：Slop 产品的问题不是功能质量低，而是**功能存在的合理性未经验证**。每一个 Slop 功能都是技术上可运行的——它就是没人在真实场景中需要它。
+> **关键认知**：Slop 产品的问题不是功能质量低，而是**功能存在的合理性未经验证**。每一个 Slop 功能都是技术上可运行的——它就是没人在真实场景中需要它。
 
 ---
 
@@ -160,7 +160,7 @@ Hacker News、Reddit 和 X（原 Twitter）社区对 Slop 产品的讨论在 202
 
 更隐蔽的是，这种协作模式还会在组织内部制造**信息孤岛**：封闭期间产生的功能往往缺乏充分的设计文档和决策上下文，成为新成员和其他职能团队的认知负担；而频繁的突击发布让代码评审流于形式，技术债与功能债同步积累。
 
-> 💡 **信号识别**：如果你的团队每个季度有超过一次"封闭突击冲刺"，且 NPS 或用户留存没有随发布频率同步提升——这是陷入恶性循环的早期预警。解法不是减慢速度，而是把协作透明度和用户反馈循环重新嵌入开发节奏。
+> **信号识别**：如果你的团队每个季度有超过一次"封闭突击冲刺"，且 NPS 或用户留存没有随发布频率同步提升——这是陷入恶性循环的早期预警。解法不是减慢速度，而是把协作透明度和用户反馈循环重新嵌入开发节奏。
 
 ---
 
@@ -256,7 +256,7 @@ AI 写作助手             0.489  ⚠️  观察期功能      设置 90 天复
 
 ![FVS 功能价值评分框架架构图]({{ site.baseurl }}/assets/images/paradigm-radar-ai-coding-feature-bloat-fvs-framework.svg)
 
-> 💡 **数据采集提示**：`adoption_rate` 和 `daily_active_usage` 可从 PostHog、Mixpanel 或 Amplitude 的事件追踪导出；`retention_correlation` 可用 Spearman 相关系数，对比"使用功能 X 的用户群"与"未使用功能 X 的用户群"的 30 日留存率；`maintenance_cost` 建议用"过去 3 个月该功能相关 PR 数 / 总 PR 数"归一化估算。
+> **数据采集提示**：`adoption_rate` 和 `daily_active_usage` 可从 PostHog、Mixpanel 或 Amplitude 的事件追踪导出；`retention_correlation` 可用 Spearman 相关系数，对比"使用功能 X 的用户群"与"未使用功能 X 的用户群"的 30 日留存率；`maintenance_cost` 建议用"过去 3 个月该功能相关 PR 数 / 总 PR 数"归一化估算。
 
 ---
 
@@ -512,7 +512,7 @@ if __name__ == "__main__":
 
 HEY 在 2024-2025 年的付费留存率远高于行业均值，证明这种克制是商业上可行的。
 
-> 💡 **核心洞察**：Basecamp 联合创始人 Jason Fried 曾说过一句话值得所有产品经理贴在屏幕上：*"Every feature is a promise you'll have to keep."* 功能不是礼物，是承诺——承诺你会永远维护它、改善它、为它的 bug 负责。在 AI Coding 时代，这句话的分量只会更重，因为你做承诺的速度加快了 10 倍。
+> **核心洞察**：Basecamp 联合创始人 Jason Fried 曾说过一句话值得所有产品经理贴在屏幕上：*"Every feature is a promise you'll have to keep."* 功能不是礼物，是承诺——承诺你会永远维护它、改善它、为它的 bug 负责。在 AI Coding 时代，这句话的分量只会更重，因为你做承诺的速度加快了 10 倍。
 
 ---
 
@@ -534,6 +534,8 @@ AI Coding 工具带来的研发效能提升是真实的，但它移除的是"构
 好产品从来不是功能最多的产品，而是**在正确的地方做了正确的事的产品**。
 
 ---
+
+功能膨胀的极端形态是开发流程本身被重写：当代码生成接管实现层，纪律问题从「加功能的手」转移到「定方向的人」，这条路线的阶段性盘点见[《从代码补全到自主软件工程》]({{ site.baseurl }}/paradigm-radar-agentic-coding-paradigm-shift/)。
 
 ## References
 - [Faros AI: 2026 Engineering Intelligence Report][links-1]

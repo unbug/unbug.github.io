@@ -34,6 +34,9 @@ Agent 的典型工作流包含数十甚至上百个决策步骤：感知环境�
 
 ## ALAR 双模式架构核心原理
 
+![ALAR 双模式：快路径默认、信号触发升级深路径]({{ site.baseurl }}/assets/images/paradigm-radar-alar-dual-mode.svg)
+
+
 ALAR 的核心设计思想是：**让模型学会两种推理模式，并根据任务难度动态切换**。
 
 **潜在推理 vs 显式思维链**
@@ -219,6 +222,8 @@ ALAR 的核心贡献在于将"推理深度自适应"从理论概念变为可实�
 2. 实现一个简易的难度判断模块，基于历史轨迹长度和动作空间大小做二分类，在 Tool Use 场景中优先验证 Token 节省效果
 3. 如果你的 Agent 需要极致推理质量且资源充足，同时任务涉及深度模拟推理，考虑 SR^2AM 的三系统架构作为替代方案
 4. 关注主流 Agent 框架（LangChain、LlamaIndex）是否原生支持双模式推理接口——这将大幅降低部署门槛
+
+推理预算的另一种花法——把省下的预算花在选择性验证上——见[《选择性验证还是延长预算》]({{ site.baseurl }}/paradigm-radar-sevra-selective-verification/)。
 
 ## References
 

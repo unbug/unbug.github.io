@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-planbench-xl.svg
 tags: [AgentPlanning, ToolUse, Benchmark, LongHorizon, Robustness]
-description: "UIUC发布PlanBench-Xl基准，用1665个工具与故障注入测试检索受限下的长期规划，发现工具链一旦阻断，最强模型准确率从51.9%暴跌至11.36%。"
+description: "UIUC发布PlanBench-XL基准，用1665个真实工具与故障注入机制测试检索受限条件下的长期规划能力，发现工具链一旦被阻断，最强模型准确率从51.9%暴跌至11.36%，暴露规划对可靠工具链的隐性依赖。"
 ---
 
 如果你正在构建一个需要调用多个工具的 AI Agent，你可能已经经历过这样的场景：Agent 在前几步调用一切顺利，但某个工具突然返回了意外结果，之后整个任务链就开始失控——要么反复尝试同一个无效路径，要么干脆放弃。
@@ -138,6 +138,8 @@ PlanBench-XL 揭示了一个被长期忽视的事实：**当前最先进 LLM Age
 - PlanBench-XL 论文：[arXiv:2606.22388](https://arxiv.org/abs/2606.22388)
 - PlanBench-XL 代码库：[github.com/JiayuJeff/PlanBench-XL](https://github.com/JiayuJeff/PlanBench-XL)
 - PlanBench-XL 数据集（Hugging Face）：[huggingface.co/datasets/JiayuJeff/PlanBench-XL](https://huggingface.co/datasets/JiayuJeff/PlanBench-XL)
+
+同为规划评测，另一条路线把端到端成功率拆成可归因的规划阶段，见[《从端到端成功率到细粒度规划诊断》]({{ site.baseurl }}/paradigm-radar-apb-agent-planning-benchmark/)。
 
 ## References
 

@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-agentgym2-de-idealized.svg
 tags: [AgentGym2, AgentEvaluation, Benchmarking, DeploymentReadiness, ToolDiscovery]
-description: "论文用去理想化环境评测Agent的真实部署能力，GPT-5平均分仅约44%，揭示理想化基准分数与真实世界可靠性之间存在巨大差距。"
+description: "论文用去理想化环境评测智能体的真实部署能力，最强模型GPT-5平均分仅约44%，多数失败卡在环境细节而非推理本身，揭示理想化基准分数与真实世界可靠性之间存在巨大差距。"
 ---
 
 如果你正在构建生产级 AI 智能体，你可能已经发现一个令人不安的事实：在基准测试上表现优异的模型，在实际部署中却频频翻车。
@@ -69,6 +69,9 @@ AgentGym2 通过四个相互正交的能力维度来评估 Agent：
 **深度搜索场景（Deep Search）**：Agent 需要在充满噪声的搜索结果中找到关键信息并完成综合报告。这考验 Agent 的信息筛选和整合能力。
 
 ## 实测数据：SOTA 模型的"翻车现场"
+
+![去理想化前后的分数落差与失败聚集]({{ site.baseurl }}/assets/images/paradigm-radar-agentgym2-deidealized.svg)
+
 
 **整体表现**
 AgentGym2 测试了 15 个主流模型，结果令人震惊：
@@ -187,6 +190,10 @@ AgentGym2 揭示了一个被长期忽视的事实：**当前最强大的 AI 模�
 2. **关注 Agentic Post-Training 的最新进展**。Nex-N1 系列的结果表明这是一个高价值方向
 3. **重新审视你的基准策略**。不要过度依赖单一基准分数，考虑使用多个不同假设的基准进行综合评估
 4. **在你的 Agent 中增加探索机制**。鼓励 Agent 在做出决策前充分探索可用工具和环境
+
+最后补一条读法上的提醒：本文给出的所有失败率与翻车数字，都来自论文作者自建的评测环境，属于「实验室里的真实世界」——噪声是被设计的、流程是被脚本化的，它们逼近生产但仍是生产的一种抽样，不是生产本身。把「去理想化基准」当成新的单一分数去刷，恰恰背叛了这篇论文的初衷；它真正的用法是把自家事故库里的怪案例做成私有任务，与公开榜并排跑，看两套分数说的是不是同一个故事。两个故事一致，你的评测才算及格；不一致，缺口就是你的真实风险所在。
+
+去理想化分数与真实部署之间的落差，多数可以在外壳层找到抓手：竞争力为什么已迁移到 harness，见[《外壳走上台前：Agent 的竞争从换模型转向换 Harness》]({{ site.baseurl }}/paradigm-radar-harness-first-class/)。
 
 ## References
 

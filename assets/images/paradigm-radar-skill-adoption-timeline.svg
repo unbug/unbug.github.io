@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="540" fill="#FFFFFF"/>
+  <text x="70" y="50" font-size="25" font-weight="700" fill="#1F2937">SKILL.md 的九个月：格式之争 → 平台登顶 → 内容爆炸 → 用法时代</text>
+  <line x1="90" y1="250" x2="1130" y2="250" stroke="#1F2937" stroke-width="2.5"/>
+  <g font-size="14.8">
+    <rect x="120" y="188" width="240" height="34" rx="8" fill="#FDF6E3" stroke="#B7791F" stroke-width="1.5"/>
+    <text x="132" y="210" fill="#8B5E1A" font-weight="bold">12月 规范仓库创建</text>
+    <circle cx="310" cy="250" r="8" fill="#B7791F"/>
+    <text x="310" y="290" text-anchor="middle" font-weight="bold" fill="#1F2937">01-20 / 01-22</text>
+    <text x="310" y="314" text-anchor="middle" fill="#6B7280">skillregistry.io 49 分</text>
+    <text x="310" y="336" text-anchor="middle" fill="#6B7280">Mintlify 抢注标准 48 分</text>
+    <circle cx="530" cy="250" r="11" fill="#C0392B"/>
+    <text x="530" y="196" text-anchor="middle" font-weight="bold" fill="#C0392B">02-03 主场帖 544 分</text>
+    <text x="530" y="290" text-anchor="middle" fill="#6B7280">agentskills.io 登顶（260 条）</text>
+    <text x="530" y="314" text-anchor="middle" fill="#6B7280">02-16 SkillsBench 364 分</text>
+    <text x="530" y="336" text-anchor="middle" fill="#6B7280">→ 平台跟进 + 基准化</text>
+    <circle cx="760" cy="250" r="8" fill="#2F6FB2"/>
+    <text x="760" y="290" text-anchor="middle" font-weight="bold" fill="#1F2937">05-04 / 07-30</text>
+    <text x="760" y="314" text-anchor="middle" fill="#6B7280">Osmani 长文 376 分</text>
+    <text x="760" y="336" text-anchor="middle" fill="#6B7280">单一用途技能 363 分上热榜</text>
+    <circle cx="990" cy="250" r="10" fill="#1E7A45"/>
+    <text x="990" y="196" text-anchor="middle" font-weight="bold" fill="#1E7A45">09 月 两条「用法」热帖</text>
+    <text x="990" y="290" text-anchor="middle" fill="#6B7280">团队管理 320 / 防废话技能 542</text>
+    <text x="990" y="314" text-anchor="middle" fill="#6B7280">讨论越过格式本身 = 标准开始赢</text>
+  </g>
+  <g font-size="15.5">
+    <text x="120" y="410" fill="#B7791F" font-weight="bold">谁定义</text>
+    <text x="440" y="410" fill="#C0392B" font-weight="bold">能不能用</text>
+    <text x="700" y="410" fill="#2F6FB2" font-weight="bold">写什么</text>
+    <text x="940" y="410" fill="#1E7A45" font-weight="bold">怎么管</text>
+  </g>
+  <rect x="90" y="440" width="1040" height="64" rx="12" fill="#F4F7FB" stroke="#1E3A5F" stroke-width="1.5"/>
+  <text x="610" y="468" font-size="15.5" fill="#1E3A5F" text-anchor="middle">胜出逻辑：不是格式更优，而是发起方握有最大 agent 装机量——PWA / Open GraphQL 剧本重演</text>
+  <text x="610" y="492" font-size="15" fill="#6B7280" text-anchor="middle">复测注：客户端列表改前端渲染，「46 款」停留在 09-16 首采口径，第三方复核通道变窄</text>
+</svg>

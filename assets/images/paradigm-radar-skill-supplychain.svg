@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="560" fill="#F4F7FB"/>
+  <text x="600" y="42" font-size="25" font-weight="bold" fill="#1E3A5F" text-anchor="middle">技能供应链：四段流水线上的野生尝试与标准空白</text>
+  <g font-size="14.8">
+    <rect x="50" y="80" width="255" height="170" rx="12" fill="#FFFFFF" stroke="#2F6FB2" stroke-width="2"/>
+    <text x="70" y="110" font-size="16.5" font-weight="bold" fill="#2F6FB2">① 作者</text>
+    <text x="70" y="140" fill="#1E3A5F">主流姿势：不下载，自写</text>
+    <text x="70" y="164" fill="#1E3A5F">git + symlink 到各 harness</text>
+    <text x="70" y="188" fill="#1E3A5F">（Ask HN 线程高赞共识）</text>
+    <text x="70" y="218" fill="#1E7A45">企业版：公司规范技能化</text>
+    <rect x="335" y="80" width="255" height="170" rx="12" fill="#FFFFFF" stroke="#2F6FB2" stroke-width="2"/>
+    <text x="355" y="110" font-size="16.5" font-weight="bold" fill="#2F6FB2">② 分发</text>
+    <text x="355" y="140" fill="#1E3A5F">skillregistry.io 49分（1月）</text>
+    <text x="355" y="164" fill="#1E3A5F">openskills.space 5分</text>
+    <text x="355" y="188" fill="#1E3A5F">skillhound 10分（6月）</text>
+    <text x="355" y="218" fill="#C0392B">注册表全是个位数十位数：需求未爆</text>
+    <rect x="620" y="80" width="255" height="170" rx="12" fill="#FFFFFF" stroke="#C0392B" stroke-width="2.5"/>
+    <text x="640" y="110" font-size="16.5" font-weight="bold" fill="#C0392B">③ 安装</text>
+    <text x="640" y="140" fill="#1E3A5F">「skill.md = 无签名二进制」（2分）</text>
+    <text x="640" y="164" fill="#1E3A5F">Vett 扫描/签名 3分（2月）</text>
+    <text x="640" y="188" fill="#1E3A5F">SkillScan 免费API 3分</text>
+    <text x="640" y="218" fill="#C0392B" font-weight="bold">实测：恶意技能打穿两家客户端</text>
+    <rect x="905" y="80" width="245" height="170" rx="12" fill="#FFFFFF" stroke="#2F6FB2" stroke-width="2"/>
+    <text x="925" y="110" font-size="16.5" font-weight="bold" fill="#2F6FB2">④ 运行</text>
+    <text x="925" y="140" fill="#1E3A5F">捆绑脚本随技能执行</text>
+    <text x="925" y="164" fill="#1E3A5F">drskill 配置体检 2分（7月）</text>
+    <text x="925" y="188" fill="#1E3A5F">Sigil「必须运行」编译器 5分</text>
+    <text x="925" y="218" fill="#C0392B">规范侧无审查/签名提交（11-16 复核）</text>
+  </g>
+  <g stroke="#1E3A5F" stroke-width="2" fill="none">
+    <line x1="305" y1="165" x2="335" y2="165"/><line x1="590" y1="165" x2="620" y2="165"/><line x1="875" y1="165" x2="905" y2="165"/>
+  </g>
+  <rect x="50" y="290" width="1100" height="96" rx="14" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+  <text x="600" y="326" font-size="16.5" font-weight="bold" fill="#C0392B" text-anchor="middle">首版「早期 npm 没有 audit」的判断，11-16 被在野测试坐实：Vett 实测 Claude Code 与 Codex 双双失败（2026-02-19，2 分帖）</text>
+  <text x="600" y="356" font-size="15" fill="#7B241C" text-anchor="middle">但扫描/签名/体检工具已长齐 —— 缺的不是发明，是把第三方变默认（npm audit 剧本）</text>
+  <rect x="50" y="416" width="1100" height="96" rx="14" fill="#EAF6EF" stroke="#1E7A45" stroke-width="2"/>
+  <text x="600" y="452" font-size="16" font-weight="bold" fill="#1E7A45" text-anchor="middle">对照口径：token 经济学是蛇油论的硬反证——公司内测转述：带 skill 在旗舰模型省 2–4 倍输出，且倍数随新模型增大</text>
+  <text x="600" y="482" font-size="14.5" fill="#2C6046" text-anchor="middle">（itishappy 评论 49598686，方法未公开——引用时保留「转述」等级；可复现路径见文末自测建议）</text>
+</svg>

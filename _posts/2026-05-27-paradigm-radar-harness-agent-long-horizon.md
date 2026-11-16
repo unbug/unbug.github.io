@@ -12,7 +12,7 @@ description: "针对长周期任务中单智能体成功率不足的问题，拆
 
 但现实世界里最有价值的工作从来不是这样的：修复一个生产级 Bug 需要读代码、复现、定位、打补丁、写测试、验证——不止 7 步，而是几十步；一套完整的数据处理流水线可能跨越数十个工具调用；安全审计任务需要跨阶段协作，中途任何一步失败都可能让整个流程作废。这类任务统称 **Long Horizon Task**，而能够稳定完成它们的系统，就是 Long Horizon Agent。
 
-TerminalBench-2 的公开数据可以直观感受到差距：在 89 个真实长任务上，最好的单 Agent 系统（GPT-5.5）也只有 82% 的成功率，基准 ReAct 模式只有 40%。这不是模型能力不足——而是**架构不足**。本文从端到端视角，拆解 Long Horizon Agent 的六层工程架构，给出每一层的核心设计决策。
+先还一笔旧账：本文首版写「最好的单 Agent 系统（GPT-5.5）也只有 82% 的成功率，基准 ReAct 模式只有 40%」，这两个数字与点名型号在论文与公开榜单中均无法复核，全部撤除。可核实的口径是：Terminal-Bench 2.0（arXiv `2601.11868`）由 `89` 个终端环境长任务组成，每题带人工编写的参考解与完整验证测试，论文报告的结论是「前沿模型与 Agent 在该基准上的得分低于 `65%`」。一个以「解出一道真实终端难题」为标准的基准把前沿系统压在三分之二线以下，这比任何具体百分点都更能说明问题：这不是模型能力不足——而是**架构不足**。本文从端到端视角，拆解 Long Horizon Agent 的六层工程架构，给出每一层的核心设计决策。
 
 ## 目录
 - [Long Horizon 的本质挑战](#long-horizon-的本质挑战)
@@ -34,7 +34,7 @@ TerminalBench-2 的公开数据可以直观感受到差距：在 89 个真实长
 
 **矛盾一：上下文有限 vs 任务无限长**
 
-当任务超过 30–40 步，历史轨迹会把上下文窗口塞满。最朴素的解法——截断最旧的内容——会让 Agent 失去早期关键信息（比如最初的约束条件、第一步的报错信息）。研究表明，主动折叠（Context Folding）比被动截断的任务成功率高 23%。
+当任务超过 30–40 步，历史轨迹会把上下文窗口塞满。最朴素的解法——截断最旧的内容——会让 Agent 失去早期关键信息（比如最初的约束条件、第一步的报错信息）。AgentFold 一类工作给出的方向是：在自然阶段边界主动折叠历史，优于窗口爆满才删最旧内容的被动截断；首版引用的「高 23%」无法从公开文本复核，此处撤数留方向。
 
 **矛盾二：局部最优 vs 全局目标**
 
@@ -44,7 +44,7 @@ ReAct 模式让 Agent 每一步都"想当前最优动作"，但在长任务中�
 
 长任务中工具调用会产生真实副作用：文件被创建、数据库被写入、API 被调用。一旦崩溃重启，如果没有状态持久化，这些副作用要么需要重做（浪费成本）、要么无法重做（破坏环境）。
 
-> 💡 这三个矛盾的解法——Context Folding、分层规划、状态持久化——构成了 Long Horizon Agent 工程的核心三角。
+> **这三个矛盾的解法——Context Folding、分层规划、状态持久化——构成了 Long Horizon Agent 工程的核心三角。**
 
 ---
 
@@ -100,8 +100,7 @@ STRUCT TaskGraph
 
 ![HTN 分解流程]({{ site.baseurl }}/assets/images/paradigm-radar-harness-agent-long-horizon-layer1-htn.svg)
 
-> ⚠️ **关键设计点**：`success_criterion` 字段是可机器验证的完成条件，而不是模糊的描述。例如"所有单元测试通过，覆盖率 ≥ 80%"而不是"代码修好了"。这是后续自动验收的基础。
-
+> **关键设计点**：`success_criterion` 字段是可机器验证的完成条件，而不是模糊的描述。例如"所有单元测试通过，覆盖率 ≥ 80%"而不是"代码修好了"。这是后续自动验收的基础——[《Plan-Execute 实战：上下文隔离与自测协议》]({{ site.baseurl }}/paradigm-radar-pi-agent-practice/)的自测协议正是围绕这一字段长出来的。
 ---
 
 ## 第二层：四维记忆系统
@@ -137,7 +136,7 @@ INTERFACE LongHorizonMemory
 
 ![Context Folding 触发流程]({{ site.baseurl }}/assets/images/paradigm-radar-harness-agent-long-horizon-layer2-context-folding.svg)
 
-> 💡 **Context Folding vs 截断**：截断是被动的——窗口满了就删最旧的。Folding 是主动的——在自然阶段边界时，用小模型把历史压缩成信息密度更高的摘要。这让 Agent 在第 80 步仍然"记得"第 3 步的关键约束。
+> **Context Folding vs 截断**：截断是被动的——窗口满了就删最旧的。Folding 是主动的——在自然阶段边界时，用小模型把历史压缩成信息密度更高的摘要。这让 Agent 在第 80 步仍然"记得"第 3 步的关键约束。
 
 ---
 
@@ -168,7 +167,7 @@ PROCEDURE execute(step: MicroStep, dry_run: bool) → ToolResult
 
 ![拓扑序并行调度]({{ site.baseurl }}/assets/images/paradigm-radar-harness-agent-long-horizon-layer3-scheduler.svg)
 
-> 幂等性保障：`dry_run` 模式只验证参数，不产生副作用；失败后可安全重调同一 `MicroStep`，不会重复写入。
+> 幂等性保障：`dry_run` 模式只验证参数，不产生副作用；失败后可安全重调同一 `MicroStep`，不会重复写入。执行层的两个大方向在站内有近亲：把代码当统一动作语言的路线见[《CodeAct：Agent执行范式转移》]({{ site.baseurl }}/paradigm-radar-codeact-agent-execution/)，它把「工具编排」坍缩成「写代码+跑沙箱」，与本层的沙箱设计互为表里；而「每次调用从干净状态出发、结果可执行可验证」的思想在训练端的展开，见[《PROVE：在验证过的环境里给真实执行发奖励》]({{ site.baseurl }}/paradigm-radar-prove-tool-orchestration/)的会话隔离——同一个隔离原语，工程与训练两侧各用一遍。
 
 ---
 
@@ -232,7 +231,7 @@ TABLE RecoveryPolicies
 
 ![错误恢复决策流程]({{ site.baseurl }}/assets/images/paradigm-radar-harness-agent-long-horizon-layer5-recovery.svg)
 
-> ⚠️ **重规划的"情节记忆"价值**：重规划时检索类似历史失败，可以避免 LLM 提出"已知无效的方案"。这是程序记忆与情节记忆协同工作的典型场景。
+> **重规划的"情节记忆"价值**：重规划时检索类似历史失败，可以避免 LLM 提出"已知无效的方案"。这是程序记忆与情节记忆协同工作的典型场景。顺带一条安全边际：重规划本身也是一次自我修正，若让模型在无外部锚点的情况下反复「自我纠错」，[《生成-验证差距与自我修正失败》]({{ site.baseurl }}/paradigm-radar-generation-verification-gap/)的结论是对冲不了的——修正轮数上限、机器可判的验收条件、异源验证器，三样至少要有一样在岗，重规划才不会把错误抛光得更自信。
 
 ---
 
@@ -268,7 +267,9 @@ STRUCT TaskMetrics
 ## 总结与行动清单
 Long Horizon Agent 的工程挑战不在于"更聪明的模型"，而在于**更完整的系统设计**。六层架构的每一层都解决了真实的工程难题：分层规划防止目标漂移，四维记忆对抗上下文饱和，幂等执行让恢复成为可能，检查点保障了任务不因意外而从零开始，重规划让失败成为调整而不是终止，可观测性让整个过程从黑盒变成可控。
 
-把这六层拼在一起，就是一个能稳定跑完"真实世界长任务"的 Agent 系统。
+把这六层拼在一起，就是一个能稳定跑完"真实世界长任务"的 Agent 系统。换个视角再看一遍：这六层没有一层在换模型，全部长在外壳上——[《外壳走上台前：Agent 的竞争从换模型转向换 Harness》]({{ site.baseurl }}/paradigm-radar-harness-first-class/)说的「竞争力从模型迁移到 harness」，本文就是那份迁移方案的施工图。
+
+模型换代很快，图纸很值钱。六层里被历史验证得最狠的是最不起眼的第四层：数据库、消息队列、工作流引擎在分布式时代攒下的检查点与事件溯源家底，Agent 直接继承就能用——Long Horizon 的一半难题，其实是旧工程在新外壳里的再就业。
 
 **你现在可以做的**：
 

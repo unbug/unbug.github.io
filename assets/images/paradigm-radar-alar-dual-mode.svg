@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 470" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+<rect width="1200" height="470" fill="#FFFFFF"/>
+<text x="600" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#1F2937">ALAR 双模式：先快跑，信号触发了再想深</text>
+<rect x="70" y="86" width="300" height="90" rx="10" fill="#EAF2FB" stroke="#2F6FB2" stroke-width="2"/>
+<text x="220" y="122" text-anchor="middle" font-size="16" font-weight="700" fill="#1E3A5F">快路径（默认）</text>
+<text x="220" y="150" text-anchor="middle" font-size="14" fill="#374151">短推理直接作答 · 省 Token</text>
+<rect x="830" y="86" width="300" height="90" rx="10" fill="#FDF6E3" stroke="#D1A400" stroke-width="2"/>
+<text x="980" y="122" text-anchor="middle" font-size="16" font-weight="700" fill="#713F12">深路径（按需升级）</text>
+<text x="980" y="150" text-anchor="middle" font-size="14" fill="#374151">加长潜在推理 · 想深一层</text>
+<rect x="420" y="230" width="360" height="120" rx="10" fill="#F3F4F6" stroke="#1F2937" stroke-width="2"/>
+<text x="600" y="262" text-anchor="middle" font-size="16" font-weight="700" fill="#1F2937">自适应控制器</text>
+<text x="600" y="290" text-anchor="middle" font-size="13" fill="#374151">升级触发：置信不足 · 中间矛盾 · 首轮失败</text>
+<text x="600" y="314" text-anchor="middle" font-size="13" fill="#374151">深度是预算，不是美德</text>
+<defs><marker id="a1" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1F2937"/></marker></defs>
+<line x1="372" y1="132" x2="826" y2="132" stroke="#2F6FB2" stroke-width="2.4" stroke-dasharray="7 5" marker-end="url(#a1)"/>
+<text x="600" y="120" text-anchor="middle" font-size="13" fill="#2F6FB2">信号触发时升级</text>
+<line x1="500" y1="228" x2="330" y2="180" stroke="#1F2937" stroke-width="2" marker-end="url(#a1)"/>
+<line x1="700" y1="228" x2="870" y2="180" stroke="#1F2937" stroke-width="2" marker-end="url(#a1)"/>
+<text x="600" y="404" text-anchor="middle" font-size="14" fill="#6B7280">取舍：多数步骤用快路径的钱，关键步骤用深路径的脑子——推理预算从固定档变成路由问题</text></svg>

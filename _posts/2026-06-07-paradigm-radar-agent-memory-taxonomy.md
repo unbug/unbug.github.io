@@ -103,6 +103,10 @@ Agent 记忆架构的选择不是"选一个框架"那么简单——它涉及存
 3. 根据 Agent 的查询频率，评估是否需要从 flat retrieval 迁移到 structured indexing
 4. 明确你场景中的记忆新鲜度需求，选择匹配的更新机制
 
+以上四问都不依赖任何厂商承诺，今天就能对着自家代码回答。分类先行、选型在后——这是本轮「记忆画像」研究潮给工程侧最实用的 takeaway：在此之前，多数团队的记忆方案之争其实是在没对齐分类的情况下空转。
+
+记忆架构的十年演进回答了「存什么、怎么取」；取回之后什么时候该忘，是同一枚硬币的另一面，见[《Agent记忆的遗忘架构学》]({{ site.baseurl }}/paradigm-radar-control-plane-forgetting/)。
+
 ## References
 
 - [Agent Memory: Characterization and System Implications (arXiv:2606.06448)][links-1]

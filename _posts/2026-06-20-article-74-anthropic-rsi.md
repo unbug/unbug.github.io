@@ -14,6 +14,9 @@ Anthropic Institute 发表的文章[《When AI builds itself》][paper1-url]，�
 
 ## Claude 的 52x 加速比意味着什么
 
+![RSI 加速曲线与暂停治理接口]({{ site.baseurl }}/assets/images/paradigm-radar-rsi-52x.svg)
+
+
 Anthropic Institute 的文章提供了迄今为止最量化的证据，证明 AI 正在以指数级速度接管 AI 研发本身。核心数据来自一项名为 W2S（Weak-to-Strong）的研究项目——这是一个开放式的 AI 安全研究问题：较弱的模型能否可靠地监督较强的模型？
 
 论文记录了两个关键实验组的表现对比。第一组由两名人类研究人员组成，他们在大约一周的时间内完成了这个任务，仅恢复了约 23% 的性能差距（即弱监督者与强模型之间的性能鸿沟）。第二组由 Claude-powered agents 组成，它们在 800 累计小时内恢复了 97% 的性能差距，且仅消耗了约 18,000 美元的算力成本。
@@ -129,6 +132,8 @@ Anthropic Institute 的文章提供了一个罕见的机会：一家即将 IPO �
 
 窗口期正在关闭。Anthropic 在文章结尾写道："窗口就在这里。"问题不在于我们是否有时间准备——而在于我们是否愿意在领先者还在加速的时候选择减速。
 
+
+递归自改进的激进版本还在呼吁暂停时，温和版本已经落地：不动权重、只在 harness 里进化，见[《不再调权重：Agent 的自进化搬进了 Harness》]({{ site.baseurl }}/paradigm-radar-evolving-harness-memory-skill/)。
 
 ## References
 

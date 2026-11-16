@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="500" fill="#F4F7FB"/>
+  <text x="600" y="42" font-size="25" font-weight="bold" fill="#1E3A5F" text-anchor="middle">三篇论文各答一问（数字转抄 arXiv 摘要，2026-11-16 复读）</text>
+  <g font-size="14.8">
+    <rect x="50" y="68" width="360" height="330" rx="14" fill="#FFFFFF" stroke="#2F6FB2" stroke-width="2"/>
+    <text x="72" y="98" font-size="16" font-weight="bold" fill="#2F6FB2">HarnessDev 2609.01437</text>
+    <text x="72" y="122" fill="#1E3A5F">问：LLM 能自己造外壳吗？</text>
+    <text x="72" y="152" fill="#1E3A5F">· 评估单元 = 可运行基础设施</text>
+    <text x="72" y="177" fill="#1E3A5F">· 6 创作者模型 · 4 域 · 5 基准</text>
+    <text x="72" y="202" fill="#1E3A5F">· 2,207 下游实例</text>
+    <text x="72" y="232" fill="#1E3A5F">造的外壳：代码/检索大幅落后人类</text>
+    <text x="72" y="257" fill="#1E3A5F">参考，写作/ML 实验持平或反超</text>
+    <text x="72" y="292" fill="#C0392B" font-weight="bold">进化收益跨模型迁移有限</text>
+    <text x="72" y="317" fill="#C0392B">→ pairing effect 论文侧部分实锤</text>
+    <text x="72" y="347" font-size="12.5" fill="#6B7F96">Creation + Evolution 两阶段，隐藏题防过拟合</text>
+
+    <rect x="430" y="68" width="360" height="330" rx="14" fill="#FFFFFF" stroke="#2F6FB2" stroke-width="2"/>
+    <text x="452" y="98" font-size="16" font-weight="bold" fill="#2F6FB2">CordisBench 2609.01600</text>
+    <text x="452" y="122" fill="#1E3A5F">问：模型管得住插件生命周期吗？</text>
+    <text x="452" y="152" fill="#1E3A5F">· 1,200 题生命周期推理基准</text>
+    <text x="452" y="177" fill="#1E3A5F">· 交互数越多越不可靠</text>
+    <text x="452" y="202" fill="#1E3A5F">· 拆除顺序推理是重灾区</text>
+    <text x="452" y="237" fill="#1E3A5F">GPT-5.6 Luna 每题近 3,000 推理</text>
+    <text x="452" y="262" fill="#1E3A5F">token（16 交互子集，medium）</text>
+    <text x="452" y="297" fill="#1E7A45" font-weight="bold">独立形式语义 528 题逐观测一致</text>
+    <text x="452" y="322" fill="#1E7A45">→ 推理成本可外包给确定性组件</text>
+    <text x="452" y="352" font-size="12.5" fill="#6B7F96">代码与数据随论文开源</text>
+
+    <rect x="810" y="68" width="340" height="330" rx="14" fill="#FFFFFF" stroke="#C0392B" stroke-width="2.5"/>
+    <text x="832" y="98" font-size="16" font-weight="bold" fill="#C0392B">HookPry 2609.03884</text>
+    <text x="832" y="122" fill="#1E3A5F">问：「一切皆插件」多危险？</text>
+    <text x="832" y="152" fill="#1E3A5F">· 攻击者仅需插件元数据 +</text>
+    <text x="832" y="177" fill="#1E3A5F">  lifecycle-hook 配置</text>
+    <text x="832" y="202" fill="#1E3A5F">· 25 组合 × 1,000 次端到端运行</text>
+    <text x="832" y="237" fill="#C0392B" font-weight="bold">7 / 7 参测外壳全部沦陷</text>
+    <text x="832" y="262" fill="#C0392B">单外壳成功率最高 92.5%</text>
+    <text x="832" y="297" fill="#C0392B">Microsoft Defender 召回 0%</text>
+    <text x="832" y="322" fill="#C0392B">三种静态防御并集仍漏 47.5%</text>
+    <text x="832" y="352" font-size="12.5" fill="#6B7F96">钩子以宿主权限执行，LLM 全程不可见</text>
+  </g>
+  <text x="600" y="450" font-size="15.5" fill="#41627F" text-anchor="middle">合读结论：外壳层同时获得了基准（可考）、成本表（可算）与攻击面清单（可防）——三层齐全的层，通常就是下一个独立学科</text>
+</svg>

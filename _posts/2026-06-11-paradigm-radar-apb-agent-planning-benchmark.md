@@ -183,6 +183,8 @@ APB 的核心贡献在于将 Agent 规划能力从端到端成功率的笼统指
 3. 为你的 Agent 添加中间步骤验证机制（每 N 步检查一次规划偏离度），缓解长程规划的衰减问题
 4. 如果你的团队同时使用 APB 和 REFLECT，建立"事前评估 + 事后诊断"的闭环流程——APB 用于上线前能力画像，REFLECT 用于运行时失败归因
 
+细粒度规划诊断对应着编排范式的迁移背景：规划为什么值得单独立层，见[《规划与执行分离：Agent 编排的真实谱系》]({{ site.baseurl }}/paradigm-radar-pi-agent-architecture/)。
+
 ## References
 
 - [Agent Planning Benchmark (APB, arXiv:2606.04874)][links-1]

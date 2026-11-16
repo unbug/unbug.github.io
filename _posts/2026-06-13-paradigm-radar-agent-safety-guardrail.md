@@ -154,6 +154,8 @@ AgentDoG 1.5 的核心价值在于将 Agent 安全对齐从静态的模型层面
 3. 如果你的团队同时使用 APB（第 67 篇）、AgentDoG 1.5 和 REFLECT（第 66 篇），建立"事前评估 + 事中护栏 + 事后归因"的完整安全治理闭环
 4. 根据你面临的实际风险类型选择合适的模型尺寸——简单场景用 4B，通用场景用 7B，高合规要求场景用 8B
 
+动态诊断路线之外，形式化路线把护栏的可证明性做成了构造性质，见[《用形式化逻辑装上可证明的安全护栏》]({{ site.baseurl }}/paradigm-radar-epca-provable-guardrail/)。
+
 ## References
 
 - [AgentDoG 1.5: A Lightweight and Scalable Alignment Framework for AI Agent Safety and Security (arXiv:2605.29801)][links-1]

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+<rect width="1200" height="560" fill="#FFFFFF"/>
+<text x="600" y="46" text-anchor="middle" font-size="27" font-weight="700" fill="#1F2937">MCP × 规划执行：接合面只有两个数据流</text>
+<rect x="80" y="90" width="440" height="330" rx="12" fill="#EAF2FB" stroke="#2F6FB2" stroke-width="2"/>
+<text x="300" y="124" text-anchor="middle" font-size="19" font-weight="700" fill="#1E3A5F">编排侧（Planner / Executor / Monitor）</text>
+<rect x="110" y="146" width="380" height="66" rx="8" fill="#FFFFFF" stroke="#2F6FB2" stroke-width="1.6"/>
+<text x="300" y="174" text-anchor="middle" font-size="15" fill="#1E3A5F">Planner：动作空间 = tools/list 清单</text>
+<text x="300" y="198" text-anchor="middle" font-size="13" fill="#6B7280">设计点① 每次规划前取 or 会话缓存</text>
+<rect x="110" y="226" width="380" height="66" rx="8" fill="#FFFFFF" stroke="#2F6FB2" stroke-width="1.6"/>
+<text x="300" y="254" text-anchor="middle" font-size="15" fill="#1E3A5F">Executor：tools/call + inputSchema</text>
+<text x="300" y="278" text-anchor="middle" font-size="13" fill="#6B7280">设计点② 结果全文 or 摘要进上下文</text>
+<rect x="110" y="306" width="380" height="66" rx="8" fill="#FFFFFF" stroke="#2F6FB2" stroke-width="1.6"/>
+<text x="300" y="334" text-anchor="middle" font-size="15" fill="#1E3A5F">Monitor：isError → 自行归因分类</text>
+<text x="300" y="358" text-anchor="middle" font-size="13" fill="#6B7280">设计点③ 失败语义协议不管，编排方补</text>
+<rect x="680" y="90" width="440" height="330" rx="12" fill="#F3F4F6" stroke="#1F2937" stroke-width="2"/>
+<text x="900" y="124" text-anchor="middle" font-size="19" font-weight="700" fill="#1F2937">MCP 服务器</text>
+<text x="900" y="168" text-anchor="middle" font-size="15" fill="#374151">tools（可调操作） · resources（可读源）</text>
+<text x="900" y="196" text-anchor="middle" font-size="15" fill="#374151">prompts（模板） · sampling（反向生成）</text>
+<text x="900" y="224" text-anchor="middle" font-size="15" fill="#374151">roots（宿主边界声明）</text>
+<text x="900" y="268" text-anchor="middle" font-size="14" fill="#C0392B">规范不知道调用方是否先做过规划</text>
+<text x="900" y="294" text-anchor="middle" font-size="14" fill="#C0392B">「融合」实为：把 MCP 当动作空间传输层</text>
+<text x="900" y="340" text-anchor="middle" font-size="13" fill="#6B7280">stdio 崩了=进程级重启 · SSE 断了=会话级重连</text>
+<text x="900" y="364" text-anchor="middle" font-size="13" fill="#6B7280">恢复路径两条都不在协议内</text>
+<defs><marker id="if1" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#2F6FB2"/></marker>
+<marker id="if2" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#C0392B"/></marker></defs>
+<line x1="678" y1="180" x2="496" y2="180" stroke="#2F6FB2" stroke-width="2.6" marker-end="url(#if1)"/>
+<text x="587" y="168" text-anchor="middle" font-size="14" fill="#2F6FB2">入流：清单进（带Schema）</text>
+<line x1="520" y1="258" x2="676" y2="258" stroke="#2F6FB2" stroke-width="2.6" marker-end="url(#if1)"/>
+<line x1="678" y1="286" x2="522" y2="286" stroke="#C0392B" stroke-width="2.6" marker-end="url(#if2)"/>
+<text x="587" y="276" text-anchor="middle" font-size="14" fill="#C0392B">出流：结构化结果出（isError）</text>
+<rect x="150" y="450" width="900" height="72" rx="10" fill="#F9FAFB" stroke="#D1D5DB" stroke-width="1.5"/>
+<text x="600" y="480" text-anchor="middle" font-size="16" fill="#374151">MCP 消除的是集成的重复劳动，没有消除集成的维护责任</text>
+<text x="600" y="506" text-anchor="middle" font-size="15" fill="#6B7280">漂移三速：慢（Schema变更→清单哈希）· 快（认证→快速通道）· 静默（语义变更→断言网）</text>
+</svg>

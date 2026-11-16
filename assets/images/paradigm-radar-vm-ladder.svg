@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="560" fill="#F4F7FB"/>
+  <text x="600" y="42" font-size="25" font-weight="bold" fill="#1E3A5F" text-anchor="middle">隔离阶梯：行业实际处置分布（weinzierl 楼层口径）与 ToB 案击穿的位置</text>
+  <g font-size="15">
+    <rect x="80" y="470" width="1040" height="0" fill="none"/>
+    <rect x="140" y="430" width="920" height="62" rx="10" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+    <text x="164" y="456" font-weight="bold" fill="#C0392B">第 0 级 · 提示护栏</text>
+    <text x="164" y="480" fill="#7B241C">纯文本约束。agent 拿到 shell 后形同虚设；多数团队实际停在这一级</text>
+    <rect x="200" y="352" width="800" height="62" rx="10" fill="#FDF6E3" stroke="#B7791F" stroke-width="2"/>
+    <text x="224" y="378" font-weight="bold" fill="#8B5E1A">第 1 级 · 容器（namespaces/cgroups）</text>
+    <text x="224" y="402" fill="#1E3A5F">共享内核 = 共享攻击面；SANDBOXESCAPEBENCH 证明有洞即被 LLM 利用</text>
+    <rect x="260" y="274" width="680" height="62" rx="10" fill="#EAF2FB" stroke="#2F6FB2" stroke-width="2.5"/>
+    <text x="284" y="300" font-weight="bold" fill="#2F6FB2">第 2 级 · 通用 VM（QEMU/KVM 默认配置）← ToB 案三次击穿</text>
+    <text x="284" y="324" fill="#1E3A5F">默认「全家桶」：libslirp/VGA/设备模拟全开；misconfig 与分发迟滞被机器收割</text>
+    <rect x="320" y="196" width="560" height="62" rx="10" fill="#EAF6EF" stroke="#1E7A45" stroke-width="2"/>
+    <text x="344" y="222" font-weight="bold" fill="#1E7A45">第 3 级 · 最小攻击面 VMM（Firecracker / gVisor）</text>
+    <text x="344" y="246" fill="#2C6046">对照组：agent 仍能 hardlock 宿主，但未能完成逃逸——「未破」≠「不破」</text>
+    <rect x="380" y="118" width="440" height="62" rx="10" fill="#EAF2FB" stroke="#2F6FB2" stroke-width="2"/>
+    <text x="404" y="144" font-weight="bold" fill="#2F6FB2">第 4 级 · 专用硬件 / 物理隔离</text>
+    <text x="404" y="168" fill="#1E3A5F">高保障场景；成本与「一次性环境用完即毁」的工程纪律绑定</text>
+  </g>
+  <text x="600" y="96" font-size="15.5" fill="#41627F" text-anchor="middle">线程后半段的自发流向：能力安全（Bluefin 等）——粒度授权绕开 OS 长成的可能性，与第 16 期权限载体同流</text>
+  <text x="600" y="530" font-size="15" fill="#41627F" text-anchor="middle">读法：阶梯每上一级，攻击面按数量级收缩；行业重心却在 0–1 级——共识（microVM/gVisor）与部署之间的落差才是主战场</text>
+</svg>

@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-erc8004-trust.svg
 tags: [agent-economy, trust-infrastructure, erc-8004, sybil-attack, decentralized-agent]
-description: "帝国理工对ERC-8004三条链的实证研究发现有效注册率仅3%至15%，Sybil攻击者占评审者60%至91%，揭示无许可信任与实际不可信的悖论。"
+description: "帝国理工对ERC-8004信任基础设施三条链的实证研究发现，有效注册率仅3%至15%，Sybil攻击者占评审者总量60%至91%，揭示无许可设计承诺与实际可信之间的深刻悖论。"
 ---
 
 帝国理工学院的研究团队在 arXiv 上发表了一篇论文[《Can Trustless Agents Be Trusted? An Empirical Study of the ERC-8004 Decentralized AI Agent Ecosystem》][paper1-url]，对当前最主流的去中心化AI Agent信任基础设施ERC-8004进行了系统性实证评估。
@@ -25,6 +25,9 @@ ERC-8004协议正是为了解决这个问题而设计的。它由Imperial Colleg
 这个设计听起来很理想：无许可意味着任何人都可以参与，链上存储意味着数据不可篡改，声誉系统意味着长期行为可以被追踪和评估。但理论上的优雅不等于实际的有效性——这正是这篇论文要回答的问题。
 
 ## ERC-8004 架构解析：三个注册表的设计逻辑
+
+![三注册表结构与实证读数]({{ site.baseurl }}/assets/images/paradigm-radar-erc8004-registries.svg)
+
 
 ERC-8004协议的核心由三个智能合约注册表组成，每个负责信任链中的一个环节。理解它们的工作原理是理解实证发现的前提。
 
@@ -120,6 +123,8 @@ ERC-8004协议的核心由三个智能合约注册表组成，每个负责信任
 2. 在设计Agent声誉系统时，从协议层面定义统一的量化标准和计算规范，避免不同来源评价的不可通约性问题
 3. 关注Gitcoin Passport、BrightID等链上身份解决方案与AI Agent信任基础设施的集成进展——这可能是解决Sybil攻击问题的关键路径
 4. 在评估链上Agent的可信度时，不要仅依赖单一声誉分数；交叉验证多个数据源（身份注册有效性、交互日志、社区反馈）才能形成更可靠的判断
+
+链上声誉解决「信谁」，本机执行还要回答「准什么」：权限声明的载体之争见[《Agent 权限清单要住进哪个载体》]({{ site.baseurl }}/paradigm-radar-agent-permission-artifact/)。
 
 ## References
 

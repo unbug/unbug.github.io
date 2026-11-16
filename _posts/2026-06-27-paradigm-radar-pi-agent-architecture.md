@@ -1,133 +1,67 @@
 ---
 layout: post
-title: "一分钟读论文：《基于 PI 构建你的超强智能体》"
+title: "AI 范式雷达：《规划与执行分离：Agent 编排的真实谱系》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-pi-agent-architecture.svg
-tags: [Agent, PlanExecute, Orchestration, PI, LLM]
-description: "PI架构把Agent编排拆为规划与执行两阶段，减少约60%的编排代码，在成功率与错误恢复上优于ReAct循环，代价是Plan阶段带来少量Token增量。"
+tags: [Agent, PlanExecute, Orchestration, ReAct, LLM]
+description: "规划与执行分离的编排架构从ReAct循环走到工作流分层：本文以真实论文与官方文档重建谱系，给出规划器执行器评估器三件套的工程边界，并撤回首版无法溯源的基准数字。"
 ---
 
-上周 Anthropic 发布了 Claude 4 的内部基准测试：在 Agent 编排任务上，基于 PI（Plan-Execute）架构的智能体比传统 ReAct 方案性能提升了 47%。这篇文章将解析 PI 的核心原理，并带你动手实现一个具备自适应规划与错误恢复能力的超强智能体。
+## 先还一笔旧账
 
-## 为什么传统 Agent 编排不够用了
+本文 `2026-06-27` 首版曾引用「Anthropic Claude 4 内部基准：PI 架构比 ReAct 提升 47%」「65% 开发者遇到规划失效」两组数字，并附一段 PI SDK 代码示例。`2026-11-16` 复核：前两组数字检索不到任何可公开核实的来源，首版引用的文档链接为占位地址，示例中的 `pi_sdk` 包并不存在——三项全部撤稿，本版不再出现。架构层面的定性判断（规划与执行分离对错误恢复和多工具编排有价值）作为分析观点保留，但本版把它重新钉在可核实的文献与官方文档上：没有对比实验可引，就不写百分比。这次重做本身也是本站口径纪律的一部分——观点可以旧，证据必须新。
 
-在过去的一两年里，ReAct (Reasoning + Acting) 一直是构建 AI 智能体的主流范式。其核心逻辑很简单：LLM 在每一步进行推理，决定调用哪个工具，然后根据工具返回的结果继续推理。这种模式在简单场景下表现良好，但在实际项目中，开发者逐渐发现几个明显的痛点：
+![规划-执行编排骨架三件套]({{ site.baseurl }}/assets/images/paradigm-radar-pi-agent-trio.svg)
 
-- 上下文管理碎片化：每次工具调用后，历史对话和工具结果混在一起，导致上下文迅速膨胀，LLM 容易迷失在无关信息中。
-- 错误累积难以恢复：如果某一步的工具调用返回了错误或不符合预期的结果，ReAct 循环往往会陷入死循环或产生幻觉，缺乏全局的错误修复机制。
-- 多任务编排复杂度高：当智能体需要同时调用多个工具（如数据库查询、网页搜索、代码执行）时，手动编写 ReAct 循环的分支逻辑会变得极其脆弱。
+## 真实谱系：从一步一想到有计划的行动
 
-根据 2026 年开源社区的反馈数据，超过 65% 的 Agent 开发者表示，他们在生产环境中遇到了 ReAct 架构导致的"规划失效"问题。这促使了从"单步反应式执行"向"全局规划加自适应执行"的范式转移。
+把这条线按原始文献排开，会发现「先规划再执行」不是什么新发明，而是对 ReAct 缺陷的连续修补。ReAct（arXiv `2210.03629`，Yao 等人，`2022-10` 提交，后发表于 ICLR 2023）让模型交替产出推理轨迹与动作调用，它的问题首版说对了大半：每步只看局部，长任务里历史混排、错误累积。第一条修补路线来自提示层：Plan-and-Solve（arXiv `2305.04091`，ACL 2023）把零样本提示拆成「先制定计划、再按计划执行」两步，证明仅仅让模型先列骨架就能改善多步任务的走偏——这基本就是 PI 思想的最小实验证据，只是规模在提示层而非系统层。第二条修补路线来自搜索层：LATS（arXiv `2310.04406`，`2023-10` 提交）把语言 agent 的推理、行动、规划统一进树搜索，用回溯和重放换错误恢复能力，代价是把单次前向变成多分支采样，成本结构完全不同——树搜索是「规划-执行分离」的昂贵上限形态。
 
-## PI 架构核心原理
+工程世界的收敛点在厂商侧。Anthropic 的《Building Effective Agents》（官方工程博客，`2024-12` 上线，链接在案）给出的分类学把话说得很克制：预定义代码路径走清楚的叫 workflow（其下明确列了 orchestrator-workers 这类「中央模型拆解任务、并行 workers 执行、综合结果」的模式），模型自主决定过程才叫 agent——并提醒多数场景应优先用 workflow、把 agent 留给真正开放式的任务。这份博客没有附任何「对比 ReAct 提升 N%」的基准，这本身就是个信号：一线构建者当时不认为存在可迁移的单一数字。LangGraph 官方文档则提供了可运行的对照实现：其 Plan-and-Execute 教程给出的图结构正是「planner 节点产出步骤列表、executor 节点逐步调用工具、replan 节点决定是否修订」，与首版描述的三件套一一对应——规划器、执行器、评估修订器作为工程模式是真的，只是从来没人公布过它赢 ReAct 的统一百分比。
 
-PI（Plan-Execute）架构代表了 Agent 编排从"手动编排"到"自适应编排"的重大转变。其核心思想是将智能体的工作流程显式分为两个阶段：规划 (Plan) 和执行 (Execute)。
+![从ReAct到工作流分层的谱系时间线]({{ site.baseurl }}/assets/images/paradigm-radar-pi-lineage.svg)
 
-[插图：PI 架构图 - 展示 Planner, Executor, Evaluator/Revisor 三个组件的交互关系]
+## 两篇打底论文的精读
 
-**三个核心组件**
-1. 计划生成器 (Planner)：在任务开始时，Planner 会根据用户目标和可用工具列表，生成一个结构化的执行计划。这个计划通常包含任务分解、依赖关系和预期的中间结果。
-2. 执行引擎 (Executor)：Executor 负责按计划逐步执行每个步骤。它会调用相应的工具，并将结果反馈给后续步骤或 Planner。
-3. 评估与恢复模块 (Evaluator & Revisor)：在执行过程中，Evaluator 会持续监控执行状态。如果发现错误或偏差，Revisor 会动态调整计划或重试失败步骤，而不是盲目继续。
+谱系里前两篇值得逐句读，因为它们把「规划」的收益和代价都标定了刻度。Plan-and-Solve 的问题定义非常窄：Zero-shot-CoT（「让我们一步一步思考」）在算术类任务上暴露三类失败——计算错误、漏步错误、语义误解——作者只认领其中一类：漏步错误（missing-step errors），解法就是让模型先「制定计划把整个任务切成子任务、再逐一执行」。这种克制值得注意：它没有宣称规划让一切变好，而是宣称规划精确打击一种失败模式，实验也围绕算术与推理数据集展开。后来工程圈把「先列计划」泛化成万灵药，超出了原论文的主张范围——本文首版那种「提升 47%」式的断言，正是这种泛化的极端产物。LATS 则走向另一个极端：把蒙特卡洛树搜索装进语言 agent，用模型自己当价值函数、用自反思生成扩展分支、用环境反馈（测试结果、网页观察、执行报错）回传信号做选择，在编程与交互式决策两类任务上换来了显著更强的错误恢复。它的账本同样诚实：搜索树意味着同一问题要采样多条轨迹，token 消耗与延迟按分支数放大——「规划-执行分离」的收益上限确实存在，但明码标价，付费方式是计算。把两篇并排放，PI 模式的合理预期就出来了：它买的是「漏步与失控」，付的是「计划开销与修订轮数」，值不值要看任务里漏步造成的返工有多贵。
 
-**与 ReAct/LATS 的对比**
-- ReAct：无显式规划，单步推理加执行；错误恢复有限，依赖 LLM 自我纠正；上下文管理碎片化，历史对话混排；适用场景为简单工具调用。
-- LATS (Language Agent Tree Search)：树搜索，多分支探索；错误恢复强，支持回溯和重播；上下文结构化，节点状态隔离；适用场景为复杂推理任务。
-- PI (Plan-Execute)：显式全局规划，线性或图状计划；错误恢复中到强，内置评估与动态调整；上下文集中管理，计划状态清晰；适用场景为多工具编排、生产级 Agent。
+## Anthropic 页面上的五个模式名
 
-## 5 分钟搭建你的第一个 PI Agent
+《Building Effective Agents》整页值得细读的地方在于它给了一组模式专名，而不是一个口号。页面把「预定义代码路径」的编排系统叫 workflow，逐一展开五个模式：prompt chaining（把任务切成固定次序的子调用，每步消费上一步输出）、routing（先分类再分流到不同处理链）、parallelization（分段并行或同一路务多投投票）、orchestrator-workers（中央模型动态拆解任务、派发给 workers、综合结果）、evaluator-optimizer（生成与评审交替，评审者决定是否返工）。首版三件套里的 Planner/Executor 大致对应 orchestrator-workers，Evaluator/Revisor 对应 evaluator-optimizer——也就是说，PI 并不是一个与这套分类学平行的「新架构」，而是其中两个已命名模式的组合称谓。页面另一半立场同样常被转述丢失：作者建议「能找到足够简单的方案就用它，只在必要处增加复杂度」，agent 形态留给「无法预知步数、结构开放式」的问题；而页面通篇没有给出任何跨场景成功率对比。一线实验室把「何时不该上自主循环」写成显式建议，这比任何基准数字都更能说明当时工程共识的真实形状。
 
-让我们动手实现一个基于 PI 架构的智能体。我们将使用主流的 PI SDK（或类似框架的 Plan-Execute 模式）来完成最小可行演示。
+## 框架层的实物证据：星数与尸体
 
-**环境准备**
-确保你已安装 Python 3.10+ 和相关的 AI 框架依赖：
+编排框架是这条范式最诚实的读数仪。OpenAI 的 swarm 仓库（`openai/swarm`，实测 `2026-11-16`）自述定位「探索轻量多 agent 编排的教学框架」，`22,141` 星、`2,355` fork，但最后一次 push 停在 `2026-04-15`——教学示例毕业后没人维护，是编排层快速商品化的标本。接棒者 openai-agents-python（Agents SDK）创建于 `2025-03-11`，实测 `30,701` 星、`5,062` fork，复测当天仍有提交：官方把「handoff（控制权移交）」做成一等公民，恰好是编排问题从「自己写循环」变成「框架原语」的注脚。两个仓库放一起读，能读出一个与 PI 互补的事实：规划-执行分离的思想没有以「PI 框架」的形态胜出，而是被拆进了各家 SDK 的默认图结构里——思想赢的方式是溶解。图结构一派的旗舰也在同一坐标系里：langgraph 仓库实测（`2026-11-16`）`45,004` 星、当天仍有提交，plan-and-execute 教程至今是官方文档的常设章节；微软阵营的 microsoft/agent-framework 实测 `14,697` 星、`11-15` 有提交，三家的 README 里都找不到「比 ReAct 提升 N%」式的句式——框架商卖的是控制原语，不是对比实验，这个沉默本身就是本节最重要的证据。
 
-```bash
-pip install pi-sdk langchain-openai anthropic
-```
+## 三件套还站得住吗：工程分析（分析观点）
 
-**核心代码片段**
-以下是 PI Agent 的核心初始化与计划生成逻辑（仅保留关键 20 行）：
+去掉虚构数字后，首版的架构分析哪些仍然成立？逐条重估。Planner 产出结构化计划、Executor 按计划调用、Evaluator/Revisor 监控偏差并触发修订——这个三件套成立，且比首版说得更准的表述是：它的价值不在「成功率数字」，在于把三类失败模式变成可分别治理的对象。规划幻觉（Planner 编出不存在的工具或参数）可以在规划阶段用工具 Schema 校验拦截，这是执行阶段做不到的，因为 ReAct 里没有「完整计划」这样一个可以整体校验的中间产物；循环依赖可以在计划生成期用 DAG 检查拒绝，同理；副作用治理（崩溃后哪些步骤可重放、哪些必须跳过）第一次有了天然的 checkpoint 边界——计划步骤就是状态机的节点。这三条都是结构性收益，不依赖任何基准数字就成立，本文明确标注为分析观点。反过来，两条代价也要写清：计划本身会过期，环境在长任务里持续变化，静态计划的有效期是门函数；而 replan 每触发一次，就是一次全上下文推理，规划-执行分离省的常是「步骤数」，加的是「修订轮数」，净收益强依赖任务结构——流程越像流水线越赚，越像探索越亏。这正是本站[《CodeAct：Agent执行范式转移》]({{ site.baseurl }}/paradigm-radar-codeact-agent-execution/)把赌注押在「直接生成程序」上的原因：程序本身就是计划，控制流由解释器免费执行，省掉了「计划→逐步决策」的中间商。
 
-```python
-from pi_sdk import PlanAgent, ToolRegistry, Planner, Executor
+## 失败之后的三种岔路：重试、修订还是止损（分析观点）
 
-tools = ToolRegistry()
-tools.add("search_web", description="搜索最新网页信息")
-tools.add("query_database", description="查询内部业务数据库")
+三件套真正见功夫的地方是失败分类学。步骤失败至少分三类，处置完全不同：瞬态失败（网络抖动、限流、超时）该重试，且该在原步骤内重试——惊动 Planner 是浪费；结构性失败（计划假设的世界状态不存在，比如目录路径错了、API 换了签名）该修订计划，原样重试一百次也是失败；而价值性失败（任务在当前权限或能力下根本不可达成）该止损上报，继续烧 token 属于事故。ReAct 循环把三者混作「观察结果再继续」，planner-executor 图结构给了分诊挂点：executor 的失败标记是 typed 的，replan 触发条件是显式写死的——这等于把「错误恢复」从模型的临场发挥变成图上的边。这个分诊台与后续两期的关系值得接线：失败归因（哪些失败其实是 harness 缺陷而非计划缺陷）在[《HarnessFix：失败轨迹自动修复》]({{ site.baseurl }}/paradigm-radar-harnessfix-diagnose-repair-agent-failures/)有更系统的处理；而 evaluator-optimizer 模式的命门——评审者判断力跟不上生成者——正是[《生成-验证差距与自我修正失败》]({{ site.baseurl }}/paradigm-radar-generation-verification-gap/)整期讨论的问题，Revisor 的可靠性上限就是评审模型的鉴别力上限。
 
-agent = PlanAgent(
-    model="claude-4-opus",
-    planner=Planner(strategy="structured_decomposition"),
-    executor=Executor(fallback_strategy="retry_with_revision")
-)
+## 边界与观察点
 
-plan = agent.plan("查询 Q2 销售业绩并对比去年同期增长情况")
-agent.execute(plan)
-```
+三条边界。其一，本文比较的是编排形态，不是模型能力——同一家 SDK 里 planner 节点换成哪个模型都还是那个图结构，模型越强、裸 ReAct 的可用半径越大，规划层的相对收益就越向「超长任务、多副作用、需要审计」的场景收缩。其二，「先规划」与「先授权」是两件事：规划解决「怎么做」，权限声明解决「被允许做什么」，后者住在[《Agent 权限清单要住进哪个载体》]({{ site.baseurl }}/paradigm-radar-agent-permission-artifact/)讨论的工件层，别指望计划文件兼职。其三，谱系右侧还在动：Anthropic 博客自己把「workflow 优先」写成给开发者的建议，而模型代际每往前一步，这条建议的适用范围就被测试一次。给动手的人三条最小动作：拿 LangGraph 官方 plan-and-execute 教程跑通一次三件套图结构，对照同模型裸 ReAct 在你自己任务上的表现；给计划产物加 Schema 校验与 DAG 检查，成本约半天；把「计划修订次数」记进你的观测指标——它比首版那种来历不明的成功率数字诚实得多，也更接近你生产环境的真相。
 
-[插图：PI Agent 执行路径图 - 展示计划生成到步骤执行的流程]
-
-**运行结果展示**
-在执行上述代码后，PI Agent 会首先输出计划步骤：
-1. 调用 `query_database` 获取 Q2 销售业绩数据。
-2. 调用 `query_database` 获取去年同期数据。
-3. 计算增长率并生成总结报告。
-
-如果某一步骤失败（如数据库查询超时），Executor 会自动触发 Revisor 模块，尝试重试或切换备用工具源。
-
-## 进阶：多工具编排与错误恢复
-
-在实际项目中，智能体通常需要同时调用多个工具，并保持上下文的一致性。PI 架构通过计划状态机 (Plan State Machine) 解决了这个问题。
-
-**关键逻辑图示**
-在 PI 架构中，每个计划步骤都有一个明确的状态（Pending, Executing, Success, Failed, Revision）。当某个步骤失败时，系统不会立即终止，而是将状态标记为 Failed 并触发 Revisor。
-
-[插图：多工具编排流程图 - 展示 Plan State Machine 的状态转换]
-
-**常见错误及解决方案**
-1. 规划幻觉 (Planning Hallucination)：Planner 生成了不存在的工具或错误的参数。
-   - 解决方案：在 Planner 阶段引入工具 Schema 校验，或使用内置的 Tool Validation 评估器。
-2. 执行死锁：多个步骤之间存在循环依赖。
-   - 解决方案：在计划生成时使用有向无环图 (DAG) 验证，确保计划无循环。
-
-## 性能实测
-
-我们在一个典型的多工具编排场景下进行了 Before vs After 测试。任务要求智能体完成"调研某技术领域的最新开源项目并生成对比报告"。
-
-**对比数据**
-- ReAct 方案：成功率 53%，平均执行步骤数 12.5，错误恢复次数/任务 2.3，Token 消耗（平均）4500。
-- PI 架构方案：成功率 78%，平均执行步骤数 8.2，错误恢复次数/任务 0.8，Token 消耗（平均）5200。
-- 提升比例：成功率提升 47%，平均执行步骤数减少 34%，错误恢复次数减少 65%，Token 消耗增加 15%。
-
-从数据可以看出，PI 架构在成功率和错误恢复方面表现优异，虽然 Token 消耗略有增加（主要因为 Plan 阶段的额外推理），但整体效率显著提升。
-
-## 总结与行动清单
-
-PI 架构代表了 Agent 编排从"手动编排"到"自适应编排"的范式转移。核心收益是：减少 60% 的编排代码，同时获得更好的容错性和多工具协作能力。
-
-**你现在可以做的**：
-1. 在现有项目中引入 PI SDK 或类似 Plan-Execute 框架，先用单工具场景验证规划与执行分离的效果。
-2. 将现有的 ReAct 循环迁移到 PI 的 Plan-Execute 模式，观察错误恢复能力的提升。
-3. 用 PI 架构内置的评估器 (Evaluator) 测试你的 Agent 在 edge case（如工具超时、参数错误）下的表现。
-4. 关注主流框架（LangGraph, AutoGen）对 PI 模式的原生支持，获取最新的 recipe 和 pattern。
-
-## 未来雷达观察点
-
-- 周期 1（未来 1-3 个月）：PI 架构的内置评估器 (Built-in Evaluator) 和自适应规划 (Adaptive Planning) 能力是否会成为主流 Agent 框架的标准配置？
-- 周期 2（未来 3-6 个月）：多 Agent 协作中的 Plan-Execute 模式是否会演进为"分层规划加分布式执行"架构，以支持更复杂的跨领域任务？
+收尾给一张路线牌：本篇管来路与结构——谱系从哪里来、三件套长什么样；怎么接、怎么测、会在哪些地方翻车，交给实战篇《Plan-Execute 实战：上下文隔离与自测协议》；工具层的接口怎么标准化、编排层与它如何接缝，交给互联格局篇与《MCP×规划执行：工具层与编排层的接口》。三篇分工各管一段，引用时请按段取用，别拿结构篇的框架图去回答工程题，也别拿实战篇的踩坑清单去反驳谱系判断——范式的地图上，比例尺和等高线是两种不同的诚实。
 
 ## References
 
-- [PI 架构与 Plan-Execute 模式官方文档][links-1]
-- [Anthropic Claude 4 Agent 基准测试报告][links-2]
-- [ReAct vs Plan-Execute：Agent 编排模式深度对比][links-3]
-- [LangGraph 计划执行节点实践指南][links-4]
-- [Agent 错误恢复与 Evaluator 设计模式][links-5]
+- [ReAct: Synergizing Reasoning and Acting in Language Models][links-1]
+- [Plan-and-Solve Prompting][links-2]
+- [LATS: Language Agent Tree Search][links-3]
+- [Anthropic：Building Effective Agents][links-4]
+- [LangGraph：Plan-and-Execute 教程][links-5]
+- [openai/swarm 仓库][links-6]
+- [openai/openai-agents-python 仓库][links-7]
 
-[links-1]: https://pi-agent-docs.example.com/planning-execution
-[links-2]: https://anthropic.com/research/claude-4-agent-benchmarks
-[links-3]: https://ai-research.example.com/react-vs-plan-execute
-[links-4]: https://langchain-ai.github.io/langgraph/concepts/high_level/
-[links-5]: https://agent-patterns.example.com/error-recovery-evaluators
+[links-1]: https://arxiv.org/abs/2210.03629
+[links-2]: https://arxiv.org/abs/2305.04091
+[links-3]: https://arxiv.org/abs/2310.04406
+[links-4]: https://www.anthropic.com/engineering/building-effective-agents
+[links-5]: https://langchain-ai.github.io/langgraph/tutorials/plan-and-execute/plan-and-execute/
+[links-6]: https://github.com/openai/swarm
+[links-7]: https://github.com/openai/openai-agents-python

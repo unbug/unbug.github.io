@@ -166,6 +166,8 @@ Agentic Coding 代表了 AI 编程从"被动响应式补全引擎"到"主动规�
 3. 对比至少两个框架（如 Cursor Composer 和 OpenHands）在同一任务上的表现差异，建立自己的选型判断标准
 4. 关注 SWE-bench Verified 基准的最新成绩变化——这是衡量 Agentic Coding 能力演进最客观的指标
 
+自主工程化的动作层基石是执行范式的转移：从函数调用到直接写代码执行，见[《CodeAct：Agent执行范式转移》]({{ site.baseurl }}/paradigm-radar-codeact-agent-execution/)。
+
 ## References
 
 - [SWE-bench Benchmark: Can Language Models Resolve Real-World GitHub Issues?][links-1]

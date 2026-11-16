@@ -149,6 +149,8 @@ for step in agent_loop():
 - **推理压缩技术的成熟度。** 如果蒸馏、量化和稀疏化等技术能够将模型的有效上下文窗口缩小而不损失性能，那么输入 Token 的绝对量可能会大幅下降。这将改变整个 Agent 经济学的成本结构——从"输入驱动"转向更平衡的模式。
 - **Agent 执行路径的可预测性。** 当前模型无法准确预测自身 Token 用量的根本原因是执行路径的不确定性。如果未来的架构能够通过规划阶段生成更可预测的执行路径，那么预算规划和成本控制将变得更加可靠。这与 #67 APB 中讨论的 Agent 规划能力评估方向直接相关——更好的规划意味着更少的无效迭代和更低的 Token 消耗。
 
+Token 是账单，也是预算：同一个数怎么花在刀刃上——推理时扩展的分配逻辑——见[《Agent推理时扩展的预算分配》]({{ site.baseurl }}/paradigm-radar-test-time-compute-for-agents/)。
+
 ## References
 
 - [How Do AI Agents Spend Your Money? Analyzing and Predicting Token Consumption in Agentic Coding Tasks (arXiv:2604.22750)][paper1-url]

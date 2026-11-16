@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 470" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+<rect width="1200" height="470" fill="#FFFFFF"/>
+<text x="600" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#1F2937">Agentic RAG：检索从「一锤子」变成「带反思的回路」</text>
+<defs><marker id="r1" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1F2937"/></marker></defs>
+<rect x="90" y="96" width="420" height="80" rx="10" fill="#F3F4F6" stroke="#1F2937" stroke-width="2"/>
+<text x="300" y="128" text-anchor="middle" font-size="15" font-weight="700" fill="#1F2937">传统 RAG（单趟）</text>
+<text x="300" y="156" text-anchor="middle" font-size="13" fill="#374151">问题 → 检索 top-k → 塞进提示 → 作答</text>
+<rect x="90" y="230" width="420" height="140" rx="10" fill="#EAF2FB" stroke="#2F6FB2" stroke-width="2"/>
+<text x="300" y="262" text-anchor="middle" font-size="15" font-weight="700" fill="#1E3A5F">Agentic RAG（回路）</text>
+<text x="300" y="292" text-anchor="middle" font-size="13" fill="#374151">自我反思：证据够不够？</text>
+<text x="300" y="318" text-anchor="middle" font-size="13" fill="#374151">不够 → 改写查询 → 多跳再检索</text>
+<text x="300" y="344" text-anchor="middle" font-size="13" fill="#374151">够了 → 整合作答（引用可溯源）</text>
+<path d="M420,300 Q 500,300 500,255 Q 500,215 420,225" fill="none" stroke="#2F6FB2" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="620" y="96" width="240" height="120" rx="10" fill="#EAF6EF" stroke="#166534" stroke-width="2"/>
+<text x="740" y="130" text-anchor="middle" font-size="15" font-weight="700" fill="#14532D">收益</text>
+<text x="740" y="160" text-anchor="middle" font-size="14" fill="#374151">幻觉率降 30%–50%</text>
+<text x="740" y="188" text-anchor="middle" font-size="13" fill="#374151">复杂多跳问题改善最大</text>
+<rect x="900" y="96" width="240" height="120" rx="10" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+<text x="1020" y="130" text-anchor="middle" font-size="15" font-weight="700" fill="#7F1D1D">代价</text>
+<text x="1020" y="160" text-anchor="middle" font-size="14" fill="#374151">延迟与 Token 上升</text>
+<text x="1020" y="188" text-anchor="middle" font-size="13" fill="#374151">反思本身可能跑偏</text>
+<text x="600" y="430" text-anchor="middle" font-size="14" fill="#6B7280">选型口径：错误代价高的任务买回路，简单事实查询买单趟——回路不是默认值，是定价决定</text></svg>

@@ -59,6 +59,8 @@ Recuris 的核心是一个三层记忆架构加一个进化循环。理解它之
 
 还有一个反直觉的消融值得注意。论文 Table 12 对比了四种配置（τ²-Retail，同模型同任务同预算）：裸 Agent 成功率 `58.11%`；只加工作记忆 `82.02%`；让模型自己控制技能调用（把整个技能库常驻上下文）只有 `65.57%`，比 Recuris 的 `83.55%` 低 18 个点，单次成功成本还高 46%。结论是：状态接地（state-grounded）的技能选择比「把更多东西塞进上下文」更有效，多给上下文反而买来了更差的结果。
 
+![记忆/外壳/技能三条更新通道]({{ site.baseurl }}/assets/images/paradigm-radar-harness-evolution-trio.svg)
+
 ## StarHarness 与 SkillForge：同一条路线的另外两个证据点
 
 **StarHarness**（7 位作者，企业环境方向）做的是 harness 本身的进化搜索：用分层搜索（stratified search）从基线失败行为中构造紧凑的任务池，把任务分成 proposer 可见的搜索集、proposer 不可见的选择集和留出的评估集。进化对象包括 prompt 与任务框架、工具接口、技能、MCP provider、子 Agent 结构和 agent loop 配置。结果：

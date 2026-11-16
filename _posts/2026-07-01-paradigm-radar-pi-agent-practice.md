@@ -1,182 +1,61 @@
 ---
 layout: post
-title: "一分钟读论文：《基于 PI 的智能体编排实战》"
+title: "AI 范式雷达：《Plan-Execute 实战：上下文隔离与自测协议》"
 author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-pi-agent-practice.svg
-tags: [agent, pi-architecture, plan-execute, orchestration, llm]
-description: "PI架构实战：用Plan-Execute分离替代ReAct循环，减少无效循环与上下文爆炸，配合执行器到规划器的错误反馈实现动态重规划与更好的任务分解。"
+tags: [agent, plan-execute, orchestration, context-isolation, evaluation]
+description: "规划执行分离的工程实战：三件套最小实现的代码走读、子任务上下文隔离的做法与代价、计划修订循环的落地细节，以及一套替你替换掉来历不明基准数字的自测协议。"
 ---
 
-上周行业内部基准测试显示：在复杂多步 Agent 任务中，基于 PI（Plan-Execute）架构的智能体比传统 ReAct 方案成功率提升了 40%-60%，同时显著减少了无效循环和上下文爆炸。
+## 先还一笔旧账
 
-如果你正在构建 AI 智能体，面对多工具调用、长链条任务时感到上下文管理和错误控制的痛点，那么 PI 架构正是为你准备的解决方案。本文将带你从零理解 PI 核心原理，到动手实现一个具备自适应编排能力的智能体。
+本文首版（`2026-07-01`）开篇的「行业内部基准测试：PI 比 ReAct 成功率提升 40%-60%」、文中的多工具场景 Token 对比（`3000-5000` 降至 `2000-3000`、失败率 `35%` 降至 `15%`）与某电商客服案例（`45` 秒到 `28` 秒、满意度 `+22%`），`2026-11-16` 复核全部无法溯源，连同四条占位链接一并撤除。本版保留并扩建首版真正有价值的部分——三件套的落地代码与上下文隔离设计——并把「效果数字」的位置换成一套你可以自己跑的对照协议。架构谱系与文献坐标在[《规划与执行分离：Agent 编排的真实谱系》]({{ site.baseurl }}/paradigm-radar-pi-agent-architecture/)已给全，本篇不重复，只讲工程。
 
-## 为什么这个话题重要
+## 三件套的最小实现走读
 
-在构建 AI 智能体的过程中，开发者最常遇到的痛点是：工具调用的上下文管理太碎片化，且多步任务容易陷入无限循环或错误累积。传统的 ReAct（Reasoning + Acting）模式要求 LLM 在每个步骤中同时进行推理和行动，这种紧密耦合的循环在处理复杂、长链条任务时暴露出明显局限。
+首版的代码思路是对的，走读时把该标注的补上。Planner 的本质约束是一句话：输出必须是可校验的结构——一份 JSON 数组，每项含 `id`、`description`、`tool` 三个字段，除此以外不吐任何文本。工程上第一个坎不是提示词而是解析：即便开了 `json_object` 响应格式，子任务数组外面套一层 `{"plans": [...]}` 的行为也随模型而变，所以 Planner 出口要放一个 Schema 校验器，校验失败重试一次、再失败降级为单步直接执行——这个降级路径比规划本身更常被触发，值得在监控里单列计数器。Executor 的本质是哑：拿 `tool` 字段查注册表、调用、把结果连同 `status: success/error` 结构化收集，遇到查无此工具记 error 继续走而不是抛异常中断全链——「计划里出现不存在的工具」正是规划幻觉的标准显形，Executor 是它的第一现场。State Manager 记两样东西：已执行队列（含每步的输入输出摘要）与未执行队列，它是崩溃恢复与 replan 的共同数据底座。这三段合起来没有任何框架依赖，纯 Python 两百行内可以落地，这也是判断一个编排范式成熟度的土办法：能脱离框架手写的，才算进了工程常识层。
 
-当前的现状与挑战在于：
-- 上下文爆炸：ReAct 循环不断积累历史对话和工具调用记录，导致 Token 成本急剧上升，模型注意力分散
-- 错误累积：单步执行错误会在后续循环中被放大，缺乏全局纠错机制，导致最终输出质量下降
-- 灵活性不足：硬编码的循环逻辑难以适应动态变化的任务需求，遇到边界情况时容易卡死
+![子任务上下文隔离：执行器只见分配给它的部分]({{ site.baseurl }}/assets/images/paradigm-radar-pi-practice-context-isolation.svg)
 
-PI（Plan-Execute）架构正是为解决这些问题而生的范式转移。它将智能体工作流解耦为规划（Plan）和执行（Execute）两个独立阶段，让 Agent 获得"先思考全貌，再专注执行"的能力。这种分离不仅降低了单个 LLM 调用的复杂度，还为错误恢复和动态调整提供了明确的接口。
+## 上下文隔离：省的是注意力，欠的是账
 
-[配图建议 1：传统 ReAct 循环与 PI 架构工作流对比图 - paradigm-radar-react-vs-pi-comparison.svg]
+首版最有价值的主张是子任务级上下文隔离：Executor 执行每个子任务时，只接收该子任务的描述加必要的前序结果，而不是整条对话历史。这条做对了能同时压三样东西——token 账单、无关信息对注意力的稀释、跨子任务的状态污染。它站得住的理由可以和[《Agent记忆架构的十年演进》]({{ site.baseurl }}/paradigm-radar-agent-memory-taxonomy/)里的工作记忆研究对上：长历史塞满窗口时，早期约束与报错细节最先被挤出有效注意力，隔离相当于给每个子任务发一块干净的短期记忆板。但欠账也要写清：隔离是断点，跨子任务的隐式信息（「第一步里用户其实改过需求」这类）不会自动流过断点，全靠 State Manager 显式转述——隔离越彻底，转述层的设计压力越大，转述本身又是新的 token 开销与新的幻觉入口（摘要漏写一个约束，下游全部跑偏）。工程折衷是分层传递：计划骨架全量传、前序结果按声明的依赖关系传、原始观察默认不传。再补一笔账目结构：隔离省下的是「每步携带全部历史」的平方级膨胀，代价是「每步一份转述笔记」的线性开销——步数越多、历史越长，隔离越划算，两三步的短任务上它必亏，这不是玄学，是两行算式。这一段全部标注为分析观点：方向有据，比例未经测量——所以下一节把测量方法还给你。
 
-## PI 架构核心原理：它是怎么工作的
+## Plan-Refine 循环的实现细节（分析观点）
 
-PI 架构代表了 Agent 编排从"手动编排"到"自适应编排"的范式转移。其核心思想是将任务生命周期划分为两个明确阶段：Plan 阶段生成全局计划或子任务列表，Execute 阶段专注于执行具体子任务并反馈结果。
+首版对动态重规划的判断可以保留并说得更狠：Plan-Refine 循环的成败不在「能不能重新规划」，在「什么时候不许再规划」。给 replan 设触发条件，可枚举的只有三类：步骤失败类（某步连续失败超过阈值，且失败分类是「结构性」而非瞬态——分类法在谱系篇细讲过）；依赖失效类（计划假设的世界状态变了，比如目录结构、API 签名、上游输出格式，检测手段是让每个子任务申报自己的前置假设、执行时逐条对照）；预算越界类（token 或墙钟超线，止损优先于优化）。三类都要可归因地写进日志，字段建议：`plan_version`、`step_id`、`replan_reason`、`isolated_context_tokens`。然后是最容易被省掉的保险丝：replan 次数上限（个位数起步）、逐次升级的退让路径（局部改写失败步骤 → 从当前状态重规划剩余部分 → 打包现场上报人工），以及执行一次的语义——副作用步骤要有指纹与完成标记，崩溃恢复时先对照指纹决定跳过、补偿还是重放，没有这层，replan 会把同一封邮件发三遍。这些没有一条需要基准数字支持，它们的正确性来自分布式系统四十年的常识：计划就是事务日志的表亲，日志语义照抄就行。
 
-**架构组件拆解**
-PI 架构通常包含三个核心组件：
+## 真实数字存在，只是不长在工具编排树上
 
-1. 规划器（Planner）：负责接收初始任务，进行任务分解，生成结构化的执行计划或子任务列表。规划器需要理解任务依赖关系、资源约束和预期输出格式。在实现上，Planner 通常会使用特定的 prompt template 来引导 LLM 输出 JSON 格式的 plans 数组。
+撤掉假数字之后要能回答「那到底有没有证据」。有，但要认清形状。提示层的 Plan-and-Solve 论文给过正经对照：在十个数据集、三类推理问题上，PS 与 PS+ 提示全面大幅优于 Zero-shot-CoT，数学推理上与八样本 CoT 打平——这是「先列计划再执行」最初的可复核实证，只是它测的是算术与推理题的单轮提示，不是多工具长任务。系统层的公开对照则近乎空白，而空白有结构性原因：编排对比实验有三大混杂因子——任务分布（你的十道题不是我的十道题）、工具质量（同一个计划配上不同可靠度的工具是两个成功率）、评审质量（谁来判定「完成」，正是[《生成-验证差距与自我修正失败》]({{ site.baseurl }}/paradigm-radar-generation-verification-gap/)整期的主题），连评测环境本身的理想化程度都会翻转结论，这是[《AgentGym2：去理想化评估》]({{ site.baseurl }}/paradigm-radar-agentgym2-de-idealized-evaluation/)的核心警告。所以 PI 主张的真实证据格局是：提示层有数、系统层无定论、厂商页面集体沉默——三分之二的空白意味着任何引用侧的统一百分比都该先按伪证处理，包括本文自己曾经引过的那种。这也是下一节协议存在的理由：证据缺口不能靠修辞填，只能靠你自己那三十个样本。
 
-2. 执行引擎（Executor）：负责接收规划器生成的子任务，调用相应的工具或服务完成具体操作。执行引擎关注局部最优解，将规划器的宏观意图转化为微观动作。Executor 通常是一个循环或工作流引擎，按顺序或并行执行子任务。
+## 隔离层翻车的三种典型事故（分析观点）
 
-3. 反馈与状态管理（Feedback & State Manager）：在 Execute 阶段收集执行结果，评估是否达成预期，并将状态反馈给 Planner 用于后续调整或终止流程。状态管理器需要维护全局上下文，确保各个子任务之间的数据流转正确。
+上文把隔离的好处写全了，这一节写它的病历本。事故一：摘要传话游戏。子任务结果经 State Manager 摘要后传给下游，下游再摘要传下去，约束在第二次转述时失踪——「预算不超过五十元」这种字面要求最容易死，因为摘要模型认为它是可省略的细节。对策是把计划拆成两个区：约束区全文传递、永不参与摘要，步骤区才可压缩；校验器在每个子任务的输入端断言约束区原文在场。事故二：隐式依赖不申报。计划里 B 步只写了「分析数据」，没写它需要 A 步的中间文件路径，隔离窗口里干干净净，执行器就着空上下文开始自由发挥——表现为格式漂亮、内容编造的成功。对策是依赖显式化：每个子任务必须列出输入来源（哪个步骤的哪个字段），Executor 启动前做输入就绪检查，缺料直接报依赖失效而不是开跑。事故三：执行器越权规划。子任务遇到障碍后，执行器自行改写了目标（「退款查不到就发个道歉券」），结果层面看似合理，但每个校验假设都被偷换，审计链断裂，越权动作还未必在授权清单里。对策分两层：权限层交给执行器的工具集按子任务最小化，越出即调用失败；行为层要求一切偏离必须以结构化 deviation 上报、由 replan 通道走，而不是就地取材。三种事故有一个共同点：都不是模型不够聪明造成的，是接口设计放过了本应在边界上拦截的东西——这也是把三件套当「系统」而不是当「提示词技巧」的本质区别。
 
-[配图建议 2：PI 架构组件关系图 - paradigm-radar-pi-agent-practice-architecture.svg]
+## 自测协议：把你自己的数字装上膛
 
-**与 ReAct/LATS 的对比**
-传统 ReAct 模式采用"推理-行动-观察"的紧密循环，每个步骤都需要 LLM 同时处理推理、工具调用和结果解析。而 PI 架构采用"规划-执行-反馈"的阶段式工作流，将复杂的多步推理压缩到 Plan 阶段，Execute 阶段则专注于确定性的工具执行。
+与其引用不存在的基准，不如给一个一周内能跑完的最小对照实验，本文所有「效果」从此只能来自这类你自己产出的数据。第一，选任务：从你自己的真实队列里抽 `10` 个多步任务（不是开源演示题），标准是「人工也要 `5` 步以上」，每任务配一个可机器判定的完成条件——脚本退出码、文件存在性、断言，别用「看起来对」。第二，双轨跑：同一模型、同一工具集，A 轨裸循环（一次推理一个动作），B 轨三件套（JSON 计划 + 隔离执行 + 失败回传），每任务 `3` 次重复，随机顺序。第三，记五列：通过率、总 token、墙钟时间、replan 触发次数、失败归因（计划错 / 执行错 / 工具错 / 判定错）。第四，读数的诚实姿势：`10` 任务 × `3` 重复只有 `30` 个样本，置信区间宽得多的概率是大概率事件，看方向别看小数点；若 B 轨胜率没有明显优势，接受结论——你的任务分布就是不适合先规划，这与「规划无用」不等价，也与谱系里 Anthropic 那句「先找足够简单的方案」完全自洽。协议里刻意不加「人评观感」一列：判定必须机器可执行，人能裁判的地方就该写成断言，写不成断言的验收标准本身就是一条待修的债。协议里没有一列需要厂商背书，这就是它比任何转来的百分比都可靠的原因。整套流程一个下午能跑完，建议按季度复跑并归档进基线库——它是本篇行动清单的第一项，也是全系列里唯一一项不依赖任何厂商配合就能执行的。
 
-相比 LATS（Language Agent Tree Search）等复杂搜索算法，PI 架构在工程实现上更轻量，不需要维护复杂的搜索树和评分函数，同时保持了良好的可扩展性。PI 的 Plan 阶段可以看作是一次"全局推理"，而 Execute 阶段则是"局部执行"。
+![自测协议：双轨对照与五个读数]({{ site.baseurl }}/assets/images/paradigm-radar-pi-practice-self-eval-protocol.svg)
 
-## 5 分钟搭建你的第一个 PI Agent
+## 边界与观察点
 
-**环境准备**
-要搭建一个基础的 PI Agent，你需要：
-- 一个支持工具调用的 LLM API（如 OpenAI GPT-4o, Claude 3.5/4）
-- 基础的工具函数库（如网页搜索、数据库查询、代码执行）
-- 工作流引擎或简单的 Python 脚本控制循环
-
-**核心代码片段：Planner 实现**
-以下是 Planner 的核心逻辑，使用 JSON 格式输出计划列表：
-
-```python
-import json
-from openai import OpenAI
-
-client = OpenAI(api_key="your-api-key")
-
-def generate_plan(task_description, available_tools):
-    prompt = f"""
-You are a task planner. Break down the following task into a list of subtasks.
-Task: {task_description}
-
-Available tools: {', '.join(available_tools)}
-
-Output a JSON array of objects with 'id', 'description', and 'tool' fields.
-Do not include any other text.
-"""
-    response = client.chat.completions.create(
-        model="gpt-4o",
-        messages=[{"role": "user", "content": prompt}],
-        response_format={"type": "json_object"}
-    )
-    return json.loads(response.choices[0].message.content)
-```
-
-[配图建议 3：Planner 输出 JSON 结构图 - paradigm-radar-pi-agent-practice-planner-output.svg]
-
-**核心代码片段：Executor 实现**
-Executor 负责按计划执行子任务，并收集结果：
-
-```python
-def execute_plan(plan, tools_registry):
-    results = []
-    for subtask in plan:
-        tool_name = subtask['tool']
-        tool_func = tools_registry.get(tool_name)
-        
-        if not tool_func:
-            results.append({"id": subtask['id'], "status": "error", "message": f"Tool {tool_name} not found"})
-            continue
-            
-        try:
-            # 执行工具调用，这里简化处理
-            result = tool_func(description=subtask['description'])
-            results.append({"id": subtask['id'], "status": "success", "result": result})
-        except Exception as e:
-            results.append({"id": subtask['id'], "status": "error", "message": str(e)})
-            
-    return results
-```
-
-[配图建议 4：Execute 阶段执行路径流程图 - paradigm-radar-pi-agent-practice-execute-flow.svg]
-
-## 进阶：PI 架构优化与应对策略
-
-在实际项目中应用 PI 架构时，开发者需要注意以下几个关键优化点：
-
-**动态计划调整**
-优秀的 PI 实现允许在执行过程中根据反馈动态调整 Plan。当某个子任务失败或遇到意外情况时，Executor 可以将错误信息返回给 Planner，Planner 重新生成修正后的计划，而不是直接终止整个流程。
-
-实现动态调整的关键是在 State Manager 中维护"已执行计划"和"待执行计划"的区分，并在发生错误时触发 Plan-Refine 循环。
-
-[配图建议 5：PI 架构动态调整流程图 - paradigm-radar-pi-agent-practice-dynamic-flow.svg]
-
-**工具调用上下文隔离**
-每个 Execute 子任务应该拥有独立的上下文窗口，避免不同子任务之间的状态污染。这要求在执行引擎中实现清晰的上下文边界管理。具体来说，Executor 在调用每个工具时，只传递该子任务相关的描述和必要的历史结果，而不是整个对话历史。
-
-## 实际案例与效果验证
-
-**Before vs After 对比**
-在一个典型的多工具编排场景中（如同时调用数据库查询、网页搜索和代码执行，最终生成综合报告），传统 ReAct 方案通常需要 8-12 个循环步骤，平均 Token 消耗在 3000-5000 之间，且失败率约 35%。失败的主要原因包括工具调用顺序错误、上下文过载导致 LLM 忽略关键指令等。
-
-引入 PI 架构后：
-- Plan 阶段用 300-500 Tokens 生成包含 3-5 个子任务的计划列表，明确每个子任务的目标和所需工具
-- Execute 阶段每个子任务平均消耗 400-600 Tokens，由于上下文隔离，执行更加稳定
-- 总 Token 消耗降低至 2000-3000，失败率降至 15% 以下
-
-[配图建议 6：性能对比数据图（柱状图） - paradigm-radar-pi-agent-practice-performance.svg]
-
-**真实场景应用验证**
-在某电商客服智能体项目中，将原有的 ReAct 架构迁移到 PI 架构后，处理"查询订单-检查物流-处理退款"这类多步骤任务的平均完成时间从 45 秒缩短至 28 秒，用户满意度提升了 22%。这是因为 Plan 阶段提前明确了各步骤的依赖关系，Executor 可以按照最优顺序执行，避免了 ReAct 模式中的反复试探。
-
-## 反方观点与边界条件
-
-尽管 PI 架构在复杂任务中表现优异，但它并非万能解药。以下是 PI 架构的边界条件和潜在风险：
-
-首先，对于简单、单步任务，Plan 阶段会引入额外的延迟和 Token 成本。在这种情况下，直接使用 function calling 或简单的 ReAct 循环可能更为高效。PI 架构的优势在于多步、复杂任务的编排，而不是替代所有现有的工具调用模式。
-
-其次，规划错误传播是一个关键风险。如果 Plan 阶段生成的计划存在偏差或遗漏了关键依赖，Execute 阶段往往无法自行纠正，导致整体任务失败。这要求 Planner 必须具备强大的任务分解和逻辑推理能力。在实际应用中，可以通过在 Plan 阶段引入"验证步骤"来降低这种风险。
-
-最后，PI 架构对 LLM 的指令遵循和上下文管理能力要求更高。Plan 阶段需要模型能够理解抽象的任务结构，并生成格式化的计划列表，这对模型的规划能力提出了明确挑战。对于较小或能力较弱的模型，Plan 阶段的输出质量可能不稳定，需要额外的后处理或校验逻辑。
-
-## 未来1-2个周期的雷达观察点
-
-展望未来 1-2 个技术周期，以下几个方向值得重点关注：
-
-1. PI 架构的自动化错误恢复与自我修正机制：Planner 和 Executor 之间的反馈循环将更加智能，支持自动识别计划偏差并动态重规划。未来的框架可能会内置"Plan-Execute-Verify-Revise"的完整闭环。
-
-2. 多智能体协作中的 PI 模式扩展：Multi-Agent Plan-Execute 架构将出现，其中不同的 Agent 专门负责 Plan 模块或 Execute 模块，形成专业化的智能体网络。这种分离可以让团队针对规划能力和执行能力分别优化模型选择和工具集成。
-
-[配图建议 7：未来 Multi-Agent PI 架构概念图 - paradigm-radar-pi-agent-practice-future-ma.svg]
-
-## 总结与行动清单
-
-PI 架构代表了 Agent 编排从"手动编排"到"自适应编排"的范式转移。核心收益是减少无效循环和上下文爆炸，同时获得更好的任务分解和错误恢复能力。
-
-**你现在可以做的**：
-1. 在现有项目中引入 Plan-Execute 模式，先用单工具场景验证规划器的效果
-2. 将现有的 ReAct 循环迁移到 PI 的 Plan-Execute 架构，对比 Token 消耗和成功率
-3. 实现 Executor 到 Planner 的错误反馈机制，测试动态重规划能力
-4. 关注开源 Agent 框架（如 LangGraph, AutoGen）对 PI 模式的支持进展，评估引入可能性
+三条边界。其一，本文只覆盖单 agent 内部的规划分离，多 agent 各管规划和执行（首版观察点里的 Multi-Agent PI）在本刊编排史那期有更冷的读法——见[《从ReAct到Plan-Execute：编排回头路》]({{ site.baseurl }}/paradigm-radar-agent-orchestration-react-to-pi/)，此处不重复。其二，程序化路线（模型直接写代码跑流程，见[《CodeAct：Agent执行范式转移》]({{ site.baseurl }}/paradigm-radar-codeact-agent-execution/)）对三件套构成正面替代竞争：程序自带控制流，计划文件与状态机的部分职责被解释器接管，两派的对照实验恰好可以共用上一节的协议。其三，别把计划文件当权限文件用——「打算做什么」与「被允许做什么」的载体在[《Agent 权限清单要住进哪个载体》]({{ site.baseurl }}/paradigm-radar-agent-permission-artifact/)那期，混用两者的系统安全评审过不了。观察信号两条：主流 SDK 是否把「子任务级上下文隔离」做成默认开关而非自建模式；replan 次数、计划校验失败率这类「编排健康度」指标会不会出现在下一代会话观测面板的默认视图里——replan 风暴计数尤其值得盯，它是三件套系统里最先冒烟的温度计。
 
 ## References
-- [Plan-Execute Agent Architecture Overview][links-1]
-- [ReAct vs Plan-Execute: A Comparative Study][links-2]
-- [LangGraph Agent Workflows][links-3]
-- [Anthropic Tool Use and Planning Patterns][links-4]
-- [Multi-Agent Orchestration Patterns 2026][links-5]
 
+- [ReAct: Synergizing Reasoning and Acting in Language Models][links-1]
+- [Plan-and-Solve Prompting][links-6]
+- [Anthropic：Building Effective Agents][links-2]
+- [LangGraph：Plan-and-Execute 教程][links-3]
+- [站内：规划与执行分离的真实谱系][links-4]
+- [站内：Agent记忆架构的十年演进][links-5]
 
-[links-1]: https://example.com/pi-agent-architecture
-[links-2]: https://example.com/react-vs-plan-execute
-[links-3]: https://langchain-ai.github.io/langgraph/
-[links-4]: https://example.com/anthropic-tool-use
-[links-5]: https://example.com/multi-agent-patterns-2026
+[links-1]: https://arxiv.org/abs/2210.03629
+[links-2]: https://www.anthropic.com/engineering/building-effective-agents
+[links-3]: https://langchain-ai.github.io/langgraph/tutorials/plan-and-execute/plan-and-execute/
+[links-4]: {{ site.baseurl }}/paradigm-radar-pi-agent-architecture/
+[links-5]: {{ site.baseurl }}/paradigm-radar-agent-memory-taxonomy/
+[links-6]: https://arxiv.org/abs/2305.04091

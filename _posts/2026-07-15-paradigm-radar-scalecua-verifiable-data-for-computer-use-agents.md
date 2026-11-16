@@ -26,6 +26,9 @@ ScaleCUA 的核心洞察是：这两个问题可以统一解决。通过可验�
 
 ## ScaleCUA 的核心原理：它是怎么工作的
 
+![ScaleCUA 可验证数据流水线]({{ site.baseurl }}/assets/images/paradigm-radar-scalecua-pipeline.svg)
+
+
 ScaleCUA 由三个核心组件构成，分别解决数据合成、训练效率和视觉上下文管理三大问题。下面逐一拆解。
 
 **VeriGen（可验证任务合成框架）**是 ScaleCUA 的数据引擎。它的核心设计是通过迭代式 Docker 交互和多 Agent 反馈循环来自动生成可验证的 RL 任务。传统方法生成 GUI 任务时，通常需要一个"正确答案"或"评分函数"来验证 Agent 的输出是否达标。VeriGen 的创新在于：它不依赖人工定义的评分规则，而是通过共享 Docker 交互探针（shared Docker interaction probe）让 100+ 并发 Agent Worker 同时执行任务，然后利用多 Agent 反馈循环自动筛选出可验证的高质量样本。
@@ -117,6 +120,8 @@ ScaleCUA 的核心贡献在于将 Computer Use Agent 的能力扩展瓶颈从"�
 2. 尝试将 VeriGen 的数据合成思路迁移到你的 Agent 训练 pipeline，即使不使用完整的 RLVR 框架
 3. 评估 Frontier Sampling 在你的训练场景中的适用性——如果你的任务池存在明显的难度分布不均，这个策略可能带来显著收益
 4. 关注 Docker 环境之外的任务生成方案，特别是针对需要真实操作系统资源的 CUA 应用场景
+
+把「可验证」前移到数据生产线的思想，在训练奖励端已有先声：见[《PROVE：在验证过的环境里给真实执行发奖励》]({{ site.baseurl }}/paradigm-radar-prove-tool-orchestration/)。
 
 ## References
 

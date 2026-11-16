@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+<rect width="1200" height="620" fill="#FFFFFF"/>
+<text x="600" y="46" text-anchor="middle" font-size="27" font-weight="700" fill="#1F2937">六种协议四层分工 + 四个框架落位</text>
+<g font-size="15">
+<rect x="250" y="80" width="700" height="100" rx="10" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+<text x="290" y="112" font-size="16" font-weight="700" fill="#7F1D1D">支付层</text>
+<text x="290" y="142" fill="#374151">AP2（Google+60余支付机构）：授权凭证链 · Payment Mandate</text>
+<text x="290" y="166" font-size="13" fill="#7F1D1D">唯一直接踩在钱上的一层 · 治理重量完全不同</text>
+<rect x="250" y="196" width="700" height="100" rx="10" fill="#FDF6E3" stroke="#D1A400" stroke-width="2"/>
+<text x="290" y="228" font-size="16" font-weight="700" fill="#713F12">界面层</text>
+<text x="290" y="258" fill="#374151">AG-UI（SSE事件流·三框架一等集成） vs A2UI（声明式界面）</text>
+<text x="290" y="282" font-size="13" fill="#713F12">「agent 输出不止是文本」的战场 · 下一个合并候选</text>
+<rect x="250" y="312" width="700" height="100" rx="10" fill="#EAF6EF" stroke="#166534" stroke-width="2"/>
+<text x="290" y="344" font-size="16" font-weight="700" fill="#14532D">互调层</text>
+<text x="290" y="374" fill="#374151">A2A（Linux Foundation · AWS/Cisco/MS/Salesforce/SAP/ServiceNow）</text>
+<text x="290" y="398" font-size="13" fill="#14532D">ACP 已并入 · ANP 在场外 · Agntcy 管发现与身份</text>
+<rect x="250" y="428" width="700" height="100" rx="10" fill="#EAF2FB" stroke="#2F6FB2" stroke-width="2"/>
+<text x="290" y="460" font-size="16" font-weight="700" fill="#1E3A5F">工具与上下文层</text>
+<text x="290" y="490" fill="#374151">MCP（JSON-RPC · 三原语 tools/resources/prompts · servers 仓库 92,025★）</text>
+<text x="290" y="514" font-size="13" fill="#1E3A5F">OpenAI 2025-03 全线接入 · 管道定位 · 刻意无状态</text>
+<g>
+<rect x="60" y="80" width="160" height="448" rx="10" fill="#F3F4F6" stroke="#1F2937" stroke-width="2"/>
+<text x="140" y="116" text-anchor="middle" font-size="16" font-weight="700" fill="#1F2937">框架落位</text>
+<text x="140" y="156" text-anchor="middle" fill="#374151">LangGraph</text>
+<text x="140" y="178" text-anchor="middle" font-size="13" fill="#6B7280">45,004★ 状态图</text>
+<text x="140" y="216" text-anchor="middle" fill="#374151">AutoGen</text>
+<text x="140" y="238" text-anchor="middle" font-size="13" fill="#6B7280">61,865★ 消息驱动</text>
+<text x="140" y="276" text-anchor="middle" fill="#374151">CrewAI</text>
+<text x="140" y="298" text-anchor="middle" font-size="13" fill="#6B7280">60,970★ 角色团队</text>
+<text x="140" y="336" text-anchor="middle" fill="#374151">Semantic Kernel</text>
+<text x="140" y="358" text-anchor="middle" font-size="13" fill="#6B7280">28,777★ 企业合规</text>
+<text x="140" y="404" text-anchor="middle" font-size="13" fill="#C0392B">全部创建于 2023</text>
+<text x="140" y="426" text-anchor="middle" font-size="13" fill="#C0392B">此后无新框架挤进头部</text>
+<text x="140" y="470" text-anchor="middle" font-size="12" fill="#6B7280">星数=注意力指标</text>
+<text x="140" y="492" text-anchor="middle" font-size="12" fill="#6B7280">非质量指标</text>
+</g>
+</g>
+<text x="600" y="580" text-anchor="middle" font-size="14" fill="#6B7280">治理状态实测复核于 2026-11-16 · 装机量无公开口径 · 本图不下「谁赢了」结论</text>
+</svg>

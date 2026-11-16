@@ -150,6 +150,8 @@ ALAR 的核心贡献在于将"推理深度自适应"从理论概念变为可实�
 3. 在 Tool Use 场景中优先尝试 ALAR——论文数据显示该场景的效率提升最为显著
 4. 如果你的 Agent 需要极致推理质量且资源充足，考虑 SR^2AM 的三系统架构作为替代方案
 
+同一主题的完整论述与实测数据见姊妹篇[《自适应潜在推理：Agent少想但想深》]({{ site.baseurl }}/paradigm-radar-alarm-agent-reasoning/)，本篇侧重机制速览。
+
 ## References
 
 - [Adaptive Latent Agentic Reasoning (arXiv:2606.02871)][links-1]

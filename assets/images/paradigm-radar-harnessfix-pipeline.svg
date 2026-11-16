@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+<rect width="1200" height="520" fill="#FFFFFF"/>
+<text x="600" y="46" text-anchor="middle" font-size="27" font-weight="700" fill="#1F2937">HarnessFix：从失败轨迹到回归验证的五段流水线</text>
+<defs><marker id="hf" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1F2937"/></marker></defs>
+<g font-size="14">
+<rect x="50" y="90" width="200" height="130" rx="10" fill="#F3F4F6" stroke="#1F2937" stroke-width="2"/>
+<text x="150" y="120" text-anchor="middle" font-size="16" font-weight="700" fill="#1F2937">原始输入</text>
+<text x="150" y="148" text-anchor="middle" fill="#374151">执行轨迹（碎片）</text>
+<text x="150" y="172" text-anchor="middle" fill="#374151">Harness 工件</text>
+<text x="150" y="200" text-anchor="middle" font-size="12" fill="#6B7280">代码 · 契约 · 编排定义</text>
+<rect x="310" y="90" width="220" height="130" rx="10" fill="#EAF2FB" stroke="#2F6FB2" stroke-width="2"/>
+<text x="420" y="120" text-anchor="middle" font-size="16" font-weight="700" fill="#1E3A5F">HTIR 编译</text>
+<text x="420" y="148" text-anchor="middle" fill="#374151">步骤级溯源 provenance</text>
+<text x="420" y="172" text-anchor="middle" fill="#374151">数据流 + 控制流关系</text>
+<text x="420" y="196" text-anchor="middle" fill="#374151">步骤 ↔ 工件对齐</text>
+<rect x="590" y="90" width="220" height="130" rx="10" fill="#FDF6E3" stroke="#D1A400" stroke-width="2"/>
+<text x="700" y="120" text-anchor="middle" font-size="16" font-weight="700" fill="#713F12">归因</text>
+<text x="700" y="148" text-anchor="middle" fill="#374151">责任步骤定位</text>
+<text x="700" y="172" text-anchor="middle" fill="#374151">责任工件定位</text>
+<text x="700" y="196" text-anchor="middle" font-size="12" fill="#713F12">模型错误 vs 外壳缺陷</text>
+<rect x="870" y="90" width="220" height="130" rx="10" fill="#EAF6EF" stroke="#166534" stroke-width="2"/>
+<text x="980" y="120" text-anchor="middle" font-size="16" font-weight="700" fill="#14532D">修复</text>
+<text x="980" y="148" text-anchor="middle" fill="#374151">复发票据 → flaw records</text>
+<text x="980" y="172" text-anchor="middle" fill="#374151">作用域明确的算子</text>
+<text x="980" y="196" text-anchor="middle" fill="#374151">按缺陷规格生成补丁</text>
+<rect x="590" y="290" width="500" height="110" rx="10" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+<text x="840" y="322" text-anchor="middle" font-size="16" font-weight="700" fill="#7F1D1D">回归感知验证（守门员）</text>
+<text x="840" y="350" text-anchor="middle" fill="#374151">候选补丁必须在回归集上跑赢初始 harness 才被接收</text>
+<text x="840" y="378" text-anchor="middle" font-size="13" fill="#7F1D1D">自动修复的信任边界：不在报告里「宣布修好」，在回归集里证明</text>
+<line x1="250" y1="155" x2="308" y2="155" stroke="#1F2937" stroke-width="2.4" marker-end="url(#hf)"/>
+<line x1="530" y1="155" x2="588" y2="155" stroke="#1F2937" stroke-width="2.4" marker-end="url(#hf)"/>
+<line x1="810" y1="155" x2="868" y2="155" stroke="#1F2937" stroke-width="2.4" marker-end="url(#hf)"/>
+<line x1="980" y1="220" x2="980" y2="288" stroke="#C0392B" stroke-width="2.4" marker-end="url(#hf)"/>
+<text x="150" y="345" font-size="15" fill="#374151">摘要口径：四个流行基准</text>
+<text x="150" y="372" font-size="15" font-weight="700" fill="#C0392B">相对初始 harness 提升 6.3%–18.4%</text>
+<text x="150" y="398" font-size="13" fill="#6B7280">显著优于人工设计 harness（比较的是外壳非模型）</text>
+<text x="600" y="470" text-anchor="middle" font-size="14" fill="#6B7280">首版四个百分比无法从公开文本复核 · 已撤 · 本图只保留摘要可查数字</text>
+</g>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+<rect width="1200" height="500" fill="#FFFFFF"/>
+<text x="600" y="48" text-anchor="middle" font-size="27" font-weight="700" fill="#1F2937">自测协议：一周跑出自己的对照数字</text>
+<g font-size="15">
+<rect x="60" y="90" width="200" height="150" rx="10" fill="#F3F4F6" stroke="#1F2937" stroke-width="2"/>
+<text x="160" y="122" text-anchor="middle" font-size="17" font-weight="700" fill="#1F2937">1 选任务</text>
+<text x="160" y="152" text-anchor="middle" fill="#374151">真实队列抽 10 个</text>
+<text x="160" y="176" text-anchor="middle" fill="#374151">人工也要 5 步以上</text>
+<text x="160" y="200" text-anchor="middle" fill="#C0392B">机器可判的完成条件</text>
+<rect x="300" y="90" width="200" height="150" rx="10" fill="#F3F4F6" stroke="#1F2937" stroke-width="2"/>
+<text x="400" y="122" text-anchor="middle" font-size="17" font-weight="700" fill="#1F2937">2 双轨跑</text>
+<text x="400" y="152" text-anchor="middle" fill="#374151">同模型 · 同工具集</text>
+<text x="400" y="176" text-anchor="middle" fill="#374151">A 裸循环 / B 三件套</text>
+<text x="400" y="200" text-anchor="middle" fill="#374151">每任务 3 次 · 随机顺序</text>
+<rect x="540" y="90" width="200" height="150" rx="10" fill="#F3F4F6" stroke="#1F2937" stroke-width="2"/>
+<text x="640" y="122" text-anchor="middle" font-size="17" font-weight="700" fill="#1F2937">3 记五列</text>
+<text x="640" y="152" text-anchor="middle" fill="#374151">通过率 · 总 token</text>
+<text x="640" y="176" text-anchor="middle" fill="#374151">墙钟时间 · replan 数</text>
+<text x="640" y="200" text-anchor="middle" fill="#374151">失败归因四分法</text>
+<rect x="780" y="90" width="200" height="150" rx="10" fill="#F3F4F6" stroke="#1F2937" stroke-width="2"/>
+<text x="880" y="122" text-anchor="middle" font-size="17" font-weight="700" fill="#1F2937">4 诚实读数</text>
+<text x="880" y="152" text-anchor="middle" fill="#374151">30 样本 · 看方向</text>
+<text x="880" y="176" text-anchor="middle" fill="#374151">别看小数点</text>
+<text x="880" y="200" text-anchor="middle" fill="#C0392B">输了就接受结论</text>
+<rect x="1020" y="90" width="120" height="150" rx="10" fill="#EAF6EF" stroke="#166534" stroke-width="2"/>
+<text x="1080" y="140" text-anchor="middle" font-size="16" font-weight="700" fill="#166534">归档</text>
+<text x="1080" y="168" text-anchor="middle" font-size="13" fill="#374151">进你的</text>
+<text x="1080" y="190" text-anchor="middle" font-size="13" fill="#374151">基线库</text>
+</g>
+<defs><marker id="a3" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto"><path d="M0,0 L9,3.5 L0,7 z" fill="#1F2937"/></marker></defs>
+<line x1="260" y1="165" x2="298" y2="165" stroke="#1F2937" stroke-width="2.2" marker-end="url(#a3)"/>
+<line x1="500" y1="165" x2="538" y2="165" stroke="#1F2937" stroke-width="2.2" marker-end="url(#a3)"/>
+<line x1="740" y1="165" x2="778" y2="165" stroke="#1F2937" stroke-width="2.2" marker-end="url(#a3)"/>
+<line x1="980" y1="165" x2="1018" y2="165" stroke="#1F2937" stroke-width="2.2" marker-end="url(#a3)"/>
+<rect x="120" y="300" width="960" height="140" rx="10" fill="#FDF6E3" stroke="#D1A400" stroke-width="1.6"/>
+<text x="600" y="338" text-anchor="middle" font-size="17" font-weight="700" fill="#1F2937">为什么它比转来的百分比可靠</text>
+<text x="600" y="370" text-anchor="middle" font-size="15" fill="#374151">任务分布是你的、判定条件可机器执行、样本量与置信度是明码的——</text>
+<text x="600" y="398" text-anchor="middle" font-size="15" fill="#374151">三件套是否适合你，只有这一种诚实的回答方式；协议里没有一格需要厂商背书</text>
+</svg>

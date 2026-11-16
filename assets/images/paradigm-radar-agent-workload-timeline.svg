@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="520" fill="#FFFFFF"/>
+  <text x="70" y="50" font-size="25" font-weight="700" fill="#1F2937">「k8s for agents」时间线：方向是民间先说，点火是大厂来的</text>
+  <line x1="90" y1="240" x2="1130" y2="240" stroke="#1F2937" stroke-width="2.5"/>
+  <g font-size="14.8">
+    <circle cx="180" cy="240" r="8" fill="#B7791F"/>
+    <text x="180" y="200" text-anchor="middle" font-weight="bold" fill="#8B5E1A">01-20 KAOS</text>
+    <text x="180" y="282" text-anchor="middle" fill="#6B7280">Kubernetes Agent</text>
+    <text x="180" y="304" text-anchor="middle" fill="#6B7280">Orchestration System · 26 分</text>
+    <circle cx="360" cy="240" r="8" fill="#B7791F"/>
+    <text x="360" y="200" text-anchor="middle" font-weight="bold" fill="#8B5E1A">02-15 Klaw.sh</text>
+    <text x="360" y="282" text-anchor="middle" fill="#6B7280">直白标题 Kubernetes</text>
+    <text x="360" y="304" text-anchor="middle" fill="#6B7280">for AI agents · 60 分 / 43 条</text>
+    <circle cx="540" cy="240" r="8" fill="#1F2937"/>
+    <text x="540" y="200" text-anchor="middle" font-weight="bold" fill="#1F2937">03-30 google/ax 建仓</text>
+    <text x="540" y="282" text-anchor="middle" fill="#6B7280">民间提案两个月后</text>
+    <text x="540" y="304" text-anchor="middle" fill="#6B7280">Agent Substrate 05-13 建仓</text>
+    <circle cx="760" cy="240" r="11" fill="#C0392B"/>
+    <text x="760" y="196" text-anchor="middle" font-weight="bold" fill="#C0392B">09-20/21 同周双线</text>
+    <text x="760" y="282" text-anchor="middle" fill="#374151">ax v0.3.0 主帖 663 分（供给）</text>
+    <text x="760" y="304" text-anchor="middle" fill="#374151">Linear CI 帖 313 分（需求）</text>
+    <circle cx="960" cy="240" r="10" fill="#1E7A45"/>
+    <text x="960" y="200" text-anchor="middle" font-weight="bold" fill="#1E7A45">11-16 复测</text>
+    <text x="960" y="282" text-anchor="middle" fill="#374151">ax 14,724★ 当天仍有提交</text>
+    <text x="960" y="304" text-anchor="middle" fill="#374151">substrate 3,761→6,825★（1.8 倍）</text>
+  </g>
+  <rect x="90" y="360" width="1040" height="110" rx="12" fill="#F4F7FB" stroke="#1E3A5F" stroke-width="1.5"/>
+  <text x="610" y="392" font-size="16" font-weight="bold" fill="#1E3A5F" text-anchor="middle">读法：民间 60 分 vs 主场 663 分——方向不是 Google 发明的，是行业水位涨出来的；大厂的作用是点火与收敛</text>
+  <text x="610" y="422" font-size="15" fill="#41627F" text-anchor="middle">同构先例：SKILL.md 一月民间抢注、二月平台登顶 ｜ 反向警示：民间编排项目集体沉寂，活下来靠的是维护承诺不是创意</text>
+  <text x="610" y="450" font-size="14.5" fill="#6B7280" text-anchor="middle">billions/millions/sub-500ms 全部维持「仓库自述」口径，复测仍未见第三方压测</text>
+</svg>

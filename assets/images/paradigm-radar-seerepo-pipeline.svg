@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 470" font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+<rect width="1200" height="470" fill="#FFFFFF"/>
+<text x="600" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#1F2937">SeeRepo：代码先渲染成图，再和文本一起进模型</text>
+<defs><marker id="s1" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1F2937"/></marker></defs>
+<rect x="60" y="90" width="180" height="70" rx="10" fill="#F3F4F6" stroke="#1F2937" stroke-width="2"/>
+<text x="150" y="132" text-anchor="middle" fill="#374151">源码仓库</text>
+<rect x="300" y="90" width="180" height="70" rx="10" fill="#EAF2FB" stroke="#2F6FB2" stroke-width="2"/>
+<text x="390" y="132" text-anchor="middle" fill="#1E3A5F">AST 解析</text>
+<rect x="540" y="90" width="200" height="70" rx="10" fill="#FDF6E3" stroke="#D1A400" stroke-width="2"/>
+<text x="640" y="132" text-anchor="middle" fill="#713F12">结构化可视化渲染</text>
+<rect x="800" y="90" width="330" height="70" rx="10" fill="#EAF6EF" stroke="#166534" stroke-width="2"/>
+<text x="965" y="118" text-anchor="middle" fill="#14532D">多模态输入：文本 + 图</text>
+<text x="965" y="144" text-anchor="middle" font-size="13" fill="#14532D">布局策略可选</text>
+<line x1="242" y1="125" x2="298" y2="125" stroke="#1F2937" stroke-width="2.2" marker-end="url(#s1)"/>
+<line x1="482" y1="125" x2="538" y2="125" stroke="#1F2937" stroke-width="2.2" marker-end="url(#s1)"/>
+<line x1="742" y1="125" x2="798" y2="125" stroke="#1F2937" stroke-width="2.2" marker-end="url(#s1)"/>
+<rect x="150" y="230" width="900" height="150" rx="10" fill="#FFFFFF" stroke="#C0392B" stroke-width="2"/>
+<text x="600" y="264" text-anchor="middle" font-size="16" font-weight="700" fill="#7F1D1D">三模式对照（论文的坑）</text>
+<text x="600" y="298" text-anchor="middle" font-size="14" fill="#374151">纯文本基线 ▸ 纯视觉反而更差 ▸ 文本+视觉混合最优</text>
+<text x="600" y="326" text-anchor="middle" font-size="13" fill="#374151">「看图」丢掉了编译器可解析的精确性；混合模式让图管结构直觉、文本管符号精确</text>
+<text x="600" y="354" text-anchor="middle" font-size="13" fill="#6B7280">启示：多模态的价值不在「更多模态」，在模态各管各的强项</text>
+<text x="600" y="430" text-anchor="middle" font-size="14" fill="#6B7280">编码代理的输入接口从「文件流」扩展为「文件流 + 结构视图」</text></svg>

@@ -47,7 +47,7 @@ Apple 宣布新 Mac App 让本地跑 AI 模型变得简单，帖《Apple has new
 
 热度正在落成两类可复制的东西。第一类是购买守则：reasonabl_human（评论 `50442644`）的规则清单是「买能干活的最便宜硬件、无视软件差评、到手先让 Claude 写本地优先固件」；driverdan（`50446355`）只买 Zigbee/Z-Wave 或固件可替换的设备，且非传感器设备必须脱离 App 也能全功能；scosman（`50443914`）用 Home Assistant 官方 IoT Class 分级过滤，只装 Local Push 与 Local Polling 档。守则以前只存在于老玩家的肌肉记忆，现在被写成了可检索的条目——这是「迁移」最具体的形状。
 
-第二类是工具：绣花机自研 App 的仓库 zigzag 复采 `783` 星（建仓 `10-30`，描述直接写着「通过 MCP 用 AI agent 做刺绣设计」）；发布于 `11-04` 的 smolmaxxing `728` 星；主锚帖讨论的自建替代方案，生态底座 home-assistant/core `92,318` 星（复采，仓库描述「local control and privacy first」，建仓 `2013` 年）。这与上期《Goodbye Claude, hello Pi》的「执行壳」搬家不同——那期搬的是开发者工具的位置，这期下沉到灯泡、净化器与绣花机。本地计算与云依赖的隐性成本，此前在[《AI 范式雷达：Agent 的隐藏成本》]({{ site.baseurl }}/paradigm-radar-agent-hidden-cost/)已算过一笔账；而在[《AI 范式雷达：ERC-8004 与信任基础设施》]({{ site.baseurl }}/paradigm-radar-erc8004-trust-infrastructure/)里，「去云端化」走的是链上信任这条相反路径。本期这批人选择的路线，是让自己的数据一步都不出家门。
+第二类是工具：绣花机自研 App 的仓库 zigzag 复采 `783` 星（建仓 `10-30`，描述直接写着「通过 MCP 用 AI agent 做刺绣设计」）；发布于 `11-04` 的 smolmaxxing `728` 星；主锚帖讨论的自建替代方案，生态底座 home-assistant/core `92,318` 星（复采，仓库描述「local control and privacy first」，建仓 `2013` 年）。这与上期《执行壳：有人往外搬，有人往里收》的「执行壳」搬家不同——那期搬的是开发者工具的位置，这期下沉到灯泡、净化器与绣花机。本地计算与云依赖的隐性成本，此前在[《标价之外，Harness 替你买了什么》]({{ site.baseurl }}/paradigm-radar-agent-hidden-cost/)已算过一笔账；而在[《ERC-8004信任层实证诊断》]({{ site.baseurl }}/paradigm-radar-erc8004-trust-infrastructure/)里，「去云端化」走的是链上信任这条相反路径。本期这批人选择的路线，是让自己的数据一步都不出家门。
 
 ## 第二线：旧硬件回收流
 

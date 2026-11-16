@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 590" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="590" fill="#F4F7FB"/>
+  <text x="600" y="42" font-size="25" font-weight="bold" fill="#1E3A5F" text-anchor="middle">主帖四派质疑（299 条评论归类）与各自的证据/反证</text>
+  <g font-size="14.6">
+    <rect x="50" y="70" width="545" height="180" rx="12" fill="#FDF6E3" stroke="#B7791F" stroke-width="2"/>
+    <text x="70" y="100" font-size="16" font-weight="bold" fill="#8B5E1A">① 必然论疲劳 + YAML 复刻</text>
+    <text x="70" y="128" fill="#1E3A5F">「k8sification 从来不可避免——至少能保工资」</text>
+    <text x="70" y="152" fill="#1E3A5F">「过度复杂：yaml 文件、重型框架」多附</text>
+    <text x="70" y="180" fill="#41627F">反证侧：声明式是复测中唯一没人辩护</text>
+    <text x="70" y="204" fill="#41627F">的形式选择；K8s 的 YAML 地狱可整体移植</text>
+    <rect x="615" y="70" width="535" height="180" rx="12" fill="#EAF2FB" stroke="#2F6FB2" stroke-width="2"/>
+    <text x="635" y="100" font-size="16" font-weight="bold" fill="#2F6FB2">② 普通服务论</text>
+    <text x="635" y="128" fill="#1E3A5F">faizshah：人人都有沙箱/注册表/跑法，</text>
+    <text x="635" y="152" fill="#1E3A5F">旧货拼装不是新原语（子树 9）</text>
+    <text x="635" y="180" fill="#41627F">weedfroglozenge：demo 只是暂停再恢复</text>
+    <text x="635" y="204" fill="#41627F">反证：队列+重试跑不动 suspend 语义与配额</text>
+    <rect x="50" y="272" width="545" height="180" rx="12" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+    <text x="70" y="302" font-size="16" font-weight="bold" fill="#C0392B">③ Google 厂牌折扣</text>
+    <text x="70" y="330" fill="#7B241C">Mond_：高层九成没听过，「Google 的」</text>
+    <text x="70" y="354" fill="#7B241C">是误导（子树 23）；gemini cli 杀了复活</text>
+    <text x="70" y="382" fill="#41627F">Wave/Google+ 嘲讽在场；</text>
+    <text x="70" y="406" fill="#41627F">反证：11-16 当天仍收 commit，未归档</text>
+    <rect x="615" y="272" width="535" height="180" rx="12" fill="#EAF6EF" stroke="#1E7A45" stroke-width="2"/>
+    <text x="635" y="302" font-size="16" font-weight="bold" fill="#1E7A45">④ 生态不收敛（复测新增）</text>
+    <text x="635" y="330" fill="#2C6046">briga：人人每天写新框架，没有收敛（29）</text>
+    <text x="635" y="354" fill="#2C6046">sigbottle（85，全帖最高）：谁讲讲</text>
+    <text x="635" y="378" fill="#2C6046">收敛后的工作流长什么样？</text>
+    <text x="635" y="406" fill="#41627F">建设性：srcreigh——这些原语本该是</text>
+    <text x="635" y="430" fill="#41627F">一切软件的 table stakes</text>
+  </g>
+  <rect x="50" y="480" width="1100" height="70" rx="14" fill="#FFFFFF" stroke="#1E3A5F" stroke-width="2"/>
+  <text x="600" y="510" font-size="16" font-weight="bold" fill="#1E3A5F" text-anchor="middle">四派公约数：都承认 Agent 负载在涨——争的是「新负载」还是「旧负载的新流量」，以及背书值几成</text>
+  <text x="600" y="536" font-size="14.5" fill="#41627F" text-anchor="middle">隔离工程随编排层一起到货：宿主 FS 挂进不信任 pod 的旧问题（srcreigh 自评）直通《隔离质量等于攻击面质量》</text>
+</svg>

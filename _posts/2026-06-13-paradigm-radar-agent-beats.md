@@ -5,7 +5,7 @@ author: unbug
 categories: [AI, ParadigmRadar]
 image: assets/images/paradigm-radar-agent-beats.svg
 tags: [agent-evaluation, mcp, a2a, benchmarking, standardization]
-description: "AgentBeats提出基准即Agent的评估范式，将每个基准封装为独立评审智能体，通过A2A协议与工具层标准化交互，把评估集成复杂度从两者乘积降为两者之和，开放竞赛中协调两百多个评审智能体完成大规模评估。"
+description: "AgentBeats提出基准即Agent的评估范式，把每个基准封装成独立评审智能体，经A2A协议与工具层交互，将集成复杂度从乘积降为和，开放竞赛中协调两百多个评审智能体完成评估。"
 ---
 
 在评估 M 个 Agent 系统如何在 N 个基准上表现时，传统方法需要编写 N×M 次定制化集成代码——每个基准都需要为每个 Agent 单独适配接口、处理格式差异、管理认证流程。当 Agent 生态以指数级增长时，这种线性扩展的集成成本变得不可持续。
@@ -205,6 +205,8 @@ AAA 范式通过将基准封装为 Judge Agent、利用 A2A 和 MCP 协议实现
 3. 如果你的团队同时使用 APB、REFLECT 和 AgentDoG 1.5，尝试将它们封装为 AAA Judge Agent 并通过 A2A 协议统一调度，建立标准化的评估流水线
 4. 在生产部署前使用生产对齐评估模式进行最终验证——确保评估环境与目标部署环境保持一致，缩小测试-生产分数差距
 
+基准封装成 Agent 解决了集成的工程成本，评估本身的效度危机另有一篇：[《AgentGym2：去理想化评估》]({{ site.baseurl }}/paradigm-radar-agentgym2-de-idealized-evaluation/)。
+
 ## References
 
 - [AgentBeats: Agentifying Agent Assessment for Openness, Standardization, and Reproducibility (arXiv:2606.13608)][links-1]
@@ -212,7 +214,6 @@ AAA 范式通过将基准封装为 Judge Agent、利用 A2A 和 MCP 协议实现
 - [Model Context Protocol (MCP) Documentation][links-3]
 
 
-[paper1-url]: https://arxiv.org/abs/2606.13608
 [links-1]: https://arxiv.org/abs/2606.13608
 [links-2]: https://agentprotocol.ai/specification/a2a
 [links-3]: https://modelcontextprotocol.io/docs/concepts/architecture

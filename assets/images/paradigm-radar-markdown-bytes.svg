@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="520" fill="#FFFFFF"/>
+  <text x="70" y="52" font-size="25" font-weight="700" fill="#1F2937">同一 URL 两种表示：2026-11-16 curl 复测（深色 = HTML 字节，红色 = Markdown 字节）</text>
+  <g font-size="16" fill="#1F2937">
+    <text x="70" y="118">Vercel /docs</text>
+    <text x="70" y="208">Netlify 文档</text>
+    <text x="70" y="298">acceptmarkdown.com</text>
+  </g>
+  <g>
+    <rect x="360" y="92" width="760" height="30" rx="4" fill="#1F2937"/>
+    <text x="376" y="113" fill="#FFFFFF" font-size="14.5">HTML 720,896 B</text>
+    <rect x="360" y="128" width="10.4" height="30" rx="3" fill="#C0392B"/>
+    <text x="382" y="149" fill="#C0392B" font-size="14.5" font-weight="bold">Markdown 9,867 B · 省 98.6%</text>
+    <rect x="360" y="182" width="760" height="30" rx="4" fill="#1F2937"/>
+    <text x="376" y="203" fill="#FFFFFF" font-size="14.5">HTML 277,700 B</text>
+    <rect x="360" y="218" width="8.1" height="30" rx="3" fill="#C0392B"/>
+    <text x="380" y="239" fill="#C0392B" font-size="14.5" font-weight="bold">Markdown 2,943 B · 省 98.9%</text>
+    <rect x="360" y="272" width="760" height="30" rx="4" fill="#1F2937" opacity="0.75"/>
+    <text x="376" y="293" fill="#FFFFFF" font-size="14.5">HTML 23,844 B</text>
+    <rect x="360" y="308" width="69.8" height="30" rx="3" fill="#C0392B"/>
+    <text x="442" y="329" fill="#C0392B" font-size="14.5" font-weight="bold">Markdown 2,190 B · 省 90.8%（首采 90.9% 保持）</text>
+  </g>
+  <text x="70" y="392" font-size="16" fill="#6B7280">读法：越脏的页面换菜收益越大——文档站 HTML 外壳本身已是负担；干净语义页面只差 5%–20%（评论区实测口径）。</text>
+  <text x="70" y="426" font-size="16" fill="#6B7280">对照：Anthropic 文档页首采时省 96.5%，复测该路径两模式同返 301,107 B——单点支持会失效，平台默认能力才稳。</text>
+  <text x="70" y="470" font-size="15" fill="#9CA3AF">Astro 文档仍只回 HTML：文档供料形态已成各家 DX 竞争项。</text>
+</svg>

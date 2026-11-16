@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" font-family="Helvetica Neue, Helvetica, Arial, PingFang SC, Microsoft YaHei, sans-serif">
+  <rect width="1200" height="500" fill="#FFFFFF"/>
+  <text x="70" y="52" font-size="25" font-weight="700" fill="#1F2937">一枚 CVE 的七周：从公开 PoC 到被 Agent 组装使用</text>
+  <line x1="90" y1="240" x2="1130" y2="240" stroke="#1F2937" stroke-width="2.5"/>
+  <g font-size="15.5">
+    <circle cx="180" cy="240" r="9" fill="#1F2937"/>
+    <text x="180" y="205" text-anchor="middle" font-weight="bold" fill="#1F2937">07-06</text>
+    <text x="180" y="285" text-anchor="middle" fill="#374151">Januscape 披露 + PoC 开源</text>
+    <text x="180" y="310" text-anchor="middle" fill="#6B7280">V4bel/Januscape · HN 143 分</text>
+    <text x="180" y="332" text-anchor="middle" fill="#6B7280">RHEL /dev/kvm 0666 可做 LPE（评论区）</text>
+    <circle cx="470" cy="240" r="9" fill="#C0392B"/>
+    <text x="470" y="205" text-anchor="middle" font-weight="bold" fill="#C0392B">07-13</text>
+    <text x="470" y="285" text-anchor="middle" fill="#374151">Ubuntu 发布缓解说明</text>
+    <text x="470" y="310" text-anchor="middle" fill="#6B7280">分发到全网需要时间——窗口开始计时</text>
+    <circle cx="760" cy="240" r="11" fill="#C0392B"/>
+    <text x="760" y="200" text-anchor="middle" font-weight="bold" fill="#C0392B">08-26</text>
+    <text x="760" y="285" text-anchor="middle" fill="#374151">Trail of Bits：GPT 5.6-Cyber 预览版</text>
+    <text x="760" y="310" text-anchor="middle" fill="#374151">第一轮约 1 小时用 Januscape 打穿宿主</text>
+    <text x="760" y="332" text-anchor="middle" fill="#6B7280">Debian 12 宿主机尚未完成缓解分发</text>
+    <circle cx="1040" cy="240" r="9" fill="#1F2937"/>
+    <text x="1040" y="205" text-anchor="middle" font-weight="bold" fill="#1F2937">11-16 复测</text>
+    <text x="1040" y="285" text-anchor="middle" fill="#374151">主帖 197→198 分 / 147 条（讨论定盘）</text>
+    <text x="1040" y="310" text-anchor="middle" fill="#374151">PoC 仓库 594 star，ToB 原链路径变更</text>
+  </g>
+  <rect x="90" y="380" width="1040" height="72" rx="12" fill="#FDECEA" stroke="#C0392B" stroke-width="2"/>
+  <text x="610" y="410" font-size="16.5" font-weight="bold" fill="#C0392B" text-anchor="middle">口径校正：首版记「当时无公开 exploit」，按公开时间线实为「披露约七周、PoC 在野」——含金量修正为检索与组装能力</text>
+  <text x="610" y="438" font-size="15" fill="#7B241C" text-anchor="middle">对防守方这更糟：不需要原创漏洞研究，只需要读得懂披露邮件列表 + 打得动本机配置。七周 = 新时代的补丁时限</text>
+</svg>

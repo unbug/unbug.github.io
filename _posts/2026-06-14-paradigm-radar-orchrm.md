@@ -168,6 +168,8 @@ OrchRM 通过利用多智能体执行过程中的中间产物构建胜负对，�
 3. 在测试时扩展场景下对比 OrchRM 与传统方法的性能-效率权衡——记录不同候选数量下的准确率和延迟数据
 4. 如果你的 MAS 系统同时需要安全评估和编排优化，尝试将 AgentDoG 的安全评分与 OrchRM 的编排质量评分结合使用
 
+本篇是单编排器视角的速览，多智能体版本的奖励建模与实验细节见[《OrchRM：编排奖励的自监督建模》]({{ site.baseurl }}/paradigm-radar-orchrm-multi-agent-reward-modeling/)。
+
 ## References
 
 - [Reward Modeling for Multi-Agent Orchestration (OrchRM) (arXiv:2606.13598)][links-1]
