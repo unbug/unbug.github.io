@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <text x="600" y="52" font-size="28" font-weight="700" fill="#1A1B1E" text-anchor="middle">token 花费衡量了什么：同产出周的花费离散与产出解释力</text>
+  <!-- panel a -->
+  <text x="80" y="120" font-size="22" font-weight="700" fill="#1A1B1E">a. commit 数相近的周：花费 P90 对 P10</text>
+  <rect x="120" y="180" width="960" height="34" fill="#E5E5E5"/>
+  <rect x="274" y="180" width="816" height="34" fill="#0072B2"/>
+  <text x="120" y="244" font-size="18" fill="#555555">1 倍</text>
+  <line x1="274" y1="170" x2="274" y2="224" stroke="#1A1B1E" stroke-width="2"/>
+  <text x="274" y="262" font-size="20" fill="#1A1B1E" text-anchor="middle">39 倍</text>
+  <line x1="1090" y1="170" x2="1090" y2="224" stroke="#1A1B1E" stroke-width="2"/>
+  <text x="1090" y="262" font-size="20" fill="#1A1B1E" text-anchor="middle">240 倍</text>
+  <text x="560" y="203" font-size="18" fill="#FFFFFF" text-anchor="middle">区间随周不同，轴为线性示意</text>
+  <text x="80" y="310" font-size="17" fill="#555555">P90 与 P10 取自相近 commit 周的分布；口径为花费比，不是浪费倍数</text>
+  <!-- panel b -->
+  <text x="80" y="392" font-size="22" font-weight="700" fill="#1A1B1E">b. 产出与工作指标能解释多少花费差异</text>
+  <rect x="120" y="430" width="722" height="46" fill="#0072B2"/>
+  <text x="130" y="460" font-size="20" fill="#FFFFFF">工程师之间 38%</text>
+  <rect x="120" y="500" width="247" height="46" fill="#D55E00"/>
+  <text x="130" y="530" font-size="20" fill="#FFFFFF">个体周内 13%</text>
+  <text x="80" y="600" font-size="17" fill="#555555">样本：404 名工程师 × 5 个完整周（2026-06-29 至 2026-08-02）JetBrains 遥测</text>
+</svg>
