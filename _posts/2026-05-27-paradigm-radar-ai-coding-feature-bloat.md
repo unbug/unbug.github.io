@@ -100,7 +100,7 @@ Notion 的竞争对手 Obsidian 和 Logseq 反而因此获益，它们的核心�
 
 这正是功能膨胀的闭环：**AI Coding 工具加速了其他产品的功能膨胀，自己也没能逃脱这个命运**。
 
-> ⚠️ **警示**：当你的竞争壁垒是"我的功能列表更长"，你就已经在错误的战场上作战了。用户买单的是解决问题，不是功能数量。
+> **警示**：当你的竞争壁垒是"我的功能列表更长"，你就已经在错误的战场上作战了。用户买单的是解决问题，不是功能数量。
 
 ---
 
@@ -206,13 +206,13 @@ def calculate_fvs(metrics: FeatureMetrics) -> dict:
     fvs = raw * (1 - metrics.maintenance_cost * 0.5)
 
     if fvs >= 0.6:
-        verdict = "✅ 核心功能"
+        verdict = "核心功能"
         action  = "持续迭代，深化体验"
     elif fvs >= 0.4:
-        verdict = "⚠️  观察期功能"
+        verdict = "观察期功能"
         action  = "设置 90 天复查期，追踪趋势"
     else:
-        verdict = "🗑️  僵尸功能候选"
+        verdict = "僵尸功能候选"
         action  = "启动下线流程，或彻底重设计"
 
     return {
@@ -246,12 +246,12 @@ if __name__ == "__main__":
 ```
 功能名称                    FVS  判定               建议行动
 --------------------------------------------------------------------------------
-核心文档编辑器         0.704  ✅ 核心功能         持续迭代，深化体验
-AI 写作助手             0.489  ⚠️  观察期功能      设置 90 天复查期，追踪趋势
-实时多人协作            0.318  🗑️  僵尸功能候选    启动下线流程，或彻底重设计
-版本历史时间轴          0.165  🗑️  僵尸功能候选    启动下线流程，或彻底重设计
-自定义主题引擎          0.060  🗑️  僵尸功能候选    启动下线流程，或彻底重设计
-导出为 PDF              0.089  🗑️  僵尸功能候选    启动下线流程，或彻底重设计
+核心文档编辑器         0.704  核心功能           持续迭代，深化体验
+AI 写作助手             0.489  观察期功能         设置 90 天复查期，追踪趋势
+实时多人协作            0.318  僵尸功能候选        启动下线流程，或彻底重设计
+版本历史时间轴          0.165  僵尸功能候选        启动下线流程，或彻底重设计
+自定义主题引擎          0.060  僵尸功能候选        启动下线流程，或彻底重设计
+导出为 PDF              0.089  僵尸功能候选        启动下线流程，或彻底重设计
 ```
 
 ![FVS 功能价值评分框架架构图]({{ site.baseurl }}/assets/images/paradigm-radar-ai-coding-feature-bloat-fvs-framework.svg)
@@ -335,7 +335,7 @@ def fetch_pr_velocity(owner: str, repo: str, token: str,
         "after_ai":            after,
         "velocity_change":     f"{rate_change:+.0f}%",
         "avg_pr_size_change":  f"{size_change:+.0f}%",
-        # ⚠️  如果速率提升 >50% 且平均 PR 体积也增大，是功能膨胀的强烈信号
+        # 注意：如果速率提升 >50% 且平均 PR 体积也增大，是功能膨胀的强烈信号
         "bloat_risk":          rate_change > 50 and size_change > 20,
     }
 
@@ -354,7 +354,7 @@ if __name__ == "__main__":
           f"均摊 {result['after_ai']['avg_size']} 行变更")
     print(f"  PR 速率变化: {result['velocity_change']}")
     print(f"  PR 体积变化: {result['avg_pr_size_change']}")
-    print(f"  🚨 功能膨胀风险: {'HIGH' if result['bloat_risk'] else 'LOW'}")
+    print(f"  功能膨胀风险: {'HIGH' if result['bloat_risk'] else 'LOW'}")
 ```
 
 如果你的输出显示 `功能膨胀风险: HIGH`，说明你的团队确实在用 AI 的速度更快地堆砌代码，但并不意味着你在更快地创造用户价值——这是值得拉响警报的信号。
@@ -416,10 +416,10 @@ class KillCandidate:
         score  = self.kill_score()
         labels = [s.value for s in self.signals]
         if score >= 0.70:
-            return f"🔴 强烈建议下线  (score={score:.2f}, signals={labels})"
+            return f"强烈建议下线  (score={score:.2f}, signals={labels})"
         elif score >= 0.50:
-            return f"🟡 产品会议评估  (score={score:.2f}, signals={labels})"
-        return     f"🟢 保留/观察期  (score={score:.2f}, signals={labels})"
+            return f"产品会议评估  (score={score:.2f}, signals={labels})"
+        return     f"保留/观察期  (score={score:.2f}, signals={labels})"
 
 
 if __name__ == "__main__":
@@ -442,16 +442,16 @@ if __name__ == "__main__":
 ```
 功能名称               采用率  月维护  决策
 ──────────────────────────────────────────────────────────────────────────────────────
-导出为 Keynote            2%      6h  🔴 强烈建议下线  (score=0.81, ...)
-自定义通知声音            1%      3h  🔴 强烈建议下线  (score=0.84, ...)
-数据看板 v1 (旧版)       18%     28h  🟡 产品会议评估  (score=0.61, ...)
-快捷键教学弹窗            7%      4h  🟢 保留/观察期  (score=0.40, ...)
-团队日历集成             33%     12h  🟢 保留/观察期  (score=0.23, ...)
+导出为 Keynote            2%      6h  强烈建议下线  (score=0.81, ...)
+自定义通知声音            1%      3h  强烈建议下线  (score=0.84, ...)
+数据看板 v1 (旧版)       18%     28h  产品会议评估  (score=0.61, ...)
+快捷键教学弹窗            7%      4h  保留/观察期  (score=0.40, ...)
+团队日历集成             33%     12h  保留/观察期  (score=0.23, ...)
 ```
 
 ![Feature Kill Decider 功能下线决策流程图]({{ site.baseurl }}/assets/images/paradigm-radar-ai-coding-feature-bloat-kill-flow.svg)
 
-> ⚠️ **实操提醒**：下线功能不等于"删除代码"，第一步是**隐藏入口 + 内测通知**，观察 30 天后再做最终决定。给真正有需求的用户预留反馈渠道，你会发现大多数时候反弹声音很小。
+> **实操提醒**：下线功能不等于"删除代码"，第一步是**隐藏入口 + 内测通知**，观察 30 天后再做最终决定。给真正有需求的用户预留反馈渠道，你会发现大多数时候反弹声音很小。
 
 ---
 
