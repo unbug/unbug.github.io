@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <text x="600" y="56" font-size="27" font-weight="700" fill="#1A1B1E" text-anchor="middle">审稿缺点摘自附录的比例：LLM 对人类</text>
+  <!-- baseline & axis -->
+  <line x1="120" y1="560" x2="1080" y2="560" stroke="#1A1B1E" stroke-width="1.5"/>
+  <!-- bars: scale 100% = 420px -->
+  <rect x="220" y="300.8" width="200" height="259.2" fill="#D55E00"/>
+  <text x="320" y="284" font-size="24" font-weight="700" fill="#1A1B1E" text-anchor="middle">62.00%</text>
+  <text x="320" y="600" font-size="19" fill="#333333" text-anchor="middle">LLM 审稿</text>
+  <text x="320" y="628" font-size="16" fill="#767676" text-anchor="middle">ICLR 2027 四模型均值</text>
+  <rect x="560" y="524.7" width="200" height="35.3" fill="#999999"/>
+  <text x="660" y="508" font-size="24" font-weight="700" fill="#1A1B1E" text-anchor="middle">8.40%</text>
+  <text x="660" y="600" font-size="19" fill="#333333" text-anchor="middle">人类审稿</text>
+  <text x="660" y="628" font-size="16" fill="#767676" text-anchor="middle">ICLR 2021 - 2024</text>
+  <rect x="820" y="444.1" width="200" height="115.9" fill="#0072B2"/>
+  <text x="920" y="428" font-size="24" font-weight="700" fill="#1A1B1E" text-anchor="middle">27.60%</text>
+  <text x="920" y="600" font-size="19" fill="#333333" text-anchor="middle">人类审稿（升）</text>
+  <text x="920" y="628" font-size="16" fill="#767676" text-anchor="middle">ICLR 2027，仅时间相关</text>
+  <!-- note -->
+  <text x="120" y="116" font-size="17" fill="#555555">口径：Table 1 附录相关缺点占比均值；LLM 组与人类组为不同论文、不同年份；LLM 组另标 ± 7.70</text>
+  <text x="120" y="146" font-size="17" fill="#555555">蓝条仅陈列时间线事实，论文声明不构成 LLM 导致人类审稿附录化的证据</text>
+</svg>
