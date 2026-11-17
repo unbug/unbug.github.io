@@ -1,5 +1,5 @@
 {
-  "currentPhase": "published",
+  "currentPhase": "idle",
   "lastPublished": {
     "n": 27,
     "slug": "paradigm-radar-aws-emulator-simulated-world",
@@ -10,6 +10,15 @@
   "totalPublished": 27,
   "nextScheduled": "2026-11-18",
   "candidateTopics": [
+    {
+      "topic": "智能体接入层（平台封禁 agent/x402 支付/准入重定价）——11-17 NOTOPIC 轮最强候选 3.83；复活判据：x402 第二家大厂采用，或第二起平台封禁 ≥150 分独立帖",
+      "score": 3.83,
+      "sources": [
+        "https://news.ycombinator.com/item?id=50477649",
+        "https://news.ycombinator.com/item?id=50458900",
+        "https://news.ycombinator.com/item?id=50496602"
+      ]
+    },
     {
       "topic": "agent 常驻执行基座产品化+邻接层（雷达#20 主簇残留：Dots/Duet/OpenShell/MXC/Duet 发布物已密，需求端证据弱；复活条件：GitHub『agent-scale Git infra』系列或同类平台方帖获 >150 分主帖，或 OpenShell/MXC 出现 CNCF/OWASP/跨厂商互操作动作，或 Dots/Duet 出现第三方独立行为审计爆款）",
       "score": 3.85,
@@ -22,7 +31,7 @@
       ]
     },
     {
-      "topic": "agent 执行基座标准化波（Mxc/OpenShell/SPACE 任一进入 CNCF/OWASP 或跨厂商互操作策略格式→升级规范波重新计分；SPACE 上 HN >150 分→开发者拐点；新增子信号：gVisor 捐 CNCF（gvisor.dev 博客 10-02 实测，HN 仅 24 分）是否带出 agent 隔离策略格式）【11-16 事件：OpenShell 11-10 正式进 CNCF Sandbox（官方博客实测、Red Hat CTO 具名、采用 Cedar）——标准化触发条件已达成，但本期撞执行基座家族规避清单未用；素材存 research-brief-radar-2026-11-16.md，解禁后优先复议；MXC v1.1.0 属产品迭代不算】",
+      "topic": "agent 执行基座标准化波（Mxc/OpenShell/SPACE 任一进入 CNCF/OWASP 或跨厂商互操作策略格式→升级规范波重新计分；SPACE 上 HN >150 分→开发者拐点；新增子信号：gVisor 捐 CNCF（gvisor.dev 博客 10-02 实测，HN 仅 24 分）是否带出 agent 隔离策略格式）【11-16 事件：OpenShell 11-10 正式进 CNCF Sandbox（官方博客实测、Red Hat CTO 具名、采用 Cedar）——标准化触发条件已达成，但本期撞执行基座家族规避清单未用；素材存 research-brief-radar-2026-11-16.md，解禁后优先复议；MXC v1.1.0 属产品迭代不算】【11-17 复扫：CNCF 事件开发者侧零跟进（三连帖全 <7 分），维持观察】",
       "score": 3.33,
       "sources": [
         "https://github.com/microsoft/mxc",
@@ -61,10 +70,10 @@
     }
   ],
   "lastNoTopicRound": {
-    "date": "2026-10-26",
-    "brief": "/Users/unbug/.openclaw/workspace-researcher/research-brief-2026-10-26-radar20.md",
-    "verdict": "主推荐『Agent 常驻执行基座产品化+邻接层』加权 3.75-3.85 <4.0：供给端大厂发布物密（Dots 770/Duet 566/OpenShell 501/MXC 228）但属 #11/#13/#15/#17/#18 执行基座家族第五连撞，新颖性压至 3.0-3.5；需求端邻接层证据（GitHub agent-scale Git infra 系列 68 分、LayerFS 76 分、转发全 <10 分）独立交叉强度不足。四观察点全维持：gVisor 捐 CNCF 属通用容器层不构成基座波升级；记忆类大厂公告仍零；A2A 第二基金会动作未见；agent.reviews 190,991 条远未破 40 万。",
-    "methodNote": "Researcher 全量实测：HN 游标分段拉取窗口全量 story 30,401 条无隙聚类、30+ 关键词簇、14 仓 GitHub API 亲验、官方公告页 curl 亲验（Anthropic AAIF 捐赠/Cloudflare/layerfs/UHP/aaif.io 等），纪律合格。"
+    "date": "2026-11-17",
+    "brief": "/Users/unbug/.openclaw/workspace/research/research-brief-radar-2026-11-17.md",
+    "verdict": "NOTOPIC：最强候选轴『智能体接入层（封禁/支付/准入）』加权 3.83<4.0——支付腿主锚 Brave x402 仅 262/146 未过 400 线（CEO 复测命中），美联航封禁 681/700 评论区主体是票价怨气非接入权讨论，两腿方向相反零交叉主体；轴 B AI 代码开源义务 3.63（GitHub 供给侧实测近零）；轴 D 模型路由 3.35 四连撞。",
+    "methodNote": "全窗 10-27~11-17 Algolia 分段无隙拉取 1,347 条 ≥50 分 story+20+ 簇聚类；锚点 992/237 复测持平无假空窗；OpenShell 进 CNCF 后开发者侧零跟进（gVisor 6 分/Hyperlight 3 分/license 2 分，距 >150 判据差 25-75 倍），基座轴维持不复活。"
   },
   "notes": [
     "2026-11-16：状态文件修复波——删除陈旧顶层键 lastPublishedSlug/lastPublishedDate（曾停在 #21/10-16）；总账补齐 #22 weight-space(11-03)/#23 default-drift(11-04)/#24 legacy-debt(11-06)/#25 harness-exodus(11-09)/#26 offline-sovereignty(11-15)，totalPublished 21→26；9 篇 #22-#26 与简报新文线上 200 实测。#22-#26 选题加权分未落盘，weighted 置 null 不回填。同日按 Unbug 裁定恢复 3000-6000 字配额并启动存量返工。"
