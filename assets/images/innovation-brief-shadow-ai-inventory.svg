@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <text x="600" y="64" font-size="28" font-weight="700" fill="#1A1B1E" text-anchor="middle">AI 行为留痕与管控专利信号</text>
+  <text x="600" y="104" font-size="19" fill="#555555" text-anchor="middle">Google Patents 2026-11-17 实测，三条线同期布局</text>
+  <!-- bars: horizontal, max 7355 = 820px -->
+  <text x="150" y="238" font-size="20" fill="#333333">宽式 全时段</text>
+  <rect x="150" y="256" width="820" height="58" fill="#999999"/>
+  <text x="985" y="293" font-size="24" font-weight="700" fill="#1A1B1E">7355 件</text>
+  <text x="150" y="404" font-size="20" fill="#333333">精确式公开</text>
+  <rect x="150" y="422" width="29" height="58" fill="#D55E00"/>
+  <text x="195" y="459" font-size="24" font-weight="700" fill="#1A1B1E">263 件</text>
+  <text x="150" y="522" font-size="17" fill="#767676">精确式窗口 2026-08-01 至 11-17</text>
+  <line x1="150" y1="560" x2="1080" y2="560" stroke="#1A1B1E" stroke-width="1.5"/>
+  <text x="150" y="606" font-size="18" fill="#333333">六件终选公开日集中在 2026-04 至 2026-08，公开日越近越新</text>
+  <circle cx="420" cy="640" r="7" fill="#0072B2"/>
+  <text x="436" y="646" font-size="16" fill="#555555">银行</text>
+  <circle cx="560" cy="640" r="7" fill="#009E73"/>
+  <text x="576" y="646" font-size="16" fill="#555555">工作流 SaaS</text>
+  <circle cx="760" cy="640" r="7" fill="#E69F00"/>
+  <text x="776" y="646" font-size="16" fill="#555555">RPA</text>
+</svg>

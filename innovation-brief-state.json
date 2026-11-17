@@ -1,12 +1,20 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "n": 31,
-    "slug": "innovation-brief-agent-toolcall-approval-patents",
-    "date": "2026-11-16",
-    "title": "智能体批准专利各占一角，统一批准网关仍空着"
+    "date": "2026-11-17",
+    "issue": 32,
+    "slug": "innovation-brief-shadow-ai-inventory",
+    "topic": "企业 AI 使用审计 / Shadow AI 盘点",
+    "patents": [
+      "US20260228267A1",
+      "US12701129B2",
+      "EP4785531A1",
+      "WO2026165173A1",
+      "CN122573634A",
+      "US20260093544A1"
+    ]
   },
-  "totalPublished": 31,
+  "totalPublished": 32,
   "nextScheduled": "2026-11-17",
   "coveredPatentFamilies": [
     "AU2026906209A0",
@@ -142,7 +150,13 @@
     "WO2026154461",
     "KR102982822",
     "US12592823",
-    "US12683941"
+    "US12683941",
+    "US20260228267",
+    "US12701129",
+    "EP4785531",
+    "WO2026165173",
+    "CN122573634",
+    "US20260093544"
   ],
   "candidateTopics": [
     {
