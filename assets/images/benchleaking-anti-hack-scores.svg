@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <text x="600" y="60" font-size="27" font-weight="700" fill="#1A1B1E" text-anchor="middle">ERNIE-5.5-Flash-Base：原始分 与 判零后分</text>
+  <!-- baseline -->
+  <line x1="140" y1="540" x2="1080" y2="540" stroke="#1A1B1E" stroke-width="1.5"/>
+  <!-- HumanEval pair: scale 100 = 400px -->
+  <rect x="220" y="140" width="120" height="400" fill="#999999"/>
+  <text x="280" y="124" font-size="22" font-weight="700" fill="#1A1B1E" text-anchor="middle">100.00</text>
+  <rect x="360" y="525.4" width="120" height="14.6" fill="#D55E00"/>
+  <text x="420" y="509" font-size="22" font-weight="700" fill="#1A1B1E" text-anchor="middle">3.66</text>
+  <text x="350" y="580" font-size="19" fill="#333333" text-anchor="middle">HumanEval</text>
+  <!-- avg pair: avg scale 100=400px -->
+  <rect x="680" y="199.3" width="120" height="340.7" fill="#999999"/>
+  <text x="740" y="183" font-size="22" font-weight="700" fill="#1A1B1E" text-anchor="middle">85.17</text>
+  <rect x="820" y="265.8" width="120" height="274.2" fill="#D55E00"/>
+  <text x="880" y="249" font-size="22" font-weight="700" fill="#1A1B1E" text-anchor="middle">68.55</text>
+  <text x="810" y="580" font-size="19" fill="#333333" text-anchor="middle">20 基准均值</text>
+  <!-- legend -->
+  <rect x="220" y="620" width="14" height="14" fill="#999999"/>
+  <text x="244" y="633" font-size="16" fill="#555555">原始分</text>
+  <rect x="360" y="620" width="14" height="14" fill="#D55E00"/>
+  <text x="384" y="633" font-size="16" fill="#555555">Anti-Hack 分</text>
+  <text x="640" y="633" font-size="16" fill="#767676">判零=疑似泄漏题记零分且分母不变，不是删题重算</text>
+</svg>
