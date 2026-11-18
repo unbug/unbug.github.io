@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <text x="600" y="64" font-size="28" font-weight="700" fill="#1A1B1E" text-anchor="middle">专利圈地在检测引擎</text>
+  <text x="600" y="104" font-size="19" fill="#555555" text-anchor="middle">同日同域实测 2026-11-17</text>
+  <text x="150" y="240" font-size="20" fill="#333333">宽短语 恶意扩展检测侧 史上总量</text>
+  <rect x="150" y="258" width="800" height="58" fill="#999999"/>
+  <text x="965" y="295" font-size="24" font-weight="700" fill="#1A1B1E">3313 件</text>
+  <text x="150" y="410" font-size="20" fill="#333333">精确短语 管理层 史上</text>
+  <rect x="150" y="428" width="10" height="58" fill="#D55E00"/>
+  <text x="176" y="465" font-size="24" font-weight="700" fill="#1A1B1E">35 件</text>
+  <line x1="150" y1="548" x2="1080" y2="548" stroke="#1A1B1E" stroke-width="1.5"/>
+  <text x="150" y="594" font-size="18" fill="#333333">两句检索式覆盖范围不同，只能并排看规模，不可相除算增长率</text>
+  <text x="150" y="628" font-size="18" fill="#555555">六件终选公开日 2025-03 至 2026-06，仅 Island 已授权</text>
+</svg>
