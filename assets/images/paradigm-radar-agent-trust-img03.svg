@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">VSX 市场的收录流程不校验发布者身份，注入点位于市场收录与开发者安装之间</text>
+
+  <!-- ================= panel a ================= -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">实际分发链与注入点</text>
+
+  <!-- nodes row -->
+  <g font-size="13" fill="#1A1B1E" text-anchor="middle">
+    <rect x="70" y="150" width="180" height="64" fill="#F0F0F0" stroke="#1A1B1E" stroke-width="0.75"/>
+    <text x="160" y="177">厂商构建</text>
+    <text x="160" y="197" font-size="12" fill="#555555">官方扩展包</text>
+
+    <rect x="330" y="150" width="200" height="64" fill="#F0F0F0" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="430" y="177">扩展市场收录</text>
+    <text x="430" y="197" font-size="12" fill="#555555">VSX：不校验发布者</text>
+
+    <rect x="610" y="150" width="200" height="64" fill="#F0F0F0" stroke="#1A1B1E" stroke-width="0.75"/>
+    <text x="710" y="177">开发者安装</text>
+    <text x="710" y="197" font-size="12" fill="#555555">编辑器扩展宿主</text>
+
+    <rect x="890" y="150" width="240" height="64" fill="#F0F0F0" stroke="#D55E00" stroke-width="1.5"/>
+    <text x="1010" y="177">本机凭证面</text>
+    <text x="1010" y="197" font-size="12" fill="#555555">SSH 私钥 / 云凭证 / 会话</text>
+  </g>
+
+  <!-- arrows -->
+  <g stroke="#1A1B1E" stroke-width="1.5" fill="none" marker-end="url(#arr)">
+    <line x1="250" y1="182" x2="322" y2="182"/>
+    <line x1="530" y1="182" x2="602" y2="182"/>
+    <line x1="810" y1="182" x2="882" y2="182"/>
+  </g>
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#1A1B1E"/>
+    </marker>
+  </defs>
+
+  <!-- injection marker between收录 and 安装 -->
+  <circle cx="566" cy="182" r="9" fill="#D55E00"/>
+  <text x="566" y="126" font-size="12.5" fill="#D55E00" text-anchor="middle">注入点</text>
+  <line x1="566" y1="133" x2="566" y2="171" stroke="#D55E00" stroke-width="1.5"/>
+  <text x="566" y="248" font-size="12" fill="#555555" text-anchor="middle">任何人可申领官方标识</text>
+  <text x="566" y="266" font-size="12" fill="#555555" text-anchor="middle">后门随安装进入本机</text>
+
+  <!-- ================= panel b ================= -->
+  <text x="60" y="334" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="334" font-size="15" fill="#1A1B1E">「以为的信任链」与「实际的信任链」</text>
+
+  <!-- assumed chain -->
+  <text x="70" y="382" font-size="13" fill="#1A1B1E">你以为的：</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <rect x="180" y="360" width="200" height="40" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="280" y="385">厂商签名</text>
+    <rect x="430" y="360" width="200" height="40" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="530" y="385">市场审核身份</text>
+    <rect x="680" y="360" width="200" height="40" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="780" y="385">安装即安全</text>
+  </g>
+  <g stroke="#0072B2" stroke-width="1.5" fill="none">
+    <line x1="380" y1="380" x2="424" y2="380" marker-end="url(#arrb)"/>
+    <line x1="630" y1="380" x2="674" y2="380" marker-end="url(#arrb)"/>
+  </g>
+
+  <!-- actual chain -->
+  <text x="70" y="452" font-size="13" fill="#1A1B1E">实际的：</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <rect x="180" y="430" width="200" height="40" fill="#FFFFFF" stroke="#D55E00" stroke-width="1.5"/>
+    <text x="280" y="449">标识可自由申领</text>
+    <text x="280" y="464" font-size="11" fill="#555555">无身份校验</text>
+    <rect x="430" y="430" width="200" height="40" fill="#FFFFFF" stroke="#D55E00" stroke-width="1.5"/>
+    <text x="530" y="455">市场收录</text>
+    <rect x="680" y="430" width="200" height="40" fill="#FFFFFF" stroke="#D55E00" stroke-width="1.5"/>
+    <text x="780" y="455">安装即执行</text>
+  </g>
+  <g stroke="#D55E00" stroke-width="1.5" fill="none">
+    <line x1="380" y1="450" x2="424" y2="450" marker-end="url(#arrc)"/>
+    <line x1="630" y1="450" x2="674" y2="450" marker-end="url(#arrc)"/>
+  </g>
+  <defs>
+    <marker id="arrb" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#0072B2"/>
+    </marker>
+    <marker id="arrc" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#D55E00"/>
+    </marker>
+  </defs>
+
+  <!-- gap note -->
+  <text x="70" y="530" font-size="13" fill="#1A1B1E">两条链的差值 = 市场侧发布者身份校验的缺失，phorion 披露的 VSX 后门（HN 1,014 分）即从此缺口进入</text>
+
+  <!-- footer -->
+  <text x="60" y="648" font-size="11" fill="#767676">来源：phorion.io 披露文（HTTP 200 实测）与 HN 50300683 · 机制示意依据披露文描述绘制 · 实测 2026-11-19</text>
+</svg>

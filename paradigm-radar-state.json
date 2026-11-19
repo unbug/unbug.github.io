@@ -1,21 +1,20 @@
 {
   "currentPhase": "idle",
   "lastPublished": {
-    "n": 27,
-    "slug": "paradigm-radar-aws-emulator-simulated-world",
-    "date": "2026-11-16",
-    "title": "一整朵云被复刻进本地盒子",
-    "weighted": 4.33
+    "n": 28,
+    "slug": "paradigm-radar-coding-agent-trust-cracks",
+    "date": "2026-11-19",
+    "title": "编码 Agent 的信任正在从六个方向裂开",
+    "weighted": 4.6
   },
-  "totalPublished": 27,
-  "nextScheduled": "2026-11-18",
+  "totalPublished": 28,
+  "nextScheduled": "2026-11-20",
   "candidateTopics": [
     {
-      "topic": "AI 编码工具信任危机（VSX 后门/Copilot 泄密/transcript 上行/邮箱外发）——11-18 新记档 3.70，下期最可能升 GO；复活判据：新独立主体 ≥300 分帖或企业侧禁用政策帖 ≥100 分",
-      "score": 3.7,
-      "sources": [
-        "https://news.ycombinator.com/item?id=50458900"
-      ]
+      "topic": "AI 代码验证/审查瓶颈（Harvard code review/StarSling/claude.dev verification）",
+      "score": 3.6,
+      "note": "11-19 记档。复活判据：Harvard 帖（50538303）破 400 分或第二研究机构/大厂验证类发布 ≥150 分。与已发 11-19 信任危机期母题相邻但角度独立（验证瓶颈 vs 泄密事件）",
+      "date": "2026-11-19"
     },
     {
       "topic": "智能体接入层（平台封禁 agent/x402 支付/准入重定价）——11-18 复扫维持 3.83，复活判据不变：x402 第二家大厂采用 story 或第二起平台封禁 ≥150 分",
@@ -83,5 +82,47 @@
   },
   "notes": [
     "2026-11-16：状态文件修复波——删除陈旧顶层键 lastPublishedSlug/lastPublishedDate（曾停在 #21/10-16）；总账补齐 #22 weight-space(11-03)/#23 default-drift(11-04)/#24 legacy-debt(11-06)/#25 harness-exodus(11-09)/#26 offline-sovereignty(11-15)，totalPublished 21→26；9 篇 #22-#26 与简报新文线上 200 实测。#22-#26 选题加权分未落盘，weighted 置 null 不回填。同日按 Unbug 裁定恢复 3000-6000 字配额并启动存量返工。"
-  ]
+  ],
+  "round2026_11_19": {
+    "date": "2026-11-19",
+    "verdict": "GO",
+    "axis": "AI 编码工具信任危机簇",
+    "weighted": 4.6,
+    "brief": "/Users/unbug/.openclaw/workspace/research/research-brief-radar-2026-11-19.md",
+    "anchors": {
+      "pillar": [
+        [
+          "50385272",
+          1616
+        ],
+        [
+          "50300683",
+          1014
+        ],
+        [
+          "50407882",
+          628
+        ],
+        [
+          "50284255",
+          591
+        ]
+      ],
+      "new": [
+        [
+          "50415628",
+          905
+        ],
+        [
+          "50524736",
+          728
+        ],
+        [
+          "50352757",
+          536
+        ]
+      ]
+    },
+    "note": "连破三轮 NOTOPIC；GO 判据双命中（GS 禁用 905≥100 线；Win11 728/Codex 536 均超 300 线）；CEO 9 锚点全亲验持平。下期候选：AI 代码验证/审查瓶颈 3.6（复活判据 Harvard 破 400 或第二机构发布）"
+  }
 }

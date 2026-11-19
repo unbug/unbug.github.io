@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">五层防御逐层拦截对应裂缝：分发、权限、网络、操作系统、审计</text>
+
+  <!-- ================= panel a: layered defense ================= -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">防御分层与对应裂缝</text>
+
+  <!-- attack arrow on left -->
+  <line x1="95" y1="150" x2="95" y2="560" stroke="#D55E00" stroke-width="1.5" marker-end="url(#darr)"/>
+  <text x="80" y="360" font-size="12.5" fill="#D55E00" transform="rotate(-90 80 360)" text-anchor="middle">事故落点自外向内逐层进入</text>
+  <defs>
+    <marker id="darr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#D55E00"/></marker>
+  </defs>
+
+  <!-- layers: y 150..560, 5 rows h=72 gap8 -->
+  <g font-size="13" fill="#1A1B1E">
+    <rect x="150" y="150" width="180" height="72" fill="#F0F0F0" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="240" y="181" text-anchor="middle" font-weight="bold">分发层</text>
+    <text x="240" y="203" font-size="12" fill="#555555" text-anchor="middle">扩展市场</text>
+
+    <rect x="150" y="232" width="180" height="72" fill="#F0F0F0" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="240" y="263" text-anchor="middle" font-weight="bold">权限层</text>
+    <text x="240" y="285" font-size="12" fill="#555555" text-anchor="middle">Agent 配置</text>
+
+    <rect x="150" y="314" width="180" height="72" fill="#F0F0F0" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="240" y="345" text-anchor="middle" font-weight="bold">网络层</text>
+    <text x="240" y="367" font-size="12" fill="#555555" text-anchor="middle">请求与上行流量</text>
+
+    <rect x="150" y="396" width="180" height="72" fill="#F0F0F0" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="240" y="427" text-anchor="middle" font-weight="bold">OS 层</text>
+    <text x="240" y="449" font-size="12" fill="#555555" text-anchor="middle">系统遥测设置</text>
+
+    <rect x="150" y="478" width="180" height="72" fill="#F0F0F0" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="240" y="509" text-anchor="middle" font-weight="bold">审计层</text>
+    <text x="240" y="531" font-size="12" fill="#555555" text-anchor="middle">日志与凭证</text>
+  </g>
+
+  <!-- actions -->
+  <g font-size="12.5" fill="#1A1B1E">
+    <text x="380" y="182">校验发布者账号与厂商仓库归属，重装可疑扩展</text>
+    <text x="380" y="264">逐条撤销「不再询问」类常开许可，公开仓库跑密钥自查</text>
+    <text x="380" y="346">抓包核验空闲期请求：transcript、User-Agent、遥测端点</text>
+    <text x="380" y="428">关闭可选诊断数据，切断 MissionControlAggregator 上传</text>
+    <text x="380" y="510">短时效最小权限凭证 + Agent 行为日志本地留存</text>
+  </g>
+
+  <!-- crack mapping -->
+  <g font-size="12" fill="#555555" text-anchor="start">
+    <text x="860" y="182">拦裂缝一（VSX 后门）</text>
+    <text x="860" y="264">拦裂缝二（常开授权）</text>
+    <text x="860" y="346">拦裂缝三/四（上行通道）</text>
+    <text x="860" y="428">拦裂缝六（OS 遥测）</text>
+    <text x="860" y="510">兜底裂缝五（政策回滚不可控）</text>
+  </g>
+  <g stroke="#D9D9D9" stroke-width="0.5">
+    <line x1="840" y1="150" x2="840" y2="550"/>
+  </g>
+
+  <!-- footer -->
+  <text x="60" y="648" font-size="11" fill="#767676">依据：phorion、apiiro、xusheng.dev 披露机制与 HN 50526152 实践帖整理 · 裂缝五属厂商政策面，个人侧只能兜底不能阻断 · 实测 2026-11-19</text>
+</svg>

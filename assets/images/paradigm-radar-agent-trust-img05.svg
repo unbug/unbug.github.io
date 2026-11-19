@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">三条上行通道中两条在正常配置下持续存在，配置界面无任何说明</text>
+
+  <!-- ================= panel: exfil map (a) ================= -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">本机敏感面到远端的三条通道</text>
+
+  <!-- source box -->
+  <rect x="70" y="150" width="300" height="330" fill="#F0F0F0" stroke="#1A1B1E" stroke-width="0.75"/>
+  <text x="220" y="180" font-size="13.5" fill="#1A1B1E" text-anchor="middle" font-weight="bold">本机开发环境</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <rect x="100" y="200" width="240" height="34" fill="#FFFFFF" stroke="#999999" stroke-width="0.75"/><text x="220" y="222">对话 transcript</text>
+    <rect x="100" y="248" width="240" height="34" fill="#FFFFFF" stroke="#999999" stroke-width="0.75"/><text x="220" y="270">GitHub 邮箱</text>
+    <rect x="100" y="296" width="240" height="34" fill="#FFFFFF" stroke="#999999" stroke-width="0.75"/><text x="220" y="318">工具使用位</text>
+    <rect x="100" y="344" width="240" height="34" fill="#FFFFFF" stroke="#999999" stroke-width="0.75"/><text x="220" y="366">SSH 私钥 / 云凭证</text>
+  </g>
+  <text x="220" y="418" font-size="11.5" fill="#555555" text-anchor="middle">第四格为裂缝一/二的落点，不经由上行通道</text>
+
+  <!-- dest box -->
+  <rect x="830" y="150" width="300" height="330" fill="#F0F0F0" stroke="#1A1B1E" stroke-width="0.75"/>
+  <text x="980" y="180" font-size="13.5" fill="#1A1B1E" text-anchor="middle" font-weight="bold">远端端点</text>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <rect x="860" y="200" width="240" height="34" fill="#FFFFFF" stroke="#999999" stroke-width="0.75"/><text x="980" y="222">模型服务后端</text>
+    <rect x="860" y="248" width="240" height="34" fill="#FFFFFF" stroke="#999999" stroke-width="0.75"/><text x="980" y="270">API 请求接收方</text>
+    <rect x="860" y="296" width="240" height="34" fill="#FFFFFF" stroke="#999999" stroke-width="0.75"/><text x="980" y="318">Windows Diagnostics</text>
+  </g>
+
+  <!-- channel lines -->
+  <g stroke-width="1.5" fill="none">
+    <line x1="370" y1="217" x2="822" y2="217" stroke="#0072B2" marker-end="url(#e1)"/>
+    <line x1="370" y1="265" x2="822" y2="265" stroke="#D55E00" marker-end="url(#e2)"/>
+    <line x1="370" y1="313" x2="822" y2="313" stroke="#0072B2" marker-end="url(#e1)"/>
+  </g>
+  <defs>
+    <marker id="e1" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#0072B2"/></marker>
+    <marker id="e2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#D55E00"/></marker>
+  </defs>
+
+  <g font-size="12.5" text-anchor="middle">
+    <text x="596" y="205" fill="#1A1B1E">通道一 · transcript 回传（背景任务全量对话） · HN 591 · 配置无说明</text>
+    <text x="596" y="253" fill="#1A1B1E">通道二 · User-Agent 头携带邮箱（每次请求） · HN 1,616 · 簇内最热</text>
+    <text x="596" y="301" fill="#1A1B1E">通道三 · Win11 使用位经诊断管道上传 · HN 728 · optional 诊断默认开</text>
+  </g>
+
+  <!-- ================= panel b ================= -->
+  <text x="60" y="524" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="524" font-size="15" fill="#1A1B1E">通道二曝光面：issue #107757 生命周期（天）</text>
+
+  <!-- timeline: 11-05 open → 11-19 still open; x = 220 + 23.5*days (14 days → 552) -->
+  <line x1="220" y1="590" x2="600" y2="590" stroke="#1A1B1E" stroke-width="0.75"/>
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <circle cx="220" cy="590" r="5" fill="#0072B2"/><text x="220" y="614">11-05</text>
+    <circle cx="553" cy="590" r="5" fill="#D55E00"/><text x="553" y="614">11-19</text>
+  </g>
+  <text x="220" y="566" font-size="12" fill="#555555" text-anchor="middle">issue 提出</text>
+  <text x="553" y="566" font-size="12" fill="#555555" text-anchor="middle">仍 open 未修复</text>
+  <text x="386" y="638" font-size="12" fill="#1A1B1E" text-anchor="middle">14 天 · 121 评论 · 标签含 area/security（GitHub API 实测）</text>
+
+  <text x="700" y="596" font-size="12.5" fill="#555555">HN 把该缺陷推到 1,616 分，仓库侧修复仍未合入</text>
+
+  <!-- footer -->
+  <text x="60" y="660" font-size="11" fill="#767676">来源：HN 50284255 / 50385272 / 50524736 与 xusheng.dev 逆向文（HTTP 200 实测）· 分数为 Algolia 全树口径，实测 2026-11-19</text>
+</svg>

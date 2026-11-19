@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <!-- conclusion line -->
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">四家涉事方六支柱合计 5,113 分，高盛 905 分为企业侧回应另计，危机三周仍在加速</text>
+
+  <!-- ================= panel a ================= -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">七根支柱与邻簇帖的 HN 分数（数值标于条端，无坐标轴）</text>
+
+  <!-- bars: x = 320 + 0.3*score, row h=46, first y=136 -->
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="308" y="153">邮箱经 UA 外发</text>
+    <text x="308" y="199">VSX 渠道后门</text>
+    <text x="308" y="245">Win11 Agent 遥测</text>
+    <text x="308" y="291">授权模式泄密</text>
+    <text x="308" y="337">transcript 上行</text>
+    <text x="308" y="383">Codex 训练回滚</text>
+    <text x="308" y="429">高盛收回权限</text>
+    <text x="308" y="475">Harvard 审查瓶颈</text>
+  </g>
+
+  <rect x="320" y="139" width="484.8" height="20" fill="#D55E00"/>
+  <text x="814" y="153" font-size="12" fill="#555555">1,616 · Anthropic（11-05）</text>
+
+  <rect x="320" y="185" width="304.2" height="20" fill="#0072B2"/>
+  <text x="634" y="199" font-size="12" fill="#555555">1,014 · 攻击者（10-30）</text>
+
+  <rect x="320" y="231" width="218.4" height="20" fill="#0072B2"/>
+  <text x="548" y="245" font-size="12" fill="#555555">728 · Microsoft（11-16，新增）</text>
+
+  <rect x="320" y="277" width="188.4" height="20" fill="#0072B2"/>
+  <text x="518" y="291" font-size="12" fill="#555555">628 · Anthropic Claude Code 权限模式（11-07）</text>
+
+  <rect x="320" y="323" width="177.3" height="20" fill="#0072B2"/>
+  <text x="507" y="337" font-size="12" fill="#555555">591 · Claude Code 后台（10-29）</text>
+
+  <rect x="320" y="369" width="160.8" height="20" fill="#0072B2"/>
+  <text x="490" y="383" font-size="12" fill="#555555">536 · OpenAI（11-03，新增）</text>
+
+  <rect x="320" y="415" width="271.5" height="20" fill="#999999"/>
+  <text x="601" y="429" font-size="12" fill="#555555">905 · Goldman Sachs（11-08，企业侧另计不入合计）</text>
+
+  <rect x="320" y="461" width="95.7" height="20" fill="#999999"/>
+  <text x="425" y="475" font-size="12" fill="#555555">319 · 邻簇未并入本簇合计</text>
+
+  <!-- legend for panel a -->
+  <g font-size="12" fill="#555555">
+    <rect x="880" y="146" width="14" height="14" fill="#0072B2"/><text x="902" y="158">支柱帖（6 根）</text>
+    <rect x="880" y="174" width="14" height="14" fill="#D55E00"/><text x="902" y="186">簇内最热帖</text>
+    <rect x="880" y="202" width="14" height="14" fill="#999999"/><text x="902" y="214">企业侧 / 邻簇</text>
+  </g>
+
+  <!-- ================= panel b ================= -->
+  <text x="60" y="540" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="540" font-size="15" fill="#1A1B1E">支柱合计的构成（分，数值标于条端）</text>
+
+  <!-- horizontal bars scale 0.12 px/分 -->
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="298" y="584">早期四支柱</text>
+    <text x="298" y="616">新增两支柱</text>
+    <text x="298" y="648">高盛企业侧</text>
+  </g>
+
+  <rect x="310" y="570" width="461.9" height="20" fill="#0072B2"/>
+  <text x="781" y="584" font-size="12" fill="#555555">3,849（10-29 至 11-07）</text>
+
+  <rect x="310" y="602" width="151.7" height="20" fill="#0072B2"/>
+  <text x="471" y="616" font-size="12" fill="#555555">1,264（11 月第二、三周）· 与早期相加为六支柱合计 5,113</text>
+
+  <rect x="310" y="634" width="108.6" height="20" fill="#999999"/>
+  <text x="428" y="648" font-size="12" fill="#555555">905 · 不入合计</text>
+
+  <!-- footer -->
+  <text x="60" y="668" font-size="11" fill="#767676">数据：HN Algolia API 全树递归计数（剔除 deleted/dead），实测 2026-11-19 · 高盛为企业侧回应、Harvard 审查瓶颈帖属邻簇，均不计入支柱合计</text>
+</svg>

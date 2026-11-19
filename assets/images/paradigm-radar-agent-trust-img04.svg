@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'PingFang SC','Helvetica Neue',Arial,sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+
+  <text x="60" y="58" font-size="16" fill="#1A1B1E">一次「不再询问」点击把单条命令授权固化为整类操作的常开许可</text>
+
+  <!-- ================= panel a ================= -->
+  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
+  <text x="82" y="104" font-size="15" fill="#1A1B1E">「Don't Ask Again」授权状态机</text>
+
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
+    <rect x="70" y="150" width="190" height="62" fill="#F0F0F0" stroke="#1A1B1E" stroke-width="0.75"/>
+    <text x="165" y="176">操作请求</text>
+    <text x="165" y="196" font-size="11.5" fill="#555555">Agent 要执行命令</text>
+
+    <rect x="330" y="150" width="210" height="62" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="435" y="176">弹窗询问</text>
+    <text x="435" y="196" font-size="11.5" fill="#555555">你看到的是一条具体命令</text>
+
+    <rect x="610" y="150" width="210" height="62" fill="#FFFFFF" stroke="#0072B2" stroke-width="1.5"/>
+    <text x="715" y="176">点击「不再询问」</text>
+    <text x="715" y="196" font-size="11.5" fill="#555555">决策被写入配置</text>
+
+    <rect x="890" y="150" width="240" height="62" fill="#FFFFFF" stroke="#D55E00" stroke-width="1.5"/>
+    <text x="1010" y="176">常开许可</text>
+    <text x="1010" y="196" font-size="11.5" fill="#555555">规则覆盖该类全部未来操作</text>
+  </g>
+
+  <g stroke="#1A1B1E" stroke-width="1.5" fill="none">
+    <line x1="260" y1="181" x2="322" y2="181" marker-end="url(#sarr)"/>
+    <line x1="540" y1="181" x2="602" y2="181" marker-end="url(#sarr)"/>
+    <line x1="820" y1="181" x2="882" y2="181" marker-end="url(#sarr)"/>
+  </g>
+
+  <!-- leak edge -->
+  <path d="M 1010 212 L 1010 268 L 640 268" stroke="#D55E00" stroke-width="1.5" fill="none" marker-end="url(#rarr)"/>
+  <rect x="380" y="246" width="252" height="44" fill="#FFFFFF" stroke="#D55E00" stroke-width="1.5"/>
+  <text x="506" y="264" font-size="12.5" fill="#1A1B1E" text-anchor="middle">泄密出口</text>
+  <text x="506" y="281" font-size="11.5" fill="#555555" text-anchor="middle">密钥随提交进入公开仓库</text>
+
+  <defs>
+    <marker id="sarr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#1A1B1E"/></marker>
+    <marker id="rarr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#D55E00"/></marker>
+  </defs>
+
+  <!-- ================= panel b ================= -->
+  <text x="60" y="364" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
+  <text x="82" y="364" font-size="15" fill="#1A1B1E">授权时上下文与生效范围（条端直标数值，无坐标轴）</text>
+
+  <g font-size="12.5" fill="#1A1B1E" text-anchor="end">
+    <text x="288" y="415">授权时上下文</text>
+    <text x="288" y="475">生效范围</text>
+  </g>
+
+  <rect x="300" y="401" width="12" height="20" fill="#999999"/>
+  <text x="322" y="415" font-size="12" fill="#555555">1 条具体命令（弹窗所见）</text>
+
+  <rect x="300" y="461" width="292.8" height="20" fill="#D55E00"/>
+  <text x="602" y="475" font-size="12" fill="#555555">该类全部未来操作 · 已致公开仓库泄露文件 1,122 个（研究员扫描口径）</text>
+
+  <text x="660" y="415" font-size="12.5" fill="#555555">灰色 = 点击时可见范围</text>
+  <text x="660" y="440" font-size="12.5" fill="#555555">朱色 = 固化后的实际范围</text>
+
+  <!-- footer -->
+  <text x="60" y="648" font-size="11" fill="#767676">来源：apiiro 研究（HN 50407882，628 分/全树 422 评论，原帖标题点名 Claude Code，原文直连 403，数字为讨论帖转引口径）· 实测 2026-11-19</text>
+</svg>

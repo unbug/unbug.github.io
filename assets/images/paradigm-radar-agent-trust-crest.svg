@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="'PingFang SC','Helvetica Neue',Arial,sans-serif">
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <text x="60" y="100" font-size="54" font-weight="700"><tspan fill="#D55E00">信任</tspan><tspan fill="#0072B2">裂缝</tspan></text>
+  <text x="62" y="150" font-size="26" fill="#333333">四家涉事方 · 六根支柱 · 三周</text>
+
+  <!-- pillar bars: x=62+0.34*score (max 1616→549.4) -->
+  <g font-size="22" fill="#333333" text-anchor="end">
+    <text x="330" y="247">邮箱经 UA 外发</text>
+    <text x="330" y="309">VSX 渠道后门</text>
+    <text x="330" y="371">Win11 Agent 遥测</text>
+    <text x="330" y="433">授权模式泄密</text>
+    <text x="330" y="495">transcript 上行</text>
+    <text x="330" y="557">Codex 训练回滚</text>
+  </g>
+  <rect x="350" y="228" width="549.4" height="24" fill="#D55E00"/>
+  <text x="909" y="247" font-size="22" fill="#333333">1,616</text>
+  <rect x="350" y="290" width="344.8" height="24" fill="#0072B2"/>
+  <text x="704" y="309" font-size="22" fill="#333333">1,014</text>
+  <rect x="350" y="352" width="247.5" height="24" fill="#0072B2"/>
+  <text x="607" y="371" font-size="22" fill="#333333">728</text>
+  <rect x="350" y="414" width="213.5" height="24" fill="#0072B2"/>
+  <text x="573" y="433" font-size="22" fill="#333333">628</text>
+  <rect x="350" y="476" width="200.9" height="24" fill="#0072B2"/>
+  <text x="560" y="495" font-size="22" fill="#333333">591</text>
+  <rect x="350" y="538" width="182.2" height="24" fill="#0072B2"/>
+  <text x="542" y="557" font-size="22" fill="#333333">536</text>
+
+  <!-- axis -->
+  <line x1="350" y1="576" x2="920" y2="576" stroke="#1A1B1E" stroke-width="0.75"/>
+
+  <text x="60" y="608" font-size="22" fill="#767676">四家涉事方六支柱合计 5,113 分 · 高盛 905 分为企业侧回应另计 · 数据截至 2026-11-19</text>
+</svg>
