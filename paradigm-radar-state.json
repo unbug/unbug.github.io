@@ -11,10 +11,10 @@
   "nextScheduled": "2026-11-20",
   "candidateTopics": [
     {
-      "topic": "AI 代码验证/审查瓶颈（Harvard code review/StarSling/claude.dev verification）",
-      "score": 3.6,
-      "note": "11-19 记档。复活判据：Harvard 帖（50538303）破 400 分或第二研究机构/大厂验证类发布 ≥150 分。与已发 11-19 信任危机期母题相邻但角度独立（验证瓶颈 vs 泄密事件）",
-      "date": "2026-11-19"
+      "topic": "AI 代码验证/审查瓶颈（Harvard code review/claude.dev/KPMG 跨业回声）",
+      "score": 3.65,
+      "note": "下期首选。复活判据：①Harvard 50538303 破 400 ②可证实官方渠道的大厂验证类发布 ≥150（claude.dev 身份需查证）③KPMG 分数惯性+FT 原发链接。#28 发布 24h 内验证叙事密集（294+466+326），正向 4.0 逼近",
+      "date": "2026-11-20"
     },
     {
       "topic": "智能体接入层（平台封禁 agent/x402 支付/准入重定价）——11-18 复扫维持 3.83，复活判据不变：x402 第二家大厂采用 story 或第二起平台封禁 ≥150 分",
@@ -22,7 +22,8 @@
       "sources": [
         "https://news.ycombinator.com/item?id=50477649",
         "https://news.ycombinator.com/item?id=50458900"
-      ]
+      ],
+      "date": "2026-11-20"
     },
     {
       "topic": "agent 常驻执行基座产品化+邻接层（雷达#20 主簇残留：Dots/Duet/OpenShell/MXC/Duet 发布物已密，需求端证据弱；复活条件：GitHub『agent-scale Git infra』系列或同类平台方帖获 >150 分主帖，或 OpenShell/MXC 出现 CNCF/OWASP/跨厂商互操作动作，或 Dots/Duet 出现第三方独立行为审计爆款）",
@@ -72,13 +73,25 @@
       "sources": [
         "https://mitchellh.com/writing/program-status-osc7501"
       ]
+    },
+    {
+      "topic": "Harness 横评基准化（FrontierHarness 418 单锚）",
+      "score": 3.4,
+      "note": "复活判据：第二家独立机构跨模型 harness 基准 ≥150 分。418 为 Runta 自家基准，中立性存疑；harness 叙事已带写两次（#9/#10、基座波）",
+      "date": "2026-11-20"
+    },
+    {
+      "topic": "微软 ONNX Runtime 从 GitHub 消失（459/101，双验 404）",
+      "score": 3.0,
+      "note": "观察池。判据：微软官方解释帖 ≥150 分或供应链污染实锤即重评",
+      "date": "2026-11-20"
     }
   ],
   "lastNoTopicRound": {
-    "date": "2026-11-18",
-    "brief": "/Users/unbug/.openclaw/workspace/research/research-brief-radar-2026-11-18.md",
-    "verdict": "NOTOPIC（连续第三轮）：接入层轴维持 3.83——x402 主锚复测 262/146 冻结，11-13 后全库新提及均为评论级（CEO 复测 15 条，无第二家大厂 story、无第二起封禁，United 帖 700 条评论 x402 命中 0，两腿零交叉）。OpenShell CNCF 后开发者侧连续第二轮零帖（仓库侧健康 21,741★/周更，仅记档）。",
-    "methodNote": "全窗 10-27~11-17 分段 bisect 无截断 1,359 条 ≥50 分 story；锚点 993/237 复测持平。新记档候选：AI 编码工具信任危机簇 3.70（VSX 后门 1014/514+泄密 628/422+transcript 上行 591/236+邮箱外发 1616/502，下期最可能升 GO）；平台隐私退行簇 3.65（六主体 4,501 分，混簇未收敛）；模型权重开放波 4.4 名义分撞 #22 规避清单否决。"
+    "date": "2026-11-20",
+    "brief": "/Users/unbug/.openclaw/workspace/research/research-brief-radar-2026-11-20.md",
+    "verdict": "NOTOPIC（#28 GO 后首轮回落，正常观察态）：八轴判据零 HITS。代码验证簇 3.6→3.65：Harvard 321/441 未破 400；claude.dev 294/232 主体存疑（Anthropic 官方走 claude.com/anthropic.com，判据②加注「须可证实官方渠道」）；KPMG 466/225 <24h 未稳+转引 EBM+跨业邻簇，仅记跨业回声。接入层 3.83 两腿零进展；OpenShell 开发者侧连续第三轮零帖。新轴：形式化验证波撞 #28 母题击杀；Harness 横评 3.4（418 为 Runta 自家基准无中立第二锚）；ONNX Runtime 消失 459/101 双验 404 入观察池（判据：微软官方解释 ≥150 或实锤）。",
+    "methodNote": "锚点 994/237 健康；窄窗 205+全窗 2,284 条 bisect 无截断；#28 七锚复测全冻结。CEO 复测：Harvard 321/441、claude.dev 294、KPMG 复测已 467（印证未稳）、ONNX 404 一致"
   },
   "notes": [
     "2026-11-16：状态文件修复波——删除陈旧顶层键 lastPublishedSlug/lastPublishedDate（曾停在 #21/10-16）；总账补齐 #22 weight-space(11-03)/#23 default-drift(11-04)/#24 legacy-debt(11-06)/#25 harness-exodus(11-09)/#26 offline-sovereignty(11-15)，totalPublished 21→26；9 篇 #22-#26 与简报新文线上 200 实测。#22-#26 选题加权分未落盘，weighted 置 null 不回填。同日按 Unbug 裁定恢复 3000-6000 字配额并启动存量返工。"
