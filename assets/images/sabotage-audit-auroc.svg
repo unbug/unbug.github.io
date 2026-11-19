@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <text x="600" y="60" font-size="28" font-weight="700" fill="#1A1B1E" text-anchor="middle">AUROC：人类审计员 与 Fable 5.1</text>
+  <line x1="140" y1="540" x2="1080" y2="540" stroke="#1A1B1E" stroke-width="1.5"/>
+  <rect x="260" y="144" width="150" height="396" fill="#999999"/>
+  <text x="335" y="128" font-size="23" font-weight="700" fill="#1A1B1E" text-anchor="middle">0.59</text>
+  <rect x="440" y="54" width="150" height="486" fill="#D55E00"/>
+  <text x="515" y="38" font-size="23" font-weight="700" fill="#1A1B1E" text-anchor="middle">0.73</text>
+  <text x="335" y="578" font-size="19" fill="#333333" text-anchor="middle">人类审计员</text>
+  <text x="515" y="578" font-size="19" fill="#333333" text-anchor="middle">Fable 5.1</text>
+  <rect x="720" y="406.8" width="150" height="133.2" fill="#999999"/>
+  <text x="795" y="391" font-size="23" font-weight="700" fill="#1A1B1E" text-anchor="middle">17%</text>
+  <rect x="900" y="284.4" width="150" height="255.6" fill="#D55E00"/>
+  <text x="975" y="268" font-size="23" font-weight="700" fill="#1A1B1E" text-anchor="middle">32%</text>
+  <text x="795" y="578" font-size="19" fill="#333333" text-anchor="middle">完整识破率 人类</text>
+  <text x="975" y="578" font-size="19" fill="#333333" text-anchor="middle">完整识破率 Fable 5.1</text>
+  <text x="140" y="628" font-size="18" fill="#555555">论文摘要原文：落在噪声范围内，较弱模型与人类表现相当</text>
+</svg>

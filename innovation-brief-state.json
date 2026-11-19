@@ -1,20 +1,20 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "date": "2026-11-18",
-    "issue": 33,
-    "slug": "innovation-brief-browser-extension-inventory-gap",
-    "topic": "浏览器扩展下架仍在装差分（企业侧清单交付层）",
+    "date": "2026-11-19",
+    "issue": 34,
+    "slug": "innovation-brief-citation-verification-service",
+    "topic": "AI 生成内容参考文献逐条回查（投稿前合规服务层）",
     "patents": [
-      "US20250094580A1",
-      "US20250258920A1",
-      "US20250337779A1",
-      "CN121051008A",
-      "AU2022273947B2",
-      "US20260135883A1"
+      "US12505299B2",
+      "US12645555B1",
+      "CN122175015A",
+      "US12531820B2",
+      "US12602412B2",
+      "US12405978B2"
     ]
   },
-  "totalPublished": 33,
+  "totalPublished": 34,
   "nextScheduled": "2026-11-17",
   "coveredPatentFamilies": [
     "AU2026906209A0",
@@ -162,7 +162,13 @@
     "US20250337779",
     "CN121051008",
     "AU2022273947",
-    "US20260135883"
+    "US20260135883",
+    "US12505299",
+    "US12645555",
+    "CN122175015",
+    "US12531820",
+    "US12602412",
+    "US12405978"
   ],
   "candidateTopics": [
     {
