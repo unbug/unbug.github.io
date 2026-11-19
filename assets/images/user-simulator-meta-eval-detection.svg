@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <text x="600" y="62" font-size="28" font-weight="700" fill="#1A1B1E" text-anchor="middle">10 种注入坏行为的检出数</text>
+  <text x="150" y="170" font-size="20" fill="#333333">SimulatorArena</text>
+  <rect x="420" y="148" width="396" height="42" fill="#999999"/>
+  <text x="830" y="177" font-size="24" font-weight="700" fill="#1A1B1E">6</text>
+  <text x="150" y="270" font-size="20" fill="#333333">VISTA</text>
+  <rect x="420" y="248" width="330" height="42" fill="#999999"/>
+  <text x="764" y="277" font-size="24" font-weight="700" fill="#1A1B1E">5</text>
+  <text x="150" y="370" font-size="20" fill="#333333">SWE-Together</text>
+  <rect x="420" y="348" width="396" height="42" fill="#999999"/>
+  <text x="830" y="377" font-size="24" font-weight="700" fill="#1A1B1E">6</text>
+  <text x="150" y="470" font-size="20" fill="#333333">本文新套件</text>
+  <rect x="420" y="448" width="660" height="42" fill="#D55E00"/>
+  <text x="1094" y="477" font-size="24" font-weight="700" fill="#1A1B1E">10</text>
+  <line x1="420" y1="510" x2="420" y2="140" stroke="#1A1B1E" stroke-width="1.5"/>
+  <text x="150" y="570" font-size="18" fill="#555555">检出口径：至少一个指标相对对照组可靠下降，属最有利口径</text>
+  <text x="150" y="606" font-size="18" fill="#767676">摘要概括为只检出 5～6 项；三套均为本文适配版</text>
+</svg>
