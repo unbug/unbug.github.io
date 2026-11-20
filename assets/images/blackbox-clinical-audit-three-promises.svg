@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <text x="600" y="62" font-size="28" font-weight="700" fill="#1A1B1E" text-anchor="middle">三个承诺的兑现率</text>
+  <text x="150" y="190" font-size="20" fill="#333333">缺陷检出</text>
+  <rect x="420" y="166" width="634" height="46" fill="#0072B2"/>
+  <text x="1068" y="197" font-size="24" font-weight="700" fill="#1A1B1E">96%</text>
+  <text x="150" y="320" font-size="20" fill="#333333">回归扫描新关系兑现</text>
+  <rect x="420" y="296" width="185" height="46" fill="#999999"/>
+  <text x="619" y="327" font-size="24" font-weight="700" fill="#1A1B1E">28%</text>
+  <text x="150" y="450" font-size="20" fill="#333333">大模型新关系兑现</text>
+  <rect x="420" y="426" width="73" height="46" fill="#D55E00"/>
+  <text x="507" y="457" font-size="24" font-weight="700" fill="#1A1B1E">11%</text>
+  <line x1="420" y1="492" x2="420" y2="150" stroke="#1A1B1E" stroke-width="1.5"/>
+  <text x="150" y="560" font-size="18" fill="#555555">缺陷检出但专门脚本同样全部找到；报出缺陷 60% 未过核验、15% 查无此事</text>
+  <text x="150" y="596" font-size="18" fill="#767676">复现保真 0.976 对 0.959；新关系 601 条以预注册规则核验</text>
+</svg>
