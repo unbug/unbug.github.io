@@ -1,20 +1,19 @@
 {
   "currentPhase": "published",
   "lastPublished": {
-    "date": "2026-11-19",
-    "issue": 34,
-    "slug": "innovation-brief-citation-verification-service",
-    "topic": "AI 生成内容参考文献逐条回查（投稿前合规服务层）",
+    "date": "2026-11-20",
+    "issue": 35,
+    "slug": "innovation-brief-pr-review-triage-gap",
+    "topic": "AI 产码进 PR 队列后的评审分诊层（服务层空白）",
     "patents": [
-      "US12505299B2",
-      "US12645555B1",
-      "CN122175015A",
-      "US12531820B2",
-      "US12602412B2",
-      "US12405978B2"
+      "US12314707B2",
+      "US12481836B2",
+      "US12524214B1",
+      "US12688374B2",
+      "CN121879734A"
     ]
   },
-  "totalPublished": 34,
+  "totalPublished": 35,
   "nextScheduled": "2026-11-17",
   "coveredPatentFamilies": [
     "AU2026906209A0",
@@ -168,7 +167,12 @@
     "CN122175015",
     "US12531820",
     "US12602412",
-    "US12405978"
+    "US12405978",
+    "US12314707",
+    "US12481836",
+    "US12524214",
+    "US12688374",
+    "CN121879734"
   ],
   "candidateTopics": [
     {
