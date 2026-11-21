@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <text x="600" y="62" font-size="28" font-weight="700" fill="#1A1B1E" text-anchor="middle">曝光量决定你能被认出的概率</text>
+  <text x="140" y="150" font-size="19" fill="#767676">Reddit 按近一年发帖量分层</text>
+  <text x="140" y="210" font-size="20" fill="#333333">不活跃用户</text>
+  <rect x="420" y="188" width="18" height="42" fill="#999999"/>
+  <text x="452" y="219" font-size="24" font-weight="700" fill="#1A1B1E">2%</text>
+  <text x="140" y="296" font-size="20" fill="#333333">发帖 1 至 50</text>
+  <rect x="420" y="274" width="119" height="42" fill="#0072B2"/>
+  <text x="553" y="305" font-size="24" font-weight="700" fill="#1A1B1E">13%</text>
+  <text x="140" y="382" font-size="20" fill="#333333">发帖超 500（活跃）</text>
+  <rect x="420" y="360" width="634" height="42" fill="#0072B2"/>
+  <text x="1068" y="391" font-size="24" font-weight="700" fill="#1A1B1E">69%</text>
+  <line x1="420" y1="418" x2="420" y2="172" stroke="#1A1B1E" stroke-width="1.5"/>
+  <text x="140" y="480" font-size="19" fill="#767676">模型自报熟悉度（0 至 3 分）预判点名命中率</text>
+  <text x="140" y="536" font-size="20" fill="#333333">熟悉度 0 分</text>
+  <rect x="420" y="514" width="39" height="42" fill="#999999"/>
+  <text x="473" y="545" font-size="22" font-weight="700" fill="#1A1B1E">1.3%～4.2%</text>
+  <text x="140" y="622" font-size="20" fill="#333333">熟悉度 3 分</text>
+  <rect x="420" y="600" width="559" height="42" fill="#D55E00"/>
+  <text x="993" y="631" font-size="22" font-weight="700" fill="#1A1B1E">57.7%～60.8%</text>
+</svg>
