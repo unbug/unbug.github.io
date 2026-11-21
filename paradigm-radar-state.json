@@ -1,148 +1,169 @@
 {
-  "currentPhase": "idle",
-  "lastPublished": {
-    "n": 28,
-    "slug": "paradigm-radar-coding-agent-trust-cracks",
-    "date": "2026-11-19",
-    "title": "编码 Agent 的信任正在从六个方向裂开",
-    "weighted": 4.6
+ "currentPhase": "idle",
+ "lastPublished": {
+  "n": 28,
+  "slug": "paradigm-radar-coding-agent-trust-cracks",
+  "date": "2026-11-19",
+  "title": "编码 Agent 的信任正在从六个方向裂开",
+  "weighted": 4.6
+ },
+ "totalPublished": 28,
+ "nextScheduled": "2026-11-23",
+ "candidateTopics": [
+  {
+   "topic": "AI 代码验证/审查瓶颈（claude.dev 官方已证实/KPMG 回声/StarSling）",
+   "score": 3.95,
+   "note": "11-22 复评降档 4.05→3.95（首复判据全零：Harvard 327/464 连续第二轮未破 400、claude.dev 296 冻结、FT 原链直引帖仅 6 分转引热度天花板确认）。#30 预期\"间隔拉开热度回升\"未兑现。转每 2 轮低频；GO 条件不变：Harvard 破 400 或第三方产业采用",
+   "date": "2026-11-22"
   },
-  "totalPublished": 28,
-  "nextScheduled": "2026-11-20",
-  "candidateTopics": [
-    {
-      "topic": "AI 代码验证/审查瓶颈（claude.dev 官方已证实/KPMG 回声/StarSling）",
-      "score": 4.05,
-      "note": "11-21 达线但 CEO 压发：距 #28 仅 48h 同母题，撞车风险。#31（11-22+）首复：间隔≥3 天+Harvard 破 400 或第三方产业采用 → GO。三锚基线 Harvard 324/456、claude.dev 296/232、KPMG 485/257",
-      "date": "2026-11-21"
-    },
-    {
-      "topic": "智能体接入层（平台封禁 agent/x402 支付/准入重定价）——11-18 复扫维持 3.83，复活判据不变：x402 第二家大厂采用 story 或第二起平台封禁 ≥150 分",
-      "score": 3.75,
-      "sources": [
-        "https://news.ycombinator.com/item?id=50477649",
-        "https://news.ycombinator.com/item?id=50458900"
-      ],
-      "date": "2026-11-21",
-      "note": "；11-21 连续第二轮双零降档 3.83→3.75"
-    },
-    {
-      "topic": "agent 常驻执行基座产品化+邻接层（雷达#20 主簇残留：Dots/Duet/OpenShell/MXC/Duet 发布物已密，需求端证据弱；复活条件：GitHub『agent-scale Git infra』系列或同类平台方帖获 >150 分主帖，或 OpenShell/MXC 出现 CNCF/OWASP/跨厂商互操作动作，或 Dots/Duet 出现第三方独立行为审计爆款）",
-      "score": 3.85,
-      "sources": [
-        "https://github.com/NVIDIA/OpenShell",
-        "https://github.com/microsoft/mxc",
-        "https://claude.com/product/claude-duet",
-        "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
-        "https://layerfs.ai/"
-      ]
-    },
-    {
-      "topic": "agent 执行基座标准化波（Mxc/OpenShell/SPACE 任一进入 CNCF/OWASP 或跨厂商互操作策略格式→升级规范波重新计分；SPACE 上 HN >150 分→开发者拐点；新增子信号：gVisor 捐 CNCF（gvisor.dev 博客 10-02 实测，HN 仅 24 分）是否带出 agent 隔离策略格式）【11-16 事件：OpenShell 11-10 正式进 CNCF Sandbox（官方博客实测、Red Hat CTO 具名、采用 Cedar）——标准化触发条件已达成，但本期撞执行基座家族规避清单未用；素材存 research-brief-radar-2026-11-16.md，解禁后优先复议；MXC v1.1.0 属产品迭代不算】【11-17 复扫：CNCF 事件开发者侧零跟进（三连帖全 <7 分），维持观察】",
-      "score": 3.33,
-      "sources": [
-        "https://github.com/microsoft/mxc",
-        "https://github.com/perplexityai/SPACE",
-        "https://github.com/NVIDIA/OpenShell",
-        "https://gvisor.dev/blog/"
-      ]
-    },
-    {
-      "topic": "agent 记忆产品化（窗口内 96 帖但最高 392 分为反方立场『agents don't need memory』HN 49945933；大厂公告检索仍为零；任一大厂公告即复活）",
-      "score": 3.0,
-      "sources": [
-        "https://news.ycombinator.com/item?id=49945933"
-      ]
-    },
-    {
-      "topic": "A2A/AG-UI 规范波（第二个基金会归属动作即复活；窗口内零动作帖；新待验线索：aaif.io 项目列表已含 A2A 页，需查其入库时间是否在窗口内）",
-      "score": 3.0,
-      "sources": [
-        "https://aaif.io"
-      ]
-    },
-    {
-      "topic": "agent.reviews 评价飞轮复查（10-26 实测 190,991 条/4,312 工具，vs 189,934 基线几乎零增长，未破 40 万判据；维持判据，11 月中旬复查斜率）【11-16 复查：192,905 条/4,487 工具，21 天 +1,908（≈91/天），距 40 万判据按此斜率 ~6.3 年，明确未触发，降档】",
-      "score": 3.0,
-      "sources": [
-        "https://agent.reviews/llms.txt"
-      ]
-    },
-    {
-      "topic": "观察池：OSC 7501 终端程序状态协议（mitchellh 发起 188 分 HN，Claude Code 合并、buildkite 等 6 个零星实现）——终端厂商跟进即重评；个人 agent harness 叙事簇（26 帖全 <10 分）——出现发布物级事件即重评",
-      "score": 2.5,
-      "sources": [
-        "https://mitchellh.com/writing/program-status-osc7501"
-      ]
-    },
-    {
-      "topic": "Harness 横评基准化（FrontierHarness 418 单锚）",
-      "score": 3.4,
-      "note": "复活判据：第二家独立机构跨模型 harness 基准 ≥150 分。418 为 Runta 自家基准，中立性存疑；harness 叙事已带写两次（#9/#10、基座波）",
-      "date": "2026-11-20"
-    },
-    {
-      "topic": "微软 ONNX Runtime 消失/仓库私有化波（主帖 464/105 续涨）",
-      "score": 3.4,
-      "note": "11-21 升档：微软经 The Register 回应'已私有化部分仓库，调查恶意内容'+agent-framework 同步 404（CEO 双验）=供应链半实锤。判据：微软官方 HN 帖≥150 或污染实锤扩散。与「供应链信任」母题候选可并流观察",
-      "date": "2026-11-21"
-    },
-    {
-      "topic": "AI 蚕食搜索（HN 709/564 大帖）",
-      "score": 2.8,
-      "note": "11-21 新观察池；判据：第二主体产品化发布 ≥150",
-      "date": "2026-11-21"
-    }
-  ],
-  "lastNoTopicRound": {
-    "date": "2026-11-21",
-    "brief": "/Users/unbug/.openclaw/workspace/research/research-brief-radar-2026-11-21.md",
-    "verdict": "NOTOPIC（重要状态变更：代码验证簇 3.65→4.05 达线，CEO 决定不抢发——距 #28 仅 48h 同母题撞车风险；claude.dev 证实 Anthropic 官方域（JSON-LD publisher，CEO 亲验）判据②HITS。ONNX 下架波 3.0→3.4（微软经 The Register 回应+agent-framework 404 CEO 亲验，供应链半实锤）。x402 连续第二轮双零 3.83→3.75。",
-    "methodNote": "锚点 996/237；窄窗 46+扩展窗 471 无间隙；CEO 复测 claude.dev 296/232、KPMG 485/257、ONNX 464/105、Harvard 324/456 全一致；agent-framework API 404 证实"
+  {
+   "topic": "智能体接入层（平台封禁 agent/x402 支付/准入重定价）——11-18 复扫维持 3.83，复活判据不变：x402 第二家大厂采用 story 或第二起平台封禁 ≥150 分",
+   "score": 3.65,
+   "sources": [
+    "https://news.ycombinator.com/item?id=50477649",
+    "https://news.ycombinator.com/item?id=50458900"
+   ],
+   "date": "2026-11-22",
+   "note": "；11-21 连续第二轮双零降档 3.83→3.75；11-22 连续第三轮零新增降档 3.75→3.65，无第二起封禁"
   },
-  "notes": [
-    "2026-11-16：状态文件修复波——删除陈旧顶层键 lastPublishedSlug/lastPublishedDate（曾停在 #21/10-16）；总账补齐 #22 weight-space(11-03)/#23 default-drift(11-04)/#24 legacy-debt(11-06)/#25 harness-exodus(11-09)/#26 offline-sovereignty(11-15)，totalPublished 21→26；9 篇 #22-#26 与简报新文线上 200 实测。#22-#26 选题加权分未落盘，weighted 置 null 不回填。同日按 Unbug 裁定恢复 3000-6000 字配额并启动存量返工。"
-  ],
-  "round2026_11_19": {
-    "date": "2026-11-19",
-    "verdict": "GO",
-    "axis": "AI 编码工具信任危机簇",
-    "weighted": 4.6,
-    "brief": "/Users/unbug/.openclaw/workspace/research/research-brief-radar-2026-11-19.md",
-    "anchors": {
-      "pillar": [
-        [
-          "50385272",
-          1616
-        ],
-        [
-          "50300683",
-          1014
-        ],
-        [
-          "50407882",
-          628
-        ],
-        [
-          "50284255",
-          591
-        ]
-      ],
-      "new": [
-        [
-          "50415628",
-          905
-        ],
-        [
-          "50524736",
-          728
-        ],
-        [
-          "50352757",
-          536
-        ]
-      ]
-    },
-    "note": "连破三轮 NOTOPIC；GO 判据双命中（GS 禁用 905≥100 线；Win11 728/Codex 536 均超 300 线）；CEO 9 锚点全亲验持平。下期候选：AI 代码验证/审查瓶颈 3.6（复活判据 Harvard 破 400 或第二机构发布）"
+  {
+   "topic": "agent 常驻执行基座产品化+邻接层（雷达#20 主簇残留：Dots/Duet/OpenShell/MXC/Duet 发布物已密，需求端证据弱；复活条件：GitHub『agent-scale Git infra』系列或同类平台方帖获 >150 分主帖，或 OpenShell/MXC 出现 CNCF/OWASP/跨厂商互操作动作，或 Dots/Duet 出现第三方独立行为审计爆款）",
+   "score": 3.85,
+   "sources": [
+    "https://github.com/NVIDIA/OpenShell",
+    "https://github.com/microsoft/mxc",
+    "https://claude.com/product/claude-duet",
+    "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+    "https://layerfs.ai/"
+   ],
+   "note": "11-22：#32 起设为首复轴（判据收紧：需发布物级+需求端双证据）。本轮 OpenShell 无跟进、managed agents 0 帖，维持 3.85"
+  },
+  {
+   "topic": "agent 执行基座标准化波（Mxc/OpenShell/SPACE 任一进入 CNCF/OWASP 或跨厂商互操作策略格式→升级规范波重新计分；SPACE 上 HN >150 分→开发者拐点；新增子信号：gVisor 捐 CNCF（gvisor.dev 博客 10-02 实测，HN 仅 24 分）是否带出 agent 隔离策略格式）【11-16 事件：OpenShell 11-10 正式进 CNCF Sandbox（官方博客实测、Red Hat CTO 具名、采用 Cedar）——标准化触发条件已达成，但本期撞执行基座家族规避清单未用；素材存 research-brief-radar-2026-11-16.md，解禁后优先复议；MXC v1.1.0 属产品迭代不算】【11-17 复扫：CNCF 事件开发者侧零跟进（三连帖全 <7 分），维持观察】",
+   "score": 3.33,
+   "sources": [
+    "https://github.com/microsoft/mxc",
+    "https://github.com/perplexityai/SPACE",
+    "https://github.com/NVIDIA/OpenShell",
+    "https://gvisor.dev/blog/"
+   ]
+  },
+  {
+   "topic": "agent 记忆产品化（窗口内 96 帖但最高 392 分为反方立场『agents don't need memory』HN 49945933；大厂公告检索仍为零；任一大厂公告即复活）",
+   "score": 3.0,
+   "sources": [
+    "https://news.ycombinator.com/item?id=49945933"
+   ]
+  },
+  {
+   "topic": "A2A/AG-UI 规范波（第二个基金会归属动作即复活；窗口内零动作帖；新待验线索：aaif.io 项目列表已含 A2A 页，需查其入库时间是否在窗口内）",
+   "score": 3.0,
+   "sources": [
+    "https://aaif.io"
+   ]
+  },
+  {
+   "topic": "agent.reviews 评价飞轮复查（10-26 实测 190,991 条/4,312 工具，vs 189,934 基线几乎零增长，未破 40 万判据；维持判据，11 月中旬复查斜率）【11-16 复查：192,905 条/4,487 工具，21 天 +1,908（≈91/天），距 40 万判据按此斜率 ~6.3 年，明确未触发，降档】",
+   "score": 3.0,
+   "sources": [
+    "https://agent.reviews/llms.txt"
+   ]
+  },
+  {
+   "topic": "观察池：OSC 7501 终端程序状态协议（mitchellh 发起 188 分 HN，Claude Code 合并、buildkite 等 6 个零星实现）——终端厂商跟进即重评；个人 agent harness 叙事簇（26 帖全 <10 分）——出现发布物级事件即重评",
+   "score": 2.5,
+   "sources": [
+    "https://mitchellh.com/writing/program-status-osc7501"
+   ]
+  },
+  {
+   "topic": "Harness 横评基准化（FrontierHarness 418 单锚）",
+   "score": 3.4,
+   "note": "复活判据：第二家独立机构跨模型 harness 基准 ≥150 分。418 为 Runta 自家基准，中立性存疑；harness 叙事已带写两次（#9/#10、基座波）",
+   "date": "2026-11-20"
+  },
+  {
+   "topic": "微软 ONNX Runtime 消失/仓库私有化波（主帖 464/105 续涨）",
+   "score": 3.4,
+   "note": "11-21 升档：微软经 The Register 回应'已私有化部分仓库，调查恶意内容'+agent-framework 同步 404（CEO 双验）=供应链半实锤。判据：微软官方 HN 帖≥150 或污染实锤扩散。与「供应链信任」母题候选可并流观察。11-22 复核维持 3.4：微软官方公告帖仍零，The Register 原文反爬不可达，onnxruntime/agent-framework 404 双验复现",
+   "date": "2026-11-22"
+  },
+  {
+   "topic": "AI 蚕食搜索（HN 709/564 大帖）",
+   "score": 2.8,
+   "note": "11-21 新观察池；判据：第二主体产品化发布 ≥150",
+   "date": "2026-11-21"
+  },
+  {
+   "topic": "Frostbite：AI 端到端设计验证新 CPU 架构（Architect Labs 博客 632/328，正文实测 4.59× perf/watt、25 负载含 15 保留集）",
+   "score": 2.8,
+   "note": "11-22 新观察池。全库零跟进、无 tapeout、评论区高赞质疑密集（基线选 in-order 核回避 OoO、疑似 WaveScalar 旧案）。判据：第三方复现或流片实锤",
+   "date": "2026-11-22"
+  },
+  {
+   "topic": "Signal 限制移动端 AI agent（帖源站不可达）",
+   "score": 2.5,
+   "note": "11-22 观察，源站可达后重评",
+   "date": "2026-11-22"
+  },
+  {
+   "topic": "AI 估值修正（Anthropic IPO 破发引发全球股市下挫，HN 1131 主锚+两跟进帖）",
+   "score": null,
+   "note": "11-22 记录不采：撞 IPO 规避铁律。议题挂 #32——若 #32 仍全零，评估范式侧『产业影响』例外（对创业融资/开源生态的结构性冲击角度，不写股价涨跌）",
+   "date": "2026-11-22"
   }
+ ],
+ "lastNoTopicRound": {
+  "date": "2026-11-22",
+  "brief": "/Users/unbug/.openclaw/workspace/research/research-brief-radar-2026-11-22.md",
+  "verdict": "NOTOPIC（连续第四轮）。代码验证簇 4.05→3.95 降档（首复判据全零：Harvard 327/464 连续两轮未破 400、claude.dev 296 冻结、FT 转引天花板 6 分）。接入层 3.65。基座 3.85 维持。新轴 Frostbite 2.8 观察；Anthropic IPO 破发 1131 撞规避铁律记录不采。",
+  "methodNote": "锚点 996/237 持平；窄窗 51+扩展窗 549 无间隙；github 间歇 000 抖动已用控制组+重试分离"
+ },
+ "notes": [
+  "2026-11-16：状态文件修复波——删除陈旧顶层键 lastPublishedSlug/lastPublishedDate（曾停在 #21/10-16）；总账补齐 #22 weight-space(11-03)/#23 default-drift(11-04)/#24 legacy-debt(11-06)/#25 harness-exodus(11-09)/#26 offline-sovereignty(11-15)，totalPublished 21→26；9 篇 #22-#26 与简报新文线上 200 实测。#22-#26 选题加权分未落盘，weighted 置 null 不回填。同日按 Unbug 裁定恢复 3000-6000 字配额并启动存量返工。",
+  "2026-11-22 轮决策（CEO）：①#32 首复轴改基座产品化（判据收紧），代码验证/接入层转每 2 轮低频；②IPO 规避线本轮不放宽，议题挂 #32（若仍全零再评估范式侧例外）；③连续 4 轮 NOTOPIC 主因是热点被三重避让规则过滤，属实情非误判，不降门槛硬凑。"
+ ],
+ "round2026_11_19": {
+  "date": "2026-11-19",
+  "verdict": "GO",
+  "axis": "AI 编码工具信任危机簇",
+  "weighted": 4.6,
+  "brief": "/Users/unbug/.openclaw/workspace/research/research-brief-radar-2026-11-19.md",
+  "anchors": {
+   "pillar": [
+    [
+     "50385272",
+     1616
+    ],
+    [
+     "50300683",
+     1014
+    ],
+    [
+     "50407882",
+     628
+    ],
+    [
+     "50284255",
+     591
+    ]
+   ],
+   "new": [
+    [
+     "50415628",
+     905
+    ],
+    [
+     "50524736",
+     728
+    ],
+    [
+     "50352757",
+     536
+    ]
+   ]
+  },
+  "note": "连破三轮 NOTOPIC；GO 判据双命中（GS 禁用 905≥100 线；Win11 728/Codex 536 均超 300 线）；CEO 9 锚点全亲验持平。下期候选：AI 代码验证/审查瓶颈 3.6（复活判据 Harvard 破 400 或第二机构发布）"
+ },
+ "notopicStreak": 4
 }
