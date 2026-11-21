@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+  <text x="600" y="58" font-size="28" font-weight="700" fill="#1A1B1E" text-anchor="middle">AI 操作代理：地主圈走生成与平台管控，逐单批准层空着</text>
+  <text x="600" y="96" font-size="19" fill="#555555" text-anchor="middle">Google Patents 语族规模，2026-11-21 实测，窗口参数失效，均为史上口径</text>
+
+  <text x="120" y="150" font-size="21" font-weight="700" fill="#1A1B1E">语族规模，史上件数</text>
+  <text x="120" y="204" font-size="19" fill="#333333">computer use 加大模型（历史 GUI 自动化存量为主）</text>
+  <rect x="560" y="184" width="460" height="34" fill="#999999"/>
+  <text x="1032" y="208" font-size="21" font-weight="700" fill="#1A1B1E">12,962</text>
+  <text x="120" y="262" font-size="19" fill="#333333">agent 会话录制审计（首页无精确对位件）</text>
+  <rect x="560" y="242" width="103" height="34" fill="#999999"/>
+  <text x="675" y="266" font-size="21" font-weight="700" fill="#1A1B1E">2,885</text>
+  <text x="120" y="320" font-size="19" fill="#333333">浏览器扩展加代理（直指操作代理词族）</text>
+  <rect x="560" y="300" width="30" height="34" fill="#D55E00"/>
+  <text x="602" y="324" font-size="21" font-weight="700" fill="#1A1B1E">840</text>
+
+  <line x1="120" y1="392" x2="1080" y2="392" stroke="#1A1B1E" stroke-width="1.5"/>
+  <text x="120" y="432" font-size="21" font-weight="700" fill="#1A1B1E">地主圈了什么</text>
+  <text x="120" y="472" font-size="19" fill="#333333">微软、UiPath、R3 共 3 件已授权：查询生成操作脚本、录屏喂 CV 模型、聊天驱动 GUI</text>
+  <text x="120" y="506" font-size="19" fill="#333333">Monday.com 1 件在审：SaaS 平台内 agent 实例集中管控</text>
+  <text x="120" y="540" font-size="19" fill="#333333">百度 1 件在审：agent 操作请求须过系统内建权限控制模块</text>
+  <line x1="120" y1="562" x2="1080" y2="562" stroke="#999999" stroke-width="1"/>
+  <text x="120" y="598" font-size="19" fill="#D55E00" font-weight="700">agent 逐单批准加回放（第三方网关）无人 claim：1 人 4 周可交 MVP</text>
+</svg>

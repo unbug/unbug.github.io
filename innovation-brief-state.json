@@ -1,304 +1,310 @@
 {
-  "currentPhase": "published",
-  "lastPublished": {
-    "date": "2026-11-20",
-    "issue": 35,
-    "slug": "innovation-brief-pr-review-triage-gap",
-    "topic": "AI 产码进 PR 队列后的评审分诊层（服务层空白）",
-    "patents": [
-      "US12314707B2",
-      "US12481836B2",
-      "US12524214B1",
-      "US12688374B2",
-      "CN121879734A"
-    ]
-  },
-  "totalPublished": 35,
-  "nextScheduled": "2026-11-17",
-  "coveredPatentFamilies": [
-    "AU2026906209A0",
-    "CN120915496B",
-    "CN121233825B",
-    "CN121301536A",
-    "CN122019408B",
-    "CN122196982A",
-    "CN122433060A",
-    "EP4162488",
-    "EP4548546",
-    "EP4657312A1",
-    "EP4781281A1",
-    "EP4785219A1",
-    "US11593685B1",
-    "US12111747",
-    "US12147513",
-    "US12430428B2",
-    "US12450494B1",
-    "US12487819",
-    "US12519829",
-    "US12526244B2",
-    "US12562968",
-    "US12568091",
-    "US12574336",
-    "US12602470",
-    "US12602572B2",
-    "US12613928",
-    "US12614037",
-    "US12645691",
-    "US12645723",
-    "US12647455",
-    "US12647532",
-    "US12664798",
-    "US12665804",
-    "US12670045",
-    "US12675579",
-    "US12683886",
-    "US12683991",
-    "US12688261",
-    "US12688403B2",
-    "US12694133B1",
-    "US12699853",
-    "US12699853B2",
-    "US12701042",
-    "US12701054",
-    "US12705267",
-    "US12705437",
-    "US12705604B2",
-    "US12706859B1",
-    "US20250103325",
-    "US20250225998",
-    "US20250259042A1",
-    "US20250259431",
-    "US20250298500A1",
-    "US20250322156A1",
-    "US20250335711",
-    "US20250356057A1",
-    "US20260004070",
-    "US20260017525",
-    "US20260030476",
-    "US20260044392",
-    "US20260044679",
-    "US20260045268",
-    "US20260057218",
-    "US20260057884",
-    "US20260064410",
-    "US20260064670",
-    "US20260073299",
-    "US20260088032",
-    "US20260089190",
-    "US20260093735",
-    "US20260099327",
-    "US20260099707",
-    "US20260111248",
-    "US20260111331",
-    "US20260111428",
-    "US20260119483",
-    "US20260119551",
-    "US20260119921",
-    "US20260119922",
-    "US20260120513",
-    "US20260120693",
-    "US20260133859",
-    "US20260134002",
-    "US20260148010",
-    "US20260154581",
-    "US20260169789",
-    "US20260170067",
-    "US20260170265",
-    "US20260178323",
-    "US20260178727",
-    "US20260181056A1",
-    "US20260186828",
-    "US20260186944",
-    "US20260187470A1",
-    "US20260187482",
-    "US20260187746",
-    "US20260188475",
-    "US20260189498",
-    "US20260195309A1",
-    "US20260195422",
-    "US20260195537",
-    "US20260203325",
-    "US20260203500",
-    "US20260205467",
-    "US20260211885",
-    "US20260211893",
-    "US20260212002A1",
-    "US20260212126",
-    "US20260220372",
-    "US20260220380",
-    "US20260228333",
-    "US20260229221",
-    "US20260236476A1",
-    "US20260236564",
-    "US20260236713",
-    "US20260238551",
-    "US20260238651",
-    "US20260244557",
-    "US20260244665",
-    "US20260245574",
-    "US20260246629",
-    "US20260246646",
-    "US20260252594",
-    "US20260260063",
-    "US20260260120",
-    "US20260278303",
-    "WO2026138159A1",
-    "WO2026173611A1",
-    "WO2026173648A1",
-    "US20260067335",
-    "WO2026154461",
-    "KR102982822",
-    "US12592823",
-    "US12683941",
-    "US20260228267",
-    "US12701129",
-    "EP4785531",
-    "WO2026165173",
-    "CN122573634",
-    "US20260093544",
-    "US20250094580",
-    "US20250258920",
-    "US20250337779",
-    "CN121051008",
-    "AU2022273947",
-    "US20260135883",
-    "US12505299",
-    "US12645555",
-    "CN122175015",
-    "US12531820",
-    "US12602412",
-    "US12405978",
-    "US12314707",
-    "US12481836",
-    "US12524214",
-    "US12688374",
-    "CN121879734"
-  ],
-  "candidateTopics": [
-    {
-      "topic": "LLM 文档结构化抽取授权簇（Mistral US12651113B1 快授5.3月/Vendr US12586403B2/IBM US12639362B2/Intuit US12632675B2+US12705916B2/Adobe US12699851B2，6 家全授权）——簇强度4.5可核验5.0但空白度2.0（Reducto/LlamaParse/Unstructured 比分数+Extend 已发字段级评测），仅独立第三方 bake-off 半空。复活条件：出现新结构性空白，或改写为纯技术解读稿（不走简报框架）",
-      "score": 3.7,
-      "sources": [
-        "/Users/unbug/.openclaw/workspace/research/2026-10-14-innovation-brief-brief-22b.md"
-      ]
-    },
-    {
-      "topic": "LLM 按请求选模型路由簇（Citibank US20260228267A1 路由审计链 / ServiceNow US20260205387A1 / aixplain US20260195184A1，2026-07~08 集中公开）——工具层被 RouteLLM/LiteLLM/Portkey 占据，仅当找到未饱和子角度（如路由回归审计）才复活",
-      "score": 3.0,
-      "sources": [
-        "/Users/unbug/.openclaw/workspace/research/2026-10-14-innovation-brief-brief-22.md"
-      ]
-    },
-    {
-      "topic": "Mistral US12651113B1 快速授权信号（优先权 2025-12-31→授权 2026-06-09 仅 5.5 个月，Document intelligence）——本轮编号未能独立复验（GP 通道全灭），下轮先核号再挖快速授权 B1 簇",
-      "score": 3.2,
-      "sources": [
-        "/Users/unbug/.openclaw/workspace/research/2026-10-14-innovation-brief-brief-22.md"
-      ]
-    },
-    {
-      "topic": "LLM 会话成本归因探针（未完成：XHR 503+PatentsView 全灭）——10-21 轮换数据源续探（EPO OPS/Depatisnet 未验证）",
-      "score": null,
-      "sources": [
-        "/Users/unbug/.openclaw/workspace/research/2026-10-14-innovation-brief-brief-22b.md"
-      ]
-    },
-    {
-      "topic": "a1 模型退役告知+受影响资产匹配（22e 第一关存活，专利密度≈0 待复核）",
-      "score": null,
-      "sources": [
-        "research/2026-10-17-innovation-brief-brief-22e.md"
-      ]
-    }
-  ],
-  "lastPublishedUrl": "https://unbug.github.io/ai-innovation-brief-mandate-verification-gap/",
-  "lastPublishedVerifiedAt": "2026-11-16 00:1x GMT+8 三个月修复波线上实测 200",
-  "verification": {
-    "brief4": {
-      "url": "https://unbug.github.io/innovation-brief-prd-gen-patents/",
-      "http": 200,
-      "verifiedAt": "2026-08-22 15:40 GMT+8",
-      "note": "空提交 25f4428 重建后验证（原 a84705c 构建早于 UTC 8/22 零点，Jekyll 排除未来日期文章）"
-    },
-    "brief5": {
-      "url": "https://unbug.github.io/innovation-brief-stream-moderation-patents/",
-      "http": 200,
-      "verifiedAt": "2026-08-22 17:05 GMT+8",
-      "note": "commit 7088613 Actions build success 后验证，llms.txt 已收录"
-    },
-    "brief6": {
-      "url": "https://unbug.github.io/innovation-brief-video-authentication-patents/",
-      "http": 200,
-      "verifiedAt": "2026-08-24 15:40 GMT+8",
-      "note": "简报 #7 轮次验证：HTTP 200（2.3MB）+ llms.txt 已收录"
-    },
-    "brief7": {
-      "url": "https://unbug.github.io/innovation-brief-prompt-injection-defense-patents/",
-      "http": 200,
-      "verifiedAt": "2026-09-04 18:30 GMT+8",
-      "note": "线上已可访问（本轮内链目标核验），brief7 验证补记"
-    },
-    "brief8": {
-      "url": "https://unbug.github.io/innovation-brief-prompt-testing-patents/",
-      "http": 200,
-      "verifiedAt": "2026-09-04 19:20 GMT+8",
-      "note": "commit 3e343d7，Actions build success 后验证 HTTP 200 + llms.txt 已收录"
-    },
-    "brief25": {
-      "url": "https://unbug.github.io/innovation-brief-agentic-payment-patents/",
-      "http": 200,
-      "verifiedAt": "2026-10-30 10:33 GMT+8",
-      "note": "构建 in_progress 超 10 分钟后 success；正文关键词与 SVG 均 200"
-    },
-    "brief26": {
-      "url": "https://unbug.github.io/innovation-brief-kv-cache-serving-patents/",
-      "http": 200,
-      "verifiedAt": "2026-10-31 13:1x GMT+8",
-      "note": "六件专利 CEO 经 r.jina.ai 逐字亲验；CN122019408B 为授权件；火山 claim 引英文原文+中译"
-    },
-    "brief27": {
-      "url": "https://unbug.github.io/innovation-brief-agent-memory-audit-gap/",
-      "http": 200,
-      "verifiedAt": "2026-11-16 00:1x GMT+8 三个月修复波线上实测 200",
-      "note": "2026-11-16 状态修复波线上复验"
-    },
-    "brief28": {
-      "url": "https://unbug.github.io/ai-innovation-brief-tool-failure-semantics/",
-      "http": 200,
-      "verifiedAt": "2026-11-16 00:1x GMT+8 三个月修复波线上实测 200",
-      "note": "2026-11-16 状态修复波线上复验"
-    },
-    "brief29": {
-      "url": "https://unbug.github.io/ai-innovation-brief-provenance-verification-gap/",
-      "http": 200,
-      "verifiedAt": "2026-11-16 00:1x GMT+8 三个月修复波线上实测 200",
-      "note": "2026-11-16 状态修复波线上复验"
-    },
-    "brief30": {
-      "url": "https://unbug.github.io/ai-innovation-brief-mandate-verification-gap/",
-      "http": 200,
-      "verifiedAt": "2026-11-16 00:1x GMT+8 三个月修复波线上实测 200",
-      "note": "2026-11-16 状态修复波线上复验"
-    }
-  },
-  "lastNoTopicRound": {
-    "date": "2026-10-26",
-    "round": "brief-24（换端点首战：GP /xhr/query 可用窗口 13 分钟后硬封死，详情页同 IP 503）",
-    "brief": "workspace-researcher/research-brief-2026-10-23-brief24.md",
-    "verdict": "NOTOPIC。两关制四候选第一关全存活、第二关专利背书全灭：a1 退役告知密度≈0（model deprecation 全库 total=1 且无关旧件），b1 动作回执仅旧件+单家高校件（清华 CN122287696B 出窗），robot×execution confirmation 不成簇。a1 维持降级解读稿素材，b1 判死。",
-    "channelNote": "通道再降级：/xhr/query 成段可用仅 13 分钟窗口，且本轮详情页 HTML 同 IP 同步 503（brief-23 时代「详情页不受影响」不再成立）——检索+亲验双通道同进同退。Bing 通 200 可作下轮备援；FPO/Espacenet 恒 403。",
-    "falsified": "上轮 carryOver 的一条 npm 包高产线索经 npm registry+deps.dev 双验证伪=2026-02-24 占位包（placeholder name reserved），线索已清除不再引用",
-    "carryOver": [
-      "（10-29 轮用）大类轮换：模型授权/计费变更审计面、agent 托管运行时（supervised agent hosting）、AI 交接验收文书化——开工前两关制+先探后用"
-    ],
-    "watchpoints": [
-      "清华深研院 CN122287696B（执行语义 agent）+CN122237599A（具身智能）高校抬头，现第二/三家独立申请人可复活 b1"
-    ]
-  },
-  "notes": [
-    "2026-10-17：10-16 发布的文档抽取授权潮稿原以独立栏目发布（栏目归属错误，Unbug 指出），已并栏为简报 #22（标题加栏目前缀、categories 改 InnovationBrief、文件与 SVG 更名、旧 URL 留跳转页）。原排期 10-21 轮次顺延编号为 #23。",
-    "2026-10-18：简报 #23 发布（会议纪要本地化部署：Zoom US12647532B2/US12664798B2/US20260211885A1 + Microsoft EP4162488B1，全部详情页核验）。b1 agent 物理动作回执线索本轮 GP 三轮字面检索无大厂簇（仅个人申请人），判死不复活；a1 维持降级。GP XHR query 端点本轮再次限流（两次 Sorry），详情页 HTML 不受影响——取证走详情页的策略有效。",
-    "2026-10-18 00:4x：昨夜后台探测出现混合证据——同一 XHR 端点一发返回真 JSON（total_num_results=42，即检索恢复可用）、另发仍是拦截页；00:4x 手探又回 404。判定=出口 IP 间歇性解封，非稳定可用。#23（10-21）策略照预案：开工先单发探 xhr/result 活性，命中即用，间隔 >=60s；仍不通走 FPO/降级框架。",
-    "2026-11-16：状态文件修复波——补记 #27 agent-memory(11-07)/#28 tool-failure(11-08)/#29 provenance(11-09)/#30 mandate(11-10)，totalPublished 26→30；coveredPatentFamilies +21 至 129。slug 前缀裁定：innovation-brief- 唯一，#28-#30 误用 ai-innovation-brief- 作历史遗留保留（URL 不动），指南已加禁止混用条款。"
+ "currentPhase": "published",
+ "lastPublished": {
+  "n": 36,
+  "slug": "innovation-brief-agent-operation-permission-gap",
+  "date": "2026-11-21",
+  "title": "大厂圈地AI操作层，逐单批准还空着",
+  "patents": [
+   "US12014192B2",
+   "US11782733B2",
+   "US12106126B2",
+   "US20260093544A1",
+   "CN122064443A"
   ]
+ },
+ "totalPublished": 36,
+ "nextScheduled": "2026-11-23",
+ "coveredPatentFamilies": [
+  "AU2026906209A0",
+  "CN120915496B",
+  "CN121233825B",
+  "CN121301536A",
+  "CN122019408B",
+  "CN122196982A",
+  "CN122433060A",
+  "EP4162488",
+  "EP4548546",
+  "EP4657312A1",
+  "EP4781281A1",
+  "EP4785219A1",
+  "US11593685B1",
+  "US12111747",
+  "US12147513",
+  "US12430428B2",
+  "US12450494B1",
+  "US12487819",
+  "US12519829",
+  "US12526244B2",
+  "US12562968",
+  "US12568091",
+  "US12574336",
+  "US12602470",
+  "US12602572B2",
+  "US12613928",
+  "US12614037",
+  "US12645691",
+  "US12645723",
+  "US12647455",
+  "US12647532",
+  "US12664798",
+  "US12665804",
+  "US12670045",
+  "US12675579",
+  "US12683886",
+  "US12683991",
+  "US12688261",
+  "US12688403B2",
+  "US12694133B1",
+  "US12699853",
+  "US12699853B2",
+  "US12701042",
+  "US12701054",
+  "US12705267",
+  "US12705437",
+  "US12705604B2",
+  "US12706859B1",
+  "US20250103325",
+  "US20250225998",
+  "US20250259042A1",
+  "US20250259431",
+  "US20250298500A1",
+  "US20250322156A1",
+  "US20250335711",
+  "US20250356057A1",
+  "US20260004070",
+  "US20260017525",
+  "US20260030476",
+  "US20260044392",
+  "US20260044679",
+  "US20260045268",
+  "US20260057218",
+  "US20260057884",
+  "US20260064410",
+  "US20260064670",
+  "US20260073299",
+  "US20260088032",
+  "US20260089190",
+  "US20260093735",
+  "US20260099327",
+  "US20260099707",
+  "US20260111248",
+  "US20260111331",
+  "US20260111428",
+  "US20260119483",
+  "US20260119551",
+  "US20260119921",
+  "US20260119922",
+  "US20260120513",
+  "US20260120693",
+  "US20260133859",
+  "US20260134002",
+  "US20260148010",
+  "US20260154581",
+  "US20260169789",
+  "US20260170067",
+  "US20260170265",
+  "US20260178323",
+  "US20260178727",
+  "US20260181056A1",
+  "US20260186828",
+  "US20260186944",
+  "US20260187470A1",
+  "US20260187482",
+  "US20260187746",
+  "US20260188475",
+  "US20260189498",
+  "US20260195309A1",
+  "US20260195422",
+  "US20260195537",
+  "US20260203325",
+  "US20260203500",
+  "US20260205467",
+  "US20260211885",
+  "US20260211893",
+  "US20260212002A1",
+  "US20260212126",
+  "US20260220372",
+  "US20260220380",
+  "US20260228333",
+  "US20260229221",
+  "US20260236476A1",
+  "US20260236564",
+  "US20260236713",
+  "US20260238551",
+  "US20260238651",
+  "US20260244557",
+  "US20260244665",
+  "US20260245574",
+  "US20260246629",
+  "US20260246646",
+  "US20260252594",
+  "US20260260063",
+  "US20260260120",
+  "US20260278303",
+  "WO2026138159A1",
+  "WO2026173611A1",
+  "WO2026173648A1",
+  "US20260067335",
+  "WO2026154461",
+  "KR102982822",
+  "US12592823",
+  "US12683941",
+  "US20260228267",
+  "US12701129",
+  "EP4785531",
+  "WO2026165173",
+  "CN122573634",
+  "US20260093544",
+  "US20250094580",
+  "US20250258920",
+  "US20250337779",
+  "CN121051008",
+  "AU2022273947",
+  "US20260135883",
+  "US12505299",
+  "US12645555",
+  "CN122175015",
+  "US12531820",
+  "US12602412",
+  "US12405978",
+  "US12314707",
+  "US12481836",
+  "US12524214",
+  "US12688374",
+  "CN121879734",
+  "US12014192B2",
+  "US11782733B2",
+  "US12106126B2",
+  "US20260093544A1",
+  "CN122064443A"
+ ],
+ "candidateTopics": [
+  {
+   "topic": "LLM 文档结构化抽取授权簇（Mistral US12651113B1 快授5.3月/Vendr US12586403B2/IBM US12639362B2/Intuit US12632675B2+US12705916B2/Adobe US12699851B2，6 家全授权）——簇强度4.5可核验5.0但空白度2.0（Reducto/LlamaParse/Unstructured 比分数+Extend 已发字段级评测），仅独立第三方 bake-off 半空。复活条件：出现新结构性空白，或改写为纯技术解读稿（不走简报框架）",
+   "score": 3.7,
+   "sources": [
+    "/Users/unbug/.openclaw/workspace/research/2026-10-14-innovation-brief-brief-22b.md"
+   ]
+  },
+  {
+   "topic": "LLM 按请求选模型路由簇（Citibank US20260228267A1 路由审计链 / ServiceNow US20260205387A1 / aixplain US20260195184A1，2026-07~08 集中公开）——工具层被 RouteLLM/LiteLLM/Portkey 占据，仅当找到未饱和子角度（如路由回归审计）才复活",
+   "score": 3.0,
+   "sources": [
+    "/Users/unbug/.openclaw/workspace/research/2026-10-14-innovation-brief-brief-22.md"
+   ]
+  },
+  {
+   "topic": "Mistral US12651113B1 快速授权信号（优先权 2025-12-31→授权 2026-06-09 仅 5.5 个月，Document intelligence）——本轮编号未能独立复验（GP 通道全灭），下轮先核号再挖快速授权 B1 簇",
+   "score": 3.2,
+   "sources": [
+    "/Users/unbug/.openclaw/workspace/research/2026-10-14-innovation-brief-brief-22.md"
+   ]
+  },
+  {
+   "topic": "LLM 会话成本归因探针（未完成：XHR 503+PatentsView 全灭）——10-21 轮换数据源续探（EPO OPS/Depatisnet 未验证）",
+   "score": null,
+   "sources": [
+    "/Users/unbug/.openclaw/workspace/research/2026-10-14-innovation-brief-brief-22b.md"
+   ]
+  },
+  {
+   "topic": "a1 模型退役告知+受影响资产匹配（22e 第一关存活，专利密度≈0 待复核）",
+   "score": null,
+   "sources": [
+    "research/2026-10-17-innovation-brief-brief-22e.md"
+   ]
+  }
+ ],
+ "lastPublishedUrl": "https://unbug.github.io/innovation-brief-agent-operation-permission-gap/",
+ "lastPublishedVerifiedAt": "",
+ "verification": {
+  "brief4": {
+   "url": "https://unbug.github.io/innovation-brief-prd-gen-patents/",
+   "http": 200,
+   "verifiedAt": "2026-08-22 15:40 GMT+8",
+   "note": "空提交 25f4428 重建后验证（原 a84705c 构建早于 UTC 8/22 零点，Jekyll 排除未来日期文章）"
+  },
+  "brief5": {
+   "url": "https://unbug.github.io/innovation-brief-stream-moderation-patents/",
+   "http": 200,
+   "verifiedAt": "2026-08-22 17:05 GMT+8",
+   "note": "commit 7088613 Actions build success 后验证，llms.txt 已收录"
+  },
+  "brief6": {
+   "url": "https://unbug.github.io/innovation-brief-video-authentication-patents/",
+   "http": 200,
+   "verifiedAt": "2026-08-24 15:40 GMT+8",
+   "note": "简报 #7 轮次验证：HTTP 200（2.3MB）+ llms.txt 已收录"
+  },
+  "brief7": {
+   "url": "https://unbug.github.io/innovation-brief-prompt-injection-defense-patents/",
+   "http": 200,
+   "verifiedAt": "2026-09-04 18:30 GMT+8",
+   "note": "线上已可访问（本轮内链目标核验），brief7 验证补记"
+  },
+  "brief8": {
+   "url": "https://unbug.github.io/innovation-brief-prompt-testing-patents/",
+   "http": 200,
+   "verifiedAt": "2026-09-04 19:20 GMT+8",
+   "note": "commit 3e343d7，Actions build success 后验证 HTTP 200 + llms.txt 已收录"
+  },
+  "brief25": {
+   "url": "https://unbug.github.io/innovation-brief-agentic-payment-patents/",
+   "http": 200,
+   "verifiedAt": "2026-10-30 10:33 GMT+8",
+   "note": "构建 in_progress 超 10 分钟后 success；正文关键词与 SVG 均 200"
+  },
+  "brief26": {
+   "url": "https://unbug.github.io/innovation-brief-kv-cache-serving-patents/",
+   "http": 200,
+   "verifiedAt": "2026-10-31 13:1x GMT+8",
+   "note": "六件专利 CEO 经 r.jina.ai 逐字亲验；CN122019408B 为授权件；火山 claim 引英文原文+中译"
+  },
+  "brief27": {
+   "url": "https://unbug.github.io/innovation-brief-agent-memory-audit-gap/",
+   "http": 200,
+   "verifiedAt": "2026-11-16 00:1x GMT+8 三个月修复波线上实测 200",
+   "note": "2026-11-16 状态修复波线上复验"
+  },
+  "brief28": {
+   "url": "https://unbug.github.io/ai-innovation-brief-tool-failure-semantics/",
+   "http": 200,
+   "verifiedAt": "2026-11-16 00:1x GMT+8 三个月修复波线上实测 200",
+   "note": "2026-11-16 状态修复波线上复验"
+  },
+  "brief29": {
+   "url": "https://unbug.github.io/ai-innovation-brief-provenance-verification-gap/",
+   "http": 200,
+   "verifiedAt": "2026-11-16 00:1x GMT+8 三个月修复波线上实测 200",
+   "note": "2026-11-16 状态修复波线上复验"
+  },
+  "brief30": {
+   "url": "https://unbug.github.io/ai-innovation-brief-mandate-verification-gap/",
+   "http": 200,
+   "verifiedAt": "2026-11-16 00:1x GMT+8 三个月修复波线上实测 200",
+   "note": "2026-11-16 状态修复波线上复验"
+  }
+ },
+ "lastNoTopicRound": {
+  "date": "2026-10-26",
+  "round": "brief-24（换端点首战：GP /xhr/query 可用窗口 13 分钟后硬封死，详情页同 IP 503）",
+  "brief": "workspace-researcher/research-brief-2026-10-23-brief24.md",
+  "verdict": "NOTOPIC。两关制四候选第一关全存活、第二关专利背书全灭：a1 退役告知密度≈0（model deprecation 全库 total=1 且无关旧件），b1 动作回执仅旧件+单家高校件（清华 CN122287696B 出窗），robot×execution confirmation 不成簇。a1 维持降级解读稿素材，b1 判死。",
+  "channelNote": "通道再降级：/xhr/query 成段可用仅 13 分钟窗口，且本轮详情页 HTML 同 IP 同步 503（brief-23 时代「详情页不受影响」不再成立）——检索+亲验双通道同进同退。Bing 通 200 可作下轮备援；FPO/Espacenet 恒 403。",
+  "falsified": "上轮 carryOver 的一条 npm 包高产线索经 npm registry+deps.dev 双验证伪=2026-02-24 占位包（placeholder name reserved），线索已清除不再引用",
+  "carryOver": [
+   "（10-29 轮用）大类轮换：模型授权/计费变更审计面、agent 托管运行时（supervised agent hosting）、AI 交接验收文书化——开工前两关制+先探后用"
+  ],
+  "watchpoints": [
+   "清华深研院 CN122287696B（执行语义 agent）+CN122237599A（具身智能）高校抬头，现第二/三家独立申请人可复活 b1"
+  ]
+ },
+ "notes": [
+  "2026-10-17：10-16 发布的文档抽取授权潮稿原以独立栏目发布（栏目归属错误，Unbug 指出），已并栏为简报 #22（标题加栏目前缀、categories 改 InnovationBrief、文件与 SVG 更名、旧 URL 留跳转页）。原排期 10-21 轮次顺延编号为 #23。",
+  "2026-10-18：简报 #23 发布（会议纪要本地化部署：Zoom US12647532B2/US12664798B2/US20260211885A1 + Microsoft EP4162488B1，全部详情页核验）。b1 agent 物理动作回执线索本轮 GP 三轮字面检索无大厂簇（仅个人申请人），判死不复活；a1 维持降级。GP XHR query 端点本轮再次限流（两次 Sorry），详情页 HTML 不受影响——取证走详情页的策略有效。",
+  "2026-10-18 00:4x：昨夜后台探测出现混合证据——同一 XHR 端点一发返回真 JSON（total_num_results=42，即检索恢复可用）、另发仍是拦截页；00:4x 手探又回 404。判定=出口 IP 间歇性解封，非稳定可用。#23（10-21）策略照预案：开工先单发探 xhr/result 活性，命中即用，间隔 >=60s；仍不通走 FPO/降级框架。",
+  "2026-11-16：状态文件修复波——补记 #27 agent-memory(11-07)/#28 tool-failure(11-08)/#29 provenance(11-09)/#30 mandate(11-10)，totalPublished 26→30；coveredPatentFamilies +21 至 129。slug 前缀裁定：innovation-brief- 唯一，#28-#30 误用 ai-innovation-brief- 作历史遗留保留（URL 不动），指南已加禁止混用条款。",
+  "2026-11-21 第 36 期：GP 双窗口心跳值班抢收（14:15 主件+14:46 补件+百度定向串现搜现抢）。Qomplx US20250259041A1 因同族大面积命中黑名单出局（US20250259042A1×9/US20260228438A1×4）；US20240386350A1 因 claim1=(canceled)+Individual 出局。Monday 件带切割限定（同族 US20260181056A1 已盘，只写本件 claim1）。修复 lastPublishedUrl 停在 34 期的旧账。"
+ ]
 }
