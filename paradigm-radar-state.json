@@ -1,19 +1,19 @@
 {
  "currentPhase": "idle",
  "lastPublished": {
-  "n": 28,
-  "slug": "paradigm-radar-coding-agent-trust-cracks",
-  "date": "2026-11-19",
-  "title": "编码 Agent 的信任正在从六个方向裂开",
-  "weighted": 4.6
+  "n": 32,
+  "slug": "paradigm-radar-machine-checked-proof",
+  "date": "2026-11-23",
+  "title": "1700万行证明的盖章时刻",
+  "weighted": 4.3
  },
- "totalPublished": 28,
- "nextScheduled": "2026-11-23",
+ "totalPublished": 29,
+ "nextScheduled": "2026-11-24",
  "candidateTopics": [
   {
    "topic": "AI 代码验证/审查瓶颈（claude.dev 官方已证实/KPMG 回声/StarSling）",
    "score": 3.95,
-   "note": "11-22 复评降档 4.05→3.95（首复判据全零：Harvard 327/464 连续第二轮未破 400、claude.dev 296 冻结、FT 原链直引帖仅 6 分转引热度天花板确认）。#30 预期\"间隔拉开热度回升\"未兑现。转每 2 轮低频；GO 条件不变：Harvard 破 400 或第三方产业采用",
+   "note": "11-22 复评降档 4.05→3.95（首复判据全零：Harvard 327/464 连续第二轮未破 400、claude.dev 296 冻结、FT 原链直引帖仅 6 分转引热度天花板确认）。#30 预期\"间隔拉开热度回升\"未兑现。转每 2 轮低频；GO 条件不变：Harvard 破 400 或第三方产业采用；11-23 复测 Harvard 328/465 三轮停滞（+1/+3/+1），下轮 <340 降档 3.7",
    "date": "2026-11-22"
   },
   {
@@ -28,7 +28,7 @@
   },
   {
    "topic": "agent 常驻执行基座产品化+邻接层（雷达#20 主簇残留：Dots/Duet/OpenShell/MXC/Duet 发布物已密，需求端证据弱；复活条件：GitHub『agent-scale Git infra』系列或同类平台方帖获 >150 分主帖，或 OpenShell/MXC 出现 CNCF/OWASP/跨厂商互操作动作，或 Dots/Duet 出现第三方独立行为审计爆款）",
-   "score": 3.85,
+   "score": 3.75,
    "sources": [
     "https://github.com/NVIDIA/OpenShell",
     "https://github.com/microsoft/mxc",
@@ -36,7 +36,7 @@
     "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
     "https://layerfs.ai/"
    ],
-   "note": "11-22：#32 起设为首复轴（判据收紧：需发布物级+需求端双证据）。本轮 OpenShell 无跟进、managed agents 0 帖，维持 3.85"
+   "note": "11-22：#32 起设为首复轴（判据收紧：需发布物级+需求端双证据）。本轮 OpenShell 无跟进、managed agents 0 帖，维持 3.85；11-23 轮判据零降档 3.85→3.75 转低频"
   },
   {
    "topic": "agent 执行基座标准化波（Mxc/OpenShell/SPACE 任一进入 CNCF/OWASP 或跨厂商互操作策略格式→升级规范波重新计分；SPACE 上 HN >150 分→开发者拐点；新增子信号：gVisor 捐 CNCF（gvisor.dev 博客 10-02 实测，HN 仅 24 分）是否带出 agent 隔离策略格式）【11-16 事件：OpenShell 11-10 正式进 CNCF Sandbox（官方博客实测、Red Hat CTO 具名、采用 Cedar）——标准化触发条件已达成，但本期撞执行基座家族规避清单未用；素材存 research-brief-radar-2026-11-16.md，解禁后优先复议；MXC v1.1.0 属产品迭代不算】【11-17 复扫：CNCF 事件开发者侧零跟进（三连帖全 <7 分），维持观察】",
@@ -111,6 +111,31 @@
    "score": null,
    "note": "11-22 记录不采：撞 IPO 规避铁律。议题挂 #32——若 #32 仍全零，评估范式侧『产业影响』例外（对创业融资/开源生态的结构性冲击角度，不写股价涨跌）",
    "date": "2026-11-22"
+  },
+  {
+   "topic": "机器检查证明×AI 数学发现（#32 已采新轴）——#33 首复：验证工件第三方重编译跟进帖、Aaronson 派 vs 盖章派交锋、Alpöge 长文/演讲帖",
+   "score": 4.0,
+   "sources": [
+    "https://news.ycombinator.com/item?id=50589618",
+    "https://math.mit.edu/~drew/grh/"
+   ],
+   "date": "2026-11-23"
+  },
+  {
+   "topic": "SimpleBench 反杀前沿模型（高中生基线 83.7% > 最强模型 81.9%，simple-bench.com 200 全文核验）——判据：再一家独立反基准 ≥150",
+   "score": 2.7,
+   "sources": [
+    "https://news.ycombinator.com/item?id=50588916"
+   ],
+   "date": "2026-11-23"
+  },
+  {
+   "topic": "推理供应商数据事故线（OpenRouter 公告 53/18 三源同题全 <150，撞信任危机避让）——判据：任一帖破 150 或第二家聚合平台披露同类",
+   "score": 2.6,
+   "sources": [
+    "https://news.ycombinator.com/item?id=50595554"
+   ],
+   "date": "2026-11-23"
   }
  ],
  "lastNoTopicRound": {
@@ -121,7 +146,8 @@
  },
  "notes": [
   "2026-11-16：状态文件修复波——删除陈旧顶层键 lastPublishedSlug/lastPublishedDate（曾停在 #21/10-16）；总账补齐 #22 weight-space(11-03)/#23 default-drift(11-04)/#24 legacy-debt(11-06)/#25 harness-exodus(11-09)/#26 offline-sovereignty(11-15)，totalPublished 21→26；9 篇 #22-#26 与简报新文线上 200 实测。#22-#26 选题加权分未落盘，weighted 置 null 不回填。同日按 Unbug 裁定恢复 3000-6000 字配额并启动存量返工。",
-  "2026-11-22 轮决策（CEO）：①#32 首复轴改基座产品化（判据收紧），代码验证/接入层转每 2 轮低频；②IPO 规避线本轮不放宽，议题挂 #32（若仍全零再评估范式侧例外）；③连续 4 轮 NOTOPIC 主因是热点被三重避让规则过滤，属实情非误判，不降门槛硬凑。"
+  "2026-11-22 轮决策（CEO）：①#32 首复轴改基座产品化（判据收紧），代码验证/接入层转每 2 轮低频；②IPO 规避线本轮不放宽，议题挂 #32（若仍全零再评估范式侧例外）；③连续 4 轮 NOTOPIC 主因是热点被三重避让规则过滤，属实情非误判，不降门槛硬凑。",
+  "2026-11-23 第 32 期发布（总第 29 篇）：期号=轮次含 NOTOPIC 轮，totalPublished 只数发布。勘误入档：RewriteWeights 帖 id=50577265。Editor 雷达长文三连败教训：交稿必附 ls+wc 盘上自证。"
  ],
  "round2026_11_19": {
   "date": "2026-11-19",
@@ -165,5 +191,43 @@
   },
   "note": "连破三轮 NOTOPIC；GO 判据双命中（GS 禁用 905≥100 线；Win11 728/Codex 536 均超 300 线）；CEO 9 锚点全亲验持平。下期候选：AI 代码验证/审查瓶颈 3.6（复活判据 Harvard 破 400 或第二机构发布）"
  },
- "notopicStreak": 4
+ "notopicStreak": 4,
+ "round2026_11_23": {
+  "date": "2026-11-23",
+  "verdict": "GO",
+  "axis": "机器检查证明 × AI 数学发现",
+  "weighted": 4.3,
+  "brief": "/Users/unbug/.openclaw/workspace/research/research-brief-radar-2026-11-23.md",
+  "anchors": {
+   "pillar": [
+    [
+     "50574968",
+     2865
+    ],
+    [
+     "50579568",
+     2400
+    ],
+    [
+     "50589618",
+     912
+    ]
+   ],
+   "new": [
+    [
+     "50581084",
+     347
+    ],
+    [
+     "50515058",
+     332
+    ],
+    [
+     "50590441",
+     106
+    ]
+   ]
+  },
+  "note": "终结连续四轮 NOTOPIC。CEO 亲测 912/776（11-22 13:0x）；#33 首复本新轴：第三方重编译跟进帖/Aaronson 派交锋/Alpöge 长文。Editor 线本轮三连败（幽灵交稿/缩写稿/假自查），正文 CEO 执笔——长文任务书需加落盘硬判据（wc 自证）入模板。"
+ }
 }

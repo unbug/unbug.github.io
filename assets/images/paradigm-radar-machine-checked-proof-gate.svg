@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+  <rect width="1200" height="560" fill="#FFFFFF"/>
+  <text x="600" y="62" font-size="28" font-weight="700" fill="#1A1B1E" text-anchor="middle">GO 判定：三栏全过</text>
+  <text x="120" y="150" font-size="21" fill="#333333">热度主锚</text>
+  <rect x="360" y="126" width="558" height="44" fill="#0072B2"/>
+  <rect x="612" y="118" width="3" height="60" fill="#1A1B1E"/>
+  <text x="938" y="157" font-size="22" font-weight="700" fill="#1A1B1E">912</text>
+  <text x="622" y="212" font-size="18" fill="#767676">发文线 400</text>
+  <text x="120" y="300" font-size="21" fill="#333333">150 分以上簇成员</text>
+  <rect x="360" y="276" width="558" height="44" fill="#0072B2"/>
+  <rect x="918" y="268" width="3" height="60" fill="#1A1B1E"/>
+  <text x="938" y="307" font-size="22" font-weight="700" fill="#1A1B1E">6 条</text>
+  <text x="830" y="362" font-size="18" fill="#767676">要求 6 条</text>
+  <text x="120" y="450" font-size="21" fill="#333333">加权评分</text>
+  <rect x="360" y="426" width="558" height="44" fill="#D55E00"/>
+  <text x="938" y="457" font-size="22" font-weight="700" fill="#1A1B1E">4.30</text>
+  <text x="120" y="524" font-size="19" fill="#767676">机构声明原文、验证工件页、四判据原文全部实测可达（11-22）</text>
+</svg>

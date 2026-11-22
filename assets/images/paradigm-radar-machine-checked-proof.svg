@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <text x="600" y="72" font-size="34" font-weight="700" fill="#1A1B1E" text-anchor="middle">机器盖章：48 小时四条帖 6,524 分</text>
+  <text x="120" y="130" font-size="20" fill="#767676">Hacker News 讨论帖热度（全树口径，实测截至 11-22）</text>
+  <text x="120" y="212" font-size="20" fill="#333333">Alpöge 宣称 GRH 证明</text>
+  <rect x="470" y="188" width="560" height="46" fill="#D55E00"/>
+  <text x="1050" y="220" font-size="22" font-weight="700" fill="#1A1B1E">2,865</text>
+  <text x="120" y="302" font-size="20" fill="#333333">Masullo 仓促宣布（闹剧）</text>
+  <rect x="470" y="278" width="469" height="46" fill="#0072B2"/>
+  <text x="959" y="310" font-size="22" font-weight="700" fill="#1A1B1E">2,400</text>
+  <text x="120" y="392" font-size="20" fill="#333333">Lean 社区盖章声明</text>
+  <rect x="470" y="368" width="178" height="46" fill="#0072B2"/>
+  <text x="668" y="400" font-size="22" font-weight="700" fill="#1A1B1E">912</text>
+  <text x="120" y="482" font-size="20" fill="#333333">Aaronson 讽刺长文</text>
+  <rect x="470" y="458" width="68" height="46" fill="#0072B2"/>
+  <text x="558" y="490" font-size="22" font-weight="700" fill="#1A1B1E">347</text>
+  <line x1="470" y1="160" x2="470" y2="530" stroke="#1A1B1E" stroke-width="1.5"/>
+  <text x="120" y="585" font-size="19" fill="#767676">合计 6,524 分 · 验证工件页 106 分另计</text>
+  <text x="120" y="622" font-size="19" fill="#767676">裁决权第一次交给机器检查程序</text>
+</svg>

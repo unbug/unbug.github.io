@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+  <rect width="1200" height="620" fill="#FFFFFF"/>
+  <text x="600" y="62" font-size="28" font-weight="700" fill="#1A1B1E" text-anchor="middle">从判据就位到机构盖章：48 小时</text>
+  <line x1="100" y1="330" x2="1100" y2="330" stroke="#999999" stroke-width="1.5"/>
+  <circle cx="170" cy="330" r="9" fill="#0072B2"/>
+  <text x="170" y="290" font-size="20" fill="#333333" text-anchor="middle">11-12</text>
+  <text x="170" y="380" font-size="18" fill="#555555" text-anchor="middle">Xena 四判据文发布</text>
+  <text x="170" y="408" font-size="18" font-weight="700" fill="#1A1B1E" text-anchor="middle">332 分</text>
+  <circle cx="520" cy="330" r="9" fill="#D55E00"/>
+  <text x="520" y="270" font-size="20" fill="#333333" text-anchor="middle">11-20</text>
+  <text x="520" y="380" font-size="18" fill="#555555" text-anchor="middle">宣称 2,865 · 闹剧 2,400</text>
+  <text x="520" y="408" font-size="18" fill="#555555" text-anchor="middle">讽刺文 347</text>
+  <circle cx="830" cy="330" r="9" fill="#0072B2"/>
+  <text x="830" y="290" font-size="20" fill="#333333" text-anchor="middle">11-21</text>
+  <text x="830" y="380" font-size="18" fill="#555555" text-anchor="middle">机构盖章声明</text>
+  <text x="830" y="408" font-size="18" font-weight="700" fill="#1A1B1E" text-anchor="middle">912 分</text>
+  <circle cx="1040" cy="330" r="9" fill="#999999"/>
+  <text x="1040" y="290" font-size="20" fill="#333333" text-anchor="middle">11-21</text>
+  <text x="1040" y="380" font-size="18" fill="#555555" text-anchor="middle">验证工件页公开</text>
+  <text x="1040" y="408" font-size="18" font-weight="700" fill="#1A1B1E" text-anchor="middle">106 分</text>
+  <text x="600" y="520" font-size="19" fill="#767676" text-anchor="middle">判据提前 8 天就位，反转才来得这么快</text>
+  <text x="600" y="556" font-size="19" fill="#767676" text-anchor="middle">分数为 HN 全树口径，实测于 11-22</text>
+</svg>

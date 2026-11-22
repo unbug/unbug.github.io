@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+  <rect width="1200" height="620" fill="#FFFFFF"/>
+  <text x="600" y="62" font-size="28" font-weight="700" fill="#1A1B1E" text-anchor="middle">热度在八卦，信号在范式</text>
+  <text x="120" y="130" font-size="20" fill="#D55E00" font-weight="700">围观侧（数学八卦与闹剧）</text>
+  <text x="120" y="196" font-size="20" fill="#333333">宣称证明帖</text>
+  <rect x="360" y="172" width="580" height="42" fill="#D55E00"/>
+  <text x="960" y="202" font-size="21" font-weight="700" fill="#1A1B1E">2,865</text>
+  <text x="120" y="266" font-size="20" fill="#333333">仓促宣布闹剧帖</text>
+  <rect x="360" y="242" width="486" height="42" fill="#D55E00"/>
+  <text x="866" y="272" font-size="21" font-weight="700" fill="#1A1B1E">2,400</text>
+  <text x="360" y="336" font-size="20" fill="#555555">两根合计约 5,300 分</text>
+  <text x="120" y="406" font-size="20" fill="#0072B2" font-weight="700">范式侧（验证程序讨论）</text>
+  <text x="120" y="462" font-size="20" fill="#333333">机构盖章帖</text>
+  <rect x="360" y="438" width="185" height="42" fill="#0072B2"/>
+  <text x="565" y="468" font-size="21" font-weight="700" fill="#1A1B1E">912</text>
+  <text x="120" y="524" font-size="20" fill="#333333">判据文与工件页两帖</text>
+  <rect x="360" y="500" width="88" height="42" fill="#0072B2"/>
+  <text x="458" y="530" font-size="21" font-weight="700" fill="#1A1B1E">332 · 106</text>
+  <text x="620" y="530" font-size="20" fill="#555555">三根合计约 1,350 分</text>
+  <line x1="360" y1="150" x2="360" y2="560" stroke="#1A1B1E" stroke-width="1.5"/>
+  <text x="600" y="596" font-size="19" fill="#767676" text-anchor="middle">信号的读者远比围观者少（HN 全树口径，实测于 11-22）</text>
+</svg>
