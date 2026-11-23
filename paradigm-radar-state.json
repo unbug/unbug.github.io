@@ -1,13 +1,11 @@
 {
  "currentPhase": "idle",
  "lastPublished": {
-  "n": 32,
-  "slug": "paradigm-radar-machine-checked-proof",
-  "date": "2026-11-23",
-  "title": "1700万行证明的盖章时刻",
-  "weighted": 4.3
+  "n": 33,
+  "slug": "paradigm-radar-mirror-verification-swarm",
+  "date": "2026-11-25"
  },
- "totalPublished": 29,
+ "totalPublished": 30,
  "nextScheduled": "2026-11-25",
  "candidateTopics": [
   {
@@ -120,7 +118,7 @@
     "https://math.mit.edu/~drew/grh/"
    ],
    "date": "2026-11-23",
-   "note": "；11-24 轮镜像事件（Masullo errata 蜂群 173/149，389 条对抗复核）4.40，GO-PENDING 压发至 11-25（同轴≥48h 间隔）；11-23 复扫素材未塌，11-25 必发"
+   "note": "；11-24 轮镜像事件（Masullo errata 蜂群 173/149，389 条对抗复核）4.40，GO-PENDING 压发至 11-25（同轴≥48h 间隔）；11-23 复扫素材未塌，11-25 必发；#33 已发（11-25 期文件）。#34 判据：勘误帖破 400/Baez 破 300/第五份审计具名或独立复算≥150/P=NP swarm 破 150"
   },
   {
    "topic": "SimpleBench 反杀前沿模型（高中生基线 83.7% > 最强模型 81.9%，simple-bench.com 200 全文核验）——判据：再一家独立反基准 ≥150",
@@ -137,7 +135,7 @@
     "https://news.ycombinator.com/item?id=50595554"
    ],
    "date": "2026-11-23",
-   "note": "；11-23 复扫升 3.6：OpenRouter 公告 CEO 亲验具名 Off-boarded three providers+125 endpoints+Atlas Cloud/Novita/Phala/Together 逐字命中；#34 头号候选（比主簇二次重复更适合）"
+   "note": "；11-23 复扫升 3.6：OpenRouter 公告 CEO 亲验具名 Off-boarded three providers+125 endpoints+Atlas Cloud/Novita/Phala/Together 逐字命中；#34 头号候选（比主簇二次重复更适合）；R7 红线：下架三家/125 端点为 OpenRouter 自述非监管认定，热度未破 400 不得按 GO 级书写"
   },
   {
    "topic": "推理供应商数据事故线（OpenRouter 280/97+Together.ai 官方公告四源同题）——升档 3.2；判据：具名供应商点名或监管动作→GO 候选；注意与 #28 信任母题切割（这是供给侧数据治理非 agent 信任）",
@@ -146,7 +144,7 @@
     "https://news.ycombinator.com/item?id=50595554"
    ],
    "date": "2026-11-24",
-   "note": "；11-23 复扫升 3.6：OpenRouter 公告 CEO 亲验具名 Off-boarded three providers+125 endpoints+Atlas Cloud/Novita/Phala/Together 逐字命中；#34 头号候选（比主簇二次重复更适合）"
+   "note": "；11-23 复扫升 3.6：OpenRouter 公告 CEO 亲验具名 Off-boarded three providers+125 endpoints+Atlas Cloud/Novita/Phala/Together 逐字命中；#34 头号候选（比主簇二次重复更适合）；R7 红线：下架三家/125 端点为 OpenRouter 自述非监管认定，热度未破 400 不得按 GO 级书写"
   },
   {
    "topic": "OpenAI「Perplexity and Intelligence」官方立场文 513/353——单帖不成簇 3.0 观察；判据：第二家大厂跟进或簇化",
@@ -168,7 +166,8 @@
   "2026-11-22 轮决策（CEO）：①#32 首复轴改基座产品化（判据收紧），代码验证/接入层转每 2 轮低频；②IPO 规避线本轮不放宽，议题挂 #32（若仍全零再评估范式侧例外）；③连续 4 轮 NOTOPIC 主因是热点被三重避让规则过滤，属实情非误判，不降门槛硬凑。",
   "2026-11-23 第 32 期发布（总第 29 篇）：期号=轮次含 NOTOPIC 轮，totalPublished 只数发布。勘误入档：RewriteWeights 帖 id=50577265。Editor 雷达长文三连败教训：交稿必附 ls+wc 盘上自证。",
   "2026-11-24 轮：GO-PENDING 首例（判据全中但主动压 24h 等同轴间隔），11-25 复扫必发不再压（除非素材塌了）。",
-  "2026-11-23 交付纪律第 3 案：论文调研任务（8b364c38）实际交付了雷达复扫内容（research-brief-radar-2026-11-25.md），雷达素材高质量照收，论文线重派。"
+  "2026-11-23 交付纪律第 3 案：论文调研任务（8b364c38）实际交付了雷达复扫内容（research-brief-radar-2026-11-25.md），雷达素材高质量照收，论文线重派。",
+  "11-23 傍晚 #33 镜像篇 push（CEO 执笔 3,010 字 6 图全 PASS）：48h 同轴间隔兑现 GO-PENDING 承诺；16:26 复扫刷新五处白名单数字（勘误帖 224/Baez 201/ERRATA 750 行/Checked≈84/28 步无修复）；同日研究员复扫交付质量转正（ls 盘上有件+证据文件全）。"
  ],
  "round2026_11_19": {
   "date": "2026-11-19",
@@ -298,7 +297,25 @@
     "流水线自我回滚 40 entries marked Lean too early set back（研究员记录，CEO raw 截断未及逐字，Editor 引用标注来源）",
     "主定理问题公开出处=Lean Zulip+Baez 博文，README：They did not come from this formalization（CEO 亲验逐字）"
    ],
-   "writing_note": "重心移「反方流水线」章，勿重复 #32；口径 R1 锁死：编号至 F248/I373/M49+README 自述约 660（实测表行 261/384/50，汇总滞后于表）"
+   "writing_note": "重心移「反方流水线」章，勿重复 #32；口径 R1 锁死：编号至 F248/I373/M49+README 自述约 660（实测表行 261/384/50，汇总滞后于表）",
+   "baez_channel": "wordpress.com curl 403（同期 google 000，api/raw 控制组 200）→ 出口对 wordpress 类受限，Baez 素材按二手口径，下期换通道复测"
+  },
+  "published": {
+   "n": 33,
+   "slug": "paradigm-radar-mirror-verification-swarm",
+   "file_date": "2026-11-25",
+   "pushed": "2026-11-23 傍晚（GO-PENDING 48h 间隔兑现，零点后自动渲染）",
+   "written_by": "CEO 执笔（Editor 雷达线三连败先例沿用）",
+   "refresh_16_26": {
+    "errata_post": "224/163（4h+45）",
+    "baez_post": "201/134（+123）",
+    "seal_post": "1,223/1,007（平台 +6）",
+    "ERRATA": "639,382B F267/I403/M50 实测 750 行 vs README 自述约 710（260/375/50/25）",
+    "checked_lean": "约 84 行（正则，65 旧数作废）",
+    "audits": "README 现文五份/ERRATA 正文三份具名 93 同名",
+    "steps_no_fix": "28（22 作废）",
+    "repo": "stars 84，pushed_at 北京 16:01"
+   }
   }
  },
  "corrections_1123": [

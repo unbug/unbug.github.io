@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <text x="600" y="80" font-size="36" font-weight="700" fill="#1A1B1E" text-anchor="middle">反方流水线的三条自我纠错规矩</text>
+  <text x="120" y="176" font-size="22" fill="#333333">规矩一：第二个 agent 反驳第一个　初检 389 条 → 撤回 6 · 改表 10 · 修正 67</text>
+  <rect x="120" y="196" width="778" height="46" fill="#0072B2"/>
+  <text x="120" y="300" font-size="22" fill="#333333">规矩二：标记不许超前　40 条过早标 Lean　已退回原状</text>
+  <rect x="120" y="320" width="320" height="46" fill="#D55E00"/>
+  <text x="120" y="424" font-size="22" fill="#333333">规矩三：老结论定期重审　118 条老行复检 → 撤回 4 · 26 条改判为假命题</text>
+  <rect x="120" y="444" width="640" height="46" fill="#0072B2"/>
+  <text x="120" y="560" font-size="19" fill="#767676">改判方向是加重（缺口 → 假命题 F207–F232），复核不是橡皮图章</text>
+  <text x="120" y="600" font-size="19" fill="#767676">全部为仓库原文逐字可查 · 实测 2026-11-23</text>
+</svg>

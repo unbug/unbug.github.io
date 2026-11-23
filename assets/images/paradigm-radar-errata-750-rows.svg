@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <text x="600" y="80" font-size="36" font-weight="700" fill="#1A1B1E" text-anchor="middle">勘误表 750 行的构成</text>
+  <text x="120" y="158" font-size="20" fill="#333333">不精确 / 论证不符　375</text>
+  <rect x="120" y="172" width="750" height="60" fill="#0072B2"/>
+  <text x="120" y="292" font-size="20" fill="#333333">印刷陈述为假　260</text>
+  <rect x="120" y="306" width="520" height="60" fill="#D55E00"/>
+  <text x="120" y="426" font-size="20" fill="#333333">占位缺件　50　报告　25</text>
+  <rect x="120" y="440" width="100" height="60" fill="#0072B2"/>
+  <rect x="230" y="440" width="50" height="60" fill="#0072B2"/>
+  <text x="120" y="580" font-size="19" fill="#767676">编号上限 F267 / I403 / M50 · 表行实测 750 对 README 自述约 710（260/375/50/25）</text>
+  <text x="120" y="620" font-size="19" fill="#767676">口径：实测 2026-11-23 16:26 · 仓库 16:01 仍在 push，规模数字必须带时刻读</text>
+</svg>

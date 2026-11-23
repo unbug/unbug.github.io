@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <text x="600" y="72" font-size="34" font-weight="700" fill="#1A1B1E" text-anchor="middle">抢发 · 盖章 · 拆机</text>
+  <text x="600" y="114" font-size="19" fill="#767676" text-anchor="middle">48 小时三幕时间线 · HN 分数为 items API 全树口径 · 实测 2026-11-23 16:26</text>
+  <line x1="110" y1="360" x2="1090" y2="360" stroke="#1A1B1E" stroke-width="1.5"/>
+  <circle cx="230" cy="360" r="9" fill="#0072B2"/>
+  <circle cx="600" cy="360" r="9" fill="#0072B2"/>
+  <circle cx="960" cy="360" r="9" fill="#D55E00"/>
+  <text x="230" y="318" font-size="21" fill="#555555" text-anchor="middle">11-20 抢发</text>
+  <text x="230" y="288" font-size="26" font-weight="700" fill="#1A1B1E" text-anchor="middle">质疑帖 2,448 分</text>
+  <text x="600" y="318" font-size="21" fill="#555555" text-anchor="middle">11-21 机构盖章</text>
+  <text x="600" y="288" font-size="26" font-weight="700" fill="#1A1B1E" text-anchor="middle">声明帖 1,223 分</text>
+  <text x="960" y="318" font-size="21" fill="#555555" text-anchor="middle">11-22 反方蜂群</text>
+  <text x="960" y="288" font-size="26" font-weight="700" fill="#1A1B1E" text-anchor="middle">勘误帖 224 分</text>
+  <text x="960" y="252" font-size="22" font-weight="700" fill="#D55E00" text-anchor="middle">4 小时 +45</text>
+  <text x="110" y="438" font-size="19" fill="#767676">同日科普长文 2,910 分是全场最大单帖；勘误帖 33 小时走到 224 分仍在加速</text>
+  <text x="110" y="480" font-size="19" fill="#767676">被拆论文最后一节 11-22 才落库，第 13 章尚未写出主定理</text>
+  <text x="110" y="600" font-size="20" fill="#555555">抢发等不到审稿周期，盖章不垄断终局，拆机从第一天住进同一条时间线</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <text x="600" y="120" font-size="60" font-weight="700" fill="#1A1B1E" text-anchor="middle">拆机人</text>
+  <text x="600" y="176" font-size="22" fill="#767676" text-anchor="middle">盖章机旁边的第二套机器 · 4 小时热度增量</text>
+  <text x="120" y="286" font-size="21" fill="#333333">反方勘误帖</text>
+  <rect x="360" y="260" width="270" height="52" fill="#D55E00"/>
+  <text x="660" y="296" font-size="26" font-weight="700" fill="#1A1B1E">+45</text>
+  <text x="120" y="400" font-size="21" fill="#333333">Baez 科普帖</text>
+  <rect x="360" y="374" width="540" height="52" fill="#0072B2"/>
+  <text x="930" y="410" font-size="26" font-weight="700" fill="#1A1B1E">+123</text>
+  <text x="120" y="514" font-size="21" fill="#333333">盖章声明帖</text>
+  <rect x="360" y="488" width="36" height="52" fill="#0072B2"/>
+  <text x="430" y="524" font-size="26" font-weight="700" fill="#1A1B1E">+6</text>
+  <line x1="360" y1="236" x2="360" y2="566" stroke="#1A1B1E" stroke-width="1.5"/>
+  <text x="120" y="618" font-size="18" fill="#767676">存量：盖章帖 1,223 分对勘误帖 224 分 · 量级不同 · 重心在移动 · 实测 2026-11-23 16:26</text>
+</svg>

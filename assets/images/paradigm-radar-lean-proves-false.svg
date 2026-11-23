@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <text x="600" y="82" font-size="36" font-weight="700" fill="#1A1B1E" text-anchor="middle">Checked = Lean：把「它是错的」写成机器可查证明</text>
+  <rect x="130" y="150" width="430" height="150" fill="#0072B2"/>
+  <text x="345" y="212" font-size="24" font-weight="700" fill="#FFFFFF" text-anchor="middle">印刷命题</text>
+  <text x="345" y="252" font-size="20" fill="#FFFFFF" text-anchor="middle">入库为一条 Lean 陈述</text>
+  <text x="600" y="235" font-size="34" font-weight="700" fill="#1A1B1E" text-anchor="middle">+</text>
+  <rect x="670" y="150" width="400" height="150" fill="#D55E00"/>
+  <text x="870" y="212" font-size="24" font-weight="700" fill="#FFFFFF" text-anchor="middle">它为假的证明</text>
+  <text x="870" y="252" font-size="20" fill="#FFFFFF" text-anchor="middle">同样机器可检查</text>
+  <text x="600" y="400" font-size="26" font-weight="700" fill="#1A1B1E" text-anchor="middle">当前约 84 行如此标注（含 40 条回退后净值）</text>
+  <text x="600" y="448" font-size="19" fill="#767676" text-anchor="middle">正则实测 2026-11-23 16:26 · README 现文已不再给汇总数</text>
+  <text x="130" y="540" font-size="20" fill="#555555">机构用机器验收存在，拆机方用同一台机器裁决不存在</text>
+  <text x="130" y="584" font-size="19" fill="#767676">84 行对 750 行总表仍是少数：产能瓶颈在形式化本身</text>
+</svg>

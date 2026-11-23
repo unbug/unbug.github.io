@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <text x="600" y="88" font-size="38" font-weight="700" fill="#1A1B1E" text-anchor="middle">4 小时增量：重心在移向拆机一侧</text>
+  <text x="120" y="180" font-size="21" fill="#333333">反方勘误帖</text>
+  <rect x="360" y="154" width="270" height="52" fill="#D55E00"/>
+  <text x="660" y="190" font-size="26" font-weight="700" fill="#1A1B1E">+45</text>
+  <text x="120" y="290" font-size="21" fill="#333333">Baez 解读帖</text>
+  <rect x="360" y="264" width="540" height="52" fill="#0072B2"/>
+  <text x="930" y="300" font-size="26" font-weight="700" fill="#1A1B1E">+123</text>
+  <text x="120" y="400" font-size="21" fill="#333333">盖章声明帖</text>
+  <rect x="360" y="374" width="36" height="52" fill="#0072B2"/>
+  <text x="430" y="410" font-size="26" font-weight="700" fill="#1A1B1E">+6</text>
+  <line x1="360" y1="130" x2="360" y2="452" stroke="#1A1B1E" stroke-width="1.5"/>
+  <text x="120" y="512" font-size="20" fill="#555555">存量：盖章帖 1,223 分 对 勘误帖 224 分 · 量级悬殊，方向在移动</text>
+  <text x="120" y="556" font-size="19" fill="#767676">口径：Algolia items API 全树计数 · 实测 2026-11-23 16:26</text>
+</svg>
