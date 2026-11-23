@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <text x="600" y="72" font-size="33" font-weight="700" fill="#1A1B1E" text-anchor="middle">人人能重试，没人能撤销</text>
+  <text x="600" y="112" font-size="19" fill="#767676" text-anchor="middle">50 个 agent 框架公开恢复记录普查 · 数据 arXiv 2611.27090</text>
+  <line x1="330" y1="150" x2="330" y2="450" stroke="#1A1B1E" stroke-width="1.5"/>
+  <text x="110" y="210" font-size="21" fill="#333333">完全恢复</text>
+  <rect x="330" y="184" width="190" height="50" fill="#D55E00"/>
+  <text x="540" y="219" font-size="24" font-weight="700" fill="#1A1B1E">19</text>
+  <text x="110" y="300" font-size="21" fill="#333333">部分恢复</text>
+  <rect x="330" y="274" width="540" height="50" fill="#0072B2"/>
+  <text x="890" y="309" font-size="24" font-weight="700" fill="#1A1B1E">54</text>
+  <text x="110" y="390" font-size="21" fill="#333333">恢复失败</text>
+  <rect x="330" y="364" width="450" height="50" fill="#0072B2"/>
+  <text x="800" y="399" font-size="24" font-weight="700" fill="#1A1B1E">45</text>
+  <text x="110" y="500" font-size="20" fill="#555555">128 条真实使用报告里完全恢复仅 19 条</text>
+  <text x="110" y="540" font-size="20" fill="#555555">checkpoint 27 条成 1 次 · 回滚 15 条成 1 次</text>
+  <text x="110" y="610" font-size="19" fill="#767676">口径：公开记录计数，不是失败率；成功恢复大概率漏报</text>
+</svg>

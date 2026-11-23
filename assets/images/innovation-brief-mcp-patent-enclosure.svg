@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+  <text x="600" y="58" font-size="28" font-weight="700" fill="#1A1B1E" text-anchor="middle">MCP 协议刚满两岁，中文专利圈了一整圈</text>
+  <text x="600" y="96" font-size="19" fill="#555555" text-anchor="middle">Google Patents 详情页与检索面，2026-11-23 实测，窗口参数失效，检索面为全库累计口径</text>
+
+  <text x="120" y="152" font-size="21" font-weight="700" fill="#1A1B1E">五件终选，授权与在审分写</text>
+
+  <text x="120" y="208" font-size="19" fill="#333333">银联 CN121526599B MCP 支付系统（申请 2026-01-16）</text>
+  <rect x="560" y="188" width="30" height="34" fill="#D55E00"/>
+  <text x="602" y="212" font-size="21" font-weight="700" fill="#1A1B1E">已授权 Active</text>
+
+  <text x="120" y="264" font-size="19" fill="#333333">银联 CN122420137A MCP 分布式自动议价</text>
+  <rect x="560" y="244" width="120" height="34" fill="#999999"/>
+  <text x="692" y="268" font-size="21" font-weight="700" fill="#1A1B1E">审查中</text>
+
+  <text x="120" y="320" font-size="19" fill="#333333">天翼视联 CN121396646A MCP 注入攻击防护</text>
+  <rect x="560" y="300" width="120" height="34" fill="#999999"/>
+  <text x="692" y="324" font-size="21" font-weight="700" fill="#1A1B1E">审查中</text>
+
+  <text x="120" y="376" font-size="19" fill="#333333">百度 CN120653465A MCP 任务执行 · 浪潮云洲 CN120872309A 低代码 MCP 生成</text>
+  <rect x="560" y="356" width="120" height="34" fill="#999999"/>
+  <text x="692" y="380" font-size="21" font-weight="700" fill="#1A1B1E">审查中</text>
+
+  <line x1="120" y1="418" x2="1080" y2="418" stroke="#1A1B1E" stroke-width="1.5"/>
+
+  <text x="120" y="458" font-size="21" font-weight="700" fill="#1A1B1E">检索面规模，全库累计件数（2026-11-23 检索）</text>
+  <text x="120" y="512" font-size="19" fill="#333333">model context protocol 加 agent</text>
+  <rect x="560" y="492" width="440" height="34" fill="#999999"/>
+  <text x="1012" y="516" font-size="21" font-weight="700" fill="#1A1B1E">1,787</text>
+  <text x="120" y="560" font-size="19" fill="#333333">model context protocol 加 payment 或 支付</text>
+  <rect x="560" y="540" width="80" height="34" fill="#999999"/>
+  <text x="652" y="564" font-size="21" font-weight="700" fill="#1A1B1E">321</text>
+
+  <line x1="120" y1="590" x2="1080" y2="590" stroke="#999999" stroke-width="1"/>
+  <text x="120" y="620" font-size="19" fill="#D55E00" font-weight="700">MCP 接入与适配服务层未被 claim：1 人 3 周可交体检报告 MVP</text>
+</svg>

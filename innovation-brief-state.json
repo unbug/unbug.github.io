@@ -1,20 +1,20 @@
 {
- "currentPhase": "published",
+ "currentPhase": "37 期已发布待 CDN 核验（文件日期 2026-11-23，零点后渲染）",
  "lastPublished": {
-  "n": 36,
-  "slug": "innovation-brief-agent-operation-permission-gap",
-  "date": "2026-11-21",
-  "title": "大厂圈地AI操作层，逐单批准还空着",
+  "n": 37,
+  "slug": "innovation-brief-mcp-patent-enclosure",
+  "date": "2026-11-23",
+  "title": "MCP协议刚满两岁，中文专利圈了一整圈",
   "patents": [
-   "US12014192B2",
-   "US11782733B2",
-   "US12106126B2",
-   "US20260093544A1",
-   "CN122064443A"
+   "CN121526599B",
+   "CN122420137A",
+   "CN121396646A",
+   "CN120653465A",
+   "CN120872309A"
   ]
  },
- "totalPublished": 36,
- "nextScheduled": "2026-11-23",
+ "totalPublished": 37,
+ "nextScheduled": "2026-11-24",
  "coveredPatentFamilies": [
   "AU2026906209A0",
   "CN120915496B",
@@ -177,7 +177,12 @@
   "US11782733B2",
   "US12106126B2",
   "US20260093544A1",
-  "CN122064443A"
+  "CN122064443A",
+  "CN121526599B",
+  "CN122420137A",
+  "CN121396646A",
+  "CN120653465A",
+  "CN120872309A"
  ],
  "candidateTopics": [
   {
@@ -216,7 +221,7 @@
    ]
   }
  ],
- "lastPublishedUrl": "https://unbug.github.io/innovation-brief-agent-operation-permission-gap/",
+ "lastPublishedUrl": "/innovation-brief-mcp-patent-enclosure/",
  "lastPublishedVerifiedAt": "",
  "verification": {
   "brief4": {
@@ -305,6 +310,7 @@
   "2026-10-18：简报 #23 发布（会议纪要本地化部署：Zoom US12647532B2/US12664798B2/US20260211885A1 + Microsoft EP4162488B1，全部详情页核验）。b1 agent 物理动作回执线索本轮 GP 三轮字面检索无大厂簇（仅个人申请人），判死不复活；a1 维持降级。GP XHR query 端点本轮再次限流（两次 Sorry），详情页 HTML 不受影响——取证走详情页的策略有效。",
   "2026-10-18 00:4x：昨夜后台探测出现混合证据——同一 XHR 端点一发返回真 JSON（total_num_results=42，即检索恢复可用）、另发仍是拦截页；00:4x 手探又回 404。判定=出口 IP 间歇性解封，非稳定可用。#23（10-21）策略照预案：开工先单发探 xhr/result 活性，命中即用，间隔 >=60s；仍不通走 FPO/降级框架。",
   "2026-11-16：状态文件修复波——补记 #27 agent-memory(11-07)/#28 tool-failure(11-08)/#29 provenance(11-09)/#30 mandate(11-10)，totalPublished 26→30；coveredPatentFamilies +21 至 129。slug 前缀裁定：innovation-brief- 唯一，#28-#30 误用 ai-innovation-brief- 作历史遗留保留（URL 不动），指南已加禁止混用条款。",
-  "2026-11-21 第 36 期：GP 双窗口心跳值班抢收（14:15 主件+14:46 补件+百度定向串现搜现抢）。Qomplx US20250259041A1 因同族大面积命中黑名单出局（US20250259042A1×9/US20260228438A1×4）；US20240386350A1 因 claim1=(canceled)+Individual 出局。Monday 件带切割限定（同族 US20260181056A1 已盘，只写本件 claim1）。修复 lastPublishedUrl 停在 34 期的旧账。"
+  "2026-11-21 第 36 期：GP 双窗口心跳值班抢收（14:15 主件+14:46 补件+百度定向串现搜现抢）。Qomplx US20250259041A1 因同族大面积命中黑名单出局（US20250259042A1×9/US20260228438A1×4）；US20240386350A1 因 claim1=(canceled)+Individual 出局。Monday 件带切割限定（同族 US20260181056A1 已盘，只写本件 claim1）。修复 lastPublishedUrl 停在 34 期的旧账。",
+  "37 期（11-23）：研究员狩猎会话死前抢下 15 件详情页（11:17-12:29 窗口），CEO 从残料终选五件 MCP 全链；1787/321 全库累计口径；desc 未验证负向断言 CEO 机修（未被claim→本批五件之外空位）。Editor 侧出现消息错位异常（论文任务书收到简报稿两稿同路），论文线 CEO 执笔教训待复盘。"
  ]
 }
