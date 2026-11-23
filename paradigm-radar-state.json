@@ -8,7 +8,7 @@
   "weighted": 4.3
  },
  "totalPublished": 29,
- "nextScheduled": "2026-11-24",
+ "nextScheduled": "2026-11-25",
  "candidateTopics": [
   {
    "topic": "AI 代码验证/审查瓶颈（claude.dev 官方已证实/KPMG 回声/StarSling）",
@@ -114,12 +114,13 @@
   },
   {
    "topic": "机器检查证明×AI 数学发现（#32 已采新轴）——#33 首复：验证工件第三方重编译跟进帖、Aaronson 派 vs 盖章派交锋、Alpöge 长文/演讲帖",
-   "score": 4.0,
+   "score": 4.4,
    "sources": [
     "https://news.ycombinator.com/item?id=50589618",
     "https://math.mit.edu/~drew/grh/"
    ],
-   "date": "2026-11-23"
+   "date": "2026-11-23",
+   "note": "；11-24 轮镜像事件（Masullo errata 蜂群 173/149，389 条对抗复核）4.40，GO-PENDING 压发至 11-25（同轴≥48h 间隔）"
   },
   {
    "topic": "SimpleBench 反杀前沿模型（高中生基线 83.7% > 最强模型 81.9%，simple-bench.com 200 全文核验）——判据：再一家独立反基准 ≥150",
@@ -136,6 +137,22 @@
     "https://news.ycombinator.com/item?id=50595554"
    ],
    "date": "2026-11-23"
+  },
+  {
+   "topic": "推理供应商数据事故线（OpenRouter 280/97+Together.ai 官方公告四源同题）——升档 3.2；判据：具名供应商点名或监管动作→GO 候选；注意与 #28 信任母题切割（这是供给侧数据治理非 agent 信任）",
+   "score": 3.2,
+   "sources": [
+    "https://news.ycombinator.com/item?id=50595554"
+   ],
+   "date": "2026-11-24"
+  },
+  {
+   "topic": "OpenAI「Perplexity and Intelligence」官方立场文 513/353——单帖不成簇 3.0 观察；判据：第二家大厂跟进或簇化",
+   "score": 3.0,
+   "sources": [
+    "https://news.ycombinator.com/item?id=50604438"
+   ],
+   "date": "2026-11-24"
   }
  ],
  "lastNoTopicRound": {
@@ -147,7 +164,8 @@
  "notes": [
   "2026-11-16：状态文件修复波——删除陈旧顶层键 lastPublishedSlug/lastPublishedDate（曾停在 #21/10-16）；总账补齐 #22 weight-space(11-03)/#23 default-drift(11-04)/#24 legacy-debt(11-06)/#25 harness-exodus(11-09)/#26 offline-sovereignty(11-15)，totalPublished 21→26；9 篇 #22-#26 与简报新文线上 200 实测。#22-#26 选题加权分未落盘，weighted 置 null 不回填。同日按 Unbug 裁定恢复 3000-6000 字配额并启动存量返工。",
   "2026-11-22 轮决策（CEO）：①#32 首复轴改基座产品化（判据收紧），代码验证/接入层转每 2 轮低频；②IPO 规避线本轮不放宽，议题挂 #32（若仍全零再评估范式侧例外）；③连续 4 轮 NOTOPIC 主因是热点被三重避让规则过滤，属实情非误判，不降门槛硬凑。",
-  "2026-11-23 第 32 期发布（总第 29 篇）：期号=轮次含 NOTOPIC 轮，totalPublished 只数发布。勘误入档：RewriteWeights 帖 id=50577265。Editor 雷达长文三连败教训：交稿必附 ls+wc 盘上自证。"
+  "2026-11-23 第 32 期发布（总第 29 篇）：期号=轮次含 NOTOPIC 轮，totalPublished 只数发布。勘误入档：RewriteWeights 帖 id=50577265。Editor 雷达长文三连败教训：交稿必附 ls+wc 盘上自证。",
+  "2026-11-24 轮：GO-PENDING 首例（判据全中但主动压 24h 等同轴间隔），11-25 复扫必发不再压（除非素材塌了）。"
  ],
  "round2026_11_19": {
   "date": "2026-11-19",
@@ -229,5 +247,39 @@
    ]
   },
   "note": "终结连续四轮 NOTOPIC。CEO 亲测 912/776（11-22 13:0x）；#33 首复本新轴：第三方重编译跟进帖/Aaronson 派交锋/Alpöge 长文。Editor 线本轮三连败（幽灵交稿/缩写稿/假自查），正文 CEO 执笔——长文任务书需加落盘硬判据（wc 自证）入模板。"
+ },
+ "round2026_11_24": {
+  "date": "2026-11-24",
+  "verdict": "GO-PENDING（CEO 压发 24h）",
+  "axis": "机器检查证明×AI 数学发现（镜像事件）",
+  "weighted": 4.4,
+  "brief": "/Users/unbug/.openclaw/workspace/research/research-brief-radar-2026-11-24.md",
+  "anchors": {
+   "pillar": [
+    [
+     "50605045",
+     173
+    ],
+    [
+     "50589618",
+     1215
+    ]
+   ],
+   "new": [
+    [
+     "50595554",
+     280
+    ],
+    [
+     "Together.ai 公告帖",
+     48
+    ],
+    [
+     "P=NP swarm",
+     126
+    ]
+   ]
+  },
+  "note": "CEO 亲验全过：errata 帖 173/149（11h 速）、盖章帖 1215/1003(+312)、OpenRouter 280/97、repo API 573KB+F248/I373 命中、Together.ai 官方公告帖 48 分存在（第二披露中）。压发理由：与 #32 同轴间隔仅 24h（11-21 验证簇 48h 压发先例+36 期候选 A 同日母题否决先例），雷达价值在广度，明日发会与 #32 四成重叠。11-25 复扫即发：errata 帖≥400 独立成轴或作 #33 主章；数据事故线（2.6→3.2 判据中）若现具名供应商/监管动作则升 GO 候选评估换轴；Harvard 331 距 340 降档线 9 分，下轮必裁。勘误入账：OpenShell=50198675、Inkling2Mini=50581260、ReRiemann=50583982。"
  }
 }
