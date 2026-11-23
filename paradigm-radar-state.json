@@ -12,8 +12,8 @@
  "candidateTopics": [
   {
    "topic": "AI 代码验证/审查瓶颈（claude.dev 官方已证实/KPMG 回声/StarSling）",
-   "score": 3.95,
-   "note": "11-22 复评降档 4.05→3.95（首复判据全零：Harvard 327/464 连续第二轮未破 400、claude.dev 296 冻结、FT 原链直引帖仅 6 分转引热度天花板确认）。#30 预期\"间隔拉开热度回升\"未兑现。转每 2 轮低频；GO 条件不变：Harvard 破 400 或第三方产业采用；11-23 复测 Harvard 328/465 三轮停滞（+1/+3/+1），下轮 <340 降档 3.7",
+   "score": 3.7,
+   "note": "11-22 复评降档 4.05→3.95（首复判据全零：Harvard 327/464 连续第二轮未破 400、claude.dev 296 冻结、FT 原链直引帖仅 6 分转引热度天花板确认）。#30 预期\"间隔拉开热度回升\"未兑现。转每 2 轮低频；GO 条件不变：Harvard 破 400 或第三方产业采用；11-23 复测 Harvard 328/465 三轮停滞（+1/+3/+1），下轮 <340 降档 3.7；11-23 降档执行：Harvard 331/466 连续五轮<340，转每 3 轮",
    "date": "2026-11-22"
   },
   {
@@ -120,7 +120,7 @@
     "https://math.mit.edu/~drew/grh/"
    ],
    "date": "2026-11-23",
-   "note": "；11-24 轮镜像事件（Masullo errata 蜂群 173/149，389 条对抗复核）4.40，GO-PENDING 压发至 11-25（同轴≥48h 间隔）"
+   "note": "；11-24 轮镜像事件（Masullo errata 蜂群 173/149，389 条对抗复核）4.40，GO-PENDING 压发至 11-25（同轴≥48h 间隔）；11-23 复扫素材未塌，11-25 必发"
   },
   {
    "topic": "SimpleBench 反杀前沿模型（高中生基线 83.7% > 最强模型 81.9%，simple-bench.com 200 全文核验）——判据：再一家独立反基准 ≥150",
@@ -132,19 +132,21 @@
   },
   {
    "topic": "推理供应商数据事故线（OpenRouter 公告 53/18 三源同题全 <150，撞信任危机避让）——判据：任一帖破 150 或第二家聚合平台披露同类",
-   "score": 2.6,
+   "score": 3.6,
    "sources": [
     "https://news.ycombinator.com/item?id=50595554"
    ],
-   "date": "2026-11-23"
+   "date": "2026-11-23",
+   "note": "；11-23 复扫升 3.6：OpenRouter 公告 CEO 亲验具名 Off-boarded three providers+125 endpoints+Atlas Cloud/Novita/Phala/Together 逐字命中；#34 头号候选（比主簇二次重复更适合）"
   },
   {
    "topic": "推理供应商数据事故线（OpenRouter 280/97+Together.ai 官方公告四源同题）——升档 3.2；判据：具名供应商点名或监管动作→GO 候选；注意与 #28 信任母题切割（这是供给侧数据治理非 agent 信任）",
-   "score": 3.2,
+   "score": 3.6,
    "sources": [
     "https://news.ycombinator.com/item?id=50595554"
    ],
-   "date": "2026-11-24"
+   "date": "2026-11-24",
+   "note": "；11-23 复扫升 3.6：OpenRouter 公告 CEO 亲验具名 Off-boarded three providers+125 endpoints+Atlas Cloud/Novita/Phala/Together 逐字命中；#34 头号候选（比主簇二次重复更适合）"
   },
   {
    "topic": "OpenAI「Perplexity and Intelligence」官方立场文 513/353——单帖不成簇 3.0 观察；判据：第二家大厂跟进或簇化",
@@ -165,7 +167,8 @@
   "2026-11-16：状态文件修复波——删除陈旧顶层键 lastPublishedSlug/lastPublishedDate（曾停在 #21/10-16）；总账补齐 #22 weight-space(11-03)/#23 default-drift(11-04)/#24 legacy-debt(11-06)/#25 harness-exodus(11-09)/#26 offline-sovereignty(11-15)，totalPublished 21→26；9 篇 #22-#26 与简报新文线上 200 实测。#22-#26 选题加权分未落盘，weighted 置 null 不回填。同日按 Unbug 裁定恢复 3000-6000 字配额并启动存量返工。",
   "2026-11-22 轮决策（CEO）：①#32 首复轴改基座产品化（判据收紧），代码验证/接入层转每 2 轮低频；②IPO 规避线本轮不放宽，议题挂 #32（若仍全零再评估范式侧例外）；③连续 4 轮 NOTOPIC 主因是热点被三重避让规则过滤，属实情非误判，不降门槛硬凑。",
   "2026-11-23 第 32 期发布（总第 29 篇）：期号=轮次含 NOTOPIC 轮，totalPublished 只数发布。勘误入档：RewriteWeights 帖 id=50577265。Editor 雷达长文三连败教训：交稿必附 ls+wc 盘上自证。",
-  "2026-11-24 轮：GO-PENDING 首例（判据全中但主动压 24h 等同轴间隔），11-25 复扫必发不再压（除非素材塌了）。"
+  "2026-11-24 轮：GO-PENDING 首例（判据全中但主动压 24h 等同轴间隔），11-25 复扫必发不再压（除非素材塌了）。",
+  "2026-11-23 交付纪律第 3 案：论文调研任务（8b364c38）实际交付了雷达复扫内容（research-brief-radar-2026-11-25.md），雷达素材高质量照收，论文线重派。"
  ],
  "round2026_11_19": {
   "date": "2026-11-19",
@@ -280,6 +283,28 @@
     ]
    ]
   },
-  "note": "CEO 亲验全过：errata 帖 173/149（11h 速）、盖章帖 1215/1003(+312)、OpenRouter 280/97、repo API 573KB+F248/I373 命中、Together.ai 官方公告帖 48 分存在（第二披露中）。压发理由：与 #32 同轴间隔仅 24h（11-21 验证簇 48h 压发先例+36 期候选 A 同日母题否决先例），雷达价值在广度，明日发会与 #32 四成重叠。11-25 复扫即发：errata 帖≥400 独立成轴或作 #33 主章；数据事故线（2.6→3.2 判据中）若现具名供应商/监管动作则升 GO 候选评估换轴；Harvard 331 距 340 降档线 9 分，下轮必裁。勘误入账：OpenShell=50198675、Inkling2Mini=50581260、ReRiemann=50583982。"
- }
+  "note": "CEO 亲验全过：errata 帖 173/149（11h 速）、盖章帖 1215/1003(+312)、OpenRouter 280/97、repo API 573KB+F248/I373 命中、Together.ai 官方公告帖 48 分存在（第二披露中）。压发理由：与 #32 同轴间隔仅 24h（11-21 验证簇 48h 压发先例+36 期候选 A 同日母题否决先例），雷达价值在广度，明日发会与 #32 四成重叠。11-25 复扫即发：errata 帖≥400 独立成轴或作 #33 主章；数据事故线（2.6→3.2 判据中）若现具名供应商/监管动作则升 GO 候选评估换轴；Harvard 331 距 340 降档线 9 分，下轮必裁。勘误入账：OpenShell=50198675、Inkling2Mini=50581260、ReRiemann=50583982。",
+  "rescan_1123": {
+   "window": "11-23 12:24-12:45",
+   "verdict": "GO-PENDING 维持 4.40，11-25 必发不再压",
+   "anchors": {
+    "errata": "179/149（CEO 13:0x 复测 181/151 续涨）",
+    "seal": "1217/1002",
+    "alpoge": 2909,
+    "masullo": 2448
+   },
+   "new_material": [
+    "65 条假命题 Checked 列=Lean 证明（README 逐字：printed claim kept in Lean together with a proof that it is false，CEO 亲验）",
+    "流水线自我回滚 40 entries marked Lean too early set back（研究员记录，CEO raw 截断未及逐字，Editor 引用标注来源）",
+    "主定理问题公开出处=Lean Zulip+Baez 博文，README：They did not come from this formalization（CEO 亲验逐字）"
+   ],
+   "writing_note": "重心移「反方流水线」章，勿重复 #32；口径 R1 锁死：编号至 F248/I373/M49+README 自述约 660（实测表行 261/384/50，汇总滞后于表）"
+  }
+ },
+ "corrections_1123": [
+  "Tao 相关帖正确 id=50578358（550 分 Unforced Navier-Stokes…，此前误记 50582277）",
+  "OpenRouter 公告正确 URL=/blog/announcements/data-processing-incidents-on-inference-providers/",
+  "Dragos=/blog/ai-supply-chain-security-canary-tokens",
+  "Harvard 原链 complexdiscovery 403 维持二手；claude.ai/artifact region 占位页禁作主链"
+ ]
 }
