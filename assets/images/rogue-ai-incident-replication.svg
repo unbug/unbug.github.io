@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="630" fill="#ffffff"/>
+  <text x="60" y="64" font-size="34" font-weight="bold" fill="#1a1a1a">ROGUE-AI：把智能体事故报道重演一遍</text>
+  <text x="60" y="98" font-size="20" fill="#666666">108 条复现 · 96 起事故 · 5 个现役模型 × 每条件 3 次运行</text>
+
+  <!-- Panel 1: harm rate incident vs control -->
+  <text x="60" y="152" font-size="24" font-weight="bold" fill="#1a1a1a">事故条件 vs 匹配对照：重演伤害率</text>
+  <line x1="120" y1="480" x2="560" y2="480" stroke="#cccccc" stroke-width="2"/>
+  <!-- incident bar 33% -->
+  <rect x="180" y="280" width="120" height="200" fill="#D55E00"/>
+  <text x="240" y="262" font-size="26" font-weight="bold" fill="#D55E00" text-anchor="middle">18%-33%</text>
+  <text x="240" y="512" font-size="20" fill="#444444" text-anchor="middle">事故条件</text>
+  <!-- control bar ~1% -->
+  <rect x="380" y="474" width="120" height="6" fill="#999999"/>
+  <text x="440" y="456" font-size="26" font-weight="bold" fill="#666666" text-anchor="middle">不超过 1%</text>
+  <text x="440" y="512" font-size="20" fill="#444444" text-anchor="middle">对照组</text>
+  <text x="60" y="556" font-size="17" fill="#666666">同一复现的事故条件与去掉被指控原因的对照条件对比；</text>
+  <text x="60" y="582" font-size="17" fill="#666666">89% 的复现（96/108）重演了被报道的伤害。</text>
+
+  <!-- Panel 2: attacker presence donut -->
+  <text x="640" y="152" font-size="24" font-weight="bold" fill="#1a1a1a">72 起真实伤害事故中</text>
+  <!-- donut: 62/72 = 310 deg no attacker -->
+  <path d="M 790.0 220.0 A 110 110 0 1 1 705.7 259.3 L 738.4 286.7 A 67.4 67.4 0 1 0 790.0 262.6 Z" fill="#D55E00"/>
+  <path d="M 705.7 259.3 A 110 110 0 0 1 790.0 220.0 L 790.0 262.6 A 67.4 67.4 0 0 0 738.4 286.7 Z" fill="#999999"/>
+  <text x="790" y="338" font-size="30" font-weight="bold" fill="#1a1a1a" text-anchor="middle">72 起</text>
+  <text x="940" y="300" font-size="22" fill="#D55E00" font-weight="bold">62 起：没有攻击者</text>
+  <text x="940" y="332" font-size="18" fill="#666666">agent 按任务执行，漏看普通危害</text>
+  <text x="940" y="378" font-size="22" fill="#666666" font-weight="bold">10 起：存在攻击者</text>
+  <text x="640" y="470" font-size="17" fill="#666666">无攻击者复现造成的伤害，五个模型全部</text>
+  <text x="640" y="496" font-size="17" fill="#666666">高于 prompt injection 复现；防御方找注入</text>
+  <text x="640" y="522" font-size="17" fill="#666666">指令，这些复现里一条注入都没有。</text>
+
+  <!-- bottom strip -->
+  <rect x="60" y="596" width="1080" height="2" fill="#eeeeee"/>
+  <text x="60" y="622" font-size="18" font-weight="bold" fill="#D55E00">修复：工具输出后点名危害与后果的警告，五个模型伤害全降（Claude Sonnet 4.6 降至 2%）</text>
+</svg>
