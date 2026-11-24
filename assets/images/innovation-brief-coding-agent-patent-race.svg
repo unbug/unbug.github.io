@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+  <text x="600" y="58" font-size="28" font-weight="700" fill="#1A1B1E" text-anchor="middle">AI 写代码正热，编码 agent 专利先圈了一圈</text>
+  <text x="600" y="96" font-size="19" fill="#555555" text-anchor="middle">Google Patents 详情页与检索面，2026-11-24 实测，检索面为全库累计口径，非新增</text>
+
+  <text x="120" y="152" font-size="21" font-weight="700" fill="#1A1B1E">五件终选，授权与在审分写</text>
+
+  <text x="120" y="208" font-size="19" fill="#333333">SAS US12619423B1 agent 部署进客户环境（优先权 2025-03-20）</text>
+  <rect x="640" y="188" width="30" height="34" fill="#D55E00"/>
+  <text x="682" y="212" font-size="21" font-weight="700" fill="#1A1B1E">已授权</text>
+
+  <text x="120" y="264" font-size="19" fill="#333333">Laredo Labs US12498920B2 机器学习辅助软件工程任务</text>
+  <rect x="640" y="244" width="30" height="34" fill="#D55E00"/>
+  <text x="682" y="268" font-size="21" font-weight="700" fill="#1A1B1E">已授权</text>
+
+  <text x="120" y="320" font-size="19" fill="#333333">支付宝 CN122450431A 知识库辅助编程 · 腾讯 CN122018872A 对话加预览生成</text>
+  <rect x="640" y="300" width="120" height="34" fill="#999999"/>
+  <text x="772" y="324" font-size="21" font-weight="700" fill="#1A1B1E">审查中</text>
+
+  <text x="120" y="376" font-size="19" fill="#333333">阿里 CN118363601A 代码处理模型训练管线</text>
+  <rect x="640" y="356" width="120" height="34" fill="#999999"/>
+  <text x="772" y="380" font-size="21" font-weight="700" fill="#1A1B1E">审查中</text>
+
+  <line x1="120" y1="418" x2="1080" y2="418" stroke="#1A1B1E" stroke-width="1.5"/>
+
+  <text x="120" y="458" font-size="21" font-weight="700" fill="#1A1B1E">词族规模，全库累计件数（2026-11-24 检索）</text>
+  <text x="120" y="506" font-size="19" fill="#333333">AI coding agent（精确词族）</text>
+  <rect x="560" y="486" width="24" height="34" fill="#D55E00"/>
+  <text x="596" y="510" font-size="21" font-weight="700" fill="#1A1B1E">4</text>
+  <text x="120" y="548" font-size="19" fill="#333333">coding agent</text>
+  <rect x="560" y="528" width="80" height="34" fill="#999999"/>
+  <text x="652" y="552" font-size="21" font-weight="700" fill="#1A1B1E">20</text>
+
+  <line x1="120" y1="586" x2="1080" y2="586" stroke="#999999" stroke-width="1"/>
+  <text x="120" y="618" font-size="19" fill="#D55E00" font-weight="700">编码 agent 专利体检加回归门禁：1 人 3 周可交 MVP</text>
+</svg>
