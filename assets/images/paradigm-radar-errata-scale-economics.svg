@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="Helvetica Neue, Arial, PingFang SC, sans-serif">
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <text x="60" y="42" font-size="16" font-weight="700" fill="#1A1B1E">反方流水线三天长出 789 行勘误，其中 84 条「这是错的」已被机器盖章</text>
+
+  <text x="60" y="92" font-size="15" font-weight="700" fill="#1A1B1E">a　勘误表构成：ERRATA.md 表行实测 789 行</text>
+  <rect x="60" y="110" width="277" height="46" fill="#D55E00"/>
+  <rect x="337" y="110" width="431" height="46" fill="#D55E00"/>
+  <rect x="768" y="110" width="50" height="46" fill="#999999"/>
+  <rect x="818" y="110" width="30" height="46" fill="#666666"/>
+  <text x="198" y="139" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">F 277</text>
+  <text x="552" y="139" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">I 432</text>
+  <text x="793" y="139" font-size="12.5" font-weight="700" fill="#1A1B1E" text-anchor="middle">M 50</text>
+  <text x="833" y="139" font-size="12.5" font-weight="700" fill="#1A1B1E" text-anchor="middle">R 30</text>
+  <text x="60" y="184" font-size="12" fill="#555555">a 类读数：F 印刷陈述为假 · I 不精确、前后不一致或论证不成立 · M 占位与缺件 · R 论文未形式化部分的报告（F/I/M/R 编号上限实测 F277/I432/M50/R30）</text>
+
+  <text x="78" y="560" font-size="15" font-weight="700" fill="#1A1B1E">b</text>
+  <text x="98" y="560" font-size="15" font-weight="700" fill="#1A1B1E">277 条「印刷陈述为假」里，机器已裁决的条数</text>
+
+  <rect x="60" y="580" width="74" height="26" fill="#999999"/>
+  <text x="142" y="599" font-size="12.5" fill="#555555">277 条 F 类条目</text>
+  <rect x="60" y="614" width="22" height="26" fill="#D55E00"/>
+  <text x="142" y="633" font-size="12.5" fill="#555555">84 条 Checked = Lean</text>
+
+  <text x="420" y="599" font-size="12" fill="#555555">Checked = Lean 的含义：「该印刷命题为假」本身是一条 Lean 证明；</text>
+  <text x="420" y="619" font-size="12" fill="#555555">432 条 I 类条目里这个数字是 0 条，只有「假命题」这一档做到了机器裁决。</text>
+  <text x="420" y="639" font-size="12" fill="#555555">84 条不含曾被过早标记、已退回原状的 40 条。</text>
+
+  <text x="60" y="664" font-size="11" fill="#767676">数据：GitHub mccorvie/riemann-masullo（ERRATA.md 704,959 字节，最后一次 push 实测 2026-11-25 15:42 GMT+8）· 表行按 F/I/M/R 表行逐行数得，仓库仍在提交，数字须带实测时刻读 · 该表裁决的是印刷稿陈述，不是黎曼猜想本身</text>
+</svg>

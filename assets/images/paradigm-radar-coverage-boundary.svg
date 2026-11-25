@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="540" viewBox="0 0 880 540" font-family="Helvetica, Arial, sans-serif">
+  <rect width="880" height="540" fill="#ffffff"/>
+  <text x="40" y="44" font-size="26" font-weight="bold" fill="#1a1a1a">覆盖面由「能被形式化成什么」决定，不由产能决定</text>
+  <text x="40" y="74" font-size="17" fill="#666666">两组同构的「有 / 没有」对比：机器裁决的覆盖面（左组）与人类手写的覆盖面（右组）</text>
+  <text x="60" y="130" font-size="19" font-weight="bold" fill="#1a1a1a">勘误仓库：机器裁决覆盖</text>
+  <text x="60" y="186" font-size="17" fill="#444444">假命题档（F 类）277 条里</text>
+  <rect x="60" y="200" width="420" height="34" rx="4" fill="#D55E00"/>
+  <text x="492" y="224" font-size="18" font-weight="bold" fill="#1a1a1a">84 条已被 Lean 裁决</text>
+  <text x="60" y="288" font-size="17" fill="#444444">论证不精确档（I 类）432 条里</text>
+  <rect x="60" y="302" width="3" height="34" fill="#1a1a1a"/>
+  <text x="80" y="326" font-size="18" font-weight="bold" fill="#1a1a1a">0 条——反驳机对「不精确」还没有可查的形式</text>
+  <line x1="560" y1="110" x2="560" y2="480" stroke="#eeeeee" stroke-width="2"/>
+  <text x="600" y="130" font-size="19" font-weight="bold" fill="#1a1a1a">micjm 表：人类手写覆盖</text>
+  <text x="600" y="186" font-size="17" fill="#444444">Mathlib 著名证明集超过 1,000 条里</text>
+  <rect x="600" y="200" width="20" height="34" fill="#1a1a1a"/>
+  <text x="632" y="224" font-size="18" font-weight="bold" fill="#1a1a1a">259 条配有 Lean</text>
+  <text x="600" y="288" font-size="17" fill="#444444">Reservoir 已发布 Lean 包里</text>
+  <rect x="600" y="302" width="70" height="34" rx="4" fill="#666666"/>
+  <text x="682" y="326" font-size="18" fill="#1a1a1a">938 个在 GitHub 上有代码</text>
+  <rect x="40" y="392" width="800" height="100" rx="8" fill="#eeeeee"/>
+  <text x="64" y="424" font-size="18" fill="#1a1a1a">同一个结构在两处成立：</text>
+  <text x="64" y="452" font-size="17" fill="#444444">假命题可以写成一条 Lean 陈述加否定证明，所以 84 条敢停下来；论证缺口和占位缺件</text>
+  <text x="64" y="478" font-size="17" fill="#444444">暂时不行，所以 432 条里是 0——和机构盖章只管「编得过」不管「人同意」是同一条边界。</text>
+</svg>

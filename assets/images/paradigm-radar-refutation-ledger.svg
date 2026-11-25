@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="560" viewBox="0 0 880 560" font-family="Helvetica, Arial, sans-serif">
+  <rect width="880" height="560" fill="#ffffff"/>
+  <text x="40" y="44" font-size="26" font-weight="bold" fill="#1a1a1a">84 条敢停下来：背后是一套自己会退的账</text>
+  <text x="40" y="74" font-size="17" fill="#666666">反方仓库三道复核工序，全部逐字可查（实测 2026-11-25 下午）</text>
+  <rect x="40" y="106" width="800" height="96" rx="8" fill="#eeeeee"/>
+  <text x="64" y="138" font-size="18" fill="#1a1a1a">第一道：双 agent 复核</text>
+  <text x="64" y="168" font-size="17" fill="#444444">389 条标为 reviewed 的行，全部交给第二个 agent 对着页面图像反驳</text>
+  <text x="660" y="168" font-size="20" font-weight="bold" fill="#D55E00">撤走 6 条 · 改表 10 条</text>
+  <rect x="40" y="222" width="800" height="96" rx="8" fill="#eeeeee"/>
+  <text x="64" y="254" font-size="18" fill="#1a1a1a">第二道：老行补检</text>
+  <text x="64" y="284" font-size="17" fill="#444444">118 条只被发现者或单个 agent 看过的老行，随后补了同样的复检</text>
+  <text x="660" y="284" font-size="20" font-weight="bold" fill="#D55E00">撤回 4 条 · 改判假命题 26 条</text>
+  <rect x="40" y="338" width="800" height="96" rx="8" fill="#eeeeee"/>
+  <text x="64" y="370" font-size="18" fill="#1a1a1a">第三道：成熟度标记回退</text>
+  <text x="64" y="400" font-size="17" fill="#444444">「forty entries were marked Lean too early」——超前标记公开退回原状</text>
+  <text x="700" y="400" font-size="20" font-weight="bold" fill="#D55E00">退回 40 条</text>
+  <rect x="40" y="454" width="800" height="60" rx="8" fill="#ffffff" stroke="#cccccc"/>
+  <text x="64" y="490" font-size="17" fill="#1a1a1a">外部审计在进门：5 份比对、具名 3 份、同名对账 93 条——本期唯一还在涨的输入</text>
+  <text x="40" y="546" font-size="15" fill="#666666">三道工序解释了 Checked=Lean 停在 84 条两天不动是「可信的停」，不是停更</text>
+</svg>
