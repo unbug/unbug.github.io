@@ -1,81 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="'Helvetica Neue',Helvetica,Arial,'PingFang SC',sans-serif">
-  <rect width="1200" height="675" fill="#FFFFFF"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="630" fill="#ffffff"/>
+  <text x="60" y="64" font-size="34" font-weight="bold" fill="#1a1a1a">「evaluation harness」精确词族全库仅 26 件</text>
+  <text x="60" y="98" font-size="20" fill="#666666">检索于 2026-11-25，全库累计，非新增</text>
 
-  <!-- conclusion line -->
-  <text x="60" y="58" font-size="16" fill="#1A1B1E">2026 年 1 至 8 月四件 Agent 轨迹评测专利公开，申请人含花旗银行与 KPMG，均为公开申请、非授权专利</text>
+  <text x="60" y="156" font-size="24" font-weight="bold" fill="#1a1a1a">评测占位赛开跑</text>
+  <text x="60" y="206" font-size="19" fill="#444444">精确词族</text>
+  <rect x="420" y="190" width="10" height="30" fill="#D55E00"/>
+  <text x="444" y="212" font-size="22" font-weight="bold" fill="#D55E00">26 件</text>
+  <text x="60" y="262" font-size="19" fill="#444444">自动生成一支</text>
+  <rect x="420" y="246" width="3" height="30" fill="#1a1a1a"/>
+  <text x="436" y="268" font-size="22" font-weight="bold" fill="#1a1a1a">7 件</text>
+  <text x="60" y="318" font-size="19" fill="#444444">guardrail</text>
+  <rect x="420" y="302" width="690" height="30" rx="4" fill="#cccccc"/>
+  <text x="432" y="324" font-size="20" font-weight="bold" fill="#444444">21,662 件</text>
+  <text x="800" y="324" font-size="17" fill="#666666">只作规模参照</text>
 
-  <!-- ============ panel a ============ -->
-  <text x="60" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">a</text>
-  <text x="82" y="104" font-size="15" fill="#1A1B1E">四件专利公开日期分布（月）</text>
+  <text x="60" y="396" font-size="24" font-weight="bold" fill="#1a1a1a">五件里四件审查中，圈地不等于拿地</text>
+  <rect x="60" y="416" width="205" height="96" rx="8" fill="#eeeeee"/>
+  <text x="74" y="442" font-size="15" fill="#1a1a1a">Booz Allen Hamilton Inc.</text>
+  <text x="74" y="468" font-size="15" fill="#444444">评测做成云 API</text>
+  <text x="74" y="494" font-size="15" fill="#666666">审查中</text>
+  <rect x="281" y="416" width="205" height="96" rx="8" fill="#eeeeee"/>
+  <text x="295" y="442" font-size="15" fill="#1a1a1a">北京百度网讯科技有限公司</text>
+  <text x="295" y="468" font-size="15" fill="#444444">自动实验加评测闭环</text>
+  <text x="295" y="494" font-size="15" fill="#666666">审查中 · 192 天</text>
+  <rect x="502" y="416" width="205" height="96" rx="8" fill="#eeeeee"/>
+  <text x="516" y="442" font-size="15" fill="#1a1a1a">阿里云计算有限公司</text>
+  <text x="516" y="468" font-size="15" fill="#D55E00">MCP 中介工具调用防线</text>
+  <text x="516" y="494" font-size="15" fill="#D55E00">已注册</text>
+  <rect x="723" y="416" width="205" height="96" rx="8" fill="#eeeeee"/>
+  <text x="737" y="442" font-size="15" fill="#1a1a1a">Citibank, N.A.</text>
+  <text x="737" y="468" font-size="15" fill="#444444">agent 上岗先登记</text>
+  <text x="737" y="494" font-size="15" fill="#666666">Assigned to aixplain, Inc.</text>
+  <rect x="944" y="416" width="180" height="96" rx="8" fill="#eeeeee"/>
+  <text x="958" y="442" font-size="14" fill="#1a1a1a">中国电子科技集团公司</text>
+  <text x="958" y="464" font-size="14" fill="#1a1a1a">第十四研究所</text>
+  <text x="958" y="490" font-size="14" fill="#444444">上下文进入研发流水线</text>
 
-  <!-- gridlines: x = 150 + 78.75*(m-1) -->
-  <g stroke="#D9D9D9" stroke-width="0.5">
-    <line x1="307.5" y1="130" x2="307.5" y2="360"/>
-    <line x1="465" y1="130" x2="465" y2="360"/>
-    <line x1="622.5" y1="130" x2="622.5" y2="360"/>
-  </g>
-
-  <!-- event markers: hollow squares on month ticks -->
-  <g fill="#FFFFFF" stroke="#0072B2" stroke-width="2">
-    <rect x="144" y="157" width="12" height="12"/>
-    <rect x="155.3" y="207" width="12" height="12"/>
-    <rect x="543.7" y="257" width="12" height="12"/>
-    <rect x="598.9" y="307" width="12" height="12"/>
-  </g>
-
-  <!-- event labels -->
-  <g font-size="12" fill="#555">
-    <text x="172" y="167">2026-01-15 · Citibank, N.A. · US20260017525A1</text>
-    <text x="183.3" y="217">2026-01-29 · KPMG LLP · US20260030476A1</text>
-    <text x="571.7" y="267">2026-06-04 · Quantiphi, Inc. · US20260154581A1</text>
-    <text x="626.9" y="317">2026-07-02 · 申请人未在公开文本中标注 · US20260186944A1</text>
-  </g>
-
-  <!-- value axis -->
-  <line x1="150" y1="360" x2="701.3" y2="360" stroke="#1A1B1E" stroke-width="0.75"/>
-  <g stroke="#1A1B1E" stroke-width="0.75">
-    <line x1="150" y1="360" x2="150" y2="364"/>
-    <line x1="307.5" y1="360" x2="307.5" y2="364"/>
-    <line x1="465" y1="360" x2="465" y2="364"/>
-    <line x1="622.5" y1="360" x2="622.5" y2="364"/>
-  </g>
-  <g font-size="12.5" fill="#1A1B1E" text-anchor="middle">
-    <text x="150" y="380">1</text>
-    <text x="307.5" y="380">3</text>
-    <text x="465" y="380">5</text>
-    <text x="622.5" y="380">7</text>
-  </g>
-  <text x="420" y="404" font-size="14" fill="#1A1B1E" text-anchor="middle">公开月份（2026 年，月）</text>
-
-  <!-- panel a note -->
-  <text x="60" y="436" font-size="12" fill="#555">四件均主张「这条轨迹该打几分、卡在哪一步」；第四件国际分类落在 G06F11/34（计算机系统测量），与传统软件测试同族。</text>
-
-  <!-- ============ panel b ============ -->
-  <text x="800" y="104" font-size="15" font-weight="bold" fill="#1A1B1E">b</text>
-  <text x="822" y="104" font-size="15" fill="#1A1B1E">落地定价区间（简报正文自估口径）</text>
-
-  <!-- acceptance audit: 3000-8000 CNY per job -->
-  <text x="848" y="168" font-size="12.5" fill="#1A1B1E" text-anchor="end">验收审计服务</text>
-  <text x="848" y="186" font-size="12.5" fill="#555" text-anchor="end">单次（元）</text>
-  <line x1="950" y1="176" x2="1140" y2="176" stroke="#D55E00" stroke-width="3"/>
-  <line x1="950" y1="168" x2="950" y2="184" stroke="#D55E00" stroke-width="2"/>
-  <line x1="1140" y1="168" x2="1140" y2="184" stroke="#D55E00" stroke-width="2"/>
-  <text x="950" y="156" font-size="12" fill="#555" text-anchor="middle">3000</text>
-  <text x="1140" y="156" font-size="12" fill="#555" text-anchor="middle">8000</text>
-
-  <!-- subscription: 19-49 USD per Agent per month -->
-  <text x="848" y="278" font-size="12.5" fill="#1A1B1E" text-anchor="end">轨迹巡检订阅</text>
-  <text x="848" y="296" font-size="12.5" fill="#555" text-anchor="end">每 Agent 每月（美元）</text>
-  <line x1="952" y1="286" x2="1132" y2="286" stroke="#0072B2" stroke-width="3"/>
-  <line x1="952" y1="278" x2="952" y2="294" stroke="#0072B2" stroke-width="2"/>
-  <line x1="1132" y1="278" x2="1132" y2="294" stroke="#0072B2" stroke-width="2"/>
-  <text x="952" y="266" font-size="12" fill="#555" text-anchor="middle">19</text>
-  <text x="1132" y="266" font-size="12" fill="#555" text-anchor="middle">49</text>
-
-  <text x="800" y="350" font-size="12" fill="#555">两行量纲不同，数值直接标在区间两端。</text>
-  <text x="800" y="382" font-size="12" fill="#555">投入侧自估：1 人 4 周出 MVP，月成本数百元，</text>
-  <text x="800" y="400" font-size="12" fill="#555">技术栈 Python 加任一 LLM API 加 SQLite，无需训练模型。</text>
-
-  <!-- footnote -->
-  <text x="60" y="484" font-size="11" fill="#767676">数据来源：USPTO 公开文本（FreePatentsOnline 检索，2026-01 至 2026-08 公开号逐件核对）· 四件均为已公开申请、不是授权专利 · 定价与投入为简报正文自估口径，非专利记载</text>
+  <text x="60" y="556" font-size="18" fill="#444444">agent 评测集专利体检加评测 CI 门禁，1 人 2-3 周可交。</text>
+  <text x="60" y="592" font-size="16" fill="#666666">实用新型不作实质审查</text>
+  <text x="300" y="592" font-size="16" fill="#666666">申请人表述一律以原文为准</text>
 </svg>
