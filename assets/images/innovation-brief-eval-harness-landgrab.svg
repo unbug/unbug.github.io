@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="630" fill="#ffffff"/>
+  <text x="60" y="64" font-size="34" font-weight="bold" fill="#1a1a1a">「evaluation harness」精确词族全库仅 26 件</text>
+  <text x="60" y="98" font-size="20" fill="#666666">检索于 2026-11-25，全库累计，非新增</text>
+
+  <text x="60" y="156" font-size="24" font-weight="bold" fill="#1a1a1a">评测占位赛开跑</text>
+  <text x="60" y="206" font-size="19" fill="#444444">精确词族</text>
+  <rect x="420" y="190" width="10" height="30" fill="#D55E00"/>
+  <text x="444" y="212" font-size="22" font-weight="bold" fill="#D55E00">26 件</text>
+  <text x="60" y="262" font-size="19" fill="#444444">自动生成一支</text>
+  <rect x="420" y="246" width="3" height="30" fill="#1a1a1a"/>
+  <text x="436" y="268" font-size="22" font-weight="bold" fill="#1a1a1a">7 件</text>
+  <text x="60" y="318" font-size="19" fill="#444444">guardrail</text>
+  <rect x="420" y="302" width="690" height="30" rx="4" fill="#cccccc"/>
+  <text x="432" y="324" font-size="20" font-weight="bold" fill="#444444">21,662 件</text>
+  <text x="800" y="324" font-size="17" fill="#666666">只作规模参照</text>
+
+  <text x="60" y="396" font-size="24" font-weight="bold" fill="#1a1a1a">五件里四件审查中，圈地不等于拿地</text>
+  <rect x="60" y="416" width="205" height="96" rx="8" fill="#eeeeee"/>
+  <text x="74" y="442" font-size="15" fill="#1a1a1a">Booz Allen Hamilton Inc.</text>
+  <text x="74" y="468" font-size="15" fill="#444444">评测做成云 API</text>
+  <text x="74" y="494" font-size="15" fill="#666666">审查中</text>
+  <rect x="281" y="416" width="205" height="96" rx="8" fill="#eeeeee"/>
+  <text x="295" y="442" font-size="15" fill="#1a1a1a">北京百度网讯科技有限公司</text>
+  <text x="295" y="468" font-size="15" fill="#444444">自动实验加评测闭环</text>
+  <text x="295" y="494" font-size="15" fill="#666666">审查中 · 192 天</text>
+  <rect x="502" y="416" width="205" height="96" rx="8" fill="#eeeeee"/>
+  <text x="516" y="442" font-size="15" fill="#1a1a1a">阿里云计算有限公司</text>
+  <text x="516" y="468" font-size="15" fill="#D55E00">MCP 中介工具调用防线</text>
+  <text x="516" y="494" font-size="15" fill="#D55E00">已注册</text>
+  <rect x="723" y="416" width="205" height="96" rx="8" fill="#eeeeee"/>
+  <text x="737" y="442" font-size="15" fill="#1a1a1a">Citibank, N.A.</text>
+  <text x="737" y="468" font-size="15" fill="#444444">agent 上岗先登记</text>
+  <text x="737" y="494" font-size="15" fill="#666666">Assigned to aixplain, Inc.</text>
+  <rect x="944" y="416" width="180" height="96" rx="8" fill="#eeeeee"/>
+  <text x="958" y="442" font-size="14" fill="#1a1a1a">中国电子科技集团公司</text>
+  <text x="958" y="464" font-size="14" fill="#1a1a1a">第十四研究所</text>
+  <text x="958" y="490" font-size="14" fill="#444444">上下文进入研发流水线</text>
+
+  <text x="60" y="556" font-size="18" fill="#444444">agent 评测集专利体检加评测 CI 门禁，1 人 2-3 周可交。</text>
+  <text x="60" y="592" font-size="16" fill="#666666">实用新型不作实质审查</text>
+  <text x="300" y="592" font-size="16" fill="#666666">申请人表述一律以原文为准</text>
+</svg>

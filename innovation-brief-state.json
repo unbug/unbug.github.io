@@ -1,8 +1,8 @@
 {
-  "currentPhase": "39 期已 push（当日发布，构建后当日渲染）；coveredPatentFamilies 172→179",
+  "currentPhase": "39 期已 push（当日发布）；slug 改 eval-harness-landgrab 避让 09-07 期同名件；coveredPatentFamilies 172→179",
   "lastPublished": {
     "n": 39,
-    "slug": "innovation-brief-agent-evaluation-patents",
+    "slug": "innovation-brief-eval-harness-landgrab",
     "date": "2026-11-25",
     "title": "给AI Agent出考卷的专利来了",
     "patents": [

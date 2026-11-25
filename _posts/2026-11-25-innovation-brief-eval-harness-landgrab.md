@@ -3,7 +3,7 @@ layout: post
 title: "AI 智创简报：《给AI Agent出考卷的专利来了》"
 author: unbug
 categories: [AI, InnovationBrief]
-image: assets/images/innovation-brief-agent-evaluation-patents.svg
+image: assets/images/innovation-brief-eval-harness-landgrab.svg
 image_alt: "上：Booz Allen、百度、阿里云、Citibank、中电十四所五件专利，仅德国实用新型已注册；下：evaluation harness 词族全库累计26件（2026-11-25检索）；结论：agent 评测集专利体检加评测 CI 门禁，1人2-3周可启动"
 tags: [Patent, ai-agents, DevTools, EvalHarness, solo-dev]
 description: "evaluation harness 词族全库仅26件，百度、阿里云同月递交；评测占位赛开跑，体检加CI门禁1人2-3周可启动。"
@@ -20,7 +20,7 @@ description: "evaluation harness 词族全库仅26件，百度、阿里云同月
 - **上下文进入研发流水线**（中国电子科技集团公司第十四研究所 `CN121187570A`，审查中）：claim 1 逐字「一种基于人工智能的软件开发方法…获取用户输入的针对目标编程任务的编程需求信息和编程上下文」。
 - **个人已在占位**（个人发明人 안범주 `KR20260049741A`）：claim 1 逐字含「평가 하네스(Evaluation Harness) 생성 및 검증 시스템」，申请 `2026-03-27` 到公开 `2026-04-14` 仅 `18` 天，只走韩国国内局。
 
-![agent 评测与防线专利圈地与检索面口径信息图]({{ site.baseurl }}/assets/images/innovation-brief-agent-evaluation-patents.svg)
+![agent 评测与防线专利圈地与检索面口径信息图]({{ site.baseurl }}/assets/images/innovation-brief-eval-harness-landgrab.svg)
 
 ## 技术趋势
 
@@ -28,7 +28,7 @@ description: "evaluation harness 词族全库仅26件，百度、阿里云同月
 
 > 五件里四件审查中，圈地不等于拿地；DE 件未经实质审查，不构成防线。
 
-反方照写：Citibank 转让给 aixplain 说明金融买家在剥离注册表能力，也可反向解读为自留意愿低；不排除防御性公布。与 `2026-11-21` 期[《大厂圈地AI操作层，逐单批准还空着》]({{ site.baseurl }}/innovation-brief-agent-operation-permission-gap/)、`2026-11-23` 期[《MCP协议刚满两岁，中文专利圈了一整圈》]({{ site.baseurl }}/innovation-brief-mcp-patent-enclosure/)、`2026-11-24` 期[《AI写代码正热，编码agent专利先圈了一圈》]({{ site.baseurl }}/innovation-brief-coding-agent-patent-race/)切割：那三期管操作权限、协议层与写码本身，本期看谁给 agent 出考卷、谁把住工具调用总闸。
+反方照写：Citibank 转让给 aixplain 说明金融买家在剥离注册表能力，也可反向解读为自留意愿低；不排除防御性公布。与 `2026-11-21` 期[《大厂圈地AI操作层，逐单批准还空着》]({{ site.baseurl }}/innovation-brief-agent-operation-permission-gap/)、`2026-11-23` 期[《MCP协议刚满两岁，中文专利圈了一整圈》]({{ site.baseurl }}/innovation-brief-mcp-patent-enclosure/)、`2026-11-24` 期[《AI写代码正热，编码agent专利先圈了一圈》]({{ site.baseurl }}/innovation-brief-coding-agent-patent-race/)切割：那三期管操作权限、协议层与写码本身，本期看谁给 agent 出考卷、谁把住工具调用总闸。再与 `2026-09-07` 期[《Agent 轨迹评测专利成簇，长任务质检是接单活》]({{ site.baseurl }}/innovation-brief-agent-evaluation-patents/)切割：那期看轨迹回放打分与质检交付（Citibank 案 `US20260017525A1`），本期看评测装置做成云 API 与动手前的总闸（Citibank 另一案 `US20260111278A1`，专利号不同）。
 
 ## 落地机会
 
