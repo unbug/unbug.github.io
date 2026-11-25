@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="630" fill="#ffffff"/>
+  <text x="60" y="64" font-size="34" font-weight="bold" fill="#1a1a1a">SecondChance：把智能体自己犯下的错误做成检查点</text>
+  <text x="60" y="98" font-size="20" fill="#666666">129 个检查点 · 12 个模型 · 4 档援助 · 5760 次续跑（τ² / BFCL / AppWorld）</text>
+
+  <!-- Panel 1: best model complete recovery, unaided vs repair guidance -->
+  <text x="60" y="152" font-size="24" font-weight="bold" fill="#1a1a1a">最佳模型的完全恢复率</text>
+  <line x1="120" y1="480" x2="560" y2="480" stroke="#cccccc" stroke-width="2"/>
+  <!-- unaided 16% -->
+  <rect x="180" y="340" width="120" height="140" fill="#D55E00"/>
+  <text x="240" y="322" font-size="26" font-weight="bold" fill="#D55E00" text-anchor="middle">16%</text>
+  <text x="240" y="512" font-size="20" fill="#444444" text-anchor="middle">无援助</text>
+  <!-- repair guidance 27% -->
+  <rect x="380" y="244" width="120" height="236" fill="#1a1a1a"/>
+  <text x="440" y="226" font-size="26" font-weight="bold" fill="#1a1a1a" text-anchor="middle">27%</text>
+  <text x="440" y="512" font-size="20" fill="#444444" text-anchor="middle">给修复方案</text>
+  <text x="60" y="556" font-size="17" fill="#666666">三个环境的合并口径，最佳模型为 GPT-6.1-sol。</text>
+  <text x="60" y="582" font-size="17" fill="#666666">AppWorld 里 84 次『任务成功』的续跑有 40 次错误原封未动。</text>
+
+  <!-- Panel 2: GPT-6.1-sol assistance ladder -->
+  <text x="640" y="152" font-size="24" font-weight="bold" fill="#1a1a1a">GPT-6.1-sol：援助每加一档，同步上台阶</text>
+  <line x1="680" y1="480" x2="1140" y2="480" stroke="#cccccc" stroke-width="2"/>
+  <!-- heights: value*5 (100% -> 500 scale 0.8 => *4; use *4 for px) 24%->96 29%->116 37%->148 42%->168 correction (dark) -->
+  <!-- recovery 21%->84 24%->96 29%->116 34%->136 (orange) -->
+  <!-- group x centers: 730, 850, 970, 1090 -->
+  <rect x="700" y="384" width="30" height="96" fill="#444444"/>
+  <rect x="734" y="396" width="30" height="84" fill="#D55E00"/>
+  <text x="732" y="368" font-size="17" fill="#444444" text-anchor="middle">24%</text>
+  <text x="749" y="368" font-size="17" fill="#D55E00" text-anchor="middle">21%</text>
+
+  <rect x="820" y="364" width="30" height="116" fill="#444444"/>
+  <rect x="854" y="384" width="30" height="96" fill="#D55E00"/>
+  <text x="852" y="348" font-size="17" fill="#444444" text-anchor="middle">29%</text>
+  <text x="869" y="348" font-size="17" fill="#D55E00" text-anchor="middle">24%</text>
+
+  <rect x="940" y="332" width="30" height="148" fill="#444444"/>
+  <rect x="974" y="364" width="30" height="116" fill="#D55E00"/>
+  <text x="972" y="316" font-size="17" fill="#444444" text-anchor="middle">37%</text>
+  <text x="989" y="316" font-size="17" fill="#D55E00" text-anchor="middle">29%</text>
+
+  <rect x="1060" y="312" width="30" height="168" fill="#444444"/>
+  <rect x="1094" y="344" width="30" height="136" fill="#D55E00"/>
+  <text x="1092" y="296" font-size="17" fill="#444444" text-anchor="middle">42%</text>
+  <text x="1109" y="296" font-size="17" fill="#D55E00" text-anchor="middle">34%</text>
+
+  <text x="732" y="512" font-size="16" fill="#444444" text-anchor="middle">无援助</text>
+  <text x="852" y="512" font-size="16" fill="#444444" text-anchor="middle">告知出错</text>
+  <text x="972" y="512" font-size="16" fill="#444444" text-anchor="middle">指出错在哪</text>
+  <text x="1092" y="512" font-size="16" fill="#444444" text-anchor="middle">修复方案</text>
+
+  <rect x="680" y="540" width="16" height="16" fill="#444444"/>
+  <text x="704" y="554" font-size="17" fill="#444444">更正率</text>
+  <rect x="820" y="540" width="16" height="16" fill="#D55E00"/>
+  <text x="844" y="554" font-size="17" fill="#444444">完全恢复率</text>
+  <text x="640" y="596" font-size="17" fill="#666666">11 个模型在前三档一个 τ² 错误都不改，只有直接给方案才有用。</text>
+</svg>
