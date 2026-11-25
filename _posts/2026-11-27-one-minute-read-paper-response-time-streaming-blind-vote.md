@@ -6,10 +6,10 @@ categories: [AI, OneMinuteRead]
 image: assets/images/response-time-streaming-blind-vote.svg
 image_alt: 左栏对比同一段文字逐字流式时赢 57%、秒回整段时赢 29%；右栏显示秒回惩罚随答案长度上升的三档 19.1、33.8、48.1 点；脚注：主设定下降 25.8 点（prompt 固定效应），474 次决定性投票中 replay 仅赢 22%
 tags: [Evaluation, Benchmark, LLM, Chatbot, Leaderboard, Latency]
-description: 法国政府聊天竞技场 compar:IA 的缓存抽签：同一份答案改成秒回整段，赢下盲评的概率掉 25.8 个百分点；拥堵造成的慢在投票里换不到加分，却让用户更少追问
+description: 法国政府聊天竞技场 compar:IA 的缓存抽签：同一份答案秒回整段，赢下盲评的概率掉 25.8 个百分点；拥堵造成的慢在投票里换不到加分，却让用户更少追问
 ---
 
-Stevens Institute of Technology 与 University of Massachusetts Boston 的论文[《Worth the Wait?》][paper1-url]用法国政府聊天竞技场 compar:IA 的缓存抽签显示：同一份答案改成秒回整段，赢下盲评的概率掉 `25.8` 个百分点。
+Stevens Institute of Technology 与 University of Massachusetts Boston 的论文[《Worth the Wait?》][paper1-url]用聊天竞技场 compar:IA 的缓存抽签显示：同一份答案秒回整段，赢下盲评的概率掉 `25.8` 个百分点。
 
 盲评（blind vote）是访客在两个匿名模型答案间二选一或判平的投票；replay 是平台从缓存取回的同一模型对同一 prompt 的早前答案。两条答案同时出现、各自逐字显示。
 
