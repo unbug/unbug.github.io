@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="630" fill="#ffffff"/>
+  <text x="60" y="64" font-size="34" font-weight="bold" fill="#333333">compar:IA：同一份答案，秒回整段就更容易输</text>
+  <text x="60" y="98" font-size="20" fill="#666666">随机缓存抽签 · 盲评对比逐字流式与秒回整段 · 观察窗至 2026 年 5 月 18 日</text>
+
+  <!-- Panel 1: identical text, two delivery forms -->
+  <text x="60" y="152" font-size="24" font-weight="bold" fill="#333333">同一段文字的胜率</text>
+  <line x1="60" y1="480" x2="560" y2="480" stroke="#cccccc" stroke-width="2"/>
+  <!-- scale: value*4 px -->
+  <rect x="120" y="252" width="140" height="228" fill="#D55E00"/>
+  <text x="190" y="234" font-size="26" font-weight="bold" fill="#D55E00" text-anchor="middle">57%</text>
+  <text x="190" y="512" font-size="20" fill="#555555" text-anchor="middle">逐字流式</text>
+  <rect x="340" y="364" width="140" height="116" fill="#555555"/>
+  <text x="410" y="346" font-size="26" font-weight="bold" fill="#555555" text-anchor="middle">29%</text>
+  <text x="410" y="512" font-size="20" fill="#555555" text-anchor="middle">秒回整段</text>
+  <text x="60" y="556" font-size="17" fill="#666666">265 份存稿在两种形态下都拿到决定性投票，按每份文字等权。</text>
+  <text x="60" y="582" font-size="17" fill="#666666">差 27.3 点，文字与排版完全相同。</text>
+
+  <!-- Panel 2: penalty by answer length -->
+  <text x="640" y="152" font-size="24" font-weight="bold" fill="#333333">秒回惩罚随答案长度上升</text>
+  <line x1="680" y1="480" x2="1140" y2="480" stroke="#cccccc" stroke-width="2"/>
+  <!-- scale: value*5 px -->
+  <rect x="710" y="385" width="90" height="95" fill="#D55E00"/>
+  <text x="755" y="367" font-size="22" font-weight="bold" fill="#D55E00" text-anchor="middle">19.1</text>
+  <text x="755" y="512" font-size="17" fill="#555555" text-anchor="middle">短于 300 字符</text>
+
+  <rect x="850" y="311" width="90" height="169" fill="#D55E00"/>
+  <text x="895" y="293" font-size="22" font-weight="bold" fill="#D55E00" text-anchor="middle">33.8</text>
+  <text x="895" y="512" font-size="17" fill="#555555" text-anchor="middle">中等长度</text>
+
+  <rect x="990" y="240" width="90" height="240" fill="#D55E00"/>
+  <text x="1035" y="222" font-size="22" font-weight="bold" fill="#D55E00" text-anchor="middle">48.1</text>
+  <text x="1035" y="512" font-size="17" fill="#555555" text-anchor="middle">超 1,500 字符</text>
+
+  <text x="640" y="556" font-size="17" fill="#666666">主设定下降 25.8 点（prompt 固定效应）；</text>
+  <text x="640" y="582" font-size="17" fill="#666666">474 次决定性投票中 replay 仅赢 22%。单位：百分点。</text>
+</svg>
