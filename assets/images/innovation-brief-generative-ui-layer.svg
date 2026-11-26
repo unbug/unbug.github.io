@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="630" fill="#ffffff"/>
+  <text x="60" y="62" font-size="33" font-weight="bold" fill="#1A1B1E">接口层月月被装上亿次，纸面这一层只抓到三件</text>
+  <text x="60" y="96" font-size="19" fill="#666666">下载量为 2026-11-26 实测近一月口径，两栏各自按栏内最大值归一，不相加</text>
+
+  <text x="60" y="150" font-size="22" font-weight="bold" fill="#1A1B1E">左：智能体接口层（近一月被装上）</text>
+  <text x="60" y="196" font-size="18" fill="#555555">npm MCP SDK</text>
+  <rect x="330" y="178" width="560" height="26" rx="4" fill="#D55E00"/>
+  <text x="902" y="198" font-size="20" font-weight="bold" fill="#D55E00">388,499,623</text>
+  <text x="60" y="244" font-size="18" fill="#555555">PyPI mcp</text>
+  <rect x="330" y="226" width="491" height="26" rx="4" fill="#cccccc"/>
+  <text x="833" y="246" font-size="20" font-weight="bold" fill="#555555">340,208,901</text>
+  <text x="60" y="292" font-size="18" fill="#555555">PyPI litellm</text>
+  <rect x="330" y="274" width="152" height="26" rx="4" fill="#cccccc"/>
+  <text x="494" y="294" font-size="20" font-weight="bold" fill="#555555">105,179,538</text>
+
+  <text x="60" y="356" font-size="22" font-weight="bold" fill="#1A1B1E">右：生成式界面层（近一月被装上）</text>
+  <text x="60" y="402" font-size="18" fill="#555555">json-render core</text>
+  <rect x="330" y="384" width="560" height="26" rx="4" fill="#D55E00"/>
+  <text x="902" y="404" font-size="20" font-weight="bold" fill="#D55E00">15,177,187</text>
+  <text x="60" y="450" font-size="18" fill="#555555">CopilotKit</text>
+  <rect x="330" y="432" width="118" height="26" rx="4" fill="#cccccc"/>
+  <text x="460" y="452" font-size="20" font-weight="bold" fill="#555555">3,197,936</text>
+  <text x="60" y="498" font-size="18" fill="#555555">assistant-ui</text>
+  <rect x="330" y="480" width="4" height="26" fill="#cccccc"/>
+  <text x="346" y="500" font-size="20" font-weight="bold" fill="#555555">104,237</text>
+
+  <line x1="60" y1="536" x2="1140" y2="536" stroke="#D9D9D9" stroke-width="2"/>
+  <text x="60" y="576" font-size="21" font-weight="bold" fill="#1A1B1E">纸面三件：两件中国审查中、一件国际申请，优先权到公开差 553 天</text>
+  <text x="60" y="608" font-size="18" fill="#666666">这一层的专利件数本期数不出来：优先权窗口参数失效、宽检索词跨行业噪声</text>
+</svg>

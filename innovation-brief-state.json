@@ -1,21 +1,18 @@
 {
-  "currentPhase": "39 期已 push（当日发布）；slug 改 eval-harness-landgrab 避让 09-07 期同名件；coveredPatentFamilies 172→179",
+  "currentPhase": "40 期已 push（当日发布）；coveredPatentFamilies 179→182",
   "lastPublished": {
-    "n": 39,
-    "slug": "innovation-brief-eval-harness-landgrab",
-    "date": "2026-11-25",
-    "title": "给AI Agent出考卷的专利来了",
+    "n": 40,
+    "slug": "innovation-brief-generative-ui-layer",
+    "date": "2026-11-26",
+    "title": "生成式界面库月装一千五百万，纸面专利只剩时间差",
     "patents": [
-      "US20250292079A1",
-      "WO2026128383A1",
-      "DE202025107678U1",
-      "US20260111278A1",
-      "CN121187570A",
-      "KR20260049741A"
+      "WO2026198928A1",
+      "CN122450785A",
+      "CN122654133A"
     ]
   },
-  "totalPublished": 39,
-  "nextScheduled": "2026-11-26",
+  "totalPublished": 40,
+  "nextScheduled": "2026-11-27",
   "coveredPatentFamilies": [
     "AU2022273947",
     "AU2026906209A0",
@@ -38,7 +35,9 @@
     "CN122420137A",
     "CN122433060A",
     "CN122450431A",
+    "CN122450785A",
     "CN122573634",
+    "CN122654133A",
     "DE202025107678U1",
     "EP4162488",
     "EP4548546",
@@ -195,7 +194,8 @@
     "WO2026154461",
     "WO2026165173",
     "WO2026173611A1",
-    "WO2026173648A1"
+    "WO2026173648A1",
+    "WO2026198928A1"
   ],
   "candidateTopics": [
     {
