@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="630" fill="#ffffff"/>
+  <text x="60" y="62" font-size="33" font-weight="bold" fill="#1A1B1E">护栏工具层月装五百四十万次，纸面专利一个号都追不上</text>
+  <text x="60" y="96" font-size="19" fill="#666666">安装量为 2026-11-26 实测近一月口径，npm 与 PyPI 分列不相加；官方轨迹逐字取自 OpenAI RSS</text>
+
+  <text x="60" y="150" font-size="22" font-weight="bold" fill="#1A1B1E">左：防御工具层（近一月被装上）</text>
+  <text x="60" y="196" font-size="18" fill="#555555">PyPI presidio-analyzer</text>
+  <rect x="330" y="178" width="560" height="26" rx="4" fill="#D55E00"/>
+  <text x="902" y="198" font-size="20" font-weight="bold" fill="#D55E00">6,698,602</text>
+  <text x="60" y="244" font-size="18" fill="#555555">npm promptfoo</text>
+  <rect x="330" y="226" width="447" height="26" rx="4" fill="#cccccc"/>
+  <text x="789" y="246" font-size="20" font-weight="bold" fill="#555555">5,345,028</text>
+  <text x="60" y="292" font-size="18" fill="#555555">PyPI nemoguardrails</text>
+  <rect x="330" y="274" width="40" height="26" rx="4" fill="#cccccc"/>
+  <text x="382" y="294" font-size="20" font-weight="bold" fill="#555555">469,947</text>
+  <text x="60" y="340" font-size="18" fill="#555555">PyPI llm-guard / pyrit</text>
+  <rect x="330" y="322" width="11" height="26" rx="4" fill="#cccccc"/>
+  <text x="353" y="342" font-size="20" font-weight="bold" fill="#555555">127,352 / 90,800</text>
+
+  <text x="640" y="150" font-size="22" font-weight="bold" fill="#1A1B1E">右：OpenAI 官方轨迹（一年九条）</text>
+  <text x="640" y="196" font-size="17" fill="#555555">2025-11-07  Understanding prompt injections</text>
+  <text x="640" y="232" font-size="17" fill="#555555">2026-02-13  Lockdown Mode 上线 ChatGPT</text>
+  <text x="640" y="268" font-size="17" fill="#555555">2026-03-11  Designing agents to resist injection</text>
+  <text x="640" y="304" font-size="17" fill="#555555">2026-11-05  GPT-6 Cyber 发布</text>
+  <rect x="640" y="322" width="8" height="26" rx="4" fill="#D55E00"/>
+  <text x="660" y="342" font-size="17" font-weight="bold" fill="#D55E00">2026-11-23  OpenAI 与 Cisco 发布 Shirudo</text>
+
+  <line x1="60" y1="400" x2="1140" y2="400" stroke="#D9D9D9" stroke-width="2"/>
+  <text x="60" y="444" font-size="21" font-weight="bold" fill="#1A1B1E">纸面这头：昨夜 Google Patents 检索面封锁，本期可验主题专利 0 件</text>
+  <text x="60" y="478" font-size="18" fill="#666666">已验的 US20260259908A1（NEC）方向不同题不硬挂；8-24 期已写的五件旧专利不重复引用</text>
+  <line x1="60" y1="516" x2="1140" y2="516" stroke="#D9D9D9" stroke-width="2"/>
+  <text x="60" y="560" font-size="21" font-weight="bold" fill="#1A1B1E">一个人能做的：护栏版本漂移回归体检，1 人 1-2 周可启动</text>
+  <text x="60" y="594" font-size="18" fill="#666666">固定注入样本集，护栏库升级即重跑，输出拦截率前后对比；promptfoo、pyrit、CI 矩阵全是现成栈</text>
+</svg>
