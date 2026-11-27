@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <text x="60" y="62" font-size="34" font-weight="bold" fill="#1A1B1E">513 个开源项目在转卖免费大模型推理</text>
+  <text x="60" y="96" font-size="20" fill="#555555">arXiv:2611.33218 · 华中科技大学 · 1,588 条推理路径 / 64 家上游服务 · 93.0% 的仓库建于 2026 年</text>
+
+  <!-- Panel 1: attention concentration -->
+  <text x="60" y="150" font-size="24" font-weight="bold" fill="#1A1B1E">关注度：头部项目吃掉八成星数</text>
+  <line x1="60" y1="482" x2="560" y2="482" stroke="#D9D9D9" stroke-width="2"/>
+  <!-- scale: stars / 200 px -->
+  <rect x="105" y="104" width="110" height="378" fill="#D55E00"/>
+  <text x="160" y="90" font-size="22" font-weight="bold" fill="#D55E00" text-anchor="middle">75,841</text>
+  <text x="160" y="510" font-size="18" fill="#555555" text-anchor="middle">dsh-our-free-model</text>
+  <rect x="275" y="316" width="110" height="166" fill="#555555"/>
+  <text x="330" y="302" font-size="22" font-weight="bold" fill="#555555" text-anchor="middle">33,129</text>
+  <text x="330" y="510" font-size="18" fill="#555555" text-anchor="middle">Antigravity-Manager</text>
+  <rect x="445" y="319" width="110" height="163" fill="#555555"/>
+  <text x="500" y="305" font-size="22" font-weight="bold" fill="#555555" text-anchor="middle">32,484</text>
+  <text x="500" y="510" font-size="18" fill="#555555" text-anchor="middle">9router</text>
+  <text x="60" y="512" font-size="18" fill="#555555">中位数仓库只有 1 星，74.7% 的仓库不足 10 星。</text>
+  <text x="60" y="540" font-size="18" fill="#555555">前 10 个项目占全部星数的 89.0%，前 3 个占 74.8%。</text>
+
+  <!-- Panel 2: invocation method -->
+  <text x="640" y="150" font-size="24" font-weight="bold" fill="#1A1B1E">调用方式：复刻协议是主流</text>
+  <!-- scale: combination * 0.85 px -->
+  <rect x="640" y="184" width="384" height="56" fill="#D55E00"/>
+  <text x="1036" y="222" font-size="22" font-weight="bold" fill="#D55E00">452</text>
+  <text x="640" y="266" font-size="18" fill="#555555">复刻产品请求（direct product request）</text>
+  <rect x="640" y="298" width="85" height="56" fill="#555555"/>
+  <text x="737" y="336" font-size="22" font-weight="bold" fill="#555555">100</text>
+  <text x="640" y="380" font-size="18" fill="#555555">浏览器中介访问</text>
+  <rect x="640" y="412" width="12" height="56" fill="#555555"/>
+  <text x="664" y="450" font-size="22" font-weight="bold" fill="#555555">13</text>
+  <text x="640" y="450" font-size="18" fill="#555555">专用客户端桥接</text>
+  <text x="640" y="512" font-size="17" fill="#555555">分母是 682 个「下游协议族 × 上游服务 × 调用方式」去重组合，</text>
+  <text x="640" y="536" font-size="17" fill="#555555">不等于 1,588 条推理路径。</text>
+
+  <text x="60" y="592" font-size="17" fill="#555555">星数为论文 2026-11-16 快照口径；62 家有可查条款的服务中 58 家明确禁止至少一种被观测做法。</text>
+</svg>
