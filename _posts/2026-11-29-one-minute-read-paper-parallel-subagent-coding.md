@@ -9,7 +9,7 @@ tags: [AIAgents, CodingAgents, MultiAgent, Cost, Evaluation, TestTimeScaling]
 description: "UIUC 实测并行子代理写代码：随机抽题通过率只抬 1 到 5 个百分点，成本却要 2.6 到 3.8 倍，同成本下单 agent 打平或反超。"
 ---
 
-论文[《When Are Parallel Subagents Effective for Coding?》][paper1-url]来自 UIUC（伊利诺伊大学厄巴纳-香槟分校），实测并行子代理写代码：随机抽题通过率只抬约 `1` 到 `5` 个百分点，成本却要付到 `2.6` 到 `3.8` 倍，同成本下单 agent 不输。
+论文[《When Are Parallel Subagents Effective for Coding?》][paper1-url]来自 UIUC，实测并行子代理写代码：随机抽题通过率只抬约 `1` 到 `5` 个百分点，成本却要付到 `2.6` 到 `3.8` 倍，同成本下单 agent 不输。
 
 论文测的对象是仓库构建任务：一个主 agent 要从零做出能通过隐藏测试的程序。实验组 Multi 是主 agent 派生并行子代理（parallel subagents，即把模块拆给多个子代理同时开工），对照组 Single 是单 agent 自己干。每基准抽 `30` 题、三档难度各 `10` 题，题目来自 NL2Repo 和 ProgramBench，后者还提供一份可执行的参考程序。驱动框架是 Codex CLI，模型名按论文原样：GPT-5.6 Sol、GPT-6 Sol、GPT-6.1 Sol、Opus 5.5、Grok 4.6、MiniMax-M3。
 
@@ -19,13 +19,13 @@ description: "UIUC 实测并行子代理写代码：随机抽题通过率只抬 
 
 **第二笔是同成本对照。**「At equal cost, Single's score is higher than or equal to Multi's.」两边预算拉平后，单 agent 打平或反超。
 
-**第三笔是噪声。**`30` 题里有 `10` 题的增益在两轮重复之间正负换号（「On 10 of the 30 tasks, the gain from subagents even changes sign between two repetitions of the comparison.」），而且「Most comparisons rest on one to three runs per setup.」多数对照每设置只跑 `1` 到 `3` 次。所以「`1` 到 `5` 个百分点」不能当稳定提升读，它只是小样本里的方向信号。
+**第三笔是噪声。**`30` 题里有 `10` 题的增益在两轮重复之间正负换号（「On 10 of the 30 tasks, the gain from subagents even changes sign between two repetitions of the comparison.」），而且「Most comparisons rest on one to three runs per setup.」多数对照每设置只跑 `1` 到 `3` 次。所以「`1` 到 `5` 个百分点」不能当稳定提升读，它只是小样本里的方向信号。三笔账合读，结论并不复杂：并行子代理买到的不是平均分的抬升，而是难任务上的一次保险。
 
 ## 什么时候真买到了东西
 
 难任务是例外。atlas 是 ProgramBench 上重建数据库 schema 工具的难题：「On atlas, a hard ProgramBench task that rebuilds a database schema tool, a single GPT-5.6 Sol agent stops at 47% of the hidden tests, whereas with subagents it reaches 77%.」单 agent GPT-5.6 Sol 停在 `47%`，加子代理到 `77%`。
 
-机制上买到的主要是「替主 agent 补自检」，因为开关很轻：「in Codex and Claude Code a user enables subagents with one sentence and pays the extra cost whether or not the program improves.」——一句话开启，账单跟程序有没有变好无关。摘要口径显示，从 GPT-5.6 Sol 到 GPT-6.1 Sol，增益随单 agent 自检变强而缩小。对单 agent 加一句「先跑一遍参考程序」，作者测得它「recovers most of this gain at a fraction of the cost」——大部分收益能用零头成本换回来。作者还在 Claude Code 上用 Opus 5.5 做了小规模复现（每设置每题一跑、每基准十道随机题），观察到类似模式。
+机制上买到的主要是「替主 agent 补自检」，因为开关很轻：「in Codex and Claude Code a user enables subagents with one sentence and pays the extra cost whether or not the program improves.」——一句话开启，账单跟程序有没有变好无关。摘要口径显示，从 GPT-5.6 Sol 到 GPT-6.1 Sol，增益随单 agent 自检变强而缩小。对单 agent 加一句「先跑一遍参考程序」，作者测得它「recovers most of this gain at a fraction of the cost」——大部分收益能用零头成本换回来。作者把机制归到三处：子代理替主 agent 补上了它跳过的自检；新开会话带来干净上下文，长跑早期进度更快；多代理产出更模块化，文件更多、函数更短，更接近上游源码。作者还在 Claude Code 上用 Opus 5.5 做了小规模复现（每设置每题一跑、每基准十道随机题），观察到类似模式。
 
 长跑里还有一处翻车点：跑到预算耗尽时，「only multi-agent runs end with a program that does not build (2 of 30 extended runs, against none of 38 single-agent ones)」——只有多 agent 组交编不过的程序，`30` 次里 `2` 次，单 agent `38` 次里 `0` 次。「GPT-5.6 Sol costs about $500 at list price on average, compared with under $20 for a run to the natural stop.」同一任务跑到 20 小时上限平均约 `$500` 牌价，自然停止不足 `$20`。
 
