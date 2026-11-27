@@ -6,7 +6,7 @@ categories: [AI, InnovationBrief, Security]
 image: assets/images/innovation-brief-guardrail-install-gap.svg
 image_alt: "上：提示注入防御工具层近一月安装量，npm promptfoo 5,345,028、PyPI presidio-analyzer 6,698,602、nemoguardrails 469,947、llm-guard 127,352、pyrit 90,800（2026-11-26 实测）；中：OpenAI 官方 RSS 9 条公开轨迹，从 2025-11-07 论文到 2026-11-23 与 Cisco 发布 Shirudo；下：昨夜 GP 检索面封锁，本期可验主题专利 0 件；结论：护栏版本漂移回归体检 1 人 1-2 周可启动"
 tags: [Patent, PromptInjection, Guardrails, AgentSecurity, solo-dev]
-description: "提示注入防御的开源工具层近一月被装上五百四十多万次，昨夜专利检索面封锁，本期可验主题专利为零件；官方轨迹一年九条从论文走到产品，护栏版本漂移回归体检是 1 人 1-2 周能启动的活。"
+description: "提示注入防御开源工具层近一月装上五百四十多万次，昨夜专利检索面封锁，本期可验主题专利为零件；官方轨迹一年九条从论文到产品，护栏漂移体检 1 人 1-2 周可启动。"
 ---
 
 提示注入防御这一层的开源工具近一月被装上五百四十多万次（npm `promptfoo` `5,345,028` 次，`2026-11-26` 实测），而昨夜专利检索面全程封锁，本期能在纸面逐字核对的同主题新公开是 `0` 件。
