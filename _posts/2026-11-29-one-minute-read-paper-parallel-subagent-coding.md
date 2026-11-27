@@ -23,7 +23,7 @@ description: "UIUC 实测并行子代理写代码：随机抽题通过率只抬 
 
 ## 什么时候真买到了东西
 
-难任务是例外。atlas 是 ProgramBench 上重建数据库 schema 工具的 hard 题：「On atlas, a hard ProgramBench task that rebuilds a database schema tool, a single GPT-5.6 Sol agent stops at 47% of the hidden tests, whereas with subagents it reaches 77%.」单 agent GPT-5.6 Sol 停在 `47%`，加子代理到 `77%`。
+难任务是例外。atlas 是 ProgramBench 上重建数据库 schema 工具的难题：「On atlas, a hard ProgramBench task that rebuilds a database schema tool, a single GPT-5.6 Sol agent stops at 47% of the hidden tests, whereas with subagents it reaches 77%.」单 agent GPT-5.6 Sol 停在 `47%`，加子代理到 `77%`。
 
 机制上买到的主要是「替主 agent 补自检」，因为开关很轻：「in Codex and Claude Code a user enables subagents with one sentence and pays the extra cost whether or not the program improves.」——一句话开启，账单跟程序有没有变好无关。摘要口径显示，从 GPT-5.6 Sol 到 GPT-6.1 Sol，增益随单 agent 自检变强而缩小。对单 agent 加一句「先跑一遍参考程序」，作者测得它「recovers most of this gain at a fraction of the cost」——大部分收益能用零头成本换回来。作者还在 Claude Code 上用 Opus 5.5 做了小规模复现（每设置每题一跑、每基准十道随机题），观察到类似模式。
 
