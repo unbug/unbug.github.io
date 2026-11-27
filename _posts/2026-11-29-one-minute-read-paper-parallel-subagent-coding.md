@@ -9,7 +9,7 @@ tags: [AIAgents, CodingAgents, MultiAgent, Cost, Evaluation, TestTimeScaling]
 description: "UIUC 实测并行子代理写代码：随机抽题通过率只抬 1 到 5 个百分点，成本却要 2.6 到 3.8 倍，同成本下单 agent 打平或反超。"
 ---
 
-论文[《When Are Parallel Subagents Effective for Coding?》][paper1-url]来自 UIUC（伊利诺伊大学厄巴纳-香槟分校），实测并行子代理写代码：随机抽题通过率只抬约 `1` 到 `5` 个百分点，成本却要 `2.6` 到 `3.8` 倍，同成本下单 agent 不输。
+论文[《When Are Parallel Subagents Effective for Coding?》][paper1-url]来自 UIUC（伊利诺伊大学厄巴纳-香槟分校），实测并行子代理写代码：随机抽题通过率只抬约 `1` 到 `5` 个百分点，成本却要付到 `2.6` 到 `3.8` 倍，同成本下单 agent 不输。
 
 论文测的对象是仓库构建任务：一个主 agent 要从零做出能通过隐藏测试的程序。实验组 Multi 是主 agent 派生并行子代理（parallel subagents，即把模块拆给多个子代理同时开工），对照组 Single 是单 agent 自己干。每基准抽 `30` 题、三档难度各 `10` 题，题目来自 NL2Repo 和 ProgramBench，后者还提供一份可执行的参考程序。驱动框架是 Codex CLI，模型名按论文原样：GPT-5.6 Sol、GPT-6 Sol、GPT-6.1 Sol、Opus 5.5、Grok 4.6、MiniMax-M3。
 
@@ -17,7 +17,7 @@ description: "UIUC 实测并行子代理写代码：随机抽题通过率只抬 
 
 **第一笔是提升。**「The gain is about 1 to 5 points across model generations and benchmarks, at 2.6 to 3.8 times the cost of a single agent.」跨模型代际和基准，增益停在 `1` 到 `5` 个百分点，成本却是单 agent 的 `2.6` 到 `3.8` 倍。
 
-**第二笔是同成本对照。**「At equal cost, Single's score is higher than or equal to Multi's.」把两边预算拉平，单 agent 的分数不低于多 agent。
+**第二笔是同成本对照。**「At equal cost, Single's score is higher than or equal to Multi's.」两边预算拉平后，单 agent 打平或反超。
 
 **第三笔是噪声。**`30` 题里有 `10` 题的增益在两轮重复之间正负换号（「On 10 of the 30 tasks, the gain from subagents even changes sign between two repetitions of the comparison.」），而且「Most comparisons rest on one to three runs per setup.」多数对照每设置只跑 `1` 到 `3` 次。所以「`1` 到 `5` 个百分点」不能当稳定提升读，它只是小样本里的方向信号。
 
