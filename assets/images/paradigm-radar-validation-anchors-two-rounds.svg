@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" font-family="Arial, sans-serif">
+  <rect width="1200" height="520" fill="#FFFFFF"/>
+  <text x="60" y="48" font-size="26" font-weight="bold" fill="#1A1B1E">四锚两日对照：谁在涨，谁走平，谁只涨星标</text>
+  <text x="60" y="76" font-size="15" fill="#555555">灰色 = 实测 2026-11-26 16:3x；朱砂 = 实测 2026-11-27 上午（HN 全树口径 / GitHub API）</text>
+
+  <g font-size="16" fill="#1A1B1E">
+    <text x="60" y="132">ω=9/4 主帖 50637220（分）</text>
+    <text x="60" y="212">Aaronson 帖 50646108（分）</text>
+    <text x="60" y="292">VP ≠ VNP 帖 50620102（分）</text>
+    <text x="60" y="372">openai/math 星标（÷100）</text>
+  </g>
+
+  <!-- bars: gray = 11-26, vermilion = 11-27, scale 0.35 px/point for posts; stars/100 same scale -->
+  <!-- omega 1040 -> 364 ; 1063 -> 372 -->
+  <rect x="420" y="112" width="364" height="20" fill="#D9D9D9" stroke="#555555" stroke-width="1"/>
+  <rect x="420" y="136" width="372" height="20" fill="#D55E00"/>
+  <text x="794" y="127" font-size="14" fill="#555555">1040</text>
+  <text x="802" y="152" font-size="14" font-weight="bold" fill="#D55E00">1063（全树 598）</text>
+
+  <!-- aaronson 1410 -> 493.5 ; 1986 -> 695 -->
+  <rect x="420" y="192" width="493" height="20" fill="#D9D9D9" stroke="#555555" stroke-width="1"/>
+  <rect x="420" y="216" width="640" height="20" fill="#D55E00"/>
+  <text x="923" y="207" font-size="14" fill="#555555">1410</text>
+  <text x="1070" y="232" font-size="14" font-weight="bold" fill="#D55E00">1986（全树 1794）</text>
+
+  <!-- vpvnp 368 -> 129 both -->
+  <rect x="420" y="272" width="129" height="20" fill="#D9D9D9" stroke="#555555" stroke-width="1"/>
+  <rect x="420" y="296" width="129" height="20" fill="#555555"/>
+  <text x="559" y="287" font-size="14" fill="#555555">368</text>
+  <text x="559" y="312" font-size="14" fill="#1A1B1E">368（两轮一致，全树 337）</text>
+
+  <!-- stars 18409/100=184.09 -> 64 ; 185 -> 65 -->
+  <rect x="420" y="352" width="64" height="20" fill="#D9D9D9" stroke="#555555" stroke-width="1"/>
+  <rect x="420" y="376" width="65" height="20" fill="#555555"/>
+  <text x="494" y="367" font-size="14" fill="#555555">18,409</text>
+  <text x="495" y="392" font-size="14" fill="#1A1B1E">18,500，最后 push 仍是 11-25T00:18:51Z</text>
+
+  <text x="60" y="462" font-size="15" fill="#1A1B1E">读法：解读帖一夜 +576 分跑得比论文快；仓库一天 +91 星却零新提交——热度与代码库已经脱钩。</text>
+  <text x="60" y="490" font-size="13" fill="#555555">数据：HN Algolia items API 全树口径；GitHub repos/openai/math。两轮实测 2026-11-26 16:3x 与 2026-11-27 上午（GMT+8）。</text>
+</svg>

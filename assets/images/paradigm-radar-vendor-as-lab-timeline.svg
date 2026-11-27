@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" font-family="Arial, sans-serif">
+  <rect width="1200" height="540" fill="#FFFFFF"/>
+  <text x="60" y="48" font-size="26" font-weight="bold" fill="#1A1B1E">厂商即实验室：两条官方通道与一条社区曲线</text>
+
+  <!-- official timeline -->
+  <text x="60" y="100" font-size="18" font-weight="bold" fill="#1A1B1E">官方通道（GitHub push 时间戳 + 官网扫描）</text>
+  <line x1="120" y1="150" x2="120" y2="330" stroke="#D9D9D9" stroke-width="2"/>
+
+  <circle cx="120" cy="170" r="9" fill="#D55E00"/>
+  <text x="150" y="166" font-size="16" font-weight="bold" fill="#1A1B1E">OpenAI · openai/math</text>
+  <text x="150" y="192" font-size="14" fill="#555555">最后 push 2026-11-25T00:18:51Z · 星标 18,500（实测 11-27 上午）</text>
+  <text x="150" y="214" font-size="14" fill="#555555">此后零 commit、零外部复现 PR</text>
+
+  <circle cx="120" cy="266" r="9" fill="#555555"/>
+  <text x="150" y="262" font-size="16" font-weight="bold" fill="#1A1B1E">Anthropic · formal-math / 官网</text>
+  <text x="150" y="288" font-size="14" fill="#555555">最后 push 2026-11-23T21:43:50Z · 星标 1,048（实测 11-26 16:1x）</text>
+  <text x="150" y="310" font-size="14" font-weight="bold" fill="#D55E00">news / research 全文扫描：matrix、VNP 零命中 = 官方零回应</text>
+
+  <!-- community curve -->
+  <text x="60" y="376" font-size="18" font-weight="bold" fill="#1A1B1E">社区仲裁曲线（实测 2026-11-27 上午，HN 全树口径）</text>
+  <rect x="120" y="396" width="940" height="22" fill="#D55E00"/>
+  <text x="1072" y="413" font-size="15" font-weight="bold" fill="#1A1B1E" text-anchor="end" dx="-12">解读帖 1,986</text>
+  <rect x="120" y="428" width="503" height="22" fill="#555555"/>
+  <text x="635" y="445" font-size="15" fill="#1A1B1E">论文主帖 1,063</text>
+  <rect x="120" y="460" width="174" height="22" fill="#D9D9D9" stroke="#555555" stroke-width="1"/>
+  <text x="306" y="477" font-size="15" fill="#1A1B1E">VP ≠ VNP 帖 368</text>
+
+  <text x="600" y="396" font-size="14" fill="#555555">官方安静，打分、解读、指认全部发生在评论区</text>
+
+  <text x="60" y="520" font-size="13" fill="#555555">可写的归属事实对：OpenAI 仓库 README 时间戳（11 月下旬批量提交）vs Anthropic 线 HN 帖 2026-11-23T22:09Z；其余推断一律不写。</text>
+</svg>

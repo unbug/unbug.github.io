@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" font-family="Arial, sans-serif">
+  <rect width="1200" height="520" fill="#FFFFFF"/>
+  <text x="60" y="48" font-size="26" font-weight="bold" fill="#1A1B1E">Aaronson 两周转折线：讽刺 → 背书 → 自纠</text>
+
+  <line x1="120" y1="120" x2="120" y2="420" stroke="#D9D9D9" stroke-width="2"/>
+
+  <!-- stage 1 -->
+  <circle cx="120" cy="150" r="10" fill="#555555"/>
+  <text x="160" y="146" font-size="18" font-weight="bold" fill="#1A1B1E">① 讽刺（11 月中旬）</text>
+  <text x="160" y="174" font-size="15" fill="#555555">鹦鹉学舌讽刺 AI 抢证黎曼猜想的段子文；HN 转载帖 50581084</text>
+  <text x="160" y="200" font-size="15" fill="#1A1B1E">364 分 · 全树 371 评论（实测 2026-11-26 16:3x）</text>
+
+  <!-- stage 2 -->
+  <circle cx="120" cy="266" r="10" fill="#D55E00"/>
+  <text x="160" y="262" font-size="18" font-weight="bold" fill="#D55E00">② 背书（11-25，《HOLY SHIT…》）</text>
+  <text x="160" y="290" font-size="15" fill="#555555">「my working assumption… any proof that comes directly from</text>
+  <text x="160" y="312" font-size="15" fill="#555555">OpenAI or Anthropic is correct barring information to the contrary」</text>
+  <text x="160" y="338" font-size="15" fill="#1A1B1E">HN 帖 50646108：1410 分（11-26 16:3x）→ 1986 分 · 全树 1794（11-27 上午）</text>
+
+  <!-- stage 3 -->
+  <circle cx="120" cy="396" r="10" fill="#1A1B1E"/>
+  <text x="160" y="392" font-size="18" font-weight="bold" fill="#1A1B1E">③ 自纠（同一篇背书文内）</text>
+  <text x="160" y="420" font-size="15" fill="#555555">「I do not wish to be responsible for spreading unverified rumors.…</text>
+  <text x="160" y="442" font-size="15" fill="#555555">mangled in a game of Telephone」；帖内 id 50647174 要求 healthy skepticism</text>
+
+  <!-- side panel: Fortnow -->
+  <rect x="820" y="120" width="320" height="240" fill="#D9D9D9"/>
+  <text x="844" y="154" font-size="17" font-weight="bold" fill="#1A1B1E">旁证：Fortnow（同量级）</text>
+  <g font-size="14" fill="#1A1B1E">
+    <text x="844" y="188">专文《VP ≠ VNP》13 条评论</text>
+    <text x="844" y="214">（实测 2026-11-26 16:1x）</text>
+    <text x="844" y="248">HN 转载帖 50639658 仅 10 分</text>
+    <text x="844" y="282">回帖：「feel free to</text>
+    <text x="844" y="304">make me an offer」</text>
+  </g>
+  <text x="820" y="402" font-size="14" font-weight="bold" fill="#D55E00">引用口径：写「Fortnow 专文 + 13 评论」，</text>
+  <text x="820" y="426" font-size="14" font-weight="bold" fill="#D55E00">不写「Fortnow 的 HN 帖很高」。</text>
+
+  <text x="60" y="498" font-size="13" fill="#555555">讽刺、背书、公开自纠发生在同一位 MIT 理论复杂度专家的两周内；HN Algolia items API 全树口径，实测 2026-11-26 16:3x 与 2026-11-27 上午（GMT+8）。</text>
+</svg>

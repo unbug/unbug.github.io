@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="Arial, sans-serif">
+  <rect width="1200" height="560" fill="#FFFFFF"/>
+  <text x="60" y="48" font-size="26" font-weight="bold" fill="#1A1B1E">数学工厂出货结构：从仓库时间戳到讨论区</text>
+
+  <!-- factory box -->
+  <rect x="60" y="90" width="470" height="330" fill="none" stroke="#1A1B1E" stroke-width="2"/>
+  <text x="84" y="126" font-size="19" font-weight="bold" fill="#1A1B1E">openai/math（GitHub 仓库）</text>
+  <g font-size="15" fill="#1A1B1E">
+    <text x="84" y="162">created 2026-10-06</text>
+    <text x="84" y="190">preprints 目录 761 项</text>
+    <text x="84" y="218">11-24 批量提交 9 篇同族论文 + Lean 形式化</text>
+    <text x="84" y="246">PR #5 Add VP≠VNP（11-24）</text>
+    <text x="84" y="274">PR #6 Add November 24 manuscripts（11-25 合并）</text>
+  </g>
+  <rect x="84" y="300" width="422" height="46" fill="#D9D9D9"/>
+  <text x="96" y="329" font-size="15" fill="#1A1B1E">最后 push 2026-11-25T00:18:51Z · 此后零新 commit</text>
+  <rect x="84" y="358" width="422" height="46" fill="#D55E00"/>
+  <text x="96" y="387" font-size="15" font-weight="bold" fill="#FFFFFF">外部 PR / issue 复现：0（实测 2026-11-26 16:1x）</text>
+
+  <!-- arrow -->
+  <line x1="530" y1="255" x2="640" y2="255" stroke="#555555" stroke-width="2"/>
+  <polygon points="640,247 656,255 640,263" fill="#555555"/>
+  <text x="548" y="240" font-size="14" fill="#555555">随文出货</text>
+
+  <!-- shipment posts -->
+  <rect x="670" y="90" width="470" height="150" fill="none" stroke="#1A1B1E" stroke-width="2"/>
+  <text x="694" y="124" font-size="17" font-weight="bold" fill="#1A1B1E">出货端帖子 1：ω=9/4 主帖 50637220</text>
+  <text x="694" y="156" font-size="15" fill="#1A1B1E">1063 分 · 全树 598 评论（实测 11-27 上午）</text>
+  <text x="694" y="184" font-size="14" fill="#555555">README 逐字：exponent of square matrix</text>
+  <text x="694" y="206" font-size="14" fill="#555555">multiplication is 9/4 over every field</text>
+  <text x="694" y="228" font-size="14" fill="#555555">下界随文 ExactExponent.lean</text>
+
+  <rect x="670" y="270" width="470" height="150" fill="none" stroke="#1A1B1E" stroke-width="2"/>
+  <text x="694" y="304" font-size="17" font-weight="bold" fill="#1A1B1E">出货端帖子 2：Hirsch 猜想反例 50644980</text>
+  <text x="694" y="336" font-size="15" fill="#1A1B1E">152 分 · 全树 41 评论（实测 11-26 16:3x）</text>
+  <text x="694" y="364" font-size="14" fill="#555555">URL 直接指向 openai/math 预印本目录：</text>
+  <text x="694" y="386" font-size="14" fill="#555555">发布渠道不是 arXiv / 期刊，是厂商仓库路径</text>
+
+  <text x="60" y="470" font-size="15" fill="#1A1B1E">同簇低热帖（实测 11-26 16:3x）：归属战前传 99 分 · 开放问题清单 103 分 · Fable 捷径 72 分。</text>
+  <text x="60" y="500" font-size="15" font-weight="bold" fill="#D55E00">mathlib4 自 11-24 以来 71 条 PR 中与 9/4 直接相关者：0 —— 形式化锁在厂商仓库内。</text>
+  <text x="60" y="532" font-size="13" fill="#555555">数据：GitHub API / raw README（sha c8386471）、HN Algolia items API 全树口径，实测 2026-11-26 16:1x–16:4x 与 2026-11-27 上午（GMT+8）。</text>
+</svg>
